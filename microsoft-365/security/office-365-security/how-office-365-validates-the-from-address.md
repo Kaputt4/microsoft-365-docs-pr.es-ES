@@ -2,10 +2,10 @@
 title: Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'Para ayudar a evitar la suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora el cumplimiento de RFC para de: addresses.'
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Borrar los requisitos de las direcciones de correo electrónico de los mensajes entrantes en Office 365. A partir del 2017 de noviembre, el servicio requiere ahora compatibilidad con RFC desde direcciones para ayudar a evitar la suplantación de identidad.
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599187"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529006"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="9523d-103">Cómo Office 365 valida la dirección from para evitar la suplantación de identidad</span><span class="sxs-lookup"><span data-stu-id="9523d-103">How Office 365 validates the From address to prevent phishing</span></span>
+# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a><span data-ttu-id="b2d58-104">Cómo Office 365 valida la dirección from para evitar la suplantación de identidad</span><span class="sxs-lookup"><span data-stu-id="b2d58-104">How Office 365 validates the From address to prevent phishing</span></span>
 
-<span data-ttu-id="9523d-104">Las cuentas de correo electrónico de Office 365 y Outlook.com reciben un número cada vez mayor de ataques de suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="9523d-104">Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="9523d-105">Una técnica que usan los phishs es enviar mensajes que tienen valores para la dirección de: que no son compatibles con [RFC 5322](https://tools.ietf.org/html/rfc5322).</span><span class="sxs-lookup"><span data-stu-id="9523d-105">One technique phishers use is to send messages that have values for the From: address that are not compliant with [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="9523d-106">La dirección de: también se llama la dirección 5322. from.</span><span class="sxs-lookup"><span data-stu-id="9523d-106">The From: address is also called the 5322.From address.</span></span> <span data-ttu-id="9523d-107">Para ayudar a evitar este tipo de suplantación de identidad, Office 365 y Outlook.com requieren mensajes recibidos por el servicio para incluir una dirección compatible con RFC de: Address tal como se describe en este artículo.</span><span class="sxs-lookup"><span data-stu-id="9523d-107">To help prevent this type of phishing, Office 365 and Outlook.com require messages received by the service to include an RFC-compliant From: address as described in this article.</span></span>
+<span data-ttu-id="b2d58-105">Las cuentas de correo electrónico de Office 365 reciben un número cada vez mayor de ataques de suplantación de identidad.</span><span class="sxs-lookup"><span data-stu-id="b2d58-105">Office 365 email accounts receive an increasingly large number of phishing attacks.</span></span> <span data-ttu-id="b2d58-106">Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet.</span><span class="sxs-lookup"><span data-stu-id="b2d58-106">In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards.</span></span> <span data-ttu-id="b2d58-107">Para ayudar a evitar este tipo de suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema.</span><span class="sxs-lookup"><span data-stu-id="b2d58-107">To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic.</span></span> <span data-ttu-id="b2d58-108">Esta aplicación se habilitó en noviembre de 2017.</span><span class="sxs-lookup"><span data-stu-id="b2d58-108">This enforcement was enabled in November 2017.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="9523d-108">La información de este artículo le obliga a tener un conocimiento básico del formato general de las direcciones de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-108">The information in this article requires you to have a basic understanding of the general format of email addresses.</span></span> <span data-ttu-id="9523d-109">Para obtener más información, vea [rfc 5322](https://tools.ietf.org/html/rfc5322) (en particular las secciones 3.2.3, 3,4 y 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), así como [RFC 3696](https://tools.ietf.org/html/rfc3696).</span><span class="sxs-lookup"><span data-stu-id="9523d-109">For more information, see [RFC 5322](https://tools.ietf.org/html/rfc5322) (particularly sections 3.2.3, 3.4, and 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), as well as [RFC 3696](https://tools.ietf.org/html/rfc3696).</span></span> <span data-ttu-id="9523d-110">Este artículo trata sobre la aplicación de directivas para la dirección 5322. from.</span><span class="sxs-lookup"><span data-stu-id="9523d-110">This article is about policy enforcement for the 5322.From address.</span></span> <span data-ttu-id="9523d-111">Este artículo no trata sobre la dirección 5321. MailFrom.</span><span class="sxs-lookup"><span data-stu-id="9523d-111">This article is not about the 5321.MailFrom address.</span></span>
+<span data-ttu-id="b2d58-109">**Notas**:</span><span class="sxs-lookup"><span data-stu-id="b2d58-109">**Notes**:</span></span>
 
-<span data-ttu-id="9523d-112">Desafortunadamente, todavía hay algunos servidores de correo electrónico heredados en Internet que continúan enviando mensajes de correo electrónico "legítimos" que tienen una dirección de: que faltan o tienen un formato incorrecto.</span><span class="sxs-lookup"><span data-stu-id="9523d-112">Unfortunately, there are still some legacy email servers on the Internet that continue to send "legitimate" email messages that have a missing or malformed From: address.</span></span> <span data-ttu-id="9523d-113">Si recibe regularmente correo electrónico de organizaciones que usan estos sistemas heredados, Anime a esas organizaciones a que actualicen sus servidores de correo para cumplir con los estándares de seguridad modernos.</span><span class="sxs-lookup"><span data-stu-id="9523d-113">If you regularly receive email from organizations that use these legacy systems, encourage those organizations to update their mail servers to comply with modern security standards.</span></span>
+- <span data-ttu-id="b2d58-110">Si recibe regularmente correo electrónico de organizaciones que tienen direcciones de formato incorrecto como se describe en este tema, Anime a estas organizaciones a que actualicen sus servidores de correo electrónico para cumplir con los estándares de seguridad modernos.</span><span class="sxs-lookup"><span data-stu-id="b2d58-110">If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.</span></span>
 
-<span data-ttu-id="9523d-114">Microsoft empezará a implementar la aplicación de las directivas descritas en este artículo el 9 de noviembre de 2017.</span><span class="sxs-lookup"><span data-stu-id="9523d-114">Microsoft will start rolling out enforcement of the policies described in this article on November 9, 2017.</span></span>
+- <span data-ttu-id="b2d58-111">El campo de remitente relacionado (usado por el envío en nombre y las listas de correo) no se ve afectado por estos requisitos.</span><span class="sxs-lookup"><span data-stu-id="b2d58-111">The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements.</span></span> <span data-ttu-id="b2d58-112">Para obtener más información, vea la siguiente entrada de blog: [¿qué queremos decir cuando hacemos referencia al "remitente" de un correo electrónico?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).</span><span class="sxs-lookup"><span data-stu-id="b2d58-112">For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).</span></span>
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a><span data-ttu-id="9523d-115">Cómo Office 365 exige el uso de una dirección from: Address válida para evitar ataques de suplantación de identidad (phishing)</span><span class="sxs-lookup"><span data-stu-id="9523d-115">How Office 365 enforces the use of a valid From: address to prevent phishing attacks</span></span>
+## <a name="an-overview-of-email-message-standards"></a><span data-ttu-id="b2d58-113">Información general sobre los estándares de mensajes de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="b2d58-113">An overview of email message standards</span></span>
 
-<span data-ttu-id="9523d-116">Office 365 está realizando cambios en la forma en que aplica el uso de la dirección de: en los mensajes que recibe para proteger mejor de los ataques de suplantación de identidad (phishing).</span><span class="sxs-lookup"><span data-stu-id="9523d-116">Office 365 is making changes to the way it enforces the use of the From: address in messages it receives in order to better protect you from phishing attacks.</span></span> <span data-ttu-id="9523d-117">En este artículo:</span><span class="sxs-lookup"><span data-stu-id="9523d-117">In this article:</span></span>
+<span data-ttu-id="b2d58-114">Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre del mensaje* y el contenido del mensaje.</span><span class="sxs-lookup"><span data-stu-id="b2d58-114">A standard SMTP email message consists of a *message envelope* and message content.</span></span> <span data-ttu-id="b2d58-115">El sobre del mensaje contiene información necesaria para transmitir y entregar el mensaje entre servidores SMTP.</span><span class="sxs-lookup"><span data-stu-id="b2d58-115">The message envelope contains information that's required for transmitting and delivering the message between SMTP servers.</span></span> <span data-ttu-id="b2d58-116">El contenido del mensaje contiene el cuerpo del mensaje y campos de encabezado de mensaje, que se denominan de forma colectiva *encabezado del mensaje*.</span><span class="sxs-lookup"><span data-stu-id="b2d58-116">The message content contains message header fields (collectively called the *message header*) and the message body.</span></span> <span data-ttu-id="b2d58-117">El sobre del mensaje se describe en [rfc 5321](https://tools.ietf.org/html/rfc5321)y el encabezado del mensaje se describe en [RFC 5322](https://tools.ietf.org/html/rfc5322).</span><span class="sxs-lookup"><span data-stu-id="b2d58-117">The message envelope is described in [RFC 5321](https://tools.ietf.org/html/rfc5321), and the message header is described in [RFC 5322](https://tools.ietf.org/html/rfc5322).</span></span> <span data-ttu-id="b2d58-118">Los destinatarios nunca ven el sobre del mensaje real porque lo genera el proceso de transmisión del mensaje y, en realidad, no forma parte del mensaje.</span><span class="sxs-lookup"><span data-stu-id="b2d58-118">Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.</span></span>
 
-- [<span data-ttu-id="9523d-118">Todos los mensajes deben incluir una dirección from válida from:</span><span class="sxs-lookup"><span data-stu-id="9523d-118">All messages must include a valid From: address</span></span>](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- <span data-ttu-id="b2d58-119">La `5321.MailFrom` dirección (también conocida como **correo de** la dirección de, P1 Sender o Envelope Sender) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje.</span><span class="sxs-lookup"><span data-stu-id="b2d58-119">The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message.</span></span> <span data-ttu-id="b2d58-120">Esta dirección de correo electrónico suele registrarse en el campo de encabezado **Return-Path** del encabezado del mensaje (aunque es posible que el remitente designe otra dirección **de correo electrónico de ruta de regreso** ).</span><span class="sxs-lookup"><span data-stu-id="b2d58-120">This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).</span></span>
 
-- [<span data-ttu-id="9523d-119">Formato de la dirección de: Si no incluye un nombre para mostrar</span><span class="sxs-lookup"><span data-stu-id="9523d-119">Format of the From: address if you don't include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- <span data-ttu-id="b2d58-121">El `5322.From` (también conocido como dirección de de o remitente P2) es la dirección de correo electrónico que aparece en el campo **de encabezado de** y es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-121">The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.</span></span> <span data-ttu-id="b2d58-122">La dirección de es el centro de los requisitos de este tema.</span><span class="sxs-lookup"><span data-stu-id="b2d58-122">The From address is the focus of the requirements in this topic.</span></span>
 
-- [<span data-ttu-id="9523d-120">Formato de la dirección de: si incluye un nombre para mostrar</span><span class="sxs-lookup"><span data-stu-id="9523d-120">Format of the From: address if you include a display name</span></span>](how-office-365-validates-the-from-address.md#FormatDisplayName)
+<span data-ttu-id="b2d58-123">La dirección de se define en detalle en varias RFC (por ejemplo, las secciones RFC 5322 3.2.3, 3,4, 3.4.1 y [rfc 3696](https://tools.ietf.org/html/rfc3696)).</span><span class="sxs-lookup"><span data-stu-id="b2d58-123">The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)).</span></span> <span data-ttu-id="b2d58-124">Hay muchas variaciones en el direccionamiento y lo que se considera válido o no válido.</span><span class="sxs-lookup"><span data-stu-id="b2d58-124">There are many variations on addressing and what's considered valid or invalid.</span></span> <span data-ttu-id="b2d58-125">Para simplificarlo, le recomendamos el siguiente formato y las siguientes definiciones:</span><span class="sxs-lookup"><span data-stu-id="b2d58-125">To keep it simple, we recommend the following format and definitions:</span></span>
 
-- [<span data-ttu-id="9523d-121">Ejemplos adicionales de direcciones válidas y no válidas:</span><span class="sxs-lookup"><span data-stu-id="9523d-121">Additional examples of valid and invalid From: addresses</span></span>](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [<span data-ttu-id="9523d-122">Suprimir las respuestas automáticas a su dominio personalizado sin romper la Directiva de:</span><span class="sxs-lookup"><span data-stu-id="9523d-122">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- <span data-ttu-id="b2d58-126">**Nombre para mostrar**: frase opcional que describe el propietario de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-126">**Display Name**: An optional phrase that describes the owner of the email address.</span></span>
 
-- [<span data-ttu-id="9523d-123">Reemplazar el Office 365 de: Directiva de aplicación de direcciones</span><span class="sxs-lookup"><span data-stu-id="9523d-123">Overriding the Office 365 From: address enforcement policy</span></span>](how-office-365-validates-the-from-address.md#Override)
+  - <span data-ttu-id="b2d58-127">Se recomienda incluir siempre el nombre para mostrar entre comillas dobles ("), tal y como se muestra.</span><span class="sxs-lookup"><span data-stu-id="b2d58-127">We recommend that you always enclose the display name in double quotation marks (") as shown.</span></span> <span data-ttu-id="b2d58-128">Si el nombre para mostrar contiene una coma, _debe_ escribir la cadena entre comillas dobles según RFC 5322.</span><span class="sxs-lookup"><span data-stu-id="b2d58-128">If the display name contains a comma, you _must_ enclose the string in double quotation marks per RFC 5322.</span></span>
+  - <span data-ttu-id="b2d58-129">Si la dirección de incluye un nombre para mostrar, el valor EmailAddress debe estar entre corchetes angulares (< >), tal como se muestra.</span><span class="sxs-lookup"><span data-stu-id="b2d58-129">If the From address includes a display name, the EmailAddress value must be enclosed in angle brackets (< >) as shown.</span></span>
+  - <span data-ttu-id="b2d58-130">Microsoft recomienda encarecidamente que inserte un espacio entre el nombre para mostrar y la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-130">Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
 
-- [<span data-ttu-id="9523d-124">Otras formas de evitar y proteger contra cybercrimes en Office 365</span><span class="sxs-lookup"><span data-stu-id="9523d-124">Other ways to prevent and protect against cybercrimes in Office 365</span></span>](how-office-365-validates-the-from-address.md#OtherProtection)
+- <span data-ttu-id="b2d58-131">**EmailAddress**: una dirección de correo electrónico usa `local-part@domain`el formato:</span><span class="sxs-lookup"><span data-stu-id="b2d58-131">**EmailAddress**: An email address uses the format `local-part@domain`:</span></span>
 
-<span data-ttu-id="9523d-125">El envío en nombre de otro usuario no se ve afectado por este cambio, para obtener más información, lea el blog de Tomás Zink "[¿Qué significa cuando hacemos referencia al" remitente "de un correo electrónico?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".</span><span class="sxs-lookup"><span data-stu-id="9523d-125">Sending on behalf of another user is not affected by this change, for more details, read Terry Zink's blog "[What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".</span></span>
+  - <span data-ttu-id="b2d58-132">**local-Part**: cadena que identifica el buzón asociado con la dirección.</span><span class="sxs-lookup"><span data-stu-id="b2d58-132">**local-part**: A string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="b2d58-133">Este valor es único dentro del dominio.</span><span class="sxs-lookup"><span data-stu-id="b2d58-133">This value is unique within the domain.</span></span> <span data-ttu-id="b2d58-134">A menudo se usa el nombre de usuario o GUID del propietario del buzón.</span><span class="sxs-lookup"><span data-stu-id="b2d58-134">Often, the mailbox owner's username or GUID is used.</span></span>
+  - <span data-ttu-id="b2d58-135">**dominio**: el nombre de dominio completo (FQDN) del servidor de correo electrónico que hospeda el buzón identificado por la parte local de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-135">**domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.</span></span>
 
-### <a name="all-messages-must-include-a-valid-from-address"></a><span data-ttu-id="9523d-126">Todos los mensajes deben incluir una dirección from válida from:</span><span class="sxs-lookup"><span data-stu-id="9523d-126">All messages must include a valid From: address</span></span>
-<span data-ttu-id="9523d-127"><a name="MustIncludeFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-127"><a name="MustIncludeFromAddress"> </a></span></span>
+  <span data-ttu-id="b2d58-136">Estas son algunas consideraciones adicionales para el valor EmailAddress:</span><span class="sxs-lookup"><span data-stu-id="b2d58-136">These are some additional considerations for the EmailAddress value:</span></span>
 
-<span data-ttu-id="9523d-128">Algunos mensajes automatizados no incluyen una dirección de: cuando se envían.</span><span class="sxs-lookup"><span data-stu-id="9523d-128">Some automated messages don't include a From: address when they are sent.</span></span> <span data-ttu-id="9523d-129">En el pasado, cuando Office 365 o Outlook.com recibía un mensaje sin una dirección de:, el servicio agregaba la siguiente dirección siguiente predeterminada desde: al mensaje para hacerla entregar:</span><span class="sxs-lookup"><span data-stu-id="9523d-129">In the past, when Office 365 or Outlook.com received a message without a From: address, the service added the following default From: address to the message in order to make it deliverable:</span></span>
+  - <span data-ttu-id="b2d58-137">Solo una dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-137">Only one email address.</span></span>
+  - <span data-ttu-id="b2d58-138">Le recomendamos que no separe los corchetes angulares con espacios.</span><span class="sxs-lookup"><span data-stu-id="b2d58-138">We recommend that you do not separate the angle brackets with spaces.</span></span>
+  - <span data-ttu-id="b2d58-139">No incluya texto adicional después de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-139">Don't include additional text after the email address.</span></span>
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="b2d58-140">Ejemplos de direcciones válidas y no válidas</span><span class="sxs-lookup"><span data-stu-id="b2d58-140">Examples of valid and invalid From addresses</span></span>
 
-<span data-ttu-id="9523d-130">A partir del 9 de noviembre de 2017, Office 365 se implementarán cambios en sus centros de información y servidores de correo que aplicarán una nueva regla en la que Office 365 o Outlook.com no aceptarán mensajes sin una dirección de:.</span><span class="sxs-lookup"><span data-stu-id="9523d-130">Starting November 9, 2017, Office 365 will be rolling out changes to its datacenters and mail servers which will enforce a new rule where messages without a From: address will no longer be accepted by Office 365 or Outlook.com.</span></span> <span data-ttu-id="9523d-131">En su lugar, todos los mensajes que recibe Office 365 ya deben contener una dirección from: válida.</span><span class="sxs-lookup"><span data-stu-id="9523d-131">Instead, all messages received by Office 365 must already contain a valid From: address.</span></span> <span data-ttu-id="9523d-132">De lo contrario, el mensaje se enviará a las carpetas correo no deseado o elementos eliminados de Outlook.com y Office 365.</span><span class="sxs-lookup"><span data-stu-id="9523d-132">Otherwise, the message will be sent to either the Junk Email or Deleted Items folders in Outlook.com and Office 365.</span></span>
+<span data-ttu-id="b2d58-141">Las siguientes direcciones de correo electrónico son válidas:</span><span class="sxs-lookup"><span data-stu-id="b2d58-141">The following From email addresses are valid:</span></span>
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a><span data-ttu-id="9523d-133">Información general sobre la sintaxis: formato válido para la dirección de: para Office 365</span><span class="sxs-lookup"><span data-stu-id="9523d-133">Syntax overview: Valid format for the From: address for Office 365</span></span>
-<span data-ttu-id="9523d-134"><a name="SyntaxOverviewFromAddress"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-134"><a name="SyntaxOverviewFromAddress"> </a></span></span>
+- `From: sender@contoso.com`
 
-<span data-ttu-id="9523d-135">El formato del valor de la dirección de: se define en detalle en varias RFC.</span><span class="sxs-lookup"><span data-stu-id="9523d-135">The format for the value of the From: address is defined in detail across several RFCs.</span></span> <span data-ttu-id="9523d-136">Hay muchas variaciones en el direccionamiento y lo que puede considerarse válido o no válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-136">There are many variations on addressing and what may be considered valid or invalid.</span></span> <span data-ttu-id="9523d-137">Para mantenerlo sencillo, Microsoft recomienda usar el siguiente formato y las siguientes definiciones:</span><span class="sxs-lookup"><span data-stu-id="9523d-137">To keep it simple, Microsoft recommends that you use the following format and definitions:</span></span>
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- <span data-ttu-id="b2d58-142">`From: < sender@contoso.com >`(No se recomienda porque hay espacios entre los corchetes angulares y la dirección de correo electrónico).</span><span class="sxs-lookup"><span data-stu-id="b2d58-142">`From: < sender@contoso.com >` (Not recommended because there are spaces between the angle brackets and the email address.)</span></span>
 
-<span data-ttu-id="9523d-138">Donde:</span><span class="sxs-lookup"><span data-stu-id="9523d-138">Where:</span></span>
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- <span data-ttu-id="9523d-139">Opcional  *displayName* es una frase que describe el propietario de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-139">(Optional)  *displayname*  is a phrase that describes the owner of the email address.</span></span> <span data-ttu-id="9523d-140">Por ejemplo, podría tratarse de un nombre más descriptivo para describir al remitente que el nombre del buzón.</span><span class="sxs-lookup"><span data-stu-id="9523d-140">For example, this might be a more user-friendly name to describe the sender than the name of the mailbox.</span></span> <span data-ttu-id="9523d-141">El uso de un nombre para mostrar es opcional.</span><span class="sxs-lookup"><span data-stu-id="9523d-141">Using a display name is optional.</span></span> <span data-ttu-id="9523d-142">Sin embargo, si decide usar un nombre para mostrar, Microsoft recomienda que siempre lo entre entre comillas como se muestra.</span><span class="sxs-lookup"><span data-stu-id="9523d-142">However, if you choose to use a display name, Microsoft recommends that you always enclose it within quotation marks as shown.</span></span>
+- `From: "Office 365" <sender@contoso.com>`
 
-- <span data-ttu-id="9523d-143">Necesarios  *EmailAddress* consta de:</span><span class="sxs-lookup"><span data-stu-id="9523d-143">(Required)  *emailaddress*  is made up of:</span></span>
+- <span data-ttu-id="b2d58-143">`From: Office 365 <sender@contoso.com>`(No se recomienda porque el nombre para mostrar no está incluido entre comillas dobles).</span><span class="sxs-lookup"><span data-stu-id="b2d58-143">`From: Office 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)</span></span>
 
-  ```
-  local-part @domain
-  ```
+<span data-ttu-id="b2d58-144">Las siguientes direcciones de correo electrónico no son válidas:</span><span class="sxs-lookup"><span data-stu-id="b2d58-144">The following From email addresses are invalid:</span></span>
 
-    <span data-ttu-id="9523d-144">Donde:</span><span class="sxs-lookup"><span data-stu-id="9523d-144">Where:</span></span>
+- <span data-ttu-id="b2d58-145">**No desde dirección**: algunos mensajes automatizados no incluyen una dirección de de.</span><span class="sxs-lookup"><span data-stu-id="b2d58-145">**No From address**: Some automated messages don't include a From address.</span></span> <span data-ttu-id="b2d58-146">En el pasado, cuando Office 365 o Outlook.com recibía un mensaje sin una dirección de desde, el servicio agregaba el siguiente valor predeterminado de: Address para que el mensaje se pudiera entregar:</span><span class="sxs-lookup"><span data-stu-id="b2d58-146">In the past, when Office 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:</span></span>
 
-  - <span data-ttu-id="9523d-145">Necesarios  la *parte local* es una cadena que identifica el buzón asociado con la dirección.</span><span class="sxs-lookup"><span data-stu-id="9523d-145">(Required)  *local-part*  is a string that identifies the mailbox associated with the address.</span></span> <span data-ttu-id="9523d-146">Esto es único dentro del dominio.</span><span class="sxs-lookup"><span data-stu-id="9523d-146">This is unique within the domain.</span></span> <span data-ttu-id="9523d-147">A menudo, el GUID o el nombre de usuario del propietario del buzón se usa como el valor de la parte local.</span><span class="sxs-lookup"><span data-stu-id="9523d-147">Often, the mailbox owner's username or GUID is used as the value for the local-part.</span></span>
+  `From: <>`
 
-  - <span data-ttu-id="9523d-148">Necesarios  *Domain* es el nombre de dominio completo (FQDN) del servidor de correo que hospeda el buzón identificado por la parte local de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-148">(Required)  *domain*  is the fully-qualified domain name (FQDN) of the mail server that hosts the mailbox identified by the local-part of the email address.</span></span>
+  <span data-ttu-id="b2d58-147">Ahora, ya no se aceptan los mensajes con una dirección desde en blanco.</span><span class="sxs-lookup"><span data-stu-id="b2d58-147">Now, messages with a blank From address are no longer accepted.</span></span>
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a><span data-ttu-id="9523d-149">Formato de la dirección de: Si no incluye un nombre para mostrar</span><span class="sxs-lookup"><span data-stu-id="9523d-149">Format of the From: address if you don't include a display name</span></span>
-<span data-ttu-id="9523d-150"><a name="FormatNoDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-150"><a name="FormatNoDisplayName"> </a></span></span>
+- <span data-ttu-id="b2d58-148">`From: Office 365 sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).</span><span class="sxs-lookup"><span data-stu-id="b2d58-148">`From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="9523d-151">Un formato adecuado de: Address que no incluye un nombre para mostrar solo incluye una dirección de correo electrónico con o sin corchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="9523d-151">A properly formatted From: address that does not include a display name includes only a single email address with or without angle brackets.</span></span> <span data-ttu-id="9523d-152">Microsoft recomienda que no separe los corchetes angulares con espacios.</span><span class="sxs-lookup"><span data-stu-id="9523d-152">Microsoft recommends that you do not separate the angle brackets with spaces.</span></span> <span data-ttu-id="9523d-153">Además, no incluya nada después de la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-153">In addition, don't include anything after the email address.</span></span>
+- <span data-ttu-id="b2d58-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)`(Texto después de la dirección de correo electrónico).</span><span class="sxs-lookup"><span data-stu-id="b2d58-149">`From: "Office 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)</span></span>
 
-<span data-ttu-id="9523d-154">Los ejemplos siguientes son válidos:</span><span class="sxs-lookup"><span data-stu-id="9523d-154">The following examples are valid:</span></span>
+- <span data-ttu-id="b2d58-150">`From: Sender, Example <sender.example@contoso.com>`(El nombre para mostrar contiene una coma, pero no se incluye entre comillas dobles).</span><span class="sxs-lookup"><span data-stu-id="b2d58-150">`From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)</span></span>
 
-```
-From: sender@contoso.com
-```
+- <span data-ttu-id="b2d58-151">`From: "Office 365 <sender@contoso.com>"`(El valor completo se incluye incorrectamente entre comillas dobles).</span><span class="sxs-lookup"><span data-stu-id="b2d58-151">`From: "Office 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)</span></span>
 
-```
-From: <sender@contoso.com>
-```
+- <span data-ttu-id="b2d58-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).</span><span class="sxs-lookup"><span data-stu-id="b2d58-152">`From: "Office 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)</span></span>
 
-<span data-ttu-id="9523d-155">El siguiente ejemplo es válido pero no se recomienda porque contiene espacios entre los corchetes angulares y la dirección de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="9523d-155">The following example is valid but not recommended because it contains spaces between the angle brackets and the email address:</span></span>
+- <span data-ttu-id="b2d58-153">`From: Office 365<sender@contoso.com>`(Sin espacio entre el nombre para mostrar y el corchete angular de apertura).</span><span class="sxs-lookup"><span data-stu-id="b2d58-153">`From: Office 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)</span></span>
 
-```
-From: < sender@contoso.com >
-```
+- <span data-ttu-id="b2d58-154">`From: "Office 365"<sender@contoso.com>`(Sin espacio entre el signo de comillas tipográficas y el corchete angular de cierre).</span><span class="sxs-lookup"><span data-stu-id="b2d58-154">`From: "Office 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)</span></span>
 
-<span data-ttu-id="9523d-156">El siguiente ejemplo no es válido porque contiene texto después de la dirección de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="9523d-156">The following example is invalid because it contains text after the email address:</span></span>
+## <a name="suppress-auto-replies-to-your-custom-domain"></a><span data-ttu-id="b2d58-155">Suprimir las respuestas automáticas a su dominio personalizado</span><span class="sxs-lookup"><span data-stu-id="b2d58-155">Suppress auto-replies to your custom domain</span></span>
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+<span data-ttu-id="b2d58-156">No puede usar el valor `From: <>` para suprimir las respuestas automáticas.</span><span class="sxs-lookup"><span data-stu-id="b2d58-156">You can't use the value `From: <>` to suppress auto-replies.</span></span> <span data-ttu-id="b2d58-157">En su lugar, debe configurar un registro MX nulo para el dominio personalizado.</span><span class="sxs-lookup"><span data-stu-id="b2d58-157">Instead, you need to set up a null MX record for your custom domain.</span></span> <span data-ttu-id="b2d58-158">Las respuestas automáticas (y todas las respuestas) se suprimen naturalmente porque no hay ninguna dirección publicada a la que el servidor de respuesta pueda enviar mensajes.</span><span class="sxs-lookup"><span data-stu-id="b2d58-158">Auto-replies (and all replies) are naturally suppressed because there is no published address that the responding server can send messages to.</span></span>
+
+- <span data-ttu-id="b2d58-159">Elija un dominio de correo electrónico que no pueda recibir correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-159">Choose an email domain that can't receive email.</span></span> <span data-ttu-id="b2d58-160">Por ejemplo, si su dominio principal es contoso.com, puede elegir noreply.contoso.com.</span><span class="sxs-lookup"><span data-stu-id="b2d58-160">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
+
+- <span data-ttu-id="b2d58-161">El registro MX nulo para este dominio consta de un único período.</span><span class="sxs-lookup"><span data-stu-id="b2d58-161">The null MX record for this domain consists of a single period.</span></span>
+
+<span data-ttu-id="b2d58-162">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="b2d58-162">For example:</span></span>
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a><span data-ttu-id="9523d-157">Formato de la dirección de: si incluye un nombre para mostrar</span><span class="sxs-lookup"><span data-stu-id="9523d-157">Format of the From: address if you include a display name</span></span>
-<span data-ttu-id="9523d-158"><a name="FormatDisplayName"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-158"><a name="FormatDisplayName"> </a></span></span>
+<span data-ttu-id="b2d58-163">Para obtener más información acerca de la configuración de registros MX, vea [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span><span class="sxs-lookup"><span data-stu-id="b2d58-163">For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span>
 
-<span data-ttu-id="9523d-159">En el caso de las direcciones de: que incluyen un valor para el nombre para mostrar, se aplican las siguientes reglas:</span><span class="sxs-lookup"><span data-stu-id="9523d-159">For From: addresses that include a value for the display name, the following rules apply:</span></span>
+<span data-ttu-id="b2d58-164">Para obtener más información acerca de la publicación de un MX nulo, consulte [RFC 7505](https://tools.ietf.org/html/rfc7505).</span><span class="sxs-lookup"><span data-stu-id="b2d58-164">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
 
-- <span data-ttu-id="9523d-160">Si la dirección del remitente incluye un nombre para mostrar y el nombre para mostrar incluye una coma, el nombre para mostrar debe ir entre comillas.</span><span class="sxs-lookup"><span data-stu-id="9523d-160">If the sender address includes a display name, and the display name includes a comma, then the display name must be enclosed within quotation marks.</span></span> <span data-ttu-id="9523d-161">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="9523d-161">For example:</span></span>
+## <a name="override-from-address-enforcement"></a><span data-ttu-id="b2d58-165">Invalidar de la aplicación de direcciones</span><span class="sxs-lookup"><span data-stu-id="b2d58-165">Override From address enforcement</span></span>
 
-    <span data-ttu-id="9523d-162">El siguiente ejemplo es válido:</span><span class="sxs-lookup"><span data-stu-id="9523d-162">The following example is valid:</span></span>
+<span data-ttu-id="b2d58-166">Para omitir los requisitos de dirección de de para el correo electrónico entrante, puede usar la lista de direcciones IP permitidas (filtrado de la conexión) o las reglas de flujo de correo (también conocidas como reglas de transporte), como se describe en [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="b2d58-166">To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).</span></span>
 
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
+<span data-ttu-id="b2d58-167">No puede invalidar los requisitos de dirección de de dirección para el correo electrónico saliente que envíe desde Office 365.</span><span class="sxs-lookup"><span data-stu-id="b2d58-167">You can't override the From address requirements for outbound email that you send from Office 365.</span></span> <span data-ttu-id="b2d58-168">Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través del soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="b2d58-168">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
 
-    <span data-ttu-id="9523d-163">El siguiente ejemplo no es válido:</span><span class="sxs-lookup"><span data-stu-id="9523d-163">The following example is not valid:</span></span>
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="b2d58-169">Otras formas de evitar y proteger contra cybercrimes en Office 365</span><span class="sxs-lookup"><span data-stu-id="b2d58-169">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
 
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    <span data-ttu-id="9523d-164">El nombre para mostrar no se cierra entre comillas si el nombre para mostrar incluye una coma de acuerdo con RFC 5322.</span><span class="sxs-lookup"><span data-stu-id="9523d-164">Not enclosing the display name in quotation marks if that display name includes a comma is invalid according to RFC 5322.</span></span>
-
-    <span data-ttu-id="9523d-165">Como práctica recomendada, coloque las comillas alrededor del nombre para mostrar independientemente de si hay una coma dentro del nombre para mostrar.</span><span class="sxs-lookup"><span data-stu-id="9523d-165">As a best practice, put quote marks around the display name regardless of whether or not there is a comma within the display name.</span></span>
-
-- <span data-ttu-id="9523d-166">Si la dirección del remitente incluye un nombre para mostrar, la dirección de correo electrónico debe estar entre corchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="9523d-166">If the sender address includes a display name, then the email address must be enclosed within angle brackets.</span></span>
-
-    <span data-ttu-id="9523d-167">Como práctica recomendada, Microsoft recomienda encarecidamente que inserte un espacio entre el nombre para mostrar y la dirección de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-167">As a best practice, Microsoft strongly recommends that you insert a space between the display name and the email address.</span></span>
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a><span data-ttu-id="9523d-168">Ejemplos adicionales de direcciones válidas y no válidas:</span><span class="sxs-lookup"><span data-stu-id="9523d-168">Additional examples of valid and invalid From: addresses</span></span>
-<span data-ttu-id="9523d-169"><a name="Examples"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-169"><a name="Examples"> </a></span></span>
-
-- <span data-ttu-id="9523d-170">Validación</span><span class="sxs-lookup"><span data-stu-id="9523d-170">Valid:</span></span>
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="9523d-171">No válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-171">Invalid.</span></span> <span data-ttu-id="9523d-172">La dirección de correo electrónico no se incluye entre corchetes angulares:</span><span class="sxs-lookup"><span data-stu-id="9523d-172">The email address is not enclosed with angle brackets:</span></span>
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- <span data-ttu-id="9523d-173">Válido, pero no se recomienda.</span><span class="sxs-lookup"><span data-stu-id="9523d-173">Valid, but not recommended.</span></span> <span data-ttu-id="9523d-174">El nombre para mostrar no está entre comillas.</span><span class="sxs-lookup"><span data-stu-id="9523d-174">The display name is not in quotes.</span></span> <span data-ttu-id="9523d-175">Como práctica recomendada, escriba siempre comillas alrededor del nombre para mostrar:</span><span class="sxs-lookup"><span data-stu-id="9523d-175">As a best practice, always put quotation marks around the display name:</span></span>
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- <span data-ttu-id="9523d-176">No válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-176">Invalid.</span></span> <span data-ttu-id="9523d-177">Todo se encierra entre comillas, no solo el nombre para mostrar:</span><span class="sxs-lookup"><span data-stu-id="9523d-177">Everything is enclosed within quotation marks, not just the display name:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- <span data-ttu-id="9523d-178">No válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-178">Invalid.</span></span> <span data-ttu-id="9523d-179">No hay paréntesis angulares alrededor de la dirección de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="9523d-179">There are no angle brackets around the email address:</span></span>
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- <span data-ttu-id="9523d-180">No válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-180">Invalid.</span></span> <span data-ttu-id="9523d-181">No hay ningún espacio entre el nombre para mostrar y el corchete angular izquierdo:</span><span class="sxs-lookup"><span data-stu-id="9523d-181">There is no space between the display name and left angle bracket:</span></span>
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- <span data-ttu-id="9523d-182">No válido.</span><span class="sxs-lookup"><span data-stu-id="9523d-182">Invalid.</span></span> <span data-ttu-id="9523d-183">No hay ningún espacio entre el comillas de cierre que rodea el nombre para mostrar y el corchete angular de apertura.</span><span class="sxs-lookup"><span data-stu-id="9523d-183">There is no space between the closing quotation mark around the display name and the left angle bracket.</span></span>
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a><span data-ttu-id="9523d-184">Suprimir las respuestas automáticas a su dominio personalizado sin romper la Directiva de:</span><span class="sxs-lookup"><span data-stu-id="9523d-184">Suppress auto-replies to your custom domain without breaking the From: policy</span></span>
-<span data-ttu-id="9523d-185"><a name="SuppressAutoReply"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-185"><a name="SuppressAutoReply"> </a></span></span>
-
-<span data-ttu-id="9523d-186">Con el nuevo de: aplicación de Directiva, ya no podrá usar de: \< \> para suprimir las respuestas automáticas.</span><span class="sxs-lookup"><span data-stu-id="9523d-186">With the new From: policy enforcement, you can no longer use From: \<\> to suppress auto-replies.</span></span> <span data-ttu-id="9523d-187">En su lugar, debe configurar un registro MX nulo para el dominio personalizado.</span><span class="sxs-lookup"><span data-stu-id="9523d-187">Instead, you need to set up a null MX record for your custom domain.</span></span>
-
-<span data-ttu-id="9523d-188">El registro de intercambio de correo (MX) es un registro de recursos en DNS que identifica el servidor de correo que recibe el correo de su dominio.</span><span class="sxs-lookup"><span data-stu-id="9523d-188">The mail exchanger (MX) record is a resource record in DNS that identifies the mail server that receives mail for your domain.</span></span> <span data-ttu-id="9523d-189">Las respuestas automáticas (y todas las respuestas) se suprimen naturalmente porque no hay ninguna dirección publicada a la que el servidor que responde puede enviar mensajes.</span><span class="sxs-lookup"><span data-stu-id="9523d-189">Auto-replies (and all replies) are naturally suppressed because there is no published address to which the responding server can send messages.</span></span>
-
-<span data-ttu-id="9523d-190">Cuando se configura un registro MX nulo para el dominio personalizado:</span><span class="sxs-lookup"><span data-stu-id="9523d-190">When you set up a null MX record for your custom domain:</span></span>
-
-- <span data-ttu-id="9523d-191">Elija un dominio desde el que enviar mensajes que no acepten (reciban) correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="9523d-191">Choose a domain from which to send messages that doesn't accept (receive) email.</span></span> <span data-ttu-id="9523d-192">Por ejemplo, si su dominio principal es contoso.com, puede elegir noreply.contoso.com.</span><span class="sxs-lookup"><span data-stu-id="9523d-192">For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.</span></span>
-
-- <span data-ttu-id="9523d-193">Configurar el registro MX nulo para el dominio.</span><span class="sxs-lookup"><span data-stu-id="9523d-193">Set up the null MX record for your domain.</span></span> <span data-ttu-id="9523d-194">Un registro MX nulo consta de un único punto, por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="9523d-194">A null MX record consists of a single dot, for example:</span></span>
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
-
-<span data-ttu-id="9523d-195">Para obtener más información acerca de la publicación de un MX nulo, consulte [RFC 7505](https://tools.ietf.org/html/rfc7505).</span><span class="sxs-lookup"><span data-stu-id="9523d-195">For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).</span></span>
-
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a><span data-ttu-id="9523d-196">Reemplazar el Office 365 de: Directiva de aplicación de direcciones</span><span class="sxs-lookup"><span data-stu-id="9523d-196">Overriding the Office 365 From: address enforcement policy</span></span>
-<span data-ttu-id="9523d-197"><a name="Override"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-197"><a name="Override"> </a></span></span>
-
-<span data-ttu-id="9523d-198">Una vez completada la implementación de la nueva Directiva, solo puede omitir esta directiva para el correo entrante que reciba de Office 365 mediante uno de los siguientes métodos:</span><span class="sxs-lookup"><span data-stu-id="9523d-198">Once roll out of the new policy is complete, you can only bypass this policy for inbound mail you receive from Office 365 by using one of the following methods:</span></span>
-
-- <span data-ttu-id="9523d-199">Listas de direcciones IP permitidas</span><span class="sxs-lookup"><span data-stu-id="9523d-199">IP allow lists</span></span>
-
-- <span data-ttu-id="9523d-200">Reglas de flujo de correo de Exchange Online</span><span class="sxs-lookup"><span data-stu-id="9523d-200">Exchange Online mail flow rules</span></span>
-
-<span data-ttu-id="9523d-201">Microsoft recomienda encarecidamente no invalidar la obligatoriedad de la Directiva de:.</span><span class="sxs-lookup"><span data-stu-id="9523d-201">Microsoft strongly recommends against overriding the enforcement of the From: policy.</span></span> <span data-ttu-id="9523d-202">Invalidar esta Directiva puede aumentar el riesgo de exposición de la organización al correo no deseado, la suplantación de identidad (phishing) y otros cybercrimes.</span><span class="sxs-lookup"><span data-stu-id="9523d-202">Overriding this policy can increase your organization's risk of exposure to spam, phishing, and other cybercrimes.</span></span>
-
-<span data-ttu-id="9523d-203">No puede invalidar esta directiva para el correo saliente que envíe en Office 365.</span><span class="sxs-lookup"><span data-stu-id="9523d-203">You cannot override this policy for outbound mail you send in Office 365.</span></span> <span data-ttu-id="9523d-204">Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través del soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="9523d-204">In addition, Outlook.com will not allow overrides of any kind, even through support.</span></span>
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a><span data-ttu-id="9523d-205">Otras formas de evitar y proteger contra cybercrimes en Office 365</span><span class="sxs-lookup"><span data-stu-id="9523d-205">Other ways to prevent and protect against cybercrimes in Office 365</span></span>
-<span data-ttu-id="9523d-206"><a name="OtherProtection"> </a></span><span class="sxs-lookup"><span data-stu-id="9523d-206"><a name="OtherProtection"> </a></span></span>
-
-<span data-ttu-id="9523d-207">Para obtener más información sobre cómo fortalecer la organización frente a cybercrimes como suplantación de identidad, correo no deseado, infracciones de datos y otras amenazas, vea [Security Best Practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).</span><span class="sxs-lookup"><span data-stu-id="9523d-207">For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).</span></span>
-
-## <a name="related-topics"></a><span data-ttu-id="9523d-208">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="9523d-208">Related Topics</span></span>
-
-[<span data-ttu-id="9523d-209">Mensajes de reenvío masivo de correo electrónico y EOP</span><span class="sxs-lookup"><span data-stu-id="9523d-209">Backscatter messages and EOP</span></span>](backscatter-messages-and-eop.md)
+<span data-ttu-id="b2d58-170">Para obtener más información sobre cómo reforzar la organización contra el phishing, el correo no deseado, las infracciones de datos y otras amenazas, vea las [diez formas principales de proteger los planes de negocio de Office 365 y Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md).</span><span class="sxs-lookup"><span data-stu-id="b2d58-170">For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).</span></span>
