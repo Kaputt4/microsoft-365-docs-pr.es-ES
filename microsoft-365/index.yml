@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
   ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 03/19/2020
   ms.locfileid: "42857326"
@@ -44,10 +44,10 @@ additionalContent:
   - title: Obtener ayuda con Microsoft 365
     summary: Seleccione una tarjeta para obtener más información sobre Microsoft 365.
     items:
-    - title: Centro de administración de Microsoft 365
+    - title: Centro de administración de Microsoft 365
       summary: Configure y administre los servicios de Office 365 y Microsoft 365 para su organización.
       url: ./admin/admin-home.yml
-    - title: Microsoft 365 Empresa
+    - title: Microsoft 365 Empresa
       summary: Diseñado para pequeñas y medianas empresas. Dirija su negocio con las últimas versiones de Windows y aplicaciones de Office como Excel y Outlook. Aprovéchese de la protección de datos y la seguridad que se extiende a todos los dispositivos de su empresa.
       url: ./business/index.yml
     - title: Microsoft 365 Enterprise
