@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612610"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528610"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -45,9 +45,11 @@ La Protección contra amenazas avanzada de Office 365 (ATP) protege su organizac
 
 La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
-|Plan 1 de ATP de Office 365 |Plan 2 de ATP de Office 365|
-|---------|---------|
-|Funcionalidades de configuración, protección y detección:<br/>- [Datos adjuntos seguros](atp-safe-attachments.md)<br/>- [Vínculos seguros](atp-safe-links.md)<br/>- [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Protección avanzada contra la suplantación de identidad](atp-anti-phishing.md)<br/>- [Detecciones en tiempo real](threat-explorer.md)     |Funcionalidades del plan 1 de ATP de Office 365<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:<br/>- [Rastreadores de amenazas](threat-trackers.md)<br/>- [Explorador de amenazas](threat-explorer.md)<br/>- [Investigación y respuesta automatizadas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Simulador de ataque](attack-simulator.md)|
+|||
+|---|---|
+|**Plan 1 de ATP de Office 365**|**Plan 2 de ATP de Office 365**|
+|Funcionalidades de configuración, protección y detección:<br/>• [Datos adjuntos seguros](atp-safe-attachments.md)<br/>• [Vínculos seguros](atp-safe-links.md)<br/>• [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP de protección contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Detecciones en tiempo real](threat-explorer.md)|Funcionalidades del plan 1 de ATP de Office 365<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:<br/>• [Rastreadores de amenazas](threat-trackers.md)<br/>• [Explorador de amenazas](threat-explorer.md)<br/>• [Investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Simulador de ataque](attack-simulator.md)|
+|
 
 - El plan 2 de ATP de Office 365 está incluido en Office 365 E5, Office 365 A5 y en Microsoft 365 E5.
 
@@ -72,7 +74,7 @@ Las directivas definidas por la organización determinan el comportamiento y el 
 
 - **[ATP para los equipos de SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)**: protege su organización cuando los usuarios colaboran y comparten archivos, identificando y bloqueando archivos maliciosos en sitios de equipo y bibliotecas de documentos. Para obtener más información, consulte [Activar ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Protección anti phishing ATP](atp-anti-phishing.md)**: detecta los intentos de suplantar la identidad de sus usuarios y dominios personalizados. Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad. Para obtener más información, consulte [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md).
+- **[Protección anti phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: detecta los intentos de suplantar la identidad de sus usuarios y dominios internos o personalizados. Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad. Para obtener más información, consulte [Configuración de las directivas ATP contra suplantación de identidad en Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="view-office-365-atp-reports"></a>Ver informes de ATP de Office 365
 

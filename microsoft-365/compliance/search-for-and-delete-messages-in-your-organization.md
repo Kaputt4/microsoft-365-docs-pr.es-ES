@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710519"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516835"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Búsqueda y eliminación de mensajes de correo electrónico
 
-**Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
+**Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
 Puede usar la característica de búsqueda de contenido de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. De esta forma puede buscar y eliminar correos electrónicos potencialmente dañinos o de alto riesgo, como:
   
@@ -94,11 +94,20 @@ Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico 
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
+Este es un ejemplo del uso de una consulta para crear e iniciar una búsqueda mediante la ejecución de los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** para buscar en todos los buzones de la organización:
+
+```powershell
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
+Start-ComplianceSearch -Identity $Search.Identity
+```
+
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Paso 2: Conectarse al PowerShell del Centro de seguridad y cumplimiento
 
 El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimiento de su organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o autenticación federada, no podrá usar las instrucciones del tema anterior sobre la conexión al PowerShell del Centro de seguridad y cumplimiento. Como alternativa, vea las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento con la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+
+Cuando se haya conectado al PowerShell del Centro de seguridad y cumplimiento, ejecute los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** que preparó en el paso anterior.
   
 ## <a name="step-3-delete-the-message"></a>Paso 3: Eliminar el mensaje
 
@@ -110,7 +119,7 @@ En el ejemplo siguiente, el comando elimina software de los resultados de la bú
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-Para eliminar de forma rígida los elementos devueltos por la búsqueda de contenido "quitar el mensaje de suplantación de identidad", ejecutaría este comando:
+Para eliminar de forma permanente los elementos devueltos por la búsqueda de contenido "quitar el mensaje de suplantación de identidad", ejecutaría este comando:
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete

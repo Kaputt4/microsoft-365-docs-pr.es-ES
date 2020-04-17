@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151445"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521496"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -588,7 +588,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 |:-----|:-----|:-----|
 |Usuario agregado|Agregar usuario|Se ha creado una cuenta de usuario de Office 365.|
 |Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
-|Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
+|Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de creación de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Usuario eliminado|Eliminar usuario|Una cuenta de usuario de Office 365 ha sido eliminada.|
 |Restablecer contraseña de usuario|Restablecer contraseña de usuario|El administrador restablece la contraseña de un usuario.|
 |Establecer una propiedad que fuerce al usuario a cambiar la contraseña|Forzar el cambio de la contraseña de usuario|Un administrador estableció la propiedad que obliga a un usuario a cambiar su contraseña la próxima vez que inicie sesión en Office 365.|
@@ -694,7 +694,7 @@ En la siguiente tabla se enumeran las actividades realizadas por los profesional
 |Conjunto de búsqueda de revisiones creado|DeleteWorkingSetSearch|El usuario eliminó una consulta de búsqueda en un conjunto de revisiones.|
 |Etiquetas eliminadas|DeleteTag|El usuario eliminó un grupo de etiquetas en un conjunto de revisiones.|
 |Documento descargado|DownloadDocument|El usuario ha descargado un documento de un conjunto de revisiones.|
-|Etiqueta editada|DownloadDocument|El usuario cambió una etiqueta en un conjunto de revisiones.|
+|Etiqueta editada|UpdateTag|El usuario cambió una etiqueta en un conjunto de revisiones.|
 |Documentos exportados desde un conjunto de revisión|ExportJob|Documentos de usuario exportados desde un conjunto de revisión.|
 |Configuración de carcaza modificados|UpdateCaseSettings|Los usuarios modificaron la configuración de una carcaza. Las opciones de configuración de carcazas incluyen información de casos, permisos de acceso y configuraciones que controlan el comportamiento de búsqueda y análisis.|
 |Conjunto de búsqueda de revisiones modificado|UpdateWorkingSetSearch|El usuario editó una consulta de búsqueda en un conjunto de revisiones.|
@@ -891,9 +891,9 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 |:-----|:-----|:-----|
 |Etiqueta de confidencialidad aplicada al sitio|SensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un sitio de SharePoint o Teams.|
 |Etiqueta de confidencialidad eliminada del sitio|SensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un sitio de SharePoint o Teams.|
-|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Office en la web.|
-|Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web.|
-|Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un documento mediante Office en la web.|
+|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Office en la web o una directiva de etiquetado automático.|
+|Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web o una directiva de etiquetado automático.|
+|Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha eliminado una etiqueta de confidencialidad de un documento mediante Office en la web o una directiva de etiquetado automático.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange

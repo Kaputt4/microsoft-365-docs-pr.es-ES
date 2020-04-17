@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237647"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521516"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -261,13 +261,17 @@ Al igual que una directiva para toda la organización, si una directiva se aplic
 
 También puede aplicar una directiva de retención a usuarios específicos, grupos de Office 365 o sitios. Para ello, cambie el **estado** de esa ubicación y, después, use los vínculos para incluir o excluir determinados usuarios, grupos de Office 365 o sitios. 
   
-Sin embargo, tenga en cuenta que existen los siguientes límites para una directiva de retención que incluya o excluya más de 1000 ubicaciones específicas:
+Sin embargo, tenga en cuenta que existen los siguientes límites cuando configura una directiva de retención que incluya o excluya más de 1 000 ubicaciones específicas:
   
-- Una directiva de retención semejante no puede contener más de 1000 buzones de correo y 100 colecciones de sitios.
+- Números máximos para la directiva de retención:
+    - 1 000 buzones de usuario
+    - 1 000 grupos de Office 365
+    - 1 000 usuarios para chats privados de Teams
+    - 100 sitios (OneDrive o SharePoint)
+
+- Un espacio empresarial no puede contener más de 10 000 directivas de retención.
     
-- Un espacio empresarial no puede contener más de 10000 directivas de retención.
-    
-Aunque existen estos límites, comprenda que puede superarlos si aplica una directiva para toda la organización o una directiva para ubicaciones completas.
+Aunque existen estos límites, puede evitarlos si aplica una directiva para toda la organización o una directiva para ubicaciones completas.
   
 ### <a name="skype-locations"></a>Ubicaciones de Skype
 

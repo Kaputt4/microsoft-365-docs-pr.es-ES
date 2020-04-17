@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255896"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540860"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura
 
@@ -50,10 +50,23 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
   
 ## <a name="view-a-bill-or-invoice"></a>Ver una factura
 
+::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Facturas y pagos</a>.
 
-    Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Facturas y pagos</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Facturas y pagos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Facturas y pagos</a>.
+
+::: moniker-end
 
 2. Seleccione un intervalo de fechas de la lista desplegable y, a continuación, elija el orden que quiera ver.
 
