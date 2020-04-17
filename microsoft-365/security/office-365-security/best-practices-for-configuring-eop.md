@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas.
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033439"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528622"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Procedimientos recomendados para configurar EOP y Office 365 ATP
 
@@ -53,7 +53,7 @@ Esta configuración cubre una variedad de características que se encuentran fue
 |Envío autenticado mediante SMTP al buzón de correo|Deshabilitado|Deshabilitado||
 |Conectividad de EWS al buzón de correo|Deshabilitado|Deshabilitado||
 |[Conectividad de PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Deshabilitado|Deshabilitado|Disponible para usuarios de buzones de correo o usuarios de correo (objetos de usuario devueltos por el cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) ).|
-|Usar inteligencia simulada para los remitentes de listas blancas siempre que sea posible|Sí|Sí||
+|Usar [inteligencia simulada](learn-about-spoof-intelligence.md) para los remitentes de listas blancas siempre que sea posible|Sí|Sí||
 |Bloqueo perimetral basado en directorios (DBEB)|Habilitado|Habilitado|Tipo de dominio = autoritario|
 |[Configurar la autenticación multifactor para todas las cuentas de administrador](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Habilitado|Habilitado||
 

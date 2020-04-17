@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 1ef61f2a5e59db5c45a37bd9f8995b8c70675f30
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032845"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537406"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -33,7 +33,7 @@ Vea el vídeo para obtener información general y lea este artículo para obtene
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-Dependiendo de lo que incluya la suscripción de Office 365 de la organización, el panel de seguridad incluye varios widgets, como Resumen de administración de amenazas, estado de la protección contra amenazas, detecciones de amenazas semanales globales, malware y más, tal y como se describe en la siguientes secciones.
+Dependiendo de lo que incluya la suscripción de Office 365 de la organización, el panel de seguridad incluye varios widgets, como Resumen de administración de amenazas, estado de la protección contra amenazas, detecciones de amenazas semanales globales, malware y más, tal y como se describe en las secciones siguientes.
 
 Para ver el panel de seguridad, en el [centro de seguridad & cumplimiento de Office 365](../../compliance/go-to-the-securitycompliance-center.md), vaya a **Panel**de **Administración** \> de amenazas.
 
@@ -67,7 +67,7 @@ Los detalles dependen de si la suscripción a Office 365 incluye [Exchange Onlin
 |---|---|
 |**Si su suscripción incluye...**|**Verá estos detalles**|
 |EOP pero no Office 365 ATP|Correo electrónico malintencionado detectado y bloqueado por EOP.<br><br> Consulte [Informe de estado de protección contra amenazas (EOP)](view-email-security-reports.md#threat-protection-status-report).|
-|ATP de Office 365|Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br><br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](atp-anti-phishing.md)).<br><br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
+|ATP de Office 365|Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br><br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
 |
 
 Para ver o acceder al widget de estado de protección contra amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).

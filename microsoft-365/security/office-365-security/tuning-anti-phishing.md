@@ -11,13 +11,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: Los administradores pueden aprender a identificar los motivos por los que se ha recibido un mensaje de suplantación de identidad y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
+ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081213"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528994"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 
@@ -33,7 +33,7 @@ Si su suscripción incluye la protección contra amenazas avanzada (ATP), puede 
 
 - [Datos adjuntos seguros ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Directivas contra la suplantación de identidad ATP](set-up-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo**, **más agresivo**o **más agresivo**.
+- [Directivas antiphishing de ATP en Office 365](configure-atp-anti-phishing-policies.md). Tenga en cuenta que puede aumentar temporalmente los **umbrales de suplantación de identidad (phishing) avanzada** de la Directiva de **estándar** a **agresivo**, **más agresivo**o **más agresivo**.
 
 Compruebe que estas características de ATP están activadas.
 
@@ -51,11 +51,11 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - En una base mensual, ejecute [calificación segura](../mtp/microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización de Office 365.
 
-- Revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md) y [habilite la protección contra la suplantación de identidad en la Directiva contra la suplantación de identidad (phishing)](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) para **poner en cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
+- Revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md) y [Configure inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para **poner en cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
 - Revise periódicamente el [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).
 
-- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Si decide hacerlo, debe extremar las precauciones. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente se bloquearían mediante los filtros de phish y correo no deseado de Office 365.
+- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en las listas de remitentes permitidos o de dominios permitidos en las directivas contra correo no deseado. Si decide hacerlo, debe extremar las precauciones. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente se bloquearían mediante los filtros de phish y correo no deseado de Office 365.
 
   La mejor forma de tratar con los mensajes legítimos que están bloqueados por Office 365 (falsos positivos) que implican a los remitentes de su dominio es configurar completamente y por completo los registros de DMARC, DKIM y DMARC en DNS para _todos_ los dominios de correo electrónico en Office 365:
 
@@ -73,6 +73,6 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - Siempre que sea posible, se recomienda entregar el correo electrónico del dominio directamente a Office 365. En otras palabras, apunte el registro MX del dominio de Office 365 a Office 365. Exchange Online Protection (EOP) puede proporcionar la mejor protección para los usuarios de la nube cuando el correo se entrega directamente a Office 365. Si debe usar un sistema de protección de correo electrónico de terceros delante de EOP, use el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- La autenticación multifactor (MFA) es una forma realmente eficaz de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- La autenticación multifactor (MFA) es una buena forma de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Los intrusos suelen usar las reglas de reenvío a los destinatarios externos para extraer datos. Use la información de **reglas de reenvío de buzón de correo de revisión** de la [puntuación segura de Microsoft](../mtp/microsoft-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

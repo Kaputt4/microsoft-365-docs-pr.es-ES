@@ -16,22 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general de las páginas de advertencia que puede ver cuando la protección contra amenazas avanzada de Office 365 está en funcionamiento.
-ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086749"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528862"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros de ATP de Office 365
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Office 365 Hogar u Office 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) ayuda a proteger a su organización de los intentos de suplantación de identidad y el malware mediante características como, por ejemplo, [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros de ATP](atp-safe-attachments.md)y [protección contra la suplantación de identidad](anti-phishing-protection.md). Cuando se realiza la protección, se comprueban los vínculos (direcciones URL) de los mensajes de correo electrónico y documentos de Office. Si una dirección URL se identifica como sospechosa o malintencionada, es posible que se bloquee la apertura de la dirección URL al hacer clic en ella. En lugar de ir directamente al sitio, es posible que vea una página de advertencia en su lugar. 
-  
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) ayuda a proteger a su organización de los intentos de suplantación de identidad y el malware mediante características como, por ejemplo, [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros de ATP](atp-safe-attachments.md)y [protección contra la suplantación de identidad](anti-phishing-protection.md). Cuando se realiza la protección, se comprueban los vínculos (direcciones URL) de los mensajes de correo electrónico y documentos de Office. Si una dirección URL se identifica como sospechosa o malintencionada, es posible que se bloquee la apertura de la dirección URL al hacer clic en ella. En lugar de ir directamente al sitio, es posible que vea una página de advertencia en su lugar.
+
 Lea este artículo para ver ejemplos de páginas de advertencias que pueden aparecer, junto con las actualizaciones recientes de las páginas de advertencia.
-  
+
 ## <a name="examples-of-warning-pages"></a>Ejemplos de páginas de advertencia
 
 ### <a name="atp-is-scanning-the-link"></a>ATP está examinando el vínculo
@@ -113,4 +113,3 @@ Página de advertencia original:
 Página de advertencia actualizada:
 
 ![Se ha producido un error](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-   

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895446"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541112"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>¿Qué viene con la puntuación segura de Microsoft?
 
@@ -36,15 +36,15 @@ Para obtener más información sobre los cambios recientes, vea [what's New in S
 
 Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
 
-- Eliminar o bloquear cuentas no usadas en los últimos 30 días
-- Designar menos de 5 administradores globales
 - Aplicar protecciones de IRM a los documentos
 - Aplicar directivas de prevención de pérdida de datos
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Agregar compatibilidad de control adicional en la versión preliminar
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Adición de la acción de mejora de Azure AD en la versión preliminar
+
 - No permitir a los usuarios conceder consentimiento a las aplicaciones no administradas (actualmente disponibles en la versión de lanzamiento)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Compatibilidad con acciones adicionales de mejora de la seguridad de aplicaciones en la nube de Microsoft
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Adición de acciones de mejora de ATP de Azure en la versión preliminar
+
 - Deshabilitar el servicio de cola de impresión en controladores de dominio
 - Modificar las delegaciones Kerberos no seguras para impedir la suplantación
 - Proteger y administrar contraseñas de administración local con los intervalos de Microsoft
@@ -56,5 +56,6 @@ Para asegurarse de que la puntuación segura de Microsoft es significativa y que
 - Detener la comunicación de protocolos heredados
 - Detener el uso de cifrado débil
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Compatibilidad con las recomendaciones de seguridad de la amenaza ATP de Microsoft defender & Vulnerability Management (TVM)
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Compatibilidad con las recomendaciones de seguridad de la amenaza ATP de Microsoft defender & Vulnerability Management (TVM) en la versión preliminar
+
 - Todas las recomendaciones de seguridad emitidas suministradas por TVM ahora también estarán disponibles en la calificación segura de Microsoft

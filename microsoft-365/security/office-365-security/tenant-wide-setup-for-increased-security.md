@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081261"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529018"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -39,7 +39,7 @@ El centro de seguridad 365 de Microsoft incluye capacidades que protegen el ento
 ||||
 |---|---|---|
 |**Área**|**Incluye una directiva predeterminada**|**Recomendación**|
-|**Contra la suplantación de identidad**|Sí| Si tiene un dominio personalizado, cree una directiva contra la suplantación de identidad (phishing) para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su CEO, y para proteger su dominio. Revisión [Configure una directiva antiphishing](set-up-anti-phishing-policies.md) y cree una directiva siguiendo el ejemplo como guía: "ejemplo: Directiva contra la suplantación de identidad (phishing) para proteger un usuario y un dominio".|
+|**Contra la suplantación de identidad**|Sí|Si tiene un dominio personalizado, configure la Directiva antiphishing predeterminada para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su CEO, y para proteger su dominio. Revise [las directivas antiphishing en office 365](set-up-anti-phishing-policies.md) y vea [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md) o [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Motor antimalware**|Sí| Edite la directiva predeterminada: <br/> &ensp;&ensp;* Filtro de tipos de datos adjuntos comunes: seleccione activado <br/><br/> También puede crear directivas de filtro de malware personalizadas y aplicarlas a usuarios, grupos o dominios específicos de la organización. <br/><br/> Más información: <br/> &ensp;&ensp;* [Protección contra malware](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurar directivas antimalware](configure-anti-malware-policies.md)|
 |**Datos adjuntos seguros ATP**|No| En la Página principal de datos adjuntos seguros, proteja los archivos en SharePoint, OneDrive y Microsoft Teams; para ello, Active esta casilla: <br/> &ensp;&ensp;* Activar ATP para SharePoint, OneDrive y Microsoft Teams <br/><br/> Agregue una nueva Directiva de datos adjuntos seguros con esta configuración: <br/> &ensp;&ensp;* Bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado (elija esta opción). <br/> &ensp;&ensp;* Habilitar el redireccionamiento: (Active esta casilla y escriba una dirección de correo electrónico, como una cuenta de administrador o de cuarentena) <br/> &ensp;&ensp;* Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla) <br/> &ensp;&ensp;* Se aplica a — el dominio del destinatario es (Seleccione su dominio) <br/><br/>Más información: [Configure las directivas de datos adjuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md)|
 |**Vínculos seguros de ATP**|Sí| Agregue esta configuración a la directiva predeterminada para toda la organización: <br/> &ensp;&ensp;* Use vínculos seguros en: Office 365 ProPlus, Office para iOS y Android (Seleccione esta opción). <br/><br/>Directiva recomendada para destinatarios específicos: <br/> &ensp;&ensp;* Las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo (Seleccione esta opción). <br/> &ensp;&ensp;* Use datos adjuntos seguros para analizar contenido descargable (Active esta casilla). <br/> &ensp;&ensp;* Se aplica a — el dominio del destinatario es (Seleccione su dominio). <br/><br/> Más información: [vínculos seguros de ATP de Office 365](atp-safe-links.md).|

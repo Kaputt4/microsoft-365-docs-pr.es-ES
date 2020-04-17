@@ -1,5 +1,5 @@
 ---
-title: Recomendaciones de Microsoft para EOP y Office 365 la configuración de seguridad de ATP, las recomendaciones, el marco de directivas de remitente, la creación de informes de mensajes basados en dominios y su conformidad, el correo identificado por DomainKeys, los pasos, cómo funciona, las líneas de base de seguridad, las líneas de base para EOP, líneas de base para ATP, configurar ATP, configurar EOP, configurar ATP, configurar EOP, configuración de seguridad
+title: Recomendaciones de Microsoft para EOP y Office 365 la configuración de seguridad de ATP, las recomendaciones, el marco de directivas de remitente, la creación de informes de mensajes basados en dominios y su conformidad, el correo identificado por DomainKeys, los pasos, cómo funciona, las líneas de base de seguridad, las líneas de base para EOP, las líneas de base para ATP, la configuración de EOP, configurar EOP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032857"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537442"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -57,7 +57,7 @@ Para crear y configurar directivas contra correo no deseado, vea [configurar dir
 |Período de retención de cuarentena <br/><br/> _QuarantineRetentionPeriod_|30 días|30 días||
 |**Sugerencias de seguridad** <br/><br/> _InlineSafetyTipsEnabled_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
 |Remitentes permitidos <br/><br/> _AllowedSenders_|Ninguno|Ninguno||
-|Dominios de remitentes permitidos <br/><br/> _AllowedSenderDomains_|Ninguno|Ninguno|No es necesario agregar dominios de su propiedad (también conocidos como _dominios aceptados_) a la lista de remitentes permitidos. De hecho, se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría. Use [inteligencia de identidad](learn-about-spoof-intelligence.md) en el centro de seguridad & cumplimiento de la página **configuración contra correo no deseado** para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos.|
+|Dominios de remitentes permitidos <br/><br/> _AllowedSenderDomains_|Ninguno|Ninguno|No es necesario agregar dominios de su propiedad (también conocidos como _dominios aceptados_) a la lista de remitentes permitidos. De hecho, se considera un riesgo alto, ya que crea oportunidades para que los actores incorrectos le envíen correo que, de lo contrario, se filtraría. Use [inteligencia de identidad](learn-about-spoof-intelligence.md) en el centro de seguridad & cumplimiento de la página **configuración contra correo no deseado** para revisar todos los remitentes que imitan direcciones de correo electrónico de remitentes en los dominios de correo electrónico de su organización o direcciones de correo electrónico de remitentes suplantados en dominios externos.|
 |Remitentes bloqueados <br/><br/> _BlockedSenders_|Ninguno|Ninguno||
 |Dominios de remitentes bloqueados <br/><br/> _BlockedSenderDomains_|Ninguno|Ninguno||
 |**Habilitar las notificaciones de correo no deseado para el usuario final** <br/><br/> _EnableEndUserSpamNotifications_|Habilitado <br/><br/> `$true`|Habilitado <br/><br/> `$true`||
@@ -118,13 +118,17 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 |**Notificar a remitentes externos** del mensaje no entregado <br/><br/> _EnableExternalSenderNotifications_|Deshabilitado <br/><br/> `$false`|Deshabilitado <br/><br/> `$false`||
 |
 
-### <a name="eop-anti-phishing-policy-settings"></a>Configuración de la Directiva de protección contra suplantación de EOP
+### <a name="eop-default-anti-phishing-policy-settings"></a>Configuración de directiva antiphishing predeterminada de EOP
 
-|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Habilitación de la protección contra la suplantación de identidad|Activado|Activado||
-|Habilitar remitente sin autenticar (etiquetado)|Activado|Activado||
-|Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio|Mover mensaje a las carpetas de correo no deseado de los destinatarios|Poner en cuarentena el mensaje||
+Solo puede configurar estas opciones en las organizaciones de Office 365 con buzones de Exchange Online. Para configurar estas opciones, vea [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
+
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <br/><br/> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|Esto se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Seguridad de la protección contra amenazas avanzada de Office 365
 
@@ -139,35 +143,47 @@ Si ha agregado una suscripción de ATP de Office 365 a su EOP, establezca las si
 
 ### <a name="office-atp-anti-phishing-policy-settings"></a>Configuración de la Directiva contra phishing de ATP de Office
 
-Los clientes de EOP obtienen contra la suplantación de identidad (phishing) básica como se describió anteriormente, pero Office 365 ATP incluye más características y control para ayudar a prevenir, detectar y corregir los ataques.
+Los clientes de EOP obtienen contra la suplantación de identidad (phishing) básica como se describió anteriormente, pero Office 365 ATP incluye más características y control para ayudar a prevenir, detectar y corregir los ataques. Para crear y configurar estas directivas, consulte [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
-|Nombre de la característica de seguridad de suplantación|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|(Editar Directiva de suplantación) Agregar usuarios para protegerlos|Activado|Activado|Depende de su organización, pero le recomendamos que agregue usuarios en los roles clave. Internamente, pueden ser su CEO, director financiero y otros líderes senior. Externamente, pueden incluir miembros del Consejo o su Consejo de administración.|
-|(Editar Directiva de suplantación) Incluir automáticamente los dominios de su propiedad|Activado|Activado||
-|(Editar Directiva de suplantación) Incluir dominios personalizados|Activado|Activado|Depende de su organización, pero se recomienda agregar los dominios con los que interactúa con la mayoría de los que no son de su propiedad.|
-|Si un usuario suplantado ha enviado el correo electrónico que ha especificado|Poner en cuarentena el mensaje|Poner en cuarentena el mensaje||
-|Si se envía un correo electrónico por un dominio suplantado especificado|Poner en cuarentena el mensaje|Poner en cuarentena el mensaje||
-|Mostrar sugerencia para usuarios suplantados|Activado|Activado||
-|Mostrar sugerencia para dominios suplantados|Activado|Activado||
-|Mostrar sugerencia para caracteres inusuales|Activado|Activado||
-|Habilitar la inteligencia de buzones|Activado|Activado||
-|Habilitar la protección de suplantación basada en la inteligencia de buzones|Activado|Activado||
-|Si un usuario suplantado envía un correo electrónico protegido por la inteligencia de buzones|Mover mensaje a las carpetas de correo no deseado de los destinatarios|Poner en cuarentena el mensaje||
-|(Editar Directiva de suplantación) Agregar dominios y remitentes de confianza|Ninguno|Ninguno|Depende de su organización, pero se recomienda agregar usuarios o dominios que se marquen incorrectamente como phish debido solo a la suplantación y no a otros filtros.|
+#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Configuración de suplantación en las directivas antiphishing de ATP
 
-|Nombre de la característica de seguridad de falsificación|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Habilitación de la protección contra la suplantación de identidad|Activado|Activado||
-|Habilitar remitente sin autenticar (etiquetado)|Activado|Activado||
-|Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio|Mover mensaje a las carpetas de correo no deseado de los destinatarios|Poner en cuarentena el mensaje||
-|EnableSuspiciousSafetyTip|False|True|Esta opción solo está disponible en PowerShell|
-|TreatSoftPassAsAuthenticated|True|False|Esta opción solo está disponible en PowerShell|
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|Usuarios protegidos: **Agregar usuarios para protegerlos** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Depende de su organización, pero le recomendamos que agregue usuarios en los roles clave. Internamente, pueden ser su CEO, director financiero y otros líderes senior. Externamente, pueden incluir miembros del Consejo o su Consejo de administración.|
+|Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <br/><br/> _EnableOrganizationDomainsProtection_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|Dominios protegidos: **incluir dominios personalizados** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activado <br/><br/> `$true` <br/><br/> \<lista de dominios\>|Activado <br/><br/> `$true` <br/><br/> \<lista de dominios\>|Depende de su organización, pero se recomienda agregar los dominios con los que interactúa con frecuencia y que no son de su propiedad.|
+|Usuarios protegidos: **si un usuario suplantado envía un correo electrónico** <br/><br/> _TargetedUserProtectionAction_|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`||
+|Dominios protegidos: **si un dominio suplantado envía un correo electrónico** <br/><br/> _TargetedUserProtectionAction_|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`||
+|**Mostrar sugerencia para usuarios suplantados** <br/><br/> _EnableSimilarUsersSafetyTips_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Mostrar sugerencia para dominios suplantados** <br/><br/> _EnableSimilarDomainsSafetyTips_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Mostrar sugerencia para caracteres inusuales** <br/><br/> _EnableUnusualCharactersSafetyTips_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**¿Habilitar la inteligencia de buzones?** <br/><br/> _EnableMailboxIntelligence_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**¿Habilitar la protección de suplantación basada en buzones de correo?** <br/><br/> _EnableMailboxIntelligenceProtection_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Si un usuario suplantado envía un correo electrónico protegido por la inteligencia de buzones** <br/><br/> _MailboxIntelligenceProtectionAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`||
+|**Remitentes de confianza** <br/><br/> _ExcludedSenders_|Ninguno|Ninguno|Depende de su organización, pero se recomienda agregar usuarios que se marquen correctamente como phish debido a la suplantación y no a otros filtros.|
+|**Dominios de confianza** <br/><br/> _ExcludedDomains_|Ninguno|Ninguno|Depende de su organización, pero se recomienda agregar dominios que se marquen incorrectamente como phish debido a la suplantación y no a otros filtros.|
+|
 
+#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>Configuración de suplantación en las directivas antiphishing de ATP
 
-|Nombre de la característica de seguridad de configuración avanzada|Estándar|Estricta|Comentario|
-|---------|---------|---------|---------|
-|Umbrales de suplantación de identidad avanzada|2-agresivo|3-más agresivo||
+Tenga en cuenta que estos son los mismos valores de configuración que están disponibles en la [configuración de la Directiva contra correo no deseado en EOP](#eop-anti-spam-policy-settings).
+
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
+|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <br/><br/> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|Esto se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
+|
+
+#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Configuración avanzada en las directivas antiphishing de ATP
+
+|||||
+|---|---|---|---|
+|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
+|**Umbrales de suplantación de identidad avanzada** <br/><br/> _PhishThresholdLevel_|**2-agresivo** <br/><br/> `2`|**3-más agresivo** <br/><br/> `3`||
+|
 
 ### <a name="safe-links-settings"></a>Configuración de vínculos seguros
 

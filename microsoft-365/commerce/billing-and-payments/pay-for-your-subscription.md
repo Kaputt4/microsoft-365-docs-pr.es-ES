@@ -24,12 +24,12 @@ description: Obtenga información acerca de qué opciones de pago están disponi
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633718"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540908"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Pagar la suscripción a Office 365 para empresas
 
@@ -275,9 +275,23 @@ Puede elegir recibir una copia del extracto de facturación como datos adjuntos 
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Cómo recibir el extracto de facturación por correo electrónico
 
+::: moniker range="o365-worldwide"
+
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 
-    Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.
+
+::: moniker-end
 
 2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
 

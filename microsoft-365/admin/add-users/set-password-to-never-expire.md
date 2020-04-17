@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 04fb2b0c17f695c41df2f8b1277c7918054ae9fe
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240240"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540896"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -38,7 +38,7 @@ ms.locfileid: "43240240"
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Establecer la Directiva de expiración de contraseña para usuarios individuales
 
-Un administrador global de un servicio de nube de Microsoft puede usar Azure Active Directory PowerShell para Graph para establecer que las contraseñas no expiren para determinados usuarios. También puede usar cmdlets de AzureAD para quitar la configuración nunca expirada o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
+Un administrador global de un servicio de nube de Microsoft puede usar [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para establecer que las contraseñas no expiren para determinados usuarios. También puede usar cmdlets de [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) para quitar la configuración nunca expirada o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
 
 Esta guía se aplica a otros proveedores, como Intune y Office 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de la contraseña es la única parte de la Directiva que se puede cambiar.
 
