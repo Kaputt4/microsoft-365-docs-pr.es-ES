@@ -5,15 +5,15 @@
       items:
         - name: Información general de administración
           href: admin-overview/admin-overview.md
-        - name: Suscribirse a Office 365
+        - name: Registrarse en Office 365
           href: admin-overview/sign-up-for-office-365.md
-        - name: Vídeo de aprendizaje
+        - name: Vídeos de aprendizaje
           href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
         - name: Acerca del centro de administración
           href: admin-overview/about-the-admin-center.md
         - name: ¿Qué suscripción tengo?
           href: admin-overview/what-subscription-do-i-have.md
-        - name: Información sobre Office 365 Germany
+        - name: Obtenga información sobre Office 365 Alemania
           href: admin-overview/learn-about-office-365-germany.md
         - name: Aplicación móvil de administración
           href: admin-overview/admin-mobile-app.md
@@ -35,11 +35,11 @@
           href: setup/migrate-email-and-contacts-admin.md
         - name: Implementar Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
-        - name: Configurar uso compartido y almacenamiento de archivos
+        - name: Configurar el almacenamiento y el uso compartido de archivos
           href: setup/set-up-file-storage-and-sharing.md
         - name: Personalizar el sitio de grupo
           href: setup/customize-team-site.md
-        - name: Actualizar a los usuarios al cliente de Office más reciente
+        - name: Actualizar los usuarios al cliente de Office más reciente
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Personalizar la página de inicio de sesión
           href: setup/customize-sign-in-page.md
@@ -49,27 +49,27 @@
           href: setup/customize-your-organization-theme.md
     - name: Usuarios y funciones
       items:
-        - name: Adición de usuarios
+        - name: Agregar usuarios
           href: add-users/add-users.md
         - name: Crear y usar una plantilla para agregar usuarios
           href: add-users/create-and-use-a-template-to-add-users.md
         - name: Eliminar un usuario
           href: add-users/delete-a-user.md
-        - name: Restaurar usuario
+        - name: Restaurar un usuario
           href: add-users/restore-user.md
         - name: Restablecer contraseñas
           href: add-users/reset-passwords.md
         - name: Establecer contraseña para que no expire nunca
           href: add-users/set-password-to-never-expire.md
-        - name: Permitir a los usuarios restablecer sus contraseñas
+        - name: Permitir a los usuarios restablecer contraseñas
           href: add-users/let-users-reset-passwords.md
         - name: Reenviar la contraseña de usuario
           href: add-users/resend-user-password.md
         - name: Conceder permisos de buzón a otro usuario
           href: add-users/give-mailbox-permissions-to-another-user.md
-        - name: Cambiar una dirección de correo electrónico y nombre de usuario
+        - name: Cambiar un nombre de usuario y una dirección de correo electrónico
           href: add-users/change-a-user-name-and-email-address.md
-        - name: 'Crear, editar o eliminar una vista personalizada de usuario'
+        - name: 'Crear, editar o eliminar una vista de usuario personalizada'
           href: add-users/create-edit-or-delete-a-custom-user-view.md
         - name: Agregar nuevo empleado
           href: add-users/add-new-employee.md
@@ -107,7 +107,7 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Cambiar la dirección de correo electrónico
           href: email/change-email-address.md
-        - name: Administrar Bandeja de entrada Prioritarios
+        - name: Configurar Bandeja de entrada Prioritarios
           href: setup/configure-focused-inbox.md
         - name: Crear firmas y avisos de declinación de responsabilidades
           href: setup/create-signatures-and-disclaimers.md
@@ -123,7 +123,7 @@
           href: email/configure-clutter.md
     - name: Proteger los datos empresariales
       items:
-        - name: Las 10 mejores formas de proteger tus datos
+        - name: Las 10 mejores formas de proteger los datos
           href: security-and-compliance/secure-your-business-data.md
         - name: Configurar la autenticación multifactor
           href: security-and-compliance/set-up-multi-factor-authentication.md
@@ -157,7 +157,7 @@
           href: manage/manage.md
         - name: Cambiar las preferencias de contacto
           href: manage/change-contact-preferences.md
-        - name: 'Cambiar la dirección, contactos, etc.'
+        - name: 'Cambiar la dirección, contacto, etc.'
           href: manage/change-address-contact-and-more.md
         - name: Actualizar la dirección de correo electrónico y el número de teléfono
           href: manage/update-phone-number-and-email-address.md
@@ -167,9 +167,9 @@
           href: manage/customize-the-app-launcher.md
         - name: Requisitos para la implementación centralizada
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Usar la implementación centralizada para desplegar complementos
+        - name: Usar la implementación centralizada para implementar complementos
           href: manage/manage-deployment-of-add-ins.md
-        - name: Preguntas más frecuentes sobre la implementación centralizada
+        - name: Preguntas frecuentes sobre implementación centralizada
           href: manage/centralized-deployment-FAQ.md
         - name: Buscar un asociado o distribuidor
           href: manage/find-your-partner-or-reseller.md
@@ -185,7 +185,7 @@
           href: manage/share-calendars-with-external-users.md
         - name: Asignar licencias a los usuarios
           href: manage/assign-licenses-to-users.md
-        - name: Cancelar la asignación de licencias a los usuarios
+        - name: Cancelar la asignación de licencias a usuarios
           href: manage/remove-licenses-from-users.md
         - name: Resolver conflictos de licencia
           href: manage/resolve-license-conflicts.md
@@ -217,13 +217,13 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: Buscar y corregir problemas
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: Conectar el dominio
+        - name: Conexión de dominio
           href: get-help-with-domains/domain-connect.md
         - name: Configurar su dominio (instrucciones específicas del host)
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
-        - name: Cambiar los servidores DNS en cualquier registrador de dominios
+        - name: Cambiar los servidores de nombres en cualquier registrador de dominios
           href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
-        - name: Crear registros DNS en cualquier proveedor de hospedaje DNS
+        - name: Crear registros DNS en cualquier proveedor de host DNS
           href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: Quitar un dominio
           href: get-help-with-domains/remove-a-domain.md
@@ -231,11 +231,11 @@
           href: get-help-with-domains/transfer-data-manually.md
     - name: Grupos
       items:
-        - name: introducción a los grupos
+        - name: Introducción a grupos
           href: create-groups/office-365-groups.md
         - name: Comparar grupos
           href: create-groups/compare-groups.md
-        - name: Crear un grupo de Office 365
+        - name: Crear un Grupo de Office 365
           href: create-groups/create-groups.md
         - name: Administrar un grupo de Office 365
           href: create-groups/manage-groups.md
@@ -245,49 +245,49 @@
           href: create-groups/manage-creation-of-groups.md
         - name: Seleccione el dominio para crear Grupos
           href: create-groups/choose-domain-to-create-groups.md
-        - name: Directiva de nomenclatura de grupos
+        - name: Directiva de nomenclatura de Grupos
           href: create-groups/groups-naming-policy.md
-        - name: Permitir que los miembros envíen como o envíen en nombre de un grupo
+        - name: Permitir que los miembros envíen como o envíen en nombre de un Grupo
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Agregar o quitar a miembros de grupos
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Directiva de expiración de grupo de Office 365
+        - name: Directiva de expiración de Grupo de Office 365
           href: create-groups/office-365-groups-expiration-policy.md
-        - name: Restaurar grupo eliminado
+        - name: Restaurar Grupo eliminado
           href: create-groups/restore-deleted-group.md
         - name: Administrar el acceso de invitado en Grupos
           href: create-groups/manage-guest-access-in-groups.md
         - name: Usar etiquetas de confidencialidad con grupos
           href: 'https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?toc=/office365/admin/toc.json'
-    - name: Office 365 operado por 21Vianet
+    - name: Office 365 ofrecido por 21Vianet
       items:
-        - name: Sobre Office 365 operado por 21Vianet
+        - name: Acerca de Office 365 ofrecido por 21Vianet
           href: services-in-china/services-in-china.md
         - name: Comprar o probar suscripciones
           href: services-in-china/buy-or-try-subscriptions.md
-        - name: Descargue la aplicación de Office para Android para Office 365 operada por 21Vianet
+        - name: Descargar la aplicación de Office para Android para Office 365 ofrecido por 21Vianet
           href: services-in-china/download-office-app-for-Android.md
-        - name: 'Descargue la aplicación de Office para iOS, para Office 365 ofrecido por 21Vianet'
+        - name: 'Descargar la aplicación de Office para iOS, para Office 365 ofrecido por 21Vianet'
           href: services-in-china/download-office-app-for-iOS.md
-        - name: Ver la facturas u obtener un Fapiao
+        - name: Consultar factura u obtener un Fapiao
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Solicitar un Fapiao
           href: services-in-china/apply-for-a-fapiao.md
         - name: Paridad de Azure Information Protection
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: Nuevas características
+    - name: Obtener nuevas características
       items:
-        - name: Sobre el nuevo centro de administración
+        - name: Acerca del nuevo centro de administración
           href: microsoft-365-admin-center-preview.md
-        - name: Novedades en el nuevo centro de administración
+        - name: Novedades del nuevo centro de administración
           href: whats-new-in-preview.md
         - name: Mantenerse al día de los cambios
           href: manage/stay-on-top-of-updates.md
-        - name: Opciones de versión en Office 365
+        - name: Opciones de versión de Office 365
           href: manage/release-options-in-office-365.md
         - name: Centro de mensajes
           href: manage/message-center.md
         - name: Probar o comprar Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
-    - name: Póngase en contacto con soporte técnico para productos empresariales
+    - name: Ponerse en contacto con el soporte técnico para productos empresariales
       href: contact-support-for-business-products.md
