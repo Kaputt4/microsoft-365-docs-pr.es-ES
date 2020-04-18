@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978230"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551141"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -30,7 +30,7 @@ Office 365 ofrece varias formas en las que su organización puede evitar que el 
 
 - ** [Retención por juicio](create-a-litigation-hold.md):** Suspensiones que se aplican a los buzones de usuario en Exchange Online.
 
-- ** [retención de exhibición](ediscovery-cases.md#step-4-place-content-locations-on-hold)** de documentos electrónicos: Suspensiones asociadas a un caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. las suspensiones de eDiscovery se pueden aplicar a los buzones de correo de los usuarios y al buzón correspondiente para los grupos de Office 365 y Microsoft Teams.
+- ** [retención de exhibición](create-ediscovery-holds.md)** de documentos electrónicos: Suspensiones asociadas a un caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. las suspensiones de eDiscovery se pueden aplicar a los buzones de correo de los usuarios y al buzón correspondiente para los grupos de Office 365 y Microsoft Teams.
 
 - ** [Conservación local](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Suspensiones que se aplican a los buzones de usuario mediante el uso de la herramienta eDiscovery local & conservación en el centro de administración de Exchange en Exchange Online.
 

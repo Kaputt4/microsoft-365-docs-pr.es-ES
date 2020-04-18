@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La herramienta de administración de custodios de eDiscovery avanzado le permite administrar el flujo de trabajo en torno a la identificación, preservación y recopilación de datos asociados con las personas de interés en un caso legal.
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400917"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551250"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Trabajar con custodios en eDiscovery avanzado
 
@@ -38,7 +38,3 @@ Para obtener más información sobre cómo trabajar con custodios, vea lo siguie
 - [Administrar custodios en un caso](manage-new-custodians.md)
 
 - [Ver la actividad administrativa](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>Permisos de eDiscovery avanzado
-
-En eDiscovery avanzado, puede usar el grupo de roles integrado eDiscovery Manager para asignar los permisos necesarios a los investigadores legales para que puedan administrar el flujo de trabajo de un extremo a otro en eDiscovery avanzado. Como alternativa, puede crear grupos de roles personalizados con un subconjunto de las funciones necesarias para realizar determinadas acciones en un caso en eDiscovery avanzado. Para obtener más información acerca de los roles relacionados con la exhibición de documentos electrónicos, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](assign-ediscovery-permissions.md).

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240305"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551151"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -58,7 +58,6 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     
     Específico para el etiquetado automático para SharePoint y OneDrive:
     - Máximo de 25 000 archivos etiquetados automáticamente (Word, PowerPoint o Excel) en su espacio empresarial por día
-        - Máximo de 5 archivos etiquetados automáticamente por usuario con licencia por día
     - Máximo de 10 colecciones de sitios entre todas las directivas
     - Máximo de 10 directivas en su espacio empresarial
 

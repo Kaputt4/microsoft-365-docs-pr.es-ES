@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La exhibición avanzada de documentos electrónicos facilita la administración del flujo de trabajo de notificación de retención legal alrededor de los custodios de notificación en investigaciones legales.
-ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280128"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551251"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Trabajar con comunicaciones en eDiscovery avanzado
 
@@ -49,22 +49,12 @@ Con la exhibición avanzada de documentos electrónicos, los equipos legales pue
 
    - **Escalaciones:** En algunos casos, si un custodio sigue sin responder incluso después de un conjunto de recordatorios durante un período de tiempo, el equipo jurídico puede configurar un flujo de trabajo de escalado para notificar a los custodios que no responden y a su administrador.
 
-## <a name="role-groups-and-permissions"></a>Grupos de roles y permisos
+Para obtener más información acerca de la administración del proceso de comunicación entre custodios, consulte lo siguiente: 
 
-Los equipos legales pueden controlar y separar su actividad de caso mediante el uso de grupos de roles y permisos relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
+- [Crear un aviso de suspensión legal](create-hold-notification.md)
 
-Para crear y administrar notificaciones de retención legal, un usuario debe ser miembro del grupo de roles eDiscovery Manager. Los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery avanzados. Pueden agregar y quitar miembros, ubicar custodios y ubicaciones de contenido en retención, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión, y exportar y descargar desde una configuración avanzada. caso de exhibición de documentos electrónicos. 
+- [Usar el editor de comunicaciones](using-communications-editor.md)
 
-El grupo de roles eDiscovery Manager tiene dos subgrupos. La diferencia entre estos subgrupos se basa en el ámbito.
+- [Administrar las notificaciones de retención](manage-hold-notification.md)
 
-- **Administrador de eDiscovery:** Permite ver y administrar los casos de eDiscovery avanzados que crean o de los que son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el caso en la página de exhibición de documentos electrónicos avanzada en el centro de seguridad & cumplimiento.
-
-- **Administrador de eDiscovery:** Puede realizar todas las tareas de administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede:
-
-  - Ver todos los casos que se enumeran en la página exhibición avanzada de documentos electrónicos.
-  
-  - Administrar cualquier caso en la organización después de que se agreguen como miembro del caso.
-
-  - Obtenga acceso y exporte datos de casos en eDiscovery avanzado para cualquier caso de la organización.
-
-Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](assign-ediscovery-permissions.md).
+- [Confirmar una notificación de retención](acknowledge-hold-notification.md)
