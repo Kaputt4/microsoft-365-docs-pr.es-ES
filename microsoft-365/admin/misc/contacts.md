@@ -61,4 +61,4 @@ ms.locfileid: "42857396"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="3f40e-126">¿Qué sucede si no he obtenido respuesta a mi pregunta?</span><span class="sxs-lookup"><span data-stu-id="3f40e-126">What if my question still hasn't been answered?</span></span>
 
-<span data-ttu-id="3f40e-127">Consulte el resto de la [ayuda para administradores](../admin-home.yml) o envíenos sus comentarios más abajo.</span><span class="sxs-lookup"><span data-stu-id="3f40e-127">Visit the rest of our [admin help](../admin-home.yml) or give us your feedback below.</span></span>
+<span data-ttu-id="3f40e-127">Consulte el resto de la [ayuda para administradores](../admin-home.md) o envíenos sus comentarios más abajo.</span><span class="sxs-lookup"><span data-stu-id="3f40e-127">Visit the rest of our [admin help](../admin-home.md) or give us your feedback below.</span></span>
