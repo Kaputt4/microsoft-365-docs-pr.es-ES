@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Office 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955678"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584014"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción de Office 365 para empresas?
 
@@ -44,7 +44,7 @@ En la siguiente tabla se explica qué se puede esperar cuando expire una suscrip
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Datos accesibles para todos los*                                               | *Datos accesibles para todos los*                                                     | *Datos accesibles solo para administradores*                                             | **Se quitan los datos eliminados<br/>de Azure Active Directory, si otros servicios no los usan** |
 | Los usuarios tienen acceso normal a Office 365, datos y aplicaciones de Office  | Los usuarios tienen acceso normal a Office 365, archivos y aplicaciones              | Los usuarios no pueden tener acceso a Office 365, archivos o aplicaciones                        | Los usuarios no pueden tener acceso a Office 365, archivos o aplicaciones                                     |
-| Los administradores tienen acceso normal a Office 365, datos y aplicaciones de Office. | Los administradores pueden tener acceso al centro de administración, pero no pueden asignar licencias a los usuarios.   | Los administradores pueden tener acceso al centro de administración, pero no pueden asignar licencias a los usuarios.       | Los administradores pueden tener acceso al centro de administración para comprar y administrar otras suscripciones             |
+| Los administradores tienen acceso normal a Office 365, datos y aplicaciones de Office. | Los administradores pueden acceder al centro de administración   | Los administradores pueden tener acceso al centro de administración, pero no pueden asignar licencias a los usuarios.       | Los administradores pueden tener acceso al centro de administración para comprar y administrar otras suscripciones             |
 |                                                                        | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración |                                                                                           |
 
 * En la mayoría de las ofertas, en la mayoría de países y regiones.
@@ -143,7 +143,7 @@ Esto es lo que puede pasar en cada fase por la que pasa la suscripción.
 
 En este estado, los usuarios tienen acceso normal al portal de Office 365, las aplicaciones de Office y servicios como el correo electrónico y SharePoint Online.
   
-Como administrador, todavía tiene acceso al centro de administración, pero no puede asignar licencias a los usuarios. Los administradores globales o de facturación pueden [reactivar la suscripción](reactivate-your-subscription.md) y seguir usando Office 365. Si no la reactiva, asegúrese de [realizar una copia de seguridad de sus datos](back-up-data-before-switching-plans.md).
+Como administrador, todavía tiene acceso al centro de administración. Los administradores globales o de facturación pueden [reactivar la suscripción](reactivate-your-subscription.md) y seguir usando Office 365. Si no la reactiva, asegúrese de [realizar una copia de seguridad de sus datos](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Estado: deshabilitado
   
