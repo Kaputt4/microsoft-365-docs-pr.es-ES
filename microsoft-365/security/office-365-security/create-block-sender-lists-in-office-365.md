@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones disponibles en Office 365 y EOP para bloquear los mensajes entrantes.
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033427"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608124"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
@@ -52,7 +52,7 @@ Cuando los mensajes se bloquean correctamente debido a la lista de remitentes bl
 
 Cuando se ven afectados varios usuarios, el ámbito es más amplio, por lo que la siguiente mejor opción son las listas de remitentes bloqueados o las listas de dominios bloqueados en las directivas contra correo no deseado. Los mensajes de los remitentes de las listas se marcan como **correo no deseado**y se toma la acción que haya configurado para el filtro de **correo no deseado** en el mensaje. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
-El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
+El límite máximo de estas listas es de aproximadamente 1000 entradas.
 
 ## <a name="use-mail-flow-rules"></a>Usar reglas de flujo de correo
 

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario. Decida qué hacer con el correo electrónico del usuario, el contenido de OneDrive y si quiere mantener la licencia del producto o dejar de pagar por él.
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608131"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -99,7 +99,8 @@ Dado que la experiencia guiada recorre los pasos para eliminar un usuario, esta 
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Administrador de administración de usuarios: eliminar uno o más usuarios de Office 365
 
 
- **IMPORTANTE**: No elimine una cuenta del usuario si la ha [convertido en un buzón compartido](../email/convert-user-mailbox-to-shared-mailbox.md) o si ha configurado el reenvío de correo electrónico en la cuenta. Esas funciones necesitan que la cuenta siga ahí. Si la ha convertido en un buzón compartido, puede [Dejar de pagar por la licencia](#stop-paying-for-the-license) para no tener que pagar por ella. Si configura el reenvío de correo electrónico, no puede quitar la licencia. De hacerlo, detendrá el reenvío de correo electrónico y desactivará el buzón. 
+> [!IMPORTANT]
+> No elimine una cuenta de usuario si la ha [convertido en un buzón compartido](../email/convert-user-mailbox-to-shared-mailbox.md) o si ha configurado el reenvío de correo electrónico en la cuenta. Estas funciones todavía necesitan la cuenta. Un buzón compartido no requiere una licencia. Si ha convertido la cuenta en un buzón compartido, puede [dejar de pagar por la licencia](#stop-paying-for-the-license). Si ha configurado el reenvío de correo electrónico en la cuenta, no podrá quitar la licencia. Al hacerlo, se detendrá el reenvío de correo y se desactivará el buzón.
   
 ::: moniker range="o365-worldwide"
 
@@ -147,7 +148,7 @@ La reducción del número de licencias es un paso independiente que solo puede r
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> . Si no ve esta opción, no es un administrador global o administrador de facturación y no puede realizar este paso.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>. Si no ve esta opción, no es un administrador global o administrador de facturación y no puede realizar este paso.
 
 2. Seleccione la suscripción (si tiene más de una) y, a continuación, seleccione **Agregar o quitar licencias** para eliminar la licencia y no pagar por ella hasta que contrate a otra persona.  
 
@@ -157,7 +158,7 @@ La reducción del número de licencias es un paso independiente que solo puede r
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> . Si no ve esta opción, no es un administrador global o administrador de facturación y no puede realizar este paso.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>. Si no ve esta opción, no es un administrador global o administrador de facturación y no puede realizar este paso.
 
 2. Seleccione la suscripción (si tiene más de una) y, a continuación, seleccione **Agregar o quitar licencias** para eliminar la licencia y no pagar por ella hasta que contrate a otra persona.  
 
