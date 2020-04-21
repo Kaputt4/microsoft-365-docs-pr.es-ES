@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633158"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583338"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
@@ -57,7 +57,7 @@ Windows 10 Enterprise, incluida Windows Update para empresas | [Administrar los 
 Optimización de entrega | [Configurar la optimización de entrega para las actualizaciones de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL e intervalos de direcciones IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | La [identidad híbrida requiere puertos y protocolos](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) y [los requisitos de puerto de servicios de dominio de Active Directory y](https://aka.ms/AA26ygm) Active Directory 
-Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Puntos de conexión de red para Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Protección contra amenazas avanzada de Microsoft defender (ATP) | [Extremos de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
