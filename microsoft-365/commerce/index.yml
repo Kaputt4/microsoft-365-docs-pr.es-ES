@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Suscripciones de negocios y documentación sobre facturación
-summary: Obtenga información sobre cómo comprar y administrar suscripciones empresariales, realizar tareas de administración de licencias y administrar la facturación y los pagos de las cuentas empresariales con Microsoft.
+title: Suscripciones de empresa y documentación de facturación
+summary: Obtenga información sobre cómo comprar y administrar suscripciones de empresa, realizar tareas de administración de licencias y administrar la facturación y los pagos de las cuentas empresariales con Microsoft.
 metadata:
-  title: Suscripciones de negocios y documentación sobre facturación
-  description: Obtenga información sobre cómo comprar y administrar suscripciones empresariales, realizar tareas de administración de licencias y administrar la facturación y los pagos de las cuentas empresariales con Microsoft.
+  title: Suscripciones de empresa y documentación de facturación
+  description: Obtenga información sobre cómo comprar y administrar suscripciones de empresa, realizar tareas de administración de licencias y administrar la facturación y los pagos de las cuentas empresariales con Microsoft.
   ms.service: o365-administration
   ms.topic: landing-page
   ms.collection: commerce
@@ -14,7 +14,7 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
   ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 02/29/2020
   ms.locfileid: "42341593"
@@ -51,7 +51,7 @@ landingContent:
     links:
     - text: Actualizar a un plan diferente
       url: subscriptions/upgrade-to-different-plan.md
-    - text: Renovación de la suscripción
+    - text: Renovar la suscripción
       url: subscriptions/renew-your-subscription.md
     - text: Cancelar su suscripción
       url: subscriptions/cancel-your-subscription.md
@@ -65,7 +65,7 @@ landingContent:
     links:
     - text: Probar o comprar Microsoft 365
       url: try-or-buy-microsoft-365.md
-    - text: Comprar suscripciones de la versión de prueba gratuita
+    - text: Comprar una suscripción a partir de la evaluación gratuita
       url: buy-a-subscription-from-your-free-trial.md
     - text: Ampliar el periodo de prueba
       url: extend-your-trial.md

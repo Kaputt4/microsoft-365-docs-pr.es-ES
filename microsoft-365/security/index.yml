@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Documentación de seguridad de 365 de Microsoft
-summary: Obtenga información sobre las soluciones de seguridad sólidas y los servicios en la seguridad de Microsoft 365 para que pueda proteger mejor su empresa a través de las superficies de ataque.
+title: Documentación de Seguridad de Microsoft 365
+summary: Conozca las sólidas soluciones de seguridad y los servicios de Seguridad de Microsoft 365, para que pueda proteger mejor su organización en las superficies de ataque.
 metadata:
-  title: Documentación de seguridad de 365 de Microsoft
-  description: Obtenga más información sobre las soluciones de seguridad sólidas y los servicios de seguridad de Microsoft 365 de modo que pueda proteger mejor su empresa en las superficies de ataque.
+  title: Documentación de Seguridad de Microsoft 365
+  description: Conozca las sólidas soluciones de seguridad y los servicios de Seguridad de Microsoft 365, para que pueda proteger mejor su organización en las superficies de ataque
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: de1824abe2b35cb80552c6c261f1389db9b48ca0
   ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 04/09/2020
   ms.locfileid: "43198354"
@@ -26,21 +26,21 @@ landingContent:
     links:
     - text: ¿Qué es la Protección contra amenazas de Microsoft?
       url: mtp/microsoft-threat-protection.md
-    - text: Centro de seguridad de Microsoft 365
+    - text: Centro de seguridad de Microsoft 365
       url: mtp/overview-security-center.md
 - title: ATP de Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es ATP de Microsoft defender?
+    - text: ¿Qué es ATP de Microsoft Defender?
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: Información general sobre las capacidades
+    - text: Información general sobre las funciones
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
 - title: ATP de Office 365
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es Office 365 ATP?
+    - text: ¿Qué es ATP de Office 365?
       url: office-365-security/office-365-atp.md
     - text: Descripción del servicio ATP de Office 365
       url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
@@ -50,13 +50,13 @@ landingContent:
     links:
     - text: ¿Qué es Azure ATP?
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-    - text: Arquitectura de ATP de Azure
+    - text: Arquitectura de Azure ATP
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
 - title: Azure Security Center
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es el centro de seguridad de Azure?
+    - text: ¿Qué es Azure Security Center?
       url: https://docs.microsoft.com/azure/security-center/security-center-intro
     - text: Características admitidas
       url: https://docs.microsoft.com/azure/security-center/security-center-services
@@ -78,5 +78,5 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Puntuación segura
+    - text: Puntuación de seguridad
       url: mtp/microsoft-secure-score.md
