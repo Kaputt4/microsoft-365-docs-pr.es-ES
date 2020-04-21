@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081441"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630472"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
-Los administradores pueden usar el panel de flujo de correo en el centro de seguridad & cumplimiento para descubrir tendencias, información y emprender acciones para corregir problemas relacionados con el flujo de correo en su organización de Office 365.
+Los administradores pueden usar el panel de flujo de correo en el centro de seguridad & cumplimiento para descubrir tendencias, información y emprender acciones para corregir problemas relacionados con el flujo de correo en su organización.
 
 La información, los informes y los widgets que están disponibles en el panel del flujo de correo son:
 
@@ -50,9 +50,9 @@ La información, los informes y los widgets que están disponibles en el panel d
 
 El panel de flujo de correo está disponible para:
 
-- Miembros del rol de **administrador global de Office 365** .
+- Miembros del rol de **administrador global** .
 
-- Miembros del rol de **Administrador de Office 365 Exchange** .
+- Miembros del rol de **Administrador de Exchange** .
 
 - Miembros del **rol de administrador de flujo de correo** en el centro de seguridad & cumplimiento. Si este rol se asigna explícitamente a un usuario que no es miembro de las funciones de administrador global o administrador de Exchange:
 
@@ -60,11 +60,11 @@ El panel de flujo de correo está disponible para:
 
   - El usuario solo tendrá permiso de solo lectura en el panel de flujo de correo.
 
-  - El usuario no tendrá acceso al portal de administración de Office 365.
+  - El usuario no tendrá acceso al centro de administración de Microsoft 365.
 
-Para obtener más información acerca del rol de administrador global de Office 365, consulte [acerca de los roles de administrador de office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Para obtener más información acerca del rol de administrador global, vea [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Para obtener información sobre cómo asignar a los usuarios roles de seguridad & el centro de cumplimiento, vea [conceder acceso a los usuarios al centro de cumplimiento de & de seguridad de Office 365](grant-access-to-the-security-and-compliance-center.md).
+Para obtener información sobre cómo asignar roles de seguridad & el centro de cumplimiento a los usuarios, vea [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 
@@ -72,4 +72,4 @@ Para obtener información sobre cómo asignar a los usuarios roles de seguridad 
 
 2. Expanda **flujo de correo** y seleccione **Panel**.
 
-   ![Panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](../../media/mail-flow-dashboard-v2.png)
+   ![Panel del flujo de correo en el centro de seguridad & cumplimiento](../../media/mail-flow-dashboard-v2.png)

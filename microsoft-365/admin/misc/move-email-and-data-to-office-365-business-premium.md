@@ -1,5 +1,5 @@
 ---
-title: Mover el correo electrónico y los datos a Office 365 Empresa Premium
+title: Mover el correo electrónico y los datos a Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,30 +21,30 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo mover datos a la nueva identidad de negocio.
-ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209681"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627841"
 ---
-# <a name="move-email-and-data-to-office-365-business-premium"></a>Mover el correo electrónico y los datos a Office 365 Empresa Premium
+# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Mover el correo electrónico y los datos a Microsoft 365 Business Standard
 
-Al actualizar a Office 365 empresa Premium, le ofrecemos una nueva *identidad de negocio*con marca. Obtendrá una nueva cuenta de correo electrónico y una cuenta de OneDrive independiente para los datos profesionales. 
+Al actualizar a Microsoft 365 Business Standard, le proporcionamos una nueva identidad de *negocio*. Obtendrá una nueva cuenta de correo electrónico y una cuenta de OneDrive independiente para los datos profesionales. 
   
 Si quiere mover algunos de sus datos personales a la nueva identidad de negocio, siga las instrucciones a continuación.
   
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **Copiar los datos de OneDrive**
-1. Cree una carpeta temporal en su disco duro para almacenar los archivos que desea migrar a Office 365 para empresas.
+1. Cree una carpeta temporal en el disco duro para almacenar temporalmente los archivos que desea migrar a Microsoft 365 para empresas.
     
-2. Vaya a [https://onedrive.live.com/](https://onedrive.live.com/) e inicie sesión con la cuenta de Microsoft que usa para obtener acceso a su suscripción de Office 365 para el hogar. 
+2. Vaya a [https://onedrive.live.com/](https://onedrive.live.com/) e inicie sesión con la cuenta de Microsoft que usa para acceder a su suscripción a la familia 365 de Microsoft. 
     
-3. Copie los archivos que desea usar con Office 365 para empresas a la carpeta local que creó en paso 1.
+3. Copie los archivos que quiera usar con Microsoft 365 para empresas en la carpeta local que creó en el paso 1.
     
- **Importar archivos de OneDrive a Office 365 para empresas**
-1. Vaya a [admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) e inicie sesión con su nombre de usuario y contraseña de Office 365 Business. 
+ **Importar archivos de OneDrive a Microsoft 365 para empresas**
+1. Vaya a [admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) e inicie sesión con su nombre de usuario y contraseña de Microsoft 365 apps for Business. 
     
 2. Seleccione el icono del **iniciador de aplicaciones** de la esquina superior izquierda y elija **OneDrive**.
   
@@ -66,14 +66,14 @@ Si quiere mover algunos de sus datos personales a la nueva identidad de negocio,
 2. Cada usuario debe completar los pasos de [Exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario a un archivo .pst de Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
     
  **Configurar la nueva cuenta de correo electrónico en Outlook**
-1. Cada usuario debe configurar su nueva cuenta de correo electrónico que venía con la suscripción Office 365 para empresas. Para ello, necesitará la dirección de su nueva cuenta de correo electrónico. La cuenta de correo es la misma que el nombre de usuario que usan para iniciar sesión en Office 365 para empresas. Será algo así como marta@contoso.onmicrosoft.com o david@contoso.com.
+1. Cada usuario debe configurar su nueva cuenta de correo electrónico que se incluye en la suscripción de Microsoft 365 para empresas. Para ello, necesitará la dirección de su nueva cuenta de correo electrónico. La cuenta de correo electrónico de cada usuario es la misma que el nombre de usuario que usan para iniciar sesión en Microsoft 365 para la empresa. Será algo así como marta@contoso.onmicrosoft.com o david@contoso.com.
     
 2. Pida a cada usuario que agregue su cuenta de correo electrónico a Outlook. Para aprender cómo, consulte [Configurar el correo electrónico en Outlook (para Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
     
  **Importar información desde el archivo de datos de Outlook**
-1. Esto combina correo electrónico, calendario, tareas y contactos almacenados en el archivo PST en su cuenta de correo electrónico de empresa de Office 365.
+1. Esto combina el correo electrónico, el calendario, las tareas y los contactos almacenados en el archivo PST en su cuenta de correo electrónico de Microsoft 365 para empresas.
     
-2. Para importar la información almacenada en el archivo PST a su cuenta de correo electrónico de empresa de Office 365, los usuarios deben completar los pasos de [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx).
+2. Para importar la información almacenada en el archivo PST en su cuenta de correo electrónico de Microsoft 365 para empresas, pida a cada usuario que complete los pasos de [importar correo electrónico, contactos y calendario desde un archivo. pst de Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx).
     
 ---
 

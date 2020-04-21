@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: El objetivo de este tema consiste en proporcionar los detalles sobre el proceso para cambiar a Protección en línea de Exchange (EOP) desde una aplicación de higiene de correo electrónico local o desde un servicio de protección basado en la nube, así como suministrar los recursos de ayuda necesarios para comenzar.
-ms.openlocfilehash: e3877f8093f56a0f978ad915769334678afe26e3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e6a25d6477741f5796dd08b5811d97e2d0c76b51
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598217"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631198"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Cambiar a EOP desde Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort
 
@@ -39,9 +39,9 @@ Si actualmente hospeda sus buzones de correo en local y usa una aplicación de p
 
 ## <a name="switch-to-exchange-online"></a>Cambiar a Exchange Online
 
-Si tiene una aplicación local que protege los buzones de correo locales, puede que le interese pasar a la protección EOP y a buzones hospedados en la nube de Exchange Online a fin de beneficiarse de las características de protección y de mensajería en la nube de Office 365. Para comenzar, regístrese en Office 365 y agregue su dominio. En este escenario, no es necesario que configure conectores, puesto que no existe un enrutamiento a buzones de correo locales. Comience con [obtener las últimas características avanzadas con Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) para suscribirse y familiarizarse con sus características.
+Es posible que tenga buzones locales protegidos por un dispositivo local y quiera ir a buzones de Exchange Online hospedados en la nube y protección EOP para aprovechar las características de protección y mensajería en la nube de Microsoft 365. Para empezar, puede registrarse en Microsoft 365 y agregar su dominio. En este escenario, no es necesario que configure conectores, puesto que no existe un enrutamiento a buzones de correo locales. Comience con [obtener las últimas características avanzadas con Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) para suscribirse y familiarizarse con sus características.
 
-Durante el proceso de instalación de Office 365, podrá crear los usuarios de buzones de correo basados en la nube.
+Durante el proceso de instalación de Microsoft 365, podrá crear los usuarios de buzones de correo basados en la nube.
 
 ## <a name="switch-to-a-hybrid-solution"></a>Cambiar a una solución híbrida
 

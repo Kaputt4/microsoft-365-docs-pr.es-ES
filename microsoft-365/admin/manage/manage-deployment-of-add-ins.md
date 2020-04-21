@@ -1,5 +1,5 @@
 ---
-title: Administrar la implementación de complementos de Office 365 en el centro de administración
+title: Administrar la implementación de complementos en el centro de administración
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212014"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628165"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos de Office 365 en el Centro de administración de Microsoft 365
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el centro de administración de Microsoft 365
 
 Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Como administrador, puede implementar complementos de Office para los usuarios de su organización. Para ello, use la característica de implementación centralizada en el centro de administración de Microsoft 365.
   
-La implementación centralizada es la forma recomendada y con más características para la mayoría de los administradores de implementar complementos para usuarios y grupos dentro de una organización. Para más información acerca de cómo determinar si su organización es compatible con la implementación centralizada, vea [Determinar si la implementación centralizada de complementos funciona para su organización de Office 365](centralized-deployment-of-add-ins.md).
+La implementación centralizada es la forma recomendada y con más características para la mayoría de los administradores de implementar complementos para usuarios y grupos dentro de una organización. Para obtener más información sobre cómo determinar si su organización puede admitir la implementación centralizada, vea [determinar si la implementación centralizada de complementos funciona para su organización](centralized-deployment-of-add-ins.md).
   
 Implementación centralizada proporciona las siguientes ventajas:
   
@@ -41,7 +41,7 @@ Implementación centralizada proporciona las siguientes ventajas:
 - Los complementos ya no aparecerán para los usuarios si el administrador desactiva o elimina el complemento, o si se quita el usuario de Azure Active Directory o de un grupo al que el complemento está asignado.
     
 > [!NOTE]
->  Para Word, Excel y PowerPoint usan un [Catálogo de aplicaciones de SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Office 365 y/o compatibilidad con complementos de SharePoint necesarios. >  Para Outlook, use el panel de control de Exchange para implementar un entorno local sin conexión a Office 365. > 
+>  Para Word, Excel y PowerPoint usan un [Catálogo de aplicaciones de SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Microsoft 365 y/o compatibilidad con complementos de SharePoint necesarios. > para Outlook use el panel de control de Exchange para implementar en un entorno local sin una conexión a Microsoft 365. > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar complementos de Office
 
@@ -57,10 +57,10 @@ Dependiendo del tamaño del público objetivo, puede que quiera agregar o elimin
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Implementar un complemento de Office con el centro de administración
 
-Antes de comenzar, vea [Determinar si la implementación centralizada de complementos funciona para su organización de Office 365](centralized-deployment-of-add-ins.md).
+Antes de comenzar, vea [determinar si la implementación centralizada de complementos funciona para su organización](centralized-deployment-of-add-ins.md).
 
   
-1. En el centro de administración de Microsoft 365, vaya a la página **configuración** > **de complementos** .
+1. En el centro de administración, vaya a la página **configuración** \> **de complementos** .
     
 2. Seleccione **implementar complemento** en la parte superior de la página. En la página información general, seleccione **siguiente**.
     
@@ -75,13 +75,13 @@ Antes de comenzar, vea [Determinar si la implementación centralizada de complem
 7. Una marca de graduación verde aparecerá cuando se haya implementado el complemento. Puede seguir las instrucciones que se indican en la página para comprobar que el complemento se ha implementado correctamente.
 
 > [!NOTE]
-> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 24 horas en aparecer en las cintas de los usuarios.
+> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 12 horas en aparecer en las cintas de los usuarios.
     
 8. Cuando termine, seleccione **siguiente**. Si ha implementado solo en usted, puede seleccionar **cambiar quién tiene acceso al complemento** para implementarlo en más usuarios.
 
 
 
-Si ha implementado el complemento en miembros de su organización que no sean usted, siga las instrucciones que se muestran para anunciar con eficacia la implementación del complemento. <br/>Ahora verá el complemento junto a otras aplicaciones de Office 365.
+Si ha implementado el complemento en miembros de su organización que no sean usted, siga las instrucciones que se muestran para anunciar con eficacia la implementación del complemento. <br/>Ahora verá el complemento junto con otras aplicaciones en Microsoft 365.
   
 Es una buena idea informar a los usuarios y grupos a los que ha implementado el complemento para que sepan que está disponible. Considere la posibilidad de enviarles un correo electrónico que describa cuándo y cómo usar el complemento y explique cómo el complemento puede ayudarles a hacer mejor su trabajo. Incluya o vincule el contenido de ayuda relevante o las preguntas más frecuentes que puedan ayudar si los usuarios tienen algún problema con el complemento.
   
@@ -101,19 +101,12 @@ La opción adecuada para su organización depende de su configuración. Sin emba
   
 ### <a name="add-in-states"></a>Estados del complemento
 
-Los administradores pueden activar o desactivar los complementos que implementan para todos los usuarios del centro de administración de Microsoft 365.
-
-1.    En el centro de administración, vaya a la página **configuración** > **de complementos** . 
-2.    Seleccione el complemento implementado. 
-3.    Haga **clic en el** botón cambiar el **Estado** para activar o desactivar el **complemento.** 
-4.    Guarde los cambios.  
-
-También está disponible uno de los tres Estados de complementos.
- 
+Un complemento puede estar en el estado **activado** o **desactivado** .
+  
 |**Estado**|**Cómo se produce el estado**|**Impacto**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |El administrador ha cargado el complemento y lo ha asignado a usuarios o grupos.  <br/> |Los usuarios y grupos asignados al complemento lo ven en los clientes relevantes.  <br/> |
-|**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si el estado del complemento cambia a **activo**, los usuarios y grupos tendrán acceso de nuevo a él.  <br/> |
+|**Desactivado**  <br/> |El administrador ha desactivado el complemento.  <br/> |Los usuarios y los grupos asignados al complemento ya no tienen acceso al mismo.  <br/> Si se cambia el estado del complemento a "activado", los usuarios y grupos tendrán acceso de nuevo.  <br/> |
 |**Eliminado**  <br/> |El administrador ha eliminado el complemento.  <br/> |Los usuarios y grupos asignados al complemento ya no tienen acceso al mismo.  <br/> |
    
 Considere la posibilidad de eliminar un complemento si nadie lo está usando. Desactivar un complemento puede ser útil si solo se usa en determinados momentos del año.
@@ -182,9 +175,9 @@ Esto impedirá que todos los usuarios adquieran los siguientes complementos de l
     
 - Adquisiciones que comienzan dentro de **AppSource**
     
-- Complementos de Office 365
+- Complementos en Microsoft 365
     
-Un usuario que intente obtener acceso a la tienda verá el siguiente mensaje: **lo sentimos, Office 365 se ha configurado para impedir la adquisición individual de complementos de la tienda Office.**
+Un usuario que intente obtener acceso a la tienda verá el siguiente mensaje: **lo sentimos, Microsoft 365 se ha configurado para impedir la adquisición individual de complementos de la tienda Office.**
   
 La compatibilidad para desactivar la tienda Office está disponible en las siguientes versiones:
   
@@ -241,7 +234,7 @@ Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguient
   
 Word, Excel y PowerPoint 2013 para Windows serán compatibles con las mismas comprobaciones menores si la biblioteca de autenticación de Active Directory (ADAL) está habilitada. Hay dos opciones para el cumplimiento normativo, tal como se explica a continuación.
   
-- **Habilitar Adal**. En este artículo se explica cómo habilitar ADAL para Office 2013: [usar la autenticación moderna de office 365 con clientes de Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>También debe configurar las claves del registro para habilitar ADAL, tal y como se explica en [enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
+- **Habilitar Adal**. En este artículo se explica cómo habilitar ADAL para Office 2013: [usar la autenticación moderna de Microsoft 365 con clientes de Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>También debe configurar las claves del registro para habilitar ADAL, tal y como se explica en [enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
     
   - [Descripción de la actualización de seguridad para Office 2013:10 de abril de 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

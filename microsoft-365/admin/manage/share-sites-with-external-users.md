@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre cómo compartir sitios y archivos con personas de fuera de la organización. '
-ms.openlocfilehash: a0a98c9ead997e4748804e4f8a87533a9943ec4f
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610577"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628033"
 ---
 # <a name="share-sites-and-files-externally"></a>Compartir archivos y sitios de forma externa
 
@@ -54,7 +54,7 @@ Las respuestas a estas preguntas le facilitarán la panificación de la estrateg
 |Comparta un documento, pero no requiera autenticación.  <br/> |Comparta un vínculo a un documento que no contenga información personal ni confidencial con personas ajenas a la organización para que puedan verlo o actualizarlo con comentarios al respecto. Estas personas no necesitan tener acceso al contenido del sitio.  <br/> |
    
 > [!IMPORTANT]
-> Al deshabilitar el uso compartido externo, los usuarios ajenos a la organización que actualmente tienen acceso ya no tendrán acceso. Si más adelante vuelve a activar el uso compartido externo, se restaurará el acceso para estas personas. Para evitar que un usuario tenga acceso a un contenido compartido, [quítelos del grupo de Office 365](/office365/admin/create-groups/add-or-remove-members-from-groups), elimine los permisos del sitio o [deje de compartir el archivo o la carpeta con ellos](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> Al deshabilitar el uso compartido externo, los usuarios ajenos a la organización que actualmente tienen acceso ya no tendrán acceso. Si más adelante vuelve a activar el uso compartido externo, se restaurará el acceso para estas personas. Para evitar que un usuario tenga acceso a un contenido compartido, [quítelos del grupo de Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups), elimine los permisos del sitio o [deje de compartir el archivo o la carpeta con ellos](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Habilitar el uso compartido externo en el nivel de organización
 
@@ -67,7 +67,7 @@ El uso compartido externo está activado de forma predeterminada en el nivel de 
   
 2. En la página que se abre, elija si los usuarios pueden compartir sólo con los invitados existentes, los invitados nuevos y los existentes, o cualquier persona. 
     
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
     
 Después de habilitar el uso compartido externo en el nivel de la organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo de sitios específicos. Para obtener información, consulte [activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
   

@@ -1,5 +1,5 @@
 ---
-title: Cambiar los servidores de nombres para configurar Office 365 con namecheap
+title: Cambiar los servidores DNS para configurar Microsoft con namecheap
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
-description: 'Aprenda a configurar su dominio personalizado de Office 365 con namecheap si quiere que Office 365 administre sus registros DNS. '
-ms.openlocfilehash: 1130f8aca0f2d014d73f5a1b2e2edb2785a7c6b8
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Aprenda a configurar su dominio personalizado de Microsoft con namecheap si desea que Microsoft administre sus registros DNS. '
+ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629784"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-namecheap"></a>Cambiar los servidores de nombres para configurar Office 365 con namecheap
+# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Cambiar los servidores DNS para configurar Microsoft con namecheap
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca.
   
-Siga estas instrucciones si quiere que Office 365 administre automáticamente los registros DNS de Office 365. (Si lo prefiere, puede [administrar todos los registros DNS de Office 365 en namecheap](create-dns-records-at-namecheap.md)).
+Siga estas instrucciones si desea que Microsoft administre los registros DNS por usted. (Si lo prefiere, puede [administrar todos los registros DNS de Microsoft en namecheap](create-dns-records-at-namecheap.md)).
   
     
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
@@ -69,7 +69,7 @@ Siga estas instrucciones si quiere que Office 365 administre automáticamente lo
     
 |**Tipo**|**Host**|**Valor**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota**: este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |30 minutos  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota**: este es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino de la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |30 minutos  <br/> |
    
    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -79,9 +79,9 @@ Siga estas instrucciones si quiere que Office 365 administre automáticamente lo
   
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
+Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará una búsqueda para el registro.
   
-Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
   
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
@@ -103,10 +103,10 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Cambiar los registros del servidor de nombres (o NS) de su dominio
 
-Para completar la configuración del dominio con Office 365, debe cambiar los registros NS del dominio en su registrador de dominios para que apunten a los servidores DNS primario y secundario de Office 365. Esto configura Office 365 para actualizar los registros DNS del dominio. Agregaremos todos los registros para que el correo electrónico, Skype Empresarial Online y su sitio web público funcionen con su dominio, y ya lo tendrá todo preparado.
+Para completar la configuración de su dominio con Microsoft, debe cambiar los registros NS de su dominio en su registrador de dominios para que apunten a los servidores de nombres principal y secundario de Microsoft. Esto configura a Microsoft para que actualice los registros DNS del dominio por usted. Agregaremos todos los registros para que el correo electrónico, Skype Empresarial Online y su sitio web público funcionen con su dominio, y ya lo tendrá todo preparado.
   
 > [!CAUTION]
-> Si cambia los registros NS del dominio para que apunten a los servidores DNS de Office 365, esto afectará a todos los servicios que estén asociados actualmente con su dominio. Por ejemplo, todos los correos que se envíen a su dominio (como, por ejemplo, rob@ *su_dominio*  .com) comenzarán a llegar a Office 365 después de realizar este cambio. 
+> Al cambiar los registros NS de su dominio para que apunten a los servidores de nombres de Microsoft, se ven afectados todos los servicios que están actualmente asociados a su dominio. Por ejemplo, todos los mensajes de correo electrónico enviados a su dominio (como rob@ *your_domain* . com) empezarán a llegar a Microsoft después de realizar este cambio. 
   
 > [!IMPORTANT]
 >  Cuando haya completado los pasos descritos en esta sección, los  *únicos*  servidores DNS que deben aparecer son estos cuatro: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  En el procedimiento siguiente se muestra cómo eliminar cualquier otro servidor de nombres que no desee de la lista y también cómo agregar estos cuatro servidores DNS  *correctos*  , si aún no están en la lista. 
@@ -156,7 +156,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     ![Namecheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> Las actualizaciones de los registros de los servidores de nombres pueden tardar varias horas en propagarse por el sistema DNS de Internet. A continuación, su correo electrónico y otros servicios de Office 365 estarán listos para funcionar con su dominio. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. El correo electrónico y otros servicios de Microsoft estarán todos establecidos para funcionar con su dominio. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Si ya existen servidores de nombres enumerados
 
@@ -188,4 +188,4 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     ![Namecheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> Las actualizaciones de los registros de los servidores de nombres pueden tardar varias horas en propagarse por el sistema DNS de Internet. A continuación, su correo electrónico y otros servicios de Office 365 estarán listos para funcionar con su dominio.
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. El correo electrónico y otros servicios de Microsoft estarán todos establecidos para funcionar con su dominio.

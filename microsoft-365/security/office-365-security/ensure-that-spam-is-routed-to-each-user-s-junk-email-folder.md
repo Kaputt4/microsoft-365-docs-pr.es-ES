@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar su entorno Exchange local para redirigir el correo no deseado a las carpetas de correo no deseado de los usuarios locales si usan Exchange Online Protection (EOP) independiente en entornos híbridos.
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621287"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar un EOP independiente para enviar correo no deseado a la carpeta de correo no deseado en entornos híbridos
 
 > [!IMPORTANT]
-> Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Office 365 con buzones de correo de Exchange Online.
+> Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Microsoft 365 con buzones de correo de Exchange Online.
 
-Si es cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar la organización de Exchange local para que reconozca y traduzca los veredictos del filtrado de correo no deseado de EOP, por lo que la regla de correo no deseado en el buzón de correo local puede mover mensajes a la carpeta de correo no deseado.
+Si es cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar la organización de Exchange local para que reconozca y traduzca los veredictos del filtrado de correo no deseado de EOP, por lo que la regla de correo no deseado del buzón local puede mover mensajes a la carpeta de correo electrónico no deseado.
 
-En concreto, debe crear reglas de flujo de correo (también conocidas como reglas de transporte) en su organización de Exchange local con condiciones que encuentren mensajes con cualquiera de los siguientes valores y encabezados de correo no deseado de EOP y acciones que establezcan el nivel de confianza contra correo no deseado ( SCL) de esos mensajes a 6:
+En concreto, debe crear reglas de flujo de correo (también conocidas como reglas de transporte) en su organización de Exchange local con condiciones que encuentren mensajes con cualquiera de los siguientes valores y encabezados de correo no deseado de EOP, así como acciones que establezcan el nivel de confianza contra correo no deseado (SCL) de esos mensajes en 6:
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(mensaje marcado como correo no deseado por el filtrado de correo no deseado)
 
@@ -139,7 +139,7 @@ Para comprobar que configuró correctamente EOP independiente para entregar el c
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- En un sistema de correo electrónico externo **que no analiza los mensajes salientes en busca de correo no deseado**, envíe una prueba genérica de mensaje de correo electrónico masivo no solicitado (GTUBE) a un destinatario afectado y confirme que se entrega a su carpeta de correo electrónico no deseado. Un mensaje GTUBE es similar al archivo de texto del Instituto Europeo para la investigación del antivirus informático (EICAR) para probar la configuración de malware.
+- En un sistema de correo electrónico externo **que no analiza los mensajes salientes en busca de correo no deseado**, envíe una prueba genérica de mensaje de correo electrónico masivo no solicitado (GTUBE) a un destinatario afectado y confirme que se entrega a su carpeta de correo electrónico no deseado. Un mensaje GTUBE es similar al archivo de texto del European Institute of Computer virus Research (EICAR) para probar la configuración de malware.
 
   Para enviar un mensaje GTUBE, incluya el siguiente texto en el cuerpo de un mensaje de correo electrónico en una sola línea, sin espacios ni saltos de línea:
 

@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630754"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -68,17 +68,17 @@ Para establecer la configuración de acceso de invitado de Teams
 > [!NOTE]
 > La configuración del invitado de Teams puede tardar hasta 24 horas en activa una vez que la activa.
 
-## <a name="office-365-groups-guest-settings"></a>Configuración de invitado de Office 365 Groups
+## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Microsoft 365 Groups
 
-Microsoft Teams usa los grupos de Office 365 para la pertenencia al equipo. La configuración de invitado de los grupos de Office 365 debe estar activada para que el acceso de invitado en Microsoft Teams funcione.
+Microsoft Teams usa grupos de 365 para la pertenencia al equipo. La configuración de invitado de Microsoft 365 Groups debe estar activada para que el acceso de invitado en Teams funcione.
 
-![Captura de pantalla de la configuración de invitados de Grupos de Office 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitado de Microsoft 365 Groups en el centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-Para establecer la configuración de invitado de Office 365 Groups
+Para establecer la configuración de invitado de Microsoft 365 Groups
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**.
 2. Haga clic en **servicios & complementos**.
-3. En la lista, haga clic en **grupos de Office 365**.
+3. En la lista, haga clic en **grupos de 365 de Microsoft**.
 4. Asegúrese de que la casilla **permitir a los miembros del grupo fuera de la organización el acceso al contenido del grupo** y **que los propietarios del grupo agreguen personas fuera de la organización a las** casillas de verificación están activadas.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 

@@ -1,5 +1,5 @@
 ---
-title: Migrar el correo electrónico y los contactos a Office 365
+title: Migrar el correo electrónico y los contactos a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,25 +25,25 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: 'Obtenga información sobre cómo importar contactos, calendarios, correos electrónicos de gmail u otro proveedor de correo electrónico a Office 365. '
-ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Obtenga información sobre cómo importar contactos, calendarios, correos electrónicos de gmail u otro proveedor de correo electrónico a Microsoft 365. '
+ms.openlocfilehash: ff81eed73a4bf5d7e58316e61212fd799de6d11c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212190"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627587"
 ---
-# <a name="migrate-email-and-contacts-to-office-365"></a>Migrar el correo electrónico y los contactos a Office 365
+# <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar el correo electrónico y los contactos a Microsoft 365
 
-Importe o copie correo electrónico de Gmail o de otro proveedor de correo electrónico a Office 365.
+Importe o copie el correo electrónico de Gmail o de otro proveedor de correo electrónico a Microsoft 365.
   
- **¿Quiere ayuda con esto?**  [Póngase en contacto con el soporte técnico de Office 365 para empresas](../contact-support-for-business-products.md) . 
+ **¿Quiere ayuda con esto?**  [Póngase en contacto con el soporte técnico de Microsoft 365 para empresas](../contact-support-for-business-products.md) . 
   
-Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de los [planes](https://go.microsoft.com/fwlink/p/?LinkId=723731) de Office 365.
+Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de los [planes](https://go.microsoft.com/fwlink/p/?LinkId=723731)de 365 de Microsoft.
   
 ### <a name="import-from-gmail"></a>Importar desde Gmail
 
-Siga estos pasos para importar el correo electrónico, los contactos y el calendario de Gmail a Outlook con Office 365:
+Siga estos pasos para importar el correo electrónico, los contactos y el calendario de Gmail a Outlook con Microsoft 365:
   
 - [Importar Gmail a Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
     
@@ -53,9 +53,9 @@ Siga estos pasos para importar el correo electrónico, los contactos y el calend
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>Importar desde Outlook (escritorio) ' '
+### <a name="import-from-outlook-desktop"></a>Importar desde Outlook (escritorio)
 
-Fol'ow estos pasos para exportar el correo electrónico, los contactos y los calendarios de Outlook a un archivo. PST y, a continuación, importar ese archivo a Outlook con Office 365:
+Siga estos pasos para exportar el correo electrónico, los contactos y los calendarios de Outlook a un archivo. PST y, a continuación, importar el archivo a Outlook con Microsoft 365:
   
 1. [Exportar el correo electrónico, los contactos y el calendario](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
@@ -73,7 +73,7 @@ To start the process, open Outlook and choose **File** \> **Open &amp; Export** 
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Ver otras cuentas de correo electrónico en Outlook
 
-¿Solo quiere ver el correo electrónico de otro proveedor (como Gmail, Yahoo o Live.com) en Outlook? No tiene por qué realizar ninguna importación ni migración. Puede configurar Outlook o Outlook Web App para poder acceder a sus otras cuentas desde el mismo lugar que su buzón de Office 365 y enviar, recibir y leer correo electrónico enviado a dichas cuentas.
+¿Solo quiere ver el correo electrónico de otro proveedor (como Gmail, Yahoo o Live.com) en Outlook? No tiene por qué realizar ninguna importación ni migración. Puede configurar Outlook o Outlook Web App para que pueda obtener acceso a las otras cuentas desde el mismo sitio que el buzón de Microsoft 365 y enviar, recibir y leer el correo electrónico enviado a esas cuentas.
   
 ### <a name="outlook-desktop"></a>Outlook (escritorio)
 
@@ -85,8 +85,8 @@ Agregue una cuenta, como su cuenta privada de Gmail, a Outlook.
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
   
-## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-office-365"></a>Varios buzones: los administradores pueden hacer una importación masiva de correo electrónico, contactos y calendarios en Office 365
+## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar de forma masiva correo electrónico, contactos y calendarios a Microsoft 365
 
-Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Para decidir qué método es el más adecuado en su caso, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842). 
+Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Leer [formas de migrar varias cuentas de correo electrónico a Microsoft 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842) para decidir qué método es el adecuado para usted. 
   
 

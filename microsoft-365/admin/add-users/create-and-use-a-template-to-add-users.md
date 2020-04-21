@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios.
-ms.openlocfilehash: 340d0ae3329b441c2b9773ba06e4f9e69be88526
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353251"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617277"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
@@ -88,7 +88,7 @@ Puede eliminar fácilmente las plantillas que ya no necesite y agregar otras nue
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Agregar usuarios individualmente o de forma masiva a Office 365](add-users.md)
+[Agregar usuarios individualmente o de forma masiva a Microsoft 365](add-users.md)
 
-[Quitar un antiguo empleado de Office 365](remove-former-employee.md)
+[Quitar un antiguo empleado de Microsoft 365](remove-former-employee.md)
   

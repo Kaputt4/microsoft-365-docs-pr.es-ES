@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,16 +18,16 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Obtenga información sobre el nuevo centro de administración de Microsoft 365.
-ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1267194385d62d176d71a54fea38aab710313f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361605"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627985"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Acerca del nuevo centro de administración de Microsoft 365
 
-El nuevo centro de administración de Microsoft 365 se ha creado para que Teams de TI sea una forma simplificada de administrar los servicios de Microsoft 365 y Office 365. El centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficiencia para las tareas cotidianas y proporciona información útil que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
+El nuevo centro de administración de Microsoft 365 se ha creado para que Teams de TI sea una forma simplificada de administrar los servicios de Microsoft 365. El centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficiencia para las tareas cotidianas y proporciona información útil que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
   
 El centro de administración de 365 de Microsoft es el punto de entrada común para todos los administradores de Microsoft 365 y [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)al que se puede tener acceso en. Las áreas de trabajo especializadas, como la administración de seguridad o de dispositivos, permiten un control más granular. Para obtener más información acerca de cómo los centros de administración trabajarán juntos, vea [¿Qué ocurre con los tipos específicos de roles de ti y otras áreas de trabajo como la seguridad, la administración de dispositivos o Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) más adelante en este artículo. 
   
@@ -75,7 +75,7 @@ Sí. El nuevo centro de administración es completamente funcional y tiene todas
 
 Microsoft 365 es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security, que permite a todo el mundo ser creativo y trabajar juntos, de forma segura. Las siguientes suscripciones de Microsoft 365 están disponibles en el centro de administración para que las pruebe o compre ahora:
   
-- Microsoft 365 Empresa
+- Microsoft 365 para empresas
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

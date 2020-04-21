@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Obtenga información sobre cómo habilitar o deshabilitar la característica otros correos para todos o algunos usuarios específicos de la organización mediante Exchange PowerShell. '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628932"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurar otros correos para su organización
 
 > [!TIP]
 > La [bandeja de entrada prioritarios](../setup/configure-focused-inbox.md) va a reemplazar otros correos. Más información: [actualización de la bandeja de entrada prioritarios y nuestros planes de desorden](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Como administrador, es posible que tenga que administrar la característica otros correos en Office 365. Para activar o desactivar la característica otros correos para los usuarios de su organización, debe usar Exchange PowerShell. (Las personas pueden activarla o desactivarla siguiendo estas instrucciones: [desactivar o deshacer otros correos de Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)). 
+Como administrador, es posible que tenga que administrar la característica otros correos de Microsoft 365. Para activar o desactivar la característica otros correos para los usuarios de su organización, debe usar Exchange PowerShell. (Las personas pueden activarla o desactivarla siguiendo estas instrucciones: [desactivar o deshacer otros correos de Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)). 
   
 Consulte [PowerShell with Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) y [Conéctese a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga como mínimo el rol de administrador de servicios de Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
   
@@ -59,7 +59,7 @@ Si usa PowerShell para crear de forma masiva los usuarios, deberá ejecutar [set
 
 Como administrador, puede volver a habilitar otros correos mediante Exchange PowerShell. Una vez hecho esto, se desactivará la bandeja de entrada prioritarios y el desorden volverá a estar activo. 
   
- **Si está usando Outlook en la web con una suscripción de Office 365 empresa:**
+ **Si está usando Outlook en la web con una suscripción de Microsoft 365 empresa Premium:**
   
 - Si el usuario tiene correos actualmente habilitados: 
     

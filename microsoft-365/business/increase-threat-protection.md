@@ -1,5 +1,5 @@
 ---
-title: Aumentar la protección contra amenazas para Microsoft 365 Business
+title: Aumentar la protección contra amenazas para Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales de suplantación de identidad (phishing), malware y otras amenazas.
-ms.openlocfilehash: 17425de3f6e0022945899a559cf88575b6315a56
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561618"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627134"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
 Este artículo le ayuda a aumentar la protección en su suscripción de Microsoft 365 para protegerse contra phishing, malware y otras amenazas. Estas recomendaciones son adecuadas para organizaciones con mayor necesidad de seguridad, como las oficinas de la ley y las clínicas del cuidado de la salud.
 
-Antes de empezar, Compruebe la puntuación segura de Office 365. Office 365 Secure score analiza la seguridad de su organización de Office 365 en función de las actividades habituales y la configuración de seguridad y asigna una puntuación. Empiece por tomar nota del resultado actual. Para aumentar la puntuación, complete las acciones recomendadas en este artículo. El objetivo no es conseguir el resultado máximo, pero para conocer las oportunidades de protección del entorno que no afectan negativamente a la productividad de los usuarios. 
+Antes de empezar, Compruebe la puntuación segura de Office 365. La puntuación segura de Office 365 analiza la seguridad de su organización en función de las actividades habituales y la configuración de seguridad y asigna una puntuación. Empiece por tomar nota del resultado actual. Para aumentar la puntuación, complete las acciones recomendadas en este artículo. El objetivo no es conseguir el resultado máximo, pero para conocer las oportunidades de protección del entorno que no afectan negativamente a la productividad de los usuarios. 
 
 Para obtener más información, consulte [calificación segura de Microsoft](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -42,7 +42,7 @@ El entorno de Office 365 o Microsoft 365 incluye la protección contra malware. 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de su cuenta de administrador. 
     
-2. En Office &amp; 365 Security Compliance Center, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **anti-malware**de **Directiva** \> .
+2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, **en administración de amenazas**, elija **antimalware**de **Directiva** \> .
     
 3. Haga doble clic en la directiva predeterminada para editar esta directiva de toda la compañía.
     
@@ -57,7 +57,7 @@ El entorno de Office 365 o Microsoft 365 incluye la protección contra malware. 
     
 Para obtener más información, consulte [Anti-Malware Protection](https://go.microsoft.com/fwlink/?linkid=2015692&amp;clcid=0x409).
   
-## <a name="protect-against-ransomware"></a>Proteger contra ransomware
+## <a name="protect-against-ransomware"></a>Protección contra ransomware
 
 Ransomware restringe el acceso a los datos mediante el cifrado de los archivos o el bloqueo de las pantallas del equipo. A continuación, intenta extort dinero de víctimas solicitando "Ransom", normalmente en forma de cryptocurrencies como bitcoin, en Exchange para tener acceso a los datos. 
   
@@ -77,7 +77,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Use los valores predeterminados para el resto de la configuración, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
@@ -109,7 +109,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Use los valores predeterminados para el resto de la configuración, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
   
 1. Vaya a [https://protection.office.com](https://protection.office.com). 
     
-2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, elija **Directiva**.
+2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, en **Administración de amenazas**, elija **Directiva**.
     
 3. En la página **Directiva** , elija **ATP antiphishing**.
     
@@ -144,13 +144,13 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 |**Configuración u opción**<br/>|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
-|Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
-|Agregar usuarios para protegerlos  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
-|Agregar dominios para proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
-|Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: elija **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *Alicia<span><span>@contoso. com*. Si un dominio suplantado envía un correo electrónico: elija **mensaje en cuarentena**.  <br/> |
-|Inteligencia de buzones  <br/> |De forma predeterminada, la inteligencia de buzones se selecciona cuando se crea una nueva Directiva antiphishing. Deje esta configuración **activada** para obtener los mejores resultados.  <br/> |
+|Description  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
+|Agregar usuarios que proteger  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
+|Agregar dominios que proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
+|Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: elija **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *Alicia<span><span>@contoso. com*. Si el correo electrónico lo envía un dominio suplantado: elija **Mensaje en cuarentena**.  <br/> |
+|Inteligencia de buzones  <br/> |De forma predeterminada, se selecciona inteligencia de buzones al crear una directiva contra suplantación de identidad (anti-phishing). Deje esta configuración **activada** para obtener mejores resultados.  <br/> |
 |Agregar dominios y remitentes de confianza  <br/> |Aquí puede agregar sus propios dominios o cualquier otro dominio de confianza.  <br/> |
-|Aplicado a  <br/> |Seleccione **el dominio del destinatario es**. En **cualquiera de estos**, seleccione **elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
+|Aplicado a  <br/> |Seleccione**El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla de verificación situada junto al nombre del dominio, por ejemplo, *contoso.<span> com <span>*, en la lista y, a continuación, seleccione **Agregar**. Seleccione **Listo**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP
 
@@ -160,7 +160,7 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
   
 1. Vaya a [https://protection.office.com](https://protection.office.com)e inicie sesión con su cuenta de administrador. 
     
-2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, elija **Directiva**.
+2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, en **Administración de amenazas**, elija **Directiva**.
     
 3. En la página Directiva, seleccione **datos adjuntos seguros de ATP**.
     
@@ -176,15 +176,13 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
-|Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
+|Description  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
 |Guardar datos adjuntos respuesta de malware desconocida  <br/> |Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.  <br/> |
 |Redirigir datos adjuntos en detección  <br/> |Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> |
 |Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
    
 Para obtener más información, consulte [configurar las directivas de anti-phishing de Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP
 
 A veces, los hackers ocultan sitios Web malintencionados en vínculos de correo electrónico u otros archivos. Vínculos seguros de ATP de Office 365 (vínculos seguros de ATP), parte de la protección contra amenazas avanzada de Office 365, puede ayudar a proteger su organización proporcionando una comprobación del tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos de Office. La protección se define mediante las directivas de vínculos seguros de ATP.
@@ -199,7 +197,7 @@ Para configurar los vínculos seguros ATP, vea [este breve vídeo de aprendizaje
   
 1. Vaya a [https://protection.office.com](https://protection.office.com)e inicie sesión con su cuenta de administrador. 
     
-2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, elija **Directiva**.
+2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, en **Administración de amenazas**, elija **Directiva**.
     
 3. En la página Directiva, elija **vínculos seguros ATP**.
     
@@ -207,9 +205,9 @@ Para modificar la directiva predeterminada:
   
 1. En la página vínculos seguros, en **directivas que se aplican a toda la organización**, seleccione la directiva **predeterminada** . 
     
-2. En **configuración que se aplica al contenido excepto el correo electrónico**, seleccione **Office 365 ProPlus, Office para iOS y Android**.
+2. En **configuración que se aplica al contenido excepto al correo electrónico**, seleccione **Microsoft 365 apps for Enterprise, Office para iOS y Android**.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -217,7 +215,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
 
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|

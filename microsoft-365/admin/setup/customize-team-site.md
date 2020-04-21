@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo.
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212214"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627623"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 
-Si tiene una pequeña empresa con algunos empleados, una de las mejores formas de configurar y facilitar el uso compartido de archivos y la colaboración en línea es usar OneDrive y un sitio de grupo de SharePoint de forma conjunta. Se recomienda crear un sitio de grupo que esté conectado a un grupo de Office 365. Si desea usar el chat, puede crear este sitio creando un equipo en Microsoft Teams. Para obtener más información sobre Teams, vea [vídeo: ¿Qué es Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Si no desea usar Teams, puede crear un sitio de grupo desde la página de inicio de SharePoint. 
+Si tiene una pequeña empresa con algunos empleados, una de las mejores formas de configurar y facilitar el uso compartido de archivos y la colaboración en línea es usar OneDrive y un sitio de grupo de SharePoint de forma conjunta. Se recomienda crear un sitio de grupo que esté conectado a un grupo de Microsoft 365. Si desea usar el chat, puede crear este sitio creando un equipo en Microsoft Teams. Para obtener más información sobre Teams, vea [vídeo: ¿Qué es Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Si no desea usar Teams, puede crear un sitio de grupo desde la página de inicio de SharePoint. 
   
 [¿Qué es un sitio de grupo de SharePoint?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ Para obtener información sobre cómo expandir las listas con más columnas, vea
   
 Si va a almacenar una gran cantidad de datos en una lista, vea [administrar listas y bibliotecas de gran tamaño en SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendario compartido en Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendario compartido](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
 ## <a name="organize-sites-into-hubs"></a>Organizar sitios en concentradores
 
@@ -92,7 +92,7 @@ Para obtener información sobre cómo agregar sitios a un sitio concentrador, ve
 
 Aunque el almacenamiento y la organización son un comienzo, el uso compartido con su equipo y los clientes externos también es importante. Estos son algunos vínculos a temas que le ayudarán a administrar los usuarios y a compartir sus datos. 
   
-Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+Para compartir archivos con su equipo, vea [compartir archivos o carpetas de SharePoint en Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
   
 Para comprender el uso compartido fuera de su equipo, vea [external Sharing Overview](/sharepoint/external-sharing-overview).
   
@@ -102,7 +102,7 @@ Al administrar el sitio de grupo, es posible que tenga que agregar o quitar usua
   
 Vea un vídeo sobre los grupos con los [grupos comprender y administrar](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
   
-Para agregar usuarios a un grupo de Office 365, vea [Agregar usuarios individualmente o de forma masiva a office 365: ayuda para administradores](../add-users/add-users.md).
+Para agregar usuarios a un grupo de Microsoft 365, vea [Agregar usuarios individualmente o de forma masiva a microsoft 365-ayuda de administración](../add-users/add-users.md).
   
 Obtenga información sobre cómo controlar solicitudes de acceso con [configurar y administrar solicitudes de acceso](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
   
@@ -110,11 +110,11 @@ Obtenga información sobre cómo controlar solicitudes de acceso con [configurar
 
 - **Configurar las aplicaciones de Office en tabletas y teléfonos**. Tiene que realizar esta acción para poder editar los archivos almacenados en el sitio de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office en su tableta o teléfono, podrá ver los archivos en el sitio de grupo, pero no editarlos. 
     
-  - [Instalar y configurar Office en un dispositivo Android con Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Instalar y configurar Office en un dispositivo Android con Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Instalar y configurar Office en un iPhone o iPad con Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Instalar y configurar Office en un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurar Office en Windows Phone con Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurar Office en Windows Phone con Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [Más información sobre el uso de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

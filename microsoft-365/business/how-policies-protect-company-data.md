@@ -1,5 +1,7 @@
 ---
-title: Protección de los datos de la compañía con directivas en Microsoft 365 Business
+title: Cómo las directivas de Microsoft 365 para la empresa protegen los datos de la compañía
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,14 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Para proteger los datos de la empresa en los dispositivos personales de los usuarios, use directivas dirigidas a dispositivos y grupos de seguridad específicos.
-ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: aa7447ae4547ba3180d5d5ebbe18e2840947a1d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320136"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627154"
 ---
-# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Protección de los datos de la compañía con directivas en Microsoft 365 Business
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Cómo las directivas de Microsoft 365 para la empresa protegen los datos de la compañía
 
 Las directivas que cree son específicas del tipo de dispositivo y se pueden aplicar en grupos de usuarios específicos. Esto quiere decir que podría crear una directiva para aplicarla a sus ejecutivos y otra directiva para aplicarla en el resto de los usuarios.
   

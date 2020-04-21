@@ -1,5 +1,7 @@
 ---
 title: Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtenga información sobre cómo obtener acceso a recursos locales como líneas de aplicaciones empresariales, recursos compartidos de archivos e impresoras desde un dispositivo Windows 10 conectado a Azure Active Directory.
-ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967171"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627462"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Business
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 empresa Premium
 
-Cualquier dispositivo de Windows 10 que se haya unido a Azure Active Directory tiene acceso a todos los recursos basados en la nube, como las aplicaciones de Office 365, y puede ser protegido por Microsoft 365 Business. También puede permitir el acceso a recursos locales como aplicaciones de línea de negocio (LOB), recursos compartidos de archivos e impresoras. Para permitir el acceso, use [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para sincronizar su Active Directory local con Azure Active Directory. 
+Cualquier dispositivo de Windows 10 que se haya unido a Azure Active Directory tiene acceso a todos los recursos basados en la nube, como las aplicaciones de Microsoft 365, y puede ser protegido por Microsoft 365 empresa Premium. También puede permitir el acceso a recursos locales como aplicaciones de línea de negocio (LOB), recursos compartidos de archivos e impresoras. Para permitir el acceso, use [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para sincronizar su Active Directory local con Azure Active Directory. 
 
 Para obtener más información, consulte [Introduction to Device Management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 Los pasos también se resumen en las secciones siguientes.
@@ -41,9 +43,9 @@ Complete los siguientes pasos para habilitar los dispositivos de Azure AD Unidos
   
 1. Para sincronizar los usuarios, los grupos y los contactos de Active Directory local a Azure Active Directory, ejecute el Asistente para sincronización de directorios y Azure AD Connect como se describe en [configurar la sincronización de directorios para Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
-2. Una vez completada la sincronización de directorios, asegúrese de que los dispositivos Windows 10 de su organización están Unidos a Azure AD. Este paso se realiza de forma individual en cada dispositivo con Windows 10. Consulte [configurar dispositivos Windows para usuarios de Microsoft 365 Business](set-up-windows-devices.md) para obtener más información. 
+2. Una vez completada la sincronización de directorios, asegúrese de que los dispositivos Windows 10 de su organización están Unidos a Azure AD. Este paso se realiza de forma individual en cada dispositivo con Windows 10. Para obtener más información, consulte [configurar dispositivos Windows para los usuarios de Microsoft 365 empresa Premium](set-up-windows-devices.md) . 
     
-3. Una vez que se unen los dispositivos Windows 10, cada usuario debe reiniciar sus dispositivos e iniciar sesión con sus credenciales de Microsoft 365 Business. Todos los dispositivos ahora también tienen acceso a los recursos locales.
+3. Una vez que se unen los dispositivos de Windows 10, cada usuario debe reiniciar sus dispositivos e iniciar sesión con sus credenciales de Microsoft 365 Business Premium. Todos los dispositivos ahora también tienen acceso a los recursos locales.
     
 No se necesitan pasos adicionales para obtener acceso a los recursos locales de los dispositivos Unidos de Azure AD. Esta funcionalidad está integrada en Windows 10. 
 

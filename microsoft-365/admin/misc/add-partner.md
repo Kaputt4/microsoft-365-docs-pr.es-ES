@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Obtenga información sobre cómo agregar un socio de asesor de suscripción como partner de registro en el momento de la compra de Office 365, cambiar el partner o eliminar un partner de una suscripción.
-ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Obtenga información sobre cómo agregar un socio de asesor de suscripción como partner de registro en el momento de la compra de Microsoft 365, cambiar el partner o eliminar un partner de una suscripción.
+ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361585"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627973"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -37,13 +37,13 @@ ms.locfileid: "42361585"
 
 ::: moniker range="o365-worldwide"
 
-Un partner autorizado de Microsoft que actúa como asesor de suscripción le proporciona los conocimientos técnicos, sobre ventas y soporte técnico que necesita para que configurar y mantener la suscripción sea más fácil. Puede agregar un partner asesor de suscripción como partner de registro al comprar Office 365 o en cualquier otro momento. Si actualmente no está trabajando con un partner, también puede encontrar uno en el sitio web de [Microsoft Pinpoint](https://pinpoint.microsoft.com) . 
+Un partner autorizado de Microsoft que actúa como asesor de suscripción le proporciona los conocimientos técnicos, sobre ventas y soporte técnico que necesita para que configurar y mantener la suscripción sea más fácil. Puede Agregar un socio de asesor de suscripción como asociado de registro cuando compre Microsoft 365 o en otro momento. Si actualmente no está trabajando con un partner, también puede encontrar uno en el sitio web de [Microsoft Pinpoint](https://pinpoint.microsoft.com) . 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-El partner que elija dependerá de los servicios de Office 365 que use y del país o la región donde los vaya a usar. Si quiere agregar un partner o cambiar el que está asociado a la suscripción, primero debe pedirle al partner el id. de partner de Microsoft.
+El socio que elijas dependerá de los servicios de Microsoft que use y del país o la región donde vaya a usar dichos servicios. Si va a agregar un partner o desea cambiar el socio de la suscripción, primero necesita obtener el identificador de asociado de Microsoft del asociado preguntando al asociado.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
     
 2. Si tiene más de una suscripción, seleccione la suscripción que desea editar.
   
@@ -173,7 +173,7 @@ Para aceptar esta oferta
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
   
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -185,7 +185,7 @@ Para aceptar esta oferta
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
   
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -221,7 +221,7 @@ Para aceptar esta oferta
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -233,7 +233,7 @@ Para aceptar esta oferta
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -272,4 +272,4 @@ Si va a quitar una relación de revendedores, la opción **eliminar** estará at
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Busque su partner o revendedor de Office 365](../manage/find-your-partner-or-reseller.md)
+[Encuentre a su partner o distribuidor de 365 de Microsoft](../manage/find-your-partner-or-reseller.md)

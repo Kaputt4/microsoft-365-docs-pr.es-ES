@@ -1,5 +1,5 @@
 ---
-title: ¿Qué suscripción de Office 365 para empresas tengo?
+title: ¿Qué suscripción tengo?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409505"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621435"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
 Si es administrador, puede comprobar qué suscripciones tiene su organización yendo al centro de administración.
   
- **¿No es un administrador?** Consulte [¿Qué producto o licencia de Office 365 Business tengo?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **¿No es un administrador?** Ver [Qué producto y licencia de Microsoft 365 para empresas tengo?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
 
@@ -50,7 +50,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \>.  
 
-2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, podrá ver que tengo una suscripción de Office 365 Empresa.
+2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, puede ver que tengo una suscripción a Microsoft 365 apps for Business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \>.  
 
-2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, podrá ver que tengo una suscripción de Office 365 Empresa.
+2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, puede ver que tengo una suscripción a Microsoft 365 apps for Business.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

@@ -1,5 +1,5 @@
 ---
-title: Permitir a los usuarios restablecer sus contraseñas en Office 365
+title: Permitir que los usuarios puedan restablecer sus propias contraseñas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo restablecer las contraseñas con la herramienta de restablecimiento de contraseña de autoservicio.
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211900"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617151"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -36,7 +36,7 @@ ms.locfileid: "43211900"
   
 Algunas cuestiones que debería conocer:
   
-- Obtendrá el autoservicio de restablecimiento de contraseñas para usuarios en la nube **gratis** con cualquier plan de Office 365 para empresas, para el ámbito educativo o para organizaciones sin ánimo de lucro. No funciona con la versión de prueba de Office 365. 
+- Obtiene el restablecimiento de contraseñas de autoservicio para los usuarios en la nube de forma gratuita con cualquier plan pagado de Microsoft 365 Business, Education o **sin** ánimo de lucro. No funciona con la versión de prueba de Microsoft 365. 
     
 - Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure. 
     

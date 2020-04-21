@@ -1,5 +1,5 @@
 ---
-title: Administrar
+title: Manage
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,17 +14,17 @@ layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
-description: Vínculos rápidos para las tareas de administración más comunes de Office 365.
-ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+description: Vínculos rápidos para las tareas de administración más comunes de Microsoft 365.
+ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126004"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628141"
 ---
-# <a name="manage"></a>Administrar
+# <a name="manage"></a>Manage
 
-Vínculos rápidos para las tareas de administración más comunes de Office 365.
+Vínculos rápidos para las tareas de administración más comunes de Microsoft 365.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -152,7 +152,7 @@ Vínculos rápidos para las tareas de administración más comunes de Office 365
                         <h3>Correo electrónico</h3>
                             <p><a href="../add-users/add-users.md">Agregar un nuevo empleado</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Corregir un problema de mensajes de correo electrónico que no se envían</a></p>
-                            <p><b>Más tareas:</b> <a href="../email/email.md">correo electrónico en Office 365 para empresas</a></p>
+                            <p><b>Más tareas:</b> <a href="../email/email.md">correo electrónico en Microsoft 365 para empresas</a></p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ Vínculos rápidos para las tareas de administración más comunes de Office 365
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Administrar el uso compartido en OneDrive y SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Establecer el espacio de almacenamiento predeterminado para los usuarios de OneDrive</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Solucionar problemas de sincronización de OneDrive</a></p>
-                            <p><b>Más tareas:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive en Office 365</a></p>
+                            <p><b>Más tareas:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive en Microsoft 365</a></p>
                     </div>
                 </div>
             </div>
@@ -198,9 +198,9 @@ Vínculos rápidos para las tareas de administración más comunes de Office 365
                 <div class="card">
                     <div class="cardText">
                         <h3>Yammer</h3>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Inicio de sesión en Office 365 para Yammer</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Administrar usuarios de Yammer desde Office 365</a></p>
-                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Exigir la identidad de Office 365 para usuarios de Yammer</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/office-365-sign-in">Inicio de sesión de Microsoft 365 para Yammer</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle">Administrar usuarios de Yammer desde Microsoft 365</a></p>
+                            <p><a href="https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity">Exigir la identidad de Microsoft 365 para los usuarios de Yammer</a></p>
                             <p><a href="https://docs.microsoft.com/yammer/integrate-yammer-with-other-apps/embed-a-feed-into-a-sharepoint-site">Insertar una fuente de Yammer en un sitio de SharePoint</a></p>
                             <p><b>Más tareas:</b> <a href="https://docs.microsoft.com/yammer/yammer-landing-page">ayuda de administración de Yammer</a></p>
                     </div>

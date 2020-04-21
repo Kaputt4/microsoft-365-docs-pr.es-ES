@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 3f22ef22571dd04dd3364a95ed860f53b8ff207b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211924"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618793"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -126,7 +126,7 @@ Es posible que no tenga los permisos correctos y no tiene acceso para asignar ro
 
 [Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[Autorizar o quitar relaciones de asociados](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
+[Autorizar o quitar relaciones de asociados](../misc/add-partner.md)
 
 [Agregar una dirección de correo electrónico alternativa mediante el centro de administración de Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

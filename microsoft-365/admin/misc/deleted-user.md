@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo eliminar o restaurar la cuenta de Office 365 de un usuario.
-ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Obtenga información sobre cómo eliminar o restaurar la cuenta de Microsoft 365 de un usuario.
+ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257360"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627889"
 ---
 # <a name="quick-help-deleted-user"></a>Ayuda rápida: Usuario eliminado
 
@@ -75,9 +75,9 @@ Puede restaurar los usuarios buscando **eliminados** en la Página principal y e
 
 Un [usuario](../add-users/add-users.md) eliminado es aquella cuenta profesional o educativa que se elimina de su organización. 
   
-## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>¿Eliminar a un usuario libera su licencia de Office 365?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>¿La eliminación de un usuario libera su licencia de Microsoft 365?
 
-Sí, al eliminar al usuario se libera la licencia de Office 365 que tiene asignada. A continuación, puede asignar dicha licencia a otro usuario. [Lea el artículo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
+Sí, la eliminación del usuario libera la licencia de Microsoft 365 asignada a ese usuario. A continuación, puede asignar dicha licencia a otro usuario. [Lea el artículo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>Tenía a un usuario eliminado en la lista de Usuarios eliminados y ha desaparecido. ¿Qué ha ocurrido?
 

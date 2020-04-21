@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Obtenga información sobre cómo configurar una cuenta de correo electrónico en Outlook para Windows y Mac, y sobre cómo instalar aplicaciones de Office y acceder a los correos electrónicos en línea.
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627793"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurar Outlook para leer el correo electrónico
 
-Su suscripción a Office 365 incluye un Outlook basado en Web, pero si su suscripción incluye aplicaciones cliente de Office, también recibirá Outlook en su equipo o dispositivos personales.
+Su suscripción a Microsoft 365 se suministra con Outlook basado en Web, pero si su suscripción incluye aplicaciones cliente de Office, también recibirá Outlook en su equipo o dispositivos personales.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurar una cuenta de correo electrónico en Outlook
 
@@ -62,15 +62,15 @@ Leer el [artículo completo](https://support.office.com/article/6e27792a-9267-4a
   
 ## <a name="how-do-i-access-my-mail-online"></a>¿Cómo puedo tener acceso a mi correo electrónico en línea?
 
-Después de iniciar sesión en Office 365, seleccione **Outlook**.
+Después de iniciar sesión en Microsoft 365, seleccione **Outlook**.
   
-![Página principal de Office 365 con la aplicación de Outlook resaltada](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Página principal de Microsoft 365 con la aplicación de Outlook resaltada](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica. 
+¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Microsoft 365 disponibles para usted. Ahí podrá buscar una aplicación específica. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>¿Cómo sé si mi suscripción incluye aplicaciones de Office?
 
-Office 365 empresa Premium y Office 365 empresa incluyen aplicaciones de Office. Para obtener más información, consulte [planes de office 365 Business](https://go.microsoft.com/fwlink/p/?LinkId=723731)o [Office 365 Enterprise Plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 Business Standard y Microsoft 365 apps for Business incluyen aplicaciones de Office. Para obtener información detallada, vea [Microsoft 365 para planes de negocios](https://go.microsoft.com/fwlink/p/?LinkId=723731)o [Office 365 Enterprise Plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>¿Cómo puedo determinar qué suscripción tengo?
 

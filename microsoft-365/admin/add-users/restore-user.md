@@ -1,5 +1,5 @@
 ---
-title: Restaurar un usuario en Office 365
+title: Restaurar un usuario
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Obtenga información sobre cómo restaurar cuentas de usuario de Office 365 eliminadas y todos los datos asociados.
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Obtenga información sobre cómo restaurar cuentas de usuario eliminadas y todos los datos asociados.
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245668"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624063"
 ---
-# <a name="restore-a-user-in-office-365"></a>Restaurar un usuario en Office 365
+# <a name="restore-a-user"></a>Restaurar un usuario
    
 Al restaurar una cuenta de usuario en un plazo de 30 días después de eliminarla, se restaurará la cuenta y todos los datos asociados. El usuario podrá iniciar sesión con la misma cuenta profesional o educativa. Su buzón se restaurará por completo. Para conocer cuánto falta para que una cuenta de usuario específica ya no se pueda restaurar, [póngase en contacto con nosotros](../contact-support-for-business-products.md).
   
 Aquí tiene un par de sugerencias:
   
-- Compruebe que tiene disponibles licencias de Office 365 que puede asignar a la cuenta.
+- Asegúrese de que las licencias estén disponibles para asignarlas a la cuenta.
     
 - Si su empresa usa Active Directory, consulte [Solución de problemas de cuentas de usuario eliminadas en Office 365](https://support.microsoft.com/kb/2619308) para obtener instrucciones sobre cómo restaurar una cuenta de usuario. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurar una o más cuentas de usuario
 
-Para realizar estos pasos, debe ser administrador global o administrador de administración de usuarios en Office 365. 
+Debe ser administrador global de Microsoft 365 o administrador de administración de usuarios para realizar estos pasos. 
   
  
 ::: moniker range="o365-worldwide"
@@ -117,7 +117,7 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 Se produce un conflicto de direcciones de proxy al eliminar una cuenta de usuario que contiene una dirección de proxy, asignar la misma dirección de proxy a otra cuenta y, después, intentar restaurar la cuenta eliminada. Siga los pasos que se indican a continuación para solucionar este problema.
   
-Debe tener [permisos de administrador](about-admin-roles.md) en Office 365 para realizar esta acción. 
+Para ello, debe tener [permisos de administrador](about-admin-roles.md) en Microsoft 365. 
   
 
 ::: moniker range="o365-worldwide"
@@ -148,4 +148,3 @@ Vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=84
 
 [Eliminar un usuario](delete-a-user.md)
   
-

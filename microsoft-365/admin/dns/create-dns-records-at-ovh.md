@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en OVH para Office 365
+title: Crear registros DNS en OVH para Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en OVH para Office 365.
-ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en OVH para Microsoft.
+ms.openlocfilehash: 01c455f54a7ee2efc6114dba1c01170b97ea5f71
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211115"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629292"
 ---
-# <a name="create-dns-records-at-ovh-for-office-365"></a>Crear registros DNS en OVH para Office 365
+# <a name="create-dns-records-at-ovh-for-microsoft"></a>Crear registros DNS en OVH para Microsoft
 
 [Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md) si no encuentra lo que busca. 
   
@@ -35,19 +35,19 @@ Si OVH es su proveedor de host DNS, siga los pasos de este artículo para compro
   
 Estos son los registros principales que es necesario agregar. 
   
-- [Crear registros DNS en OVH para Office 365](#create-dns-records-at-ovh-for-office-365)
+- [Crear registros DNS en OVH para Microsoft](#create-dns-records-at-ovh-for-microsoft)
     
-- [Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Agregar los registros CNAME necesarios para Office 365](#add-the-cname-records-that-are-required-for-office-365)
+- [Agregar los registros CNAME necesarios para Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Agregar los dos registros SRV necesarios para Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Agregar los dos registros SRV necesarios para Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Después de agregar estos registros a OVH, su dominio estará configurado para trabajar con los servicios de Office 365.
+Después de agregar estos registros a OVH, su dominio estará configurado para funcionar con los servicios de Microsoft.
   
-Para obtener información acerca del hospedaje web y de DNS para sitios web con Office 365, consulte [Usar un sitio web público con Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+Para obtener más información sobre WebHosting y DNS para sitios web con Microsoft, vea [usar un sitio web público con Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -55,7 +55,7 @@ Para obtener información acerca del hospedaje web y de DNS para sitios web con 
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="bkmk_txt"> </a>
 
-Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es de su propiedad. Si puede iniciar sesión en la cuenta en su registrador de dominios y crear el registro DNS, Office 365 sabrá que es el propietario del dominio.
+Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS es la que se demuestre a Microsoft que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -84,7 +84,7 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     
     |**Tipo de registro**|**Subdominio**|**TTL**|**Valor**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |MS = msxxxxxxxx  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |MS = msxxxxxxxx  <br/> **Nota:** esto es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino de la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Seleccione **confirmar**. 
     
@@ -92,9 +92,9 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
   
 8. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
+Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará el registro.
   
-Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
   
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -113,7 +113,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft
 <a name="bkmk_mx"> </a>
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -143,7 +143,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
     |**Tipo de registro**|**Subdominio**|**TTL**|**Prioridad**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtenga la * \<clave\> de dominio* de su cuenta de Office 365.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH registro MX para correo](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -161,7 +161,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
 10. Seleccione **confirmar**.
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Agregar los registros CNAME necesarios para Office 365
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Agregar los registros CNAME necesarios para Microsoft
 <a name="bkmk_cname"> </a>
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -208,11 +208,11 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     Para cada registro, escriba (o copie y pegue) los valores de la siguiente fila de la tabla anterior en los cuadros para ese registro.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. En vez de eso, agregue los valores necesarios de Office 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
     
@@ -248,7 +248,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![OVH agregar registro TXT para SPF y confirmar](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Agregar los dos registros SRV necesarios para Microsoft
 <a name="bkmk_srv"> </a>
 
 1. Para empezar, vaya a su página de dominios en OVH a través de [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.

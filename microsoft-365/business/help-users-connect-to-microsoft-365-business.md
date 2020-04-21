@@ -1,5 +1,5 @@
 ---
-title: Ayudar a los usuarios a conectarse a Microsoft 365 Business
+title: Ayudar a los usuarios a conectarse a Microsoft 365 empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,21 +27,21 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Obtenga información sobre qué esperar una vez que se haya completado la configuración del conjunto de aplicaciones empresariales y las directivas de dispositivo predeterminadas y listas para aplicar.
-ms.openlocfilehash: 450d91686420c11bf696e70a993354c57f0602a3
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 375a46fd946b42dc391ff6e4dabe98a435074377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560428"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627222"
 ---
-# <a name="help-users-connect-to-microsoft-365-business"></a>Ayudar a los usuarios a conectarse a Microsoft 365 Business
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Ayudar a los usuarios a conectarse a Microsoft 365 empresa Premium
 
 Una vez finalizada la instalación, las directivas de dispositivo predeterminadas están preparadas y listas para aplicarse. En dispositivos móviles, los usuarios descargan las aplicaciones de Office. A continuación, las directivas se aplican cuando el usuario inicia sesión con su cuenta profesional o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Consulte y comparta los temas siguientes para ayudar a los usuarios a configurar y conectarse:
   
-[Configurar dispositivos Windows para los usuarios de Microsoft 365 Empresa](set-up-windows-devices.md)
+[Configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium](set-up-windows-devices.md)
   
 [Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot](add-autopilot-devices-and-profile.md)
   
-[Configurar dispositivos móviles para usuarios de Microsoft 365 Business](set-up-mobile-devices.md)
+[Configurar dispositivos móviles para los usuarios de Microsoft 365 empresa Premium](set-up-mobile-devices.md)
   
 

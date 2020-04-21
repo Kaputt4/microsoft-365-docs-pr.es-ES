@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Office 365 que detecta mensajes de correo no deseado, malware o de suplantación de identidad (phishing) que ya se han entregado a Exchange Online. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Microsoft 365 que detecta mensajes de correo no deseado, malware o de suplantación de identidad (phishing) que ya se han entregado a Exchange Online. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
+ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516778"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630814"
 ---
-# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Depuración automática de cero horas (ZAP): protección contra correo no deseado y malware en Office 365
+# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Depuración automática de cero horas (ZAP): protección contra correo no deseado y malware en Microsoft 365
 
 ## <a name="overview"></a>Información general
 
-La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Office 365 que detecta y neutraliza de forma retroactiva los mensajes malintencionados de suplantación de identidad, correo no deseado o malware que ya se han entregado a los buzones de Exchange Online.
+La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Microsoft 365 que detecta y neutraliza de forma retroactiva y neutraliza los mensajes malintencionados de suplantación de identidad, correo no deseado o malware que ya se han entregado a los buzones de Exchange Online.
 
-ZAP está disponible con la protección de Exchange Online (EOP) predeterminada que se incluye con cualquier suscripción a Office 365 que contenga buzones de correo de Exchange Online. ZAP no funciona en entornos de EOP independientes que protejan los buzones de correo de Exchange local.
+ZAP está disponible con la protección de Exchange Online (EOP) predeterminada que se incluye con cualquier suscripción a Microsoft 365 que contenga buzones de correo de Exchange Online. ZAP no funciona en entornos de EOP independientes que protejan los buzones de correo de Exchange local.
 
 ## <a name="how-zap-works"></a>Cómo funciona el ZAP
 
-Office 365 actualiza las firmas de correo no deseado y malware en tiempo real a diario. Sin embargo, los usuarios aún pueden recibir mensajes malintencionados por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona este problema mediante la supervisión continua de las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y eliminar mensajes que ya están en el buzón de un usuario.
+Microsoft 365 actualiza las firmas de correo no deseado y malware en tiempo real a diario. Sin embargo, los usuarios aún pueden recibir mensajes malintencionados por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona este problema al supervisar continuamente las actualizaciones de las firmas de correo no deseado y malware de Microsfot 365. ZAP puede buscar y eliminar mensajes que ya están en el buzón de un usuario.
 
 La acción ZAP es fluida para el usuario; no se notifican si un mensaje se ha detectado y movido.
 
@@ -46,7 +46,7 @@ Las [listas de remitentes seguros](create-safe-sender-lists-in-office-365.md), l
 
 En el caso de **los mensajes leídos o no leídos** que contienen malware después de la entrega, ZAP pone en cuarentena el mensaje que contiene los datos adjuntos de malware. Solo los administradores pueden ver y administrar los mensajes de malware desde la cuarentena.
 
-ZAP de malware está habilitado de forma predeterminada en las directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
+ZAP de malware está habilitado de forma predeterminada en las directivas antimalware. Para obtener más información, vea [Configure anti-malware policies in Microsoft 365](configure-anti-malware-policies.md).
 
 ### <a name="phish-zap"></a>ZAP de phish
 
@@ -54,13 +54,13 @@ En el caso de **los mensajes leídos o no leídos** que se identifican como phis
 
 - **Agregar encabezado X**, **anteponer la línea de asunto con el texto**: Zap no realiza ninguna acción en el mensaje.
 
-- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Redirigir el mensaje a la dirección de correo electrónico**, **eliminar mensaje**, **poner en cuarentena**el mensaje: Zap pone en cuarentena el mensaje. Solo los administradores pueden ver y administrar los mensajes de phish en cuarentena.
 
 De forma predeterminada, la opción ZAP de phish está habilitada en las directivas contra correo no deseado y la acción predeterminada para el veredicto del filtrado de **correo de phishing** es el **mensaje en cuarentena**, lo que significa que el Zap de phish pone en cuarentena el mensaje de forma predeterminada.
 
-Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="spam-zap"></a>ZAP de correo no deseado
 
@@ -68,13 +68,13 @@ Para **los mensajes no leídos** que se identifican como correo no deseado despu
 
 - **Agregar encabezado X**, **anteponer la línea de asunto con el texto**: Zap no realiza ninguna acción en el mensaje.
 
-- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Mover mensaje a correo no deseado**: Zap mueve el mensaje a la carpeta de correo no deseado, siempre y cuando la regla de correo no deseado esté habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Redirigir el mensaje a la dirección de correo electrónico**, **eliminar mensaje**, **poner en cuarentena**el mensaje: Zap pone en cuarentena el mensaje. Los usuarios finales pueden ver y administrar sus propios mensajes de correo electrónico no deseado en cuarentena.
 
 De forma predeterminada, la ZAP de correo no deseado está habilitada en las directivas contra correo no deseado y la acción predeterminada para el veredicto del filtrado de **correo no** deseado es **mover el mensaje a**la carpeta de correo no deseado, lo que significa que el Zap mueve los mensajes no **leídos** a la carpeta correo electrónico no deseado de forma predeterminada.
 
-Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+Para obtener más información acerca de cómo configurar los veredictos de filtrado de correo no deseado, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Consideraciones de ZAP para la protección contra amenazas avanzada de Office 365 (ATP)
 
@@ -90,7 +90,7 @@ Para determinar si la ZAP movió el mensaje, puede usar el informe de estado de 
 
 A: debe seguir el proceso de informes normal para [falsos positivos](report-junk-email-messages-to-microsoft.md). La única razón por la que el mensaje se movería de la bandeja de entrada a la carpeta de correo electrónico no deseado sería porque el servicio determinó que el mensaje era correo no deseado o malintencionado.
 
-### <a name="q-what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>P: ¿Qué ocurre si utilizo la cuarentena de Office 365 en lugar de la carpeta de correo no deseado?
+### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>P: ¿Qué ocurre si utilizo la carpeta cuarentena en lugar de la carpeta correo electrónico no deseado?
 
 A: ZAP realizará una acción en un mensaje en función de la configuración de las directivas contra correo electrónico no deseado, como se ha descrito anteriormente en este tema.
 

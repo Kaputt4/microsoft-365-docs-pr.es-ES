@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de las amenazas de seguridad que se enfrentan a su empresa y sus empleados pueden proteger sus datos, cuentas y dispositivos.
-ms.openlocfilehash: 86711cd32878917931a1eb1f67e7c08f7ed8ba57
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4fafa348977d2eefe11cab865bacc999d625dc47
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561600"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627673"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Gráfico de información de seguridad para pequeñas empresas
 
-**Resumen:** Obtenga información sobre los términos básicos para las amenazas que se enfrentan a su empresa y sobre qué puede hacer para proteger los datos, las cuentas y los dispositivos. Como administrador de Office 365 para empresas o para Microsoft 365 Business, tome medidas para que su negocio sea más seguro y ayude a todos los empleados a mantener seguros los datos y los dispositivos de la empresa.
+**Resumen:** Obtenga información sobre los términos básicos para las amenazas que se enfrentan a su empresa y sobre qué puede hacer para proteger los datos, las cuentas y los dispositivos. Como administrador de Microsoft 365 para empresas, tome medidas para que su negocio sea más seguro y ayude a que todos los empleados aprendan a mantener seguros sus datos y dispositivos profesionales.
 
 Los vínculos para PowerPoint y el PDF que se muestran a continuación se pueden descargar e imprimir en formato tabloide (también conocido como contabilidad, 11 x 17 o a3).
 

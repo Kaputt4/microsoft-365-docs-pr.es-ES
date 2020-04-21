@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Una vez que haya creado un buzón compartido, querrá configurar algunas opciones para sus usuarios, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre o los miembros del buzón.
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212026"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629052"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurar un buzón compartido
 
@@ -122,7 +122,7 @@ De forma predeterminada, los mensajes enviados al buzón compartido no se guarda
 Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, modifique la configuración del buzón compartido y seleccione \> **Editar** **elementos enviados** .
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>Elegir las aplicaciones que un buzón compartido puede usar para obtener acceso al correo electrónico de Office 365
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Elegir las aplicaciones que un buzón compartido puede usar para obtener acceso al correo electrónico de Microsoft
 
 ::: moniker range="o365-worldwide"
 

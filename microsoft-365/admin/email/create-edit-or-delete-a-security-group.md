@@ -19,27 +19,27 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Obtenga información sobre cómo crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362285"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628884"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el centro de administración de Microsoft 365
 
-En la página Office 365 **grupos** , puede crear grupos de cuentas de usuario que puede usar para asignar los mismos permisos en SharePoint Online y en CRM Online. Por ejemplo, un administrador puede crear un grupo de seguridad para conceder acceso a un determinado grupo de personas a un sitio de SharePoint. Solo los administradores globales y de administración de usuarios tienen permisos para crear, editar o eliminar grupos de seguridad; para obtener más información acerca de los roles de administrador, vea [asignación de roles de administrador](../add-users/assign-admin-roles.md). 
+En la página Microsoft 365 **grupos** , puede crear grupos de cuentas de usuario que puede usar para asignar los mismos permisos en SharePoint Online y en CRM Online. Por ejemplo, un administrador puede crear un grupo de seguridad para conceder acceso a un determinado grupo de personas a un sitio de SharePoint. Solo los administradores globales y de administración de usuarios tienen permisos para crear, editar o eliminar grupos de seguridad; para obtener más información acerca de los roles de administrador, vea [asignación de roles de administrador](../add-users/assign-admin-roles.md). 
   
 También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que puede usar para enviar correo electrónico o asignar permisos a un grupo de usuarios y [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que conceden a los usuarios permisos y acceso a sitios y colecciones de sitios. 
   
 > [!IMPORTANT]
->  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, vea [usar los grupos de Office 365 en lugar de los buzones del sitio](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+>  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, vea [usar grupos de Microsoft 365 en lugar de buzones de sitio](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Administración de grupos de seguridad en el centro de administración
 
 ### <a name="add-a-security-group"></a>Agregar un grupo de seguridad
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración de Microsoft 365, vaya **a la** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
   
 2. En la página **grupos** , seleccione **Agregar un grupo**.
     
@@ -90,7 +90,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -100,7 +100,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -112,20 +112,20 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
 3. En el panel grupo de seguridad, seleccione **Editar** junto a **nombre** o en la ficha **miembros** para editar los detalles o los miembros de un grupo.
     
-4. Después de realizar los cambios, seleccione **Guardar** \> **cierre**.
+4. Después de realizar los cambios, seleccione **Guardar** > **cierre**.
 
 ::: moniker-end
 
 
 ### <a name="delete-a-security-group"></a>Eliminar un grupo de seguridad
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -135,15 +135,15 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupos de Exchange Online y SharePoint Online
 
-Si desea crear grupos de usuarios para que pueda enviarles un correo electrónico a todos al mismo tiempo, puede hacerlo en el centro de administración de Exchange visitando los **grupos**de **destinatarios** \> de **Administración** \> de **Exchange** \> . A continuación, ****![seleccione Agregar](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)nuevo y seleccione el tipo de grupo que desea crear: 
+Si desea crear grupos de usuarios para que pueda enviarles un correo electrónico a todos al mismo tiempo, puede hacerlo en el centro de administración de Exchange visitando los **grupos**de **destinatarios** \> de **Administración** \> de **Exchange** \> . A continuación, **New**![seleccione Agregar](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)nuevo y seleccione el tipo de grupo que desea crear: 
   
-- **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina Grupo de *distribución habilitado para correo*, o bien, en Office 365, una *lista de distribución*. Para más información, vea [Administrar grupos de distribución](https://technet.microsoft.com/library/bb124513.aspx).
+- **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina *grupo de distribución habilitado para correo*, o bien, *lista de distribución*. Para más información, vea [Administrar grupos de distribución](https://technet.microsoft.com/library/bb124513.aspx).
     
 - **Grupo de seguridad**: se puede usar para distribuir mensajes a un grupo de usuarios o para conceder permisos de acceso a recursos. Este grupo también se denomina *grupo de seguridad habilitado para correo*. Para obtener más información, consulte [Administrar grupos de seguridad habilitados para correo](https://technet.microsoft.com/library/bb123521.aspx).
     
 - **Grupo de distribución dinámico**: un tipo de grupo de distribución cuya lista de destinatarios se vuelve a calcular cada vez que se envía un mensaje en función de filtros y condiciones definidos. Para obtener más información, vea [Administrar grupos de distribución dinámica](https://technet.microsoft.com/library/bb123722.aspx).
     
-Tras crear los grupos de distribución y los grupos de seguridad habilitados para correo electrónico en el Centro de administración de Exchange, sus nombres y listas de usuarios aparecerán en la página **Grupos de seguridad** de Office 365. Puede eliminar estos grupos en ambas ubicaciones, pero solamente puede modificarlos en el Centro de administración de Exchange. Los grupos de distribución dinámicos no aparecen en la página **Grupos de seguridad** de Office 365. 
+Después de crear grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange, sus nombres y listas de usuarios aparecen en la página **grupos de seguridad** . Puede eliminar estos grupos en ambas ubicaciones, pero solamente puede modificarlos en el Centro de administración de Exchange. Los grupos de distribución dinámicos no se muestran en la página **grupos de seguridad** . 
   
  Los grupos de SharePoint se crean automáticamente al crear una colección de sitios. Los grupos predeterminados usan los niveles de permisos predeterminados de SharePoint (a veces llamados roles de SharePoint) para conceder permisos y acceso a los usuarios. Para obtener más información, vea [grupos de SharePoint predeterminados en SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
   
@@ -157,5 +157,5 @@ No. Esto es sólo una forma más de administrar la seguridad de su organización
   
 ## <a name="can-i-send-email-to-a-security-group"></a>¿Se puede enviar correo electrónico a un grupo de seguridad?
 
-Sí. Pero si quiere usar grupos para el correo electrónico y la colaboración, le recomendamos que [cree un grupo de Office 365](../create-groups/create-groups.md) en su lugar. 
+Sí. Pero si quiere usar grupos para el correo electrónico y la colaboración, le recomendamos que [cree un grupo de 365 de Microsoft](../create-groups/create-groups.md) en su lugar. 
   

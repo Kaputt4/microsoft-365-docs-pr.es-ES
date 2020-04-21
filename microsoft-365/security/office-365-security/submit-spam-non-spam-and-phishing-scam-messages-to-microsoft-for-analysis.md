@@ -16,17 +16,17 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f6dbd808fac54ae273c21773bf8caeabce09b7fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529054"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631246"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
 > [!NOTE]
-> Si es administrador de una organización de Office 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento de Office 365. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+> Si es administrador de una organización de Microsoft 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
 
 Puede resultar frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad (phishing) en su bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente los filtros de correo no deseado para que sean más precisos.
 
@@ -81,7 +81,7 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 
 Puede crear una regla de flujo de correo (también denominada regla de transporte) que busca mensajes de correo electrónico que se notifican a Microsoft mediante los métodos descritos en este tema y puede configurar destinatarios en copia oculta para recibir copias de estos mensajes notificados.
 
-Puede crear la regla de flujo de correo en el centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para Office 365 clientes; Exchange Online Protection PowerShell para clientes independientes de EOP).
+Puede crear la regla de flujo de correo en el centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para los clientes de Microsoft 365; Exchange Online Protection PowerShell para clientes independientes de EOP).
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 

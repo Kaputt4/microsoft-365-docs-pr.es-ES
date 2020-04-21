@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Aprenda a administrar mensajes del centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361935"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628153"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el centro de mensajes
 
@@ -87,13 +87,13 @@ Ver un mensaje en el que otra persona necesita actuar? Puede compartir el conten
   
 1. Seleccione el mensaje para abrirlo y, a continuación, seleccione **compartir**.
   
-2. Para compartir el mensaje, escriba hasta dos direcciones de correo electrónico separadas por dos puntos. Puede enviar a una dirección de correo electrónico individual y a un grupo. Opcionalmente, puede elegir recibir una copia del mensaje en el correo electrónico (el mensaje irá a su dirección de correo electrónico principal en Office 365) o agregar un mensaje personal para proporcionar a los destinatarios más contexto.
+2. Para compartir el mensaje, escriba hasta dos direcciones de correo electrónico separadas por dos puntos. Puede enviar a una dirección de correo electrónico individual y a un grupo. Opcionalmente, puede elegir recibir una copia del mensaje en el correo electrónico (el mensaje irá a su dirección de correo principal) o agregar un mensaje personal para proporcionar a los destinatarios más contexto.
   
 3. Seleccione **compartir** para enviar el correo electrónico.
     
 ## <a name="get-a-link"></a>Obtener un vínculo
 
-¿Necesita realizar un seguimiento con otro administrador para asegurarse de que tiene constancia de un cambio y emprender una acción? Puede generar un vínculo para compartir el correo electrónico o la mensajería instantánea, por ejemplo, que conectará al usuario directamente a ese mensaje. La persona con la que comparte el vínculo tiene que ser administrador de Office 365 para su organización o no tendrá acceso al mensaje vinculado.
+¿Necesita realizar un seguimiento con otro administrador para asegurarse de que tiene constancia de un cambio y emprender una acción? Puede generar un vínculo para compartir el correo electrónico o la mensajería instantánea, por ejemplo, que conectará al usuario directamente a ese mensaje. La persona con la que comparte el vínculo tiene que ser administrador de Microsoft 365 para su organización o no tendrá acceso al mensaje vinculado.
 
 ::: moniker range="o365-worldwide"
 
@@ -213,5 +213,5 @@ Hay dos formas de descartar un mensaje.
 
 ::: moniker-end
 
-Para obtener información general sobre el centro de mensajes, consulte [Message Center in Office 365](message-center.md). O bien, para obtener información sobre cómo configurar las preferencias de idioma para habilitar la traducción automática de publicaciones del centro de mensajes, consulte [traducción de idiomas para las publicaciones del centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una forma alternativa de obtener información de estado del servicio en tiempo real y comunicaciones del centro de mensajes, consulte la información general de la [API de comunicaciones de servicio de Office 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Para obtener información general sobre el centro de mensajes, consulte [Message Center en Microsoft 365](message-center.md). O bien, para obtener información sobre cómo configurar las preferencias de idioma para habilitar la traducción automática de publicaciones del centro de mensajes, consulte [traducción de idiomas para las publicaciones del centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una forma alternativa de obtener información de estado del servicio en tiempo real y comunicaciones del centro de mensajes, consulte la información general de la [API de comunicaciones de servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

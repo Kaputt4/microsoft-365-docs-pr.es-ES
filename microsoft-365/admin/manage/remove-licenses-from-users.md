@@ -1,5 +1,5 @@
 ---
-title: Cancelar la asignación de licencias a los usuarios
+title: Cancelar la asignación de licencias a usuarios
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Obtenga información sobre cómo quitar licencias de cuentas de usuario.
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400937"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628105"
 ---
-# <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a los usuarios
+# <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
 ::: moniker range="o365-worldwide"
 Puede quitar o quitar la asignación de licencias de los usuarios en la página **usuarios activos** o en la página **licencias** . El método que use dependerá de si desea cancelar la asignación de licencias de producto de determinados usuarios o desasignar licencias de usuarios de productos específicos.
@@ -142,7 +142,7 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Lo que debe saber sobre cómo cancelar la asignación de licencias para usuarios
 
-- Debe ser un administrador global, administrador de facturación, administrador de licencias o administrador de administración de usuarios. Para obtener más información, consulte [Información sobre los roles de administrador de Office 365](../add-users/about-admin-roles.md).
+- Debe ser administrador global, administrador de facturación, administrador de licencias o administrador de administración de usuarios. Para obtener más información, vea [acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
 
 - Puede [quitar licencias de cuentas de usuario con PowerShell de Office 365](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
@@ -152,17 +152,17 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 
 - Tenga en cuenta que los archivos guardados en OneDrive para la empresa no se eliminan a menos que el usuario se elimine del centro de administración de Microsoft 365 o se elimine mediante la sincronización de Active Directory. Para obtener más información, vea [retención y eliminación de OneDrive](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Si tiene una suscripción de Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante el uso de [buzones inactivos](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Para obtener más información, vea [crear y administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 
-- Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Office 365 después de que se haya quitado la licencia y cómo obtener acceso a los datos posteriormente, vea [quitar un antiguo empleado](../add-users/remove-former-employee.md).
+- Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de que se haya quitado la licencia y cómo obtener acceso a los datos posteriormente, vea [quitar un antiguo empleado](../add-users/remove-former-employee.md).
 
 - Si quita la licencia de un usuario y aún tiene Office instalado, verá las [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) cuando usen Office.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Información sobre las suscripciones y licencias en Office 365 para empresas](../../commerce/licenses/subscriptions-and-licenses.md)
+[Descripción de las suscripciones y licencias de Microsoft 365 para empresas](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [Eliminar licencias de la suscripción](../../commerce/licenses/remove-licenses-from-subscription.md)
 

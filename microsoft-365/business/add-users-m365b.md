@@ -1,5 +1,5 @@
 ---
-title: Agregar más usuarios a Microsoft 365 Business
+title: Agregar más usuarios
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -25,15 +25,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
-description: Obtenga información sobre los pasos para agregar fácilmente nuevos usuarios, proteger sus dispositivos y asignar funciones en Microsoft 365 Business.
-ms.openlocfilehash: 8181254aa56345e99e648c59474f4d7f8fa94990
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Obtenga información sobre los pasos para agregar fácilmente nuevos usuarios, proteger sus dispositivos y asignar funciones en Microsoft 365 empresa Premium.
+ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561568"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627482"
 ---
-# <a name="add-more-users-to-microsoft-365-business"></a>Agregar más usuarios a Microsoft 365 Business
+# <a name="add-more-users"></a>Agregar más usuarios
 
 ## <a name="add-new-users"></a>Agregar nuevos usuarios
 
@@ -45,7 +45,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 Para agregar un usuario:
 
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
 2. En el panel de navegación izquierdo, **Elija** \> usuarios **activos**.
 3. En la página **usuarios activos** , elija **Agregar un usuario**.
 4. En el panel **nuevo usuario** , escriba la información necesaria. 
@@ -54,7 +54,7 @@ Para agregar un usuario:
       
     ![Enter user information in the New user card](../media/f04d39ca-48be-4868-8330-8552a4754c8b.png)
       
-    En la sección licencias de producto, establezca la configuración de licencia de producto de **Microsoft 365 Business** en **activado**.
+    En la sección licencias de producto, establezca la configuración de licencia del producto **Microsoft 365 Business Premium** como **activada**.
       
     ![Set the license setting to On position](../media/7404f7f7-93bc-44a3-9ffb-4208b5b17402.png)
   

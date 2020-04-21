@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516870"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627757"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -39,7 +39,7 @@ La puntuación y la información están presentes en dos categorías:
 
 - **Experiencia tecnológica** (próximamente): le ayuda a optimizar sus experiencias de dispositivo, como corregir de forma proactiva los problemas comunes del Departamento de soporte técnico, y mejorar el tiempo de inicio del equipo y la red para asegurarse de que las aplicaciones funcionan correctamente.  
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 ### <a name="areas-of-scoring"></a>Áreas de puntuación 
 
@@ -64,7 +64,7 @@ La puntuación se actualiza diariamente y refleja las acciones del usuario compl
 
 ## <a name="access-and-required-permissions"></a>Acceso y permisos necesarios 
 
-Para la experiencia de los empleados, debe tener una suscripción a un plan de Office 365 para la empresa o a un plan de negocio de Microsoft 365 con varios usuarios. 
+Para la experiencia de los empleados, debe tener una suscripción a un plan de Microsoft 365 para la empresa con varios usuarios. 
 
 Para tener permiso de acceso a la puntuación de productividad de Microsoft, debe tener los siguientes roles: 
 
@@ -136,7 +136,7 @@ Los tipos de archivo considerados para la colaboración son Word/Excel/PowerPoin
 
 ![Página trabajar en cualquier lugar.](../../media/psflexibility.png)
 
-La página trabajar en cualquier lugar cuantifica los usuarios (como un porcentaje y un valor absoluto) que usó al menos una aplicación de productividad en dos o más plataformas, que son de escritorio, móviles y Web. Los usuarios obtienen un mayor nivel de puntuación para usar más aplicaciones y plataformas. Las aplicaciones que se consideran son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. La base de la información está habilitada para los usuarios de Office 365 ProPlus, Exchange, Yammer, Skype o Teams.
+La página trabajar en cualquier lugar cuantifica los usuarios (como un porcentaje y un valor absoluto) que usó al menos una aplicación de productividad en dos o más plataformas, que son de escritorio, móviles y Web. Los usuarios obtienen un mayor nivel de puntuación para usar más aplicaciones y plataformas. Las aplicaciones que se consideran son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. La base de la información está habilitada para los usuarios de Microsoft 365 apps for Enterprise, Exchange, Yammer, Skype o Teams.
 
 1. **Por qué es importante se** proporciona un resumen de la investigación que vincula el uso de varias plataformas a una mayor productividad. **Lea la investigación de Forrester** va a un artículo de investigación que proporciona más contexto sobre cómo el trabajo en todo es propicio a la mayor productividad.
 1. Admitir la comprensión del **correo electrónico en cualquier lugar** cuantifica el número de usuarios de la organización mediante Outlook en todas las plataformas dentro de la base de usuarios activos en Outlook.

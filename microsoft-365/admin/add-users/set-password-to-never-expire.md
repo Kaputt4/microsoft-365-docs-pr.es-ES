@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 2645e6d5f307a5e5ce8fab5f3a848bf4a539b031
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540896"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624039"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -40,7 +40,7 @@ ms.locfileid: "43540896"
 
 Un administrador global de un servicio de nube de Microsoft puede usar [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para establecer que las contraseñas no expiren para determinados usuarios. También puede usar cmdlets de [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) para quitar la configuración nunca expirada o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
 
-Esta guía se aplica a otros proveedores, como Intune y Office 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de la contraseña es la única parte de la Directiva que se puede cambiar.
+Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de la contraseña es la única parte de la Directiva que se puede cambiar.
 
 Para obtener más información acerca de Azure AD PowerShell para Graph, consulte [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 

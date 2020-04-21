@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: En este tema se explica la diferencia entre correo electrónico no deseado y correo electrónico masivo, así como los controles relacionados en Office 365.
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230961"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630838"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 
-Office 365 clientes con buzones en Exchange online o independiente Exchange Online Protection (EOP) los clientes sin buzones de Exchange Online preguntan a veces: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
+Microsoft 365 clientes con buzones en Exchange online o independientes de Exchange Online Protection (EOP) los clientes sin buzones de Exchange Online preguntan a veces: "¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?" En este tema se explica la diferencia y se describen los controles que están disponibles en EOP.
 
 - El **correo no deseado** es correo no deseado, que son mensajes no solicitados y universales no deseados (cuando se identifica correctamente). De forma predeterminada, EOP rechaza el correo no deseado en función de la reputación del servidor de correo electrónico de origen. Si un mensaje pasa la inspección IP de origen, se envía al filtrado de correo no deseado. Si el mensaje se clasifica como correo no deseado por el filtrado de correo no deseado, el mensaje se entrega (de forma predeterminada) a los destinatarios correspondientes y se mueve a la carpeta de correo electrónico no deseado.
 
@@ -41,7 +41,7 @@ Office 365 clientes con buzones en Exchange online o independiente Exchange Onli
 
 Debido a la reacción mixta del correo electrónico masivo, no hay ninguna orientación universal que se aplique a todas las organizaciones.
 
-Las directivas contra correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar el correo electrónico masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
+Las directivas contra el correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar correo masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
 
 - [Configure directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 

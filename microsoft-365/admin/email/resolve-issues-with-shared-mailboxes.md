@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
-ms.openlocfilehash: 138bcee155652e84ab6ee16cf6a9acab310edde9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210521"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628752"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
@@ -36,7 +36,7 @@ Si ve mensajes de error al crear o usar un buzón compartido, Pruebe estas soluc
 
 Si ve el mensaje de error, la dirección del proxy **"SMTP: <nombre\>del buzón compartido" ya está en uso por las direcciones de proxy o\<legacyExchangeDN de "nombre>". Elija otra dirección de proxy**, significa que está intentando dar al buzón compartido un nombre que ya está en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Puede realizar esto de dos maneras:
 
-  - Use Windows PowerShell. Consulte esta publicación del blog para obtener instrucciones: [Crear buzones compartidos con el mismo Alias en diferentes dominios en Office 365](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Use Windows PowerShell. Vea esta entrada de blog para obtener instrucciones: [crear buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
   - Asigne al segundo buzón compartido un nombre distinto del inicio para evitar el error. A continuación, en el centro de administración, cambie el nombre del buzón compartido por el que desee.
 
@@ -46,7 +46,7 @@ Si ha creado un buzón compartido y, a continuación, intenta enviarle un mensaj
 
 **No se pudo enviar este mensaje. No tiene permiso para enviar el mensaje en nombre del usuario especificado.**
 
-Este mensaje aparece cuando Office 365 experimenta un problema de latencia de replicación. Debe desaparecer en una hora o por lo tanto, cuando la información sobre su nuevo buzón compartido (o usuario agregado) se replique en todos nuestros centros de datos. Espere una hora y vuelva a intentar enviar un mensaje.
+Este mensaje aparece cuando Microsoft 365 experimenta un problema de latencia de replicación. Debe desaparecer en una hora o por lo tanto, cuando la información sobre su nuevo buzón compartido (o usuario agregado) se replique en todos nuestros centros de datos. Espere una hora y vuelva a intentar enviar un mensaje.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

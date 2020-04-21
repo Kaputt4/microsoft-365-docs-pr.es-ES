@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de Business Analytics.
-ms.openlocfilehash: 4d89594812486d06629d614ab0c59fba09dcdad8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627817"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -47,30 +47,30 @@ Además, los usuarios individuales en su organización pueden registrarse en Pow
 
 Hay tres posibles situaciones para los usuarios de su organización:
   
-### <a name="scenario-1-your-organization-already-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-office-365-account"></a>Situación 1: La organización ya tiene un entorno existente de Office 365 y el usuario que se registra en Power BI ya tiene una cuenta de Office 365.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-an-microsoft-365-account"></a>Escenario 1: su organización ya tiene un entorno de Microsoft 365 existente y el inicio de sesión de usuario para Power BI ya tiene una cuenta de Microsoft 365.
 
 En este caso, si un usuario ya tiene una cuenta profesional o educativa en el inquilino (por ejemplo, contoso.com) pero aún no tiene Power BI, Microsoft simplemente activa el plan para dicha cuenta y se notificará automáticamente al usuario cómo usar el servicio Power BI.
   
-### <a name="scenario-2-your-organization-has-an-existing-office-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-office-365-account"></a>Situación 2: La organización tiene un entorno existente de Office 365 y el usuario que se registra en Power BI no tiene una cuenta de Office 365.
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-microsoft-365-account"></a>Escenario 2: su organización tiene un entorno de Microsoft 365 existente y el usuario que se registra en Power BI no tiene una cuenta de Microsoft 365.
 
-En este caso, el usuario tiene una dirección de correo electrónico del dominio de la organización (por ejemplo, contoso.com) pero todavía no tiene una cuenta de Office 365. En este caso, el usuario puede registrarse en Power BI y se le asignará automáticamente una cuenta. Esto permite al usuario acceder al servicio de Power BI. Por ejemplo, si una empleada llamada Natalia utiliza su dirección de correo profesional (por ejemplo, Natalia@contoso.com ) para registrarse, Microsoft agregará automáticamente a Natalia como un usuario del entorno de Office 365 de Contoso y activará Power BI para esa cuenta.
+En este escenario, el usuario tiene una dirección de correo electrónico en el dominio de la organización (por ejemplo, contoso.com), pero todavía no tiene una cuenta de Microsoft 365. En este caso, el usuario puede registrarse en Power BI y se le asignará automáticamente una cuenta. Esto permite al usuario acceder al servicio de Power BI. Por ejemplo, si un empleado con el nombre Nancy usa su dirección de correo electrónico de trabajo (por ejemplo, Nancy@contoso.com) para registrarse, Microsoft agregará automáticamente Nancy como un usuario en el entorno Microsoft 365 de Contoso y activará Power BI para esa cuenta.
   
-### <a name="scenario-3-your-organization-does-not-have-an-office-365-environment-connected-to-your-email-domain"></a>Situación 3: La organización no tiene un entorno de Office 365 conectado a su dominio de correo electrónico.
+### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Escenario 3: su organización no tiene un entorno de Microsoft 365 conectado a su dominio de correo electrónico.
 
 La organización no necesita tomar acciones administrativas para aprovechar las ventajas de Power BI.
   
 > [!IMPORTANT]
-> Si su organización tiene varios dominios de correo electrónico y prefiere que todas las extensiones de direcciones de correo electrónico estén en el mismo inquilino, antes de que los usuarios creen el inquilino principal, agregue todos los dominios de direcciones de correo electrónico a ese inquilino antes de que los usuarios creen el inquilino principal. No hay ningún mecanismo automatizado para mover a los usuarios entre espacios empresariales después de haberlos creado. Para obtener más información sobre este proceso, vea [si tengo varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan los usuarios?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) más adelante en este artículo y [Agregar un dominio a Office 365](../setup/add-domain.md) online. 
+> Si su organización tiene varios dominios de correo electrónico y prefiere que todas las extensiones de direcciones de correo electrónico estén en el mismo inquilino, antes de que los usuarios creen el inquilino principal, agregue todos los dominios de direcciones de correo electrónico a ese inquilino antes de que los usuarios creen el inquilino principal. No hay ningún mecanismo automatizado para mover a los usuarios entre espacios empresariales después de haberlos creado. Para obtener más información sobre este proceso, vea [si tengo varios dominios, ¿puedo controlar el inquilino al que se agregan los usuarios?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) más adelante en este artículo y [Agregar un dominio a Office 365](../setup/add-domain.md) online. 
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>¿Cómo cambio la forma en la que administro las identidades de los usuarios en mi organización?
 
-Si la organización ya tiene un entorno existente de Office 365 y todos los usuarios de su organización tienen cuentas de Office 365, la administración de identidades no cambiará.
+Si su organización ya tiene un entorno de Microsoft 365 existente y todos los usuarios de la organización tienen cuentas de Microsoft 365, la administración de identidades no cambiará.
   
-Si su organización ya tiene un entorno existente de Office 365 pero no todos los usuarios de su organización tienen cuentas de Office 365, crearemos un usuario en el inquilino y asignaremos licencias según la cuenta profesional o educativa del usuario. Esto significa que el número de usuarios que administra en un tiempo en particular crecerá a medida que los usuarios de su organización se registren en el servicio.
+Si su organización ya tiene un entorno de Microsoft 365, pero no todos los usuarios de la organización tienen cuentas de Microsoft 365, crearemos un usuario en el espacio empresarial y asignaré licencias en función de la dirección de correo electrónico profesional o educativa del usuario. Esto significa que el número de usuarios que administra en un tiempo en particular crecerá a medida que los usuarios de su organización se registren en el servicio.
   
 Si administra su directorio de forma local y usa Active_Directory_Federation_Services_(AD_FS), Microsoft no agregará usuarios a su inquilino y los usuarios que intenten unirse a su inquilino recibirán un mensaje indicándoles que se pongan en contacto con el administrador de su organización.
   
-Si su organización no tiene un entorno de Office 365 conectado al dominio de correo electrónico, no se realizarán cambios en el modo de administrar identidades. Los usuarios se agregarán a un nuevo directorio de usuario exclusivamente en la nube y tendrá la opción de tener el puesto de administrador de inquilino para administrarlos.
+Si su organización no tiene un entorno de Microsoft 365 conectado a su dominio de correo electrónico, no habrá ningún cambio en la forma en que administra la identidad. Los usuarios se agregarán a un nuevo directorio de usuario exclusivamente en la nube y tendrá la opción de tener el puesto de administrador de inquilino para administrarlos.
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>¿Cuál es el proceso para administrar un inquilino creado por Microsoft para mis usuarios?
 
@@ -102,14 +102,14 @@ Si un inquilino ha sido creado por Microsoft, puede reclamar y administrar dicho
     
 4. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Administrador**.
     
-    ![The Office 365 app launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![Iniciador de aplicaciones con la aplicación de administración resaltada](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lea las instrucciones de la página **convertirse en Administrador** y, después **, seleccione Sí, deseo ser el administrador**.
     
     > [!NOTE]
     >  Si esta opción no aparece, ya hay un administrador en su ubicación. 
   
-## <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si tengo varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan los usuarios?
+## <a name="if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to"></a>Si tengo varios dominios, ¿puedo controlar el inquilino al que se agregan los usuarios?
 
 Si no hace nada, se creará un inquilino para cada dominio y subdominio de correo electrónico de usuario.
   
@@ -118,18 +118,18 @@ Si desea que todos los usuarios estén en el mismo inquilino independientemente 
 - Cree un inquilino de destino con antelación o utilice un inquilino existente y agregue todos los dominios y subdominios existentes que quiera que se consoliden en ese inquilino. A continuación, todos los usuarios con direcciones de correo electrónico que terminen en estos dominios y subdominios se unirán de forma automática al inquilino de destino al registrarse.
     
 > [!IMPORTANT]
-> No hay ningún mecanismo automatizado compatible para mover los usuarios en los inquilinos una vez que se han creado. Para obtener información sobre cómo agregar dominios a un solo inquilino de Office 365, vea [Agregar un dominio a office 365](../setup/add-domain.md). 
+> No hay ningún mecanismo automatizado compatible para mover usuarios de un inquilino a otro una vez que se han creado. Para obtener información sobre cómo agregar dominios a un solo inquilino de Microsoft 365, consulte [Agregar un dominio a Office 365](../setup/add-domain.md). 
   
 > [!IMPORTANT]
 > Para obtener información adicional y orientación sobre la administración de los inquilinos, vea [¿Qué es la administración de Power BI?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization). 
   
-## <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>¿Cómo puedo evitar que los usuarios se unan al inquilino actual de Office 365?
+## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>¿Cómo puedo evitar que los usuarios se unan a mi inquilino existente?
 
-Hay pasos que puede realizar como administrador para evitar que los usuarios se unan al inquilino de Office 365 existente. Si se bloquea esto, se producirá un error en los intentos de inicio de sesión de los usuarios y se les dirigirá para ponerse en contacto con el administrador de su organización. No es necesario que repita este proceso si ya ha deshabilitado la distribución automática de licencias (por ejemplo, Office 365 educación para estudiantes, profesores y personal).
+Hay pasos que puede realizar como administrador para evitar que los usuarios se unan a su inquilino existente. Si se bloquea esto, se producirá un error en los intentos de inicio de sesión de los usuarios y se les dirigirá para ponerse en contacto con el administrador de su organización. No es necesario que repita este proceso si ya ha deshabilitado la distribución automática de licencias (por ejemplo, Office 365 educación para estudiantes, profesores y personal).
   
 Estos pasos requieren el uso de Windows PowerShell. Para empezar a trabajar con Windows PowerShell, consulte la [Guía de introducción a PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814).
   
-Para llevar a cabo los pasos siguientes, debe instalar la última versión de 64 bits del [Azure Active Directory Module para Windows PowerShell](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
+Para llevar a cabo los pasos siguientes, debe instalar la última versión de 64 bits del [módulo de PowerShell de Azure Active Directory V2](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
 Una vez seleccionado el vínculo, seleccione **Ejecutar** para ejecutar el paquete del instalador. 
   
@@ -142,7 +142,7 @@ Para habilitar la unión automática al inquilino para nuevos usuarios:  `Set-Ms
 > [!NOTE]
 > Este bloqueo impide que los nuevos usuarios de la organización se inicien sesión en Power BI. Los usuarios que se registran en Power BI antes de deshabilitar las nuevas suscripciones para su organización seguirán conservando sus licencias. Vea [¿Cómo Quito Power BI para los usuarios que ya se han registrado?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) para obtener instrucciones sobre cómo quitar el acceso a Power BI para los usuarios que se hayan registrado previamente en el servicio. 
   
-## <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>¿Cómo puedo permitir que los usuarios se unan a mi inquilino actual de Office 365?
+## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>¿Cómo puedo permitir que los usuarios se unan a mi inquilino existente?
 
 Para permitir que los usuarios se unan a su inquilino, ejecute el comando contrario como se describe en la pregunta anterior:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -209,12 +209,12 @@ Si un usuario se registró en Power BI pero ya no desea que tenga acceso a Power
     
 4. Desactivar la opción de **Microsoft Power BI** .
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ::: moniker-end 
 
 
-## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>¿Cómo puedo saber cuándo se han unido nuevos usuarios a mi inquilino?
+## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>¿Cómo puedo saber cuándo se han unido nuevos usuarios al inquilino?
 
 Los usuarios que ya se unieron al inquilino como parte del programa tienen asignada una única licencia por que puede filtrar en su panel de usuarios activos en el panel de administrador.
   
@@ -226,7 +226,7 @@ Puede experimentar un aumento de solicitudes de recuperación de contraseña. Pa
   
 Puede quitar a un usuario de su espacio empresarial mediante el proceso estándar en el centro de administración. Sin embargo, si el usuario aún tiene una dirección de correo electrónico activa de su organización, podrá unirse de nuevo a menos que lo bloquee.
   
-## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-office-365-tenant"></a>¿Por qué se muestra 1 millón de licencias para Microsoft Power BI en mi inquilino de Office 365?
+## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>¿Por qué se muestran licencias de 1 millón para Microsoft Power BI en mi inquilino?
 
 Como organización cualificada, los usuarios de la organización pueden usar el servicio Microsoft Power BI y estas licencias representan la capacidad disponible para nuevos usuarios de Power BI en el espacio empresarial. Estas licencias no tienen cargo. Si ha elegido permitir que los usuarios se suscriban a Power BI, se les asignará una de estas licencias gratuitas cuando completen el proceso de registro. También puede elegir asignar estas licencias a los usuarios a través del centro de administración.
   

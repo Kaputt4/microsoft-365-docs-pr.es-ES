@@ -1,5 +1,5 @@
 ---
-title: Información general de la administración de Office 365
+title: Introducción al centro de administración
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Obtenga información sobre el centro de administración de 365 de Microsoft: Cómo iniciar sesión, quién es su administrador, y vea una introducción al vídeo sobre el mismo.'
-ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633468"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623969"
 ---
-# <a name="office-365-admin-overview"></a>Información general de la administración de Office 365 
+# <a name="admin-center-overview"></a>Introducción al centro de administración 
 
   
-Al comprar un plan de [empresa de Office 365](https://go.microsoft.com/fwlink/?linkid=856886) o un [plan de 365 para la empresa de](https://www.microsoft.com/microsoft-365/business)Office, le ofrecemos una cuenta especial que tiene permisos de administrador. Esta cuenta se denomina cuenta de administrador.
+Al comprar un [plan de microsoft 365 apps for Business](https://go.microsoft.com/fwlink/?linkid=856886) o un plan de [Microsoft 365 para la empresa](https://www.microsoft.com/microsoft-365/business), le ofrecemos una cuenta especial que tiene permisos de administrador. Esta cuenta se denomina cuenta de administrador.
   
 Con esta cuenta, puede obtener acceso al centro de administración de Microsoft 365 para administrar su empresa: agregar usuarios, administrar la suscripción, restablecer contraseñas y mucho más. ¿Se atreve?
   
@@ -66,6 +66,6 @@ A la hora de buscar a su administrador para restablecer su contraseña, eliminar
     
 - **Pequeñas empresas**: póngase en contacto con el propietario o copropietario de la empresa. A menudo se proporcionan permisos de administrador a los consultores de TI que hacen el trabajo de mantenimiento informático para la empresa. 
     
-De forma predeterminada, la persona que inicia sesión en Office 365 para empresas y compra una suscripción obtiene los permisos de administrador. Esa persona puede asignar permisos de administrador a otras personas para ayudarles a administrar Office 365 para su organización.
+De forma predeterminada, la persona que registra y adquiere una suscripción de Microsoft 365 para empresas obtiene permisos de administrador. Esa persona puede asignar permisos de administrador a otras personas para ayudarles a administrar Microsoft 365 para su organización.
   
 Si no sabe con quién ponerse en contacto en su trabajo o centro educativo para obtener ayuda, intente preguntar a la persona que le proporcionó la cuenta de usuario y la contraseña.

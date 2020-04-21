@@ -1,5 +1,5 @@
 ---
-title: Buscar un asociado o distribuidor de Office 365
+title: Buscar un asociado o distribuidor
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,23 +21,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Obtenga información sobre cómo encontrar un nuevo Partner de Office 365 u obtener información de contacto de un socio con el que ha trabajado anteriormente. '
-ms.openlocfilehash: 86c61b6217a1be6106334cb1378a23d8cbd8c2b8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Obtenga información acerca de cómo encontrar un nuevo Partner de 365 de Microsoft o obtenga información de contacto de un socio con el que trabajó en el pasado. '
+ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628189"
 ---
-# <a name="find-your-office-365-partner-or-reseller"></a>Buscar un asociado o distribuidor de Office 365
+# <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 
-Como administrador, puede trabajar con un partner para comprar, activar y renovar suscripciones de Office 365 a través de un programa de licencias por volumen abierto de Microsoft. 
+Como administrador, puede trabajar con un partner para comprar, activar y renovar suscripciones de Microsoft 365 a través de un programa de licencias por volumen abierto de Microsoft. 
   
  **¿No está seguro de que las Licencias por volumen abiertas le interesen?** Eche un vistazo a la [introducción de los Programas abiertos de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Buscar un partner o un distribuidor
 
-Si está listo para comprar o renovar Office 365 a través de licencias por volumen abiertas o simplemente desea obtener más información sobre cómo trabajar con un partner, elija una de las opciones siguientes. 
+Si está listo para comprar o renovar Microsoft 365 a través de licencias por volumen abierto o simplemente desea más información sobre cómo trabajar con un partner, elija una de las opciones siguientes. 
   
 - [Buscar un Partner con Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

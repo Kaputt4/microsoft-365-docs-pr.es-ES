@@ -1,5 +1,5 @@
 ---
-title: Quitar un antiguo empleado de Office 365
+title: Quitar un antiguo empleado
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,15 +23,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: 'Siga esta lista de comprobación para quitar a un empleado de Office 365 y proteger los datos. '
-ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
+ms.openlocfilehash: 593460c2e49b7136972c084a9927544e6194cb90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353121"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617127"
 ---
-# <a name="remove-a-former-employee-from-office-365"></a>Quitar un antiguo empleado de Office 365
+# <a name="remove-a-former-employee"></a>Quitar un antiguo empleado
   
 ## <a name="sign-out-now"></a>Cerrar la sesión ahora
 
@@ -83,7 +83,7 @@ Para quitar un empleado:
 ::: moniker-end
 
     
-En una hora, o después de dejar la página de Office 365 actual en la que se encuentra, se le pedirá que vuelva a iniciar sesión. (Un token de acceso es válido durante una hora, por lo que la escala de tiempo depende de la cantidad de tiempo que quede en ese token y de si se desplaza desde su página web actual).
+En una hora, o después de dejar la página actual de Microsoft 365 en la que se encuentra, se le pedirá que vuelva a iniciar sesión. (Un token de acceso es válido durante una hora, por lo que la escala de tiempo depende de la cantidad de tiempo que quede en ese token y de si se desplaza desde su página web actual).
   
  **ADVERTENCIA**: Si el usuario se encuentra en Outlook en la Web, navegando por su buzón de correo, es posible que no sea expulsado inmediatamente. En cuanto Seleccione un icono diferente, como OneDrive, o actualice el explorador, se iniciará el cierre de sesión. 
   
@@ -94,7 +94,7 @@ Para obtener más información sobre cuánto se tarda en quitar a un usuario del
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>Información general sobre todos los pasos necesarios para quitar a un empleado y proteger los datos
 <a name="bkmk_now"> </a>
 
-Una pregunta que se plantea a menudo es: "¿qué debo hacer para proteger los datos cuando un empleado abandona la organización?". En este artículo se explica cómo bloquear el acceso a Office 365 y los pasos que debe seguir para proteger sus datos.
+Una pregunta que se plantea a menudo es: "¿qué debo hacer para proteger los datos cuando un empleado abandona la organización?". En este artículo se explica cómo bloquear el acceso a Microsoft 365 y los pasos que debe seguir para proteger los datos.
   
 > [!NOTE]
 > Si es administrador global, puede eliminar el empleado, reenviar su correo electrónico, elegir qué hacer con su contenido de OneDrive con la nueva experiencia guiada. Para obtener más información, consulte [administrador global: eliminar un usuario](remove-former-employee.md). Sin embargo, se recomienda completar todos los pasos adicionales enumerados aquí para asegurarse de que el empleado no tiene acceso a los datos de la compañía. 
@@ -107,10 +107,10 @@ Aquí se incluye información general rápida. Cada paso se explica en detalle e
 |1. [Guardar el contenido del buzón de un antiguo empleado](#save-the-contents-of-a-former-employees-mailbox) <br/> |Esta opción es útil para la persona que se va a ocupar del trabajo del empleado o bien en caso de litigio.  <br/> |
 |2. [Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertir en un buzón compartido](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Esta opción permite mantener activa la dirección de correo electrónico de su antiguo empleado. Si tiene clientes o socios que siguen enviando correos electrónicos a la dirección del antiguo empleado, con esta opción el correo llegará a la persona que ahora se encarga del trabajo.  <br/> |
 |3. [Borrar y bloquear el dispositivo móvil de un antiguo empleado](#wipe-and-block-a-former-employees-mobile-device) <br/> |Quita los datos profesionales del teléfono o de la tableta.  <br/> |
-|4. [Bloquear el acceso de un antiguo empleado a los datos de Office 365](#block-a-former-employees-access-to-office-365-data)<br/> |Así se impide que la persona acceda a su antiguo buzón de Office 365 y a los datos.  <br/><br/> **Sugerencia**: cuando se bloquea el acceso de un usuario, aún se está pagando por su licencia. Tiene que quitar la licencia de la suscripción para dejar de pagar por ella (paso 5).           |
+|4. [bloquear el acceso de un antiguo empleado a los datos de Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Impide que la persona tenga acceso a sus buzones y datos antiguos de Microsoft 365.  <br/><br/> **Sugerencia**: cuando se bloquea el acceso de un usuario, aún se está pagando por su licencia. Tiene que quitar la licencia de la suscripción para dejar de pagar por ella (paso 5).           |
 |5. [Mover el contenido de OneDrive del empleado](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Si solo quita la licencia de un usuario, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  <br/><br/> Antes de eliminar la cuenta, es recomendable mover el contenido de su OneDrive a otra ubicación a la que pueda obtener acceso fácilmente. Después de eliminar la cuenta de un empleado, el contenido de su OneDrive se conserva durante **30** días. Durante ese período de tiempo, puede restaurar la cuenta del usuario y obtener acceso a su contenido de OneDrive. Si restablece la cuenta del usuario, podrá obtener acceso al contenido de OneDrive incluso hasta 30 días después.  <br/> |
 |5a. ¿Qué sucede si la persona ha usado su equipo personal para acceder a OneDrive y SharePoint?  <br/> |Si la persona ha usado un equipo personal en lugar de uno autorizado por la empresa para descargar archivos de OneDrive y SharePoint, no podrá eliminar dichos archivos almacenados.  <br/><br/> Seguirán teniendo acceso a los archivos que se han sincronizado en su equipo.  <br/> |
-|6. [Quitar y eliminar la licencia de Office 365 de un antiguo empleado ](#remove-and-delete-the-office-365-license-from-a-former-employee)<br/> |Cuando quita una licencia, puede asignarla a otra persona. O bien, puede eliminar la licencia para no pagar por ella hasta que contrate a otra persona.  <br/><br/> Al quitar o eliminar una licencia, el correo electrónico, los contactos y el calendario antiguos del usuario se conservan durante **30 días** y, después, se eliminan permanentemente. Si quita o elimina una licencia, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  <br/> |
+|6. [quitar y eliminar la licencia de Microsoft 365 de un antiguo empleado](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Cuando quita una licencia, puede asignarla a otra persona. O bien, puede eliminar la licencia para no pagar por ella hasta que contrate a otra persona.  <br/><br/> Al quitar o eliminar una licencia, el correo electrónico, los contactos y el calendario antiguos del usuario se conservan durante **30 días** y, después, se eliminan permanentemente. Si quita o elimina una licencia, pero no elimina la cuenta, podrá obtener acceso al contenido de OneDrive del usuario incluso hasta 30 días después.  <br/> |
 |7. [Eliminar la cuenta de usuario de un antiguo empleado](#delete-a-former-employees-user-account)<br/> |Esto quita la cuenta del centro de administración. Mantiene todo organizado.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Guardar el contenido del buzón de un antiguo empleado
@@ -159,7 +159,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
  
@@ -175,7 +175,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -191,7 +191,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -213,15 +213,15 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
     
 5. En la página **detalles del dispositivo móvil** , **en dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)de **datos**![y, a continuación, seleccione **bloquear**. 
     
-6. Haga clic en **Guardar**. 
+6. Seleccione **Guardar**. 
     
     **Sugerencia**: asegúrese de quitar o deshabilitar el usuario de su servicio de BlackBerry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario. 
     
-## <a name="block-a-former-employees-access-to-office-365-data"></a>Bloquear el acceso de un antiguo empleado a los datos de Office 365
+## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Impedir el acceso de un antiguo empleado a los datos de Microsoft 365
 <a name="bkmk_block"> </a>
 
  > [!IMPORTANT] 
- > El bloqueo de una cuenta puede tardar hasta 24 horas en surtir efecto. Si necesita evitar inmediatamente el acceso de inicio de sesión de un usuario, deberá [restablecer su contraseña](reset-passwords.md) y, a continuación, iniciar un evento único que cerrará sus sesiones de Office 365 en todos los dispositivos. Consulte [Cerrar la sesión ahora](#sign-out-now)
+ > El bloqueo de una cuenta puede tardar hasta 24 horas en surtir efecto. Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, debe [restablecer su contraseña](reset-passwords.md) y, a continuación, iniciar un evento único que las cerrará de las sesiones de Microsoft 365 en todos los dispositivos. Consulte [Cerrar la sesión ahora](#sign-out-now)
  
 
 ::: moniker range="o365-worldwide"
@@ -260,7 +260,7 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquear el acceso de un antiguo empleado al correo electrónico (Exchange Online)
 <a name="bkmk_block_email"> </a>
 
-Si tiene correo electrónico de Office 365 como parte de su suscripción a Office 365, deberá iniciar sesión en el Centro de administración de Exchange para seguir estos pasos con el fin de bloquear el acceso del antiguo empleado a su correo electrónico.
+Si tiene correo electrónico como parte de su suscripción a Microsoft 365, debe iniciar sesión en el centro de administración de Exchange para seguir estos pasos para impedir que el antiguo empleado tenga acceso a su correo electrónico.
   
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
@@ -271,12 +271,12 @@ Si tiene correo electrónico de Office 365 como parte de su suscripción a Offic
     
 4. En **conectividad de correo**, seleccione **deshabilitar** y responda **sí** cuando se le pida. 
     
-## <a name="remove-and-delete-the-office-365-license-from-a-former-employee"></a>Quitar y eliminar la licencia de Office 365 de un antiguo empleado
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Quitar y eliminar la licencia de Microsoft 365 de un antiguo empleado
 <a name="bkmk_remove"> </a>
 
-Para no seguir pagando por una licencia después de que alguien abandone la organización, tiene que quitar su licencia de Office 365 y eliminarla de su suscripción. Si decide no eliminar la licencia de la suscripción, puede asignarla a otro usuario.
+Por lo tanto, no sigue pagando una licencia después de que alguien abandone la organización, debe quitar su licencia de 365 de Microsoft y, a continuación, eliminarla de la suscripción. Si decide no eliminar la licencia de la suscripción, puede asignarla a otro usuario.
   
-Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Después de 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan permanentemente de Office 365 y no se pueden recuperar. 
+Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Transcurridos los 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan de forma permanente de Microsoft 365 y no se pueden recuperar. 
 
 ::: moniker range="o365-worldwide"
 
@@ -325,13 +325,13 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 ::: moniker-end
     
@@ -339,7 +339,7 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 
 Al [Agregar](add-users.md) a otra persona a su empresa, se le pedirá que compre una licencia al mismo tiempo, con un solo paso.
     
-Para obtener más información sobre cómo administrar licencias de usuario para Office 365 para empresas, vea [Asignar licencias a usuarios en Office 365 para empresas](../manage/assign-licenses-to-users.md) y [Quitar licencias de usuarios en Office 365 para empresas](../manage/remove-licenses-from-users.md).
+Para obtener más información acerca de la administración de licencias de usuario para Microsoft 365 para empresas, consulte [asignar licencias a usuarios en microsoft 365 para](../manage/assign-licenses-to-users.md)empresas y [quitar licencias de usuarios en Microsoft 365 para empresas](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Cómo afectan las cuentas de empleados eliminadas a Skype Empresarial
 <a name="bkmk_remove"> </a>
@@ -392,7 +392,7 @@ Al eliminar un usuario, la cuenta se vuelve inactiva durante aproximadamente 30 
   
 ### <a name="does-your-organization-use-active-directory"></a>¿Su organización utiliza Active Directory?
 
-Si en la organización las cuentas de usuario se sincronizan con Office 365 desde un entorno local de Active Directory, asegúrese de suprimir y restaurar esas cuentas en el servicio local de Active Directory. No puede suprimirlas ni restaurarlas en Office 365.
+Si su organización sincroniza las cuentas de usuario con Microsoft 365 desde un entorno local de Active Directory, debe eliminar y restaurar esas cuentas de usuario en el servicio local de Active Directory. No puede suprimirlas ni restaurarlas en Office 365.
   
 Para obtener instrucciones, consulte este artículo: [eliminar una cuenta de usuario](https://go.microsoft.com/fwlink/?linkid=841808).
   

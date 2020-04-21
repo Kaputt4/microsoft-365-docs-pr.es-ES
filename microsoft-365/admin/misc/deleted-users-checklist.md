@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Siga esta lista de comprobación para eliminar la cuenta de Office 365 de un usuario.
-ms.openlocfilehash: 039cf832d1af8f93ed46a13f4a549aad3f11ef63
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Siga esta lista de comprobación para eliminar la cuenta de Microsoft 365 de un usuario.
+ms.openlocfilehash: 822662e2e7900640663be8b637f6dc04984b79ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361431"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627877"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Ayuda rápida: lista de comprobación de usuarios eliminados
 
 Por lo tanto, ha decidido eliminar un usuario de su organización. Por ejemplo, puede eliminar a un usuario una vez que esa persona abandone la organización. Hay algunas cosas que debe hacer antes y después de eliminar el usuario. Esta lista de comprobación rápida le ayuda con los pasos.
   
-## <a name="remove-the-office-365-license-from-the-user"></a>Quitar la licencia de Office 365 del usuario
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>Quitar la licencia de Microsoft 365 del usuario
 
 Puede quitar una licencia de un usuario si busca el usuario en la Página principal o en la página **usuarios activos** y, a continuación, los selecciona. En la pestaña **licencias y aplicaciones** , desactive la casilla de la licencia que desea quitar del usuario. [Lea el artículo completo](../manage/remove-licenses-from-users.md).
   
 ## <a name="block-sign-in"></a>Bloquear el inicio de sesión
 
-Puede bloquear al usuario para que no pueda iniciar sesión en su organización de Office 365. Puede buscar el usuario en la Página principal o en la página **usuarios activos** y, a continuación, seleccionarlos. En la parte superior del panel, en el nombre del usuario, seleccione el icono de **bloquear este usuario** y, a continuación, active la casilla de verificación impedir que el **usuario inicie sesión** . [Lea el artículo completo](../add-users/assign-admin-roles.md).
+Puede bloquear al usuario para que no pueda iniciar sesión en su organización. Puede buscar el usuario en la Página principal o en la página **usuarios activos** y, a continuación, seleccionarlos. En la parte superior del panel, en el nombre del usuario, seleccione el icono de **bloquear este usuario** y, a continuación, active la casilla de verificación impedir que el **usuario inicie sesión** . [Lea el artículo completo](../add-users/assign-admin-roles.md).
   
 ## <a name="get-their-data"></a>Obtener sus datos
 
@@ -49,7 +49,7 @@ Puede eliminar el usuario si busca el usuario en la Página principal o en la p�
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>Qué hacer con la licencia sin asignar
 
-Si tiene un nuevo empleado o una persona que se ha unido a su organización, puede asignarles esta licencia para que puedan usar Office 365. Puede buscar el usuario en la Página principal o en la página **usuarios activos** y, a continuación, seleccionarlos. En la pestaña **licencias y aplicaciones** , active la casilla de la licencia que desea agregar al nuevo usuario. [Lea el artículo completo](../manage/assign-licenses-to-users.md).
+Si tiene un nuevo empleado o una persona que se ha unido a su organización, puede asignarles esta licencia para que puedan usar Microsoft 365. Puede buscar el usuario en la Página principal o en la página **usuarios activos** y, a continuación, seleccionarlos. En la pestaña **licencias y aplicaciones** , active la casilla de la licencia que desea agregar al nuevo usuario. [Lea el artículo completo](../manage/assign-licenses-to-users.md).
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Quitar licencia para que no tenga que pagar por ti
 

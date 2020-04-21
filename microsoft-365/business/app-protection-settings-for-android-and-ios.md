@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 0adb103ac3bef72e340c1f5daf54a6b8a184d85c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627442"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
@@ -37,7 +37,7 @@ ms.locfileid: "42894288"
 
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
   
@@ -75,7 +75,7 @@ ms.locfileid: "42894288"
 
 En las siguientes tablas se proporciona información detallada sobre la configuración disponible para proteger los archivos de trabajo en los dispositivos y la configuración que controla la forma en que los usuarios obtienen acceso a los archivos de Office desde sus dispositivos móviles.
   
- Para obtener más información, consulte [Cómo se asignan las características de protección de Microsoft 365 Business a la configuración de Intune](map-protection-features-to-intune-settings.md). 
+ Para obtener más información, vea [cómo se asignan las características de protección de Microsoft 365 empresa Premium a la configuración de Intune](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Opciones de configuración que protegen los archivos de trabajo
 

@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Los perfiles de AutoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones de configuración predeterminadas y opcionales, como omitir la instalación de Cortana.
-ms.openlocfilehash: 1cc8a3171bbc4a1e5cb531b9364c7791586fc339
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593341"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627422"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
@@ -46,9 +46,9 @@ Puede usar los perfiles de AutoPilot para controlar cómo se instala Windows en 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Omitir Cortana, OneDrive y registro de OEM  <br/> |Omite la instalación de aplicaciones para consumidores, como Cortana y OneDrive personal. El usuario del dispositivo puede instalarlos más adelante, siempre que el usuario sea un administrador local en el dispositivo. Se omite el registro original del fabricante porque el dispositivo se administrará con Microsoft 365 Business.  <br/> |
-|Experiencia de inicio de sesión con la marca de la compañía  <br/> |Si su compañía tiene una [página Agregar la personalización de marca de la compañía a Office 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), el usuario del dispositivo obtendrá esa experiencia al iniciar sesión.  <br/> |
-|Inscripción automática MDM con cuentas de AAD configuradas.  <br/> |La identidad de usuario será administrada por Azure Active Directory y los usuarios iniciarán sesión en Windows y Office 365 con sus credenciales de empresa de Microsoft 365.  <br/> |
+|Omitir Cortana, OneDrive y registro de OEM  <br/> |Omite la instalación de aplicaciones para consumidores, como Cortana y OneDrive personal. El usuario del dispositivo puede instalarlos más adelante, siempre que el usuario sea un administrador local en el dispositivo. Se omite el registro original del fabricante porque el dispositivo se administrará con Microsoft 365 Business Premium.  <br/> |
+|Experiencia de inicio de sesión con la marca de la compañía  <br/> |Si su compañía tiene una [Página de inicio de sesión agregar la personalización de marca de la compañía a Microsoft 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), el usuario del dispositivo obtendrá esa experiencia al iniciar sesión.  <br/> |
+|Inscripción automática MDM con cuentas de AAD configuradas.  <br/> |La identidad de usuario será administrada por Azure Active Directory y los usuarios iniciarán sesión en Windows y Microsoft 365 con sus credenciales de Microsoft 365 Business Premium.  <br/> |
    
  **Configuración opcional:**
   

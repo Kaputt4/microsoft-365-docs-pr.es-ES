@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe de activación de Office para saber qué usuarios han activado su suscripción de Office e identificar a los usuarios que puedan necesitar ayuda adicional.
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046980"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621227"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Informes de Microsoft 365 en el centro de administración: activaciones de Microsoft Office
 
-El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md).
+El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
-El informe de activación de Office le proporciona una vista de los usuarios que han activado su suscripción de Office en al menos un dispositivo. Proporciona un desglose de las activaciones de suscripción de Office 365 ProPlus, Project y Visio Pro para Office 365, así como el desglose de las activaciones en los equipos de escritorio y dispositivos. Este informe puede ser útil para ayudarle a identificar los usuarios que quizás necesiten ayuda y soporte técnico adicional para activar su suscripción de Office.
+El informe de activación de Office le proporciona una vista de los usuarios que han activado su suscripción de Office en al menos un dispositivo. Proporciona un desglose de las activaciones de suscripción de las aplicaciones de Microsoft 365 para empresas, Project y Visio Pro para Office 365, así como el desglose de las activaciones en equipos de escritorio y dispositivos. Este informe puede ser útil para ayudarle a identificar los usuarios que quizás necesiten ayuda y soporte técnico adicional para activar su suscripción de Office.
   
 > [!NOTE]
 > Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  

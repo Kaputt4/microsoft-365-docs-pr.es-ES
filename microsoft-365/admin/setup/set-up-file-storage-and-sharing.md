@@ -1,5 +1,5 @@
 ---
-title: Configurar el almacenamiento y el uso compartido de archivos de Office 365
+title: Configurar el almacenamiento y el uso compartido de archivos
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,24 +27,24 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: 6494207518f919a3d984be7e7932740d82e9ea11
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209741"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627563"
 ---
-# <a name="set-up-office-365-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos de Office 365
+# <a name="set-up-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos
 
 Una de las mejores formas de configurar el almacenamiento y el uso compartido de archivos para su empresa es usar OneDrive y un sitio de grupo juntos. Esto es ideal si tiene una pequeña empresa con pocos empleados.
 
-Vea un breve vídeo sobre dónde almacenar archivos en Office 365.<br><br>
+Vea un breve vídeo sobre dónde almacenar archivos en Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="where-you-can-store-documents-in-office-365"></a>Dónde puede almacenar documentos en Office 365
+## <a name="where-you-can-store-documents-in-microsoft-365"></a>Dónde puede almacenar documentos en Microsoft 365
 
 - OneDrive está diseñado para uso individual, con el uso compartido de archivos de forma ocasional. 
 
@@ -52,7 +52,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 Los sitios de grupo y de OneDrive proporcionan acceso desde cualquier lugar para usted y para sus empleados.
   
-![Un diagrama que muestra cómo los productos de Office 365 pueden usar OneDrive o los sitios de grupo](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Un diagrama que muestra cómo los productos de Microsoft 365 pueden usar OneDrive o los sitios de grupo](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicación al usar OneDrive y los sitios de grupo juntos:
   
@@ -60,7 +60,7 @@ Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicaci
 |:-----|:-----|:-----|
 |**Ubicación de almacenamiento** <br/> |**Para qué sirve** <br/> |**Qué almacenar aquí** <br/> |
 |**OneDrive** <br/> |Almacenar contenido en OneDrive es similar a almacenar archivos en el equipo; nadie más puede acceder fácilmente a ellos.  <br/> Para obtener más información, vea [¿Qué es OneDrive para la empresa?](https://support.office.com/article/187f90af-056f-47c0-9656-cc0ddca7fdc2.aspx) <br/> |Archivos empresariales en los que otros miembros del equipo no necesitan colaborar ni obtener acceso de forma habitual.  <br/> |
-|**Sitios de grupo de SharePoint** <br/> |Quita. Cuando se crea un grupo de Office 365 (por ejemplo, en el centro de administración de Microsoft 365, en Outlook o mediante la creación de un equipo en Microsoft Teams), se crea un sitio de grupo de SharePoint para ese grupo. Del mismo modo, cuando se crea un nuevo sitio de grupo de SharePoint desde la Página principal de SharePoint o desde el nuevo centro de administración de SharePoint, también se crea un grupo de Office 365. Para obtener más información, vea [¿Qué es un sitio de grupo de SharePoint? y cómo](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) [crear un sitio de grupo en SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Archivos que tienen la propiedad compartida. Le recomendamos que separe los sitios de grupo por cada unidad de trabajo de su organización. Por ejemplo, para mantener el personal y los documentos financieros en privado para un equipo pequeño, cree un sitio de grupo independiente.  <br/> |
+|**Sitios de grupo de SharePoint** <br/> |Quita. Cuando se crea un grupo de 365 de Microsoft (por ejemplo, en el centro de administración de Microsoft 365, en Outlook o al crear un equipo en Microsoft Teams), se crea un sitio de grupo de SharePoint para ese grupo. Del mismo modo, al crear un nuevo sitio de grupo de SharePoint desde la Página principal de SharePoint o desde el nuevo centro de administración de SharePoint, también se crea un grupo de Microsoft 365. Para obtener más información, vea [¿Qué es un sitio de grupo de SharePoint? y cómo](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) [crear un sitio de grupo en SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Archivos que tienen la propiedad compartida. Le recomendamos que separe los sitios de grupo por cada unidad de trabajo de su organización. Por ejemplo, para mantener el personal y los documentos financieros en privado para un equipo pequeño, cree un sitio de grupo independiente.  <br/> |
 
 > [!NOTE]
 > SharePoint también tiene otros tipos de sitios que puede usar para su empresa. Puede usar [sitios de comunicación](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) en la intranet para publicar información para una amplia audiencia. Y puede usar [sitios de concentradores](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) para conectar los sitios de la intranet.
@@ -69,13 +69,13 @@ Estas son algunas recomendaciones sobre lo que se debe almacenar en cada ubicaci
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>Los miembros del equipo pueden almacenar sus propios archivos en OneDrive
 
-Cada persona de su empresa que tenga una licencia de Office 365 asignada (y SharePoint Online seleccionada) obtiene almacenamiento en la nube de OneDrive. Pueden almacenar archivos relacionados con la empresa para obtener acceso desde cualquier dispositivo y solo están disponibles para ese usuario. Por ejemplo, podrían almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vayan a realizar.
+Cada persona de su empresa que tenga una licencia de Microsoft 365 asignada (y SharePoint Online seleccionada) obtiene almacenamiento en la nube de OneDrive. Pueden almacenar archivos relacionados con la empresa para obtener acceso desde cualquier dispositivo y solo están disponibles para ese usuario. Por ejemplo, podrían almacenar un proyecto de propuesta, sus notas de reuniones o el texto de una presentación que vayan a realizar.
   
 Los empleados también pueden compartir archivos y carpetas de OneDrive. Si un empleado está ausente o abandona la compañía, otros usuarios pueden tener acceso a los archivos compartidos almacenados en OneDrive.
   
 Esta es la forma en que cada persona de su equipo puede configurar OneDrive y compartir archivos.
 
-1. Vaya al <a href="https://portal.office.com/ " target="_blank">portal de Office 365</a>e inicie sesión con su nombre de usuario y contraseña.
+1. Vaya al <a href="https://portal.office.com/ " target="_blank">portal de 365 de Microsoft</a>y inicie sesión con su nombre de usuario y contraseña.
 
 2. En el iniciador de aplicaciones, seleccione **OneDrive**.
 
@@ -107,7 +107,7 @@ Estos son los pasos para agregar archivos:
   
 1. En la Página principal del sitio de grupo, elija **documentos** en el menú de navegación de la parte izquierda. Esto le llevará a la **biblioteca de documentos**.
   
-2. Mientras está conectado a Office 365, abra el **Explorador de archivos** de Windows desde la barra de tareas o desde otra ubicación. Busque los archivos que quiera subir al sitio de grupo.
+2. Mientras estás conectado a Microsoft 365, abre el **Explorador de archivos** de Windows desde la barra de tareas o desde otra ubicación. Busque los archivos que quiera subir al sitio de grupo.
 
 3. Seleccione los archivos que desea cargar en el sitio de grupo y, a continuación, arrástrelos a la **biblioteca de documentos**.
   
@@ -166,7 +166,7 @@ Estas son algunas sugerencias para obtener el máximo provecho de OneDrive o de 
 
 Al almacenar un archivo en OneDrive, solo es accesible para usted, a menos que lo comparta con otros usuarios. Al compartir archivos, puede optar por crear un vínculo que se pueda reenviar o compartir solo con personas específicas. También puede crear carpetas independientes en OneDrive para diferentes fines, como fines públicos, personales o para proyectos individuales. Cada carpeta se puede compartir con otro usuario, con un grupo o con nadie.
   
-Para obtener más información sobre el uso compartido, vea también [compartir archivos y carpetas con Office 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
+Para obtener más información sobre el uso compartido, vea también [compartir archivos y carpetas con Microsoft 365](https://support.office.com/article/72f26d6c-bf9e-432c-8b96-e3c2437f5b65.aspx).
   
 ### <a name="track-how-much-space-you-have-left"></a>Realizar un seguimiento de la cantidad de espacio restante
 
@@ -178,7 +178,7 @@ Aunque puede cargar casi todos los tipos de archivos, algunos nombres de archivo
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Habilitación o deshabilitación de servicios de almacenamiento de terceros
 
-Puede habilitar el almacenamiento de terceros para los usuarios en Office 365 para que puedan almacenar y compartir documentos con servicios como Dropbox, además de OneDrive y sitios de grupo. Esta puede ser una excelente manera de proporcionar servicios que puede que sus usuarios ya usen o que prefieran usar para proyectos empresariales. Si no desea que los usuarios de su organización usen Office para abrir archivos en un servicio de terceros, siga estos pasos para desactivarlo.
+Puede habilitar el almacenamiento de terceros para los usuarios en Microsoft 365 para que puedan almacenar y compartir documentos con servicios como Dropbox, además de OneDrive y sitios de grupo. Esta puede ser una excelente manera de proporcionar servicios que puede que sus usuarios ya usen o que prefieran usar para proyectos empresariales. Si no desea que los usuarios de su organización usen Office para abrir archivos en un servicio de terceros, siga estos pasos para desactivarlo.
   
 > [!IMPORTANT]
 > El almacenamiento de terceros está habilitado de forma predeterminada, por lo que debe realizar estos pasos inmediatamente si no desea que esté disponible para los usuarios.
@@ -191,14 +191,14 @@ Puede habilitar el almacenamiento de terceros para los usuarios en Office 365 pa
 
 4. Active o desactive la casilla para activar o desactivar el almacenamiento de terceros y, a continuación, seleccione **Guardar cambios**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos](customize-team-site.md). En este tutorial paso a paso se explica cómo puede aprovechar una mayor capacidad de almacenamiento y las características de colaboración. 
 
 - **Configure las aplicaciones de Office en tabletas y teléfonos**. Debe hacer esto para poder **Editar** los archivos que se almacenan en OneDrive y en los sitios de grupo desde su tableta o teléfono. Si no instala las aplicaciones de Office para su tableta o teléfono, podrá ver los archivos pero no editarlos.
 
-  - [Instalar y configurar Office en un dispositivo Android con Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Instalar y configurar Office en un dispositivo Android con Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
 
-  - [Instalar y configurar Office en un iPhone o iPad con Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Instalar y configurar Office en un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Configurar Office en Windows Phone con Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurar Office en Windows Phone con Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)

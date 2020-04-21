@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: 8e9e4b1ae0235886a9dbb5b39ad4c0f78c27b53f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629112"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -39,7 +39,7 @@ Antes [de crear un buzón de correo compartido](create-a-shared-mailbox.md), est
 
 - **Permisos de usuario:** Debe conceder a los usuarios permisos (pertenencia) para usar el buzón compartido. Solo las personas de dentro de su organización pueden usar un buzón compartido.
 
-- **Usuarios externos:** No puede conceder acceso a su buzón compartido a personas ajenas a la empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, consulte [Crear un grupo de Office 365 en el centro de administración](../create-groups/create-groups.md).
+- **Usuarios externos:** No puede conceder acceso a su buzón compartido a personas ajenas a la empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, vea [Create a Microsoft 365 Group in the admin Center](../create-groups/create-groups.md).
 
 -  **Usar con Outlook:** Además de usar Outlook en la web desde el explorador para acceder a los buzones de correo compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Agregar un buzón compartido a Outlook Mobile</a>. Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).  
 
@@ -49,13 +49,13 @@ Antes [de crear un buzón de correo compartido](create-a-shared-mailbox.md), est
 
 - **Roles de administrador:** Los usuarios con roles de administrador global o de administrador de Exchange pueden crear buzones compartidos.
 
-- **Requisitos de suscripción:** Para crear un buzón compartido, debe suscribirse a un plan de Office 365 para empresas que incluya correo electrónico (el servicio de Exchange Online). La suscripción de Office 365 empresa no incluye correo electrónico; Office 365 empresa Premium.
+- **Requisitos de suscripción:** Para crear un buzón compartido, necesita suscribirse a un plan de 365 para la empresa de Microsoft que incluya correo electrónico (el servicio de Exchange Online). La suscripción a Microsoft 365 apps for Business no incluye correo electrónico; Microsoft 365 Business Standard.
 
 - **Iniciar sesión:** Un buzón compartido no está diseñado para el inicio de sesión directo por parte de su cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión para la cuenta de buzón de correo compartido y mantenerla bloqueada.
 
-- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que tienen acceso simultáneo a un buzón compartido, es posible que no se conecten de forma intermitente a este buzón. En este caso, puede considerar la posibilidad de reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo de Office 365 o una carpeta pública.
+- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que tienen acceso simultáneo a un buzón compartido, es posible que no se conecten de forma intermitente a este buzón. En este caso, puede considerar la posibilidad de reducir el número de usuarios o usar una carga de trabajo distinta, como un grupo de Microsoft 365 o una carpeta pública de Microsoft.
 
-- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única manera de evitar este problema es crear un grupo de Office 365 en lugar de un buzón compartido. Un grupo de Outlook es similar a un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información sobre los grupos, vea [Obtener más información sobre los grupos](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única forma de evitar esto es crear un grupo de 365 de Microsoft en lugar de un buzón compartido. Un grupo de Outlook es como un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea más [información acerca de los grupos](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

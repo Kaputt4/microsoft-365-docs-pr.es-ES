@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Determine si el inquilino de Office 365 y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: a3005d02522d0a2b22b1ca337d8f49ce7fa20fb3
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
+ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209753"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628237"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
-Implementación centralizada es la forma recomendada y con más funciones para que los clientes implementen complementos de Office para los usuarios y grupos de su organización de Office 365. Si es administrador, use esta guía para determinar si el inquilino y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
+La implementación centralizada es la forma recomendada y con más características para la mayoría de los clientes de implementar complementos de Office para los usuarios y grupos de su organización. Si es administrador, use esta guía para determinar si el inquilino y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
 La implementación centralizada es compatible con Windows, Mac, iOS, Android y aplicaciones de Office en línea.
-Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
+Un complemento puede tardar hasta 12 horas en mostrarse para el cliente para todos los usuarios.
   
 ## <a name="requirements"></a>Requirements
 
-La implementación centralizada de complementos requiere que los usuarios usen Office 365 ProPlus (y que hayan iniciado sesión en Office con su identificador de organización), y que tengan buzones de correo de Exchange Online y activos de Exchange Online. El directorio de la suscripción debe estar en el o en un federado de Azure Active Directory.
-Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada de office 365](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
+La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con su identificador de organización) y tengan Exchange Online y los buzones activos de Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
+Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
   
@@ -49,16 +49,16 @@ La implementación centralizada no es compatible con lo siguiente:
    
 - Implementación complementos de modelo de objetos componentes (COM) o de Visual Studio Tools para Office (VSTO)
     
-- Implementaciones de Office 365 que no incluyen Exchange, como Office 365 Empresa
+- Implementaciones de Microsoft 365 que no incluyen Exchange, como Microsoft 365 apps for Business
 
 ### <a name="office-requirements"></a>Requisitos de Office
 
 - Para los complementos de Word, Excel y PowerPoint, los usuarios deben usar una de las siguientes opciones:
-  - En un dispositivo Windows, versión 1704 o posterior de Office 365 ProPlus.
+  - En un dispositivo Windows, versión 1704 o posterior de Microsoft 365 apps for Enterprise.
   - En un equipo Mac, versión 15,34 o posterior.
 
 - Para Outlook, los usuarios deben usar una de las siguientes opciones: 
-  - Versión 1701 o posterior de Office 365 ProPlus.
+  - Versión 1701 o posterior de las aplicaciones de Microsoft 365 para empresas.
   - La versión 1808 o posterior de Office Professional Plus 2019 u Office Standard 2019.
   - Versión 16.0.4494.1000 o posterior de Office Professional Plus 2016 (MSI) u Office Standard 2016 (MSI)\*
   - Versión 15.0.4937.1000 o posterior de Office Professional Plus 2013 (MSI) u Office Standard 2013 (MSI)\*
@@ -69,17 +69,17 @@ La implementación centralizada no es compatible con lo siguiente:
     * Las versiones MSI de Outlook muestran complementos instalados por el administrador en la cinta de Outlook correspondiente, no en la sección "mis complementos".
     
 
-#### <a name="find-out-if-office-365-proplus-is-installed"></a>Averiguar si Office 365 ProPlus está instalado
+#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>Averiguar si Microsoft 365 apps for Enterprise está instalado
 
-Para usar Office 365 ProPlus, un usuario debe tener una cuenta de Office 365 y debe tener una licencia asignada. Para obtener más información, vea [Información general sobre Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846328).
+Para usar las aplicaciones de Microsoft 365 para empresas, un usuario debe tener una cuenta de Microsoft 365 y debe tener una licencia asignada. Para obtener más información, vea [información general de las aplicaciones de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-La forma más sencilla de detectar si un usuario tiene Office 365 ProPlus instalado y lo ha usado recientemente es usar el informe de activaciones de Microsoft Office, que está disponible en el centro de administración de Microsoft 365. El informe proporciona una lista de todos los usuarios que han activado Office 365 ProPlus en los últimos 7 días, 30 días, 90 días o 180 días. Con fines de implementación centralizada, las activaciones de escritorio para Windows o Mac son las columnas importantes del informe. Puede exportar el informe a Excel. Para más información acerca del informe, vea [Informes de Office 365 en el Centro de administración: activaciones de Microsoft Office](../activity-reports/microsoft-office-activations.md).
+La forma más sencilla de detectar si un usuario tiene instalado Microsoft 365 ProPlus y lo ha usado recientemente es usar el informe de activaciones de Microsoft Office, que está disponible en el centro de administración de Microsoft 365. El informe proporciona una lista de todos los usuarios que han activado Microsoft 365 apps for Enterprise en los últimos 7 días, 30 días, 90 días o 180 días. Con fines de implementación centralizada, las activaciones de escritorio para Windows o Mac son las columnas importantes del informe. Puede exportar el informe a Excel. Para obtener más información acerca del informe, vea [informes de microsoft 365 en el centro de administración: activaciones de Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
-Si no desea usar el informe de activaciones, puede pedir a un usuario que abra una aplicación de Office, como Word en su equipo y, a continuación, elija **cuenta**de **archivo** \> . En **Información del producto**, debería ver **Producto de suscripción** y **Microsoft Office 365 ProPlus**, como se muestra en la siguiente imagen.
+Si no desea usar el informe de activaciones, puede pedir a un usuario que abra una aplicación de Office, como Word en su equipo y, a continuación, elija **cuenta**de **archivo** \> . En **información del producto**, verá el **producto de suscripción** y las **aplicaciones de Microsoft 365 para empresas**, como se muestra en la siguiente imagen.
 
 ![Información de producto en una aplicación de Office](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
-Para obtener ayuda con Office 365 ProPlus, vea [Consejos de solución de problemas para Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
+Para obtener ayuda con Microsoft 365 apps for Enterprise, vea [Troubleshooting Tips for microsoft 365 apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
 ### <a name="exchange-online-requirements"></a>Requisitos de Exchange Online
@@ -89,9 +89,9 @@ Microsoft Exchange almacena los manifiestos de complementos dentro del espacio e
 Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
 
-### <a name="office-365-centralized-deployment-compatibility-checker"></a>Comprobador de compatibilidad de Implementación centralizada de Office 365
+### <a name="centralized-deployment-compatibility-checker"></a>Comprobador de compatibilidad de implementación centralizada
 
-Con el Comprobador de compatibilidad de Implementación centralizada de Office 365, puede comprobar si los usuarios de su espacio empresarial están configurados para usar la Implementación centralizada para Word, Excel y PowerPoint. El Comprobador de compatibilidad no es necesario para la compatibilidad con Outlook. Descargue el Comprobador de compatibilidad [aquí](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Con el comprobador de compatibilidad de implementación centralizada, puede comprobar si los usuarios de su espacio empresarial están configurados para usar la implementación centralizada para Word, Excel y PowerPoint. El Comprobador de compatibilidad no es necesario para la compatibilidad con Outlook. Descargue el Comprobador de compatibilidad [aquí](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Ejecutar el comprobador de compatibilidad
   
@@ -131,7 +131,7 @@ Cuando la herramienta completa el proceso, genera un archivo de salida en format
   
 ## <a name="user-and-group-assignments"></a>Asignaciones de usuario y de grupo
 
-La característica de implementación centralizada es compatible actualmente con la mayoría de los grupos compatibles con Azure Active Directory, incluidos grupos de Office 365, listas de distribución y grupos de seguridad.
+La característica de implementación centralizada es compatible actualmente con la mayoría de los grupos compatibles con Azure Active Directory, incluidos los grupos de Microsoft 365, las listas de distribución y los grupos de seguridad.
   
 > [!NOTE]
 > Los grupos de seguridad no habilitados para correo no son compatibles en estos momentos. 
@@ -157,7 +157,7 @@ De forma alternativa, puede usar la API de Graph Azure Active Directory para eje
   
 ### <a name="contacting-microsoft-for-support"></a>Ponerse en contacto con Microsoft para obtener soporte técnico
 
-Si usted o sus usuarios experimentan problemas al cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft ([obtenga información](../contact-support-for-business-products.md)). Proporcione la siguiente información sobre el entorno de Office 365 en el vale de soporte.
+Si usted o sus usuarios experimentan problemas al cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft ([obtenga información](../contact-support-for-business-products.md)). Proporcione la siguiente información sobre el entorno de Microsoft 365 en la incidencia de soporte técnico.
   
 |**Plataforma**|**Información de depuración**|
 |:-----|:-----|

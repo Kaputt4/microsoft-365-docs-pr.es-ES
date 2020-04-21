@@ -1,5 +1,5 @@
 ---
-title: 'Office 365 Reports en el centro de administración: informe de actividad de Yammer'
+title: 'Informes de Microsoft 365 en el centro de administración: informe de actividad de Yammer'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenga el informe de actividad de Yammer y sepa más sobre el número de usuarios que usan Yammer para publicar, como, o leer un mensaje.
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047028"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618961"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Office 365 Reports en el centro de administración: informe de actividad de Yammer
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Informes de Microsoft 365 en el centro de administración: informe de actividad de Yammer
 
 Como administrador de Microsoft 365, el panel **informes** muestra los datos de uso de los productos de la organización. Consulte [los informes de actividad en el centro de administración](activity-reports.md). Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
   
@@ -82,7 +82,7 @@ El informe de actividad contiene la siguiente información.
     
   - **Nombre de usuario** es la dirección de correo electrónico de los usuarios. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. 
     
-    En esta cuadrícula se muestran los usuarios que iniciaron sesión en Yammer desde la cuenta de Office 365 o que iniciaron sesión en la red con el inicio de sesión único.
+    Esta cuadrícula muestra a los usuarios que iniciaron sesión en Yammer con la cuenta de Microsoft 365 o que iniciaron sesión en la red con el inicio de sesión único.
     
   - **Nombre para mostrar** es el nombre completo del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. 
     
@@ -112,6 +112,6 @@ El informe de actividad contiene la siguiente información.
     
 - **No hay datos de la red externa** Los datos de la red externa no se incluyen en estos informes. 
     
-- **Redes activadas** En estos informes se muestran los datos de la red de Yammer que forma parte de su suscripción a Office 365. El gráfico agrega el uso de todos los usuarios que iniciaron sesión en la red de Yammer, con independencia de si usaron Office 365 o Yammer para iniciar sesión. 
+- **Redes activadas** Estos informes muestran los datos de la red de Yammer que forma parte de la suscripción a Microsoft 365. El gráfico agrega el uso de todos los usuarios que iniciaron sesión en la red de Yammer, independientemente de si usaban Microsoft 365 o Yammer para iniciar sesión. 
     
 

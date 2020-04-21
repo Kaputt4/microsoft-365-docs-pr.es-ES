@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 23242f5f2d7e1a0774c83359159588f9fef34f64
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608167"
+ms.locfileid: "43615923"
 ---
 # <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
 
@@ -55,7 +55,7 @@ Cada acción de mejora merece 10 puntos o menos. La mayoría se puntuan de una m
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Office 365 (como SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD, ATP de Microsoft defender y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
+Actualmente hay recomendaciones para Microsoft 365 (como SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD, ATP de Microsoft defender y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -152,7 +152,7 @@ En la ficha **métricas & tendencias** , hay varios gráficos y gráficos para p
 
 La puntuación segura de Microsoft es un resumen numérico de su postura de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad; no es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft, lo que puede ayudar a compensar el riesgo de infracciones. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
 
-## <a name="whats-new"></a>¿Hay alguna novedad? 
+## <a name="whats-new"></a>Novedades 
 
 Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
 

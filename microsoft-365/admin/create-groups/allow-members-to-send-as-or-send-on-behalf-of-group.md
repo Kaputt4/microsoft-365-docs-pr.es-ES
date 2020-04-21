@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Obtenga información sobre cómo permitir a los miembros enviar correo electrónico como un grupo de Office 365 o enviar un correo electrónico en nombre de un grupo de Office 365.
-ms.openlocfilehash: b85b0318587058f1c3eb4d681086ccfcad7f1d8d
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Obtenga información sobre cómo permitir a los miembros enviar correo electrónico como un grupo de Microsoft 365 o enviar correo electrónico en nombre de un grupo de Microsoft 365.
+ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212110"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630674"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
-Un miembro de un grupo de Office 365 que haya concedido permisos para **Enviar como** o **enviar en nombre** de puede enviar correo electrónico como grupo o en nombre del grupo. En este tema se explica cómo un administrador puede establecer estos permisos.
+Un miembro de un grupo de Microsoft 365 al que se hayan concedido permisos para **Enviar como** o **enviar en nombre** de puede enviar correo electrónico como grupo o en nombre del grupo. En este tema se explica cómo un administrador puede establecer estos permisos.
   
-Por ejemplo, si Nuria Bowen forma parte del grupo **Training** Office 365 y tiene permisos **Enviar como** en el grupo, si envía un correo electrónico como grupo, parecerá que el grupo de **formación** envió el correo electrónico. 
+Por ejemplo, si Nuria Bowen forma parte del grupo **Training** de Microsoft 365 y tiene permisos **Enviar como** en el grupo, si envía un correo electrónico como grupo, tendrá el mismo aspecto que el grupo de **formación** envió el correo electrónico. 
   
-El permiso **enviar en nombre** de permite a un usuario enviar correo electrónico en nombre de un grupo de Office 365. Por ejemplo, si Alex Wilber forma parte del grupo **marketing** Office 365 y tiene permisos **enviar en nombre** de y envía un correo electrónico como grupo, el correo electrónico parece enviado por **Alex Wilber en nombre de marketing**.
+El permiso **enviar en nombre** de permite a un usuario enviar correo electrónico en nombre de un grupo de Microsoft 365. Por ejemplo, si Alex Wilber forma parte del grupo **marketing** de Microsoft 365 y tiene permisos **enviar en nombre** de y envía un correo electrónico como grupo, el correo electrónico parece enviado por **Alex Wilber en nombre de marketing**.
 
 > [!IMPORTANT]
 > Puede configurar **Enviar como** o **enviar en nombre** de un usuario determinado, pero no ambos. Si configura ambos, tendrá **como predeterminado enviar como**.
 
 > [!TIP]
-> Vea [Enviar correo electrónico desde o en nombre de un grupo de Office 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) para obtener información sobre cómo usar Outlook y Outlook en la web para enviar correo electrónico desde un grupo.
+> Vea [Enviar correo electrónico desde o en nombre de un grupo de Microsoft 365](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) para obtener información sobre cómo usar Outlook y Outlook en la web para enviar correo electrónico desde un grupo.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Permitir que los miembros envíen correo electrónico como un grupo
 
@@ -52,7 +52,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
     
 4. En la sección **Enviar como** , seleccione el **+** signo para agregar los usuarios que desea enviar como grupo. 
     
-    ![Seleccione el signo más para agregar los usuarios que quiera enviar como grupo de Office 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Seleccione el signo más para agregar los usuarios que desee enviar como grupo de Microsoft 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     
@@ -70,7 +70,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
     
 4. En la sección enviar en nombre de, seleccione **+** el signo para agregar los usuarios que desea enviar como grupo. 
     
-    ![Seleccione el signo más para agregar los usuarios que quiera enviar como grupo de Office 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Seleccione el signo más para agregar los usuarios que desee enviar como grupo de Microsoft 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Escriba para buscar o seleccionar un usuario de la lista. Seleccione **Aceptar** y **Guardar**.
     
@@ -78,7 +78,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Obtener más información sobre los grupos de Office 365](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Obtenga más información sobre los grupos de 365 de Microsoft](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

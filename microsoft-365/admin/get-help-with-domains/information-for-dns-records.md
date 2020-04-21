@@ -1,5 +1,5 @@
 ---
-title: Recopilar la información necesaria para crear los registros de DNS de Office 365
+title: Recopilar la información necesaria para crear los registros DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Aprenda a encontrar los valores y la información que necesita para crear registros DNS para Office 365. '
+description: 'Aprenda a encontrar los valores y la información que necesita para crear registros DNS para Microsoft 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540884"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628451"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Recopilar la información necesaria para crear los registros de DNS de Office 365
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilar la información necesaria para crear los registros DNS
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540884"
     
 5. Vaya a [crear registros DNS en cualquier proveedor](create-dns-records-at-any-dns-hosting-provider.md)de host DNS y seleccione su host DNS de la lista de registradores para ver las instrucciones paso a paso.
     
-6. Siga los pasos para la creación del registro TXT (o registro MX) en el host DNS y, a continuación, verifique el dominio en Office 365.
+6. Siga los pasos para crear el registro TXT (o registro MX) en su host DNS y, después, vuelva a comprobar el dominio en Microsoft 365.
 
-7. Quite el registro TXT (o registro MX) de su host DNS una vez que se haya comprobado el dominio en Office 365.
+7. Quite el registro TXT (o registro MX) de su host DNS una vez que se haya comprobado el dominio en Microsoft 365.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Paso 2: buscar el valor del registro MX para el correo electrónico y más
 

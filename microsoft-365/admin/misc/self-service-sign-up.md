@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Obtenga información sobre el registro de autoservicio de Office 365 y los programas de autoservicio disponibles, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
+description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
 ms.custom: okr_SMB
-ms.openlocfilehash: fa7e6dcb4c40a7a41599b7c1a81fa596868d8e2d
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106117"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627805"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 
@@ -38,9 +38,9 @@ En el siguiente ejemplo, se describe cómo se realiza la inscripción automátic
   
 1. Los alumnos y los miembros de la Facultad tienen direcciones de correo electrónico de la escuela que indican que están asociadas a su institución. Por ejemplo, la dirección de correo electrónico jakob@uw.edu puede indicar a un estudiante de la Universidad de Washington.
 
-2. Los estudiantes y los profesores van a [nuestro sitio web](https://go.microsoft.com/fwlink/p/?LinkId=536628)y usan su dirección de correo electrónico para registrarse en los servicios que ofrece su organización, como Office 365 ProPlus. También pueden registrarse para obtener otros servicios gratuitos que ofrecemos.
+2. Los estudiantes y los profesores van a [nuestro sitio web](https://go.microsoft.com/fwlink/p/?LinkId=536628)y usan su dirección de correo electrónico para registrarse en los servicios que ofrece su organización, como las aplicaciones de Microsoft 365 para empresas. También pueden registrarse para obtener otros servicios gratuitos que ofrecemos.
 
-3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Office 365, Power BI u otros servicios inmediatamente.
+3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Microsoft 365, Power BI u otros servicios de inmediato.
 
 4. Como administrador de la empresa, puede ver quién se ha registrado para obtener una suscripción viendo la página **productos & Services** en el centro de administración. De esta forma puede ver cuándo hay licencias nuevas o no reconocidas para los servicios de su espacio empresarial. Para controlar si los usuarios pueden suscribirse a las suscripciones de autoservicio, use el cmdlet [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) de PowerShell con el parámetro **AllowAdHocSubscriptions** . Para obtener más información, vea [¿cómo se controla la configuración de Self-Service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
@@ -52,8 +52,8 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |:-----|:-----|:-----|:-----|
 |**Programa** <br/> |**Descripción** <br/> |**Información adicional** <br/> |Sitio web para registro de Self-Service * * * * <br/> |
 |Office 365 a1 * * * * <br/> |Cualquier estudiante o profesor puede usar una dirección de correo electrónico escolar para registrarse gratuitamente para Office 365 y obtener aplicaciones de Office para la web, 1 TB de almacenamiento en la nube de OneDrive y SharePoint Online para los sitios de clase, equipo y proyecto.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Office 365 a1 más** <br/> |Los estudiantes y profesores elegibles pueden registrarse para Office 365 a1 Plus, que incluye todo lo mencionado anteriormente, además de Office 365 ProPlus. Office 365 ProPlus es software de productividad, como Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype empresarial, que está instalado en su equipo de escritorio o portátil.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
-|**Power BI** <br/> |Power BI permite a los usuarios visualizar datos, compartir descubrimientos y colaborar en nuevas formas intuitivas. <br/> Si su organización ya está suscrita a Office 365, también puede ver las licencias de la "prueba de usuario individual de Power BI Pro", que ofrece a los usuarios limitado el acceso gratuito a las capacidades avanzadas.  <br/> |[Power BI en su organización](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
+|**Office 365 a1 más** <br/> |Los estudiantes y profesores elegibles pueden registrarse para Office 365 a1 Plus, que incluye todo lo mencionado anteriormente más Microsoft 365 apps for Enterprise. Microsoft 365 apps for Enterprise es software de productividad, incluidos Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access y Skype empresarial, que está instalado en el equipo de escritorio o portátil.  <br/> |[Preguntas técnicas más frecuentes sobre Office 365 Education](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Educación](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|**Power BI** <br/> |Power BI permite a los usuarios visualizar datos, compartir descubrimientos y colaborar en nuevas formas intuitivas. <br/> Si su organización ya está suscrita, también puede ver las licencias de "prueba de usuario individual de Power BI Pro", que ofrece a los usuarios un acceso limitado y gratuito a las capacidades avanzadas.  <br/> |[Power BI en su organización](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**Servicios de administración de derechos (RMS)** <br/> |RMS para personas es una suscripción gratuita de autoservicio para los usuarios de una organización que han enviado archivos confidenciales que han sido protegidos por Azure Rights Management (Azure RMS), pero el Departamento de ti no ha implementado Azure Rights Management (Azure RMS) o Active Directory Rights Management Services (AD RMS).  <br/> |[RMS para usuarios individuales y Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Portal de Microsoft Rights Management](https://portal.azure.com/) para que pueda comprobar si puede abrir un documento protegido por derechos determinado.  <br/> |
 |**Microsoft Power apps** <br/> |En PowerApps, puede administrar los datos organizativos mediante la ejecución de una aplicación que haya creado o que haya creado otro usuario y que se haya compartido con usted. Las aplicaciones se ejecutan en dispositivos móviles como teléfonos, o bien puede ejecutarlas en un explorador al abrir Dynamics 365. Puede crear una variedad infinita de aplicaciones sin tener que aprender un lenguaje de programación como C#.  <br/> |[Registro de autoservicio para PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 para operaciones financieras** <br/> |Obtenga una solución completa de administración empresarial y financiera para pequeñas y medianas empresas. Dynamics 365 for Financials facilita el pedido, la venta, la facturación y la creación de informes, comenzando el primer día.  <br/> |[Microsoft Dynamics 365 para operaciones financieras](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 para operaciones financieras](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Quitar dominios de Office 365
+title: Quitar un dominio
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Obtenga información sobre cómo quitar un dominio anterior de Office 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio.
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210373"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628439"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Quitar dominios de Office 365
+# <a name="remove-a-domain"></a>Quitar un dominio
 
 Colaboradores: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
- **[Consulte Preguntas más frecuentes sobre dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
   
-¿Va a quitar su dominio porque quiere agregarlo a un plan de suscripción de Office 365 diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
+¿Está eliminando su dominio porque quiere agregarlo a un plan de suscripción de Microsoft 365 diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Paso 1: mover usuarios a otro dominio
 
@@ -210,7 +210,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>¿Cuánto tiempo tarda un dominio en quitarse?
 
-Se puede tardar tan solo 5 minutos para que Office 365 Quite un dominio si no se hace referencia a él en muchos lugares como, por ejemplo, grupos de seguridad, listas de distribución, usuarios y grupos de Office 365. Si hay muchas referencias que usan el dominio, el dominio puede tardar varias horas (o incluso un día) en quitarse.
+Microsoft 365 puede tardar hasta 5 minutos en quitar un dominio si no se hace referencia a él en muchos lugares como, por ejemplo, grupos de seguridad, listas de distribución, usuarios y grupos de Microsoft 365. Si hay muchas referencias que usan el dominio, el dominio puede tardar varias horas (o incluso un día) en quitarse.
   
 Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los usuarios y moverlos a otro dominio. En caso contrario, es posible que falten usuarios en la interfaz y que, cuando vaya a quitar el dominio, no pueda y no sepa por qué. Vea [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) para obtener más información. Para establecer el dominio predeterminado, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -231,6 +231,6 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 
 [Obtener ayuda con Office 365 dominios](get-help-with-domains.md)
 
-[Cambiar a otro plan de Office 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Cambiar a otro plan de Microsoft 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md)

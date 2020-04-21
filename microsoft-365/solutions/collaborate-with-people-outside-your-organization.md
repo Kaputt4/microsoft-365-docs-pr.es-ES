@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar Microsoft 365 para la colaboración con personas de fuera de la organización.
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894958"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630730"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 
@@ -23,7 +23,7 @@ Las capacidades de uso compartido externo de Microsoft 365 proporcionan una opor
 
 La colaboración con personas fuera de la organización consta de dos componentes principales:
 
-- **Habilitar uso compartido** : Configure los controles de uso compartido en Azure Active Directory, Teams, Office 365 Groups y SharePoint para permitir el nivel de uso compartido que desea para su organización.
+- **Habilitar uso compartido** : Configure los controles de uso compartido en Azure Active Directory, Teams, Microsoft 365 Groups y SharePoint para permitir el nivel de uso compartido que desea para su organización.
 - **Habilitar seguridad adicional** : mientras que las características básicas de uso compartido se pueden configurar para que los usuarios externos a la organización puedan autenticarse, Microsoft 365 ofrece muchas características adicionales de seguridad y cumplimiento para ayudarle a proteger sus datos y mantener sus directivas de Gobierno mientras comparte de forma externa.
 
 ## <a name="enable-sharing"></a>Habilitar el uso compartido
@@ -46,13 +46,13 @@ Una vez que haya habilitado el escenario que desea usar para el uso compartido c
 
 ## <a name="collaborate-with-partner-companies"></a>Colaborar con empresas asociadas
 
-Cuando trabaja en un proyecto grande que involucra a muchos invitados de otra organización, o si tiene una relación de proveedor continua en la que los invitados suelen cambiar, puede usar la administración de derechos en Azure Active Directory para simplificar la administración de invitados. y permitir que la empresa asociada comparta en esa responsabilidad. Consulte [Create a B2B extranet with Managed Guests](b2b-extranet.md) para obtener más información.
+Cuando trabaja en un proyecto grande que involucra a muchos invitados de otra organización, o si tiene una relación de proveedor continua en la que los invitados suelen cambiar, puede usar la administración de derechos en Azure Active Directory para simplificar la administración de invitados y permitir que la empresa asociada comparta en esa responsabilidad. Consulte [Create a B2B extranet with Managed Guests](b2b-extranet.md) para obtener más información.
 
 ## <a name="limit-sharing"></a>Limitar el uso compartido
 
 Si algunas de las características de uso compartido de Microsoft 365 entran en conflicto con las directivas de gobierno, vea [limitar el uso compartido en microsoft 365](microsoft-365-limit-sharing.md) para obtener información sobre las opciones para limitar el uso compartido.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Introducción a la colaboración de archivos en Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Office 365 Reports en el centro de administración: uso de dispositivos de Microsoft Teams'
+title: 'Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams'
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: Obtenga información sobre las aplicaciones de Microsoft Teams usadas en su organización al obtener el informe de uso de aplicaciones de Microsoft Teams de los informes de Office 365.
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Obtenga información sobre las aplicaciones de Microsoft Teams usadas en su organización al obtener el informe de uso de aplicaciones de Microsoft Teams de los informes de Microsoft 365.
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046968"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621215"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Office 365 Reports en el centro de administración: uso de dispositivos de Microsoft Teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de dispositivos de Microsoft Teams
 
-El panel **informes** de Office 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
+El panel de **informes** de Microsoft 365 muestra la información general de la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
   
 > [!NOTE]
 > Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams, Team Communications o Skype empresarial para ver los informes.  
@@ -45,7 +45,7 @@ El panel **informes** de Office 365 muestra la información general de la activi
 
 Para obtener información sobre el uso de aplicaciones de Microsoft Teams, consulte los gráficos **Usuarios** y **Distribución**. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Informes de Microsoft 365: uso de aplicaciones de Microsoft Teams](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

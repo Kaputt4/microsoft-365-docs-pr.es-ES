@@ -18,23 +18,23 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la protección antivirus en SharePoint Online.
-ms.openlocfilehash: f22c2a3280148eb23f4ba53ff467a533186ed791
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: f04cd18bb4880ab631816c90b4976beada436225
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887277"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630946"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Detección de virus en SharePoint Online
 
-Office 365 puede ayudarle a proteger su entorno del malware detectando virus en los archivos que los usuarios cargan en SharePoint Online. Los archivos pueden analizarse en busca de virus una vez cargados. Si se detecta que un archivo está infectado, se establece una propiedad para que los usuarios no puedan descargar ni sincronizar el archivo.
+Microsoft 365 puede ayudarle a proteger su entorno del malware detectando virus en los archivos que los usuarios cargan en SharePoint Online. Los archivos pueden analizarse en busca de virus una vez cargados. Si se detecta que un archivo está infectado, se establece una propiedad para que los usuarios no puedan descargar ni sincronizar el archivo.
 
 > [!IMPORTANT]
 > Estas capacidades antivirus de SharePoint Online son una forma de contener virus. No pretenden ser un punto único de defensa contra el malware en su entorno. Recomendamos a todos los clientes que evalúen e implementen la protección antimalware en varias capas y que apliquen los procedimientos recomendados para proteger la infraestructura de la empresa. Para obtener más información acerca de las estrategias y los procedimientos recomendados, consulte [plan de seguridad](security-roadmap.md).
 
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>¿Qué ocurre cuando se carga un archivo infectado en SharePoint Online?
 
-Office 365 usa un motor de detección de virus común. El motor se ejecuta de forma asincrónica dentro de SharePoint Online y examina algunos archivos después de que se carguen. Se usan heurísticas para determinar qué archivos se examinan. Cuando se encuentra un archivo que contiene un virus, se marca para que no se pueda descargar de nuevo. En abril de 2018, eliminamos el límite de 25 MB para los archivos examinados.
+Microsoft 365 usa un motor de detección de virus común. El motor se ejecuta de forma asincrónica dentro de SharePoint Online y examina algunos archivos después de que se carguen. Se usan heurísticas para determinar qué archivos se examinan. Cuando se encuentra un archivo que contiene un virus, se marca para que no se pueda descargar de nuevo. En abril de 2018, eliminamos el límite de 25 MB para los archivos examinados.
 
 Esto es lo que sucede:
 

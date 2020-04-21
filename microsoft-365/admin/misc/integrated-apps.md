@@ -18,35 +18,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Obtenga información sobre las aplicaciones integradas y cómo activarlas para permitir que aplicaciones de terceros accedan a la información de Office 365 de los usuarios.
-ms.openlocfilehash: 3c7c92e16b375fc374563e87ea2f6166c7384a29
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Obtenga información sobre las aplicaciones integradas y cómo activarlas para permitir que las aplicaciones de terceros obtengan acceso a la información de Microsoft 365 de los usuarios.
+ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361391"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627853"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Activar o desactivar las aplicaciones integradas
 
-Cuando se activan las aplicaciones integradas, los usuarios de su organización pueden permitir que aplicaciones de terceros accedan a su información de Office 365. Por ejemplo, cuando alguien usa una aplicación de terceros, puede que la aplicación le pida permiso para tener acceso a su calendario y para modificar los archivos que están en una carpeta de OneDrive.
+Cuando las aplicaciones integradas están activadas, los usuarios de la organización pueden permitir que las aplicaciones de terceros accedan a la información de Microsoft 365. Por ejemplo, cuando alguien usa una aplicación de terceros, puede que la aplicación le pida permiso para tener acceso a su calendario y para modificar los archivos que están en una carpeta de OneDrive.
 
 ## <a name="turning-integrated-apps-on-or-off"></a>Activar o desactivar las aplicaciones integradas
 <a name="__toc379982114"> </a>
 
 A continuación se explica cómo activar o desactivar las aplicaciones integradas.
 
-1. En el centro de administración, vaya a la página de [Complementos &amp; ](https://go.microsoft.com/fwlink/p/?linkid=2053743) de los servicios de **configuración** \> y, a continuación, seleccione **aplicaciones integradas**.
+1. En el centro de administración de Microsoft 365, vaya a la página de [Complementos &amp; ](https://go.microsoft.com/fwlink/p/?linkid=2053743) de los servicios de **configuración** \> y, a continuación, seleccione **aplicaciones integradas**.
 
 2. En la página **aplicaciones integradas** , seleccione la opción para activar o desactivar las aplicaciones integradas.
 
 ## <a name="more-info-on-integrated-apps"></a>Obtener más información sobre las aplicaciones integradas
 <a name="__toc379982114"> </a>
 
-Se puede crear una aplicación integrada desde dentro de su propia organización, o puede proceder de otra organización Office 365 o un tercero.
+Se puede crear una aplicación integrada desde dentro de su propia organización o puede provenir de otra organización o de un tercero.
 
-Cuando las aplicaciones integradas están activadas y usa una aplicación, esta le solicitará permiso para establecer el nivel de acceso que necesita para acceder a la información del usuario. Un usuario puede dar acceso sólo a las aplicaciones que acceden a su información Office 365. No se puede dar acceso a una aplicación a otra información del usuario.
+Cuando las aplicaciones integradas están activadas y usa una aplicación, esta le solicitará permiso para establecer el nivel de acceso que necesita para acceder a la información del usuario. Un usuario puede proporcionar acceso solo a las aplicaciones de su propiedad que tienen acceso a la información de Microsoft 365. No se puede dar acceso a una aplicación a otra información del usuario.
 
-Existen dos tipos de permisos que se utilizan cuando se usan las aplicaciones integradas en Office 365: permisos de usuario y permisos de administrador. Por ejemplo, cuando la organización tiene las aplicaciones integradas activadas y un usuario utiliza una aplicación de terceros, la aplicación puede pedir permiso del usuario para leer detalles de su perfil, modificar o eliminar sus archivos, leer elementos en las colecciones de sitios, y enviar correo electrónico como dicho usuario.
+Hay dos tipos de permisos que se usan cuando se usan aplicaciones integradas en Microsoft 365: permisos de usuario y permisos de administrador. Por ejemplo, cuando la organización tiene las aplicaciones integradas activadas y un usuario utiliza una aplicación de terceros, la aplicación puede pedir permiso del usuario para leer detalles de su perfil, modificar o eliminar sus archivos, leer elementos en las colecciones de sitios, y enviar correo electrónico como dicho usuario.
 
 ![Permisos de usuario de aplicaciones integradas](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
 

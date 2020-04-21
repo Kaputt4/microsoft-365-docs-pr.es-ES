@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Obtenga más información acerca de cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada a su cuenta de Office 365 para empresas. '
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Obtenga más información acerca de cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada a su cuenta de Microsoft 365 para empresas. '
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42255328"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629088"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
-Este artículo está destinado a los administradores de Office 365 que tienen suscripciones empresariales. No está dirigido a usuarios particulares.
+Este artículo está destinado a los administradores de Microsoft 365 que tienen suscripciones empresariales. No está dirigido a usuarios particulares.
   
-Una dirección de correo electrónico principal en Office 365 es, por lo general, la dirección de correo electrónico a la que se asignó un usuario cuando se creó su cuenta. Cuando este envía un correo electrónico a un contacto, su dirección de correo electrónico principal es la que normalmente aparece en el campo  *De*  en las aplicaciones de correo electrónico. El usuario también puede tener más de una dirección de correo electrónico asociada a su cuenta de Office 365 para empresas. Estas direcciones adicionales se denominan "alias". 
+Una dirección de correo electrónico principal en Microsoft 365 suele ser la dirección de correo electrónico que se asignó al usuario cuando se creó su cuenta. Cuando este envía un correo electrónico a un contacto, su dirección de correo electrónico principal es la que normalmente aparece en el campo  *De*  en las aplicaciones de correo electrónico. También pueden tener más de una dirección de correo electrónico asociada a su cuenta de Microsoft 365 para empresas. Estas direcciones adicionales se denominan "alias". 
   
 Por ejemplo, supongamos que Jenna tiene la dirección de correo electrónico jenna@contosoco.com, pero también quiere recibir correo electrónico en jen@contosoco.com porque algunos usuarios hacen referencia a ella con ese nombre. Puede crear alias para que ambas direcciones de correo electrónico vayan a la bandeja de entrada de Jenna.
 <br><br>  
@@ -94,7 +94,7 @@ Debe tener [permisos de administrador](../add-users/about-admin-roles.md) para h
     > [!Important] 
     > Si recibe el mensaje de error "**no se encuentra un parámetro que coincida con el nombre de parámetro" EmailAddresses**", significa que está tardando un poco en finalizar la configuración del espacio empresarial o en su dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
-4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Agregar**.
+4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
     > [!IMPORTANT]
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
@@ -125,7 +125,7 @@ Debe tener [permisos de administrador](../add-users/about-admin-roles.md) para h
     > [!Important] 
     > Si recibe el mensaje de error "**no se encuentra un parámetro que coincida con el nombre de parámetro" EmailAddresses**", significa que está tardando un poco en finalizar la configuración del espacio empresarial o en su dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
-4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Agregar**.
+4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
     > [!IMPORTANT]
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 

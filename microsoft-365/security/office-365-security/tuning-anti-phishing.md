@@ -1,5 +1,5 @@
 ---
-title: Ajuste de la protección contra la suplantación de identidad en Office 365
+title: Ajustar protección contra phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se ha recibido un mensaje de suplantación de identidad y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: a27d41b01069e763ea2b3baab6576c8046b0f8e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528994"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631138"
 ---
-# <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
+# <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
-Aunque Office 365 incluye una variedad de características antiphishing que están habilitadas de forma predeterminada, es posible que algunos mensajes de suplantación de identidad sigan teniendo acceso a sus buzones. En este tema se describe qué se puede hacer para descubrir por qué se ha recibido un mensaje de suplantación de identidad (phishing) y qué se puede hacer para ajustar la configuración antiphishing en la organización de Exchange Online _sin que los elementos sean peores_.
+Aunque Microsoft 365 incluye una variedad de características antiphishing que están habilitadas de forma predeterminada, es posible que algunos mensajes de suplantación de identidad sigan teniendo acceso a sus buzones. En este tema se describe qué se puede hacer para descubrir por qué se ha recibido un mensaje de suplantación de identidad (phishing) y qué se puede hacer para ajustar la configuración antiphishing en la organización de Exchange Online _sin que los elementos sean peores_.
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Primero lo primero: tratar con todas las cuentas comprometidas y asegurarse de que se impide el acceso a otros mensajes de suplantación de identidad
 
-Si la cuenta de un destinatario se viera comprometida como resultado del mensaje de suplantación de identidad (phishing), siga los pasos que se indican en [responder a una cuenta de correo electrónico comprometida en Office 365](responding-to-a-compromised-email-account.md).
+Si la cuenta de un destinatario se viera comprometida como resultado del mensaje de suplantación de identidad (phishing), siga los pasos de [respuesta a una cuenta de correo electrónico en peligro en Microsoft 365](responding-to-a-compromised-email-account.md).
 
 Si su suscripción incluye la protección contra amenazas avanzada (ATP), puede usar la [inteligencia sobre amenazas de Office 365](office-365-ti.md) para identificar a otros usuarios que también recibieron el mensaje de suplantación de identidad (phishing). Tiene opciones adicionales para bloquear los mensajes de suplantación de identidad:
 
@@ -39,7 +39,7 @@ Compruebe que estas características de ATP están activadas.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Informar del mensaje de suplantación de identidad a Microsoft
 
-Informar de los mensajes de suplantación de identidad resulta útil para ajustar los filtros que se usan para proteger a todos los clientes de Office 365. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+Informar de los mensajes de suplantación de identidad resulta útil para ajustar los filtros que se usan para proteger a todos los clientes de Microsoft 365. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Inspeccionar los encabezados del mensaje
 
@@ -49,15 +49,15 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 ## <a name="best-practices-to-stay-protected"></a>Procedimientos recomendados para mantener la protección
 
-- En una base mensual, ejecute [calificación segura](../mtp/microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización de Office 365.
+- En una base mensual, ejecute [calificación segura](../mtp/microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización.
 
 - Revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md) y [Configure inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para **poner en cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
 - Revise periódicamente el [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).
 
-- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en las listas de remitentes permitidos o de dominios permitidos en las directivas contra correo no deseado. Si decide hacerlo, debe extremar las precauciones. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente se bloquearían mediante los filtros de phish y correo no deseado de Office 365.
+- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Si decide hacerlo, debe extremar las precauciones. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente bloquearía el correo no deseado y los filtros de phish.
 
-  La mejor forma de tratar con los mensajes legítimos que están bloqueados por Office 365 (falsos positivos) que implican a los remitentes de su dominio es configurar completamente y por completo los registros de DMARC, DKIM y DMARC en DNS para _todos_ los dominios de correo electrónico en Office 365:
+  La mejor forma de tratar con los mensajes legítimos que están bloqueados por Microsoft 365 (falsos positivos) que implican a los remitentes de su dominio es configurar completamente y por completo los registros de DMARC, DKIM y DMARC en DNS para _todos_ los dominios de correo electrónico:
 
   - Compruebe que el registro SPF identifica _todos los_ orígenes de correo electrónico de los remitentes de su dominio (no olvide los servicios de terceros).
 
@@ -65,11 +65,11 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
   Para obtener instrucciones de configuración, consulte:
   
-  - [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)
+  - [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado](use-dkim-to-validate-outbound-email.md)
 
-  - [Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)
+  - [Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
 
 - Siempre que sea posible, se recomienda entregar el correo electrónico del dominio directamente a Office 365. En otras palabras, apunte el registro MX del dominio de Office 365 a Office 365. Exchange Online Protection (EOP) puede proporcionar la mejor protección para los usuarios de la nube cuando el correo se entrega directamente a Office 365. Si debe usar un sistema de protección de correo electrónico de terceros delante de EOP, use el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 

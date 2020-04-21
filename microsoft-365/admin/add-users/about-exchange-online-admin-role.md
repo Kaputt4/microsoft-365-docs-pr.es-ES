@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151382"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618913"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
-Para ayudarle a administrar Office 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de la organización desde el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Para ello, debe asignarlos al rol de administrador de Exchange. 
+Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de la organización desde el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Para ello, debe asignarlos al rol de administrador de Exchange. 
   
  **Sugerencia**: cuando asigne a un usuario al rol de administrador de Exchange, asígnelos también al rol de administrador del servicio. De este modo, pueden ver información importante en el centro de administración de Microsoft 365, como el estado del servicio de Exchange Online, y cambiar y publicar notificaciones. 
   
@@ -37,17 +37,17 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
   
 - [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Configure una directiva de archivado y eliminación para los buzones de la organización de Office 365](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurar una directiva de archivo y eliminación para los buzones de la organización](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización. 
     
-- Configure delegados "[Enviar como](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)" y "[enviar en nombre](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)de" para el buzón de un usuario. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre. 
+- Configure delegados "[Enviar como](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" y "enviar como" de[abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)para el buzón de una persona. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre. 
     
 - [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común. 
     
-- Filtros de malware y [protección contra correo no deseado de Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) para la organización. 
+- Filtros de malware y [protección contra correo no deseado de correo electrónico](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) para la organización. 
     
-- Administración de grupos de Office 365
+- Administración de grupos de Microsoft 365
     
 ## <a name="exchange-online-role-groups"></a>Grupos de roles de Exchange Online
 

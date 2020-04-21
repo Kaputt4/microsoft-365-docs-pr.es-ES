@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Obtenga información sobre los distintos Estados de los dispositivos en la lista acciones de dispositivos en la Página principal de administración de Microsoft 365 Business.
-ms.openlocfilehash: bed1610814ca0d60adb4b4b3d0018e3e7e6d763f
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Obtenga información sobre los distintos Estados de los dispositivos en la lista acciones de dispositivos en la Página principal de administración de Microsoft 365 para empresas.
+ms.openlocfilehash: 1a66e76dd3a74428923292427b01551db2449e48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560828"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627254"
 ---
 # <a name="device-states"></a>Estados de dispositivo
 
@@ -40,9 +40,9 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
   
 |**Estado**|**Descripción**|
 |:-----|:-----|
-|Administrado por Intune  <br/> |Administrado por Microsoft 365 Business.  <br/> |
-|Pendiente de retirada  <br/> |Microsoft 365 Business está en preparación para quitar los datos de la compañía del dispositivo.  <br/> |
-|Retirada en curso  <br/> |Microsoft 365 Business está quitando actualmente los datos de la compañía del dispositivo.  <br/> |
+|Administrado por Intune  <br/> |Administrado por Microsoft 365 empresa Premium.  <br/> |
+|Pendiente de retirada  <br/> |Microsoft 365 empresa Premium está preparándose para quitar datos de la compañía del dispositivo.  <br/> |
+|Retirada en curso  <br/> |Microsoft 365 empresa Premium está quitando actualmente los datos de la compañía del dispositivo.  <br/> |
 |Error de retirada  <br/> | No se pudo completar la acción para quitar los datos de la compañía.  <br/> |
 |Retirada cancelada  <br/> |Se canceló la acción de retirada.  <br/> |
 |Borrado pendiente  <br/> |Esperando a que se inicie el restablecimiento de fábrica.  <br/> |
@@ -51,5 +51,5 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
 |Borrado cancelado  <br/> |Se canceló el borrado de la fábrica.  <br/> |
 |Incorrecto  <br/> |Una acción está pendiente (o en curso), pero el dispositivo no se ha protegido durante más de 30 días.  <br/> |
 |Pendiente de eliminación  <br/> |La acción de eliminación está pendiente.  <br/> |
-|Detectado  <br/> |Microsoft 365 Business detectó el dispositivo.  <br/> |
+|Detectado  <br/> |Microsoft 365 empresa Premium ha detectado el dispositivo.  <br/> |
    

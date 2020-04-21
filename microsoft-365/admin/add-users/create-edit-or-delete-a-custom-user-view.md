@@ -1,5 +1,5 @@
 ---
-title: Crear, editar o eliminar una vista de usuario personalizada en Office 365
+title: Crear, editar o eliminar una vista de usuario personalizada
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Obtenga información sobre cómo usar filtros para crear, editar o eliminar la vista de usuario personalizada en Office 365.
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Obtenga información sobre cómo usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047064"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617265"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Crear, editar o eliminar una vista de usuario personalizada en Office 365
 
@@ -63,7 +63,7 @@ Al crear, editar o eliminar una vista de usuario personalizada, los cambios se m
 Algunos aspectos que se deben tener en cuenta sobre las vistas estándar: 
 
 - Algunas vistas estándar muestran una lista sin ordenar si hay más de 2.000 usuarios en la lista. Para buscar usuarios específicos en esta lista, use el cuadro de búsqueda. 
-- Si no compró Office 365 de Microsoft, los **administradores de facturación** no aparecerán en la lista de vistas estándar. Para más información, vea [Asignar roles de administrador](assign-admin-roles.md). 
+- Si no ha adquirido Microsoft 365 de Microsoft, los **administradores de facturación** no aparecen en la lista de vistas estándar. Para más información, vea [Asignar roles de administrador](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Elegir los filtros para la vista de usuario personalizada
 
@@ -88,12 +88,12 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
     
 - **Usuarios sin licencia** Seleccione esta casilla para buscar todos los usuarios a los que no se ha asignado una licencia. Los resultados de esta vista también pueden incluir a los usuarios que tienen un buzón de Exchange pero que no tienen una licencia. Para realizar un seguimiento de esos usuarios específicamente, use el filtro **usuarios sin licencia con archivos o buzones de Exchange**. Los resultados de esta vista también pueden incluir usuarios que tienen un archivo de Exchange, pero que no tienen una licencia.
     
-- **Usuarios sin licencia con archivos o buzones de Exchange** Seleccione este cuadro para mostrar las cuentas de usuario que se crearon en Exchange Online y que tienen un buzón de Exchange, pero no se les asignó una licencia de Office 365. Los resultados de este filtro incluyen a los usuarios que tienen o están asignados a un archivo de Exchange. 
+- **Usuarios sin licencia con archivos o buzones de Exchange** Seleccione este cuadro para mostrar las cuentas de usuario que se crearon en Exchange Online y que tienen un buzón de Exchange, pero no se les asignó una licencia de Microsoft 365. Los resultados de este filtro incluyen a los usuarios que tienen o están asignados a un archivo de Exchange. 
 
 > [!NOTE]
 > El filtro de **usuarios sin licencia con buzones de Exchange** funciona cuando:
 1. El buzón se ha convertido recientemente de **compartido** a **usuario** y no tiene licencia.
-2. El buzón de correo se migró recientemente a Office 365, pero no se ha asignado una licencia.
+2. El buzón de correo se migró recientemente a Microsoft 365, pero no se le ha asignado una licencia.
 3. El buzón de correo se ha creado con PowerShell y no se ha asignado una licencia.
 4. Se aprovisionará un nuevo buzón de correo que se haya creado de forma local con un cmdlet New-RemoteMailbox para el usuario.
     

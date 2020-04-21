@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Obtenga información sobre cómo usar Windows AutoPilot para configurar nuevos dispositivos con Windows 10 para su empresa para que estén listos para el uso de los empleados.
-ms.openlocfilehash: 3b1cf297914862aaa74fdf9a8bb7290d00f73b1d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 98a2bfc721ce86c81ebd89e8f41603e619b31546
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561588"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627502"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 
@@ -49,7 +49,7 @@ Los dispositivos deben cumplir estos requisitos:
 
 Si aún no ha creado grupos de dispositivos o perfiles, la mejor forma de empezar es usar la guía paso a paso. También puede [Agregar dispositivos](create-and-edit-autopilot-devices.md) y [asignarles perfiles](create-and-edit-autopilot-profiles.md) sin usar la guía. 
   
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 2. En el panel de navegación izquierdo, elija **dispositivos** \> **AutoPilot**.
 
@@ -81,7 +81,7 @@ Si aún no ha creado grupos de dispositivos o perfiles, la mejor forma de empeza
     
     - Se crea la experiencia de inicio de sesión con la marca de la compañía.
     
-    - Conectar los dispositivos a las cuentas de Azure Active Directory y inscribirlos automáticamente para que los administre Microsoft 365 Business.
+    - Conectar los dispositivos a las cuentas de Azure Active Directory y inscribirlos automáticamente para que los administre Microsoft 365 empresa Premium.
     
     Para obtener más información, consulte [acerca de la configuración de perfiles de AutoPilot](autopilot-profile-settings.md). 
     

@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Obtenga información sobre cómo configurar su launguage preferida en el centro de mensajes para traducir publicaciones automáticamente.
-ms.openlocfilehash: 795907354f0128bd82d6305dc72b1dc31233bbc4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 27391ca133eda39f533863452e87649c36ac0a7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254969"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628177"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traducción de idioma para publicaciones del Centro de mensajes
 
-Las publicaciones del Centro de mensajes se escriben solo en inglés debido a la inmediatez de la información que publicamos, pero se pueden mostrar automáticamente en el idioma que se haya especificado en la configuración de idioma personal de Office 365. Si establece el idioma preferido a uno que no sea el inglés, verá una opción en el Centro de mensajes para traducir automáticamente las publicaciones. Los mensajes se traducirán de forma automática (es decir, con una máquina) a su idioma preferido. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
+Las publicaciones del centro de mensajes se escriben en inglés solo debido a la oportunidad de la información que estamos publicando, pero que se pueden mostrar automáticamente en el idioma especificado por la configuración de Idioma personal para Microsoft 365. Si establece el idioma preferido a uno que no sea el inglés, verá una opción en el Centro de mensajes para traducir automáticamente las publicaciones. Los mensajes se traducirán de forma automática (es decir, con una máquina) a su idioma preferido. Con esta opción se controla la vista predeterminada, pero también puede usar el menú desplegable para traducir y mostrar publicaciones en cualquiera de los idiomas admitidos. Si selecciona el inglés, revertiremos el mensaje a la versión original en inglés.
   
 > [!IMPORTANT]
-> Para poder elegir la configuración de idioma del Centro de mensajes, tiene que definir su idioma preferido para Office 365. Cuando el inglés sea el idioma establecido, no se mostrará ninguna opción de traducción. No puede especificar un idioma preferido para otros usuarios, sino que cada uno debe encargarse de cambiar esta configuración. 
+> Antes de elegir la configuración de idioma para el centro de mensajes, tiene que establecer su idioma preferido. Cuando el inglés sea el idioma establecido, no se mostrará ninguna opción de traducción. No puede especificar un idioma preferido para otros usuarios, sino que cada uno debe encargarse de cambiar esta configuración. 
   
 ## <a name="set-your-preferred-language"></a>Establezca el idioma que prefiera.
 
 1. En el centro de administración de Microsoft 365 o en la Página principal, seleccione el icono de configuración en la esquina superior derecha de la ventana.
   
-2. En **idioma y zona horaria**, seleccione **ver todo** para mostrar las opciones disponibles. Seleccione el idioma que desee en el menú desplegable y, a continuación, seleccione **Guardar**. Office 365 intentará actualizar y mostrar el nuevo idioma. Si esto no se produce de forma inmediata o si parece que tarda demasiado tiempo, puede actualizar el explorador o cerrar la sesión y, después, volver a iniciarla.
+2. En **idioma y zona horaria**, seleccione **ver todo** para mostrar las opciones disponibles. Seleccione el idioma que desee en el menú desplegable y, a continuación, seleccione **Guardar**. Microsoft 365 tratará de actualizar y mostrar el nuevo idioma. Si esto no se produce de forma inmediata o si parece que tarda demasiado tiempo, puede actualizar el explorador o cerrar la sesión y, después, volver a iniciarla.
   
 ## <a name="machine-translation-in-message-center"></a>Traducción automática en el Centro de mensajes
 

@@ -1,5 +1,5 @@
 ---
-title: Actualizar su número de teléfono y su dirección de correo electrónico de administrador en Office 365
+title: Actualizar el número de teléfono y la dirección de correo electrónico de administración
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Actualice su número de teléfono y su dirección de correo electrónico de administrador en el centro de administración. Necesitará esta información si desea restablecer su propia contraseña de administrador.
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361675"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628009"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>Actualizar su número de teléfono y su dirección de correo electrónico de administrador en Office 365
+# <a name="update-your-admin-phone-number-and-email-address"></a>Actualizar el número de teléfono y la dirección de correo electrónico de administración
 
-Este artículo explica cómo el administrador puede cambiar la dirección de teléfono y correo electrónico de empresa en Office 365.
+En este artículo se explica cómo el administrador puede cambiar la dirección de correo electrónico y el teléfono de la empresa en Microsoft 365.
   
 Si está buscando información sobre cómo cambiar la información de perfil de la empresa, como puede ser el nombre, la dirección de la empresa, el número de teléfono de la empresa, y la información de contacto técnico, consulte [Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](change-address-contact-and-more.md).
   
@@ -40,7 +40,7 @@ Use la página **Información personal** para cambiar su nombre, número de tel�
 
 2. En el encabezado, seleccione su \> icono de perfil mi **información personal**de **la cuenta** \> .
 
-3. En la sección **detalles de contacto** , seleccione Editar. Actualice su dirección de correo electrónico móvil, Telefónica y alternativa. Asegúrese de usar una dirección de correo electrónico distinta de Office 365 para la dirección de correo electrónico alternativa.
+3. En la sección **detalles de contacto** , seleccione Editar. Actualice su dirección de correo electrónico móvil, Telefónica y alternativa. Asegúrese de usar algo diferente de la dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
 
     > [!IMPORTANT]
     > La dirección de correo electrónico alternativa y el número de teléfono móvil son necesarios para restablecer la contraseña de administrador (no la contraseña de administrador del equipo).
@@ -49,6 +49,6 @@ Use la página **Información personal** para cambiar su nombre, número de tel�
   
 Para obtener respuestas a preguntas sobre facturación, consulte:
   
-- [Cambiar las direcciones de facturación de Office 365 para empresas](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Cambiar las direcciones de facturación para Microsoft 365 para empresas](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria en Office 365 para empresas](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria en Microsoft 365 para empresas](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

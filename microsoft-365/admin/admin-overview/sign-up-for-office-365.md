@@ -1,5 +1,5 @@
 ---
-title: Cómo iniciar sesión en Office 365 ayuda de administración
+title: 'Cómo registrarse: ayuda de administración'
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,20 +26,20 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Comprenda lo que necesita saber antes de pasar por el proceso de registro de Office 365. '
-ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 45f7603df814e2088506929d309266ef19ffc7ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352961"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623899"
 ---
-# <a name="how-to-sign-up-for-office-365---admin-help"></a>Cómo iniciar sesión en Office 365 ayuda de administración
+# <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: ayuda de administración
 
 ::: moniker range="o365-worldwide"
 
-Regístrese en Office 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
+Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
   
-Vea una introducción rápida de los tres planes de Office 365 para empresas o desplácese hacia abajo para obtener más información.
+Vea una introducción rápida de los tres planes de Microsoft 365 para empresas, o desplácese hacia abajo para obtener más información.
 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
@@ -48,7 +48,7 @@ Vea una introducción rápida de los tres planes de Office 365 para empresas o d
 
 ::: moniker range="o365-germany"
 
-Regístrese en Office 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
+Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
   
 Vea una introducción rápida de los tres planes más idóneos para su empresa. o Desplázate hacia abajo para obtener más información.
 <br><br>
@@ -59,7 +59,7 @@ Vea una introducción rápida de los tres planes más idóneos para su empresa. 
 
 ::: moniker range="o365-21vianet"
 
-Office 365 ofrecido por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no gestiona el servicio. 21Vianet opera, proporciona y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Mediante la licencia de las tecnologías de Microsoft, 21Vianet opera los centros de datos locales de Office 365 para proporcionar la capacidad de usar los servicios de Office 365 y mantener los datos en China. 21Vianet también ofrece servicios de suscripción y facturación, así como soporte técnico.
+Office 365 ofrecido por 21Vianet está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China. Este servicio funciona con tecnología cuya licencia Microsoft ha concedido a 21Vianet. Microsoft no gestiona el servicio. 21Vianet opera, proporciona y administra la entrega del servicio. 21Vianet es el mayor proveedor de servicios de centro de datos de Internet independiente del operador de China y ofrece hospedaje, servicios de red administrados y servicios de infraestructura de informática en la nube. Mediante la licencia de las tecnologías de Microsoft, 21Vianet opera centros de datos locales de Microsoft para proporcionar la capacidad de usar los servicios de Microsoft y mantener los datos en China. 21Vianet también ofrece servicios de suscripción y facturación, así como soporte técnico.
   
 > [!NOTE]
 > Estos servicios están sujetos a las leyes chinas.
@@ -75,7 +75,7 @@ Cuando se suscribe a Office 365 operado por 21Vianet, su equipo puede empezar a 
 
 Antes de comprar, piense en el plan para el que se registra. Esto le ayudará a evitar problemas más adelante.
 
-Vea un breve vídeo sobre cómo elegir un plan de negocio de Office 365.<br><br>
+Vea un breve vídeo sobre cómo elegir un plan de 365 para empresas de Microsoft.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -129,9 +129,9 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
   - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
 
     > [!NOTE]
-    > La dirección de correo electrónico que introduce es diferente de su dirección de Office 365 (el nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.
+    > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico de Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.
   
-- **Un nombre de inicio de sesión (identificador de usuario):** Se convierte en su dirección de correo electrónico de Office 365 inicial, solo para que empiece rápidamente.
+- **Un nombre de inicio de sesión (identificador de usuario):** Se convierte en su dirección de correo electrónico de Microsoft 365 inicial, solo para que empiece rápidamente.
 
     Esta es la dirección de correo electrónico que usa para iniciar sesión. Por ejemplo, si su nombre comercial es Fourth Coffee, es posible que elija rob@fourthcoffee.onmicrosoft.com como su ID de usuario.
 
@@ -146,4 +146,4 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
 
 ## <a name="see-also"></a>Vea también
 
-[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

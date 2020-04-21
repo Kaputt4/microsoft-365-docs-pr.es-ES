@@ -1,5 +1,5 @@
 ---
-title: Agregar información de asistencia personalizada en el panel de ayuda de Office 365
+title: Agregar información de servicio de asistencia personalizada al panel de ayuda
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -20,27 +20,27 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Cree una tarjeta de asistencia personalizada en el centro de administración y agregue información de contacto de soporte técnico personalizada al panel de ayuda.
-ms.openlocfilehash: af1000be1f8b26e79097f8b686aafc37da6e9366
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627901"
 ---
-# <a name="add-customized-help-desk-info-to-the-office-365-help-pane"></a>Agregar información de asistencia personalizada en el panel de ayuda de Office 365
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a>Agregar información de servicio de asistencia personalizada al panel de ayuda
 
 Como administrador, puede simplificar la compatibilidad con los usuarios si agrega información de contacto personalizada al panel de ayuda. Los usuarios que necesiten ayuda podrán tener acceso a la información de contacto de soporte personalizado de su organización con el icono de ayuda.
   
-Para crear una tarjeta de asistencia personalizada, debe ser un administrador global de Office 365 y tener una licencia de Exchange Online. Obtenga información sobre cómo [asignar licencias en Office 365 para empresas](../manage/assign-licenses-to-users.md).
+Para crear una tarjeta de asistencia personalizada, debe ser un administrador global de Microsoft 365 y tener una licencia para Exchange Online. Obtenga información sobre cómo [asignar licencias en Microsoft 365 para empresas](../manage/assign-licenses-to-users.md).
 
 > [!NOTE]
-> Si es un administrador que busca soporte técnico o de facturación de Microsoft, consulte [Contact Office 365 for Business Support](../contact-support-for-business-products.md). 
+> Si es un administrador que busca soporte técnico o de facturación de Microsoft, consulte [ponerse en contacto con el soporte técnico de microsoft 365 para empresas](../contact-support-for-business-products.md). 
 
   
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Crear la tarjeta de asistencia personalizada en el centro de administración
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. En el centro de administración, vaya a **configuración y elija la** > **** pestaña información del **servicio de asistencia** .
+1. En el centro de administración, vaya a **configuración y elija la** > **Settings** pestaña información del **servicio de asistencia** .
     
 2. En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.
   

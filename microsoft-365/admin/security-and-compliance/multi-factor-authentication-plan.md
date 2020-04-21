@@ -1,5 +1,5 @@
 ---
-title: Plan de Multi-Factor Authentication para implementaciones de Office 365
+title: Planeación de multi-factor Authentication para implementaciones de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre la autenticación multifactor en Office 365 y los pasos que debe seguir para configurarla.
-ms.openlocfilehash: 715baeb0355ab203e890f2c87cf0751eff69e7f8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+description: Obtenga más información sobre la autenticación multifactor en Microsoft 365 y los pasos que debe seguir para configurarla.
+ms.openlocfilehash: c68fdb5c1a144c6bfe1161d95e1d6808461e2456
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627709"
 ---
-# <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Plan de Multi-Factor Authentication para implementaciones de Office 365
+# <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Planeación de multi-factor Authentication para implementaciones de Microsoft 365
 
 La autenticación multifactor (AM) es un método de autenticación que requiere el uso de más de un método de comprobación y agrega un segundo nivel de seguridad para inicios de sesión de usuario y transacciones. Funciona solicitando un paso de comprobación de adición con información más allá de la contraseña de la cuenta de usuario, como por ejemplo:
   
@@ -39,9 +39,9 @@ La autenticación multifactor (AM) es un método de autenticación que requiere 
     
 - Un dispositivo biométrico 
     
-## <a name="mfa-in-office-365"></a>MFA en Office 365
+## <a name="multi-factor-authentication-in-microsoft-365"></a>Multi-factor Authentication en Microsoft 365
 
-Office 365 usa MFA para la seguridad de inicio de sesión adicional y se puede administrar para cada cuenta de usuario individual desde el centro de administración de Microsoft 365. Office 365 ofrece el siguiente subconjunto de capacidades de Azure multi-factor Authentication como parte de su suscripción: 
+Microsoft 365 usa multi-factor Authentication para ayudar a proporcionar la seguridad adicional y se administra desde el centro de administración de Microsoft 365. Microsoft 365 ofrece el siguiente subconjunto de capacidades de Azure multi-factor Authentication como parte de la suscripción: 
   
 - La capacidad de habilitar y exigir MFA a los usuarios finales
     
@@ -57,26 +57,23 @@ Office 365 usa MFA para la seguridad de inicio de sesión adicional y se puede a
     
 Para obtener la lista completa de características adicionales, vea [la comparación de versiones de Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/?LinkId=506927). Siempre puede obtener la funcionalidad completa si compra el servicio Azure Multi-Factor Authentication. 
   
-Obtiene un subconjunto diferente de funcionalidades en función de si tiene una identidad solo de nube o híbrida para Office 365 o la autenticación federada con los servicios de Federación de Active Directory (AD FS). 
+Obtendrá un subconjunto diferente de funcionalidades en función de si tiene una implementación de solo nube para Microsoft 365 o una configuración híbrida con inicio de sesión único y servicios de Federación de Active Directory (AD FS). 
   
-|**¿Dónde se administra el inquilino de Office 365?** | **Opciones de segundo factor de MFA**|
-
-|:-----|:-----| | Solo nube  <br/> | Azure multi-factor Authentication (texto o llamada telefónica)  <br/> | | Configuración híbrida, administrada localmente  <br/> | Si administra la identidad de usuario local, tiene las siguientes opciones:  <br/>  Tarjeta inteligente física o virtual (al usar AD FS)  <br/> [Azure multi-factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=526677) (módulo para AD FS)  <br/>  Autenticación multifactor de Azure Active Directory (Azure AD)  <br/> |
+|**¿Dónde se administra Microsoft 365?**|**Opciones de segundo factor de MFA**|
+|:-----|:-----|
+|Solo nube  <br/> |Azure Active Directory MFA (texto o llamada de teléfono)  <br/> |
+|Configuración híbrida, administrada localmente  <br/> | Si administra identidades de usuario locales, tiene las siguientes opciones:  <br/>  Tarjeta inteligente física o virtual (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (módulo para AD FS)  <br/>  Azure AD MFA  <br/> |
    
   
-En la siguiente figura se muestra cómo las aplicaciones de dispositivo de Office 2013 actualizadas (en Windows) permiten a los usuarios iniciar sesión con MFA. 
-
-![Autenticación moderna para las aplicaciones para dispositivo de Office 2013.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-
-Las aplicaciones de dispositivo de Office 2013 admiten la autenticación multifactor mediante el uso de la [biblioteca de autenticación de Active Directory (Adal)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hospeda una página web donde los usuarios pueden iniciar sesión. El proveedor de identidades puede ser Azure AD o un proveedor de identidades federadas como AD FS. La autenticación con usuarios federados sigue estos pasos:
+En la siguiente figura se muestra cómo las aplicaciones de dispositivo de Office 2013 actualizadas (en Windows) permiten a los usuarios iniciar sesión con MFA. Las aplicaciones del dispositivo de Office 2013 admiten autenticación multifactor mediante el uso de la [Biblioteca de autenticación de Active Directory (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hospeda una página web donde los usuarios pueden iniciar sesión. El proveedor de identidades puede ser Azure AD o un proveedor de identidades federadas como AD FS. La autenticación con usuarios federados sigue estos pasos:
   
-1. Azure AD redirige al usuario a la página web de inicio de sesión hospedada por el proveedor de identidades de registro para el inquilino de Office 365. El proveedor de identidades se determina mediante el dominio especificado en el nombre de inicio de sesión del usuario.
+1. Azure AD redirige al usuario a la Página Web de inicio de sesión hospedada por el proveedor de identidades del registro de la organización. El proveedor de identidades se determina mediante el dominio especificado en el nombre de inicio de sesión del usuario.
     
 2. El usuario inicia sesión en la página web de inicio de sesión en su dispositivo. 
     
 3. El proveedor de identidades devuelve un token a Azure AD cuando el usuario inicia sesión correctamente.
     
-4. Azure AD devuelve un token web de JSON (JWT) a la aplicación de dispositivo de Office y la aplicación de dispositivo se autentica mediante un JWT con Office 365. 
+4. Azure AD devuelve un token Web de JSON (JWT) a la aplicación de dispositivo de Office y la aplicación de dispositivo se autentica con un JWT con Microsoft 365. 
     
   
 ## <a name="requirements-for-office-2013-client-apps"></a>Requisitos para aplicaciones cliente de Office 2013
@@ -123,28 +120,32 @@ En el caso de las instalaciones basadas en MSI, debe tener instalado el software
    
 ## <a name="enable-mfa"></a>Habilitar MFA
 
-Para habilitar MFA para la suscripción a Office 365, siga estos pasos:
+Para habilitar MFA en la suscripción, siga estos pasos:
   
 1. Si es necesario, [habilite la autenticación moderna para Office 2013 en dispositivos Windows](enable-modern-authentication.md).
     
-2. Para la autenticación federada, configure Azure multi-factor Authentication con su servicio de directorio de terceros.
+  - Configurar Azure MFA con servicios de directorio de terceros.
     
     Consulte [escenarios avanzados con la autenticación multifactor de Azure y soluciones VPN de terceros](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) para obtener información sobre proveedores de identidades específicos aceptados para este programa. 
     
-3. [Configure multi-factor Authentication para Office 365](set-up-multi-factor-authentication.md).
+2. [Configurar multi-factor Authentication para Microsoft 365](set-up-multi-factor-authentication.md)
     
-4. Informe a los usuarios sobre cómo [configurar la MFA para su cuenta de usuario de Office 365](https://support.office.com/article/set-up-2-step-verification-for-office-365-ace1d096-61e5-449b-a875-58eb3d74de14). Después de configurar el método de autenticación secundario, los inicios de sesión futuros requerirán MFA.
-    
+3. Informe a los usuarios individuales sobre cómo iniciar sesión por MFA: [inicie sesión en Microsoft 365 con verificación en dos pasos](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
+
 > [!IMPORTANT]
-> Si ha habilitado a los usuarios para la autenticación multifactor de Azure y tiene los dispositivos que ejecutan Office 2013 y que no están habilitados para la autenticación moderna, deberán usar contraseñas de aplicación. Puede encontrar más información sobre las contraseñas de aplicación y cuándo, dónde y cómo se deben usar: las [contraseñas de aplicación con la autenticación de Azure Multi_Factor](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> Si ha habilitado a los usuarios para Azure AD MFA y tienen dispositivos que ejecutan Office 2013 y no están habilitados para autenticación moderna, deben usar AppPasswords con esos dispositivos. Aquí encontrará más información sobre AppPasswords y cuándo, dónde y cómo debe usarse: [App Passwords con Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178).
+  
+## <a name="faq"></a>Preguntas más frecuentes
+
+[Artículo de wiki de preguntas más frecuentes sobre la autenticación moderna](https://go.microsoft.com/fwlink/p/?LinkId=530064)
   
 ## <a name="known-issues"></a>Problemas conocidos
-  
-[Office 2013 y Office 365 ProPlus: autenticación moderna: aspectos que deben conocerse antes de la incorporación](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+
+[Office 2013 y aplicaciones de Microsoft 365 para la autenticación moderna empresarial: aspectos que deben conocerse antes de la incorporación](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Solución de problemas de Azure Multi-Factor Authentication**
   
-Consulte [troubleshoot Azure multi-factor Authentication](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
+Vea [Solucionar problemas de Azure MFA](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
   
 [Cómo solucionar problemas de inicio de sesión con autenticación moderna de Office 2013 al usar AD FS](https://support.microsoft.com/kb/3052203/)
   
@@ -156,7 +157,7 @@ Consulte [troubleshoot Azure multi-factor Authentication](https://support.micros
   
  **Filtrado de acceso de cliente:**
   
-[Autenticación moderna de Office 2013 y Office 365 ProPlus y directivas de filtrado de acceso: Lo que debe saber antes de la integración](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 y Microsoft 365 aplicaciones para la autenticación moderna para empresas y directivas de filtrado de acceso de cliente: lo que debe saber antes de la incorporación](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **¿Qué aplicaciones son compatibles con MFA?**
   

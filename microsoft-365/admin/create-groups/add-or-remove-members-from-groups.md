@@ -1,5 +1,5 @@
 ---
-title: Agregar o quitar miembros de los grupos de Office 365
+title: Agregar o quitar miembros de grupos de 365 de Microsoft
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar un miembro del grupo y administrar el estado del propietario del grupo en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894716"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631318"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de los grupos de Office 365 mediante el centro de administración
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de grupos de 365 de Microsoft mediante el centro de administración
 
-En Office 365, los miembros del grupo normalmente crean sus propios grupos, se agregan a sí mismos a los grupos a los que quieren unirse o son invitados por los propietarios del grupo. Si cambia la propiedad de un grupo o si determina que se debe agregar o quitar un miembro, como administrador también puede realizar ese cambio. Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios. [¿Qué es un grupo de Office 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, se agregan a sí mismos a los grupos a los que quieren unirse o son invitados por los propietarios del grupo. Si cambia la propiedad de un grupo o si determina que se debe agregar o quitar un miembro, como administrador también puede realizar ese cambio. Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios. [¿Qué es un grupo de Microsoft 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > Si no es administrador, puede [Agregar o quitar miembros mediante Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
@@ -46,7 +46,7 @@ En Office 365, los miembros del grupo normalmente crean sus propios grupos, se a
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
 ::: moniker-end
 
@@ -60,7 +60,7 @@ En Office 365, los miembros del grupo normalmente crean sus propios grupos, se a
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ En Office 365, los miembros del grupo normalmente crean sus propios grupos, se a
       
 4. Busque o seleccione el nombre del miembro que desee agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ En Office 365, los miembros del grupo normalmente crean sus propios grupos, se a
       
 4. Busque o seleccione el nombre del grupo que desea agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -237,7 +237,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 ::: moniker-end
 
@@ -251,7 +251,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 5. Seleccione la X junto al nombre del propietario. 
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -280,12 +280,12 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
     
 ## <a name="articles-about-managing-groups"></a>Artículos sobre la administración de grupos
     
-- [Actualizar listas de distribución a grupos de Office 365 en Outlook](../manage/upgrade-distribution-lists.md)
+- [Actualizar listas de distribución a grupos de 365 de Microsoft en Outlook](../manage/upgrade-distribution-lists.md)
     
 - [Por qué debería actualizar sus listas de distribución a los grupos de Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Administrar el acceso de invitado en los grupos de Office 365](manage-guest-access-in-groups.md)    
+- [Administrar el acceso de invitado en grupos de 365 de Microsoft](manage-guest-access-in-groups.md)    
     
-- [Administrar grupos de Office 365 con PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) : en este artículo se presentan los cmdlet clave y se proporcionan ejemplos.
+- [Manage Microsoft 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): en este artículo se presentan los cmdlets clave y se proporcionan ejemplos.
     
-- [Directiva de nomenclatura de grupos de Office 365](groups-naming-policy.md)
+- [Directiva de nomenclatura de grupos de 365 de Microsoft](groups-naming-policy.md)

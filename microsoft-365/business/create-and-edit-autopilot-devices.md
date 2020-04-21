@@ -24,15 +24,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Obtenga información sobre cómo cargar dispositivos con el piloto automático en Microsoft 365 Business. Puede asignar un perfil a un dispositivo o a un grupo de dispositivos.
-ms.openlocfilehash: 640e4af7cccde83c87d90a875c1d44dead7255ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información acerca de cómo cargar dispositivos con el piloto automático en Microsoft 365 empresa Premium. Puede asignar un perfil a un dispositivo o a un grupo de dispositivos.
+ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065998"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627402"
 ---
-# <a name="create-and-edit-autopilot-devices"></a>Crear y editar dispositivos de AutoPilot
+# <a name="create-and-edit-autopilot-devices"></a>Crear y editar dispositivos de Autopilot
 
 ## <a name="upload-a-list-of-devices"></a>Cargar una lista de dispositivos
 
@@ -44,9 +44,9 @@ Los dispositivos deben cumplir estos requisitos:
     
 - Nuevos dispositivos que no han estado a la vista rápida de Windows
 
-1. En el centro de administración de Microsoft 365 Business, elija **dispositivos** \> **AutoPilot**.
+1. En el centro de administración de Microsoft 365, elija **dispositivos** \> **AutoPilot**.
   
-2. En la **Página AutoPilot** , elija la **** pestaña \> dispositivos y **agregue dispositivos**.
+2. En la **Página AutoPilot** , elija la **Devices** pestaña \> dispositivos y **agregue dispositivos**.
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   

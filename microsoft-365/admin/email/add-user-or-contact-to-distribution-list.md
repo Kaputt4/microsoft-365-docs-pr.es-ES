@@ -1,5 +1,5 @@
 ---
-title: Agregar un usuario o contacto a un grupo de distribución de Office 365
+title: Agregar un usuario o contacto a un grupo de distribución
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: Obtenga información sobre cómo agregar un usuario o un contacto de Office 365 a un grupo de distribución. Por ejemplo, puede Agregar un empleado, asociado o un proveedor a su grupo de distribución de correo electrónico.
-ms.openlocfilehash: 2a6ee1336f738b57740469d6d74b461a69d7fc8c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Obtenga información sobre cómo agregar un contacto o un usuario de Microsoft 365 a un grupo de distribución. Por ejemplo, puede Agregar un empleado, asociado o un proveedor a su grupo de distribución de correo electrónico.
+ms.openlocfilehash: 0b1feacbd3e35adcdf96ae8c42aa330921a4b390
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362375"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629076"
 ---
-# <a name="add-a-user-or-contact-to-an-office-365-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución de Office 365
+# <a name="add-a-user-or-contact-to-a-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución
 
-Como administrador de una organización de Office 365, es posible que tenga que agregar uno de los usuarios o contactos a un grupo de distribución (vea [Create Distribution Groups in Office 365](../setup/create-distribution-lists.md)). Por ejemplo, puede Agregar empleados o proveedores o socios externos a un grupo de distribución de correo electrónico.
+Como administrador de una organización, es posible que tenga que agregar uno de los usuarios o contactos a un grupo de distribución (consulte [crear grupos de distribución en Microsoft 365](../setup/create-distribution-lists.md)). Por ejemplo, puede Agregar empleados o proveedores o socios externos a un grupo de distribución de correo electrónico.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Agregar un usuario o contacto a un grupo de distribución
 
@@ -37,7 +37,7 @@ Como administrador de una organización de Office 365, es posible que tenga que 
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
 
 2. En la página **grupos** , seleccione el nombre del grupo al que desea agregar un contacto.
 
@@ -53,7 +53,7 @@ Como administrador de una organización de Office 365, es posible que tenga que 
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. En la página **grupos** , seleccione el grupo al que desea agregar un contacto.
     
@@ -71,7 +71,7 @@ Si todavía no ha creado el [contacto](../misc/contacts.md), créelo primero tal
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
     
 2. En la página **grupos** , seleccione el grupo al que desea agregar un contacto.
     
@@ -92,6 +92,6 @@ Si todavía no ha creado el [contacto](../misc/contacts.md), créelo primero tal
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-Obtenga información sobre cómo [Enviar correo electrónico como un grupo de distribución en Office 365](../manage/send-email-as-distribution-list.md).
+Obtenga información sobre cómo [Enviar correo electrónico como un grupo de distribución en Microsoft 365](../manage/send-email-as-distribution-list.md).
   
 

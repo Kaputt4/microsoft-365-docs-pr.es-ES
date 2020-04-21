@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en un sitio de SharePoint.
-ms.openlocfilehash: 3a7c14cc4cd31961b0d4c1054f88b5ed276b3b1a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630742"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
-Si necesita colaborar con invitados en documentos, datos y listas, puede usar un sitio de SharePoint. Los sitios modernos de SharePoint están conectados a Office 365 grupos que pueden administrar la pertenencia al sitio y proporcionar herramientas de colaboración adicionales, como un buzón compartido y un calendario.
+Si necesita colaborar con invitados en documentos, datos y listas, puede usar un sitio de SharePoint. Los sitios modernos de SharePoint están conectados a grupos de 365 de Microsoft y pueden administrar la pertenencia a sitios y proporcionar herramientas de colaboración adicionales, como un buzón compartido y un calendario.
 
 En este artículo, analizaremos los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
 
@@ -48,17 +48,17 @@ Para establecer la configuración de relación organizativa
 
 Anote la configuración de la sección **restricciones de colaboración** . Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-## <a name="office-365-groups-guest-settings"></a>Configuración de invitado de Office 365 Groups
+## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Microsoft 365 Groups
 
-Los sitios modernos de SharePoint usan grupos de Office 365 para controlar el acceso al sitio. La configuración de invitado de los grupos de Office 365 debe estar activada para que el acceso de invitado en los sitios de SharePoint funcione.
+Los sitios modernos de SharePoint usan grupos de Microsoft 365 para controlar el acceso al sitio. La configuración de invitado de Microsoft 365 Groups debe estar activada para que el acceso de invitado en los sitios de SharePoint funcione.
 
-![Captura de pantalla de la configuración de invitados de Grupos de Office 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitado de Microsoft 365 Groups en el centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-Para establecer la configuración de invitado de Office 365 Groups
+Para establecer la configuración de invitado de Microsoft 365 Groups
 
 1. En el centro de administración de Microsoft 365, en el panel de navegación de la izquierda, expanda **configuración**.
 2. Haga clic en **servicios & complementos**.
-3. En la lista, haga clic en **grupos de Office 365**.
+3. En la lista, haga clic en **grupos de 365 de Microsoft**.
 4. Asegúrese de que la casilla **permitir a los miembros del grupo fuera de la organización el acceso al contenido del grupo** y **que los propietarios del grupo agreguen personas fuera de la organización a las** casillas de verificación están activadas.
 5. Si ha realizado cambios, haga clic en **Guardar cambios**.
 
@@ -113,7 +113,7 @@ Para establecer la configuración de uso compartido de nivel de sitio
 
 ## <a name="invite-users"></a>Invitar a usuarios
 
-La configuración de uso compartido de invitados ya está configurada, por lo que puede empezar a agregar invitados y usuarios internos a su sitio. El acceso al sitio se controla mediante el grupo de Office 365 asociado, por lo que vamos a agregar a los usuarios.
+La configuración de uso compartido de invitados ya está configurada, por lo que puede empezar a agregar invitados y usuarios internos a su sitio. El acceso al sitio se controla a través del grupo de Microsoft 365 asociado, por lo que vamos a agregar a los usuarios.
 
 Para invitar a usuarios internos a un grupo
 1. Navegue hasta el sitio en el que desea agregar usuarios.

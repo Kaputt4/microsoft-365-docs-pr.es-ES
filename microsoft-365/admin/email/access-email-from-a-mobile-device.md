@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo acceder al correo electrónico desde su dispositivo móvil.
-ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362395"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629100"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opciones para acceder al correo electrónico desde su dispositivo móvil
 
@@ -41,6 +41,6 @@ Consulte [optimizar la aplicación móvil de Outlook para su teléfono iOS o And
   
  **Cualquier aplicación de correo electrónico**
   
-Su organización le recomienda usar la aplicación móvil de Outlook para Android o iOS para acceder a su cuenta profesional o educativa de Office 365 para el correo electrónico, el calendario y los contactos. Si no realiza ninguna acción en las próximas horas, el correo electrónico empezará a sincronizarse automáticamente. Si elige usar la aplicación móvil de Outlook para Android o iOS, los datos solo se sincronizarán con la aplicación móvil de Outlook para Android o Outlook para iOS. Si decide seguir usando la aplicación de terceros, los datos empezarán a sincronizarse al instante.
+Su organización le recomienda usar la aplicación móvil de Outlook para Android o iOS para acceder a su cuenta profesional o educativa para el correo electrónico, el calendario y los contactos. Si no realiza ninguna acción en las próximas horas, el correo electrónico empezará a sincronizarse automáticamente. Si elige usar la aplicación móvil de Outlook para Android o iOS, los datos solo se sincronizarán con la aplicación móvil de Outlook para Android o Outlook para iOS. Si decide seguir usando la aplicación de terceros, los datos empezarán a sincronizarse al instante.
   
 

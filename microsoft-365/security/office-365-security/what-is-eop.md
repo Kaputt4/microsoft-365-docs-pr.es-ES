@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes de Office 365 que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597997"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630922"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>¿Qué es Exchange Online Protection (EOP)?
 
-Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. Si tiene buzones de correo en Office 365, estos se protegen automáticamente mediante EOP, ya que forma parte del servicio. Esto incluye a las organizaciones que tienen buzones de correo en Office 365 y local, lo que se conoce comúnmente como escenario híbrido. EOP independiente también está disponible para los clientes que no tienen buzones de correo en la nube pero que quieren proteger sus buzones locales.
+Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. Si tiene buzones de correo en Microsoft 365, se protegen automáticamente mediante EOP, ya que forma parte del servicio. Esto incluye a las organizaciones que tienen buzones de correo en Microsoft 365 y en local, lo que se conoce comúnmente como escenario híbrido. EOP independiente también está disponible para los clientes que no tienen buzones de correo en la nube pero que quieren proteger sus buzones locales.
 
 EOP intenta filtrar el correo no deseado y mantener la bandeja de entrada sin contenido que los usuarios no desean ver. Normalmente, el correo no deseado se entrega a la carpeta de correo no deseado. Algunos usuarios desean comprobar que el filtrado está haciendo lo que desea, por lo que la carpeta de correo no deseado es una forma fácil de que los usuarios comprueben su propio contenido.  
 
 > [!TIP]
-> Lo más importante es que el correo electrónico no deseado o el correo no deseado se envíen automáticamente a la carpeta correo electrónico no deseado. El servicio hará lo necesario en función de cuál es el estado de configuración predeterminada o personalizada del administrador. Es decir, los usuarios no deben preocuparse por ver un gran número de mensajes de correo no deseado en la carpeta correo electrónico no deseado. Si los administradores prefieren mover todo el correo no deseado fuera de la vista, la cuarentena debe estar configurada. Para obtener más información, consulte el artículo [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md) .
+> Lo más importante es que el correo electrónico no deseado o el correo no deseado se envíen automáticamente a la carpeta correo electrónico no deseado. El servicio hará lo necesario en función de cuál es el estado de configuración predeterminada o personalizada del administrador. Es decir, los usuarios no deben preocuparse por ver un gran número de mensajes de correo no deseado en la carpeta correo electrónico no deseado. Si los administradores prefieren mover todo el correo no deseado fuera de la vista, la cuarentena debe estar configurada. Para obtener más información, consulte el artículo [cuarentena de mensajes de correo electrónico](quarantine-email-messages.md) .
 
 ## <a name="important-terms"></a>Términos importantes
 
-**Entrante**: mensajes que entran en Office 365.
+**Entrante**: mensajes que entran en Microsoft 365.
 
-**Saliente**: mensajes que salen de la oficina 365.
+**Saliente**: mensajes que salen de Microsoft 365.
 
 **Internos**: mensajes de alguien dentro de la organización a alguien dentro de la organización. Esto incluye a los clientes que están en escenarios híbridos y un buzón de correo puede ser local y el otro buzón de correo está en la nube.
 
