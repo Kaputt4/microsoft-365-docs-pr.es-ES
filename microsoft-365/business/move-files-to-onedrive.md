@@ -23,34 +23,34 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Obtenga información sobre cómo mover sus archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la empresa en tan solo unos pocos pasos sencillos.
-ms.openlocfilehash: 7c36eb272983f86ee42361478ff63dfca252f0ce
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 4c41928ac51950a5a8c372ef0a170a76ff48ed2e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561688"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633147"
 ---
-# <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="8cefc-103">Mover archivos a OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="8cefc-103">Move files to OneDrive for Business</span></span>
+# <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="4ee62-103">Mover archivos a OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="4ee62-103">Move files to OneDrive for Business</span></span>
 
-<span data-ttu-id="8cefc-104">Vea un breve vídeo sobre cómo mover archivos a OneDrive para la empresa.</span><span class="sxs-lookup"><span data-stu-id="8cefc-104">Watch a short video about moving files to OneDrive for Business.</span></span><br><br>
+<span data-ttu-id="4ee62-104">Vea un breve vídeo sobre cómo mover archivos a OneDrive para la empresa.</span><span class="sxs-lookup"><span data-stu-id="4ee62-104">Watch a short video about moving files to OneDrive for Business.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-<span data-ttu-id="8cefc-105">Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="8cefc-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="4ee62-105">Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span><span class="sxs-lookup"><span data-stu-id="4ee62-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
 
-## <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="8cefc-106">Mover archivos a OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="8cefc-106">Move files to OneDrive for Business</span></span>
+## <a name="move-files-to-onedrive-for-business"></a><span data-ttu-id="4ee62-106">Mover archivos a OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="4ee62-106">Move files to OneDrive for Business</span></span>
 
-<span data-ttu-id="8cefc-107">Si un usuario tiene un equipo que incluye muchos archivos personales, primero debe mover esos archivos a OneDrive para la Empresa:</span><span class="sxs-lookup"><span data-stu-id="8cefc-107">If a user has a computer that includes many personal files, you should first move those files to OneDrive for Business:</span></span>
+<span data-ttu-id="4ee62-107">Si un usuario tiene un equipo que incluye muchos archivos personales, primero debe mover esos archivos a OneDrive para la Empresa:</span><span class="sxs-lookup"><span data-stu-id="4ee62-107">If a user has a computer that includes many personal files, you should first move those files to OneDrive for Business:</span></span>
   
-1. <span data-ttu-id="8cefc-108">Vaya a portal.office.com e inicie sesión con las credenciales de Microsoft 365 Business del usuario.</span><span class="sxs-lookup"><span data-stu-id="8cefc-108">Go to portal.office.com and sign in with the user's Microsoft 365 Business credentials.</span></span>
-    
-2. <span data-ttu-id="8cefc-109">Haga clic en el iniciador de aplicaciones</span><span class="sxs-lookup"><span data-stu-id="8cefc-109">Click the app launcher</span></span> ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) <span data-ttu-id="8cefc-111">y vaya a OneDrive.</span><span class="sxs-lookup"><span data-stu-id="8cefc-111">and go to OneDrive.</span></span> 
-    
-3. <span data-ttu-id="8cefc-112">Elija **Cargar**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) en la barra de menús y después vaya a los archivos que quiera guardar.</span><span class="sxs-lookup"><span data-stu-id="8cefc-112">Choose **Upload**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save.</span></span> 
-    
-<span data-ttu-id="8cefc-p101">Para transferir el perfil de usuario y archivos importantes, también puede usar una herramienta de terceros, como ForensiT. Debe cargar los archivos resultantes también en OneDrive para la Empresa.</span><span class="sxs-lookup"><span data-stu-id="8cefc-p101">To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.</span></span>
-  
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a><span data-ttu-id="8cefc-115">Para obtener más información sobre la configuración y el uso de Microsoft 365 Business</span><span class="sxs-lookup"><span data-stu-id="8cefc-115">For more on setting up and using Microsoft 365 Business</span></span>
+1. <span data-ttu-id="4ee62-108">Vaya a portal.office.com e inicie sesión con las credenciales de Microsoft 365 para empresas del usuario.</span><span class="sxs-lookup"><span data-stu-id="4ee62-108">Go to portal.office.com and sign in with the user's Microsoft 365 for business credentials.</span></span>
 
-[<span data-ttu-id="8cefc-116">Vídeos de aprendizaje de Microsoft 365 Empresa</span><span class="sxs-lookup"><span data-stu-id="8cefc-116">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+2. <span data-ttu-id="4ee62-109">Haga clic en el iniciador de aplicaciones</span><span class="sxs-lookup"><span data-stu-id="4ee62-109">Click the app launcher</span></span> ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) <span data-ttu-id="4ee62-111">y vaya a OneDrive.</span><span class="sxs-lookup"><span data-stu-id="4ee62-111">and go to OneDrive.</span></span> 
+    
+3. <span data-ttu-id="4ee62-112">Elija **Cargar**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) en la barra de menús y después vaya a los archivos que quiera guardar.</span><span class="sxs-lookup"><span data-stu-id="4ee62-112">Choose **Upload**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) in the menu bar, and browse to the files you want to save.</span></span> 
+    
+<span data-ttu-id="4ee62-p101">Para transferir el perfil de usuario y archivos importantes, también puede usar una herramienta de terceros, como ForensiT. Debe cargar los archivos resultantes también en OneDrive para la Empresa.</span><span class="sxs-lookup"><span data-stu-id="4ee62-p101">To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.</span></span>
+  
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a><span data-ttu-id="4ee62-115">Para obtener más información sobre la configuración y el uso de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="4ee62-115">For more on setting up and using Microsoft 365 for business</span></span>
+
+[<span data-ttu-id="4ee62-116">Vídeos de aprendizaje de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="4ee62-116">Microsoft 365 for business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

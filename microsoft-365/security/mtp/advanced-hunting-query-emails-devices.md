@@ -17,35 +17,35 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928989"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633512"
 ---
-# <a name="hunt-for-threats-across-devices-and-emails"></a><span data-ttu-id="5de1b-104">Búsqueda de amenazas en dispositivos y mensajes de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="5de1b-104">Hunt for threats across devices and emails</span></span>
+# <a name="hunt-for-threats-across-devices-and-emails"></a><span data-ttu-id="4469c-104">Búsqueda de amenazas en dispositivos y mensajes de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="4469c-104">Hunt for threats across devices and emails</span></span>
 
-<span data-ttu-id="5de1b-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="5de1b-105">**Applies to:**</span></span>
-- <span data-ttu-id="5de1b-106">Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="5de1b-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="4469c-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="4469c-105">**Applies to:**</span></span>
+- <span data-ttu-id="4469c-106">Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="4469c-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="5de1b-107">La [Búsqueda avanzada](advanced-hunting-overview.md) en la Protección contra amenazas de Microsoft le permite buscar de forma proactiva amenazas en sus dispositivos Windows y en los correos electrónicos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="5de1b-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Office 365 emails.</span></span> <span data-ttu-id="5de1b-108">Éstos son algunos escenarios de búsqueda y consultas de ejemplo que puedan ayudarle a explorar la forma en que puede crear consultas que cubran tanto dispositivos como mensajes de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="5de1b-108">Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.</span></span>
+<span data-ttu-id="4469c-107">La [búsqueda avanzada](advanced-hunting-overview.md) de Microsoft Threat Protection le permite buscar de forma proactiva las amenazas en los dispositivos Windows y los correos electrónicos de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4469c-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Microsoft emails.</span></span> <span data-ttu-id="4469c-108">Éstos son algunos escenarios de búsqueda y consultas de ejemplo que puedan ayudarle a explorar la forma en que puede crear consultas que cubran tanto dispositivos como mensajes de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="4469c-108">Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.</span></span>
 
-## <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="5de1b-109">Obtener cuentas de usuario a través de las direcciones de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="5de1b-109">Obtain user accounts from email addresses</span></span>
-<span data-ttu-id="5de1b-110">Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario.</span><span class="sxs-lookup"><span data-stu-id="5de1b-110">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="5de1b-111">Para ello, utilice el *host local* de la dirección de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="5de1b-111">To do this use the *local-host* from the email address:</span></span>
+## <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="4469c-109">Obtener cuentas de usuario a través de las direcciones de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="4469c-109">Obtain user accounts from email addresses</span></span>
+<span data-ttu-id="4469c-110">Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario.</span><span class="sxs-lookup"><span data-stu-id="4469c-110">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="4469c-111">Para ello, utilice el *host local* de la dirección de correo electrónico:</span><span class="sxs-lookup"><span data-stu-id="4469c-111">To do this use the *local-host* from the email address:</span></span>
 
 ```kusto
 AccountName = tostring(split(SenderFromAddress, "@")[0])
 ```
 
-<span data-ttu-id="5de1b-112">Esta técnica de normalización se utiliza en los siguientes escenarios.</span><span class="sxs-lookup"><span data-stu-id="5de1b-112">This normalization technique is used in the succeeding scenarios.</span></span>
+<span data-ttu-id="4469c-112">Esta técnica de normalización se utiliza en los siguientes escenarios.</span><span class="sxs-lookup"><span data-stu-id="4469c-112">This normalization technique is used in the succeeding scenarios.</span></span>
 
-## <a name="hunting-scenarios"></a><span data-ttu-id="5de1b-113">Escenarios de búsqueda</span><span class="sxs-lookup"><span data-stu-id="5de1b-113">Hunting scenarios</span></span>
+## <a name="hunting-scenarios"></a><span data-ttu-id="4469c-113">Escenarios de búsqueda</span><span class="sxs-lookup"><span data-stu-id="4469c-113">Hunting scenarios</span></span>
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="5de1b-114">Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.</span><span class="sxs-lookup"><span data-stu-id="5de1b-114">Check if files from a known malicious sender are on your devices</span></span>
-<span data-ttu-id="5de1b-115">Suponiendo que conozca la dirección de correo electrónico que envía archivos maliciosos, usted puede ejecutar esta consulta para determinar si los archivos de este remitente se encuentran entre sus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="5de1b-115">Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="5de1b-116">Puede utilizar esta consulta para, por ejemplo, determinar el número de dispositivos afectados por una campaña de distribución de malware.</span><span class="sxs-lookup"><span data-stu-id="5de1b-116">You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.</span></span>
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="4469c-114">Compruebe si entre sus dispositivos se encuentran archivos de un remitente malintencionado conocido.</span><span class="sxs-lookup"><span data-stu-id="4469c-114">Check if files from a known malicious sender are on your devices</span></span>
+<span data-ttu-id="4469c-115">Suponiendo que conozca la dirección de correo electrónico que envía archivos maliciosos, usted puede ejecutar esta consulta para determinar si los archivos de este remitente se encuentran entre sus dispositivos.</span><span class="sxs-lookup"><span data-stu-id="4469c-115">Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="4469c-116">Puede utilizar esta consulta para, por ejemplo, determinar el número de dispositivos afectados por una campaña de distribución de malware.</span><span class="sxs-lookup"><span data-stu-id="4469c-116">You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.</span></span>
 
 ```kusto
 //Get prevalence of files sent by a malicious sender in your organization
@@ -58,8 +58,8 @@ DeviceFileEvents
 ) on SHA256
 ```
 
-### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="5de1b-117">Revisar los intentos de inicio de sesión después de recibir mensajes de correo electrónico malintencionados.</span><span class="sxs-lookup"><span data-stu-id="5de1b-117">Review logon attempts after receipt of malicious emails</span></span>
-<span data-ttu-id="5de1b-118">Esta consulta busca los 10 últimos inicios de sesión realizados por destinatarios de correo electrónico en un plazo de 30 minutos después de haber recibido mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="5de1b-118">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="5de1b-119">Puede utilizar esta consulta para comprobar si las cuentas de los destinatarios del correo electrónico se han visto comprometidas.</span><span class="sxs-lookup"><span data-stu-id="5de1b-119">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
+### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="4469c-117">Revisar los intentos de inicio de sesión después de recibir mensajes de correo electrónico malintencionados.</span><span class="sxs-lookup"><span data-stu-id="4469c-117">Review logon attempts after receipt of malicious emails</span></span>
+<span data-ttu-id="4469c-118">Esta consulta busca los 10 últimos inicios de sesión realizados por destinatarios de correo electrónico en un plazo de 30 minutos después de haber recibido mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="4469c-118">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="4469c-119">Puede utilizar esta consulta para comprobar si las cuentas de los destinatarios del correo electrónico se han visto comprometidas.</span><span class="sxs-lookup"><span data-stu-id="4469c-119">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
 
 ```kusto
 //Find logons that occurred right after malicious email was received
@@ -75,8 +75,8 @@ DeviceLogonEvents
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="5de1b-120">Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="5de1b-120">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
-<span data-ttu-id="5de1b-121">Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales.</span><span class="sxs-lookup"><span data-stu-id="5de1b-121">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="5de1b-122">Si tiene conocimiento sobre mensajes de correo electrónico conocidos procedentes del remitente malintencionado, puede utilizar esta consulta para listar y revisar actividades de PowerShell que se hayan producido en un plazo de 30 minutos después de recibir un mensaje de correo electrónico de dicho remitente.</span><span class="sxs-lookup"><span data-stu-id="5de1b-122">If you are aware of emails coming from a known malicious sender, you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender .</span></span>  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="4469c-120">Revisar las actividades de PowerShell después de recibir mensajes de correo electrónico conocidos por parte del remitente malintencionado </span><span class="sxs-lookup"><span data-stu-id="4469c-120">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
+<span data-ttu-id="4469c-121">Los mensajes malintencionados suelen contener documentos y otros datos adjuntos especialmente diseñados para ejecutar comandos de PowerShell para ofrecer cargas adicionales.</span><span class="sxs-lookup"><span data-stu-id="4469c-121">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="4469c-122">Si tiene conocimiento sobre mensajes de correo electrónico conocidos procedentes del remitente malintencionado, puede utilizar esta consulta para listar y revisar actividades de PowerShell que se hayan producido en un plazo de 30 minutos después de recibir un mensaje de correo electrónico de dicho remitente.</span><span class="sxs-lookup"><span data-stu-id="4469c-122">If you are aware of emails coming from a known malicious sender, you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender .</span></span>  
 
 ```kusto
 //Find PowerShell activities right after email was received from malicious sender
@@ -93,10 +93,10 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="5de1b-123">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="5de1b-123">Related topics</span></span>
-- [<span data-ttu-id="5de1b-124">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="5de1b-124">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="5de1b-125">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="5de1b-125">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="5de1b-126">Trabajar con resultados de consulta</span><span class="sxs-lookup"><span data-stu-id="5de1b-126">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="5de1b-127">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="5de1b-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="5de1b-128">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="5de1b-128">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="5de1b-129">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="5de1b-129">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="4469c-123">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="4469c-123">Related topics</span></span>
+- [<span data-ttu-id="4469c-124">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="4469c-124">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="4469c-125">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="4469c-125">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="4469c-126">Trabajar con resultados de consulta</span><span class="sxs-lookup"><span data-stu-id="4469c-126">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="4469c-127">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="4469c-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="4469c-128">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="4469c-128">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="4469c-129">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="4469c-129">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
