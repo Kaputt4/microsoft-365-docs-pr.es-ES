@@ -1,5 +1,5 @@
 ---
-title: Ir al Centro de seguridad y cumplimiento de Office 365
+title: Ir al Centro de seguridad y cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,29 +15,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados. La cuenta profesional o educativa debe tener asignado el rol de administrador global de Office 365 o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global.
-ms.openlocfilehash: c141f7f9de5a47412dc009ae6c077404cd3f795d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados. La cuenta profesional o educativa debe tener asignado el rol de administrador global o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global.
+ms.openlocfilehash: 8925f7b6b6af7f35ccd68e7b6522cc5f8e44440b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634268"
 ---
-# <a name="go-to-the-office-365-security--compliance-center"></a><span data-ttu-id="78b85-104">Ir al Centro de seguridad y cumplimiento de Office 365</span><span class="sxs-lookup"><span data-stu-id="78b85-104">Go to the Office 365 Security & Compliance Center</span></span>
+# <a name="go-to-the-security--compliance-center"></a><span data-ttu-id="3763e-104">Ir al Centro de seguridad y cumplimiento</span><span class="sxs-lookup"><span data-stu-id="3763e-104">Go to the Security & Compliance Center</span></span>
 
-<span data-ttu-id="78b85-105">Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados.</span><span class="sxs-lookup"><span data-stu-id="78b85-105">Before you can use the Security & Compliance Center, you need the right permissions.</span></span> <span data-ttu-id="78b85-106">La cuenta profesional o educativa debe tener asignado el rol de administrador global de Office 365 o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global:</span><span class="sxs-lookup"><span data-stu-id="78b85-106">Your work or school account must either be assigned the Office 365 global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:</span></span>
+<span data-ttu-id="3763e-105">Para poder usar el centro de seguridad & cumplimiento, necesitará los permisos adecuados.</span><span class="sxs-lookup"><span data-stu-id="3763e-105">Before you can use the Security & Compliance Center, you need the right permissions.</span></span> <span data-ttu-id="3763e-106">La cuenta profesional o educativa debe tener asignado el rol de administrador global o haber sido asignada a uno o varios grupos de roles del centro de cumplimiento de & de seguridad por un administrador global:</span><span class="sxs-lookup"><span data-stu-id="3763e-106">Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:</span></span>
   
-- <span data-ttu-id="78b85-107">Para obtener más información acerca del rol de administrador global de Office 365, consulte [acerca de los roles de administrador de office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).</span><span class="sxs-lookup"><span data-stu-id="78b85-107">For more information about the Office 365 global administrator role, see [About Office 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).</span></span> 
+- <span data-ttu-id="3763e-107">Para obtener más información acerca del rol de administrador global, vea [acerca de los roles de administrador de Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).</span><span class="sxs-lookup"><span data-stu-id="3763e-107">For more information about the global administrator role, see [About Microsoft 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).</span></span> 
 
-- <span data-ttu-id="78b85-108">Para obtener información sobre la asignación de & de seguridad de los roles del centro de cumplimiento a otros usuarios, vea [conceder acceso a los usuarios al centro de seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="78b85-108">For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="3763e-108">Para obtener información sobre la asignación de & de seguridad de los roles del centro de cumplimiento a otros usuarios, vea [conceder acceso a los usuarios al centro de seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="3763e-108">For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="78b85-109">Los permisos de acceso delegado (DAP) asociados con administrar en nombre de (AOBO) no pueden obtener acceso al centro de seguridad & cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="78b85-109">Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.</span></span>
+> <span data-ttu-id="3763e-109">Los permisos de acceso delegado (DAP) asociados con administrar en nombre de (AOBO) no pueden obtener acceso al centro de seguridad & cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="3763e-109">Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.</span></span>
 
-<span data-ttu-id="78b85-110">Esta es la forma más directa de obtener el centro de cumplimiento de & de seguridad:</span><span class="sxs-lookup"><span data-stu-id="78b85-110">Here's the most direct way to get to the Security & Compliance Center:</span></span>
+<span data-ttu-id="3763e-110">Esta es la forma más directa de obtener el centro de cumplimiento de & de seguridad:</span><span class="sxs-lookup"><span data-stu-id="3763e-110">Here's the most direct way to get to the Security & Compliance Center:</span></span>
   
-1. <span data-ttu-id="78b85-111">Vaya a [https://protection.office.com](https://protection.office.com).</span><span class="sxs-lookup"><span data-stu-id="78b85-111">Go to [https://protection.office.com](https://protection.office.com).</span></span>
+1. <span data-ttu-id="3763e-111">Vaya a [https://protection.office.com](https://protection.office.com).</span><span class="sxs-lookup"><span data-stu-id="3763e-111">Go to [https://protection.office.com](https://protection.office.com).</span></span>
 
-2. <span data-ttu-id="78b85-112">Inicie sesión en Office 365 con su cuenta profesional o educativa.</span><span class="sxs-lookup"><span data-stu-id="78b85-112">Sign in to Office 365 using your work or school account.</span></span>
+2. <span data-ttu-id="3763e-112">Inicie sesión con su cuenta profesional o educativa.</span><span class="sxs-lookup"><span data-stu-id="3763e-112">Sign in using your work or school account.</span></span>
 
-![Página de inicio del centro de seguridad & cumplimiento de Office 365](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Página principal del centro de cumplimiento de & de seguridad](../media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

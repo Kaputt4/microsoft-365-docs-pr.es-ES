@@ -1,5 +1,5 @@
 ---
-title: Analizar datos de casos con Office 365 Advanced eDiscovery
+title: Analizar datos de casos con eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,44 +14,44 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: 'Obtenga información general sobre el proceso de análisis, que le permite establecer parámetros, opciones de ejecución y ver resultados, en la exhibición avanzada de documentos electrónicos de Office 365. '
-ms.openlocfilehash: 31745651ddbebbfc5e9670a5a906d82cf493aea4
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'Obtenga información general sobre el proceso de análisis, que permite establecer parámetros, ejecutar opciones y ver los resultados en la exhibición avanzada de documentos electrónicos. '
+ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42556808"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637064"
 ---
-# <a name="analyze-case-data-with-advanced-ediscovery-classic"></a><span data-ttu-id="f74c4-103">Analizar datos de casos con eDiscovery avanzado (Classic)</span><span class="sxs-lookup"><span data-stu-id="f74c4-103">Analyze case data with Advanced eDiscovery (classic)</span></span>
+# <a name="analyze-case-data-with-advanced-ediscovery-classic"></a><span data-ttu-id="e95b4-103">Analizar datos de casos con eDiscovery avanzado (Classic)</span><span class="sxs-lookup"><span data-stu-id="e95b4-103">Analyze case data with Advanced eDiscovery (classic)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f74c4-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="f74c4-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="e95b4-p101">Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="e95b4-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="f74c4-106">El proceso de **preparación** \> del **análisis** en eDiscovery avanzado aplica la siguiente funcionalidad a los archivos incluidos:</span><span class="sxs-lookup"><span data-stu-id="f74c4-106">The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the following functionality to the included files:</span></span> 
+<span data-ttu-id="e95b4-106">El proceso de **preparación** \> del **análisis** en eDiscovery avanzado aplica la siguiente funcionalidad a los archivos incluidos:</span><span class="sxs-lookup"><span data-stu-id="e95b4-106">The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the following functionality to the included files:</span></span> 
   
-- <span data-ttu-id="f74c4-107">Identifica y organiza los archivos cargados en grupos de archivos únicos, duplicados y casi duplicados.</span><span class="sxs-lookup"><span data-stu-id="f74c4-107">Identifies and organizes the loaded files into groups of unique files, duplicates, and near-duplicates.</span></span>
+- <span data-ttu-id="e95b4-107">Identifica y organiza los archivos cargados en grupos de archivos únicos, duplicados y casi duplicados.</span><span class="sxs-lookup"><span data-stu-id="e95b4-107">Identifies and organizes the loaded files into groups of unique files, duplicates, and near-duplicates.</span></span>
     
-- <span data-ttu-id="f74c4-108">Identifica y organiza los correos electrónicos en grupos de subprocesos de correo electrónico estructurados jerárquicamente, según la inclusiveness progresiva de los correos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="f74c4-108">Identifies and organizes emails into hierarchically structured groups of email threads, based on the progressive inclusiveness of the emails.</span></span>
+- <span data-ttu-id="e95b4-108">Identifica y organiza los correos electrónicos en grupos de subprocesos de correo electrónico estructurados jerárquicamente, según la inclusiveness progresiva de los correos electrónicos.</span><span class="sxs-lookup"><span data-stu-id="e95b4-108">Identifies and organizes emails into hierarchically structured groups of email threads, based on the progressive inclusiveness of the emails.</span></span>
     
-- <span data-ttu-id="f74c4-109">Habilita el uso de temas en el procesamiento avanzado de eDiscovery y en el procesamiento por lotes de archivos.</span><span class="sxs-lookup"><span data-stu-id="f74c4-109">Enables the use of Themes in Advanced eDiscovery processing and file batching.</span></span>
+- <span data-ttu-id="e95b4-109">Habilita el uso de temas en el procesamiento avanzado de eDiscovery y en el procesamiento por lotes de archivos.</span><span class="sxs-lookup"><span data-stu-id="e95b4-109">Enables the use of Themes in Advanced eDiscovery processing and file batching.</span></span>
     
- <span data-ttu-id="f74c4-110">ANALYZE permite establecer parámetros, ejecutar opciones y ver los resultados, de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="f74c4-110">Analyze allows you to set parameters, run options, and view the results, as follows:</span></span> 
+ <span data-ttu-id="e95b4-110">ANALYZE permite establecer parámetros, ejecutar opciones y ver los resultados, de la siguiente manera:</span><span class="sxs-lookup"><span data-stu-id="e95b4-110">Analyze allows you to set parameters, run options, and view the results, as follows:</span></span> 
   
-- <span data-ttu-id="f74c4-111">**Analizar la configuración**: permite especificar la configuración antes de ejecutar Analyze en los archivos.</span><span class="sxs-lookup"><span data-stu-id="f74c4-111">**Analyze setup**: Allows settings to be specified before running Analyze on the files.</span></span>
+- <span data-ttu-id="e95b4-111">**Analizar la configuración**: permite especificar la configuración antes de ejecutar Analyze en los archivos.</span><span class="sxs-lookup"><span data-stu-id="e95b4-111">**Analyze setup**: Allows settings to be specified before running Analyze on the files.</span></span>
     
-- <span data-ttu-id="f74c4-112">**Analizar resultados**: muestra las métricas del análisis.</span><span class="sxs-lookup"><span data-stu-id="f74c4-112">**Analyze results**: Displays metrics of the analysis.</span></span> 
+- <span data-ttu-id="e95b4-112">**Analizar resultados**: muestra las métricas del análisis.</span><span class="sxs-lookup"><span data-stu-id="e95b4-112">**Analyze results**: Displays metrics of the analysis.</span></span> 
     
-<span data-ttu-id="f74c4-113">Antes de ejecutar Analyze, defina los criterios para seleccionar y procesar archivos, incluidos los archivos cargados que se analizarán y el tipo de análisis al que se enviará cada tipo de archivo.</span><span class="sxs-lookup"><span data-stu-id="f74c4-113">Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted.</span></span> 
+<span data-ttu-id="e95b4-113">Antes de ejecutar Analyze, defina los criterios para seleccionar y procesar archivos, incluidos los archivos cargados que se analizarán y el tipo de análisis al que se enviará cada tipo de archivo.</span><span class="sxs-lookup"><span data-stu-id="e95b4-113">Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="f74c4-114">Vea también</span><span class="sxs-lookup"><span data-stu-id="f74c4-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e95b4-114">Vea también</span><span class="sxs-lookup"><span data-stu-id="e95b4-114">See also</span></span>
 
-[<span data-ttu-id="f74c4-115">Advanced eDiscovery (clásico)</span><span class="sxs-lookup"><span data-stu-id="f74c4-115">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="e95b4-115">Advanced eDiscovery (clásico)</span><span class="sxs-lookup"><span data-stu-id="e95b4-115">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="f74c4-116">Descripción de la similitud de documentos</span><span class="sxs-lookup"><span data-stu-id="f74c4-116">Understanding document similarity</span></span>](understand-document-similarity-in-advanced-ediscovery.md)
+[<span data-ttu-id="e95b4-116">Descripción de la similitud de documentos</span><span class="sxs-lookup"><span data-stu-id="e95b4-116">Understanding document similarity</span></span>](understand-document-similarity-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="f74c4-117">Configuración de omitir texto</span><span class="sxs-lookup"><span data-stu-id="f74c4-117">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
+[<span data-ttu-id="e95b4-117">Configuración de omitir texto</span><span class="sxs-lookup"><span data-stu-id="e95b4-117">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="f74c4-118">Configuración de la configuración avanzada de análisis</span><span class="sxs-lookup"><span data-stu-id="f74c4-118">Setting Analyze advanced settings</span></span>](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[<span data-ttu-id="e95b4-118">Configuración de la configuración avanzada de análisis</span><span class="sxs-lookup"><span data-stu-id="e95b4-118">Setting Analyze advanced settings</span></span>](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="f74c4-119">Visualización de las tareas de análisis</span><span class="sxs-lookup"><span data-stu-id="f74c4-119">Viewing Analyze tasks</span></span>](view-analyze-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="e95b4-119">Visualización de las tareas de análisis</span><span class="sxs-lookup"><span data-stu-id="e95b4-119">Viewing Analyze tasks</span></span>](view-analyze-results-in-advanced-ediscovery.md)
 
