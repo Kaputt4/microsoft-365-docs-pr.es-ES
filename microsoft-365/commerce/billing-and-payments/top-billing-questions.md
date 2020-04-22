@@ -1,5 +1,5 @@
 ---
-title: Principales preguntas sobre facturación para Office 365 para empresas
+title: Principales preguntas sobre facturación para Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,15 +24,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: Encuentre respuestas a sus principales preguntas sobre facturación para su suscripción de empresa.
-ms.openlocfilehash: 661339518f43531f656ee9960d7f005fd1398023
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Encuentre respuestas a sus principales preguntas sobre facturación para la suscripción de Microsoft 365 para empresas. '
+ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826306"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634997"
 ---
-# <a name="top-billing-questions-for-business-subscriptions"></a>Principales preguntas sobre la facturación para las suscripciones empresariales
+# <a name="top-billing-questions-for-microsoft-365-for-business"></a>Principales preguntas sobre facturación para Microsoft 365 para empresas
 
 ¿Tiene preguntas acerca del extracto de facturación? Estas son las respuestas a las preguntas más importantes sobre la facturación.
   

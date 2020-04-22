@@ -5,23 +5,23 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "35830498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637869"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio Escritorio administrado de Microsoft
 
-El escritorio administrado de Microsoft es un servicio que proporciona a los usuarios una experiencia moderna segura y que mantiene los dispositivos actualizados con las versiones más recientes de Windows 10 Enterprise Edition, Office 365 ProPlus y los servicios de seguridad de Microsoft, entre los que se incluyen:
+Microsoft Managed Desktop es un servicio que proporciona a los usuarios una experiencia moderna y segura y siempre mantiene los dispositivos actualizados con las últimas versiones de Windows 10 Enterprise Edition, Microsoft 365 apps for Enterprise y servicios de seguridad de Microsoft, entre los que se incluyen:
 
 - Inscripción simplificada de nuevos dispositivos
 - Configuración de dispositivos
 - Características para proteger a los usuarios y los dispositivos, como Windows Hello, BitLocker, SecureBoot y la seguridad basada en la virtualización de acuerdo con los procedimientos recomendados de Microsoft
 - Supervisión de seguridad de dispositivos y servicios de corrección
 - Compatibilidad de aplicaciones, a través de la [aplicación de escritorio garantiza](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Administración de actualizaciones para aplicaciones de Windows 10 y Office 365 ProPlus
+- Administración de actualizaciones para aplicaciones de Windows 10 y Microsoft 365 apps for Enterprise
 - Datos analíticos sobre el uso de dispositivos y aplicaciones
 - Soporte técnico de TI para los usuarios finales
 - Soporte operacional para profesionales de ti

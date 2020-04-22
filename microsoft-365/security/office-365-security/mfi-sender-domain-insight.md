@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre la información sobre el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082586"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635177"
 ---
 # <a name="fix-sender-domain-insight"></a>Solucionar la información del dominio del remitente
 
-Office 365 requiere mensajes que envían desde entornos de correo electrónico locales internos a Office 365 para cumplir ciertos criterios de seguridad:
+Microsoft 365 requiere mensajes que envíen desde entornos de correo electrónico locales internos a Microsoft 365 para cumplir ciertos criterios de seguridad:
 
-- Ha creado un conector de entrada en Office 365 para autenticar las conexiones SMTP desde el servidor de correo electrónico local mediante el uso de la dirección IP de origen o un certificado.
+- Ha creado un conector de entrada en Microsoft 365 para autenticar las conexiones SMTP desde el servidor de correo electrónico local mediante el uso de la dirección IP de origen o un certificado.
 
-- Ha configurado su servidor de correo electrónico local para retransmitir el correo electrónico a través de Office 365 a un mundo externo.
+- Ha configurado su servidor de correo electrónico local para retransmitir el correo electrónico a través de Microsoft 365 a un mundo externo.
 
 - En la configuración, se cumple una de las siguientes instrucciones:
 
-  - El dominio de correo electrónico del remitente está registrado en su organización de Office 365. Para obtener más información, vea Agregar dominios en Office 365.
+  - El dominio de correo electrónico del remitente está registrado en la organización. Para obtener más información, vea Agregar dominios en Office 365.
 
-  - El servidor de correo electrónico local está configurado para usar un certificado para enviar correo electrónico a Office 365, el certificado contiene o coincide exactamente con un nombre de dominio que se ha registrado en Office 365 y ha creado un conector basado en certificado en Office 365 con ese Reserva. 
+  - El servidor de correo electrónico local está configurado para usar un certificado para enviar correo electrónico a Microsoft 365, el certificado contiene o coincide exactamente con un nombre de dominio que se ha registrado en Microsoft 365, y ha creado un conector basado en certificado en Microsoft 365 con ese dominio. 
 
 Los mensajes que no cumplen los criterios no se atribuirán a la organización y podrían rechazarse.
 

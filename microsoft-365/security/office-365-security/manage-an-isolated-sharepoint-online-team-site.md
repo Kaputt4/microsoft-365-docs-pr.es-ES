@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumen: administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.'
-ms.openlocfilehash: 59c86c869ed38c3e64ff19974660cf96ec4c715e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5fe92f2653774b40eb227c9f8cbb57443fd51e2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599007"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635393"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -37,9 +37,9 @@ Cuando alguien nuevo se une al sitio, debe decidir su nivel de participación en
     
 - Ver: agregar la cuenta de usuario al grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de los servicios de dominio de Active Directory (AD DS), agregue los usuarios adecuados a los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con su Office 365 scription.
+Si administra cuentas de usuario y grupos a través de los servicios de dominio de Active Directory (AD DS), agregue los usuarios adecuados a los grupos de acceso adecuados mediante los procedimientos de administración de grupos y usuarios normales de AD DS y espere la sincronización con la suscripción.
   
-Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell de Microsoft:
+Si administra cuentas de usuario y grupos a través de Microsoft 365, puede usar el centro de administración de Microsoft 365 o PowerShell de Microsoft:
   
 - En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar los usuarios adecuados a los grupos de acceso adecuados.
     
@@ -69,7 +69,7 @@ Para agregar acceso a todo un grupo, debe decidir el nivel de participación de 
     
 - Ver: agregar el grupo al grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de AD DS, agregue los grupos adecuados a los grupos adecuados mediante los procedimientos normales de administración de usuarios y grupos de AD DS y espere la sincronización con la suscripción a Office 365.
+Si administra cuentas de usuario y grupos a través de AD DS, agregue los grupos adecuados a los grupos adecuados mediante los procedimientos normales de administración de usuarios y grupos de AD DS y espere la sincronización con la suscripción.
   
 Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
@@ -84,7 +84,7 @@ $siteGrpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $newGroupName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $siteGrpName }).ObjectID
 ```
 
-## <a name="remove-a-user"></a>Quitar un usuario
+## <a name="remove-a-user"></a>Eliminar a un usuario
 
 Cuando es necesario quitar el acceso de un usuario del sitio, se quitan del grupo de acceso para el que actualmente son miembros según su participación en el sitio:
   
@@ -94,7 +94,7 @@ Cuando es necesario quitar el acceso de un usuario del sitio, se quitan del grup
     
 - Ver: quitar la cuenta de usuario del grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de AD DS, quite los usuarios correspondientes de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con la suscripción a Office 365.
+Si administra cuentas de usuario y grupos a través de AD DS, quite los usuarios correspondientes de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con la suscripción.
   
 Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
@@ -127,7 +127,7 @@ Para quitar el acceso de un grupo completo, se quita el grupo del grupo de acces
     
 - Ver: quitar el grupo del grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de Windows Server Active Directory, quite los grupos adecuados de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con su Office 365 scription.
+Si administra cuentas de usuario y grupos a través de Windows Server Active Directory, quite los grupos adecuados de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con la suscripción.
   
 Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
@@ -148,7 +148,7 @@ En algunos casos, un subconjunto de las personas que trabajan en el sitio aislad
   
 Para crear una subcarpeta de documentos con permisos personalizados, haga lo siguiente:
   
-1. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de administradores de acceso para el sitio. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en una cuenta que sea miembro del grupo de acceso administradores del sitio. Para obtener ayuda, consulte [dónde iniciar sesión en Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Vaya al sitio de grupo aislado y haga clic en **documentos**.
     

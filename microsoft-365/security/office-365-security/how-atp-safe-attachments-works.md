@@ -1,5 +1,5 @@
 ---
-title: Funcionamiento de los datos adjuntos seguros de ATP de Office 365
+title: Cómo funcionan los datos adjuntos seguros de ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,16 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La característica datos adjuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adjuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599227"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638027"
 ---
-# <a name="how-office-365-atp-safe-attachments-works"></a>Funcionamiento de los datos adjuntos seguros de ATP de Office 365
+# <a name="how-atp-safe-attachments-works"></a>Cómo funcionan los datos adjuntos seguros de ATP
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 La característica de datos adjuntos seguros de ATP comprueba los datos adjuntos del correo electrónico de las personas de su organización. Cuando se implementa una directiva de datos adjuntos seguros de ATP y alguien que cubre esa Directiva ve su correo electrónico en Office 365, se comprueban los datos adjuntos del correo electrónico y se realizan las acciones adecuadas, según las directivas de datos adjuntos seguros de ATP. Según cómo se hayan definido las directivas, los usuarios pueden seguir trabajando sin saber nunca que se les enviaron archivos malintencionados.
   
@@ -35,5 +35,5 @@ A continuación se muestran dos ejemplos de datos adjuntos seguros de ATP en el 
 Las directivas de datos adjuntos seguros de ATP se pueden aplicar a personas o grupos específicos de la organización o a todo el dominio. Además, las directivas de datos adjuntos seguros de ATP se pueden configurar para usar datos adjuntos de marcador de posición mientras se analizan los datos adjuntos reales. Para obtener más información, consulte **[configurar las directivas de datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)**.
 
 > [!NOTE]
-> El análisis de datos adjuntos seguros de ATP tiene lugar en la misma región en la que residen los datos de Office 365. Para obtener más información acerca de la geografía del centro de datos, consulte [¿dónde están los datos ubicados?](https://products.office.com/where-is-your-data-located?geo=All) 
+> El análisis de datos adjuntos seguros de ATP tiene lugar en la misma región en la que residen los datos. Para más información sobre la geografía de centros de datos, consulte [¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All) 
 

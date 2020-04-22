@@ -1,5 +1,5 @@
 ---
-title: Ver los resultados de una investigación automatizada en Office 365
+title: Ver los resultados de una investigación automatizada en Microsoft 365
 keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Durante y después de una investigación automatizada en Office 365, puede ver los resultados y las conclusiones más importantes.
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados principales.
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225980"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634633"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Detalles y resultados de una investigación automatizada en Office 365
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
 Cuando se produce una [investigación automatizada](office-365-air.md) en la [protección contra amenazas avanzada de Office 365](office-365-atp.md), los detalles sobre la investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en la vista de detalles de la investigación. La vista de detalles de la investigación ofrece un estado actualizado y la capacidad de aprobar las acciones pendientes. 
 
@@ -40,13 +40,13 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |Acción pendiente | La investigación ha encontrado una amenaza, como un correo electrónico malintencionado, una dirección URL malintencionada o una configuración de buzón de correo arriesgado, y una acción para corregir dicha amenaza está en espera de [aprobación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>El estado de acción pendiente se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecute una investigación. Compruebe el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) para ver si hay otros elementos aún pendientes de finalización. |
 |Corregido | La investigación ha finalizado y todas las acciones se han aprobado (se ha corregido completamente).<br/><br/>**Nota**: las acciones de corrección aprobadas pueden tener errores que impiden que se tomen las acciones. Independientemente de si las acciones de corrección se completan correctamente, el estado de la investigación no cambia. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
 |Parcialmente remediado | La investigación dio como resultado acciones correctivas y algunas fueron aprobadas y completadas. Aún hay otras acciones [pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Failed | Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
+|Error | Al menos un analizador de investigación tuvo un problema en el que no se pudo completar correctamente. <br/><br/>**Nota**: si se produce un error en una investigación tras la aprobación de acciones de corrección, es posible que las acciones de corrección sigan teniendo éxito. Consulte el [registro de investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) para obtener resultados detallados. |
 |En cola por limitación | Una investigación se mantiene en una cola. Cuando se completan otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento deficiente del servicio. <br/><br/>**Sugerencia**: las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de [aprobar (o rechazar) acciones pendientes](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
 |Terminado con la limitación | Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <br/><br/>**Sugerencia**: puede [iniciar una investigación desde el explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ## <a name="view-details-of-an-investigation"></a>Ver los detalles de una investigación
 
-1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ([https://protection.office.com](https://protection.office.com)) e inicie sesión.
 
 2. Realice una de las acciones siguientes:
 
@@ -66,9 +66,9 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Ver los detalles de una alerta relacionada con una investigación
 
-Ciertos tipos de alertas desencadenan la investigación automática en Office 365. Para obtener más información, vea [alertas](automated-investigation-response-office.md#alerts). Use el siguiente procedimiento para ver los detalles de una alerta asociada a una investigación automatizada.
+Ciertos tipos de alertas desencadenan la investigación automatizada en Microsoft 365. Para obtener más información, vea [alertas](automated-investigation-response-office.md#alerts). Use el siguiente procedimiento para ver los detalles de una alerta asociada a una investigación automatizada.
 
-1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión. 
+1. Vaya al centro de seguridad & cumplimiento ([https://protection.office.com](https://protection.office.com)) e inicie sesión. 
 
 2. Vaya a **Threat management** > **investigaciones**de administración de amenazas.
 
@@ -213,9 +213,9 @@ Puede:
 - Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
-|Análisis | Descripción |
+|Análisis | Description |
 |-----|-----|
-|Investigación de violaciones de DLP |Investigue las infracciones detectadas por la prevención de pérdida de datos (DLP) de [Office 365](../../compliance/data-loss-prevention-policies.md) |
+|Investigación de violaciones de DLP |Investigue las violaciones detectadas por la [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Extracción de indicadores de correo electrónico |Extraer indicadores desde el encabezado, el cuerpo y el contenido de un mensaje de correo electrónico para su investigación |
 |Reputación de hash de archivo |Detectar anomalías en función de los hash de archivo para los usuarios y equipos de la organización |
 |Identificación del clúster de correo |Análisis del clúster de correo electrónico basado en el encabezado, el cuerpo, el contenido y las direcciones URL |

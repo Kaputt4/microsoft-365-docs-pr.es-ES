@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus adquisiciones de autoservicio.
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142144"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636644"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
 Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a las personas de su equipo. Usted es responsable de pagar las compras de autoservicio que realice. Puede administrar las suscripciones en el centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
+
 
 Su administrador tiene una vista de solo lectura en las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compre.
 

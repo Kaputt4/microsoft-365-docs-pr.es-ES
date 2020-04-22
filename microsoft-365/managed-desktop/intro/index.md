@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516814"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636225"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -28,7 +28,7 @@ El escritorio administrado de Microsoft ofrece una solución para varios de los 
 - Muchos de los procesos de seguridad y la administración de TI actuales están anticuados, requieren mucho tiempo y son caros.
 - Las empresas quieren centrarse en lo que les hace que sea un éxito único, en lugar de mantener la infraestructura digital.
 
-Los usuarios finales disfrutarán de las últimas versiones de las aplicaciones de Windows 10 y Office 365 ProPlus (y más aparte), usando dispositivos y software que son creados y probados rigurosamente para obtener el mejor rendimiento y confiabilidad. Además, no tendrá que preocuparse por mantener ninguno de estos los elementos de software actualizados, ya que esto ocurre automáticamente, a partir de una secuencia de desarrollo cuidadosa que se supervisa en cada paso del proceso. Y los dispositivos registrados se supervisan 24x7 para problemas técnicos y de seguridad, por lo que, si algo va mal, la ayuda estará en camino.
+Los usuarios finales disfrutarán de las últimas versiones de las aplicaciones de Windows 10 y Microsoft 365 apps for Enterprise (y más aparte), usando dispositivos y software que son creados y probados rigurosamente para obtener el mejor rendimiento y confiabilidad. Además, no tendrá que preocuparse por mantener ninguno de estos los elementos de software actualizados, ya que esto ocurre automáticamente, a partir de una secuencia de desarrollo cuidadosa que se supervisa en cada paso del proceso. Y los dispositivos registrados se supervisan 24x7 para problemas técnicos y de seguridad, por lo que, si algo va mal, la ayuda estará en camino.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Único para el escritorio administrado por Microsoft
@@ -111,4 +111,3 @@ Prepárese **para la inscripción** En estos temas se describen los pasos que de
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

@@ -22,21 +22,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Obtenga información sobre cómo usar Microsoft 365 empresa para restablecer en fábrica los dispositivos Windows 10 que administre y revertirlos a su configuración original en el momento de la compra.
-ms.openlocfilehash: 3705448602cdc22e9fb5843c46d5bdc1c4dbdb2e
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Obtenga información sobre cómo usar Microsoft 365 para empresas para restablecer en fábrica los dispositivos Windows 10 que administre y revertirlos a su configuración original en el momento de la compra.
+ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561308"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634800"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
 
 [![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra. Puede usar Microsoft 365 Business para realizar un restablecimiento de fábrica en los dispositivos Windows 10 que administra.
+Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra. Puede usar Microsoft 365 para la empresa para restablecer en fábrica los dispositivos Windows 10 que administra.
   
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. En el panel de navegación izquierdo, elija **dispositivos** \> **administrar**.
 

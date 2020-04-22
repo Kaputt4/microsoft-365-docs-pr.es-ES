@@ -1,5 +1,5 @@
 ---
-title: Pagar la suscripción a Office 365 para empresas
+title: Pagar la suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Obtenga información acerca de qué opciones de pago están disponibles para pagar por su suscripción a Office 365 para empresas.
+description: Obtenga información sobre las opciones de pago disponibles para pagar por su suscripción a Microsoft 365 para empresas.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540908"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635021"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>Pagar la suscripción a Office 365 para empresas
+# <a name="pay-for-your-subscription"></a>Pagar la suscripción
 
 Al configurar su suscripción, puede elegir pagar con tarjeta de crédito, mediante transferencia bancaria o pagar mediante factura usando un cheque o transferencia electrónica de fondos (EFT). Independientemente del método que elija, ese será el método de pago que seguiremos usando para los períodos de facturación siguientes, salvo que [cambie el método de pago](change-payment-method.md).
 
@@ -93,7 +93,7 @@ Si los costos de la suscripción superan un importe determinado (el importe var�
 Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Pero, también tiene la posibilidad de [Recibir una copia del extracto de facturación por correo electrónico](#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Office 365 y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Para cambiar la dirección de correo electrónico alternativa, vea [Cambiar las direcciones de facturación](change-your-billing-addresses.md).
+> De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Para cambiar la dirección de correo electrónico alternativa, vea [Cambiar las direcciones de facturación](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>¿Puedo pagar mi factura en línea?
 

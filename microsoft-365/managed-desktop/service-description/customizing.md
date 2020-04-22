@@ -1,19 +1,19 @@
 ---
-title: Excepciones al plan de servicio
+title: Excepciones para el plan de servicios
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636189"
 ---
-# <a name="exceptions-to-the-service-plan"></a>Excepciones al plan de servicio
+# <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
 Microsoft Managed Desktop proporciona una lista de dispositivos de creados, una [configuración de dispositivo estándar](device-policies.md), requisitos de aplicaciones y algunas [Opciones configurables](../working-with-managed-desktop/config-setting-overview.md), todas diseñadas para proporcionar una experiencia segura, productiva y agradable a los usuarios finales. Es mejor permanecer siempre con el servicio tal y como se proporciona. Sin embargo, reconocemos que algunos detalles del servicio podrían no ajustarse exactamente a las necesidades de su organización. Si cree que debe modificar el servicio de alguna manera, es importante seguir los siguientes procesos para solicitar dichos cambios.
  
@@ -27,7 +27,7 @@ Una excepción es cualquier adición o cambio de la configuración de base de es
 |Agentes de seguridad & VPN     |  Software usado para proteger, supervisar o cambiar el comportamiento del dispositivo o la red       |
 |Supervisión de la experiencia digital     |  Software que se usa para realizar un seguimiento de los datos en el dispositivo de un usuario para generar informes       |
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los requisitos de la [aplicación](mmd-app-requirements.md)      |
-|Directivas     | Configuración de Windows 10 u Office 365 ProPlus en un dispositivo administrado        |
+|Directivas     | Configuración de aplicaciones de Windows 10 o Microsoft 365 para empresas en un dispositivo administrado        |
 |Dispositivos     | Dispositivos que no se encuentran en la lista de [dispositivos](device-list.md) de escritorio administrados de Microsoft        |
 |Otros     |  Todo lo que no cubre el resto de áreas       |
  

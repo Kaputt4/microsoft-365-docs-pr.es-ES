@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo leer y entender la factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409715"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634985"
 ---
 # <a name="understand-your-invoice"></a>Entender la factura
 
 La factura proporciona un resumen de los cargos e instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el centro de administración de Microsoft 365. También puede descargarla en el formato de documento portátil (. pdf) para enviar por correo electrónico.
 
-Si solo tiene una suscripción de Office 365, consulte [ver la factura de office 365 para empresas](view-your-bill-or-invoice.md).
+Si solo tiene una suscripción de Microsoft 365, consulte [View Your Invoice for Microsoft 365 for Business](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Descripción del encabezado de la factura
 
@@ -102,7 +102,7 @@ Las facturas están disponibles en línea. Un vínculo a su factura en línea es
 
 ### <a name="to-view-your-online-invoice"></a>Para ver la factura en línea
 
-1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
 2. Para descargar la versión de. pdf de la factura, elija **Descargar factura PDF** en la fila de la factura que desea ver.
 

@@ -1,5 +1,5 @@
 ---
-title: Copia de seguridad de datos antes de cambiar Office 365 para planes de empresa
+title: Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de empresa
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Realice una copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar las suscripciones de Office 365 o si un usuario abandona la organización.
-ms.openlocfilehash: 3d8196bcbd0296e1b6e681b1077d165e168d2f2f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Realice una copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar las suscripciones de Microsoft 365 o si un usuario abandona la organización.
+ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105752"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636085"
 ---
-# <a name="back-up-data-before-switching-office-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Office 365 para planes de empresa
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de empresa
 
-Si un usuario cambia a otra suscripción que tiene menos servicios relacionados con datos o un usuario abandona la organización, se puede descargar una copia de los datos que se almacenan en Office 365 antes de cambiar a la nueva suscripción.
+Si un usuario cambia a otra suscripción que tiene menos servicios relacionados con datos o un usuario abandona la organización, se puede descargar una copia de los datos que se almacenan en Microsoft 365 antes de cambiar a la nueva suscripción.
   
 ## <a name="save-a-copy-of-outlook-information"></a>Guardar una copia de la información de Outlook
 
@@ -48,7 +48,7 @@ Los administradores pueden exportar todos los mensajes, notas, archivos, temas, 
   
 ## <a name="how-to-save-sharepoint-information"></a>Cómo guardar información de SharePoint
 
-Si un usuario cambia de una suscripción que tiene SharePoint Online en uno que no lo tiene, el mosaico de **SharePoint** dejará de aparecer en el menú de Office 365.
+Si un usuario cambia de una suscripción que tiene SharePoint Online en uno que no lo tiene, el mosaico de **SharePoint** dejará de aparecer en el menú de Microsoft 365.
   
 Sin embargo, siempre que la nueva suscripción esté dentro de la misma organización que la que se ha cambiado, los usuarios seguirán pudiendo obtener acceso al sitio de grupo de SharePoint. Pueden ver y actualizar los blocs de notas, documentos, tareas y calendarios mediante el uso de la dirección URL directa al sitio de grupo.
   

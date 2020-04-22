@@ -1,5 +1,5 @@
 ---
-title: Comprar otra suscripción a Office 365 para empresas
+title: Comprar otra suscripción de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: 'Obtenga información sobre cómo comprar otra suscripción de Office 365 para empresas para su organización cuando ya tiene una suscripción. '
+description: 'Obtenga información sobre cómo comprar otra suscripción a Microsoft 365 para empresas para su organización cuando ya tiene una suscripción. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142268"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634937"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>Comprar otra suscripción a Office 365 para empresas
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>Comprar otra suscripción de Microsoft 365 para empresas
 
-Si ya tiene una suscripción de Office 365 para empresas y desea comprar otra suscripción para su organización, la mejor manera es hacerlo a través del centro de administración. Si todavía no ha comprado la primera suscripción de Office 365 para empresas para su organización, haga clic [aquí](https://products.office.com/business/compare-office-365-for-business-plans) para elegir un plan.
+Si ya tiene una suscripción de Microsoft 365 para empresas y desea comprar otra suscripción para su organización, la mejor manera es hacerlo a través del centro de administración. Si aún no ha comprado el primer Microsoft 365 para la suscripción de empresa para su organización, haga clic [aquí](https://products.office.com/business/compare-office-365-for-business-plans) para elegir un plan.
   
 Al comprar otra suscripción a través del centro de administración, se garantiza que la nueva suscripción se asociará a la misma organización (espacio de nombres de dominio) que la suscripción existente. Esto hace que sea más fácil mover a los usuarios de la organización entre suscripciones o asignarles una licencia de usuario para la suscripción adicional que necesitan.
   
-Después de comprar una nueva suscripción, deberá asignar a los usuarios que desea que usen esa suscripción de usuario. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios en Office 365 para empresas](../admin/manage/assign-licenses-to-users.md).
+Después de comprar una nueva suscripción, deberá asignar a los usuarios que desea que usen esa suscripción de usuario. Para obtener información sobre cómo hacerlo, consulte [asignar licencias a usuarios en Microsoft 365 para empresas](../admin/manage/assign-licenses-to-users.md).
   
 ## <a name="buy-another-subscription"></a>Comprar otra suscripción
 
 ::: moniker range="o365-worldwide"
+
 
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
 

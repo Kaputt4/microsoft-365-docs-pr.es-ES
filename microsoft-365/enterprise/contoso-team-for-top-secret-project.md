@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo para datos altamente regulados para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068036"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636503"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo para un proyecto confidencial de la empresa Contoso
 
@@ -50,21 +50,21 @@ Para obtener información detallada sobre la configuración, vea [configuración
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>Paso 2: configurar una directiva DLP y el sitio subyacente para una etiqueta de retención 
 
-En primer lugar, los administradores de Contoso aplicaron la etiqueta de retención **alta confidencial** de Office 365 existente a la sección de **documentos** del sitio de SharePoint subyacente del equipo del proyecto de dos equipos.
+En primer lugar, los administradores de Contoso aplicaron la etiqueta de retención **altamente confidencial** existente a la sección de **documentos** del sitio de SharePoint subyacente del equipo del proyecto de dos equipos.
 
-A continuación, creamos una nueva Directiva de DLP de Office 365 denominada **proyecto 2x** que:
+A continuación, creamos una nueva Directiva DLP denominada **proyecto 2x** que:
 
-- Usa la etiqueta de retención alta confidencial de Office 365.
+- Usa la etiqueta de retención muy confidencial.
 - Bloquea a los usuarios cuando intentan compartir un archivo en el equipo del proyecto el doble de equipo fuera de contoso.
 
 Para obtener información detallada sobre la configuración, consulte [proteger archivos en Microsoft Teams con etiquetas de retención y DLP](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>Paso 3: se creó una etiqueta de confidencialidad de Office 365 para el equipo del proyecto de dos equipos
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>Paso 3: se creó una etiqueta de confidencialidad para el equipo del proyecto de dos equipos
 
-Los administradores de Contoso crearon una nueva etiqueta de confidencialidad de Office 365 denominada **proyecto 2x** que:
+Los administradores de Contoso crearon una nueva etiqueta de confidencialidad denominada **proyecto 2x** que:
 
 - Requiere cifrado.
-- Permite permisos de co-autoría para el grupo de Office 365 de dos proyectos.
+- Permite permisos de coautoría para el grupo 2 del proyecto en el segundo grupo de Microsoft 365.
 
 Esta es la configuración resultante del equipo del proyecto de 2X.
 
@@ -72,7 +72,7 @@ Esta es la configuración resultante del equipo del proyecto de 2X.
  
 Los archivos de la sección documentos del proyecto subyacente 2X del sitio de SharePoint estaban protegidos por:
 
-- Los permisos del sitio, que solo permiten el acceso a los miembros del grupo de Office 365 en el mismo grupo.
+- Los permisos del sitio, que solo permiten el acceso a los miembros del grupo de 2 a 2 grupos de Microsoft 365.
 - La etiqueta de retención extremadamente confidencial, que se asigna automáticamente a nuevos archivos.
 - Una directiva DLP que usa la etiqueta de retención extremadamente confidencial y la configuración que impide que el archivo se comparta con usuarios externos.
 - La etiqueta de sensibilidad proyecto 2X, con cifrado y permisos que viajan con el archivo si se mueven o se copian del sitio.
@@ -97,7 +97,7 @@ En un par de instancias, Project 2X los miembros del equipo descargaron archivos
 
 Debido al entorno de colaboración de Microsoft Teams y las características de seguridad de Microsoft 365, los detalles del proyecto 2X se mantuvieron en secreto mientras dure el proyecto. Contoso anunció sus planes y se encuentra en el proceso de implementar los nuevos productos y servicios a la alegría de sus clientes e inversionistas y la Chagrin de sus competidores.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 

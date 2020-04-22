@@ -1,5 +1,5 @@
 ---
-title: 'Paso 7: Configurar la administración de acceso con privilegios para Office 365'
+title: 'Paso 7: configurar la administración del acceso con privilegios'
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,32 +14,32 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: ''
-description: Comprenda y configure la administración del acceso con privilegios para Office 365
-ms.openlocfilehash: f29b1e0934a4b9a6d4e3347584f39423d446ed58
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Comprenda y configure la administración del acceso con privilegios.
+ms.openlocfilehash: 4fed4daacc17a34563825bf0575880ce06ec6ebd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636993"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Paso 7: Configurar la administración de acceso con privilegios para Office 365
+# <a name="step-7-configure-privileged-access-management"></a>Paso 7: configurar la administración del acceso con privilegios
 
 *Este paso es opcional y solo es válido para las versiones E5 y de cumplimiento avanzado de Microsoft 365 Enterprise*
 
 ![Fase 6: Protección de la información](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-La administración del acceso con privilegios se habilita configurando directivas que especifiquen el acceso puntual para actividades basadas en tareas en el inquilino de Office 365. Permite proteger la organización ante infracciones que puedan usar las cuentas existentes de administrador con privilegios y acceso permanente para acceder a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración del acceso con privilegios que requiera una autorización explícita para acceder a la configuración del buzón de correo del inquilino de Office 365 y modificar la misma.
+La administración del acceso con privilegios está habilitada mediante la configuración de directivas que especifican el acceso Just-in-Time para actividades basadas en tareas en el espacio empresarial. Puede ayudar a proteger su organización de las infracciones que puedan usar las cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o a la configuración crítica. Por ejemplo, puede configurar una directiva de administración de acceso privilegiada que requiera la aprobación explícita para acceder y cambiar la configuración del buzón de la organización en su espacio empresarial.
 
-En este paso, habilitará la administración del acceso con privilegios en el inquilino de Office 365 y configurará directivas de acceso con privilegios que proporcionen seguridad adicional para el acceso basado en tareas a los datos y las opciones de configuración de Office 365 de la organización. Para empezar con el acceso con privilegios en la organización de Office 365, debe seguir estos tres pasos básicos:
+En este paso, habilitará la administración del acceso con privilegios en su espacio empresarial y configurará directivas de acceso con privilegios que proporcionen seguridad adicional para el acceso basado en tareas a las opciones de configuración y datos de su organización. Hay tres pasos básicos para empezar a trabajar con privilegios de acceso en la organización:
 - Crear un grupo de aprobadores
 - Habilitar el acceso con privilegios
 - Crear directivas de aprobación
 
 Una vez configurada, la administración del acceso con privilegios permitirá a la organización trabajar sin privilegios permanentes y proporcionará un nivel de defensa contra las vulnerabilidades derivadas de dicho acceso administrativo. El acceso con privilegios requiere aprobaciones para ejecutar cualquier tarea a la que se haya asociado una directiva definida de aprobación. Los usuarios que necesiten ejecutar tareas incluidas en la directiva de aprobación deberán solicitar y obtener la aprobación de acceso para tener los permisos necesarios para ejecutar las tareas definidas en la directiva.
 
-Para habilitar la administración del acceso con privilegios de Office 365, vea el tema [Configurar la administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Para habilitar la administración del acceso privilegiado, consulte el tema [Configure privileged Access Management](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) .
 
-Para obtener más información, vea el tema [Administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Para obtener más información, vea el tema [Administración de acceso privilegiado](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) .
 
 
 |||

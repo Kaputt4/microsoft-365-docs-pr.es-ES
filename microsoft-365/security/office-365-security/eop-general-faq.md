@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'En este tema se responden las preguntas generales más comunes acerca del servicio de filtrado de correo electrónico hospedado en la nube de Microsoft Exchange Online Protection (EOP). Para ver otros temas sobre preguntas frecuentes (P+F), visite los siguientes enlaces:'
-ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893687"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636257"
 ---
 # <a name="eop-general-faq"></a>Preguntas más frecuentes sobre EOP
 
@@ -51,19 +51,19 @@ R. Las licencias de EOP se conceden por usuario. Para obtener la información de
 
 R. El filtrado comienza de manera inmediata después de cambiar el registro MX, según los pasos detallados en [Configurar un servicio de EOP](set-up-your-eop-service.md) y de que el correo pase por EOP. El registro MX puede tardar entre 24 y 48 horas en propagarse a través de DNS. Puede ajustar la configuración de protección del Centro de administración de Exchange (EAC) en cualquier momento durante este proceso.
 
-**P. ¿Tengo que usar todas las características de Microsoft Office 365 para usar EOP? ¿Qué pasa si solo quiero la protección EOP?**
+**P. ¿tengo que usar todas las características de Microsoft 365 para usar EOP? ¿Qué sucede si solo quiero protección de EOP y esto es todo?**
 
-R. Puede utilizar EOP para proteger los buzones de correo locales sin usar el resto de características de Office 365. Esto se conoce como una suscripción independiente. Puede encontrar una lista de características EOP en la [Descripción de servicio Protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+A. Puede usar EOP para proteger los buzones locales sin usar otras características de Microsoft 365. Esto se conoce como una suscripción independiente. Puede encontrar una lista de características EOP en la [Descripción de servicio Protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-**P. ¿Por qué necesito un inquilino de Office 365 cuando me suscribo al filtrado de correo electrónico a través de EOP?**
+**P. ¿por qué necesito un inquilino de Microsoft 365 al registrarse para el filtrado de correo electrónico a través de EOP?**
 
-R. Office 365 es el nombre dado a una colección de productos y servicios a los que se puede tener acceso a través de un inquilino de Office 365. Piense en el inquilino de Office 365 como el punto de partida para agregar licencias para el filtrado de correo electrónico.
+A. Microsoft 365 es el nombre asignado a una colección de productos y servicios a los que se puede tener acceso a través de un inquilino de Microsoft 365. Piense en el inquilino de Microsoft 365 como el punto de partida al que puede agregar licencias para el filtrado de correo electrónico.
 
 **P. ¿Dispone EOP de un portal de comunicación donde pueda obtener información sobre problemas conocidos y soluciones previstas? ¿Qué pasa con las nuevas características?**
 
-R. El centro de administración de Microsoft 365 tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (que suele ir acompañada de un icono de campana) tras iniciar sesión en el centro de administración de Microsoft 365. Recomendamos leerla y tomar las medidas necesarias en los elementos que procedan.
+R. El centro de administración de Microsoft 365 tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (que suele ir acompañada de un icono de campana) tras iniciar sesión en el centro de administración de Microsoft 365. Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan.
 
-Con respecto a las nuevas características de EOP, la [Guía básica de Office 365 para empresa](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) es un buen recurso para encontrar información sobre nuevas y próximas características. También publicaremos artículos de blog sobre nuevas características en el sitio web de [blogs de Microsoft 365](https://www.microsoft.com/microsoft-365/blog/) .
+Con respecto a las nuevas características de EOP, el [plan de desarrollo de Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) es un buen recurso para buscar información sobre las nuevas características nuevas. También publicaremos artículos de blog sobre nuevas características en el sitio web de [blogs de Microsoft 365](https://www.microsoft.com/microsoft-365/blog/) .
 
 **P. ¿El servicio funciona con versiones anteriores de Exchange (como Exchange Server 2010) y entornos que no son Exchange?**
 
@@ -75,7 +75,7 @@ R. Cualquier tamaño. La red de EOP tiene la capacidad suficiente para gestionar
 
 **¿Qué permisos necesito para configurar EOP?**
 
-Para configurar EOP, debe ser un administrador global de Office 365 o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización).
+Para configurar EOP, debe ser un administrador global o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización).
 
 **P. ¿Cómo sé que mis datos e información privada están seguros?**
 

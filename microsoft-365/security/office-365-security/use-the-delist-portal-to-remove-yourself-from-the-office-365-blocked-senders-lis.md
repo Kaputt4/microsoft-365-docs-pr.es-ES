@@ -1,5 +1,5 @@
 ---
-title: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
+title: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
-ms.translationtype: HT
+description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico se encuentra en Microsoft 365? Si cree que no debe recibir el mensaje de error, puede usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados.
+ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895088"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636409"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
-¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
+¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico se encuentra en Microsoft 365? Si cree que no debe recibir el mensaje de error, puede usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados.
 
-## <a name="what-is-the-office-365-blocked-senders-list"></a>¿Qué es la lista de remitentes bloqueados de Office 365?
+## <a name="what-is-the-blocked-senders-list"></a>¿Qué es la lista de remitentes bloqueados?
 
-Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP de su servidor de correo, es decir, la dirección que usa su servidor de correo para identificarse en Internet, se ha considerado como una amenaza potencial para Office 365 por uno de numerosos motivos. Cuando Office 365 agrega la dirección IP a la lista, evita todas las comunicaciones entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
+Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes del correo no deseado, la suplantación de identidad y los ataques de suplantación de identidad. La dirección IP de su servidor de correo, es decir, la dirección que su servidor de correo usa para identificarse en Internet, se ha etiquetado como una amenaza potencial para Microsoft 365 por uno de varios motivos. Cuando Microsoft 365 agrega la dirección IP a la lista, impide todas las comunicaciones entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de recursos.
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
@@ -37,7 +37,7 @@ Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje
 
 donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el servidor de correo.
 
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de eliminación de la lista de Office 365 para quitarse de la lista de remitentes bloqueados 
+### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
 1. En un explorador web, vaya a [https://sender.office.com](https://sender.office.com).
 
@@ -53,7 +53,7 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
 
 5. En el portal de eliminación de la lista, haga clic en **Quitar de la lista una IP**.
 
-    Después de quitar la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico que procedan de esa dirección IP se entregarán a los destinatarios que usen Office 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no es ofensivo ni malintencionado; de lo contrario, es posible que se vuelva a bloquear la dirección IP.
+    Una vez quitada la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico de esa dirección IP se entregarán a los destinatarios que usen Microsoft 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no sea abusivo o malintencionado; de lo contrario, es posible que la dirección IP se bloquee de nuevo.
 
     > [!NOTE]
     > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.

@@ -1,5 +1,5 @@
 ---
-title: Sugerencias de seguridad en mensajes de correo en Office 365
+title: Sugerencias de seguridad en mensajes de correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por el filtro de correo no deseado de EOP y Office 365.
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por EOP y el filtro de correo no deseado.
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032821"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634309"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Sugerencias de seguridad en mensajes de correo en Office 365
+# <a name="safety-tips-in-email-messages"></a>Sugerencias de seguridad en mensajes de correo electrónico
 
-Exchange Online Protection (EOP) y Office 365 protegen contra el correo no deseado, el phishing y la prevención de malware. Hoy en día, algunos de estos ataques están tan bien diseñados que parecen legítimos. No siempre es suficiente enviar mensajes a la carpeta correo electrónico no deseado. Ahora, cuando revise el correo electrónico en Outlook o en Outlook en la web, EOP comprueba automáticamente el remitente y agrega una sugerencia de seguridad en la parte superior del correo electrónico.
+Exchange Online Protection (EOP) y Microsoft 365 protegen el correo no deseado, el phishing y la prevención de malware. Hoy en día, algunos de estos ataques están tan bien diseñados que parecen legítimos. No siempre es suficiente enviar mensajes a la carpeta correo electrónico no deseado. Ahora, cuando revise el correo electrónico en Outlook o en Outlook en la web, EOP comprueba automáticamente el remitente y agrega una sugerencia de seguridad en la parte superior del correo electrónico.
 
-La sugerencia de seguridad (un mensaje codificado por colores) le avisará de los mensajes potencialmente perjudiciales. La mayoría de los mensajes de la bandeja de entrada no tienen una sugerencia de seguridad. Solo las verá cuando EOP y Office 365 tienen la información que necesita para evitar los ataques de correo no deseado, de suplantación de identidad (phishing) y de malware. Si se muestran sugerencias de seguridad en la bandeja de entrada, puede usar los siguientes ejemplos para obtener más información sobre cada tipo de sugerencia de seguridad.
+La sugerencia de seguridad (un mensaje codificado por colores) le avisará de los mensajes potencialmente perjudiciales. La mayoría de los mensajes de la bandeja de entrada no tienen una sugerencia de seguridad. Solo las verá cuando EOP y Microsoft 365 tienen información que necesita para evitar los ataques de correo no deseado, de suplantación de identidad (phishing) y de malware. Si se muestran sugerencias de seguridad en la bandeja de entrada, puede usar los siguientes ejemplos para obtener más información sobre cada tipo de sugerencia de seguridad.
 
 - Correo sospechoso (sugerencia de seguridad roja).
 
@@ -58,6 +58,6 @@ La sugerencia de seguridad (un mensaje codificado por colores) le avisará de lo
 
 ## <a name="working-with-safety-tips"></a>Trabajar con sugerencias de seguridad
 
-Las sugerencias de seguridad siempre están habilitadas para Outlook en la web, aunque no todos los mensajes recibirán ninguna. Los administradores de Office 365 pueden desactivar sugerencias de seguridad para otros clientes de correo electrónico como Outlook. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+Las sugerencias de seguridad siempre están habilitadas para Outlook en la web, aunque no todos los mensajes recibirán ninguna. Los administradores pueden desactivar las sugerencias de seguridad para otros clientes de correo electrónico como Outlook. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 Si no está de acuerdo con el modo en que EOP ha clasificado un mensaje (es decir, si el mensaje no es correo no deseado o se debería haber marcado como correo no deseado), puede enviar los mensajes a Microsoft para su análisis a fin de mejorar su experiencia. Para obtener instrucciones, consulte [informes de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md). También puede hacer clic en el vínculo comentarios de la sugerencia de seguridad para enviar comentarios directamente a Microsoft para ayudarnos a mejorar.

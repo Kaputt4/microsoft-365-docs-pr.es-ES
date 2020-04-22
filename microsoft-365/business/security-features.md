@@ -1,5 +1,5 @@
 ---
-title: Características de seguridad y cumplimiento de Microsoft 365 Business
+title: Características de seguridad y cumplimiento de Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,23 +22,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Obtenga información sobre las características de seguridad que se incluyen en Microsoft 365 Business para ayudarle a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: 3f638a3287c06ded7bf4c29c647e62cbf3fca969
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+description: Obtenga información sobre las características de seguridad que se incluyen en Microsoft 365 Business Premium para ayudar a proteger sus datos en equipos, teléfonos y tabletas.
+ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153806"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635152"
 ---
-# <a name="microsoft-365-business-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business Premium
 
-Microsoft 365 Business ofrece características de seguridad simplificadas para ayudarle a proteger sus datos en equipos, teléfonos y tabletas.
+Microsoft 365 Business Premium ofrece características de seguridad simplificadas para ayudarle a proteger sus datos en equipos, teléfonos y tabletas.
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Características de seguridad del centro de administración de Microsoft 365 Business
+## <a name="microsoft-365-admin-center-security-features"></a>Características de seguridad del centro de administración de Microsoft 365
 
 [![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Puede administrar muchas de las características de seguridad empresarial de Microsoft 365 en el centro de administración, lo que le proporciona una forma simplificada de activar o desactivar estas características. En el centro de administración, puede hacer lo siguiente:
+Puede administrar muchas de las características de seguridad de Microsoft 365 Business Premium en el centro de administración, lo que le proporciona una forma simplificada de activar o desactivar estas características. En el centro de administración, puede hacer lo siguiente:
   
 - [Establezca la configuración de administración de aplicaciones para dispositivos Android o iOS](app-protection-settings-for-android-and-ios.md) . 
     
@@ -62,7 +62,7 @@ Puede administrar muchas de las características de seguridad empresarial de Mic
     
 ## <a name="additional-security-features"></a>Características de seguridad adicionales 
 
-Hay disponibles características avanzadas de Microsoft 365 Business para ayudarle a proteger su negocio de las amenazas cibernéticos y salvaguardar la información confidencial.
+Las características avanzadas de Microsoft 365 empresa Premium están disponibles para ayudarle a proteger su negocio de las amenazas cibernéticos y salvaguardar la información confidencial.
   
 - **[Protección contra amenazas avanzada de Office 365](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
@@ -74,7 +74,7 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
 
 - **[Todas las capacidades de Intune en Azure portal](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    El acceso al centro de administración de Intune en Azure portal le permite configurar características de seguridad adicionales, como la administración de dispositivos de MacOS, dispositivos iPhone y Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través del centro de administración de negocios de Microsoft 365.
+    El acceso al centro de administración de Intune en Azure portal le permite configurar características de seguridad adicionales, como la administración de dispositivos de MacOS, dispositivos iPhone y Android, junto con la administración avanzada de dispositivos para Windows, que no están disponibles a través del centro de administración de Microsoft 365.
 - **El mismo [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) que el plan de Azure ad Premium P1**
 
 
@@ -95,7 +95,7 @@ Hay disponibles características avanzadas de Microsoft 365 Business para ayudar
     
 ## <a name="compliance-features"></a>Características de cumplimiento
 
-Su suscripción de Microsoft 365 Business incluye características que le ayudarán a mantener los estándares de cumplimiento normativo.
+Su suscripción a Microsoft 365 Business Premium incluye características que le ayudarán a mantener los estándares de cumplimiento normativo.
 
 - **[Información general sobre las directivas de prevención de pérdida de datos](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
@@ -107,20 +107,20 @@ Su suscripción de Microsoft 365 Business incluye características que le ayudar
     
 - **[Etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 Business incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). Con este plan, puede crear **etiquetas de confidencialidad** que le permitan controlar el acceso a la información confidencial de correo electrónico y documentos, con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, vea [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para las etiquetas de confidencialidad, instale el **AzInfoProtection_UL. exe**.
+   Microsoft 365 Business Premium incluye todas las características del [plan 1 de Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871407). Con este plan, puede crear **etiquetas de confidencialidad** que le permitan controlar el acceso a la información confidencial de correo electrónico y documentos, con controles como "no reenviar" y "no copiar". También puede clasificar la información confidencial como "confidencial" y especificar cómo se puede compartir la información clasificada fuera y dentro de la empresa. El cifrado de nivel empresarial es fácil de aplicar en el correo electrónico y los documentos para mantener la privacidad de la información. También puede instalar el complemento cliente de Azure Information Protection para aplicaciones de Office. Para obtener más información, vea [Azure Information Protection Unified Labeling Client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Para las etiquetas de confidencialidad, instale el **AzInfoProtection_UL. exe**.
 
-Puede administrar estas características en el centro de &amp; seguridad y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365 Business.
+Puede administrar estas características en el centro de &amp; seguridad y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365.
   
     
 ## <a name="faq"></a>Preguntas más frecuentes
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>¿Estas características de seguridad están disponibles en todos los mercados?
   
-Sí, estas características están disponibles en todos los mercados en los que se vende Microsoft 365 Business.
+Sí, estas características están disponibles en todos los mercados donde se vende Microsoft 365 empresa Premium.
   
 ### <a name="how-do-i-find-the-security-amp-compliance-center"></a>¿Cómo encuentro el centro de &amp; seguridad y cumplimiento?
   
-1. [Inicie sesión en Microsoft 365 Business](https://portal.microsoft.com/) mediante sus credenciales de administrador. 
+1. [Inicie sesión en Microsoft 365 empresa Premium](https://portal.microsoft.com/) con sus credenciales de administrador. 
     
 2. En el panel de navegación izquierdo, busque **centros de administración** y expándalo. 
     

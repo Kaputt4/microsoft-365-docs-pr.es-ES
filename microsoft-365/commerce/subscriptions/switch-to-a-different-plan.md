@@ -1,5 +1,5 @@
 ---
-title: Cambiar a otro plan de Office 365 para empresas
+title: Cambiar a otro plan de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,31 +23,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: Obtenga información sobre cómo cambiar a una nueva suscripción de Office 365 para empresas.
-ms.openlocfilehash: 5f399cf222654a34006e95f3ab40bf48eeec751f
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Obtenga información sobre cómo cambiar a una nueva suscripción de Microsoft 365 para empresas.
+ms.openlocfilehash: a101ac47aede1413528fd2cb6be1d1df6ab4d961
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540826"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636527"
 ---
-# <a name="switch-to-a-different-office-365-for-business-plan"></a>Cambiar un plan distinto de Office 365 para empresas
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Cambiar a otro plan de Microsoft 365 para empresas
 
 Cuando cambie su empresa o necesite más características, puede cambiar de plan.  
 
 La manera más sencilla de cambiar de plan es usar el botón **Cambiar de planes** del Centro de administración. Sin embargo, el uso del botón **Cambiar de plan** no es compatible en todas las situaciones. En algunos casos, es posible que pueda cambiar de plan manualmente.
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, consulte [actualizar a un plan diferente](upgrade-to-different-plan.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365. Para obtener más información, consulte[acerca del nuevo centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
-::: moniker-end
 
 **¿Necesita algo más?**
-
 - [Cancelar la suscripción](cancel-your-subscription.md)
-- [Actualizar Office 365 para el hogar a una suscripción para empresas](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Actualización de la familia Microsoft 365 a una suscripción de empresa](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Usar el botón cambiar de plan
@@ -82,7 +75,7 @@ Cuando use el botón **Cambiar de plan**, se le guiará por el proceso de compra
 
 4. Seleccione **Chatear ahora** en la página **Finalización de la compra** si necesita ayuda.
 
-    Una vez que haya realizado el pago, el cambio tardará unos minutos en finalizarse en Office 365. Podrá empezar a usar inmediatamente la nueva suscripción.
+    Cuando termine la desprotección, Microsoft 365 tardará unos minutos en finalizar el cambio. Podrá empezar a usar inmediatamente la nueva suscripción.
 
 ## <a name="the-switch-plans-button-isnt-there"></a>No aparece el botón Cambiar de plan
 
@@ -90,7 +83,7 @@ Si el botón **cambiar de plan** no está disponible, puede intentar [cambiar de
   
 A continuación, le indicamos los posibles motivos de esto:
   
-- Está usando más de un plan de Office 365. Solo puede usar el botón **Cambiar de plan** si todos los usuarios se suscriben al mismo plan.
+- Está usando más de un plan de 365 de Microsoft. Solo puede usar el botón **Cambiar de plan** si todos los usuarios se suscriben al mismo plan.
 
 - Ya está usando Office 365 Enterprise E5, de modo que ya tiene toda la funcionalidad disponible en Office 365.
 
@@ -98,7 +91,7 @@ A continuación, le indicamos los posibles motivos de esto:
 
 Cuando usa el botón **Cambiar de plan**, se muestran los planes a los que puede cambiar en función de los servicios de su plan actual. Solo puede usar el botón **Cambiar de plan** para cambiar a un plan que tenga los servicios relacionados con los mismos datos o una versión superior. Esto garantiza que los usuarios no perderán los datos relacionados con esos servicios durante el cambio.
   
-Para comparar planes antes de cambiar, consulte la página [Comparación de productos de Office 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=842056). Para especificaciones técnicas, consulte [Descripciones del servicio de Office 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
+Para comparar los planes antes de cambiar, consulte la página [de comparación de productos de 365 para empresas de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842056) . Para obtener especificaciones técnicas, consulte las [descripciones de servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
   
 Si desea cambiar a un plan con menos servicios, puede cambiar de plan [manualmente](switch-plans-manually.md)o [llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md) para obtener ayuda.
   
@@ -110,4 +103,4 @@ Si desea cambiar a un plan con menos servicios, puede cambiar de plan [manualmen
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Llame al soporte técnico para ayudarle a cambiar de plan
 
-[Llame al servicio de soporte técnico](../../admin/contact-support-for-business-products.md)
+![](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Soporte técnico de llamadas](../../admin/contact-support-for-business-products.md) de teléfono

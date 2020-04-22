@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Obtenga información sobre cómo cancelar la suscripción de prueba o de pago de Office 365 para empresas o Microsoft 365.
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Obtenga información acerca de cómo cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas o Microsoft 365.
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142168"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636600"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
-*Elegibilidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar la suscripción de prueba de Office 365 para empresas o pago en línea en el centro de administración en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, [llame al soporte técnico para cancelar la suscripción](../../admin/contact-support-for-business-products.md).
+*Elegibilidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar la suscripción de prueba de Microsoft 365 para empresas o pago en línea en el centro de administración en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, [llame al soporte técnico para cancelar la suscripción](../../admin/contact-support-for-business-products.md).
 
 *Reembolso:* Se le devolverá cualquier crédito prorrateado dentro del siguiente ciclo de facturación.
 
@@ -43,13 +43,14 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ::: moniker range="o365-worldwide"
 
+
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
 2. Busque la suscripción que desea cancelar y, en **configuración & acciones**, seleccione **Cancelar suscripción**.
 
 3. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
 
-    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Office 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción a office 365 para empresas?](what-if-my-subscription-expires.md)
+    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando finaliza la suscripción a microsoft 365 para empresas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 4. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
 
-    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Office 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción a office 365 para empresas?](what-if-my-subscription-expires.md)
+    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando finaliza la suscripción a microsoft 365 para empresas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 4. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
 
-    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Office 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción a office 365 para empresas?](what-if-my-subscription-expires.md)
+    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando finaliza la suscripción a microsoft 365 para empresas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ Si usa un dominio personalizado con su suscripción, debe realizar algunos pasos
 
 Si configura un dominio personalizado, agregó registros DNS para que el dominio funcione con los servicios de Office 365. Antes de quitar el dominio, asegúrese de actualizar los registros DNS (por ejemplo, el registro MX del dominio) en el host DNS.
 
-Por ejemplo, cambie el registro MX en su host DNS. El correo electrónico enviado a su dominio deja de ir a su dirección de Office 365 y va a su nuevo proveedor de correo electrónico. (Un registro MX determina dónde se envía el correo electrónico del dominio).
+Por ejemplo, cambie el registro MX en su host DNS. Los correos electrónicos enviados a su dominio dejan de llegar a su dirección de Microsoft y van a su nuevo proveedor de correo electrónico. (Un registro MX determina dónde se envía el correo electrónico del dominio).
 
 - Si los registros de servidor de nombres (NS) [señalan a Office 365 servidores de nombres](../../admin/setup/add-domain.md), los cambios en el registro mx no surtirán efecto hasta que cambie los registros NS para que apunten a su nuevo host DNS (vea el paso 2).
 
-- Antes de actualizar el registro MX, informe a los usuarios de la fecha en la que planea cambiar el correo electrónico y el nuevo proveedor de correo electrónico que planea usar. Además, si los usuarios quieren migrar su correo electrónico de Office 365 existente al nuevo proveedor, deben realizar pasos adicionales.
+- Antes de actualizar el registro MX, informe a los usuarios de la fecha en la que planea cambiar el correo electrónico y el nuevo proveedor de correo electrónico que planea usar. Además, si los usuarios quieren mover el correo electrónico de Microsoft existente al nuevo proveedor, deben realizar pasos adicionales.
 
 - El día en que cambie el registro MX, siga el resto de los pasos de este artículo.
 

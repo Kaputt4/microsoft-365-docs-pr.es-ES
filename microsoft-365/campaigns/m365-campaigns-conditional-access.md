@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo requerir MFA y cómo configurar directivas de acceso condicional para Microsoft 365 Business.
-ms.openlocfilehash: 7898ded24bb66545b903ab98f3c7aa78d95860f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo requerir MFA y configurar directivas de acceso condicional para Microsoft 365 para empresas.
+ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056431"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635617"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir la autenticación multifactor y configurar directivas de acceso condicional
 
@@ -49,7 +49,7 @@ Microsoft recomienda habilitar todas estas directivas de línea base. Una vez ha
 Para obtener más información acerca de estas directivas, vea [¿Qué son las directivas de línea base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 
 
-## <a name="require-mfa"></a>Exigir MFA
+## <a name="require-mfa"></a>Requerimiento de la MFA
 
 Para requerir que todos los usuarios inicien sesión con un segundo formulario de identificador:
 

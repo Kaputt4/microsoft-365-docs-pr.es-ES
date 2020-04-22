@@ -16,16 +16,16 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo el nivel de confianza contra correo no deseado (SCL) determina si es probable o improbable que un mensaje sea correo no deseado y las acciones predeterminadas que el filtrado de correo no deseado realiza en los mensajes en función del SCL.
-ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893699"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638289"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Nivel de confianza contra correo no deseado (SCL) en Office 365
 
-Cuando Office 365 (Exchange online o Exchange Online Protection (EOP) sin buzones de Exchange Online) recibe un mensaje de correo electrónico entrante, el mensaje pasa por el filtrado de correo no deseado y se le asigna una puntuación de correo no deseado. Esa puntuación se asigna a un nivel de confianza de correo no deseado (SCL) individual que se agrega al mensaje en un encabezado X. Un SCL más alto indica que un mensaje es más probable que sea correo no deseado. El servicio realiza una acción en el mensaje basado en el SCL.
+Cuando Microsoft 365 (Exchange online o Exchange Online Protection (EOP) sin buzones de Exchange Online) recibe un mensaje de correo electrónico entrante, el mensaje pasa por el filtrado de correo no deseado y se le asigna una puntuación de correo no deseado. Esa puntuación se asigna a un nivel de confianza de correo no deseado (SCL) individual que se agrega al mensaje en un encabezado X. Un SCL más alto indica que un mensaje es más probable que sea correo no deseado. El servicio realiza una acción en el mensaje basado en el SCL.
 
 En la tabla siguiente se describen los medios de SCL y las acciones predeterminadas que se realizan en los mensajes. Para obtener más información acerca de las acciones que puede realizar en los mensajes en función del veredicto de filtrado de correo no deseado, consulte [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
@@ -46,4 +46,4 @@ Al igual que el SCL, el nivel de queja masiva (BCL) identifica un correo electr�
 
 ||
 |:-----|
-|![El icono reducido de LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**.|
+|![El icono reducido de LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?**         Descubra los cursos gratuitos de vídeo para **administradores y profesionales de TI de Microsoft 365**, que le ha ofrecido LinkedIn Learning.|

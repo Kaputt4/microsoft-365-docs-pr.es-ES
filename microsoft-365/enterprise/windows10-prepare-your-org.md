@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085529"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636668"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: preparar la organización para Windows 10 Enterprise
 
@@ -34,8 +34,8 @@ Antes de actualizar los dispositivos a Windows 10 Enterprise, tenga en cuenta lo
   Si tiene Active Directory local, puede [sincronizarlo con Microsoft 365](identity-add-user-accounts.md#identity-sync) para crear cuentas de usuario en Azure ad, el directorio de la nube usado por Microsoft 365. Con este método, puede crear cuentas para los usuarios y para los grupos de seguridad que use para administrar los permisos de los recursos (como los documentos o colecciones de sitios de SharePoint Online). La sincronización de Active Directory con Microsoft 365 no asignará licencias a los usuarios.
 - **No es necesario que tenga licencia para los usuarios en este momento** <br>
   Para que los usuarios puedan usar los servicios de Microsoft 365 o instalar software desde el portal de Microsoft 365, necesitan licencias de producto. Como administrador global o de administración de usuarios, puede asignar directamente licencias de productos en Microsoft 365 de forma individual o en masa. También puede usar [licencias basadas en grupos](identity-use-group-management.md#identity-group-license) para asignar licencias automáticamente cuando se agregan usuarios a un grupo determinado. 
-- **Instale Office 365 ProPlus por separado** <br>
-  La obtención de una licencia de 365 de Microsoft no instala automáticamente Office 365 ProPlus en los equipos cliente. Consulte [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) para obtener más información. 
+- **Instale Microsoft 365 apps for Enterprise por separado** <br>
+  La obtención de una licencia de 365 de Microsoft no instala automáticamente las aplicaciones de Microsoft 365 para Enterprise en los equipos cliente. Consulte [Phase 4: Microsoft 365 apps for Enterprise](office365proplus-infrastructure.md) para obtener más información. 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Establecer el nivel de datos de diagnósticos de Windows
 
@@ -47,7 +47,7 @@ Puede establecer la configuración de datos de diagnóstico del sistema operativ
 
 Use el valor adecuado de la tabla siguiente cuando configure la Directiva de administración.
 
-| Nivel | Datos recopilados | Valor |
+| Level | Datos recopilados | Valor |
 |:--- |:--- |:--- |
 | Seguridad | Solo datos de seguridad. | comprendi |
 | Básica | Datos de seguridad y datos básicos del sistema y de calidad. | 1 |

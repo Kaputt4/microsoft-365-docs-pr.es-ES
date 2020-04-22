@@ -1,5 +1,5 @@
 ---
-title: Detectar y corregir las reglas de Outlook y los ataques de inserción de formularios personalizados en Office 365
+title: Detectar y corregir ataques de las reglas de Outlook y de las inyecciones de formularios personalizados
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599447"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637597"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detectar y corregir ataques de las reglas de Outlook y de las inyecciones de formularios personalizados
 
 **Resumen** Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365.
 
@@ -164,7 +164,7 @@ Si encuentra algún indicio de alguno de estos ataques, la corrección es sencil
 
 4. Instale las versiones más actualizadas de Outlook. Recuerde que la versión actual de Outlook bloquea ambos tipos de este ataque de forma predeterminada.
 
-5. Una vez que se hayan quitado todas las copias sin conexión del buzón de correo, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos de [configurar la autenticación multifactor para los usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
+5. Una vez que se hayan quitado todas las copias sin conexión del buzón, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos descritos en [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
 
 ### <a name="using-powershell"></a>Mediante PowerShell
 
@@ -192,7 +192,7 @@ Hay dos cmdlets de PowerShell remoto que puede usar para quitar o deshabilitar r
 
 Los atacantes solo usan las reglas y los formularios para aprovechar una vez que han robado o infringido una de sus cuentas de usuario. Por lo tanto, el primer paso para evitar el uso de estos ataques contra su organización es proteger sus cuentas de usuario de forma agresiva. Algunas de las formas más comunes en las que las cuentas se infringen son los ataques de suplantación de identidad (phishing) o de [niebla de contraseña](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). También debe hacer lo siguiente:
+La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). También debe hacer lo siguiente:
 
 - Supervisar cómo se [obtiene acceso](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar estas [directivas de seguridad de aplicaciones de nube de Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) para supervisar sus cuentas y enviar alertas sobre actividades inusuales:
 
@@ -234,9 +234,9 @@ Busque la clave EnableUnsafeClientMailRules. Si está y se establece en 1, la re
 
 Los clientes con instalaciones de Exchange locales deben considerar el bloqueo de versiones anteriores de Outlook que no tienen revisiones disponibles. Encontrará más información sobre este proceso en el artículo [configure Outlook Client blocking](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un Cybersecurity Pro
 
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+Su suscripción a Microsoft 365 incluye un eficaz conjunto de capacidades de seguridad que puede usar para proteger sus datos y sus usuarios. Use [microsoft 365 Security Roadmap-Top prioridades para los primeros 30 días, 90 días y más allá de la](security-roadmap.md) implementación de los procedimientos recomendados de Microsoft para proteger su inquilino de Microsoft 365.
 
 - Tareas a realizar en los primeros 30 días. Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 

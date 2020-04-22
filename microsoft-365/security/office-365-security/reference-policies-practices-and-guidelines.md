@@ -16,22 +16,22 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha desarrollado diversas directivas, procedimientos y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de un correo electrónico abusivo, no deseado o malintencionado.
-ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033751"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634393"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
-Microsoft se centra en ayudarle a que disfrute de la experiencia web de usuario más confiable. Por ello, Microsoft ha desarrollado diversas políticas y procedimientos, y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado. Los remitentes que intenten enviar correo electrónico a usuarios de Office 365 deben asegurarse de que comprenden completamente y siguen las instrucciones de este artículo para colaborar en este esfuerzo y ayudar a evitar posibles problemas de entrega.
+Microsoft se centra en ayudarle a que disfrute de la experiencia web de usuario más confiable. Por ello, Microsoft ha desarrollado diversas políticas y procedimientos, y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado. Los remitentes que intenten enviar correo electrónico a los usuarios deben asegurarse de que comprenden completamente y siguen las instrucciones de este artículo para ayudarle a evitar posibles problemas de entrega.
 
-Si no cumple estas políticas y directrices, es posible que nuestro equipo de soporte técnico no pueda ayudarle. Si cumple las directrices, prácticas y políticas que se presentan en este artículo y sigue experimentando problemas de entrega basados en su dirección IP de remitente, siga los pasos para enviar una solicitud de eliminación de la lista. Para obtener instrucciones, vea [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Si no cumple estas políticas y directrices, es posible que nuestro equipo de soporte técnico no pueda ayudarle. Si cumple las directrices, prácticas y políticas que se presentan en este artículo y sigue experimentando problemas de entrega basados en su dirección IP de remitente, siga los pasos para enviar una solicitud de eliminación de la lista. Para obtener instrucciones, consulte [usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Directivas generales de Microsoft
 
-Los correos electrónicos enviados a los usuarios de Office 365 deben cumplir todas las directivas de Microsoft relativas a la transmisión de correo electrónico y al uso de Office 365.
+El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con todas las directivas de Microsoft que rigen la transmisión de correo electrónico y el uso de Office 365.
 
 - Condiciones de servicio aplicables a Office 365. En concreto, la prohibición de usar el servicio para enviar correo electrónico no deseado o distribuir malware
 
@@ -39,7 +39,7 @@ Los correos electrónicos enviados a los usuarios de Office 365 deben cumplir to
 
 ## <a name="governmental-regulations"></a>Regulaciones gubernamentales
 
-Los correos electrónicos enviados a los usuarios de Office 365 deben cumplir todas las leyes y regulaciones que rigen las comunicaciones por correo electrónico en la jurisdicción aplicable.
+El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir todas las leyes y regulaciones aplicables en materia de comunicaciones de correo electrónico en la jurisdicción correspondiente.
 
 - [Ley estadounidense CAN-SPAM: guía de cumplimiento para empresas](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -47,13 +47,13 @@ Los correos electrónicos enviados a los usuarios de Office 365 deben cumplir to
 
 ## <a name="technical-guidelines"></a>Directrices técnicas
 
-Los correos electrónicos enviados a Office 365 deben cumplir las recomendaciones aplicables que figuran en los siguientes documentos (algunos vínculos solo están disponibles en inglés).
+El correo electrónico enviado a Microsoft 365 debe cumplir con las recomendaciones aplicables que aparecen en los documentos siguientes (algunos vínculos solo están disponibles en inglés).
 
 - [RFC 2505: Recomendaciones frente a correo electrónico no deseado para MTA de SMTP](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: Extensión de servicio SMTP para la canalización de comandos](https://www.ietf.org/rfc/rfc2920.txt)
 
-Además, los servidores de correo electrónico que se conecten a Office 365 deben cumplir los siguientes requisitos:
+Además, los servidores de correo electrónico que se conectan a Microsoft 365 deben cumplir con los siguientes requisitos:
 
 - El remitente debe cumplir todas las normas técnicas para la transmisión de correo electrónico de Internet, conforme publica el Grupo de trabajo de ingeniería de Internet (IETF) de The Internet Society, incluidos RFC 5321, RFC 5322 y otros.
 
@@ -73,9 +73,9 @@ Además, los servidores de correo electrónico que se conecten a Office 365 debe
 
 Los remitentes, ISP y otros proveedores de servicios deben administrar activamente la reputación de sus direcciones IP salientes.
 
-## <a name="office-365-limits"></a>Límites de Office 365
+## <a name="microsoft-365-limits"></a>Límites de 365 de Microsoft
 
-Los remitentes deben aceptar los límites de Office 365 enumerados en [Límites de Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
+Los remitentes deben adherirse a los límites de Microsoft 365 que aparecen en los [límites de Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organizaciones y recursos de entrega de correo electrónico
 

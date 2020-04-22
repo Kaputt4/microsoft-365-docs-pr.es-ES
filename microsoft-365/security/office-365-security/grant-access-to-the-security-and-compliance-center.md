@@ -1,5 +1,5 @@
 ---
-title: Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365
+title: Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,23 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Office 365 para poder administrar cualquiera de sus características de seguridad o cumplimiento.
-ms.openlocfilehash: cccf44a64d20dc1304dbc5145d6ae50441cfacef
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento antes de que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
+ms.openlocfilehash: 5110bcecb6731cbf51023c6df19bed30bcba72c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085978"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638063"
 ---
-# <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365
+# <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
-Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Office 365 para poder administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global de Office 365 o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les proporcione acceso.
+Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento antes de que puedan administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les proporcione acceso.
 
-Para obtener más información acerca de los distintos permisos que puede conceder a los usuarios en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información acerca de los distintos permisos que puede conceder a los usuarios en el centro de seguridad & cumplimiento, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Debe ser administrador global de Office 365 o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento para completar los pasos descritos en este artículo.
+- Debe ser un administrador global o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento para completar los pasos de este artículo.
 
 - Los grupos de roles para el centro de seguridad & cumplimiento pueden tener nombres similares a los grupos de roles en Exchange Online, pero no son los mismos.
 
@@ -43,7 +43,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 ## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el centro de administración para conceder a otro usuario acceso al centro de seguridad & cumplimiento
 
-1. [Inicie sesión en Office 365 y vaya al centro de administración](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
+1. [Inicie sesión y vaya al centro de administración](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
 
 2. En el centro de administración de Microsoft 365, Abra **centros de administración** y, a continuación, haga clic en **seguridad & cumplimiento**.
 
@@ -67,7 +67,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell para proporcionar a otro usuario acceso al centro de seguridad & cumplimiento
 
-1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Use el comando **Add-RoleGroupMember** para agregar un usuario al rol Administración de la organización, tal y como se muestra en el ejemplo siguiente.
 
@@ -83,7 +83,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha concedido a los usuarios acceso al centro de seguridad & cumplimiento, use el cmdlet **Get-RoleGroupMember** para ver los miembros del grupo de funciones de administración de la organización, tal como se muestra en el ejemplo siguiente.
 

@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8fa959de5806eccf76b0e83103c0274d0eb86da0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084788"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637097"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de datos en el centro de seguridad de Microsoft 365
 
-La categoría de **datos** ayuda a realizar un seguimiento de la actividad del usuario que podría llevar a la revelación no autorizada de datos. Estos son el retrabajo de los informes existentes de directivas DLP de Office 365 y un informe de coincidencia de directiva DLP de terceros.
+La categoría **Datos** ayuda a realizar un seguimiento de la actividad de usuarios que pueda conducir a la divulgación no autorizada de datos. Estos son el retrabajo de los informes de directivas de DLP existentes más un informe de coincidencia de directiva DLP de terceros.
 
-Puede ver lo siguiente:
+Se puede ver lo siguiente:
 
 * Usuarios que comparten la mayoría de los archivos de las aplicaciones en la nube
 * Número de coincidencias de directivas de DLP producidas
-* El número de directivas de DLP que invalida o falsos positivos se notifican
+* Número de directivas DLP que se anulan o comunican falsos positivos
 * El número de coincidencias de directivas de DLP en los servicios en la nube de terceros a través de Microsoft Cloud App Security
 
 ![Categoría de datos de la página informes](../../media/data.png)

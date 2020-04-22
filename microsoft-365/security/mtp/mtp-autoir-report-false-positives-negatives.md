@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955666"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637085"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -45,7 +45,7 @@ Use este artículo como guía.
 
 |El elemento perdió o no se detectó correctamente |Servicio  |Qué hacer  |
 |---------|---------|---------|
-|-Mensaje de correo electrónico <br/>-Datos adjuntos de correo electrónico <br/>-URL en un mensaje de correo electrónico<br/>-URL en un archivo de Office      |[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft para Office 365 Scanning](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-Mensaje de correo electrónico <br/>-Datos adjuntos de correo electrónico <br/>-URL en un mensaje de correo electrónico<br/>-URL en un archivo de Office      |[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft para su análisis](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |Archivo o aplicación en un dispositivo    |[Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)         |[Enviar un archivo a Microsoft para el análisis de malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que se repitan falsos positivos

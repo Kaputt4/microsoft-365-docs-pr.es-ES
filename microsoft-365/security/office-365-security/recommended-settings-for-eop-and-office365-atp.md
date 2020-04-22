@@ -16,23 +16,23 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 0d5d626da8f8bdcdc234f578145db0dfde2c06a5
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547613"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634417"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
-**Exchange Online Protection (EOP)** es el núcleo de la seguridad de las suscripciones de Office 365 y ayuda a que los mensajes malintencionados lleguen a las bandejas de entrada de sus empleados. Pero con los nuevos y sofisticados ataques emergentes cada día, las protecciones mejoradas suelen ser necesarias. **Office 365 Advanced Threat Protection (ATP)** El plan 1 de ATP o el plan ATP 2 contienen características adicionales que ofrecen más niveles de seguridad, control e investigación a los administradores.
+**Exchange Online Protection (EOP)** es el núcleo de la seguridad de las suscripciones de Microsoft 365 y ayuda a que los mensajes malintencionados lleguen a las bandejas de entrada de sus empleados. Pero con los nuevos y sofisticados ataques emergentes cada día, las protecciones mejoradas suelen ser necesarias. **Office 365 Advanced Threat Protection (ATP)** El plan 1 de ATP o el plan ATP 2 contienen características adicionales que ofrecen más niveles de seguridad, control e investigación a los administradores.
 
 Aunque se permite a los administradores de seguridad personalizar la configuración de seguridad, hay dos niveles de seguridad en EOP y en ATP de Office 365 que le recomendamos: **estándar** y **estricto**. El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de configuraciones de filtrado de correo ayudarán a evitar que el correo no deseado llegue a la bandeja de entrada de sus empleados en la mayoría de las situaciones.
 
 > [!IMPORTANT]
 > La regla de correo no deseado debe estar habilitada en un buzón para que el filtrado funcione correctamente. Está habilitado de forma predeterminada, pero debe comprobarlo si el filtrado no parece funcionar. Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-En este tema se describe esta configuración recomendada por Microsoft para ayudar a proteger a los usuarios de Office 365.
+En este tema se describe esta configuración recomendada por Microsoft para ayudar a proteger a los usuarios.
 
 > [!TIP]
 > Hay un nuevo módulo de PowerShell que puede descargar, llamado analizador de configuración de la protección contra amenazas avanzada de Office 365 (ORCA), que ayuda a determinar algunas de estas opciones de configuración. Cuando se ejecuta como administrador en el espacio empresarial, Get-ORCAReport le ayudará a generar una evaluación de la configuración de protección contra correo electrónico no deseado, anti-phish y otros mensajes. Puede descargar este módulo en https://www.powershellgallery.com/packages/ORCA/.
@@ -117,7 +117,7 @@ Solo puede configurar estas opciones en las organizaciones de Office 365 con buz
 | Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
 |---|---|---|---|
 |**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
-|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
 |**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <br/><br/> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|Esto se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Seguridad de la protección contra amenazas avanzada de Office 365
@@ -181,7 +181,7 @@ Tenga en cuenta que estos son los mismos valores de configuración que están di
 | Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
 |---|---|---|---|
 |**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
-|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
 |**Si el correo electrónico lo envía alguien que no tiene permiso para suplantar su dominio** <br/><br/> _AuthenticationFailAction_|**Mover mensaje a las carpetas de correo no deseado de los destinatarios** <br/><br/> `MoveToJmf`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|Esto se aplica a los remitentes bloqueados en [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Configuración avanzada en las directivas antiphishing de ATP

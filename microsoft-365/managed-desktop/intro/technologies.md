@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: beab5df5b978cc3e2fd6dd345609a22209501298
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37113723"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636201"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
 
@@ -27,9 +27,9 @@ En este tema se resumen los componentes incluidos en las licencias Enterprise ne
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
  |
  --- | ---
-Office 365 ProPlus (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de Office 365 ProPlus, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en una licencia usuarios finales. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md).
+Microsoft 365 apps for Enterprise (64 bits) | Estas aplicaciones de Office se entregarán con el dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, OneNote.<br><br>No se incluyen las versiones completas de 64 bits de Microsoft Project y Microsoft Visio. Sin embargo, dado que la instalación de estas aplicaciones depende de la instalación de las aplicaciones de Microsoft 365 para empresas, el escritorio administrado de Microsoft ha creado implementaciones de Microsoft Intune y grupos de seguridad predeterminados que puede usar para implementar estas aplicaciones en usuarios finales con licencia. Para obtener más información, vea [instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](../get-started/project-visio.md).
 OneDrive para la Empresa |El inicio de sesión único de Azure Active Directory está habilitado para los usuarios finales una vez que inicie sesión en OneDrive para la empresa.<br><br>Se incluye la redirección de carpetas conocidas para las carpetas "escritorio", "documento" y "imágenes"; habilitado y configurado por el escritorio administrado por Microsoft. 
-Almacenar aplicaciones |    Microsoft Sway y Power BI no se entregan con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
+Aplicaciones de la Tienda |    Microsoft Sway y Power BI no se entregan con el dispositivo. Estas aplicaciones están disponibles para su descarga desde Microsoft Store.
 Aplicaciones Win32 |    Teams no se incluye con el dispositivo, sino que es empaquetado y proporcionado por Microsoft para dispositivos de escritorio administrados por Microsoft. El cliente de Azure Information Protection no se incluye con el dispositivo, pero puede empaquetarlo para su implementación. 
 Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, PowerApps y Planner no se incluyen en el dispositivo. Los usuarios pueden tener acceso a la versión Web de estas aplicaciones con un explorador.
 
@@ -39,7 +39,7 @@ Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, Powe
  |
  --- | ---
 Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones Win32 de Intune.
-Protección contra amenazas avanzada de Microsoft Defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
+Protección contra amenazas avanzada de Microsoft Defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

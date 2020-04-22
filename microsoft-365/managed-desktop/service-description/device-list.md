@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b851f3f698abd34d4964c79a68be050ad9f0a4db
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 354845e3bfebee5e6c67b53ba5ef6f55a9c419f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198366"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637881"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -54,11 +54,11 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV, cámara de INFRARROJOs o lector de huellas digitales obligatorios | 6 de junio de 2020 | 6 de junio de 2023 |
 | [Estación de trabajo HP Z2 mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB de RAM | SKU con 8QR48AV| 31 de enero de 2021 | 31 de enero de 2024 |
 |[Estación de trabajo móvil HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS02AV, se requiere cámara IR | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
-| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8 GB de RAM | Ninguno | 2 de agosto de 2020 | 2 de agosto de 2023 |
-| [Portátil Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB de RAM | Ninguno | 16 de octubre de 2020 | 16 de octubre de 2023 |
-| **\*[Portátil Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB de RAM | Ninguno | 22 de octubre de 2021 | 22 de octubre de 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB de RAM | Ninguno | 16 de octubre de 2020 | 16 de octubre de 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB de RAM | Ninguno | 22 de octubre de 2021 | 22 de octubre de 2024 |
+| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8 GB de RAM | None | 2 de agosto de 2020 | 2 de agosto de 2023 |
+| [Portátil Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB de RAM | None | 16 de octubre de 2020 | 16 de octubre de 2023 |
+| **\*[Portátil Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB de RAM | None | 22 de octubre de 2021 | 22 de octubre de 2024 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB de RAM | None | 16 de octubre de 2020 | 16 de octubre de 2023 |
+| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB de RAM | None | 22 de octubre de 2021 | 22 de octubre de 2024 |
 
 
 
@@ -75,7 +75,6 @@ Estos recursos pueden ayudar a responder preguntas que puedan tener sobre dispos
 - Para más preguntas sobre los dispositivos Dell, póngase en contacto con <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
 
 - Para obtener más información sobre las instrucciones de ordenación de dispositivos y dispositivos de HP, póngase en contacto con: continente (<a href="mailto:mmd-americas@hp.com">MMD-Americas@hp.com</a>); Europa/Oriente Medio/África (<a href="mailto:mmd-emea@hp.com">MMD-EMEA@hp.com</a>); Asia Pacífico/Japón (<a href="mailto:mmd-apj@hp.com">MMD-APJ@hp.com</a>); Global (<a href="mailto:mmd@hp.com">MMD@hp.com</a>)
-
 
 
 

@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Obtenga información sobre cómo solucionar problemas de errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 Business.
-ms.openlocfilehash: 8b99e848fa040711785b921d12548f16dadb09af
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Obtenga información sobre cómo solucionar problemas de errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 empresa Premium.
+ms.openlocfilehash: 0c0742e5bf17c85cedfb421cabfd87c0e2184ba5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635052"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Solucionar errores de dispositivos de AutoPilot
 
 ## <a name="device-file-error-messages"></a>Mensajes de error de archivo de dispositivo
 
-Aquí encontrará información sobre algunos de los errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 Business. 
+Aquí encontrará información sobre algunos de los errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 empresa Premium. 
   
 |**Código de error**|**Corregir para intentar**|
 |:-----|:-----|

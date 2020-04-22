@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Para ver las directivas y las acciones de dispositivos, inicie sesión en Microsoft 365 empresa con credenciales de administrador global.
-ms.openlocfilehash: ac8ea8a5b484fe6401e72fd0eaab4d79515f3aac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Para ver las directivas y las acciones de dispositivos, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
+ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635692"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 
@@ -35,7 +35,7 @@ ms.locfileid: "42056610"
 
 ## <a name="view-and-edit-device-policies"></a>Ver y editar directivas de dispositivo
 
-1.  Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1.  Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 2. En el panel de navegación izquierdo, elija **directivas**de **dispositivos** \> .
 
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.

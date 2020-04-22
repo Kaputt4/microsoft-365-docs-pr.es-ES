@@ -17,16 +17,16 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Obtenga información acerca de cómo puede pasar de un informe detallado a un conocimiento con las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8d56886a39e14eddd5ad6505a4fe68e20fc6a543
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086226"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638087"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 
-Si no está familiarizado con [los informes y la información del centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede desplazarse fácilmente de un informe detallado a un conocimiento y a acciones recomendadas. 
+Si no está familiarizado con [los informes y la información del centro &amp; de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede desplazarse fácilmente de un informe detallado a un conocimiento y a acciones recomendadas. 
   
 Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimiento. Para ver Tutoriales adicionales, consulte la sección [temas relacionados](#related-topics) . 
   
@@ -34,7 +34,7 @@ Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimie
 
 Vamos a recorrer el flujo de un informe detallado a un conocimiento y acciones. (Este es un breve ejemplo de [antimalware y contra correo no deseado](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Comencemos con los informes del [centro de cumplimiento de seguridad &amp; ](https://protection.office.com) . (Vaya a **** \> **Panel**de informes). <br/>![En el centro &amp; de seguridad y cumplimiento, vaya \> a informes de panel](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Comencemos con los informes del [centro de cumplimiento de seguridad &amp; ](https://protection.office.com) . (Vaya a **Reports** \> **Panel**de informes). <br/>![En el centro &amp; de seguridad y cumplimiento, vaya \> a informes de panel](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Elegimos un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección contra amenazas** ).<br/>![Informe de estado de protección contra amenazas que muestra información](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

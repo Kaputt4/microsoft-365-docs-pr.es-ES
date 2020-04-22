@@ -1,5 +1,5 @@
 ---
-title: Aumentar la protección contra amenazas para Microsoft 365 Business
+title: Aumentar la protección contra amenazas para Microsoft 365 empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayude a mantener segura la información confidencial de sus clientes.
-ms.openlocfilehash: 6f4520b052c2e7acb8748d3c9d6e26777cb56d4b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561248"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635132"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
-Su empresa de Microsoft 365 incluye características para proteger sus datos y dispositivos y ayudarle a mantener segura la información confidencial de sus clientes.
+Su Microsoft 365 empresa Premium incluye características para proteger sus datos y dispositivos y ayudarle a mantener segura la información confidencial de sus clientes.
 
 ## <a name="set-up-dlp-features"></a>Configurar las características de DLP
 

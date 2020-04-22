@@ -1,5 +1,5 @@
 ---
-title: Dirigir las cuentas de usuario en peligro con investigación y respuesta automatizadas en Office 365 Advanced Threat Protection
+title: Dirigir las cuentas de usuario en peligro con investigación y respuesta automatizadas
 keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección, protección, riesgo
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con capacidades automatizadas de investigación y respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280218"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635777"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Dirigir las cuentas de usuario en peligro con investigación y respuesta automatizadas
 
@@ -60,7 +60,7 @@ Cuando una cuenta de usuario se ve comprometida, se desencadenan alertas. Y, en 
 
 ### <a name="view-and-investigate-restricted-users"></a>Ver e investigar usuarios restringidos
 
-Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Por ejemplo, en el centro de cumplimiento de & de seguridad de Office 365, puede ir a**los usuarios restringidos**de**revisión** > de **Administración** > de amenazas. El siguiente procedimiento describe la navegación mediante el panel de **alertas** , que es una buena forma de ver los distintos tipos de alertas que se pueden haber desencadenado.
+Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Por ejemplo, en el centro de seguridad & cumplimiento, puede ir a**los usuarios restringidos**de**revisión** > de **Administración** > de amenazas. El siguiente procedimiento describe la navegación mediante el panel de **alertas** , que es una buena forma de ver los distintos tipos de alertas que se pueden haber desencadenado.
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión.
 
@@ -74,7 +74,7 @@ Tiene algunas opciones para desplazarse a una lista de usuarios restringidos. Po
 
 ### <a name="view-details-about-automated-investigations"></a>Ver detalles sobre las investigaciones automatizadas
 
-Una vez iniciada una investigación automatizada, puede ver los detalles y los resultados en el centro de cumplimiento de & de seguridad de Office 365. Vaya a **** > **investigaciones**de administración de amenazas y, a continuación, seleccione una investigación para ver sus detalles.
+Una vez iniciada una investigación automatizada, puede ver los detalles y los resultados en el centro de seguridad & cumplimiento. Vaya a **Threat management** > **investigaciones**de administración de amenazas y, a continuación, seleccione una investigación para ver sus detalles.
 
 Para obtener más información, consulte [Ver detalles de una investigación](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 

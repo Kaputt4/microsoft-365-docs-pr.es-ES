@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085548"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636680"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise incluye Windows 10 Enterprise, que proporciona las herr
 Necesitará comprender las distintas formas en las que puede implementar el sistema operativo Windows 10 y elegir el correcto para su organización. En función de su suscripción de Microsoft 365 Enterprise, también hay características de seguridad y servicios de Windows 10 que tendrá que configurar para sacar el máximo partido de Windows 10.
 
 >[!Note]
->Para implementar Windows 10 Enterprise y Office 365 ProPlus juntos y cambiar a un [escritorio moderno](https://www.microsoft.com/microsoft-365/modern-desktop), consulte el [Centro de implementación de escritorio moderno](https://aka.ms/howtoshift).
+>Para implementar juntos Windows 10 Enterprise y Microsoft 365 apps para la empresa y cambiar a un [escritorio moderno](https://www.microsoft.com/microsoft-365/modern-desktop), consulte el [centro de implementación de escritorio moderno](https://aka.ms/howtoshift).
 >
 
 ## <a name="windows-10-deployment"></a>Implementación de Windows 10
@@ -50,7 +50,7 @@ Puede obtener más información sobre Windows 10 con estos artículos:
 
 - [Página del producto Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
 - [Windows 10](https://docs.microsoft.com/windows/windows-10)
-- [Implementar y actualizar Windows 10](https://docs.microsoft.com/windows/deployment/)
+- [Implementación y actualización de Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 
 ## <a name="additional-services-and-features"></a>Servicios y características adicionales

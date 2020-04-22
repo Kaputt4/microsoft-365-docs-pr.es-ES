@@ -1,5 +1,5 @@
 ---
-title: Cambiar Office 365 para planes de empresa manualmente
+title: Cambiar manualmente los planes de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Para cambiar las suscripciones manualmente, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142156"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636588"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -51,9 +51,9 @@ Para continuar con un cambio manual, lea el [paso 2: comprar una nueva suscripci
 
 O
 
-**Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Office 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
+**Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Microsoft 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
 
-Asegúrese de comprar una suscripción para la misma organización en la que se encuentran ahora los usuarios. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios de Office 365 que desea mover. Si sus direcciones de correo \@electrónico incluyen contoso.com, debe comprar una nueva suscripción para contoso.com.
+Asegúrese de comprar una suscripción para la misma organización en la que se encuentran ahora los usuarios. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo \@electrónico incluyen contoso.com, debe comprar una nueva suscripción para contoso.com.
 Incluya una licencia para cada usuario que quiera mover.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: comprobar la nueva suscripción y las licencias
@@ -114,5 +114,4 @@ If you moved all users from one subscription to another, and you no longer need 
 Si movió solo algunos usuarios a una suscripción diferente, [elimine las licencias](../licenses/remove-licenses-from-subscription.md) que ya no necesite.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Llamar al soporte técnico para ayudarle a cambiar de plan
-
 [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)

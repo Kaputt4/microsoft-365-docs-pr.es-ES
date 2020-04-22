@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso implementó un sitio de SharePoint para datos altamente regulados para una colaboración más sencilla entre sus equipos de investigación.'
-ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0a4bc2f685cf015611da62ebbed000218f37f31e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068286"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634257"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sitio de SharePoint para activos digitales altamente confidenciales de Contoso Corporation
 
@@ -48,22 +48,22 @@ A continuación, se configuraron opciones de permisos adicionales para el sitio 
 
 ## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>Paso 2: configurar el sitio para una directiva DLP restrictiva
 
-En primer lugar, los administradores de Contoso aplicaron la etiqueta de retención **alta confidencial** de Office 365 existente a la carpeta documentos del sitio de **investigación** .
+En primer lugar, los administradores de Contoso aplicaron la etiqueta de retención **altamente confidencial** existente a la carpeta documentos del sitio de **investigación** .
 
-A continuación, creamos una nueva Directiva de DLP de Office 365 denominada **Research** que:
+A continuación, creamos una nueva Directiva de DLP denominada **Research** que:
 
-- Usa la etiqueta de retención **alta confidencial** de Office 365. 
+- Usa la etiqueta de retención **muy confidencial** . 
 - Bloquea a los usuarios cuando intentan compartir un activo digital en el sitio de **investigación** fuera de contoso.
 
 Para obtener información detallada sobre la configuración, vea [proteger archivos de SharePoint con etiquetas de retención y DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Paso 3: se ha creado una subetiqueta de confidencialidad de Office 365 para el sitio
+## <a name="step-3-created-a-sensitivity-sublabel-for-the-site"></a>Paso 3: se creó una subetiqueta de confidencialidad para el sitio
 
-Contoso Admins creó una nueva subetiqueta de confidencialidad de Office 365 denominada **Teams de investigación** de la etiqueta **extremadamente confidencial** que:
+Los administradores de Contoso crearon una nueva subetiqueta de sensibilidad denominada **Research Teams** de la etiqueta **extremadamente confidencial** que:
 
 - Requiere cifrado.
-- Permite permisos de co-autoría para el grupo de Office 365 **Research**
-- Se aplica al grupo de Office 365 **Research**
+- Permite permisos de co-autoría para el grupo de **investigación** 365 de Microsoft
+- Se aplica al grupo de **investigación** de Microsoft 365
 
 Esta es la configuración resultante del sitio de grupo de **investigación** para los activos extremadamente confidenciales.
 
@@ -71,7 +71,7 @@ Esta es la configuración resultante del sitio de grupo de **investigación** pa
 
 Los archivos de las carpetas del sitio de **investigación** están protegidos por:
 
-- Los permisos del sitio, que solo permiten el acceso a los miembros del grupo de **investigación** 365 de Office.
+- Los permisos del sitio, que solo permiten el acceso a los miembros del grupo de **investigación** 365 de Microsoft.
 - La Directiva DLP de **investigación** , que usa la etiqueta de retención y la configuración de retención **extremadamente confidenciales** , que impiden que el archivo se comparta con usuarios externos.
 - Subetiqueta de confidencialidad de los **equipos de investigación** , con cifrado y permisos que viajan con el archivo si se mueven o se copian desde el sitio de **investigación** .
 
@@ -86,7 +86,7 @@ Los administradores de Contoso movieron todos los archivos de investigación loc
 
 ## <a name="step-5-trained-their-researchers"></a>Paso 5: formación de sus investigadores
 
-El personal de seguridad de Contoso ha entrenado a los miembros del grupo **Research** Office 365 en un curso obligatorio en el que se han ejecutado:
+El personal de seguridad de Contoso ha entrenado a los miembros del grupo de **investigación** Microsoft 365 en un curso obligatorio que les ha ejecutado:
 
 - Cómo obtener acceso al nuevo sitio de **investigación** y sus archivos existentes.
 - Cómo crear archivos nuevos en el sitio o cargar archivos nuevos almacenados de forma local.
@@ -96,9 +96,9 @@ El personal de seguridad de Contoso ha entrenado a los miembros del grupo **Rese
 
 El resultado final es un entorno seguro en el que los investigadores pueden colaborar a través de Contoso en un entorno seguro en archivos que contienen información de referencia. 
 
-Si un documento de investigación de la subetiqueta **equipos de investigación** abandona el sitio de **investigación** , sólo se cifra y es accesible para los miembros del grupo de Office 365 **Research** con credenciales de cuenta de usuario válidas.
+Si un documento de investigación de la subetiqueta **equipos de investigación** abandona el sitio de **investigación** , sólo se cifra y es accesible para los miembros del grupo de Microsoft 365 **Research** con credenciales de cuenta de usuario válidas.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Implementar](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise en su organización.
 

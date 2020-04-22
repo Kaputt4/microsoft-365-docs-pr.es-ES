@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035104"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636728"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -35,7 +35,7 @@ En este artículo se incluyen recomendaciones adicionales específicas de la imp
 
 No es necesario que habilite los servicios dependientes para empezar a trabajar con Microsoft Teams. Todo "simplemente funcionará". Sin embargo, debe estar preparado para administrar lo siguiente:
 
-- Grupos de Office 365
+- Grupos de 365 de Microsoft
 - Sitios de grupo de SharePoint
 - OneDrive para la Empresa
 - Buzones
@@ -50,8 +50,8 @@ El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteg
 Estos son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
 - Microsoft Teams
-- SharePoint en línea y OneDrive para Empresas
-- Exchange en línea
+- SharePoint Online y OneDrive para la Empresa
+- Exchange Online
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
@@ -84,7 +84,7 @@ En Azure AD, los usuarios externos y invitados son los mismos. El tipo de usuari
 
 ### <a name="guest-access-in-teams"></a>Acceso de invitado en Microsoft Teams
 
-Además de las directivas para los usuarios que son internas a su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual para cada usuario, que los usuarios externos a su empresa u organización obtengan acceso a los recursos de Microsoft Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones. Puede obtener más información sobre el acceso de invitado en el siguiente vínculo: [acceso de invitado de Teams](https://docs.microsoft.com/microsoftteams/guest-access)
+Además de las directivas para los usuarios que son internos a su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual para cada usuario, que los usuarios externos a su empresa u organización obtengan acceso a los recursos de Microsoft Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones. Puede obtener más información sobre el acceso de invitado en el siguiente vínculo: [acceso de invitado de Teams](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Acceso externo en Microsoft Teams
 
@@ -118,7 +118,7 @@ Teams también le permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información sobre las directivas de permisos de la aplicación, consulte [Manage App Permission policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Obtenga información sobre cómo habilitar el acceso condicional para Exchange Online](secure-email-recommended-policies.md)
 

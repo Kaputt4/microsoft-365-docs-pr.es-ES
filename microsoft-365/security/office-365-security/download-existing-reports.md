@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Obtenga información sobre cómo descargar uno o varios informes existentes en el &amp; centro de seguridad y cumplimiento.
-ms.openlocfilehash: ea5af9aad268b4a7d540e70cc8a1f64f303159cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62f87c3a11e35bd6dae25c786ac2360e9937c84d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599437"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637585"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Descargar los informes existentes en el &amp; centro de seguridad y cumplimiento
 
@@ -29,7 +29,7 @@ En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com),
 ## <a name="download-existing-reports"></a>Descargar informes existentes
 
 > [!IMPORTANT]
-> Asegúrese de que tiene [asignados los permisos necesarios en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden tener acceso &amp; a los informes en el centro de seguridad y cumplimiento. 
+> Asegúrese de que tiene [asignados los permisos necesarios en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales, los administradores de seguridad y los lectores de seguridad pueden tener acceso a &amp; los informes en el centro de seguridad y cumplimiento. 
   
 1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), **vaya a** \> informes **informes para descarga**.
     
@@ -39,7 +39,7 @@ En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com),
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
+[Informes y información en el centro de seguridad &amp; y cumplimiento](reports-and-insights-in-security-and-compliance.md)
   
 [Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento](create-a-schedule-for-a-report.md)
   

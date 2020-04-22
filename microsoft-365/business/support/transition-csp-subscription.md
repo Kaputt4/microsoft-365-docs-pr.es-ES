@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Empresa, Microsoft 365, SMB, transición suscripción de CSP
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504115"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635072"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transición a una suscripción de CSP de Microsoft 365 Empresa
 
@@ -91,7 +91,7 @@ En la siguiente tabla se resume el impacto de las directivas de administración 
 | **Restablecer PIN cuando se produce un error de inicio de sesión** | Acceso restringido a aplicaciones | Ninguna restricción de acceso en nivel de aplicaciones |
 | **Requerir que los usuarios vuelvan a iniciar sesión después de que las aplicaciones de Office hayan estado inactivas** | Inicio de sesión requerido | No se requiere inicio de sesión |
 | **Denegar acceso a archivos de trabajo en dispositivos desbloqueados o modificados** | No se puede tener acceso a los archivos de trabajo en dispositivos con jailbreak o Rooting | Es posible acceder a archivos de trabajo en dispositivos desbloqueados o modificados |
-| **Permitir a los usuarios copiar el contenido de aplicaciones de Office en aplicaciones personales** | Copiar/pegar restringidos en aplicaciones disponibles como parte de la suscripción de Microsoft 365 Empresa | Copiar/pegar disponible en todas las aplicaciones |
+| **Permitir a los usuarios copiar el contenido de aplicaciones de Office en aplicaciones personales** | Copiar/pegar restringido a aplicaciones disponibles como parte de la suscripción a Microsoft 365 | Copiar/pegar disponible en todas las aplicaciones |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Impactos de equipos con Windows 10 tras la expiración de la suscripción
 

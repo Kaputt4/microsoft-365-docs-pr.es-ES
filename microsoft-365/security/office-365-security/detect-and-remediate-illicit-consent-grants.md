@@ -1,5 +1,5 @@
 ---
-title: Detectar y solucionar la concesión de consentimiento ilegal en Office 365
+title: Detectar y corregir las concesiones de consentimiento ilícito
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710529"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637609"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones de consentimiento ilícito
 
 **Resumen**  Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
 
@@ -38,11 +38,11 @@ Estos ataques aprovechan un modelo de interacción que presupone que la entidad 
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>¿Qué aspecto tiene un ataque ilegal de concesión de consentimiento en Office 365?
 
-Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos, también denominados "indicadores de peligro" (IOC) de este ataque. Para las organizaciones con muchas aplicaciones registradas en Azure y una base de usuarios grande, el procedimiento recomendado es revisar las concesiones de consentimiento de las organizaciones cada semana.
+Debe buscar en el **registro de auditoría** los signos, también denominados indicadores de peligro (IOC) de este ataque. Para las organizaciones con muchas aplicaciones registradas en Azure y una base de usuarios grande, el procedimiento recomendado es revisar las concesiones de consentimiento de las organizaciones cada semana.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para buscar signos de este ataque
 
-1. Abra el **centro de seguridad y cumplimiento** en el inquilino de Office 365.
+1. Abra el **centro de seguridad & cumplimiento** en su espacio empresarial.
 
 2. Desplácese hasta **Buscar** y seleccione **búsqueda de registros de auditoría**.
 
@@ -53,7 +53,7 @@ Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos
 5. Haga clic en el resultado para ver los detalles de la actividad. Haga clic en **más información** para obtener detalles de la actividad. Compruebe si IsAdminContent está establecido en true.
 
 > [!NOTE]
-> * La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción de Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción a Microsoft 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Si este valor es true, indica que un usuario con acceso de administrador global puede haber concedido acceso general a los datos. Si esto es inesperado, siga los pasos para [confirmar un ataque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Cómo confirmar un ataque
@@ -121,7 +121,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
 
 La secuencia de comandos genera un archivo denominado Permissions. csv. Siga estos pasos para buscar concesiones de permisos de aplicaciones ilícitas:
 
-1. En la columna ConsentType (Column G), busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todo el inquilino. Las aplicaciones nativas de Office 365 necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse con cuidado.
+1. En la columna ConsentType (Column G), busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todo el inquilino. Las aplicaciones nativas Microsoft 365 necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse con cuidado.
 
 2. En la columna permiso (columna F), revise los permisos que tiene cada aplicación delegada en el contenido. Busque el permiso "leer" y "escribir" o "*. All "permiso y revise estos detenidamente porque es posible que no sean apropiados.
 
@@ -131,7 +131,7 @@ La secuencia de comandos genera un archivo denominado Permissions. csv. Siga est
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar el ámbito del ataque
 
-Una vez que haya terminado de inventariar el acceso a la aplicación, revise el **registro de auditoría** de Office 365 para determinar el ámbito completo de la infracción. Busque los usuarios afectados, los intervalos de tiempo en los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar en el **registro de auditoría** del [centro de seguridad y cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Una vez que haya terminado de inventariar el acceso a la aplicación, revise el **registro de auditoría** para determinar el ámbito completo de la infracción. Busque los usuarios afectados, los intervalos de tiempo en los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar en el **registro de auditoría** del [centro de seguridad y cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
 > La auditoría de [buzones](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) y la [Auditoría de actividades para administradores y usuarios](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) deben estar habilitados antes del ataque para que pueda obtener esta información.
@@ -158,9 +158,9 @@ Una vez que haya identificado una aplicación con permisos de ilícitas, tiene v
 
 - Puede desactivar las aplicaciones integradas para su arrendamiento. Se trata de un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en un espacio empresarial. Esto evita que los usuarios concedan de forma inadvertida acceso a una aplicación malintencionada. Esto no es muy recomendable ya que perjudica seriamente la capacidad de los usuarios de ser productivo con aplicaciones de terceros. Para ello, siga los pasos que se indican en [activar o desactivar las aplicaciones integradas](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un Cybersecurity Pro
 
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+Su suscripción a Microsoft 365 incluye un eficaz conjunto de capacidades de seguridad que puede usar para proteger sus datos y sus usuarios. Use [microsoft 365 Security Roadmap-Top prioridades para los primeros 30 días, 90 días y más allá de la](security-roadmap.md) implementación de los procedimientos recomendados de Microsoft para proteger su inquilino de Microsoft 365.
 
 - Tareas a realizar en los primeros 30 días. Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 

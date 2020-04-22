@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030169"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637705"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
@@ -31,7 +31,7 @@ En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes
 ## <a name="create-a-schedule-for-a-report"></a>Crear una programación para un informe
 
 > [!IMPORTANT]
-> Asegúrese de que dispone de los permisos necesarios para realizar esta tarea. En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden tener acceso &amp; a los informes en el centro de seguridad y cumplimiento. Para obtener más información acerca de los permisos, consulte [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Asegúrese de que dispone de los permisos necesarios para realizar esta tarea. En general, los administradores globales, los administradores de seguridad y los lectores de seguridad pueden tener acceso a &amp; los informes en el centro de seguridad y cumplimiento. Para obtener más información acerca de los permisos, consulte [permisos &amp; en el centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
   
 1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **Panel**.
     
@@ -72,7 +72,7 @@ Una vez que haya creado una programación para un informe, ese informe se entreg
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
+[Informes y información en el centro de seguridad &amp; y cumplimiento](reports-and-insights-in-security-and-compliance.md)
   
 [Administrar programaciones de informes en el &amp; centro de seguridad y cumplimiento](manage-schedules-for-multiple-reports.md)
   

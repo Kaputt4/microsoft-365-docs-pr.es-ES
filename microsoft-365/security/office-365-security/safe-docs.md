@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Office 365 ATP.
-ms.openlocfilehash: 3980746eb2f48e77c22f5139827bead5640dad61
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170480"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634321"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documentos seguros en Office 365 protección contra amenazas avanzada
 
@@ -34,15 +34,15 @@ Documentos seguros es una característica de la protección contra amenazas avan
 
 - Sólo región estadounidense admitida actualmente para el procesamiento de archivos conformes (todos los archivos se trasladarán a la región estadounidense para el análisis). La compatibilidad con la región del Reino Unido y la UE se planea en una actualización futura.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Debe tener permisos asignados para poder llevar a cabo los procedimientos de este tema. Para habilitar y configurar documentos seguros, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder llevar a cabo los procedimientos de este tema. Para habilitar y configurar documentos seguros, debe ser miembro de los grupos de funciones **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="use-the-office-365-security--compliance-center-to-configure-safe-documents"></a>Usar el centro de cumplimiento de & de seguridad de Office 365 para configurar documentos seguros
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Usar el centro de seguridad & cumplimiento para configurar documentos seguros
 
-1. Abra el centro de cumplimiento de & de seguridad <https://protection.office.com>de Office 365 en.
+1. Abra el centro de seguridad & cumplimiento <https://protection.office.com>en.
 
-2. Vaya a **** \> **Directiva** \> de administración de amenazas: **datos adjuntos seguros de ATP**.
+2. Vaya a **Threat management** \> **Directiva** \> de administración de amenazas: **datos adjuntos seguros de ATP**.
 
 3. En la sección **ayuda para que los usuarios sigan siendo seguros cuando confíen en un archivo para abrirse fuera de la vista protegida en las aplicaciones de Office** , configure cualquiera de las siguientes opciones:
 

@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo instalar y usar el complemento de notificación de correo no deseado de Microsoft para informar a Microsoft de mensajes de correo no deseado, de correo no deseado o de suplantación de identidad.
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033952"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638505"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook en Office 365
 
@@ -30,14 +30,14 @@ El complemento de notificación de correo no deseado para Microsoft Outlook perm
 
 En este tema se explica cómo instalar y usar el complemento de notificación de correo no deseado.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Para instalar el complemento de notificación de correo no deseado, consulte la sección [instalar el complemento de notificación de correo no deseado](#install-the-junk-email-reporting-add-in) más adelante en este tema.
 
 - El complemento de notificación de correo no deseado funciona con las siguientes versiones de Outlook:
 
   - Outlook 2013 o posterior
-  - Outlook incluido con Office 365 ProPlus
+  - Outlook incluido con las aplicaciones de Microsoft 365 para empresas
 
 - Para obtener más información acerca de los informes de mensajes a Microsoft, vea [Informe de mensajes y archivos a Microsoft en Office 365](report-junk-email-messages-to-microsoft.md).
 
@@ -156,7 +156,7 @@ Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más op
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha instalado correctamente el complemento de notificación de correo no deseado, siga estos pasos en Outlook:
 

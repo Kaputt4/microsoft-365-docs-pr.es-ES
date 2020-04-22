@@ -1,5 +1,5 @@
 ---
-title: Simulador de ataque en Office 365 ATP
+title: Simulador de ataque en ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Use el simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en su organización de Office 365 E5 o ATP planeada 2, lo que puede ayudarle a identificar a los usuarios vulnerables antes de que un ataque real haga su trabajo.
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: Como administrador global, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638577"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Simulador de ataque en Office 365 ATP
+# <a name="attack-simulator-in-atp"></a>Simulador de ataque en ATP
 
-El simulador de ataque de Office 365 Advanced Threat Protection Plan 2 (ATP plan 2) le permite ejecutar campañas de suplantación de identidad (phishing) y ataques con contraseñas en su organización. Puede usar los resultados de las campañas para identificar y entrenar a los usuarios vulnerables.
+**Resumen** Si es administrador global o administrador de seguridad y su organización tiene Office 365 Advanced Threat Protection Plan 2, que incluye la [investigación de amenazas y las capacidades de respuesta](office-365-ti.md), puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y buscar usuarios vulnerables antes de que un ataque real afecte a los resultados finales. Lea este artículo para obtener más información.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el centro de cumplimiento de & de seguridad de Office <https://protection.office.com/>365, vaya a. El simulador de ataques está disponible en **simulador de ataques**de **Administración** \> de amenazas.
+- Para abrir el centro de seguridad & cumplimiento, vaya <https://protection.office.com/>a. El simulador de ataques está disponible en **simulador de ataques**de **Administración** \> de amenazas.
 
   ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Para obtener más información acerca de la disponibilidad de un simulador de ataque en distintas suscripciones de Office 365, consulte [office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Para obtener más información acerca de la disponibilidad de un simulador de ataque en distintas suscripciones de Microsoft 365, consulte [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - La cuenta debe estar configurada para la autenticación multifactor (MFA) con el fin de crear y administrar campañas en el simulador de ataques. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- Solo puede ejecutar campañas de ataques de suplantación de identidad (phishing) o con contraseña en usuarios con buzones en Exchange Online.
+Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa para ejecutar ataques simulados esté usando la autenticación multifactor. Además, debe ser administrador global o administrador de seguridad. (Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md)).
 
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
@@ -49,11 +49,11 @@ El simulador de ataque de Office 365 Advanced Threat Protection Plan 2 (ATP plan
 
 La *suplantación de identidad (phishing)* es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en los mensajes que parecen ser de remitentes legítimos o de confianza. La *suplantación de identidad (Spear phishing* ) es un ataque de suplantación de identidad (phishing) orientado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
 
-Para obtener más información acerca de la suplantación de identidad y Spear phishing, consulte [phishing](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+- Es administrador global o administrador de seguridad
 
 En el simulador de ataque, hay disponibles dos tipos diferentes de campañas de "Spear phishing":
 
-- **Spear phishing (cosecha de credenciales)**: el ataque intenta convencer a los destinatarios para que haga clic en una dirección URL del mensaje. Si hacen clic en el vínculo, se les pedirá a los usuarios que escriban sus credenciales. Si es así, se toman en una de las siguientes ubicaciones:
+- El [acceso condicional/autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) está activado, al menos para la cuenta de administrador global y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
 
   - Una página predeterminada en la que se explica que se trataba de una sola prueba y ofrece sugerencias para reconocer los mensajes de suplantación de identidad.
 

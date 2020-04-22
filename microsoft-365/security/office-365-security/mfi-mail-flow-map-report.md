@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088549"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635297"
 ---
 # <a name="mail-flow-map-report"></a>Informe de mapa de flujo de correo
 
-Este informe proporciona información sobre cómo fluye el correo a través de la organización de Office 365. Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.
+Este informe proporciona información sobre cómo fluye el correo a través de la organización. Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.
 
 ![El informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget de mapa de flujo de correo
 
-De forma predeterminada, el mapa de flujo de correo muestra el patrón de flujo de correo de alto nivel del día anterior. Puede usar las flechas izquierda y derecha para los distintos días. Al colocar el cursor del mouse sobre cada área del informe, se mostrará el volumen de correo desde y hacia la organización de Office 365, tal como se muestra en el siguiente diagrama:
+De forma predeterminada, el mapa de flujo de correo muestra el patrón de flujo de correo de alto nivel del día anterior. Puede usar las flechas izquierda y derecha para los distintos días. Al colocar el cursor del mouse sobre cada área del informe, se mostrará el volumen de correo desde y hacia la organización, tal y como se muestra en el siguiente diagrama:
 
 ![Flechas izquierda y derecha en el widget mapa de flujo de correo](../../media/mail-flow-map-widget.png)
 

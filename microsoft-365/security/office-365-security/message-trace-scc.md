@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341267"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635321"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 ## <a name="overview"></a>Información general
 
-El seguimiento de mensajes en el centro de seguridad & cumplimiento de Office 365 sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
+Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el seguimiento de mensajes original que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con los mensajes, solucionar problemas del flujo de correo y validar los cambios de la Directiva.
 
 > [!NOTE]
-> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, consulte [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
+> * Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>* El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
-1. Abra el centro de cumplimiento de & de seguridad <https://protection.office.com>de Office 365 en.
+1. Abra el centro de seguridad & cumplimiento <https://protection.office.com>en.
 
 2. Expanda **flujo de correo**y, a continuación, haga clic en **seguimiento de mensajes**.
 
@@ -102,11 +102,11 @@ Puede dejar el valor predeterminado **todos** seleccionados o puede seleccionar 
 
 **Nota**: los valores **Pending (** **en cuarentena**) y **Filter (correo no deseado** ) solo están disponibles para las búsquedas de menos de 10 días. Además, puede haber un retraso de 5 a 10 minutos entre el estado de entrega real y notificado.
 
-#### <a name="message-id"></a>IDENTIFICADOR de mensaje
+#### <a name="message-id"></a>Id. de mensaje
 
 Se trata del identificador del mensaje de Internet (también conocido como el identificador de cliente) que se encuentra en el campo de encabezado **Message-ID:** en el encabezado del mensaje. Los usuarios pueden proporcionarle este valor para investigar mensajes específicos.
 
-Este valor es constante mientras dura el mensaje. Para los mensajes creados en Office 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>`, incluidos los corchetes angulares\< \>(). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
+Este valor es constante mientras dura el mensaje. Para los mensajes creados en Microsoft 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>`, incluidos los corchetes angulares\< \>(). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
 
 Cuando use el **identificador de mensaje** para filtrar los resultados, asegúrese de incluir la cadena completa, incluidos los corchetes angulares.
 
@@ -324,7 +324,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 #### <a name="custom_data-values"></a>valores de custom_data
 
-Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
+Varios **custom_data** agentes de Exchange Online `AGENTINFO` usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
 
 #### <a name="spam-filter-agent"></a>Agente de filtro de correo no deseado
 
@@ -346,7 +346,7 @@ Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de c
 |`DI=SO`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica que se coincidió con reglas de correo no deseado.|
 |`IPV=CAL`|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
-|`H=<EHLOstring>`|La cadena HELO o EHLO del servidor de correo que se conecta.|
+|`H=<EHLOstring>`|Cadenas HELO o EHLO del servidor de correo de conexión.|
 |`PTR=<ReverseDNS>`|Registro PTR de la dirección IP de envío, también denominado dirección DNS inversa.|
 
 Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no deseado de la siguiente manera:
@@ -385,7 +385,7 @@ Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de tr
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
 |`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>• **Exigir**: se exigirán todas las acciones de la regla. <br/>• **Pruebe las sugerencias de directiva:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>• **Pruebe sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
+|`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>* **Exigir**: se exigirán todas las acciones de la regla. <br/>* **Probar con sugerencias de directivas:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>* **Probar sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
 
 Un ejemplo de un valor **custom_data** para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:
 

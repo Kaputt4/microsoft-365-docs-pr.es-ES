@@ -1,5 +1,5 @@
 ---
-title: Información sobre las suscripciones y licencias de Office 365 para empresas
+title: Descripción de las suscripciones y licencias de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,24 +20,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
-description: 'Obtenga información sobre las suscripciones y licencias en Office 365 para empresas y sepa quién puede asignar licencias y qué sucede cuando se asigna una licencia a alguien. '
+description: 'Obtenga información sobre las suscripciones y licencias de Microsoft 365 para la empresa, y sepa quién puede asignar licencias y qué sucede cuando se asigna una licencia a un usuario. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a90e4b80322ad075f2149801aebd02ac07a2aef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246351"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635441"
 ---
-# <a name="understand-subscriptions-and-licenses-in-office-365-for-business"></a>Información sobre las suscripciones y licencias de Office 365 para empresas
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias de Microsoft 365 para empresas
 
 En este artículo se explica la relación entre las suscripciones y las licencias, y se proporciona información adicional sobre [quién puede asignar licencias](#find-out-who-can-assign-licenses), [lo que comprende lo que sucede cuando se asigna una licencia a alguien](#understand-what-happens-when-you-assign-a-license-to-someone)y [Cuántos dispositivos pueden instalar Office en Office](#how-many-devices-can-people-install-office-on). También incluye vínculos a información sobre las [licencias de los buzones que no son de usuario](#understand-licenses-for-non-user-mailboxes), así como [artículos sobre la administración de licencias](#articles-about-managing-licenses).
   
-Al comprar una suscripción a Office 365 para empresas, se registra para un conjunto de aplicaciones y servicios que paga por una base mensual o anual en cada uno. Las aplicaciones y los servicios que recibe como parte de la suscripción dependen de qué producto compró, como Office 365 Business o Office 365 empresa Premium. Puede revisar lo que incluye cada producto en la [Página comprar Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+Al comprar una suscripción a Microsoft 365 para la empresa, se registra para un conjunto de aplicaciones y servicios que paga por una base mensual o anual. Las aplicaciones y los servicios que reciba como parte de la suscripción dependen de qué producto haya adquirido, como Microsoft 365 apps for Business o Microsoft 365 Business Standard. Puede revisar lo que se incluye con cada producto en la [Página compre Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Una vez finalizada la compra, debe crear las cuentas de usuario y, a continuación, asignar una licencia a cada usuario. A medida que cambien las necesidades de su organización, puede comprar más licencias para acomodar a nuevas personas o reasignar licencias a otros usuarios cuando alguien abandone la organización. 
 
-Si tiene más de una suscripción, puede asignar licencias a distintas personas para cada suscripción. Por ejemplo, todos los usuarios podrían asignarse a todas las aplicaciones y servicios de Office 365 como parte de una suscripción de Office 365 empresa Premium, mientras que un subconjunto de usuarios también podría asignarse a Visio online a través de una suscripción a Visio independiente. 
+Si tiene más de una suscripción, puede asignar licencias a distintas personas para cada suscripción. Por ejemplo, todos los usuarios podrían asignarse a todas las aplicaciones y servicios de Microsoft 365 como parte de una suscripción de Microsoft 365 Business Standard, mientras que un subconjunto de usuarios también podría asignarse a Visio online a través de una suscripción a Visio independiente. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Averiguar quién puede asignar licencias
@@ -61,17 +61,17 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
 |Exchange Online  <br/> |Se crea un buzón para el usuario.  <br/> |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |El usuario tendrá acceso a las características asociadas con la licencia.  <br/> |
-|Office 365 ProPlus  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
+|Microsoft 365 apps for Enterprise  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>¿En cuántos dispositivos se puede instalar Office?
 
 Si la suscripción incluye cualquiera de los siguientes productos, cada usuario podrá instalar Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 teléfonos.
   
-- Office 365 Empresa
+- Microsoft 365 apps for Business
     
-- Office 365 Empresa Premium
+- Microsoft 365 Business Standard
     
-- Office 365 ProPlus
+- Microsoft 365 apps for Enterprise
     
 - Office 365 Enterprise E3
     
@@ -83,7 +83,7 @@ No es necesario asignar licencias a buzones de recursos, buzones de sala y buzon
   
 - [Crear un buzón compartido](../../admin/email/create-a-shared-mailbox.md)
     
-- [Buzones de correo compartidos en Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433)para todos los demás planes de Office 365. 
+- [Buzones compartidos en Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) para todos los demás planes de Microsoft 365. 
     
 - [Crear y administrar buzones de sala](https://go.microsoft.com/fwlink/p/?linkid=847434)
     

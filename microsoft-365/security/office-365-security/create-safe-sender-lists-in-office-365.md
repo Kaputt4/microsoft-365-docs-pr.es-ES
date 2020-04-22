@@ -1,5 +1,5 @@
 ---
-title: Crear listas de remitentes seguros en Office 365
+title: Crear listas de remitentes seguros
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Los administradores pueden obtener información sobre las opciones disponibles en Office 365 y EOP que permiten que los mensajes entrantes omitan el filtrado de correo no deseado.
-ms.openlocfilehash: 4b50a4b63377c0f3e7b12592c512449f1a3adc12
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Los administradores pueden obtener información sobre las opciones disponibles en Microsoft 365 y EOP que permiten que los mensajes entrantes omitan el filtrado de correo no deseado.
+ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528634"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637681"
 ---
-# <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
+# <a name="create-safe-sender-lists"></a>Crear listas de remitentes seguros
 
-Si es un cliente de Office 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de garantizar que los usuarios recibirán correo electrónico de remitentes de confianza. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, la lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidos o listas de dominios permitidos en las directivas contra correo no deseado. De forma colectiva, puede considerar estas opciones como _listas de remitentes seguros_.
+Si es un cliente de Microsoft 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de garantizar que los usuarios recibirán correo electrónico de remitentes de confianza. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, la lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidos o listas de dominios permitidos en las directivas contra correo no deseado. De forma colectiva, puede considerar estas opciones como _listas de remitentes seguros_.
 
 Las listas de remitentes seguros disponibles se describen en la siguiente lista, en orden de más recomendada a mínima recomendada:
 

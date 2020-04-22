@@ -1,5 +1,5 @@
 ---
-title: Vistas de las campañas en ATP de Office 365
+title: Vistas de campañas en ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637333"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637823"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
+# <a name="campaign-views-in-atp"></a>Vistas de campañas en ATP
 
-Vistas de la campaña es una característica de la Protección contra amenazas avanzada (ATP) del Centro de seguridad y cumplimiento de Office 365 que identifica y categoriza los ataques de suplantación de identidad en el servicio. Vistas de la campaña puede ayudarle a:
+Las vistas de campañas son una característica de la protección contra amenazas avanzada (ATP) en el centro de seguridad & cumplimiento que identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
 
@@ -40,7 +40,7 @@ La característica Vistas de la campaña le permite obtener una perspectiva gene
 
 Una campaña es un ataque de correo electrónico coordinado contra una o varias organizaciones. Los ataques de correo electrónico que roban credenciales y datos de la empresa son un sector importante y lucrativo. A medida que las tecnologías aumentan en un esfuerzo por detener los ataques, los atacantes modifican sus métodos en un esfuerzo para garantizar un éxito continuo.
 
-Microsoft aprovecha la gran cantidad de datos antiphishing, contra correo electrónico no deseado y antimalware en todo el servicio de Office 365 para ayudarle a identificar las campañas. Analizamos y clasificamos la información de ataques de acuerdo con varios factores. Por ejemplo:
+Microsoft aprovecha la gran cantidad de datos contra phishing, contra correo electrónico no deseado y antimalware en todo el servicio para ayudarle a identificar las campañas. Analizamos y clasificamos la información de ataques de acuerdo con varios factores. Por ejemplo:
 
 - **Origen del ataque**: direcciones IP de origen y dominios de correo electrónico del remitente.
 
@@ -52,7 +52,7 @@ Microsoft aprovecha la gran cantidad de datos antiphishing, contra correo electr
 
 Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Es posible que se inicie una campaña en su organización específica o que la organización forme parte de una campaña más grande en varias compañías.
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Vistas de la campaña en el Centro de seguridad y cumplimiento de Office 365
+## <a name="campaign-views-the-security--compliance-center"></a>Vistas de campaña el centro de seguridad & cumplimiento
 
 Las vistas de campaña están disponibles en el [centro de seguridad & cumplimiento](https://protection.office.com) en las **campañas**de **Administración** \> de amenazas.
 
@@ -127,18 +127,18 @@ El diagrama contiene la información siguiente:
 
 - **Filtrar veredictos**: los valores aquí están relacionados con los veredictos de filtrado de suplantación de identidad (phishing) y correo no deseado disponibles como se describe en [encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
 
-  |Valor|Veredicto de filtro de correo no deseado|Descripción|
+  |Valor|Veredicto de filtro de correo no deseado|Description|
   |:-----|:-----|:-----|
   | **Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo, también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos (por ejemplo, el remitente y el destinatario parecen estar en la misma organización).|
   |**Blocked**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo).|
-  |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtrado de correo no deseado.|
+  |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
   |**No detectado**|`SFV:NSPM`|El mensaje se marcó como no correo no deseado por el filtrado de correo no deseado.|
   |**Exento**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
   |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
   |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
   |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros de un usuario en Outlook.|
   |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario en Outlook.|
-  |**ZAP**|n/a|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva contra correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
+  |**ZAP**|N/D|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva contra correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
 
   <sup>\*</sup>Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que le permitirán averiguar el estado general y el mantenimiento de la organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento normativo. La tabla siguiente describe los informes y las herramientas de solución de problemas disponibles para los administradores de EOP.
-ms.openlocfilehash: 282fd032e73ccb8217801a575f6029dbd9fadc9c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e961c76daaad72fbd1ddede5651cb49fd66d48be
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598557"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634357"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Informes y seguimiento de mensajes en Exchange Online Protection
 
@@ -25,7 +25,7 @@ Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que 
 
 ## <a name="usage-reports"></a>Informes de uso
 
-**Office 365 actividad de grupos**: ver información sobre el número de grupos de Office 365 que se crean y usan.
+**Actividad de microsoft 365 Groups**: ver información sobre el número de grupos de Microsoft 365 que se crean y usan.
 
 **Actividad de correo electrónico**: ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
 
@@ -35,13 +35,13 @@ Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que 
 
 Consulte los siguientes recursos para obtener más información:
 
-- [Office 365 Reports en el centro de administración: Office 365 grupos](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Informes de Microsoft 365 en el centro de administración (grupos de Microsoft 365)](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Office 365 Reports en el centro de administración: actividad de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Office 365 Reports en el centro de administración: uso de aplicaciones de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Office 365 Reports en el centro de administración: uso de buzones](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso de buzones](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de cumplimiento de & de seguridad en el centro de administración de Microsoft 365
 
@@ -80,8 +80,8 @@ En la tabla siguiente se describe cuándo están disponibles los informes y los 
 ||||
 |:-----|:-----|:-----|
 |**Tipo de informe**|**Datos disponibles (período retrospectivo)**|**Latencia**|
-|Informes de Resumen de protección de correo|90 días|La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.|
-|Informes de detalles de protección de correo|90 días|Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días. <br/><br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.|
+|Informes de Resumen de protección de correo|90 días|La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.|
+|Informes de detalles de protección de correo|90 días|Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días. <br/><br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.|
 |Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<br/><br/> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
 
 > [!NOTE]

@@ -17,16 +17,16 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Consulte Cómo puede pasar de una visión a un informe detallado en el centro de &amp; cumplimiento de seguridad a través de un ejemplo de prevención de pérdida de datos.
-ms.openlocfilehash: f5b64cedba72592307d9c806484640f75be02f8e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52c0f944e5319325f2ae478bd7fda34fa08319b6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083079"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638075"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Tutorial: desde un reporte a un informe detallado
 
-Si no está familiarizado con [los informes y la información del centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede navegar fácilmente desde una perspectiva a un informe detallado. 
+Si no está familiarizado con [los informes y la información del centro &amp; de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede navegar fácilmente desde una perspectiva a un informe detallado. 
   
 Este es uno de los diversos tutoriales del [Centro &amp; de seguridad y cumplimiento](https://protection.office.com). Para ver Tutoriales adicionales, consulte la sección [temas relacionados](#related-topics) . 
   
@@ -34,7 +34,7 @@ Este es uno de los diversos tutoriales del [Centro &amp; de seguridad y cumplimi
 
 Vamos a examinar el flujo del panel para obtener información sobre un informe detallado sobre la exploración de datos. (Este es un breve ejemplo de [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) ). 
   
-1. Comenzaremos con un panel en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com). (Vaya a **** \> **Panel**de informes).<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija Panel de informes](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Comenzaremos con un panel en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com). (Vaya a **Reports** \> **Panel**de informes).<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija Panel de informes](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 2. En la esquina superior izquierda del panel, junto a ** &amp; recomendaciones principales de información**, tenemos un vínculo. (Haga clic en **ver todo**).<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija Reports Dashboard para ver sus opiniones principales](../../media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Esto nos lleva a una lista de información de nuestra organización.<br/>![En el centro &amp; de seguridad y cumplimiento, puede ver toda la información de una lista](../../media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   

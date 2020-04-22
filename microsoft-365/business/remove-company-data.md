@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Descubra cómo usar Microsoft 365 Business para quitar los datos de la compañía que los usuarios tienen en sus dispositivos o equipos con Windows.
-ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Descubra cómo usar Microsoft 365 para empresas para eliminar los datos de la compañía que tienen los usuarios en sus dispositivos o equipos Windows.
+ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561328"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634856"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
@@ -36,9 +36,9 @@ ms.locfileid: "42561328"
 
 ## <a name="remove-company-data"></a>Quitar datos de la empresa
 
-Puede usar Microsoft 365 Business para eliminar los datos de la empresa que los usuarios tienen en sus [dispositivos](app-protection-settings-for-android-and-ios.md) o [PC Windows](protection-settings-for-windows-10-devices.md) protegidos por Microsoft 365. **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
+Puede usar Microsoft 365 para empresas para eliminar los datos de la compañía que tienen los usuarios en sus [dispositivos](app-protection-settings-for-android-and-ios.md) o [equipos con Windows](protection-settings-for-windows-10-devices.md) protegidos por Microsoft 365. **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
   
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. En el panel de navegación izquierdo, elija **dispositivos** \> **administrar**.  
   

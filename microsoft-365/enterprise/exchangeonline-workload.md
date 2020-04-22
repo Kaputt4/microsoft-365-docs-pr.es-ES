@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Recorra el proceso de planeación, implementación y impulso del valor de Exchange online en Microsoft 365 Enterprise en toda la organización.
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453866"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634151"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Implementación de Exchange Online para Microsoft 365 Enterprise
 
@@ -75,7 +75,7 @@ Use estos recursos para preparar los aspectos técnicos de un lanzamiento de Exc
 
 - [Formas de migrar varias cuentas de correo electrónico a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Migrar carpetas públicas de Exchange Server a Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [Migrar carpetas públicas de Exchange Server a Office 365 grupos](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [Migrar carpetas públicas de Exchange Server a grupos de 365 de Microsoft](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Colaboración en Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Destinatarios en Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -155,8 +155,8 @@ Después de implementar Exchange online en toda la organización, debe seguir us
 
 Estas son algunas actividades sugeridas:
 
-- Vea la [Factores de éxito para Office 365](https://aka.ms/successfactors) para obtener información sobre procedimientos recomendados generales para la adopción de servicios en la nube. 
-- Vea [Informes de actividades de Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) para comprender el uso del servicio de Office 365 en toda la organización. Si no es administrador global de Office 365 de su organización, pida a alguien que lo sea que le conceda permisos de lectura de informes a su cuenta de usuario para que pueda tener acceso a los informes de actividades.
+- Vea [factores de éxito para Microsoft 365](https://aka.ms/successfactors) para obtener información sobre los procedimientos recomendados generales para la adopción de servicios en la nube. 
+- Consulte [Microsoft 365 Reports en el centro de administración](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) para conocer el uso del servicio en toda la organización. Si no es un administrador global de su organización, pida a alguien que sea administrador global que conceda permisos de lector de informes a su cuenta de usuario para que pueda obtener acceso a los informes de actividades.
 - Supervise su centro de comentarios (un canal público en un equipo central de Microsoft Teams o Yammer) para conocer los problemas y los comentarios de los usuarios sobre su experiencia con Exchange Online. Responda a las preguntas y los problemas tan pronto como pueda para prevenir que surja la frustración y demostrar que apoya a los usuarios en la implementación.
 - Identificar y cultivar a los expertos en cada grupo empresarial y destacar sus mejores prácticas mediante Outlook. Divulgue su éxito en la organización para demostrar el éxito y la adopción del proyecto. La aprobación por parte de líderes técnicos dentro de un grupo de negocio puede ejercer una influencia eficaz sobre los líderes y los colegas.
 
@@ -168,14 +168,14 @@ Su organización ha adoptado Exchange Online y Outlook como su principal y la he
 
 Para echar un vistazo dentro de Microsoft y saber cómo migramos a Exchange Online y estamos usando Exchange Online Protection para proteger contra ataques cibernéticos, consulte:
 
-- [Microsoft migra 150 000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
+- [Microsoft migra 150.000 buzones a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft uses threat intelligence to protect, detect, and respond to threats](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) (Microsoft usa inteligencia de amenazas para proteger, detectar y responder a las amenazas)
 - [Microsoft thwarts phishing attempts with Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365) (Microsoft frustra intentos de suplantación de identidad (phishing) con Office 365)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Consulte estos recursos para el mantenimiento continuo de Exchange Online:
 
 - [Centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center) 
 - [Supervisión, informes y seguimiento de mensajes en Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
-- [Hacer una copia de seguridad del correo electrónico en Exchange Online](https://docs.microsoft.com/exchange/back-up-email) 
+- [Haga una copia de seguridad del correo electrónico en Exchange Online](https://docs.microsoft.com/exchange/back-up-email) 

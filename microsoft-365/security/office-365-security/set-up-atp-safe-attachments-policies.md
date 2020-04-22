@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608107"
+ms.locfileid: "43638349"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
@@ -43,29 +43,28 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
 - Asegúrese de que su organización tiene la [protección contra amenazas avanzada de Office 365](office-365-atp.md).
 
-- Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado el rol de administración de la organización de Exchange Online (el administrador global de Office 365 está asignado a este rol de forma predeterminada) o los roles de administrador de seguridad y administración de la protección en línea de Exchange Online. Para obtener más información, vea la tabla siguiente:
+- Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol de administración de organización de Exchange Online (el administrador global tiene asignado este rol de forma predeterminada) o los roles de administrador de seguridad y administración de la protección en línea de Exchange Online. Para obtener más información, vea la tabla siguiente:
 
-  |||
-  |---|---|
-  |**Rol**|**Dónde y cómo se asigna**|
-  |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).|
+  |Role|Dónde y cómo se asigna|
+  |---------|---------|
+  |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
   |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - [Obtenga información sobre las opciones de directiva de datos adjuntos seguros de ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (en este artículo). Algunas opciones, como las opciones supervisar o reemplazar, pueden dar lugar a un retraso de correo electrónico menor mientras se analizan los datos adjuntos. Para evitar retrasos en los mensajes, considere la posibilidad de usar la [entrega dinámica y la vista previa](dynamic-delivery-and-previewing.md).
 
-- Espere hasta 30 minutos para que la directiva nueva o actualizada se extienda a todos los centros de seguridad de Office 365.
+- Espere hasta 30 minutos para que la directiva nueva o actualizada se extienda a todos los centros de recursos de Microsoft 365.
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: configurar (o editar) una directiva de datos adjuntos seguros de ATP
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa.
 
-2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, seleccione **Directiva** \> de **datos adjuntos seguros**.
+2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, **en administración de amenazas**, elija **datos adjuntos seguros**de **Directiva** \> .
 
-3. Si ve la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**, le recomendamos que seleccione esta opción. Esto permitirá la [protección contra amenazas avanzada de office 365 para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) para el entorno de Office 365.
+3. Si ve la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**, le recomendamos que seleccione esta opción. Esto permitirá la [protección contra amenazas avanzada de Office 365 para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) para su entorno de Microsoft 365.
 
 4. Elija **nuevo** (el botón nuevo es similar a un signo más **+**()) para comenzar a crear la Directiva.
 
@@ -77,13 +76,13 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
    - En la sección respuesta, elija la opción de **entrega dinámica** . ([Obtenga más información sobre la vista previa y la entrega dinámica con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md)).
 
-   - En la sección **redirigir datos adjuntos** , seleccione la opción Habilitar redireccionamiento y escriba la dirección de correo electrónico de su administrador global de Office 365, administrador de seguridad o Analista de seguridad que investigará los datos adjuntos malintencionados.
+   - En la sección **redirigir datos adjuntos** , seleccione la opción Habilitar redirección y escriba la dirección de correo electrónico del administrador global, el administrador de seguridad o el analista de seguridad que investigará los datos adjuntos malintencionados.
 
    - En la sección **aplicado a** , elija **el dominio del destinatario es**y, a continuación, seleccione su dominio. Elija **Agregar**y, después, haga clic en **Aceptar**.
 
 6. Elija **Guardar**.
 
-Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez que se ha definido o editado una directiva, permita al menos 30 minutos para que las directivas surtan efecto en los centros de recursos de Microsoft.
+Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez definida o modificada una directiva, permita al menos 30 minutos para que las directivas entren en vigor en los centros de recursos de Microsoft.
 
 ## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Paso 3: información sobre las opciones de directiva de datos adjuntos seguros de ATP
 

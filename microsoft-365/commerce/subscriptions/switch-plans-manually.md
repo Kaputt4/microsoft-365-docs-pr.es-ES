@@ -1,5 +1,5 @@
 ---
-title: Cambiar manualmente Office 365 para planes de empresas
+title: Cambiar de Microsoft 365 para planes de empresa manualmente
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Cambie Office 365 para las suscripciones empresariales manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Para cambiar de forma manual las suscripciones de Microsoft 365 para empresas, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540848"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636539"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>Cambiar manualmente Office 365 para planes de empresas
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiar de Microsoft 365 para planes de empresa manualmente
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, vea el tema sobre los [planes de cambio de forma manual](change-plans-manually.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
+> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el nuevo centro de administración, vea el tema sobre los [planes de cambio de forma manual](change-plans-manually.md). El nuevo centro de administración está disponible para todos los administradores de Microsoft 365 y puede participar si selecciona la opción **probar el nuevo centro de administración** que se encuentra en la parte superior de la Página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Paso 1: decidir cómo cambiar de plan
@@ -56,11 +54,11 @@ Para continuar con un conmutador manual, lea el [paso 2: comprar una nueva suscr
   
 - O
   
- **Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Office 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
+ **Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Microsoft 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
   
 Asegúrese de comprar una suscripción para la misma organización en la que se encuentran ahora los usuarios. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo electrónico incluyen @contoso. com, debe comprar una nueva suscripción para contoso.com. Incluya una licencia para cada usuario que quiera mover.
   
- **Si necesita ayuda para elegir un plan**, consulte la página [de comparación de productos de Office 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=842056) o [llame a soporte técnico](../../admin/contact-support-for-business-products.md).
+ **Si necesita ayuda para elegir un plan**, consulte la página [de comparación de productos de 365 para empresas de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842056) , o [llame a soporte técnico](../../admin/contact-support-for-business-products.md).
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: comprobar la nueva suscripción y las licencias
 
@@ -86,7 +84,7 @@ Asegúrese de comprar una suscripción para la misma organización en la que se 
 
     La suscripción desde la que va a mover a los usuarios y la suscripción a la que está moviendo los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando compruebe por primera vez, inténtelo de nuevo más tarde. Compruebe que ambas suscripciones aparecen bajo **activo**. [La nueva suscripción no aparece o no está activa](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **La nueva suscripción de Office 365 para empresas con licencias disponibles**
+   **La nueva suscripción de Microsoft 365 para empresas con licencias disponibles**
 
     ![La página de la suscripción que muestra el número de licencias de la nueva suscripción.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ Asegúrese de comprar una suscripción para la misma organización en la que se 
 
     Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Office 365 Enterprise E5, tendrá que asegurarse de que dispone de diez licencias. En la imagen, se han comprado diez licencias para Office 365 Enterprise E5 y se pueden asignar las diez licencias.
 
-4. **¿Necesita más licencias para la nueva suscripción?** Vaya a la página **suscripciones** y [compre las licencias de la suscripción de Office 365 para empresas](../licenses/buy-licenses.md).
+4. **¿Necesita más licencias para la nueva suscripción?** Vaya a la página **suscripciones** y [compre licencias de la suscripción de Microsoft 365 para empresas](../licenses/buy-licenses.md).
   
     [¿Qué sucede con las licencias antiguas?](#what-about-the-old-licenses)
 

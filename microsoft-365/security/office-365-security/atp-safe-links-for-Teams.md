@@ -1,5 +1,5 @@
 ---
-title: Vínculos seguros de Office 365 ATP para equipos, safelinks, vínculos seguros, bloquear vínculos malintencionados, Office 365 ATP, equipos vínculos seguros, impedir que los usuarios haga clic en vínculos no válidos, vínculos malintencionados
+title: Vínculos seguros de ATP para equipos, safelinks, vínculos seguros, bloquear vínculos malintencionados, Office 365 ATP, equipos vínculos seguros, impedir que los usuarios haga clic en vínculos no válidos, vínculos malintencionados
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,30 +14,27 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los equipos ahora tendrán acceso a vínculos seguros en el momento de hacer clic. Si usa chats 1-en-1 chats, entre grupos o en canales y pestañas, si tiene una suscripción a Office 365 ATP, tendrá la posibilidad de habilitar y usar esta característica de seguridad.
-ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 88fe9756188eb16a2347d3c0cd4a98b4003ff457
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212550"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636003"
 ---
 <!--06/21/2019-->
 
-# <a name="office-365-safe-links-in-teams"></a>Vínculos seguros de Office 365 en Microsoft Teams
+# <a name="safe-links-in-teams"></a>Vínculos seguros en Teams
 
 > [!IMPORTANT]
 > Esta característica se encuentra en **versión preliminar pública** para los clientes del programa de adopción de tecnología de Microsoft Teams (TAP) a partir del 28 de febrero de 2020. Esta nota se quitará del artículo cuando vínculos seguros para Teams esté más disponible.
 
-Microsoft Teams, una aplicación basada en la nube de Office 365 para administrar el trabajo, ya usa datos adjuntos seguros (para Office 365), pero ahora tendrá acceso a vínculos seguros en el momento de hacer clic. Si usa chats 1-en-1 chats, entre grupos o en canales y pestañas, si tiene una suscripción a Office 365 ATP, tendrá la posibilidad de habilitar y usar esta medida de seguridad.
+Microsoft Teams, una aplicación basada en la nube de Microsoft para administrar el trabajo, ya usa datos adjuntos seguros (para Office 365), pero ahora tendrá acceso a vínculos seguros en el momento de hacer clic. Si usa chats 1-en-1 chats, entre grupos o en canales y pestañas, si tiene una suscripción a Office 365 ATP, tendrá la posibilidad de habilitar y usar esta medida de seguridad.
 
 Aquí se muestra cómo funciona: 
 
-1. Al iniciar la aplicación Teams, Office 365 se asegurará de que el usuario pertenece a una organización que tiene Office 365 ATP y que el usuario forma parte de una directiva de vínculos seguros activa con la protección habilitada para Microsoft Teams.
+1. Cuando inicie la aplicación Teams, Microsoft 365 se asegurará de que el usuario pertenece a una organización con ATP de Office 365 y que el usuario forma parte de una directiva de vínculos seguros activa con la protección habilitada para Microsoft Teams.
 
 2. Si las opciones anteriores son verdaderas, las direcciones URL se validarán en el momento de hacer clic en chats, chats de grupo, canales y en las pestañas para ese usuario.
-
-> [!NOTE]
-> Vínculos seguros protege a los usuarios de los vínculos enviados por los usuarios invitados, los usuarios federados y los usuarios del inquilino. Si el usuario que ha iniciado sesión tiene vínculos seguros habilitados para Microsoft Teams, se aplicarán protecciones de vínculos seguros.
  
 ## <a name="what-will-users-experience"></a>¿Qué van a experimentar los usuarios? 
 
@@ -47,12 +44,12 @@ Todos los usuarios protegidos tendrán esta experiencia con direcciones URL peli
 
 - Este usuario se bloqueará para continuar con el sitio de la dirección URL.
 
-Si el usuario que envió el vínculo no está protegido por Office 365 ATP, es libre de hacer clic en la dirección URL de su equipo y resolver el problema. Esto hace que sea doblemente importante para que los administradores de Office 365 sepan que sus usuarios protegidos son y deben ser.
+Si el usuario que envió el vínculo no está protegido por Office 365 ATP, es libre de hacer clic en la dirección URL de su equipo y resolver el problema. Esto hace que sea doblemente importante para que los administradores sepan quiénes son y deben ser los usuarios protegidos.
 
 ![Una página vínculos seguros para equipos que informa de un vínculo malintencionado y bloquea el tránsito a la página.](/microsoft-365/media/TP_SafelinksForTeams_Malicious.png)
 
 Si hace clic en el botón *volver atrás* de esta página en Microsoft Teams, se cerrará (o puede dar como resultado una página en blanco que los usuarios pueden cerrar). Sin embargo, si vuelve a hacer clic en el vínculo, tendrá que volver a evaluar la reputación del sitio para que vuelva a aparecer esta página.
 
 > [!NOTE]
->Algunos administradores de Office 365 habilitarán el mensaje **continuar de todas formas** en la página de bloqueo. Sin embargo, si vínculos seguros mide la reputación de un sitio y descubre que carece de él, no se debe emprender ningún otro clic. No se recomienda que los usuarios omitan las medidas de seguridad. Valore esto en sus consideraciones antes de habilitar la continuación de todas formas. 
+>Algunos administradores de Microsoft 365 habilitarán el mensaje **continuar de todas formas** en la página de bloqueo. Sin embargo, si vínculos seguros mide la reputación de un sitio y descubre que carece de él, no se debe emprender ningún otro clic. No se recomienda que los usuarios omitan las medidas de seguridad. Valore esto en sus consideraciones antes de habilitar la continuación de todas formas. 
 

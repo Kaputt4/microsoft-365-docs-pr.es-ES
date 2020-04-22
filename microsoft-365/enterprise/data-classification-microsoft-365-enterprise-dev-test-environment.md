@@ -13,35 +13,35 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta guía del laboratorio de pruebas para crear y usar las etiquetas de retención de Office 365 en documentos de su entorno de prueba empresarial de Microsoft 365.
-ms.openlocfilehash: 6534eff67e9c91423eb6f81415cb3ef2e965dcc1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use esta guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos en su entorno de prueba de Microsoft 365 Enterprise.
+ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067997"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636097"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Clasificación de datos para su entorno de prueba de Microsoft 365 Enterprise
 
 *Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
 
-Con las instrucciones de este artículo, podrá configurar la clasificación de datos con las etiquetas de retención de Office 365 en su entorno de prueba empresarial de Microsoft 365.
+Con las instrucciones de este artículo, se configura la clasificación de datos con etiquetas de retención en el entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
-Si solo quiere configurar las etiquetas de retención de Office 365 de manera ligera con los requisitos mínimos, siga las instrucciones de [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
+Si solo quiere configurar las etiquetas de retención de una manera ligera con los requisitos mínimos, siga las instrucciones de [configuración de base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si desea configurar las etiquetas de retención de Office 365 en una empresa simulada, siga las instrucciones de la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
+Si desea configurar las etiquetas de retención en una empresa simulada, siga las instrucciones de la [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> La prueba de las etiquetas de retención de Office 365 no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar la concesión de licencias automatizada y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica. 
+> La prueba de las etiquetas de retención no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar la concesión de licencias automatizada y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica. 
 
-## <a name="phase-2-create-office-365-retention-labels"></a>Fase 2: crear etiquetas de retención de Office 365
+## <a name="phase-2-create-retention-labels"></a>Fase 2: crear etiquetas de retención
 
 En esta fase, creará las etiquetas de retención para los distintos niveles de retención para las carpetas de documentos de SharePoint Online.
 
@@ -85,7 +85,7 @@ En esta fase, creará las etiquetas de retención para los distintos niveles de 
  
 Tenga en cuenta que la publicación de las etiquetas de retención puede tardar unos minutos.
 
-## <a name="phase-3-apply-office-365-retention-labels-to-documents"></a>Fase 3: aplicar las etiquetas de retención de Office 365 a los documentos
+## <a name="phase-3-apply-retention-labels-to-documents"></a>Fase 3: aplicar etiquetas de retención a los documentos
 
 En esta fase, se detecta el comportamiento predeterminado de la etiqueta de retención para los archivos de la carpeta documentos de un sitio de SharePoint Online y se cambia manualmente la etiqueta de retención de un documento.
 
@@ -133,9 +133,9 @@ A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambie 
     
 7. En el panel **Document. docx** , en **Aplicar etiqueta de retención**, seleccione la etiqueta **extremadamente confidencial** y, a continuación, haga clic en **Guardar**.
 
-Consulte el paso [configurar la clasificación del entorno](infoprotect-configure-classification.md) en la fase de protección de la **información** para obtener información y vínculos sobre cómo implementar las etiquetas de retención de Office 365 en producción.
+Consulte el paso [configurar la clasificación del entorno](infoprotect-configure-classification.md) en la fase de protección de la **información** para obtener información y vínculos sobre cómo implementar las etiquetas de retención en producción.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

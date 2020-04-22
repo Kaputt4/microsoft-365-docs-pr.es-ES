@@ -1,5 +1,5 @@
 ---
-title: Revisar y aprobar acciones de corrección pendientes en Office 365 de investigación y respuesta automatizada
+title: Revisión y aprobación de acciones de corrección pendientes en investigación y respuesta automatizadas
 keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección, amenazas, avanzadas, amenazas, protección
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d2b617e29fc36d1f39ab6c9ef6f708d5f608b206
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826462"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634645"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Ver acciones de corrección pendientes o realizadas tras una investigación automatizada en Office 365
 
@@ -47,7 +47,7 @@ Mientras ve los [detalles de una investigación](air-view-investigation-results.
  - **APPROVE** permite que se inicie la corrección.
  - **Rechazar** no realiza ninguna acción adicional
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)
 

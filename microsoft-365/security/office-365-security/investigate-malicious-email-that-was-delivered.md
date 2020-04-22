@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634139"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Investigar y corregir el correo electrónico malintencionado que se entregó en Office 365
 
@@ -34,24 +34,24 @@ Asegúrese de que se cumplen los siguientes requisitos:
   
 - Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
     
-- El [registro de auditoría de Office 365](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización. 
+- el [registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización. 
     
 - Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
     
-- Es un administrador global de Office 365 o bien tiene el rol de administrador de seguridad o de búsqueda y depuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa. 
+- Es un administrador global o bien tiene el rol de administrador de seguridad o de la búsqueda y depuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa. 
 
 #### <a name="preview-role-permissions"></a>Vista previa de permisos de roles
 
-Para realizar determinadas acciones, como ver los encabezados de mensajes o descargar el contenido de los mensajes de correo electrónico, debe tener un nuevo rol denominado *vista previa* agregada a otro grupo de roles de Office 365 adecuado. La siguiente tabla clarifica los permisos y las funciones necesarias.
+Para llevar a cabo determinadas acciones, como ver los encabezados de mensajes o descargar el contenido de los mensajes de correo electrónico, debe tener un nuevo rol denominado *vista previa* agregado a otro grupo de funciones apropiado. La siguiente tabla clarifica los permisos y las funciones necesarias.
 
 |Actividad  |Grupo de funciones |¿Se requiere un rol de vista previa?  |
 |---------|---------|---------|
-|Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas     |Administrador global de Office 365 <br> Administrador de seguridad <br> Lector de seguridad     | No   |
-|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena    |Administrador global de Office 365 <br> Administrador de seguridad <br>Lector de seguridad   |       No  |
-|Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones     |Administrador global de Office 365 <br>Administrador de seguridad <br> Lector de seguridad <br> Vista previa   |   Sí      |
+|Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas     |Administrador global <br> Administrador de seguridad <br> Lector de seguridad     | No   |
+|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena    |Administrador global <br> Administrador de seguridad <br>Lector de seguridad   |       No  |
+|Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones     |Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview   |   Sí      |
 
 > [!NOTE]
-> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. El rol de administrador global de Office 365 se asigna al centro de administración[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft 365 () y los roles de administrador de seguridad y lector de seguridad se asignan en el[https://protection.office.com](https://protection.office.com)centro de seguridad & cumplimiento de Office 365 (). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 () y el administrador de seguridad y los roles de lector de seguridad se asignan[https://protection.office.com](https://protection.office.com)en el centro de seguridad & cumplimiento (). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar correo electrónico sospechoso que se entregó
 

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Cree un espacio de colaboración para su equipo con Microsoft Teams.
-ms.openlocfilehash: d057dbf0afca31b91e8792b3e0ca13d45b5e3455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056360"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635653"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Crear equipos para la colaboración en Microsoft Teams
 
@@ -48,7 +48,7 @@ También puede crear equipos para proyectos específicos y aplicar la cantidad d
 
 Al crear un equipo, esto es lo que más se crea:
 
-- Un nuevo [grupo de Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- Un nuevo [grupo de 365 de Microsoft](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - Un sitio de [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) y una biblioteca de documentos para almacenar archivos de equipo
 - Un buzón y un calendario compartidos de [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)
 - Un bloc de notas de OneNote

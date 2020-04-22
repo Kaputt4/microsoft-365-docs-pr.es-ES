@@ -1,5 +1,5 @@
 ---
-title: Proceso para comprar Office 365 de prueba
+title: Compre una suscripción a Microsoft 365 para empresas desde su versión de prueba gratuita
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: Compre una suscripción de Office 365 para empresas. Puede comprar el mismo tipo de suscripción que ha probado o un plan diferente.
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Compre una suscripción a Microsoft 365 para empresas. Puede comprar el mismo tipo de suscripción que ha probado o un plan diferente.
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142292"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634949"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Proceso para comprar Office 365 de prueba
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Compre una suscripción a Microsoft 365 para empresas desde su versión de prueba gratuita
 
-Ha probado Office 365 y ahora ya puede comprarlo. Tiene dos opciones para comprar Office 365 desde su versión de prueba:
+Ha probado Microsoft 365 y ya está listo para comprar. Tiene dos opciones al comprar Microsoft 365 desde su versión de prueba:
   
 - [Comprar el mismo plan que la versión de prueba](#buy-the-same-plan-as-your-trial)
 - [Comprar un plan diferente del plan de prueba](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker range="o365-worldwide"
 
+
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
 
 2. En la página **servicios de compra** , seleccione la suscripción que desea comprar y, a continuación, seleccione **comprar**.
@@ -136,6 +137,7 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker range="o365-21vianet"
 
+
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. En la página de **suscripción** , seleccione **Agregar suscripciones**.
@@ -156,10 +158,11 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Extender la versión de prueba](extend-your-trial.md)
   
-[Registrarse en Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Regístrese para obtener Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Cambiar a otro plan o suscripción de Office 365](subscriptions/switch-to-a-different-plan.md)
+[Cambiar a otro plan o suscripción de Microsoft 365](subscriptions/switch-to-a-different-plan.md)

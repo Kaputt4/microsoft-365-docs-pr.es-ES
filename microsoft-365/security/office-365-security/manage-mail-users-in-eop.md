@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
-ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 56827e29872c6a6ffd14821af8e2d9ea005ff20c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633798"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635585"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 
@@ -63,7 +63,7 @@ En esta sección se proporciona información sobre cómo administrar usuarios de
 
   - **Bloqueo perimetral basado en directorios (DBEB)**: para obtener más información sobre DBEB, vea [use Directory based Edge blocking to Reject messages sent to invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **Cuarentena de correo no deseado del usuario final**: para poder obtener acceso a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña válidos de Office 365. Los clientes de EOP que protejan los buzones locales deben ser usuarios de correo electrónico válidos.
+  - **Cuarentena de correo no deseado del usuario final**: para poder acceder a la cuarentena de correo no deseado del usuario final, los usuarios finales deben tener un identificador de usuario y una contraseña válidos. Los clientes de EOP que protejan los buzones locales deben ser usuarios de correo electrónico válidos.
 
   - **Reglas de flujo de correo**: cuando se usa la sincronización de directorios, los usuarios y grupos de Active Directory existentes se cargan automáticamente en la nube y, a continuación, se pueden crear reglas de flujo de correo (también conocidas como reglas de transporte) dirigidas a usuarios o grupos específicos sin tener que agregarlos manualmente a través del EAC o de PowerShell de Exchange Online Protection. Tenga en cuenta que los [grupos de distribución dinámicos](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) no se pueden sincronizar mediante la sincronización de directorios.
 
@@ -126,7 +126,7 @@ En este ejemplo, se usa el cmdlet [New-EOPMailUser](https://docs.microsoft.com/p
 
 - La dirección de correo electrónico externa es jzeng@tailspintoys.com.
 
-- El nombre de inicio de sesión de Office 365 es jeffreyz@contoso.onmicrosoft.com.
+- El nombre de inicio de sesión 365 de Microsoft es jeffreyz@contoso.onmicrosoft.com.
 
 - La contraseña es Pa$$word1.
 

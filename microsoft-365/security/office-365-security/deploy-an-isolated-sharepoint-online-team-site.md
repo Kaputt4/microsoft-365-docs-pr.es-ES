@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.'
-ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: e35e380b61a94e08ff25e2e4c4bdfa28a635449e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637633"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -38,19 +38,19 @@ En esta fase, se crean los tres grupos de acceso basados en Azure AD para los tr
 
 Determine el conjunto de cuentas de usuario correspondiente a los administradores de SharePoint Online para el sitio de grupo aislado.
   
-Si administra cuentas de usuario y grupos a través de Office 365 y desea usar Windows PowerShell, cree una lista de sus nombres principales de usuario (UPN) (por ejemplo, UPN: belindan@contoso.com).
+Si va a administrar grupos y cuentas de usuario a través de Microsoft 365 y desea usar Windows PowerShell, cree una lista de sus nombres principales de usuario (UPN) (ejemplo: belindan@contoso.com).
   
 ### <a name="step-2-list-the-members-for-the-site"></a>Paso 2: enumerar los miembros del sitio
 
 Determine el conjunto de cuentas de usuario correspondiente a los miembros del sitio de grupo aislado, quienes colaboran en los recursos almacenados en el sitio.
   
-Si administra cuentas de usuario y grupos a través de Office 365 y desea usar PowerShell, cree una lista de sus UPN. Si hay muchos miembros del sitio, puede almacenar la lista de UPN en un archivo de texto y agregarlos todos con un solo comando de PowerShell.
+Si administra cuentas de usuario y grupos a través de Microsoft 365 y desea usar PowerShell, cree una lista de sus UPN. Si hay muchos miembros del sitio, puede almacenar la lista de UPN en un archivo de texto y agregarlos todos con un solo comando de PowerShell.
   
 ### <a name="step-3-list-the-viewers-for-the-site"></a>Paso 3: enumerar los visores del sitio
 
 Determine el conjunto de cuentas de usuario correspondiente a los visores del sitio de grupo aislado, las personas que pueden ver los recursos almacenados en el sitio, pero no pueden modificarlos ni colaborar directamente en su contenido.
   
-Si administra cuentas de usuario y grupos a través de Office 365 y desea usar PowerShell, cree una lista de sus UPN. Si hay muchos miembros del sitio, puede almacenar la lista de UPN en un archivo de texto y agregarlos todos con un solo comando de PowerShell.
+Si administra cuentas de usuario y grupos a través de Microsoft 365 y desea usar PowerShell, cree una lista de sus UPN. Si hay muchos miembros del sitio, puede almacenar la lista de UPN en un archivo de texto y agregarlos todos con un solo comando de PowerShell.
   
 Los visores del sitio pueden incluir la administración ejecutiva, los asesores legales o las partes interesadas entre departamentos.
   
@@ -101,7 +101,7 @@ En este paso, haga lo siguiente:
     
 3. Agregar la lista de usuarios del paso 3 al grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de servicios de dominio de Active Directory (AD DS), agregue usuarios a los grupos de acceso adecuados mediante los procedimientos de administración de grupos y usuarios de AD DS y espere la sincronización con la suscripción a Office 365.
+Si administra cuentas de usuario y grupos a través de los servicios de dominio de Active Directory (AD DS), agregue usuarios a los grupos de acceso adecuados mediante los procedimientos de administración de grupos y usuarios de AD DS normales y espere la sincronización con la suscripción a Microsoft 365.
   
 Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell. Si tiene nombres de grupo duplicados para cualquiera de los grupos de acceso, debe usar el centro de administración 365 de Microsoft.
   
@@ -155,11 +155,11 @@ Esta es la configuración resultante con los tres grupos de acceso al sitio rell
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: crear y configurar el sitio de grupo aislado
 
-En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los permisos para los niveles de permisos predeterminados de SharePoint Online para usar los nuevos grupos de acceso basados en Azure AD. De forma predeterminada, los nuevos sitios de grupo incluyen un grupo de Office 365 y otros recursos relacionados, pero, en este caso, crearemos un sitio de grupo sin un grupo de Office 365. Esto permite mantener los permisos por completo a través de SharePoint.
+En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los permisos para los niveles de permisos predeterminados de SharePoint Online para usar los nuevos grupos de acceso basados en Azure AD. De forma predeterminada, los nuevos sitios de grupo incluyen un grupo de 365 de Microsoft y otros recursos relacionados, pero, en este caso, crearemos un sitio de grupo sin un grupo de Microsoft 365. Esto permite mantener los permisos por completo a través de SharePoint.
   
 En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
   
-1. Inicie sesión en el centro de administración de Microsoft 365 con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en el centro de administración de Microsoft 365 con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
 
 2. En el centro de administración de Microsoft 365, en **centros de administración**, haga clic en **SharePoint**.
 
@@ -185,7 +185,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
 
 4. Establezca **permitir solicitudes de acceso** en **desactivado**.
 
-5. Haga clic en **Guardar**.
+5. Haga clic en **Guardar**.
     
 6. En el panel **permisos** , haga clic en **Configuración avanzada de permisos**.
     
@@ -229,11 +229,11 @@ Esta es la configuración resultante con los tres grupos de SharePoint para el s
   
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar con los recursos del sitio.
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

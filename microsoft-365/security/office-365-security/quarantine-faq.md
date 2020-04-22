@@ -16,24 +16,24 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Respuestas a las preguntas más frecuentes acerca de la cuarentena en Office 365.
-ms.openlocfilehash: 58800d5645241c2115356bc9899ce53302d1e37e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 3947fbed2a17380a18320a8bffd08a8178ad2b3f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856910"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634429"
 ---
-# <a name="quarantine-faq-in-office-365"></a>Preguntas más frecuentes sobre la cuarentena en Office 365
+# <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
-En este tema se proporcionan preguntas frecuentes y respuestas sobre la cuarentena para los clientes de Office 365 con buzones en Exchange online o los clientes independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online.
+En este tema se proporcionan preguntas frecuentes y respuestas sobre la cuarentena para los clientes de Microsoft 365 con buzones en Exchange online o los clientes independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online.
 
 ## <a name="q-how-do-i-manage-messages-that-were-quarantined-for-malware"></a>P: ¿Cómo puedo administrar los mensajes que se pusieron en cuarentena para malware?
 
-Solo los administradores pueden administrar los mensajes que se pusieron en cuarentena para obtener malware. Para obtener más información, consulte [Manage Quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+Solo los administradores pueden administrar los mensajes que se pusieron en cuarentena para obtener malware. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en Office 365](manage-quarantined-messages-and-files.md).
 
 ## <a name="q-how-do-i-quarantine-spam"></a>P: ¿Cómo puedo poner en cuarentena el correo no deseado?
 
-A. De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta correo electrónico no deseado. Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena correo no deseado o mensajes de correo electrónico masivo en su lugar. Para obtener más información, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
+A. De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta correo electrónico no deseado. Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena correo no deseado o mensajes de correo electrónico masivo en su lugar. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 ## <a name="q-how-do-i-give-users-access-to-the-quarantine"></a>P: ¿cómo se concede a los usuarios acceso a la cuarentena?
 
@@ -70,7 +70,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 A continuación, ejecute el siguiente comando para liberar los mensajes a todos los destinatarios originales:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 Después de liberar un mensaje, no podrá volver a publicarlo.

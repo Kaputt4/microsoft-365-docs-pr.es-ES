@@ -1,5 +1,5 @@
 ---
-title: Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
+title: Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office de acuerdo con las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088099"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638409"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
+# <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -33,7 +33,7 @@ Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organiz
   
 ![Este sitio está bloqueado](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-La lista de URL bloqueadas se define en el equipo de seguridad de Office 365 de su organización y esa lista se aplica a todas las personas de la organización que están cubiertas por las directivas de vínculos seguros de ATP de Office 365. 
+La lista de URL bloqueadas se define en el equipo de seguridad de Microsoft 365 para empresas de la organización, y esa lista se aplica a todos los usuarios de la organización que están cubiertos por las directivas de vínculos seguros de ATP de Office 365. 
   
 Lea este artículo para obtener información sobre cómo configurar la lista de direcciones URL bloqueadas personalizadas de la organización para [vínculos seguros de ATP en Office 365](atp-safe-links.md).
   
@@ -45,12 +45,12 @@ Para editar (o definir) las directivas de ATP, debe tener asignado uno de los ro
 
 |Role  |Dónde y cómo se asigna  |
 |---------|---------|
-|Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+|administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
 |Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Para ver o editar una lista de direcciones URL bloqueadas personalizadas
   

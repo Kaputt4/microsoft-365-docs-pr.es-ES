@@ -1,5 +1,5 @@
 ---
-title: Entrega dinámica y vista previa con Datos adjuntos seguros de Office 365 ATP
+title: Entrega dinámica y vista previa con datos adjuntos seguros de ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija Entrega dinámica para evitar retrasos en los mensajes y permitir que los usuarios puedan obtener una vista previa de los datos adjuntos mientras se examinan.
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
-ms.translationtype: HT
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599427"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637573"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y vista previa con Datos adjuntos seguros de Office 365 ATP
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adjuntos seguros de ATP
 
 ## <a name="overview"></a>Información general
 
@@ -38,16 +38,16 @@ La Entrega dinámica elimina los retrasos del correo electrónico enviando el cu
 
 - A medida que se comprueba cada dato adjunto, pasará a estar disponible para abrir o descargar.
 
-- Si se determina que un dato adjunto es malicioso, se envía a la cuarentena, donde alguien del equipo de seguridad de su organización (como un administrador global de Office 365 o un administrador de seguridad) puede [administrar los mensajes en cuarentena en Office 365](manage-quarantined-messages-and-files.md).
+- Si los datos adjuntos se determinan como malintencionados, se envían a cuarentena, donde alguien del equipo de seguridad de su organización (como un administrador global o un administrador de seguridad) puede [administrar los mensajes en cuarentena en Office 365](manage-quarantined-messages-and-files.md).
 
 La mayoría de los documentos PDF y de Office se pueden ver en la vista previa en modo seguro mientras se realiza el análisis de ATP. Si un dato adjunto no es compatibles con la vista previa de Entrega dinámica, los destinatarios del correo ven un marcador de posición de datos adjuntos hasta que se complete el análisis de Datos adjuntos seguros de ATP.
 
 > [!TIP]
-> Si está usando un dispositivo móvil y los archivos PDF no se muestran en un principio en la vista previa de Entrega dinámica, pruebe a iniciar sesión en Office 365 con el explorador móvil.
+> Si está usando un dispositivo móvil y los PDF no se representan en primer lugar en el previsualizador de entrega dinámica, intente iniciar sesión con el explorador móvil.
 
 Con la Entrega dinámica, los usuarios pueden leer y responder a sus mensajes de correo inmediatamente, mientras se analizan los datos adjuntos.
 
-El análisis de Datos adjuntos seguros de ATP tiene lugar en la misma región en la que residen los datos de Office 365. Para más información sobre la geografía de centros de datos, consulte [¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
+ATP el análisis de datos adjuntos seguros se realiza en la misma región en la que residen los datos de Microsoft 365. Para más información sobre la geografía de centros de datos, consulte [¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>¿Qué ocurre cuando alguien reenvía un correo electrónico que contiene datos adjuntos?
 

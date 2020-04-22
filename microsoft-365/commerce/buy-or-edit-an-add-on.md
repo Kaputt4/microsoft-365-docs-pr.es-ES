@@ -1,5 +1,5 @@
 ---
-title: Comprar o editar un complemento para Office 365 para empresas
+title: Comprar o editar un complemento
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,19 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: Obtenga información sobre cómo comprar un complemento para agregar funciones adicionales a la suscripción de Office 365 para empresas. También puede actualizar y quitar un complemento.
+description: Obtenga información sobre cómo comprar un complemento para agregar una funcionalidad adicional a su suscripción de Microsoft 365 para empresas. También puede actualizar y quitar un complemento.
 ms.custom: okr_SMB
-ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142280"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634925"
 ---
-# <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Comprar o editar un complemento para Office 365 para empresas
+# <a name="buy-or-edit-an-add-on"></a>Comprar o editar un complemento
 
-Muchos de los planes de Office 365 para empresas tienen complementos que puede comprar para la suscripción. Un complemento proporciona funciones adicionales a la suscripción para la que se compra.
+Varios de los planes de Microsoft 365 para empresas tienen complementos que puede comprar para su suscripción. Un complemento proporciona funciones adicionales a la suscripción para la que se compra.
+
 
 ## <a name="buy-an-add-on"></a>Comprar un complemento
 
@@ -97,13 +98,14 @@ Muchos de los planes de Office 365 para empresas tienen complementos que puede c
 
 ::: moniker-end
 
+
 ## <a name="update-an-add-on"></a>Actualizar un complemento
 
-Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de.
+Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de. 
 
 Los *Complementos tradicionales* están vinculados a una suscripción específica. Si cancela la suscripción, también se cancelará el complemento asociado.
   
-Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **productos & Services** y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
+Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **suscripciones** (o en la página **productos & Services** en el nuevo centro de administración) y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
   
 ### <a name="update-a-traditional-add-on"></a>Actualizar un complemento tradicional
 
@@ -120,6 +122,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 5. Especifique el cambio de cantidad que desea para la suscripción y, a continuación, seleccione **Enviar cambio**.
 
 ::: moniker-end
+
 
 ::: moniker range="o365-germany"
 
@@ -164,6 +167,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
     > También puede usar las flechas arriba y abajo para cambiar la cantidad de licencias de usuario o simplemente escriba el número que quiera en el cuadro.
   
     ![Cuadro total de licencias y botón de envío en el cuadro de diálogo Agregar o quitar licencias.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+
 
 ::: moniker-end
 
@@ -209,29 +213,32 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker-end
 
+
 ## <a name="remove-an-add-on"></a>Quitar un complemento
 
 Puede cancelar un complemento independiente de la misma manera que [cancela una suscripción](subscriptions/cancel-your-subscription.md). O bien, puede establecer la **facturación recurrente** en desactivada para un complemento independiente mediante los pasos anteriores. Sin embargo, no se puede quitar un complemento tradicional una vez que se ha comprado. Si necesita quitar un complemento tradicional, [póngase en contacto con el soporte técnico para obtener ayuda](../admin/contact-support-for-business-products.md).
   
 ## <a name="available-add-ons"></a>Complementos disponibles
 
-En la tabla siguiente se enumeran los complementos que están disponibles para las diferentes ediciones de Office 365 para empresas.
+En la tabla siguiente se enumeran los complementos que están disponibles para las diferentes ediciones de Microsoft 365 para empresas.
   
 Para obtener información sobre los complementos de Skype Empresarial, vea [Licencias complementarias de Skype Empresarial y Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
+****
+
 |**Complemento**|**Disponible en estas suscripciones**|
 |:-----|:-----|
 |Caja de seguridad del cliente  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Protección contra amenazas avanzada de Office 365 online](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Office 365 Empresa Essentials  <br/>  Office 365 Empresa Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 empresa Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Cumplimiento avanzado de Office 365  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Extra File Storage  <br/> | Office 365 Empresa  <br/>  Office 365 Empresa Essentials  <br/>  Office 365 Empresa Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office para la web con SharePoint plan 1  <br/>  Office para la web con SharePoint plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
-|Sistema telefónico en Office 365.  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audioconferencia en Office 365  <br/> |  Office 365 Empresa Essentials <br/> Office 365 Empresa Premium <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 sin Audioconferencia <br/> Microsoft 365 Empresa <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Créditos de comunicaciones en Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Plan de llamadas nacionales en Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Plan de llamadas internacionales en Office 365  <br/> | Office 365 Enterprise E5  <br/> |
+|Office 365 Extra File Storage  <br/> | Microsoft 365 apps for Business  <br/>  Microsoft 365 empresa Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office para la web con SharePoint plan 1  <br/>  Office para la web con SharePoint plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
+|Sistema telefónico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
+|Audioconferencia  <br/> |  Microsoft 365 empresa Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 sin Audioconferencia <br/> Microsoft 365 empresa Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Créditos de comunicaciones  <br/> | Office 365 Enterprise E5  <br/> |
+|Plan de llamadas nacionales <br/> | Office 365 Enterprise E5  <br/> |
+|Plan de llamadas internacionales  <br/> | Office 365 Enterprise E5  <br/> |
   
 ## <a name="related-articles"></a>Artículos relacionados
 

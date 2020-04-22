@@ -1,5 +1,5 @@
 ---
-title: Configurar las directivas de protección contra suplantación de ATP
+title: Configurar directivas contra phishing de ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,20 +14,20 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (ATP) que están disponibles en las organizaciones con la protección contra amenazas avanzada (ATP) de Office 365.
-ms.openlocfilehash: b0316133c90837bedc657bde355f31d50ffe76ea
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 358abc2835e8d1fba39d72021f03b75775528bcf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537466"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638469"
 ---
-# <a name="configure-atp-anti-phishing-policies-in-office-365"></a>Configurar las directivas de protección contra suplantación de identidad (ATP) en Office 365
+# <a name="configure-atp-anti-phishing-policies"></a>Configurar directivas contra phishing de ATP
 
-Las directivas antiphishing de ATP forman parte de la [protección contra amenazas avanzada de Office 365](office-365-atp.md). Las directivas antiphishing de ATP pueden ayudar a proteger a su organización de ataques de suplantación de identidad (phishing) malintencionados y otros tipos de ataques de suplantación de identidad. Para obtener más información acerca de las diferencias entre las directivas antiphishing en Exchange Online Protection (EOP) y las directivas antiphishing de ATP, consulte [protección contra la suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md).
+Las directivas antiphishing de ATP forman parte de la [protección contra amenazas avanzada de Office 365](office-365-atp.md). Las directivas antiphishing de ATP pueden ayudar a proteger a su organización de ataques de suplantación de identidad (phishing) malintencionados y otros tipos de ataques de suplantación de identidad. Para obtener más información acerca de las diferencias entre las directivas antiphishing en Exchange Online Protection (EOP) y las directivas antiphishing de ATP, consulte [anti-phishing Protection](anti-phishing-protection.md).
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la Directiva antiphishing predeterminada de ATP. Para una mayor granularidad, también puede crear directivas antiphishing de ATP personalizadas que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
-Puede configurar las directivas antiphishing de ATP en el centro de seguridad & cumplimiento de Office 365 o en Exchange Online PowerShell.
+Puede configurar las directivas antiphishing de ATP en el centro de seguridad & cumplimiento o en Exchange Online PowerShell.
 
 Para obtener información acerca de la configuración de una directiva de antiphishing integrada más limitada que está disponible en las organizaciones de Exchange Online Protection (es decir, Office 365 organizaciones sin ATP), vea [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
 
@@ -73,7 +73,7 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Para obtener la configuración recomendada para las directivas antiphishing de ATP, consulte [configuración de la Directiva de antiphishing de Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -246,7 +246,7 @@ Use los siguientes procedimientos para modificar las directivas antiphishing de 
 
    Tenga en cuenta que esta configuración es idéntica a la configuración que está disponible en la Directiva antiphishing predeterminada en EOP.
 
-   - **Configuración del filtro de suplantación de identidad**: el valor predeterminado es **activado**y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, consulte [configurar inteligencia de identidades en Office 365](learn-about-spoof-intelligence.md).
+   - **Configuración del filtro de suplantación de identidad**: el valor predeterminado es **activado**y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Office 365 ](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Office 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Los administradores pueden aprender a usar S/MIME en Exchange Online.
-ms.openlocfilehash: 1c7b2a56f15b39818d51f405192febebeb2717e8
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 294fd22ff81e9ddaabf0664afb34a37c008a6d09
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170500"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634333"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para la firma y el cifrado de mensajes en Exchange Online
 
@@ -68,7 +68,7 @@ A medida que la seguridad de los mensajes se vuelve más importante, los adminis
 
 - **Seguridad de la capa de transporte (TLS)** cifra el túnel o la ruta entre los servidores de correo electrónico para ayudar a evitar la supervisión y el espionaje.
 
-- La **capa de sockets seguros (SSL)** cifra la conexión entre los clientes de correo electrónico y los servidores de Office 365.
+- La **capa de sockets seguros (SSL)** cifra la conexión entre los clientes de correo electrónico y los servidores de Microsoft 365.
 
 - **BitLocker** cifra los datos de un disco duro en un centro de datos para que si alguien obtiene acceso no autorizado, no pueda leerlo.
 

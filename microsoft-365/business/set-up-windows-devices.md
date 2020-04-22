@@ -1,5 +1,5 @@
 ---
-title: Configurar dispositivos con Windows para usuarios de Microsoft 365 Business
+title: Configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Obtenga información sobre cómo configurar dispositivos Windows que ejecuten Windows 10 Pro para usuarios de Microsoft 365 Business, lo que permite controles de seguridad y administración centralizados.
-ms.openlocfilehash: 6ecc45f825a783d9d47c4b069a6021143d96597c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa Premium, lo que permite controles de seguridad y administración centralizados.
+ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561168"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635460"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurar dispositivos con Windows para usuarios de Microsoft 365 Business
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Requisitos previos para configurar dispositivos Windows para usuarios profesionales de Microsoft 365
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Requisitos previos para configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium
 
-Para poder configurar dispositivos Windows para los usuarios de Microsoft 365 Business, asegúrese de que todos los dispositivos Windows estén ejecutando la versión 1703 de Windows 10 Pro (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funciones de administración de dispositivos que funciona como complemento de Windows 10 Pro y, además, proporciona una administración centralizada y controles de seguridad de Microsoft 365 Business.
+Antes de poder configurar dispositivos Windows para los usuarios de Microsoft 365 empresa Premium, asegúrese de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para la implementación de Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan los controles de seguridad y administración centralizados de Microsoft 365 empresa Premium.
   
-Si tiene dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, su suscripción de Microsoft 365 Business le permite hacer una actualización a Windows 10.
+Si tiene dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, su suscripción a Microsoft 365 Business Premium le da derecho a una actualización de Windows 10.
   
 Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
   
@@ -52,7 +52,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
 
-Cuando todos los dispositivos Windows de su organización se hayan actualizado a Windows 10 Pro Creators Update o ya ejecuten la actualización de Windows 10 Pro Creators, puede unir estos dispositivos al Azure Active Directory de la organización. Una vez que se hayan unido los dispositivos, se actualizarán automáticamente a Windows 10 Business, que forma parte de su suscripción de Microsoft 365 empresa.
+Cuando todos los dispositivos Windows de su organización se hayan actualizado a Windows 10 Pro Creators Update o ya ejecuten la actualización de Windows 10 Pro Creators, puede unir estos dispositivos al Azure Active Directory de la organización. Una vez que se hayan unido los dispositivos, se actualizarán automáticamente a Windows 10 Business, que forma parte de su suscripción de Microsoft 365 empresa Premium.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Dispositivos Windows 10 Pro nuevos o actualizados recientemente
 
@@ -62,7 +62,7 @@ En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Updat
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. Elija **Configurar para una organización** y, después, escriba el nombre de usuario y contraseña de Microsoft 365 Business. 
+2. Elija **configurar para una organización** y, después, escriba el nombre de usuario y la contraseña de Microsoft 365 empresa Premium. 
     
 3. Finalice la configuración del dispositivo Windows 10.
     
@@ -108,13 +108,13 @@ Para comprobar el estado de sincronización, en la página **Obtener acceso a tr
   
 En la página Estado de sincronización, haga clic en Sincronizar para recibir las directivas de administración de dispositivos móviles más recientes en el equipo.
   
-Para empezar a usar la cuenta de Microsoft 365 Business, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y, a continuación, **cambie de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
+Para empezar a usar la cuenta de Microsoft 365 Business Premium, vaya al botón **Inicio** de Windows, haga clic con el botón secundario en la imagen de cuenta actual y, a continuación, **cambie de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Comprobar que un dispositivo está actualizado a Windows 10 Business
 
-Compruebe que los dispositivos Windows 10 unidos a Azure AD se hayan actualizado a Windows 10 Business como parte de una suscripción a Microsoft 365 Business.
+Compruebe que los dispositivos Windows 10 Unidos a Azure AD se han actualizado a Windows 10 Business como parte de su suscripción a Microsoft 365 empresa Premium.
   
 1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
     
@@ -124,8 +124,8 @@ Compruebe que los dispositivos Windows 10 unidos a Azure AD se hayan actualizado
   
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para configurar dispositivos móviles, vea [Configurar dispositivos móviles para los usuarios de Microsoft 365 Business](set-up-mobile-devices.md). Para establecer las directivas de protección de dispositivos o de aplicaciones, consulte [Administrar Microsoft 365 Business](manage.md).
+Para configurar los dispositivos móviles, consulte [configurar dispositivos móviles para los usuarios de microsoft 365 empresa Premium](set-up-mobile-devices.md), para establecer directivas de protección de dispositivos o de protección de aplicaciones, consulte [Manage Microsoft 365 for Business](manage.md).
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 Business
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 empresa Premium
 
-[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
