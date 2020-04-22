@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Obtenga un informe detallado de cómo las personas de su organización están utilizando los servicios de Office 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204061"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621275"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Informes de actividad en el Centro de Administración de Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
-Puede ver de forma fácil el uso que hacen los usuarios de su empresa de los servicios de Office 365. Por ejemplo, puede identificar quién usa mucho un servicio y ha alcanzado la cuota de este o quién puede no necesitar para nada una licencia de Office 365.
+Puede ver de forma fácil el uso que hacen los usuarios de su empresa de los servicios de Microsoft 365. Por ejemplo, puede identificar quién usa mucho un servicio y ha alcanzado la cuota de este o quién puede no necesitar para nada una licencia de Microsoft 365.
   
 Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los datos no estarán disponibles para todos los períodos de informes al instante. Los informes están disponibles en 48 horas.
   
@@ -58,7 +58,7 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 ::: moniker-end
 
    
-2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. También puede seleccionar un widget de actividad de un vistazo de un servicio (correo electrónico, OneDrive, etc.) para ver más información. <br/>![Panel de uso de Office 365](../../media/usage-report-dashboard.png)
+2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. También puede seleccionar un widget de actividad de un vistazo de un servicio (correo electrónico, OneDrive, etc.) para ver más información. <br/>![Panel de utilización](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 
@@ -87,7 +87,6 @@ Para obtener más información, vea[sobre los roles de administrador de](../add-
 Según la suscripción, estos son los informes disponibles.
   
 - [Actividad de correo electrónico](email-activity.md)
-- [Actividad de formularios](forms-activity.md)
     
 - [Uso del buzón](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ Según la suscripción, estos son los informes disponibles.
 - [Usuarios activos](active-users.md)
   
 - [Uso de aplicaciones de correo electrónico](email-apps-usage.md)
+
+- [Actividad de formularios](forms-activity.md)
   
-- [Grupos de Office 365](office-365-groups.md)
+- [Grupos de Microsoft 365](office-365-groups.md)
   
 - [Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity.md)
   
 - [Uso de OneDrive para la Empresa](onedrive-for-business-usage.md)
+
 - [Uso de ProPlus](microsoft365-apps-usage.md)
   
 - [Uso del sitio de SharePoint](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ Si desea ocultar la información de nivel de usuario cuando está generando sus 
   
 La lista de usuarios será similar a la siguiente:
   
-![Informes de Office 365: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Informes: lista anónima de usuarios](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a la API de informes.
   
@@ -184,4 +186,3 @@ Sin embargo, si selecciona un día concreto (ver número 3), hasta 28 días desp
 
 [Informes del centro de cumplimiento de seguridad &amp;](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151400"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618925"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -73,10 +73,10 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 
 |Rol de administrador     |¿A quién se le debe asignar este rol?  |
 |---------|---------|
-|Administrador de Exchange     |   Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo de su usuario, los grupos de Office 365 y Exchange Online. <br><br> Los administradores de Exchange también pueden:<br> - Recuperar elementos eliminados en un buzón de usuario <br> - Configurar los delegados "Enviar como" y "Enviar en nombre de" <br>  |
+|Administrador de Exchange     |   Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo de sus usuarios, los grupos de Microsoft 365 y Exchange Online. <br><br> Los administradores de Exchange también pueden:<br> - Recuperar elementos eliminados en un buzón de usuario <br> - Configurar los delegados "Enviar como" y "Enviar en nombre de" <br>  |
 |Administrador global     |   Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características de administración y datos en los servicios en línea de Microsoft. <br><br> Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. <br><br> Solo los administradores globales pueden:<br> - Restablecer las contraseñas de todos los usuarios <br> - Agregar y administrar dominios <br> <br> **Nota:**   la persona que se registró en los servicios en línea de Microsoft se convierte automáticamente en administrador global. |
 |Lector global    |   Asigne el rol de lector global a los usuarios que necesiten ver la configuración y las funciones de administración en los centros de administración que el administrador global puede ver. El administrador del lector global no puede editar ninguna configuración.   |
-|Administrador de grupos     |   Asigne el rol de administrador de grupos a los usuarios que necesiten administrar la configuración de todos los grupos en los centros de administración, incluido el Centro de administración de Microsoft 365 y el portal de Azure Active Directory. <br><br> Los administradores de grupos pueden:<br> - Crear, editar, eliminar y restaurar Grupos de Office 365 <br> - Crear y actualizar las directivas de creación, expiración y nomenclatura de grupos <br> - Crear, editar, eliminar y restaurar grupos de seguridad de Azure Active Directory| 
+|Administrador de grupos     |   Asigne el rol de administrador de grupos a los usuarios que necesiten administrar la configuración de todos los grupos en los centros de administración, incluido el Centro de administración de Microsoft 365 y el portal de Azure Active Directory. <br><br> Los administradores de grupos pueden:<br> - Crear, editar, eliminar y restaurar los grupos de Microsoft 365 <br> - Crear y actualizar las directivas de creación, expiración y nomenclatura de grupos <br> - Crear, editar, eliminar y restaurar grupos de seguridad de Azure Active Directory| 
 |Administrador del departamento de soporte técnico     |   Asigne el rol de administrador del departamento de soporte técnico a los usuarios que necesiten que hacer lo siguiente:<br> - Restablecer contraseñas <br> - Forzar a los usuarios a cerrar sesión <br> - Administrar solicitudes de servicio <br> - Supervisar el estado del servicio <br> <br> **Nota**: el administrador del departamento de soporte técnico solo puede ayudar a usuarios que no son administradores y a usuarios que tienen asignados estos roles: Lector de directorios, Invitador de usuarios invitados, Administrador del departamento de soporte técnico, Lector del centro de mensajes y Lector de informes.      |
 |Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Usar el servicio de directivas en la nube de Office para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
 |Administrador de servicios    |   Asigne el rol de administrador de servicios como un rol adicional para administradores o usuarios que necesiten hacer lo siguiente, pero el rol que tienen asignado no lo incluye: <br> - Abrir y administrar solicitudes de servicio <br> - Ver y compartir publicaciones del centro de mensajes   |
@@ -127,9 +127,9 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Operador de seguridad     |    Investiga y responde a las alertas de seguridad, administra las características en el centro de Protección de Identidades y supervisa el estado del servicio.     |
 |Lector de seguridad     |    Tiene acceso de solo lectura a las características de seguridad, informes de inicio de sesión y registros de auditoría.     |
 |Administrador de soporte técnico del servicio     |    Crea solicitudes de servicio para servicios de Office 365, Microsoft 365 y Azure, y supervisa el estado del servicio.     |
-|Administrador de SharePoint     |    Posee acceso completo a SharePoint Online, administra grupos de Office 365, administra solicitudes de servicio y supervisa el estado del servicio.     |
+|Administrador de SharePoint     |    Posee acceso completo a SharePoint Online, administra los grupos de Microsoft 365, administra las solicitudes de servicio y supervisa el estado del servicio.     |
 |Administrador de Skype Empresarial     | Tiene acceso completo a todas las características de Teams y Skype, y a los atributos de usuario de Skype. También administra solicitudes de servicio y supervisa el estado del servicio.      |
-|Administrador de Teams     |    Posee acceso completo al centro de administración de Teams y Skype, administra grupos de Office 365, solicitudes de servicio y supervisa el estado del servicio.     |
+|Administrador de Teams     |    Posee acceso completo al centro de administración de Teams y Skype, administra los grupos de Microsoft 365, las solicitudes de servicio y supervisa el estado del servicio.     |
 |Administrador de comunicaciones de Teams     |    Asigna números de teléfono, crea y administra las directivas de voz y reuniones, y lee los análisis de llamadas.     |
 |Ingeniero de soporte técnico de comunicaciones de Teams     |    Lee los detalles del registro de llamadas de todos los participantes de la llamada para solucionar problemas de comunicación.     |
 |Especialista en soporte técnico de comunicaciones de Teams     |    Lee los detalles de las llamadas de usuario solo para un usuario específico con el fin de solucionar problemas de comunicación.|

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Office 365.
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504084"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583398"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Paso 4: Configurar la omisión de tráfico
 
@@ -61,6 +61,8 @@ Los trabajadores remotos suelen usar las conexiones de red privada virtual (VPN)
 El túnel dividido es la función de una conexión VPN para redirigir el tráfico especificado por Internet en vez de enviarlo a través de la conexión VPN a la intranet. Para optimizar el rendimiento de los trabajadores remotos en servicios críticos de Microsoft 365 como Teams, SharePoint Online y Exchange Online, configure las conexiones VPN de túnel dividido para enviar tráfico a los puntos de conexión de Office 365 de la categoría Optimizar directamente a través de Internet. 
 
 Para obtener más información, consulte [Optimizar la conectividad de Office 365 para usuarios remotos que usan túnel dividido de VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+
+Para probar lo cerca que está de un punto de entrada para la red global de Microsoft y lo cerca que está del punto en que la red de su organización se conecta a su Proveedor de servicios de Internet (ISP), use la [Herramienta de integración de red de Office 365](https://connectivity.office.com/).
 
 Como punto de control provisional, puede ver los [criterios de salida](networking-exit-criteria.md#crit-networking-step4) de este paso.
 

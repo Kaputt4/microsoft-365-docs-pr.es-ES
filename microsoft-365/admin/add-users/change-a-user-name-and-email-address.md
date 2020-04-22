@@ -1,5 +1,5 @@
 ---
-title: Cambiar una dirección de correo electrónico y un nombre de usuario en Office 365
+title: Cambiar un nombre de usuario y una dirección de correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,17 +21,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de Office 365 de un usuario. '
-ms.openlocfilehash: 16dab0f0ac65bccea0e2273e396315a32dd33439
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario. '
+ms.openlocfilehash: 726d1f01203bbaefc529039d3816fb09c892cd90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245752"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618745"
 ---
-# <a name="change-a-user-name-and-email-address-in-office-365"></a>Cambiar una dirección de correo electrónico y un nombre de usuario en Office 365
+# <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
-Es posible que deba cambiar la dirección de correo electrónico y el nombre para mostrar de Office 365 de un usuario si, por ejemplo, este decide cambiarse los apellidos.
+Es posible que deba cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario si, por ejemplo, este decide cambiarse los apellidos.
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 ## <a name="change-a-users-email-address"></a>Cambiar la dirección de correo electrónico de un usuario
 
-Para poder realizar estos pasos, debe ser [Administrador global de Office 365](about-admin-roles.md). 
+Para poder realizar estos pasos, debe ser [Administrador global](about-admin-roles.md). 
 
 ::: moniker range="o365-worldwide"
  
@@ -101,7 +101,7 @@ Para poder realizar estos pasos, debe ser [Administrador global de Office 365](a
     
     **IMPORTANTE**:  No verá la opción "Establecer como principal" si adquirió Office 365 a través del servicio GoDaddy u otro partner que proporcione una consola de administración. En su lugar, inicie sesión en la consola de administración de GoDaddy o del partner para establecer el alias principal. 
     
-    Además, solo verá esta opción si es un administrador global de Office 365. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
+    Además, solo verá esta opción si es un administrador global. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
   
 4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar** y, a continuación, **Cerrar**.
     
@@ -129,7 +129,7 @@ Para poder realizar estos pasos, debe ser [Administrador global de Office 365](a
     
     **IMPORTANTE**:  No verá la opción "Establecer como principal" si adquirió Office 365 a través del servicio GoDaddy u otro partner que proporcione una consola de administración. En su lugar, inicie sesión en la consola de administración de GoDaddy o del partner para establecer el alias principal. 
     
-    Además, solo verá esta opción si es un administrador global de Office 365. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
+    Además, solo verá esta opción si es un administrador global. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
   
 4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar** y, a continuación, **Cerrar**.
     
@@ -157,7 +157,7 @@ Para poder realizar estos pasos, debe ser [Administrador global de Office 365](a
     
     **IMPORTANTE**:  No verá la opción "Establecer como principal" si adquirió Office 365 a través del servicio GoDaddy u otro partner que proporcione una consola de administración. En su lugar, inicie sesión en la consola de administración de GoDaddy o del partner para establecer el alias principal. 
     
-    Además, solo verá esta opción si es un administrador global de Office 365. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
+    Además, solo verá esta opción si es un administrador global. Si no ve la opción, no tiene permisos para cambiar el nombre ni la dirección de correo electrónico principal del usuario.
   
 4. Verá una gran advertencia amarilla que le dice que va a cambiar la información de inicio de sesión del usuario. Seleccione **Guardar** y, a continuación, **Cerrar**.
     
@@ -223,22 +223,22 @@ Este cambio puede tardar hasta 24 horas en surtir efecto en todos los servicios.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"No se encuentra ningún parámetro que coincida con el nombre de parámetro `EmailAddresses´"
 
-Si recibe el mensaje de error " **No se encuentra ningún parámetro que coincida con el nombre de parámetro 'EmailAddresses'"**, significa que Office 365 está tardando un poco más en finalizar la configuración de su espacio empresarial o de su dominio personalizado si ha agregado alguno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+Si recibe el mensaje de error “**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’”**, significa la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
 
-Si recibió el mensaje de error "**No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**". , significa que no es un administrador global de Office 365 y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
+Si recibió el mensaje de error "**No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**". significa que no es un administrador global y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
 
 
 ## <a name="what-to-do-with-old-email-addresses"></a>Qué hacer con las direcciones de correo electrónico antiguas
 
 La dirección de correo electrónico principal anterior de la persona se conservará como dirección de correo electrónico adicional. **Recomendamos encarecidamente no quitar la dirección de correo electrónico antigua**.
   
-Es probable que algunos usuarios continúen enviando correo electrónico a la antigua dirección, por lo que eliminarla puede provocar errores NDR. Office 365 lo redirigirá automáticamente a la nueva dirección. Además, tampoco debe volver a usar direcciones de correo electrónico SMTP ni aplicarlas a nuevas cuentas. Esto también puede provocar errores NDR o que se realicen entregas en buzones no deseados.
+Es probable que algunos usuarios continúen enviando correo electrónico a la antigua dirección, por lo que eliminarla puede provocar errores NDR. Microsoft lo redirigirá automáticamente a la nueva dirección. Además, tampoco debe volver a usar direcciones de correo electrónico SMTP ni aplicarlas a nuevas cuentas. Esto también puede provocar errores NDR o que se realicen entregas en buzones no deseados.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>¿Qué sucede si la libreta de direcciones sin conexión de la persona no se sincroniza con la lista global de direcciones?
 
-Si el usuario está usando Exchange Online o si su cuenta de Office 365 está vinculada al entorno de Exchange local de su organización, es posible que vea este error al intentar cambiar un nombre de usuario y una dirección de correo electrónico: "Este usuario se sincroniza con su Active Directory local. Algunos detalles se pueden modificar solo a través de su Active Directory local".
+Si el usuario está usando Exchange Online o si su cuenta está vinculada al entorno de Exchange local de su organización, es posible que vea este error al intentar cambiar un nombre de usuario y una dirección de correo electrónico: "Este usuario se sincroniza con su Active Directory local. Algunos detalles se pueden modificar solo a través de su Active Directory local".
   
 Esto es debido a la dirección de enrutamiento de correo electrónico de Microsoft Online (MOERA). La dirección MOERA se crea a partir del atributo  _userPrincipalName_ de la persona en Active Directory y se asigna automáticamente a la cuenta de la nube durante la sincronización inicial. Una vez que se ha creado, no puede modificarse ni quitarse en Office 365. Posteriormente, podrá cambiar el nombre de usuario en Active Directory, pero esto no cambiará la dirección MOERA. Además, es posible que se produzcan problemas al mostrar el nombre recién cambiado en la lista global de direcciones. 
   

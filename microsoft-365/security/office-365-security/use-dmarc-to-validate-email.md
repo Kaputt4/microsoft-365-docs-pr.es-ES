@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización de su Office 365.
-ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c71d4edabcacd2cd4d98dad69aa134cbaf75a111
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633438"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608143"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
@@ -207,13 +207,17 @@ Si publica una directiva de rechazo de DMARC (p=reject), ningún otro cliente de
 ## <a name="how-office-365-handles-inbound-email-that-fails-dmarc"></a>Cómo controla Office 365 el correo electrónico entrante que no supera las comprobaciones de DMARC
 <a name="inbounddmarcfail"> </a>
 
-Si la directiva DMARC del servidor de envío es p=reject, EOP marca el mensaje como correo no deseado en lugar de rechazarlo. En otras palabras, para el correo electrónico entrante, Office 365 considera que p=reject y p=quarantine es lo mismo.
+Si la directiva DMARC del servidor de envío es`p=reject`, EOP marca el mensaje como correo de suplantación de identidad en lugar de rechazarlo. En otras palabras, para el correo entrante, Office 365 trata a `p=reject` y `p=quarantine` de la misma manera. Los administradores pueden definir la acción que debe realizarse sobre los mensajes clasificados como suplantación de identidad dentro de la [directiva contra la suplantación de identidad](set-up-anti-phishing-policies.md).
   
-Office 365 está configurado así porque hay mensajes de correo legítimos que pueden no superar las comprobaciones de DMARC. Por ejemplo, un mensaje podría no superar las pruebas DMARC si se envía a una lista de distribución que luego transmite el mensaje a todos los participantes de la lista. Si Office 365 rechaza estos mensajes, las personas podrían perder el correo electrónico legítimo y no habría forma de recuperarlo. Es decir, estos mensajes seguirían provocando un error en DMARC, pero se marcarían como correo no deseado y no se rechazarían. Los usuarios que quisieran podrían colocar estos mensajes en la bandeja de entrada a través de estos métodos:
+Office 365 está configurado de esta manera porque es posible que algunos mensajes de correo electrónico legítimos no superen las comprobaciones de DMARC. Por ejemplo, un mensaje se envía a una lista de distribución que transmite el mensaje a todos los participantes de la lista. Si Office 365 rechaza estos mensajes, los destinatarios podrían perder correo electrónico legítimo sin forma de recuperarlo. Como alternativa, estos mensajes no superarán las comprobaciones de DMARC, pero se marcarán como suplantación de identidad y no se rechazarán. Los usuarios aún pueden recibir estos mensajes en la bandeja de entrada a través de los siguientes métodos:
   
-- Los usuarios agregan remitentes seguros individualmente mediante el cliente de correo electrónico
+- Los usuarios pueden agregar los remitentes seguros de manera individual mediante el cliente de correo electrónico
 
-- Los administradores crean una regla de flujo de correo (también conocida como regla de transporte) de Exchange para todos los usuarios que permite la entrada de los mensajes de esos remitentes determinados. 
+- Los administradores pueden actualizar las notificaciones de la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para permitir la suplantación de identidad.
+
+- Los administradores crean una regla de flujo de correo (también conocida como regla de transporte) de Exchange para todos los usuarios que permite la entrada de los mensajes de esos remitentes determinados.
+
+Para obtener más información, vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365).
 
 ## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Cómo Office 365 utiliza la cadena de recepción autenticada (ARC)
 <a name="ARC"> </a>

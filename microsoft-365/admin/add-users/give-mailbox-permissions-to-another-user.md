@@ -1,5 +1,5 @@
 ---
-title: 'Conceder permisos de buzón a otro usuario en Office 365: ayuda para administradores'
+title: 'Conceder permisos de buzón a otro usuario: Ayuda para administradores'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Obtenga información acerca de cómo conceder a un usuario el derecho de acceso al buzón de otro usuario. Esto le dará al usuario el derecho de leer el correo electrónico y enviar correo electrónico desde el buzón del otro usuario. '
-ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617175"
 ---
-# <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Conceder permisos de buzón a otro usuario en Office 365: ayuda para administradores
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
 ::: moniker range="o365-worldwide"
 
@@ -49,11 +49,11 @@ Los permisos de buzón le permiten conceder acceso de lectura y escritura en un 
   
 El primer paso para configurar permisos es decidir qué acciones quiere permitir que el otro usuario realice en el buzón específico. Puede permitir que un usuario lea mensajes de correo electrónico desde el buzón, que envíe mensajes de correo electrónico en nombre de otro usuario y que envíe mensajes de correo electrónico como si se enviasen desde ese buzón. Consulte los siguientes artículos sobre cómo configurar cada tipo de permisos:
   
-- [Leer correo electrónico desde el buzón de otro usuario](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Leer correo electrónico desde el buzón de otro usuario](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Enviar correo electrónico desde el buzón de otro usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [Enviar correo electrónico en nombre de un usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [Enviar correo electrónico desde el buzón de otro usuario](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Enviar correo electrónico en nombre de otro usuario](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Cambiar la propagación:**
   
