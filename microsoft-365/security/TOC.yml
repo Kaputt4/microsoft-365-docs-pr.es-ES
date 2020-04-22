@@ -231,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Configurar directivas contra correo electrónico no deseado
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: Configurar la directiva de filtro de conexión
+                    - name: Configurar el filtrado de la conexión
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: Crear listas de remitentes bloqueados
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
