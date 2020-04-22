@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634938"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615994"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -50,13 +50,13 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
 
   - Microsoft Edge <sup>2</sup>
   
-    O BIEN
+    O
 
   - Microsoft Internet Explorer 10 y versiones posteriores
     
   > [!NOTE]
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos.<br/>
-  > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use The Office 365 EDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Cuando descargue los resultados de la búsqueda (descritos en el paso 2), puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -87,7 +87,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de **contenido**de **búsqueda** \> .
     
@@ -160,7 +160,7 @@ Como se ha explicado anteriormente, puede aumentar la velocidad de descarga conf
   
 3. Haga clic en **Descargar resultados**.
     
-4. Si se le pide que instale la **herramienta de exportación MicrosoftOffice 365 eDiscovery**, haga clic en **instalar**.
+4. Si se le pide que instale la **herramienta de exportación de exhibición**de documentos electrónicos, haga clic en **instalar**.
     
 5. En la **Herramienta de exportación de exhibición de documentos electrónicos**, pegue la clave de exportación que ha copiado en el paso 2 en el cuadro correspondiente.
     
@@ -212,7 +212,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
 - El tamaño máximo de un archivo PST que se puede exportar es de 10 GB de forma predeterminada. Esto significa que si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de la búsqueda para el buzón se exportarán en dos (o más) archivos PST independientes. Si elige exportar todos los resultados de búsqueda en un solo archivo PST, el archivo PST se Spilt en archivos PST adicionales si el tamaño total de los resultados de la búsqueda es superior a 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Consulte [cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    Además, los resultados de la búsqueda de un buzón de correo específico no se dividirán entre varios archivos PST a menos que el contenido de un buzón de correo sea superior a 10 GB. Si opta por exportar los resultados de la búsqueda de un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda tienen un tamaño superior a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se Spilt en archivos PST adicionales en función del remitente obsolet.
+    Además, los resultados de la búsqueda de un buzón de correo específico no se dividirán entre varios archivos PST a menos que el contenido de un buzón de correo sea superior a 10 GB. Si opta por exportar los resultados de búsqueda de un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda tienen un tamaño superior a 10 GB, los elementos siguen organizados en orden cronológico, por lo que se Spilt en archivos PST adicionales en función de la fecha de envío.
      
  ### <a name="export-reports"></a>Exportar informes
   

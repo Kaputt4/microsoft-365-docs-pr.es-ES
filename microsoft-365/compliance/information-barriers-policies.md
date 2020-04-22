@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029886"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621376"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -37,7 +37,7 @@ Al definir directivas para barreras de información, trabajará con los atributo
 
 - Los atributos de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
 
-- Los segmentos son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento de Office 365 con un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
+- Los segmentos son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento mediante un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
 
 - Las directivas de barrera de información determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
     - Las directivas "bloquear" impiden que un segmento se comunique con otro segmento.
@@ -47,7 +47,7 @@ Al definir directivas para barreras de información, trabajará con los atributo
 
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
 
-|Fase    |Qué implica  |
+|Fase    |Lo que implica  |
 |---------|---------|
 |[Asegurarse de que se cumplen los requisitos previos](#prerequisites)     |-Compruebe que tiene las [licencias y permisos necesarios](information-barriers.md#required-licenses-and-permissions)<br/>-Compruebe que el directorio incluye datos para segmentar usuarios<br/>-Habilitar la búsqueda de directorio en el ámbito de Microsoft Teams<br/>-Asegúrese de que el registro de auditoría esté activado<br/>-Asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación<br/>-Usar PowerShell (se proporcionan ejemplos)<br/>-Proporcionar consentimiento de administrador para Microsoft Teams (se incluyen los pasos)          |
 |[Parte 1: segmentar usuarios en la organización](#part-1-segment-users)     |-Determine qué directivas se necesitan<br/>-Hacer una lista de segmentos para definir<br/>-Identificación de los atributos que se van a usar<br/>-Definir segmentos en términos de filtros de Directiva        |
@@ -67,12 +67,12 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 
 - Búsqueda de directorio con ámbito: antes de definir la Directiva de barrera de información de la primera información de su organización, debe [Habilitar la búsqueda de directorios de ámbito en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios de ámbito antes de configurar o definir directivas de barrera de información.
 
-- Registro de auditoría: para buscar el estado de una aplicación de Directiva, el registro de auditoría debe estar activado. Le recomendamos hacer esto antes de empezar a definir segmentos o directivas. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
+- Registro de auditoría: para buscar el estado de una aplicación de Directiva, el registro de auditoría debe estar activado. Le recomendamos hacer esto antes de empezar a definir segmentos o directivas. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 - Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios ***que no estén incluidos*** en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
 - Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo AzureRM.
-    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Instalar el módulo de Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consentimiento del administrador para barreras de la información en Microsoft Teams: cuando se implementan las directivas, las barreras de la información pueden quitar a las personas de las sesiones de chat en las que no se supone que están. Esto ayuda a garantizar que su organización siga cumpliendo con las directivas y las regulaciones. Use el siguiente procedimiento para habilitar las directivas de barrera de información para que funcionen según lo previsto en Microsoft Teams. 
@@ -243,7 +243,7 @@ Las directivas de barrera de información no surten efecto hasta que las estable
 
     Repita este paso según corresponda para cada Directiva.
 
-3. Cuando haya terminado de configurar las directivas de barrera de información para el estado activo, use el cmdlet **Start-InformationBarrierPoliciesApplication** en el centro de seguridad & cumplimiento de Office 365.
+3. Cuando termine de configurar las directivas de barrera de información para el estado activo, use el cmdlet **Start-InformationBarrierPoliciesApplication** en el centro de seguridad & cumplimiento.
 
     Consta`Start-InformationBarrierPoliciesApplication`
 

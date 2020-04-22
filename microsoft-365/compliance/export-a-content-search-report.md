@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
-ms.openlocfilehash: 6730a1c406e02de26cbef964e445cfad31c948ec
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074397"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615934"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -50,13 +50,13 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
 
   - Microsoft Edge <sup>2</sup>
 
-    O BIEN
+    O
 
   - Microsoft Internet Explorer 10 y versiones posteriores
 
   > [!NOTE]
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda con un explorador no compatible con extensiones de terceros o complementos.<br/>
-  > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use The Office 365 EDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> como resultado de los últimos cambios realizados en Microsoft Edge, la compatibilidad con ClickOnce ya no está habilitada de forma predeterminada. Para obtener instrucciones sobre cómo habilitar la compatibilidad con ClickOnce en Edge, consulte [use la herramienta de exportación de exhibición de documentos electrónicos en Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Si el tamaño total estimado de los resultados devueltos por una búsqueda de contenido supera los 2 TB, se producirá un error al exportar el informe. Para exportar correctamente el informe, intente restringir el ámbito y vuelva a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a 2 TB.
 
@@ -72,7 +72,7 @@ El primer paso consiste en preparar el informe para descargarlo en la exportaci�
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de **contenido**de **búsqueda** \> .
     
@@ -127,7 +127,7 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
   
 3. Haga clic en **Descargar Informe**.
     
-4. Si se le pide que instale la **herramienta de exportación MicrosoftOffice 365 eDiscovery**, haga clic en **instalar**.
+4. Si se le pide que instale la **herramienta de exportación de exhibición**de documentos electrónicos, haga clic en **instalar**.
     
 5. En la **Herramienta de exportación de exhibición de documentos electrónicos**, pegue la clave de exportación que ha copiado en el paso 2 en el cuadro correspondiente.
     
@@ -144,10 +144,10 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
 
 Cuando se genera y se exporta un informe sobre los resultados de una búsqueda de contenido, se descargan los siguientes documentos:
   
-- **Resumen de exportación:** Un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportarán. 
+- **Resumen de exportación:** Un documento de Excel que contiene un resumen de la exportación. Esto incluye información como el número de orígenes de contenido que se han buscado, el número de resultados de búsqueda de cada ubicación de contenido, el número estimado de elementos, el número real de elementos que se exportarían y el tamaño estimado y real de los elementos que se exportaría. 
     
     > [!NOTE]
-    > Si incluye elementos sin indexar al exportar el informe, el número de elementos sin indexar se incluye en el número total de resultados de búsqueda estimados y en el número total de resultados de la búsqueda descargados (si se exportaron los resultados de la búsqueda) que aparecen en la lista Informe de Resumen de exportación. Es decir, el número total de elementos que se descargarán es igual al número total de resultados estimados y el número total de elementos sin indexar. 
+    > Si incluye elementos sin indexar al exportar el informe, el número de elementos sin indexar se incluye en el número total de resultados de búsqueda estimados y en el número total de resultados de la búsqueda descargados (si se exportaron los resultados de la búsqueda) que aparecen en el informe de Resumen de exportación. Es decir, el número total de elementos que se descargarán es igual al número total de resultados estimados y el número total de elementos sin indexar. 
   
 - **Manifiesto:** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
     

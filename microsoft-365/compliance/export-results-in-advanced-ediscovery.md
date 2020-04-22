@@ -1,5 +1,5 @@
 ---
-title: Exportar resultados en Office 365 Advanced eDiscovery
+title: Exportar resultados en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado, incluido el procedimiento para especificar parámetros para un lote de exportación. '
+ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616004"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Exportar resultados en eDiscovery avanzado (clásico)
 
@@ -68,7 +68,7 @@ La herramienta de exportación de exhibición de documentos electrónicos se usa
     
     - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-    - Para exportar a un nuevo lote, haga **** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+    - Para exportar a un nuevo lote, haga **Add** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
     - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
     
@@ -194,11 +194,11 @@ En la siguiente tabla se enumeran los archivos de salida que se generan al ejecu
    
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Ver el historial del lote y exportar los resultados anteriores](view-batch-history-and-export-past-results.md)
   
-[Configuración rápida de eDiscovery avanzado de Office 365](quick-setup-for-advanced-ediscovery.md)
+[Configuración rápida de eDiscovery avanzado](quick-setup-for-advanced-ediscovery.md)
 
 [Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
   
