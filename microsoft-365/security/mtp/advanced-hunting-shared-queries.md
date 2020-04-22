@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 38eb3c39c5473d0a729b12771b61e965dbc81931
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929485"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781522"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -60,7 +60,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
 2. Seleccione **Eliminar** y confirme su eliminación. O seleccione **Cambiar el nombre** y proporcione un nombre nuevo para la consulta.
 
 ## <a name="access-queries-in-the-github-repository"></a>Acceder a las consultas en el repositorio de GitHub  
-Los investigadores de la seguridad de Microsoft comparten regularmente las consultas de búsquedas avanzadas en un [repositorio público designado en GitHub](https://github.com/microsoft/MTP-AHQ). Este repositorio está abierto a contribuciones. Para contribuir, [únete a GitHub gratis](https://github.com/).
+Los investigadores de la seguridad de Microsoft comparten regularmente las consultas de búsquedas avanzadas en un [repositorio público designado en GitHub](https://aka.ms/hunting-queries). Este repositorio está abierto a contribuciones. Para contribuir, [únete a GitHub gratis](https://github.com/).
 
 >[!tip]
 >Los investigadores de la seguridad de Microsoft también proporcionan búsquedas avanzadas que puede ser utilizadas para buscar actividades e indicadores asociados a las amenazas emergentes. Estas consultas son proporcionadas en los informes del [análisis de amenazas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) del Centro de seguridad de Microsoft Defender.

@@ -1,28 +1,28 @@
 ### YamlMime:Hub
-title: Recursos de Microsoft 365 Empresa
-summary: Microsoft 365 Empresa es un servicio de suscripción que incluye herramientas de productividad de Office 365 además de funciones avanzadas para ayudar a proteger su negocio contra amenazas cibernéticas, proteger sus datos y administrar los dispositivos.
+title: Recursos de Microsoft 365 Business Premium
+summary: Microsoft 365 empresa Premium (anteriormente Microsoft 365 Business) es un servicio de suscripción completo para empresas con menos de 300 empleados. Integra sus aplicaciones y servicios de productividad de oficina favoritos y herramientas de colaboración como Microsoft Teams con funciones avanzadas de seguridad y administración de dispositivos.
 brand: m365
 metadata:
-  title: Recursos de Microsoft 365 Empresa
-  description: descripción
+  title: Recursos de Microsoft 365 Business Premium
+  description: description
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: bf50c985029587ec063e2933d137d6a9b115fa6c
-  ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+  ms.openlocfilehash: 4dff1d10b8a4574ea8350aa194d7f6a2c8eb2605
+  ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/15/2020
-  ms.locfileid: "43516846"
+  ms.lasthandoff: 04/22/2020
+  ms.locfileid: "43781481"
 productDirectory:
-  title: Trabajar de forma remota con Microsoft 365 Empresa
+  title: Trabajo remoto seguro con Microsoft 365 Business Premium
   items:
   - title: Novedades
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 está disponible para Microsoft 365 Empresa.
+    summary: Azure AD Premium P1 llega a Microsoft 365 empresa Premium.
     url: https://aka.ms/aadp1smbblog
   - title: Vea el seminario Web para asociados
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -30,18 +30,18 @@ productDirectory:
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Leer
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Las mejores formas de habilitar el trabajo remoto seguro con Microsoft 365 Empresa.
+    summary: Las mejores formas de habilitar el trabajo remoto seguro con Microsoft 365 empresa Premium.
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
-  - title: ¿Qué es Microsoft 365 Empresa?
+  - title: ¿Qué es Microsoft 365 Business Premium?
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
       text: Información general
     - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Aprendizaje de Microsoft 365 Empresa
+      text: Aprendizaje de Microsoft 365 Business Premium
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
       text: Comparar planes
@@ -51,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: Preguntas más frecuentes
-  - title: Configurar Microsoft 365 Empresa
+  - title: Configuración de Microsoft 365 empresa Premium
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -97,7 +97,7 @@ conceptualContent:
     links:
     - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
       itemType: overview
-      text: Protección contra amenazas avanzada de Office 365
+      text: Protección contra amenazas avanzada
     - url: set-up-mfa.md
       itemType: how-to-guide
       text: Configurar MFA
@@ -185,10 +185,10 @@ conceptualContent:
     links:
     - url: sign-up.md
       itemType: get-started
-      text: Suscribirse a Microsoft 365 Empresa
+      text: Inscríbase para Microsoft 365 empresa Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: Migrar desde Office 365 Empresa Premium
+      text: Migrar de Microsoft 365 Business Standard
     - url: migrate-from-e3.md
       itemType: how-to-guide
       text: Migrar desde Office 365 E3

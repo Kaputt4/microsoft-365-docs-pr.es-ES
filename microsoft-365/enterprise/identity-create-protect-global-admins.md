@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Las cuentas de administrador global necesitan un tratamiento especial para proteger la integridad de sus credenciales.
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633578"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621311"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Paso 1: crea y proteja sus cuentas de administrador global
 
@@ -41,7 +41,7 @@ Para las cuentas de administrador global dedicadas, también necesita:
 1. Probar la configuración de Azure Multi-Factor Authentication (MFA) por cuenta de usuario o basado en el acceso condicional en una cuenta de usuario de prueba para garantizar que MFA funciona correctamente y de forma predecible. La MFA obliga al uso de una forma de autenticación secundaria, como un código de comprobación enviado a un smartphone.
 2. Cree y habilite directivas de acceso condicional para las cuentas de administrador global y use la forma más segura de autenticación secundaria disponible en la organización. Consulte [Azure Multi-Factor Authentication](identity-access-prerequisites.md#protecting-administrator-accounts) para obtener más información.
 
-Para obtener protección adicional, consulte [Proteger las cuentas de administrador global de Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
+Para obtener protección adicional, vea [Proteger las cuentas de administrador global](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Las cuentas de emergencia para casos urgentes, como un ciberataque, deben basarse exclusivamente en la nube. Sí es posible tener cuentas de administrador global (aptas o permanentes) que no sean solo de la nube. Para más información, consulte [Administración de cuentas administrativas de acceso de emergencia en Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
@@ -84,11 +84,11 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 
 <a name="identity-pam"></a>
-## <a name="privileged-access-management"></a>Privileged Access Management
+## <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
-La administración del acceso con privilegios se habilita configurando directivas que especifiquen el acceso puntual para actividades basadas en tareas en el inquilino de Office 365. Permite proteger la organización ante infracciones que puedan usar las cuentas existentes de administrador con privilegios y acceso permanente para acceder a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración del acceso con privilegios que requiera una autorización explícita para acceder a la configuración del buzón de correo del inquilino de Office 365 y modificar la misma.
+La administración de acceso con privilegios se habilita configurando las directivas que especifiquen el acceso puntual para las actividades basadas en tareas en el espacio empresarial. Puede ayudar a proteger la organización contra infracciones que puedan usar las cuentas existentes de administrador con privilegios con acceso permanente a datos confidenciales o acceder a opciones de configuración críticas. Por ejemplo, puede configurar una directiva de administración de acceso con privilegios que requiera una autorización explícita para acceder y modificar la configuración del buzón de correo del espacio empresarial.
 
-En este paso, habilitará la administración del acceso con privilegios en el inquilino de Office 365 y configurará directivas de acceso con privilegios que proporcionen seguridad adicional para el acceso basado en tareas a los datos y las opciones de configuración de Office 365 de la organización. Para empezar con el acceso con privilegios en la organización de Office 365, debe seguir estos tres pasos básicos:
+En este paso, habilitará la administración de acceso con privilegios en el espacio empresarial y configurará las directivas de acceso con privilegios que proporcionen seguridad adicional para el acceso basado en tareas a los datos y las opciones de configuración de la organización. Para empezar con el acceso con privilegios en la organización, debe seguir estos tres pasos básicos:
 
 - Crear un grupo de aprobadores
 - Habilitar el acceso con privilegios
@@ -96,14 +96,14 @@ En este paso, habilitará la administración del acceso con privilegios en el in
 
 Una vez configurada, la administración del acceso con privilegios permitirá a la organización trabajar sin privilegios permanentes y proporcionará un nivel de defensa contra las vulnerabilidades derivadas de dicho acceso administrativo. El acceso con privilegios requiere aprobaciones para ejecutar cualquier tarea a la que se haya asociado una directiva definida de aprobación. Los usuarios que necesiten ejecutar tareas incluidas en la directiva de aprobación deberán solicitar y obtener la aprobación de acceso para tener los permisos necesarios para ejecutar las tareas definidas en la directiva.
 
-Para habilitar la administración del acceso con privilegios de Office 365, vea el tema [Configurar la administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Para habilitar la administración de acceso con privilegios, vea el tema [Configurar la administración de acceso con privilegios](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-Para obtener más información, vea el tema [Administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Para obtener más información, vea el tema [Administración de acceso con privilegios](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 
 |||
 |:-------|:-----|
-|![Guías del entorno de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Para poner en práctica esta configuración en un entorno de prueba, consulte [Guía de gestión de acceso privilegiado en un entorno de pruebas](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Como punto de control provisional, vea los [criterios de salida](identity-exit-criteria.md#crit-identity-pam) correspondientes a este paso.

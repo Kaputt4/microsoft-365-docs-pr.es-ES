@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628908"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
 > [!NOTE]
 > Si su organización usa un entorno híbrido de Exchange, debe usar el Centro de administración de Exchange (EAC) local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> Si no está seguro de si debería crear un buzón compartido o un grupo de Office 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para guiarse. Tenga en cuenta que, actualmente, no es posible migrar un buzón compartido a un grupo de Office 365. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
+> Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Es fácil crear buzones compartidos de Office 365 para que un grupo de personas pueda supervisar y enviar correos electrónicos desde una dirección de correo electrónico común, como, por ejemplo, info@contoso.com. Cuando un miembro del grupo responde a un mensaje enviado al buzón compartido, parece que el correo electrónico procede del buzón compartido y no de un usuario individual.
 
@@ -42,7 +42,7 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Crear un buzón compartido y agregar miembros
   
-1. Inicie sesión con una cuenta de administrador global de Office 365 o una cuenta de administrador de Exchange. Si recibe el mensaje "**No tiene permiso para acceder a esta página o realizar esta acción**" quiere decir que no es administrador. 
+1. Inicie sesión con una cuenta de administrador global o una cuenta de administrador de Exchange. Si recibe el mensaje "**No tiene permiso para acceder a esta página o realizar esta acción**" quiere decir que no es administrador. 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Puede obtener acceso a un buzón compartido en un dispositivo móvil de dos mane
     
     Para obtener instrucciones, vea <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Agregar un buzón compartido en Outlook para dispositivos móviles</a>.
 
-- Abra su navegador, inicie sesión en Office 365 y vaya a Outlook en la Web. Desde Outlook en la Web, podrá acceder al buzón compartido.
+- Abra su navegador, inicie sesión y vaya a Outlook en la Web. Desde Outlook en la Web, podrá acceder al buzón compartido.
 
     Para obtener instrucciones, vea <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Agregar un buzón compartido en Outlook en la Web</a>.
 
