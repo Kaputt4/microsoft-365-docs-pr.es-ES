@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Para cambiar las suscripciones manualmente, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636588"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707636"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -43,7 +43,7 @@ La mejor forma de cambiar todos los usuarios de un plan a otro es [usar la pesta
 Para continuar con un cambio manual, lea el [paso 2: comprar una nueva suscripción](#step-2-buy-a-new-subscription) en este tema.
 
 > [!IMPORTANT]
-> Si va a cambiar a un plan con menos servicios relacionados con datos que su plan actual (degradar), debe realizar manualmente una copia de seguridad de los datos que desee conservar. Para obtener más información, vea [copia de seguridad de datos antes de cambiar O365 para planes de empresa](back-up-data-before-switching-plans.md).
+> Si va a cambiar a un plan con menos servicios relacionados con datos que su plan actual (degradar), debe realizar manualmente una copia de seguridad de los datos que desee conservar. Para obtener más información, vea [copia de seguridad de datos antes de cambiar de plan](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Paso 2: comprar una nueva suscripción
 
@@ -62,7 +62,7 @@ Incluya una licencia para cada usuario que quiera mover.
 
 2. **Comprobar que ambas suscripciones se muestran y están activas** La suscripción desde la que va a mover a los usuarios y la suscripción a la que está moviendo los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando compruebe por primera vez, inténtelo de nuevo más tarde. Compruebe que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Comprobar que tiene licencias suficientes para cada usuario** Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Office 365 Enterprise E5, tendrá que asegurarse de que dispone de diez licencias.
+3. **Comprobar que tiene licencias suficientes para cada usuario** Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Microsoft 365 empresa Premium, deberá asegurarse de que dispone de diez licencias.
 
 4. **¿Necesita más licencias para la nueva suscripción?**
    Vaya a la página **productos & Services** y [compre más licencias](../licenses/buy-licenses.md).

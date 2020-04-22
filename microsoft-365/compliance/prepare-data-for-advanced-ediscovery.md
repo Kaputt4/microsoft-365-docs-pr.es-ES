@@ -1,5 +1,5 @@
 ---
-title: Preparar datos para Office 365 Advanced eDiscovery
+title: Preparar los datos para eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,29 +15,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Microsoft 365 para preparar datos de Office 365 para el análisis con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 44ccb6250e28e0fa75f6d1a037236a100fca102c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para preparar datos para el análisis con eDiscovery avanzado. '
+ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557870"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626664"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparar datos para la exhibición avanzada de documentos electrónicos (Classic)
 
 En este tema se describe cómo cargar los resultados de una búsqueda de contenido en un caso en la exhibición avanzada de documentos electrónicos (Classic). 
   
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery, conocido también como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos la jubilación de la exhibición avanzada de documentos electrónicos, también conocida como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Paso 1: preparar los datos de Office 365 para la exhibición avanzada de documentos electrónicos
+## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>Paso 1: preparar datos para la exhibición avanzada de documentos electrónicos
 
 Para analizar datos con la exhibición avanzada de documentos electrónicos, puede usar los resultados de una búsqueda de contenido que se ejecuta en &amp; el centro de seguridad y cumplimiento de Microsoft 365 (que aparece en la &amp; página búsqueda de **contenido** en el centro de seguridad y cumplimiento de Microsoft 365) o en una búsqueda asociada &amp; a un caso de exhibición de documentos electrónicos (en la página **eDiscovery** del centro de seguridad y cumplimiento). 
   
-Para obtener los pasos detallados sobre cómo preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos, vea [preparar los resultados de la búsqueda para Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
+Para obtener los pasos detallados sobre cómo preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, consulte [preparar los resultados de la búsqueda para la exhibición avanzada](prepare-search-results-for-advanced-ediscovery.md)de documentos electrónicos.
   
 > [!NOTE]
-> Si tiene datos fuera de Office 365 y desea importarlos a Office 365 para poder prepararlos y analizarlos en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) y el [archivado de datos de terceros en Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Si tiene datos fuera de Microsoft 365 y desea importarlos a Microsoft 365 para poder prepararlo y analizarlo en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) y el [archivado de datos de terceros](https://go.microsoft.com/fwlink/p/?linkid=716918). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Paso 2: cargar datos de resultados de búsqueda en un caso en eDiscovery avanzado
 
@@ -45,7 +45,7 @@ Después de preparar los resultados de la búsqueda en &amp; el centro de seguri
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
@@ -67,7 +67,7 @@ Una vez que se agregan los &amp; resultados de la búsqueda del centro de seguri
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Configurar usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md)
   

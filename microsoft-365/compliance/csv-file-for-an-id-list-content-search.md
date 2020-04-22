@@ -1,5 +1,5 @@
 ---
-title: Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
+title: Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use el archivo Results. csv o unindexed items. csv de una búsqueda de contenido existente para crear una búsqueda de lista de IDENTIFICADOres que devuelva un mensaje de correo electrónico específico. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para devolver elementos de buzón parcialmente indizados.
-ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077037"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630707"
 ---
-# <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
+# <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores
 
 Puede buscar mensajes de correo electrónico específicos de buzones de correo y otros elementos de buzón mediante una lista de identificadores de Exchange. Para crear una búsqueda de lista de IDENTIFICADOres (anteriormente denominada búsqueda dirigida), envíe un archivo de valores separados por comas (CSV) que identifique los elementos de buzón específicos que se van a buscar. Para este archivo CSV, use el archivo **Results. csv** o el archivo **Items. csv sin indexar** que se incluyen al exportar los resultados de la búsqueda de contenido o a exportar un informe de búsqueda de contenido desde y búsqueda de contenido existente. A continuación, edite uno de estos archivos para indicar los elementos específicos que se deben buscar y, a continuación, cree una nueva búsqueda de la lista de IDENTIFICADOres y envíe el archivo CSV.
 
@@ -84,7 +84,7 @@ El siguiente paso es crear una nueva búsqueda de contenido de la lista de IDENT
 
 3. En el control flotante de la **lista Buscar por identificador** , asigne un nombre a la búsqueda (y, opcionalmente, describa) y, a continuación, haga clic en **examinar** y seleccione el archivo CSV que preparó en el paso anterior.
 
-    Office 365 intenta validar el archivo CSV. Si la validación no se realiza correctamente, se muestra un mensaje de error que puede ayudarle a solucionar los errores de validación. El archivo CSV tiene que validarse correctamente para crear una búsqueda de lista de ID.
+    Microsoft 365 intenta validar el archivo CSV. Si la validación no se realiza correctamente, se muestra un mensaje de error que puede ayudarle a solucionar los errores de validación. El archivo CSV tiene que validarse correctamente para crear una búsqueda de lista de ID.
 
 4. Una vez validado correctamente el archivo CSV, haga clic en **Buscar** para crear la búsqueda de la lista de identificadores.
 
@@ -97,4 +97,4 @@ El siguiente paso es crear una nueva búsqueda de contenido de la lista de IDENT
 5. Obtenga una vista previa o exporte los elementos devueltos por la búsqueda de lista de ID.
 
 > [!NOTE]
-> Si mueve un buzón después de crear una búsqueda de lista de IDENTIFICADOres, la consulta de la búsqueda no devolverá los elementos especificados. Esto se debe a que la propiedad **DocumentId** para los elementos del buzón de correo se cambia cuando se mueve un buzón. En la instancia poco frecuente, cuando se mueve un buzón después de crear una búsqueda de lista de IDENTIFICADOres, debe crear una nueva búsqueda de contenido (o actualizar los resultados de búsqueda para la búsqueda de contenido existente) y, a continuación, exportar los resultados de la búsqueda o el informe para generar archivos. CSV actualizados que se puedan usar  para crear una nueva búsqueda de la lista de IDENTIFICADOres.
+> Si mueve un buzón después de crear una búsqueda de lista de IDENTIFICADOres, la consulta de la búsqueda no devolverá los elementos especificados. Esto se debe a que la propiedad **DocumentId** para los elementos del buzón de correo se cambia cuando se mueve un buzón. En la instancia poco común, cuando un buzón se mueve después de crear una búsqueda de lista de IDENTIFICADOres, debe crear una nueva búsqueda de contenido (o actualizar los resultados de búsqueda para la búsqueda de contenido existente) y, a continuación, exportar los resultados de la búsqueda o el informe para generar archivos. CSV actualizados que se puedan usar para crear una nueva búsqueda de la lista de IDENTIFICADOres.

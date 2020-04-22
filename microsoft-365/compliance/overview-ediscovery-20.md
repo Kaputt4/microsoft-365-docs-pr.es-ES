@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3296fbbd04f2baa635fdf0330fc65b927a21448a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634288"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626766"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -44,7 +44,7 @@ En un nivel alto, a continuación se muestra cómo la exhibición avanzada de do
 
 - **Buena.** Para preservar y proteger los datos relevantes para una investigación, eDiscovery avanzado le permite realizar una retención legal en los orígenes de datos asociados con los custodios en un caso. También puede poner los datos que no son de Private en espera. EDiscovery avanzado también tiene un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus confirmaciones.
 
-- **Colección.** Después de identificar (y conservar) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en la búsqueda avanzada de exhibición de documentos electrónicos y recopilar datos activos de los orígenes de datos de Private (y de los orígenes de datos que no sean de privación, si procede) que puede ser relevante para el caso.
+- **Colección.** Después de identificar (y conservar) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en la búsqueda avanzada de exhibición de documentos electrónicos y recopilar datos activos de los orígenes de datos de Private (y de los orígenes de datos que no sean de privación, si procede) que puedan ser relevantes para el caso.
 
 - **Procesar.** Una vez que haya recopilado todos los datos relevantes para el caso, el paso siguiente es procesarlo para su posterior revisión y análisis. En la exhibición avanzada de documentos electrónicos, los datos locales que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada un *conjunto de revisión*), que proporciona una vista estática de los datos de caso. 
  
@@ -80,11 +80,11 @@ Cuando se agrega un custodio y los orígenes de datos Private correspondientes a
 
 ## <a name="collecting-case-data"></a>Recopilar datos de casos
 
-Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes de datos de la custodia y no Private en Office 365 el contenido relevante para el caso. Puede crear y ejecutar búsquedas basadas en consultas (usando palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos que sean relevantes para el caso y que desee revisar y analizar en los siguientes pasos del flujo de trabajo de eDiscovery. Puede crear una o más búsquedas asociadas con el caso. También puede usar la herramienta de búsqueda para obtener una vista previa de los documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que haya comprobado que los resultados de la búsqueda contienen todos los datos relevantes para el caso, agregue los resultados de la búsqueda a un conjunto de revisión para la revisión, el análisis y la selección adicionales. Para obtener más información, vea [recopilar datos para un caso en EDiscovery avanzado](collecting-data-for-ediscovery.md).
+Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes de datos de la custodia y no Private de los contenidos relevantes para el caso. Puede crear y ejecutar búsquedas basadas en consultas (usando palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos que sean relevantes para el caso y que desee revisar y analizar en los siguientes pasos del flujo de trabajo de eDiscovery. Puede crear una o más búsquedas asociadas con el caso. También puede usar la herramienta de búsqueda para obtener una vista previa de los documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que haya comprobado que los resultados de la búsqueda contienen todos los datos relevantes para el caso, agregue los resultados de la búsqueda a un conjunto de revisión para la revisión, el análisis y la selección adicionales. Para obtener más información, vea [recopilar datos para un caso en EDiscovery avanzado](collecting-data-for-ediscovery.md).
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
 
-Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para más información, consulte lo siguiente:
+Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
 
 - [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
 

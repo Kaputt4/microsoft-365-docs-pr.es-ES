@@ -1,5 +1,5 @@
 ---
-title: Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365
+title: Revocar correo electrónico cifrado por el cifrado de mensajes avanzado
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,21 +15,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado avanzado de mensajes de Office 365.
-ms.openlocfilehash: 0e3ef031e61ed8bc7dd450e7ef61b6b7f41152c6
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+description: Como administrador, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado de mensajes avanzado de Office 365.
+ms.openlocfilehash: 271aa1b3644983907c341cf7f9ad6d526597ad59
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626496"
 ---
-# <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365
+# <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocar correo electrónico cifrado por el cifrado de mensajes avanzado
 
-La revocación de correo electrónico se ofrece como parte de un cifrado de mensajes avanzado de Office 365. Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precio de personal sin ánimo de lucro), Office 365 Enterprise E5 (precio de personal sin ánimo de lucro) y Office 365 Education A5. Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Office 365, puede adquirirlo con el complemento de SKU de cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o el Office 365 Advanced Complemento de SKU de cumplimiento para Microsoft 365 E3, Microsoft 365 E3 (precio del personal sin ánimo de lucro) o SKU de Office 365.
+La revocación de correo electrónico se ofrece como parte de un cifrado de mensajes avanzado de Office 365. Office 365 Advanced Message Encryption se incluye en [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precio de personal sin ánimo de lucro), Office 365 Enterprise E5 (precio de personal sin ánimo de lucro) y Office 365 Education A5. Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Office 365, puede adquirirlo con el complemento de SKU de cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios para trabajadores sin ánimo de lucro), o el complemento de SKU de Office 365 Advanced Compliance para Microsoft 365 E3, Microsoft 365 E3 (no lucrativa personal) u Office 365 SKU.
 
 Este artículo forma parte de una amplia serie de artículos sobre el [cifrado de mensajes de Office 365](ome.md).
 
-Si un mensaje se cifró mediante el cifrado de mensajes avanzado de Office 365 y es administrador de Office 365, puede revocar el mensaje en determinadas condiciones. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
+Si un mensaje se cifró mediante el cifrado de mensajes avanzado de Office 365 y es administrador de Microsoft 365, puede revocar el mensaje en determinadas condiciones. En este artículo se describen las circunstancias en las que es posible la revocación y cómo hacerlo.
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Mensajes de correo electrónico cifrados que puede revocar
 
@@ -45,7 +45,7 @@ Una vez que se ha revocado un correo electrónico, el destinatario recibe un err
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Cómo revocar un correo electrónico cifrado
 
-Los administradores de Office 365 siguen estos pasos generales para revocar un correo electrónico cifrado apto:
+Los administradores de Microsoft 365 siguen estos pasos generales para revocar un correo electrónico cifrado apto:
 
 - Obtenga el identificador de mensaje del correo electrónico.
 - Compruebe que puede revocar el mensaje.
@@ -63,7 +63,7 @@ Hay varias formas de buscar el identificador de mensaje del correo electrónico 
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante el seguimiento de mensajes en &amp; el centro de seguridad y cumplimiento
 
-1. Busque el correo electrónico por remitente o destinatario mediante el [seguimiento de mensajes nuevo en el centro de seguridad & cumplimiento de Office 365](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Busque el correo electrónico por remitente o destinatario mediante el [seguimiento de mensajes nuevos en el centro de seguridad & cumplimiento](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
 
 2. Una vez que haya encontrado el correo electrónico, selecciónelo para que aparezca el panel de **detalles de seguimiento de mensajes** . Expanda **más información** para buscar el identificador de mensaje.
 
@@ -77,11 +77,11 @@ Hay varias formas de buscar el identificador de mensaje del correo electrónico 
 
 ### <a name="step-2-verify-that-the-mail-is-revocable"></a>Paso 2. Comprobar que el correo es revocable
 
-Para comprobar si puede revocar un mensaje, compruebe si el campo Estado de revocación está visible en el informe de cifrado **** , en la tabla de &amp; detalles del centro de seguridad y cumplimiento.
+Para comprobar si puede revocar un mensaje, compruebe si el campo Estado de revocación está visible en el informe de cifrado **Details** , en la tabla de &amp; detalles del centro de seguridad y cumplimiento.
 
 Para comprobar si puede revocar un mensaje de correo electrónico determinado mediante Windows PowerShell, siga estos pasos.
 
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Get-OMEMessageStatus de la siguiente manera:
 
@@ -94,7 +94,7 @@ Para comprobar si puede revocar un mensaje de correo electrónico determinado me
      ```text
      Subject        IsRevocable
      -------        -----------
-     “Test message” True
+     "Test message" True
      ```
 
 ### <a name="step-3-revoke-the-mail"></a>Paso 3. Revocar el correo
@@ -103,13 +103,13 @@ Una vez que conozca el identificador de mensaje del correo electrónico que dese
 
 Para revocar el mensaje mediante el &amp; centro de seguridad y cumplimiento
 
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, conéctese al centro de seguridad & cumplimiento.
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, conéctese al centro de seguridad & cumplimiento.
 
 2. En el **Informe de cifrado**, en la tabla de **detalles** del mensaje, elija **revocar mensaje**.
 
 Para revocar un correo electrónico mediante Windows PowerShell, use el cmdlet Set-OMEMessageRevocation.
 
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, [Conéctese a PowerShell de Exchange Online](https://aka.ms/exopowershell).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation de la siguiente manera:
 

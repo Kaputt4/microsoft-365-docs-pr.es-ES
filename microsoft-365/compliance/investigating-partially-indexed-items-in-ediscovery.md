@@ -1,5 +1,5 @@
 ---
-title: Investigar elementos indizados parcialmente en eDiscovery de Office 365
+title: Investigación de elementos parcialmente indizados en eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: Los elementos parcialmente indizados (también llamado elementos sin indexar) son elementos de buzón de Exchange y documentos en sitios de SharePoint y OneDrive que, por algún motivo, no se han indizado completamente para la búsqueda de contenido. En este artículo, puede obtener información sobre por qué los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados, identificar errores de búsqueda de elementos parcialmente indizados y usar un script de PowerShell para determinar la exposición de su organización a un correo electrónico parcialmente indizado. elementos.
-ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Los elementos parcialmente indizados (también llamado elementos sin indexar) son elementos de buzón de Exchange y documentos en sitios de SharePoint y OneDrive que, por algún motivo, no se han indizado completamente para la búsqueda de contenido. En este artículo, puede obtener información sobre por qué los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados, identificar los errores de búsqueda de elementos parcialmente indizados y usar un script de PowerShell para determinar la exposición de la organización a los elementos de correo electrónico parcialmente indizados.
+ms.openlocfilehash: 64b052e5c04019d5937c3763094529ae5c4c9e42
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072367"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637468"
 ---
-# <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar elementos indizados parcialmente en eDiscovery de Office 365
+# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indizados en eDiscovery
 
 Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplimiento incluye automáticamente los elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indizan correctamente porque entran dentro de los [límites de indización de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indización y se indizarán parcialmente. A continuación se muestran otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda de contenido:
   
@@ -35,7 +35,7 @@ Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplim
     
 - Se admite el tipo de archivo para la indización, pero se produjo un error de indización en un archivo específico.
     
-Aunque varía, la mayoría de los clientes de la organización de Office 365 tienen menos del 1% de contenido en volumen y menos del 12% del contenido en el tamaño que se indexa parcialmente. El motivo de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una probabilidad mayor de contenido que no se puede indizar completamente.
+Aunque varía, la mayoría de los clientes de organizaciones tienen menos del 1% de contenido en volumen y menos del 12% de contenido en el tamaño que se indexa parcialmente. El motivo de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una probabilidad mayor de contenido que no se puede indizar completamente.
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>¿Por qué cambia el número de elementos parcialmente indizados para una búsqueda?
 
@@ -70,7 +70,7 @@ Mediante el uso de los resultados de la búsqueda del ejemplo anterior, el 84% d
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-Por lo tanto, en el ejemplo anterior, 6,54% del tamaño total de los elementos del buzón de correo son de elementos parcialmente indizados. Como se mencionó anteriormente, la mayoría de los clientes de la organización de Office 365 tienen menos del 1% de contenido en volumen y menos del 12% del contenido en el tamaño que se indexa parcialmente.
+Por lo tanto, en el ejemplo anterior, 6,54% del tamaño total de los elementos del buzón de correo son de elementos parcialmente indizados. Como se mencionó anteriormente, la mayoría de las organizaciones tienen menos del 1% de contenido en volumen y menos del 12% de contenido en el tamaño que se indexa parcialmente.
 
 ## <a name="working-with-partially-indexed-items"></a>Trabajar con elementos parcialmente indizados
 
@@ -103,12 +103,12 @@ A continuación se muestra una lista de errores de indización y una descripció
 | `attachmentsize` <br/> |Un archivo adjunto a un mensaje de correo electrónico era demasiado grande y no se pudo procesar.  <br/> |
 | `indexingtruncated` <br/> |Al escribir el mensaje de correo electrónico procesado en el índice, una de las propiedades indizables es demasiado grande y se ha truncado. Las propiedades truncadas se muestran en el campo propiedades de error.  <br/> |
 | `invalidunicode` <br/> |Un mensaje de correo electrónico contenía texto que no se pudo procesar como Unicode válido. La indización para este elemento puede estar incompleta.  <br/> |
-| `parserencrypted` <br/> |El contenido de los datos adjuntos o del mensaje de correo electrónico se cifra y Office 365 no pudo descodificar el contenido.  <br/> |
+| `parserencrypted` <br/> |El contenido de los datos adjuntos o del mensaje de correo electrónico se cifra y Microsoft 365 no pudo descodificar el contenido.  <br/> |
 | `parsererror` <br/> |Se ha producido un error desconocido durante el análisis. Esto suele deberse a un error de software o a un bloqueo del servicio.  <br/> |
 | `parserinputsize` <br/> |Los datos adjuntos son demasiado grandes para que el analizador los controle y el análisis de los datos adjuntos no se ha realizado o no se ha completado.  <br/> |
 | `parsermalformed` <br/> |Un archivo adjunto tenía un formato incorrecto y el analizador no pudo administrarlo. Esto puede dar como resultado antiguos formatos de archivo, archivos creados por software incompatible o virus que pretenden ser algo distinto de lo que se ha solicitado.  <br/> |
 | `parseroutputsize` <br/> |El resultado del análisis de datos adjuntos era demasiado grande y tuvo que truncarse.  <br/> |
-| `parserunknowntype` <br/> |Los datos adjuntos tenían un tipo de archivo que Office 365 no pudo detectar.  <br/> |
+| `parserunknowntype` <br/> |Los datos adjuntos tenían un tipo de archivo que Microsoft 365 no pudo detectar.  <br/> |
 | `parserunsupportedtype` <br/> |Los datos adjuntos tenían un tipo de archivo que detectó Office 365could, pero no se admite el análisis de ese tipo de archivo.  <br/> |
 | `propertytoobig` <br/> |El valor de una propiedad de correo electrónico en el almacén de Exchange era demasiado grande para recuperarse y no se pudo procesar el mensaje. Normalmente, esto sólo ocurre con la propiedad Body de un mensaje de correo electrónico.  <br/> |
 | `retrieverrms` <br/> |El recuperador de contenido no pudo descodificar un mensaje protegido con RMS.  <br/> |
@@ -118,7 +118,7 @@ Los campos de error describen qué campos se ven afectados por el error de proce
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Uso de un script de PowerShell para determinar la exposición de la organización a elementos de correo electrónico parcialmente indizados
 
-Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca todos los elementos de todos los buzones de Exchange y, a continuación, genera un informe sobre la relación de la organización con los elementos de correo electrónico parcialmente indizados (por número y por tamaño) y muestra el número de elementos (y el tipo de archivo) para cada error de indización que se produce. Use las descripciones de las etiquetas de error de la sección anterior para identificar el error de indización.
+Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca todos los elementos de todos los buzones de Exchange y, a continuación, genera un informe sobre la relación de la organización con los elementos de correo electrónico parcialmente indizados (por número y por tamaño) y muestra el número de elementos (y su tipo de archivo) para cada error de indización que se produce. Use las descripciones de las etiquetas de error de la sección anterior para identificar el error de indización.
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `PartiallyIndexedItems.ps1`.
 

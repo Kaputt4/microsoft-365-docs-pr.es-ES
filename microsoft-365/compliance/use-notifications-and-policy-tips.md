@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284275"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626406"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -36,7 +36,7 @@ Una sugerencia de directiva es una notificación o advertencia que aparece cuand
   
 Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo.
   
-En el centro de seguridad &amp; y cumplimiento de Office 365, al crear una directiva DLP, puede configurar las notificaciones de usuario para:
+En el centro &amp; de seguridad y cumplimiento, al crear una directiva DLP, puede configurar las notificaciones de usuario para:
   
 - Envíe una notificación por correo electrónico a las personas que elija que describan el problema.
     
@@ -54,7 +54,7 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa. Ahora está en el centro de seguridad &amp; y cumplimiento de Office 365.
+2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el centro de &amp; seguridad y cumplimiento.
     
 3. En la directiva &amp; \> \> **Data loss prevention** \> **Policy** **+ Create a policy**de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad izquierdo + crear una directiva. \>
     
@@ -219,13 +219,13 @@ Actualmente, Outlook 2013 y versiones posteriores admiten la visualización de s
 
 Tenga en cuenta que todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero Mostrar sugerencias de directiva a los usuarios todavía no es compatible.
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Sugerencias de directiva en el centro de administración de Exchange frente al centro &amp; de seguridad y cumplimiento de Office 365
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directiva en el centro de administración de Exchange frente &amp; al centro de seguridad y cumplimiento
 
-Las sugerencias de Directiva pueden funcionar con las directivas de DLP y las reglas de flujo de correo creadas en el centro de administración de Exchange o con las &amp; directivas de DLP creadas en el centro de seguridad y cumplimiento de Office 365, pero no en ambos. Esto se debe a que estas directivas se almacenan en ubicaciones distintas, pero las sugerencias de directiva solo pueden dibujar desde una única ubicación.
+Las sugerencias de Directiva pueden funcionar con las directivas de DLP y las reglas de flujo de correo creadas en el centro de administración de Exchange, &amp; o con las directivas de DLP creadas en el centro de seguridad y cumplimiento, pero no ambas. Esto se debe a que estas directivas se almacenan en ubicaciones distintas, pero las sugerencias de directiva solo pueden dibujar desde una única ubicación.
   
-Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; centro de seguridad y cumplimiento de Office 365 no aparecerán a los usuarios en Outlook en la web ni en Outlook 2013 y versiones posteriores hasta que desactive las sugerencias en el centro de administración de Exchange. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al centro de seguridad &amp; y cumplimiento de Office 365.
+Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure &amp; en el centro de seguridad y cumplimiento no se mostrarán a los usuarios en Outlook en la web y Outlook 2013 y versiones posteriores hasta que desactive las sugerencias en el centro de administración de Exchange. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que decida cambiar al centro &amp; de seguridad y cumplimiento.
   
-Tenga en cuenta que, aunque las sugerencias de directiva solo pueden dibujar desde una única ubicación, siempre se envían notificaciones de correo electrónico, incluso si usa directivas de DLP &amp; tanto en el centro de administración de seguridad de Office 365 como en el centro de administración de Exchange.
+Tenga en cuenta que, aunque las sugerencias de directiva solo pueden dibujar desde una única ubicación, siempre se envían notificaciones de correo electrónico, incluso si está usando &amp; directivas de DLP tanto en el centro de administración de seguridad como en el centro de administración de Exchange.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Texto predeterminado para las sugerencias de directiva en el correo electrónico
 

@@ -1,5 +1,5 @@
 ---
-title: Ejecutar informes en Office 365 Advanced eDiscovery
+title: Ejecutar informes en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: 'Obtenga información sobre cómo ejecutar un informe y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos de Office 365.  '
-ms.openlocfilehash: 1ca01fc0ab77ec0a727029c3f8ef680a56f9c5c6
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo ejecutar un informe y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos.  '
+ms.openlocfilehash: 9da35e21de23e4773130f5aa87b16fe18d044140
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557840"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626486"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Ejecutar informes en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -44,4 +44,4 @@ Puede descargar un archivo. csv con un informe para el proceso seleccionado.
     
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)

@@ -1,5 +1,5 @@
 ---
-title: Solicitudes de caja de seguridad del cliente de Office 365
+title: Solicitudes de caja de caja del cliente
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637792"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
-En este artículo se proporcionan instrucciones de implementación y configuración para caja de caja de clientes. La caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la empresa. Para recomendar el soporte para otros servicios de Office 365, envíe una solicitud a [UserVoice de office 365](https://office365.uservoice.com/).
+En este artículo se proporcionan instrucciones de implementación y configuración para caja de caja de clientes. La caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la empresa. Para recomendar la compatibilidad con otros servicios, envíe una solicitud a [UserVoice de Office 365](https://office365.uservoice.com/).
 
 Para ver las opciones de licencia de sus usuarios para beneficiarse de las ofertas de cumplimiento de Microsoft 365, incluida esta, a partir del 1 de abril de 2020, consulte [microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/ComplianceSD).
 
@@ -42,7 +42,7 @@ Ocasionalmente, los ingenieros de Microsoft ayudan a solucionar problemas y solu
 
 Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero de Microsoft inicia una solicitud de caja de caja del cliente:
 
-1. Alguien de una organización experimenta un problema con su buzón de correo de Office 365.
+1. Alguien de una organización experimenta un problema con su buzón de correo de Microsoft 365.
 
 2. Una vez que el usuario solucione el problema, pero no puede corregirlo, abrirá una solicitud de soporte técnico con soporte técnico de Microsoft.
 
@@ -56,7 +56,7 @@ Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero d
 
    Cualquier usuario que tenga asignado el rol de administrador [aprobador de acceso de Lockbox de cliente](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) en el centro de administración de Microsoft 365 puede aprobar solicitudes de caja de caja de cliente.
 
-6. El aprobador inicia sesión en el centro de administración de 365 de Microsoft y aprueba la solicitud. Este paso desencadena la creación de un registro de auditoría disponible mediante la búsqueda en el registro de auditoría de Office 365. Para obtener más información, consulte [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
+6. El aprobador inicia sesión en el centro de administración de 365 de Microsoft y aprueba la solicitud. Este paso desencadena la creación de un registro de auditoría disponible mediante la búsqueda en el registro de auditoría. Para obtener más información, consulte [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
 
    Si el cliente rechaza la solicitud o no aprueba la solicitud en un plazo de 12 horas, la solicitud expira y no se concede acceso al ingeniero de Microsoft.
 
@@ -66,7 +66,7 @@ Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero d
 7. Una vez que el aprobador de la organización aprueba la solicitud, el ingeniero de Microsoft recibe el mensaje de aprobación, inicia sesión en el inquilino de Exchange Online y corrige el problema del cliente. Los ingenieros de Microsoft tienen la duración solicitada para solucionar el problema después de que el acceso se haya revocado automáticamente.
 
 > [!NOTE]
-> Todas las acciones realizadas por un ingeniero de Microsoft se registran en el registro de auditoría de Office 365. Puede buscar y revisar estos registros de auditoría.
+> Todas las acciones realizadas por un ingeniero de Microsoft se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Activar o desactivar las solicitudes de caja de caja de clientes
 
@@ -104,15 +104,15 @@ Puede activar los controles de caja de caja del cliente en el centro de administ
 
 ## <a name="auditing-customer-lockbox-requests"></a>Auditoría de solicitudes de caja de comprobación del cliente
 
-Los registros de auditoría que corresponden a las solicitudes de caja de control del cliente se registran en el registro de auditoría de Office 365. Puede tener acceso a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) del centro de seguridad & cumplimiento de Office 365. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría de Office 365. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría que corresponden a las solicitudes de caja de caja del cliente se registran en el registro de auditoría. Puede tener acceso a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) del centro de seguridad & cumplimiento. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Buscar en el registro de auditoría actividades relacionadas con solicitudes de caja de control del cliente
 
-Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría. Para obtener más información, vea [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Una vez que haya completado la configuración, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de comprobación del cliente:
+Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría. Para obtener más información, vea [Buscar en el registro de auditoría del centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Una vez que haya completado la configuración, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de comprobación del cliente:
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
   
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
 
 3. En el panel izquierdo del centro de seguridad & cumplimiento, seleccione **Buscar** > en el**registro de auditoría**de & de la investigación.
 
@@ -146,7 +146,7 @@ Antes de poder usar el registro de auditoría para realizar un seguimiento de la
 
 ### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Registro de auditoría para una solicitud de acceso de Lockbox de cliente
 
-Cuando una persona de su organización aprueba o deniega una solicitud de caja de control del cliente, se registra un registro de auditoría en el registro de auditoría de Office 365. Este registro contiene la siguiente información.
+Cuando una persona de su organización aprueba o deniega una solicitud de caja de control del cliente, se registra un registro de auditoría en el registro de auditoría. Este registro contiene la siguiente información.
 
 | Propiedad Audit record| Descripción|
 |:---------- |:----------|
@@ -177,17 +177,17 @@ Las acciones realizadas por un ingeniero de Microsoft después de que se aprueba
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-#### <a name="which-office-365-services-does-customer-lockbox-apply-to"></a>¿A qué servicios de Office 365 se aplica el Lockbox de clientes?
+#### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿A qué servicios de Microsoft 365 se aplican los Lockbox clientes?
 
 La caja de seguridad del cliente es compatible actualmente con Exchange Online, SharePoint Online y OneDrive para la empresa.
 
-#### <a name="is-customer-lockbox-available-to-all-office-365-customers"></a>¿La caja de bloqueo del cliente está disponible para todos los clientes de Office 365?
+#### <a name="is-customer-lockbox-available-to-all-customers"></a>¿La caja de bloqueo del cliente está disponible para todos los clientes?
 
 La caja de comprobación del cliente se incluye en las suscripciones de Microsoft 365 u Office 365 E5 y se puede Agregar a otros planes con una suscripción de protección y cumplimiento de la información o una suscripción complementaria de cumplimiento avanzado. Para obtener más información, consulte [planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) .
 
 #### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 
-El contenido del cliente es los datos creados por los usuarios de servicios y aplicaciones de Office 365. Algunos ejemplos de contenido de cliente son:
+El contenido del cliente es los datos creados por los usuarios de los servicios y aplicaciones de Microsoft 365. Algunos ejemplos de contenido de cliente son:
 
 - Cuerpo de correo electrónico o datos adjuntos de correo electrónico
 
@@ -221,7 +221,7 @@ Un administrador global puede habilitar y configurar las cajas de caja de client
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Si aprobar una solicitud de caja de caja de cliente, ¿qué puede hacer el ingeniero y cómo sé qué hizo el ingeniero de Microsoft?
 
-Después de aprobar la solicitud de caja de caja de un cliente, el ingeniero de Microsoft concedió estos privilegios necesarios para acceder al contenido del cliente mediante cmdlets aprobados previamente. Las acciones realizadas por los ingenieros de Microsoft en respuesta a las solicitudes de caja de seguridad del cliente se registran y se puede tener acceso a ellas en el registro de auditoría del centro de seguridad & cumplimiento de Office 365.
+Después de aprobar la solicitud de caja de caja de un cliente, el ingeniero de Microsoft concedió estos privilegios necesarios para acceder al contenido del cliente mediante cmdlets aprobados previamente. Las acciones realizadas por los ingenieros de Microsoft en respuesta a las solicitudes de caja de seguridad del cliente se registran y se puede tener acceso a ellas en el registro de auditoría del centro de seguridad & cumplimiento.
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>¿Cómo sé que Microsoft sigue el proceso de aprobación?
 
@@ -235,7 +235,7 @@ Solo un administrador global de su organización puede especificar quiénes pued
 
 #### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>¿Qué debo hacer si necesito más información sobre una solicitud de acceso a contenido para aprobarla?
 
-Cada solicitud de caja de caja de cliente contiene un número de solicitud de servicio de Office 365. Puede ponerse en contacto con el soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
+Cada solicitud de caja de caja del cliente contiene un número de solicitud de servicio de Microsoft 365. Puede ponerse en contacto con el soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Cuando se aprueba una solicitud de caja de caja de cliente, ¿cuánto tiempo tienen los permisos válidos?
 
@@ -265,15 +265,15 @@ Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/trustce
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>¿Cómo garantiza Microsoft que un miembro del personal no tiene acceso permanente al contenido del cliente en las aplicaciones de Office 365?
 
-Microsoft implementa medidas preventivas extensivas mediante sistemas de control de acceso y medidas de detectives para identificar y solucionar los intentos de burlar estos sistemas de control de acceso. Office 365 opera con los principios de privilegios mínimos y acceso Just-in-Time. Por lo tanto, ningún personal de Microsoft tiene permiso para acceder al contenido de los clientes de forma continua. Si se concede el permiso, es por una duración limitada. 
+Microsoft implementa medidas preventivas extensivas mediante sistemas de control de acceso y medidas de detectives para identificar y solucionar los intentos de burlar estos sistemas de control de acceso. Microsoft 365 opera con los principios de privilegios mínimos y acceso justo a tiempo. Por lo tanto, ningún personal de Microsoft tiene permiso para acceder al contenido de los clientes de forma continua. Si se concede el permiso, es por una duración limitada. 
 
-Office 365 usa un sistema de control de acceso denominado *Lockbox* para procesar solicitudes de permisos que permiten realizar funciones operativas y administrativas dentro del servicio. Un operador debe solicitar acceso al contenido del cliente mediante el uso de las cajas de caja, lo que, a su vez, requiere que una segunda persona realice una acción en la solicitud (por ejemplo, aprobarla) antes de conceder el acceso. Esa segunda persona no puede ser el solicitante y debe estar designada para aprobar el acceso al contenido del cliente. Solo si la solicitud se aprueba, el operador adquiere el acceso temporal al contenido del cliente. Una vez expirado el período de elevación, el Lockbox revoca el acceso.
+Microsoft 365 usa un sistema de control de acceso denominado *Lockbox* para procesar solicitudes de permisos que permiten realizar funciones operativas y administrativas dentro del servicio. Un operador debe solicitar acceso al contenido del cliente mediante el uso de las cajas de caja, lo que, a su vez, requiere que una segunda persona realice una acción en la solicitud (por ejemplo, aprobarla) antes de conceder el acceso. Esa segunda persona no puede ser el solicitante y debe estar designada para aprobar el acceso al contenido del cliente. Solo si la solicitud se aprueba, el operador adquiere el acceso temporal al contenido del cliente. Una vez expirado el período de elevación, el Lockbox revoca el acceso.
 
 Consulte los términos de [servicios en línea](https://www.microsoft.com/licensing/product-licensing/products) para obtener más información sobre los procedimientos de seguridad general de Microsoft.
 
 #### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>¿En qué circunstancias los ingenieros de Microsoft necesitan acceso a mi contenido?
 
-El escenario más común donde los ingenieros de Microsoft necesitan tener acceso al contenido de los clientes es cuando el cliente realiza una solicitud de soporte técnico que requiere acceso para la solución de problemas. Un principio básico de Office 365 es que el servicio funciona sin Microsoft Access para el contenido del cliente. Casi todas las operaciones de servicio realizadas por Microsoft son totalmente automatizadas y la implicación humana está muy controlada y se abstrae del contenido del cliente. El objetivo de Office 365 es el acceso al contenido del cliente para admitir el servicio no es necesario hasta que el cliente apruebe una solicitud específica para Microsoft Access.
+El escenario más común donde los ingenieros de Microsoft necesitan tener acceso al contenido de los clientes es cuando el cliente realiza una solicitud de soporte técnico que requiere acceso para la solución de problemas. Un principio básico de Microsoft 365 es que el servicio funciona sin Microsoft Access para el contenido del cliente. Casi todas las operaciones de servicio realizadas por Microsoft son totalmente automatizadas y la implicación humana está muy controlada y se abstrae del contenido del cliente. El objetivo de Microsoft 365 es el acceso al contenido del cliente para apoyar el servicio no es necesario hasta que el cliente apruebe una solicitud específica para Microsoft Access.
 
 #### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>Ya pensé que mis datos estaban seguros con la nube de Microsoft, ¿por qué necesito la caja de seguridad del cliente?
 

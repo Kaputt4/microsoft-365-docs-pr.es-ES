@@ -1,5 +1,5 @@
 ---
-title: Usar el análisis rápido en Office 365 Advanced eDiscovery
+title: Usar el análisis rápido en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de Office 365 Advanced eDiscovery
-ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de eDiscovery avanzado
+ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557648"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626416"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Usar el análisis rápido en eDiscovery avanzado (clásico) 
 
@@ -104,7 +104,7 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
   - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-  - Para exportar a un nuevo lote, haga **** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+  - Para exportar a un nuevo lote, haga **Add** ![clic en agregar](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
   - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
     
@@ -132,5 +132,5 @@ Elija **Aceptar**para guardar la configuración avanzada, **restaurar los valore
 ## <a name="see-also"></a>Vea también
 <a name="BK_AdvancedSettings"> </a>
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
 

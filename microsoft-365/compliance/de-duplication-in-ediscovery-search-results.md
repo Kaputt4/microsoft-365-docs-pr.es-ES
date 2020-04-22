@@ -16,22 +16,22 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
-ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d61edf03ed64402f6540b4c822060f283825cd6e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076286"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630587"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
 En este artículo se describe cómo funciona la desduplicación de los resultados de la búsqueda de exhibición de documentos electrónicos y se explican las limitaciones del algoritmo de desduplicación.
   
-Al usar las herramientas de eDiscovery de Office 365 para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados que se exportan. Escenario Cuando se habilita la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones en los que se realizó la búsqueda. La desduplicación le ayuda a ahorrar tiempo, ya que reduce el número de elementos que tiene que revisar y analizar una vez que se han exportado los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
+Al usar las herramientas de eDiscovery para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados que se exportan. Escenario Cuando se habilita la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones en los que se realizó la búsqueda. La desduplicación le ayuda a ahorrar tiempo, ya que reduce el número de elementos que tiene que revisar y analizar una vez que se han exportado los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Identificación de los mensajes duplicados
 
-Las herramientas de eDiscovery de Office 365 usan una combinación de las siguientes propiedades de correo electrónico para determinar si un mensaje es un duplicado:
+las herramientas de eDiscovery usan una combinación de las siguientes propiedades de correo electrónico para determinar si un mensaje es un duplicado:
   
 - **InternetMessageId** : esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa cliente de correo electrónico del remitente o el sistema de correo electrónico de host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador del mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente. 
 

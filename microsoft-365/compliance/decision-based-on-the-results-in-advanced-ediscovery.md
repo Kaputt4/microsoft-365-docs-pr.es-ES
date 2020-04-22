@@ -1,5 +1,5 @@
 ---
-title: Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos de Office 365
+title: Decisión basada en los resultados en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Obtenga información sobre cómo la pestaña decidir en Office 365 Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
-ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo la pestaña decidir en eDiscovery avanzado proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
+ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557548"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630577"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -55,7 +55,7 @@ El panel de detalles expandido muestra detalles adicionales. Los archivos de las
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

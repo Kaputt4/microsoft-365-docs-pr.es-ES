@@ -17,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger información confidencial sujeta a la ley de seguros de salud estadounidense (HIPAA), el Gramm-Leach-Bliley de Estados Unidos (ley GLBA) o la Ley Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas.
-ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: La prevención de pérdida de datos (DLP) &amp; del centro de cumplimiento de seguridad incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger información confidencial sujeta a la ley de seguros de salud estadounidense (HIPAA), el Gramm-Leach-Bliley de Estados Unidos (GLBA) o la Ley Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas.
+ms.openlocfilehash: 622a613fd0f43a7ad23c25ab52460181a8931e7f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597177"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626276"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Qué incluyen las plantillas de directiva DLP
 
-La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger información confidencial sujeta a la ley de seguros de salud estadounidense (HIPAA), el Gramm-Leach-Bliley de Estados Unidos (ley GLBA) o la Ley Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas. En este tema no se incluyen todos los detalles de la configuración de cada plantilla de Directiva; en su lugar, se presenta el tema con suficiente información como para ayudarle a decidir qué plantilla es el mejor punto de partida para su escenario. Recuerde que puede personalizar estas plantillas de directiva para cumplir sus requisitos específicos.
+La prevención de pérdida de datos (DLP) &amp; del centro de cumplimiento de seguridad incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger información confidencial sujeta a la ley de seguros de salud estadounidense (HIPAA), el Gramm-Leach-Bliley de Estados Unidos (GLBA) o la Ley Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas. En este tema no se incluyen todos los detalles de la configuración de cada plantilla de Directiva; en su lugar, se presenta el tema con suficiente información como para ayudarle a decidir qué plantilla es el mejor punto de partida para su escenario. Recuerde que puede personalizar estas plantillas de directiva para cumplir sus requisitos específicos.
   
 ## <a name="australia-financial-data"></a>Datos financieros de Australia
 

@@ -1,5 +1,5 @@
 ---
-title: Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
+title: Ejecutar el módulo de proceso en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Obtenga información sobre las directrices para preparar archivos de casos de Office 365 datos para analizar con Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: eb608eeac33e0d5d06dce9d0c35cd86f4e0bc280
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre las directrices para preparar archivos de casos de datos para el análisis con eDiscovery avanzado.  '
+ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557820"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626466"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -74,7 +74,7 @@ Una etiqueta definida por el usuario puede asociarse a un conjunto de archivos p
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Ejecutar el módulo de proceso y cargar datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

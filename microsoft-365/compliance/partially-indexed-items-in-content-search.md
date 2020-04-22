@@ -1,5 +1,5 @@
 ---
-title: Elementos parcialmente indizados en la búsqueda de contenido en Office 365
+title: Elementos parcialmente indizados en la búsqueda de contenido
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
-ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551231"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626684"
 ---
-# <a name="partially-indexed-items-in-content-search-in-office-365"></a>Elementos parcialmente indizados en la búsqueda de contenido en Office 365
+# <a name="partially-indexed-items-in-content-search"></a>Elementos parcialmente indizados en la búsqueda de contenido
 
-Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplimiento en Office 365 automáticamente incluye elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. En Exchange, un elemento parcialmente indizado normalmente contiene un archivo, de un tipo de archivo que no se puede indizar, que está adjunto a un mensaje de correo electrónico. A continuación se muestran algunos otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda: 
+Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplimiento incluye automáticamente los elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. En Exchange, un elemento parcialmente indizado normalmente contiene un archivo, de un tipo de archivo que no se puede indizar, que está adjunto a un mensaje de correo electrónico. A continuación se muestran algunos otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda: 
   
 - El tipo de archivo no se admite o está deshabilitado para la indexación.
     
@@ -47,9 +47,9 @@ Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplim
 - Un archivo está protegido por contraseña.
     
 > [!NOTE]
-> La mayoría de las organizaciones de Office 365 tienen menos del 1% de contenido en volumen y menos del 12% en el tamaño que se indexa parcialmente. El motivo de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una probabilidad mayor de contenido que no se puede indizar completamente. 
+> La mayoría de las organizaciones tienen menos del 1% de contenido en el volumen y menos del 12% en el tamaño que se indexa parcialmente. El motivo de la diferencia entre el volumen y el tamaño es que los archivos más grandes tienen una probabilidad mayor de contenido que no se puede indizar completamente. 
   
-Para las investigaciones legales, es posible que sea necesario que su organización Revise los elementos indizados parcialmente. También puede especificar si desea incluir elementos parcialmente indizados al exportar los resultados de búsqueda a un equipo local o al preparar los resultados para el análisis con Office 365 Advanced eDiscovery. Para obtener más información, vea el artículo sobre cómo [investigar elementos indizados parcialmente en Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+Para las investigaciones legales, es posible que sea necesario que su organización Revise los elementos indizados parcialmente. También puede especificar si desea incluir elementos parcialmente indizados al exportar los resultados de la búsqueda a un equipo local o al preparar los resultados para el análisis con la exhibición avanzada de documentos electrónicos. Para obtener más información, vea el artículo sobre la [investigación de elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## <a name="file-types-not-indexed-for-search"></a>Tipos de archivo no indexados para búsquedas
 
@@ -141,7 +141,7 @@ Para obtener una lista de los límites de indización de documentos de SharePoin
 
 - Los mensajes protegidos con Information Rights Management (IRM) se indexan y se incluyen en los resultados de la búsqueda si coinciden con la consulta de búsqueda.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Investigación de elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

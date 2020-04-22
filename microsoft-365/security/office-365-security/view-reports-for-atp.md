@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631066"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708504"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -60,9 +60,11 @@ Los filtros y los desgloses de la información permiten clasificaciones más det
 
 ![Informe de estado de protección contra amenazas desplegable que muestra ' dividir por '.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Estas vistas le ofrecen la opción de exportar, mediante un clic de botón (en correo electrónico > phish, correo electrónico > malware y vistas de contenido > malware). Los datos agregados exportados a su equipo se pueden abrir en Excel.
+Estas vistas le ofrecen la opción de exportar, mediante un clic de botón (en vistas de **phishing**de **correo electrónico** \> , **malware**de **correo electrónico** \> y **malware** de **contenido** \> ). Los datos agregados exportados a su equipo se pueden abrir en Excel.
 
 ![Este gráfico muestra exportar como una opción en el menú para la vista de malware, directamente entre crear programación y solicitar informe.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Nota**: el número máximo de entradas que se pueden exportar para **phish** y **Malware** solo es inferior a 10000. Si exporta una vista, se exportan sólo las entradas 10000 más recientes.
 
 En las vistas información general y mensajes de correo electrónico se muestra información en horas de procesamiento, en lugar de en 24 horas (demanda re. la velocidad aumentada aquí ha sido una señal clara).
 

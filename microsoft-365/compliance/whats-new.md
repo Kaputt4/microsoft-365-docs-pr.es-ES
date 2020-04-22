@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626266"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -64,10 +64,10 @@ Mientras configura y valida estos conectores, envíenos sus comentarios sobre lo
 
 ## <a name="january-2020"></a>Enero de 2020
 
-La espera ha finalizado. Nos complace anunciar que el centro de cumplimiento de Microsoft 365 está disponible para todos los clientes con los planes de Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) y Windows 10 Enterprise. Cualquier dato o Directiva que estuviera administrando en el centro de cumplimiento de Office 365 Security & está disponible en el centro de cumplimiento, por lo que no es necesario saltar hacia delante y hacia atrás.
+La espera ha finalizado. Nos complace anunciar que el centro de cumplimiento de Microsoft 365 está disponible para todos los clientes con los planes de Microsoft 365, Office 365, Enterprise Mobility + Security (EMS) y Windows 10 Enterprise. Los datos o las directivas que estuviera administrando en el centro de cumplimiento de seguridad & están disponibles en el centro de cumplimiento, por lo que no es necesario saltar hacia delante y hacia atrás.
 
 > [!TIP]
-> Vuelva a leer la actualización del mes anterior para obtener una vista previa de algunas de las [nuevas soluciones](#new-compliance-solutions) que se han mostrado recientemente, así como un [mapa de ruta](#updated-compliance-solutions) que muestra dónde están ahora en directo las características de cumplimiento del centro de seguridad & cumplimiento de Office 365 en Microsoft 365.
+> Vuelva a leer la actualización del mes anterior para obtener una vista previa de algunas de las [nuevas soluciones](#new-compliance-solutions) que hemos mostrado recientemente, así como un [plan de desarrollo](#updated-compliance-solutions) que muestra dónde se encuentran ahora las características de cumplimiento del centro de seguridad & cumplimiento en Microsoft 365.
 
 Marque y recorra ahora para [https://compliance.microsoft.com](https://compliance.microsoft.com) repasar su punto de partida único para administrar el cumplimiento en su organización... o [Lea este artículo](microsoft-365-compliance-center.md) para profundizar un poco más.
 
@@ -91,7 +91,7 @@ Nos encantaría oír su opinión. Cuando use la solución, déjenos comentarios 
 
 ### <a name="just-launched"></a>Acaba de iniciar
 
-**Cumplimiento con la comunidad**
+**Cumplimiento de las comunicaciones**
 
 Graduación de la fase de vista previa a la disponibilidad completa, el cumplimiento de la comunicación es un componente clave de nuestro nuevo conjunto de soluciones de riesgo de Insider. Esta sólida solución ayuda a minimizar los riesgos de comunicación mediante flujos de trabajo para detectar, investigar y realizar acciones de corrección para los mensajes que no cumplen los estándares de la organización.
 
@@ -142,7 +142,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Descripción**|**Más información**|
+|**Nueva solución**|**Descripción**|**Obtener más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -158,7 +158,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 > Algunas características siguen estando disponibles únicamente en el centro de cumplimiento de & de seguridad de Office 365: estos se indican a continuación. Pero estamos trabajando para obtener una vista previa de estas en el centro de cumplimiento de Microsoft 365, así que Manténgase atento a las actualizaciones. 
 <br/>
 
-|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Más información**|
+|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Obtener más información**|
 |:-----|:-----|:-----|:-----|
 |eDiscovery avanzado|eDiscovery > eDiscovery avanzado <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > avanzado <br/> https://compliance.microsoft.com/advancedediscovery | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](overview-ediscovery-20.md) |
 |Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
@@ -168,7 +168,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
 |Prevención de pérdida de datos|Prevención de pérdida de datos <br/> https://protection.office.com/datalossprevention |Prevención de pérdida de datos <br/> https://compliance.microsoft.com/datalossprevention |[Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)|
-|Solicitudes de interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Solicitudes de los interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de los interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|exhibición de documentos electrónicos > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > núcleo <br/> https://compliance.microsoft.com/classicediscovery |[Administrar casos de eDiscovery](ediscovery-cases.md) |
 |Eventos|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Información general sobre la retención controlada por eventos](event-driven-retention.md)|
 |Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Información general sobre el administrador del plan de archivos](file-plan-manager.md)|
@@ -179,7 +179,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)|
 |Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el centro de seguridad & cumplimiento](service-assurance.md)|
-|Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento con la comunidad <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |
+|Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento de las comunicaciones <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |
 
 ## <a name="september-2019"></a>Septiembre de 2019
 
@@ -191,13 +191,13 @@ Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene d
 - Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
 - Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
-[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[Obtener más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>Agosto de 2019
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Obtener más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Julio de 2019
 

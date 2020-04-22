@@ -1,5 +1,5 @@
 ---
-title: Crear una política tipo de información confidencial para su organización mediante el cifrado de mensajes de Office 365
+title: Crear una directiva de tipo de información confidencial para la organización mediante cifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Resumen: Directiva de cifrado de mensajes de Office 365 para tipos de información confidencial.'
-ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601797"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626878"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Crear una política tipo de información confidencial para su organización mediante el cifrado de mensajes de Office 365
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Crear una directiva de tipo de información confidencial para la organización mediante cifrado de mensajes
 
-Puede usar las reglas de flujo de correo de Exchange o la prevención de pérdida de datos (DLP) de Office 365 para crear una directiva de tipo de información confidencial con el cifrado de mensajes de Office 365. Para crear una regla de flujo de correo de Exchange, puede usar el centro de administración de Exchange (EAC) o PowerShell.
+Puede usar reglas de flujo de correo de Exchange o prevención de pérdida de datos (DLP) para crear una directiva de tipo de información confidencial con el cifrado de mensajes de Office 365. Para crear una regla de flujo de correo de Exchange, puede usar el centro de administración de Exchange (EAC) o PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Para crear la Directiva mediante reglas de flujo de correo en el EAC
 
@@ -34,7 +34,7 @@ Inicie sesión en el centro de administración de Exchange (EAC) y vaya a**regla
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Para crear la Directiva mediante reglas de flujo de correo en PowerShell
 
-Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la Directiva.
+Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la Directiva.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Ejemplo de regla de flujo de correo creada con PowerShell
 
@@ -57,21 +57,21 @@ Para más información, vea [set-IRMConfiguration](https://docs.microsoft.com/po
 
 ## <a name="how-recipients-access-attachments"></a>Acceso a datos adjuntos de destinatarios
 
-Después de que Office 365 cifra un mensaje, los destinatarios tienen acceso no restringido a los datos adjuntos cuando acceden y abren su correo electrónico cifrado.
+Una vez que Microsoft cifra un mensaje, los destinatarios tienen acceso sin restricciones a los datos adjuntos cuando acceden y abren su correo electrónico cifrado.
 
 ## <a name="to-prepare-for-this-change"></a>Para prepararse para este cambio
 
 Es posible que desee actualizar toda la documentación para el usuario final y los materiales de formación correspondientes para preparar a los usuarios de su organización para este cambio. Comparta estos recursos de cifrado de mensajes de Office 365 con los usuarios según corresponda:
 
 - [Enviar, ver y responder mensajes cifrados en Outlook para PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Vídeo de Office 365 Essentials: cifrado de mensajes de Office](https://youtu.be/CQR0cG_iEUc)
+- [Vídeo de Microsoft 365 Essentials: cifrado de mensajes de Office](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Ver estos cambios en el registro de auditoría
 
-Office 365 audita esta actividad y la pone a disposición de los administradores de Office 365. La operación es ' New-TransportRule ' y un fragmento de código de una entrada de auditoría de la búsqueda del registro de auditoría en el centro de seguridad & cumplimiento se muestra a continuación:
+Microsoft 365 audita esta actividad y la pone a disposición de los administradores. La operación es ' New-TransportRule ' y un fragmento de código de una entrada de auditoría de la búsqueda del registro de auditoría en el centro de seguridad & cumplimiento se muestra a continuación:
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Para deshabilitar o personalizar la Directiva de tipos de información confidencial

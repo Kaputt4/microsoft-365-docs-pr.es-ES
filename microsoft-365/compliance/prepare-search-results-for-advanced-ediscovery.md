@@ -1,5 +1,5 @@
 ---
-title: Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
+title: Preparar los resultados de búsqueda para eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365 para seguir analizando la herramienta eDiscovery avanzada.
-ms.openlocfilehash: 01a09da78198c31ff88b0e539ae9b149b2fbdd02
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento para un mayor análisis con la herramienta eDiscovery avanzado.
+ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557860"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626644"
 ---
-# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos (Classic)
+# <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para eDiscovery avanzado (clásico)
 
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos el retiro de Office 365 Advanced eDiscovery, conocido también como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos la jubilación de la exhibición avanzada de documentos electrónicos, también conocida como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
-Una vez que se haya ejecutado correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, podrá preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición de documentos electrónicos de Office 365 Advanced eDiscovery, que le permitirá analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
+Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, puede preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición avanzada de documentos electrónicos, lo que le permite analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
   
 - **Reconocimiento óptico de caracteres** : al preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) extrae automáticamente el texto de las imágenes e incluye esto con los resultados de la búsqueda que se cargan en la exhibición avanzada de documentos electrónicos para el análisis. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto le permite aplicar las capacidades de análisis de texto de eDiscovery avanzado (casi duplicados, subprocesamiento de correo electrónico, temas y codificación de predicción) al contenido de texto de los archivos de imagen. EDiscovery avanzado el OCR admite los siguientes formatos para los archivos de imagen:
 
@@ -47,7 +47,7 @@ Una vez que se haya ejecutado correctamente una búsqueda asociada a un caso de 
     
 - **Codificación predictiva** : le permite entrenar al sistema sobre lo que está buscando, permitiéndole tomar decisiones (sobre si algo es relevante o no) en un pequeño conjunto de documentos. EDiscovery avanzado aplicará ese aprendizaje (en función de las instrucciones) al analizar todos los documentos del conjunto de datos. Basándose en ese aprendizaje, la exhibición avanzada de documentos electrónicos proporciona una clasificación de relevancia para que pueda decidir qué documentos se deben revisar en función del documento que sea más probable que sea relevante para el caso. 
     
-- **Exportar datos para las aplicaciones de revisión** : puede exportar datos de eDiscovery avanzado y Office 365 una vez que haya completado el análisis y reducido el conjunto de datos. El paquete de exportación incluye un archivo CSV que contiene las propiedades de los metadatos de contenido y análisis exportados. Este paquete de exportación se puede importar a una aplicación de revisión de eDiscovery. 
+- **Exportar datos para las aplicaciones de revisión** : puede exportar datos de la exhibición de documentos electrónicos avanzada y de Microsoft 365 después de completar el análisis y reducir el conjunto de datos. El paquete de exportación incluye un archivo CSV que contiene las propiedades de los metadatos de contenido y análisis exportados. Este paquete de exportación se puede importar a una aplicación de revisión de eDiscovery. 
     
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -120,4 +120,4 @@ Los mensajes de correo electrónico cifrados con RMS que se incluyan en los resu
     
 - Si un mensaje de correo electrónico cifrado con RMS tiene datos adjuntos (como un documento u otro mensaje de correo electrónico) que también están cifrados, solo se descifrará el mensaje de correo electrónico de nivel superior.
     
-- Si necesita impedir que un usuario descifre mensajes cifrados con RMS al preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el RMS Descifrar el rol de administración del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.
+- Si necesita impedir que un usuario descifre mensajes cifrados con RMS al preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el rol de administración descifrado de RMS del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.

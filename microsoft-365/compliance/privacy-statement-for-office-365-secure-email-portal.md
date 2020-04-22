@@ -1,5 +1,5 @@
 ---
-title: Declaración de privacidad de Office 365 portal de correo seguro
+title: Declaración de privacidad para portal de correo seguro
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Última actualización: 2017 de mayo'
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597727"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626634"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Declaración de privacidad de Office 365 portal de correo seguro
+# <a name="privacy-statement-for-secure-email-portal"></a>Declaración de privacidad para portal de correo seguro
 
 Última actualización: 2017 de mayo
   
@@ -37,7 +37,7 @@ La información de credenciales para la cuenta de Microsoft, la cuenta profesion
   
 Durante el proceso de descifrado, el nuevo portal de capacidades de OME no almacenará el correo cifrado que reciba. no se transmitirá fuera del nuevo portal de capacidades de OME en cualquier momento.
   
-El nuevo portal de capacidades de OME puede, en algunos casos, recopilar puntos de datos sobre el uso y el rendimiento de las nuevas capacidades de OME (por ejemplo, la frecuencia con la que se ven los mensajes cifrados, el explorador o la aplicación usados, y los errores encontrados), que se pueden analizar en agregarse a fin de mejorar la calidad, la seguridad y la integridad de esta y otras aplicaciones, productos o servicios de Microsoft. Esta información no se usa para identificar, contactar o dirigir publicidad a usted.
+El nuevo portal de capacidades de OME puede, en algunos casos, recopilar puntos de datos sobre el uso y el rendimiento de las nuevas capacidades de OME (por ejemplo, la frecuencia con la que se ven los mensajes cifrados, el explorador o la aplicación usados, y los errores encontrados), que se pueden analizar como agregados para mejorar la calidad, la seguridad y otras aplicaciones de Microsoft o servicios. Esta información no se usa para identificar, contactar o dirigir publicidad a usted.
   
 ## <a name="for-more-information"></a>Para obtener más información
 
@@ -49,7 +49,7 @@ Microsoft Corporation
   
 One Microsoft Way
   
-Redmond, Washington 98052, EE. UU.
+Redmond, Washington 98052, Estados Unidos
   
 ## <a name="changes"></a>Cambios
 

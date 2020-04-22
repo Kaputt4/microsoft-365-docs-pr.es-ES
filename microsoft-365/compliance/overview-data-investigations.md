@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328082"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626776"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -41,7 +41,7 @@ En las secciones siguientes se describe cada paso del flujo de trabajo integrado
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Buscar datos confidenciales, malintencionados o mal colocados
 
-Use la ficha **búsquedas** para crear búsquedas para buscar el Office 365 para los datos que desea corregir. Puede crear y ejecutar búsquedas basadas en consultas para identificar un conjunto de mensajes de correo electrónico y documentos que puedan contener datos derramados y, a continuación, recopilarlos como evidencia para revisar y analizar. Además, puede usar la herramienta de búsqueda para obtener una vista previa de los documentos de ejemplo y ver estadísticas de búsqueda que pueden ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que haya comprobado que los resultados de la búsqueda contienen todos los datos relevantes para la investigación, agregue los resultados de la búsqueda al conjunto de evidencias para una revisión más detallada, la evaluación del impacto y la realización de acciones correctivas, según sea necesario. Para obtener más información, vea [buscar datos en una investigación](search-for-data.md).
+Use la ficha **búsquedas** para crear búsquedas para buscar los datos de Microsoft 365 para los datos que desea corregir. Puede crear y ejecutar búsquedas basadas en consultas para identificar un conjunto de mensajes de correo electrónico y documentos que puedan contener datos derramados y, a continuación, recopilarlos como evidencia para revisar y analizar. Además, puede usar la herramienta de búsqueda para obtener una vista previa de los documentos de ejemplo y ver estadísticas de búsqueda que pueden ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que haya comprobado que los resultados de la búsqueda contienen todos los datos relevantes para la investigación, agregue los resultados de la búsqueda al conjunto de evidencias para una revisión más detallada, la evaluación del impacto y la realización de acciones correctivas, según sea necesario. Para obtener más información, vea [buscar datos en una investigación](search-for-data.md).
 
 ## <a name="review-and-investigate-evidence"></a>Revisión e investigación de pruebas
 

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228516"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638004"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>Información general sobre la ley HIPAA y la tecnología de alta tecnología
 
-La ley de transferencia y responsabilidad de seguros de salud (HIPAA) es una ley estadounidense de atención médica que establece los requisitos para el uso, la divulgación y la protección de la información de salud de identificación individual. Se aplica a las entidades cubiertas (oficinas de los médicos, hospitales, aseguradores de salud y otras compañías de salud), con acceso a la información de salud protegida de los pacientes (PHI), así como a empresas asociadas, como el servicio en la nube y los proveedores de ti, que procesan la PHI en su nombre. (Las entidades más cubiertas no llevan a cabo funciones como notificaciones o procesamiento de datos por cuenta propia; dependen de los asociados de negocios para hacerlo).
+La ley de transferencia y responsabilidad de seguros de salud (HIPAA) es una ley estadounidense de atención médica que establece los requisitos para el uso, la divulgación y la protección de la información de salud de identificación individual. Se aplica a las entidades cubiertas (las oficinas de los médicos, los hospitales, los aseguradores de salud y otras empresas de salud), con acceso a la información de salud protegida de los pacientes (PHI), así como a empresas asociadas, como el servicio en la nube y los proveedores de ti, que procesan la PHI en su nombre. (Las entidades más cubiertas no llevan a cabo funciones como notificaciones o procesamiento de datos por cuenta propia; dependen de los asociados de negocios para hacerlo).
 
 La ley regula el uso y la difusión de la información protegida sobre la salud en cuatro áreas generales:
 
@@ -43,7 +43,7 @@ La regla final de notificación de infracción de alta tecnología, que requiere
 
 ## <a name="microsoft-and-hipaa-and-the-hitech-act"></a>Ley de Microsoft e HIPAA y la alta tecnología
 
-Las regulaciones de HIPAA requieren que las entidades cubiertas y sus asociados de negocios (en este caso, Microsoft al proporcionar servicios, incluidos los servicios en la nube) a entidades cubiertas, entren en contratos para asegurarse de que esos asociados de negocios se adecuarán de forma adecuada. Proteja la PHI. Estos contratos, o HIPAA, aclaran y limitan el modo en que el asociado comercial puede tratar la PHI y establecen el cumplimiento de cada una de las partes respecto de las disposiciones de seguridad y privacidad que se establecen en HIPAA y la tecnología de alta definición. Una vez que se ha implementado un BAA, los clientes de Microsoft (entidades cubiertas) pueden usar sus servicios para procesar y almacenar la PHI.
+Las regulaciones de HIPAA requieren que los encargados de las entidades cubiertas y sus asociados de negocios (en este caso, Microsoft al proporcionar servicios, incluidos los servicios en la nube) a las entidades cubiertas, entren en contratos para garantizar que estos asociados de negocios protejan la PHI de forma adecuada. Estos contratos, o HIPAA, aclaran y limitan el modo en que el asociado comercial puede tratar la PHI y establecen el cumplimiento de cada una de las partes respecto de las disposiciones de seguridad y privacidad que se establecen en HIPAA y la tecnología de alta definición. Una vez que se ha implementado un BAA, los clientes de Microsoft (entidades cubiertas) pueden usar sus servicios para procesar y almacenar la PHI.
 
 Actualmente no hay certificación oficial para el cumplimiento de la ley HIPAA o de alta tecnología. Sin embargo, estos servicios de Microsoft cubiertos por el BAA han sido sometidos a auditorías realizadas por auditores independientes autorizados para la certificación Microsoft ISO/IEC 27001.
 
@@ -51,13 +51,13 @@ Los servicios en la nube de Microsoft Enterprise también están cubiertos por e
 
 Para obtener información sobre cómo la nube de Microsoft ayuda a los clientes a apoyar los requisitos de HIPAA y alta tecnología, visite [historias de clientes de Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Servicio de robots de estado de Microsoft
 - Microsoft Stream
-- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Office 365
+- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y empresariales de Microsoft 365 para empresas
 - [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Intune
@@ -104,7 +104,7 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 
-[La puntuación de cumplimiento normativo de Microsoft](compliance-score.md) es una característica de vista previa en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después [de configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la plantilla de [Office 365 de HIPAA](https://go.microsoft.com/fwlink/?linkid=2118005) preconfigurada y la plantilla de [HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) en el menú desplegable de **plantillas** para ayudar a su organización a cumplir los requisitos del presente Reglamento.
+La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una característica en versión preliminar en el [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a entender la actitud de cumplimiento normativo de su organización y tomar medidas para ayudar a reducir los riesgos. Después [de configurar la puntuación de cumplimiento](compliance-score-setup.md), seleccione la plantilla de [Office 365 de HIPAA](https://go.microsoft.com/fwlink/?linkid=2118005) preconfigurada y la plantilla de [HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) en el menú desplegable de **plantillas** para ayudar a su organización a cumplir los requisitos del presente Reglamento.
 
 ## <a name="resources"></a>Recursos
 
@@ -114,7 +114,7 @@ Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
 - [Guía de implementación de Microsoft HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

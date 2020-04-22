@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información sobre cómo suscribirse a una suscripción de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 61ba4baefc3b7af7609101f5471648dfb1fcbefa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d1c9068b1d6596aabc09d44d854f89e76dd7ddb
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636445"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708112"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Registrarse para obtener una suscripción de prueba
 
@@ -34,12 +34,12 @@ Puede registrarse para obtener una suscripción de prueba a Microsoft 365 para e
 > [!NOTE]
 > Necesitará una tarjeta de crédito al registrarse para obtener una versión de prueba si su empresa se encuentra actualmente en Estados Unidos, Japón, Canadá y Australia. Al finalizar el período de prueba gratuito, la suscripción de prueba se convertirá automáticamente en una suscripción de pago. La tarjeta de crédito no se facturará hasta el final del período de prueba.
 
-## <a name="sign-up-for-an-microsoft-365-business-standard-trial-subscription"></a>Registrarse para obtener una suscripción de prueba de Microsoft 365 Business Standard
+## <a name="sign-up-for-a-microsoft-365-business-standard-trial-subscription"></a>Registrarse para obtener una suscripción de prueba de Microsoft 365 Business Standard
 
-1. Para suscribirse a una suscripción de prueba de Microsoft 365 para empresas, vaya al [sitio de productos de Office](https://www.aka.ms/office365signup). 
-    
+1. Para suscribirse a una suscripción de prueba de Microsoft 365 para empresas, vaya al [sitio de productos de Office](https://www.aka.ms/office365signup).
+
 2. Seleccione el plan para el que quiera suscribirse, como **Microsoft 365 Business Standard**, desplácese hacia abajo en la página y seleccione **probar libre durante 1 mes**.
-    
+
 3. En la página siguiente, siga los pasos para configurar su cuenta.
 
 4. El proceso de suscripción puede tardar varios minutos en completarse. Una vez que se haya completado, obtendrá más información sobre cómo empezar a usar su suscripción.
@@ -48,7 +48,7 @@ Para obtener más información acerca de la configuración de su cuenta, consult
 
 ## <a name="cancel-my-trial-subscription"></a>Cancelar la suscripción de prueba
 
-Si decide cancelar la versión de prueba antes de que finalice el período de prueba gratuito, vaya al centro de administración de Microsoft y desactive la opción de renovación automática en el área pago y facturación. La versión de prueba expirará automáticamente al finalizar el mes y no se cargará su tarjeta de crédito.
+Si decide cancelar la versión de prueba antes de que finalice el período de prueba gratuito, vaya al centro de administración de 365 de Microsoft y [desactive la facturación recurrente](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). La versión de prueba expirará automáticamente al finalizar el mes y no se cargará su tarjeta de crédito.
 
 ## <a name="see-also"></a>Vea también
 

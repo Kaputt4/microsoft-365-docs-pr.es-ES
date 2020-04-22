@@ -1,5 +1,5 @@
 ---
-title: Ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365
+title: Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a eDiscovery avanzado de Office 365 y ejecutar el módulo de proceso para un caso.  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para acceder a la exhibición de documentos electrónicos avanzada y ejecutar el módulo de proceso para un caso.  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557830"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626476"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -41,7 +41,7 @@ EDiscovery avanzado proporciona valores de metadatos del sistema, como agrupacio
   
 Realice los siguientes pasos para ejecutar el proceso.
   
-1. [Abra el centro de seguridad &amp; y cumplimiento de Office 365](go-to-the-securitycompliance-center.md) . 
+1. [Abra el centro &amp; de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) . 
     
 2. Vaya a la **exhibición** de documentos electrónicos de ** &amp; investigación** \> y haga clic en **ir a exhibición avanzada**de documentos electrónicos.
     
@@ -83,7 +83,7 @@ Si agrega al caso, puede volver a procesar.
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Visualización de los resultados del módulo de proceso](view-process-module-results-in-advanced-ediscovery.md)
 

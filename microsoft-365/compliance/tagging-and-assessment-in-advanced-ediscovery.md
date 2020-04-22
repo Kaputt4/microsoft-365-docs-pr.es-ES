@@ -1,5 +1,5 @@
 ---
-title: Etiquetado y evaluación en Office 365 Advanced eDiscovery
+title: Etiquetado y evaluación en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: 04f88a5efbd48c222c8c7033d94ae41634a06d99
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en la exhibición avanzada de documentos electrónicos. '
+ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557730"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630697"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Etiquetado y evaluación en eDiscovery avanzado (Classic)
 
@@ -125,7 +125,7 @@ En ausencia de estabilización basada en estadísticas, habrá resultados con un
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

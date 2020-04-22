@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de Microsoft 365 para empresas en diferentes regiones. '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635009"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708136"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -94,7 +94,7 @@ Obtenga información sobre los impuestos que se cobran en las regiones siguiente
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Oriente Medio y África (EMEA)
 
-Cuando compre servicios de Office 365 en la Unión Europea, la compra estará sujeta a impuesto sobre el valor añadido (IVA).
+Al comprar los servicios 365 de Microsoft en la Unión Europea, esta compra está sujeta al impuesto sobre el valor añadido (IVA).
   
 - Si se encuentra en un estado miembro de la Unión Europea y no proporciona su CIF local válido, Microsoft Ireland Operations Ltd. aplicará la tasa de IVA local actual según el país de facturación que se configuró para su cuenta.
 
@@ -154,7 +154,7 @@ Si se le factura desde otra ubicación, se aplicará el impuesto local vigente. 
 
 En los Estados Unidos y Canadá, se aplican varios impuestos en función de la ubicación del cliente. Si se encuentra en Puerto Rico, se aplica el impuesto sobre el valor añadido (IVA) local.
   
-Si el encargado de la facturación es Microsoft Corporation ([vea su factura](view-your-bill-or-invoice.md)) y se ha suscrito a Office 365 fuera de los Estados Unidos, Canadá y Puerto Rico, por lo general, no se cobrarán impuestos.
+Si Microsoft Corporation ha realizado su facturación ([consulte su factura](view-your-bill-or-invoice.md)) y se ha registrado en Microsoft 365 fuera de Estados Unidos, Canadá y Puerto Rico, el impuesto no suele ser cargado.
 
 ## <a name="how-taxes-are-calculated"></a>Cómo se calculan los impuestos
 

@@ -1,5 +1,5 @@
 ---
-title: Ver los resultados del módulo de proceso en Office 365 Advanced eDiscovery
+title: Ver los resultados del módulo de proceso en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso en la exhibición avanzada de documentos de Office 365, incluido el estado de la tarea y el resumen del proceso.  '
-ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso ejecutado en la exhibición avanzada de documentos electrónicos, incluido el estado de la tarea y el resumen del proceso.  '
+ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557608"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626316"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Ver los resultados del módulo de proceso en eDiscovery avanzado (clásico)
 
@@ -110,7 +110,7 @@ En la \> sección \> preparar \> los resultados del proceso último error, se mu
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Ejecutar el módulo de proceso y cargar datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 description: Microsoft Government Cloud Services cumple la Directiva de seguridad de los servicios de información de Justicia de Estados Unidos.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 97f769b763b5698dd664dee4ae8659999a62b078
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602617"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583327"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
 ## <a name="cjis-overview"></a>Información general sobre CJIS
 
-La división de los servicios de información de Justicia Penal (CJIS) de la Oficina Federal de investigación (FBI) de Estados Unidos ofrece a los organismos de la ley federal, local y estatal que tienen acceso a la información de la justicia penal (CJI); por ejemplo, huella digital registros y antecedentes criminales. El cumplimiento de la ley y otras agencias gubernamentales en Estados Unidos deben garantizar que el uso de los servicios en la nube para la transmisión, el almacenamiento o el procesamiento de CJI cumpla con la [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy), que establece los requisitos mínimos de seguridad y los controles para proteger CJI.
+La división de los servicios de información de Justicia Penal (CJIS) de la Oficina Federal de investigación (FBI) de Estados Unidos ofrece a los cuerpos de las autoridades estatales, locales y federales y a las agencias de justicia penal acceder a la información de la justicia penal (CJI), por ejemplo, los registros de huellas dactilares y los historiales criminales. El cumplimiento de la ley y otras agencias gubernamentales en Estados Unidos deben garantizar que el uso de los servicios en la nube para la transmisión, el almacenamiento o el procesamiento de CJI cumpla con la [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy), que establece los requisitos mínimos de seguridad y los controles para proteger CJI.
 
 La Directiva de seguridad CJIS integra directivas presidencial y FBI, leyes federales y decisiones del Consejo de directiva de asesoría de la comunidad de justicia penal, junto con instrucciones del Instituto Nacional de normas y tecnología (NIST). La Directiva se actualiza periódicamente para reflejar los requisitos de seguridad en constante evolución.
 
@@ -35,15 +35,15 @@ Además, todos los contratistas privados que procesan CJI deben firmar el anexo 
 
 ## <a name="microsoft-and-cjis-security-policy"></a>Directiva de seguridad de Microsoft y CJIS
 
-Microsoft firma el anexo de seguridad de CJIS en Estados con los contratos de información de CJIS. Estas autoridades de cumplimiento normativo estatales responsables del cumplimiento de la Directiva de seguridad de CJIS cómo los controles de seguridad en la nube de Microsoft ayudan a proteger el ciclo de vida completo de los datos y garantizar una adecuada detección en el fondo del personal de operaciones con acceso a CJI. Microsoft sigue trabajando con los gobiernos de estado para que entren en los contratos de información de CJIS.
+Microsoft firma el anexo de seguridad de CJIS en Estados con los contratos de información de CJIS. Estos indican a las autoridades competentes en materia de cumplimiento responsables de cumplir con la Directiva de seguridad de CJIS cómo los controles de seguridad en la nube de Microsoft ayudan a proteger el ciclo de vida completo de los datos y garantizar una protección adecuada del personal de operaciones con acceso a CJI. Microsoft sigue trabajando con los gobiernos de estado para que entren en los contratos de información de CJIS.
 
-Microsoft ha evaluado las directivas y procedimientos operativos de Microsoft Azure Government, Microsoft Office 365 U.S. Government, and Microsoft Dynamics 365 U.S. Government y se da fe de su capacidad en los acuerdos de servicios aplicables para cumplir con el FBI. requisitos para el uso de los servicios en el ámbito.
+Microsoft ha evaluado las directivas y procedimientos operativos de Microsoft Azure Government, Microsoft Office 365 U.S. Government y Microsoft Dynamics 365 U.S. Government, y se da fe de su capacidad en los acuerdos de servicios aplicables para cumplir con los requisitos de los FBIs para el uso de los servicios en el ámbito.
 
 Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en la nube de Microsoft: [Lea cómo Genetec borró las investigaciones criminales](https://customers.microsoft.com/story/genetec)
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -60,7 +60,7 @@ El FBI no ofrece la certificación del cumplimiento de Microsoft con los requisi
 
 los Estados 37 y el distrito de Columbia con contratos de administración, resaltados en el mapa en verde incluyen:
 
-Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawai, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nueva Jersey, Nueva York, Nevada, Carolina del norte, Oklahoma, Oregón, Pennsylvania, Isla Rhode, Carolina del sur, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
+Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawai, Illinois, Indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nueva Jersey, Nueva York, Nevada, North Carolina, Oklahoma, Oregón, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
 
 El compromiso de Microsoft para cumplir con los controles normativos de CJIS aplicables permite a las organizaciones de justicia criminal implementar soluciones basadas en la nube y cumplir con la Directiva de seguridad de CJIS V 5.8.
 
@@ -84,10 +84,6 @@ La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre l
 - [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy)
 - [CJIS de la Directiva de seguridad de la versión 5,3](https://aka.ms/cjis-backgrounder)
 - [Directrices de implementación de CJIS para el gobierno de Azure](https://aka.ms/cjisimplementationguidelines)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/?linkid=2087246)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/4/D/0/4D008840-B8C4-480B-ACD1-D55CB34AD6BC/CJIS_Compliance_Backgrounder.pdf).

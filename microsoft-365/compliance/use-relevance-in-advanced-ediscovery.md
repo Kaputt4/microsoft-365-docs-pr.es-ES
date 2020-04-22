@@ -1,5 +1,5 @@
 ---
-title: Usar el módulo relevancia en Office 365 Advanced eDiscovery
+title: Usar el módulo de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Obtenga información sobre el módulo relevancia en Office 365 Advanced eDiscovery, incluido un flujo de trabajo y directrices, y pasos para la revisión del archivo y el aprendizaje.  '
-ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre el módulo de relevancia en la exhibición avanzada de documentos electrónicos, incluido un flujo de trabajo y instrucciones y pasos para la revisión de archivos y aprendizaje.  '
+ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557638"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626396"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Usar el módulo de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -124,7 +124,7 @@ En la **pestaña \> seguimiento de relevancia** , eDiscovery avanzado proporcion
     
   - Implicación: en este momento no se requiere ningún entrenamiento sobre la relevancia.
     
-Aunque la exhibición avanzada de documentos electrónicos le guía a través del proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su caso individual, problema o proceso de revisión de documentos. 
+Aunque la exhibición avanzada de documentos electrónicos le guía a través del proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su proceso de revisión de documentos, problema o caso individual. 
   
 Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso posterior de eDiscovery. Si desea realizar un paso que no sea el siguiente paso recomendado, haga clic en el **siguiente paso** que aparece en la pantalla problema expandido en el cuadro de diálogo, haga clic en el botón **modificar** junto al paso siguiente y seleccione otra opción de paso siguiente. 
   
@@ -133,7 +133,7 @@ Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso po
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

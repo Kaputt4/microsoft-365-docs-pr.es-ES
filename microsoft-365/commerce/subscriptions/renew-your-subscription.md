@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Obtenga información sobre cómo renovar la suscripción a Microsoft 365 para empresas con una clave de producto y activar o desactivar la facturación recurrente. '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636564"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707660"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -48,11 +48,10 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 ::: moniker range="o365-worldwide"
 
-
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
- 
+
 3. En **facturación**, seleccione **Editar**, junto a **renueva** o **expiración**.
 
 4. En el panel **configuración de facturación recurrente** , seleccione **desactivar** para desactivarla. Si la facturación recurrente ya está desactivada, seleccione **mensual** o **una vez** para activarla.
@@ -68,11 +67,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 ::: moniker range="o365-germany"
   
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
-
-    Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
-    Si usa Office 365 ofrecido por 21Vianet, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
  
@@ -91,14 +86,10 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 ::: moniker range="o365-21vianet"
   
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
-
-    Si usa Office 365 Germany, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
-    Si usa Office 365 ofrecido por 21Vianet, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
- 
+
 3. Para activar la **facturación recurrente**, cambie el botón de alternancia a **activado**.
 
     ![Primer plano de una tarjeta de suscripción que tiene la facturación recurrente activada.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

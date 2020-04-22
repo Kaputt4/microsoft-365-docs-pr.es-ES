@@ -1,5 +1,5 @@
 ---
-title: Introducción a la administración de riesgos de Insider
+title: Introducción a la administración de riesgos internos
 description: Configure la administración de riesgos de Insiders en su organización.
 keywords: Microsoft 365, administración de riesgos de Insider, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097199"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637488"
 ---
-# <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos de Insider
+# <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
 Use las directivas de administración de riesgos internos para identificar las actividades de riesgo y las herramientas de administración para tomar medidas en las alertas de riesgos de su organización. Complete los siguientes pasos para configurar los requisitos previos y configurar una directiva de administración de riesgos de Insider.
 
@@ -39,7 +39,7 @@ Antes de empezar con la administración de riesgos de Insider, debe confirmar la
 
 Los usuarios incluidos en las directivas de administración de riesgos de internación deben tener asignada una de las licencias anteriores.
 
-Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
+Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): habilitar permisos para la administración de riesgos de Insider
 
@@ -60,7 +60,7 @@ Complete los siguientes pasos para agregar usuarios a un grupo de roles de admin
 
 1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365. "" "" "" ""
 
-2. En el centro de seguridad y cumplimiento de Microsoft Office 365, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. En el centro &amp; de seguridad y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
 3. Seleccione el grupo de funciones de administración de riesgos de Insider al que desea agregar usuarios y, a continuación, seleccione **Editar Grupo de roles**.
 
@@ -72,11 +72,11 @@ Complete los siguientes pasos para agregar usuarios a un grupo de roles de admin
 
 7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **cerrar** para completar los pasos.
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>Paso 2 (obligatorio): habilitar el registro de auditoría de Office 365
+## <a name="step-2-required-enable-the-audit-log"></a>Paso 2 (obligatorio): habilitar el registro de auditoría
 
 La administración de riesgos de Insiders usa registros de auditoría para las actividades y visiones del usuario configuradas en las directivas. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva de administración de riesgos de Insider o cada vez que cambia una directiva.
 
-Para obtener instrucciones paso a paso para activar la auditoría, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md). Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+Para obtener instrucciones paso a paso para activar la auditoría, vea [activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md). Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Paso 3 (opcional): configurar los requisitos previos para las plantillas
 

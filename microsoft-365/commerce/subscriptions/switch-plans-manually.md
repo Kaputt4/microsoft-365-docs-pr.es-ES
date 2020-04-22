@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Para cambiar de forma manual las suscripciones de Microsoft 365 para empresas, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636539"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707516"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiar de Microsoft 365 para planes de empresa manualmente
 
@@ -84,13 +84,9 @@ Asegúrese de comprar una suscripción para la misma organización en la que se 
 
     La suscripción desde la que va a mover a los usuarios y la suscripción a la que está moviendo los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando compruebe por primera vez, inténtelo de nuevo más tarde. Compruebe que ambas suscripciones aparecen bajo **activo**. [La nueva suscripción no aparece o no está activa](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **La nueva suscripción de Microsoft 365 para empresas con licencias disponibles**
-
-    ![La página de la suscripción que muestra el número de licencias de la nueva suscripción.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Comprobar que tiene licencias suficientes para cada usuario**
 
-    Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Office 365 Enterprise E5, tendrá que asegurarse de que dispone de diez licencias. En la imagen, se han comprado diez licencias para Office 365 Enterprise E5 y se pueden asignar las diez licencias.
+    Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Microsoft 365 empresa Premium, deberá asegurarse de que dispone de diez licencias. 
 
 4. **¿Necesita más licencias para la nueva suscripción?** Vaya a la página **suscripciones** y [compre licencias de la suscripción de Microsoft 365 para empresas](../licenses/buy-licenses.md).
   
@@ -139,8 +135,6 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
     > [!TIP]
     > Para limitar los servicios que están disponibles para el usuario, cambie el botón de alternancia a la posición **desactivado** para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype empresarial online, puede cambiar el cambio del servicio Skype empresarial online a la posición **desactivado** .
   
-    ![Configuración de asignaciones de licencia para un usuario.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Cambie el botón de alternancia a la posición **desactivado** para las licencias que este usuario ya no necesita.
 
 6. En la parte inferior del panel **licencias de producto** , seleccione **asignar** \> **cierre** \> de **cierre.**
@@ -149,19 +143,19 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos</a> **o seleccione** \> usuarios **activos**.
+1. En el centro de administración, vaya a **la** \> página usuarios <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, > vaya **a la página usuarios** <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">activos</a> .
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
@@ -176,8 +170,6 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
     > [!TIP]
     > - Para limitar los servicios que están disponibles para el usuario, cambie a la posición **desactivado** para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype empresarial online, puede cambiar el cambio del servicio Skype empresarial online a la posición **desactivado** .
     > - Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
-  
-    ![Configuración de asignaciones de licencia para un usuario.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar**.
 

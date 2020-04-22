@@ -1,5 +1,5 @@
 ---
-title: Definir problemas y asignar usuarios en Office 365 Advanced eDiscovery
+title: Definir problemas y asignar usuarios en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: Obtenga información sobre cómo agregar o editar un problema, incluida la asignación de usuarios a él, o cómo eliminar un problema para un caso de exhibición de documentos electrónicos en Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Obtenga información sobre cómo agregar o editar un problema, incluida la asignación de usuarios a este o la eliminación de un problema para un caso de exhibición de documentos electrónicos en eDiscovery avanzado.
+ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556978"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630663"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definir problemas y asignar usuarios en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -74,9 +74,9 @@ Es posible que los problemas se eliminen (es decir, que se eliminen de la base d
     
 4. Haga clic en **Aceptar**.
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Configurar cargas para agregar archivos importados](set-up-loads-to-add-imported-files.md)
   
