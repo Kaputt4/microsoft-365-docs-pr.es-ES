@@ -15,19 +15,19 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 'Resumen: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Resumen: configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno de pruebas y desarrollo de Microsoft 365.'
+ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083017"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634127"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
- **Resumen**: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.
+ **Resumen:** Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno de pruebas y desarrollo de Microsoft 365.
 
-Los sitios de grupo de SharePoint Online en Office 365 son ubicaciones en las que los usuarios pueden trabajar en colaboración usando una biblioteca de documentos comunes, un bloc de notas de OneNote y otros servicios. En muchos casos, deseará contar con un acceso amplio y una colaboración entre departamentos u organizaciones. Sin embargo, en algunos casos, es conveniente controlar rigurosamente el acceso y los permisos de colaboración entre un pequeño grupo de personas.
+Los sitios de grupo de SharePoint Online en Microsoft 365 son ubicaciones de colaboración con una biblioteca de documentos común, un bloc de notas de OneNote y otros servicios. En muchos casos, deseará contar con un acceso amplio y una colaboración entre departamentos u organizaciones. Sin embargo, en algunos casos, es conveniente controlar rigurosamente el acceso y los permisos de colaboración entre un pequeño grupo de personas.
 
 El acceso a los sitios de grupo de SharePoint Online y lo que los usuarios pueden hacer está controlado por grupos y niveles de permisos de SharePoint. De forma predeterminada, los sitios de SharePoint Online cuentan con tres niveles de acceso:
 
@@ -43,33 +43,33 @@ En este artículo, se indican los pasos que se deben seguir para configurar un s
 
 - Únicamente el creador del sitio y los miembros de un grupo de administradores del sitio pueden llevar a cabo tareas relacionadas con la administración, lo que incluye la modificación de los permisos del sitio.
 
-La configuración de un sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas de Office 365 se divide en tres fases:
+Hay tres fases para configurar un sitio de grupo de SharePoint Online aislado en el entorno de pruebas y desarrollo de Microsoft 365:
 
-1. Crear el entorno para desarrollo y pruebas de Office 365.
+1. Cree el entorno de prueba y desarrollo de Microsoft 365.
 
 2. Crear los usuarios y los grupos de ProyectoX.
 
 3. Crear un sitio de grupo de SharePoint Online para ProyectoX y aislarlo.
 
 > [!TIP]
-> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de One Microsoft Cloud.
+> Haga clic [aquí](https://aka.ms/catlgstack) para ver un mapa visual de todos los artículos en la pila de la Guía del entorno de pruebas de One Microsoft Cloud.
 
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Crear un entorno de desarrollo y pruebas ligero o de una empresa simulada de Office 365
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Fase 1: crear un entorno de desarrollo y pruebas de Microsoft 365 para empresas ligeras o simuladas
 
-Si solo quiere crear un sitio de grupo de SharePoint Online aislado de forma ligera con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 de [Office 365 dev/test Environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Si solo quiere crear un sitio de grupo de SharePoint Online aislado de forma ligera con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 del [entorno de desarrollo y pruebas de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Si desea crear un sitio de grupo de SharePoint Online aislado en una configuración de empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Si desea crear un sitio de grupo de SharePoint Online aislado en una configuración de empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de prueba y desarrollo de Microsoft 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
 
 > [!NOTE]
 > La creación de un sitio de SharePoint Online aislado no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como opción para que pueda probar un sitio de SharePoint Online aislado y experimentar con él en un entorno que representa una organización típica.
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: crear cuentas de usuario y grupos de acceso
 
-Siga las instrucciones descritas en [Connect to office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) para conectarse a su suscripción de seguimiento de Office 365 con su cuenta de administrador global desde:
+Siga las instrucciones descritas en [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) para conectarse a su suscripción de prueba con su cuenta de administrador global desde:
 
-- Su equipo (para el entorno de desarrollo y pruebas ligero de Office 365).
+- Su equipo (para el entorno de desarrollo y pruebas ligero de Microsoft 365).
 
-- La máquina virtual CLIENTE1 (para el entorno de desarrollo y pruebas de una empresa ficticia de Office 365).
+- La máquina virtual CLIENT1 (para el entorno de desarrollo y pruebas de Microsoft 365 Enterprise simulada).
 
 Para crear los nuevos grupos de acceso para el sitio de grupo de SharePoint Online para ProyectoX, ejecute estos comandos desde el símbolo del sistema del módulo de Windows Azure Active Directory para Windows PowerShell:
 
@@ -142,13 +142,13 @@ En la figura 1 se muestran los grupos de acceso y su pertenencia.
 
 **Figura 1**
 
-![Los grupos de Office 365 y su pertenencia a un sitio de grupo de SharePoint Online aislado](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Los grupos de Microsoft 365 y su pertenencia a un sitio de grupo de SharePoint Online aislado](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fase 3: Crear un sitio de grupo de SharePoint Online para ProyectoX y aislarlo
 
 Para crear un sitio de grupo de SharePoint Online para ProyectoX, siga estos pasos:
 
-1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el portal de Office 365[https://admin.microsoft.com](https://admin.microsoft.com)() con su cuenta de administrador global.
+1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con su cuenta de administrador global.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -216,7 +216,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 2. Haga clic en el nombre de su administrador global y, a continuación, en **Cerrar sesión**.
 
-3. Inicie sesión en el portal de Office 365[https://admin.microsoft.com](https://admin.microsoft.com)() usando el nombre de cuenta del responsable de diseño y su contraseña.
+3. Inicie sesión en el centro de administración de Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () utilizando el nombre de cuenta del responsable de diseño y su contraseña.
 
 4. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -246,7 +246,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepresidente de desarrollo:
 
-1. Inicie sesión en el portal de Office 365[https://admin.microsoft.com](https://admin.microsoft.com)() con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
+1. Inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -262,7 +262,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepres
 
 Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permisos:
 
-1. Inicie sesión en el portal de Office 365[https://admin.microsoft.com](https://admin.microsoft.com)() con el nombre de cuenta usuario 3 y su contraseña.
+1. Inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con el nombre de cuenta usuario 3 y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -278,7 +278,7 @@ Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permi
 
 El sitio de SharePoint Online aislado ya está listo para sus experimentos adicionales.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Cuando esté preparado para implementar un sitio de grupo de SharePoint Online aislado en producción, vea las consideraciones de diseño paso a paso en [Diseñar un sitio de grupo aislado de SharePoint Online](design-an-isolated-sharepoint-online-team-site.md).
 
@@ -290,7 +290,7 @@ Cuando esté preparado para implementar un sitio de grupo de SharePoint Online a
 
 [Entorno de desarrollo y pruebas de la configuración básica](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
 
-[Entorno de desarrollo y prueba de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Entorno de prueba y desarrollo de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
 
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

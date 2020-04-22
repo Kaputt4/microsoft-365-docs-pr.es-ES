@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Agregue su dominio a Office 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209645"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631820"
 ---
 # <a name="add-a-domain-to-office-365"></a>Agregar un dominio a Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209645"
     
 5. Elija cómo desea comprobar que es el propietario del dominio.
     
-    1. Si su dominio está registrado en Godaddy o 1&amp;1, seleccione **iniciar sesión en** > el**siguiente** y Office 365 [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md).
+    1. Si su dominio está registrado en Godaddy o 1&amp;1, seleccione **iniciar sesión** > a**continuación** y Microsoft[configurará los registros automáticamente](../get-help-with-domains/domain-connect.md).
     
     2. Puede hacer que le envíen un correo electrónico al contacto registrado para el dominio con un código de comprobación. Si no reconoce o tiene acceso al correo electrónico en el registro, puede usar la tercera opción.
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209645"
 
 [Configurar su dominio (instrucciones específicas del host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Obtener ayuda con Office 365 dominios](../get-help-with-domains/get-help-with-domains.md)
+[Obtener ayuda con los dominios](../get-help-with-domains/get-help-with-domains.md)

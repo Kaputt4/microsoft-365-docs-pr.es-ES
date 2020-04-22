@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632006"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
@@ -33,7 +33,7 @@ La compatibilidad de escritorio administrada de Microsoft incluye:
 Productos compatibles:
 
 - Protección contra amenazas avanzada de Windows 10 con Microsoft defender 
-- Estas aplicaciones de Office 365 ProPlus: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
+- Estas aplicaciones de Microsoft 365 apps for Enterprise: Outlook, Word, PowerPoint, Excel, cliente de Skype empresarial, Microsoft Teams 
 - Microsoft Store para Empresas 
 - Cliente de OneDrive para la empresa 
 

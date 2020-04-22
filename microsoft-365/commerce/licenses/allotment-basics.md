@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: Obtenga información sobre la nueva característica de cobertura.
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594691"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632418"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos sobre la cobertura
 
@@ -33,7 +33,7 @@ También puede delegar la administración de su cobertura. Los propietarios de l
 
 Debe cumplir con los requisitos de licencia para las [licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-Puede usar las coberturas con cualquier producto de Office 365 disponible para los usuarios:
+Puede usar coberturas con cualquier producto disponible para los usuarios:
 
 - Conjuntos de programas de Office y productos independientes
 - Productos de movilidad y empresa

@@ -1,5 +1,5 @@
 ---
-title: Cambiar las direcciones de facturación de Office 365 para empresas
+title: Cambiar las direcciones de facturación
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Obtenga información sobre cómo actualizar las direcciones de facturación de Office 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
+description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632724"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>Cambiar las direcciones de facturación de Office 365 para empresas
+# <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
 La factura contiene tres direcciones:
   
@@ -60,9 +60,6 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Cambiar la dirección del solicitante
 
@@ -158,9 +155,9 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Cambiar la dirección de correo electrónico alternativa a la que se envían las notificaciones de facturación
 
-De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Office 365 y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
+De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Office 365 con su cuenta profesional o educativa como administrador global. [Descubra cómo iniciar sesión.](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Aprende a iniciar sesión](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleccione el **icono de usuario**y, a continuación, seleccione **mi cuenta**.
   
@@ -173,9 +170,7 @@ De forma predeterminada, las notificaciones de facturación de la organización 
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiar la dirección de correo electrónico alternativa de otro administrador
 
 También puede cambiar la dirección de correo electrónico alternativa de otros administradores globales y de facturación de la organización.
-
-::: moniker range="o365-worldwide"
-
+  
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 
 ::: moniker-end
@@ -203,3 +198,5 @@ También puede cambiar la dirección de correo electrónico alternativa de otros
 [Entender la factura](understand-your-invoice2.md)
 
 [Pagar la suscripción](pay-for-your-subscription.md)
+
+[Suscripciones y facturación-ayuda para administradores](../index.yml)

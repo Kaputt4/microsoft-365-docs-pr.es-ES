@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo Microsoft 365 para las campañas afecta a los usuarios.
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080516"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632772"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Cómo Microsoft 365 para las campañas afecta a los usuarios
 
@@ -70,7 +70,7 @@ Para los [dispositivos Windows 10 y Mac no administrados](m365-campaigns-protect
 
 Para obtener más información sobre estas recomendaciones, consulte [proteger la cuenta y los dispositivos de hackers y malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas de Office 365
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas
 Es posible que los usuarios estén tentados a compartir y almacenar los archivos de la organización en lugares distintos de Microsoft 365. Microsoft 365 hace que sea tan fácil como sea posible colaborar y compartir de forma segura. Puede [compartir archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se encuentren en pérdidas. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización. 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Directiva de nomenclatura de grupos de Office 365
+title: Directiva de nomenclatura de Grupos
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Office 365.
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894628"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630448"
 ---
-# <a name="office-365-groups-naming-policy"></a>Directiva de nomenclatura de grupos de Office 365
+# <a name="groups-naming-policy"></a>Directiva de nomenclatura de Grupos
 
 Una directiva de nomenclatura de grupos se usa para aplicar una estrategia de nomenclatura coherente para los grupos creados por los usuarios de la organización. Una directiva de nomenclatura puede ayudarle a usted y a sus usuarios a identificar la función del grupo, la pertenencia, la región geográfica o el usuario que creó el grupo. La Directiva de nomenclatura también puede ayudar a clasificar los grupos de la libreta de direcciones. Puede usar la Directiva para bloquear palabras específicas para que no se usen en nombres de grupo y alias.
 
 La Directiva de nomenclatura se aplica a los grupos que se crean en todas las cargas de trabajo de grupos (como Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Se aplica al nombre del grupo y al alias del grupo. Se aplica cuando un usuario crea un grupo y cuando se modifica el nombre o el alias del grupo para un grupo existente.
 
 > [!TIP]
-> Una directiva de nomenclatura de grupo de Office 365 solo se aplica a los grupos de Office 365. No se aplica a los grupos de distribución creados en Exchange Online. Para crear una directiva de nomenclatura para los grupos de distribución, consulte [Create a Distribution Group naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Una directiva de nomenclatura de grupo de Microsoft 365 solo se aplica a los grupos de Microsoft 365. No se aplica a los grupos de distribución creados en Exchange Online. Para crear una directiva de nomenclatura para los grupos de distribución, consulte [Create a Distribution Group naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 La Directiva de nomenclatura de grupos consta de las siguientes características:
 
@@ -44,7 +44,7 @@ La Directiva de nomenclatura de grupos consta de las siguientes características
 
 ## <a name="licensing-requirements"></a>Requisitos de licencia
 
-El uso de la Directiva de nomenclatura de Azure AD para Office 365 grupos requiere que posea, pero no necesariamente, una licencia de Azure Active Directory Premium P1 o la licencia de Azure AD Basic EDU para cada usuario único (incluidos los invitados) que pertenezca a uno o más grupos de Office 365.
+El uso de la Directiva de nomenclatura de Azure AD para los grupos de Microsoft 365 requiere tener que poseer, pero no necesariamente, una licencia de Azure Active Directory Premium P1 o la licencia de Azure AD Basic EDU para cada usuario único (incluidos los invitados) que pertenezca a uno o varios grupos de Microsoft 365.
 
 Esto también es necesario para el administrador que crea la Directiva de nomenclatura de grupos.
 
@@ -80,7 +80,7 @@ Se recomienda usar atributos que tengan valores rellenados para todos los usuari
 
 - Los prefijos y los sufijos pueden contener caracteres especiales que se admiten en nombre de grupo y alias de grupo. Cuando los prefijos y los sufijos contienen caracteres especiales que no se permiten en el alias de grupo, solo se aplican al nombre del grupo. Por lo tanto, en este caso, los prefijos y los sufijos aplicados al nombre del grupo serían distintos de los que se aplican al alias del grupo.
 
-- Si usa los grupos conectados de Yammer Office 365, evite usar los siguientes caracteres en su Directiva de nomenclatura: @ \#, \[, \], \<, y \>. Si estos caracteres están en la Directiva de nomenclatura, los usuarios normales de Yammer no podrán crear grupos.
+- Si usa los grupos conectados de Yammer Microsoft 365, evite usar los siguientes caracteres en su Directiva de nomenclatura: @ \#, \[, \], \<, y \>. Si estos caracteres están en la Directiva de nomenclatura, los usuarios normales de Yammer no podrán crear grupos.
 
 ## <a name="custom-blocked-words"></a>Palabras bloqueadas personalizadas
 
@@ -126,10 +126,10 @@ Para configurar una directiva de nomenclatura:
 ![Captura de pantalla de la configuración de la Directiva de nomenclatura de grupos en Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> Los equipos de StaffHub no siguen la Directiva de nomenclatura, pero sí lo hace el grupo de Office 365 subyacente. El nombre del equipo de StaffHub no aplica los prefijos y los sufijos y no comprueba las palabras no admitidas personalizadas. Pero StaffHub aplica los prefijos y los sufijos y quita las palabras bloqueadas del grupo de Office 365 subyacente.
+> Los equipos de StaffHub no siguen la Directiva de nomenclatura, pero el grupo de Microsoft 365 subyacente. El nombre del equipo de StaffHub no aplica los prefijos y los sufijos y no comprueba las palabras no admitidas personalizadas. Pero StaffHub aplica los prefijos y los sufijos y quita las palabras bloqueadas del grupo de Microsoft 365 subyacente.
 
 ## <a name="more-articles-on-naming-policy"></a>Más artículos sobre la Directiva de nomenclatura
 
-[Aplicar una directiva de nomenclatura para los grupos de Office 365 en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Aplicar una directiva de nomenclatura para los grupos de Microsoft 365 en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Cmdlets de Azure Active Directory para configurar configuraciones de grupo](https://go.microsoft.com/fwlink/?linkid=868341)

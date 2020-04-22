@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Obtenga información sobre cómo agregar una firma de correo electrónico, una declinación de responsabilidades o una declaración de divulgación a todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631982"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
 
@@ -62,9 +62,9 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 ::: moniker-end
 
-1. Seleccione el iniciador ![de aplicaciones el icono del iniciador](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)de aplicaciones en Office 365 y, a continuación, seleccione **Administración**.
+1. Seleccione el iniciador ![de aplicaciones el icono](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)del iniciador de aplicaciones y, a continuación, seleccione **Administración**.
    
-    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones de Office 365 disponibles para usted. Ahí podrá buscar una aplicación específica. 
+    ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles para usted. Ahí podrá buscar una aplicación específica. 
     
 2. Seleccione **centros de administración**y, a continuación, elija **Exchange**.
     
@@ -77,14 +77,14 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 6. En **aplicar esta regla**, seleccione **[aplicar a todos los mensajes]**.
     
     > [!TIP]
-    > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sobre cómo especificar condiciones si no quiere que el aviso de declinación de responsabilidades se aplique a todos los mensajes. (Este artículo de ámbito está destinado a Exchange Server, pero también se aplica a Office 365). 
+    > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sobre cómo especificar condiciones si no quiere que el aviso de declinación de responsabilidades se aplique a todos los mensajes. (Este artículo de ámbito es para Exchange Server, pero también se aplica a Microsoft 365). 
   
 7. En Realizar lo siguiente, deje la opción **Anexar el aviso de declinación de responsabilidades** seleccionada. 
     
 8.  Seleccione **escribir texto** y escriba el aviso de declinación de responsabilidades. 
     
     > [!TIP]
-    > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sobre cómo aplicar formato a los avisos de declinación de responsabilidades. (Este artículo de formato es para Exchange Server, pero también se aplica a Office 365). 
+    > [Obtenga más información](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sobre cómo aplicar formato a los avisos de declinación de responsabilidades. (Este artículo de formato es para Exchange Server, pero también se aplica a Microsoft 365). 
 
 9. Seleccione **seleccionar una** y elija **ajustar** como opción de reserva. Después, seleccione **Aceptar**. Esto significa que, si no se puede agregar el aviso de declinación de responsabilidades debido al cifrado o a otra configuración del correo, este se ajustará en un sobre de mensajes.
     
@@ -96,9 +96,9 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
     
 13. Cuando termine, pulse **Guardar**. 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Limitaciones de las firmas de Office 365 en toda la organización
+## <a name="limitations-of-organization-wide-signatures"></a>Limitaciones de las firmas de toda la organización
 
-No puede hacer lo siguiente con Office 365 firmas:
+No puede hacer lo siguiente con las firmas 365 de Microsoft:
   
 - Insertar la firma directamente bajo la última respuesta de correo electrónico o reenvío
     
@@ -112,6 +112,6 @@ Para obtener estas y otras funciones, use una herramienta de terceros. Realice u
   
 ## <a name="more-resources"></a>Más recursos
 
-- Consulte [renuncias de mensajes de toda la organización, firmas, pies de página o encabezados en Office 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) para obtener información sobre el uso de PowerShell. 
+- Consulte [renuncias de mensajes de toda la organización, firmas, pies de página o encabezados en Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) para obtener información sobre el uso de PowerShell. 
     
 

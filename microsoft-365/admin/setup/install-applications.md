@@ -18,22 +18,22 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 description: 'Obtenga información sobre cómo configurar las aplicaciones de Office en su Mac, PC o dispositivos móviles. '
-ms.openlocfilehash: a1c6daf31e86fe345ba896362fe2703c2ca51509
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 73da808b7704f526d07f265ecfe99016e138ea52
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632108"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
-Ahora que ha configurado Office 365, puede configurar las aplicaciones de Office en su Mac, PC o dispositivos móviles.
+Ahora que ha configurado Microsoft 365, puede configurar las aplicaciones de Office en su Mac, PC o dispositivos móviles.
   
 Siga estos vínculos para obtener información sobre cómo:
   
 - Instalar aplicaciones de Office: [instalar Office en su PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
 
-- Configurar dispositivos móviles: [Office 365 Mobile Setup-Help](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- Configurar dispositivos móviles: [Microsoft 365 Mobile Setup-Help](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
 
 - Configurar el correo electrónico en Outlook: [Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)
 
@@ -45,4 +45,4 @@ Si ha adquirido Azure Active Directory Premium (AADP) Plan 1 o plan 2, es elegib
 
 ¿Tiene problemas? Consulte estos recursos de solución de problemas:
   
-- [Solución de problemas en la instalación de Office y Office 365](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)
+- [Solución de problemas de instalación de Office y Microsoft 365](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)

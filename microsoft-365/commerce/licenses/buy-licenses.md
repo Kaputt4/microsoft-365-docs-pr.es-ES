@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción de Office 365 para empresas.
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción a Microsoft 365 para empresas.
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240293"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632534"
 ---
 # <a name="manage-subscription-licenses"></a>Administrar las licencias de suscripción
 
@@ -84,22 +84,22 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>¿No ve el vínculo Agregar o quitar licencias?
 
-En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto.
+En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto. 
 
-|Reason  |Descripción  |Solución  |
+|Reason  |Description  |Solución  |
 |---------|---------|---------|
 |Hay pendiente una comprobación de crédito. |Si hay pendiente una comprobación de crédito, verá un mensaje "Pendiente de comprobación de crédito" y no podrá comprar licencias hasta que la comprobación se haya completado.  | Vuelva a comprobar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br>Una vez completada la comprobación de crédito, debería ver el vínculo **Agregar o quitar licencias** en la sección **Usuarios**. Si es así, vaya a [Manage subscription licenses](#manage-subscription-licenses). |
 |Ha activado la suscripción con una clave de producto.| Si la suscripción se compró y se activó con una clave de producto de 25 caracteres, verá el texto "Pagado por adelantado".  |Consulte [Agregar licencias a una suscripción pagada para usar una clave de producto](add-licenses-using-product-key.md). |
 |Ha comprado su suscripción a través de un partner. | Si la suscripción se compró a través de un partner, verá el vínculo Centro de servicios de licencias por volumen (VLSC). | Consulte [Agregar licencias a una suscripción adquirida a través del centro de servicios de licencias por volumen](add-licenses-bought-through-vlsc.md). |
 |Ha comprado su suscripción a través de un revendedor.|| Si adquirió la suscripción a través de un partner de Proveedor de soluciones en la nube (CSP), debe ponerse en contacto con dicha persona para comprar más licencias.        |
-|Tiene una suscripción de prueba. |En una versión de prueba de Office 365 se mostrará el texto "Prueba". | Primero debe comprar la suscripción de prueba y, a continuación, puede agregar más licencias. Consulte [comprar una suscripción a Office 365 para empresas desde su versión de prueba gratuita](../buy-a-subscription-from-your-free-trial.md).|
+|Tiene una suscripción de prueba. |Una versión de prueba de Microsoft 365 mostrará el texto "Trial". | Primero debe comprar la suscripción de prueba y, a continuación, puede agregar más licencias. Consulte [comprar una suscripción a Microsoft 365 para empresas desde su versión de prueba gratuita](../buy-a-subscription-from-your-free-trial.md).|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Lo que debe saber sobre la compra de licencias para su suscripción de empresa
 
 ### <a name="buying-licenses"></a>Licencias de compra
 
 - Debe ser administrador global o administrador de facturación para comprar licencias. Para obtener más información, vea [acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
-- Para comprar una licencia y agregar un usuario nuevo a su suscripción al mismo tiempo, consulte [Agregar usuarios individualmente o de forma masiva a Office 365: ayuda de administración](../../admin/add-users/add-users.md).
+- Para comprar una licencia y agregar un nuevo usuario a la suscripción al mismo tiempo, vea [Agregar usuarios individualmente o en masa ayuda de administración de Microsoft 365](../../admin/add-users/add-users.md).
 
 ### <a name="license-availability"></a>Disponibilidad de la licencia
 

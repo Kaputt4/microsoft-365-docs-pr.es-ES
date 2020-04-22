@@ -149,10 +149,6 @@
           href: document-fingerprinting.md
         - name: Funciones de DLP para información confidencial
           href: what-the-dlp-functions-look-for.md
-    - name: Cifrado en M365
-      href: encryption.md
-    - name: Cifrado de servicio de Office 365
-      href: office-365-service-encryption.md
     - name: Clave de cliente
       items:
         - name: Cifrado de servicio con Clave de cliente de Office 365
@@ -163,7 +159,7 @@
           href: customer-key-manage.md
         - name: Rotar o alternar una Clave de cliente o una clave de disponibilidad
           href: customer-key-availability-key-roll.md
-        - name: Obtener más información sobre la clave de disponibilidad de Clave de cliente de Office 365
+        - name: Obtener más información sobre la clave de disponibilidad de Clave de cliente
           href: customer-key-availability-key-understand.md
     - name: Cifrado de correo electrónico
       href: email-encryption.md
@@ -204,8 +200,6 @@
               href: legacy-information-for-message-encryption.md
             - name: Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
               href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: Configurar IRM en el Centro de administración de SharePoint Online
-      href: set-up-irm-in-sp-admin-center.md
     - name: Obtener información sobre la clasificación de datos (versión preliminar)
       href: data-classification-overview.md
       items:
@@ -793,18 +787,18 @@
           href: working-with-compliance-score.md
         - name: Cálculo de la Puntuación de cumplimiento (versión preliminar)
           href: compliance-score-methodology.md
-        - name: Notas de la versión de Puntuación de cumplimiento (versión preliminar)
+        - name: Notas de la versión de la Puntuación de cumplimiento (versión preliminar)
           href: compliance-score-release-notes.md
         - name: Preguntas frecuentes sobre Puntuación de cumplimiento (versión preliminar)
           href: compliance-score-faq.md
-        - name: Administrador de cumplimiento (versión preliminar)
+        - name: Administrador de cumplimiento (Versión preliminar)
           href: compliance-manager-overview.md
           items:
-            - name: Notas de la versión de Administrador de cumplimiento (versión preliminar)
+            - name: Novedades del Administrador de cumplimiento (Versión preliminar)
               href: compliance-manager-release-notes.md
-            - name: Trabajar con el Administrador de cumplimiento (versión preliminar)
+            - name: Trabajar con el Administrador de cumplimiento (Versión preliminar)
               href: working-with-compliance-manager.md
-            - name: Administrador de cumplimiento (clásico)
+            - name: Administrador de cumplimiento (Clásico)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Herramienta de solicitudes de interesados RGPD
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
@@ -1218,7 +1212,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: 'https://docs.microsoft.com/Office365/Enterprise'
-- name: Office 365 Empresa
+- name: Aplicaciones de Microsoft 365 para negocios
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
 - name: Seguridad de Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'

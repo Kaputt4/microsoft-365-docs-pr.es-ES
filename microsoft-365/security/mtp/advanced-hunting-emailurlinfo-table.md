@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 46849aa81da5a615a5dff7c5e2ac28566443d3ee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234769"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633524"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -39,7 +39,7 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento |
 | `UrlId` | cadena | Identificador único de la dirección URL en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico |
-| `NetworkMessageId` | cadena | Identificador único para el correo electrónico generado por Office 365. |
+| `NetworkMessageId` | cadena | Identificador único del correo electrónico generado por Microsoft 365 |
 | `Url` | cadena | Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico |
 
 ## <a name="related-topics"></a>Temas relacionados

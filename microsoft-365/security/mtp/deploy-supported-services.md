@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521485"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633476"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -38,7 +38,7 @@ ms.locfileid: "43521485"
 ## <a name="supported-services"></a>Servicios admitidos
 Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o A5, o una combinación válida de licencias, proporciona acceso a los siguientes servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365. [Ver requisitos de licencia](prerequisites.md#licensing-requirements)
 
-| Servicio compatible | Descripción |
+| Servicio compatible | Description |
 | ------ | ------ |
 | ATP de Microsoft Defender | Conjunto de aplicaciones de Endpoint Protection creado alrededor de sensores de comportamiento poderosos, análisis de nube e inteligencia de amenazas |
 | ATP de Office 365 | Protección avanzada de sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
@@ -62,7 +62,7 @@ En la tabla siguiente se muestra cómo cada servicio compatible proporciona dato
 | Servicio | Datos (señales & información relacionada) | Ámbito de respuesta & de corrección |
 | ------ | ------ | ------ |
 | ATP de Microsoft Defender | -Estados de punto de conexión y eventos sin procesar<br />-Detección de puntos de conexión y alertas, incluidos antivirus, EDR y reducción de superficie de ataques<br />-Información sobre los archivos y otras entidades observadas en los puntos de conexión | Puntos de conexión |
-| ATP de Office 365 | -Estados de correo y de buzón y eventos sin procesar<br />-Detecciones de correo electrónico, datos adjuntos y vínculos | -Buzones de correo<br />-Office 365 cuentas |
+| ATP de Office 365 | -Estados de correo y de buzón y eventos sin procesar<br />-Detecciones de correo electrónico, datos adjuntos y vínculos | -Buzones de correo<br />-Cuentas de 365 de Microsoft |
 | Azure ATP | -Señales de Active Directory, incluidos los eventos de autenticación<br />-Detecciones de comportamiento relacionadas con la identidad | Identidades |
 | Microsoft Cloud App Security | -Detección de servicios y aplicaciones en la nube no autorizados (Sombrear)<br />-Exposición de datos a aplicaciones en la nube<br />-Actividad de amenaza asociada con las aplicaciones en la nube | Aplicaciones en la nube |
 

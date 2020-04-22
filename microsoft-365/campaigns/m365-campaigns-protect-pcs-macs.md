@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 7cb09d0cadcc70b96c5f1404defa5d0387947ca8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0cd96cb73ad3d0b38ab1e5ff31c913d97528c2d4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594801"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632796"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteger equipos con Windows 10 PC y Mac no administrados
 
@@ -38,16 +38,16 @@ Para administrar equipos con Windows 10 y equipos Mac, puede inscribirse en Micr
 
 1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
 
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 Business username and password to sign in.
+2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
 3. --> 
 
 ## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>Proteger un equipo que ejecuta Windows 10 o un Mac
 
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365 Business, or a Mac, the Microsoft 365 Business protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
+<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 -->
 Si tu organización no administra tu PC con Windows 10 o Mac, asegúrate de configurar estas funciones de seguridad.
 
-## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
+## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 **Activar el cifrado del dispositivo**<p>
 
 El cifrado de dispositivos está disponible en una amplia gama de dispositivos Windows y ayuda a proteger los datos cifrándolos. Si activa el cifrado del dispositivo, solo podrán tener acceso a su dispositivo y a sus datos los usuarios autorizados. Consulte [activar el cifrado del dispositivo](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
@@ -65,7 +65,7 @@ Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, e
 **Activar Firewall de Windows**<p>
 Siempre debe ejecutar Firewall de Windows incluso si tiene activado otro Firewall. Si se desactiva el Firewall de Windows, es posible que el dispositivo (y la red, si tiene uno) sean más vulnerables a un acceso no autorizado. Consulte [activar o desactivar Firewall de Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones
 
-## <a name="mactabmac"></a>[Mac](#tab/Mac)
+## <a name="mac"></a>[Mac](#tab/Mac)
 **Usar FileVault para cifrar el disco Mac**<p>
 El cifrado de disco protege los datos cuando se pierden o roban dispositivos. FileVault el cifrado de disco completo ayuda a impedir el acceso no autorizado a la información del disco de inicio. Consulte [usar FileVault para cifrar el disco de inicio en su Mac](https://support.apple.com/HT204837) para obtener instrucciones.
 

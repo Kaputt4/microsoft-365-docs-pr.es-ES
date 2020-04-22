@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en MyDomain para Office 365
+title: Crear registros DNS en MiDominio para Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,36 +19,36 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
-description: Obtenga información acerca de cómo verificar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online y otros servicios en mi dominio para Office 365.
-ms.openlocfilehash: 1a75c2ab0077cac07781e5102c43e53ed965b1df
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Obtenga información acerca de cómo verificar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online y otros servicios en Mi dominio para Microsoft.
+ms.openlocfilehash: 4f26da1e1e148307cd2b5cdf9aeed97c610ec8dd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211696"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629436"
 ---
-# <a name="create-dns-records-at-mydomain-for-office-365"></a>Crear registros DNS en MiDominio para Office 365
+# <a name="create-dns-records-at-mydomain-for-microsoft"></a>Crear registros DNS en MiDominio para Microsoft
 
 
   
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
   
 > [!CAUTION]
-> El sitio web MyDomain no admite los registros SRV, lo que significa que varias características de Skype Empresarial Online y Outlook Web App no funcionarán. No importa qué plan de Office 365 use, si administra sus registros DNS con MyDomain, existen [limitaciones de servicio considerables](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) y puede que quiera cambiar a un proveedor de host DNS diferente. 
+> El sitio web MyDomain no admite los registros SRV, lo que significa que varias de las características de Skype Empresarial Online y Outlook Web App no funcionarán. No importa qué plan de Microsoft use, si administra sus registros DNS con MyDomain, existen [limitaciones de servicio considerables](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) y puede que quiera cambiar a un proveedor de host DNS diferente. 
   
-Si decide administrar sus propios registros DNS de Office 365 en MyDomain a pesar de las limitaciones del servicio, siga los pasos de este artículo para configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
+Si decide administrar sus propios registros DNS de Microsoft en MyDomain a pesar de las limitaciones del servicio, siga los pasos de este artículo para configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
     
-Después de agregar estos registros a MyDomain, su dominio estará configurado para trabajar con los servicios de Office 365.
+Después de agregar estos registros a MyDomain, su dominio estará configurado para trabajar con los servicios de Microsoft.
   
-Para obtener información acerca del hospedaje web y de DNS para sitios web con Office 365, consulte [Usar un sitio web público con Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Para obtener información acerca del hospedaje web y de DNS para sitios web con Microsoft, vea [Usar un sitio web público con Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="BKMK_verify"> </a>
 
-Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es de su propiedad. Si puede iniciar sesión en la cuenta en su registrador de dominios y crear el registro DNS, Office 365 sabrá que es el propietario del dominio.
+Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -68,17 +68,17 @@ Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es
     ||
     |:-----|
     |**Contenido** <br/> |
-    |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Elija **Agregar**.
     
 8. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro.
   
-Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
+1. En el centro de administración de Microsoft, diríjase a la página **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Dominios</a>.
     
 2. En la página **Dominios**, elija el dominio que está verificando. 
     
@@ -87,9 +87,9 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 4. En la página**Verificar dominio**, elija **Verificar**.
     
 > [!NOTE]
-> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. Para empezar, vaya a su página de dominios en MyDomain a través de [este vínculo](https://www.mydomain.com/controlpanel). Se le pedirá que primero que inicie sesión.
@@ -108,7 +108,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Prioridad**|**Host**|**Señala a:**|
     |:-----|:-----|:-----|
-    |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtenga la \<*clave-de-dominio*\> desde su cuenta de Office 365. > [¿Cómo encuentro esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |@  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtenga la \<*clave-de-dominio*\> desde su cuenta de Microsoft. > [¿Cómo encuentro esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
@@ -124,7 +124,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![MyDomain-BP-Configure-2-5](../../media/d6b70eb7-b79c-499e-82ff-ecef2e300368.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Agregar los registros CNAME necesarios para Office 365
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Agregar los registros CNAME necesarios para Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
 1. Para empezar, vaya a su página de dominios en MyDomain a través de [este vínculo](https://www.mydomain.com/controlpanel). Se le pedirá que primero que inicie sesión.
@@ -167,7 +167,7 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a single SPF record that includes both sets of values. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En vez de eso, agregue los valores necesarios de Microsoft para el registro actual, de modo que solo tenga un único registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. Para empezar, vaya a su página de dominios en MyDomain a través de [este vínculo](https://www.mydomain.com/controlpanel). Se le pedirá que primero que inicie sesión.
     
@@ -193,12 +193,12 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![MyDomain-BP-Configure-4-3](../../media/b3670563-b620-470c-a42b-2c77888981f8.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Agregar los dos registros SRV necesarios para Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Agregar los dos registros SRV necesarios para Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 > [!CAUTION]
-> El sitio web MyDomain no admite los registros SRV, lo que significa que varias características de Skype Empresarial Online y Outlook Web App no funcionarán. No importa qué plan de Office 365 use, si administra sus registros DNS con MyDomain, existen [limitaciones de servicio considerables](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) y puede que quiera cambiar a un proveedor de host DNS diferente. 
+> El sitio web MyDomain no admite los registros SRV, lo que significa que varias de las características de Skype Empresarial Online y Outlook Web App no funcionarán. No importa qué plan de Microsoft use, si administra sus registros DNS con MyDomain, existen [limitaciones de servicio considerables](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) y puede que quiera cambiar a un proveedor de host DNS diferente. 
   
 > [!NOTE]
-> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   

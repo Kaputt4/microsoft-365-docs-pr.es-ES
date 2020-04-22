@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 6114642b5899e2708703e3c0d62cadde25296504
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153755"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632820"
 ---
 # <a name="compliance"></a>Cumplimiento
 
 Cuando usa Microsoft Managed Desktop IT as-a-Service, Microsoft le proporciona un conjunto completo de ofertas de cumplimiento. Este esfuerzo ayuda a su organización a cumplir con los diversos requisitos de cumplimiento.
 
-## <a name="compliance-offerings"></a>Oferta de cumplimiento
+## <a name="compliance-offerings"></a>Ofertas de cumplimiento
 
 Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 

@@ -1,5 +1,5 @@
 ---
-title: Recomendaciones de directiva de contraseñas para Office 365
+title: Recomendaciones de directiva de contraseñas
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516928"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627829"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Recomendaciones de directiva de contraseñas para Office 365
+# <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
  
-Como administrador de una organización de Office 365, usted es el responsable de configurar la Directiva de contraseñas para los usuarios de su organización. El establecimiento de la Directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
+Como administrador de una organización, usted es el responsable de configurar la directiva de contraseñas para los usuarios de su organización. El establecimiento de la Directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
   
-Para determinar con qué frecuencia expiran las contraseñas de Office 365 en la organización, consulte [establecer la Directiva de expiración de contraseñas para Office 365](../manage/set-password-expiration-policy.md).
+Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
   
 ## <a name="understanding-password-recommendations"></a>Comprender las recomendaciones de contraseña
 

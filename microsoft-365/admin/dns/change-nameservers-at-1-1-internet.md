@@ -1,5 +1,5 @@
 ---
-title: Cambiar los servidores DNS para configurar Office 365 con 1&1 IONOS
+title: Cambiar los servidores DNS para configurar Microsoft con 1&1 IONOS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Obtenga información sobre cómo configurar Office 365 operado por 21Vianet para administrar los registros DNS, cuando 1&1 Internet es el proveedor de host DNS.
-ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212370"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630012"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Cambiar los servidores DNS para configurar Office 365 con 1&1 IONOS
+# <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Cambiar los servidores DNS para configurar Microsoft 365 con 1&1 IONOS
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.md)** si no encuentra lo que busca. 
   
-Siga estas instrucciones si quiere que Office 365 administre automáticamente los registros DNS de Office 365. (Si lo prefiere, puede [administrar todos los registros DNS de Office 365 en 1&1 IONOS](create-dns-records-at-1-1-internet.md)). 
+Siga estas instrucciones si desea que Microsoft 365 administre los registros DNS de Microsoft 365 por usted. (Si lo prefiere, puede [administrar todos los registros DNS de Microsoft 365 en 1&1 IONOS](create-dns-records-at-1-1-internet.md)). 
   
 
     
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
 
-Para que pueda usar el dominio con Office 365, tenemos que asegurarnos de que es de su propiedad. Si puede iniciar sesión en la cuenta en su registrador de dominios y crear el registro DNS, Office 365 sabrá que es el propietario del dominio.
+Antes de usar el dominio con Microsoft 365, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS demuestra a Microsoft 365 que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -62,7 +62,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
 ||||
 |:-----|:-----|:-----|
 |**Tipo** <br/> |**Prefijo** <br/> |**Valor de nombre** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Nota**: este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Nota**: este es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Seleccione **Guardar**y vuelva a **Guardar** . 
@@ -71,9 +71,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
     
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Office 365 y solicitará que Office 365 lo busque.
+Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft 365 y pedirá a Microsoft 365 que busque el registro.
   
-Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
+Cuando Microsoft 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -84,16 +84,16 @@ Cuando Office 365 encuentre el registro TXT correcto, se comprobará su dominio.
 4. En la página**Verificar dominio**, elija **Verificar**.
     
 > [!NOTE]
-> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Encontrar y solucionar problemas después de agregar el dominio o registros DNS en Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Buscar y corregir problemas después de agregar el dominio o los registros DNS en Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Cambiar los registros del servidor de nombres (o NS) de su dominio
 
-Para completar la configuración del dominio con Office 365, debe cambiar los registros NS del dominio en su registrador de dominios para que apunten a los servidores DNS primario y secundario de Office 365. Esto configura Office 365 para actualizar los registros DNS del dominio. Agregaremos todos los registros para que el correo electrónico, Skype Empresarial Online y su sitio web público funcionen con su dominio, y ya lo tendrá todo preparado.
+Para completar la configuración de su dominio con Microsoft 365, debe cambiar los registros NS de su dominio en su registrador de dominios para que apunten a los servidores de nombres principal y secundario de Microsoft 365. Esto configura Microsoft 365 para que actualice los registros DNS del dominio por usted. Agregaremos todos los registros para que el correo electrónico, Skype Empresarial Online y su sitio web público funcionen con su dominio, y ya lo tendrá todo preparado.
   
 > [!CAUTION]
-> Si cambia los registros NS del dominio para que apunten a los servidores DNS de Office 365, esto afectará a todos los servicios que estén asociados actualmente con su dominio. Por ejemplo, todos los correos que se envíen a su dominio (como, por ejemplo, rob@ *su_dominio*  .com) comenzarán a llegar a Office 365 después de realizar este cambio. 
+> Al cambiar los registros NS de su dominio para que apunten a los servidores de nombres de Microsoft 365, se ven afectados todos los servicios que están actualmente asociados a su dominio. Por ejemplo, todo el correo electrónico enviado a su dominio (como rob@ *your_domain* . com) empezará a llegar a Microsoft 365 después de realizar este cambio. 
   
-¿Preparado para cambiar los registros NS para que Office 365 pueda configurar su dominio? Siga los pasos siguientes o [vea el vídeo (empieza en 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+¿Está preparado para cambiar los registros NS para que Microsoft 365 pueda configurar su dominio? Siga los pasos siguientes o [vea el vídeo (empieza en 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 > [!IMPORTANT]
 >  El siguiente procedimiento le mostrará cómo eliminar cualquier otro de los servidores de nombres no deseados de la lista, y también cómo agregar los servidores de nombres correctos si aún no aparecen. > cuando haya completado los pasos de esta sección, los únicos servidores DNS que se deben enumerar son los cuatro: > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -149,7 +149,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     ![Selección de la opción Guardar en el cuadro de diálogo Editar configuración DNS](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Las actualizaciones de los registros de los servidores de nombres pueden tardar varias horas en propagarse por el sistema DNS de Internet. A continuación, su correo electrónico y otros servicios de Office 365 estarán listos para funcionar con su dominio. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. El correo electrónico y otros servicios de Microsoft estarán todos establecidos para funcionar con su dominio. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Si ya existen servidores de nombres enumerados
 
@@ -180,7 +180,7 @@ Para completar la configuración del dominio con Office 365, debe cambiar los re
     ![Selección de la opción Guardar en el cuadro de diálogo Editar configuración DNS](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Las actualizaciones de los registros de los servidores de nombres pueden tardar varias horas en propagarse por el sistema DNS de Internet. A continuación, su correo electrónico y otros servicios de Office 365 estarán listos para funcionar con su dominio. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. El correo electrónico y otros servicios de Microsoft estarán todos establecidos para funcionar con su dominio. 
   
 
 

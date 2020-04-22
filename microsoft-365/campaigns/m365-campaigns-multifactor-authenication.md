@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurar la autenticación multifactor.
-ms.openlocfilehash: b0594551b9efb907dfba374f781f21b8850f85d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35171688f9e224bdcb9ce8a592cc80124d253d2d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633706"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurar la autenticación multifactor
 
@@ -36,7 +36,7 @@ La autenticación multifactor proporciona más seguridad a su empresa. Una vez q
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR] 
 
-Para obtener más información, vea [set up multifactor Authentication en Microsoft 365 Business](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225) .
+Para obtener más información, vea [set up multifactor Authentication en Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Usar la aplicación de Outlook en los dispositivos
 

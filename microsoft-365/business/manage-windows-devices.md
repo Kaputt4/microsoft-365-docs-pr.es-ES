@@ -1,5 +1,5 @@
 ---
-title: Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business
+title: Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 para la empresa
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Obtenga información sobre cómo habilitar Microsoft 365 para proteger dispositivos Windows 10 locales Unidos a directorio activo en tan solo unos pocos pasos.
-ms.openlocfilehash: 625eb7ac344b060409101d650ff30044d073f5bf
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 431c1be74723e156befb13ffe1ed98b48b9a23cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561468"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633291"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 Business
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 para la empresa
 
-Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Business para proteger sus dispositivos con Windows 10 y mantener al mismo tiempo el acceso a los recursos locales que requieren autenticación local.
+Si su organización usa Active Directory de Windows Server local, puede configurar Microsoft 365 para la empresa para que proteja los dispositivos con Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local.
 Para configurar esta protección, puede implementar dispositivos de **Azure ad Unidos híbridos**. Estos dispositivos se unen a su Active Directory local y a su Azure Active Directory.
 
 Este vídeo describe los pasos para configurar esta configuración para el escenario más común, que también se detalla en los pasos siguientes.
@@ -56,9 +56,9 @@ Antes de sincronizar los usuarios y los equipos desde el dominio local de Active
 Para sincronizar los usuarios, los grupos y los contactos de Active Directory local con Azure Active Directory, instale Azure Active Directory Connect y configure la sincronización de directorios. Consulte [configurar la sincronización de directorios para Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) para obtener más información.
 
 > [!NOTE]
-> Los pasos son exactamente iguales para Microsoft 365 Business. 
+> Los pasos son exactamente los mismos para Microsoft 365 para empresas. 
 
-A medida que configure las opciones de Azure AD Connect, le recomendamos que habilite la **sincronización de contraseña**, el **Inicio de sesión único sin problemas**y la característica de **escritura diferida de contraseñas** , que también se admite en Microsoft 365 Business.
+A medida que configure las opciones de Azure AD Connect, le recomendamos que habilite la **sincronización de contraseña**, el **Inicio de sesión único sin problemas**y la característica de **escritura diferida de contraseñas** , que también se admite en Microsoft 365 para empresas.
 
 > [!NOTE]
 > Hay algunos pasos adicionales para la escritura diferida de contraseñas más allá de la casilla en Azure AD Connect. Para obtener más información, consulte [How-to: configure password reescritura](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 

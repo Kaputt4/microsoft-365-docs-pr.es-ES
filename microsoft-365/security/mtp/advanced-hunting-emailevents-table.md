@@ -1,7 +1,7 @@
 ---
 title: La tabla EmailEvents en el esquema de búsqueda avanzada
-description: Obtenga más información sobre los eventos asociados con los correos electrónicos de Office 365 en la tabla EmailEvents del esquema de búsqueda avanzada
-keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, identificador de mensaje de red, remitente, destinatario identificador de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de phishing, número de datos adjuntos, recuento de vínculos
+description: Obtenga información sobre los eventos asociados a los mensajes de correo electrónico de Microsoft en la tabla EmailEvents del esquema de búsqueda avanzada.
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, identificador de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de datos adjuntos, veredicto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633536"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `EmailId` | cadena | Identificador único del destinatario y correo electrónico. |
-| `NetworkMessageId` | cadena | Identificador único para el correo electrónico generado por Office 365. |
+| `NetworkMessageId` | cadena | Identificador único del correo electrónico generado por Microsoft 365 |
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
 | `SenderMailFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado FROM, que es visible para los destinatarios del correo electrónico en los clientes de correo. |

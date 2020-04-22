@@ -14,20 +14,20 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066917"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631590"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 Enterprise
 
 *Esta guía del laboratorio de pruebas solo se puede usar para entornos de prueba de Microsoft 365 Enterprise.*
 
-Con las instrucciones de este artículo, agregará una directiva de cumplimiento de dispositivos de Intune para dispositivos Windows 10 y Office 365 ProPlus a su entorno de prueba empresarial 365 de Microsoft.
+Con las instrucciones de este artículo, agregará una directiva de cumplimiento de dispositivos de Intune para dispositivos Windows 10 y Microsoft 365 apps for Enterprise a su entorno de prueba empresarial 365 de Microsoft.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
@@ -80,7 +80,7 @@ En esta fase, creará una directiva de cumplimiento de dispositivos para disposi
 
 17. En el panel **Agregar aplicación** , seleccione **información del conjunto de aplicaciones**.
  
-18. En el panel de **información del conjunto de aplicaciones** , escriba **Office 365 ProPlus** en el nombre del **conjunto** de aplicaciones y la **Descripción del conjunto**.
+18. En el panel de **información del conjunto de aplicaciones** , escriba **Microsoft 365 apps for Enterprise** en **el nombre del conjunto** y la descripción del **conjunto**.
 Haga clic en Aceptar.
 
 19. En el panel **Agregar aplicación** , seleccione **configurar conjunto de aplicaciones**y, a continuación, haga clic en **Aceptar**.
@@ -93,7 +93,7 @@ Haga clic en Aceptar.
 
 Ahora tiene una directiva de cumplimiento de dispositivos para probar las aplicaciones seleccionadas en la Directiva de cumplimiento de dispositivos de **Windows 10** y para los miembros del grupo de **usuarios de dispositivos de Windows 10 administrados** . Tenga en cuenta que, al seleccionar Office 365 como tipo de grupo, se crearán recursos adicionales. 
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funciones de [Administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en su entorno de prueba.
 

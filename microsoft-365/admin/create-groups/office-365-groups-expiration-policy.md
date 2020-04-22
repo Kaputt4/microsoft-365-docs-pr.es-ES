@@ -1,5 +1,5 @@
 ---
-title: Directiva de expiración de grupo de Office 365
+title: Directiva de expiración de grupos
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre las directivas de expiración de grupos de 365 de Office.
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225924"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630060"
 ---
-# <a name="office-365-group-expiration-policy"></a>Directiva de expiración de grupo de Office 365
+# <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
-Con el aumento en el uso de los grupos de Office 365, los administradores y los usuarios necesitan una forma de limpiar los grupos que no se usan. Las directivas de expiración pueden ayudar a quitar los grupos inactivos del sistema y a hacer los elementos más limpios.
+Con el aumento en el uso de grupos de Microsoft 365, los administradores y los usuarios necesitan una forma de limpiar los grupos que no se usan. Las directivas de expiración pueden ayudar a quitar los grupos inactivos del sistema y a hacer los elementos más limpios.
 
 Cuando un grupo expira, también se eliminan todos los servicios asociados (buzón de correo, programador, sitio de SharePoint, equipo, etc.).
 
@@ -46,14 +46,14 @@ Los grupos que se están usando activamente se renuevan automáticamente. Cualqu
 Es importante saber que la expiración está desactivada de forma predeterminada. Los administradores tendrán que habilitarla para su organización si desean usarla.
 
 > [!NOTE]
-> La configuración y el uso de la Directiva de expiración de los grupos de Office 365 requieren la posesión de licencias de Azure AD Premium, pero no necesariamente asignarlas a los miembros de todos los grupos a los que se aplica la Directiva de expiración. Para obtener más información, consulte [Getting Started with Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> La configuración y el uso de la Directiva de expiración de los grupos de Microsoft 365 requieren la posesión de licencias de Azure AD Premium, pero no necesariamente asignarlas a los miembros de todos los grupos a los que se aplique la Directiva de expiración. Para obtener más información, consulte [Getting Started with Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>¿Quién puede configurar y usar la Directiva de expiración de grupos de Office 365?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>¿Quién puede configurar y usar la Directiva de expiración de grupos de 365 de Microsoft?
 
 |Role|Qué pueden hacer|
 |---------|---------|
-|Office 365 administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de Office 365.|
-|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Office 365 que son de su propiedad|
+|Administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de 365 de Microsoft.|
+|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
@@ -77,7 +77,7 @@ Solo se notificará a los propietarios del grupo por correo electrónico. Si el 
 
 30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico que ha especificado para los grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no la renuevan, recibirán otra renovación de correo electrónico 15 días antes de la fecha de expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
 
-Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restaurar un grupo de Office 365 eliminado](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
+Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
@@ -85,4 +85,4 @@ Si, por algún motivo, ninguno de los propietarios o administradores renuevan el
 
 [Asignar un nuevo propietario a un grupo huérfano](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configuración de la expiración de grupos de Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Configurar la expiración de grupos de 365 de Microsoft](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

@@ -1,5 +1,5 @@
 ---
-title: Usar el código de promoción de Office 365 para reducir el precio
+title: Usar el código de promoción para reducir el precio
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Obtenga información sobre cómo aplicar un código promocional a su suscripción de Office 365 para reducir el precio y cómo solucionar problemas del código de promoción en caso de que se produce un error.
+description: Obtenga información sobre cómo aplicar un código promocional a su suscripción de Microsoft 365 para reducir el precio y cómo solucionar problemas del código de promoción en caso de que se produce un error.
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42246928"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631862"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>Usar el código de promoción de Office 365 para reducir el precio
+# <a name="use-your-promo-code-to-reduce-price"></a>Usar el código de promoción para reducir el precio
 
 Cuando compre una suscripción, puede usar un código promocional para reducir el precio. Lea este artículo para obtener información sobre cómo aplicar un código de promoción a su suscripción, para obtener información sobre los [términos del código de promoción](#promo-code-terms)y para [solucionar problemas de códigos de promoción](#troubleshooting-promo-codes).
   
@@ -47,7 +47,7 @@ En cualquier momento después de completar la compra, puede ver el descuento cre
   
 ## <a name="promo-code-terms"></a>Términos de los códigos de promoción
 
-Las siguientes instrucciones se aplican a códigos de promoción para suscripciones a Office 365 para empresas.
+Las siguientes directrices se aplican a los códigos de promoción para las suscripciones de Microsoft 365 para empresas.
   
 - **Cantidad de códigos de promoción por suscripción** Puede utilizar un código de promoción para varias suscripciones en el mismo orden, pero no puede usar varios códigos de promoción para la misma suscripción. 
     

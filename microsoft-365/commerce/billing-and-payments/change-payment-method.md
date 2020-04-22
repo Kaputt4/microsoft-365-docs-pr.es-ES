@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142602"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632736"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -64,9 +64,9 @@ Cuando compre Office 365 para empresas, podrá elegir pagar con tarjeta de créd
 > [!NOTE]
 > Después de cambiar el método de pago, los usuarios seguirán teniendo las mismas asignaciones de licencia que antes.
   
- **¿Desea cambiar la frecuencia de pago?** Si desea cambiar la frecuencia de pago de la suscripción, ya sea de anual a mensual o mensual a anual, necesitará [llamar al soporte técnico de Office 365](../../admin/contact-support-for-business-products.md) para obtener ayuda.
+ **¿Desea cambiar la frecuencia de pago?** Si desea cambiar la frecuencia de pago de la suscripción, ya sea de anual a mensual o mensual a anual, necesitará [llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md) para obtener ayuda.
   
- **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria en Office 365 para empresas](add-update-or-remove-credit-card-or-bank-account.md).
+ **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md).
   
  **¿Qué debo hacer si tengo un saldo pendiente?**
   
@@ -87,6 +87,7 @@ Si va a cambiar de *tarjeta de crédito a factura o cuenta bancaria*, cualquier 
   
 Al cambiar el pago por factura al pago con una tarjeta de crédito o cuenta bancaria, creamos automáticamente una nueva suscripción para usted, mueve los usuarios a la nueva suscripción y, a continuación, deshabilita su suscripción antigua. No se preocupe, los usuarios no verán una interrupción del servicio y toda la información estará disponible a través de la nueva suscripción.
 
+
 1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas**.
@@ -100,6 +101,7 @@ Al cambiar el pago por factura al pago con una tarjeta de crédito o cuenta banc
 6. Si agrega un método de pago, escriba los detalles de la tarjeta o la cuenta y, después, seleccione **Guardar**.
   
 7. Compruebe que el método de pago seleccionado sea correcto y, a continuación, seleccione **Guardar**.
+
 
 ::: moniker-end
 
@@ -140,6 +142,7 @@ Puede cambiar a pagar mediante factura solo si el pedido está por encima de una
 
 Si la cantidad de su pedido es demasiado alta, puede que sea necesaria una comprobación de crédito. Si es así, verá el mensaje "no se puede cambiar a factura. Su pedido requiere una comprobación de crédito. " En este caso, cambiará a pagar mediante factura manualmente. Siga estos pasos para completar el cambio manual.
 
+
 1. Vaya a <a href="https://Office365.com" target="_blank">Office365.com</a> y compre la misma suscripción que la que tiene actualmente. En la desprotección, elija la opción de pago mediante factura.
 
 > [!IMPORTANT]
@@ -147,7 +150,7 @@ Si la cantidad de su pedido es demasiado alta, puede que sea necesaria una compr
 
 2. Una vez completada la compra, cancele la suscripción original. Los usuarios se mueven automáticamente a la nueva suscripción.
 
-Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambiar al pago mediante factura.
+Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambiar al pago mediante factura. 
 
 1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
 
@@ -164,6 +167,7 @@ Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambi
 7. Cuando haya terminado, seleccione **Guardar**.
 
 8. Compruebe que el método de pago seleccionado sea correcto y, a continuación, seleccione **Guardar**.
+
 
 ::: moniker-end
 
@@ -193,9 +197,16 @@ Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambi
 
 Puede usar el siguiente procedimiento en cualquier momento para comprobar el método de pago que está configurado para una suscripción.
 
+
 1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
 
 2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en la sección **facturación** .
+
+### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Usar el centro de administración antiguo para comprobar el método de pago que está configurado
+
+1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+
+2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en **método de pago**.
 
 ::: moniker-end
 

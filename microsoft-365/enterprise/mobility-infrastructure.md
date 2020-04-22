@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153897"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631530"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: administración de dispositivos móviles para Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ En esta fase, los dispositivos se inscriben en Intune y se crean y se aplican la
 
 ## <a name="step-1-plan-for-your-scenario"></a>Paso 1: planear su escenario
 
-Una de las principales razones para administrar dispositivos móviles es proteger y proteger los recursos de la organización. [Formas comunes de usar Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) enumera algunos ejemplos del mundo real, incluidos la protección del correo electrónico y los datos de Office 365.
+Una de las principales razones para administrar dispositivos móviles es proteger y proteger los recursos de la organización. [Formas comunes de usar Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) enumera algunos ejemplos del mundo real, incluidos la protección del correo electrónico y los datos de Microsoft.
 
 Intune le ofrece opciones para administrar el acceso a su organización mediante el uso de la administración de dispositivos móviles (MDM) o la administración de aplicaciones móviles (MAM). MDM es cuando los usuarios "inscriben" sus dispositivos en Intune. Una vez inscritos, son dispositivos administrados y pueden recibir directivas, reglas y opciones de configuración usadas por la organización. Por ejemplo, puede instalar aplicaciones específicas, crear una directiva de contraseñas, instalar una conexión VPN, etc.
 
@@ -47,7 +47,7 @@ También determinará cómo va a administrar los dispositivos personales o de pr
 A continuación, obtenga los requisitos previos en función de sus requisitos y escenarios creados en el paso anterior. [Implementar el plan](https://docs.microsoft.com/intune/planning-guide-onboarding) enumera todos los requisitos. Estos son los elementos más importantes que necesita para Intune con Microsoft 365:
 
 - **Suscripción de Intune**: incluida con Microsoft 365 y le da acceso a Microsoft Intune en [Azure portal](https://portal.azure.com)
-- **Suscripción de office 365**: se incluye con Microsoft 365 y se usa para las aplicaciones de Office, incluido el correo electrónico.
+- **Suscripción a microsoft 365**: incluida con Microsoft 365, que se usa para las aplicaciones de Office, incluido el correo electrónico
 - **Azure Active Directory (Azure ad) Premium**: incluido con Microsoft 365, y se usa para crear grupos de seguridad o usuarios. Estos grupos reciben directivas de Intune que crea, como forzar una longitud de contraseña para desbloquear un dispositivo. Los grupos que se crean en la [fase 2:](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) se puede usar Identity.
 
 Puede haber algunos requisitos adicionales, según las necesidades de su organización. Por ejemplo, si va a administrar dispositivos iOS, necesitará un certificado de inserción de MDM de Apple. Si está usando el Exchange local, necesitará el conector de Exchange local. Estos requisitos adicionales se describen a continuación cuando llegue a estos pasos.

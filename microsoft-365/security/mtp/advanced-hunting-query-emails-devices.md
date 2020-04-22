@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8310a9a57c8dc7406c0b1d56b20009b6400abcb1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928989"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633512"
 ---
 # <a name="hunt-for-threats-across-devices-and-emails"></a>Búsqueda de amenazas en dispositivos y mensajes de correo electrónico
 
@@ -31,7 +31,7 @@ ms.locfileid: "42928989"
 
 
 
-La [Búsqueda avanzada](advanced-hunting-overview.md) en la Protección contra amenazas de Microsoft le permite buscar de forma proactiva amenazas en sus dispositivos Windows y en los correos electrónicos de Office 365. Éstos son algunos escenarios de búsqueda y consultas de ejemplo que puedan ayudarle a explorar la forma en que puede crear consultas que cubran tanto dispositivos como mensajes de correo electrónico.
+La [búsqueda avanzada](advanced-hunting-overview.md) de Microsoft Threat Protection le permite buscar de forma proactiva las amenazas en los dispositivos Windows y los correos electrónicos de Microsoft. Éstos son algunos escenarios de búsqueda y consultas de ejemplo que puedan ayudarle a explorar la forma en que puede crear consultas que cubran tanto dispositivos como mensajes de correo electrónico.
 
 ## <a name="obtain-user-accounts-from-email-addresses"></a>Obtener cuentas de usuario a través de las direcciones de correo electrónico
 Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Para ello, utilice el *host local* de la dirección de correo electrónico:

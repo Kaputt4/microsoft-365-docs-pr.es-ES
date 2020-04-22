@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: d04070bfcec0649c5c4a1a79c082f5c5b43ad5eb
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081297"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631410"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -57,9 +57,9 @@ Esta directiva impide que los clientes de ActiveSync omitan otras reglas de acce
 
 1. Siga "paso 2: configurar una directiva de acceso condicional de Azure AD para Exchange Online con ActiveSync (EAS)" en el [escenario 1: las aplicaciones de Office 365 requieren aplicaciones aprobadas con directivas de protección de aplicaciones](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), lo que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online.
 
-## <a name="setup-office-365-message-encryption"></a>Configurar el cifrado de mensajes de Office 365
+## <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 
-Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprovechan las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier persona en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Office 365, así como con clientes que no son de Office 365 con Outlook.com, gmail y otros servicios de correo electrónico.
+Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprovechan las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier persona en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como no clientes que usen Outlook.com, gmail y otros servicios de correo electrónico.
 
 Para obtener más información, vea [set up New Office 365 Message Encryption Capabilities](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e).
 

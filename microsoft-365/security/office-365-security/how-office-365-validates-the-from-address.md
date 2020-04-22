@@ -1,5 +1,5 @@
 ---
-title: Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
+title: Cómo Microsoft 365 valida la dirección from para evitar la suplantación de identidad
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Borrar los requisitos de las direcciones de correo electrónico de los mensajes entrantes en Office 365. A partir del 2017 de noviembre, el servicio requiere ahora compatibilidad con RFC desde direcciones para ayudar a evitar la suplantación de identidad.
-ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Borrar los requisitos de las direcciones de correo electrónico de los mensajes entrantes en Microsoft 365. A partir del 2017 de noviembre, el servicio requiere ahora compatibilidad con RFC desde direcciones para ayudar a evitar la suplantación de identidad.
+ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529006"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633983"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
+# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Microsoft 365 valida la dirección from para evitar la suplantación de identidad
 
-Las cuentas de correo electrónico de Office 365 reciben un número cada vez mayor de ataques de suplantación de identidad. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
+Las cuentas de correo electrónico de Microsoft 365 reciben un número cada vez mayor de ataques de suplantación de identidad. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Microsoft 365 y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
 
 **Notas**:
 
@@ -75,31 +75,31 @@ Las siguientes direcciones de correo electrónico son válidas:
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>`(No se recomienda porque el nombre para mostrar no está incluido entre comillas dobles).
+- `From: Microsoft 365 <sender@contoso.com>`(No se recomienda porque el nombre para mostrar no está incluido entre comillas dobles).
 
 Las siguientes direcciones de correo electrónico no son válidas:
 
-- **No desde dirección**: algunos mensajes automatizados no incluyen una dirección de de. En el pasado, cuando Office 365 o Outlook.com recibía un mensaje sin una dirección de desde, el servicio agregaba el siguiente valor predeterminado de: Address para que el mensaje se pudiera entregar:
+- **No desde dirección**: algunos mensajes automatizados no incluyen una dirección de de. En el pasado, cuando Microsoft 365 o Outlook.com recibía un mensaje sin una dirección de desde, el servicio agregaba el siguiente valor predeterminado de: Address para que el mensaje se pudiera entregar:
 
   `From: <>`
 
   Ahora, ya no se aceptan los mensajes con una dirección desde en blanco.
 
-- `From: Office 365 sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
+- `From: Microsoft 365 sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(Texto después de la dirección de correo electrónico).
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Texto después de la dirección de correo electrónico).
 
 - `From: Sender, Example <sender.example@contoso.com>`(El nombre para mostrar contiene una coma, pero no se incluye entre comillas dobles).
 
-- `From: "Office 365 <sender@contoso.com>"`(El valor completo se incluye incorrectamente entre comillas dobles).
+- `From: "Microsoft 365 <sender@contoso.com>"`(El valor completo se incluye incorrectamente entre comillas dobles).
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
 
-- `From: Office 365<sender@contoso.com>`(Sin espacio entre el nombre para mostrar y el corchete angular de apertura).
+- `From: Microsoft 365<sender@contoso.com>`(Sin espacio entre el nombre para mostrar y el corchete angular de apertura).
 
-- `From: "Office 365"<sender@contoso.com>`(Sin espacio entre el signo de comillas tipográficas y el corchete angular de cierre).
+- `From: "Microsoft 365"<sender@contoso.com>`(Sin espacio entre el signo de comillas tipográficas y el corchete angular de cierre).
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Suprimir las respuestas automáticas a su dominio personalizado
 
@@ -115,16 +115,16 @@ Por ejemplo:
 noreply.contoso.com IN MX .
 ```
 
-Para obtener más información acerca de la configuración de registros MX, vea [crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Para obtener más información acerca de la configuración de registros MX, vea [crear registros DNS en cualquier proveedor de hospedaje DNS para Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Para obtener más información acerca de la publicación de un MX nulo, consulte [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Invalidar de la aplicación de direcciones
 
-Para omitir los requisitos de dirección de de para el correo electrónico entrante, puede usar la lista de direcciones IP permitidas (filtrado de la conexión) o las reglas de flujo de correo (también conocidas como reglas de transporte), como se describe en [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
+Para omitir los requisitos de dirección de de para el correo electrónico entrante, puede usar la lista de direcciones IP permitidas (filtrado de la conexión) o las reglas de flujo de correo (también conocidas como reglas de transporte), como se describe en [crear listas de remitentes seguros en Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-No puede invalidar los requisitos de dirección de de dirección para el correo electrónico saliente que envíe desde Office 365. Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través del soporte técnico.
+No puede invalidar los requisitos de dirección de de dirección para el correo electrónico saliente que envíe desde Microsoft 365. Además, Outlook.com no permitirá invalidaciones de ningún tipo, incluso a través del soporte técnico.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Otras formas de evitar y proteger contra cybercrimes en Office 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Otras formas de evitar y proteger contra cybercrimes en Microsoft 365
 
-Para obtener más información sobre cómo reforzar la organización contra el phishing, el correo no deseado, las infracciones de datos y otras amenazas, vea las [diez formas principales de proteger los planes de negocio de Office 365 y Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md).
+Para obtener más información sobre cómo reforzar la organización contra el phishing, el correo no deseado, las infracciones de datos y otras amenazas, vea las [diez formas principales de proteger los planes de Microsoft 365 para empresas](../../admin/security-and-compliance/secure-your-business-data.md).

@@ -1,5 +1,5 @@
 ---
-title: Comprenda su factura electrónica para Office 365 para empresas (Taiwán)
+title: Comprenda su factura electrónica para Microsoft 365 for Business (Taiwán)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
-description: Obtenga información sobre la Office 365 for Business e-Invoice para Taiwán.
-ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Obtenga información sobre Microsoft 365 for Business e-Invoice para Taiwán.
+ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632712"
 ---
-# <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Comprenda su factura electrónica para Office 365 para empresas (Taiwán)
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprenda su factura electrónica para Microsoft 365 for Business (Taiwán)
 
 e-Invoice es una factura electrónica emitida por el vendedor después de la compra de acuerdo con los requisitos de e-factura de Taiwán de la autoridad fiscal. La información se transmite a la nube de facturas electrónicas de la autoridad fiscal de Taiwán para la retención de registros. Para obtener información relacionada con la factura electrónica de Taiwán, consulte aquí:<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
@@ -39,7 +39,7 @@ Aquí se incluye una copia de ejemplo de factura electrónica:
 
 Para las compras comerciales, se aplican los impuestos además del precio presupuestado de nuestras suscripciones a una tasa prescrita por la autoridad fiscal de Taiwán. Para cualquier pregunta o planeación relacionada con el impuesto, trabaje con su asesor fiscal.
   
-## <a name="when-will-e-invoice-start-for-my-office-365-services"></a>¿Cuándo se iniciará e-Invoice para mis servicios de Office 365?
+## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>¿Cuándo se iniciará e-Invoice para mis servicios de Microsoft 365?
 
 Microsoft reemplazará la factura actual informatizada por e-facturada el **15 de septiembre**. Para la facturación antes del 15 de septiembre, las facturas de impuestos por copia de papel se reenvían directamente a los clientes. Después del 15 de septiembre, se ofrecerá e-Invoice en el centro de administración de Microsoft 365 para ver, descargar e imprimir, y ya no se le enviará directamente por usted. 
   

@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: c160e928c9a46dd4dc360c5e61d70ca401430378
-ms.sourcegitcommit: a86787b62cec95a392ff2b933f5dc44334ceb7e9
+ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061756"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633304"
 ---
-# <a name="enable-the-report-message-add-in-in-office-365"></a>Habilitar el complemento de mensajes de informe en Office 365
+# <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
 > [!NOTE]
-> Si es administrador de una organización de Office 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento de Office 365. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+> Si es administrador de una organización con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
 
 El complemento de mensajes de informe para Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) permite a los usuarios informar fácilmente de falsos positivos (correo electrónico bueno marcado como malo) o falsos negativos (se permite correo electrónico erróneo) para Microsoft y sus filiales para el análisis. Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico.
 
@@ -38,16 +38,16 @@ Los administradores pueden habilitar el complemento de mensajes de informe para 
 
 Si es un usuario individual, puede [Habilitar el complemento de mensajes de informe para usted mismo](#get-the-report-message-add-in-for-yourself).
 
-Si es un administrador global de Office 365 o un administrador de Exchange Online y Exchange está configurado para usar la autenticación OAuth, puede [Habilitar el complemento de mensajes de informe para su organización](#get-and-enable-the-report-message-add-in-for-your-organization). El complemento de mensajes de informe ahora está disponible a través de la [implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
+Si es administrador global o administrador de Exchange Online y Exchange está configurado para usar la autenticación OAuth, puede [Habilitar el complemento de mensajes de informe para su organización](#get-and-enable-the-report-message-add-in-for-your-organization). El complemento de mensajes de informe ahora está disponible a través de la [implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- El complemento de mensajes de informe funciona con la mayoría de las suscripciones de Office 365 y los productos siguientes:
+- El complemento de mensajes de informe funciona con la mayoría de las suscripciones de Microsoft 365 y los productos siguientes:
 
   - Outlook en la Web
   - Outlook 2013 SP1 o posterior
   - Outlook 2016 para Mac
-  - Outlook incluido con Office 365 ProPlus
+  - Outlook incluido con las aplicaciones de Microsoft 365 para empresas
 
 - El complemento de mensajes de informe no está disponible actualmente para:
 
@@ -58,7 +58,7 @@ Si es un administrador global de Office 365 o un administrador de Exchange Onlin
 
 - Para las instalaciones organizativas, la organización debe estar configurada para usar la autenticación OAuth. Para obtener más información, vea [determinar si la implementación centralizada de complementos funciona para su organización](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Los administradores deben ser miembros del grupo de roles de administradores globales. Para obtener más información, consulte [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Los administradores deben ser miembros del grupo de roles de administradores globales. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtener el complemento de mensajes de informe para usted mismo
 
@@ -70,7 +70,7 @@ Si es un administrador global de Office 365 o un administrador de Exchange Onlin
 
 3. En el cuadro de diálogo que aparece, revise las condiciones de uso y la Directiva de privacidad y, a continuación, haga clic en **continuar**.
 
-4. Inicie sesión en Office 365 con su cuenta profesional o educativa (para uso empresarial) o su cuenta Microsoft (para uso personal).
+4. Inicie sesión con su cuenta profesional o educativa (para uso empresarial) o su cuenta Microsoft (para uso personal).
 
 Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 

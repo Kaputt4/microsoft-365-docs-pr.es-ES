@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0b28cf2ce96e4c040fac0999d669623cef066fe4
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 93da55287c3b7d7498a9c25f4deeb2615da81675
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929497"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633500"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -42,9 +42,9 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP, incluida la información de gravedad y la categorización de amenazas  |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, URL, usuarios o dispositivos asociados con alertas |
 | **[AccountInfo](advanced-hunting-accountinfo-table.md)** | Información de cuenta de varios orígenes, incluido Azure Active Directory |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Eventos de correo electrónico de Office 365, incluidos los eventos de bloqueo y entrega de correo electrónico |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Información sobre los archivos adjuntos de los correos electrónicos de Office 365 |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Información sobre las direcciones URL de los correos electrónicos de Office 365 |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Eventos de correo electrónico de Microsoft 365, incluidos eventos de bloqueo y entrega de correo electrónico |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Información sobre los archivos adjuntos a los correos electrónicos |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Información sobre las direcciones URL en correos electrónicos de Microsoft 365 |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Información del equipo, incluida la información del sistema operativo |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de equipos, incluidos adaptadores, direcciones IP y MAC, así como redes y dominios conectados |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creación de procesos y eventos relacionados |

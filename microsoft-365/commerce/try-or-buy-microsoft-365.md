@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141628"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631910"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
 Microsoft 365 es una solución completa que combina Office 365 y Windows 10 con la seguridad avanzada y la administración de dispositivos. Si ya tiene una suscripción y desea probar o comprar una suscripción de Microsoft 365, la mejor forma de hacerlo es a través del centro de administración. Las siguientes suscripciones de Microsoft 365 están disponibles en el centro de administración para que las pruebe o compre ahora:
   
-- Microsoft 365 Empresa
+- Microsoft 365 empresa Premium
 
 - Microsoft 365 Enterprise E3
 
@@ -41,6 +41,7 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
 ::: moniker range="o365-worldwide"
+
 
 1. Inicie sesión en el centro de administración [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
@@ -67,13 +68,13 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 
 11. En la página **recibo del pedido** , seleccione **continuar**.
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Inicie sesión en el centro de administración [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
-2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización.
+2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
 
 3. Seleccione los puntos suspensivos en el plan 365 de Microsoft que quiera probar o comprar y, a continuación, seleccione **iniciar prueba gratuita**, que le da 25 licencias de usuario por un período de un mes, o puede seleccionar **comprar ahora**.
 
@@ -99,7 +100,6 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Inicie sesión en el centro de administración [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
 
 2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
@@ -127,14 +127,16 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
 
-Después de obtener la nueva suscripción, tiene que asignar una licencia a los usuarios que usarán esa suscripción. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios](../admin/manage/assign-licenses-to-users.md).
+## <a name="next-steps"></a>Pasos siguientes
+
+Después de obtener la nueva suscripción, tiene que asignar una licencia a los usuarios que usarán esa suscripción. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios](../admin/manage/assign-licenses-to-users.md) .
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Comprar otra suscripción a Office 365 para empresas](buy-another-subscription.md)
+[Comprar otra suscripción de Microsoft 365 para empresas](buy-another-subscription.md)
 
-[Comprar o editar un complemento para Office 365 para empresas](buy-or-edit-an-add-on.md)
+[Comprar o editar un complemento para Microsoft 365 para empresas](buy-or-edit-an-add-on.md)
 
 [Agregar espacio de almacenamiento para la suscripción](add-storage-space.md)
+

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Aprenda a establecer la directiva de expiración de contraseñas para su organización en el Centro de administración de Microsoft 365. '
-ms.openlocfilehash: 88953317bea2b96c04c291dd028a4e9131b9a83e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361665"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628057"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -40,12 +40,12 @@ Como administrador, puede hacer que las contraseñas de usuario expiren al cabo 
 
 Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuarios para que expiren después que haya transcurrido cierto tiempo.
 > [!IMPORTANT]
-> Solo los [administradores globales de Office 365](../add-users/about-admin-roles.md) pueden realizar estos pasos.
+> Solo los [administradores globales](../add-users/about-admin-roles.md) pueden realizar estos pasos.
   
 1. En el centro de administración, vaya a **configuración** \> **ajustes**.
 
 2. Vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">seguridad y privacidad</a>.
- Si no es administrador global de Office 365, no verá la opción de seguridad y privacidad.
+ Si no es administrador global, no verá la opción de seguridad y privacidad.
   
 3. Establecer la **directiva de expiración de contraseña**
   
@@ -61,7 +61,7 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
 
 Estos son algunos aspectos que debe conocer acerca del funcionamiento de esta función a partir de enero de 2018:
   
-- Los usuarios que solo usen la aplicación de Outlook no tendrán que restablecer su contraseña de Office 365 hasta que expire en la caché. Esto puede ser varios días después de la fecha de expiración real. No hay ninguna solución para este problema en el nivel de administrador.
+- Los usuarios que solo usen la aplicación de Outlook no tendrán que restablecer su contraseña de Microsoft 365 hasta que expire en la caché. Esto puede ser varios días después de la fecha de expiración real. No hay ninguna solución para este problema en el nivel de administrador.
     
 - Los usuarios no reciben una notificación por correo electrónico de que su contraseña va a expirar en X número de días. ¿Quiere esta característica? **[Vote aquí.](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
@@ -69,10 +69,10 @@ Estos son algunos aspectos que debe conocer acerca del funcionamiento de esta fu
 
 Con Azure AD, puede impedir que los usuarios reutilicen contraseñas anteriores. Vea[ Establecer la directiva de expiración de las contraseñas de la organización](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
 
-Además, si un empleado ha usado un dispositivo móvil para tener acceso a Office 365, puede borrarlo para asegurarse de que la contraseña ya no se almacene y se recicló. Para obtener más información, vea[limpiar y bloquear un dispositivo móvil de un antiguo empleado](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
+Además, si un empleado usó un dispositivo móvil para acceder a Microsoft 365, puede borrarlo para asegurarse de que la contraseña ya no se almacena allí y que se recicló. Para obtener más información, vea[limpiar y bloquear un dispositivo móvil de un antiguo empleado](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-office-365"></a>Sincronice las contraseñas de usuario de los hash de un Active Directory local con Azure AD (Office 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Sincronice las contraseñas de usuario de los hash de un Active Directory local con Azure AD (Microsoft 365)
 
 Este artículo aborda la manera de configurar la directiva de expiración para los usuarios solo de la nube (Azure AD). No se aplica a los usuarios de la identidad híbrida que usan sincronización hash de contraseña, autenticación de acceso directo o Federación local como ADFS.
   

@@ -21,23 +21,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 Business para proteger los dispositivos Windows 10.
-ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 for Business para proteger dispositivos Windows 10.
+ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064980"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633025"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
 
 ## <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
 
-Vea un vídeo sobre cómo proteger los dispositivos Windows 10 con Microsoft 365 Business:
+Vea un vídeo sobre cómo proteger dispositivos Windows 10 con Microsoft 365 para empresas:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
-1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
 2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
   
@@ -59,7 +59,7 @@ Vea un vídeo sobre cómo proteger los dispositivos Windows 10 con Microsoft 365
 
 De forma predeterminada, todas las opciones de configuración están **activadas**. Estas son las opciones de configuración disponibles.
   
-Para obtener más información, consulte [Cómo se asignan las características de protección de Microsoft 365 Business a la configuración de Intune](map-protection-features-to-intune-settings.md). 
+Para obtener más información, vea [cómo se asignan las características de protección de Microsoft 365 Premium a la configuración de Intune](map-protection-features-to-intune-settings.md). 
   
 |||
 |:-----|:-----|

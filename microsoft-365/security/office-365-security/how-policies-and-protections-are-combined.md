@@ -1,5 +1,5 @@
 ---
-title: Orden y prioridad de la protección del correo electrónico en Office 365
+title: Orden y prioridad de la protección del correo electrónico
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, ATP, Microsoft defender ATP, Office 365 ATP, ATP de Azure
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Describe el orden de aplicación de las protecciones de Office 365 y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537418"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633971"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Orden y prioridad de la protección del correo electrónico en Office 365
+# <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
 
-En Office 365, el correo electrónico entrante es evaluado por y, por lo tanto, puede ser marcado por varias formas de protección (malware, correo no deseado, suplantación de identidad (phishing), etc.). Dada toda esta actividad, puede ser difícil determinar qué directiva se ha aplicado y en qué orden.
+Como usuario de Microsoft 365, es posible que el correo electrónico entrante se marque con varias formas de protección. Por ejemplo, las directivas antiphishing de EOP integradas que están disponibles para todos los clientes de Microsoft 365 y las directivas antiphishing de ATP más sólidas que también están disponibles para clientes de la protección contra amenazas avanzada de Office 365. Los mensajes también pasan varios exámenes de detección de malware, correo no deseado, suplantación de identidad (phishing), etc. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
 
 En general, una directiva que se aplica a un mensaje se identifica en el encabezado **X-Forefront-antispam-Report** en la propiedad **CAT (categoría)** . Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 

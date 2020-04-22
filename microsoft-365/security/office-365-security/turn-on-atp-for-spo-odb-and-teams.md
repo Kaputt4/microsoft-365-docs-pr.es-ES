@@ -1,5 +1,5 @@
 ---
-title: Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
+title: Activar ATP para SharePoint, OneDrive y Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y Teams, incluido cómo establecer alertas para los archivos detectados.
-ms.openlocfilehash: 2596dade32d387669eb136856b7a24a66134a773
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 95886cb6a7f081e4565a6455951aedf68a3e741e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084429"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631126"
 ---
-# <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
+# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar ATP para SharePoint, OneDrive y Microsoft Teams
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -36,17 +36,17 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
 
 |Role|Dónde y cómo se asigna|
 |---------|---------|
-|Administrador global de Office 365|La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).|
+|administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
 |Administrador de seguridad|Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
 |Administración de la organización en Exchange Online|Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar ATP para SharePoint, OneDrive y Microsoft Teams.
+## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar ATP para SharePoint, OneDrive y Microsoft Teams
 
-**Antes de comenzar este procedimiento, asegúrese de que el registro de auditoría ya esté activado para su entorno de Office 365**. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+**Antes de comenzar este procedimiento, asegúrese de que el registro de auditoría ya esté activado en su entorno de Microsoft 365**. Normalmente lo hace alguien que tiene el rol registros de auditoría asignado en Exchange Online. Para obtener más información, consulte [ Desactivar o activar la búsqueda de registros de auditoría ](../../compliance/turn-audit-log-search-on-or-off.md).
 
 1. Vaya a [https://protection.office.com](https://protection.office.com)e inicie sesión con su cuenta profesional o educativa.
 
-2. En el centro de navegación izquierdo de Office 365 Security &, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **datos adjuntos seguros**de **Directiva** \> .
+2. En el centro de navegación de la & de seguridad, en el panel de navegación izquierdo, en **Administración de amenazas**, elija **datos adjuntos seguros**de **Directiva** \> .
 
    ![En el centro de seguridad & cumplimiento, elija directiva \> de administración de amenazas.](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
@@ -54,7 +54,7 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
 
    ![Activar la protección contra amenazas avanzada para SharePoint Online, OneDrive para la empresa y Microsoft Teams](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
-4. Haga clic en **Guardar **.
+4. Haga clic en **Guardar**.
 
 5. Revise (y, según corresponda, Edit) las directivas de [datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) de su organización y [las directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
 
@@ -64,11 +64,11 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
 
    - Si el parámetro se establece en *false* , se bloquearán todas las acciones excepto eliminar y descargar. Los usuarios pueden elegir entre aceptar el riesgo y descargar un archivo detectado.
 
-7. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de seguridad de Office 365.
+7. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de recursos de Microsoft 365.
 
 8. Recomenda Proceda a configurar alertas para los archivos detectados.
 
-Para obtener más información sobre el uso de PowerShell con Office 365, consulte [administrar office 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Para obtener más información sobre el uso de PowerShell con Microsoft 365, consulte [Manage microsoft 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
 
 Para obtener más información acerca de la experiencia del usuario cuando un archivo se ha detectado como malintencionado, consulte [Qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, en OneDrive o en Microsoft Teams](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
 
@@ -76,7 +76,7 @@ Para obtener más información acerca de la experiencia del usuario cuando un ar
 
 Para recibir una notificación cuando se identificó un archivo en SharePoint Online, OneDrive para la empresa o Microsoft Teams como malintencionado, puede configurar una alerta.
 
-1. En el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), elija **alertas** \> **Administrar alertas**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija **alertas** \> **Administrar alertas**.
 
 2. Elija **nueva Directiva de alerta**.
 
@@ -92,12 +92,12 @@ Para recibir una notificación cuando se identificó un archivo en SharePoint On
 
 6. En la sección **enviar esta alerta a...** , seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado.
 
-7. Haga clic en **Guardar **.
+7. Haga clic en **Guardar**.
 
-Para obtener más información acerca de las alertas, consulte [Create Activity Alerts in the Office 365 Security & Compliance Center](../../compliance/create-activity-alerts.md).
+Para obtener más información acerca de las alertas, consulte [crear alertas de actividad en el centro de seguridad & cumplimiento](../../compliance/create-activity-alerts.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 1. [Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 
-2. [Administrar archivos y mensajes en cuarentena como un administrador en Office 365](manage-quarantined-messages-and-files.md)
+2. [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: Obtenga información sobre cómo asignar licencias a usuarios o mover usuarios a una suscripción nueva.
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362065"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628249"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -49,7 +49,7 @@ Al usar la página de **licencias** de para asignar licencias, asigna licencias 
 3. Seleccione **asignar licencias**.
 4. En el panel **asignar licencias a usuarios**, empiece a escribir un nombre y elíjalo en los resultados para agregarlo a la lista. Puede agregar hasta 20 usuarios a la vez.
 5. Seleccione **activar o desactivar aplicaciones y servicios** para asignar o quitar el acceso a elementos específicos.
-6. Cuando haya terminado, seleccione **asignar** y haga clic en **cerrar**.
+6. Cuando termine, seleccione **Asignar** y haga clic en **Cerrar**.
 
 Si hay un conflicto, se muestra un mensaje que indica cuál es el problema y cómo corregirlo. Por ejemplo, si seleccionó licencias que contienen servicios en conflicto, el mensaje de error indica que debe revisar los servicios incluidos en cada licencia y volver a intentarlo.
 
@@ -224,7 +224,7 @@ Si dispone de más de una suscripción y algunos usuarios ya tienen una licencia
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>Todo lo que debe saber sobre la asignación de licencias a usuarios
 
-- Debe ser un administrador global, administrador de facturación, administrador de licencias o administrador de administración de usuarios. Para obtener más información, consulte [Información sobre los roles de administrador de Office 365](../add-users/about-admin-roles.md).
+- Debe ser un administrador global, administrador de facturación, administrador de licencias o administrador de administración de usuarios. Para obtener más información, consulte [Información sobre los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
 
 - Puede [asignar licencias a cuentas de usuario con PowerShell de Office 365](https://go.microsoft.com/fwlink/p/?linkid=850410).
 
@@ -236,7 +236,7 @@ Si dispone de más de una suscripción y algunos usuarios ya tienen una licencia
 
 [Entender las suscripciones y licencias](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Solucionar conflictos de licencias en Office 365 para empresas](resolve-license-conflicts.md)
+[Solucionar conflictos de licencias en Microsoft 365 para empresas](resolve-license-conflicts.md)
 
 [Quitar licencias de usuarios](remove-licenses-from-users.md)
 

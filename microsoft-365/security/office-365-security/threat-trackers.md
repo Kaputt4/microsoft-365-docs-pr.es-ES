@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 5a26bde935c45f048d0b4a0274c4abea388701ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 336cbe15d6eba7363e926a81fab498a7d6cff44a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955502"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631162"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -45,11 +45,11 @@ Los rastreadores son sólo algunas de las muchas características de gran calida
 Para ver y usar los rastreadores de amenazas en su organización, vaya al centro &amp; de seguridad y[https://protection.office.com](https://protection.office.com)cumplimiento () y elija Threat **Management** \> **Threat Tracker**.
   
 > [!NOTE]
-> Para usar los rastreadores de amenazas, debe ser un administrador global de Office 365, un administrador de seguridad o un lector de seguridad. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). 
+> Para usar los rastreadores de amenazas, debe ser administrador global, administrador de seguridad o lector de seguridad. Consulte [permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). 
   
 ### <a name="noteworthy-trackers"></a>Seguimientos dignos de destacar
 
-Las marcas de revisión destacadas son donde encontrará las amenazas y los riesgos grandes y pequeños que pensamos que debe conocer. Los rastreadores dignos de ayuda le ayudan a averiguar si estos problemas existen en su entorno de Office 365, además de un vínculo a los artículos (como este) que le ofrecen más detalles sobre lo que está sucediendo y cómo afectarán al uso que hace su organización de Office 365. Si se trata de una nueva amenaza importante (por ejemplo, Wannacry, Petya) o una amenaza existente que pudiera crear algunos nuevos retos (como nuestro otro inaugural artículo destacado: Nemucod), aquí es donde encontrará los elementos importantes que usted y su equipo de seguridad deben revisar y examinar hará.
+Las marcas de revisión destacadas son donde encontrará las amenazas y los riesgos grandes y pequeños que pensamos que debe conocer. Los rastreadores dignos de ayuda le ayudan a averiguar si estos problemas existen en su entorno de Microsoft 365, además de un vínculo a los artículos (como este) que le ofrecen más detalles sobre lo que está sucediendo y cómo afectarán al uso que hace su organización de Office 365. Si se trata de una nueva amenaza importante (por ejemplo, Wannacry, Petya) o una amenaza existente que pudiera crear algunos nuevos retos (como nuestro otro inaugural el artículo Nemucod), aquí es donde encontrará elementos importantes nuevos que usted y su equipo de seguridad deben revisar y examinar periódicamente.
   
 Por lo general, los rastreadores dignos de opinión se publicarán por un par de semanas cuando identificamos nuevas amenazas y creemos que podría necesitar la visibilidad adicional que proporciona esta característica. Una vez que haya superado el mayor riesgo de una amenaza, quitaremos ese elemento destacado. De este modo, podemos mantener la lista actualizada y actualizada con otros elementos nuevos relevantes.
   
@@ -63,7 +63,7 @@ Los rastreadores de tendencias le proporcionan una idea de las nuevas amenazas q
   
 ### <a name="tracked-queries"></a>Consultas con seguimiento
 
-Las consultas con seguimiento aprovechan las consultas guardadas para evaluar periódicamente la actividad de Office 365 en su organización. Esto le ofrece tendencias de eventos, con más que venir en los próximos meses. Las consultas con seguimiento se ejecutan automáticamente y proporcionan información actualizada sin tener que acordarse de volver a ejecutar las consultas.
+Las consultas con seguimiento aprovechan las consultas guardadas para evaluar periódicamente la actividad de Microsoft 365 en su organización. Esto le ofrece tendencias de eventos, con más que venir en los próximos meses. Las consultas con seguimiento se ejecutan automáticamente y proporcionan información actualizada sin tener que acordarse de volver a ejecutar las consultas.
   
 ![Ejemplo de consultas con seguimiento con una seleccionada](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
@@ -77,11 +77,11 @@ Siempre puede guardar una consulta de seguimiento de forma notable o cualquiera 
   
 ## <a name="trackers-and-explorer"></a>Rastreadores y explorador
 
-Ya sea que esté revisando el correo electrónico, el contenido o las actividades de Office (próximamente), el explorador y los rastreadores funcionan conjuntamente para ayudarle a investigar y realizar un seguimiento de los riesgos y las amenazas de seguridad. Todos juntos, los rastreadores le proporcionan información para proteger a los usuarios de Office 365 resaltando los problemas nuevos, destacados y de búsqueda frecuente, lo que garantiza que su empresa estará mejor protegida mientras se desplaza a la nube.
+Ya sea que esté revisando el correo electrónico, el contenido o las actividades de Office (próximamente), el explorador y los rastreadores funcionan conjuntamente para ayudarle a investigar y realizar un seguimiento de los riesgos y las amenazas de seguridad. Todos juntos, los rastreadores le proporcionan información para proteger a los usuarios al resaltar los problemas nuevos, destacados y de búsqueda frecuente, lo que garantiza que su empresa estará mejor protegida mientras se desplaza a la nube.
   
-Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Office 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general del centro &amp; de seguridad y cumplimiento de Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Microsoft 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general &amp; del centro de seguridad y cumplimiento](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores y Office 365 protección contra amenazas avanzada
 
@@ -91,15 +91,15 @@ Con nuestra amenaza de inaugural de confianza, destacamos las amenazas de malwar
   
 En el mundo de las amenazas Riddled, la ejecución de análisis de antimalware tradicionales significa que no está protegido lo suficiente como para evitar los ataques. Los atacantes más sofisticados de hoy usan las herramientas disponibles habitualmente para crear ataques nuevos, ofuscados o retrasados que no serán reconocidos por los motores de antimalware tradicionales basados en firmas. La característica de datos adjuntos seguros de ATP lleva archivos adjuntos de correo y los detona en un entorno virtual para determinar si son seguros o malintencionados. Este proceso de detonación abre cada archivo en un entorno de equipo virtual y, a continuación, observa lo que sucede después de abrir el archivo. Tanto si se trata de un archivo PDF, un archivo comprimido o un documento de Office, el código malintencionado se puede ocultar en un archivo, activando una vez que la víctima la abre en su equipo. Al detonar y analizar el archivo en el flujo de correo electrónico, las capacidades de ATP de Office 365 encuentran estas amenazas en función de los comportamientos, la reputación del archivo y una serie de reglas heurísticas.
   
-El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que no se han encontrado previamente en Office 365 en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
+El filtro de nueva amenaza notable resalta los elementos que se detectaron recientemente a través de datos adjuntos seguros ATP. Estas detecciones representan elementos que son nuevos archivos malintencionados, que 365 Microsoft no ha encontrado previamente en el correo electrónico del flujo de correo electrónico o de otros clientes. Preste atención a los elementos del rastreador de amenazas digno de destacar, consulte quién lo ha dirigido y revise los detalles de detonación que se muestran en la ficha análisis avanzado (que se encuentra haciendo clic en el asunto del correo electrónico en el explorador). Nota solo encontrará esta pestaña en los mensajes de correo electrónico detectados por la funcionalidad de datos adjuntos seguros de ATP: este Tracker destacado incluye ese filtro, pero también puede usar ese filtro para otras búsquedas en el explorador.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](office-365-ti.md).
     
-- Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser un administrador global de Office 365 o tener el rol de administrador de seguridad o de búsqueda y depuración &amp; asignado en el centro de seguridad y cumplimiento. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
+- Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser administrador global o tener el rol de administrador de seguridad o de búsqueda y depuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
     
-- Vea los nuevos rastreadores para que se muestren en su entorno de Office 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a los **rastreadores de amenazas**de **Administración** \> de amenazas.
+- Vea los nuevos rastreadores para que se muestren en su entorno de Microsoft 365. Cuando esté disponible, encontrará los seguimientos [aquí](https://protection.office.com/). Vaya a los **rastreadores de amenazas**de **Administración** \> de amenazas.
     
 - Si aún no lo ha hecho, obtenga más información acerca de la [protección contra amenazas avanzada de office 365](office-365-atp.md) para su organización, incluidos los [vínculos seguros de atp](atp-safe-links.md) de Office 365 y los [datos ADjuntos seguros de ATP](atp-safe-attachments.md)de Office 365.
   

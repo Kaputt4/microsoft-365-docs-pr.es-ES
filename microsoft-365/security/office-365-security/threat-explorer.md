@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 1f5047b923ec40d4beb47d9b4b3d8aec9b9e6807
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: a7958d516177534cafc9d40fe335abbff06b4db6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537514"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631174"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -39,7 +39,7 @@ Con el explorador (o detecciones en tiempo real), dispone de un informe eficaz q
 
 Con este informe, puede:
 
-- [Ver malware detectado por las características de seguridad de Office 365](#see-malware-detected-in-email-by-technology)
+- [Ver malware detectado por las características de seguridad de Microsoft 365](#see-malware-detected-in-email-by-technology)
 - [Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto](#view-data-about-phishing-urls-and-click-verdict)
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
@@ -56,7 +56,7 @@ Estas nuevas características se describen a continuación.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo
 
-La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa*, debe agregarse a otro grupo de roles de Office 365 (como operaciones de seguridad o administrador de seguridad) para conceder la capacidad de descargar correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
+La posibilidad de obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico son nuevas características disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y mensajes de correo electrónico descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *vista previa*, debe agregarse a otro grupo de roles (como operaciones de seguridad o administrador de seguridad) para poder descargar los correos electrónicos y obtener una vista previa de los encabezados en la vista de todos los mensajes de correo electrónico.
 
 Pero el explorador (y las detecciones en tiempo real) también agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los mensajes de correo electrónico. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
@@ -117,7 +117,7 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 
-Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Office 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
+Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Microsoft 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
@@ -176,7 +176,7 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el **menú Ver** , elija**envíos**de **correo electrónico** > . (Anteriormente se llamaba **notificado por el usuario**.)
+2. En el **menú Ver** , elija**envíos**de **correo electrónico** > .
 
    ![Menú Ver para el explorador](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -230,7 +230,7 @@ Para ver y usar el explorador o las detecciones en tiempo real, debe tener los p
 
 Para obtener más información acerca de los roles y los permisos, vea los siguientes recursos:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Algunas diferencias entre el explorador de amenazas y las detecciones en tiempo real

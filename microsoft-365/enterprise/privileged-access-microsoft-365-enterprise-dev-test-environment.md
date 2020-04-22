@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use esta guía del laboratorio de pruebas para habilitar la administración del acceso con privilegios en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085379"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632868"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ ms.locfileid: "42085379"
 
 Con las instrucciones de este artículo, se configura la administración del acceso con privilegios para aumentar la seguridad en el entorno de prueba de Microsoft 365 Enterprise.
 
-![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
 >Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
@@ -46,7 +46,7 @@ Si desea configurar la administración del acceso con privilegios en una empresa
 
 En esta fase, configurará un grupo aprobadores y habilitará la administración de acceso privilegiada para el entorno de prueba de Microsoft 365 Enterprise. Para obtener información adicional y una introducción a la administración del acceso con privilegios, consulte [Administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Siga estos pasos para configurar y usar el acceso con privilegios en su organización de Office 365:
+Siga estos pasos para configurar y usar el acceso con privilegios en su organización:
 
 - [Paso 1: crear un grupo de aprobadores](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ Siga estos pasos para configurar y usar el acceso con privilegios en su organiza
 
 - [Paso 2: habilitar el acceso con privilegios](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    El acceso privilegiado debe estar activado explícitamente en Office 365 con el grupo de aprobador predeterminado e incluir un conjunto de cuentas del sistema que se desea excluir del control de acceso privilegiado de la administración de acceso. Asegúrese de habilitar el acceso con privilegios en su organización de Office 365 antes de iniciar la fase 3 de esta guía.
+    El acceso privilegiado debe estar activado explícitamente en Office 365 con el grupo de aprobador predeterminado e incluir un conjunto de cuentas del sistema que se desea excluir del control de acceso privilegiado de la administración de acceso. Asegúrese de habilitar el acceso con privilegios en su organización antes de iniciar la fase 3 de esta guía.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: comprobar que la aprobación es necesaria para las tareas elevadas y privilegiadas
 
@@ -165,7 +165,7 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 
 3. Vista que la nueva regla de diario se ha creado correctamente en Exchange Management PowerShell.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

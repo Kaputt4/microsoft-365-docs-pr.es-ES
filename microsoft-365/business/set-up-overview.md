@@ -25,17 +25,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Obtenga información sobre los pasos de configuración para Microsoft 365 Business, la suscripción, la adición de un dominio y usuarios, la configuración de directivas de seguridad y mucho más.
-ms.openlocfilehash: 9bb536b52981966f6c4c487f8400577b896261e0
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
+ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561204"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633363"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
-Vea un breve vídeo sobre la configuración de Microsoft 365 Business.<br><br>
+Vea un breve vídeo sobre la configuración de Microsoft 365 Business Premium.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
@@ -66,18 +66,18 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 
 Para empezar, consulte [aumentar la protección contra amenazas](increase-threat-protection.md) y [configurar las características de cumplimiento](set-up-compliance.md).
 
-Consulte también [las 10 formas principales de proteger su empresa de Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía de los procedimientos de seguridad recomendados.
+Consulte también [las 10 principales formas de proteger su Microsoft 365 empresa Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) para obtener una guía básica de los procedimientos de seguridad.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Paso 3: configurar y administrar dispositivos con Windows 10
 
 Después de ejecutar el Asistente para la configuración, querrá proctect todos los equipos de la Windwos 10 en su organización.
   
-- Windows 10 Pro es un [requisito previo](pre-requisites-for-data-protection.md) para Microsoft 365 Business, pero si tiene Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, su suscripción le da derecho a una [actualización a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Windows 10 Pro es un [requisito previo](pre-requisites-for-data-protection.md) para Microsoft 365 empresa Premium, pero si tiene Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, su suscripción le da derecho a una [actualización a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
 - Siga los pasos que se indican en [proteger equipos con Windows 10](secure-win-10-pcs.md) para configurar directivas para dispositivos con Windows 10.
 
-Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directivas que configuras para los equipos con Windows 10. Para obtener más información, consulte [configurar dispositivos Windows para usuarios profesionales de Microsoft 365](set-up-windows-devices.md).
+Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directivas que configuras para los equipos con Windows 10. Para obtener más información, consulte [configurar dispositivos Windows para usuarios de Microsoft 365](set-up-windows-devices.md).
 
-## <a name="step-4-install-office-365-business"></a>Paso 4: instalar Office 365 empresa
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Paso 4: instalar Microsoft 365 apps for Business
 - Puede instalar Office automáticamente en los dispositivos Windows mediante el Asistente de [configuración](set-up.md#deploy-office-365-client-apps).
 - Permita que los usuarios [instalen aplicaciones de Office](https://docs.microsoft.com/office365/admin/setup/install-applications) para Windows y dispositivos.
      
@@ -88,10 +88,10 @@ Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directiv
 
 - **Acceder a recursos locales**
 
-     - Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Business para proteger sus dispositivos con Windows 10 y mantener al mismo tiempo el acceso a los recursos locales que requieren autenticación local. Siga los pasos descritos en [enable Domain-joined Domain-Windows 10 Devices to be Managed Microsoft 365 Business](manage-windows-devices.md) to Configure this. Este es el método preferido y los dispositivos de este estado se denominan dispositivos híbridos Unidos de Azure AD.
+     - Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Business Premium para proteger sus dispositivos con Windows 10, a la vez que mantiene el acceso a los recursos locales que requieren autenticación local. Siga los pasos descritos en [enable Domain-joined Domain-Windows 10 Devices to be Managed Microsoft 365 Business Premium](manage-windows-devices.md) para configurarlo. Este es el método preferido y los dispositivos de este estado se denominan dispositivos híbridos Unidos de Azure AD.
 
-    - Si su empresa tiene Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede dar acceso a estos recursos a los dispositivos de Azure AD siguiendo los pasos que se indican a continuación: [acceso a los recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business](access-resources.md).
+    - Si su empresa tiene Active Directory local que contiene algunos recursos locales (como impresoras y recursos compartidos de archivos), puede dar acceso a estos recursos a los dispositivos de Azure AD siguiendo los pasos que se indican a continuación: [acceso a los recursos locales desde un dispositivo unido a Azure ad en Microsoft 365 Business Premium](access-resources.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
