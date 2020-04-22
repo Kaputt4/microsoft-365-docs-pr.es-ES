@@ -1,5 +1,5 @@
 ---
-title: Proteger el acceso de usuario y de dispositivo
+title: Proteger el acceso de usuario y dispositivo
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Página de aterrizaje para proteger el acceso a los datos y servicios de O365
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Página de aterrizaje para proteger el acceso a los datos y servicios de Microsoft 365
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632215"
 ---
-# <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y de dispositivo
+# <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y dispositivo
 
-Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse contra la cyberattacks y la protección contra la pérdida de datos. Se pueden aplicar las mismas protecciones a otras aplicaciones SaaS en su entorno e incluso a aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory.
+La protección del acceso a los datos y servicios de Microsoft 365 es crucial para defenderse contra la cyberattacks y la protección contra la pérdida de datos. Se pueden aplicar las mismas protecciones a otras aplicaciones SaaS en su entorno e incluso a aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory.
   
 ## <a name="step-1-review-recommendations"></a>Paso 1: revisar recomendaciones
 
@@ -33,7 +33,7 @@ Capacidades recomendadas para la protección de las identidades y los dispositiv
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Paso 2: proteger las cuentas de administrador y el acceso
-Las cuentas administrativas que se usan para administrar el entorno de Office 365 incluyen privilegios elevados. Estos son objetivos muy valiosos para los hackers y cyberattackers. 
+Las cuentas administrativas que se usan para administrar el entorno de Microsoft 365 incluyen privilegios elevados. Estos son objetivos muy valiosos para los hackers y cyberattackers. 
 
 Empiece por usar las cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para uso normal, no administrativo y solo usar su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo.
 
@@ -55,7 +55,7 @@ Las directivas de autenticación multifactor (MFA) y de acceso condicional son h
 - Autenticación de factor múltiple
 - Acceso condicional
 - Protección de aplicaciones de Intune (protección de aplicaciones y datos para dispositivos)
-- Compatibilidad con dispositivos de Intune
+- Conformidad de dispositivos de Intune
 - Azure AD Identity Protection
 
 La implementación del cumplimiento del dispositivo de Intune requiere la inscripción del dispositivo. La administración de dispositivos le permite garantizar que son correctos y compatibles antes de permitirles el acceso a los recursos de su entorno. Consulte [inscribir dispositivos para la administración en Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)

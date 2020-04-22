@@ -1,5 +1,5 @@
 ---
-title: Office 365 cifrado en Microsoft Dynamics 365
+title: Cifrado en Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda el cifrado en Microsoft Dynamics 365.'
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597857"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637244"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Office 365 cifrado en Microsoft Dynamics 365
+# <a name="encryption-in-microsoft-dynamics-365"></a>Cifrado en Microsoft Dynamics 365
 
 Microsoft usa la tecnología de cifrado para proteger los datos de los clientes en Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito entre los dispositivos de usuario y nuestros centros de datos. Las conexiones establecidas entre los clientes y los centros de usuarios de Microsoft están cifradas, y todos los puntos de conexión públicos se protegen con TLS estándar del sector. TLS establece efectivamente una conexión de explorador a servidor de seguridad mejorada para garantizar la confidencialidad y la integridad de los datos entre los equipos de escritorio y los centros de datos. Una vez activado el cifrado de datos, no se puede desactivar. Para obtener más información, consulte [cifrado de datos en el nivel de campo](https://msdn.microsoft.com/library/dn481562.aspx).
 

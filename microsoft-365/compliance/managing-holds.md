@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521474"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632965"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
-Puede usar un caso de exhibición avanzada de documentos electrónicos para crear suspensiones y conservar el contenido que pueda ser relevante para su caso. Con las funciones avanzadas de conservación de la exhibición de documentos electrónicos, puede realizar suspensiones en custodios y sus orígenes de datos. Además, puede poner una retención no confidencial en los buzones y en los sitios de OneDrive para la empresa. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Office 365. De forma similar, puede poner una retención en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se libera el custodio, se quita una ubicación de datos específica o se elimina la Directiva de retención por completo.
+Puede usar un caso de exhibición avanzada de documentos electrónicos para crear suspensiones y conservar el contenido que pueda ser relevante para su caso. Con las funciones avanzadas de conservación de la exhibición de documentos electrónicos, puede realizar suspensiones en custodios y sus orígenes de datos. Además, puede poner una retención no confidencial en los buzones y en los sitios de OneDrive para la empresa. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Microsoft 365. De forma similar, puede poner una retención en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se libera el custodio, se quita una ubicación de datos específica o se elimina la Directiva de retención por completo.
 
 ## <a name="manage-custodian-based-holds"></a>Administración de retenciones basadas en custodios
 
@@ -69,17 +69,17 @@ Para crear una retención que no sea de apoyo para un caso de exhibición avanza
   
 8. Elija las ubicaciones de contenido que desea poner en retención. Puede poner buzones de correo, sitios y carpetas públicas en retención.
 
-   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
  
     > [!NOTE]
     > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
 
-    b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft Team o Office 365. Haga clic en **elegir**y, a continuación, en **listo**.
+    b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
     
-     Para obtener sugerencias sobre cómo poner a Microsoft Teams y Office 365 grupos y retenerlos, vea la sección [poner una retención en Microsoft Teams y office 365 Groups](#place-a-hold-on-microsoft-teams-and-office-365-groups) .
+     Consulte la sección **p + f** para obtener sugerencias sobre cómo poner Microsoft 365 grupos y Microsoft Teams en espera.
 
     > [!NOTE]
-    > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`(por ejemplo,). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para obtener más información, vea [cómo los cambios UPN afectan a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`(por ejemplo,). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 
@@ -119,11 +119,10 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
 
 Microsoft Teams se basa en grupos de Office 365. Por lo tanto, ponerlos en retención en la exhibición avanzada de documentos electrónicos es muy similar. 
 
-Tenga en cuenta lo siguiente cuando coloque los grupos de Office 365 y Microsoft Teams en espera.
-
-- Para colocar contenido ubicado en Office 365 grupos y Microsoft Teams en espera, tiene que especificar el buzón de correo y el sitio de SharePoint que están asociados con un grupo o un equipo.
+- **¿Cómo puedo asignar a un custodio un sitio adicional de Microsoft Teams o grupos de Microsoft Teams 365? ¿Y qué hacer para colocar una retención no de la Private en grupos de Microsoft 365 y Microsoft Teams?** Microsoft Teams se basa en grupos de 365 de Microsoft. Por lo tanto, colocarlos en espera en un caso de exhibición de documentos electrónicos es muy similar. Tenga en cuenta lo siguiente al colocar los grupos de Microsoft 365 y Microsoft Teams en espera.
+  - Para colocar el contenido ubicado en Microsoft Teams 365 Groups y Microsoft Teams en espera, tiene que especificar el buzón de correo y el sitio de SharePoint asociados a un grupo o equipo.
   
-- Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Office 365 o un equipo de Microsoft. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Office 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
+  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Microsoft 365 o de Microsoft Teams. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el siguiente comando muestra las propiedades seleccionadas para un grupo de 365 de Microsoft llamado equipo de liderazgo Senior:
 
 
     ```text
@@ -137,9 +136,9 @@ Tenga en cuenta lo siguiente cuando coloque los grupos de Office 365 y Microsoft
     > [!NOTE]
     > Para ejecutar el cmdlet Get-UnifiedGroup debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista.
 
-- Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se mantienen en suspensión a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Office 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing custodios in Advanced eDiscovery). Si el grupo de Office 365 o el equipo de Microsoft no son atribuibles a un custodio único, considere la posibilidad de agregar el origen a una retención que no sea Private. 
-
-- Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Teams, puede ver las propiedades de la página de **Inicio del >** de los grupos en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+ - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará en ninguno de los grupos de Microsoft 365 o Microsoft Teams de los que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Microsoft 365 o Microsoft Team Hold, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se mantienen en suspensión a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing custodios in Advanced eDiscovery). Si el grupo de Microsoft 365 o Microsoft Team no es atribuible a un custodio único, considere la posibilidad de agregar el origen a una retención que no sea de apoyo. 
+ 
+ - Para obtener una lista de los miembros de un grupo de Microsoft 365 o Microsoft Team, puede ver las propiedades de la Página principal de los grupos de > en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

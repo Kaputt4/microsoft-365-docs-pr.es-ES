@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: f063a18dcadf5de74b43b2efeba3910f65e40102
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 344c2b6999a8fd890358a25b39ef3a37abc9ef58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153502"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636108"
 ---
 # <a name="information-barriers"></a>Barreras de información
 

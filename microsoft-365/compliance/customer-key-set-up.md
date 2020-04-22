@@ -1,5 +1,5 @@
 ---
-title: Configurar la clave de cliente de Office 365
+title: Configurar la clave de cliente
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo configurar la clave de cliente de Office 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y archivos de Microsoft Teams.
-ms.openlocfilehash: af3ade4ed411a390d1501d3f3fe15ba3111e14d3
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
+ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225947"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634202"
 ---
-# <a name="set-up-customer-key-for-office-365"></a>Configurar la clave de cliente de Office 365
+# <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
-Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft. Es decir, la clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves. Los datos en reposo incluyen datos de Exchange Online y Skype Empresarial que se almacenan en buzones y archivos en SharePoint Online y OneDrive para la Empresa.
+Con la clave de cliente, se controlan las claves de cifrado de la organización y, a continuación, se configura Microsoft 365 para usarlas para cifrar los datos en reposo en los centros de datos de Microsoft. Es decir, la clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves. Los datos en reposo incluyen datos de Exchange Online y Skype Empresarial que se almacenan en buzones y archivos en SharePoint Online y OneDrive para la Empresa.
 
 Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En este tema se describen los pasos que debe seguir para crear y configurar los recursos necesarios de Azure y, a continuación, se proporcionan los pasos para configurar la clave de cliente en Office 365. Una vez completada la configuración de Azure, determine qué directivas y, por lo tanto, qué claves asignar a los buzones de correo y los archivos de su organización. Los buzones de correo y los archivos para los que no se asigna una directiva usarán directivas de cifrado controladas y administradas por Microsoft. Para obtener más información acerca de la clave de cliente o para obtener información general, consulte [Service Encryption with Customer key in Office 365](customer-key-overview.md).
   
@@ -31,9 +31,7 @@ Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En 
   
 ## <a name="before-you-set-up-customer-key"></a>Antes de configurar la clave de cliente
 
-Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles.
-
-Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. La clave de cliente de Microsoft 365 se ofrece en Office 365 E5 o en la SKU de cumplimiento avanzada. Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [tenant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
 
 FastTrack solo se usa para recopilar la información de configuración de servicio y el inquilino necesario que se usa para registrar la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para usted y para nuestros partners enviar la información necesaria con el mismo método. FastTrack también facilita el archivado de los datos facilitados en la oferta.
   
@@ -95,7 +93,7 @@ Complete estas tareas en Azure Key Vault. Deberá completar estos pasos independ
   
 ### <a name="create-two-new-azure-subscriptions"></a>Crear dos nuevas suscripciones de Azure
 
-La clave de cliente requiere dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo se pueden autorizar para aplicaciones en el mismo inquilino de Azure Active Directory (AAD), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización de Office 365 donde se asignará la DEPs. Por ejemplo, con su cuenta profesional o educativa con privilegios de administrador global en su organización de Office 365. Para obtener los pasos detallados, consulte [registrarse para Azure como organización](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+La clave de cliente requiere dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo pueden estar autorizadas para aplicaciones en el mismo inquilino de Azure Active Directory (AAD), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización y al que se asignará la DEPs. Por ejemplo, con su cuenta profesional o educativa con privilegios de administrador global en su organización. Para obtener los pasos detallados, consulte [registrarse para Azure como organización](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que los miembros de la organización se configuren como una clave en cada suscripción. Además, estas suscripciones de Azure solo deben usarse para administrar claves de cifrado para Office 365. Esto protege a su organización en caso de que uno de sus operadores elimine accidentalmente, de forma intencionada, o de una mala administración de las claves de las que es responsable. <br/> Le recomendamos que configure nuevas suscripciones de Azure que solo se usan para administrar recursos de Azure Key Vault para usarlas con la clave de cliente. No hay ningún límite práctico en el número de suscripciones de Azure que puede crear para su organización. Siga estos procedimientos recomendados para minimizar el impacto de los errores humanos mientras ayuda a administrar los recursos usados por la clave de cliente.
@@ -106,7 +104,7 @@ Una vez que haya completado los pasos de Azure, tendrá que enviar una solicitud
   
 Para enviar una oferta para activar la clave de cliente, siga estos pasos:
   
-1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie sesión en el [portal de Microsoft FastTrack](https://fasttrack.microsoft.com/).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie sesión en el [portal de Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 2. Una vez que haya iniciado sesión, vaya al **Panel**.
 
@@ -124,9 +122,9 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrar suscripciones de Azure para usar un período de retención obligatorio
 
-La pérdida temporal o permanente de las claves de cifrado raíz puede ser muy disruptiva o incluso catastróficas para el funcionamiento del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección segura. Todos los recursos de Azure que se usan con la clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Las suscripciones de Azure se pueden etiquetar o registrar de manera que se evite la cancelación inmediata y irrevocable. Esto se conoce como registro de un período de retención obligatorio. Los pasos necesarios para registrar las suscripciones de Azure durante un período de retención obligatorio requieren la colaboración con el equipo de Office 365. Este proceso puede tardar de uno a cinco días laborables. Anteriormente, a veces se hacía referencia a esto como "no cancelar".
+La pérdida temporal o permanente de las claves de cifrado raíz puede ser muy disruptiva o incluso catastróficas para el funcionamiento del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección segura. Todos los recursos de Azure que se usan con la clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Las suscripciones de Azure se pueden etiquetar o registrar de manera que se evite la cancelación inmediata y irrevocable. Esto se conoce como registro de un período de retención obligatorio. Los pasos necesarios para registrar las suscripciones de Azure durante un período de retención obligatorio requieren la colaboración con el equipo de Microsoft 365. Este proceso puede tardar de uno a cinco días laborables. Anteriormente, a veces se hacía referencia a esto como "no cancelar".
   
-Antes de ponerse en contacto con el equipo de Office 365, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado el módulo de [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) antes de empezar.
+Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado el módulo de [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) antes de empezar.
   
 1. Inicie sesión con Azure PowerShell. Para obtener instrucciones, vea [iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
@@ -169,7 +167,7 @@ Al crear un almacén de claves, debe elegir una SKU: estándar o Premium. La SKU
 > [!IMPORTANT]
 > Use los almacenes clave de SKU Premium y las claves protegidas por HSM para los datos de producción y use únicamente las claves y los almacenes de claves de SKU estándar para fines de prueba y validación.
   
-Para cada servicio de Office 365 con el que va a usar la clave de cliente, cree un almacén de claves en cada una de las dos suscripciones de Azure que ha creado. Por ejemplo, solo para Exchange Online y Skype empresarial, o SharePoint Online y OneDrive para la empresa, solo se creará un par de depósitos. Para habilitar la clave de cliente para Exchange Online y SharePoint Online, deberá crear dos pares de depósitos clave.
+Para cada servicio de Microsoft 365 con el que va a usar la clave de cliente, cree un almacén de claves en cada una de las dos suscripciones de Azure que ha creado. Por ejemplo, solo para Exchange Online y Skype empresarial, o SharePoint Online y OneDrive para la empresa, solo se creará un par de depósitos. Para habilitar la clave de cliente para Exchange Online y SharePoint Online, deberá crear dos pares de depósitos clave.
   
 Use una Convención de nomenclatura para los depósitos clave que refleje el uso previsto de la Directiva de cifrado de datos con la que va a asociar los almacenes. Consulte la sección procedimientos recomendados a continuación para conocer las recomendaciones de Convención de nomenclatura.
   
@@ -178,7 +176,7 @@ Cree un conjunto independiente y emparejado de depósitos para cada directiva de
 La creación de almacenes clave también requiere la creación de grupos de recursos de Azure, ya que las bóvedas clave necesitan capacidad de almacenamiento (aunque muy pequeña) y el registro de la bóveda clave, si está habilitado, también genera datos almacenados. Como procedimiento recomendado, Microsoft recomienda el uso de administradores independientes para administrar cada grupo de recursos, con la administración alineada con el conjunto de administradores que administrarán todos los recursos de clave de cliente relacionados.
   
 > [!IMPORTANT]
-> Para maximizar la disponibilidad, los depósitos clave deben estar en regiones próximos a su servicio de Office 365. Por ejemplo, si su organización de Exchange Online está en Norteamérica, ubique sus depósitos clave en Norteamérica. Si su organización de Exchange Online está en Europa, ubique los depósitos clave en Europa.<br/>Use un prefijo común para los depósitos clave e incluya una abreviatura del uso y el alcance de las claves y el almacén de claves (por ejemplo, para el servicio de SharePoint de Contoso donde los almacenes se ubicarán en Norteamérica, un posible par de nombres es contoso-O365SP-NA-VaultA1 y contoso-O365SP-NA-VaultA2. Los nombres de almacén son cadenas únicas de forma global dentro de Azure, por lo que es posible que deba probar variantes de sus nombres deseados en caso de que otros clientes de Azure ya hayan reclamado los nombres deseados. A partir de julio 2017 los nombres de almacén no se pueden cambiar, por lo que un procedimiento recomendado es tener un plan escrito para la configuración y usar una segunda persona para comprobar que el plan se ejecuta correctamente.<br/>Si es posible, cree sus depósitos en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad en todos los dominios de error de servicio. Por lo tanto, los pares regionales pueden considerarse como una región de copia de seguridad de cada uno. Esto significa que un recurso de Azure que se coloca en una región está obteniendo automáticamente la tolerancia a errores a través de la región emparejada. Por este motivo, la elección de regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se usa un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que todavía no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para las dos Vaults que se usan con una directiva de cifrado de datos. Esto beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea [continuidad empresarial y recuperación ante desastres (BCDR): regiones emparejadas de Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para obtener una lista actual de pares regionales.
+> Para maximizar la disponibilidad, los depósitos clave deben estar en regiones cercanas a su servicio Microsoft 365. Por ejemplo, si su organización de Exchange Online está en Norteamérica, ubique sus depósitos clave en Norteamérica. Si su organización de Exchange Online está en Europa, ubique los depósitos clave en Europa.<br/>Use un prefijo común para los depósitos clave e incluya una abreviatura del uso y el alcance de las claves y el almacén de claves (por ejemplo, para el servicio de SharePoint de Contoso donde los almacenes se ubicarán en Norteamérica, un posible par de nombres es contoso-O365SP-NA-VaultA1 y contoso-O365SP-NA-VaultA2. Los nombres de almacén son cadenas únicas de forma global dentro de Azure, por lo que es posible que deba probar variantes de sus nombres deseados en caso de que otros clientes de Azure ya hayan reclamado los nombres deseados. A partir de julio 2017 los nombres de almacén no se pueden cambiar, por lo que un procedimiento recomendado es tener un plan escrito para la configuración y usar una segunda persona para comprobar que el plan se ejecuta correctamente.<br/>Si es posible, cree sus depósitos en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad en todos los dominios de error de servicio. Por lo tanto, los pares regionales pueden considerarse como una región de copia de seguridad de cada uno. Esto significa que un recurso de Azure que se coloca en una región está obteniendo automáticamente la tolerancia a errores a través de la región emparejada. Por este motivo, la elección de regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se usa un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que todavía no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para las dos Vaults que se usan con una directiva de cifrado de datos. Esto beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea [continuidad empresarial y recuperación ante desastres (BCDR): regiones emparejadas de Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para obtener una lista actual de pares regionales.
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Asignar permisos a cada almacén clave
 
@@ -189,7 +187,7 @@ Para cada almacén de claves, tendrá que definir tres conjuntos de permisos dis
   > [!IMPORTANT]
   > El conjunto de permisos asignado a los administradores de la bóveda de claves no incluye el permiso para eliminar claves. Esto es intencionado y es un ejercicio importante. La eliminación de claves de cifrado no suele realizarse, ya que al hacerlo se destruyen los datos de forma permanente. Como procedimiento recomendado, no conceda este permiso a los administradores de la bóveda clave de forma predeterminada. En su lugar, Reserve esto para los colaboradores clave de la bóveda y asígnelo solo a un administrador a corto plazo una vez que comprenda claramente las consecuencias.
   
-  Para asignar estos permisos a un usuario de su organización de Office 365, inicie sesión en su suscripción de Azure con Azure PowerShell. Para obtener instrucciones, vea [iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Para asignar estos permisos a un usuario de su organización, inicie sesión en su suscripción de Azure con Azure PowerShell. Para obtener instrucciones, vea [iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 - Ejecute el cmdlet Set-AzKeyVaultAccessPolicy para asignar los permisos necesarios.
 
@@ -205,7 +203,7 @@ Para cada almacén de claves, tendrá que definir tres conjuntos de permisos dis
 
 - **Contribute de Key Vault** que puede cambiar los permisos en el propio almacén de claves de Azure. Tendrá que cambiar estos permisos a medida que los empleados abandonen o se unan a su equipo, o en la situación extremadamente inusual de que los administradores de la bóveda clave necesiten de forma legítima permiso para eliminar o restaurar una clave. Este conjunto de colaboradores clave del almacén debe tener concedido el rol **colaborador** en su almacén de claves. Puede asignar este rol mediante el administrador de recursos de Azure. Para obtener los pasos detallados, consulte [usar el control de acceso basado en roles para administrar el acceso a los recursos de suscripción de Azure](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). El administrador que crea una suscripción tiene este acceso de forma implícita, así como la capacidad de asignar otros administradores al rol colaborador.
 
-- Si tiene previsto usar la clave de cliente con Exchange Online y Skype empresarial, debe conceder permiso a Office 365 para usar el almacén de claves en nombre de Exchange Online y Skype empresarial. Del mismo modo, si tiene previsto usar la clave de cliente con SharePoint Online y OneDrive para la empresa, necesitará agregar el permiso para que la oficina 365 use el almacén de claves en nombre de SharePoint Online y OneDrive para la empresa. Para conceder permiso a Office 365, ejecute el cmdlet **set-AzKeyVaultAccessPolicy** con la siguiente sintaxis: 
+- Si tiene previsto usar la clave de cliente con Exchange Online y Skype empresarial, debe conceder permiso a Microsoft 365 para usar el almacén de claves en nombre de Exchange Online y Skype empresarial. Del mismo modo, si tiene previsto usar la clave de cliente con SharePoint Online y OneDrive para la empresa, debe agregar el permiso para que Microsoft 365 use el almacén de claves en nombre de SharePoint Online y OneDrive para la empresa. Para conceder permiso a Microsoft 365, ejecute el cmdlet **set-AzKeyVaultAccessPolicy** con la siguiente sintaxis: 
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -293,7 +291,7 @@ Consulte a su grupo de seguridad para determinar si se requieren las atestacione
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>Comprobar el nivel de recuperación de las claves
 
-Office 365 requiere que la suscripción de Azure Key Vault esté definida como no cancelar y que las claves usadas por la clave de cliente tengan habilitada la eliminación temporal. Para confirmarlo, consulte el nivel de recuperación de las claves.
+Microsoft 365 requiere que la suscripción de Azure Key Vault esté definida como no cancelar y que las claves usadas por la clave de cliente tengan habilitada la eliminación temporal. Para confirmarlo, consulte el nivel de recuperación de las claves.
   
 Para comprobar el nivel de recuperación de una clave, en Azure PowerShell, ejecute el cmdlet Get-AzKeyVaultKey de la siguiente manera:
   
@@ -367,7 +365,7 @@ Para comprobar que no se ha establecido una fecha de expiración para las claves
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-La clave de cliente no puede usar una clave expirada y las operaciones que se intentan con una clave expirada fallarán y, posiblemente, se producirá una interrupción del servicio. Se recomienda encarecidamente que las claves usadas con la clave de cliente no tengan una fecha de expiración. Una fecha de expiración, una vez establecida, no se puede quitar, pero se puede cambiar a una fecha distinta. Si se debe usar una clave que tenga establecida una fecha de expiración, cambie el valor de expiración a 12/31/9999. Las claves con una fecha de expiración establecida en una fecha distinta a 12/31/9999 no pasarán la validación de Office 365.
+La clave de cliente no puede usar una clave expirada y las operaciones que se intentan con una clave expirada fallarán y, posiblemente, se producirá una interrupción del servicio. Se recomienda encarecidamente que las claves usadas con la clave de cliente no tengan una fecha de expiración. Una fecha de expiración, una vez establecida, no se puede quitar, pero se puede cambiar a una fecha distinta. Si se debe usar una clave que tenga establecida una fecha de expiración, cambie el valor de expiración a 12/31/9999. Las claves con una fecha de expiración establecida en una fecha distinta a 12/31/9999 no pasarán la validación 365 de Microsoft.
   
 Para cambiar una fecha de expiración que se haya establecido en cualquier valor distinto de 12/31/9999, ejecute el cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) de la siguiente manera:
   
@@ -396,13 +394,13 @@ Para configurar la clave de cliente de Exchange Online y Skype empresarial, tend
   
 ### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>Crear una directiva de cifrado de datos (DEP) para su uso con Exchange Online y Skype empresarial
 
-Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigne un DEP a un buzón de correo en Office 365. Office 365 usará entonces las claves identificadas en la Directiva para cifrar el buzón. Para crear la DEP, necesita los URI de la bóveda de clave que obtuvo antes. Consulte [obtener el URI de cada clave de Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) para obtener instrucciones.
+Un DEP está asociado a un conjunto de claves almacenadas en Azure Key Vault. Asigna un DEP a un buzón de correo en Microsoft 365. A continuación, Microsoft 365 usará las claves identificadas en la Directiva para cifrar el buzón de correo. Para crear la DEP, necesita los URI de la bóveda de clave que obtuvo antes. Consulte [obtener el URI de cada clave de Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) para obtener instrucciones.
   
 Recuerde! Cuando se crea un DEP, se especifican dos claves que residen en dos depósitos de clave de Azure diferentes. Asegúrese de que estas claves se encuentran en dos regiones de Azure independientes para garantizar la redundancia geográfica.
   
 Para crear la DEP, siga estos pasos:
   
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) abriendo Windows PowerShell y ejecutando el siguiente comando.
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) abriendo Windows PowerShell y ejecutando el siguiente comando.
 
    ```powershell
    $UserCredential = Get-Credential
@@ -444,7 +442,7 @@ Para crear la DEP, siga estos pasos:
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Asignar una DEP a un buzón
 
-Asigne la DEP a un buzón mediante el cmdlet Set-Mailbox. Una vez asignada la Directiva, Office 365 puede cifrar el buzón con la clave designada en la DEP.
+Asigne la DEP a un buzón mediante el cmdlet Set-Mailbox. Una vez asignada la Directiva, Microsoft 365 puede cifrar el buzón con la clave designada en la DEP.
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -474,13 +472,13 @@ Para configurar la clave de cliente para SharePoint Online, OneDrive para la emp
   
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>Crear una directiva de cifrado de datos (DEP) para cada geográfico de SharePoint Online y OneDrive para la empresa
 
-Asocia un DEP con un conjunto de claves almacenadas en Azure Key Vault. Se aplica una DEP a todos los datos en una ubicación geográfica, también denominada geo. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geográfico con la capacidad de usar diferentes claves por geográfico. Si no usa multigeográfico, puede crear un DEP en la organización de Office 365 para usarlo con los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams. Office 365 usa las claves identificadas en el DEP para cifrar los datos en esa geografía. Para crear la DEP, necesita los URI de la bóveda de clave que obtuvo antes. Consulte [obtener el URI de cada clave de Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) para obtener instrucciones.
+Asocia un DEP con un conjunto de claves almacenadas en Azure Key Vault. Se aplica una DEP a todos los datos en una ubicación geográfica, también denominada geo. Si usa la característica multigeográfica de Office 365, puede crear un DEP por geográfico con la capacidad de usar diferentes claves por geográfico. Si no usa multigeográfico, puede crear un DEP en su organización para usarlo con los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams. Microsoft 365 usa las claves identificadas en el DEP para cifrar los datos en esa geografía. Para crear la DEP, necesita los URI de la bóveda de clave que obtuvo antes. Consulte [obtener el URI de cada clave de Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) para obtener instrucciones.
   
 Recuerde! Cuando se crea un DEP, se especifican dos claves que residen en dos depósitos de clave de Azure diferentes. Asegúrese de que estas claves se encuentran en dos regiones de Azure independientes para garantizar la redundancia geográfica.
   
 Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante Windows PowerShell.
   
-1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, [Conéctese a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. En el equipo local, con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 2. En el shell de administración de Microsoft SharePoint Online, ejecute el cmdlet Register-SPODataEncryptionPolicy de la siguiente manera:
 
@@ -496,12 +494,12 @@ Para crear un DEP, debe conectarse de forma remota a SharePoint Online mediante 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Cifrado de servicios con clave de cliente de Office 365](customer-key-overview.md)
+- [Cifrado de servicio con clave de cliente](customer-key-overview.md)
 
-- [Administrar la clave de cliente de Office 365](customer-key-manage.md)
+- [Administrar la clave de cliente](customer-key-manage.md)
 
-- [Rollo o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md)
+- [Rotar o alternar una Clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md)
 
 - [Obtener información sobre la clave de disponibilidad](customer-key-availability-key-understand.md)
 
-- [Cifrado de servicio de Office 365](office-365-service-encryption.md)
+- [Cifrado de servicio](office-365-service-encryption.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193476"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634182"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -121,10 +121,10 @@ En este paso del flujo de trabajo, se identifican los requisitos de cumplimiento
 
 Puede elegir entre las siguientes plantillas de directiva en el centro de cumplimiento de Microsoft 365:
 
-- **Idioma ofensivo y Antiacoso**: Use esta plantilla para crear rápidamente una directiva que use los clasificadores de amenazas, blasfemias y acoso integrados para detectar automáticamente el contenido que pueda considerarse ofensivo o ofensivo.
+- **Idioma ofensivo y Antiacoso**: Use esta plantilla para crear rápidamente una directiva que use el clasificador integrado para detectar automáticamente el contenido que pueda considerarse ofensivo o ofensivo.
 - **Información confidencial**: Use esta plantilla para crear una directiva para examinar las comunicaciones que contienen tipos de información confidencial o palabras clave definidas para ayudar a garantizar que no se compartan datos importantes con personas que no tienen acceso.
 - **Cumplimiento de normativas**: Use esta plantilla para crear una directiva para analizar las comunicaciones en busca de referencias a términos financieros estándar asociados con los estándares normativos.
-- **Directiva personalizada**: Use esta plantilla para configurar canales de comunicación específicos, clasificadores, condiciones de detección individuales y la cantidad de contenido que se va a revisar para la supervisión de la organización.
+- **Directiva personalizada**: Use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a revisar para la supervisión de la organización.
 
 ### <a name="investigate"></a>Averiguar
 
@@ -151,7 +151,7 @@ El siguiente paso consiste en corregir los problemas de cumplimiento de comunica
 
 Mantener el seguimiento y administrar los problemas de cumplimiento identificados por las directivas de cumplimiento de la comunicación abarca todo el proceso de flujo de trabajo. A medida que se generan las alertas y se implementan las acciones de investigación y corrección, es posible que las directivas existentes necesiten revisión y actualizaciones, y que sea necesario crear nuevas directivas.
 
-- **Monitor y informe**: Use los paneles de cumplimiento de comunicaciones, informes, registros de exportación y eventos registrados en los registros de auditoría de Office 365 unificados para evaluar y mejorar de forma continua su postura de cumplimiento.
+- **Monitor y informe**: Use los paneles de cumplimiento de comunicaciones, informes, registros de exportación y eventos registrados en los registros de auditoría unificados para evaluar y mejorar continuamente su postura de cumplimiento.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

@@ -1,5 +1,5 @@
 ---
-title: Crear alertas de actividad en el Office 365
+title: Crear alertas de actividad
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
-description: Agregue y administre alertas de actividad en el centro de seguridad y cumplimiento para que Office 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas en Office 365.
-ms.openlocfilehash: b83dec740b8b37d3c8a4132f114ee76178b2dd86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Agregue y administre alertas de actividad en el centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas.
+ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077695"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634234"
 ---
-# <a name="create-activity-alerts-in-the-office-365"></a>Crear alertas de actividad en el Office 365
+# <a name="create-activity-alerts"></a>Crear alertas de actividad
 
-Puede crear una alerta de actividad que le envíe una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría de Office 365, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento para una actividad para la que ha creado una alerta. 
+Puede crear una alerta de actividad que le envíe una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento para una actividad para la que ha creado una alerta. 
   
- **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividades o actividades realizadas por usuarios específicos que realmente desee conocer. En lugar de tener que recordar que debe buscar en el registro de auditoría las actividades, puede usar alertas de actividad para que Office 365 le envíe un mensaje de correo electrónico cuando los usuarios realicen esas actividades. Por ejemplo, puede crear una alerta de actividad que le avise cuando un usuario elimine archivos en SharePoint o puede crear una alerta que le avise cuando un usuario elimine mensajes de su buzón de forma permanente. La notificación de correo electrónico que se envía a usted incluye información sobre la actividad que se ha realizado y el usuario que la realizó. 
+ **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividades o actividades realizadas por usuarios específicos que realmente desee conocer. En lugar de tener que recordar que debe buscar en el registro de auditoría las actividades, puede usar alertas de actividad para que Microsoft 365 le envíe un mensaje de correo electrónico cuando los usuarios realicen esas actividades. Por ejemplo, puede crear una alerta de actividad que le avise cuando un usuario elimine archivos en SharePoint o puede crear una alerta que le avise cuando un usuario elimine mensajes de su buzón de forma permanente. La notificación de correo electrónico que se envía a usted incluye información sobre la actividad que se ha realizado y el usuario que la realizó. 
 
 > [!NOTE]
 > Le recomendamos que empiece a usar directivas de alerta en el centro de seguridad y cumplimiento, en lugar de crear nuevas alertas de actividad. Las directivas de alerta proporcionan funciones adicionales, como la capacidad de crear una directiva de alerta que active una alerta cuando un usuario realice una actividad específica y muestre alertas en la página **Ver alertas** del centro de seguridad y cumplimiento. Para obtener más información, consulte [Alert Policies](alert-policies.md).
@@ -39,7 +39,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
     
 - Usted (u otro administrador) debe activar primero el registro de auditoría de su organización para poder empezar a usar alertas de actividad. Para ello, haga clic en **empezar a registrar la actividad de usuario y de administrador** en la página de **alertas de actividades** . (Si no ve este vínculo, ya se ha activado la auditoría en su organización). También puede activar la auditoría en la página de **búsqueda del registro de auditoría** en el centro de seguridad & cumplimiento ( **ir a** \> búsqueda de **registro de auditoría**). Solo tiene que hacer esto una vez para su organización.
   
-- Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría de Office 365. Consulte la sección [More Information](#more-information) para obtener una lista de los escenarios comunes (y la actividad específica para supervisar) para los que puede crear alertas. 
+- Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría. Consulte la sección [More Information](#more-information) para obtener una lista de los escenarios comunes (y la actividad específica para supervisar) para los que puede crear alertas. 
     
 - Puede usar la página de **alertas de actividades** en el centro de seguridad & cumplimiento para crear alertas solo para las actividades realizadas por los usuarios que aparecen en la libreta de direcciones de la organización. No puede usar esta página para crear alertas para actividades realizadas por usuarios externos que no se enumeran en la libreta de direcciones. 
     
@@ -47,7 +47,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
 
 1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En la **Página alertas de actividad** , ![haga clic](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) en agregar icono **nuevo**.
 
@@ -66,7 +66,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
 
     d. **Enviar esta alerta cuando** haga clic en **enviar esta alerta cuando** y, a continuación, configure estos dos campos:
     
-    - **Actividades** : haga clic en la lista desplegable para mostrar las actividades para las que puede crear una alerta. Se trata de la misma lista de actividades que se muestra al buscar en el registro de auditoría de Office 365. Puede seleccionar una o más actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. Para obtener una descripción de estas actividades, consulte la sección "actividades auditadas" en [Buscar el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#audited-activities). Cuando un usuario realiza alguna de las actividades que ha agregado a la alerta, se envía una notificación por correo electrónico. 
+    - **Actividades** : haga clic en la lista desplegable para mostrar las actividades para las que puede crear una alerta. Se trata de la misma lista de actividades que se muestra cuando se busca en el registro de auditoría. Puede seleccionar una o más actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. Para obtener una descripción de estas actividades, consulte la sección "actividades auditadas" en [Buscar el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#audited-activities). Cuando un usuario realiza alguna de las actividades que ha agregado a la alerta, se envía una notificación por correo electrónico. 
     
      - **Usuarios** : haga clic en este cuadro y, a continuación, seleccione uno o más usuarios. Si los usuarios de este cuadro realizan las actividades que agregó al cuadro **actividades** , se enviará una alerta. Deje el cuadro **usuarios** en blanco para enviar una alerta cuando un usuario de la organización realice las actividades especificadas por la alerta. 
 
@@ -86,7 +86,7 @@ Puede desactivar una alerta de actividad para que no se envíe una notificación
   
 1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En la lista de alertas de actividad de su organización, haga clic en la alerta que desea desactivar.
     
@@ -113,7 +113,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |:-----|:-----|:-----|
     |Ve un documento en un sitio.  <br/> |Archivo al que se tiene acceso  <br/> |Actividades de archivos y carpetas  <br/> |
     |Modifica o modifica un documento.  <br/> |Archivo modificado  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, consulte[Usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
+    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
     |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> Y/o  <br/> Archivo descargado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
 

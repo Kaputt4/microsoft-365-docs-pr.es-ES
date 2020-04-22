@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097213"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631851"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -55,7 +55,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En el panel izquierdo del centro de seguridad y cumplimiento, seleccione **permisos**y, después, active la casilla situada junto a **Administrador de exhibición**de documentos electrónicos.
     
@@ -78,10 +78,10 @@ En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Búsqueda de cumplimiento <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Exportar <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Export <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Vista previa <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Preview <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Revisar <br/>  | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Descifrado de RMS <br/>  ||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
@@ -94,7 +94,7 @@ Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a 
 
 ### <a name="compliance-search"></a>Búsqueda de cumplimiento
 
-Este rol permite a los usuarios ejecutar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo y carpetas públicas, sitios de SharePoint Online, sitios de OneDrive para la empresa, conversaciones de Skype empresarial, grupos de Office 365 y grupos de Microsoft Teams y Yammer. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan roles adicionales para iniciar acciones de búsqueda de contenido, como la vista previa, la exportación o la eliminación de los resultados de la búsqueda.
+Este rol permite a los usuarios ejecutar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo y carpetas públicas, sitios de SharePoint Online, sitios de OneDrive para la empresa, conversaciones de Skype empresarial, grupos de 365 de Microsoft Teams y grupos de Yammer. Este rol permite al usuario obtener una estimación de los resultados de la búsqueda y crear informes de exportación, pero se necesitan roles adicionales para iniciar acciones de búsqueda de contenido, como la vista previa, la exportación o la eliminación de los resultados de la búsqueda.
 
 Los usuarios que tienen asignado el rol de búsqueda de cumplimiento pero que no tienen el rol de vista previa pueden obtener una vista previa de los resultados de una búsqueda en la que un usuario que tenga asignada la función de vista previa haya iniciado la acción de vista previa. El usuario sin el rol vista previa puede obtener una vista previa de los resultados de hasta dos semanas después de que se haya creado la acción de vista previa inicial.
 
@@ -102,7 +102,7 @@ De forma similar, los usuarios a los que se les ha asignado el rol de búsqueda 
 
 Para obtener más información, consulte [búsqueda de contenido en Office 365](content-search.md). 
 
-### <a name="export"></a>Exportar
+### <a name="export"></a>Export
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para el análisis en eDiscovery avanzado. 
 
@@ -110,7 +110,7 @@ Para obtener más información acerca de cómo exportar resultados de búsqueda,
 
 ### <a name="hold"></a>Hold
 
-Este rol permite a los usuarios poner contenido en retención en buzones de correo, carpetas públicas, sitios, conversaciones de Skype empresarial y grupos de Office 365. Cuando el contenido está en espera, los propietarios de contenido pueden modificar o eliminar el contenido original, pero el contenido se conservará hasta que se quite la retención o hasta que expire la duración de retención. 
+Este rol permite a los usuarios poner contenido en retención en buzones de correo, carpetas públicas, sitios, conversaciones de Skype empresarial y grupos de 365 de Microsoft. Cuando el contenido está en espera, los propietarios de contenido pueden modificar o eliminar el contenido original, pero el contenido se conservará hasta que se quite la retención o hasta que expire la duración de retención. 
 
 Para obtener más información acerca de las suspensiones, consulte:
 
@@ -118,11 +118,11 @@ Para obtener más información acerca de las suspensiones, consulte:
 
 - [eDiscovery avanzado](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
-### <a name="preview"></a>Vista previa
+### <a name="preview"></a>Preview
 
 Este rol permite a los usuarios ver una lista de elementos devueltos de una búsqueda de contenido. También pueden abrir y ver cada elemento de la lista para ver su contenido.
 
-### <a name="review"></a>Review
+### <a name="review"></a>Revisar
 
 Esta función permite a los usuarios acceder a datos de casos en [eDiscovery avanzado (Classic)](office-365-advanced-ediscovery.md) (también conocido como *eDiscovery avanzado v1*). El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición de documentos electrónicos (Classic) avanzada. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede seleccionar **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos (Classic). Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o realizar otras tareas de búsqueda de contenido o de administración de casos.
 
@@ -135,7 +135,7 @@ Este rol permite a los usuarios descifrar mensajes de correo electrónico proteg
 
 ### <a name="search-and-purge"></a>Búsqueda y depuración
 
-Este rol permite a los usuarios realizar la eliminación masiva de datos que coinciden con los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico en la organización de Office 365](search-for-and-delete-messages-in-your-organization.md). 
+Este rol permite a los usuarios realizar la eliminación masiva de datos que coinciden con los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico de la organización](search-for-and-delete-messages-in-your-organization.md). 
 
 ## <a name="more-information"></a>Más información
 
@@ -151,7 +151,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Los grupos de distribución de Exchange y los grupos de Office 365 no son compatibles. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell con el `New-DistributionGroup -Type Security` comando. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
+    Los grupos de distribución de Exchange y los grupos de Microsoft 365 no son compatibles. Debe usar un grupo de seguridad habilitado para correo, que puede crear en Exchange Online PowerShell con el `New-DistributionGroup -Type Security` comando. También puede crear un grupo de seguridad habilitado para correo (y agregar miembros) en el centro de administración de Exchange o en el centro de administración de Microsoft 365. Puede tardar hasta 60 minutos después de crear una nueva seguridad habilitada para correo que esté disponible para agregarla al grupo de roles eDiscovery Managers. 
     
     Además, como se mencionó anteriormente, no puede hacer que un grupo de seguridad habilitado para correo sea un administrador de eDiscovery usando el cmdlet **Add-eDiscoveryCaseAdmin** en el PowerShell del centro de cumplimiento de & de seguridad. Solo puede Agregar usuarios individuales como administradores de exhibición de documentos electrónicos. 
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 387709ebdd84968d2b93992f6b92ef1548117569
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 75e376288a85ca6def5cf3c3037f2faee57de63b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528363"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632275"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Informes avanzados de eDiscovery (versión preliminar)
 
@@ -45,7 +45,7 @@ Para acceder a los informes avanzados de eDiscovery:
 
 1. Vaya a https://protection.office.com
   
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
   
 3. En el centro de seguridad & cumplimiento, haga clic en **ediscovery > eDiscovery avanzado**.
   

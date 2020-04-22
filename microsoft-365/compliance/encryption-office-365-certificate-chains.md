@@ -1,5 +1,5 @@
 ---
-title: Cadenas de cifrado de Office 365
+title: Cadenas de cifrado
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Ver una lista completa de certificados raíz y entidades de certificación (CA) en Office 365.
-ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631705"
 ---
-# <a name="office-365-encryption-chains"></a>Cadenas de cifrado de Office 365
+# <a name="encryption-chains"></a>Cadenas de cifrado
 
 Office 365 aprovecha una serie de proveedores de certificados diferentes. A continuación, se describe la lista completa de certificados raíz de Office 365 conocidos que los clientes pueden encontrar al obtener acceso a Office 365. Para obtener información sobre los certificados que puede necesitar instalar en su propia infraestructura, vea [Plan for de certificados SSL de terceros para Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). La siguiente información de certificado se aplica a todas las instancias de nube nacionales e internacionales de Office 365.
 

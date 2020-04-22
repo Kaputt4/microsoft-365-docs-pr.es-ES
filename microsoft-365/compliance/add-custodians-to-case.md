@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634608"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632315"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 
@@ -68,7 +68,7 @@ Para identificar los orígenes de datos de custodios:
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Paso 3: asociar orígenes de datos adicionales a un custodio
 
-Según el caso que esté investigando, es posible que también necesite buscar (y conservar contenido en) buzones de correo a los que puede tener acceso un custodio específico, Office 365 grupos de los que un custodio es actualmente miembro o los sitios a los que también tiene acceso un custodio. Por lo tanto, además de los principales orígenes de datos del custodio que especificó en el paso anterior, también puede asociar orígenes de datos de Office 365 adicionales con un custodio en el caso. 
+Según el caso que esté investigando, es posible que también necesite buscar (y conservar contenido en) buzones de correo a los que puede tener acceso un custodio específico, los grupos de Microsoft 365 a los que un custodio es actualmente miembro o los sitios a los que también se tiene acceso a un custodio. Por lo tanto, además de los principales orígenes de datos de custodios que especificó en el paso anterior, también puede asociar otros orígenes de datos de Microsoft con un custodio en el caso. 
 
 Para asignar buzones de correo, sitios o equipos a un custodio específico:
 
@@ -76,14 +76,14 @@ Para asignar buzones de correo, sitios o equipos a un custodio específico:
   
    ![Asignar orígenes de datos adicionales](../media/AddCustodianStep3.PNG)
 
-2. En la página de flotante, puede especificar un origen de datos de cualquiera de los siguientes servicios de Office 365:
+2. En la página de flotante, puede especificar un origen de datos de cualquiera de los siguientes servicios:
   
-   -  **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Use el cuadro de búsqueda para encontrar los buzones de correo que desea asociar con el custodio. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   -  **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Use el cuadro de búsqueda para encontrar los buzones de correo que desea asociar con el custodio. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
 
         > [!NOTE]
         > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar un buzón de correo a esta lista, escriba un nombre o alias (un mínimo de 3 caracteres) en el cuadro de búsqueda.
      
-     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para mostrar una lista de los sitios de SharePoint de la organización. Para asociar un sitio con el custodio, puede seleccionar un sitio de la lista o puede escribir la dirección URL de un sitio diferente o de un sitio asociado con un grupo de Office 365, un equipo de Microsoft o una cuenta de OneDrive.
+     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para mostrar una lista de los sitios de SharePoint de la organización. Para asociar un sitio con el custodio, puede seleccionar un sitio de la lista o puede escribir la dirección URL de un sitio diferente o de un sitio asociado con un grupo de Microsoft 365, un equipo de Microsoft o una cuenta de OneDrive.
      
      - **Teams** : haga clic en **elegir** Teams y, a continuación, haga clic en **elegir Teams** de nuevo para mostrar una lista de Microsoft Teams a la que pertenece actualmente el custodio. Seleccione los equipos que quiera agregar a su custodio. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
 

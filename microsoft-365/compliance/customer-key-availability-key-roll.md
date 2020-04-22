@@ -1,5 +1,5 @@
 ---
-title: Rollo o rotación de una clave de cliente o una clave de disponibilidad
+title: Rotar o alternar una Clave de cliente o una clave de disponibilidad
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo revertir las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente de Office 365. Los servicios incluyen los archivos de Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: 9699960666eaa9aa62bb027d3a4549cb50cd52e3
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+description: Obtenga información sobre cómo revertir las claves raíz del cliente almacenadas en Azure Key Vault que se usan con la clave de cliente. Los servicios incluyen los archivos de Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+ms.openlocfilehash: 29a36636253f5f01181f231941d0c3a9e26abacc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804868"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633647"
 ---
-# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rollo o rotación de una clave de cliente o una clave de disponibilidad
+# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rotar o alternar una Clave de cliente o una clave de disponibilidad
 
 > [!CAUTION]
 > Haga solo una clave de cifrado que use con la clave de cliente cuando sus requisitos de seguridad o cumplimiento determinen que debe revertir la clave. Además, no elimine las claves que estén asociadas a directivas. Al revertir las claves, habrá contenido cifrado con las claves anteriores. Por ejemplo, los buzones activos se volverán a cifrar con frecuencia, los buzones inactivos, desconectados y deshabilitados pueden seguir cifrados con las claves anteriores. SharePoint Online realiza una copia de seguridad del contenido para restauración y recuperación, por lo que es posible que todavía haya contenido archivado con claves antiguas.
 
 ## <a name="about-rolling-the-availability-key"></a>Sobre cómo se gira la clave de disponibilidad
 
-Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede girar (girar) las claves que posee en el almacén de claves de Azure. Office 365 aplica las claves de disponibilidad en una programación definida internamente. No hay ningún contrato de nivel de servicio (SLA) dirigido a los clientes para estos lanzamientos clave. Office 365 gira la clave de disponibilidad mediante el código de servicio Office 365 en un proceso automatizado y no manual. Los administradores de Microsoft pueden iniciar el proceso de lanzamiento. La clave se propaga mediante mecanismos automatizados sin acceso directo al almacén de claves. El acceso al almacén secreto de clave de disponibilidad no se aprovisiona para los administradores de Microsoft. La tecla de disponibilidad "Rolling" aprovecha el mismo mecanismo que se usa para generar la clave inicialmente. Para obtener más información acerca de la clave de disponibilidad, vea [comprender la clave de disponibilidad](customer-key-availability-key-understand.md).
+Microsoft no expone el control directo de la clave de disponibilidad a los clientes. Por ejemplo, solo puede girar (girar) las claves que posee en el almacén de claves de Azure. Microsoft 365 aplica las claves de disponibilidad según una programación definida internamente. No hay ningún contrato de nivel de servicio (SLA) dirigido a los clientes para estos lanzamientos clave. Microsoft 365 gira la clave de disponibilidad con el código de servicio de Microsoft 365 en un proceso automatizado y no manual. Los administradores de Microsoft pueden iniciar el proceso de lanzamiento. La clave se propaga mediante mecanismos automatizados sin acceso directo al almacén de claves. El acceso al almacén secreto de clave de disponibilidad no se aprovisiona para los administradores de Microsoft. La tecla de disponibilidad "Rolling" aprovecha el mismo mecanismo que se usa para generar la clave inicialmente. Para obtener más información acerca de la clave de disponibilidad, vea [comprender la clave de disponibilidad](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
 > Las claves de disponibilidad de Skype empresarial y Exchange Online las pueden realizar de forma eficaz los clientes que creen una nueva DEP, ya que se genera una clave de disponibilidad única para cada DEP que cree. Las claves de disponibilidad para SharePoint Online, OneDrive para la empresa y los archivos de Microsoft Teams existen en el nivel de bosque y se comparten entre DEPs y clientes, lo que significa que solo se produce en una programación definida internamente por Microsoft. Para mitigar el riesgo de no poner la clave de disponibilidad cada vez que se crea una nueva DEP, SharePoint, OneDrive y Teams colocan la clave intermedia del inquilino (TIK), la clave que se ajusta mediante las claves raíz del cliente y la clave de disponibilidad, cada vez que se crea un nuevo DEP.
@@ -52,7 +52,7 @@ Por ejemplo:
 
 Cuando se revierte cualquiera de las claves de Azure Key Vault asociadas con un DEP usado con Exchange Online y Skype empresarial, debe actualizar el DEP para que apunte a la nueva clave. Esto no gira la clave de disponibilidad.
 
-Para indicar a la clave de cliente que use la nueva clave para cifrar buzones en Office 365 ejecute el cmdlet Set-DataEncryptionPolicy de la siguiente manera:
+Para indicar a la clave de cliente que use la nueva clave para cifrar buzones, ejecute el cmdlet Set-DataEncryptionPolicy de la siguiente manera:
 
 1. Ejecute el cmdlet Set-DataEncryptionPolicy en Azure PowerShell:
   
@@ -86,8 +86,8 @@ SharePoint Online solo le permite revertir una tecla cada vez. Si desea desplega
 
 - [Cifrado de servicios con clave de cliente de Office 365](customer-key-overview.md)
 
-- [Configurar la clave de cliente de Office 365](customer-key-set-up.md)
+- [Configurar Clave de cliente de Office 365](customer-key-set-up.md)
 
-- [Administrar la clave de cliente de Office 365](customer-key-manage.md)
+- [Administrar Clave de cliente de Office 365](customer-key-manage.md)
 
 - [Obtener información sobre la clave de disponibilidad](customer-key-availability-key-understand.md)

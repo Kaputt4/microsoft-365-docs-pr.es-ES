@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604187"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635970"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
-La prevención de pérdida de datos es una característica de cumplimiento de Office 365 que está diseñada para ayudar a su organización a evitar la exposición intencionada o accidental de información confidencial a partes no deseadas. DLP tiene sus raíces en Exchange Server y Exchange Online, y también es aplicable en SharePoint Online y OneDrive para la empresa.
+La prevención de pérdida de datos (DLP) es una característica de cumplimiento diseñada para ayudar a su organización a evitar la exposición intencionada o accidental de información confidencial a partes no deseadas. DLP tiene sus raíces en Exchange Server y Exchange Online, y también es aplicable en SharePoint Online y OneDrive para la empresa.
 
 DLP utiliza un motor de análisis de contenido para examinar el contenido de los mensajes de correo electrónico y los archivos, en busca de información confidencial, como los números de tarjetas de crédito y la información de identificación personal (PII). La información confidencial no suele enviarse en el correo electrónico ni se puede incluir en documentos, sin necesidad de realizar pasos adicionales, como cifrar el mensaje o los archivos de correo electrónico. Con DLP puede detectar información confidencial y emprender acciones como:
 
@@ -57,7 +57,7 @@ Cuando los riesgos de la filtración de datos no son totalmente obvios, es difí
 
 Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la **Data loss prevention** > **Directiva**de prevención de pérdida de datos. Haga clic en **crear una directiva** para iniciar.
 
-Office 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas de DLP. Supongamos que es un negocio australiano. Puede filtrar las plantillas de directiva para mostrar solo las que son relevantes para Australia, que entran en las categorías generales de finanzas, médicos y salud y privacidad.
+Microsoft 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas de DLP. Supongamos que es un negocio australiano. Puede filtrar las plantillas de directiva para mostrar solo las que son relevantes para Australia, que entran en las categorías generales de finanzas, médicos y salud y privacidad.
 
 ![Opción para elegir el país o la región](../media/DLP-create-test-tune-choose-country.png)
 
@@ -214,4 +214,4 @@ Las directivas que restringen el contenido presentarán la advertencia al usuari
 
 ## <a name="summary"></a>Resumen
 
-Las directivas de prevención de pérdida de datos son útiles para organizaciones de todos los tipos. La prueba de algunas directivas de DLP es un ejercicio de bajo riesgo debido al control que tiene sobre elementos como, por ejemplo, sugerencias de directivas, invalidaciones de usuarios finales e informes de incidentes. Puede probar silenciosamente algunas directivas de DLP para ver qué tipo de infracciones ya se están produciendo en su organización y, a continuación, crear directivas con tasas de falsos positivos bajos, educar a los usuarios sobre lo que se permite y no y, a continuación, implementar sus directivas DLP en el Organization.
+Las directivas de prevención de pérdida de datos son útiles para organizaciones de todos los tipos. La prueba de algunas directivas de DLP es un ejercicio de bajo riesgo debido al control que tiene sobre elementos como, por ejemplo, sugerencias de directivas, invalidaciones de usuarios finales e informes de incidentes. Puede probar silenciosamente algunas directivas de DLP para ver qué tipo de infracciones ya se están produciendo en su organización y, a continuación, crear directivas con tasas de falsos positivos bajos, educar a los usuarios sobre lo que se permite y no y, a continuación, implementar sus directivas de DLP en la organización.

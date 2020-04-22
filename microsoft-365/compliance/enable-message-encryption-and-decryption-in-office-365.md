@@ -1,5 +1,5 @@
 ---
-title: Habilitar el cifrado y el descifrado de mensajes en Office 365
+title: Habilitar el cifrado y descifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -14,14 +14,14 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: El cifrado de mensajes de Office 365 permite a los usuarios de correo electrónico enviar mensajes cifrados a personas de fuera de su organización. Como administrador, puede habilitar el cifrado de mensajes de Office 365 mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establezcan las condiciones para el cifrado.
-ms.openlocfilehash: 38152123f0cee4263bac7d2f7666fae2fff3622e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a062706bbea9bc5e20208a5b4be83f4d48cdb9b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593221"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631725"
 ---
-# <a name="enable-message-encryption-and-decryption-in-office-365"></a>Habilitar el cifrado y el descifrado de mensajes en Office 365
+# <a name="enable-message-encryption-and-decryption"></a>Habilitar el cifrado y descifrado de mensajes
 
 El cifrado de mensajes de Office 365 permite a los usuarios de correo electrónico enviar mensajes cifrados a personas de fuera de su organización. Como administrador, puede habilitar el cifrado de mensajes de Office 365 mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establezcan las condiciones para el cifrado. Cuando uno de los usuarios envía un mensaje que coincide con las condiciones de la regla, el mensaje se cifra.
   

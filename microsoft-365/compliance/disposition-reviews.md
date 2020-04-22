@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105667"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633069"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
->*[Guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Cuando el contenido alcanza el final de su período de retención, existen varios motivos por los que puede que desee revisar el contenido para decidir si se puede eliminar de forma segura ("eliminado"). Por ejemplo, es posible que deba:
   
@@ -37,7 +37,7 @@ Cuando el contenido alcanza el final de su período de retención, existen vario
     
 - Devolver el contenido a los clientes o transferirlo a otra organización.
     
-Cuando se crea una etiqueta de retención en el centro de cumplimiento de Microsoft 365, el centro de seguridad de Microsoft 365 o el centro de cumplimiento de & de seguridad de Office 365, puede optar por desencadenar una revisión de disposición al finalizar el período de retención. En una revisión de disposición:
+Al crear una etiqueta de retención en el centro de cumplimiento de Microsoft 365, en el centro de seguridad de Microsoft 365 o en el centro de seguridad & cumplimiento, puede desencadenar una revisión de disposición al final del período de retención. En una revisión de disposición:
   
 - Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Tenga en cuenta que las notificaciones se envían cada semana.
     
@@ -53,7 +53,7 @@ Cuando se crea una etiqueta de retención en el centro de cumplimiento de Micros
     
 - Los revisores pueden ver las disposiciones pendientes o completadas, y exportar dicha lista como un archivo. csv.
 
-Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Office 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
+Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
   
 ![Página disposiciones del centro de seguridad y cumplimiento](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ Para obtener más información acerca de las etiquetas de retención, consulte [
 ![Configuración de retención de una etiqueta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Cuando especifique la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario. Los grupos de Office 365 no son compatibles con esta opción.
+> Cuando especifique la opción **notificar a estas personas cuando hay elementos listos para revisar**, especifique un usuario. Los grupos de Microsoft 365 no son compatibles con esta opción.
 
 ## <a name="disposing-content"></a>Eliminación de contenido
 
@@ -95,7 +95,7 @@ Un revisor también puede usar el vínculo para ver el documento en su ubicació
   
 Tenga en cuenta que las notificaciones por correo electrónico se envían de forma automática a los revisores cada semana. Por lo tanto, cuando el contenido alcanza el final de su período de retención, los revisores pueden tardar hasta siete días en recibir la notificación por correo electrónico de que el contenido espera la disposición.
   
-Además, tenga en cuenta que se auditan todas las acciones de disposición. Para garantizar esto, debe activar la auditoría al menos un día antes de la primera acción de disposición (para obtener más información, vea [Buscar en el registro de auditoría del centro de &amp; seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md)). 
+Además, tenga en cuenta que se auditan todas las acciones de disposición. Para asegurarse de esto, debe activar la auditoría al menos un día antes de la primera acción de disposición (para obtener más información, vea [Buscar en el registro de auditoría &amp; del centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md)). 
   
 ## <a name="permissions-for-disposition"></a>Permisos para disposición
 
@@ -105,7 +105,7 @@ Específica del rol **registros de auditoría con permiso de vista** :
 
 - Dado que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet de Exchange Online, debe asignar a los usuarios este rol mediante el [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), en lugar de usar la página **permisos** del centro de seguridad & cumplimiento. Para obtener instrucciones, vea [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Los grupos de Office 365 no son compatibles con este rol. En su lugar, asigne buzones de usuario o usuarios de correo.
+- Los grupos de Microsoft 365 no son compatibles con este rol. En su lugar, asigne buzones de usuario o usuarios de correo.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
 

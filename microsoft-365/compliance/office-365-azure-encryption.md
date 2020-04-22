@@ -1,5 +1,5 @@
 ---
-title: Office 365 cifrado en Azure
+title: Cifrado en Azure
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Resumen: una explicación del cifrado en Azure.'
-ms.openlocfilehash: 9828da8b2d39a3b80784d57ed71a335857cfaea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602117"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637438"
 ---
-# <a name="office-365-encryption-in-azure"></a>Office 365 cifrado en Azure
+# <a name="encryption-in-azure"></a>Cifrado en Azure
 
 ## <a name="introduction"></a>Introducción
 
@@ -47,7 +47,7 @@ Para obtener más información, vea [recomendaciones de seguridad para máquinas
 
 Con el [cifrado de Azure Storage Service](https://docs.microsoft.com/azure/storage/storage-service-encryption), Azure Storage cifra automáticamente los datos antes de almacenarlos en el almacenamiento y descifra los datos antes de la recuperación. Los procesos de cifrado, descifrado y administración de claves son totalmente transparentes para los usuarios. El cifrado del servicio de almacenamiento de Azure se puede usar para Azure [BLOB Storage](https://azure.microsoft.com/services/storage/blobs/) y [Azure files](https://azure.microsoft.com/services/storage/files/). También puede usar las claves de cifrado administradas por Microsoft con el cifrado del servicio de almacenamiento de Azure o puede usar sus propias claves de cifrado. (Para obtener información sobre el uso de sus propias claves, vea [cifrado del servicio de almacenamiento usando claves administradas por el cliente en Azure Key Vault](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys). Para obtener información acerca del uso de las claves administradas por Microsoft, consulte [Storage Service Encryption for Data in Rest](https://docs.microsoft.com/azure/storage/storage-service-encryption).) Además, puede automatizar el uso de cifrado. Por ejemplo, puede habilitar o deshabilitar mediante programación el cifrado del servicio de almacenamiento en una cuenta de almacenamiento mediante la [API de REST del proveedor de recursos](https://msdn.microsoft.com/library/azure/mt163683.aspx)de almacenamiento de Azure, la [biblioteca cliente del proveedor de recursos de almacenamiento para .net](https://msdn.microsoft.com/library/azure/mt131037.aspx), [Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)o [Azure CLI](https://docs.microsoft.com/azure/storage/storage-azure-cli).
 
-Algunos servicios de Office 365 usan Azure para almacenar datos. Por ejemplo, SharePoint Online y OneDrive para la empresa almacenan datos en el almacenamiento de blobs de Azure y Microsoft Teams almacena datos para su servicio de chat en tablas, blobs y colas. Además, la característica de puntuación de cumplimiento del centro de cumplimiento de Microsoft 365 almacena datos introducidos por el cliente que se almacenan en formato cifrado en [Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest), una base de datos de plataforma como servicio (PaaS), distribuida globalmente y con varios modelos. El cifrado del servicio de almacenamiento de Azure cifra los datos almacenados en el almacenamiento de blobs de Azure y en tablas, y Azure Disk Encryption cifra los datos de las colas, así como los discos de la máquina virtual de Windows y IaaS para proporcionar cifrado de volumen para el sistema operativo y el disco de datos. La solución garantiza que todos los datos de los discos de la máquina virtual estén cifrados en reposo en el almacenamiento de Azure. El [cifrado en reposo en Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) se implementa mediante el uso de varias tecnologías de seguridad, entre las que se incluyen sistemas de almacenamiento de claves seguros, redes cifradas y API criptográficas.
+Algunos servicios de Microsoft 365 usan Azure para almacenar datos. Por ejemplo, SharePoint Online y OneDrive para la empresa almacenan datos en el almacenamiento de blobs de Azure y Microsoft Teams almacena datos para su servicio de chat en tablas, blobs y colas. Además, la característica de puntuación de cumplimiento del centro de cumplimiento de Microsoft 365 almacena datos introducidos por el cliente que se almacenan en formato cifrado en [Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest), una base de datos de plataforma como servicio (PaaS), distribuida globalmente y con varios modelos. El cifrado del servicio de almacenamiento de Azure cifra los datos almacenados en el almacenamiento de blobs de Azure y en tablas, y Azure Disk Encryption cifra los datos de las colas, así como los discos de la máquina virtual de Windows y IaaS para proporcionar cifrado de volumen para el sistema operativo y el disco de datos. La solución garantiza que todos los datos de los discos de la máquina virtual estén cifrados en reposo en el almacenamiento de Azure. El [cifrado en reposo en Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) se implementa mediante el uso de varias tecnologías de seguridad, entre las que se incluyen sistemas de almacenamiento de claves seguros, redes cifradas y API criptográficas.
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 

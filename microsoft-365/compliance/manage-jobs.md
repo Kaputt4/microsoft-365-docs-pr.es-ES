@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede realizar un seguimiento del estado de los procesos de ejecución prolongada que resultan de la realización de tareas en la herramienta de investigaciones de datos del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41582929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635920"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Administrar trabajos en investigaciones de datos (versión preliminar)
 
@@ -31,7 +31,7 @@ Esta es una lista de los trabajos (que suelen ser procesos de larga duración) c
 | :----------------- | :----------     |
 |Adición de datos a un conjunto de evidencias | Un usuario agrega los resultados de una búsqueda a un conjunto de evidencias.  Para obtener más información, vea [buscar datos en una investigación](search-for-data.md). |
 |Adición de datos a otro conjunto de evidencias | Un usuario agrega documentos de un conjunto de evidencias a un conjunto de evidencias diferente en el mismo caso.|
-|Adición de datos que no son de Office 365 a un conjunto de evidencias | Un usuario carga datos que no son de Office 365 en un conjunto de evidencias. Los datos también se indizan durante este proceso. Por ejemplo, los archivos de un servidor de archivos local o un equipo cliente se cargan en un conjunto de evidencias. Para obtener más información, vea [cargar datos que no son de Office 365 en pruebas](load-non-office365-data.md).| 
+|Adición de datos que no son de Microsoft 365 a un conjunto de evidencias | Un usuario carga datos que no son de Microsoft 365 en un conjunto de evidencias. Los datos también se indizan durante este proceso. Por ejemplo, los archivos de un servidor de archivos local o un equipo cliente se cargan en un conjunto de evidencias. Para obtener más información, vea [cargar datos que no son de Microsoft 365 en prueba](load-non-office365-data.md).| 
 |Adición de datos corregidos a un conjunto de evidencias | Los datos con errores de procesamiento se corrigen y se cargan de nuevo en un conjunto de evidencias. Para obtener más información, vea [corrección de errores al procesar datos para una investigación](error-remediation.md). | 
 |Comparar conjuntos de carga | Un usuario examina las diferencias entre los distintos conjuntos de carga en un conjunto de evidencias. Un conjunto de carga es una instancia de agregar datos a un conjunto de evidencias. Por ejemplo, si agrega los resultados de dos búsquedas diferentes al mismo conjunto de evidencias, cada una de ellas representará un conjunto de carga. Para obtener más información, consulte [Manage Load sets](manage-load-sets.md). |
 |Conversión de documentos censurados a PDF|Una vez que un usuario anota un documento en un conjunto de evidencias y censura una parte del mismo, puede optar por convertir el documento censurado en un archivo PDF. Esto garantiza que la parte censurada no será visible cuando se exporte el documento para su presentación. Para obtener más información, vea [Review Data in Evidence](review-data-in-evidence.md). |
@@ -56,5 +56,5 @@ En la tabla siguiente se describen los distintos Estados de los trabajos.
 | En curso | El trabajo está en curso. Puede supervisar el progreso del trabajo en la pestaña **trabajos** . |
 | Se ejecuta correctamente | El trabajo se ha completado correctamente. La fecha y la hora en que se completó el trabajo se muestran en la columna **completado** de la ficha **trabajos** . |
 | Parcialmente correcta | El trabajo se ha realizado parcialmente correctamente. |
-| Erróneo | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
+| Error | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |
 |||

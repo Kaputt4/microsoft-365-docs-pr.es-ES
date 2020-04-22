@@ -22,25 +22,24 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo agregar licencias a su suscripción de Microsoft 365 adquirida a través de un socio de terceros, reconocido por Microsoft.
-ms.openlocfilehash: 6f61dddc6f156fcd9bc6b4970d878e187836f3d2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e8a6ce968727cea6aec6140e7d3f354ed68bc94
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632666"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708148"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Agregar licencias a una suscripción comprada en el Centro de servicios de licencias por volumen
 
-Las licencias para Microsoft 365 Business Basic, Microsoft 365 apps for Business, Microsoft 365 Business Standard y los planes de Office 365 Enterprise deben adquirirse a través de un socio de terceros con el que compró Microsoft 365 originalmente. Si Microsoft conoce al partner donde adquirió la suscripción, puede averiguar cómo ponerse en contacto con él usando el procedimiento siguiente.
+Si compró el plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un socio de terceros, debe comprar licencias adicionales a través de ese asociado. Si Microsoft conoce al partner donde adquirió la suscripción, puede averiguar cómo ponerse en contacto con él usando el procedimiento siguiente.
 
 ::: moniker range="o365-worldwide"
 
-
 1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
 
-2. Seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** . 
-    
-3. Siga los pasos del VLSC para completar la compra. 
+2. Seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** .
+
+3. Siga los pasos del VLSC para completar la compra.
 
 ::: moniker-end
 
@@ -48,8 +47,8 @@ Las licencias para Microsoft 365 Business Basic, Microsoft 365 apps for Business
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
-2. En la página suscripciones, seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** . 
-    
+2. En la página suscripciones, seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** .
+
 3. Siga los pasos del VLSC para completar la compra. 
 
 ::: moniker-end
@@ -58,10 +57,8 @@ Las licencias para Microsoft 365 Business Basic, Microsoft 365 apps for Business
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
-2. En la página suscripciones, seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** . 
-    
-3. Siga los pasos del VLSC para completar la compra. 
+2. En la página suscripciones, seleccione la suscripción a la que desea agregar licencias y, a continuación, seleccione el vínculo **centro de servicios de licencias por volumen (VLSC)** .
+
+3. Siga los pasos del VLSC para completar la compra.
 
 ::: moniker-end
-
-

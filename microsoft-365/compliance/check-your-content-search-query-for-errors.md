@@ -13,16 +13,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Antes de ejecutar la búsqueda, compruebe si hay errores y errores tipográficos en la consulta de palabras clave para la búsqueda de contenido, por ejemplo, caracteres no admitidos y operadores booleanos en minúsculas. Si encontramos un error, sugerimos una consulta revisada.
-ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17d9c7a2480b80fa45fd4bb296308a4d4be79377
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078926"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636318"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda de contenido
 
-Al crear o editar una búsqueda de contenido, puede hacer que Office 365 Compruebe la consulta en busca de caracteres no admitidos y operadores booleanos en minúsculas. ¿Cómo se hace? Solo tiene que hacer clic en **comprobar consulta si hay errores tipográficos** en la página consulta de una búsqueda de contenido. 
+Al crear o editar una búsqueda de contenido, puede hacer que Microsoft 365 Compruebe su consulta en busca de caracteres no admitidos y operadores booleanos en minúsculas. ¿Cómo se hace? Solo tiene que hacer clic en **comprobar consulta si hay errores tipográficos** en la página consulta de una búsqueda de contenido. 
   
 ![Haga clic en "consultar si hay errores tipográficos" para comprobar la consulta de búsqueda en busca de caracteres no admitidos](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

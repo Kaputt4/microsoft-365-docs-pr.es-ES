@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634879"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707612"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -220,7 +220,7 @@ Esto es lo que pasará con usted y sus usuarios si cancela una suscripción.
 Para obtener información sobre cómo cancelar, consulte [cancelar la suscripción](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Si desea que se eliminen los datos de la suscripción antes de que se termine el período típico de deshabilitación, puede solicitar la anulación de aprovisionamiento urgente. Cuando solicite la anulación de aprovisionamiento urgente, los datos de su suscripción se eliminan dentro de los 3 días posteriores. Para usar la anulación de aprovisionamiento urgente, [llame al soporte técnico](../../admin/contact-support-for-business-products.md).
+> Si desea que se eliminen los datos de la suscripción antes de que se termine el período típico de deshabilitación, puede [cerrar su cuenta](../close-your-account.md).
 
 > [!NOTE]
 > La información de esta página está sujeta a [Aviso de cambio y exención de responsabilidades de la directiva de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Vuelva a este sitio periódicamente para revisar los cambios.

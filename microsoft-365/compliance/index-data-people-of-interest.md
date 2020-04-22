@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77a4b3e1826889e996b875c9427013c7b08dfaaf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637912"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indización avanzada de datos para una investigación
 
-El contenido del sistema activo se puede indizar parcialmente por una serie de motivos, como la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización. Cuando se trata de un derrame de datos de riesgo alto, desea asegurarse de que la búsqueda capturó todos los datos que desea investigar. Cuando se agrega una persona de interés a una investigación de datos, cualquier contenido de Office 365 que se consideró tal y como se consideraba parcialmente indizada se vuelve a procesar para que sea posible realizar búsquedas por completo. Este proceso se denomina *indización avanzada*. 
+El contenido del sistema activo se puede indizar parcialmente por una serie de motivos, como la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización. Cuando se trata de un derrame de datos de riesgo alto, desea asegurarse de que la búsqueda capturó todos los datos que desea investigar. Cuando se agrega a una persona de interés a una investigación de datos, todo el contenido que se considere indizado parcialmente se vuelve a procesar para que pueda buscarse por completo. Este proceso se denomina *indización avanzada*. 
 
-Para obtener más información acerca de la compatibilidad de procesamiento en Office 365 y elementos parcialmente indizados, vea:
+Para obtener más información acerca de la compatibilidad de procesamiento y los elementos indizados parcialmente, consulte:
 
 - [Tipos de archivo admitidos en investigaciones de datos](supported-filetypes-datainvestigations.md)
 

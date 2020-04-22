@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634718"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635844"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Administrar personas de interés en investigaciones de datos (versión preliminar)
 
@@ -50,18 +50,18 @@ Para agregar personas de interés a una investigación:
 
 8. Opcional En el control flotante:
    
-    -  **Buzones de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Para agregar más buzones, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede Agregar buzones de correo que se usan para almacenar un grupo de Office 365 o una información de equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+    -  **Buzones de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Para agregar más buzones, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede Agregar buzones de correo que se usan para almacenar un grupo de Microsoft 365 o información de equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
 
         > [!NOTE]
         > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
      
-     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar sitios adicionales de SharePoint y OneDrive para la empresa que wwant agregar a una persona. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
+     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar sitios adicionales de SharePoint y OneDrive para la empresa que wwant agregar a una persona. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
      - **Microsoft Teams** : haga clic en **elegir Teams** y, a continuación, haga clic en **elegir Teams** de nuevo para ver una lista de los grupos de Microsoft Teams de los que la persona es miembro de hoy. Seleccione los equipos que desea agregar a la persona. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
         
       > [!NOTE]
       > Para agregar Microsoft Teams, tendrá que agregar por separado el buzón de correo y el sitio de SharePoint, como se muestra más arriba.
 
-Una vez que haya terminado de asignar orígenes de datos a personas de interés, puede ver el Resumen de los buzones de correo totales, los sitios y los equipos que acaba de agregar. Si asigna otros orígenes de datos a personas de interés y el ámbito de la búsqueda por personas de interés, la asignación de documentos a personas de interés permanecerá a lo largo de la investigación, lo que facilita la organización de las pruebas o la generación de informes por parte de personas de interés. . 
+Una vez que haya terminado de asignar orígenes de datos a personas de interés, puede ver el Resumen de los buzones de correo totales, los sitios y los equipos que acaba de agregar. Si asigna otros orígenes de datos a personas de interés y el ámbito de la búsqueda por personas de interés, la asignación de documentos a personas de interés permanecerá a lo largo de la investigación, lo que facilita la organización de pruebas o la generación de informes por parte de personas de interés. 
 
 ## <a name="view-additional-people-of-interest-information"></a>Ver más personas de información de interés
 

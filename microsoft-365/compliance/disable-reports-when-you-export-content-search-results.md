@@ -13,22 +13,22 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el centro de seguridad & cumplimiento en Office 365. La deshabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595245"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633455"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 
-Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para exportar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento, la herramienta crea y exporta automáticamente dos informes que contienen información adicional acerca del contenido exportado. Estos informes son el archivo Results. csv y el archivo manifest. XML (consulte la sección [preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Como estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que se exporten estos archivos. Para ello, puede cambiar el registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del registro. 
+Cuando se usa la herramienta de exportación de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento, la herramienta crea y exporta automáticamente dos informes que contienen información adicional acerca del contenido exportado. Estos informes son el archivo Results. csv y el archivo manifest. XML (consulte la sección [preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Como estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que se exporten estos archivos. Para ello, puede cambiar el registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del registro. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Crear una configuración del registro para deshabilitar los informes de exportación
 
 Lleve a cabo el siguiente procedimiento en el equipo que va a usar para exportar los resultados de una búsqueda de contenido.
   
-1. Cierre la herramienta de exportación de exhibición de documentos electrónicos de Office 365 si está abierta.
+1. Cierre la herramienta de exportación de exhibición de documentos electrónicos si está abierta.
     
 2. Realice uno o ambos de los pasos siguientes, según el informe de exportación que quiera deshabilitar.
     
@@ -62,7 +62,7 @@ Lleve a cabo el siguiente procedimiento en el equipo que va a usar para exportar
 
 Si ha deshabilitado los informes Results. csv y manifest. XML creando los archivos. reg en el procedimiento anterior, puede editar esos archivos para volver a habilitar un informe de manera que se exporte con los resultados de la búsqueda. De nuevo, realice el siguiente procedimiento en el equipo que va a usar para exportar los resultados de una búsqueda de contenido.
   
-1. Cierre la herramienta de exportación de exhibición de documentos electrónicos de Office 365 si está abierta.
+1. Cierre la herramienta de exportación de exhibición de documentos electrónicos si está abierta.
     
 2. Edite uno o ambos de los archivos. reg Edit que creó en el procedimiento anterior.
     
@@ -128,11 +128,11 @@ Depende de sus necesidades específicas. Muchas organizaciones no necesitan más
   
  **¿En qué equipo tengo que hacerlo?**
   
- Tiene que cambiar la configuración del registro en cualquier equipo local en el que ejecute la herramienta de exportación de exhibición de documentos electrónicos de Office 365. 
+ Tiene que cambiar la configuración del registro en cualquier equipo local en el que ejecute la herramienta de exportación de exhibición de documentos electrónicos. 
   
  **Después de cambiar esta configuración, ¿tengo que reiniciar el equipo?**
   
-No, no es necesario reiniciar el equipo. Pero si se está ejecutando la herramienta de exportación de exhibición de documentos electrónicos de Office 365, debe cerrarla y reiniciarla después de cambiar la configuración del registro.
+No, no es necesario reiniciar el equipo. Pero si se está ejecutando la herramienta de exportación de exhibición de documentos electrónicos, debe cerrarla y reiniciarla después de cambiar la configuración del registro.
   
  **¿Se modifica una clave del registro existente o se crea una nueva clave?**
   

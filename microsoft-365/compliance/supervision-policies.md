@@ -1,6 +1,6 @@
 ---
 title: Directivas de supervisión
-description: Obtenga información sobre las directivas de supervisión en Office 365
+description: Infórmese de las directivas de supervisión
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626974"
 ---
-# <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
+# <a name="supervision-policies"></a>Directivas de supervisión
 
-Las directivas de supervisión en Office 365 permiten capturar comunicaciones de los empleados para que las examinen los revisores designados. Puede definir directivas específicas que capturen el correo electrónico interno y externo, Microsoft Teams o las comunicaciones de terceros de la organización. A continuación, los revisores pueden examinar los mensajes para asegurarse de que cumplen con los estándares de mensajes de la organización y los resuelven con el tipo de clasificación.
+Las directivas de supervisión de Microsoft 365 permiten capturar comunicaciones de los empleados para su examen por revisores designados. Puede definir directivas específicas que capturen el correo electrónico interno y externo, Microsoft Teams o las comunicaciones de terceros de la organización. A continuación, los revisores pueden examinar los mensajes para asegurarse de que cumplen con los estándares de mensajes de la organización y los resuelven con el tipo de clasificación.
 
 Estas directivas también pueden ayudarle a superar muchos de los retos de cumplimiento modernos, entre los que se incluyen:
 
@@ -36,7 +36,7 @@ Estas directivas también pueden ayudarle a superar muchos de los retos de cumpl
 - El volumen creciente de los datos de los mensajes
 - Cumplimiento normativo & el riesgo de las multas
 
-En algunas organizaciones, puede haber una separación de tareas entre el soporte de ti y el grupo de administración de cumplimiento. Office 365 admite la separación entre la configuración de características de la Directiva de supervisión y la configuración de directivas para las comunicaciones capturadas. Por ejemplo, el grupo de TI de una organización puede ser responsable de configurar permisos de funciones y grupos para admitir directivas de supervisión configuradas y administradas por el equipo de cumplimiento de la organización.
+En algunas organizaciones, puede haber una separación de tareas entre el soporte de ti y el grupo de administración de cumplimiento. Microsoft 365 admite la separación entre la configuración de características de directiva de supervisión y la configuración de directivas para las comunicaciones capturadas. Por ejemplo, el grupo de TI de una organización puede ser responsable de configurar permisos de funciones y grupos para admitir directivas de supervisión configuradas y administradas por el equipo de cumplimiento de la organización.
 
 Para obtener una introducción rápida a las directivas de supervisión, vea el vídeo sobre la [Directiva de supervisión](https://youtu.be/C3Y8WZ7o_dI) en el canal de [mecánica de Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -44,13 +44,13 @@ Para obtener más información acerca de las mejoras y la disponibilidad de las 
 
 ¿Desea probar la nueva experiencia de cumplimiento de comunicaciones de Microsoft 365? Consulte las características nuevas y mejoradas disponibles en el cumplimiento de la [comunicación en Microsoft 365](communication-compliance.md).
 
-## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde la supervisión en Office 365
+## <a name="transitioning-from-supervision"></a>Transición desde la supervisión
 
-Las organizaciones que usan directivas de supervisión en Office 365 y la planeación de la transición a [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md) necesitan comprender estos puntos importantes:
+Las organizaciones que usan directivas de supervisión y planean la transición a [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md) necesitan comprender estos puntos importantes:
 
-- La solución de supervisión de Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Para las organizaciones que van a pasar el cumplimiento de la comunicación desde las directivas de supervisión, recomendamos crear nuevas directivas en el cumplimiento de la comunicación que tengan las mismas *condiciones* que las directivas de supervisión existentes para habilitar nuevas investigaciones y mejoras en la corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión en Office 365 si tiene requisitos internos de la Directiva de retención de cumplimiento.
+- La solución de supervisión de Microsoft 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones de Microsoft 365. Para las organizaciones que van a pasar el cumplimiento de la comunicación desde las directivas de supervisión, recomendamos crear nuevas directivas en el cumplimiento de la comunicación que tengan las mismas *condiciones* que las directivas de supervisión existentes para habilitar nuevas investigaciones y mejoras en la corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión si tiene requisitos internos de la Directiva de retención de cumplimiento.
 - Mientras tanto, las organizaciones pueden usar ambas soluciones en paralelo hasta que se migren completamente, pero las directivas que se usan en cada solución deben tener *nombres de directiva únicos*. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante el período de transición.
-- Los mensajes guardados en la supervisión de las coincidencias de directivas de Office 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
+- Los mensajes guardados en la supervisión de las coincidencias de directivas de Microsoft 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
 
 Para obtener información de jubilación para la supervisión en Office 365, consulte el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
@@ -78,7 +78,7 @@ Las directivas de supervisión se crean en el centro de cumplimiento. Estas dire
 
 ### <a name="supervised-users"></a>Usuarios supervisados
 
-Antes de empezar a usar la supervisión, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Office 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir determinados usuarios o grupos de la supervisión con un grupo supervisado o una lista de grupos.
+Antes de empezar a usar la supervisión, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Microsoft 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir determinados usuarios o grupos de la supervisión con un grupo supervisado o una lista de grupos.
 
 >[!IMPORTANT]
 >Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidas en una suscripción a Office 365 Enterprise E5 o estar incluidas en una suscripción a Microsoft 365 E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -91,24 +91,24 @@ Al crear una directiva de supervisión, debe determinar quién realizará las re
 
 Para simplificar la configuración, cree grupos para los usuarios que necesitan sus comunicaciones revisadas y grupos para los usuarios que revisen dichas comunicaciones. Si está usando grupos, es posible que necesite varios. Por ejemplo, si desea supervisar las comunicaciones entre dos grupos de personas distintos, o si desea especificar un grupo que no está supervisado.
 
-Cuando se selecciona un grupo de Office 365 para los usuarios supervisados, la Directiva supervisa el contenido del buzón de correo de Office 365 compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva supervisa los buzones de usuario individuales.
+Al seleccionar un grupo de 365 de Microsoft para los usuarios supervisados, la Directiva supervisa el contenido del buzón compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva supervisa los buzones de usuario individuales.
 
 ### <a name="supported-communication-types"></a>Tipos de comunicación admitidos
 
 Con las directivas de supervisión, puede elegir supervisar los mensajes en una o varias de las plataformas de comunicación siguientes:
 
-- **Correo electrónico de Exchange:** Los buzones hospedados en Exchange online como parte de su suscripción a Office 365 son válidos para la supervisión de mensajes. Los correos electrónicos y datos adjuntos que coinciden con las condiciones de la supervisión están disponibles instantáneamente para la supervisión y en los informes de supervisión. Los tipos de datos adjuntos compatibles para la supervisión son los mismos que los [tipos de archivo admitidos para las inspecciones de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+- **Correo electrónico de Exchange:** Los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 son válidos para la supervisión de mensajes. Los correos electrónicos y datos adjuntos que coinciden con las condiciones de la supervisión están disponibles instantáneamente para la supervisión y en los informes de supervisión. Los tipos de datos adjuntos compatibles para la supervisión son los mismos que los [tipos de archivo admitidos para las inspecciones de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Microsoft Teams:** Se pueden supervisar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft teams que cumplen las condiciones de directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
     - **Para supervisar los chats de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
-    - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Office 365 que desee supervisar que contenga un usuario específico a la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a otros grupos de Office 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de supervisión.
+    - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Microsoft 365 que desee supervisar que contenga un usuario específico a la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de supervisión.
 
 - **Skype empresarial online:** Las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online las condiciones de la Directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
 
     - **Para la supervisión de chats de Skype empresarial online:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
 
-- **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como en Facebook o DropBox) para los datos que se importan a los buzones de correo de Office 365 de la organización. [Obtenga información sobre cómo importar datos de terceros a Office 365](archiving-third-party-data.md).
+- **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como en Facebook o DropBox) para los datos importados en buzones de la organización. [Obtenga información sobre cómo importar datos de](archiving-third-party-data.md)terceros.
 
 Las comunicaciones capturadas en estas plataformas se conservan durante siete años para cada directiva de forma predeterminada, incluso si los usuarios dejan su organización y se elimina su buzón de correo.
 
@@ -124,9 +124,9 @@ De forma predeterminada, la condición **es la dirección** se muestra y no se p
 
 #### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Tiene la opción de incluir tipos de información confidencial como parte de la Directiva de supervisión. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger números de tarjetas de crédito, números de cuentas bancarias, números de pasaporte, etc. Como parte de la prevención de [pérdida de datos (DLP)](data-loss-prevention-policies.md)de Office 365, la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar contenido que pueda ser confidencial. Los tipos de información confidencial predeterminados son:
+Tiene la opción de incluir tipos de información confidencial como parte de la Directiva de supervisión. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger números de tarjetas de crédito, números de cuentas bancarias, números de pasaporte, etc. Como parte de la [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md), la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar contenido que pueda ser confidencial. Los tipos de información confidencial predeterminados son:
 
-- Financiero
+- Financiera
 - Médico y salud
 - Privacidad
 - Tipo de información personalizada
@@ -183,7 +183,7 @@ Para analizar los mensajes de correo electrónico y los datos adjuntos de las mi
   
 ##### <a name="enter-multiple-conditions"></a>Escribir varias condiciones
 
-Si especifica varias condiciones, Office 365 usa todas las condiciones para determinar cuándo debe aplicarse la Directiva a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. Por lo tanto, en este caso, las tres condiciones serían las siguientes:
+Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. Por lo tanto, en este caso, las tres condiciones serían las siguientes:
   
 - El **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Trade"
 
@@ -263,7 +263,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
   
 |**Tipo de etiqueta**|**Qué significa**|
 |:-----|:-----|
-| **No revisado** | Número de correos electrónicos no revisados todavía. Estos mensajes de correo electrónico están pendientes de revisión en el panel de supervisión de Office 365.
+| **No revisado** | Número de correos electrónicos no revisados todavía. Estos mensajes de correo electrónico están en espera de revisión en el panel de supervisión de 365 de Microsoft.
 | **Compliant** | Número de mensajes de correo electrónico revisados y marcados como compatibles. Estos mensajes aún necesitan resolución. |
 | **Questionable** | Número de correos electrónicos revisados y marcados como cuestionables. Sirve como marca para otros revisores para ayudar a comprobar si un correo electrónico necesita investigar el cumplimiento. Estos mensajes aún necesitan resolución. |
 | **No compatible (activo)** | El número de correos electrónicos no compatibles que los revisores están investigando en este momento. |
@@ -279,7 +279,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 
 En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que cambia una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción supervisada por las directivas de supervisión proporcionan una prueba de los procedimientos de supervisión.
 
-Las siguientes actividades de directiva de supervisión se auditan y están disponibles en los registros de auditoría de Office 365 unificados:
+Las siguientes actividades de directiva de supervisión se auditan y están disponibles en los registros de auditoría unificada:
 
 |**Actividad**|**Comandos asociados**|
 |:-----|:-----|

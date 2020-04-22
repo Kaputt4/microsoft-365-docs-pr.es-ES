@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
-ms.openlocfilehash: 1f52139df6585cc0e8de240544befa3dd2175f67
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929354"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632165"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -35,7 +35,7 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 
 ### <a name="auditing"></a>Auditoría
 
-[Auditoría avanzada en Microsoft 365](advanced-audit.md) (nueva)<br>Disponible para las organizaciones con una suscripción a Office 365 E5 o Microsoft 365 Enterprise E5, la auditoría avanzada amplía las capacidades de auditoría existentes mediante la introducción de características como períodos de retención largos para registros de auditoría, nuevas directivas de retención de registro de auditoría y un nuevo acción de auditoría de buzón que realiza el seguimiento de las lecturas de correo.
+[Auditoría avanzada en Microsoft 365](advanced-audit.md) (nueva)<br>Disponible para organizaciones con una suscripción a Office 365 E5 o Microsoft 365 Enterprise E5, la auditoría avanzada amplía las capacidades de auditoría existentes mediante la introducción de características como períodos de retención largos para registros de auditoría, nuevas directivas de retención de registro de auditoría y una nueva acción de auditoría de buzones de correo que realiza el seguimiento de las lecturas de correo.
 
 [Administración de directivas de retención de registro de auditoría](audit-log-retention-policies.md) (nueva)<br>Detalles sobre la administración de directivas de retención de registro de auditoría, la nueva característica de auditoría avanzada que permite guardar registros de auditoría de diferentes servicios durante un máximo de un año.
 
@@ -43,7 +43,7 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 
 [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (actualizado)<br>Se agregaron nuevas descripciones para actividades de etiqueta de confidencialidad e información adicional acerca de [las actividades de colaboración de formularios](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)de auditoría.
 
-### <a name="compliance-offerings"></a>Oferta de cumplimiento
+### <a name="compliance-offerings"></a>Ofertas de cumplimiento
 
 [Marco de garantía de ENISA Information](offering-enisa.md) (nueva)<br>Nuevo tema sobre el marco de seguridad de la información de la Agencia Europea de seguridad de la información (ENISA) (IAF).
 
@@ -51,17 +51,17 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 
 [Autoridad del Reglamento prudencial australiano (APRA)](offering-APRA-Australia.md) (actualizado)<br>Contenido alineado para nuevos estándares normativos.
 
-### <a name="customer-key"></a>Clave del cliente
+### <a name="customer-key"></a>Clave de cliente
 
-[Cifrado de servicios con clave de cliente en Office 365](customer-key-overview.md) (nueva)<br>Artículo nuevo que presenta la clave de cliente y conceptos relacionados, como BitLocker y el cifrado de servicio, y cómo funcionan conjuntamente.
+[Cifrado de servicio con clave de cliente](customer-key-overview.md) (nueva)<br>Artículo nuevo que presenta la clave de cliente y conceptos relacionados, como BitLocker y el cifrado de servicio, y cómo funcionan conjuntamente.
 
-[Administrar la clave de cliente de Office 365](customer-key-manage.md) (nueva)<br>Instrucciones posteriores a la configuración para la administración de la clave de cliente, incluidos los pasos para administrar los permisos de DEPs y de la bóveda de clave existentes, los tiempos estimados para completar las operaciones, cómo comprobar que el cifrado funcionó y cómo salir del servicio de Office 365.
+[Administrar la clave de cliente](customer-key-manage.md) (nueva)<br>Instrucciones posteriores a la configuración para administrar la clave de cliente, incluidos los pasos para la administración de los permisos de DEPs y de la bóveda de claves, los tiempos estimados para completar las operaciones, cómo comprobar que el cifrado funcionó y cómo salir del servicio.
 
 [Rollo o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md) (nueva)<br>Describe cómo deshacer las claves administradas por el cliente para la clave de cliente.
 
-[Obtenga información sobre la clave de disponibilidad para Office 365 Customer Key](customer-key-availability-key-understand.md) (nueva)<br>Cobertura detallada sobre la clave de disponibilidad: Cuándo y cómo se usa para recuperarse de la pérdida de claves, donde existe en la jerarquía de clave de cliente, y más.
+[Obtener información sobre la clave de disponibilidad para la clave de cliente](customer-key-availability-key-understand.md) (nueva)<br>Cobertura detallada sobre la clave de disponibilidad: Cuándo y cómo se usa para recuperarse de la pérdida de claves, donde existe en la jerarquía de clave de cliente, y más.
 
-[Configurar la clave de cliente de Office 365](customer-key-set-up.md) (actualizado)<br>Anteriormente titulado "controlar los datos en Office 365 mediante la clave de cliente", este artículo se centra únicamente en cómo configurar la clave de cliente para Office 365, incluidas las instrucciones actualizadas.
+[Configurar la clave de cliente para Microsoft 365](customer-key-set-up.md) (actualizado)<br>Titulado anteriormente "controlar los datos en Microsoft 365 mediante la clave de cliente", este artículo se centra únicamente en cómo configurar la clave de cliente para Office 365, incluidas las instrucciones actualizadas.
 
 ### <a name="data-classification"></a>Clasificación de los datos
 
@@ -79,16 +79,16 @@ Se agregaron referencias del administrador de cumplimiento y vínculos actualiza
 [Lista de comprobación de preparación de responsabilidad de Dynamics 365 para RGPD](gdpr-arc-Dynamics365.md)<br>
 [Lista de comprobación de preparación de responsabilidad para Microsoft Office 365](gdpr-arc-Office365.md)<br>
 
-### <a name="insider-risk-management"></a>Administración de riesgos de Insider
+### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 Se actualizaron los siguientes artículos para apoyar la versión oficial de la administración de riesgos de Insiders.<br>
 [Obtenga información sobre la administración de riesgos de Insider en Microsoft 365](insider-risk-management.md)<br>
-[Introducción a la administración de riesgos de Insider](insider-risk-management-configure.md)<br>
-[Crear y administrar directivas de riesgos de Insider](insider-risk-management-policies.md)<br>
-[Investigar las alertas de los riesgos de Insider](insider-risk-management-alerts.md)<br>
-[Emprender acciones en casos de riesgo de Insider](insider-risk-management-cases.md)<br>
-[Revisar los datos con el explorador de contenido de riesgo de Insider](insider-risk-management-content-explorer.md)<br>
-[Adición de usuarios a directivas de riesgos de Insider](insider-risk-management-users.md)<br>
+[Introducción a la administración de riesgos internos](insider-risk-management-configure.md)<br>
+[Crear y administrar directivas de riesgos internos](insider-risk-management-policies.md)<br>
+[Investigar alertas de riesgos internos](insider-risk-management-alerts.md)<br>
+[Tomar medidas en casos de riesgos internos](insider-risk-management-cases.md)<br>
+[Revisar datos con el explorador de contenido de riesgos internos](insider-risk-management-content-explorer.md)<br>
+[Agregar usuarios a las directivas de riesgos internos](insider-risk-management-users.md)<br>
 [Crear avisos de riesgos de Insider](insider-risk-management-notices.md)<br>
 
 ### <a name="records-management"></a>Administración de registros
@@ -97,7 +97,7 @@ Se actualizaron los siguientes artículos para apoyar la versión oficial de la 
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-[Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) (nueva)<br>Incluye orientación para clientes de Azure Information Protection, información general de alto nivel del proceso y pasos para implementar etiquetas de confidencialidad, permisos para crear y administrar las etiquetas, una lista de escenarios comunes que admiten etiquetas y una lista de usuarios finales disponibles referente.
+[Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) (nueva)<br>Incluye orientación para clientes de Azure Information Protection, información general de alto nivel del proceso y pasos para implementar etiquetas de confidencialidad, permisos para crear y administrar las etiquetas, una lista de escenarios comunes que admiten etiquetas y una lista de documentación de usuario final disponible.
 
 [Obtener información sobre las etiquetas de confidencialidad](sensitivity-labels.md) (actualizada)<br>Cambiar el título de "información general sobre las etiquetas de confidencialidad" y movió la información de la sección "introducción" al nuevo artículo Introducción a las [etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
 
@@ -107,7 +107,7 @@ Se actualizaron los siguientes artículos para apoyar la versión oficial de la 
 
 [Aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (actualizado)<br>La sección para configurar las etiquetas automáticas para las aplicaciones de Office ahora incluye la nueva opción para usar clasificadores cocapacitados.
 
-[Usar las etiquetas de confidencialidad para proteger el contenido de Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md) (actualización)<br>Revisiones en una mejor experiencia de lectura y aclaraciones técnicas. Además, por comentarios de los clientes, se agregaron vínculos al [artículo de Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) para habilitar la vista previa y aplicar etiquetas de confidencialidad a los grupos de Office 365 en Azure portal. Por último, se agregó una sección nueva para auditar actividades de etiqueta de confidencialidad.
+[Usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de microsoft 365 y los sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md) (actualización)<br>Revisiones en una mejor experiencia de lectura y aclaraciones técnicas. Además, por comentarios de los clientes, se agregaron vínculos al [artículo de Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) para habilitar la vista previa y aplicar etiquetas de confidencialidad a los grupos de Microsoft 365 en el portal de Azure. Por último, se agregó una sección nueva para auditar actividades de etiqueta de confidencialidad.
 
 [Habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (actualizado)<br>Varias actualizaciones incluyen aclaraciones por los comentarios de los clientes sobre cómo funciona esta característica, haciendo hincapié en que las nuevas funciones solo se aplican a los archivos nuevos y modificados, y una nueva limitación que puede que vea durante una fase de pruebas si elimina etiquetas.
 

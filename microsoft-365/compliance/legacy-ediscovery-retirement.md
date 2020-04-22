@@ -1,5 +1,5 @@
 ---
-title: Retirada de herramientas de eDiscovery heredadas
+title: Retirada de herramientas heredadas de eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,22 +10,22 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y Office 365 Advanced eDiscovery v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
-ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
+description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y eDiscovery avanzado v 1.0 también se están retirando en el mismo período de tiempo.
+ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43158441"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635574"
 ---
-# <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas de eDiscovery heredadas
+# <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
 > [!IMPORTANT]
 > Microsoft ha evaluado la situación de salud pública y comprendemos el impacto que esto tiene en nuestros clientes. Queremos ser socios seguros y ciudadanos globales responsables. Para facilitar una de las muchas sobrecargas que tiene enfrentadas, vamos a retrasar la jubilación programada para las herramientas de eDiscovery heredadas que se describen en este artículo en tres meses. **Las fechas de retirada actualizadas se reflejan a continuación.**
 
-A lo largo de los años, Microsoft ha ofrecido herramientas de eDiscovery que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma efectiva de buscar contenido que no es de Exchange en otros servicios de Office 365, como SharePoint Online y Office 365 groups. Para solucionar esto, Microsoft ofrece otras herramientas de eDiscovery que le ayudarán a buscar una amplia variedad de contenido de Office 365. Y hemos trabajado duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Esto permite a las organizaciones responder a solicitudes de contenido legales, internas y de otro documento sobre muchos de los servicios de Office 365, incluido Exchange Online.
+A lo largo de los años, Microsoft ha ofrecido herramientas de eDiscovery que le permiten buscar, obtener una vista previa y exportar contenido de correo electrónico desde Exchange Online. Sin embargo, estas herramientas ya no ofrecen una forma efectiva de buscar contenido que no es de Exchange en otros servicios de Microsoft 365, como SharePoint Online y los grupos de Microsoft 365. Para solucionar esto, Microsoft ofrece otras herramientas de eDiscovery que le ayudarán a buscar una amplia variedad de contenido de Microsoft 365. Y hemos trabajado duro para incorporar la funcionalidad de exhibición de documentos electrónicos más actual y eficaz en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). Esto permite a las organizaciones responder a solicitudes legales, internas y de otro documento sobre contenido en muchos servicios de Microsoft 365, incluido Exchange Online.
 
-Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características relacionadas con la exhibición de documentos electrónicos y la funcionalidad relacionada con la búsqueda de contenido de correo electrónico en Exchange Online y Office 365:
+Como resultado de esta nueva y mejorada funcionalidad de eDiscovery en el centro de cumplimiento de Microsoft 365, estamos retirando las siguientes características relacionadas con la exhibición de documentos electrónicos y la funcionalidad relacionada con la búsqueda de contenido de correo electrónico en Exchange Online y Microsoft 365:
 
 - [Exhibición](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) de documentos electrónicos local y [conservaciones locales](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) en el centro de administración de Exchange.
 
@@ -75,7 +75,7 @@ Debido a que todas estas capacidades (excepto la de copiar los resultados de la 
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline-for-retirement"></a>Escala de tiempo para la jubilación
 
@@ -108,7 +108,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p>Mayor confiabilidad para la búsqueda, exportación y colocación de contenido en retención</p>
 </li>
 <li>
-<p>Buscar contenido en para Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial, Microsoft Teams, grupos de Yammer, grupos de Office 365 y otro contenido almacenado en aplicaciones de Office 365</p></li></ul>
+<p>Buscar contenido en para Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial, Microsoft Teams, grupos de Yammer, grupos de 365 de Microsoft y otro contenido almacenado en aplicaciones de Office 365</p></li></ul>
 <p>Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations">administrar investigaciones legales en Office 365</a>.</td>
 </tr>
 <tr class="even">
@@ -178,7 +178,7 @@ Como estas capacidades ahora están disponibles en el [<span class="underline">c
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -204,7 +204,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction trabajan conjuntamente para ayudarle a buscar y exportar contenido. Puede crear una búsqueda nueva y ver la estimación de la búsqueda con los cmdlets <strong>New-</strong>, <strong>Get-</strong>y <strong>Start-ComplianceSearch</strong> . A continuación, puede usar el cmdlet <strong>New-ComplianceSearchAction</strong> para exportar los resultados de la búsqueda. Todavía tendrá que usar la herramienta de exhibición de documentos electrónicos principal del centro de cumplimiento de Microsoft 365 para descargar los resultados de la búsqueda en el equipo local.</p>
 <p>
 <p><strong>Nota:</strong> Si usa estos cmdlets para crear búsquedas que no están asociadas a un caso de exhibición de documentos electrónicos principal, estas búsquedas se encuentran en la página <strong>búsqueda de contenido</strong> en el centro de cumplimiento de Microsoft 365.</p></td>
@@ -214,13 +214,13 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
-<p> </p></td>
+<p> </p></td>
 <td><p>Las suspensiones del centro de cumplimiento de Microsoft 365 deben asociarse con un ComplianceCase. En primer lugar, cree el caso de cumplimiento y, a continuación, cree un CaseHoldPolicy y un CaseHoldRule.</p>
 <p><strong>Nota:</strong> La creación de un CaseHoldPolicy sin un CaseHoldRule de creación hará que la retención no funcione hasta que se cree el CaseHoldRule y se asocie a la CaseHoldPolicy. Consulte la documentación del cmdlet para obtener más información.</p></td>
 </tr>
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
-<td>Ninguno</td>
+<td>None</td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
   <tr class=even>
@@ -259,7 +259,7 @@ El cmdlet **Search-Mailbox** en Exchange Online PowerShell se está retirando co
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -303,7 +303,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tr>
 <tr class="even">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
-<td> </td>
+<td> </td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes en la sección <strong>cmdlets *-MailboxSearch</strong> para obtener soluciones alternativas. </td>
 </tr>
 </tbody>
@@ -321,7 +321,7 @@ Estas operaciones en la API de los servicios web Exchange se usan en la caracter
 
 - Office 365 y Microsoft 365 organizaciones gubernamentales; Esto incluye GCC, GCC High y DoD
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 
@@ -355,7 +355,7 @@ En este momento, le recomendamos que empiece a realizar la transición del flujo
 
 - Organizaciones de Educación de Office 365 y Microsoft 365
 
-- Office 365 Germany
+- Office 365 Alemania
 
 ### <a name="timeline"></a>Escala de tiempo
 

@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081350"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631287"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -44,12 +44,12 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
 
  **Nuevos clientes y clientes que evalúen Microsoft Online Services** puede tener acceso a la garantía del servicio que se incluye en los planes de Office 365 Enterprise E3 y E5 (tanto suscripciones de prueba como de pago). Si no tiene uno de estos planes y desea probar el servicio de garantía, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- **Los clientes existentes de Office 365 para empresas** pueden tener acceso al servicio de garantía del servicio. Si es el administrador global de Office 365 (a veces llamado administrador de la compañía) de su organización, ya tendrá acceso a la garantía del servicio y podrá incorporar otros. Si no es el administrador global de Office 365 de su organización y necesita obtener acceso a garantía del servicio, pida al administrador que le agregue al grupo de roles de usuario de garantía del servicio. 
+ **Los clientes existentes de Microsoft 365 para empresas** pueden obtener acceso al servicio de garantía del servicio. Si usted es el administrador global (a veces llamado administrador de la empresa) de su organización, ya tendrá acceso a la garantía del servicio y podrá incorporar otros. Si no es el administrador global de su organización y necesita obtener acceso a garantía del servicio, pídale al administrador que le agregue al grupo de roles de usuario de garantía del servicio. 
   
  De forma predeterminada, los **miembros de suscripción de O365** pueden obtener acceso a la sección Garantía del servicio en el centro de protección de Office365 si no se ha implementado el acceso basado en roles del servicio de seguridad en la suscripción. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365. 
   
 > [!NOTE]
-> Nota: Si su compañía ha implementado acceso basado en roles de garantía de servicio en su suscripción de Office 365 (que podría ser si se ha proporcionado acceso a informes personalizados a su organización) y necesita acceso a garantía del servicio, pero no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, solicite al administrador de Office 365 que le agregue al grupo de roles de **usuario de garantía** Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
+> Si su empresa ha implementado acceso basado en roles de garantía de servicio en su suscripción de Microsoft 365 (que puede ser si su organización tiene acceso a informes personalizados) y necesita acceso a la garantía del servicio, pero no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, consulte a su administrador de Office 365 para que le agregue al grupo de roles de usuario de **garantía del servicio** . Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
   
  **Acceso basado en roles de servicios de garantía de servicio: usuarios aprovisionados** Si su empresa ha implementado el acceso basado en roles de garantía de servicios, puede proporcionar acceso al servicio de seguridad a todo el personal de seguridad y cumplimiento, incluidos los equipos y el personal de seguridad de la información, la administración de riesgos, el cumplimiento y la auditoría de la organización. Para obtener más información, consulte [incorporar otros usuarios o grupos de garantía del servicio](service-assurance.md#addother).
   
@@ -57,7 +57,7 @@ La garantía del servicio es accesible mediante el centro de seguridad & cumplim
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
+2. Inicie sesión con su cuenta profesional o educativa. 
     
 3. En el panel izquierdo, seleccione **garantía del servicio**. A continuación, [Elija la configuración regional y del sector](service-assurance.md#Chooseyourindustryregional) y [incorpore otros grupos o usuarios de garantía del servicio](service-assurance.md#addother).
     

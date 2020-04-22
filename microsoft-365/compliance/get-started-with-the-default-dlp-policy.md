@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización.
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073136"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637834"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 
@@ -62,11 +62,11 @@ Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP pre
   
 ## <a name="edit-the-default-dlp-policy"></a>Edición de la Directiva de DLP predeterminada
 
-Esta Directiva se denomina **Directiva DLP predeterminada de Office 365** y aparece en **prevención de pérdida de datos** en la página de la **Directiva** del centro de seguridad &amp; y cumplimiento. 
+Esta Directiva se denomina **Directiva DLP predeterminada** y aparece en **prevención de pérdida de datos** en la página de la &amp; **Directiva** del centro de seguridad y cumplimiento. 
   
 Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. También puede desactivar o eliminar la Directiva para que los usuarios dejen de recibir sugerencias de directiva o notificaciones de correo electrónico.
   
-![Directiva DLP denominada Directiva DLP predeterminada de Office 365](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Directiva DLP llamada Directiva DLP predeterminada](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 

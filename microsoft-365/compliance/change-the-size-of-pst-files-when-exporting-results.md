@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargan en el equipo cuando exporta resultados de la búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: 9deb90e688617981499bee286b95a0442fa1a1b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5fde9bbb37f6e22c49049c892a1b69b07d15bef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595937"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636328"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de eDiscovery
 
-Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para exportar los resultados de correo electrónico de una búsqueda de exhibición de documentos electrónicos de las diferentes herramientas de eDiscovery de Microsoft, el tamaño predeterminado de un archivo PST que se puede exportar es 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Un motivo para hacerlo es que un archivo PST puede encajar en un medio extraíble, un DVD, un disco compacto o una unidad USB. 
+Cuando se usa la herramienta de exportación de exhibición de documentos electrónicos para exportar los resultados de correo electrónico de una búsqueda de exhibición de documentos electrónicos de las diferentes herramientas de eDiscovery de Microsoft, el tamaño predeterminado de un archivo PST que se puede exportar es 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Un motivo para hacerlo es que un archivo PST puede encajar en un medio extraíble, un DVD, un disco compacto o una unidad USB. 
   
 > [!NOTE]
-> La herramienta de exportación de exhibición de documentos electrónicos de Office 365 se usa para exportar los resultados de la búsqueda cuando se usa la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento, la exhibición de documentos electrónicos local en Exchange Online y el centro de exhibición de documentos electrónicos en SharePoint Online.
+> La herramienta de exportación de exhibición de documentos electrónicos se usa para exportar los resultados de la búsqueda cuando se usa la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento, la exhibición de documentos electrónicos local en Exchange Online y el centro de exhibición de documentos electrónicos en SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Crear una configuración del registro para cambiar el tamaño de los archivos PST al exportar los resultados de la búsqueda de exhibición de documentos electrónicos
 
 Realice el procedimiento siguiente en el equipo que va a usar para exportar los resultados de una búsqueda de exhibición de documentos electrónicos.
   
-1. Cierre la herramienta de exportación de exhibición de documentos electrónicos de Office 365 si está abierta. 
+1. Cierre la herramienta de exportación de exhibición de documentos electrónicos si está abierta. 
     
 2. Guarde el siguiente texto en un archivo de registro de la ventana mediante un sufijo de nombre de archivo. reg; por ejemplo, PstExportSize. reg. 
     
@@ -74,11 +74,11 @@ Los clientes tienden a reducir el límite de tamaño para que los resultados de 
   
  **¿En qué equipo tengo que hacerlo?**
   
-Debe cambiar la configuración del registro en cualquier equipo local en el que ejecute la herramienta de exportación de exhibición de documentos electrónicos de Office 365.
+Debe cambiar la configuración del registro en cualquier equipo local en el que ejecute la herramienta de exportación de exhibición de documentos electrónicos.
   
  **Después de cambiar esta configuración, ¿tengo que reiniciar el equipo?**
   
-No, no es necesario reiniciar el equipo. Pero, si se está ejecutando la herramienta de exportación de exhibición de documentos electrónicos de Office 365, tendrá que cerrarla y reiniciarla después de cambiar esta configuración.
+No, no es necesario reiniciar el equipo. Pero, si se está ejecutando la herramienta de exportación de exhibición de documentos electrónicos, tendrá que cerrarla y reiniciarla después de cambiar esta configuración.
   
  **¿Se modifica una clave del registro existente o se crea una nueva clave?**
   

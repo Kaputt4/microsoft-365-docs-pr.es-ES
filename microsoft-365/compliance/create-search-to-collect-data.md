@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 4b740b07b59b7500b8f57584767796b7f31ae87d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635980"
 ---
 # <a name="create-a-search"></a>Crear una búsqueda
 
@@ -39,7 +39,7 @@ Elija ubicaciones de contenido de custodios para buscar especificando los custod
 
 ## <a name="choose-non-custodial-locations"></a>Elegir ubicaciones que no sean de privación
 
-En algunos casos, es posible que quiera buscar orígenes de datos que no estén asociados con un custodio. En este caso, puede especificar las ubicaciones en las que desea realizar la búsqueda o elegir buscar en todas las ubicaciones de contenido de un servicio de Office 365 específico (como la búsqueda de todos los buzones de Exchange o de todos los sitios de SharePoint y las cuentas de OneDrive).
+En algunos casos, es posible que quiera buscar orígenes de datos que no estén asociados con un custodio. En este caso, puede especificar las ubicaciones en las que desea realizar la búsqueda o bien elegir buscar en todas las ubicaciones de contenido de un servicio de Microsoft específico (por ejemplo, buscar en todos los buzones de Exchange o en todos los sitios de SharePoint y cuentas de OneDrive).
 
 ## <a name="define-the-search-query-and-conditions"></a>Definir la consulta y las condiciones de búsqueda
 

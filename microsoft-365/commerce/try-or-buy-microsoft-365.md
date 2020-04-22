@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631910"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707540"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
@@ -32,9 +32,9 @@ Microsoft 365 es una solución completa que combina Office 365 y Windows 10 con 
   
 - Microsoft 365 empresa Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 Cuando se agrega una suscripción a través del centro de administración, la nueva suscripción se asocia a la misma organización (espacio de nombres de dominio) que la suscripción existente. Esto hace que sea más fácil mover a los usuarios de la organización entre suscripciones o asignarles una licencia para la suscripción adicional que necesitan.
   

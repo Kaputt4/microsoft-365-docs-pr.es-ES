@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de eDiscovery en el centro de cumplimiento de Microsoft 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097203"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635910"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
 Las organizaciones tienen muchas razones para responder a un caso legal en el que participan determinados ejecutivos u otros empleados de la organización. Esto puede implicar una rápida búsqueda y retención de información específica de investigación en el correo electrónico, los documentos, las conversaciones de mensajería instantánea y otras ubicaciones de contenido que usan los usuarios en sus tareas de trabajo cotidianas. Puede realizar estas y muchas otras actividades similares usando las herramientas de caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento.
   
-**¿Desea saber cómo administra Microsoft sus investigaciones de eDiscovery?** A continuación se describen las [notas del producto](https://go.microsoft.com/fwlink/?linkid=852161) que puede descargar y que explican cómo usamos las mismas herramientas de búsqueda e investigación de Office 365 para administrar nuestro flujo de trabajo de eDiscovery interno.
+**¿Desea saber cómo administra Microsoft sus investigaciones de eDiscovery?** Estas son las [notas del producto técnicas](https://go.microsoft.com/fwlink/?linkid=852161) que puede descargar y que explican cómo usamos las mismas herramientas de búsqueda e investigación para administrar nuestro flujo de trabajo de eDiscovery interno.
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administración de investigaciones legales con casos de eDiscovery
 

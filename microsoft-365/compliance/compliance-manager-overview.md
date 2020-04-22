@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141617"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632995"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -43,7 +43,7 @@ Con el administrador de cumplimiento, su organización puede:
 - Genere informes detallados de Microsoft Excel que documentan las actividades de cumplimiento realizadas por Microsoft y su organización para auditores, reguladores y otros revisores de cumplimiento.
 
 > [!NOTE]
-> Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones; para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones que se encuentran en el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.
+> Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones; para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones incluidas en el Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento.
 
 ## <a name="relationship-to-compliance-score"></a>Relación con la puntuación de cumplimiento
 
@@ -52,7 +52,7 @@ La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-s
 El administrador de cumplimiento comparte el mismo back-end con puntuación de cumplimiento. Durante la fase de versión preliminar pública para ambas herramientas, el administrador de cumplimiento es donde administrará las evaluaciones y las implementaciones de controles personalizados. Obtenga más información sobre la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
   
 > [!IMPORTANT]
-> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Ningún servicio puede garantizar que cumple un estándar o una regla, y la puntuación de cumplimiento no debe interpretarse como una garantía de ninguna manera.
+> La Puntuación de cumplimiento no expresa una medida absoluta de la conformidad de la organización con ninguna norma o reglamento en particular. Expresa el grado en el que se han adoptado controles, lo cual puede reducir los riesgos de los datos personales y de la privacidad individual. Ningún servicio puede garantizar que cumple un estándar o una regla, y la puntuación de cumplimiento no debe interpretarse como una garantía de ninguna manera.
 
 ## <a name="compliance-manager-components"></a>Componentes del administrador de cumplimiento
 

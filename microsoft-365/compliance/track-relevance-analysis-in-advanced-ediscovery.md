@@ -1,5 +1,5 @@
 ---
-title: Seguimiento del análisis de relevancia en Office 365 Advanced eDiscovery
+title: Seguimiento del análisis de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado.  '
+ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557680"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636623"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Seguimiento del análisis de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -84,7 +84,7 @@ Si desea importar nuevos archivos tras el cálculo por lotes, el administrador p
 Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. El proceso de coherencia de etiquetado de exhibición de documentos electrónicos avanzado puede usarse cuando los resultados no son óptimos o la coherencia está en duda. Se devuelve una lista de los archivos etiquetados que pueden ser incoherentes y se pueden revisar y volver a etiquetar, según sea necesario.
   
 > [!NOTE]
-> Después de siete o más formación redondeos tras la evaluación, la coherencia de etiquetado se puede ver en el **seguimiento** \> **** \> de **relevancia** \> **progreso de aprendizaje**de **resultados** \> detallados. Esta revisión se realiza por un problema a la vez. 
+> Después de siete o más formación redondeos tras la evaluación, la coherencia de etiquetado se puede ver en el **seguimiento** \> **Issue** \> de **relevancia** \> **progreso de aprendizaje**de **resultados** \> detallados. Esta revisión se realiza por un problema a la vez. 
   
 1. En **el \> seguimiento de relevancia**, expanda la fila de un problema.
     
@@ -172,7 +172,7 @@ Esta vista muestra lo siguiente:
     
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

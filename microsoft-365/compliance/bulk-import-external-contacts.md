@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar de forma masiva contactos externos a la lista global de direcciones.
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078957"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636348"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importación masiva de contactos externos a Exchange Online
 
@@ -71,7 +71,7 @@ El primer paso consiste en crear un archivo CSV que contenga información sobre 
 
 El siguiente paso es usar el archivo CSV que creó en el paso 1 y PowerShell para importar de forma masiva los contactos externos que aparecen en el archivo CSV a Exchange Online. 
   
-1.  Conecte PowerShell a la organización de Exchange Online. Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Asegúrese de usar el nombre de usuario y la contraseña de su cuenta de administrador global de Office 365 cuando se conecte a Exchange Online PowerShell. 
+1.  Conecte PowerShell a la organización de Exchange Online. Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Asegúrese de usar el nombre de usuario y la contraseña de su cuenta de administrador global cuando se conecte a Exchange Online PowerShell. 
     
 2. Después de conectar PowerShell a Exchange Online, vaya a la carpeta escritorio donde guardó el archivo CSV en el paso 1; por ejemplo `C:\Users\Administrator\desktop`.
     

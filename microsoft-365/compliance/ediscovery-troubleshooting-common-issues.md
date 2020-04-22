@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Investigue, solucione problemas y resuelva problemas comunes en la exhibición de documentos electrónicos de Office 365.
+description: Investigue, solucione problemas y resuelva problemas comunes en la exhibición de documentos electrónicos.
 siblings_only: true
-ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074826"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631775"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -37,7 +37,7 @@ Si intenta agregar la ubicación del buzón de correo del usuario a la búsqueda
 
 Compruebe si hay usuarios duplicados o una lista de distribución con el mismo identificador de usuario.
 
-1. Conéctese a [Office 365 Security & el centro de cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Conéctese al [centro de seguridad & PowerShell del centro de cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando para recuperar todas las instancias del nombre de usuario:
 
@@ -66,7 +66,7 @@ Una exhibición de documentos electrónicos o búsqueda de contenido puede produ
 
 Si recibe este error, se recomienda comprobar las ubicaciones en las que se produjo un error en la búsqueda y, a continuación, volver a ejecutar la búsqueda solo en las ubicaciones con error.
 
-1. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando:
+1. Conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -112,9 +112,9 @@ Al exportar resultados de búsqueda de eDiscovery o búsqueda de contenido en el
 
 ### <a name="resolution"></a>Resolución
 
-1.  Pruebe a usar los pasos que se indican en el artículo [aumentar la velocidad de descarga](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.    Pruebe a usar los pasos que se indican en el artículo [aumentar la velocidad de descarga](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.  Si sigue teniendo problemas, conéctese a [PowerShell del centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
+2.    Si sigue teniendo problemas, conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ Cuando se ejecuta una búsqueda de exhibición de documentos electrónicos, si s
 
 1. Divida la búsqueda en búsquedas más pequeñas y vuelva a ejecutar la búsqueda.  Intente usar un intervalo de fechas menor o limitar el número de ubicaciones en las que se busca.
 
-2. Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando:
+2. Conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando:
 
     ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ error de distribución de sincronización de la Directiva de suspensión de caso
 
 ### <a name="resolution"></a>Resolución
 
-1.  Conéctese al [centro de seguridad & cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y ejecute el siguiente comando para una suspensión de caso de exhibición de documentos electrónicos:
+1.    Conéctese a [PowerShell del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando para una suspensión de caso de exhibición de documentos electrónicos:
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

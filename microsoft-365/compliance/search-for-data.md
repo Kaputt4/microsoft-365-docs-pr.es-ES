@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1ccd922c0829155110e633fa45253c56b9006111
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069887"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632915"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Buscar datos en una investigación
 
-En la ficha **Buscar** de una investigación de datos, puede buscar datos confidenciales en ubicación incorrecta, confidenciales o confidenciales en ubicaciones de contenido en Office 365 con palabras clave y condiciones. 
+En la ficha de **búsqueda** de una investigación de datos, puede buscar datos confidenciales, confidenciales o en ubicación en ubicaciones de contenido mediante palabras clave y condiciones. 
 
 Después de ejecutar una búsqueda, puede ver las estadísticas de los elementos devueltos por la búsqueda, como las ubicaciones de contenido que tienen la mayoría de los elementos que coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Una vez que haya identificado el conjunto de documentos que se van a investigar, puede Agregar los resultados de la búsqueda a un conjunto de evidencias para procesarlos y analizarlos.
 
@@ -41,9 +41,9 @@ Después de ejecutar una búsqueda, puede ver las estadísticas de los elementos
 
 4. Elija las ubicaciones de contenido (orígenes de datos) para buscar. Puede limitar la búsqueda seleccionando las ubicaciones de contenido de personas de interés específicas (si agregó cualquiera a la investigación). Si ha agregado personas de interés a la investigación, puede agregarlas siguiendo los pasos descritos en [Manage People of Interest](manage-people-of-interest.md#add-people-of-interest).
  
-   En ocasiones, es posible que primero necesite buscar en todas las ubicaciones de contenido de su organización. Como alternativa, puede que necesite buscar ubicaciones que no pertenezcan a una persona específica. En este escenario, puede elegir buscar en toda la organización o en todas las ubicaciones de los servicios específicos de Office 365 (como Exchange, SharePoint, OneDrive de la empresa o Teams).
+   En ocasiones, es posible que primero necesite buscar en todas las ubicaciones de contenido de su organización. Como alternativa, puede que necesite buscar ubicaciones que no pertenezcan a una persona específica. En este escenario, puede elegir buscar en toda la organización o en todas las ubicaciones de los servicios específicos (como Exchange, SharePoint, OneDrive de la empresa o Teams).
 
-5. Guarde y ejecute la búsqueda.
+5. Guardar y ejecutar la búsqueda.
 
 Una vez creada la búsqueda, se muestra una página de control flotante con detalles sobre la búsqueda. Los botones **estadísticas** y **vista previa** aparecen inicialmente atenuados porque la búsqueda no se ha completado. Puede realizar un seguimiento del progreso de la búsqueda mediante la supervisión de la columna **Estado** en la ficha **búsquedas** .
 
@@ -76,14 +76,14 @@ Cuando esté satisfecho con los resultados de una búsqueda y esté listo para a
 
 - Todos los elementos (incluido el contenido y los metadatos) se vuelven a indizar para que todos los datos del conjunto de evidencias se puedan buscar durante la investigación. La nueva indización de los datos da como resultado búsquedas exhaustivas y rápidas cuando se realiza una búsqueda de datos en el conjunto de evidencias durante la investigación.
 
-Una de las ventajas de copiar los datos activos en un conjunto de evidencias en Azure es que, para incidentes críticos o sensibles al tiempo, puede contener rápidamente el daño al eliminar inmediatamente contenido sospechoso en el origen de datos original en el servicio en directo y, a continuación, investigar el incidente mediante el análisis de la evidencia que se ha copiado en el entorno en cuarentena de la ubicación de almacenamiento de Azure. 
+Una de las ventajas de copiar los datos activos en un conjunto de evidencias en Azure es que, para incidentes críticos o sensibles al tiempo, puede contener rápidamente el daño si elimina inmediatamente contenido sospechoso en el origen de datos original del servicio activo y, a continuación, investiga el incidente mediante el análisis de la evidencia que se ha copiado en el entorno en cuarentena de la ubicación de almacenamiento de Azure. 
 
 Copiar los datos originales en el conjunto de evidencias también facilita la investigación al proporcionarle herramientas de análisis avanzadas, como detección de temas, detección de casi duplicados y identificación de subprocesos de correo electrónico.
 
-Si es necesario, también puede agregar datos de orígenes de datos que no sean de Office 365 a un conjunto de evidencias para que se almacenen junto con los datos recopilados de Office 365.
+Si es necesario, también puede agregar datos de orígenes de datos que no sean Microcsoft 365 a un conjunto de evidencias para que se almacenen junto con los datos que recopile de Microsoft 365.
 
 Para agregar datos a un conjunto de evidencias, seleccione una búsqueda en la ficha **búsquedas** y, a continuación, haga clic en **Agregar resultados a evidencias** en la página de flotante. Puede agregar datos a un conjunto de evidencias existente o crear un nuevo conjunto de evidencias al instante.
 
 ### <a name="tracking-the-progress-of-adding-search-results-to-evidence"></a>Seguimiento del progreso de agregar resultados de búsqueda a la evidencia
 
-Agregar datos a un conjunto de evidencias es un proceso de ejecución prolongada. El proceso incluye la recopilación de elementos del origen de datos original de Office 365 (por ejemplo, de buzones y sitios), copiándolos en la ubicación de almacenamiento de Azure (este proceso de copia también se denomina *ingesta*) y, a continuación, vuelva a indizar los elementos. Puede realizar el seguimiento del progreso en la pestaña **trabajos** o en la pestaña **búsquedas** de la columna **datos agregados a evidencias** . Una vez finalizado el procesamiento del procesamiento de pruebas, puede ir a la pestaña **evidencia** , hacer clic en el conjunto de evidencias y, a continuación, iniciar la investigación buscando, revisando, etiquetando y exportando los datos relevantes según sea necesario.
+Agregar datos a un conjunto de evidencias es un proceso de ejecución prolongada. El proceso incluye la recopilación de elementos del origen de datos original de Microsoft 365 (por ejemplo, de buzones y sitios), copiándolos en la ubicación de almacenamiento de Azure (este proceso de copia también se denomina *ingesta*) y, a continuación, vuelva a indizar los elementos. Puede realizar el seguimiento del progreso en la pestaña **trabajos** o en la pestaña **búsquedas** de la columna **datos agregados a evidencias** . Una vez finalizado el procesamiento del procesamiento de pruebas, puede ir a la pestaña **evidencia** , hacer clic en el conjunto de evidencias y, a continuación, iniciar la investigación buscando, revisando, etiquetando y exportando los datos relevantes según sea necesario.

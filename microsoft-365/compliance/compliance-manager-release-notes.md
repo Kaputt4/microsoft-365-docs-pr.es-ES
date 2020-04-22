@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: de69d4c7e5938d8bfd3fed74b9ae44288e48019c
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141545"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637540"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Notas de la versión de Microsoft Compliance Manager (versión preliminar)
 
@@ -63,7 +63,7 @@ El administrador de cumplimiento ahora está disponible en los siguientes idioma
 
 En la siguiente sección se tratan los problemas conocidos en la versión actual del administrador de cumplimiento.
 
-### <a name="compliance-score"></a>Puntuación de conformidad
+### <a name="compliance-score"></a>Puntuación de cumplimiento 
 
 - Para los elementos de acción marcados como **no en el ámbito**, la puntuación asignada al elemento de acción no se excluye del cálculo de la puntuación de cumplimiento. Los elementos de acción marcados **sin ámbito** no aumentan la puntuación de cumplimiento.
 
@@ -77,7 +77,7 @@ En la siguiente sección se tratan los problemas conocidos en la versión actual
 - Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente los resultados de los controles administrados por Microsoft y la integración de la puntuación segura.
 - Las acciones que no son compatibles con la integración de la puntuación segura se pueden implementar de forma manual. Una implementación manual se aplicará a la puntuación del grupo de la acción.
 
-### <a name="export"></a>Exportar
+### <a name="export"></a>Export
 
 - Se produce un error en la exportación de plantillas a JSON cuando el estado de la plantilla está establecido en **importado** o **pendiente de aprobación**.
 

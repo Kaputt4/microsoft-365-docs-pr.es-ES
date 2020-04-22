@@ -1,5 +1,5 @@
 ---
-title: Establecer las opciones de análisis en Office 365 Advanced eDiscovery
+title: Establecer opciones de análisis en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: 'Revise los pasos para configurar las opciones del proceso analizar en la exhibición avanzada de documentos electrónicos de Office 365, incluidos los subduplicados, los subprocesos de correo electrónico y los temas.  '
-ms.openlocfilehash: 8897099d7531b48f7c6618c106eeb6f051dac546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Revise los pasos para configurar las opciones del proceso de análisis en eDiscovery avanzado, incluidos los elementos casi duplicados, los subprocesos de correo electrónico y los temas.  '
+ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557790"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631267"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Establecer las opciones de análisis en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -78,7 +78,7 @@ Una vez establecidas estas opciones, haga clic en **analizar** para ejecutar. Se
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   

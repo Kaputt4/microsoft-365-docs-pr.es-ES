@@ -1,5 +1,5 @@
 ---
-title: Office 365 cifrado para Skype, OneDrive, SharePoint y Exchange
+title: Cifrado para Skype, OneDrive, SharePoint y Exchange
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,26 +17,26 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint y Exchange Online.'
-ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604167"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637290"
 ---
-# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365 cifrado para Skype empresarial, OneDrive para la empresa, SharePoint Online y Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Cifrado para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online
 
-Office 365 es un entorno altamente seguro que ofrece protección amplia en varias capas: seguridad de centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos.
+Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos.
 
 ## <a name="skype-for-business"></a>Skype Empresarial
 
 Los datos de clientes de Skype empresarial pueden almacenarse en reposo en forma de archivos o presentaciones cargados por los participantes en la reunión. El servidor de conferencia web cifra los datos del cliente mediante AES con una clave de 256 bits. Los datos de cliente cifrados se almacenan en un recurso compartido de archivos. Cada parte de los datos de clientes se cifra con una clave de 256 bits generada de forma aleatoria. Cuando una parte de los datos de clientes se comparte en una conferencia, el servidor de conferencia web indica a los clientes de conferencia que descarguen los datos de clientes cifrados a través de HTTPS. Envía la clave correspondiente a los clientes para que los datos del cliente se puedan descifrar. El servidor de conferencia web también autentica a los clientes de conferencia antes de que los clientes tengan acceso a los datos de clientes de conferencia. Al unirse a una conferencia Web, cada cliente de conferencia establece primero un cuadro de diálogo SIP con el componente de foco de conferencia que se ejecuta dentro del servidor front-end a través de TLS. El enfoque de conferencia pasa al cliente de conferencia una cookie de autenticación generada por el servidor de conferencia Web. A continuación, el cliente de conferencia se conecta al servidor de conferencia web que presenta la cookie de autenticación que el servidor debe autenticar.
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint en línea y OneDrive para Empresas
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online y OneDrive para la Empresa
 
 Todos los archivos de clientes de SharePoint Online están protegidos por claves únicas por archivo que siempre son exclusivas para un único inquilino. Las claves las crea y administra el servicio de SharePoint Online, o cuando la clave de cliente la usan, crean y administran los clientes. Cuando se carga un archivo, SharePoint Online realiza el cifrado en el contexto de la solicitud de carga, antes de enviarlo a Azure Storage. Cuando se descarga un archivo, SharePoint Online recupera los datos cifrados del cliente desde Azure Storage en función del identificador de documento único y descifra los datos del cliente antes de enviarlos al usuario. Azure Storage no tiene la capacidad de descifrar, ni tampoco identificar o comprender los datos de los clientes. Todo el cifrado y el descifrado ocurren en los mismos sistemas que exigen el aislamiento de inquilinos, que son Azure Active Directory y SharePoint Online.
 
-Varias cargas de trabajo en Office 365 almacenan datos en SharePoint Online, incluidos Microsoft Teams, que almacena todos los archivos en SharePoint Online y OneDrive para la empresa, que usa SharePoint Online para su almacenamiento. Todos los datos de clientes almacenados en SharePoint Online están cifrados (con una o varias claves de bits AES de 256) y se distribuyen en el centro de datos de la siguiente manera. (Cada paso de este proceso de cifrado es el nivel 2 de FIPS 140-2 validado. Para obtener información adicional acerca del cumplimiento de FIPS 140-2, consulte [fips 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
+Varias cargas de trabajo de Microsoft 365 almacenan datos en SharePoint Online, incluidos Microsoft Teams, que almacena todos los archivos en SharePoint Online y OneDrive para la empresa, que usa SharePoint Online para su almacenamiento. Todos los datos de clientes almacenados en SharePoint Online están cifrados (con una o varias claves de bits AES de 256) y se distribuyen en el centro de datos de la siguiente manera. (Cada paso de este proceso de cifrado es el nivel 2 de FIPS 140-2 validado. Para obtener información adicional acerca del cumplimiento de FIPS 140-2, consulte [fips 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
 
 - Cada archivo se divide en uno o varios grupos, según el tamaño del archivo. Cada fragmento se cifra mediante su propia clave AES 256-bit exclusiva.
 - Cuando se actualiza un archivo, la actualización se trata de la misma manera: el cambio se divide en uno o más fragmentos y cada fragmento se cifra con una clave única independiente.
@@ -79,10 +79,10 @@ En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que l
 - **La comunicación del cliente con la comunicación del servidor** a SharePoint Online y OneDrive para la empresa en Internet usa conexiones TLS.
 - **Movimiento de datos entre centros de datos** : la principal razón para mover datos entre centros de datos es la replicación geográfica para habilitar la recuperación ante desastres. Por ejemplo, los registros de transacciones y diferencias de almacenamiento de blobs de SQL Server recorren esta canalización. Mientras que estos datos ya se transmiten mediante una red privada, tendrán una mayor protección con el mejor cifrado de su clase.
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 Exchange online usa BitLocker para todos los datos de buzones y la configuración de BitLocker se describe en [BitLocker para el cifrado](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). El cifrado de nivel de servicio cifra todos los datos del buzón de correo en el nivel de buzón. 
 
-Además del cifrado de servicio, Office 365 admite la clave de cliente, que se basa en el cifrado de servicio. La clave de cliente es una opción de clave administrada por Microsoft para el cifrado del servicio de Exchange online que también se encuentra en la guía básica de Microsoft. Este método de cifrado proporciona una mayor protección que BitLocker no permite porque proporciona separación entre los administradores de servidores y las claves criptográficas necesarias para el descifrado de datos y porque el cifrado se aplica directamente a los datos (en en contraste con BitLocker, que aplica el cifrado en el volumen de disco lógico), todos los datos de cliente copiados de un servidor Exchange permanecen cifrados.
+Además del cifrado de servicio, Microsoft 365 admite la clave de cliente, que se basa en el cifrado de servicio. La clave de cliente es una opción de clave administrada por Microsoft para el cifrado del servicio de Exchange online que también se encuentra en la guía básica de Microsoft. Este método de cifrado proporciona una mayor protección que BitLocker no permite porque proporciona separación entre los administradores de servidores y las claves criptográficas necesarias para el descifrado de datos y porque el cifrado se aplica directamente a los datos (a diferencia de BitLocker, que aplica el cifrado en el volumen de disco lógico), todos los datos de cliente copiados de un servidor de Exchange siguen cifrados
 
 El ámbito del cifrado del servicio de Exchange online son los datos del cliente almacenados en REST dentro de Exchange Online. (Skype empresarial almacena casi todo el contenido generado por el usuario dentro del buzón de correo de Exchange online del usuario y, por lo tanto, hereda la característica de cifrado de servicio de Exchange Online).

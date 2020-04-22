@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y cómo puede cumplir con las normas ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando use estos servicios en línea.
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Para los informes de cumplimiento normativo de Microsoft 365, Azure y Dynamics 365 en línea, para ver auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y cómo puede cumplir con las normas ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando use estos servicios en línea.
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073167"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632451"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -27,11 +27,11 @@ El portal de confianza de servicios de Microsoft proporciona una variedad de con
   
 ## <a name="accessing-the-service-trust-portal"></a>Acceso al portal de confianza de servicios
 
-El portal de confianza del servicio contiene detalles sobre la implementación de Microsoft de controles y procesos que protegen nuestros servicios en la nube y los datos del cliente que hay en él. Para obtener acceso a algunos de los recursos del portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de Microsoft Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar Microsoft Acuerdo de no divulgación para materiales de cumplimiento.
+El portal de confianza del servicio contiene detalles sobre la implementación de Microsoft de controles y procesos que protegen nuestros servicios en la nube y los datos del cliente que hay en él. Para obtener acceso a algunos de los recursos del portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de Microsoft Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el contrato de Microsoft no divulgación para los materiales de cumplimiento.
   
 **Los clientes existentes pueden acceder al portal** de confianza [https://aka.ms/STP](https://aka.ms/STP) de servicios en con una de las siguientes suscripciones en línea (de prueba o de pago): 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ El portal de confianza del servicio contiene detalles sobre la implementación d
   
 Para crear una cuenta nueva o para crear una cuenta de prueba, use uno de los siguientes formularios de suscripción (también se usa para las cuentas de prueba) para obtener acceso a STP.
   
-- Registrarse para obtener una nueva cuenta de [prueba de office 365 Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o una nueva [cuenta de prueba de Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Inscríbase para obtener una nueva cuenta [de prueba de Microsoft 365 apps for Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) o una nueva [cuenta de prueba de Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - Registrarse para obtener una nueva [cuenta de prueba de Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -66,7 +66,7 @@ El vínculo **portal de confianza de servicios** muestra la Página principal. P
 
 ### <a name="compliance-manager"></a>Administrador de cumplimiento
 
-El administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujos de trabajo que le ayuda a controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Office 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. En función de la versión del administrador de cumplimiento que desee usar, vea los artículos siguientes para obtener más información:
+El administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujos de trabajo que le ayuda a controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Microsoft 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. En función de la versión del administrador de cumplimiento que desee usar, vea los artículos siguientes para obtener más información:
 
 - [Administrador de cumplimiento de Microsoft (clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -102,7 +102,7 @@ Proporciona información de cumplimiento específica de la industria y de la reg
   
 ### <a name="trust-center"></a>Centro de confianza
 
-Vínculos al [centro de confianza de Microsoft](https://www.microsoft.com/trust-center), que proporciona más información sobre la seguridad, el cumplimiento y la privacidad en la nube de Microsoft. Esto incluye información sobre las capacidades de los servicios en la nube de Microsoft que puede usar para satisfacer requisitos específicos de la RGPD, la documentación útil para su responsabilidad RGPD y su conocimiento de las medidas técnicas y organizativas Microsoft se ha llevado a cabo para admitir el RGPD.
+Vínculos al [centro de confianza de Microsoft](https://www.microsoft.com/trust-center), que proporciona más información sobre la seguridad, el cumplimiento y la privacidad en la nube de Microsoft. Esto incluye información sobre las capacidades de los servicios en la nube de Microsoft que puede usar para satisfacer requisitos específicos de la RGPD, la documentación útil para su responsabilidad RGPD y su conocimiento de las medidas técnicas y organizativas que Microsoft ha tomado para admitir el RGPD.
   
 ### <a name="my-library"></a>Mi biblioteca
 
@@ -122,7 +122,7 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 
 - **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
 
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar 
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
   

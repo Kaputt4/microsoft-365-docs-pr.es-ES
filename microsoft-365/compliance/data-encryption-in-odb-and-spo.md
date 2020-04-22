@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076357"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633345"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
@@ -31,9 +31,9 @@ Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive pa
   
 ## <a name="overview"></a>Información general
 
-Office 365 es un entorno altamente seguro que ofrece protección amplia en varias capas: seguridad de centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
+Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
   
-Para obtener una descripción de la seguridad de Office 365 como un todo, consulte las notas [del producto sobre seguridad en office 365](https://go.microsoft.com/fwlink/p/?LinkId=270895).
+Para obtener una descripción de la seguridad de Microsoft 365 en su conjunto, consulte las notas [del producto sobre seguridad](https://go.microsoft.com/fwlink/p/?LinkId=270895).
   
 Vea cómo funciona el cifrado de datos en el siguiente vídeo.
   
@@ -51,7 +51,7 @@ En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que l
 
 El cifrado en reposo incluye dos componentes: cifrado de nivel de disco de BitLocker y cifrado por archivo del contenido del cliente.
   
-BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también se encuentra en OneDrive para la empresa y SharePoint Online en Office 365 multiinquilino y en entornos dedicados nuevos que se basan en tecnología multiempresa.
+BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también se encuentra en OneDrive para la empresa y SharePoint Online en Microsoft 365 multiinquilino y en entornos dedicados nuevos que se basan en tecnología multiempresa.
   
 Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo va más allá al incluir una clave de cifrado única para cada archivo. Además, la actualización de cada archivo se cifra mediante su propia clave de cifrado. Antes de almacenarse, las claves del contenido cifrado se almacenan en una ubicación físicamente independiente del contenido. Cada paso de este cifrado usa el Estándar de cifrado avanzado (AES) con claves de 256 bits y cumple el Estándar federal de procesamiento de información (FIPS) 140-2. El contenido cifrado se distribuye entre varios contenedores en el centro de datos y cada contenedor tiene credenciales exclusivas. Estas credenciales se almacenan en una ubicación física independiente del contenido o de las claves de contenido.
   

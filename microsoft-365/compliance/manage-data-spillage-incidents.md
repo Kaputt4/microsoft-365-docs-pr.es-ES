@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634298"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635940"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -29,14 +29,14 @@ La derramación de datos es cuando se publica un documento que contiene informac
 
 ## <a name="scope-of-this-article"></a>Ámbito de este artículo
 
-En este artículo se proporciona una lista de instrucciones sobre cómo eliminar elementos de forma permanente de los buzones de correo de Office 365 para que los usuarios o administradores ya no puedan obtener acceso a ellos o puedan recuperarlos. 
+En este artículo se proporciona una lista de instrucciones sobre cómo eliminar elementos de forma permanente de los buzones de correo de Microsoft 365 para que los usuarios o administradores ya no puedan obtener acceso a ellos o puedan recuperarlos. 
 
 > [!NOTE]
 > Cuando se eliminan elementos ubicados en un sitio de SharePoint o de OneDrive para la empresa, se conservan durante 93 días desde el momento en que se eliminan de su ubicación original.
 
 ## <a name="scenario"></a>Escenario
 
-Se le informa de un incidente de derrame de datos donde un empleado ha compartido sin saberlo un documento altamente confidencial con varias personas a través del correo electrónico. Desea evaluar rápidamente quién recibió este documento, tanto dentro como fuera de la organización. Una vez que haya investigado el incidente, tiene previsto compartir sus hallazgos con otros investigadores para revisar y, a continuación, eliminar de forma permanente los datos derramados de la organización de Office 365. Una vez completada la investigación, desea quitar todas las evidencias. 
+Se le informa de un incidente de derrame de datos donde un empleado ha compartido sin saberlo un documento altamente confidencial con varias personas a través del correo electrónico. Desea evaluar rápidamente quién recibió este documento, tanto dentro como fuera de la organización. Una vez que haya investigado el incidente, tiene previsto compartir sus hallazgos con otros investigadores para revisar y, a continuación, eliminar de forma permanente los datos derramados de la organización. Una vez completada la investigación, desea quitar todas las evidencias. 
 
 > [!IMPORTANT]
 > Aunque podrá quitar de forma permanente los datos derramados de su propia organización, los datos que se hayan derramado fuera de la organización no se pueden quitar con estas capacidades.
@@ -68,7 +68,7 @@ Para crear una investigación en la herramienta de investigación de datos (vers
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de funciones de investigador de datos.
+2. Inicie sesión con una cuenta que sea miembro del grupo de funciones de investigador de datos.
     
 3. En el centro de seguridad y cumplimiento, haga clic en **investigaciones de datos**.
  
@@ -108,7 +108,7 @@ Después de ejecutar la búsqueda, puede obtener una vista previa de los ejemplo
 
 En la investigación, vaya a la pestaña **evidencia** y haga clic en el conjunto de evidencias que creó en el paso anterior. Una vez completado el trabajo de procesamiento y agregados los resultados de la búsqueda a la evidencia, puede revisar los documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir la lista de documentos y etiquetar los documentos para indicar los resultados de la investigación. Para obtener más información, vea [Review Data in Evidence](review-data-in-evidence.md) .
 
-Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. Esto ejecuta análisis avanzados como detección de duplicados, subprocesamiento de correo electrónico y análisis de temas. Para más información, consulte lo siguiente:
+Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. Esto ejecuta análisis avanzados como detección de duplicados, subprocesamiento de correo electrónico y análisis de temas. Para obtener más información, vea:
 
 - [Ejecutar el análisis para investigar más rápido](run-analytics-to-investigate-faster.md)
 - [Detección de semiduplicados](near-duplicates.md)

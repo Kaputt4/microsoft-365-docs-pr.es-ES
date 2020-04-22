@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Obtenga información sobre cómo actualizar a una nueva suscripción.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636515"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707528"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente 
 
@@ -63,7 +63,7 @@ Cuando termine la desprotección, puede tardar unos minutos en concluir la actua
 
 ## <a name="the-upgrade-tab-is-empty"></a>La pestaña de actualización está vacía
 
-Si la pestaña de **actualización** está vacía, verá una explicación de por qué no puede actualizar en este momento. Puede intentar cambiar los [planes manualmente](change-plans-manually.md) o [llamar a soporte técnico](../../admin/contact-support-for-business-products.md). Para obtener más información, consulte [¿por qué no puedo actualizar planes?](#why-cant-i-upgrade-plans)).
+Si la pestaña de **actualización** está vacía, verá una explicación de por qué no puede actualizar en este momento. Puede intentar cambiar los [planes manualmente](change-plans-manually.md) o [llamar a soporte técnico](../../admin/contact-support-for-business-products.md). Para obtener más información, consulte [¿por qué no puedo actualizar planes?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>No veo el plan que quiero
 
@@ -153,7 +153,7 @@ Al actualizar los planes automáticamente mediante el botón **cambiar de plan**
 
 Los usuarios de la suscripción antigua se transferirán automáticamente a la nueva suscripción.
   
-Si su suscripción antigua incluye varios servicios y, si ha cambiado los servicios a los que están asignados, es posible que desee tener esto antes de actualizar los planes para poder volver a crear los cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si ha adquirido Office 365 Enterprise E3 para los 100 de los usuarios, pero no ha asignado el servicio de SharePoint Online de 50, este cambio no se mantendrá después de actualizar los planes.
+Si su suscripción antigua incluye varios servicios y, si ha cambiado los servicios a los que están asignados, es posible que desee tener esto antes de actualizar los planes para poder volver a crear los cambios posteriormente. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si adquirió anteriormente Microsoft 365 Business Premium para los 100 de los usuarios, pero sin asignar el servicio de SharePoint Online de 50, este cambio no se mantendrá después de actualizar los planes.
   
 Si tiene más de una suscripción antes de actualizar los planes, y para que los usuarios tengan asignadas licencias a más de una suscripción, este patrón de asignación se mantendrá lo máximo posible en la nueva suscripción.
   
@@ -164,9 +164,9 @@ Todos los datos de usuario se conservarán durante la actualización, incluidos 
 El día en que la actualización del plan haya finalizado, la facturación en su suscripción antigua se desactivará y se activará la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirá una factura nueva que incluye el crédito por su suscripción antigua en un plazo de 30 días a partir de la actualización a la nueva suscripción.
   
 > [!NOTE]
-> El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción. 
+> El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción.
   
- **¿Va a actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de que lo proteja y puede esperar a que se actualice hasta más cerca de la fecha de expiración de la suscripción de prepago.
+**¿Va a actualizar desde una suscripción de prepago antes de que expire?** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de que lo proteja y puede esperar a que se actualice hasta más cerca de la fecha de expiración de la suscripción de prepago.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar los planes
 

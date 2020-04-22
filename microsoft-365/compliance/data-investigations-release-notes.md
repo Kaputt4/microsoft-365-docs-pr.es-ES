@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595417"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637740"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -31,7 +31,7 @@ Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en
 
 - **Investigaciones** : puede agrupar búsquedas e incidentes mediante la creación de una investigación. Administrar quién puede tener acceso a la investigación agregando o quitando miembros.  También puede seleccionar y marcar sus investigaciones favoritas. Realice un seguimiento y monitoree la actividad dentro y a través de las investigaciones mediante nuevos paneles. Una vez completada la investigación, puede cerrarla o eliminarla.
 
-- **Personas de interés** : al agregar usuarios a las investigaciones como personas de interés, puede ver su buzón de correo, la cuenta de OneDrive para la empresa y los sitios de Microsoft Teams. Puede usarlos para el ámbito de las búsquedas de contenido de investigación. Para investigar mejor a una persona de interés, también puede ver los registros de auditoría relacionados con sus actividades en Office 365 y otros servicios de Microsoft.
+- **Personas de interés** : al agregar usuarios a las investigaciones como personas de interés, puede ver su buzón de correo, la cuenta de OneDrive para la empresa y los sitios de Microsoft Teams. Puede usarlos para el ámbito de las búsquedas de contenido de investigación. Para investigar mejor a una persona de interés, también puede ver los registros de auditoría relacionados con sus actividades en Microsoft 365 y otros servicios de Microsoft.
 
 - **Búsquedas** : cree una búsqueda en toda la organización con varias condiciones de búsqueda. Si conoce los usuarios o sitios que desea buscar, puede hacerlo si agrega esos usuarios como personas de interés o especifica ubicaciones de sitios en el Asistente para crear una búsqueda. 
 

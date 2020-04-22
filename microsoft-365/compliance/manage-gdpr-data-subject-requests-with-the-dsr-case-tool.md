@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072127"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635930"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -33,11 +33,11 @@ Para administrar las investigaciones en respuesta a un DS1800 enviado por una pe
   
 - Cualquier buzón de usuario de la organización. Esto incluye conversaciones de Skype empresarial y chats uno a uno en Microsoft Teams
     
-- Todos los buzones de correo asociados con un grupo de Office 365 y todos los buzones de equipo en Microsoft Teams
+- Todos los buzones de correo asociados con un grupo de Microsoft 365 y todos los buzones de equipo en Microsoft Teams
     
 - Todos los sitios de SharePoint Online y OneDrive para la Empresa de la organización
     
-- Todos los sitios de Teams y los sitios de grupo de Office 365 de la organización
+- Todos los sitios de Teams y los sitios de grupo de Microsoft 365 de la organización
     
 - Todas las carpetas públicas de Exchange Online
     
@@ -76,18 +76,18 @@ Este es el proceso de alto nivel para usar la herramienta de caso DSR para admin
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso
 
-De forma predeterminada, un administrador global de Office 365 puede tener acceso a la herramienta de caso DSR en el centro de seguridad & cumplimiento. Por diseño, otros usuarios, como un responsable de privacidad de datos, un administrador de recursos humanos u otras personas involucradas en investigaciones de DSR, no tienen acceso a la herramienta de caso DSR y deberán tener asignados los permisos adecuados para acceder a la herramienta. La forma más sencilla de hacerlo es ir a la página de **permisos** en el centro de seguridad & cumplimiento y agregar usuarios al grupo de roles eDiscovery Manager. También tiene que asignar estos permisos para que pueda agregarlos como miembros del caso DSR que cree en el paso 2. 
+De forma predeterminada, un administrador global puede tener acceso a la herramienta de caso DSR en el centro de seguridad & cumplimiento. Por diseño, otros usuarios, como un responsable de privacidad de datos, un administrador de recursos humanos u otras personas involucradas en investigaciones de DSR, no tienen acceso a la herramienta de caso DSR y deberán tener asignados los permisos adecuados para acceder a la herramienta. La forma más sencilla de hacerlo es ir a la página de **permisos** en el centro de seguridad & cumplimiento y agregar usuarios al grupo de roles eDiscovery Manager. También tiene que asignar estos permisos para que pueda agregarlos como miembros del caso DSR que cree en el paso 2. 
   
 Para obtener instrucciones paso a paso, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento de Office 365](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido (vea el paso 4 de este artículo). Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
+> De forma predeterminada, un administrador global (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido (vea el paso 4 de este artículo). Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Paso 2: crear un caso de DSR y agregar miembros
 
 El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por iniciar la búsqueda integrada o puede crear el caso sin iniciar la búsqueda. El siguiente procedimiento le indica que cree el caso sin iniciar la búsqueda y, a continuación, le muestra cómo agregar miembros al caso.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
     
 2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](../media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
     
@@ -170,7 +170,7 @@ Después de ejecutar la búsqueda integrada, puede exportar los resultados de la
 Al exportar los resultados de la búsqueda, los elementos del buzón pueden descargarse en archivos PST o como mensajes individuales. Al exportar contenido de las cuentas de SharePoint y OneDrive, se exportan copias de documentos nativos de Office y otros documentos. Un archivo de resultados que contiene información sobre cada elemento exportado se incluye con los resultados de la búsqueda. Para obtener información más detallada acerca de la exportación, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
   
 > [!NOTE]
-> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento) no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido. Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
+> De forma predeterminada, un administrador global (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento) no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido. Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
   
 El equipo que use para exportar datos debe cumplir con los siguientes requisitos del sistema:
   
@@ -182,7 +182,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
   - Microsoft Edge
     
-    O bien:
+    O bien
     
   - Microsoft Internet Explorer 10 y versiones posteriores
     
@@ -203,7 +203,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
   
     a. En **Opciones de salida**, seleccione la primera opción (**todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados. El motivo por el que no desea exportar elementos parcialmente indizados de la búsqueda integrada es porque también se exportarán los elementos parcialmente indizados de otros usuarios. Para exportar solo los elementos parcialmente indizados del titular de los datos, se recomienda crear una búsqueda independiente. Para obtener más información, vea [exportar elementos indexados parcialmente](#exporting-partially-indexed-items) en la sección "más información sobre el uso de la herramienta de casos de DSR".
     
-    b. En **exportar contenido de Exchange como**, seleccione la tercera opción, **un archivo pst que contiene todos los mensajes en una sola carpeta**. Debido a que algunos de los resultados pueden ser para los elementos que se originaron en el buzón de otro usuario, esta opción solo muestra el elemento en una sola carpeta sin indicar el buzón real y es la mejor opción para usar cuando se desduplican los resultados según se recomienda en el siguiente elemento. . Esta opción también permite que el interesado Revise los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
+    b. En **exportar contenido de Exchange como**, seleccione la tercera opción, **un archivo pst que contiene todos los mensajes en una sola carpeta**. Dado que algunos de los resultados pueden ser para elementos que se originaron en el buzón de otro usuario, esta opción solo muestra el elemento en una sola carpeta sin indicar el buzón real y es la mejor opción para usar cuando se desduplican los resultados según se recomienda en el siguiente elemento. Esta opción también permite que el interesado Revise los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
     
     c. Seleccione **Habilitar opción de desduplicación** para excluir los mensajes de correo electrónico duplicados. Se recomienda esta opción porque la búsqueda integrada busca en todos los buzones de la organización. Por lo tanto, si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda, esta opción significa que solo se exportará una copia de un mensaje. Esta opción, en conjunto, exportará los mensajes de un archivo PST en una sola carpeta, lo que da como resultado la mejor experiencia de usuario para las solicitudes de exportación de DSR. El informe de exportación Results. csv enumera todas las ubicaciones en las que se han encontrado mensajes duplicados.
     
@@ -221,7 +221,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
 9. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
-10. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la herramienta de exportación de exhibición de documentos electrónicos **365 de Microsoft Office**. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
+10. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la **herramienta de exportación de exhibición**de documentos electrónicos. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     
 11. En la **herramienta de exportación de exhibición**de documentos electrónicos, pegue la clave de exportación que ha copiado en el paso 8 en el cuadro correspondiente.
     
@@ -285,7 +285,7 @@ Las secciones siguientes contienen más información sobre el uso de la herramie
 
 [Exportar elementos parcialmente indizados](#exporting-partially-indexed-items)
 
-[Búsqueda y exportación de datos de grupos de Microsoft Teams y Office 365](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Búsqueda y exportación de datos de Microsoft Teams y grupos de 365 de Microsoft](#searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups)
 
 [Búsqueda en carpetas públicas de Exchange](#searching-exchange-public-folders)
   
@@ -352,7 +352,7 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
     
 8. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
-9. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la herramienta de exportación de exhibición de documentos electrónicos **365 de Microsoft Office**. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
+9. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la **herramienta de exportación de exhibición**de documentos electrónicos. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     
 10. En la **Herramienta de exportación de eDiscovery **, pegue la clave de exportación que ha copiado en el paso 7 en el cuadro correspondiente.
     
@@ -395,15 +395,15 @@ Para obtener más información acerca de los elementos parcialmente indizados, v
 
 - [Exportar elementos parcialmente indizados](export-search-results.md#exporting-partially-indexed-items)
     
-### <a name="searching-and-exporting-data-from-microsoft-teams-and-office-365-groups"></a>Búsqueda y exportación de datos de grupos de Microsoft Teams y Office 365
+### <a name="searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups"></a>Búsqueda y exportación de datos de Microsoft Teams y grupos de 365 de Microsoft
 
 Las conversaciones que forman parte de la lista de chats en Microsoft Teams (llamados chats de equipo o chats uno a uno) se almacenan en el buzón de Exchange online de los usuarios que participan en los chats. Además, los archivos que una persona comparte en un chat de uno a uno se almacenan en la cuenta de OneDrive de la persona que comparte el archivo. Debido a que la búsqueda integrada busca en todos los buzones y en las cuentas de OneDrive de la organización, los chats de equipo y los documentos compartidos en una sesión de chat (que el sujeto de los datos creado o cargado) se devuelven a través de la búsqueda incorporada en un caso DSR.
   
 Como alternativa, las conversaciones que forman parte de un canal de Microsoft Teams (también denominados mensajes de canal) se almacenan en el buzón de correo que está asociado a un equipo. Estos tipos de conversaciones que el interesado en el tema de los datos también son devueltas por la búsqueda integrada, ya que se busca en todos los buzones de correo asociados con los equipos. Además, los archivos que un sujeto de datos comparte en un canal de Microsoft Teams se almacenan en el sitio de SharePoint del equipo. Los archivos creados o cargados por el titular de los datos son devueltos por la búsqueda integrada en un caso DSR, ya que los sitios asociados con Teams se incluyen en la búsqueda.
   
-De forma similar, los buzones de correo y los sitios de SharePoint que corresponden a un grupo de Office 365 también se incluyen en la búsqueda integrada. Esto significa que se devuelven los mensajes de correo electrónico enviados o recibidos por el titular de los datos y los archivos creados o cargados por el interesado. 
+De forma similar, los buzones de correo y los sitios de SharePoint que corresponden a un grupo de Microsoft 365 también se incluyen en la búsqueda integrada. Esto significa que se devuelven los mensajes de correo electrónico enviados o recibidos por el titular de los datos y los archivos creados o cargados por el interesado. 
   
-Para obtener más información sobre cómo usar la búsqueda de contenido para buscar elementos en Microsoft Teams y Office 365 grupos o para ver cómo obtener una lista de miembros, consulte la sección "búsqueda en Microsoft Teams y Office 365 groups" en [búsqueda de contenido en Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+Para obtener más información sobre cómo usar la búsqueda de contenido para buscar elementos en Microsoft Teams y Microsoft 365 grupos o para ver cómo obtener una lista de miembros, consulte la sección "búsqueda en Microsoft Teams y Microsoft 365 groups" de [búsqueda de contenido en microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups). 
   
 ### <a name="searching-exchange-public-folders"></a>Búsqueda en carpetas públicas de Exchange
 

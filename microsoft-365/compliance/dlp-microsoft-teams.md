@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170560"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633059"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -67,9 +67,9 @@ El vínculo **¿Qué es esto?** abre un [artículo](data-loss-prevention-policie
 
 Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ([https://protection.office.com](https://protection.office.com)) e inicie sesión.
 
-2. Elija **** > **Directiva**de prevención de pérdida de datos.
+2. Elija **Data loss prevention** > **Directiva**de prevención de pérdida de datos.
 
 3. Seleccione una directiva y, junto a **configuración de directiva**, elija **Editar**.
 
@@ -87,9 +87,9 @@ Espere aproximadamente una hora para que los cambios funcionen en el centro de d
 
 Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ([https://protection.office.com](https://protection.office.com)) e inicie sesión.
 
-2. Elija **** > **Directiva**de prevención de pérdida de datos.
+2. Elija **Data loss prevention** > **Directiva**de prevención de pérdida de datos.
 
 3. Seleccione una directiva y mire los valores en **ubicaciones**. Si ve **los mensajes de chat y de canal de Microsoft Teams**, ya está todo configurado. Si no lo hace, haga clic en **Editar**.<br/>![Ubicaciones para la directiva existente](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -97,7 +97,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 5. Conserve la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
 
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
 <!-- again, why user accounts? -->
@@ -105,9 +105,9 @@ Espere aproximadamente una hora para que los cambios funcionen en el centro de d
 
 Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
-1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
+1. Vaya al centro de seguridad & cumplimiento ([https://protection.office.com](https://protection.office.com)) e inicie sesión.
 
-2. Elegir **** > **** directiva > **de prevención de pérdida de datos + crear una directiva**.
+2. Elegir **Data loss prevention** > **Policy**directiva > **de prevención de pérdida de datos + crear una directiva**.
 
 3. Elija una [plantilla](data-loss-prevention-policies.md#dlp-policy-templates)y, a continuación, elija **siguiente**.<br/>En nuestro ejemplo, elegimos la plantilla de datos de información de identificación personal de Estados Unidos.<br/>![Plantilla de privacidad para la Directiva DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

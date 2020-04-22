@@ -1,5 +1,5 @@
 ---
-title: Configurar una directiva de archivo y eliminación de buzones en la organización de Office 365
+title: Configurar una directiva de archivo y eliminación para los buzones de la organización
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Crear una directiva de archivado y eliminación en Office 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Crear una directiva de archivado y eliminación que mueva automáticamente elementos al buzón de archivo de un usuario.
+ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635564"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización de Office 365
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación para los buzones de la organización
 
- En Office 365, los administradores pueden crear una directiva de archivado y eliminación que mueva automáticamente los elementos al buzón de archivo de un usuario y elimine automáticamente los elementos del buzón. Para ello, el administrador crea una directiva de retención que se asigna a los buzones de correo y mueve los elementos al buzón de archivo de un usuario después de un período de tiempo determinado y también elimina los elementos del buzón una vez que alcanzan un determinado límite de antigüedad. Las reglas reales que determinan qué elementos se mueven o eliminan y cuándo se producen se denominan etiquetas de retención. Las etiquetas de retención están vinculadas a una directiva de retención, que, a su vez, se asigna al buzón de correo de un usuario. Una etiqueta de retención aplica la configuración de retención a los mensajes individuales y las carpetas en el buzón de un usuario. Define cuánto tiempo permanece un mensaje en el buzón de correo y qué acción se lleva a cabo cuando el mensaje alcanza la antigüedad de retención especificada. Cuando un mensaje alcanza su antigüedad de retención, se mueve al buzón de archivo del usuario o se elimina. 
+ En Microsoft 365, los administradores pueden crear una directiva de archivado y eliminación que mueve automáticamente elementos al buzón de archivo del usuario y elimina automáticamente los elementos del buzón. Para ello, el administrador crea una directiva de retención que se asigna a los buzones de correo y mueve los elementos al buzón de archivo de un usuario después de un período de tiempo determinado y también elimina los elementos del buzón una vez que alcanzan un determinado límite de antigüedad. Las reglas reales que determinan qué elementos se mueven o eliminan y cuándo se producen se denominan etiquetas de retención. Las etiquetas de retención están vinculadas a una directiva de retención, que, a su vez, se asigna al buzón de correo de un usuario. Una etiqueta de retención aplica la configuración de retención a los mensajes individuales y las carpetas en el buzón de un usuario. Define cuánto tiempo permanece un mensaje en el buzón de correo y qué acción se lleva a cabo cuando el mensaje alcanza la antigüedad de retención especificada. Cuando un mensaje alcanza su antigüedad de retención, se mueve al buzón de archivo del usuario o se elimina. 
   
 Los pasos descritos en este artículo configuran una directiva de archivado y retención para una organización ficticia denominada Alpine House. La configuración de esta directiva incluye las siguientes tareas:
   
@@ -48,9 +48,9 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser administrador global de la organización de Office 365 para realizar los pasos de este tema. 
+- Debe ser administrador global de su organización para realizar los pasos de este tema. 
     
--  Al crear una nueva cuenta de usuario en Office 365 y asignar al usuario una licencia de Exchange Online, se crea automáticamente un buzón para el usuario. Cuando se crea el buzón de correo, se le asigna automáticamente una directiva de retención predeterminada, denominada Directiva de MRM predeterminada. En este artículo, creará una nueva Directiva de retención y la asignará a los buzones de usuario, reemplazando la Directiva de MRM predeterminada. Un buzón solo puede tener una directiva de retención asignada en un momento dado.
+-  Al crear una nueva cuenta de usuario y asignar al usuario una licencia de Exchange Online, se crea automáticamente un buzón para el usuario. Cuando se crea el buzón de correo, se le asigna automáticamente una directiva de retención predeterminada, denominada Directiva de MRM predeterminada. En este artículo, creará una nueva Directiva de retención y la asignará a los buzones de usuario, reemplazando la Directiva de MRM predeterminada. Un buzón solo puede tener una directiva de retención asignada en un momento dado.
     
 - Para obtener más información sobre las directivas de retención y las etiquetas de retención en Exchange Online, consulte [Retention Tags and Retention Policies](https://go.microsoft.com/fwlink/p/?LinkId=404424).
     
@@ -63,7 +63,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your global administrator account.
+2. Inicie sesión con su cuenta de administrador global.
     
     
 3. En el centro de seguridad & cumplimiento, vaya al **archivo**de **gobierno** \> de información.
@@ -81,7 +81,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
     
 6. Haga clic en **sí** para cerrar el mensaje de advertencia e iniciar el proceso para habilitar el buzón de archivo para cada buzón seleccionado. 
     
-7. Una vez completado el proceso, haga **** ![clic en](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la lista en la página **archivo** . 
+7. Una vez completado el proceso, haga **Refresh** ![clic en](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la lista en la página **archivo** . 
     
     El buzón de archivo está habilitado para todos los usuarios de la organización.
     
@@ -107,7 +107,7 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
     
     ![Captura de pantalla que muestra el centro de administración de Microsoft 365 con la opción centros de administración expandida y Exchange seleccionada.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
-3. En el EAC, vaya a **** \> **etiquetas de retención** de administración de cumplimiento.
+3. En el EAC, vaya a **Compliance management** \> **etiquetas de retención** de administración de cumplimiento.
     
     Se muestra una lista de las etiquetas de retención de la organización.
     
@@ -183,7 +183,7 @@ La última etiqueta de retención que creará es una etiqueta de directiva de re
 
 Después de crear las etiquetas de retención personalizadas, el siguiente paso consiste en crear una nueva Directiva de retención y agregar las etiquetas de retención. Agregará las tres etiquetas de retención personalizadas que creó en el paso 2 y las etiquetas integradas mencionadas en la primera sección. En el paso 4, asignará esta nueva Directiva de retención a los buzones de usuario.
   
-1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento.
+1. En el EAC, vaya a **Compliance management** \> **directivas de retención**de administración de cumplimiento.
     
 2. En la **Página directivas de retención** , haga clic en](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **nuevo** ![icono nuevo.
     
@@ -248,7 +248,7 @@ Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continu
     $UserCredential = Get-Credential
     ```
 
-    En el cuadro de diálogo **solicitud de credenciales para Windows PowerShell** , escriba el nombre de usuario y la contraseña de su cuenta de administrador global de Office 365 y, a continuación, haga clic en **Aceptar**.
+    En el cuadro de diálogo **solicitud de credenciales para Windows PowerShell** , escriba el nombre de usuario y la contraseña de la cuenta de administrador global y, a continuación, haga clic en **Aceptar**.
     
 2. Ejecute el comando siguiente.
     

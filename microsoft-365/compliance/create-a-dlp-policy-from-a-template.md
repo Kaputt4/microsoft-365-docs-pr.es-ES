@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077845"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631339"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
 La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. Puede usar una de estas plantillas como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de la organización.
   
-Office 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de directivas de negocio y reglamentarias. Por ejemplo, hay plantillas de directivas de DLP para:
+Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de directivas de negocio y reglamentarias. Por ejemplo, hay plantillas de directivas de DLP para:
   
 - Ley Gramm-Leach-Bliley (GLBA)
     
@@ -38,7 +38,7 @@ Office 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a 
     
 - Ley de seguros de salud (HIPAA) de los Estados Unidos
     
-Para ajustar una plantilla, modifique cualquiera de las reglas existentes o agregue otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil desencadenar, permitir a los usuarios invalidar las acciones en una regla proporcionando una justificación comercial o cambiar las notificaciones y el incidente. los informes se envían a. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
+Para ajustar una plantilla, modifique cualquiera de las reglas existentes o agregue otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil desencadenar, permitir a los usuarios invalidar las acciones en una regla proporcionando una justificación comercial o cambiar la persona a la que se envían las notificaciones y los informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
   
 También puede elegir la plantilla personalizada, que no tiene reglas predeterminadas, y configurar la Directiva DLP desde cero para cumplir los requisitos de cumplimiento específicos de su organización.
   
@@ -58,9 +58,9 @@ En este ejemplo, creará una directiva DLP que identifique los datos PII de Esta
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa. Ahora está en el centro de seguridad &amp; y cumplimiento de Office 365.
+2. Inicie sesión con su cuenta profesional o educativa. Ahora está en el centro de &amp; seguridad y cumplimiento.
     
-3. En la directiva &amp; \> \> **** \> **** **** de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad izquierdo + crear una directiva. \>
+3. En la directiva &amp; \> \> **Data loss prevention** \> **Policy** **+ Create a policy**de prevención de pérdida de datos de navegación del centro de cumplimiento de seguridad izquierdo + crear una directiva. \>
     
     ![Botón crear una directiva](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -110,7 +110,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos PII de Esta
     
     ![Botón Editar regla](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Para agregar un tipo de información confidencial, en **** la sección \> condiciones, **agregue o cambie tipos**. A continuación, en **Agregar o cambiar tipos** \> , elija **Agregar** \> Seleccione el **número de cuenta bancaria de Estados Unidos** y el **número** \> de licencia de la conducción de Estados Unidos y **agregue** \> **Done**.
+10. Para agregar un tipo de información confidencial, en **Conditions** la sección \> condiciones, **agregue o cambie tipos**. A continuación, en **Agregar o cambiar tipos** \> , elija **Agregar** \> Seleccione el **número de cuenta bancaria de Estados Unidos** y el **número** \> de licencia de la conducción de Estados Unidos y **agregue** \> **Done**.
     
     ![Opción para agregar o cambiar tipos](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
@@ -176,7 +176,7 @@ Estos son los distintos Estados y su significado.
 
 Puede editar o desactivar una directiva DLP en cualquier momento. Si se desactiva una directiva, se deshabilitan todas las reglas de la Directiva.
   
-Para editar o desactivar una directiva DLP, en la página **** \> Directiva, seleccione la directiva \> de **edición**de directiva.
+Para editar o desactivar una directiva DLP, en la página **Policy** \> Directiva, seleccione la directiva \> de **edición**de directiva.
   
 ![Botón Editar Directiva](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   

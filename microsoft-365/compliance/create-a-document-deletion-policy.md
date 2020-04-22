@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
-ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077982"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632265"
 ---
 # <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
 > [!IMPORTANT]
-> En el futuro, le recomendamos que use una directiva de retención o etiquetas de retención creadas en el centro de cumplimiento de Microsoft 365, el centro de seguridad &amp; de Microsoft 365 o el centro de seguridad de Office 365 en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Al avanzar, se recomienda usar una directiva de retención o etiquetas de retención creadas en el centro de cumplimiento de Microsoft 365, el centro de seguridad de &amp; Microsoft 365 o el centro de seguridad y cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
   
 Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
   
@@ -134,7 +134,7 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
     
 ![Página para nueva regla de eliminación](../media/IP-New-deletion-rule.png)
   
-7. Haga clic en **Guardar **.
+7. Haga clic en **Guardar**.
     
 8. Cree reglas adicionales si quiere que los propietarios de los sitios puedan elegir distintas reglas para aplicar a su sitio. La regla predeterminada, si la hay, se aplicará si el propietario del sitio no realiza ninguna acción.
     
@@ -170,7 +170,7 @@ Es importante comprender que el período de tiempo especificado para una directi
   
 ![Página Seleccionar una plantilla con la opción OneDrive](../media/IP-Choose-a-template.png)
   
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
     
     > [!NOTE]
     > Cada plantilla puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta plantilla ya tiene directivas asignadas, seleccione **Cancelar** \> **asignar a colección de sitios** en el panel de \> navegación izquierdo para ver y administrar el conjunto de directivas que ya están asignadas. 
@@ -179,13 +179,13 @@ Es importante comprender que el período de tiempo especificado para una directi
     
     ![Página Agregar y administrar directivas](../media/IP-Add-and-manage-policies-page.png)
   
-7. Haga clic en **Guardar **.
+7. Haga clic en **Guardar**.
     
 8. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la plantilla de colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-9. Haga clic en **Guardar **.
+9. Haga clic en **Guardar**.
     
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection"></a>Asignar la directiva de eliminación de documentos a una colección de sitios
 
@@ -212,13 +212,13 @@ Es importante comprender que el período de tiempo especificado para una directi
     
     ![Página Agregar y administrar directivas](../media/IP-Add-and-manage-policies-page.png)
   
-6. Haga clic en **Guardar **.
+6. Haga clic en **Guardar**.
     
 7. Si quiere aplicar la directiva en todos los sitios sin permitir que los propietarios de sitios puedan anularla, elija **Marcar directiva como obligatoria**. Cuando establezca una directiva como obligatoria, solo podrá asignarse esa directiva a la colección de sitios. La directiva también debe marcarse como predeterminada.
     
     Si esta opción está atenuada, elija **Administrar directivas asignadas** y asegúrese de que al menos una directiva esté asignada y establecida como predeterminada. 
     
-8. Haga clic en **Guardar **.
+8. Haga clic en **Guardar**.
     
 ## <a name="delete-a-policy-assignment"></a>Eliminar una asignación de directivas
 
@@ -244,7 +244,7 @@ No se puede eliminar una directiva que está en uso. Antes de poder eliminar una
   
 3. Seleccione la directiva.
     
-4. En la pestaña \> **** \> elementos de la cinta de opciones, **Quite Directiva**.
+4. En la pestaña \> **Items** \> elementos de la cinta de opciones, **Quite Directiva**.
     
     ![Botón Quitar directiva en cinta](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cdde5b4a569c1653c3ed48453f30c26081980307
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601727"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632235"
 ---
 # <a name="process-data-for-an-investigation"></a>Procesar datos para una investigación
 
 El procesamiento es el proceso de identificación de archivos, la expansión de documentos y datos adjuntos incrustados, la extracción de texto, OCR (reconocimiento óptico de caracteres) de archivos de imagen e indización de ese contenido.  
 
-Cuando se agrega una persona en la ficha **personas de interés** , todos los elementos parcialmente indizados de Office 365 se procesan para que se puedan buscar por completo.  Del mismo modo, cuando se agregan datos a la ficha **evidencia** desde orígenes de datos que no son de Office 365 o Office 365, el contenido también se procesa.
+Cuando se agrega una persona en la ficha **personas de interés** , todos los elementos parcialmente indizados de Microsoft 365 se procesan para que se puedan buscar por completo.  Del mismo modo, cuando se agregan datos a la ficha **evidence** desde orígenes de datos que no son de 365 Microsoft 365 o que no son de Microsoft, el contenido también se procesa.
 
 La pestaña **procesamiento** en las investigaciones de datos (versión preliminar) proporciona transparencia al estado de la *indización avanzada* para todos estos escenarios.
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Administrar los custodios en un caso de eDiscovery avanzado.
-ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634708"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635900"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar los custodios en un caso de eDiscovery avanzado
 
@@ -110,7 +110,7 @@ Para desencadenar el proceso de reindización para tratar los elementos parcialm
 
 La nueva indexación de los datos del custodio es un proceso de ejecución prolongada; el trabajo correspondiente que se crea se denomina **volver a indizar los datos del custodio**. Puede realizar un seguimiento del progreso en la ficha **trabajos** o en la ficha **custodios** mediante la supervisión del estado en la columna Estado de la **tarea de indización** .
 
-Para más información, consulte lo siguiente:
+Para obtener más información, vea:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 
@@ -132,7 +132,7 @@ Para liberar un custodio:
 
 4. En la página flotante, haga clic en **liberar custodio**.
 
-   Se muestra una página de advertencia que explica que si se coloca una retención en un origen de datos asociado al custodio, se quitará la retención y se seguirá aplicando cualquier otra retención asociada a un caso de exhibición avanzada de documentos electrónicos diferente. Esto incluye otros tipos de características de conservación y retención en Office 365 (como una directiva de retención de Office 365).
+   Se muestra una página de advertencia que explica que si se coloca una retención en un origen de datos asociado al custodio, se quitará la retención y se seguirá aplicando cualquier otra retención asociada a un caso de exhibición avanzada de documentos electrónicos diferente. Esto incluye otros tipos de características de conservación y retención (como una directiva de retención de Microsoft 365).
 
 5. Haga clic en **sí** para confirmar que desea liberar el custodio. 
 

@@ -1,5 +1,5 @@
 ---
-title: Exhibición de documentos electrónicos en Office 365
+title: eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Office 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Microsoft 365 y conversaciones de Skype empresarial.
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551221"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631765"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery en Microsoft 365
 
-La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar las herramientas de exhibición de documentos electrónicos de Microsoft 365 para buscar contenido en buzones de Exchange Online, grupos de Office 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa y conversaciones de Skype empresarial, así como en Yammer Teams. Puede buscar en buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido. Además, puede usar los casos principales de eDiscovery para identificar, mantener y exportar el contenido que se encuentra en los buzones de correo y los sitios. Si su organización tiene una suscripción a Office 365 E5 o Microsoft 365 E5 (o las suscripciones a los complementos E5 relacionadas), podrá administrar los custodios y analizar el contenido mediante la solución de exhibición de documentos electrónicos avanzada en Microsoft 365.
+La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar las herramientas de exhibición de documentos electrónicos de Microsoft 365 para buscar contenido en buzones de Exchange Online, grupos de Microsoft 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa, conversaciones de Skype empresarial y equipos de Yammer. Puede buscar en buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido. Además, puede usar los casos principales de eDiscovery para identificar, mantener y exportar el contenido que se encuentra en los buzones de correo y los sitios. Si su organización tiene una suscripción a Office 365 E5 o Microsoft 365 E5 (o las suscripciones a los complementos E5 relacionadas), podrá administrar los custodios y analizar el contenido mediante la solución de exhibición de documentos electrónicos avanzada en Microsoft 365.
   
 Microsoft 365 proporciona las siguientes herramientas de eDiscovery:
   
@@ -43,8 +43,8 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar la herrami
   
 |**Tema**|**Descripción**|
 |:-----|:-----|
-|[Ejecutar una búsqueda de contenido](content-search.md) <br/> |Obtenga información sobre cómo usar la herramienta de búsqueda de contenido para buscar en buzones de correo, carpetas públicas, Office 365 grupos, Microsoft Teams, sitios de SharePoint Online, una unidad de negocio y conversaciones de Skype empresarial en la organización de Office 365 en una sola búsqueda.  <br/> |
-|[Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md). <br/> |Obtenga información sobre las propiedades de correo electrónico y de archivo y las condiciones de búsqueda que puede usar para buscar contenido en buzones y sitios de la organización de Office 365.  <br/> |
+|[Ejecutar una búsqueda de contenido](content-search.md) <br/> |Obtenga información sobre cómo usar la herramienta de búsqueda de contenido para buscar en buzones de correo, carpetas públicas, grupos de 365 Microsoft Teams, Microsoft Teams, sitios de SharePoint Online, ubicaciones de una sola unidad de negocio y conversaciones de Skype empresarial en la organización en una sola búsqueda.  <br/> |
+|[Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md). <br/> |Obtenga información sobre las propiedades de correo electrónico y de archivo y las condiciones de búsqueda que puede usar para buscar contenido en los buzones y los sitios de la organización.  <br/> |
 |[Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md) <br/> |Obtenga información sobre cómo usar las estadísticas de búsqueda para mostrar y comparar las estadísticas de una o más búsquedas de contenido, y cómo configurar búsquedas nuevas y existentes para devolver las estadísticas de cada palabra clave en la consulta de búsqueda.  <br/> |
 |[Exportar resultados de la búsqueda](export-search-results.md) <br/> |Obtenga información sobre cómo exportar los resultados de una búsqueda de contenido.  <br/> |
 |[Configurar el filtrado de permisos para Búsqueda de contenido](permissions-filtering-for-content-search.md) <br/> |Obtenga información sobre cómo usar el filtrado de permisos para permitir que un administrador de eDiscovery busque solo un subconjunto de buzones de correo y sitios de la organización.  <br/> |
@@ -62,7 +62,7 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar los casos 
   
 |**Tema**|**Descripción**|
 |:-----|:-----|
-|[Introducción a la exhibición de documentos electrónicos principal](get-started-core-ediscovery.md) |Obtenga información sobre cómo asignar permisos de exhibición de documentos electrónicos y crear casos de eDiscovery principales. En este tema también se proporciona información general sobre el flujo de trabajo de eDiscovery principal.<br/> |
+|[Introducción a Core eDiscovery](get-started-core-ediscovery.md) |Obtenga información sobre cómo asignar permisos de exhibición de documentos electrónicos y crear casos de eDiscovery principales. En este tema también se proporciona información general sobre el flujo de trabajo de eDiscovery principal.<br/> |
 |[Crear un caso de retención de eDiscovery](create-ediscovery-holds.md)|Obtenga información sobre cómo crear suspensiones de eDiscovery que se asocian con un caso de exhibición de documentos electrónicos principal para conservar el contenido relevante para el caso que está investigando.|
 |[Buscar contenido en un caso de exhibición de documentos electrónicos principal](search-for-content-in-core-ediscovery.md)|Obtenga información sobre cómo buscar contenido que sea relevante para un caso. Puede crear rápidamente búsquedas que busquen en las ubicaciones de contenido en espera.|
 |[Exportar contenido de un caso de eDiscovery principal](export-content-in-core-ediscovery.md)|Obtenga información sobre cómo exportar y descargar contenido desde un caso de exhibición de documentos electrónicos principal.|

@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo electrónico no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Microsoft 365. ¿Obtengo demasiado correo no deseado en Microsoft 365? Puede personalizar los filtros de correo no deseado y la configuración contra correo no deseado.
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636051"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708576"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protección contra correo no deseado en Microsoft 365
 
@@ -83,7 +83,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Compruebe la configuración de la organización**: vea la configuración que permite a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener la configuración recomendada, consulte [configuración recomendada para EOP y Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) y [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
-- **Compruebe que la regla de correo no deseado está habilitada en el buzón del usuario**: está habilitada de forma predeterminada, pero si no es los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo electrónico no deseado. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Compruebe que la regla de correo no deseado está habilitada en el buzón del usuario**: está habilitada de forma predeterminada, pero si está deshabilitada, los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo electrónico no deseado. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Use las listas de remitentes bloqueados disponibles**: para obtener más información, vea [crear listas de remitentes bloqueados](create-block-sender-lists-in-office-365.md).
 

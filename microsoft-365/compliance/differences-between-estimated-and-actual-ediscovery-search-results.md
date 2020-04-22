@@ -1,11 +1,11 @@
 ---
-title: Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
+title: Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 4/13/2017
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,19 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365. '
-ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 927042cd7c5f3966e7598f16fdbbcd4e7ddb7923
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204072"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632557"
 ---
-# <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
+# <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 
 Este tema se aplica a las búsquedas que se pueden ejecutar con una de las siguientes herramientas de eDiscovery de Microsoft: 
 
 - Búsqueda de contenido en el centro de seguridad & cumplimiento  <br/>  
-- Búsquedas asociadas a casos de eDiscovery principales
 - Exhibición de documentos electrónicos local en el centro de administración de Exchange (EAC)  <br/>  
 - Centro de exhibición de documentos electrónicos en SharePoint Online  <br/> 
    
@@ -56,7 +55,7 @@ Estos son algunos de los motivos de estas diferencias:
   
 - **La forma en que se estiman los resultados** -una estimación de los resultados de la búsqueda es sólo eso, una estimación (y no un recuento real) de los elementos que cumplen los criterios de la consulta de búsqueda. Para compilar la estimación de los elementos de Exchange, se solicita una lista de los identificadores de mensaje que cumplen los criterios de búsqueda en la base de datos de Exchange mediante la herramienta eDiscovery que está usando. Pero cuando se exportan los resultados de la búsqueda, la búsqueda se vuelve a ejecutar y los mensajes reales se recuperan de la base de datos de Exchange. Por lo tanto, es posible que se produzcan estas diferencias debido a cómo se determina el número estimado de elementos y el número real de elementos. 
     
-- **Cambios que se producen entre el momento en que se calculan y se exportan los resultados** de la búsqueda: cuando se exportan los resultados de búsqueda, se reiniciará la búsqueda para recopilar los elementos más recientes del índice de búsqueda que cumplan los criterios de búsqueda. Es posible que se hayan creado, enviado o recibido elementos adicionales que cumplan los criterios de búsqueda en el tiempo entre el momento en que se recopilaron los resultados de búsqueda estimados y el momento en que se exportaron los resultados de la búsqueda. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de la búsqueda ya no existan porque se han purgado de la ubicación del contenido antes de que se exporten los resultados de la búsqueda. Una forma de mitigar este problema es especificar un intervalo de fechas para una búsqueda de exhibición de documentos electrónicos. Otra forma consiste en poner una retención en las ubicaciones de contenido para que los elementos se conserven y no puedan purgarse. Aunque es muy raro, incluso en el caso de que se aplique una retención, el mantenimiento de los elementos del calendario integrados (que no son editables por el usuario, pero que se incluyen en muchos resultados de la búsqueda) puede que se eliminen de vez en cuando. Esta eliminación periódica de los elementos del calendario tendrá como resultado menos elementos que se exportarán.
+- **Cambios que se producen entre el momento en que se calculan y se exportan los resultados** de la búsqueda: cuando se exportan los resultados de búsqueda, se reiniciará la búsqueda para recopilar los elementos más recientes del índice de búsqueda que cumplan los criterios de búsqueda. Es posible que se hayan creado, enviado o recibido elementos adicionales que cumplan los criterios de búsqueda en el tiempo entre el momento en que se recopilaron los resultados de búsqueda estimados y el momento en que se exportaron los resultados de la búsqueda. También es posible que los elementos que estaban en el índice de búsqueda cuando se calcularon los resultados de la búsqueda ya no existan porque se han purgado de la ubicación del contenido antes de que se exporten los resultados de la búsqueda. Una forma de mitigar este problema es especificar un intervalo de fechas para una búsqueda de exhibición de documentos electrónicos. Otra forma consiste en poner una retención en las ubicaciones de contenido para que los elementos se conserven y no puedan purgarse. 
     
 - **Elementos sin indexar** : los elementos que no están indexados para la búsqueda pueden causar diferencias entre los resultados de búsqueda reales y estimados. Por ejemplo, la exhibición de documentos electrónicos local en Exchange y el centro de exhibición de documentos electrónicos de SharePoint no incluyen elementos sin indexar (que no cumplen los criterios de búsqueda) cuando se ejecuta una búsqueda para estimar los resultados de la búsqueda. Pero puede incluir elementos sin indexar al exportar los resultados de la búsqueda. Si incluye elementos sin indexar al exportar los resultados de la búsqueda, es posible que haya más elementos que se exportan. Esto hará que se produzca una diferencia entre los resultados de búsqueda estimados y exportados. 
     
@@ -80,7 +79,9 @@ Estos son algunos de los motivos de estas diferencias:
 
 En el centro de eDiscovery de SharePoint Online, tiene la opción de incluir contenido no indizado (de Exchange y SharePoint) al exportar los resultados de una búsqueda de exhibición de documentos electrónicos. Para ello, seleccione la opción **incluir elementos que están cifrados o que tienen una opción de formato no reconocida** . Los elementos sin indexar (también denominados no rastreables en SharePoint) son elementos de Exchange y SharePoint que, por algún motivo, no se indizaron para la búsqueda. Los elementos de Exchange no indizados aparecen en el informe de **errores de índice de Exchange** que se incluyen al exportar los resultados de búsqueda. De forma similar, los elementos de SharePoint no indizados se muestran en el informe de **errores de índice de SharePoint** . Cuando se exportan elementos sin indexar, se descargan en una carpeta denominada no **rastreable**. Los elementos de Exchange no indizados se incluyen en un archivo PST; se descarga también cada documento sin indexar de SharePoint. El número de elementos sin indexar (si hay alguno) se enumeran en cada informe de errores de índice. El número de elementos sin indexar en los informes debe coincidir con el número de elementos sin indexar que se descargan. 
   
- **¿Cuáles son los motivos por los que el número de elementos sin indexar exportados no coincide con el número de elementos en el informe de errores de índice?** Como se explicó anteriormente, es posible que los elementos se hayan purgado de Office 365 entre el momento en que se ejecutó la estimación de la búsqueda y el momento en que se exportaron los resultados de la búsqueda. Una discrepancia similar puede producirse para los elementos sin indexar. Por ejemplo, el índice de búsqueda podría ser fecha de salida cuando se exportan los resultados de la búsqueda. Esto significa que un elemento no indexado que se exportó con los resultados de la búsqueda podría no aparecer en el informe de errores de índice porque el elemento no se indizó en el momento en que se exportaron los resultados de la búsqueda. Esto daría como resultado que se exportan más elementos sin indexar que los enumerados en el informe de errores de índice. De forma similar, un elemento sin indexar que aparezca en el informe de errores de índice podría haberse purgado de Office 365 antes de que se actualizara el índice de búsqueda. Esto daría como resultado que se exportan menos elementos no indizados de los enumerados en el informe de errores de índice. 
+ **¿Cuáles son los motivos por los que el número de elementos sin indexar exportados no coincide con el número de elementos en el informe de errores de índice?** Como se explicó anteriormente, es posible que se hayan purgado los elementos de Microsoft 365 entre el momento en que se ejecutó la estimación de la búsqueda y el momento en que se exportaron los resultados de la búsqueda. Una discrepancia similar puede producirse para los elementos sin indexar. Por ejemplo, el índice de búsqueda podría ser fecha de salida cuando se exportan los resultados de la búsqueda. Esto significa que un elemento no indexado que se exportó con los resultados de la búsqueda podría no aparecer en el informe de errores de índice porque el elemento no se indizó en el momento en que se exportaron los resultados de la búsqueda. Esto daría como resultado que se exportan más elementos sin indexar que los enumerados en el informe de errores de índice. De forma similar, un elemento no indizado que aparece en el informe de errores de índice se podría haber purgado de Microsoft 365 antes de que se actualizara el índice de búsqueda. Esto daría como resultado que se exportan menos elementos no indizados de los enumerados en el informe de errores de índice. 
   
 > [!NOTE]
 > Si no selecciona la opción **incluir elementos cifrados o con formato no reconocido** al exportar los resultados de la búsqueda o simplemente descargar los informes, se descargan los informes de errores de índice pero no tienen ninguna entrada. Esto no significa que no haya errores de indización. Solo significa que los elementos sin indexar no se incluyeron en la exportación. 
+  
+

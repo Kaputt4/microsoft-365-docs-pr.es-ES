@@ -1,5 +1,5 @@
 ---
-title: Desuso de la aplicación del visor de cifrado de mensajes de Office 365
+title: Desuso de la aplicación del visor de cifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: El 15 de agosto de 2018, se quitará la aplicación móvil del visor de cifrado de mensajes de Office 365 (OME) de Android y las tiendas de Apple. Se necesita la aplicación móvil del visor de cifrado de mensajes de Office 365 para leer mensajes de correo electrónico y datos adjuntos que se han cifrado con la versión anterior de OME en Apple y teléfonos Android. Además de quitar la aplicación Visor OME, no se realizan otros cambios en la versión anterior de OME.
-ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595275"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636118"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>Desuso de la aplicación del visor de cifrado de mensajes de Office 365
+# <a name="deprecating-message-encryption-viewer-app"></a>Desuso de la aplicación del visor de cifrado de mensajes
 
 El 15 de agosto de 2018, hemos quitado la aplicación móvil del visor de cifrado de mensajes de Office 365 (OME) de Android y las tiendas de Apple. Se necesita la aplicación móvil del visor de cifrado de mensajes de Office 365 para leer mensajes de correo electrónico y datos adjuntos que se han cifrado con la versión anterior de OME en Apple y teléfonos Android. Además de quitar la aplicación Visor OME, no se realizan otros cambios en la versión anterior de OME.
   
@@ -39,13 +39,13 @@ Con este cambio, los usuarios ya no podrán descargar la aplicación móvil del 
   
 ## <a name="why-this-change-was-made"></a>Por qué se ha realizado este cambio
 
-La nueva versión de OME ya no requiere una aplicación móvil para leer mensajes de correo electrónico protegidos y datos adjuntos. Office 365 los clientes que usan las nuevas funciones de OME pueden ver el mensaje protegido en Outlook Mobile y los clientes que no son de Office 365 pueden ver los mensajes protegidos en un explorador.
+La nueva versión de OME ya no requiere una aplicación móvil para leer mensajes de correo electrónico protegidos y datos adjuntos. Los clientes que usan las nuevas funciones OME pueden ver el mensaje protegido en Outlook Mobile y los que no son clientes pueden ver los mensajes protegidos en un explorador.
   
 Solicitar a los usuarios que descarguen una aplicación móvil es otro obstáculo para que los clientes vean los mensajes protegidos. Las nuevas capacidades de cifrado de mensajes de Office 365 proporcionan una mejor experiencia móvil.
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>¿Puedo seguir usando la versión anterior del cifrado de mensajes de Office 365
 
-La versión anterior de Office 365 el cifrado de mensajes no estará en desuso en este momento, pero hemos realizado mejoras considerables en la nueva versión del cifrado de mensajes de Office 365, que facilitan el cifrado y los derechos para proteger los datos confidenciales de cualquier persona. y en cualquier dispositivo, lo que incluye la capacidad para que los usuarios de Office 365 lean mensajes protegidos directamente en Outlook (escritorio, móvil y Web). 
+La versión anterior de Office 365 el cifrado de mensajes no estará en desuso en este momento, pero hemos realizado mejoras considerables en la nueva versión del cifrado de mensajes de Office 365, que facilitan el cifrado y los derechos para proteger los datos confidenciales para cualquier usuario y en cualquier dispositivo, incluida la capacidad de que los usuarios lean mensajes protegidos directamente en Outlook (escritorio, móvil y Web). 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué debo hacer para prepararse para este cambio?
 

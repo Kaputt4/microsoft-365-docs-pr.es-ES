@@ -1,5 +1,5 @@
 ---
-title: Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
+title: Identificación y aprendizaje de relevancia en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de eDiscovery avanzado.  '
+ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557720"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636268"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Aprendizaje de la etiqueta y la relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -100,7 +100,7 @@ La lista de archivos de muestra le permite ver una lista de los archivos en un e
     
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   

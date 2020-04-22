@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
-ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075237"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633049"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Información general sobre las directivas de eliminación de documentos
 
 > [!IMPORTANT]
-> En el futuro, le recomendamos que use una directiva de retención o etiquetas creadas en el centro de cumplimiento de Microsoft 365, el centro de seguridad de &amp; Microsoft 365 o el centro de seguridad de Office 365 en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> En el futuro, le recomendamos que use una directiva de retención o etiquetas creadas en el centro de cumplimiento de Microsoft 365, el centro de &amp; seguridad de Microsoft 365 o el centro de seguridad y cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
 Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
   
@@ -44,7 +44,7 @@ Puede crear y administrar directivas de eliminación de documentos mediante el c
   
 ## <a name="when-to-use-document-deletion-policies"></a>Cuándo usar directivas de eliminación de documentos
 
-Además de las directivas de eliminación de documentos, Office 365 proporciona estas directivas de retención para el contenido de los sitios:
+Además de las directivas de eliminación de documentos, Microsoft proporciona estas directivas de retención para el contenido del sitio:
   
 - [Administración de registros](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
@@ -114,7 +114,7 @@ Igual que los permisos, la navegación y muchas otras características del sitio
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Asignar directivas de eliminación de documentos por primera vez
 
-Es importante comprender que el período de tiempo especificado para una directiva de eliminación de documentos significa el tiempo desde que se creó o modificó el documento, no el tiempo desde que se asignó la Directiva. Por ejemplo, puede crear una directiva de eliminación de documentos que elimine permanentemente los documentos dos años después de su creación y, a continuación, asignar esa Directiva a una plantilla de colección de sitios desde la que se crearon varias colecciones de sitios hace cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contengan muchos documentos que ya son más antiguos que los dos años especificados por la Directiva de eliminación, lo que significa que se eliminará mucho contenido después de asignar la Directiva de eliminación de documentos para el primer temporal.
+Es importante comprender que el período de tiempo especificado para una directiva de eliminación de documentos significa el tiempo desde que se creó o modificó el documento, no el tiempo desde que se asignó la Directiva. Por ejemplo, puede crear una directiva de eliminación de documentos que elimine permanentemente los documentos dos años después de su creación y, a continuación, asignar esa Directiva a una plantilla de colección de sitios desde la que se crearon varias colecciones de sitios hace cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contengan muchos documentos que ya son más antiguos que los dos años especificados por la Directiva de eliminación, lo que significa que se eliminará mucho contenido después de asignar la Directiva de eliminación de documentos por primera vez.
   
 Cuando se asigna la directiva por primera vez, se evalúan todos los documentos del sitio. Si cumplen los criterios, se eliminarán. Esto se aplica a todos los documentos existentes, no solo a los documentos nuevos creados desde que se asignó la directiva. Y recuerde que el período de tiempo corresponde a la antigüedad de cada documento, no al tiempo desde que se asignó la directiva por primera vez.
   

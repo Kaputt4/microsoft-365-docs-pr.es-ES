@@ -1,5 +1,5 @@
 ---
-title: Comprender la similitud de documentos en Office 365 Advanced eDiscovery
+title: Comprender la similitud de documentos en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: 'Revise cómo el valor de similitud de documentos, el nivel mínimo de semejanza entre dos archivos que se consideran casi duplicados, funciona en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: e15eb119a569c7cd296f9d3546969848808652da
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Revise cómo el valor de similitud de documentos, el nivel mínimo de semejanza entre dos archivos que se considerarán casi duplicados, funciona en eDiscovery avanzado. '
+ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557670"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633415"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Comprender la similitud de documentos en eDiscovery avanzado (Classic)
 
@@ -57,7 +57,7 @@ Una vez que se combinan los conjuntos, el documento dinámico puede cambiar cuan
   
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Configuración de las opciones de análisis](set-analyze-options-in-advanced-ediscovery.md)
   

@@ -1,5 +1,5 @@
 ---
-title: Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
+title: Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
-ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar la formación de relevancia en la exhibición avanzada de documentos electrónicos.  '
+ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557770"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636298"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -138,7 +138,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
     
 ## <a name="see-also"></a>Vea también
 
-[Exhibición avanzada de documentos electrónicos (Classic)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   
 [Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   
