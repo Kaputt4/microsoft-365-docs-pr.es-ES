@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda la infraestructura de red de Contoso y cómo usa su tecnología SD-WAN para obtener un rendimiento de red óptimo de los servicios basados en la nube de Microsoft 365 Enterprise.
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068355"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625283"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Redes para Contoso Corporation
 
@@ -50,14 +50,14 @@ En la ilustración 1, se muestra la infraestructura de red de Contoso y sus cone
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Uso de SD-WAN para la conectividad de red óptima a Microsoft
 
-Contoso siguió los [principios de conectividad de red de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) para:
+Contoso siguió los [principios de conectividad de red de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) para:
 
-1. Identificar y diferenciar el tráfico de red de Office 365
+1. Identificar y diferenciar el tráfico de red de Microsoft 365
 2. Conexiones de red de salida de forma local
 3. Evitar las redirecciones de red
 4. Omitir los dispositivos de seguridad de red duplicados
 
-Hay tres categorías de tráfico de red para Office 365: optimizar, permitir y predeterminado. El tráfico de las categorías Optimizar y Permitir es el tráfico de red de confianza que se cifra y protege en los puntos de conexión y se destina a la red de Microsoft 365.
+Existen tres categorías de tráfico de red para Microsoft 365: optimizado, permitido y predeterminado. El tráfico de las categorías Optimizar y Permitir es el tráfico de red de confianza que se cifra y protege en los puntos de conexión y se destina a la red de Microsoft 365.
 
 Contoso decidió:
 
@@ -93,7 +93,7 @@ La adopción correcta de los servicios de Microsoft 365 Enterprise por parte de 
 
 2. Crear un plan para la conectividad de red de Microsoft 365 Enterprise
 
-   Contoso usó los [principios de conectividad de red de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) y proporcionó arquitecturas de red de referencia para determinar SD-WAN como su topología preferida para la conectividad de Office 365.
+   Contoso usó los [principios de conectividad de red de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) y proporcionó arquitecturas de red de referencia para determinar SD-WAN como su topología preferida para la conectividad de Microsoft 365.
 
 3. Se analizó el uso de la conexión a Internet y el ancho de banda WAN MPLS en cada oficina y se aumentó el ancho de banda si era necesario.
 
@@ -105,7 +105,7 @@ La adopción correcta de los servicios de Microsoft 365 Enterprise por parte de 
 
 5. Configuración de DNS interno
 
-   DNS debe ser funcional y buscarse de forma local para el tráfico de Office 365.
+   DNS debe ser funcional y buscarse de forma local para el tráfico de Microsoft 365.
 
 6. Validación de los puntos de conexión de red y la conectividad de los puertos
 
