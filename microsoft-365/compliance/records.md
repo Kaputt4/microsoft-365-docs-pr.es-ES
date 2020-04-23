@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153838"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632119"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -108,6 +108,9 @@ El control de versiones de registros está disponible automáticamente para todo
 
 ![Propiedad de estado de registro en un documento etiquetado como registro](../media/recordversioning8.png)
 
+> [!NOTE]
+> El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan esta licencia.
+
 ### <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
 Cuando se asigna una etiqueta de registro a un documento, cualquier usuario con permisos de Colaboración o un nivel de permisos más limitado puede desbloquear un registro o bloquear un registro desbloqueado.
@@ -153,7 +156,7 @@ La biblioteca de suspensión para conservación solo es visible para los adminis
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>Buscar en el registro de auditoría los eventos de control de versiones de registros
 
-Las acciones para bloquear y desbloquear registros se registran en el registro de auditoría de Office 365. Puede buscar actividades específicas **cambiado el estado del registro a bloqueado** y **cambiado el estado del registros a desbloqueado**, que se encuentran en la sección **Actividades de archivo y de página** de la lista desplegable **Actividades** en la página **Búsqueda de registros de auditoría** en el centro de seguridad y cumplimiento.
+Las acciones para bloquear y desbloquear registros se registran en el registro de auditoría. Puede buscar actividades específicas **cambiado el estado del registro a bloqueado** y **cambiado el estado del registros a desbloqueado**, que se encuentran en la sección **Actividades de archivo y de página** de la lista desplegable **Actividades** en la página **Búsqueda de registros de auditoría** en el centro de seguridad y cumplimiento.
 <br/><br/>
 
 ![Buscar en el registro de auditoría los eventos de control de versiones de registros](../media/recordversioning13.png)
