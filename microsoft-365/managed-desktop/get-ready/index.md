@@ -5,21 +5,22 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595596"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790616"
 ---
-# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a><span data-ttu-id="36cdc-104">Prepararse para la inscripción en el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-104">Get ready for enrollment in Microsoft Managed Desktop</span></span>
+# <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a><span data-ttu-id="53780-104">Prepararse para la inscripción en el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-104">Get ready for enrollment in Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="36cdc-105">En estos temas se describen los pasos necesarios para llevar a cabo la inscripción en la organización, incluida la comprobación de que el entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones para que se incluyan en el servicio.</span><span class="sxs-lookup"><span data-stu-id="36cdc-105">These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps for inclusion in the service.</span></span>
+<span data-ttu-id="53780-105">En estos temas se describen los pasos necesarios para llevar a cabo la inscripción en la organización, incluida la comprobación de que el entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones para que se incluyan en el servicio.</span><span class="sxs-lookup"><span data-stu-id="53780-105">These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps for inclusion in the service.</span></span>
 
-- [<span data-ttu-id="36cdc-106">Requisitos previos del Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-106">Prerequisites for Microsoft Managed Desktop</span></span>](prerequisites.md)
-- [<span data-ttu-id="36cdc-107">Configuración de red para el escritorio administrado por Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-107">Network configuration for Microsoft Managed Desktop</span></span>](network.md)
-- [<span data-ttu-id="36cdc-108">Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-108">Prepare on-premises resources access for Microsoft Managed Desktop</span></span>](network.md)
-- [<span data-ttu-id="36cdc-109">Preparar unidades asignadas para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-109">Prepare mapped drives for Microsoft Managed Desktop</span></span>](mapped-drives.md)
-- [<span data-ttu-id="36cdc-110">Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-110">Prepare certificates and network profiles for Microsoft Managed Desktop</span></span>](certs-wifi-lan.md)
-- [<span data-ttu-id="36cdc-111">Aplicaciones en el escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="36cdc-111">Apps in Microsoft Managed Desktop</span></span>](apps.md)
+- [<span data-ttu-id="53780-106">Requisitos previos del Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-106">Prerequisites for Microsoft Managed Desktop</span></span>](prerequisites.md)
+- [<span data-ttu-id="53780-107">Configuración de red para el escritorio administrado por Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-107">Network configuration for Microsoft Managed Desktop</span></span>](network.md)
+- [<span data-ttu-id="53780-108">Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-108">Prepare on-premises resources access for Microsoft Managed Desktop</span></span>](network.md)
+- [<span data-ttu-id="53780-109">Preparar unidades asignadas para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-109">Prepare mapped drives for Microsoft Managed Desktop</span></span>](mapped-drives.md)
+- [<span data-ttu-id="53780-110">Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-110">Prepare certificates and network profiles for Microsoft Managed Desktop</span></span>](certs-wifi-lan.md)
+- [<span data-ttu-id="53780-111">Preparar recursos de impresión para el escritorio administrado por Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-111">Prepare printing resources for Microsoft Managed Desktop</span></span>](printing.md)
+- [<span data-ttu-id="53780-112">Aplicaciones en el escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="53780-112">Apps in Microsoft Managed Desktop</span></span>](apps.md)
 
