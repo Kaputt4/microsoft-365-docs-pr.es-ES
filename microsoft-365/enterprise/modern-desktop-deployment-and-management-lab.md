@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225936"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631518"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
-Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Office 365 ProPlus. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo Microsoft Endpoint Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo Microsoft Endpoint Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
-Este entrenamiento es altamente recomendado para organizaciones que se preparan para el fin de Windows 7, también se aplica si está utilizando Windows 10 y Office 365 Plus u Office 2019. Además, como entorno aislado, la práctica es ideal para explorar las actualizaciones de las herramientas de implementación y probar la automatización relacionada con la implementación.
+Este entrenamiento es altamente recomendado para organizaciones que se preparan para el fin de Windows 7, también se aplica si está utilizando Windows 10 y Office 365 Plus u Office 2019. Además, como entorno aislado, la práctica es ideal para explorar las actualizaciones de las herramientas de implementación y probar la automatización relacionada con la implementación.
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -69,7 +69,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 ### <a name="office-and-lob-app-delivery"></a>Entrega de aplicaciones de Office y de LOB
 
-  - Implementación de Office 365 ProPlus 
+  - Aplicaciones de Microsoft 365 para empresas
   - Implementación de administración empresarial con Configuration Manager y Microsoft Intune
   - Implementación y administración de aplicaciones mediante Microsoft Intune
   - Implementación de aplicaciones e instalación de autoservicio con Microsoft Store para Empresas
@@ -113,7 +113,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permita entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 5 de julio de 2020. Antes de que caduque, se publicará una nueva versión.*
+*Use un gran ancho de banda para descargar este contenido, con el fin de mejorar la experiencia de descarga y permitir entre 30 y 45 minutos de aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponibles y 150 GB de espacio en disco. Para obtener un rendimiento óptimo, se recomienda tener 32 GB de memoria disponibles. El laboratorio caduca el 18 de abril de 2020. Antes de que caduque, se publicará una nueva versión.*
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
@@ -125,7 +125,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guía de implementación de Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guía de implementación de Aplicaciones de Microsoft 365 para empresas</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Introducción a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

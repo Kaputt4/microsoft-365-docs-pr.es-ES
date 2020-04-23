@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d35c6ee17c326f98179e882bb8752cd38f14ec6a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602487"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637984"
 ---
 # <a name="european-union-model-clauses"></a>Cláusulas modelo de la Unión Europea
 
@@ -47,7 +47,7 @@ Obtenga más información sobre las ventajas de las cláusulas modelo de la Uni�
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Servicios profesionales de Microsoft: premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Office 365
+- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Microsoft 365 para empresas
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: parte del servicio de nube de la administración de dispositivos móviles y productos de complemento de Intune para Office 365
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365

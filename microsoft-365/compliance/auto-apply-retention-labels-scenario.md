@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención de Office 365. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención de Office 365 y configurar la retención basada en eventos.
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención y configurar la retención basada en eventos.
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106042"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636398"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-En este artículo se describe cómo administrar el ciclo de vida de los documentos relacionados con el producto que se almacenan en SharePoint Online mediante las etiquetas de retención de Office 365 y, específicamente, con la aplicación automática de etiquetas y la configuración de la retención basada en eventos. La función de aplicación automática aprovecha la clasificación de documentos por el uso de los metadatos de SharePoint. El escenario de este artículo se basa en documentos relacionados con el producto, pero los mismos conceptos pueden usarse en otros escenarios. Por ejemplo, en la industria del petróleo y gas, podría administrar el ciclo de vida de los documentos relacionados con los activos físicos, como plataformas petrolíferas, registros de pozos y licencias de producción. En la industria de servicios financieros, puede administrar documentos relacionados con cuentas bancarias, hipotecas y contratos de seguros. En el sector público, puede administrar documentos relacionados con permisos de construcción o formularios fiscales.
+En este artículo se describe cómo administrar el ciclo de vida de los documentos relacionados con el producto que se almacenan en SharePoint Online mediante las etiquetas de retención y, específicamente, con la aplicación automática de etiquetas y la configuración de la retención basada en eventos. La función de aplicación automática aprovecha la clasificación de documentos por el uso de los metadatos de SharePoint. El escenario de este artículo se basa en documentos relacionados con el producto, pero los mismos conceptos pueden usarse en otros escenarios. Por ejemplo, en la industria del petróleo y gas, podría administrar el ciclo de vida de los documentos relacionados con los activos físicos, como plataformas petrolíferas, registros de pozos y licencias de producción. En la industria de servicios financieros, puede administrar documentos relacionados con cuentas bancarias, hipotecas y contratos de seguros. En el sector público, puede administrar documentos relacionados con permisos de construcción o formularios fiscales.
 
 Echemos un vistazo al escenario de este artículo. Revisaremos la arquitectura de la información y la definición de las etiquetas de retención. Luego, analizaremos la clasificación de documentos aplicando automáticamente las etiquetas y, por último, generaremos los eventos que desencadenan el inicio del periodo de retención.
 
 ## <a name="information-architecture"></a>Arquitectura de información
 
-El escenario para este artículo se basa en una empresa manufacturera que usa Office 365 SharePoint Online para almacenar todos los documentos relacionados con los productos que la empresa desarrolla. Estos documentos incluyen especificaciones del producto, acuerdos con proveedores y manuales del usuario. Cuando se almacenan estos documentos en SharePoint como parte de las directivas de Administración de contenido empresarial, se definen los metadatos del documento y se usan para clasificarlos. Cada documento tiene las siguientes propiedades de metadatos:
+El escenario para este artículo se basa en una empresa manufacturera que usa SharePoint Online para almacenar todos los documentos relacionados con los productos que la empresa desarrolla. Estos documentos incluyen especificaciones del producto, acuerdos con proveedores y manuales del usuario. Cuando se almacenan estos documentos en SharePoint como parte de las directivas de Administración de contenido empresarial, se definen los metadatos del documento y se usan para clasificarlos. Cada documento tiene las siguientes propiedades de metadatos:
 
 - **Tipo de documento** (como, por ejemplo, especificaciones del producto, acuerdo del producto y manual del usuario).
 
@@ -146,7 +146,7 @@ Ahora que ha creado la etiqueta de retención, echemos un vistazo a la aplicaci�
 
 Vamos a [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) las etiquetas de retención que hemos creado para este escenario mediante el lenguaje de consulta de palabras clave (KQL). KQL es el lenguaje que se usa para crear consultas de búsqueda. En KQL, puede realizar búsquedas mediante palabras clave o propiedades administradas. Para más información sobre KQL, consulte <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>.
 
-A nivel general, queremos indicar a Office 365 que "aplique la etiqueta de retención **Especificaciones del producto** a todos los documentos que contengan el **Estado** de **Final ** y un **Tipo de documento** de **Especificaciones del producto**". Recuerde que **Estado** y **Tipo de documento** son las columnas de sitio que hemos definido anteriormente para el tipo de contenido Documentación del producto en la sección [Arquitectura de información](#information-architecture). Para ello, debemos configurar el esquema de búsqueda.
+A nivel general, queremos indicar a Microsoft 365 que "aplique la etiqueta de retención **Especificaciones del producto** a todos los documentos que contengan el **Estado** de **Final ** y un **Tipo de documento** de **Especificaciones del producto**". Recuerde que **Estado** y **Tipo de documento** son las columnas de sitio que hemos definido anteriormente para el tipo de contenido Documentación del producto en la sección [Arquitectura de información](#information-architecture). Para ello, debemos configurar el esquema de búsqueda.
 
 Cuando SharePoint indexa contenido, genera automáticamente propiedades rastreadas para cada columna de sitio. Para este escenario, nos interesan las propiedades **Tipo de documento** y **Estado**. Necesitamos documentos en la biblioteca con el tipo de contenido correcto y las columnas de sitio rellenadas, para que la búsqueda pueda crear las propiedades rastreadas.
 
@@ -237,7 +237,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona correctamente, creare
 
 6. Escriba un nombre (por ejemplo, **Aplicar automáticamente etiqueta de Especificaciones del producto**) y una descripción opcional para la directiva de etiqueta. Después, seleccione **Siguiente**. 
 
-7. En la página del asistente **Elegir ubicaciones**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan solo en las bibliotecas de documentos de SharePoint. Seleccione **Permitir elegir ubicaciones específicas**, desactive el estado de Correo electrónico de Exchange, Cuentas de OneDrive y Grupos de Office 365 y asegúrese de que el estado de Sitios de SharePoint está activado. 
+7. En la página del asistente **Elegir ubicaciones**, seleccione las ubicaciones de contenido a las que desea aplicar la directiva. Para este escenario solo aplicamos la directiva a las ubicaciones de SharePoint, ya que todos los documentos de producción se almacenan solo en las bibliotecas de documentos de SharePoint. Seleccione **Permitir elegir ubicaciones específicas**, desactive el estado de Correo electrónico de Exchange, Cuentas de OneDrive y Grupos de Microsoft 365 y asegúrese de que el estado de Sitios de SharePoint está activado. 
 
     ![Elegir sitios específicos a los que aplicar etiquetas automáticamente](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ Ahora que las etiquetas de retención se aplicaron correctamente y de forma auto
 
 Puede crear el evento manualmente en el Centro de seguridad y cumplimiento. Para ello, vaya a **Administración de registros** > **Eventos**, elija el tipo de evento, configure los Id. de activo adecuados y escriba la fecha del evento. Para obtener más información, consulte [Información general sobre la retención basada en eventos](event-driven-retention.md).
 
-Para este escenario, se creará automáticamente el evento al generarlo desde un sistema de producción externo. En este caso, el sistema que genera el evento es una lista simple de SharePoint que indica si un producto está en producción y un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) que está asociado con la lista y que activará el evento. En un escenario real, cualquier sistema podría generar el evento, como un sistema de RRHH o CRM. Flow contiene muchas interacciones listas para usarse y un bloque de creación para cargas de trabajo de Office 365 (como Exchange, SharePoint, Teams y Dynamics 365), así como para aplicaciones de terceros como Twitter, Box, Salesforce y Workdays. Esto hace que sea más fácil integrar Flow en estos sistemas. Para obtener más información, consulte [Retención automática controlada por eventos](automate-event-driven-retention.md).
+Para este escenario, se creará automáticamente el evento al generarlo desde un sistema de producción externo. En este caso, el sistema que genera el evento es una lista simple de SharePoint que indica si un producto está en producción y un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) que está asociado con la lista y que activará el evento. En un escenario real, cualquier sistema podría generar el evento, como un sistema de RRHH o CRM. Flow contiene muchas interacciones listas para usarse y un bloque de creación para cargas de trabajo de Microsoft 365 (como Exchange, SharePoint, Teams y Dynamics 365), así como para aplicaciones de terceros como Twitter, Box, Salesforce y Workdays. Esto hace que sea más fácil integrar Flow en estos sistemas. Para obtener más información, consulte [Retención automática controlada por eventos](automate-event-driven-retention.md).
 
 La siguiente captura de pantalla muestra la lista de SharePoint que se usará para desencadenar el evento: 
 

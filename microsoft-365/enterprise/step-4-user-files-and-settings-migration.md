@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo migrar los archivos y la configuración de los usuarios.
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113546"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636789"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Paso 4: Migración de los archivos y la configuración del usuario
 
@@ -38,7 +38,7 @@ Mover archivos y la configuración de los usuarios a los equipos nuevos o actual
 </table>
 
 >[!NOTE]
->Aunque puede seguir utilizando los procesos de migración que ha usado en el pasado, con el cambio a Office 365 ProPlus se recomienda usar "Mover carpeta conocida" de OneDrive (ver a continuación). Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
+>Aunque puede seguir utilizando los procesos de migración que ha usado en el pasado, con el cambio a Aplicaciones de Microsoft 365 para empresas se recomienda usar "Mover carpeta conocida" de OneDrive (ver a continuación). Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
 Una de las tareas más difíciles y a menudo más manuales de una implementación a gran escala es la transferencia de los archivos y la configuración de los usuarios. En este artículo se tratarán las opciones disponibles para migrar los usuarios a equipos nuevos, actualizados y renovados.

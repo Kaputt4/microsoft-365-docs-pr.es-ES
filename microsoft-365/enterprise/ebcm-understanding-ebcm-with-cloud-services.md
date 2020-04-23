@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Entender cómo la planificación y la implementación de la continuidad empresarial son diferentes cuando los servicios en la nube forman parte de la oferta de TI.
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030111"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633038"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
 
@@ -40,8 +40,8 @@ Si aún no ha actualizado sus planes, estos temas le ayudará a planificar la es
 - [Resiliencia del Servicio de Microsoft 365](ebcm-m365-service-resiliency.md)
 - [Desarrollo de un plan de continuidad](ebcm-developing-your-ebcm-plan.md)
 - [Escenarios de mitigación de incidencias del servicio de Microsoft 365](ebcm-microsoft-365-mitigations.md)
-- [Aprendizaje y ensayo de planes de continuidad empresarial de Microsoft 365](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Aprendizaje y ensayo de planes de continuidad empresarial de Microsoft 365](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Declinación de responsabilidades de continuidad empresarial de Enterprise](ebcm-legal-disclaimer.md)

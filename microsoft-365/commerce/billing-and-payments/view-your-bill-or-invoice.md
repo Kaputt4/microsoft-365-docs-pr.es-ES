@@ -25,16 +25,16 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
-ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 7d9ee9166de2a3807a8d10d061d3329c71180931
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540860"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634961"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura
 
-Este artículo está dirigido a las personas que tienen una suscripción a Office 365 para empresas.  Debe ser Administrador global o Administrador de facturación para realizar los pasos descritos en este artículo.
+Este artículo está dirigido a las personas que tienen una suscripción a Microsoft 365 para empresas. Debe ser Administrador global o Administrador de facturación para realizar los pasos descritos en este artículo.
   
 Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [Entender la factura](understand-your-invoice2.md) para obtener una guía detallada.
   

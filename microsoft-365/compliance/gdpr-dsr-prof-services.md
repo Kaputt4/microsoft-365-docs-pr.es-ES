@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073336"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632501"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de interesados del soporte técnico y los servicios profesionales de Microsoft para el RGPD y la CCPA
 
@@ -229,7 +229,7 @@ Para los servicios de migración de FastTrack, Microsoft es el procesador de dat
   
 Si necesita procesar cualquier acceso, corregir o exportar solicitudes de DSR mientras se están procesando los datos de un usuario a través de sistemas de migración de FastTrack, será responsabilidad del cliente realizar estas DSR mediante los sistemas de origen existentes en los que se almacenan los datos del usuario. Cuando finalice la migración del usuario y los datos se hayan migrado al servicio en la nube de destino de Microsoft, se aplicarán las instrucciones de Microsoft sobre cómo los clientes puedan usar sus productos, servicios y herramientas administrativas para buscar y realizar acciones sobre los datos personales con el fin de responder a la solicitud del interesado. Para conocer estas instrucciones, vea [Solicitudes de interesados para el RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-Si necesita eliminar una cuenta de usuario de Office 365 en respuesta a una solicitud de eliminación de DSR mientras su organización está ocupada en un proyecto de migración de FastTrack en curso, debe tener en cuenta que los sistemas de migración pueden conservar una copia de los datos de migración del usuario durante un período de tiempo tras la finalización de la migración del usuario y la eliminación de la cuenta de usuario de Office 365 no eliminará automáticamente estos datos migración de usuario almacenados en los sistemas de migración de FastTrack. Si desea que el equipo de Microsoft FastTrack elimine los datos de migración del usuario, puede [enviar una solicitud](https://go.microsoft.com/fwlink/?linkid=874544). Durante el transcurso habitual de la actividad empresarial, Microsoft FastTrack eliminará todas las copias de datos cuando finalice la migración de su organización.
+Si necesita eliminar una cuenta de usuario de en respuesta a una solicitud de eliminación de DSR mientras su organización está ocupada en un proyecto de migración de FastTrack en curso, debe tener en cuenta que los sistemas de migración pueden conservar una copia de los datos de migración del usuario durante un período de tiempo tras la finalización de la migración del usuario, y la eliminación de la cuenta de usuario de no eliminará automáticamente estos datos migración de usuario almacenados en los sistemas de migración de FastTrack. Si desea que el equipo de Microsoft FastTrack elimine los datos de migración del usuario, puede [enviar una solicitud](https://go.microsoft.com/fwlink/?linkid=874544). Durante el transcurso habitual de la actividad empresarial, Microsoft FastTrack eliminará todas las copias de datos cuando finalice la migración de su organización.
 
 ## <a name="other-consulting-services"></a>Otros servicios de consultoría
 

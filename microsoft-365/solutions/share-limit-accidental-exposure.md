@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604820"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632588"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -79,9 +79,9 @@ Para limitar el uso compartido externo a los miembros de un grupo de seguridad
 3. En **Quién puede compartir elementos con usuarios ajenos a la organización**, seleccione una o ambas casillas: a. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos autenticados** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados b. **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos y con vínculos anónimos** para especificar un grupo de seguridad que pueda compartir con usuarios autenticados y con vínculos de tipo Cualquiera.
 4. Haga clic en **Aceptar**.
 
-Tenga en cuenta que esto afecta a archivos, carpetas y sitios, pero no a los grupos de Office 365 o Teams. Cuando los miembros inviten a invitados a un grupo privado de Office 365 o Microsoft Teams, la invitación se enviará al propietario del grupo o equipo para que la apruebe.
+Tenga en cuenta que esto afecta a archivos, carpetas y sitios, pero no a los grupos de Microsoft 365 o Teams. Cuando los miembros inviten a invitados a un grupo privado de Microsoft 365 o Microsoft Teams, la invitación se enviará al propietario del grupo o equipo para que la apruebe.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)
 

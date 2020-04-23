@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: Recomendaciones de configuración para proteger archivos en Microsoft Teams.'
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088138"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638481"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Protección de archivos en Microsoft Teams
 
@@ -61,7 +61,7 @@ Como se muestra:
 
 - Las directivas de [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP) se configuran para que las etiquetas de retención Confidencial y Extremadamente confidencial puedan advertir o prevenir a los usuarios cuando intentan enviar estos tipos de archivo fuera de la organización.
 
-- Si es necesario para su escenario, puede usar [etiquetas de confidencialidad](../../compliance/sensitivity-labels.md) para proteger archivos confidenciales con cifrado y permisos. Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en el Centro de cumplimiento de Microsoft 365 y las etiquetas se sincronizarán con el portal de Azure en caso de que decida realizar una configuración adicional o avanzada. Las etiquetas de Azure Information Protection y etiquetas de confidencialidad de Office 365 son totalmente compatibles entre sí. Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido. No todos los clientes necesitan este nivel de protección.
+- Si es necesario para su escenario, puede usar [etiquetas de confidencialidad](../../compliance/sensitivity-labels.md) para proteger archivos confidenciales con cifrado y permisos. Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en el Centro de cumplimiento de Microsoft 365 y las etiquetas se sincronizarán con el portal de Azure en caso de que decida realizar una configuración adicional o avanzada. Las etiquetas de Azure Information Protection y las etiquetas de confidencialidad son totalmente compatibles entre sí. Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido. No todos los clientes necesitan este nivel de protección.
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>Configuración de SharePoint y OneDrive para toda la organización
 
@@ -125,7 +125,7 @@ En la siguiente tabla se resume la configuración de cada uno de los equipos y d
 
 Para conocer los pasos necesarios para la implementación de los cuatro tipos diferentes de sitios en esta solución, vea [Implementar equipos con tres niveles de protección para los archivos](deploy-teams-three-tiers.md).
 
-## <a name="office-365-retention-labels"></a>Etiquetas de retención de Office 365
+## <a name="retention-labels"></a>Etiquetas de retención
 
 Se recomienda usar etiquetas de retención para entornos con datos confidenciales. Después de configurar y publicar las etiquetas de retención:
 
@@ -135,7 +135,7 @@ Se recomienda usar etiquetas de retención para entornos con datos confidenciale
 
 - Puede aplicar directivas DLP basadas en etiquetas de retención.
 
-- Las personas de la organización pueden aplicar una etiqueta manualmente a contenido en Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive, SharePoint y grupos de Office 365. A menudo, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, de modo que pueden clasificarlo y aplicar la directiva de DLP adecuada.
+- Las personas de la organización pueden aplicar una etiqueta manualmente a contenido en Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive, SharePoint y grupos de Microsoft 365. A menudo, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, de modo que pueden clasificarlo y aplicar la directiva de DLP adecuada.
 
 Como se muestra, esta solución incluye la creación de las siguientes etiquetas de retención:
 

@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de SharePoint en toda la organización.
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636921"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Implementar SharePoint y OneDrive para Microsoft 365 Enterprise
 
@@ -93,8 +93,8 @@ Use [Migrar a SharePoint](https://docs.microsoft.com/sharepointmigration/migrate
 
 Para comprender mejor la seguridad en SharePoint, revise los recursos siguientes:
 
--   [¿Cómo protegen SharePoint y OneDrive sus datos en la nube?](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [Cifrado de datos en OneDrive y SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [¿Cómo protegen SharePoint y OneDrive sus datos en la nube?](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Cifrado de datos en OneDrive y SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Resultado
 
@@ -155,8 +155,8 @@ Después de completar la implementación en toda la organización, tiene que seg
 
 Estas son algunas actividades sugeridas:
 
-- Vea la [Factores de éxito para Office 365](https://aka.ms/successfactors) para obtener información sobre procedimientos recomendados generales para la adopción de servicios en la nube. 
-- Vea [Informes de actividades de Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) para comprender el uso del servicio de Office 365 en toda la organización. Si no es administrador global de Office 365 de su organización, pida a alguien que lo sea que le conceda permisos de lectura de informes a su cuenta de usuario para que pueda tener acceso a los informes de actividades.
+- Consulte [Factores de éxito para Microsoft 365](https://aka.ms/successfactors) para obtener información sobre procedimientos recomendados generales para la adopción de servicios en la nube. 
+- Consulte [Informes de Microsoft 365 en el Centro de administración](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) para comprender el uso del servicio en toda la organización. Si no es administrador global de su organización, pida a alguien que lo sea que le conceda permisos de lectura de informes a su cuenta de usuario para que pueda tener acceso a los informes de actividades.
 - Visite el centro de opiniones (un canal público en un equipo central de Teams o Yammer) para ver qué problemas tienen los usuarios y leer sus comentarios sobre su experiencia con SharePoint. Responda a las preguntas y los problemas tan pronto como pueda para prevenir que surja la frustración y demostrar que apoya a los usuarios en la implementación.
 - Identifique y apoye a los mejores usuarios de cada grupo empresarial y resalte sus logros y prácticas recomendadas en SharePoint. Divulgue su éxito en la organización para demostrar el éxito y la adopción del proyecto. El respaldo de la dirección técnica de un grupo empresarial puede conllevar una influencia positiva en el resto de la dirección y los compañeros.
 

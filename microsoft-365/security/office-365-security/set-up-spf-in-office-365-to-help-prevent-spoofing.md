@@ -1,5 +1,5 @@
 ---
-title: Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
+title: Configurar SPF para ayudar a evitar la suplantación de identidad
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.'
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598337"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638325"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
  **Resumen:** En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.
 
@@ -59,7 +59,7 @@ Recopile esta información:
 
 1. Asegúrese de que está familiarizado con la sintaxis SFP de la siguiente tabla.
 
-   ||**Si usa...**|**¿Común para los clientes de Office 365?**|**Agregue esto...**|
+   ||**Si usa...**|**¿Es común para los clientes?**|**Agregue esto...**|
    |:-----|:-----|:-----|:-----|
    |1|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF comienzan con este valor|v=spf1|
    |2|Exchange Online|Común|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ Recopile esta información:
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   Este es el registro TXT de SPF más común de Office 365. Este registro funciona para casi todos los usuarios, independientemente de si su centro de datos de Office 365 se encuentra en los Estados Unidos, en Europa (incluyendo Alemania) o en otra ubicación.
+   Este es el registro TXT de SPF más común. Este registro funciona para casi todos los usuarios, independientemente de si su centro de datos de Microsoft se encuentra en los Estados Unidos, en Europa (incluyendo Alemania) o en otra ubicación.
 
    Sin embargo, si ha adquirido Office 365 Alemania, parte de la nube de Microsoft Alemania, debe utilizar la instrucción include de la línea 4 en lugar de la línea 2. Por ejemplo, si está completamente hospedado en Office 365 Alemania, es decir, no tiene ningún servidor de correo local, el registro TXT de SPF incluiría las filas 1, 4 y 7 y tendría este aspecto:
 

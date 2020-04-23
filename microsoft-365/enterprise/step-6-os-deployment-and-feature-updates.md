@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085245"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636764"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085245"
 
 Si ha seguido el ciclo del proceso de implementación hasta ahora, ha completado, al menos parcialmente, los pasos de preparación de los dispositivo y las aplicaciones, ha preparado la infraestructura, ha configurado y recopilado los paquetes de aplicación, tiene un plan para migrar los archivos del usuario y establecer la configuración predeterminada, además de planes para retener los controles de seguridad existentes y posiblemente implementar otros nuevos.
 
-Ahora ha llegado a la fase en la que se combinan todas estas piezas para automatizar tanto como sea posible la instalación de Windows 10 y Office 365 ProPlus, junto con los controladores, aplicaciones y cualquier otro elemento necesario.
+Ahora ha llegado a la fase en la que se combinan todas estas piezas para automatizar tanto como sea posible la instalación de Windows 10 y Aplicaciones de Microsoft 365 para empresas, junto con los controladores, las aplicaciones y cualquier otro elemento necesario.
 
 Finalmente, la mejor medida del éxito de la implementación de un sistema operativo es cumplir las expectativas del usuario y evitar que su trabajo se interrumpa. Y en este paso, empezará a probar e implementar en usuarios piloto como parte de una implementación por fases. Como sugerencia, antes de la implementación general, tendrá que ir al paso 8 del ciclo del proceso de implementación ([Comunicaciones y aprendizaje del usuario](https://aka.ms/mdd8)) para asegurarse de que los usuarios estén informados y preparados para los cambios que se avecinan, y así poder medir la velocidad con la validación continua mediante una implementación por fases.
 
@@ -131,8 +131,8 @@ Para obtener más información sobre Windows Update para empresas, consulte la s
 
 ## <a name="next-step"></a>Paso siguiente 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Paso anterior
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Paso 5: Consideraciones de seguridad y cumplimiento](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Paso 5: Consideraciones de seguridad y cumplimiento](https://aka.ms/mdd5)

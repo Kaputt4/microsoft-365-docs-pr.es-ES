@@ -14,7 +14,7 @@ Si es necesario, el [Paso 1](../infoprotect-define-sec-infoprotect-levels.md) pu
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obligatorio: se ha configurado una mayor seguridad para Microsoft 365
 
-Ha configurado los siguientes valores para [mayor seguridad de Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+Ha configurado los siguientes valores para [mayor seguridad de Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Directivas de administración de amenazas en el Centro de seguridad de Microsoft 365
 - Configuración adicional de todo el espacio empresarial de Exchange Online
@@ -52,11 +52,11 @@ Los dispositivos Windows 10 Enterprise inscritos tienen una directiva de Intune 
 Si es necesario, el [Paso 4](../infoprotect-deploy-windows-information-protection.md) puede ayudarle a cumplir este requisito. 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Opcional: Prevención de pérdida de datos (DLP) de Office 365 está implementada
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Opcional: Prevención de pérdida de datos (DLP) está implementada
 
 Tiene analizado, probar y, a continuación, implementan el conjunto de directivas DLP, con las ubicaciones y reglas con condiciones y acciones, que su organización necesita para proteger los clientes y otros tipos de datos privados y se ajusten a normativas regionales y del sector y requisitos.
 
-El personal de cumplimiento y seguridad de datos usa el panel de seguridad y cumplimiento de Office 365 para supervisar incidentes de DLP.
+El personal de cumplimiento y seguridad de datos usa el panel de seguridad y cumplimiento para supervisar incidentes de DLP.
 
 Si es necesario, el [Paso 5](../infoprotect-data-loss-prevention.md) puede resultarle útil para cumplir este requisito. 
 

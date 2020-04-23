@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225913"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633435"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -27,7 +27,7 @@ ms.locfileid: "43225913"
 
 Cada vez más, las empresas subcontratan funciones básicas como el almacenamiento de datos y el acceso a las aplicaciones de proveedores de servicios en la nube (CSP) y otras organizaciones de servicio. Como respuesta, el American Institute of Certified Public Accountants (AICPA) ha desarrollado el marco de Controles para la Organización de Servicios (SOC), un estándar para controles que protege la confidencialidad y la privacidad de la información almacenada y procesada en la nube. Este marco está en sintonía con el Estándar Internacional sobre Contrataciones de Seguros (ISAE), el estándar de informes para organizaciones de servicios internacionales.
 
-Las auditorías de servicio basadas en el marco SOC se dividen en las categorías SOC 1 y SOC 2, que se aplican en el ámbito de servicios en la nube de Microsoft.
+Las auditorías de servicio basadas en el marco SOC se dividen en dos categorías: SOC 1 y SOC 2, que se aplican a servicios en ámbito en la nube de Microsoft.
 
 Las auditorías de los SOC 1, concebidas para empresas CPA que auditan declaraciones financieras, evalúan la efectividad de los controles internos del CSP que afectan a los informes financieros de un cliente mediante los servicios en la nube del proveedor. La Declaración de Estándares para Compromisos de Atestación (SSAE 18) y los Estándares Internacionales para Compromisos de Seguridad n.º 3402 (ISAE 3402) son las normas con las que se lleva a cabo la auditoria y la base del informe de los SOC 1.
 
@@ -35,7 +35,7 @@ Una auditoría de los SOC 2 mide la efectividad de un sistema CSP basándose en 
 
 Al concluir las auditorías de los SOC 1 o SOC 2, el auditor de servicio emitirá un dictamen en un informe de los SOC 1 de Tipo 2 o los SOC 2 de Tipo 2, que describe el sistema del CSP y evalúa la veracidad de la descripción que el CSP hace de sus controles. También evalúa si los controles del CSP se diseñaron correctamente, estaban operativos en una fecha específica y funcionaban de forma eficaz a lo largo de un período de tiempo especificado.
 
-Los auditores también pueden crear un informe de los SOC 3 (una versión abreviada del informe de auditoría de los SOC 2 Tipo 2) para aquellos usuarios que quieran garantías sobre los controles del CSP pero no necesiten un informe completo de los SOC 2. Solo se puede conceder un informe de los SOC 3 si el CSP tiene un dictamen de auditoría sin reservas para los SOC 2.
+Los auditores también pueden crear un informe de los SOC 3 (una versión abreviada del informe de auditoría de los SOC 2 Tipo 2) para aquellos usuarios que quieran garantías sobre los controles del CSP pero no necesiten un informe completo de los SOC 2. Solo se puede conceder un informe de los SOC 3 si el CSP tiene un dictamen de auditoría sin reservas para los SOC 2.
 
 ## <a name="microsoft-and-soc-1-2-and-3-reports"></a>Microsoft y los informes de SOC 1, 2 y 3
 
@@ -99,7 +99,7 @@ Los servicios de nube de Microsoft se auditan al menos anualmente para certifica
 - [Informe SOC 2 SSAE 18 de Office 365 Core](https://aka.ms/o365SOC-2)
 - [Informe SOC 3 SSAE 18 de Office 365 Core](https://aka.ms/o365SOC-3)
 - [Office 365 Microservices T1: tipo SOC2 SSAE 18 I Informe](https://aka.ms/o365-MS-SOC-2-type1)
-- [Informe de auditoría de Office 365 de Caja de seguridad del cliente SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Informe de auditoría de Caja de seguridad del cliente SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Informe de auditoría SOC 2 AT 101 Tipo 1 de Yammer](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Informe SOC 2 de tipo II de Yammer](https://aka.ms/yammerSOC-2)
 - [Ver cartas puente (cartas de confianza entre periodos no cubiertos por el SOC y el fin del año fiscal) y otros informes de auditoría](https://aka.ms/auditreports)
@@ -115,7 +115,7 @@ Con los informes, sus auditores pueden comparar los resultados de los servicios 
 
 **¿Con qué frecuencia se publican los informes de los SOC para Azure?**
 
-Los informes de SOC para Azure, la seguridad de aplicaciones en la nube, el flujo, Graph, Intune, Power BI, PowerApps, Stream y centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas puente se emiten cada trimestre, normalmente en la primera semana de cada mes posterior al final del trimestre. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
+Los informes de SOC para Azure, la seguridad de aplicaciones en la nube, el flujo, Graph, Intune, Power BI, PowerApps, Stream y centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas de puente se emiten en enero para cubrir el período de 10/1 – 12/31 y de julio para cubrir el período de 4/1 – 6/30. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
 
 **¿Necesito llevar a cabo mi propia auditoria de centros de datos de Microsoft?**
 

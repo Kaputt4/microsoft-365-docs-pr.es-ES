@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumen: configure y pruebe el restablecimiento de contraseña para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633178"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632892"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
@@ -33,9 +33,9 @@ El restablecimiento de contraseña de autoservicio (SSPR) de Azure Active Direct
 
 En este artículo se describe cómo configurar y probar los restablecimientos de contraseña en su entorno de prueba de Microsoft 365 en tres fases:
 
-1.  Crear el entorno de pruebas de Microsoft 365 Enterprise.
+1.    Crear el entorno de pruebas de Microsoft 365 Enterprise.
 2.  Habilitar escritura diferida de contraseñas.
-3.  Configure y pruebe el restablecimiento de contraseña para la cuenta de usuario 3.
+3.    Configure y pruebe el restablecimiento de contraseña para la cuenta de usuario 3.
     
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Esta configuración se compone de:
   
 - Suscripciones de prueba o de pago de Microsoft 365 E5 u Office 365 E5.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. 
-- Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de TESTLAB de Active Directory Domain Services (AD DS) con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365 u Office 365.
+- Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de TESTLAB de Active Directory Domain Services (AD DS) con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback"></a>Fase 2: habilitar escritura diferida de contraseñas
 

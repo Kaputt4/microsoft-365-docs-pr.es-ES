@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088119"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631994"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -66,7 +66,7 @@ Primero, cree dos grupos para una organización típica en Azure Portal.
 
 6. Repita los pasos 3-5 para crear un nuevo grupo llamado **Personal de marketing**.
 
-Después, configure la asignación automática de licencias para que se asignen licencias de forma automática a los miembros de los grupos para las suscripciones de Office 365 y EMS.
+Después, configure la asignación automática de licencias para que se asignen licencias de forma automática a los miembros de los grupos para las suscripciones de Microsoft 365 y EMS.
 
 1. En Azure Portal, haga clic en **Azure Active Directory > Licencias > Todos los productos**.
 
@@ -125,7 +125,7 @@ Después, siga estos pasos para comprobar que la asignación de licencias basada
 
 4. En el panel que muestra las propiedades de la cuenta de usuario **CEO**, compruebe que dicha cuenta tiene asignada la licencia **Microsoft 365 Enterprise E5** (en **Licencias de productos**).
 
-## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: Crear etiquetas de retención de Office 365
+## <a name="phase-3-create-retention-labels"></a>Fase 3: Crear etiquetas de retención
 
 En esta fase crea las etiquetas de retención de los documentos en los sitios de grupo de SharePoint.
 

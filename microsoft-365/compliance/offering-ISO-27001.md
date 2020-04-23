@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5bb3820222258a5b0b4b28c7476541b5d338f4b6
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 19f9e5dc72231093b279d39b8bf38f5cea0a9c18
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222102"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583547"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 Information Security Management Standards (Estándares de administración de seguridad de la información ISO/IEC 27001:2013)
 
@@ -56,7 +56,7 @@ Obtenga más información acerca de las ventajas de la norma ISO-Iec-27001 en la
 - [Servicios profesionales de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Stream
 - Azure DevOps Services
-- ATP de Windows Defender: Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad
+- ATP de Microsoft Defender: detección y respuesta de puntos de conexión, investigación automática y corrección, puntuación de seguridad
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
@@ -84,9 +84,9 @@ Ciclo de auditoría: los servicios de nube de Microsoft se auditan al menos anua
 
 - [Servicios profesionales de Microsoft](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="windows-defender-atp"></a>ATP de Windows Defender
+### <a name="microsoft-defender-atp"></a>ATP de Microsoft Defender
 
-- [ATP de Windows Defender: certificado de ISO 27001 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001certificate)
+- [ATP de Microsoft Defender: certificado de ISO 27001 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001certificate)
 
 ## <a name="assessments-and-reports"></a>Evaluaciones e informes
 
@@ -110,10 +110,10 @@ Ciclo de auditoría: los servicios de nube de Microsoft se auditan al menos anua
 
 - [Certificado de ISO 27001 de Azure DevOps Services IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
 
-### <a name="windows-defender-atp"></a>ATP de Windows Defender
+### <a name="microsoft-defender-atp"></a>ATP de Microsoft Defender
 
-- [ATP de Windows Defender: informe de evaluación de auditoría de ISO 27001 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [ATP de Windows Defender: SOA de ISO 27001 y 27018 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001SOA)
+- [ATP de Microsoft Defender: informe de evaluación de auditoría de ISO 27001 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001auditreport)
+- [ATP de Microsoft Defender: SOA de ISO 27001 y 27018 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [Ver informes de auditoría adicionales](https://aka.ms/auditreports)
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634890"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
@@ -700,7 +700,7 @@ El Administrador de cumplimiento se diseñó para actualizarlo de forma periódi
     
 - Un cambio **menor** es un cambio insignificante en las acciones de cliente, como corregir un error de escritura o problemas de formato, o bien actualizar o corregir hipervínculos. En el caso de los cambios menores, no suele ser necesario volver a evaluar el control, pero le recomendamos que actualice la acción de cliente.
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Controles administrados por el cliente de Office 365: Registro de cambios de julio de 2018
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>Controles administrados por el cliente: Registro de cambios de julio de 2018
 
 |**Id. de control**|**Evaluación**|**Tipo de cambio**|**Descripción del cambio**|**Acciones recomendadas para clientes**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ El Administrador de cumplimiento se diseñó para actualizarlo de forma periódi
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Mayor|Se agregó el control de HITECH a la evaluación de HIPAA para Office 365.|Se revisaron el control agregado y las acciones de cliente recomendadas.<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Controles administrados por el cliente de Office 365: Registro de cambios de abril de 2018
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>Controles administrados por el cliente: Registro de cambios de abril de 2018
 
 |**RGPD**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Tipo de cambio**|**Descripción del cambio**|**Acciones recomendadas para clientes**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

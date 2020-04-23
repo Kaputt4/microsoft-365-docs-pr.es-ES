@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Cree y configure equipos con Microsoft Teams en distintos niveles de protección de archivos.
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083359"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637645"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Implementación de equipos con tres niveles de protección de archivos
 
@@ -32,7 +32,7 @@ Siga los pasos de este artículo para diseñar e implementar equipos de línea b
 
 ## <a name="baseline-teams"></a>Equipos de línea base
 
-La protección de línea base incluye equipos tanto públicos como privados. Los equipos públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los equipos privados son aquellos que solo los miembros del grupo de Office 365 asociado al equipo en cuestión pueden detectar y acceder a ellos. Ambos tipos de equipos permiten a los miembros compartir el sitio con otros usuarios.
+La protección de línea base incluye equipos tanto públicos como privados. Los equipos públicos son aquellos visibles y accesibles por cualquier persona de la organización. Los equipos privados son aquellos que solo los miembros del grupo de Microsoft 365 asociado al equipo en cuestión pueden detectar y acceder a ellos. Ambos tipos de equipos permiten a los miembros compartir el sitio con otros usuarios.
 
 ### <a name="public"></a>Público
 

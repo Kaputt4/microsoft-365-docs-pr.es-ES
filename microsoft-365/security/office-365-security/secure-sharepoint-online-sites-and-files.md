@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: aa6739caa3d3bce97750f0af1faa7e040f84ab7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082309"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637845"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -63,9 +63,9 @@ Como se muestra:
 
 - Las directivas de [prevención de pérdida de datos](../../compliance/data-loss-prevention-policies.md) (DLP) se configuran para que las etiquetas de retención Confidencial y Extremadamente confidencial puedan advertir o prevenir a los usuarios cuando intentan enviar estos tipos de archivo fuera de la organización.
 
-- Si es necesario para su escenario, puede usar [etiquetas de confidencialidad](../../compliance/sensitivity-labels.md) para proteger archivos confidenciales con cifrado y permisos. Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en el Centro de cumplimiento de Microsoft 365 y las etiquetas se sincronizarán con el portal de Azure en caso de que decida realizar una configuración adicional o avanzada. Las etiquetas de Azure Information Protection y etiquetas de confidencialidad de Office 365 son totalmente compatibles entre sí. Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido. No todos los clientes necesitan este nivel de protección.
+- Si es necesario para su escenario, puede usar [etiquetas de confidencialidad](../../compliance/sensitivity-labels.md) para proteger archivos confidenciales con cifrado y permisos. Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en el Centro de cumplimiento de Microsoft 365 y las etiquetas se sincronizarán con el portal de Azure en caso de que decida realizar una configuración adicional o avanzada. Las etiquetas de Azure Information Protection y las etiquetas de confidencialidad son totalmente compatibles entre sí. Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido. No todos los clientes necesitan este nivel de protección.
 
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configuración de todos los inquilinos para SharePoint Online y OneDrive para la Empresa
+## <a name="organization-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configuración de toda la organización para SharePoint Online y OneDrive para la Empresa
 
 SharePoint Online y OneDrive para la Empresa incluyen opciones de configuración de todos los inquilinos que afectan a todos los sitios y usuarios. Algunas de estas opciones también se pueden ajustar en el nivel de sitio para que sea más restrictivo (pero no para que lo sea menos). En esta sección se describe la configuración de todos los inquilinos que afecta a la seguridad y la colaboración.
 
@@ -125,11 +125,11 @@ En la tabla siguiente se resume la configuración para cada uno de los sitios de
 |Controles de acceso a dispositivos en el nivel de sitio|Sin controles adicionales.|Sin controles adicionales.|Impide a los usuarios descargar archivos en dispositivos no compatibles o que no están unidos a ningún dispositivo. Esto permite solamente el acceso de explorador desde los demás dispositivos.|Impedir quela descarga de archivos en dispositivos de dominios no combinados o no compatibles.|
 |Etiquetas de retención|Interno público|Private|Confidencial|Extremadamente confidencial|
 |Directivas DLP|||Advierten a los usuarios cuando se envían archivos etiquetados como Confidenciales fuera de la organización. <br/> Para bloquear el uso compartido externo de tipos de datos confidenciales, como números de tarjeta de crédito u otros datos personales, puede configurar directivas DLP adicionales para estos tipos de datos (incluidos los tipos de datos personalizados que configure).|Impiden a los usuarios enviar archivos etiquetados como Extremadamente confidencial fuera de la organización. Permiten a los usuarios anular esto si proporcionan una justificación que incluya el nombre del usuario con el que van a compartir el archivo.|
-|Etiquetas de confidencialidad||||Use las etiquetas de confidencialidad para cifrar y conceder permisos a los archivos automáticamente. Esta protección se adhiere a los archivos y sigue protegiendo en caso de filtraciones. <br/> Office 365 no puede leer archivos cifrados con etiquetas de confidencialidad. Además, las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).|
+|Etiquetas de confidencialidad||||Use las etiquetas de confidencialidad para cifrar y conceder permisos a los archivos automáticamente. Esta protección se adhiere a los archivos y sigue protegiendo en caso de filtraciones. <br/> Microsoft 365 no puede leer archivos cifrados con etiquetas de confidencialidad. Además, las directivas DLP solo pueden trabajar con los metadatos (incluidas las etiquetas), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).|
 
 Para consultar los pasos necesarios para la implementación de los cuatro tipos diferentes de sitios de grupo de SharePoint Online en esta solución, consulte [Implementar sitios de SharePoint Online con tres niveles de protección](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md).
 
-## <a name="office-365-retention-labels"></a>Etiquetas de retención de Office 365
+##  <a name="retention-labels"></a>Etiquetas de retención
 
 Se recomienda usar etiquetas de retención para entornos con datos confidenciales y extremadamente confidenciales. Después de configurar y publicar las etiquetas de retención:
 
@@ -139,7 +139,7 @@ Se recomienda usar etiquetas de retención para entornos con datos confidenciale
 
 - Puede aplicar directivas DLP basadas en etiquetas de retención.
 
-- Permitir que las personas de la organización apliquen manualmente una etiqueta al contenido de grupos de Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive para la Empresa, SharePoint Online y Office 365. A menudo, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la directiva DLP adecuada.
+- Permitir que las personas de la organización apliquen manualmente una etiqueta al contenido de grupos de Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive para la Empresa, SharePoint Online y Microsoft 365. A menudo, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la directiva DLP adecuada.
 
 ![Configuración recomendada para sitios de SharePoint](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: Cree equipos confidenciales y extremadamente confidenciales en Microsoft Teams para archivos en un entorno de desarrollo y pruebas.'
-ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5b3f5c74ac484eb00852d5756b3269fb7c8c6a5b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082279"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637973"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Protección de equipos para archivos en un entorno de desarrollo y pruebas
 
@@ -64,9 +64,9 @@ Primero, cree dos grupos para una organización típica en Azure Portal.
       
 5. Haga clic en **Crear** y, después, cierre la hoja **Grupo**.
     
-6.  Repita los pasos 3-5 para crear un nuevo grupo llamado **Personal de marketing**.
+6.    Repita los pasos 3-5 para crear un nuevo grupo llamado **Personal de marketing**.
     
-Después, configure la asignación automática de licencias para que se asignen licencias de forma automática a los miembros de los grupos para las suscripciones de Office 365 y EMS.
+Después, configure la asignación automática de licencias para que se asignen licencias de forma automática a los miembros de los grupos para las suscripciones de Microsoft 365 y EMS.
   
 1. En Azure Portal, haga clic en **Azure Active Directory > Licencias > Todos los productos**.
     
@@ -125,7 +125,7 @@ Después, siga estos pasos para comprobar que la asignación de licencias basada
     
 4. En el panel que muestra las propiedades de la cuenta de usuario **CEO**, compruebe que dicha cuenta tiene asignada la licencia **Microsoft 365 Enterprise E5** (en **Licencias de productos**).
     
-## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: Crear etiquetas de retención de Office 365
+## <a name="phase-3-create-retention-labels"></a>Fase 3: Crear etiquetas de retención
 
 En esta fase, se crean las etiquetas de retención de los diferentes niveles de seguridad de las carpetas de documentos de sitios de SharePoint subyacentes.
 
@@ -171,18 +171,18 @@ Para crear un equipo confidencial para que los miembros del grupo de marketing p
 
 1. [Cree un equipo privado](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Campañas de marketing**.
 2. Abra el equipo **Campañas de marketing**.
-3.  En la barra de herramientas del equipo, haga clic en **Archivos**.
-4.  Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
-5.  En la barra de herramientas, haga clic en el sitio de SharePoint subyacente, en el icono de configuración y, luego, en **Permisos del sitio**.
-6.  En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
-7.  En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas, además del sitio** y, luego, haga clic en **Guardar**.
+3.    En la barra de herramientas del equipo, haga clic en **Archivos**.
+4.    Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
+5.    En la barra de herramientas, haga clic en el sitio de SharePoint subyacente, en el icono de configuración y, luego, en **Permisos del sitio**.
+6.    En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+7.    En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas, además del sitio** y, luego, haga clic en **Guardar**.
 
 Después, configure la carpeta de documentos del sitio de SharePoint subyacente de Campañas de marketing para la etiqueta Confidencial.
 
-1.  En la pestaña **Campañas de marketing: Inicio** del explorador, haga clic en **Documentos**.
-2.  Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
-3.  En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
-4.  En **Configuración-Aplicar etiqueta**, seleccione **Confidencial** y haga clic en **Guardar**. 
+1.    En la pestaña **Campañas de marketing: Inicio** del explorador, haga clic en **Documentos**.
+2.    Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
+3.    En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
+4.    En **Configuración-Aplicar etiqueta**, seleccione **Confidencial** y haga clic en **Guardar**. 
 
 Después, configure una directiva de prevención de pérdida de datos (DLP) que notifique a los usuarios cada vez que compartan un documento en un sitio de SharePoint subyacente con la etiqueta Confidencial, que incluye el sitio Campañas de marketing, fuera de la organización.
 
@@ -236,19 +236,19 @@ Para crear un equipo extremadamente confidencial para que los miembros del equip
 
 1. [Cree un equipo privado](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) llamado **Estrategia de empresa**.
 2. Abra el equipo **Estrategia de empresa**.
-3.  En la barra de herramientas del equipo, haga clic en **Archivos**.
-4.  Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
-5.  En la barra de herramientas, haga clic en el sitio de SharePoint subyacente, en el icono de configuración y, luego, en **Permisos del sitio**.
-6.  En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
-7.  En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
-8.  Desactive **Permitir solicitudes de acceso** y, después, haga clic en **Guardar**.
+3.    En la barra de herramientas del equipo, haga clic en **Archivos**.
+4.    Haga clic en los puntos suspensivos y, luego, en **Abrir en SharePoint**.
+5.    En la barra de herramientas, haga clic en el sitio de SharePoint subyacente, en el icono de configuración y, luego, en **Permisos del sitio**.
+6.    En el panel **Permisos del sitio**, en **Configuración de uso compartido**, haga clic en **Cambiar configuración de uso compartido**.
+7.    En **Permisos de uso compartido**, seleccione **Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio**.
+8.    Desactive **Permitir solicitudes de acceso** y, después, haga clic en **Guardar**.
 
 Después, configure la carpeta de documentos del sitio de SharePoint subyacente de Estrategia de empresa para la etiqueta Extremadamente confidencial.
 
-1.  En la pestaña **Estrategia de empresa: Inicio** del explorador, haga clic en **Documentos**.
-2.  Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
-3.  En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
-4.  En **Configuración-Aplicar etiqueta**, seleccione **Extremadamente confidencial** y haga clic en **Guardar**. 
+1.    En la pestaña **Estrategia de empresa: Inicio** del explorador, haga clic en **Documentos**.
+2.    Haga clic en el icono de configuración y luego en **Configuración de biblioteca**.
+3.    En **Permisos y administración**, haga clic en **Apply label to items in this library** (Aplicar la etiqueta a los elementos de esta biblioteca).
+4.    En **Configuración-Aplicar etiqueta**, seleccione **Extremadamente confidencial** y haga clic en **Guardar**. 
 
 Después, configure una directiva DLP que impida a los usuarios compartir un documento en un sitio de SharePoint subyacente con la etiqueta Extremadamente confidencial, que incluye el sitio Estrategia de empresa, fuera de la organización.
   

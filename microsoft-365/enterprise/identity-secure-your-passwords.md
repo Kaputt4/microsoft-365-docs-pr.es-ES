@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633098"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637053"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
@@ -82,7 +82,7 @@ Como control provisional, puede consultar los [criterios de salida](identity-exi
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>Personalizar la página de inicio de sesión de Office 365
+## <a name="customize-the-sign-in-page"></a>Personalización de la página de inicio de sesión
 
 *Esta sección es opcional y se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise*
 
@@ -90,7 +90,7 @@ En esta sección, ayudará a los usuarios a reconocer la página de inicio de se
 
 Con Microsoft 365 Enterprise, puede personalizar la apariencia de las páginas de inicio de sesión y del Panel de acceso de forma que incluyan información de usuario personalizada, las combinaciones de colores y el logotipo de su compañía. 
 
-Para obtener más información, vea [Agregar la personalización de marca de su empresa a la página de inicio de sesión de Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
+Para obtener más información, consulte [Agregar la personalización de marca de su empresa a la página de inicio de sesión de Microsoft 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Para obtener instrucciones de configuración, vea [Incorporación de personalización de marca de empresa a sus páginas de inicio de sesión y del Panel de acceso](https://aka.ms/aadpaddbranding).
 

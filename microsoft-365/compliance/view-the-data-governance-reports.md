@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068807"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626306"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 
-Después de crear las etiquetas, asegúrese de que se apliquen correctamente en el contenido. Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente:
+Después de crear las etiquetas, asegúrese de que se apliquen correctamente en el contenido. Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede ver rápidamente:
   
 - **Cinco etiquetas principales** Este informe muestra el recuento de las cinco etiquetas principales que se aplicaron en el contenido. Haga clic en este informe para ver una lista de todas las etiquetas que se aplicaron recientemente en el contenido. Puede ver el recuento de cada etiqueta, así como la ubicación, cómo se aplicó, sus acciones de retención, si es un registro y su tipo de disposición. 
     

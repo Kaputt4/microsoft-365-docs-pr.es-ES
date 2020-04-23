@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 50933032e47ebb6165e1e9354c1c1fc885915852
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551151"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637150"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -141,7 +141,7 @@ Para obtener más información sobre estos clasificadores, consulte [Introducci�
 
 Durante el período de versión preliminar, las siguientes aplicaciones son compatibles con clasificadores para las etiquetas de confidencial:
 
-- Las aplicaciones de escritorio de Office 365 ProPlus para Windows, de [Office Insider](https://office.com/insider):
+- Aplicaciones para Windows de Aplicaciones de Microsoft 365 para empresas, de [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -152,7 +152,7 @@ Durante el período de versión preliminar, las siguientes aplicaciones son comp
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Recomendar que el usuario aplique una etiqueta de confidencialidad en las aplicaciones de Office
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recomendación para que el usuario aplique una etiqueta de confidencialidad
 
 Si lo prefiere, puede recomendar a los usuarios que apliquen la etiqueta. Con esta opción, los usuarios pueden aceptar la clasificación y cualquier protección asociada, o descartar la recomendación si la etiqueta no es adecuada para su contenido.
 
@@ -162,7 +162,7 @@ Este es un ejemplo de un mensaje de un cliente de etiquetado unificado de Azure 
 
 ![Mensaje para aplicar una etiqueta recomendada](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Cuándo se aplican etiquetas automáticas o recomendadas en las aplicaciones de Office
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>Cuándo se aplican etiquetas automáticas o recomendadas
 
 La implementación de etiquetado automático y recomendado en las aplicaciones de Office depende de si está usando el etiquetado que está integrado en Office o el cliente de etiquetado unificado de Azure Information Protection. Sin embargo, en ambos casos:
 
@@ -192,7 +192,7 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Requisitos previos para las directivas de etiquetado automático
 
-- Se debe activar la auditoría de Office 365 en el modo de simulación. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
+- Se debe activar la auditoría de Microsoft 365 en el modo de simulación. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
     - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -292,5 +292,4 @@ También puede ver los resultados de la directiva de etiquetado automático con 
 
 > [!TIP]
 > También puede usar el explorador de contenido para identificar ubicaciones que tienen documentos sin etiquetar y contienen información confidencial. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
-
 

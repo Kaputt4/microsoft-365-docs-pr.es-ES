@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Obtenga soporte técnico y de facturación llamando a los números de teléfono para su zona o región, enviando una solicitud de servicio en línea o visitando una tienda de Microsoft.
+description: Obtenga soporte técnico y de facturación llamando a los números de teléfono para su país o región, enviando una solicitud de servicio en línea o visitando una tienda de Microsoft.
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627083"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707552"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contactar con soporte técnico para productos empresariales: ayuda para administradores
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[Soporte técnico en línea](#tab/online)
 
@@ -52,7 +51,9 @@ Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a enco
 
 ## <a name="phone-support"></a>[Soporte técnico por teléfono ](#tab/phone)
 
-Se proporciona soporte de facturación en inglés de 9:00 a 17:00 (9:00 a 18:00 en Australia), de lunes a viernes.  <br/>Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana. <br/> Administradores, tengan los datos de su cuenta preparados cuando llamen.<br/>
+Se proporciona soporte de facturación en inglés de 9:00 a 17:00 (9:00 a 18:00 en Australia), de lunes a viernes.\
+Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.\
+Administradores, tengan los datos de su cuenta preparados cuando llamen.\
 
 - **En los Estados Unidos, llame al 1 800 865 9408.**
 

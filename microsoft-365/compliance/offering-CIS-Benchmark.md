@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfb71a88f836fc68967398e3f27bebd11854c1de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602637"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627072"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Indicadores del Centro de seguridad de internet (CSI)
 
 ## <a name="about-cis-benchmarks"></a>Acerca de los indicadores de CSI
 
-El [Centro para la seguridad de internet](https://www.cisecurity.org/) es una entidad sin fines de lucro cuya misión es "identificar, desarrollar, validar, promover y mantener soluciones de mejores prácticas para la ciberdefensa". Se basa en la experiencia de los profesionales de ciberseguridad y IT de los gobiernos, las empresas y el mundo académico de todo el mundo. Para desarrollar estándares y mejores prácticas, incluyendo puntos de referencia, controles e imágenes endurecidas de la CSI, siguen un modelo de toma de decisiones consensuado.  
+El [Centro para la seguridad de Internet](https://www.cisecurity.org/) es una entidad sin ánimo de lucro cuya misión es "identificar, desarrollar, validar, promover y mantener soluciones de prácticas recomendadas para la ciberdefensa". Se basa en la experiencia de los profesionales de ciberseguridad y IT de los gobiernos, las empresas y el mundo académico de todo el mundo. Para desarrollar estándares y mejores prácticas, incluyendo puntos de referencia, controles e imágenes endurecidas de la CSI, siguen un modelo de toma de decisiones consensuado.  
   
 [Los indicadores de CSI](https://www.cisecurity.org/cis-benchmarks/) son líneas de base de configuración y mejores prácticas para la configuración segura de un sistema. Cada una de las recomendaciones de la guía hace referencia a uno o más [controles CSI](https://www.cisecurity.org/controls/), que fueron desarrollados para ayudar a las organizaciones a mejorar sus capacidades de ciberdefensa. Los controles CSI se ajustan a muchas normas y marcos normativos establecidos, incluidos el NIST Cybersecurity Framework (CSF) y NIST SP 800-53, la serie de normas ISO 27000, PCI DSS, HIPAA y otros.  
   
@@ -46,9 +46,9 @@ Los puntos de referencia CSI son reconocidos internacionalmente como estándares
   
 Como todos los indicadores de CSI, los indicadores de Microsoft se crearon mediante un proceso de revisión por consenso basado en las aportaciones de expertos en la materia con diversos antecedentes que abarcan el desarrollo de software, la auditoría y el cumplimiento, la investigación sobre seguridad, operaciones, gobierno y legislación. Microsoft fue un socio integral en estos esfuerzos de CSI. Por ejemplo, Office 365 fue probado contra los servicios listados, y el resultante Microsoft 365 Foundations Benchmark cubre un amplio rango de recomendaciones para establecer políticas de seguridad apropiadas que cubren cuentas y autenticación, administración de datos, permisos de aplicaciones, almacenamiento y otras áreas de políticas de seguridad.  
   
-Además de los puntos de referencia para los productos y servicios de Microsoft, CSI también ha publicado [imágenes protegidas de CSI para su uso en máquinas virtuales Azure](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)configuradas para cumplir con los indicadores de CSI. Estos incluyen el protector de imágenes CSI de Microsoft Windows Server 2016 certificado para funcionar en Azure. CSI declara que, "Todas las imágenes protegidas CSI que están disponibles en el [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) están certificadas para funcionar en Azure. Han sido sometidos a pruebas previas de preparación y compatibilidad con la nube pública Azure, la plataforma de la nube de Microsoft alojada por proveedores de servicios a través de la red Cloud OS Network y las implementaciones de Windows Server Hyper-V en nube privada local gestionadas por los clientes".
+Además de los puntos de referencia para los productos y servicios de Microsoft, CSI también ha publicado [imágenes protegidas de CSI para su uso en máquinas virtuales Azure](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)configuradas para cumplir con los indicadores de CSI. Estos incluyen el protector de imágenes CSI de Microsoft Windows Server 2016 certificado para funcionar en Azure. CIS declara que "todas las imágenes protegidas de CIS que están disponibles en el [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) están certificadas para funcionar en Azure. Se han sometido a pruebas previas de preparación y compatibilidad con la nube pública de Azure, la plataforma en la nube de Microsoft alojada por proveedores de servicios a través de la red Cloud OS y las implementaciones de Windows Server Hyper-V en nube privada local gestionadas por los clientes".
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - [Office y Microsoft 365](https://aka.ms/o365-compliance-framework)
@@ -68,7 +68,7 @@ Obtenga una [lista completa de indicadores de CSI](https://www.cisecurity.org/ci
 ## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Indicadores CSI para Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf): Obtenga una guía prescriptiva para establecer una configuración de línea de base segura para Azure.  
-- [Plan de desarrollo de seguridad de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Minimice el potencial de una violación de datos o de una cuenta comprometida siguiendo este plan de desarrollo.
+- [Plan de desarrollo de seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): Minimice el potencial de una vulneración de datos o de una cuenta comprometida siguiendo este plan de desarrollo.
 - [Líneas de base de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines): Siga estas directrices para el uso eficaz de las líneas de base de seguridad en su organización.
 - [Guía complementaria de la nube de controles CSI](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/): Obtenga orientación sobre la aplicación de las mejores prácticas de seguridad en los entornos de nube de Controles CSI Versión 7.
 
@@ -80,11 +80,11 @@ Los indicadores CSI establecen el nivel básico de seguridad para cualquiera que
 
 **¿Con qué frecuencia se actualizan los Indicadores del CSI?**
 
-El lanzamiento de los Indicadores CSI revisados cambia en función de la comunidad de profesionales de IT que los desarrollaron y del calendario de lanzamiento de la tecnología compatible con el indicador. El CSI distribuye informes mensuales que anuncian nuevos indicadores y actualizaciones de los indicadores existentes. Para recibirlos, regístrese en el [CIS Workbench](https://workbench.cisecurity.org/) (es gratuito) y compruebe la opción Recibir boletín informativo en su perfil.
+El lanzamiento de los Indicadores CSI revisados cambia en función de la comunidad de profesionales de IT que los desarrollaron y del calendario de lanzamiento de la tecnología compatible con el indicador. El CSI distribuye informes mensuales que anuncian nuevos indicadores y actualizaciones de los indicadores existentes. Para recibirlos, regístrese en el [CIS Workbench](https://workbench.cisecurity.org/) (es gratuito) y compruebe la opción Recibir boletín en su perfil.
 
 **¿Quién contribuyó al desarrollo de Indicadores de CSI de Microsoft?**
 
-El CSI señala que sus "Indicadores son desarrollados a través de los generosos esfuerzos voluntarios de expertos en la materia, vendedores de tecnología, miembros de la comunidad de indicadores CSI públicos y privados, y el Equipo de desarrollo de indicadores del CSI". Por ejemplo, encontrará una lista de colaboradores de Azure en [CIS Microsoft Azure Foundations Benchmark v1.0.0 Ahora disponible.](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+El CIS señala que sus "bancos de pruebas se desarrollan gracias a los generosos esfuerzos voluntarios de expertos en la materia, proveedores de tecnología, miembros de la comunidad de bancos de pruebas del CIS públicos y privados, y el equipo de desarrollo de pruebas del CIS". Por ejemplo, encontrará una lista de colaboradores de Azure en [CIS Microsoft Azure Foundations Benchmark v1.0.0 Ahora disponible.](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
 
 ## <a name="resources"></a>Recursos
 

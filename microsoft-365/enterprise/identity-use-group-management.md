@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Se pueden usar grupos para automatizar la administración de algunas tareas administrativas.
-ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 047d733dbd586f094612c579f2b1685562c58ed1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633498"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637041"
 ---
 # <a name="step-5-use-groups-for-management"></a>Paso 5: Usar grupos para administración
 
@@ -36,7 +36,7 @@ En esta sección, podrá identificar grupos de Azure Active Directory (Azure AD)
 Los usuarios pueden solicitar la pertenencia a un grupo de seguridad y esa solicitud va al propietario del grupo, en lugar de un administrador de TI. Esto permite delegar el control diario de la pertenencia al grupo a los propietarios del equipo, proyecto o empresa que comprenden el uso empresarial del grupo y pueden administrar su pertenencia.
 
 >[!Note]
->La administración de grupos de autoservicio está disponible solo para grupos de seguridad de Azure AD y Office 365. No está disponible para grupos habilitados por correo electrónico listas de distribución o grupos sincronizados desde su Active Directory Domain Services (AD DS) local.
+>La administración de grupos de autoservicio está disponible solo para grupos de seguridad de Azure AD y Microsoft 365. No está disponible para grupos habilitados por correo electrónico listas de distribución o grupos sincronizados desde su Active Directory Domain Services (AD DS) local.
 >
 
 Para obtener más información, consulte las [instrucciones para configurar un grupo de Azure AD para la administración de autoservicio](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).

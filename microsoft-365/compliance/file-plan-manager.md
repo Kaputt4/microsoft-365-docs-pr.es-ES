@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151465"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708445"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
@@ -37,9 +37,9 @@ Para acceder al administrador del plan de archivos en el centro de seguridad y c
 
 Para acceder al administrador del plan de archivos, debe tener uno de los siguientes roles de administrador:
     
-- Administrador de retención
-
-- Administrador de retención con permiso de vista
+    - Administrador de retención
+    
+    - Administrador de retención con permiso de vista
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etiquetas de retención predeterminadas y directiva de etiquetas
 
@@ -131,7 +131,7 @@ Cómo importar nuevas etiquetas de retención y modificar las etiquetas de reten
 
    ![Plantilla en blanco del plan de archivos abierta en Excel](../media/file-plan-blank-template.png)
 
-3. Complete la plantilla. A continuación, se describen las propiedades y los valores válidos para cada propiedad en la plantilla del plan de archivos.<br/>
+3. Complete la plantilla. A continuación, se describen las propiedades y los valores válidos para cada propiedad en la plantilla del plan de archivos. Para la importación, cada valor tiene una longitud máxima de 64 caracteres. <br/>
 
    |**Propiedad**|**Tipo**|**Valores válidos**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ Cómo importar nuevas etiquetas de retención y modificar las etiquetas de reten
    |CitationUrl|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Provision/citation**.|
    |CitationJurisdiction|Cadena|Esta propiedad especifica la jurisdicción o agencia que se muestra en el descriptor del plan de archivos**Provision/citation**. Por ejemplo, "Comisión de Bolsa y Valores de Estados Unidos (SEC)". |
    |Regulatory|Cadena|Se deja en blanco. Esta propiedad no se usa en este momento.|
-   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles. Tenga en cuenta que, si exporta etiquetas de una organización que utiliza Office 365, no podrá usar los valores de la propiedad EventType de esa organización al importar  las etiquetas a otra organización que utilice Office 365. Esto sucede porque los valores de EventType son únicos para cada organización. |
+   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles. Tenga en cuenta que, si exporta etiquetas de una organización, no podrá usar los valores de la propiedad EventType de esa organización al importar las etiquetas a otra organización. Esto sucede porque los valores de EventType son únicos para cada organización. |
    |||
 
    A continuación hay un ejemplo de una plantilla con información sobre las etiquetas de retención.

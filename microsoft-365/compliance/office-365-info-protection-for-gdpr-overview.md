@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información general sobre la protección de la información de Office 365 para GDPR. Obtenga información acerca de cómo descubrir, clasificar, proteger y supervisar datos personales.
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071186"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637224"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 
@@ -103,4 +103,4 @@ Para obtener más información sobre cómo aplicar protección, consulte [Aplica
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>Paso 5: Supervisar pérdidas de datos personales
 
-Los informes de prevención de pérdida de datos de Office 365 proporcionan el mayor nivel de detalle para supervisar datos confidenciales. Puede configurar alertas automatizadas e investigar infracciones mediante el registro de auditoría de Office 365. Cloud App Security extiende la capacidad de buscar y supervisar datos confidenciales a otros proveedores de SaaS. Para obtener más información sobre estas herramientas, consulte [Supervisar infracciones de datos personales](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
+Los informes de prevención de pérdida de datos de Office 365 proporcionan el mayor nivel de detalle para supervisar datos confidenciales. Puede configurar alertas automatizadas e investigar infracciones mediante el registro de auditoría. Cloud App Security extiende la capacidad de buscar y supervisar datos confidenciales a otros proveedores de SaaS. Para obtener más información sobre estas herramientas, consulte [Supervisar infracciones de datos personales](/security/office-365-security/monitor-for-leaks-of-personal-data.md).

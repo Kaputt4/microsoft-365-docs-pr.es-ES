@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización en las cargas de trabajo de productividad de Microsoft 365 para empresas
-ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633148"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638169"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 para empresas, cargas de trabajo y escenarios
 
@@ -60,7 +60,7 @@ Vea la[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivity
 | Red | Su red se actualiza para obtener un rendimiento óptimo para los servicios en la nube de Microsoft 365. |
 | Identidad | La identidad se sincroniza y se protege mediante autenticación segura para cuentas de usuario y protección para cuentas de administrador. |
 | Windows 10 Enterprise | Los equipos que ejecuten Windows 7 o Windows 8.1 se pueden actualizar a Windows 10 Enterprise, e instalar los nuevos dispositivos con Windows 10 Enterprise. |
-| Office 365 ProPlus | Los usuarios existentes de Microsoft Office pueden actualizar a Office 365 ProPlus. |
+| Aplicaciones de Microsoft 365 para empresas | Los usuarios existentes de Microsoft Office pueden actualizar a Aplicaciones de Microsoft 365 para empresas |
 | Administración de dispositivos móviles | Se pueden inscribir y administrar los dispositivos. |
 | Protección de la información | Las características de protección de información de Microsoft 365 están configuradas y sus etiquetas de confidencialidad o de Azure Information Protection están listas para proteger documentos y el correo electrónico. |
 
@@ -69,7 +69,7 @@ Recuerde que esta es una situación ideal y la planificación, configuración, p
 Estas son algunas cargas de trabajo comunes para implementar inmediatamente: 
 
 - Después de que la fase de **identidad** de la infraestructura básica esté implementada en los usuarios, muchas organizaciones implementan:
-  - [Office 365 ProPlus](office365proplus-infrastructure.md) combinado con [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus ofrece la seguridad de la autenticación moderna y la última experiencia del usuario del cliente de Microsoft Office. La migración de archivos personales del usuario a OneDrive reduce la infraestructura y la necesidad de prestar soporte a carpetas y unidades particulares.
+  - [Aplicaciones de Microsoft 365 para empresas](office365proplus-infrastructure.md) en combinación con [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Aplicaciones de Microsoft 365 para empresas ofrece la seguridad de la autenticación moderna y la experiencia del usuario del último cliente de Microsoft Office. La migración de archivos personales del usuario a OneDrive reduce la infraestructura y la necesidad de prestar soporte a carpetas y unidades particulares.
   - [Exchange Online](exchangeonline-workload.md) para que los usuarios puedan empezar a usar el correo electrónico en la nube.
 - Si no tiene necesidad inmediata de almacenar en la nube activos digitales altamente regulados, implemente [Microsoft Teams](teams-workload.md) y [SharePoint](sharepoint-online-onedrive-workload.md) para los usuarios antes de la fase de **protección de la información**.
 

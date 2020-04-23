@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre la necesidad de ancho de banda de Internet que tienen los servicios en la nube de Microsoft 365 Enterprise.
-ms.openlocfilehash: 2f20542609c757c4fbccd2f9b0e4af59d9bc7566
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a2b5be462747ff269b82304249d46f32837ae2e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066534"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631458"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>Paso 1: Preparar la red para Microsoft 365
 
@@ -31,10 +31,10 @@ ms.locfileid: "42066534"
 En el paso 1, realice lo siguiente:
 
 - Evalúe y ajuste el ancho de banda de red para los vínculos internos y las conexiones a Internet con el fin de tener en cuenta el tráfico a los servicios de nube de Microsoft 365 Enterprise.
-- Alinee la red con una [arquitectura de referencia de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Alinee la red con una [arquitectura de referencia de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Planee los cambios, cree programas piloto y pruebe si se ajustan a los requisitos de ancho de banda y de latencia de tráfico.
 
-Para obtener información y recomendaciones acerca del uso de ExpressRoute con Office 365 y otros servicios de nube de Microsoft 365 Enterprise, vea [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute) (Azure ExpressRoute para Office 365).
+Para obtener información y recomendaciones acerca del uso de ExpressRoute con Microsoft 365 y otros servicios de nube de Microsoft 365 Enterprise, vea [Azure ExpressRoute for Microsoft 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute) (Azure ExpressRoute para Microsoft 365).
 
 Como control provisional, puede consultar los [criterios de salida](networking-exit-criteria.md#crit-networking-step1) correspondientes a este paso.
 

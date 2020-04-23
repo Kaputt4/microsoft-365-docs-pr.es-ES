@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106128"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626426"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Si su organización necesita cumplir con normas reglamentarias para la conservación de datos, el Centro de seguridad y cumplimiento de Office 365 proporciona características para administrar el ciclo de vida de sus datos en Exchange Online. Entre estas características, se incluye la capacidad de conservar, auditar, buscar y exportar sus datos. Estas funciones son suficientes para satisfacer las necesidades de la mayoría de las organizaciones.
+Si su organización necesita cumplir con normas reglamentarias para la conservación de datos, el Centro de seguridad y cumplimiento proporciona características para administrar el ciclo de vida de sus datos en Exchange Online. Entre estas funciones, se incluye la capacidad de conservar, auditar, buscar y exportar sus datos. Estas funciones son suficientes para satisfacer las necesidades de la mayoría de las organizaciones.
 
 Pero algunas organizaciones de sectores con reglamentos estrictos están sujetas a requisitos reglamentarios con mayores limitaciones. Por ejemplo, las entidades financieras (como bancos y corredores de bolsa) están sujetas a la norma 17a-4 emitida por la Comisión de bolsas de valores (SEC). La norma 17a-4 tiene requisitos especiales para el almacenamiento de datos electrónicos, incluidos varios aspectos de la administración de registros, como la duración, el formato, la calidad, la disponibilidad y la responsabilidad de la retención de registros.
 
@@ -42,7 +42,7 @@ Puede [descargar la evaluación de Cohasset aquí](https://servicetrust.microsof
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>Esta evaluación es específica para Exchange Online.
 
-Tenga en cuenta que esta evaluación es específica para Exchange Online. En la evaluación, no se incluyen otros servicios de Office 365, como SharePoint Online o OneDrive para la Empresa, aunque estamos planeando admitir esos servicios en relación con la norma SEC 17a-4 en el futuro.
+Tenga en cuenta que esta evaluación es específica para Exchange Online. En la evaluación, no se incluyen otros servicios de Microsoft 365, como SharePoint Online o OneDrive para la Empresa, aunque estamos planeando admitir esos servicios en relación con la norma SEC 17a-4 en el futuro.
 
 Es importante comprender que Skype Empresarial y Teams también almacenan datos en Exchange Online. Por lo tanto, se evalúan mensajes de Skype Empresarial y mensajes de chat y de canal de Teams.
 
@@ -75,4 +75,4 @@ Actualmente existen algunas limitaciones para Exchange Online:
 - Los “me gusta” no se conservan para los mensajes de canal y de chat de Teams.
 
 > [!NOTE]
-> La auditoría de nivel de elemento no está disponible en los buzones de grupo de Office 365. Para más información, vea [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
+> La auditoría de nivel de elemento ya está disponible en los buzones de grupo de Microsoft 365. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
