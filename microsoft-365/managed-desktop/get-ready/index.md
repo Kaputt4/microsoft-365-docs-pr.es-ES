@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595596"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790616"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Prepararse para la inscripción en el Escritorio administrado de Microsoft
 
@@ -21,5 +21,6 @@ En estos temas se describen los pasos necesarios para llevar a cabo la inscripci
 - [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](network.md)
 - [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
 - [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+- [Preparar recursos de impresión para el escritorio administrado por Microsoft](printing.md)
 - [Aplicaciones en el escritorio administrado de Microsoft](apps.md)
 

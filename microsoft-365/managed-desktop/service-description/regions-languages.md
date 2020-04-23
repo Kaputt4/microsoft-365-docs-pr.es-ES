@@ -6,26 +6,43 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37422537"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790698"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regiones e idiomas admitidos por Microsoft Managed Desktop
 
-En este tema se proporcionan detalles sobre las regiones y los idiomas admitidos por el escritorio administrado por Microsoft. 
+En este artículo se proporciona información detallada sobre las regiones y los idiomas admitidos por el escritorio administrado por Microsoft y las regiones en las que puede usarlo.
 
-- **Regiones:** Estados Unidos, Canadá (excepto Quebec), Reino Unido, Bélgica, Luxemburgo, Países Bajos, Australia y Nueva Zelanda
-- **Idiomas:** El inglés es el único idioma admitido disponible actualmente para los usuarios en los dispositivos administrados. Esto es aplicable tanto a las opciones de soporte técnico del [Administrador](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) como al [soporte técnico para el usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
+## <a name="supported-languages"></a>Idiomas admitidos
 
-Sin embargo, los clientes pueden seguir usando dispositivos administrados fuera de las regiones enumeradas anteriormente sin interrumpir el servicio de escritorio administrado por Microsoft. Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica.
+El inglés es el único idioma disponible para los usuarios del escritorio administrado por Microsoft. Esto incluye todas las interfaces de usuario tanto para los usuarios finales como para los administradores y para todas las interacciones con el [soporte de administradores](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) y [el soporte de usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+
+
+Todavía puede usar dispositivos administrados fuera de las regiones en inglés sin una interrupción en el servicio de escritorio administrado por Microsoft. Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica. 
 
 Para obtener más información acerca del soporte técnico del usuario con el escritorio administrado de Microsoft, consulte [soporte técnico para Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
 
-Si un usuario prefiere trabajar en un idioma que no sea el inglés, puede solicitar que su administrador de ti local implemente de forma centralizada paquetes de idioma adicionales en los dispositivos administrados a través de la aplicación portal de empresa de Intune. A partir de Windows 10, versión 1803, los paquetes de idioma se entregan como paquetes appx desde Microsoft Store. Para obtener más información, vea [aplicaciones de Microsoft Store para empresas](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).
+## <a name="availability-of-the-service"></a>Disponibilidad del servicio
 
+Las organizaciones de los siguientes países pueden suscribirse al escritorio administrado por Microsoft:
 
->[!NOTE]
->La aplicación de GetHelp en un dispositivo de escritorio administrado por Microsoft solo admite el inglés. Para que los usuarios obtengan ayuda con el escritorio administrado de Microsoft a través de la aplicación GetHelp, deben cambiar el idioma para mostrar a Inglés.
+- Estados Unidos
+- Canadá (excepto Quebec)
+- Reino Unido
+- Irlanda
+- Bélgica
+- Luxemburgo
+- Países Bajos
+- Suecia
+- Finlandia
+- Noruega
+- Dinamarca
+- Islandia
+- Australia
+- Nueva Zelanda
+
+Los usuarios finales y los administradores de estas regiones deben usar el inglés para sus dispositivos y herramientas de administración. 
