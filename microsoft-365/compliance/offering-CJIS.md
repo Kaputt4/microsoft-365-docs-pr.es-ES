@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
+ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583327"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772521"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Directiva de seguridad de los servicios de información de Justicia Penal (CJIS)
 
@@ -43,7 +43,7 @@ Obtenga información sobre las ventajas de la Directiva de seguridad de CJIS en 
 
 Obtenga información sobre cómo acelerar la Directiva de seguridad de CJIS con nuestro proyecto de Azure Security and Compliance: [descargar las instrucciones de implementación de CJIS para Microsoft Government Cloud Services](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -82,7 +82,6 @@ La [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy) cubre l
 
 - [Servicios de información de justicia penal](https://aka.ms/cjis)
 - [Directiva de seguridad de CJIS](https://aka.ms/cjis-security-policy)
-- [CJIS de la Directiva de seguridad de la versión 5,3](https://aka.ms/cjis-backgrounder)
 - [Directrices de implementación de CJIS para el gobierno de Azure](https://aka.ms/cjisimplementationguidelines)
 - [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/?linkid=2087246)

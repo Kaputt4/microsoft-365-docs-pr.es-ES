@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión y problemas conocidos de la puntuación de cumplimiento de Microsoft (versión preliminar), una característica del centro de cumplimiento de M365 que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141555"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790595"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notas de la versión de calificación de cumplimiento de Microsoft (versión preliminar)
 
@@ -62,7 +62,7 @@ Muchas de las funciones que se administran en el administrador de cumplimiento s
    - Los usuarios deben ir al administrador de cumplimiento para crear nuevas plantillas y modificar [las plantillas](working-with-compliance-manager.md#templates)existentes. 
    - Al crear una plantilla, debe incluir las dimensiones del **producto** y la **certificación** para asegurarse de que la plantilla se muestra en la puntuación de cumplimiento.
  - **Establecer permisos**: puntuación de cumplimiento los usuarios que ya no tenían permisos en el administrador de cumplimiento necesitan sus permisos establecidos en el centro de cumplimiento de Microsoft 365 (más[información](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
-- **Transferencia de datos**: las organizaciones con datos en el administrador de cumplimiento de normas verán los datos en la puntuación de cumplimiento y lo mismo sucederá de la misma manera.
+- **Transferencia de datos**: las organizaciones con datos en el administrador de cumplimiento verán que los datos en la puntuación de cumplimiento y lo mismo se aplican de la misma manera.
 - **Iniciar sesión en el administrador de cumplimiento desde la puntuación de cumplimiento**: Si un usuario ha iniciado sesión en puntuación de cumplimiento y selecciona un vínculo para ir al administrador de cumplimiento, el usuario no tendrá que volver a iniciar sesión. Después de hacer clic en el vínculo, se abre una nueva pestaña en el explorador que incluye un cuadro de diálogo. En la sección superior con el encabezado, "¿ya es un cliente de Microsoft Cloud Services? Inicie sesión en su cuenta, "Seleccione el botón **iniciar** sesión para iniciar sesión automáticamente en el administrador de cumplimiento.
 
 ## <a name="known-issues-in-compliance-score-preview"></a>Problemas conocidos en la puntuación de cumplimiento (versión preliminar)

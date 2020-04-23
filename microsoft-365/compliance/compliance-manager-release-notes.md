@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637540"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790573"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Notas de la versión de Microsoft Compliance Manager (versión preliminar)
 
@@ -62,6 +62,10 @@ El administrador de cumplimiento ahora está disponible en los siguientes idioma
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemas conocidos en el administrador de cumplimiento (versión preliminar)
 
 En la siguiente sección se tratan los problemas conocidos en la versión actual del administrador de cumplimiento.
+
+### <a name="dimension-values"></a>Valores de dimensión
+
+Como resultado de la migración de datos durante la versión de abril de 2020, es posible que algunas organizaciones vean un **producto** o un valor de **certificación** de "personalizado" en sus evaluaciones y plantillas. Este valor se insertó automáticamente si los campos **producto** o **certificación** estaban en blanco, y no hay ningún efecto en los flujos de trabajo de datos.
 
 ### <a name="compliance-score"></a>Puntuación de cumplimiento 
 

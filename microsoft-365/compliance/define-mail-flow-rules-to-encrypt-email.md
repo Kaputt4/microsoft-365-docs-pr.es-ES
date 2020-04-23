@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632985"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790709"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -93,6 +93,28 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 7. En la **siguiente** lista, quite las acciones asignadas para **modificar la seguridad** \> de los mensajes, **aplique la versión anterior de OME**.
 
 8. Elija **Guardar**.
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>Crear reglas de flujo de correo para quitar el cifrado de los mensajes de correo electrónico salientes con las nuevas capacidades de OME
+
+Puede definir reglas de flujo de correo para desencadenar la eliminación de cifrado de mensajes con las nuevas capacidades de OME mediante el EAC.
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>Usar el EAC para crear una regla para quitar el cifrado de los mensajes de correo electrónico con las nuevas capacidades de OME
+
+1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Elija el icono **Administración** .
+
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
+
+4. En el EAC, vaya a **Mail flow** \> **reglas** de flujo de correo **New** ![y seleccione nuevo](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. En **nombre**, escriba un nombre para la regla, como quitar el cifrado del correo saliente.
+
+6. En **aplicar esta regla si** selecciona las condiciones en las que se debe quitar el cifrado de los mensajes, agregar **el remitente se encuentra** \> **dentro de la organización**. Ahora, agregue condiciones adicionales para dirigirse a destinatarios específicos, como **el destinatario está ubicado** \> **fuera de la organización**.
+
+7. En **hacer lo siguiente**, seleccione **modificar la seguridad** \> de los mensajes, **quitar el cifrado de mensajes de Office 365 y la protección de derechos**.
+
+8. Seleccione **Guardar**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo para el cifrado de mensajes de Office 365 sin las nuevas funciones
 

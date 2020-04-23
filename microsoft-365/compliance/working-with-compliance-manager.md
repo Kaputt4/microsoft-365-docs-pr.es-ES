@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo. Úsela para realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626236"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790667"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -35,7 +35,7 @@ Se puede tener acceso al administrador de cumplimiento desde el portal de confia
 2. Inicie sesión con su cuenta de servicio de Microsoft, que es la cuenta de usuario de Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> En el portal de confianza de servicios, seleccione **Administrador de cumplimiento**, que es la versión preliminar con las características más recientes. No seleccione **Administrador de cumplimiento (Classic)**, que contiene las características heredadas que no se incluyen en esta documentación.
+> En el portal de confianza de servicios, seleccione **Administrador de cumplimiento**, que es la versión preliminar con las características más recientes. No seleccione **Administrador de cumplimiento (Classic)**, que contiene las características de la versión temprana que no se incluyen en esta documentación.
 
 ## <a name="administration"></a>Administración
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo configurar los permisos necesarios para usar la herramienta de investigaciones de datos en Microsoft 365.
-ms.openlocfilehash: 855d288c373bd2525afa3b8b7a3bbd894c4683a2
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 47a7923d38cfa0ea3bad6c4c266f580f8104c429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328149"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637762"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Asignar permisos para las investigaciones de datos (versión preliminar)
 
@@ -40,4 +40,4 @@ Para asignar permisos de investigación de datos:
 5. Una vez que haya agregado todos los usuarios, haga clic en **listo** y, a continuación, haga clic en **Guardar** para guardar los cambios en el grupo de roles.
 
 > [!NOTE]
-> El rol de administración de investigación de datos que se asigna al grupo de funciones de investigador de datos proporciona los permisos necesarios para acceder a la herramienta de investigaciones de datos en el centro de cumplimiento de Office 365 o Microsoft 365. De forma predeterminada, este rol no se asigna al grupo de roles de administración de la organización, lo que significa que los administradores globales de la organización no podrán obtener acceso a la herramienta de investigaciones de datos de forma predeterminada. Para solucionar esto, puede agregar administradores globales al grupo de funciones del investigador de datos o agregar el rol de administración de investigación de datos al grupo de roles de administración de la organización. Una tercera opción sería crear un grupo de funciones personalizado y asignar el rol de administración de investigación de datos (y otras funciones) y, a continuación, agregar miembros apropiados. Para obtener más información acerca de los grupos de roles y los roles, consulte [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+> El rol de administración de investigación de datos que se asigna al grupo de funciones de investigador de datos proporciona los permisos necesarios para acceder a la herramienta de investigaciones de datos en el centro de cumplimiento de Office 365 o Microsoft 365. De forma predeterminada, este rol no se asigna al grupo de roles de administración de la organización, lo que significa que los administradores globales de la organización no podrán obtener acceso a la herramienta de investigaciones de datos de forma predeterminada. Para solucionar esto, puede agregar administradores globales al grupo de funciones del investigador de datos o agregar el rol de administración de investigación de datos al grupo de roles de administración de la organización. Una tercera opción sería crear un grupo de funciones personalizado y asignar el rol de administración de investigación de datos (y otras funciones) y, a continuación, agregar miembros apropiados. Para obtener más información acerca de los grupos de roles y los roles, consulte [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
