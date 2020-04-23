@@ -17,18 +17,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Resumen: obtenga información sobre los usos de sitios de grupo de SharePoint Online aislados.'
-ms.openlocfilehash: 5750db2206211b6bb231ea01a12d7426a1d731a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b62223b231c4b6dc0d233d899472800226503323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634115"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Sitios de grupo de SharePoint Online aislados
 
  **Resumen:** obtenga información sobre los usos de sitios de grupo de SharePoint Online aislados.
   
-Los sitios de grupo de SharePoint Online son una forma sencilla de crear rápidamente un espacio para la colaboración en notas, documentos, artículos, calendarios y otros recursos en Microsoft Office 365. Los sitios de grupo de SharePoint Online se basan en un grupo de Office 365 y tienen un modelo de administración simplificado para permitir la colaboración abierta con un conjunto privado de miembros del grupo o con toda la organización. Un sitio de grupo predeterminado de SharePoint Online permite a los miembros del grupo de Office 365 invitar a otros usuarios y controlar la configuración de los permisos.
+Los sitios de grupo de SharePoint Online son una forma sencilla de crear rápidamente un espacio para la colaboración en notas, documentos, artículos, calendarios y otros recursos en Microsoft Office 365. Los sitios de grupo de SharePoint Online se basan en un grupo de Microsoft 365 y tienen un modelo de administración simplificado para permitir la colaboración abierta con un conjunto privado de miembros del grupo o con toda la organización. Un sitio de grupo predeterminado de SharePoint Online permite a los miembros del grupo de Microsoft 365 invitar a otros usuarios y controlar la configuración de los permisos.
   
 Pero, en algunos casos, puede que quiera crear un sitio de grupo de SharePoint Online para colaborar en el que los permisos del sitio se controlen de forma más estricta con pertenencia a grupos y niveles de permisos de SharePoint Online, que solo pueden controlar los administradores de SharePoint. Esto se denomina un sitio aislado, que está aislado para el conjunto de usuarios que colaboran, visualizan sus contenidos o administran el sitio. Puede que necesite usar un sitio aislado en estos casos:
   
@@ -38,7 +38,7 @@ Pero, en algunos casos, puede que quiera crear un sitio de grupo de SharePoint O
     
 - Los recursos de una acción legal realizada por su organización o por la organización que sea objeto de esa acción legal.
     
-- Para compartir una suscripción de Office 365 entre varias organizaciones que se superpongan parcialmente, pero que, en su mayoría, existan como entidades empresariales separadas.
+- Para compartir una suscripción de Microsoft 365 entre varias organizaciones que se superpongan parcialmente, pero que, en su mayoría, existan como entidades empresariales separadas.
     
 Estos son los requisitos para un sitio aislado:
   
@@ -48,7 +48,7 @@ Estos son los requisitos para un sitio aislado:
     
 - Los usuarios que no sean miembros del sitio aislado no pueden solicitar acceso al sitio. Recibirán una página web de acceso denegado cuando intenten obtener acceso a cualquier dirección URL asociada con el sitio.
     
-La ventaja de exigir un control de acceso centralizado y permisos personalizados por los administradores de SharePoint Online es que el sitio permanecerá aislado con el paso del tiempo. Por ejemplo, los miembros actuales no pueden, ya sea de forma intencionada o por error, invitar o configurar permisos personalizados para otros usuarios de la suscripción de Office 365 que no tendrían que ser miembros del sitio.
+La ventaja de exigir un control de acceso centralizado y permisos personalizados por los administradores de SharePoint Online es que el sitio permanecerá aislado con el paso del tiempo. Por ejemplo, los miembros actuales no pueden, ya sea de forma intencionada o por error, invitar o configurar permisos personalizados para otros usuarios de la suscripción de Microsoft 365 que no tendrían que ser miembros del sitio.
   
 Un sitio aislado se puede usar con otras características, como:
   

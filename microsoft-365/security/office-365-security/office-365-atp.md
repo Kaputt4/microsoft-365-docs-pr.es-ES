@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528610"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634537"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Office 365 Hogar u Office 365 personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Office 365](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Información general
 
@@ -53,7 +53,7 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
 - El plan 2 de ATP de Office 365 está incluido en Office 365 E5, Office 365 A5 y en Microsoft 365 E5.
 
-- El plan 1 de ATP de Office 365 está incluido en Microsoft 365 Empresa.
+- El plan 1 de ATP de Office 365 está incluido en Microsoft 365 Empresa Premium.
 
 - El Plan 1 de ATP de Office 365 y el Plan 2 de ATP de Office 365 están disponibles como complementos para determinadas suscripciones. Para obtener más información, consulte [Disponibilidad de características en los planes de ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
@@ -61,7 +61,7 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
 ## <a name="configure-atp-policies"></a>Configurar directivas ATP
 
-Con ATP de Office 365, el equipo de seguridad de su organización puede configurar la protección definiendo directivas en el Centro de seguridad y cumplimiento de Office 365 (vaya a [https://protection.office.com](https://protection.office.com) > **Administración de amenazas** > **Directiva**).
+Con ATP de Office 365, el equipo de seguridad de su organización puede configurar la protección definiendo directivas en el Centro de seguridad y cumplimiento (vaya a [https://protection.office.com](https://protection.office.com) > **Administración de amenazas** > **Directiva**).
 
 > [!TIP]
 > Para ver una lista de directivas para definir rápidamente, vea [Protegerse ante amenazas](protect-against-threats.md).
@@ -112,16 +112,16 @@ Para acceder a las características de ATP en el Centro de seguridad y cumplimie
 
 |Rol o grupo de roles|Recursos para obtener más información|
 |---------|---------|
-|Administrador Global de Office 365 (esto puede ser asignado en el Azure Active Directory o en el Centro de seguridad y cumplimiento de Office 365) |[Acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrador de Seguridad (esto puede ser asignado en el Azure Active Directory o en el Centro de seguridad y cumplimiento de Office 365) |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
+|Administrador Global (puede asignarse en el Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Administrador de Seguridad (puede asignarse en Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
 |Gestión de organizaciones de Exchange Online (esto se asigna en Exchange Online)|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|Búsqueda y purga (esto se asigna sólo en el Centro de seguridad y cumplimiento de Office 365) |[Permisos del Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md|
+|Búsqueda y purga (se asigna solo en el Centro de seguridad y cumplimiento) |[Permisos del Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md|
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-office-365-atp"></a>Obtener ATP de Office 365
 
-ATP de Office 365 está incluido en determinadas suscripciones, como Microsoft 365 E5, Office 365 E5, Office 365 A5 y Microsoft 365 Empresa. Si su suscripción no incluye Office 365 ATP, puede comprar ATP Plan 1 o ATP Plan 2 como complemento para determinadas suscripciones. Para obtener más información, vea los siguientes recursos:
+ATP de Office 365 está incluido en determinadas suscripciones, como Microsoft 365 E5, Office 365 E5, Office 365 A5 y Microsoft 365 Empresa Premium. Si su suscripción no incluye Office 365 ATP, puede comprar ATP Plan 1 o ATP Plan 2 como complemento para determinadas suscripciones. Para obtener más información, vea los siguientes recursos:
 
 - [Disponibilidad de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) para obtener una lista de suscripciones que incluyen planes de ATP.
 

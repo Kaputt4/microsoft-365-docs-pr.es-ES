@@ -1,5 +1,5 @@
 ---
-title: Responder a una cuenta de correo electrónico en peligro en Office 365
+title: Responder a una cuenta de correo electrónico en peligro
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Microsoft 365
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372488"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634345"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
+# <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
-**Resumen** Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
+**Resumen** Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Microsoft 365.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>¿Qué es una cuenta de correo electrónico en peligro en Office 365?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>¿Qué es una cuenta de correo electrónico en peligro en Microsoft 365?
 
-El acceso a los buzones, los datos y otros servicios de Office 365 se controla mediante el uso de credenciales, como un nombre de usuario y contraseña o PIN. Cuando alguien que no sea el usuario roba estas credenciales, se considera que las credenciales robadas suponen un riesgo. Con ellas, el atacante puede iniciar sesión como el usuario original y realizar acciones ilícitas.
-Con las credenciales robadas, el atacante puede obtener acceso a archivos en OneDrive del usuario, las carpetas de SharePoint o el buzón de Office 365 del usuario. Una acción habitual es que el atacante envíe correos electrónicos como el usuario original a destinatarios tanto dentro como fuera de la organización. Cuando el atacante envía datos a destinatarios externos, se denomina "exfiltración" de datos.
+El acceso a los buzones, los datos y otros servicios de Microsoft 365 se controla mediante el uso de credenciales, como un nombre de usuario y contraseña o PIN. Cuando alguien que no sea el usuario roba estas credenciales, se considera que las credenciales robadas suponen un riesgo. Con ellas, el atacante puede iniciar sesión como el usuario original y realizar acciones ilícitas.
+Con las credenciales robadas, el atacante puede obtener acceso a archivos en OneDrive del usuario, las carpetas de SharePoint o el buzón de Microsoft 365 del usuario. Una acción habitual es que el atacante envíe correos electrónicos como el usuario original a destinatarios tanto dentro como fuera de la organización. Cuando el atacante envía datos a destinatarios externos, se denomina "exfiltración" de datos.
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Síntomas de una cuenta de correo electrónico en peligro de Office 365
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Síntomas de una cuenta de correo electrónico de Microsoft en peligro
 
-Los usuarios pueden observar e informar sobre actividad inusual en sus buzones de Office 365. Estos son algunos síntomas comunes:
+Los usuarios pueden observar e informar sobre actividad inusual en sus buzones de Microsoft 365. Estos son algunos síntomas comunes:
 
 - Actividad sospechosa, como correos electrónicos eliminados o que faltan.
 
@@ -58,9 +58,9 @@ Los usuarios pueden observar e informar sobre actividad inusual en sus buzones d
 
 Si un usuario informa de los síntomas anteriores, debería realizar una mayor investigación. El Centro de seguridad y cumplimiento de Microsoft 365 y el Portal de Azure ofrecen herramientas para ayudarle a investigar la actividad de una cuenta de usuario que crea que puede estar en riesgo.
 
-- **Registros de auditoría unificados de Office 365 en el Centro de seguridad y cumplimiento**: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda.
+- **Registros de auditoría unificados en el Centro de seguridad y cumplimiento**: revise todas las actividades de la cuenta sospechosa, filtre los resultados con un rango de fechas que abarque desde antes de que se produjese la actividad sospechosa hasta la fecha actual. No filtre las actividades durante la búsqueda.
 
-- **Registros de auditoría de administrador de Office 365 en el EAC**: en Exchange Online, puede usar el Centro de administración de Exchange (EAC) para buscar y ver las entradas del registro de auditoría del administrador. El registro de auditoría del administrador registra acciones específicas, según los cmdlets de PowerShell de Exchange Online, realizadas por administradores y usuarios que tienen asignados privilegios de administrador. Las entradas en el registro de auditoría del administrador proporcionan información acerca del cmdlet que se ejecutó, los parámetros que se usaron, el usuario que ejecutó el cmdlet y los objetos que se vieron afectados.
+- **Registros de auditoría de administrador en el EAC**: en Exchange Online, puede usar el Centro de administración de Exchange (EAC) para buscar y ver las entradas del registro de auditoría del administrador. El registro de auditoría del administrador registra acciones específicas, según los cmdlets de PowerShell de Exchange Online, realizadas por administradores y usuarios que tienen asignados privilegios de administrador. Las entradas en el registro de auditoría del administrador proporcionan información acerca del cmdlet que se ejecutó, los parámetros que se usaron, el usuario que ejecutó el cmdlet y los objetos que se vieron afectados.
 
 - **Registros de inicio de sesión de Azure AD y otros informes de riesgos en el portal de Azure AD**: examine los valores de estas columnas:
 
@@ -72,7 +72,7 @@ Si un usuario informa de los síntomas anteriores, debería realizar una mayor i
 
   - inicios de sesión correctos y fallidos
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Cómo proteger y restaurar la función de correo electrónico a un buzón o una cuenta de Office 365 en peligro
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Cómo proteger y restaurar la función de correo electrónico a un buzón o una cuenta de Microsoft 365 en peligro
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 > [!WARNING]
 > No envíe la nueva contraseña al usuario en cuestión por correo electrónico, ya que el atacante todavía tiene acceso al buzón en este momento.
 
-1. Siga los procedimientos para Restablecer una contraseña de otro usuario de Office 365 para la Empresa en [Administradores: restablecer contraseñas de Office 365 de la empresa](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Siga los procedimientos para Restablecer una contraseña de aplicaciones de Microsoft 365 para otro usuario en [Restablecer contraseñas de aplicaciones de Microsoft 365 Empresa](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Notas**:
 
@@ -93,7 +93,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 
 - No vuelva a usar ninguna de las últimas cinco contraseñas. Aunque el requisito de historial de contraseña le permite volver a usar una contraseña más reciente, debería seleccionar algo que el atacante no pueda adivinar.
 
-- Si la identidad local se federa con Office 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar a su administrador del ataque.
+- Si la identidad local se federa con Microsoft 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar el peligro a su administrador.
 
 > [!TIP]
 > Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede encontrar más información sobre MFA [aquí](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -178,13 +178,13 @@ Para desbloquear el envío de correo de un buzón, siga los procedimientos descr
 
 1. Asegúrese de comprobar los elementos enviados. Puede que tenga que informar a los usuarios de la lista de contactos de que su cuenta está comprometida. El atacante puede haberles pedido dinero fingiendo, por ejemplo, que estaba perdido en un país distinto y necesitaba dinero, o el atacante puede enviarles un virus para obtener acceso también a sus equipos.
 
-2. Cualquier otro servicio que use esta cuenta de Exchange como cuenta de correo electrónico alternativa puede haberse comprometido también. En primer lugar, siga estos pasos para la suscripción de Office 365 y, a continuación, siga estos pasos para otras cuentas.
+2. Cualquier otro servicio que use esta cuenta de Exchange como cuenta de correo electrónico alternativa puede haberse comprometido también. En primer lugar, siga estos pasos para la suscripción de Microsoft 365 y, a continuación, siga estos pasos para otras cuentas.
 
 3. Asegúrese de que la información de contacto, como los números de teléfono y direcciones, es correcta.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 
-Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Microsoft 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Microsoft 365.
 
 - Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 
@@ -194,7 +194,7 @@ Su suscripción a Office 365 incluye un potente conjunto de capacidades de segur
 
 ## <a name="see-also"></a>Vea también
 
-- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Centro de Quejas de Crímenes por Internet](https://www.ic3.gov/preventiontips.aspx)
 

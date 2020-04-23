@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088417"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635165"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -33,13 +33,13 @@ Existen muchas herramientas que pueden usarse para supervisar el uso y transport
 
 En la ilustración:
 
-- Comience con los informes de prevención de pérdida de datos de Office 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
+- Comience con los informes de prevención de pérdida de datos de Microsoft 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
 
-- Después, use directivas de alerta y el registro de Office 365 para supervisar la actividad de los servicios de Office 365. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría de Office 365 funciona en todos los servicios de Office 365: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo en tránsito y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
+- Después, use directivas de alerta y el registro para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo en tránsito y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
-- Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores de SaaS. Próximamente, se podrán usar los tipos de información confidencial de Office 365 y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se aplican a todas las aplicaciones específicas (como cuadro) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
+- Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores de SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se aplican a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
 
-## <a name="office-365-data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos de Office 365
+## <a name="data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos
 
 Después de crear las directivas de prevención de pérdida de datos (DLP), deberá comprobar que su funcionamiento es el deseado y que le ayudan a cumplir las normativas. Con los informes DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas DLP, reemplazos o falsos positivos; comprobar si la tendencia es ascendente o descendente a lo largo del tiempo; filtrar el informe de maneras diferentes; y ver detalles adicionales seleccionando un punto en una línea del gráfico.
 
@@ -65,17 +65,17 @@ Para obtener más información, consulte [Ver los informes de prevención de pé
 
 ![Informe que muestra coincidencias de directivas DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a>Directivas de alerta y registro de auditoría de Office 365
+## <a name="audit-log-and-alert-policies"></a>Directivas de alerta y registro de auditoría
 
-El registro de auditoría de Office 365 contiene eventos de Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Power BI, Sway y otros servicios de Office 365.
+El registro de auditoría contiene eventos de Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Power BI, Sway y otros servicios.
 
-El centro de seguridad y el centro de cumplimiento ofrecen dos formas de supervisar e informar en el registro de auditoría de Office 365:
+El centro de seguridad y el centro de cumplimiento ofrecen dos formas de supervisar e informar en el registro de auditoría:
 
 - Configurar directivas de alerta, ver alertas y supervisar tendencias: use la directiva de alerta y el panel de herramientas de alerta en el centro de seguridad o el centro de cumplimiento.
 
 - Buscar el registro de auditoría directamente: busque todos los eventos en un intervalo de fechas especificado, o puede filtrar los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
 
-Los equipos de seguridad y cumplimiento de información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios de Office 365. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contiene información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, así como proporcionar aprendizaje adicional.
+Los equipos de seguridad y cumplimiento de información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contiene información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, así como proporcionar aprendizaje adicional.
 
 Los equipos de seguridad de información también pueden buscar en el registro de auditoría para investigar las posibles infracciones de datos y determinar la causa raíz y la extensión de la infracción. Esta función integrada facilita el cumplimiento de los artículos 33 y 34 del RGPD, que requieren que se proporcionen notificaciones a la autoridad de control del RGPD y a los propietarios de los datos sujetos a una infracción en un período de tiempo determinado. Las entradas del registro de auditoría solo se conservan durante 90 días en el servicio, por lo que a menudo se recomienda, y muchas organizaciones lo requieren, que estos registros se conserven durante largos períodos de tiempo.
 
@@ -87,13 +87,13 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 - [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introducción)
 
-- [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Activar o desactivar la búsqueda de registros de auditoría](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 - [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Propiedades detalladas del registro de auditoría de Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Propiedades detalladas del registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -113,9 +113,9 @@ La segunda directiva bloquea las descargas de archivos en cualquier dispositivo 
 
 Estos tipos de atributo estarán pronto disponibles en Cloud App Security:
 
-- Tipos de información confidencial de Office 365
+- Tipos de información confidencial
 
-- Etiquetas unificadas en Office 365 y Azure Information Protection
+- Etiquetas unificadas en Microsoft 365 y Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Panel de Cloud App Security
 

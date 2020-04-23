@@ -1,5 +1,5 @@
 ---
-title: Autenticación de correo electrónico en Office 365
+title: Autenticación de correo electrónico en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Obtenga información acerca de cómo Exchange Online y Exchange Online Protection (EOP) en Office 365 usan la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
-ms.openlocfilehash: 609f1a9bf80acc266bdfc5b0089eb6006be4bd7c
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Obtenga información acerca de cómo Exchange Online y Exchange Online Protection (EOP) en Microsoft 365 usan la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
+ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529895"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637561"
 ---
-# <a name="email-authentication-in-office-365"></a>Autenticación de correo electrónico en Office 365
+# <a name="email-authentication-in-microsoft-365"></a>Autenticación de correo electrónico en Microsoft 365
 
-La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En Office 365 las organizaciones con buzones de Exchange Online y las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, EOP usa los estándares para verificar el correo electrónico entrante:
+La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En Microsoft 365 las organizaciones con buzones de Exchange Online y las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, EOP usa los estándares para verificar el correo electrónico entrante:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -55,7 +55,7 @@ Esto es un gran problema ya que, aunque las empresas pueden no ser conscientes d
 
 La autenticación de correo electrónico implícita está basada en numerosas extensiones para las directivas de autenticación de correo electrónico habituales. Entre estas extensiones se incluyen la reputación del remitente, el historial del remitente, el historial del destinatario, el análisis de comportamiento y otras técnicas avanzadas. Un mensaje enviado desde un dominio que no usa las directivas de autenticación de correo electrónico se marcará como suplantación de identidad a menos que contenga otras señales que indiquen que es legítimo.
 
-Para ver el anuncio general de Microsoft, vea [Un mar de phishing, parte 2: Protección contra la suplantación de identidad mejorada en Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+Para ver el anuncio general de Microsoft, vea [Un mar de phishing, parte 2: Protección contra la suplantación de identidad mejorada en Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
 ## <a name="composite-authentication"></a>Autenticación compuesta
 
@@ -63,9 +63,9 @@ Aunque SPF, DKIM y DMARC son útiles por sí mismos, no comunican de forma sufic
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-Estos valores se explican en [Campos del encabezado de mensaje Authentication-results usados por la autenticación de correo electrónico de Office 365](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication).
+Estos valores se explican en [Encabezado de mensaje Authentication-results](anti-spam-message-headers.md#authentication-results-message-header).
 
-Al examinar los encabezados de mensajes, los administradores o incluso los usuarios finales podrán determinar cómo Office 365 determinó que el remitente está falsificado.
+Al examinar los encabezados de mensajes, los administradores o incluso los usuarios finales podrán determinar cómo Microsoft 365 determinó que el remitente está falsificado.
 
 ## <a name="why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Por qué la autenticación de correo electrónico no siempre es suficiente para detener la suplantación de identidad
 
@@ -128,11 +128,11 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>Soluciones para remitentes legítimos que envían correo electrónico sin autenticar
 
-Office 365 realiza un seguimiento de quién está enviando correo sin autenticar en su organización. Si el servicio considera que el remitente no es legítimo, lo marcará como un error de autenticación compuesta. Para evitar esto, puede usar las recomendaciones de esta sección.
+Microsoft 365 realiza un seguimiento de quién está enviando correo sin autenticar en su organización. Si el servicio considera que el remitente no es legítimo, lo marcará como un error de autenticación compuesta. Para evitar esto, puede usar las recomendaciones de esta sección.
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>Configuración de la autenticación de correo electrónico para los dominios de su propiedad
 
-Puede usar este método para resolver la suplantación de identidad dentro de la organización y entre dominios en caso de que es propietario o interactúa con varios espacios empresariales. También le ayuda a resolver la suplantación entre dominios donde envía a otros clientes de Office 365 o servicios de terceros hospedados por otros proveedores.
+Puede usar este método para resolver la suplantación de identidad dentro de la organización y entre dominios en caso de que es propietario o interactúa con varios espacios empresariales. También le ayuda a resolver la suplantación entre dominios donde envía a otros clientes de Microsoft 365 o servicios de terceros hospedados por otros proveedores.
 
 - [Configure los registros de SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) para sus dominios.
 
@@ -152,7 +152,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 Este ejemplo significa que el correo electrónico de su infraestructura corporativa pasará la autenticación de correo electrónico, pero el correo electrónico procedente de fuentes desconocidas se revertirá a neutra.
 
-Office 365 considerará el correo electrónico entrante de su infraestructura corporativa como autenticado, pero el correo electrónico procedente de orígenes que no estén identificados podría seguir marcado como suplantación de identidad (en función de si Office 365 puede autenticarlo implícitamente). Pero, sigue siendo una mejora a que Office 365 marque todo el correo electrónico como suplantación de identidad.
+Microsoft 365 considerará el correo electrónico entrante de su infraestructura corporativa como autenticado, pero el correo electrónico procedente de orígenes que no estén identificados podría seguir marcado como suplantación de identidad (en función de si Microsoft 365 puede autenticarlo implícitamente). Pero, sigue siendo una mejora a que Microsoft 365 marque todo el correo electrónico como suplantación de identidad.
 
 Una vez que haya empezado con una directiva de reserva SPF de `?all`, puede descubrir e incluir más orígenes de correo electrónico para los mensajes de forma gradual y, después, actualizar el registro SPF con una directiva más estricta.
 
@@ -170,7 +170,7 @@ Para permitir que este remitente envíe correos electrónicos sin autenticar, ca
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Creación de una entrada de permiso para el par de remitente y destinatario
 
-Para omitir el filtrado de correo no deseado, algunas partes del filtrado de suplantación de identidad, pero no el filtrado de malware de remitentes específicos, consulte [Creación de listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
+Para omitir el filtrado de correo no deseado, algunas partes del filtrado de suplantación de identidad, pero no el filtrado de malware de remitentes específicos, consulte [Creación de listas de remitentes seguros en Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### <a name="ask-the-sender-to-configure-email-authentication-for-domains-you-dont-own"></a>Solicitar al remitente que configure de la autenticación de correo electrónico para los dominios que no son de su propiedad
 

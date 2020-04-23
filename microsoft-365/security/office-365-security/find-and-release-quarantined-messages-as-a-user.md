@@ -1,5 +1,5 @@
 ---
-title: Buscar y liberar mensajes en cuarentena como usuario de Office 365
+title: Buscar y liberar mensajes en cuarentena como usuario
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: Como usuario de Office 365, puede ver, liberar y eliminar los mensajes puestos en cuarentena (mensajes de los que es destinatario y que el filtrado de correo no deseado puso en cuarentena como correo no deseado o correo electrónico masivo). Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento.
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Como usuario de Microsoft 365, puede ver, liberar y eliminar los mensajes puestos en cuarentena (mensajes de los que es destinatario y que el filtrado de correo no deseado puso en cuarentena como correo no deseado o correo electrónico masivo). Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento.
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216909"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638111"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como usuario de Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>Buscar y liberar mensajes en cuarentena como usuario
 
-La cuarentena retiene los mensajes que pueden ser peligrosos o no deseados en las organizaciones de Office 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online. Para obtener más información, consulte [Cuarentena en Office 365](quarantine-email-messages.md).
+La cuarentena retiene los mensajes que pueden ser peligrosos o no deseados en las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online. Para obtener más información, consulte [Cuarentena en Office 365](quarantine-email-messages.md).
 
 Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de los que es destinatario y que fueron puestos en cuarentena como correo no deseado, correo electrónico masivo o (a partir de abril de 2020) de suplantación de identidad. Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento o (si el administrador ha configurado esto) en [notificaciones de correo no deseado para el usuario final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el Centro de seguridad y cumplimiento de Office 365, vaya a <https://protection.office.com> Para abrir directamente la página de Cuarentena, vaya a <https://protection.office.com/quarantine>.
+- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com>. Para abrir directamente la página de Cuarentena, vaya a <https://protection.office.com/quarantine>.
 
 - Los administradores pueden configurar cuánto tiempo se conservan los mensajes en cuarentena antes de que se eliminen de forma permanente (directivas contra correo electrónico no deseado). Los mensajes que han expirado de la cuarentena no se pueden recuperar. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
@@ -66,7 +66,7 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 
    - **Id. de mensaje**
 
-   - **Nombre de directiva**: esta propiedad muestra la directiva que hizo que el mensaje entre en cuarentena. Puede proporcionar esta información a su administrador.
+   - **Nombre de la directiva**
 
    - **Tamaño**
 
@@ -108,7 +108,7 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 
    - **Asunto**: Use el asunto completo del mensaje. La búsqueda no distingue entre mayúsculas y minúsculas.
 
-   Cuando haya introducido los criterios de búsqueda, haga clic en ![Botón actualizar](../media/scc-quarantine-refresh.png) **Actualizar** para filtrar los resultados.
+   Cuando haya introducido los criterios de búsqueda, haga clic en ![Botón actualizar](../../media/scc-quarantine-refresh.png) **Actualizar** para filtrar los resultados.
 
 Cuando encuentre un mensaje en cuarentena específico, seleccione el mensaje para ver los detalles del mismo y para realizar una acción (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
 
@@ -150,7 +150,7 @@ Después de seleccionar un mensaje, dispone opciones con respecto a qué hacer c
 
   Cuando haya terminado, haga clic en **Liberar mensajes**.
 
-- **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Office 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
+- **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Microsoft 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
 
 - **Vista previa del mensaje**: En el panel flotante que aparece, elija una de las siguientes opciones:
 
