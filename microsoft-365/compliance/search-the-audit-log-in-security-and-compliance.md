@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
+ms.openlocfilehash: f961b14bfeb15ac0c82988a35b9455f0dd7ec864
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521496"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625130"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
 ## <a name="introduction"></a>Introducción
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, puede usar el Centro de seguridad y cumplimiento de Office 365 para buscar el registro de auditoría unificado y ver la actividad de usuarios y administradores en su organización de Office 365. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de actividades administrativas y de usuario en Office 365:
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de actividades administrativas y de usuario en Office 365:
 
 - Actividad de usuario en SharePoint Online y OneDrive para Empresas
 
@@ -67,19 +67,19 @@ ms.locfileid: "43521496"
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del registro de auditoría de Office 365.
+Lea los elementos siguientes antes de iniciar la búsqueda en el registro de auditoría.
 
-- Usted (u otro administrador) debe activar primero el registro de auditoría en Office 365 para poder empezar a buscar dicho registro. Para activarlo, haga clic en **Iniciar auditoría**en la página**Búsqueda de registros de auditoría**del Centro de seguridad y cumplimiento. (SI usted no ve este link, la auditoría ya se habrá activado para su organización) Después de que lo active, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que hacer esto una vez. Para obtener más información, consulte [ Desactivar o activar la búsqueda de registros de auditoría ](turn-audit-log-search-on-or-off.md).
+- Usted (u otro administrador) debe activar primero el registro de auditoría para poder empezar a buscar en el registro de auditoría. Para activarlo, haga clic en **Iniciar auditoría**en la página**Búsqueda de registros de auditoría**del Centro de seguridad y cumplimiento. (SI usted no ve este link, la auditoría ya se habrá activado para su organización) Después de que lo active, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que hacer esto una vez. Para obtener más información, consulte [ Desactivar o activar la búsqueda de registros de auditoría ](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Estamos en el proceso de activar la auditoría de forma predeterminada. Hasta entonces, puede activarla como se describió anteriormente.
 
-- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange en línea para buscar el registro de auditoría de Office 365. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de**permisos**del centro de administración de Exchange. Nota: los Administradores globales en el Office 365 y Microsoft 365 pasan automáticamente a ser miembros del grupo de rol de funciones de la Administración de la organización en el servicio de Exchange en línea. Para darle a un usuario la capacidad de buscar el registro de auditoría de Office 365 con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange en línea, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de**permisos**del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 pasan automáticamente a ser miembros del grupo de roles de Administración de la organización en el servicio de Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
   > [!IMPORTANT]
-  > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **permisos** del centro de seguridad y cumplimiento, no podrán buscar el registro de auditoría de Office 365 Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
+  > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **permisos** del Centro de seguridad y cumplimiento, no podrán buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
-- Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 de su organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 Enterprise y, específicamente, del tipo de licencia que se ha asignado a un usuario específico.
+- Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 Enterprise y, específicamente, del tipo de licencia que se ha asignado a un usuario específico.
 
   - **Office 365 E3 o Microsoft 365 E3:** los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
 
@@ -91,7 +91,7 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
     > [!NOTE]
     > Si su organización ha participado en el programa de vista previa privado para la retención de registros de auditoría de un año, la duración de la retención de los registros de auditoría que se generaron antes de la fecha de lanzamiento de disponibilidad general no se restablecerá.
 
-- Si desea desactivar la búsqueda en el registro de auditoría de Office 365 de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización Exchange en línea:
+- Si desea desactivar la búsqueda en el registro de auditoría de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización de Exchange Online:
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -103,17 +103,17 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-  Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría en Office 365](turn-audit-log-search-on-or-off.md).
+  Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría de Office 365 en lugar de usar la página de**Búsqueda en el registro de auditoría** del centro de Seguridad y cumplimiento. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Eso significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la página de**Búsqueda de registros de auditoría** del Centro de seguridad y cumplimiento. Tiene que ejecutar este cmdlet en el PowerShell remoto conectado a su organización de Exchange en línea. Para obtener más información, consulte[Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
 
   Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog**a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Si desea descargar mediante programación los datos del registro de auditoría de Office 365, le recomendamos que use la API de Actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de Actividad de administración de Office 365 es un servicio REST de la web que puede usar para desarrollar operaciones, soluciones de supervisión de seguridad y cumplimiento para su organización. Para obtener más información, consulte[la referencia de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+- Si desea descargar mediante programación los datos del registro de auditoría, le recomendamos que use la API de Actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de Actividad de administración de Office 365 es un servicio REST de la web que puede usar para desarrollar operaciones, soluciones de supervisión de seguridad y cumplimiento para su organización. Para obtener más información, consulte[la referencia de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
 - El registro de auditoría correspondiente puede tardar hasta 30 minutos o 24 horas después de que se produzca el evento en mostrarse en los resultados de una búsqueda de registro de auditoría. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
 
-  |**Servicio de Office 365**|**30 minutos**|**24 horas**|
+  |**Servicio de Microsoft 365**|**30 minutos**|**24 horas**|
   |:-----|:-----:|:-----:|
   |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -138,7 +138,7 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
 
 - Azure Active Directory (AD) es el servicio de directorio para Office 365. El registro de auditoría unificado contiene actividades de usuario, dominio, aplicación, grupo y de directorio que se han realizado en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
-- El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
+- El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
 ## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
 
@@ -159,7 +159,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
     > [!TIP]
     > Use una sesión de exploración privada (no una sesión normal) para obtener acceso al centro de seguridad y cumplimiento, ya que esto evitará que las credenciales con las que inició sesión actualmente sean usadas. Para abrir una ventana de Exploración de InPrivate en Internet Explorer o en Microsoft Edge, pulse las teclas CTRL+SHIFT+P. Para abrir una sesión de explorador privada en Google Chrome (denominada ventana de incógnito), presione CTRL+MAYÚS+N.
 
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
 
 3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **buscar**, y luego haga clic en**buscar el registro de auditoría**.
 
@@ -174,7 +174,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
     a. **Actividades**: haga clic en la lista desplegable para mostrar las actividades que puede buscar. Las actividades administrativas y de usuario se organizan en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar**Mostrar los resultados de todas las actividades**, se mostrarán los resultados de todas las actividades que el usuario o el grupo de usuarios seleccionado ha realizado.
 
-    Se registran más de 100 actividades administrativas y de usuario en el registro de auditoría de Office 365. Haga clic en la pestaña de**Actividades auditadas**en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios de Office 365.
+    Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de**Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
 
     b. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
 
@@ -239,7 +239,7 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 
 #### <a name="view-the-details-for-a-specific-event"></a>Ver los detalles de un evento específico
 
-Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de**detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio de Office 365 en el que se produce el evento. Para mostrar esos detalles, haga clic en**Más información**. Para descripciones, consulte[Propiedades detalladas del registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md)
+Puede ver más detalles sobre un evento al hacer clic en el registro de eventos de la lista de resultados de búsqueda. Se muestra una página de**detalles** que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio en el que se produce el evento. Para mostrar esos detalles, haga clic en**Más información**. Para ver descripciones, consulte[Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 
 ![Haga clic en Obtener más información para ver las propiedades detalladas del registro de eventos de auditoría.](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -274,7 +274,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
    - **Guardar los resultados cargados**: elija esta opción para exportar solo las entradas que se muestran en los **Resultados** en la página de **Búsqueda de registros de auditoría**. El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (Fecha, Usuario, Actividad, Elemento y Detalles). Se incluye una columna adicional (denominada **Más**) en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se han cargado (y visualizado) en la página **Búsqueda de registros de auditoría**, se exportan un máximo de 5 000 entradas.
 
-   - **Descargar todos los resultados**: elija esta opción para exportar todas las entradas del registro de auditoría de Office 365 que cumplen los criterios de búsqueda. Para obtener un conjunto amplio de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los 5 000 resultados que se muestran en la página **Búsqueda de registros de auditoría**. Esta opción descargará los datos sin procesar del registro de auditoría a un archivo CSV, y contiene información adicional de la entrada del registro de auditoría en una columna denominada**AuditData**. Puede tardar más en descargar el archivo si elige esta opción de exportación ya que el archivo puede ser mucho más grande que el que se descarga si eligiera otra opción.
+   - **Descargar todos los resultados**: elija esta opción para exportar todas las entradas del registro de auditoría que cumplan los criterios de búsqueda. Para obtener un conjunto amplio de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los 5 000 resultados que se muestran en la página **Búsqueda de registros de auditoría**. Esta opción descargará los datos sin procesar del registro de auditoría a un archivo CSV, y contiene información adicional de la entrada del registro de auditoría en una columna denominada**AuditData**. Puede tardar más en descargar el archivo si elige esta opción de exportación ya que el archivo puede ser mucho más grande que el que se descarga si eligiera otra opción.
 
      > [!IMPORTANT]
      > Puede descargar un máximo de 50 000 entradas en un archivo CSV desde una única búsqueda de registros de auditoría. Si se descargan 50 000 entradas en el archivo CSV, probablemente puede suponer que existen más de 50 000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fecha para reducir el número de entradas de registro de auditoría. Puede que tenga que ejecutar varias búsquedas con intervalos de fecha de menor tamaño para exportar más de 50 000 entradas.
@@ -287,17 +287,17 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
   Después de que divida la columna **AuditData**, puede filtrar en la columna de**Operaciones** para mostrar las propiedades detalladas de un tipo de actividad específico.
 
-- La opción **Descargar todos los resultados** descarga los datos sin procesar del registro de auditoría de Office 365 en un archivo CSV. Este archivo contiene diferentes nombres de columna (CreationDate, Identificadores de usuario, Operaciones, AuditData) que los del archivo que se descarga si selecciona la opción **Guardar resultados cargados**. Los valores de los dos archivos CSV diferentes para la misma actividad también podrían ser distintos. Por ejemplo, la actividad de la columna **Acción**en el archivo CSV y podría tener un valor diferente que el nombre "sencillo" de usuario que se muestra en la columna de**Actividad** de la página de **Búsqueda de registros de auditoría**. Por ejemplo, MailboxLogin vs. el usuario ha iniciado sesión en el buzón.
+- La opción **Descargar todos los resultados** descarga los datos sin procesar del registro de auditoría en un archivo CSV. Este archivo contiene diferentes nombres de columna (CreationDate, Identificadores de usuario, Operaciones, AuditData) que los del archivo que se descarga si selecciona la opción **Guardar resultados cargados**. Los valores de los dos archivos CSV diferentes para la misma actividad también podrían ser distintos. Por ejemplo, la actividad de la columna **Acción**en el archivo CSV y podría tener un valor diferente que el nombre "sencillo" de usuario que se muestra en la columna de**Actividad** de la página de **Búsqueda de registros de auditoría**. Por ejemplo, MailboxLogin vs. el usuario ha iniciado sesión en el buzón.
 
-- Cuando descargue todos los resultados de una consulta de búsqueda que contenga eventos de diferentes servicios de Office 365, la columna**AuditData**del archivo CSV contiene diferentes propiedades dependiendo del servicio en que se ha realizado la acción. Por ejemplo, las entradas de los registros de auditoría de Exchange y Azure AD incluyen una propiedad denominada**ResultStatus** que indica si la acción se ha realizado correctamente o no. Esta propiedad no se incluye para los eventos en SharePoint. De manera similar, los eventos de SharePoint tienen una propiedad que identifica la dirección URL del sitio para las actividades relacionadas con la carpeta y el archivo. Para mitigar este comportamiento, considere la posibilidad de usar diferentes búsquedas para exportar los resultados de las actividades de un único servicio.
+- Cuando descargue todos los resultados de una consulta de búsqueda que contenga eventos de diferentes servicios, la columna**AuditData** del archivo CSV contiene diferentes propiedades en función del servicio en que se ha realizado la acción. Por ejemplo, las entradas de los registros de auditoría de Exchange y Azure AD incluyen una propiedad denominada**ResultStatus** que indica si la acción se ha realizado correctamente o no. Esta propiedad no se incluye para los eventos en SharePoint. De manera similar, los eventos de SharePoint tienen una propiedad que identifica la dirección URL del sitio para las actividades relacionadas con la carpeta y el archivo. Para mitigar este comportamiento, considere la posibilidad de usar diferentes búsquedas para exportar los resultados de las actividades de un único servicio.
 
-  Para obtener una descripción de las propiedades que se enumeran en la columna **AuditData** del archivo CSV cuando descarga todos los resultados, y el servicio se aplica en cada uno, consulte[Propiedades detalladas del registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md).
+  Para obtener una descripción de las propiedades que se enumeran en la columna **AuditData** del archivo CSV cuando descarga todos los resultados, y el servicio al que se aplica cada uno, consulte [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Actividades auditadas
 
 Las tablas de esta sección describen las actividades que se auditan en Office 365. Puede buscar estos eventos al buscar el registro de auditoría en el centro de seguridad y cumplimiento.
 
-En estas tablas se agrupan actividades relacionadas o las actividades de un servicio específico de Office 365. La tabla incluye el nombre sencillo que se muestra en la lista desplegable de**Actividades**y el nombre de la operación correspondiente que aparece en la información detallada de una grabación de auditoría y en el archivo CSV cuando exporta los resultados de búsqueda. Para descripciones de la información detallada, consulte las[ Propiedades detalladas del registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md)
+En estas tablas se agrupan actividades relacionadas o las actividades de un servicio específico. La tabla incluye el nombre sencillo que se muestra en la lista desplegable de**Actividades**y el nombre de la operación correspondiente que aparece en la información detallada de una grabación de auditoría y en el archivo CSV cuando exporta los resultados de búsqueda. Para ver descripciones de la información detallada, consulte [ Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 
 Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 
@@ -362,9 +362,9 @@ Por ejemplo, app@sharepoint se identifica por lo general como el usuario para lo
 
 Aquí se muestran algunos otros escenarios en los que se puede identificar app@sharepoint en un registro de auditoría como el usuario que realizó una actividad:
 
-- Grupos de Office 365 Cuando un usuario o un administrador crea un grupo nuevo, se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint. Estas tareas se ejecutan en una aplicación en nombre del usuario que creó el grupo.
+- Grupos de Microsoft 365. Cuando un usuario o un administrador crea un grupo nuevo, se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint. Estas tareas se ejecutan en una aplicación en nombre del usuario que creó el grupo.
 
-- Microsoft Teams. Como ocurre en los grupos de Office 365, cuando se crea un equipo se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint.
+- Microsoft Teams. Como ocurre en los grupos de Microsoft 365, cuando se crea un equipo se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint.
 
 - Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
 
@@ -418,7 +418,7 @@ En la siguiente tabla se describen las actividades relacionadas cuando los usuar
 
 ### <a name="sharing-and-access-request-activities"></a>Actividades de solicitud de acceso y uso compartido
 
-La siguiente tabla describe las actividades de solicitud de acceso y uso compartido de usuarios en SharePoint en línea y OneDrive para empresas. Para los eventos compartidos, la columna de**Detalles**según los**Resultados** identifica el nombre del usuario o grupo con el que se ha compartido el elemento y si el usuario o grupo es un miembro o un invitado de su organización. Para obtener más información, consulte[Usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).
+La siguiente tabla describe las actividades de solicitud de acceso y uso compartido de usuarios en SharePoint en línea y OneDrive para empresas. Para los eventos compartidos, la columna de**Detalles**según los**Resultados** identifica el nombre del usuario o grupo con el que se ha compartido el elemento y si el usuario o grupo es un miembro o un invitado de su organización. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
 
 > [!NOTE]
 > Los usuarios pueden ser *miembros* o *invitados*basados en la propiedad UserType del objeto de usuario. Un miembro es normalmente un empleado, y un invitado es normalmente un colaborador externo de la organización. Cuando un usuario acepta una invitación de uso compartido (y todavía no forma parte de la organización), se crea una cuenta de invitado para él en el directorio de la organización. Una vez que el usuario invitado tenga una cuenta en su directorio, los recursos pueden compartirse directamente con él (sin requerir una invitación).
@@ -499,12 +499,12 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Agente de usuario exento agregado|ExemptUserAgentSet|El administrador global o de SharePoint agrega un agente de usuario a la lista de agentes de usuario exentos en el Centro de administración de SharePoint.|
 |Se ha agregado el administrador de ubicación geográfica|GeoAdminAdded|Un administrador global o de SharePoint agregó un usuario como administrador geográfico de una ubicación.|
 |Usuario permitido para crear grupos|AllowGroupCreationSet|El administrador de sitios o el propietario agrega un nivel de permisos a un sitio que permite que un usuario al que se le ha asignado ese permiso cree un grupo para ese sitio.|
-|Desplazamiento geográfico de sitio cancelado|SiteGeoMoveCancelled|Un administrador global o de SharePoint canceló correctamente un desplazamiento geográfica de un sitio de SharePoint o de OneDrive. La capacidad multi geográfica le permite una organización de Office 365 abarcar diversas ubicaciones geográficas de centro de datos de Office 365, que se denominan geográficas Para obtener más información, consulte [Funcionalidades multi geográficas en OneDrive y SharePoint en línea en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
-|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una normativa de uso compartido de SharePoint mediante el portal de administración de Office 365, el portal de administración de SharePoint, o el shell de administración de SharePoint en línea. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo**ModifiedProperties** en las propiedades detalladas del registro de eventos.|
-|Directiva de acceso del dispositivo cambiada|DeviceAccessPolicyChanged|Un administrador global o de SharePoint cambió la directiva de dispositivos no administrados para su organización. Esta directiva controla el acceso a SharePoint, OneDrive y Office 365 desde dispositivos que no se ha unido a su organización. La configuración de esta directiva requiere una suscripción de Enterprise Mobility + Security. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
+|Desplazamiento geográfico de sitio cancelado|SiteGeoMoveCancelled|Un administrador global o de SharePoint canceló correctamente un desplazamiento geográfica de un sitio de SharePoint o de OneDrive. La funcionalidad multigeográfica permite que una organización disponga de varias geografías de centros de datos de Microsoft, denominadas geoáreas. Para obtener más información, consulte [Capacidades multigeográficas en OneDrive y SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Normativa de uso compartido cambiada|SharingPolicyChanged|Un administrador global o de SharePoint cambió una normativa de uso compartido de SharePoint mediante el Portal de administración de Microsoft 365, el Portal de administración de SharePoint, o la Consola de administración en línea de SharePoint. Se registrará cualquier cambio en la configuración de la directiva de uso compartido de su organización. La normativa cambiada se identifica en el campo**ModifiedProperties** en las propiedades detalladas del registro de eventos.|
+|Directiva de acceso del dispositivo cambiada|DeviceAccessPolicyChanged|Un administrador global o de SharePoint cambió la directiva de dispositivos no administrados para su organización. Esta directiva controla el acceso a SharePoint, OneDrive y Microsoft 365 desde dispositivos que no se han unido a su organización. La configuración de esta directiva requiere una suscripción de Enterprise Mobility + Security. Para obtener más información, consulte [Controlar el acceso desde dispositivos no administrados](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
 |Agente de usuario exento cambiado|CustomizeExemptUsers|El administrador global o de SharePoint ha personalizado la lista de agentes de usuario exentos en el Centro de administración de SharePoint. Puede especificar qué agentes de usuario están exentos de recibir una página web completa para indexar. Esto significa que cuando un agente de usuario que ha especificado como exento encuentra un formulario de InfoPath, el formulario se devolverá como un archivo XML en lugar de como una página web completa. Esto acelera la indexación de formularios de InfoPath.|
 |Directiva de acceso de red cambiada|NetworkAccessPolicyChanged|Un administrador global o de SharePoint cambió la normativa de acceso basado en la ubicación (también denominada un límite de red de confianza) en el Centro de administración SharePoint o mediante el PowerShell de SharePoint en línea. Este tipo de controles de normativa tienen acceso a recursos de SharePoint y OneDrive de la organización en función de los intervalos de direcciones IP que especifique. Para obtener más información, consulte [Controlar el acceso a datos de SharePoint en línea y OneDrive en función de las ubicaciones de red](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).|
-|Desplazamiento geográfico de sitio completado|SiteGeoMoveCompleted|El desplazamiento geográfico de un sitio que fue programado por un administrador global de su organización se ha completado correctamente. La capacidad multi geográfica le permite una organización de Office 365 abarcar diversas ubicaciones geográficas de centro de datos de Office 365, que se denominan geográficas Para obtener más información, consulte [Funcionalidades multi geográficas en OneDrive y SharePoint en línea en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Desplazamiento geográfico de sitio completado|SiteGeoMoveCompleted|El desplazamiento geográfico de un sitio que fue programado por un administrador global de su organización se ha completado correctamente. La funcionalidad multigeográfica permite que una organización disponga de varias geografías de centros de datos de Microsoft, denominadas geoáreas. Para obtener más información, consulte [Funcionalidades multi geográficas en OneDrive y SharePoint en línea en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Conexión a enviar creada|SendToConnectionAdded|Un administrador global o de SharePoint crea una nueva conexión a enviar en la página administración de registros en el Centro de administración de SharePoint. Una conexión Enviar a especifica la configuración de un repositorio de documentos o un centro de registros. Cuando crea una conexión Enviar a, un Organizador de contenido puede enviar documentos a la ubicación especificada.|
 |Colección de sitios creada|SiteCollectionCreated|Un administrador global o de SharePoint crea una colección de sitios en su organización de SharePoint en línea o un usuario aplica el sitio de OneDrive para empresas.|
 |Orphaned hub site borrado|HubSiteOrphanHubDeleted|Un administrador global o de SharePoint ha eliminado un orphan hub site, que es un centro que no tiene ningún sitio asociado. Un orphaned hub es probable que se deba a la eliminación del centro del sitio original |
@@ -512,7 +512,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Sitio eliminado|SiteDeleted|El administrador del sitio elimina un sitio.|
 |Vista previa del documento habilitada|PreviewModeEnabledSet|El administrador del sitio habilita la vista previa del documento para un sitio.|
 |Flujo de trabajo heredado habilitado|LegacyWorkflowEnabledSet|El propietario o administrador del sitio agrega el tipo de contenido de tarea de SharePoint 2013 Workflow al sitio. Los administradores globales también pueden habilitar los flujos de trabajo para toda la organización en el Centro de administración de SharePoint.|
-|Petición a Office habilitada|OfficeOnDemandSet|El administrador del sitio habilita Office a petición, lo que permite a los usuarios obtener acceso a la última versión de las aplicaciones de escritorio de Office. Office a petición se habilita en el Centro de administración de SharePoint y requiere una suscripción a Office 365 que incluye aplicaciones de Office completas e instaladas.|
+|Petición a Office habilitada|OfficeOnDemandSet|El administrador del sitio habilita Office a petición, lo que permite a los usuarios obtener acceso a la última versión de las aplicaciones de escritorio de Office. Office a petición se habilita en el Centro de administración de SharePoint y requiere una suscripción a Microsoft 365 que incluya aplicaciones de Office completas e instaladas.|
 |Origen de resultados habilitado para las búsquedas de personas|PeopleResultsScopeSet|El administrador del sitio crea el origen de resultados de las búsquedas de personas para un sitio.|
 |Fuentes RSS habilitadas|NewsFeedEnabledSet|El administrador o el propietario del sitio habilita las fuentes RSS para un sitio. Los administradores globales pueden habilitar las fuentes RSS para toda la organización en el Centro de administración de SharePoint.|
 |Sitio unido al centro del sitio|HubSiteJoined|El propietario de un sitio lo asocia a un sitio central.|
@@ -520,7 +520,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 |Ubicación de datos permitidos removidos|AllowedDataLocationDeleted|Un administrador global o de SharePoint ha removido una ubicación de datos permitida en un entorno multi geográfico.|
 |Se ha removido el administrador de ubicación geográfica|GeoAdminDeleted|Un administrador global o de SharePoint removió a un usuario como administrador geográfico de una ubicación.|
 |Sitio renombrado|SiteRenamed|El administrador o el propietario del sitio cambia el nombre de un sitio|
-|Desplazamiento geográfico de sitio programado|SiteGeoMoveScheduled|Un administrador global o de SharePoint desplazó geográficamente con éxito un sitio de SharePoint o de OneDrive. La capacidad multi geográfica le permite una organización de Office 365 abarcar diversas ubicaciones geográficas de centro de datos de Office 365, que se denominan geográficas Para obtener más información, consulte [Funcionalidades multi geográficas en OneDrive y SharePoint en línea en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Desplazamiento geográfico de sitio programado|SiteGeoMoveScheduled|Un administrador global o de SharePoint desplazó geográficamente con éxito un sitio de SharePoint o de OneDrive. La funcionalidad multigeográfica permite que una organización disponga de varias geografías de centros de datos de Microsoft, denominadas geoáreas. Para obtener más información, consulte [Funcionalidades multi geográficas en OneDrive y SharePoint en línea en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Establecer sitio del host|HostSiteSet|Un administrador global o de SharePoint cambia el sitio designado para hospedar sitios personales o de OneDrive para empresas. |
 |Configurar una cuota de almacenamiento para una ubicación geográfica|GeoQuotaAllocated|Un administrador global o de SharePoint configuró cuota de almacenamiento para ubicación geográfica en un entorno multi geográfico.|
 |Sitio no unido desde el sitio central.|HubSiteUnjoined|El propietario de un sitio lo disocia de un sitio a un sitio central.|
@@ -529,7 +529,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 
 ### <a name="exchange-mailbox-activities"></a>Actividades de buzón de Exchange
 
-La siguiente tabla enumera las actividades que pueden registrarse mediante el registro de auditoría del buzón de correo. Las actividades de buzón realizadas por el propietario del buzón, usuario delegado o administrador, son registradas automáticamente en el registro de auditoría de Office 365 por 90 días. Es posible para un administrador desactivar el registro de auditoría de buzón para todos los usuarios de su organización. En este caso, no se registra ninguna acción de cualquier usuario en el buzón. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
+La siguiente tabla enumera las actividades que pueden registrarse mediante el registro de auditoría del buzón de correo. Las actividades de buzón realizadas por el propietario del buzón, usuario delegado o administrador se registran automáticamente en el registro de auditoría durante un máximo de 90 días. Es posible para un administrador desactivar el registro de auditoría de buzón para todos los usuarios de su organización. En este caso, no se registra ninguna acción de cualquier usuario en el buzón. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
 
  También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)en el PowerShell de Exchange en línea.
 
@@ -560,7 +560,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
 ### <a name="sway-activities"></a>Actividades de Sway
 
-En la siguiente tabla se enumeran las actividades de usuario y de administrador de Sway. Sway es una aplicación de Office 365 que ayuda a los usuarios a recopilar, aplicar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en la web. Para obtener más información, consulte [Preguntas más frecuentes sobre Sway: ayuda del administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+En la siguiente tabla se enumeran las actividades de usuario y de administrador de Sway. Sway es una aplicación de Microsoft 365 que permite a los usuarios recopilar, aplicar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en la web. Para obtener más información, consulte [Preguntas más frecuentes sobre Sway: ayuda del administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -586,10 +586,10 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 
 |**Actividad**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
-|Usuario agregado|Agregar usuario|Se ha creado una cuenta de usuario de Office 365.|
+|Usuario agregado|Agregar usuario|Se ha creado una cuenta de usuario.|
 |Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
 |Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de creación de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
-|Usuario eliminado|Eliminar usuario|Una cuenta de usuario de Office 365 ha sido eliminada.|
+|Usuario eliminado|Eliminar usuario|Se ha eliminado una cuenta de usuario.|
 |Restablecer contraseña de usuario|Restablecer contraseña de usuario|El administrador restablece la contraseña de un usuario.|
 |Establecer una propiedad que fuerce al usuario a cambiar la contraseña|Forzar el cambio de la contraseña de usuario|Un administrador estableció la propiedad que obliga a un usuario a cambiar su contraseña la próxima vez que inicie sesión en Office 365.|
 |Establecer propiedades de licencia|Establecer propiedades de licencia|Un administrador modificó las propiedades de una licencia asignada a un usuario.|
@@ -598,7 +598,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 
 ### <a name="azure-ad-group-administration-activities"></a>Actividades de administración de grupos de Azure AD
 
-En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario agrega o cambia un grupo de Office 365 o cuando un administrador crea un grupo de seguridad mediante el uso del Centro de administración de Microsoft 365 o el Portal de administración de Azure. Para obtener más información sobre los grupos de Office 365, consulte[Ver, crear y eliminar grupos en el Centro de administración de Microsoft Office 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario agrega o cambia un grupo de Microsoft 365 o cuando un administrador crea un grupo de seguridad mediante el Centro de administración de Microsoft 365 o el Portal de administración de Azure. Para obtener más información sobre los grupos de Office 365, consulte[Ver, crear y eliminar grupos en el Centro de administración de Microsoft Office 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -630,27 +630,27 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
-|Agregar un miembro a un rol|Agregar miembro de rol a un rol|Se ha agregado un usuario a un rol de administrador en Office 365.|
-|Se ha removido un usuario de un rol de directorio |Quitar miembro de rol de un rol|Se ha removido un usuario desde un rol de administrador en Office 365.|
-|Establecer la información de contacto de la empresa|Establecer la información de contacto de la empresa|Se han actualizado las preferencias de contacto a nivel empresarial de su organización de Office 365. Esto incluye las direcciones de correo electrónico para el correo electrónico relacionado con las suscripciones enviadas mediante Office 365, así como las notificaciones técnicas sobre los servicios de Office 365.|
+|Agregar un miembro a un rol|Agregar miembro de rol a un rol|Se ha agregado un usuario a un rol de administrador en Microsoft 365.|
+|Se ha removido un usuario de un rol de directorio |Quitar miembro de rol de un rol|Se ha eliminado un usuario desde un rol de administrador en Microsoft 365.|
+|Establecer la información de contacto de la empresa|Establecer la información de contacto de la empresa|Se han actualizado las preferencias de contacto a nivel empresarial de la organización. Esto incluye las direcciones de correo electrónico del correo electrónico relacionado con las suscripciones enviado mediante Microsoft 365, así como las notificaciones técnicas sobre los servicios.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Actividades de administración de directorios
 
-En la siguiente tabla se enumeran las actividades relacionadas con los dominios y los directorios de Azure AD que se registran cuando un administrador controla la organización de Office 365 en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
+En la siguiente tabla se enumeran las actividades relacionadas con los dominios y los directorios de Azure AD que se registran cuando un administrador gestiona la organización en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
-|Dominio agregado a la empresa|Agregar dominio a la empresa|Se ha agregado un dominio a la organización de Office 365.|
-|Se ha agregado un socio al directorio|Agregar un socio a la empresa|Se ha agregado un socio (administrador delegado) a su organización de Office 365.|
-|Dominio removido de la empresa|Remover dominio de la empresa|Se ha removido un dominio a la organización de Office 365.|
-|Se ha removido un socio del directorio|Remover un socio de la empresa|Se ha removido un socio (administrador delegado) de la organización de Office 365.|
-|Establecer información de la organización|Establecer información de la organización|Se ha actualizado la información de la empresa para la organización de Office 365. Esto incluye las direcciones de correo electrónico para el correo electrónico relacionado con las suscripciones enviadas mediante Office 365, así como las notificaciones técnicas sobre los servicios de Office 365.|
-|Establecer autenticación de dominio|Establecer autenticación de dominio|Se ha cambiado la configuración de la autenticación de dominio para la organización de Office 365.|
-|Se ha actualizado la configuración de federación para un dominio|Se ha establecido la configuración de federación en un dominio|Se ha cambiado la configuración de federación (uso compartido externo) para la organización de Office 365.|
-|Establecer normativas de contraseña|Establecer normativas de contraseña|Se han cambiado las restricciones de caracteres y longitud para las contraseñas de usuario de su organización de Office 365.|
+|Dominio agregado a la empresa|Agregar dominio a la empresa|Se ha agregado un dominio a la organización.|
+|Se ha agregado un socio al directorio|Agregar un socio a la empresa|Se ha agregado un socio (administrador delegado) a la organización.|
+|Dominio removido de la empresa|Remover dominio de la empresa|Se ha quitado un dominio de la organización.|
+|Se ha removido un socio del directorio|Remover un socio de la empresa|Se ha quitado un socio (administrador delegado) de la organización.|
+|Establecer información de la organización|Establecer información de la organización|Se ha actualizado la información de empresa de la organización. Esto incluye las direcciones de correo electrónico del correo electrónico relacionado con las suscripciones enviado mediante Microsoft 365, así como las notificaciones técnicas sobre los servicios de Microsoft 365.|
+|Establecer autenticación de dominio|Establecer autenticación de dominio|Se ha cambiado la configuración de la autenticación de dominio de la organización.|
+|Se ha actualizado la configuración de federación para un dominio|Se ha establecido la configuración de federación en un dominio|Se ha cambiado la configuración de federación (uso compartido externo) de la organización.|
+|Establecer normativas de contraseña|Establecer normativas de contraseña|Se han cambiado las restricciones de caracteres y longitud de las contraseñas de usuario de la organización.|
 |Sincronización de Azure AD activada |Establecer la marca DirSyncEnabled en la empresa|Se ha establecido la propiedad que habilita un directorio para la Sincronización de Azure AD.|
-|Dominio actualizado|Actualizar dominio|Se ha actualizado la configuración de un dominio en su organización de Office 365.|
+|Dominio actualizado|Actualizar dominio|Se ha actualizado la configuración de un dominio en la organización.|
 |Dominio comprobado|Comprobar dominio|Se ha comprobado que su organización es la propietaria de un dominio.|
 |Se ha comprobado el dominio comprobado por correo electrónico|Comprobar el dominio comprobado por correo electrónico|Se ha usado la verificación de correo electrónico para comprobar que su organización es la propietaria de un dominio.|
 ||||
@@ -669,7 +669,7 @@ La búsqueda de contenido y las actividades relacionadas con eDiscovery que son 
 
 - Administrar el rol de administrador de la exhibición de documentos electrónicos
 
-Para obtener una lista y una descripción detallada de las actividades de exhibición de documentos electrónicos que están registradas, vea [Buscar actividades de exhibición de documentos electrónicos en el registro de auditoría de Office 365](search-for-ediscovery-activities-in-the-audit-log.md).
+Para obtener una lista y una descripción detallada de las actividades de eDiscovery que están registradas, vea [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
 > Lleva un máximo de 30 minutos para eventos que resultan de las actividades indicadas en **Actividades de eDiscovery** en la lista desplegable **Actividades** que se muestre en los resultados de búsqueda. Por el contrario, lleva hasta 24 horas para los eventos correspondientes de actividades cmdlet de eDiscovery que aparezcan en los resultados de búsqueda.
@@ -682,7 +682,7 @@ En la siguiente tabla se enumeran las actividades realizadas por los profesional
 |:-----|:-----|:-----|
 |Agregar datos a otro conjunto de revisión|AddWorkingSetQueryToWorkingSet|El usuario ha agregado documentos de un conjunto de revisiones a un conjunto de revisiones diferente.|
 |Datos agregados a otro conjunto de revisión|AddQueryToWorkingSet|El usuario agregó los resultados de una búsqueda de contenido asociada con un caso de eDiscovery avanzado a un conjunto de revisiones.|
-|Datos agregados que no son de Office 365 a un conjunto de revisión|AddNonOffice365DataToWorkingSet|Datos agregados que no son de Office 365 a un conjunto de revisión.|
+|Se han agregado datos que no son de Microsoft 365 a un conjunto de revisión|AddNonOffice365DataToWorkingSet|Un usuario ha agregado datos que no son de Microsoft 365 a un conjunto de revisión.|
 |Documentos corregidos agregados para revisar el conjunto|AddRemediatedData|El usuario carga documentos que tuvieron errores de indexación corregidos para un conjunto de revisiones.|
 |Datos analizados en el conjunto de revisiones|RunAlgo|El usuario ejecuta el análisis en los documentos de un conjunto de revisiones.|
 |Documento anotados en el conjunto de revisiones|AnnotateDocument|El usuario anotó un documento en un conjunto de revisiones. La anotación incluye contenido redactado en un documento.|
@@ -709,11 +709,11 @@ En la siguiente tabla se enumeran las actividades realizadas por los profesional
 
 Puede buscar el registro de auditoría actividades en Power BI. Para obtener información sobre las actividades de Power BI, consulte la sección "Actividades auditadas por Power BI"[en el uso de la auditoría en su organización](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
 
-El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
+El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Actividades de Microsoft Workplace Analytics
 
-El Workplace Analytics ofrece información sobre cómo los grupos colaboran en la organización de Office 365. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tengan asignado el rol de administrador o de analista en Workplace Analytics. Los usuarios a los que se les ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tengan asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema y podrán preparar, cargar y comprobar datos en la organización en Workplace Analytics Para obtener más información, consulte[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
+Workplace Analytics ofrece información sobre cómo colaboran los grupos en la organización. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tengan asignado el rol de administrador o de analista en Workplace Analytics. Los usuarios a los que se les ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tengan asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema y podrán preparar, cargar y comprobar datos en la organización en Workplace Analytics Para obtener más información, consulte[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -731,7 +731,7 @@ El Workplace Analytics ofrece información sobre cómo los grupos colaboran en l
 
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
 
-En la siguiente tabla se enumeran las actividades de usuario y administrador en Microsoft Teams que se archivan en el registro de auditoría de Office 365. Microsoft Teams es un espacio de trabajo centrado en la charla en Office 365. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para más información y vínculos con temas de ayuda, consulte:
+En la siguiente tabla, se enumeran las actividades de usuario y de administrador en Microsoft Teams que se registran en el registro de auditoría. Microsoft Teams es un espacio de trabajo centrado en la charla en Office 365. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para más información y vínculos con temas de ayuda, consulte:
 
 - [Preguntas más frecuentes sobre Microsoft Teams: Ayuda para administradores](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
 
@@ -770,7 +770,7 @@ Para obtener una descripción de las actividades de la aplicación Pacientes, co
 
 ### <a name="yammer-activities"></a>Actividades de Yammer
 
-En la siguiente tabla se enumeran las actividades de usuario y de administrador de Yammer, que se archivan en el registro de auditoría de Office 365. Para devolver las actividades relacionadas con Yammer del registro de auditoría de Office 365, deberá seleccionar **Mostrar resultados para todas las actividades** en la lista de**Actividades**. Use los cuadros de intervalo de fecha y la lista**Usuarios** para restringir los resultados de la búsqueda.
+En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista**Usuarios** para restringir los resultados de la búsqueda.
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -807,7 +807,7 @@ Puede buscar el registro de auditoría para actividades en Microsoft Stream. Ent
 
 ### <a name="content-explorer-activities"></a>Actividades del explorador de contenido
 
-En la tabla siguiente se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría de Office 365. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
+En la tabla siguiente, se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -829,7 +829,7 @@ En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar
 
 ### <a name="microsoft-forms-activities"></a>Actividades de Microsoft Forms
 
-En la siguiente tabla se enumeran las actividades de usuario y administración en Microsoft Forms que han sido archivadas en el registro de auditoría de Office 365. Microsoft Forms es una herramienta de formularios, cuestionarios y encuestas utilizado para recopilar datos para su análisis. 
+En la siguiente tabla, se enumeran las actividades de usuario y de administrador en Microsoft Forms que se registran en el registro de auditoría. Microsoft Forms es una herramienta de formularios, cuestionarios y encuestas utilizado para recopilar datos para su análisis. 
 
 A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
 
@@ -898,12 +898,12 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
-El registro de auditoría de administrador de Exchange (que está habilitado de manera predeterminada en Office 365) registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se le han asignado permisos administrativos) realiza un cambio en su organización de Exchange en línea. Los cambios que se han realizado mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en PowerShell en Exchange en línea se registran en el registro de auditoría del administrador de Exchange. Los cmdlets que comienzan con el verbo **conseguir**, ** buscar**o **probar**, no se registran en el registro de auditoría de Office 365. Para obtener más información detallada sobre el registro de auditoría del administrador en Exchange, consulte [Registro de auditoría de administrador](https://go.microsoft.com/fwlink/p/?LinkID=619225).
+El registro de auditoría de administrador de Exchange (que está habilitado de manera predeterminada en Office 365) registra un evento en el registro de auditoría cuando un administrador (o un usuario al que se le han asignado permisos administrativos) realiza un cambio en la organización de Exchange Online. Los cambios que se han realizado mediante el Centro de administración de Exchange o mediante la ejecución de un cmdlet en PowerShell en Exchange en línea se registran en el registro de auditoría del administrador de Exchange. Los cmdlets que comienzan con el verbo **Get-**, **Search-** o **Test-**, no se registran en el registro de auditoría. Para obtener más información detallada sobre el registro de auditoría del administrador en Exchange, consulte [Registro de auditoría de administrador](https://go.microsoft.com/fwlink/p/?LinkID=619225).
 
 > [!IMPORTANT]
-> Algunos cmdlets de Exchange en línea que no se archivan en el registro de auditoría de administración de Exchange (o en el registro de auditoría de Office 365). Muchos de estos cmdlets se relacionan con el mantenimiento del servicio de Exchange en línea y los ejecuta el personal del centro de datos de Microsoft o las cuentas de servicio. Estos cmdlets no se registran porque darían un gran número de eventos de auditoría "ruidosos". Si hay un cmdlet de Exchange en línea que no se está auditando, envíe una sugerencia al foro de[ Office 365 Security & Compliance User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance)y solicite que está habilitado para la auditoría. También puede enviar una solicitud de cambio de diseño (DCR) al Soporte técnico de Microsoft.
+> Algunos cmdlets de Exchange Online que no se archivan en el registro de auditoría de administración de Exchange (o en el registro de auditoría). Muchos de estos cmdlets se relacionan con el mantenimiento del servicio de Exchange en línea y los ejecuta el personal del centro de datos de Microsoft o las cuentas de servicio. Estos cmdlets no se registran porque darían un gran número de eventos de auditoría "ruidosos". Si hay un cmdlet de Exchange Online que no se está auditando, envíe una sugerencia al [foro Security & Compliance User Voice](https://office365.uservoice.com/forums/289138-office-365-security-compliance) y solicite que se habilite para la auditoría. También puede enviar una solicitud de cambio de diseño (DCR) al Soporte técnico de Microsoft.
 
-Aquí se muestran algunas sugerencias para buscar actividades de administrador de Exchange al buscar en el registro de auditoría de Office 365:
+Aquí se muestran algunas sugerencias para buscar actividades de administrador de Exchange al buscar en el registro de auditoría:
 
 - Para devolver las entradas del registro de auditoría de administrador Exchange, tiene que seleccionar **Mostrar resultados para todas las actividades**en la lista**Actividades**. Use los cuadros de intervalo de fecha y la lista de**Usuarios** para restringir los resultados de búsqueda para los cmdlets que se ejecutan mediante un administrador de Exchange específico dentro de un rango de fecha específico.
 
@@ -921,26 +921,26 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   Tenga en cuenta que las mismas actividades de administración de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría de Office 365.
+   Tenga en cuenta que las mismas actividades de administrador de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría.
 
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Cuáles son los distintos servicios de Office 365 que están actualmente auditados?**
+**¿Qué servicios de Microsoft 365 se auditan actualmente?**
 
-Los servicios de Office 365 más usados como Exchange Online, SharePoint Online, OneDrive para la empresa, Azure Active Directory, Microsoft Teams, Dynamics 365, la protección contra amenazas avanzada y Power BI son auditados. Consulte el [principio de este artículo](search-the-audit-log-in-security-and-compliance.md) para obtener una lista de los servicios que se van a auditar.
+Se auditan los servicios más usados, como Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Dynamics 365, Protección contra amenazas avanzada y Power BI. Consulte el [principio de este artículo](search-the-audit-log-in-security-and-compliance.md) para obtener una lista de los servicios que se van a auditar.
 
 **¿Qué actividades audita el servicio de auditoría en Office 365?**
 
-Vea la sección[actividades auditadas](#audited-activities)de este artículo para obtener una lista y una descripción de las actividades que se auditan en Office 365.
+Vea la sección[Actividades auditadas](#audited-activities) de este artículo para ver la lista y la descripción de las actividades que se auditan.
 
 **¿Cuánto tiempo tarda un registro de auditoría en disponible después de que se produzca un evento?**
 
-Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Vea la tabla de la sección [antes de empezar](#before-you-begin)en este artículo, donde se muestra el tiempo que tarda para los eventos de los diferentes servicios de Office 365 para estar disponibles.
+Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Vea la tabla de la sección [Antes de empezar](#before-you-begin) de este artículo, donde se muestra el tiempo que tardan en estar disponibles los eventos de los diferentes servicios.
 
 **¿Durante cuánto tiempo se conservan los registros de auditoría?**
 
-Como se ha explicado anteriormente, el período de retención de los registros de auditoría depende de la suscripción a Office 365 o Microsoft 365 Enterprise de la organización.
+Como se ha explicado anteriormente, el período de retención de los registros de auditoría depende de la suscripción de Microsoft 365 para empresas de la organización.
 
   - **Office 365 E3 y Microsoft 365 E3:** los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
 
@@ -954,17 +954,17 @@ Sí. La API de Actividad de administración de Office 365 se usa para capturar l
 
 **¿Hay otras formas de obtener registros de auditoría que no sean en el centro de seguridad y cumplimiento o con la API de Actividad de administración de Office 365?**
 
-No. Éstas son las dos formas de obtener datos del servicio de auditoria de Office 365.
+No. Estas son las dos únicas formas de obtener datos del servicio de auditoria.
 
 **¿Necesito habilitar individualmente la auditoría en cada servicio en el que deseo capturar registros de auditoría?**
 
-En la mayoría de los servicios 365 de Office, la auditoría está habilitada de forma predeterminada después de activar la auditoría de su organización de Office 365 (como se describe en la [sección antes de empezar ](#before-you-begin)en este artículo).
+En la mayoría de los servicios, la auditoría se habilita de forma predeterminada tras activar inicialmente la auditoría de la organización (como se describe en la sección [Antes de empezar](#before-you-begin) de este artículo).
 
-**¿El servicio de auditoría de Office 365 es compatible con la des duplicación de registros?**
+**¿El servicio de auditoría admite la con la desduplicación de registros?**
 
 No. La canalización del servicio de auditoría está casi en tiempo real, y por lo tanto no es compatible con la des duplicación.
 
-**¿Office 365 audita el flujo de datos en todo el mundo?**
+**¿Se audita el flujo de datos en todo el mundo?**
 
 No. Actualmente, tenemos auditorías de canalización de implementaciones en las regiones NA (Norteamérica), EMEA (Europa, Oriente Medio y África) y APAC (Asia Pacífico). Sin embargo, es posible que flujos los datos en estas zonas para equilibrar la carga y solo durante las cuestiones de sitio en directo. Cuando realizamos estas actividades, los datos en tránsito se encriptan.
 
