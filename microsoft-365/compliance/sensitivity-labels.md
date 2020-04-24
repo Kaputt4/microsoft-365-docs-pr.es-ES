@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
-ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631297"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790657"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -141,7 +141,7 @@ Después de crear las etiquetas de confidencialidad, debe publicarlas para que e
 
 Con una directiva de etiqueta, puede:
 
-- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier grupo de seguridad habilitado para correo electrónico, grupo de Microsoft 365 o grupo de distribución dinámico.
+- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
 
 - **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta opción también se aplica a los contenedores, si [habilita las etiquetas de confidencialidad para Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. 
 

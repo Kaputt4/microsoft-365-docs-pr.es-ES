@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: b9ca945ac90ab27d3bc25f1022070eff4737bc10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9252fa5a5096e8a0768277f0c72d78e4743f51dc
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631307"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790685"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint (versión preliminar pública)
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ya puede aplicarlas a los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint. Use la siguiente configuración de etiqueta para ayudar a proteger el contenido de estos contenedores:
+Al crear etiquetas de confidencialidad en el [Centro de cumplimiento de Microsoft 365](https://protection.office.com/), ya puede aplicarlas a los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 (anteriormente grupos de Office 365) y sitios de SharePoint. Use la siguiente configuración de etiqueta para ayudar a proteger el contenido de estos contenedores:
 
-- La privacidad (pública o privada) de los sitios de los equipos conectados a grupos de Microsoft 365
+- Privacidad (pública o privada) de los sitios de equipos conectados a grupos de Microsoft 365
 - Acceso de usuarios externos
 - Acceso desde dispositivos no administrados 
 
@@ -79,7 +79,7 @@ Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las
 
 En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
-- **Privacidad de los sitios de equipos conectados a grupos de Microsoft 365**: la configuración predeterminada de **Ninguna, permitir que el usuario elija quién puede tener acceso al sitio** se está implementando actualmente para los espacios empresariales. Mantenga esta configuración predeterminada cuando desee proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permita que los usuarios configuren la configuración de privacidad ellos mismos.
+- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: la configuración predeterminada de **Ninguna, permitir que el usuario elija quién puede tener acceso al sitio** se está implementando actualmente para los espacios empresariales. Mantenga esta configuración predeterminada cuando desee proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permita que los usuarios configuren la configuración de privacidad ellos mismos.
     
     Seleccione **Pública** o**Privada** para establecer y bloquear la configuración de privacidad cuando aplica esta etiqueta al contenedor. Elija **Pública** si desea que alguien de su organización acceda al sitio del grupo o equipo donde se aplica esta etiqueta, o **Privada** si desea que el acceso esté restringido solo a miembros aprobados en su organización. 
     
@@ -299,7 +299,7 @@ Aunque no se puede impedir que los usuarios creen grupos nuevos en aplicaciones 
     Get-Label |ft Name, Guid
     ```
 
-3. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Office 365.
+3. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Microsoft 365.
 
 4. Ahora[Conexión al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
@@ -311,9 +311,7 @@ Aunque no se puede impedir que los usuarios creen grupos nuevos en aplicaciones 
     Import-PSSession $Session
     ```
 
-6. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Microsoft 365.
-
-7. Use el comando siguiente como ejemplo para obtener la lista de grupos que actualmente tienen la clasificación de "general":
+5. Use el comando siguiente como ejemplo para obtener la lista de grupos que actualmente tienen la clasificación de "general":
 
    ```PowerShell
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
