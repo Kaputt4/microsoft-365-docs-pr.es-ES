@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Obtenga información sobre cómo actualizar a una nueva suscripción.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707528"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796517"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente 
 
@@ -63,7 +63,7 @@ Cuando termine la desprotección, puede tardar unos minutos en concluir la actua
 
 ## <a name="the-upgrade-tab-is-empty"></a>La pestaña de actualización está vacía
 
-Si la pestaña de **actualización** está vacía, verá una explicación de por qué no puede actualizar en este momento. Puede intentar cambiar los [planes manualmente](change-plans-manually.md) o [llamar a soporte técnico](../../admin/contact-support-for-business-products.md). Para obtener más información, consulte [¿por qué no puedo actualizar planes?](#why-cant-i-upgrade-plans).
+Si la pestaña de **actualización** está vacía, verá una explicación de por qué no puede actualizar en este momento. Puede intentar cambiar los [planes manualmente](change-plans-manually.md). Para obtener más información, consulte [¿por qué no puedo actualizar planes?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>No veo el plan que quiero
 

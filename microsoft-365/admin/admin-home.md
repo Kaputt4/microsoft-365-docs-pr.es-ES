@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Obtenga información sobre los recursos disponibles para administradores de Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: b087007d99c16f06cfdacaf8021e32a9566da5d5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 631c6640efeb6bebd8e091712b030ed61047042e
+ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105698"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43781498"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Centro de ayuda de Microsoft 365 para administradores
 
@@ -38,8 +38,8 @@ Obtenga información sobre los recursos disponibles para administradores.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 pasará a ser Microsoft 365</h3>
-                        <p>Estamos cambiando algunos de nuestros nombres de suscripción de Office 365 y Microsoft 365. No necesita hacer nada. Sus servicios, aplicaciones y características serán los mismos, al igual que el precio de su suscripción. El nombre de la suscripción se actualizará automáticamente en el Centro de administración de Microsoft 365 y los extractos de facturación se actualizarán a partir del 21 de abril de 2020.</p>
+                        <h3>Office 365 ahora es Microsoft 365</h3>
+                        <p>Cambiamos algunos de nuestros nombres de suscripción de Office 365 y Microsoft 365. No necesita hacer nada. Sus servicios, aplicaciones y características serán los mismos, al igual que el precio de su suscripción. El nombre de la suscripción se actualizará automáticamente en el Centro de administración de Microsoft 365 y los extractos de facturación se actualizarán a partir del 21 de abril de 2020.</p>
                         <ul>
                             <li><p><b>Office 365 Empresa Essentials</b> es ahora <b>Microsoft 365 Empresa Basic</b>.</p></li>
                             <li><p><b>Office 365 Empresa Premium</b> es ahora <b>Microsoft 365 Empresa Standard</b>.</p></li>
@@ -182,7 +182,7 @@ Obtenga información sobre los recursos disponibles para administradores.
                     </div>
                     <div class="cardText">
                         <h3>Para su pequeña empresa</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Haga crecer su pequeña empresa con Office 365.</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Haga crecer su pequeña empresa con Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ Obtenga información sobre los recursos disponibles para administradores.
                     </div>
                     <div class="cardText">
                         <h3>A nivel de empresa</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Instrucciones para profesionales de TI que implementan, configuran y administran Office 365 en organizaciones empresariales.</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Instrucciones para profesionales de TI que implementan, configuran y administran Microsoft 365 en organizaciones empresariales.</a></p>
                     </div>
                 </div>
             </div>
@@ -249,7 +249,7 @@ Obtenga información sobre los recursos disponibles para administradores.
                     <div class="cardText">
                         <h3>Solucionar problemas</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">Solucionar problemas de instalación de Office</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">Solucionar problemas de Outlook y Office 365 con el Asistente para soporte y recuperación para de Microsoft</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">Solucionar problemas de Outlook y Microsoft 365 con el Asistente de soporte y recuperación para Microsoft</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Solucionar problemas de correo electrónico</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">Solucionar problemas de sincronización de OneDrive para la Empresa</a></p>
                     </div>
