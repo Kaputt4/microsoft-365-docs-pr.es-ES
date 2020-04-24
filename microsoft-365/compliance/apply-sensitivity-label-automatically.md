@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 50933032e47ebb6165e1e9354c1c1fc885915852
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637150"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799983"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -202,9 +202,10 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
     - Se evalúan los tipos de información de confidencialidad personalizados para el contenido que se crea después de guardar los tipos de información de confidencialidad personalizados. 
     - Para probar los nuevos tipos de información confidencial, créelos antes de crear su directiva de etiquetado automático y, después, cree nuevos documentos con datos de ejemplo para probarlos.
 
-- [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para la directiva de etiquetado automático. Para estas etiquetas:
+- [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para las directivas de etiquetado automático. Para estas etiquetas:
     - No importa que la opción de etiquetado automático en aplicaciones de Office esté activada o desactivada, ya que la configuración de la etiqueta es complementaria a las directivas de etiquetado automático, como se explica en la introducción. 
     - Si las etiquetas que quiere usar para el etiquetado automático están configuradas para usar marcas visuales (encabezados, pies de página, marcas de agua), tenga en cuenta que no se aplican a los documentos.
+    - Si las etiquetas aplican el cifrado, deben configurarse para la configuración **Aplicar permisos ahora**.
 
 ### <a name="learn-about-simulation-mode"></a>Más información sobre el modo de simulación
 
@@ -239,6 +240,8 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 2. Seleccione la pestaña **Etiquetado automático (versión preliminar)**:
     
     ![Pestaña etiquetado automático (versión preliminar)](../media/auto-labeling-tab.png)
+    
+    Esta nueva pestaña aún se está implementando para los espacios empresariales. Si no la ve, inténtelo de nuevo en unos días.
 
 3. Seleccione **+ Crear directiva**.
 
@@ -260,7 +263,6 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     - El destinatario es
     - La extensión del archivo adjunto es
     - Los datos adjuntos están protegidos con contraseña
-    - La propiedad del documento es
     - No se pudo digitalizar algún contenido de los datos adjuntos del correo
     - No se pudo completar el análisis de algún contenido de los datos adjuntos del correo
 
@@ -274,17 +276,23 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 11. En la página **Elegir una etiqueta para aplicarla automáticamente**: seleccione **+ Elegir una etiqueta**, seleccione una etiqueta del panel **Elegir una etiqueta de confidencialidad** y seleccione **Siguiente**.
 
-12. Para la página **Elegir un modo para la directiva**: seleccione **Probarla** si está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. En caso contrario, seleccione **Dejarla desactivada**. Seleccione **Siguiente**. 
+12. Para la página **Decida si quiere ejecutar la simulación de directivas ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en modo de simulación. En caso contrario, seleccione **Dejar la directiva desactivada**. Seleccione **Siguiente**. 
 
 13. En la página **Resumen**: revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice el asistente.
     
     A diferencia del etiquetado automático para las aplicaciones de Office, no hay ninguna opción de publicación independiente. Sin embargo, al igual que con las etiquetas de publicación, espere hasta 24 horas para que la directiva de etiquetado automático se replique en toda la organización.
 
-En la página **Protección de la información**, pestaña **Etiquetado automático (versión preliminar)**, verá la directiva de etiquetado automático en la sección **Pruebas**. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, pruebas en curso o pruebas completadas). Seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
+Ahora, en la página de **Protección de la información**, pestaña de **Etiquetado automático (vista previa)**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
 
-Si selecciona la opción **Editar** en la parte superior de la página, puede modificar la directiva directamente desde esta interfaz.
+Puede modificar la directiva directamente desde esta interfaz:
 
-Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opción **Activar**.
+- Para una directiva en la sección **Desactivado**, seleccione el botón **Editar directiva**.
+
+- Para las directivas en la sección **Simulación**, seleccione la opción **Editar** en la parte superior de la página, en cualquiera de las pestañas:
+    
+    ![Opción editar directiva de etiquetado automático](../media/auto-labeling-edit.png)
+    
+    Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opción **Activar directiva**.
 
 También puede ver los resultados de la directiva de etiquetado automático con el [explorador de contenido](data-classification-content-explorer.md) cuando tenga los [permisos](data-classification-content-explorer.md#permissions) correspondientes:
 - **El visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.

@@ -1,6 +1,6 @@
 ---
-title: 'RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas de Office 365'
-description: Aquí se detallan las capacidades del RGPD en Office 365.
+title: 'RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas'
+description: Aquí se detallan las funciones de RGPD en Microsoft 365.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,27 +18,27 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7bf98da5d358f9b76f38372353a1c2a9d0d45d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594094"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632345"
 ---
-# <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas de Office 365
+# <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas
 
- **Resumen:** Aquí se detallan las capacidades del RGPD en Office 365. 
+ **Resumen:** aquí se detallan las funciones de RGPD en Microsoft 365. 
   
-En este artículo se explica cómo configurar y demostrar las capacidades de informes, protección y detección de la información de identificación personal (DCP) según el Reglamento general de protección de datos (RGPD) en un entorno de desarrollo y pruebas de Office 365.
+En este artículo se explica cómo configurar y demostrar las funciones de informes, protección y detección de la información de identificación personal (DCP) según el Reglamento general de protección de datos (RGPD) en un entorno de desarrollo y pruebas de Microsoft 365.
   
-## <a name="phase-1-create-and-configure-your-trial-office-365-subscription"></a>Fase 1: Crear y configurar una suscripción de prueba a Office 365
+## <a name="phase-1-create-and-configure-your-trial-microsoft-365-subscription"></a>Fase 1: Crear y configurar una suscripción de prueba a Microsoft 365
 
-Realice primero los pasos de la [fase 2 del artículo sobre el entorno de desarrollo y pruebas de Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription).
+Realice primero los pasos de la [fase 2 del artículo sobre el entorno de desarrollo y pruebas de Microsoft 365](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription).
 
 Luego, realice los pasos aquí indicados para configurar el Supervisor de eDiscovery:
 
-1. Inicie sesión en su inquilino de prueba de Office 365 con su cuenta de administrador global.
-2. En la página principal de Office 365, haga clic en **Seguridad y cumplimiento**.
+1. Inicie sesión en su espacio empresarial de prueba de Microsoft 365 con su cuenta de administrador global.
+2. En la página principal de Microsoft 365, haga clic en **Seguridad y cumplimiento**.
 3. En la pestaña Seguridad y cumplimento, haga clic en **Permisos** > **Administrador de eDiscovery**.
 4. Haga clic en la opción **Editar** del Administrador de eDiscovery y, luego, haga clic en **Elegir administrador de eDiscovery**.
 5. Haga clic en **+ Agregar**, busque el nombre de su cuenta de administrador global y agréguela como Supervisor de eDiscovery.
@@ -46,7 +46,7 @@ Luego, realice los pasos aquí indicados para configurar el Supervisor de eDisco
   
 ## <a name="phase-2-add-personally-identifiable-information-to-your-tenant"></a>Fase 2: Agregar información de identificación personal al inquilino
 
-En esta fase, creará un documento con DCP consistente en una serie de números de cuenta bancaria internacional (IBAN) de ejemplo y lo almacenará en un sitio de SharePoint Online de su entorno de desarrollo y pruebas de Office 365.
+En esta fase, creará un documento con DCP consistente en una serie de números de cuenta bancaria internacional (IBAN) de ejemplo y lo almacenará en un sitio de SharePoint Online de su entorno de desarrollo y pruebas de Microsoft 365.
 
 1. En el equipo local, abra Microsoft Word.
 2. Pegue la siguiente tabla en el archivo de Word y guárdelo como "IBANs.docx" en el equipo local.
@@ -99,7 +99,7 @@ En esta fase, creará un tipo de información confidencial personalizado para la
 - Un número de serie de cuatro dígitos. 
     - Los posibles valores de número de serie están comprendidos entre 0000 y 9999.   
 
-Contoso siempre hace referencia a los clientes usando un CCN en la correspondencia interna, la correspondencia externa, los documentos y otros formularios. En dicha empresa se necesita un tipo de información confidencial personalizado que permita detectar el uso de CCN en el contenido de Office 365 para, así, poder poner en marcha medidas de protección en el uso de esta información de identificación personal.
+Contoso siempre hace referencia a los clientes usando un CCN en la correspondencia interna, la correspondencia externa, los documentos y otros formularios. En dicha empresa se necesita un tipo de información confidencial personalizado que permita detectar el uso de CCN en el contenido de Microsoft 365 para, así, poder poner en marcha medidas de protección en el uso de esta información de identificación personal.
 
 1. Siga las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento usando la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) y conéctese al Centro de seguridad y cumplimiento con el UPN de su cuenta de administrador global.
 2. Ejecute los siguientes comandos de PowerShell.
@@ -178,7 +178,7 @@ Contoso siempre hace referencia a los clientes usando un CCN en la correspondenc
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Fase 5: Demostrar la protección de datos
 
-La protección de información personal en Office 365 implica el uso de funciones de prevención de pérdida de datos (DLP).  Con las directivas DLP, toda la información confidencial en Office 365 se puede proteger automáticamente.
+La protección de información personal en Microsoft 365 implica el uso de funciones de prevención de pérdida de datos (DLP).  Con las directivas DLP, toda la información confidencial en Microsoft 365 se puede proteger automáticamente.
 
 Existen varias formas de aplicar la protección. Un nivel de protección de la información con DLP de Office 365 consiste en instruir y concienciar acerca de dónde se almacenan los datos de los residentes de la UE en su entorno y cómo sus empleados pueden tratar estos datos.
 
@@ -189,7 +189,7 @@ En esta fase, creará una directiva DLP y demostrará cómo se aplica al archivo
 3. Haga clic en **+ Crear una directiva**.
 4. En **Empezar con una plantilla o crear una directiva personalizada**, haga clic en **Personalizada** > **Directiva personalizada** > **Siguiente**.
 5. En **Dar un nombre a la directiva**, especifique los siguientes detalles y haga clic en **Siguiente**: a. Nombre: **Directiva de DCP de ciudadanos de la UE** b. Descripción: **Proteger la información de identificación personal de los ciudadanos europeos**.
-6. En **Elegir ubicaciones**, seleccione **Todas las ubicaciones en Office 365**. Se incluirá el contenido del correo electrónico de Exchange y de los documentos de OneDrive y SharePoint. Tras esto, haga clic en **Siguiente**.
+6. En **Elegir ubicaciones**, seleccione **Todas las ubicaciones de Microsoft 365**. Se incluirá el contenido del correo electrónico de Exchange y de los documentos de OneDrive y SharePoint. Tras esto, haga clic en **Siguiente**.
 7. En **Personalizar el tipo de contenido que quiere proteger**, haga clic en **Buscar contenido que incluya:** y haga clic en **Editar**.
 8. En **Elegir los tipos de contenido que se van a proteger**, haga clic en **Agregar** > **Tipos de información confidencial**.
 9. En **Tipos de información confidencial**, haga clic en **+ Agregar**.
@@ -233,7 +233,7 @@ Nota: Este conjunto de datos de ejemplo se obtuvo a partir de información dispo
 
 ## <a name="phase-6-demonstrate-reporting"></a>Fase 6: Demostrar la creación de informes
  
-En esta fase, demostrará cómo crear un informe de Office 365 basándose en la directiva DLP configurada en la fase 5.
+En esta fase, demostrará cómo crear un informe de Microsoft 365 basándose en la directiva DLP configurada en la fase 5.
 
    1. En la pestaña Seguridad y cumplimiento del explorador, haga clic en **Inicio**.
    2. Haga clic en **Informes** > **Panel** > **Coincidencias de directivas DLP**.

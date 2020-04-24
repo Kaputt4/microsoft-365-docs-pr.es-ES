@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
-ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240315"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631297"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -80,7 +80,7 @@ Cada elemento de contenido puede tener una única etiqueta de confidencialidad a
 > Además de aplicar etiquetas en mensajes de correo electrónico y documentos en aplicaciones de Office, ahora las etiquetas de confidencialidad también están disponibles en las siguientes versiones de versión preliminar pública:
 > 
 > - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)
+> - [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)
 
 Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, cualquier configuración de protección de la etiqueta se aplica en el contenido. Con una etiqueta de confidencialidad, puede:
 
@@ -92,14 +92,14 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ![Marca de agua y encabezado aplicados a un documento](../media/Sensitivity-label-watermark-header.png)
     
-    ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [cuando Office 365 aplica el marcado y el cifrado de contenido en](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)de contenido.
+    ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte el artículo sobre [cuando Microsoft 365 aplica el marcado y el cifrado de contenido ](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
 
-- **Proteja el contenido de los contenedores como sitios y grupos** cuando opta por la versión preliminar para [usar etiquetas de confidencial con Microsoft Teams, grupos de Office 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md).
+- **Proteja el contenido de los contenedores como sitios y grupos** cuando opta por la versión preliminar para [usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md).
     
-    Las opciones de configuración para **configuración de sitio y de grupo** no se mostrarán hasta que opte por la versión preliminar. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Office 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
+    Las opciones de configuración para **configuración de sitio y de grupo** no se mostrarán hasta que opte por la versión preliminar. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Microsoft 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
 
 - **Aplicar la etiqueta automáticamente en aplicaciones de Office o recomendar una etiqueta.** Puede elegir qué tipos de información confidencial quiere etiquetar y la etiqueta se puede aplicar automáticamente, o bien puede solicitar a los usuarios que apliquen la etiqueta que recomiende usar. Si recomienda una etiqueta, el mensaje mostrará el texto que elija. Por ejemplo:
     
@@ -141,9 +141,9 @@ Después de crear las etiquetas de confidencialidad, debe publicarlas para que e
 
 Con una directiva de etiqueta, puede:
 
-- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier grupo de seguridad habilitado para correo electrónico, grupo de Office 365 o grupo de distribución dinámico.
+- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier grupo de seguridad habilitado para correo electrónico, grupo de Microsoft 365 o grupo de distribución dinámico.
 
-- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta opción también se aplica a los contenedores, si [habilita las etiquetas de confidencialidad para Microsoft Teams, los grupos de Office 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. 
+- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta opción también se aplica a los contenedores, si [habilita las etiquetas de confidencialidad para Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md). Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico. Considere utilizar una etiqueta predeterminada para establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. Sin embargo, sin el aprendizaje del usuario y otros controles, esta configuración también puede dar como resultado una etiqueta incorrecta. 
 
 - **Requerir una justificación para cambiar una etiqueta.** Si un usuario intenta quitar una etiqueta o reemplazarla por una etiqueta con un número de pedido inferior, puede solicitar que el usuario proporcione una justificación para realizar esa acción. Por ejemplo, un usuario abre un documento con la etiqueta Confidencial (número de pedido 3) y reemplaza dicha etiqueta por una llamada Público (número de pedido 1). Actualmente, el motivo de justificación no es enviado a [la etiqueta Analítica](label-analytics.md) para que el administrador pueda revisarla. No obstante, la [cliente de etiquetas unificada de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) envía esta información a [Azure Information Protection Analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
@@ -197,7 +197,7 @@ Los metadatos aplicados por los dos conjuntos de etiquetas son compatibles, por 
 
 ### <a name="azure-information-protection-clients"></a>Clientes de Azure Information Protection
 
-Cuando se usan etiquetas de confidencialidad en aplicaciones de Office 365 ProPlus en equipos con Windows, tiene la opción de usar un cliente de Azure Information Protection o usar etiquetas integradas en Office.
+Cuando se usan etiquetas de confidencialidad en Aplicaciones de Microsoft 365 para empresas en equipos con Windows, tiene la opción de usar un cliente de Azure Information Protection o usar etiquetas integradas en Office.
 
 De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para obtener más información, incluido cómo cambiar este comportamiento predeterminado, consulte [cliente de etiquetas integrado de Office y cliente de Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 

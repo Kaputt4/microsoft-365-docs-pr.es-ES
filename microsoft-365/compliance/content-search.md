@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de contenido de Office 365
+title: Búsqueda de contenido
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Use la herramienta de búsqueda de contenido del centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en los buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en los buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Microsoft 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632365"
 ---
-# <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
+# <a name="content-search"></a>Búsqueda de contenido
 
-Puede usar la herramienta eDiscovery de búsqueda de contenido en el Centro de cumplimiento en Office 365 o Microsoft 365 para buscar elementos locales como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Úsela para buscar elementos en los siguientes servicios de Office 365:
+Puede usar la herramienta eDiscovery de búsqueda de contenido en el Centro de cumplimiento en Office 365 o Microsoft 365 para buscar elementos locales como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Úsela para buscar elementos en los siguientes servicios:
   
 - Buzones de Exchange Online y carpetas públicas
     
@@ -38,7 +38,7 @@ Puede usar la herramienta eDiscovery de búsqueda de contenido en el Centro de c
     
 - Microsoft Teams 
 
-- Grupos de Office 365
+- Grupos de Microsoft 365
 
 - Grupos de Yammer 
     
@@ -48,7 +48,7 @@ Después de ejecutar una búsqueda de contenido, se mostrará el número de ubic
 
 Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vista previa o exportar los resultados de búsqueda, es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su dirección de correo electrónico y contraseña de Office 365.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su dirección de correo electrónico y contraseña de Microsoft.
     
 2. Haga clic en **Buscar** \> **Búsqueda de contenido**.
     
@@ -85,7 +85,7 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
        - **Ubicaciones**: elegir las ubicaciones de contenido a buscar
     
-      - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo electrónico en todos los buzones de Exchange (incluidos todos los buzones inactivos, los buzones de todos los Grupos de Office 365 y todos los buzones de Microsoft Teams), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos los sitios para los grupos de Office 365 y Microsoft Teams), y los elementos de todas las carpetas públicas de Exchange.
+      - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo electrónico de todos los buzones de Exchange (incluidos todos los buzones inactivos y todos los buzones de Microsoft Teams, grupos de Yammer y grupos de Microsoft 365), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos todos los sitios de Microsoft Teams, grupos de Yammer y grupos de Microsoft 365), y los elementos de todas las carpetas públicas de Exchange.
     
       - **Ubicaciones específicas:** Utilice esta opción para buscar contenido de ubicaciones específicas. Puede buscar contenido en todas las ubicaciones de un servicio específico de Office 365 (por ejemplo, buscar en todos los buzones de Exchange o en todos los sitios de SharePoint) o puede buscar contenido en ubicaciones específicas de cualquiera de los servicios de Office 365 que se muestran. 
     
@@ -178,7 +178,7 @@ Vea las siguientes secciones para obtener más información sobre las búsquedas
   
 [Buscar cuentas de OneDrive](#searching-onedrive-accounts)
   
-[Buscar en grupos de Microsoft Teams y Office 365](#searching-microsoft-teams-and-office-365-groups)
+[Buscar en Microsoft Teams y grupos de Microsoft 365](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Buscando en los grupos Yammer](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ Vea las siguientes secciones para obtener más información sobre las búsquedas
 
 - Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [Límites de búsqueda de contenido](limits-for-content-search.md).
     
-- Microsoft recopila información del rendimiento de las búsquedas de contenido ejecutadas por todas las organizaciones de Office 365. Aunque la complejidad de una consulta de búsqueda puede afectar al tiempo que lleva ejecutarla, en realidad, el factor más determinante es el número de buzones incluidos en la búsqueda. Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda. Sin embargo, en la siguiente tabla le mostramos los tiempos de búsqueda promedio en base al número de buzones.
+- Microsoft recopila información del rendimiento de las búsquedas de contenido ejecutadas por todas las organizaciones. Aunque la complejidad de una consulta de búsqueda puede afectar al tiempo que lleva ejecutarla, en realidad, el factor más determinante es el número de buzones incluidos en la búsqueda. Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda. Sin embargo, en la siguiente tabla le mostramos los tiempos de búsqueda promedio en base al número de buzones.
     
 |**Número de buzones**|**Promedio de tiempo de búsqueda**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
     
     ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- Cuando ejecuta una búsqueda de contenido, Office 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
+- Cuando ejecuta una búsqueda de contenido, Microsoft 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
     
 - Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
   
@@ -239,15 +239,15 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
     
     En el caso poco habitual de que cambie el nombre principal de usuario (UPN) de una persona, la dirección URL de su ubicación de OneDrive cambiará para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la búsqueda de contenido agregando la nueva dirección URL de OneDrive del usuario y eliminando la anterior. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Buscar en Microsoft Teams y Grupos de Office 365
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Buscar en Microsoft Teams y grupos de Microsoft 365
 
-Puede buscar en el buzón asociado a un Grupo de Office 365 o Microsoft Teams. Como Microsoft Teams está basado en los Grupos de Office 365, la búsqueda en ambos es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones del grupo o de los miembros del equipo. Si quiere buscar en estos, debe agregarlos específicamente a la búsqueda.
+Puede buscar en el buzón asociado a un grupo de Microsoft 365 o Microsoft Teams. Como Microsoft Teams se basa en los grupos de Microsoft 365, la búsqueda en ambos es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones del grupo o de los miembros del equipo. Si quiere buscar en estos, debe agregarlos específicamente a la búsqueda.
   
-Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y Grupos de Office 365:
+Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de Microsoft 365:
   
-- Para buscar contenido ubicado en Teams y Grupos de Office 365, debe especificar el buzón y el sitio de SharePoint asociados a un equipo o grupo.
+- Para buscar contenido ubicado en Teams y grupos de Microsoft 365, debe especificar el buzón y el sitio de SharePoint asociados a un equipo o grupo.
     
-- Ejecute el cmdlet **Get-UnifiedGroup** de Exchange Online para ver las propiedades de un equipo o grupo de Office 365. Este es un buen método para obtener la dirección URL del sitio asociado a un equipo o un grupo. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team: 
+- Ejecute el cmdlet **Get-UnifiedGroup** de Exchange Online para ver las propiedades de un equipo o grupo de Microsoft 365. Este es un buen método para obtener la dirección URL del sitio asociado a un equipo o un grupo. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y Grupos de 
     > [!NOTE]
     > Para ejecutar el cmdlet **Get-UnifiedGroup** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
   
-- Cuando se busca en el buzón de un usuario, no se buscará en los equipos o grupos de Office365 a los que pertenece dicho usuario. De forma similar, al buscar en un equipo o en un grupo de Office 365, solo se busca en el buzón de grupo y en el sitio de grupo que especifique. Tampoco se busca en los buzones y las cuentas de OneDrive para la Empresa de los miembros del grupo a menos que los agregue explícitamente a la búsqueda.
+- Cuando se busca en el buzón de un usuario, no se buscará en los equipos o grupos de Microsoft 365 a los que pertenece dicho usuario. De forma similar, al buscar en un equipo o en un grupo de Microsoft 365, solo se busca en el buzón de grupo y en el sitio de grupo que especifique. Tampoco se busca en los buzones y las cuentas de OneDrive para la Empresa de los miembros del grupo a menos que los agregue explícitamente a la búsqueda.
     
-- Si quiere obtener una lista de los miembros de un equipo o grupo de Office 365 puede ver las propiedades en la página **Inicio \> Grupos** del Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online: 
+- Si quiere obtener una lista de los miembros de un equipo o grupo de Microsoft 365 puede ver las propiedades en la página **Inicio \> Grupos** del Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Buscar en buzones que se desconectaron o se ha deshabilitado la licencia
 
-Si la licencia de Exchange Online (o la licencia 365 completa de Office) se quita de una cuenta de usuario en Office 365 o en Azure Active Directory, el buzón del *usuario se convierte* en un buzón desconectado. Esto significa que el buzón ya no está asociado a la cuenta de usuario. Esto es lo que ocurre al buscar en buzones desconectados:
+Si se quita la licencia de Exchange Online (o la licencia de Microsoft 365) de una cuenta de usuario o de Azure Active Directory, el buzón del usuario se convierte en un buzón *desconectado*. Esto significa que el buzón ya no está asociado a la cuenta de usuario. Esto es lo que ocurre al buscar en buzones desconectados:
 
 - Cuando se quita la licencia de un buzón, ya no se puede buscar en él. 
 
