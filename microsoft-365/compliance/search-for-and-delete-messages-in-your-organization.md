@@ -1,5 +1,5 @@
 ---
-title: Buscar y eliminar mensajes de correo electrónico en la organización de Office 365
+title: Buscar y eliminar mensajes de correo electrónico en la organización
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
+ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516835"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626446"
 ---
-# <a name="search-for-and-delete-email-messages"></a>Búsqueda y eliminación de mensajes de correo electrónico
+# <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
 **Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
-Puede usar la característica de búsqueda de contenido de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. De esta forma puede buscar y eliminar correos electrónicos potencialmente dañinos o de alto riesgo, como:
+Puede usar la característica de búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. De esta forma puede buscar y eliminar correos electrónicos potencialmente dañinos o de alto riesgo, como:
   
 - Mensajes que contienen virus o datos adjuntos peligrosos
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimiento de su organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o autenticación federada, no podrá usar las instrucciones del tema anterior sobre la conexión al PowerShell del Centro de seguridad y cumplimiento. Como alternativa, vea las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento con la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Si su cuenta de Microsoft 365 usa la autenticación multifactor (MFA) o autenticación federada, no podrá usar las instrucciones del tema anterior sobre la conexión al PowerShell del Centro de seguridad y cumplimiento. Como alternativa, vea las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento con la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 Cuando se haya conectado al PowerShell del Centro de seguridad y cumplimiento, ejecute los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** que preparó en el paso anterior.
   
@@ -137,9 +137,9 @@ Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.m
     
 - **¿Qué ocurre después de eliminar un mensaje?**
 
-   Un mensaje que se elimina con el comando `New-ComplianceSearchAction -Purge -PurgeType HardDelete` se mueve a la carpeta de depuración y el usuario no puede obtener acceso a él. Después de mover el mensaje a la carpeta de depuración, el mensaje se conserva durante el período de retención de elementos eliminados si está habilitada la recuperación de un único elemento en el buzón. (En Office 365, la recuperación de elemento único se habilita de manera predeterminada cuando se crea un nuevo buzón). Cuando expire el período de retención de elementos eliminados, se marca el mensaje para eliminarlo de forma permanente y se depura de Office 365 la próxima vez que el Asistente para carpetas administradas procese el buzón. 
+   Un mensaje que se elimina con el comando `New-ComplianceSearchAction -Purge -PurgeType HardDelete` se mueve a la carpeta de depuración y el usuario no puede obtener acceso a él. Después de mover el mensaje a la carpeta de depuración, el mensaje se conserva durante el período de retención de elementos eliminados si está habilitada la recuperación de un único elemento en el buzón. (En Microsoft 365, la recuperación de elemento único se habilita de manera predeterminada cuando se crea un nuevo buzón). Cuando expire el período de retención de elementos eliminados, se marca el mensaje para eliminarlo de forma permanente y se depura de Microsoft 365 la próxima vez que el Asistente para carpetas administradas procese el buzón. 
 
-   Si usa el comando `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, los mensajes se mueven a la carpeta de eliminaciones de la carpeta Elementos recuperables del usuario. No se depura inmediatamente de Office 365. El usuario dispone de un plazo para recuperar los mensajes de la carpeta Elementos eliminados, que se basa en el período de retención de elementos eliminados configurado para el buzón. Una vez finalizado este período de retención (o si el usuario purga el mensaje antes de que expire), el mensaje se mueve a la carpeta Purgas y el usuario ya no puede acceder a él. Cuando el mensaje se encuentra en la carpeta de depuración, se conserva durante un período basado en el período de retención de elementos eliminados configurado para el buzón, si se habilitó la recuperación de elemento único en el buzón. (En Office 365, la recuperación de elemento único se habilita de manera predeterminada cuando se crea un nuevo buzón). Cuando expire el período de retención de elementos eliminados, se marca el mensaje para eliminarlo de forma permanente y se depura de Office 365 la siguiente vez que el Asistente para carpetas administradas procese el buzón. 
+   Si usa el comando `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, los mensajes se mueven a la carpeta de eliminaciones de la carpeta Elementos recuperables del usuario. No se depura inmediatamente de Microsoft 365. El usuario dispone de un plazo para recuperar los mensajes de la carpeta Elementos eliminados, que se basa en el período de retención de elementos eliminados configurado para el buzón. Una vez finalizado este período de retención (o si el usuario purga el mensaje antes de que expire), el mensaje se mueve a la carpeta Purgas y el usuario ya no puede acceder a él. Cuando el mensaje se encuentra en la carpeta de depuración, se conserva durante un período basado en el período de retención de elementos eliminados configurado para el buzón, si se habilitó la recuperación de elemento único en el buzón. (En Microsoft 365, la recuperación de elemento único se habilita de manera predeterminada cuando se crea un nuevo buzón). Cuando expire el período de retención de elementos eliminados, se marca el mensaje para eliminarlo de forma permanente y se depura de Microsoft 365 la siguiente vez que el Asistente para carpetas administradas procese el buzón. 
     
 - **¿Qué ocurre si tiene que eliminar un mensaje de más de 50 000 buzones?**
 
@@ -149,7 +149,7 @@ Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.m
 
     No, el comando New-ComplianceSearchAction-Purge no elimina elementos sin indexar. 
     
-- **¿Qué ocurre si se elimina un mensaje de un buzón colocado en conservación local o en retención por litigio o que está asignado a una política de retención de Office 365?**
+- **¿Qué ocurre si se elimina un mensaje de un buzón colocado en conservación local o en retención por litigio o que está asignado a una directiva de retención de Microsoft 365?**
 
     Una vez que el mensaje se depure y se mueva a la carpeta de depuración, este se conserva hasta que expire la duración de la retención. Si la duración de la retención es ilimitada, los elementos se conservan hasta que se elimine la retención o se modifique su duración.
     

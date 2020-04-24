@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636491"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
@@ -62,7 +62,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
   Los administradores de seguridad de Contoso han asignado roles de administrador inferiores a las cuentas de acuerdo con la responsabilidad y puesto laboral de esa persona de TI.
 
-  Para obtener más información, vea [Información sobre los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA para todas las cuentas de usuario
 
@@ -97,7 +97,7 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
 - Supervisión y prevención de ataques con la investigación y respuesta ante amenazas de Office 365
 
-  Contoso usa la [investigación y respuesta ante amenazas de Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) para proteger a los usuarios de Office 365 facilitando la identificación y resolución de los ataques, y para evitar ataques en el futuro.
+  Contoso usa la [investigación y respuesta ante amenazas de Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) para proteger a los usuarios facilitando la identificación y resolución de los ataques, y para evitar ataques en el futuro.
 
 - Protección contra ataques más complejos con Advanced Threat Analytics
 
@@ -107,9 +107,9 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 
 - Protección de los activos digitales confidenciales y altamente regulados con etiquetas de Azure Information Protection
 
-  Contoso determinó tres niveles de protección de datos e implementó [Etiquetas de confidencialidad de Office 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) que los usuarios aplican a los activos digitales. Para los secretos comerciales y otra propiedad intelectual, Contoso usa sub-etiquetas de confidencialidad de datos altamente regulados que cifran el contenido y restringen el acceso a cuentas de usuario y grupos específicos.
+  Contoso determinó tres niveles de protección de datos e implementó [Etiquetas de confidencialidad de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) que los usuarios aplican a los activos digitales. Para los secretos comerciales y otra propiedad intelectual, Contoso usa subetiquetas de confidencialidad de datos altamente regulados que cifran el contenido y restringen el acceso a cuentas de usuario y grupos específicos.
 
-- Evitar filtraciones de datos de la intranet con Prevención de pérdida de datos de Office 365
+- Evitar filtraciones de datos de la intranet con Prevención de pérdida de datos
 
   Contoso ha configurado directivas de [Prevención de Pérdida de Datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para Exchange Online, SharePoint y OneDrive para la Empresa con el fin de evitar que los usuarios compartan datos confidenciales de forma accidental o deliberada.
 

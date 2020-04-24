@@ -1,5 +1,5 @@
 ---
-title: Aplicar etiquetas a datos personales en Office 365
+title: Aplicación de etiquetas a datos personales
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,37 +17,37 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636288"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
+# <a name="apply-labels-to-personal-data"></a>Aplicación de etiquetas a datos personales
 
  Use este tema si utiliza las etiquetas de clasificación como parte de su plan de protección de RGPD. 
 
-Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con las [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
+Si utiliza etiquetas para la protección de datos personales de Microsoft 365, Microsoft recomienda que empiece con las [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
 - Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.
 - Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección. 
 - Usar etiquetas con eDiscovery y Búsqueda de contenido. 
 
-Cloud App Security actualmente no admite etiquetas de retención, pero puede usar tipos de información confidencial de Office 365 con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.
+Cloud App Security actualmente no admite etiquetas de retención, pero puede usar tipos de información confidencial de Microsoft 365 con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.
 
-Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros proveedores y servicios en la nube. Estas también se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.
+Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros proveedores y servicios en la nube. Estas también se recomiendan para los archivos de Microsoft 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.
 
-En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Office 365 con datos que están sujetos al RGPD. Los servicios de Office 365 actualmente no pueden leer archivos cifrados AIP. Por ello, el servicio no puede encontrar datos confidenciales en dichos archivos.
+En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Microsoft 365 con datos que están sujetos al RGPD. Los servicios de Microsoft 365 actualmente no pueden leer archivos cifrados AIP. Por ello, el servicio no puede encontrar datos confidenciales en dichos archivos.
 
-Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Office 365. 
+Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Microsoft 365. 
 
-![Etiquetas de Office 365 y de Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Etiquetas de Microsoft 365 y de Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 En la ilustración:
 
 -   Use las etiquetas de retención para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.
--   Los tipos de información confidencial de Office 365 pueden usarse en Office 365 y con Cloud App Security para supervisar datos personales que residen en otras aplicaciones SaaS.
+-   Los tipos de información confidencial de Microsoft 365 pueden usarse en Microsoft 365 y con Cloud App Security para supervisar datos personales que residen en otras aplicaciones SaaS.
 -   Use las etiquetas de confidencialidad para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.
 
 
@@ -80,7 +80,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 <p>...a documentos con esta etiqueta...</p>
 <p>Datos de cliente</p></td>
 <td align="left"><p>Enviar alerta cuando los archivos con estos atributos...</p>
-<p>Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Office 365, etiqueta de confidencialidad (AIP), expresión personalizada.</p>
+<p>Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Microsoft 365, etiqueta de confidencialidad (AIP), expresión personalizada.</p>
 <p>. . . en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</p><p>Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -204,4 +204,4 @@ En la ilustración:
 
 - Se listan los tipos de información confidencial deseados para RGPD: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia
 
-- Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que agregue a la directiva.
+- Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que añada a la directiva.

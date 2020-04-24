@@ -1,5 +1,5 @@
 ---
-title: Configurar las nuevas capacidades de cifrado de mensajes de Office 365
+title: Configurar las nuevas capacidades de cifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,25 +16,25 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Con las nuevas capacidades de cifrado de mensajes de Office 365 creadas con base en Azure Information Protection, su organización puede usar la comunicación por correo electrónico protegida con personas de dentro y fuera de la organización. Las nuevas funcionalidades de OME funcionan con otras organizaciones de Office 365, Outlook.com, Gmail y otros servicios de correo electrónico.
-ms.openlocfilehash: 766e1d2ae054a5a5e91786a360177492ee9ba1b7
-ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
+description: Con las nuevas capacidades de cifrado de mensajes de Office 365 creadas con base en Azure Information Protection, su organización puede usar la comunicación por correo electrónico protegida con personas de dentro y fuera de la organización. Las nuevas funcionalidades de OME funcionan con otras organizaciones como Outlook.com, Gmail y otros servicios de correo electrónico.
+ms.openlocfilehash: 95ac1528c59dc3f59e0d0e923d78ffb7138456d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680089"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635472"
 ---
-# <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes de Office 365
+# <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
-Las nuevas funcionalidades de cifrado de mensajes de Office 365 (OME) permiten que las organizaciones compartan mensajes de correo electrónico protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Office 365, así como con clientes que no son parte de Office 365 pero que usan Outlook.com, Gmail y otros servicios de correo electrónico.
+Las nuevas funcionalidades de cifrado de mensajes de Office 365 (OME) permiten que las organizaciones compartan mensajes de correo electrónico protegidos con cualquier persona en cualquier dispositivo. Los usuarios pueden intercambiar mensajes protegidos con otras organizaciones de Microsoft 365, así como con quienes no son clientes, usando Outlook.com, Gmail y otros servicios de correo electrónico.
 
-Siga los pasos que se indican a continuación para asegurarse de que las nuevas funcionalidades de OME estén disponibles en su organización 365 de Office.
+Siga los pasos que se indican a continuación para asegurarse de que las nuevas funcionalidades de OME estén disponibles en su organización.
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Verificar que Azure Rights Management está habilitada
 
 Las nuevas funcionalidades de OME aprovechan las características de protección de [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), la tecnología usada por [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) para proteger los correos electrónicos y los documentos mediante controles de acceso y encriptación.
 
-El único requisito previo para usar las nuevas funcionalidades de OME es que la funcionalidad [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) debe estar activada en el espacio empresarial de su organización. Si lo está, Office 365 activa automáticamente las nuevas funcionalidades de OME y no es necesario realizar ninguna acción.
+El único requisito previo para usar las nuevas funcionalidades de OME es que la funcionalidad [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) debe estar activada en el espacio empresarial de su organización. Si lo está, Microsoft 365 activa automáticamente las nuevas funcionalidades de OME y no es necesario realizar ninguna acción.
 
 Azure RMS también se activa automáticamente en la mayoría de los planes compatibles, por lo que probablemente tampoco tendrá que hacer nada al respecto. Vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service) para obtener más información.
 
@@ -55,15 +55,15 @@ Si deshabilitó Azure RMS, o si no se activó automáticamente por algún motivo
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar la administración del espacio empresarial de Azure Information Protection
 
-Este paso es opcional. Permitir que Microsoft administre la clave raíz de Azure Information Protection es la configuración predeterminada y el procedimiento recomendado para la mayoría de los espacios empresariales de Office 365. Si este es el caso, no es necesario que realice ninguna acción.
+Este paso es opcional. Permitir que Microsoft administre la clave raíz de Azure Information Protection es la configuración predeterminada y el procedimiento recomendado para la mayoría de organizaciones. Si este es el caso, no es necesario que realice ninguna acción.
 
 Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requerir la creación y administración de su propia clave raíz (también conocido como Bring your own key (BYOK)). Si este es el caso, le recomendamos que complete los pasos requeridos antes de configurar las nuevas funcionalidades de OME. Vea [Planificar e implementar la clave de espacio empresarial de Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) para obtener más información.
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Comprobar la nueva configuración de OME en PowerShell de Exchange Online
 
-Puede comprobar que su espacio empresarial de Office 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Office 365.
+1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 
@@ -81,7 +81,7 @@ Puede comprobar que su espacio empresarial de Office 365 está configurado corre
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-     - Proporcionar un correo electrónico del remitente es opcional, pero obliga al sistema a ejecutar comprobaciones adicionales. Use la dirección de correo electrónico de cualquier usuario de su espacio empresarial de Office 365.
+     - Proporcionar un correo electrónico del remitente es opcional, pero obliga al sistema a ejecutar comprobaciones adicionales. Use la dirección de correo electrónico de cualquier usuario de su espacio empresarial de Microsoft 365.
 
      Sus resultados deben ser similares a estos:
 
@@ -99,7 +99,7 @@ Puede comprobar que su espacio empresarial de Office 365 está configurado corre
             OVERALL RESULT: PASS
      ```
 
-   - El nombre de su organización de Office 365 reemplazará a *Contoso*.
+   - El nombre de su organización reemplazará a *Contoso*.
 
    - Los nombres de las plantillas predeterminadas pueden diferir de los que se muestran arriba. Vea [Configurar y administrar plantillas para Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) para obtener más información.
 
@@ -111,7 +111,7 @@ Puede comprobar que su espacio empresarial de Office 365 está configurado corre
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Pasos siguientes: defina reglas de flujo de correo para usar las nuevas funcionalidades de OME
 
-Si existen reglas de flujo de correo configuradas previamente para cifrar el correo electrónico de su organización de Office 365, debe actualizar las reglas existentes para usar las nuevas funcionalidades de OME. Para las nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
+Si existen reglas de flujo de correo configuradas previamente para cifrar el correo electrónico de su organización, debe actualizar las reglas existentes para usar las nuevas funcionalidades de OME. Para las nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
 
 >[!IMPORTANT]
 >Si no actualiza las reglas de flujo de correo existentes, los usuarios seguirán recibiendo correo cifrado con el formato de archivo adjunto HTML anterior, en lugar de la nueva experiencia de OME de conexión directa.

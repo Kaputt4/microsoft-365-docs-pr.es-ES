@@ -20,18 +20,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumen: Configure la autenticación federada para su entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: 4796f8f2a7dc6757ccbcb3d608d72ad789d34e40
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067644"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634103"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identidad federada para el entorno de prueba de Microsoft 365
 
 *Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
 
-Office 365 admite la identidad federada. Esto significa que, en lugar de realizar la validación de las credenciales él mismo, Office 365 dirige al usuario que se conecta a un servidor de autenticación federada en el que Office 365 confía. Si las credenciales del usuario son correctas, el servidor de autenticación federada emite un token de seguridad que el cliente envía luego a Office 365 como prueba de autenticación. La identidad federada permite la descarga y el escalado vertical de autenticación para una suscripción de Office 365 y escenarios avanzados de seguridad y autenticación.
+Microsoft 365 admite la identidad federada. Esto significa que, en lugar de realizar la validación de las credenciales él mismo, Microsoft 365 dirige al usuario que se conecta a un servidor de autenticación federada en el que Microsoft 365 confía. Si las credenciales del usuario son correctas, el servidor de autenticación federada emite un token de seguridad que el cliente envía luego a Microsoft 365 como prueba de autenticación. La identidad federada permite la descarga y el escalado vertical de autenticación para una suscripción de Microsoft 365 y escenarios avanzados de seguridad y autenticación.
   
 En este artículo, se describe cómo puede configurar la autenticación federada para el entorno de prueba de Microsoft 365 u Office 365, lo que se traduce en el siguiente resultado:
 
@@ -53,7 +53,7 @@ Existen cinco fases para configurar este entorno de desarrollo y pruebas:
     
 4. Crear un certificado autofirmado y configurar ADFS1 y PROXY1
     
-5. Configurar Office 365 con identidad federada
+5. Configurar Microsoft 365 con identidad federada
     
 > [!NOTE]
 > No puede configurar este entorno de prueba con una suscripción de prueba de Azure. 
@@ -67,11 +67,11 @@ Siga las instrucciones de [Sincronización de hash de contraseñas para Microsof
 Esta configuración se compone de: 
   
 - Suscripciones de prueba o de pago de Microsoft 365 E5 u Office 365 E5.
-- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio TESTLAB de AD DS con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365 u Office 365.
+- La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Azure AD Connect se ejecuta en APP1 para sincronizar periódicamente el dominio TESTLAB de AD DS con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>Fase 2: Crear el servidor de AD FS
 
-Un servidor de AD FS proporciona autenticación federada entre Office 365 y las cuentas del dominio corp.contoso.com hospedado en DC1.
+Un servidor de AD FS proporciona autenticación federada entre Microsoft 365 y las cuentas del dominio corp.contoso.com hospedado en DC1.
   
 Para crear una máquina virtual de Azure para ADFS1, indique el nombre de la suscripción y del grupo de recursos y una ubicación de Azure para la configuración básica. Después, ejecute estos comandos en el símbolo del sistema de Azure PowerShell en el equipo local.
   
@@ -349,19 +349,19 @@ Use estos pasos para configurar el servicio proxy de aplicación web para usar A
 8. En la página **Resultados**, haga clic en **Cerrar**.
 
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a>Fase 5: Configurar Office 365 con identidad federada
+## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>Fase 5: Configurar Microsoft 365 con identidad federada
 
 Use [Azure Portal](https://portal.azure.com) para conectarse a la máquina virtual de APP1 con las credenciales de la cuenta CORP\\User1.
   
-Siga estos pasos para configurar Azure AD Connect y la suscripción de Office 365 con autenticación federada:
+Siga estos pasos para configurar Azure AD Connect y la suscripción de Microsoft 365 con autenticación federada:
   
 1. En el escritorio, haga doble clic en **Azure AD Connect**.
     
 2. En la página **Bienvenido a Azure AD Connect**, haga clic en **Configurar**.
     
-3. En la página **Tareas adicionales**, haga clic en **Cambiar inicio de sesión de usuario** y luego en **Siguiente**.
+3. En la página **Tareas adicionales**, haga clic en **Cambiar inicio de sesión de usuario** y, a continuación, haga clic en **Siguiente**.
     
-4. En la página **Conectar con Azure AD**, escriba el nombre y contraseña de la cuenta de administrador global de Office 365 y luego haga clic en **Siguiente**.
+4. En la página **Conectar con Azure AD**, escriba el nombre y contraseña de la cuenta de administrador global y luego haga clic en **Siguiente**.
     
 5. En la página **Inicio de sesión de usuario**, haga clic en **Federación con AD FS** y luego en **Siguiente**.
     
@@ -373,7 +373,7 @@ Siga estos pasos para configurar Azure AD Connect y la suscripción de Office 36
     
 9. En la página **Cuenta del servicio AD FS**, escriba **CORP\\ADFS-Service** en **Nombre de usuario de dominio** y la contraseña de la cuenta en **Contraseña de usuario de dominio** y luego haga clic en **Siguiente**.
     
-10. En la página **Dominio de Azure AD**, en **Dominio**, seleccione el nombre del dominio que ha creado y agregado anteriormente a la suscripción de Office 365 en la fase 1 y, después, haga clic en **Siguiente**.
+10. En la página **Dominio de Azure AD**, en **Dominio**, seleccione el nombre del dominio que ha creado y agregado anteriormente a la suscripción en la fase 1 y, después, haga clic en **Siguiente**.
     
 11. En la página **Listo para configurar**, haga clic en **Configurar**.
     
@@ -389,7 +389,7 @@ Para demostrar que la autenticación federada funciona:
     
 2. Para obtener las credenciales de inicio de sesión, escriba **user1@**\<el dominio que creado en la fase 1>. 
     
-    Por ejemplo, si el dominio de prueba es **testlab.contoso.com**, escribirá «user1@testlab.contoso.com». Presione TAB o permita que Office 365 le redirija automáticamente.
+    Por ejemplo, si el dominio de prueba es **testlab.contoso.com**, escribirá «user1@testlab.contoso.com». Presione TAB o permita que Microsoft 365 le redirija automáticamente.
     
     Ahora debe ver una página **Su conexión no es privada**. Está viendo esto porque ha instalado un certificado autofirmado en ADFS1 que su equipo de escritorio no puede validar. En una implementación de producción de autenticación federada, usará un certificado de una entidad de certificación de confianza y sus usuarios no verán esta página.
     
@@ -403,9 +403,9 @@ Para demostrar que la autenticación federada funciona:
     
     Debe ver la página **principal de Microsoft Office**.
     
-En este procedimiento, se muestra que su suscripción de prueba de Office 365 está federada con el dominio corp.contoso.com de AD DS hospedado en DC1. Estos son los conceptos básicos del proceso de autenticación:
+En este procedimiento, se muestra que su suscripción de prueba está federada con el dominio corp.contoso.com de AD DS hospedado en DC1. Estos son los conceptos básicos del proceso de autenticación:
   
-1. Cuando use el dominio federado que ha creado en la fase 1 en el nombre de cuenta de inicio de sesión, Office 365 redirige su explorador al FQDN del Servicio de federación y a PROXY1.
+1. Cuando use el dominio federado que ha creado en la fase 1 en el nombre de cuenta de inicio de sesión, Microsoft 365 redirige su explorador al FQDN del Servicio de federación y a PROXY1.
     
 2. PROXY1 envía a su equipo local la página de inicio de sesión de la compañía ficticia.
     
@@ -413,13 +413,13 @@ En este procedimiento, se muestra que su suscripción de prueba de Office 365 es
     
 4. ADFS1 valida CORP\\User1 y la contraseña con DC1 y envía a su equipo local un token de seguridad.
     
-5. El equipo local envía el token de seguridad a Office 365.
+5. El equipo local envía el token de seguridad a Microsoft 365.
     
-6. Office 365 valida que ese token de seguridad se haya creado mediante ADFS1 y permite el acceso.
+6. Microsoft 365 valida que ese token de seguridad se haya creado mediante ADFS1 y permite el acceso.
     
-Su suscripción de evaluación de Office 365 ahora está configurada con la autenticación federada. Puede usar este entorno de desarrollo y prueba para escenarios de autenticación avanzados.
+Su suscripción de evaluación ahora está configurada con la autenticación federada. Puede usar este entorno de desarrollo y prueba para escenarios de autenticación avanzados.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
-Cuando esté listo para implementar la autenticación federada de alta disponibilidad preparada para producción de Microsoft 365 u Office 365 en Azure, consulte [Implementar la autenticación federada de alta disponibilidad para Office 365 en Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
+Cuando esté listo para implementar la autenticación federada de alta disponibilidad preparada para producción de Microsoft 365 u Office 365 en Azure, consulte [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
   

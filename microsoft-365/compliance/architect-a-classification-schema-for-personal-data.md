@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine si su organización va a implementar etiquetas como parte de su plan de RGPD.
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596047"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637140"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Diseño de un esquema de clasificación de datos personales
 
@@ -32,11 +32,11 @@ Nota: la definición de un esquema de clasificación para una organización y la
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Decidir si debe utilizar etiquetas además de tipos de datos confidenciales
 
-Puede tomar uno de los dos métodos para la clasificación de información personal en Office 365. Puede usar cualquiera de estos para protección de RGPD. Si decide usar solo los tipos de información confidencial para clasificación, puede omitir el resto de este tema.
+Puede tomar uno de los dos métodos para la clasificación de información personal en Microsoft 365. Puede usar cualquiera de estos para protección de RGPD. Si decide usar solo los tipos de información confidencial para clasificación, puede omitir el resto de este tema.
 
 Elija una de las siguientes opciones.
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Opción 1: Usar solo los tipos de información confidencial de Office 365
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>Opción 1: Usar solo los tipos de información confidencial de Microsoft 365
 
 - Los tipos de información confidencial funcionan correctamente para identificar y proteger datos personales sujetos al RGPD y otros tipos de normas.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de retención para clasificar los datos en toda la organización para el gobierno y aplicar las reglas de retención basadas en esa clasificación. También puede usar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189065"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637448"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -38,11 +38,11 @@ Es posible que su organización disponga de distintos tipos de contenido que hay
     
 - Visados de trabajo que tengan que **marcarse como registros** para que no se puedan editar ni eliminar. 
     
-En todos estos casos, las etiquetas de retención de Office 365 pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación.
+En todos estos casos, las etiquetas de retención pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación.
   
 Con las etiquetas de retención, puede:
   
-- **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive para la Empresa, SharePoint Online y Grupos de Office 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo correctamente y aplicar la directiva adecuada. 
+- **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook en la Web, Outlook 2010 y versiones posteriores, OneDrive para la Empresa, SharePoint Online y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo correctamente y aplicar la directiva adecuada. 
     
 - **Aplicar etiquetas de retención a contenido automáticamente** si coincide con condiciones específicas, como: 
     
@@ -64,7 +64,7 @@ Con las etiquetas de retención, puede:
 
 - **Aplique una etiqueta de retención predeterminada a una biblioteca de documentos, carpeta o conjunto de documentos** en SharePoint, para que todos los documentos que llegan a esa ubicación hereden la etiqueta de retención predeterminada.  
     
-Las etiquetas de retención se crean en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365.
+Las etiquetas de retención se crean en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Funcionamiento de las etiquetas de retención con directivas de etiquetas de retención
 
@@ -151,9 +151,9 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
   
 |**Si la etiqueta de retención es...**|**La directiva de etiquetas se puede aplicar en…**|
 |:-----|:-----|
-|Se publica a los usuarios finales  <br/> |Exchange, SharePoint, OneDrive, grupos de Office 365  <br/> |
+|Se publica a los usuarios finales  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
 |Se aplica automáticamente basándose en los tipos de información confidencial  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
-|Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Office 365  <br/> |
+|Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
    
 En Exchange, las etiquetas de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar los buzones específicos.
   
@@ -183,7 +183,7 @@ Si los usuarios finales asignarán la etiqueta de retención al contenido, puede
     
 - SharePoint
     
-- Grupos de Office 365 (tanto en el sitio de grupo como el buzón de grupo de Outlook en la Web)
+- Grupos de Microsoft 365 (tanto en el sitio de grupo como el buzón de grupo de Outlook en la Web)
     
 En las secciones siguientes, se explica cómo se mostrarán las etiquetas en diferentes aplicaciones para las personas de su organización.
   
@@ -235,17 +235,17 @@ También puede crear una vista de la biblioteca que contenga la columna **Etique
   
 ![Columna de la biblioteca para etiquetas mostrada en vista personalizada](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Grupos de Office 365
+### <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
-Al publicar etiquetas de retención en un grupo de Office 365, las etiquetas de retención aparecen tanto en el sitio de grupo como en el buzón de grupo de Outlook en la Web. La experiencia de aplicar una etiqueta de retención al contenido es idéntica a la que se muestra anteriormente para el correo electrónico y los documentos.
+Al publicar etiquetas de retención en un grupo de Microsoft 365, las etiquetas de retención aparecen tanto en el sitio de grupo como en el buzón de grupo de Outlook en la Web. La experiencia de aplicar una etiqueta de retención al contenido es idéntica a la que se muestra anteriormente para el correo electrónico y los documentos.
 
-Para conservar el contenido de un grupo de Office 365, necesita usar la ubicación de los grupos de Office 365. Aunque un grupo de Office 365 tiene un buzón de Exchange, una directiva de retención que incluya la ubicación completa de Exchange no incluye contenido en buzones de grupo de Office 365.
+Para conservar el contenido de un grupo de Microsoft 365, necesita usar la ubicación de los Grupos de Microsoft 365. Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya la ubicación completa de Exchange no incluye contenido en buzones de grupo de Microsoft 365.
 
 Además, no es posible usar la ubicación de Exchange para incluir o excluir un buzón de grupo específico. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de grupo, cuando intenta guardar la directiva de retención, recibe el error de que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Aplicar automáticamente una etiqueta de retención según las condiciones
 
-Una de las características más eficaces de las etiquetas es la capacidad de aplicarlas automáticamente al contenido que coincide con determinadas condiciones. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Office 365 realiza el trabajo por ellos.
+Una de las características más eficaces de las etiquetas es la capacidad de aplicarlas automáticamente al contenido que coincide con determinadas condiciones. En este caso, no es necesario que las personas de la organización apliquen las etiquetas de retención. Microsoft 365 realiza el trabajo por ellos.
   
 ![Diagrama de roles y tareas para etiquetas de aplicación automática](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Puede usar las etiquetas de retención para declarar el contenido como un regist
 
 Una etiqueta de retención puede exigir acciones de retención en el contenido. Además, puede usar una etiqueta de retención como una condición en una directiva de prevención de pérdida de datos (DLP) y la directiva DLP puede exigir otras acciones (como restringir el acceso) en contenido que coincida con una etiqueta específica. 
   
-Para obtener más información, vea [Usar una etiqueta como una condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Para obtener más información, vea [Usar una etiqueta de retención como una condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="monitor-retention-labels"></a>Supervisar etiquetas de retención.
 
@@ -433,7 +433,7 @@ Todas las etiquetas de retención configuradas para los clasificadores que se pu
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>Usar etiquetas de retención en lugar de estas características
 
-Las etiquetas de retención se pueden publicar fácilmente para toda la organización, así como su contenido, en Office 365, incluidos Exchange, SharePoint, OneDrive y Grupos de Office 365. Si necesita clasificar contenido o administrar registros en cualquier lugar en Office 365, le recomendamos que use etiquetas de retención.
+Las etiquetas de retención se pueden publicar fácilmente para toda la organización, así como su contenido, en Office 365, incluidos Exchange, SharePoint, OneDrive y Grupos de Microsoft 365. Si necesita clasificar contenido o administrar registros en cualquier lugar en Microsoft 365, le recomendamos que use etiquetas de retención.
   
 Hay otras características que ya se han usado para clasificar contenido o administrar registros en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las etiquetas de retención. Aunque en algunos casos la implementación de etiquetas de retención difiere de las características anteriores, la evolución de las etiquetas de retención determinará el futuro de la administración de registros en Office 365. Por lo tanto, en adelante, se recomienda usar etiquetas de retención para el gobierno de datos en lugar de estas características.
   
@@ -453,16 +453,16 @@ Hay otras características que ya se han usado para clasificar contenido o admin
 
 Los miembros de su equipo de cumplimiento que vayan a crear las etiquetas de retención necesitan permisos para el Centro de &amp;Seguridad y Cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede otorgar acceso a los oficiales de cumplimiento y a otros usuarios al Centro de &amp;Cumplimiento y Seguridad, sin concederles todos los permisos de un administrador de inquilinos. Para hacerlo, le recomendamos que vaya a la página **Permisos** del Centro de &amp;Cumplimiento y Seguridad, edite el grupo de roles del **Administrador de Cumplimiento** y agregue miembros a ese grupo de roles. 
   
-Para obtener más información, vea [Conceder acceso a los usuarios al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener más información, vea [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Estos permisos solo son necesarios para crear y aplicar etiquetas de retención y una directiva de etiquetas. La aplicación de directivas no necesita acceso al contenido.  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>Encontrar los cmdlets de PowerShell para etiquetas
 
 Para usar los cmdlets de etiquetas, necesita:
   
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Use estos cmdlets del Centro de seguridad y cumplimiento de Office 365:
+2. Use estos cmdlets del Centro de seguridad y cumplimiento:
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

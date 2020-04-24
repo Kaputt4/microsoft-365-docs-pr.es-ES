@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Conozca algunas de las formas en las que puede implementar las fases de la infraestructura base de Microsoft 365 para empresas.
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638157"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Estrategias de implementación de la infraestructura base de Microsoft 365 para empresas
 
@@ -90,7 +90,7 @@ Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En marzo, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En junio, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En junio, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En septiembre, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En diciembre, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -100,7 +100,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En abril, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En julio, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En julio, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En octubre, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En enero del año siguiente, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -120,7 +120,7 @@ Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En febrero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En abril, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En abril, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En junio, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En agosto, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -130,7 +130,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En marzo, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En mayo, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En mayo, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En julio, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En septiembre, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -158,7 +158,7 @@ Esta es una experiencia de usuario piloto simplificada como un ejemplo:
 
 - En diciembre, necesito usar mi smartphone para MFA. (Identidad)
 - En enero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En febrero, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En febrero, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En marzo, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En abril, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -168,7 +168,7 @@ Esta es una experiencia de usuario final simplificada como un ejemplo:
 
 - En enero, necesito usar mi smartphone para MFA. (Identidad)
 - En febrero, instalo Windows 10 Enterprise en el escritorio de Windows 8.1. (Windows 10 Enterprise)
-- En marzo, instalo Office 365 ProPlus en reemplazo de Office 2013. (Office 365 ProPlus)
+- En marzo, instalo las Aplicaciones de Microsoft 365 para empresas, que reemplazan a Office 2013. (Aplicaciones de Microsoft 365 para empresas)
 - En abril, obtengo la inscripción de dispositivos y las directivas de aplicaciones y dispositivos aplicadas. (Administración de dispositivos móviles)
 - En mayo, instalo el cliente de Azure Information Protection y me entreno en la aplicación de etiquetas a los documentos. (Information Protection)
 
@@ -186,7 +186,7 @@ El departamento de TI configura la infraestructura de las fases 2 a la 6, luego 
 
 - MFA y otras características de identidad (identidad)
 - Windows 10 Enterprise en dispositivos Windows (Windows 10 Enterprise)
-- Office 365 ProPlus para el conjunto de aplicaciones de Office (Office 365 ProPlus)
+- Aplicaciones de Microsoft 365 para empresas para el conjunto de aplicaciones de Office (Aplicaciones de Microsoft 365 para empresas)
 - Directivas de aplicaciones y dispositivos (administración de dispositivos móviles)
 - Instalación del cliente de Azure Information Protection y entrenamiento en la aplicación de etiquetas a los documentos (Information Protection)
 

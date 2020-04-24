@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo prepararse para mantener Windows y Office en su entorno.
-ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085195"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636740"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Paso 7: Mantenimiento de Windows y Office
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085195"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Paso 7: Mantenimiento de Windows y Office</strong></p>
-<p>Windows 10 y Office 365 ProPlus agregan continuamente nuevas funcionalidades para seguir mejorando las experiencias de usuario y la seguridad con las innovaciones más recientes. Obtenga más información sobre cómo estar al día con actualizaciones semestrales y mensuales, cómo funciona el nuevo modelo de servicio, y las herramientas y opciones que tiene a su disposición.</p></td>
+<p>Windows 10 y Aplicaciones de Microsoft 365 para empresas agregan continuamente nuevas funcionalidades para seguir mejorando las experiencias de usuario y la seguridad con las innovaciones más recientes. Obtenga más información sobre cómo estar al día con actualizaciones semestrales y mensuales, cómo funciona el nuevo modelo de servicio, y las herramientas y opciones que tiene a su disposición.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -39,9 +39,9 @@ ms.locfileid: "42085195"
 >Mantenimiento de Windows y Office es el séptimo paso del ciclo de proceso de implementación recomendado, que cubre los aspectos de planificación para preparar las actualizaciones semianuales. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-Windows 10 y Office 365 ProPlus introducen nuevas opciones de mantenimiento, modelos de soporte y escalas de tiempo de actualización. Estos cambios simplifican el proceso para mantenerse al día con las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para habilitar planes de mantenimiento que se adapten a sus necesidades. Veamos cómo puede prepararse para las actualizaciones de canal semestrales que ofrecen nuevas características y funcionalidades en Windows 10 y Office 365 ProPlus mientras aprovecha nuevas características de la rama actual de Microsoft Endpoint Configuration Manager.
+Windows 10 y Aplicaciones de Microsoft 365 para empresas presentan nuevas opciones de mantenimiento, modelos de soporte técnico y escalas de tiempo de actualización. Estos cambios simplifican el proceso para mantenerse al día con las características más recientes. Además de estas actualizaciones, hay nuevas opciones de configuración para habilitar planes de mantenimiento que se adapten a sus necesidades. Veamos cómo puede prepararse para las actualizaciones de canal semestrales que ofrecen nuevas características y funcionalidades en Windows 10 y Aplicaciones de Microsoft 365 para empresas mientras aprovecha nuevas características de la rama actual de Microsoft Endpoint Configuration Manager.
 
-[Ayudar a los clientes a cambiar a Windows 10 y Office 365 ProPlus](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
+[Ayudar a los clientes a pasar a Aplicaciones de Microsoft 365 para empresas y Windows 10](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
 ## <a name="update-types"></a>Tipos de actualización
 
@@ -75,7 +75,7 @@ Con el modelo acumulativo, siempre se encuentra a una actualización de la más 
 
 Otra ventaja es que, antes de distribuir las actualizaciones para una implementación amplia, publicamos compilaciones a través de los programas Insider de [Office](https://products.office.com/office-insider?tab=Windows-Desktop) y [Windows](https://insider.windows.com/), y esto nos permite recopilar datos de diagnóstico y comentarios antes de publicar actualizaciones para todos los usuarios. Ahora los programas Insider están disponibles para todo el mundo de forma que pueda comprender antes las actualizaciones. Cuando se publiquen las actualizaciones habremos recibido datos de diagnóstico de millones de configuraciones, así que cuando distribuimos las actualizaciones, la calidad será intrínsecamente más predecible
 
-Y una cosa más: como las compilaciones de Office 365 ProPlus Insider reflejan actualizaciones de canal mensuales, si usa un canal semianual para presentar actualizaciones características de Office dos veces al año alineado con Windows, puede validar esas compilaciones, además de usar el canal semianual para publicaciones objetivo.
+Y una cosa más: como las compilaciones de Aplicaciones de Microsoft 365 para empresas Insider reflejan actualizaciones de canal mensuales, si usa un canal semianual para presentar actualizaciones características de Office dos veces al año alineado con Windows, puede validar esas compilaciones, además de usar el canal semianual para publicaciones objetivo.
 
 ### <a name="supporting-management-tools"></a>Compatibilidad con herramientas de administración
 
@@ -83,7 +83,7 @@ También hemos pensado en cómo realizar una implementación de actualizaciones 
 
 [Implementación de actualizaciones de Windows 10 con Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Administración de Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Administrar Aplicaciones de Microsoft 365 para empresas con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Información general sobre los canales de Office y Windows
 
@@ -93,7 +93,7 @@ Windows 10 ofrece tres canales de mantenimiento:
 - **El Canal semianual** proporciona nuevas características con la publicación de Actualización de características dos veces al año
 - **El Canal de mantenimiento a largo plazo** está diseñado solo para dispositivos especializados que necesiten una opción mantenimiento más larga
 
-Office 365 ofrece cuatro canales de mantenimiento:
+Microsoft 365 ofrece cuatro canales de mantenimiento:
 
 - [**El Programa Office Insider**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) para que las organizaciones prueben las características más recientes y funcionalidades de Office en desarrollo y envíen comentarios sobre ellos
 - **El Canal mensual** proporciona a los usuarios las características más recientes de Office tan pronto como estén disponibles
@@ -103,11 +103,11 @@ Office 365 ofrece cuatro canales de mantenimiento:
 Para obtener más información acerca de los canales de mantenimiento de Windows y Office revise la siguiente documentación:
 
 - [Overview of Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels) (Información general sobre Windows como servicio)
-- [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Información general sobre los canales de actualización de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>Implementación de actualizaciones por fases
 
-Tratemos ahora la implementación de estas actualizaciones. Por cada publicación, recomendamos al menos tres fases de implementación para TI: validación, prueba piloto e implementación general. Cuando tenga Windows 10 y Office 365 ProPlus en marcha, podrá utilizar el mantenimiento mensual para estar al día al respecto de cualquier alerta de seguridad crítica y de calidad, y entonces pasará al mantenimiento semianual para las nuevas características.
+Tratemos ahora la implementación de estas actualizaciones. Por cada publicación, recomendamos al menos tres fases de implementación para TI: validación, prueba piloto e implementación general. Cuando tenga Windows 10 y Aplicaciones de Microsoft 365 para empresas en marcha, podrá utilizar el mantenimiento mensual para estar al día al respecto de cualquier alerta de seguridad crítica y de calidad, y entonces pasará al mantenimiento semianual para las nuevas características.
 
 ### <a name="monthly-updating"></a>Actualización mensual
 
@@ -125,7 +125,7 @@ Windows Update para empresas y Windows Server Update Services han sido compatibl
 
 #### <a name="binary-delta-compression"></a>Compresión binaria de delta
 
-La compresión binaria de delta en Office solo se usa si está actualizando al a versión más reciente de Office 365 ProPlus, por lo que no use este enfoque si necesita actualizar a partir de la versión anterior y no puede omitir las actualizaciones.
+La compresión binaria de delta en Office solo se usa si está actualizando al a versión más reciente de Aplicaciones de Microsoft 365 para empresas, por lo que no use este enfoque si necesita actualizar a partir de la versión anterior y no puede omitir las actualizaciones.
 
 Los canales de actualización de Windows y Office pueden administrarse con Configuration Manager usando el proceso de objetivo y aprobación estándar. Además, puede usar las características de directivas y Windows para aplicar la actualización de los canales usados, además de las características relacionadas.
 
@@ -141,7 +141,7 @@ En cuanto a las herramientas, puede usar las opciones de directivas con Windows 
 
 [Canal semianual de Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Canal semianual para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Canal semianual para Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Actualizar las secuencias de tareas
 
@@ -165,7 +165,7 @@ Si ya está usando secuencias de tareas para migrar sus equipos de Windows 7 a W
 
   - Las actualizaciones de características futuras con fecha de salida marzo y empezando por la 1903, seguirán teniendo apoyo durante otros 18 meses a partir de su fecha de salida.
 
-  - Las actualizaciones semianuales de Office 365 ProPlus seguirán teniendo apoyo durante 18 meses.
+  - Las actualizaciones semianuales de Aplicaciones de Microsoft 365 para empresas seguirán teniendo apoyo durante 18 meses.
 
 #### <a name="additional-setup-automation-options-outside-of-task-sequences"></a>Opciones de automatización adicionales fuera de la secuencia de tareas
 
@@ -175,8 +175,8 @@ Si no usa secuencias de tareas personalizadas, puede ejecutar acciones personali
 
 ## <a name="next-step"></a>Paso siguiente 
 
-## <a name="step-8-user-communications-and-traininghttpsakamsmdd8"></a>[Paso 8: Comunicación con los usuarios y aprendizaje](https://aka.ms/mdd8)
+## <a name="step-8-user-communications-and-training"></a>[Paso 8: Comunicación con los usuarios y aprendizaje](https://aka.ms/mdd8)
 
 ## <a name="previous-step"></a>Paso anterior 
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)

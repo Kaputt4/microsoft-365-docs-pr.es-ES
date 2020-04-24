@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo buscar y encontrar datos personales en Office 365.
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597567"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638134"
 ---
 # <a name="search-for-and-find-personal-data"></a>Buscar y encontrar datos personales
 
@@ -33,7 +33,7 @@ Artículo 4: definiciones
 
 > “datos personales” se refiere a cualquier información sobre una persona física identificada o identificable (“interesado”); una persona identificable natural es una que puede identificarse, directa o indirectamente, especialmente con referencia a un identificador, con un nombre, un número de identificación, datos de ubicación, un identificador en línea o uno o más elementos específicos físicos, fisiológicos, genéticos, mentales, económicos, culturales o de identidad social de esa persona natural;
 
-Este artículo explica cómo buscar datos personales almacenados en SharePoint Online y OneDrive para la Empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams).
+Este artículo explica cómo buscar datos personales almacenados en SharePoint Online y OneDrive para la Empresa (que incluye los sitios de todos los grupos de Microsoft 365 y Microsoft Teams).
 
 Buscar datos personales sujetos a GDPR depende del uso de tipos de información confidenciales en Office 365. Estos definen cómo el proceso automatizado reconoce tipos de información específicos como números de servicio de estado y números de tarjeta de crédito. Las directivas de prevención de pérdida de datos pueden utilizarse para buscar datos personales en mail mientras se navega. Usted puede utilizar los tipos de información confidencial que usted conserva para GDPR para encontrar y proteger la información personal que se envía a través del correo electrónico. También véase[ las solicitudes de datos de GDPR administrados con la herramienta de caso de DSR en el centro de seguridad y conformidad](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
@@ -97,13 +97,13 @@ En este momento, los tipos de información confidencial no pueden usarse para bu
 <tbody>
 <tr class="odd"><td align="left"><p>Vaya a Búsqueda de contenido en el Centro de seguridad y cumplimiento</p></td>
 <td align="left"><p>En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** &gt; **Búsqueda de contenido**.</p>
-<p>Consulte <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ejecutar una Búsqueda de contenido en el Centro de seguridad y cumplimiento de Office 365</a>.</p></td>
+<p>Consulte <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Crear un nuevo elemento de búsqueda para cada tipo de información confidencial</p></td>
-<td align="left"><p>Utilice la sintaxis siguiente:</p>
+<td align="left"><p>Use la sintaxis que se muestre a continuación:</p>
 <blockquote>
-<p>SensitiveType:”&lt;tipo&gt;”</p>
+<p>SensitiveType:"&lt;tipo&gt;"</p>
 </blockquote>
 <p>Por ejemplo:</p>
 <blockquote>
@@ -117,8 +117,8 @@ En este momento, los tipos de información confidencial no pueden usarse para bu
 <td align="left"><p>Busque estos tipos de problemas para determinar si la precisión de la consulta es adecuada:</p>
 <p><li>Muchos falsos positivos</li></p>
 <p><li>Faltan de instancias de datos conocidas</li></p>
-<p>Consulte <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar resultados de búsqueda desde el Centro de seguridad y cumplimiento de Office 365</a>.</p>
-<p>Nota: si usa Mozilla Firefox o Chrome, es posible que primero deba descargar los informes con Internet Explorer o Edge para instalar el complemento necesario.</p></td>
+<p>Consulte <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar resultados de búsqueda desde el Centro de seguridad y cumplimiento</a>.</p>
+<p>Nota: si usa Mozilla Firefox o Chrome, es posible que primero deba descargar los informes con Internet Explorer o Microsoft Edge para instalar el complemento necesario.</p></td>
 </tr>
 </tbody>
 </table>

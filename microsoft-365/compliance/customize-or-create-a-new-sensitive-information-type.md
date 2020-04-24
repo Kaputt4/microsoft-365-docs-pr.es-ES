@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Aprenda a modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Aprenda a modificar o crear nuevos tipos de información confidencial para RGPD.
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595487"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637782"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 
-En este artículo se proporcionan tres ejemplos para ilustrar cómo modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
+En este artículo se proporcionan tres ejemplos para ilustrar cómo modificar o crear nuevos tipos de información confidencial para RGPD.
 
 - Modificar un tipo de información confidencial existente: número de tarjeta de débito de la UE
 
@@ -79,7 +79,7 @@ Para personalizar un tipo de información confidencial:
 
 Mejorar la precisión de reglas DLP en todos los sistemas necesita pruebas con un conjunto de datos de ejemplo y puede requerir de ajustes mediante pruebas y modificaciones repetitivas. Este ejemplo muestra las modificaciones al tipo de información confidencial "Número de tarjeta de débito de la UE" para mejorar su precisión.
 
-Al buscar un número de tarjeta de débito de la UE en nuestro ejemplo, ese números e define estrictamente como 16 dígitos con un patrón complejo y está sujeto a la validación de la suma de comprobación. No se puede modificar este modelo debido a la definición de cadena del tipo de información confidencial. Sin embargo, pueden hacerse los siguientes ajustes para mejorar la precisión de la forma en que la DLP de Office 365 busca este tipo de información confidencial en Office 365.
+Al buscar un número de tarjeta de débito de la UE en nuestro ejemplo, ese números e define estrictamente como 16 dígitos con un patrón complejo y está sujeto a la validación de la suma de comprobación. No se puede modificar este modelo debido a la definición de cadena del tipo de información confidencial. Sin embargo, pueden hacerse los siguientes ajustes para mejorar la precisión de la forma en que la DLP busca este tipo de información confidencial en Office 365.
 
 ### <a name="proximity-modification"></a>Modificación de proximidad
 
@@ -294,7 +294,7 @@ CNN de ejemplo:
 >
 > 17040O1118
 
-Contoso siempre hace referencia a los clientes utilizando un CCN en la correspondencia interna, la correspondencia externa, los documentos, etc. Les gustaría crear un tipo de información confidencial para detectar el uso de CCN en Office 365 para poder aplicar protección al uso de esta forma de datos personales.
+Contoso siempre hace referencia a los clientes utilizando un CCN en la correspondencia interna, la correspondencia externa, los documentos, etc. Les gustaría crear un tipo de información confidencial para detectar el uso de CCN para poder aplicar protección al uso de esta forma de datos personales.
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Crear un nuevo tipo de información confidencial para el número de cliente de Contoso
 
@@ -312,7 +312,7 @@ Contoso siempre hace referencia a los clientes utilizando un CCN en la correspon
 <td align="left">Contoso usa PowerShell y Búsqueda de contenido para buscar documentos que coinciden con un conjunto de ejemplo de CCN.</td>
 <td align="left">
 
-<p>#Conectar al Centro de seguridad y &amp; cumplimiento de Office 365</p>
+<p>#Conectar con el Centro de seguridad y cumplimiento</p>
 <p>$adminUser = &quot;juanc@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Crear &amp; iniciar una búsqueda de datos de ejemplo</p>
@@ -363,7 +363,7 @@ Contoso siempre hace referencia a los clientes utilizando un CCN en la correspon
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso crea el tipo de información confidencial con el siguiente PowerShell.</td>
-<td align="left"><p>#Conectar al Centro de seguridad y &amp; cumplimiento de Office 365</p>
+<td align="left"><p>#Conectar con el Centro de seguridad y cumplimiento</p>
 <p>$adminUser = &quot;juanc@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Crear el nuevo tipo de información confidencial</p>

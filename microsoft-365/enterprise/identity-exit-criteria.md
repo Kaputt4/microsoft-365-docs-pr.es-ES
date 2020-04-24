@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Asegúrese de que la configuración cumpla los criterios de Microsoft 365 Enterprise para la infraestructura y los servicios basados en identidades.
-ms.openlocfilehash: 433dec5e84c88dc6422619293f435f2d7199ea2e
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 3706cd84a722e68a8b75274544630719e510345a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637293"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632546"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: Criterios de salida de infraestructura de identidades
 
@@ -33,7 +33,7 @@ Vea también [Requisitos previos](https://docs.microsoft.com/microsoft-365/enter
 <a name="crit-identity-global-admin"></a>
 ## <a name="required-your-global-administrator-accounts-are-protected"></a>Obligatorio: Las cuentas de administrador global están protegidas 
 
-Ha [protegido sus cuentas](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) de administrador global de Office 365 para combatir el compromiso de las credenciales por parte de atacantes que puedan ocasionar infracciones de la suscripción a Microsoft 365.
+Ha [protegido sus cuentas de administrador global](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) para combatir las credenciales puestas en peligro por parte de atacantes que puedan ocasionar infracciones de la suscripción a Microsoft 365.
 
 Si omite este requisito, las cuentas de administrador global pueden ser susceptibles a ataques y estar en peligro, lo que permitiría a un atacante obtener acceso a todo el sistema para recolectar, destruir o bloquear sus datos para pedir un rescate.
 
@@ -47,7 +47,7 @@ Siga estos pasos para comprobar que protegió las cuentas de administrador globa
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Inicie sesión en Office 365 con cada una de las cuentas del paso 1. Cada inicio de sesión tiene que exigir la Azure Multi-Factor Authentication y el método más seguro de autenticación secundaria disponible en su organización.
+2. Inicie sesión con cada una de las cuentas del paso 1. Cada inicio de sesión tiene que exigir la Azure Multi-Factor Authentication y el método más seguro de autenticación secundaria disponible en su organización.
 
 > [!Note]
 > Vea [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) (Conexión a PowerShell de Office 365) para obtener instrucciones de instalación de Azure Active Directory PowerShell para el módulo de Graph e inicio de sesión en Office 365.
@@ -96,11 +96,11 @@ Si omite esta opción, es posible que se pida a sus usuarios que proporcionen cr
 Si es necesario, el [paso 2](identity-secure-your-passwords.md#identity-sso) puede ayudarle con esta opción.
 
 <a name="crit-identity-custom-sign-in"></a>
-## <a name="optional-the-office-365-sign-in-screen-is-personalized-for-your-organization"></a>Opcional: La pantalla de inicio de sesión de Office 365 está personalizada para su organización
+## <a name="optional-the-sign-in-screen-is-personalized-for-your-organization"></a>Opcional: La pantalla de inicio de sesión está personalizada para su organización
 
-Siguió los pasos indicados en [Agregar personalización de marca de la compañía a las páginas de inicio de sesión y del panel de acceso](https://aka.ms/aadpaddbranding) para agregar la personalización de marca de su organización a la página de inicio de sesión de Office 365.
+Siguió los pasos indicados en [Agregar personalización de marca de la compañía a las páginas de inicio de sesión y del panel de acceso](https://aka.ms/aadpaddbranding) para agregar la personalización de marca de su organización a la página de inicio de sesión.
 
-Si omitió esta opción, los usuarios verán una pantalla de inicio de sesión de Office 365 genérica y es posible que no estén seguros de si inician la sesión en el sitio de su organización.
+Si omitió esta opción, los usuarios verán una pantalla de inicio de sesión genérica y es posible que no estén seguros de si inician la sesión en el sitio de su organización.
 
 Si es necesario, el [paso 2](identity-secure-your-passwords.md#identity-custom-sign-in) puede ayudarle con esta opción.
 
@@ -116,11 +116,11 @@ Si es necesario, el [paso 3](identity-secure-user-sign-ins.md#identity-mfa) pued
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
 
-1.  Cree una cuenta de usuario de prueba y asígnele una licencia. 
-2.  Configure la Azure Multi-Factor Authentication para la cuenta de usuario de prueba con el método de verificación adicional que está utilizando para las cuentas de usuario reales, por ejemplo, el envío de un mensaje de texto a su teléfono. 
-3.  Inicie sesión en el portal de Office 365 con la cuenta de usuario de prueba.
-4.  Asegúrese de que MFA le pide la información de verificación adicional y que la autenticación se complete correctamente. 
-5.  Elimine la cuenta de usuario de prueba.
+1.    Cree una cuenta de usuario de prueba y asígnele una licencia. 
+2.    Configure la Azure Multi-Factor Authentication para la cuenta de usuario de prueba con el método de verificación adicional que está utilizando para las cuentas de usuario reales, por ejemplo, el envío de un mensaje de texto a su teléfono. 
+3.    Inicie sesión en el portal de Office 365 con la cuenta de usuario de prueba.
+4.    Asegúrese de que MFA le pide la información de verificación adicional y que la autenticación se complete correctamente. 
+5.    Elimine la cuenta de usuario de prueba.
 
 <a name="crit-identity-ident-prot"></a>
 ## <a name="optional-azure-ad-identity-protection-is-enabled-to-protect-against-credential-compromise-microsoft-365-e5-only"></a>Opcional: Azure AD Identity Protection está habilitado para proteger contra riesgos de credenciales (sólo Microsoft 365 E5)
@@ -148,7 +148,7 @@ Si es necesario, el [paso 3](identity-secure-user-sign-ins.md#identity-ident-pro
 
 Si ya usa un proveedor de identidades local, como Active Directory Domain Services (AD DS), quiere decir que usó Azure AD Connect para sincronizar las cuentas de usuario y los grupos de su proveedor de identidades local con el espacio empresarial de Azure AD.
 
-Con la sincronización de directorios, los usuarios pueden iniciar sesión en Office 365 y en otros Servicios en la nube de Microsoft con las mismas credenciales que usen para iniciar sesión en sus equipos y para obtener acceso a recursos locales.
+Con la sincronización de directorios, los usuarios pueden iniciar sesión en Microsoft 365 y en otros Servicios en la nube de Microsoft con las mismas credenciales que usen para iniciar sesión en sus equipos y para obtener acceso a recursos locales.
 
 Si es necesario, el [Paso 4](identity-add-user-accounts.md#identity-sync) puede ayudarle a cumplir este requisito.
 
@@ -164,9 +164,9 @@ Para comprobar que la autenticación con las credenciales locales funcione corre
 
 Para comprobar que la sincronización de directorios funcione correctamente, siga este procedimiento:
 
-1.  Crear un nuevo grupo de prueba en AD DS.
-2.  Espere hasta la hora de sincronización.
-3.  Compruebe que el nuevo nombre de grupo de prueba se muestre en el espacio empresarial de Azure AD.
+1.    Crear un nuevo grupo de prueba en AD DS.
+2.    Espere hasta la hora de sincronización.
+3.    Compruebe que el nuevo nombre de grupo de prueba se muestre en el espacio empresarial de Azure AD.
 
 <a name="crit-identity-sync-health"></a>
 ## <a name="optional-directory-synchronization-is-monitored"></a>Opcional: La sincronización de directorios se supervisa
@@ -209,11 +209,11 @@ Puede probar la escritura diferida de contraseñas cambiando la contraseña en O
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
 
-Inicie sesión en el portal de Office 365 con el nombre de usuario de su cuenta y la Azure Multi-Factor Authentication. En la página de inicio de sesión, verá los elementos personalizados de su marca.
+Inicie sesión en el portal con el nombre de usuario de su cuenta y la Azure Multi-Factor Authentication. En la página de inicio de sesión, verá los elementos personalizados de su marca.
 
 
 <a name="crit-identity-self-service-groups"></a>
-## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-office-365-groups"></a>Opcional: La administración de grupos de autoservicio está habilitada para grupos específicos de Office 365 y seguridad de Azure AD
+## <a name="optional-self-service-group-management-is-enabled-for-specific-azure-ad-security-and-microsoft-365-groups"></a>Opcional: La administración de grupos de autoservicio está habilitada para grupos específicos de Microsoft 365 y seguridad de Azure AD
 
 Determinó los grupos adecuados para la administración de autoservicio, informó a los propietarios de las responsabilidades y flujos de trabajo de administración de grupos, y [configuró la administración de autoservicio en Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) para esos grupos.
 
@@ -222,13 +222,13 @@ Si omite esta opción, los administradores de TI tendrán que realizar todas las
 Si necesita ayuda con esta opción, vea el [paso 5](identity-use-group-management.md#identity-self-service-groups).
 
 ### <a name="how-to-test"></a>Procedimiento de prueba
-1.  Cree una cuenta de usuario de prueba en Azure AD con Azure Portal.
-2.  Inicie sesión con la cuenta de usuario de prueba y cree un grupo de seguridad de Azure AD de prueba.
-3.  Cierre la sesión y, después, inicie sesión con la cuenta de administrador de TI.
-4.  Configure el grupo de seguridad de prueba para la administración de autoservicio de la cuenta de usuario de prueba.
-5.  Cierre la sesión y, después, inicie sesión con la cuenta de usuario de prueba.
-6.  Use Azure Portal para agregar miembros al grupo de seguridad de prueba.
-7.  Elimine el grupo de seguridad de prueba y la cuenta de usuario de prueba.
+1.    Cree una cuenta de usuario de prueba en Azure AD con Azure Portal.
+2.    Inicie sesión con la cuenta de usuario de prueba y cree un grupo de seguridad de Azure AD de prueba.
+3.    Cierre la sesión y, después, inicie sesión con la cuenta de administrador de TI.
+4.    Configure el grupo de seguridad de prueba para la administración de autoservicio de la cuenta de usuario de prueba.
+5.    Cierre la sesión y, después, inicie sesión con la cuenta de usuario de prueba.
+6.    Use Azure Portal para agregar miembros al grupo de seguridad de prueba.
+7.    Elimine el grupo de seguridad de prueba y la cuenta de usuario de prueba.
 
 <a name="crit-identity-dyn-groups"></a>
 ## <a name="optional-dynamic-group-membership-settings-automatically-add-user-accounts-to-groups-based-on-user-account-attributes"></a>Opcional: La configuración de pertenencia a grupos dinámica agrega automáticamente cuentas de usuario a grupos basándose en los atributos de cuenta de usuario

@@ -1,5 +1,5 @@
 ---
-title: Criterios de salida de implementación para Office 365 ProPlus
+title: Criterios de salida de la implementación de Aplicaciones de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,43 +14,43 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise para la infraestructura de Office 365 ProPlus.
-ms.openlocfilehash: 2f19de8c40c95f27e3b7578d384db39d5feb57e0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Asegúrese de que la configuración cumple con los criterios de Microsoft 365 Enterprise sobre la infraestructura de Aplicaciones de Microsoft 365 para empresas.
+ms.openlocfilehash: 4616c86f516dc5fb17fe43e98ca9b60028299e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066499"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631446"
 ---
-# <a name="office-365-proplus-deployment-exit-criteria"></a>Criterios de salida de implementación para Office 365 ProPlus
+# <a name="microsoft-365-apps-for-enterprise-deployment-exit-criteria"></a>Criterios de salida de la implementación de Aplicaciones de Microsoft 365 para empresas
 
-![Fase 4: Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
+![Fase 4: Aplicaciones de Microsoft 365 para empresas](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)
 
 *Se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise y Microsoft 365 Educación*
 
-Asegúrese de que la configuración cumple con los siguientes criterios necesarios para la infraestructura de Office 365 ProPlus.
+Asegúrese de que la configuración cumple con los siguientes criterios necesarios sobre la infraestructura de Aplicaciones de Microsoft 365 para empresas.
 
 - Se completó la evaluación de la infraestructura y el entorno, incluidos:
 
     - Detalles de los dispositivos cliente
     - Herramientas de implementación
-    - Cuentas y licencias de Office 365
+    - Licencias y cuentas de Microsoft 365
     - Capacidad de red
     - Compatibilidad de aplicaciones
 
 - Se ha completado el plan de implementación, incluidos:
 
-    - Cómo implementar Office 365 ProPlus
-    - Cómo administrar actualizaciones a Office 365 ProPlus
+    - Cómo implementar Aplicaciones de Microsoft 365 para empresas
+    - Cómo administrar actualizaciones de Aplicaciones de Microsoft 365 para empresas
     - Si implementar e instalar desde un origen local en la red o desde la nube
     - Qué dispositivos cliente obtienen qué canales de actualización
     - Se han definido los paquetes de instalación
     - Todos los dispositivos cliente están asignados a grupos de implementación
     - Qué aplicaciones, arquitecturas e idiomas de Office van con qué dispositivos cliente
 
-- Se ha completado la implementación de Office 365 ProPlus, incluidos:
+- Se ha completado la implementación de las Aplicaciones de Microsoft 365 para empresas, entre las que se incluyen:
 
-    - Todos los dispositivos cliente tienen Office 365 ProPlus instalado
+    - Todos los dispositivos cliente tienen instaladas las Aplicaciones de Microsoft 365 para empresas
     - Todos los dispositivos cliente están en el canal de actualización adecuado y reciben actualizaciones
     - Todos los dispositivos cliente tienen los idiomas adecuados instalados o disponibles
 
@@ -58,7 +58,7 @@ Asegúrese de que la configuración cumple con los siguientes criterios necesari
 
 ## <a name="results-and-next-steps"></a>Resultados y siguientes pasos
 
-Los dispositivos cliente tienen instaladas las últimas versiones de Office 365 ProPlus y recibirán actualizaciones.
+Los dispositivos cliente tienen instaladas las últimas versiones de Aplicaciones de Microsoft 365 para empresas y recibirán actualizaciones.
 
 |||
 |:-------|:-----|

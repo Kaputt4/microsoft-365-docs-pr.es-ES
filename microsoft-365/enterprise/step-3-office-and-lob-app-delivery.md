@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo entregar aplicaciones de Office y de LOB.
-ms.openlocfilehash: 1cead6563719c49ab591122e0c3864818746d4f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085358"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636801"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Paso 3: Entrega de aplicaciones de Office y de LOB
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085358"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="130" width="130" /></td>
 <td><p><strong>Paso 3: Entrega de aplicaciones de Office y de LOB</strong></p>
-<p>Asegúrese de que las aplicaciones están empaquetadas y listas para la instalación automática. Obtenga información sobre cómo el empaquetado Hacer clic y ejecutar con Office 365 ProPlus ofrece opciones nuevas para configurar, entregar y mantener actualizadas las aplicaciones de Office.</p></td>
+<p>Asegúrese de que las aplicaciones están empaquetadas y listas para la instalación automática. Obtenga información sobre cómo el empaquetado Hacer clic y ejecutar con Aplicaciones de Microsoft 365 para empresas ofrece opciones nuevas para configurar, entregar y mantener actualizadas las aplicaciones de Office.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,7 +39,7 @@ ms.locfileid: "42085358"
 >Entrega de aplicaciones de Office y de LOB es el tercer paso en la rueda del proceso de implementación recomendado que trata las opciones para instalar y administrar Office y LOB. Para lograr una implementación correcta no omita los dos primeros pasos.  Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-Ya tiene todo listo para entregar sus aplicaciones de Office y Línea de negocio (LOB). Hay varias maneras de hacerlo, incluidas algunas opciones nuevas e interesantes. Aunque algunas aplicaciones solo están disponibles como cualquier una versión compilada de 32 bits o 64 bits, otras como Office 365 ProPlus ofrecen las versiones de 32 bits y 64 bits como código compilado nativo, y una de las mayores decisiones que realizará es qué versión debe implementar. Para aprovechar las ventajas de la potencia de cálculo y RAM adicionales en nuevos dispositivos, Microsoft recomienda usar la versión de 64 bits cuando no haya ninguna dependencia de 32 bits. Para determinar las dificultades de compatibilidad relacionadas con cualquier complemento o archivos que pueda tener, se recomienda que vuelva a visitar el Paso 1 Preparación de dispositivos y aplicaciones antes de continuar.
+Ya tiene todo listo para entregar sus aplicaciones de Office y Línea de negocio (LOB). Hay varias maneras de hacerlo, incluidas algunas opciones nuevas e interesantes. Aunque algunas aplicaciones solo están disponibles como cualquier una versión compilada de 32 bits o 64 bits, otras como Aplicaciones de Microsoft 365 para empresas ofrecen las versiones de 32 bits y 64 bits como código compilado nativo, y una de las mayores decisiones que realizará es qué versión debe implementar. Para aprovechar las ventajas de la potencia de cálculo y RAM adicionales en nuevos dispositivos, Microsoft recomienda usar la versión de 64 bits cuando no haya ninguna dependencia de 32 bits. Para determinar las dificultades de compatibilidad relacionadas con cualquier complemento o archivos que pueda tener, se recomienda que vuelva a visitar el Paso 1 Preparación de dispositivos y aplicaciones antes de continuar.
 
 Si no hay nada que lo impida, se recomienda implementar las versiones de 64 bits de todas las aplicaciones, incluido Microsoft Office. Las aplicaciones compiladas nativas de 64 bits ofrecen el mejor rendimiento y son la mejor opción para el futuro.
 
@@ -57,19 +57,19 @@ Las herramientas de implementación de software como Microsoft Endpoint Configur
 
 ## <a name="pc-imaging"></a>Creación de imágenes de equipo
 
-Otro método popular de entrega de aplicaciones es la creación de imágenes del equipo. En este caso, las aplicaciones se instalan mediante una secuencia de tareas o de forma manual en un equipo de ejemplo, después se captura una imagen del sistema con las aplicaciones necesarias preinstaladas. El enfoque de creación de imágenes para compilar y capturar ahorrará tiempo cuando aprovisione nuevos equipos, pero recuerde que los sistemas operativos y las aplicaciones dentro de la imagen pueden quedarse obsoletos rápidamente. El modelo de actualización acumulativa en Windows 10 y Office 365 ProPlus ayuda con este problema, pero no lo elimina por completo. Por eso, se recomienda un enfoque de imagen ligera, en el que las aplicaciones se instalan desde fuera de la imagen en el momento de la implementación.
+Otro método popular de entrega de aplicaciones es la creación de imágenes del equipo. En este caso, las aplicaciones se instalan mediante una secuencia de tareas o de forma manual en un equipo de ejemplo, después se captura una imagen del sistema con las aplicaciones necesarias preinstaladas. El enfoque de creación de imágenes para compilar y capturar ahorrará tiempo cuando aprovisione nuevos equipos, pero recuerde que los sistemas operativos y las aplicaciones dentro de la imagen pueden quedarse obsoletos rápidamente. El modelo de actualización acumulativo de Windows 10 y Aplicaciones de Microsoft 365 para empresas ayuda con este problema, pero no lo elimina por completo. Por eso, se recomienda un enfoque de imagen ligera, en el que las aplicaciones se instalan desde fuera de la imagen en el momento de la implementación.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-4.png)
 
-Si quiere incluir Office 365 ProPlus en la imagen, recuerde que se usa una activación basada en el usuario; el administrador del sistema no lo puede activar previamente. Use la herramienta de implementación de Office antes de preinstalar Office en el dispositivo del que se va a crear la imagen y omita el inicio de sesión del usuario. Cuando esté implementada la imagen los usuarios finales podrán iniciar sesión con sus credenciales de Office 365 y activar Office 365 ProPlus.
+Si quiere incluir Aplicaciones de Microsoft 365 para empresas en la imagen, recuerde que se usa una activación basada en el usuario; el administrador del sistema no lo puede activar previamente. Use la herramienta de implementación de Office antes de preinstalar Office en el dispositivo del que se va a crear la imagen y omita el inicio de sesión del usuario. Cuando la imagen esté implementada, los usuarios finales pueden iniciar sesión con sus credenciales y activar Aplicaciones de Microsoft 365 para empresas.
 
 [Creación de una secuencia de tareas para instalar el sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Deploy Office 365 ProPlus as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image) (Implementar Office 365 ProPlus como parte de una imagen de sistema operativo)
+[Implementación de las Aplicaciones de Microsoft 365 para empresas como parte de una imagen de sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Hacer clic y ejecutar de Office 
 
-Office 365 ProPlus se instala mediante el método Hacer clic y ejecutar, que reemplaza el empaquetado basado en MSI en todas las versiones de la próxima publicación de Office 2019 para Windows. Aporta una serie de ventajas, incluyendo instalaciones más rápidas, actualizaciones más rápidas y eficaces y desinstalación más limpias. 
+Aplicaciones de Microsoft 365 para empresas se instala mediante el método Hacer clic y ejecutar, que reemplaza el empaquetado basado en MSI en todas las versiones de la próxima publicación de Office 2019 para Windows. Aporta una serie de ventajas, incluyendo instalaciones más rápidas, actualizaciones más rápidas y eficaces y desinstalación más limpias. 
 
 Los programas que se envíen a través de Hacer clic y ejecutar se ejecutan en un entorno virtual de aplicación en el equipo y de esta forma coexisten con otras aplicaciones sin conflicto, también ocupan aproximadamente la mitad del espacio en disco de lo que ocuparían como un paquete basado en MSI. Las aplicaciones de Office se entregan y se administra a través de la [Herramienta de implementación de Office](https://www.microsoft.com/download/details.aspx?id=49117) que es el motor de instalación de Office es necesario descargar, configurar y personalizar las aplicaciones de Office. La Herramienta de implementación de Office lee un archivo XML de configuración que proporciona las instrucciones de metadatos acerca de cómo configurar y personalizar la instalación de Office.
 
@@ -77,15 +77,15 @@ Microsoft recomienda usar la [Herramienta de personalización de Office](https:/
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Si usa Configuration Manager, puede seguir usándolo para la implementación general de Office 365 ProPlus. Configuration Manager (rama actual) tiene compatibilidad nativa con la Herramienta de personalización de Office actualizada, la personalización de paquetes para hacer clic y ejecutar en tiempo de instalación y la compatibilidad nativa para la administración de actualizaciones de software después de la instalación.
+Si usa Configuration Manager, puede seguir usándolo para la implementación general de Aplicaciones de Microsoft 365 para empresas. Configuration Manager (rama actual) tiene compatibilidad nativa con la Herramienta de personalización de Office actualizada, la personalización de paquetes para hacer clic y ejecutar en tiempo de instalación y la compatibilidad nativa para la administración de actualizaciones de software después de la instalación.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guía de implementación de Office 365 ProPlus](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guía de implementación de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Desinstalación de versiones de MSI existentes de Office al actualizar a Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Desinstalar versiones de MSI existentes de Office al actualizar a Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Administración de Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Administrar Aplicaciones de Microsoft 365 para empresas con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -115,8 +115,8 @@ Encontrará más información sobre MSIX en el [sitio Tech Community de MSIX](ht
 
 ## <a name="next-step"></a>Siguiente paso
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[Paso 4: Archivos y configuración del usuario](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[Paso 4: Archivos y configuración del usuario](https://aka.ms/mdd4)
 
 ## <a name="previous-step"></a>Paso anterior
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2) 
+## <a name="step-2-directory-and-network-readiness"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2) 

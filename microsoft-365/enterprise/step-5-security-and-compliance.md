@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre consideraciones importantes de seguridad y cumplimiento para Windows y Office.
-ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 003064f521f1a68c01da9d6a2c9fb19eae7d3eaf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085278"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636777"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Paso 5: Consideraciones de seguridad y cumplimiento
 
@@ -30,20 +30,20 @@ ms.locfileid: "42085278"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Paso 5: Consideraciones de seguridad y cumplimiento</strong></p>
-<p>Windows 10 y Office 365 ProPlus proporcionan nuevas formas de proteger sus datos, dispositivos y usuarios, y de detectar y responder rápidamente ante las amenazas. Además, obtenga información sobre cómo solucionar problemas comunes relacionados con el cifrado de discos, aplicaciones antimalware y directivas al migrar a Windows 10.</p></td>
+<p>Windows 10 y Aplicaciones de Microsoft 365 para empresas proporcionan nuevas formas de proteger sus datos, dispositivos y usuarios, y de detectar y responder rápidamente ante las amenazas. Además, obtenga información sobre cómo solucionar problemas comunes relacionados con el cifrado de discos, aplicaciones antimalware y directivas al migrar a Windows 10.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->Seguridad y cumplimiento es el quinto paso del ciclo de proceso de implementación recomendado, que abarca consideraciones de seguridad y cumplimiento para Windows 10 y Office 365 ProPlus. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
+>Seguridad y cumplimiento es el quinto paso del ciclo de proceso de implementación recomendado, que abarca consideraciones de seguridad y cumplimiento para Windows 10 y Aplicaciones de Microsoft 365 para empresas. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-Ahora es el momento de revisar las opciones para seleccionar como destino nuevas funciones de seguridad y cumplimiento como parte de la implementación de Windows 10 y Office 365 ProPlus, junto con las consideraciones y los bloqueadores de elementos comunes al cambiar desde versiones anteriores de Windows y Office. Muchas de las funciones relacionadas con la seguridad de Windows 10 impulsan el cambio a la plataforma más reciente. Además, la integración con los servicios en la nube de Office 365 y las opciones de identidad con Azure Active Directory da acceso a protecciones nuevas y en continua actualización para datos, dispositivos y usuarios.
+Ahora es el momento de revisar las opciones para seleccionar como destino nuevas funciones de seguridad y cumplimiento como parte de la implementación de Windows 10 y Aplicaciones de Microsoft 365 para empresas, junto con las consideraciones y los bloqueadores de elementos comunes al cambiar desde versiones anteriores de Windows y Office. Muchas de las funciones relacionadas con la seguridad de Windows 10 impulsan el cambio a la plataforma más reciente. Además, la integración con los servicios en la nube y las opciones de identidad con Azure Active Directory da acceso a protecciones nuevas y en continua actualización para datos, dispositivos y usuarios.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Superación de posibles bloqueadores de implementación relacionados con la seguridad
 
-Antes de explicar las funciones nuevas que se pueden agregar al migrar a Windows 10 y Office 365 ProPlus, y conectar esas experiencias con la nube, comenzaremos con algunas tendencias que vemos que a menudo pueden interrumpir el progreso de la implementación.
+Antes de explicar las funciones nuevas que se pueden agregar al migrar a Windows 10 y Aplicaciones de Microsoft 365 para empresas, y conectar esas experiencias con la nube, comenzaremos con algunas tendencias que vemos que a menudo pueden interrumpir el progreso de la implementación.
 
 ### <a name="disk-encryption"></a>Cifrado de disco
 
@@ -63,7 +63,7 @@ Como resultado, por naturaleza estas aplicaciones pueden ser frágiles al cambia
 
 ### <a name="security-policies"></a>Directivas de seguridad
 
-Es posible que la configuración de directiva de grupo de Active Directory que se usaba en versiones anteriores de Windows y Office no se traduzca directamente a Windows 10 y Office 365 ProPlus, y existen otras consideraciones con las funciones nuevas de seguridad y cumplimiento. Es recomendable usar Microsoft Security Compliance Toolkit para obtener una base de referencia de las directivas de seguridad para las versiones actuales de Windows y Office. Además, es importante examinar las directivas de administración de dispositivos móviles como parte de Microsoft Intune.
+Es posible que la configuración de directiva de grupo de Active Directory que se usaba en versiones anteriores de Windows y Office no se traduzca directamente a Windows 10 y Aplicaciones de Microsoft 365 para empresas, y existen otras consideraciones con las funciones nuevas de seguridad y cumplimiento. Es recomendable usar Microsoft Security Compliance Toolkit para obtener una base de referencia de las directivas de seguridad para las versiones actuales de Windows y Office. Además, es importante examinar las directivas de administración de dispositivos móviles como parte de Microsoft Intune.
 
 ![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
@@ -71,11 +71,11 @@ Es posible que la configuración de directiva de grupo de Active Directory que s
 
 ## <a name="new-security-and-compliance-capabilities-in-microsoft-365"></a>Nuevas características de seguridad y cumplimiento de Microsoft 365
 
-Esas eran consideraciones para la migración de las protecciones actuales y los aspectos que tener en cuenta antes del cambio. Ahora veremos las funciones nuevas que se pueden aprovechar al migrar a Windows 10, Office 365 ProPlus y opciones basadas en la nube desde EMS y posteriores.
+Esas eran consideraciones para la migración de las protecciones actuales y los aspectos que tener en cuenta antes del cambio. Ahora veremos las funciones nuevas que se pueden aprovechar al migrar a Windows 10, Aplicaciones de Microsoft 365 para empresas y opciones basadas en la nube desde EMS y posteriores.
 
 ### <a name="identity-and-access-management"></a>Administración de identidad y acceso
 
-Empecemos con la administración de identidad y acceso. Azure Active Directory es el plano de control de identidad para aplicaciones, dispositivos y servicios en la nube, y es la forma moderna de conectarse a Office 365 y otros servicios en la nube. El acceso condicional permite definir requisitos de autenticación diferentes en función de dónde se inicie sesión, el dispositivo que se use, además de aspectos como los comportamientos anómalos.
+Empecemos con la administración de identidad y acceso. Azure Active Directory es el plano de control de identidad para aplicaciones, dispositivos y servicios en la nube, y es la forma moderna de conectarse a Microsoft 365 y otros servicios en la nube. El acceso condicional permite definir requisitos de autenticación diferentes en función de dónde se inicie sesión, el dispositivo que se use, además de aspectos como los comportamientos anómalos.
 
 En el nivel de dispositivo, la biometría puede proporcionar identificadores únicos para que el acceso a los dispositivos y las aplicaciones sea más sencillo y seguro, mientras se avanza hacia el objetivo de eliminar las contraseñas. Windows Hello ofrece la autenticación multifactor basada en dispositivos. Depende del propio dispositivo, del PIN, o bien de un identificador biométrico único como la cara o la huella digital, que se puede aplicar a través de una directiva.
 
@@ -99,7 +99,7 @@ Los servicios en la nube proporcionan otro nivel de protección opcional para me
 
 Junto con Microsoft Intelligent Security Graph, tiene un acceso más rápido a la información y protección contra las amenazas emergentes. Estos son algunos ejemplos que puede aprovechar, comenzando con Office.
 
-**[Prevención de pérdida de datos](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** se integra en Office 365 ProPlus y ayuda a informar a los usuarios de las directivas de seguridad cuando se detecta contenido de alto riesgo como números de identificación o tarjeta de crédito. Las directivas pueden informar o bloquear el envío y el uso compartido después de notificar a los usuarios.
+**[Prevención de pérdida de datos](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** se integra en Aplicaciones de Microsoft 365 para empresas y ayuda a informar a los usuarios de las directivas de seguridad cuando se detecta contenido de alto riesgo como números de identificación o tarjeta de crédito. Las directivas pueden informar o bloquear el envío y el uso compartido después de notificar a los usuarios.
 
 **[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** es un servicio complementario que se puede usar con Office, para permitir a los usuarios clasificar y etiquetar con facilidad sus archivos de Office. Puede desencadenar una acción automática en los archivos etiquetados, como el cifrado o el bloqueo del uso compartido.
 
@@ -117,14 +117,14 @@ Además, **[Datos adjuntos seguros](https://docs.microsoft.com/office365/securit
 
 **[Protección contra vulnerabilidades de seguridad](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** ayuda a reducir la superficie de ataques para las aplicaciones en ejecución impidiendo que el malware llegue a Windows y bloqueando el acceso de los procesos que no son de confianza a las carpetas protegidas.
 
-#### <a name="microsoft-intune"></a>Microsoft Intune
+#### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) funciona como un servicio de administración basado en la nube para dispositivos móviles, incluidos los de IOS, Android y Windows, y ahora se puede configurar para la administración conjunta con el fin de complementar y expandir controles para cargas de trabajo específicas administradas por Configuration Manager. Una ventaja de esto es que se puede requerir a los dispositivos que acceden a recursos protegidos que se inscriban en la administración de dispositivos, incluso los no administrados, los que no estén unidos a un dominio o los que estén unidos a Azure AD. También puede aprovechar la aplicación de directivas pormenorizadas de configuración y cumplimiento normativo en el nivel de la aplicación y el sistema operativo. La configuración y las directivas de aplicación se pueden configurar de forma centralizada y ejecutarse en las aplicaciones de Office 365 ProPlus y la Tienda en Windows 10 con Microsoft Intune.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) funciona como un servicio de administración basado en la nube para dispositivos móviles, incluidos los de IOS, Android y Windows, y ahora se puede configurar para la administración conjunta con el fin de complementar y expandir controles para cargas de trabajo específicas administradas por Configuration Manager. Una ventaja de esto es que se puede requerir a los dispositivos que acceden a recursos protegidos que se inscriban en la administración de dispositivos, incluso los no administrados, los que no estén unidos a un dominio o los que estén unidos a Azure AD. También puede aprovechar la aplicación de directivas pormenorizadas de configuración y cumplimiento normativo en el nivel de la aplicación y el sistema operativo. La configuración y las directivas de aplicación se pueden configurar de forma centralizada y ejecutarse en las aplicaciones de Aplicaciones de Microsoft 365 para empresas y la Tienda en Windows 10 con Microsoft Intune.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)
 
 ## <a name="previous-step"></a>Paso anterior 
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[Paso 4: Archivos y configuración del usuario](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[Paso 4: Archivos y configuración del usuario](https://aka.ms/mdd4)

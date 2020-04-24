@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521516"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632441"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -95,8 +95,6 @@ Cuando la directiva de retención es retener y eliminar:
     > [!NOTE]
     > Para ayudar a evitar la pérdida accidental de datos, el contenido nunca se elimina automáticamente de la biblioteca de suspensión para conservación, sino que se mueve a la Papelera de reciclaje de segundo nivel. Aquí, el período de gracia de 93 días permite a los administradores recuperar este contenido, si es necesario.
     
-2. **Si no se modifica ni elimina el contenido** durante el período de retención, se mueve a la papelera de reciclaje de primer nivel al final del período de retención. Si un usuario elimina el contenido desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las papeleras de reciclaje de primera y segunda etapa. Al final de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la papelera de reciclaje de primer nivel o de segundo nivel. La papelera de reciclaje no está indexada y, por lo tanto, no está disponible para la búsqueda. Como resultado, una búsqueda de eDiscovery no puede encontrar ningún contenido en la papelera de reciclaje para el que aplicar una retención.
-
 2. **Si el contenido no se modifica ni se elimina** durante el período de retención, al final del período de retención, el documento se mueve a la Papelera de reciclaje de primer nivel. Si un usuario elimina el documento desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las Papeleras de reciclaje de primer nivel y de segundo nivel. Después de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la Papelera de reciclaje de primer nivel o de segundo nivel. La papelera de reciclaje no está indexada y, por lo tanto, no está disponible para la búsqueda. Como resultado, una búsqueda de eDiscovery no puede encontrar ningún contenido en la papelera de reciclaje para el que aplicar una retención. 
 
 Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar:
@@ -333,7 +331,7 @@ Estamos trabajando continuamente en optimizar la funcionalidad de retención en 
    > [!NOTE]
    > Se ha usado para ser verdadera que una directiva de retención no pudo eliminar el contenido de Teams que tiene menos de 30 días, pero hemos quitado esta limitación. Ahora, el período de retención de contenido de Teams puede ser el número de días que elija y tan breve como un día. Si tiene un período de retención de un día, se tardará hasta tres días después de que expire el período de retención antes de que se eliminen de forma permanente los mensajes.
     
-En Teams, los archivos compartidos en un chat se almacenan en la cuenta de OneDrive del usuario que ha compartido el archivo. Los archivos que se cargan en canales se almacenan en el sitio de SharePoint para el equipo. Por lo tanto, para conservar o eliminar archivos de Teams, deberá crear una directiva de retención que se aplique a las ubicaciones de grupos de Office 365 y OneDrive. Si desea aplicar una directiva a los archivos compartidos en Teams de un usuario o equipo específico, puede elegir las ubicaciones de grupos de Office 365 y OneDrive e incluir el usuario o equipo específicos.
+En Teams, los archivos compartidos en un chat se almacenan en la cuenta de OneDrive del usuario que ha compartido el archivo. Los archivos que se cargan en canales se almacenan en el sitio de SharePoint para el equipo. Por lo tanto, para conservar o eliminar archivos de Teams, deberá crear una directiva de retención que se aplique a las ubicaciones de OneDrive y Grupos de Microsoft 365. Si desea aplicar una directiva a los archivos compartidos en Teams de un usuario o equipo específico, puede elegir las ubicaciones de grupos de Microsoft 365 y OneDrive e incluir el usuario o equipo específicos.
   
 Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conservación](#locking-a-retention-policy).
   
@@ -342,9 +340,9 @@ Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conserv
 > [!NOTE]
 > Si crea directivas de retención para las ubicaciones de Skype o Teams de su organización, se mostrará una de estas directivas como Directiva de carpeta predeterminada cuando un usuario vea las propiedades de una carpeta de buzón de correo en el cliente de escritorio de Outlook. Este es un problema de presentación incorrecto en Outlook y [un problema conocido](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Qué se debe mostrar como directiva predeterminada para carpetas es la Directiva de retención de buzón que se aplica a la carpeta. La Directiva de retención de Skype o de Teams no se aplica al buzón del usuario.  
 
-### <a name="office-365-groups-locations"></a>Ubicaciones de grupos de Office 365
+### <a name="microsoft-365-groups-locations"></a>Ubicaciones de grupos de Microsoft 365
 
-Para conservar el contenido de un grupo de Office 365, debe usar la ubicación de grupos de Office 365. Aunque un grupo de Office 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de Exchange no incluirá contenido en los buzones de grupo de Office 365. Una directiva de retención aplicada a un grupo de Office 365 incluye tanto el buzón como el sitio del grupo. Una directiva de retención aplicada a un grupo de Office 365 protege los recursos que creó un grupo de Office 365, incluido Microsoft Teams.
+Para conservar el contenido de un grupo de Microsoft 365, debe usar la ubicación de grupos de Microsoft 365. Aunque un grupo de Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de Exchange no incluirá contenido en los buzones de grupo de Microsoft 365. Una directiva de retención aplicada a un grupo de Microsoft 365 incluye tanto el buzón como el sitio del grupo. Una directiva de retención aplicada a un grupo de Microsoft 365 protege los recursos que creó un grupo de Microsoft 365, incluido Microsoft Teams.
 
 Además, no es posible usar la ubicación de Exchange para incluir o excluir un buzón de grupo específico. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de grupo, cuando intenta guardar la directiva de retención, recibe el error de que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange. 
 
@@ -406,7 +404,7 @@ Para entender cómo diferentes directivas de retención se aplican al contenido,
     
 3. **La inclusión explícita gana a la inclusión implícita**. Esto significa que: 
     
-    1. Si un usuario asigna automáticamente una etiqueta con la configuración de retención a un elemento, como un correo electrónico de Exchange o un documento de OneDrive, esa etiqueta tiene prioridad sobre una directiva asignada en el nivel de sitio o buzón, y una etiqueta predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta explícita dice que conserve durante 10 años, pero la directiva asignada al sitio dice que se conserva durante cinco años, la etiqueta tiene prioridad. Las etiquetas de aplicación automática se consideran implícitas en lugar de explícitas, ya que se aplican automáticamente en Office 365.
+    1. Si un usuario asigna automáticamente una etiqueta con la configuración de retención a un elemento, como un correo electrónico de Exchange o un documento de OneDrive, esa etiqueta tiene prioridad sobre una directiva asignada en el nivel de sitio o buzón, y una etiqueta predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta explícita dice que conserve durante 10 años, pero la directiva asignada al sitio dice que se conserva durante cinco años, la etiqueta tiene prioridad. Las etiquetas de aplicación automática se consideran implícitas en lugar de explícitas, ya que se aplican automáticamente en Microsoft 365.
     
     2. Si una directiva de retención incluye una ubicación específica (como el buzón de un usuario o una cuenta de OneDrive para la Empresa), tendrá precedencia sobre cualquier otra directiva de retención que se aplique a los buzones de todos los usuarios o a las cuentas de OneDrive para la Empresa, pero que no incluyan específicamente ese buzón de usuario.
     
@@ -418,13 +416,13 @@ Por último, una etiqueta o directiva de retención no puede eliminar ningún co
   
 ## <a name="use-a-retention-policy-instead-of-these-features"></a>Usar una directiva de retención en lugar de estas características
 
-Se puede aplicar fácilmente una sola directiva de retención a toda la organización y las ubicaciones de Office 365, como Exchange Online, SharePoint Online, OneDrive para la Empresa y grupos de Office 365. Si necesita retener o eliminar contenido de cualquier parte de Office 365, le recomendamos que use una directiva de retención. (También puede usar etiquetas con la configuración de retención. Para obtener más información, vea [Introducción a registros](labels.md)). 
+Se puede aplicar fácilmente una sola directiva de retención a toda la organización y las ubicaciones de Microsoft 365, como Exchange Online, SharePoint Online, OneDrive para la Empresa y Grupos de Microsoft 365. Si necesita retener o eliminar contenido de cualquier parte de Microsoft 365, le recomendamos que use una directiva de retención. (También puede usar etiquetas con la configuración de retención. Para obtener más información, vea [Introducción a registros](labels.md)). 
   
-Hay otras características que se han utilizado anteriormente para retener o eliminar contenido en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las directivas de retención y las etiquetas de retención. Y, para el gobierno de información, se recomienda usar una directiva de retención o etiquetas en lugar de todas estas características. Una directiva de retención es la única característica que puede conservar y eliminar contenido en Office 365.
+Hay otras características que se han utilizado anteriormente para retener o eliminar contenido en Microsoft 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las directivas de retención y las etiquetas de retención. Y, para el gobierno de información, se recomienda usar una directiva de retención o etiquetas en lugar de todas estas características. Una directiva de retención es la única característica que puede conservar y eliminar contenido en Microsoft 365.
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
+- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
     
 - [Conservación local y Retención por juicio](https://go.microsoft.com/fwlink/?linkid=846124) (suspensión de eDiscovery) 
 
@@ -434,7 +432,7 @@ Hay otras características que se han utilizado anteriormente para retener o eli
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online y OneDrive para la Empresa
 
-- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
+- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
     
 - [Agregar contenido a un caso y poner orígenes en suspensión en el Centro de eDiscovery](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (suspensión de eDiscovery) 
     
@@ -460,9 +458,9 @@ Si usa una directiva de conservación, esa Directiva se ha convertido automátic
 
 Para usar los cmdlets de directivas de retención:
   
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Use estos cmdlets del Centro de seguridad y cumplimiento de Office 365:
+2. Use estos cmdlets del Centro de seguridad y cumplimiento:
     
     - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
     
@@ -484,7 +482,7 @@ Para usar los cmdlets de directivas de retención:
 
 Los miembros de su equipo de cumplimiento normativo que vayan a crear las directivas de retención necesitan permisos para el [Centro&amp; de cumplimiento de seguridad](https://protection.office.com/). De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios acceso al [Centro de cumplimiento de seguridad &amp; cumplimiento](https://protection.office.com/), sin concederles todos los permisos de un administrador de inquilinos. Para hacerlo, le recomendamos que vaya a la página de **Permisos** del [Centro de cumplimiento de seguridad &amp; cumplimiento](https://protection.office.com/), edite el grupo de roles **Administrador de cumplimiento normativo** y agregue miembros a ese grupo de roles. 
   
-Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+Para obtener más información, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Estos permisos son necesarios solo para crear y aplicar una directiva de retención. La aplicación de directivas no requiere acceso al contenido.
 

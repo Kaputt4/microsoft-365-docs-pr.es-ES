@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636861"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -39,7 +39,7 @@ ms.locfileid: "42085513"
 >La preparación de los dispositivos y las aplicaciones es el primer paso del ciclo de proceso de implementación recomendado, que abarca los aspectos integrales de la compatibilidad del hardware y las aplicaciones. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-En el pasado, el gran obstáculo para actualizar los equipos de escritorio del usuario era la compatibilidad de las aplicaciones y el hardware. Al planear el cambio a Windows 10 y Office 365 ProPlus, la buena noticia es que casi cualquier aplicación escrita en los últimos 10 años se ejecutará en Windows 10, y que los complementos COM y macros de VBA que su organización usaba en versiones de Office anteriores a Office 2010 seguirán funcionando en las versiones más recientes de Office, sin cambios.
+En el pasado, el gran obstáculo para actualizar los equipos de escritorio del usuario era la compatibilidad de las aplicaciones y el hardware. Al planear el cambio a Windows 10 y Aplicaciones de Microsoft 365 para la empresa, la buena noticia es que casi cualquier aplicación escrita en los últimos 10 años se ejecutará en Windows 10, y que los complementos COM y macros de VBA que su organización usaba en versiones de Office anteriores a Office 2010 seguirán funcionando en las versiones más recientes de Office, sin cambios.
 
 Dicho esto, en función del tamaño y la antigüedad de la organización, es probable que la comprobación de la compatibilidad de las aplicaciones y el hardware siga siendo un paso inicial fundamental en el proceso de implementación en ocho fases recomendado.
 
@@ -89,7 +89,7 @@ Descubrirá que la mayoría de los controladores, aplicaciones y complementos in
 
 Puede usar Análisis de escritorio para evaluar también los problemas de compatibilidad basados en el explorador, identificar sitios web y aplicaciones web a los que tienen acceso los usuarios que aún usan controles ActiveX, objetos del ayudante del explorador, VBScript u otra tecnología heredada que no es compatible con el explorador de Microsoft Edge. Los usuarios todavía necesitarán usar Internet Explorer 11 para estos sitios que puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility), con el Enterprise Mode Site List Manager.
 
-Además, para facilitar el cambio a Office 365 ProPlus, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
+Además, para facilitar el cambio a Aplicaciones de Microsoft 365 para empresas, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ Para obtener más información, vea [Introducción al inventario de software en 
 
 ## <a name="app-assure"></a>App Assure
 
-Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 10 y Office 365 ProPlus es el programa [App Assure](https://aka.ms/appassure), disponible a través del Centro de FastTrack. En caso de problemas de aplicación válida, un ingeniero de Microsoft le guiará con App Assure sin coste adicional para ayudarle a solucionar la compatibilidad de aplicaciones.
+Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 10 y Aplicaciones de Microsoft 365 para empresas es el programa [App Assure](https://aka.ms/appassure), disponible a través del Centro de FastTrack. En caso de problemas de aplicación válida, un ingeniero de Microsoft le guiará con App Assure sin coste adicional para ayudarle a solucionar la compatibilidad de aplicaciones.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuado de herramientas de datos de diagnóstico
 
-Análisis de escritorio no es solo una herramienta que le ayuda a cambiar a Windows 10 y Office 365 ProPlus. Con equipos de escritorio que ejecutan Windows 10 y Office 365, puede usarlo para mantener la implementación y administrar las actualizaciones de características semestrales para que pueda mantenerse al día.
+Análisis de escritorio no es solo una herramienta que le ayuda a cambiar a Windows 10 y Aplicaciones de Microsoft 365 para empresas. Con equipos de escritorio que ejecutan Windows 10 y Office 365, puede usarlo para mantener la implementación y administrar las actualizaciones de características semestrales para que pueda mantenerse al día.
 
 ## <a name="next-step"></a>Paso siguiente 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2)

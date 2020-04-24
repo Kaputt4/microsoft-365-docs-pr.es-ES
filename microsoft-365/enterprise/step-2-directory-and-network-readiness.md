@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los directorios y redes en el entorno.
-ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085445"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636813"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Paso 2: Preparación de los directorios y la red
 
-Asegúrese de que su directorio y la red están configurados y listos para admitir su cambio a Windows 10 y Office 365 ProPlus. Esto requerirá que los Servicios de Azure Active Directory estén instalados para los usuarios y su red debe tener la capacidad de gestionar tanto su tráfico regular como el movimiento potencial de una gran cantidad de datos mientras se actualizan los equipos y se restauran los archivos, la configuración y las aplicaciones de los usuarios.
+Asegúrese de que su directorio y la red están configurados y listos para admitir su cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas. Esto requerirá que los Servicios de Azure Active Directory estén instalados para los usuarios y su red debe tener la capacidad de gestionar tanto su tráfico regular como el movimiento potencial de una gran cantidad de datos mientras se actualizan los equipos y se restauran los archivos, la configuración y las aplicaciones de los usuarios.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ Asegúrese de que su directorio y la red están configurados y listos para admit
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Paso 2: Preparación de los directorios y la red</strong></p>
-<p>Los servicios conectados en la nube en Office 365 ProPlus y las nuevas opciones de implementación, como Windows Autopilot, requieren Azure Active Directory. También es importante que planifique los aspectos relacionados con la red y la conectividad para mover imágenes, aplicaciones, controladores y archivos relacionados de Windows al equipo. Obtenga información sobre cómo las nuevas herramientas y opciones de implementación reducen y simplifican el tráfico de red.</p></td>
+<p>Los servicios conectados en la nube en Aplicaciones de Microsoft 365 para empresas y las nuevas opciones de implementación, como Windows Autopilot, requieren Azure Active Directory. También es importante que planifique los aspectos relacionados con la red y la conectividad para mover imágenes, aplicaciones, controladores y archivos relacionados de Windows al equipo. Obtenga información sobre cómo las nuevas herramientas y opciones de implementación reducen y simplifican el tráfico de red.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -43,17 +43,17 @@ Asegúrese de que su directorio y la red están configurados y listos para admit
 
 La preparación de los directorios y la red es fundamental para asegurar una implementación sin problemas de sistemas operativos y escritorios. Como con cualquier implementación automatizada, es importante asegurar que se puedan alcanzar los recursos compartidos de archivos y la red necesitará poder admitir la transferencia de archivos muy grandes, posiblemente a cientos o incluso miles de PC al mismo tiempo.
 
-Con su cambio a Windows 10 y Office 365 ProPlus, también deberá asegurarse de que la identidad basada en la nube está establecida con Azure Active Directory. Esto es clave no solo para la activación de Office 365 ProPlus, también le permitirá aprovecharse de soluciones de aprovisionamiento modernas como Windows Autopilot.
+Con su cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas, también deberá asegurarse de que la identidad basada en la nube está establecida con Azure Active Directory. Esto es clave no solo para la activación de Aplicaciones de Microsoft 365 para empresas, también le permitirá aprovecharse de soluciones de aprovisionamiento modernas como Windows Autopilot.
 
-En este artículo veremos las herramientas y opciones para preparar los servicios de directorio y los usuarios y permisos de dispositivo, listos para la implementación de Windows 10 y Office 365 ProPlus.
+En este artículo veremos las herramientas y opciones para preparar los servicios de directorio y los usuarios y permisos de dispositivo, listos para la implementación de Windows 10 y Aplicaciones de Microsoft 365 para empresas.
 
 ## <a name="adding-azure-active-directory"></a>Agregar acceso a Azure Active Directory
 
 Si su organización ya usa Office 365, Exchange Online, Microsoft Intune u otros servicios de Microsoft Online, la buena noticia es que ya usa Azure Active Directory. Si es así, solo tiene que asegurarse de que los usuarios de destino para la implementación de escritorio estén en su Azure Active Directory y que tienen licencias asignadas.
 
-Si actualmente no usa Azure Active Directory, hay [numerosos recursos](https://docs.microsoft.com/azure/active-directory/) para ayudarle a configurarlo. También pueden optar a la asistencia personalizada a través de Microsoft FastTrack, como parte de su licencia de Office 365. Puede consultar más información acerca de Microsoft FasTrack [aquí](https://fasttrack.microsoft.com).
+Si actualmente no usa Azure Active Directory, hay [numerosos recursos](https://docs.microsoft.com/azure/active-directory/) para ayudarle a configurarlo. También pueden optar a la asistencia personalizada a través de Microsoft FastTrack, como parte de su licencia. Puede consultar más información acerca de Microsoft FasTrack [aquí](https://fasttrack.microsoft.com).
 
-Una vez que tenga Azure Active Directory, los usuarios pueden iniciar sesión y activar sus aplicaciones de Office 365 ProPlus y usted puede utilizar Microsoft Intune o Windows Autopilot para la implementación automatizada de las aplicaciones y la directiva.
+Una vez que tenga Azure Active Directory, los usuarios pueden iniciar sesión y activar sus aplicaciones de Aplicaciones de Microsoft 365 para empresas y usted puede utilizar Microsoft Intune o Windows Autopilot para la implementación automatizada de las aplicaciones y la directiva.
 
 ## <a name="network-readiness"></a>Preparación de la red
 
@@ -67,7 +67,7 @@ Para las imágenes de Windows sin ninguna personalización debería prever que n
 
 ### <a name="software-updates"></a>Actualizaciones de software
 
-Debe planear el ancho de banda de red para las actualizaciones de software. Windows 10 y Office 365 ProPlus usan el nuevo modelo de mantenimiento que ofrece actualizaciones mensuales y semestrales. Si no conoce este modelo, puede obtener más información acerca de cómo funciona [aquí](https://docs.microsoft.com/windows/deployment/update/waas-overview).
+Debe planear el ancho de banda de red para las actualizaciones de software. Windows 10 y Aplicaciones de Microsoft 365 para empresas usan un nuevo modelo de mantenimiento que ofrece actualizaciones mensuales y semestrales. Si no conoce este modelo, puede obtener más información acerca de cómo funciona [aquí](https://docs.microsoft.com/windows/deployment/update/waas-overview).
 
 El nuevo modelo de mantenimiento incluye actualizaciones de características para Windows dos veces al año, actualizaciones de canal semianuales de Office y actualizaciones de calidad mensuales. Las actualizaciones de características suelen tener un tamaño de 2 a 4 GB y las actualizaciones de canal semianuales de Office son 300 o 400 MB cada una. En cuanto a las actualizaciones mensuales de calidad, pueden ir desde unos cientos megabytes hasta un gigabyte. Esto se debe a que las actualizaciones mensuales son acumulables, de modo que el tamaño aumenta a lo largo de la vida del mantenimiento para cada versión de Windows 10. Dicho esto, hay herramientas que pueden ayudarle a reducir la cantidad de datos que deben pasar por la red para implementar actualizaciones. Trataremos esto con más detalle más adelante.
 
@@ -111,19 +111,19 @@ Nota: Windows BranchCache y Caché del mismo nivel son complementarias y pueden 
 
 [Windows BranchCache frente a caché del mismo nivel](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Optimización de entrega** La Optimización de entrega es otra tecnología de almacenamiento en caché de punto a punto que proporciona controles de red para las implementaciones. Use la Optimización de entrega de Windows 10 para actualizar aplicaciones UWP integradas, instalar aplicaciones desde Microsoft Store y actualizaciones de software con actualizaciones rápidas. Ha estado disponible desde las primeras versiones de Windows 10, aunque solo se ha integrado recientemente con la rama actual de Microsoft Endpoint Configuration Manager. Desde Windows 10 versión 1803 nuevas opciones de configuración le permiten establecer límites de ancho de banda para actualizaciones en segundo plano y trabajos en primer plano como instalar una aplicación desde la Microsoft Store. Optimización de entrega de Windows ahora también es compatible con Office 365 ProPlus durante actualizaciones del cliente, disponible en todas los canales de actualización de cliente de Office 365 compatibles. La compatibilidad con la Optimización de entrega de Windows durante la instalación inicial del cliente de Office 365 estará disponible próximamente.  
+**Optimización de entrega** La Optimización de entrega es otra tecnología de almacenamiento en caché de punto a punto que proporciona controles de red para las implementaciones. Use la Optimización de entrega de Windows 10 para actualizar aplicaciones UWP integradas, instalar aplicaciones desde Microsoft Store y actualizaciones de software con actualizaciones rápidas. Ha estado disponible desde las primeras versiones de Windows 10, aunque solo se ha integrado recientemente con la rama actual de Microsoft Endpoint Configuration Manager. Desde Windows 10 versión 1803 nuevas opciones de configuración le permiten establecer límites de ancho de banda para actualizaciones en segundo plano y trabajos en primer plano como instalar una aplicación desde la Microsoft Store. Optimización de entrega de Windows ahora también es compatible con Aplicaciones de Microsoft 365 para empresas durante actualizaciones del cliente, disponible en todas los canales de actualización de cliente compatibles. La compatibilidad con la Optimización de entrega de Windows durante la instalación inicial del cliente estará disponible próximamente.  
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
-**Consideraciones adicionales para Office 365 ProPlus**
+**Consideraciones adicionales para las Aplicaciones de Microsoft 365 para empresas**
 
-Además de aprovechar la optimización de entrega, hay tres elementos que le ayudarán a reducir la carga de red debido a las implementaciones de Office 365 ProPlus.
+Además de aprovechar la optimización de entrega, hay tres elementos que le ayudarán a reducir la carga de red debido a las implementaciones de Aplicaciones de Microsoft 365 para empresas.
 
-**La compresión binaria de delta** Office 365 ProPlus utiliza compresión binaria de delta para reducir el ancho de banda consumido por actualizaciones de software al actualizar desde la versión más reciente de Office 365 ProPlus hasta la siguiente versión. Pero solo al quitar los cambios a nivel binario de la versión anterior, el impacto de las actualizaciones acumulativas se ha minimizado. Esto tiene el potencial de ahorrar cientos de megas de datos por equipo cada mes. Para poder usar esta función, sin embargo, no puede saltarse ninguna versión. Si lo hace, deberá descargar la actualización acumulativa completa.
+**La compresión binaria de delta** Aplicaciones de Microsoft 365 para empresas utiliza compresión binaria de delta para reducir el ancho de banda consumido por actualizaciones de software al actualizar desde la versión más reciente de Aplicaciones de Microsoft 365 para empresas hasta la siguiente versión. Pero solo al quitar los cambios a nivel binario de la versión anterior, el impacto de las actualizaciones acumulativas se ha minimizado. Esto tiene el potencial de ahorrar cientos de megas de datos por equipo cada mes. Para poder usar esta función, sin embargo, no puede saltarse ninguna versión. Si lo hace, deberá descargar la actualización acumulativa completa.
 
 [Descargar actualizaciones de Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**Archivos de datos de Outlook** Outlook está configurado con frecuencia para almacenar en caché todo el buzón de los usuarios de forma local para su uso sin conexión. En cualquier implementación de Windows, excepto en una actualización local, esto requiere que los archivos de datos de Outlook de los usuario se reconstruyan tras la actualización. Este es un proceso automatizado, pero con los límites de buzón de Outlook que normalmente se establecen en un máximo de 100 GB, volver a almacenar en caché todo el buzón local para todos los usuarios implica una gran cantidad de transferencia de datos. Para reducir la carga de red puede que quiera considerar el uso de directivas de grupo para reducir la configuración "Correo para mantener sin conexión". En Office 365 ProPlus u Office 2016 el valor predeterminado de Outlook se establece en 12 meses. Para reducir el impacto en la red considere la posibilidad configurar el almacenamiento en memoria caché para que dure de 1 a 6 meses. Cambiar esta configuración no afecta el tamaño del buzón en línea y se puede buscar todo el buzón a través de Outlook cuando tenga conexión.
+**Archivos de datos de Outlook** Outlook está configurado con frecuencia para almacenar en caché todo el buzón de los usuarios de forma local para su uso sin conexión. En cualquier implementación de Windows, excepto en una actualización local, esto requiere que los archivos de datos de Outlook de los usuario se reconstruyan tras la actualización. Este es un proceso automatizado, pero con los límites de buzón de Outlook que normalmente se establecen en un máximo de 100 GB, volver a almacenar en caché todo el buzón local para todos los usuarios implica una gran cantidad de transferencia de datos. Para reducir la carga de red puede que quiera considerar el uso de directivas de grupo para reducir la configuración "Correo para mantener sin conexión". En Aplicaciones de Microsoft 365 para empresas para empresas u Office 2016 el valor predeterminado de Outlook se establece en 12 meses. Para reducir el impacto en la red considere la posibilidad configurar el almacenamiento en memoria caché para que dure de 1 a 6 meses. Cambiar esta configuración no afecta el tamaño del buzón en línea y se puede buscar todo el buzón a través de Outlook cuando tenga conexión.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
@@ -135,15 +135,15 @@ Además de aprovechar la optimización de entrega, hay tres elementos que le ayu
 
 [Archivos de OneDrive a petición](https://www.microsoft.com/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-Si aún no ha implementado OneDrive, el cambio de Windows 7 a Windows 10 es una oportunidad perfecta para habilitar OneDrive y se integra perfectamente con Office 365 ProPlus. Considere iniciar esta implementación mientras prepara las aplicaciones y dispositivos. Esto impulsará la sincronización de archivos antes de que empiece a mover imágenes de Windows e implementar aplicaciones a través de la red.
+Si aún no ha implementado OneDrive, el cambio de Windows 7 a Windows 10 es una oportunidad perfecta para habilitar OneDrive y se integra perfectamente con Aplicaciones de Microsoft 365 para empresas. Considere iniciar esta implementación mientras prepara las aplicaciones y dispositivos. Esto impulsará la sincronización de archivos antes de que empiece a mover imágenes de Windows e implementar aplicaciones a través de la red.
 
 ## <a name="next-step"></a>Paso siguiente 
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Paso 3: Entrega de aplicaciones de Office y de LOB](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Paso 3: Entrega de aplicaciones de Office y de LOB](https://aka.ms/mdd3)
 
 ## <a name="previous-step"></a>Paso anterior:
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[Paso 1: Preparación de dispositivos y aplicaciones](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[Paso 1: Preparación de dispositivos y aplicaciones](https://aka.ms/mdd1)
 
 ## <a name="feedback"></a>Comentarios
 

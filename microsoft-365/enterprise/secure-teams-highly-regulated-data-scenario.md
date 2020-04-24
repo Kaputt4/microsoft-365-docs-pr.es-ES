@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un equipo seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951975"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631398"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams para datos altamente regulados 
 
-Este artículo contiene recomendaciones y pasos para configurar un equipo privado en Microsoft Teams que bloquea el acceso a las características de Teams (como chats, reuniones y archivos) únicamente a los miembros y propietarios del grupo de Office 365 para el equipo. 
+Este artículo contiene recomendaciones y pasos para configurar un equipo privado en Microsoft Teams que bloquea el acceso a las características de Teams (como chats, reuniones y archivos) únicamente a los miembros y propietarios del grupo de Microsoft 365 para el equipo. 
 
-Más allá del acceso privado basado en el grupo de Office 365, este artículo describe cómo configurar el sitio de grupo de SharePoint privado subyacente, al que puede obtener acceso desde la sección **Archivos** de un canal de equipo, para la seguridad adicional que necesita para almacenar datos altamente regulados. En este sitio de grupo de SharePoint, puede almacenar y colaborar en archivos, páginas, un calendario compartido, tareas, un bloc de notas y listas.
+Más allá del acceso privado basado en el grupo de Microsoft 365, este artículo describe cómo configurar el sitio de grupo de SharePoint privado subyacente, al que puede obtener acceso desde la sección **Archivos** de un canal de equipo, para la seguridad adicional que necesita para almacenar datos altamente regulados. En este sitio de grupo de SharePoint, puede almacenar y colaborar en archivos, páginas, un calendario compartido, tareas, un bloc de notas y listas.
 
 >[!Note]
 > [Aquí](teams-sharepoint-online-sites-highly-regulated-data.md) encontrará un escenario parecido en el que se usa SharePoint.
@@ -34,13 +34,13 @@ Más allá del acceso privado basado en el grupo de Office 365, este artículo d
 
 Los elementos de configuración para un equipo para datos altamente regulados son:
 
-- Un equipo privado con el grupo de Office 365 correspondiente que tenga cuentas de usuario del propietario y de los miembros.
+- Un equipo privado con el grupo de Microsoft 365 correspondiente que tenga cuentas de usuario del propietario y de los miembros.
 - Seguridad adicional en el sitio de SharePoint subyacente para el equipo que:
   - Impide que los miembros del sitio concedan acceso a otros usuarios.
   - Impide que los usuarios que no sean miembros del sitio soliciten acceso al sitio.
-- Una etiqueta de retención de Office 365 para el sitio de SharePoint subyacente que se aplica automáticamente a los nuevos archivos en el sitio de forma predeterminada para definir directivas de retención.
+- Una etiqueta de retención para el sitio de SharePoint subyacente que se aplica automáticamente a los nuevos archivos en el sitio de forma predeterminada para definir directivas de retención.
 - Una directiva de prevención de pérdida de datos (DLP) que usa la etiqueta de retención y bloquea a los usuarios para que no puedan compartir o enviar archivos fuera de la organización.
-- Una etiqueta de confidencialidad de Office 365 o una subetiqueta de una etiqueta altamente regulada que tiene permisos de cifrado y coautoría en el grupo de Office 365 del equipo. Los usuarios pueden aplicar la etiqueta o subetiqueta a archivos almacenados en la sección **Archivos** del equipo desde la opción **Sensibilidad** de la barra de menú en Word, Excel y PowerPoint.
+- Una etiqueta de confidencialidad o una subetiqueta de una etiqueta altamente regulada que tiene permisos de cifrado y coautoría en el grupo de Microsoft 365 del equipo. Los usuarios pueden aplicar la etiqueta o subetiqueta a archivos almacenados en la sección **Archivos** del equipo desde la opción **Sensibilidad** de la barra de menú en Word, Excel y PowerPoint.
 
 Esta es la configuración resultante con una etiqueta de sensibilidad.
 
@@ -76,7 +76,7 @@ Siga [estas instrucciones](https://support.office.com/article/create-a-team-from
 
 Cuando se crea un equipo privado, estos son los permisos predeterminados:
 
-- El grupo de Office 365 para el equipo (el grupo de equipo) tiene propietarios de grupos y miembros de grupos
+- El grupo de Microsoft 365 para el equipo (el grupo de equipo) tiene propietarios de grupos y miembros de grupos
 - Para el sitio de SharePoint subyacente del equipo (el sitio de Equipo):
   - Los administradores de la colección de sitios están configurados para los propietarios del grupo de Equipo
   - Para el sitio de Equipo: 

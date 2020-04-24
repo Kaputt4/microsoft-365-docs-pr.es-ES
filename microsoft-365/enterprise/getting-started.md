@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducción al proceso de implementación de escritorio.
-ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634223"
 ---
 # <a name="getting-started---desktop-deployment"></a>Introducción: Implementación de escritorio
 
@@ -30,7 +30,7 @@ ms.locfileid: "42067513"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Introducción: Orientaciones acerca de personas, procesos y tecnología</strong></p>
-<p>Descubra las ventajas de Windows 10 y Office 365 ProPlus, los cambios y consideraciones clave frente a implementaciones anteriores, y los procedimientos recomendados para garantizar un transición sin problemas a Windows 10 y Office 365 ProPlus.</p></td>
+<p>Descubra las ventajas de Windows 10 y Aplicaciones de Microsoft 365 para empresas, los cambios y consideraciones clave frente a implementaciones anteriores, y los procedimientos recomendados para garantizar un transición sin problemas a Windows 10 y Aplicaciones de Microsoft 365 para empresas.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
@@ -39,27 +39,27 @@ ms.locfileid: "42067513"
 >En esta serie explicaremos las mejores formas de usar herramientas existentes y le presentaremos tecnologías, servicios y métodos nuevos que puede aplicar gracias a la nube.  Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 >
 
-Le damos la bienvenida al Centro de implementación de escritorio, nuestro lugar central para obtener información acerca de cómo ayudarle a planear y realizar el cambio a Windows 10 y Office 365 ProPlus. Esto le permitirá aprovechar un área de trabajo segura, con las experiencias de colaboración, trabajo en equipo y productividad más recientes.
+Le damos la bienvenida al Centro de implementación de escritorio, nuestro lugar central para obtener información acerca de cómo ayudarle a planear y realizar el cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas. Esto le permitirá aprovechar un área de trabajo segura, con las experiencias de colaboración, trabajo en equipo y productividad más recientes.
 
 Si no ha implementado un nuevo entorno de escritorio desde hace un tiempo, la buena noticia es que ha mejorado mucho en el proceso de implementación. Los desafíos del pasado, como la compatibilidad de aplicaciones, son menos problemáticos hoy en día. Las nuevas herramientas, así como información entregada desde la nube, le permiten avanzar con confianza más rápido y de forma más eficaz que nunca.
 
-En esta introducción vamos a explicar lo que ha cambiado y realizaremos un recorrido por el ciclo de implementación de escritorio. Esto le servirá de guía durante los pasos recomendados para su cambio a Windows 10 y Office 365 ProPlus, proporcionándole detalles sobre cómo aprovechar las herramientas y procesos existentes mientras adopta la tecnología y los enfoques de administración moderna.
+En esta introducción vamos a explicar lo que ha cambiado y realizaremos un recorrido por el ciclo de implementación de escritorio. Esto le servirá de guía durante los pasos recomendados para su cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas, proporcionándole detalles sobre cómo aprovechar las herramientas y procesos existentes mientras adopta la tecnología y los enfoques de administración moderna.
 
 ## <a name="why-upgrade"></a>¿Por qué actualizarse?
 
 Combinados, Windows 10 y Microsoft Intelligence Cloud mejoran su capacidad para proporcionar el espacio de trabajo más potente y seguro para sus usuarios y le permiten simplificar su infraestructura de soporte.
 
-Uno de los inquilinos clave de prácticas moderna son los dispositivos que siempre están actualizados. A través de esta serie se informará acerca de las nuevas funciones que se publican para ayudarle a cambiar a Windows 10 y Office 365 ProPlus y mantenerse al día con las versiones semestrales de ambos.
+Uno de los inquilinos clave de prácticas moderna son los dispositivos que siempre están actualizados. A través de esta serie se informará acerca de las nuevas funciones que se publican para ayudarle a cambiar a Windows 10 y Aplicaciones de Microsoft 365 para empresas y mantenerse al día con las versiones semestrales de ambos.
 
 [Windows 10 para el profesional de TI](https://www.microsoft.com/itpro/windows-10)
 
-[About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Información acerca de Office 365 ProPlus en un entorno empresarial)
+[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Acerca de las Aplicaciones de Microsoft 365 para empresas en entorno empresarial).
 
 ## <a name="what-has-changed"></a>¿Qué ha cambiado?
 
 Comencemos echando un vistazo a lo que ha cambiado y mejorado desde su última implementación de escritorio. Si lleva tiempo sin cambiar de entorno de escritorio, es probable que siga usando Windows 7 y Office 2010 o 2013. En ese caso, verá que hay algunas cosas que han evolucionado desde su última actualización importante. Aquí describimos algunos de los cambios principales:
 
-**Identidades y acceso:** Windows 10 y Office 365 ProPlus, con su conectividad a los servicios de administración, la seguridad y la productividad en la nube, tienen en su base un nuevo servicio de Administración de identidades y acceso: Azure Active Directory (Azure AD). Esto permite conectividad segura y el inicio de sesión único en los servicios de nube, lo que significa que va a necesitar Azure AD para aprovechar las ventajas de los servicios de Microsoft 365 como Office 365, Intune o Windows Autopilot.
+**Identidades y acceso:** Windows 10 y Aplicaciones de Microsoft 365 para empresas, con su conectividad a los servicios de administración, la seguridad y la productividad en la nube, tienen en su base un nuevo servicio de Administración de identidades y acceso: Azure Active Directory (Azure AD). Esto permite conectividad segura y el inicio de sesión único en los servicios de nube, lo que significa que va a necesitar Azure AD para aprovechar las ventajas de los servicios de Microsoft 365 como Office 365, Intune o Windows Autopilot.
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 
@@ -73,13 +73,13 @@ Comencemos echando un vistazo a lo que ha cambiado y mejorado desde su última i
 
 [Windows Autopilot](https://www.microsoft.com/windowsforbusiness/windows-autopilot)
 
-**Implementaciones de Hacer clic y ejecutar:** cuando aprovisiona aplicaciones de escritorio de Office, Office 365 ProPlus es la opción preferida. Le da acceso a las nuevas innovaciones de Office mientras se desarrollan, por lo que no tendrá que esperar años antes de obtener las nuevas funciones. También usará una nueva instalación denominada Hacer clic y ejecutar.
+**Implementaciones de Hacer clic y ejecutar:** cuando aprovisiona aplicaciones de escritorio de Office, Aplicaciones de Microsoft 365 para empresas es la opción preferida. Le da acceso a las nuevas innovaciones de Office mientras se desarrollan, por lo que no tendrá que esperar años antes de obtener las nuevas funciones. También usará una nueva instalación denominada Hacer clic y ejecutar.
 
 Hacer clic y ejecutar es bastante diferente de los paquetes basados en MSI del pasado. Hacer clic y ejecutar es más rápido, ligero y es compatible con las actualizaciones en segundo plano para que los usuarios se mantengan productivos. Sigue siendo una copia local de Office y aún puede usar las herramientas de implementación existentes, como Microsoft Endpoint Configuration Manager, para aprovisionar y configurar las aplicaciones.
 
-[Guía de implementación de Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guía de implementación de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 
-**Actualizaciones semestrales:** una vez que haya cambiado a Windows 10 y Office 365 ProPlus, las actualizaciones se entregan de forma semestral con nuevas características. Pero con la capacidad de Microsoft de ofrecer información de la nube para ayudarle, puede implementar rápidamente y con confianza estas actualizaciones a cientos o miles de dispositivos. Como una actualización local, la actualización de características conserva aplicaciones, datos y configuraciones de la versión anterior.
+**Actualizaciones semestrales:** una vez que haya cambiado a Windows 10 y Aplicaciones de Microsoft 365 para empresas, las actualizaciones se entregan de forma semestral con nuevas características. Pero con la capacidad de Microsoft de ofrecer información de la nube para ayudarle, puede implementar rápidamente y con confianza estas actualizaciones a cientos o miles de dispositivos. Como una actualización local, la actualización de características conserva aplicaciones, datos y configuraciones de la versión anterior.
 
 ## <a name="the-deployment-process-wheel"></a>El ciclo de proceso de implementación
 
@@ -93,7 +93,7 @@ Antes de empezar, deberá crear un plan de alto nivel y obtener a el respaldo de
 
 [Windows BranchCache frente a caché del mismo nivel](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**[Paso 3: Entrega aplicaciones de línea de negocio y de Office](https://aka.ms/mdd3) ** Aunque Windows sigue admitiendo instalaciones basadas en MSI, ahora también admite mecanismos de instalaciones más recientes, optimizados para la distribución automática y las actualizaciones continuas. Los clientes de Office 365 ProPlus y Office 2019 usan la tecnología de instalación Hacer clic y ejecutar. Le recomendamos que haga que un rango de aplicaciones de UWP estén disponibles, y es posible que implemente aplicaciones de línea de negocios internas y aplicaciones de terceros que usan las nuevas aplicaciones de empaquetado basado en MSIX. Este paso asegura que las aplicaciones están preparadas para la implementación automatizada, y que todo saldrá bien, independientemente de si usa aplicaciones Hacer clic y ejecutar, MSIX, convencionales basadas en MSI o UWP implementadas desde un Microsoft Store para Empresas que configure.
+**[Paso 3: Entrega aplicaciones de línea de negocio y de Office](https://aka.ms/mdd3) ** Aunque Windows sigue admitiendo instalaciones basadas en MSI, ahora también admite mecanismos de instalaciones más recientes, optimizados para la distribución automática y las actualizaciones continuas. Los clientes de las Aplicaciones de Microsoft 365 para empresas y Office 2019 usan la tecnología de instalación Clic para ejecutar. Le recomendamos que haga que un rango de aplicaciones de UWP estén disponibles, y es posible que implemente aplicaciones de línea de negocios internas y aplicaciones de terceros que usan las nuevas aplicaciones de empaquetado basado en MSIX. Este paso asegura que las aplicaciones están preparadas para la implementación automatizada, y que todo saldrá bien, independientemente de si usa aplicaciones Hacer clic y ejecutar, MSIX, convencionales basadas en MSI o UWP implementadas desde un Microsoft Store para Empresas que configure.
 
 [MSIX Intro](https://blogs.msdn.microsoft.com/sgern/2018/06/15/msix-intro/)
 
@@ -103,7 +103,7 @@ Como en anteriores actualizaciones, la Herramienta de migración de estado de us
 
 [Redirigir y mover las carpetas conocidas de Windows a OneDrive](https://docs.microsoft.com/onedrive/redirect-known-folders)
 
-**[Paso 5: Seguridad y cumplimiento](https://aka.ms/mdd5)** El área de seguridad y cumplimiento tiene muchas ventajas a la hora de trasladarse a Windows 10 y Office 365 ProPlus. Es importante que se familiarice con las nuevas características integradas y las compare con lo que ya tiene. Por ejemplo, las nuevas capacidades de Windows 10 con seguridad basada en virtualización pueden evitar el robo de credenciales, proteger contra vulnerabilidades del navegador y la ejecución de código malicioso al aislar los procesos principales y secretos del sistema operativo. Además, los servicios de la nube como Advanced Threat Protection proporcionan una plataforma unificada para fortalecimiento de la seguridad, detección de incursiones, investigación y respuesta. Advanced Threat Protection también puede protegerle contra archivos adjuntos de correo, hipervínculos poco seguros y mucho más.
+**[Paso 5: Seguridad y cumplimiento](https://aka.ms/mdd5)** El área de seguridad y cumplimiento tiene muchas ventajas a la hora de trasladarse a Windows 10 y Aplicaciones de Microsoft 365 para la empresa. Es importante que se familiarice con las nuevas características integradas y las compare con lo que ya tiene. Por ejemplo, las nuevas capacidades de Windows 10 con seguridad basada en virtualización pueden evitar el robo de credenciales, proteger contra vulnerabilidades del navegador y la ejecución de código malicioso al aislar los procesos principales y secretos del sistema operativo. Además, los servicios de la nube como Advanced Threat Protection proporcionan una plataforma unificada para fortalecimiento de la seguridad, detección de incursiones, investigación y respuesta. Advanced Threat Protection también puede protegerle contra archivos adjuntos de correo, hipervínculos poco seguros y mucho más.
 
 [Microsoft Security](https://www.microsoft.com/security/default.aspx)
 
@@ -111,18 +111,18 @@ Como en anteriores actualizaciones, la Herramienta de migración de estado de us
 
 [Introducción a la implementación de un sistema operativo en Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-**[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7) ** Esto representa un gran cambio en la manera de mantener los escritorios de los usuarios. Con el cambio a Windows 10 y Office 365 ProPlus puede pasar a administrar Windows y Office como un servicio. En lugar de un cambio masivo en tecnología cada pocos años, introducirá continuamente nuevas funciones, experiencias y protecciones para el usuario. Las actualizaciones de características semestrales ofrecen nuevas funciones en el otoño y la primavera de cada año, mientras que las actualizaciones acumulativas mensuales contienen correcciones de errores, de fiabilidad y de seguridad. Aunque puede optar por implementar al cliente de Office 2019, le recomendamos cambiar a Office 365 ProPlus. Este sigue un plan de servicio similar a Windows por lo que los usuarios también reciben actualizaciones para las aplicaciones de Office de forma regular.
+**[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7) ** Esto representa un gran cambio en la manera de mantener los escritorios de los usuarios. Con el cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas puede pasar a administrar Windows y Office como un servicio. En lugar de un cambio masivo en tecnología cada pocos años, introducirá continuamente nuevas funciones, experiencias y protecciones para el usuario. Las actualizaciones de características semestrales ofrecen nuevas funciones en el otoño y la primavera de cada año, mientras que las actualizaciones acumulativas mensuales contienen correcciones de errores, de fiabilidad y de seguridad. Aunque puede optar por implementar al cliente de Office 2019, le recomendamos cambiar a Aplicaciones de Microsoft 365 para empresas. Este sigue un plan de servicio similar a Windows por lo que los usuarios también reciben actualizaciones para las aplicaciones de Office de forma regular.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Información general de Office como servicio](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
-**[Paso 8: Comunicaciones y aprendizaje de usuario](https://aka.ms/mdd8) ** Este último paso es fundamental para fomentar el uso de las nuevas funcionalidades para mejorar el trabajo en equipo, las comunicaciones, la seguridad y mucho más. Antes de que la implementación se dirija a usuarios ajenos a los círculos de usuarios pioneros, le recomendamos que publique aprendizaje y comunicaciones de usuarios. Esto le ayudará a impulsar cambios deseados en cómo acceden a las nuevas capacidades de Office, Windows u otras aplicaciones y servicios de línea de negocio. Para ayudarle, proporcionamos formación en línea gratuita a través de Microsoft FastTrack. Además, hemos publicado planes de comunicación y escalas de tiempo de muestra gratuitos junto con plantillas de correo electrónico, redes social e intranet para ayudarle con la implementación de Windows 10. Como una organización de Microsoft 365 u Office 365, su organización también puede ser elegible para soporte directo.
+**[Paso 8: Comunicaciones y aprendizaje de usuario](https://aka.ms/mdd8) ** Este último paso es fundamental para fomentar el uso de las nuevas funcionalidades para mejorar el trabajo en equipo, las comunicaciones, la seguridad y mucho más. Antes de que la implementación se dirija a usuarios ajenos a los círculos de usuarios pioneros, le recomendamos que publique aprendizaje y comunicaciones de usuarios. Esto le ayudará a impulsar cambios deseados en cómo acceden a las nuevas capacidades de Office, Windows u otras aplicaciones y servicios de línea de negocio. Para ayudarle, proporcionamos formación en línea gratuita a través de Microsoft FastTrack. Además, hemos publicado planes de comunicación y escalas de tiempo de muestra gratuitos junto con plantillas de correo electrónico, redes social e intranet para ayudarle con la implementación de Windows 10. Como una organización de Microsoft 365, su organización también puede ser elegible para soporte directo.
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
-Ahora conoce las novedades y diferencias en Windows 10 y Office 365 ProPlus, y hemos tratado la rueda de proceso de implementación recomendada. Con esta introducción de las instrucciones de punto a punto y las herramientas disponibles para realizar el cambio a Windows 10 y Office 365 ProPlus, empecemos.
+Ahora conoce las novedades y diferencias en Windows 10 y Aplicaciones de Microsoft 365 para empresas, y hemos tratado la rueda de proceso de implementación recomendada. Con esta introducción de las instrucciones de punto a punto y las herramientas disponibles para realizar el cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas, empecemos.
 
-## <a name="step-1-device-and-app-readinesshttpsakamsmdd1"></a>[Paso 1: Preparación de dispositivos y aplicaciones](https://aka.ms/mdd1)
+## <a name="step-1-device-and-app-readiness"></a>[Paso 1: Preparación de dispositivos y aplicaciones](https://aka.ms/mdd1)
 

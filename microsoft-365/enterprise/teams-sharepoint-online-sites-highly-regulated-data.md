@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Cree un sitio de grupo de SharePoint seguro para almacenar los archivos más importantes y confidenciales.
-ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 97a01275d1d45cb02e66e88f82c95311bcb6fe70
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951987"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636716"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Sitios de SharePoint para datos altamente regulados
 
@@ -40,10 +40,10 @@ Un escenario basado en la nube de Microsoft 365 Enterprise que cumpla estas nece
 
 - Almacenar archivos de (documentos, presentaciones de diapositivas, hojas de cálculo, etc.) en un sitio de grupo de SharePoint.
 - Bloquee el sitio para evitar:
-  - Acceso a los usuarios que no sean miembros del grupo de Office 365 para el sitio.
+  - Acceso a los usuarios que no sean miembros del grupo de Microsoft 365 para el sitio.
   - Que miembros del sitio concedan acceso a terceros.
   - Que aquellos que no sean miembros del sitio soliciten acceso.
-- Configure una etiqueta de retención de Office 365 para los sitios de SharePoint de forma predeterminada para impedir que los usuarios envíen archivos fuera de la organización.
+- Configure una etiqueta de retención para los sitios de SharePoint de forma predeterminada para impedir que los usuarios envíen archivos fuera de la organización.
 - Cifre la mayoría de los archivos confidenciales del sitio con un método de cifrado que se desplaza con el archivo.
 - Agregue permisos a los archivos más confidenciales de modo que, incluso si se comparten fuera del sitio, aún se requieran las credenciales válidas de una cuenta de usuario para abrir el archivo.
 
@@ -53,11 +53,11 @@ En la tabla siguiente se asignan los requisitos de este escenario a una caracter
 |:-------|:-----|
 | **Requisito** | **Característica de Microsoft 365 Enterprise** |
 | Almacenar archivos | Sitios de grupo de SharePoint |
-| Bloquear el sitio | Permisos para grupos de Office 365 y para el sitio de grupo de SharePoint |
-| Etiquetar los archivos del sitio | Etiquetas de retención de Office 365 |
-| Bloquear a los usuarios cuando envían archivos fuera de la organización | Directivas de prevención de pérdida de datos (DLP) en Office 365 |
-| Cifrar todos los archivos del sitio | Etiquetas o sub-etiquetas de confidencialidad de Office 365 |
-| Añadir permisos a los archivos del sitio | Etiquetas o sub-etiquetas de confidencialidad de Office 365 |
+| Bloquear el sitio | Permisos para grupos de Microsoft 365 y para el sitio de grupo de SharePoint |
+| Etiquetar los archivos del sitio | Etiquetas de retención de Microsoft 365 |
+| Bloquear a los usuarios cuando envían archivos fuera de la organización | Directivas para la prevención de pérdida de datos (DLP) |
+| Cifrar todos los archivos del sitio | Etiquetas o subetiquetas de confidencialidad de Microsoft 365 |
+| Añadir permisos a los archivos del sitio | Etiquetas o subetiquetas de confidencialidad de Microsoft 365 |
 |||
 
 Aquí tiene un ejemplo de configuración para un sitio de SharePoint seguro.
@@ -88,26 +88,26 @@ Para crear un sitio de SharePoint para datos altamente regulados, en primer luga
 
 Ese propósito impulsará la determinación de los elementos de configuración esenciales, como:
 
-- La etiqueta de retención de Office 365 para asignar a la parte de Documentos del sitio y las directivas DLP para la etiqueta
-- La configuración de una sub-etiqueta de confidencialidad de Office 365 que los usuarios aplican a los archivos altamente confidenciales almacenados en el sitio
+- La etiqueta de retención para asignar a la parte de Documentos del sitio y las directivas DLP para la etiqueta
+- La configuración de una subetiqueta de confidencialidad que los usuarios aplican a los archivos altamente confidenciales almacenados en el sitio
 
 Una vez determinados, use estos ajustes para configurar el sitio en la fase 2. 
 
-### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>Paso 1 Etiquetas de retención de Office 365 y directivas DLP
+### <a name="step-1-microsoft-365-retention-labels-and-dlp-policies"></a>Paso 1 Etiquetas de retención y directivas DLP de Microsoft 365
 
-Cuando se aplican a la parte de Documentos de un sitio de grupo de SharePoint, las etiquetas de retención de Office 365 proporcionan un método predeterminado de clasificación para todos los archivos almacenados en el sitio.
+Cuando se aplican a la parte de Documentos de un sitio de grupo de SharePoint, las etiquetas de retención proporcionan un método predeterminado de clasificación para todos los archivos almacenados en el sitio.
  
-En los sitios de SharePoint para datos altamente regulados, debe determinar qué etiqueta de retención de Office 365 usará.
+En los sitios de SharePoint para datos altamente regulados, debe determinar qué etiqueta de retención usará.
 
-Para conocer las consideraciones de diseño de las etiquetas de Office 365, consulte [Etiquetas y clasificación de Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
+Para conocer las consideraciones de diseño de las etiquetas, consulte [Etiquetas y clasificación de Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Use directivas DLP para proteger la información confidencial y evitar su divulgación accidental o intencionada. Para obtener más información, consulte esta [introducción](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-En los sitios de SharePoint, debe configurar una directiva DLP para la etiqueta de retención de Office 365 asignada al sitio para bloquear a los usuarios cuando intenten compartir archivos con usuarios externos. 
+En los sitios de SharePoint, debe configurar una directiva DLP para la etiqueta de retención asignada al sitio para bloquear a los usuarios cuando intenten compartir archivos con usuarios externos. 
 
-### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Paso 2: Su sub-etiqueta de confidencialidad de Office 365
+### <a name="step-2-your-microsoft-365-sensitivity-sublabel"></a>Paso 2: Su subetiqueta de confidencialidad de Microsoft 365
 
-Para proporcionar cifrado y un conjunto de permisos a los archivos más confidenciales, los usuarios deben aplicar una etiqueta o subetiqueta de confidencialidad de Office 365. Crear una sub-etiqueta bajo una etiqueta existente. 
+Para proporcionar cifrado y un conjunto de permisos a los archivos más confidenciales, los usuarios deben aplicar una etiqueta o subetiqueta de confidencialidad. Crear una sub-etiqueta bajo una etiqueta existente. 
 
 Use una etiqueta de confidencialidad cuando necesite, un número reducido de etiquetas tanto para los equipos de uso global como para los individuales privados. Utilice una subetiqueta de confidencialidad cuando tenga un gran número de etiquetas o cuando desee organizar las etiquetas para sitios seguros bajo su etiqueta altamente regulada. 
 
@@ -117,14 +117,14 @@ La configuración de la etiqueta o subetiqueta aplicada se desplaza con el archi
 
 Ha decidido lo siguiente:
 
-- La etiqueta de retención adecuada de Office 365 y la directiva DLP que tiene asociada
-- La configuración de la sub-etiqueta de confidencialidad de Office 365 que incluye el cifrado y los permisos
+- La etiqueta de retención adecuada y la directiva DLP que tiene asociada
+- La configuración de la subetiqueta de confidencialidad que incluye el cifrado y los permisos
 
 ## <a name="phase-2-configure"></a>Fase 2: Configurar
 
 En esta fase, debe tomar la configuración determinada en la Fase 1 e implementarla para crear un sitio de SharePoint para datos altamente regulados.
 
-### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>Paso 1: Crear un sitio de grupo de SharePoint privado con propietarios y miembros del grupo de Office 365 correspondiente
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-microsoft-365-group"></a>Paso 1: Crear un sitio de grupo de SharePoint privado con propietarios y miembros del grupo de Microsoft 365 correspondiente
 
 Siga [estas instrucciones]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) para crear un sitio de grupo de SharePoint privado.
 
@@ -139,15 +139,15 @@ Desde el sitio de SharePoint, configure estos ajustes de permisos.
 
 Con estas ajustes de configuración, se deshabilita la posibilidad de que los miembros del grupo de sitio compartan el sitio con otros miembros o que los usuarios que no son miembros soliciten el acceso al sitio.
 
-### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>Paso 3: Configurar el sitio para una etiqueta de retención de Office 365
+### <a name="step-3-configure-the-site-for-a-retention-label"></a>Paso 3: Configurar el sitio para una etiqueta de retención
 
-Siga las instrucciones de [Proteger archivos de SharePoint con DLP y etiquetas de Office 365](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) para:
+Siga las instrucciones de [Proteger archivos de SharePoint con DLP y etiquetas](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) para:
 
 1. Crear y publicar una etiqueta de retención para datos altamente regulados (si es necesario).
 2. Configurar el sitio para la etiqueta de retención que creó en el paso 1.
 3. Crear una directiva DLP para datos altamente regulados que usen la etiqueta de retención creada en el paso 2 y bloquee el envío de archivos fuera de la organización por parte de los usuarios.
 
-#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>Paso 4: Crear una sub-etiqueta de confidencialidad de Office 365 para el sitio
+#### <a name="step-4-create-a-sensitivity-sublabel-for-the-site"></a>Paso 4: Crear una subetiqueta de confidencialidad para el sitio
 
 A diferencia de una etiqueta de confidencialidad para datos altamente regulados que cualquier persona puede aplicar a cualquier archivo, un sitio seguro necesita su propia sub-etiqueta para que los archivos con la sub-etiqueta asignada:
 
@@ -167,9 +167,9 @@ Siga las instrucciones de [aquí](https://docs.microsoft.com/microsoft-365/compl
 Ha configurado lo siguiente:
 
 - Configuraciones de permisos más restrictivas en el sitio de SharePoint
-- Una etiqueta de retención de Office 365 asignada a la parte de Documentos del sitio de SharePoint
-- Una directiva DLP para la etiqueta de retención de Office 365
-- Una etiqueta o sub-etiqueta de confidencialidad de Office 365 que los usuarios pueden aplicar a los archivos más confidenciales almacenados en el sitio, el cual cifra el archivo y solo permite el acceso de coautoría a los miembros del grupo de sitio del equipo 
+- Una etiqueta de retención asignada a la parte de Documentos del sitio de SharePoint
+- Una directiva DLP para la etiqueta de retención
+- Una etiqueta o subetiqueta de confidencialidad que los usuarios pueden aplicar a los archivos más confidenciales almacenados en el sitio, el cual cifra el archivo y solo permite el acceso de coautoría a los miembros del grupo de sitio del equipo 
 
 Aquí está la configuración resultante que utiliza una sub-etiqueta de la etiqueta altamente regulada.
 

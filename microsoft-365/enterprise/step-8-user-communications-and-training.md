@@ -1,5 +1,5 @@
 ---
-title: 'Paso 8: Comunicación con los usuarios y aprendizaje'
+title: 'Paso 8: comunicación con los usuarios y aprendizaje'
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,13 +14,13 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Obtenga información sobre cómo preparar a los usuarios finales para Windows 10 y Office 365 ProPlus con el uso de comunicación y aprendizaje.
-ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo preparar a los usuarios finales para Windows 10 y Aplicaciones de Microsoft 365 para empresas con el uso de comunicación y aprendizaje.
+ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636752"
 ---
 # <a name="step-8-user-communications-and-training"></a>Paso 8: Comunicación con los usuarios y aprendizaje
 
@@ -30,7 +30,7 @@ ms.locfileid: "42085145"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Paso 8: Comunicación con los usuarios y aprendizaje</strong></p>
-<p>Asegúrese de que los usuarios están informados sobre las nuevas experiencias y las nuevas formas de trabajar al cambiar los equipos a Windows 10 y Office 365 ProPlus. Obtenga información sobre cómo aprovechar la asistencia para la adopción por parte de los usuarios con Microsoft FastTrack, los materiales de aprendizaje y las plantillas de comunicación, así como nuevas formas para supervisar la aceptación y el uso por parte de los usuarios.</p></td>
+<p>Asegúrese de que los usuarios están informados sobre las nuevas experiencias y las nuevas formas de trabajar al cambiar los equipos a Windows 10 y Aplicaciones de Microsoft 365 para empresas. Obtenga información sobre cómo aprovechar la asistencia para la adopción por parte de los usuarios con Microsoft FastTrack, los materiales de aprendizaje y las plantillas de comunicación, así como nuevas formas para supervisar la aceptación y el uso por parte de los usuarios.</p></td>
 <td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +45,7 @@ La buena noticia es que si se muda de Windows 7 y Office 2010 u Office 2013, hab
 
 ## <a name="getting-ready-for-new-experiences"></a>Prepárese para nuevas experiencias
 
-Empezando con Office, si implementa Office 365 ProPlus por primera vez, puede comunicar los beneficios de iniciar sesión en las aplicaciones de Office y guardar archivos en ubicaciones de OneDrive o SharePoint para facilitar el uso compartido, reducir la ramificación de archivos y permitir la coautoría en tiempo real.
+Empezando con Office, si implementa Aplicaciones de Microsoft 365 para empresas por primera vez, puede comunicar los beneficios de iniciar sesión en las aplicaciones de Office y guardar archivos en ubicaciones de OneDrive o SharePoint para facilitar el uso compartido, reducir la ramificación de archivos y permitir la coautoría en tiempo real.
 
 Hay disponibles comunicaciones detalladas y plantillas de formación para estas aplicaciones y también para otras locales o de navegador, como Teams y Planner.
 
@@ -61,7 +61,7 @@ También hay controles de seguridad y cumplimiento visibles a los que sus usuari
 
 Por ejemplo, si ha activado la autenticación multifactor, esta usa Azure AD y protege al usuario que inicia sesión al exigir una aplicación telefónica o un pin para acceder a los servicios de acceso con seguridad. Y Azure Information Protection facilita a los usuarios clasificar y etiquetar documentos.
 
-[Configurar autenticación multifactor para usuarios de Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configuración de autenticación multifactor para usuarios](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Estas son solo algunas de las nuevas funciones que se presentarán a los usuarios y es posible que más de una les pille por sorpresa de forma más o menos positiva. Y estas sorpresas, sobre todo si alteran el ritmo normal de trabajo, pueden suponer más llamadas y tiques a su departamento de soporte técnico.
 
@@ -87,7 +87,7 @@ Suele ser mejor iniciar la implementación con el equipo de TI y algunos usuario
 
 Es importante tener miembros comprometidos en la fase piloto inicial para asegurarse de que documentan sus observaciones y realizan comentarios sobre el proceso. Además, es bueno tener a algún campeón fuera del equipo de TI que ayude a extender de forma orgánica las nuevas capacidades y que, a menudo, serán la primera línea de apoyo cuando el resto de los usuarios necesite ayuda.
 
-### <a name="phase-2-pilot"></a>Fase 2: Piloto 
+### <a name="phase-2-pilot"></a>Fase 2: piloto 
 
 Cuando se sienta cómodo con la primera fase, puede elegir un conjunto mayor de usuarios para la segunda fase piloto.  Esta debería comprender un grupo variado y representativo con distintos roles de usuario, tipos de dispositivos, aplicaciones de Windows y complementos de Office. Los datos que aporten estos grupos se usarán con el servicio de análisis para elegir el objetivo de los inicios de la fase 3, la implementación más amplia.
 
@@ -107,7 +107,7 @@ Para ayudar a su esfuerzo al a hora de reunir contenido de formación, puede acc
 
 Hay cientos de temas, según las necesidades de su organización, como: crear contenido más impactante, compartir sitios y contenido, transformar el trabajo en equipo y mejorar la productividad con dispositivos modernos.
 
-Además, si usa Microsoft 365 u Office 365, es muy posible que pueda optar a la ayuda de adopción de usuarios mediante el servicio Microsoft FastTrack. Representantes le guiarán a través de las mejores prácticas de adopción mientras repasa el proceso de implementación de Microsoft 365 (Windows, Office y EMS).
+Además, si usa Microsoft 365 u Office 365, es muy posible que pueda optar a la ayuda de adopción de usuarios mediante el servicio Microsoft FastTrack. Los representantes le guiarán a través de las mejores prácticas de adopción mientras repasa el proceso de implementación de Microsoft 365 (Windows, Office y EMS).
 
 #### <a name="microsoft-it-showcase"></a>Microsoft IT Showcase 
 
@@ -129,8 +129,8 @@ Lleve a cabo la implementación a una velocidad a la que pueda hacerse cargo su 
 
 Además de los datos de diagnósticos que supervisar a través de las herramientas de análisis, también puede supervisar uso del servicio de Office 365 y Microsoft 365 de forma detallada con informes detallados de uso en la carga de trabajo en el centro de administración y el uso de los paneles de administración a través de Power BI. Estos son excelentes herramientas para ayudarle a configurar y controlar los objetivos mientras distribuye nuevas herramientas de trabajo conjunto, como Microsoft Teams, o nuevas formas de compartir archivos, como OneDrive.
 
-La aceptación y adopción de nueva tecnología seguirá adelante incluso cuando todos los equipos de la organización tengan Windows 10 y Office 365 ProPlus instalados. Y los usuarios no tienen por qué cambiar la forma en la que trabajan, a menos que se tome el tiempo para informarles y darles formación acerca de las nuevas capacidades. Por último, con los nuevos modelos de mantenimiento, proporcionar nuevas capacidades en un calendario semianual continuado para Windows y, de forma opcional, en un calendario mensual para Office, la comunicación será continua.
+La aceptación y adopción de nueva tecnología seguirá adelante incluso cuando todos los equipos de la organización tengan Windows 10 y Aplicaciones de Microsoft 365 para empresas instalados. Y los usuarios no tienen por qué cambiar la forma en la que trabajan, a menos que se tome el tiempo para informarles y darles formación acerca de las nuevas capacidades. Por último, con los nuevos modelos de mantenimiento, proporcionar nuevas capacidades en un calendario semianual continuado para Windows y, de forma opcional, en un calendario mensual para Office, la comunicación será continua.
 
 ## <a name="previous-step"></a>Paso anterior 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Paso 7: Mantenimiento de Windows y Office](https://aka.ms/mdd7)

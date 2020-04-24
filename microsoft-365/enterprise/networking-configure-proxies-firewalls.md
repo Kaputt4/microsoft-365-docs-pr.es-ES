@@ -14,13 +14,13 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Office 365.
-ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+description: Obtenga información y configure los exploradores web y los dispositivos perimetrales para la omisión de tráfico a ubicaciones de confianza de Microsoft 365.
+ms.openlocfilehash: 3e0f9cec8d0d1385025289f1a07d2380be34f1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583398"
+ms.locfileid: "43631506"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Paso 4: Configurar la omisión de tráfico
 
@@ -28,13 +28,13 @@ ms.locfileid: "43583398"
 
 ![Fase 1-Red](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Como el tráfico de Internet general puede ser peligroso, en las redes de organización típicas se aplica la seguridad con dispositivos perimetrales como servidores proxy, Inspección e Interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.  Lea sobre algunos de los problemas con los dispositivos de intercepción de red en [Usando dispositivos de red de terceros o soluciones en el tráfico de Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+Como el tráfico de Internet general puede ser peligroso, en las redes de organización típicas se aplica la seguridad con dispositivos perimetrales como servidores proxy, Inspección e Interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.  Lea sobre algunos de los problemas con los dispositivos de intercepción de red en [Usando dispositivos de red de terceros o soluciones en el tráfico de Microsoft 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Pero los nombres de dominio DNS y las direcciones IP que se usan en los servicios basados en la nube de Microsoft 365 son conocidos. Además, el tráfico y los propios servicios están protegidos con muchas características de seguridad. Como esta protección y seguridad ya está aplicada, no es necesario que los dispositivos perimetrales la dupliquen. Los destinos intermedios y el procesamiento de seguridad duplicado para el tráfico de Microsoft 365 pueden reducir considerablemente el rendimiento.
 
 El primer paso para eliminar los destinos intermedios y el procesamiento duplicado de la seguridad consiste en identificar el tráfico de Microsoft 365. Microsoft ha definido los siguientes tipos de nombres de dominio DNS e intervalos de direcciones IP, conocidos como puntos de conexión:
 
-- **Optimizar**: obligatorios para la conectividad a todos los servicios de Office 365 y representan más del 75 % del ancho de banda, las conexiones y el volumen de datos de Microsoft 365. Estos puntos de conexión representan escenarios de Microsoft 365 que son más sensibles al rendimiento, la latencia y la disponibilidad de la red.
+- **Optimizar**: obligatorios para la conectividad a todos los servicios de Microsoft 365 y representan más del 75 % del ancho de banda, las conexiones y el volumen de datos de Microsoft 365. Estos puntos de conexión representan escenarios de Microsoft 365 que son más sensibles al rendimiento, la latencia y la disponibilidad de la red.
 - **Permitir**: obligatorios para la conectividad a características y servicios específicos de Microsoft 365, pero no son tan sensibles al rendimiento y la latencia de la red como los de la categoría Optimizar.
  - **Predeterminados**: representan servicios y dependencias de Microsoft 365 que no requieren ninguna optimización. Puede tratar los puntos de conexión de la categoría Predeterminados como tráfico de Internet normal.
 
@@ -50,7 +50,7 @@ A continuación algunas recomendaciones sobre la infraestructura de red.
 
 ![Recomendaciones para optimizar el tráfico local](../media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
 
-Los dispositivos perimetrales incluyen firewalls, Inspección e Interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos. Para configurar y actualizar las configuraciones de los dispositivos perimetrales, puede usar un script o una llamada REST para consumir una lista estructurada de puntos de conexión desde el servicio web de Puntos de conexión de Office 365. Para obtener más información, consulte[Dirección IP de Office 365 y servicio web de URL ](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
+Los dispositivos perimetrales incluyen firewalls, Inspección e Interrupción SSL, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos. Para configurar y actualizar las configuraciones de los dispositivos perimetrales, puede usar un script o una llamada REST para consumir una lista estructurada de puntos de conexión desde el servicio web de Puntos de conexión de Office 365. Para obtener más información, consulte[El servicio web de URL y dirección IP de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 Tenga en cuenta que solo se omite el procesamiento de seguridad de red y proxy normal para el tráfico a los puntos de conexión de las categorías Optimizar y Permitir de Microsoft 365. El resto del tráfico general de Internet se dirige a través de un proxy y se somete al procesamiento de seguridad de red existente.
 
@@ -58,11 +58,11 @@ Tenga en cuenta que solo se omite el procesamiento de seguridad de red y proxy n
 
 Los trabajadores remotos suelen usar las conexiones de red privada virtual (VPN) para tener acceso a los recursos de la intranet de una organización. Una conexión VPN convencional redirige todo el tráfico, incluido el tráfico de Internet, a la intranet de la organización. El tráfico de Internet se redirige a la red perimetral de la organización y a los dispositivos de procesamiento de paquetes. Este tráfico está sujeto a retrasos de desplazamiento y procesamiento que pueden disminuir considerablemente el rendimiento y afectar a la productividad de los trabajadores remotos. 
 
-El túnel dividido es la función de una conexión VPN para redirigir el tráfico especificado por Internet en vez de enviarlo a través de la conexión VPN a la intranet. Para optimizar el rendimiento de los trabajadores remotos en servicios críticos de Microsoft 365 como Teams, SharePoint Online y Exchange Online, configure las conexiones VPN de túnel dividido para enviar tráfico a los puntos de conexión de Office 365 de la categoría Optimizar directamente a través de Internet. 
+El túnel dividido es la función de una conexión VPN para redirigir el tráfico especificado por Internet en vez de enviarlo a través de la conexión VPN a la intranet. Para optimizar el rendimiento de los trabajadores remotos en servicios críticos de Microsoft 365 como Teams, SharePoint Online y Exchange Online, configure las conexiones VPN de túnel dividido para enviar tráfico a los puntos de conexión de la categoría Optimizar directamente a través de Internet. 
 
-Para obtener más información, consulte [Optimizar la conectividad de Office 365 para usuarios remotos que usan túnel dividido de VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+Para obtener más información, consulte [Optimizar la conectividad para usuarios remotos que usan túnel dividido con VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
-Para probar lo cerca que está de un punto de entrada para la red global de Microsoft y lo cerca que está del punto en que la red de su organización se conecta a su Proveedor de servicios de Internet (ISP), use la [Herramienta de integración de red de Office 365](https://connectivity.office.com/).
+Para probar lo cerca que está de un punto de entrada para la red global de Microsoft y lo cerca que está del punto en que la red de su organización se conecta a su Proveedor de Servicios de Internet (ISP), use la [herramienta de integración de red de Office 365](https://connectivity.office.com/).
 
 Como punto de control provisional, puede ver los [criterios de salida](networking-exit-criteria.md#crit-networking-step4) de este paso.
 
@@ -70,7 +70,7 @@ Como punto de control provisional, puede ver los [criterios de salida](networkin
 
 |||
 |:-------|:-----|
-|![Paso 5](../media/stepnumbers/Step5.png)|[Optimizar el rendimiento del servicio de Office 365 y el cliente](networking-optimize-tcp-performance.md) |
+|![Paso 5](../media/stepnumbers/Step5.png)|[Optimizar el rendimiento del servicio y el cliente](networking-optimize-tcp-performance.md) |
 
 
 
