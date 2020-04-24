@@ -149,6 +149,10 @@
           href: document-fingerprinting.md
         - name: Funciones de DLP para información confidencial
           href: what-the-dlp-functions-look-for.md
+    - name: Cifrado en Microsoft 365
+      href: encryption.md
+    - name: Cifrado de servicio de Office 365
+      href: office-365-service-encryption.md
     - name: Clave de cliente
       items:
         - name: Cifrado de servicio con Clave de cliente de Office 365
@@ -200,6 +204,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Configurar IRM en el Centro de administración de SharePoint Online
+      href: set-up-irm-in-sp-admin-center.md
     - name: Obtener información sobre la clasificación de datos (versión preliminar)
       href: data-classification-overview.md
       items:

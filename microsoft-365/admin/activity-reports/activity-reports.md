@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621275"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794022"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -58,7 +58,7 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 ::: moniker-end
 
    
-2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. También puede seleccionar un widget de actividad de un vistazo de un servicio (correo electrónico, OneDrive, etc.) para ver más información. <br/>![Panel de utilización](../../media/usage-report-dashboard.png)
+2. Seleccione **Seleccione un informe** en la parte superior del panel para seleccionarlo de una lista de todos los informes disponibles. O bien, seleccione un widget de actividad de un servicio (como el correo electrónico o OneDrive) para ver más información. <br/>![Panel de utilización](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Quién puede ver los informes
 
@@ -104,7 +104,7 @@ Según la suscripción, estos son los informes disponibles.
   
 - [Uso de OneDrive para la Empresa](onedrive-for-business-usage.md)
 
-- [Uso de ProPlus](microsoft365-apps-usage.md)
+- [Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage.md)
   
 - [Uso del sitio de SharePoint](sharepoint-site-usage.md)
   
