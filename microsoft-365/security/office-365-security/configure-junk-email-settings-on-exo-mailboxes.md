@@ -1,5 +1,5 @@
 ---
-title: Establecer la configuración del correo no deseado en buzones de Exchange online en Office 365
+title: Configurar la configuración del correo no deseado en buzones de Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638445"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800072"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Establecer la configuración del correo no deseado en buzones de Exchange online en Office 365
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
 La configuración contra correo no deseado de la organización en Exchange Online se controla mediante Exchange Online Protection (EOP). Para obtener más información, consulte [Protección contra correo no deseado de Office 365](anti-spam-protection.md).
 
@@ -43,11 +43,13 @@ Los administradores pueden usar Exchange Online PowerShell para deshabilitar, ha
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados para poder realizar estos procedimientos. En concreto, necesita la función **destinatarios de correo** (que está asignada a los grupos de roles administración de la **organización**, **Administración de destinatarios**y **destinatarios de correo personalizados** ) o el rol opciones de **usuario** (que se asigna a los grupos de roles administración de la **organización** y **servicio de asistencia** de forma predeterminada). Para agregar usuarios a los grupos de roles de Exchange Online, vea [Modify role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que un usuario con permisos predeterminados puede realizar estos mismos procedimientos en su propio buzón de correo, siempre que tengan [acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- Los remitentes seguros para buzones compartidos no se sincronizan con Azure AD y EOP por diseño.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Usar Exchange Online PowerShell para habilitar o deshabilitar la regla de correo no deseado en un buzón
 
@@ -181,3 +183,38 @@ Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o
 Por lo tanto, el filtro de correo electrónico no deseado de Outlook puede usar la colección de listas seguras del buzón y su propia clasificación de correo no deseado para mover los mensajes a la carpeta de correo no deseado, incluso si la regla de correo no deseado está deshabilitada en el buzón.
 
 Outlook y Outlook en la web admiten la colección de listas seguras. La colección de listas seguras se guarda en el buzón de correo de Exchange Online, por lo que los cambios en la colección de listas seguras de Outlook aparecen en Outlook en la web y viceversa.
+
+## <a name="limits-for-junk-email-settings"></a>Límites de configuración de correo no deseado
+
+La colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) que se almacena en el buzón del usuario también se sincroniza con EOP. Con la sincronización de directorios, la colección de listas seguras se sincroniza con Azure AD.
+
+- La colección de listas seguras del buzón del usuario tiene un límite de 510 KB, que incluye todas las listas, además de la configuración adicional del filtro de correo no deseado. Si un usuario supera este límite, recibirá un error de Outlook similar al siguiente:
+
+  > No se puede o no se puede Agregar a las listas de correo no deseado del servidor. Ha superado el tamaño permitido en el servidor. El filtro de correo electrónico no deseado en el servidor se deshabilitará hasta que las listas de correo no deseado se hayan reducido al tamaño permitido por el servidor.
+
+  Para obtener más información acerca de este límite y de cómo cambiarlo, vea [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- La colección de listas seguras sincronizada en EOP tiene los siguientes límites de sincronización:
+
+  - 1024 el total de entradas de la lista de remitentes seguros, la lista de destinatarios seguros y los contactos externos si está habilitada la opción **confiar en correo electrónico de mis contactos** .
+  - 500 total de entradas en la lista de remitentes bloqueados y en la lista de dominios bloqueados.
+
+  Cuando se alcanza el límite de entrada de 1024, ocurrirá lo siguiente:
+  
+  - La lista deja de aceptar entradas en PowerShell y Outlook en la web, pero no se muestra ningún error.
+
+    Los usuarios de Outlook pueden seguir agregando más de 1024 entradas hasta que alcancen el límite de 510 KB de Outlook. Outlook puede usar estas entradas adicionales, siempre que un filtro de EOP no bloquee el mensaje antes de enviarlo al buzón (reglas de flujo de correo, contra la suplantación de identidad, etc.).
+
+- Con la sincronización de directorios, las entradas se sincronizan con Azure AD en el orden siguiente:
+
+  1. Contactos de correo si **la opción confiar en correo electrónico de mis contactos** está habilitada.
+  2. La lista de remitentes seguros y la lista de destinatarios seguros se combinan, desduplican y ordenan alfabéticamente siempre que se realiza un cambio en las primeras 1024 entradas.
+
+  Se usan las primeras 1024 entradas y se marca la información correspondiente en los encabezados del mensaje.
+  
+  Las entradas superiores a 1024 que no se sincronizaron con Azure AD son procesadas por Outlook (no por Outlook en la web) y no se ha estampado ninguna información en los encabezados del mensaje.
+
+Como puede ver, si habilita la configuración **confiar en correo electrónico de mis contactos** , se reduce el número de remitentes seguros y destinatarios seguros que se pueden sincronizar. Si esto es un problema, le recomendamos usar la Directiva de grupo para desactivar esta característica:
+
+- Nombre de archivo: outlk16. opax
+- Configuración de directiva: **confiar en correo electrónico de contactos**

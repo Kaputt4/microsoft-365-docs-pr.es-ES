@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de eDiscovery en el centro de cumplimiento de Microsoft 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635910"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799911"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
@@ -64,7 +64,7 @@ A continuación, se presenta una introducción rápida al flujo de trabajo integ
 
 - [Indizar los datos de custodios](processing-data-for-case.md) y corregir errores de indización para que pueda recopilar datos de forma eficaz para sus investigaciones
 
-- [Recopilar datos](collecting-data-for-ediscovery.md) para un caso y agregarlos [a un conjunto de revisión](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set) para una investigación más detallada
+- [Recopilar datos](collecting-data-for-ediscovery.md) para un caso y agregarlos [a un conjunto de revisión](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) para una investigación más detallada
 
 - [Ver](view-documents-in-review-set.md) documentos, [consultar](review-set-search.md) datos y [etiquetar](tagging-documents.md) elementos en un conjunto de revisión
 

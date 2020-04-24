@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6b86d9f86edc427e10c02a99e3cda3e5e79db66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 462c58f8531265026b34fe3d8484736aefa4c5fa
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595857"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799943"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Recopilar datos para un caso en eDiscovery avanzado
 
-Una vez que haya identificado los custodios y los orígenes de datos que sean de interés para su caso, es el momento de identificar el conjunto de documentos en los que profundizar. Puede usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos para identificarlos de las instalaciones y las que no son de custodia en Office 365.
+Una vez que haya identificado los custodios y los orígenes de datos que sean de interés para su caso, es el momento de identificar el conjunto de documentos en los que profundizar. Puede usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos para identificar los documentos relevantes de ubicaciones de apoyo y no Private en Microsoft 365.
 
 Después de ejecutar una búsqueda, puede ver las estadísticas de los elementos recuperados, como las ubicaciones en las que la mayoría de los elementos coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Cuando haya identificado el conjunto de documentos que desea examinar con más detalle, puede Agregar los resultados de la búsqueda a un conjunto de revisión para recopilar y procesar.
 
@@ -49,6 +49,10 @@ Para obtener más información acerca de las estadísticas de búsqueda, vea [es
 
 Una vez completada la vista previa, el botón **vista previa** estará activo. Selecciónelo para obtener una vista previa de un subconjunto muestreado de los resultados.
 
-## <a name="adding-search-results-to-a-review-set"></a>Adición de resultados de búsqueda a un conjunto de revisión
+## <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
 Cuando esté listo para recopilar y procesar todos los resultados de una búsqueda, puede hacerlo si lo agrega a un conjunto de revisión. Para obtener más información, consulte [Agregar datos a un conjunto de revisión](add-data-to-review-set.md).
+
+## <a name="add-non-microsoft-365-data-to-a-review-set"></a>Agregar datos que no son de Microsoft 365 a un conjunto de revisión
+
+Como parte del proceso de recopilación de un caso, también puede agregar datos que no sean de Office 365 a un conjunto de revisión y revisar y analizar junto con los datos de Office 365 que recopiló mediante la herramienta de búsqueda. Al agregar un servicio no de Office 365, debe asociarlo a un custodio específico en el caso. Para obtener más información, vea [cargar datos que no son de Microsoft 365 en un conjunto de revisión](load-non-Office-365-data-into-a-review-set.md).
