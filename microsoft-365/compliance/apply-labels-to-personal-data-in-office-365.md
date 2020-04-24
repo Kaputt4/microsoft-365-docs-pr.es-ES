@@ -1,5 +1,5 @@
 ---
-title: Aplicar etiquetas a datos personales en Office 365
+title: Aplicación de etiquetas a datos personales
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -17,191 +17,191 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636288"
 ---
-# <a name="apply-labels-to-personal-data-in-office-365"></a><span data-ttu-id="7bf1d-103">Aplicar etiquetas a datos personales en Office 365</span><span class="sxs-lookup"><span data-stu-id="7bf1d-103">Apply labels to personal data in Office 365</span></span>
+# <a name="apply-labels-to-personal-data"></a><span data-ttu-id="b25de-103">Aplicación de etiquetas a datos personales</span><span class="sxs-lookup"><span data-stu-id="b25de-103">Apply labels to personal data</span></span>
 
- <span data-ttu-id="7bf1d-104">Use este tema si utiliza las etiquetas de clasificación como parte de su plan de protección de RGPD.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-104">Use this topic if you're using classification labels as part of your GDPR protection plan.</span></span> 
+ <span data-ttu-id="b25de-104">Use este tema si utiliza las etiquetas de clasificación como parte de su plan de protección de RGPD.</span><span class="sxs-lookup"><span data-stu-id="b25de-104">Use this topic if you're using classification labels as part of your GDPR protection plan.</span></span> 
 
-<span data-ttu-id="7bf1d-105">Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con las [etiquetas de retención](labels.md).</span><span class="sxs-lookup"><span data-stu-id="7bf1d-105">If you're using labels for protection of personal data in Office 365, Microsoft recommends you start with [retention labels](labels.md).</span></span> <span data-ttu-id="7bf1d-106">Con las etiquetas de retención, puede:</span><span class="sxs-lookup"><span data-stu-id="7bf1d-106">With retention labels, you can:</span></span>
-- <span data-ttu-id="7bf1d-107">Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-107">Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.</span></span>
-- <span data-ttu-id="7bf1d-108">Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-108">Use retention labels with data loss prevention to apply protection.</span></span> 
-- <span data-ttu-id="7bf1d-109">Usar etiquetas con eDiscovery y Búsqueda de contenido.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-109">Use labels with eDiscovery and Content Search.</span></span> 
+<span data-ttu-id="b25de-105">Si utiliza etiquetas para la protección de datos personales de Microsoft 365, Microsoft recomienda que empiece con las [etiquetas de retención](labels.md).</span><span class="sxs-lookup"><span data-stu-id="b25de-105">If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md).</span></span> <span data-ttu-id="b25de-106">Con las etiquetas de retención, puede:</span><span class="sxs-lookup"><span data-stu-id="b25de-106">With retention labels, you can:</span></span>
+- <span data-ttu-id="b25de-107">Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.</span><span class="sxs-lookup"><span data-stu-id="b25de-107">Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.</span></span>
+- <span data-ttu-id="b25de-108">Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección.</span><span class="sxs-lookup"><span data-stu-id="b25de-108">Use retention labels with data loss prevention to apply protection.</span></span> 
+- <span data-ttu-id="b25de-109">Usar etiquetas con eDiscovery y Búsqueda de contenido.</span><span class="sxs-lookup"><span data-stu-id="b25de-109">Use labels with eDiscovery and Content Search.</span></span> 
 
-<span data-ttu-id="7bf1d-110">Cloud App Security actualmente no admite etiquetas de retención, pero puede usar tipos de información confidencial de Office 365 con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-110">Cloud App Security doesn't currently support retention labels, but you can use Office 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
+<span data-ttu-id="b25de-110">Cloud App Security actualmente no admite etiquetas de retención, pero puede usar tipos de información confidencial de Microsoft 365 con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.</span><span class="sxs-lookup"><span data-stu-id="b25de-110">Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
 
-<span data-ttu-id="7bf1d-111">Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros proveedores y servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-111">[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers.</span></span> <span data-ttu-id="7bf1d-112">Estas también se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-112">These are also recommended for files in Office 365 that require Azure Information Protection encryption for data protection, such as trade secret files.</span></span>
+<span data-ttu-id="b25de-111">Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros proveedores y servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="b25de-111">[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers.</span></span> <span data-ttu-id="b25de-112">Estas también se recomiendan para los archivos de Microsoft 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.</span><span class="sxs-lookup"><span data-stu-id="b25de-112">These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.</span></span>
 
-<span data-ttu-id="7bf1d-113">En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Office 365 con datos que están sujetos al RGPD.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-113">At this time, using Azure Information Protection to apply encryption is not recommended for files in Office 365 with data that is subject to the GDPR.</span></span> <span data-ttu-id="7bf1d-114">Los servicios de Office 365 actualmente no pueden leer archivos cifrados AIP.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-114">Office 365 services currently cannot read into AIP-encrypted files.</span></span> <span data-ttu-id="7bf1d-115">Por ello, el servicio no puede encontrar datos confidenciales en dichos archivos.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-115">Therefore, the service can’t find sensitive data in these files.</span></span>
+<span data-ttu-id="b25de-113">En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Microsoft 365 con datos que están sujetos al RGPD.</span><span class="sxs-lookup"><span data-stu-id="b25de-113">At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR.</span></span> <span data-ttu-id="b25de-114">Los servicios de Microsoft 365 actualmente no pueden leer archivos cifrados AIP.</span><span class="sxs-lookup"><span data-stu-id="b25de-114">Microsoft 365 services currently cannot read into AIP-encrypted files.</span></span> <span data-ttu-id="b25de-115">Por ello, el servicio no puede encontrar datos confidenciales en dichos archivos.</span><span class="sxs-lookup"><span data-stu-id="b25de-115">Therefore, the service can't find sensitive data in these files.</span></span>
 
-<span data-ttu-id="7bf1d-116">Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-116">Retention labels can be applied to mail in Exchange Online and these labels work with Office 365 data loss prevention.</span></span> 
+<span data-ttu-id="b25de-116">Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b25de-116">Retention labels can be applied to mail in Exchange Online and these labels work with Microsoft 365 data loss prevention.</span></span> 
 
-![Etiquetas de Office 365 y de Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
-
-
-<span data-ttu-id="7bf1d-118">En la ilustración:</span><span class="sxs-lookup"><span data-stu-id="7bf1d-118">In the illustration:</span></span>
-
--   <span data-ttu-id="7bf1d-119">Use las etiquetas de retención para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-119">Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.</span></span>
--   <span data-ttu-id="7bf1d-120">Los tipos de información confidencial de Office 365 pueden usarse en Office 365 y con Cloud App Security para supervisar datos personales que residen en otras aplicaciones SaaS.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-120">Office 365 sensitive information types can be used within Office 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
--   <span data-ttu-id="7bf1d-121">Use las etiquetas de confidencialidad para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-121">Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.</span></span>
+![Etiquetas de Microsoft 365 y de Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
-## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a><span data-ttu-id="7bf1d-122">Uso de etiquetas de retención y tipos de información confidencial en Microsoft 365 para la protección de información</span><span class="sxs-lookup"><span data-stu-id="7bf1d-122">Use retention labels and sensitive information types across Microsoft 365 for information protection</span></span>
+<span data-ttu-id="b25de-118">En la ilustración:</span><span class="sxs-lookup"><span data-stu-id="b25de-118">In the illustration:</span></span>
 
-<span data-ttu-id="7bf1d-123">En la ilustración siguiente se muestra cómo pueden aprovecharse las etiquetas de retención y los tipos de información confidencial en las directivas de etiquetas, de prevención de pérdida de datos y de Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-123">The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.</span></span>
+-   <span data-ttu-id="b25de-119">Use las etiquetas de retención para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.</span><span class="sxs-lookup"><span data-stu-id="b25de-119">Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.</span></span>
+-   <span data-ttu-id="b25de-120">Los tipos de información confidencial de Microsoft 365 pueden usarse en Microsoft 365 y con Cloud App Security para supervisar datos personales que residen en otras aplicaciones SaaS.</span><span class="sxs-lookup"><span data-stu-id="b25de-120">Microsoft 365 sensitive information types can be used within Microsoft 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.</span></span>
+-   <span data-ttu-id="b25de-121">Use las etiquetas de confidencialidad para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.</span><span class="sxs-lookup"><span data-stu-id="b25de-121">Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.</span></span>
+
+
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a><span data-ttu-id="b25de-122">Uso de etiquetas de retención y tipos de información confidencial en Microsoft 365 para la protección de información</span><span class="sxs-lookup"><span data-stu-id="b25de-122">Use retention labels and sensitive information types across Microsoft 365 for information protection</span></span>
+
+<span data-ttu-id="b25de-123">En la ilustración siguiente se muestra cómo pueden aprovecharse las etiquetas de retención y los tipos de información confidencial en las directivas de etiquetas, de prevención de pérdida de datos y de Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="b25de-123">The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.</span></span>
 
 ![Etiquetas y tipos de información confidencial de Office](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
-<span data-ttu-id="7bf1d-125">Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemplos que en la ilustración.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-125">For accessibility, the following table provides the same examples in the illustration.</span></span>
+<span data-ttu-id="b25de-125">Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemplos que en la ilustración.</span><span class="sxs-lookup"><span data-stu-id="b25de-125">For accessibility, the following table provides the same examples in the illustration.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="7bf1d-126"><strong>Elementos de clasificación</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-126"><strong>Classification elements</strong></span></span></th>
-<th align="left"><span data-ttu-id="7bf1d-127"><strong>Directivas de etiqueta: 2 ejemplos</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-127"><strong>Label policies — 2 examples</strong></span></span></th>
-<th align="left"><span data-ttu-id="7bf1d-128"><strong>Directivas de prevención de pérdida de datos: 2 ejemplos</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-128"><strong>Data loss prevention policies — 2 examples</strong></span></span></th>
-<th align="left"><span data-ttu-id="7bf1d-129"><strong>Directivas de Cloud App Security para todas las aplicaciones SaaS: 1 ejemplo</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-129"><strong>Cloud App Security policies for all SaaS apps — 1 example</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-126"><strong>Elementos de clasificación</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-126"><strong>Classification elements</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-127"><strong>Directivas de etiqueta: 2 ejemplos</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-127"><strong>Label policies — 2 examples</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-128"><strong>Directivas de prevención de pérdida de datos: 2 ejemplos</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-128"><strong>Data loss prevention policies — 2 examples</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-129"><strong>Directivas de Cloud App Security para todas las aplicaciones SaaS: 1 ejemplo</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-129"><strong>Cloud App Security policies for all SaaS apps — 1 example</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="7bf1d-130">Etiquetas de retención.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-130">Retention labels.</span></span> <span data-ttu-id="7bf1d-131">Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</span><span class="sxs-lookup"><span data-stu-id="7bf1d-131">Examples: Personal, Public, Customer data, HR data, Confidential, Highly confidential</span></span></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p105">Aplicar automáticamente esta etiqueta...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p105">Auto apply this label . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-135">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="7bf1d-135">Customer data</span></span></p>
-<p><span data-ttu-id="7bf1d-p106">...a documentos que coincidan con estos tipos de información confidencial...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p106">. . . to documents that match these sensitive information types . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-142">&lt;lista de ejemplos de información confidencial disponibles&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-142">&lt;list of example sensitive information types&gt;</span></span></p></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p107">Aplicar esta protección...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p107">Apply this protection . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-146">&lt;definir la protección&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-146">&lt;define protection&gt;</span></span></p>
-<p><span data-ttu-id="7bf1d-p108">...a documentos con esta etiqueta...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p108">. . . to documents with this label . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-153">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="7bf1d-153">Customer data</span></span></p></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p109">Enviar alerta cuando los archivos con estos atributos...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p109">Alert when files with these attributes . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-157">Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Office 365, etiqueta de confidencialidad (AIP), expresión personalizada.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-157">Choose one or more attributes: predefined PII attribute, Office 365 sensitive information type, sensitivity label (AIP), custom expression</span></span></p>
-<p><span data-ttu-id="7bf1d-158">.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-158">.</span></span> <span data-ttu-id="7bf1d-159">.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-159">.</span></span> <span data-ttu-id="7bf1d-160">.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-160">.</span></span> <span data-ttu-id="7bf1d-161">en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</span><span class="sxs-lookup"><span data-stu-id="7bf1d-161">in any sanctioned SaaS app are shared outside the organization</span></span></p><p><span data-ttu-id="7bf1d-162">Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-162">Note: Retention labels are currently not supported in Cloud App Security.</span></span></td>
+<td align="left"><span data-ttu-id="b25de-130">Etiquetas de retención.</span><span class="sxs-lookup"><span data-stu-id="b25de-130">Retention labels.</span></span> <span data-ttu-id="b25de-131">Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</span><span class="sxs-lookup"><span data-stu-id="b25de-131">Examples: Personal, Public, Customer data, HR data, Confidential, Highly confidential</span></span></td>
+<td align="left"><p><span data-ttu-id="b25de-p105">Aplicar automáticamente esta etiqueta...</span><span class="sxs-lookup"><span data-stu-id="b25de-p105">Auto apply this label . . .</span></span></p>
+<p><span data-ttu-id="b25de-135">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="b25de-135">Customer data</span></span></p>
+<p><span data-ttu-id="b25de-p106">...a documentos que coincidan con estos tipos de información confidencial...</span><span class="sxs-lookup"><span data-stu-id="b25de-p106">. . . to documents that match these sensitive information types . . .</span></span></p>
+<p><span data-ttu-id="b25de-142">&lt;lista de ejemplos de información confidencial disponibles&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-142">&lt;list of example sensitive information types&gt;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="b25de-p107">Aplicar esta protección...</span><span class="sxs-lookup"><span data-stu-id="b25de-p107">Apply this protection . . .</span></span></p>
+<p><span data-ttu-id="b25de-146">&lt;definir la protección&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-146">&lt;define protection&gt;</span></span></p>
+<p><span data-ttu-id="b25de-p108">...a documentos con esta etiqueta...</span><span class="sxs-lookup"><span data-stu-id="b25de-p108">. . . to documents with this label . . .</span></span></p>
+<p><span data-ttu-id="b25de-153">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="b25de-153">Customer data</span></span></p></td>
+<td align="left"><p><span data-ttu-id="b25de-p109">Enviar alerta cuando los archivos con estos atributos...</span><span class="sxs-lookup"><span data-stu-id="b25de-p109">Alert when files with these attributes . . .</span></span></p>
+<p><span data-ttu-id="b25de-157">Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Microsoft 365, etiqueta de confidencialidad (AIP), expresión personalizada.</span><span class="sxs-lookup"><span data-stu-id="b25de-157">Choose one or more attributes: predefined PII attribute, Microsoft 365 sensitive information type, sensitivity label (AIP), custom expression</span></span></p>
+<p><span data-ttu-id="b25de-158">.</span><span class="sxs-lookup"><span data-stu-id="b25de-158">.</span></span> <span data-ttu-id="b25de-159">.</span><span class="sxs-lookup"><span data-stu-id="b25de-159">.</span></span> <span data-ttu-id="b25de-160">.</span><span class="sxs-lookup"><span data-stu-id="b25de-160">.</span></span> <span data-ttu-id="b25de-161">en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</span><span class="sxs-lookup"><span data-stu-id="b25de-161">in any sanctioned SaaS app are shared outside the organization</span></span></p><p><span data-ttu-id="b25de-162">Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</span><span class="sxs-lookup"><span data-stu-id="b25de-162">Note: Retention labels are currently not supported in Cloud App Security.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="7bf1d-p111">Tipos de información confidencial. Ejemplos: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p111">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</span></span></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p112">Publicar estas etiquetas para los usuarios para aplicar manualmente...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p112">Publish these labels for users to manually apply . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-168">&lt;seleccionar etiquetas&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-168">&lt;select labels&gt;</span></span></p>
-<p><span data-ttu-id="7bf1d-p113">...a estas ubicaciones...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p113">. . . to these locations . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-175">&lt;todas las ubicaciones o elegir ubicaciones específicas&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-175">&lt;all locations or choose specific locations&gt;</span></span></p></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p114">Aplicar esta protección...</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p114">Apply this protection . . .</span></span></p>
-<p><span data-ttu-id="7bf1d-179">&lt;definir la protección&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-179">&lt;define protection&gt;</span></span></p>
-<p><span data-ttu-id="7bf1d-p115">...a documentos que coincidan con estos tipos de información confidencial&gt;</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p115">. . . to documents that match these sensitive information types&gt;</span></span></p></td>
+<td align="left"><span data-ttu-id="b25de-p111">Tipos de información confidencial. Ejemplos: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</span><span class="sxs-lookup"><span data-stu-id="b25de-p111">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</span></span></td>
+<td align="left"><p><span data-ttu-id="b25de-p112">Publicar estas etiquetas para los usuarios para aplicar manualmente...</span><span class="sxs-lookup"><span data-stu-id="b25de-p112">Publish these labels for users to manually apply . . .</span></span></p>
+<p><span data-ttu-id="b25de-168">&lt;seleccionar etiquetas&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-168">&lt;select labels&gt;</span></span></p>
+<p><span data-ttu-id="b25de-p113">...a estas ubicaciones...</span><span class="sxs-lookup"><span data-stu-id="b25de-p113">. . . to these locations . . .</span></span></p>
+<p><span data-ttu-id="b25de-175">&lt;todas las ubicaciones o elegir ubicaciones específicas&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-175">&lt;all locations or choose specific locations&gt;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="b25de-p114">Aplicar esta protección...</span><span class="sxs-lookup"><span data-stu-id="b25de-p114">Apply this protection . . .</span></span></p>
+<p><span data-ttu-id="b25de-179">&lt;definir la protección&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-179">&lt;define protection&gt;</span></span></p>
+<p><span data-ttu-id="b25de-p115">...a documentos que coincidan con estos tipos de información confidencial&gt;</span><span class="sxs-lookup"><span data-stu-id="b25de-p115">. . . to documents that match these sensitive information types&gt;</span></span></p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="prioritize-auto-apply-label-policies"></a><span data-ttu-id="7bf1d-184">Asignar prioridades a las directivas de etiqueta de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="7bf1d-184">Prioritize auto-apply label policies</span></span>
+## <a name="prioritize-auto-apply-label-policies"></a><span data-ttu-id="b25de-184">Asignar prioridades a las directivas de etiqueta de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="b25de-184">Prioritize auto-apply label policies</span></span>
 
-<span data-ttu-id="7bf1d-p116">Para los datos personales que están sujetos a RGPD, Microsoft recomienda aplicar etiquetas automáticamente mediante tipos de información confidencial que gestione en su entorno. Es importante que las directivas de aplicación automática de etiquetas estén bien diseñadas y probadas para asegurar que se produce el comportamiento esperado.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p116">For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.</span></span>
+<span data-ttu-id="b25de-p116">Para los datos personales que están sujetos a RGPD, Microsoft recomienda aplicar etiquetas automáticamente mediante tipos de información confidencial que gestione en su entorno. Es importante que las directivas de aplicación automática de etiquetas estén bien diseñadas y probadas para asegurar que se produce el comportamiento esperado.</span><span class="sxs-lookup"><span data-stu-id="b25de-p116">For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.</span></span>
 
-<span data-ttu-id="7bf1d-p117">El orden en que las directivas de aplicación automática se crean y si los usuarios aplican o no estas etiquetas afectan al resultado. Por lo tanto, es importante planear cuidadosamente la distribución. Esto es lo que necesita saber.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p117">The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here’s what you need to know.</span></span>
+<span data-ttu-id="b25de-p117">El orden en que las directivas de aplicación automática se crean y si los usuarios aplican o no estas etiquetas afectan al resultado. Por lo tanto, es importante planear cuidadosamente la distribución. Esto es lo que necesita saber.</span><span class="sxs-lookup"><span data-stu-id="b25de-p117">The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.</span></span>
 
-### <a name="one-label-at-a-time"></a><span data-ttu-id="7bf1d-189">Una etiqueta de cada vez</span><span class="sxs-lookup"><span data-stu-id="7bf1d-189">One label at a time</span></span>
+### <a name="one-label-at-a-time"></a><span data-ttu-id="b25de-189">Una etiqueta de cada vez</span><span class="sxs-lookup"><span data-stu-id="b25de-189">One label at a time</span></span>
 
-<span data-ttu-id="7bf1d-190">Solo puede aplicar una etiqueta a un documento.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-190">You can only assign one label to a document.</span></span>
+<span data-ttu-id="b25de-190">Solo puede aplicar una etiqueta a un documento.</span><span class="sxs-lookup"><span data-stu-id="b25de-190">You can only assign one label to a document.</span></span>
 
-### <a name="older-auto-apply-policies-win"></a><span data-ttu-id="7bf1d-191">Las directivas de aplicación automática antiguas tienen prioridad</span><span class="sxs-lookup"><span data-stu-id="7bf1d-191">Older auto-apply policies win</span></span>
+### <a name="older-auto-apply-policies-win"></a><span data-ttu-id="b25de-191">Las directivas de aplicación automática antiguas tienen prioridad</span><span class="sxs-lookup"><span data-stu-id="b25de-191">Older auto-apply policies win</span></span>
 
-<span data-ttu-id="7bf1d-p118">Si hay varias reglas que asignan una etiqueta de aplicación automática y el contenido cumple las condiciones de varias reglas, se asigna la etiqueta de la regla más antigua. Por este motivo, es importante planear minuciosamente las directivas de etiqueta antes de configurarlas. Si una organización necesita un cambio en la prioridad de las directivas de etiqueta, tendrá que eliminarlas y volver a crearlas.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p118">If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.</span></span>
+<span data-ttu-id="b25de-p118">Si hay varias reglas que asignan una etiqueta de aplicación automática y el contenido cumple las condiciones de varias reglas, se asigna la etiqueta de la regla más antigua. Por este motivo, es importante planear minuciosamente las directivas de etiqueta antes de configurarlas. Si una organización necesita un cambio en la prioridad de las directivas de etiqueta, tendrá que eliminarlas y volver a crearlas.</span><span class="sxs-lookup"><span data-stu-id="b25de-p118">If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.</span></span>
 
-### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a><span data-ttu-id="7bf1d-195">Las etiquetas de usuario aplicadas manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente</span><span class="sxs-lookup"><span data-stu-id="7bf1d-195">Manual user-applied labels trump auto-applied labels</span></span>
+### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a><span data-ttu-id="b25de-195">Las etiquetas de usuario aplicadas manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente</span><span class="sxs-lookup"><span data-stu-id="b25de-195">Manual user-applied labels trump auto-applied labels</span></span>
 
-<span data-ttu-id="7bf1d-p119">Las etiquetas que el usuario aplica manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente. Las directivas de aplicación automática no pueden reemplazar una etiqueta que ya ha aplicado un usuario, pero los usuarios pueden reemplazar las etiquetas que se aplican automáticamente.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p119">Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.</span></span>
+<span data-ttu-id="b25de-p119">Las etiquetas que el usuario aplica manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente. Las directivas de aplicación automática no pueden reemplazar una etiqueta que ya ha aplicado un usuario, pero los usuarios pueden reemplazar las etiquetas que se aplican automáticamente.</span><span class="sxs-lookup"><span data-stu-id="b25de-p119">Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.</span></span>
 
-### <a name="auto-assigned-labels-can-be-updated"></a><span data-ttu-id="7bf1d-199">Las etiquetas asignadas automáticamente pueden actualizarse</span><span class="sxs-lookup"><span data-stu-id="7bf1d-199">Auto-assigned labels can be updated</span></span>
+### <a name="auto-assigned-labels-can-be-updated"></a><span data-ttu-id="b25de-199">Las etiquetas asignadas automáticamente pueden actualizarse</span><span class="sxs-lookup"><span data-stu-id="b25de-199">Auto-assigned labels can be updated</span></span>
 
-<span data-ttu-id="7bf1d-200">Las directivas de etiqueta más recientes o las actualizaciones de directivas existentes pueden actualizar etiquetas asignadas automáticamente.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-200">Auto-assigned labels can be updated by either newer label policies or by updates to existing policies.</span></span>
+<span data-ttu-id="b25de-200">Las directivas de etiqueta más recientes o las actualizaciones de directivas existentes pueden actualizar etiquetas asignadas automáticamente.</span><span class="sxs-lookup"><span data-stu-id="b25de-200">Auto-assigned labels can be updated by either newer label policies or by updates to existing policies.</span></span>
 
-<span data-ttu-id="7bf1d-201">Asegúrese de que su plan para implementar etiquetas incluye:</span><span class="sxs-lookup"><span data-stu-id="7bf1d-201">Be sure your plan for implementing labels includes:</span></span>
+<span data-ttu-id="b25de-201">Asegúrese de que su plan para implementar etiquetas incluye:</span><span class="sxs-lookup"><span data-stu-id="b25de-201">Be sure your plan for implementing labels includes:</span></span>
 
-- <span data-ttu-id="7bf1d-202">Dar prioridad al orden en que se crean las directivas de aplicación automática.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-202">Prioritizing the order that auto-apply policies are created.</span></span>
+- <span data-ttu-id="b25de-202">Dar prioridad al orden en que se crean las directivas de aplicación automática.</span><span class="sxs-lookup"><span data-stu-id="b25de-202">Prioritizing the order that auto-apply policies are created.</span></span>
 
-- <span data-ttu-id="7bf1d-p120">Permita el tiempo suficiente para que las etiquetas se apliquen automáticamente antes de implementarlas para que los usuarios las apliquen manualmente. Pueden ser necesarios hasta siete días para que las etiquetas se apliquen a todo el contenido que coincida con las condiciones.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p120">Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.</span></span>
+- <span data-ttu-id="b25de-p120">Permita el tiempo suficiente para que las etiquetas se apliquen automáticamente antes de implementarlas para que los usuarios las apliquen manualmente. Pueden ser necesarios hasta siete días para que las etiquetas se apliquen a todo el contenido que coincida con las condiciones.</span><span class="sxs-lookup"><span data-stu-id="b25de-p120">Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.</span></span>
 
-### <a name="example-priority-for-creating-the-auto-apply-policies"></a><span data-ttu-id="7bf1d-205">Prioridad de ejemplo para crear directivas de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="7bf1d-205">Example priority for creating the auto-apply policies</span></span>
-
-<table>
-<thead>
-<tr class="header">
-<th align="left"><span data-ttu-id="7bf1d-206"><strong>Etiquetas</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-206"><strong>Labels</strong></span></span></th>
-<th align="left"><span data-ttu-id="7bf1d-207"><strong>Orden de prioridad para crear directivas de aplicación automática</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-207"><strong>Priority order to create auto-apply policies</strong></span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span data-ttu-id="7bf1d-208">Recursos humanos: datos de empleado</span><span class="sxs-lookup"><span data-stu-id="7bf1d-208">Human Resources — Employee Data</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-209">1</span><span class="sxs-lookup"><span data-stu-id="7bf1d-209">1</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="7bf1d-210">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="7bf1d-210">Customer Data</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-211">2</span><span class="sxs-lookup"><span data-stu-id="7bf1d-211">2</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="7bf1d-212">Extremadamente confidencial</span><span class="sxs-lookup"><span data-stu-id="7bf1d-212">Highly Confidential</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-213">3</span><span class="sxs-lookup"><span data-stu-id="7bf1d-213">3</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="7bf1d-214">Recursos humanos: datos de sueldo</span><span class="sxs-lookup"><span data-stu-id="7bf1d-214">Human Resources — Salary Data</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-215">4</span><span class="sxs-lookup"><span data-stu-id="7bf1d-215">4</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="7bf1d-216">Confidencial</span><span class="sxs-lookup"><span data-stu-id="7bf1d-216">Confidential</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-217">5</span><span class="sxs-lookup"><span data-stu-id="7bf1d-217">5</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="7bf1d-218">Público</span><span class="sxs-lookup"><span data-stu-id="7bf1d-218">Public</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-219">6</span><span class="sxs-lookup"><span data-stu-id="7bf1d-219">6</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="7bf1d-220">Personal</span><span class="sxs-lookup"><span data-stu-id="7bf1d-220">Personal</span></span></td>
-<td align="left"><span data-ttu-id="7bf1d-221">Directiva que no es de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="7bf1d-221">No auto-apply policy</span></span></td>
-</tr>
-</tbody>
-</table>
-
-## <a name="create-labels-and-auto-apply-label-policies"></a><span data-ttu-id="7bf1d-222">Crear etiquetas y aplicar directivas de etiqueta automáticamente</span><span class="sxs-lookup"><span data-stu-id="7bf1d-222">Create labels and auto-apply label policies</span></span>
-
-<span data-ttu-id="7bf1d-223">Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-223">Create labels and policies in the security center or the compliance center.</span></span>
+### <a name="example-priority-for-creating-the-auto-apply-policies"></a><span data-ttu-id="b25de-205">Prioridad de ejemplo para crear directivas de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="b25de-205">Example priority for creating the auto-apply policies</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="7bf1d-224"><strong>Paso</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-224"><strong>Step</strong></span></span></th>
-<th align="left"><span data-ttu-id="7bf1d-225"><strong>Descripción</strong></span><span class="sxs-lookup"><span data-stu-id="7bf1d-225"><strong>Description</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-206"><strong>Etiquetas</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-206"><strong>Labels</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-207"><strong>Orden de prioridad para crear directivas de aplicación automática</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-207"><strong>Priority order to create auto-apply policies</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="7bf1d-226">Conceda permisos a los miembros de su equipo de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-226">Give permissions to members of your compliance team.</span></span></p></td>
-<td align="left"><p><span data-ttu-id="7bf1d-p121">Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el centro de seguridad y/o el centro de cumplimiento. Vaya a los permisos en el centro de seguridad o el centro de cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p121">Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</span></span></p>
-<p><span data-ttu-id="7bf1d-229">Vea <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-229">See <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Give users access to the security center and/or the compliance center</a>.</span></span></p></td>
+<td align="left"><span data-ttu-id="b25de-208">Recursos humanos: datos de empleado</span><span class="sxs-lookup"><span data-stu-id="b25de-208">Human Resources — Employee Data</span></span></td>
+<td align="left"><span data-ttu-id="b25de-209">1</span><span class="sxs-lookup"><span data-stu-id="b25de-209">1</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="7bf1d-230">Crear etiquetas de retención.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-230">Create retention labels.</span></span></p></td>
-<td align="left"><span data-ttu-id="7bf1d-231">Vaya a Clasificaciones en el centro de seguridad o el centro de cumplimiento, elija Etiquetas de retención y cree las etiquetas para su entorno.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-231">Go to Classifications in the Security center or the Compliance center, choose Retention labels, and create the labels for your environment.</span></span></td>
+<td align="left"><span data-ttu-id="b25de-210">Datos de cliente</span><span class="sxs-lookup"><span data-stu-id="b25de-210">Customer Data</span></span></td>
+<td align="left"><span data-ttu-id="b25de-211">2</span><span class="sxs-lookup"><span data-stu-id="b25de-211">2</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="7bf1d-232">Cree directivas de aplicación automática para etiquetas.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-232">Create auto-apply policies for labels.</span></span></p></td>
-<td align="left"><span data-ttu-id="7bf1d-p122">Vaya a Clasificación en el Centro de seguridad y cumplimiento, elija Directivas de etiqueta y cree las directivas de aplicación automática de etiquetas. Asegúrese de crear estas directivas en el orden de la prioridad.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-p122">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</span></span></td>
+<td align="left"><span data-ttu-id="b25de-212">Extremadamente confidencial</span><span class="sxs-lookup"><span data-stu-id="b25de-212">Highly Confidential</span></span></td>
+<td align="left"><span data-ttu-id="b25de-213">3</span><span class="sxs-lookup"><span data-stu-id="b25de-213">3</span></span></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="b25de-214">Recursos humanos: datos de sueldo</span><span class="sxs-lookup"><span data-stu-id="b25de-214">Human Resources — Salary Data</span></span></td>
+<td align="left"><span data-ttu-id="b25de-215">4</span><span class="sxs-lookup"><span data-stu-id="b25de-215">4</span></span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="b25de-216">Confidencial</span><span class="sxs-lookup"><span data-stu-id="b25de-216">Confidential</span></span></td>
+<td align="left"><span data-ttu-id="b25de-217">5</span><span class="sxs-lookup"><span data-stu-id="b25de-217">5</span></span></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="b25de-218">Público</span><span class="sxs-lookup"><span data-stu-id="b25de-218">Public</span></span></td>
+<td align="left"><span data-ttu-id="b25de-219">6</span><span class="sxs-lookup"><span data-stu-id="b25de-219">6</span></span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="b25de-220">Personal</span><span class="sxs-lookup"><span data-stu-id="b25de-220">Personal</span></span></td>
+<td align="left"><span data-ttu-id="b25de-221">Directiva que no es de aplicación automática</span><span class="sxs-lookup"><span data-stu-id="b25de-221">No auto-apply policy</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="7bf1d-235">La siguiente ilustración muestra cómo crear una etiqueta de aplicación automática para la etiqueta Datos de cliente.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-235">The following illustration shows how to create an auto-apply label for the Customer data label.</span></span>
+## <a name="create-labels-and-auto-apply-label-policies"></a><span data-ttu-id="b25de-222">Crear etiquetas y aplicar directivas de etiqueta automáticamente</span><span class="sxs-lookup"><span data-stu-id="b25de-222">Create labels and auto-apply label policies</span></span>
+
+<span data-ttu-id="b25de-223">Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="b25de-223">Create labels and policies in the security center or the compliance center.</span></span>
+
+<table>
+<thead>
+<tr class="header">
+<th align="left"><span data-ttu-id="b25de-224"><strong>Paso</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-224"><strong>Step</strong></span></span></th>
+<th align="left"><span data-ttu-id="b25de-225"><strong>Descripción</strong></span><span class="sxs-lookup"><span data-stu-id="b25de-225"><strong>Description</strong></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><span data-ttu-id="b25de-226">Conceda permisos a los miembros de su equipo de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="b25de-226">Give permissions to members of your compliance team.</span></span></p></td>
+<td align="left"><p><span data-ttu-id="b25de-p121">Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el centro de seguridad y/o el centro de cumplimiento. Vaya a los permisos en el centro de seguridad o el centro de cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="b25de-p121">Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</span></span></p>
+<p><span data-ttu-id="b25de-229">Vea <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</span><span class="sxs-lookup"><span data-stu-id="b25de-229">See <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Give users access to the security center and/or the compliance center</a>.</span></span></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><span data-ttu-id="b25de-230">Crear etiquetas de retención.</span><span class="sxs-lookup"><span data-stu-id="b25de-230">Create retention labels.</span></span></p></td>
+<td align="left"><span data-ttu-id="b25de-231">Vaya a Clasificaciones en el centro de seguridad o el centro de cumplimiento, elija Etiquetas de retención y cree las etiquetas para su entorno.</span><span class="sxs-lookup"><span data-stu-id="b25de-231">Go to Classifications in the Security center or the Compliance center, choose Retention labels, and create the labels for your environment.</span></span></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><span data-ttu-id="b25de-232">Cree directivas de aplicación automática para etiquetas.</span><span class="sxs-lookup"><span data-stu-id="b25de-232">Create auto-apply policies for labels.</span></span></p></td>
+<td align="left"><span data-ttu-id="b25de-p122">Vaya a Clasificación en el Centro de seguridad y cumplimiento, elija Directivas de etiqueta y cree las directivas de aplicación automática de etiquetas. Asegúrese de crear estas directivas en el orden de la prioridad.</span><span class="sxs-lookup"><span data-stu-id="b25de-p122">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+<span data-ttu-id="b25de-235">La siguiente ilustración muestra cómo crear una etiqueta de aplicación automática para la etiqueta Datos de cliente.</span><span class="sxs-lookup"><span data-stu-id="b25de-235">The following illustration shows how to create an auto-apply label for the Customer data label.</span></span>
 
 ![Crear y aplicar una etiqueta de datos de cliente](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
-<span data-ttu-id="7bf1d-237">En la ilustración:</span><span class="sxs-lookup"><span data-stu-id="7bf1d-237">In the illustration:</span></span>
+<span data-ttu-id="b25de-237">En la ilustración:</span><span class="sxs-lookup"><span data-stu-id="b25de-237">In the illustration:</span></span>
 
-- <span data-ttu-id="7bf1d-238">Se crea la etiqueta "Datos de cliente".</span><span class="sxs-lookup"><span data-stu-id="7bf1d-238">The “Customer data” label is created.</span></span>
+- <span data-ttu-id="b25de-238">Se crea la etiqueta "Datos de cliente".</span><span class="sxs-lookup"><span data-stu-id="b25de-238">The "Customer data" label is created.</span></span>
 
-- <span data-ttu-id="7bf1d-239">Se listan los tipos de información confidencial deseados para RGPD: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</span><span class="sxs-lookup"><span data-stu-id="7bf1d-239">The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.</span></span>
+- <span data-ttu-id="b25de-239">Se listan los tipos de información confidencial deseados para RGPD: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</span><span class="sxs-lookup"><span data-stu-id="b25de-239">The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.</span></span>
 
-- <span data-ttu-id="7bf1d-240">Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que agregue a la directiva.</span><span class="sxs-lookup"><span data-stu-id="7bf1d-240">Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.</span></span>
+- <span data-ttu-id="b25de-240">Crear una directiva de aplicación automática asigna la etiqueta "Datos de cliente" a cualquier archivo que contenga uno de los tipos de información confidencial que añada a la directiva.</span><span class="sxs-lookup"><span data-stu-id="b25de-240">Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.</span></span>
