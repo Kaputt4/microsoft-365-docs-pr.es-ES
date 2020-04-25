@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: fcdbb591e5b8f9b2c5490435b68e543c17a035a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6d1d7c8e0ae99047b854e91c1a97327a839f630
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629112"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808745"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
 Los buzones compartidos se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico o información de la empresa, el escritorio de recepción u otra función que puedan compartir varios usuarios.
 
-Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar correos electrónicos de "soporte de Contoso" o "creación de un servicio de recepción.
+Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 
-Antes [de crear un buzón de correo compartido](create-a-shared-mailbox.md), estas son algunas de las cosas que debe saber.
+Antes [de crear un buzón compartido](create-a-shared-mailbox.md), aquí le indicamos algunas cosas que debe saber:
 
 - **Licencias:** El buzón compartido puede almacenar hasta 50 GB de datos sin tener que asignar una licencia a él. Una vez superado ese límite, tendrá que asignar una licencia al buzón para almacenar más datos. Para obtener más información sobre las licencias de buzones compartidos, consulte [límites de Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx#StorageLimits). Cuando un buzón compartido alcanza el límite de almacenamiento, podrá recibir correo electrónico durante un tiempo, pero no podrá enviarlo. Después, dejará de recibir correo electrónico. Los remitentes del buzón recibirán un aviso de no entrega.
 
@@ -55,7 +55,7 @@ Antes [de crear un buzón de correo compartido](create-a-shared-mailbox.md), est
 
 - **Demasiados usuarios:** Cuando hay demasiados usuarios designados que tienen acceso simultáneo a un buzón compartido, es posible que no se conecten de forma intermitente a este buzón. En este caso, puede considerar la posibilidad de reducir el número de usuarios o usar una carga de trabajo distinta, como un grupo de Microsoft 365 o una carpeta pública de Microsoft.
 
-- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única forma de evitar esto es crear un grupo de 365 de Microsoft en lugar de un buzón compartido. Un grupo de Outlook es como un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea más [información acerca de los grupos](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única forma de evitar esto es crear un grupo de 365 de Microsoft en lugar de un buzón compartido. Un grupo de Outlook es como un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea más [información acerca de los grupos](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

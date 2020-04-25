@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637109"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804759"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -120,9 +120,7 @@ Cuando se selecciona una acción de mejora específica, aparece una volar hacia 
 
 3. Seleccione **omitir** porque decidió aceptar el riesgo y no pasar la acción de mejora. Una vez que ignore una acción de mejora, se reducirá el número total de puntos de calificación seguros que puede lograr. Puede ver esta acción en el historial o deshacerla en cualquier momento.
 
-4. Seleccione **revisar** porque la acción de mejora requiere que Revise regularmente una parte del entorno para obtener y conservar puntos. Por ejemplo, las reglas de reenvío de buzones deben revisarse cada semana para asegurarse de que los datos no se están exfiltrando desde la red. No es necesario realizar ningún cambio, pero se debe realizar una acción. Si revisa las reglas con regularidad, recibirá los puntos. Si no es así, se reduce el resultado.
-
-![Ejemplo de acción de mejora de puntuación segura](../../media/secure-score/secure-score1x450.png) ![Ejemplo de acción para mejorar la revisión de calificaciones seguras](../../media/secure-score/secure-score2x450.png)
+![Ejemplo de acción de mejora de puntuación segura](../../media/secure-score/secure-score1x450.png)
 
 *Figuras 2 & 3: controles flotantes de acciones de mejora*
 
@@ -137,6 +135,15 @@ La puntuación segura de Microsoft es un resumen numérico de la postura de segu
 ## <a name="whats-new"></a>Novedades
 
 Para hacer que Microsoft califique de forma segura sea un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>21 de abril de 2020
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Eliminación de acciones de mejora que no cumplen con las expectativas para una medición fiable o que no proporcionan una representación útil de la postura de seguridad
+
+Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
+
+- Aplicar protecciones de IRM a los documentos
+- Aplicar directivas de prevención de pérdida de datos
 
 ### <a name="january---march-2020"></a>Enero a 2020 de marzo
 

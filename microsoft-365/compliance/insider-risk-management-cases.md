@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179181"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804833"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -163,7 +163,7 @@ Para enviar un aviso al empleado asignado a un caso:
 
 ### <a name="escalate-for-investigation"></a>Escalar para investigación
 
-Remitir el caso a la investigación de los empleados en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del empleado. Esta escalado abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones legales internas y externas de la organización. También permite que su equipo legal administre todo el flujo de trabajo de notificación de retención legal para comunicarse con los custodios que participan en un caso. La asignación de un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos de Insider ayuda al equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información acerca de los casos avanzados de eDiscovery, consulte [Overview of Advanced eDsicovery en Microsoft 365](overview-ediscovery-20.md).
+Remitir el caso a la investigación de los empleados en situaciones en las que se necesita una revisión legal adicional para la actividad de riesgo del empleado. Esta escalado abre un nuevo caso de exhibición avanzada de documentos electrónicos en su organización de Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones legales internas y externas de la organización. También permite que su equipo legal administre todo el flujo de trabajo de notificación de retención legal para comunicarse con los custodios que participan en un caso. La asignación de un revisor como custodio en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos de Insider ayuda al equipo legal a tomar las medidas adecuadas y administrar la preservación del contenido. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
 
 Para remitir un caso a una investigación de empleado:
 

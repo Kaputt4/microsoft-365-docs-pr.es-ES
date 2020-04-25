@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 'Centro de administración de Microsoft 365: Obtenga información sobre las características que se agregaron este mes.'
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627527"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805179"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -36,10 +36,59 @@ Estamos agregando de forma continuada nuevas características al [centro de admi
 > **Retiro del centro de administración de "Classic" a partir de marzo**<br><br>
 Al iniciar sesión en admin.microsoft.com, ahora va al nuevo centro de administración cada vez. Y, en marzo, empezaremos a deshabilitar la capacidad de volver al centro de administración clásico. Por ahora, puede cambiar de nuevo, pero a medida que el nuevo centro de administración se refiere a la paridad (y lo supera), desactivamos el conmutador para todas las organizaciones. <br><br> *Última actualización: 2 de marzo de 2020*
 
-Y si está interesado en las novedades de otros centros de administración:
+Y si está interesado en las novedades de otros servicios en la nube de Microsoft:
 
+- [Novedades de Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Novedades de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Novedades en el centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Actualizaciones de Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>Marzo de 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Revisión de comentarios destacados: mejorar la confiabilidad del "Agregar usuario" para las licencias
+
+Hemos recibido muchos comentarios de los administradores sobre el grado de dificultad para asignar licencias al agregar usuarios. Hemos realizado la primera actualización de esta corrección y hemos migrado a un servicio de segundo plano más confiable para procesar esas solicitudes. Y si algo va mal, ahora recibirá un mensaje de error que le permitirá volver a intentarlo.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Página de confirmación de adición de usuario con el error.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Tarjeta de página principal de Microsoft Teams
+
+Con el valor de arriba en el uso de Teams, algunos organizaciones recibirán una tarjeta de panel anclada que permite que los equipos de escritorio sean más detectables. La tarjeta también tiene vínculos a formación y documentos para ayudar a su organización a realizar la transición al trabajo remoto. Solo tiene que ir a la página **principal** para ver la tarjeta nueva.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Tarjeta de página principal de Microsoft Teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizar el tema de la aplicación móvil de SharePoint de la organización
+
+Con el centro de administración de 365 de Microsoft, ahora puede personalizar el tema de su organización en aplicación móvil de SharePoint para iOS y aplicación móvil de SharePoint para Android. Esta característica proporciona convenientemente una experiencia de la aplicación de intranet móvil que puede coincidir con SharePoint Online para los empleados en marcha. La personalización del tema incluye la imagen del logotipo, el color de la barra de navegación, los colores del texto y el icono y los colores de énfasis, lo que facilita el reconocimiento.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagrama asignar la configuración del centro de administración a la aplicación móvil.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Mejoras en el asistente "agregar un grupo"
+
+Cuando los administradores crearon un nuevo grupo y lo convierten en un equipo al mismo tiempo, podrían asignar a los propietarios que no tienen una licencia que incluya a teams. Y eso ha creado algunos problemas. Hemos actualizado el flujo del Asistente para comprobar que los propietarios tienen una licencia de Teams y si no la opción para convertir el grupo en un equipo está deshabilitada.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Ofertas de Microsoft 365 para pequeñas y medianas empresas
+
+Sabemos que se trata de un anuncio para el próximo mes, pero queremos asegurarnos de que está preparado.
+
+A partir del 21 de abril, estamos realizando cambios relacionados con nuestras suscripciones de Office 365 para pequeñas y medianas empresas, y con Office 365 ProPlus. Estos productos usarán ahora la marca 365 de Microsoft.
+
+Los nombres de producto nuevos entrarán en vigor el 21 de abril de 2020. Este es un cambio en el nombre del producto solamente y no hay cambios en los precios o las características en este momento.
+
+|Nombre actual |Nuevo nombre  |
+|---------|---------|
+|Office 365 Empresa Essentials     |   Microsoft 365 Empresa Básico      |
+|Office 365 Empresa Premium     |    Microsoft 365 Empresa Estándar     |
+|Microsoft 365 Empresa     |    Microsoft 365 Empresa Premium     |
+|Office 365 Empresa     |    Aplicaciones de Microsoft 365 para negocios       | 
+|Office 365 ProPlus    |   Microsoft 365 apps for Enterprise      |
+
+### <a name="videos-training-and-docs"></a>Vídeos, formación y documentos
+
+Novedades [de la serie web de microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096): en el episodio de este mes, destacamos el aniversario de 3 años de Microsoft Teams y cubren nuevas características que incluyen una mejor calidad de audio en las reuniones en línea, las comunicaciones dirigidas a los administradores de Firstline con la aplicación de turnos, la interoperabilidad de clientes de Microsoft Teams y Skype y mucho más.
 
 ## <a name="february-2020"></a>Febrero de 2020
 
@@ -154,7 +203,7 @@ En noviembre, se publicaron algunas caminos de aprendizaje en el sitio web de [M
 - [Administre el despliegue de su empresa con Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Actualice Microsoft Office para la TI a escala](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Entrega de aplicaciones y escritorios remotos desde Azure con el escritorio virtual de Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
-- [Modernice su trabajo con Microsoft 365 y Surface para la empresa](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
+- [Modernice su área de trabajo con Microsoft 365 y Surface para la Empresa](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
 - [Proteger la identidad y el acceso con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Proteger la información de la empresa con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Administrar la seguridad con Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
@@ -181,7 +230,7 @@ Ha habido muchos cambios para roles en el centro de administración desde que em
 - **Usuarios** > activos**administrar roles** : se ha actualizado para alinearse con los cambios en los roles. Al igual que con la lista roles, hemos definido el ámbito de la lista predeterminada de funciones para que sea más útil, pero puede ver todos los roles expandiendo **Mostrar todos por categoría**.
 - **Rol de lector global** : ¡ le ha pedido! ¡ Lo consiguió! El rol [lector global](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) .
 
-### <a name="report-an-issue"></a>Informar sobre un problema
+### <a name="report-an-issue"></a>Informar de un problema
 
 El estado del servicio se ha actualizado al nuevo estilo y si se ve afectado por un problema que no se muestra en el panel de estado del servicio, puede **informar de un problema** para que Microsoft lo sepa. Vaya al **Health** > **Estado del servicio**de mantenimiento.
 
@@ -337,7 +386,7 @@ Es posible que vea una nueva recomendación emergente en el centro de administra
 - **Protección de dispositivos de Intune** : si las licencias incluyen Intune y se detecta que no ha terminado de configurar Intune o que se han inscrito en los dispositivos, le recomendamos que cree una directiva de Intune para proteger los archivos de su organización cuando los usuarios acceden a ellos desde sus dispositivos móviles.
 - **Obtener actualizaciones de características mensuales de Office** -hemos recibido comentarios de nuestros clientes muy pequeños que, al obtener actualizaciones de características mensuales de Office, sus usuarios están más satisfechos. Por lo tanto, si es un negocio muy pequeño y actualmente tiene las actualizaciones de las características de Office cada seis meses, verá esta recomendación.
 
-**Settings** <br>
+**Configuración** <br>
 Como en el caso de la configuración, ha habido muy pocos cambios. Principalmente, solo tiene que actualizar la configuración existente al nuevo estilo del centro de administración. Como estamos avanzando y agregando nuevas opciones de configuración que nunca ha visto antes, empezaremos a mencionarlos aquí. Y tenemos una configuración completa para anunciar: **autenticación moderna**. Sí, hay una nueva configuración para activar la **autenticación moderna**. Para desprotegerla, vaya a **configuración** > de los**servicios &** > **autenticación moderna**de complementos.
 
 ## <a name="april-2019"></a>Abril de 2019

@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware.
+ms.openlocfilehash: f2d76fd92ac6d439fd6400a0478028c99ae935eb
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630802"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808846"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 principales tareas para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -44,9 +44,9 @@ Para los clientes que usen nuestros planes de empresa, Microsoft le recomienda c
 |7      | [Configurar MFA y el acceso condicional para invitados, incluida la protección de aplicaciones de Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Inscribir equipos en administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)  |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
-|10    | [Entrenar a los usuarios](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|12 |[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
-|12 |[Supervisar las amenazas y emprender acciones](#12-monitor-for-threats-and-take-action) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
+|10     | [Entrenar a los usuarios](#10-train-users) |    ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|11  |[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|12  |[Supervisar las amenazas y emprender acciones](#12-monitor-for-threats-and-take-action) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
 
@@ -75,7 +75,7 @@ La aplicación de estas directivas tardará solo unos minutos, pero estará prep
 ## <a name="2-protect-against-threats"></a>2: protección contra amenazas
 
 Todos los planes de Microsoft 365 incluyen una variedad de características de protección contra amenazas. La protección frente a la protección de estas características tarda solo unos minutos.
-- Protección antimalware
+- Protección contra malware
 - Protección frente a direcciones URL y archivos malintencionados
 - Protección contra phishing
 - Protección contra correo no deseado
@@ -191,7 +191,7 @@ Artículos de blog recientes en este tema:
 
 ## <a name="10-train-users"></a>10: entrenar a los usuarios
 
-Cuando los usuarios no conocen las características de protección contra amenazas en el trabajo de la organización, pueden sentirse frustradas por las características de protección que se perciben como lentas o impidiendo que realicen su trabajo. Además, si saben con anticipación lo que debe vigilar con respecto a los mensajes de correo electrónico sospechosos o a direcciones URL, será mucho menos probable que abran artefactos cuestionables. Los usuarios de aprendizaje pueden ahorrar a los usuarios y al equipo de operaciones de seguridad mucho tiempo y frustraciones.
+Los usuarios de aprendizaje pueden ahorrar a los usuarios y al equipo de operaciones de seguridad mucho tiempo y frustraciones. Es menos probable que los usuarios más experimentados abran datos adjuntos o hagan clic en vínculos en mensajes de correo electrónico dudosos, por lo que es más probable que se eviten sitios Web sospechosos. 
 
 El manual Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) proporciona una excelente orientación sobre cómo establecer una cultura fuerte de conciencia de la seguridad dentro de la organización, incluido el aprendizaje de usuarios para identificar ataques de suplantación de identidad. 
 
@@ -239,7 +239,7 @@ Microsoft 365 incluye varias formas de supervisar el estado y tomar las medidas 
 - [Supervisar y ver informes](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Consulte los portales de seguridad en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 ¡Enhorabuena! Ha implementado rápidamente algunas de las protecciones de seguridad más importantes y su organización es mucho más segura. Ahora ya puede seguir adelante con las capacidades de protección contra amenazas (incluida la protección contra amenazas avanzada de Microsoft defender), las capacidades de protección y clasificación de datos, y la protección de las cuentas administrativas. Para obtener un conjunto más profundo y metódico de recomendaciones de seguridad para Microsoft 365, vea [microsoft 365 Security para los responsables de decisiones empresariales](Microsoft-365-security-for-bdm.md). 
 

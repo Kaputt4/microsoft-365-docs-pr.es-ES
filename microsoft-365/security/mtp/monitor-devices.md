@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087901"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804882"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de dispositivos en el centro de seguridad 365 de Microsoft
 
@@ -148,11 +148,11 @@ Los **dispositivos con detecciones de malware** muestran los dispositivos que ti
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Supervisión y administración de la implementación y detección de reglas de ASR
 
-[Las reglas de reducción de superficie de ataques (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) ayudan a evitar acciones y aplicaciones que normalmente usan los ataques de malware para infectar dispositivos. Estas reglas controlan Cuándo y cómo se pueden ejecutar los ejecutables. Por ejemplo, puede impedir que JavaScript o VBScript inicien un archivo ejecutable descargado, bloquee las llamadas a la API de Win32 desde macros de Office o bloquee procesos que se ejecuten desde unidades USB.
+[Las reglas de reducción de superficie de ataques (ASR)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) ayudan a evitar acciones y aplicaciones que normalmente usan los ataques de malware para infectar dispositivos. Estas reglas controlan cuándo y cómo se pueden ejecutar los archivos ejecutables. Por ejemplo, puede impedir que JavaScript o VBScript inicien un archivo ejecutable descargado, bloqueen llamadas API Win32 de macros de Office o bloqueen procesos que se ejecuten desde unidades USB.
 
 ![Tarjeta de reducción de superficie de ataques](../../media/attack-surface-reduction-rules.png)
 
-La tarjeta de **reglas de reducción de superficie de ataques** proporciona información general sobre la implementación de reglas en los dispositivos.
+La tarjeta **Reglas de reducción de la superficie expuesta a ataques** ofrece información general sobre la implementación de reglas en los dispositivos.
 
 La barra superior de la tarjeta muestra el número total de dispositivos que se encuentran en los siguientes modos de implementación:
 
@@ -160,7 +160,7 @@ La barra superior de la tarjeta muestra el número total de dispositivos que se 
 * **Modo auditoría**: dispositivos sin reglas establecidas para bloquear la actividad detectada, pero tiene al menos una regla establecida para auditar la actividad detectada  
 * **Desactivado: dispositivos**con todas las reglas de ASR desactivadas
 
-La parte inferior de esta tarjeta muestra la configuración por regla en los dispositivos. Cada barra indica el número de dispositivos que están configurados para bloquear o auditar o que la regla se ha desactivado completamente.
+La parte inferior de esta tarjeta muestra la configuración por regla en los dispositivos. Cada barra indica el número de dispositivos que están configurados para bloquear o auditar la detección o que tienen la regla completamente desactivada.
 
 ### <a name="view-asr-detections"></a>Ver detecciones de ASR
 
@@ -168,7 +168,7 @@ Para ver información detallada sobre las detecciones de reglas de ASR en la red
 
 ![Pestaña detecciones](../../media/detections-tab.png)
 
-El gráfico de la parte superior de la página muestra las detecciones con detecciones de agrupamiento de tiempo que se bloquearon o auditaron. La tabla de la parte inferior muestra las detecciones más recientes. Use la siguiente información en la tabla para comprender la naturaleza de las detecciones:
+El gráfico de la parte superior de la página muestra las detecciones con detecciones de agrupamiento de tiempo que se bloquearon o auditaron. En la tabla de la parte inferior se muestran las detecciones más recientes. Use la siguiente información de la tabla para comprender la naturaleza de las detecciones:
 
 * **Archivo detectado**: el archivo, normalmente un script o un documento, cuyo contenido activó la actividad de ataque sospechoso
 * **Regla**: nombre que describe las actividades de ataque para las que se ha diseñado la regla. Leer acerca de las reglas de ASR existentes
@@ -206,8 +206,8 @@ Registros para la regla de **bloqueo de credenciales de ASR robo desde el subsis
 Para encontrar la aplicación de origen, ejecute la siguiente [consulta de búsqueda avanzada](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) para esta regla específica (identificada por el identificador de regla 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
 ```kusto
-MiscEvents
-| where EventTime > ago(7d)
+DeviceEvents
+| where Timestamp > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
 | project InitiatingProcessFolderPath, InitiatingProcessFileName

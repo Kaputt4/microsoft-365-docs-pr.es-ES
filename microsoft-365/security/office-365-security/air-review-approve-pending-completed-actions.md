@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las acciones de corrección en la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634645"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804827"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Ver acciones de corrección pendientes o realizadas tras una investigación automatizada en Office 365
 
-## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 
 ![Página de acción de investigaciones de aire](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 
 Mientras ve los [detalles de una investigación](air-view-investigation-results.md), puede aprobar o rechazar cualquier acción de corrección pendiente. Le recomendamos hacerlo tan pronto como sea posible para que las investigaciones automatizadas se completen.
 
@@ -44,10 +45,10 @@ Mientras ve los [detalles de una investigación](air-view-investigation-results.
 5. Seleccione un elemento de la lista. (Esto activa los botones aprobar y rechazar).
 
 6. Revise la información disponible de los elementos seleccionados y, a continuación, apruebe o rechace las acciones. 
- - **APPROVE** permite que se inicie la corrección.
- - **Rechazar** no realiza ninguna acción adicional
+   - **APPROVE** permite que se inicie la corrección.
+   - **Rechazar** no realiza ninguna acción adicional
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)
 

@@ -17,19 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8b8976f07f88afa184eb292b0cdc1d6e36a44d77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8767174fa17aceab7d83adb96f938efad5074356
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615923"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804765"
 ---
 # <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
 
 >[!IMPORTANT]
 >Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Seguir las recomendaciones de puntuación de seguridad puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
+La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el centro de seguridad de Microsoft 365.
+
+Seguir las recomendaciones de puntuación de seguridad puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 
 La puntuación segura ayuda a las organizaciones a:  
 
@@ -154,9 +156,34 @@ La puntuación segura de Microsoft es un resumen numérico de su postura de segu
 
 ## <a name="whats-new"></a>Novedades 
 
-Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
+Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md).
 
-### <a name="updated-interface-and-functionality"></a>Interfaz y funciones actualizadas
+### <a name="april-21st-2020"></a>21 de abril de 2020
+
+#### <a name="added-azure-active-directory-improvement-action"></a>Se agregaron acciones de mejora de Azure Active Directory
+
+- No permitir a los usuarios conceder consentimiento a las aplicaciones no administradas (actualmente disponibles en la versión de lanzamiento)
+
+#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Se agregaron acciones de mejora de protección contra amenazas avanzada de Azure
+
+- Deshabilitar el servicio de cola de impresión en controladores de dominio
+- Modificar las delegaciones Kerberos no seguras para impedir la suplantación
+- Proteger y administrar contraseñas de administración local con los intervalos de Microsoft
+- Reducir el riesgo de ruta de movimiento lateral a las entidades confidenciales
+- Eliminación de cuentas latentes de grupos confidenciales
+- Quitar atributos del historial SID no seguro de entidades
+- Resolver atributos de cuenta no segura
+- Detener la exposición de credenciales de texto no cifrado
+- Detener la comunicación de protocolos heredados
+- Detener el uso de cifrado débil
+
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Compatibilidad con las recomendaciones de seguridad de la amenaza ATP de Microsoft defender & Vulnerability Management (TVM)
+
+Todas las recomendaciones de seguridad emitidas suministradas por TVM ya están disponibles.
+
+### <a name="january---march-2020"></a>Enero a 2020 de marzo
+
+#### <a name="updated-interface-and-functionality"></a>Interfaz y funciones actualizadas
 
 * Todas las nuevas métricas y vistas de tendencias para CISO y discusiones de nivel de liderazgo
 * Nuevas formas de realizar un seguimiento y evaluar su puntuación
@@ -165,13 +192,13 @@ Para convertir la puntuación segura de Microsoft en un mejor representante de s
 * Administrar hacia sus metas futuras mediante proyecciones de puntuación y acciones planeadas
 * Y mucho más.
 
-### <a name="removed-not-scored-and-review-improvement-actions"></a>Se quitaron las acciones de mejora "sin puntuar" y "revisión"
+#### <a name="removed-not-scored-and-review-improvement-actions"></a>Se quitaron las acciones de mejora "sin puntuar" y "revisión"
 
 Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir y las acciones de mejora de revisión no se miden en el mismo estándar que otras acciones de mejora.
 
 Por estos motivos, todas las acciones de mejora que no se hayan puntuado o requerían una cadencia de revisión se han eliminado temporalmente. No es necesario realizar ninguna acción en su parte.
 
-### <a name="simplification-of-the-point-system"></a>Simplificación del sistema de punto
+#### <a name="simplification-of-the-point-system"></a>Simplificación del sistema de punto
 
 Para estandarizar puntos en varias experiencias, se ha actualizado el total de puntos de acción de mejora de la puntuación segura para que merezca 10 puntos o menos. Es necesario ser más coherente en el respire ancho de los controles de seguridad que tenemos hoy y los que se van a agregar en el futuro. Si bien se trata de un cambio significativo y verá los totales de los puntos de colocación, no habrá cambios en su postura de seguridad.
 

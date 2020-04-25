@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637609"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808988"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones de consentimiento ilícito
 
@@ -48,17 +48,18 @@ Debe buscar en el **registro de auditoría** los signos, también denominados in
 
 3. Búsqueda (todas las actividades y todos los usuarios), especifique la fecha de inicio y la fecha de finalización si es necesario y, a continuación, haga clic en **Buscar**. 
 
-4. Filtre los resultados por consentimiento a Application y agregue OAuth2PermissionGrant.
+4. Haga clic en **filtrar resultados** y escriba consentimiento para la aplicación en el campo **actividad** .
 
 5. Haga clic en el resultado para ver los detalles de la actividad. Haga clic en **más información** para obtener detalles de la actividad. Compruebe si IsAdminContent está establecido en true.
 
 > [!NOTE]
-> * La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción a Microsoft 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-Si este valor es true, indica que un usuario con acceso de administrador global puede haber concedido acceso general a los datos. Si esto es inesperado, siga los pasos para [confirmar un ataque](#how-to-confirm-an-attack).
+> La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción a Microsoft 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Si este valor es true, indica que un usuario con acceso de administrador global puede haber concedido acceso general a los datos. Si esto es inesperado, siga los pasos para [confirmar un ataque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Cómo confirmar un ataque
 
-Si tiene una o más instancias de la IOCs enumeradas anteriormente, debe seguir investigando para confirmar que se ha producido el ataque. Puede usar cualquiera de estos tres métodos para confirmar el ataque.
+Si tiene una o más instancias de la IOCs enumeradas anteriormente, debe seguir investigando para confirmar que se ha producido el ataque. Puede usar cualquiera de estos tres métodos para confirmar el ataque:
 
 - Las aplicaciones de inventario y sus permisos mediante el portal de Azure Active Directory. Este método es exhaustivo, pero solo puede realizar comprobaciones en un usuario cada vez que puede llevar mucho tiempo si tiene que comprobar muchos usuarios.
 
@@ -158,9 +159,9 @@ Una vez que haya identificado una aplicación con permisos de ilícitas, tiene v
 
 - Puede desactivar las aplicaciones integradas para su arrendamiento. Se trata de un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en un espacio empresarial. Esto evita que los usuarios concedan de forma inadvertida acceso a una aplicación malintencionada. Esto no es muy recomendable ya que perjudica seriamente la capacidad de los usuarios de ser productivo con aplicaciones de terceros. Para ello, siga los pasos que se indican en [activar o desactivar las aplicaciones integradas](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un Cybersecurity Pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 
-Su suscripción a Microsoft 365 incluye un eficaz conjunto de capacidades de seguridad que puede usar para proteger sus datos y sus usuarios. Use [microsoft 365 Security Roadmap-Top prioridades para los primeros 30 días, 90 días y más allá de la](security-roadmap.md) implementación de los procedimientos recomendados de Microsoft para proteger su inquilino de Microsoft 365.
+Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios. Use el [Plan de seguridad de Microsoft 365: principales prioridades para los primeros 30 días, 90 días y en adelante](security-roadmap.md) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Microsoft 365.
 
 - Tareas a realizar en los primeros 30 días. Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
 
