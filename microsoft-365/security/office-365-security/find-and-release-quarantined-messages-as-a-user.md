@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Como usuario de Microsoft 365, puede ver, liberar y eliminar los mensajes puestos en cuarentena (mensajes de los que es destinatario y que el filtrado de correo no deseado puso en cuarentena como correo no deseado o correo electrónico masivo). Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento.
-ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8ab5835a29ccf0c58d27f56fe84d29745419b1a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638111"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809011"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>Buscar y liberar mensajes en cuarentena como usuario
 
@@ -38,7 +38,7 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 
 - Los administradores también pueden [configurar notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) en directivas contra correo no deseado. Los usuarios pueden liberar mensajes de correo no deseado en cuarentena, pero no mensajes phishing en cuarentena, directamente desde estas notificaciones. Para obtener más información, consulte [Notificaciones de correo no deseado para el usuario final en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en Office 365](manage-quarantined-messages-and-files.md).
+- Los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Los mensajes Phish pueden ser revisados por los usuarios pero sólo son liberados por los administradores. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en Office 365](manage-quarantined-messages-and-files.md).
 
 - Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.
 

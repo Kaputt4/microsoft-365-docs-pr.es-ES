@@ -16,12 +16,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.'
-ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638325"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808984"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
@@ -49,7 +49,7 @@ Recopile esta información:
 
 - Registro TXT de SPF actual para su dominio personalizado. Para obtener instrucciones, vea [Recopilar la información necesaria para crear los registros de DNS de Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
 
-- Direcciones IP de todos los servidores de mensajería locales. Por ejemplo, **192.168.0.1**.
+- Direcciones IP externas de todos los servidores de mensajería de las instalaciones. Por ejemplo,**131.107.2.200**.
 
 - Nombres de dominio que se usarán para todos los dominios de terceros que necesita incluir en el registro TXT de SPF. Algunos proveedores de correo masivo tienen configurados subdominios para sus clientes. Por ejemplo, la empresa MailChimp tiene configurado **servers.mcsv.net**.
 

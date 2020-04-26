@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los campos de encabezado y los valores que se agregan a los mensajes mediante Exchange Online Protection.
-ms.openlocfilehash: 1bb2468908ef9711242bdb236f7f43f9f6e43eb1
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708588"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805209"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -46,7 +46,7 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |IPV:CAL|El mensaje fue omitido del filtrado de correo no deseado porque la dirección IP de origen aparecía en la Lista de direcciones IP permitidas. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).|
 |IPV:NLI|La dirección IP no aparecía en ninguna lista de reputación de IP.|
 |LANG|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
-|PTR:\[ReverseDNS\]|Registro PTR (también denominado registro de marcador o dirección DNS inversa) de la dirección IP de origen.|
+|PTR:\[ReverseDNS\]|El registro PTR (también conocido como la búsqueda inversa de DNS) de la dirección IP de la fuente.|
 |SCL|Nivel de confianza de correo electrónico no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado. Para obtener más información, consulte [Nivel de confianza del correo no deseado (SCL)](spam-confidence-levels.md).|
 |SFTY|El mensaje se identificó como suplantación de identidad (phishing) y también se marcará con uno de los siguientes valores: <ul><li>9.1: valor predeterminado. El mensaje contiene una dirección URL de suplantación de identidad (phishing), puede contener otro contenido de suplantación de identidad o puede haber sido marcado como "phishing" por otro filtro de correo (por ejemplo, Exchange local) antes de enviarse a Microsoft 365.</li><li>9.11: [suplantación de identidad dentro de la organización o interna](anti-spoofing-protection.md#different-types-of-spoofing). El mensaje no ha superado las comprobaciones de suplantación de identidad donde el dominio de correo del remitente en el encabezado De es el mismo, se alinea con, o es parte de la misma organización que el dominio de recepción. La sugerencia de seguridad para la suplantación de identidad dentro de la organización se agregará al mensaje.</li><li>9.19: Suplantación de dominio. El dominio remitente está intentando suplantar un dominio protegido (un dominio que pertenece a la organización del destinatario o un dominio personalizado) que se especifica en una directiva contra la suplantación de identidad de ATP. La sugerencia de seguridad para la suplantación del dominio se agrega al mensaje (si la sugerencia de seguridad está habilitada en la directiva contra la suplantación de identidad de ATP).</li><li>9.20: Suplantación de usuario. El usuario remitente está intentando suplantar a un usuario en la organización del destinatario, o bien un usuario protegido que se especificó en una directiva contra la suplantación de identidad de ATP. La sugerencia de seguridad para la suplantación del usuario se agrega al mensaje (si la sugerencia de seguridad está habilitada en la directiva contra la suplantación de identidad de ATP).</li><li>9.21: [Suplantación de identidad entre dominios](anti-spoofing-protection.md#different-types-of-spoofing). El mensaje no superó las comprobaciones contra suplantación donde el dominio de correo electrónico del remitente en el encabezado De no se autentica y es un dominio externo. Se usa en combinación con [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication)).</li><li>9.22: Es lo mismo que el 9.21, pero el usuario tiene un remitente seguro que se reemplazó.</li><li>9.23: Es lo mismo que el 9.22, pero la organización tiene un remitente o un dominio permitido que se reemplazó.</li><li>9.24: Es lo mismo que el 9.23, pero el usuario tiene una regla de flujo de correo de Exchange (también denominada regla de transporte) que se reemplazó.</li></ul>|
 |SFV:BLK|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de Remitentes bloqueados de Outlook del usuario (la lista de Remitentes bloqueados del usuario).<br/></br> Para obtener más información sobre cómo los administradores pueden administrar la lista de Remitentes bloqueados de un usuario, consulte [Configurar el correo electrónico no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|
