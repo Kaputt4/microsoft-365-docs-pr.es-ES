@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
-ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800051"
+ms.locfileid: "43805194"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -113,7 +113,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - El registro de auditoría correspondiente puede tardar hasta 30 minutos o 24 horas después de que se produzca el evento en mostrarse en los resultados de una búsqueda de registro de auditoría. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
 
-  |**Servicio de Microsoft 365**|**30 minutos**|**24 horas**|
+  |**Característica o servicio de Microsoft 365**|**30 minutos**|**24 horas**|
   |:-----|:-----:|:-----:|
   |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -129,6 +129,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   |PowerApps||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro de seguridad y cumplimiento|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Etiquetas de confidencialidad||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint en línea y OneDrive para Empresas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
