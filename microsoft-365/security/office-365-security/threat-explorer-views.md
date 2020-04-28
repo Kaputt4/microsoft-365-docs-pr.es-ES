@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955644"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907254"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -30,7 +30,15 @@ El [Explorador de amenazas](threat-explorer.md) (y el informe de detecciones en 
 - Si tiene [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2, entonces tiene Explorer.
 - Si tiene Office 365 ATP plan 1, tendrá detecciones en tiempo real.
 
-La primera vez que se abre el explorador (o el informe de detecciones en tiempo real), la vista predeterminada muestra las detecciones de malware de correo electrónico de los últimos 7 días. Este informe también puede Mostrar detecciones de ATP, como direcciones URL malintencionadas detectadas por [vínculos seguros](atp-safe-links.md)y archivos malintencionados detectados por [datos adjuntos seguros](atp-safe-attachments.md). Este informe se puede modificar para Mostrar datos de los últimos 30 días (a menos que esté usando una suscripción de prueba). Las suscripciones de prueba incluirán datos sólo para los últimos siete días.
+La primera vez que se abre el explorador (o el informe de detecciones en tiempo real), la vista predeterminada muestra las detecciones de malware de correo electrónico de los últimos 7 días. Este informe también puede Mostrar detecciones de ATP, como direcciones URL malintencionadas detectadas por [vínculos seguros](atp-safe-links.md)y archivos malintencionados detectados por [datos adjuntos seguros](atp-safe-attachments.md). Este informe se puede modificar para Mostrar datos de los últimos 30 días (con una suscripción pagada P2 de ATP). Las suscripciones de prueba incluirán datos sólo para los últimos siete días.
+
+|Suscripción  |Utilidad  |Días de datos  |
+|---------|---------|---------|
+|Prueba de ATP P1     | Detecciones en tiempo real        |   7       |
+|NNC P1 pagada     |   Detecciones en tiempo real      |    semestre     |
+|Prueba pagada de ATP P1 prueba de ATP P2     | Explorador de amenazas   |   7    |
+|Seguimiento P2 de ATP     |  Explorador de amenazas       |     7     |
+|P2 de ATP pagada     |     Explorador de amenazas    |  semestre       |
 
 Use el menú **Ver** para cambiar la información que se muestra. La información sobre herramientas ayuda a determinar la vista que se va a usar.
   
@@ -99,7 +107,7 @@ Para ver este informe, en el explorador, elija **Ver** > **Email** > **todos los
 > [!NOTE]
 > Si recibe un error que lee **demasiados datos para mostrar**, agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo. 
 
-Para aplicar un filtro, elija **remitente**, seleccione un elemento de la lista y, a continuación, haga clic en el botón actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones llevadas a cabo por las directivas y características de protección contra amenazas en Office 365), la tecnología de detección (cómo se detectó el malware) y adicional. 
+Para aplicar un filtro, elija **remitente**, seleccione un elemento de la lista y, a continuación, haga clic en el botón actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones llevadas a cabo por las directivas y las directivas de protección contra amenazas en Office 365), la tecnología de detección (cómo se detectó el malware) y mucho más. 
 
 ![Ver los datos sobre el correo electrónico detectado mediante la tecnología de detección](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 

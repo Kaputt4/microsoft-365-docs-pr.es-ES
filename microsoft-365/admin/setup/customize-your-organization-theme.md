@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Obtenga información sobre cómo cambiar el tema predeterminado de Microsoft 365 y personalizarlo para que se ajuste al logotipo o al logotipo de su compañía. '
-ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 06b247da1a8ac1f330f2ad36c8b29897963819f3
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627611"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900779"
 ---
-# <a name="customize-the-theme-for-your-organization"></a>Personalizar el tema de la organización
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el tema de 365 de Microsoft para su organización
 
 Obtenga información sobre cómo personalizar el tema en el centro de administración de Microsoft 365. Como administrador de su suscripción de Microsoft 365 para empresas, puede cambiar el tema predeterminado que aparece en la barra de navegación superior para todos los usuarios de la organización. Puede Agregar el logotipo de su compañía y cambiar los colores para que se ajusten al resto de la marca. Incluso puede Agregar un vínculo de destino para que los usuarios naveguen a cuando seleccionen su logotipo. Puede ver aquí el tema predeterminado y el resultado del tema personalizado en Microsoft 365.
   
@@ -64,7 +64,7 @@ Obtenga información sobre cómo personalizar el tema en el centro de administra
     
 4. Seleccione **Guardar cambios**.
     
-Verá el nuevo tema en el centro de administración inmediatamente y después de un breve retraso, lo verá en Microsoft 365, incluidas las páginas en Outlook, SharePoint, la [aplicación móvil de SharePoint para iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)y la [aplicación móvil de SharePoint para Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Consulte el siguiente gráfico para ver un ejemplo del lugar en el que se modifica un tema personalizado desde el centro de administración.
+Verá el nuevo tema en el centro de administración inmediatamente y después de un breve retraso, lo verá en Microsoft 365, incluidas las páginas en Outlook, SharePoint, la [aplicación móvil de SharePoint para iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)y la [aplicación móvil de SharePoint para Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Para obtener un ejemplo de dónde puede personalizar los cambios de tema desde el centro de administración, consulte la siguiente imagen.
 
 ![M365-admin-tenant-Theme-conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -72,7 +72,7 @@ Podrá quitar el icono o los colores personalizados en cualquier momento. Simple
   
 ## <a name="best-practices"></a>Procedimientos recomendados
 
-Al elegir una **imagen de logotipo**, le recomendamos que use un tipo de archivo SVG, siempre que sea posible, de modo que el logotipo tendrá una apariencia de alta resolución en todas las pantallas y en todos los niveles de zoom.
+Al elegir una **imagen de logotipo**, se recomienda usar un tipo de archivo SVG, de modo que el logotipo tenga un aspecto de alta resolución en todas las pantallas y en todos los niveles de zoom.
 
 Al elegir colores personalizados, elija un **color de fondo** de la barra de navegación que tenga una relación de contraste alto con la **imagen de logotipo** que ha seleccionado. Elija también un color de **texto e iconos** con una alta relación de contraste en el color de fondo de la **barra de navegación** para asegurarse de que todo el texto y los iconos se ven fácilmente.
 
@@ -99,4 +99,3 @@ Este es un diagrama de flujo simple para ayudarle a configurar rápidamente un t
 [Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md)
   
   
-
