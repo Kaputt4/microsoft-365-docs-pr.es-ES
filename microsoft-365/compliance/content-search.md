@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en los buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Microsoft 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632365"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900744"
 ---
 # <a name="content-search"></a>Búsqueda de contenido
 
@@ -138,13 +138,13 @@ Para ver las estadísticas de búsqueda:
     
 3. En la lista desplegable de **resultados individuales**, haga clic en **Estadísticas de búsqueda**.
     
-4. En la lista desplegable **Tipo**, haga clic en una de las siguientes opciones en función de las estadísticas de búsqueda que desee ver. 
+4. En la lista desplegable **Tipo**, haga clic en una de las siguientes opciones en función de las estadísticas de búsqueda que desee ver:
     
-  - **Resumen**: muestra estadísticas para cada tipo de ubicación de contenido buscada. Las estadísticas mostradas incluyen el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el número total y tamaño de los elementos devueltos por la búsqueda. Esta configuración es la predeterminada.
-    
-  - **Consultas**: muestra estadísticas sobre las consultas de búsqueda. Incluye el tipo de ubicación de contenido al que se aplican las estadísticas de la consulta, la parte de la consulta de búsqueda a la que se aplican las estadísticas (aquí, **Primario** se refiere a toda la consulta de búsqueda), el número de ubicaciones de contenido que contienen elementos encontrados por la consulta de búsqueda, y el número total, el tamaño y los elementos encontrados (en la ubicación de contenido definida) que coincidan con la consulta de búsqueda. También se muestran estadísticas de los elementos sin indexar (conocidos como *elementos indexados parcialmente*). Sin embargo, en las estadísticas los únicos elementos indexados parcialmente que se incluyen son los de buzones. No se incluyen, en cambio, los elementos indexados parcialmente de SharePoint y OneDrive.
-    
-  - **Ubicaciones principales**: muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Se mostrarán las 1000 ubicaciones más importantes.
+    - **Resumen**: muestra estadísticas para cada tipo de ubicación de contenido buscada. Las estadísticas mostradas incluyen el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el número total y tamaño de los elementos devueltos por la búsqueda. Esta configuración es la predeterminada.
+
+    - **Consultas**: muestra estadísticas sobre las consultas de búsqueda. Incluye el tipo de ubicación de contenido al que se aplican las estadísticas de la consulta, la parte de la consulta de búsqueda a la que se aplican las estadísticas (aquí, **Primario** se refiere a toda la consulta de búsqueda), el número de ubicaciones de contenido que contienen elementos encontrados por la consulta de búsqueda, y el número total, el tamaño y los elementos encontrados (en la ubicación de contenido definida) que coincidan con la consulta de búsqueda. También se muestran estadísticas de los elementos sin indexar (conocidos como *elementos indexados parcialmente*). Sin embargo, en las estadísticas los únicos elementos indexados parcialmente que se incluyen son los de buzones. No se incluyen, en cambio, los elementos indexados parcialmente de SharePoint y OneDrive.
+
+    - **Ubicaciones principales**: muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Se mostrarán las 1000 ubicaciones más importantes.
     
 Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
   
@@ -246,6 +246,8 @@ Puede buscar en el buzón asociado a un grupo de Microsoft 365 o Microsoft Team
 Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de Microsoft 365:
   
 - Para buscar contenido ubicado en Teams y grupos de Microsoft 365, debe especificar el buzón y el sitio de SharePoint asociados a un equipo o grupo.
+
+- El contenido de canales privados se almacena en el buzón de cada usuario y no en el buzón de equipo. Para buscar contenido en canales privados, consulte [eDiscovery de canales privados](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Ejecute el cmdlet **Get-UnifiedGroup** de Exchange Online para ver las propiedades de un equipo o grupo de Microsoft 365. Este es un buen método para obtener la dirección URL del sitio asociado a un equipo o un grupo. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team: 
     
