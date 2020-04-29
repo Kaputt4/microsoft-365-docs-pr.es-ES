@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información sobre los dominios buscando respuestas a sus preguntas en preguntas más frecuentes.
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627599"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919486"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -424,7 +424,7 @@ Puede, pero hay limitaciones:
         
     4. En la ventana que se abre, seleccione **retransmisión interna**. 
         
-    5. Seleccione **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
+    5. Haga clic en **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
     
 4. Opcionalmente, desbloquear el servidor de correo electrónico existente
     
@@ -492,7 +492,7 @@ Puede, pero hay limitaciones:
         
     4. Pruebe el correo electrónico para alguien que se encuentra en el otro sistema de correo electrónico. Por ejemplo, envíe un correo electrónico al usuario C. Este correo electrónico debe entregarse al buzón del usuario C en su servidor de correo original.
         
-    5. Desde una cuenta externa o de la cuenta de correo electrónico de un empleado en el otro sistema de correo electrónico, compruebe que el reenvío está configurado correctamente en el otro sistema de correo electrónico. Por ejemplo, de la cuenta de origninal Server del usuario C o de una cuenta de hotmail, envíe un correo electrónico al usuario y compruebe que llegue al buzón de Office 365 del usuario A.
+    5. Desde una cuenta externa o de la cuenta de correo electrónico de un empleado en el otro sistema de correo electrónico, compruebe que el reenvío está configurado correctamente en el otro sistema de correo electrónico. Por ejemplo, en la cuenta de servidor original del usuario C o en una cuenta de hotmail, envíe al usuario un correo electrónico y compruebe que llegue al buzón de Office 365 del usuario A.
         
 9. Mover el contenido del buzón
     

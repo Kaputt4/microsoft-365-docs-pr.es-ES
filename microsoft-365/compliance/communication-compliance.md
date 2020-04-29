@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634182"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919697"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
-El cumplimiento de la comunicación forma parte de la nueva solución de riesgo de Insider que se establece en Microsoft 365, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de la organización, y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
+El cumplimiento de la comunicación forma parte de la nueva solución de riesgo de Insider que se establece en Microsoft 365, que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams, Yammer o las comunicaciones de terceros de la organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 
 Las directivas de cumplimiento de comunicaciones de Microsoft 365 ayudan a superar muchos de los retos modernos asociados con el cumplimiento y las comunicaciones internas y externas, entre los que se incluyen:
 
@@ -99,6 +99,7 @@ Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en
 
 - **Microsoft Teams**: las comunicaciones de chat para canales públicos y privados de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) y chats individuales se admiten en el cumplimiento de la comunicación como origen de canal independiente o con otros servicios de Microsoft 365. Las directivas ahora analizan automáticamente todos los canales y equipos de Microsoft Teams para determinados usuarios definidos en una directiva, lo que elimina la necesidad de mantener una lista de asignación independiente para las asignaciones de Microsoft Teams.
 - **Exchange Online**: todos los buzones hospedados en [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) en su organización de 365 de Microsoft tienen derecho a análisis. Los correos electrónicos y datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento están disponibles instantáneamente para la supervisión y en los informes de supervisión. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
+- **Yammer**: los mensajes privados y las conversaciones de la comunidad pública en [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) se admiten en las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para admitir el examen de mensajes y datos adjuntos.
 - **Skype empresarial online**: las directivas de cumplimiento de comunicaciones admiten el análisis de comunicaciones de chat y los datos adjuntos asociados en [Skype empresarial online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Orígenes de terceros**: puede examinar mensajes de orígenes de [terceros](archiving-third-party-data.md) para los datos importados en buzones de la organización de Microsoft 365. El cumplimiento de la comunicación admite conexiones a varias plataformas populares, entre las que se incluyen los Bloomberg, Facebook, Twitter y otros usuarios instantáneos.
 
@@ -155,4 +156,4 @@ Mantener el seguimiento y administrar los problemas de cumplimiento identificado
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) o consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y cómo configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el idioma ofensivo en Microsoft Teams y las comunicaciones de Exchange Online.
+Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea [Configure Communication Compliance for Microsoft 365](communication-compliance-configure.md) o consulte el [caso práctico de Contoso](communication-compliance-case-study.md) y cómo se configuró rápidamente una directiva de cumplimiento de comunicaciones para supervisar el idioma ofensivo en Microsoft Teams, Exchange Online y las comunicaciones de Yammer.

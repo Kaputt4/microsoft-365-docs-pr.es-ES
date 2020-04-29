@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632375"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921462"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
 >[!IMPORTANT]
->Este tema se aplica a la configuración de directivas de supervisión en una suscripción de Microsoft 365. Si desea configurar el cumplimiento de comunicaciones para una suscripción de Microsoft 365, vea [Configure Communications Compliance in Microsoft 365](communication-compliance-configure.md).
+>Tras la publicación del cumplimiento de la comunicación en el cumplimiento de Microsoft 365 en febrero de 2020, se está retirando la supervisión en Office 365. Las directivas de supervisión ya no estarán disponibles para su creación, y las directivas se quitarán después de un período prolongado de acceso de solo lectura.
+>
+>Si usa la supervisión, tenga en cuenta que:
+>
+>- A partir del 15 de junio de 2020, los inquilinos no tendrán la capacidad de crear nuevas directivas de supervisión.
+>- A partir del 31 de agosto de 2020, las directivas existentes dejarán de capturar mensajes nuevos.
+>- A partir del 26 de octubre de 2020, las directivas existentes se eliminarán.
+>
+>Alentamos activamente a los clientes que actualmente están explorando o usando la supervisión en Office 365 para usar la nueva solución de cumplimiento de la [comunicación](communication-compliance.md) a fin de satisfacer los requisitos normativos o de supervisión de comunicaciones con un conjunto mucho más rico de capacidades inteligentes.
 
 Usar directivas de supervisión para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de supervisión pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de supervisión en Office 365](supervision-policies.md).
 

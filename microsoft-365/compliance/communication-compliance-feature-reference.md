@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634192"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919677"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -43,13 +43,13 @@ Las plantillas de Directiva son opciones de directiva predefinidas que puede usa
 
 |**Área**|**Plantilla de Directiva**|**Detalles**|
 |:-----|:-----|:-----|
-| **Idioma ofensivo y Antiacoso** | Supervisar las comunicaciones para un lenguaje ofensivo | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 100% <br> -Condiciones: clasificador de idioma ofensivo |
-| **Información confidencial** | Supervisión de las comunicaciones para información confidencial | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 10% <br> -Condiciones: información confidencial, tipos y patrones de contenido preparados, opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
-| **Cumplimiento normativo** | Supervisión de las comunicaciones para obtener información relacionada con el cumplimiento de normativas financieras | -Ubicaciones: Exchange, Teams, Skype empresarial <br> -Direction: entrante, saliente <br> -Porcentaje de revisión: 10% <br> -Condiciones: opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
+| **Idioma ofensivo y Antiacoso** | Supervisar las comunicaciones para un lenguaje ofensivo | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 100% <br> -Condiciones: clasificador de idioma ofensivo |
+| **Información confidencial** | Supervisión de las comunicaciones para información confidencial | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 10% <br> -Condiciones: información confidencial, tipos y patrones de contenido preparados, opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
+| **Cumplimiento normativo** | Supervisión de las comunicaciones para obtener información relacionada con el cumplimiento de normativas financieras | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente <br> -Porcentaje de revisión: 10% <br> -Condiciones: opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
 
 ## <a name="supervised-users"></a>Usuarios supervisados
 
-Antes de empezar a usar el cumplimiento de la comunicación, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Microsoft 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir usuarios o grupos específicos del análisis con un grupo de exclusión específico o con una lista de grupos.
+Antes de empezar a usar el cumplimiento de la comunicación, debe determinar quién necesita que se revisen sus comunicaciones. En la Directiva, las direcciones de correo electrónico de usuario identifican a los individuos o grupos de personas que deben supervisarse. Algunos ejemplos de estos grupos son los grupos de Microsoft 365, las listas de distribución basadas en Exchange, las comunidades de Yammer y los canales de Microsoft Teams. También puede excluir usuarios o grupos específicos del análisis con un grupo de exclusión específico o con una lista de grupos.
 
 >[!IMPORTANT]
 >Los usuarios a los que se aplican las directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea probar el cumplimiento de la comunicación, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -75,6 +75,8 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
 
 - **Correo electrónico de Exchange**: los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de la comunicación son los mismos que los [tipos de archivo compatibles con las visitas de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
+- **Yammer**: se pueden examinar mensajes privados y conversaciones públicas y datos adjuntos asociados en comunidades de Yammer. Cuando se agrega un usuario a una directiva de cumplimiento de la comunicación que incluye Yammer como un canal definido, las comunicaciones de todas las comunidades de Yammer a las que pertenece el usuario se incluyen en el proceso de detección. Chats y datos adjuntos de Yammer que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Yammer debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para las directivas de cumplimiento de comunicaciones para supervisar las comunicaciones y los datos adjuntos de Yammer. En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online.
+
 - **Skype empresarial online**: las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 24 horas en procesarse. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
 
     - **Para las comunicaciones de chat de Skype empresarial online**: asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
@@ -84,7 +86,6 @@ Con las directivas de cumplimiento de la comunicación, puede elegir analizar lo
     - [Bloomberg instantáneo](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SuccessFactors de SAP
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Conector de datos personalizado](archiving-third-party-data.md)
 
@@ -233,7 +234,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloonmberg, etc. |
 | **Dominios de destinatarios** | El dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
-| **Recipient** | El usuario al que se envió el mensaje. |
+| **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
 | **Tamaño** | El tamaño del mensaje en KB. |

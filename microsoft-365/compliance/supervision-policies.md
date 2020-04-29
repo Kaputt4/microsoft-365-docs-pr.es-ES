@@ -19,14 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626974"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930177"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
+
+>[!IMPORTANT]
+>Tras la publicación del cumplimiento de la comunicación en el cumplimiento de Microsoft 365 en febrero de 2020, se está retirando la supervisión en Office 365. Las directivas de supervisión ya no estarán disponibles para su creación, y las directivas se quitarán después de un período prolongado de acceso de solo lectura.
+>
+>Si usa la supervisión, tenga en cuenta que:
+>
+>- A partir del 15 de junio de 2020, los inquilinos no tendrán la capacidad de crear nuevas directivas de supervisión.
+>- A partir del 31 de agosto de 2020, las directivas existentes dejarán de capturar mensajes nuevos.
+>- A partir del 26 de octubre de 2020, las directivas existentes se eliminarán.
+>
+>Alentamos activamente a los clientes que actualmente están explorando o usando la supervisión en Office 365 para usar la nueva solución de cumplimiento de la [comunicación](communication-compliance.md) a fin de satisfacer los requisitos normativos o de supervisión de comunicaciones con un conjunto mucho más rico de capacidades inteligentes.
 
 Las directivas de supervisión de Microsoft 365 permiten capturar comunicaciones de los empleados para su examen por revisores designados. Puede definir directivas específicas que capturen el correo electrónico interno y externo, Microsoft Teams o las comunicaciones de terceros de la organización. A continuación, los revisores pueden examinar los mensajes para asegurarse de que cumplen con los estándares de mensajes de la organización y los resuelven con el tipo de clasificación.
 
@@ -40,16 +51,12 @@ En algunas organizaciones, puede haber una separación de tareas entre el soport
 
 Para obtener una introducción rápida a las directivas de supervisión, vea el vídeo sobre la [Directiva de supervisión](https://youtu.be/C3Y8WZ7o_dI) en el canal de [mecánica de Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
-Para obtener más información acerca de las mejoras y la disponibilidad de las próximas características de supervisión, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
-
-¿Desea probar la nueva experiencia de cumplimiento de comunicaciones de Microsoft 365? Consulte las características nuevas y mejoradas disponibles en el cumplimiento de la [comunicación en Microsoft 365](communication-compliance.md).
-
 ## <a name="transitioning-from-supervision"></a>Transición desde la supervisión
 
 Las organizaciones que usan directivas de supervisión y planean la transición a [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md) necesitan comprender estos puntos importantes:
 
 - La solución de supervisión de Microsoft 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones de Microsoft 365. Para las organizaciones que van a pasar el cumplimiento de la comunicación desde las directivas de supervisión, recomendamos crear nuevas directivas en el cumplimiento de la comunicación que tengan las mismas *condiciones* que las directivas de supervisión existentes para habilitar nuevas investigaciones y mejoras en la corrección. Al realizar la transición al cumplimiento de la comunicación en Microsoft 365, debe planear la exportación de los datos de informes desde la supervisión si tiene requisitos internos de la Directiva de retención de cumplimiento.
-- Mientras tanto, las organizaciones pueden usar ambas soluciones en paralelo hasta que se migren completamente, pero las directivas que se usan en cada solución deben tener *nombres de directiva únicos*. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante el período de transición.
+- Mientras tanto, las organizaciones pueden usar ambas soluciones en paralelo hasta que se migren por completo, pero las directivas que se usan en cada solución deben tener *nombres de directiva únicos*. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre las soluciones durante el período de transición.
 - Los mensajes guardados en la supervisión de las coincidencias de directivas de Microsoft 365 no se pueden mover ni compartir con el cumplimiento de la comunicación en Microsoft 365.
 
 Para obtener información de jubilación para la supervisión en Office 365, consulte el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
@@ -60,7 +67,7 @@ Las directivas de supervisión pueden ayudar a supervisar las comunicaciones en 
 
 - **Directivas corporativas**
 
-    Los empleados deben cumplir con el uso aceptable, los estándares éticos y otras directivas corporativas en todas sus comunicaciones relacionadas con la empresa. Las directivas de supervisión pueden detectar infracciones de directivas y ayudarle a tomar medidas correctivas para ayudar a mitigar estos tipos de incidentes. Por ejemplo, puede supervisar a su organización las infracciones potenciales de recursos humanos, como acoso o el uso de lenguaje inadecuado o ofensivo en las comunicaciones de los empleados.
+    Los empleados deben cumplir con el uso aceptable, los estándares éticos y otras directivas corporativas en todas sus comunicaciones relacionadas con la empresa. Las directivas de supervisión pueden detectar infracciones de directivas y ayudarle a tomar medidas correctivas para ayudar a mitigar estos tipos de incidentes. Por ejemplo, podría supervisar posibles infracciones de recursos humanos, como acoso o el uso de lenguaje inadecuado o ofensivo en las comunicaciones de los empleados.
 
 - **Administración de riesgos**
 
@@ -101,12 +108,12 @@ Con las directivas de supervisión, puede elegir supervisar los mensajes en una 
 
 - **Microsoft Teams:** Se pueden supervisar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft teams que cumplen las condiciones de directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
-    - **Para supervisar los chats de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
+    - **Para supervisar los chats de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esta configuración es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
     - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Microsoft 365 que desee supervisar que contenga un usuario específico a la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de supervisión.
 
 - **Skype empresarial online:** Las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online las condiciones de la Directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
 
-    - **Para la supervisión de chats de Skype empresarial online:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
+    - **Para la supervisión de chats de Skype empresarial online:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esta configuración es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
 
 - **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como en Facebook o DropBox) para los datos importados en buzones de la organización. [Obtenga información sobre cómo importar datos de](archiving-third-party-data.md)terceros.
 
@@ -147,14 +154,14 @@ Supervisar los mensajes de correo electrónico enviados o recibidos de la organi
 >- supervisar las comunicaciones de Microsoft Teams en su organización en busca de lenguaje ofensivo
 >- impedir o bloquear el idioma ofensivo en las comunicaciones de la organización
 
-Tenga en cuenta que el modelo no proporciona una lista exhaustiva de lenguaje ofensivo. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho a actualizar el modelo según su criterio. Aunque el modelo puede ayudar a su organización a supervisar el lenguaje ofensivo, el modelo no está destinado a proporcionar a los únicos medios de la organización la supervisión o el direccionamiento de ese idioma. La organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión y el bloqueo del lenguaje ofensivo.
+El modelo no proporciona una lista exhaustiva de lenguaje ofensivo. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho a actualizar el modelo según su criterio. Aunque el modelo puede ayudar a su organización a supervisar el lenguaje ofensivo, el modelo no está destinado a proporcionar a los únicos medios de la organización la supervisión o el direccionamiento de ese idioma. La organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión y el bloqueo del lenguaje ofensivo.
 
 El modelo de lenguaje ofensivo supervisa el correo electrónico en busca de la opinión asociada a los siguientes tipos de lenguaje:
 
 |**Tipo**|**Descripción**|
 |:-----|:-----|
 | **Palabras soeces** | Expresiones que avergonzan a la mayoría de los usuarios. |
-| **Slurs** | Expresiones que expresan el obstáculo contra determinados grupos (por ejemplo, raza, étnicos, orientación sexual, discapacidad). |
+| **Slurs** | Expresiones que expresan el obstáculo contra determinados grupos (por ejemplo, raza, étnico, orientación sexual, discapacidad). |
 | **Taunts** | Las expresiones que taunt, condemn, Ridicule o podrían causar potencialmente el enojo o la violencia. |
 | **Expresiones disfrazadas** | Expresiones cuyo significado o pronunciación es el mismo que otro término ofensivo. |
 
@@ -277,7 +284,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 
 ## <a name="audit"></a>Las
 
-En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que cambia una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción supervisada por las directivas de supervisión proporcionan una prueba de los procedimientos de supervisión.
+En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esta información puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que cambia una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción supervisada por las directivas de supervisión proporcionan una prueba de los procedimientos de supervisión.
 
 Las siguientes actividades de directiva de supervisión se auditan y están disponibles en los registros de auditoría unificada:
 

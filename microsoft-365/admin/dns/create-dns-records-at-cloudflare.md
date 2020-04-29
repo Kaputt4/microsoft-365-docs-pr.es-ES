@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en CloudFlare para Microsoft.
-ms.openlocfilehash: f04e4b4a29085a3ddd9b388c7178c1cd638445ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ccd629dfdec24e509144c205b748a883cb65d554
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629712"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919632"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Crear registros DNS en CloudFlare para Microsoft
 
@@ -35,7 +35,7 @@ Si CloudFlare es su proveedor de host DNS, siga los pasos de este artículo para
   
 Después de agregar estos registros a CloudFlare, su dominio estará configurado para funcionar con los servicios de 365 de Microsoft.
   
-Para obtener más información sobre WebHosting y DNS para sitios web con Microsoft, vea [usar un sitio web público con Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+Para obtener información acerca del hospedaje web y de DNS para sitios web con Microsoft, vea [Usar un sitio web público con Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -48,7 +48,7 @@ Para obtener más información sobre WebHosting y DNS para sitios web con Micros
   
 Cuando se registró para CloudFlare, agregó un dominio mediante el proceso de **instalación** de CloudFlare. 
   
-El dominio que agregó se compró en un registrador de dominios independiente; CloudFlare no ofrece servicios de registro de dominios. Para comprobar y crear registros DNS para su dominio en Microsoft 365, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de CloudFlare.
+El dominio que agregó se compró en CloudFlare o un registrador de dominios independiente. Para comprobar y crear registros DNS para su dominio en Microsoft 365, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de CloudFlare.
   
 Para cambiar los servidores DNS del dominio en el sitio web del registrador de dominios usted mismo, haga lo siguiente:
   
@@ -72,7 +72,7 @@ Para cambiar los servidores DNS del dominio en el sitio web del registrador de d
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="BKMK_verify"> </a>
 
-Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS es la que se demuestre a Microsoft que es el propietario del dominio.
+Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -88,19 +88,19 @@ Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propiet
     
     |**Tipo**|**Nombre**|**TTL automático**|**Contenido**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino de la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
   
   
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
 Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y buscará el registro.
   
-Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
-1. En el centro de administración de Microsoft, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración de Microsoft, diríjase a la página **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Dominios</a>.
 
     
 2. En la página **Dominios**, elija el dominio que está verificando. 
@@ -118,7 +118,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
@@ -136,7 +136,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
    
 
   
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
   
 9. Si hay otros registros MX enumerados en la sección **registros MX** , elimínelos seleccionando el icono **eliminar (X)** . 
   
@@ -171,7 +171,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
   
 5. Seleccione el icono de **tráfico DNS** (nube naranja) para omitir los servidores de CloudFlare.
   
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
   
 7. Agregue los otros cinco registros CNAME.
 
@@ -180,7 +180,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En su lugar, agregue los valores necesarios de Microsoft 365 al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En vez de eso, agregue los valores necesarios de Microsoft 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a su página de dominios en CloudFlare a través de [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
     
@@ -197,7 +197,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
     |TXT  <br/> |@  <br/> |30 minutos  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.   |
 
  
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
     
 
   
@@ -223,7 +223,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
     |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1 |5061 | sipfed.online.lync.com |
 
   
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
   
 6. Agregue el otro registro SRV; para ello, elija los valores de la segunda fila de la tabla. 

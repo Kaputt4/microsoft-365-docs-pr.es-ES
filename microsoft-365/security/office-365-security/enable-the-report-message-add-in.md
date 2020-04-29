@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633304"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921581"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
@@ -53,6 +53,8 @@ Si es administrador global o administrador de Exchange Online y Exchange está c
 
   - Buzones de correo en organizaciones locales de Exchange
   - Las suscripciones GCC, GCC HIGH o DoD
+
+- Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Office 365](user-submission.md).
 
 - El explorador Web existente debe funcionar con el complemento de mensajes de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.
 

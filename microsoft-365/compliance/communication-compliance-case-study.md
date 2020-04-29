@@ -1,6 +1,6 @@
 ---
-title: Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams y Exchange Communications
-description: Un caso práctico para contoso y cómo configuran rápidamente una directiva de cumplimiento de la comunicación para supervisar un lenguaje ofensivo en Microsoft Teams y en las comunicaciones de Exchange Online
+title: Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams, Exchange y Yammer Communications
+description: Un caso práctico para contoso y cómo configuran rápidamente una directiva de cumplimiento de comunicaciones para supervisar un lenguaje ofensivo en Microsoft Teams, Exchange Online y Yammer Communications.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637182"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919717"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams y Exchange Communications
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams, Exchange y Yammer Communications
 
-El cumplimiento de la comunicación en Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de su organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams o las comunicaciones de terceros de la organización, y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
+El cumplimiento de la comunicación en Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de su organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams, Yammer o las comunicaciones de terceros de la organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 
-Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para supervisar el idioma ofensivo. Han estado usando Microsoft 365 principalmente para el correo electrónico y la asistencia de Microsoft Teams para sus empleados, pero tienen nuevos requisitos para aplicar la Directiva de la empresa alrededor del acoso del lugar de trabajo. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen un conocimiento básico de los conceptos básicos del trabajo con Microsoft 365 y buscan una guía de un extremo a otro para empezar rápidamente con el cumplimiento de la comunicación.
+Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para supervisar el idioma ofensivo. Han estado usando Microsoft 365 principalmente para el correo electrónico, Microsoft Teams y la compatibilidad con Yammer para sus empleados, pero tienen nuevos requisitos para aplicar la Directiva de la empresa alrededor del acoso del lugar de trabajo. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen un conocimiento básico de los conceptos básicos del trabajo con Microsoft 365 y buscan una guía de un extremo a otro para empezar rápidamente con el cumplimiento de la comunicación.
 
 Este caso práctico cubrirá los conceptos básicos para configurar rápidamente una directiva de cumplimiento de comunicaciones para supervisar las comunicaciones para un lenguaje ofensivo. Esta guía incluye:
 
@@ -41,7 +41,7 @@ Este caso práctico cubrirá los conceptos básicos para configurar rápidamente
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Paso 1: Planeación del cumplimiento de la comunicación
 
-Los administradores de TI de Contoso y los especialistas en línea se han asistido por webinar en línea sobre soluciones de cumplimiento en Microsoft 365 y decidido que las directivas de cumplimiento de comunicaciones les ayudarán a cumplir los requisitos de la Directiva corporativa actualizada para reducir el acoso del lugar de trabajo. Al trabajar juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el lenguaje ofensivo para los chats enviados en Microsoft Teams en mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificación:
+Los administradores de TI de Contoso y los especialistas en línea se han asistido por webinar en línea sobre soluciones de cumplimiento en Microsoft 365 y decidido que las directivas de cumplimiento de comunicaciones les ayudarán a cumplir los requisitos de la Directiva corporativa actualizada para reducir el acoso del lugar de trabajo. Juntos, han desarrollado un plan para crear y habilitar una directiva de cumplimiento de comunicaciones que supervisará el lenguaje ofensivo para los chats enviados en Microsoft Teams, mensajes privados y conversaciones de la comunidad en Yammer y en mensajes de correo electrónico enviados en Exchange Online. Su plan incluye identificación:
 
 - Los administradores de ti que necesitan tener acceso a las características de cumplimiento de comunicaciones.
 - Los especialistas en cumplimiento que necesitan crear y administrar directivas de comunicación.
@@ -146,6 +146,12 @@ Para empezar a trabajar con una directiva de cumplimiento de comunicaciones, hay
 El cumplimiento de la comunicación requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que hay un cambio en una directiva de cumplimiento de la comunicación.
 
 Contoso los administradores de ti revisan y rellenan las [instrucciones paso a paso](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) para activar la auditoría. Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Los administradores de TI de Contoso solo tienen que realizar esta acción una vez.
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>Configuración del espacio empresarial de Yammer para el modo nativo
+
+El cumplimiento de la comunicación requiere que el inquilino de Yammer para una organización esté en modo nativo para supervisar el lenguaje ofensivo en mensajes privados y conversaciones públicas de la comunidad.
+
+Contoso los administradores de ti Asegúrese de que revisan la información de la información [General del modo nativo de Yammer en el tema 365 de Microsoft](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siga los pasos para ejecutar la herramienta de migración en el tema [configuración de la red de Yammer para el modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuración de un grupo para usuarios en el ámbito
 

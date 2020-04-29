@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635788"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930156"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)
 
@@ -58,7 +58,7 @@ Vea el siguiente vídeo (sin audio) para ver estas nuevas funciones en acción:
 
 Siempre tiene la opción de optar por no participar en esta vista previa en cualquier momento.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Estas características solo funcionan con las [etiquetas de confidencialidad](sensitivity-labels.md) . Si tiene etiquetas de Azure Information Protection, primero deberá migrarlas a las etiquetas de confidencialidad para que pueda habilitarlas para los nuevos archivos que cargue. Para obtener instrucciones, consulte [How to Migrate Azure Information Protection Labels to Unified Sensitivity Labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -104,7 +104,7 @@ Para esta vista previa, use la versión 19.002.0121.0008 o posterior de la aplic
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Preparar el shell de administración de SharePoint Online para la versión preliminar
 
-Antes de habilitar la vista previa, asegúrese de que está ejecutando la versión 16.0.19418.12000 o posterior del shell de administración de SharePoint Online. Si ya tiene la versión más reciente, puede seguir adelante y habilitar la vista previa.
+Para habilitar la vista previa con PowerShell, asegúrese de que está ejecutando la versión 16.0.19418.12000 o posterior del shell de administración de SharePoint Online. Si ya tiene la versión más reciente, puede seguir adelante y habilitar la vista previa.
 
 1. Si tiene instalada una versión anterior de Shell de SharePoint Online Management de la galería de PowerShell, puede actualizar el módulo ejecutando el siguiente cmdlet.
 
@@ -119,7 +119,6 @@ Antes de habilitar la vista previa, asegúrese de que está ejecutando la versi�
 4. Seleccione el idioma y, a continuación, haga clic en **Descargar**.
 
 5. Elija entre el archivo .msi x64 y x86. Descargue el archivo x64 si ejecuta la versión de 64 bits de Windows o el archivo x86 si ejecuta la versión de 32 bits. Si no lo sabe, consulte ¿ [qué versión del sistema operativo Windows estoy ejecutando?](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. Una vez que haya descargado el archivo, ejecute el archivo y siga los pasos del Asistente para la instalación.
 
@@ -137,6 +136,25 @@ Para habilitar la vista previa, use el cmdlet Set-SPOTenant:
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. Para Office 365 multi-geo: Repita los pasos 1 y 2 para cada una de las ubicaciones geográficas restantes.
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Usar el centro de cumplimiento para habilitar la compatibilidad con las etiquetas de confidencialidad
+
+Esta opción actualmente se está implementando en los inquilinos como un método alternativo para habilitar la vista previa.
+
+El administrador global de su organización tiene permisos totales para crear y administrar todos los aspectos de las etiquetas de confidencialidad. Si no va a iniciar sesión como administrador global, consulte [Permisos necesarios para crear y administrar etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Inicie sesión en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/)y vaya a **soluciones** > **Information Protection**
+    
+    Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**. 
+
+2. En la pestaña **etiquetas** , si ve un mensaje para activar la capacidad de procesar contenido en archivos de Office Online, seleccione **Activar ahora**:
+    
+    ![Activar ahora el botón para habilitar las etiquetas de confidencialidad de Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    
+    El comando se ejecuta inmediatamente y la próxima vez que se actualiza la página, ya no verá el mensaje o el botón. 
+
+> [!NOTE]
+> Si tiene Office 365 multigeográfico, debe usar PowerShell para habilitar estas funcionalidades para todas las ubicaciones geográficas. Para obtener instrucciones, consulte las secciones anteriores.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Programar la distribución después de crear o cambiar una etiqueta de confidencialidad
 
@@ -164,6 +182,6 @@ Para deshabilitar la vista previa, use el cmdlet Set-SPOTenant:
     Set-SPOTenant -EnableAIPIntegration $false
     ```
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para obtener más información, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md).

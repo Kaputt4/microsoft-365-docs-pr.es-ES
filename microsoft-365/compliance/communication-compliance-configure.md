@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708399"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919687"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
 >[!IMPORTANT]
 >Este tema se aplica a la configuración del cumplimiento de comunicaciones en una suscripción de Microsoft 365. Si desea configurar directivas de supervisión para una suscripción de Microsoft 365, vea [Configure la supervisión para microsoft 365](supervision-policies.md).
 
-Use las directivas de cumplimiento de comunicaciones para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md). Si desea revisar cómo contoso ha configurado rápidamente una directiva de cumplimiento de la comunicación para supervisar el lenguaje ofensivo en Microsoft Teams y en las comunicaciones de Exchange Online, consulte este [caso práctico](communication-compliance-case-study.md).
+Use las directivas de cumplimiento de comunicaciones para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de cumplimiento de comunicaciones en Microsoft 365](communication-compliance.md). Si desea revisar cómo contoso ha configurado rápidamente una directiva de cumplimiento de comunicaciones para supervisar el lenguaje ofensivo en Microsoft Teams, Exchange Online y Yammer Communications, consulte este [caso práctico](communication-compliance-case-study.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -96,7 +96,7 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 
 | **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
 |:-----|:-----|:-----|
-|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de 365 de Microsoft | Grupos de distribución dinámicos |
+|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
 | Reviewers | None | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
   
 Al seleccionar un grupo de 365 de Microsoft para los usuarios supervisados, la Directiva supervisa el contenido del buzón compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva supervisa los buzones de usuario individuales.
@@ -106,7 +106,16 @@ Para obtener más información acerca de la configuración de grupos, vea:
 - [Crear y administrar grupos de distribución](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Información general de los grupos de 365 de Microsoft](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-4-required-create-a-communication-compliance-policy"></a>Paso 4 (obligatorio): crear una directiva de cumplimiento de la comunicación
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Paso 4 (opcional): comprobar que el inquilino de Yammer está en modo nativo
+
+En el modo nativo, todos los usuarios de Yammer están en Azure Active Directory (AAD), todos los grupos son Grupos de Office 365 y todos los archivos se almacenan en SharePoint Online. El inquilino de Yammer debe estar en modo nativo para que las directivas de cumplimiento de comunicaciones analicen e identifiquen conversaciones peligrosas en mensajes privados y conversaciones de la comunidad en Yammer.
+
+Para obtener más información acerca de la configuración de Yammer en modo nativo, consulte:
+
+- [Información general sobre el modo nativo de Yammer en Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [Configurar su red de Yammer para el Modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>Paso 5 (obligatorio): crear una directiva de cumplimiento de la comunicación
   
 >[!Important]
 >No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas de la [solución Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
@@ -131,7 +140,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
     - Asigne un nombre y una descripción a la Directiva. Los nombres de las directivas no se pueden cambiar una vez creada la Directiva.
     - Elija los usuarios o grupos que desea supervisar, incluidos todos los usuarios de la organización, usuarios y grupos específicos, u otros usuarios y grupos que quiera excluir.
     - Elija los revisores para la Directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online.
-    - Elija los canales de comunicación para analizar, incluidos Exchange, Microsoft Teams o Skype empresarial. También elige analizar los orígenes de terceros si ha configurado un conector en Microsoft 365.
+    - Elija los canales de comunicación para analizar, incluidos Exchange, Microsoft Teams, Yammer o Skype empresarial. También elige analizar los orígenes de terceros si ha configurado un conector en Microsoft 365.
     - Elija la dirección de comunicación que se va a supervisar, incluidas las comunicaciones entrantes, salientes o internas.
     - Definir las [condiciones](communication-compliance-feature-reference.md#ConditionalSettings)de la Directiva de cumplimiento de comunicaciones. Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
     - Elija si le gustaría incluir tipos de información confidencial. En este paso puede seleccionar los tipos de información confidencial predeterminada y personalizado. Elija entre los tipos de información confidencial existentes o los diccionarios de palabras clave personalizados en el Asistente para la Directiva de cumplimiento de comunicaciones. Puede crear estos elementos antes de ejecutar el asistente si es necesario. También puede crear nuevos tipos de información confidencial desde el Asistente para directivas de cumplimiento de comunicaciones.
@@ -147,7 +156,7 @@ Para obtener más información acerca de la configuración de grupos, vea:
 
 6. La página se **ha creado la Directiva** se muestra con instrucciones sobre cuándo se activará la Directiva y qué comunicaciones se capturarán.
 
-## <a name="step-5-optional-create-employee-notice-templates"></a>Paso 5 (opcional): crear plantillas de avisos de empleados
+## <a name="step-6-optional-create-employee-notice-templates"></a>Paso 6 (opcional): crear plantillas de avisos de empleados
 
 Si desea tener la opción de responder a una alerta de Directiva mediante el envío de una notificación de recordatorio al empleado asociado, deberá crear al menos una plantilla de aviso en la organización. Los campos de plantilla de aviso son editables antes de que se envíen como parte del proceso de corrección de alertas y se recomienda crear una plantilla de notificación personalizada para cada directiva de cumplimiento de la comunicación.
 
@@ -167,14 +176,14 @@ Si desea tener la opción de responder a una alerta de Directiva mediante el env
 
 5. Seleccione **Guardar** para crear y guardar la plantilla de aviso.
 
-## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Paso 6 (opcional): probar la Directiva de cumplimiento de la comunicación
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Paso 7 (opcional): probar la Directiva de cumplimiento de la comunicación
 
 Después de crear una directiva de cumplimiento de comunicaciones, es una buena idea probarla para asegurarse de que la Directiva aplica correctamente las condiciones definidas. Es posible que también desee [probar sus directivas de prevención de pérdida de datos (DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas de activación para que se capturen las comunicaciones que desea probar.
 
 Siga estos pasos para probar la Directiva de cumplimiento de la comunicación:
 
-1. Abra un cliente de correo electrónico o Microsoft Teams con una sesión iniciada como usuario supervisado definido en la Directiva que desea probar.
-2. Envíe un correo electrónico o un chat de Microsoft teams que cumpla los criterios que haya definido en la Directiva de cumplimiento de la comunicación. Esta prueba puede ser una palabra clave, el tamaño de los datos adjuntos, el dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la Directiva es demasiado restrictiva o demasiado flexible.
+1. Abra un cliente de correo electrónico, Microsoft Teams o Yammer mientras ha iniciado sesión como un usuario supervisado definido en la Directiva que desea probar.
+2. Envíe un correo electrónico, un chat de Microsoft Teams o un mensaje de Yammer que cumpla los criterios que haya definido en la Directiva de cumplimiento de la comunicación. Esta prueba puede ser una palabra clave, el tamaño de los datos adjuntos, el dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la Directiva es demasiado restrictiva o demasiado flexible.
 
     > [!NOTE]
     > Las comunicaciones en todos los canales de origen pueden tardar hasta 24 horas en procesarse completamente en una directiva.
