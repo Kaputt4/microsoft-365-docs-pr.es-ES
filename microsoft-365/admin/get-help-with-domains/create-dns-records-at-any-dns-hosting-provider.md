@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Aprenda a verificar su dominio y a crear registros DNS en cualquier proveedor de host DNS para Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 85392bfbd19072d582e7c2db7ce3a8c7bf466176
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628499"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919510"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Crear registros DNS en cualquier proveedor de host DNS
 
@@ -69,19 +69,19 @@ Antes de utilizar el dominio con Microsoft 365, tenemos que asegurarnos de que s
   
 1. En función de si se está creando un registro TXT o un registro MX, siga uno de los procedimientos siguientes:
     
-  - **Si crea un registro TXT, utilice estos valores:**
+   - **Si crea un registro TXT, utilice estos valores:**
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**TTL**|
-|TXT|Realice una de las siguientes acciones: escriba **@**, deje el campo vacío o escriba el nombre de dominio.    <br/> **Nota:** Los diferentes anfitriones de DNS tienen diferentes requerimientos para este campo. |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.  <br/>        [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc.  |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**TTL**|
+      |TXT|Realice una de las siguientes acciones: escriba **@**, deje el campo vacío o escriba el nombre de dominio.    <br/> **Nota:** Los diferentes anfitriones de DNS tienen diferentes requerimientos para este campo. |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.  <br/>        [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc.  |
    
-  - **Si crea un registro MX, utilice estos valores:**
+   - **Si crea un registro MX, utilice estos valores:**
     
-||||||
-|:-----|:-----|:-----|:-----|:-----|
-|**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**Prioridad**|**TTL**|
-|MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365.    <br/>       [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Para**Prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de cualquier registro MX existente. <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
+      ||||||
+      |:-----|:-----|:-----|:-----|:-----|
+      |**Tipo de registro**|**Alias** o **Nombre de host**|**Valor**|**Prioridad**|**TTL**|
+      |MX|Escriba **@** o el nombre del dominio. |MS=ms *XXXXXXXX* <br/> **Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Office 365.    <br/>       [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Para**Prioridad**, para evitar conflictos con el registro MX usado para el flujo de correo, use una prioridad más baja que la prioridad de cualquier registro MX existente. <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Configure este valor como **1 hora** o el equivalente en minutos ( **60** ), segundos ( **3600** ), etc. |
    
 2. Guarde el registro.
     
@@ -103,9 +103,8 @@ Cuando Microsoft 365 encuentre el registro TXT correcto, se comprobará su domin
 ## <a name="add-mx-record-to-route-email"></a>Agregar un registro MX para enrutar correo
 <a name="BKMK_add_MX"> </a>
 
-Agregue un registro MX para que el dominio vaya a Microsoft 365.  *Cuando actualice el registro MX de su dominio, todo el correo electrónico nuevo de cualquiera que use su dominio pasará a Microsoft 365*. Cualquier correo electrónico que ya tenga permanecerá en su actual servidor de correo electrónico, a menos que decida [migrar el correo electrónico y los contactos de Microsoft 365](../setup/migrate-email-and-contacts-admin.md) a Microsoft 365. 
-  
-  
+Agregue un registro MX para que el dominio vaya a Microsoft 365.  *Cuando actualice el registro MX de su dominio, todo el correo electrónico nuevo de cualquiera que use su dominio pasará a Microsoft 365*. Cualquier correo electrónico ya existente permanecerá en el host de correo electrónico actual, a menos que decida [migrar el correo electrónico y los contactos a Microsoft 365.](../setup/migrate-email-and-contacts-admin.md)
+
  **Tarea**
   
 Buscar la página donde puede crear los registros para su dominio.
@@ -118,39 +117,39 @@ Buscar la página donde puede crear los registros para su dominio.
     
 ::: moniker range="o365-worldwide"
 
-El registro MX que agregará incluye un valor ( **Dirección de destino**) que tiene un aspecto como el siguiente: \<MX token\>.mail.protection.outlook.com, donde \<MX token\> es un valor como MSxxxxxxx. 
+  El registro MX que agregará incluye un valor ( **Dirección de destino**) que tiene un aspecto como el siguiente: \<MX token\>.mail.protection.outlook.com, donde \<MX token\> es un valor como MSxxxxxxx. 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-El registro MX que agregará incluye un valor ( **Dirección de destino**) que tiene un aspecto como el siguiente: \<MX token\>.mail.protection.outlook.de, donde \<MX token\> es un valor como MSxxxxxxx.   
+  El registro MX que agregará incluye un valor ( **Dirección de destino**) que tiene un aspecto como el siguiente: \<MX token\>.mail.protection.outlook.de, donde \<MX token\> es un valor como MSxxxxxxx.   
 
 ::: moniker-end
 
-1. En el sitio web de tu servidor DNS, añade un nuevo registro MX.
+4. En el sitio web de tu servidor DNS, añade un nuevo registro MX.
     
     Ahora [obtendrá la información para el registro MX](../get-help-with-domains/information-for-dns-records.md) de Microsoft 365. 
     
-2. Para el registro MX del paso anterior, copie el valor de **Dirección de destino**. 
+5. Para el registro MX del paso anterior, copie el valor de **Dirección de destino**. 
     
     Deberá usar este valor en el registro que está creando en su host DNS del sitio, como se describe en el siguiente paso.
     
-3. En el nuevo registro MX del sitio del host DNS, asegúrese de que los campos se configuran exactamente con los valores siguientes:
+6. En el nuevo registro MX del sitio del host DNS, asegúrese de que los campos se configuran exactamente con los valores siguientes:
     
-  - **Tipo de registro**: **MX**
+   - **Tipo de registro**: **MX**
     
-  - **Prioridad**: defina la prioridad del registro MX con el valor más alto posible, que suele ser **0**.
+   - **Prioridad**: defina la prioridad del registro MX con el valor más alto posible, que suele ser **0**.
     
-    Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
     
-  - **Nombre de host**:**@**
+   - **Nombre de host**:**@**
     
-  - **Dirección de destino**: pegue aquí el valor de**dirección de destino** que acaba de copiar de Microsoft 365. 
+   - **Dirección de destino**: pegue aquí el valor de**dirección de destino** que acaba de copiar de Microsoft 365. 
     
-  - **TTL**: configure este valor en**1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+   - **TTL**: configure este valor en**1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
     
-4. Guarde el registro.
+7. Guarde el registro.
     
 Quite los demás registros MX.
   
@@ -167,12 +166,12 @@ En el sitio web de su anfitrión DNS, creará tres nuevos registros CNAME, norma
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. Después de agregar los primeros tres registros nuevos, elija crear otro registro CNAME.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
-|CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 hora  <br/> |
+      |||||
+      |:-----|:-----|:-----|:-----|
+      |**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
+      |CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hora  <br/> |
+      |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hora  <br/> |
+      |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 hora  <br/> |
    
    > [!NOTE]
    > Por **TTL**: Configure este valor en**1 hora** o a el equivalente en minutos (**60**), segundos (**3600**), etc. > estos registros no se aplican a Exchange, Lync o Skype Empresarial para implementaciones híbridas. 
@@ -188,15 +187,15 @@ En el sitio web de su anfitrión DNS, creará tres nuevos registros CNAME, norma
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. Después de agregar los primeros tres registros nuevos, elija crear otro registro CNAME.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
-|CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 hora  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
+    |CNAME (alias)  <br/> |autodiscover  <br/> |autodiscover-outlook.office.de  <br/> |1 hora  <br/> |
+    |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.skype.de  <br/> |1 hora  <br/> |
+    |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.lync.de  <br/> |1 hora  <br/> |
    
-   > [!NOTE]
-   > Por **TTL**: Configure este valor en**1 hora** o a el equivalente en minutos (**60**), segundos (**3600**), etc. > estos registros no se aplican a Exchange, Lync o Skype Empresarial para implementaciones híbridas. 
+     > [!NOTE]
+     > Por **TTL**: Configure este valor en**1 hora** o a el equivalente en minutos (**60**), segundos (**3600**), etc. > estos registros no se aplican a Exchange, Lync o Skype Empresarial para implementaciones híbridas. 
   
 2. Cuando haya terminado, guarde los registros.
     
@@ -210,15 +209,15 @@ En el sitio web de su anfitrión DNS, creará tres nuevos registros CNAME, norma
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. Después de agregar los primeros tres registros nuevos, elija crear otro registro CNAME.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
-|CNAME (alias)  <br/> |autodescubrir  <br/> |autodiscover.partner.outlook.cn  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 hora  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
+    |CNAME (alias)  <br/> |autodescubrir  <br/> |autodiscover.partner.outlook.cn  <br/> |1 hora  <br/> |
+    |CNAME (alias)  <br/> |lyncdiscover  <br/> |webdir.online.partner.lync.cn  <br/> |1 hora  <br/> |
+    |CNAME (alias)  <br/> |sip  <br/> |sipdir.online.partner.lync.cn  <br/> |1 hora  <br/> |
    
-   > [!NOTE]
-   > Por **TTL**: Configure este valor en**1 hora** o a el equivalente en minutos (**60**), segundos (**3600**), etc. > estos registros no se aplican a Exchange, Lync o Skype Empresarial para implementaciones híbridas. 
+     > [!NOTE]
+     > Por **TTL**: Configure este valor en**1 hora** o a el equivalente en minutos (**60**), segundos (**3600**), etc. > estos registros no se aplican a Exchange, Lync o Skype Empresarial para implementaciones híbridas. 
   
 2. Cuando haya terminado, guarde los registros.
     
@@ -232,11 +231,11 @@ En el sitio web de su anfitrión DNS, creará tres nuevos registros CNAME, norma
 > [!IMPORTANT]
 > Si tiene Administración de dispositivos móviles (MDM) para Microsoft 365, debe crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. > (Si no tienes MDM, puedes saltarte este paso.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
-|CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hora  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
+   |CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hora  <br/> |
+   |CNAME (alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hora  <br/> |
    
 ::: moniker-end
 
@@ -245,11 +244,11 @@ En el sitio web de su anfitrión DNS, creará tres nuevos registros CNAME, norma
 > [!IMPORTANT]
 > Si tiene Administración de dispositivos móviles (MDM) para Microsoft 365, debe crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. > (Si no tienes MDM, puedes saltarte este paso.) 
   
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
-|CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hora  <br/> |
-|CNAME (alias)  <br/> |enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |1 hora  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Tipo de registro** <br/> |**Host** <br/> |**Señala a** <br/> |**TTL** <br/> |
+   |CNAME (alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hora  <br/> |
+   |CNAME (alias)  <br/> |enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |1 hora  <br/> |
    
 ::: moniker-end
 
@@ -268,12 +267,12 @@ En el sitio web de su host DNS, edite el registro SPF existente o cree un nuevo 
   
 1. En los cuadros para el nuevo registro, escriba o copie y pegue el conjunto de valores siguientes que se aplican a su situación.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Host** <br/> |**Valor TXT** <br/> |**TTL** <br/> |
-|TXT (texto)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |1 hora  <br/> |
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Host** <br/> |**Valor TXT** <br/> |**TTL** <br/> |
+    |TXT (texto)  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |1 hora  <br/> |
    
-   Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
     
 2. Cuando haya terminado, guarde el registro.
     
@@ -293,12 +292,12 @@ En el sitio web de su host DNS, edite el registro SPF existente o cree un nuevo 
   
 1. En los cuadros para el nuevo registro, escriba o copie y pegue el conjunto de valores siguientes que se aplican a su situación.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro**|**Host**|**Valor TXT**|**TTL**|
-|TXT (texto)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |1 hora|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Tipo de registro**|**Host**|**Valor TXT**|**TTL**|
+    |TXT (texto)|@|v=spf1 include:spf.protection.outlook.de -all <br/>  Recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |1 hora|
    
-   Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
     
 2. Cuando haya terminado, guarde el registro.
     
@@ -318,12 +317,12 @@ En el sitio web de su host DNS, edite el registro SPF existente o cree un nuevo 
   
 1. En los cuadros para el nuevo registro, escriba o copie y pegue el conjunto de valores siguientes que se aplican a su situación.
     
-|||||
-|:-----|:-----|:-----|:-----|
-|**Tipo de registro**|**Host**|**Valor TXT**|**TTL**|
-|TXT (texto)|@|v=spf1 include:spf.protection.partner.outlook.cn -all>[!NOTE] > Recomendamos copiar y pegar esta entrada, para que todo el espaciado sea correcto.           |1 hora|
+    |||||
+    |:-----|:-----|:-----|:-----|
+    |**Tipo de registro**|**Host**|**Valor TXT**|**TTL**|
+    |TXT (texto)|@|v=spf1 include:spf.protection.partner.outlook.cn -all>[!NOTE] > Recomendamos copiar y pegar esta entrada, para que todo el espaciado sea correcto.           |1 hora|
    
-   Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
     
 2. Cuando haya terminado, guarde el registro.
     
@@ -340,27 +339,27 @@ En el sitio web del host DNS, debe crear dos nuevos registros SRV, normalmente d
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. **(Consulte las notas siguientes para crear registros SRV cuando el host DNS no tiene todos estos como campos independientes).**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
    
-  > [!NOTE]
-  >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
-
->  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto.  Por ejemplo: **Nombre**: _sip._tls 
-
->  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. Por ejemplo: **Destino**: 100 1 443 sipdir.online.lync.com. 
-
->  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. Por ejemplo, cuando prioridad tiene un campo independiente, concatene solamente los valores peso, puerto y destino: **Destino**: 1 443 sipdir.online.lync.com 
-
-> Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    > [!NOTE]
+    >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
+    > 
+    >  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto.  Por ejemplo: **Nombre**: _sip._tls 
+    > 
+    >  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. Por ejemplo: **Destino**: 100 1 443 sipdir.online.lync.com. 
+    > 
+    >  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. Por ejemplo, cuando prioridad tiene un campo independiente, concatene solamente los valores peso, puerto y destino: **Destino**: 1 443 sipdir.online.lync.com 
+    > 
+    > Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
   
 2. Cuando haya terminado, guarde los registros.
     
-> [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -371,27 +370,27 @@ En el sitio web del host DNS, debe crear dos nuevos registros SRV, normalmente d
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. **(Consulte las notas siguientes para crear registros SRV cuando el host DNS no tiene todos estos como campos independientes).**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.lync.de  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.lync.de  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
    
- > [!NOTE]
- >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
-
->  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto. > Por ejemplo: **nombre**: _sip._tls 
-
->  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. > Por ejemplo: **destino**: 100 1 443 sipdir.online.lync.de. 
-
->  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. > Por ejemplo, cuando Priority tiene un campo independiente, concatene solo los valores peso, puerto y destino: **destino**: 1 443 sipdir.online.lync.de 
-
->  Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    > [!NOTE]
+    >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
+    > 
+    >  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto. > Por ejemplo: **nombre**: _sip._tls 
+    > 
+    >  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. > Por ejemplo: **destino**: 100 1 443 sipdir.online.lync.de. 
+    > 
+    >  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. > Por ejemplo, cuando Priority tiene un campo independiente, concatene solo los valores peso, puerto y destino: **destino**: 1 443 sipdir.online.lync.de 
+    > 
+    >  Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
   
 2. Cuando haya terminado, guarde los registros.
     
-> [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
@@ -402,27 +401,27 @@ En el sitio web del host DNS, debe crear dos nuevos registros SRV, normalmente d
   
 1. En el cuadro para cada nuevo registro, escriba o copie y pegue los valores siguientes. **(Consulte las notas siguientes para crear registros SRV cuando el host DNS no tiene todos estos como campos independientes).**
     
-||||||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
-|SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
+    ||||||||||
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |**Tipo de registro** <br/> |**Nombre** <br/> |**Destino** <br/> |**Protocolo** <br/> |**Servicio** <br/> |**Prioridad** <br/> |**Grosor** <br/> |**Puerto** <br/> |**TTL** <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipdir.online.partner.lync.cn  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
+    |SRV (servicio)  <br/> |@  <br/> (O déjelo en blanco, si @ no está permitido)  <br/> |sipfed.online.partner.lync.cn  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
    
- > [!NOTE]
- >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
-
->  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto. > Por ejemplo: **nombre**: _sip._tls 
-
->  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. > Por ejemplo: **destino**: 100 1 443 sipdir.online.partner.lync.cn. 
-
->  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. > Por ejemplo, cuando Priority tiene un campo independiente, concatene solamente los valores peso, puerto y valores del destino: **destino**: 1 443 sipdir.online.partner.lync.cn 
-
->  Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
+    > [!NOTE]
+    >  Para **nombre**: si su host DNS no permite la configuración para **@**, déjelo en blanco. Use este enfoque *solo* cuando el host DNS tiene campos separados para los valores de servicio y protocolo. De lo contrario, consulte las notas de servicio y protocolo a continuación. 
+    > 
+    >  Para **servicio** y **protocolo**: si el host DNS no proporciona estos campos para registros SRV, debe especificar los valores de **servicio** y **protocolo** como el **nombre** del valor del registro. (Nota: dependiendo de su host DNS, el campo del **nombre** puede llamarse de otra forma, como: **host**, **nombre del host**o **subdominio**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con un punto. > Por ejemplo: **nombre**: _sip._tls 
+    > 
+    >  Para **prioridad**, el**peso**y el**puerto**: si el host DNS no proporciona estos campos para registros SRV, debe especificarlos como el valor del **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para establecer el valor combinado, se crea una sola cadena, separando los valores con espacios y terminando con un punto. Los valores deben ser incluidos en este orden: prioridad, peso, puerto, y destino. > Por ejemplo: **destino**: 100 1 443 sipdir.online.partner.lync.cn. 
+    > 
+    >  Variación para**prioridad**, **peso**y el **puerto**: algunos hosts DNS proporcionan algunos, pero no todos, de los campos obligatorios por separado. Para estos sitios de host de DNS, especifique los valores que no se muestran por separado como una cadena combinada, en orden, para el valor de **destino** del registro. (Nota: dependiendo de su host DNS, el campo del **destino** puede llamarse de otra forma, como: **contenido**, **dirección de IP**o **nombre de host de destino**). Para configurar el valor combinado, se crea una sola cadena para los campos que no se muestran individualmente, separando los valores con espacios. Los valores deben ser incluidos *en orden*,  dejando fuera los valores que tienen campos separados disponibles: prioridad, peso, puerto, y destino. > Por ejemplo, cuando Priority tiene un campo independiente, concatene solamente los valores peso, puerto y valores del destino: **destino**: 1 443 sipdir.online.partner.lync.cn 
+    > 
+    >  Para **TTL**: configure este valor en **1 hora** o el equivalente en minutos (**60**), segundos (**3600**), etc. 
   
 2. Cuando haya terminado, guarde los registros.
     
-> [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+    > [!NOTE]
+    >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ::: moniker-end
 
