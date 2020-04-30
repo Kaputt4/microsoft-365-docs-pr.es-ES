@@ -1,5 +1,5 @@
 ---
-title: Manage
+title: Administrar
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,16 +13,18 @@ ms.collection:
 layout: LandingPage
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
 description: Vínculos rápidos para las tareas de administración más comunes de Microsoft 365.
-ms.openlocfilehash: 876652b932579718cb1d1313bca6b98bad2b92c1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 102466b142d35125ab85d31cdf313ea6e9d9ba7e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628141"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942192"
 ---
-# <a name="manage"></a>Manage
+# <a name="manage"></a>Administrar
 
 Vínculos rápidos para las tareas de administración más comunes de Microsoft 365.
 
