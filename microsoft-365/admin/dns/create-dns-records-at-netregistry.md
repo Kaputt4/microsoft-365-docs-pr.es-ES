@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Netregistry para Microsoft.
-ms.openlocfilehash: 6aed84a4eaf95674358aa54986cfbb76edec2ef3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629316"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939160"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Crear registros DNS en Netregistry para Microsoft
 
@@ -38,7 +38,7 @@ Estos son los registros principales que se deben agregar.
   
 - [Agregar un registro TXT para verificación](#add-a-txt-record-for-verification)
     
-- [Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
 
 - [Agregar los registros CNAME necesarios para Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
@@ -48,7 +48,6 @@ Estos son los registros principales que se deben agregar.
     
 Después de agregar estos registros a Netregistry, su dominio estará configurado para funcionar con los servicios de Microsoft.
   
-Para obtener más información sobre WebHosting y DNS para sitios web con Microsoft, vea [usar un sitio web público con Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -56,7 +55,7 @@ Para obtener más información sobre WebHosting y DNS para sitios web con Micros
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="bkmk_txt"> </a>
 
-Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS es la que se demuestre a Microsoft que es el propietario del dominio.
+Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -84,15 +83,15 @@ Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propiet
     
     |**Nombre**|**TTL (SEG.)**|**TXT (apunta a la dirección o al valor)**|
     |:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |"MS = msXXXXXXXX"  <br/> **Nota:** esto es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino de la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |"MS = msXXXXXXXX"  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
 6. Seleccione **Agregar registro**.
     
-Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará el registro.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro.
   
-Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -111,7 +110,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 <a name="bkmk_mx"> </a>
 
 1. Para empezar, vaya a su página de dominios en Netregistry a través de [este vínculo](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
@@ -138,7 +137,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
     
     |**Nombre**|**TTL (SEG.)**|**Exchange (apunta a la dirección o al valor)**|**¿Es el host completo?**|**Preferencia (prioridad)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)      |(seleccione la casilla de verificación)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)      |(seleccione la casilla de verificación)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   

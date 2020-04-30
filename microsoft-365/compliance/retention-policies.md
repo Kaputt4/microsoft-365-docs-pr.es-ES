@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632441"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949409"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -58,7 +58,7 @@ Las directivas de retención se crean y administran desde el [Centro de cumplimi
 
 Como alternativa, puede navegar a la misma copia en el Centro de cumplimiento de Microsoft 365 mediante la pestaña **Soluciones** > **Control de la información** > **Retención**. 
 
-**Si desea poder revisar el contenido antes de que se elimine de forma permanente,** considere la posibilidad de usar [etiquetas de retención](labels.md) en lugar de una directiva de retención. Cuando se crea una etiqueta de retención, puede configurar una [revisión de disposición](disposition-reviews.md) para revisar el contenido al final de su período de retención.
+**Si desea poder revisar el contenido antes de que se elimine de forma permanente,** considere la posibilidad de usar [etiquetas de retención](labels.md) en lugar de una directiva de retención. Cuando se crea una etiqueta de retención, puede configurar una [revisión de disposición](disposition.md#disposition-reviews) para revisar el contenido al final de su período de retención.
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funcionamiento de una directiva de retención local
 

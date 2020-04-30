@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo leer y entender la factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634985"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942882"
 ---
 # <a name="understand-your-invoice"></a>Entender la factura
 
 La factura proporciona un resumen de los cargos e instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el centro de administración de Microsoft 365. También puede descargarla en el formato de documento portátil (. pdf) para enviar por correo electrónico.
 
-Si solo tiene una suscripción de Microsoft 365, consulte [View Your Invoice for Microsoft 365 for Business](view-your-bill-or-invoice.md).
+Si solo tiene una suscripción de Microsoft 365, consulte [comprender la factura de microsoft 365 para empresas](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Descripción del encabezado de la factura
 
@@ -78,7 +78,7 @@ La cantidad total que debe pagarse para cada familia de servicios se calcula res
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Si en su factura hay cargas de Azure en las que desea obtener más detalles, consulte Understanding [charges on Your Customer Agreement Invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+Si en su factura hay cargas de Azure en las que desea obtener más detalles, consulte [revisar la factura de su acuerdo de cliente de Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Comprender la última página de la factura
 

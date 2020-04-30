@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Una vez que un buzón de correo de Microsoft 365 se convierte en inactivo, puede cambiar la duración de la retención o la Directiva de retención de Microsoft 365 asignada al buzón inactivo. La duración de retención define cuánto tiempo se retienen los elementos en la carpeta Elementos recuperables.
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636338"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942933"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 
@@ -151,7 +153,7 @@ El resultado es que los elementos del buzón inactivo se conservan indefinidamen
     
     ![Captura de pantalla del cambio de duración para una conservación local](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Usar Exchange Online PowerShell para cambiar la duración de retención
 

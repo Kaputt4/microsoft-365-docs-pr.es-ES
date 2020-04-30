@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en eNomCentral para Microsoft.
-ms.openlocfilehash: 2a1d32f0152b0c8a38b1a9e1c3fc46237708480d
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: b43261c601b953eef7f98170f04b51d8dcf97d8d
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919498"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939276"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Crear registros DNS en eNomCentral para Microsoft
 
@@ -34,8 +34,7 @@ ms.locfileid: "43919498"
 Si eNomCentral es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
   
 Después de agregar estos registros a eNomCentral, su dominio estará configurado para funcionar con los servicios de Microsoft.
-  
-Para obtener información acerca del hospedaje web y de DNS para sitios web con Microsoft, vea [Usar un sitio web público con Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -64,7 +63,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:46)](https://support.of
   
 4. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
     
-    \(Elija el valor **tipo de registro** en la lista desplegable.\) 
+    Elija el valor **tipo de registro** en la lista desplegable.
     
     ||||
     |:-----|:-----|:-----|
@@ -165,7 +164,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:24)](https://support.of
   
 5. En los cuadros para los seis nuevos registros, escriba o copie y pegue los valores siguientes.
     
-        (Choose the **Record Type** value from the drop-down list.) 
+Elija el valor **tipo de registro** en la lista desplegable.
         
     |**Host Name**|**Record Type**|**Dirección**|
     |:-----|:-----|:-----|
@@ -175,7 +174,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:24)](https://support.of
     |enterpriseregistration  <br/> |CNAME (alias)  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |
     |enterpriseenrollment  <br/> |CNAME (alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |
    
-    ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Seleccione **Guardar**.
     
@@ -203,7 +202,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:12)](https://support.of
   
 4. En los cuadros del nuevo registro, escriba (o copie y pegue) los valores de la tabla siguiente.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+Elija el valor **tipo de registro** en la lista desplegable.
     
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|

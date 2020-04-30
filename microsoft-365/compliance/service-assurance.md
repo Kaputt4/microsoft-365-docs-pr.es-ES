@@ -13,14 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9a9198d8206b2693f0634355c926856c1327d9d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631287"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943593"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -38,7 +39,7 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
     
 - Health Insurance Portability and Accountability Act of 1996 (HIPAA) (Ley de Responsabilidad y Transferibilidad del Seguro Médico de 1996, HIPAA)
     
-- Programa de administración de riesgos y autorización Federal (FedRAMP)
+- Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>¿Quién puede tener acceso a la garantía del servicio de Office 365 y cómo?
 

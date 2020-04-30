@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenda los motivos por los que algunas veces el cambio de plan debe realizarse manualmente o al llamar a soporte técnico.
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631934"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943148"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>¿Por qué no puedo cambiar Microsoft 365 para planes de negocios?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el centro de administración (versión preliminar), consulte [¿por qué no puedo actualizar los planes?](why-cant-i-change-plans.md). La vista previa está disponible para todos los administradores de Microsoft 365, puede optar por seleccionar **probar la vista previa** de alternancia que se encuentra en la parte superior de la Página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Este artículo se aplica al centro de administración antiguo. Para ver el artículo sobre el centro de administración (versión preliminar), consulte [¿por qué no puedo actualizar los planes?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). La vista previa está disponible para todos los administradores de Microsoft 365, puede optar por seleccionar **probar la vista previa** de alternancia que se encuentra en la parte superior de la Página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Si no ve el botón **cambiar** de plan, el plan no se puede cambiar automáticamente. En algunos casos, es posible que pueda resolver el problema para poder usar el botón **Cambiar de plan**, o también podría [cambiar de plan manualmente](switch-plans-manually.md). Coloque el mouse sobre el icono de información para ver un mensaje que explica por qué el botón **Cambiar de plan** no está disponible. Use la información de este artículo para solucionar el problema.

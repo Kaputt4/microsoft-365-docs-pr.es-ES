@@ -15,16 +15,16 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080387"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942858"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
-Al cerrar la cuenta con Microsoft, se elimina toda la información relacionada con su cuenta. Esta información incluye las suscripciones, las licencias, los métodos de pago, los usuarios y los datos de usuario. Antes de iniciar este proceso, asegúrese de hacer una copia de seguridad de los datos que desee conservar.
+Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada con su cuenta. Esta información incluye suscripciones, licencias, métodos de pago, usuarios y datos de usuario. Antes de iniciar este proceso, asegúrese de hacer una copia de seguridad de los datos que desee conservar.
 
 ## <a name="step-1-delete-users"></a>Paso 1: eliminar usuarios
 
@@ -72,7 +72,7 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 3. En la página autenticación multifactor, deshabilite todas las cuentas excepto la cuenta de administrador global que está usando actualmente.
 
-También puede <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">usar PowerShell para deshabilitar multi-factor Authentication para varios usuarios</a>.
+También puede <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">usar PowerShell para deshabilitar multi-factor Authentication para varios usuarios</a>.
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Paso 5: eliminar el directorio en Azure Active Directory
 

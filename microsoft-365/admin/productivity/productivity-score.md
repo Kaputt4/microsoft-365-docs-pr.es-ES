@@ -18,149 +18,122 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ae2d6188af6a0964dc7670adf0777c0bb3d77a77
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627757"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942242"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
-Microsoft 365 ofrece soluciones de productividad que permiten a su organización cumplir sus objetivos empresariales. La puntuación de productividad proporciona información para usar estas soluciones que se pueden transformar en el modo en que se realiza el trabajo.Contiene: 
+La puntuación de productividad ayuda a las organizaciones a transformar cómo se realiza el trabajo con información sobre cómo los usuarios usan Microsoft 365 y las experiencias tecnológicas que los admiten. La puntuación refleja el rendimiento de su organización con respecto a las medidas de experiencia de empleado y tecnología, y compara su puntuación con organizaciones como la suya.
 
-- **Visibilidad** al ayudarles a comprender cómo trabajan las personas en forma de su puntuación actual con un desglose entre categorías de experiencia de los empleados y experiencia tecnológica (próximamente). 
-- **Información** sobre cómo identificar oportunidades para habilitar experiencias mejoradas. 
-- **Acciones** para actualizar las habilidades y los sistemas para que todos los usuarios puedan hacer su mejor trabajo. 
+La puntuación incluye:
 
-La puntuación y la información están presentes en dos categorías:  
+- **Métricas** que le ayudarán a ver cómo los usuarios usan productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas.
+- **Información acerca de** los datos para ayudarle a identificar las oportunidades para mejorar la productividad y la satisfacción de los empleados.
+- **Acciones recomendadas** que puede llevar a cabo para ayudar a las personas de su organización a usar los productos de Microsoft 365 de forma eficaz para que todos los usuarios puedan realizar su mejor trabajo.
 
-- **Experiencia de los empleados:** muestra cómo Microsoft 365 está ayudando a crear un personal productivo y dedicado mediante la cuantificación del modo en que los usuarios colaboran en el contenido, trabajan en cualquier lugar, comprenden los estilos de comunicación (próximamente) y desarrollan una cultura de la reunión (próximamente) 
+Proporcionamos datos, información y recomendaciones en dos áreas: 
 
-- **Experiencia tecnológica** (próximamente): le ayuda a optimizar sus experiencias de dispositivo, como corregir de forma proactiva los problemas comunes del Departamento de soporte técnico, y mejorar el tiempo de inicio del equipo y la red para asegurarse de que las aplicaciones funcionan correctamente.  
+- **Experiencia de los empleados:** Medimos cómo los usuarios colaboran en el contenido, cómo usan los productos de 365 de Microsoft para comunicarse y si usan Microsoft 365 en todas las plataformas. 
 
-## <a name="how-it-works"></a>Funcionamiento
+    Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo. Cuando tienen libertad para trabajar en cualquier dispositivo, son más productivos y están satisfechos. Cuando se pueden comunicar de forma flexible, son más eficientes, forman mejores relaciones y la organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-### <a name="areas-of-scoring"></a>Áreas de puntuación 
+- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos análisis de extremos, que le ofrece información y recomendaciones sobre la configuración de dispositivos y los tiempos de inicio, y proporcionamos información de conectividad de red de Microsoft 365 para su organización.
 
-Dentro de cada categoría de puntuación, la puntuación de productividad proporciona información sobre la transformación de trabajo en las áreas. Las áreas cubiertas dentro de la experiencia de los empleados son:
+Para obtener más información sobre el análisis de punto final, lea [la introducción a la conectividad de red](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+  
 
-- Colaborar en el contenido  
-- Trabajar en cualquier lugar 
-- Descripción de los estilos de comunicación (próximamente) 
-- Desarrollar una cultura de la reunión (próximamente) 
+## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
 
-### <a name="scoring-user-actions"></a>Puntuación de acciones de usuario 
+La puntuación de productividad se basa en los resultados combinados de las categorías de empleado y experiencia tecnológica. Cada categoría se pondera equitativamente, con un total de 100 puntos por categoría. El total de puntos posibles para la puntuación de productividad es de 500.
 
-Dentro de cada área, medimos las acciones clave basadas en investigación que representan las maneras de trabajar que permiten a las organizaciones transformar en una organización altamente productiva. Para cada área, calculamos el% de los usuarios que realizan estas acciones en los últimos 28 días. 
+### <a name="score-categories"></a>Categorías de puntuación 
 
-La puntuación de la experiencia del empleado es creados como una puntuación media en todas las áreas. Tenga en cuenta que seguiremos agregando más áreas a la experiencia de los empleados y a la experiencia tecnológica a lo largo del tiempo. 
+- Colaboración de contenido (100 puntos)
+- Comunicación (100 puntos)
+- Mobility (100 puntos)
+- Análisis de extremos (100 puntos)
+- Conectividad de red (100 puntos)
+- **Total posible = 500 puntos**
+ 
+ En cada categoría, identificamos patrones para actividades clave que son indicadores sobre cómo los usuarios usan los productos de 365 de Microsoft para colaborar, comunicarse y trabajar en todas las plataformas. Proporcionamos vistas de las actividades clave de 28 días y 180 días. También proporcionamos métricas auxiliares que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar los comportamientos subyacentes y las opciones de configuración en las que puede actuar para impulsar el cambio.
 
-### <a name="products-included-in-the-productivity-score"></a>Productos incluidos en la puntuación de productividad 
+### <a name="products-included-in-productivity-score"></a>Productos incluidos en la puntuación de productividad 
 
-La puntuación de productividad incluye actualmente señales de las cargas de trabajo de Microsoft 365: OneDrive, SharePoint, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, Teams, Skype. 
+La puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer y Skype.
 
-La puntuación se actualiza diariamente y refleja las acciones del usuario completadas en los últimos 28 días (incluido el día actual).
+La puntuación se actualiza diariamente y refleja las acciones del usuario realizadas en los últimos 28 a 180 días (incluido el día actual).
 
-## <a name="access-and-required-permissions"></a>Acceso y permisos necesarios 
 
-Para la experiencia de los empleados, debe tener una suscripción a un plan de Microsoft 365 para la empresa con varios usuarios. 
+## <a name="pre-requisites"></a>Requisitos previos 
 
-Para tener permiso de acceso a la puntuación de productividad de Microsoft, debe tener los siguientes roles: 
+Necesita una suscripción a Microsoft 365 para empresas o Office 365 para empresas para obtener los datos de experiencia de los empleados y necesita usar servicios en la nube multiinquilino. Para obtener datos de análisis de extremos para el espacio empresarial, debe agregar Microsoft Intune a su suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones.       Una vez que tenga Intune, puede activar el análisis de extremo en la experiencia de Intune. Obtenga más información sobre Microsoft Intune. 
+
+Para ver la puntuación de productividad de su organización, debe tener uno de los siguientes roles: 
 
 - Administrador global 
-- Administradores de Exchange 
-- Administradores de SharePoint 
-- Administradores de Skype Empresarial 
+- Administradores de Exchange
+- Administrador de SharePoint 
+- Administrador de Skype Empresarial 
 - Administrador de Teams 
 - Lector global 
 - Lector de informes 
 
-Puede tener acceso a la experiencia desde la Página principal de administración de Microsoft 365 eligiendo **informes** > de**puntuación de productividad** en el panel de navegación izquierdo.
+Puede tener acceso a la experiencia desde la Página principal de administración de Microsoft 365 en **Reports** > **score score**.
 
 ## <a name="interpreting-productivity-score"></a>Interpretación de la puntuación de productividad 
 
-### <a name="learn-how-your-organization-works"></a>Obtener información sobre cómo funciona la organización 
-
-la página de inicio de puntuación de productividad proporciona la puntuación y el historial actuales en un porcentaje, información primaria sobre áreas de cada categoría de puntuación complementadas con benchmarks. 
+La página de inicio de la puntuación de productividad muestra la puntuación total y el historial de puntuación, así como la información principal de cada categoría.
 
 ![Página principal de puntuación de productividad](../../media/pslanding.png)
 
-1.**la puntuación de productividad** se muestra en un porcentaje, así como en <numerator> / <denominator> el formato, de modo que también puede ver los puntos absolutos (Numerator) y los puntos máximos posibles  
-1. Esta tabla dinámica le permite seleccionar la categoría de puntuación en la que desea centrarse. En la vista previa, solo puede ver la **experiencia del empleado**, pero la selección se expandirá pronto para incluir **experiencia tecnológica**. 
-1. Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación actual con organizaciones como usted. La medida del Banco de pruebas se calcula como el promedio de las medidas dentro de un conjunto de organizaciones similares. El conjunto está compuesto por organizaciones que tienen un número similar de usuarios habilitados, región, los tipos de licencias que posee, la industria y la permanencia dentro de Microsoft 365 u Office 365. 
-1. La sección **categorías de puntuación** proporciona un desglose de la puntuación de productividad con benchmarks por categoría.
-1. **Historial de puntuación** muestra cómo se ha movido su puntuación en cada categoría en los últimos 6 meses.
-1. El conocimiento principal para **colaborar en el contenido** muestra las medidas pertinentes con benchmarks de esta área que contribuyen a la puntuación. Seleccione **Ver detalles** para ver la página de detalles del área.
-1. La información principal para **trabajar en cualquier lugar** muestra las medidas pertinentes con benchmarks de esta área que contribuyen a la puntuación. Seleccione **Ver detalles** para ver la página de detalles del área.  
+**La puntuación** se muestra como un valor porcentual, así como en puntos, de modo que puede ver los puntos (Numerator) y los puntos máximos posibles (denominador).
 
-### <a name="insights-to-identify-opportunities-to-improve-experiences"></a>Información sobre cómo identificar oportunidades para mejorar las experiencias 
+Las pruebas comparativas **del mismo nivel** le permiten comparar su puntuación con organizaciones como la suya. Para las categorías de experiencia de empleado, la medida de Benchmark del mismo nivel se calcula como el promedio de medidas dentro de un conjunto de organizaciones similares. El conjunto está compuesto por organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, industria y permanencia con Microsoft 365. 
 
-Para cada área, seleccione **Ver detalles** en el panel de información principal para ver la página de detalles de área que muestra información adicional, la investigación y las acciones relacionadas para mejorar su puntuación. .
+El punto de referencia del punto de conexión del análisis de extremos incluye objetivos para el rendimiento de inicio de dispositivo y la configuración de software recomendada en función de los valores de la mediana agregada en todos los inquilinos.
 
-Todas las páginas de detalles de área siguen la estructura siguiente: 
+Para la conectividad de red, el benchmark recomendado es de 80 puntos.
 
-- Parte superior izquierda: información principal guardada desde la Página principal.
-- Parte inferior izquierda: admitir información con acciones contextuales.  
-- Right: investigación académica que muestra la relación entre el área y la productividad.
+La sección de **desglose de puntuación** proporciona un desglose de la puntuación de productividad con puntos de referencia de las áreas de experiencia de empleados y tecnología.
 
-Además, toda la información contiene los siguientes elementos: 
+Historial de puntuación muestra cómo ha cambiado su puntuación en cada categoría en los últimos 6 meses.
 
-- Header: impresiones o resultados clave que se controlan para cada conocimiento;
-- Resumen: una explicación más detallada sobre por qué las medidas en la información son importantes para la productividad de su organización. 
-- Visualización de datos: cuantifica visualmente el puesto de su organización con respecto a las medidas en la visión de los benchmarks según corresponda.
-- Acciones: acción contextual que puede ayudar a impulsar más el resultado deseado por la visión y, de este modo, mejorar su puntuación.
+Las áreas experiencia de los **empleados** y **experiencia de tecnología** contienen la visión principal de las categorías de esas áreas. Puede hacer clic en cada categoría para ver información más detallada.
 
-### <a name="area-detail-page--collaborating-on-content"></a>Página de detalles del área: colaborar en el contenido 
+## <a name="category-details-pages"></a>Páginas de detalles de categoría
 
-![Collaborationg en la página de contenido.](../../media/pscollab.png)
+En cada página de detalles de categoría se muestran las métricas principales de conocimiento y apoyo, así como la investigación y las acciones relacionadas que puede realizar para impulsar el cambio en su organización. La investigación apoya la importancia y la lógica que hay tras la información principal de cada categoría. para obtener más información, [Lea el informe de Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-La página colaborar en el contenido contiene la información principal de la página de inicio de la puntuación de productividad. Tiene los siguientes componentes:
+### <a name="content-collaboration-details"></a>Detalles de colaboración de contenido
 
-1. Header: cuantifica qué porcentaje de los usuarios están colaborando en el contenido (resultado clave).
-1. Body: más información sobre cómo la colaboración aumentada conduce a una mayor productividad.
-1. Visualización: esto cuantifica visualmente cada elemento que contribuye a la puntuación de esta área con pruebas comparativas:
+La información principal sobre la colaboración de contenido es el número de personas que crean, leen y colaboran (editar y compartir) en línea. Estas medidas son importantes porque la investigación muestra que cuando los usuarios colaboran con archivos en línea, cada persona ahorra un promedio de 100 minutos, o casi 2 horas, por semana.
 
-    - **Lectores**: cuantifica a los usuarios que obtienen acceso o descargan archivos en la nube (OneDrive y SharePoint) en una base de usuarios habilitados para OneDrive y SharePoint.
-    - **Autores**: cuantifica a los usuarios que modifican, cargan, sincronizan, protegen, copian o mueven archivos en la nube (OneDrive y SharePoint) en una base de usuarios habilitados para OneDrive y SharePoint.
-    - **Colaboradores**: cuantifica a los usuarios que colaboran en los archivos de la nube (OneDrive y SharePoint) en una base de usuarios habilitados para OneDrive y SharePoint. Dos usuarios son colaboradores si uno de ellos ha leído o editado un documento de Word, Excel, PowerPoint, OneNote o PDF en la nube después de haber sido creado o modificado en un período de 28 días.
+La colaboración de contenido se define como una persona que crea y comparte un archivo de Office y, a continuación, al menos otra persona editando. 
 
-1. **Por qué es importante se** proporciona un resumen de la investigación vinculando la colaboración en los archivos de la nube con la productividad. **Lea la investigación de Forrester** va a un artículo de investigación que proporciona más contexto sobre cómo favorece la colaboración para aumentar la productividad.
-1. Admitir la información sobre la **colaboración en varios archivos** cuantifica el modo en que los usuarios de la organización colaboran en archivos diferentes. 
-1. Admitir información sobre el **uso compartido de archivos** en la nube cuantifica si los usuarios están compartiendo contenido en la nube mientras dibujan la distinción entre uso compartido interno y externo.
-1. Admitir información sobre el **correo electrónico los archivos en la nube** cuantifica si los usuarios que comparten archivos a través del correo electrónico usan datos adjuntos frente a vínculos a archivos de la nube.
+Lectores: personas que acceden o descargan archivos en línea en OneDrive o SharePoint.
 
-Los tipos de archivo considerados para la colaboración son Word/Excel/PowerPoint/OneNote/PDF.
+**Creadores:** Personas que crean, modifican, cargan, sincronizan, protegen, copian o mueven archivos de OneDrive o de SharePoint en línea.
 
-### <a name="area-detail-page--working-anywhere"></a>Página de detalles de área: trabajo en cualquier lugar 
+Colaboradores: personas que colaboran con archivos en línea con OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita un documento en línea de Word, Excel, PowerPoint, OneNote o PDF en la nube después de que la otra persona lo cree o modifique, en un período de 28 días.
 
-![Página trabajar en cualquier lugar.](../../media/psflexibility.png)
+Los tipos de archivo considerados para la colaboración son archivos de Word, Excel, PowerPoint, OneNote y PDF.
 
-La página trabajar en cualquier lugar cuantifica los usuarios (como un porcentaje y un valor absoluto) que usó al menos una aplicación de productividad en dos o más plataformas, que son de escritorio, móviles y Web. Los usuarios obtienen un mayor nivel de puntuación para usar más aplicaciones y plataformas. Las aplicaciones que se consideran son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. La base de la información está habilitada para los usuarios de Microsoft 365 apps for Enterprise, Exchange, Yammer, Skype o Teams.
+Proporcionamos información sobre las horas de inicio y configuramos para dispositivos de su organización, así como información sobre conectividad de red para la colaboración de contenido porque la colaboración de archivos en línea requiere dispositivos confiables que se inician rápidamente y tienen software actualizado, así como una buena conectividad a Microsoft 365.
 
-1. **Por qué es importante se** proporciona un resumen de la investigación que vincula el uso de varias plataformas a una mayor productividad. **Lea la investigación de Forrester** va a un artículo de investigación que proporciona más contexto sobre cómo el trabajo en todo es propicio a la mayor productividad.
-1. Admitir la comprensión del **correo electrónico en cualquier lugar** cuantifica el número de usuarios de la organización mediante Outlook en todas las plataformas dentro de la base de usuarios activos en Outlook.
-1. La compatibilidad de la información sobre **chat en cualquier lugar** cuantifica la forma en que los usuarios de la organización usan Microsoft Teams en las distintas plataformas dentro de los usuarios activos en Teams.
-1. Apoyar la información sobre el **acceso a documentos de Office en cualquier lugar** cuantifica la forma en que los usuarios de su organización usan Word, Excel, PowerPoint y OneNote entre plataformas dentro de la base de usuarios activos en Word, Excel, PowerPoint o OneNote.
+### <a name="communication-details"></a>Detalles de comunicación
 
-### <a name="actions-for-update-skills-and-systems"></a>Acciones para actualizar sistemas y habilidades 
+La información principal sobre comunicación es la frecuencia con la que los usuarios de la organización usan el correo electrónico, el chat y las publicaciones de la comunidad para comunicarse. Esta información es importante porque cuando los usuarios usan una variedad de herramientas de comunicación en tiempo real, pueden elegir el modo de comunicación que les ayude a ser más eficientes y tienen herramientas como chat y comunidades que les ayudan a desarrollar relaciones entre las oficinas.
 
-Para favorecer la capacidad de la acción, cada información auxiliar incluye acciones en línea que pueden ayudar a transformar la experiencia de los empleados, algunas de las cuales pueden ser cambios de configuración o campañas de conciencia. Al hacer clic en estas llamadas a la acción se abre en las opciones de panel acciones recomendadas que puede considerar. Actualmente están habilitadas las acciones de la **colaboración en el contenido** .
+### <a name="mobility-details"></a>Detalles de movilidad
 
-![Página colaborar en documentos de Office.](../../media/psactions1.png)
+La información principal sobre movilidad es el número de personas que tienen acceso a los archivos y usan el correo electrónico y el chat en varias plataformas. La capacidad de trabajar desde cualquier ubicación en cualquier dispositivo que elija es importante para los usuarios con roles de ventas, directores Senior, asesores y otros usuarios que necesiten trabajar fuera de la oficina para ser productivos. Las mejoras para estos trabajadores tienen un gran impacto. 
 
-1. Las **acciones de vista** se redirigen a un panel en el que se enumeran todas las acciones relacionadas con la colaboración en el contenido.
-1. **Anime a los usuarios a colaborar** en una lista de vídeos guía sobre la colaboración con temas como la co-autoría y la @mentions. 
-1. Personalización de la configuración de **uso compartido externo** va a una página con información general sobre el uso compartido externo que describe lo que ocurre cuando los usuarios comparten recursos, en función de lo que comparten y con los que están compartiendo.  
-1. **Reemplazar datos adjuntos con vínculos compartidos** va a una página que explica cómo compartir vínculos de OneDrive en lugar de datos adjuntos por correo electrónico para una mejor colaboración.
+Medimos el porcentaje y el número absoluto de personas que usaban al menos una aplicación de productividad de Microsoft 365 en dos o más plataformas, entre las que se incluye escritorio, móvil y Web. Las aplicaciones de productividad que medimos son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. Los usuarios deben tener licencias de Microsoft 365 apps for Enterprise, Exchange, Yammer, Skype o teams que se medirán. 
 
-Al seleccionar cualquiera de los botones de acción se abre el panel **acciones recomendadas** de la derecha, que contiene un resumen de cada acción y un vínculo a las páginas de documentación.
+## <a name="we-want-to-hear-from-you"></a>queremos conocer su opinión
 
-![Panel acciones recomendadas.](../../media/psacttions2.png)
-
-
-## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión 
-
-Queremos usar el programa de vista previa privada para recopilar comentarios y usar los aprendizajes para crear el producto con usted en el futuro. Puede usar las secciones de **comentarios** del producto y/o ponerse en contacto con el equipo de puntuación de productividad en ProductivityScorePreview@service.microsoft.com.
-
-Para solicitar acceso a la vista previa privada, rellene el formulario https://aka.ms/productivityscorepreviewen.  
+Comparta sus ideas sobre la puntuación de productividad y sus ideas sobre cómo mejorarla. Use las secciones de **comentarios** del producto y/o póngase en contacto con el equipo de puntuación de productividad en ProductivityScorePreview@service.microsoft.com.

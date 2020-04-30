@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para importar datos de recursos humanos
+title: Configurar un conector para importar datos de RR.HH.
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,18 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710549"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943369"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de recursos humanos
+# <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
-Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (HR), como la fecha en que un empleado envió su retirada y la fecha del último día del empleado. Estos datos de recursos humanos pueden usarse en las soluciones de protección de la información de Microsoft, como la nueva [solución de administración de riesgos de Insider](insider-risk-management.md), para ayudar a proteger su organización de la actividad malintencionada o del robo de datos dentro de la organización. La configuración de un conector de recursos humanos consiste en crear una aplicación en Azure Active Directory que se usa para la autenticación por conector, crear archivos de asignación CSV que contengan los datos de recursos humanos, crear un conector de datos en el centro de cumplimiento y, a continuación, ejecutar un script (en un base programada) que recopila los datos de recursos humanos del archivo CSV en la nube de Microsoft. A continuación, el conector de datos se usa soluciones de cumplimiento de Microsoft (como la administración de riesgos de Insider) para obtener acceso a los datos de recursos humanos que se importaron a la organización de Microsoft 365.
+Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (HR), como la fecha en que un empleado envió su retirada y la fecha del último día del empleado. Estos datos de recursos humanos pueden usarse en las soluciones de protección de la información de Microsoft, como la nueva [solución de administración de riesgos de Insider](insider-risk-management.md), para ayudar a proteger su organización de la actividad malintencionada o del robo de datos dentro de la organización. La configuración de un conector de recursos humanos consiste en la creación de una aplicación en Azure Active Directory que se usa para la autenticación por conector, la creación de archivos de asignación CSV que contienen los datos de recursos humanos, la creación de un conector de datos en el centro de cumplimiento y la ejecución de un script (en forma de base programada) que recopila los datos de recursos humanos del archivo A continuación, el conector de datos se usa soluciones de cumplimiento de Microsoft (como la administración de riesgos de Insider) para obtener acceso a los datos de recursos humanos que se importaron a la organización de Microsoft 365.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

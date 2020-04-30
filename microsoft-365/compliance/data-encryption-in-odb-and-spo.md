@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
-ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e1cd8a8bad74a02e22357aa2da3c8c3de036b6d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633345"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943491"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
@@ -32,8 +32,6 @@ Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive pa
 ## <a name="overview"></a>Información general
 
 Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
-  
-Para obtener una descripción de la seguridad de Microsoft 365 en su conjunto, consulte las notas [del producto sobre seguridad](https://go.microsoft.com/fwlink/p/?LinkId=270895).
   
 Vea cómo funciona el cifrado de datos en el siguiente vídeo.
   

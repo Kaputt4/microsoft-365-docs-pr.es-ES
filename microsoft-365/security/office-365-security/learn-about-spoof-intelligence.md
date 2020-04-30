@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo configurar los remitentes suplantados para permitir o no permitir y otras opciones de configuración de inteligencia de falsificaciones en Exchange Online y Exchange Online Protection (EOP).
-ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630496"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949242"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurar inteligencia de suplantación de identidad en Microsoft 365
 
@@ -166,13 +166,11 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Las opciones de configuración para inteligencia de suplantación se describen en configuración de suplantación [de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
 
-Las opciones disponibles dependen de la suscripción:
+Puede configurar las opciones de inteligencia contra la suplantación de identidad en la Directiva de antiphishing predeterminada y también en las directivas personalizadas. Para obtener instrucciones basadas en su suscripción, consulte uno de los siguientes temas:
 
-- Las organizaciones de EOP independientes sin buzones de Exchange online no pueden configurar las opciones de inteligencia de suplantación.
+- [Configure las directivas contra la suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
-- Microsoft 365 organizaciones con buzones de correo de Exchange online pueden configurar las opciones de inteligencia de suplantación en la Directiva de suplantación de identidad (y solamente) predeterminada. Para obtener instrucciones, vea [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
-
-- Microsoft 365 organizaciones con ATP pueden configurar opciones de inteligencia de suplantación en la Directiva de antiphishing de ATP predeterminada y también en directivas antiphishing de ATP personalizadas. Para obtener instrucciones, consulte [Configure ATP anti-phishing policies en Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configure las directivas antiphishing de ATP en Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
@@ -224,8 +222,8 @@ Sea Diligent sobre la suplantación de identidad y la protección contra phishin
 
 - Compruebe el **Informe de correo falsificado**. Puede usar este informe con frecuencia para ver y ayudar a administrar los remitentes suplantados. Para obtener información, consulte [Informe de detecciones de suplantación de identidad](view-email-security-reports.md#spoof-detections-report).
 
-- Revise la configuración del marco de directivas de remitente (SPF). Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para comprender en detalle cómo Office 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+- Revise la configuración del marco de directivas de remitente (SPF). Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [Configuración de SPF en Microsoft 365 para evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para comprender en detalle cómo Office 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-- Revise la configuración de DomainKeys Identified Mail (DKIM). Debe usar DKIM además de SPF y DMARC para ayudar a evitar que los atacantes envíen mensajes que parecen provenir de su dominio. DKIM le permite agregar una firma digital en el encabezado de los mensajes de correo electrónico. Para obtener más información, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md).
+- Revise la configuración de DomainKeys Identified Mail (DKIM). Debe usar DKIM además de SPF y DMARC para ayudar a evitar que los atacantes envíen mensajes que parecen provenir de su dominio. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Para obtener más información, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md).
 
 - Revise la configuración de autenticación de mensajes basada en el dominio, informes y conformidad (DMARC). Implementar DMARC con SPF y DKIM ofrece protección adicional contra el correo electrónico de suplantación de identidad. DMARC permite a los sistemas que reciben los correos determinar qué hacer con los mensajes enviados desde su dominio que no superan las comprobaciones SPF o DKIM. Para obtener más información, vea [usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md).

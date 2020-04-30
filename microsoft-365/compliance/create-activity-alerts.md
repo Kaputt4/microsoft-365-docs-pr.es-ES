@@ -16,22 +16,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ROBOTS: NOINDEX, NOFOLLOW
 description: Agregue y administre alertas de actividad en el centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas.
-ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634234"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943169"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
 Puede crear una alerta de actividad que le envíe una notificación por correo electrónico cuando los usuarios realicen actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento para una actividad para la que ha creado una alerta. 
   
- **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividades o actividades realizadas por usuarios específicos que realmente desee conocer. En lugar de tener que recordar que debe buscar en el registro de auditoría las actividades, puede usar alertas de actividad para que Microsoft 365 le envíe un mensaje de correo electrónico cuando los usuarios realicen esas actividades. Por ejemplo, puede crear una alerta de actividad que le avise cuando un usuario elimine archivos en SharePoint o puede crear una alerta que le avise cuando un usuario elimine mensajes de su buzón de forma permanente. La notificación de correo electrónico que se envía a usted incluye información sobre la actividad que se ha realizado y el usuario que la realizó. 
+ **¿Por qué usar alertas de actividad en lugar de buscar en el registro de auditoría?** Puede haber ciertos tipos de actividades o actividades realizadas por usuarios específicos que realmente desee conocer. En lugar de tener que recordar que debe buscar en el registro de auditoría las actividades, puede usar alertas de actividad para que Microsoft 365 le envíe un mensaje de correo electrónico cuando los usuarios realicen esas actividades. Por ejemplo, puede crear una alerta de actividad que le avise cuando un usuario elimine archivos en SharePoint o puede crear una alerta que le avise cuando un usuario elimine mensajes de su buzón de forma permanente. La notificación de correo electrónico que se envía a usted incluye información sobre la actividad que se ha realizado y el usuario que la realizó.
 
 > [!NOTE]
-> Le recomendamos que empiece a usar directivas de alerta en el centro de seguridad y cumplimiento, en lugar de crear nuevas alertas de actividad. Las directivas de alerta proporcionan funciones adicionales, como la capacidad de crear una directiva de alerta que active una alerta cuando un usuario realice una actividad específica y muestre alertas en la página **Ver alertas** del centro de seguridad y cumplimiento. Para obtener más información, consulte [Alert Policies](alert-policies.md).
+> Las alertas de actividad están en desuso. Le recomendamos que empiece a usar directivas de alerta en el centro de seguridad y cumplimiento, en lugar de crear nuevas alertas de actividad. Las directivas de alerta proporcionan funciones adicionales, como la capacidad de crear una directiva de alerta que active una alerta cuando un usuario realice una actividad específica y muestre alertas en la página **Ver alertas** del centro de seguridad y cumplimiento. Para obtener más información, consulte [Alert Policies](alert-policies.md).
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -113,7 +114,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |:-----|:-----|:-----|
     |Ve un documento en un sitio.  <br/> |Archivo al que se tiene acceso  <br/> |Actividades de archivos y carpetas  <br/> |
     |Modifica o modifica un documento.  <br/> |Archivo modificado  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
+    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación de uso compartido creada  <br/> Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
     |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> Y/o  <br/> Archivo descargado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
 

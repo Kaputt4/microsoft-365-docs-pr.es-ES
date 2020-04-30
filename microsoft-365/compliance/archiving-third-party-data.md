@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Los administradores pueden importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización de Microsoft 365. Esto le permite archivar datos de Facebook, Twitter y otros orígenes de datos de terceros en Microsoft 365. A continuación, puede usar y aplicar las características de cumplimiento de Microsoft 365 (como la retención legal, la exhibición de documentos electrónicos, el archivado local y las directivas de retención) para los datos de terceros.
-ms.openlocfilehash: 72afb48f74a30bac2904e857a33487a83eba48cd
-ms.sourcegitcommit: f9b5eca20e025acc36635cbd1786ff3407295857
+ms.openlocfilehash: e9276a845a29f5c047e303e9e04051ec9f77da1e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43027660"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943189"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 

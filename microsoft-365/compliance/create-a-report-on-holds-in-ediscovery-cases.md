@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento en Office 365 o en Microsoft 365.
-ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632255"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942903"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
   

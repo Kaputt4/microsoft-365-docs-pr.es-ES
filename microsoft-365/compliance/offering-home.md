@@ -1,5 +1,5 @@
 ---
-title: Oferta de cumplimiento de Microsoft
+title: Ofertas de cumplimiento de Microsoft
 layout: LandingPage
 description: Obtenga información sobre cómo los productos y servicios de Microsoft ayudan a su organización a cumplir los estándares de cumplimiento normativo.
 author: robmazz
@@ -13,14 +13,14 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 59e2c36e87232efcda29f9d5abe41b4c37a17a62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 57faa73d6c3cb5bbe92c1cea4fab7dd810abbeec
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071277"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943329"
 ---
-# <a name="microsoft-compliance-offerings"></a>Oferta de cumplimiento de Microsoft
+# <a name="microsoft-compliance-offerings"></a>Ofertas de cumplimiento de Microsoft
 
 Microsoft ofrece un conjunto completo de ofertas de cumplimiento para ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
@@ -133,7 +133,7 @@ Microsoft ofrece un conjunto completo de ofertas de cumplimiento para ayudar a s
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDA (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
-                        <p><a href="offering-sec-reg-sci.md">SEC reglamentación SCI</a></p>
+                        <p><a href="offering-sec-reg-sci.md">Normativa SCI de la SEC</a></p>
                         <p><a href="offering-shared-assessments.md">Evaluaciones compartidas</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Alemania)</a></p>
@@ -182,6 +182,7 @@ Microsoft ofrece un conjunto completo de ofertas de cumplimiento para ayudar a s
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC marco (Nueva Zelanda)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (REINO UNIDO)</a></p>
                         <p><a href="offering-pdpa-argentina.md">Ley de protección de datos personales (Argentina)</a></p>
+                        <p><a href="offering-russia-data-localization.md">Localización de datos personales (Rusia)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>

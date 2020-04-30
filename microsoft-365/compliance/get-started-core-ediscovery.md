@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo empezar a usar la exhibición de documentos electrónicos principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede Agregar miembros, crear suspensiones de exhibición de documentos electrónicos y, a continuación, buscar y exportar los datos que sean relevantes para la investigación.
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551481"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943389"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Introducción a la exhibición de documentos electrónicos principal
+# <a name="get-started-with-core-ediscovery"></a>Introducción a Core eDiscovery
 
 La exhibición de documentos electrónicos principal de Microsoft 365 proporciona una herramienta básica de exhibición de documentos electrónicos que las organizaciones pueden usar para buscar y exportar contenido en Microsoft 365 y Office 365. También puede usar la exhibición de documentos electrónicos principal para almacenar una exhibición de documentos electrónicos en ubicaciones de contenido, como buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y Microsoft Teams. No se necesita nada para implementar la exhibición de documentos electrónicos principal, pero hay algunas tareas de requisitos previos que debe realizar un administrador de ti y un administrador de exhibición de documentos electrónicos antes de que su organización pueda empezar a usar la exhibición de documentos electrónicos principal para buscar, exportar y conservar contenido.
 
@@ -36,15 +36,25 @@ La concesión de licencias para la exhibición de documentos electrónicos princ
 
 - **Suscripción de la organización:** Para acceder a la exhibición de documentos electrónicos principal en el centro de cumplimiento de Microsoft 365 o en el centro de seguridad & cumplimiento de Office 365 y usar las características de retención y exportación, su organización debe tener una suscripción a Microsoft 365 E3 o Office 365 E3 o superior.
 
-- **Licencias por usuario:** Para realizar una retención de exhibición de documentos electrónicos en los buzones de usuario, se debe asignar a ese usuario una de las siguientes licencias, en función de la suscripción de la organización:
+- **Licencias por usuario:** Para realizar una retención de exhibición de documentos electrónicos en los buzones de correo y los sitios, un usuario debe tener asignada una de las siguientes licencias, en función de la suscripción de su organización:
 
   - Una licencia de Microsoft 365 E3 o Office 365 E3 o superior
 
+   O
+
   - Una licencia de Microsoft 365 E1 o Office 365 E1 con una licencia de complemento de Exchange Online plan 2 o de archivado de Exchange Online
 
+  Y
+
+  - Una licencia de Microsoft 365 E1 o Office 365 E1 con una licencia de complemento del plan 2 de SharePoint Online plan 2 o OneDrive para la empresa
+  
   Para obtener información acerca de cómo asignar licencias, consulte [asignar licencias a los usuarios](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-Para obtener información sobre las licencias de Microsoft 365 y Office 365, descargue y consulte la solución "Descubra & responder" en la [comparación de licencias de cumplimiento de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf).
+Para obtener información acerca de las licencias:
+
+- Descargue y vea la solución "Descubra & responder" en la [comparación de licencias de cumplimiento de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx).
+
+- Vea la [Descripción del servicio del centro de cumplimiento de & de seguridad](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: asignar permisos de exhibición de documentos electrónicos
 

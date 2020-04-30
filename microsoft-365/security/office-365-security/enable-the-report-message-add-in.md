@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921581"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939480"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
@@ -133,7 +133,7 @@ Para obtener información sobre cómo usar el complemento, vea [usar el compleme
 
    ![Página de complementos de anuncio](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>Obtener información sobre cómo usar el complemento de mensajes de informe
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Obtener información sobre cómo usar el complemento de mensajes de informe
 
 Los usuarios que tengan el complemento asignado verán los iconos siguientes:
 
@@ -147,7 +147,7 @@ Los usuarios que tengan el complemento asignado verán los iconos siguientes:
 
 Cuando notifique a los usuarios sobre el complemento de mensajes de informe, incluya un vínculo para [usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisión o edición de la configuración del complemento de mensajes de informe
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisión o edición de la configuración del complemento de mensajes de informe
 
 1. En el centro de administración de Microsoft 365, vaya a la página **servicios & complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
@@ -158,3 +158,11 @@ Cuando notifique a los usuarios sobre el complemento de mensajes de informe, inc
 3. En el control flotante de **mensaje de informe de edición** que aparece, revise y edite las opciones según corresponda para su organización. Cuando haya terminado, haga clic en **Guardar**.
 
    ![Configuración del complemento de mensajes de informe](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>Ver y revisar los mensajes notificados
+
+Para revisar los mensajes que los usuarios notifican a Microsoft, tiene estas opciones:
+
+- Usar el portal de envíos de administración. Para obtener más información, vea [Ver envíos de usuarios a Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+
+- Crear una regla de flujo de correo (también denominada regla de transporte) para enviar copias de mensajes enviados. Para obtener instrucciones, vea [usar reglas de flujo de correo para ver qué están notificando los usuarios a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

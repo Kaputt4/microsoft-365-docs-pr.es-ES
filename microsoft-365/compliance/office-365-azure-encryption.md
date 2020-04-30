@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Resumen: una explicación del cifrado en Azure.'
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Una explicación del cifrado en Azure.
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637438"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943319"
 ---
 # <a name="encryption-in-azure"></a>Cifrado en Azure
 
+Las protecciones tecnológicas de Azure, como las comunicaciones cifradas y los procesos operativos, ayudan a mantener los datos protegidos. También tiene la flexibilidad de implementar características de cifrado adicionales y administrar sus propias claves de cifrado. Independientemente de la configuración del cliente, Microsoft aplica el cifrado para proteger los datos de los clientes en Azure. Microsoft también le permite controlar los datos hospedados en Azure a través de una amplia variedad de tecnologías avanzadas para cifrar, controlar y administrar claves criptográficas, y controlar y auditar el acceso a los datos. Además, Azure Storage ofrece un conjunto completo de capacidades de seguridad que permiten a los desarrolladores crear aplicaciones seguras de forma conjunta.
+
 ## <a name="introduction"></a>Introducción
 
-Las protecciones tecnológicas de Azure, como las comunicaciones cifradas y los procesos operativos, ayudan a mantener los datos protegidos. También tiene la flexibilidad de implementar características de cifrado adicionales y administrar sus propias claves de cifrado. Independientemente de la configuración del cliente, Microsoft aplica el cifrado para proteger los datos de los clientes en Azure. Microsoft también le permite controlar los datos hospedados en Azure a través de una amplia variedad de tecnologías avanzadas para cifrar, controlar y administrar claves criptográficas, controlar y auditar el acceso a los datos. Además, Azure Storage ofrece un conjunto completo de capacidades de seguridad que permiten a los desarrolladores crear aplicaciones seguras de forma conjunta.
-
-Azure ofrece varios mecanismos para proteger los datos a medida que se mueven de una ubicación a otra. Microsoft usa TLS para proteger los datos cuando se transmite entre los servicios en la nube y los clientes. Los centros de recursos de Microsoft negocian una conexión TLS con los sistemas cliente que se conectan a los servicios de Azure. La confidencialidad directa perfecta (PFS) protege las conexiones entre los sistemas cliente de los clientes y los servicios en la nube de Microsoft con claves únicas. Las conexiones también usan longitudes de claves de cifrado de 2.048 bits basadas en RSA. Esta combinación dificulta que alguien intercepte y tenga acceso a los datos que están en tránsito.
+Azure ofrece varios mecanismos para proteger los datos a medida que se mueven de una ubicación a otra. Microsoft usa TLS para proteger los datos cuando se transmite entre los servicios en la nube y los clientes. Los centros de datos de Microsoft negocian una conexión TLS con los sistemas cliente que se conectan a los servicios de Azure. La confidencialidad directa perfecta (PFS) protege las conexiones entre los sistemas cliente de los clientes y los servicios en la nube de Microsoft con claves únicas. Las conexiones también usan longitudes de claves de cifrado de 2.048 bits basadas en RSA. Esta combinación dificulta que alguien intercepte y tenga acceso a los datos que están en tránsito.
 
 Los datos se pueden proteger en el tránsito entre una aplicación y Azure mediante [cifrado del lado cliente](https://docs.microsoft.com/azure/storage/storage-client-side-encryption), https o SMB 3,0. Puede habilitar el cifrado para el tráfico entre sus propias máquinas virtuales (VM) y sus usuarios. Con las [redes virtuales de Azure](https://azure.microsoft.com/services/virtual-network/), puede usar el protocolo IPSec estándar del sector para cifrar el tráfico entre la puerta de enlace VPN corporativa y Azure, así como entre las máquinas virtuales que se encuentran en la red virtual.
 
@@ -41,7 +41,7 @@ Para obtener más información sobre el cifrado en Azure, vea [Azure Encryption 
 
 Azure Disk Encryption permite cifrar los discos de la infraestructura de Windows y Linux como discos de VM de servicio (IaaS). Azure Disk Encryption aprovecha la característica de BitLocker de Windows y la característica DM-Crypt de Linux para proporcionar cifrado de nivel de volumen para el sistema operativo y los discos de datos. También garantiza que todos los datos de los discos de máquina virtual estén cifrados en reposo en el almacenamiento de Azure. Azure Disk Encryption se integra con Azure Key Vault para ayudarle a controlar, administrar y auditar el uso de las claves de cifrado y los secretos.
 
-Para obtener más información, vea [recomendaciones de seguridad para máquinas virtuales de Windows en Azure](https://docs.microsoft.com/azure/security/azure-security-disk-encryption).
+Para obtener más información, vea [recomendaciones de seguridad para máquinas virtuales de Windows en Azure](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations).
 
 ## <a name="azure-storage-service-encryption"></a>Cifrado de Azure Storage Service
 

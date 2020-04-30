@@ -1,5 +1,5 @@
 ---
-title: Configurar una directiva de archivo y eliminación para los buzones de la organización
+title: Configurar una directiva de archivo y eliminación de buzones en la organización
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,16 +17,17 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+- MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635564"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943583"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación para los buzones de la organización
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
  En Microsoft 365, los administradores pueden crear una directiva de archivado y eliminación que mueve automáticamente elementos al buzón de archivo del usuario y elimina automáticamente los elementos del buzón. Para ello, el administrador crea una directiva de retención que se asigna a los buzones de correo y mueve los elementos al buzón de archivo de un usuario después de un período de tiempo determinado y también elimina los elementos del buzón una vez que alcanzan un determinado límite de antigüedad. Las reglas reales que determinan qué elementos se mueven o eliminan y cuándo se producen se denominan etiquetas de retención. Las etiquetas de retención están vinculadas a una directiva de retención, que, a su vez, se asigna al buzón de correo de un usuario. Una etiqueta de retención aplica la configuración de retención a los mensajes individuales y las carpetas en el buzón de un usuario. Define cuánto tiempo permanece un mensaje en el buzón de correo y qué acción se lleva a cabo cuando el mensaje alcanza la antigüedad de retención especificada. Cuando un mensaje alcanza su antigüedad de retención, se mueve al buzón de archivo del usuario o se elimina. 
   

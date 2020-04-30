@@ -10,15 +10,17 @@ ms.date: 05/17/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection:
 - M365-security-compliance
 description: La característica datos adjuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adjuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 14a1b37ce08e0ab63c23515fcf0fb03d99e59cc8
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638027"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943764"
 ---
 # <a name="how-atp-safe-attachments-works"></a>Cómo funcionan los datos adjuntos seguros de ATP
 

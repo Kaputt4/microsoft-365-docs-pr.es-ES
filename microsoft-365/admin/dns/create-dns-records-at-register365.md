@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Register365 para Microsoft.
-ms.openlocfilehash: 08db53df7510de76c6c5c33d2047cba4203324d8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 29aaa225a291880f0fb6b5cd039903d74e3f32a2
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629268"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938857"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Crear registros DNS en Register365 para Microsoft
 
@@ -37,7 +37,7 @@ Estos son los registros principales que es necesario agregar.
   
 - [Agregar un registro TXT para verificación](#add-a-txt-record-for-verification)
     
-- [Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [Agregar los seis registros CNAME necesarios para Microsoft](#add-the-six-cname-records-that-are-required-for-microsoft)
     
@@ -47,15 +47,13 @@ Estos son los registros principales que es necesario agregar.
     
 Después de agregar estos registros a Microsoft, su dominio estará configurado para trabajar con los servicios de Microsoft.
   
-Para obtener más información sobre WebHosting y DNS para sitios web con Microsoft, vea [usar un sitio web público con Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
-  
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="BKMK_verify"> </a>
 
-Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS es la que se demuestre a Microsoft que es el propietario del dominio.
+Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -80,11 +78,11 @@ Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propiet
     
     |**Nombre de host**|**Tipo**|**Resultado**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino de la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     (You may have to scroll down.)
     
@@ -92,9 +90,9 @@ Antes de usar el dominio con Microsoft, debemos asegurarnos de que es el propiet
   
 5. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará el registro.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro.
   
-Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
+Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -113,7 +111,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. Para empezar, vaya a su página de dominios en Register365 a través de [este vínculo](https://admin.register365.com/dns/). Se le pedirá que inicie sesión primero .
@@ -128,7 +126,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
   
 3. En la página **Add/Modify DNS Zone** (Agregar o modificar zona DNS), en la sección **Mail exchange records** (Registros Mail eXchange), en los cuadros del nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. 
     
-    (Es posible que tenga que desplazarse hacia abajo).
+    (You may have to scroll down.)
     
     |**Nombre de host**|**Prioridad**|**Resultado**|
     |:-----|:-----|:-----|
@@ -136,7 +134,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     (You may have to scroll down.)
     
@@ -146,7 +144,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
     (You may have to scroll down.)
     
@@ -183,7 +181,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     ![Seleccione Guardar](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -217,7 +215,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
    
     ![Especificar valores en la página Agregar o modificar zona DNS](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     (You may have to scroll down.)
     
@@ -247,7 +245,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará el dominio.
    
     ![Introducción de valores en la sección de registros de servicio](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     (You may have to scroll down.)
     

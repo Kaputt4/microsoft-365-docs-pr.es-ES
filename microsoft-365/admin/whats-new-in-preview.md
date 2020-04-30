@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: 'Centro de administración de Microsoft 365: Obtenga información sobre las características que se agregaron este mes.'
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: e0f7242ff144b5e4b42a6cb1713b2ad5df41f2f3
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 03fae5d2a9b8adc9859eb16bfd9d98740e7d8bf2
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919765"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939456"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -181,7 +181,7 @@ Hemos comenzado a implementar la capacidad de cambiar el método de pago de la t
 
 ![Captura de pantalla: sección facturación de la tarjeta de suscripción con tarjeta de crédito como forma de pago.](../media/MAC-BillingEditCreditCard.png)
 
-¿Desea más información? [Cambiar de tarjeta de crédito o cuenta bancaria a factura](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+¿Desea más información? [Cambiar de tarjeta de crédito o cuenta bancaria a factura](../commerce/billing-and-payments/change-payment-method.md)
 
 ### <a name="global-reader"></a>Lector global
 

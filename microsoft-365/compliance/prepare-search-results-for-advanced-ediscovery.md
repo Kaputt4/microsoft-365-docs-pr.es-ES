@@ -14,20 +14,22 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento para un mayor análisis con la herramienta eDiscovery avanzado.
-ms.openlocfilehash: e4cf580a045f9911e6c92fb2031a5d7bed79754e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626644"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943299"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para eDiscovery avanzado (clásico)
 
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos la jubilación de la exhibición avanzada de documentos electrónicos, también conocida como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
+> A medida que continuamos invirtiendo en nuevas versiones de eDiscovery avanzado, anunciamos la retirada de eDiscovery avanzado, también conocido como *eDiscovery avanzado (clásico)* o *eDiscovery avanzado v1.0* Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
 
 Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, puede preparar los resultados de la búsqueda para un análisis más avanzado con la exhibición avanzada de documentos electrónicos, lo que le permite analizar conjuntos de datos grandes y sin estructurar y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
   
@@ -108,7 +110,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información acerca del uso de la exhibición avanzada de documentos electrónicos, vea [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   

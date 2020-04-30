@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 9755fccb482dc294da7a0747310776314c739139
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a88d58db68816cd6aeb9173c36b964f3f97653db
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634417"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949230"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -45,7 +45,7 @@ Anti-spam, anti-malware y anti-phishing son características de EOP que los admi
 
 Para crear y configurar directivas contra correo no deseado, vea [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md).
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |Acción de detección de **correo no deseado** <br/><br/> _SpamAction_|**Mover mensaje a la carpeta Correo no deseado** <br/><br/> `MoveToJmf`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
 |Acción de detección de **correo no deseado de confianza alta** <br/><br/> _HighConfidenceSpamAction_|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`|**Colocar el mensaje en cuarentena** <br/><br/> `Quarantine`||
@@ -69,7 +69,7 @@ Hay otras configuraciones avanzadas de filtro de correo no deseado (ASF) en las 
 
 Le recomendamos que **desactive esta configuración ASF** para niveles **estándar** y **estrictos** . Para obtener más información acerca de la configuración de ASF, consulte [Configuración avanzada de filtro de correo no deseado (ASF) en Office 365](advanced-spam-filtering-asf-options.md).
 
-| Nombre de la característica de seguridad | Comentarios |
+|Nombre de la característica de seguridad|Comentarios|
 |----|---|
 |**Vínculos de imagen a sitios remotos** (_IncreaseScoreWithImageLinks_)||
 |**Dirección IP numérica en la dirección URL** (_IncreaseScoreWithNumericIps_)||
@@ -91,7 +91,7 @@ Le recomendamos que **desactive esta configuración ASF** para niveles **estánd
 
 Para crear y configurar directivas de correo no deseado saliente, consulte [configurar el filtrado de correo no deseado saliente en Office 365](configure-the-outbound-spam-policy.md).
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |**Número máximo de destinatarios por usuario: límite horario externo** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Número máximo de destinatarios por usuario: límite interno por hora** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -102,7 +102,7 @@ Para crear y configurar directivas de correo no deseado saliente, consulte [conf
 
 Para crear y configurar directivas antimalware, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <br/><br/> _Acción_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede ser lanzado por un administrador.|
 |**Filtro de tipos de datos adjuntos comunes** <br/><br/> _EnableFileFilter_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Esta opción pone en cuarentena los mensajes que contienen datos adjuntos ejecutables basados en el tipo de archivo, independientemente del contenido de datos adjuntos.|
@@ -112,9 +112,9 @@ Para crear y configurar directivas antimalware, vea [Configure anti-malware poli
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Configuración de directiva antiphishing predeterminada de EOP
 
-Solo puede configurar estas opciones en las organizaciones de Office 365 con buzones de Exchange Online. Para configurar estas opciones, vea [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
+Para configurar estas opciones, consulte [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
 |**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
@@ -158,7 +158,7 @@ Los clientes de EOP obtienen contra la suplantación de identidad (phishing) bá
 
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Configuración de suplantación en las directivas antiphishing de ATP
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |Usuarios protegidos: **Agregar usuarios para protegerlos** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Depende de su organización, pero le recomendamos que agregue usuarios en los roles clave. Internamente, pueden ser su CEO, director financiero y otros líderes senior. Externamente, pueden incluir miembros del Consejo o su Consejo de administración.|
 |Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <br/><br/> _EnableOrganizationDomainsProtection_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
@@ -178,7 +178,7 @@ Los clientes de EOP obtienen contra la suplantación de identidad (phishing) bá
 
 Tenga en cuenta que estos son los mismos valores de configuración que están disponibles en la [configuración de la Directiva contra correo no deseado en EOP](#eop-anti-spam-policy-settings).
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |**Habilitación de la protección contra la suplantación de identidad** <br/><br/> _EnableAntispoofEnforcement_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
 |**Habilitar remitente sin autenticar** <br/><br/> _EnableUnauthenticatedSender_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para los remitentes suplantados no identificados. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md).|
@@ -186,7 +186,7 @@ Tenga en cuenta que estos son los mismos valores de configuración que están di
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Configuración avanzada en las directivas antiphishing de ATP
 
-| Nombre de la característica de seguridad | Estándar | Estricta | Comentario |
+|Nombre de la característica de seguridad|Estándar|Estricta|Comentario|
 |---|---|---|---|
 |**Umbrales de suplantación de identidad avanzada** <br/><br/> _PhishThresholdLevel_|**2-agresivo** <br/><br/> `2`|**3-más agresivo** <br/><br/> `3`||
 

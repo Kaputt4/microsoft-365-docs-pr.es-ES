@@ -2,8 +2,8 @@
 title: Número de permiso de conducción de la UE
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial del número de licencia de conductor de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: c54fcefcda08d0bc2ec500d25c74bb5789e27398
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e75a8724dc91ef2d895c977fdd5fcc21e7a1da4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592661"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938834"
 ---
 # <a name="eu-drivers-license-number"></a>Número de permiso de conducción de la UE
 
@@ -1059,5 +1059,5 @@ Para obtener más información, consulte la sección "Reino Unido. Número de pe
   
 ## <a name="see-also"></a>Vea también
 
-[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+[Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Obtenga información sobre cómo configurar Office 365 operado por 21Vianet para administrar los registros DNS, cuando 1&1 Internet es el proveedor de host DNS.
-ms.openlocfilehash: 53e846b5a9672f3fbf0e003ec48261afc80c0abf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630012"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939417"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Cambiar los servidores DNS para configurar Microsoft 365 con 1&1 IONOS
 
@@ -38,7 +38,7 @@ Siga estas instrucciones si desea que Microsoft 365 administre los registros DNS
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
 
-Antes de usar el dominio con Microsoft 365, debemos asegurarnos de que es el propietario. Su capacidad para iniciar sesión en su cuenta en el registrador de dominios y crear el registro DNS demuestra a Microsoft 365 que es el propietario del dominio.
+Antes de utilizar el dominio con Microsoft 365, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft 365 sabrá que es el propietario del dominio.
   
 > [!NOTE]
 > Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
@@ -62,7 +62,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
 ||||
 |:-----|:-----|:-----|
 |**Tipo** <br/> |**Prefijo** <br/> |**Valor de nombre** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Nota**: este es un ejemplo. Use aquí su **destino específico o** el valor de dirección de destino, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Nota**: este es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Seleccione **Guardar**y vuelva a **Guardar** . 
@@ -71,7 +71,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.of
     
 9. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
-Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft 365 y pedirá a Microsoft 365 que busque el registro.
+Ahora que ha agregado el registro en el sitio de su registrador de dominios, volverá a Microsoft 365 y solicitará que busque el registro.
   
 Cuando Microsoft 365 encuentre el registro TXT correcto, se comprobará su dominio.
   
@@ -138,9 +138,9 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
 |**Servidor DNS 3:** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Servidor DNS 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![Introducción de los valores del servidor de nombres](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +171,7 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
    
    ![Introducción de los valores del servidor de nombres](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

@@ -15,13 +15,13 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Resumen: breve explicación de cómo Microsoft cifra los datos en tránsito.'
-ms.openlocfilehash: 0775d28a96f271a24406fd68c2ccb9fe4954e66d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Una breve explicación de cómo Microsoft cifra los datos en tránsito en sus centros de datos.
+ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637336"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943309"
 ---
 # <a name="encryption-for-data-in-transit"></a>Cifrado de datos en tránsito
 
@@ -31,9 +31,9 @@ Los datos están en tránsito:
 
 - Cuando un equipo cliente se comunica con un servidor de Microsoft;
 - Cuando un servidor de Microsoft se comunica con otro servidor de Microsoft; y
-- Cuando un servidor de Microsoft se comunica con un servidor que no es de Microsoft (por ejemplo, Exchange online que entrega el correo electrónico a un servidor de correo electrónico externo).
+- Cuando un servidor de Microsoft se comunica con un servidor que no es de Microsoft (por ejemplo, Exchange online que entrega el correo electrónico a un servidor de correo electrónico de terceros).
 
-Las comunicaciones entre centros de información entre servidores de Microsoft se realizan a través de TLS o IPsec y todos los servidores orientados a clientes negocian una sesión segura mediante TLS con los equipos cliente (por ejemplo, Exchange online usa TLS 1,2 con la intensidad de cifrado de 256 bits se usa (FIPS 140-2 nivel 2-validado). (Consulte [información de referencia técnica sobre el cifrado en Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) para obtener una lista de los conjuntos de cifrado de TLS compatibles con Office 365). Esto se aplica a los protocolos que usan los clientes como Outlook, Skype empresarial y Outlook en la web (por ejemplo, HTTP, POP3, etc.).
+Las comunicaciones entre los servidores de Microsoft se realizan a través de TLS o IPsec y todos los servidores orientados a clientes negocian una sesión segura mediante TLS con los equipos cliente (por ejemplo, Exchange online usa TLS 1,2 con la intensidad de cifrado de 256 bits se usa (FIPS 140-2 nivel 2-validado). (Vea los [detalles de referencia técnica sobre el cifrado](technical-reference-details-about-encryption.md) para obtener una lista de los conjuntos de cifrado de TLS compatibles con Office 365). Esto se aplica a los protocolos que usan los clientes como Outlook, Skype empresarial, Microsoft Teams y Outlook en la web (por ejemplo, HTTP, POP3, etc.).
 
 Los certificados públicos los emite SSL de Microsoft IT con SSLAdmin, una herramienta interna de Microsoft para proteger la confidencialidad de la información transmitida. Todos los certificados emitidos por Microsoft IT tienen un mínimo de 2048 bits de longitud y el cumplimiento de WebTrust requiere SSLAdmin para asegurarse de que los certificados solo se emiten para las direcciones IP públicas que pertenecen a Microsoft. Las direcciones IP que no cumplan este criterio se enrutan a través de un proceso de excepción.
 

@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de Microsoft PST para buscar en la red de su organización para obtener un inventario de los archivos PST que están dispersos en toda la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para poder importarlos a Office 365.
-ms.openlocfilehash: ee9a657cc0ac44e57e85edc68e80e0a76aa063d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633335"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942203"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
 
@@ -91,7 +93,7 @@ Consulte la descripción del `Locations` parámetro en la tabla del siguiente pr
     | `DataSource` <br/> |Especifica el tipo de datos que se va a buscar. Actualmente, puede usar la herramienta de recopilación de PST para buscar archivos PST.  <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Especifica el tipo de operación que realizará la herramienta. Use el valor `Find` para ubicar los archivos PST en las ubicaciones especificadas. Tenga en cuenta que la herramienta puede buscar y obtener información sobre los archivos PST que están abiertos en los archivos de Outlook y PST que están conectados a los perfiles de Outlook.  <br/> | `-Mode Find` <br/> |
     | `JobName` <br/> |Especifica el nombre del trabajo de recopilación de PST. Usará este mismo nombre de trabajo cuando ejecute la herramienta de recopilación de PST para bloquear, recopilar y eliminar los archivos PST que se encuentran al ejecutar la herramienta para buscar archivos PST. El nombre del trabajo también se agregará al registro y a los nombres de archivo de configuración.  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> | Especifica una o varias ubicaciones en las que se van a buscar los archivos PST. Si especifica más de una ubicación, use un punto y coma (;) para separar ubicaciones individuales. Asegúrese de envolver los valores individuales de este parámetro con comillas dobles ("").  <br/><br/>   Este es el formato de valor de identidad necesario para los tipos de ubicaciones que puede buscar.  <br/><br/>        **Unidades organizativas** : Use el nombre distintivo (DN) para identificar las unidades organizativas; por ejemplo:`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> no puede especificar el contenedor equipos integrados (por ejemplo, CN = equipos, DC = Contoso, DC = com ") porque no es una unidad organizativa.<br/> <br/> **Equipos** : Use el DN o el nombre de dominio completo (FQDN) para identificar los equipos cliente y servidor de la red; por ejemplo:  <br/>  DN`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  O bien  <br/>  CUALIFICA`"FILESERVER01.contoso.com"` <br/><br/>  **Recursos compartidos de archivos de red** : Use un nombre UNC para identificar recursos compartidos de archivos de red; por ejemplo,`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> | Especifica una o varias ubicaciones en las que se van a buscar los archivos PST. Si especifica más de una ubicación, use un punto y coma (;) para separar ubicaciones individuales. Asegúrese de envolver los valores individuales de este parámetro con comillas dobles ("").  <br/><br/>   Este es el formato de valor de identidad necesario para los tipos de ubicaciones que puede buscar.  <br/><br/>        **Unidades organizativas** : Use el nombre distintivo (DN) para identificar las unidades organizativas; por ejemplo:`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> no puede especificar el contenedor equipos integrados (por ejemplo, CN = equipos, DC = Contoso, DC = com ") porque no es una unidad organizativa.<br/> <br/> **Equipos** : Use el DN o el nombre de dominio completo (FQDN) para identificar los equipos cliente y servidor de la red; por ejemplo:  <br/>  DN`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  O bien:  <br/>  CUALIFICA`"FILESERVER01.contoso.com"` <br/><br/>  **Recursos compartidos de archivos de red** : Use un nombre UNC para identificar recursos compartidos de archivos de red; por ejemplo,`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `LogLocation` <br/> |Especifica la carpeta en la que se copiarán los archivos de registro. Si la carpeta no existe, se creará al ejecutar la herramienta.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ConfigurationLocation` <br/> |Especifica la carpeta en la que se copiará el archivo de configuración. Xml. Este archivo contiene información sobre cada archivo PST que se encuentra al ejecutar la herramienta. Este archivo se usará al ejecutar la herramienta en el paso 3 para copiar los archivos PST que se encuentran.  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `ExcludedLocations` <br/> |Este parámetro opcional especifica las ubicaciones que se deben omitir durante una operación de búsqueda. Puede excluir unidades organizativas específicas, equipos y recursos compartidos de archivos de red. Por ejemplo, podría excluir equipos configurados como un equipo configurado como SQL Server (u otros tipos de servidores de aplicaciones), que los usuarios no tienen acceso a. Si especifica más de una ubicación para excluir, use un punto y coma (;) para separar ubicaciones individuales. Asegúrese de envolver los valores individuales de este parámetro con comillas dobles ("").  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |

@@ -2,22 +2,22 @@
 title: Número de identificación fiscal de la UE
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación de impuestos de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 5467db921bd518eeeab18a36ee2de473f9017358
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f779974266045d7099b599700c7168162d9d81e
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41591021"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938676"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 
@@ -2029,5 +2029,5 @@ Nº archivo impto.
   
 ## <a name="see-also"></a>Vea también
 
-[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+[Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 
