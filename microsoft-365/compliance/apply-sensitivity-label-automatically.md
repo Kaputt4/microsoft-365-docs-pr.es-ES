@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799983"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943249"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -131,13 +131,13 @@ Además, puede elegir si una condición debe detectar todos los tipos de informa
 
 ![Opciones de precisión de coincidencia y recuento de instancias](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>Configuración de clasificadores para una etiqueta
+### <a name="configuring-classifiers-for-a-label"></a>Configuración de clasificadores para una etiqueta
 
 Si selecciona la opción **Clasificadores**, seleccione uno o más de los clasificadores predefinidos:
 
 ![Opciones de clasificadores y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
 
-Para obtener más información sobre estos clasificadores, consulte [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md).
+Para más información sobre estos clasificadores, consulte [Introducción al entrenamiento de clasificadores (versión preliminar)](classifier-getting-started-with.md).
 
 Durante el período de versión preliminar, las siguientes aplicaciones son compatibles con clasificadores para las etiquetas de confidencial:
 
@@ -205,7 +205,7 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 - [Crear y publicar](create-sensitivity-labels.md) una o más etiquetas de confidencialidad (para al menos un usuario) que pueda seleccionar para las directivas de etiquetado automático. Para estas etiquetas:
     - No importa que la opción de etiquetado automático en aplicaciones de Office esté activada o desactivada, ya que la configuración de la etiqueta es complementaria a las directivas de etiquetado automático, como se explica en la introducción. 
     - Si las etiquetas que quiere usar para el etiquetado automático están configuradas para usar marcas visuales (encabezados, pies de página, marcas de agua), tenga en cuenta que no se aplican a los documentos.
-    - Si las etiquetas aplican el cifrado, deben configurarse para la configuración **Aplicar permisos ahora**.
+    - Si las etiquetas aplican el cifrado, deben configurarse para la configuración **Asignar permisos ahora**.
 
 ### <a name="learn-about-simulation-mode"></a>Más información sobre el modo de simulación
 

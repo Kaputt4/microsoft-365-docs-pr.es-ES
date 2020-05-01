@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950117"
+ms.locfileid: "43952623"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -120,7 +120,7 @@ El contenido que espera una revisión de disposición se elimina solo después d
 > [!NOTE]
 > La capacidad para ver los registros que se eliminaron automáticamente sin una revisión de disposición se distribuye gradualmente a los inquilinos de abril y mayo de 2020, por lo que es posible que no vea esta experiencia de forma inmediata.
 
-Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . En comparación, los registros eliminados que se aprueban para eliminarlos mediante una revisión de disposición muestran la **disposición pendiente**. Por ejemplo:
+Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 
 ![Elementos eliminados sin una revisión de disposición](../media/records-disposed2.png)
 

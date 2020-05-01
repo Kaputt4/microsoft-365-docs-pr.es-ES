@@ -1,0 +1,72 @@
+### YamlMime:Hub
+title: Ayuda del centro de administración de 365 de Microsoft
+summary: Explore los recursos para trabajar en el centro de administración de Microsoft 365.
+brand: m365
+metadata:
+  title: Ayuda del centro de administración de 365 de Microsoft
+  description: Configure y administre Office 365 y Microsoft 365 en el centro de administración de Microsoft 365.
+  ms.service: O365-administration
+  ms.prod: microsoft-365-business
+  ms.topic: hub-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 8299bf7fa32e6a1678185370e2ae994d80ecf270
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952735"
+productDirectory:
+  title: Introducción
+  summary: Configurar la suscripción y el correo electrónico, agregar usuarios e instalar aplicaciones.
+  items:
+  - title: Introducción
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Regístrese y configure Microsoft 365.
+    url: setup/index.yml
+  - title: Migrar datos
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    summary: Mueva los datos de otro servicio a Microsoft 365.
+    url: setup/migrate-email-and-contacts-admin.md
+  - title: Instalar aplicaciones
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    summary: Instale Office y otras aplicaciones de Microsoft para los usuarios de su organización.
+    url: setup/install-applications.md
+  - title: Entrenar a los usuarios
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Ayude a los usuarios de su organización a almacenar y compartir archivos y a usar las aplicaciones de Office.
+    url: https://support.office.com/office-training-center
+additionalContent:
+  sections:
+  - title: Administrar
+    summary: Administre la suscripción, los servicios y los usuarios, proteja su empresa y obtenga ayuda para solucionar problemas.
+    items:
+    - title: Información general sobre el centro de administración de Microsoft 365
+      summary: Obtenga información sobre los roles de administrador, cómo mantenerse al tanto de los cambios y cómo personalizar la suscripción.
+      url: admin-overview/about-the-admin-center.md
+    - title: Usuarios y grupos
+      summary: Administre contraseñas, agregue y quite usuarios, configure y administre grupos, administre el acceso de invitado y asigne licencias de usuario.
+      url: add-users/index.yml
+    - title: Correo electrónico y calendarios
+      summary: Administre la configuración del correo electrónico, los grupos de distribución y la configuración de seguridad, y configure los buzones compartidos.
+      url: email/index.yml
+    - title: Dominios
+      summary: Obtenga información acerca de los dominios, configurar y administrar dominios, y actualizar registros DNS.
+      url: setup/add-domain.md
+    - title: Los datos y el servicio
+      summary: Supervise el estado del servicio, realice una copia de seguridad de los datos, instale los complementos y actualice a las aplicaciones más recientes.
+      url: manage/index.yml
+    - title: Suscripciones y facturación
+      summary: Administre facturas, suscripciones y licencias de productos, actualice los métodos de pago y compre servicios y almacenamiento adicionales.
+      url: ../commerce/index.yml
+    - title: Proteger la organización
+      summary: Cree directivas de prevención de pérdida de datos (DLP), configure multi-factor Authentication (MFA) y obtenga información sobre la puntuación segura de Microsoft y RGPD.
+      url: security-and-compliance/secure-your-business-data.md
+    - title: Trabajar con clientes
+      summary: Compartir documentos y usar Teams para colaborar y reunirse.
+      url: work-with-customers/index.yml
+    - title: Solucionar problemas
+      summary: Obtenga acceso a recursos que le ayudarán a solucionar y solucionar problemas con sus productos o servicios de Office.
+      url: https://docs.microsoft.com/office/troubleshoot/

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
-ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: d234b4c9ba01b185c367074ee78b0f92be226c46
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919707"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938620"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -72,7 +72,7 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
       - Hasta 32 columnas (campos) por origen de datos
       - Hasta 5 columnas (campos) marcadas como utilizables en búsquedas
 
-2. Estructure los datos confidenciales en el archivo .csv de forma que la primera fila incluya los nombres de los campos que se usan para la clasificación basada en EDM. En el archivo .csv, puede que tenga nombres de campo, como "NSS", "FechaNacimiento", "Nombre", "Apellido", etc. Por ejemplo, nuestro archivo .csv se llama *RegistrosPacientes.csv* e incluye las columnas *IdPaciente*,  *NEM*, *Apellidos*, *Nombre*, *NSS* , etc.
+2. Estructure los datos confidenciales en el archivo .csv de forma que la primera fila incluya los nombres de los campos que se usan para la clasificación basada en EDM. En el archivo .csv, puede que tenga nombres de campo, como "NSS", "FechaNacimiento", "Nombre", "Apellido", etc. Tenga en cuenta que los encabezados de columna no pueden incluir espacios o guiones bajos en sus nombres. Por ejemplo, nuestro archivo .csv se llama  *RegistrosPacientes.csv* e incluye las columnas  *IdPaciente*,  *NEM*,  *Apellidos*,  *Nombre*,  *NSS*, etc.
 
 3. Defina el esquema de la base de datos de información confidencial en formato .xml (similar al ejemplo siguiente). Nombre este archivo de esquema  **edm.xml** y configúrelo para que por cada columna de la base de datos haya una línea que use la sintaxis: 
 
