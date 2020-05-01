@@ -1,0 +1,80 @@
+### YamlMime:Landing
+title: Administrar usuarios y grupos
+summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+metadata:
+  title: Administrar usuarios y grupos
+  description: Administración de contraseñas, adición y eliminación de usuarios, configuración de grupos y administración de licencias
+  ms.service: O365-administration
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 01/27/2020
+  localization_priority: Priority
+  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
+  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43955318"
+landingContent:
+- title: Administrr usuarios
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Agregar un usuario
+      url: add-users.md
+    - text: Editar un usuario
+      url: add-users.md
+    - text: Agregar otra dirección de correo electrónico
+      url: ../email/add-another-email-alias-for-a-user.md
+    - text: Creación de un buzón compartido
+      url: ../email/create-a-shared-mailbox.md
+    - text: Asignar licencias a los usuarios
+      url: ../manage/assign-licenses-to-users.md
+    - text: Quitar licencias de usuarios
+      url: ../manage/remove-licenses-from-users.md
+    - text: Usar el dominio personalizado
+      url: ../email/change-email-address.md
+- title: Administrar grupos
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Crear grupos
+      url: ../create-groups/create-groups.md
+    - text: Agregar miembros
+      url: ../create-groups/add-or-remove-members-from-groups.md
+    - text: Restaurar o recuperar un grupo eliminado
+      url: ../create-groups/restore-deleted-group.md
+    - text: Administrar el acceso de invitado en grupos
+      url: ../create-groups/manage-guest-access-in-groups.md
+- title: Administración de contraseñas
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Restablecer una contraseña de usuario
+      url: reset-passwords.md
+    - text: Establecer contraseñas nunca para expirar
+      url: set-password-to-never-expire.md
+    - text: Permitir que los usuarios puedan restablecer sus propias contraseñas
+      url: let-users-reset-passwords.md
+    - text: Establecer la Directiva de expiración de contraseñas de su organización
+      url: ../manage/set-password-expiration-policy.md
+    - text: Restablecer contraseña de administrador
+      url: reset-passwords.md#reset-my-admin-password
+- title: Quitar un empleado
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Eliminar un usuario
+      url: delete-a-user.md
+    - text: Obtener acceso y realizar una copia de seguridad de los datos de un usuario anterior
+      url: get-access-to-and-back-up-a-former-user-s-data.md
+    - text: Reenviar correo electrónico a otro usuario
+      url: ../email/configure-email-forwarding.md
+    - text: Quitar la licencia
+      url: ../manage/remove-licenses-from-users.md
+    - text: Restaurar un usuario eliminado
+      url: restore-user.md
+    - text: Quitar datos de la compañía de los dispositivos (Microsoft 365 empresa Premium)
+      url: ../../business/remove-company-data.md

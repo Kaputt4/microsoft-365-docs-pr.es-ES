@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Administrar el correo electrónico y los calendarios
+summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+metadata:
+  title: Administrar el correo electrónico y los calendarios
+  description: Administrar la configuración del correo electrónico, los grupos de distribución, la configuración de seguridad y configurar los buzones compartidos
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: sirkkuw
+  ms.author: sirkkuw
+  ms.date: 04/16/2020
+  localization_priority: Priority
+  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
+  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 04/30/2020
+  ms.locfileid: "43952795"
+landingContent:
+- title: Administrar el correo electrónico
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Administrar la configuración del correo electrónico del usuario
+      url: office-365-user-email-settings.md
+    - text: Colaboración de correo electrónico
+      url: email-collaboration.md
+  - linkListType: how-to-guide
+    links:
+    - text: Agregar otro alias de correo electrónico
+      url: add-another-email-alias-for-a-user.md
+    - text: Usar el dominio personalizado
+      url: change-email-address.md
+    - text: Configurar el reenvío de correo electrónico
+      url: configure-email-forwarding.md
+    - text: Trabajar con grupos de seguridad
+      url: create-edit-or-delete-a-security-group.md
+- title: Administrar calendarios
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Administrar el calendario y los contactos en Outlook
+      url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+  - linkListType: video
+    links:
+    - text: Crear un calendario compartido
+      url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+- title: Administración de buzones compartidos
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar un buzón compartido
+      url: configure-a-shared-mailbox.md
+    - text: Convertir un buzón de usuario en un buzón compartido
+      url: convert-user-mailbox-to-shared-mailbox.md
+    - text: Quitar la licencia de un buzón compartido
+      url: remove-license-from-shared-mailbox.md
+    - text: Resolver problemas con los buzones compartidos
+      url: resolve-issues-with-shared-mailboxes.md
+- title: Resolver los problemas de conexión y entrega del correo electrónico
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Encontrar y solucionar los problemas de entrega de correo electrónico
+      url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
+    - text: Corregir y buscar problemas después de agregar el dominio o los registros DNS
+      url: ../get-help-with-domains/find-and-fix-issues.md
+    - text: Recuperar correos electrónicos eliminados en un buzón de usuario
+      url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
+    - text: Solucionar problemas de conexión de Outlook en Microsoft 365 y Exchange Online
+      url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f
