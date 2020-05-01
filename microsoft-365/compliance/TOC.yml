@@ -285,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: Administrar el ciclo de vida de los documentos de SharePoint
           href: auto-apply-retention-labels-scenario.md
-    - name: Eliminar datos
-      href: disposition-reviews.md
+    - name: Eliminación de datos
+      href: disposition.md
     - name: Administrar buzones inactivos
       items:
         - name: Información general sobre buzones inactivos
@@ -340,7 +340,7 @@
             - name: Retención automática basada en eventos
               href: automate-event-driven-retention.md
         - name: Eliminación
-          href: disposition-reviews.md
+          href: disposition.md
         - name: Más información sobre la administración de registros
           items:
             - name: Ver vídeos sobre la administración de registros

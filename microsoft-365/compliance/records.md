@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632119"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949287"
 ---
 # <a name="overview-of-records"></a>Información general de registros
 
@@ -38,7 +38,7 @@ En un nivel alto, la declaración de contenido como un registro significa que:
 
 - Los registros se eliminan cuando se supera el período de retención declarado.
 
-Puede usar las [etiquetas de retención](labels.md) para clasificar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede [publicarlas](labels.md#how-retention-labels-work-with-retention-label-policies) (de modo que los usuarios puedan usarlas para clasificar el contenido como registros) o [aplicar automáticamente estas etiquetas](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenido que desea clasificar como registro. Al usar las etiquetas de retención para declarar registros, puede implementar una única estrategia coherente de administración de registros para todos los Office 365, mientras que otras características de administración de registros, como el Centro de registros, solo se aplican al contenido de SharePoint Online.
+Use las [etiquetas de retención](labels.md) para clasificar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede [publicarlas](labels.md#how-retention-labels-work-with-retention-label-policies) (de modo que los usuarios puedan usarlas para clasificar el contenido como registros) o [aplicar automáticamente estas etiquetas](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenido que desea clasificar como registro. Al usar las etiquetas de retención para declarar registros, puede implementar una única estrategia coherente de administración de registros para todos los Office 365, mientras que otras características de administración de registros, como el Centro de registros, solo se aplican al contenido de SharePoint Online.
 
 Tenga en cuenta lo siguiente respecto a los registros:
 
@@ -74,10 +74,10 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
 Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro. Para declarar el contenido como un registro, siga estos pasos:
 
-1. Cree una etiqueta de retención. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, haga clic en **Crear una etiqueta**.
+1. Cree una etiqueta de retención. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
 
-2. En la página **Configuración de la etiqueta** del asistente, elija la opción para establecer la etiqueta de retención para declarar el contenido como un registro.<br/>
-
+2. En la página **Configuración de la etiqueta** del asistente, elija la opción para establecer la etiqueta de retención para declarar el contenido como un registro.
+    
    ![Haga clic en usar etiqueta para clasificar contenido como una casilla de registro](../media/recordversioning6.png)
 
 3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive.
