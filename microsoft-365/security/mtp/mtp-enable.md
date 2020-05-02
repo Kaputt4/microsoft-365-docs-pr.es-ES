@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fa970b28939ad43bf6a2717e603013277bc9130f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
+ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633908"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997519"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -36,7 +36,7 @@ La Protección contra amenazas de Microsoft unifica el proceso de respuesta a in
 Para obtener la mejor protección y optimizar la protección contra amenazas de Microsoft, se recomienda implementar todos los servicios admitidos aplicables en la red. Para obtener más información, [Consulte acerca de la implementación de servicios compatibles](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Comprobar la elegibilidad de la licencia y los permisos necesarios
-Una licencia de Microsoft 365 E5, E5 o a5 o una combinación válida de licencias proporciona acceso a los servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
+Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o a5 o una combinación válida de licencias proporciona acceso a los servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
 
 Para obtener información detallada sobre la licencia, [Lea los requisitos de licencia](prerequisites.md#licensing-requirements).
 
@@ -51,7 +51,7 @@ Antes de activar el servicio, el centro de seguridad de Microsoft 365 ([Security
 ![Imagen de la página de bienvenida de Microsoft Threat Protection que se muestra si no se ha activado](../../media/mtp-welcome.png)
 la protección contra amenazas de Microsoft en la*Página de bienvenida de Microsoft Threat Protection en el centro de seguridad de Microsoft 365*
 
-Para activar la protección contra amenazas de Microsoft, simplemente complete el proceso desde la página de bienvenida. También puede activar Microsoft Threat Protection accediendo a la **configuración** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y seleccionando **Microsoft Threat Protection**.
+Para activar la protección contra amenazas de Microsoft, simplemente complete el proceso desde la página de bienvenida. También puede activar Microsoft Threat Protection accediendo a la **configuración** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y seleccionando **Microsoft Threat Protection**. Haga clic en **Guardar **.
 
 >[!NOTE]
 >Si no ve la **configuración** en el panel de navegación o no pudo obtener acceso a la página, compruebe los permisos y las licencias.

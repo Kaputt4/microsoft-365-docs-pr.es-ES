@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar Microsoft 365 para la colaboración con personas de fuera de la organización.
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630730"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002257"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas fuera de la organización
 
@@ -42,7 +46,7 @@ Una vez que haya habilitado el escenario que desea usar para el uso compartido c
 
 - [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md) : Obtenga información sobre los procedimientos recomendados para compartir con usuarios no autenticados.
 - [Limitar exposición accidental](share-limit-accidental-exposure.md) : Obtenga información sobre cómo reducir las posibilidades de compartir accidentalmente contenido confidencial con personas de fuera de la organización.
-- [Crear un entorno de uso compartido de invitado seguro](create-secure-guest-sharing-environment.md)) -Obtenga información sobre las herramientas que se proporcionan en Microsoft 365 para ayudar a garantizar que el uso compartido con personas de fuera de la organización se realiza de forma segura y segura, y cumple los requisitos de gobierno.
+- [Crear un entorno de uso compartido de invitado seguro](create-secure-guest-sharing-environment.md) : Obtenga información sobre las herramientas proporcionadas en Microsoft 365 para ayudar a garantizar que el uso compartido con personas de fuera de la organización se realiza de forma segura y segura, y cumple los requisitos de gobierno.
 
 ## <a name="collaborate-with-partner-companies"></a>Colaborar con empresas asociadas
 

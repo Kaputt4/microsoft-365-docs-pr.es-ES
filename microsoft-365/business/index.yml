@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Recursos de Microsoft 365 Business Premium
-summary: Microsoft 365 empresa Premium (anteriormente Microsoft 365 Business) es un servicio de suscripción completo para empresas con menos de 300 empleados. Integra sus aplicaciones y servicios de productividad de oficina favoritos y herramientas de colaboración como Microsoft Teams con funciones avanzadas de seguridad y administración de dispositivos.
+summary: Microsoft 365 Empresa Premium (anteriormente Microsoft 365 Empresa) es un servicio completo de suscripción para empresas de menos de 300 empleados. Integra sus aplicaciones y servicios de productividad de oficina favoritos y herramientas de colaboración como Microsoft Teams con funciones avanzadas de seguridad y administración de dispositivos.
 brand: m365
 metadata:
   title: Recursos de Microsoft 365 Business Premium
@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 4dff1d10b8a4574ea8350aa194d7f6a2c8eb2605
-  ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
+  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/22/2020
-  ms.locfileid: "43781481"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "44002185"
 productDirectory:
   title: Trabajo remoto seguro con Microsoft 365 Business Premium
   items:
@@ -34,7 +34,7 @@ productDirectory:
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
-  - title: ¿Qué es Microsoft 365 Business Premium?
+  - title: ¿Qué es Microsoft 365 Empresa Premium?
     links:
     - url: microsoft-365-business-overview.md
       itemType: overview
@@ -51,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: Preguntas más frecuentes
-  - title: Configuración de Microsoft 365 empresa Premium
+  - title: Configurar Microsoft 365 Empresa Premium
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -79,6 +79,9 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
       itemType: download
       text: Aspectos básicos técnicos
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+      itemType: download
+      text: Lista de comprobación para proteger el trabajo remoto
   - title: Administrr usuarios
     links:
     - url: https://docs.microsoft.com/microsoft-365/business/add-users-m365b
@@ -188,7 +191,7 @@ conceptualContent:
       text: Inscríbase para Microsoft 365 empresa Premium
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
-      text: Migrar de Microsoft 365 Business Standard
+      text: Migrar desde Microsoft 365 Empresa Estándar
     - url: migrate-from-e3.md
       itemType: how-to-guide
       text: Migrar desde Office 365 E3

@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630754"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002197"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -72,7 +76,7 @@ Para establecer la configuración de acceso de invitado de Teams
 
 Microsoft Teams usa grupos de 365 para la pertenencia al equipo. La configuración de invitado de Microsoft 365 Groups debe estar activada para que el acceso de invitado en Teams funcione.
 
-![Captura de pantalla de la configuración de invitado de Microsoft 365 Groups en el centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Captura de pantalla de la configuración de invitados de los grupos de Microsoft 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Para establecer la configuración de invitado de Microsoft 365 Groups
 

@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636668"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002348"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Paso 1: preparar la organización para Windows 10 Enterprise
 
@@ -56,7 +56,7 @@ Use el valor adecuado de la tabla siguiente cuando configure la Directiva de adm
 
 Puede habilitar los datos de diagnóstico a través de cualquiera de estos métodos:
 
-* **Microsoft Intune** : Si planea usar Intune para administrar los dispositivos, puede crear una directiva de configuración para habilitar los datos de diagnóstico mediante la configuración de la Directiva del sistema <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> . Para obtener más información sobre cómo configurar las directivas de configuración, consulte [administrar la configuración y las características en los dispositivos con las directivas de Microsoft Intune](https://aka.ms/intuneconfigpolicies).
+* **Microsoft Intune** : Si planea usar Intune para administrar los dispositivos, puede crear una directiva de configuración para habilitar los datos de diagnóstico mediante la configuración de la Directiva del sistema <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> .
 * **Editor del** registro: puede usar el editor del registro para habilitar manualmente los datos de diagnóstico en cada dispositivo de la organización. Como alternativa, puede escribir un script para editar el registro. Si ya existe una directiva de administración, como la Directiva de grupo o MDM, invalidará esta configuración del registro.
 * **Directiva de grupo** : Si no tiene previsto inscribir dispositivos en Intune, puede usar un objeto de directiva de grupo para establecer el nivel de datos de diagnóstico de su organización.
 * **Símbolo del sistema** : puede establecer que los datos y el servicio de diagnóstico de Windows 10 se inicien automáticamente con el símbolo del sistema. Este método es el mejor si está probando el servicio solo en algunos dispositivos. Si se habilita el servicio para que se inicie automáticamente con este comando, no se configurará el nivel de datos de diagnóstico. Si no ha configurado un nivel de datos de diagnóstico con las herramientas de administración, el servicio funcionará con el nivel mejorado predeterminado.

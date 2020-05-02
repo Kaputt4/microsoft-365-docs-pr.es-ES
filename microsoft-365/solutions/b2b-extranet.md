@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con usuarios invitados administrados desde una organización asociada.
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604923"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001708"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
 Puede usar la [Administración de derechos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) para crear una extranet B2B para colaborar con una organización asociada que use Azure Active Directory. Esto permite a los usuarios inscribirse por sí mismos en el sitio o equipo de extranet y recibir acceso a través de un flujo de trabajo de aprobación.
 
-Con este método de compartir recursos para colaboración, la organización asociada puede ayudarle a mantener y aprobar a los usuarios invitados en su extremo, lo que reduce la carga en el Departamento de ti y permite que los usuarios más familiarizados con el acuerdo de colaboración administren al usuario. al.
+Con este método de compartir recursos para colaboración, la organización asociada puede ayudarle a mantener y aprobar a los usuarios invitados en su extremo, lo que reduce la carga en el Departamento de ti y permite que los usuarios más familiarizados con el acuerdo de colaboración administren el acceso de los usuarios.
 
 En este artículo se describen los pasos para crear un paquete de recursos (en este caso, un sitio o un equipo) que puede compartir con una organización asociada a través de un modelo de registro de acceso sin ayuda de autoservicio. 
 

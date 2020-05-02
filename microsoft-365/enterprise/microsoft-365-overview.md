@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Proporciona una introducción a los componentes, planes y rutas de implementación de Microsoft 365 para empresas.
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631566"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002301"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Información general de Microsoft 365 Enterprise
 
@@ -45,7 +45,7 @@ Microsoft 365 para empresas está disponible en tres planes.
 |:-------|:-----|
 | E3 | Obtenga acceso a los productos principales y características de Microsoft 365 para mejorar la productividad del lugar de trabajo y impulsar la innovación de manera segura. |
 | E5 | Obtenga acceso a los productos y características más recientes de Microsoft 365, incluidas la protección contra amenazas avanzada, las herramientas de colaboración y seguridad.. Incluye todas las capacidades de E3's además de seguridad avanzada, voz y herramientas de análisis de datos. |
-| F1 | Conéctese con sus trabajadores de Firstline a través de herramientas y recursos creados con un objetivo que les permitan hacer su mejor trabajo. |
+| F3 | Conéctese con sus trabajadores de Firstline a través de herramientas y recursos creados con un objetivo que les permitan hacer su mejor trabajo. |
 |||
 
 Si tiene Microsoft 365 E3, también puede obtener estas [ofertas](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -101,7 +101,7 @@ Este póster de una página es una forma rápida de comprender las diversas ruta
 
 Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) para imprimirlo en formato de carta, DIN o cartel (11 x 17 pulgadas).
 
-## <a name="deploy"></a>Implementación
+## <a name="deploy"></a>Implementar
 
 Hay tres formas de implementar los productos, las características y los componentes de Microsoft 365 para empresas:
 
@@ -125,11 +125,11 @@ Para obtener más información sobre la implementación, consulte How:
 
 ## <a name="additional-microsoft-365-solutions"></a>Soluciones adicionales de Microsoft 365
 
-- [Microsoft 365 empresa Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Empresa Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   Reúna las mejores capacidades de productividad y colaboración de Office 365 con soluciones de seguridad y administración de dispositivos para proteger los datos empresariales para pequeñas y medianas empresas (PYMES).
 
-- [Microsoft 365 Educación](https://docs.microsoft.com/education)
+- [Microsoft 365 Educación](https://docs.microsoft.com/education)
  
   Permita a los educadores desbloquear la creatividad, fomentar el trabajo en equipo y proporcionar una experiencia sencilla y segura en una sola solución asequible diseñada para el ámbito educativo.
 
@@ -149,6 +149,6 @@ Para obtener más información sobre la implementación, consulte How:
 
 Si va a realizar la implementación usted mismo, inicie el [viaje de la implementación de Microsoft 365 para empresas](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Página de producto de Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise)
