@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencial del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas. Estas etiquetas pueden aplicar la configuración de protección, que incluye marcadores visuales de cifrado como pies de página y marcas de agua.
-ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: d31faa5dde212060f5e7b3c075cf4bc6fb3bef5f
+ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790657"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43957310"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -77,10 +77,7 @@ Cada elemento de contenido puede tener una única etiqueta de confidencialidad a
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
 > [!NOTE]
-> Además de aplicar etiquetas en mensajes de correo electrónico y documentos en aplicaciones de Office, ahora las etiquetas de confidencialidad también están disponibles en las siguientes versiones de versión preliminar pública:
-> 
-> - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (vista previa)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)
+> Además de aplicar etiquetas de confidencialidad a los mensajes de correo electrónico y documentos, actualmente en versión preliminar, también puede [usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
 
 Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, cualquier configuración de protección de la etiqueta se aplica en el contenido. Con una etiqueta de confidencialidad, puede:
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943249"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952633"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -188,7 +188,7 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange
 > [!NOTE]
-> Las directivas de etiquetado automático se publican gradualmente para los espacios empresariales en versión preliminar pública y están sujetas a cambios.
+> Las directivas de etiquetado automático se encuentran en versión preliminar pública y están sujetas a cambios.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Requisitos previos para las directivas de etiquetado automático
 
@@ -241,7 +241,6 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     ![Pestaña etiquetado automático (versión preliminar)](../media/auto-labeling-tab.png)
     
-    Esta nueva pestaña aún se está implementando para los espacios empresariales. Si no la ve, inténtelo de nuevo en unos días.
 
 3. Seleccione **+ Crear directiva**.
 
