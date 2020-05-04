@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo entregar aplicaciones de Office y de LOB.
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636801"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011644"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Paso 3: Entrega de aplicaciones de Office y de LOB
 
@@ -63,9 +63,9 @@ Otro método popular de entrega de aplicaciones es la creación de imágenes del
 
 Si quiere incluir Aplicaciones de Microsoft 365 para empresas en la imagen, recuerde que se usa una activación basada en el usuario; el administrador del sistema no lo puede activar previamente. Use la herramienta de implementación de Office antes de preinstalar Office en el dispositivo del que se va a crear la imagen y omita el inicio de sesión del usuario. Cuando la imagen esté implementada, los usuarios finales pueden iniciar sesión con sus credenciales y activar Aplicaciones de Microsoft 365 para empresas.
 
-[Creación de una secuencia de tareas para instalar el sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creación de una secuencia de tareas para instalar el sistema operativo](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Implementación de las Aplicaciones de Microsoft 365 para empresas como parte de una imagen de sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Implementación de Aplicaciones de Microsoft 365 como parte de una imagen de sistema operativo](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Hacer clic y ejecutar de Office 
 
@@ -81,11 +81,11 @@ Si usa Configuration Manager, puede seguir usándolo para la implementación gen
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guía de implementación de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guía de implementación de Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Desinstalar versiones de MSI existentes de Office al actualizar a Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Desinstalar versiones de MSI existentes de Office al actualizar a Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Administrar Aplicaciones de Microsoft 365 para empresas con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Administrar Aplicaciones de Microsoft 365 para empresas con Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

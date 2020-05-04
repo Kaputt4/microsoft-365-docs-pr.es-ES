@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Le mostramos las fases simplificadas de la infraestructura básica de Microsoft 365 para empresas para organizaciones que no sean empresas.
-ms.openlocfilehash: cad142f2f26eb999431eb5bb531cb4520e4d6102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e1c747e5f4ab3e58adeaf91518512d8ece83d91b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638265"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011904"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infraestructura básica de Microsoft 365 para empresas para organizaciones que no son empresas
 
@@ -215,7 +215,7 @@ Entre los elementos nuevos y resaltados de Windows 10 Enterprise, se incluyen lo
 
 ## <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Fase 4: Aplicaciones de Microsoft 365 para empresas
 
-Microsoft 365 para empresas incluye Aplicaciones de Microsoft 365 para empresas, la versión de suscripción de Microsoft Office. Aplicaciones de Microsoft 365 para empresas, igual que Office 2016 u Office 2019, está instalado directamente en los dispositivos cliente. Pero Aplicaciones de Microsoft 365 para empresas recibe actualizaciones que incluyen las nuevas características de forma periódica. Para obtener más información, consulte [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Acerca de las Aplicaciones de Microsoft 365 para empresas en entorno empresarial).
+Microsoft 365 para empresas incluye Aplicaciones de Microsoft 365 para empresas, la versión de suscripción de Microsoft Office. Aplicaciones de Microsoft 365 para empresas, igual que Office 2016 u Office 2019, está instalado directamente en los dispositivos cliente. Pero Aplicaciones de Microsoft 365 para empresas recibe actualizaciones que incluyen las nuevas características de forma periódica. Para obtener más información, consulte [Acerca de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 En el caso de una organización no empresarial, instale manualmente Aplicaciones de Microsoft 365 para empresas en los dispositivos, entre los que se pueden incluir dispositivos Windows, iOS y Android. Esto puede hacerse como parte de la preparación para usar un nuevo dispositivo o lo puede realizar el usuario como parte de su proceso de incorporación.
 

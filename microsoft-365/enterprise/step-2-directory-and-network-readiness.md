@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los directorios y redes en el entorno.
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636813"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011656"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Paso 2: Preparación de los directorios y la red
 
@@ -51,7 +51,7 @@ En este artículo veremos las herramientas y opciones para preparar los servicio
 
 Si su organización ya usa Office 365, Exchange Online, Microsoft Intune u otros servicios de Microsoft Online, la buena noticia es que ya usa Azure Active Directory. Si es así, solo tiene que asegurarse de que los usuarios de destino para la implementación de escritorio estén en su Azure Active Directory y que tienen licencias asignadas.
 
-Si actualmente no usa Azure Active Directory, hay [numerosos recursos](https://docs.microsoft.com/azure/active-directory/) para ayudarle a configurarlo. También pueden optar a la asistencia personalizada a través de Microsoft FastTrack, como parte de su licencia. Puede consultar más información acerca de Microsoft FasTrack [aquí](https://fasttrack.microsoft.com).
+Si actualmente no usa Azure Active Directory, hay [numerosos recursos](https://docs.microsoft.com/azure/active-directory/) para ayudarle a configurarlo. También pueden optar a la asistencia personalizada a través de Microsoft FastTrack, como parte de su licencia. Puede consultar más información acerca de Microsoft FastTrack [aquí](https://fasttrack.microsoft.com).
 
 Una vez que tenga Azure Active Directory, los usuarios pueden iniciar sesión y activar sus aplicaciones de Aplicaciones de Microsoft 365 para empresas y usted puede utilizar Microsoft Intune o Windows Autopilot para la implementación automatizada de las aplicaciones y la directiva.
 
@@ -121,7 +121,7 @@ Además de aprovechar la optimización de entrega, hay tres elementos que le ayu
 
 **La compresión binaria de delta** Aplicaciones de Microsoft 365 para empresas utiliza compresión binaria de delta para reducir el ancho de banda consumido por actualizaciones de software al actualizar desde la versión más reciente de Aplicaciones de Microsoft 365 para empresas hasta la siguiente versión. Pero solo al quitar los cambios a nivel binario de la versión anterior, el impacto de las actualizaciones acumulativas se ha minimizado. Esto tiene el potencial de ahorrar cientos de megas de datos por equipo cada mes. Para poder usar esta función, sin embargo, no puede saltarse ninguna versión. Si lo hace, deberá descargar la actualización acumulativa completa.
 
-[Descargar actualizaciones de Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Descargar actualizaciones de Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Archivos de datos de Outlook** Outlook está configurado con frecuencia para almacenar en caché todo el buzón de los usuarios de forma local para su uso sin conexión. En cualquier implementación de Windows, excepto en una actualización local, esto requiere que los archivos de datos de Outlook de los usuario se reconstruyan tras la actualización. Este es un proceso automatizado, pero con los límites de buzón de Outlook que normalmente se establecen en un máximo de 100 GB, volver a almacenar en caché todo el buzón local para todos los usuarios implica una gran cantidad de transferencia de datos. Para reducir la carga de red puede que quiera considerar el uso de directivas de grupo para reducir la configuración "Correo para mantener sin conexión". En Aplicaciones de Microsoft 365 para empresas para empresas u Office 2016 el valor predeterminado de Outlook se establece en 12 meses. Para reducir el impacto en la red considere la posibilidad configurar el almacenamiento en memoria caché para que dure de 1 a 6 meses. Cambiar esta configuración no afecta el tamaño del buzón en línea y se puede buscar todo el buzón a través de Outlook cuando tenga conexión.
 

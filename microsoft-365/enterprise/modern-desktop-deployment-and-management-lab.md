@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631518"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011964"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -104,7 +104,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 ### <a name="windows-and-office-as-a-service"></a>Windows y Office como servicio
   - Administrar actualizaciones de Windows mediante la directiva de grupo
   - Mantenimiento de Windows 10 con Configuration Manager e Intune
-  - Servicio de Office 365 ProPlus con Configuration Manager
+  - Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Configuration Manager
 
 ### <a name="new-windows-virtual-desktop"></a>¡NUEVO! Windows Virtual Desktop
   - Windows Virtual Desktop: preparación, implementación, optimización 
@@ -121,11 +121,11 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de implementación de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guía de implementación de Aplicaciones de Microsoft 365 para empresas</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guía de implementación de Aplicaciones de Microsoft 365</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Introducción a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

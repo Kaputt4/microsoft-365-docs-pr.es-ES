@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introducción al proceso de implementación de escritorio.
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634223"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011880"
 ---
 # <a name="getting-started---desktop-deployment"></a>Introducción: Implementación de escritorio
 
@@ -53,7 +53,7 @@ Uno de los inquilinos clave de prácticas moderna son los dispositivos que siemp
 
 [Windows 10 para el profesional de TI](https://www.microsoft.com/itpro/windows-10)
 
-[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Acerca de las Aplicaciones de Microsoft 365 para empresas en entorno empresarial).
+[Acerca de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>¿Qué ha cambiado?
 
@@ -67,7 +67,7 @@ Comencemos echando un vistazo a lo que ha cambiado y mejorado desde su última i
 
 **Administración de dispositivos en la nube:** los servicios como Microsoft Intune le ayudan a administrar dispositivos de Windows 10 como lo haría con otros dispositivos móviles, todo desde un solo lugar. Lo que hace que Microsoft Intune sea único es la capacidad de administrar los dispositivos de Windows 10 con Microsoft Endpoint Configuration Manager. Puede usar Microsoft Endpoint Configuration Manager para facilitar el cambio a Windows 10 y después agregar Microsoft Intune. Trabajando juntos, Microsoft Endpoint Configuration Manager se convierte en la ventaja inteligente de su organización, conectada a la nube inteligente de Microsoft. Esto le permite administrar los dispositivos de los usuarios de forma segura estén donde estén, ya estén conectados en la infraestructura de su organización o en la nube pública.
 
-[Administración conjunta para dispositivos con Windows 10](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Administración conjunta para dispositivos con Windows 10](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Servicio de implementación basado en la nube:** hemos introducido un nuevo servicio de nube para ayudarle a implementar dispositivos Microsoft 365 a medida que adquiere nuevos equipos, el servicio de implementación Windows Autopilot. Autopilot se integra con los proveedores de hardware y los nuevos equipos se registran automáticamente en Autopilot, lo que permite que el nuevo equipo se envíe directamente a los usuarios finales. Cuando el equipo se encienda por primera vez se configura rápidamente con las opciones deseadas de la organización y se personaliza para las necesidades específicas del usuario.
 
@@ -77,7 +77,7 @@ Comencemos echando un vistazo a lo que ha cambiado y mejorado desde su última i
 
 Hacer clic y ejecutar es bastante diferente de los paquetes basados en MSI del pasado. Hacer clic y ejecutar es más rápido, ligero y es compatible con las actualizaciones en segundo plano para que los usuarios se mantengan productivos. Sigue siendo una copia local de Office y aún puede usar las herramientas de implementación existentes, como Microsoft Endpoint Configuration Manager, para aprovisionar y configurar las aplicaciones.
 
-[Guía de implementación de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guía de implementación de Aplicaciones de Microsoft 365](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Actualizaciones semestrales:** una vez que haya cambiado a Windows 10 y Aplicaciones de Microsoft 365 para empresas, las actualizaciones se entregan de forma semestral con nuevas características. Pero con la capacidad de Microsoft de ofrecer información de la nube para ayudarle, puede implementar rápidamente y con confianza estas actualizaciones a cientos o miles de dispositivos. Como una actualización local, la actualización de características conserva aplicaciones, datos y configuraciones de la versión anterior.
 
@@ -109,14 +109,14 @@ Como en anteriores actualizaciones, la Herramienta de migración de estado de us
 
 **[Paso 6: Implementación del sistema operativo y actualizaciones de características](https://aka.ms/mdd6)** Con todo preparado, el siguiente paso consiste en implementar las imágenes del sistema operativo. Gran parte del trabajo puede realizarse con la infraestructura y las secuencias de tareas de System Center Configuration Manager. La estrategia recomendada consiste en realizar un despliegue por fases, primero con la implementación en un "grupo preferente" de su organización que disponga del mismo conjunto representativo de hardware y aplicaciones. Después, puede usar los datos de esos dispositivos y usuarios para realizar la implementación en más PC.
 
-[Introducción a la implementación de un sistema operativo en Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Introducción a la implementación de un sistema operativo en Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Paso 7: Windows y Office como servicio](https://aka.ms/mdd7) ** Esto representa un gran cambio en la manera de mantener los escritorios de los usuarios. Con el cambio a Windows 10 y Aplicaciones de Microsoft 365 para empresas puede pasar a administrar Windows y Office como un servicio. En lugar de un cambio masivo en tecnología cada pocos años, introducirá continuamente nuevas funciones, experiencias y protecciones para el usuario. Las actualizaciones de características semestrales ofrecen nuevas funciones en el otoño y la primavera de cada año, mientras que las actualizaciones acumulativas mensuales contienen correcciones de errores, de fiabilidad y de seguridad. Aunque puede optar por implementar al cliente de Office 2019, le recomendamos cambiar a Aplicaciones de Microsoft 365 para empresas. Este sigue un plan de servicio similar a Windows por lo que los usuarios también reciben actualizaciones para las aplicaciones de Office de forma regular.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Información general de Office como servicio](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Información general de Office como servicio](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Paso 8: Comunicaciones y aprendizaje de usuario](https://aka.ms/mdd8) ** Este último paso es fundamental para fomentar el uso de las nuevas funcionalidades para mejorar el trabajo en equipo, las comunicaciones, la seguridad y mucho más. Antes de que la implementación se dirija a usuarios ajenos a los círculos de usuarios pioneros, le recomendamos que publique aprendizaje y comunicaciones de usuarios. Esto le ayudará a impulsar cambios deseados en cómo acceden a las nuevas capacidades de Office, Windows u otras aplicaciones y servicios de línea de negocio. Para ayudarle, proporcionamos formación en línea gratuita a través de Microsoft FastTrack. Además, hemos publicado planes de comunicación y escalas de tiempo de muestra gratuitos junto con plantillas de correo electrónico, redes social e intranet para ayudarle con la implementación de Windows 10. Como una organización de Microsoft 365, su organización también puede ser elegible para soporte directo.
 
