@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de Aplicaciones de Microsoft 365 para empresas para Microsoft 365 Enterprise.
-ms.openlocfilehash: fe29b8025a8ccf5babf2c52cd62ebc72860a8a5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5143ef8872a7ebd119e77c6148288828a39e20d9
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631434"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011952"
 ---
 # <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Fase 4: Aplicaciones de Microsoft 365 para empresas
 
@@ -28,7 +28,7 @@ ms.locfileid: "43631434"
 
 *Se aplica a las versiones E3 y E5 de Microsoft 365 Enterprise y Microsoft 365 Educación*
 
-Microsoft 365 Enterprise incluye Aplicaciones de Microsoft 365 para empresas, la versión de suscripción de Office. Al igual que Office 2019, Aplicaciones de Microsoft 365 para empresas incluye todas las aplicaciones de Office, y esas aplicaciones se instalan directamente en los dispositivos del cliente. A diferencia de Office 2019, Aplicaciones de Microsoft 365 para empresas se actualiza regularmente con nuevas características y tiene un modelo de licencia basado en el usuario que permite a los usuarios instalar Office en varios dispositivos. Para obtener más información, consulte [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) (Acerca de las Aplicaciones de Microsoft 365 para empresas en entorno empresarial).
+Microsoft 365 Enterprise incluye Aplicaciones de Microsoft 365 para empresas, la versión de suscripción de Office. Al igual que Office 2019, Aplicaciones de Microsoft 365 para empresas incluye todas las aplicaciones de Office, y esas aplicaciones se instalan directamente en los dispositivos del cliente. A diferencia de Office 2019, Aplicaciones de Microsoft 365 para empresas se actualiza regularmente con nuevas características y tiene un modelo de licencia basado en el usuario que permite a los usuarios instalar Office en varios dispositivos. Para obtener más información, consulte [Acerca de Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 En esta fase, implementará Aplicaciones de Microsoft 365 para empresas en dispositivos cliente como parte de Microsoft 365 Enterprise. Además de esta guía, le recomendamos que use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) para ayudarle con la implementación. 
 
@@ -40,32 +40,32 @@ Si ya tiene Aplicaciones de Microsoft 365 para empresas implementado, consulte 
 
 ## <a name="step-1-assess-your-environment"></a>Paso 1: Evaluar el entorno
 
-Antes de implementar Aplicaciones de Microsoft 365 para empresas, siga las instrucciones de [Evaluar el entorno y los requisitos para implementar Aplicaciones de Microsoft 365 para empresas](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus). Esta evaluación incluye los requisitos del sistema, detalles de los dispositivos cliente (como arquitecturas e idiomas necesarios), requisitos de licencia, capacidad de red y compatibilidad de aplicaciones. Al completar la evaluación, podrá tomar decisiones clave como parte de la planeación de la implementación.
+Antes de implementar Aplicaciones de Microsoft 365 para empresas, siga las instrucciones de [Evaluar el entorno y los requisitos para implementar Aplicaciones de Microsoft 365](https://docs.microsoft.com/DeployOffice/assess-microsoft-365-apps). Esta evaluación incluye los requisitos del sistema, detalles de los dispositivos cliente (como arquitecturas e idiomas necesarios), requisitos de licencia, capacidad de red y compatibilidad de aplicaciones. Al completar la evaluación, podrá tomar decisiones clave como parte de la planeación de la implementación.
 
 ## <a name="step-2-plan-your-deployment"></a>Paso 2: Planear la implementación
 
-Después de evaluar el entorno, siga las instrucciones de [Plan your deployment of Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) (Planear la implementación de Aplicaciones de Microsoft 365 para empresas) para crear un plan de implementación. Este plan incluye las decisiones siguientes: 
+Después de evaluar el entorno, siga las instrucciones de [Planear una implementación de Aplicaciones de Microsoft 365](https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps) para crear un plan de implementación. Este plan incluye las decisiones siguientes: 
 
 - Cómo implementar Office, como qué herramienta usar (por ejemplo, Microsoft Endpoint Configuration Manager o la herramienta de implementación de Office) y desde dónde instalar Office
 - Cómo administrar las actualizaciones de Office.
 - Qué canales de actualización usar (los canales de actualización de Office controlan la frecuencia con la que los usuarios reciben actualizaciones de características para las aplicaciones de Office).
 - Los grupos de implementación y los paquetes de instalación de Office que quiera usar, incluidas qué aplicaciones de Office e idiomas se deben instalar para los usuarios.
 
-El [artículo de planeación](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) incluye los procedimientos recomendados para todas estas opciones, como administrar la implementación, administrar las actualizaciones, definir los paquetes de instalación y crear los grupos de implementación. 
+El [artículo de planeación](https://docs.microsoft.com/DeployOffice/plan-microsoft-365-apps) incluye los procedimientos recomendados para todas estas opciones, como administrar la implementación, administrar las actualizaciones, definir los paquetes de instalación y crear los grupos de implementación. 
 
 ## <a name="step-3-deploy"></a>Paso 3: Implementar
 
 En función de su plan de implementación, elija cómo desea realizar la implementación:
 
-- **[Implementar Aplicaciones de Microsoft 365 para empresas con Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** administre la implementación con Configuration Manager y descargue e implemente Office desde puntos de distribución de la red.
+- **[Implementar Aplicaciones de Microsoft 365 con Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-configuration-manager):** administre la implementación con Configuration Manager y descargue e implemente Office desde puntos de distribución de la red.
 
-- **[Implementar Aplicaciones de Microsoft 365 para empresas con la ODT desde la nube](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** administre la implementación con la ODT e instale Office en dispositivos cliente directamente desde la CDN de Office.
+- **[Implementar Aplicaciones de Microsoft 365 desde la nube](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud):** administre la implementación con la ODT e instale Office en dispositivos cliente directamente desde la CDN de Office.
  
 - **[Autoinstalación de Aplicaciones de Microsoft 365 para empresas desde el portal de Office](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365):** administre la implementación desde el portal de Office y haga que los usuarios instalen Office en los dispositivos cliente directamente desde el portal.
 
 Muchas organizaciones usarán una combinación de estas opciones para distintos usuarios. Por ejemplo, una organización puede usar Configuration Manager para implementar Office en la mayoría de los usuarios, pero habilitar la instalación propia para un pequeño grupo de trabajadores que no se suelen conectar a la red interna. 
 
-Si su organización usa Configuration Manager, le recomendamos actualizar a la rama actual y a la versión actual. Para obtener más información, vea [¿Qué rama de Configuration Manager debo utilizar?](https://docs.microsoft.com/configmgr/core/understand/which-branch-should-i-use)
+Si su organización usa Configuration Manager, le recomendamos actualizar a la rama actual y a la versión actual. Para obtener más información, vea [¿Qué rama de Configuration Manager debo utilizar?](https://docs.microsoft.com/mem/configmgr/core/understand/which-branch-should-i-use)
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
