@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636861"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011668"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -89,7 +89,7 @@ Descubrirá que la mayoría de los controladores, aplicaciones y complementos in
 
 Puede usar Análisis de escritorio para evaluar también los problemas de compatibilidad basados en el explorador, identificar sitios web y aplicaciones web a los que tienen acceso los usuarios que aún usan controles ActiveX, objetos del ayudante del explorador, VBScript u otra tecnología heredada que no es compatible con el explorador de Microsoft Edge. Los usuarios todavía necesitarán usar Internet Explorer 11 para estos sitios que puede agregar a la [lista de sitios del modo de empresa](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility), con el Enterprise Mode Site List Manager.
 
-Además, para facilitar el cambio a Aplicaciones de Microsoft 365 para empresas, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
+Además, para facilitar el cambio a Aplicaciones de Microsoft 365 para empresas, es posible que quiera usar [Readiness Toolkit para Office](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps) a fin de probar la compatibilidad de los complementos y las macros de Microsoft Visual Basic para Aplicaciones (VBA).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ Mientras recorre la lista para corregir los problemas, verá que aumenta el núm
 
 El inventario de software de Configuration Manager es una alternativa a usar soluciones de análisis basadas en la nube para la preparación de aplicaciones y dispositivos. Puede usar cuentas de instalación y explorar equipos específicos para ayudar a clasificar la validación y pruebas de compatibilidad y establecer los paquetes de aplicaciones como compatibles con Windows 10 a través de la configuración del paquete. Aunque esta opción no ofrece la capacidad para comparar la información de compatibilidad conocida con servicios de análisis de Microsoft, puede ser una solución eficaz para un conjunto más pequeño de aplicaciones prioritarias para pruebas manuales. 
 
-Para obtener más información, vea [Introducción al inventario de software en Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
+Para obtener más información, vea [Introducción al inventario de software en Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="app-assure"></a>App Assure

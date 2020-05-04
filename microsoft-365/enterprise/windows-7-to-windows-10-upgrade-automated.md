@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Actualizaciones automatizadas de Windows 7 a Windows 10 para grandes empresas
-ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113486"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011556"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Actualizaciones locales automatizadas de Windows 7 a Windows 10 para grandes empresas
 
@@ -42,7 +42,7 @@ Las actualizaciones locales a Windows 10 son un método confiable para mover un 
 
 De forma predeterminada, el proceso de actualización realiza una copia de seguridad de la instalación anterior de Windows como parte de la actualización, por lo que en caso de que se produzca un error de actualización o en caso de que una aplicación o un dispositivo no funcione correctamente después de la actualización, el equipo puede revertir a Windows 7. De forma predeterminada, los equipos actualizados tienen 10 días para que pueda revertir manualmente a Windows 7, si es necesario.
 
-Las actualizaciones locales se pueden automatizar con herramientas de implementación de sistema operativo, como [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). En este artículo, se resaltan los métodos y las optimizaciones automatizadas, así como los vínculos a recursos relacionados para obtener ayuda adicional.
+Las actualizaciones locales se pueden automatizar con herramientas de implementación de sistema operativo, como [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). En este artículo, se resaltan los métodos y las optimizaciones automatizadas, así como los vínculos a recursos relacionados para obtener ayuda adicional.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Actualizar un número reducido de equipos
 
@@ -80,13 +80,13 @@ Las razones más comunes por las que las actualizaciones no se completan o no se
 
   - Soluciones de código de bajo nivel, como antimalware, VPN o virtualización
 
-Las plantillas de [Secuencia de tareas para actualización](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) están integradas en la rama actual de Microsoft Endpoint Configuration Manager y han estado disponibles para varias versiones. En las versiones más recientes se han producido mejoras tecnológicas considerables para Configuration Manager que hacen que el proceso sea aún más eficaz para determinar la preparación de la compatibilidad de dispositivos y de Office, reducir el tráfico de red y configurar nuevas opciones como la copia de seguridad de OneDrive. Vea este [programa de Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) para obtener más información sobre las actualizaciones más recientes de la implementación de sistema operativo de Configuration Manager.
+Las plantillas de [Secuencia de tareas para actualización](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) están integradas en la rama actual de Microsoft Endpoint Configuration Manager y han estado disponibles para varias versiones. En las versiones más recientes se han producido mejoras tecnológicas considerables para Configuration Manager que hacen que el proceso sea aún más eficaz para determinar la preparación de la compatibilidad de dispositivos y de Office, reducir el tráfico de red y configurar nuevas opciones como la copia de seguridad de OneDrive. Vea este [programa de Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) para obtener más información sobre las actualizaciones más recientes de la implementación de sistema operativo de Configuration Manager.
 
 Si no usa Microsoft Endpoint Configuration Manager, puede usar Microsoft Deployment Toolkit para crear y ejecutar secuencias de tareas de implementación de actualización.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Almacenar en caché previamente actualizaciones de secuencia de tareas
 
-La [opción de almacenar en caché previamente](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) de la secuencia de tareas de implementación de Configuration Manager permite a los clientes descargar contenido de paquetes de actualización del sistema operativo relevante antes de que la secuencia de tareas actualice el mismo. Anteriormente, al iniciar la secuencia de tareas se iniciaba la descarga del contenido del paquete. El contenido almacenado en caché previamente también ofrece la opción de que el cliente solo pueda descargar el paquete de actualización del sistema operativo disponible y descargar el resto del contenido al que se hace referencia en cuanto reciba la implementación.
+La [opción de almacenar en caché previamente](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) de la secuencia de tareas de implementación de Configuration Manager permite a los clientes descargar contenido de paquetes de actualización del sistema operativo relevante antes de que la secuencia de tareas actualice el mismo. Anteriormente, al iniciar la secuencia de tareas se iniciaba la descarga del contenido del paquete. El contenido almacenado en caché previamente también ofrece la opción de que el cliente solo pueda descargar el paquete de actualización del sistema operativo disponible y descargar el resto del contenido al que se hace referencia en cuanto reciba la implementación.
 
 Almacenar en caché previamente secuencias de tareas combinadas con los exámenes de compatibilidad
 

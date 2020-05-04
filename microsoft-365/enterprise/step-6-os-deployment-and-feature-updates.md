@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre las opciones de implementación del sistema operativo y actualizaciones de características.
-ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f372c41b113286d4ecff679f16581200264a9bdd
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636764"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011632"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Paso 6: Implementación del sistema operativo y actualizaciones de características
 
@@ -57,7 +57,7 @@ La imagen capturada tendrá el formato de imagen de Windows, o WIM, como los med
 
 [Creación de una imagen de referencia de Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Creación de una secuencia de tareas para instalar un sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creación de una secuencia de tareas para instalar un sistema operativo](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Tipos de implementación
 
@@ -89,7 +89,7 @@ El escenario de actualización local se puede usar para migrar a Windows 10 desd
 
 [Actualización local de Windows 10 con Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Creación de una secuencia de tareas para actualizar un sistema operativo en Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Implementación por fases
 
@@ -101,7 +101,7 @@ Mientras planea la implementación, tendrá que seleccionar como destino los equ
 
 Con independencia del tipo de implementación elegido, deberá asegurarse de que se automatiza lo máximo posible para la previsibilidad y capacidad de repetición. Microsoft ofrece dos soluciones para automatizar la implementación de sistema operativo mediante secuencias de tareas automatizadas:
 
-  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) proporciona funciones de implementación de sistema operativo integradas para complementar sus funciones de administración de actualizaciones de software y distribución de software. Configuration Manager se usa con frecuencia en organizaciones de todos los tamaños y admite los cuatro tipos de implementación de Windows. Opcionalmente, ConfigMgr se puede integrar con Microsoft Intune para agregar funciones adicionales para la implementación y administración de dispositivos.
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)** (ConfigMgr) proporciona funciones de implementación de sistema operativo integradas para complementar sus funciones de administración de actualizaciones de software y distribución de software. Configuration Manager se usa con frecuencia en organizaciones de todos los tamaños y admite los cuatro tipos de implementación de Windows. Opcionalmente, ConfigMgr se puede integrar con Microsoft Intune para agregar funciones adicionales para la implementación y administración de dispositivos.
 
   - Otra opción de implementación conocida y gratuita es **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT), que normalmente se usa en organizaciones de pequeño y mediano tamaño para la implementación de sistema operativo. Apenas requiere infraestructura. MDT se integra con Servicios de implementación de Windows (WDS) para el arranque de red. Admite los cuatro tipos de implementación, así como la instalación de aplicaciones, controladores y configuración. Y por supuesto, incluso se pueden integrar con Configuration Manager.
 

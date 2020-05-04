@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625259"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011892"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -40,7 +40,7 @@ Basándose en sus requisitos, Contoso optó por implementar Windows 10 Enterpris
 - Implementación inteligente de paquetes de idioma, incluida la implementación automática del mismo idioma del sistema operativo.
 - Método fácil de usar y totalmente compatible para quitar las versiones existentes de Office de un cliente durante la implementación.
 
-Además de Configuration Manager, Contoso usa [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), una herramienta gratuita de Microsoft para evaluar los problemas de compatibilidad con los complementos y macros de Office.
+Además de Configuration Manager, Contoso usa [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), una herramienta gratuita de Microsoft para evaluar los problemas de compatibilidad con los complementos y macros de Office.
 
 ## <a name="managing-the-deployment-and-updates"></a>Administración de la implementación y las actualizaciones
 
@@ -51,7 +51,7 @@ Aplicaciones de Microsoft 365 para empresas tiene un nuevo modelo de versiones: 
 
 En lugar de administrar las actualizaciones de Office con Configuration Manager, Contoso habilitó actualizaciones automáticas desde la nube. Las actualizaciones basadas en la nube redujeron la sobrecarga administrativa además de garantizar que los dispositivos permanecían actualizados. 
 
-Contoso siguió el mismo enfoque de dos fases de implementación de Office para las actualizaciones de características: los dispositivos del grupo piloto recibieron las actualizaciones de características cuatro meses antes que el resto de los dispositivos de la organización (el grupo general). Para habilitar esta opción en Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)recomendados: 
+Contoso siguió el mismo enfoque de dos fases de implementación de Office para las actualizaciones de características: los dispositivos del grupo piloto recibieron las actualizaciones de características cuatro meses antes que el resto de los dispositivos de la organización (el grupo general). Para habilitar esta opción en Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-update-channels)recomendados: 
 
 - Canal semianual (dirigido) para las actualizaciones del grupo piloto 
 - Canal semianual para las actualizaciones del grupo general 
