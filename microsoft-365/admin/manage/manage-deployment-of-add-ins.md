@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628165"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011716"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el centro de administración de Microsoft 365
 
@@ -211,8 +211,8 @@ Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguient
 |||
 |:-----|:-----|
 |**Plataforma** <br/> |**Número de compilación** <br/> |
-|Office 2016 ProPlus mensualmente para Windows  <br/> |9001,2138   <br/> |
-|Office 2016 ProPlus semestral  <br/> |8431,2159  <br/> |
+|Microsoft 365 apps for Enterprise (canal mensual)  <br/> |9001,2138   <br/> |
+|Microsoft 365 apps for Enterprise (canal semianual)  <br/> |8431,2159  <br/> |
 |Office 2016 para Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 para Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 para Mac  <br/> |16.11.18020200  <br/> |

@@ -20,12 +20,12 @@ search.appverid:
 description: 'Centro de administración de Microsoft 365: Obtenga información sobre las características que se agregaron este mes.'
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952656"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011332"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -289,7 +289,7 @@ Ha habido una actualización a otro de nuestros asistentes de instalación inici
 
 Tenemos algunas actualizaciones de facturación y suscripciones este mes:
 
-- Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias de **Office 365 ProPlus para educación (dispositivo)** a los dispositivos del centro de administración de Microsoft 365. **Office 365 ProPlus for Education (dispositivo)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación** > de**productos & servicios** para buscar y adquirir la licencia.
+- Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias **de aplicaciones para el ámbito educativo (dispositivo) de 365 de Microsoft** a los dispositivos del centro de administración de Microsoft 365. **Microsoft 365 apps for Education (Device)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación** > de**productos & servicios** para buscar y adquirir la licencia.
 - Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los**usuarios activos** de **los usuarios** > al nuevo estilo. Para obtener más información, vea:
   - [Asignar licencias a usuarios](manage/assign-licenses-to-users.md)
   - [Cancelar asignación a licencias de usuarios](manage/remove-licenses-from-users.md)

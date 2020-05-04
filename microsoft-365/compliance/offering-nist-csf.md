@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b380604e908d91feacefe6b54ed3d3f08dcea0fa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49eb9ae31ab913be30b2b96735f15ae57e85a10f
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637802"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011237"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
@@ -88,7 +88,7 @@ De acuerdo con el [Departamento de Homeland Security](https://www.dhs.gov/critic
 
 **¿Cuáles son los servicios de ámbito de Office 365?**
 
-La certificación in-Scope de NIST CSF es archivado de Exchange Online, Exchange Online Protection, Exchange Online, Skype empresarial, centro de administración, SharePoint Online, Project online, OneDrive para la empresa, Office Online, myanalytics, Microsoft Teams, Office ProPlus en la nube multiinquilino de Office 365 y Office 365 GCC.
+La certificación in Scope of NIST CSF es archivado de Exchange Online, Exchange Online Protection, Exchange Online, Skype empresarial, centro de administración, SharePoint Online, Project online, OneDrive para la empresa, Office Online, myanalytics, Microsoft Teams, Microsoft 365 apps for Enterprise in Office 365 en la nube de varios inquilino y Office 365 GCC.
 
 > [!NOTE]
 > Microsoft 365 apps for Enterprise permite el acceso a varios servicios en la nube, como la configuración de itinerancia, la concesión de licencias y el almacenamiento en la nube de clientes de OneDrive, y puede habilitar el acceso a servicios en la nube adicionales en el futuro. La configuración y las licencias de itinerancia admiten los estándares para HITRUST. El almacenamiento en la nube de clientes de OneDrive no, y otros servicios en la nube a los que se puede tener acceso a través de las aplicaciones de Microsoft 365 para empresas y que Microsoft pueda ofrecer en el futuro, también pueden no ser compatibles con estos estándares.
@@ -108,8 +108,8 @@ Microsoft proporciona las ofertas más completas en comparación con otros prove
 - [Marco para mejorar la infraestructura crítica Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [Solicitud Ejecutiva Presidencia sobre el fortalecimiento del Cybersecurity de las redes federales y la infraestructura crítica](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
 

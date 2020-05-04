@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Obtenga información sobre cómo actualizar a los usuarios al último cliente de Office.
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627539"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011282"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Actualizar los usuarios de Microsoft 365 para empresas al último cliente de Office
 
@@ -124,4 +124,4 @@ Si aún no lo ha hecho, asigne licencias a cualquier usuario de su organización
 Una vez que haya comprobado que todos los usuarios que desea actualizar tienen licencias, el último paso consiste en hacer que instalen Office, vea [Descargar e instalar o volver a instalar Office en su PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
   
 > [!TIP]
-> Si no desea que los usuarios instalen Office ellos mismos, consulte [administrar la configuración de descarga de software en office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Puede usar la [herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para descargar el software de Office en la red local y, a continuación, implementar Office con el método de implementación de software que suela usar.
+> Si no desea que los usuarios instalen Office ellos mismos, consulte [administrar la configuración de descarga de software en office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Puede usar la [herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) para descargar el software de Office en la red local y, a continuación, implementar Office con el método de implementación de software que suela usar.

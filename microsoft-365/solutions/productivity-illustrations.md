@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003458"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011856"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -124,12 +124,12 @@ Para obtener más información, consulte el artículo de este póster: [Solucion
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Implementación de un escritorio seguro y moderno con Microsoft
 
-Todo lo que los arquitectos de TI necesitan saber para implementar y administrar las actualizaciones de Office 365 ProPlus en Windows 10.
+Lo que los arquitectos de TI necesitan saber sobre la implementación y la administración de las actualizaciones de las aplicaciones de Microsoft 365 para empresas (anteriormente denominado Office 365 ProPlus) en Windows 10.
   
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[![Miniatura del modelo Implementación de un escritorio seguro y moderno con Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Actualizado en septiembre de 2017 | Este modelo contiene lo siguiente: <ul><li>  Implementación de Windows 10 y Office ProPlus desde Microsoft Cloud </li><li>  Implementación de Windows 10 y Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Administración de las actualizaciones de Windows 10 y Office ProPlus desde Microsoft Cloud </li><li>  Administración de las actualizaciones de Windows 10 y Office ProPlus con Microsoft Endpoint Configuration Manager </li><li>  Funciones de protección prediseñadas y adicionales para Windows 10 </li></ul><br/> |
+|[![Miniatura del modelo Implementación de un escritorio seguro y moderno con Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Actualizado en septiembre de 2017 | Este modelo contiene lo siguiente: <ul><li>  Implementación de aplicaciones de Windows 10 y Microsoft 365 para empresas desde la nube de Microsoft </li><li>  Implementación de aplicaciones de Windows 10 y Microsoft 365 para empresas con el administrador de configuración de Microsoft Endpoint </li><li>  Administración de actualizaciones para aplicaciones de Windows 10 y Microsoft 365 para empresas desde la nube de Microsoft </li><li>  Administración de actualizaciones para aplicaciones de Windows 10 y Microsoft 365 para empresas con el administrador de configuración de Microsoft Endpoint </li><li>  Funciones de protección prediseñadas y adicionales para Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Vea también
 

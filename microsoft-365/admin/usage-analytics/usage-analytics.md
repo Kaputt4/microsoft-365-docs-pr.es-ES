@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando los servicios de Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 783b2c599a5f3a31446855450029859e6dfd9f65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626939"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011764"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 ---
@@ -71,7 +71,7 @@ El informe de información general de Microsoft 365 contiene los siguientes info
 
 La página de activación y licencia ofrece informes sobre la activación de Microsoft 365; es decir, cuántos usuarios han descargado y activado las aplicaciones de Office y cuántas licencias han sido asignadas por la organización. El valor del mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
 
-- Plan de servicio de seguimiento de **activación** &ndash; (por ejemplo, las activaciones de Microsoft 365 ProPlus, Project y Visio) en su organización. Todos los usuarios con una licencia de Office pueden instalar los productos en un máximo de cinco dispositivos. También puede usar los informes de esta sección para ver los dispositivos en los que los usuarios tienen aplicaciones de Office instaladas. Tenga en cuenta que para activar un plan, un usuario debe instalar la aplicación e iniciar sesión con su cuenta.
+- Plan de servicio de seguimiento de **activación** &ndash; (por ejemplo, las activaciones de Microsoft 365 apps for Enterprise, Project y Visio) en su organización. Todos los usuarios con una licencia de Office pueden instalar los productos en un máximo de cinco dispositivos. También puede usar los informes de esta sección para ver los dispositivos en los que los usuarios tienen aplicaciones de Office instaladas. Tenga en cuenta que para activar un plan, un usuario debe instalar la aplicación e iniciar sesión con su cuenta.
 
 - **Licencia** &ndash; este informe contiene una introducción a los tipos de licencia, el número de usuarios a los que se asignó cada tipo de licencia y la distribución de asignación de licencias para cada mes. El valor del mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
 

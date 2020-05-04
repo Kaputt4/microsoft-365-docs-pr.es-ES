@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decida qué características y qué contenido de novedades se muestran o se ocultan a los usuarios finales en la oficina What's New Management for Office Desktop apps.
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131981"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011704"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrar u ocultar nuevas características con la nueva administración
 
@@ -62,7 +62,7 @@ Las nuevas características aparecen en Office, la nueva administración basada 
 |**Semestral (dirigido)** <br/> |1 de septiembre y 1 de marzo <br/> | 2 semanas antes de la versión principal que aporta nuevas características
 |**Semestral** <br/> |1 de enero y 1 de julio <br/> | 2 semanas antes de la versión principal que aporta nuevas características<br/> |
 
-Para obtener más información acerca de las programaciones de actualizaciones de canal, consulte [historial de actualizaciones de Office 365 ProPlus (ordenado por fecha)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Para obtener más información acerca de las programaciones de actualizaciones de canal, consulte [historial de actualizaciones de las aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

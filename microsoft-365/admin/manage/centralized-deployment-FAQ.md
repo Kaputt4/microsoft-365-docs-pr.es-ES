@@ -1,5 +1,5 @@
 ---
-title: Preguntas más frecuentes sobre la implementación centralizada
+title: Preguntas frecuentes sobre implementación centralizada
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209669"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011740"
 ---
-# <a name="centralized-deployment-faq"></a>Preguntas más frecuentes sobre la implementación centralizada
+# <a name="centralized-deployment-faq"></a>Preguntas frecuentes sobre implementación centralizada
 
 La implementación centralizada es la forma recomendada para que un administrador de Office 365 implemente complementos de Office (Word, Excel, PowerPoint y Outlook) para usuarios y grupos de una organización, siempre que la organización cumpla todos los requisitos para usar la implementación centralizada, tal como se describe en este artículo.   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>¿Cómo sé si mi organización está configurada para la implementación centralizada?  
 
-La implementación centralizada de complementos requiere que los usuarios usen Office 365 ProPlus (y que hayan iniciado sesión en Office con sus credenciales de inicio de sesión en la organización) y tengan buzones de Exchange Online. El directorio de suscripción debe estar o estar federado a Azure Active Directory.  
+La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con sus credenciales de inicio de sesión en la organización) y tengan buzones de Exchange Online. El directorio de suscripción debe estar o estar federado a Azure Active Directory.  
  
 La implementación centralizada solo se admite para los buzones de correo en línea. No admite la implementación en buzones de Exchange locales.
  

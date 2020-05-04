@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636225"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011916"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -53,7 +53,7 @@ Los administradores de TI se benefician de estas características:
 El escritorio administrado de Microsoft asume la carga de administrar los dispositivos registrados y el software de Microsoft que usan.
 
 - **Hardware:** En lugar de que el Departamento de ti tenga que investigar y probar dispositivos (y sus controladores), los dispositivos específicos se prueban minuciosamente en el escritorio administrado por Microsoft, lo que da como resultado una [lista creados de dispositivos](../service-description/device-list.md) que cumplen los requisitos de rendimiento de nivel de empresa y tienen garantizado que funcionan con el servicio. Puede obtener los dispositivos usted mismo (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista aprobada. El registro de los dispositivos es fácil y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) algunos aspectos de la experiencia del dispositivo para los usuarios finales.
-- **Actualizaciones:** Microsoft Managed Desktop configura y administra todos los aspectos de los [grupos de implementación](../service-description/updates.md) para las actualizaciones de calidad y características de Windows 10, los controladores, el firmware, las definiciones de antivirus y las actualizaciones de Office ProPlus. Esto incluye pruebas exhaustivas y comprobación de todas las actualizaciones, lo que asegura que los dispositivos registrados estén siempre actualizados y minimizando las interrupciones, liberando a su Departamento de TI de la tarea en curso.
+- **Actualizaciones:** Microsoft Managed Desktop configura y administra todos los aspectos de los [grupos de implementación](../service-description/updates.md) para las actualizaciones de calidad y características de Windows 10, los controladores, el firmware, las definiciones de antivirus y las aplicaciones de Microsoft 365 para actualizaciones empresariales. Esto incluye pruebas exhaustivas y comprobación de todas las actualizaciones, lo que asegura que los dispositivos registrados estén siempre actualizados y minimizando las interrupciones, liberando a su Departamento de TI de la tarea en curso.
 - **Aplicaciones:** Como parte de Microsoft 365 Enterprise, Microsoft proporciona (y administra) varias aplicaciones clave de Microsoft. Pero probablemente también tiene otras aplicaciones que necesita para su empresa. En lugar de que el Departamento de ti tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le ayuda a implementarlos y puede ayudarle con la [aplicación de escritorio](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) , si es necesario. Para obtener más información, vea [aplicaciones en escritorio administrado de Microsoft](../get-ready/apps.md).
 
 

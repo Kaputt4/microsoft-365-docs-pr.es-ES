@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997519"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011868"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -36,7 +36,7 @@ La Protección contra amenazas de Microsoft unifica el proceso de respuesta a in
 Para obtener la mejor protección y optimizar la protección contra amenazas de Microsoft, se recomienda implementar todos los servicios admitidos aplicables en la red. Para obtener más información, [Consulte acerca de la implementación de servicios compatibles](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Comprobar la elegibilidad de la licencia y los permisos necesarios
-Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o a5 o una combinación válida de licencias proporciona acceso a los servicios admitidos y le da derecho a usar la protección contra amenazas de Microsoft en el centro de seguridad de Microsoft 365.
+Una licencia de seguridad de Microsoft 365 E5, E5 Security, A5 o a5 o una combinación válida de licencias proporciona acceso a los servicios admitidos y le da derecho a usar Microsoft Threat Protection en el centro de seguridad de Microsoft 365 sin costo adicional de licencias.
 
 Para obtener información detallada sobre la licencia, [Lea los requisitos de licencia](prerequisites.md#licensing-requirements).
 
@@ -44,22 +44,28 @@ Para obtener información detallada sobre la licencia, [Lea los requisitos de li
 Debe ser **administrador global** o **Administrador de seguridad** en Azure Active Directory para activar la protección contra amenazas de Microsoft. [Ver sus roles en Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>Empiece a usar el servicio
-Microsoft Threat Protection agrega datos de los diversos servicios integrados. Procesará y almacenará datos de forma centralizada para identificar nuevos conocimientos y hacer que los flujos de trabajo de respuesta centralizados sean posibles.
+
+>[!IMPORTANT]
+>A partir del 3 de mayo de 2020, Microsoft implementará gradualmente nuevas y optimizadas experiencias sobre [los requisitos de licencias](prerequisites.md#licensing-requirements) y la activación de la protección contra amenazas de Microsoft. Durante varias semanas durante este período, algunos clientes empezarán a ver los cambios en sus experiencias de portal. La información sobre las nuevas experiencias se marca como **nueva experiencia** en este artículo.
+
+Microsoft Threat Protection agrega datos de los diversos servicios integrados. Procesará y almacenará datos de forma centralizada para identificar nuevos conocimientos y hacer que los flujos de trabajo de respuesta centralizados sean posibles. Lo hace sin afectar a las implementaciones, la configuración o los datos existentes asociados con los servicios integrados.
 
 Antes de activar el servicio, el centro de seguridad de Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) muestra la página de bienvenida de Microsoft Threat Protection al seleccionar **incidentes**, **centro de actividades**o **caza** en el panel de navegación. Estas opciones de navegación no se muestran si no es elegible para usar la protección contra amenazas de Microsoft.
 
 ![Imagen de la página de bienvenida de Microsoft Threat Protection que se muestra si no se ha activado](../../media/mtp-welcome.png)
 la protección contra amenazas de Microsoft en la*Página de bienvenida de Microsoft Threat Protection en el centro de seguridad de Microsoft 365*
 
-Para activar la protección contra amenazas de Microsoft, simplemente complete el proceso desde la página de bienvenida. También puede activar Microsoft Threat Protection accediendo a la **configuración** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y seleccionando **Microsoft Threat Protection**. Haga clic en **Guardar **.
+Para activar la protección contra amenazas de Microsoft, simplemente complete el proceso desde la página de bienvenida. También puede activar Microsoft Threat Protection accediendo a la **configuración** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) en el panel de navegación y seleccionando **Microsoft Threat Protection**.
 
 >[!NOTE]
->Si no ve la **configuración** en el panel de navegación o no pudo obtener acceso a la página, compruebe los permisos y las licencias.
+>Si no ve la **configuración** en el panel de navegación o no pudo obtener acceso a la página, compruebe los permisos y las licencias.       
 
 ### <a name="select-data-center-location"></a>Seleccionar la ubicación del centro de datos
 Si su organización dispone de ATP de Microsoft Defender, los datos se almacenarán y procesarán en la misma ubicación del centro de datos que seleccionara para [sus datos de ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene ATP de Microsoft defender, se le pedirá que elija una nueva ubicación del centro de datos específicamente para la Protección contra amenazas de Microsoft. 
-
+ 
 Debe proporcionar el consentimiento antes de que los datos se compartan entre los servicios y se agreguen.
+
+**Nueva experiencia:** A partir del 3 de mayo de 2020, los clientes recibirán gradualmente los cambios de esta experiencia. Para los usuarios con la nueva experiencia, el servicio selecciona automáticamente la ubicación óptima del centro de datos para los datos agregados en función de los servicios de seguridad de Microsoft 365 existentes. La ubicación del centro de datos seleccionada se muestra en la pantalla.
 
 ### <a name="confirm-that-the-service-is-on"></a>Confirme que el servicio está activado
 Una vez que recibe el servicio, este agrega:

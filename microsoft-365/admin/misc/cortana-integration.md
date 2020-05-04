@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'Obtenga información sobre cómo usar Cortana, cuando se integra con Office 365. Puede desactivar Cortana en el centro de administración para restringir el acceso a los datos de la organización. '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907218"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011692"
 ---
 # <a name="cortana-in-office-365"></a>Cortana en Office 365
 
@@ -54,7 +54,7 @@ Al igual que otros servicios de Microsoft 365 y Office 365, Cortana en Office 36
 
 En la tabla siguiente se describe el control de datos para Cortana en Office 365.
 
-|**Nombre**|**Descripción**|
+|**Name**|**Descripción**|
 |:-----|:-----|
 |**Almacenamiento**  <br/> |Los datos de los clientes se almacenan en servidores Microsoft dentro de la nube de Office 365. Los datos forman parte de su espacio empresarial. <br/> El audio de voz no se conserva.  <br/> |
 |**Permanece en geográfico**  <br/> |Los datos de los clientes se almacenan en servidores Microsoft dentro de la nube de Office 365 en geoárea geográfica. Los datos forman parte de su espacio empresarial.  <br/> |
@@ -106,7 +106,7 @@ Estas son las dos maneras de considerar cómo funciona Cortana en su empresa:
 
 3. Por ejemplo, el servicio mis correos es un servicio de Cortana al que los usuarios pueden conectarse a través de Outlook para iOS y usa Cortana en Office 365.
 
-4. Los administradores siempre tendrán controles para experiencias opcionales conectadas a Cortana, similares a las experiencias conectadas opcionales mientras usan aplicaciones de Office ProPlus.
+4. Los administradores siempre tendrán controles para experiencias opcionales conectadas a Cortana, similares a las experiencias conectadas opcionales al usar las aplicaciones de Microsoft 365 apps for Enterprise.
 
 **Servicios existentes para consumidores**: los servicios conectados opcionales de Cortana están diseñados principalmente para experiencias de los consumidores y actualmente se proporcionan en Windows 10 (versión 1909 y anteriores) y la aplicación Cortana en iOS y Android.
 
