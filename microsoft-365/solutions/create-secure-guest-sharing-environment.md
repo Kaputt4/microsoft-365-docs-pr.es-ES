@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-security-compliance
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Aprenda a crear un entorno de uso compartido para invitados seguro en Microsoft 365.
-ms.openlocfilehash: 63a636ccf65b5439d5e83cf5fbe64e5db2ce40b5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 73d3e2a9a55ead5447d2c6d640123ee3befd8373
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604868"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44003752"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -30,7 +34,7 @@ Este ejemplo incluye:
 - Configurar una directiva de tiempo de espera de la sesión para garantizar la autenticación de los invitados diariamente.
 - Crear y publicar etiquetas de confidencialidad para clasificar el contenido.
 - Creación de un tipo de información confidencial para un proyecto altamente confidencial.
-- Asignación automática de una etiqueta * altamente confidencial* a los documentos que contienen el tipo de información confidencial.
+- Asignación automática de una etiqueta *altamente confidencial* a los documentos que contienen el tipo de información confidencial.
 - Retirar automáticamente el acceso de invitado a los archivos etiquetados como *altamente confidencial*.
 
 Algunas de las opciones analizadas en este artículo requieren que los invitados tengan una cuenta de Azure Active Directory. Para asegurarse de que los invitados estén en el directorio cuando comparta archivos y carpetas con ellos, use la [Integración de SharePoint y OneDrive con la vista previa de Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
@@ -188,8 +192,8 @@ Las etiquetas de confidencialidad pueden clasificar y proteger la información d
 En primer lugar, vamos a crear tres etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft 365:
 
 - General
-- Confidencial
-- Extremadamente confidencial
+- confidencial
+- Altamente confidencial
 
 Use el siguiente procedimiento para crear las etiquetas *General* y *Confidencial*.
 
@@ -197,7 +201,7 @@ Cómo crear una etiqueta de clasificación (General y Confidencial)
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Etiquetas de confidencialidad**.
 2. Haga clic en **Crear una etiqueta**.
 3. En **Nombre de etiqueta**, escriba *General* o *Confidencial*.
-4. En **Información sobre herramientas**, escriba *Información general que pueda compartir con empleados, invitados y asociados* o *Información confidencial. Compartir solo con empleados e invitados autorizados*. A continuación, haga clic en **Siguiente**.
+4. En **Información sobre herramientas**, escriba *Información general que se puede compartir con empleados, invitados y asociados* o *Información confidencial. Compartir solo con empleados e invitados autorizados*. A continuación, haga clic en **Siguiente**.
 5. En cifrado, marque **Desactivado** y haga clic en **Siguiente**.
 6. En Distintivo de contenido, marque **Desactivado** y haga clic en **Siguiente**.
 7. En Prevención de pérdida de datos en punto de conexión, marque **Desactivado** y haga clic en **Siguiente**.
@@ -206,16 +210,16 @@ Cómo crear una etiqueta de clasificación (General y Confidencial)
 
 Con la etiqueta *Altamente confidencial*, agregaremos una marca de agua automática en los documentos que etiquetemos.
 
-Cómo crear una etiqueta de clasificación (Extremadamente confidencial)
+Para crear una etiqueta de clasificación (Altamente confidencial)
 1. Haga clic en **Crear una etiqueta**.
-2. En **Nombre de etiqueta**, escriba *Extremadamente Confidencial*.
-3. En **Información sobre herramientas**, escriba *Información extremadamente confidencial. No compartir con invitados*. Luego, haga clic en **Siguiente**.
+2. En **Nombre de etiqueta**, escriba *Altamente confidencial*.
+3. En **Información sobre herramientas**, escriba *Información altamente confidencial. No compartir con invitados*. Luego, haga clic en **Siguiente**.
 4. En cifrado, marque **Desactivado** y haga clic en **Siguiente**.
 5. En Distintivo de contenido, seleccione **Activado**, marque la casilla **Agregar un encabezado** y, a continuación, haga clic en **Personalizar texto**.
-6. Escriba *Extremadamente confidencial* en el texto del encabezado y haga clic en **Guardar**.
+6. Escriba *Altamente confidencial* en el texto del encabezado y haga clic en **Guardar**.
 7. En la página **Distintivo de contenido**, seleccione **Activado**.
 8. Active la casilla de verificación **Agregar una marca de agua** y, después, haga clic en **Personalizar texto**.
-9. En **Texto de marca de agua**, escriba *Extremadamente confidencial*.
+9. En **Texto de marca de agua**, escriba *Altamente confidencial*.
 10. Escriba *24* en **Tamaño de fuente**, y haga clic en **Guardar**.
 11. En **Distintivo de contenido**, haga clic en **Siguiente**.
 12. En Prevención de pérdida de datos en punto de conexión, marque **Desactivado** y haga clic en **Siguiente**.
@@ -237,16 +241,16 @@ Publicar etiquetas
 8. En la página **Configuración de directiva**, escriba *Confidencialidad de documento* como nombre y haga clic en **Siguiente**.
 9. Haga clic en **Publicar**.
 
-Cuando publique las etiquetas, estarán disponibles para los usuarios de las aplicaciones de escritorio de Office. Cuando los usuarios apliquen la etiqueta **Extremadamente confidencial**, se agregará automáticamente una marca de agua al documento.
+Cuando publique las etiquetas, estarán disponibles para los usuarios de las aplicaciones de escritorio de Office. Cuando los usuarios apliquen la etiqueta **Altamente confidencial**, se agregará automáticamente una marca de agua al documento.
 
 ### <a name="more-information"></a>Más información
 [Información general de etiquetas de confidencialidad](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="create-a-sensitive-information-type-for-a-highly-confidential-project"></a>Creación de un tipo de información confidencial para un proyecto altamente confidencial.
+## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Crear un tipo de información confidencial para un proyecto altamente confidencial.
 
 Los tipos de información confidencial son cadenas predefinidas que se pueden usar en flujos de trabajo de directiva para aplicar requisitos de cumplimiento. El Centro de cumplimiento de Microsoft 365 incluye más de 100 tipos de información confidencial, como números de licencia de conducir, números de tarjeta de crédito, números de cuentas bancarias, etc.
 
-Puede crear tipos de información confidencial personalizados para ayudar a administrar el contenido específico de su organización. En este ejemplo, vamos a crear un tipo de información confidencial personalizado para un proyecto extremadamente confidencial. Podemos usar este tipo de información confidencial para aplicar automáticamente una etiqueta de clasificación.
+Puede crear tipos de información confidencial personalizados para ayudar a administrar el contenido específico de su organización. En este ejemplo, vamos a crear un tipo de información confidencial personalizado para un proyecto altamente confidencial. Podemos usar este tipo de información confidencial para aplicar automáticamente una etiqueta de clasificación.
 
 Cómo crear un tipo de información confidencial
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Tipos de información confidencialidad**.
@@ -262,7 +266,7 @@ Cómo crear un tipo de información confidencial
 
 ## <a name="create-a-policy-to-assign-a-label-based-on-a-sensitive-information-type"></a>Crear una directiva para asignar una etiqueta basada en un tipo de información confidencial
 
-Una vez que tenemos el tipo de información confidencial, podemos crear una directiva de archivo en la aplicación Microsoft Cloud App Security para aplicar la etiqueta *Extremadamente confidencial* automáticamente a los documentos que contengan la cadena *Proyecto Saturno*.
+Una vez que tenemos el tipo de información confidencial, podemos crear una directiva de archivo en la aplicación Microsoft Cloud App Security para aplicar la etiqueta *Altamente confidencial* automáticamente a los documentos que contengan la cadena *Proyecto Saturno*.
 
 > [!NOTE]
 > Las etiquetas de confidencialidad están disponibles en Cloud App Security gracias a un proceso de replicación. Es posible que no vea inmediatamente la etiqueta disponible para una directiva.
@@ -279,17 +283,17 @@ Cómo crear un tipo de información confidencial basado en una directiva
 10. Busque la etiqueta de confidencialidad *Proyecto Saturno* y, a continuación, haga clic en **Listo**.</br>
    ![Captura de pantalla de las opciones de inspección de seguridad de Cloud App Security](../media/mcas-sensitive-info-type-project-saturn.png)
 11. En **Gobierno**, expanda **Microsoft SharePoint Online**.
-12. Active la casilla de verificación **Aplicar etiqueta de clasificación** y seleccione la etiqueta **Extremadamente confidencial**.
+12. Active la casilla de verificación **Aplicar etiqueta de clasificación** y seleccione la etiqueta **Altamente confidencial**.
 13. Haga clic en **Crear**.
 
-Con la directiva en vigor, cuando un usuario escriba «Proyecto Saturno» en un documento, Cloud App Security aplicará automáticamente la etiqueta *Extremadamente confidencial* al analizar el archivo.
+Con la directiva en vigor, cuando un usuario escriba "Proyecto Saturno" en un documento, Cloud App Security aplicará automáticamente la etiqueta *Altamente confidencial* al analizar el archivo.
 
 ### <a name="more-information"></a>Más información
 [Directivas de archivo](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## <a name="create-a-policy-to-remove-guest-access-to-highly-confidential-files"></a>Crear una directiva para retirar el acceso de un invitado a archivos extremadamente confidenciales
+## <a name="create-a-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Crear una directiva para retirar el acceso de un invitado a archivos altamente confidenciales
 
-En el ejemplo de este artículo, los archivos con la etiqueta *Extremadamente confidencial* no deben compartirse con los invitados. Podemos crear una directiva de archivo en Cloud App Security que elimine automáticamente el acceso de los invitados a los archivos que tengan esa etiqueta.
+En el ejemplo de este artículo, los archivos con la etiqueta *Altamente confidencial* no deben compartirse con los invitados. Podemos crear una directiva de archivo en Cloud App Security que elimine automáticamente el acceso de los invitados a los archivos que tengan esa etiqueta.
 
 Tenga en cuenta que esto no impide que los usuarios puedan compartir o volver a compartir estos archivos. Sigue necesitando que sus usuarios sigan sus directivas de gobierno para los archivos que se almacenan en sitios que permitan compartir con invitados. Lo que sí hace esta herramienta es eliminar el acceso de los invitados a archivos con información confidencial después de que se hayan compartido con invitados.
 
@@ -302,20 +306,20 @@ Cómo crear una directiva de archivo basada en etiquetas
 6. En la lista **Seleccionar un filtro**, elija **Aplicación** y seleccione **Microsoft SharePoint Online** de la lista**Seleccionar aplicaciones...**.
 7. Haga clic en **Agregar un filtro**.
 8. En la lista **Seleccionar un filtro**, elija **Etiqueta de clasificación**, y seleccione **Azure Information Protection** de la lista **Seleccionar filtro...**.
-9. En la lista **Seleccionar etiqueta de clasificación**, seleccione **Extremadamente confidencial**.</br>
+9. En la lista **Seleccionar etiqueta de clasificación**, seleccione **Altamente confidencial**.</br>
    ![Captura de pantalla de la configuración del filtro de directiva de Cloud App Security](../media/mcas-sharepoint-confidential-label-filter.png)
 10. En **Gobierno**, expanda **Microsoft SharePoint Online**.
 11. Seleccione las casillas de verificación **Enviar un resumen de directivas coincidentes al propietario del archivo** y **Quitar usuarios externos**.
-12. Para el mensaje de notificación personalizado, escriba *Este archivo es extremadamente confidencial. La Directiva de la empresa prohíbe compartirla con sus invitados*.
+12. Para el mensaje de notificación personalizado, escriba *Este archivo es altamente confidencial. La directiva de la empresa prohíbe compartirla con sus invitados*.
 13. Haga clic en **Crear**.
 
-Tenga en cuenta que esta directiva quita el acceso a los archivos compartidos con un vínculo de *Personas específicas*. No elimina el acceso de vínculos no autenticados (*Cualquiera*). Tampoco retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos extremadamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) y solo permitir que los miembros de su organización los usen.
+Tenga en cuenta que esta directiva quita el acceso a los archivos compartidos con un vínculo de *Personas específicas*. No elimina el acceso de vínculos no autenticados (*Cualquiera*). Tampoco retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos altamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9) y solo permitir que los miembros de su organización los usen.
 
 ## <a name="test-the-solution"></a>Probar la solución
 
 Para probar la solución descrita en este artículo, cree un documento de Word y guárdelo en una biblioteca de documentos. Comparta el archivo con un invitado. Cuando el invitado intente acceder al documento, deberá inscribirse en autenticación multifactor y, luego, aceptar los términos de uso.
 
-Cuando el invitado tenga acceso al documento, escriba *Proyecto Saturno* en el documento y guárdelo. Una vez que Cloud App Security escanee el documento, se debe aplicar la etiqueta *Extremadamente confidencial* y el invitado ya no tendrá acceso a él.
+Cuando el invitado tenga acceso al documento, escriba *Proyecto Saturno* en el documento y guárdelo. Una vez que Cloud App Security escanee el documento, se debe aplicar la etiqueta *Altamente confidencial* y el invitado ya no tendrá acceso a él.
 
 Puede combinar las herramientas que se describen en este artículo de distintas maneras para que su organización pueda compartir con invitados de forma segura y productiva.
 
