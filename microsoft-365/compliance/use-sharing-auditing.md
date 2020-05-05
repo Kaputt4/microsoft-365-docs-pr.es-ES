@@ -1,5 +1,5 @@
 ---
-title: Auditar el uso compartido para buscar recursos compartidos con usuarios externos
+title: Usar el uso compartido de auditoría en el registro de auditoría
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Los administradores ahora pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para identificar recursos que se han compartido con usuarios fuera de la organización. '
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Ahora, los administradores pueden usar la auditoría de uso compartido en el registro de auditoría para identificar recursos que se han compartido con usuarios fuera de la organización. '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069247"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626386"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Auditar el uso compartido para buscar recursos compartidos con usuarios externos
+# <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 
-El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa, y se usa ampliamente en organizaciones de Office 365. Los administradores pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para determinar cómo se usa el uso compartido en su organización. 
+El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa, y se usa ampliamente en las organizaciones. Los administradores pueden usar la auditoría de uso compartido en el registro de auditoría para determinar cómo se usa el uso compartido en su organización. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>El esquema de uso compartido de SharePoint
 
@@ -41,13 +41,13 @@ El esquema de uso compartido proporciona dos campos adicionales en un registro d
 
 - **TargetUserOrGroupName:** Almacena el UPN o el nombre del usuario o grupo de destino con el que se compartió un recurso (usuario B en el ejemplo anterior). 
 
-Estos dos campos, además de otras propiedades del esquema del registro de auditoría de Office 365, como User, Operation y Date, pueden decir el artículo completo sobre el *que* el usuario compartió *qué* recurso con *quién* y *Cuándo*. 
+Estos dos campos, además de otras propiedades del esquema del registro de auditoría como usuario, operación y fecha, pueden decir todo el artículo sobre el *que* el usuario compartió *qué* recurso con *quién* y *Cuándo*. 
   
 Hay otra propiedad de esquema que es importante para la historia de uso compartido. Al exportar los resultados de la búsqueda de registros de auditoría, la columna **AuditData** del archivo CSV exportado almacena información sobre los eventos de uso compartido. Por ejemplo, cuando un usuario comparte un sitio con otro usuario, esto se consigue agregando el usuario de destino a un grupo de SharePoint. La columna **AuditData** captura esta información para proporcionar contexto a los administradores. Consulte el [paso 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) para obtener instrucciones sobre cómo analizar la información en la columna **AuditData** .
 
 ## <a name="sharepoint-sharing-events"></a>Eventos de uso compartido de SharePoint
 
-El uso compartido se define cuando un usuario (el usuario que *actúa* ) desea compartir un recurso con otro usuario (el usuario de *destino* ). Los registros de auditoría relacionados con el uso compartido de un recurso con un usuario externo (un usuario que está fuera de la organización y no tienen una cuenta de invitado en el Azure Active Directory de la organización) se identifican mediante los siguientes eventos, que se registran en el Office 365 registro de auditoría:
+El uso compartido se define cuando un usuario (el usuario que *actúa* ) desea compartir un recurso con otro usuario (el usuario de *destino* ). Los registros de auditoría relacionados con el uso compartido de un recurso con un usuario externo (un usuario que está fuera de la organización y que no tiene una cuenta de invitado en el Azure Active Directory de su organización) se identifican mediante los siguientes eventos, que se registran en el registro de auditoría:
 
 - **SharingInvitationCreated:** Un usuario de la organización intentó compartir un recurso (probablemente un sitio) con un usuario externo. Esto da como resultado una invitación a uso compartido externa enviada al usuario de destino. No se concede acceso al recurso en este punto.
 
@@ -93,11 +93,11 @@ Un requisito común para los administradores es crear una lista de todos los rec
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Paso 1: buscar eventos de uso compartido y exportar los resultados a un archivo CSV
 
-El primer paso es buscar eventos de uso compartido en el registro de auditoría de Office 365. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría del centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
+El primer paso consiste en buscar en el registro de auditoría para compartir eventos. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría del centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
+2. Inicie sesión con su cuenta profesional o educativa.
     
 3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Buscar**  > **Búsqueda de registros de auditoría**.
     
