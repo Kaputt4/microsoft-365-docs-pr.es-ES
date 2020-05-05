@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dfc2136f04ed128fc655386c6eef7b91c5e5ef3a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 12e68cd8fcd7c784b1d0b4c70c5c25370cbbb409
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011284"
+ms.locfileid: "44016007"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
@@ -34,9 +34,6 @@ ms.locfileid: "44011284"
 Obtenga información sobre las licencias, los requisitos de hardware y software, y otras opciones de configuración para aprovisionar y usar la protección contra amenazas de Microsoft.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencia
-
->[!IMPORTANT]
->A partir del 3 de mayo de 2020, Microsoft implementará gradualmente nuevas y optimizadas experiencias sobre los requisitos de licencias y la [activación de la protección contra amenazas de Microsoft](mtp-enable.md). Durante varias semanas durante este período, algunos clientes empezarán a ver los cambios en sus experiencias de portal. La información sobre las nuevas experiencias se marca como **nueva experiencia** en este artículo.
 
 Para usar la protección contra amenazas de Microsoft, necesita una sola licencia o una combinación de licencias. Estas licencias o combinaciones de licencias le proporcionan acceso a las características de protección contra amenazas de Microsoft sin costo adicional.
 
@@ -56,19 +53,6 @@ También puede usar una combinación de licencias para suscripciones a E5 o A5 a
 Para obtener más información, [vea los planes de servicio de Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 > ¿Todavía no tiene licencia? [Probar o comprar una suscripción a Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**Nueva experiencia:** A partir del 3 de mayo de 2020, los clientes recibirán gradualmente los cambios de esta experiencia. Para los usuarios con la nueva experiencia, la opción de activar la protección contra amenazas de Microsoft estará disponible para *todos* los clientes que tengan alguna de las siguientes licencias:
-
-- Microsoft 365 E5 o A5
-- Seguridad de Microsoft 365 E5 o de la A5
-- Windows 10 Enterprise E5 o A5
-- Enterprise Mobility + Security (EMS) E5 o A5 
-- Office 365 E5 o A5
-- Protección contra amenazas avanzada de Microsoft Defender 
-- Azure Advanced Threat Protection 
-- Microsoft Cloud App Security 
-- Protección contra amenazas avanzada de Office 365 (plan 2) 
 
 ### <a name="check-your-existing--licenses"></a>Comprobar las licencias existentes
 Vaya al centro de administración de 365 de Microsoft ([admin.Microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.
