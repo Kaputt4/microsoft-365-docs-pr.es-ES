@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632724"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048030"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -121,7 +121,7 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea cambiar. En la sección **configuración & acciones** , seleccione **Editar dirección de uso del servicio**.
 
@@ -170,6 +170,8 @@ De forma predeterminada, las notificaciones de facturación de la organización 
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Cambiar la dirección de correo electrónico alternativa de otro administrador
 
 También puede cambiar la dirección de correo electrónico alternativa de otros administradores globales y de facturación de la organización.
+
+::: moniker range="o365-worldwide"
   
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.
 

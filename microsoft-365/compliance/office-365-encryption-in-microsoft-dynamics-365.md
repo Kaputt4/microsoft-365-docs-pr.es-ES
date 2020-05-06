@@ -12,13 +12,14 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Resumen: comprenda el cifrado en Microsoft Dynamics 365.'
-ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo Microsoft usa la tecnología de cifrado para proteger los datos de clientes en Microsoft Dynamics 365 mientras está en reposo en una base de datos de Microsoft y mientras está en tránsito.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: bd349890fc7fc1ae7f1f7eaf07f90c22423637cf
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637244"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031420"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Cifrado en Microsoft Dynamics 365
 

@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Información general sobre el cifrado en la nube de Microsoft.
-ms.openlocfilehash: 34ec910e60ceb718daa42dc31aa8a5a3440dbdd6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: En este artículo, vea información general sobre las diversas formas de cifrado usadas para proteger los datos de los clientes en la nube de Microsoft.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626928"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031390"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 

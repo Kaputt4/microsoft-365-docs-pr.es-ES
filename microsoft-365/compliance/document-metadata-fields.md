@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Ver una tabla que enumera los campos de metadatos de los documentos en un conjunto de evidencias en investigaciones de datos (versión preliminar).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595185"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035702"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campos de metadatos de documento en investigaciones de datos (versión preliminar)
 

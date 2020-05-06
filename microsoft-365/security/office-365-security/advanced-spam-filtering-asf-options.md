@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: La configuración del filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) permite a los administradores identificar los mensajes que contienen propiedades de mensaje específicas que se suelen usar en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como correo no deseado o correo no deseado de alta confianza.
-ms.openlocfilehash: 58114fa97d46a5a6f6f49c24826ace9edd811e1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre la configuración del filtro de correo no deseado avanzado (ASF) en directivas contra correo no deseado, que permiten a los administradores identificar mensajes que contienen propiedades de mensajes específicas que se suelen usar en correo no deseado.
+ms.openlocfilehash: 31793f5996cc27cf7e5de75d9c190657e6592c57
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634735"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034139"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-office-365"></a>Configuración de filtro de correo no deseado (ASF) avanzada en Office 365
 

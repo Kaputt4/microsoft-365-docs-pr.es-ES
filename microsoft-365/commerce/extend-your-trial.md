@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Obtenga información sobre cómo ampliar su suscripción de prueba durante otro período de 30 días.
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634901"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045769"
 ---
 # <a name="extend-your-trial"></a>Ampliar el periodo de prueba
 
@@ -34,10 +34,9 @@ ms.locfileid: "43634901"
 
 ::: moniker range="o365-worldwide"
 
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
-
-2. En la página **productos & Services** , busque la suscripción de prueba que desea extender. En la sección **configuración & acciones** , seleccione **extender la prueba**.
+2. En la página **sus productos** , busque la suscripción de prueba que desea extender. En la sección **configuración & acciones** , seleccione **extender la prueba**.
 
 3. Revise la información de extensión y, si es necesario, cambie el método de pago. Cuando haya terminado, seleccione **extender prueba**.
 
@@ -45,9 +44,7 @@ ms.locfileid: "43634901"
 
 ::: moniker range="o365-germany"
 
-
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
 
 2. En la página **suscripciones** , seleccione la suscripción de prueba que desea extender y, a continuación, en la fecha de expiración, seleccione **extender la prueba**.
 

@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Vea cómo funciona la información de inteligencia de inteligencia de suplantación en la protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo funciona el nuevo conocimiento de inteligencia de inteligencia empresarial, lo que incluye cómo determinar rápidamente qué remitentes le envían de forma legítima correo no autenticado.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630934"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033649"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial: información de inteligencia sobre la simulación de ATP en Microsoft 365
 
@@ -38,11 +39,11 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
   Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté mirando, la visión proporciona los mismos detalles y le permite realizar rápidamente las mismas tareas.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para usar el conocimiento de inteligencia de suplantación de identidad, debe ser miembro de los grupos de roles de administración de la **organización**, **Administrador de seguridad**o lector de **seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para usar el conocimiento de inteligencia de suplantación de identidad, debe ser miembro de los grupos de roles de administración de la **organización**, **Administrador de seguridad**o lector de **seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Puede habilitar y deshabilitar la inteligencia de identidad en las directivas antiphishing de ATP. Para obtener más información, consulte [Configure ATP anti-phishing policies en Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- En Microsoft 365 organizaciones con buzones de correo de Exchange Online y en Exchange Online Protection (EOP) independiente sin buzones de correo de Exchange Online, puede usar inteligencia de suplantación de identidad para supervisar y administrar a los remitentes que le envían mensajes sin autenticar. Para obtener más información, consulte [configurar inteligencia de identidades en Microsoft 365](learn-about-spoof-intelligence.md).
+- En Microsoft 365 organizaciones con buzones de correo de Exchange Online y en Exchange Online Protection (EOP) independiente sin buzones de correo de Exchange Online, puede usar inteligencia de suplantación de identidad para supervisar y administrar a los remitentes que le envían mensajes sin autenticar. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Abrir el conocimiento de inteligencia de infalsificación en el centro de seguridad & cumplimiento
 

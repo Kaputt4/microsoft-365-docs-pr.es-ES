@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627805"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045278"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 
@@ -42,7 +42,7 @@ En el siguiente ejemplo, se describe cómo se realiza la inscripción automátic
 
 3. Validamos su dirección de correo electrónico y, a continuación, pueden empezar a usar Microsoft 365, Power BI u otros servicios de inmediato.
 
-4. Como administrador de la empresa, puede ver quién se ha registrado para obtener una suscripción viendo la página **productos & Services** en el centro de administración. De esta forma puede ver cuándo hay licencias nuevas o no reconocidas para los servicios de su espacio empresarial. Para controlar si los usuarios pueden suscribirse a las suscripciones de autoservicio, use el cmdlet [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) de PowerShell con el parámetro **AllowAdHocSubscriptions** . Para obtener más información, vea [¿cómo se controla la configuración de Self-Service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. Como administrador de la empresa, puede ver quién se ha registrado para obtener una suscripción viendo la página **sus productos** en el centro de administración. De esta forma puede ver cuándo hay licencias nuevas o no reconocidas para los servicios de su espacio empresarial. Para controlar si los usuarios pueden suscribirse a las suscripciones de autoservicio, use el cmdlet [set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) de PowerShell con el parámetro **AllowAdHocSubscriptions** . Para obtener más información, vea [¿cómo se controla la configuración de Self-Service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>Programas de autoservicio disponibles
 
@@ -64,5 +64,5 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |**Centro de servicios de licencias por volumen de Microsoft** <br/> |El centro de servicios de licencias por volumen de Microsoft muestra licencias adquiridas en Enterprise, Select, Education (campus o School), Open Value, Open License y acuerdos de regalías (ISV).  <br/> |[Recursos y formación de VLSC](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Centro de servicios de licencias por volumen](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft Education Edition** <br/> |Mediante el uso de Minecraft como plataforma de aprendizaje, los educadores pueden motivar y inspirar a todos los alumnos para lograr más y inflaman pasión por aprender. Únase a una comunidad de educadores aprendiendo a usar Minecraft para desbloquear el potencial de los alumnos.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Cargue y Comparta vídeos en su organización para mejorar la comunicación, la participación y el aprendizaje.  <br/> |[Experiencia del &amp; día 0 de suscripción](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
-|**Automatizar la alimentación** <br/> |La automatización de energía es un producto que le ayuda a configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.  <br/> |[Registrarse e iniciar sesión para la automatización de la alimentación](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Automatizar la alimentación](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
+|**Power Automate** <br/> |La automatización de energía es un producto que le ayuda a configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.  <br/> |[Registrarse e iniciar sesión para la automatización de la alimentación](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Agentes de Power virtual** <br/> |Power virtual Agents permite a los equipos crear de forma sencilla bots potentes mediante una interfaz gráfica guiada sin código sin la necesidad de científicos o desarrolladores de datos. Power virtual Agents enfrenta muchos de los principales problemas con la creación de robots en la industria de hoy. Elimina el vacío entre los expertos en la materia y los equipos de desarrollo que crean los bots y la larga latencia entre los equipos para reconocer un problema y actualizar el bot para solucionarlo.  <br/> |[Detalles de licencias y acceso](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrarse para obtener agentes virtuales de potencia](https://aka.ms/TryPVA) <br/> |

@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Preguntas más frecuentes y respuestas para administradores acerca de la protección contra correo no deseado en Exchange Online y Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: En este tema se proporcionan preguntas más frecuentes & respuestas sobre la protección contra correo no deseado. Las respuestas son válidas para los clientes de Microsoft Exchange Online & Exchange Online Protection (EOP).
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636063"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033743"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 

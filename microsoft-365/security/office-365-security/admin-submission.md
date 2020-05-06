@@ -1,5 +1,5 @@
 ---
-title: Envíos de administración, envíos, problema de correo no deseado, falso negativo, enviar phish, enviar correo electrónico para análisis, correo electrónico sospechoso en Office 365, analizar un mensaje, hacer que Microsoft analice el phishing, hacer que Microsoft analice en busca de correo no deseado, enviar correo electrónico, enviar correo electrónico, Dodgy correo electrónico de estafa a Microsoft, informar de un correo electrónico malintencionado a Microsoft, informar de mensajes de phishing a Microsoft , notificar malware en correo electrónico a Microsoft, correo no deseado en la bandeja de entrada, virus en correo electrónico
+title: Envíos de administración en Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Obtenga información sobre cómo enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente perjudiciales, direcciones URL y archivos de la empresa a Microsoft para su análisis.
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921533"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034205"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 

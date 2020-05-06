@@ -17,15 +17,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ''
-description: Aprenda a modificar o crear nuevos tipos de información confidencial para RGPD.
-ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Aprenda a modificar o crear nuevos tipos de información sensible de Office 365 para el Reglamento general de protección de datos (GDPR).
+ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637782"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035742"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 

@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: En este artículo, aprenderá a crear directivas DLP mediante una de las plantillas incluidas en Office 365.
+ms.openlocfilehash: be063c8ee8605db94fe3a68f7ca42b7135553f5e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631339"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035722"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 

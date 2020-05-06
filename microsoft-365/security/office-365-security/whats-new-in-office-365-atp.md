@@ -1,6 +1,6 @@
 ---
 title: Novedades de la protección contra amenazas avanzada de Office 365
-description: Enumera las nuevas características y funciones de ATP de Office 365
+description: Obtenga información sobre las nuevas características y funciones disponibles en la versión más reciente de Microsoft Office 365 ATP.
 keywords: Novedades de Office 365 ATP, GA, disponible en general, capacidades disponibles, nueva
 search.appverid: met150
 ms.service: O365-seccomp
@@ -15,12 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.date: 02/21/2020
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630826"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036589"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -82,7 +84,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en eDiscovery avanzado para coordinar sus flujos de trabajo e identificar los orígenes de datos relevantes en un caso.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632315"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034694"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 

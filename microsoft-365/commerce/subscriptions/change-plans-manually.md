@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Para cambiar las suscripciones manualmente, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707636"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046197"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -58,14 +58,14 @@ Incluya una licencia para cada usuario que quiera mover.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: comprobar la nueva suscripción y las licencias
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. **Comprobar que ambas suscripciones se muestran y están activas** La suscripción desde la que va a mover a los usuarios y la suscripción a la que está moviendo los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando compruebe por primera vez, inténtelo de nuevo más tarde. Compruebe que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. **Comprobar que tiene licencias suficientes para cada usuario** Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea pasar diez usuarios a Microsoft 365 empresa Premium, deberá asegurarse de que dispone de diez licencias.
 
 4. **¿Necesita más licencias para la nueva suscripción?**
-   Vaya a la página **productos & Services** y [compre más licencias](../licenses/buy-licenses.md).
+   Vaya a la página **de productos** y [compre más licencias](../licenses/buy-licenses.md).
 
 > [¿Qué sucede con las licencias antiguas?](#what-about-the-old-licenses)
 

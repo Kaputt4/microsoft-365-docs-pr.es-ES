@@ -13,13 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+description: Obtenga información sobre cómo usar el explorador de amenazas y el informe de detecciones en tiempo real para investigar y responder a las amenazas en el centro de seguridad & cumplimiento.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907254"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035193"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 

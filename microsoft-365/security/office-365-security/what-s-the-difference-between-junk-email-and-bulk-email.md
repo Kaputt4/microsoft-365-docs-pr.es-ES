@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: En este tema se explica la diferencia entre correo electrónico no deseado y correo electrónico masivo, así como los controles relacionados en Office 365.
-ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre la diferencia entre correo electrónico no deseado & correo electrónico masivo. Además, obtenga información sobre las diferentes opciones disponibles en Exchange Online & Exchange Online Protection (EOP).
+ms.openlocfilehash: 5d9d3b513de64d2a150d9e0a1c94bc5ca746b617
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630838"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036601"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 

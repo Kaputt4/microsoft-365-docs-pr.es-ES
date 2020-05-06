@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708160"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045909"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -53,7 +53,7 @@ Si cambia de factura a tarjeta de crédito o cuenta bancaria, los cargos de su f
 Si cambia de tarjeta de crédito o cuenta bancaria a factura, cualquier saldo pendiente se transferirá a la siguiente factura.
   
 > [!NOTE]
-> Si paga con tarjeta de crédito y se rechaza su tarjeta de crédito, recibirá un correo electrónico que le permitirá saber que no hemos podido procesar el pago. Puede actualizar la información de su tarjeta de crédito y enviar el pago de inmediato mediante el vínculo **liquidar saldo** de la página **productos & Services** . Para obtener más información, consulte [¿Qué sucede si se ha rechazado mi tarjeta de crédito y el pago está vencido?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> Si paga con tarjeta de crédito y se rechaza su tarjeta de crédito, recibirá un correo electrónico que le permitirá saber que no hemos podido procesar el pago. Puede actualizar la información de su tarjeta de crédito y enviar inmediatamente el pago mediante el vínculo de **saldo de liquidación** de la página **sus productos** . Para obtener más información, consulte [¿Qué sucede si se ha rechazado mi tarjeta de crédito y el pago está vencido?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -86,9 +86,9 @@ Si va a cambiar de *tarjeta de crédito a factura o cuenta bancaria*, cualquier 
 > [!TIP]
 > Los pasos siguientes se aplican a solo suscripciones individuales. Si tiene varias suscripciones en su organización, siga estos pasos para cada suscripción que desee cambiar.
   
-Al cambiar el pago por factura al pago con una tarjeta de crédito o cuenta bancaria, creamos automáticamente una nueva suscripción para usted, mueve los usuarios a la nueva suscripción y, a continuación, deshabilita su suscripción antigua. No se preocupe, los usuarios no verán una interrupción del servicio y toda la información estará disponible a través de la nueva suscripción.
+Cuando cambia del pago con factura al pago con tarjeta de crédito o cuenta bancaria, automáticamente creamos una suscripción, movemos sus usuarios a la nueva suscripción y, después, deshabilitamos su suscripción anterior. No se preocupe, sus usuarios no experimentarán una interrupción del servicio y toda su información estará disponible a través de la nueva suscripción.
 
-1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas**.
 
@@ -139,20 +139,20 @@ Cuando vuelva a la página **Suscripciones**, verá la antigua suscripción marc
 
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Cambiar de tarjeta de crédito o cuenta bancaria a factura
 
-Puede cambiar a pagar mediante factura solo si el pedido está por encima de una cantidad determinada. Si no cumple los requisitos, verá el mensaje "la cantidad de la orden no es lo suficientemente grande como para calificarse para la factura con el cable de comprobación".
+Si el pedido supera un determinado importe, puede cambiar al pago mediante factura. Si no cumple este requisito, verá el mensaje "El importe de su pedido no es lo bastante grande como para optar por la factura con transferencia bancaria".
 
-Si la cantidad de su pedido es demasiado alta, puede que sea necesaria una comprobación de crédito. Si es así, verá el mensaje "no se puede cambiar a factura. Su pedido requiere una comprobación de crédito. " En este caso, cambiará a pagar mediante factura manualmente. Siga estos pasos para completar el cambio manual.
+Si la cantidad de su pedido es demasiado elevada, puede que sea necesario realizar una comprobación de crédito. En ese caso, verá el mensaje "No se puede cambiar a factura. El pedido requiere una comprobación de crédito ". En este caso, se cambia a pagar por factura de forma manual. Siga estos pasos para completar el cambio manual.
 
-1. Vaya a <a href="https://Office365.com" target="_blank">Office365.com</a> y compre la misma suscripción que la que tiene actualmente. En la desprotección, elija la opción de pago mediante factura.
+1. Vaya a <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> y compre la misma suscripción que la que tiene actualmente. En la desprotección, elija la opción de pago mediante factura.
 
     > [!IMPORTANT]
-    > No puede usar la página **productos & Services** en el centro de administración para comprar la suscripción. Debe usar <a href="https://Office365.com" target="_blank">Office365.com</a>.
+    > No puede usar la página **sus productos** en el centro de administración para comprar la suscripción. Debe usar <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. Una vez completada la compra, cancele la suscripción original. Los usuarios se mueven automáticamente a la nueva suscripción.
 
 Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambiar al pago mediante factura.
 
-1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas**.
 
@@ -164,7 +164,7 @@ Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambi
 
 6. Escriba su nombre, dirección y número de teléfono. También puede Agregar un número de pedido de compra para que se muestre en la factura.
   
-7. Cuando haya terminado, seleccione **Guardar**.
+7. Cuando termine, seleccione **Guardar**.
 
 8. Compruebe que el método de pago seleccionado sea correcto y, a continuación, seleccione **Guardar**.
 
@@ -198,7 +198,7 @@ Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambi
 
 Puede usar el siguiente procedimiento en cualquier momento para comprobar el método de pago que está configurado para una suscripción.
 
-1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en la sección **facturación** .
 

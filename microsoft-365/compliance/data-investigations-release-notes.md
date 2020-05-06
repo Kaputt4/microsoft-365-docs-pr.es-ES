@@ -15,13 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+description: En este artículo, encontrará notas de la versión que contienen cambios y nuevas características para la herramienta de investigación de datos (versión preliminar) en Microsoft 365.
+ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637740"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035732"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 

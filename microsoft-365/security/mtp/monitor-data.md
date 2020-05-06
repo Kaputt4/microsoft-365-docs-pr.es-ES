@@ -1,6 +1,6 @@
 ---
-title: Supervisión y generación de informes de datos en el centro de seguridad de Microsoft 365
-description: Describe cómo puede realizar un seguimiento de la actividad del usuario que podría llevar a la revelación de datos no autorizados.
+title: 'Supervisión de datos & informes: Centro de seguridad'
+description: Obtenga información sobre cómo puede realizar un seguimiento de la actividad del usuario que podría llevar a la divulgación no autorizada de datos en el centro de seguridad de Microsoft 365.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, datos
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 271cd4d3379239073a6f16c5253fc26da87d8605
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637097"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034015"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de datos en el centro de seguridad de Microsoft 365
 

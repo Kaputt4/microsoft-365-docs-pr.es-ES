@@ -1,5 +1,5 @@
 ---
-title: Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
+title: Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de Microsoft PST para buscar en la red de su organización para obtener un inventario de los archivos PST que están dispersos en toda la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para poder importarlos a Office 365.
-ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942203"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033814"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
 
