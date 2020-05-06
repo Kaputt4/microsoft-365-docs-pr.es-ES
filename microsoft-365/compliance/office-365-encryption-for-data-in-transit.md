@@ -15,13 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Una breve explicación de cómo Microsoft cifra los datos en tránsito en sus centros de datos.
-ms.openlocfilehash: 645294522185a631012c1654fbad96ba0a21b33e
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: En este artículo, encontrará una breve explicación de cómo cifra Microsoft los datos de clientes de Microsoft 365 en tránsito.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7ee869308549398a9df00ed42975b4aeedb666a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943309"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033608"
 ---
 # <a name="encryption-for-data-in-transit"></a>Cifrado de datos en tránsito
 

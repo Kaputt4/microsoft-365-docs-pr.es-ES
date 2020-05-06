@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638241"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002360"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -117,7 +117,7 @@ Definir una cultura digital es una prioridad principal para cada líder que se e
 
 Al mismo tiempo, las características de seguridad inteligente y la integración del producto ayudan a simplificar las necesidades de administración y reducir el costo total de propiedad en el ciclo de vida de TI. 
 
-Obtenga información sobre cómo Core Services Engineering and Operations (anteriormente Microsoft IT) [planifica e implementa una base](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) para admitir aplicaciones y servicios que desatan la creatividad y facilitan el trabajo en equipo en un entorno seguro.
+Obtenga información sobre cómo Core Services Engineering and Operations (antes TI de Microsoft) ha [creado un espacio de trabajo moderno con Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
 
 > [!Note]
 > Esta característica solo está disponible en inglés.

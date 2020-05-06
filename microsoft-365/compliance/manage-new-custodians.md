@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Administrar los custodios en un caso de eDiscovery avanzado.
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo ver detalles, editar y editar en bloque la lista de custodios en un caso de eDiscovery avanzado.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635900"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034182"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar los custodios en un caso de eDiscovery avanzado
 
@@ -126,9 +127,9 @@ Para liberar un custodio:
 
 1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
 
-2.  Vaya a la pestaña **custodios** .
+2.    Vaya a la pestaña **custodios** .
 
-3.  Haga clic en la **ficha custodios**y, a continuación, seleccione el custodio que se está publicando desde el caso.
+3.    Haga clic en la **ficha custodios**y, a continuación, seleccione el custodio que se está publicando desde el caso.
 
 4. En la página flotante, haga clic en **liberar custodio**.
 
