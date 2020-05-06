@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+description: Obtenga información sobre cómo administrar conjuntos de revisión para poder analizar, consultar, ver, etiquetar y exportar datos en un caso de exhibición avanzada de documentos electrónicos.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800061"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034172"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Administrar conjuntos de revisión en la exhibición avanzada de documentos electrónicos
 

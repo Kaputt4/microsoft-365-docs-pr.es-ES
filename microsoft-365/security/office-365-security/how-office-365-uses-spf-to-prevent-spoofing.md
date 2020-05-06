@@ -1,5 +1,5 @@
 ---
-title: Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
+title: Modo en que el marco de directivas de remitente (SPF) evita la suplantación de identidad
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
-description: 'Resumen: en este artículo se describe cómo Microsoft 365 usa el registro TXT del marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. Esto se aplica al correo saliente enviado desde Microsoft 365. Los mensajes enviados desde Microsoft 365 a un destinatario dentro de Microsoft 365 siempre transmitirán SPF.'
-ms.openlocfilehash: d73fb881b8395c6c1383cca70e506694795f1364
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo Microsoft 365 usa el registro TXT del marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.
+ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633995"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036394"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -202,7 +204,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 
 Una vez que haya formulado el registro TXT de SPF, siga los pasos descritos en [set up SPF in Microsoft 365 para ayudar a evitar la suplantación de identidad (spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) ) para agregarlo a su dominio.
 
-Aunque SPF está diseñado para ayudar a evitar la suplantación de identidad, existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para protegerse contra estos, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Microsoft 365. Para empezar, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Microsoft 365](use-dkim-to-validate-outbound-email.md). A continuación, vea [usar DMARC para validar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).
+Aunque SPF está diseñado para ayudar a evitar la suplantación de identidad, existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para protegerse contra estos, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Microsoft 365. Para empezar, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Microsoft 365](use-dkim-to-validate-outbound-email.md). Después, vea [Usar DMARC para validar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="troubleshooting-best-practices-for-spf-in-microsoft-365"></a>Solución de problemas: procedimientos recomendados para SPF en Microsoft 365
 <a name="SPFTroubleshoot"> </a>

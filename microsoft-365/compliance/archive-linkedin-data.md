@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector nativo para importar datos desde una página de la compañía de LinkedIn a Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el cumplimiento de los datos de terceros de la organización.
-ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Configure un conector para importar datos de LinkedIn a Microsoft 365 de modo que pueda usar las herramientas de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención.
+ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943219"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043351"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurar un conector para archivar datos de LinkedIn
 
@@ -45,7 +47,7 @@ Una vez que los datos de la página de la compañía de LinkedIn se almacenan en
 
 4. En la página **iniciar sesión con LinkedIn** , haga clic en **iniciar sesión con LinkedIn**.
 
-   Se muestra la página de inicio de LinkedIn.
+   Se muestra la página de inicio de sesión de LinkedIn.
 
    ![Página de inicio de sesión de LinkedIn](../media/LinkedInSigninPage.png)
 
@@ -57,17 +59,15 @@ Una vez que los datos de la página de la compañía de LinkedIn se almacenan en
 
 6. Seleccione la página de la compañía desde la que desea archivar elementos y, a continuación, haga clic en **siguiente**.
 
-7. En la página **Establecer filtros** , puede aplicar un filtro para importar inicialmente los elementos que tienen una antigüedad determinada. Seleccione una edad y, a continuación, haga clic en **siguiente**.
+7. En la página **Elegir ubicación de almacenamiento** , haga clic en el cuadro, seleccione la dirección de correo electrónico de un buzón de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, haga clic en **siguiente**. Los elementos se importan a la carpeta Bandeja de entrada en este buzón.
 
-8. En la página **Elegir ubicación de almacenamiento** , haga clic en el cuadro, seleccione la dirección de correo electrónico de un buzón de correo de Microsoft 365 al que se importarán los elementos de LinkedIn y, a continuación, haga clic en **siguiente**. Los elementos se importan a la carpeta Bandeja de entrada en este buzón.
+8. En el **acuerdo proporcionar consentimiento del administrador**, haga clic en **proporcionar consentimiento** y, a continuación, siga los pasos. Debe ser administrador global para dar su consentimiento al servicio de importación de Office 365 para obtener acceso a los datos de su organización.
 
-9. En el **acuerdo proporcionar consentimiento del administrador**, haga clic en **proporcionar consentimiento** y, a continuación, siga los pasos. Debe ser administrador global para dar su consentimiento al servicio de importación de Office 365 para obtener acceso a los datos de su organización.
-
-10. Haga clic en **siguiente** para revisar la configuración del conector y, a continuación, haga clic en **Finalizar** para completar la configuración del conector.
+9. Haga clic en **siguiente** para revisar la configuración del conector y, a continuación, haga clic en **Finalizar** para completar la configuración del conector.
 
 Después de crear el conector, puede volver a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector (seleccione **Actualizar** si es necesario para actualizar la lista de conectores). El valor de la columna **Estado** está **a la espera de iniciarse**. El proceso de importación inicial tardará hasta 24 horas en iniciarse. Después de que se ejecute el conector por primera vez y se importen los elementos de LinkedIn, el conector se ejecutará una vez cada 24 horas e importará los elementos nuevos que se creen en la página de la compañía de LinkedIn en las 24 horas anteriores.
 
-Para ver más detalles, seleccione el conector en la lista de la página **conectores de datos** para mostrar la página de control flotante. En **Estado**, el intervalo de fechas que se muestra indica el filtro de antigüedad que se seleccionó cuando se creó el conector. 
+Para ver más detalles, seleccione el conector en la lista de la página **conectores de datos** para mostrar la página de control flotante. En **Estado**, el intervalo de fechas que se muestra indica el filtro de antigüedad que se seleccionó cuando se creó el conector.
 
 ## <a name="more-information"></a>Más información
 

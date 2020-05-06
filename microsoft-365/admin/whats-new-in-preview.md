@@ -20,12 +20,12 @@ search.appverid:
 description: 'Centro de administración de Microsoft 365: Obtenga información sobre las características que se agregaron este mes.'
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011332"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045957"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -176,7 +176,7 @@ Estamos combinando las noticias de noviembre y diciembre porque, después de inf
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Cambiar de tarjeta de crédito a pago de factura
 
-Hemos comenzado a implementar la capacidad de cambiar el método de pago de la tarjeta de crédito a una factura. Vaya a productos de **facturación** \> **& servicios**, seleccione una suscripción y, a continuación, seleccione el vínculo **Editar** junto al pago con tarjeta de crédito.
+Hemos comenzado a implementar la capacidad de cambiar el método de pago de la tarjeta de crédito a una factura. Vaya a **facturación** \> **de los productos**, seleccione una suscripción y, a continuación, seleccione el vínculo **Editar** junto al pago con tarjeta de crédito.
 
 ![Captura de pantalla: sección facturación de la tarjeta de suscripción con tarjeta de crédito como forma de pago.](../media/MAC-BillingEditCreditCard.png)
 
@@ -244,7 +244,7 @@ El estado del servicio se ha actualizado al nuevo estilo y si se ve afectado por
 
 ### <a name="viral-subscriptions"></a>Suscripciones "viral"
 
-Como sabe, los usuarios pueden activar suscripciones gratuitas a una infinidad de productos, como Power BI y app Connect. Ahora puede ver las "suscripciones virales" que han intentado sus usuarios. Vaya a productos de **facturación** > **& servicios**. Seleccione el filtro **tipo de cuenta** en la ficha suscripciones para ver las suscripciones compradas por el usuario. Si es necesario, ahora tiene la posibilidad de quitar estas suscripciones de su cuenta.
+Como sabe, los usuarios pueden activar suscripciones gratuitas a una infinidad de productos, como Power BI y app Connect. Ahora puede ver las "suscripciones virales" que han intentado sus usuarios. Vaya a **facturación** > **de los productos**. Seleccione el filtro **tipo de cuenta** en la ficha suscripciones para ver las suscripciones compradas por el usuario. Si es necesario, ahora tiene la posibilidad de quitar estas suscripciones de su cuenta.
 
 ### <a name="user-templates"></a>Plantillas de usuario
 
@@ -289,7 +289,7 @@ Ha habido una actualización a otro de nuestros asistentes de instalación inici
 
 Tenemos algunas actualizaciones de facturación y suscripciones este mes:
 
-- Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias **de aplicaciones para el ámbito educativo (dispositivo) de 365 de Microsoft** a los dispositivos del centro de administración de Microsoft 365. **Microsoft 365 apps for Education (Device)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación** > de**productos & servicios** para buscar y adquirir la licencia.
+- Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias **de aplicaciones para el ámbito educativo (dispositivo) de 365 de Microsoft** a los dispositivos del centro de administración de Microsoft 365. **Microsoft 365 apps for Education (Device)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación** > **de productos** para buscar y adquirir la licencia.
 - Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los**usuarios activos** de **los usuarios** > al nuevo estilo. Para obtener más información, vea:
   - [Asignar licencias a usuarios](manage/assign-licenses-to-users.md)
   - [Cancelar asignación a licencias de usuarios](manage/remove-licenses-from-users.md)
@@ -333,7 +333,7 @@ Tenemos algunos cambios interesantes que le ayudarán a configurar la organizaci
 
 ### <a name="billing--subscriptions"></a>Suscripciones de & de facturación
 
-- Tipo de producto de **software** : ahora puede ver los productos de software adquiridos a través de un proveedor de servicios en la nube (CSP). Para ver las descargas y claves, vaya a productos de **facturación** > **&** > ficha**software** de servicios.
+- Tipo de producto de **software** : ahora puede ver los productos de software adquiridos a través de un proveedor de servicios en la nube (CSP). Para ver las descargas y las claves, vaya a **facturación** > **de la ficha software de productos** > **Software** .
 - Puede ver los productos y servicios de Azure modernos desde el centro de administración de Microsoft 365, ya haya adquiridolos de Microsoft o de un proveedor de terceros. Ejemplos de productos modernos de Azure incluidos:
   - Instancias virtuales reservadas de Azure
   - Planes de soporte de Azure
@@ -431,7 +431,7 @@ Hemos realizado algunos cambios más en la **Administración de usuarios**, esta
 - Hay un Bonanza de **facturación** que cambia este mes...
   - Ahora puede actualizar el CVV para tarjetas de crédito existentes sin tener que eliminarla y agregarla de nuevo. Puede actualizar el CVV yendo a métodos de **Bills** > **pago**de facturas.
     - Hemos hecho que sea más fácil encontrar sus **facturas** y comprender los problemas de facturación que pueda tener en su cuenta. Y ahora puede ver sus facturas en el explorador Web en lugar de tener que descargar el PDF. Vaya a **facturas** > **.**
-    - En la página **productos & Services** , ahora agregamos la información de la suscripción si tiene varias suscripciones del mismo tipo.
+    - En la página **sus productos** , ahora agregamos la información de la suscripción si tiene varias suscripciones del mismo tipo.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>Marzo de 2019: hemos lanzado oficialmente el centro de administración
 

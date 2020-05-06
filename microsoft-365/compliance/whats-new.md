@@ -1,5 +1,5 @@
 ---
-title: Novedades en el centro de cumplimiento de Microsoft 365
+title: Novedades del centro de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626266"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034272"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -142,7 +143,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Descripción**|**Obtener más información**|
+|**Nueva solución**|**Descripción**|**Más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -158,12 +159,12 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 > Algunas características siguen estando disponibles únicamente en el centro de cumplimiento de & de seguridad de Office 365: estos se indican a continuación. Pero estamos trabajando para obtener una vista previa de estas en el centro de cumplimiento de Microsoft 365, así que Manténgase atento a las actualizaciones. 
 <br/>
 
-|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Obtener más información**|
+|**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Más información**|
 |:-----|:-----|:-----|:-----|
 |eDiscovery avanzado|eDiscovery > eDiscovery avanzado <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > avanzado <br/> https://compliance.microsoft.com/advancedediscovery | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](overview-ediscovery-20.md) |
 |Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
 |Alertas|Alertas > ver alertas <br/> https://protection.office.com/viewalerts |Alertas <br/> https://compliance.microsoft.com/compliancealerts |[Ver alertas](alert-policies.md#viewing-alerts)|
-|Archivo|Archivo de > de gobierno de información <br/> https://protection.office.com/archiving |Ficha archivo del gobierno de información > <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Habilitar buzones de archivo](enable-archive-mailboxes.md)|
+|Archivar|Archivo de > de gobierno de información <br/> https://protection.office.com/archiving |Ficha archivo del gobierno de información > <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Habilitar buzones de archivo](enable-archive-mailboxes.md)|
 |Búsqueda de registros de auditoría|Búsqueda > búsqueda de registros de auditoría <br/> https://protection.office.com/unifiedauditlog |Las <br/> https://compliance.microsoft.com/auditlogsearch | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)|
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
@@ -172,7 +173,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |eDiscovery|exhibición de documentos electrónicos > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > núcleo <br/> https://compliance.microsoft.com/classicediscovery |[Administrar casos de eDiscovery](ediscovery-cases.md) |
 |Eventos|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Información general sobre la retención controlada por eventos](event-driven-retention.md)|
 |Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Información general sobre el administrador del plan de archivos](file-plan-manager.md)|
-|Importar archivos PST|Gobierno de información > archivos PST de importación <br/> https://protection.office.com/importV2 |Ficha importar > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Información general sobre la importación de archivos PST de la organización](importing-pst-files-to-office-365.md)|
+|Importar archivos PST|Gobierno de información > archivos PST de importación <br/> https://protection.office.com/importV2 |Ficha importar > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Información general sobre la importación de archivos PST de su organización](importing-pst-files-to-office-365.md)|
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](labels.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Información general sobre las directivas de retención](retention-policies.md)|
@@ -191,13 +192,13 @@ Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene d
 - Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
 - Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
-[Obtener más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
 ## <a name="august-2019"></a>Agosto de 2019
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Obtener más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
 
 ## <a name="july-2019"></a>Julio de 2019
 

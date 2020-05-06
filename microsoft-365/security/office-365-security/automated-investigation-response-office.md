@@ -1,5 +1,5 @@
 ---
-title: Investigación y respuesta automatizadas (AIR)
+title: Introducción a la investigación y respuesta automatizada (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air
-ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638553"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035621"
 ---
-# <a name="automated-investigation-and-response-air"></a>Investigación y respuesta automatizadas (AIR)
+# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Información general sobre la investigación y la respuesta automatizadas (AIR) en Microsoft 365
 
 A medida que se activen las alertas de seguridad, el equipo de operaciones de seguridad será el encargado de consultar esas alertas y tomar las medidas necesarias para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. Las capacidades de investigación y respuesta automatizadas (AIR) pueden ayudar. AIR permite que el equipo de operaciones de seguridad funcione de forma más eficiente y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizada en respuesta a amenazas bien conocidas que existen en la actualidad. Acciones de corrección adecuadas esperando la aprobación, lo que permite al equipo de operaciones de seguridad responder a amenazas detectadas. 
 
@@ -94,7 +94,7 @@ Cada paso de alto nivel incluye una serie de subpasos que se ejecutan para propo
 
 Supongamos que un usuario de su organización recibe un correo electrónico que piensa que es un intento de suplantación de identidad. El usuario, entrenado para informar de estos mensajes, usa el [complemento de mensajes de informe](enable-the-report-message-add-in.md) para enviarlo a Microsoft para su análisis. El envío también se envía a su sistema y es visible en el explorador en la vista **envíos** (antes denominada **"vista notificada por el usuario"** ). Además, el mensaje notificado por el usuario ahora desencadena una alerta informativa basada en el sistema, que inicia automáticamente la guía de la investigación.
 
-Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Incluyen:
+Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Entre ellas se incluyen:
 - Una determinación del tipo de amenaza que podría ser;
 - Quién lo envió;
 - Dónde se envió el correo electrónico desde (infraestructura de envío);

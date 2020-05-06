@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: En este artículo, obtendrá información sobre la herramienta de investigación de datos (versión preliminar) en Microsoft 365. La herramienta de investigaciones de datos le ayuda a evaluar y corregir la derramación de datos.
+ms.openlocfilehash: 6975d554e939481c6ee1c32ec4e76bb25c7bf36c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626776"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036053"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 

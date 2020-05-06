@@ -1,5 +1,5 @@
 ---
-title: Agregar, actualizar o quitar los métodos de pago
+title: Agregar, actualizar o quitar sus métodos de pago
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,17 +24,17 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106053"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045933"
 ---
-# <a name="add-update-or-remove-your-payment-methods"></a>Agregar, actualizar o quitar los métodos de pago
+# <a name="add-update-or-remove-your-payment-methods"></a>Agregar, actualizar o quitar sus métodos de pago
 
 ::: moniker range="o365-worldwide"
-Puede comprar productos y servicios de Microsoft con una tarjeta de crédito o débito o con una cuenta bancaria. Puede escribir su información de pago en la página **métodos de pago** o al realizar una compra.
+Puede comprar productos y servicios de Microsoft con una tarjeta de crédito o débito o con una cuenta bancaria. Puede escribir la información de su pago en la página **Métodos de pago** o al realizar una compra.
 
 Solo puede administrar los métodos de pago que haya agregado.
 
@@ -45,7 +45,7 @@ Solo puede administrar los métodos de pago que haya agregado.
 
 **¿La interfaz que ve no coincide con la que se describe en este artículo?** Si es así, consulte [Manage Payment Methods](manage-payment-methods.md).
 
-## <a name="add-a-payment-method"></a>Adición de un método de pago
+## <a name="add-a-payment-method"></a>Agregar un método de pago.
 
 1. En el centro de administración, vaya a la página facturas de **facturación** > **&** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">métodos de pago</a> pagos.
 2. Seleccione **Agregar o seleccionar un método de pago**.
@@ -60,13 +60,13 @@ No puede cambiar el número de una tarjeta o cuenta bancaria existente. Si la ta
 2. En la página **métodos de pago** , seleccione la tarjeta o la cuenta bancaria que desee actualizar y, a continuación, seleccione **Editar**.
 3. Actualice la información del método de pago (el nombre de la tarjeta o la cuenta bancaria, la dirección de facturación, el número de teléfono o la fecha de expiración) y seleccione **Guardar**.
 
-## <a name="change-a-payment-method"></a>Cambiar un método de pago
+## <a name="change-a-payment-method"></a>Cambiar un método de pago.
 
 Puede cambiar el método de pago que se usa para pagar una sola suscripción. También puede mover todas las suscripciones de un método de pago a otro.
 
 ### <a name="change-the-payment-method-used-for-a-single-subscription"></a>Cambiar el método de pago usado para una única suscripción
 
-1. En el centro de administración, vaya a **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 2. Seleccione la suscripción por la que desea pagar con la nueva tarjeta o cuenta bancaria. En **facturación**, junto al método de pago, seleccione **Editar**.
 3. Junto a su método de pago existente, seleccione **cambiar**.
 4. En el menú desplegable, seleccione un método de pago alternativo o elija Agregar un método de pago.
@@ -83,16 +83,16 @@ Puede cambiar el método de pago que se usa para pagar una sola suscripción. Ta
 > [!NOTE]
 > Solo puede cambiar entre los métodos de pago existentes en el panel **cambiar método de pago** . Si desea cambiar a pago mediante factura, consulte [cambiar de tarjeta de crédito o cuenta bancaria a factura](change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice).
 
-## <a name="remove-a-payment-method"></a>Quitar un método de pago
+## <a name="remove-a-payment-method"></a>Quitar un método de pago.
 
 Solo puede quitar una tarjeta de crédito o débito o una cuenta bancaria de la lista de métodos de pago si no se ha adjuntado a una suscripción. Esto se aplica a todas las suscripciones, independientemente de su estado. Agregue un método de pago para la suscripción y, a continuación, quite el antiguo de esa suscripción. Si el método de pago está asociado a un perfil de facturación, cambie el método de pago usado para el perfil de facturación y, a continuación, quite el método de pago.
 
 ### <a name="delete-a-payment-method"></a>Eliminar un método de pago
 
-Si el método de pago no está asociado a ninguna suscripción, puede eliminarla inmediatamente.
+Puede eliminar su método de pago de forma inmediata, si este no está asociado a ninguna suscripción.
 
 1. En el centro de administración, vaya a la página facturas de **facturación** > **&** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">métodos de pago</a> pagos.
-2. Mantenga el mouse sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
+2. Desplace el cursor sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
 3. En la parte inferior del panel **Eliminar método de pago** , seleccione **eliminar**.
 
 ### <a name="add-an-alternate-payment-method-used-to-pay-for-subscriptions"></a>Agregar un método de pago alternativo usado para pagar por las suscripciones
@@ -100,7 +100,7 @@ Si el método de pago no está asociado a ninguna suscripción, puede eliminarla
 Si su método de pago está asociado a alguna suscripción y no tiene un método de pago alternativo en el archivo, primero agregue un método de pago. A continuación, cambie el método de pago usado para pagar las suscripciones. A continuación, puede eliminar el método de pago.
 
 1. En el centro de administración, vaya a la página facturas de **facturación** > **&** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">métodos de pago</a> pagos.
-2. Mantenga el mouse sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
+2. Desplace el cursor sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
 3. En el panel **Eliminar método de pago** se enumeran las suscripciones existentes que usan esa forma de pago.
 4. Seleccione **Agregar o seleccionar un método de pago**.
 5. Seleccione el tipo de método de pago que desea agregar, escriba la información de la cuenta y, a continuación, seleccione **Agregar**.
@@ -114,7 +114,7 @@ Si su método de pago está asociado a alguna suscripción y no tiene un método
 Si su método de pago está asociado a alguna suscripción y tiene al menos un método de pago alternativo en el archivo, cambie primero el método de pago usado para pagar las suscripciones. A continuación, puede eliminar el método de pago.
 
 1. En el centro de administración, vaya a la página facturas de **facturación** > **&** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">métodos de pago</a> pagos.
-2. Mantenga el mouse sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
+2. Desplace el cursor sobre la tarjeta o la cuenta bancaria y, después, seleccione el icono Eliminar.
 3. En el panel **Eliminar método de pago** se enumeran las suscripciones existentes que usan esa forma de pago.
 4. Seleccione **cambiar el método de pago**.
 5. Seleccione un método de pago alternativo en la lista desplegable y, a continuación, seleccione **cambiar**.
@@ -141,7 +141,7 @@ Si el método de pago está asociado a un perfil de facturación y también se u
 2. Si no tiene un método de pago alternativo, siga los pasos descritos en [Agregar un método de pago alternativo usado para pagar por las suscripciones](#add-an-alternate-payment-method-used-to-pay-for-subscriptions).
 3. Si ya tiene otros métodos de pago disponibles, siga los pasos que se indican en [cambiar un método de pago](#change-a-payment-method).
 
-## <a name="troubleshoot-payment-methods"></a>Solucionar problemas de métodos de pago
+## <a name="troubleshoot-payment-methods"></a>Solucionar los problemas de los métodos de pago
 
 |**Problema**|**Pasos para la solución de problemas**|
 |:-----|:-----|

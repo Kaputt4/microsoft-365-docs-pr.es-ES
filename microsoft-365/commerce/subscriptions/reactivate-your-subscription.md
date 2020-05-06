@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Obtenga información acerca de cómo reactivar la suscripción cuando expire, o si Microsoft la deshabilita o la cancela en medio.
-ms.openlocfilehash: 79a8b157743b96dd3227086d417e6903ec1762b0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707672"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046245"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -40,10 +40,9 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 ::: moniker range="o365-worldwide"
 
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
-
-2. En la página **Productos y servicios**, busque la suscripción que quiere reactivar. En la sección **facturación** , seleccione **reactivar**.
+2. En la página **sus productos** , busque la suscripción que desea reactivar. En la sección **facturación** , seleccione **reactivar**.
   
     Si no ve **reactivar** como acción disponible, [llame al soporte técnico](../../admin/contact-support-for-business-products.md) para reactivar la suscripción.
 
@@ -91,11 +90,11 @@ Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a m
 
 3. Introduzca los datos de pago. Puede actualizar aquí su información de pago actual.
 
-  - Si su suscripción ha expirado, después de enviar los detalles de pago, la suscripción vuelve a un estado activo y la siguiente fecha de **facturación** se extiende un mes o un año, en función de su compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expira de nuevo, [Active facturación recurrente](renew-your-subscription.md#turn-recurring-billing-off-or-on).
+    - Si su suscripción ha expirado, después de enviar los detalles de pago, la suscripción vuelve a un estado activo y la siguiente fecha de **facturación** se extiende un mes o un año, en función de su compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expira de nuevo, [Active facturación recurrente](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > La capacidad para pagar por cuenta bancaria no está disponible en algunos países o regiones.
   
-  - Si la suscripción se ha cancelado o se ha deshabilitado porque no se ha recibido un pago, vuelve a un estado activo y la próxima fecha de **facturación** sigue siendo la misma.
+    - Si la suscripción se ha cancelado o se ha deshabilitado porque no se ha recibido un pago, vuelve a un estado activo y la próxima fecha de **facturación** sigue siendo la misma.
 
 ::: moniker-end

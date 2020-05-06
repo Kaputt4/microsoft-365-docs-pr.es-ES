@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Obtenga información sobre Microsoft 365 for Business e-Invoice para Taiwán.
-ms.openlocfilehash: 4603d9f39a4421b6711d056d0646981732353c5c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632712"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045885"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprenda su factura electrónica para Microsoft 365 for Business (Taiwán)
 
@@ -55,7 +55,7 @@ En el momento de crear la cuenta, en el **paso 1**, vamos a conocerlo, **Página
   
 Una vez que haya creado la cuenta, puede actualizar el NIF a través del centro de administración siguiendo estos pasos:
   
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
     
 2. Seleccione una suscripción y, a continuación, seleccione **más acciones**.
     

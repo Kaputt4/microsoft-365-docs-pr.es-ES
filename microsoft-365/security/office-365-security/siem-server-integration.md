@@ -1,5 +1,5 @@
 ---
-title: " Integración del servidor de información de seguridad y administración de eventos (SIEM) con los servicios y aplicaciones de Microsoft 365"
+title: Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,13 +15,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - SIEM
+- seo-marvel-apr2020
 description: Obtenga información general sobre la integración de la información de seguridad y la administración de eventos (SIEM) con sus aplicaciones y servicios en la nube de Microsoft 365
-ms.openlocfilehash: a4ef144d02ebf0481481861c3dfa60a43b4f3ace
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081225"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035265"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de información de seguridad y administración de eventos (SIEM) con los servicios y aplicaciones de Microsoft 365
 

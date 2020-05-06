@@ -19,13 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Crear una directiva de archivado y eliminación que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943583"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034322"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -312,7 +313,7 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
     
 - En la tabla siguiente se proporciona más información sobre cada etiqueta de retención que se agrega a la Directiva de retención personalizada que se creó siguiendo los pasos de este tema.
     
-    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Tipo**|
+    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Mover a archivo desde Alpine House a 3 años  <br/> |Mueve los elementos que tienen un antigüedad de 1095 días (3 años) al buzón de archivo.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (archivo); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |
     |Eliminación permanente de Alpine House de 7 años  <br/> |Elimina permanentemente los elementos del buzón de correo principal o del buzón de archivo cuando tienen 7 años de antigüedad.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (eliminación); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |

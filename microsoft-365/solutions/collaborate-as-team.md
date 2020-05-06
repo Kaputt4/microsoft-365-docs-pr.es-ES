@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Obtenga información sobre cómo colaborar con invitados en Microsoft Teams.
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados en Microsoft Teams.
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002197"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036012"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -58,19 +59,19 @@ Los equipos tienen un conmutador de encendido y apagado principal para el acceso
 
 Asegúrese de que el acceso de invitado esté habilitado en Microsoft Teams y realice cualquier ajuste en la configuración de invitado en función de las necesidades de su empresa. Tenga en cuenta que esta configuración afecta a todos los equipos.
 
-![Captura de pantalla de la opción de acceso de invitado de Teams](../media/teams-guest-access-toggle-on.png)
+![Captura de pantalla de la opción de acceso de invitados de Teams](../media/teams-guest-access-toggle-on.png)
 
-Para establecer la configuración de acceso de invitado de Teams
+Para establecer la configuración de acceso de invitados de Teams
 
-1. Inicie sesión en el centro de administración de Microsoft [https://admin.microsoft.com](https://admin.microsoft.com)365 en.
-2. En el panel de navegación izquierdo, haga clic en **Mostrar todo**.
-3. En **centros de administración**, haga clic en **Teams**.
-4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **configuración de toda la organización** y haga clic en **acceso de invitado**.
-5. Asegúrese de que la **opción permitir el acceso de invitado en Microsoft Teams** está **activada**.
-6. Realice los cambios que desee en la configuración de invitado adicional y, a continuación, haga clic en **Guardar**.
+1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
+2. En el panel de navegación izquierdo, haga clic en **Mostrar todos**.
+3. En **Centros de administración**, haga clic en **Teams**.
+4. En el centro de administración de Teams, en el panel de navegación de la izquierda, expanda **Configuración de toda la organización** y haga clic en **Acceso de invitado**.
+5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
+6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
 > [!NOTE]
-> La configuración del invitado de Teams puede tardar hasta 24 horas en activa una vez que la activa.
+> La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Configuración de invitado de Microsoft 365 Groups
 
@@ -171,7 +172,7 @@ Para invitar a invitados a un equipo
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.
 5. Haga clic en **Agregar** y, después, en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

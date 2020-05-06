@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar las suscripciones de suscripción de autoservicio gratuitas para su organización.
-ms.openlocfilehash: 056ae95f9f5067ea3fa86164b620c72c84e3aad4
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43154141"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045266"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de suscripción de autoservicio
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>¿Qué son las suscripciones de suscripción de autoservicio?
 
-Hay un número limitado de suscripciones de suscripción de autoservicio gratuitas para las que los usuarios de su organización pueden registrarse. Un usuario solo puede suscribirse a una suscripción de inicio de sesión de autoservicio y usarla para usted mismo. Estas suscripciones aparecen en la página **productos & Services** , están marcadas como **libres**y tienen una nota que dice: "esta es una suscripción gratuita activada por los usuarios de su empresa". Puede administrar las suscripciones de suscripción de autoservicio al impedir que los usuarios se registren y eliminar suscripciones gratuitas para las que se hayan registrado los usuarios. Para obtener más información acerca del registro de Self-Service y las suscripciones disponibles, consulte [using Self-Service sign up in your Organization](../../admin/misc/self-service-sign-up.md).
+Hay un número limitado de suscripciones de suscripción de autoservicio gratuitas para las que los usuarios de su organización pueden registrarse. Un usuario solo puede suscribirse a una suscripción de inicio de sesión de autoservicio y usarla para usted mismo. Estas suscripciones aparecen en la página **sus productos** , están marcadas como **libres**y tienen una nota que dice: "esta es una suscripción gratuita activada por los usuarios de su empresa". Puede administrar las suscripciones de suscripción de autoservicio al impedir que los usuarios se registren y eliminar suscripciones gratuitas para las que se hayan registrado los usuarios. Para obtener más información acerca del registro de Self-Service y las suscripciones disponibles, consulte [using Self-Service sign up in your Organization](../../admin/misc/self-service-sign-up.md).
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>¿En qué se diferencian estas suscripciones de las suscripciones de compra de autoservicio?
 
@@ -43,7 +43,7 @@ Use el cmdlet [**set-MsolCompanySettings**](https://docs.microsoft.com/powershel
 > [!IMPORTANT]
 > Al eliminar una suscripción de inicio de sesión de autoservicio, impide que todos los usuarios accedan a sus datos y correo electrónico, y eliminen todos los datos y el correo electrónico.
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 2. Busque la suscripción de inicio de sesión de autoservicio que desea eliminar. En la sección **configuración & acciones** , seleccione **eliminar suscripción**.
 3. En el panel **eliminar suscripción** , active la casilla de verificación y, a continuación, seleccione **eliminar suscripción**.
 

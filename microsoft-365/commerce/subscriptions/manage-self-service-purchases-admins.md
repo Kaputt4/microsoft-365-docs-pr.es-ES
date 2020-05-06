@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409635"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046185"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
@@ -29,7 +29,7 @@ También puede controlar si los usuarios de la organización pueden realizar com
 
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Junto a **refinar resultados**, en la lista desplegable **tipo de cuenta** , elija **Self-Service**.
 
@@ -56,7 +56,7 @@ Puede deshabilitar o habilitar las compras de autoservicio para los usuarios de 
 
 Puede usar el módulo de PowerShell **MSCommerce** para:
 
-- Ver el estado predeterminado del valor **** &mdash; del parámetro AllowSelfServicePurchase si está habilitado o deshabilitado por el producto.
+- Ver el estado predeterminado del valor **AllowSelfServicePurchase** &mdash; del parámetro AllowSelfServicePurchase si está habilitado o deshabilitado por el producto.
 - Ver una lista de los productos aplicables y si la compra de servicios automáticos está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 

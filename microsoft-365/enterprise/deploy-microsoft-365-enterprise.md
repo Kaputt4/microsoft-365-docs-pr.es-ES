@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: Comprenda los recursos que puede usar para implementar Microsoft 365 Enterprise en su organización.
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: Conozca los diferentes recursos que puede utilizar para implementar Microsoft 365 para empresas en su organización.
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002360"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031431"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -75,7 +75,7 @@ Empiece su recorrido de implementación de un extremo a otro con por su cuenta [
 
 ## <a name="take-a-test-drive"></a>Utilice una versión limitada de prueba
 
-"*Lo que tenemos que aprender lo aprendemos haciéndolo.*" - Aristóteles
+"*Porque las cosas que tenemos que aprender antes de poder hacerlas, las aprendemos haciéndolas.*" - Aristóteles
 
 Si acaba de empezar a utilizar Microsoft 365 Enterprise o un producto o característica específicos, una de las mejores formas de familiarizarse con ellos es utilizándolos usted mismo y observando su funcionamiento.
 
@@ -117,7 +117,7 @@ Definir una cultura digital es una prioridad principal para cada líder que se e
 
 Al mismo tiempo, las características de seguridad inteligente y la integración del producto ayudan a simplificar las necesidades de administración y reducir el costo total de propiedad en el ciclo de vida de TI. 
 
-Obtenga información sobre cómo Core Services Engineering and Operations (antes TI de Microsoft) ha [creado un espacio de trabajo moderno con Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
+Obtenga información sobre cómo Core Services Engineering and Operations (antes TI de Microsoft) ha [creado un espacio de trabajo moderno con Microsoft 365](https://www.microsoft.com/es-ES/itshowcase/microsoft-365).
 
 > [!Note]
 > Esta característica solo está disponible en inglés.

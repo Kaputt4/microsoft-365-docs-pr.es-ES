@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Obtenga información sobre cómo agregar un socio de asesor de suscripción como partner de registro en el momento de la compra de Microsoft 365, cambiar el partner o eliminar un partner de una suscripción.
-ms.openlocfilehash: 913be0cfa94784826f4bc8dcfcc1bbf314ab4c09
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627973"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045289"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -114,13 +114,13 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
     
 2. Si tiene más de una suscripción, seleccione la suscripción que desea editar.
   
 3. En la página de suscripción, seleccione la pestaña **asociado** y, a continuación, escriba el identificador de la red asociada para el socio que está agregando puede obtener el identificador de asociado de Microsoft del asociado preguntando al asociado.
     
-4. Elija **Agregar**.
+4. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ Para aceptar esta oferta
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
     
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -202,14 +202,14 @@ Para aceptar esta oferta
   
   Si no tiene un partner, verá un mensaje que dice "no hay nada aquí".
   
-## <a name="delete-a-partner-from-a-subscription"></a>Eliminar el partner de una suscripción
+## <a name="delete-a-partner-from-a-subscription"></a>Quitar un partner de una suscripción
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1.  En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1.  En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
     
 2. Si tiene varias suscripciones, seleccione el nombre de la que quiere editar.
     
@@ -248,7 +248,7 @@ Para aceptar esta oferta
 
 ::: moniker range="o365-worldwide"
 
-No puede quitar una relación de revendedor por su cuenta.
+No puede quitar una relación de distribuidor usted mismo.
   
 Si va a quitar una relación de revendedores, la opción **eliminar** estará atenuada y deberá preguntar al Partner de revendedor que siga estas instrucciones: [quitar una relación de revendedores con el Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
 
@@ -256,7 +256,7 @@ Si va a quitar una relación de revendedores, la opción **eliminar** estará at
 
 ::: moniker range="o365-germany"
 
-No puede quitar una relación de revendedor por su cuenta.
+No puede quitar una relación de distribuidor usted mismo.
   
 Si va a quitar una relación de revendedores, la opción **eliminar** estará atenuada y deberá preguntar al Partner de revendedor que siga estas instrucciones: [quitar una relación de revendedores con el Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
@@ -264,7 +264,7 @@ Si va a quitar una relación de revendedores, la opción **eliminar** estará at
 
 ::: moniker range="o365-21vianet"
 
-No puede quitar una relación de revendedor por su cuenta.
+No puede quitar una relación de distribuidor usted mismo.
   
 Si va a quitar una relación de revendedores, la opción **eliminar** estará atenuada y deberá preguntar al Partner de revendedor que siga estas instrucciones: [quitar una relación de revendedores con el Partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   

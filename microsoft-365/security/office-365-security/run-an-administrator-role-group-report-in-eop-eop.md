@@ -1,5 +1,5 @@
 ---
-title: 'Ejecutar un informe de grupo de roles de administrador en EOP '
+title: Ejecutar un informe de grupo de roles de administrador en EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP). Este informe registra cuando un administrador agrega o quita miembros de grupos de roles de administrador, Microsoft Exchange Online Protection (EOP) registra cada ocurrencia.
-ms.openlocfilehash: d9e7db8accae259b3eb332ce17c52c6749c2bec2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom:
+- seo-marvel-apr2020
+description: En este artículo, aprenderá a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP).
+ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598547"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034461"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP
 

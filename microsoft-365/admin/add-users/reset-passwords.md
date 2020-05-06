@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626951"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049452"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -93,7 +93,7 @@ Si ha olvidado la contraseña y no puede iniciar sesión:
     
 - Pida a otro administrador global de su empresa que restablezca su contraseña.
     
-- O [llame al soporte técnico de Microsoft](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
+- O [llame al soporte técnico de Microsoft](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas de empresa para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>
@@ -117,9 +117,9 @@ Estos pasos son aplicables a una empresa con decenas de usuarios. Si cuenta con 
 
 Use PowerShell. Lea esta publicación de Eyal Doron: [Administrar contraseñas con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Artículo relacionado: [Establecer las contraseñas de varias cuentas de usuario](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
+Artículo relacionado: [Establecer las contraseñas de varias cuentas de usuario](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-Para obtener información general, consulte [PowerShell para administradores de Microsoft 365](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Para obtener información general, consulte [PowerShell para administradores de Microsoft 365](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzar un cambio de contraseña para todos los usuarios de su empresa
 <a name="bkmk_forgot"> </a>

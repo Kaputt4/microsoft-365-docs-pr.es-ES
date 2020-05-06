@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos en la exhibición avanzada de documentos electrónicos que podría impedir el procesamiento adecuado del contenido.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074577"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035914"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -104,7 +105,7 @@ En situaciones en las que la exhibición de documentos electrónicos avanzado no
 
 ## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Corrección de errores mediante la carga del texto extraído
 
-A veces no es posible corregir un archivo en formato nativo que la exhibición avanzada de documentos electrónicos pueda interpretar. Sin embargo, puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado " *superposición de texto*"). Para ello, siga los pasos descritos en este artículo, pero en lugar de corregir el archivo original en formato nativo, debe crear un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargar el archivo de texto con el nombre de archivo original. anexado con un sufijo. txt. Por ejemplo, puede descargar un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. Abra el archivo en la aplicación nativa, copie el texto y, a continuación, péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Al hacerlo, asegúrese de quitar el archivo original en formato nativo de la ubicación de archivos corregidos en el equipo local antes de cargar el archivo de texto corregido en la exhibición avanzada de documentos electrónicos.
+A veces no es posible corregir un archivo en formato nativo que la exhibición avanzada de documentos electrónicos pueda interpretar. Sin embargo, puede reemplazar el archivo original por un archivo de texto que contenga el texto original del archivo nativo (en un proceso denominado " *superposición de texto*"). Para ello, siga los pasos que se describen en este artículo, pero, en lugar de corregir el archivo original en formato nativo, debe crear un archivo de texto que contenga el texto extraído del archivo original y, a continuación, cargar el archivo de texto con el nombre de archivo original anexado con un sufijo. txt. Por ejemplo, puede descargar un archivo durante la corrección de errores con el nombre de archivo 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. Abra el archivo en la aplicación nativa, copie el texto y, a continuación, péguelo en un nuevo archivo denominado 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. txt. Al hacerlo, asegúrese de quitar el archivo original en formato nativo de la ubicación de archivos corregidos en el equipo local antes de cargar el archivo de texto corregido en la exhibición avanzada de documentos electrónicos.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Qué sucede cuando se corrigen los archivos
 

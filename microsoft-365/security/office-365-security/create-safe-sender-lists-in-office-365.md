@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Los administradores pueden obtener información sobre las opciones disponibles en Microsoft 365 y EOP que permiten que los mensajes entrantes omitan el filtrado de correo no deseado.
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo los administradores pueden crear una lista de remitentes seguros en Microsoft 365 y EOP que permite que los mensajes entrantes omitan el filtrado de correo no deseado.
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637681"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036348"
 ---
 # <a name="create-safe-sender-lists"></a>Crear listas de remitentes seguros
 
@@ -135,4 +137,4 @@ Para evitar que se filtre este mensaje, puede realizar los siguientes pasos:
 
 - [Use una regla de flujo de correo](#recommended-use-mail-flow-rules) con una condición que busque mensajes de blueyonder@news.blueyonderairlines.com ( `5322.From` la dirección, blueyonder.Airlines@margiestravel.com ( `5321.MailFrom`el) o ambos.
 
-Para obtener más información, vea [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
+Para obtener más información, vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302917"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046333"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte del escritorio administrado de incorporación a Microsoft incluye la adición e implementación de aplicaciones en los dispositivos del usuario. Una vez que esté usando Microsoft Managed Desktop portal, puede Agregar e implementar sus aplicaciones. 
@@ -38,10 +38,10 @@ En este procedimiento, seleccionará el tipo de aplicación que desea agregar y,
 
 Puede iniciar sesión en el portal de escritorio administrado de Microsoft, o iniciar sesión en Intune y, a continuación, buscar Microsoft Managed Desktop. Se mostrará el inicio de sesión en Microsoft Managed Desktop portal. 
 
-1.  Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal). 
-2.  En **inventario**, seleccione **aplicaciones**.
-3.  En la carga de trabajo de aplicaciones, seleccione **Agregar**.
-4.  En **Agregar aplicación**, seleccione **aplicación de línea de negocio** o **aplicación de Windows (Win32)**.
+1.    Inicie sesión en el [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mmdportal). 
+2.    En **inventario**, seleccione **aplicaciones**.
+3.    En la carga de trabajo de aplicaciones, seleccione **Agregar**.
+4.    En **Agregar aplicación**, seleccione **aplicación de línea de negocio** o **aplicación de Windows (Win32)**.
     - Si seleccionó **aplicación de línea de negocio**, vea [Agregar una aplicación de línea de negocio de Windows a Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
     - Si seleccionó **Windows App (Win32)**, vea [Administración de aplicaciones Win32](https://docs.microsoft.com/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar aplicaciones para Windows.
 
@@ -55,7 +55,7 @@ Si no te has registrado en Microsoft Store para empresas, puedes registrarte en 
 1. Inicie sesión en [Microsoft Store para empresas](https://businessstore.microsoft.com) con su cuenta de administrador de Microsoft Store for Business.
 2. Seleccione **comprar para mi grupo**.
 3. Use la búsqueda para encontrar la aplicación que quiera y seleccione la aplicación.
-4. En los detalles del producto, seleccione **obtener la aplicación**. Microsoft Store agrega la aplicación a los **productos & Services** para la organización.
+4. En los detalles del producto, seleccione **obtener la aplicación**. Microsoft Store agrega la aplicación a **los productos** de la organización.
 
 **Para forzar una sincronización entre Intune y Microsoft Store para empresas**
 1. Iniciar sesión en [Azure portal](https://portal.azure.com/) como administrador de Intune o administrador global para su espacio empresarial
@@ -79,10 +79,10 @@ Si no te has registrado en Microsoft Store para empresas, puedes registrarte en 
 
 Cree tres grupos de Azure AD para cada aplicación. En esta tabla se describen los grupos que necesitará (disponibles, obligatorios y de desinstalación). 
 
-Tipo de asignación de aplicación |   Uso de grupo   | Nombre de ejemplo de Azure AD
+Tipo de asignación de aplicación |    Uso de grupo    | Nombre de ejemplo de Azure AD
 --- | --- | ---
 Disponible |  La aplicación estará disponible desde el sitio web o la aplicación del portal de empresa. | MMD: *nombre* de la aplicación: disponible
-Necesario |  La aplicación se instala en los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: obligatorio
+Obligatorio |  La aplicación se instala en los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: obligatorio
 Uninstall |  La aplicación se desinstala de los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: desinstalar
 
 Agregue los usuarios a estos grupos para hacer que la aplicación esté presente, instalar la aplicación o quitar la aplicación del dispositivo de escritorio administrado por Microsoft. 
