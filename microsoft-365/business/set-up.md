@@ -1,5 +1,5 @@
 ---
-title: Configuración de Microsoft 365 empresa Premium
+title: Configurar Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración para Microsoft 365 Business Premium, incluida la adición de un dominio y usuarios, la configuración de directivas de seguridad y mucho más.
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635765"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048042"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configuración de Microsoft 365 Business Premium en el Asistente para instalación
 
@@ -124,7 +124,7 @@ Las directivas que configure en el asistente se aplican automáticamente a un [g
 
 ## <a name="secure-windows-10-pcs"></a>Proteger equipos con Windows 10
 
-En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Complementos y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar. Consulte [proteger los equipos con Windows 10](secure-win-10-pcs.md) para obtener instrucciones completas.
+En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Inicio de sesión y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar. Consulte [proteger los equipos con Windows 10](secure-win-10-pcs.md) para obtener instrucciones completas.
 
 ## <a name="deploy-office-365-client-apps"></a>Implementación de aplicaciones cliente de Office 365
 

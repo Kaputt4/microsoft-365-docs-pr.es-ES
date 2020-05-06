@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre las compras de autoservicio.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 26b6e11a6c992f85b136d05269cefb80f233b11f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636552"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046161"
 ---
 # <a name="self-service-purchase-faq"></a>Preguntas más frecuentes sobre las compras sin asistencia
 
@@ -119,7 +119,7 @@ Los administradores pueden asignar licencias existentes o comprar suscripciones 
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>¿Dónde ve el administrador las compras sin servicio de soporte?
 
-Los administradores globales y de facturación pueden ver las suscripciones adquiridas a través de la compra de autoservicio en productos de **facturación** > **& Services** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración de Microsoft 365</a> junto con todas las demás suscripciones adquiridas a través de la adquisición central. Pueden filtrar la lista para que solo las suscripciones adquiridas a través de la adquisición central o incluir las suscripciones adquiridas a través de la compra de autoservicio.
+Los administradores globales y de facturación pueden ver las suscripciones adquiridas a través de la compra de autoservicio en la **facturación** > de los**productos** en el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365 de Microsoft</a> junto con todas las demás suscripciones adquiridas a través de la adquisición central. Pueden filtrar la lista para que solo las suscripciones adquiridas a través de la adquisición central o incluir las suscripciones adquiridas a través de la compra de autoservicio.
 
 Los administradores pueden ver el producto, el nombre del comprador, la suscripción adquirida, la fecha de expiración, el historial de la orden, el precio de compra y los usuarios asignados.
 

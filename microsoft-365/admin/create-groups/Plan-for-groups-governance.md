@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Obtenga información sobre cómo planear el gobierno de grupos de Microsoft 365.
-ms.openlocfilehash: 95cd549fea6646639386d33e5a026f60b3ccbbba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617139"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049416"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planeación del gobierno en grupos
 
@@ -50,10 +50,10 @@ Hay tres métodos principales de comunicación que admiten los grupos de Microso
 > La creación de un nuevo grupo mediante otras aplicaciones de trabajo en equipo, como SharePoint, Planner o Stream-creará un grupo con una bandeja de entrada de Outlook y la capacidad de conectarse a Microsoft Teams.
 
 Según el lugar en el que se cree un grupo, ciertos recursos se aprovisionan automáticamente, por ejemplo:
-- [Bandeja de entrada](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) : para conversaciones de correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede configurar para que acepte mensajes de personas ajenas al grupo e incluso de fuera de la organización, como una lista de distribución tradicional.
+- [Bandeja de entrada](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) : para conversaciones de correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede configurar para que acepte mensajes de personas ajenas al grupo e incluso de fuera de la organización, como una lista de distribución tradicional.
  - [Calendario](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) : para programar eventos relacionados con el grupo
 - [Sitio de grupo de SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) : repositorio central de información, vínculos y contenido relacionado con el grupo
-- [Biblioteca de documentos de SharePoint](https://support.office.com/article/share-group-files-749bc73b-90c9-4760-9b6f-9aa1cf01b403) : un punto central para que el grupo almacene y comparta archivos
+- [Biblioteca de documentos de SharePoint](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403) : un punto central para que el grupo almacene y comparta archivos
 - [Bloc de notas de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) : para recopilar ideas, investigar e información
 - [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) : para asignar y administrar tareas de proyecto entre los miembros del grupo
 - [Grupo de Yammer](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) : un punto común para tener conversaciones y compartir información
@@ -81,7 +81,7 @@ Hay varios lugares para tener una conversación en Microsoft 365. Comprender dó
 
 - Grupos de Outlook: DL moderno (colaboración basada en correo electrónico)
   - Ubicuo para la comunicación dirigida
-  - Actualización de las listas de distribución a Microsoft 365 Groups: [¿por qué debe actualizar?](https://support.office.com/article/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - Actualización de las listas de distribución a Microsoft 365 Groups: [¿por qué debe actualizar?](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - SharePoint: experiencia de colaboración de contenido principal para todos los grupos de 365 de Microsoft
   - Cada grupo obtiene un sitio de grupo de SharePoint conectado
@@ -119,7 +119,7 @@ Hay tres modelos principales de aprovisionamiento en grupos: abiertos, dirigidos
 | -------------- | ------------------------------------------------------------ |
 | Abrir (predeterminado) | Los usuarios pueden crear sus propios grupos según sea necesario sin tener que esperar ni molestarse. |
 | Dirigido a ti         | Los usuarios solicitan un grupo a partir de él. Puede guiarlas en la selección de las mejores herramientas de colaboración para sus necesidades. |
-| Rige     | Creación de grupos restringida a personas, equipos o servicios específicos. Para obtener más información, consulte [administrar quién puede crear grupos de Microsoft 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618). |
+| Rige     | Creación de grupos restringida a personas, equipos o servicios específicos. Para obtener más información, consulte [administrar quién puede crear grupos de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups). |
 
 Es posible que su organización tenga requisitos específicos para implementar controles estrictos sobre quién puede crear grupos. Use la siguiente tabla para ayudar a decidir qué modelo de aprovisionamiento se ajusta a su organización.
 
@@ -154,7 +154,7 @@ Si ha eliminado un grupo de 365 de Microsoft, de forma predeterminada se conserv
 >Durante el período de "eliminación temporal", si un usuario intenta acceder al sitio, recibirán un mensaje de acceso prohibido con el código 403. Después de este período, si el usuario intenta acceder al sitio, recibirá un mensaje de sitio no encontrado con el código 404.
 
 #### <a name="resources"></a>*Recursos*
-- [Restaurar un grupo de Microsoft 365 eliminado](https://support.office.com/article/Restore-a-deleted-Office-365-Group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54?ui=en-US&rs=en-001&ad=US)
+- [Restaurar un grupo de Microsoft 365 eliminado](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Restaurar un grupo de Microsoft 365 eliminado en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Eliminar grupos mediante el cmdlet Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 
@@ -207,7 +207,7 @@ Una vez establecido un grupo para que expire:
 >Al cambiar la Directiva de expiración, el servicio vuelve a calcular la fecha de caducidad para cada grupo. Siempre comienza a contar desde la fecha en que se creó el grupo y, a continuación, aplica la nueva Directiva de expiración.
 
 #### <a name="resources"></a>*Recursos*
-- [Directiva de expiración de grupo 365 de Microsoft](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+- [Directiva de expiración del Grupo de Microsoft 365](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Configurar la Directiva de expiración para los grupos de Microsoft 365](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a><a name="group-guest-access"></a>Acceso de invitado de grupo
@@ -273,7 +273,7 @@ Para los años, las organizaciones han dependido de los grupos de distribución 
 
 #### <a name="resources"></a>*Recursos*
 - [Actualizar listas de distribución (DL) a grupos de Outlook](https://aka.ms/whyupgradedls)
-- Actualizar con un solo clic a través del centro de administración de Exchange o mediante [scripts de PowerShell](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f)
+- Actualizar con un solo clic a través del centro de administración de Exchange o mediante [scripts de PowerShell](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)
 - [Migrar listas de distribución a los grupos de Microsoft 365-ayuda para administradores](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 - [Conecte los sitios de SharePoint existentes a los grupos de Microsoft 365:](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group)
 - [Analizar y usar los datos de escáner](https://docs.microsoft.com/sharepoint/dev/transform/modernize-connect-to-office365-group-scanner)
@@ -296,8 +296,8 @@ El panel de informes de Microsoft 365 le muestra la información general de acti
 
 
 #### <a name="resources"></a>*Recursos*
-- [Informes de Microsoft 365 en el centro de administración](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)
-- [Paquete de contenido de adopción de Office 365](https://support.office.com/article/Office-365-Adoption-Content-Pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+- [Informes de Microsoft 365 en el centro de administración](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Paquete de contenido de adopción de Office 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Paquete de contenido de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
 - [API de actividad de grupos de Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/office_365_groups_activity_reports)
 - [Informe de grupos de 365 de Microsoft (grupos unificados)](https://gallery.technet.microsoft.com/office/Office-365-Groups-Report-7e3e161b)
@@ -318,8 +318,8 @@ Considere una organización que ha implementado Microsoft 365 con al menos licen
 
 | Etapa | Descripción |
 | --------------- | ------------------------------------------------------------ |
-| Instrucciones |<ul><li>Considere un modelo de aprovisionamiento sin servicio.</li><li> Los grupos de Outlook & sitios de SharePoint son [privados de forma predeterminada](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Los grupos se pueden crear mediante la actualización de listas de distribución existentes (DLs), ya sea una por una o de forma masiva a través de PowerShell. Consulte [actualizar listas de distribución a grupos de 365 de Microsoft](https://support.office.com/article/Upgrade-distribution-lists-to-Office-365-Groups-in-Outlook-787D7A75-E201-46F3-A242-F698162FF09F).</li><li> Habilitar el acceso de invitado pero controlar el uso de dominios de invitado de permitir o bloquear.</li><li> Use los informes de grupo para obtener información sobre cómo los usuarios usan los grupos.</li><li> Considere la posibilidad de crear un equipo de Microsoft Teams para toda la organización como una forma de que todos formen parte de un único equipo de colaboración. </li></ul>|
-| Siguientes pasos      |<ul><li>Considere la posibilidad de usar [diseños de sitio y scripts de sitio](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) para definir el diseño predeterminado para los controles mediante las acciones definidas en la [Referencia del esquema JSON](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Revise los [informes de grupos](https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).</li><li>Realizar un seguimiento de grupos totales y grupos inactivos/activos.</li><li>Realizar un seguimiento de almacenamiento de Exchange y SharePoint usado.</li><li>Ver la actividad de grupo en conversaciones de buzones de grupo, actividad de archivos/sitios de grupo, etc.</li></ul> |
+| Instrucciones |<ul><li>Considere un modelo de aprovisionamiento sin servicio.</li><li> Los grupos de Outlook & sitios de SharePoint son [privados de forma predeterminada](https://techcommunity.microsoft.com/t5/Office-365-Groups/Groups-in-Outlook-and-Group-connected-team-sites-are-now-private/m-p/186395).</li><li> Los grupos se pueden crear mediante la actualización de listas de distribución existentes (DLs), ya sea una por una o de forma masiva a través de PowerShell. Consulte [actualizar listas de distribución a grupos de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).</li><li> Habilitar el acceso de invitado pero controlar el uso de dominios de invitado de permitir o bloquear.</li><li> Use los informes de grupo para obtener información sobre cómo los usuarios usan los grupos.</li><li> Considere la posibilidad de crear un equipo de Microsoft Teams para toda la organización como una forma de que todos formen parte de un único equipo de colaboración. </li></ul>|
+| Siguientes pasos      |<ul><li>Considere la posibilidad de usar [diseños de sitio y scripts de sitio](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-overview) para definir el diseño predeterminado para los controles mediante las acciones definidas en la [Referencia del esquema JSON](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema).</li><li>Revise los [informes de grupos](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups).</li><li>Realizar un seguimiento de grupos totales y grupos inactivos/activos.</li><li>Realizar un seguimiento de almacenamiento de Exchange y SharePoint usado.</li><li>Ver la actividad de grupo en conversaciones de buzones de grupo, actividad de archivos/sitios de grupo, etc.</li></ul> |
 
 ### <a name="medium-sized-business"></a>Empresa mediana
 Además de las recomendaciones anteriores, tenga en cuenta lo siguiente para empresas medianas que hayan implementado Microsoft 365 con al menos una empresa E3/E5 con licencias de Azure Active Directory Premium P1.

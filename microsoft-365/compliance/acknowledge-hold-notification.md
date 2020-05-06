@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Es posible que deba informar a los custodios de su obligación de conservar la información almacenada electrónicamente como parte de la investigación legal. La exhibición avanzada de documentos electrónicos le permite administrar fácilmente el proceso de notificación de retención.
-ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo usar la exhibición avanzada de documentos electrónicos para enviar y realizar un seguimiento de las notificaciones de retención legal a través del correo electrónico, así como supervisar el estado de la obligación.
+ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080286"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034890"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 

@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638337"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045241"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -39,7 +39,7 @@ Con los vínculos seguros ATP habilitados, si un usuario hace clic en un víncul
   
 1. Revise los requisitos previos.
     
-2. Revise y edite la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios. Por ejemplo, puede [configurar la lista de direcciones URL bloqueadas personalizadas para vínculos seguros ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Revise y edite la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios. Por ejemplo, puede [configurar la lista de direcciones URL bloqueadas personalizadas para vínculos seguros ATP](set-up-a-custom-blocked-urls-list-atp.md).
     
 3. Agregar o editar directivas para destinatarios de correo electrónico específicos, incluida [la configuración de la lista de direcciones URL "no reescribir" personalizadas para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -55,7 +55,7 @@ Con los vínculos seguros ATP habilitados, si un usuario hace clic en un víncul
     |---------|---------|
     |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-    |Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
     Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -75,11 +75,11 @@ Cuando tenga la [protección contra amenazas avanzada de Office 365](office-365-
     
 3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. En la sección **bloquear las siguientes direcciones URL** , especifique una o más direcciones URL en las que desee impedir que los usuarios de la organización puedan visitar. (Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md)).
+4. En la sección **bloquear las siguientes direcciones URL** , especifique una o más direcciones URL en las que desee impedir que los usuarios de la organización puedan visitar. (Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-atp.md)).
     
 5. En la sección **configuración que se aplica a los contenidos excepto el correo electrónico** , active (o desactive) las opciones que desee usar. (Le recomendamos que seleccione todas las opciones). 
     
-6. Elija **Guardar**.
+6. Seleccione **Guardar**.
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: agregar (o editar) directivas de vínculos seguros de ATP que se aplican a destinatarios de correo electrónico específicos
 
@@ -111,7 +111,7 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
 
     - En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
     
-6. Elija **Guardar**.
+6. Seleccione **Guardar**.
 
 > [!NOTE]
 > Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo tendrá efecto la Directiva de mayor prioridad.
@@ -128,7 +128,7 @@ Las opciones de directiva predeterminadas se aplican a todos los usuarios de la 
 
 |Esta opción  |Se obtiene este resultado  |
 |---------|---------|
-| **Bloquear las siguientes direcciones URL** <br/>    | Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Bloquear las siguientes direcciones URL** <br/>    | Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-atp.md). |
 | **Microsoft 365 apps for Enterprise, Office para iOS y Android** <br/>    | Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a direcciones URL en archivos de Word, Excel y PowerPoint en Windows o Mac OS, mensajes de correo electrónico en Outlook, documentos de Office en dispositivos iOS o Android, archivos de Visio 2016 en Windows y archivos abiertos en las versiones web de las aplicaciones de Office (Word, PowerPoint, Excel, Outlook y OneNote), siempre y 365 |
 | **No hacer un seguimiento cuando los usuarios hacen clic en ATP vínculos seguros** <br/>  | Cuando se selecciona esta opción, se hace clic en datos de direcciones URL en Word, Excel, PowerPoint, documentos de Visio y los mensajes de correo electrónico de Outlook no se almacenan.  <br/> |
 |**No permitir que los usuarios haga clic en los vínculos seguros ATP a la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware.
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943548"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046357"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 principales tareas para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -67,9 +67,9 @@ La aplicación de estas directivas tardará solo unos minutos, pero estará prep
 
 |Plan  |Recomendación  |
 |---------|---------|
-|Planes de 365 de Microsoft (sin Azure AD P1 o P2)     |[Habilitar los valores predeterminados de seguridad en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Los valores predeterminados de seguridad en Azure AD incluyen MFA para los usuarios y administradores.   |
-|Microsoft 365 E3 (con Azure AD P1)     | Use [directivas de acceso condicional comunes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las siguientes directivas: <br>- [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (con Azure AD P2)     | Aprovechando las ventajas de la protección de identidades de Azure AD, comience a implementar el [conjunto recomendado de Microsoft de acceso condicional y las directivas relacionadas](../enterprise/identity-access-policies.md) mediante la creación de estas dos directivas:<br> - [Requerir MFA cuando el riesgo de inicio de sesión sea medio o alto](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear clientes que no admitan la autenticación moderna](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Los usuarios de riesgo alto deben cambiar la contraseña](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Planes de 365 de Microsoft (sin Azure AD P1 o P2)     |[Habilitar los valores predeterminados de seguridad en Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Los valores predeterminados de seguridad en Azure AD incluyen MFA para los usuarios y administradores.   |
+|Microsoft 365 E3 (con Azure AD P1)     | Use [Directivas comunes de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes: <br>- [Requerir MFA para los administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (con Azure AD P2)     | Aprovechando la protección de identidades de Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../enterprise/identity-access-policies.md) de Microsoft creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear a los clientes que no sean compatibles con la autenticación moderna](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -100,7 +100,7 @@ El administrador global puede configurar estas protecciones:
 - [Configurar vínculos seguros ATP](office-365-security/set-up-atp-safe-links-policies.md)
 - [Configurar directivas de datos adjuntos seguros de ATP](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Configurar una lista personalizada de URL con "no reescribir"](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Configurar una lista personalizada de URL bloqueadas](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Configurar una lista personalizada de URL bloqueadas](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 Tendrá que trabajar con el administrador de Exchange Online y el administrador de SharePoint Online para configurar ATP para estas cargas de trabajo:
 - [Activar ATP para SharePoint, OneDrive y Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Una vez que haya configurado uno o varios de los servicios de protección contra
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas
 
 La administración de aplicaciones móviles (MAM) de Microsoft Intune le permite administrar y proteger los datos de su organización en teléfonos y tabletas sin administrar estos dispositivos. Aquí se muestra cómo funciona:
-- Cree una directiva de protección de aplicaciones (APP) que determine qué aplicaciones de un dispositivo se administran y qué comportamientos se permiten (por ejemplo, impedir que los datos de una aplicación administrada se copien en una aplicación no administrada). Puede crear una directiva para cada platorm (iOS, Android).
+- Cree una directiva de protección de aplicaciones (APP) que determine qué aplicaciones de un dispositivo se administran y qué comportamientos se permiten (por ejemplo, impedir que los datos de una aplicación administrada se copien en una aplicación no administrada). Cree una directiva para cada plataforma (iOS, Android).
 - Después de crear las directivas de protección de aplicaciones, puede aplicarlas mediante la creación de una regla de acceso condicional en Azure AD para requerir aplicaciones aprobadas y protección de datos de la aplicación.
 
 Las directivas de protección de aplicaciones incluyen muchas opciones de configuración. Afortunadamente, no es necesario obtener más información sobre cada configuración y sopesar las opciones. Microsoft hace que sea fácil aplicar una configuración de opciones mediante la recomendación de puntos de inicio. El [marco de protección de datos con directivas de protección de aplicaciones](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) incluye tres niveles entre los que puede elegir. 
@@ -154,7 +154,8 @@ Use las instrucciones de [actualización de las directivas comunes para permitir
 
 Las directivas de protección de aplicaciones móviles de Intune que ha creado, junto con la regla de acceso condicional para requerir la protección de aplicaciones y aplicaciones aprobadas, se aplican a las cuentas de invitados y ayudarán a proteger los datos de su organización. 
 
-**Nota**: Si ya ha inscrito equipos en la administración de dispositivos para requerir equipos conformes, también tendrá que excluir las cuentas de invitado de la regla de acceso condicional que aplica el cumplimiento de dispositivos. 
+> [!NOTE]
+> Si ya ha inscrito equipos en la administración de dispositivos para requerir equipos conformes, también tendrá que excluir las cuentas de invitado de la regla de acceso condicional que aplica el cumplimiento de dispositivos. 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: inscriba equipos en la administración de dispositivos y requiera equipos compatibles
@@ -179,11 +180,11 @@ Si va a permitir que la mayoría de los empleados trabajen desde casa rápidamen
 
 Los elementos de red como concentradores de VPN, el equipo de salida de red central (como los servidores proxy y los dispositivos de prevención de pérdida de datos), el ancho de banda central de Internet, los circuitos MPLS de backhaul, la funcionalidad NAT, etc., se colocan repentinamente con una gran presión debido a la carga de toda la empresa con ellos. El resultado final es un rendimiento deficiente y la productividad junto con una mala experiencia del usuario para los usuarios que se están adaptando al trabajo desde casa.
 
-Algunas de las protecciones que tradicionalmente se han proporcionado mediante el enrutamiento de tráfico a través de una red corporativa las proporcionan las aplicaciones de nube a las que tienen acceso los usuarios. Si ha llegado a este paso en este artículo, ha implementado un conjunto de controles sofisticados de seguridad en la nube para los servicios y los datos de Microsoft 365. Con estos controles en su ubicación, puede que esté listo para enrutar el tráfico de los usuarios remotos directamente a Office 365. Si aún necesita un vínculo VPN para el acceso a otras aplicaciones, puede mejorar considerablemente el rendimiento y la experiencia del usuario mediante la implementación de túneles divididos. Una vez que haya logrado el acuerdo en su oganization, esto se puede lograr en un día mediante un equipo de red bien coordinado.
+Algunas de las protecciones que tradicionalmente se han proporcionado mediante el enrutamiento de tráfico a través de una red corporativa las proporcionan las aplicaciones de nube a las que tienen acceso los usuarios. Si ha llegado a este paso en este artículo, ha implementado un conjunto de controles sofisticados de seguridad en la nube para los servicios y los datos de Microsoft 365. Con estos controles en su ubicación, puede que esté listo para enrutar el tráfico de los usuarios remotos directamente a Office 365. Si aún necesita un vínculo VPN para el acceso a otras aplicaciones, puede mejorar considerablemente el rendimiento y la experiencia del usuario mediante la implementación de túneles divididos. Una vez que haya logrado un acuerdo en su organización, podrá hacerlo dentro de un día mediante un equipo de red bien coordinado.
 
 
 Consulte estos recursos en docs para obtener más información:
-- [Información general: optimizar la conectividad para usuarios remotos mediante tunelización dividida de VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Información general: optimizar la conectividad para usuarios remotos mediante la tunelización dividida de VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Implementación de túnel dividido de VPN en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Artículos de blog recientes en este tema:
@@ -241,7 +242,7 @@ Microsoft 365 incluye varias formas de supervisar el estado y tomar las medidas 
 - [Supervisar y ver informes](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Consulte los portales de seguridad en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ¡Enhorabuena! Ha implementado rápidamente algunas de las protecciones de seguridad más importantes y su organización es mucho más segura. Ahora ya puede seguir adelante con las capacidades de protección contra amenazas (incluida la protección contra amenazas avanzada de Microsoft defender), las capacidades de protección y clasificación de datos, y la protección de las cuentas administrativas. Para obtener un conjunto más profundo y metódico de recomendaciones de seguridad para Microsoft 365, vea [microsoft 365 Security para los responsables de decisiones empresariales](Microsoft-365-security-for-bdm.md). 
 

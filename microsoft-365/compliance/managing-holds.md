@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo realizar suspensiones en custodios y sus orígenes de datos para conservar el contenido relevante para el caso de eDiscovery avanzado.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632965"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034131"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
@@ -122,7 +123,7 @@ Microsoft Teams se basa en grupos de Office 365. Por lo tanto, ponerlos en reten
 - **¿Cómo puedo asignar a un custodio un sitio adicional de Microsoft Teams o grupos de Microsoft Teams 365? ¿Y qué hacer para colocar una retención no de la Private en grupos de Microsoft 365 y Microsoft Teams?** Microsoft Teams se basa en grupos de 365 de Microsoft. Por lo tanto, colocarlos en espera en un caso de exhibición de documentos electrónicos es muy similar. Tenga en cuenta lo siguiente al colocar los grupos de Microsoft 365 y Microsoft Teams en espera.
   - Para colocar el contenido ubicado en Microsoft Teams 365 Groups y Microsoft Teams en espera, tiene que especificar el buzón de correo y el sitio de SharePoint asociados a un grupo o equipo.
   
-  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Microsoft 365 o de Microsoft Teams. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el siguiente comando muestra las propiedades seleccionadas para un grupo de 365 de Microsoft llamado equipo de liderazgo Senior:
+  - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Microsoft 365 o de Microsoft Teams. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team:
 
 
     ```text

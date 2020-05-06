@@ -1,5 +1,5 @@
 ---
-title: Subprocesos de correo electrónico
+title: 'Subprocesamiento de correo electrónico: investigaciones de datos'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 423b3a4ebb00473a45122cf89d2810e6d7c1fc2d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Al administrar una investigación de datos, el subprocesamiento de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6cc466bf89187f292acd454fd8ca6efb05958d2b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074707"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035662"
 ---
 # <a name="email-threading"></a>Subprocesos de correo electrónico
 

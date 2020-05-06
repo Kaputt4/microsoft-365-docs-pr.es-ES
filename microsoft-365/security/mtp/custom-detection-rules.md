@@ -1,7 +1,7 @@
 ---
 title: Creación y administración de reglas de detección personalizadas en protección contra amenazas de Microsoft
 description: Obtenga información sobre cómo crear y administrar reglas de detección personalizadas basadas en consultas de búsqueda avanzada.
-keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, reglas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft, RBAC, permisos, Microsoft NNC de defender
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, reglas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft, RBAC, permisos, Microsoft defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931757"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034869"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creación y administración de reglas de detecciones personalizadas
 
@@ -114,7 +114,7 @@ Identifique las columnas de los resultados de la consulta en las que espera busc
 
 Puede seleccionar solo una columna para cada tipo de entidad (buzón, usuario o dispositivo). No se pueden seleccionar las columnas que no se devuelven mediante la consulta.
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. especificar acciones en archivos o máquinas.
+### <a name="4-specify-actions-on-files-or-machines"></a>4. especificar acciones en archivos o máquinas.
 La regla de detección personalizada puede realizar acciones de forma automática en los archivos o equipos devueltos por la consulta.
 
 #### <a name="actions-on-machines"></a>Acciones en los equipos
@@ -130,7 +130,7 @@ Cuando se selecciona, la acción de **archivo en cuarentena** se lleva a `SHA1`c
 > [!NOTE]
 > La acción permitir o bloquear para reglas de detección personalizadas no es compatible actualmente con la protección contra amenazas de Microsoft.
 
-### <a name="4-set-the-rule-scope"></a>4. establezca el ámbito de la regla.
+### <a name="5-set-the-rule-scope"></a>5. establezca el ámbito de la regla.
 Establezca el ámbito para especificar los dispositivos que cubre la regla. El ámbito influye en las reglas que comprueban los dispositivos y no afectan a las reglas que solo comprueban buzones de correo y cuentas de usuario o identidades.
 
 Al establecer el ámbito, puede seleccionar:
@@ -140,7 +140,7 @@ Al establecer el ámbito, puede seleccionar:
 
 Solo se consultarán los datos de los dispositivos en el ámbito. Además, las acciones solo se realizarán en estos dispositivos.
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. Revise y active la regla.
+### <a name="6-review-and-turn-on-the-rule"></a>6. Revise y active la regla.
 Después de revisar la regla, haga clic en **crear** para guardarla. La regla de detección personalizada se ejecuta inmediatamente. Se ejecuta de nuevo en función de la frecuencia configurada para buscar coincidencias, generar alertas y tomar acciones de respuesta.
 
 ## <a name="manage-existing-custom-detection-rules"></a>Administración de reglas de detección personalizadas existentes

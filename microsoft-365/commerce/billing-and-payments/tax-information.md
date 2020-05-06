@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de Microsoft 365 para empresas en diferentes regiones. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708136"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045829"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -114,7 +114,7 @@ Puede ser susceptible de no tener que pagar la tasa de IVA:
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Procedimiento para especificar la identificación de IVA (países de la UE únicamente)
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la tarjeta de suscripción de la suscripción que desea actualizar.
 

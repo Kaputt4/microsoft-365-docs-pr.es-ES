@@ -1,5 +1,5 @@
 ---
-title: Administración de riesgos de Insider
+title: Administración de riesgos internos
 description: Obtenga información sobre cómo minimizar el riesgo en su organización con la administración de riesgos de Insider en Microsoft 365.
 keywords: Microsoft 365, riesgo para Insiders, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179191"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043311"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -41,7 +41,7 @@ La administración y minimización de los riesgos en la organización comienza c
 
 Los empleados en el lugar de trabajo moderno tienen acceso para crear, administrar y compartir datos en un amplio espectro de plataformas y servicios. En la mayoría de los casos, las organizaciones tienen recursos y herramientas limitados para identificar y mitigar los riesgos en toda la organización, al tiempo que cumplen los estándares de privacidad de los empleados.
 
-La administración de riesgos de Insider de Microsoft 365 usa toda la amplitud de los indicadores de servicio y de terceros para ayudarle a identificar, clasificar y realizar acciones en la actividad de riesgos rápidamente. Mediante el uso de registros de Office 365 y Microsoft Graph, la administración de riesgos de Insider le permite definir directivas específicas para identificar los indicadores de riesgo. Estas directivas le permiten identificar actividades arriesgadas y emprender acciones para mitigar estos riesgos.
+La administración de riesgos de Insider de Microsoft 365 usa toda la amplitud de los indicadores de servicio y de terceros para ayudarle a identificar, clasificar y realizar acciones en la actividad de riesgos rápidamente. Mediante el uso de registros de Microsoft 365 y Microsoft Graph, la administración de riesgos de Insider le permite definir directivas específicas para identificar los indicadores de riesgo. Estas directivas le permiten identificar actividades arriesgadas y emprender acciones para mitigar estos riesgos.
 
 La administración de riesgos de Insider se centra en los siguientes principios:
 
@@ -108,7 +108,7 @@ Para obtener más información, vea [casos de administración de riesgos de Insi
 
 ![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Action
+### <a name="action"></a>Acción
 
 Una vez que se han investigado los casos, los revisores pueden tomar medidas rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Cuando los empleados infringen accidental o involuntariamente las condiciones de las directivas, se puede enviar una notificación de recordatorio simple al empleado a partir de plantillas de notificación que puede configurar para su organización. Estos avisos pueden servir como recordatorios sencillos o dirigir al empleado a un entrenamiento o guía de refresco para ayudar a evitar un comportamiento arriesgado futuro. Para obtener más información, consulte [plantillas de aviso de administración de riesgos de Insider](insider-risk-management-notices.md).
 
@@ -132,4 +132,5 @@ Las comunicaciones entre empleados son a menudo una fuente de infracciones accid
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-¿Está preparado para configurar la administración de riesgos de Insiders para su organización? Consulte Introducción a la [Administración de riesgos de Insider](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.
+- Consulte [planeación de la administración de riesgos de Insiders](insider-risk-management-plan.md) para obtener más sobre cómo prepararse para habilitar directivas de administración de riesgos de Insider en su organización.
+- Consulte Introducción a la [Administración de riesgos de Insider](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.

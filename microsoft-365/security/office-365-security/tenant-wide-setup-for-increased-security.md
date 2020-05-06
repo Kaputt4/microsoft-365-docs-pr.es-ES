@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afecta a la seguridad de su entorno de Microsoft 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: Este tema le guiará a través de la configuración recomendada para la configuración de todos los inquilinos que afecten a la seguridad de su entorno de Microsoft 365.
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949398"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043362"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para mejorar la seguridad
 
@@ -109,7 +111,7 @@ Para entornos seguros, asegúrese de deshabilitar la autenticación para las apl
 
 Mientras tanto, use uno de los siguientes métodos para lograrlo en SharePoint Online y OneDrive para la empresa:
 
-- Usar PowerShell, vea [bloquear aplicaciones que no usan la autenticación moderna](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Usar PowerShell, vea [bloquear aplicaciones que no usan la autenticación moderna (Adal)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Configure esto en el centro de administración de SharePoint en la página "acceso de dispositivo": "controlar el acceso desde las aplicaciones que no usan la autenticación moderna". Elija bloquear.
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Las estadísticas de búsqueda son una manera eficaz de validar los resultados de la búsqueda y mostrarlos en estado en la página de flotante detalles de búsqueda.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081386"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035842"
 ---
 # <a name="search-statistics"></a>Estadísticas de búsqueda
 

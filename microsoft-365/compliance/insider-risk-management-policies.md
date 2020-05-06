@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634358"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043301"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -42,7 +42,7 @@ Las plantillas de administración de riesgos de internación son condiciones de 
 
 ### <a name="departing-employee-data-theft"></a>Robo de datos del empleado
 
-Cuando los empleados dejan la organización, hay indicadores de riesgos específicos normalmente asociados con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos de SharePoint Online, la copia de archivos en dispositivos portátiles, como unidades USB, la impresión de archivos y la copia de datos a servicios de almacenamiento y mensajería en la nube personal, cerca de la retirada del empleo y fechas de finalización. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
+Cuando los empleados dejan la organización, hay indicadores de riesgos específicos normalmente asociados con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos desde SharePoint Online, la copia de archivos en dispositivos portátiles como unidades USB, la impresión de archivos y la copia de datos a servicios de almacenamiento y de mensajería en la nube personal, cerca de las fechas de retirada y de finalización del empleo. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
 
 >[!IMPORTANT]
 >Cuando use esta plantilla, debe configurar un conector de Microsoft 365 de RRHH para importar periódicamente la información de fecha de retirada y de cancelación para los empleados de su organización. Consulte el tema de [importación de datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre la configuración del conector de 365 de RRHH de Microsoft para su organización.
@@ -60,13 +60,13 @@ La detección y la realización de acciones para evitar el comportamiento ofensi
 
 ## <a name="policy-settings"></a>Configuración de directivas
 
-La configuración de los riesgos de Insider se aplica a todas las directivas de administración de riesgos de Insider, independientemente de la plantilla que elija al crear una directiva. La configuración se configura con el control de*configuración de riesgos de Insider* ubicado en la parte superior de todas las pestañas de administración de riesgos de Insider. Esta configuración controla la privacidad, los indicadores, las ventanas de supervisión y las detecciones inteligentes.
+La configuración de los riesgos de Insider se aplica a todas las directivas de administración de riesgos de Insider, independientemente de la plantilla que elija al crear una directiva. La configuración se configura con el control de **configuración de riesgos de Insider** ubicado en la parte superior de todas las pestañas de administración de riesgos de Insider. Esta configuración controla la privacidad, los indicadores, las ventanas de supervisión y las detecciones inteligentes.
 
 ### <a name="privacy"></a>Privacidad
 
 La protección de la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en la investigación de datos y análisis de revisiones de alertas de riesgo de Insider. Para los usuarios con coincidencias de directivas de riesgos de Insider, puede elegir una de las siguientes opciones:
 
-- **Mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario son anonimizan para evitar que los administradores, investigadores de datos y revisores vean quiénes están asociados a las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un psuedonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. Cuando se selecciona esta opción, la información de Perfil de usuario en la alerta de riesgo de Insider y los detalles de casos no estarán disponibles. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si elige desactivar esta opción, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
+- **Mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario son anonimizan para evitar que los administradores, investigadores de datos y revisores vean quiénes están asociados a las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. Cuando se selecciona esta opción, la información de Perfil de usuario en la alerta de riesgo de Insider y los detalles de casos no estarán disponibles. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si decide desactivar esta opción, los nombres de usuario se mostrarán para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
 - **No mostrar anonimizan versiones de nombres de usuario**: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para alertas y casos. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todos los casos y alertas de administración de riesgos del Insider.
 
 ### <a name="indicators"></a>Indicadores
@@ -87,14 +87,14 @@ Los plazos de la Directiva permiten definir períodos de revisión pasados y fut
 
 ### <a name="intelligent-detections"></a>Detecciones inteligentes
 
-La configuración de detección inteligente ayuda a afinar la forma en que se procesan las actividades de riesgo para las alertas. En determinadas circunstancias, es posible que necesite definir tipos de archivo para omitir o desea aplicar un nivel de detección para los archivos a fin de definir una barra mínima para las alertas. Al usar directivas de lenguaje ofensivo, es posible que deba aumentar o disminuir la sensibilidad de la detección para controlar la cantidad de coincidencias de directivas de informes. Use estas opciones para controlar las exclusiones de tipo de archivo, los límites del volumen de archivo y la sensibilidad de detección de idioma ofensivo.
+La configuración de detección inteligente ayuda a refinar cómo se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que necesite definir tipos de archivo para omitir o desea aplicar un nivel de detección para los archivos a fin de definir una barra mínima para las alertas. Al usar directivas de lenguaje ofensivo, es posible que deba aumentar o disminuir la sensibilidad de la detección para controlar la cantidad de coincidencias de directivas de informes. Use estas opciones para controlar las exclusiones de tipo de archivo, los límites del volumen de archivo y la sensibilidad de detección de idioma ofensivo.
 
 #### <a name="anomaly-detections"></a>Detecciones de anomalías
 
 Las detecciones anómalas incluyen la configuración de las exclusiones de tipo de archivo y los límites del volumen de archivo.
 
 - **Exclusiones de tipo de archivo**: para excluir tipos de archivo específicos de toda la coincidencia de directivas de administración de riesgos de Insider, escriba extensiones de tipo de archivo separadas por comas. Por ejemplo, para excluir determinados tipos de archivos de música de las coincidencias de directivas, puede escribir *AAC, MP3, WAV, WMA* en el campo **exclusiones de tipo de archivo** . Todas las directivas de administración de riesgos de Insider omitirán los archivos con estas extensiones.
-- **Límite de corte del volumen del archivo**: para definir un nivel de archivo mínimo antes de notificar las alertas de actividad en las directivas de riesgo de Insider, escriba el número de archivos. Por ejemplo, escribiría ' 10 ' si no desea generar alertas de riesgo de Insider cuando un usuario descarga 10 archivos o menos, incluso si las directivas lo consideran una anomalía.
+- **Límite de corte del volumen del archivo**: para definir un nivel de archivo mínimo antes de notificar las alertas de actividad en las directivas de riesgo de Insider, escriba el número de archivos. Por ejemplo, escribiría ' 10 ' si no desea generar alertas de riesgo de Insider cuando un usuario descarga 10 archivos o menos, incluso si las directivas consideran que esta actividad es una anomalía.
 
 #### <a name="offensive-language-detections"></a>Detecciones de idiomas ofensivos
 
@@ -104,7 +104,7 @@ Para ajustar la confidencialidad del clasificador de idioma ofensivo para las di
 - **Media**: el nivel de confidencialidad de nivel medio con un intervalo equilibrado para la sumisión y el lenguaje ofensivo de detección. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es la media.
 - **Alta**: el nivel de confidencialidad más alto con un intervalo estrecho para la detección de lenguaje ofensivo y su opinión. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es baja.
 
-## <a name="create-a-new-policy"></a>Crear una nueva Directiva
+## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
 Para crear una nueva Directiva de administración de riesgos de Insider, use el Asistente para directivas de la solución de **Administración de riesgos de Insider** en el centro de cumplimiento de Microsoft 365.
 

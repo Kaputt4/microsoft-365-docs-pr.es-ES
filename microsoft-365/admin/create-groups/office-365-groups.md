@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de 365 de Microsoft.
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630048"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049172"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -79,7 +79,7 @@ Los siguientes límites se aplican a los grupos de Microsoft 365:
 |Almacenamiento de archivos.|1 terabyte + 10 GB por usuario suscrito + almacenamiento adicional adquirido. Puede adquirir una cantidad ilimitada de almacenamiento adicional.|
 |Tamaño del buzón de grupo|50 GB|
 
-El número máximo predeterminado de grupos de Microsoft 365 que una organización puede tener es de 500.000, pero puede aumentarse por solicitud. Para obtener más información sobre los límites de grupos de 365 de Microsoft, consulte [microsoft 365 Groups: ayuda de administración](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+El número máximo predeterminado de grupos de Microsoft 365 que una organización puede tener es de 500.000, pero puede aumentarse por solicitud. Para obtener más información sobre los límites de grupos de 365 de Microsoft, consulte [microsoft 365 Groups: ayuda de administración](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 La administración de los grupos de Microsoft 365 es más eficaz cuando tiene información que requiere la acción sobre el uso de los grupos. El centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver cosas como el uso del almacenamiento, cuántos grupos activos tiene e incluso cómo los usuarios usan los grupos. Consulte: [informes de Microsoft 365 en el centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
 

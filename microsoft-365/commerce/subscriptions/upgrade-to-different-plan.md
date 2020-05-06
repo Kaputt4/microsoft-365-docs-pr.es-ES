@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Obtenga información sobre cómo actualizar a una nueva suscripción.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796517"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046221"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente 
 
@@ -42,7 +42,7 @@ Cuando cambie su empresa o necesite más características, puede actualizar los 
 
 Cuando se usa la pestaña **Actualizar** , se le guiará por el proceso de compra de un nuevo plan. A todos los usuarios se les asignan automáticamente licencias en el nuevo plan y se cancela el plan antiguo.
 
-1. En el centro de administración, vaya a la página productos de **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Seleccione la suscripción que desea actualizar.
 
@@ -59,7 +59,7 @@ Cuando se usa la pestaña **Actualizar** , se le guiará por el proceso de compr
 
 7. Cuando haya terminado, seleccione **realizar pedido**.
 
-Cuando termine la desprotección, puede tardar unos minutos en concluir la actualización. Podrá empezar a usar inmediatamente la nueva suscripción. Seleccione **comprobar el estado** de la actualización para comprobar el progreso de la actualización. Recibirá una notificación cuando se complete la actualización. La notificación se muestra en la página **productos & Services** , junto a la nueva suscripción.
+Cuando termine la desprotección, puede tardar unos minutos en concluir la actualización. Podrá empezar a usar inmediatamente la nueva suscripción. Seleccione **comprobar el estado** de la actualización para comprobar el progreso de la actualización. Recibirá una notificación cuando se complete la actualización. La notificación se muestra en la página **sus productos** , junto a la nueva suscripción.
 
 ## <a name="the-upgrade-tab-is-empty"></a>La pestaña de actualización está vacía
 
@@ -137,7 +137,7 @@ Si tiene un complemento con su suscripción, es posible que pueda [cambiar de pl
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>Su suscripción tiene un saldo no pagado
 
-Para resolver esto, busque la suscripción en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">productos & Services</a> y seleccione el vínculo **pagar ahora** en la sección **facturación** . Una vez realizado el pago, vuelva a comprobar la pestaña de **actualización** .
+Para solucionar esto, busque la suscripción en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">sus productos</a> y seleccione el vínculo **pagar ahora** en la sección **facturación** . Una vez realizado el pago, vuelva a comprobar la pestaña de **actualización** .
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>¿Qué hace la actualización de un plan a mi servicio y facturación?
 

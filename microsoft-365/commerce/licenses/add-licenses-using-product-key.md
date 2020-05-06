@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo agregar licencias a su suscripción.
-ms.openlocfilehash: 694b8ac57e28bbe6b03e5f8aeef87bda1bcc73ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632430"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045409"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias o ampliar una suscripción pagada para usar una clave de producto
 
@@ -42,8 +42,7 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 
 ::: moniker range="o365-worldwide"
 
-
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción a la que desea agregar licencias. En la sección **licencias** , seleccione **Agregar más licencias**.
 
@@ -100,8 +99,7 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 
 ::: moniker range="o365-worldwide"
 
-
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea extender. En la sección **facturación** , seleccione **extender fecha de finalización**.
 

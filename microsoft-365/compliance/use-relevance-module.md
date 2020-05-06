@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo el módulo de relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en las investigaciones de datos (versión preliminar).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080617"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034492"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Usar el módulo relevancia para analizar datos en evidencias
 
@@ -121,7 +122,7 @@ En la **pestaña \> seguimiento de relevancia** , investigaciones de datos propo
     
   - Implicación: en este momento no se requiere ningún entrenamiento sobre la relevancia.
     
-Aunque las investigaciones de datos le guían por el proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su caso individual, problema o proceso de revisión de documentos. 
+Aunque las investigaciones de datos le guían por el proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su proceso de revisión de documentos, problema o caso individual. 
   
 Es posible aceptar o invalidar las investigaciones de datos opciones de procesamiento del próximo paso. Si desea realizar un paso que no sea el siguiente paso recomendado, haga clic en el **siguiente paso** que aparece en la pantalla problema expandido en el cuadro de diálogo, haga clic en el botón **modificar** junto al paso siguiente y seleccione otra opción de paso siguiente. 
   
