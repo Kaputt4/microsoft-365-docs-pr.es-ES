@@ -1,5 +1,5 @@
 ---
-title: Depuración automática de cero horas (ZAP)-protección retroactiva contra correo no deseado, malware y suplantación de identidad.
+title: 'Depuración automática de cero horas (ZAP): característica de protección de correo electrónico'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,15 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico de Microsoft 365 que detecta mensajes de correo no deseado, malware o de suplantación de identidad (phishing) que ya se han entregado a Exchange Online. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre la purga automática de cero horas (ZAP), una característica de protección de correo electrónico de Microsoft 365 que detecta mensajes de correo no deseado, malware o de suplantación de identidad (phishing) que ya se han entregado a Exchange Online.
+ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630814"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034931"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Depuración automática de cero horas (ZAP): protección contra correo no deseado y malware en Microsoft 365
 
@@ -36,7 +38,7 @@ ZAP está disponible con la protección de Exchange Online (EOP) predeterminada 
 
 ## <a name="how-zap-works"></a>Cómo funciona el ZAP
 
-Microsoft 365 actualiza las firmas de correo no deseado y malware en tiempo real a diario. Sin embargo, los usuarios aún pueden recibir mensajes malintencionados por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona este problema al supervisar continuamente las actualizaciones de las firmas de correo no deseado y malware de Microsfot 365. ZAP puede buscar y eliminar mensajes que ya están en el buzón de un usuario.
+Microsoft 365 actualiza las firmas de correo no deseado y malware en tiempo real a diario. Sin embargo, los usuarios aún pueden recibir mensajes malintencionados por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona este problema al supervisar continuamente las actualizaciones de las firmas de correo no deseado y malware de Microsoft 365. ZAP puede buscar y eliminar mensajes que ya están en el buzón de un usuario.
 
 La acción ZAP es fluida para el usuario; no se notifican si un mensaje se ha detectado y movido.
 

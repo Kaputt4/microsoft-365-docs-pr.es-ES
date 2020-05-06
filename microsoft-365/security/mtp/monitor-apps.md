@@ -1,6 +1,6 @@
 ---
-title: Supervisión y generación de informes de aplicaciones en el centro de seguridad de Microsoft 365
-description: Describe cómo puede obtener más información sobre el uso de aplicaciones en la nube en la organización.
+title: 'Supervisión de aplicaciones & de informes: Centro de seguridad'
+description: Obtenga información sobre cómo puede obtener más información sobre el uso de aplicaciones en la nube en su organización, incluidos los tipos de aplicaciones, su nivel de riesgo y las alertas.
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, monitor, Report, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,18 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cd7a86751ac58f60051891544c9fd68c51b439e1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087709"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034027"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Supervisión y generación de informes de aplicaciones en el centro de seguridad de Microsoft 365
 
 Estos informes proporcionan más información sobre cómo se usan las aplicaciones en la nube en la organización, incluidos los tipos de aplicaciones, su nivel de riesgo y las alertas.
 
-## <a name="monitor-email-accounts-at-risk"></a>Supervisar las cuentas de correo electrónico en riesgo
+## <a name="monitor-email-accounts-at-risk"></a>Supervisión de cuentas de correo electrónico en peligro
 
 La **protección de correo electrónico** muestra las cuentas de correo electrónico en riesgo. Puede hacer clic en una cuenta para investigar más en el centro de seguridad de Microsoft defender.
 

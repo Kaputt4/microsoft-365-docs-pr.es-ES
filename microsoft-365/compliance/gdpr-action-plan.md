@@ -1,5 +1,5 @@
 ---
-title: 'Plan de acción de RGPD de Microsoft 365: principales prioridades de los primeros 30 días, 90 días y el periodo posterior'
+title: Plan de acción de Microsoft 365 GDPR, prioridades para sus primeros 30 días, 90 días y más allá
 description: Un plan de acción prioritario que puede seguir mientras trabaja para cumplir los requisitos del Reglamento general de protección de datos (RGPD)
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 64b8a693cadce2d304bf5615a5e21fa15b8a55b0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b135f189aa43e4e7015550739c9e79a74c2310
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633325"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036083"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Plan de acción de RGPD de Microsoft 365: principales prioridades de los primeros 30 días, 90 días y el periodo posterior
 

@@ -24,12 +24,12 @@ description: Obtenga información sobre las opciones de pago disponibles para pa
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635021"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045841"
 ---
 # <a name="pay-for-your-subscription"></a>Pagar la suscripción
 
@@ -51,7 +51,7 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción con el saldo pendiente. En la sección **Facturación**, junto a la **suscripción tiene un pago vencido**, seleccione **Liquidar saldo**.
 

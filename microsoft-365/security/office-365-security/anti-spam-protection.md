@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre la configuración y los filtros contra correo electrónico no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Microsoft 365. ¿Obtengo demasiado correo no deseado en Microsoft 365? Puede personalizar los filtros de correo no deseado y la configuración contra correo no deseado.
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre la configuración y los filtros contra correo electrónico no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Microsoft 365.
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708576"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034063"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protección contra correo no deseado en Microsoft 365
 
@@ -71,7 +73,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Usar autenticación de correo electrónico**: Si posee un dominio de correo electrónico, puede usar DNS para ayudar a garantizar que los mensajes de los remitentes de ese dominio sean legítimos. Para ayudar a evitar el correo no deseado y la suplantación de identidad en EOP, use todos los métodos de autenticación de correo electrónico siguientes:
 
-  - **SPF**: el marco de directivas de remitente comprueba la dirección IP de origen del mensaje con el propietario del dominio remitente. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obtener información más detallada sobre cómo Microsoft 365 usa SPF o para solucionar problemas o implementaciones no estándar, como las implementaciones híbridas, empiece con [la forma en que Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: el marco de directivas de remitente comprueba la dirección IP de origen del mensaje con el propietario del dominio remitente. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para comprender en detalle cómo Microsoft 365 usa SPF, o para la solución de problemas o las implementaciones no estándar (por ejemplo, implementaciones híbridas), comience con [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md) (Cómo Microsoft 365 usa el marco de directivas permanente [SPF] para evitar la suplantación de identidad).
 
   - **DKIM**: el correo identificado por domainkeyss agrega una firma digital al encabezado del mensaje de los mensajes enviados desde su dominio. Para obtener más información, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Microsoft 365](use-dkim-to-validate-outbound-email.md).
 

@@ -11,13 +11,15 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
-description: 'En este tema se responden las preguntas generales más comunes acerca del servicio de filtrado de correo electrónico hospedado en la nube de Microsoft Exchange Online Protection (EOP). Para ver otros temas sobre preguntas frecuentes (P+F), visite los siguientes enlaces:'
-ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: En este tema, encontrará las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico hospedado en la nube de Microsoft Exchange Online Protection (EOP).
+ms.openlocfilehash: 48841e5e68dd560329eadc0a654e6d8fe1b2d09e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636257"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036565"
 ---
 # <a name="eop-general-faq"></a>Preguntas más frecuentes sobre EOP
 

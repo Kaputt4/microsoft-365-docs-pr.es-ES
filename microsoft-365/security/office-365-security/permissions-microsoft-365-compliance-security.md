@@ -1,5 +1,5 @@
 ---
-title: Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
+title: Permisos en los centros de seguridad y cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,12 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
-ms.openlocfilehash: f703a333cf77ebb41f7b72f141cbdc813858ab11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 74139dfef3e0adfccbf16451d3577a8a916a0f97
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634477"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033907"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
 

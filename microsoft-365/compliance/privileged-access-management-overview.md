@@ -14,15 +14,17 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: Use este tema para obtener más información acerca de la administración del acceso con privilegios
-ms.openlocfilehash: 932e4d5574ac14c7dd76f8df70b61ed274acebbf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: En este artículo se proporciona información general sobre la administración del acceso con privilegios en Microsoft 365, incluidas las respuestas a las preguntas más frecuentes (p + f).
+ms.openlocfilehash: eb5fe5320c061d40f0882f93b66afa3cad4fa0fa
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626506"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036043"
 ---
 # <a name="privileged-access-management"></a>Administración del acceso con privilegios
 
@@ -70,7 +72,7 @@ Para una solicitud aprobada, el espacio de ejecución de administración de Exch
 
 ![Paso 4: acceso al procesamiento](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU puede usar el acceso con privilegios en Office 365?
 

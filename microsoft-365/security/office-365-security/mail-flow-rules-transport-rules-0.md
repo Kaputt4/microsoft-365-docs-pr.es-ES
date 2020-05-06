@@ -1,5 +1,5 @@
 ---
-title: Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
+title: Reglas de flujo de correo (reglas de transporte)-protección en línea de Exchange
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización.
-ms.openlocfilehash: 0a182b9d4a63a824a3955e8296160779c826960d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635417"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036190"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre cómo el nivel de confianza contra correo no deseado (SCL) determina si es probable o improbable que un mensaje sea correo no deseado y las acciones predeterminadas que el filtrado de correo no deseado realiza en los mensajes en función del SCL.
-ms.openlocfilehash: 519bc48e7285283ad0570b8f3ac598615b132875
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: En este artículo, los administradores pueden obtener información sobre cómo el nivel de confianza contra correo no deseado (SCL) determina el likeliness de un mensaje como correo no deseado.
+ms.openlocfilehash: 9448b1fd99878dbb85bc8699afc0719bc62dd951
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638289"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035253"
 ---
 # <a name="spam-confidence-level-scl-in-office-365"></a>Nivel de confianza contra correo no deseado (SCL) en Office 365
 
@@ -32,7 +34,7 @@ En la tabla siguiente se describen los medios de SCL y las acciones predetermina
 ||||
 |:---:|---|---|
 |**SCL**|**Definición**|**Acción predeterminada**|
-|-1|El mensaje omitió el filtrado de correo no deseado. Por ejemplo, el mensaje proviene de un remitente seguro, se envió a un destinatario seguro o pertenece a un servidor de origen de correo electrónico en la lista de direcciones IP permitidas. Para obtener más información, vea [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
+|-1|El mensaje omitió el filtrado de correo no deseado. Por ejemplo, el mensaje proviene de un remitente seguro, se envió a un destinatario seguro o pertenece a un servidor de origen de correo electrónico en la lista de direcciones IP permitidas. Para obtener más información, vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |0, 1|El filtrado de correo no deseado determinó que el mensaje no era correo no deseado.|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |5, 6|Filtrado de correo no deseado marcado el mensaje como **correo no deseado**|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|
 |9 |Filtrado de correo no deseado marcado el mensaje como **correo no deseado de alta confianza**|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|

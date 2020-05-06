@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de eDiscovery avanzado
-ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de eDiscovery avanzado y luego exportar los resultados.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ccc81ccf4446af3d6e5584924883a1c8049ed962
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626416"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034312"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Usar el análisis rápido en eDiscovery avanzado (clásico) 
 
@@ -129,7 +130,7 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
 Elija **Aceptar**para guardar la configuración avanzada, **restaurar los valores predeterminados** para usar los valores predeterminados o **Cancelar** para cancelar la configuración avanzada. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 <a name="BK_AdvancedSettings"> </a>
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)

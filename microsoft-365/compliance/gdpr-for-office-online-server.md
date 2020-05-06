@@ -1,6 +1,6 @@
 ---
 title: RGPD para Office Online Server y Office Web Apps Server
-description: Obtenga información sobre cómo cumplir los requisitos de RGPD en Exchange Server local.
+description: En este artículo, aprenderá cómo abordar los requisitos de GDPR para Office Online Server y servidor Office Web Apps.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,13 +10,15 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e16f206c858d35dd2894b44d398e375c0a59fde5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0391fccfd7316b5c3268dd479c16fc2acf37080d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073267"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036275"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGPD para Office Web Apps Server y Office Online Server
 

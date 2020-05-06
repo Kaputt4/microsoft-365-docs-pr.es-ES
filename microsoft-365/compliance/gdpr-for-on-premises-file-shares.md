@@ -1,6 +1,6 @@
 ---
 title: RGPD de uso compartido de archivos local
-description: Obtenga información sobre cómo cumplir los requisitos de RGPD en el uso compartido de archivos de Windows Server local.
+description: Aprenda a cumplir con los requisitos de la Reglamento general de protección de datos (GDPR) en los archivos compartidos de Windows Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e5431c4f0953a9d65246f65d783bf6753c5f9bef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9d45c86b2838acef9966b10806e589d1bb42ff9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596427"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036253"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>RGPD para uso compartido de archivos de Windows Server local.
 

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Puede usar el centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones. Introducción iniciando sesión en la cuenta con permisos de administrador.
-ms.openlocfilehash: b54fd3219354b0a5ee38480f8e3a591500c0524b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4b5db6afd7ef8428fea9fc0b57a090b22d027216
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623981"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049440"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -70,20 +70,20 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 ## <a name="admin-center-features-and-settings"></a>Características y configuración del centro de administración
 
-A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx).
+A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/admin-home).
   
 |**Menú**|**Para qué sirve**|
 |-----|-----|
 |**Inicio** <br/> |Esta es la página de inicio del nuevo centro de administración. Verá dónde administrar los usuarios, la facturación, el estado del servicio y los informes.  <br/> |
 |**Usuarios** <br/> |Puede crear y administrar usuarios de su organización, como empleados o estudiantes. También puede establecer su nivel de permisos o restablecer sus contraseñas.  <br/> |
 |**Grupos** <br/> |Cree y administre grupos en su organización, como un grupo de 365 de Microsoft, un grupo de distribución, un grupo de seguridad o un buzón compartido. Más información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
-|**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx).  <br/> |
+|**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |
 |**Facturación** <br/> |Vea, compre o cancele las suscripciones de su organización. Revise los extractos de las facturas pasadas o el número de licencias asignadas a usuarios individuales. Más información sobre cómo [administrar la facturación](../../commerce/index.yml).  <br/> |
 |**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../contact-support-for-business-products.md). |
 |**Configuración** <br/> |Administre la configuración global de aplicaciones, como correo electrónico, sitios y el conjunto de aplicaciones de Office. Cambie la directiva y la fecha de expiración de su contraseña. Agregue y actualice nombres de dominio, como contoso.com. Cambie las preferencias de perfil y versión de su organización. Y decida si los socios pueden acceder a su centro de administración.  <br/> |
 |**Instalación** <br/> |Administre los dominios existentes, active y administre la autenticación multifactorial, administre el acceso de administrador, migre los buzones de correo de los usuarios a Office 365, administre las actualizaciones de funciones y ayude a los usuarios a instalar sus aplicaciones de Office. |
 |**Informes** <br/> |Consulte de un vistazo cómo su organización está usando Microsoft 365 con informes detallados sobre el uso del correo electrónico, las activaciones de Office y mucho más. Obtenga información sobre cómo usar los nuevos [informes de actividad](../activity-reports/activity-reports.md).<br/> |
-|**Estado** <br/> |Consulte de un vistazo el estado del servicio. También puede consultar detalles adicionales y el historial del estado del servicio. Vea[Cómo comprobar la salud del servicio](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0).  <br/> Use el Centro de mensajes para realizar un seguimiento de los próximos cambios en las características y servicios. Publicaremos anuncios allí con información que le permitirá planear los cambios y comprender cómo afectarán a los usuarios. Para obtener más información, vea [Centro de mensajes de Office 365](../manage/message-center.md).  <br/> |
+|**Estado** <br/> |Consulte de un vistazo el estado del servicio. También puede consultar detalles adicionales y el historial del estado del servicio. Vea[Cómo comprobar la salud del servicio](https://docs.microsoft.com/office365/enterprise/view-service-health).  <br/> Use el Centro de mensajes para realizar un seguimiento de los próximos cambios en las características y servicios. Publicaremos anuncios allí con información que le permitirá planear los cambios y comprender cómo afectarán a los usuarios. Para obtener más información, vea [Centro de mensajes de Office 365](../manage/message-center.md).  <br/> |
 |**Centros de administración** <br/> |Abra centros de administración independientes de Exchange, Skype empresarial, SharePoint, Yammer y Azure AD. Cada centro de administración incluye toda la configuración disponible para ese servicio.  <br/> Por ejemplo, en el centro de administración de Exchange, configure y administre el correo electrónico, los calendarios, los grupos de distribución, etc. En el centro de administración de SharePoint, cree y administre colecciones de sitios, la configuración del sitio y OneDrive para la Empresa. En el centro de administración de Skype Empresarial, configure las notificaciones de mensajería instantánea, las conferencias de acceso telefónico y la presencia en línea.  <br/> Obtenga más información sobre el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807) y el [centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Nota:** Los centros de administración disponibles dependen de su plan y su región.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Tareas comunes del centro de administración

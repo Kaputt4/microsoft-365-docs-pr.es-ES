@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894846"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045873"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -36,7 +36,7 @@ Cuando compre productos o servicios empresariales de Microsoft, puede usar un m�
 >
 > Debe usar una forma de pago emitida desde el mismo país que su inquilino.
 
-## <a name="add-a-payment-method"></a>Adición de un método de pago
+## <a name="add-a-payment-method"></a>Agregar un método de pago.
 
 Agregar un método de pago no asocia ninguna suscripción con él. Para asignar una única suscripción al método de pago, vea [cambiar un método de pago para una única suscripción](#change-a-payment-method-for-a-single-subscription). Para reemplazar todas las suscripciones que usan otro método de pago con la nueva, vea [reemplazar un método de pago](#replace-a-payment-method).
 
@@ -73,7 +73,7 @@ Para cambiar el método de pago para una sola suscripción, vea [cambiar un mét
 
 Puede cambiar el método de pago que se usa para pagar una sola suscripción.
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 2. En la pestaña **suscripciones** , seleccione la suscripción por la que desea pagar con el método de pago alternativo. 
 3. En **facturación**, junto al método de pago, seleccione **Editar**.
 4. Junto a su método de pago existente, seleccione **cambiar**.
@@ -108,7 +108,7 @@ Si se adjunta un método de pago a cualquier suscripción o Perfil de facturaci�
 7. El nuevo método de pago ya está seleccionado en la lista desplegable. Seleccione **Siguiente**.
 8. Seleccione **Eliminar**.
 
-## <a name="troubleshoot-payment-methods"></a>Solucionar problemas de métodos de pago
+## <a name="troubleshoot-payment-methods"></a>Solucionar los problemas de los métodos de pago
 
 |**Problema**|**Pasos para la solución de problemas**|
 |:----------|:-----|

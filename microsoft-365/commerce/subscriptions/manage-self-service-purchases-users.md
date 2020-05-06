@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus adquisiciones de autoservicio.
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636644"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046173"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -30,11 +30,11 @@ Su administrador tiene una vista de solo lectura en las suscripciones que compre
 
 ## <a name="view-your-subscriptions"></a>Ver las suscripciones
 
-Puede ver una lista de todas las suscripciones compradas por Self-Service que compró. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+Puede ver una lista de todas las suscripciones compradas por Self-Service que compró. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir las licencias
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción para la que desea comprar más o reducir las licencias.
 
@@ -74,7 +74,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ## <a name="cancel-a-subscription"></a>Cancelar una suscripción
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea cancelar.
 

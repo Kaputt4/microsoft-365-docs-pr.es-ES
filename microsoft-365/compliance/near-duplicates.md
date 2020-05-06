@@ -1,5 +1,5 @@
 ---
-title: Detección de semiduplicados
+title: Detección de duplicados Near-investigación de datos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e1a9ffe264925911f475732ffd98a43fa533e458
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Al administrar investigaciones de datos, use la detección de duplicados Near para agrupar documentos similares textualmente al analizar datos de casos.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: aa451051c008f7a1614661d3bd66129cac6bb4ad
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071307"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036435"
 ---
 # <a name="near-duplicate-detection"></a>Detección de semiduplicados
 

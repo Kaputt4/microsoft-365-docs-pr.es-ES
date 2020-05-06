@@ -15,13 +15,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga la información general de los tipos de información confidencial personalizada para DLP.
-ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga una visión general de los tipos de información confidencial personalizada para la Prevención de pérdida de datos (DLP), como el patrón primario, la proximidad de caracteres y el nivel de confianza.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 621c7be728f772e113ef5cd65d5b79a2526ec7c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617094"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035752"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipos de información confidencial personalizada
 

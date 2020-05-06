@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción a Microsoft 365 para empresas.
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632534"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045229"
 ---
 # <a name="manage-subscription-licenses"></a>Administrar las licencias de suscripción
 
@@ -42,9 +42,9 @@ No puede quitar una licencia de una suscripción si está asignada a un usuario.
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-2. En la página **productos & Services** , busque la suscripción a la que desea agregar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**.
+2. En la página **sus productos** , busque la suscripción en la que desea agregar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**.
 
     [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
 
@@ -86,7 +86,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto. 
 
-|Reason  |Description  |Solución  |
+|Reason  |Descripción  |Solución  |
 |---------|---------|---------|
 |Hay pendiente una comprobación de crédito. |Si hay pendiente una comprobación de crédito, verá un mensaje "Pendiente de comprobación de crédito" y no podrá comprar licencias hasta que la comprobación se haya completado.  | Vuelva a comprobar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br>Una vez completada la comprobación de crédito, debería ver el vínculo **Agregar o quitar licencias** en la sección **Usuarios**. Si es así, vaya a [Manage subscription licenses](#manage-subscription-licenses). |
 |Ha activado la suscripción con una clave de producto.| Si la suscripción se compró y se activó con una clave de producto de 25 caracteres, verá el texto "Pagado por adelantado".  |Consulte [Agregar licencias a una suscripción pagada para usar una clave de producto](add-licenses-using-product-key.md). |

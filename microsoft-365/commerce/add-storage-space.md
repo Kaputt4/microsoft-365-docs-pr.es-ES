@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Obtenga información sobre cómo agregar y reducir el almacenamiento de archivos en su suscripción de Microsoft 365. Con el almacenamiento de archivos adicionales, puede almacenar más contenido en SharePoint Online y OneDrive.
-ms.openlocfilehash: b5dea51e0e8616749a820ff35827b4390390af50
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a944c272f456fd6f284e1df28c52420e4deb40d4
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632748"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045945"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -43,45 +43,40 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ::: moniker range="o365-worldwide"
 
-1. Inicie sesión en https://admin.microsoft.com como administrador global o de SharePoint. (Si ve un mensaje que indica que no tiene permiso para obtener acceso a la página, no tiene permisos de administrador de Microsoft 365 en su organización).
-    
-2. En el panel izquierdo, en **centros de administración**, seleccione **SharePoint**. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint. 
-    
-3. En el panel izquierdo del nuevo Centro de administración de SharePoint, seleccione **Sitios activos**.
+1. Vaya a la página [Sitios activos del nuevo Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true) e inicie sesión con una cuenta que tenga [permisos de administrador](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) para su organización.
 
-4. En la parte superior derecha de la página, vea la cantidad de almacenamiento usado en todos los sitios y el almacenamiento total de la suscripción. (Si su organización ha configurado multigeográfico en Office 365, la barra también muestra la cantidad de almacenamiento que se usa en todas las ubicaciones geográficas). 
+2. En la parte superior derecha de la página, vea la cantidad de almacenamiento usado en todos los sitios y el almacenamiento total de la suscripción. (Si su organización ha configurado multigeográfico en Office 365, la barra también muestra la cantidad de almacenamiento que se usa en todas las ubicaciones geográficas). 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Inicie sesión en https://portal.office.de como administrador global o de SharePoint y, a continuación, seleccione el icono administrador para abrir el centro de administración. (Si ve un mensaje que indica que no tiene permiso para obtener acceso a la página, no tiene permisos de administrador de Microsoft 365 en su organización).
-    
-2. En el panel izquierdo, en **centros de administración**, seleccione **SharePoint**. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint. 
-    
+
+2. En el panel izquierdo, en **centros de administración**, seleccione **SharePoint**. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint.
+
 3. En el panel izquierdo del nuevo Centro de administración de SharePoint, seleccione **Sitios activos**.
 
-4. En la parte superior derecha de la página, vea la cantidad de almacenamiento usado en todos los sitios y el almacenamiento total de la suscripción. 
+4. En la parte superior derecha de la página, vea la cantidad de almacenamiento usado en todos los sitios y el almacenamiento total de la suscripción.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Inicie sesión en https://login.partner.microsoftonline.cn/ como administrador global o de SharePoint y, a continuación, seleccione el icono administrador para abrir el centro de administración. (Si ve un mensaje que indica que no tiene permiso para obtener acceso a la página, no tiene permisos de administrador de Microsoft 365 en su organización).
-     
-2. En el panel izquierdo, en **centros de administración**, seleccione **SharePoint**. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint. 
-    
+
+2. En el panel izquierdo, en **centros de administración**, seleccione **SharePoint**. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint.
+
 3. En el panel izquierdo del nuevo Centro de administración de SharePoint, seleccione **Sitios activos**.
 
 4. En la parte superior derecha de la página, vea la cantidad de almacenamiento usado en todos los sitios y el almacenamiento total de la suscripción.  
 
 ::: moniker-end
 
-
 ![Barra de almacenamiento en la página sitios activos](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> El almacenamiento usado no incluye los cambios realizados en las últimas 24-48 horas. 
+> El almacenamiento usado no incluye los cambios realizados en las últimas 24-48 horas.
 
 Una vez que haya determinado cuánto espacio de almacenamiento está usando, puede agregar o quitar espacio de almacenamiento para la suscripción. Para averiguar cuánto costará agregar espacio de almacenamiento, siga los pasos descritos en este artículo y revise la información sobre precios antes de comprar.
   
@@ -92,7 +87,6 @@ Para obtener información sobre cómo establecer los límites de almacenamiento 
 Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo.
 
 ::: moniker range="o365-worldwide"
-
 
 1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
 
@@ -160,15 +154,13 @@ Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo
 
 ::: moniker-end
 
-
 ## <a name="increase-or-decrease-storage"></a>Aumentar o disminuir el almacenamiento
 
 Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **almacenamiento de archivos adicionales de Office 365** , puede usar estos pasos para aumentar o disminuir el espacio de almacenamiento adicional de la suscripción. Puede reducir el almacenamiento a un mínimo de 1 gigabyte. Para quitar todo el espacio de almacenamiento adicional, debe ponerse en [contacto con el soporte técnico](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
 
-
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Elija la suscripción que contiene el complemento de **almacenamiento de archivos adicionales de Office 365** .
 
@@ -181,7 +173,6 @@ Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **
 ::: moniker range="o365-germany"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
 
 2. En la página **suscripciones** , seleccione **Complementos**.
 
@@ -225,8 +216,6 @@ Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **
 
 ::: moniker-end
 
-
-
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>¿Mi plan me permite optar a Office 365 Extra File Storage?
 
 Office 365 Extra File Storage está disponible para las siguientes suscripciones:
@@ -249,11 +238,11 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 
 - SharePoint Online Plan 2
 
-- Microsoft 365 empresa Basic
+- Microsoft 365 Empresa Básico
 
-- Microsoft 365 Business Standard
+- Microsoft 365 Empresa Estándar
 
-- Microsoft 365 empresa Premium
+- Microsoft 365 Empresa Premium
 
 - Microsoft 365 E3
 
