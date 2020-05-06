@@ -16,18 +16,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo acceder al correo electrónico desde su dispositivo móvil.
-ms.openlocfilehash: 7c318c6d68a0314c750c6ca1e4c3b2d180d9507f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784d652d26222fc53b3e11f3427cf286cb32dd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629100"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048824"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opciones para acceder al correo electrónico desde su dispositivo móvil
 
 Su organización ha configurado las opciones que controlan qué aplicaciones móviles puede usar para acceder a su cuenta profesional para el correo electrónico, el calendario y los contactos.
   
-Las aplicaciones móviles de Outlook para Android y Outlook para iOS están diseñadas para el correo electrónico del trabajo o de la escuela, y son las únicas aplicaciones que proporcionan características como la [bandeja de entrada prioritarios](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), que conserva los correos electrónicos importantes, el centro y el [Asistente para programación](https://go.microsoft.com/fwlink/?linkid=873406), lo que le ayuda a encontrar las horas de reunión que funcionan con sus compañeros y simplemente busca las salas de conferencias disponibles.
+Las aplicaciones móviles de Outlook para Android y Outlook para iOS están diseñadas para el correo electrónico del trabajo o de la escuela, y son las únicas aplicaciones que proporcionan características como la [bandeja de entrada prioritarios](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), que conserva los correos electrónicos importantes, el centro y el [Asistente para programación](https://www.microsoft.com/?ref=go), lo que le ayuda a encontrar las horas de reunión que funcionan con sus compañeros y simplemente busca las salas de conferencias disponibles.
   
 ## <a name="end-user-experience"></a>Experiencia del usuario final
 

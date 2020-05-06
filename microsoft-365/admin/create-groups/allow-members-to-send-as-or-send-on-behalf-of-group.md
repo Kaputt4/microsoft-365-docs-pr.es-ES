@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Obtenga información sobre cómo permitir a los miembros enviar correo electrónico como un grupo de Microsoft 365 o enviar correo electrónico en nombre de un grupo de Microsoft 365.
-ms.openlocfilehash: 4492c929fbd30ad77d9ddb23c37299e8734162df
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630674"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049392"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
@@ -78,7 +78,7 @@ En esta sección se explica cómo permitir que los usuarios envíen correo elect
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Obtenga más información sobre los grupos de 365 de Microsoft](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)
+[Obtenga más información sobre los grupos de 365 de Microsoft](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

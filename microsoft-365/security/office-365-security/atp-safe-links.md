@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,13 +25,13 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: 912c2fc0e76ca39ff4d600f53386d65e43946758
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: En este artículo, aprenderá a usar vínculos seguros para proteger su organización de los ataques de suplantación de identidad (phishing) y otros tipos de ataques.
+ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638565"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045259"
 ---
 # <a name="atp-safe-links"></a>Vínculos seguros de ATP
 
@@ -68,7 +70,7 @@ Asegúrese **también de que tiene los permisos necesarios**. Para definir (o ed
 |---------|---------|
 |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-|Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Cómo asegurarse de que está disponible la protección de vínculos seguros de ATP
 
@@ -85,7 +87,7 @@ En la tabla siguiente se describen algunos escenarios de ejemplo en los que la p
 |Jean es miembro de un grupo que tiene directivas de vínculos seguros de ATP que abarcan direcciones URL en correo electrónico y documentos de Office. Jean abre una presentación de PowerPoint enviada por alguien y, a continuación, hace clic en una dirección URL de la presentación.  <br/> |Sí. Las directivas de vínculos seguros de ATP que se definen se aplican al grupo de Jean, el correo electrónico de Jean y los documentos de Word, Excel, PowerPoint o Visio que Jean abre, siempre que Jean inicie sesión y use Microsoft 365 apps for Enterprise en dispositivos Windows, iOS o Android.  <br/> |
 |En la organización de Carlos, ningún administrador global ni de seguridad ha definido todavía ninguna directiva de vínculos seguros de ATP. Chris recibe un correo electrónico que contiene una dirección URL a un sitio Web malintencionado. Carlos no sabe que la dirección URL es malintencionada y hace clic en el vínculo.  <br/> |No. La directiva predeterminada que cubre las direcciones URL para todos los usuarios de la organización debe definirse en orden para que la protección esté en su ubicación.  <br/> |
 |En la organización de Pat, ningún administrador global ni de seguridad ha definido o modificado ninguna directiva de vínculos seguros de ATP. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.  <br/> |No. Debe definirse una directiva que incluya documentos de Office para que la protección esté en su ubicación. Consulte [configurar las directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|La organización de Lee tiene una directiva de vínculos seguros de `https://tailspintoys.com` ATP que se muestra como un sitio web bloqueado. Lee recibe un mensaje de correo electrónico que contiene una `https://tailspintoys.com/aboutus/trythispage`dirección URL para. Lee hace clic en la dirección URL.  <br/> |Depende de si todo el sitio y todas sus subpáginas están incluidos en la lista de direcciones URL bloqueadas. Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |
+|La organización de Lee tiene una directiva de vínculos seguros de `https://tailspintoys.com` ATP que se muestra como un sitio web bloqueado. Lee recibe un mensaje de correo electrónico que contiene una `https://tailspintoys.com/aboutus/trythispage`dirección URL para. Lee hace clic en la dirección URL.  <br/> |Depende de si todo el sitio y todas sus subpáginas están incluidos en la lista de direcciones URL bloqueadas. Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Pablo, el colega de Jean, envía un correo electrónico a Jean, sin saber que el correo electrónico contiene una dirección URL malintencionada.  <br/> |Depende de si las directivas de vínculos seguros de ATP están definidas para correo electrónico enviado dentro de la organización. Consulte [configurar las directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

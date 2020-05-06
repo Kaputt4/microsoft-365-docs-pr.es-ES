@@ -1,7 +1,7 @@
 ---
 title: Solicitudes de Intune Data Subject para GDPR y CCPA
-description: Guía sobre cómo utilizar los productos, servicios y herramientas administrativas de Microsoft con el fin de facilitar a nuestros clientes controladores la localización de datos personales para responder a las solicitudes de DSR y CCPA.
-keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsoft 365, GDPR, CCPA
+description: Esta guía ayudará a nuestros clientes controladores a comprender cómo encontrar y actuar sobre los datos personales y responder a las solicitudes de DSR y CCPA de los clientes que utilizan Microsoft Intune.
+keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,14 +14,16 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3d30b2187199b223086d53a144d711537fd7e59d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 6c39450169f835b3d558f14d248d425cb20f939f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558000"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035436"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de Intune Data Subject para GDPR y CCPA
 

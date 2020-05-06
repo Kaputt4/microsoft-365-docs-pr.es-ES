@@ -22,17 +22,16 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Obtenga información sobre cómo comprar un complemento para agregar una funcionalidad adicional a su suscripción de Microsoft 365 para empresas. También puede actualizar y quitar un complemento.
 ms.custom: okr_SMB
-ms.openlocfilehash: 011ed188f741f2f026b452a2ecfd8b8c1b01c66e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634925"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045793"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Comprar o editar un complemento
 
 Varios de los planes de Microsoft 365 para empresas tienen complementos que puede comprar para su suscripción. Un complemento proporciona funciones adicionales a la suscripción para la que se compra.
-
 
 ## <a name="buy-an-add-on"></a>Comprar un complemento
 
@@ -98,22 +97,21 @@ Varios de los planes de Microsoft 365 para empresas tienen complementos que pued
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Actualizar un complemento
 
-Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de. 
+Los pasos que se usan para actualizar un complemento dependen de si el complemento es un complemento tradicional o un complemento independiente o independiente de.
 
 Los *Complementos tradicionales* están vinculados a una suscripción específica. Si cancela la suscripción, también se cancelará el complemento asociado.
   
-Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **suscripciones** (o en la página **productos & Services** en el nuevo centro de administración) y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
+Los *complementos independientes* no están vinculados a una suscripción específica. Los complementos independientes aparecen como una suscripción independiente en la página **sus productos** y tienen su propia fecha de expiración. Los complementos independientes se administran de la misma manera que se administra cualquier otra suscripción.
   
 ### <a name="update-a-traditional-add-on"></a>Actualizar un complemento tradicional
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-2. En la página **productos & Services** , seleccione la suscripción para la que desea actualizar un complemento.
+2. En la página **sus productos** , seleccione la suscripción para la que desea actualizar un complemento.
 
 3. Seleccione **Complementos**. Se muestran los complementos que ha comprado.
 
@@ -122,7 +120,6 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 5. Especifique el cambio de cantidad que desea para la suscripción y, a continuación, seleccione **Enviar cambio**.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -134,7 +131,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
     Se muestran los complementos que ha comprado y cada uno de los complementos tendrá un vínculo **Cambiar cantidad** por debajo.
 
-4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar. 
+4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar.
 
     ![Vínculo a complementos y vínculo para cambiar cantidad.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -157,7 +154,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
     Se muestran los complementos que ha comprado y cada uno de los complementos tendrá un vínculo **Cambiar cantidad** por debajo.
 
-4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar. 
+4. Seleccione el vínculo **cambiar cantidad** para el complemento que desea actualizar.
 
     ![Vínculo a complementos y vínculo para cambiar cantidad.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
@@ -175,9 +172,9 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-2. En la página **productos & Services** , seleccione la suscripción de complemento que desea actualizar y, a continuación, seleccione **Agregar o quitar licencias**.
+2. En la página **sus productos** , seleccione la suscripción de complemento que desea actualizar y, a continuación, seleccione **Agregar o quitar licencias**.
 
 3. Escriba el número de licencias que necesita en el cuadro y, a continuación, seleccione **Enviar cambio**.
 
@@ -213,7 +210,6 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Quitar un complemento
 
 Puede cancelar un complemento independiente de la misma manera que [cancela una suscripción](subscriptions/cancel-your-subscription.md). O bien, puede establecer la **facturación recurrente** en desactivada para un complemento independiente mediante los pasos anteriores. Sin embargo, no se puede quitar un complemento tradicional una vez que se ha comprado. Si necesita quitar un complemento tradicional, [póngase en contacto con el soporte técnico para obtener ayuda](../admin/contact-support-for-business-products.md).
@@ -230,12 +226,12 @@ Para obtener información sobre los complementos de Skype Empresarial, vea [Lice
 |:-----|:-----|
 |Caja de seguridad del cliente  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Protección contra amenazas avanzada de Office 365 online](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 empresa Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Empresa Básico  <br/>  Microsoft 365 Empresa Estándar  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Cumplimiento avanzado de Office 365  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Extra File Storage  <br/> | Microsoft 365 apps for Business  <br/>  Microsoft 365 empresa Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office para la web con SharePoint plan 1  <br/>  Office para la web con SharePoint plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
+|Office 365 Extra File Storage  <br/> | Aplicaciones de Microsoft 365 para negocios  <br/>  Microsoft 365 Empresa Básico  <br/>  Microsoft 365 Empresa Estándar  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office para la web con SharePoint plan 1  <br/>  Office para la web con SharePoint plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
 |Sistema telefónico  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audioconferencia  <br/> |  Microsoft 365 empresa Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 sin Audioconferencia <br/> Microsoft 365 empresa Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Audioconferencia  <br/> |  Microsoft 365 Empresa Básico <br/> Microsoft 365 Empresa Estándar <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 sin Audioconferencia <br/> Microsoft 365 Empresa Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Créditos de comunicaciones  <br/> | Office 365 Enterprise E5  <br/> |
 |Plan de llamadas nacionales <br/> | Office 365 Enterprise E5  <br/> |
 |Plan de llamadas internacionales  <br/> | Office 365 Enterprise E5  <br/> |

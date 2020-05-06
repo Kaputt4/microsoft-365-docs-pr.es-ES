@@ -13,12 +13,13 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
-ms.openlocfilehash: c57f9a14e3089f52ad0eab0a0634d7d58f74e6cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621354"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035036"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -146,7 +147,7 @@ Tenga en cuenta que, al ejecutar el cmdlet de aplicación de Directiva, se aplic
 
 2. Según los resultados del paso anterior, realice uno de los siguientes pasos:
   
-    |Estado  |Siguiente paso  |
+    |Estado  |Paso siguiente  |
     |---------|---------|
     |**No iniciado**     |Si ha transcurrido más de 45 minutos desde que se ejecutó el cmdlet **Start-InformationBarrierPoliciesApplication** , revise el registro de auditoría para ver si hay errores en las definiciones de directiva o alguna otra razón por la que la aplicación no se ha iniciado. |
     |**Failed**     |Si se ha producido un error en la aplicación, revise el registro de auditoría. Revise también sus segmentos y directivas. ¿Hay algún usuario asignado a más de un segmento? ¿Hay algún segmento asignado a más de un poliicy? Si es necesario, [modifique los segmentos](information-barriers-edit-segments-policies.md#edit-a-segment) o [edite las directivas](information-barriers-edit-segments-policies.md#edit-a-policy)y, a continuación, vuelva a ejecutar el cmdlet **Start-InformationBarrierPoliciesApplication** .  |
@@ -164,7 +165,7 @@ Asegúrese de que su organización no tiene [directivas de libreta de direccione
 
 2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
 
-    |Resultados  |Siguiente paso  |
+    |Resultados  |Paso siguiente  |
     |---------|---------|
     |Las directivas de la libreta de direcciones de Exchange aparecen     |[Quitar directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |No existen directivas de libreta de direcciones |Revisar los registros de auditoría para averiguar por qué se produce un error en la aplicación de Directiva |

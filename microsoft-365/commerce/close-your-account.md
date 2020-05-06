@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942858"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045781"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -40,7 +40,7 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Paso 2: cancelar todas las suscripciones activas
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas**.
 
@@ -52,7 +52,7 @@ Si su organización usa Active Directory que se sincroniza con Azure AD, elimine
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Paso 3: eliminar todas las suscripciones deshabilitadas
 
-1. En el centro de administración, vaya a la página productos de **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& Services</a> .
+1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Si la lista de suscripciones está en la vista de **tabla** , a la derecha, seleccione **tarjetas**.
 

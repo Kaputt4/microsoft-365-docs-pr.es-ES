@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781465"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049525"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -109,11 +109,11 @@ Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint,
   
 ## <a name="are-pdf-file-attachments-supported"></a>¿Se admiten los datos adjuntos de archivos PDF?
 
-La respuesta breve es sí. El cifrado de PDF permite proteger documentos PDF confidenciales mediante comunicación segura o colaboración segura. Cuando se envía un correo electrónico, el servicio Office 365 cifra los datos adjuntos de los archivos PDF, no el cliente de Outlook. 
+La respuesta breve es sí. El cifrado de PDF permite proteger documentos PDF confidenciales mediante comunicación segura o colaboración segura. Cuando se envía un correo electrónico, el servicio Office 365 cifra los datos adjuntos de los archivos PDF, no el cliente de Outlook.
 
-Una vez que haya habilitado el cifrado de datos adjuntos de archivo PDF, puede cifrar los documentos PDF que envíe sin realizar pasos adicionales en Outlook en la web, Outlook para iOS y Outlook para Android.
+Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar los documentos PDF que envíe sin realizar ningún paso adicional. Estos clientes admiten el cifrado de PDF de forma nativa.
 
-El escritorio de Outlook no admite de forma nativa el cifrado de archivos adjuntos PDF. Para solucionar esto, puede seguir habilitando el cifrado de archivos adjuntos PDF en su organización. Cuando se envía correo desde el escritorio de Outlook con un archivo adjunto PDF, el cliente envía el mensaje con los datos adjuntos al servicio en primer lugar. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
+El escritorio de Outlook no admite de forma nativa el cifrado de archivos adjuntos PDF. En su lugar, debe configurar las reglas de flujo de correo de Exchange o DLP para aplicar el cifrado a los datos adjuntos PDF en primer lugar. Cuando se envía correo desde el escritorio de Outlook con un archivo adjunto PDF, el cliente envía el mensaje con los datos adjuntos al servicio en primer lugar. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
 
 Para habilitar el cifrado de datos adjuntos PDF, ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 

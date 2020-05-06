@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Register.com para Microsoft.
-ms.openlocfilehash: 7d1293368a9a7ab94a5556ca266c716280ae85f5
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939124"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048908"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Crear registros DNS en Register.com para Microsoft
 
@@ -123,7 +123,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:32)](https://support.of
     
     |****Nombre de host****|****Prioridad****|****Servidor de correo****|
     |:-----|:-----|:-----|
-    |@  <br/> |Alto  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/>  <br/>**Nota:** Obtenga la \<*clave-de-dominio*\> desde su cuenta de Microsoft. <br> [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |Alto  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/>  <br/>**Nota:** Obtenga la \<*clave-de-dominio*\> desde su cuenta de Microsoft. <br> [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copie y pegue el valor de la tabla](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -170,7 +170,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:23)](https://support.of
     |sip  <br/> |sipdir.online.lync.com  <br/>  <br/> |
     |lyncdiscover  <br/> |webdir.online.lync.com <br/>  <br/> |
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/>  <br/> |
-    |enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/>  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/>  <br/> |
    
      ![Copiar y pegar los valores DNS de la tabla](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
@@ -182,7 +182,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:23)](https://support.of
     
     ![Seleccione continuar.](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]

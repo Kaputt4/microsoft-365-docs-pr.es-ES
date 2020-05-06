@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en OVH para Microsoft.
-ms.openlocfilehash: a1f29b6f6464e781768997be0969914771ec5703
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939136"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048920"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Crear registros DNS en OVH para Microsoft
 
@@ -142,7 +142,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
     |**Tipo de registro**|**Subdominio**|**TTL**|**Prioridad**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<Domain-Key\>. mail.Protection.Outlook.com.  <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH registro MX para correo](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -207,7 +207,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     Para cada registro, escriba (o copie y pegue) los valores de la siguiente fila de la tabla anterior en los cuadros para ese registro.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]

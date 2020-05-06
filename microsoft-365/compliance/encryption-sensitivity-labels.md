@@ -1,5 +1,5 @@
 ---
-title: Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
+title: Restringir el acceso al contenido utilizando etiquetas de confidencialidad para aplicar la cifrado
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: ccbdc5651751c9ee83fa7791f1146108afe9492e
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 11a4ee93835ae39c196cf3f48fc1ae2b9baa6949
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900734"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035924"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 

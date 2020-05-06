@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Agregue nuevos empleados a Microsoft 365 para empresas para correo electrónico, Skype y aplicaciones de Office.
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618901"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049502"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Agregar un nuevo empleado a Microsoft 365
 
@@ -82,7 +82,7 @@ Y esta es una referencia rápida para ayudarles a empezar:
 |Configure Skype empresarial para poder conectarse con compañeros de trabajo o socios empresariales de su empresa o de todo el mundo. Puede iniciar conversaciones con llamadas de mi, voz o vídeo.  <br/> |[Instalar Skype empresarial en el equipo](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Para obtener información sobre cómo usar Skype empresarial, [vea un vídeo.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>¿Ha configurado Skype empresarial para que sus empleados puedan ponerse en contacto con personas externas a su empresa que usen la aplicación gratuita de Skype? Si no es así, dígale a su nuevo empleado que sepan qué esperar al usar Skype empresarial.  <br/> |
 |Instale las aplicaciones en el dispositivo móvil si quiere obtener correo electrónico o usar Skype empresarial en su teléfono.  <br/> |Si desea configurar la aplicación móvil de Outlook para que pueda recibir correo electrónico a través de su teléfono. Para obtener instrucciones, consulte [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx), [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx), [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Si desea usar Skype empresarial en un dispositivo móvil, descargue e instale la aplicación móvil. Para obtener instrucciones, consulte [iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Complete el aprendizaje de OneDrive para la empresa para obtener información sobre cómo almacenar y organizar documentos, presentaciones y hojas de cálculo en la nube.  <br/> |Mantenga los documentos relacionados con la empresa en la nube con OneDrive para la empresa. Siempre puede obtener acceso al contenido, incluso si ha iniciado sesión en Microsoft 365 en un equipo diferente. [Ver un vídeo para obtener información sobre cómo usar OneDrive para la empresa](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **Curso:** [aprendizaje de Onedrive para la empresa](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) (seleccione onedrive para la empresa).  <br/> |
-|Complete el aprendizaje de SharePoint Online para ayudarle a colaborar con compañeros y compartir contenido.  <br/> |El mejor punto para conservar los documentos a los que sus compañeros de trabajo también tendrán acceso es en SharePoint Online.  <br/> <br/>**Aprendizaje:** [vídeo: colaborar con contenido de equipo con SharePoint Online](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **Descubra lo siguiente:** ¿Cómo se encuentra su organización con SharePoint Online y qué tipo de documentos se almacenan allí? Además, los documentos que se almacenan en OneDrive para la empresa.  <br/> |
+|Complete el aprendizaje de SharePoint Online para ayudarle a colaborar con compañeros y compartir contenido.  <br/> |El mejor punto para conservar los documentos a los que sus compañeros de trabajo también tendrán acceso es en SharePoint Online.  <br/> <br/>**Aprendizaje:** [vídeo: colaborar con contenido de equipo con SharePoint Online](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Descubra lo siguiente:** ¿Cómo se encuentra su organización con SharePoint Online y qué tipo de documentos se almacenan allí? Además, los documentos que se almacenan en OneDrive para la empresa.  <br/> |
 
    
 ## <a name="related-articles"></a>Artículos relacionados

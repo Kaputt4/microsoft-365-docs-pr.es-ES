@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141575"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046278"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -49,8 +49,8 @@ La puntuación de cumplimiento ayuda a simplificar la administración del cumpli
 - **Acciones recomendadas**: proporciona recomendaciones e instrucciones paso a paso sobre cómo implementar controles para maximizar la puntuación.
 -  La **asignación de controles integradas**: le ayuda a mantenerse al día con el entorno de cumplimiento en constante evolución al proporcionarle un marco de control común integrado
 
-> [!IMPORTANT] 
-> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Las recomendaciones de la puntuación de cumplimiento y el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Este servicio se encuentra actualmente en versión preliminar y está sujeto a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910).
+> [!IMPORTANT]
+> Las recomendaciones de la puntuación de cumplimiento y del Administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de cliente según su entorno de reglamentación. Estos servicios están actualmente en versión preliminar y están sujetos a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también la [Guía de licencias de Microsoft 365 por seguridad y cumplimiento normativo](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="relationship-to-compliance-manager"></a>Relación con el administrador de cumplimiento
 
@@ -64,7 +64,7 @@ Obtenga más información sobre la relación entre la puntuación de cumplimient
 
 ## <a name="understanding-your-score"></a>Descripción de la puntuación
 
-La puntuación de cumplimiento proporciona una puntuación inicial basada en la línea base de protección de datos 365 de Microsoft. Esta línea base es un conjunto de controles que incluye las normas y estándares comunes de la industria. Aunque esta puntuación es un buen punto de partida para evaluar su postura de cumplimiento, la puntuación de cumplimiento será más eficaz una vez que agregue evaluaciones que sean más relevantes para su organización.
+La puntuación de cumplimiento proporciona una puntuación inicial basada en la línea base de protección de datos 365 de Microsoft. Esta línea de base es un conjunto de controles que incluye reglamentos y normas comunes de la industria. Aunque esta puntuación es un buen punto de partida para evaluar su postura de cumplimiento, la puntuación de cumplimiento será más eficaz una vez que agregue evaluaciones que sean más relevantes para su organización.
 
 Por ejemplo, si su organización pertenece a la industria de servicios financieros, es posible que quiera agregar la evaluación de FFIEC. Si su organización pertenece a la industria de la salud, puede Agregar la evaluación de HIPAA/alta tecnología. Obtenga información sobre cómo [Agregar evaluaciones en el administrador de cumplimiento](working-with-compliance-manager.md#assessments).
 
