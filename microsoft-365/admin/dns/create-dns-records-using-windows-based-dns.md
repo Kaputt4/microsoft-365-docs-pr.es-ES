@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en DNS basado en Windows para Microsoft.
-ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631374"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048848"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
@@ -75,14 +75,14 @@ Agregue registro CNAME SIP.
     - Nombre de host: SIP
     - Tipo: CNAME
     - Dirección: sipdir.online.lync.com
-- Elija **Aceptar**.
+- Seleccione **ACEPTAR**.
 
 Agregue el registro CNAME de detección automática de Skype Empresarial Online.  
 - En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes:  
     - Nombre de host: lyncdiscover
     - Tipo: CNAME
     - Dirección: webdir.online.lync.com
-- Elija **Aceptar**.
+- Seleccione **ACEPTAR**.
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Agregar dos registros CNAME para la administración de dispositivos móviles (MDM) para Microsoft
 
@@ -96,7 +96,7 @@ Agregue el registro CNAME de MDM Enterpriseregistration.
 - Nombre de host: enterpriseregistration
 - Tipo: CNAME
 - Dirección: enterpriseregistration.windows.net
-- Elija **Aceptar**. 
+- Seleccione **ACEPTAR**. 
 
 Agregue el registro CNAME de MDM Enterpriseenrollment. 
 -  En la página del administrador de DNS del dominio, vaya a **acción** \> **CNAME (CNAME)**. 
@@ -104,9 +104,9 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
     - Nombre de host: enterpriseenrollment
     - Tipo: CNAME
     - Dirección: enterpriseenrollment-s.manage.microsoft.com
-- Elija **Aceptar**.
+- Seleccione **ACEPTAR**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -124,7 +124,7 @@ Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
 -  Tipo de registro: TXT
 -  Dirección: v = spf1 include include SPF. Protection. Outlook. com-All 
          
--  Elija **Aceptar**.
+-  Seleccione **ACEPTAR**.
    
 ## <a name="add-srv-records"></a>Agregar registros SRV
 <a name="BKMK_add_SRV"> </a>
@@ -141,7 +141,7 @@ Agregue el registro SRV SIP para conferencias web de Skype Empresarial Online.  
     -  Peso: 1
     -  Puerto: 443
     -  Destino (nombre de host): sipdir.online.lync.com
--  Elija **Aceptar**. 
+-  Seleccione **ACEPTAR**. 
 
 
 Agregue el registro SRV SIP para la federación de Skype Empresarial Online.  
@@ -154,7 +154,7 @@ Agregue el registro SRV SIP para la federación de Skype Empresarial Online.
     -  Peso: 1
     -  Puerto: 5061
     -  Destino (nombre de host): sipfed.online.lync.com
--  Elija **Aceptar**. 
+-  Seleccione **ACEPTAR**. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Agregar un registro para verificar que posee el dominio si todavía no lo ha hecho
 <a name="BKMK_verify"> </a>
@@ -200,7 +200,7 @@ Compruebe su dominio en Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Dirección de correo electrónico no enrutable usada como un UPN en su Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si tiene previsto sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory es un sufijo de dominio válido y no un sufijo de dominio no admitido, como @contoso. local. Si necesita cambiar el sufijo UPN, vea [Cómo preparar un dominio no enrutable para la sincronización de directorios](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Si tiene previsto sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory es un sufijo de dominio válido y no un sufijo de dominio no admitido, como @contoso. local. Si necesita cambiar el sufijo UPN, vea [Cómo preparar un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 

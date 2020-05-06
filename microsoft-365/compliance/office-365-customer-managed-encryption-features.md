@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Resumen: comprenda la resistencia de los datos en Microsoft 365.'
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: En este artículo, obtendrá información sobre las tecnologías de cifrado que puede administrar y configurar en Microsoft 365.
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637346"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033618"
 ---
 # <a name="customer-managed-encryption-features"></a>Características de cifrado administradas por el cliente
 

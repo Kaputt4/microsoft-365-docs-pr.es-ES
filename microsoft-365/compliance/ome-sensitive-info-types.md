@@ -16,13 +16,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Resumen: Directiva de cifrado de mensajes de Office 365 para tipos de información confidencial.'
-ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo crear una directiva de tipo de información confidencial para su organización mediante el cifrado de mensajes de Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626878"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031417"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Crear una directiva de tipo de información confidencial para la organización mediante cifrado de mensajes
 

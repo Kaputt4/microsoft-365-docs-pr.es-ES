@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Obtenga información sobre cómo agregar usuarios a Microsoft 365, uno por vez o varios usuarios al mismo tiempo desde un archivo CSV.
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618865"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049476"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Agregar usuarios individualmente o de forma masiva
 
@@ -118,7 +118,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 Después de agregar un usuario, recibirá una notificación del equipo de Microsoft Online Services. El correo electrónico contendrá el identificador de usuario y la contraseña de la persona para que puedan iniciar sesión en Microsoft 365. Debe informar a su nuevo usuario sobre la información de inicio de sesión de 365 de Microsoft. Use el proceso habitual para comunicar nuevas contraseñas.
 
 > [!NOTE]
->Si crea usuarios mediante la migración de buzones de correo, tendrá que activar las cuentas de usuario mediante la asignación de licencias. Si no asigna una licencia a un usuario, su buzón se deshabilitará después de un período de gracia de 30 días. Consulte cómo [asignar licencias a usuarios](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) mediante el centro de administración de Microsoft 365.
+>Si crea usuarios mediante la migración de buzones de correo, tendrá que activar las cuentas de usuario mediante la asignación de licencias. Si no asigna una licencia a un usuario, su buzón se deshabilitará después de un período de gracia de 30 días. Consulte cómo [asignar licencias a usuarios](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) mediante el centro de administración de Microsoft 365.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Vídeo: agregar y administrar usuarios en el centro de administración
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630060"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049184"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -53,7 +53,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 |Role|Qué pueden hacer|
 |---------|---------|
 |Administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de 365 de Microsoft.|
-|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
+|User|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
@@ -77,12 +77,12 @@ Solo se notificará a los propietarios del grupo por correo electrónico. Si el 
 
 30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico que ha especificado para los grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no la renuevan, recibirán otra renovación de correo electrónico 15 días antes de la fecha de expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
 
-Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
+Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Información general sobre las directivas de retención](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
+[Información general sobre las directivas de retención](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[Asignar un nuevo propietario a un grupo huérfano](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
+[Asignar un nuevo propietario a un grupo huérfano](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [Configurar la expiración de grupos de 365 de Microsoft](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

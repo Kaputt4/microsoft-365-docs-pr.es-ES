@@ -16,13 +16,14 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint y Exchange Online.'
-ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: En este artículo, encontrará una descripción de cifrado de Office 365 para Skype, OneDrive, SharePoint y Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637290"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031400"
 ---
 # <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Cifrado para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: Estos artículos ayudarán a remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios de Office 365. También proporcionan información acerca de cómo puede informar sobre el correo no deseado y los intentos de suplantación de identidad, aunque no sea usted el usuario de Microsoft 365.
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información como remitente externo, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. Obtenga información sobre cómo informar sobre el correo electrónico no deseado & intentos de suplantación de identidad como usuario externo.
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638421"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035389"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envío de correo a Microsoft 365
 

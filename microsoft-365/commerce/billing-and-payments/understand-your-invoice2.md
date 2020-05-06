@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Obtenga información sobre cómo interpretar los cargos, la facturación y el pago de la factura de Microsoft 365 para empresas y cómo cambiar el número de pedido de compra.
-ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634973"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045817"
 ---
 # <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Comprenda su factura para Microsoft 365 para empresas
 
@@ -104,7 +104,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas** para cambiar de vista.
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637488"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043321"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -49,7 +49,7 @@ En función de la estructura del equipo de administración del cumplimiento, tie
 
 | **Grupo de funciones** | **Permisos de funciones** |
 | :---- | :---------------- |
-| **Administración de riesgos de Insider** | Use este grupo de roles para administrar la administración de riesgos de internación para su organización en un único grupo. Al agregar todas las cuentas de usuario para los administradores, analistas e investigadores designados, puede configurar los permisos de administración de riesgos de Insider en un único grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos de Insider. Esta es la forma más sencilla de empezar rápidamente con la administración de riesgos de Insider y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes.|
+| **Administración de riesgos de Insider** | Use este grupo de roles para administrar la administración de riesgos de internación para su organización en un único grupo. Al agregar todas las cuentas de usuario para los administradores, analistas e investigadores designados, puede configurar los permisos de administración de riesgos de Insider en un único grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos de Insider. Esta configuración es la forma más sencilla de empezar rápidamente con la administración de riesgos de Insider y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes.|
 | **Administrador de administración de riesgos de Insider** | Use este grupo de roles para configurar inicialmente la administración de riesgos de Insiders y más adelante para separar los administradores de riesgos de Insider en un grupo definido.  Los usuarios de este grupo de roles pueden crear, leer, actualizar y eliminar directivas de administración de riesgos de Insider, la configuración global y las asignaciones de grupos de roles. |
 | **Analistas de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de casos de riesgo de Insider. Los usuarios de este grupo de roles pueden obtener acceso a todas las plantillas de alertas de administración de riesgos de Insider, casos y notificaciones. No pueden acceder al explorador de contenido de riesgo de Insider. |
 | **Investigadores de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de datos de riesgo de Insider. Los usuarios de este grupo de roles pueden tener acceso a todas las alertas de administración de riesgos de Insider, casos, plantillas y el explorador de contenido para todos los casos. |
@@ -93,7 +93,7 @@ Consulte el tema sobre [Cómo configurar un conector para importar datos de recu
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurar directivas de prevención de pérdida de datos (DLP)
 
-El riesgo para Insider man'gement admite el uso de directivas DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva. Esta directiva ayuda a impulsar los indicadores de alerta de información confidencial es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización.
+La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva. Esta directiva ayuda a impulsar los indicadores de alerta de información confidencial es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización.
 
 Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a esta configuración "pasos de la ración". "" "" "" "" "" ""
 
