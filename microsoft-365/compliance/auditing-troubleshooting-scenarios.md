@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Puede usar la herramienta de búsqueda de registros de auditoría para ayudarle a solucionar problemas comunes como la investigación de una cuenta en peligro, para averiguar quién ha configurado el reenvío de correo para un buzón o determinar por qué un usuario externo inició sesión correctamente en su organización.
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudar a solucionar problemas de compatibilidad comunes para las cuentas de correo electrónico.
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636388"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034216"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de compatibilidad comunes
 
@@ -236,6 +238,6 @@ A continuación se muestran dos escenarios de ejemplo que darían como resultado
 
     Además de las actividades **de inicio de sesión del usuario** , se pueden devolver otros registros de auditoría, tales que indican que un usuario de la organización compartió recursos con el usuario externo y si el usuario externo obtuvo acceso, modificó o descargó un documento compartido con ellos.
 
-- Buscar actividades de uso compartido de SharePoint que indiquen que un archivo se ha compartido con el usuario externo identificado por un registro **de auditoría registrado** por un usuario. Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
+- Buscar actividades de uso compartido de SharePoint que indiquen que un archivo se ha compartido con el usuario externo identificado por un registro **de auditoría registrado** por un usuario. Para obtener más información, consulte [Usar la auditoría de uso compartido en el registro de auditoría](use-sharing-auditing.md).
 
 - Exporte los resultados de la búsqueda de registros de auditoría que contengan registros relevantes para la investigación, de modo que pueda usar Excel para buscar otras actividades relacionadas con el usuario externo. Para obtener más información, vea [exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md).

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use la pestaña comunicaciones en un caso de exhibición avanzada de documentos electrónicos para administrar el flujo de trabajo de notificaciones de custodios.
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: Use la herramienta de comunicaciones en un caso avanzado de eDiscovery para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280238"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035792"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de suspensión legal
 
@@ -86,7 +87,7 @@ Para crear una notificación de emisión:
 
 4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de emisión. 
 
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
 
 ### <a name="re-issuance-notification"></a>Notificación de nueva emisión
 
@@ -102,7 +103,7 @@ Para crear una notificación de nueva emisión:
 
 4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de reemisión.
 
-5. Haga clic en **Guardar **.
+5. Haga clic en **Guardar**.
 
 > [!NOTE]
 > Si se modifica el contenido del portal (en la página **definir contenido del portal** del Asistente para **Editar comunicación** ), la notificación de reemisión se enviará automáticamente a todos los custodios asignados al aviso. Una vez enviada la notificación, se pedirá a los custodios que vuelvan a confirmar su aviso de suspensión. Si ha configurado un flujo de trabajo de aviso o de escalado, también se reiniciará. Para obtener más información sobre qué otros eventos de administración de casos desencadenan comunicaciones, consulte [eventos que desencadenan notificaciones](#events-that-trigger-notifications).

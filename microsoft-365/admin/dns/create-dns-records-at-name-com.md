@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en name.com para Microsoft.
-ms.openlocfilehash: 8518ca2570b3be1cb3abcd5c57b8309e989481cb
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938665"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048968"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Crear registros DNS en name.com para Microsoft
 
@@ -65,7 +65,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Tipo** <br/> |**Host** <br/> |**Respuesta** <br/> |**TTL** <br/> |
+    |**Type** <br/> |**Host** <br/> |**Respuesta** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
     ![Nombre-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
@@ -116,9 +116,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Tipo**|**Host**|**Respuesta**|**TTL**|**Prio**|
+    |**Type**|**Host**|**Respuesta**|**TTL**|**Prio**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Deje este campo en blanco).  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |MX  <br/> |(Deje este campo en blanco).  <br/> | *\< clave-de-dominio \>*  . mail.protection.outlook.com      <br/> **Nota:** Obtén tu * \<clave\> de dominio* de tu cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Nombre-BP-configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -159,13 +159,13 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    |**Tipo**|**Host**|**Respuesta**|**TTL**|
+    |**Type**|**Host**|**Respuesta**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodescubrir  <br/> |autodiscover.outlook.com  <br/> |Use el valor predeterminado (300).  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |Use el valor predeterminado (300).  <br/> |
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |Use el valor predeterminado (300).  <br/> |
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |Use el valor predeterminado (300).  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |Use el valor predeterminado (300).  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |Use el valor predeterminado (300).  <br/> |
    
    ![Nombre-BP-configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
@@ -201,7 +201,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Tipo**|**Host**|**Respuesta**|**TTL**|
+    |**Type**|**Host**|**Respuesta**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |Use the default value (300).  <br/> |
    

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1c0eaed5d5971a55e4e9851bac3133bcd961eb36
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: La etiquetación de documentos en un conjunto de revisiones ayuda a quitar contenido innecesario e identificar contenido relevante en un caso avanzado de eDiscovery.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 445bf9a0ee5959c4972920a74e7bd1596d9edca1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557700"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034554"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Etiquetar documentos en un conjunto de revisión
 

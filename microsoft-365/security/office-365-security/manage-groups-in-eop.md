@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Puede usar Exchange Online Protection (EOP) para crear grupos habilitados para correo para una organización de Exchange. También puede usar EOP para definir o actualizar propiedades de grupo que especifiquen su pertenencia, las direcciones de correo electrónico y otros aspectos de los grupos.
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: En este artículo, aprenderá a crear y administrar grupos habilitados para correo para una organización de Exchange en Exchange Online Protection (EOP).
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082907"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034407"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 
@@ -55,7 +57,7 @@ Puede crear dos tipos de grupos para su organización de Exchange:
 
 1. En el EAC, vaya a **grupos**de **destinatarios** \> .
 
-2. Haga **** ![clic en nuevo](../../media/ITPro-EAC-AddIcon.gif)icono Agregar y, a continuación, haga clic en **grupo de distribución** o **grupo de seguridad**, según sus necesidades.
+2. Haga **New** ![clic en nuevo](../../media/ITPro-EAC-AddIcon.gif)icono Agregar y, a continuación, haga clic en **grupo de distribución** o **grupo de seguridad**, según sus necesidades.
 
 3. En la página **nuevo grupo de distribución** o **nuevo grupo de seguridad** , configure las siguientes opciones:
 
@@ -82,9 +84,9 @@ Puede crear dos tipos de grupos para su organización de Exchange:
 
 2. Realice uno de los pasos siguientes:
 
-   - Para editar un grupo: en la lista de grupos, haga clic en el grupo que desea ver o modificar y, a continuación **** ![, haga clic](../../media/ITPro-EAC-EditIcon.gif)en Editar icono de edición. Puede actualizar la configuración general, agregar o quitar propietarios de grupo y agregar o quitar miembros del grupo según sea necesario.
+   - Para editar un grupo: en la lista de grupos, haga clic en el grupo que desea ver o modificar y, a continuación **Edit** ![, haga clic](../../media/ITPro-EAC-EditIcon.gif)en Editar icono de edición. Puede actualizar la configuración general, agregar o quitar propietarios de grupo y agregar o quitar miembros del grupo según sea necesario.
 
-   - Para quitar un grupo: seleccione el grupo y haga **** ![clic en quitar](../../media/ITPro-EAC-RemoveIcon.gif)icono quitar.
+   - Para quitar un grupo: seleccione el grupo y haga **Remove** ![clic en quitar](../../media/ITPro-EAC-RemoveIcon.gif)icono quitar.
 
 3. Cuando termine los cambios, haga clic en **Guardar**.
 

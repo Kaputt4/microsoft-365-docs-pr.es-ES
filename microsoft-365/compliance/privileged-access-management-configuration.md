@@ -1,5 +1,5 @@
 ---
-title: Introducción a la administración de acceso privilegiada
+title: Introducción a la administración del acceso con privilegios
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,19 +14,21 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom:
+- Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: ''
-description: Use este tema para obtener más información acerca de la configuración de la administración del acceso con privilegios.
-ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+description: Use este artículo para obtener más información sobre cómo habilitar y configurar la administración del acceso con privilegios en Office 365.
+ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115996"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036425"
 ---
-# <a name="get-started-with-privileged-access-management"></a>Introducción a la administración de acceso privilegiada
+# <a name="get-started-with-privileged-access-management"></a>Introducción a la administración del acceso con privilegios
 
-Este tema le guiará a través de la habilitación y configuración de la administración del acceso con privilegios en su organización de Office 365. Puede usar tanto el centro de administración de Microsoft 365 como PowerShell de administración de Exchange para administrar y usar el acceso con privilegios.
+Este tema le guiará a través de la habilitación y configuración de la administración del acceso con privilegios en su organización. Puede usar tanto el centro de administración de Microsoft 365 como PowerShell de administración de Exchange para administrar y usar el acceso con privilegios.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -46,11 +48,11 @@ Los usuarios que envían y responden a solicitudes de administración de acceso 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance ya no se vende como una suscripción independiente. Cuando expiren las suscripciones actuales, los clientes deben pasar a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o más.
 
-Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea intentar la administración de acceso privilegiada, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
+Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración de acceso privilegiada, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a su suscripción existente de Office 365 o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitación y configuración de la administración del acceso con privilegios
 
-Siga estos pasos para configurar y usar el acceso con privilegios en su organización de Office 365:
+Siga estos pasos para configurar y usar el acceso con privilegios en su organización:
 
 - [Paso 1: crear un grupo de aprobadores](privileged-access-management-configuration.md#step1)
 
@@ -71,7 +73,7 @@ Siga estos pasos para configurar y usar el acceso con privilegios en su organiza
 Una vez que se haya concedido la aprobación, el usuario que realiza la solicitud puede ejecutar la tarea deseada y el acceso privilegiado autorizará y ejecutará la tarea en nombre del usuario. La aprobación sigue siendo válida durante la duración solicitada (la duración predeterminada es de 4 horas), durante el cual el solicitante puede ejecutar la tarea deseada varias veces. Todas estas ejecuciones se registran y están disponibles para la auditoría de seguridad y cumplimiento. 
 
 >[!NOTE]
->Si desea usar PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos descritos en [Connect to Exchange Online PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) para conectarse a Exchange Online PowerShell con sus credenciales de Office 365. No es necesario habilitar la autenticación multifactor para su organización de Office 365 para usar los pasos para habilitar el acceso privilegiado mientras se conecta a Exchange Online PowerShell. La conexión con la autenticación multifactor crea un token de OAuth que se usa en el acceso con privilegios para firmar las solicitudes.
+>Si desea usar PowerShell de administración de Exchange para habilitar y configurar el acceso con privilegios, siga los pasos descritos en [Connect to Exchange Online PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) para conectarse a Exchange Online PowerShell con sus credenciales de Office 365. No es necesario habilitar la autenticación multifactor para que su organización use los pasos para habilitar el acceso privilegiado mientras se conecta a PowerShell de Exchange Online. La conexión con la autenticación multifactor crea un token de OAuth que se usa en el acceso con privilegios para firmar las solicitudes.
 
 <a name="step1"> </a>
 
@@ -126,7 +128,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3-create-an-access-policy"></a>Paso 3: crear una directiva de acceso
 
-Puede crear y configurar hasta 30 directivas de acceso privilegiadas para su organización de Office 365.
+Puede crear y configurar hasta 30 directivas de acceso privilegiadas para su organización.
 
 ### <a name="in-the-microsoft-365-admin-center"></a>En el centro de administración de Microsoft 365
 

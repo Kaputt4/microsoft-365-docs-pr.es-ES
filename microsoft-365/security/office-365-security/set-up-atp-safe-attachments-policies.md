@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638349"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035325"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
@@ -49,7 +50,7 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
   |---------|---------|
   |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-  |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
   Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
@@ -80,7 +81,7 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
    - En la sección **aplicado a** , elija **el dominio del destinatario es**y, a continuación, seleccione su dominio. Elija **Agregar**y, después, haga clic en **Aceptar**.
 
-6. Elija **Guardar**.
+6. Seleccione **Guardar**.
 
 Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez definida o modificada una directiva, permita al menos 30 minutos para que las directivas entren en vigor en los centros de recursos de Microsoft.
 

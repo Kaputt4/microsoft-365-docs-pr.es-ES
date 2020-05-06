@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Compre una suscripción a Microsoft 365 para empresas. Puede comprar el mismo tipo de suscripción que ha probado o un plan diferente.
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634949"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045805"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Compre una suscripción a Microsoft 365 para empresas desde su versión de prueba gratuita
 
@@ -50,9 +50,9 @@ Es fácil y, además, si compra el mismo tipo de suscripción que el de la versi
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-2. En la página **productos & Services** , busque la suscripción que desea comprar. En la sección **licencias** , seleccione **suscripción de compra**.
+2. En la página **sus productos** , busque la suscripción que desea comprar. En la sección **licencias** , seleccione **suscripción de compra**.
 
 3. Elija un compromiso mensual o anual para la suscripción y, a continuación, seleccione **Desproteger**.
 
@@ -163,6 +163,6 @@ Si adquiere un tipo de suscripción diferente al de la versión de prueba, tendr
 
 [Extender la versión de prueba](extend-your-trial.md)
   
-[Regístrese para obtener Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Registrarse en Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
 [Cambiar a otro plan o suscripción de Microsoft 365](subscriptions/switch-to-a-different-plan.md)

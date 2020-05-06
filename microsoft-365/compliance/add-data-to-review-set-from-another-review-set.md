@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: a6bd4672c75e2e633ede2ad54effb4c6562b822c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo seleccionar documentos de un conjunto de revisión y trabajar con ellos de forma individual en otro conjunto en un caso de exhibición avanzada de documentos electrónicos.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080196"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034684"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Agregar datos a un conjunto de revisión desde otro conjunto de revisión
 

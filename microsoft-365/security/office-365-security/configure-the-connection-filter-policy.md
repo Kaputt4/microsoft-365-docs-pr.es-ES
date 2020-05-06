@@ -1,5 +1,5 @@
 ---
-title: Configurar la Directiva de filtro de conexión predeterminada, la lista de direcciones IP permitidas, la lista de direcciones IP bloqueadas, habilitar o deshabilitar la lista segura
+title: Configuración de la Directiva de filtro de conexión predeterminada
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos de las direcciones IP en las que confía. También puede crear una lista de direcciones IP bloqueadas de remitentes bloqueados.
-ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo configurar el filtrado de conexiones en Office 365 para permitir o bloquear correos electrónicos de los servidores de correo electrónico.
+ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637751"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035087"
 ---
-# <a name="configure-connection-filtering"></a>Configuración del filtrado de conexiones
+# <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
 Si es un cliente de 365 de Microsoft con buzones de correo en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, use el filtrado de conexiones en EOP (específicamente, la Directiva de filtro de conexión predeterminada) para identificar los servidores de correo electrónico de origen válidos o incorrectos mediante sus direcciones IP. Los componentes clave de la Directiva de filtro de conexión predeterminada son:
 
@@ -44,7 +46,7 @@ En este tema se describe cómo configurar la Directiva de filtro de conexión pr
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a Exchange Online Protection PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de filtro de conexión predeterminada, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de filtro de conexión predeterminada, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el centro de seguridad & cumplimiento, consulte [Permissions in the security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de filtro de conexión predeterminada, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de filtro de conexión predeterminada, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Para buscar las direcciones IP de origen de los servidores de correo electrónico (remitentes) que desea permitir o bloquear, puede comprobar el campo de encabezado de IP de conexión (**CIP**) en el encabezado del mensaje. Para ver un encabezado de mensaje en varios clientes de correo electrónico, consulte [Ver encabezados de mensajes de Internet en Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 

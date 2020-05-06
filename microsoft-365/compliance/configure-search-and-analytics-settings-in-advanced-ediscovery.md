@@ -1,5 +1,5 @@
 ---
-title: Establecer la configuración de búsqueda y análisis
+title: 'Configurar las opciones de búsqueda y análisis: eDiscovery'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Configure las opciones avanzadas de eDiscovery que se aplican a todo el conjunto de revisiones en un caso. Esto incluye la configuración de análisis y OCR.
-ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588813"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033680"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
 

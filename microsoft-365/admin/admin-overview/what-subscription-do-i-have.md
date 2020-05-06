@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621435"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045217"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -40,9 +40,9 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Productos y servicios</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
-2. Las suscripciones se muestran en la página **productos & Services** , junto con el nombre de la suscripción, la información sobre la suscripción y su estado. Para ver una vista condensada, seleccione **vista de tabla**.
+2. Las suscripciones se muestran en la página **sus productos** , junto con el nombre de la suscripción, información sobre la suscripción y su estado. Para ver una vista condensada, seleccione **vista de tabla**.
 
 ::: moniker-end
   

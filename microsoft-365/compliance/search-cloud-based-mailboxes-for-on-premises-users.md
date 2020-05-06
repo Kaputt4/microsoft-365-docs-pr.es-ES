@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta de búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de MicrosoftTeams (llamados chats 1xN) para usuarios locales en un despliegue híbrido de Exchange.
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626456"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034577"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Búsqueda de buzones basados en la nube para usuarios locales
 
@@ -47,7 +47,7 @@ Si un usuario habilitado para Microsoft Teams tiene un buzón de correo en las i
   
 El siguiente gráfico muestra el flujo de trabajo de cómo los datos del chat de Teams para los usuarios locales están disponibles para buscar, previsualizar y exportar.
   
-![Almacenamiento en la nube para los usuarios locales de Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Almacenamiento en la nube para los usuarios locales de Microsoft Teams](../media/EHAMShard1.png)
   
 Además de esta nueva capacidad, todavía puede utilizar la Búsqueda de contenido para buscar, previsualizar y exportar el contenido de Teams en el sitio SharePoint basado en la nube y el buzón de Exchange asociado con los datos de cada equipo de Microsoft y chat de 1xN Teams en el buzón de Exchange Online para los usuarios basados en la nube.
 

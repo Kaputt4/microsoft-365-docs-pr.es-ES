@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre cómo configurar los remitentes suplantados para permitir o no permitir y otras opciones de configuración de inteligencia de falsificaciones en Exchange Online y Exchange Online Protection (EOP).
-ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: En este artículo, aprenderá a usar y administrar la inteligencia de suplantación de identidad para la protección contra la suplantación de correo electrónico.
+ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949242"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034249"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurar inteligencia de suplantación de identidad en Microsoft 365
 

@@ -1,5 +1,5 @@
 ---
-title: Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
+title: Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos-SharePoint Online
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,18 +16,19 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - IT_Networking
+- seo-marvel-apr2020
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: Obtenga información sobre cómo personalizar, organizar y administrar el sitio de grupo.
-ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: En este artículo, aprenderá a personalizar, organizar y administrar el sitio de grupo para el almacenamiento y el uso compartido de archivos.
+ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627623"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033791"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 

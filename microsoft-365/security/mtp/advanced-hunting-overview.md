@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la búsqueda avanzada en la Protección contra amenazas de Microsoft
+title: 'Información general: búsqueda avanzada'
 description: Obtenga más información sobre las consultas de búsqueda avanzada en Microsoft 365 y cómo usarlas para encontrar de forma proactiva amenazas y debilidades en la red
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: dc91b97f48d6a5ca76c405e4c1006dceb9dc0b34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929033"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033979"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -49,12 +50,6 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 | **Aprovechar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | [Usar consultas compartidas](advanced-hunting-shared-queries.md) |
 | **Optimizar las consultas** | Obtenga información acerca de cómo crear consultas eficientes y consultas que combinan datos de mensajes de correo electrónico y dispositivos. | - [Procedimientos recomendados de consulta](advanced-hunting-shared-queries.md) <br>- [Búsqueda en dispositivos y correos electrónicos](advanced-hunting-best-practices.md) |
 | **Crear reglas de detección personalizadas** | Comprenda cómo puede usar consultas de búsqueda avanzada para desencadenar alertas y aplicar acciones de respuesta automáticamente. | - [Información general sobre las detecciones personalizadas](custom-detections-overview.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md) |
-
-## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
-Aprovéchese de las funciones siguientes para escribir consultas más rápido:
-- **Autosugerir** : cuando se escriben consultas, la búsqueda avanzada ofrece sugerencias de IntelliSense. 
-- **Referencia del esquema**: se proporciona una referencia de esquema que incluye la lista de tablas y sus columnas junto al área de trabajo. Para obtener más información, mueva el puntero sobre un elemento. Haga doble clic en un elemento para insertarlo en el editor de consultas.
-
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)

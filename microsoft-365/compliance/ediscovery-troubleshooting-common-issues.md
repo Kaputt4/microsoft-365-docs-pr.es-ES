@@ -16,14 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Investigue, solucione problemas y resuelva problemas comunes en la exhibición de documentos electrónicos.
+description: Obtenga información sobre los pasos básicos de solución de problemas que puede realizar para resolver problemas comunes en la exhibición de documentos electrónicos de Office 365.
 siblings_only: true
-ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f8b73e886e9aa639ff5575f10822417411a0784e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631775"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035672"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar problemas y resolver problemas comunes de eDiscovery
 
@@ -51,7 +52,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
    > |Nombre  |RecipientType  |
    > |---------|---------|
    > |Alias, usuario     |MailUser         |
-   > |Alias, usuario     |Usuario         |
+   > |Alias, usuario     |User         |
 
 3. Si se devuelven varios usuarios, busque y corrija el objeto conflictivo.
 
@@ -195,6 +196,6 @@ error de distribución de sincronización de la Directiva de suspensión de caso
 
 4. Ponerse en contacto con el soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Sugerencias para evitar errores de ubicación de contenido](retry-failed-content-search.md#tips-to-avoid-content-location-errors)

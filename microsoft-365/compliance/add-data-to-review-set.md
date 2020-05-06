@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Agregue los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos avanzado. Los elementos se copian de su ubicación original y se copian en una ubicación de almacenamiento de Azure proporcionada por Microsoft. Los elementos también se vuelven a indexar y la exhibición avanzada de documentos electrónicos realizará el reconocimiento óptico de caracteres (OCR) en los archivos de imagen y cargará el texto de la imagen para revisión y análisis.
-ms.openlocfilehash: b3710a91585d801f55b36622d6048a2c4bc58a7d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de los resultados de la búsqueda a un conjunto de revisión de caso avanzado de eDiscovery.
+ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632305"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034674"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 

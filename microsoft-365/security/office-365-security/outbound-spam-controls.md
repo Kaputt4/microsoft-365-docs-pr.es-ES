@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden obtener información sobre cómo Microsoft 365 y Exchange Online Protection (EOP) protegen a los clientes del correo no deseado saliente y qué hacer si es necesario enviar correos masivos.
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Aprenda como administrador cómo Office 365 y Exchange Online Protection (EOP) protegen a los clientes del correo no deseado saliente y qué hacer si necesita enviar correos masivos.
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634501"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033931"
 ---
 # <a name="outbound-spam-protection"></a>Protección contra el spam de salida
 

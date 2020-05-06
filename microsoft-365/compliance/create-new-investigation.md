@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenga información sobre cómo crear, configurar y guardar una nueva investigación en investigaciones de datos (versión preliminar) en el centro de cumplimiento de Microsoft 365.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077477"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035782"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Crear una nueva investigación en las investigaciones de datos (versión preliminar)
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: f8b72112feea4af0a33ef3a0cc12005c8deea195
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Solucione los errores de Azure AzCopy al cargar datos que no son de Office 365 para la corrección de errores en la exhibición avanzada de documentos electrónicos.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: afb89517f6c34495820bec424c72833324e00125
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637520"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034502"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy en eDiscovery avanzado
 

@@ -1,6 +1,6 @@
 ---
-title: Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas en el centro de seguridad de Microsoft 365
-description: Describe los informes interactivos de análisis de amenazas en el centro de seguridad de Microsoft 365
+title: Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas
+description: Use los informes interactivos de análisis de amenazas en Microsoft 365 para evaluar la resistencia y el nivel de seguridad de su organización frente a las amenazas emergentes.
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, Threat Analytics, Microsoft defender ATP, Cyber, Security postura, amenazas emergentes
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fcb58c2c002878fe42c723e0c2c75aa269ebc368
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1c058754ff65510ffd005a4017195bf0afa85eb0
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087559"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034051"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprenda las campañas y técnicas de ataque más recientes con el análisis de amenazas 
 
