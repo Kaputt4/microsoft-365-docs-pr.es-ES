@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Obtenga información sobre cómo ampliar su suscripción de prueba durante otro período de 30 días.
-ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e634c43c1d6399abc3a88438fe410f5a1a19361e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045769"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141257"
 ---
 # <a name="extend-your-trial"></a>Ampliar el periodo de prueba
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ¿Necesita más tiempo para probar las características de Microsoft 365 para empresas antes de comprar? Si faltan 15 días para la expiración de su suscripción de prueba y esta no se ha ampliado antes, puede hacerlo por un período adicional de 30 días. Solo puede hacerlo una vez.
 

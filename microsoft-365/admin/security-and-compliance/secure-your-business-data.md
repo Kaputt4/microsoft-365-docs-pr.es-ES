@@ -20,20 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627697"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140830"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las diez formas principales de proteger los planes de Microsoft 365 para empresas
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft y el tipo de organización está dirigido a los delincuentes cibernéticos y los hackers, use las instrucciones de este artículo para aumentar la seguridad de su organización. Esta guía ayuda a su organización a lograr los objetivos descritos en el [manual](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)de la campaña Harvard Kennedy School Cybersecurity.
   
 Microsoft recomienda que complete las tareas que se enumeran en la siguiente tabla que se aplican a su plan de servicio. 
   
-||**Tarea**|**Microsoft 365 Business Standard**|**Microsoft 365 empresa Premium**|
+||**Tarea**|**Microsoft 365 Empresa Estándar**|**Microsoft 365 Empresa Premium**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |segundo  <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -44,7 +51,7 @@ Microsoft recomienda que complete las tareas que se enumeran en la siguiente tab
 |7   <br/> |[Usar el cifrado de mensajes de Office](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10    <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Antes de empezar, Compruebe la [puntuación segura de microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) en el centro de seguridad de Microsoft 365. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365. Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o dirigir recomendaciones con una aplicación o software de terceros. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede sentirse seguro de informar sobre el estado de seguridad de la organización.
   
@@ -147,7 +154,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
     
 5. Aplique la configuración de la tabla siguiente para cada regla. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|**Bloquear tipos de archivo que puedan contener ransomware o cualquier otro código malintencionado**|
 |:-----|:-----|:-----|
@@ -160,7 +167,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
 > [!TIP]
 > También puede Agregar los archivos que desee bloquear a la lista antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para obtener más información, vea:
+Para más información, consulte lo siguiente:
   
 - [Cómo tratar con ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -183,7 +190,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la tabla siguiente. Deje el resto de las opciones de configuración en el valor predeterminado, a menos que quiera cambiarlos.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -302,7 +309,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto al correo electrónico**, seleccione **Microsoft 365 apps for Enterprise, Office para iOS y Android**.
     
-3. Seleccione **Guardar**. 
+3. Haga clic en **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -310,7 +317,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Seleccione **Guardar**. 
+3. Haga clic en **Guardar**. 
     
 | | | Configuración **u opción**|**recomendada** <br/>| | Denomina  <br/> | Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> | | Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> | Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> | | Usar datos adjuntos seguros para analizar contenido descargable  <br/> | Seleccione esta casilla.  <br/> | | Aplicado a  <br/> | El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
    

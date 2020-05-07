@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b62e40ce317bc5a6bc817e5eade5b476542c5f04
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ac5a027225ce0f7c4c719ba3a897f5bc6f5629d5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602177"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065651"
 ---
 # <a name="minimum-acceptable-risk-standards-for-exchanges-mars-e-20-framework"></a>Estándares mínimos aceptables de riesgo para los cambios del marco (MARS-E) 2.0
 
@@ -35,9 +35,7 @@ Estas actualizaciones abordan la confidencialidad, integridad y disponibilidad e
 
 Actualmente, no existe un proceso formal de autorización y acreditación para MARS-E. Sin embargo, los servicios de la plataforma Microsoft Azure han sido sometidos a auditorías de FedRAMP independientes en el Nivel de impacto moderado y del Azure Government en el Nivel de impacto alto, y están autorizados de acuerdo a los estándares de FedRAMP. Aunque estas normas no se centran específicamente en MARS-E, los requisitos y objetivos de control de MARS-E están estrechamente alineados y sirven para proteger la confidencialidad, integridad y disponibilidad de los datos de Azure.
 
-Obtenga más información sobre los beneficios del marco MARS-E 2.0 en la nube de Microsoft:[Descargue el documento de antecedentes de MARS-E ](https://aka.ms/mars-e-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Intune
@@ -71,8 +69,4 @@ Sí. Los informes de auditoría de terceros según los estándares FedRAMP dan f
     - [Volumen III: Catálogo de controles mínimos aceptables de seguridad y privacidad para los intercambios](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/3-MARS-E-v2-0-Catalog-of-Security-and-Privacy-Controls-11102015.pdf)
 - [Informe sobre el marco de cumplimiento de Microsoft para servicios en línea](https://aka.ms/compliance-framework)
 - [Términos de Microsoft Online Services ](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

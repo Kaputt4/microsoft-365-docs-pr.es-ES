@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7741d23d83b7f21b61801fd51ed6332f2fb02718
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea4c13f6561bdfd3b08e81b99d772172f3e90961
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602587"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066121"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Certificación STAR de Cloud Security Alliance (CSA)
 
@@ -80,7 +80,3 @@ Puede descargar la [Certificación CSA STAR](https://aka.ms/CSASTAR-Attestation)
 - [Matriz de Controles en la Nube (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
 - [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).
