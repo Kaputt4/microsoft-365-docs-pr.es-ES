@@ -1,7 +1,7 @@
 ---
 title: Publicación de US Internal Revenue Service 1075
 description: Microsoft tiene controles que cumplen los requisitos de la publicación 1075 de los servicios de ingresos internos de US.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602297"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066333"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publicación de US Internal Revenue Service 1075
 
@@ -33,7 +33,7 @@ Para proteger FTI, IRS 1075 prescribe los controles de seguridad y privacidad pa
 
 Microsoft Azure Government y [Microsoft Office 365 Cloud Government](https://products.office.com/government/office-365-web-services-for-government) Cloud Services proporcionan un compromiso contractual de que disponen de los controles apropiados y de las capacidades de seguridad necesarias para que los clientes de Microsoft Agency cumplan los requisitos de fondo de la agencia tributaria de 1075.  
   
-Estos servicios en la nube de Microsoft para la administración pública proporcionan una plataforma en la que los clientes pueden crear y usar sus soluciones, pero los clientes deben determinar por sí mismos si esas soluciones específicas funcionan de acuerdo con la Agencia Tributaria 1075 y, por lo tanto, son sujeto a auditoría de IRS.  
+Estos servicios en la nube de Microsoft para la administración pública proporcionan una plataforma en la que los clientes pueden crear y usar sus soluciones, pero los clientes deben determinar si esas soluciones específicas funcionan de acuerdo con la Agencia Tributaria 1075 y, por lo tanto, están sujetas a la auditoría de IRS.  
   
 Para ayudar a las agencias gubernamentales en sus esfuerzos de cumplimiento, Microsoft:
 
@@ -43,9 +43,7 @@ Para ayudar a las agencias gubernamentales en sus esfuerzos de cumplimiento, Mic
 - Proporciona a las consideraciones de cumplimiento de la administración pública de la Agencia Tributaria de Azure y Office 365 U.S. Government Compliance, que explican cómo una agencia puede usar Microsoft Cloud para los servicios gubernamentales de manera que cumpla con IRS 1075. Los clientes del gobierno con NDA pueden solicitar estos documentos.
 - Ofrece a los clientes la oportunidad (a su cargo) para comunicarse con expertos en la materia del tema de Microsoft o con auditores externos, si es necesario.
 
-Obtenga más información sobre las ventajas de IRS 1075 en la nube de Microsoft: [descargar el fondo de irs 1075](https://aka.ms/irs1075-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 Las autorizaciones de FedRAMP se conceden a tres niveles de impacto en función de las instrucciones del NIST: bajo, medio y alto. Estos clasifican el impacto que la pérdida de confidencialidad, integridad o disponibilidad puede tener en una organización: bajo (efecto limitado), medio (efecto adverso grave) y alto (efecto grave o catastrófico).
 
@@ -82,10 +80,6 @@ No. Los únicos entornos en los que FTI se puede almacenar y procesar son Azure 
 
 - [Publicación de IRS 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [Programa de salvaguardias de la Agencia Tributaria](https://www.irs.gov/uac/Safeguards-Program)
-- [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud para la Administración Pública](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

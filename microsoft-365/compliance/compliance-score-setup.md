@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo configurar y empezar a usar la puntuación de cumplimiento de Microsoft, que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632395"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140865"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configuración de la puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -40,16 +40,14 @@ La puntuación de cumplimiento usa un modelo de permisos de control de acceso ba
 
 ### <a name="where-to-set-permissions"></a>Dónde establecer permisos
 
-El administrador global de su organización puede establecer permisos de usuario en el centro de cumplimiento de Microsoft 365 o en Azure Active Directory (Azure AD). Una vez que las funciones se establecen en cualquiera de estas ubicaciones, los usuarios pueden acceder a la puntuación de cumplimiento y al administrador de cumplimiento.
-
-Tenga en cuenta que los roles del administrador de cumplimiento **existentes no se** transfieren a la puntuación de cumplimiento. Si tiene un rol en el administrador de cumplimiento y es nuevo en la puntuación de cumplimiento, el rol de administrador de cumplimiento no le concederá acceso a la puntuación de cumplimiento. El administrador global tendrá que establecer permisos y un rol para usted en el centro de cumplimiento de Microsoft 365 o en Azure AD para que pueda obtener acceso a la puntuación de cumplimiento.
+El administrador global de su organización puede establecer permisos de usuario en [Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) o en el [Administrador de cumplimiento](compliance-manager-overview.md#permissions). Una vez que las funciones se establecen en cualquiera de estas ubicaciones, los usuarios pueden acceder a la puntuación de cumplimiento y al administrador de cumplimiento.
 
 ### <a name="role-types"></a>Tipos de funciones
 
-En la tabla siguiente se muestra cómo cada rol del centro de cumplimiento de Microsoft 365 se asigna a los roles del administrador de cumplimiento existentes y las funciones permitidas por cada rol.
+En la tabla siguiente se muestra cómo cada [rol de Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) se asigna a los roles del administrador de cumplimiento existentes y las funciones permitidas por cada rol. Los usuarios necesitarán, al menos, el rol de lector global de Azure AD para obtener acceso a la puntuación de cumplimiento.
 
 
-| El usuario puede: | Rol del centro de cumplimiento de 365 de Microsoft | Rol de administrador de cumplimiento | 
+| El usuario puede: | Rol de Azure AD | Rol de administrador de cumplimiento | 
 | :------------- | :-------------: | :------------: |
 | **Leer los datos pero no modificarlos**| Lector global de Azure AD  | Lector global de Azure AD | 
 | **Leer los datos pero no modificarlos**| Lector de seguridad | Lector del administrador de cumplimiento  | 
@@ -60,13 +58,6 @@ En la tabla siguiente se muestra cómo cada rol del centro de cumplimiento de Mi
 
 > [!NOTE]
 > Cuando pase de la puntuación de cumplimiento al administrador de cumplimiento para completar una tarea (por ejemplo, para administrar las evaluaciones), el explorador abrirá una nueva pestaña y aparecerá un cuadro de diálogo. En la sección superior con el encabezado, "¿ya es un cliente de Microsoft Cloud Services? Inicie sesión en su cuenta, "seleccione **iniciar sesión** para obtener acceso al administrador de cumplimiento; no tendrá que volver a escribir sus credenciales.
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>Cómo establecer permisos y roles en el centro de cumplimiento de Microsoft 365
-
-Para establecer permisos en el centro de cumplimiento de Microsoft 365:
-
-1. Vaya al [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) e inicie sesión con su cuenta de administrador global.
-2. Seleccione **permisos** en el panel de navegación izquierdo. Desde aquí, puede ver roles y asignar permisos.
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurar actualizaciones de calificación segura automáticas
 
@@ -145,6 +136,6 @@ Para quitar filtros:
 - En el encabezado de **filtros aplicados** encima de la puntuación de cumplimiento, seleccione la **X** junto al filtro individual que quiera quitar; o
 - Seleccione **filtrar** en la parte superior derecha del panel y, a continuación, seleccione **Borrar filtros**.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Visite [trabajar con la puntuación de cumplimiento](working-with-compliance-score.md) para comprender el flujo de trabajo de cómo emprender acciones para mejorar su puntuación.

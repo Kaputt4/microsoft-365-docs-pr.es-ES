@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 99ec6423b835204624f91977b6f138fa7c8ba8cd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049452"
+ms.locfileid: "44064814"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -93,7 +93,7 @@ Si ha olvidado la contraseña y no puede iniciar sesión:
     
 - Pida a otro administrador global de su empresa que restablezca su contraseña.
     
-- O [llame al soporte técnico de Microsoft](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
+- O [llame al soporte técnico de Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas de empresa para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>

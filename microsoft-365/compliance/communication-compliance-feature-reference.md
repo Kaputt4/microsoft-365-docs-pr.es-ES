@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919677"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066209"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -32,7 +32,7 @@ ms.locfileid: "43919677"
 >[!Important]
 >No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas de la [solución Microsoft 365 Communication Compliance](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el centro de cumplimiento de Microsoft 365. Si tiene una organización de 365 de Microsoft, [configurará directivas de supervisión](configure-supervision-policies.md) en el centro de seguridad & cumplimiento. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en la organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles **Administrador de revisión de supervisión** pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo. csv que también incluye el estado de las alertas revisión pendiente, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y eliminarse cuando ya no se necesiten.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en la organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles **Administrador de revisión de supervisión** pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página cumplimiento en la **comunicación** en el centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo. csv que también incluye el estado de las alertas revisión pendiente, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y eliminarse cuando ya no se necesiten.
 
 >[!NOTE]
 >Las directivas de supervisión creadas en el centro de seguridad & cumplimiento para las suscripciones de Office 365 no se pueden migrar a Microsoft 365. Si va a migrar desde una suscripción de Office 365 a una suscripción de Microsoft 365, tendrá que crear nuevas directivas de cumplimiento de comunicaciones para reemplazar las directivas de supervisión existentes.
@@ -179,7 +179,7 @@ Para analizar los mensajes de correo electrónico y los datos adjuntos de las mi
   
 #### <a name="enter-multiple-conditions"></a>Escribir varias condiciones
 
-Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva de supervisión a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. En este ejemplo, las tres condiciones se definirían de la siguiente manera:
+Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva de cumplimiento de comunicaciones a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. En este ejemplo, las tres condiciones se definirían de la siguiente manera:
   
 - El **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Trade"
 - El **tamaño del mensaje es mayor que**, con el valor de 2 MB
@@ -187,7 +187,7 @@ Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma 
 
 ### <a name="review-percentage"></a>Porcentaje de revisión
 
-Si desea reducir la cantidad de contenido que se va a revisar, puede especificar un porcentaje de todas las comunicaciones regidas por una directiva de supervisión. Se selecciona un ejemplo aleatorio en tiempo real del contenido del porcentaje total de contenido que coincide con las condiciones de la directiva elegida. Si desea que los revisores revisen todos los elementos, puede configurar **100%** en una directiva de cumplimiento de la comunicación.
+Si desea reducir la cantidad de contenido que se va a revisar, puede especificar un porcentaje de todas las comunicaciones regidas por una directiva de cumplimiento de la comunicación. Se selecciona un ejemplo aleatorio en tiempo real del contenido del porcentaje total de contenido que coincide con las condiciones de la directiva elegida. Si desea que los revisores revisen todos los elementos, puede configurar **100%** en una directiva de cumplimiento de la comunicación.
 
 ## <a name="notices"></a>Avisos
 
@@ -195,7 +195,7 @@ Puede crear plantillas de notificación si desea enviar a los usuarios una notif
 
 Las plantillas de notificaciones son plantillas de correo electrónico personalizadas donde puede definir los siguientes campos de mensaje:
 
-|**Field**|**Required**| **Detalles** |
+|**Campo**|**Required**| **Detalles** |
 |:-----|:-----|:-----|
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo Notify durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o más usuarios o grupos que envían el mensaje al empleado con una coincidencia de Directiva, seleccionada en Active Directory de la suscripción. |
@@ -287,7 +287,7 @@ En algunos casos, debe proporcionar información a los auditores reglamentarios 
 
 Para ver las actividades de la Directiva de cumplimiento de comunicaciones, seleccione el control **exportar actividades de revisión** en la Página principal de cualquier directiva. Esta acción genera un archivo de auditoría en el formato. csv que contiene la siguiente información:
 
-|**Field**|**Detalles**|
+|**Campo**|**Detalles**|
 |:-----|:-----|
 | **CreationDate** | Fecha en que se realizó la actividad en una directiva. |
 | **UserIds** | El usuario que realizó la actividad en una directiva. |

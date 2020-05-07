@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2dafb9d99e1042b1cd810d35ed726fad72c7116a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e1d5e6b196f4c064a4bb2f4bc0f92f8973a61a15
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602187"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066607"
 ---
 # <a name="monetary-authority-of-singapore-mas-and-association-of-banks-in-singapore-abs"></a>Entidad monetaria de Singapur (MAS) y Asociación de bancos en Singapur (ABS)
 
@@ -98,8 +98,4 @@ Esta definición es importante, ya que algunas de las disposiciones de las direc
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/A/B/3ABF29D9-FBF5-4011-A496-77ADD4EF9EE9/MAS+ABS-Singapore-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

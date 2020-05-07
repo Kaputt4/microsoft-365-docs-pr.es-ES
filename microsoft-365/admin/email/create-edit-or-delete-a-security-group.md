@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Obtenga información sobre cómo crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b6138a36890ec4b0408339fbb1510fa7677a7040
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628884"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053817"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el centro de administración de Microsoft 365
 
@@ -145,7 +145,7 @@ Si desea crear grupos de usuarios para que pueda enviarles un correo electrónic
     
 Después de crear grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange, sus nombres y listas de usuarios aparecen en la página **grupos de seguridad** . Puede eliminar estos grupos en ambas ubicaciones, pero solamente puede modificarlos en el Centro de administración de Exchange. Los grupos de distribución dinámicos no se muestran en la página **grupos de seguridad** . 
   
- Los grupos de SharePoint se crean automáticamente al crear una colección de sitios. Los grupos predeterminados usan los niveles de permisos predeterminados de SharePoint (a veces llamados roles de SharePoint) para conceder permisos y acceso a los usuarios. Para obtener más información, vea [grupos de SharePoint predeterminados en SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
+ Los grupos de SharePoint se crean automáticamente al crear una colección de sitios. Los grupos predeterminados usan los niveles de permisos predeterminados de SharePoint (a veces llamados roles de SharePoint) para conceder permisos y acceso a los usuarios. Para obtener más información, vea [grupos de SharePoint predeterminados en SharePoint Online](https://docs.microsoft.com/sharepoint/default-sharepoint-groups).
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>¿En qué se diferencia un grupo de seguridad de los grupos de seguridad creados en SharePoint?
 

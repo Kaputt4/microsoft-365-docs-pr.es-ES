@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 576404aadb2328682f10f69f30e58df2cafebe54
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601997"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066453"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autoevaluación de la nube Security Alliance (CSA)
 
@@ -41,8 +41,6 @@ La STAR ofrece tres niveles de seguridad; CSA – STAR evaluación automática e
 ## <a name="microsoft-and-csa-star-self-assessment"></a>Autoevaluación de Microsoft y CSA STAR
 
 Como parte de la autoevaluación en estrella, los CSP pueden enviar dos tipos diferentes de documentos para indicar su cumplimiento con las prácticas recomendadas de CSA: una CAIQ completada, o un informe que documenta el cumplimiento normativo de CCM. En el caso de la autoevaluación de CSA STAR, Microsoft publica un informe basado en CAIQ y CCM para Microsoft Azure, y informes basados en CCM para Microsoft Dynamics 365 y Microsoft Office 365.  
-  
-Obtenga más información sobre las ventajas de la certificación CSA STAR en la nube de Microsoft: [Descargue el documento de visión general de la certificación de CSA STAR](https://aka.ms/csastar-selfassessment-backgrounder)
 
 Obtenga más información sobre cómo acelerar la implementación de la certificación de CSA STAR en el Plano técnico de seguridad y cumplimiento de Azure: [Descargue las respuestas de Microsoft Azure al Cuestionario de Iniciativa de Evaluaciones de Consenso de CSA](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -85,8 +83,3 @@ Permita que los CSP documenten el cumplimiento de CSA, la publicación de proced
 
 - [Azure](https://aka.ms/Azure_STAR)
 - [Dynamics 365](https://aka.ms/DynamicsCRM_Online_STAR)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/7/C/E/7CE08DFE-86D6-4690-9455-5123DA0A7C09/CSA-STAR-SelfAssessment-Compliance.pdf).
-

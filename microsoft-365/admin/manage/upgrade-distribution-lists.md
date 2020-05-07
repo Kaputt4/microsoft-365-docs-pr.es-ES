@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Obtenga información sobre cómo actualizar una o varias listas de distribución a los grupos de Microsoft 365 en Outlook y cómo usar PowerShell para actualizar varias listas de distribución de forma simultánea.
-ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048178"
+ms.locfileid: "44065674"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Actualizar listas de distribución a grupos de 365 de Microsoft en Outlook
 
@@ -51,7 +51,7 @@ Debe ser administrador global o administrador de Exchange para actualizar una li
 7. Si seleccionó una DL para la actualización, pero sigue apareciendo en la página como disponible para la actualización, no se pudo actualizar. Consulte [Qué hacer si la actualización no funciona](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> Si obtiene los mensajes de correo electrónico de Resumen de los grupos, es posible que observe en la parte inferior que a veces le permitirá actualizar las listas de distribución válidas de las que es propietario. Consulte [tener una conversación grupal en Outlook](https://support.office.com/article/a0482e24-a769-4e39-a5ba-a7c56e828b22.aspx) para obtener más información sobre los mensajes de correo electrónico de texto implícita.
+> Si obtiene los mensajes de correo electrónico de Resumen de los grupos, es posible que observe en la parte inferior que a veces le permitirá actualizar las listas de distribución válidas de las que es propietario. Consulte [tener una conversación grupal en Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) para obtener más información sobre los mensajes de correo electrónico de texto implícita.
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>Qué hacer si la actualización no funciona

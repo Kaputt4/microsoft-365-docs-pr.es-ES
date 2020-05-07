@@ -1,7 +1,7 @@
 ---
 title: United Kingdom Cyber Essentials PLUS
 description: Cyber Essentials PLUS es un esquema definido por el gobierno de Reino Unido para ayudar a las organizaciones a protegerse frente a las amenazas más comunes de la seguridad en el ciberespacio.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da137e3333164970729d0c737f7077c3c96ee634
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602547"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066433"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>United Kingdom Cyber Essentials PLUS
 
@@ -51,7 +51,3 @@ La [certificación Azure Cyber Essentials Plus](https://aka.ms/AzureCyberEPlusCe
 
 - [Esquema de seguridad del ciberespacio: marco de seguridad](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).

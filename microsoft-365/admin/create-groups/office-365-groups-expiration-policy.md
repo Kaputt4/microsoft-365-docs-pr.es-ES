@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: 82938caf083cd5b5fa330fd047686ae6a8b5300d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049184"
+ms.locfileid: "44064826"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -77,7 +77,7 @@ Solo se notificará a los propietarios del grupo por correo electrónico. Si el 
 
 30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico que ha especificado para los grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no la renuevan, recibirán otra renovación de correo electrónico 15 días antes de la fecha de expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
 
-Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group).
+Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, el administrador podrá seguir restaurando el grupo durante un máximo de 30 días después de la fecha de expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

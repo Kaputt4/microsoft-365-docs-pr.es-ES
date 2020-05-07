@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dd12d261c52f79bf6b9e8de747bb8fcaec775686
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2582dcc9c865ad96390163ffef819811906cf0de
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602207"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066627"
 ---
 # <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>Real Decreto Español 1720/2007, Ley Orgánica Española 15/1999
 
@@ -72,8 +72,4 @@ Sí. Si su organización requiere o está buscando una acreditación conforme a 
 - Agencia de protección de datos en Español ([Español](https://www.agpd.es/portalwebAGPD/index-ides-idphp.php))
 - Ley Orgánica 15/1999 de 13 de diciembre para la Protección de Datos de Carácter Personal - [en Español](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

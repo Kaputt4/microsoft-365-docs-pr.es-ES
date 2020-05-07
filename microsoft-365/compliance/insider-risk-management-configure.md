@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043321"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065825"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -34,8 +34,10 @@ Antes de empezar con la administración de riesgos de Insider, debe confirmar la
 
 - Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
 - Suscripción a Microsoft 365 E3 + complemento de cumplimiento de Microsoft 365 E5
+- Suscripción a Microsoft 365 E3 + complemento Microsoft 365 E5 del servicio de administración de riesgos de Insider
 - Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
 - Suscripción a Microsoft 365 a3 + complemento de cumplimiento A5 de Microsoft 365
+- Suscripción a Microsoft 365 a3 + complemento de administración de riesgos de la A5 del Insider de Microsoft 365
 
 Los usuarios incluidos en las directivas de administración de riesgos de internación deben tener asignada una de las licencias anteriores.
 

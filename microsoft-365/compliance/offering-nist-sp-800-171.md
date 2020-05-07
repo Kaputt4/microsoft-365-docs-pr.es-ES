@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781455"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065815"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ Los requisitos de NIST SP 800 – 171 son un subconjunto de NIST SP 800-53, el e
 
 Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de investigación, empresas de consultoría, contratistas de fabricación) debe cumplir con las rigurosas necesidades de NIST SP 800-171. Esta atestación significa que los servicios en la nube de Microsoft en el ámbito pueden acomodar a los clientes que quieran implementar cargas de trabajo de CUI con la certeza de que Microsoft tiene el total cumplimiento. Por ejemplo, todos los contratistas de DoD que procesan, almacenan o transmiten la ' información de defensa cubierta ' con los servicios en la nube de Microsoft en sus sistemas de información cumplen las cláusulas DFARS del Departamento de defensa de Estados Unidos que requieren el cumplimiento de los requisitos de seguridad del NIST SP 800-171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 para el gobierno de Estados Unidos](https://aka.ms/d365-compliance-list)
@@ -53,7 +53,7 @@ Cualquier entidad que procese o almacene CUI gubernamentales (instituciones de i
 
 - [Atestación del gobierno de Azure del cumplimiento con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Cómo se debe implementar
+## <a name="how-to-implement"></a>Cómo implementar
 
 - [Ejemplos de Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/): Obtenga soporte para implementar cargas de trabajo que cumplan con los controles basados en NIST.
 
@@ -76,7 +76,3 @@ Sí. Los clientes de Microsoft pueden usar los controles auditados que se descri
 - [Microsoft y el marco de trabajo de Cybersecurity de NIST](offering-nist-csf.md)
 - [Nube de Microsoft para la Administración Pública](https://www.microsoft.com/enterprise/government)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).

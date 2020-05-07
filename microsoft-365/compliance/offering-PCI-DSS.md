@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 12b3f0c94a3d391d5116af0c6eba366550a83040
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 334e93a009e69b8c5ec6ec74edb486d0e2fd3dbb
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602087"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065955"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Estándar de seguridad de los datos (DSS) de la industria de tarjetas de pago (PCI)
 
@@ -44,6 +44,7 @@ Es importante entender que el estado de cumplimiento del DSS PCI para Azure, One
 - El servicio de nube de Flow como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Graph
 - Intune
+- [Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 - OneDrive para la Empresa y SharePoint Online (solo Estados Unidos)
@@ -55,9 +56,9 @@ Es importante entender que el estado de cumplimiento del DSS PCI para Azure, One
 
 ## <a name="get-your-pci-dss-solution-running-on-azure"></a>Obtenga la solución DSS PCI ejecutándose en Azure
 
-Cree e implemente la solución DSS PCI en la nube de forma más rápida con el Plano técnico de seguridad y cumplimiento de Azure para DSS PCI. Obtenga arquitecturas de referencia, instrucciones de implementación, asignaciones de control de implementación, scripts automatizados y mucho más. [Empezar a usar el Plano técnico de Azure para el DSS PCI](https://aka.ms/pciblueprint)
+Cree e implemente la solución DSS PCI en la nube de forma más rápida con el Plano técnico de seguridad y cumplimiento de Azure para DSS PCI. Obtenga arquitecturas de referencia, instrucciones de implementación, asignaciones de control de implementación, scripts automatizados y mucho más. [Empezar a usar el Plano técnico de Azure para el DSS PCI](https://aka.ms/pciblueprint).
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Por qué la Atestación de Cumplimiento normativo (AoC) dice "junio de 2018"?**
 
@@ -100,7 +101,3 @@ En la actualidad, solo los archivos y documentos cargados en OneDrive para la Em
 - [Matriz de responsabilidad de Azure con el DSS PCI 3.2.1](https://aka.ms/pciresponsibilitymatrix)
 - [Guía de referencia rápida del DSS PCI](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf).
