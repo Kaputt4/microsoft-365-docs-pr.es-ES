@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046278"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140855"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -104,7 +104,7 @@ Vea las instrucciones detalladas para [administrar las evaluaciones en el admini
 
 ### <a name="templates"></a>Plantillas
 
-La puntuación de cumplimiento proporciona plantillas preconfiguradas para las evaluaciones. También puede personalizar una plantilla preconfigurada agregando sus propios controles y acciones. Por ejemplo, puede crear una plantilla para el control del proceso de negocio o una plantilla para un estándar de protección o cumplimiento de datos regional que no esté cubierta por una de las plantillas preconfiguradas. Al incluir sus propias plantillas en la puntuación de cumplimiento, puede realizar un seguimiento no solo de las evaluaciones de la nube de Microsoft, sino también de otras evaluaciones de riesgos en el ámbito de su organización.
+La puntuación de cumplimiento proporciona plantillas preconfiguradas para las evaluaciones. También puede crear una evaluación personalizada agregando sus propios controles y acciones a una plantilla preconfigurada. Por ejemplo, puede crear una plantilla para el control del proceso de negocio o una plantilla para un estándar de protección o cumplimiento de datos regional que no esté cubierta por una de las plantillas preconfiguradas. Al incluir sus propias plantillas en la puntuación de cumplimiento, puede realizar un seguimiento no solo de las evaluaciones de la nube de Microsoft, sino también de otras evaluaciones de riesgos en el ámbito de su organización.
 
 Las plantillas preconfiguradas para la puntuación de cumplimiento son:
 

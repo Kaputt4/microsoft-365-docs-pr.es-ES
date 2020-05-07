@@ -1,7 +1,7 @@
 ---
 title: Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 description: Azure Government cumple con los controles de seguridad de CNSSI 1253 para los sistemas gubernamentales de Estados Unidos que requieren alta confidencialidad, alta integridad y alta disponibilidad.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59bb5fd9e692cc5c69a4baf1cdc14cc200dba7a6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602597"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066273"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Comité de la instrucción máquina de sistemas de seguridad nacional 1253 (CNSSI 1253)
 
@@ -35,11 +35,11 @@ Por ejemplo, el enfoque CNSSI 1253 define explícitamente las asociaciones de co
 
 Una organización de evaluación de terceros aprobada por FedRAMP (3PAO), Kratos SecureInfo, ha validado por separado el cumplimiento del sistema Microsoft Azure Government con la línea base de CNSSI 1253 High-High-High. Kratos SecureInfo certifica que el CNSSI 1253 Security Assessment Report (SAR) de Azure Government proporciona una evaluación completa de los controles de seguridad correspondientes estipulados en el plan de evaluación de seguridad (SAP). El SAR documenta las pruebas realizadas para validar a Azure Government con respecto a una selección de controles de seguridad de CNSSI 1253 para sistemas que requieren alta confidencialidad, alta integridad y alta disponibilidad.  
   
-Azure Government actualmente posee una autorización provisional FedRAMP alta para operar (P-ATO) emitida por el Comité de autorización conjunta (JAB) y un departamento de defensa provisional (PA) en el nivel 5 de impacto de la seguridad de informática en la nube Guía de requisitos (SRG). Mediante el uso de estas autorizaciones, Kratos SecureInfo analizó los controles de seguridad que se probaron en las evaluaciones anteriores para determinar qué controles de seguridad adicionales de CNSSI 1253 se probarán para garantizar el cumplimiento de la línea base de CNSSI de nivel alto y alto de 1253. Kratos SecureInfo ha examinado pruebas y ha realizado entrevistas para validar la correcta implementación de 43 controles de seguridad aplicables y ha publicado los resultados de sus pruebas completas en el CNSSI 1253 SAR.  
+Azure Government actualmente posee una autorización provisional FedRAMP alta para operar (P-ATO) emitida por el Comité de autorización conjunta (JAB) y un departamento de autorizaci? n provisional del Departamento de defensa al nivel 5 de la guía de requisitos de seguridad de informática en la nube (SRG). Mediante el uso de estas autorizaciones, Kratos SecureInfo analizó los controles de seguridad que se probaron en las evaluaciones anteriores para determinar qué controles de seguridad adicionales de CNSSI 1253 se probarán para garantizar el cumplimiento de la línea base de CNSSI de nivel alto y alto de 1253. Kratos SecureInfo ha examinado pruebas y ha realizado entrevistas para validar la correcta implementación de 43 controles de seguridad aplicables y ha publicado los resultados de sus pruebas completas en el CNSSI 1253 SAR.  
   
-El cumplimiento de Azure Government con los requisitos exigentes de CNSSI 1253 significa que Azure puede ofrecer a los clientes del sector público en Estados Unidos una amplia variedad de servicios compatibles con CNSSI 1253, lo que les permite beneficiarse de los ahorros de costos y rigurosas seguridad de la nube de Microsoft.
+El cumplimiento de Azure Government con los requisitos CNSSI 1253 de la demanda significa que Azure puede ofrecer a los clientes del sector público en Estados Unidos una amplia variedad de servicios compatibles con CNSSI 1253, lo que les permite beneficiarse del ahorro de costos y de la seguridad rigurosa de la nube de Microsoft.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 
@@ -69,7 +69,3 @@ Azure Government (FedRAMP Package ID F1603087869) se ha probado de nuevo estos c
 - [Autorización provisional de Microsoft y DoD](offering-DoD-DISA-L2-L4-L5.md)
 - [Nube de Microsoft para la Administración Pública](https://www.microsoft.com/enterprise/government)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

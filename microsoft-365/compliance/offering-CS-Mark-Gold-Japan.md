@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: eca929b495a6f6d059b0015afa0bf5ab18fabd78
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea2700b8bee62b045d3a65ff95097cae567c239e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602607"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066263"
 ---
 # <a name="cloud-security-mark-gold-cs-gold-mark"></a>Marca de oro de seguridad en la nube (Marca de oro de CS)
 
@@ -64,8 +64,4 @@ Si su organización utiliza Azure u Office 365, debe asegurarse de que la marca 
 - [Formularios y plantillas de acreditación de la marca de CS](https://jcispa.jasa.jp/cloud_security/jcispa_regulation_form/) (japonés)
 - [ISO/IEC 27017: 2015](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

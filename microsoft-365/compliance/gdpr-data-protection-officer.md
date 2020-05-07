@@ -1,6 +1,6 @@
 ---
 title: Responsable de la protección de datos de Microsoft
-description: Información sobre el responsable de la protección de datos en la Unión Europea de Microsoft para el RGPD
+description: Conozca el cargo y las cualificaciones del Oficial de protección de datos de la Unión Europea (DPO) de Microsoft para el GDPR.
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +15,19 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558070"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036098"
 ---
 # <a name="microsofts-data-protection-officer"></a>Responsable de la protección de datos de Microsoft
 
 ## <a name="overview"></a>Información general
 
-Microsoft ha designado un responsable de la protección de datos en la Unión Europea como asesor independiente de los grupos empresariales y de ingeniería de Microsoft, todo ello con el propósito de asegurarse de que todo el procesamiento de datos personales propuesto cumple con los requisitos legales de la UE y con las normas corporativas de Microsoft. Este rol se ha diseñado para cumplir los criterios del RGPD estipulados en los artículos 37-39.
+Microsoft ha designado a un Oficial de protección de datos de la Unión Europea (DPO, por sus siglas en inglés) para que sea un asesor independiente de los grupos de ingeniería y de negocios de Microsoft y para que ayude a garantizar que todo el procesamiento propuesto de datos personales cumpla con los requisitos legales de la UE y con los estándares corporativos de Microsoft. El papel fue diseñado para cumplir con los criterios de la GDPR establecidos en los artículos 37-39.
 
 ## <a name="qualifications"></a>Cualificaciones
 
@@ -34,11 +35,11 @@ El puesto de responsable de la protección de datos requiere que los candidatos 
 
 ## <a name="nature-of-the-role"></a>Naturaleza del puesto
 
-El responsable de la protección de datos se encarga de forma adecuada y oportuna de todos los problemas clave que tengan que ver con la protección de datos personales. Esto se lleva a cabo, en parte, en la tarea del responsable de la protección de datos de revisar y valorar todas las evaluaciones del impacto de la protección de datos elaboradas por Microsoft. El programa de evaluaciones del impacto de la protección de datos está pensado para capturar todo el procesamiento de datos personales que tiene lugar en Microsoft, con lo cual el responsable de la protección de datos tendrá una visibilidad completa de la compañía y la posibilidad de avisar e informar a Microsoft de sus obligaciones en virtud del RGPD relativas al procesamiento de datos personales de Microsoft. Este mismo mecanismo también permite al responsable de la protección de datos supervisar el cumplimiento por parte de Microsoft de las normas de protección de datos en vigor (RGPD, controles y directivas internas de Microsoft incluidos). 
+La DPO participa, de manera adecuada y oportuna, en todas las cuestiones clave relacionadas con la protección de los datos personales. Esto se lleva a cabo, en parte, por la función del DPO en la revisión y asesoramiento de todas las Evaluaciones del impacto de la protección de datos (DPIA) generadas por Microsoft. Dado que el programa de DPIA está diseñado para captar todo el procesamiento de datos personales en Microsoft, el DPO tendrá visibilidad en toda la empresa y la oportunidad de informar y asesorar a Microsoft sobre sus obligaciones en virtud del Reglamento de protección de datos en relación con el procesamiento de datos personales de Microsoft. Este mismo mecanismo también permite al DPO supervisar el cumplimiento por parte de Microsoft de la normativa de protección de datos aplicable, incluida la GDPR, así como las directivas y controles internos de Microsoft. 
 
 ## <a name="position-of-the-data-protection-officer"></a>Posición del responsable de la protección de datos
 
-El responsable de la protección de datos de la Unión Europea informa directamente al responsable jefe de privacidad de Microsoft, que es un ejecutivo senior del departamento corporativo y legal de Microsoft. El puesto de responsable de la protección de datos tiene autonomía para realizar sus funciones de manera independiente e imparcial. A través de la organización del responsable jefe de privacidad, el responsable de la protección de datos tiene acceso a formación y a los recursos de respuesta a clientes como considere necesario para cumplir con las obligaciones de su puesto. Las tareas del responsable de la protección de datos están sujetas a confidencialidad por medio de un acuerdo de confidencialidad.  
+El DPO de la Unión Europea depende directamente del Director de privacidad de Microsoft, un alto ejecutivo de la división de Asuntos corporativos y legales de Microsoft.  El papel del DPO tiene autonomía para realizar las funciones de forma independiente e imparcial. A través de la organización del Director de privacidad, el DPO tiene acceso a los recursos de formación y de respuesta al cliente necesarios para desempeñar las funciones de DPO. El DPO está obligado a mantener la confidencialidad de sus tareas mediante un acuerdo de no divulgación.  
 
 ## <a name="contact"></a>Contacto
 
@@ -53,8 +54,8 @@ D18 P521<br>
 Irlanda<br>
 Teléfono: + 353 (0) 1 295-3826<br>
 
-La autoridad de control de Microsoft posee la información de contacto del responsable de la protección de datos.
+Los detalles de contacto del Oficial de protección de datos han sido comunicados a la Autoridad de supervisión de Microsoft.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtén más información
 
 - [Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

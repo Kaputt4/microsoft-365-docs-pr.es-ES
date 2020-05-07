@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633435"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066323"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -42,8 +42,6 @@ Los auditores también pueden crear un informe de los SOC 3 (una versión abrev
 Los servicios en la nube de Microsoft tienen auditorías al menos una vez al año basadas en el marco de información de los SOC y realizadas por auditores independientes. La auditoría de servicios en la nube de Microsoft cubre los controles de seguridad de datos, disponibilidad, integridad de procesamiento y confidencialidad aplicables a los principios de confianza en el ámbito de cada servicio.
 
 Microsoft ha logrado los informes de SOC 1 Tipo 2, SOC 2 Tipo 2 y SOC 3. En general, la disponibilidad de los informes de SOC 1 y SOC 2 se limita a los clientes que han firmado acuerdos de confidencialidad con Microsoft. Sin embargo, el informe de SOC 3 está disponible públicamente.
-
-Obtenga más información sobre las ventajas de SOC 1, 2, 3 en la nube de Microsoft: [Descargar el documento de visión general de SOC 1 y SOC 2 Tipo 2](https://aka.ms/soc_backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f1abc4d885a1d9a1d915bdf5492e3492dc4318a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 35f565eb9adb2283238a753fe5e46c208387afb0
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363026"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066283"
 ---
 # <a name="web-content-accessibility-guidelines"></a>Directrices de accesibilidad al contenido en la web
 
@@ -58,8 +58,4 @@ Lea informes WCAG para [todos nuestros productos y servicios](https://cloudblogs
 - [Sitio de accesibilidad de Microsoft](https://www.microsoft.com/accessibility): obtenga información sobre el uso de las características de accesibilidad y descubra las formas en que Microsoft innova para ayudar a los usuarios a lograr más.
 - [Centro de accesibilidad de Office 365](https://go.microsoft.com/fwlink/p/?linkid=2051801): recursos de Office 365 para discapacitados.
 - [Answer Desk empresarial para personas con discapacidad](https://go.microsoft.com/fwlink/p/?linkid=2050890): soporte técnico especializado para clientes empresariales, con preguntas sobre la accesibilidad de nuestros productos y servicios o nuestro cumplimiento normativo.
-- [Cumplimiento normativo en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Obtenga información sobre cómo comprar otra suscripción a Microsoft 365 para empresas para su organización cuando ya tiene una suscripción. '
 ms.custom: okr_SMB
-ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634937"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141307"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Comprar otra suscripción de Microsoft 365 para empresas
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Si ya tiene una suscripción de Microsoft 365 para empresas y desea comprar otra suscripción para su organización, la mejor manera es hacerlo a través del centro de administración. Si aún no ha comprado el primer Microsoft 365 para la suscripción de empresa para su organización, haga clic [aquí](https://products.office.com/business/compare-office-365-for-business-plans) para elegir un plan.
   

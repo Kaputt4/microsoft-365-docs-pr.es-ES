@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602157"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065685"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Estándar de Seguridad en la Nube Multinivel (MTCS) para Singapur
 
@@ -42,9 +42,7 @@ Tras las evaluaciones rigurosas realizadas por el cuerpo de certificación MTCS,
 
 Se concedieron certificaciones en el Nivel 3 para servicios de Microsoft Azure (IaaS y PaaS), Microsoft Dynamics 365 (SaaS) y Microsoft Office 365 (SaaS). Una certificación de Nivel 3 significa que los servicios en ámbito en la nube de Microsoft pueden hospedar datos de alto impacto de organizaciones reguladas con los requisitos de seguridad más estrictos. El Gobierno de Singapur requiere ciertas implementaciones para algunas soluciones en la nube.
 
-Conozca los beneficios de la MTCS en Microsoft Cloud: [Descargue el documento de visión general de la MTCS para Singapur](https://aka.ms/mtcs-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube en ámbito de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -104,8 +102,4 @@ Sí. Si necesita certificar los servicios que haya creado en los servicios en la
 - [Esquema de certificación MTCS](https://go.microsoft.com/fwlink/p/?linkid=2092918)
 - [Cumplimiento de Azure en el contexto de los requisitos de seguridad y privacidad de Singapur](https://aka.ms/azurecompliancesingapore)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

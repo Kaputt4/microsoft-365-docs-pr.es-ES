@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071227"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065715"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: el Reglamento de cumplimiento e integridad de sistemas (SCI)
 
@@ -43,16 +43,16 @@ Para ayudar a los clientes de servicios financieros de Estados Unidos que deben 
 
 En este documento se proporciona una lista de comprobación completa de las áreas de enfoque de la ciencia de la reglamentación crítica. Esta lista de comprobación ayuda a las organizaciones financieras a adoptar Azure para garantizar que sus reguladores, clientes y liderazgo puedan cumplir con los requisitos normativos aplicables.
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>Cómo se debe implementar
+## <a name="how-to-implement"></a>Cómo implementar
 
 - [Guía de implementación](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)de la regla de SCI: asigna las capacidades de Azure en comparación con el Reglamento y detalla la responsabilidad compartida del cumplimiento.
 - [Diseño de aplicaciones confiables de Azure](https://docs.microsoft.com/azure/architecture/resiliency/): breve introducción sobre cómo crear confiabilidad en cada paso del diseño de la aplicación de Azure.
 - [Diseño de aplicaciones de alta disponibilidad](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): cómo los desarrolladores pueden ayudar a garantizar que sus aplicaciones de almacenamiento de Azure estén altamente disponibles.
-- [Guía de evaluación de riesgos y cumplimiento normativo](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobernanza para la evaluación de riesgos sobre los Servicios en la Nube de Microsoft y las notificaciones reglamentarias.
+- [Guía de cumplimiento y evaluación de riesgos](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -62,7 +62,7 @@ A medida que los entornos informáticos se mueven de los centros de trabajo loca
 
 **¿Qué instituciones financieras pueden aprovechar Azure para cumplir con los requisitos de la regla SCI?**
 
-Las organizaciones financieras o las entidades de SCI que están sujetas a este Reglamento pueden implementar Azure. La SEC indica que su reglamentación se aplica a las organizaciones que se aplican de forma automática (SROs), incluidos los intercambios de cotizaciones y opciones, las agencias de compensación registradas, el FINRA y el MSRB, los sistemas comerciales alternativos (ATSs), que la NMS comercial y las poblaciones que no son de NMS superan el valor especificado umbrales de volumen, difundistas de datos de mercado consolidados (procesadores de plan) y algunas agencias de compensación exentas».
+Las organizaciones financieras o las entidades de SCI que están sujetas a este Reglamento pueden implementar Azure. La SEC indica que su reglamentación se aplica a las organizaciones que se aplican a sí mismas (SROs), incluidos los intercambios de cotizaciones y opciones, las agencias de compensación registradas, el FINRA y el MSRB, los sistemas comerciales alternativos (ATSs), que son de las poblaciones comerciales y las poblaciones no NMS que superan los umbrales de volumen especificados, así
 
 ## <a name="resources"></a>Recursos
 
@@ -70,11 +70,7 @@ Las organizaciones financieras o las entidades de SCI que están sujetas a este 
 - [Continuidad empresarial y recuperación ante desastres (BCDR): regiones emparejadas de Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Mapa de cumplimiento de los principios normativos de informática en la nube y Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
 - [Programa de cumplimiento de servicios financieros en la nube de Microsoft](https://aka.ms/FSCP-Print)
-- [Programa de cumplimiento de servicios financieros en Azure](https://aka.ms/FinServ-Compliance-Azure)
+- [Cumplimiento de los servicios financieros en Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servicios financieros de Microsoft](https://aka.ms/FinServ-Compliance)
 - [Microsoft y reglas de la SEC 17a-4](offering-SEC-17a-4.md)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -1,7 +1,7 @@
 ---
 title: Parte US García 10 CFR 810
 description: Los clientes sujetos a los requisitos de control de exportación de US Pérez 10 CFR parte 810 pueden usar Azure Government.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f9054c164efa340b489de917fb820e0460123df5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601977"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066443"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>Parte US García 10 CFR 810
 
@@ -34,7 +34,7 @@ FedRAMP ofrece una línea de base adecuada para proporcionar garantías de que A
 
 Además, Azure Government es una nube de la comunidad de administración de US Government que está físicamente separada de la nube de Azure. Proporciona garantías adicionales en relación con los requisitos específicos de detección en segundo plano por parte del gobierno de Estados Unidos, incluidos los controles específicos que restringen el acceso a la información y los sistemas para que los ciudadanos de las operaciones de Azure puedan filtrar a los ciudadanos.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Administración pública de Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -45,7 +45,7 @@ Además, Azure Government es una nube de la comunidad de administración de US G
 
 ## <a name="about-doe-10-cfr-part-810"></a>Acerca de Pérez 10 CFR parte 810
 
-El control de exportación del Departamento de administración de energía estadounidense (DoE), [parte 10 CFR 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) , rige la exportación de tecnología nuclear y asistencia sin clasificar. Ayuda a garantizar que las tecnologías nucleares exportadas desde Estados Unidos se usen solo con fines pacíficos. La parte revisada 810 (regla final) entró en vigor en el 2015 de marzo y se administra mediante la [Administración de seguridad nuclear nacional](https://www.energy.gov/nnsa/national-nuclear-security-administration). En la sección 810,6 se indica que se requiere una autorización de DoE específica para las dos provisiones de asistencia y transferencias de tecnología nuclear sensible que tienen "normalmente autorizadas", así como las que requieren autorización específica (por ejemplo, para asistencia en relación con tecnologías nucleares confidenciales, como enriquecimiento y producción de agua intensa).
+El control de exportación del Departamento de administración de energía estadounidense (DoE), [parte 10 CFR 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) , rige la exportación de tecnología nuclear y asistencia sin clasificar. Ayuda a garantizar que las tecnologías nucleares exportadas desde Estados Unidos se usen solo con fines pacíficos. La parte revisada 810 (regla final) entró en vigor en el 2015 de marzo y se administra mediante la [Administración de seguridad nuclear nacional](https://www.energy.gov/nnsa/national-nuclear-security-administration). En la sección 810,6 se indica que se requiere una autorización de DoE específica para las dos provisiones de asistencia y transferencias de tecnología nuclear confidencial que tienen "normalmente autorizadas", así como las que requieren una autorización específica (por ejemplo, para obtener asistencia sobre tecnologías nucleares confidenciales, como enriquecimiento y producción de agua intensa).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -68,7 +68,3 @@ Los clientes que implementan datos en Azure Government son responsables de su pr
 - [Microsoft y DoD](offering-dod-disa-l2-l4-l5.md)
 - [Nube de Microsoft para la Administración Pública](https://www.microsoft.com/enterprise/government)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).

@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Obtenga información sobre cómo personalizar los informes en el explorador y en Power BI Desktop.
-ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355161"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140714"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en análisis de uso de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 El análisis de uso de Microsoft 365 proporciona un panel en Power BI que ofrece información sobre cómo los usuarios adoptan y usan Microsoft 365. El panel es tan solo un punto de inicio para interactuar con los datos de uso. Los informes se pueden ajustar para obtener información más personalizada.
   
@@ -42,7 +49,7 @@ En este ejemplo se muestra cómo modificar la pestaña **activación** en el inf
   
 1. En el informe de **activación/licencia** , haga clic en la pestaña **activación** .
     
-2. Para entrar en el modo de edición **** , haga clic en el botón Editar ![en la parte superior con el botón](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) más página del botón Power BI. 
+2. Para entrar en el modo de edición **Edit** , haga clic en el botón Editar ![en la parte superior con el botón](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) más página del botón Power BI. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -88,7 +95,7 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
     ![Casilla de verificación seleccionar Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Justo debajo de la lista de visualizaciones, haga **** clic en ![el icono formato de formato de](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)icono de Power BI Visualizaions.
+12. Justo debajo de la lista de visualizaciones, haga **Format** clic en ![el icono formato de formato de](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)icono de Power BI Visualizaions.
 
 13. Expanda el título y cambie el valor de **Texto del título** a **Nuevos usuarios de Yammer por mes**.
     

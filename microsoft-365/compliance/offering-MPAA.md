@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d6f817ed755237a49d792ca66f78977729c5d13f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602167"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065641"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>Asociación cinematográfica de Estados Unidos (ACEU)
 
@@ -34,8 +34,6 @@ En febrero de 2016, Microsoft Azure se convirtió en el primer servicio de nube 
 La evaluación de la ACEU cubre 48 temas de seguridad en las Directrices Comunes, y otros seis en las Directrices de Seguridad de Aplicaciones y Nube. Estos se basan en estándares de seguridad aceptados por la industria como ISO/IEC 27001 y NIST 800-53, y están alineados con las mejores prácticas, como la Cloud Security Alliance (CSA) Cloud Controls Matrix.
 
 La evaluación formal del cumplimiento de Azure significa que las compañías que hacen negocios con estudios importantes pueden usar Azure para ayudar a reducir los costos de IT que normalmente se asocian con la creación, administración, almacenamiento y distribución segura de contenido, todo mientras cumplen con los requisitos de la ACEU. Servicios multimedia de Azure, almacenamiento, redes virtuales y más de otros 30 servicios proporcionan un motor de flujo de trabajo de contenido en la nube que es más seguro y escalable que los procesos de producción locales tradicionales y más eficaz para proteger los activos multimedia en el flujo descendente.
-
-Conozca los beneficios de la ACEU en Microsoft Cloud: [Descargue el documento de antecedentes de la ACEU](https://aka.ms/mpaa-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
@@ -69,8 +67,4 @@ Las instalaciones de producción, las casas de efectos visuales y otros socios d
 - [Directrices de seguridad de aplicaciones y nubes de ACEU](https://www.mpaa.org/wp-content/uploads/2015/12/MPAA-Best-Practices-App-and-Cloud_V1-0-20150507-RELEASE-CANDIDATE-6.docx)
 - [Autoevaluación de CSA STAR Azure](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Respuestas de Azure a CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre cómo compartir sitios y archivos con personas de fuera de la organización. '
-ms.openlocfilehash: c11526ee199cf097053489bb4ab8060dcb2c6bc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e49cc84314b55f1aacfa47ab28916bae12132a3e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628033"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139618"
 ---
 # <a name="share-sites-and-files-externally"></a>Compartir archivos y sitios de forma externa
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Para colaborar con personas ajenas a la organización, puede compartir de forma externa sitios o archivos específicos en todo el sitio. Si quiere ir directamente a la configuración del uso compartido, elija el escenario que quiera activar:
 
@@ -67,7 +74,7 @@ El uso compartido externo está activado de forma predeterminada en el nivel de 
   
 2. En la página que se abre, elija si los usuarios pueden compartir sólo con los invitados existentes, los invitados nuevos y los existentes, o cualquier persona. 
     
-3. Seleccione **Guardar**.
+3. Haga clic en **Guardar**.
     
 Después de habilitar el uso compartido externo en el nivel de la organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo de sitios específicos. Para obtener información, consulte [activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site).
   

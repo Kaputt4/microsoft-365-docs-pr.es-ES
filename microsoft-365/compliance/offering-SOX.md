@@ -1,7 +1,7 @@
 ---
 title: Sarbanes-Oxley Act of 2002 (SOX) (Ley Sarbanes-Oxley de 2002, SOX)
 description: Las empresas de servicios financieros pueden usar los informes de cumplimiento de Microsoft para abordar su cumplimiento con la ley Sarbanes-Oxley.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ef2f30492df89e97348e4dbce81ce4ae43c2e806
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602037"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066313"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act of 2002 (SOX) (Ley Sarbanes-Oxley de 2002, SOX)
 
@@ -43,7 +43,7 @@ En Microsoft, compartimos la responsabilidad del cumplimiento con nuestros clien
 
 Obtenga más información sobre cómo usar los informes de cumplimiento de Microsoft Azure al abordar las obligaciones de cumplimiento de la ley SOX: [descargar las instrucciones de Azure para Sarbanes-Oxley](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -73,7 +73,3 @@ Al migrar las aplicaciones y los datos a los servicios cubiertos en la nube de M
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/5/D/2/5D278460-AF57-470F-B166-5BD9258BCE3E/SOX-Compliance.pdf).
