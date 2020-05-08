@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b0d79906093df544dc501dd5fff7638833ea54c
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003538"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160383"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Para identidades y más allá: el punto de vista de un arquitecto
 
@@ -143,7 +143,7 @@ Si está de acuerdo con esta definición ampliada de autorización, debe impleme
 
 Por supuesto, además de Azure AD, varios servicios y aplicaciones tienen sus propios modelos de autorización específicos. Algunas de ellas se describen más adelante en la sección delegación.
 
-### <a name="audit"></a>Las
+### <a name="audit"></a>Auditoría
 Azure AD tiene capacidades detalladas [de auditoría e informes](https://docs.microsoft.com/azure/active-directory/reports-monitoring/) . Sin embargo, normalmente no es la única fuente de información necesaria para tomar decisiones de seguridad. Vea más información sobre esto en la sección delegación.
 
 ## <a name="there-is-no-exchange"></a>No hay ningún cambio

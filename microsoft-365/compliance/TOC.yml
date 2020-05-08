@@ -42,6 +42,8 @@
       items:
         - name: Obtener más información sobre el cumplimiento de las comunicaciones
           href: communication-compliance.md
+        - name: Planear el cumplimiento de las comunicaciones
+          href: communication-compliance-plan.md
         - name: Introducción al cumplimiento de las comunicaciones
           href: communication-compliance-configure.md
         - name: Investigar y corregir las alertas de cumplimiento de las comunicaciones
@@ -1054,8 +1056,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (Países Bajos)
               href: offering-nen-7510-netherlands.md
-            - name: Kit de herramientas IG del NHS (Reino Unido)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: Industria
           items:
             - name: 'CFR título 21, parte 11 de la FDA'
@@ -1132,8 +1132,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (Bélgica)
               href: offering-nbb-fsma-belgium.md
-            - name: Kit de herramientas IG del NHS (Reino Unido)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS

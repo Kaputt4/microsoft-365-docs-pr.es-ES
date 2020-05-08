@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043301"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162692"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -52,7 +52,9 @@ Cuando los empleados dejan la organización, hay indicadores de riesgos específ
 La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles, como unidades USB, archivos de impresión y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
 
 >[!IMPORTANT]
->Al usar esta plantilla, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de su organización. Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+>Al usar esta plantilla, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de su organización. Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con esta plantilla está configurada para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+>
+>Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
 
 ### <a name="offensive-language-in-email"></a>Lenguaje ofensivo en el correo electrónico
 

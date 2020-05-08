@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637984"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066423"
 ---
 # <a name="european-union-model-clauses"></a>Cláusulas modelo de la Unión Europea
 
@@ -39,11 +39,7 @@ Microsoft proporcionó sus cláusulas contractuales estándares al Grupo de trab
 
 El Grupo determinó que la implementación de las disposiciones en los acuerdos de Microsoft estaba en línea con sus requisitos estrictos. (Microsoft fue el primer proveedor de servicios de nube que recibió una carta aval del grupo). La aprobación abarcó las interacciones reflejadas en las cláusulas modelo 2010/87/EU, pero no en los apéndices, que describen las transferencias de datos y las medidas de seguridad implementadas por el importador de datos. La APD puede analizar los apéndices por separado.
 
-Obtenga más información sobre las ventajas de las cláusulas modelo de la Unión Europea en la nube de Microsoft
-
-[Descargar la información general de las cláusulas modelo de la Unión Europea](https://aka.ms/eu-model-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -75,9 +71,9 @@ Un proveedor de servicios que se compromete por contrato con las cláusulas mode
 
 El cumplimiento normativo es un compromiso contractual. Las cláusulas contractuales estándares de Microsoft están disponibles para todos los clientes de nube en los [Términos de servicios en línea](https://aka.ms/Online-Services-Terms), para otros servicios, vea el contrato existente con Microsoft.
 
-**¿Qué es un “subprocesador”?**
+**¿Qué es un "subprocesador"?**
 
-Un “subprocesador” es alguien que procesa datos personales siguiendo las instrucciones del controlador de los datos, así como los términos de las cláusulas modelo de la UE y el subcontratista. Los clientes de Microsoft, en especial los proveedores de software independientes (ISV), en ocasiones son procesadores de datos. En esos casos, Microsoft es el subprocesador.
+Un subprocesador es alguien que procesa datos personales siguiendo las instrucciones del controlador de los datos, así como los términos de las cláusulas modelo de la UE y el subcontratista. Los clientes de Microsoft, en especial los proveedores de software independientes (ISV), en ocasiones son procesadores de datos. En esos casos, Microsoft es el subprocesador.
 
 **¿Dónde puedo empezar con los esfuerzos de cumplimiento normativo de mi organización?**
 
@@ -93,8 +89,4 @@ Puede especificar un acuerdo como, por ejemplo, los [Términos de servicios en l
 - [Microsoft y el escudo de seguridad de la UE-EE. UU.](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Marco de cumplimiento del centro de controles comunes de Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

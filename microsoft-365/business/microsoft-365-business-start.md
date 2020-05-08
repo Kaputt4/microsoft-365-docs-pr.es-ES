@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga más información sobre Microsoft 365 para empresas, cómo configurarlo y cómo preparar los dispositivos de los usuarios y los equipos para asegurarse de que están protegidos por Microsoft 365 para la empresa.
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048093"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165797"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -79,9 +79,9 @@ Inicie sesión en el [centro de administración de microsoft 365](https://portal
     
     Si va a **cambiar de forma permanente de un Active Directory local a la nube**, puede ir al centro de administración de Microsoft 365 y usar el Asistente de configuración para agregar los usuarios de forma manual o puede realizar una sincronización única con Azure ad Connect. Puede realizar esto de dos maneras: 
     
-    - Si también tiene un servidor de Exchange 2010, Exchange 2013 o Exchange 2016, puede usar la [mínima implementación híbrida para migrar rápidamente buzones de Exchange a Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Los pasos mínimos híbridos incluyen una sincronización de usuarios de una sola vez a Azure AD y la migración de correo electrónico de local a la nube. Una vez completada la migración de correo electrónico, la sincronización de directorios se desactiva automáticamente cuando se usa este método.
+    - Si también tiene un servidor de Exchange 2010, Exchange 2013 o Exchange 2016, puede usar la [mínima implementación híbrida para migrar rápidamente buzones de Exchange a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Los pasos mínimos híbridos incluyen una sincronización de usuarios de una sola vez a Azure AD y la migración de correo electrónico de local a la nube. Una vez completada la migración de correo electrónico, la sincronización de directorios se desactiva automáticamente cuando se usa este método.
     
-    - Use el Asistente para sincronización de directorios para sincronizar los usuarios con la nube. Siga los pasos descritos en [configurar la sincronización de directorios para Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) para completar este proceso. Después de sincronizar los usuarios con la nube, tendrá que [desactivar la sincronización de directorios para Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Use el Asistente para sincronización de directorios para sincronizar los usuarios con la nube. Siga los pasos descritos en [configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) para completar este proceso. Después de sincronizar los usuarios con la nube, tendrá que [desactivar la sincronización de directorios para Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     También tendrá que dar a cada usuario que se agregó de este modo una licencia a Microsoft 365 para empresas. Puede hacerlo en el Asistente de [configuración](set-up.md) o puede [asignar licencias a usuarios en Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
@@ -104,9 +104,9 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
   
 - Póngase en contacto con su partner.
     
-- Como administrador de Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte técnico al cliente: ** [contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- Como administrador de Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte técnico al cliente: ** [contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Documentación y recursos de Microsoft 365 para la empresa](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

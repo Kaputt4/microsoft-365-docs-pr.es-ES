@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 33723d5de94279e53a77434679c5406575dff3be
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632511"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166031"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado del RGPD y CCPA
 
@@ -119,7 +119,7 @@ El primer paso para responder a una solicitud de derechos del interesado es busc
 
 Como se indicó anteriormente, Microsoft estima que las aplicaciones de Microsoft Office, como Word y Excel, se usan para crear más del 90 % de los datos de una organización. Esto significa que puede usar la Búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar la mayoría de los datos relacionados con las DSR.
 
-En esta guía se presupone que usted o la persona que busca datos personales que puedan ser relevantes para una solicitud DSR ya están familiarizados, o al menos tienen cierta experiencia, con la herramienta de Búsqueda de contenido del Centro de seguridad y cumplimiento. Para obtener instrucciones generales sobre el uso de la Búsqueda de contenido, vea [Búsqueda de contenido en Office 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Asegúrese de que la persona responsable de las búsquedas tenga asignados los permisos necesarios en el Centro de seguridad y cumplimiento. Esta persona debe agregarse como miembro del grupo de roles de Supervisor de eDiscovery en el Centro de seguridad y cumplimiento; vea [Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Considere la posibilidad de agregar al grupo de roles de Supervisor de eDiscovery otros usuarios de la organización implicados en la investigación de solicitudes DSR para que puedan llevar a cabo las acciones necesarias en la herramienta de Búsqueda de contenido tales como previsualizar y exportar resultados de la búsqueda. Pero, a menos que configure los límites de cumplimiento normativo (tal y como se describe [aquí](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), tenga en cuenta que un Supervisor de eDiscovery puede buscar en todas las ubicaciones de contenido de la organización, incluidas aquellas que puedan estar o no relacionadas con una investigación de DSR.
+En esta guía se presupone que usted o la persona que busca datos personales que puedan ser relevantes para una solicitud DSR ya están familiarizados, o al menos tienen cierta experiencia, con la herramienta de Búsqueda de contenido del Centro de seguridad y cumplimiento. Para obtener instrucciones generales sobre el uso de la Búsqueda de contenido, vea [Búsqueda de contenido en Office 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4). Asegúrese de que la persona responsable de las búsquedas tenga asignados los permisos necesarios en el Centro de seguridad y cumplimiento. Esta persona debe agregarse como miembro del grupo de roles de Supervisor de eDiscovery en el Centro de seguridad y cumplimiento; vea [Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Considere la posibilidad de agregar al grupo de roles de Supervisor de eDiscovery otros usuarios de la organización implicados en la investigación de solicitudes DSR para que puedan llevar a cabo las acciones necesarias en la herramienta de Búsqueda de contenido tales como previsualizar y exportar resultados de la búsqueda. Pero, a menos que configure los límites de cumplimiento normativo (tal y como se describe [aquí](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)), tenga en cuenta que un Supervisor de eDiscovery puede buscar en todas las ubicaciones de contenido de la organización, incluidas aquellas que puedan estar o no relacionadas con una investigación de DSR.
 
 Después de encontrar los datos, puede realizar la acción específica para satisfacer la solicitud del interesado.
 
@@ -141,7 +141,7 @@ Puede buscar los siguientes tipos de ubicaciones de contenido con la herramienta
 #### <a name="tips-for-searching-content-locations"></a>Sugerencias para la búsqueda de ubicaciones de contenido
 
 - Empiece por buscar todas las ubicaciones de contenido de la organización (lo que puede hacerse en una sola búsqueda) para determinar con rapidez qué ubicaciones de contenido contienen elementos que coinciden con la consulta. Después, puede volver a ejecutar la búsqueda y restringir el ámbito a las ubicaciones específicas que contienen elementos relevantes.
-- Use las estadísticas de búsqueda para identificar las ubicaciones principales que contienen los elementos que coinciden con la consulta de búsqueda. Consulte [Ver las estadísticas de palabras clave de resultados de búsqueda de contenido](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+- Use las estadísticas de búsqueda para identificar las ubicaciones principales que contienen los elementos que coinciden con la consulta de búsqueda. Consulte [Ver las estadísticas de palabras clave de resultados de búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 - En el registro de auditoría, busque la actividad reciente que el usuario al que se somete el DSR ha realizado en archivos y carpetas. La búsqueda en el registro de auditoría devuelve una lista de registros que contienen el nombre y la ubicación de los recursos con los que ha interactuado recientemente el usuario. Puede usar esta información para crear una consulta de búsqueda de contenido. Vea [Buscar el registro de auditoría en el Centro de seguridad y cumplimiento](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 #### <a name="building-search-queries-to-find-personal-data"></a>Generar consultas de búsqueda para encontrar datos personales
@@ -170,11 +170,11 @@ La tabla siguiente incluye algunas condiciones que puede usar para restringir el
 | Etiqueta de cumplimiento |La etiqueta asignada a un mensaje de correo electrónico o un documento. Las etiquetas se usan para clasificar correos electrónicos y documentos para el gobierno de datos y para aplicar reglas de retención basadas en la clasificación definida por la etiqueta. Use esta condición para buscar elementos que tengan una etiqueta asignada automática o manualmente.<br/>Esta condición es útil para las investigaciones de DSR porque es posible que su organización utilice etiquetas para clasificar contenido relacionado con la privacidad de datos o que contenga datos personales o información confidencial. Consulte la sección "Usar la búsqueda de contenido para encontrar todo el contenido con una etiqueta específica" en [Información general sobre etiquetas en Office 365](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30).|compliancetag="datos personales"|
 ||||
 
-Hay muchas más propiedades y condiciones de búsqueda de correo electrónico y documentos que puede usar para crear consultas de búsqueda más complejas. Vea las secciones siguientes en el tema de ayuda [Consultas de palabras clave y condiciones de búsqueda para buscar contenido](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3) para obtener más información.
+Hay muchas más propiedades y condiciones de búsqueda de correo electrónico y documentos que puede usar para crear consultas de búsqueda más complejas. Vea las secciones siguientes en el tema de ayuda [Consultas de palabras clave y condiciones de búsqueda para buscar contenido](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) para obtener más información.
 
-- [Propiedades del correo electrónico que permiten búsquedas](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [Propiedades de sitio (documento ) que se pueden buscar](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [Condiciones de búsqueda](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
+- [Propiedades del correo electrónico que permiten búsquedas](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [Propiedades de sitio (documento ) que se pueden buscar](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [Condiciones de búsqueda](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
 
 #### <a name="searching-for-personal-data-in-sharepoint-lists-discussions-and-forms"></a>Buscar datos personales en discusiones, formularios y listas de SharePoint
 
@@ -222,15 +222,15 @@ Este ejemplo devuelve mensajes de correo electrónico que contienen el número d
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Trabajar con elementos parcialmente indizados en la búsqueda de contenido
 
-Los elementos indexados parcialmente (también denominados *elementos sin indexar*) son elementos del buzón de Exchange Online y documentos en sitios de SharePoint Online y OneDrive para la Empresa que, por algún motivo, no se indexaron para búsquedas, lo que significa que no aparecen en la Búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indexan correctamente porque se encuentran dentro de los [límites de indexación de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?). Las razones por las que los mensajes de correo electrónico o los archivos no están indexados para la búsqueda son:
+Los elementos indexados parcialmente (también denominados *elementos sin indexar*) son elementos del buzón de Exchange Online y documentos en sitios de SharePoint Online y OneDrive para la Empresa que, por algún motivo, no se indexaron para búsquedas, lo que significa que no aparecen en la Búsqueda de contenido. La mayoría de los mensajes de correo electrónico y documentos del sitio se indexan correctamente porque se encuentran dentro de los [límites de indexación de Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??). Las razones por las que los mensajes de correo electrónico o los archivos no están indexados para la búsqueda son:
 
-- El tipo de archivo [no se admite o está deshabilitado para la indexación](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?). El tipo de archivo sí se admite para indexación, pero se produce un error de indexación en un archivo específico.
+- El tipo de archivo [no se admite o está deshabilitado para la indexación](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??). El tipo de archivo sí se admite para indexación, pero se produce un error de indexación en un archivo específico.
 - Los mensajes de correo electrónico tienen un archivo adjunto sin un identificador válido, como un archivo de imagen (esta es la causa más común de que un elemento de correo electrónico esté parcialmente indizado).
 - Los archivos adjuntos a los mensajes de correo electrónico son demasiado grandes o numerosos.
 
 Le recomendamos que obtenga más información acerca de los elementos parcialmente indizados para poder trabajar con ellos al responder a solicitudes de interesados. Para obtener más información, consulte:
 
-- [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
+- [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??)
 - [Investigar elementos indizados parcialmente en eDiscovery de Office 365](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
 - [Exportar elementos sin indexar](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
 
@@ -1037,7 +1037,7 @@ Las secciones siguientes explican cómo usar la función integrada en la aplicac
 
 #### <a name="discover"></a>Detectar
 
-Los planes de Planner están asociados a un grupo de Microsoft 365 y los archivos de los Grupos de Microsoft 365 se almacenan en un sitio asociado de SharePoint Online para el grupo. Esto significa que puede usar la Búsqueda de contenido para encontrar archivos de Planner buscando en el sitio para el grupo de Microsoft 365. Para ello, debe tener la dirección URL del grupo de Microsoft 365. Consulte [Búsqueda de Grupos de Microsoft Teams y Microsoft 365](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) en el tema de ayuda "Búsqueda de contenido en Office 365". Allí encontrará sugerencias sobre cómo obtener información de los Grupos de Microsoft 365 y buscar archivos de Planner en el sitio correspondiente de SharePoint Online.
+Los planes de Planner están asociados a un grupo de Microsoft 365 y los archivos de los Grupos de Microsoft 365 se almacenan en un sitio asociado de SharePoint Online para el grupo. Esto significa que puede usar la Búsqueda de contenido para encontrar archivos de Planner buscando en el sitio para el grupo de Microsoft 365. Para ello, debe tener la dirección URL del grupo de Microsoft 365. Consulte [Búsqueda de Grupos de Microsoft Teams y Microsoft 365](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) en el tema de ayuda "Búsqueda de contenido en Office 365". Allí encontrará sugerencias sobre cómo obtener información de los Grupos de Microsoft 365 y buscar archivos de Planner en el sitio correspondiente de SharePoint Online.
 
 #### <a name="access"></a>Access
 

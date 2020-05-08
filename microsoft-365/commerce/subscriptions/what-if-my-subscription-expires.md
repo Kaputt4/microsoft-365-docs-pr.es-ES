@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707612"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165131"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -50,7 +50,7 @@ En la siguiente tabla se explica qué se puede esperar cuando expire una suscrip
 * En la mayoría de las ofertas, en la mayoría de países y regiones.
   
 > [!NOTE]
-> **¿Qué son los "datos del cliente"?** Los datos de cliente, tal y como se definen en los [términos del servicio de Microsoft online](https://go.microsoft.com/fwlink/p/?LinkId=613649), se refieren a todos los datos, incluidos los archivos de texto, sonido o imagen proporcionados a Microsoft por el cliente, o en nombre de éste, a través del uso que hace el cliente de los servicios de Microsoft 365. Para obtener más información acerca de la protección de los datos de los clientes, vea [Introducción al portal de confianza de servicios de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
+> **¿Qué son los "datos del cliente"?** Los datos de cliente, tal y como se definen en los [términos del servicio de Microsoft online](https://go.microsoft.com/fwlink/p/?LinkId=613649), se refieren a todos los datos, incluidos los archivos de texto, sonido o imagen proporcionados a Microsoft por el cliente, o en nombre de éste, a través del uso que hace el cliente de los servicios de Microsoft 365. Para obtener más información acerca de la protección de los datos de los clientes, vea [Introducción al portal de confianza de servicios de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>¿Cuáles son mis opciones si mi suscripción está a punto de caducar?
 

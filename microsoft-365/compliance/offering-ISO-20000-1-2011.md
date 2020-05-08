@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da23c71947e668ac3a401d68a35963fbc94a9afc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602277"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065925"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 administración del servicio de tecnologías de la información
 
@@ -78,8 +78,4 @@ Sí. Si su empresa desea obtener una certificación para las implementaciones de
 
 - [ISO 20000-1:2011:](https://www.iso.org/standard/51986.html) de administración de servicio (requisitos para la compra)
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

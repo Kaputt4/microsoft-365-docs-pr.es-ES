@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar Microsoft Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002958"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159472"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar una colaboración segura con Microsoft 365
 
@@ -73,7 +73,7 @@ Estos niveles: *línea base*, *sensible*y *extremadamente sensible* : aumentan g
 |Uso compartido de archivos|Permitido|Permitido|Solo pueden compartir los propietarios del equipo.|
 |Pertenencia al equipo|Cualquiera puede unirse a un equipo público.<br>Se requiere la aprobación del propietario del equipo para unirse a equipos privados.|Se necesita la aprobación del propietario del equipo para unirse.|Se necesita la aprobación del propietario del equipo para unirse.|
 |Cifrado de documentos|||Disponible con la etiqueta de confidencialidad|
-|Uso compartido de invitados|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
+|Uso compartido de invitado|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
 |Dispositivos no administrados|Sin restricción|Acceso a través de Web|Blocked|
 
 La configuración de estos niveles implica:
@@ -85,9 +85,9 @@ La configuración de estos niveles implica:
 
 Empiece con el nivel de línea base y, a continuación, agregue equipos que usen los niveles *Sensitive y sensiblemente* *confidenciales* según sea necesario para ayudar a proteger la información de la organización. Consulte estos recursos para empezar:
 
-- [Configurar Teams con la protección de línea base](configure-teams-baseline-protection.md)
-- [Configurar Microsoft Teams para proteger datos confidenciales](configure-teams-sensitive-protection.md)
-- [Configurar Microsoft Teams con protección para datos muy confidenciales](configure-teams-highly-sensitive-protection.md)
+- [Configure equipos con la protección de base de referencia](configure-teams-baseline-protection.md)
+- [Configure equipos con protección de datos confidenciales](configure-teams-sensitive-protection.md)
+- [Configuración de equipos con protección de datos con un nivel de confidencialidad alto](configure-teams-highly-sensitive-protection.md)
 
 Si tiene un proyecto muy sensible que requiere protección adicional para compartir incluso dentro de su organización, puede configurar un equipo que use su propia etiqueta de confidencialidad para cifrar archivos de modo que solo los miembros del equipo puedan leerlos. Consulte [Configure a Team with Security Isolation](secure-teams-security-isolation.md) para obtener más información.
 
@@ -109,7 +109,7 @@ En función de la confidencialidad de la información que se comparte, puede Agr
 
 Si tiene un proyecto principal con una organización asociada, puede usar la administración de derechos de Azure para administrar los invitados de esa organización en un equipo que haya configurado para el proyecto. Consulte [Create a B2B extranet with Managed Guests](b2b-extranet.md) para obtener más información.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

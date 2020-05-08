@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varios usuarios. '
-ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628896"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162703"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
@@ -48,7 +48,7 @@ Cuando se convierte el buzón de un usuario en un buzón compartido, se conserva
 
 3. Seleccione el buzón de usuario. En **convertir a buzón compartido**, seleccione **convertir**.
 
-4. Si el buzón tiene un tamaño menor que 50 GB, puede quitar la [licencia del usuario](../manage/remove-licenses-from-users.md)y dejar de pagar por ella. No elimine el buzón de correo antiguo del usuario. El buzón compartido lo necesita como un delimitador. Si va a convertir el buzón de un empleado que abandona su organización, debe realizar pasos adicionales para asegurarse de que ya no pueden iniciar sesión. Consulte [quitar un antiguo empleado de Microsoft 365](../add-users/remove-former-employee.md).
+4. Si el buzón tiene un tamaño menor que 50 GB, puede quitar la [licencia del usuario](../manage/remove-licenses-from-users.md)y dejar de pagar por ella. No elimine la cuenta de usuario. El buzón compartido lo necesita como un delimitador. Si va a convertir el buzón de un empleado que abandona su organización, debe realizar pasos adicionales para asegurarse de que ya no pueden iniciar sesión. Consulte [quitar un antiguo empleado de Microsoft 365](../add-users/remove-former-employee.md).
     
 5. Para todos los demás que necesite saber sobre los buzones compartidos, vea [About Shared mailboxes](about-shared-mailboxes.md) y [Create a Shared Mailbox](create-a-shared-mailbox.md).
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
-ms.openlocfilehash: 17bfb7581da1147c7de8cae0437fe91316a3fcb6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943137"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166051"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -84,4 +84,4 @@ Los mensajes únicos también se pueden marcar como duplicados cuando la caracte
 
   - [Exportar los resultados de la búsqueda de exhibición de documentos electrónicos local a un archivo PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [Exportar contenido y crear informes en el Centro de eDiscovery](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [Exportar contenido y crear informes en el Centro de eDiscovery](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

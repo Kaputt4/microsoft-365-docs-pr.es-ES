@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo mover datos a la nueva identidad de negocio.
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627841"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155368"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Mover el correo electrónico y los datos a Microsoft 365 Business Standard
 
@@ -61,14 +61,14 @@ Si quiere mover algunos de sus datos personales a la nueva identidad de negocio,
 ## <a name="outlookemail"></a>[Outlook/correo electrónico](#tab/Outlook)
   
  **Exportar información de Outlook 2013 a un archivo de datos de Outlook**
-1. Para poder crear el archivo de datos de Outlook (.pst), la cuenta de la que desea exportar información debe agregarse a la versión de escritorio de Outlook. Obtenga información sobre cómo agregar una cuenta a Outlook 2013 o versiones posteriores [Configurar el correo electrónico en Outlook (para Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+1. Para poder crear el archivo de datos de Outlook (.pst), la cuenta de la que desea exportar información debe agregarse a la versión de escritorio de Outlook. Obtenga información sobre cómo agregar una cuenta a Outlook 2013 o versiones posteriores [Configurar el correo electrónico en Outlook (para Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Cada usuario debe completar los pasos de [Exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario a un archivo .pst de Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
     
  **Configurar la nueva cuenta de correo electrónico en Outlook**
 1. Cada usuario debe configurar su nueva cuenta de correo electrónico que se incluye en la suscripción de Microsoft 365 para empresas. Para ello, necesitará la dirección de su nueva cuenta de correo electrónico. La cuenta de correo electrónico de cada usuario es la misma que el nombre de usuario que usan para iniciar sesión en Microsoft 365 para la empresa. Será algo así como marta@contoso.onmicrosoft.com o david@contoso.com.
     
-2. Pida a cada usuario que agregue su cuenta de correo electrónico a Outlook. Para aprender cómo, consulte [Configurar el correo electrónico en Outlook (para Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
+2. Pida a cada usuario que agregue su cuenta de correo electrónico a Outlook. Para aprender cómo, consulte [Configurar el correo electrónico en Outlook (para Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importar información desde el archivo de datos de Outlook**
 1. Esto combina el correo electrónico, el calendario, las tareas y los contactos almacenados en el archivo PST en su cuenta de correo electrónico de Microsoft 365 para empresas.

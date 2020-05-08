@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que se incluyen en Microsoft 365 Business Premium para ayudar a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: 35eb0ac1dce216ccc557fc629ddb5d2df50e7134
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635152"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165765"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Business Premium
 
@@ -64,7 +64,7 @@ Puede administrar muchas de las características de seguridad de Microsoft 365 B
 
 Las características avanzadas de Microsoft 365 empresa Premium están disponibles para ayudarle a proteger su negocio de las amenazas cibernéticos y salvaguardar la información confidencial.
   
-- **[Protección contra amenazas avanzada de Office 365](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     La protección contra amenazas avanzada (ATP) ayuda a proteger su empresa contra ataques de suplantación de identidad y ataque de ransomware sofisticados, diseñados para comprometer la información de empleados o clientes Entre las características se incluyen:
     
@@ -97,7 +97,7 @@ Las características avanzadas de Microsoft 365 empresa Premium están disponibl
 
 Su suscripción a Microsoft 365 Business Premium incluye características que le ayudarán a mantener los estándares de cumplimiento normativo.
 
-- **[Información general sobre las directivas de prevención de pérdida de datos](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
+- **[Información general sobre las directivas de prevención de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** (DLP). 
     
     Puede configurar DLP para que detecte automáticamente información confidencial, como números de tarjetas de crédito, números de la seguridad social, etc., para evitar que se comparta involuntariamente fuera de la compañía.
     
@@ -112,7 +112,7 @@ Su suscripción a Microsoft 365 Business Premium incluye características que le
 Puede administrar estas características en el centro de &amp; seguridad y cumplimiento y en el centro de administración de Intune. Con el tiempo, los controles simplificados se agregarán al centro de administración de Microsoft 365.
   
     
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>¿Estas características de seguridad están disponibles en todos los mercados?
   

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Obtenga información acerca de cómo configurar su suscripción de Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Básico, Aplicaciones de Microsoft 365 para empresas u Office 365 Educación.
-ms.openlocfilehash: 448dc7ae990a4c9803ea751e4ad855f375195734
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627551"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165088"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
 
@@ -285,7 +285,7 @@ Si usa Office 365 ofrecido por 21Vianet, vaya a [https://portal.partner.microsof
 
 Instale Office en su dispositivo móvil y configure Outlook para trabajar con el nuevo buzón de Microsoft. Todos los miembros de su equipo tendrán que realizar este paso. Cada usuario puede instalar las aplicaciones móviles de Office en un máximo de 5 teléfonos y 5 tabletas.  
   
-Obtenga los pasos para el dispositivo: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+Obtenga los pasos para el dispositivo: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/es-ES/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. Almacenar archivos online
 
@@ -309,11 +309,11 @@ Para realizar un recorrido por Microsoft 365 y aprender a usar todas las aplicac
 
 ### <a name="get-ready-for-office-365"></a>Prepararse para Office 365
 
-- **Primero compruebe que cumple los requisitos para obtener una suscripción para el ámbito educativo** Siga los pasos para [Verificar su dominio para demostrar que es de su propiedad, que es una organización sin ánimo de lucro o un centro educativo o para activar Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), de modo que Microsoft pueda darle la aprobación para usar un plan para el ámbito educativo. Después, podrá configurar Office 365 para su escuela siguiendo las instrucciones de este artículo.
+- **Primero compruebe que cumple los requisitos para obtener una suscripción para el ámbito educativo** Siga los pasos para [Verificar su dominio para demostrar que es de su propiedad, que es una organización sin ánimo de lucro o un centro educativo o para activar Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), de modo que Microsoft pueda darle la aprobación para usar un plan para el ámbito educativo. Después, podrá configurar Office 365 para su escuela siguiendo las instrucciones de este artículo.
 
-- **¿Necesita ayuda?** Si necesita ayuda con una implementación más avanzada, **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** es un buen lugar para empezar. También puede [buscar un partner](https://go.microsoft.com/fwlink/p/?linkid=391089) para que le ayude.
+- **¿Necesita ayuda?** Si necesita ayuda con una implementación más avanzada, **[FastTrack](https://www.microsoft.com/es-ES/fasttrack/microsoft-365/office-365)** es un buen lugar para empezar. También puede [buscar un partner](https://go.microsoft.com/fwlink/p/?linkid=391089) para que le ayude.
 
-- **Planear** Estas herramientas y recursos le ayudarán a preparar su red, su directorio y sus usuarios finales para Office 365: [Preparar la organización para Office 365 Enterprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
+- **Planear** Estas herramientas y recursos le ayudarán a preparar su red, su directorio y sus usuarios finales para Office 365: [Preparar la organización para Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365).
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. Agregar el dominio de escuela o conectar su directorio
 
@@ -339,25 +339,25 @@ Si usa Office 365 ofrecido por 21Vianet, vaya a [este Centro de administración]
 
 Para iniciar el asistente, seleccione **Ir a la configuración**.
 
-Para consultar un tutorial de lo que sucede al ejecutar el asistente, consulte [Usar el Asistente para instalación](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+Para consultar un tutorial de lo que sucede al ejecutar el asistente, consulte [Usar el Asistente para instalación](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup).
   
-Si quiere sincronizar los usuarios de un directorio local o usar un inicio de sesión único, **no use el asistente de configuración para agregar usuarios**. En su lugar, lea esta guía para comprender las opciones: [Conectar el directorio a Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). Puede configurar:
+Si quiere sincronizar los usuarios de un directorio local o usar un inicio de sesión único, **no use el asistente de configuración para agregar usuarios**. En su lugar, lea esta guía para comprender las opciones: [Conectar el directorio a Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity). Puede configurar:
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync). Sincroniza con un directorio local. Usted administra los usuarios locales. También puede sincronizar las contraseñas para que los usuarios tengan la misma contraseña para el entorno local y para la nube pero tendrán que iniciar sesión de nuevo si quieren usar Office 365.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync). Sincroniza con un directorio local. Usted administra los usuarios locales. También puede sincronizar las contraseñas para que los usuarios tengan la misma contraseña para el entorno local y para la nube pero tendrán que iniciar sesión de nuevo si quieren usar Office 365.
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated). Sincroniza con un directorio local. Usted administra los usuarios locales. Los usuarios pueden tener la misma contraseña para el entorno local y para la nube, y no tienen que iniciar sesión de nuevo para usar Office 365. Esto también se conoce como inicio de sesión único.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated). Sincroniza con un directorio local. Usted administra los usuarios locales. Los usuarios pueden tener la misma contraseña para el entorno local y para la nube, y no tienen que iniciar sesión de nuevo para usar Office 365. Esto también se conoce como inicio de sesión único.
 
 ### <a name="2-set-up-services"></a>2. Configurar servicios
 
-Configure el correo electrónico, el uso compartido de archivos, la mensajería instantánea o cualquiera de los demás servicios y aplicaciones de Office 365: [Configurar los servicios y aplicaciones de Office 365](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30).
+Configure el correo electrónico, el uso compartido de archivos, la mensajería instantánea o cualquiera de los demás servicios y aplicaciones de Office 365: [Configurar los servicios y aplicaciones de Office 365](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications).
   
 En este paso, puede instalar Office 365 en hasta 5 equipos y portátiles por persona.
   
 ### <a name="3-migrate-data"></a>3. Migrar datos
 
-Una vez que los servicios estén configurados, podrá empezar a migrar datos, como el correo electrónico y los archivos: [Migrar datos a Office 365](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46).
+Una vez que los servicios estén configurados, podrá empezar a migrar datos, como el correo electrónico y los archivos: [Migrar datos a Office 365](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365).
   
-Si usa un sistema de información de estudiantes (SIS) para los estudiantes y los profesores, obtenga más información acerca de cómo [configurar la integración del SIS](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx).
+Si usa un sistema de información de estudiantes (SIS) para los estudiantes y los profesores, obtenga más información acerca de cómo [configurar la integración del SIS](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
   
 ### <a name="train-your-users"></a>Proporcione formación a los usuarios
 

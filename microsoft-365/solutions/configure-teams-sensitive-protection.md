@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: 6c3d79e212a1a0333a7262b72ae0f1db8597096f
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 6ad5de355055ac193979db9154d54ab9974fcde0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002982"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159926"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 
@@ -33,7 +34,7 @@ En este artículo, observamos la configuración de un equipo con un nivel de pro
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados
 
-Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido para invitados para equipos que contienen datos confidenciales. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
+Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido para invitados para equipos que contienen datos confidenciales. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
 
 Para más información sobre el uso compartido con invitados de forma segura, vea los recursos siguientes:
 
@@ -53,7 +54,7 @@ Si ya tiene las etiquetas de confidencialidad implementadas en la organización,
 Cuando haya habilitado las etiquetas de confidencialidad para Teams, el siguiente paso es crear la etiqueta.
 
 Crear una etiqueta de confidencialidad
-1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
 4. Asigne un nombre a la etiqueta. Le sugerimos **confidencial**, pero puede elegir otro nombre si ya está en uso.

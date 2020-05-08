@@ -1,7 +1,7 @@
 ---
 title: 'Reglamento general de protección de datos '
-description: Directrices técnicas de Microsoft en relación con el Reglamento general de protección de datos (RGPD)
-keywords: Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD
+description: Conozca la orientación técnica de Microsoft y encuentre información útil para el Reglamento general de protección de datos (GDPR).
+keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322559"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036213"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -68,7 +69,7 @@ Una STD implica seis actividades: descubrir, obtener acceso, rectificar, limitar
 
 **¿Cuáles son los orígenes de datos?**
 
-Una gran parte de los datos de la organización se generan en[las aplicaciones de Office](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) como Excel y Outlook.  Es posible que también encuentre información relevante para una solicitud de temas de datos (STD) en[opciones](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) generadas por productos y servicios de Microsoft, y[ registros](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)generados por el sistema.
+Una gran fracción de los datos de una organización se genera en [aplicaciones de Office ](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) como Excel y Outlook. Es posible que también encuentre información relevante para una solicitud de temas de datos (STD) en[opciones](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) generadas por productos y servicios de Microsoft, y[ registros](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)generados por el sistema.
 
 **¿Qué tipos de datos debe buscar?**
 
@@ -76,7 +77,7 @@ Es posible que los datos personales se encuentren en datos de clientes, opciones
 
 **¿Cómo se buscarán los datos personales?**
 
-La búsqueda de datos personales puede variar entre todos los productos y servicios de Microsoft. Las herramientas de búsqueda incluyen las capacidades [búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) o [búsqueda en aplicación](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Los administradores pueden tener acceso[a los registros generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)asociados a la actividad de un usuario.  
+La búsqueda de datos personales puede variar entre todos los productos y servicios de Microsoft. Las herramientas de búsqueda incluyen las capacidades [búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) o [búsqueda en aplicación](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Los administradores pueden acceder a los [registros generados s](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs)por el sistema asociados a la actividad de un usuario.  
 
 **¿En que formato debería estar disponible la información personal?**
 
@@ -100,8 +101,7 @@ Puede encontrar una serie de artículos relacionados con el RGPD aquí. Elaborad
 
 **¿Cómo le permite Microsoft responder a las solicitudes de los interesados?**
 
-Los servicios en línea ofrecen innumerables funcionalidades que le permiten, como responsable del tratamiento, dar respuesta a una solicitud de los interesados. Los controles administrativos y los servicios en línea de Microsoft le ayudan a actuar sobre datos personales que responden a solicitudes de derechos de interesados, lo que le permite detectar, tener acceso a, rectificar, restringir y exportar datos personales que residen en los datos administrados por responsables del tratamiento que se almacenan en la nube de Microsoft.
- Los servicios en línea también proporcionan datos en formato de lectura mecánica cuando lo necesite.
+Los servicios en línea ofrecen una gran cantidad de capacidades para permitirle, como controlador, responder a la solicitud de un sujeto de datos. Los servicios empresariales en línea y los controles administrativos de Microsoft le ayudan a actuar sobre los datos personales en respuesta a las solicitudes de derechos de los sujetos de datos, permitiéndole descubrir, obtener acceso, rectificar, restringir, eliminar y exportar los datos personales que residen en los datos administrados por el controlador y almacenados en la nube de Microsoft. Los servicios en línea también proporcionan datos en formato de lectura mecánica cuando lo necesite.
 
 ## <a name="data-protection-impact-assessment"></a>Evaluaciones de impacto de protección de datos
 
@@ -117,7 +117,7 @@ Los controladores son necesarios para realizar una evaluación de impacto de la 
 
 El reglamento general de protección de datos (RGPD) ordena que una evaluación de impacto de la protección de datos (EIPA) incluya:
 
-- Una evaluación de la necesidad y proporcionalidad del procesamiento de datos en relación con el propósito de la evaluación de impacto de la protección de datos.
+- Evaluación de la necesidad y la proporcionalidad del procesamiento de datos en relación con el propósito de la DPIA.
 - Una evaluación de los riesgos para los derechos y libertades de los temas de los datos
 - Las medidas previstas para abordar los riesgos, las protecciones, las medidas de seguridad y los mecanismos para asegurar la protección de los datos personales y demostrar el cumplimiento de el reglamento general de protección de datos (RGPD).
 
@@ -140,11 +140,11 @@ Estas revisiones de privacidad tienden a estar pormenorizadas (es posible que un
  Microsoft recoge estas revisiones de privacidad pormenorizadas en evaluaciones del impacto en la protección de datos (EIPA) que cubren las principales agrupaciones de procesamiento, que luego revisa el responsable de protección de datos (DPO) de la UE de Microsoft. El DPO evalúa los riesgos relacionados con el procesamiento de datos para asegurarse de que existen suficientes circunstancias atenuantes. Si el DPO encuentra riesgos sin mitigar, recomienda modificaciones al grupo de ingeniería. Las EIPA se revisarán y actualizarán de acuerdo con los cambios en los riesgos de protección de datos.
 
 
-Como encargado del tratamiento, Microsoft tiene la obligación de asistir a los responsables del tratamiento en garantizar el cumplimiento de los requisitos de EIPA establecidos en el RGPD. Para apoyar a nuestros clientes, se extraen las secciones pertinentes de las EIPA de Microsoft, que se ofrecerán a través de esta sección en futuras actualizaciones, con la intención de permitir que los responsables del tratamiento cuenten con los servicios de Microsoft para aprovechar los extractos y crear sus propias DPIA.
+Como encargado del tratamiento, Microsoft tiene la obligación de asistir a los responsables del tratamiento en garantizar el cumplimiento de los requisitos de EIPA establecidos en el RGPD. Para apoyar a nuestros clientes, las secciones relevantes de las DPIA de Microsoft son resumidas y serán proporcionadas a través de esta sección en futuras actualizaciones con la intención de permitir a los controladores que dependen de los servicios Microsoft aprovechar los resúmenes para crear sus propias DPIA.
 
 ## <a name="breach-notification"></a>Notificación de infracciones
 
-El RGPD impone requisitos de notificación a los responsables del tratamiento y a los encargados del tratamiento en caso de vulneración de datos personales. Al ser un procesador de datos, Microsoft garantiza que los clientes pueden cumplir los requisitos de notificación de incumplimiento del reglamento general de protección de datos (RGPD). Los controladores de datos son responsables de evaluar los riesgos relacionados con la privacidad de los datos y determinar si una vulneración requiere la notificación a la DPA de un cliente. Microsoft proporciona la información necesaria para realizar la evaluación. Para obtener más información sobre cómo Microsoft detecta y responde ante una violación de datos personales, en[Notificación de violación de datos según el reglamento general de protección de datos (RGPD)](gdpr-breach-notification.md).
+El RGPD impone requisitos de notificación a los responsables del tratamiento y a los encargados del tratamiento en caso de vulneración de datos personales. Como procesador de datos, Microsoft se asegura de que los clientes puedan cumplir con los requisitos de notificación de infracciones de la GDPR. Los controladores de datos son responsables de evaluar los riesgos para la privacidad de los datos y determinar si una infracción requiere la notificación de la DPA de un cliente. Microsoft proporciona la información necesaria para realizar la evaluación. Para obtener más información sobre cómo Microsoft detecta y responde ante una violación de datos personales, en[Notificación de violación de datos según el reglamento general de protección de datos (RGPD)](gdpr-breach-notification.md).
 
 ### <a name="breach-notification-faqs"></a>Preguntas frecuentes sobre notificación de infracciones
 
@@ -156,13 +156,13 @@ Los datos personales se refieren a cualquier información relacionada con un usu
 
 Si se produjera una vulneración de datos personales que pueda derivarse en un riesgo alto para los derechos y las libertades de las personas (tales como discriminación, robos de identidad, fraude, perjuicio financiero o daños a su reputación), el RGPD exige que usted:
 
-- Se notifique a la correspondiente autoridad de protección de datos (DPA) en las 72 horas siguientes tener conocimiento de ello; por ejemplo, después de que Microsoft se lo notifique. Si no notifica a la DPA en ese intervalo de tiempo, tendrá que darle explicaciones. Este aviso a la DPA es obligatorio aunque no sea probable que el riesgo para las personas derive en alto riesgo.
+- Se notifique a la correspondiente autoridad de protección de datos (DPA) en las 72 horas siguientes tener conocimiento de ello; por ejemplo, después de que Microsoft se lo notifique. Si no notifica a la DPA dentro de ese período de tiempo, tendrá que explicarle por qué a la DPA. Este aviso a la DPA es obligatorio aunque no sea probable que el riesgo para las personas derive en alto riesgo.
 - Notifique la vulneración a los interesados sin dilación.
 - La documentación de la vulneración incluye una descripción de la naturaleza de la misma como, por ejemplo, cuantas personas se han visto afectadas, el número de registros afectados, las consecuencias de la vulneración y cualquier acción correctiva que su organización proponga o tome.
 
 **¿Cuáles son las responsabilidades de Microsoft como encargado del tratamiento?**
 
-El RGPD exige que, tras tener conocimiento de una vulneración de datos personales, lo notifiquemos a usted sin la menor dilación. Cuando Microsoft sea el encargado del tratamiento de datos, nuestras obligaciones reflejarán tanto los requisitos del RGPD como nuestras disposiciones contractuales estándar en todo el mundo. Se considera que todas las vulneraciones de datos quedan dentro del ámbito de aplicación; no hay riesgo de umbral de perjuicio. Notificaremos a nuestros clientes si la vulneración de datos ha afectado directamente a Microsoft o a algunos de nuestros subencargados del tratamiento. Contamos con procesos para identificarlas rápidamente y ponerse en contacto con el personal de incidentes de seguridad que ha identificado en la organización. Además, todos los subencargados del tratamiento están obligados por contrato a informar de sus propias vulneraciones a Microsoft y ofrecer garantías al respecto.
+El RGPD exige que, tras tener conocimiento de una vulneración de datos personales, lo notifiquemos a usted sin la menor dilación. Cuando Microsoft sea el encargado del tratamiento de datos, nuestras obligaciones reflejarán tanto los requisitos del RGPD como nuestras disposiciones contractuales estándar en todo el mundo. Se considera que todas las vulneraciones de datos quedan dentro del ámbito de aplicación; no hay riesgo de umbral de perjuicio. Notificaremos a nuestros clientes si la vulneración de datos ha afectado directamente a Microsoft o a algunos de nuestros subencargados del tratamiento. Tenemos procesos para identificar y contactar rápidamente al personal de incidentes de seguridad que se ha identificado en su organización. Además, todos los subencargados del tratamiento están obligados por contrato a informar de sus propias vulneraciones a Microsoft y ofrecer garantías al respecto.
 
 **¿Cómo detectará Microsoft una vulneración de datos?**
 
@@ -186,7 +186,7 @@ Estas [listas de comprobación](gdpr-arc.md)proporciona una forma cómoda de obt
 
 **¿Microsoft realiza compromisos con sus clientes en lo que respecta al RGPD?**
 
-Sí. El RGPD exige que los responsables (como las organizaciones que usan los servicios empresariales en línea de Microsoft) solo utilicen encargados (como Microsoft) que ofrezcan garantías suficientes para cumplir con los requisitos clave del RGPD. Microsoft ha dado un paso proactivo al proporcionar estos compromisos a todos los clientes de licencias por volumen como parte de sus acuerdos.
+Sí. La GDPR requiere que los controladores (como las organizaciones que utilizan los servicios empresariales en línea de Microsoft) utilicen únicamente procesadores (como Microsoft) que ofrezcan suficientes garantías para cumplir los requisitos fundamentales de la GDPR. Microsoft ha dado un paso proactivo al proporcionar estos compromisos a todos los clientes de licencias por volumen como parte de sus acuerdos.
 
 **¿Cómo me ayuda Microsoft a cumplir?**
 
@@ -194,13 +194,13 @@ Microsoft proporciona herramientas y documentación para darle soporte en su res
 
 **¿Qué compromisos hay en los Términos de RGPD?**
 
-Los Términos de RGPD de Microsoft reflejan los compromisos requeridos al encargado del tratamiento en el artículo 28. El artículo 28 exige que los encargados del tratamiento se comprometan a:
+Los Términos de GDPR de Microsoft reflejan los compromisos exigidos a los procesadores en el Artículo 28. El artículo 28 exige que los encargados del tratamiento se comprometan a:
 
 - Acudir a subprocesadores solo con el consentimiento del controlador y ser responsable por los subprocesadores.
 - Procesar los datos personales solo de acuerdo con las instrucciones del controlador, incluido lo relativo a las transferencias.
 - Asegurarse de que las personas que procesan los datos personales estén comprometidas con la confidencialidad.
 - Implementar medidas técnicas y organizativas adecuadas para asegurar un nivel de seguridad de los datos personales adecuado al riesgo.
-- Asistir a los controladores en sus obligaciones para responder a las solicitudes de los interesados para ejercer sus derechos en virtud del RGPD.
+- Ayudar a los controladores en sus obligaciones de responder a las solicitudes de los titulares de los datos para ejercer sus derechos en materia de GDPR.
 - Cumplir con los requisitos de notificación y asistencia en infracciones.
 - Asistir a los controladores con evaluaciones de impacto en la protección de datos y consulta con autoridades supervisoras.
 - Eliminar o devolver datos personales al final de la prestación de servicios.
@@ -208,7 +208,7 @@ Los Términos de RGPD de Microsoft reflejan los compromisos requeridos al encarg
 
 **¿Sobre qué base facilita Microsoft la transferencia de datos personales fuera de la Unión Europea?**
 
-Microsoft aplica desde hace largo tiempo las cláusulas contractuales estándar (también conocidas como las cláusulas modelo) como base para la transferencia de datos para sus servicios en línea para empresas. Las cláusulas contractuales estándar son términos estándar proporcionadas por la Comisión Europea que pueden usarse para transferir datos fuera del Espacio Económico Europeo de manera apropiada. Microsoft ha incorporado las cláusulas contractuales estándar en todos nuestros contratos de licencias por volumen mediante los [términos de servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). El grupo de trabajo del artículo 29 ha detectado que la implementación por parte de Microsoft de las cláusulas contractuales estándares es apropiada. Además, cuando Privacy Shield entre EE. UU. y la UE estuvo disponible, Microsoft fue la primera empresa en obtener certificación. Consulte la [certificación de Microsoft en Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) y lea los [términos de los servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Privacy Shield permite a los clientes que deseen transferir sus datos al estadounidense hacerlo de manera coherente con las obligaciones en materia de protección de datos.
+Microsoft aplica desde hace largo tiempo las cláusulas contractuales estándar (también conocidas como las cláusulas modelo) como base para la transferencia de datos para sus servicios en línea para empresas. Las cláusulas contractuales estándar son términos estándar proporcionadas por la Comisión Europea que pueden usarse para transferir datos fuera del Espacio Económico Europeo de manera apropiada. Microsoft ha incorporado las cláusulas contractuales estándar en todos nuestros contratos de licencias por volumen mediante los [términos de servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). El Grupo de trabajo del Artículo 29 ha determinado que la aplicación por parte de Microsoft de las cláusulas contractuales estándar son compatibles. Además, cuando Privacy Shield entre EE. UU. y la UE estuvo disponible, Microsoft fue la primera empresa en obtener certificación. Consulte la[Certificación de Microsoft en el Escudo de privacidad](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active) y lea los [términos de los servicios en línea](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Privacy Shield permite a los clientes que deseen transferir sus datos al estadounidense hacerlo de manera coherente con las obligaciones en materia de protección de datos.
 
 **¿Qué más ofrece Microsoft en materia de cumplimiento?**
 
@@ -225,7 +225,7 @@ El RGPD impone una amplia variedad de requisitos a las organizaciones que recopi
 - *Limitar el almacenamiento de datos personales*. Deberá asegurarse de que los datos personales se conserven solo durante el tiempo necesario para lograr el propósito para el que se recopilan los datos.
 - Garantizar la *seguridad*, la *integridad* y la *confidencialidad de los datos personales*. Su organización debe realizar las acciones necesarias para proteger los datos personales con medidas de seguridad técnicas y organizacionales.
 
-Deberá comprender cuáles son las obligaciones específicas de su organización con respecto al RGPD y cómo cumplirlas, aunque Microsoft está aquí para ayudarle en su proceso de cumplimiento con el RGPD.
+Tendrá que entender cuáles son las obligaciones específicas de su organización para con la GDPR y cómo las cumplirá, aunque Microsoft está aquí para ayudarle en su viaje a la GDPR.
 
 **¿Qué derechos deben habilitar las empresas en relación con el RGPD?**
 
@@ -253,7 +253,7 @@ Sí, el RGPD se aplica a los controladores y los procesadores. Los controladores
 
 **¿A cuánto pueden ascender las multas a las empresas por incumplimiento?**
 
-Las empresas pueden tener multas de hasta 20 millones de euros o del 4% de su facturación global anual (la cifra más alta), por incumplimientos respecto de determinados requisitos del RGPD. Las reclamaciones individuales adicionales pueden incrementar su riesgo si no cumple con los requisitos del RGPD.
+Las empresas pueden ser multadas hasta por 20 millones &euro; o el 4% del volumen de negocios mundial anual, lo que sea mayor, por no cumplir con ciertos requisitos de la GDPR. Las reclamaciones individuales adicionales pueden incrementar su riesgo si no cumple con los requisitos del RGPD.
 
 **¿Mi empresa debe designar un responsable encargado de la protección de datos (DPO)?**
 
@@ -314,16 +314,16 @@ En caso de que existan fundamentos legítimos para el procesamiento continuado y
 
 El cifrado se identifica en el RGPD como medida de protección que hace los datos ininteligibles cuando se ven afectados por una infracción. Por lo tanto, tanto si se usa como si no, el cifrado puede afectar a los requisitos de notificación de infracción de datos personales. El RGPD también señala el cifrado como medida técnica u organizativa apropiada en determinados casos, en función del riesgo. El cifrado es también un requisito en el Estándar de Seguridad de Datos del Sector de Tarjetas de Pago y está incluido en las estrictas directivas de cumplimiento específicas para el sector de servicios financieros. Los productos y servicios de Microsoft, como Azure, Dynamics 365, Enterprise Mobility + Security, Office Microsoft 365, SQL Server/Azure SQL Database y Windows 10 proporcionan un potente cifrado para datos en tránsito y estacionarios.
 
-**¿Cómo cambia el RGPD la respuesta de las organizaciones frente a infracciones de datos personales?**
+** ¿Cómo cambia la respuesta de una organización a las violaciones de los datos personales?**
 
-El RGPD cambiará los requisitos de protección de datos e impondrá obligaciones más estrictas a los procesadores y controladores en cuanto a la notificación de infracciones de datos personales. De conformidad con el nuevo reglamento, el procesador debe notificar al controlador de los datos sobre la violación de datos personales una vez tenga conocimiento de ello y sin demoras indebidas. Una vez que tenga conocimiento de la infracción de los datos personales, el controlador debe notificar a la autoridad de protección de datos correspondiente dentro de 72 horas. Si es probable que la infracción suponga un alto riesgo para los derechos y libertades de las personas, el controlador también deberá notificar a las personas afectadas sin demoras indebidas. El grupo de trabajo del artículo 29 de la UE está desarrollando orientación adicional en relación con esta materia.
+El RGPD cambiará los requisitos de protección de datos e impondrá obligaciones más estrictas a los procesadores y controladores en cuanto a la notificación de infracciones de datos personales. De conformidad con el nuevo reglamento, el procesador debe notificar al controlador de los datos sobre la violación de datos personales una vez tenga conocimiento de ello y sin demoras indebidas. Una vez que tenga conocimiento de la infracción de los datos personales, el controlador debe notificar a la autoridad de protección de datos correspondiente dentro de 72 horas. Si es probable que la infracción suponga un alto riesgo para los derechos y libertades de las personas, el controlador también deberá notificar a las personas afectadas sin demoras indebidas. El Grupo de trabajo del Artículo 29 de la UE está elaborando orientaciones adicionales sobre este tema.
 
-Los productos y servicios de Microsoft (como Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 y Windows 10) disponen de soluciones disponibles para ayudarle a detectar y evaluar las amenazas a la seguridad y las infracciones, así como a cumplir con las obligaciones de notificación del RGPD.
+Los productos y servicios de Microsoft, como Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 y Windows 10, tienen soluciones disponibles hoy en día para ayudarle a detectar y evaluar las amenazas e infracciones de seguridad y cumplir con las obligaciones de notificación de infracciones de la GDPR.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
 - [Aborde sus necesidades en relación con el RGPD con uno de nuestros socios globales que ofrecen soluciones basadas en Microsoft](https://aka.ms/findgdprpartner)
-- [Obtenga información acerca de cómo administra Microsoft sus datos, dónde están ubicados, quién puede acceder a ellos y mucho más.](https://www.microsoft.com/trust-center/privacy)
+- [ Conozca cómo Microsoft gestiona sus datos, dónde se encuentran, quién puede acceder a ellos, los términos, y más.](https://www.microsoft.com/trust-center/privacy)
 - [Obtenga más información sobre cómo Microsoft cumple con los principios del marco Privacy Shield entre la UE y EE. UU.](https://blogs.microsoft.com/eupolicy/2016/07/11/eu-u-s-privacy-shield-progress-for-privacy-rights/)
 - [Cómo detecta y responde Microsoft a una vulneración de datos personales y se la comunica a usted en virtud del RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-data-breach)
 - [Evalúe hoy mismo su nivel de preparación ante el RGPD](https://discover.microsoft.com/gdpr-readiness-assessment/)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638004"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066463"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -57,7 +57,7 @@ Para obtener información sobre cómo la nube de Microsoft ayuda a los clientes 
 - Cloud App Security
 - Servicio de robots de estado de Microsoft
 - Microsoft Stream
-- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y empresariales de Microsoft 365 para empresas
+- Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Microsoft 365 para empresas
 - [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
 - El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Intune
@@ -114,8 +114,4 @@ La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una caract
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
 - [Guía de implementación de Microsoft HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637530"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065765"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>ISO/IEC 27018 Código de prácticas para proteger los datos personales en la nube
 
@@ -40,9 +40,7 @@ Al seguir las normas de la ISO/IEC 27001 y el código de prácticas incluido en 
 - **Los clientes de Microsoft saben lo que ocurre con su DCP.** La ISO/IEC 27018 requiere una política que permita la devolución, transferencia y eliminación segura de información personal en un período de tiempo razonable. Si Microsoft trabaja con otras empresas que necesitan acceder a los datos de los clientes, revelará de forma proactiva las identidades de dichos subprocesadores.
 - **Microsoft cumple únicamente las solicitudes vinculantes legalmente para divulgar los datos de los clientes.** Si Microsoft debe cumplir alguna de estas solicitudes, como en el caso de una investigación criminal, siempre se lo notificará al cliente, a menos que lo prohíba la legislación.
 
-Obtenga más información acerca de las ventajas de la norma ISO-Iec-27018 en la nube de Microsoft: [Descargar el archivo de información general de la norma ISO/IEC 27017](https://aka.ms/iso27017-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -133,7 +131,3 @@ La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una caract
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636457"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165136"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto que ha comprado de Microsoft abierta
 
@@ -55,7 +55,7 @@ Si compró Microsoft 365 a partir de un programa de licencias Open de Microsoft,
 > [!NOTE]
 > Los clientes de licencias por volumen también pueden activar las suscripciones en el [centro de servicios de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkID=282016). Para más información sobre cómo descargar la guía en PDF, vea [Activar servicios en línea en el Centro de servicios de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkId=618096). 
   
-## <a name="whats-next"></a>?Cu?l es el siguiente paso?
+## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
 Si no está familiarizado con Microsoft 365 para empresas, obtenga información sobre cómo [configurar microsoft 365 para su organización](../admin/setup/setup.md).
   
@@ -63,7 +63,7 @@ Si no está familiarizado con Microsoft 365 para empresas, obtenga información 
 
 Consulte esta lista de errores y soluciones comunes: [¿tiene problemas con la clave de producto?](product-key-errors-and-solutions.md)
   
-Los partners deben consultar [Partners: usar una clave de producto para configurar una suscripción de cliente](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+Los partners deben consultar [Partners: usar una clave de producto para configurar una suscripción de cliente](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Los clientes de licencias por volumen pueden obtener más información visitando [Recursos y aprendizaje del Centro de servicios de licencias por volumen de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protéjase contra el phishing y otros ataques con Microsoft 365 para las campañas.
-ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080607"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165714"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protéjase contra el phishing y otros ataques
 
@@ -43,7 +43,7 @@ Microsoft 365 incluye muchas protecciones para protegerse contra ataques, pero h
 
 **Reducir el correo no deseado**
 
-Siga estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Siga estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 **Informe.**
 
@@ -74,6 +74,6 @@ Descargue este infografía con sugerencias para usted y los miembros de su equip
 ## <a name="set-it-up"></a>Configúrelo
 
 Obtenga más información sobre cómo:
-- [Mantenga seguros sus archivos y comunicaciones con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Mantenga seguros sus archivos y comunicaciones con Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Manténgase protegido y privado en el trabajo](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

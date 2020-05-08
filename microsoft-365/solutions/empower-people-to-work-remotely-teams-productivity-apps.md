@@ -1,5 +1,5 @@
 ---
-title: 4. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
+title: Paso 4. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003482"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160743"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. Implementación de servicios y aplicaciones de productividad para los trabajadores remotos
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Paso 4. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 
 Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. Necesitan reunirse y charlar con voz y texto, crear contenidos nuevos y compartir información y archivos, intercambiar correos electrónicos y administrar calendarios y tareas. Microsoft 365 proporciona servicios basados en la nube para todas estas funciones clave:
 
@@ -32,6 +32,8 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 - Para intercambiar correo electrónico y administrar calendarios, contactos y tareas, use Exchange Online y el cliente de Outlook.
 - Para almacenar y colaborar en archivos, use SharePoint y OneDrive. Se pueden usar con un explorador web o en Teams.
 - Para crear nuevo contenido o colaborar en el contenido existente, las Aplicaciones de Microsoft 365 son versiones de Word, PowerPoint, Excel y Outlook que están instaladas en el equipo local y reciben actualizaciones de características y seguridad continuas.
+
+![Usar aplicaciones de Teams, Outlook, SharePoint, OneDrive y Microsoft 365 para mantener la productividad](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Mantener a los usuarios conectados con Microsoft Teams
 

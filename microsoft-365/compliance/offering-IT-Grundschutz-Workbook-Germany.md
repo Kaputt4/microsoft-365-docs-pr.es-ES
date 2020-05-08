@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 63dcc6351b2ba0074bf71583577a34ddcc33ed94
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f8a0f9f6cda7462892dc9d7ebd808e263a9259
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602217"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065745"
 ---
 # <a name="it-grundschutz-compliance-workbook"></a>Libro de cumplimiento de la norma IT-Grundschutz alemana
 
@@ -68,8 +68,4 @@ Microsoft Cloud Alemania se basa físicamente en Alemania y cumple con el requis
 - [Estándares de BSI](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
 - [Azure Alemania y el libro de cumplimiento de la norma IT-Grundschutz alemana](https://aka.ms/grundschutzworkbook)
 - [Documento de información general de ISO/IEC 27001:2013 (Estándares de administración de sistemas de la información)](offering-iso-27001.md)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
