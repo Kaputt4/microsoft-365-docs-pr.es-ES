@@ -19,18 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707540"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141059"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Microsoft 365 es una solución completa que combina Office 365 y Windows 10 con la seguridad avanzada y la administración de dispositivos. Si ya tiene una suscripción y desea probar o comprar una suscripción de Microsoft 365, la mejor forma de hacerlo es a través del centro de administración. Las siguientes suscripciones de Microsoft 365 están disponibles en el centro de administración para que las pruebe o compre ahora:
   
-- Microsoft 365 empresa Premium
+- Microsoft 365 Empresa Premium
 
 - Office 365 Enterprise E3
 

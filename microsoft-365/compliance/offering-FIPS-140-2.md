@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071297"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066585"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publicación del estándar federal de procesamiento de información (FIPS) 140-2
 
 ## <a name="fips-140-2-standard-overview"></a>Información general sobre FIPS 140-2 estándar
 
-La publicación del estándar federal de procesamiento de información (FIPS) 140-2 es un estándar del gobierno de Estados Unidos que define los requisitos mínimos de seguridad para los módulos criptográficos de los productos de tecnología de la información, tal como se define en la sección 5131 de la información Ley de reforma de la administración tecnológica de 1996.
+La publicación del estándar federal de procesamiento de información (FIPS) 140-2 es un estándar del gobierno de Estados Unidos que define los requisitos mínimos de seguridad para los módulos criptográficos de los productos de tecnología de la información, tal como se define en la sección 5131 de la ley de administración de tecnologías de la información de 1996.
 
 El [programa de validación de módulos criptográficos](https://csrc.nist.gov/Projects/cryptographic-module-validation-program) (CMVP), un esfuerzo conjunto del Instituto Nacional de normas y tecnología de los Estados Unidos (NIST) y el centro canadiense para la seguridad del ciberespacio (CCCS), valida los módulos criptográficos *según los requisitos de seguridad para los módulos criptográficos* estándar (por ejemplo, FIPS 140-2) y los estándares de criptografía FIPS relacionados. Los requisitos de seguridad de FIPS 140-2 cubren 11 áreas relacionadas con el diseño y la implementación de un módulo criptográfico. El laboratorio de información de NIST opera un programa relacionado que valida los algoritmos criptográficos aprobados por FIPS en el módulo.
 
@@ -35,7 +35,7 @@ Microsoft mantiene un compromiso activo para cumplir los requisitos de 140-2, co
 
 Para obtener información técnica sobre los módulos criptográficos de Microsoft Windows, la Directiva de seguridad de cada módulo y el catálogo de los detalles del certificado CMVP, consulte el [contenido de Windows y Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 Mientras que la guía de implementación de CMVP FIPS 140-2 actual excluye una validación de FIPS 140-2 para un servicio en la nube; los proveedores de servicios de nube pueden elegir obtener y operar módulos criptográficos de FIPS 140 validados para los elementos informáticos que componen su servicio en la nube. Los servicios en línea de Microsoft que incluyen componentes, que se han validado por FIPS 140-2, entre otros:
 
@@ -86,8 +86,4 @@ Se trata de dos estándares de seguridad independientes con fines distintos, per
 - [Requisitos de seguridad de FIPS PUB 140-2 para módulos criptográficos](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programa de validación de módulo criptográfico NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server y FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

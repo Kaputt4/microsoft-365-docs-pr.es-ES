@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 55597c45f093a5b9a0b860c6987454f926025e28
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804794"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066198"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -90,12 +90,6 @@ Realice uno de los siguientes procedimientos para confirmar que la regla de corr
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
-  ```
-
-- Reemplace _ \<MailboxIdentity\> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar el valor de la propiedad **Enabled** de la regla de correo no deseado.
-
-  ```PowerShell
-  Get-InboxRule "Junk E-mail Rule" -Mailbox "<MailboxIdentity>" -IncludeHidden
   ```
 
 ## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>Usar Exchange Online PowerShell para configurar la colección de listas seguras de un buzón

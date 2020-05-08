@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 837dda3a506a2ba2a743b1aed89a5c004a4fb163
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 48b9e0135198f687430bf195c7dff8a405d15f7e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228556"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065875"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>El Catálogo de controles de cumplimiento de informática en la nube (C5)
 
@@ -67,8 +67,4 @@ La nube de Microsoft Alemania tiene su base física en Alemania, adhiriéndose a
 - Recomendaciones de seguridad para proveedores de informática en la nube ([inglés](https://www.bsi.bund.de/EN/Topics/CloudComputing/Secure_use_of_cloud_services/Secure_use_cloud_services_node.html)) ([alemán](https://www.bsi.bund.de/DE/Themen/DigitaleGesellschaft/CloudComputing/Sichere_Nutzung_Cloud/Sichere_Nutzung_Cloud_node.html))
 - [Informes de cumplimiento: C5- y SOC-Testate Azure Alemania](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=df100ae1-baf9-4785-8a6d-864c0bc5c308&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports)
 - [Libro de trabajo de cumplimiento de la tecnología de la información (IT) - Grundschutz](https://gallery.technet.microsoft.com/Azure-Germany-IT-fca4afd7) para Microsoft Azure Alemania
-- [Cumplimiento en el centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/E/F/6/EF619A4D-C17C-4279-8DC4-79C0620676AB/C5Germany-Compliance.pdf).
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

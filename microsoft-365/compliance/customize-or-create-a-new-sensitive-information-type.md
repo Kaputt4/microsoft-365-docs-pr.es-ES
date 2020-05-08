@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Aprenda a modificar o crear nuevos tipos de información sensible de Office 365 para el Reglamento general de protección de datos (GDPR).
-ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035742"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166071"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 
@@ -73,7 +73,7 @@ Para personalizar un tipo de información confidencial:
 
 7.  Cargue el nuevo tipo de información confidencial.
 
-8.  Vuelva a rastrear el contenido para identificar la información confidencial. Consulte [Solicitar de forma manual que se rastree y se actualice el índice de un sitio](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Vuelva a rastrear el contenido para identificar la información confidencial. Consulte [Solicitar de forma manual que se rastree y se actualice el índice de un sitio](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Ejemplo: modificar el tipo de información confidencial “número de tarjeta de débito de la UE”
 
@@ -147,11 +147,11 @@ Use estos recursos para formular y optimizar consultas con KQL:
 
 - [Ejecutar una búsqueda de contenido](content-search.md)
 
-La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 
 Las palabras clave en cada fila están conectadas mediante el operador O en la consulta de búsqueda que se crea. También puede usar una frase de palabras clave (entre paréntesis) en una fila.
 
-Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Ejemplo: usar la Búsqueda de contenido para identificar direcciones de correo electrónico
 

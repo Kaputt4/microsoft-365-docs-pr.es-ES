@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141552"
+ms.locfileid: "44159412"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Introducción al uso de investigación y respuesta automatizadas (AIR) en Office 365
 
@@ -99,7 +99,7 @@ Los permisos se conceden a través de determinadas funciones, como las que se de
 - El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol de búsqueda y depuración)
 - Usuarios finales
 
-Además, las directivas de [ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) deben definirse y aplicarse para que la protección esté en su ubicación.
+Además, [las directivas de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) deben definirse y aplicarse para que la protección esté en su ubicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

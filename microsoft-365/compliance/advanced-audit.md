@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632285"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141048"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -93,7 +93,7 @@ Para beneficiarse de las funciones de auditoría avanzada de nivel de usuario, e
 
 **¿Por qué no veo la auditoría avanzada en mi organización, incluso si tenemos una suscripción a E5 y los usuarios tienen asignadas las licencias E5?**
 
-Es posible que las características de auditoría avanzada (como la capacidad de crear directivas de retención de registro de auditoría y el registro de registros de auditoría MailItemsAccessed) no estén disponibles en su organización, incluso con la licencia correcta. Si le sucede esto, se debe a que el paquete de auditoría avanzada aún no se ha implementado en la organización. Este es un problema de reposición de la licencia temporal que debería resolverse en las organizaciones afectadas en las próximas semanas. Para mitigar este problema, lleve a cabo los pasos siguientes para cada usuario de E5:
+Es posible que las características de auditoría avanzada (como la capacidad de crear directivas de retención de registro de auditoría y el registro de registros de auditoría MailItemsAccessed) no estén disponibles en su organización, incluso con la licencia correcta. Si le sucede esto, se debe a que el paquete de auditoría avanzada aún no se ha implementado en la organización. Este es un problema de reposición de la licencia temporal que debería resolverse pronto en las organizaciones afectadas. Para mitigar este problema, lleve a cabo los pasos siguientes para cada usuario de E5:
 
 1. En el Centro de administración de Microsoft 365, vaya a **usuarios > usuarios activos** y seleccione un usuario.
 
@@ -106,6 +106,8 @@ Es posible que las características de auditoría avanzada (como la capacidad de
    b. Si está activada la casilla de **auditoría avanzada de Microsoft 365**, desactívela y haga clic en **guardar cambios.** Vea el paso 4.
 
 4. Si ha desactivado la casilla de verificación del paso 3, espere 60 minutos y repita el paso 3a para habilitar la aplicación de auditoría avanzada de Microsoft 365.
+
+En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **¿Qué ocurre si mi organización tenía la versión preliminar privada para la retención de registros de auditoría de un año?**
 

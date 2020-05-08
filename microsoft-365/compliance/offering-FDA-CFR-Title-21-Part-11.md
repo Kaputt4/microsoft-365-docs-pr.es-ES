@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071287"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066383"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Título de administración de alimentos y medicamentos CFR 21 parte 11
 
@@ -39,13 +39,13 @@ CFR título 21 parte 11 establece los requisitos para garantizar que los registr
 
 Los servicios en la nube de Microsoft Enterprise experimentan auditorías de SOC 1 tipo 2 y de SOC 2 de terceros independientes y están certificados de acuerdo con las normas ISO/IEC 27001 e ISO/IEC 27018.
 
-Aunque estas auditorías y certificaciones regulares no se centran específicamente en el cumplimiento de las regulaciones de la FDA, su propósito y objetivos son similares a los de CFR 21 parte 11 del título, y sirven para ayudar a garantizar la confidencialidad, integridad y disponibilidad de datos almacenados en los servicios en la nube de Microsoft. Nuestro enfoque de calificación también se basa en las prácticas recomendadas del sector, incluida la International Society for Pharmaceuticals Engineering (ISPE) de las guías de prácticas recomendadas y el esquema de cooperación para la inspección farmacéutica (PIC/S) prácticas adecuadas para sistemas informáticos en entornos GxP regulados.
+Aunque estas auditorías y certificaciones regulares no se centran específicamente en el cumplimiento de las regulaciones de la FDA, su propósito y objetivos son similares a los de CFR 21 parte 11 del título, y sirven para ayudar a garantizar la confidencialidad, integridad y disponibilidad de los datos almacenados en los servicios en la nube de Microsoft. Nuestro enfoque de calificación también se basa en las prácticas recomendadas del sector, incluida la International Society for Pharmaceuticals Engineering (ISPE) de las guías de prácticas recomendadas y el esquema de cooperación para la inspección farmacéutica (PIC/S) prácticas adecuadas para sistemas informáticos en entornos GxP regulados.
 
-Los clientes pueden solicitar el acceso a los informes de cumplimiento, en función de los términos y condiciones del contrato de no divulgación, a través de su representante de cuenta de Microsoft o a través del [portal de confianza de servicios](https://aka.ms/stphelp). Además, las directrices de calificación para Microsoft Azure y Microsoft Office 365 proporcionan una explicación detallada del modo en que los controles de auditoría de Microsoft se corresponden con los requisitos de la parte 11 del título 21 de CFR, guía para implementar una estrategia de calificación de FDA y Descripción de las áreas de responsabilidad compartida.
+Los clientes pueden solicitar el acceso a los informes de cumplimiento, en función de los términos y condiciones del contrato de no divulgación, a través de su representante de cuenta de Microsoft o a través del [portal de confianza de servicios](https://aka.ms/stphelp). Además, las instrucciones de calificación para Microsoft Azure y Microsoft Office 365 proporcionan una explicación detallada del modo en que los controles de auditoría de Microsoft se corresponden con los requisitos de la parte 11 del título 21 de CFR, guía para implementar una estrategia de cualificación de la FDA y una descripción de las áreas de responsabilidad compartida.
 
 Obtenga información sobre cómo acelerar la implementación del título 21 del FDA CFR: [descargar la guía de calificación de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 Aunque no existe ninguna certificación para cumplir con la parte 11 del título de CFR, los siguientes servicios en la nube de Microsoft Enterprise se han sometido a auditorías independientes de terceros, lo que puede ayudar a los clientes en sus esfuerzos de cumplimiento. Entre estos servicios se incluyen:
 
@@ -94,7 +94,3 @@ Microsoft garantiza que los servicios en la nube de su empresa cumplan los térm
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud para la Administración Pública](https://aka.ms/govt-cloud)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).

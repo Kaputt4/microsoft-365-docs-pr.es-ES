@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: f79846de5d4fd8661205e549db3457a7696e9770
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036000"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160008"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -134,7 +134,7 @@ Para invitar a invitados a un grupo
 3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
 4. Haga clic en **Cerrar**.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

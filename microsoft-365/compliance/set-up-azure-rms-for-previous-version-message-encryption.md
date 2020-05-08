@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Office 365 cifrado de mensajes depende de Microsoft Azure Rights Management (anteriormente conocido como Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943269"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165921"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurar Azure Rights Management para la versión anterior del cifrado de mensajes
 
@@ -113,10 +113,10 @@ Un TPD es un archivo XML que contiene información sobre la configuración de la
 
 Puede seguir usando las reglas de flujo de correo de cifrado de mensajes de Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar las nuevas funciones de OME. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y qué significa para su organización, vea [migrar de AD RMS a Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms).
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="importTPDs"> </a>
 
-Una vez que haya completado la instalación de Azure Rights Management, si desea habilitar las nuevas capacidades de OME, vea [set up New Office 365 Message Encryption Capabilities Built on of Azure Information Protection.](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)
+Una vez que haya completado la instalación de Azure Rights Management, si desea habilitar las nuevas capacidades de OME, vea [set up New Office 365 Message Encryption Capabilities Built on of Azure Information Protection.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
   
 Una vez que haya configurado la organización para usar las nuevas capacidades de OME, estará listo para [definir reglas de flujo de correo para proteger los mensajes de correo electrónico con nuevas funciones de OME](define-mail-flow-rules-to-encrypt-email.md).
   

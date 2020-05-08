@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065825"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162682"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -91,17 +91,19 @@ La administración de riesgos de Insider admite la importación de datos de usua
 Consulte el tema sobre [Cómo configurar un conector para importar datos de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre cómo configurar el conector de Microsoft 365 para la organización. Una vez que haya configurado el conector de recursos humanos, vuelva a estos pasos de configuración.
 
 >[!IMPORTANT]
->Si configura un p'licy mediante la plantilla de *robo de datos de emplo'ee* , tendrá que configurar el conector de recursos humanos para que use las características de detección de señal completa de la plantilla de directiva. Si configura más de un conector de recursos humanos para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de recursos humanos.
+>Si configura una Directiva mediante la plantilla de *robo de datos de empleados* , tendrá que configurar el conector de recursos humanos para que use las características de detección de señal completa de la plantilla de directiva. Si configura más de un conector de recursos humanos para su organización, la administración de riesgos de Insider extrae automáticamente los indicadores de todos los conectores de recursos humanos.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurar directivas de prevención de pérdida de datos (DLP)
 
-La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva. Esta directiva ayuda a impulsar los indicadores de alerta de información confidencial es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización.
+La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva.
 
-Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a esta configuración "pasos de la ración". "" "" "" "" "" ""
+Esta directiva ayuda a impulsar los indicadores de administración de riesgos de Insider para alertas de DLP de gravedad alta para información confidencial y es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización. Si configura más de una directiva de DLP para su organización, deberá asignar una directiva de administración de riesgos de Insider por directiva de DLP.
+
+Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a estos pasos de configuración.
 
 >[!IMPORTANT]
->Si configura una Directiva mediante la plantilla de *fugas de datos* , tendrá que configurar al menos una directiva DLP para usar las características de detección de señal completa de la plantilla de directiva. Si configura más de una directiva de DLP para su organización, deberá asignar una directiva de administración de riesgos de Insider por directiva de DLP.
-""""""""
+>Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con esta plantilla está configurada para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Paso 4 (obligatorio): configurar las opciones de riesgo de Insider
 
 La configuración de los [riesgos de Insider](insider-risk-management-policies.md#policy-settings) se aplica a todas las directivas de administración de riesgos de Insider, independientemente de la plantilla que elija al crear una directiva. La configuración se configura con el control de **configuración de riesgos de Insider** ubicado en la parte superior de todas las pestañas de administración de riesgos de Insider. Esta configuración controla la privacidad, los indicadores, las ventanas de supervisión y las detecciones inteligentes.

@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para su inquilino con la aplicación de plantilla de análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355011"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140688"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 El análisis de uso de Microsoft 365 también está disponible para Microsoft 365 US Government Community.
   
@@ -56,7 +63,7 @@ Para obtener más información, vea acerca de los [roles de administrador](../ad
     
 2. En la página **uso** , busque la tarjeta de **análisis de uso de Microsoft 365** y **Seleccione introducción**.
     
-3. En el panel de informes que se abre, establezca hacer que los **datos estén disponibles para el análisis de uso de Microsoft 365 para Power BI** **** \> en el **almacenamiento**. 
+3. En el panel de informes que se abre, establezca hacer que los **datos estén disponibles para el análisis de uso de Microsoft 365 para Power BI** **On** \> en el **almacenamiento**. 
   
 Esto inicia el proceso de recopilación de datos y finalizará en 2 a 48 horas, según el tamaño del espacio empresarial. El botón **ir a Power BI** estará habilitado (no estará en gris) cuando se complete la recopilación de datos. 
     

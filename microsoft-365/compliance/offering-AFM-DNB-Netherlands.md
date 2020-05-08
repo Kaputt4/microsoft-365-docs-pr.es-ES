@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4efa625c4026ce87d0895d03b4a9993bb4bca40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 09d6514a3b18535820f31b50736591314182d140
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602707"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066657"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>Autoridad neerlandesa para los mercados financieros y el Banco Central de países bajos
 
 ## <a name="about-the-afm-and-dnb"></a>Acerca del AFM y DNB
 
-Los principales responsables financieros de los Países Bajos son la [Autoridad holandesa para los mercados financieros](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) y el [Banco Central de los Países Bajos](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). La AFM, cuyo rol es comparable al de la SEC en los Estados Unidos, es «la autoridad supervisora independiente para los mercados de ahorros, préstamos, inversiones y seguros.» El DNB, dentro del Sistema europeo de bancos centrales, determina y aplica una política monetaria y ejerce la supervisión prudencial de las organizaciones financieras de los Países Bajos.  
+Los principales responsables financieros de los Países Bajos son la [Autoridad holandesa para los mercados financieros](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) y el [Banco Central de los Países Bajos](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). La AFM, cuyo rol es comparable al de la SEC en los Estados Unidos, es la autoridad supervisora independiente para los mercados de ahorros, préstamos, inversiones y seguros.” El DNB, dentro del Sistema europeo de bancos centrales, determina y aplica una política monetaria y ejerce la supervisión prudencial de las organizaciones financieras de los Países Bajos.  
   
 Ambas instituciones actúan de acuerdo con la Autoridad Bancaria Europea (ABE), «una autoridad independiente que trabaja para garantizar una regulación y supervisión prudencial eficaz y coherente en todo el sector bancario europeo». Para este fin, la EBA ha descrito un enfoque global para el uso de la informática en la nube por parte de instituciones financieras en la UE: [Recomendaciones para subcontratar a proveedores de servicios en la nube](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   
@@ -81,7 +81,3 @@ Sí. Las disposiciones y modalidades que deben incluirse en los contratos de la 
 - [Cumplimiento de los servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://aka.ms/FFIEC-CSDT)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).
