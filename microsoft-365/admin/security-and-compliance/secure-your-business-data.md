@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140830"
+ms.locfileid: "44155438"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las diez formas principales de proteger los planes de Microsoft 365 para empresas
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Además de esta guía, Microsoft recomienda que los usuarios realicen las accion
     
 Microsoft también recomienda que los usuarios protejan sus cuentas de correo electrónico personales llevando a cabo las acciones recomendadas en los siguientes artículos:
   
-- [Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Proteger la cuenta de gmail con verificación en dos pasos](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -167,7 +167,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
 > [!TIP]
 > También puede Agregar los archivos que desee bloquear a la lista antimalware en el [paso 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Para más información, consulte lo siguiente:
+Para más información, vea:
   
 - [Cómo tratar con ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -229,7 +229,7 @@ Si el destinatario tiene Outlook 2013 o Outlook 2016 y una cuenta de correo elec
   
 Si el destinatario usa otro cliente de correo electrónico o una cuenta de correo electrónico, como Gmail o Yahoo, verán un vínculo que les permite iniciar sesión para leer el mensaje de correo electrónico o solicitar un código de acceso de un solo uso para ver el mensaje en un explorador Web. Si los usuarios no reciben el correo electrónico, pídales que comprueben el correo no deseado o la carpeta de correo no deseado. 
   
-Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx).
+Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. proteger el correo electrónico de los ataques de suplantación de identidad
 <a name="phishing"> </a>

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Microsoft 365 aplicando una directiva de retención o retención al buzón y, a continuación, eliminando la cuenta de usuario correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048019"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166091"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -63,7 +63,7 @@ Para conocer los procedimientos detallados para poner un buzón en retención po
   
 ### <a name="step-2-delete-the-mailbox"></a>Paso 2: Eliminar el buzón.
 
-Una vez que el buzón se coloca en retención o se le aplica una directiva de retención, el siguiente paso consiste en eliminar el buzón. La mejor forma de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el centro de administración de Microsoft 365. Para obtener información sobre cómo eliminar cuentas de usuario, vea [eliminar un usuario de su organización](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Una vez que el buzón se coloca en retención o se le aplica una directiva de retención, el siguiente paso consiste en eliminar el buzón. La mejor forma de eliminar un buzón es eliminar la cuenta de usuario correspondiente en el centro de administración de Microsoft 365. Para obtener información sobre cómo eliminar cuentas de usuario, vea [eliminar un usuario de su organización](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
   
 > [!NOTE]
 > También puede eliminar el buzón mediante el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [eliminar o restaurar buzones de usuario en Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 

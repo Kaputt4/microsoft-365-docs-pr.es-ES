@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 797b32dfa0cd286cf7eb9b6e0aa128d332f5c19a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 70c82232dff10bb13c5079de9590cde2508db14c
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066209"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159937"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -44,7 +44,7 @@ Las plantillas de Directiva son opciones de directiva predefinidas que puede usa
 |**Área**|**Plantilla de Directiva**|**Detalles**|
 |:-----|:-----|:-----|
 | **Idioma ofensivo y Antiacoso** | Supervisar las comunicaciones para un lenguaje ofensivo | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 100% <br> -Condiciones: clasificador de idioma ofensivo |
-| **Información confidencial** | Supervisión de las comunicaciones para información confidencial | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 10% <br> -Condiciones: información confidencial, tipos y patrones de contenido preparados, opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
+| **Información confidencial** | Supervisión de las comunicaciones para información confidencial | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente, interno <br> -Porcentaje de revisión: 10% <br> -Condiciones: información confidencial, patrones de contenido prejuntos y tipos, opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
 | **Cumplimiento normativo** | Supervisión de las comunicaciones para obtener información relacionada con el cumplimiento de normativas financieras | -Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype empresarial <br> -Direction: entrante, saliente <br> -Porcentaje de revisión: 10% <br> -Condiciones: opción de diccionario personalizado, datos adjuntos mayores de 1 MB |
 
 ## <a name="supervised-users"></a>Usuarios supervisados
@@ -62,7 +62,7 @@ Al crear una directiva de cumplimiento de la comunicación, debe determinar qui�
 
 Para simplificar la configuración, cree grupos para los usuarios que necesitan sus comunicaciones revisadas y grupos para los usuarios que revisen dichas comunicaciones. Si está usando grupos, es posible que necesite varios. Por ejemplo, si desea examinar las comunicaciones entre dos grupos de personas distintos, o si desea especificar un grupo que no está supervisado.
 
-Al seleccionar un grupo de 365 de Microsoft para los usuarios supervisados, la Directiva examina el contenido del buzón compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva examina los buzones de correo de los usuarios individuales.
+Al seleccionar un grupo de 365 de Microsoft para los usuarios supervisados, la Directiva examina el contenido del buzón compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva examina los buzones de correo de los usuarios individuales. La adición de grupos y listas de distribución a las directivas de cumplimiento de comunicaciones forma parte del conjunto de reglas y condiciones generales, por lo que el número máximo de grupos y listas de distribución que admite una directiva varía en función del número de condiciones que se agreguen también a la Directiva. Cada Directiva debe admitir aproximadamente 20 grupos o listas de distribución, según el número de condiciones adicionales presentes en la Directiva.
 
 ## <a name="supported-communication-types"></a>Tipos de comunicación admitidos
 
@@ -278,7 +278,7 @@ Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para 
 
 7. Seleccione **cerrar** para salir de la página Detalles de la Directiva de alerta.
 
-## <a name="audit"></a>Las
+## <a name="audit"></a>Auditoría
 
 En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esta información puede ser un resumen de todas las actividades asociadas con una directiva de organización definida o cada vez que cambia una directiva de cumplimiento de la comunicación. Las directivas de cumplimiento de comunicaciones tienen pistas de auditoría integradas para una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción de creación, edición y eliminación son capturados por las directivas de comunicación para proporcionar una prueba de los procedimientos de supervisión.
 

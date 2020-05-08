@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Obtenga información sobre cómo importar contactos, calendarios, correos electrónicos de gmail u otro proveedor de correo electrónico a Microsoft 365. '
-ms.openlocfilehash: ff81eed73a4bf5d7e58316e61212fd799de6d11c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627587"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165160"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar el correo electrónico y los contactos a Microsoft 365
 
@@ -87,6 +87,6 @@ Agregue una cuenta, como su cuenta privada de Gmail, a Outlook.
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar de forma masiva correo electrónico, contactos y calendarios a Microsoft 365
 
-Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Leer [formas de migrar varias cuentas de correo electrónico a Microsoft 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842) para decidir qué método es el adecuado para usted. 
+Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Leer [formas de migrar varias cuentas de correo electrónico a Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) para decidir qué método es el adecuado para usted. 
   
 

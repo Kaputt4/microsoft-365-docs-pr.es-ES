@@ -13,14 +13,21 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 521a535115cd3a082348485f4d03dade27c71d92
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045969"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141193"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para la organización
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Puede administrar las licencias y la facturación de aplicaciones de terceros en el centro de administración de Microsoft 365 con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripciones mejorada, un mejor acceso a la información de facturación y una mayor flexibilidad para la administración de facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como un servicio que los clientes compren directamente o de un proveedor de terceros.
 

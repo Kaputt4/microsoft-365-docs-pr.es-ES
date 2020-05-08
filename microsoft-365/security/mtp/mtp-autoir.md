@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: f7ae1a285e22ad18d292d37aab0bba0b4a441461
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 6ac6d74b027cc533f689c1d67c7fce246c73984f
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857456"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166166"
 ---
 # <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Capacidades de investigación y respuesta automatizadas (AIR) en Microsoft Threat Protection
 
@@ -54,7 +54,7 @@ Una alerta desencadenada crea un incidente, que puede iniciar una investigación
 |Dispositivos (también denominados puntos de conexión)     |[ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenido de correo electrónico (archivos y mensajes de los buzones)     |[ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-En cada investigación se generan veredictos (*Malintencionado*, *Sospechoso* o *Limpio*) para cada elemento que se investiga. Según el tipo de amenaza y el veredicto resultante, las acciones de corrección se producen automáticamente o al aprobarlas por parte del equipo de operaciones de seguridad de la organización. Las acciones pendientes y completadas se muestran en el [Centro de actividades](mtp-action-center.md).
+Cada investigación genera veredictos (*malintencionadas*, *sospechosas*o *no se han encontrado amenazas*) para cada fragmento de pruebas investigado. Según el tipo de amenaza y el veredicto resultante, las acciones de corrección se producen automáticamente o al aprobarlas por parte del equipo de operaciones de seguridad de la organización. Las acciones pendientes y completadas se muestran en el [Centro de actividades](mtp-action-center.md).
 
 > [!TIP]
 > Si cree que algo ha perdido o detectado erróneamente las características de respuesta e investigación automatizada en la protección contra amenazas de Microsoft, háganoslo saber. Consulte [Cómo informar de falsos positivos/negativos en capacidades de investigación y respuesta automatizadas (Air) en la protección contra amenazas de Microsoft](mtp-autoir-report-false-positives-negatives.md).

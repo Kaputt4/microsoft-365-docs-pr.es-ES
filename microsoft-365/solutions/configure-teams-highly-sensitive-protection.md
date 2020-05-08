@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: f044dd672d52db4100fcb4cfec2519a8605c7be8
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: f60c46c3b596c131bb04a49f0293c6dd8bbbea2b
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003501"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166178"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -40,7 +41,7 @@ El nivel de confidencialidad alto ofrece las siguientes protecciones adicionales
 
 Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido de invitados para equipos que contienen datos con un nivel de confidencialidad alto. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
 
-Para más información sobre el uso compartido de invitados de forma segura, vea los recursos siguientes:
+Para más información sobre el uso compartido con invitados de forma segura, vea los recursos siguientes:
 
 - [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
 - [Crear un entorno seguro de uso compartido para invitados](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
@@ -51,7 +52,7 @@ Para permitir o bloquear el uso compartido de invitados, utilizamos una combinac
 
 Para el nivel de protección de confidencialidad alta, usaremos una etiqueta de confidencialidad para clasificar al equipo. Esta etiqueta también se puede usar para clasificar y cifrar archivos individuales en este o en otros equipos, o en otras ubicaciones de archivo como SharePoint o OneDrive. 
 
-Como primer paso, debe habilitar las etiquetas de confidencialidad para los equipos. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint (versión preliminar pública)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) para obtener más información.
+Como primer paso, debe habilitar las etiquetas de confidencialidad para los equipos. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) para más información.
 
 Si ya tiene las etiquetas de confidencialidad implementadas en la organización, tenga en cuenta que se adapta a la estrategia general de etiquetas. Si es necesario, puede cambiar el nombre o la configuración para satisfacer las necesidades de su organización.
 
@@ -70,14 +71,14 @@ Crear una etiqueta de confidencialidad
 10.  Haga clic en **Guardar**y después en **Siguiente**.
 11. En la página **Marcado de contenido**, active la marcación del contenido si quiere agregar automáticamente un encabezado, un pie de página o una marca de agua a los archivos clasificados con esta etiqueta.
 12. En la página **Configuración de sitio y grupo**, establezca **Configuración de sitio y grupo** como **Activado**.
-13. En el menú desplegable ** Privacidad de los sitios de equipo conectados a grupos de Office 365 **, elija ** Privado: solo los miembros pueden acceder al sitio **.
+13. En el menú desplegable **Privacidad de los sitios de equipo conectados a grupos de Office 365**, elija **Privado: solo los miembros pueden acceder al sitio**.
 14. Si desea permitir el acceso de invitado, seleccione la casilla de verificación **Permitir que los propietarios del grupo de Office 365 agreguen personas ajenas a la organización al grupo**. 
 15. En **Equipos no administrados**, elija **Bloquear el acceso**.
 16. Haga clic en **Siguiente**.
 17. En la página **Etiquetado automático para las aplicaciones de Office**, haga clic en **Siguiente**.
-18. Haga clic en **Enviar**y después en **Listo**.
+18. Haga clic en **Enviar** y después en **Listo**.
 
-Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa Directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Una vez que haya creado la etiqueta, debe publicarla para los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Crear un equipo
 
@@ -90,18 +91,18 @@ Para crear un equipo para información con un nivel de confidencialidad alto
 4. En la lista **Confidencialidad**, elija la etiqueta **Confidencialidad alta** que acaba de crear.
 5. En **Privacidad**, haga clic en **Privado**.
 6. Escriba un nombre para el equipo y haga clic en **Crear**.
-7. Agregue usuarios al equipo y, después, haga clic en **Cerrar**.
+7. Agregue usuarios al equipo y haga clic en **Cerrar**.
 
 ## <a name="private-channel-settings"></a>Configuración de canal privado
 
 En este nivel, restringimos la creación de canales privados a los propietarios del equipo.
 
 Para restringir la creación de un canal privado
-1. En el equipo, haga clic en **Más opciones**y después en **Administrar equipo**.
+1. En el equipo, haga clic en **Más opciones** y después en **Administrar equipo**.
 2. En la pestaña **Configuración**, expanda **Permisos de los miembros**.
 3. Desactive la casilla de verificación **Permitir a los miembros crear canales privados**.
 
-También puede usar [Directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
+También puede usar [directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
 
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 
@@ -112,12 +113,12 @@ Cada vez que cree un nuevo equipo con la etiqueta de confidencialidad alta, debe
 
 ### <a name="site-guest-sharing-settings"></a>Configuración de uso compartido de invitado del sitio
 
-La configuración de uso compartido de invitado que eligió al crear la etiqueta (que solo afecta a la pertenencia al equipo) debe coincidir con la configuración de uso compartido de invitados para el sitio de SharePoint asociado de la siguiente manera:
+La configuración de uso compartido de invitado que eligió al crear la etiqueta (que solo afecta a la pertenencia al equipo) debe coincidir con la configuración de uso compartido de invitado para el sitio de SharePoint asociado de la siguiente manera:
 
 |Configuración de etiqueta|Configuración del sitio de SharePoint|
 |:------------|:----------------------|
-|**Permita que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** seleccionado|**Invitados nuevos y existentes** (predeterminado para equipos nuevos)|
-|**Permita que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** no seleccionado|**Solo personas de la organización**|
+|**Permitir que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** seleccionado|**Invitados nuevos y existentes** (predeterminado para equipos nuevos)|
+|**Permitir que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** no seleccionado|**Solo personas de la organización**|
 
 Para actualizar la configuración del sitio
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
@@ -130,12 +131,12 @@ Para actualizar la configuración del sitio
 
 Si quiere realizar scripts como parte del proceso de creación de su equipo, puede usar [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) con los parámetros siguientes:
 
-- `-SharingCapability Disabled` para desactivar el uso compartido de invitados (está activado de forma predeterminada)
+- `-SharingCapability Disabled` para desactivar el uso compartido de invitado (activado de forma predeterminada)
 - `-DefaultSharingLinkType Internal` para cambiar el vínculo para compartir predeterminado a *Usuarios específicos*
 
 #### <a name="private-channels"></a>Canales privados
 
-Si agrega canales privados al equipo, cada canal privado crea un sitio de SharePoint nuevo con la configuración de uso compartido predeterminada. Estos sitios no están visibles en el Centro de administración de SharePoint, por lo que debe usar el cmdlet Set-SPOSite de PowerShell para actualizar la configuración de uso compartido de invitados.
+Si agrega canales privados al equipo, cada canal privado crea un sitio de SharePoint nuevo con la configuración de uso compartido predeterminada. Estos sitios no están visibles en el Centro de administración de SharePoint, por lo que debe usar el cmdlet Set-SPOSite de PowerShell para actualizar la configuración de uso compartido de invitado.
 
 ### <a name="site-sharing-settings"></a>Configuración de uso compartido del sitio 
 

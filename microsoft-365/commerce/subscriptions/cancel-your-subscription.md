@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba de Microsoft 365 para empresas o pago.
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046209"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141174"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 *Elegibilidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar la suscripción de prueba de Microsoft 365 para empresas o pago en línea en el centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, [llame al soporte técnico para cancelar la suscripción](../../admin/contact-support-for-business-products.md).
 

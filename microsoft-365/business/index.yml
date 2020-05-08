@@ -11,27 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 05b835c8c7ceb6a472710a9878f356de63c89e5f
+  ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002185"
+  ms.lasthandoff: 05/08/2020
+  ms.locfileid: "44165830"
 productDirectory:
   title: Trabajo remoto seguro con Microsoft 365 Business Premium
   items:
+  - title: Read
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Las mejores formas de habilitar el trabajo remoto seguro con Microsoft 365 empresa Premium.
+    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: Obtenga el kit de asociados gratuito
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Guía práctica y vaya a recursos de mercado para partners para proteger el trabajo remoto.
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: Novedades
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 llega a Microsoft 365 empresa Premium.
     url: https://aka.ms/aadp1smbblog
-  - title: Vea el seminario Web para asociados
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: Proteja a sus clientes de SMB mientras hacen frente a COVID-19.
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-  - title: Leer
-    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Las mejores formas de habilitar el trabajo remoto seguro con Microsoft 365 empresa Premium.
-    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
   - title: ¿Qué es Microsoft 365 Empresa Premium?
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: Presentación (enfocada en asociados)
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: Aspectos básicos técnicos
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
@@ -118,7 +118,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
       itemType: overview
       text: Prevención de pérdida de datos
-    - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+    - url: https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
       itemType: how-to-guide
       text: Enviar correo electrónico cifrado
     - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving

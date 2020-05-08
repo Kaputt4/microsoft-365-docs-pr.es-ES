@@ -12,15 +12,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- M365solutions
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo con aislamiento de seguridad para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: 2da51890001a2890b2d65bc6b71537b51c335eb4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1083c9d3db3be9ca528b2eee40f072aa17c7431e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003489"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159460"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto principal de la compañía contoso
 
@@ -89,7 +91,7 @@ En un par de instancias, Project 2X los miembros del equipo descargaron archivos
 
 Debido al entorno de colaboración de Microsoft Teams y las características de seguridad de Microsoft 365, los detalles del proyecto 2X se mantuvieron en secreto mientras dure el proyecto. Contoso anunció sus planes y se encuentra en el proceso de implementar los nuevos productos y servicios a la alegría de sus clientes e inversionistas y la Chagrin de sus competidores.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Implemente un equipo con aislamiento de seguridad](secure-teams-security-isolation.md) en su organización.
 

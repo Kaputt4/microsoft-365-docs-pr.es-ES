@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602897"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066667"
 ---
 # <a name="title-23-nycrr-part-500"></a>Título 23 NYCRR parte 500
 
@@ -76,7 +76,3 @@ Consulte al Departamento de Servicios Financieros de Nueva York, [el cual superv
 - [Programa de cumplimiento para los servicios financieros de Microsoft Cloud](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Cumplimiento de los servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf).

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Aprenda a utilizar las etiquetas de Office como parte de su plan de protección de la Normativa general de protección de datos (GDPR).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034364"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165263"
 ---
 # <a name="apply-labels-to-personal-data"></a>Aplicación de etiquetas a datos personales
 
@@ -182,7 +182,7 @@ Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimient
 <tr class="odd">
 <td align="left"><p>Conceda permisos a los miembros de su equipo de cumplimiento.</p></td>
 <td align="left"><p>Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el centro de seguridad y/o el centro de cumplimiento. Vaya a los permisos en el centro de seguridad o el centro de cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</p>
-<p>Vea <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</p></td>
+<p>Vea <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Crear etiquetas de retención.</p></td>

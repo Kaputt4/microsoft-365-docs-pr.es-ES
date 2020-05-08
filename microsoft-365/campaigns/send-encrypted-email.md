@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080467"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165690"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -48,7 +48,7 @@ Antes de enviar mensajes de correo electrónico con información confidencial o 
 
 ## <a name="set-it-up"></a>Configúrelo
 
-Si desea cifrar un mensaje que no cumple una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado distintas antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016 o Outlook 2016 para Mac, seleccione **opciones > permisos**y, a continuación, seleccione la opción de protección que necesite. También puede enviar un mensaje cifrado seleccionando el botón **proteger** en Outlook en la Web. Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Si desea cifrar un mensaje que no cumple una regla predefinida o el administrador no ha configurado ninguna regla, puede aplicar una variedad de reglas de cifrado distintas antes de enviar el mensaje. Para enviar un mensaje cifrado desde Outlook 2013 o 2016 o Outlook 2016 para Mac, seleccione **opciones > permisos**y, a continuación, seleccione la opción de protección que necesite. También puede enviar un mensaje cifrado seleccionando el botón **proteger** en Outlook en la Web. Para obtener más información, vea [enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## <a name="admin-settings"></a>Configuración de administración
 

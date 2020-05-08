@@ -20,14 +20,21 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración de 21Vianet Fapiao después de realizar un pago en Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: fece5448ecd72ad3d0aceabde76d6519bafa917d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 55629654599dd20b813708a148e3ce49f6b6cf88
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360961"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140818"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar una Fapiao para Office 365 operado por 21Vianet
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Puede enviar su solicitud de Fapiao al sistema de administración de 21Vianet Fapiao tres días después de haber pagado. Después de enviar su solicitud de Fapiao, se procesará en dos días.
   
@@ -39,7 +46,7 @@ Hay dos formas de aplicar una Fapiao:
   
 1. Después de realizar un pago en el sitio web de Office 365 operado por 21Vianet, recibirá un correo electrónico de confirmación de pedido que contiene el número de pedido y un vínculo al sistema de administración de Fapiao. Puede usar el vínculo del correo electrónico para crear una cuenta en el <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">sistema de administración de información de 21Vianet Fapiao</a>.
     
-    O bien:
+    O bien
     
 2. Puede solicitar un Fapiao en el centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Administración</a>.
     

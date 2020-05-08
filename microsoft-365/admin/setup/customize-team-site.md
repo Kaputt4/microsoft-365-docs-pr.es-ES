@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: En este artículo, aprenderá a personalizar, organizar y administrar el sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033791"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165112"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 
@@ -51,7 +51,7 @@ Mejorar la navegación en el sitio con [personalizar la navegación en el sitio 
   
 Para mejorar la detectabilidad de un sitio, agréguelo como un vínculo destacado en la página de inicio de SharePoint. Para obtener información, vea [Agregar vínculos destacados a la página de inicio de SharePoint](/sharepoint/change-links-list-on-sharepoint-home-page).
   
-Para agregar una imagen a la página de inicio de un sitio de grupo, vea [Agregar una imagen o un archivo de imagen a una página de SharePoint](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online).
+Para agregar una imagen a la página de inicio de un sitio de grupo, vea [Agregar una imagen o un archivo de imagen a una página de SharePoint](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16).
   
 Para agregar páginas a su sitio, vea [Agregar una página a un sitio](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx).
   
@@ -65,7 +65,7 @@ Para empezar a cargar, vea [cargar una carpeta o archivos en una biblioteca de d
    
 Obtenga información sobre cómo editar, eliminar, desproteger archivos y mucho más. Para obtener más información, vea [trabajar con archivos en una biblioteca de documentos](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx).
   
-Para obtener información sobre cómo crear vistas de bibliotecas para datos específicos de una superficie, vea [crear una vista personalizada de una biblioteca de documentos](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx).
+Para obtener información sobre cómo crear vistas de bibliotecas para datos específicos de una superficie, vea [crear una vista personalizada de una biblioteca de documentos](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7).
   
 ## <a name="work-with-lists-to-organize-data"></a>Trabajar con listas para organizar los datos
 
@@ -73,11 +73,11 @@ SharePoint incluye muchas plantillas para listas que puede Agregar a su sitio, c
   
 Obtenga información sobre cómo [crear una lista en SharePoint](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online).
   
-Para obtener información sobre cómo expandir las listas con más columnas, vea [crear una columna en una lista o biblioteca de SharePoint](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online).
+Para obtener información sobre cómo expandir las listas con más columnas, vea [crear una columna en una lista o biblioteca de SharePoint](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2).
   
 Si va a almacenar una gran cantidad de datos en una lista, vea [administrar listas y bibliotecas de gran tamaño en SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendario compartido](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Ver un vídeo sobre cómo agregar calendarios a su sitio, vea [crear un calendario compartido](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798).
 
 ## <a name="organize-sites-into-hubs"></a>Organizar sitios en concentradores
 
@@ -87,7 +87,7 @@ Los sitios de concentradores le permiten agregar y asociar sitios. Para obtener 
   
 Listo para crear un sitio concentrador, consulte [crear un sitio concentrador en SharePoint Online](/sharepoint/create-hub-site).
   
-Para obtener información sobre cómo agregar sitios a un sitio concentrador, vea [asociar un sitio de SharePoint a un sitio concentrador](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx).
+Para obtener información sobre cómo agregar sitios a un sitio concentrador, vea [asociar un sitio de SharePoint a un sitio concentrador](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
   
 ## <a name="sharing-files-with-the-team"></a>Uso compartido de archivos con el equipo
 
@@ -115,7 +115,7 @@ Obtenga información sobre cómo controlar solicitudes de acceso con [configurar
     
   - [Instalar y configurar Office en un iPhone o iPad con Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurar Office en Windows Phone con Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurar Office en Windows Phone con Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Más información sobre el uso de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

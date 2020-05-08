@@ -24,14 +24,21 @@ description: Obtenga información sobre las opciones de pago disponibles para pa
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045841"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140876"
 ---
 # <a name="pay-for-your-subscription"></a>Pagar la suscripción
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Al configurar su suscripción, puede elegir pagar con tarjeta de crédito, mediante transferencia bancaria o pagar mediante factura usando un cheque o transferencia electrónica de fondos (EFT). Independientemente del método que elija, ese será el método de pago que seguiremos usando para los períodos de facturación siguientes, salvo que [cambie el método de pago](change-payment-method.md).
 

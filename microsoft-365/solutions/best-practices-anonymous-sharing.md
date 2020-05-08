@@ -9,17 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: Aprenda prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 31df8820346d14fc945c68f0d295fc1dcaa585d9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
+ms.openlocfilehash: 127f50a6a94e35a9f3c8acf655bd260080aa8420
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001715"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160684"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -39,7 +40,7 @@ Una vez que el vínculo para *Cualquiera* haya expirado, ya no podrá usarse par
 Establezca una fecha de expiración de los vínculos para cualquiera
 1. Inicie el centro de administración de SharePoint Online.
 2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
-3. En la **Configuración avanzada de vínculos para "Cualquiera"**, seleccione la casilla **Los vínculos deben expirar dentro de este número de días**.</br>
+3. En la **Elegir opciones de permisos y expiración para vínculos para Cualquiera**, seleccione la casilla **Los vínculos deben expirar dentro de este número de días**.</br>
    ![Captura de pantalla de la configuración de los vínculos para Cualquiera en el nivel de organización de SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Escriba un número de días en el cuadro y después haga clic en **Guardar**.
 
