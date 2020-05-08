@@ -57,8 +57,27 @@
               href: mtp/portals.md
             - name: Solucionar problemas
               href: ./mtp/troubleshoot.md
+        - name: Capacidades de evaluación
+          items:
+            - name: Introducción al laboratorio de pruebas
+              href: mtp/mtp-evaluation.md
+            - name: Preparación
+              href: mtp/prepare-mtpeval.md
+            - name: Instalación
+              href: mtp/setup-mtpeval.md
+            - name: Configurar e incorporar puntos de conexión
+              href: mtp/config-mtpeval.md
         - name: Guías de procedimientos
           items:
+            - name: Crear un entorno de laboratorio de pruebas
+              href: mtp/mtp-evaluation.md
+              items:
+                - name: Preparación
+                  href: mtp/prepare-mtpeval.md
+                - name: Instalación
+                  href: mtp/setup-mtpeval.md
+                - name: Configurar e incorporar puntos de conexión
+                  href: mtp/config-mtpeval.md
             - name: Implementación de servicios compatibles
               href: mtp/deploy-supported-services.md
             - name: Habilitar la Protección contra amenazas de Microsoft
@@ -494,14 +513,7 @@
                 - name: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
             - name: "Protección de archivos en Microsoft\_Teams"
-              href: ./office-365-security/secure-files-in-teams.md
               items:
-                - name: Implementación de equipos con tres niveles de protección de archivos
-                  href: ./office-365-security/deploy-teams-three-tiers.md
-                - name: Protección de los archivos de los equipos con etiquetas de retención y DLP
-                  href: ./office-365-security/deploy-teams-retention-DLP.md
-                - name: Protección de los archivos de los equipos con etiquetas de confidencialidad
-                  href: ./office-365-security/deploy-teams-sensitivity-labels.md
                 - name: Protección de equipos para archivos en un entorno de desarrollo y pruebas
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
             - name: Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
