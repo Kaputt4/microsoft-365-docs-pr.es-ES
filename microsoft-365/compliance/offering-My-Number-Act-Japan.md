@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7b8e7e7f15ac4a0f257e9c4c86bd14659cc609b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d270e43bb336a6cdf110507ba51281e135f99b9a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632935"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066084"
 ---
 # <a name="my-number-act-japan"></a>Sistema Mi Número Personal (Japón)
 
@@ -33,7 +33,7 @@ La Comisión de protección de la información personal (PPC), que actúa como a
 
 Para ayudar a nuestros clientes japoneses a proteger la privacidad de sus datos personales, Microsoft se compromete por contrato, a través de las [Condiciones de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), a que nuestros servicios empresariales en la nube implementen las medidas técnicas y organizativas de seguridad que ayuden a nuestros clientes a cumplir con el Sistema Mi Número Personal (My Number Act). Esto significa que los clientes en Japón pueden desplegar los Servicios en la Nube para empresas de Microsoft con la confianza de que podrán cumplir con los requisitos de la legislación japonesa.
 
-El [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (japonés), publicado por la Comisión de protección de la información personal (PPC), define las directrices para el manejo adecuado y la protección de la información personal. En ella se establece que no se considerará que un tercero está tratando datos personales si éste estipula en su acuerdo que, (a) no lo hace, y (b) establece un sistema adecuado de control de acceso. El Sistema Mi Número Personal especifica las obligaciones para la transferencia de datos a terceros, pero la sección [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (japonesa) del PPC Q\&A explica que éstas no se aplican si el tercero no "controla" -es decir, tiene acceso permanente a- los datos personales.
+El [Q\&A](https://www.ppc.go.jp/legal/policy/faq/) (japonés), publicado por la Comisión de protección de la información personal (PPC), define las directrices para el manejo adecuado y la protección de la información personal. En ella se establece que no se considerará que un tercero está tratando datos personales si éste estipula en su acuerdo que, (a) no lo hace, y (b) establece un sistema adecuado de control de acceso. El Sistema Mi Número Personal especifica las obligaciones para la transferencia de datos a terceros, pero la sección [Q3-12](https://www.ppc.go.jp/legal/policy/faq/) (japonesa) del PPC Q\&A explica que éstas no se aplican si el tercero no "controla" - es decir, tiene acceso permanente a - los datos personales.
 
 Los servicios en la nube de Microsoft para empresas cumplen con los requisitos en las [condiciones de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), en los que se estipula que la propiedad y la responsabilidad de los datos de los clientes que contienen mis datos numéricos se encuentran en nuestros clientes, no en Microsoft. Por lo tanto, el cliente debe contar con controles adecuados para proteger los datos de Mi Número Personal contenidos en los datos del cliente.
 
@@ -73,11 +73,7 @@ Por lo tanto, los servicios en la nube de Microsoft Business son compatibles con
 ## <a name="resources"></a>Recursos
 
 - [Cumplimiento de Azure y los requisitos de seguridad y privacidad de Japón](https://gallery.technet.microsoft.com/Azure-Compliance-and-the-53409748)
-- [Privacidad de Microsoft](https://privacy.microsoft.com/en-US/)
+- [Privacidad de Microsoft](https://privacy.microsoft.com/es-ES/)
 - [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement)
 - [Consideraciones de privacidad en la nube](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).

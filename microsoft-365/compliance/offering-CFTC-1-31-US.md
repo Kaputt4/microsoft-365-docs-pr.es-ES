@@ -1,7 +1,7 @@
 ---
 title: 1.31 de reglas de la Comisión comercial de ventas de futuros (CFTC) (c-d) Estados Unidos
 description: Una empresa de evaluación independiente ha validado que Azure y Office 365 pueden ayudar a las empresas financieras a cumplir con los requisitos de retención de CFTC reglas 1,31 registros y de almacenamiento inmutable.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602647"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065855"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 de reglas de la Comisión comercial de ventas de futuros (CFTC) (c-d) Estados Unidos
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602647"
 
 La [Comisión comercial de Futures](https://www.cftc.gov/) de la mercancía (CFTC), una Agencia Federal estadounidense independiente, regula los mercados de opciones y futuros de la mercancía y, más recientemente, el mercado de swaps.  
   
-La regla CFTC de larga duración 1,31 define los requisitos de retención de registros establecidos por la regla de la SEC 17a-4 (f). Además, especifica que los registros electrónicos deben mantenerse durante cinco años y que los originales deben mantenerse "fácilmente accesibles" durante los dos primeros años y estar disponibles para la inspección por parte de la Comisión o del Departamento de Justicia de Estados Unidos de justicia durante todo el proceso. período de retención.  
+La regla CFTC de larga duración 1,31 define los requisitos de retención de registros establecidos por la regla de la SEC 17a-4 (f). Además, especifica que los registros electrónicos deben mantenerse durante cinco años y que los originales deben mantenerse "fácilmente accesibles" durante los dos primeros años y puestos a disposición de la Comisión o del Departamento de Justicia de Estados Unidos durante todo el período de retención.  
   
 En 2017, el [CFTC revisó su regla](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf), modificando y modernizando el Reglamento de conservación de registros para adoptar estándares menos preceptivos y normativos basados en principios que proporcionan mayor flexibilidad en la forma en que se pueden mantener los registros. Esto hace que la regla sea más neutral en cuanto a tecnología, lo que permite a las entidades reguladas elegir la tecnología más adecuada para su negocio y mantener al mismo tiempo las medidas de seguridad que "aseguran la confiabilidad del proceso de conservación de la información". La regla revisada quita el requisito de que las organizaciones mantengan los registros originales durante dos años, pero conserva el período de mantenimiento de cinco años, que armoniza los procedimientos para las empresas reguladas por el CFTC y la SEC.
 
@@ -45,7 +45,7 @@ Para evaluar el cumplimiento de Office 365 con la regla de CFTC 1.31 (c-d), Micr
 
 El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
@@ -71,7 +71,3 @@ El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos
 - [Directivas de retención de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog de servicios financieros de Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf).

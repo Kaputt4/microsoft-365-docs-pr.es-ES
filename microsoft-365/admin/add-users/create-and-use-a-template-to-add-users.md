@@ -19,14 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios.
-ms.openlocfilehash: a45107f520ee34437989bcd000096945514384ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617277"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140657"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios. Las plantillas son especialmente útiles si tiene usuarios que comparten muchas propiedades comunes, como las que tienen el mismo rol y trabajan en la misma ubicación y que necesitan el mismo software. Por ejemplo, es posible que tenga un equipo de ingenieros de soporte técnico que trabajan en la misma oficina.  
 

@@ -1,6 +1,6 @@
 ---
 title: Solicitudes del interesado de Dynamics 365 para el RGPD y la CCPA
-description: Guía sobre cómo utilizar los productos, servicios y herramientas administrativas de Microsoft con el fin de facilitar a nuestros clientes controladores la localización de datos personales para responder a las solicitudes de DSR y CCPA.
+description: Esta guía le ayudará a comprender cómo encontrar y actuar en datos personales y responder a las solicitudes de DSR y CCPA realizadas por los clientes de Dynamics 365.
 keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558010"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043338"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Dynamics 365 para el RGPD y la CCPA
 
@@ -223,7 +225,7 @@ Los administradores pueden obtener acceso a registros generados por el sistema a
 
 Después de crear una solicitud, se mostrará en la página **Exportación de registros de datos**, donde puede realizar un seguimiento de su estado. Después de completar una solicitud, puede hacer clic en un vínculo para obtener acceso a los registros generados por el sistema, que se exportarán a la ubicación de Azure Storage de su organización en un plazo de 30 días después de crear la solicitud. Los datos se guardarán en formatos de archivo de lectura mecánica comunes, como JSON o XML. Si no tiene una cuenta de Azure ni una ubicación de Azure Storage, tendrá que crear una cuenta de Azure o una ubicación de Azure Storage para su organización para que la herramienta Exportación de registros de datos pueda exportar los registros generados por el sistema.
 
-Azure facilita esto al permitir que su organización pueda exportar los datos en el formato JSON nativo al contenedor especificado de Azure Storage[. Introducción a Microsoft Azure Storage: Blob Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage) (artículo).
+Azure facilita esto al permitir que su organización pueda exportar los datos en el formato JSON nativo al contenedor especificado de Azure Storage[. Introducción a Microsoft Azure Storage: Blob Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage) (artículo). Los datos recuperados no incluirán datos que puedan comprometer la seguridad y estabilidad del servicio.
 
 > [!IMPORTANT]
 > Debe ser un administrador de espacios empresariales para exportar datos de usuario del espacio empresarial.
@@ -245,9 +247,7 @@ En la tabla siguiente, se resumen las acciones de acceso y exportación de regis
 
 ### <a name="deleting-system-generated-logs"></a>Eliminar registros generados por el sistema
 
-Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, necesita quitar el usuario del servicio y eliminar de forma permanente su cuenta de Azure Active Directory. Para obtener instrucciones sobre cómo eliminar de forma permanente un usuario, vea la sección [Eliminar un usuario](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) en esta guía. Es importante tener en cuenta que la acción de eliminar una cuenta de usuario de forma permanente es irreversible.
-
-Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, se quitarán los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Dynamics 365.
+Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, necesita quitar el usuario del servicio y eliminar de forma permanente su cuenta de Active Directory de Azure. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada. Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, se quitarán los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Dynamics 365.
 
 ## <a name="learn-more"></a>Más información
 

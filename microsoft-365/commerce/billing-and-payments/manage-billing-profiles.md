@@ -1,5 +1,7 @@
 ---
-title: Administración de perfiles de facturación
+title: Administrar perfiles de facturación
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 keywords: Perfil de facturación, facturas, cargos, cargos administrados
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837394"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140895"
 ---
-# <a name="manage-billing-profiles"></a>Administración de perfiles de facturación
+# <a name="manage-billing-profiles"></a>Administrar perfiles de facturación
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Para los clientes comerciales que compran productos y servicios de Microsoft, los perfiles de facturación le permiten personalizar los elementos que se incluyen en la factura y cómo pagar sus facturas.
 
 Los perfiles de facturación incluyen la siguiente información:
@@ -32,7 +42,7 @@ Los perfiles de facturación incluyen la siguiente información:
 - **Métodos** &ndash; de pago tarjetas de crédito o débito, cuentas bancarias, cheque o transferencia bancaria
 - Dirección de facturación de la **información** &ndash; de contacto y un nombre de contacto
 - Divisa de la **configuración** &ndash; de la factura en función del país de la cuenta de facturación, un número de pedido de compra opcional y la opción de recibir facturas como datos adjuntos de correo electrónico
-- Permisos permisos que permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar compras **** &ndash;
+- Permisos permisos que permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar compras **Permissions** &ndash;
 
 Use perfiles de facturación para controlar las compras y personalizar la factura. Se genera una factura mensual para los productos comprados con el perfil de facturación. Puede personalizar la factura como actualizar el número de pedido de compra y la preferencia de factura de correo electrónico.
 
@@ -42,7 +52,7 @@ Durante la primera compra, se creará automáticamente un perfil de facturación
 
 Los roles en perfiles de facturación tienen permisos para controlar las compras y ver y administrar las facturas. Asigne estos roles a los usuarios que realizan un seguimiento, organizan y pagan facturas, como los miembros del equipo de compras de su organización.
 
-| Rol                          | Descripción                                                                       |
+| Role                          | Descripción                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
 | Propietario del perfil de facturación         | Administrar todo para un perfil de facturación                                           |
 | Colaborador de Perfil de facturación   | Administrar todo excepto permisos en un perfil de facturación                         |
@@ -51,7 +61,7 @@ Los roles en perfiles de facturación tienen permisos para controlar las compras
 
 ## <a name="view-billing-profiles"></a>Ver perfiles de facturación
 
-1. En el centro de administración, vaya a **la** \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Facturas y pagos</a>.
 
 2. Elija **perfiles de facturación**y, después, elija un perfil de facturación de la lista.
 

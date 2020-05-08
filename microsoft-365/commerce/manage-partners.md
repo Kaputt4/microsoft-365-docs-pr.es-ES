@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft para comprar y administrar productos y servicios para su organización o centro educativo.
 keywords: Partner, proveedor de soluciones
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080367"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141212"
 ---
 # <a name="manage-partner-relationships"></a>Administración de relaciones de socios
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Puede trabajar con proveedores de soluciones certificados por Microsoft para comprar y administrar productos y servicios para su organización o centro educativo. Hay algunos pasos relacionados con la configuración de las cosas.
 

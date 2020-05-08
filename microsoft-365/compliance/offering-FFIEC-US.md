@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222080"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066363"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
@@ -37,12 +37,12 @@ Acelere su implementación de servicios financieros: [Descargue Azure Security a
 
 Para ayudar a los clientes de instituciones financieras a satisfacer sus requisitos de cumplimiento FFIEC con Azure, Microsoft ha desarrollado:
 
-- [Cloud Security Diagnostic Tool * *](https://aka.ms/FFIEC-CSDT) para ayudarle a llevar a cabo una evaluación de riesgos más eficaz de los servicios de Azure. La herramienta (una hoja de cálculo de Excel) incluye 19 dominios de seguridad de la información (como la seguridad del sistema y la red, la información y la administración de riesgos) que realizan un seguimiento de los requisitos de las regulaciones de servicios financieros y otros estándares relevantes, así como la FFIEC Manuales de examen. La herramienta explica cómo Azure cumple con cada requisito aplicable a los proveedores de servicios de tecnología (TSPs).
+- [Cloud Security Diagnostic Tool * *](https://aka.ms/FFIEC-CSDT) para ayudarle a llevar a cabo una evaluación de riesgos más eficaz de los servicios de Azure. La herramienta (una hoja de cálculo de Excel) incluye 19 dominios de seguridad de la información (como la seguridad del sistema y la seguridad, la información y la administración de riesgos) que realizan un seguimiento de los requisitos de las regulaciones de servicios financieros y otros estándares relevantes, así como los FFIEC de examen de ti. La herramienta explica cómo Azure cumple con cada requisito aplicable a los proveedores de servicios de tecnología (TSPs).
 - Proyecto [de Azure Security and Compliance Blueprint for FFIEC regulated Services workloads](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint), un complemento para la herramienta de diagnóstico. Ofrece orientación sobre el uso de los servicios en la nube de Azure y consideraciones para cumplir con los requisitos de FFIEC y las directrices de evaluación de riesgos.
 
 Para ayudarle a cumplir con los requisitos de FFIEC, los servicios en la nube de Microsoft proporcionan [informes de atestación de SOC](offering-SOC.md) producidos por una empresa independiente de la CPA. Por ejemplo, la atestación del SOC 1 tipo 2 se basa en el estándar AICPA SSAE 18 (vea la sección de-C 105) que reemplazó a SAS 70 y es apropiado para informar sobre determinados controles de informes financieros. Los informes de SOC incluyen la opinión del Auditor sobre la eficacia de los controles de Microsoft en la consecución de los objetivos de control relacionados durante el período de supervisión especificado. Las instituciones financieras pueden usar esta auditoría formal al cumplir con las obligaciones de cumplimiento específicas de FFIEC para activos implementados en Azure, Power BI y Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>En el ámbito de los Servicios en la nube de Microsoft 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -79,7 +79,3 @@ Para ayudarle a cumplir estas obligaciones, Microsoft proporciona los detalles e
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).

@@ -22,6 +22,8 @@
       items:
         - name: Información sobre riesgos internos de Microsoft
           href: insider-risk-management.md
+        - name: Planificar la administración de riesgos internos
+          href: insider-risk-management-plan.md
         - name: Introducción a la administración de riesgos internos
           href: insider-risk-management-configure.md
         - name: Crear y administrar directivas de riesgos internos

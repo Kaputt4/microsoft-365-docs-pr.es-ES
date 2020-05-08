@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Obtenga información sobre cómo planear el gobierno de grupos de Microsoft 365.
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049416"
+ms.locfileid: "44064792"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planeación del gobierno en grupos
 
@@ -154,7 +154,7 @@ Si ha eliminado un grupo de 365 de Microsoft, de forma predeterminada se conserv
 >Durante el período de "eliminación temporal", si un usuario intenta acceder al sitio, recibirán un mensaje de acceso prohibido con el código 403. Después de este período, si el usuario intenta acceder al sitio, recibirá un mensaje de sitio no encontrado con el código 404.
 
 #### <a name="resources"></a>*Recursos*
-- [Restaurar un grupo de Microsoft 365 eliminado](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [Restaurar un grupo de Microsoft 365 eliminado](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Restaurar un grupo de Microsoft 365 eliminado en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Eliminar grupos mediante el cmdlet Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 

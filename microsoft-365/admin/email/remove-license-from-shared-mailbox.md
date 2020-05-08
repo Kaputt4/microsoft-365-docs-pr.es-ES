@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210533"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140434"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Los buzones compartidos no necesitan una licencia a menos que el buzón tenga más de 50 GB de datos. Siga estas instrucciones para quitar una licencia de un buzón de correo compartido de manera que pueda asignarla a un usuario o devolver la licencia para que no pague por una licencia que no necesite.
   
@@ -67,7 +74,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
@@ -86,7 +93,7 @@ Los buzones compartidos no necesitan una licencia a menos que el buzón tenga m�
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 

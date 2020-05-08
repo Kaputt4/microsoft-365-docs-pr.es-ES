@@ -1,5 +1,5 @@
 ---
-title: '# Paso 5: Crear espacios de comunicación en respuesta a la crisis de la COVID-19'
+title: 'Paso 5: Crear espacios de comunicación en respuesta a la crisis de la COVID-19'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Use Microsoft 365 para crear diferentes formas de comunicación sobre las noticias internas y públicas de COVID-19.
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003430"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141484"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>Paso 5: Crear espacios de comunicación en respuesta a la crisis de la COVID-19
 
@@ -31,6 +31,8 @@ Hay varias formas de proporcionar centros de comunicación adicionales para cump
 - Notificaciones de salud pública y noticias consolidadas en un único portal
 - Un sitio de comunicación en SharePoint Online
 - Una comunidad de Yammer
+
+![Espacios de comunicación en respuesta a la crisis de la COVID-19](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>Encuestas de empleados
 

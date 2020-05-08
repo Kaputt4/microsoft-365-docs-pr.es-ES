@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre los tipos de usuarios en el centro de administración. '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627769"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155359"
 ---
 # <a name="quick-help-types-of-users"></a>Ayuda rápida: Tipos de usuarios
 
@@ -45,7 +45,7 @@ En la página **usuarios activos** del centro de administración de Microsoft 36
 |Administradores de contraseñas  <br/> |Estos usuarios pueden restablecer las contraseñas, administrar solicitudes de servicio y supervisar el estado del servicio en su nombre.  <br/> |
 |Administradores del servicio  <br/> |Estos usuarios pueden administrar solicitudes de servicio y supervisar el estado del servicio en su nombre.  <br/> |
 |Administradores de control de usuarios  <br/> |Estos usuarios pueden restablecer las contraseñas, supervisar el estado del servicio y administrar las cuentas de usuario, los grupos de usuarios y las solicitudes de servicio. No pueden eliminar administradores globales, crear otros roles de administrador ni restablecer las contraseñas de los administradores de facturación, globales o de servicios.  <br/> |
-|Agregar filtro personalizado  <br/> |Con esta opción, puede crear un filtro personalizado para ver solo determinados tipos de usuarios de sus preferencias, como los usuarios que se encuentran en el plan de aplicaciones de Microsoft 365 para empresas. [Ayuda rápida: filtrar usuarios](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Agregar filtro personalizado  <br/> |Con esta opción, puede crear un filtro personalizado para ver solo determinados tipos de usuarios de sus preferencias, como los usuarios que se encuentran en el plan de aplicaciones de Microsoft 365 para empresas. [Ayuda rápida: filtrar usuarios](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Artículos relacionados
 

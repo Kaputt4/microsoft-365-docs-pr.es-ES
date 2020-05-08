@@ -1,7 +1,7 @@
 ---
 title: Ley Gramm-Leach-Bliley (GLBA)
 description: Microsoft ayuda a los clientes de servicios financieros a cumplir con los requisitos de privacidad y seguridad de la Ley Gramm-Leach-Bliley (GLBA).
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cf6f0b2425499461a709b0f592a2f0816aae54d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbc5f9e74e67dc121b151684145bd41635af1ca0
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602337"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066555"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>Ley Gramm-Leach-Bliley (GLBA)
 
@@ -31,14 +31,14 @@ La Ley Gramm-Leach-Bliley (GLBA) es una ley estadounidense que reforma la indust
 
 Microsoft Azure, Microsoft Office 365, Dynamics 365 y Microsoft Power BI pueden ayudar a cumplir los estrictos requisitos de ofrecer servicios en la nube para instituciones de servicios financieros. Como parte de nuestro soporte técnico, le ofrecemos orientación para cumplir con los requisitos de la GLBA al proporcionar protecciones técnicas y organizativas para ayudar a mantener la seguridad y evitar el uso no autorizado.
 
-Microsoft ha desarrollado herramientas de evaluación de riesgos tanto para [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) como para [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) para ayudarle a realizar una evaluación de riesgos de los servicios de Azure y Office 365 de manera más eficiente. La herramienta (una hoja de cálculo de Excel) incluye 19 dominios de seguridad de la información (como la Directiva de seguridad y la administración de riesgos) que realizan un seguimiento de los requisitos de las regulaciones de servicios financieros y otros estándares relevantes, incluido GLBA (en la columna R de Azure). hoja de cálculo y columna p en la hoja de cálculo de Office 365). Las herramientas explican cómo Azure y Office 365 cumplen todos los requisitos aplicables a los proveedores de servicios de nube y pueden ayudarle a cumplir con los requisitos de seguridad de GLBA.
+Microsoft ha desarrollado herramientas de evaluación de riesgos tanto para [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) como para [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) para ayudarle a realizar una evaluación de riesgos de los servicios de Azure y Office 365 de manera más eficiente. La herramienta (una hoja de cálculo de Excel) incluye 19 dominios de seguridad de la información (como la Directiva de seguridad y la administración de riesgos) que realizan un seguimiento de los requisitos de las regulaciones de servicios financieros y otros estándares relevantes, incluido GLBA (en la columna R de la hoja de cálculo de Azure y la columna Q de la hoja de cálculo Office 365). Las herramientas explican cómo Azure y Office 365 cumplen todos los requisitos aplicables a los proveedores de servicios de nube y pueden ayudarle a cumplir con los requisitos de seguridad de GLBA.
 
 ## <a name="promote-your-glba-compliance"></a>Promocionar el cumplimiento de GLBA
 
 - [Descargar la herramienta de evaluación de riesgos de la nube de servicios financieros de Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [Descargar la herramienta de evaluación de riesgos de la nube de Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -65,7 +65,3 @@ La FTC responde en detalle en la página GLB Act, [que está cubierta por la reg
 - [Programa de cumplimiento de servicios financieros en Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servicios en la nube de Microsoft para empresas y servicios financieros](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Responsabilidades compartidas para la informática en la nube](https://aka.ms/sharedresponsibility)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/2/A/C/2AC21A04-CE23-4963-BE1A-515DB4A17C6E/GLBA-Compliance.pdf).

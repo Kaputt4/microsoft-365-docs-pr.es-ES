@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011716"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139714"
 ---
-# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el centro de administración de Microsoft 365
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el Centro de administración de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Como administrador, puede implementar complementos de Office para los usuarios de su organización. Para ello, use la característica de implementación centralizada en el centro de administración de Microsoft 365.
   
@@ -234,7 +241,7 @@ Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguient
   
 Word, Excel y PowerPoint 2013 para Windows serán compatibles con las mismas comprobaciones menores si la biblioteca de autenticación de Active Directory (ADAL) está habilitada. Hay dos opciones para el cumplimiento normativo, tal como se explica a continuación.
   
-- **Habilitar Adal**. En este artículo se explica cómo habilitar ADAL para Office 2013: [usar la autenticación moderna de Microsoft 365 con clientes de Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>También debe configurar las claves del registro para habilitar ADAL, tal y como se explica en [enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
+- **Habilitar Adal**. En este artículo se explica cómo habilitar ADAL para Office 2013: [usar la autenticación moderna de Microsoft 365 con clientes de Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>También debe configurar las claves del registro para habilitar ADAL, tal y como se explica en [enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
     
   - [Descripción de la actualización de seguridad para Office 2013:10 de abril de 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -277,10 +284,10 @@ También puede eliminar un complemento que se ha implementado.
 3. Haga clic en **eliminar complemento**. Quite el botón del complemento en la esquina inferior derecha.
 4. Valide las selecciones y elija **quitar complemento**.
   
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtén más información
 
 Obtenga más información sobre la creación y generación de [complementos de Office](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Use cmdlets de PowerShell de implementación centralizada para administrar complementos](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9).
+[Use cmdlets de PowerShell de implementación centralizada para administrar complementos](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Solución de problemas: el usuario no ve complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

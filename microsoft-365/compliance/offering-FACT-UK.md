@@ -1,7 +1,7 @@
 ---
 title: Federación contra robos de copyright (FACT)
 description: Microsoft Azure obtuvo la certificación de la Federación contra el robo de copyright en el Reino Unido.
-keywords: Cumplimiento y ofertas de Microsoft 365
+keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602467"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066403"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Federación contra robos de copyright (FACT)
 
@@ -29,13 +29,11 @@ El contenido protegido por copyright se presenta en muchas formas (imágenes, v�
 
 ## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>Microsoft y Federación contra el robo (FACT) de copyright
 
-Para subrayar el compromiso de Microsoft de proteger a los clientes cuando estos entrusten recursos en la nube pública, Microsoft Azure ha sido certificado por la Federación contra el robo (FACT) de copyright en el Reino Unido. La certificación de hechos se basa en la norma ISO 27001, que se centra en la seguridad física y digital, el examen y la formación del personal y el control de acceso. El programa de seguridad y protección del contenido de hechos se basa en la experiencia de los cuerpos de seguridad, los socios tecnológicos y las asociaciones del sector para luchar contra la infracción de derechos de autor y el robo de contenido, como uso compartido de punto a punto, duplicación de disco ilegal y señalización. robe.
+Para subrayar el compromiso de Microsoft de proteger a los clientes cuando estos entrusten recursos en la nube pública, Microsoft Azure ha sido certificado por la Federación contra el robo (FACT) de copyright en el Reino Unido. La certificación de hechos se basa en la norma ISO 27001, que se centra en la seguridad física y digital, el examen y la formación del personal y el control de acceso. El programa de seguridad y protección del contenido de hechos se basa en la experiencia de los cuerpos de seguridad, los socios tecnológicos y las asociaciones del sector para luchar contra la infracción de derechos de autor y el robo de contenido, como uso compartido de punto a punto, duplicación de disco ilegal y robo de señal.
 
 Basado en el envío voluntario de Microsoft a una auditoría de hechos, el Auditor de hechos certificado de Azure. Azure fue el primer servicio de nube pública de varios inquilinos que lograba la certificación de hechos, que agregaba a la cartera de Azure de certificaciones relacionadas con los medios, incluida la certificación CDSA y una evaluación formal por parte de MPAA.
 
-Obtenga más información sobre las ventajas de FACT en la nube de Microsoft: [descargar el fondo de hechos](https://aka.ms/fact-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios en la nube de Microsoft dentro del ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 [Azure y Azure Government](https://aka.ms/AzureCompliance)
 
@@ -62,7 +60,3 @@ El cumplimiento de FACTo es voluntario, pero Microsoft decidió realizar una eva
 - [Evaluación de MPAA](offering-mpaa.md)
 - [Respuestas de Azure a CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

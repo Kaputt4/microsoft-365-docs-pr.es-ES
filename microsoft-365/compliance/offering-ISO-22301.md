@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602267"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065915"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norma ISO 22301:2012 de Administración de Continuidad Empresarial 
 
@@ -33,9 +33,7 @@ La norma ISO 22301:2012 fue publicada en 2012 por el comité técnico y es la pr
 
 Microsoft es el primer proveedor de servicios en la nube a hiperescala que recibe la certificación ISO 22301 para la administración de continuidad empresarial. Un organismo de certificación independiente ha concedido esta certificación a Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (incluidas las ofertas: Comercial, Administración Pública y Educación), Microsoft Cloud App Security, Microsoft Intune y Microsoft Power BI después de una rigurosa auditoría que cubrió todos los aspectos de sus procesos de continuidad empresarial. La auditoría abarcó los servicios en el ámbito que se enumeran a continuación, y las características de administración de Azure, el portal de Azure y los sistemas utilizados para supervisar, operar y actualizar los servicios en el ámbito.
 
-Obtenga más información acerca de las ventajas de la norma ISO/IEC 22301 en la nube de Microsoft: [Descargar el archivo de información general de la norma ISO/IEC 22301](https://aka.ms/iso22301-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -79,7 +77,3 @@ Sí. Si su empresa requiere la certificación de ISO 22301 para las implementaci
 - [Descripción del Programa de Administración de Continuidad Empresarial de Microsoft Enterprise](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [Puntuación de conformidad](compliance-score.md)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a13274aea83bf26eca8ecde524eafa14d27b4fca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602567"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066111"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Certificación Cloud Security Alliance (CSA) STAR
 
@@ -36,8 +36,6 @@ Cloud Security Alliance (CSA) mantiene el Registro de Seguridad, Confianza y Gar
 Microsoft Azure, Microsoft Intune y Microsoft Power BI han obtenido una certificación STAR, que implica una rigurosa evaluación de terceros de la seguridad de un proveedor en la nube. Esta certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Certifica que un proveedor de servicios en la nube se ajusta a los requisitos aplicables en la norma ISO/IEC 27001, ha resuelto aspectos críticos para la seguridad en la nube descritos en la CCM, y se le ha evaluado según el Modelo de Madurez de Capacidades de STAR para administrar las actividades de las áreas de control de la CCM.  
   
 Durante la evaluación, un auditor certificado por la CSA asigna una puntuación de Capacidad de Madurez a cada una de las 16 áreas de control de la CCM. El resultado promedio se usa para asignar el nivel general de madurez y la categoría correspondiente de bronce, plata u oro. Azure, Intune, Power BI y Microsoft Cloud App Security recibieron la certificación Cloud Security Alliance (CSA) STAR en la categoría "Oro".  
-  
-Obtenga más información sobre las ventajas de la certificación CSA STAR en la nube de Microsoft: [Descargar el documento de visión general de la certificación de CSA STAR](https://aka.ms/csastar-certification-backgrounder)
 
 Infórmese sobre cómo acelerar la implementación de la certificación de CSA STAR en el Plano técnico de seguridad y cumplimiento de Azure: [Descargar las respuestas de Microsoft Azure al Cuestionario de Iniciativa de Evaluaciones de Consenso de CSA](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
@@ -92,7 +90,3 @@ Azure, Cloud App Security, Intune y Power BI lograron la categoría "Oro", que e
 - [ISO/IEC 27001](offering-iso-27001.md)
 - [Marco de Cumplimiento del Centro de Controles Comunes de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).

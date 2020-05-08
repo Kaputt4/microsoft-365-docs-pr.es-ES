@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Obtenga información acerca de cómo reactivar la suscripción cuando expire, o si Microsoft la deshabilita o la cancela en medio.
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046245"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141103"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Si su suscripción expira o fue deshabilitada por Microsoft o si la canceló a mediados de un término de suscripción, puede reactivarla en el centro de administración.
   

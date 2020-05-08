@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: f8154f35baaf693bb51c523cfe4c44374437de02
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: dfb4262c05399e1c5add9b151c42c143ac723a7d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003584"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066132"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
 Para aumentar la seguridad de los inicios de sesión de los trabajadores remotos, use la autenticación multifactor (MFA). MFA requiere que los inicios de sesión de usuario estén sujetos a una comprobación adicional más allá de la contraseña de la cuenta de usuario. Incluso si un usuario malintencionado determina la contraseña de una cuenta de usuario, también debe poder responder a una comprobación adicional, como un mensaje de texto que se envía a un smartphone, antes de que se otorgue el acceso.
+
+![La contraseña correcta más una comprobación adicional produce un inicio de sesión correcto](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
 Microsoft recomienda MFA para todos los trabajadores remotos, especialmente los administradores.
 

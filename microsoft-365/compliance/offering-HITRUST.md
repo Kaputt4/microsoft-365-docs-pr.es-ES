@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011833"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066677"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Information Trust Trust Alliance (HITRUST) Common Security Framework (CSF)
 
@@ -110,7 +110,3 @@ Inicie sesión en la herramienta de® HITRUST MyCSF y rellene previamente la eva
 - [Descripción y aprovechamiento del CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Obtenga más información sobre el programa de responsabilidad compartida de HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Descargar el documento de información general de la oferta
-
-¿Necesita el documento de información general de esta oferta? Descargue el [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

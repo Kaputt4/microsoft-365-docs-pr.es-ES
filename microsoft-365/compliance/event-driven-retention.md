@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención puede hacer que un período de retención se base en el momento en que se produce un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949307"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053888"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido (por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período). Pero, con las etiquetas de retención en Office 365, también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
+Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido (por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período). Pero, con las etiquetas de retención en Microsoft 365, también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
   
 Por ejemplo, puede usar etiquetas con la retención controlada por eventos para:
   
@@ -45,19 +45,19 @@ La retención controlada por eventos suele usarse como parte de un proceso de ad
     
 - Las etiquetas de retención basadas en eventos suelen desencadenar una revisión para eliminación al finalizar el período de retención, por lo que un administrador de registros puede revisar y eliminar el contenido de forma manual. Para más información, vea [Eliminación de contenido](disposition.md).
     
-Una etiqueta basada en un evento tiene las mismas funciones que cualquier etiqueta en Office 365. Para obtener más información, vea [Información general sobre las etiquetas](labels.md).
+Una etiqueta de retención basada en un evento tiene las mismas funciones que una etiqueta de retención de Microsoft 365. Para más información, consulte [Información general sobre las etiquetas](labels.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Información sobre la relación entre tipos de evento, etiquetas, eventos e id. de activo
 
-Para usar correctamente la retención controlada por eventos, es importante comprender la relación entre tipos de evento, etiquetas, eventos e id. de activo, como se muestra aquí. Encontrará una explicación después del diagrama.
+Para usar correctamente la retención controlada por eventos, es importante comprender la relación entre tipos de evento, etiquetas de retención, eventos e id. de activos, como se muestra en los diagramas y la explicación siguiente: 
   
 ![Diagrama de tipo de evento, etiquetas, eventos e id. de activo](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
 ![Diagrama de tipo de evento, etiquetas, eventos e id. de activo](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Las etiquetas se crean para distintos tipos de contenido y, después, se asocian con un tipo de evento. Por ejemplo, las etiquetas para distintos tipos de registros y archivos de producto se asocian con un tipo de evento denominado “Vida útil del producto”, ya que esos registros tienen que conservarse durante 10 años desde el momento en que el producto alcanza el fin de vida.
+1. Puede crear etiquetas de retención para diferentes tipos de contenido y asociarlas a un tipo de evento. Por ejemplo, las etiquetas de retención para distintos tipos de registros y archivos de producto se asocian con un tipo de evento denominado Vida útil del producto, ya que esos registros tienen que conservarse durante 10 años desde el momento en que el producto alcanza el fin de vida.
     
-2. Los usuarios (normalmente, administradores de registros) aplican esas etiquetas en el contenido y (para documentos de OneDrive y SharePoint), asignan un id. de activo a cada elemento. En este ejemplo, el id. de activo es un código o nombre de producto usado por la organización. Por lo tanto, se asigna una etiqueta a los registros de cada producto y, además, cada registro tiene una propiedad que contiene un id. de activo. El diagrama representa **todo el contenido** de todos los registros de productos de una organización, y cada elemento recibe el id. de activo del producto a cuyo registro pertenece. 
+2. Los usuarios (normalmente, los administradores de registros) aplican esas etiquetas de retención en el contenido y (para documentos SharePoint y OneDrive) especifican un id. de activo para cada elemento. En este ejemplo, el identificador de activo es un nombre de producto o un código usado por la organización. Por lo tanto, se asigna una etiqueta de retención a los registros de cada producto, y cada registro tiene una propiedad que contiene un id. de activo. El diagrama representa **todo el contenido** de todos los registros de productos de una organización, y cada elemento tiene asignado el id. de activo del producto al que pertenece el registro. 
     
 3. La vida útil del producto es el tipo de evento; un producto específico que llega al fin de vida es un evento. Cuando se produce este tipo de evento (en este caso, cuando un producto alcanza el fin de vida), creará un evento que especifique:
     
@@ -67,17 +67,17 @@ Para usar correctamente la retención controlada por eventos, es importante comp
     
   - La fecha en que se produjo el evento. La fecha se usa como el inicio del período de retención. Esta fecha puede ser la fecha actual, una fecha pasada o una fecha futura.
     
-4. Después de crear un evento, esa fecha del evento se sincroniza con todo el contenido que tenga una etiqueta de ese tipo de evento y que contenga la palabra clave o el id. de activo especificado. Al igual que con cualquier etiqueta, puede tardar hasta siete días en sincronizarse. En el diagrama anterior, este evento desencadena el período de retención de todos los elementos rodeados con un círculo rojo (es decir, cuando este producto alcanza el fin de vida, el evento desencadena el período de retención de los registros del producto).
+4. Después de crear un evento, la fecha del evento se sincroniza con todo el contenido que tenga aplicada una etiqueta de retención de ese tipo de evento y que contenga la palabra clave o el id. de activo especificado. Al igual que con cualquier etiqueta de retención, esta sincronización puede tardar hasta 7 días en completarse. En el diagrama anterior, todos los elementos rodeados con un círculo rojo tienen el período de retención activado por este evento. Es decir, cuando este producto llega al final de su vida, el evento provoca el período de retención de los registros del producto.
     
-Es importante comprender que, si no especifica un id. de activo o palabras clave para un evento, el evento desencadenará el período de retención de **todo el contenido** con una etiqueta de ese tipo de evento. Esto quiere decir que, en el diagrama anterior, se empezaría a conservar todo el contenido. Es posible que esta no sea su intención. 
+Es importante comprender que, si no especifica palabras clave o un Id. de activo para un evento, el evento desencadenará el período de retención de **todo el contenido** que tenga aplicada una etiqueta de retención de ese tipo de evento. Esto quiere decir que, en el diagrama anterior, se empezaría a conservar todo el contenido. Es posible que no sea esto lo que quiera realizar. 
   
-Por último, recuerde que cada etiqueta tiene su propia configuración de retención. En este ejemplo, todas especifican 10 años, pero puede que un evento desencadene etiquetas donde cada etiqueta tenga un período de retención distinto.
+Por último, recuerde que cada etiqueta de retención tiene sus propias opciones de retención. En este ejemplo, todas especifican 10 años, pero puede que un evento desencadene etiquetas de retención donde cada etiqueta tenga un período de retención distinto.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Configurar la retención controlada por eventos
 
-Este es el flujo de trabajo general para la retención controlada por eventos. Abajo, encontrará pasos más detallados.
+Flujo de trabajo general para la retención controlada por eventos:
   
-![Diagrama del flujo de trabajo para configurar la retención controlada por eventos](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![Diagrama del flujo de trabajo para configurar la retención controlada por eventos](../media/event-based-retention-process.png)
   
 > [!TIP]
 > Para obtener más información sobre cómo usar las propiedades administradas en SharePont para aplicar automáticamente las etiquetas de retención y implementar la retención basada en eventos, vea [administrar el ciclo de vida de los documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md).
@@ -88,7 +88,7 @@ En el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microso
   
 Al crear la etiqueta, active la retención y, después, seleccione la opción que se muestra abajo para conservar o eliminar el contenido basándose en un evento. Esto quiere decir que la configuración de retención no se aplicará hasta el paso 5, cuando cree un evento en la página **Eventos**. 
   
-Tenga en cuenta que la retención controlada por eventos suele usarse para contenido clasificado como registro. Por este motivo, al crear etiquetas basándose en un evento, normalmente selecciona la opción **Usar etiqueta para clasificar contenido como un “registro”**.
+Tenga en cuenta que la retención controlada por eventos suele usarse para contenido clasificado como un registro. Por este motivo, al crear etiquetas de retención basadas en un evento, suele seleccionarse la opción **Usar etiqueta para clasificar contenido como un "registro"**.
   
 Además, tenga en cuenta que la retención controlada por eventos necesita una configuración de retención que:
   
@@ -102,15 +102,17 @@ Además, tenga en cuenta que la retención controlada por eventos necesita una c
 
 En la configuración de etiquetas, después de seleccionar la opción para basar la etiqueta en **un evento**, verá la opción para **Seleccionar un tipo de evento**. Un tipo de evento es simplemente una descripción general de un evento con el que quiera asociar una etiqueta.
   
-Por ejemplo, si crea un tipo de evento denominado “Vida útil del producto”, creará etiquetas basadas en eventos con nombres que describan los tipos de contenido donde quiere que se apliquen las etiquetas, como “Archivos de desarrollo de productos” o “Registros de decisiones empresariales de producto”.
+Por ejemplo, si crea un tipo de evento denominado "Vida útil del producto", creará etiquetas de retención basadas en eventos con nombres que describan los tipos de contenido donde quiere que se apliquen las etiquetas, como "Archivos de desarrollo de productos" o "Registros de decisiones empresariales de producto".
   
-Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etiqueta, el tipo de evento no se puede cambiar.
+Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etiqueta de retención, el tipo de evento no se puede cambiar.
   
 ![Opciones para crear o seleccionar un tipo de evento](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-or-auto-apply-the-label"></a>Paso 3: Publicar o aplicar automáticamente una etiqueta
+### <a name="step-3-publish-the-event-based-retention-labels"></a>Paso 3: publicar las etiquetas de retención basadas en eventos
 
-Como en cualquier etiqueta, es necesario publicar o aplicar automáticamente una etiqueta basada en eventos, de modo que se aplique manual o automáticamente al contenido. Puede hacer esto en **clasificación ** > **página etiquetas de retención**.
+Publique las etiquetas de retención basadas en eventos, de modo que se puedan aplicar manualmente al contenido. No se puede seleccionar una etiqueta de retención basada en eventos para una directiva de aplicación automática. 
+
+Para publicar las etiquetas de retención basadas en eventos, vaya a la página **Clasificación** > **Etiquetas de retención**.
   
 ![Opciones para publicar o aplicar automáticamente una etiqueta de retención](../media/options-to-publish-auto-apply-retention-label.png)
 
@@ -124,7 +126,7 @@ Después de aplicar una etiqueta controlada por eventos en contenido, puede espe
     
 - Id. de empleado que puede usar para conservar contenido solo para una persona específica.
     
-Tenga en cuenta que un id. de activo es simplemente otra propiedad de un documento en SharePoint y OneDrive para la Empresa. Es posible que su organización ya use otros id. y propiedades de documento para clasificar contenido. En ese caso, también puede usar esas propiedades y valores al crear un evento (vea el paso 6 abajo). El punto importante es que su organización tiene que usar una combinación de propiedad:valor en las propiedades del documento para asociar ese elemento con un tipo de evento.
+Tenga en cuenta que el id. de activo es simplemente otra propiedad de documento en SharePoint y OneDrive para la Empresa. Puede que la organización ya use otras propiedades del documento o id. para clasificar contenido. En ese caso, puede usar esas propiedades y valores al crear un evento (vea el paso 6 más adelante). Lo importante es que su organización tiene que usar alguna combinación de propiedad:valor en las propiedades del documento para asociar ese elemento con un tipo de evento.
   
 ![Cuadro de texto para especificar un id. de activo](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -134,7 +136,7 @@ Si se produce un caso concreto de ese tipo de evento (por ejemplo, un producto l
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Paso 6: Seleccionar el mismo tipo de evento usado por la etiqueta en el paso 2
 
-Al crear el evento, seleccione el mismo tipo de evento usado por la etiqueta en el paso 2 (por ejemplo, “Vida útil del producto”). Solo se desencadenará el período de retención del contenido que tenga aplicadas etiquetas de ese tipo de evento.
+Al crear el evento, seleccione el mismo tipo de evento usado por la etiqueta de retención en el paso 2 (por ejemplo, Vida de producto). Solo se desencadenará el período de retención del contenido que tenga aplicadas etiquetas de retención de ese tipo de evento.
   
 ![Opción en Configuración de evento para seleccionar un tipo de evento](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -148,17 +150,17 @@ Puede que su organización aplicara otras propiedades e id. en los documentos re
   
 En el caso de elementos de Exchange, puede incluir palabras clave. Puede restringir la consulta con operadores de búsqueda como AND, OR y NOT. Para obtener más información sobre los operadores, vea [Consultas de palabras clave y condiciones de búsqueda para Búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
-Por último, seleccione la fecha en que se produjo el evento; esta fecha se usará como el inicio del período de retención. Después de crear un evento, la fecha del evento se sincronizará con todo el contenido mediante una etiqueta de ese tipo de evento, id. de activo y palabras clave. Al igual que con cualquier etiqueta, puede tardar hasta siete días en sincronizarse.
+Por último, elija la fecha en la que se ha producido el evento, esta fecha se usa como inicio del periodo de retención. Después de crear un evento, la fecha del evento se sincroniza con todo el contenido con una etiqueta de retención de ese tipo de evento, id. de activo y palabras clave. Al igual que con cualquier etiqueta de retención, esta sincronización puede tardar hasta 7 días en completarse.
   
 ![Página Configuración de evento](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta o id. de activo específicos
 
-Después de asignar etiquetas a contenido, puede usar la búsqueda de contenido para encontrar todo el contenido clasificado con una etiqueta específica o que contiene un id. de activo específico.
+Después de asignar etiquetas de retención a contenido, puede usar la búsqueda de contenido para encontrar todo el contenido clasificado con una etiqueta de retención específica o que contiene un id. de activo específico.
   
 Al crear una búsqueda de contenido:
   
-- Para encontrar todo el contenido con una etiqueta específica, seleccione la condición **Etiqueta de cumplimiento** y, después, escriba el nombre de etiqueta completo o una parte del nombre de la etiqueta y use un comodín. 
+- Para encontrar todo el contenido con una etiqueta de retención específica, seleccione la condición **Etiqueta de cumplimiento** y, después, escriba el nombre de etiqueta completo o una parte del nombre de la etiqueta y use un comodín. 
     
 - Para encontrar todo el contenido con un id. de activo específico, escriba la propiedad **IdActivoCumplimiento** y un valor (por ejemplo, IdActivoCumplimiento:\<valor\>). 
     
@@ -174,7 +176,7 @@ Para más información, vea [Proporcionar a los usuarios acceso al Centro de seg
 
 En el centro de administración, solo puede crear eventos manualmente. No es posible desencadenar automáticamente un evento cuando se produce. Sin embargo, puede usar una API de Rest para desencadenar eventos automáticamente. Para obtener más información, vea [Automatizar la retención basada en eventos](automate-event-driven-retention.md).
 
-También puede usar un script de PowerShell para automatizar la retención basada en eventos desde sus aplicaciones empresariales. Estos son los cmdlets de PowerShell disponibles para la retención controlada por eventos:
+También puede usar un script de PowerShell para automatizar la retención basada en eventos desde sus aplicaciones empresariales. Los cmdlets de PowerShell disponibles para la retención controlada por eventos:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804759"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141512"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -52,7 +52,7 @@ La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para incluir SharePoint Online, Exchange Online, OneDrive para la empresa, Microsoft Information Protection, etc.), Azure AD y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad, como ATP de Azure y ATP de Microsoft defender. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
+Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure AD, ATP de Microsoft, ATP de Azure y seguridad de aplicaciones en la nube. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -110,8 +110,6 @@ La clasificación se basa en el número de puntos restantes que quedan para logr
 
 ### <a name="actions"></a>Acciones
 
-La puntuación segura de Microsoft no realiza un seguimiento de las acciones etiquetadas como [no puntuadas]. Puede seguir realizando acciones pero su finalización no afectará a su calificación. Si una acción hace un seguimiento de la puntuación segura de Microsoft en el futuro y ya la ha completado, la puntuación segura reflejará automáticamente el cambio.
-
 Cuando se selecciona una acción de mejora específica, aparece una volar hacia fuera. Para completar la acción, tiene algunas opciones:
 
 1. Seleccione **Ver configuración** para ir a la pantalla de configuración y realizar el cambio. A continuación, puede obtener los puntos que merece la acción, visible en la parte superior de la volando. Los puntos pueden tardar hasta 24 horas en actualizarse.
@@ -122,7 +120,7 @@ Cuando se selecciona una acción de mejora específica, aparece una volar hacia 
 
 ![Ejemplo de acción de mejora de puntuación segura](../../media/secure-score/secure-score1x450.png)
 
-*Figuras 2 & 3: controles flotantes de acciones de mejora*
+*Figuras 2: flotante de acción de mejora*
 
 ## <a name="monitor-improvements-over-time"></a>Supervisar las mejoras a lo largo del tiempo
 

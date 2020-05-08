@@ -1,6 +1,6 @@
 ---
 title: RGPD para SharePoint Server
-description: Obtenga información sobre cómo cumplir los requisitos del RGPD en un entorno local de SharePoint Server.
+description: Aprenda a cumplir con los requisitos del Reglamento general de protección de datos (GDPR) en el Servidor SharePoint local.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596397"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036233"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD para SharePoint Server
 
@@ -109,15 +110,15 @@ El historial de consultas de búsqueda y los registros de uso contienen referenc
 
 ### <a name="query-history-and-favorite-queries"></a>Historial de consultas y consultas favoritas
 
-En SharePoint Server, los historiales de consultas y las consultas “favoritas” expiran automáticamente después de 365 días. Si un usuario abandona su organización, puede seguir los pasos siguientes para eliminar las referencias a un nombre de usuario del historial de consultas.
+En SharePoint Server, los historiales de consulta y las consultas "favoritas" expiran automáticamente después de 365 días. Si un usuario abandona su organización, es posible eliminar las referencias al nombre de un usuario del historial de consultas mediante los siguientes pasos.
 
 Las siguientes consultas SQL son válidas para SharePoint Server y permiten lo siguiente:
 
--   Exportar el historial de consultas o las consultas favoritas de un usuario
+-   Exportar el historial de consultas de un usuario o sus consultas favoritas
 
 -   Quitar referencias a nombres de usuario en el historial de consultas
 
-#### <a name="export-a-users-queries-since-a-specific-date"></a>Exportar las consultas de un usuario desde una fecha específica 
+#### <a name="export-a-users-queries-since-a-specific-date"></a>Exportar las consultas de un usuario a partir de una fecha determinada 
 
 Siga este procedimiento para exportar las consultas desde las tablas del registro de consultas del Almacén de vínculos realizadas por @UserName desde @StartTime.
 
@@ -216,7 +217,7 @@ END 
 GO 
 ```
 
-#### <a name="remove-references-to-a-specific-user-name-thats-more-than-x-days-old"></a>Quitar referencias a un nombre de usuario específico que tenga más de X días
+#### <a name="remove-references-to-a-specific-user-name-thats-more-than-x-days-old"></a>Eliminar las referencias a un nombre de usuario específico que tenga más de X días de antigüedad
 
 Siga este procedimiento para quitar las referencias a un nombre de usuario *específico* de las tablas del registro de consultas del almacén de vínculos, donde las referencias tienen más de @Days. El procedimiento solo quita referencias pasadas hasta que alcanza @LastCleanupTime.
 
@@ -300,15 +301,15 @@ Al migrar datos desde SharePoint Server a SharePoint Online, pueden existir dato
 
 El servicio de perfiles de usuario le permite importar datos de perfiles de una amplia variedad de orígenes externos. Las consultas y actualizaciones de esos datos de perfiles de usuario tienen que procesarse en los sistemas que contienen los datos maestros. Si realiza actualizaciones en el sistema externo, asegúrese de volver a sincronizar los perfiles de usuario en SharePoint Server.
 
-Siga estos pasos básicos para quitar la información personal de un usuario de su perfil de usuario de SharePoint Server:
+Siga estos pasos básicos para eliminar la información personal de un usuario de su perfil de usuario de SharePoint Server:
 
 1.  Quite la información de usuario de cualquier sistema externo que inserte información en el perfil de usuario de SharePoint Server. Si usa la sincronización de directorios, es necesario quitar al usuario del entorno de Active Directory local.
 
 2.  Ejecute una [sincronización de perfiles](https://docs.microsoft.com/sharepoint/administration/start-profile-synchronization-manually) en SharePoint Server.
 
-3.  Elimine el perfil de SharePoint Server. Cuando complete esto, SharePoint Server eliminará por completo el perfil de la base de datos de perfiles de usuario en un plazo de 30 días. Se eliminarán el sitio personal y la página de perfil del usuario.
+3.  Elimine el perfil de SharePoint Server. Una vez hecho esto, SharePoint Server eliminará completamente el perfil de la base de datos de perfiles de usuario en 30 días. La página del perfil del usuario y el sitio personal serán eliminados.
 
-Después de eliminar un perfil de usuario, es posible que información limitada (como el identificador de usuario) aún quede registrada en las colecciones de sitios que visitó el usuario. Para eliminar estos datos de una colección de sitios específica, puede usar CSOM. Este es un script de ejemplo:
+Tras eliminar el perfil de un usuario, es posible que cierta información limitada (como la identificación del usuario) siga registrada en las colecciones del sitio que el usuario ha visitado. Si decide eliminar estos datos de una determinada colección de sitios, puede hacerlo utilizando el CSOM. A continuación se presenta un ejemplo de guión:
 
 ```powershell
 $username = "<admin@company.sharepoint.com>"
