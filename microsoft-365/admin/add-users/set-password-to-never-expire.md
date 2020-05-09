@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624039"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173501"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">seguridad & privacidad</a> .
-2. Junto a **Directiva de contraseñas** , seleccione **Editar**. 
-3. Si las contraseñas se configuran para que no expiren nunca, establezca el botón de alternancia en **desactivado**. Obtendrá la opción de especificar el número de días que deben transcurrir hasta la expiración de las contraseñas.
+1. En el centro de administración, vaya a **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">la página de configuración de</a> configuración.
+2. En la parte superior de la página Configuración, seleccione **seguridad & privacidad**.
+3. Establecer la **directiva de expiración de contraseña** 
+4. Si las contraseñas están configuradas para que no expiren nunca, haga clic en la casilla junto a **Establecer contraseñas de usuario para que expiren después de un número de días**. Obtendrá la opción de especificar el número de días que deben transcurrir hasta la expiración de las contraseñas.
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>Establecer la Directiva de expiración de contraseña para usuarios individuales
 

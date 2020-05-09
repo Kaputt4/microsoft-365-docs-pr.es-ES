@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden crear una lista de remitentes seguros en Microsoft 365 y EOP que permite que los mensajes entrantes omitan el filtrado de correo no deseado.
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036348"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173421"
 ---
 # <a name="create-safe-sender-lists"></a>Crear listas de remitentes seguros
 
@@ -85,7 +85,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 ## <a name="use-outlook-safe-senders"></a>Usar remitentes seguros de Outlook
 
-En lugar de una configuración de la organización, los usuarios o los administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+En lugar de una configuración de la organización, los usuarios o los administradores pueden agregar las direcciones de correo electrónico del remitente a la lista de remitentes seguros en el buzón. Para obtener instrucciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Esto no es aconsejable en la mayoría de las situaciones, ya que los remitentes omitirán las partes de la pila de filtrado. Aunque confíe en el remitente, el remitente podría estar en peligro y acabar de enviar contenido malintencionado. Es mejor dejar que los filtros hagan lo que se necesita para comprobar todos los mensajes y, a continuación, [informar del falso positivo/negativo a Microsoft](report-junk-email-messages-to-microsoft.md) si nuestros filtros no se han realizado correctamente. Esto también impide que [Zap](zero-hour-auto-purge.md) haga lo mismo con el mensaje.
 
 Cuando los mensajes omiten el filtrado de correo no deseado debido a la lista de remitentes seguros de un usuario, el campo de encabezado **X-Forefront-antispam-Report** contendrá el valor `SFV:SFE`, lo que indica que se han omitido los filtros de correo no deseado, suplantación de identidad y phishing.
 

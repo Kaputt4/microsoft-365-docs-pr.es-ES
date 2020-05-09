@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo restablecer las contraseñas con la herramienta de restablecimiento de contraseña de autoservicio.
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919440"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173535"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -46,14 +46,14 @@ Vea un breve vídeo sobre cómo permitir que los usuarios restablezcan sus propi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y para conocer Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="let-people-reset-their-own-passwords"></a>Permitir que los usuarios restablezcan sus propias contraseñas 
 
 Siga estos pasos para activar el restablecimiento de contraseña de autoservicio para todos los usuarios de su empresa.
   
 ::: moniker range="o365-worldwide"
-1.  En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">seguridad & privacidad</a> .
+1. En el centro de administración, vaya a **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">la página de configuración de</a> configuración.
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 ::: moniker-end
 
    
-2. Seleccione el **restablecimiento de contraseña de autoservicio**, seleccione el vínculo para **ir a Azure portal para activar el restablecimiento de contraseña de autoservicio**. Recibirá Azure de forma gratuita.
+2. En la parte superior de la página Configuración, seleccione **seguridad & privacidad**.
   
-3. Seleccione **usuarios** en el panel de navegación izquierdo y, a continuación, seleccione **restablecimiento de contraseña**.
+3. Seleccione **autoservicio de restablecimiento de contraseña**.
   
 4. En la página de propiedades, seleccione **todos** para habilitarlo para todos los usuarios de su empresa y, a continuación, seleccione **Guardar**.
   
-5. Cuando los usuarios inicien sesión en Office 365, se les pedirá que escriban información de contacto adicional para poder restablecer su contraseña en el futuro.
+5. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayude a restablecer la contraseña en el futuro.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

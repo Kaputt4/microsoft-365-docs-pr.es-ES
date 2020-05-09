@@ -1,6 +1,6 @@
 ---
-title: Puntuación de seguridad de Microsoft
-description: Describe la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, cómo se calculan los detalles y qué administradores de seguridad pueden esperar.
+title: Puntuación segura de Microsoft (iteración previa)
+description: Describe la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, cómo mejorar su postura de seguridad y qué administradores de seguridad pueden esperar.
 keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141512"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173397"
 ---
-# <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
+# <a name="microsoft-secure-score-previous-iteration"></a>Puntuación segura de Microsoft (iteración previa)
+
+>[!IMPORTANT]
+>Esta iteración de la puntuación segura de Microsoft se reemplaza por nuevos elementos de diseño y características en los próximos meses. Si aún no ve la iteración más reciente, pronto lo hará.
+>
+>Si ve una **métrica &** la pestaña tendencias junto a historial, está en la nueva iteración. [Ir a la puntuación segura de Microsoft (nueva)](microsoft-secure-score-new.md)
 
 La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Seguir las recomendaciones de puntuación de seguridad puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 

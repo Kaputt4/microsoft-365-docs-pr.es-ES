@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a configurar directivas de correo no deseado saliente que se aplican a usuarios, grupos o dominios específicos de la organización.
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036793"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173445"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Configurar el filtrado de spam de salida
 
@@ -53,7 +53,7 @@ La diferencia entre estos dos elementos no es obvia cuando se administran las di
 
 - Cuando quita una directiva de correo no deseado saliente del centro de seguridad & cumplimiento, se quita la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada.
 
-En Exchange Online PowerShell o PowerShell independiente de Exchange Online Protection, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Puede administrar las directivas ** \*de filtro de** correo no deseado saliente con los cmdlets-HostedContentFilterPolicy y administrar las reglas de filtro de correo no deseado saliente con los ** \*cmdlets-HostedContentFilterRule** .
+En Exchange Online PowerShell o PowerShell independiente de Exchange Online Protection, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Puede administrar las directivas ** \*de filtro de** correo no deseado saliente con los cmdlets-HostedOutboundSpamFilterPolicy y administrar las reglas de filtro de correo no deseado saliente con los ** \*cmdlets-HostedOutboundSpamFilterRule** .
 
 - En PowerShell, se crea la Directiva de filtro de correo no deseado saliente en primer lugar y, a continuación, se crea la regla de filtro de correo no deseado saliente que identifica la Directiva a la que se aplica la regla.
 

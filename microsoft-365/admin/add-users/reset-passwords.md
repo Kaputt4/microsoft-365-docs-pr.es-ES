@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064814"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173523"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -79,11 +79,11 @@ Estos pasos son solo para los usuarios que usan un plan de 365 para empresas de 
 
 Siga estos pasos si ha olvidado la contraseña pero puede iniciar sesión en Microsoft 365 porque, por ejemplo, la contraseña se guarda en el explorador: 
     
-1. En Microsoft 365, seleccione **configuración** \> **Office 365** \> **información personal**. 
+1. Seleccione su nombre (icono) en la esquina superior derecha >**información personal**de **mi cuenta** > . 
           
-2. Compruebe que la información de **contacto** y el **correo electrónico alternativo** sean correctos. Si no es así, cámbielas ahora. 
+2. En **detalles de contacto**, compruebe que el **correo electrónico alternativo** sea correcto y que haya proporcionado un número de teléfono móvil. Si no es así, cámbielas ahora. 
         
-3. Cierre de sesión de Office 365: Seleccione su nombre en la esquina superior derecha (en la imagen anterior, mostrado como **Diane**) \> **Cerrar sesión**. 
+3. Cerrar sesión: Seleccione su nombre en la esquina superior derecha (en la imagen anterior, que se muestra como **Diane**) \> **Cerrar sesión**. 
         
 4. Vuelva a iniciar sesión: escriba \> **su nombre de usuario a continuación** \> y seleccione **olvidé contraseña**. 
     
@@ -92,6 +92,8 @@ Siga estos pasos si ha olvidado la contraseña pero puede iniciar sesión en Mic
 Si ha olvidado la contraseña y no puede iniciar sesión: 
     
 - Pida a otro administrador global de su empresa que restablezca su contraseña.
+
+- Asegúrese de que ha proporcionado información de contacto alternativa, incluido un número de teléfono móvil. 
     
 - O [llame al soporte técnico de Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
