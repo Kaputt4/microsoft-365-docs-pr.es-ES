@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957290"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170919"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -56,7 +56,7 @@ Vea el siguiente vídeo (sin audio) para ver las nuevas capacidades en acción:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-Siempre tiene la opción de deshabilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive en cualquier momento.
+Siempre tiene la opción de deshabilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (no[participar](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) en cualquier momento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,21 +66,13 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación de sincronizació
 
 ## <a name="limitations"></a>Limitaciones
 
-- Cuando se habilitan las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, es posible que los usuarios que cambien una etiqueta de un archivo en una carpeta de sincronización de OneDrive no puedan guardar otros cambios que realicen en el archivo. Este escenario se aplica a los archivos etiquetados con cifrado, y también cuando el cambio de la etiqueta es de una etiqueta que no ha aplicado el cifrado a una etiqueta que aplica el cifrado. Los usuarios ven un [círculo rojo con un error de icono en forma de cruz blanca](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)y se les pide que guarden los cambios nuevos como una copia independiente.  
-    
-    Además de los cambios de etiqueta que inician los usuarios, se puede producir el mismo comportamiento si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios.
-    
-    Para evitar la pérdida de trabajo en estos escenarios, realice una de estas acciones:
-    - Para aplicar etiquetas, use las versiones web de las aplicaciones de Office.
-    - Cierre un archivo después de aplicar una etiqueta y, a continuación, vuelva a abrir el archivo para realizar otros cambios.
-
 - SharePoint no aplica automáticamente las etiquetas de confidencialidad a los archivos existentes que ya cifró mediante las etiquetas de Azure Information Protection. En su lugar, para que las características funcionen después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, complete estas tareas:
     
-    1. Asegúrese de que ha migrado las etiquetas de Azure Information Protection a las etiquetas de confidencialidad y las ha publicado en el centro de cumplimiento de Microsoft 365, o bien en el centro de administración de etiquetas equivalente.
+    1. Asegúrese de que ha [migrado las etiquetas de Azure Information Protection a las](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) etiquetas de confidencialidad y las ha [publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) en el centro de cumplimiento de Microsoft 365, o bien en el centro de administración de etiquetas equivalente.
     
     2. Descargue los archivos y, a continuación, cárguelos en SharePoint.
 
-- SharePoint no puede procesar archivos cifrados cuando la etiqueta que ha aplicado el cifrado tiene alguna de las siguientes configuraciones para el cifrado:
+- SharePoint no puede procesar archivos cifrados cuando la etiqueta que ha aplicado el cifrado tiene alguna de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **en Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** está seleccionada. Esta configuración se denomina a veces "permisos definidos por el usuario".
     - El **acceso del usuario a las expiraciones de contenido** se establece en un valor que no es **nunca**.
     
@@ -91,6 +83,8 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación de sincronizació
 - No se admite el sitio de seguimiento de documentos de Azure Information Protection.
 
 - Las aplicaciones de escritorio y las aplicaciones móviles de Office no admiten la coautoría para los archivos etiquetados con cifrado. Estas aplicaciones continúan a la vez que los archivos identificados y cifrados se abren en el modo de edición exclusivo.
+
+- Si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios, es posible que los usuarios no puedan guardar los cambios que realicen en el archivo en su carpeta de sincronización de OneDrive. Este escenario se aplica a los archivos etiquetados con cifrado, y también cuando el cambio de la etiqueta es de una etiqueta que no ha aplicado el cifrado a una etiqueta que aplica el cifrado. Los usuarios ven un [círculo rojo con un error de icono en forma de cruz blanca](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)y se les pide que guarden los cambios nuevos como una copia independiente. En su lugar, pueden cerrar y volver a abrir el archivo, o usar Office en la Web.
 
 - Si se carga un documento con etiquetas en SharePoint y la etiqueta aplicó el cifrado mediante una cuenta desde un nombre principal de servicio, el documento no se puede abrir en Office en la Web. Los escenarios de ejemplo incluyen Microsoft Cloud App Security y un archivo enviado a Teams por correo electrónico.
 

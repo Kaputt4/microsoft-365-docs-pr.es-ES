@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se podrán entrenar cuando uno de los clasificadores integrados no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266899"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173512"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -118,12 +118,12 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 21. Publique el clasificador.
 
-22. Una vez publicado, el clasificador estará disponible como condición en la [Directiva aplicar automáticamente etiquetas de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions) y en el cumplimiento de la [comunicación](communication-compliance.md).
+22. Una vez publicado, el clasificador estará disponible como condición en etiquetado automático de [Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), [aplicar automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions) y en el cumplimiento de la [comunicación](communication-compliance.md).
 
 > [!CAUTION]
 > Una vez publicado un clasificador, no puede pasar por ningún entrenamiento adicional, así que asegúrese de que ha probado y revisado el mayor número de elementos posible para asegurarse de que la precisión sea lo más alta posible.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

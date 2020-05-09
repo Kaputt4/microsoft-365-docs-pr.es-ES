@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943369"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173490"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
 
@@ -68,7 +68,7 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV:
 |**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el equipo local en el que ejecute el script en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización de empleado más actuales se cargarán en la nube de Microsoft.
+Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el mismo sistema que el script que ejecutó en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización de empleado más actuales se cargarán en la nube de Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: crear el conector de recursos humanos
 
@@ -136,7 +136,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
    |`appId` |Este es el identificador de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. | 
    |`appSecret`|Este es el secreto de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
    |`jobId`|Se trata del identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
-   |`csvFilePath`|Esta es la ruta de acceso al archivo en el equipo local (la que está usando para ejecutar el script) para el archivo CSV que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
+   |`csvFilePath`|Esta es la ruta de acceso del archivo CSV (que se almacena en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
    |||
    
    A continuación, se muestra un ejemplo de la sintaxis del script del conector de recursos humanos con valores reales para cada parámetro:
@@ -177,7 +177,7 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
 3. En la sección **acciones** , haga clic en **crear tarea**.
 
-4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos**. También puede Agregar una descripción opcional. 
+4. En la pestaña **General** , escriba un nombre descriptivo para la tarea programada; por ejemplo, **script de conector de recursos humanos**. También puede Agregar una descripción opcional.
 
 5. En **Opciones de seguridad**, haga lo siguiente:
 
