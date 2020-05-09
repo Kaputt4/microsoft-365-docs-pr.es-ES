@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066323"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156885"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -77,19 +77,13 @@ Microsoft ha logrado los informes de SOC 1 Tipo 2, SOC 2 Tipo 2 y SOC 3. En gene
 
 ### <a name="audit-cycle"></a>Ciclo de auditoría
 
-Los servicios de nube de Microsoft se auditan al menos anualmente para certificar que cumplen los controles SOC 1 (SSAE18, ISAE 3402) y SOC 2 (AT Sección 101).
+Los servicios de nube de Microsoft se auditan al menos anualmente para certificar que cumplen los controles SOC 1 (SSAE18, ISAE 3402), SOC 2 (AT Sección 101) y SOC 3.
 
-#### <a name="azure-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream y los Centros de datos de Microsoft
+#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream y los Centros de datos de Microsoft
 
-- [Informe SOC 1 Tipo 2 de Azure y Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2099601)
-- [Informe SOC 2 Tipo 2 de Azure y Azure Government](https://aka.ms/azuresoc2auditreport)
-- [Informe SOC 3 de Azure y Azure Government](https://aka.ms/azuresoc3auditreport)
-
-#### <a name="dynamics-365"></a>Dynamics 365
-
-- [Informe SOC 1 tipo 2 de Dynamics 365](https://aka.ms/Dynamics365SOC1AuditReport)
-- [Informe de auditoría SOC 2 AT 101 Tipo 2 de Dynamics 365](https://aka.ms/Dynamics365SOC2AuditReport)
-- [Ver cartas puente (cartas de confianza entre periodos no cubiertos por el SOC y el fin del año fiscal) y otros informes de auditoría](https://aka.ms/auditreports)
+- [Informe SOC 1 Tipo 2 de Azure + Dynamics 365 y Azure + Dynamics 365 Government](https://aka.ms/azuresoc1auditreport)
+- [Informe SOC 2 Tipo 2 de Azure + Dynamics 365 y Azure + Dynamics 365 Government](https://aka.ms/azuresoc2auditreport)
+- [Informe SOC 3 de Azure + Dynamics 365 y Azure + Dynamics 365 Government](https://aka.ms/azuresoc3auditreport)
 
 #### <a name="office-365"></a>Office 365
 
