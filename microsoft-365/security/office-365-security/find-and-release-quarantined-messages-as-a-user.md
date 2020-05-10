@@ -19,18 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre cómo ver y administrar mensajes en cuarentena en el Centro de seguridad y cumplimiento de Microsoft 365.
-ms.openlocfilehash: 177f60f1fccc764d74ec0374249a62c602cb84aa
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ff6cb3dbf9a0a2010bf792115c53265689873090
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036517"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173385"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user"></a>Buscar y liberar mensajes en cuarentena como usuario
 
 La cuarentena retiene los mensajes que pueden ser peligrosos o no deseados en las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online. Para obtener más información, consulte [Cuarentena en Office 365](quarantine-email-messages.md).
 
-Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de los que es destinatario y que fueron puestos en cuarentena como correo no deseado, correo electrónico masivo o (a partir de abril de 2020) de suplantación de identidad. Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento o (si el administrador ha configurado esto) en [notificaciones de correo no deseado para el usuario final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de los que es destinatario y que fueron puestos en cuarentena como correo no deseado o correo electrónico masivo. A partir de abril de 2020, puede ver o eliminar mensajes de phishing en cuarentena (no phishing de alta confianza) en los casos en que es un destinatario. Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento o (si el administrador ha configurado esto) en [notificaciones de correo no deseado para el usuario final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 

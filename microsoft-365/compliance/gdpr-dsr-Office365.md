@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: dbb24e3c7347faf09e5f14d3d28d17b8163ccc2c
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4620938a5f7f63d7da09d60d701e81c3bbae0fa
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166031"
+ms.locfileid: "44171009"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado del RGPD y CCPA
 
@@ -586,7 +586,7 @@ Después de eliminar una cuenta de usuario:
 - El usuario no podrá iniciar sesión en Office 365 ni obtener acceso a cualquiera de los recursos de Microsoft de su organización, como su cuenta de OneDrive para la Empresa, sitios de SharePoint Online y su buzón de Exchange Online.
 - Se eliminan los datos personales, como la dirección de correo electrónico, el alias, el número de teléfono y la dirección postal asociados con la cuenta del usuario.
 - Algunas aplicaciones de Office 365 eliminan información sobre el usuario. Por ejemplo, en Microsoft Flow, el usuario eliminado se elimina de la lista de propietarios para un flujo compartido.
-- Los registros generados por el sistema sobre el interesado se eliminarán 30 días después de eliminar la cuenta de usuario. Para más información, vea la sección [Eliminar registros generados por el sistema](#deleting-system-generated-logs).
+- Los registros generados por el sistema sobre el interesado, con la excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio, se eliminarán 30 días después de que se elimine la cuenta de usuario. Para más información, vea la sección [Eliminar registros generados por el sistema](#deleting-system-generated-logs).
 
 >[!IMPORTANT]
 >Después de eliminar una cuenta de usuario, ese usuario ya no podrá iniciar sesión en Office 365 ni en los productos o servicios de los que disponía anteriormente en su cuenta profesional o educativa. Ese usuario tampoco podrá iniciar ninguna solicitud DSR directamente a través de Microsoft en instancias en las que Microsoft es el responsable de los datos. Para obtener más información, vea la sección [Productos y servicios autenticados con el identificador de organización por los que Microsoft es responsable de datos](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) de la parte 4 de esta guía.
@@ -597,7 +597,7 @@ Después de eliminar una cuenta de usuario:
 Al igual que la eliminación temporal y la eliminación permanente de datos descritas en la sección anterior sobre el borrado de datos personales, también existe un estado de eliminación temporal y de eliminación permanente cuando se elimina una cuenta de usuario.
 
 - Al eliminar una cuenta de usuario (eliminando al usuario en el centro de administrador y en Azure Portal), esta queda eliminada temporalmente y pasa a la Papelera de reciclaje en Azure durante un máximo de 30 días. En este momento, se puede restaurar la cuenta de usuario.
-- Si ha eliminado permanentemente la cuenta de usuario, esta se quita de la Papelera de reciclaje en Azure. En este momento, ya no se podrán restaurar la cuenta de usuario y los datos asociados a ella se quitará permanentemente de la nube de Microsoft. Los registros generados por el sistema sobre el interesado se eliminarán tras eliminar la cuenta de usuario de forma permanente.
+- Si ha eliminado permanentemente la cuenta de usuario, esta se quita de la Papelera de reciclaje en Azure. En este momento, ya no se podrá restaurar la cuenta de usuario y los datos asociados a ella se quitarán permanentemente de la nube de Microsoft. La eliminación permanente de una cuenta elimina los registros generados por el sistema sobre el interesado, a excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio.
 
 Este es el proceso de alto nivel para eliminar usuarios de su organización.
 
@@ -1598,7 +1598,7 @@ Microsoft proporciona la capacidad de detectar datos de clientes directamente a 
 
 Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, tiene que quitar el usuario del servicio y eliminar permanentemente su cuenta de Azure Active Directory. Para obtener instrucciones sobre cómo eliminar un usuario de forma permanente, vea la sección [Eliminar un usuario](#deleting-a-user) en esta guía. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada.
 
-Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días se quitan los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365. Una de estas excepciones es que la eliminación permanente de la cuenta de usuario lleve más de 30 días en Exchange Online. Dado el carácter crítico del contenido de Exchange Online y para evitar la pérdida accidental de datos, el sistema se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte [Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
+Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días se quitan los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365, a excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio. Una de estas excepciones es que la eliminación permanente de la cuenta de usuario lleve más de 30 días en Exchange Online. Dado el carácter crítico del contenido de Exchange Online y para evitar la pérdida accidental de datos, el sistema se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte [Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
 
 La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, vea uno de los siguientes:
 
