@@ -180,7 +180,9 @@
                       href: mtp/custom-detection-rules.md
             - name: Puntuación de seguridad
               items:
-                - name: Puntuación de seguridad
+                - name: Puntuación de seguridad (nuevo)
+                  href: mtp/microsoft-secure-score-new.md
+                - name: Puntuación de seguridad (iteración anterior)
                   href: mtp/microsoft-secure-score.md
                 - name: Puntuación de seguridad (versión preliminar)
                   href: mtp/microsoft-secure-score-preview.md
