@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 4bc467b3da76a846d6d86e8812c542aa33f5e8b1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141460"
+ms.locfileid: "44160803"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 3. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
