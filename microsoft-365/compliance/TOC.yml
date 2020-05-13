@@ -247,15 +247,15 @@
       items:
         - name: Información general sobre el archivado de datos de terceros
           href: archiving-third-party-data.md
-        - name: Configurar un conector para archivar datos de Facebook
+        - name: Archivar datos de Facebook (versión preliminar)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Configurar un conector para archivar datos de Twitter
+        - name: Archivar datos de Twitter (versión preliminar)
           href: archive-twitter-data-with-sample-connector.md
-        - name: Configurar un conector para archivar datos de LinkedIn
+        - name: Archivar datos de LinkedIn
           href: archive-linkedin-data.md
-        - name: Configurar un conector para archivar datos de Instant Bloomberg
+        - name: Archivar datos de Instant Bloomberg
           href: archive-instant-bloomberg-data.md
-        - name: Configurar un conector para importar datos de RR.HH.
+        - name: Importar datos de RRHH (versión preliminar)
           href: import-hr-data.md
         - name: Trabajar con un socio para archivar datos de terceros
           href: work-with-partner-to-archive-third-party-data.md
