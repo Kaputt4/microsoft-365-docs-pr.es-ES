@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga más información sobre la autenticación multifactor en Microsoft 365 y los pasos que debe seguir para configurarla.
-ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 6d28e9e7db825aa9030196396ad420028dc1c881
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665673"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213133"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Planeación de multi-factor Authentication para implementaciones de Microsoft 365
 
@@ -131,10 +131,10 @@ Para habilitar MFA en la suscripción, siga estos pasos:
     
 2. [Configure la MFA para Microsoft 365](set-up-multi-factor-authentication.md).
     
-3. Informe a los usuarios individuales sobre cómo iniciar sesión mediante MFA. Consulte [iniciar sesión en Microsoft 365 con MFA](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb).
+3. Informe a los usuarios individuales sobre cómo iniciar sesión mediante MFA. Consulte [iniciar sesión en Microsoft 365 con MFA](https://support.office.com/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb).
 
 > [!IMPORTANT]
-> Si ha habilitado a los usuarios para la autenticación multifactor de Azure y tiene los dispositivos que ejecutan Office 2013 y que no están habilitados para la autenticación moderna, deberán usar AppPasswords en estos dispositivos. Puede encontrar más información sobre AppPasswords y cuándo y dónde se deben usar aquí: [contraseñas de aplicación con la autenticación multifactor de Azure](https://go.microsoft.com/fwlink/p/?LinkId=528178).
+> Si ha habilitado a los usuarios para la autenticación multifactor de Azure y tiene los dispositivos que ejecutan Office 2013 que no están habilitados para la autenticación moderna, deberán usar contraseñas de aplicación en estos dispositivos. Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) para obtener más información.
   
 ## <a name="faq"></a>Preguntas más frecuentes
 

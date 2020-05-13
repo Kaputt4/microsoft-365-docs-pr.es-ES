@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo funciona el nuevo conocimiento de inteligencia de inteligencia empresarial, lo que incluye cómo determinar rápidamente qué remitentes le envían de forma legítima correo no autenticado.
+description: Los administradores pueden obtener información sobre cómo funciona el análisis de inteligencia de suplantación de identidad, incluido cómo determinar rápidamente qué remitentes envían de forma legítima un correo no autenticado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033649"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208469"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial: información de inteligencia sobre la simulación de ATP en Microsoft 365
 
@@ -35,7 +35,7 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página del **Panel** de seguridad <https://protection.office.com/searchandinvestigation/dashboard>, use.
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página del **Panel de seguridad** , use <https://protection.office.com/searchandinvestigation/dashboard> .
 
   Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté mirando, la visión proporciona los mismos detalles y le permite realizar rápidamente las mismas tareas.
 

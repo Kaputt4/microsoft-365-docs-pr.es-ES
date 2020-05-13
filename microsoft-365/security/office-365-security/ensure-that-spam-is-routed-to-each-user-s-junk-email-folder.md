@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo enrutar correo no deseado a las carpetas de correo no deseado del usuario en un entorno híbrido de protección de Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036577"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209480"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar un EOP independiente para enviar correo no deseado a la carpeta de correo no deseado en entornos híbridos
 
@@ -44,7 +44,7 @@ Para obtener más información acerca de estos valores de encabezado, consulte [
 En este tema se describe cómo crear estas reglas de flujo de correo en el centro de administración de Exchange (EAC) y en el shell de administración de Exchange (Exchange PowerShell) en la organización de Exchange local.
 
 > [!TIP]
-> En lugar de entregar los mensajes a la carpeta de correo no deseado del usuario local, puede configurar directivas contra correo no deseado en EOP para poner en cuarentena los mensajes de correo no deseado en EOP. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+> En lugar de entregar los mensajes a la carpeta de correo no deseado del usuario local, puede configurar directivas contra correo no deseado en EOP para poner en cuarentena los mensajes de correo no deseado en EOP. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -60,7 +60,7 @@ En este tema se describe cómo crear estas reglas de flujo de correo en el centr
 
   - Si la regla de correo no deseado está habilitada en el buzón (el valor del parámetro _Enabled_ se $true en el cmdlet [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) en el shell de administración de Exchange). Es la regla de correo no deseado que realmente mueve el mensaje a la carpeta correo electrónico no deseado después de la entrega. De forma predeterminada, la regla de correo no deseado está habilitada en los buzones. Para obtener más información, consulte [configurar las opciones de correo no deseado de Exchange en buzones](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Para abrir el EAC en un servidor de Exchange, vea [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el shell de administración de Exchange [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell), consulte.
+- Para abrir el EAC en un servidor de Exchange, vea [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el shell de administración de Exchange, consulte [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
 - Para obtener más información acerca de las reglas de flujo de correo en Exchange local, consulte los siguientes temas:
 
@@ -74,7 +74,7 @@ En este tema se describe cómo crear estas reglas de flujo de correo en el centr
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Haga **Add** ![clic en agregar](../../media/ITPro-EAC-AddIcon.png) icono Agregar y seleccione **crear una nueva regla** en la lista desplegable que aparece.
+2. Haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) y seleccione **crear una nueva regla** en la lista desplegable que aparece.
 
 3. En la ventana **Nueva regla** que se abre, configure las siguientes opciones:
 
@@ -94,9 +94,9 @@ En este tema se describe cómo crear estas reglas de flujo de correo en el centr
 
      - Haga clic en **escribir texto**. En el cuadro de diálogo **especificar nombre de encabezado** que aparece, escriba **X-Forefront-antispam-Report** y, a continuación, haga clic en **Aceptar**.
 
-     - Haga clic en **escribir palabras**. En el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de los valores de encabezado de correo no deseado de EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), haga clic en **Agregar** ![icono](../../media/ITPro-EAC-AddIcon.png)agregar y, a continuación, haga clic en **Aceptar**.
+     - Haga clic en **escribir palabras**. En el cuadro de diálogo **especificar palabras o frases** que aparece, escriba uno de los valores de encabezado de correo no deseado de EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**), haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) y, a continuación, haga clic en **Aceptar**.
 
-   - **Haga lo siguiente**: seleccione **modificar las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)**.
+   - **Haga lo siguiente**: seleccione **modificar las propiedades del mensaje** \> **establecer el nivel de confianza contra correo no deseado (SCL)**.
 
      En el cuadro de diálogo **especificar SCL** que aparece, seleccione **6** (el valor predeterminado es **5**).
 
@@ -132,9 +132,9 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, vea
 
 Para comprobar que configuró correctamente EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en un entorno híbrido, realice uno de los siguientes pasos:
 
-- En el EAC, vaya a **Mail flow** \> **reglas**de flujo de correo, seleccione la regla y, a continuación,](../../media/ITPro-EAC-EditIcon.png) haga clic en **Editar** ![icono de edición para comprobar la configuración.
+- En el EAC, vaya a reglas de **flujo de correo** \> **Rules**, seleccione la regla y, a continuación, haga clic en **Editar** ![ icono ](../../media/ITPro-EAC-EditIcon.png) de edición para comprobar la configuración.
 
-- En el shell de administración de Exchange \<,\> Reemplace RuleName por el nombre de la regla de flujo de correo y regla el siguiente comando para comprobar la configuración:
+- En el shell de administración de Exchange, reemplace \< RuleName \> por el nombre de la regla de flujo de correo y regla el siguiente comando para comprobar la configuración:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

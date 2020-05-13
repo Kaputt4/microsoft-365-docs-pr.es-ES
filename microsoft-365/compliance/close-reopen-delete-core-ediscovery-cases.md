@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos básicos de eDiscovery. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551480"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208422"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -42,7 +42,7 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
 
 Para cerrar un caso:
   
-1. En la entrada de cumplimiento de Microsoft 365, haga clic en **eDiscovery** > **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
+1. En el centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery**  >  **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
 
 2. Haga clic en el nombre del caso que desea cerrar.
 
@@ -66,7 +66,7 @@ Para cerrar un caso:
 
 Cuando vuelva a abrir un caso, las suspensiones de exhibición de documentos electrónicos que estuvieran en su ubicación cuando se cerró el caso no se restituyerán automáticamente. Después de volver a abrir el caso, tendrá que ir a la página **suspensiones** y activar las suspensiones anteriores. Para activar una retención, selecciónela para mostrar la página de flotante y, a continuación, establezca el **Estado** en activar como **activado**.
   
-1. En la entrada de cumplimiento de Microsoft 365, haga clic en **eDiscovery** > **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
+1. En el centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery**  >  **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
 
 2. Haga clic en el nombre del caso que desea volver a abrir.
 
@@ -102,7 +102,7 @@ Para eliminar una suspensión de exhibición de documentos electrónicos:
 
 Para eliminar un caso:
 
-1. En la entrada de cumplimiento de Microsoft 365, haga clic en **eDiscovery** > **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
+1. En el centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery**  >  **Core** para mostrar la lista de casos de eDiscovery principales en su organización.
 
 2. Haga clic en el nombre del caso que desea eliminar.
 

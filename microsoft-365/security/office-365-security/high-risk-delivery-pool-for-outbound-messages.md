@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo se usa el grupo de entrega de alto riesgo para proteger la reputación de los servidores de correo electrónico en los centros de información de Microsoft 365.
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638039"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209192"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Grupo de entrega de alto riesgo para mensajes salientes
 
@@ -45,11 +45,8 @@ El grupo de entrega de alto riesgo saliente administra la entrega de todos los i
 Entre las posibles causas de un aumento de NDR se incluyen:
 
 - Una campaña de suplantación de identidad que afecta a uno de los clientes que usan el servicio.
-
 - Un ataque de recopilación de directorios.
-
 - Un ataque de correo no deseado.
-
 - Un servidor de correo electrónico malintencionado.
 
 Todos estos problemas pueden dar como resultado un aumento repentino del número de NDR que procesa el servicio. Muchas veces, estos NDR parecen ser correo no deseado para otros servidores y servicios de correo electrónico (también conocido como _[redispersión](backscatter-messages-and-eop.md)_).

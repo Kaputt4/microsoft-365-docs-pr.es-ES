@@ -1,5 +1,5 @@
 ---
-title: Reglas de flujo de correo (reglas de transporte)-protección en línea de Exchange
+title: Reglas de flujo de correo en EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización.
-ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036190"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209696"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Reglas de flujo de correo (reglas de transporte) en EOP independiente
 
-Puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para identificar y realizar acciones en mensajes que fluyen en su organización. Las reglas de flujo de correo son similares a las reglas de la Bandeja de entrada que hay disponibles en Outlook y en Outlook en la web. La diferencia principal radica en que las reglas de flujo de correo actúan en los mensajes mientras se encuentran en tránsito y no después de que se entreguen al buzón de correo. Contienen un conjunto más amplio de condiciones, excepciones y acciones, lo que le proporciona la flexibilidad de implementar muchos tipos de directivas de mensajería.
+En las organizaciones independientes de Exchange Online Protection (EOP) que no tienen buzones de Exchange Online, puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para identificar y realizar acciones en los mensajes que fluyen por la organización.
 
-En este artículo se explican los componentes de las reglas de flujo de correo y su funcionamiento.
+En este tema se explican los componentes de las reglas de flujo de correo y cómo funcionan.
 
 Para conocer los pasos para crear, copiar y administrar reglas de flujo de correo, consulte [Manage mail Flow Rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Para cada regla, tiene la posibilidad de aplicarla, probarla o probarla y notificar al remitente. Para obtener más información sobre las opciones de prueba, consulte [probar reglas de flujo de correo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) y [sugerencias de directivas en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
@@ -39,13 +39,13 @@ Para implementar directivas de mensajería específicas mediante el uso de regla
 
 - [Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [Crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md)
+- [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
 - [Reducción de las amenazas de malware a través del bloqueo de datos adjuntos en Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
 - [Definir reglas para cifrar o descifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-En el vídeo siguiente se ofrece una demostración de la configuración de reglas de flujo de correo en Exchange Online Protection.
+En el vídeo siguiente se ofrece una demostración de la configuración de reglas de flujo de correo en EOP independiente.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -55,13 +55,13 @@ Una regla de flujo de correo consta de condiciones, excepciones, acciones y prop
 
 - **Condiciones**: Identifique los mensajes a los que desea aplicar las acciones. Algunas condiciones examinan campos de encabezado del mensaje (por ejemplo, los campos Para, De o CC). Otras examinan propiedades del mensaje (por ejemplo, el asunto, el cuerpo, los datos adjuntos, el tamaño del mensaje o la clasificación del mensaje). La mayoría de las condiciones exigen que se especifique un operador de comparación (por ejemplo, es igual a, no es igual a o contiene) y un valor de coincidencia. En caso de que no haya condiciones o excepciones, la regla se aplica a todos los mensajes.
 
-Para obtener más información acerca de las condiciones de las reglas de flujo de correo en Exchange Online Protection, consulte [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Para obtener más información acerca de las condiciones de las reglas de flujo de correo en EOP independiente, consulte [mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 - **Excepciones**: opcionalmente, identifique los mensajes a los que no se deben aplicar las acciones. Los mismos identificadores de mensaje que están disponibles en las condiciones están también disponibles en las excepciones. Las excepciones invalidan las condiciones e impiden que se apliquen las acciones de regla a un mensaje, aunque este cumpla todas las condiciones configuradas.
 
 - **Acciones**: especificar qué hacer a los mensajes que coinciden con las condiciones de la regla y que no coinciden con ninguna de las excepciones. Existen numerosas acciones disponibles, como, por ejemplo, rechazar, eliminar o redirigir mensajes; agregar más destinatarios; agregar prefijos al asunto del mensaje; o insertar avisos de declinación de responsabilidades en el cuerpo del mensaje.
 
-Para obtener más información sobre las acciones de las reglas de flujo de correo que están disponibles en Exchange Online Protection, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+Para obtener más información sobre las acciones de las reglas de flujo de correo que están disponibles en EOP independiente, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 - **Propiedades**: especifique otras configuraciones de reglas que no sean condiciones, excepciones o acciones. Por ejemplo, especifican cuándo debe aplicarse la regla, si se va a aplicar o a probar y el periodo de tiempo en el que está activa.
 
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las propiedades de regla que están disponibl
 
 |**Nombre de la propiedad en el EAC**|**Nombre del parámetro en PowerShell**|**Descripción**|
 |:-----|:-----|:-----|
-|**Prioridad**|_Priority_|Indica el orden en el que se aplican las reglas a los mensajes. La prioridad predeterminada se establece en función del momento en el que se creó la regla (las reglas más antiguas tienen más prioridad que las más recientes y las reglas con una prioridad superior se procesan antes que las que tienen una prioridad inferior).   <br/><br/> La prioridad de la regla en el EAC se cambia moviendo la regla hacia arriba o hacia abajo en la lista de reglas. En el PowerShell, establezca el número de prioridad (0 es la prioridad más alta).   <br/><br/> Por ejemplo, si dispone de una regla para rechazar mensajes que incluyan un número de tarjeta de crédito y otra que exija su probación, deseará que se aplique primero la regla de rechazo y que dejen de aplicarse las demás.  |
+|**Prioridad**|_Priority_|Indica el orden en el que se aplican las reglas a los mensajes. La prioridad predeterminada se establece en función del momento en el que se creó la regla (las reglas más antiguas tienen más prioridad que las más recientes y las reglas con una prioridad superior se procesan antes que las que tienen una prioridad inferior).   <br/><br/> La prioridad de la regla en el EAC se cambia moviendo la regla hacia arriba o hacia abajo en la lista de reglas. En PowerShell, establezca el número de prioridad (0 es la prioridad más alta). <br/><br/> Por ejemplo, si dispone de una regla para rechazar mensajes que incluyan un número de tarjeta de crédito y otra que exija su probación, deseará que se aplique primero la regla de rechazo y que dejen de aplicarse las demás.  |
 |**Modo**|_Mode_|Puede especificar si quiere que la regla inicie el procesamiento de mensajes inmediatamente o si quiere probar las reglas sin afectar a la entrega del mensaje (con o sin sugerencias de directiva de prevención de pérdida de datos o DLP). <br/><br/> Mediante las sugerencias de directiva, se muestra una nota breve en Outlook o en Outlook en la web que ofrece información sobre posibles infracciones de la directiva al usuario que crea el mensaje. Para obtener más información, consulte **Policy Tips**.  <br/><br/> Para obtener más información acerca de los modos, consulte **Test a mail flow rule**.|
 |**Activar esta regla en la siguiente fecha** <br/><br/> **Desactivar esta regla en la siguiente fecha**|_ActivationDate_ <br/> _ExpiryDate_|Especifica el intervalo de fechas en que la regla está activa.|
 |Casilla **Activado** seleccionada o no|New rules: _Enabled_ parámetro en el cmdlet **New-TransportRule** . <br/><br/> Reglas existentes: Usar los cmdlets **Enable-TransportRule** o **Disable-TransportRule**. <br/><br/> El valor se muestra en la propiedad **State** de la regla.|Puede crear una regla deshabilitada y habilitarla cuando desee probarla. O bien, puede deshabilitar una regla sin eliminarla para conservar la configuración.|
@@ -95,15 +95,13 @@ En la tabla siguiente se describen las propiedades de regla que están disponibl
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Cómo se aplican las reglas de flujo de correo a los mensajes
 
-Todo el flujo de mensajes de su organización se evalúa mediante las reglas de flujo de correo habilitadas en esta. Las reglas se procesan en el orden que aparecen en la página **reglas** de **flujo** \> de correo en EAC, o bien en función del valor de parámetro _Priority_ correspondiente en el PowerShell.
+Todo el flujo de mensajes de su organización se evalúa mediante las reglas de flujo de correo habilitadas en esta. Las reglas se procesan en el orden que **Mail flow** aparecen en la \> página **reglas** de flujo de correo en EAC, o bien en función del valor de parámetro _Priority_ correspondiente en PowerShell.
 
 Cada regla también ofrece la opción de detener el procesamiento de reglas adicionales si se encuentra una coincidencia con la regla en cuestión. Esta configuración es importante para los mensajes que coinciden con las condiciones de varias reglas de flujo de correo (¿qué regla desea que se aplique al mensaje? ¿Todas? ¿Solo una?).
 
 ### <a name="differences-in-processing-based-on-message-type"></a>Diferencias en el procesamiento según el tipo de mensaje
 
 Hay varios tipos de mensajes que pasan a través de una organización. En la tabla siguiente, se muestran los tipos de mensajes que se pueden procesar mediante reglas de flujo de correo.
-
-****
 
 |**Tipo de mensaje**|**¿Se puede aplicar una regla?**|
 |:-----|:-----|
@@ -114,7 +112,7 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
 |**Mensajes con firma transparente**: mensajes que se han firmado pero no cifrado.|Sí|
 |**Mensajes de mensajería unificada**: mensajes creados o procesados por el servicio de mensajería unificada, como correo de voz, fax, notificaciones de llamadas perdidas y mensajes creados o reenviados mediante Microsoft Outlook Voice Access.|Sí|
 |**Mensajes anónimos**: mensajes enviados por remitentes anónimos.|Sí|
-|**Informes de lectura**: informes que se generan en respuesta a las solicitudes de confirmación de lectura por parte de los remitentes. Los informes de lectura tienen una clase `IPM.Note*.MdnRead` de `IPM.Note*.MdnNotRead`mensaje de o.|Sí|
+|**Informes de lectura**: informes que se generan en respuesta a las solicitudes de confirmación de lectura por parte de los remitentes. Los informes de lectura tienen una clase de mensaje de `IPM.Note*.MdnRead` o `IPM.Note*.MdnNotRead` .|Sí|
 
 ## <a name="what-else-should-i-know"></a>¿Qué más debo saber?
 

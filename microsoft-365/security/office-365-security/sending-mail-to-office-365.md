@@ -2,10 +2,10 @@
 title: Envío de correo a Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información como remitente externo, cómo puede aumentar la capacidad de entregar correo electrónico a los usuarios en Microsoft 365. Obtenga información sobre cómo informar sobre el correo electrónico no deseado & intentos de suplantación de identidad como usuario externo.
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035389"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209828"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envío de correo a Microsoft 365
 
-Estos artículos ayudarán a remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios de Office 365. También proporcionan información acerca de cómo puede informar sobre el correo no deseado y los intentos de suplantación de identidad, aunque no sea usted el usuario de Microsoft 365.
+Estos artículos ayudan a los remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios en Microsoft 365. También proporcionan información acerca de cómo puede informar sobre el correo no deseado y los intentos de suplantación de identidad, aunque no sea usted mismo un usuario de Microsoft 365.
 
 Si no es un cliente, pero está intentando enviar correo a alguien que es, está en el lugar correcto. Si es administrador y necesita ayuda para luchar contra el correo no deseado, esta no es la sección adecuada para usted. En su lugar, vaya a [protección antimalware y contra correo no deseado en Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

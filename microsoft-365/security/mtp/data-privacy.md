@@ -19,21 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d11fdc58f44c9e4bacb708fb246fdea40eb75cff
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 9d2c5ba495d6250ffb20f695edd515c63b123c30
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016067"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209264"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Seguridad y privacidad de los datos de la Protección contra amenazas de Microsoft
 
 **Aplica para:**
 - Protección contra amenazas de Microsoft
 
-Mediante el uso de la protección contra amenazas de Microsoft, usted da su consentimiento a los siguientes términos:
-
-*Al activar la protección contra amenazas de Microsoft (MTP), usted da su consentimiento a los siguientes términos. Los datos de cliente aplicables, tal y como se definen en las condiciones del servicio en línea (OST), se transferirán desde otros servicios de Microsoft a MTP. El uso de los datos de clientes en MTP seguirá las normas y compromisos de administración de datos para la protección contra amenazas avanzada de Microsoft defender (ATP de Microsoft defender). Usted reconoce que estos compromisos pueden diferir de los servicios desde los que se transfieren los datos de los clientes. Además, los datos de clientes almacenados en MTP se almacenarán en reposo en el área geográfica que seleccionó para el almacenamiento de los datos de cliente de MDATP, que pueden diferir de la geográfica que seleccionó en relación con otros servicios. Microsoft no transferirá los datos de los clientes fuera de la geografía excepto como se indica en la sección de ubicación de datos del [centro de confianza de Microsoft](https://www.microsoft.com/trust-center).*
+Microsoft Threat Protection opera en los centros de datos de Microsoft Azure en la Unión Europea, en el Reino Unido y en los Estados Unidos. Los datos de clientes recopilados por el servicio se almacenan en reposo en (a) la ubicación geográfica del inquilino como se identificó durante el aprovisionamiento o, (b) si Microsoft Threat Protection usa otro servicio de Microsoft online para procesar estos datos, la geolocalización definida por las reglas de almacenamiento de datos de ese otro servicio en línea.
 
 Para obtener más información sobre el almacenamiento de datos y la información de privacidad de los productos específicos, vea:
 - [Almacenamiento y privacidad de datos del ATP de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

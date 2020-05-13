@@ -15,33 +15,33 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para preparar datos para el análisis con eDiscovery avanzado. '
-ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para preparar datos para el análisis con EDiscovery avanzado. '
+ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626664"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208104"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparar datos para la exhibición avanzada de documentos electrónicos (Classic)
 
 En este tema se describe cómo cargar los resultados de una búsqueda de contenido en un caso en la exhibición avanzada de documentos electrónicos (Classic). 
   
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en versiones más recientes de eDiscovery avanzado, anunciamos la jubilación de la exhibición avanzada de documentos electrónicos, también conocida como *Advanced eDiscovery (Classic)* o *Advanced eDiscovery v 1.0*. Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> A medida que continuamos invirtiendo en nuevas versiones de eDiscovery avanzado, anunciamos la retirada de eDiscovery avanzado, también conocido como *eDiscovery avanzado (clásico)* o *eDiscovery avanzado v1.0* Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 ## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>Paso 1: preparar datos para la exhibición avanzada de documentos electrónicos
 
-Para analizar datos con la exhibición avanzada de documentos electrónicos, puede usar los resultados de una búsqueda de contenido que se ejecuta en &amp; el centro de seguridad y cumplimiento de Microsoft 365 (que aparece en la &amp; página búsqueda de **contenido** en el centro de seguridad y cumplimiento de Microsoft 365) o en una búsqueda asociada &amp; a un caso de exhibición de documentos electrónicos (en la página **eDiscovery** del centro de seguridad y cumplimiento). 
+Para analizar datos con la exhibición avanzada de documentos electrónicos, puede usar los resultados de una búsqueda de contenido que se ejecuta en el centro de seguridad y cumplimiento de Microsoft 365 &amp; (que aparece en la página **búsqueda de contenido** en el centro de seguridad y cumplimiento de Microsoft 365 &amp; ) o en una búsqueda asociada a un caso de exhibición de documentos electrónicos (en la página **eDiscovery** del centro de seguridad y &amp; cumplimiento). 
   
 Para obtener los pasos detallados sobre cómo preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, consulte [preparar los resultados de la búsqueda para la exhibición avanzada](prepare-search-results-for-advanced-ediscovery.md)de documentos electrónicos.
   
 > [!NOTE]
-> Si tiene datos fuera de Microsoft 365 y desea importarlos a Microsoft 365 para poder prepararlo y analizarlo en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) y el [archivado de datos de terceros](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Si tiene datos fuera de Microsoft 365 y desea importarlos a Microsoft 365 para poder prepararlo y analizarlo en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) y el [archivado de datos de terceros](https://go.microsoft.com/fwlink/p/?linkid=716918). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Paso 2: cargar datos de resultados de búsqueda en un caso en eDiscovery avanzado
 
-Después de preparar los resultados de la búsqueda en &amp; el centro de seguridad y cumplimiento para el análisis, el siguiente paso consiste en cargar los resultados de la búsqueda en un caso en eDiscovery avanzado. Para obtener información más detallada, consulte [ejecutar el módulo de proceso](run-the-process-module-in-advanced-ediscovery.md).
+Después de preparar los resultados de la búsqueda en el &amp; centro de seguridad y cumplimiento para el análisis, el siguiente paso consiste en cargar los resultados de la búsqueda en un caso en EDiscovery avanzado. Para obtener información más detallada, consulte [ejecutar el módulo de proceso](run-the-process-module-in-advanced-ediscovery.md).
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -59,11 +59,11 @@ Después de preparar los resultados de la búsqueda en &amp; el centro de seguri
     
     ![El caso se muestra en la exhibición avanzada de documentos electrónicos](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 1. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del &amp; centro de seguridad y cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista. 
+     Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 1. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del centro de seguridad y &amp; cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista. 
     
 6. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-Una vez que se agregan los &amp; resultados de la búsqueda del centro de seguridad y cumplimiento al caso de la exhibición avanzada de documentos electrónicos, el siguiente paso consiste en usar las herramientas de la exhibición avanzada de documentos electrónicos para analizar y deselección de los datos relevantes para el caso. 
+Una vez que se agregan los resultados de la búsqueda del centro de seguridad &amp; y cumplimiento al caso de la exhibición avanzada de documentos electrónicos, el siguiente paso consiste en usar las herramientas de la exhibición avanzada de documentos electrónicos para analizar y deselección de los datos relevantes para el caso. 
   
 ## <a name="see-also"></a>Vea también
 

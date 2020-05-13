@@ -1,5 +1,5 @@
 ---
-title: Información general de Exchange Online Protection
+title: Información general de Exchange Online Protection (EOP)
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,40 +13,47 @@ localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre Microsoft Exchange Online Protection (EOP) y cómo ayuda a proteger su organización contra correo no deseado y malware.
-ms.openlocfilehash: 4630c58bef49f13a1ae1536336afbac170418dcc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos y independientes.
+ms.openlocfilehash: 7a019b2651eda114bab8dcf9df6d9a6201558704
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036529"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206689"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
-Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería. EOP simplifica la administración de un entorno de mensajes y puede aliviar muchas de las cargas asociadas al mantenimiento del hardware y del software local.
+Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones de correo de Exchange Online.
 
-En la siguiente lista se describe cómo puede usar EOP para la protección de mensajes:
+Pero EOP también está disponible en los siguientes escenarios locales:
 
 - **En un escenario independiente**: EOP proporciona protección de correo electrónico basada en la nube para su organización de Exchange local o para cualquier otra solución de correo SMTP local.
 
-- **Como parte de Exchange Online**: EOP es la protección integrada para buzones hospedados en la nube en Exchange Online y Office 365. Consulte [proteger contra amenazas](protect-against-threats.md) para ayudarle a configurar estas capacidades de Exchange Online.
+- **En una implementación híbrida**: EOP se puede configurar para proteger su entorno de correo electrónico y controlar el enrutamiento de correo cuando tiene una mezcla de buzones locales y en la nube.
 
-- **En una implementación híbrida**: EOP se puede configurar para que proteja el entorno de mensajería y controle el enrutamiento del correo cuando se tiene una mezcla de buzones locales y en la nube.
+En estos escenarios, EOP puede simplificar la administración de su entorno de correo electrónico y aliviar muchas de las cargas que se incluyen en el mantenimiento de hardware y software local.
 
-> [!NOTE]
-> Estos artículos de Exchange Online Protection se aplican a entornos híbridos y locales.
+El resto de este tema explica cómo funciona EOP en entornos independientes e híbridos.
 
 ## <a name="how-eop-works"></a>Cómo funciona EOP
 
 Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el correo entrante:
 
-![Diagrama de proceso de correo electrónico.](../../media/GitHubBugs/emailprocessingineop1.png)
+![Diagrama del proceso de correo electrónico](../../media/emailprocessingineop1.png)
 
-Un mensaje entrante pasa inicialmente por el filtrado de conexiones, que comprueba la reputación del remitente e inspecciona el mensaje en busca de malware. En este punto, la mayoría de los correos no deseados se interrumpen y se eliminan mediante EOP. Los mensajes continúan a través del filtrado de directivas, donde los mensajes se evalúan con reglas de flujo de correo personalizado (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. (Las comprobaciones de prevención de pérdida de datos también se producen en este momento, si tiene esa característica; para obtener información sobre la disponibilidad de características, consulte la [Descripción del servicio de protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)). A continuación, los mensajes pasan por el filtrado de contenido, donde se comprueba la terminología o las propiedades comunes del correo no deseado en el contenido. Un mensaje determinado como correo no deseado por el filtro de contenido se puede enviar a la carpeta de correo no deseado o a la cuarentena de un usuario, entre otras opciones (incluida la bandeja de entrada o la carpeta personalizada), en función de la configuración. Una vez que un mensaje pasa todas estas capas de protección correctamente, se entrega al destinatario.
+- Un mensaje entrante pasa inicialmente por el filtrado de conexiones, que comprueba la reputación del remitente e inspecciona el mensaje en busca de malware. En este punto, la mayoría de los correos no deseados se interrumpen y se eliminan mediante EOP. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
+
+- Los mensajes continúan a través del filtrado de directivas, donde los mensajes se evalúan con reglas de flujo de correo personalizado (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. Las comprobaciones de prevención de pérdida de datos (DLP) también se producen en este punto (Exchange Enterprise CAL con servicios).
+
+- A continuación, los mensajes pasan a través del filtrado contra correo no deseado (también conocido como filtrado de contenido). Un mensaje que se determina como correo no deseado se puede enviar a la carpeta de correo no deseado o a la cuarentena de un usuario, entre otras opciones. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+
+- Una vez que un mensaje pasa todas estas capas de protección correctamente, se entrega al destinatario.
+
+Para obtener más información, consulte [Order and Precedence of email Protection](how-policies-and-protections-are-combined.md).
 
 ### <a name="eop-datacenters"></a>Centros de datos de EOP
 
-EOP se ejecuta en una red mundial de centros de datos que están diseñados para proporcionar la mejor disponibilidad. Por ejemplo, si un centro de datos no está disponible, los mensajes de correo electrónico se enrutan automáticamente a otro centro de datos sin interrupciones del servicio. Los servidores de los centros de datos aceptan mensajes en nombre del usuario y disponen una capa de separación entre la organización e Internet, lo que permite reducir la carga en los servidores. Gracias a esta red de alta disponibilidad, Microsoft se asegura que el correo llegue a la organización de manera puntual.
+EOP se ejecuta en una red mundial de centros de datos que están diseñados para proporcionar la mejor disponibilidad. Por ejemplo, si un centro de datos no está disponible, los mensajes de correo electrónico se enrutan automáticamente a otro centro de datos sin interrupciones del servicio. Los servidores de cada centro de recursos aceptan mensajes en su nombre, lo que proporciona una capa de separación entre la organización e Internet, con lo que se reduce la carga en los servidores. Gracias a esta red de alta disponibilidad, Microsoft se asegura que el correo llegue a la organización de manera puntual.
 
 EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro de una región. Si está aprovisionado en una región, todos sus mensajes se procesarán usando el enrutamiento de correo de esa región. La siguiente lista muestra cómo funciona el enrutamiento regional de correo para los centros de datos de EOP:
 
@@ -58,32 +65,50 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 - Para la nube de la comunidad de organismos oficiales (GCC), todos los buzones de Exchange Online están ubicados en centros de datos de Estados Unidos y los mensajes se enrutan a través de centros de datos de Estados Unidos para el filtrado de EOP.
 
-## <a name="eop-plans-and-features"></a>Planes y características de EOP
+## <a name="eop-plans-and-features-for-on-premises-email-organizations"></a>Planes y características de EOP para organizaciones de correo electrónico locales
 
 Los planes de suscripción de EOP disponibles son los siguientes:
 
 - **EOP independiente**: debe inscribirse en EOP para proteger su organización de correo electrónico local.
 
-- **Características de EOP en Exchange Online**: cualquier suscripción que incluya Exchange Online (independiente o como parte de Office 365) utiliza EOP para proteger los buzones de Exchange Online.
+- **Características de EOP en Exchange Online**: cualquier suscripción que incluya Exchange Online (independiente o como parte de Microsoft 365) utiliza EOP para proteger los buzones de correo de Exchange Online.
 
 - **Exchange Enterprise cal con servicios**: Si tiene una organización de Exchange local en la que ha comprado otras licencias de Exchange Enterprise cal con servicios, EOP forma parte de los servicios incluidos.
 
 Para obtener información acerca de los requisitos, límites importantes y disponibilidad de características en todos los planes de suscripción de EOP, vea la [Descripción del servicio protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-## <a name="setting-up-eop"></a>Configurar EOP
+## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Configuración de EOP para organizaciones de correo electrónico locales
 
 Configurar EOP puede ser fácil, especialmente en las compañías pequeñas con pocas reglas de cumplimiento. Sin embargo, si tiene una organización grande con muchos dominios, reglas de cumplimiento personalizadas o flujo de correo híbrido, la configuración puede llevar más tiempo e implicar más planeación.
 
 Si ya ha comprado EOP, vea [Configurar un servicio de EOP](set-up-your-eop-service.md) para asegurarse de completar todos los pasos necesarios para configurar EOP de modo que proteja el entorno de mensajería.
 
-## <a name="for-more-information"></a>Más información
+## <a name="eop-help-for-admins"></a>Ayuda de EOP para administradores
 
-[Características de EOP](eop-features.md)
+El contenido de la Ayuda para administradores de EOP consta de las siguientes categorías principales:
 
-[Preguntas más frecuentes sobre EOP](eop-general-faq.md)
+- [Exchange Online Protection Overview](exchange-online-protection-overview.md): presenta cómo funciona EOP y proporciona vínculos a información adicional.
 
-[Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.md)
+- [Características de EOP](eop-features.md): proporciona una lista de las características que están disponibles en EOP.
 
-[Preguntas más frecuentes sobre administración delegada](delegated-administration-faq.md)
+- [Configurar el servicio de EOP](set-up-your-eop-service.md): proporciona los pasos para configurar el servicio de EOP y vínculos a información adicional.
 
-[Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
+- [Cambiar a EOP desde Google Postini, Barracuda Spam y virus firewall o Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md): describe el proceso para cambiar a EOP desde otro producto de protección de correo electrónico.
+
+- [Administrar destinatarios en EOP independiente](manage-recipients-in-eop.md): describe cómo administrar usuarios y grupos de correo en EOP.
+
+- [Flujo de correo en EOP](mail-flow-in-eop.md): describe cómo configurar escenarios de flujo de correo personalizados mediante conectores, cómo administrar dominios asociados con el servicio y cómo habilitar la característica de bloqueo perimetral basado en directorios (DBEB).
+
+- [Best Practices for Configuring EOP](best-practices-for-configuring-eop.md): describe las opciones de configuración recomendadas para después de configurar y aprovisionar el servicio.
+
+- [Informes de auditoría en EOP independiente](auditing-reports-in-eop.md): describe cómo usar los informes de auditoría para realizar un seguimiento de los cambios de configuración en el servicio.
+
+- [Protección contra correo electrónico no deseado y antimalware en EOP](anti-spam-and-anti-malware-protection.md): describe el filtrado de correo no deseado y el filtrado de malware y muestra cómo personalizarlos para satisfacer mejor las necesidades de su organización. También se describen las tareas que los administradores y los usuarios finales pueden realizar en los mensajes en cuarentena.
+
+- [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): describe los informes y las herramientas de solución de problemas que están disponibles.
+
+- [Centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md): describe cómo tener acceso y navegar por la interfaz de administración del centro de administración de Exchange (EAC) para administrar el servicio de EOP.
+
+- [PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): proporciona información sobre PowerShell remoto, que permite administrar el servicio EOP desde la línea de comandos.
+
+- [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Proporciona información sobre cómo obtener ayuda y soporte técnico.

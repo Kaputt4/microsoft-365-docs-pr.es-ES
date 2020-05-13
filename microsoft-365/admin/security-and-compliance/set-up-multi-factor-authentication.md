@@ -1,5 +1,5 @@
 ---
-title: Configurar multi-factor Authentication para los usuarios
+title: Configuración de autenticación multifactor para usuarios
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información sobre cómo usar los valores predeterminados de seguridad para configurar la autenticación multifactor para los usuarios.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665637"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213015"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
   
@@ -75,7 +75,9 @@ Si ha configurado previamente MFA con directivas de línea base, debe desactivar
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Habilitar la autenticación moderna para la organización
 
-Todas las aplicaciones de cliente de Office 2016 admiten la MFA mediante el uso de la Biblioteca de autenticación de Active Directory (ADAL). Esto significa que las contraseñas de aplicaciones no son necesarias para los clientes de Office 2016. Sin embargo, debe asegurarse de que la suscripción a Microsoft 365 está habilitada para ADAL o para la autenticación moderna.
+Todas las aplicaciones de cliente de Office 2016 admiten la MFA mediante el uso de la Biblioteca de autenticación de Active Directory (ADAL). Esto significa que las contraseñas de aplicaciones no son necesarias para los clientes de Office 2016. Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) para obtener más información.
+
+Sin embargo, debe asegurarse de que la suscripción a Microsoft 365 está habilitada para ADAL o para la autenticación moderna.
 
 1. Para habilitar la autenticación moderna, en el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=834822), seleccione **Configuración** \>**Configuración **y después, en la pestaña **Servicios** elija **Autenticación moderna** en la lista.
 

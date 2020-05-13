@@ -13,23 +13,21 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, los clientes de Exchange Online Protection (EOP) pueden obtener información sobre cómo configurar el enrutamiento de correo personalizado que puede cumplir sus requisitos empresariales.
-ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: El administrador puede obtener información sobre las opciones para configurar el flujo de correo y el enrutamiento en Exchange Online Protection (EOP).
+ms.openlocfilehash: cb2ae7370d50fe32802ad5c279cc2170eb35f581
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034237"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208335"
 ---
 # <a name="mail-flow-in-eop"></a>Flujo de correo en EOP
 
-Como cliente de Exchange Online Protection (EOP), todos los mensajes enviados a su organización pasan a través de EOP antes de sus trabajadores los vean. Tanto si hospeda todos los buzones en la nube con Exchange Online, como si los hospeda localmente (lo que se denomina escenario independiente), quizás para continuar aprovechando las ventajas de la infraestructura existente, puede elegir cómo enrutar los mensajes que pasarán por EOP para procesarlos antes de que se enruten a los buzones de los trabajadores.
-
-Quizás quiera configurar un enrutamiento de correo personalizado para que su mensajería cumpla los requisitos de la empresa. Por ejemplo, se puede pasar todo el correo electrónico saliente a través de un dispositivo de filtrado de directivas.
+En Microsoft 365 organizaciones con buzones de Exchange online o con organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, todos los mensajes enviados a la organización pasan a través de EOP antes de que los trabajadores los vean. Tiene opciones sobre cómo enrutar los mensajes que pasan a través de EOP para su procesamiento antes de que se enruten a sus buzones de trabajo.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Trabajar con mensajes y opciones de acceso de mensajes
 
-EOP ofrece mucha flexibilidad para enrutar los mensajes. Los temas siguientes explican los pasos del proceso de flujo de correo.
+EOP ofrece flexibilidad en el modo en que se enrutan los mensajes. Los temas siguientes explican los pasos del proceso de flujo de correo.
 
 [Usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking) Describe la característica de bloqueo perimetral basado en directorios que permite rechazar mensajes para destinatarios no válidos en el perímetro de la red de servicio.
 
@@ -37,9 +35,11 @@ EOP ofrece mucha flexibilidad para enrutar los mensajes. Los temas siguientes ex
 
 Si agrega subdominios a la organización, el servicio de EOP también puede ayudarle a administrarlos. Obtenga más información sobre subdominios en [enable mail Flow for Subdomains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) presenta los conectores y muestra cómo usarlos para personalizar el enrutamiento de correo. Los escenarios incluyen garantizar una comunicación segura con una organización asociada y configurar un host inteligente.
+[Configurar el flujo de correo mediante conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) presenta los conectores y muestra cómo se pueden usar para personalizar el enrutamiento de correo. Los escenarios incluyen garantizar una comunicación segura con una organización asociada y configurar un host inteligente.
 
-Para asegurarse de que el correo electrónico no deseado se enruta correctamente a la carpeta de correo electrónico no deseado de cada usuario, debe realizar un par de pasos de configuración. Se describen en [Configure Standalone EOP para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si no desea mover mensajes a la carpeta de correo electrónico no deseado de cada usuario, puede elegir otra acción editando las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
+El [filtrado mejorado para conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) describe cómo configurar conectores si el correo se enruta a un servicio o dispositivo antes de EOP.
+
+En las organizaciones independientes de EOP, debe realizar un par de pasos de configuración para asegurarse de que el correo no deseado se enruta correctamente a la carpeta de correo electrónico no deseado de cada usuario. Se describen en [Configure Standalone EOP para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si no desea mover mensajes a la carpeta de correo electrónico no deseado de cada usuario, puede elegir otra acción editando las directivas contra correo no deseado (también conocidas como directivas de filtro de contenido). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Comprobar el flujo de correo
 

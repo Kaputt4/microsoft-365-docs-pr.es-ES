@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre la configuración y los filtros contra correo electrónico no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Microsoft 365.
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre la configuración y los filtros de correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034063"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211421"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Protección contra correo no deseado en Microsoft 365
+# <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
 > [!NOTE]
-> Este tema está destinado a los administradores de Microsoft 365. Para los temas de los usuarios finales, vea [información general sobre el filtro de correo no deseado](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) y [obtenga información sobre el correo no deseado y el phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Este tema está destinado a los administradores. Para los temas de los usuarios finales, vea [información general sobre el filtro de correo no deseado](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) y [obtenga información sobre el correo no deseado y el phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Si es un cliente de Microsoft 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico se protegen automáticamente contra correo no deseado (correo no deseado) mediante EOP.
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP protege automáticamente contra correo no deseado (correo no deseado).
 
 El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. La tecnología de protección contra correo no deseado y antiphishing de EOP se aplica en nuestras plataformas de correo electrónico para proporcionar a los usuarios las herramientas e innovaciones más recientes contra el correo no deseado y antiphishing a través de la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
 
@@ -43,7 +43,7 @@ Para ayudar a reducir el correo no deseado, EOP incluye protección contra corre
 
 La configuración contra correo no deseado en EOP se realiza de las siguientes tecnologías:
 
-- **Filtrado de conexiones**: identifica los servidores de origen de correo electrónico buenos y defectuosos al principio de la conexión de correo electrónico entrante a través de la lista de direcciones IP permitidas, la lista de direcciones IP bloqueadas y la *lista segura* (una lista de remitentes de confianza dinámicos pero no editables que mantiene Microsoft). Estas opciones se configuran en la Directiva de filtro de conexión. Para obtener más información, vea [configurar el filtrado de conexiones en Microsoft 365](configure-the-connection-filter-policy.md).
+- **Filtrado de conexiones**: identifica los servidores de origen de correo electrónico buenos y defectuosos al principio de la conexión de correo electrónico entrante a través de la lista de direcciones IP permitidas, la lista de direcciones IP bloqueadas y la *lista segura* (una lista de remitentes de confianza dinámicos pero no editables que mantiene Microsoft). Estas opciones se configuran en la Directiva de filtro de conexión. Para obtener más información, vea [configurar el filtrado de conexiones](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > La inteligencia de identidad utiliza el filtrado de conexiones para crear listas de permitidos y bloqueados de remitentes que suplantan el dominio de correo electrónico. Para obtener más información, vea más información [acerca de la inteligencia de suplantación de identidad en Microsoft 365](learn-about-spoof-intelligence.md).
@@ -105,7 +105,7 @@ Estos son algunos de los pasos que puede seguir para ayudar a evitar falsos posi
 
   Para obtener más información acerca de estas opciones, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Use las listas de remitentes seguros disponibles**: para obtener más información, vea [Create Safe Sender lists] (Create-Safe-Sender-lists-in-office-365.MD.
+- **Use las listas de remitentes seguros disponibles**: para obtener más información, vea [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Compruebe que los usuarios se encuentran dentro de los límites de envío y recepción** , tal y como se describe en [límites de recepción y envío](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) en la descripción del servicio de Exchange Online.
 

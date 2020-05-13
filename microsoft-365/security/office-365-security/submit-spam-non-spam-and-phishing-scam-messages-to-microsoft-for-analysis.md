@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
+description: Los administradores y los usuarios pueden obtener información sobre cómo enviar mensajes de correo electrónico (correo correcto marcado como correo incorrecto o incorrecto) a Microsoft para su análisis.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7fc26e1cba976e68b8dcfee5ec8b4fe366b8c47
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035241"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208614"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
 > [!NOTE]
-> Si es administrador de una organización de Microsoft 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+> Si es administrador de una organización con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
 
 Puede resultar frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad (phishing) en su bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente los filtros de correo no deseado para que sean más precisos.
 
@@ -57,7 +57,7 @@ Si recibe un mensaje que pasa a través del filtrado de correo no deseado que de
 3. Cuando haya terminado, haga clic en **Enviar**.
 
 > [!TIP]
-> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se identifican como correo no deseado. Para obtener más información, vea [crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md).
+> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se identifican como correo no deseado. Para obtener más información, vea [crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="submit-false-positives-to-microsoft"></a>Enviar falsos positivos a Microsoft
 
@@ -66,7 +66,7 @@ Si recibe un mensaje que pasa a través del filtrado de correo no deseado que de
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y (según los resultados del análisis) se pueden ajustar los filtros de todo el servicio para permitir el paso del mensaje.
 
-1. Cree un nuevo mensaje de correo electrónico en `not_junk@office365.microsoft.com` blanco con como destinatario:
+1. Cree un nuevo mensaje de correo electrónico en blanco con `not_junk@office365.microsoft.com` como destinatario:
 
 2. Arrastre y coloque el mensaje con identificación indebido en el nuevo mensaje. De este modo, se guardará el mensaje identificado indebido como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
@@ -76,7 +76,7 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 3. Cuando haya terminado, haga clic en **Enviar**.
 
 > [!TIP]
-> Los administradores tienen varias formas diferentes de permitir que mensajes específicos omitan el filtrado de correo no deseado. Para obtener más información, consulte [crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md).
+> Los administradores tienen varias formas diferentes de permitir que mensajes específicos omitan el filtrado de correo no deseado. Para obtener más información, consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Crear una regla de flujo de correo para recibir copias de mensajes que se notifican a Microsoft
 

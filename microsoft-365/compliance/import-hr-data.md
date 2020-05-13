@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173490"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210576"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurar un conector para importar datos de recursos humanos (versión preliminar)
 
 Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 365 para importar datos de recursos humanos (HR), como la fecha en que un empleado envió su retirada y la fecha del último día del empleado. Estos datos de recursos humanos pueden usarse en las soluciones de protección de la información de Microsoft, como la nueva [solución de administración de riesgos de Insider](insider-risk-management.md), para ayudar a proteger su organización de la actividad malintencionada o del robo de datos dentro de la organización. La configuración de un conector de recursos humanos consiste en la creación de una aplicación en Azure Active Directory que se usa para la autenticación por conector, la creación de archivos de asignación CSV que contienen los datos de recursos humanos, la creación de un conector de datos en el centro de cumplimiento y la ejecución de un script (en forma de base programada) que recopila los datos de recursos humanos del archivo A continuación, el conector de datos se usa soluciones de cumplimiento de Microsoft (como la administración de riesgos de Insider) para obtener acceso a los datos de recursos humanos que se importaron a la organización de Microsoft 365.
 
@@ -64,8 +64,8 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV:
 |**Nombre de columna**|**Descripción**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Especifica la dirección de correo electrónico del empleado que ha finalizado.|
-| **TerminationDate** <br/> |Especifica la fecha de finalización oficial del empleo de la persona en la organización. Por ejemplo, puede ser la fecha en la que el empleado dio su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Especifica la fecha de finalización oficial del empleo de la persona en la organización. Por ejemplo, puede ser la fecha en la que el empleado dio su aviso sobre cómo dejar la organización. Esta fecha puede ser distinta a la fecha del último día de trabajo de la persona. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Especifica el último día de trabajo del empleado que ha finalizado. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el mismo sistema que el script que ejecutó en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de finalización de empleado más actuales se cargarán en la nube de Microsoft.
@@ -118,7 +118,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
 4. Modifique el script de ejemplo para su organización, si es necesario.
 
-5. Guarde el archivo de texto como un archivo de script de Windows PowerShell mediante un sufijo `.ps1`de nombre de archivo de; por ejemplo, `HRConnector.ps1`.
+5. Guarde el archivo de texto como un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de `.ps1` ; por ejemplo, `HRConnector.ps1` .
 
 6. Abra un símbolo del sistema en el equipo local y vaya al directorio donde guardó el script.
 
@@ -199,7 +199,7 @@ Puede usar la aplicación programador de tareas de Windows para ejecutar el scri
 
    a. En la lista desplegable **acción** , asegúrese de que está seleccionado **iniciar un programa** .
 
-   b. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`cuadro:.
+   b. En el cuadro **programa/script** , haga clic en **examinar**, vaya a la siguiente ubicación y selecciónela para que la ruta de acceso aparezca en el cuadro: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
    c. En el cuadro **Agregar argumentos (opcional)** , pegue el mismo comando de script que ejecutó en el paso 4. Por ejemplo: `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

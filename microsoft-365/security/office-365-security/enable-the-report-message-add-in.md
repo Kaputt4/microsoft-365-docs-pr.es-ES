@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939480"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209492"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
 > [!NOTE]
-> Si es administrador de una organización con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+> Si es administrador de una organización de Microsoft 365 con buzones de correo de Exchange Online, le recomendamos que use el portal de envíos del centro de seguridad & cumplimiento. Para obtener más información, vea [usar el envío de administración para enviar un correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
 
 El complemento de mensajes de informe para Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) permite a los usuarios informar fácilmente de falsos positivos (correo electrónico bueno marcado como malo) o falsos negativos (se permite correo electrónico erróneo) para Microsoft y sus filiales para el análisis. Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico.
 
@@ -54,7 +54,7 @@ Si es administrador global o administrador de Exchange Online y Exchange está c
   - Buzones de correo en organizaciones locales de Exchange
   - Las suscripciones GCC, GCC HIGH o DoD
 
-- Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Office 365](user-submission.md).
+- Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online](user-submission.md).
 
 - El explorador Web existente debe funcionar con el complemento de mensajes de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.
 
@@ -64,7 +64,7 @@ Si es administrador global o administrador de Exchange Online y Exchange está c
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtener el complemento de mensajes de informe para usted mismo
 
-1. Vaya a Microsoft AppSource en <https://appsource.microsoft.com/marketplace/apps> y busque el complemento de mensajes de informe. Para ir directamente al complemento de mensajes de informe, vaya a <https://appsource.microsoft.com/product/office/wa104381180>.
+1. Vaya a Microsoft AppSource en <https://appsource.microsoft.com/marketplace/apps> y busque el complemento de mensajes de informe. Para ir directamente al complemento de mensajes de informe, vaya a <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. Haga clic en **obtener ahora**.
 
@@ -91,7 +91,7 @@ Para obtener información sobre cómo usar el complemento, vea [usar el compleme
 > [!NOTE]
 > El complemento puede tardar hasta 12 horas en aparecer en la organización.
 
-1. En el centro de administración de Microsoft 365, vaya a la página **servicios & complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>y, a continuación, haga clic en **implementar complemento**.
+1. En el centro de administración de Microsoft 365, vaya a la página **servicios & complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> y, a continuación, haga clic en **implementar complemento**.
 
    ![Página servicios y complementos en el centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -101,7 +101,7 @@ Para obtener información sobre cómo usar el complemento, vea [usar el compleme
 
    ![Implementar una nueva página de complemento](../../media/NewAddInScreen2.png)
 
-4. En la **página seleccionar complemento** que aparece, haga clic en el cuadro de **búsqueda** , escriba **mensaje de informe**y, a continuación, haga](../../media/search-icon.png) **clic en buscar en** ![el icono de búsqueda. En la lista de resultados, buscar **mensaje de informe** y, a continuación, haga clic en **Agregar**.
+4. En la página **seleccionar complemento** que aparece, haga clic en el cuadro de **búsqueda** , escriba **mensaje de informe**y, a continuación, haga clic en buscar en el icono de **Search** ![ búsqueda ](../../media/search-icon.png) . En la lista de resultados, buscar **mensaje de informe** y, a continuación, haga clic en **Agregar**.
 
    ![Seleccionar resultados de la búsqueda de complementos](../../media/NewAddInScreen3.png)
 
@@ -149,7 +149,7 @@ Cuando notifique a los usuarios sobre el complemento de mensajes de informe, inc
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisión o edición de la configuración del complemento de mensajes de informe
 
-1. En el centro de administración de Microsoft 365, vaya a la página **servicios & complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. En el centro de administración de Microsoft 365, vaya a la página **servicios & complementos** en <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
    ![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

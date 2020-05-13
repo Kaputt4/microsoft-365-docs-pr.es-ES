@@ -1,5 +1,5 @@
 ---
-title: Investigar y corregir las alertas de cumplimiento de comunicaciones
+title: Investigar y corregir las alertas de cumplimiento de las comunicaciones
 description: Investigue y corrija las alertas de cumplimiento de comunicaciones en Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632861"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208402"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de comunicaciones
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
 Una vez que haya configurado las directivas de cumplimiento de comunicaciones, empezará a recibir alertas en el centro de cumplimiento de Microsoft 365 para los problemas de mensajes que coinciden con las condiciones de la Directiva. Siga las instrucciones de flujo de trabajo aquí para investigar y corregir los problemas de alertas.
 
@@ -33,14 +33,14 @@ Una vez que haya configurado las directivas de cumplimiento de comunicaciones, e
 
 El primer paso para investigar los problemas detectados por las directivas es revisar las alertas generadas en el centro de cumplimiento de Microsoft 365. Hay varias áreas en el centro de cumplimiento para ayudarle a investigar rápidamente las alertas, en función de cómo prefiera ver la agrupación de alertas:
 
-- **Página de inicio de cumplimiento de comunicaciones**: cuando inicie [https://compliance.microsoft.com](https://compliance.microsoft.com) sesión en uso de credenciales para una cuenta de administrador en la organización de Microsoft 365, seleccione**información general sobre** **cumplimiento** > de comunicaciones para mostrar la Página principal de cumplimiento de la comunicación. Aquí verá:
+- **Página de inicio de cumplimiento de comunicaciones**: cuando inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) uso de credenciales para una cuenta de administrador en la **Communication compliance**organización de Microsoft 365, seleccione  >  **información general sobre** cumplimiento de comunicaciones para mostrar la Página principal de cumplimiento de la comunicación. Aquí verá:
     - Alertas que deben revisarse en la lista de gravedad alta a baja. Seleccione una alerta para iniciar la página Detalles de alerta y para iniciar acciones de corrección.
     - Coincidencias de directivas recientes ordenadas por nombre de directiva.
     - Elementos resueltos enumerados por nombre de directiva.
     - Escalaciones enumeradas por nombre de directiva.
     - Los usuarios con más coincidencias de directivas, enumeradas de mayor a menor número de coincidencias.
-- **Ficha Alertas**: Navegue a **Communication compliance** > **alertas** de cumplimiento de comunicaciones para mostrar las alertas agrupadas por la Directiva de cumplimiento de comunicaciones coincidentes. Esta vista permite ver rápidamente qué directivas de cumplimiento de comunicación están generando la mayoría de las alertas ordenadas por gravedad.  Para iniciar acciones de corrección, expanda una directiva para seleccionar una alerta específica y para iniciar la página Detalles de alerta.
-- **Pestaña Directivas**: Navegue a **Communication compliance** > **directivas** de cumplimiento de comunicaciones para mostrar las directivas de cumplimiento de comunicación configuradas para la organización de Microsoft 365. Cada directiva enumerada incluye el número de alertas que necesitan revisión. Al seleccionar una directiva, se muestran todas las alertas pendientes de las coincidencias con la Directiva, se selecciona una alerta específica para iniciar la página de detalles de la Directiva y se inician las acciones de corrección.
+- **Ficha Alertas**: Navegue a alertas de **cumplimiento de comunicaciones**  >  **Alerts** para mostrar los últimos 30 días de las alertas agrupadas por coincidencias de directivas. Esta vista permite ver rápidamente qué directivas de cumplimiento de comunicación están generando la mayoría de las alertas ordenadas por gravedad.  Para iniciar acciones de corrección, expanda una directiva para seleccionar una alerta específica y para iniciar la página Detalles de alerta.
+- **Pestaña Directivas**: Navegue a directivas de **cumplimiento de comunicaciones**  >  **Policies** para mostrar las directivas de cumplimiento de comunicación configuradas para la organización de Microsoft 365. Cada directiva enumerada incluye el número de alertas que necesitan revisión. Al seleccionar una directiva, se muestran todas las alertas pendientes de las coincidencias con la Directiva, se selecciona una alerta específica para iniciar la página de detalles de la Directiva y se inician las acciones de corrección.
 
 ### <a name="using-filters"></a>Uso de filtros
 
