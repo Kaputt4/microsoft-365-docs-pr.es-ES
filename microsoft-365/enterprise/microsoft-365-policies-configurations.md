@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631554"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214667"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -106,7 +106,7 @@ Azure AD ofrece un conjunto completo de capacidades de administración de identi
 
 - **[Protección de identidad de Azure ad](/azure/active-directory/identity-protection/overview)**: Azure ad Identity Protection le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la Directiva de corrección automatizada para el riesgo de inicio de sesión de usuario, el riesgo de inicio de sesión de alta, medio e insuficiente. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta una actividad de alto riesgo para su cuenta.
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+### <a name="microsoft-intune"></a>Microsoft Intune
 
 [Intune](https://docs.microsoft.com/intune/introduction-intune) es el servicio de administración de dispositivos móviles basado en la nube de Microsoft. Esta guía recomienda la administración de dispositivos de Windows con Intune y recomienda la configuración de directivas de cumplimiento de dispositivos. Intune determina si los dispositivos son compatibles y envía los datos a Azure AD para usarlos cuando se aplican directivas de acceso condicional.
 
@@ -121,10 +121,10 @@ En esta guía se muestra cómo crear directivas recomendadas para exigir el uso 
 En esta guía se muestra cómo implementar un conjunto de directivas para proteger el acceso a Office 365, incluidos Exchange Online, SharePoint Online y OneDrive para la empresa. Además de implementar estas directivas, se recomienda aumentar también el nivel de protección del espacio empresarial con estos recursos:
 
 - [Configure el espacio empresarial para aumentar la seguridad](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): estas recomendaciones se aplican a la seguridad de línea base de su espacio empresarial.
-- [Plan de seguridad 365 de Microsoft: principales prioridades de los primeros 30 días, 90 días y versiones posteriores](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): estas recomendaciones incluyen el registro, el gobierno de datos, el acceso de administrador y la protección contra amenazas.
+- [Plan de seguridad 365 de Microsoft: principales prioridades de los primeros 30 días, 90 días y versiones posteriores](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): estas recomendaciones incluyen el registro, el gobierno de datos, el acceso de administrador y la protección contra amenazas.
 
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 y Microsoft 365 apps for Enterprise
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas y Windows 10
 
 Windows 10 y Microsoft 365 apps for Enterprise es el entorno de cliente recomendado para equipos PC. Recomendamos Windows 10, ya que Azure está diseñado para proporcionar la experiencia más fluida posible tanto en local como en Azure AD. Windows 10 también incluye funciones de seguridad avanzada que se pueden administrar a través de Intune. Microsoft 365 apps for Enterprise incluye las versiones más recientes de las aplicaciones de Office. Estos usan la autenticación moderna, que es más segura y un requisito de acceso condicional. Estas aplicaciones también incluyen herramientas de seguridad y cumplimiento mejoradas.
 
@@ -145,6 +145,6 @@ La tabla anterior refleja la tendencia de muchas organizaciones para admitir una
 
 Recomendamos que los dispositivos de propiedad corporativa se administren con Intune o con un dominio Unido para aplicar protecciones y control adicionales. En función de la sensibilidad de los datos, su organización puede optar por no permitir BYODs para determinados grupos de usuarios o aplicaciones específicas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades](identity-access-prerequisites.md)
