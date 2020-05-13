@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Germany.
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623911"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208359"
 ---
-> [!NOTE]
-> Office 365 Germany ya no acepta nuevos clientes ni está implementando nuevos servicios. Las nuevas regiones de la nube en Alemania, disponibles en el primer trimestre de 2020 para Microsoft 365 y Office 365, proporcionan tanto la residencia de datos principal de los clientes en Alemania, así como la conectividad total a la red en la nube global de Microsoft. 
->
-
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
+
+> [!NOTE]
+> Office 365 Germany ya no acepta nuevos clientes ni está implementando nuevos servicios. Las nuevas regiones de la nube en Alemania, disponibles en el primer trimestre de 2020 para Microsoft 365 y Office 365, proporcionan tanto la residencia de datos principal de los clientes en Alemania, así como la conectividad total a la red en la nube global de Microsoft.
 
 Office 365 Germany fue una opción diferenciada entre los servicios de Office 365 disponibles en Europa. Ayudó a satisfacer las necesidades de los clientes más regulados en Alemania, la Unión Europea (UE) y la Asociación Europea de libre comercio (AELC) al ofrecer nuestros servicios de productividad líderes en el sector para el trabajo digital, desde centros de datos en alemán, con residencia de datos en Alemania, y a medidas estrictas de control y acceso a los datos a través de un modelo de confianza de datos
   

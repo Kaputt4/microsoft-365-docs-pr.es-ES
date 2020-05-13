@@ -2,10 +2,10 @@
 title: Referencia Políticas, prácticas y directrices
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha desarrollado diversas directivas, procedimientos y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de un correo electrónico abusivo, no deseado o malintencionado.
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634393"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208215"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
@@ -31,9 +31,9 @@ Si no cumple estas políticas y directrices, es posible que nuestro equipo de so
 
 ## <a name="general-microsoft-policies"></a>Directivas generales de Microsoft
 
-El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con todas las directivas de Microsoft que rigen la transmisión de correo electrónico y el uso de Office 365.
+El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con todas las directivas de Microsoft que rigen la transmisión y el uso de correo electrónico de Microsoft 365.
 
-- Condiciones de servicio aplicables a Office 365. En concreto, la prohibición de usar el servicio para enviar correo electrónico no deseado o distribuir malware
+- Términos de servicios aplicables a Microsoft 365; en concreto, la prohibición de usar el servicio para enviar correo no deseado o distribuir malware.
 
 - [Acuerdo de servicios de Microsoft](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft trabaja activamente con los organismos de la industria y los proveedor
 
 - [Alianza de confianza en línea](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [Coalition del remitente de correo electrónico &](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Informar sobre abusos y correo no deseado
 

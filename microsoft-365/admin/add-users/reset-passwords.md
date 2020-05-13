@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173523"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208203"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -79,13 +79,13 @@ Estos pasos son solo para los usuarios que usan un plan de 365 para empresas de 
 
 Siga estos pasos si ha olvidado la contraseña pero puede iniciar sesión en Microsoft 365 porque, por ejemplo, la contraseña se guarda en el explorador: 
     
-1. Seleccione su nombre (icono) en la esquina superior derecha >**información personal**de **mi cuenta** > . 
+1. Seleccione su nombre (icono) en la esquina superior derecha **My Account**>  >  **información personal**de mi cuenta. 
           
 2. En **detalles de contacto**, compruebe que el **correo electrónico alternativo** sea correcto y que haya proporcionado un número de teléfono móvil. Si no es así, cámbielas ahora. 
         
 3. Cerrar sesión: Seleccione su nombre en la esquina superior derecha (en la imagen anterior, que se muestra como **Diane**) \> **Cerrar sesión**. 
         
-4. Vuelva a iniciar sesión: escriba \> **su nombre de usuario a continuación** \> y seleccione **olvidé contraseña**. 
+4. Vuelva a iniciar sesión: escriba su nombre de usuario a continuación \> **Next** \> y seleccione **olvidé contraseña**. 
     
 5. Siga los pasos del Asistente para restablecer la contraseña. Usa tu información de contacto alternativa para comprobar que eres la persona adecuada para restablecer la contraseña. 
     
@@ -100,7 +100,7 @@ Si ha olvidado la contraseña y no puede iniciar sesión:
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas de empresa para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>
 
-Estos pasos son aplicables a una empresa con decenas de usuarios. Si cuenta con cientos o miles de usuarios, consulte la siguiente sección sobre cómo restablecer las contraseñas de forma masiva.
+Estos pasos son aplicables a una empresa con decenas de usuarios. Si tiene cientos o miles de usuarios, consulte la siguiente sección sobre cómo restablecer contraseñas en masa (máximo de 40 usuarios a la vez).
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
     

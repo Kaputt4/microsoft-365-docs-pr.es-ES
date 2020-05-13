@@ -1,5 +1,5 @@
 ---
-title: Cómo Microsoft 365 valida la dirección from para evitar la suplantación de identidad
+title: Cómo EOP valida la dirección from para evitar la suplantación de identidad
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'Para ayudar a evitar la suplantación de identidad (phishing), Microsoft 365 y Outlook.com requieren ahora el cumplimiento de RFC para de: addresses.'
+description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico que aceptan o rechazan Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar la suplantación de identidad (phishing).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034087"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209456"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Microsoft 365 valida la dirección from para evitar la suplantación de identidad
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección from para evitar la suplantación de identidad
 
-Las cuentas de correo electrónico de Microsoft 365 reciben un número cada vez mayor de ataques de suplantación de identidad. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Microsoft 365 y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
+Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar [las direcciones de correo electrónico de remitente falsificado (falso)](anti-spoofing-protection.md), los atacantes suelen usar valores en la dirección from que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad (phishing), Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección de RFC conforme a lo descrito en este tema. Esta aplicación se habilitó en noviembre de 2017.
 
 **Notas**:
 
@@ -53,7 +53,7 @@ La dirección de se define en detalle en varias RFC (por ejemplo, las secciones 
   - Si la dirección de incluye un nombre para mostrar, el valor EmailAddress debe estar entre corchetes angulares (< >), tal como se muestra.
   - Microsoft recomienda encarecidamente que inserte un espacio entre el nombre para mostrar y la dirección de correo electrónico.
 
-- **EmailAddress**: una dirección de correo electrónico usa `local-part@domain`el formato:
+- **EmailAddress**: una dirección de correo electrónico usa el formato `local-part@domain` :
 
   - **local-Part**: cadena que identifica el buzón asociado con la dirección. Este valor es único dentro del dominio. A menudo se usa el nombre de usuario o GUID del propietario del buzón.
   - **dominio**: el nombre de dominio completo (FQDN) del servidor de correo electrónico que hospeda el buzón identificado por la parte local de la dirección de correo electrónico.

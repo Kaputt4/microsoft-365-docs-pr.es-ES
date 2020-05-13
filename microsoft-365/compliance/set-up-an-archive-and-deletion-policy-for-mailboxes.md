@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034322"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208064"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -68,7 +68,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
 2. Inicie sesión con su cuenta de administrador global.
     
     
-3. En el centro de seguridad & cumplimiento, vaya al **archivo**de **gobierno** \> de información.
+3. En el centro de seguridad & cumplimiento, vaya al archivo de **gobierno de información** \> **Archive**.
     
     Se muestra una lista de los buzones de correo de la organización y si el buzón de archivo correspondiente está habilitado o deshabilitado. 
     
@@ -83,7 +83,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
     
 6. Haga clic en **sí** para cerrar el mensaje de advertencia e iniciar el proceso para habilitar el buzón de archivo para cada buzón seleccionado. 
     
-7. Una vez completado el proceso, haga **Refresh** ![clic en](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) actualizar actualización para actualizar la lista en la página **archivo** . 
+7. Una vez completado el proceso, haga clic en **Actualizar** actualización ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) para actualizar la lista en la página **archivo** . 
     
     El buzón de archivo está habilitado para todos los usuarios de la organización.
     
@@ -117,7 +117,7 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
   
 En primer lugar, deberá crear una etiqueta de directiva predeterminada de archivo (DPT) personalizada que moverá los elementos al buzón de archivo después de tres años. 
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
+1. En la página **etiquetas de retención** , haga clic en **nueva etiqueta** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado)** , complete los campos siguientes: 
     
@@ -139,7 +139,7 @@ En primer lugar, deberá crear una etiqueta de directiva predeterminada de archi
   
 A continuación, creará otra DPT personalizada, pero ésta será una directiva de eliminación que eliminará permanentemente los elementos después de 7 años.
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta**![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
+1. En la página **etiquetas de retención** , haga clic en **nueva etiqueta** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) y, a continuación, seleccione **aplicado automáticamente a todo el buzón (predeterminado)**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a todo el buzón (predeterminado)** , complete los campos siguientes: 
     
@@ -161,7 +161,7 @@ A continuación, creará otra DPT personalizada, pero ésta será una directiva 
   
 La última etiqueta de retención que creará es una etiqueta de directiva de retención (RPT) personalizada para la carpeta elementos eliminados. Esta etiqueta eliminará los elementos de la carpeta elementos eliminados después de 5 años y proporciona un período de recuperación en el que los usuarios pueden usar la herramienta recuperar elementos eliminados para recuperar un elemento.
   
-1. En la **Página etiquetas de retención** , haga clic en **nueva etiqueta** ![nuevo icono](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)y, a continuación, seleccione **aplicado automáticamente a una carpeta predeterminada**. 
+1. En la página **etiquetas de retención** , haga clic en **nueva etiqueta** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) y, a continuación, seleccione **aplicado automáticamente a una carpeta predeterminada**. 
     
 2. En la página **nueva etiqueta aplicada automáticamente a una carpeta predeterminada** , complete los campos siguientes: 
     
@@ -185,13 +185,13 @@ La última etiqueta de retención que creará es una etiqueta de directiva de re
 
 Después de crear las etiquetas de retención personalizadas, el siguiente paso consiste en crear una nueva Directiva de retención y agregar las etiquetas de retención. Agregará las tres etiquetas de retención personalizadas que creó en el paso 2 y las etiquetas integradas mencionadas en la primera sección. En el paso 4, asignará esta nueva Directiva de retención a los buzones de usuario.
   
-1. En el EAC, vaya a **Compliance management** \> **directivas de retención**de administración de cumplimiento.
+1. En el EAC, vaya a directivas de retención de **Administración de cumplimiento** \> **Retention policies**.
     
-2. En la **Página directivas de retención** , haga clic en](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **nuevo** ![icono nuevo.
+2. En la página **directivas de retención** , haga clic en **nuevo** ![ icono nuevo ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
     
 3. En el cuadro **nombre** , escriba un nombre para la nueva Directiva de retención; por ejemplo, **Directiva de archivo y eliminación de Alpine House**. 
     
-4. En **etiquetas de retención**, haga clic en](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) **Agregar** ![nuevo icono.
+4. En **etiquetas de retención**, haga clic en **Agregar** ![ nuevo icono ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
     
     Se muestra una lista de las etiquetas de retención de la organización. Nota se muestran las etiquetas personalizadas que creó en el paso 2.
     
@@ -230,7 +230,7 @@ Cuando se crea un nuevo buzón de correo, se le asigna de forma predeterminada u
     
 7. Para comprobar que la nueva Directiva de retención se asignó a los buzones, puede hacer lo siguiente: Seleccione un buzón en la página buzones de correo y, a continuación, haga clic en Editar. 
     
-1. Seleccione un buzón en la página **buzones de correo** y, a continuación](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png), haga clic en **Editar** ![edición. 
+1. Seleccione un buzón en la página **buzones de correo** y, a continuación, haga clic en **Editar** ![ Edición ](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png) . 
     
 2. En la página de propiedades del buzón del usuario seleccionado, haga clic en **características de buzón**.
     
@@ -243,37 +243,10 @@ Después de aplicar la nueva Directiva de retención a los buzones del paso 4, p
  **¿Qué sucede cuando se ejecuta el Asistente para carpeta administrada?** Para aplicar la configuración de la Directiva de retención, inspeccione los elementos del buzón de correo y determine si están sujetos a retención. A continuación, se marcan los elementos sujetos a retención con la etiqueta de retención correspondiente y, a continuación, se lleva a cabo la acción de retención especificada en los elementos anteriores a su antigüedad de retención. 
   
 Estos son los pasos para conectarse a PowerShell de Exchange Online y, a continuación, ejecutar el Asistente para carpeta administrada en todos los buzones de la organización.
+
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
   
-1. En el equipo local, abra Windows PowerShell y ejecute el siguiente comando.
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    ```
-
-    En el cuadro de diálogo **solicitud de credenciales para Windows PowerShell** , escriba el nombre de usuario y la contraseña de la cuenta de administrador global y, a continuación, haga clic en **Aceptar**.
-    
-2. Ejecute el comando siguiente.
-    
-    ```powershell
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    ```
-
-3. Ejecute el comando siguiente.
-    
-    ```powershell
-    Import-PSSession $Session
-    ```
-
-4. Para comprobar que se ha conectado a su organización de Exchange Online, ejecute el comando siguiente para obtener una lista de todos los buzones de correo de su organización.
-    
-    ```powershell
-    Get-Mailbox
-    ```
-
-    > [!NOTE]
-    > Para obtener más información o si tiene problemas para conectarse a su organización de Exchange Online, vea [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
-  
-5. Ejecute los dos comandos siguientes para iniciar el Asistente para carpeta administrada para todos los buzones de usuario de la organización.
+2. Ejecute los dos comandos siguientes para iniciar el Asistente para carpeta administrada para todos los buzones de usuario de la organización.
     
     ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
@@ -289,7 +262,7 @@ Y eso es todo. Ha configurado una directiva de archivo y eliminación para la or
 
 En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones existentes. Sin embargo, puede configurar Exchange Online para que la nueva Directiva de retención se asigne a los nuevos buzones que se creen en el futuro. Para ello, debe usar Exchange Online PowerShell para actualizar el plan de buzón de correo predeterminado de su organización. Un *plan de buzón de correo* es una plantilla que configura las propiedades de los nuevos buzones de forma automática.  En este paso opcional, puede reemplazar la Directiva de retención actual asignada al plan de buzón (de forma predeterminada, la Directiva de MRM predeterminada) con la Directiva de retención que ha creado en el paso 3. Después de actualizar el plan de buzón de correo, la nueva Directiva de retención se asignará a los nuevos buzones.
 
-1. [Conéctese a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) o vea el paso 5.
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
 
 2. Ejecute el siguiente comando para mostrar información sobre los planes de buzón de correo de su organización.
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Microsoft 365.
-ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034991"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208542"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
@@ -60,4 +60,4 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
     > [!NOTE]
     > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.
 
-Vea [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md) y [Protección de correo no deseado saliente en Office 365](outbound-spam-controls.md) para evitar que la IP sea incluida en la lista negra.
+Consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam Protection in EOP](outbound-spam-controls.md) para evitar que IP quede en la lista negra.

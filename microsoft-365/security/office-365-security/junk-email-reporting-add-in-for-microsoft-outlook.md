@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo instalar y usar el complemento de notificación de correo no deseado de Microsoft para informar a Microsoft de mensajes de correo no deseado, de correo no deseado o de suplantación de identidad.
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638505"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208832"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook en Office 365
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook
 
 > [!NOTE]
-> Si no usa actualmente el complemento de notificación de correo electrónico no deseado, recomendamos el [complemento de mensajes de informe en](enable-the-report-message-add-in.md) su lugar.
+> Si no usa actualmente el complemento de notificación de correo electrónico no deseado, recomendamos el [complemento de mensajes de informe en](enable-the-report-message-add-in.md) su lugar. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-El complemento de notificación de correo no deseado para Microsoft Outlook permite a los usuarios enviar falsos positivos (correo electrónico bueno marcado como correo no deseado), falsos negativos (correo electrónico incorrecto permitido) y mensajes de suplantación de identidad a Exchange Online Protection (EOP). Si su organización no usa EOP, el envío de informes de correo no deseado no afectará al filtrado de correo no deseado.
+El complemento de notificación de correo no deseado para Microsoft Outlook permite a los usuarios enviar falsos positivos (correo electrónico bueno marcado como correo no deseado), falsos negativos (correo electrónico incorrecto permitido) y mensajes de suplantación de identidad (phishing) a Microsoft. Si su organización no usa la protección en línea de Exchange (por ejemplo, servicios de Exchange o de correo electrónico locales que no sean Exchange Online), el envío de informes de correo no deseado no afectará al filtrado de correo no deseado.
 
 En este tema se explica cómo instalar y usar el complemento de notificación de correo no deseado.
 
@@ -39,7 +39,7 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
   - Outlook 2013 o posterior
   - Outlook incluido con las aplicaciones de Microsoft 365 para empresas
 
-- Para obtener más información acerca de los informes de mensajes a Microsoft, vea [Informe de mensajes y archivos a Microsoft en Office 365](report-junk-email-messages-to-microsoft.md).
+- Para obtener más información acerca de los informes de mensajes a Microsoft, vea [Informe de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Usar el complemento de notificación de correo no deseado para notificar mensajes de correo no deseado y suplantación de identidad
 
@@ -197,7 +197,7 @@ Para comprobar que ha instalado correctamente el complemento de notificación de
 
 Después de cerrar Outlook, use cualquiera de los siguientes procedimientos para desinstalar el complemento de notificación de correo no deseado:
 
-- **Panel de control**: Presione la tecla Windows + R. En el cuadro de diálogo **Ejecutar** que se `control appwiz.cpl` abre, escriba y, a continuación, haga clic en **Aceptar**.
+- **Panel de control**: Presione la tecla Windows + R. En el cuadro de diálogo **Ejecutar** que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar**.
 
   Busque y seleccione el **complemento de notificación de correo no deseado de Microsoft** en la lista y, a continuación, haga clic en **desinstalar**.
 
@@ -209,7 +209,7 @@ Después de cerrar Outlook, use cualquiera de los siguientes procedimientos para
 
   En el cuadro de diálogo que aparece, seleccione **quitar el complemento de notificación de correo no deseado de Microsoft para Outlook** y, a continuación, haga clic en **siguiente**.
 
-- **Modo silencioso**: busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema \<,\> Reemplace PathToFile por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
+- **Modo silencioso**: busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema, reemplace \< PathToFile \> por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
 
   - **32 bits**:
 
@@ -288,7 +288,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, consulte [i
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problema: los usuarios seleccionaron no recibir un mensaje de confirmación cuando notifican mensajes y ahora quieren que vuelvan a aparecer la pregunta
 
-1. Cree la `ConfirmReportJunk`clave del registro wih el valor "true":
+1. Cree la `ConfirmReportJunk` clave del registro wih el valor "true":
 
    ```text
    Windows Registry Editor Version 5.00

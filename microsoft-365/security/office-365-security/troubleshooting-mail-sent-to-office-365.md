@@ -18,50 +18,32 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036745"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208602"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>Correo de solución de problemas enviado a Office 365
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
 En este artículo se proporciona información de solución de problemas para los remitentes que experimentan problemas al intentar enviar correo electrónico a las bandejas de correo de Microsoft 365 y los procedimientos recomendados para el envío masivo de correo a los clientes.
 
-## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>Solución de problemas comunes en la entrega de correo a Office 365
+## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
 
-Elija uno de estos problemas habituales.
+Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365, además de otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
 
-- [¿Está administrando la reputación de envío de dominios e IP?](#are-you-managing-your-ip-and-domains-sending-reputation)
-
-- [¿Está enviando correo electrónico desde direcciones IP nuevas?](#are-you-sending-email-from-new-ip-addresses)
-
-- [Confirme que su DNS está configurado correctamente](#confirm-that-your-dns-is-set-up-correctly)
-
-- [Asegúrese de que usted no se anuncia como una dirección IP no enrutable](#ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip)
-
-- [Ha recibido un informe de no entrega (NDR) al enviar un correo electrónico a un usuario en Office 365](#you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365)
-
-- [Mi correo electrónico fue a parar a la carpeta de correo electrónico no deseado del destinatario en EOP](#my-email-landed-in-the-recipients-junk-folder-in-eop)
-
-- [El tráfico de mi dirección IP está limitado por EOP](#traffic-from-my-ip-address-is-throttled-by-eop)
-
-### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
-
-Las tecnologías de filtrado de EOP están diseñadas para proporcionar protecciones contra correo no deseado para Microsoft 365, además de otros productos de Microsoft como Exchange Server, Microsoft Office Outlook y Windows Live Mail. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
-
-### <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
+## <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
 
 Las direcciones IP que no se hayan usado previamente para enviar correo electrónico por lo general no tienen ninguna reputación en nuestros sistemas. Como resultado, los correos electrónicos de IP nuevas es más probable que experimenten problemas de entrega. Una vez que la dirección IP tiene una reputación en la que no figura el envío de correo electrónico no deseado, EOP suele permitir un mejor proceso de entrega satisfactoria de correo electrónico.
 
 Las IP nuevas que se agregan a dominios que están autenticados en los registros de SPF existentes suelen disfrutar del beneficio añadido de heredar parte de la reputación del remitente del dominio. Si su dominio tiene una buena reputación de envío, las nuevas IP puede que disfruten de un tiempo más rápido de impulso. Normalmente una nueva IP se impulsa completamente en un par de semanas o antes según el volumen, la exactitud de la lista y las tasas de denuncia de correo electrónico no deseado.
 
-### <a name="confirm-that-your-dns-is-set-up-correctly"></a>Confirme que su DNS está configurado correctamente
+## <a name="confirm-that-your-dns-is-set-up-correctly"></a>Confirme que su DNS está configurado correctamente
 
 Para obtener instrucciones acerca de cómo crear y mantener registros DNS, incluido el registro MX necesario para enrutar el correo, debe ponerse en contacto con su proveedor de hospedaje de DNS.
 
-### <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Asegúrese de que usted no se anuncia como una dirección IP no enrutable
+## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>Asegúrese de que usted no se anuncia como una dirección IP no enrutable
 
 No podemos aceptar correo electrónico de los remitentes que no logran una búsqueda de DNS inverso. En algunos casos, los remitentes legítimos se anuncian incorrectamente como IP no enrutable de Internet cuando se intenta abrir una conexión a EOP. Las direcciones IP reservadas para una red privada (no enrutable) incluyen:
 
@@ -71,38 +53,23 @@ No podemos aceptar correo electrónico de los remitentes que no logran una búsq
 
 - 172.16.0.0/11 (o 172.16.0.0 - 172.31.255.255)
 
-### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Ha recibido un informe de no entrega (NDR) al enviar un correo electrónico a un usuario en Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Ha recibido un informe de no entrega (NDR) al enviar un correo electrónico a un usuario en Office 365
 
 Algunos problemas de entrega se deben a que Microsoft ha bloqueado la dirección IP del remitente o a que la cuenta de usuario se identifica como remitente prohibido debido a una actividad precedente de correo no deseado. Si cree que ha recibido el NDR por error, en primer lugar, siga las instrucciones del mensaje de NDR para resolver el problema.
 
 Para obtener más información sobre el error que ha recibido, consulte la lista de códigos de error en [informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
- Por ejemplo, si recibe el NDR siguiente, indica que Microsoft ha bloqueado la dirección IP del remitente.
+ Por ejemplo, si recibe el NDR siguiente, indica que Microsoft ha bloqueado la dirección IP de envío:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
 Para solicitar la eliminación de esta lista, puede [usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>Mi correo electrónico descargado en la carpeta de correo no deseado del destinatario en EOP
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico descargado en la carpeta de correo no deseado del destinatario
 
-Si EOP identificó incorrectamente un mensaje como correo no deseado, puede hablar con el destinatario para enviar este mensaje falso positivo al equipo de análisis de correo no deseado de Microsoft, que lo evaluará y analizará. Según los resultados del análisis, se podrían ajustar las reglas de filtro de contenido de correo no deseado de todo el sistema a fin de permitir que pase el mensaje. Usa el correo electrónico para enviar mensajes a Microsoft que no deberían clasificarse como correo no deseado. Al hacerlo, asegúrese de seguir los pasos descritos en el procedimiento siguiente.
+Si EOP identificó incorrectamente un mensaje como correo no deseado, puede hablar con el destinatario para enviar este mensaje falso positivo al equipo de análisis de correo no deseado de Microsoft, que lo evaluará y analizará. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>Usar el correo electrónico para enviar mensajes de falso positivo al equipo de análisis de correo electrónico no deseado de Microsoft
-
-1. Guarde como seguro el mensaje que quiere enviar.
-
-2. Cree un nuevo mensaje en blanco y adjunte el mensaje seguro.
-
-    Puede adjuntar varios mensajes de correo seguro si es necesario.
-
-3. Copie y pegue la línea de asunto del mensaje original en la línea de asunto del mensaje nuevo.
-
-    > [!IMPORTANT]
-    > Deje el cuerpo del nuevo mensaje en blanco.
-
-4. Envíe el nuevo mensaje a [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com).
-
-### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>El tráfico de mi dirección IP está limitado por EOP
+## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>El tráfico de mi dirección IP está limitado por EOP
 
 Si recibe un NDR de EOP que indica que EOP está limitando su dirección IP, por ejemplo:
 
@@ -110,7 +77,7 @@ Si recibe un NDR de EOP que indica que EOP está limitando su dirección IP, por
 
 Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la dirección IP en cuestión y se ha restringido temporalmente mientras se analiza el caso en profundidad. Si después del análisis, la dirección deja de ser sospechosa, la restricción se levantará en breve.
 
-### <a name="i-cant-receive-email-from-senders-in-office-365"></a>No puedo recibir correo electrónico de remitentes de Office 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
 
  Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
@@ -118,7 +85,7 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 
 Si suele llevar a cabo campañas de correo electrónico masivo a los usuarios de Microsoft 365 y desea asegurarse de que los mensajes llegan de manera oportuna y segura, siga las sugerencias de esta sección.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre del campo De: refleja quién envía el mensaje
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegurarse de que el nombre from refleja quién envía el mensaje
 
 El Asunto debe ser un breve resumen del contenido del mensaje y el cuerpo del mensaje debe indicar clara y sucintamente de qué trata la oferta, servicio o producto. Por ejemplo:
 

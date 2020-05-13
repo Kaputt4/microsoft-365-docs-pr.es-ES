@@ -1,5 +1,5 @@
 ---
-title: Informes y seguimiento de mensajes en Exchange Online Protection
+title: Creación de informes y seguimiento de mensajes
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,16 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 44b4223b4310a2de1d90f99f8a7af23cc6054f94
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034385"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206447"
 ---
-# <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Informes y seguimiento de mensajes en Exchange Online Protection
+# <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
-Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que le permitirán averiguar el estado general y el mantenimiento de la organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento normativo.
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece muchos informes diferentes que pueden ayudarle a determinar el estado general y el mantenimiento de su organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento.
 
 ## <a name="usage-reports"></a>Informes de uso
 
@@ -57,11 +57,7 @@ Estos informes mejorados proporcionan una experiencia de creación de informes i
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 
-Cree mediante programación informes que estén disponibles en el centro de administración de Microsoft 365 mediante Microsoft Graph. Vea los temas secundarios de [trabajar con los informes de uso de Office 365 en Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
-
-## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
-
-Crear informes mediante programación. Vea [información general de Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Cree mediante programación informes que estén disponibles en el centro de administración mediante Microsoft Graph. Para obtener más información, vea [información general de Microsoft Graph](https://docs.microsoft.com/graph/overview) y [trabajar con los informes de uso de Office 365 en Microsoft Graph](https://docs.microsoft.com/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Seguimiento de mensajes
 
@@ -69,7 +65,7 @@ Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Pued
 
 Puede usar esta información para responder de forma eficaz a las preguntas del usuario, solucionar problemas del flujo de correo, validar los cambios en la Directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener ayuda.
 
-Consulte [seguimiento de un mensaje de correo electrónico](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+Consulte [seguimiento de mensajes en el centro de seguridad & cumplimiento](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registro de auditoría
 
@@ -85,6 +81,7 @@ En la tabla siguiente se describe cuándo están disponibles los informes y los 
 |Informes de Resumen de protección de correo|90 días|La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.|
 |Informes de detalles de protección de correo|90 días|Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días. <br/><br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.|
 |Datos de seguimiento de mensajes|90 días|Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.<br/><br/> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.|
+|
 
 > [!NOTE]
-> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del centro de administración de Microsoft 365 o de PowerShell remoto.
+> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del centro de administración o PowerShell remoto.

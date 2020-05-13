@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a configurar la protección contra la suplantación de identidad (phishing) en Microsoft 365, para proteger su organización de ataques de suplantación de identidad (phishing) malintencionados.
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035337"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209816"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
-Las directivas para configurar las opciones de protección contra suplantación de identidad están disponibles en Microsoft 365 organizaciones con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online y organizaciones de protección contra amenazas avanzada (ATP) de Office 365.
+Las directivas para configurar las opciones de protección contra suplantación de identidad están disponibles en Microsoft 365 organizaciones con buzones de Exchange Online, organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online y organizaciones de la protección contra amenazas avanzada de Office 365 (ATP de Office 365).
 
 Las directivas antiphishing de ATP solo están disponibles en organizaciones que tienen Office 365 ATP. Por ejemplo:
 
@@ -185,7 +185,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Umbrales de suplantación de identidad avanzada en las directivas antiphishing de ATP
 
-Los siguientes umbrales de suplantación de identidad avanzada solo están disponibles en las directivas de antiphishing de ATP para especificar cómo tratar los mensajes de suplantación de identidad detectados:
+Los siguientes umbrales de suplantación de identidad avanzada solo están disponibles en las directivas antiphishing de ATP para controlar la sensibilidad de la aplicación de modelos de aprendizaje automáticos a los mensajes para determinar un veredicto de suplantación de identidad:
 
 - **1-estándar**: este es el valor predeterminado. La gravedad de la acción que se realiza en el mensaje depende del grado de confianza que el mensaje es "phishing" (baja, media, alta o muy alta confianza). Por ejemplo, los mensajes que se identifican como phishing con un grado muy alto de confianza tienen las acciones más graves aplicadas, mientras que los mensajes que se identifican como phishing con bajo grado de confianza tienen acciones menos graves aplicadas.
 

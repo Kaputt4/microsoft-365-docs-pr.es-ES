@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: a1b792dd74c38e93489bccc49e3a034e1da889e4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139678"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208179"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -47,7 +47,7 @@ Para cambiar la dirección asociada a su factura o suscripción, vea [cambiar la
 
 Para cambiar otra información de la página de Perfil de la compañía:
   
-1. En el centro de administración, vaya a **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">la página de configuración de</a> configuración.
+1. En el centro de administración, vaya a la página **configuración** de la \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**organización**</a> .
 
 2. En la pestaña Perfil de la **organización** , seleccione información de la **organización**.
 

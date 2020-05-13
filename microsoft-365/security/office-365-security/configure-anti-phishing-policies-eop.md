@@ -14,22 +14,22 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas antiphishing que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de correo de Exchange Online.
-ms.openlocfilehash: 770990cdd7927ebb8afa088f2d5be09c75824d59
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949276"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208904"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurar directivas contra la suplantación de identidad (phishing) en EOP
 
-Office 365 organizaciones con buzones de Exchange Online y organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online tienen una directiva antiphishing predeterminada. Esta Directiva contiene un número limitado de características de suplantación de identidad que están habilitadas de forma predeterminada. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, hay una directiva antiphishing predeterminada que contiene un número limitado de características de protección contra la suplantación de identidad habilitadas de forma predeterminada. Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la Directiva de suplantación de identidad (phishing) predeterminada. Para una mayor granularidad, también puede crear directivas antiphishing personalizadas que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
 Las organizaciones con buzones de correo de Exchange online pueden configurar directivas antiphishing en el centro de seguridad & cumplimiento o en Exchange Online PowerShell. Las organizaciones de EOP independientes solo pueden usar el centro de seguridad & cumplimiento.
 
-Para obtener información sobre cómo crear y modificar las directivas de protección contra suplantación de identidad (ATP) más avanzadas disponibles en Office 365 Advanced Threat Protection, vea [Configure ATP anti-phishing policies in office 365](configure-atp-anti-phishing-policies.md).
+Para obtener información sobre cómo crear y modificar las directivas de protección contra suplantación de identidad (ATP) más avanzadas disponibles en Office 365 Advanced Threat Protection (Office 365 ATP), consulte [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
 ## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Directivas antiphishing en el centro de seguridad & cumplimiento vs Exchange Online PowerShell
 
@@ -47,7 +47,7 @@ La diferencia entre estos dos elementos no es obvia cuando administra directivas
 
 - Cuando se elimina una directiva antiphishing del centro de seguridad & cumplimiento, se quita la regla antiphishing y la Directiva ANTIPHISH asociada.
 
-En Exchange Online PowerShell, la diferencia entre las directivas antiphishing y las reglas antiphishing es evidente. Las directivas antiphishing se administran mediante los ** \*cmdlets-AntiPhishPolicy** y se administran las reglas antiphishing mediante los ** \*cmdlets-AntiPhishRule** .
+En Exchange Online PowerShell, la diferencia entre las directivas antiphishing y las reglas antiphishing es evidente. Las directivas antiphishing se administran mediante los cmdlets ** \* -AntiPhishPolicy** y se administran las reglas antiphishing mediante los cmdlets ** \* -AntiPhishRule** .
 
 - En PowerShell, se crea la Directiva ANTIPHISH en primer lugar y, a continuación, se crea la regla ANTIPHISH que identifica la Directiva a la que se aplica la regla.
 
@@ -61,27 +61,27 @@ Cada organización tiene una directiva antiphishing integrada denominada Office3
 
 - La Directiva denominada predeterminada de la ANTIPHISH de Office365 tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva se aplica siempre en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad mayor que la Directiva denominada Office365 ANTIPHISH predeterminada.
 
-- La Directiva denominada Office365 ANTIPHISH predeterminada es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`) y no se puede eliminar la directiva predeterminada.
+- La Directiva denominada Office365 ANTIPHISH predeterminada es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True` ) y no se puede eliminar la directiva predeterminada.
 
 Para aumentar la eficacia de la protección contra suplantación de identidad (phishing), puede crear directivas antiphishing personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use. <https://protection.office.com/antiphishing>
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use <https://protection.office.com/antiphishing> .
 
 - Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
   No puede administrar las directivas antiphishing en PowerShell de EOP independiente.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-- Para poder crear y modificar directivas contra correo no deseado en EOP independiente, debe hacer algo que requiera la _hidratación_ de su espacio empresarial. Por ejemplo, en el EAC, puede ir a la pestaña **permisos** , seleccionar un grupo de roles existente, hacer **Edit** ![clic en Editar](../../media/ITPro-EAC-EditIcon.png)icono Editar y quitar una función (que más adelante se agregará). Si nunca se ha hidratado el espacio empresarial, se obtiene un cuadro de diálogo denominado configuración de la **organización de actualización** con una barra de progreso que debería completarse correctamente. Para obtener más información sobre la hidratación, consulte el cmdlet [enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) (que no está disponible en POWERSHELL de EOP independiente ni en el centro de seguridad & cumplimiento).
+- Para poder crear y modificar directivas contra correo no deseado en EOP independiente, debe hacer algo que requiera la _hidratación_ de su espacio empresarial. Por ejemplo, en el EAC, puede ir a la pestaña **permisos** , seleccionar un grupo de roles existente, hacer clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-EditIcon.png) y quitar una función (que más adelante se agregará). Si nunca se ha hidratado el espacio empresarial, se obtiene un cuadro de diálogo denominado configuración de la **organización de actualización** con una barra de progreso que debería completarse correctamente. Para obtener más información sobre la hidratación, consulte el cmdlet [enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/organization/enable-organizationcustomization) (que no está disponible en POWERSHELL de EOP independiente ni en el centro de seguridad & cumplimiento).
 
 - Para conocer la configuración recomendada para las directivas antiphishing, consulte [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 - Espere hasta 30 minutos para que se aplique la directiva actualizada.
 
-- Para obtener información sobre la aplicación de directivas contra la suplantación de identidad (phishing) en la canalización de filtros, consulte [Order and Precedence of email Protection in Office 365](how-policies-and-protections-are-combined.md).
+- Para obtener información acerca de dónde se aplican las directivas contra la suplantación de identidad (phishing) en la canalización de filtros, consulte [Order and Precedence of email Protection](how-policies-and-protections-are-combined.md).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a>Usar el centro de seguridad & cumplimiento para crear directivas contra la suplantación de identidad
 
@@ -109,15 +109,15 @@ Cuando se crea una directiva antiphishing, solo se puede especificar el nombre d
 
    - **El destinatario es**: especifica uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
    - **El destinatario es un miembro de**: especifica uno o más grupos de la organización.
-   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en Office 365.
+   - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en la organización.
 
    Después de seleccionar la condición, aparece la lista desplegable correspondiente con una **de estas** casillas.
 
    - Haga clic en el cuadro y desplácese por la lista de valores que desea seleccionar.
    - Haga clic en el cuadro y comience a escribir para filtrar la lista y seleccionar un valor.
    - Para agregar más valores, haga clic en un área vacía del cuadro.
-   - Para quitar entradas individuales, haga **Remove** ![clic en el](../../media/scc-remove-icon.png) icono quitar quitar del valor.
-   - Para quitar toda la condición, haga **Remove** ![clic en quitar](../../media/scc-remove-icon.png) icono de eliminación en la condición.
+   - Para quitar entradas individuales, haga **Remove** clic en ![ el icono quitar quitar del ](../../media/scc-remove-icon.png) valor.
+   - Para quitar toda la condición, haga clic en **quitar** ![ icono ](../../media/scc-remove-icon.png) de eliminación en la condición.
 
    Para agregar una condición adicional, haga clic en **Agregar condición** y seleccione un valor restante en **aplicado si**.
 
@@ -137,19 +137,19 @@ Después de crear la Directiva antiphishing con estas opciones de directiva gene
 
 Use los siguientes procedimientos para modificar las directivas antiphishing: una nueva directiva que ha creado o las directivas existentes que ya ha personalizado.
 
-1. Si aún no está ahí, abra el centro de seguridad & cumplimiento y vaya a la **Threat management** \> **Directiva** \> de administración de amenazas **contra la suplantación de identidad (phishing)**.
+1. Si aún no está ahí, abra el centro de seguridad & cumplimiento y vaya a la Directiva de **Administración de amenazas** \> **Policy** \> **contra la suplantación de identidad (phishing)**.
 
 2. Seleccione la Directiva antiphishing personalizada que quiera modificar. Si ya está seleccionada, anule la selección y vuelva a seleccionarla.
 
-3. Aparece el control flotante **editar el nombre \<\> de la Directiva** . Al hacer clic en **Editar** en cualquier sección, obtendrá acceso a la configuración de esa sección.
+3. Aparece el control flotante **editar el \< nombre \> de la Directiva** . Al hacer clic en **Editar** en cualquier sección, obtendrá acceso a la configuración de esa sección.
 
    - Los pasos siguientes se presentan en el orden en que aparecen las secciones, pero no son secuenciales (puede seleccionar y modificar las secciones en cualquier orden).
 
-   - Después de hacer clic en **Editar** en una sección, la configuración disponible se presenta en un formato de asistente, pero puede saltar dentro de las páginas en cualquier orden y puede hacer clic en **Guardar** en cualquier página (o en **Cancelar** o **cerrar** ![el icono](../../media/scc-remove-icon.png) cerrar para volver a la página **editar el \<nombre\> de la Directiva** (no es necesario visitar la última página del Asistente para guardarla o dejarla).
+   - Después de hacer clic en **Editar** en una sección, la configuración disponible se presenta en un formato de asistente, pero puede saltar dentro de las páginas en cualquier orden y puede hacer clic en **Guardar** en cualquier página (o en **Cancelar** o **cerrar** el ![ icono cerrar ](../../media/scc-remove-icon.png) para volver a la página **editar el \< nombre \> de la Directiva** (no es necesario visitar la última página del Asistente para guardarla o dejarla).
 
 4. **Configuración de directiva**: haga clic en **Editar** para modificar la misma configuración que estaba disponible cuando [creó la Directiva](#use-the-security--compliance-center-to-create-anti-phishing-policies) en la sección anterior:
 
-   - **Nombre**
+   - **Name**
    - **Descripción**
    - **Aplicado a**
    - **Revisar la configuración**
@@ -160,10 +160,10 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    Tenga en cuenta que esta misma configuración también está disponible en las directivas contra la suplantación de identidad (phishing) de ATP.
 
-   - **Configuración del filtro de suplantación de identidad**: el valor predeterminado es **activado**y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Office 365 ](learn-about-spoof-intelligence.md).
+   - **Configuración del filtro de suplantación de identidad**: el valor predeterminado es **activado**y se recomienda que lo deje activado. Para desactivarla, deslice el botón de alternancia a **desactivado**. Para obtener más información, vea [Configure outsimulate Intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Office 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > No es necesario deshabilitar la protección contra la suplantación de identidad si el registro MX no apunta a Microsoft 365; en su lugar, se habilita el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Habilitar la característica de remitente sin autenticar**: el valor predeterminado es **activado**. Para desactivarla, deslice el botón de alternancia a **desactivado**.
 
@@ -184,7 +184,7 @@ Use los siguientes procedimientos para modificar las directivas antiphishing: un
 
    Cuando haya terminado, haga clic en **Guardar** en cualquier página.
 
-6. De nuevo en la página **Editar \<el\> nombre de la Directiva** , revise la configuración y, a continuación, haga clic en **cerrar**.
+6. De nuevo en la página **Editar \< el \> nombre de la Directiva** , revise la configuración y, a continuación, haga clic en **cerrar**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Usar el centro de seguridad & cumplimiento para modificar la Directiva contra suplantación de identidad (phishing) predeterminada
 
@@ -230,11 +230,11 @@ Las directivas de suplantación de identidad personalizadas se muestran en el or
 
 Para cambiar la prioridad de una directiva, haga clic en **aumentar prioridad** o **disminuir prioridad** en las propiedades de la Directiva (no puede modificar directamente el número de **prioridad** en el centro de seguridad & cumplimiento). Cambiar la prioridad de una directiva solo tiene sentido si tiene varias directivas.
 
-1. En el centro de seguridad & cumplimiento, vaya a **Directiva** \> de **Administración** \> de amenazas **ATP anti-phishing**.
+1. En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración de amenazas** \> **Policy** \> **ATP anti-phishing**.
 
 2. Seleccione la Directiva que desea modificar. Si ya está seleccionada, anule la selección y vuelva a seleccionarla.
 
-3. Aparece el control flotante **editar el nombre \<\> de la Directiva** .
+3. Aparece el control flotante **editar el \< nombre \> de la Directiva** .
 
    - La Directiva antiphishing personalizada con el valor **Priority** de prioridad **0** solo tiene el botón **disminuir prioridad** disponible.
 
@@ -256,7 +256,7 @@ Para cambiar la prioridad de una directiva, haga clic en **aumentar prioridad** 
 
    - Haga clic en **directiva predeterminada** para ver la Directiva contra la suplantación de identidad predeterminada.
 
-3. Aparece el control flotante **editar el nombre \<\> de la Directiva** , donde puede ver la configuración y los valores.
+3. Aparece el control flotante **editar el \< nombre \> de la Directiva** , donde puede ver la configuración y los valores.
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Usar el centro de seguridad & cumplimiento para eliminar las directivas antiphishing
 
@@ -264,7 +264,7 @@ Para cambiar la prioridad de una directiva, haga clic en **aumentar prioridad** 
 
 2. Seleccione la Directiva que desea quitar. Si ya está seleccionada, anule la selección y vuelva a seleccionarla.
 
-3. En el control flotante **Editar \<el\> nombre** de la Directiva que aparece, haga clic en **eliminar Directiva**y, a continuación, haga clic en **sí** en el cuadro de diálogo de advertencia que aparece.
+3. En el control flotante **Editar \< el \> nombre** de la Directiva que aparece, haga clic en **eliminar Directiva**y, a continuación, haga clic en **sí** en el cuadro de diálogo de advertencia que aparece.
 
 No puede quitar la directiva predeterminada.
 
@@ -288,7 +288,7 @@ La creación de una directiva contra la suplantación de identidad (phishing) en
 
   - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-AntiPhishRule** ).
 
-  - Establezca la prioridad de la Directiva durante la creación ( _ \<número\>_ de_prioridad_ ) en el cmdlet **New-AntiPhishRule** ).
+  - Establezca la prioridad de la Directiva durante la creación ( _ \< número \> _de_prioridad_ ) en el cmdlet **New-AntiPhishRule** ).
 
 - Una nueva Directiva antiphishing que cree en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que asigna la Directiva a una regla antiphishing.
 
@@ -302,7 +302,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 En este ejemplo se crea una directiva contra phish denominada Research Quarantine con la siguiente configuración:
 
-- La Directiva está habilitada (no se usa el parámetro _Enabled_ y el valor predeterminado es `$true`).
+- La Directiva está habilitada (no se usa el parámetro _Enabled_ y el valor predeterminado es `$true` ).
 - La descripción es: Research Department Policy.
 - Cambia la acción predeterminada para la suplantación de cuarentena.
 
@@ -507,7 +507,7 @@ Para comprobar que ha configurado correctamente las directivas antiphishing de A
   - Seleccione la Directiva de la lista y vea los detalles en el control flotante.
   - Haga clic en **directiva predeterminada** y vea los detalles en el control flotante.
 
-- En Exchange Online PowerShell, reemplace \<name\> por el nombre de la Directiva o regla y ejecute el siguiente comando y Compruebe la configuración:
+- En Exchange Online PowerShell, reemplace \< name \> por el nombre de la Directiva o regla y ejecute el siguiente comando y Compruebe la configuración:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

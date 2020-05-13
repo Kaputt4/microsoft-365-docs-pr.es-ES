@@ -1,11 +1,11 @@
 ---
-title: Servicios de envío de correo de no clientes a Office 365
+title: Servicios para envío de correo de no clientes a Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208239"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servicios de envío de correo de no clientes a Office 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para envío de correo de no clientes a Microsoft 365
 
-El abuso de correo electrónico, correo electrónico no deseado y correos electrónicos fraudulentos (phishing) siguen sobrecargando todo el ecosistema de correo electrónico. Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios. Sin embargo, Microsoft entiende que el correo electrónico legítimo no debería verse afectado negativamente. Por lo tanto, hemos establecido una serie de servicios para ayudar a los remitentes a mejorar su capacidad para entregar correo electrónico a los usuarios de Microsoft 365 mediante la administración proactiva de su reputación de envío.
+El abuso de correo electrónico, correo electrónico no deseado y correos electrónicos fraudulentos (phishing) siguen sobrecargando todo el ecosistema de correo electrónico. Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha implementado diversas directivas y tecnologías para ayudar a proteger a nuestros usuarios. Sin embargo, Microsoft entiende que el correo electrónico legítimo no debería verse afectado negativamente. Por lo tanto, hemos establecido una serie de servicios para ayudar a los remitentes a mejorar su capacidad para entregar correo electrónico a los usuarios de Microsoft 365 mediante la administración proactiva de su reputación de envío.
 
 En esta información general se proporciona información sobre los beneficios que proporcionamos a su organización incluso si no es cliente.
 
@@ -33,14 +33,14 @@ En esta información general se proporciona información sobre los beneficios qu
 
 |**Servicio**|**Ventajas**|
 |:-----|:-----|
-|En este contenido de la Ayuda en línea| se ofrece:  <br/>  Un punto de partida para cualquier pregunta relacionada con la entrega de comunicaciones a los usuarios de EOP  <br/>  Incluye una sencilla guía en línea con nuestras políticas y requisitos  <br/>  Una visión general de los filtros de correo no deseado y las tecnologías de autenticación empleadas por Microsoft|
+|En este contenido de la Ayuda en línea|se ofrece: <br/> Un punto de partida para las preguntas relacionadas con la entrega de comunicaciones a los usuarios de EOP. <br/><br/> Incluye una sencilla guía en línea con nuestras directivas y requisitos. <br/><br/> Información general sobre los filtros de correo no deseado y las tecnologías de autenticación empleadas por Microsoft.|
 |[Soporte técnico de Microsoft](#microsoft-support)|Proporciona soporte de autoayuda y escalamiento para problemas de entrega.|
 |[Portal de eliminación de la lista de direcciones IP contra correo no deseado](#anti-spam-ip-delist-portal)|Una herramienta para enviar solicitudes de eliminación de IP de la lista. Antes de enviar esta solicitud, es responsabilidad del remitente asegurarse de que cualquier otro mensaje procedente de la dirección IP en cuestión no es abusivo ni malintencionado.|
-|[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita el envío de spam y otros correos electrónicos no deseados desde Exchange Online para que Internet y su sistema de correo no se saturen.|
+|[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita que el correo no deseado y el correo no deseado se envíen desde Exchange Online y se amontonan en Internet y en el sistema de correo.|
 
 ## <a name="microsoft-support"></a>Soporte técnico de Microsoft
 
-Microsoft ofrece varias opciones de soporte para personas que tienen problemas para enviar correo a las bandejas de correo de Microsoft 365. Le recomendamos que haga lo siguiente:
+Microsoft ofrece varias opciones de soporte técnico para personas que tienen problemas para enviar correo a destinatarios 365 de Microsoft. Le recomendamos que haga lo siguiente:
 
 - Siga las instrucciones de cualquier informe de no entrega que reciba.
 
