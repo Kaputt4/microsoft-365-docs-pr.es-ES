@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208074"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213310"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -169,9 +169,9 @@ En caso contrario:
 
 Para usar el cliente de etiquetado integrado de Office con Office en la web para documentos en OneDrive para la empresa o SharePoint Online, asegúrese de haber elegido la vista previa para [habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>Cuando Office 365 aplica marcado y cifrado de contenido
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Cuando las aplicaciones de Office aplican marcado y cifrado de contenido
 
-Office 365 aplica el marcado y el cifrado de contenido con una etiqueta de confidencialidad de forma diferente, en función de la aplicación que use.
+Las aplicaciones de Office aplican marcado y cifrado de contenido con una etiqueta de confidencialidad de forma diferente, según la aplicación que use.
 
 | Aplicación | Marcado de contenido | Cifrado |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 aplica el marcado y el cifrado de contenido con una etiqueta de confi
 | Outlook para PC y Mac | Después de que Exchange Online envíe el correo electrónico | De forma inmediata |
 | Outlook en la web, iOS, y Android | Después de que Exchange Online envíe el correo electrónico | Después de que Exchange Online envíe el correo electrónico |
 |
+
+Las soluciones que aplican las etiquetas de confidencialidad a los archivos fuera de las aplicaciones de Office lo hacen aplicando metadatos de etiquetado al archivo. En este escenario, la marcación de contenido de la configuración de la etiqueta no se inserta en el archivo, pero se aplica el cifrado. 
+
+Cuando estos archivos se abren en una aplicación de escritorio de Office, el cliente de etiquetación Unificado de Azure Information Protection aplica automáticamente los marcadores de contenido. Las marcas de contenido no se aplican automáticamente cuando se usan etiquetas integradas para aplicaciones Web, móviles o de escritorio.
+
+Entre los escenarios que incluyen la aplicación de una etiqueta de confidencialidad fuera de las aplicaciones de Office se incluyen:
+
+- El analizador, el explorador de archivos y PowerShell desde el cliente de etiquetado Unificado de Azure Information Protection 
+
+- Directivas de etiquetado automático para SharePoint y OneDrive
+
+- Datos exportados y con etiquetas de Power BI
+
+- Microsoft Cloud App Security
+
+Para estos escenarios, usando sus aplicaciones de Office, un usuario con etiquetas integradas puede aplicar los marcados de contenido de la etiqueta quitando o reemplazando temporalmente la etiqueta actual y, a continuación, volviendo a aplicar la etiqueta original.
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 
