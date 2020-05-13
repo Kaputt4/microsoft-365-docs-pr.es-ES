@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Necesita que sus contraseñas sean seguras y que se puedan administrar en toda la organización.
-ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5c2567ee2027be2a84121fdad10ba873ec1c43
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637053"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214655"
 ---
 # <a name="step-2-secure-your-passwords"></a>Paso 2: Proteja sus contraseñas
 
@@ -31,7 +31,7 @@ ms.locfileid: "43637053"
 
 *Este paso es opcional y se aplica a las versiones E3 y E5 de Microsoft 365*
 
-Todos los usuarios deben utilizar la [guía de contraseñas de Microsoft](https://www.microsoft.com/research/publication/password-guidance/)para crear las contraseñas de sus cuentas de usuario.
+Todos los usuarios deben utilizar la [guía de contraseñas de Microsoft](https://www.microsoft.com/research/publication/password-guidance)para crear las contraseñas de sus cuentas de usuario.
 
 Para evitar que los usuarios creen una contraseña que se pueda determinar con facilidad, utilice la protección de contraseña de Azure AD, que utiliza tanto una lista de contraseñas globalmente prohibidas como una lista opcional personalizada de contraseñas prohibidas que usted especifique. Por ejemplo, puede especificar términos que sean específicos de su organización, como:
 

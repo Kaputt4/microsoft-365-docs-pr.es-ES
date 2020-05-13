@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre cómo Microsoft 365 ayuda a los servicios financieros a migrar a una plataforma de colaboración moderna, al tiempo que protege los datos y sistemas y les permite cumplir con las normativas
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160464"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214701"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -216,7 +216,7 @@ Las instituciones financieras administran una gran cantidad de datos. Y algunos 
 - Qué ocurre cuando expira el período de retención (eliminar el documento, iniciar una revisión de disposición o no realizar ninguna acción)
 -  Qué provoca que comience el período de retención (fecha de creación, fecha de la última modificación, fecha de la etiqueta o un evento) y marca el documento o correo electrónico como un registro (lo que significa que no se puede editar ni eliminar).
 
-Las etiquetas de retención se publican en sitios de SharePoint o OneDrive, buzones de Exchange y grupos de Microsoft 365. Los usuarios pueden aplicar manualmente las etiquetas de retención a documentos y mensajes de correo electrónico. Los administradores de registros pueden usar la inteligencia para aplicar las etiquetas automáticamente. Las funciones inteligentes se pueden basar en [más de 90 tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (como el código ABA, el número de cuenta bancaria estadounidense o el número de la seguridad social de Estados Unidos). También son personalizables en función de palabras clave o datos confidenciales que se encuentran en documentos o mensajes de correo electrónico, como números de tarjeta de crédito u otra información de identificación personal, o en base a los metadatos de SharePoint. Para datos que no son fáciles de identificar mediante la coincidencia manual o automatizada de patrones, se pueden usar clasificadores que se pueden entrenar para clasificar documentos de forma inteligente en base a técnicas de aprendizaje automático.
+Las etiquetas de retención se publican en sitios de SharePoint o OneDrive, buzones de Exchange y grupos de Microsoft 365. Los usuarios pueden aplicar manualmente las etiquetas de retención a documentos y mensajes de correo electrónico. Los administradores de registros pueden usar la inteligencia para aplicar las etiquetas automáticamente. Las funciones inteligentes se pueden basar en [más de 90 tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (como el código ABA, el número de cuenta bancaria estadounidense o el número de la seguridad social de Estados Unidos). También son personalizables en función de palabras clave o datos confidenciales que se encuentran en documentos o mensajes de correo electrónico, como números de tarjeta de crédito u otra información de identificación personal, o en base a los metadatos de SharePoint. Para datos que no son fáciles de identificar mediante la coincidencia manual o automatizada de patrones, se pueden usar clasificadores que se pueden entrenar para clasificar documentos de forma inteligente en base a técnicas de aprendizaje automático.
  
 La **Comisión de valores y bolsa (SEC)** requiere que los corredores de bolsa y otras instituciones financieras reguladas conserven todas las comunicaciones relacionadas con la empresa. Estos requisitos se aplican a muchos tipos de comunicación y datos, como correos electrónicos, documentos, mensajes instantáneos, faxes y mucho más. **La norma 17a-4 de la SEC** define los criterios que deben cumplir estas organizaciones para almacenar registros en un sistema de almacenamiento electrónico de datos. En 2003, la SEC emitió un comunicado que clarifica estos requisitos. Incluyó los siguientes criterios:
 
