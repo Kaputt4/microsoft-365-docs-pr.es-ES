@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre el orden de las aplicaciones de las protecciones de Office 365 y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036721"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209444"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
 
-Como usuario de Microsoft 365, es posible que el correo electrónico entrante se marque con varias formas de protección. Por ejemplo, las directivas antiphishing de EOP integradas que están disponibles para todos los clientes de Microsoft 365 y las directivas antiphishing de ATP más sólidas que también están disponibles para clientes de la protección contra amenazas avanzada de Office 365. Los mensajes también pasan varios exámenes de detección de malware, correo no deseado, suplantación de identidad (phishing), etc. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, el correo electrónico entrante puede marcarse con varias formas de protección. Por ejemplo, las directivas antiphishing de EOP integradas que están disponibles para todos los clientes de Microsoft 365 y las más sólidas directivas antiphishing de ATP que también están disponibles para clientes de Office 365 Advanced Threat Protection (Office 365 ATP). Los mensajes también pasan varios exámenes de detección de malware, correo no deseado, suplantación de identidad (phishing), etc. Teniendo en cuentan toda esta actividad, puede que haya cierta confusión con respecto a qué directiva se aplica.
 
 En general, una directiva que se aplica a un mensaje se identifica en el encabezado **X-Forefront-antispam-Report** en la propiedad **CAT (categoría)** . Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
@@ -36,14 +36,14 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
   |||||
   |---|---|---|---|
   |**Prioridad**|**Protección de correo electrónico**|**Categoría**|**Dónde administrar**|
-  |1|Malware|CAT: MALW|[Configurar directivas antimalware en Office 365](configure-anti-malware-policies.md)|
-  |segundo|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)|
-  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)|
-  |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de suplantación de identidad en Office 365](learn-about-spoof-intelligence.md)|
-  |5 |Correo no deseado|CAT: SPM|[Configuración de directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)|
-  |6 |Masivo|CAT: BULK|[Configuración de directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md)|
-  |0,7<sup>\*</sup>|Suplantación de dominio (usuarios protegidos)|DIMP|[Configurar las directivas de protección contra suplantación de identidad (ATP) en Office 365](configure-atp-anti-phishing-policies.md)|
-  |8,5<sup>\*</sup>|Suplantación del usuario (dominios protegidos)|UIMP|[Configurar las directivas de protección contra suplantación de identidad (ATP) en Office 365](configure-atp-anti-phishing-policies.md)|
+  |1|Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
+  |segundo|Phishing|CAT: PHSH|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de identidades en EOP](learn-about-spoof-intelligence.md)|
+  |5 |Correo no deseado|CAT: SPM|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |6 |Masivo|CAT: BULK|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |0,7<sup>\*</sup>|Suplantación de dominio (usuarios protegidos)|DIMP|[Configurar directivas contra phishing de ATP](configure-atp-anti-phishing-policies.md)|
+  |8,5<sup>\*</sup>|Suplantación del usuario (dominios protegidos)|UIMP|[Configurar directivas contra phishing de ATP](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>Estas características solo están disponibles en las directivas contra la suplantación de identidad ATP.

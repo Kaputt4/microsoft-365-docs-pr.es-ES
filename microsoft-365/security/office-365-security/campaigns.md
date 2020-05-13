@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637823"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209600"
 ---
 # <a name="campaign-views-in-atp"></a>Vistas de campañas en ATP
 
@@ -54,15 +54,15 @@ Una campaña puede ser de corta duración o puede abarcar varios días, semanas 
 
 ## <a name="campaign-views-the-security--compliance-center"></a>Vistas de campaña el centro de seguridad & cumplimiento
 
-Las vistas de campaña están disponibles en el [centro de seguridad & cumplimiento](https://protection.office.com) en las **campañas**de **Administración** \> de amenazas.
+Las vistas de campaña están disponibles en el [centro de seguridad & cumplimiento](https://protection.office.com) en las campañas de **Administración de amenazas** \> **Campaigns**.
 
 ![Información general de las campañas en el Centro de seguridad y cumplimiento](../../media/campaigns-overview.png)
 
 También puede obtener acceso a la vista campañas desde:
 
-- **Threat management** \> **Explorer** Explorador \> de administración de amenazas **Ver** \> **campañas**
+- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Campañas**
 
-- **Threat management** \> **Explorer** Explorador \> de administración de amenazas **Ver** \> **todas las** \> **campañas** de correo electrónico
+- **Administración** \> de amenazas **Explorador** \> **Ver** \> **Todo el correo electrónico** \> **Campaña**
 
 > [!TIP]
 > Si no ve ningún dato de la campaña, pruebe a cambiar el intervalo de fechas.
@@ -83,7 +83,7 @@ La página de información general muestra la siguiente información sobre la ca
 
 - **Haga clic en**: el número de usuarios que hizo clic en la dirección URL en el mensaje de suplantación de identidad.
 
-- **Tasa de clic**: porcentaje calculado con "se ha**pulsado en** / la**bandeja de entrada**". Este valor es un indicador de la efectividad de la campaña y de si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y evitar hacer clic en la dirección URL de carga.
+- **Tasa de clic**: porcentaje calculado con "se ha**pulsado en**la  /  **bandeja de entrada**". Este valor es un indicador de la efectividad de la campaña y de si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y evitar hacer clic en la dirección URL de carga.
 
 - **Visitado**: el número de usuarios que se han realizado realmente a través del sitio web de carga. Si hay valores en los que se ha **pulsado** , pero los vínculos seguros han bloqueado el acceso al sitio web, este valor será cero.
 
@@ -144,7 +144,7 @@ El diagrama contiene la información siguiente:
 
   <sup>\*\*</sup>Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
 
-- **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea en la bandeja de entrada o en la carpeta de correo no deseado), incluso aunque los usuarios no hayan hecho clic en la URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
+- **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea en la bandeja de entrada o en la carpeta de correo no deseado), incluso aunque los usuarios no hayan hecho clic en la URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
 
   - **Carpeta eliminada**
 

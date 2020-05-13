@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a usar y administrar la inteligencia de suplantación de identidad para la protección contra la suplantación de correo electrónico.
-ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre inteligencia de suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes simulados específicos.
+ms.openlocfilehash: 607c11d82a145828af736d8d1ecab1dff367f94d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034249"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206645"
 ---
-# <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurar inteligencia de suplantación de identidad en Microsoft 365
+# <a name="configure-spoof-intelligence-in-eop"></a>Configurar inteligencia de identidades en EOP
 
-Si es un cliente de Microsoft 365 con buzones en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación de identidad mediante EOP a partir del 2018 de octubre. EOP usa inteligencia simulada como parte de la defensa general de la organización contra el phishing. Para obtener más información, vea [protección contra la suplantación de identidad en Microsoft 365](anti-spoofing-protection.md).
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación de EOP a través de EOP a partir de 2018 de octubre. EOP usa inteligencia simulada como parte de la defensa general de la organización contra el phishing. Para obtener más información, vea [protección contra la suplantación de identidad en EOP](anti-spoofing-protection.md).
 
 Cuando un remitente suplanta una dirección de correo electrónico, parece ser un usuario en uno de los dominios de la organización o un usuario de un dominio externo que envía correo electrónico a su organización. Es necesario bloquear a los intrusos que suplantan a los remitentes para enviar correo no deseado o de suplantación de identidad. Pero hay escenarios en los que los remitentes legítimos son imitación. Por ejemplo:
 
@@ -50,26 +50,26 @@ Cuando un remitente suplanta una dirección de correo electrónico, parece ser u
 
 Inteligencia de identidad suplantada, y concretamente la Directiva de inteligencia de identidad falsa predeterminada (y únicamente), ayuda a garantizar que el correo electrónico falso enviado por remitentes legítimos no se quede atrapado en los filtros de correo no deseado en Microsoft 365 o en sistemas de correo electrónico externos, a la vez que protege a los usuarios de los ataques de phishing
 
-Puede administrar la inteligencia de identidad en el centro de cumplimiento de & de seguridad de Microsoft 365 o en PowerShell (Exchange Online PowerShell para los clientes de Microsoft 365; Exchange Online Protection PowerShell para clientes independientes de EOP).
+Puede administrar inteligencia de identidad en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para Microsoft 365 organizaciones con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de correo de Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use. <https://protection.office.com/antiphishing>
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use <https://protection.office.com/antiphishing> .
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a Exchange Online Protection PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de inteligencia de suplantación o habilitar o deshabilitar la inteligencia de identidad, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de inteligencia empresarial, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
+- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de inteligencia de suplantación o habilitar o deshabilitar la inteligencia de identidad, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de inteligencia empresarial, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - Para conocer la configuración recomendada para inteligencia de falsificación, [configuración predeterminada de la Directiva de EOP contra el phishing](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Usar el centro de seguridad & cumplimiento para administrar los remitentes suplantados
 
 > [!NOTE]
-> Si tiene una suscripción de Office 365 Enterprise E5 o ha comprado por separado y un complemento de protección contra amenazas avanzada (ATP), también puede administrar a los remitentes que están suplantando su dominio mediante el [conocimiento de inteligencia](walkthrough-spoof-intelligence-insight.md)de ti falso.
+> Si tiene una suscripción de Microsoft 365 Enterprise E5 o ha comprado por separado un complemento de protección contra amenazas avanzada de Office 365 (ATP de Office 365), también puede administrar a los remitentes que están suplantando su dominio mediante el [conocimiento de inteligencia de suplantación de identidad](walkthrough-spoof-intelligence-insight.md).
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Directiva** \> **Correo no deseado**.
 
-2. En la página **configuración contra correo no deseado** , ![haga clic](../../media/scc-expand-icon.png) en expandir icono para expandir la **Directiva de inteligencia empresarial de suplantación**.
+2. En la página **configuración contra correo no deseado** , haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) para expandir la **Directiva de inteligencia empresarial de suplantación**.
 
    ![Seleccionar la Directiva de inteligencia de suplantación](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -83,7 +83,7 @@ Puede administrar la inteligencia de identidad en el centro de cumplimiento de &
    - **Sus dominios**: los remitentes suplantan a los usuarios de los dominios internos.
    - **Dominios externos**: remitentes de suplantación de usuarios en dominios externos.
 
-5. Haga ![clic en](../../media/scc-expand-icon.png) expandir icono en la columna **¿se permite la suplantación?** . Elija **sí** para permitir el remitente suplantado o elija **no** para marcar el mensaje como falsificado. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas de ATP (el valor predeterminado es **mover mensaje a la carpeta de correo no deseado**). Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
+5. Haga clic en ![ expandir icono ](../../media/scc-expand-icon.png) en la columna **¿se permite la suplantación?** . Elija **sí** para permitir el remitente suplantado o elija **no** para marcar el mensaje como falsificado. La acción se controla mediante la Directiva antiphishing predeterminada o las directivas antiphishing personalizadas de ATP (el valor predeterminado es **mover mensaje a la carpeta de correo no deseado**). Para obtener más información, consulte [configuración de la suplantación de identidades en directivas antiphishing](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Captura de pantalla que muestra el control flotante de remitentes suplantados y si se permite que el remitente suplante](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
@@ -150,7 +150,7 @@ Para configurar los remitentes permitidos y bloqueados en inteligencia de identi
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-2. Edite el archivo CSV para agregar o modificar los valores de **SpoofedUser** (dirección de correo electrónico) y **AllowedToSpoof** (sí o no). Guarde el archivo, lea el archivo y almacene el contenido como una variable llamada `$UpdateSpoofedSenders`:
+2. Edite el archivo CSV para agregar o modificar los valores de **SpoofedUser** (dirección de correo electrónico) y **AllowedToSpoof** (sí o no). Guarde el archivo, lea el archivo y almacene el contenido como una variable llamada `$UpdateSpoofedSenders` :
 
    ```powershell
    $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
@@ -178,7 +178,7 @@ Puede configurar las opciones de inteligencia contra la suplantación de identid
 
 Para comprobar que ha configurado inteligencia de suplantación con remitentes a los que se permite y no se permite la suplantación, y que ha configurado la configuración de inteligencia de suplantación de identidad, siga uno de estos pasos:
 
-- En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam** \> expanda \> la **Directiva inteligencia empresarial** seleccionar **Mostrar los remitentes que ya he revisado** \> seleccione la pestaña **dominios** o dominios **externos** y compruebe el valor **se permite la suplantación de identidad** para el remitente.
+- En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Policy** \> **anti-spam** \> expanda la **Directiva inteligencia empresarial** \> seleccionar **Mostrar los remitentes que ya he revisado** \> Seleccione la pestaña **dominios** o dominios **externos** y compruebe el valor **se permite la suplantación de identidad** para el remitente.
 
 - En PowerShell, ejecute los siguientes comandos para ver los remitentes a los que se les permite la suplantación:
 
@@ -207,12 +207,12 @@ Para comprobar que ha configurado inteligencia de suplantación con remitentes a
 
 - En las organizaciones de Microsoft 365 ATP, siga uno de estos pasos:
 
-  - En el centro de seguridad & cumplimiento, vaya a **Directiva** \> de **Administración** \> de amenazas **ATP anti-phishing** y siga uno de estos pasos:
+  - En el centro de seguridad & cumplimiento, vaya a Directiva de **Administración de amenazas** \> **Policy** \> **ATP anti-phishing** y siga uno de estos pasos:
 
     - Seleccione una directiva de la lista. En el control flotante que aparece, compruebe los valores de la sección **suplantación de identidad** .
     - Haga clic en **directiva predeterminada**. En el control flotante que aparece, compruebe los valores de la sección **suplantación de identidad** .
 
-  - En Exchange Online PowerShell, reemplace \<name\> con el valor predeterminado de Office365 ANTIPHISH o el nombre de una directiva de antiphishing de ATP personalizada, y ejecute el siguiente comando y Compruebe la configuración:
+  - En Exchange Online PowerShell, reemplace \< name \> con el valor predeterminado de Office365 ANTIPHISH o el nombre de una directiva de antiphishing de ATP personalizada, y ejecute el siguiente comando y Compruebe la configuración:
 
     ```PowerShell
     Get-AntiPhishPolicy -Identity "<Name>"

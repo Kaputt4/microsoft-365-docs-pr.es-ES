@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Obtenga información sobre las suscripciones y licencias de Microsoft 365 para la empresa, y sepa quién puede asignar licencias y qué sucede cuando se asigna una licencia a un usuario. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635441"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211443"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias de Microsoft 365 para empresas
 
@@ -37,7 +37,7 @@ Al comprar una suscripción a Microsoft 365 para la empresa, se registra para un
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Una vez finalizada la compra, debe crear las cuentas de usuario y, a continuación, asignar una licencia a cada usuario. A medida que cambien las necesidades de su organización, puede comprar más licencias para acomodar a nuevas personas o reasignar licencias a otros usuarios cuando alguien abandone la organización. 
 
-Si tiene más de una suscripción, puede asignar licencias a distintas personas para cada suscripción. Por ejemplo, todos los usuarios podrían asignarse a todas las aplicaciones y servicios de Microsoft 365 como parte de una suscripción de Microsoft 365 Business Standard, mientras que un subconjunto de usuarios también podría asignarse a Visio online a través de una suscripción a Visio independiente. 
+Si tiene más de una suscripción, puede asignar licencias a usuarios diferentes para cada suscripción. Por ejemplo, todos los usuarios podrían asignarse a todas las aplicaciones y servicios de Microsoft 365 como parte de una suscripción de Microsoft 365 Business Standard, mientras que un subconjunto de usuarios también podría asignarse a Visio online a través de una suscripción a Visio independiente. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Averiguar quién puede asignar licencias
@@ -58,20 +58,20 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
   
 |**Si la suscripción tiene este servicio**|**Esto sucede automáticamente**|
 |:-----|:-----|
-|Exchange Online  <br/> |Se crea un buzón para el usuario.  <br/> |
+|Exchange Online  <br/> |Se crea un buzón para el usuario.  <br/> Para obtener información sobre el SLA para completar esta tarea, consulte ["configurar..." mensajes en el centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |El usuario tendrá acceso a las características asociadas con la licencia.  <br/> |
-|Microsoft 365 apps for Enterprise  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
+|Aplicaciones de Microsoft 365 para empresas  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>¿En cuántos dispositivos se puede instalar Office?
 
 Si la suscripción incluye cualquiera de los siguientes productos, cada usuario podrá instalar Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 teléfonos.
   
-- Microsoft 365 apps for Business
+- Aplicaciones de Microsoft 365 para negocios
     
-- Microsoft 365 Business Standard
+- Microsoft 365 Empresa Estándar
     
-- Microsoft 365 apps for Enterprise
+- Aplicaciones de Microsoft 365 para empresas
     
 - Office 365 Enterprise E3
     

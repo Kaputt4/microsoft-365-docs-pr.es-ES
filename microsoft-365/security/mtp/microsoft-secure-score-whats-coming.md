@@ -17,21 +17,21 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a7e13ae8a3ccffa644a123f57b05c4364d4333d2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d9025e4333c6d6ae40f894fc6bde195028871dab
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141352"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211455"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>¿Qué viene con la puntuación segura de Microsoft?
 
-Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score.md) sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
+Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score-new.md) sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
 
-Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score.md#whats-new)
+Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-new.md#whats-new)
 
-## <a name="may-2020"></a>2020 de mayo
+## <a name="may-2020"></a>Mayo de 2020
 
-### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-preview"></a>Adición de acciones adicionales de mejora de protección contra amenazas avanzada de Azure a la vista previa
+### <a name="adding-additional-azure-advanced-threat-protection-improvement-actions-to-the-preview-release-and-new-iteration"></a>Adición de acciones adicionales de mejora de la protección contra amenazas avanzada de Azure a la versión preliminar y la nueva iteración
 
 - Habilitación de características de seguridad en confianzas de Active Directory

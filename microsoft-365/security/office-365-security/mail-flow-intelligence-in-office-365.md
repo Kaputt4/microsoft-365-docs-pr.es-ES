@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635641"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206621"
 ---
-# <a name="mail-flow-intelligence"></a>Inteligencia del flujo de correo
+# <a name="mail-flow-intelligence-in-eop"></a>Inteligencia del flujo de correo en EOP
 
-Normalmente, se usa un conector para enrutar los mensajes de correo electrónico de la organización al entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentando la entrega de cada mensaje durante 24 horas. Transcurridas las 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar los mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentando la entrega de cada mensaje durante 24 horas. Transcurridas las 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
 
 Microsoft 365 genera un error cuando no se puede entregar un mensaje con un conector. Los errores más comunes y sus soluciones se describen en este tema. Colectivamente, los errores de cola y de notificación para los mensajes no entregados que se envían a través de conectores se conocen como _inteligencia de flujo de correo_.
 
@@ -68,13 +68,13 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
   - En el [centro de administración de Exchange (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center), deshabilite o elimine el conector que entrega el correo electrónico de Microsoft 365 a su entorno de correo electrónico local:
 
-    1. En el EAC, vaya a **Mail flow** \> **conectores**de flujo de correo.
+    1. En el EAC, vaya a conectores de **flujo de correo** \> **Connectors**.
 
     2. Seleccione el conector con el valor **de del** **Office 365** y el valor **para** el **servidor de correo electrónico de su organización** , y siga uno de estos pasos:
 
-       - Eliminar el conector haciendo clic en **eliminar** ![icono quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Eliminar el conector haciendo clic en **eliminar** ![ icono quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Deshabilite el conector haciendo **Edit** ![clic en Editar](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) icono de edición y desactivando la **activación**.
+       - Deshabilite el conector haciendo clic en **Editar** icono de edición y desactivando la ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **activación**.
 
   - Cambie el dominio aceptado en Microsoft 365 que está asociado con su entorno de correo electrónico local de **retransmisión interna** a **autorizado**. Para obtener instrucciones, vea [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -86,7 +86,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
 Normalmente, este error significa Microsoft 365 conectado al servidor de correo electrónico de destino, pero el servidor respondió con un error inmediato o no cumple los requisitos de conexión. Los detalles del error explicarán el problema. Por ejemplo:
 
-- El servidor de correo electrónico de destino respondió con el error "servicio no disponible", lo que indica que el servidor no puede mantener la comunicación con Office 365.
+- El servidor de correo electrónico de destino respondió con el error "servicio no disponible", lo que indica que el servidor no puede mantener la comunicación con Microsoft 365.
 
 - El conector está configurado para requerir TLS, pero el servidor de correo electrónico de destino no admite TLS.
 
@@ -102,15 +102,15 @@ Normalmente, este error significa que Microsoft 365 tiene dificultades para comu
 
 - El Firewall usa reglas de examen de paquetes SMTP y estas reglas no funcionan correctamente.
 
-- El servidor de correo electrónico local no funciona correctamente (por ejemplo, los bloqueos del servicio, los bloqueos o los recursos del sistema son bajos), lo que hace que el servidor agote el tiempo de espera y cierre la conexión con Office 365.
+- El servidor de correo electrónico local no funciona correctamente (por ejemplo, los bloqueos del servicio, los bloqueos o los recursos del sistema son bajos), lo que hace que el servidor agote el tiempo de espera y cierre la conexión con Microsoft 365.
 
-- Hay problemas de red entre su entorno local y Office 365.
+- Hay problemas de red entre su entorno local y Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>¿Cómo soluciono el código de error 450 4.4.318?
 
 - Averigüe qué escenario se aplica a usted y realice las correcciones necesarias.
 
-- Si el problema se debe a problemas de red entre el entorno local y Office 365, póngase en contacto con su equipo de red para solucionar el problema.
+- Si el problema se debe a problemas de red entre el entorno local y Microsoft 365, póngase en contacto con su equipo de red para solucionar el problema.
 
 - Si el error procede de la organización asociada (por ejemplo, un proveedor de servicios en la nube de terceros), debe ponerse en contacto con su partner para solucionar el problema.
 

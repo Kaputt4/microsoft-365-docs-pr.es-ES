@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066243"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208392"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -97,7 +97,7 @@ Los nuevos paneles interactivos para alertas, coincidencias de directivas, accio
 
 Las directivas de cumplimiento de comunicaciones examinan y capturan mensajes en varios canales de comunicación para ayudarle a revisar y corregir rápidamente los problemas de cumplimiento:
 
-- **Microsoft Teams**: las comunicaciones de chat para canales públicos y privados de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) y chats individuales se admiten en el cumplimiento de la comunicación como origen de canal independiente o con otros servicios de Microsoft 365. Las directivas ahora analizan automáticamente todos los canales y equipos de Microsoft Teams para determinados usuarios definidos en una directiva, lo que elimina la necesidad de mantener una lista de asignación independiente para las asignaciones de Microsoft Teams.
+- **Microsoft Teams**: las comunicaciones de chat para canales públicos y privados de [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) y chats individuales se admiten en el cumplimiento de la comunicación como origen de canal independiente o con otros servicios de Microsoft 365. Deberá agregar manualmente los usuarios individuales, grupos de distribución o canales específicos de Microsoft Teams cuando seleccione usuarios y grupos para supervisar en una directiva de cumplimiento de la comunicación.
 - **Exchange Online**: todos los buzones hospedados en [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) en su organización de 365 de Microsoft tienen derecho a análisis. Los correos electrónicos y datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones están disponibles instantáneamente para supervisión y en informes de cumplimiento. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
 - **Yammer**: los mensajes privados y las conversaciones de la comunidad pública en [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) se admiten en las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para admitir el examen de mensajes y datos adjuntos.
 - **Skype empresarial online**: las directivas de cumplimiento de comunicaciones admiten el análisis de comunicaciones de chat y los datos adjuntos asociados en [Skype empresarial online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).

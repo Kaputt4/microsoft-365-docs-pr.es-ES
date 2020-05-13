@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento en Office 365 o en Microsoft 365.
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942903"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208382"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
   
@@ -41,27 +41,9 @@ Consulte la sección [More Information](#more-information) para obtener una desc
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: conectarse al centro de seguridad & cumplimiento de PowerShell
 
-El primer paso consiste en conectarse al centro de seguridad & cumplimiento de la organización.
+El primer paso consiste en conectar con el PowerShell del centro de cumplimiento de & de seguridad de la organización. Para obtener instrucciones paso a paso, vea [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `ConnectSCC.ps1`. 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. En el equipo local, abra Windows PowerShell y vaya a la carpeta donde guardó el script. 
-    
-3. Ejecutar el script; por ejemplo:
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. Cuando se le pidan sus credenciales, escriba su dirección de correo electrónico y contraseña y, a continuación, haga clic en **Aceptar**. 
+Si su cuenta de Microsoft 365 usa la autenticación multifactor (MFA) o autenticación federada, no podrá usar las instrucciones del tema anterior sobre la conexión al PowerShell del Centro de seguridad y cumplimiento. Como alternativa, vea las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento con la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: ejecutar el script para informar sobre suspensiones asociadas con casos de eDiscovery
 
@@ -172,9 +154,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > Para guardar el informe en la misma carpeta en la que se encuentra el script, escriba un punto (".") cuando se le solicite una carpeta de destino. Para guardar el informe en una subcarpeta de la carpeta en la que se encuentra el script, escriba el nombre de la subcarpeta. 
   
-    El script empieza a recopilar información sobre todos los casos de eDiscovery de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la sesión de Windows PowerShell. Después de que se muestre este mensaje, puede tener acceso al informe en la carpeta que especificó en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv`.
+    El script empieza a recopilar información sobre todos los casos de eDiscovery de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la sesión de Windows PowerShell. Después de que se muestre este mensaje, puede tener acceso al informe en la carpeta que especificó en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv` .
 
-    Además, el script también crea un informe con una lista de casos que no tienen ninguna suspensión. El nombre de archivo de este informe `CaseswithNoHolds<DateTimeStamp>.csv`es.
+    Además, el script también crea un informe con una lista de casos que no tienen ninguna suspensión. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv` .
     
     Este es un ejemplo de cómo se ejecuta el script CaseHoldsReport. ps1. 
     

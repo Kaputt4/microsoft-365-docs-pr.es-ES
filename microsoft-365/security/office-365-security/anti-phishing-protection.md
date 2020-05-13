@@ -1,5 +1,5 @@
 ---
-title: Protección contra suplantación de identidad (phishing) en Microsoft 365
+title: Protección contra phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: En este artículo se presentan los recursos en línea disponibles que se pueden usar para obtener información acerca de las opciones y estrategias contra la suplantación de identidad (phishing) en Microsoft 365.
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre las características de protección contra suplantación de identidad en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033767"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208976"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad (phishing) en Microsoft 365
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033767"
 
 - **Ransomware** que cifra los datos y solicita el pago para descifrarlos casi siempre comienza en los mensajes de suplantación de identidad. La protección contra la suplantación de identidad (phishing) no puede ayudarle a descifrar archivos cifrados, pero puede ayudarle a detectar los mensajes de suplantación de identidad asociados con la campaña de ransomware. Para obtener más información acerca de cómo recuperarse de un ataque de ransomware, consulte [Recover from a ransomware Attack in Microsoft 365](recover-from-ransomware.md).
 
-Con la creciente complejidad de los ataques, es incluso difícil que los usuarios con formación puedan identificar sofisticados mensajes de suplantación de identidad. Afortunadamente, Exchange Online Protection (EOP) y las características adicionales de Microsoft 365 Advanced Threat Protection (ATP) pueden ser de ayuda.
+Con la creciente complejidad de los ataques, es incluso difícil que los usuarios con formación puedan identificar sofisticados mensajes de suplantación de identidad. Afortunadamente, Exchange Online Protection (EOP) y las características adicionales de la protección contra amenazas avanzada de Office 365 (Office 365 ATP) pueden resultarle útiles.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
 EOP (es decir, las organizaciones de Microsoft 365 sin ATP) contiene características que pueden ayudar a proteger su organización de las amenazas de suplantación de identidad:
 
-- **Inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
+- **Inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, vea [Configure outsimulate Intelligence in EOP](learn-about-spoof-intelligence.md).
 
 - **Directivas antiphishing en EOP**: activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitentes no autenticados en Outlook y especificar la acción para los remitentes suplantados bloqueados (mover a la carpeta de correo no deseado o cuarentena). Para obtener más información, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 

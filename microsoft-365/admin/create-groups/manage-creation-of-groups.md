@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear grupos de Microsoft 365.
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630410"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208347"
 ---
 # <a name="manage-who-can-create-groups"></a>Administrar quién puede crear grupos
 
@@ -51,7 +51,7 @@ En este artículo se explica cómo deshabilitar la capacidad de crear grupos en 
     
 - PowerBI
 
-- Plan de desarrollo
+- Hoja de ruta
     
 Puede restringir la creación de grupos de Microsoft 365 a los miembros de un grupo de seguridad en particular. Para configurar esto, use Windows PowerShell. Este artículo le guiará por los pasos necesarios.
   
@@ -96,7 +96,7 @@ Los administradores de los roles enumerados anteriormente no tienen que ser miem
 > [!IMPORTANT]
 > Asegúrese de usar un **grupo de seguridad** para restringir quién puede crear grupos. Si intenta usar un grupo de 365 de Microsoft, los miembros no podrán crear un grupo desde SharePoint porque busca un grupo de seguridad. 
     
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
 
 2. Haga clic en **Agregar un grupo**.
 
@@ -120,13 +120,13 @@ Debe usar la versión preliminar de [Azure Active Directory PowerShell para Grap
 
 Copie el script siguiente en un editor de texto, como el Bloc de notas o [Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Reemplace * \<SecurityGroupName\> * por el nombre del grupo de seguridad que ha creado. Por ejemplo:
+Reemplace * \< SecurityGroupName \> * por el nombre del grupo de seguridad que ha creado. Por ejemplo:
 
 `$GroupName = "Group Creators"`
 
 Guarde el archivo como GroupCreators. ps1. 
 
-En la ventana de PowerShell, navegue hasta la ubicación donde guardó el archivo (escriba "CD <FileLocation>").
+En la ventana de PowerShell, navegue hasta la ubicación donde guardó el archivo (escriba "CD <FileLocation> ").
 
 Para ejecutar el script, escriba:
 
@@ -173,6 +173,8 @@ Si en el futuro desea cambiar el grupo de seguridad que se va a usar, puede volv
 Si desea desactivar la restricción de creación de grupos y volver a permitir que todos los usuarios creen grupos, establezca $GroupName en "" y $AllowGroupCreation en "true" y vuelva a ejecutar el script.
     
 ## <a name="step-4-verify-that-it-works"></a>Paso 4: comprobar que funciona
+
+Los cambios pueden tardar treinta minutos o más en surtir efecto. Puede comprobar la nueva configuración haciendo lo siguiente:
 
 1. Inicie sesión con una cuenta de usuario que no debe tener la capacidad de crear grupos. Es decir, no son miembros del grupo de seguridad que ha creado o administrador.
     

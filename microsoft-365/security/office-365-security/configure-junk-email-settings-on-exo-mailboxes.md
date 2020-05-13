@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066198"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206633"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
-La configuración contra correo no deseado de la organización en Exchange Online se controla mediante Exchange Online Protection (EOP). Para obtener más información, consulte [Protección contra correo no deseado de Office 365](anti-spam-protection.md).
+En Microsoft 365 organizaciones con buzones en Exchange Online, Exchange Online Protection (EOP) controla la configuración contra correo no deseado de la organización. Para obtener más información, vea [protección contra correo no deseado en EOP](anti-spam-protection.md).
 
 Pero también hay opciones de Configuración antispam específicas que los administradores pueden configurar en buzones individuales en Exchange Online:
 
 - **Habilitar o deshabilitar la regla de correo no deseado**: la regla de correo no deseado es una regla de bandeja de entrada oculta denominada regla de correo electrónico no deseado que está habilitada de forma predeterminada en todos los buzones. La regla de correo no deseado controla las siguientes características:
 
-  - **Mover mensajes a la carpeta de correo no deseado en función de las directivas contra correo no**deseado: cuando una directiva contra correo electrónico no deseado se configura con la acción **mover mensaje a la carpeta de correo no deseado** para un veredicto de filtrado de correo no deseado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo electrónico no deseado después de que el mensaje se entregue al buzón. Para obtener más información acerca del filtrado de correo no deseado en directivas contra correo no deseado, consulte [configurar directivas contra correo no deseado en Office 365](configure-your-spam-filter-policies.md). De forma similar, si la depuración automática (ZAP) detecta correo no deseado o phish en un mensaje ya entregado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo no deseado para **mover el mensaje a la carpeta correo no deseado** acciones de veredicto filtrado de correo no deseado. Para obtener más información acerca de ZAP, consulte [depuración automática de cero horas (ZAP)-protección contra correo no deseado y malware en Office 365](zero-hour-auto-purge.md).
+  - **Mover mensajes a la carpeta de correo no deseado en función de las directivas contra correo no**deseado: cuando una directiva contra correo electrónico no deseado se configura con la acción **mover mensaje a la carpeta de correo no deseado** para un veredicto de filtrado de correo no deseado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo electrónico no deseado después de que el mensaje se entregue al buzón. Para obtener más información sobre el filtrado de correo no deseado en directivas contra correo electrónico no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md). De forma similar, si la depuración automática de cero horas (ZAP) determina que un mensaje entregado es correo no deseado o phish, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo no deseado para **mover el mensaje a la carpeta correo no deseado** acciones de veredicto filtrado de correo no deseado. Para obtener más información acerca de ZAP, consulte [Zero-Hour auto Purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
   
   - **Configuración del correo no deseado que los usuarios se configuran para sí mismos en Outlook o Outlook en la web**: la _colección de listas seguras_ es la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si la regla de correo electrónico no deseado mueve el mensaje a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón de correo en Outlook o en Outlook en la web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
 
@@ -78,7 +78,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 > [!NOTE]
 > 
-> - Si el usuario nunca ha abierto su buzón de correo, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error en operaciones masivas `-ErrorAction SlientlyContinue` , agregue al comando **set-MailboxJunkEmailConfiguration** .
+> - Si el usuario nunca ha abierto su buzón de correo, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
 > 
 > - Incluso si deshabilita la regla de correo electrónico no deseado, el filtro de correo electrónico no deseado de Outlook (según cómo esté configurado) también puede determinar si un mensaje es correo no deseado y puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado en función de su propio veredicto de correo no deseado y de la colección de listas seguras del buzón. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 
@@ -86,7 +86,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Realice uno de los siguientes procedimientos para confirmar que la regla de correo no deseado se ha habilitado o deshabilitado correctamente en un buzón:
 
-- Reemplace _ \<MailboxIdentity\> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar el valor de la propiedad **Enabled** :
+- Reemplace _ \< MailboxIdentity \> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar el valor de la propiedad **Enabled** :
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -117,7 +117,7 @@ Use la siguiente sintaxis para configurar la colección de listas seguras de un 
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Para escribir varios valores y sobrescribir las entradas existentes para los parámetros _BlockedSendersAndDomains_ y _TrustedSendersAndDomains_ , use la siguiente sintaxis: `"<Value1>","<Value2>"...`. Para agregar o quitar uno o más valores sin que ello afecte a las entradas existentes, use la siguiente sintaxis:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Para escribir varios valores y sobrescribir las entradas existentes para los parámetros _BlockedSendersAndDomains_ y _TrustedSendersAndDomains_ , use la siguiente sintaxis: `"<Value1>","<Value2>"...` . Para agregar o quitar uno o más valores sin que ello afecte a las entradas existentes, use la siguiente sintaxis:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 En este ejemplo se establecen las siguientes configuraciones de la colección de listas seguras en el buzón de Ori Epstein:
 
@@ -141,7 +141,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 > [!NOTE]
 > 
-> - Si el usuario no ha abierto nunca su buzón de correo, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error en operaciones masivas `-ErrorAction SlientlyContinue` , agregue al comando **set-MailboxJunkEmailConfiguration** .
+> - Si el usuario no ha abierto nunca su buzón de correo, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
 > 
 > - Incluso si la regla de correo no deseado está deshabilitada en el buzón, todavía puede configurar la colección de listas seguras y el filtro de correo electrónico no deseado de Outlook puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 > 
@@ -151,7 +151,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Realice uno de los siguientes procedimientos para confirmar que los límites de colección de listas seguras se han configurado correctamente en un buzón:
 
-- Reemplace _ \<MailboxIdentity\> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar los valores de la propiedad:
+- Reemplace _ \< MailboxIdentity \> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar los valores de la propiedad:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -167,7 +167,7 @@ Realice uno de los siguientes procedimientos para confirmar que los límites de 
 
 Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, consulte [archivos de plantilla administrativa (ADMX/ADML) y herramienta de personalización de Office para las aplicaciones de Microsoft 365 para empresas, office 2019 y office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
-Cuando el filtro de correo electrónico no deseado de Outlook está establecido en el valor predeterminado, **no hay ningún filtro automático** **en opciones** **principales** \> \> de **correo** \> **no deseado,** Outlook no intenta clasificar los masaje como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) para mover los mensajes a la carpeta Para obtener más información acerca de estas opciones, vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Cuando el filtro de correo electrónico no deseado de Outlook está establecido en el valor predeterminado, **no hay ningún filtro automático** en opciones **principales** de correo no deseado \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook no intenta clasificar los masaje como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) para mover los mensajes a la carpeta Para obtener más información acerca de estas opciones, vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
 Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o **Alto**, el filtro de correo no deseado de Outlook usará su propia tecnología de filtrado SmartScreen para identificar y mover el correo no deseado a la carpeta de correo no deseado. Esta clasificación de correo no deseado es independiente del nivel de confianza contra correo no deseado (SCL) que se determina mediante EOP. De hecho, Outlook pasa por alto el SCL de EOP (a menos que EOP Marque el mensaje para omitir el filtrado de correo no deseado) y utiliza sus propios criterios para determinar si el mensaje es correo no deseado. Por supuesto, es posible que el veredicto de correo no deseado de EOP y Outlook sea el mismo. Para obtener más información acerca de estas opciones, vea [cambiar el nivel de protección en el filtro de correo no deseado](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 

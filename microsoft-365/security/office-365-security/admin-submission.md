@@ -1,5 +1,5 @@
 ---
-title: Envíos de administración en Office 365
+title: Envíos de administración
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente perjudiciales, direcciones URL y archivos de la empresa a Microsoft para su análisis.
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034205"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209756"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
-Si es administrador de una organización de Microsoft 365 con buzones en Exchange Online, puede usar el portal de envíos del centro de seguridad & cumplimiento para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para su análisis.
+En Microsoft 365 organizaciones con buzones de correo en Exchange Online, los administradores pueden usar el portal de envíos del centro de seguridad & cumplimiento para enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft para su análisis.
 
 Al enviar un correo electrónico, recibirá información sobre las directivas que puedan haber permitido el correo entrante en su inquilino, así como el examen de las direcciones URL y los datos adjuntos del correo. Las directivas que pueden haber permitido un correo incluyen la lista de remitentes seguros de un usuario individual, así como directivas de nivel de inquilino, como reglas de flujo de correo de Exchange (también conocidas como reglas de transporte).
 
@@ -34,7 +34,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **envío** , <https://protection.office.com/reportsubmission>use.
+- Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **envío** , use <https://protection.office.com/reportsubmission> .
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas contra correo no deseado, debe ser miembro de los grupos de funciones **Administración**de la organización, **Administrador de seguridad**o **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -42,7 +42,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar sobre contenido sospechoso a Microsoft
 
-1. En el centro de seguridad & cumplimiento, vaya a **mensajes de envío**de administración de la **revisión** \> de **amenazas** \> .
+1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
 
 2. En la página envíos que aparece, haga clic **en el botón** **nuevo envío** .
 
@@ -74,7 +74,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
-1. En la sección **tipo de objeto** , seleccione **dirección URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo <https://www.fabrikam.com/marketing.html>,).
+1. En la sección **tipo de objeto** , seleccione **dirección URL**. En el cuadro que aparece, escriba la dirección URL completa (por ejemplo, <https://www.fabrikam.com/marketing.html> ).
 
 2. En la sección **motivo de envío** , seleccione una de las siguientes opciones:
 
@@ -104,11 +104,11 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="view-admin-submissions"></a>Ver envíos de administración
 
-1. En el centro de seguridad & cumplimiento, vaya a **mensajes de envío**de administración de la **revisión** \> de **amenazas** \> .
+1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
 
 2. En la página **envíos** que aparece, compruebe que la pestaña **envíos administrativos** está seleccionada.
 
-Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **identificador de envío** introduciendo un valor ![en el](../../media/scc-quarantine-refresh.png)cuadro y haciendo clic en el botón actualizar. Update
+Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **identificador de envío** introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
 Para cambiar los criterios de filtro, haga clic en el botón **identificador de envío** y elija uno de los siguientes valores:
 
@@ -178,7 +178,7 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 
 Si ha implementado el [complemento de mensajes de informe](enable-the-report-message-add-in.md), o los usuarios usan la [creación de informes integrada en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), puede ver qué usuarios están notificando en la pestaña **envíos de usuarios** .
 
-1. En el centro de seguridad & cumplimiento, vaya a **mensajes de envío**de administración de la **revisión** \> de **amenazas** \> .
+1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
 
 2. En la página **envíos** que aparece, haga clic en la pestaña **envíos de usuarios** .
 
@@ -193,12 +193,12 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 
 <sup>\*</sup>Si hace clic en este valor, se muestra información detallada en un control flotante.
 
-Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **remitente** introduciendo un valor en el ![cuadro y](../../media/scc-quarantine-refresh.png)haciendo clic en el botón actualizar. Update
+Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **remitente** introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
 Para cambiar los criterios de filtro, haga clic en el botón **remitente** y elija uno de los siguientes valores:
 
 - **Dominio del remitente**
-- **Asunto**
+- **Subject**
 - **Enviado por**
 - **Tipo de envío**
 - **IP del remitente**
@@ -211,7 +211,7 @@ Para exportar los resultados, haga clic en **exportar** cerca de la parte superi
 
 Si ha [configurado un buzón personalizado](user-submission.md) para recibir mensajes que el usuario ha notificado, puede ver y enviar también los mensajes que se entregaron al buzón de informes.
 
-1. En el centro de seguridad & cumplimiento, vaya a **mensajes de envío**de administración de la **revisión** \> de **amenazas** \> .
+1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
 
 2. En la página **envíos** que aparece, haga clic en la ficha **buzón personalizado** .
 
@@ -224,7 +224,7 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **IP del remitente**<sup>\*</sup>
 - **Tipo de envío**
 
-Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización, y puede filtrar por **enviado** especificando un valor en el ![cuadro y](../../media/scc-quarantine-refresh.png)haciendo clic en el botón actualizar. Update
+Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización, y puede filtrar por **enviado** especificando un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
 Para exportar los resultados, haga clic en **exportar** cerca de la parte superior de la página y seleccione datos o **tabla**de **gráficos** . En el cuadro de diálogo que aparece, guarde el archivo. csv.
 

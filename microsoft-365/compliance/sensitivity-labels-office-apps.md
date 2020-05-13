@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: db450bae565151fd3f3472217cbd5a0f03a3ab79
-ms.sourcegitcommit: 5b7630b8692c692aef3eefc8857f46a7ee172dfd
+ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174064"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208074"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -56,7 +56,7 @@ Para iOS y Android: cuando se muestran las versiones mínimas, también se admit
 |[Vínculo proporcionar ayuda a una página de ayuda personalizada](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Implementación en [canal mensual](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003 +) | Implementación en [canal mensual](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35 +)   | En revisión   | En revisión         | En revisión                                                        |
+|[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canal mensual](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003 +) | [Canal mensual](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35 +)   | En revisión   | En revisión         | En revisión                                                        |
 |[Ver el uso de etiquetas con análisis de etiqueta](label-analytics.md) y enviar datos para administradores                      | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |[Pedir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos](sensitivity-labels.md#what-label-policies-can-do)   | En revisión            | En revisión        | En revisión   | En revisión         | En revisión                                                        |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | Vista previa: en [Office Insider](https://office.com/insider)                                  | En revisión | En revisión | En revisión | [Sí-participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -119,7 +119,7 @@ Si necesita convertir plantillas de protección existentes en etiquetas, use Azu
 
 Las etiquetas de confidencialidad que configure para aplicar el cifrado eliminan la complejidad de los usuarios para especificar su propia configuración de cifrado. En muchas aplicaciones de Office, los usuarios pueden seguir configurando manualmente estas configuraciones de cifrado individuales mediante las opciones de Information Rights Management (IRM). Por ejemplo, para aplicaciones de Windows:
 
-- Para un documento: **File** > **información** > sobre el archivo**proteger documento** > **restringir acceso**
+- Para un documento: información sobre el **archivo**  >  **Info**  >  **proteger documento**  >  **restringir acceso**
 - para un correo electrónico: en la pestaña **opciones** > **cifrar** 
   
 Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, siempre pueden invalidar las opciones de configuración de la etiqueta con su propia configuración de cifrado. Por ejemplo:

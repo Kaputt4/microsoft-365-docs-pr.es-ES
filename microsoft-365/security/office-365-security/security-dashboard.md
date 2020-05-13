@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632522"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208041"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -35,7 +35,7 @@ Vea el vídeo para obtener información general y lea este artículo para obtene
 
 Dependiendo de lo que incluya la suscripción de su organización, el panel de seguridad incluye varios widgets, como Resumen de administración de amenazas, estado de la protección contra amenazas, detecciones de amenazas semanales globales, malware y más, tal y como se describe en las secciones siguientes.
 
-Para ver el panel de seguridad, en el [centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md), vaya a **Panel**de **Administración** \> de amenazas.
+Para ver el panel de seguridad, en el [centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md), vaya a panel de **Administración de amenazas** \> **Dashboard**.
 
 > [!NOTE]
 > Debe ser un administrador global, un administrador de seguridad o un lector de seguridad para ver el panel de seguridad. Algunos widgets requieren permisos adicionales para ver. Para obtener más información, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
@@ -61,7 +61,7 @@ El widget de estado de protección contra amenazas muestra la efectividad de la 
 
 ![Widget de estado de protección contra amenazas](../../media/tpswidget.png)
 
-Los detalles dependen de si su suscripción a Microsoft 365 incluye [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) con o sin [Office 365 protección contra amenazas avanzada](office-365-atp.md) (ATP).
+Los detalles dependen de si su suscripción a Microsoft 365 incluye [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) con o sin [Office 365 protección contra amenazas avanzada](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -82,7 +82,7 @@ Las métricas se calculan como se describe en la siguiente tabla:
 
 |||
 |---|---|
-|**Biometría**|**Cómo se calcula**|
+|**Métrica**|**Cómo se calcula**|
 |Mensajes examinados|Número de mensajes de correo electrónico examinados multiplicado por el número de destinatarios|
 |Amenazas detenidas|Número de mensajes de correo electrónico identificados como que contienen malware multiplicado por el número de destinatarios|
 |Bloqueado por [ATP](office-365-atp.md)|Número de mensajes de correo electrónico bloqueados por ATP multiplicado por el número de destinatarios|

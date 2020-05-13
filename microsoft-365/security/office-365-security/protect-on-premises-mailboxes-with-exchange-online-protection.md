@@ -1,11 +1,11 @@
 ---
-title: 'Proteger el buzón local: Exchange Online Protection'
+title: Proteger buzones locales en China con EOP independiente
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,15 +20,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a proteger los buzones locales con Exchange Online Protection (EOP).
-ms.openlocfilehash: bdfebf16d77f26f3e3bb2890bd4aa8ccfa12f27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores de China con Office 365 operado por 21Vianet pueden aprender a usar independiente de Exchange Online Protection (EOP) para proteger sus buzones locales.
+ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033883"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208299"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteger buzones locales con Exchange Online Protection
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteger buzones locales en China con EOP independiente
 
 > [!NOTE]
 > Este artículo solo se aplica a Office 365 operado por 21Vianet en China.
@@ -65,7 +65,7 @@ Después de configurar los conectores, espere 72 horas para que las actualizacio
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Paso 5: asegurarse de que el correo no deseado se enruta a la carpeta de correo electrónico no deseado de cada usuario
 
-Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan en [Configure Standalone EOP para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan en [Configure Standalone EOP para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción Si edita sus directivas contra correo no deseado (también conocidas como directivas de filtro de contenido). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: usar el centro de administración de Microsoft 365 para apuntar el registro MX a EOP
 

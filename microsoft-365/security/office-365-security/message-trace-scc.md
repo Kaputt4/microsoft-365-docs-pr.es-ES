@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635321"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209432"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -27,11 +27,11 @@ Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensa
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el seguimiento de mensajes original que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con los mensajes, solucionar problemas del flujo de correo y validar los cambios de la Directiva.
 
 > [!NOTE]
-> * Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>* El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
+> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) de PowerShell de Exchange Online PowerShell o Exchange Online Protection de Exchange devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
-1. Abra el centro de seguridad & cumplimiento <https://protection.office.com>en.
+1. Abra el centro de seguridad & cumplimiento en <https://protection.office.com> .
 
 2. Expanda **flujo de correo**y, a continuación, haga clic en **seguimiento de mensajes**.
 
@@ -39,7 +39,7 @@ El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el se
 
 Desde aquí puede iniciar una nueva traza predeterminada haciendo clic en el botón **iniciar una traza** . Se buscarán todos los mensajes de todos los remitentes y destinatarios durante los dos últimos días. O bien, puede usar una de las consultas almacenadas de las categorías de consulta disponibles y ejecutarlas tal cual o usarlas como punto de partida para sus propias consultas:
 
-- **Consultas predeterminadas**: consultas integradas proporcionadas por Office 365.
+- **Consultas predeterminadas**: consultas integradas proporcionadas por Microsoft 365.
 
 - **Consultas personalizadas**: consultas guardadas por los administradores en la organización para un uso futuro.
 
@@ -58,7 +58,7 @@ Los valores predeterminados son **todos los remitentes** y **todos los destinata
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
 > [!NOTE]
-> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo `*@contoso.com`,), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo. <br/><br/> Puede pegar varias listas de remitentes o destinatarios separados por punto y coma (`;`). espacios (`\s`), retornos`\r`de carro () o líneas`\n`siguientes ().
+> También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín (por ejemplo, `*@contoso.com` ), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo. <br/><br/> Puede pegar varias listas de remitentes o destinatarios separados por punto y coma ( `;` ). espacios ( `\s` ), retornos de carro ( `\r` ) o líneas siguientes ( `\n` ).
 
 ### <a name="time-range"></a>Intervalo de tiempo
 
@@ -94,11 +94,11 @@ Puede dejar el valor predeterminado **todos** seleccionados o puede seleccionar 
 
 - **Error**: el mensaje no se entregó.
 
-- **En cuarentena**: el mensaje se puso en cuarentena (como correo no deseado, correo masivo o suplantación de identidad). Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md).
+- **En cuarentena**: el mensaje se puso en cuarentena (como correo no deseado, correo masivo o suplantación de identidad). Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
 
 - **Filtrado como correo no deseado**: el mensaje se identificó como correo no deseado y fue rechazado o bloqueado (no en cuarentena).
 
-- **Obtener estado:** El mensaje se recibió recientemente con Office 365, pero todavía no hay otros datos de estado disponibles. Vuelva a comprobar en unos minutos.
+- **Obtener estado:** El mensaje se recibió recientemente con Microsoft 365, pero no hay otros datos de estado disponibles todavía. Vuelva a comprobar en unos minutos.
 
 **Nota**: los valores **Pending (** **en cuarentena**) y **Filter (correo no deseado** ) solo están disponibles para las búsquedas de menos de 10 días. Además, puede haber un retraso de 5 a 10 minutos entre el estado de entrega real y notificado.
 
@@ -106,7 +106,7 @@ Puede dejar el valor predeterminado **todos** seleccionados o puede seleccionar 
 
 Se trata del identificador del mensaje de Internet (también conocido como el identificador de cliente) que se encuentra en el campo de encabezado **Message-ID:** en el encabezado del mensaje. Los usuarios pueden proporcionarle este valor para investigar mensajes específicos.
 
-Este valor es constante mientras dura el mensaje. Para los mensajes creados en Microsoft 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>`, incluidos los corchetes angulares\< \>(). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
+Este valor es constante mientras dura el mensaje. Para los mensajes creados en Microsoft 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>` , incluidos los corchetes angulares ( \< \> ). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
 
 Cuando use el **identificador de mensaje** para filtrar los resultados, asegúrese de incluir la cadena completa, incluidos los corchetes angulares.
 
@@ -126,7 +126,7 @@ Los tipos de informes disponibles son:
 
 - **Resumen**: disponible si el intervalo de tiempo es inferior a 10 días y no requiere opciones de filtrado adicionales. Los resultados estarán disponibles casi inmediatamente después de hacer clic en **Buscar**. El informe devuelve hasta 20000 resultados.
 
-- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \*@contoso. com). El informe de resumen mejorado devuelve hasta 50000 resultados. El informe extendido devuelve hasta 1000 resultados.
+- **Mejorado** o **ampliado**: estos informes solo están disponibles como archivos. csv descargables y requieren una o varias de las siguientes opciones de filtrado independientemente del intervalo de tiempo: **por estas personas**, **a estas personas o al**identificador del **mensaje**. Puede usar caracteres comodín para los remitentes o los destinatarios (por ejemplo, \* @contoso. com). El informe de resumen mejorado devuelve hasta 50000 resultados. El informe extendido devuelve hasta 1000 resultados.
 
 **Notas**:
 
@@ -152,7 +152,7 @@ El informe de Resumen contiene la siguiente información:
 
 - **Fecha**: la fecha y hora en que el servicio recibió el mensaje con la zona horaria UTC configurada.
 
-- **Sender**: la dirección de correo electrónico del remitente (*dominio*de*alias*@).
+- **Sender**: la dirección de correo electrónico del remitente (dominio de*alias* @ *domain*).
 
 - **Recipient**: la dirección de correo electrónico del destinatario o los destinatarios. Para un mensaje enviado a varios destinatarios, hay una línea por destinatario. Si el destinatario es un grupo de distribución, un grupo de distribución dinámico o un grupo de seguridad habilitado para correo, el grupo será el primer destinatario y, a continuación, cada miembro del Grupo estará en una línea independiente.
 
@@ -172,7 +172,7 @@ Puede exportar los resultados después de haber seleccionado una o más filas ha
 
 Los registros de mensajes relacionados son registros que compartieron el mismo identificador de mensaje. Recuerde, incluso un único mensaje que se envía entre dos personas puede generar varios registros. El número de registros aumenta cuando el mensaje se ve afectado por la expansión del grupo de distribución, el reenvío y las reglas de flujo de correo (también conocidos como reglas de transporte), etc.
 
-Después de seleccionar la casilla de verificación de una fila, puede buscar registros relacionados del mensaje haciendo clic en el botón **Buscar relacionado** que aparece o seleccionando **más opciones** ![](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **para buscar registros relacionados para este mensaje**.
+Después de seleccionar la casilla de verificación de una fila, puede buscar registros relacionados del mensaje haciendo clic en el botón **Buscar relacionado** que aparece o seleccionando **más opciones** ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **para buscar registros relacionados para este mensaje**.
 
 Para obtener más información acerca del identificador de mensaje, vea la sección identificador de mensaje anteriormente en este tema.
 
@@ -182,7 +182,7 @@ En el resultado del informe de Resumen, puede ver los detalles de un mensaje med
 
 - Seleccione la fila (haga clic en cualquier lugar de la fila excepto en la casilla de verificación).
 
-- Active la casilla de verificación de la fila y haga clic](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> en **más opciones** ![para **ver los detalles**de los mensajes.
+- Active la casilla de verificación de la fila y haga clic en **más opciones** para ver los detalles de los ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **mensajes**.
 
    ![Detalles tras hacer doble clic en una fila en el informe de Resumen de resultados de seguimiento de mensajes en el centro de seguridad & cumplimiento](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
@@ -226,11 +226,11 @@ Los detalles del seguimiento de mensajes contienen la siguiente información adi
 
 Disponible (completado) los informes de Resumen mejorados están disponibles en la sección **informes descargables** en el seguimiento de mensajes de inicio. La siguiente información está disponible en el informe:
 
-- **origin_timestamp**<sup>*</sup>: fecha y hora en que el servicio recibió inicialmente el mensaje con la zona horaria UTC configurada.
+- **origin_timestamp** <sup>*</sup> : fecha y hora en que el servicio recibió inicialmente el mensaje con la zona horaria UTC configurada.
 
-- **sender_address**: la dirección de correo electrónico del remitente (*dominio*de*alias*@).
+- **sender_address**: la dirección de correo electrónico del remitente (dominio de*alias* @ *domain*).
 
-- **Recipient_status**: el estado de la entrega del mensaje al destinatario. Si el mensaje se envió a varios destinatarios, se mostrarán todos los destinatarios y el estado correspondiente para cada uno, con el formato \< *: email address*\>##\<*status*\>. Por ejemplo:
+- **Recipient_status**: el estado de la entrega del mensaje al destinatario. Si el mensaje se envió a varios destinatarios, se mostrarán todos los destinatarios y el estado correspondiente para cada uno, con el formato: \< *email address* \> ## \< *status* \> . Por ejemplo:
 
   - **# #Receive, Send** significa que el servicio recibió el mensaje y que se envió al destino previsto.
 
@@ -244,7 +244,7 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **message_id**: este valor se describe en la sección [identificador de mensaje](#message-id) anteriormente en este tema. Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-- **network_message_id**: un valor de identificador de mensaje único que persiste en todas las copias del mensaje que se pueden crear debido a la bifurcación o a la expansión del grupo de distribución. Un valor de ejemplo `1341ac7b13fb42ab4d4408cf7f55890f`es.
+- **network_message_id**: un valor de identificador de mensaje único que persiste en todas las copias del mensaje que se pueden crear debido a la bifurcación o a la expansión del grupo de distribución. Un valor de ejemplo es `1341ac7b13fb42ab4d4408cf7f55890f` .
 
 - **original_client_ip**: la dirección IP del cliente del remitente.
 
@@ -252,7 +252,7 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **connector_id**: el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores de Exchange Online, vea [Configure mail Flow Using Connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-- **delivery_priority**<sup>*</sup>: indica si el mensaje se envió con prioridad **alta**, **baja**o **normal** .
+- **delivery_priority** <sup>*</sup> : indica si el mensaje se envió con prioridad **alta**, **baja**o **normal** .
 
 <sup>*</sup>Estas propiedades solo están disponibles en los informes de Resumen mejorados.
 
@@ -290,7 +290,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 - **recipient_count**: el número total de destinatarios del mensaje.
 
-- **related_recipient_address**: se usan `EXPAND`con `REDIRECT`los eventos `RESOLVE` , y para mostrar otras direcciones de correo electrónico de destinatarios asociadas al mensaje.
+- **related_recipient_address**: se usan `EXPAND` con `REDIRECT` `RESOLVE` los eventos, y para mostrar otras direcciones de correo electrónico de destinatarios asociadas al mensaje.
 
 - **referencia**: este campo contiene información adicional para tipos específicos de eventos. Por ejemplo:
 
@@ -308,15 +308,15 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
     Para otros tipos de eventos, este campo suele estar en blanco.
 
-- **return_path**: dirección de correo electrónico de devolución especificada por el comando **mail from** que envió el mensaje. Aunque este campo nunca está vacío, puede tener el valor de la dirección del remitente null representado `<>`como.
+- **return_path**: dirección de correo electrónico de devolución especificada por el comando **mail from** que envió el mensaje. Aunque este campo nunca está vacío, puede tener el valor de la dirección del remitente null representado como `<>` .
 
 - **message_info**: información adicional sobre el mensaje. Por ejemplo:
 
-  - La fecha y hora de origen del mensaje en UTC `DELIVER` para `SEND` y eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601 `yyyy-mm-ddThh:mm:ss.fffZ`:, `yyyy` donde = año `mm` , = mes `dd` , `T` indica el comienzo del componente `hh` de hora, = hora, `mm` = minuto, `ss` = segundo, `fff` = fracciones de un segundo e `Z` indica `Zulu`, que es otra forma de indicar UTC.
+  - La fecha y hora de origen del mensaje en UTC para `DELIVER` y `SEND` eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ` , donde `yyyy` = año, `mm` = mes, `dd` `T` indica el comienzo del componente de hora, `hh` = hora, `mm` = minuto, `ss` = segundo, `fff` = fracciones de un segundo e indica `Z` `Zulu` , que es otra forma de indicar UTC.
 
-  - Errores de autenticación. Por ejemplo, es posible que vea el `11a` valor y el tipo de autenticación que se usó cuando se produjo el error de autenticación.
+  - Errores de autenticación. Por ejemplo, es posible que vea el valor `11a` y el tipo de autenticación que se usó cuando se produjo el error de autenticación.
 
-- **tenant_id**: un valor de GUID que representa la organización de Exchange Online (por `39238e87-b5ab-4ef6-a559-af54c6b07b42`ejemplo,).
+- **tenant_id**: un valor de GUID que representa la organización de Exchange Online (por ejemplo, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 
 - **original_server_ip**: la dirección IP del servidor original.
 
@@ -324,18 +324,18 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 #### <a name="custom_data-values"></a>valores de custom_data
 
-Varios **custom_data** agentes de Exchange Online `AGENTINFO` usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
+**custom_data** `AGENTINFO` Varios agentes de Exchange Online usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
 
 #### <a name="spam-filter-agent"></a>Agente de filtro de correo no deseado
 
-Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
+Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
-|`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
+|`SFV=SPM`|El mensaje se marcó como correo no deseado por un filtrado contra correo electrónico no deseado (también conocido como filtrado de contenido).|
 |`SFV=BLK`|Se omitió el filtrado y se bloqueó el mensaje porque proviene de un remitente bloqueado.|
-|`SFV=SKS`|El mensaje se marcó como correo no deseado antes de que el filtro de contenido lo procesara. Esto incluye los mensajes que coinciden con una regla de transporte que marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtrado.|
+|`SFV=SKS`|El mensaje se marcó como correo no deseado antes de ser procesado por el filtrado contra correo electrónico no deseado. Esto incluye los mensajes que coincidan con una regla de flujo de correo (también conocida como regla de transporte), la cual marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtros.|
 |`SCL=<number>`|Para más información sobre los distintos valores SCL y su significado, vea [Niveles de confianza de correo no deseado](spam-confidence-levels.md).|
 |`PCL=<number>`|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje. Se puede interpretar del mismo modo que los valores de SCL descritos en [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
 |`DI=SB`|Se bloqueó el remitente del mensaje.|
@@ -355,9 +355,9 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 #### <a name="malware-filter-agent"></a>Agente de filtro de malware
 
-Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
+Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -378,9 +378,9 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 #### <a name="transport-rule-agent"></a>Agente de reglas de transporte
 
-Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
+Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

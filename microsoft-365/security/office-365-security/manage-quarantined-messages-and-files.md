@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá cómo los administradores pueden administrar los mensajes y archivos en cuarentena para los usuarios en Office 365.
-ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP) también pueden administrar los archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036178"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209012"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>Administrar archivos y mensajes en cuarentena como administrador
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administrar archivos y mensajes en cuarentena como un administrador en EOP
 
-La cuarentena retiene los mensajes que pueden ser peligrosos o no deseados en las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online. Para obtener más información, consulte [Cuarentena en Office 365](quarantine-email-messages.md).
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, la cuarentena contiene mensajes potencialmente peligrosos o no deseados. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
 
 Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Solo los administradores pueden administrar los mensajes que se pusieron en cuarentena como malware, la suplantación de identidad de confianza alta o como resultado de las reglas de flujo de correo (también conocidas como reglas de transporte). Los administradores también pueden informar de falsos positivos a Microsoft.
 
-Los administradores de organizaciones con la protección contra amenazas avanzada (ATP) de Office 365 también pueden ver, descargar y eliminar archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+Los administradores de organizaciones con Office 365 Advance Threat Protection (Office 365 ATP) también pueden ver, descargar y eliminar archivos en cuarentena en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
 
-Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para los clientes de Microsoft 365; Exchange Online Protection PowerShell para clientes independientes de EOP).
+Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para Microsoft 365 organizaciones con buzones de correo en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de correo de Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -46,8 +46,6 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 - Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado antes de que se eliminen automáticamente:
 
   - Mensajes puestos en cuarentena por directivas contra correo no deseado (correo no deseado, phishing y correo electrónico masivo): 30 días. Este es el valor predeterminado y máximo. Para configurar este valor, consulte [configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md).
-
-1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en su organización, inicie sesión y [vaya al centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md).
 
   - Mensajes que contienen malware: 15 días.
 
@@ -74,8 +72,6 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
    - **¿Liberado?**<sup>\*</sup>
 
    - **Tipo de directiva**<sup>\*</sup>
-
-1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en su organización, inicie sesión y [vaya al centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md).
 
    - **Destinatario**
 
@@ -125,7 +121,7 @@ Puede ver y administrar los mensajes en cuarentena en el centro de seguridad & c
 
    - **Id. de mensaje**: El identificador único global del mensaje.
 
-        Por ejemplo, usó el [seguimiento de mensajes](message-trace-scc.md) para buscar un mensaje que se envió a un usuario de su organización y usted determina que el mensaje se puso en cuarentena en lugar de entregarse. Asegúrese de incluir el valor completo del identificador de mensaje, que puede incluir corchetes\<\>angulares (). Por ejemplo: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+     Por ejemplo, usó el [seguimiento de mensajes](message-trace-scc.md) para buscar un mensaje que se envió a un usuario de su organización y usted determina que el mensaje se puso en cuarentena en lugar de entregarse. Asegúrese de incluir el valor completo del identificador de mensaje, que puede incluir corchetes angulares ( \< \> ). Por ejemplo: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
 
@@ -240,7 +236,7 @@ En las organizaciones con ATP, los administradores pueden administrar los archiv
 
 2. Cambiar **vista en cuarentena** en los **archivos**de valores predeterminados. Puede ordenar por un campo haciendo clic en un encabezado de columna disponible.
 
-3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Las columnas predeterminadas se marcan con<sup>\*</sup>un asterisco ():
+3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Las columnas predeterminadas se marcan con un asterisco ( <sup>\*</sup> ):
 
    - **Usuario**<sup>\*</sup>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Centro de administración de Exchange en Exchange Online Protection '
+title: Centro de administración de Exchange en EOP independiente
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,29 +15,39 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
+ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372498"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209744"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection 
+# <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
-El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-
-¿Está buscando la versión de Exchange Server de este tema? Consulte [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+El centro de administración de Exchange (EAC) es una consola de administración basada en web para la protección independiente de Exchange Online (EOP).
 
 ¿Está buscando la versión de Exchange Online de este tema? Vea [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## <a name="accessing-the-eac"></a>Acceso a EAC
+## <a name="open-the-eac-in-eop"></a>Abrir el EAC en EOP
 
-En la mayoría de los casos, los clientes de EOP obtendrán acceso al EAC a través del centro de administración 365 de Microsoft. Encontrará un vínculo a EOP en el menú desplegable del icono **Administrador**, que está al lado del icono **Yo**. Haga clic en el icono **Administrador** y seleccione **protección en línea de Exchange** en el menú desplegable que se va a tomar en el EAC.
+Los clientes de EOP independientes pueden tener acceso al EAC mediante los métodos siguientes:
 
-You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
+- **En el centro de administración de Microsoft 365**:
 
-## <a name="common-user-interface-elements-in-the-eac"></a>Elementos comunes de la interfaz de usuario en EAC
+  1. Vaya a <https://admin.microsoft.com> y haga clic en **Mostrar todo**.
+
+     ![Haga clic en Mostrar todo en el centro de administración de Microsoft 365](../../media/m365-center-show-all.png)
+
+  2. En la sección **centros de administración** que aparece, haga clic en **todos los centros de administración**.
+
+     ![Haga clic en todos los centros de administración en el centro de administración de Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+
+  3. En la página **todos los centros de administración** que aparece, haga clic en **protección en línea de Exchange**.
+
+- Ir directamente a `https://admin.protection.outlook.com/ecp/` .
+
+## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Elementos comunes de la interfaz de usuario en el EAC en EOP
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
 
@@ -47,15 +57,20 @@ En esta sección se describen los elementos de la interfaz de usuario del EAC.
 
 Este es el primer nivel de navegación para la mayoría de las tareas que realizará en el EAC. El panel de características se organiza por áreas.
 
-1. **Destinatarios**: aquí es donde podrá ver los usuarios internos y los contactos externos.
+- **Destinatarios**: aquí es donde se ven los grupos y los contactos externos.
 
-2. **Permisos**: aquí donde podrá administrar los roles de administrador.
+- **Permisos**: aquí donde podrá administrar los roles de administrador.
 
-3. **Administración de cumplimiento**: aquí es donde se encuentran los registros de auditoría y los informes, como el informe de grupo de roles de administrador.
+- **Administración de cumplimiento**: aquí es donde encontrará el informe de grupo de roles de administrador y el registro de auditoría de administrador.
 
-4. **Protección**: aquí es donde se administra la protección antimalware y contra correo no deseado para la organización, así como para administrar los mensajes en cuarentena.
+- **Protección**: aquí puede administrar las directivas antimalware, la Directiva de filtro de conexión predeterminada y DKIM.
 
-5. **Flujo de correo**: aquí es donde se administran las reglas, los dominios aceptados y los conectores, así como el lugar en el que se realizará el seguimiento de mensajes.
+  > [!NOTE]
+  > Debe administrar las directivas antimalware y la Directiva de filtro de conexión predeterminada en el centro de seguridad & cumplimiento. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) y [Configure Connection Filtering in EOP](configure-the-connection-filter-policy.md).
+
+- **Flujo de correo**: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), dominios aceptados y conectores, así como donde puede ir a ejecutar seguimiento de mensajes.
+
+- **Híbrido**: aquí puede ejecutar el [Asistente para la configuración híbrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)y donde puede instalar el [módulo de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Pestañas
 
@@ -65,8 +80,9 @@ Las pestañas son el segundo nivel de navegación. Las áreas de característica
 
 Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. La barra de herramientas tiene iconos que realizan una acción específica. La siguiente tabla describe los iconos y sus acciones.
 
+||||
+|---|---|---|
 |**Icono**|**Nombre**|**Action**|
-|:-----|:-----|:-----|
 |![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|Agregar, nuevo|Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.|
 |![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|Editar|Utilice este icono para editar un objeto.|
 |![Eliminar icono](../../media/ITPro-EAC-DeleteIcon.gif)|Eliminar|Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.|
@@ -75,6 +91,7 @@ Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. 
 |![Icono Más opciones](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Más opciones|Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  |
 |![Icono flecha arriba](../../media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](../../media/ITPro-EAC-DownArrowIcon.gif)|Flecha hacia arriba y flecha hacia abajo|Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.|
 |![Icono de quitar](../../media/ITPro-EAC-RemoveIcon.gif)|Quitar|Utilice este icono para quitar objetos de la lista.|
+|
 
 ### <a name="list-view"></a>Vista de lista
 
@@ -88,21 +105,23 @@ Cuando seleccione un objeto de la vista de lista, la información acerca del obj
 
 El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](../../media/ITPro-EAC-HelpIcon.gif), puede realizar las siguientes acciones:
 
-1. **Ayuda**: haga ![clic en](../../media/ITPro-EAC-HelpIcon.gif) el icono ayuda para ver el contenido de la ayuda en línea.
+- **Ayuda**: haga clic en ![ el icono ayuda ](../../media/ITPro-EAC-HelpIcon.gif) para ver el contenido de la ayuda en línea.
 
-2. **Deshabilitar la burbuja de ayuda**: la burbuja de ayuda muestra la ayuda contextual de los campos cuando se crea o edita un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
+- **Comentarios**: dejar comentarios.
 
-3. **Copyright**: haga clic en este vínculo para leer el aviso de copyright de Exchange Online Protection.
+- **Comunidad**: publique una pregunta para encontrar respuestas en los foros de la comunidad.
 
-4. **Privacidad**: haga clic para leer la Directiva de privacidad de Exchange Online Protection.
+- **Deshabilitar la burbuja de ayuda**: la burbuja de ayuda muestra la ayuda contextual de los campos cuando se crea o edita un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
+
+- **Mostrar registro de comandos**: se abre una nueva ventana que muestra los comandos de PowerShell equivalentes en función de lo que haya configurado en el EAC.
 
 ## <a name="supported-browsers"></a>Exploradores compatibles
 
 Para conseguir la mejor experiencia con EAC, le recomendamos que use siempre la versión más actualizada de los exploradores, clientes de Office y aplicaciones. También le recomendamos que instale las actualizaciones de software cuando estén disponibles. Para obtener más información acerca de los exploradores compatibles y los requisitos del sistema para el servicio, vea [System Requirements for Office](https://products.office.com/office-system-requirements).
 
-## <a name="supported-languages-in-eop"></a>Idiomas admitidos en EOP
+## <a name="supported-languages"></a>Idiomas admitidos
 
-Los siguientes idiomas están disponibles y son compatibles con Exchange Online Protection.
+Los siguientes idiomas son compatibles y están disponibles para el EAC en un EOP independiente.
 
 - Amhárico
 
@@ -227,5 +246,3 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
 - Vietnamita
 
 - Galés
-
-
