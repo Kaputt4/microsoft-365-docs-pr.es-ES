@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas antiphishing que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de correo de Exchange Online.
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208904"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213393"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurar directivas contra la suplantación de identidad (phishing) en EOP
 
@@ -31,7 +31,7 @@ Las organizaciones con buzones de correo de Exchange online pueden configurar di
 
 Para obtener información sobre cómo crear y modificar las directivas de protección contra suplantación de identidad (ATP) más avanzadas disponibles en Office 365 Advanced Threat Protection (Office 365 ATP), consulte [Configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Directivas antiphishing en el centro de seguridad & cumplimiento vs Exchange Online PowerShell
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Directivas antiphishing en el centro de seguridad & cumplimiento vs PowerShell
 
 Los elementos básicos de una directiva contra la suplantación de identidad (phishing) son los siguientes:
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: d3b7638a1ff060d1c1760f62e487a7cd649a9131
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209468"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213429"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -78,7 +78,7 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Administración basada en web|Los administradores pueden administrar el servicio en el centro de administración de Exchange (EAC), que se admite en los idiomas de 60. Para obtener más información, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Sincronización de directorios|La sincronización de directorios se puede realizar con la Herramienta de sincronización de Microsoft Azure Active Directory. Para obtener más información, vea la sección "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).  |
 |Bloqueo perimetral basado en directorios (DBEB)|La característica DBEB permite rechazar mensajes para destinatarios no válidos en el perímetro de la red de servicio. DBEB permite a los administradores agregar destinatarios habilitados para correo a Microsoft 365 y bloquear todos los mensajes enviados a direcciones de correo electrónico que no están presentes en Microsoft 365. Para obtener más información acerca de la configuración de DBEB, vea [use Directory based Edge blocking to Reject messages sent to invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
-|PowerShell|La funcionalidad completa de EOP está disponible en Exchange Online Protection PowerShell. Para obtener más información, vea [PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|PowerShell|La funcionalidad completa de EOP está disponible en PowerShell de EOP independiente. Para obtener más información, vea [PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
 |**Informes y registro**||
 |Seguimiento de mensajes|Los administradores pueden seguir los mensajes de correo electrónico a medida que pasan por el servicio. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje de correo electrónico dirigido. Le permite, de forma eficaz, responder las preguntas de los usuarios, resolver problemas con el flujo de correo y validar los cambios de directiva, y elimina la necesidad de solicitar asistencia al soporte técnico. Para obtener más información, consulte [seguimiento de mensajes en el centro de cumplimiento y de seguridad](message-trace-scc.md).|
 |Informes basados en web|Los informes de protección de correo en el centro de seguridad & cumplimiento proporcionan datos de mensajería. Por ejemplo, puede supervisar la cantidad de correo no deseado y malware que se detecta, o la frecuencia con la que las reglas de flujo de correo coinciden. Con estos informes interactivos, puede obtener rápidamente un informe visual de los datos resumidos y obtener más detalles acerca de los mensajes individuales, hasta un máximo de 90 días. Para obtener más información, vea [usar informes de protección de correo para ver datos sobre malware, correo no deseado y detecciones de reglas](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|

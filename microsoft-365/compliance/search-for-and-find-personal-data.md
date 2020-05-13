@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Más información sobre cómo buscar y encontrar datos personales sujetos al Reglamento General de Protección de Datos (RGPD) en Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036415"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208094"
 ---
 # <a name="search-for-and-find-personal-data"></a>Buscar y encontrar datos personales
 
@@ -118,7 +118,7 @@ En este momento, los tipos de información confidencial no pueden usarse para bu
 <td align="left"><p>Busque estos tipos de problemas para determinar si la precisión de la consulta es adecuada:</p>
 <p><li>Muchos falsos positivos</li></p>
 <p><li>Faltan de instancias de datos conocidas</li></p>
-<p>Consulte <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar resultados de búsqueda desde el Centro de seguridad y cumplimiento</a>.</p>
+<p>Consulte <a href="https://docs.microsoft.com/microsoft-365/compliance/export-search-results">Exportar resultados de búsqueda desde el Centro de seguridad y cumplimiento</a>.</p>
 <p>Nota: si usa Mozilla Firefox o Chrome, es posible que primero deba descargar los informes con Internet Explorer o Microsoft Edge para instalar el complemento necesario.</p></td>
 </tr>
 </tbody>
