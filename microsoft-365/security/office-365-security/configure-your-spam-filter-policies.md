@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637717"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209564"
 ---
-# <a name="configure-anti-spam-policies"></a>Configurar directivas contra correo electrónico no deseado
+# <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
-Si es un cliente de Microsoft 365 que tiene buzones de correo de Exchange Online o un cliente independiente de Exchange Online Protection (EOP) que no tiene buzones de Exchange Online, EOP protege automáticamente los mensajes de correo electrónico entrantes contra el correo no deseado. EOP usa directivas de bloqueo de correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) como parte de la defensa general de la organización contra el correo no deseado. Para obtener más información, consulte [Protección contra correo no deseado](anti-spam-protection.md).
+En organizaciones de Microsoft 365 con buzones de correo de Exchange Online u organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP protege automáticamente los mensajes de correo electrónico entrantes contra el correo no deseado. EOP usa directivas de bloqueo de correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) como parte de la defensa general de la organización contra el correo no deseado. Para obtener más información, consulte [Protección contra correo no deseado](anti-spam-protection.md).
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la directiva contra correo no deseado predeterminada. Para disfrutar de una mayor granularidad, también puede crear directivas personalizadas de filtro de correo no deseado que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
-Puede configurar directivas contra correo no deseado en el Centro de seguridad y cumplimiento o en PowerShell (Exchange Online PowerShell para clientes de Microsoft 365; Exchange Online Protection PowerShell para clientes independientes de EOP).
+Puede configurar directivas contra correo no deseado en el Centro de seguridad y cumplimiento o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online).
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Directivas contra correo no deseado en el Centro de seguridad y cumplimiento frente a las de Exchange Online PowerShell o Exchange Online Protection PowerShell
 
@@ -120,9 +120,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
     |**Ninguna acción**|||||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si está habilitada la regla de correo no deseado en el buzón (está activada de forma predeterminada). Para obtener más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online en Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
+    > <sup>1</sup> En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si está habilitada la regla de correo no deseado en el buzón (está activada de forma predeterminada). Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).<br/>En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
 
-   - **Seleccionar el umbral**: especifica el nivel de quejas masivas (BCL) de un mensaje que desencadena la acción especificada para el veredicto de filtro de correo no deseado **Correo electrónico en masa** (mayor que el valor especificado, no mayor o igual a él). Un valor superior indica que el mensaje es menos deseado (tiene más posibilidades de parecer correo no deseado). El valor predeterminado es 7. Para obtener más información, consulte [Valores de nivel de quejas masivas (BCL) en Office 365](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Seleccionar el umbral**: especifica el nivel de quejas masivas (BCL) de un mensaje que desencadena la acción especificada para el veredicto de filtro de correo no deseado **Correo electrónico en masa** (mayor que el valor especificado, no mayor o igual a él). Un valor superior indica que el mensaje es menos deseado (tiene más posibilidades de parecer correo no deseado). El valor predeterminado es 7. Para más información, consulte [Valores de nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      De forma predeterminada, la configuración solo para PowerShell _MarkAsSpamBulkMail_ está `On` en directivas contra correo no deseado. Esta configuración afecta mucho a los resultados de un veredicto de filtro de **correo electrónico en masa**:
 
@@ -132,9 +132,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Cuarentena**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
 
-     - [Cuarentena en Office 365](quarantine-email-messages.md)
-     - [Administración de mensajes en cuarentena y archivos como administrador en Office 365](manage-quarantined-messages-and-files.md)
-     - [Búsqueda y liberación de mensajes en cuarentena como usuario de Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [Mensajes en cuarentena en EOP](quarantine-email-messages.md)
+     - [Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md)
+     - [Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Agregar este texto de encabezado X**: este cuadro es obligatorio y solo está disponible si se ha seleccionado **Agregar encabezado X** como acción para un veredicto de filtrado de correo no deseado. El valor que especifique es el *nombre* del campo de encabezado que se agrega al encabezado del mensaje. El *valor* del campo de encabezado siempre es `This message appears to be spam`.
 
@@ -148,7 +148,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Redirigir a esta dirección de correo electrónico**: este cuadro es obligatorio y solo está disponible si ha seleccionado la **Redirigir el mensaje a dirección de correo electrónico** como la acción para un veredicto de filtrado de correo no deseado. Escriba la dirección de correo electrónico a la que quiere enviar el mensaje. Puede especificar varios valores separados por punto y coma (;).
 
-   - **Sugerencias de seguridad**: de forma predeterminada, las Sugerencias de seguridad están habilitadas, pero puede deshabilitarlas si desactiva la casilla de verificación **Activada**. Para obtener más información sobre las Sugerencias de seguridad, consulte [Sugerencias de seguridad en mensajes de correo electrónico en Office 365](safety-tips-in-office-365.md).
+   - **Sugerencias de seguridad**: de forma predeterminada, las Sugerencias de seguridad están habilitadas, pero puede deshabilitarlas si desactiva la casilla de verificación **Activada**. Para obtener más información sobre las Sugerencias de seguridad, consulte [Sugerencias de seguridad en mensajes de correo electrónico](safety-tips-in-office-365.md).
 
    Configuración **Purga automática**: la Purga automática detecta y realiza acciones en mensajes que ya se han entregado a buzones de Exchange Online. Para obtener más información sobre la Purga automática, consulte [Purga automática: protección contra correo no deseado y malware](zero-hour-auto-purge.md).
 
@@ -159,7 +159,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 5. (Opcional) Expanda la sección **Listas de permitidos** para configurar los remitentes de mensajes según la dirección de correo electrónico o el dominio de correo electrónico que pueden omitir el filtrado de correo no deseado:
 
    > [!CAUTION]
-   > <ul><li>Piense muy atentamente antes de agregar dominios aquí. Para obtener más información, consulte [Crear listas de remitentes seguros en Office 365](create-safe-sender-lists-in-office-365.md)</li><li>Nunca agregue dominios aceptados (dominios de su propiedad) o dominios comunes (por ejemplo, microsoft.com o office.com) a la lista de dominios permitidos. Esto permitiría que los atacantes envíen correo electrónico que omita el filtrado de correo no deseado en la organización.</li></ul>
+   > • Piense muy atentamente antes de agregar dominios aquí. Para más información, consulte [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md) <br/><br/> • Nunca agregue dominios aceptados (dominios de su propiedad) o dominios comunes (por ejemplo, microsoft.com u office.com) a la lista de dominios permitidos. Esto permitiría que los atacantes envíen correo electrónico que omita el filtrado de correo no deseado en la organización.
 
    - **Permitir remitente**: haga clic en **Editar**. En la ventana **Lista de remitentes permitidos** que aparece:
 
@@ -188,7 +188,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 6. (Opcional) Expanda la sección **Listas de bloqueados** para configurar los remitentes de mensajes según la dirección de correo electrónico o el dominio de correo electrónico que siempre se marcarán como correo no deseado de alta confianza:
 
    > [!NOTE]
-   > Bloquear manualmente los dominios no es peligroso, pero puede incrementar la carga de trabajo administrativa. Para obtener más información, consulte [Crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md)
+   > Bloquear manualmente los dominios no es peligroso, pero puede incrementar la carga de trabajo administrativa. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
    - **Bloquear remitente**: haga clic en **Editar**. En la ventana **Lista de remitentes bloqueados** que aparece, siga estos pasos:
 
@@ -238,7 +238,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
 8. La sección opcional **Propiedades del correo no deseado** contiene las opciones avanzadas de filtro de correo no deseado (ASF) que están desactivadas de forma predeterminada. Las opciones ASF pronto estarán en desuso y su funcionalidad se incorporará a otras partes de la pila de filtrado. Se recomienda desactivar todas las opciones de ASF en las directivas contra el correo no deseado.
 
-   Para obtener más información sobre estas opciones, consulte [Opciones avanzadas de filtro de correo no deseado en Office 365](advanced-spam-filtering-asf-options.md).
+   Para más información sobre estas opciones, consulte [Opciones avanzadas de filtro de correo no deseado en EOP](advanced-spam-filtering-asf-options.md).
 
 9. (Obligatorio) Expanda la sección **Se aplica a** para identificar los destinatarios internos a los que se aplica la directiva.
 
@@ -246,7 +246,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
     Es más fácil hacer clic en **Agregar una condición** tres veces para ver todas las condiciones disponibles. Puede hacer clic en el ![botón Quitar](../../media/scc-remove-icon.png) para quitar condiciones que no quiera configurar.
 
-    - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en Office 365. Haga clic en el cuadro **Agregar una etiqueta** para ver y seleccionar un dominio. Haga clic de nuevo en el cuadro **Agregar una etiqueta** para seleccionar dominios adicionales si hay más de un dominio disponible.
+    - **El dominio del destinatario es**: especifica los destinatarios en uno o varios de los dominios aceptados configurados en su organización. Haga clic en el cuadro **Agregar una etiqueta** para ver y seleccionar un dominio. Haga clic de nuevo en el cuadro **Agregar una etiqueta** para seleccionar dominios adicionales si hay más de un dominio disponible.
 
     - **El destinatario es**: especifica uno o varios buzones, usuarios de correo o contactos de correo de su organización. Haga clic en **Agregar una etiqueta** y comience a escribir para filtrar la lista. Haga clic de nuevo en el cuadro **Agregar una etiqueta** para seleccionar otros destinatarios.
 
@@ -324,7 +324,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
 ### <a name="configure-end-user-spam-notifications"></a>Configurar notificaciones de correo no deseado para el usuario final
 
-Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensaje, puede configurar las notificaciones de correo no deseado para el usuario final para que los destinatarios sepan lo que ha sucedido con los mensajes que se les han enviado. Para obtener más información acerca de estas notificaciones, consulte [Notificaciones de correo no deseado para el usuario final en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensaje, puede configurar las notificaciones de correo no deseado para el usuario final para que los destinatarios sepan lo que ha sucedido con los mensajes que se les han enviado. Para obtener más información acerca de estas notificaciones, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Directiva** \> **Correo no deseado**.
 

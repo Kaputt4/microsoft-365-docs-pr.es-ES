@@ -196,6 +196,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Instalar y administrar complementos con Implementación centralizada
           href: manage/manage-deployment-of-add-ins.md
+        - name: Preguntas frecuentes sobre implementación centralizada
+          href: manage/centralized-deployment-faq.md
         - name: Buscar un partner o un vendedor
           href: manage/find-your-partner-or-reseller.md
         - name: Sobre el centro de mensajes
