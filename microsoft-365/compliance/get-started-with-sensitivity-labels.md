@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: f024995f63af19efa410cdb02a1f8c8d110902eb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140996"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208681"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -75,14 +75,14 @@ Use la siguiente documentación para ayudarle con su implementación de etiqueta
 |----------------|---------------|
 |Crear y publicar etiquetas de confidencialidad que ayudarán a proteger los datos de mi organización|[Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md)|
 |Cifre documentos y mensajes de correo electrónico con etiquetas de confidencialidad y restrinja quién puede tener acceso a ellos y cómo puede usar el contenido |[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md)|
-|Habilite las características de colaboración en SharePoint (y OneDrive) para los documentos que se etiquetan con el cifrado | [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Habilite las etiquetas de confidencialidad para Office en la web, con soporte para coautoría, eDiscovery, prevención de pérdida de datos y búsqueda, incluso cuando los documentos estén encriptados. | [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Administre etiquetas de confidencialidad para las aplicaciones de Office para que el contenido se etiquete a medida que se crea |[Usar etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)|
 |Aplicar automáticamente etiquetas de confidencialidad a documentos y mensajes de correo electrónico | [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)|
 |Use etiquetas de confidencialidad para proteger el contenido de Teams y SharePoint |[Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)|
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos locales |[Implementación del escáner de Azure Information Protection para clasificar y proteger los archivos automáticamente](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos que están en la nube|[Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los informes que se descargan|[Protección de datos en Power BI (versión preliminar)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|Visualizar cómo se usan las etiquetas de confidencialidad para informar del estado de implementación y ajustar la configuración de etiquetas|[Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)|
+|Vea cómo y dónde se usan las etiquetas de confidencialidad y profundice para inspeccionar el contenido etiquetado|[Información general sobre la clasificación de datos (vista previa)](data-classification-overview.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad

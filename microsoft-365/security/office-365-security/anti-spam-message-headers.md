@@ -2,8 +2,8 @@
 title: Encabezados de mensajes de correo no deseado
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Conozca los campos de encabezado que Exchange Online Protection agregue a los mensajes para proporcionar información sobre el mensaje y cómo se procesó.
+description: Los administradores pueden obtener información sobre los campos de encabezado que se agregan a los mensajes mediante Exchange Online Protection (EOP) para proporcionar información sobre el mensaje y cómo se procesó.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173409"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208227"
 ---
-# <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
-Cuando Exchange Online Protection (EOP) examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje. Los campos de este encabezado pueden dar a los administradores información sobre el mensaje y la forma en que se procesó. Los campos del encabezado **X-Microsoft-Antispam** proporcionan información adicional sobre el correo masivo y la suplantación de identidad. Además de estos dos encabezados, Exchange Online Protection también inserta resultados de autenticación de correo electrónico para cada mensaje que procesa en el encabezado **Authentication-results**.
+En organizaciones de Microsoft 365 con buzones de correo en Exchange Online u organizaciones de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP examina un mensaje de correo entrante e inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje entrante. Los campos de este encabezado pueden dar a los administradores información sobre el mensaje y la forma en que se procesó. Los campos del encabezado **X-Microsoft-Antispam** proporcionan información adicional sobre el correo masivo y la suplantación de identidad. Además de estos dos encabezados, Exchange Online Protection también inserta resultados de autenticación de correo electrónico para cada mensaje que procesa en el encabezado **Authentication-results**.
 
 Para obtener información sobre cómo ver el encabezado del mensaje de un correo electrónico en distintos clientes de correo electrónico, vea [Analizador de encabezados de mensaje](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)
 
