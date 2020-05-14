@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: En este artículo, obtendrá información sobre las tecnologías de cifrado que puede administrar y configurar en Microsoft 365.
-ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a70f737d1af10622b093bddc682cc493396fff45
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033618"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214226"
 ---
 # <a name="customer-managed-encryption-features"></a>Características de cifrado administradas por el cliente
 
@@ -56,11 +56,11 @@ Secure/Multipurpose Internet Mail Extensions (S/MIME) es un estándar para el ci
 
 ## <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 
-[Office 365 cifrado de mensajes](https://products.office.com/exchange/office-365-message-encryption) (OME) creado a partir de [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) le permite enviar correo cifrado y protegido por derechos a cualquier usuario. OME mitiga las amenazas como el punteo del cable y los ataques de tipo "Man in the Middle", así como otras amenazas, como el acceso sin garantías de datos por un usuario no autorizado que no tiene los permisos adecuados. Hemos realizado inversiones que le proporcionan una experiencia de correo electrónico más sencilla, más intuitiva y segura que se basa en Azure Information Protection. Puede proteger los mensajes enviados por Microsoft 365 a cualquier persona dentro o fuera de la organización. Estos mensajes se pueden ver a través de un conjunto diverso de clientes de correo con cualquier identidad, incluidos Azure Active Directory, la cuenta de Microsoft y los identificadores de Google. Para obtener más información acerca de cómo su organización puede usar mensajes cifrados, consulte [Office 365 Message Encryption](https://support.office.com/article/F87CB016-7876-4317-AE3C-9169B311FF8A).
+[Office 365 cifrado de mensajes](https://products.office.com/exchange/office-365-message-encryption) (OME) creado a partir de [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) le permite enviar correo cifrado y protegido por derechos a cualquier usuario. OME mitiga las amenazas como el punteo del cable y los ataques de tipo "Man in the Middle", así como otras amenazas, como el acceso sin garantías de datos por un usuario no autorizado que no tiene los permisos adecuados. Hemos realizado inversiones que le proporcionan una experiencia de correo electrónico más sencilla, más intuitiva y segura que se basa en Azure Information Protection. Puede proteger los mensajes enviados por Microsoft 365 a cualquier persona dentro o fuera de la organización. Estos mensajes se pueden ver a través de un conjunto diverso de clientes de correo con cualquier identidad, incluidos Azure Active Directory, la cuenta de Microsoft y los identificadores de Google. Para obtener más información acerca de cómo su organización puede usar mensajes cifrados, consulte [Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome).
 
 ## <a name="transport-layer-security"></a>Seguridad de la capa de transporte
 
-Si desea garantizar una comunicación segura con un asociado, puede usar conectores de entrada y de salida para proporcionar seguridad e integridad de mensajes. Puede configurar TLS forzado de entrada y de salida en cada conector mediante un certificado. El uso de un canal SMTP cifrado puede evitar que los datos se roben a través de un ataque de tipo "Man in the Middle". Para obtener más información, vea [Cómo Exchange online usa TLS para proteger las conexiones de correo electrónico](https://support.office.com/article/How-Exchange-Online-uses-TLS-to-secure-email-connections-in-Office-365-4CDE0CDA-3430-4DC0-B489-F2C0736C929F).
+Si desea garantizar una comunicación segura con un asociado, puede usar conectores de entrada y de salida para proporcionar seguridad e integridad de mensajes. Puede configurar TLS forzado de entrada y de salida en cada conector mediante un certificado. El uso de un canal SMTP cifrado puede evitar que los datos se roben a través de un ataque de tipo "Man in the Middle". Para obtener más información, vea [Cómo Exchange online usa TLS para proteger las conexiones de correo electrónico](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections).
 
 ## <a name="domain-keys-identified-mail"></a>Correo identificado por claves de dominio
 

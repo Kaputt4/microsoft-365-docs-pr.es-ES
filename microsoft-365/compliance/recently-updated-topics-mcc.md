@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036023"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221424"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -32,7 +32,122 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 > [!TIP]
 > Para estar al tanto de las últimas actualizaciones de características en el centro de cumplimiento de Microsoft 365, consulte [what's New in the microsoft 365 Compliance Center](whats-new.md).
 
+## <a name="march-2020"></a>Marzo de 2020
+
+### <a name="auditing"></a>Auditoría
+
+[Usar la auditoría avanzada para investigar cuentas comprometidas](mailitemsaccessed-forensics-investigations.md) (nuevo)<br>Nuevas instrucciones sobre el uso de la nueva acción de auditoría del buzón de *MailItemsAccessed* para investigaciones forenses.
+
+Varias actualizaciones para [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md), entre las que se incluyen:
+- [Sección nueva](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) con detalles sobre el usuario "App@sharepoint" que aparece en registros de auditoría.
+- [Nuevas descripciones](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) de las actividades en cuarentena.
+- En la sección [actividad de administración de usuarios](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) , se aclara que el evento de cambio de contraseña de usuario que se desencadena cuando un usuario cambia su contraseña (a través del restablecimiento de contraseña de autoservicio) se desencadena cuando un administrador restablece la contraseña de un usuario.
+
+### <a name="auto-expanding-archive"></a>Archivo de expansión automática
+
+[Información general sobre el archivado ilimitado](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(actualizado)<br>Se agregó una aclaración de que no se puede eliminar ninguna carpeta del archivo principal o de un archivo auxiliar una vez que el archivado de expansión automática está habilitado en un buzón.
+
+### <a name="compliance-scorecompliance-manager"></a>Puntuación de cumplimiento/administrador de cumplimiento
+
+Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Administrador de cumplimiento](compliance-manager-overview.md) reflejan las actualizaciones de estos productos publicados a principios de abril (ambos aún están en versión preliminar pública). Las actualizaciones clave incluyen:
+- Proceso simplificado para crear y modificar plantillas
+- Aviso y control de versiones para plantillas y acciones
+- Sincronización de acciones comunes entre grupos
+- Compatibilidad con idiomas ahora extendida a chino (simplificado), Chino (tradicional), Francés, alemán, Italiano, Japonés, Coreano, Portugués (Brasil), Ruso y español
+
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
+
+[Caso práctico-contoso configura rápidamente una directiva de idioma ofensivo para Microsoft Teams, Exchange y Yammer Communications](communication-compliance-case-study.md) (nuevo)<br>Un caso práctico paso a paso para las organizaciones educativas y de pequeñas empresas para ayudarles a configurar rápidamente una directiva de lenguaje ofensivo. Se incrementaron las solicitudes de los clientes a medida que las organizaciones aumentan las respuestas COVID19.
+
+[Introducción al cumplimiento de la comunicación](communication-compliance-configure.md) (actualizado)<br>Requisitos de licencia y permisos actualizados.
+
+### <a name="customer-key"></a>Clave de cliente
+
+[Desplazamiento o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md) (actualizada)<br>Actualizaciones de la organización que ayudan a aclarar qué teclas puede y qué no puede hacer.
+
+[Obtener información sobre la clave de disponibilidad para la clave de cliente](customer-key-availability-key-understand.md) (actualizada)<br>Se agregó una aclaración alrededor de la arquitectura de Exchange Online para la clave de cliente.
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+[Introducción a la prevención de pérdida de datos](data-loss-prevention-policies.md) (actualizada)<br>Se actualizó el tiempo necesario para que las etiquetas de retención surtan efecto y las directivas de comportamiento predeterminado sin alertas configuradas.
+
+### <a name="ediscovery"></a>eDiscovery
+
+[Introducción a la exhibición avanzada de](get-started-with-advanced-ediscovery.md) documentos electrónicos (nueva)<br>Proporciona información sobre los requisitos de licencia y permisos, los pasos para establecer la configuración global y crear un nuevo caso y un tutorial del flujo de trabajo de eDiscovery avanzado.
+
+[Jubilación de las herramientas de eDiscovery heredadas](legacy-ediscovery-retirement.md) (actualizadas)<br>Las fechas de jubilación se movieron tres meses debido a la situación de salud pública. El artículo actualizado se ha puesto de los nuevos plazos de jubilación.
+
+### <a name="insider-risk-management"></a>Administración de riesgos de Insider
+
+[Introducción a la administración de riesgos de Insider](insider-risk-management-configure.md) (actualizado)<br>Requisitos de licencia y permisos actualizados.
+
+[Definir directivas de barrera de información](information-barriers-policies.md) (actualizadas)<br>Se ha aclarado la velocidad de procesamiento y el tiempo necesarios para aplicar. Se agregaron detalles sobre la forma en que no debe haber directivas de libreta de direcciones. También varias actualizaciones de código de PowerShell, incluido el nuevo código para el filtrado.
+
+[Barreras](information-barriers.md) de la información (actualizada)<br>Se han corregido algunos vínculos rotos y se han actualizado los vínculos y el título de PDF. Por los comentarios de los clientes, clarificado que las barreras de información solo admiten restricciones bidireccionales. Las restricciones en un solo sentido (como marketing pueden comunicarse con los comerciantes de día, pero el día no puede comunicarse con el marketing) no es compatible.
+
+[Solución de problemas de barreras](information-barriers-troubleshooting.md) de la información (actualizada)<br>Se agregó la sección nuevo escenario de solución de problemas. Se agregó un vínculo a los pasos para volver a aplicar las barreras de la información.
+
+### <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
+
+[Administración del cifrado de mensajes de Office 365](manage-office-365-message-encryption.md) (actualizado)<br>Se actualiza para reflejar que la función forzar contenedor es una característica estándar OME, no una avanzada. Rescribió los ejemplos de PowerShell para excluir todas las referencias a las características avanzadas de revocación y expiración de OME.
+
+[Preguntas más frecuentes sobre el cifrado de mensajes](ome-faq.md) (actualizada)<br>Se aclara que solo Outlook para la web puede aplicar el cifrado ad hoc. Del mismo modo, para todos los clientes de Outlook, los mensajes y los datos adjuntos de PDF no protegidos heredan la protección OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online.
+
+### <a name="privileged-access-management"></a>Administración del acceso con privilegios
+
+[Introducción a la administración de acceso privilegiada](privileged-access-management-configuration.md) (actualizada)<br>Requisitos de licencia y permisos actualizados.
+
+### <a name="pst-import"></a>Importación de PST
+
+[Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md) (actualizado)<br>Se agregaron preguntas más frecuentes sobre cómo procesa el proceso de importación de PST elementos de correo electrónico duplicados.
+
+### <a name="retention"></a>Retención
+
+[Información general sobre las directivas de retención](retention-policies.md) (actualizada)<br>Los cambios incluyen:
+
+- Se agregaron rutas de contenido para directivas de retención de solo retención y de solo eliminación (anteriormente, las rutas de contenido explican solo mantener y, a continuación, eliminar).
+- [Sección actualizada](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) que explica que, para ubicaciones de SharePoint, ahora debe especificar una dirección URL en lugar de elegir un sitio. Esto significa que no necesita permisos para obtener acceso al sitio a fin de incluirlo en una directiva de retención.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+[Obtener información sobre las etiquetas de confidencialidad](sensitivity-labels.md) (actualizada)<br>Se agregaron detalles de desuso sobre la administración de etiquetas en el portal de Azure, lo que incluye un vínculo al [aviso oficial](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+
+[Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) (actualizada)<br>Se ha agregado información sobre la nueva función lector de etiquetas de confidencialidad, que solo se admite en un primer momento para los cmdlets de PowerShell de etiqueta.
+
+[Creación y configuración de las etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md#removing-and-deleting-labels) (actualizada)<br>Nueva sección agregada explica las consecuencias de quitar y eliminar etiquetas.
+
+[Usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de microsoft 365 y los sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md) (actualización)<br>Los cambios incluyen:
+
+- Se quitaron las instrucciones de Azure AD y en su lugar se vinculó a la [información autoritativa de Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+- Se actualizó la sección [Cómo configurar las opciones de configuración de sitio y grupo cuando se crea o edita una etiqueta de confidencialidad](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) con información sobre la **privacidad de la configuración de sitios de Microsoft Teams conectados a grupos de Office 365** , que incluye la nueva opción **ninguno** .
+- Se agregó una nota que describe cómo solo estarán disponibles las etiquetas con la configuración de sitio y grupo cuando los usuarios creen equipos, grupos y sitios. Esta funcionalidad se implementa gradualmente para las organizaciones.
+
+[Restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md) (actualizado)<br>[Nueva sección](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) con opciones de cifrado de ejemplo para algunas de las configuraciones más utilizadas para proteger documentos y mensajes de correo electrónico.
+
+[Aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (actualizado)<br>Explicación de las diferencias de comportamiento entre las etiquetas integradas y el cliente de etiquetado Unificado de Azure Information Protection.
+
+[Habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) (actualizado)<br>Los cambios incluyen:
+
+- Clarificado que la habilitación de esta vista previa muestra el botón de **confidencialidad** en la cinta de las etiquetas de Office para la web, además de admitir documentos etiquetados y cifrados.
+- Se actualizaron las instrucciones para Office 365 multi-geo.
+- La lista de limitaciones tiene nuevas entradas que incluyen lo que sucede cuando un equipo se desconecta o se suspende, y si se elimina una etiqueta.
+
+[Usar las etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md) (actualizada)<br>Los cambios incluyen:
+
+- Se movió la información de licencias a para empezar a [trabajar con las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md).
+- [Sección nueva](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps) que explica cómo usar etiquetas integradas en las aplicaciones de escritorio de Office, debe usar una edición de suscripción de Office en lugar de ediciones independientes.
+- Las tablas de aplicaciones compatibles incluyen la aplicación de Office para iOS y Android y la configuración que permite a los usuarios asignar permisos para Word, Excel y PowerPoint que se actualizan, ya que se implementan en un canal mensual para Windows y Mac.  
+- [Nueva sección](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) en la que se explica cómo se puede usar la configuración de directiva de grupo para deshabilitar las etiquetas integradas si actualmente usa otras soluciones de etiquetado que desea seguir usando para los equipos Windows. 
+- Se actualizó la sección de [Opciones de Information Rights Management (IRM) y las etiquetas de confidencialidad](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) con la recomendación de usar etiquetas que aplican el cifrado en lugar de las opciones de IRM, con una explicación de las posibles consecuencias cuando se mezclan las dos soluciones de protección.
+
+### <a name="trainable-classifiers"></a>Clasificadores capacitados
+
+[Introducción a los clasificadores capacitados (versión preliminar)](classifier-getting-started-with.md) (actualización)<br>Se ha agregado información sobre cómo la plantilla de lenguaje ofensivo está en desuso. También se ha agregado una tabla que enumera los 25 principales idiomas utilizados en el clasificador de código fuente integrado.
+
 ## <a name="february-2020"></a>Febrero de 2020
+
+> [!NOTE]
+> Los artículos que aparecen en los meses anteriores pueden haber sido actualizados, movidos o eliminados. Como resultado, algunos de los siguientes detalles podrían estar anticuados y los vínculos podrían romperse.
 
 ### <a name="auditing"></a>Auditoría
 

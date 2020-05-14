@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores de Microsoft 365 pueden obtener información sobre cómo recuperarse de un ataque de ransomware.
-ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208263"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224714"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -132,7 +132,7 @@ Puede informar del mensaje de suplantación de identidad (phishing) que contiene
 
 - [Norsk de la anhidro responde al ataque de ransomware con transparencia](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Detección de ransomware y recuperación de los archivos en OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Detección de ransomware y recuperación de los archivos en OneDrive](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Informe de inteligencia en seguridad de Microsoft](https://www.microsoft.com/securityinsights/)
 

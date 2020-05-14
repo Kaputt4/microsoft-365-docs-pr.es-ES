@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034821"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224594"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detectar y corregir ataques de las reglas de Outlook y de las inyecciones de formularios personalizados
 
@@ -137,7 +137,7 @@ Deberá contar con un derecho de administrador global para ejecutar el script, y
 
 3. Abra una instancia de PowerShell como administrador y abra la carpeta en la que guardó el script.
 
-4. Ejecute esta línea de comandos de PowerShell `.\Get-AllTenantRulesAndForms.ps1`de la siguiente manera: .\Get-AllTenantRulesAndForms.ps1
+4. Ejecute esta línea de comandos de PowerShell de la siguiente manera: `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interpretación del resultado
 
@@ -159,7 +159,7 @@ Si encuentra algún indicio de alguno de estos ataques, la corrección es sencil
 
 1. Identifique todos los dispositivos que el usuario ha usado con Outlook. Todos necesitan limpiarse del posible malware. No permita que el usuario inicie sesión y use el correo electrónico hasta que se limpien todos los dispositivos.
 
-2. Siga los pasos descritos en [eliminar una regla](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) para cada dispositivo.
+2. Siga los pasos descritos en [eliminar una regla](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) para cada dispositivo.
 
 3. Si no está seguro de la presencia de otro malware, puede formatear y volver a instalar todo el software en el dispositivo. Para dispositivos móviles, puede seguir los pasos de los fabricantes para restablecer el dispositivo en la imagen de fábrica.
 

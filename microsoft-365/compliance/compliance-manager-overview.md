@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre el administrador de cumplimiento de Microsoft, una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft.
-ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046288"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224647"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -129,7 +129,7 @@ Los controles de certificación suelen ser implementados por una persona y compr
 
 Tenga en cuenta que **las acciones de mejora** en la puntuación de cumplimiento son el equivalente de **los elementos de acción** en el administrador de cumplimiento.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 El administrador de cumplimiento utiliza un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigne un rol pueden acceder al administrador de cumplimiento, y las acciones permitidas por cada usuario están restringidas según el tipo de rol. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 
@@ -150,22 +150,25 @@ El administrador de cumplimiento puede almacenar pruebas de las tareas de implem
 
 El administrador de cumplimiento proporciona [plantillas](working-with-compliance-manager.md#templates) preconfiguradas para las evaluaciones y le permite crear plantillas personalizadas para los controles administrados por el cliente para sus necesidades de cumplimiento. Las plantillas nuevas se crean mediante la importación de información de controles desde un archivo de Excel o bien se puede crear una plantilla a partir de una copia de una plantilla existente.
 
-Las plantillas preconfiguradas incluidas con el administrador de cumplimiento son:
+Las plantillas preconfiguradas son:
 
-1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
-10. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
-11. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)
-13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
-14. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+1. [Ley de protección de datos general de Brasil (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
+2. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)
+3. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+4. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
+5. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077)
+6. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [Alta tecnología](https://go.microsoft.com/fwlink/?linkid=2109079)
+8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [ISM del gobierno australiano](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
+9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+12. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+13. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>Integración de la puntuación segura
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208064"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222531"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -286,7 +286,7 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
     
 - En la tabla siguiente se proporciona más información sobre cada etiqueta de retención que se agrega a la Directiva de retención personalizada que se creó siguiendo los pasos de este tema.
     
-    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Type**|
+    |**Etiqueta de retención**|**Qué hace esta etiqueta**|**¿Integrada o personalizada?**|**Tipo**|
     |:-----|:-----|:-----|:-----|
     |Mover a archivo desde Alpine House a 3 años  <br/> |Mueve los elementos que tienen un antigüedad de 1095 días (3 años) al buzón de archivo.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (archivo); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |
     |Eliminación permanente de Alpine House de 7 años  <br/> |Elimina permanentemente los elementos del buzón de correo principal o del buzón de archivo cuando tienen 7 años de antigüedad.  <br/> |Personalizado (vea [el paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Etiqueta de directiva predeterminada (eliminación); Esta etiqueta se aplica automáticamente a todo el buzón.  <br/> |
@@ -298,6 +298,6 @@ En el paso 4, tiene que asignar la nueva Directiva de retención a los buzones e
     |No eliminar nunca  <br/> |Esta etiqueta impide que los elementos se eliminen mediante una directiva de retención.  <br/> |Integrado  <br/> |Informático Esta etiqueta puede ser aplicada por los usuarios.  <br/> |
     |Mover al archivo después de 1 años en forma personal  <br/> |Mueve elementos al buzón de archivo después de un año.  <br/> |Integrado  <br/> |Informático Esta etiqueta puede ser aplicada por los usuarios.  <br/> |
    
-    > <sup>\*</sup>Los usuarios pueden usar la herramienta recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada son 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: [recuperar elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y [cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940) .
+    > <sup>\*</sup>Los usuarios pueden usar la herramienta recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada son 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: [recuperar elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y [cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](https://www.microsoft.com/?ref=go) .
   
 - El uso de la etiqueta de retención **Recoverable items 14 Days to Archive** Retention Tag ayuda a liberar espacio de almacenamiento en la carpeta elementos recuperables del buzón de correo principal del usuario. Esto es útil cuando el buzón de un usuario se coloca en retención, lo que significa que no se eliminará nada permanentemente el buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento de la carpeta elementos recuperables en el buzón principal. Para obtener más información acerca de este y cómo evitarlo, consulte [aumentar la cuota de elementos recuperables para los buzones de correo en retención](https://go.microsoft.com/fwlink/p/?LinkId=786479).

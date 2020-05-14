@@ -15,19 +15,19 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de seguridad & cumplimiento para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
-ms.openlocfilehash: 9134cf403c8452ea457983226be04ba139bf72e6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4783c3171f5f49dd50d6da8f5f4835ba243f7ab3
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943289"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214712"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento
 
 Puede usar la página **ver informes** en el centro de seguridad & cumplimiento para obtener un acceso rápido a los informes de auditoría de sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a informes de inicio de sesión de usuario de Azure Active Directory (AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página **ver informes** . Esto se debe a que su suscripción de pago a Microsoft 365 incluye una suscripción gratuita a Microsoft Azure. La primera vez que intente obtener acceso a estos informes de Azure, tendrá que completar un proceso de registro de un solo tiempo. 
   
 > [!TIP]
-> Para ver informes adicionales sobre la actividad de su organización, vea [informes de actividades en el centro de administración de Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+> Para ver informes adicionales sobre la actividad de su organización, vea [informes de actividades en el centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports). 
   
  **Antes de empezar**
   

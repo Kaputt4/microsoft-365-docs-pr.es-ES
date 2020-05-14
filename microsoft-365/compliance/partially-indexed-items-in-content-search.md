@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626684"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214216"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Elementos parcialmente indizados en la búsqueda de contenido
 
@@ -57,11 +57,11 @@ Determinados tipos de archivos, como mapas de bits o MP3, no incluyen contenido 
   
 Para obtener una lista de formatos de archivo compatibles y deshabilitados, vea los temas siguientes:
   
-- **Exchange** - [Formatos de archivo de Exchange indizados por la búsqueda de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Formatos de archivo indizados por la búsqueda de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint** - [Extensiones de nombre de archivo de rastreo y tipos de archivo analizados predeterminados de SharePoint en SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  -  [Extensiones de nombre de archivo y tipos de archivo analizados predeterminados en SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ Una excepción a esta regla es cuando se crea una retención basada en consulta 
 
 En la tabla siguiente se describen los límites de indización que podrían dar como resultado la devolución de un mensaje de correo electrónico como elemento parcialmente indizado en una búsqueda de contenido en Office 365.
   
-Para obtener una lista de los límites de indización de documentos de SharePoint, vea [límites de búsqueda para SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+Para obtener una lista de los límites de indización de documentos de SharePoint, vea [límites de búsqueda para SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Límite de indización**|**Notas**|**Descripción**|
 |:-----|:-----|:-----|

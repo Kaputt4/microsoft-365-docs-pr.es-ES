@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para preparar datos para el análisis con EDiscovery avanzado. '
-ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208104"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214288"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparar datos para la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -37,7 +37,7 @@ Para analizar datos con la exhibición avanzada de documentos electrónicos, pue
 Para obtener los pasos detallados sobre cómo preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, consulte [preparar los resultados de la búsqueda para la exhibición avanzada](prepare-search-results-for-advanced-ediscovery.md)de documentos electrónicos.
   
 > [!NOTE]
-> Si tiene datos fuera de Microsoft 365 y desea importarlos a Microsoft 365 para poder prepararlo y analizarlo en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) y el [archivado de datos de terceros](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Si tiene datos fuera de Microsoft 365 y desea importarlos a Microsoft 365 para poder prepararlo y analizarlo en la exhibición avanzada de documentos electrónicos, vea [información general sobre la importación de archivos PST a microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) y el [archivado de datos de terceros](https://www.microsoft.com/?ref=go). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Paso 2: cargar datos de resultados de búsqueda en un caso en eDiscovery avanzado
 

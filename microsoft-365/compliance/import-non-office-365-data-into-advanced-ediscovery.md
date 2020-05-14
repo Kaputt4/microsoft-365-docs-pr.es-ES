@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Pasos para importar contenido que no está almacenado en Microsoft 365 en un BLOB de Azure para que se pueda analizar con AeD
-ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634162"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214544"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Importar contenido que no es de Microsoft 365 para el análisis avanzado de exhibición de documentos electrónicos (Classic)
 
@@ -30,7 +30,7 @@ No todos los documentos que puede que necesite analizar con eDiscovery avanzado 
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
-> Puede adquirir una suscripción de complemento de almacenamiento de datos de eDiscovery avanzada para el contenido que no es de Microsoft 365. Esto está disponible exclusivamente para el contenido que se va a analizar con la exhibición avanzada de documentos electrónicos. Siga los pasos que se indican en [comprar o editar un complemento para Microsoft 365 para empresas](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) y compre el complemento de almacenamiento avanzado de eDiscovery. 
+> Puede adquirir una suscripción de complemento de almacenamiento de datos de eDiscovery avanzada para el contenido que no es de Microsoft 365. Esto está disponible exclusivamente para el contenido que se va a analizar con la exhibición avanzada de documentos electrónicos. Siga los pasos que se indican en [comprar o editar un complemento para Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on) y compre el complemento de almacenamiento avanzado de eDiscovery. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -51,7 +51,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
 
 
-1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el centro de &amp; seguridad y cumplimiento](ediscovery-cases.md)
+1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, Abra **eDiscovery**y abra el caso en el que se cargarán los datos que no son de Office 365. Si necesita crear un caso, consulte [administrar casos de eDiscovery en el &amp; centro de seguridad y cumplimiento](ediscovery-cases.md)
     
 2. Haga clic en **cambiar a exhibición avanzada de** documentos electrónicos
     
@@ -71,7 +71,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     
   - carpeta raíz: datos de C:\Collected 
     
-  - Dirección URL del https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&ampcontenedor-; Sr&amp;= c si = NonOfficeData15&amp;% 7C0 SIG = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3D
+  - Dirección URL del contenedor- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp ; Sr = c &amp; si = NonOfficeData15% 7C0 &amp; SIG = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3D
     
     la sintaxis de la línea de comandos de AzCopy sería:
     

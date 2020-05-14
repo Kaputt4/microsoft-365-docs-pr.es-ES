@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214667"
+ms.locfileid: "44222332"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -120,7 +120,7 @@ En esta guía se muestra cómo crear directivas recomendadas para exigir el uso 
 
 En esta guía se muestra cómo implementar un conjunto de directivas para proteger el acceso a Office 365, incluidos Exchange Online, SharePoint Online y OneDrive para la empresa. Además de implementar estas directivas, se recomienda aumentar también el nivel de protección del espacio empresarial con estos recursos:
 
-- [Configure el espacio empresarial para aumentar la seguridad](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): estas recomendaciones se aplican a la seguridad de línea base de su espacio empresarial.
+- [Configure el espacio empresarial para aumentar la seguridad](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): estas recomendaciones se aplican a la seguridad de línea base de su espacio empresarial.
 - [Plan de seguridad 365 de Microsoft: principales prioridades de los primeros 30 días, 90 días y versiones posteriores](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): estas recomendaciones incluyen el registro, el gobierno de datos, el acceso de administrador y la protección contra amenazas.
 
 

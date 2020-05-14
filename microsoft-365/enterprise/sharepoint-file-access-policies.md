@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035128"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222690"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
@@ -60,7 +60,7 @@ En la siguiente tabla se enumeran las directivas que debe revisar y actualizar o
 
 Si implementa controles de acceso en SharePoint Online, debe crear esta directiva de acceso condicional en Azure AD para decir a Azure AD que aplique las directivas que configure en SharePoint Online. Esta regla se aplica a todos los usuarios, pero solo afecta al acceso a los sitios que se especifiquen mediante PowerShell al crear los controles de acceso en SharePoint Online.
 
-Para configurar esta Directiva, vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Para configurar esta Directiva, vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="sharepoint-online-access-control-policies"></a>Directivas de control de acceso de SharePoint Online
 
@@ -69,7 +69,7 @@ Microsoft recomienda proteger el contenido de los sitios de SharePoint con conte
 - Sitios confidenciales: permitir el acceso solo del explorador. Esto impide que los usuarios editen y descarguen archivos.
 - Sitios altamente regulados: bloquear el acceso desde dispositivos no administrados.
 
-Vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Vea "bloquear o limitar el acceso a colecciones de sitios de SharePoint específicas o cuentas de OneDrive" en este artículo: [controlar el acceso desde dispositivos no administrados](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="how-these-policies-work-together"></a>Funcionamiento conjunto de estas directivas
 

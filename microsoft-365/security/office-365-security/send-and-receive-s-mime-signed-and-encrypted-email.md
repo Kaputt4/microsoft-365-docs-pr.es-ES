@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Enviar o responder a un mensaje cifrado con S/MIME en Microsoft Outlook es muy similar a la experiencia con un mensaje no cifrado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b573cb7a0a299b5b8c942b198e141b98b8301087
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c6d1e546141474ba263e141bc9a731f3f04ef74d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035401"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224690"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Enviar y recibir correo electrónico cifrado y firmado con S/MIME en Exchange Online
 
-Enviar o responder a un mensaje cifrado con S/MIME en Microsoft Outlook es muy similar a la experiencia con un mensaje no cifrado. Para obtener más información acerca de cómo leer o enviar mensajes cifrados con S/MIME desde un programa de correo electrónico como Outlook en la web (anteriormente conocido como Outlook Web App), vea [cifrar mensajes mediante S/MIME en Outlook en la web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
+Enviar o responder a un mensaje cifrado con S/MIME en Microsoft Outlook es muy similar a la experiencia con un mensaje no cifrado. Para obtener más información acerca de cómo leer o enviar mensajes cifrados con S/MIME desde un programa de correo electrónico como Outlook en la web (anteriormente conocido como Outlook Web App), vea [cifrar mensajes mediante S/MIME en Outlook en la web](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480).
 
 ## <a name="for-more-information"></a>Más información
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
-ms.openlocfilehash: 3194381726e2798b9bcdb901ca61957e42863a96
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e4210feb2f510507a1d930ffed6ac784566951b5
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165941"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214236"
 ---
 # <a name="message-encryption"></a>Cifrado de mensajes
 
@@ -91,7 +91,7 @@ Para obtener instrucciones detalladas sobre cómo enviar y ver mensajes cifrados
 |[Obtenga información sobre los mensajes protegidos en Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|Un usuario final que desea obtener más información sobre cómo funcionan los mensajes cifrados y qué opciones están disponibles para usted.|
 |[¿Cómo se abre un mensaje protegido?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|Un usuario final que desea leer un mensaje protegido que se le ha enviado. Este artículo incluye información sobre cómo leer mensajes en varias versiones de Outlook y desde distintas cuentas de correo electrónico, incluidas las que se encuentran fuera de Microsoft 365, como gmail y Yahoo! cuenta.|
 |[Enviar, ver y responder mensajes cifrados en Outlook](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|Un usuario final que desea enviar, ver o responder a un mensaje cifrado desde Outlook. Incluso si no es miembro de una organización, sigue recibiendo notificación de los mensajes cifrados que se le han enviado en Outlook. Use este artículo para obtener instrucciones sobre cómo ver y responder a los mensajes cifrados enviados desde Office 365.|
-|[Enviar un mensaje cifrado o firmado digitalmente](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547)|Un usuario final que desea enviar, ver o responder a mensajes cifrados con Outlook para Mac. En este artículo también se trata el uso de métodos de cifrado distintos de OME, como S/MIME.|
+|[Enviar un mensaje cifrado o firmado digitalmente](https://support.microsoft.com/en-us/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|Un usuario final que desea enviar, ver o responder a mensajes cifrados con Outlook para Mac. En este artículo también se trata el uso de métodos de cifrado distintos de OME, como S/MIME.|
 |[Ver mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su dispositivo Android, puede usar la aplicación de visor gratuita OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.|
 |[Ver mensajes cifrados en su iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su iPhone o iPad, puede usar la aplicación gratuita visor de OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.|
 ||

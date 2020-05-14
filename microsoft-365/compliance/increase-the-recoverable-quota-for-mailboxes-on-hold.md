@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
-ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072937"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222713"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -78,7 +78,7 @@ El primer paso consiste en crear una etiqueta de retención personalizada (denom
     ```
 
     > [!TIP]
-    > Se recomienda que el período de retención (definido por el parámetro _AgeLimitForRetention_ ) para la RPT de elementos recuperables sea el mismo que el período de retención de elementos eliminados para los buzones de correo a los que se aplicará el RPT. Esto permite a un usuario todo el período de retención de elementos eliminados para recuperar los elementos eliminados antes de que se muevan al buzón de archivo. En el ejemplo anterior, el período de retención se estableció en 30 días en función de la hipótesis de que el período de retención de elementos eliminados para los buzones de correo es también de 30 días. De forma predeterminada, se configura un buzón de correo de Exchange Online para conservar los elementos eliminados durante 14 días. Pero puede cambiar esta configuración a un máximo de 30 días. Para obtener más información, vea [cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
+    > Se recomienda que el período de retención (definido por el parámetro _AgeLimitForRetention_ ) para la RPT de elementos recuperables sea el mismo que el período de retención de elementos eliminados para los buzones de correo a los que se aplicará el RPT. Esto permite a un usuario todo el período de retención de elementos eliminados para recuperar los elementos eliminados antes de que se muevan al buzón de archivo. En el ejemplo anterior, el período de retención se estableció en 30 días en función de la hipótesis de que el período de retención de elementos eliminados para los buzones de correo es también de 30 días. De forma predeterminada, se configura un buzón de correo de Exchange Online para conservar los elementos eliminados durante 14 días. Pero puede cambiar esta configuración a un máximo de 30 días. Para obtener más información, vea [cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](https://www.microsoft.com/?ref=go). 
   
 ## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>Paso 2: Crear una directiva de retención para buzones de correo en suspensión
 
@@ -96,11 +96,11 @@ Puede usar el EAC o Exchange Online PowerShell para crear una directiva de reten
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Uso de EAC para crear una directiva de retención
   
-1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento y, a continuación](../media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar.
+1. En el EAC, vaya a directivas de retención de **Administración de cumplimiento** \> **Retention policies**y, a continuación, haga clic en **Agregar** ![ icono de agregar ](../media/ITPro-EAC-AddIcon.gif) .
     
 2. En la página **Nueva directiva de retención**, en **Nombre**, escriba un nombre que describa el propósito de la directiva, como **MRM Policy for Mailboxes on Hold** (Directiva de MRM para buzones de correo en suspensión).  
     
-3. En **etiquetas de retención**, haga clic en](../media/ITPro-EAC-AddIcon.gif) **Agregar** ![icono de agregar.
+3. En **etiquetas de retención**, haga clic en **Agregar** ![ icono de agregar ](../media/ITPro-EAC-AddIcon.gif) .
     
 4. En la lista de etiquetas de retención, seleccione la RPT de Elementos recuperables que ha creado en el paso 1 y, después, haga clic en **Agregar**.
     
@@ -139,7 +139,7 @@ El último paso consiste en aplicar la nueva directiva de retención que ha crea
   
 1. Vaya a **Destinatarios** \> **Buzones de correo**.
     
-2. En la vista de lista, seleccione el buzón al que desea aplicar la Directiva de retención y, a **** ![continuación, haga](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)clic en Editar icono de edición.
+2. En la vista de lista, seleccione el buzón al que desea aplicar la Directiva de retención y, a continuación, haga clic en **Editar** ![ icono de edición ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. En la página **Buzón de usuario**, haga clic en **Características de buzón de correo**.
     
@@ -225,6 +225,6 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 ## <a name="more-information"></a>Más información
 
-- Después de habilitar el buzón de archivo de un usuario, considere la posibilidad de informar al usuario de que otros elementos del buzón (no solo los elementos de la carpeta Elementos recuperables) se podrían mover al buzón de archivo. Esto se debe a que la Directiva de MRM predeterminada que se asigna a los buzones de correo de Exchange Online contiene una etiqueta de retención (denominada 2 años como predeterminada, mover a archivo) que mueve los elementos al buzón de archivo dos años después de la fecha en que se entregó el elemento al buzón o se creó mediante el usuario. Para obtener más información, vea [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954) .
+- Después de habilitar el buzón de archivo de un usuario, considere la posibilidad de informar al usuario de que otros elementos del buzón (no solo los elementos de la carpeta Elementos recuperables) se podrían mover al buzón de archivo. Esto se debe a que la Directiva de MRM predeterminada que se asigna a los buzones de correo de Exchange Online contiene una etiqueta de retención (denominada 2 años como predeterminada, mover a archivo) que mueve los elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó al buzón o el usuario lo creó. Para obtener más información, vea [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954) .
     
 - Después de habilitar el buzón de archivo de un usuario, también puede decirle al usuario que puede recuperar los elementos eliminados de la carpeta elementos recuperables de su buzón de archivo. Puede hacerlo en Outlook seleccionando la carpeta **elementos eliminados** en el buzón de archivo y, a continuación, haciendo clic en **recuperar elementos eliminados del servidor** en la ficha **Inicio** . Para obtener más información acerca de la recuperación de elementos eliminados, vea [recuperar elementos eliminados en Outlook para Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 

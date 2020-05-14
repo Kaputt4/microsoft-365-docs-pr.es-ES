@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066565"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214504"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
@@ -105,7 +105,7 @@ Además de los centros de datos del Reino Unido, los servicios en la nube de Mic
 
 **¿Cómo puedo obtener copias de los informes del Auditor?**
 
-El [Portal del Centro de confianza](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de Microsoft con sus propios requisitos legales y normativos.
+El [Portal del Centro de confianza](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes de auditoría para que los auditores puedan comparar los resultados de Microsoft con sus propios requisitos legales y normativos.
 
 ## <a name="resources"></a>Recursos
 
@@ -114,4 +114,4 @@ El [Portal del Centro de confianza](https://support.office.com/article/Get-start
 - [G-Cloud Security Principles](https://aka.ms/UK-G-Cloud)
 - [Mercado digital](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

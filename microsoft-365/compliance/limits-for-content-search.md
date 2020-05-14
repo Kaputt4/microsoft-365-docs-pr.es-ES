@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Obtenga información sobre los límites en vigor para la característica de búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, como el número máximo de búsquedas simultáneas. '
-ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ef6feaf6da51a49278ccd387bda0041c081659a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632655"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224605"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Límites de búsqueda de contenido en el centro de seguridad & cumplimiento
 
@@ -39,7 +39,7 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |:-----|:-----|
 |El número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda de contenido  <br/> |Sin límite  <br/> |
 |El número máximo de búsquedas de contenido que se pueden ejecutar al mismo tiempo en la organización.  <br/> |Sin límite  <br/> |
-|El número máximo de búsquedas de contenido que un solo usuario puede iniciar al mismo tiempo. Tenga en cuenta que es muy probable que este límite se produzca cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-compliancesearch \| Start-compliancesearch** en Security & Compliance Center PowerShell.  <br/> |10   <br/> |
+|El número máximo de búsquedas de contenido que un solo usuario puede iniciar al mismo tiempo. Tenga en cuenta que es muy probable que este límite se produzca cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-compliancesearch \| Start-Compliancesearch** en Security & Compliance Center PowerShell.  <br/> |10    <br/> |
 |El número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al previsualizar los resultados de la búsqueda de contenido.  <br/> |100  <br/> |
 |El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al previsualizar los resultados de la búsqueda de contenido. Se muestran los elementos más recientes.  <br/> |1.000  <br/> |
 |El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, solo estarán disponibles los primeros 1000 buzones con la mayoría de resultados de búsqueda para la vista previa.  <br/> |1.000  <br/> |
@@ -49,12 +49,12 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |El número máximo de elementos encontrados en todos los buzones de carpetas públicas que se muestran en la página de vista previa al previsualizar los resultados de la búsqueda de contenido.  <br/> |200  <br/> |
 |El número máximo de buzones públicos en los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen contenido que coincide con la consulta de búsqueda, solo los primeros 500 buzones de carpetas públicas con mayor cantidad de resultados de búsqueda estarán disponibles para la vista previa.  <br/> |500  <br/> |
 |El número máximo de caracteres de la consulta de búsqueda (incluidos los operadores y las condiciones) de una búsqueda de contenido.  <br/><br/> **Nota:** Este límite surte efecto después de que se expande la consulta, lo que significa que la consulta se expandirá en cada una de las palabras clave. Por ejemplo, si una consulta de búsqueda tiene 15 palabras clave y otros parámetros y condiciones, la consulta se expande 15 veces, cada una con los demás parámetros y condiciones de la consulta. Por lo tanto, aunque el número de caracteres en la consulta de búsqueda puede estar por debajo del límite, es la consulta ampliada que puede contribuir a exceder este límite.  <br/> |**Buzones de correo:** 10.000  <br/> **Sitios:** 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>1</sup> <br/> |
-|Número máximo de variantes devueltas al usar un carácter comodín de prefijo para buscar una frase exacta en una consulta de búsqueda o cuando se usa un carácter comodín de prefijo y el operador booleano **Near** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
-|El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo, `time*` `one*`, o `set*`.  <br/> |3  <br/> |
+|Número máximo de variantes devueltas al usar un carácter comodín de prefijo para buscar una frase exacta en una consulta de búsqueda o cuando se usa un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>2</sup> <br/> |
+|El número mínimo de caracteres alfabéticos para los caracteres comodín de prefijo; por ejemplo, `time*` , `one*` o `set*` .  <br/> |3  <br/> |
 |El número máximo de buzones en una búsqueda de contenido en la que se pueden eliminar elementos mediante una acción "buscar y purgar" (mediante el comando **New-ComplianceSearchAction-Purge** ). Si la búsqueda de contenido en la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de las búsquedas y depuración, consulte [Buscar y eliminar mensajes de correo electrónico de la organización](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> al buscar ubicaciones de SharePoint y OneDrive para la empresa, los caracteres de las direcciones URL de los sitios en los que se busca se cuentan en este límite. <br/> <sup>2</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo, `"time*"` se puede expandir `"time OR timer OR times OR timex OR timeboxed OR …"`a. 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior. 
+> <sup>1</sup> al buscar ubicaciones de SharePoint y OneDrive para la empresa, los caracteres de las direcciones URL de los sitios en los que se busca se cuentan en este límite. <br/> <sup>2</sup> para las consultas que no son de frases (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto indica que se produce una palabra en un documento, pero no donde se produce en el documento. Para realizar una consulta de frases (un valor de palabra clave con comillas dobles), debemos comparar la posición del documento con las palabras de la frase. Esto significa que no podemos usar el índice de prefijos para las consultas de frases. En este caso, la consulta se expande internamente con todas las palabras posibles a las que se expande el prefijo; por ejemplo, `"time*"` se puede expandir a `"time OR timer OR times OR timex OR timeboxed OR …"` . 10.000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior. 
   
 ## <a name="indexing-limits-for-email-messages"></a>Límites de indización de los mensajes de correo electrónico
 
@@ -82,7 +82,7 @@ Existen límites adicionales relacionados con los distintos aspectos de la búsq
     
 - [Investigación de elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Límites de búsqueda para SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Límites de búsqueda para SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
     
 Para obtener más información acerca de las búsquedas de contenido, consulte:
   
