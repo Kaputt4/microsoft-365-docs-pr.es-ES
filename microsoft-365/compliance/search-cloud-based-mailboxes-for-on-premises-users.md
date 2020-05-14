@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilice la herramienta de búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de MicrosoftTeams (llamados chats 1xN) para usuarios locales en un despliegue híbrido de Exchange.
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034577"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214604"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Búsqueda de buzones basados en la nube para usuarios locales
 
@@ -59,7 +59,7 @@ Incluya la siguiente información cuando envíe la solicitud al Soporte técnico
   
 - El nombre de dominio predeterminado de su organización.
 
-- El nombre del espacio empresarial y la identificación del espacio empresarial de su organización. Puede encontrarlos en el portal de Azure Active Directory (en **Administrar** \> **Propiedades**). Vea [Buscar la identificación del espacio empresarial de Microsoft 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- El nombre del espacio empresarial y la identificación del espacio empresarial de su organización. Puede encontrarlos en el portal de Azure Active Directory (en **Administrar** \> **Propiedades**). Vea [Buscar la identificación del espacio empresarial de Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - El siguiente título o descripción del propósito de la solicitud de apoyo: "Habilitar la búsqueda de contenido de la aplicación para usuarios locales". Esto ayuda a dirigir la solicitud al equipo de ingeniería de eDiscovery que implementará la solicitud.
 

@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: En este artículo, aprenderá sobre la protección anti suplantación de identidad de Microsoft 365, que mitiga los ataques de suplantación de identidad de los dominios falsificados.
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034075"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209036"
 ---
-# <a name="anti-spoofing-protection"></a>Protección contra la suplantación de identidad
+# <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
-Si es un cliente de Microsoft 365 que tiene buzones de correo de Exchange Online o un cliente independiente de Exchange Online Protection (EOP) que no tiene buzones de Exchange Online, EOP incluye características para ayudarle a proteger su organización frente a remitentes falsificados.
+En las organizaciones de Microsoft 365 con buzones de correo de Exchange Online o las organizaciones independientes de Exchange Online Protection (EOP) que no tienen buzones de Exchange Online, EOP incluye características para ayudarle a proteger su organización frente a remitentes falsificados.
 
 Cuando se trata de proteger a sus usuarios, Microsoft se toma muy en serio las amenazas de suplantación de identidad. La suplantación es una técnica común usada por atacantes. **Los mensajes falsificados parecen provenir de una persona o un lugar distinto a la fuente real**. Esta técnica se usa a menudo en campañas de suplantación de identidad (phishing), diseñadas para obtener credenciales de usuarios. La tecnología contra la suplantación de identidad en EOP examina específicamente la posible falsificación del encabezado De en el cuerpo del mensaje (que se usa para mostrar el remitente del mensaje en los clientes de correo electrónico). Cuando EOP confía mucho en que el encabezado De es falso, el mensaje se identifica como falso.
 
@@ -37,11 +37,11 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
 - **Inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
 
-- **Directivas contra la suplantación de identidad**: en EOP, la directiva antispam integrada le permite activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitente no autenticado en Outlook, y especificar la acción para remitentes falsos bloqueados (mover a la carpeta de correo no deseado o a cuarentena). Las directivas avanzadas de contra la suplantación de identidad disponibles en la protección contra amenazas avanzada (ATP) de Office 365 también contienen la configuración de protección contra la suplantación (remitentes y dominios protegidos), la configuración de inteligencia de buzón y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
+- **Directivas contra la suplantación de identidad**: en EOP, las directivas contra la suplantación de identidad le permiten activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitente no autenticado en Outlook, y especificar la acción para remitentes falsos bloqueados (mover a la carpeta de correo no deseado o a cuarentena). Las directivas avanzadas contra la suplantación de identidad disponibles en la protección contra amenazas avanzada de Office 365 (Office 365 ATP) también contienen la configuración de protección contra la suplantación (remitentes y dominios protegidos), la configuración de inteligencia de buzón y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
 
 - **Autenticación de correo electrónico**: una parte integral de cualquier esfuerzo contra la suplantación de identidad es el uso de la autenticación de correo electrónico (también conocida como validación de correo electrónico) por registros de DMARC, DKIM y DMARC en DNS. Puede configurar estos registros para sus dominios, de modo que los sistemas de correo electrónico de destino puedan comprobar la validez de los mensajes que requieran que se envíen a los remitentes de su dominio. Para los mensajes entrantes, Microsoft 365 requiere la autenticación de correo electrónico para los dominios de remitente. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
 
-La tecnología contra la suplantación de identidad de Microsoft se ha implementado originalmente solo para las organizaciones con Protección contra amenazas avanzada (ATP) de Office 365. La protección contra la suplantación de identidad se ha agrego a EOP en octubre de 2018.
+A partir de octubre del 2018, la protección contra la suplantación de identidad está disponible en EOP. Antes, la protección contra la suplantación de identidad solo estaba disponible en organizaciones con Office 365 ATP.
 
 EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
 

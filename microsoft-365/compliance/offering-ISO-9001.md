@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065755"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214308"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>Estándares de los sistemas de gestión de la calidad ISO 9001:2015
 
@@ -57,15 +57,15 @@ Este estándar de práctica ofrece directrices y herramientas para que los prove
 
 **¿Dónde puedo obtener los informes de auditoría y las declaraciones de ámbito de ISO 9001:2015 para los servicios de Microsoft?**
 
-El [Portal del Centro de confianza](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes para que los auditores puedan comparar los resultados de los servicios de nube de Microsoft con sus propios requisitos legales y regulatorios. El [informe de evaluación ISO 9001 de Microsoft Azure del AF17](https://aka.ms/Azure9001Report) y el [certificado ISO 9001 de Microsoft Azure del AF17](https://aka.ms/Azure9001Cert) ya están disponibles.
+El [Portal del Centro de confianza](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) ofrece informes de cumplimiento auditados de forma independiente. Puede usar el portal para solicitar informes para que los auditores puedan comparar los resultados de los servicios de nube de Microsoft con sus propios requisitos legales y regulatorios. El [informe de evaluación ISO 9001 de Microsoft Azure del AF17](https://www.microsoft.com/?ref=aka) y el [certificado ISO 9001 de Microsoft Azure del AF17](https://www.microsoft.com/?ref=aka) ya están disponibles.
 
 **¿Microsoft ejecuta pruebas anuales de errores de infraestructura?**
 
-Sí. La evaluación anual ISO 9001:2015 incluye el centro de datos de infraestructura física subyacente. [Revise el certificado](https://aka.ms/Azure9001Cert) para ver los detalles de la cobertura.
+Sí. La evaluación anual ISO 9001:2015 incluye el centro de datos de infraestructura física subyacente. [Revise el certificado](https://www.microsoft.com/?ref=aka) para ver los detalles de la cobertura.
 
 **¿Dónde puedo ver la información de cumplimiento normativo de Microsoft para la norma ISO 9001:2015?**
 
-Puede descargar el [certificado ISO 9001:2015](https://aka.ms/Azure9001Cert) para Azure y otros servicios que se encuentren en el ámbito de esta evaluación.
+Puede descargar el [certificado ISO 9001:2015](https://www.microsoft.com/?ref=aka) para Azure y otros servicios que se encuentren en el ámbito de esta evaluación.
 
 ## <a name="resources"></a>Recursos
 

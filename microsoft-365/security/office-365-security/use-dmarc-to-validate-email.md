@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
-ms.openlocfilehash: 9de3ef1218be8152dc0795809c21efe8a93fd659
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 9ae159ccb2673fd9c8538b184e4de1b8e1c2b039
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708552"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224582"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
@@ -84,7 +84,7 @@ Microsoft envía sus informes DMARC a [Agari](https://agari.com), un tercero. Ag
 
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementar DMARC para el correo entrante
 
-No hay que hacer nada para configurar DMARC para el correo que se recibe en Microsoft 365. Nosotros nos hemos encargado de todo. Si quiere saber lo que ocurre con el correo que no pasa las comprobaciones de DMARC, vea [Cómo controla Microsoft 365 el correo electrónico entrante que no supera las comprobaciones de DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
+No hay que hacer nada para configurar DMARC para el correo que se recibe en Microsoft 365. Nosotros nos hemos encargado de todo. Si quiere saber lo que ocurre con el correo que no pasa las comprobaciones de DMARC, consulte [Cómo gestiona Microsoft 365 el correo electrónico entrante que genera errores DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
 ## <a name="implement-dmarc-for-outbound-mail-from-microsoft-365"></a>Implementar DMARC para el correo saliente de Microsoft 365
 
@@ -122,15 +122,15 @@ Como práctica recomendada, asegúrese de que el registro TXT de SPF tenga en cu
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>Paso 3: Configurar DKIM para el dominio personalizado
 
-Cuando haya configurado SPF, deberá configurar DKIM. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Si no configura DKIM pero permite a Microsoft 365 usar la configuración predeterminada de DKIM en el dominio, DMARC puede dar errores. Esto se debe a que la configuración predeterminada de DKIM usa el dominio onmicrosoft.com inicial como dirección de 5322.From, es decir, no usa el dominio personalizado. Esto provoca una discrepancia entre las direcciones 5321.MailFrom y 5322.From en todos los correos electrónicos enviados desde su dominio.
+Cuando haya configurado SPF, deberá configurar DKIM. DKIM le permite agregar una firma digital en el encabezado de los mensajes de correo electrónico. Si no configura DKIM pero permite a Microsoft 365 usar la configuración predeterminada de DKIM para el dominio, DMARC puede dar errores. Esto se debe a que la configuración predeterminada de DKIM usa el dominio onmicrosoft.com inicial como dirección 5322.From, es decir, no usa el dominio personalizado. Esto provoca una discrepancia entre las direcciones 5321.MailFrom y 5322.From en todos los correos electrónicos enviados desde su dominio.
 
-Si hay remitentes externos que envían correo en su nombre y el correo que envían tiene direcciones 5322.From y 5321.MailFrom que no coinciden, se producirá un error de DMARC en este correo electrónico. Para evitar esto, tendrá que configurar DKIM para el dominio, en concreto con ese remitente externo. Esto permite a Microsoft 365 autenticar el correo electrónico desde el servicio de esta tercera parte. Sin embargo, también permite a otros usuarios, por ejemplo, Yahoo, Gmail y Comcast, comprobar la validez del correo electrónico que les envía la tercera parte como si lo hubiera enviado usted. Esto es beneficioso porque permite a los clientes generar relaciones de confianza con el dominio independientemente del sitio donde se encuentre su buzón y, al mismo tiempo, Microsoft 365 no marca un mensaje como correo no deseado por suplantación de identidad, ya que pasa las comprobaciones de autenticación para el dominio.
+Si hay remitentes externos que envían correo en su nombre y el correo que envían tiene direcciones 5321.MailFrom y 5322.From que no coinciden, se producirá un error de DMARC para ese correo electrónico. Para evitar esto, tendrá que configurar DKIM para el dominio específicamente con ese remitente externo. Esto permite a Microsoft 365 autenticar el correo electrónico desde el servicio externo. Sin embargo, también permite a otros usuarios, por ejemplo, Yahoo, Gmail y Comcast, comprobar la validez del correo electrónico enviado por terceros como si lo hubiera enviado usted. Esto es beneficioso porque permite a los clientes generar relaciones de confianza con el dominio independientemente del sitio donde se encuentre su buzón y, al mismo tiempo, Microsoft 365 no marcará un mensaje como correo no deseado por suplantación de identidad, ya que pasa las comprobaciones de autenticación para el dominio.
 
 Para ver las instrucciones sobre cómo configurar DKIM para el dominio, incluyendo cómo configurar DKIM para remitentes externos para que puedan suplantar la identidad de su dominio, consulte [Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado](use-dkim-to-validate-outbound-email.md).
 
 ### <a name="step-4-form-the-dmarc-txt-record-for-your-domain"></a>Paso 4: Formular el registro TXT de DMARC para el dominio
 
-Aunque existen otras opciones de sintaxis que no se mencionan aquí, estas son las opciones de sintaxis más usadas en Microsoft 365. Formule el registro TXT de DMARC para el dominio con el siguiente formato:
+Aunque existen otras opciones de sintaxis que no se mencionan aquí, estas son las opciones más usadas en Microsoft 365. Formule el registro TXT de DMARC para el dominio con el siguiente formato:
 
 ```text
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
@@ -168,7 +168,7 @@ Ejemplos:
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Una vez que formule el registro, debe actualizarlo en el registrador del dominio. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC en los registros DNS para Microsoft 365, consulte [Crear registros DNS para Microsoft 365 al administrar los registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
+Una vez que haya formulado el registro, debe actualizarlo en el registrador del dominios. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC a los registros DNS para Microsoft 365, consulte [Crear registros DNS para Microsoft 365 al administrar los registros DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedimientos recomendados para la implementación de DMARC en Microsoft 365
 
@@ -192,7 +192,7 @@ DMARC se puede implementar gradualmente sin que esto afecte al resto del flujo d
 
 Si un mensaje sale de Microsoft 365 y no supera las comprobaciones de DMARC, y ha establecido la directiva en p=quarantine o p=reject, el mensaje se enruta a través del [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md). No hay ninguna invalidación para el correo saliente.
 
-Si publica una directiva de rechazo de DMARC (p=reject), ningún otro cliente de Microsoft 365 podrá suplantar la identidad de su dominio porque los mensajes no podrán pasar las comprobaciones de SPF o DKIM para el dominio al retransmitir un mensaje saliente a través del servicio. Sin embargo, si publica una directiva de rechazo de DMARC, pero no dispone de todo el correo electrónico autenticado a través de Microsoft 365, una parte del correo entrante se puede marcar como correo no deseado (como se describe más arriba) o se rechazará si no publica SPF e intenta retransmitirlo para que salga a través del servicio. Esto sucede, por ejemplo, si se olvida de incluir algunas de las direcciones IP para servidores y aplicaciones que envían correo en nombre de su dominio al formular el registro TXT de DMARC.
+Si publica una directiva de rechazo de DMARC (p=reject), ningún otro cliente de Office 365 podrá suplantar la identidad del dominio porque los mensajes no podrán pasar las comprobaciones de SPF o DKIM para el dominio al retransmitir un mensaje saliente a través del servicio. Sin embargo, si publica una directiva de rechazo de DMARC, pero no dispone de todo el correo electrónico autenticado a través de Microsoft 365, una parte del correo entrante puede ser marcado como correo no deseado (como se describió anteriormente) o se rechazará si no publica SPF e intenta retransmitirlo para que salga a través del servicio. Esto sucede, por ejemplo, si se olvida de incluir algunas de las direcciones IP para servidores y aplicaciones que envían correo en nombre de su dominio al formular el registro TXT de DMARC.
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Cómo controla Microsoft 365 el correo electrónico entrante que no supera las comprobaciones de DMARC
 
@@ -200,11 +200,11 @@ Si la directiva DMARC del servidor de envío es`p=reject`, EOP marca el mensaje 
 
 Microsoft 365 está configurado así porque algunos mensajes de correo legítimos pueden no superar las comprobaciones de DMARC. Por ejemplo, un mensaje podría no superar las pruebas DMARC si se envía a una lista de distribución que luego transmite el mensaje a todos los participantes de la lista. Si Microsoft 365 rechazara estos mensajes, las personas podrían perder el correo electrónico legítimo y no habría forma de recuperarlo. Es decir, estos mensajes seguirían provocando un error en DMARC, pero se marcarían como correo no deseado y no se rechazarían. Los usuarios que quisieran podrían colocar estos mensajes en la bandeja de entrada a través de estos métodos:
 
-- Los usuarios pueden agregar los remitentes seguros de manera individual mediante el cliente de correo electrónico
+- Los usuarios agregan a los remitentes seguros de manera individual mediante el cliente de correo electrónico
 
-- Los administradores pueden actualizar las notificaciones de la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para permitir la suplantación de identidad.
+- Los administradores pueden actualizar las notificaciones de [Inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para permitir la suplantación de identidad.
 
-- Los administradores crean una regla de flujo de correo (también conocida como regla de transporte) de Exchange para todos los usuarios que permite la entrada de los mensajes de esos remitentes determinados.
+- Los administradores crean una regla de flujo de correo (también conocida como regla de transporte) de Exchange para todos los usuarios que permite los mensajes de esos remitentes concretos.
 
 Para obtener más información, consulte [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
 

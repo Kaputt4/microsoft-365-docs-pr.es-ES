@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166142"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213477"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -55,9 +55,9 @@ Para más información, vea esta [información general de los valores predetermi
 
 Las directivas de acceso condicional son un conjunto de reglas que especifican las condiciones en las que se evalúan y permiten los inicios de sesión. Por ejemplo, puede crear una directiva de acceso condicional que indique lo siguiente:
 
-- Si el nombre de la cuenta de usuario es para un usuario que es un administrador de Exchange, usuarios, contraseñas, seguridad, SharePoint o global, se requiere MFA antes de permitir el acceso.
+- Si el nombre de la cuenta de usuario es miembro de un grupo de usuarios a los que se han asignado los roles de administrador de Exchange, de usuarios, de contraseñas, de seguridad, de SharePoint o global, requerir MFA antes de permitir el acceso.
 
-Esta directiva es más fácil que intentar recordar configurar cuentas de usuario individuales para MFA cuando se agregan o eliminan de estas funciones de administrador.
+Esta directiva le permite exigir MFA en función de la pertenencia a grupos, en lugar de intentar configurar cuentas de usuario individuales para MFA cuando se asignan o se quitan estos roles de administrador.
 
 También puede usar directivas de acceso condicionales para funciones más avanzadas, como requerir que el inicio de sesión se realice desde un dispositivo que cumpla las normativas, como su equipo portátil que ejecuta Windows 10.
 
@@ -65,15 +65,15 @@ El acceso condicional requiere Azure AD Premium P1, que se incluye con Microsoft
 
 Para más información, vea esta [información general sobre el acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## <a name="azure-ad-identity-protection-policies"></a>Directivas de protección de identidad de Azure AD Identity Protection
+## <a name="azure-ad-identity-protection-support"></a>Soporte de protección de identidad de Azure AD
 
-Las directivas de protección de identidad de Azure AD Identity Protection son reglas que especifican las condiciones bajo las cuales se evalúan y permiten los inicios de sesión. Por ejemplo, puede crear una directiva de protección de identidad de Azure AD Identity Protection que establezca:
+Con la protección de identidad de Azure AD, puede crear una directiva de acceso condicional adicional que establezca:
 
-- Si el riesgo del inicio de sesión se determina como medio o alto, el usuario debe usar MFA para iniciar sesión.
+- Si el riesgo del inicio de sesión se determina como medio o alto, requerir MFA.
 
-La protección de identidad de Azure AD Identity Protection requiere Azure AD Premium P2, que se incluye con Microsoft 365 E5.
+La protección de identidad de Azure AD requiere Azure AD Premium P2, que se incluye con Microsoft 365 E5.
 
-Para más información, vea esta [información general sobre la protección de identidad de Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+Para más información, consulte [Acceso condicional basado en riesgos](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## <a name="using-these-methods-together"></a>Usar estos métodos conjuntamente
 
@@ -84,12 +84,12 @@ Tenga en cuenta lo siguiente:
 
 Si los valores predeterminados de seguridad están habilitados, se le pedirá al usuario el registro de MFA y el uso de la aplicación Microsoft Authenticator. 
 
-Esta tabla muestra los resultados de habilitar MFA con los valores predeterminados de seguridad, las directivas de acceso condicional y la configuración de cuenta por usuario.
+Esta tabla muestra los resultados de habilitar MFA con los valores predeterminados de seguridad y las directivas de acceso condicional.
 
-|| Habilitado | Deshabilitado | Método de autenticación secundario |
+|| Habilitado | Deshabilitado | Método de autenticación adicional |
 |:-------|:-----|:-------|:-------|
 | **Valores predeterminados de seguridad**  | No se pueden usar directivas de acceso condicional | Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
-| **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si no hay ninguna habilitada, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
+| **Directivas de acceso condicional** | Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad  | Especificado por el usuario durante el registro de MFA  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>Aprendizaje de administración y recursos técnicos para MFA e identidad

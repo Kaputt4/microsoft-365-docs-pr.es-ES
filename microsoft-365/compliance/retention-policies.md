@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de manera proactiva si se conserva el contenido, cómo se elimina el contenido o se mantienen ambas opciones, y luego se elimina el contenido. Aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos. y aplicar una directiva a todo el contenido o contenido que cumpla ciertas condiciones.
-ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a4bf22f7064e74926935a228f84281af9171bedc
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165951"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214614"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -422,7 +422,7 @@ Hay otras características que se han utilizado anteriormente para retener o eli
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
+- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (suspensión de eDiscovery) 
     
 - [Conservación local y Retención por juicio](https://go.microsoft.com/fwlink/?linkid=846124) (suspensión de eDiscovery) 
 
@@ -432,15 +432,15 @@ Hay otras características que se han utilizado anteriormente para retener o eli
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online y OneDrive para la Empresa
 
-- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (suspensión de eDiscovery) 
+- [Administrar casos de eDiscovery en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (suspensión de eDiscovery) 
     
-- [Agregar contenido a un caso y poner orígenes en suspensión en el Centro de eDiscovery](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (suspensión de eDiscovery) 
+- [Agregar contenido a un caso y poner orígenes en suspensión en el Centro de eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (suspensión de eDiscovery) 
     
-- [Información general sobre las directivas de eliminación de documentos](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (solo eliminación) 
+- [Información general sobre las directivas de eliminación de documentos](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (solo eliminación) 
     
 - [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención) 
     
-- [Usar las directivas de cierre y eliminación de sitio](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminación) 
+- [Usar las directivas de cierre y eliminación de sitio](https://support.microsoft.com/es-ES/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminación) 
     
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación) 
     

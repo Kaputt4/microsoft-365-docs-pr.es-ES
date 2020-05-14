@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo prepararse para mantener Windows y Office en su entorno.
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011620"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222678"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Paso 7: Mantenimiento de Windows y Office
 
@@ -95,7 +95,7 @@ Windows 10 ofrece tres canales de mantenimiento:
 
 Microsoft 365 ofrece cuatro canales de mantenimiento:
 
-- [**El Programa Office Insider**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) para que las organizaciones prueben las características más recientes y funcionalidades de Office en desarrollo y envíen comentarios sobre ellos
+- [**El Programa Office Insider**](https://products.office.com/office-insider) para que las organizaciones prueben las características más recientes y funcionalidades de Office en desarrollo y envíen comentarios sobre ellos
 - **El Canal mensual** proporciona a los usuarios las características más recientes de Office tan pronto como estén disponibles
 - **El Canal semianual** proporciona nuevas funcionalidades con nuevas características dos veces al año
 - **El Canal semianual (dirigido)** es una versión admitida por completo de Office que permite a los usuarios piloto y los evaluadores de compatibilidad de la aplicación probar y validar el siguiente Canal semianual

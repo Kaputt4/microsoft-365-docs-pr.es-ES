@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo preparar a los usuarios finales para Windows 10 y Aplicaciones de Microsoft 365 para empresas con el uso de comunicación y aprendizaje.
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636752"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222666"
 ---
 # <a name="step-8-user-communications-and-training"></a>Paso 8: Comunicación con los usuarios y aprendizaje
 
@@ -61,7 +61,7 @@ También hay controles de seguridad y cumplimiento visibles a los que sus usuari
 
 Por ejemplo, si ha activado la autenticación multifactor, esta usa Azure AD y protege al usuario que inicia sesión al exigir una aplicación telefónica o un pin para acceder a los servicios de acceso con seguridad. Y Azure Information Protection facilita a los usuarios clasificar y etiquetar documentos.
 
-[Configuración de autenticación multifactor para usuarios](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configuración de autenticación multifactor para usuarios](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 Estas son solo algunas de las nuevas funciones que se presentarán a los usuarios y es posible que más de una les pille por sorpresa de forma más o menos positiva. Y estas sorpresas, sobre todo si alteran el ritmo normal de trabajo, pueden suponer más llamadas y tiques a su departamento de soporte técnico.
 
