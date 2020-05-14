@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,52 +23,52 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Obtenga información sobre cómo renovar la suscripción a Microsoft 365 para empresas con una clave de producto y activar o desactivar la facturación recurrente. '
-ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
-ms.translationtype: MT
+description: 'Obtenga información sobre cómo renovar la suscripción de Microsoft 365 para empresas con una clave de producto y activar o desactivar la facturación periódica. '
+ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141083"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208433"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Este artículo se aplica a las suscripciones de Microsoft 365 para empresas más pagadas.
+Este artículo se aplica a la mayoría de las suscripciones a Microsoft 365 para empresas de pago.
   
-Para renovar mediante una clave de producto que compró en una tienda minorista o un socio de Microsoft, vea [Buscar y escribir la clave de producto](../enter-your-product-key.md).
+Si ya ha comprado una clave de producto para la renovación en una tienda minorista o a través de un partner de Microsoft, vea [Buscar y escribir la clave de producto](../enter-your-product-key.md).
 
 > [!NOTE]
-> El pago por cuenta bancaria no está disponible en algunos países o regiones.
+> Pagar con la cuenta bancaria no está disponible en algunos países o regiones.
   
 ## <a name="turn-recurring-billing-off-or-on"></a>Activar o desactivar la facturación periódica
 
-Si paga con tarjeta de crédito o cuenta bancaria, la **facturación Recurrent** se activa de forma predeterminada. Cuando la **facturación recurrente** está activada, la suscripción seguirá cobrando cada año el día en que se haya suscrito. Puede desactivarla o volver a activarla en el centro de administración si su suscripción está activa.
+Si paga mediante tarjeta de crédito, la **facturación periódica** se activa de forma predeterminada. Cuando la **facturación periódica** está activada, la suscripción seguirá siendo facturada cada año el día en que se suscribió. Puede desactivar o volver a activar esta opción en el centro de administración mientras su suscripción esté activa.
   
-Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción. Puede activar la **facturación recurrente** y proporcionar la información de la tarjeta de crédito o de la cuenta bancaria para que la suscripción se siga facturando cada año el día en que se haya suscrito. También tiene la opción de pagar cada mes o pagar por todo el año por adelantado. No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.
+Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción. Puede activar la **facturación periódica** y proporcionar la información de su tarjeta de crédito o cuenta bancaria para que la suscripción se facture cada año el día en el que se suscribió. También tiene la opción de pagar cada mes o pagar por todo el año por adelantado. No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
 
-3. En **facturación**, seleccione **Editar**, junto a **renueva** o **expiración**.
+3. En **Facturación**, al lado de **Se renueva en** o **Caduca en**, seleccione **Editar**.
 
-4. En el panel **configuración de facturación recurrente** , seleccione **desactivar** para desactivarla. Si la facturación recurrente ya está desactivada, seleccione **mensual** o **una vez** para activarla.
+4. En el panel de **configuración de Facturación periódica**, seleccione **Desactivar** para desactivarla. Si la opción de facturación periódica está desactivada, seleccione **Mensual** o **Una vez** para activarla.
 
-5. Seleccione **Enviar cambio**.
+5. Seleccione **Enviar cambios**.
 
     > [!NOTE]
-    > - Solo puede cambiar la configuración de **facturación recurrente** para las suscripciones activas. Si su suscripción ya ha expirado o está deshabilitada, tendrá que [volver a activarla](reactivate-your-subscription.md) para poder activar o desactivar la **facturación periódica** .
-    > - Cuando la **facturación recurrente** está desactivada, la suscripción no se cancela inmediatamente. Permanece activa hasta que expira. Puede ver la fecha de expiración en la sección **facturación** de los detalles de la suscripción en la página **sus productos** .
-    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [cancelar la suscripción](cancel-your-subscription.md).
+    > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
+    > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Permanece activa hasta que expira. Puede ver la fecha de expiración en la sección **Facturación** de los detalles de la suscripción en la página **Sus productos**.
+    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -78,16 +78,16 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
 
-3. Para activar la **facturación recurrente**, cambie el botón de alternancia a **activado**.
+3. Para activar la **facturación periódica**, cambie el botón de alternancia a **Activado**.
 
-    ![Primer plano de una tarjeta de suscripción que tiene la facturación recurrente activada.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primer plano de una tarjeta de suscripción con la facturación periódica activada.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Puede desactivar la **facturación recurrente** cambiando el botón de alternancia a **desactivado**.
+    Para desactivar la **facturación periódica**, puede cambiar el botón de alternancia a **Desactivado**.
 
     > [!NOTE]
-    > - Solo puede cambiar la configuración de **facturación recurrente** para las suscripciones activas. Si su suscripción ya ha expirado o está deshabilitada, tendrá que [volver a activarla](reactivate-your-subscription.md) para poder activar o desactivar la **facturación periódica** .
-    > - Cuando la **facturación recurrente** está desactivada, la suscripción no se cancela inmediatamente. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción
-    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [cancelar la suscripción](cancel-your-subscription.md).
+    > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
+    > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción
+    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
 
-3. Para activar la **facturación recurrente**, cambie el botón de alternancia a **activado**.
+3. Para activar la **facturación periódica**, cambie el botón de alternancia a **Activado**.
 
-    ![Primer plano de una tarjeta de suscripción que tiene la facturación recurrente activada.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primer plano de una tarjeta de suscripción con la facturación periódica activada.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Puede desactivar la **facturación recurrente** cambiando el botón de alternancia a **desactivado**.
+    Para desactivar la **facturación periódica**, puede cambiar el botón de alternancia a **Desactivado**.
 
     > [!NOTE]
-    > - Solo puede cambiar la configuración de **facturación recurrente** para las suscripciones activas. Si su suscripción ya ha expirado o está deshabilitada, tendrá que [volver a activarla](reactivate-your-subscription.md) para poder activar o desactivar la **facturación periódica** .
-    > - Cuando la **facturación recurrente** está desactivada, la suscripción no se cancela inmediatamente. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción.
-    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [cancelar la suscripción](cancel-your-subscription.md).
+    > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
+    > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Permanece activa hasta que expira. Puede ver la fecha de expiración en la tarjeta de suscripción.
+    > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -116,6 +116,6 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
   
 [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
 
-[Escribir la clave de producto](../enter-your-product-key.md)
+[Especificar la clave de producto](../enter-your-product-key.md)
   
-[Compre su versión de prueba de Microsoft 365 para empresas](../buy-a-subscription-from-your-free-trial.md)
+[Comprar la versión de prueba de Microsoft 365 para empresas](../buy-a-subscription-from-your-free-trial.md)
