@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: Configurar IRM en el Centro de administración de SharePoint Online
       href: set-up-irm-in-sp-admin-center.md
-    - name: Obtener información sobre la clasificación de datos (versión preliminar)
+    - name: Entender la clasificación de datos
       href: data-classification-overview.md
       items:
-        - name: Introducción al explorador de contenido (versión preliminar)
+        - name: Introducción al explorador de contenido
           href: data-classification-content-explorer.md
-        - name: Introducción al explorador de actividad (versión preliminar)
+        - name: Introducción al explorador de actividad
           href: data-classification-activity-explorer.md
-        - name: Notas de la versión preliminar pública de la clasificación de datos (versión preliminar)
+        - name: Notas de la versión de clasificación de datos
           href: data-classification-pub-preview-relnotes.md
         - name: Introducción a los clasificadores que se pueden entrenar (versión preliminar)
           href: classifier-getting-started-with.md
