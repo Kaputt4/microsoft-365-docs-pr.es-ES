@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Obtenga información sobre cómo permitir que los usuarios compartan sus calendarios con usuarios externos para reuniones y citas. '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628045"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249877"
 ---
 # <a name="share-calendars-with-external-users"></a>Compartir calendarios con usuarios externos
 
@@ -39,10 +39,9 @@ El uso compartido del calendario es una configuración global, lo que significa 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Habilitar el uso compartido de calendarios mediante el centro de administración de 365 de Microsoft
 
-1. En el centro de administración, vaya a la página de los <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Complementos &</a> de los servicios de **configuración** \> . 
+1. En el centro de administración, vaya **a configuración de configuración** \> **Settings**. 
     
-  
-2. En la **página &amp; complementos de servicios** , seleccione **calendario**.
+2. En la pestaña **servicios** , seleccione **calendario**.
   
 3. En la página **calendario** que se abre, elija si desea permitir que los usuarios compartan sus calendarios con personas de fuera de la organización que tienen Microsoft 365 o Exchange.
     
@@ -55,4 +54,3 @@ El uso compartido del calendario es una configuración global, lo que significa 
 
 Una vez que está habilitado el uso compartido para el inquilino, los propietarios del calendario pueden invitar a usuarios específicos. Consulte [Compartir su calendario en Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx) para obtener instrucciones. 
   
-

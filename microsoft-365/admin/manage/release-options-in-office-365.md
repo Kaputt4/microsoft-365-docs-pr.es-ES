@@ -21,23 +21,23 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento de actualizaciones de productos y características nuevas en el centro de administración de Microsoft 365.
-ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139654"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249889"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones estándar o de lanzamiento de destino
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Con Microsoft 365, recibirá nuevas actualizaciones de productos y características a medida que estén disponibles en lugar de realizar actualizaciones costosas cada pocos años. Puede administrar cómo su organización recibe estas actualizaciones. Por ejemplo, puede registrarse para obtener una versión anticipado y que su organización reciba actualizaciones en primer lugar. Puede elegir que solo determinados individuos reciban las actualizaciones. También puede elegir permanecer en el calendario de publicaciones predeterminado y recibir las actualizaciones más tarde. En este artículo se explican las diferentes opciones de versiones y cómo puede usarlas para su organización.
+Con Microsoft 365, recibirá nuevas actualizaciones de productos y características a medida que estén disponibles en lugar de realizar actualizaciones costosas cada pocos años. Puede administrar cómo su organización recibe estas actualizaciones. Por ejemplo, puede registrarse para obtener una versión anticipado y que su organización reciba actualizaciones en primer lugar. Puede elegir que solo determinados individuos reciban las actualizaciones. También puede elegir permanecer en el calendario de publicaciones predeterminado y recibir las actualizaciones más tarde. En este artículo se explican las diferentes opciones de versión y cómo se pueden usar para la organización.
   
 > [!IMPORTANT]
 > Las actualizaciones de Microsoft 365 descritas en este artículo se aplican a Microsoft 365, SharePoint Online y Exchange Online. No se aplican a Skype Empresarial ni a los servicios relacionados. Estas opciones de versión están dirigidas a los mejores esfuerzos para publicar cambios en Microsoft 365, pero no se pueden garantizar en todo momento ni para todas las actualizaciones. 
@@ -48,7 +48,7 @@ Las nuevas versiones se prueban y validan por primera vez por el equipo de carac
   
 ![Liberar timbres de validación para Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Para las actualizaciones importantes, los clientes de Office se notifican inicialmente mediante el [plan de desarrollo de Microsoft 365](https://products.office.com/business/office-365-roadmap). A medida que se acerca la actualización, se comunica a través del centro de [mensajes de Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+Para las actualizaciones importantes, el [plan de desarrollo de 365 Microsoft](https://products.office.com/business/office-365-roadmap)notificará inicialmente a los clientes. A medida que se acerca la actualización, se comunica a través del centro de [mensajes de Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
 > Necesita una cuenta de Microsoft 365 o de Azure AD para obtener acceso al centro de mensajes a través del [centro de administración](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Los usuarios del plan de inicio de Microsoft 365 no tienen un centro de administración.
@@ -99,7 +99,7 @@ Puede cambiar el modo en que su organización recibe las actualizaciones de Micr
 > [!IMPORTANT]
 > Los cambios siguientes pueden tardar hasta 24 horas en surtir efecto en Microsoft 365. Si opta por una opción distinta a la versión dirigida después de activarlo, puede que los usuarios pierdan el acceso a características que todavía no han alcanzado la versión programada. 
   
-1. En el centro de administración, vaya a **Settings** > configuración y **, en**la pestaña **perfil** de la organización, elija **Opciones de lanzamiento**.
+1. En el centro de administración, vaya a **configuración**  >  **Setting**y, en la pestaña **perfil** de la organización, elija **Opciones de lanzamiento**.
 
 5. Para deshabilitar la versión dirigida, seleccione **versión estándar**y, a continuación, seleccione **Guardar cambios**. 
     
@@ -112,11 +112,7 @@ Puede cambiar el modo en que su organización recibe las actualizaciones de Micr
 9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
 
 
-
-## <a name="get-the-targeted-release-version-of-office"></a>Obtener la versión de lanzamiento de Office dirigida
-
-Para instalar una compilación de la versión dirigida de Office, [siga estos pasos](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). De esta manera obtendrá acceso previo a las nuevas características de Office 2016 para escritorios de Windows.
   
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 Descubra cómo [administrar mensajes](https://docs.microsoft.com/office365/admin/manage/message-center) en el [centro de mensajes de Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones sobre próximas actualizaciones y versiones de Microsoft 365.
