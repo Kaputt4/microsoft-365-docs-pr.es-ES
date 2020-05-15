@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la administración de registros de Microsoft 365, puede aplicar las programaciones de retención específicas de su organización en un plan de archivos para administrar la retención, la declaración de registros y la eliminación para dar soporte al ciclo de vida completo del contenido.
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949253"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231873"
 ---
 # <a name="records-management-in-microsoft-365"></a>Administración de registros en Microsoft 365
 
@@ -34,7 +34,7 @@ La solución de administración de registros es compatible con los siguientes el
 
 - **Migrar y administrar su plan de retención con el plan de archivos** y usar el [administrador del plan de archivos](file-plan-manager.md) para incorporar su plan de retención existente, o crear uno nuevo con los descriptores de archivo y las jerarquías de expansión.
 
-- **Establecer directivas de retención y eliminación**. Definir períodos de [retención](retention-policies.md#retaining-content-for-a-specific-period-of-time) y [eliminación](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en función de una serie de factores que incluyen la fecha de la última modificación o creación.
+- **Establecer directivas de retención y eliminación en la etiqueta de registro**. Definir períodos de [retención](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) y [eliminación](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) en función de una serie de factores, como la fecha de la última modificación o creación.
 
 - **Activar retención basada en eventos** con [retención basada en eventos](event-driven-retention.md).
 
