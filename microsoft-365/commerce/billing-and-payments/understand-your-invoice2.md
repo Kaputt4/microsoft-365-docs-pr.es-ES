@@ -1,5 +1,5 @@
 ---
-title: Comprenda su factura para Microsoft 365 para empresas
+title: Comprenda su factura de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Obtenga información sobre cómo interpretar los cargos, la facturación y el pago de la factura de Microsoft 365 para empresas y cómo cambiar el número de pedido de compra.
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Obtenga información acerca de cómo interpretar los cargos, la facturación y el pago en su factura de Microsoft 365 for Business y cómo cambiar el número de pedido de compra.
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045817"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232798"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Comprenda su factura para Microsoft 365 para empresas
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprenda su factura de Microsoft 365 para empresas
 
 Cada mes recibirá un correo electrónico que le indicará que el nuevo extracto de facturación está disponible en el centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
   
@@ -104,7 +104,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Si está en la vista de **tabla** , seleccione **tarjetas** para cambiar de vista.
 

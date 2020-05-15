@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
-ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 065cb3c278a4c859c46d7d1c13c1f1160822337b
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632265"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232115"
 ---
 # <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
 > [!IMPORTANT]
-> Al avanzar, se recomienda usar una directiva de retención o etiquetas de retención creadas en el centro de cumplimiento de Microsoft 365, el centro de seguridad de &amp; Microsoft 365 o el centro de seguridad y cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> En el futuro, le recomendamos que use una directiva de retención del centro de cumplimiento de Microsoft 365 en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención o etiquetas de retención. Para obtener más información, consulte [usar una directiva de retención en lugar de características más antiguas](retention-policies.md#use-a-retention-policy-instead-of-older-features).
   
 Las organizaciones suelen necesitar conservar algunos documentos durante cierto período de tiempo para satisfacer el cumplimiento de ciertas normas legales u otras regulaciones. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal.
   
@@ -108,9 +108,9 @@ Además, las directivas y reglas se adaptan a una colección de sitios determina
   
 ## <a name="create-a-document-deletion-policy"></a>Crear una directiva de eliminación de documentos
 
-1. En el centro de &amp; cumplimiento de Office 365Security, vaya a **retención**de **Administración** \> de datos. En **eliminar**, haga clic en **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
+1. En el centro de cumplimiento de Office 365Security &amp; , vaya a retención de **Administración de datos** \> **Retention**. En **eliminar**, haga clic en **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
     
-    La primera vez que se desplace desde &amp; el centro de seguridad y cumplimiento hasta el centro de directivas de eliminación de documentos, el centro de directivas se creará automáticamente. Como alternativa, puede crear manualmente el centro de directivas [creando la colección de sitios](https://go.microsoft.com/fwlink/p/?LinkID=404342) y eligiendo **centro de directivas de cumplimiento** en la pestaña **empresa** . 
+    La primera vez que se desplace desde el centro de seguridad &amp; y cumplimiento hasta el centro de directivas de eliminación de documentos, el centro de directivas se creará automáticamente. Como alternativa, puede crear manualmente el centro de directivas [creando la colección de sitios](https://go.microsoft.com/fwlink/p/?LinkID=404342) y eligiendo **centro de directivas de cumplimiento** en la pestaña **empresa** . 
     
 2. Elija **directivas de eliminación**.
     
@@ -151,7 +151,7 @@ Al asignar una directiva a una plantilla de colección de sitios, hace que la di
   
 Es importante comprender que el período de tiempo especificado para una directiva de eliminación de documentos significa el tiempo desde que se creó o modificó el documento, no el tiempo desde que se asignó la Directiva. Cuando asigna la Directiva por primera vez, se evalúan todos los documentos del sitio y, si cumplen los criterios, se eliminarán. Esto se aplica a todos los documentos existentes, no solo a los nuevos documentos creados desde que se asignó la Directiva.
   
-1. En el centro &amp; de seguridad y cumplimiento, vaya a **retención**de **Administración** \> de datos. En **eliminar**, haga clic en **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
+1. En el centro de seguridad &amp; y cumplimiento, vaya a retención de **Administración de datos** \> **Retention**. En **eliminar**, haga clic en **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
     
 2. Elija **Asignaciones de directivas para plantillas**.
     
@@ -173,7 +173,7 @@ Es importante comprender que el período de tiempo especificado para una directi
 5. Haga clic en **Guardar**.
     
     > [!NOTE]
-    > Cada plantilla puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta plantilla ya tiene directivas asignadas, seleccione **Cancelar** \> **asignar a colección de sitios** en el panel de \> navegación izquierdo para ver y administrar el conjunto de directivas que ya están asignadas. 
+    > Cada plantilla puede tener solamente un conjunto de directivas asignadas. Si ve un error que indica que esta plantilla ya tiene directivas asignadas, seleccione **Cancelar** \> **asignar a colección de sitios** en el panel de navegación izquierdo \> para ver y administrar el conjunto de directivas que ya están asignadas. 
   
 6. Elija **Administrar directivas asignadas**, seleccione las directivas que quiere asignar y, a continuación, elija si una directiva es la directiva predeterminada. Cuando se establece una directiva predeterminada, todos los sitios asignados automáticamente a la directiva tienen la directiva activa sin necesidad de que el propietario del sitio realice ninguna acción.
     
@@ -193,7 +193,7 @@ Al asignar una directiva a una colección de sitios determinada, hace que la dir
   
 Es importante comprender que el período de tiempo especificado para una directiva de eliminación de documentos significa el tiempo desde que se creó o modificó el documento, no el tiempo desde que se asignó la Directiva. Cuando asigna la Directiva por primera vez, se evalúan todos los documentos del sitio y, si cumplen los criterios, se eliminarán. Esto se aplica a todos los documentos existentes, no solo a los nuevos documentos creados desde que se asignó la Directiva.
   
-1. En el centro &amp; de seguridad y cumplimiento, vaya a **retención**de **Administración** \> de datos. En **eliminar**, elija **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
+1. En el centro de seguridad &amp; y cumplimiento, vaya a retención de **Administración de datos** \> **Retention**. En **eliminar**, elija **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
     
 2. Elija **Asignaciones de directivas para colecciones de sitios**.
     
@@ -224,7 +224,7 @@ Es importante comprender que el período de tiempo especificado para una directi
 
 Cuando se elimina una asignación, las directivas asignadas ya no se aplicarán a ninguno de los sitios de la colección de sitios o la plantilla de colección de sitios.
   
-1. En el centro &amp; de seguridad y cumplimiento, vaya a **retención**de **Administración** \> de datos. En **eliminar**, elija **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
+1. En el centro de seguridad &amp; y cumplimiento, vaya a retención de **Administración de datos** \> **Retention**. En **eliminar**, elija **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
     
 2. Elija **Asignaciones de directivas para plantillas** o **Asignaciones de directivas para colecciones de sitios**.
     
@@ -236,7 +236,7 @@ Cuando se elimina una asignación, las directivas asignadas ya no se aplicarán 
 
 No se puede eliminar una directiva que está en uso. Antes de poder eliminar una directiva, primero debe eliminar todas las asignaciones a las colecciones de sitios y las plantillas de colección de sitios que incluyan dicha Directiva; consulte la sección anterior.
   
-1. En el centro &amp; \> de seguridad y cumplimiento, elija **retención** de **Administración** \> de \> datos en el panel de navegación izquierdo, en **eliminar** \> **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
+1. En el centro de seguridad y &amp; cumplimiento, \> elija **Data management** \> **retención** de administración de datos en el panel de navegación izquierdo \> , en **eliminar** \> **Administrar directivas de eliminación de documentos para SharePoint Online y OneDrive para la empresa**. Se abrirá el Centro de directivas de eliminación de documentos en una nueva pestaña del explorador.
     
 2. Elija * * directivas de eliminación * *.
     
@@ -244,7 +244,7 @@ No se puede eliminar una directiva que está en uso. Antes de poder eliminar una
   
 3. Seleccione la directiva.
     
-4. En la pestaña \> **Items** \> elementos de la cinta de opciones, **Quite Directiva**.
+4. En la pestaña elementos de la cinta de \> **Opciones** , \> **Quite Directiva**.
     
     ![Botón Quitar directiva en cinta](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Encuentre respuestas a sus principales preguntas sobre facturación para la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634997"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232810"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Principales preguntas sobre facturación para Microsoft 365 para empresas
 
@@ -40,13 +40,13 @@ Si no encuentra una respuesta a su pregunta o tiene un problema con la factura, 
   
 ::: moniker range="o365-worldwide"
 
-Si necesita ayuda para interpretar los cargos que ve en su factura o comprender los términos usados, consulte [comprender la factura](understand-your-invoice2.md).
+Si necesita ayuda para interpretar los cargos que ve en su factura o comprender los términos usados, consulte [comprender la](understand-your-invoice2.md)factura.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Si necesita ayuda para interpretar los cargos que ve en su factura o comprender los términos usados, consulte [comprender la factura](understand-your-invoice2.md).
+Si necesita ayuda para interpretar los cargos que ve en su factura o comprender los términos usados, consulte [comprender la](understand-your-invoice2.md)factura.
 
 ::: moniker-end
 

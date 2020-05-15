@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
-ms.openlocfilehash: fba7af2c58b373e51aed93ce9a353a45528bb9f9
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 63bf9e83bb6ef793359e35943cbfc6244ef5078c
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943003"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232095"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Información general sobre las directivas de eliminación de documentos
 
 > [!IMPORTANT]
-> En el futuro, le recomendamos que use una directiva de retención o etiquetas creadas en el centro de cumplimiento de Microsoft 365, el centro de &amp; seguridad de Microsoft 365 o el centro de seguridad y cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features).
-  
+> En el futuro, le recomendamos que use una directiva de retención del centro de cumplimiento de Microsoft 365 en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención o etiquetas de retención. Para obtener más información, consulte [usar una directiva de retención en lugar de características más antiguas](retention-policies.md#use-a-retention-policy-instead-of-older-features).
+
 Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
   
 Las directivas de eliminación de documentos son potentes pero flexibles, por ejemplo, puede:
@@ -145,7 +145,7 @@ Si necesita conservar documentos durante un período fijo de tiempo, puede usar 
   
 Tenga en cuenta que una directiva de eliminación no puede reemplazar a una retención. Si un sitio está en retención y una directiva de eliminación de documentos elimina un documento, el documento se conservará en la biblioteca de conservación de documentos de la misma forma que si el documento se hubiera eliminado de forma manual.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Aplicar o quitar una directiva de eliminación de documentos de un sitio](apply-or-remove-a-document-deletion-policy-for-a-site.md)
 

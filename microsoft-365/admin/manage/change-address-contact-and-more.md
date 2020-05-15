@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cae24ebb6ad317767c7798b808f166024cd9d73a
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208179"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232904"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
 
@@ -60,7 +60,7 @@ Para cambiar otra información de la página de Perfil de la compañía:
 |**Field**  |**Descripción**  |
 |---------|---------|
 |Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Navegación de Yammer: en Yammer, el panel de navegación izquierdo usa el nombre de la organización como nombre de la red principal de Yammer.  <br/> Cliente de sincronización de OneDrive: el nombre de la organización se muestra en el explorador de archivos de Windows y el Finder en Mac, las rutas de archivo, el centro de actividad de OneDrive, la información sobre herramientas del icono de nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: el conmutador de la organización en Microsoft Teams muestra el nombre de la organización <br/>  |
-|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección que se especifica aquí es lo que verá en su factura, en vendido a: la dirección que se vende en su factura es la misma que la dirección de la organización en su página de perfil (consulte [comprender la factura de Microsoft 365 para empresas](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
+|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección que se especifica aquí es lo que verá en su factura, en: la dirección vendida en su factura es la misma que la dirección de la organización en su página de perfil (consulte [comprender su factura o factura para Microsoft 365 para empresas](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>Nota: una vez seleccionado, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico](../contact-support-for-business-products.md).        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
 |Contacto técnico  <br/> |Esta es la dirección de correo electrónico de la persona técnica principal que administra su suscripción a Microsoft 365. Esta es la persona que recibirá las comunicaciones sobre el estado del servicio de Microsoft 365.  <br/> |

@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 80b64a32ea7bbd45aec726a1e8f41ad48ef77714
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636168"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231853"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de eDiscovery
 
 Las instrucciones de este artículo se pueden aplicar al usar la exhibición de documentos electrónicos principal o la exhibición avanzada de documentos electrónicos para administrar las investigaciones.
 
-Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido del usuario (como buzones de correo, sitios de SharePoint y cuentas de OneDrive) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Office 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
+Los límites de cumplimiento crean límites lógicos dentro de una organización que controlan las ubicaciones de contenido del usuario (como buzones de correo, sitios de SharePoint y cuentas de OneDrive) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Microsoft 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
   
 Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
   
-![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a casos de eDiscovery](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a casos de eDiscovery](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
 En este ejemplo, contoso LTD es una organización que consta de dos subsidiarias, Fourth Coffee y Coho Winery. La empresa requiere que los administradores de eDiscovery y los investigadores solo puedan realizar búsquedas en los buzones de Exchange, las cuentas de OneDrive y los sitios de SharePoint de su agencia. Además, los profesionales de la exhibición de documentos electrónicos y los investigadores solo pueden ver casos de eDiscovery en su agencia y solo pueden acceder a los casos de los que son miembros. Aquí se muestra cómo los límites de cumplimiento cumplen estos requisitos.
   
@@ -57,13 +57,13 @@ Este es el proceso para configurar los límites de cumplimiento:
   
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Paso 1: identificar un atributo de usuario para definir las agencias
 
-El primer paso es elegir un atributo de Azure Active Directory que se usará para definir las agencias. Este atributo se usa para crear el filtro de permisos de búsqueda que limita a un administrador de exhibición de documentos electrónicos para buscar solo las ubicaciones de contenido de los usuarios que tienen asignado un valor específico para este atributo. Por ejemplo, supongamos que contoso decide usar el atributo **Department** . El valor de este atributo para los usuarios de la subsidiaria del cuarto café `FourthCoffee` sería y el valor para los usuarios de la subsidiaria de `CohoWinery`Coho Winery sería. En el paso 4, use este `attribute:value` par (por ejemplo, *Department: fourthcoffee*) para limitar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar. 
+El primer paso es elegir un atributo de Azure Active Directory que se usará para definir las agencias. Este atributo se usa para crear el filtro de permisos de búsqueda que limita a un administrador de exhibición de documentos electrónicos para buscar solo las ubicaciones de contenido de los usuarios que tienen asignado un valor específico para este atributo. Por ejemplo, supongamos que contoso decide usar el atributo **Department** . El valor de este atributo para los usuarios de la subsidiaria del cuarto café sería `FourthCoffee` y el valor para los usuarios de la subsidiaria de Coho Winery sería `CohoWinery` . En el paso 4, use este `attribute:value` par (por ejemplo, *Department: fourthcoffee*) para limitar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar. 
   
 Esta es una lista de atributos de usuario de Azure Active Directory que puede usar para los límites de cumplimiento:
   
 - Company
     
-- CustomAttribute1: CustomAttribute15
+- CustomAttribute1-CustomAttribute15
     
 - Departamento
     
@@ -75,7 +75,7 @@ Aunque hay disponibles más atributos de usuario, especialmente para los buzones
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Paso 2: archivo a solicitud con soporte técnico de Microsoft para sincronizar el atributo de usuario con las cuentas de OneDrive
 
-El siguiente paso consiste en archivar una solicitud con soporte técnico de Microsoft para sincronizar el atributo de Azure Active Directory que eligió en el paso 1 para todas las cuentas de OneDrive de la organización. Una vez que se ha producido esta sincronización, el atributo (y el valor) que eligió en el paso 1 se asignará a una propiedad administrada oculta en SharePoint con nombre `ComplianceAttribute`. Use este atributo para crear el filtro de permisos de búsqueda para OneDrive en el paso 4.
+El siguiente paso consiste en archivar una solicitud con soporte técnico de Microsoft para sincronizar el atributo de Azure Active Directory que eligió en el paso 1 para todas las cuentas de OneDrive de la organización. Una vez que se ha producido esta sincronización, el atributo (y el valor) que eligió en el paso 1 se asignará a una propiedad administrada oculta en SharePoint con nombre `ComplianceAttribute` . Use este atributo para crear el filtro de permisos de búsqueda para OneDrive en el paso 4.
   
 Incluya la siguiente información cuando envíe la solicitud a soporte técnico de Microsoft:
   
@@ -123,16 +123,16 @@ Esta es una descripción de cada parámetro del comando:
     
 -  `Filters`: Especifica los criterios de búsqueda para el filtro. Para los límites de cumplimiento, defina los siguientes filtros. Cada uno se aplica a una ubicación de contenido. 
     
-    -  `Mailbox`: Especifica los buzones de correo que pueden buscar los grupos `Users` de roles definidos en el parámetro. Para los límites de cumplimiento, *ComplianceAttribute* es el mismo atributo que identificó en el paso 1 y *AttributeValue* especifica la Agencia. Este filtro permite que los miembros del grupo de roles busquen sólo los buzones de una agencia específica; por ejemplo, `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    -  `Mailbox`: Especifica los buzones de correo que pueden buscar los grupos de roles definidos en el `Users` parámetro. Para los límites de cumplimiento, *ComplianceAttribute* es el mismo atributo que identificó en el paso 1 y *AttributeValue* especifica la Agencia. Este filtro permite que los miembros del grupo de roles busquen sólo los buzones de una agencia específica; por ejemplo, `"Mailbox_Department -eq 'FourthCoffee'"` . 
     
-    -  `Site`: Especifica las cuentas de OneDrive que pueden buscar los grupos de `Users` roles definidos en el parámetro. Para el filtro de OneDrive, use la cadena `ComplianceAttribute`real. Esto se asigna al mismo atributo que identificó en el paso 1 y que se sincroniza con las cuentas de OneDrive como resultado de la solicitud de soporte que envió en el paso 2; *AttributeValue* especifica la Agencia. Este filtro permite a los miembros del grupo de roles buscar solo en las cuentas de OneDrive de una agencia específica; por ejemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Especifica las cuentas de OneDrive que pueden buscar los grupos de roles definidos en el `Users` parámetro. Para el filtro de OneDrive, use la cadena real `ComplianceAttribute` . Esto se asigna al mismo atributo que identificó en el paso 1 y que se sincroniza con las cuentas de OneDrive como resultado de la solicitud de soporte que envió en el paso 2; *AttributeValue* especifica la Agencia. Este filtro permite a los miembros del grupo de roles buscar solo en las cuentas de OneDrive de una agencia específica; por ejemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"` .
     
-    -  `Site_Path`: Especifica los sitios de SharePoint que pueden buscar los grupos de `Users` roles definidos en el parámetro. La *SharePointURL* especifica los sitios de la agencia que pueden buscar los miembros del grupo de roles. Por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Observe que `Site` los `Site_Path` filtros y están conectados por un operador **or** .
+    -  `Site_Path`: Especifica los sitios de SharePoint que pueden buscar los grupos de roles definidos en el `Users` parámetro. La *SharePointURL* especifica los sitios de la agencia que pueden buscar los miembros del grupo de roles. Por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Observe que `Site` los `Site_Path` filtros y están conectados por un operador **or** .
     
      > [!NOTE]
-     > La sintaxis del `Filters` parámetro incluye una *lista de filtros*. Una lista de filtros es un filtro que incluye un filtro de buzón y un filtro de sitio separados por una coma. En el ejemplo anterior, observe que una coma separa **Mailbox_ComplianceAttribute** y **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Cuando este filtro se procesa durante la ejecución de una búsqueda de contenido, se crean dos filtros de permisos de búsqueda a partir de la lista Filtros: un filtro de buzón y un filtro de sitio. Una alternativa al uso de una lista de filtros sería crear dos filtros de permisos de búsqueda independientes para cada agencia: un filtro de permisos de búsqueda para el atributo Mailbox y un filtro para los atributos site. En cualquier caso, los resultados serán los mismos. El uso de una lista de filtros o la creación de filtros de permisos de búsqueda independientes es una cuestión de preferencia.
+     > La sintaxis del `Filters` parámetro incluye una *lista de filtros*. Una lista de filtros es un filtro que incluye un filtro de buzón y un filtro de sitio separados por una coma. En el ejemplo anterior, observe que una coma separa **Mailbox_ComplianceAttribute** y **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` . Cuando este filtro se procesa durante la ejecución de una búsqueda de contenido, se crean dos filtros de permisos de búsqueda a partir de la lista Filtros: un filtro de buzón y un filtro de sitio. Una alternativa al uso de una lista de filtros sería crear dos filtros de permisos de búsqueda independientes para cada agencia: un filtro de permisos de búsqueda para el atributo Mailbox y un filtro para los atributos site. En cualquier caso, los resultados serán los mismos. El uso de una lista de filtros o la creación de filtros de permisos de búsqueda independientes es una cuestión de preferencia.
 
--  `Action`: Especifica el tipo de acción de búsqueda de cumplimiento a la que se aplica el filtro. Por ejemplo, `-Action Search` solo aplicaría el filtro cuando los miembros del grupo de roles definidos en `Users` el parámetro ejecuten una búsqueda de contenido. En este caso, el filtro no se aplicaría al exportar los resultados de la búsqueda. Para los límites de cumplimiento `-Action All` , use para que el filtro se aplique a todas las acciones de búsqueda. 
+-  `Action`: Especifica el tipo de acción de búsqueda de cumplimiento a la que se aplica el filtro. Por ejemplo, `-Action Search` solo aplicaría el filtro cuando los miembros del grupo de roles definidos en el `Users` parámetro ejecuten una búsqueda de contenido. En este caso, el filtro no se aplicaría al exportar los resultados de la búsqueda. Para los límites de cumplimiento, use para `-Action All` que el filtro se aplique a todas las acciones de búsqueda. 
     
     Para obtener una lista de las acciones de búsqueda de contenido, consulte la sección "New-ComplianceSecurityFilter" en [configurar el filtrado de permisos para la búsqueda de contenido](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
@@ -164,7 +164,7 @@ Para crear un caso y asignar miembros:
 
 2. En la lista de casos de eDiscovery, haga clic en el nombre del caso que ha creado.
 
-3. En la página desplegable **administrar este caso** , en **administrar grupos**de roles ![, haga](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) clic en agregar icono **Agregar**.
+3. En la página desplegable **administrar este caso** , en **administrar grupos de roles**, haga clic en ![ Agregar icono ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Agregar**.
 
     ![Agregar un grupo de roles como miembro de un caso de exhibición de documentos electrónicos](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
@@ -220,8 +220,10 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
 
    Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminada de la organización. Los resultados de la búsqueda se exportan al centro de recursos más cercano.
 
-> [!TIP]
-> Para simplificar el concepto, el parámetro **Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque las búsquedas de contenido de Exchange no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo valor de parámetro **Region** también puede indicar el centro de recursos al que se redirigen las exportaciones. Esto suele ser necesario para controlar el movimiento de datos entre los tableros geográficos.<br/><br/>Si está usando la exhibición avanzada de documentos electrónicos, la búsqueda de contenido en SharePoint y OneDrive no está vinculada por la ubicación geográfica de los centros de datos. Se busca en todos los centros de recursos. Para obtener más información acerca de la exhibición avanzada de documentos electrónicos, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](overview-ediscovery-20.md).
+   Para simplificar el concepto, el parámetro **Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque las búsquedas de contenido de Exchange no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo valor de parámetro **Region** también puede indicar el centro de recursos al que se redirigen las exportaciones. Esto suele ser necesario para controlar el movimiento de datos entre los tableros geográficos.
+
+> [!NOTE]
+> Si está usando la exhibición avanzada de documentos electrónicos, el parámetro **Region** no controla la región desde la que se exportan los datos. Además, la búsqueda de contenido en SharePoint y OneDrive no depende de la ubicación geográfica de los centros de datos. Se busca en todos los centros de recursos. Para obtener más información acerca de la exhibición avanzada de documentos electrónicos, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](overview-ediscovery-20.md).
 
 A continuación, se muestran ejemplos de cómo usar el parámetro **Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
@@ -237,7 +239,7 @@ Tenga en cuenta lo siguiente cuando busque y Exporte contenido en entornos multi
   
 - El parámetro **Region** no controla las búsquedas de los buzones de Exchange. Se buscará en todos los centros de datos cuando se busque en buzones. Para limitar el ámbito en el que se buscarán los buzones de Exchange, use el parámetro **Filters** al crear o cambiar un filtro de permisos de búsqueda. 
     
-- Si es necesario que un administrador de eDiscovery busque en varias regiones de SharePoint, debe crear una cuenta de usuario diferente para que el administrador de eDiscovery use en el filtro de permisos de búsqueda para especificar la región donde se encuentran los sitios de SharePoint o las cuentas de OneDrive. Para obtener más información acerca de cómo configurar esto, consulte la sección "búsqueda de contenido en un entorno multigeográfico de SharePoint" en la [búsqueda de contenido en Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- Si es necesario que un administrador de eDiscovery busque en varias regiones de SharePoint, debe crear una cuenta de usuario diferente para que el administrador de eDiscovery use en el filtro de permisos de búsqueda para especificar la región donde se encuentran los sitios de SharePoint o las cuentas de OneDrive. Para obtener más información acerca de cómo configurar esto, consulte la sección "búsqueda de contenido en un entorno multigeográfico de SharePoint" en [búsqueda de contenido](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Al buscar contenido en SharePoint y OneDrive, el parámetro **Region** dirige las búsquedas a la ubicación principal o satélite donde el administrador de eDiscovery realizará las investigaciones de eDiscovery. Si un administrador de exhibición de documentos electrónicos busca sitios de SharePoint y OneDrive fuera de la región especificada en el filtro de permisos de búsqueda, no se devuelven resultados de búsqueda. 
     
@@ -257,7 +259,7 @@ Para crear, ver y modificar los filtros de permisos de búsqueda, debe ser miemb
   
  **Si se asigna un administrador de exhibición de documentos electrónicos a más de un grupo de roles que abarque varias agencias, ¿cómo buscan contenido en una agencia u otra?**
   
-El administrador de eDiscovery puede agregar parámetros a la consulta de búsqueda que restrinjan la búsqueda a una agencia específica. Por ejemplo, si una organización ha especificado la propiedad **CustomAttribute10** para diferenciar las agencias, pueden anexar lo siguiente a su consulta de búsqueda para buscar buzones de correo y cuentas de `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`OneDrive en una agencia específica:.
+El administrador de eDiscovery puede agregar parámetros a la consulta de búsqueda que restrinjan la búsqueda a una agencia específica. Por ejemplo, si una organización ha especificado la propiedad **CustomAttribute10** para diferenciar las agencias, pueden anexar lo siguiente a su consulta de búsqueda para buscar buzones de correo y cuentas de OneDrive en una agencia específica: `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>` .
   
  **¿Qué sucede si se cambia el valor del atributo que se usa como atributo de cumplimiento en un filtro de permisos de búsqueda?**
   

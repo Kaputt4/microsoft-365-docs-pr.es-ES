@@ -24,19 +24,19 @@ description: Obtenga información sobre las opciones de pago disponibles para pa
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140876"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232880"
 ---
 # <a name="pay-for-your-subscription"></a>Pagar la suscripción
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Busque la suscripción con el saldo pendiente. En la sección **Facturación**, junto a la **suscripción tiene un pago vencido**, seleccione **Liquidar saldo**.
 
@@ -107,7 +107,7 @@ Si paga su suscripción mediante factura, recibirá un correo electrónico que i
 Si su suscripción está configurada para pagarse mediante factura, no podemos aceptar los pagos en línea directamente. En cambio, puede [cambiar su método de pago a tarjeta de crédito o cuenta bancaria](change-payment-method.md) y el importe pendiente se cargará automáticamente a su tarjeta o cuenta después de cada período de servicio. Para Azure, vea [Cómo cambiar la tarjeta de crédito que se ha usado para pagar una suscripción de Azure](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Si cambia a realizar pagos automáticos con tarjeta de crédito, asegúrese primero de pagar los saldos pendientes. Vea las instrucciones y las opciones de pago en el extracto de facturación. Para más información, vea [Información sobre la factura](understand-your-invoice2.md).
+> Si cambia a realizar pagos automáticos con tarjeta de crédito, asegúrese primero de pagar los saldos pendientes. Vea las instrucciones y las opciones de pago en el extracto de facturación. Para obtener más información, consulte [comprender su](understand-your-invoice2.md)factura.
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
@@ -312,4 +312,4 @@ Si sus motivos originales para elegir facturación, tarjeta de crédito o cuenta
 
 [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Entender la factura](understand-your-invoice2.md)
+[Conocimiento de la factura](understand-your-invoice2.md)

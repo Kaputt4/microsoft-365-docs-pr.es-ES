@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221424"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231903"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -38,14 +38,14 @@ Al igual que con las características del centro de cumplimiento de Microsoft 36
 
 [Usar la auditoría avanzada para investigar cuentas comprometidas](mailitemsaccessed-forensics-investigations.md) (nuevo)<br>Nuevas instrucciones sobre el uso de la nueva acción de auditoría del buzón de *MailItemsAccessed* para investigaciones forenses.
 
-Varias actualizaciones para [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md), entre las que se incluyen:
+[Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (actualizado)<br>Los cambios incluyen:
 - [Sección nueva](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) con detalles sobre el usuario "App@sharepoint" que aparece en registros de auditoría.
 - [Nuevas descripciones](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) de las actividades en cuarentena.
 - En la sección [actividad de administración de usuarios](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) , se aclara que el evento de cambio de contraseña de usuario que se desencadena cuando un usuario cambia su contraseña (a través del restablecimiento de contraseña de autoservicio) se desencadena cuando un administrador restablece la contraseña de un usuario.
 
 ### <a name="auto-expanding-archive"></a>Archivo de expansión automática
 
-[Información general sobre el archivado ilimitado](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(actualizado)<br>Se agregó una aclaración de que no se puede eliminar ninguna carpeta del archivo principal o de un archivo auxiliar una vez que el archivado de expansión automática está habilitado en un buzón.
+[Información general sobre el archivado ilimitado](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (actualizado)<br>Se agregó una aclaración de que no se puede eliminar ninguna carpeta del archivo principal o de un archivo auxiliar una vez que el archivado de expansión automática está habilitado en un buzón.
 
 ### <a name="compliance-scorecompliance-manager"></a>Puntuación de cumplimiento/administrador de cumplimiento
 

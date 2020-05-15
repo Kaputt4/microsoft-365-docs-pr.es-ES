@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035046"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232061"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -72,7 +72,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 
 - Ninguna directiva de libreta de direcciones: antes de definir y aplicar directivas de barrera de información, asegúrese de que no hay directivas de libreta de direcciones de Exchange en su ubicación. Las barreras de la información se basan en las directivas de la libreta de direcciones, pero los dos tipos de directivas no son compatibles. Si tiene estas directivas, asegúrese de [quitar las directivas de la libreta de direcciones](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en primer lugar. Una vez que se habilitan las directivas de barrera de información y tiene habilitada la libreta jerárquica de direcciones, todos los usuarios ***que no estén incluidos*** en un segmento de barrera de información verán la [Libreta jerárquica de direcciones](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) en Exchange Online.
 
-- Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo AzureRM.
+- Actualmente, las directivas de barrera de información se definen y administran en el centro de cumplimiento de & de seguridad de Office 365 con cmdlets de PowerShell. Aunque se proporcionan varios ejemplos en este artículo, deberá estar familiarizado con los cmdlets y los parámetros de PowerShell. También necesitará el módulo de Azure PowerShell.
     - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Instalar el módulo de Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
    1. Ejecute los siguientes cmdlets de PowerShell:
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ Por ejemplo, supongamos que desea bloquear las comunicaciones entre el segmento 
 
     |Sintaxis  |Ejemplo  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    En este ejemplo, se ha definido una directiva denominada *Manufacturing-HR* para un segmento denominado *Manufacturing*. Cuando se activa y se aplica, esta directiva permite que los usuarios en *producción* se comuniquen solo con las personas de un segmento denominado *HR*. (En este caso, la *fabricación* no puede comunicarse con los usuarios que no forman parte de *RH*.)         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    En este ejemplo, se ha definido una directiva denominada *Manufacturing-HR* para un segmento denominado *Manufacturing*. Cuando se activa y se aplica, esta directiva permite que los usuarios en *producción* se comuniquen solo con las personas de un segmento denominado *HR*. (En este caso, la *fabricación* no puede comunicarse con los usuarios que no forman parte de *RH*.)         |
 
     **Si es necesario, puede especificar varios segmentos con este cmdlet, como se muestra en el ejemplo siguiente.**
 
     |Sintaxis  |Ejemplo  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>En este ejemplo, se ha definido una directiva que permite al segmento de *investigación* comunicarse solo con *recursos humanos* y en *producción*.        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>En este ejemplo, se ha definido una directiva que permite al segmento de *investigación* comunicarse solo con *recursos humanos* y en *producción*.        |
 
     Repita este paso para cada directiva que desee definir para permitir que determinados segmentos se comuniquen con determinados segmentos específicos.
 
@@ -256,7 +256,7 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 
 |Para ver este  |Haga esto  |
 |---------|---------|
-|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
+|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
 |Mismos     |Use el cmdlet **Get-OrganizationSegment** .<p>Consta`Get-OrganizationSegment` <p>Se mostrará una lista de todos los segmentos definidos para la organización.         |
 |Directivas de barrera de información     |Use el cmdlet **Get-InformationBarrierPolicy** . <p> Consta`Get-InformationBarrierPolicy` <p>Se mostrará una lista de las directivas de barrera de información definidas y su estado.       |
 |La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta`Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
@@ -317,11 +317,11 @@ Con los segmentos definidos, contoso continúa definiendo directivas.
 
 Contoso define tres directivas, como se describe en la tabla siguiente:
 
-|Directiva  |Definición de directiva  |
+|Policy  |Definición de directiva  |
 |---------|---------|
 |Directiva 1: impedir que las ventas se comuniquen con investigación     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *ventas-investigación*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de ventas se comuniquen con los usuarios del segmento de investigación. Se trata de una directiva de un solo sentido; no impedirá que la investigación se comunique con ventas. Para ello, se necesita la Directiva 2.      |
 |Directiva 2: evitar que la investigación se comunique con las ventas     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> En este ejemplo, la Directiva de barrera de información se denomina *Research-sales*. Cuando esta directiva está activa y se aplica, ayuda a evitar que los usuarios que están en el segmento de investigación se comuniquen con los usuarios del segmento de ventas.       |
-|Directiva 3: permitir que la fabricación se comunique con RRHH y solo marketing     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>En este caso, la Directiva de barrera de información se denomina *manufactura-HRMarketing*. Cuando esta directiva está activa y se aplica, la fabricación solo se puede comunicar con recursos humanos y de marketing. Tenga en cuenta que no se limita la comunicación de RRHH y marketing con otros segmentos. |
+|Directiva 3: permitir que la fabricación se comunique con RRHH y solo marketing     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>En este caso, la Directiva de barrera de información se denomina *manufactura-HRMarketing*. Cuando esta directiva está activa y se aplica, la fabricación solo se puede comunicar con recursos humanos y de marketing. Tenga en cuenta que no se limita la comunicación de RRHH y marketing con otros segmentos. |
 
 Con segmentos y directivas definidos, contoso aplica las directivas mediante la ejecución del cmdlet **Start-InformationBarrierPoliciesApplication** . 
 

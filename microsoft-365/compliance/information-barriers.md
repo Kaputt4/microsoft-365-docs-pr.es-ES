@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: c4b4b31de90e8c72c346da5574b8854492de19ba
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048008"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232013"
 ---
 # <a name="information-barriers"></a>Barreras de información
 
@@ -65,7 +65,7 @@ Las barreras de información se están implementando ahora y se incluyen en las 
 - Microsoft 365 E5
 - Office 365 E5
 - Cumplimiento avanzado de Office 365
-- Protección y cumplimiento de la información de Microsoft 365 E5
+- Microsoft 365 Compliance E5
 
 Para obtener más información, consulte [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 
