@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Cree una tarjeta de asistencia personalizada en el centro de administración y agregue información de contacto de soporte técnico personalizada al panel de ayuda.
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627901"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262276"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>Agregar información de servicio de asistencia personalizada al panel de ayuda
 
@@ -40,7 +40,7 @@ Para crear una tarjeta de asistencia personalizada, debe ser un administrador gl
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>Crear la tarjeta de asistencia personalizada en el centro de administración
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. En el centro de administración, vaya a **configuración y elija la** > **Settings** pestaña información del **servicio de asistencia** .
+1. En el centro de administración, vaya a **configuración de**la  >  **organización** y elija la pestaña **información del servicio de asistencia** .
     
 2. En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.
   

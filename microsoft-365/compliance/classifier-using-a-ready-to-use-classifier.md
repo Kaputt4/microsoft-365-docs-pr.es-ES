@@ -1,5 +1,5 @@
 ---
-title: Uso de un clasificador integrado (versión preliminar)
+title: Probar clasificadores integrados con etiquetas de retención (versión preliminar)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores integrados que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores.
-ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fad35d72c4c40c7b79cba4cb286ccc0f5bb5ab8d
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193508"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262551"
 ---
-# <a name="using-a-built-in-classifier-preview"></a>Uso de un clasificador integrado (versión preliminar)
+# <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Probar clasificadores integrados con etiquetas de retención (versión preliminar)
 
-Microsoft ha entrenado y probado cinco clasificadores con conjuntos de datos de ejemplo muy grandes, lo que puede ayudar a identificar determinadas categorías de contenido. Consulte [Introducción a los clasificadores capacitados (versión preliminar)](classifier-getting-started-with.md). Estos clasificadores se muestran en el `Ready to use` grupo de forma predeterminada.
+Microsoft ha entrenado y probado cinco clasificadores que pueden ayudarle a identificar determinadas categorías de contenido. Estos clasificadores se muestran en el `Ready to use` grupo de forma predeterminada y se han entrenado con conjuntos de datos de ejemplo muy grandes.
+
+> [!IMPORTANT]
+> Antes de usar clasificadores integrados en el flujo de trabajo de clasificación y etiquetado, debe probarlo con una muestra del contenido de la organización que considere que la categoría para comprobar que sus predicciones de clasificación satisfacen sus expectativas.
+
+Para obtener más información sobre los clasificadores [interactivos, vea Getting Started with trainable Classifiers (Preview)](classifier-getting-started-with.md).
 
 Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
@@ -35,7 +40,7 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 |nombre del idioma|||||
 |---------|---------|---------|---------|---------|
-|Código|C        |CA #       |+     |Clojure  |
+|Código|C        |C#       |+     |Clojure  |
 |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
 |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
 |Perl     |PHP      |Python   |R        |Ruby     |
@@ -45,13 +50,10 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 - **Blasfemias**: detecta una categoría específica de elementos de texto de lenguaje ofensivo que contiene expresiones que avergonzan a la mayoría de las personas.
 - **Threat**: detecta una categoría específica de elementos de texto de lenguaje ofensivo relacionadas con amenazas para confirmar violencia o daño físico o daño a una persona o propiedad.
 
-> [!NOTE]
-> Antes de usar clasificadores integrados en el flujo de trabajo de clasificación y etiquetado, debe probarlo con una muestra del contenido de la organización que considere que la categoría para comprobar que sus predicciones de clasificación satisfacen sus expectativas.
-
 > [!IMPORTANT]
 > Tenga en cuenta que el idioma ofensivo, el acoso, los términos blasfemos y los clasificadores de amenazas solo funcionan con texto que admite búsquedas no es exhaustivo o completo. Además, los estándares de idioma y culturales cambian continuamente y, teniendo en cuenta estas realidades, Microsoft se reserva el derecho de actualizar estos clasificadores según su criterio. Aunque los clasificadores pueden ayudar a su organización a supervisar el uso ofensivo y otros idiomas, los clasificadores no abordan las consecuencias de ese lenguaje y no pretenden proporcionar a los únicos medios de supervisar o responder al uso de ese lenguaje en su organización. Su organización, y no Microsoft o sus subsidiarias, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, la aplicación, el bloqueo, la eliminación y la retención de cualquier contenido identificado por un clasificador previamente entrenado.
 
-## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Cómo preparar y usar un clasificador integrado
+## <a name="how-to-verify-that-a-built-in-classifier-will-meet-your-needs"></a>Cómo comprobar que un clasificador integrado se ajusta a sus necesidades
 
 1. Recopile los elementos de contenido de pruebas desechables que considera que pertenecen a la categoría del clasificador integrado (coincidencias positivas) y los que no se deben incluir (coincidencias negativas) en la categoría que está probando.
 
@@ -60,19 +62,19 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 2. Cree una carpeta dedicada de SharePoint Online; espere al menos una hora para que la carpeta se agregue al índice de búsqueda. Anote la dirección URL de la carpeta.
 
-3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o el rol de administrador de seguridad y abra la ficha**directivas** de administración de registros del **Centro** > de cumplimiento de Microsoft 365 **(versión preliminar)** > .
+3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o el rol de administrador de seguridad y abra la ficha directivas de administración de registros del **centro de cumplimiento de Microsoft 365**  >  **(versión preliminar)**  >  **Label policies** .
 
-4. Elija `Auto-apply a label`.
+4. Elija `Auto-apply a label` .
 
-5. Elija `Choose a label to auto-apply`.
+5. Elija `Choose a label to auto-apply` .
 
-6. Elija `Create new labels` y cree una etiqueta para usarla sólo con esta prueba. Cuando lo haga, deje `Retention` el valor en desactivado. No desea activar ninguna retención ni otras acciones. En este caso, utilizará la etiqueta de retención simplemente como una etiqueta de texto, sin aplicar ninguna acción. Por ejemplo, puede crear una etiqueta de retención denominada "SourceCode Classifier test" sin ninguna acción y, a continuación, aplicar automáticamente esa etiqueta de retención a contenido que tiene clasificador de código fuente como condición. Para obtener más información acerca de la creación de etiquetas de retención, consulte [Overview of Retention Labels](labels.md).
+6. Elija `Create new labels` y cree una etiqueta para usarla sólo con esta prueba. Cuando lo haga, deje `Retention` set en `off` . No desea activar ninguna retención ni otras acciones. En este caso, utilizará la etiqueta de retención simplemente como una etiqueta de texto, sin aplicar ninguna acción. Por ejemplo, puede crear una etiqueta de retención denominada "SourceCode Classifier test" sin ninguna acción y, a continuación, aplicar automáticamente esa etiqueta de retención a contenido que tiene clasificador de código fuente como condición. Para obtener más información acerca de la creación de etiquetas de retención, consulte [Overview of Retention Labels](labels.md).
   
-7. Elija `Auto-apply a label` y, `Choose a label to auto-apply`a continuación,. Para obtener más información sobre el uso de la aplicación basada en condiciones, aplique automáticamente una etiqueta vea, [aplique automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Elija `Auto-apply a label` y, a continuación, `Choose a label to auto-apply` . Para obtener más información sobre el uso de la aplicación basada en condiciones, aplique automáticamente una etiqueta vea, [aplique automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions).
 
-8. Elija su etiqueta de prueba de la lista y `Next`elija.
+8. Elija su etiqueta de prueba de la lista y elija `Next` .
 
-9. Elija `Apply label to content that matches a trainable classifier`.
+9. Elija `Apply label to content that matches a trainable classifier` .
 
 ![selección de clasificador como condición](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
 
@@ -80,9 +82,9 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 11. Asigne un nombre a la Directiva, por ejemplo, "prueba de clasificador del código fuente integrada".
 
-12. Elija `Let me choose specific locations`.
+12. Elija `Let me choose specific locations` .
 
-13. Desactive todas las ubicaciones `SharePoint sites` excepto y `Choose sites`elija.
+13. Desactive todas las ubicaciones excepto `SharePoint sites` y elija `Choose sites` .
 
 14. Escriba la dirección URL del sitio en el paso 2.
 

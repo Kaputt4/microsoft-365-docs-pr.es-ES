@@ -11,12 +11,12 @@ metadata:
   ms.author: sirkkuw
   ms.date: 01/27/2020
   localization_priority: Priority
-  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.openlocfilehash: fadbb38cbf4174366993ec3c27b58b914173b2be
+  ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955318"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "44267140"
 landingContent:
 - title: Administrr usuarios
   linkLists:
@@ -26,15 +26,17 @@ landingContent:
       url: add-users.md
     - text: Editar un usuario
       url: add-users.md
+    - text: Agregar invitados a un grupo de Microsoft 365
+      url: ../create-groups/manage-guest-access-in-groups.md
     - text: Agregar otra dirección de correo electrónico
       url: ../email/add-another-email-alias-for-a-user.md
     - text: Creación de un buzón compartido
       url: ../email/create-a-shared-mailbox.md
     - text: Asignar licencias a los usuarios
       url: ../manage/assign-licenses-to-users.md
-    - text: Quitar licencias de usuarios
+    - text: Quitar licencias a los usuarios
       url: ../manage/remove-licenses-from-users.md
-    - text: Usar el dominio personalizado
+    - text: Usar un dominio personalizado
       url: ../email/change-email-address.md
 - title: Administrar grupos
   linkLists:
@@ -54,7 +56,7 @@ landingContent:
     links:
     - text: Restablecer una contraseña de usuario
       url: reset-passwords.md
-    - text: Establecer contraseñas nunca para expirar
+    - text: Establecer contraseñas para que no expiren nunca
       url: set-password-to-never-expire.md
     - text: Permitir que los usuarios puedan restablecer sus propias contraseñas
       url: let-users-reset-passwords.md
@@ -68,7 +70,7 @@ landingContent:
     links:
     - text: Eliminar un usuario
       url: delete-a-user.md
-    - text: Obtener acceso y realizar una copia de seguridad de los datos de un usuario anterior
+    - text: Acceso y copia de seguridad de los datos de un antiguo usuario
       url: get-access-to-and-back-up-a-former-user-s-data.md
     - text: Reenviar correo electrónico a otro usuario
       url: ../email/configure-email-forwarding.md

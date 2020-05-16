@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036589"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267172"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -35,6 +35,10 @@ En este artículo se enumeran las nuevas características de la versión más re
 > [!TIP]
 > ¿Todavía no tiene Office 365 ATP? [Póngase en contacto con sales para iniciar una versión de prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="marchapril-2020"></a>Marzo/abril de 2020
+
+- La capacidad para [dirigir cuentas de usuario en peligro con investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) ahora está disponible para el público en general.
+
 ## <a name="januaryfebruary-2020"></a>Enero/febrero de 2020
 
 - [Disponibilidad general de vistas de campaña en Office 365 ATP](campaigns.md)
@@ -46,7 +50,7 @@ En este artículo se enumeran las nuevas características de la versión más re
     - Avanzados no filtros (son opciones de filtrado avanzadas que incluyen no contiene, no incluye, etc.)
     - Filtros de tiempo granulares (día, hora, media hora) 
 
-- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a**revisión**de **Administración** > de amenazas).
+- El widget **incidentes** ahora es el widget **centro de actividades** . (Para ver los widgets de seguridad, en el centro de seguridad & cumplimiento, vaya a **Administración**  >  de amenazas. **Revisión**).
 
 - [Documentos seguros en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(versión preliminar)**
 
@@ -84,7 +88,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware.
-ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155426"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267184"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 principales tareas para que los equipos de seguridad admitan el trabajo desde casa
 
@@ -37,11 +37,11 @@ Para los clientes que usen nuestros planes de empresa, Microsoft le recomienda c
   
 ||**Tarea**| Todos los planes de Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|1      |[Habilitar Azure multi-factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|segundo     | [Protección contra amenazas](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|1       |[Habilitar Azure multi-factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2      | [Protección contra amenazas](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Configuración de la protección contra amenazas avanzada de Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurar la protección contra amenazas avanzada de Azure (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5      |   [Activar la protección contra amenazas avanzada de Microsoft](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|5      |   [Habilitar la Protección contra amenazas de Microsoft](#5-turn-on-microsoft-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [Configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7      | [Configurar MFA y el acceso condicional para invitados, incluida la protección de aplicaciones de Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Inscribir equipos en administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
@@ -114,7 +114,7 @@ Tendrá que trabajar con el administrador de Exchange Online y el administrador 
 - Ver [vídeo: Introducción a ATP de Azure](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Revisar las [tres fases de la implementación de ATP de Azure](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-advanced-threat-protection"></a>5: activar la protección contra amenazas avanzada de Microsoft
+## <a name="5-turn-on-microsoft-threat-protection"></a>5: activar la protección contra amenazas de Microsoft
 
 Ahora que tiene Office 365 ATP y Azure ATP configurados, puede ver las señales combinadas de estas funcionalidades en un panel. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) reúne las alertas, los incidentes, la investigación automatizada y la respuesta, y la búsqueda avanzada de cargas de trabajo (ATP de Azure, Office 365 ATP, Microsoft defender ATP y Microsoft Cloud App Security) en un solo panel en [Security.Microsoft.com](https://security.microsoft.com). 
 <br>
@@ -236,7 +236,7 @@ Introducción a Cloud App Security ahora. Más adelante puede configurar la supe
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: supervise las amenazas y realice acciones
 
-Microsoft 365 incluye varias formas de supervisar el estado y tomar las medidas adecuadas. El punto de partida más adecuado es el centro de seguridad[https://security.microsoft.com](https://security.microsoft.com)de Microsoft 365 (), donde puede ver la [puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)de su organización, así como las alertas o entidades que requieren su atención.
+Microsoft 365 incluye varias formas de supervisar el estado y tomar las medidas adecuadas. El punto de partida más adecuado es el centro de seguridad de Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ), donde puede ver la [puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)de su organización, así como las alertas o entidades que requieren su atención.
 
 - [Introducción al centro de seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Supervisar y ver informes](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)

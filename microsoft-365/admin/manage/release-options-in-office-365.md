@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento de actualizaciones de productos y características nuevas en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249889"
+ms.locfileid: "44262322"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones estándar o de lanzamiento de destino
 
@@ -99,7 +99,7 @@ Puede cambiar el modo en que su organización recibe las actualizaciones de Micr
 > [!IMPORTANT]
 > Los cambios siguientes pueden tardar hasta 24 horas en surtir efecto en Microsoft 365. Si opta por una opción distinta a la versión dirigida después de activarlo, puede que los usuarios pierdan el acceso a características que todavía no han alcanzado la versión programada. 
   
-1. En el centro de administración, vaya a **configuración**  >  **Setting**y, en la pestaña **perfil** de la organización, elija **Opciones de lanzamiento**.
+1. En el centro de administración, vaya a la configuración de la organización de **configuración**  >  **Org Setting**y, en la pestaña Perfil de la **organización** , elija **Opciones de lanzamiento**.
 
 5. Para deshabilitar la versión dirigida, seleccione **versión estándar**y, a continuación, seleccione **Guardar cambios**. 
     
