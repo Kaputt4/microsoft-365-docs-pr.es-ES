@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: ¿Qué ocurre si mi suscripción expira?
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: Administrar aplicaciones de terceros
+    - name: Administrar suscripciones de aplicación de terceros
       href: manage-saas-apps.md
     - name: Administrar compras de autoservicio (usuarios)
       href: subscriptions/manage-self-service-purchases-users.md
@@ -40,15 +40,15 @@
       href: licenses/buy-licenses.md
     - name: Asignar licencias a los usuarios
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: Cancelar asignación a licencias de usuarios
+    - name: Cancelar la asignación de licencias a usuarios
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Entender las suscripciones y licencias
       href: licenses/subscriptions-and-licenses.md
 - name: Facturas y pagos
   items:
-    - name: Ver la factura
+    - name: Vea su factura o recibo
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Entender la factura
+    - name: Entender su factura o recibo
       href: billing-and-payments/understand-your-invoice.md
     - name: Administrar métodos de pago
       href: billing-and-payments/manage-payment-methods.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: Cambiar las direcciones de facturación
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: Directiva de servicios de pago 2 y autenticación de cliente robusta
+    - name: Acerca de la Directiva 2 de servicios de pago y de la autenticación robusta de clientes
       href: billing-and-payments/psd2.md
 - name: Cuentas de facturación
   items:
     - name: Administrar cuentas de facturación
       href: manage-billing-accounts.md
-    - name: Asociar un espacio empresarial a mi cuenta de facturación
+    - name: Asociar un espacio empresarial con su cuenta de facturación
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: Administrar relaciones con mis socios
+- name: Administrar relaciones con los partners
   href: manage-partners.md
 - name: Cerrar la cuenta
   href: close-your-account.md
