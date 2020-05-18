@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar la infraestructura de protección de la información para Microsoft 365 Enterprise.
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631626"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268308"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: Protección de la información
 
 ![Fase 6: Protección de la información](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-La protección de la información es un conjunto de directivas y tecnologías que definen la forma en que se transmite, almacena y procesa la información confidencial. En la fase 6, se describen características y opciones de configuración de protección de la información de Microsoft 365 Enterprise que le permiten proteger los datos de sus cargas de trabajo y escenarios basados en la nube.
+La protección de la información es un conjunto de directivas y tecnologías que definen la forma en que se transmite, almacena y procesa la información confidencial. En la fase 6, se describen características y opciones de configuración de protección de la información de Microsoft 365 Enterprise que le permiten proteger los datos de sus cargas de trabajo basadas en la nube.
 
 >[!Note]
 >Si ya implementó la protección de la información, vea los [criterios de salida](infoprotect-exit-criteria.md) de esta fase para asegurarse de que cumple con las condiciones obligatorias y opcionales de Microsoft 365 Enterprise.

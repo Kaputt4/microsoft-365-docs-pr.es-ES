@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Se detalla el proceso de planeación, implementación y aumento del valor de SharePoint en toda la organización.
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636921"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268214"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Implementar SharePoint y OneDrive para Microsoft 365 Enterprise
 
@@ -67,10 +67,6 @@ Los siguientes pilares empresariales pueden abordar las necesidades de la organi
 Vea [Administrador de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online) para obtener recursos sobre cómo configurar SharePoint según sus necesidades.
 
 Una forma de ver los beneficios de SharePoint es examinar cómo interactúan actualmente las personas, un equipo, una división o toda la organización y luego encontrar un escenario apropiado que ofrezca formas más fáciles de almacenar y compartir archivos. Tenga en cuenta que [Microsoft Teams](teams-workload.md) puede ser la mejor opción para algunos de los escenarios.
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>Sitio de SharePoint para datos altamente regulados
-
-Los datos extremadamente regulados son los que están sujetos a altas regulaciones locales, o que son los más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización. Puede configurar un sitio de SharePoint para el acceso restringido, la clasificación de datos, la prevención de pérdida de datos y el cifrado de este tipo de datos. Para saber más, vea [Sitios de Microsoft Teams y SharePoint para datos extremadamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md)
 
 #### <a name="result"></a>Resultado
 Una lista de escenarios de SharePoint y OneDrive para la Empresa que satisfacen las necesidades de almacenamiento y uso compartido de documentos, administración de contenidos, colaboración y seguridad de la organización.

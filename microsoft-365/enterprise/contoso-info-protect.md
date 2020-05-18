@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo Contoso usa las características de protección de la información de Microsoft 365 Enterprise para proteger sus activos digitales en la nube.
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625307"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268415"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -65,15 +65,11 @@ Contoso siguió los pasos siguientes para preparar Microsoft 365 Enterprise para
 
    Contoso creó etiquetas de confidencialidad para sus niveles de datos con una etiqueta altamente regulada que incluye cifrado, permisos y marcas de agua.
 
-4. Creó sitios de SharePoint protegidos para datos confidenciales y altamente regulados con permisos para bloquear el acceso
-
-   Los sitios confidenciales y extremadamente regulados se configuraron como sitios de grupo privado con restricciones de permisos adicionales. También se configuraron sitios confidenciales y altamente regulados en SharePoint con la etiqueta de retención correspondiente. Los archivos almacenados en los sitios de SharePoint altamente regulados están protegidos con la etiqueta de confidencialidad Altamente regulado. Para obtener más información, vea el escenario de[sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-5.  Se han movido los datos de los sitios de SharePoint locales y los recursos compartidos de archivos a los nuevos sitios de SharePoint.
+4.  Se han movido los datos de los sitios de SharePoint locales y los recursos compartidos de archivos a los nuevos sitios de SharePoint.
 
     Los archivos que se han migrado a los nuevos sitios de SharePoint heredaron las etiquetas de retención predeterminadas asignadas al sitio.
 
-6.  Se formó a los empleados sobre cómo usar las etiquetas de confidencialidad para los documentos nuevos, cómo interactuar con el departamento de TI de Contoso al crear nuevos sitios de SharePoint y almacenar siempre los activos digitales en sitios de SharePoint.
+5.  Se formó a los empleados sobre cómo usar las etiquetas de confidencialidad para los documentos nuevos, cómo interactuar con el departamento de TI de Contoso al crear nuevos sitios de SharePoint y almacenar siempre los activos digitales en sitios de SharePoint.
 
     Considerando el aspecto más difícil de la transición a la nube de la protección de la información, los departamentos de TI y administración de Contoso tuvieron que cambiar los hábitos incorrectos de almacenamiento de la información por parte de los empleados de la organización para que etiquetaran y almacenaran siempre sus recursos digitales en la nube, absteniéndose de usar archivos compartidos locales, y nunca usaran servicios de almacenamiento en la nube de terceros o memorias USB.
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081768"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262401"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 
@@ -216,6 +216,10 @@ Ahora siga estos pasos para configurar una directiva de DLP que impida a los usu
 Esta es la configuración resultante para los sitios de grupo extremadamente confidenciales de SharePoint Online.
   
 ![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta de retención Extremadamente confidencial.](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad estará disponible próximamente
+
+Actualmente, solo puede usar una etiqueta de retención como condición, pero no una [etiqueta de confidencialidad](sensitivity-labels.md). Actualmente, estamos trabajando en la compatibilidad para usar una etiqueta de confidencialidad en esta condición.
   
 ## <a name="next-step"></a>Paso siguiente
 

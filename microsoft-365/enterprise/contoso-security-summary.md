@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636491"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268403"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
 
@@ -134,9 +134,4 @@ De acuerdo con los procedimientos recomendados de seguridad y los requisitos de 
 - Panel de seguridad central para los usuarios con Seguridad de Windows
 
   Contoso ha implementado la [aplicación de Seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) en los equipos y dispositivos con Windows 10 Enterprise para que los usuarios puedan ver su nivel de seguridad de forma clara y tomen medidas.
-
-
-## <a name="next-step"></a>Siguiente paso
-
-[Más información](contoso-sharepoint-online-site-for-highly-confidential-assets.md) sobre cómo Contoso creó un sitio de SharePoint para datos altamente regulados para permitir la colaboración entre sus equipos de investigación.
 
