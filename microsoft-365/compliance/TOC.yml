@@ -271,15 +271,25 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Conservar datos
       items:
-        - name: Directivas de retención
+        - name: Información sobre las directivas de retención
           href: retention-policies.md
+        - name: Crear y configurar directivas de retención
+          href: create-retention-policies.md
+        - name: Retención para SharePoint y OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Retention para Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Retention para Exchange
+          href: retention-policies-exchange.md
         - name: Administrador del plan de archivos
           href: file-plan-manager.md
-        - name: Etiquetas de retención
+        - name: Obtenga información sobre las etiquetas de retención
           href: labels.md
+        - name: 'Crear, publicar y aplicar automáticamente etiquetas de retención'
+          href: create-retention-labels.md
         - name: Cumplir con la norma 17a-4 de la SEC
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Crear y publicar etiquetas de retención con PowerShell
+        - name: Usar PowerShell para crear y publicar etiquetas de retención
           href: bulk-create-publish-labels-using-powershell.md
         - name: Retención basada en eventos
           href: event-driven-retention.md
@@ -325,9 +335,11 @@
           items:
             - name: Administrador del plan de archivos
               href: file-plan-manager.md
-            - name: Etiquetas de retención
+            - name: Obtenga información sobre las etiquetas de retención
               href: labels.md
-            - name: Crear y publicar etiquetas de retención con PowerShell
+            - name: Crear y publicar etiquetas de retención
+              href: create-retention-labels.md
+            - name: Usar PowerShell para crear y publicar etiquetas de retención a escala
               href: bulk-create-publish-labels-using-powershell.md
             - name: Ver el uso de etiquetas con el análisis de etiquetas
               href: label-analytics.md

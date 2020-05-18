@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: Implementar para organizaciones que no son empresas
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Implementar cargas de trabajo y escenarios
+    - name: Implementar cargas de trabajo
       href: deploy-workloads.md
       items:
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migración
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Aumente la productividad de sus trabajadores remotos
-          href: empower-people-to-work-remotely.md
-        - name: Sitios de SharePoint para datos altamente regulados
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Guías del entorno de pruebas
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: Resumen de seguridad
           href: contoso-security-summary.md
-        - name: Equipo para un proyecto ultra secreto
-          href: contoso-team-for-top-secret-project.md
-        - name: Sitio de SharePoint para datos altamente regulados
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Cambios en Microsoft 365 para el contenido de implementación empresarial
-      href: microsoft-365-deploment-guide-changes.md
     - name: Estado de mantenimiento del servicio de Microsoft 365
       href: microsoft-365-service-health.md
 - name: Centro de implementación de escritorios
