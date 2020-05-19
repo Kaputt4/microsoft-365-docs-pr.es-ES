@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo empezar a usar la exhibición de documentos electrónicos principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede Agregar miembros, crear suspensiones de exhibición de documentos electrónicos y, a continuación, buscar y exportar los datos que sean relevantes para la investigación.
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943389"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280550"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Introducción a Core eDiscovery
 
@@ -42,11 +42,11 @@ La concesión de licencias para la exhibición de documentos electrónicos princ
 
    O
 
-  - Una licencia de Microsoft 365 E1 o Office 365 E1 con una licencia de complemento de Exchange Online plan 2 o de archivado de Exchange Online
+  - Licencia de Office 365 E1 con una licencia de complemento de archivado de Exchange Online plan 2 o Exchange Online
 
   Y
 
-  - Una licencia de Microsoft 365 E1 o Office 365 E1 con una licencia de complemento del plan 2 de SharePoint Online plan 2 o OneDrive para la empresa
+  - Licencia de Office 365 E1 con una licencia de complemento de plan 2 de SharePoint Online plan 2 o OneDrive para la empresa
   
   Para obtener información acerca de cómo asignar licencias, consulte [asignar licencias a los usuarios](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
