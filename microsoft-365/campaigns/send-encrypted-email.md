@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165690"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322152"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -52,7 +52,7 @@ Si desea cifrar un mensaje que no cumple una regla predefinida o el administrado
 
 ## <a name="admin-settings"></a>Configuración de administración
 
-Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Cifrar mensajes de correo automáticamente
 
@@ -64,9 +64,9 @@ Puede crear reglas de flujo de correo para cifrar los mensajes de correo electr�
 2. Elija el icono administración. 
 3. En el centro de administración, elija **centros de administración > Exchange**. 
 
-Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Marcar los mensajes de cifrado
 
-También puede aplicar la personalización de marca de la campaña para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, vea [Agregar la marca de la organización a los mensajes cifrados](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+También puede aplicar la personalización de marca de la campaña para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, vea [Agregar la marca de la organización a los mensajes cifrados](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 

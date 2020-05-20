@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6114642b5899e2708703e3c0d62cadde25296504
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632820"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322022"
 ---
 # <a name="compliance"></a>Cumplimiento
 
@@ -21,7 +21,7 @@ Cuando usa Microsoft Managed Desktop IT as-a-Service, Microsoft le proporciona u
 
 Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 
-- [Estándares de administración de seguridad de la información ISO 27001](../../compliance/offering-ISO-27001.md)
+- [Estándares de administración de seguridad de la información ISO 27001 (declaración 27001:2013)](../../compliance/offering-ISO-27001.md)
 - [Sistema de administración de información de privacidad ISO 27701 (PIMS)](../../compliance/offering-iso-27701.md)
 - [ISO 27017 código de prácticas para controles de seguridad de la información](../../compliance/offering-ISO-27017.md)
 - [ISO 27018 código de prácticas para la protección de datos personales en la nube](../../compliance/offering-ISO-27018.md)
@@ -38,7 +38,7 @@ Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 Puede encontrar información relevante, incluidos los requisitos de control y técnicos, en el [portal de confianza de servicios (STP)](https://servicetrust.microsoft.com/), el repositorio central para obtener información sobre las ofertas de servicios en la nube de Microsoft. Puede descargar los informes de auditor, los certificados de cumplimiento y mucho más en la sección [informes de auditoría](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) de STP.
 
 > [!NOTE]
-> Como el escritorio administrado de Microsoft se ejecuta en Azure, algunos documentos relevantes tienen nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En estos documentos, normalmente puede encontrar escritorio administrado de Microsoft en la categoría "supervisión + administración".
+> Como el escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En estos documentos, normalmente puede encontrar escritorio administrado de Microsoft en la categoría "supervisión + administración".
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 

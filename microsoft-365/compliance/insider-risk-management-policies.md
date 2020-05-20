@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162692"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292508"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -75,7 +75,7 @@ La protección de la privacidad de los usuarios que tienen coincidencias de dire
 
 Plantillas de directivas de riesgos de Insider definen el tipo de actividades de riesgo que desea detectar e investigar. Cada plantilla de Directiva se basa en indicadores específicos que se corresponden con las tareas y las actividades de riesgo específicas que las directivas desencadenan cuando los usuarios realizan actividades relacionadas con estos indicadores. En algunos casos, es posible que quiera limitar los indicadores que se aplican a las directivas de riesgo de Insider de su organización. Puede desactivar los indicadores para áreas específicas si los deshabilita en todas las directivas de riesgo de Insider.
 
-Para definir los indicadores que están habilitados en todas las directivas, vaya a > **indicadores** de **configuración de riesgos de Insider**y seleccione uno o más indicadores. Los indicadores seleccionados en la página de configuración de **indicadores** no se pueden configurar individualmente al crear o editar una directiva de riesgos del Insider en el Asistente para directivas.
+Para definir los indicadores que están habilitados en todas las directivas, vaya a indicadores de **configuración de riesgos de Insider**  >  **Indicators** y seleccione uno o más indicadores. Los indicadores seleccionados en la página de configuración de **indicadores** no se pueden configurar individualmente al crear o editar una directiva de riesgos del Insider en el Asistente para directivas.
 
 >[!IMPORTANT]
 >Para recibir alertas de actividad arriesgada definida en las directivas, debe seleccionar uno o más indicadores antes de configurar una directiva de riesgo de Insiders.
@@ -89,7 +89,7 @@ Los plazos de la Directiva permiten definir períodos de revisión pasados y fut
 
 ### <a name="intelligent-detections"></a>Detecciones inteligentes
 
-La configuración de detección inteligente ayuda a refinar cómo se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que necesite definir tipos de archivo para omitir o desea aplicar un nivel de detección para los archivos a fin de definir una barra mínima para las alertas. Al usar directivas de lenguaje ofensivo, es posible que deba aumentar o disminuir la sensibilidad de la detección para controlar la cantidad de coincidencias de directivas de informes. Use estas opciones para controlar las exclusiones de tipo de archivo, los límites del volumen de archivo y la sensibilidad de detección de idioma ofensivo.
+La configuración de detección inteligente ayuda a refinar cómo se procesan las detecciones de actividades de riesgo para las alertas. En determinadas circunstancias, es posible que necesite definir tipos de archivo para omitir o desea aplicar un nivel de detección para los archivos a fin de definir una barra mínima para las alertas. Al usar directivas de lenguaje ofensivo, es posible que deba aumentar o disminuir la sensibilidad de la detección para controlar la cantidad de coincidencias de directivas de informes. Use estas opciones para controlar el volumen general de alertas, las exclusiones de los tipos de archivo, los límites del volumen de archivos y la sensibilidad de la detección de idiomas ofensivos.
 
 #### <a name="anomaly-detections"></a>Detecciones de anomalías
 
@@ -105,6 +105,14 @@ Para ajustar la confidencialidad del clasificador de idioma ofensivo para las di
 - **Bajo**: el nivel de confidencialidad más bajo con el intervalo más amplio para la detección de un idioma y una opinión ofensivos. La probabilidad de falsos positivos para la coincidencia de idiomas ofensivos es elevada.
 - **Media**: el nivel de confidencialidad de nivel medio con un intervalo equilibrado para la sumisión y el lenguaje ofensivo de detección. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es la media.
 - **Alta**: el nivel de confidencialidad más alto con un intervalo estrecho para la detección de lenguaje ofensivo y su opinión. La probabilidad de falsos positivos para la coincidencia de lenguaje ofensivo es baja.
+
+#### <a name="alert-volume"></a>Volumen de alertas
+
+Las actividades de usuario detectadas por las directivas de riesgo de Insider tienen asignada una puntuación de riesgo específica, que a su vez determina la gravedad de la alerta (baja, media, alta). De forma predeterminada, se generará una determinada cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen según sus necesidades. Para ajustar el volumen de alertas de todas las directivas de administración de riesgos de Insider, elija una de las siguientes opciones:
+
+- **Menos alertas**: verá todas las alertas de gravedad alta, menos alertas de mediana gravedad y no hay gravedad baja. Esto significa que podría omitir algunos verdaderos positivos.
+- **Volumen predeterminado**: verá todas las alertas de gravedad alta y una cantidad equilibrada de alertas de gravedad media y baja.
+- **Más alertas**: verá todas las alertas de gravedad media y alta y la mayoría de las alertas de gravedad baja. Esto puede dar como resultado más falsos positivos.
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
@@ -129,7 +137,7 @@ Complete los siguientes pasos para crear una nueva Directiva:
     - Tipo de información confidencial: seleccione **elegir tipos de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"número de cuenta bancaria de Estados Unidos"* y *"número de tarjeta de crédito"*.
     - Etiquetas de confidencialidad: seleccione **elegir etiquetas de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"confidencial"* y *"secreto"*.
 7. Seleccione **siguiente** para continuar.
-8. En la **Página indicadores de alerta** , verá los indicadores que ha definido en la página**indicadores** de configuración > de **riesgos de Insider**. Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
+8. En la página **indicadores de alerta** , verá los indicadores que ha definido en la página indicadores de configuración de riesgos de **Insider**  >  **Indicators** . Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
 9. En la página **seleccionar ventana de supervisión** , verá las condiciones de la [ventana de supervisión](insider-risk-management-policies.md#policy-timeframes) para la Directiva que ha configurado en la configuración de los riesgos de Insider. Si ha seleccionado la plantilla de directiva de *robo de datos de empleado* de cancelación, puede seleccionar la casilla comprobar la *interrupción posterior* a la actividad para detectar la actividad después de la fecha de finalización importada desde el conector de 365 de RRHH de Microsoft.
 10. Seleccione **siguiente** para continuar.
 11. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para crear y activar la Directiva.
@@ -153,7 +161,7 @@ Complete los siguientes pasos para administrar una directiva existente:
     - Tipo de información confidencial: seleccione **elegir tipos de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"número de cuenta bancaria de Estados Unidos"* y *"número de tarjeta de crédito"*.
     - Etiquetas de confidencialidad: seleccione **elegir etiquetas de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"confidencial"* y *"secreto"*.
 8. Seleccione **siguiente** para continuar.
-9. En la **Página indicadores de alerta** , verá los indicadores que ha definido en la página**indicadores** de configuración > de **riesgos de Insider**. Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
+9. En la página **indicadores de alerta** , verá los indicadores que ha definido en la página indicadores de configuración de riesgos de **Insider**  >  **Indicators** . Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
 10. En la página **seleccionar ventana de supervisión** , verá las condiciones de la [ventana de supervisión](insider-risk-management-policies.md#policy-timeframes) para la Directiva que ha configurado en la configuración de los riesgos de Insider. Si ha seleccionado la plantilla de directiva de *robo de datos de empleado* de cancelación, puede seleccionar la casilla comprobar la *interrupción posterior* a la actividad para detectar la actividad después de la fecha de finalización importada desde el conector de 365 de RRHH de Microsoft.
 11. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para actualizar y activar los cambios en la Directiva.
 

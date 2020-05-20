@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162682"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292478"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -62,7 +62,7 @@ Complete los siguientes pasos para agregar usuarios a un grupo de roles de admin
 
 1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365. "" "" "" ""
 
-2. En el centro &amp; de seguridad y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
 3. Seleccione el grupo de funciones de administración de riesgos de Insider al que desea agregar usuarios y, a continuación, seleccione **Editar Grupo de roles**.
 
@@ -118,7 +118,7 @@ Antes de configurar una directiva, defina las siguientes opciones de riesgo de I
     >Para recibir alertas de actividad arriesgada definida en las directivas, debe seleccionar uno o más indicadores.
 
 4. En la página **plazos** de la Directiva, seleccione los [plazos](insider-risk-management-policies.md#policy-timeframes) de la Directiva para que se apliquen a un usuario cuando desencadenen una coincidencia para una directiva de riesgos de Insider.
-5. En la página **detecciones inteligentes** , configure las [detecciones de idiomas ofensivos y anomalías](insider-risk-management-policies.md#intelligent-detections) para las directivas de riesgos de Insider.
+5. En la página **detecciones inteligentes** , configure la [detección de anomalías, la detección de idioma ofensivo y el nivel de volumen de alerta](insider-risk-management-policies.md#intelligent-detections) para las directivas de riesgos de Insider.
 6. Seleccione **Guardar** para habilitar esta configuración para las directivas de riesgos de Insider.
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Paso 5 (obligatorio): crear una directiva de administración de riesgos de Insider
@@ -142,8 +142,8 @@ Las directivas de administración de riesgos de Insider incluyen usuarios asigna
     - **Tipo de información confidencial**: seleccione **Agregar información confidencial escriba** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"número de cuenta bancaria de Estados Unidos"* y *"número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiqueta de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"confidencial"* y *"secreto"*.
 7. Seleccione **siguiente** para continuar.
-8. En la **Página indicadores de alerta** , verá los indicadores que ha definido en la página**indicadores** de configuración > de **riesgos de Insider**. Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
-9. En la página **seleccionar ventana de supervisión** , verá las condiciones de la [ventana de supervisión](insider-risk-management-policies.md#policy-timeframes) para la Directiva que se encuentra en la página intervalos de tiempo de la**Directiva** de configuración > de **riesgo del Insider**. Si ha seleccionado la plantilla de directiva de *robo de datos de empleado* de cancelación, puede seleccionar la casilla comprobar la *interrupción posterior* a la actividad para detectar la actividad después de la fecha de finalización importada desde el conector de 365 de RRHH de Microsoft.
+8. En la página **indicadores de alerta** , verá los indicadores que ha definido en la página indicadores de configuración de riesgos de **Insider**  >  **Indicators** . Si seleccionó la plantilla de *fugas de datos* al principio del asistente, debe seleccionar una directiva DLP en la lista desplegable **Directiva de DLP** .
+9. En la página **seleccionar ventana de supervisión** , verá las condiciones de la [ventana de supervisión](insider-risk-management-policies.md#policy-timeframes) para la Directiva que se encuentra en la página intervalos de tiempo de la Directiva de **configuración de riesgo del Insider**  >  **Policy timeframes** . Si ha seleccionado la plantilla de directiva de *robo de datos de empleado* de cancelación, puede seleccionar la casilla comprobar la *interrupción posterior* a la actividad para detectar la actividad después de la fecha de finalización importada desde el conector de 365 de RRHH de Microsoft.
 10. Seleccione **siguiente** para continuar.
 11. En la página **revisión** , revise la configuración que ha elegido para la Directiva. Seleccione **Editar** para cambiar cualquiera de los valores de la Directiva o seleccione **Enviar** para crear y activar la Directiva.
 

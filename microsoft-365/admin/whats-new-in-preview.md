@@ -20,12 +20,12 @@ search.appverid:
 description: 'Centro de administración de Microsoft 365: Obtenga información sobre las características que se agregaron este mes.'
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6dcfa1bac5fa9837f9882a575c3d5eaa6cf3be4f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208165"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322140"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -46,7 +46,7 @@ Y si está interesado en las novedades de otros servicios en la nube de Microsof
 
 - [Novedades de Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
 - [Novedades de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Novedades en el centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Novedades en el centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
 - [Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Novedades en el centro de administración de Exchange](https://docs.microsoft.com/Exchange/whats-new)
 - [Actualizaciones de Office](https://docs.microsoft.com/OfficeUpdates/)
@@ -360,7 +360,7 @@ Ha habido una actualización a otro de nuestros asistentes de instalación inici
 Tenemos algunas actualizaciones de facturación y suscripciones este mes:
 
 - Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias **de aplicaciones para el ámbito educativo (dispositivo) de 365 de Microsoft** a los dispositivos del centro de administración de Microsoft 365. **Microsoft 365 apps for Education (Device)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación**  >  **de productos** para buscar y adquirir la licencia.
-- Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los usuarios activos de **los usuarios**  >  **Active users** al nuevo estilo. Para obtener más información, vea:
+- Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los usuarios activos de **los usuarios**  >  **Active users** al nuevo estilo. Para más información, consulte lo siguiente:
   - [Asignar licencias a usuarios](manage/assign-licenses-to-users.md)
   - [Cancelar asignación a licencias de usuarios](manage/remove-licenses-from-users.md)
 

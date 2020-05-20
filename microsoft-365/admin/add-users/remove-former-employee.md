@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140598"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322092"
 ---
 # <a name="remove-a-former-employee"></a>Quitar un antiguo empleado
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -135,7 +135,7 @@ Puede guardar el contenido del buzón de correo del antiguo empleado de dos form
     
     Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de su organización ni en otras listas.
     
-    Para obtener información sobre cómo poner una retención en un buzón de correo, vea [administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+    Para obtener información sobre cómo poner una retención en un buzón de correo, vea [administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertir en un buzón compartido
 <a name="bkmk_forward"> </a>
@@ -218,7 +218,7 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
     
 4. Seleccione el usuario y, en **dispositivos móviles**, seleccione **Ver detalles**. 
     
-5. En la página **detalles del dispositivo móvil** , **en dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)de **datos**![y, a continuación, seleccione **bloquear**. 
+5. En la página **detalles del dispositivo móvil** , en **dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado de **datos** ![ y, ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) a continuación, seleccione **bloquear**. 
     
 6. Haga clic en **Guardar**. 
     
@@ -325,7 +325,7 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 
 
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 
 ::: moniker-end

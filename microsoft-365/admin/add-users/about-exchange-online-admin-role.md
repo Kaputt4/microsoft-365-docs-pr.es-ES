@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618913"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322080"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
@@ -37,7 +37,7 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
   
 - [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Configurar una directiva de archivo y eliminación para los buzones de la organización](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurar una directiva de archivo y eliminación para los buzones de la organización](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización. 
     
@@ -45,7 +45,7 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
     
 - [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común. 
     
-- Filtros de malware y [protección contra correo no deseado de correo electrónico](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) para la organización. 
+- Filtros de malware y [protección contra correo no deseado de correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) para la organización. 
     
 - Administración de grupos de Microsoft 365
     

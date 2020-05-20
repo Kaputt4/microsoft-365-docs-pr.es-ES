@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Obtenga información sobre cómo obtener el informe de uso del buzón de correo para conocer las actividades de los usuarios con un buzón de usuario.
-ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046932"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321998"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de buzones
 
@@ -48,7 +48,7 @@ Para obtener una vista del **Uso del buzón** de la organización, consulte los 
 |1.  <br/> |Puede visualizar el informe **Uso del buzón** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día concreto en el informe, la tabla mostrará los datos de hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
 |2.  <br/> |Los datos de cada informe normalmente cubren hasta las últimas 24 a 48 horas.  <br/> |
 |3.  <br/> |El gráfico Buzón muestra el número total de buzones de usuario de la organización y el número total de buzones que están activos en cualquier día del período de notificación. Un buzón de usuario se considera activo si tiene un correo electrónico enviar, leer, crear cita, enviar reunión, aceptar reunión, rechazar reunión y cancelar actividad de reunión.  <br/> |
-|4.  <br/> |El gráfico **Almacenamiento** muestra la cantidad de almacenamiento usado en su organización. El gráfico de almacenamiento no incluye buzones de archivo. Para obtener más información acerca del archivado de expansión automática, vea [información general sobre el archivado ilimitado en Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving).<br/> |
+|4.  <br/> |El gráfico **Almacenamiento** muestra la cantidad de almacenamiento usado en su organización. El gráfico de almacenamiento no incluye buzones de archivo. Para obtener más información acerca del archivado de expansión automática, vea [información general sobre el archivado ilimitado en Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
 |5.  <br/> | El gráfico **Cuota** muestra el número de buzones de usuario en cada categoría de cuota. Hay cuatro categorías de cuota:  <br/>  Buena: número de usuarios con un uso de almacenamiento por debajo de la cuota de emisión de advertencia.  <br/>  Advertencia: número de usuarios con un uso de almacenamiento igual o superior a la emisión de advertencia, pero inferior a la cuota de prohibición de envío  <br/>  No se puede enviar: número de usuarios con un uso de almacenamiento igual o superior a la cuota de prohibición de envío, pero inferior a la cuota de prohibición de envío y recepción  <br/>  No se puede enviar ni recibir: número de usuarios con un uso de almacenamiento igual o superior a la cuota de prohibición de envío y recepción  <br/> |
 |6.  <br/> | En el gráfico **Buzón**, el eje Y es el número de buzones de usuario.  <br/>  En el gráfico **Almacenamiento**, el eje Y es la cantidad de almacenamiento que usan los buzones de usuario de la organización.  <br/>  En el gráfico **Cuota**, el eje Y es el número de buzones de usuario en cada cuota de almacenamiento.  <br/>  El eje X de los gráficos Buzón y Almacenamiento es el intervalo de fechas seleccionado para este informe específico.  <br/>  El eje X del gráfico Cuota es la categoría de cuota.  <br/> |
 |7.  <br/> |Puede filtrar los gráficos que ve seleccionando un elemento de la leyenda.  <br/> |

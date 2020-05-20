@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se proporciona una introducción a la exhibición avanzada de documentos electrónicos en Microsoft 365, una herramienta para investigaciones internas y externas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034910"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322045"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -85,7 +85,7 @@ Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes d
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
 
-Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
+Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para más información, consulte lo siguiente:
 
 - [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
 
@@ -106,7 +106,3 @@ Use la ficha **trabajos** para supervisar procesos de ejecución prolongada para
 ## <a name="configuring-case-settings"></a>Configuración de los casos
 
 Use la pestaña **configuración** para establecer la configuración de casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar las opciones de búsqueda y análisis.
-
-## <a name="advanced-ediscovery-reports"></a>Informes avanzados de eDiscovery
-
-Puede usar los informes avanzados de exhibición de documentos electrónicos de la Página principal para ayudar a su organización a realizar un seguimiento de la actividad y el estado en todos los casos avanzados de eDiscovery. La característica Advanced eDiscovery Reports agrega información sobre casos, custodios, orígenes de datos y comunicaciones. Puede filtrar los datos del informe basándose en varios criterios y exportar la información agregada a un archivo CSV para un análisis posterior.  Para obtener más información, consulte [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).

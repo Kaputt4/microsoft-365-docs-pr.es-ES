@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Obtenga información sobre cómo quitar licencias de cuentas de usuario.
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139642"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322034"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -115,7 +115,7 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 
 4. En el panel **administrar licencias de producto**, seleccione **reemplazar las asignaciones de licencias de producto existentes** \> **siguiente**.
 
-5. En la parte inferior del **Panel reemplazar productos existentes** , active la casilla **quitar todas las licencias de producto de los usuarios seleccionados** y, a continuación, seleccione **reemplazar** \> **cierre**.
+5. En la parte inferior del panel **reemplazar productos existentes** , active la casilla **quitar todas las licencias de producto de los usuarios seleccionados** y, a continuación, seleccione **reemplazar** \> **cierre**.
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 
 - Tenga en cuenta que los archivos guardados en OneDrive para la empresa no se eliminan a menos que el usuario se elimine del centro de administración de Microsoft 365 o se elimine mediante la sincronización de Active Directory. Para obtener más información, vea [retención y eliminación de OneDrive](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Además, el buzón del usuario ya no se puede buscar con una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o exhibición de documentos electrónicos avanzada cuando se quita la licencia. Para obtener más información, consulte la sección "búsqueda de buzones de correo desconectados o de deslicenciado" en [búsqueda de contenido en Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Si tiene una suscripción de Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante el uso de [buzones inactivos](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Para obtener más información, vea [crear y administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- Si tiene una suscripción de Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante el uso de [buzones inactivos](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). Para obtener más información, vea [crear y administrar buzones inactivos en Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de que se haya quitado la licencia y cómo obtener acceso a los datos posteriormente, vea [quitar un antiguo empleado](../add-users/remove-former-employee.md).
 
