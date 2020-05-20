@@ -57,6 +57,8 @@
               href: mtp/portals.md
             - name: Solucionar problemas
               href: ./mtp/troubleshoot.md
+            - name: Pruebas del sector
+              href: ./mtp/top-scoring-industry-tests.md
         - name: Capacidades de evaluación
           items:
             - name: Introducción al laboratorio de pruebas
@@ -282,6 +284,8 @@
                   items:
                     - name: Usar el envío de administración
                       href: ./office-365-security/admin-submission.md
+                    - name: Especificar un buzón para envío de usuarios
+                      href: ./office-365-security/user-submission.md
                     - name: Habilitar el complemento Notificar mensajes
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Instalar y usar el complemento de Notificación de correo no deseado
