@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626426"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231843"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
@@ -53,7 +53,7 @@ Con frecuencia, en los sectores con reglamentos estrictos, es necesario almacena
 - Conservarse durante un período de retención que no puede acortarse, solo incrementarse.
 - Ser inmutable, lo que significa que el registro no se puede sobrescribir, borrar ni modificar durante el período de retención necesario.
 
-En Exchange Online, cuando se aplica una [directiva de retención](retention-policies.md) en el buzón de un usuario, todo el contenido del usuario se conserva basándose en los criterios de la directiva. De hecho, si un usuario intenta eliminar o modificar un correo electrónico, se conservará una copia del correo electrónico antes del cambio en una ubicación oculta y segura del buzón del usuario. Las directivas de retención permiten garantizar que una organización conserve comunicaciones electrónicas, pero esas directivas se pueden modificar.
+En Exchange Online, cuando se aplica una [directiva de retención](retention-policies.md) en el buzón de un usuario, todo el contenido del usuario se conserva basándose en los criterios de la directiva. De hecho, si un usuario intenta eliminar o modificar un correo electrónico, se conservará una copia del correo electrónico antes del cambio en una ubicación oculta y segura del buzón del usuario. Las directivas de retención ayudan a garantizar que una organización conserve comunicaciones electrónicas, pero esas directivas se pueden modificar.
 
 Al colocar un Bloqueo de conservación en una directiva de retención, una organización se asegura de que la directiva no se pueda modificar. De hecho, después de aplicar un Bloqueo de conservación en una directiva de retención, las acciones siguientes están restringidas:
 
@@ -65,7 +65,7 @@ Bloqueo de conservación puede ayudarle a cumplir con los requisitos reglamentar
 
 ## <a name="how-to-set-up-preservation-lock"></a>Configurar Bloqueo de conservación
 
-Se puede bloquear una directiva de retención mediante el uso de PowerShell. Para obtener más información, vea [Bloquear una directiva de retención](retention-policies.md#locking-a-retention-policy).
+Puede bloquear una directiva de retención con PowerShell. Para más información, consulte [Usar el bloqueo de conservación para cumplir los requisitos normativos](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 

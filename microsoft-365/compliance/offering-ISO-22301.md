@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065915"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254439"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norma ISO 22301:2012 de Administración de Continuidad Empresarial 
 
 ## <a name="iso-22301-overview"></a>Información general sobre ISO 22301
 
-La Organización Internacional de Normalización (ISO) es una organización independiente y no gubernamental, y el desarrollador de estándares internacionales voluntarios más grande del mundo. La ISO formó el Comité técnico de seguridad social TC 223 para desarrollar estándares para la protección de la sociedad, incluidas las organizaciones, en caso de catástrofes, como un desastre natural, un ataque terrorista masivo o la desconexión de redes eléctricas.
+La Organización Internacional de Normalización (ISO) es una organización independiente y no gubernamental, y el desarrollador más grande del mundo de estándares internacionales voluntarios. La ISO formó el Comité técnico de seguridad social TC 223 para desarrollar estándares para la protección de la sociedad, incluidas las organizaciones, si ocurren en catástrofes, como un desastre natural, un ataque terrorista masivo o la desconexión de redes eléctricas.
 
 La norma ISO 22301:2012 fue publicada en 2012 por el comité técnico y es la primera norma internacional para la administración de sistemas que ayuda a garantizar la continuidad empresarial. La norma ISO 22301 es la norma premium para la continuidad empresarial, y la certificación demuestra el cumplimiento de prácticas rigurosas para prevenir, mitigar, responder y recuperarse ante incidentes perjudiciales.
 
@@ -35,21 +35,24 @@ Microsoft es el primer proveedor de servicios en la nube a hiperescala que recib
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government y Dynamics 365 Germany
+- Protección contra amenazas avanzada de Microsoft Defender
+- Microsoft Graph
+- Bot de Microsoft Healthcare
 - Intune
 - Escritorio administrado de Microsoft
-- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de Power Automate (anteriormente conocido como Microsoft Flow) como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - [Office 365 Comercial, Administración Pública y Educación](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - El servicio en la nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
+- Power BI incrustado
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-- [Certificado de registro de Azure y Azure ISO 22301](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Informe de evaluación de Azure ISO 22301](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure, Dynamics 365 y servicios en línea: certificado ISO22301](https://aka.ms/azureiso22301cert)
+- [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO22301](https://aka.ms/azureiso22301report)
 - [Certificado BSI 22301 de Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [Anexo BSI 22301 Fase 2 de Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Informe de ISO 22301 Fase 2 de Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092211)

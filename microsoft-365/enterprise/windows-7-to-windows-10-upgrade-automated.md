@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Actualizaciones automatizadas de Windows 7 a Windows 10 para grandes empresas
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011556"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221403"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Actualizaciones locales automatizadas de Windows 7 a Windows 10 para grandes empresas
 
@@ -90,7 +90,7 @@ La [opción de almacenar en caché previamente](https://docs.microsoft.com/mem/c
 
 Almacenar en caché previamente secuencias de tareas combinadas con los exámenes de compatibilidad
 
-Además de ahorrar tiempo para la descarga del paquete, puede almacenar en caché previamente el paquete de actualización y usar el programa de instalación de Windows para evaluar si la actualización local se realizará correctamente antes de ejecutar la actualización de Windows real. La siguiente sintaxis de línea de comandos puede usarse para ejecutar de forma silenciosa un examen de compatibilidad y averiguar si el programa de instalación de Windows considera que el dispositivo está listo para la actualización.
+Además de ahorrar tiempo para la descarga del paquete, puede almacenar en caché previamente el paquete de actualización y usar el programa de instalación de Windows para evaluar si la actualización local se realizará correctamente antes de ejecutar la actualización de Windows real. La siguiente sintaxis de línea de comandos puede usarse para ejecutar de forma silenciosa un examen de compatibilidad y averiguar si el programa de instalación de Windows considera que el dispositivo está listo para la actualización: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 Luego, se enviarán los registros a la ruta de acceso del servidor definida y el programa de instalación de Windows no se mostrará al usuario y se cerrará sin la intervención del mismo.
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6dc80bbacaf8d4bbadb345910b29b8410c13768
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b81c2eba975b59341a2ef57f7df8ebc49efc9752
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066575"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254449"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>Centro de Sistemas de Información de la Industria Financiera (FISC)
 
@@ -47,9 +47,9 @@ Las instituciones financieras pueden confiar en esta evaluación del cumplimient
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
-- [Azure](https://aka.ms/AzureCompliance).
-- Cloud App Security.
-- Intune.
+- [Azure](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - El servicio en la nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
 
