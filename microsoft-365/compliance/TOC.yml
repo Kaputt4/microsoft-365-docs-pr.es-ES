@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Tipos de información confidencial
       items:
-        - name: Qué buscan los tipos de información confidencial
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Definiciones de entidad de tipos de información confidencial
+          href: sensitive-information-type-entity-definitions.md
         - name: Qué buscan las funciones de DLP
           href: what-the-dlp-functions-look-for.md
         - name: Ver una descripción general ampliada de personalización de DLP
