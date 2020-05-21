@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322010"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327731"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Seguridad en el escritorio administrado por Microsoft
 
@@ -25,7 +25,7 @@ Microsoft Managed Desktop usa varias tecnologías de Microsoft para ayudar a pro
 - [Seguridad de red](#network-security) : información de VPN y configuración y solución recomendadas para escritorio administrado de Microsoft
 - [Seguridad](#information-security) de la información: servicios opcionales disponibles para proteger aún más la información confidencial 
 
-Para obtener información sobre el almacenamiento de datos, el uso y los procedimientos de seguridad utilizados por el escritorio administrado por Microsoft, Descargue nuestras notas del producto en [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Para obtener información sobre el almacenamiento de datos, el uso y las prácticas de seguridad que usa el escritorio administrado por Microsoft, Descargue nuestras notas del producto en [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 Para obtener más información sobre el equipo de operaciones de seguridad en el escritorio administrado de Microsoft y cómo funcionan para proporcionar seguridad a los dispositivos, vea el vídeo [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 

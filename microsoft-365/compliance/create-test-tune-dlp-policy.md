@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de su organización.
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035762"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327802"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -51,13 +51,13 @@ Es decir, DLP suele ser lo suficientemente inteligente como para reconocer la di
 - "¿Puede solicitarme un nuevo portátil. Usar mi VISAdo número 1111-1111-1111-1111, expirar 11/22 y enviarme la fecha de entrega estimada cuando la tiene. "
 - "El número de serie del portátil es 2222-2222-2222-2222 y se compró en 11/2010. Por cierto, ¿se aprobó todavía mi visado de viajes? "
 
-Una buena referencia para conservar el marcador es este [tema sobre los tipos de información confidencial](what-the-sensitive-information-types-look-for.md) que explican cómo se detecta cada tipo de información.
+Una buena referencia para conservar marcadores es [definiciones de entidad de tipo información confidencial](sensitive-information-type-entity-definitions.md) que explican cómo se detecta cada tipo de información.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Dónde comenzar con prevención de pérdida de datos
 
 Cuando los riesgos de la filtración de datos no son totalmente obvios, es difícil averiguar dónde se debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas de DLP se pueden ejecutar en el "modo de prueba", lo que le permite evaluar su eficacia y precisión antes de activarlas.
 
-Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la **Data loss prevention** > **Directiva**de prevención de pérdida de datos. Haga clic en **crear una directiva** para iniciar.
+Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará directivas DLP en la Directiva de **prevención de pérdida de datos**  >  **Policy**. Haga clic en **crear una directiva** para iniciar.
 
 Microsoft 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas de DLP. Supongamos que es un negocio australiano. Puede filtrar las plantillas de directiva para mostrar solo las que son relevantes para Australia, que entran en las categorías generales de finanzas, médicos y salud y privacidad.
 
@@ -95,7 +95,7 @@ En la pantalla finalización de la revisión, haga clic en **crear** para finali
 
 ## <a name="test-a-dlp-policy"></a>Probar una directiva DLP
 
-La nueva Directiva de DLP empezará a surtir efecto en aproximadamente 1 hora. Puede sentarse y esperar a que se active por una actividad de usuario normal o puede intentar activarla usted mismo. Anteriormente he vinculado a este [tema sobre los tipos de información confidencial](what-the-sensitive-information-types-look-for.md), que proporciona información sobre cómo desencadenar las coincidencias de DLP.
+La nueva Directiva de DLP empezará a surtir efecto en aproximadamente 1 hora. Puede sentarse y esperar a que se active por una actividad de usuario normal o puede intentar activarla usted mismo. Anteriormente vinculó a [definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md), que proporciona información sobre cómo desencadenar las coincidencias de DLP.
 
 Como ejemplo, la Directiva DLP que he creado para este artículo detectará los números de archivo de impuestos australianos (TFN). De acuerdo con la documentación, la coincidencia se basa en los siguientes criterios.
 
@@ -192,7 +192,7 @@ Otra opción es simplemente aumentar el recuento de instancias, de modo que un b
 
 Además de cambiar el recuento de instancias, también puede ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de la coincidencia en la regla para que la regla coincida solo con modelos específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Comprender cómo se calcula el nivel de confianza es un poco complicado (y más allá del alcance de esta publicación), pero esta es una buena explicación de [Cómo usar el nivel de confianza para ajustar las reglas](data-loss-prevention-policies.md#match-accuracy).
 
-Por último, si desea que sea un poco más avanzada, puede personalizar cualquier tipo de información confidencial (por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave de la [licencia de conducción de Australia](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)) para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, vea este tema sobre la [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
+Por último, si desea obtener un poco más avanzado, puede personalizar cualquier tipo de información confidencial, por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de [permiso de conducción de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, vea este tema sobre la [Personalización de un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804833"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327866"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -172,7 +172,7 @@ Para remitir un caso a una investigación de empleado:
 3. En el cuadro de diálogo **escalar para investigación** , escriba un nombre para la nueva investigación de empleado. Si es necesario, escriba notas sobre el caso y seleccione **escalar**.
 5. Seleccione **confirmar** para crear el caso de investigación de empleado o seleccione **Cancelar** para cerrar el cuadro de diálogo sin crear un nuevo caso de investigación de empleado.
 
-Una vez que el caso de administración de riesgos de Insider se ha remitido a un caso de investigación de un nuevo empleado, puede revisar el nuevo caso en el área**Advanced** **eDiscovery** > del centro de cumplimiento de Microsoft 365.
+Una vez que el caso de administración de riesgos de Insider se ha remitido a un caso de investigación de un **eDiscovery**nuevo empleado, puede revisar el nuevo caso en el  >  área**Advanced** eDiscovery del centro de cumplimiento de Microsoft 365.
 
 ### <a name="resolve-the-case"></a>Resolver el caso
 

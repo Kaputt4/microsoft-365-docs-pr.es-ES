@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información sobre los dominios buscando respuestas a sus preguntas en preguntas más frecuentes.
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140754"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327117"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Debe configurar los registros DNS para los servicios de Office 365 personalmente
 
 Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente, toma la forma del nombre de la organización y un sufijo de Internet estándar, como *yourbusiness.com* o *StateUniversity.edu.* 
   
-Usar un dominio personalizado como "**rob\@contoso.com**" con Office 365 puede ayudarle a crear credibilidad y un reconocimiento para su marca. 
+Usar un dominio personalizado como "**rob \@ contoso.com**" con Office 365 puede ayudarle a crear credibilidad y un reconocimiento para su marca. 
   
 Puede [comprar un dominio en Office 365 y configurarlo automáticamente](../get-help-with-domains/buy-a-domain-name.md), o puede comprar o traer uno que ya es propietario de un registrador de dominios.
   
@@ -128,11 +128,11 @@ Siga los pasos siguientes para obtener el código en Office 365 y, a continuaci�
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página de **configuración** > de <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licencias</a> .
+1. En el centro de administración, vaya a la página de **configuración** de > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licencias</a> .
 
 ::: moniker-end
     
-2. En la página **dominios** , seleccione el dominio de Office 365 que desea transferir a otro registrador de dominios y, a continuación, seleccione **transferencia** > de dominio**Habilitar transferencia de dominio**.
+2. En la página **dominios** , seleccione el dominio de Office 365 que desea transferir a otro registrador de dominios y, a continuación, seleccione **transferencia de dominio**  >  **Habilitar transferencia de dominio**.
        
 4. Siga los pasos para preparar la transferencia del dominio.
     
@@ -187,7 +187,7 @@ Siga los pasos siguientes para obtener el código en Office 365 y, a continuaci�
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> ..
+1. En el centro de administración, vaya a la página **configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> ..
 
 ::: moniker-end
 
@@ -258,6 +258,8 @@ Proveedores que admiten todos los registros DNS necesarios:
 - Los clientes de escritorio de Skype empresarial online pueden usar la detección automática para buscar automáticamente el servicio de Skype empresarial online para que los usuarios puedan iniciar sesión sin tener que escribir el nombre de un servidor.
     
 - Los clientes móviles de Skype empresarial online pueden usar la detección automática para buscar automáticamente el servicio de Skype empresarial online para que los usuarios puedan iniciar sesión sin tener que escribir el nombre de un servidor.
+
+- Federación de Microsoft Teams con Skype empresarial, ya sea local o en línea. Para obtener más información, consulte [preparar la red de la organización para Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **Si no se admiten los registros SPF/txt**, es posible que otras personas puedan usar su dominio para enviar correo no deseado u otro correo electrónico malintencionado. Los registros de SPF funcionan mediante la identificación de los servidores autorizados para enviar correo electrónico desde su dominio. 
   
@@ -342,7 +344,7 @@ Cuando se agregan varios dominios a Office 365, puede hospedar cualquiera de los
 
 Office 365 crea un dominio para usted, como *contoso.onmicrosoft.com*, cuando se registra en el servicio. El identificador de usuario que crea al registrarse incluye el dominio, como *Alan@contoso.onmicrosoft.com*. 
   
- **Si quiere que su correo sea similar a *Alan\@contoso.com*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Office 365](add-domain.md) si es el propietario ya. 
+ **Si quiere que su correo sea similar a *Alan \@ contoso.com*:** [compre el dominio](../get-help-with-domains/buy-a-domain-name.md) o simplemente siga los pasos que se indican en [Agregar usuarios y dominios a Office 365](add-domain.md) si es el propietario ya. 
   
 - **No puede cambiar el nombre del dominio de mi Microsoft después de suscribirse.** Por ejemplo, si el dominio inicial elegido era fourthcoffee.onmicrosoft.com, no puede cambiarlo a fabrikam.onmicrosoft.com. Para usar un dominio onmicrosoft.com diferente, debe iniciar una nueva suscripción con Office 365. 
     
@@ -447,7 +449,7 @@ Puede, pero hay limitaciones:
     
     1. Vaya al Centro de administración de Microsoft 365.
         
-    2. En la barra de navegación izquierda, **Seleccione** \> usuarios **activos**. 
+    2. En la barra de navegación izquierda, **Seleccione usuarios** \> **activos**. 
         
     3. Cree las cuentas de usuario.
         

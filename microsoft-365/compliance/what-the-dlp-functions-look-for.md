@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad la realizan funciones internas. En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos.
-ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601207"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327752"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
 La Prevención de pérdida de datos (DLP) incluye tipos de información confidencial, como el número de tarjeta de crédito y el número de tarjeta de débito de la UE, que están listos para su uso en las directivas de DLP. Estos tipos de información confidencial buscan un patrón específico y lo comprueban asegurándose de que el formato es el adecuado, forzando las sumas de comprobación y buscando palabras clave pertinentes u otra información. Parte de esta funcionalidad la realizan funciones internas. Por ejemplo, el tipo de información confidencial de la tarjeta de crédito usa una función para buscar fechas con formato como la fecha de vencimiento, que ayuda a comprobar que un número es un número de tarjeta de crédito.
   
-En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos. Para más información, consulte [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos. Para obtener más información, vea [tipos de información confidencial definiciones de entidades](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -124,9 +124,9 @@ Nombres de mes aceptados:
 ## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (en desuso)
 
 > [!NOTE]
-> Esta función está en desuso porque solo admite nombres de mes en Portugués, que ahora están incluidos en `Func_eu_date` la función anterior. 
+> Esta función está en desuso porque solo admite nombres de mes en Portugués, que ahora están incluidos en la `Func_eu_date` función anterior. 
   
-Esta función busca una fecha en el formato que suele usarse en portugués. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
+Esta función busca una fecha en el formato que suele usarse en portugués. El formato de esta función es el mismo que `Func_eu_date` en el idioma usado.
   
 Ejemplos:
   
@@ -155,9 +155,9 @@ Nombres de mes aceptados:
 ## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (en desuso)
 
 > [!NOTE]
-> Esta función está en desuso porque solo admite nombres de mes en holandés, que ahora están incluidos en `Func_eu_date` la función anterior. 
+> Esta función está en desuso porque solo admite nombres de mes en holandés, que ahora están incluidos en la `Func_eu_date` función anterior. 
   
-Esta función busca una fecha en el formato que suele usarse en neerlandés. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
+Esta función busca una fecha en el formato que suele usarse en neerlandés. El formato de esta función es el mismo que `Func_eu_date` en el idioma usado.
   
 Ejemplos:
   

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Puede activar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento. Si cambia de opinión, puede desactivar la opción en cualquier momento. Cuando la búsqueda de registros de auditoría está desactivada, los administradores no pueden buscar en el registro de auditoría de Microsoft 365 la actividad de usuario y de administrador de su organización.
-ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633425"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330794"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría
 
@@ -48,22 +48,24 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>Usar el centro de seguridad & cumplimiento para activar la búsqueda de registros de auditoría
 
-1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **registros de auditoría**de **búsqueda** \> .
-    
+1. [Vaya al centro de seguridad & cumplimiento](https://protection.office.com) e inicie sesión.
+
+2. En el centro de seguridad & cumplimiento, vaya a búsqueda de registros de auditoría de **búsqueda** \> **Audit log search**.
+
    Se muestra un banner en el que se indica que se debe activar la auditoría para registrar la actividad de usuario y de administrador.
 
-2. Haga clic en **Activar auditoría**.
-    
+3. Haga clic en **Activar auditoría**.
+
     ![Haga clic en activar auditoría](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     El banner se actualiza para indicar que se está preparando el registro de auditoría y que puede buscar la actividad de usuario y de administrador en unas horas.
-    
+
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Usar PowerShell para activar la búsqueda de registros de auditoría
 
 1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Ejecute el siguiente comando de PowerShell para activar la búsqueda de registros de auditoría en Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -75,15 +77,15 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
 Debe usar PowerShell remoto conectado a su organización de Exchange Online para desactivar la búsqueda de registros de auditoría. De forma similar a activar la búsqueda de registros de auditoría, debe tener asignado el rol registros de auditoría en Exchange Online para desactivar la búsqueda de registros de auditoría.
   
 1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Ejecute el siguiente comando de PowerShell para desactivar la búsqueda de registros de auditoría en Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. Después de un rato, compruebe que la búsqueda de registros de auditoría está desactivada (deshabilitada). Puede realizar esto de dos maneras:
-    
+
     - En PowerShell, ejecute el siguiente comando:
 
     ```powershell
@@ -91,7 +93,7 @@ Debe usar PowerShell remoto conectado a su organización de Exchange Online para
     ```
 
       El valor de `False` para la propiedad _UnifiedAuditLogIngestionEnabled_ indica que la búsqueda de registros de auditoría está desactivada. 
-    
-    - En el centro de seguridad & cumplimiento, vaya a búsqueda de **registros de auditoría**de **búsqueda** \> .
-    
+
+    - En el [centro de seguridad & cumplimiento](https://protection.office.com), vaya a búsqueda de registros de auditoría de **búsqueda** \> **Audit log search**.
+
       Se muestra un banner en el que se indica que se debe activar la auditoría para poder registrar la actividad de usuario y de administrador.

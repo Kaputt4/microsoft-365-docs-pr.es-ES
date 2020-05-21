@@ -1,5 +1,5 @@
 ---
-title: Planeación de la administración de riesgos de Insider
+title: Planificar la administración de riesgos internos
 description: Obtenga información sobre cómo planear el uso de directivas de administración de riesgos de Insider en su organización.
 keywords: Microsoft 365, riesgo para Insiders, administración de riesgos, cumplimiento
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b2abd68d767f169ea8e20fc349e6314cc6400d5
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043410"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327128"
 ---
-# <a name="plan-for-insider-risk-management"></a>Planeación de la administración de riesgos de Insider
+# <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
 Antes de empezar con la [Administración de riesgos de Insider](insider-risk-management.md) en su organización, hay importantes actividades y consideraciones de planeación que deben ser revisadas por los equipos de administración de la tecnología de la información y el cumplimiento. La comprensión y planeación exhaustiva de la implementación en las siguientes áreas le ayudarán a garantizar que la implementación y el uso de las características de administración de riesgos de Insider se ajustan correctamente y se alinean con los procedimientos recomendados para la solución.
 

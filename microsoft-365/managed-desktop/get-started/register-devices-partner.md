@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557568"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327061"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Pasos para que los Socios puedan registrar dispositivos
 
@@ -22,69 +22,40 @@ En este tema se describen los pasos que deben seguir los socios para registrar l
 
 
 ## <a name="prepare-for-registration"></a>Preparar el registro 
-Antes de completar el registro de un cliente, primero debe establecer una relación con ellos en el [centro de Partners](https://partner.microsoft.com/dashboard). Asegúrese de seleccionar **incluir privilegios de administración delegados para Azure Active Directory y Office 365**. Para obtener más información, vea [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer).
-
-Para completar el registro del cliente, cree primero un archivo CSV.
-
->[!NOTE]
->Para su comodidad, puede descargar un [archivo CSV de ejemplo](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv) para esta *versión del asociado*.
-
-El archivo tiene que incluir **exactamente los mismos encabezados de columna** que el ejemplo uno (fabricante, modelo, etc.), pero sus propios datos para las otras filas. Si usa la plantilla, ábrala en una herramienta de edición de texto como el Bloc de notas y considere la posibilidad de dejar sólo todos los datos de la fila 1, introduciendo solo los datos en las filas 2 y anteriores. 
-    
-  ```
- Manufacturer,Model,Serial Number
-  SpiralOrbit,ContosoABC,000000000000
-  
-  
-  ```
+Antes de completar el registro de un cliente, primero debe establecer una relación con ellos en el [centro de Partners](https://partner.microsoft.com/dashboard). Consulte la [documentación de consentimiento](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization) para obtener más información sobre el proceso. Cualquier socio de CSP puede agregar dispositivos en nombre de cualquier cliente, siempre que el cliente lo conenvíe. También puede obtener más información acerca de las relaciones de los socios y los permisos de AutoPilot en la [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot).
 
 
+> [!NOTE]
+> Esta documentación es solo para partners y OEM. El proceso de registro automático está documentado en los [dispositivos de registro del escritorio administrado por Microsoft](register-devices-self.md).
 
 
->[!NOTE]
->Este formato es solo para el proceso asociado. El proceso de registro automático está documentado en los [dispositivos de registro del escritorio administrado por Microsoft](register-devices-self.md).
+## <a name="register-devices-by-using-partner-center"></a>Registrar dispositivos mediante el centro de Partners
 
->[!IMPORTANT]
->Estos valores deben coincidir exactamente con los valores de fabricante de SMBIOS, incluidos el carácter de mayúsculas y caracteres especiales. 
-
-- Fabricante del dispositivo (ejemplo: SpiralOrbit) 
-- Modelo de dispositivo (ejemplo: ContosoABC)
-- Número de serie del dispositivo
-
-## <a name="register-devices-by-using-the-azure-portal"></a>Registrar dispositivos con Azure portal
-
-El registro mediante el portal de Azure es el mismo que para el autoservicio, excepto que se obtiene acceso al portal de manera diferente. Siga estos pasos:
+Una vez que haya establecido la relación con sus clientes, puede aprovechar el centro de asociados para agregar dispositivos a un piloto automático para cualquiera de los clientes con los que tiene una relación, siguiendo estos pasos:
 
 1. Ir al [centro de asociados](https://partner.microsoft.com/dashboard)
-2. Seleccione **clientes**.
-3. Seleccione el cliente que desea administrar.
-4. Seleccione **Administración del servicio**.
-5. Seleccione **Intune**.
-6. Busque "MMD" en el cuadro de búsqueda superior de Azure portal.
-7. Seleccione **dispositivos**.
-8. En **carga de archivos**, especifique una ruta de acceso al archivo CSV que creó anteriormente.
-9. Opcionalmente, puede Agregar un identificador de **pedido** o un **identificador de compra** para sus propios fines de seguimiento. No hay ningún requisito de formato para estos valores.
-10. Seleccione **registrar dispositivos**. El sistema agregará los dispositivos a la lista de dispositivos en la **hoja dispositivos**, marcada como **pendiente de registro**. El registro suele tardar menos de 10 minutos y, cuando se ejecuta correctamente, el dispositivo se muestra como **listo para el usuario** significa que está listo y esperando a que un usuario final empiece a usar.
+2. Seleccione **clientes** en el menú Centro para socios y, a continuación, seleccione el cliente cuyos dispositivos desee administrar.
+3. En la página de detalles del cliente, seleccione **dispositivos**.
+4. En **aplicar perfiles** a dispositivos, seleccione **Agregar dispositivos**.
+5. Escriba **Microsoft365Managed_Autopilot** para el nombre de grupo y, a continuación, seleccione **examinar** para cargar la lista de clientes (en formato de archivo. csv) en el centro de asociados.
 
 
-Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
+> [!IMPORTANT]
+> El nombre del grupo debe coincidir con **Microsoft365Managed_Autopilot** exactamente, incluido el carácter de mayúsculas y caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el perfil de Microsoft Managed Desktop AutoPilot.
 
-| Estado | Descripción |
-|---------------|-------------|
-| Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
-| Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](register-devices-self.md#troubleshooting-device-registration) para obtener más información. |
-| Listo para el usuario | El registro se realizó correctamente y el dispositivo ya está listo para entregarse al usuario final. El escritorio administrado de Microsoft los guiará a través de la primera configuración, por lo que no es necesario que realice ninguna preparación adicional. |
-| Activo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Esto también indica que los usuarios usan el dispositivo con regularidad. |
-| Inactivo | El dispositivo se entregó al usuario final y se registró en su espacio empresarial. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  |
+>[!NOTE]
+> Debe haber recibido este archivo. csv con la compra de su dispositivo. Si no recibió un archivo. csv, puede crear uno solo si sigue los pasos que se indican en [Agregar dispositivos a Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). El script de Windows PowerShell es diferente del que se usa para el [portal de administración de escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). Los partners deben usar [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) para registrar dispositivos para dispositivos de escritorio administrados por Microsoft en el centro de asociados.
+
+Si recibe un mensaje de error al intentar cargar el archivo. csv, compruebe el formato del archivo. Puede usar solo el hash de hardware, el nombre de OEM, el número de serie y el modelo (en ese orden de columnas) o el identificador de producto de Windows. También puede usar el archivo. csv de ejemplo que se proporciona en el vínculo junto a **Agregar dispositivos** para crear una lista de dispositivos. 
+
+Para obtener más información acerca de AutoPilot en escenarios de asociados, consulte [Agregar dispositivos a una cuenta de cliente](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 
 
+## <a name="register-devices-by-using-the-oem-api"></a>Registrar dispositivos con la API de OEM
 
-## <a name="troubleshooting"></a>Solución de problemas
+Antes de completar el registro de un cliente, primero debe establecer una relación con ellos. Debe tener un vínculo único para proporcionar a sus clientes respectivos. Vea [cómo establecer una relación de OEM](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
-| Mensaje de error | Detalles |
-|---------------|-------------|
-| No se encontró el dispositivo | No pudimos registrar este dispositivo porque no encontramos una coincidencia para el fabricante, modelo o número de serie que se ha proporcionado. Confirma estos valores con el proveedor del dispositivo. |
-| Hash de hardware no válido | El hash de hardware que ha proporcionado para este dispositivo no tiene el formato correcto. Compruebe el hash de hardware y vuelva a enviarlo. |
-| El dispositivo ya está registrado | Este dispositivo ya está registrado en su organización. No se requiere ninguna otra acción. |
-| Dispositivo reclamado por otra organización | Este dispositivo ya ha sido reclamado por otra organización. Consulta con el proveedor del dispositivo. |
-| Error inesperado | La solicitud no se pudo procesar automáticamente. Póngase en contacto<support link>con el soporte técnico () y proporcione el identificador de solicitud:<requestId> |
+Una vez que haya establecido la relación, puede empezar a registrar dispositivos para clientes que usen la etiqueta de grupo **Microsoft365Managed_Autopilot**.
+
+> [!IMPORTANT]
+> El nombre del grupo debe coincidir con **Microsoft365Managed_Autopilot** exactamente, incluido el carácter de mayúsculas y caracteres especiales. Esto permitirá que los dispositivos recién registrados se asignen con el perfil de Microsoft Managed Desktop AutoPilot.

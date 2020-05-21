@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 4305d97d33439383989cf8c300522268727b1ae7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173467"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327665"
 ---
 # <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
 
@@ -101,10 +101,13 @@ Para ayudarle a la información que necesita con mayor rapidez, las acciones de 
 * Aplicación (aplicaciones de correo electrónico y nube, incluidos Office 365 y Microsoft Cloud App Security)
 * Infraestructura (no hay acciones de mejora por ahora)
 
+>[!NOTE]
+>En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado que ha hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de la identidad y la API de Graph. [Ver detalles](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
-![Página Web de](../../media/secure-score/secure-score-homepage.png)
-puntuación segura*figura 1: Página de introducción a la calificación segura de Microsoft*
+![Página Web de puntuación segura ](../../media/secure-score/secure-score-homepage.png)
+ *figura 1: Página de introducción a la calificación segura de Microsoft*
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar su puntuación
 
@@ -118,8 +121,8 @@ La clasificación se basa en el número de puntos restantes que quedan para logr
 
 Al seleccionar una acción de mejora específica, aparece un elemento flotante de página completa.  
 
-![Ejemplo](../../media/secure-score/secure-score-improvement-action-details.png)
-de control flotante de acción de mejora*figura 2: ejemplo de control flotante de acción de mejora*
+![Ejemplo de control flotante de acción de mejora ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *figura 2: ejemplo de control flotante de acción de mejora*
 
 Para completar la acción, tiene algunas opciones:
 
@@ -175,6 +178,12 @@ La puntuación segura de Microsoft es un resumen numérico de su postura de segu
 ## <a name="whats-new"></a>Novedades 
 
 Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md).
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilidad con la puntuación segura de la identidad y la API de Graph
+
+En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado. Estos cambios permiten una vista más flexible y precisa de la postura de seguridad. Sin embargo, estas actualizaciones han hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de identidad y la API de Graph.
+
+En el tiempo, la calificación de identidad segura y la API de Graph adoptarán el nuevo modelo de calificación. Hasta entonces, los clientes verán las diferencias en los resultados indicados por la puntuación segura de Microsoft, la puntuación segura de identidad y la API de Graph. Lamentamos las molestias y los motivos para garantizar que estas experiencias sean más compatibles en el futuro.
 
 ### <a name="april-2020"></a>Abril de 2020
 

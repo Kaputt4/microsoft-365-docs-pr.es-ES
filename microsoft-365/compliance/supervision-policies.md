@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034564"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327258"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
 
@@ -139,7 +139,7 @@ Tiene la opción de incluir tipos de información confidencial como parte de la 
 - Privacidad
 - Tipo de información personalizada
 
-Para obtener más información acerca de los detalles de información confidencial y los patrones incluidos en los tipos predeterminados, vea [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información acerca de los detalles de información confidencial y los patrones incluidos en los tipos predeterminados, vea tipos de [información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md).
 
 #### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
@@ -182,7 +182,7 @@ La siguiente tabla explica más sobre cada condición.
 | **Los datos adjuntos contienen alguna de estas palabras** <br><br> **Los datos adjuntos no contienen ninguna de estas palabras** | Para aplicar la Directiva cuando ciertas palabras o frases se incluyen o excluyen en un adjunto de mensaje (como un documento de Word), escriba cada palabra o frase y sepárelas con una coma. Cada palabra que escriba se aplica por separado (solo se debe aplicar una palabra para que la Directiva se aplique a los datos adjuntos). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **Los datos adjuntos son cualquiera de estos tipos de archivo** <br><br> **Datos adjuntos no es ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyan o excluyan tipos de datos adjuntos específicos, escriba las extensiones de archivo (por ejemplo,. exe o. pdf). Si desea incluir o excluir varias extensiones de archivo, indíquela en líneas separadas. Para que se aplique la Directiva, solo debe coincidir una extensión de datos adjuntos.|
 | **El tamaño del mensaje es mayor que** <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes según un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que esté sujeto a revisión. Por ejemplo, si especifica que **el tamaño del mensaje es superior a** \> **1,0 MB**, todos los mensajes que tengan 1,01 MB o más, estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
-| **El dato adjunto es mayor que** <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** \> a **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
+| **El dato adjunto es mayor que** <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** a \> **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Coincidencia de palabras y frases para mensajes de correo electrónico o datos adjuntos
 <a name="Matchwords"> </a> Cada palabra que escriba y separe con una coma se aplica por separado (solo se debe aplicar una palabra para que la condición de la Directiva se aplique al correo electrónico o los datos adjuntos). Por ejemplo, vamos a usar la condición, el **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Banker" y "comercio de Insiders" separadas por una coma (Banker, transacciones de Insider). La Directiva se aplica a todos los mensajes que incluyan la palabra "Banker" o la frase "comercio Insider". Solo una de estas palabras o frases debe aparecer para que esta condición de directiva se aplique. Las palabras del mensaje o del archivo adjunto deben coincidir exactamente con lo que se especifique.
@@ -213,7 +213,7 @@ Es fácil supervisar los resultados de las directivas de supervisión y aplicar 
 
 ### <a name="supervision-policy-dashboard"></a>Panel de directivas de supervisión
 
-Use el panel de directivas de supervisión para administrar los resultados de la Directiva de supervisión y para resolver los elementos pendientes. Este panel permite a los revisores ver los elementos que se deben revisar, actuar en un elemento y revisar los resultados de los elementos revisados y resueltos anteriormente para cada directiva de supervisión. Puede tener acceso al panel Directiva de supervisión en el centro de cumplimiento al **supervisar** > *la Directiva* > personalizada**abierta**.
+Use el panel de directivas de supervisión para administrar los resultados de la Directiva de supervisión y para resolver los elementos pendientes. Este panel permite a los revisores ver los elementos que se deben revisar, actuar en un elemento y revisar los resultados de los elementos revisados y resueltos anteriormente para cada directiva de supervisión. Puede tener acceso al panel Directiva de supervisión en el centro de cumplimiento al **supervisar**  >  *la directiva personalizada*  >  **abierta**.
 
 #### <a name="dashboard-home"></a>Página principal del panel
 
@@ -283,7 +283,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 >[!NOTE]
 >Las directivas de supervisión deben aprovisionarse antes de que aparezcan en los informes. Si se eliminan las directivas, aún se muestran los datos históricos. Sin embargo, se indican como una "Directiva no existente" y la función de **exportación** no está disponible.
 
-## <a name="audit"></a>Las
+## <a name="audit"></a>Auditoría
 
 En algunos casos, debe proporcionar información a los auditores reglamentarios o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esta información puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que cambia una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Los historiales de auditoría detallados de cada acción supervisada por las directivas de supervisión proporcionan una prueba de los procedimientos de supervisión.
 

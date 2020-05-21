@@ -5,12 +5,12 @@ keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Document
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804799"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327929"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados por Microsoft 
 
@@ -25,7 +25,7 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ordenar los dispositivos, trabaje con los contactos de canal comercial para asegurarse de elegir la configuración correcta. En esta tabla, la *fecha de archivo* es la fecha en la que estos modelos estarán sujetos a una vida de servicio de escritorio administrada de Microsoft más corta; los dispositivos que se adjuntan después de esta fecha no recibirán un período completo de tres años de soporte desde el escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran en [dispositivos de escritorio administrado de Microsoft](archived-device-list.md). *Fecha de retiro* es la fecha en la que el escritorio administrado de Microsoft ya no será compatible con este modelo. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del escritorio administrado de Microsoft, sin importar que se hayan inscrito.
 
 >[!NOTE]
->Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\***.
+>Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero se proporcionará un aviso de 90 días para cualquier cambio que afecte al archivo o a la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\*** .
 
 
 **Dispositivos de escritorio administrados por Microsoft**
@@ -54,19 +54,23 @@ Los vínculos a los dispositivos aquí son solo para su referencia. Si desea ord
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV, cámara de INFRARROJOs o lector de huellas digitales obligatorios | 6 de junio de 2020 | 6 de junio de 2023 |
 | [Estación de trabajo HP Z2 mini G4](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB de RAM | SKU con 8QR48AV| 31 de enero de 2021 | 31 de enero de 2024 |
 |[Estación de trabajo móvil HP ZBook 14U/15U G6](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB de RAM | SKU con 5VS02AV, se requiere cámara IR | 30 de noviembre de 2020 | 30 de noviembre de 2023 |
-| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8 GB de RAM | None | 2 de agosto de 2020 | 2 de agosto de 2023 |
-| [Portátil Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB de RAM | None | 16 de octubre de 2020 | 16 de octubre de 2023 |
-| **\*[Portátil Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB de RAM | None | 22 de octubre de 2021 | 22 de octubre de 2024 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB de RAM | None | 16 de octubre de 2020 | 16 de octubre de 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB de RAM | None | 22 de octubre de 2021 | 22 de octubre de 2024 |
-
-
+| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8 GB de RAM | Ninguna | 2 de agosto de 2020 | 2 de agosto de 2023 |
+| [Portátil Surface 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB de RAM | Ninguna | 16 de octubre de 2020 | 16 de octubre de 2023 |
+| **\*[Portátil Surface 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB de RAM | Ninguna | 22 de octubre de 2021 | 22 de octubre de 2024 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB de RAM | Ninguna | 16 de octubre de 2020 | 16 de octubre de 2023 |
+| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB de RAM | Ninguna | 22 de octubre de 2021 | 22 de octubre de 2024 |
 
 Además, el dispositivo también debe cumplir con estos criterios:     
 
 - Tener una imagen aprobada por el escritorio administrado por Microsoft. Cuando solicite dispositivos, asegúrese de especificar que se usan con el escritorio administrado de Microsoft.
 - No ha completado la experiencia de primera ejecución de Windows.
 - Registrarse con Microsoft Managed Desktop mediante la característica de [registro de dispositivos](https://aka.ms/mmddrhelp)
+
+>[!NOTE]
+>Los dispositivos con un procesador de 2,0 GHz o superior proporcionarán una experiencia mucho mejor para los usuarios que participan en estas actividades:
+>- Usar conferencias de vídeo con Microsoft Teams. Consulte [requisitos de hardware para Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) para obtener más información.
+>-  Usar un dispositivo para varias cargas de trabajo diferentes.
+>- Uso de varios monitores.
 
 **Ayuda adicional**
 

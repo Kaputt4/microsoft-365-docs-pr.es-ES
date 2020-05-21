@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 8b7d60d8b1a3c7295dbeda93c9f2e017ca6f9282
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043311"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327886"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -108,7 +108,7 @@ Para obtener más información, vea [casos de administración de riesgos de Insi
 
 ![Investigación de administración de riesgos de Insider](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se han investigado los casos, los revisores pueden tomar medidas rápidamente para resolver el caso o colaborar con otras partes interesadas de riesgo de la organización. Cuando los empleados infringen accidental o involuntariamente las condiciones de las directivas, se puede enviar una notificación de recordatorio simple al empleado a partir de plantillas de notificación que puede configurar para su organización. Estos avisos pueden servir como recordatorios sencillos o dirigir al empleado a un entrenamiento o guía de refresco para ayudar a evitar un comportamiento arriesgado futuro. Para obtener más información, consulte [plantillas de aviso de administración de riesgos de Insider](insider-risk-management-notices.md).
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Obtenga información sobre cómo cambiar el tema predeterminado de Microsoft 365 y personalizarlo para que se ajuste al logotipo o al logotipo de su compañía. '
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262334"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327211"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el tema de 365 de Microsoft para su organización
 
@@ -64,7 +64,7 @@ Obtenga información sobre cómo personalizar el tema en el centro de administra
     
 4. Seleccione **Guardar cambios**.
     
-Verá el nuevo tema en el centro de administración inmediatamente y después de un breve retraso, lo verá en Microsoft 365, incluidas las páginas en Outlook, SharePoint, la [aplicación móvil de SharePoint para iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)y la [aplicación móvil de SharePoint para Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Para obtener un ejemplo de dónde puede personalizar los cambios de tema desde el centro de administración, consulte la siguiente imagen.
+Verá el nuevo tema en el centro de administración inmediatamente y, tras un breve retraso, lo verá en Microsoft 365, incluidas las páginas en Outlook, SharePoint, la [aplicación móvil de SharePoint para iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)y la [aplicación móvil de SharePoint para Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Para obtener un ejemplo de dónde puede personalizar los cambios de tema desde el centro de administración, consulte la siguiente imagen.
 
 ![M365-admin-tenant-Theme-conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 

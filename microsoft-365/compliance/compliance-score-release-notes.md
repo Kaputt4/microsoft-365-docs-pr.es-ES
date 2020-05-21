@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión y problemas conocidos de la puntuación de cumplimiento de Microsoft (versión preliminar), una característica del centro de cumplimiento de M365 que ayuda a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790595"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330784"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notas de la versión de calificación de cumplimiento de Microsoft (versión preliminar)
 
@@ -32,6 +32,7 @@ La puntuación de cumplimiento es una nueva característica del [centro de cumpl
 Las nuevas plantillas preconfiguradas para evaluaciones se publican en producción para la puntuación de cumplimiento (versión preliminar) a medida que estén disponibles. Compruebe la [lista completa de plantillas aquí](compliance-score.md#templates). Las plantillas agregadas recientemente incluyen:
 
 - Ley de protección de datos general de Brasil (LGPD)
+- Solución de seguridad de la información Dubai (DGISR)
 - IRAP/Australian Government ISM (versión preliminar)
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ La puntuación de cumplimiento ahora está disponible en los siguientes idiomas,
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>Las acciones comunes sincronizarán el estado entre grupos
 
-Si su organización tiene varios grupos de evaluaciones, el comportamiento de las acciones **técnicas** (es decir, las acciones que afectan a toda la organización) ha cambiado. Todas las acciones duplicadas entre grupos se han combinado en una sola acción. Esa única acción contiene todas las notas y evidencias cargadas de las versiones duplicadas. Con este cambio, las acciones técnicas se comportarán como lo hacían cuando pertenecían al mismo grupo. Cualquier cambio realizado en la acción en un grupo o evaluación se reflejará ahora en todas las instancias. El **Estado de implementación**, la **fecha de implementación**, el estado de **prueba**y la **fecha** de prueba reflejarán las actualizaciones más recientes.
+Si su organización tiene varios grupos de evaluaciones, el comportamiento de las acciones **técnicas** (es decir, las acciones que afectan a toda la organización) ha cambiado. Todas las acciones duplicadas entre grupos se han combinado en una sola acción. Esa única acción contiene todas las notas y evidencias cargadas de las versiones duplicadas. Con este cambio, las acciones técnicas se comportarán como lo hacían cuando pertenecían al mismo grupo. Cualquier cambio realizado en la acción en un grupo o evaluación se reflejará ahora en todas las instancias. El **Estado de implementación**, la **fecha de implementación**, el **Estado de prueba**y la fecha de **prueba**   reflejarán las actualizaciones más recientes.
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>Relación de puntuación de cumplimiento con el administrador de cumplimiento
 

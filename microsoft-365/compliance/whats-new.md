@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034272"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327742"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -70,7 +70,7 @@ La espera ha finalizado. Nos complace anunciar que el centro de cumplimiento de 
 > [!TIP]
 > Vuelva a leer la actualización del mes anterior para obtener una vista previa de algunas de las [nuevas soluciones](#new-compliance-solutions) que hemos mostrado recientemente, así como un [plan de desarrollo](#updated-compliance-solutions) que muestra dónde se encuentran ahora las características de cumplimiento del centro de seguridad & cumplimiento en Microsoft 365.
 
-Marque y recorra ahora para [https://compliance.microsoft.com](https://compliance.microsoft.com) repasar su punto de partida único para administrar el cumplimiento en su organización... o [Lea este artículo](microsoft-365-compliance-center.md) para profundizar un poco más.
+Marque y recorra ahora para repasar su punto de partida [https://compliance.microsoft.com](https://compliance.microsoft.com) único para administrar el cumplimiento en su organización... o [Lea este artículo](microsoft-365-compliance-center.md) para profundizar un poco más.
 
 ![Página principal del centro de cumplimiento de Microsoft 365](../media/mcc-home-ga.png)
 
@@ -162,10 +162,10 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |**Característica**|**Centro de seguridad y cumplimiento de Office 365**|**Centro de cumplimiento de Microsoft 365**|**Más información**|
 |:-----|:-----|:-----|:-----|
 |eDiscovery avanzado|eDiscovery > eDiscovery avanzado <br/> https://protection.office.com/advancedediscoverycases |eDiscovery > avanzado <br/> https://compliance.microsoft.com/advancedediscovery | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](overview-ediscovery-20.md) |
-|Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el centro de seguridad y cumplimiento](alert-policies.md) |
+|Directivas de alerta|Alertas > directivas de alertas <br/> https://protection.office.com/alertpolicies |En este momento, las directivas de alertas se administran solo en el centro de cumplimiento de & de seguridad de Office 365. |[Directivas de alerta en el Centro de seguridad y cumplimiento](alert-policies.md) |
 |Alertas|Alertas > ver alertas <br/> https://protection.office.com/viewalerts |Alertas <br/> https://compliance.microsoft.com/compliancealerts |[Ver alertas](alert-policies.md#viewing-alerts)|
 |Archivar|Archivo de > de gobierno de información <br/> https://protection.office.com/archiving |Ficha archivo del gobierno de información > <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Habilitar buzones de archivo](enable-archive-mailboxes.md)|
-|Búsqueda de registros de auditoría|Búsqueda > búsqueda de registros de auditoría <br/> https://protection.office.com/unifiedauditlog |Las <br/> https://compliance.microsoft.com/auditlogsearch | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)|
+|Búsqueda de registros de auditoría|Búsqueda > búsqueda de registros de auditoría <br/> https://protection.office.com/unifiedauditlog |Auditoría <br/> https://compliance.microsoft.com/auditlogsearch | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md)|
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
 |Prevención de pérdida de datos|Prevención de pérdida de datos <br/> https://protection.office.com/datalossprevention |Prevención de pérdida de datos <br/> https://compliance.microsoft.com/datalossprevention |[Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)|
@@ -177,7 +177,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](labels.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Información general sobre las directivas de retención](retention-policies.md)|
-|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)|
+|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)|
 |Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el centro de seguridad & cumplimiento](service-assurance.md)|
 |Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento de las comunicaciones <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |

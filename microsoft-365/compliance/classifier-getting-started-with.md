@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292436"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327762"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -34,7 +34,7 @@ Este método requiere la intervención humana y la acción. Un administrador pue
 Esta categoría de mecanismos de clasificación incluye la búsqueda de contenido por:
 
 - Palabras clave o valores de metadatos (lenguaje de consulta de palabras clave)
-- uso de patrones identificados previamente de información confidencial, como seguridad social, números de tarjeta de crédito o cuenta bancaria [(tipos de información confidencial)](what-the-sensitive-information-types-look-for.md)
+- uso de patrones identificados anteriormente de información confidencial, como seguridad social, números de tarjeta de crédito o cuenta bancaria [(definiciones de entidad de tipo información confidencial)](sensitive-information-type-entity-definitions.md)
 - Reconocimiento de un elemento porque es una variante de una plantilla [(impresión](document-fingerprinting.md) de los dedos de los documentos)
 - mediante la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
 
@@ -115,9 +115,9 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 ## <a name="see-also"></a>Vea también
 
 - [Etiquetas de retención](labels.md)
-- [directivas de retención](retention-policies.md)
-- [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
+- [Directivas de retención](retention-policies.md)
+- [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
-- [impresión de los dedos del documento](document-fingerprinting.md)
-- [coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)
+- [Impresión de los dedos del documento](document-fingerprinting.md)
+- [Coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

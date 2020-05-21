@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140434"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327247"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Los buzones compartidos no necesitan una licencia a menos que el buzón tenga más de 50 GB de datos. Siga estas instrucciones para quitar una licencia de un buzón de correo compartido de manera que pueda asignarla a un usuario o devolver la licencia para que no pague por una licencia que no necesite.
+Los buzones compartidos no suelen requerir una licencia. Siga estas instrucciones para quitar una licencia de un buzón de correo compartido de manera que pueda asignarla a un usuario o devolver la licencia para que no pague por una licencia que no necesite.
+
+> [!NOTE]
+> Se requiere una licencia en las siguientes situaciones:
+> 1. El buzón compartido tiene más de 50 GB de almacenamiento en uso.
+> 2. El buzón de correo compartido usa el archivado local.
+> 3. El buzón compartido se coloca en retención por juicio.
+
   
 ## <a name="remove-the-license"></a>Quitar la licencia
 

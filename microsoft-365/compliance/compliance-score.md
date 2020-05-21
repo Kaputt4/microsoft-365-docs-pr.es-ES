@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La puntuación de cumplimiento de Microsoft ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para enfrentarse a los riesgos.
-ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c7a4bdfd5de7a9a6dcbede5146ebb517acdb4bb
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140855"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330804"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Puntuación de cumplimiento de Microsoft (versión preliminar)
 
@@ -111,20 +111,21 @@ Las plantillas preconfiguradas para la puntuación de cumplimiento son:
 1. [Ley de protección de datos general de Brasil (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [Ley de privacidad del consumidor de California (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (versión preliminar)
 3. [Matriz de controles de nube (CCM) de Cloud Security Alliance (CSA) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [tecnología](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / el[gobierno australiano ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [Solución de seguridad de la información Dubai (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [RGPD de la Unión Europea](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [Moderado FedRAMP](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [Alta tecnología](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [ISM del gobierno australiano](https://go.microsoft.com/fwlink/?linkid=2113024) (versión preliminar)
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Línea base de protección de datos 365 de Microsoft](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 Vea [las instrucciones detalladas para crear plantillas](working-with-compliance-manager.md#templates), que se produce en el administrador de cumplimiento.
 

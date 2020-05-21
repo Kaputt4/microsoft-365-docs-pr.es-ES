@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210556"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327620"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -124,7 +124,7 @@ Tiene la opción de incluir tipos de información confidencial como parte de la 
 - Privacidad
 - Tipo de información personalizada
 
-Para obtener más información acerca de los detalles de información confidencial y los patrones incluidos en los tipos predeterminados, vea [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información acerca de los detalles de información confidencial y los patrones incluidos en los tipos predeterminados, vea tipos de [información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md).
 
 ### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
@@ -151,7 +151,7 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condition**|**Cómo usar esta condición**|
+|**Condición**|**Cómo usar esta condición**|
 |:-----|:-----|
 | **El contenido coincide con cualquiera de estos clasificadores** | Se aplican a la Directiva cuando se incluyen o excluyen clasificadores en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados deben configurarse por separado antes de que estén disponibles para esta condición. Solo se puede definir un clasificador como condición en una directiva. Para obtener más información acerca de la configuración de clasificadores, consulte [Classifiers](classifier-getting-started-with.md). |
 | **El contenido contiene cualquiera de estos tipos de información confidencial** | Se aplican a la Directiva cuando se incluyen o excluyen tipos de información confidencial en un mensaje. Algunos clasificadores están predefinidos en su espacio empresarial y los clasificadores personalizados se pueden configurar por separado o como parte del proceso de asignación de condición. Cada tipo de información confidencial que elija se aplica por separado y solo uno de estos tipos de información confidencial se debe aplicar para que la Directiva se aplique al mensaje. Para obtener más información acerca de los tipos personalizados de información confidencial, vea [tipos personalizados de información confidencial](custom-sensitive-info-types.md). |
@@ -200,7 +200,7 @@ Las plantillas de notificaciones son plantillas de correo electrónico personali
 |**Nombre de la plantilla** | Sí | Nombre descriptivo de la plantilla de aviso que seleccionará en el flujo de trabajo Notify durante la corrección, admite caracteres de texto. |
 | **Dirección del remitente** | Sí | La dirección de uno o más usuarios o grupos que envían el mensaje al empleado con una coincidencia de Directiva, seleccionada en Active Directory de la suscripción. |
 | **Direcciones CC y CCO** | No | Que los usuarios o grupos opcionales reciban una notificación de la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción. |
-| **Subject** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
+| **Asunto** | Sí | La información que aparece en la línea de asunto del mensaje admite caracteres de texto. |
 | **Cuerpo del mensaje** | Sí | La información que aparece en el cuerpo del mensaje admite texto o valores HTML. |
 
 ### <a name="html-for-notices"></a>HTML para avisos
@@ -237,7 +237,7 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
-| **Size** | El tamaño del mensaje en KB. |
+| **Tamaño** | El tamaño del mensaje en KB. |
 | **Asunto/título** | El asunto del mensaje o el título del chat. |
 | **Tags** | Las etiquetas asignadas a un mensaje, ya sea *dudosa*, *compatible*o *no compatible*. |
 | **Remitir a** | El nombre de usuario de la persona incluida como parte de una acción de elevación de mensajes. |

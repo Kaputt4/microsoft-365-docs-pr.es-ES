@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para su inquilino con la aplicación de plantilla de análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262540"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327677"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -83,7 +83,7 @@ Para iniciar la aplicación de plantilla, debe ser **administrador global**, **l
 
 5.  Haga clic en **explorar aplicación** para ver la aplicación con los datos de ejemplo. Haga clic en **conectar** para conectar la aplicación con los datos de la organización.
 
-6.  Después de hacer clic en **conectar**, en la pantalla **conectar con el análisis de uso de Microsoft 365** , escriba el identificador de inquilino que copió en el paso (1) a \> **continuación**.
+6.  Después de hacer clic en **conectar**, en la pantalla **conectar con el análisis de uso de Microsoft 365** , escriba el identificador de inquilino (sin guiones) que copió en el paso (1) y seleccione **siguiente**.
     
 7. En la siguiente pantalla, seleccione **oAuth2** como el **método de autenticación** , \> **inicie sesión**. Si elige cualquier otro método de autenticación, se producirá un error en la conexión con la aplicación de plantilla.
     

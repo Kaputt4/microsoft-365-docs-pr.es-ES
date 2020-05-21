@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muchas organizaciones disponen de un proceso para identificar y clasificar información confidencial mediante las propiedades de clasificación en la infraestructura de clasificación de archivos (FCI) de Windows Server, las propiedades del documento en SharePoint o las propiedades del documento aplicadas por un sistema de terceros. Si se describe su organización, puede crear una directiva de DLP que reconozca las propiedades que se han aplicado a los documentos por FCI de Windows Server o cualquier otro sistema, de modo que la Directiva DLP se pueda aplicar en documentos de Office con FCI específicos o con otros valores de propiedad.
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632205"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327106"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -54,13 +54,13 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 1. Inicie sesión en el Centro de administración de Microsoft 365.
     
-2. En el panel de navegación izquierdo, elija **centros** \> de administración **SharePoint**. Ahora está en el Centro de administración de SharePoint.
+2. En el panel de navegación izquierdo, elija **centros de administración** \> **SharePoint**. Ahora está en el Centro de administración de SharePoint.
     
-3. En el panel de navegación izquierdo, elija **Buscar** \> en la página \> **Administración de búsquedas** **administrar esquema de búsqueda**.
+3. En el panel de navegación izquierdo, elija **Buscar** \> en la página **Administración de búsquedas** \> **administrar esquema de búsqueda**.
     
     ![Página de administración de búsqueda en el Centro de administración de SharePoint](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. En la página \> **propiedades administradas** , **nueva propiedad administrada**.
+4. En la página **propiedades administradas** , \> **nueva propiedad administrada**.
     
     ![Página de Propiedades administradas con el botón Nueva propiedad administrada resaltado](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -70,13 +70,13 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
     
 7. En **Características principales**, seleccione **Consultable** y **Recuperable**.
     
-8. \> En **asignaciones a propiedades rastreadas** , **agregue una asignación**.
+8. En **asignaciones a propiedades rastreadas** , \> **agregue una asignación**.
     
-9. En el cuadro \> de diálogo **selección de propiedades rastreadas** , busque y seleccione la propiedad rastreada que corresponda a la propiedad de Windows Server FCI u otra propiedad que vaya a \> usar en la Directiva DLP **correcta**.
+9. En el cuadro de diálogo **selección de propiedades rastreadas** \> , busque y seleccione la propiedad rastreada que corresponda a la propiedad de Windows Server FCI u otra propiedad que vaya a usar en la Directiva DLP \> **correcta**.
     
     ![Cuadro de diálogo de selección de propiedades rastreadas](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
-10. En la parte inferior de la \> página **Aceptar**.
+10. En la parte inferior de la página \> **Aceptar**.
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Crear una directiva DLP que use una propiedad de FCI u otra propiedad
 
@@ -92,13 +92,13 @@ A continuación, crean una directiva DLP con dos reglas que usan las propiedades
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>Crear la Directiva DLP mediante PowerShell
 
-Tenga en cuenta que las propiedades de documento de condición **contienen alguno de estos valores** no está disponible temporalmente en la &amp; interfaz de usuario del centro de seguridad y cumplimiento, pero puede usar esta condición con PowerShell. Puede usar `New\Set\Get-DlpCompliancePolicy` los cmdlets para trabajar con una directiva DLP y usar `New\Set\Get-DlpComplianceRule` los cmdlets con el `ContentPropertyContainsWords` parámetro para agregar las propiedades del documento de condición que **contienen cualquiera de estos valores**.
+Tenga en cuenta que las propiedades de documento de condición **contienen alguno de estos valores** no está disponible temporalmente en la interfaz de usuario del centro de seguridad &amp; y cumplimiento, pero puede usar esta condición con PowerShell. Puede usar los `New\Set\Get-DlpCompliancePolicy` cmdlets para trabajar con una directiva DLP y usar los `New\Set\Get-DlpComplianceRule` cmdlets con el `ContentPropertyContainsWords` parámetro para agregar las propiedades del documento de condición que **contienen cualquiera de estos valores**.
   
 Para obtener más información sobre estos cmdlets, [consulte &amp; cmdlets del centro de seguridad y cumplimiento](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Conectarse al centro de &amp; seguridad y cumplimiento con PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al centro de seguridad y &amp; cumplimiento con PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Cree la Directiva con `New-DlpCompliancePolicy`el.
+2. Cree la Directiva con el `New-DlpCompliancePolicy` .
 
 A continuación, se muestra un ejemplo de PowerShell que crea una directiva DLP que se aplica a todas las ubicaciones.
 
@@ -106,7 +106,7 @@ A continuación, se muestra un ejemplo de PowerShell que crea una directiva DLP 
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. Cree las dos reglas descritas anteriormente usando `New-DlpComplianceRule`, donde una regla es para el valor **bajo** , y otra regla es para los valores **alto** y **moderado** . 
+3. Cree las dos reglas descritas anteriormente usando `New-DlpComplianceRule` , donde una regla es para el valor **bajo** , y otra regla es para los valores **alto** y **moderado** . 
     
     A continuación, se muestra un ejemplo de PowerShell que crea estas dos reglas. Tenga en cuenta que los pares nombre-valor de propiedad se incluyen entre comillas, y un nombre de propiedad puede especificar varios valores separados por comas sin espacios, como`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -135,9 +135,9 @@ Para obtener más información, vea [Solicitar manualmente el rastreo y una nuev
   
 ### <a name="re-index-a-site-optional"></a>Volver a indexar un sitio (opcional)
 
-1. En el sitio, elija **configuración** (icono de engranaje en la parte \> superior derecha) **configuración del sitio**.
+1. En el sitio, elija **configuración** (icono de engranaje en la parte superior derecha) \> **configuración del sitio**.
     
-2. En **Buscar**, elija \> **reindizar el sitio**de **disponibilidad de búsqueda y sin conexión** .
+2. En **Buscar**, elija reindizar el sitio de **disponibilidad de búsqueda y sin conexión** \> **Reindex site**.
     
 ## <a name="more-information"></a>Más información
 
@@ -149,4 +149,4 @@ Para obtener más información, vea [Solicitar manualmente el rastreo y una nuev
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Inventario de tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)
