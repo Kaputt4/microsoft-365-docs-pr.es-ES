@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214308"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254313"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>Estándares de los sistemas de gestión de la calidad ISO 9001:2015
 
@@ -33,23 +33,27 @@ Una empresa de auditoría de terceros independiente realizó una rigurosa revisi
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
-- [Azure](https://aka.ms/AzureCompliance).
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government y Dynamics 365 Germany
+- Microsoft Graph
 - Intune
+- Protección contra amenazas avanzada de Microsoft Defender
+- Bot de Microsoft Healthcare
 - Escritorio administrado de Microsoft
-- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de Power Automate (anteriormente conocido como Microsoft Flow) como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
+- Power BI incrustado
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-- [Informe de evaluación de Microsoft Azure ISO 9001 del AF19](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [Certificado ISO 9001 de Microsoft Azure del AF19](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [Ver informes de auditoría adicionales](https://aka.ms/auditreports)
+- [Azure, Dynamics 365 y servicios en línea: certificado ISO9001](https://aka.ms/azureiso9001cert)
+- [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO9001](https://aka.ms/azureiso9001report)
+- [Azure, Dynamics 365 y servicios en línea: Declaración de aplicabilidad (SOA) ISO9001](https://aka.ms/azureiso9001soa)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ¿A quién se aplica la norma?
 

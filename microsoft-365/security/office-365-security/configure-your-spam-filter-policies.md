@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 85517d5caeac900623c61ef8294b416ddbd97eb8
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 4850fa9f44bb4f9b23b40bc4e30c6e8ba4fac0ff
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213381"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340815"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -341,9 +341,9 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
    - **Habilitar las notificaciones de correo no deseado para el usuario final**: seleccione la casilla para habilitar las notificaciones. Desactive la casilla para deshabilitar las notificaciones.
 
    - **Enviar notificaciones de correo no deseado para el usuario final cada (días)**: seleccione la frecuencia con la que se envían las notificaciones. El valor predeterminado es 3 días. Puede escribir entre 1 y 15 días.
-   
+
      Existen tres ciclos de notificaciones de correo no deseado del usuario final dentro de un período de 24 horas que comienzan en los siguientes horarios: 01:00 UTC, 08:00 UTC y 16:00 UTC. 
-    
+
      > [!NOTE]
      > Si alguna notificación se ausenta durante un ciclo anterior, el ciclo subsiguiente enviará la notificación. Esto puede hacer que parezca que hay varias notificaciones en un mismo día.
 

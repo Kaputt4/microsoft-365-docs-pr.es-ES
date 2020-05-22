@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066453"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254193"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autoevaluación de la nube Security Alliance (CSA)
 
@@ -68,7 +68,7 @@ Permita que los CSP documenten el cumplimiento de CSA, la publicación de proced
 **¿Qué niveles de garantía de CSA STAR obtuvieron los servicios empresariales en la nube de Microsoft?**
 
 - **Nivel 1**: **Autoevaluación para CSA STAR**: Azure, Dynamics 365 y Office 365. El análisis automático es una oferta complementaria de los proveedores de servicios en la nube para documentar sus controles de seguridad y así ayudar a los clientes a evaluar la seguridad del servicio.
-- **Nivel 2**: **Certificación CSA STAR**: Azure, Cloud App Security, Intune y Power BI. La certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Se otorga después de una evaluación rigurosa hecha por terceros de los controles y prácticas de seguridad de un proveedor de servicios en la nube.
+- **Nivel 2**: **Certificación CSA STAR**: Azure, Microsoft Cloud App Security, Intune y Power BI. La certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Se otorga después de una evaluación rigurosa hecha por terceros de los controles y prácticas de seguridad de un proveedor de servicios en la nube.
 - **Nivel 2**: **Atestación de CSA STAR**: Azure e Intune. CSA y AICPA han colaborado para proporcionar directrices para CPA a utilizar en la realización de SOC 2, con criterios de AICPA (Principios de Servicio de Confianza, AT 101) y CCM CSA. La atestación de STAR se basa en estas directrices y se otorga después de las evaluaciones independientes de estrictos de los proveedores en la nube.
 
 ## <a name="resources"></a>Recursos

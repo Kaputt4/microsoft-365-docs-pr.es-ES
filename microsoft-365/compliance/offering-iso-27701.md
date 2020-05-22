@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222022"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254173"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Sistema de Administración de Información de Privacidad (PIMS)
 
@@ -67,10 +67,30 @@ Puntos clave en ISO/IEC 27001 y PIMS:
 
 Indistintamente del tamaño de su organización y de si se trata de un controlador o un procesador, su organización debe considerar la posibilidad de obtener la certificación, ya sea para su propia organización o solicitarla a proveedores o suministradores en función de los requisitos de su negocio. Esto es especialmente aplicable a los procesadores, subprocesadores y co-controladores que procesan grandes volúmenes de datos confidenciales o personales. En todo caso, su organización debe evaluar las necesidades de su negocio para determinar si la certificación de sus propios productos y servicios es adecuada.
 
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+
+- Azure, Azure Government y Azure Alemania
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government y Dynamics 365 Germany
+- Microsoft Graph
+- Bot de Microsoft Healthcare
+- Intune
+- Escritorio administrado de Microsoft
+- Power Automate (anteriormente Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI incrustado
+- Power Virtual Agents
+- Microsoft Stream
+- Expertos en amenazas de Microsoft
+- Protección contra amenazas avanzada de Windows Defender
+
+
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-- [Certificación de Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Informe de evaluación de Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure, Dynamics 365 y servicios en línea: certificado ISO27701](https://aka.ms/azureiso27701cert)
+- [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO27701](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usar la puntuación de Microsoft Compliance para evaluar el riesgo
 

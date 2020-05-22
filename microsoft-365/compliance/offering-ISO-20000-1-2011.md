@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065925"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254203"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 administración del servicio de tecnologías de la información
 
@@ -37,26 +37,28 @@ Una empresa de auditoría de terceros independiente realizó una rigurosa revisi
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
-- [Azure y Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Protección contra amenazas avanzada de Microsoft Defender
+- Microsoft Graph
+- Bot de Microsoft Healthcare
 - Intune
 - Escritorio administrado de Microsoft
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - Office 365 operado por 21Vianet
+- Microsoft PowerApps
+- Power Automate (anteriormente Microsoft Flow)
 - Power BI
+- Power BI incrustado
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-Documentación ISO 20000-1:2017 para Azure, Intune, Escritorio administrado de Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centros de datos de Microsoft
+Documentación ISO 20000-1 de la siguiente forma:
 
-- [Informe de la evaluación](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [Certificado](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [Estado de aplicabilidad](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure, Dynamics 365 y servicios en línea: certificado ISO20000-1](https://aka.ms/azureiso200001cert)
+- [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO20000-1](https://aka.ms/azureiso200001report)
+- [Azure, Dynamics 365 y servicios en línea: Declaración de aplicabilidad (SOA) ISO20000-1](https://aka.ms/azureiso200001soa)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Dónde puedo obtener los informes de auditoría y declaraciones de ámbito ISO 20000-1:2011 para los servicios de Microsoft?**
 
