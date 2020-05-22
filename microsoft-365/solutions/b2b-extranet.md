@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo crear un sitio o un equipo de extranet B2B con usuarios invitados administrados desde una organización asociada.
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166154"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342515"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Para obtener más información, consulte Crear una extranet de B2B con invitados administrados.
 
@@ -30,6 +30,12 @@ Con este método de compartir recursos para colaboración, la organización asoc
 En este artículo se describen los pasos para crear un paquete de recursos (en este caso, un sitio o un equipo) que puede compartir con una organización asociada a través de un modelo de registro de acceso sin ayuda de autoservicio. 
 
 Antes de empezar, cree el sitio o equipo que desea compartir con la organización asociada y habilítelo para compartir el invitado. Consulte [colaborar con invitados en un sitio](collaborate-in-site.md) o [colaborar con los invitados en un equipo](collaborate-as-team.md) para obtener más información. También le recomendamos que revise [crear un entorno seguro de uso compartido de invitados](create-secure-guest-sharing-environment.md) para obtener información sobre las características de seguridad y cumplimiento que puede usar para ayudar a mantener sus directivas de gobierno al colaborar con invitados.
+
+## <a name="video-demonstration"></a>Vídeo de demostración
+
+Este vídeo muestra los procedimientos descritos en este artículo.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>Conexión de la organización asociada
 

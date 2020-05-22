@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327762"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339918"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -33,10 +33,10 @@ Este método requiere la intervención humana y la acción. Un administrador pue
 
 Esta categoría de mecanismos de clasificación incluye la búsqueda de contenido por:
 
-- Palabras clave o valores de metadatos (lenguaje de consulta de palabras clave)
-- uso de patrones identificados anteriormente de información confidencial, como seguridad social, números de tarjeta de crédito o cuenta bancaria [(definiciones de entidad de tipo información confidencial)](sensitive-information-type-entity-definitions.md)
-- Reconocimiento de un elemento porque es una variante de una plantilla [(impresión](document-fingerprinting.md) de los dedos de los documentos)
-- mediante la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
+- Palabras clave o valores de metadatos (lenguaje de consulta de palabras clave).
+- Uso de patrones identificados anteriormente de información confidencial, como seguridad social, números de tarjeta de crédito o cuenta bancaria [(definiciones de entidad de tipo información confidencial)](sensitive-information-type-entity-definitions.md).
+- Reconocimiento de un elemento porque es una variante de una plantilla [(impresión](document-fingerprinting.md)de los dedos de los documentos).
+- Uso de la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en la [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) y en [las directivas de retención](retention-policies.md).
 
@@ -44,8 +44,10 @@ Las etiquetas de confidencialidad y retención se pueden aplicar automáticament
 
 Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente por los métodos de coincidencia de patrón manuales o automatizados. Este método de clasificación es más sobre cómo entrenar a un clasificador para identificar un elemento en función de lo que es el elemento, no por los elementos que están en el elemento (coincidencia de modelos). Un clasificador aprende a identificar un tipo de contenido mirando cientos de ejemplos del contenido que le interesa clasificar. Empiece por alimentar los ejemplos que están en la categoría de forma indefinida. Una vez que los procesa, lo prueba mediante una combinación de ambos ejemplos que coinciden y no coinciden. A continuación, el clasificador crea predicciones sobre si un elemento determinado pertenece a la categoría que se está creando. A continuación, se confirman los resultados, se ordenan los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus predicciones. Al publicar el clasificador entrenado, los elementos se ordenan en lugares como SharePoint Online, Exchange y OneDrive, y clasifican el contenido.
 
-> [!IMPORTANT]
-> Tanto los clasificadores integrados como los clasificadores que se pueden entrenar están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance.md). Las etiquetas de confidencialidad solo pueden usar clasificadores integrados como condición, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md).
+### <a name="where-you-can-use-trainable-classifiers"></a>Dónde puede usar clasificadores interexperto
+Tanto los clasificadores integrados como los clasificadores que se pueden entrenar están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance-configure.md). 
+
+Las etiquetas de confidencialidad pueden usar clasificadores integrados y de creación propia como condiciones, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md)y [etiquetado automático para las aplicaciones de Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
 
 > [!IMPORTANT]
 > Los clasificadores que se pueden entrenar solo funcionan con elementos que no están cifrados y que están en inglés.
@@ -53,6 +55,18 @@ Este método de clasificación es especialmente adecuado para el contenido que n
 ### <a name="licensing-requirements"></a>Requisitos de licencia
 
 Los clasificadores que se pueden entrenar son una característica de cumplimiento de Microsoft 365 E5 o E5. Debe tener una de estas suscripciones para poder usarla.
+
+### <a name="pre-requisites"></a>Requisitos previos
+
+Para acceder a los clasificadores que se puedan entrenar en la interfaz de usuario: 
+- el administrador global debe participar en el inquilino.
+- Se necesita el rol de administrador de cumplimiento o el administrador de datos de cumplimiento para entrenar un clasificador
+
+Necesitará cuentas con estos permisos para usar clasificadores que se puedan entrenar en estos escenarios:
+
+- Escenario de directiva de etiqueta de retención: RecordManagement y roles de administración de retención 
+- Escenario de directiva de etiqueta de confidencialidad: administrador de seguridad, administrador de cumplimiento, administrador de datos de cumplimiento
+- Escenario de directiva de cumplimiento de comunicaciones: administrador de administración de riesgos de Insider, administrador de revisión de supervisión 
 
 ## <a name="types-of-classifiers"></a>Tipos de clasificadores
 
@@ -112,12 +126,13 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 
 ![clasificador de flujo de proceso capacitable](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
+
 
 - [Etiquetas de retención](labels.md)
 - [Directivas de retención](retention-policies.md)
 - [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Impresión de los dedos del documento](document-fingerprinting.md)
 - [Coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
