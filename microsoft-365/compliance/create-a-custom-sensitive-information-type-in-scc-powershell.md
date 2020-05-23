@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento.
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632355"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327792"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento
 
-Prevención de pérdida de datos (DLP) de Microsoft 365 incluye muchos [tipos de información confidencial](what-the-sensitive-information-types-look-for.md) integrados preparados para usarlos en las directivas DLP. Estos tipos integrados pueden ayudar a identificar y proteger números de tarjeta de crédito, cuentas bancarias, números de pasaporte y mucho más. 
+Prevención de pérdida de datos (DLP) de Microsoft 365 incluye muchos [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md) integrados preparados para usarlos en las directivas DLP. Estos tipos integrados pueden ayudar a identificar y proteger números de tarjeta de crédito, cuentas bancarias, números de pasaporte y mucho más. 
   
 Sin embargo, ¿y si tiene que identificar y proteger otro tipo de información confidencial (por ejemplo, un id. de empleado que usa un formato específico de su organización)? Para ello, puede crear un tipo personalizado de información confidencial definido en un archivo XML denominado *paquete de reglas*.
   
@@ -908,6 +908,6 @@ Puede copiar este marcado, guardarlo como un archivo XSD y usarlo para validar e
 
 - [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
-- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)

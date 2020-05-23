@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 897fc513d0f129a273f87107dc8e85127890ee6e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066111"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254399"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Certificación Cloud Security Alliance (CSA) STAR
 
@@ -42,23 +42,24 @@ Infórmese sobre cómo acelerar la implementación de la certificación de CSA S
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
 
 - [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Cloud App Security
+- Microsoft Graph
+- Bot de Microsoft Healthcare
 - Intune
 - Escritorio administrado de Microsoft
-- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- Protección contra amenazas avanzada de Microsoft Defender
 - OMS Service Map
-- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- Power Automate (anteriormente conocido como Microsoft Flow): el servicio en la nube como servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio en la nube de PowerApps: como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - Power BI: la parte del servicio en la nube de Power BI ofrecida como servicio independiente o incluida en un plan de marca o conjunto de aplicaciones de Office 365
-- Stream
+- Power BI incrustado
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
 
-- [ Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Escritorio administrado de Microsoft, OMS Service Map, PowerApps, Power BI y Microsoft Stream; todos con la certificación CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Dynamics 365 y servicios en línea: certificado CSA STAR](https://aka.ms/azurecsastarcert)
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Con qué estándares del sector se alinea CSA CCM?**
 
@@ -66,16 +67,16 @@ Con estándares de seguridad, reglamentos y marcos de control aceptados por el s
 
 **¿Dónde puedo ver la certificación CSA STAR para los servicios en la nube de Microsoft?**
 
-Puede descargar la [Certificación CSA STAR](https://aka.ms/csastar-certification) para Azure, que también cubre Intune y Power BI, desde el Registro de CSA.
+Puede visualizar la [certificación CSA STAR](https://aka.ms/csastar-certification) para Azure, que también cubre Dynamics 365, Intune y Power BI, desde el Registro de CSA.
 
 **¿Qué nivel de madurez lograron los servicios en la nube de Microsoft?**
 
-Azure, Cloud App Security, Intune y Power BI lograron la categoría "Oro", que es el mayor reconocimiento posible en la evaluación de la Capacidad de Madurez.
+Azure, Microsoft Cloud App Security, Intune y Power BI lograron la categoría "Oro", que es el mayor reconocimiento posible en la evaluación de la Capacidad de Madurez.
 
 **¿Qué niveles de garantía de CSA STAR obtuvieron los servicios empresariales en la nube de Microsoft?**
 
 - **Nivel 1**: **Autoevaluación para CSA STAR**: Azure, Dynamics 365 y Office 365. La [Autoevaluación](offering-csa-star-self-assessment.md) es una oferta gratuita de los proveedores de servicios en la nube para documentar sus controles de seguridad y ayudar a los clientes a evaluar la seguridad del servicio.
-- **Nivel 2**: **Certificación CSA STAR**: Azure, Cloud App Security, Intune y Power BI. La certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Se otorga después de una evaluación rigurosa hecha por terceros de los controles y prácticas de seguridad de un proveedor de servicios en la nube.
+- **Nivel 2**: **Certificación CSA STAR**: Azure, Microsoft Cloud App Security, Intune y Power BI. La certificación STAR exige lograr la certificación ISO/IEC 27001 y cumplir los criterios especificados en la CCM. Se otorga después de una evaluación rigurosa hecha por terceros de los controles y prácticas de seguridad de un proveedor de servicios en la nube.
 - **Nivel 2**: **Atestación de CSA STAR**: Azure e Intune. CSA y AICPA han colaborado para proporcionar directrices para que los CPA las utilicen en la realización de compromisos SOC 2, con criterios de AICPA (Principios de Servicio de Confianza, AT 101) y la CCM de CSA. [La Atestación STAR](offering-CSA-STAR-Attestation.md) se basa en estas directrices y se otorga tras rigurosas evaluaciones independientes a los proveedores en la nube.
 
 ## <a name="resources"></a>Recursos

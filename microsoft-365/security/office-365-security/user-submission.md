@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: d3ff44957864e3d5e959d6252d1d538cc715ae92
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294198"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347812"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Especificar un buzón para envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online
 
@@ -71,12 +71,15 @@ La entrega de mensajes de usuario que se han informado a un buzón de correo per
 
         - **Microsoft y un buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Los envíos de usuarios Irán a Microsoft para su análisis y al buzón de correo personalizado para que los analice el administrador o el equipo de operaciones de seguridad.
 
-        - **Buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya al administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador lo reenvíe.
+        - **Buzón personalizado**: en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. No se permiten los grupos de distribución. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis en primer lugar. Los mensajes no pasarán a Microsoft a menos que el administrador los reenvíe por sí mismos.
 
-        Cuando haya terminado, haga clic en **confirmar**.
+        > [!NOTE]
+        > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas. 
 
-     > [!CAUTION]
-     > Si ha [deshabilitado la notificación de correo no deseado en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la web mediante el complemento de mensajes de informe.
+      Cuando haya terminado, haga clic en **confirmar**.
+
+      > [!CAUTION]
+      > Si ha [deshabilitado la notificación de correo no deseado en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con directivas de buzón de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán informar de los mensajes a Microsoft en Outlook en la web mediante el complemento de mensajes de informe.
 
    - **Deshabilitar la característica de mensaje de informe para Outlook**: Seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento de mensajes de informe o la creación de informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
@@ -88,13 +91,13 @@ La entrega de mensajes de usuario que se han informado a un buzón de correo per
 
 Los mensajes que se envían a los buzones personalizados deben seguir un formato de correo de envío específico. El asunto (título de sobre) del envío debe tener este formato:
 
-`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
 
-fueron SafetyApiAction es:
+se SafetyAPIAction es uno de los siguientes valores enteros:
 
-- Correo no deseado = 1
-- NotJunk = 2
-- Phish = 3
+- 1: correo no deseado
+- 2: NotJunk
+- 3: phish
 
 En el siguiente ejemplo:
 
@@ -102,7 +105,7 @@ En el siguiente ejemplo:
 - El identificador de mensaje de red es 49871234-6dc6-43e8-ABCD-08d797f20abe.
 - La IP del remitente es 167.220.232.101.
 - La dirección de es test@contoso.com.
-- El asunto del correo electrónico del mensaje es "probar el envío de phish"
+- La línea de asunto del mensaje es "test phish Submission"
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
 

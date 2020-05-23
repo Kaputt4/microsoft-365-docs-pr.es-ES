@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha adoptado Microsoft 365 Enterprise.
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625355"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268427"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise para Contoso Corporation
 
@@ -68,16 +68,11 @@ Vea los siguientes artículos para obtener más información:
 
   Contoso usa todas las características de seguridad de Microsoft 365 Enterprise para la administración de acceso e identidades, la protección contra amenazas, la protección de la información y la administración de seguridad.
 
-- [Equipo para un proyecto secreto](contoso-team-for-top-secret-project.md)
+- [Equipo para un proyecto secreto](../solutions/contoso-team-for-top-secret-project.md)
 
-  Para crear un entorno de colaboración seguro para un proyecto secreto, Contoso usó un equipo para datos altamente regulados.
+  Para crear un entorno de colaboración seguro para un proyecto secreto, Contoso usó un equipo con aislamiento de seguridad.
 
-- [Sitio de SharePoint Online para recursos digitales confidenciales](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  Para proteger la propiedad intelectual y permitir que los equipos de investigación puedan colaborar más fácilmente, Contoso usó un sitio de SharePoint Online con datos altamente regulados.
-
-
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 [Obtenga más información](contoso-overview.md) sobre Contoso Corporation, sus oficinas en todo el mundo, y las consideraciones sobre diseño que se trataron al implementar Microsoft 365 Enterprise.
 

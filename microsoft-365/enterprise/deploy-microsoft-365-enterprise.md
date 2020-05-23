@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Conozca los diferentes recursos que puede utilizar para implementar Microsoft 365 para empresas en su organización.
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031431"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268338"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta, puede:
 
 - Implementar la [infraestructura de base](deploy-foundation-infrastructure.md) necesaria para la seguridad integrada y la integración de la administración simplificada, lo que permite garantizar con mayor facilidad que el software cliente esté actualizado con las mejoras de productividad y seguridad más recientes. 
  
-  La infraestructura básica se organiza como una serie de fases numeradas que se superponen y crean un entorno que es compatible con las cargas de trabajo y escenarios de Microsoft 365 Enterprise. 
+  La infraestructura básica se organiza como una serie de fases numeradas que se superponen y crean un entorno que es compatible con las cargas de trabajo de Microsoft 365 Enterprise. 
 
   **Si tiene una organización más pequeña o reciente**, siga las fases en orden para crear la infraestructura metódicamente.
 
@@ -63,13 +63,13 @@ Para implementar Microsoft 365 Enterprise por su cuenta, puede:
 
   **Si tiene una organización empresarial**,vea las fases como capas de infraestructura de TI en lugar de una ruta definida, y determine la mejor forma de cumplir los requisitos de cada capa en toda la organización.
 
-- Implementar[cargas de trabajo y escenarios](deploy-workloads.md) de productividad clave en la parte superior de la infraestructura. De esta manera, impulsará la creatividad y el trabajo en equipo en su organización.
+- Implementar[cargas de trabajo](deploy-workloads.md) de productividad clave en la parte superior de la infraestructura. De esta manera, impulsará la creatividad y el trabajo en equipo en su organización.
 
-Esta la relación entre la infraestructura de base y las cargas de trabajo y los escenarios.
+Esta es la relación entre la infraestructura de base y las cargas de trabajo.
 
-![Relación entre la infraestructura de base y las cargas de trabajo y los escenarios.](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![La relación entre la infraestructura de base y las cargas de trabajo](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Las cargas de trabajo y los escenarios operan sobre la parte superior de la infraestructura de base. Pero no necesitará que todas las fases de infraestructura de base estén implementadas para empezar a usar las cargas de trabajo para la colaboración y la productividad.
+Las cargas de trabajo operan sobre la parte superior de la infraestructura de base. Pero no necesitará que todas las fases de infraestructura de base estén implementadas para empezar a usar las cargas de trabajo para la colaboración y la productividad.
 
 Empiece su recorrido de implementación de un extremo a otro con por su cuenta [aquí](deploy-foundation-infrastructure.md).
 
@@ -126,11 +126,7 @@ Obtenga información sobre cómo Core Services Engineering and Operations (antes
 
 Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Vea cómo se implementó [Microsoft 365 Enterprise para Contoso](contoso-case-study.md) y cómo la compañía ha tomado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Aplicaciones de Microsoft 365 para empresas, administración de dispositivos móviles, protección de la información y seguridad. 
 
-## <a name="stay-current-with-deployment-content"></a>Manténgase al día con el contenido de implementación
-
-Para los últimos cambios en el contenido, vea [este artículo](microsoft-365-deploment-guide-changes.md).
-
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Para hacerlo con la ayuda directa de Microsoft, use [FastTrack](https://fasttrack.microsoft.com/microsoft365).
 

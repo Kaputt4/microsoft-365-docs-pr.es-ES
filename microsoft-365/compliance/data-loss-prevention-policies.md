@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 705c105853a67d4bb006efbfd0f3d6150f5e7181
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630607"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327708"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -289,7 +289,7 @@ Normalmente, se usan acciones menos restrictivas, como el envío de notificacion
   
 ### <a name="match-accuracy"></a>Precisión de coincidencia
 
-Como se describió anteriormente, un tipo de información confidencial se define y detecta mediante una combinación de distintos tipos de evidencia. Frecuentemente, un tipo de información confidencial se define mediante esas combinaciones, denominadas patrones. Un patrón que requiere menos evidencia tiene una precisión de coincidencia (o nivel de confianza) inferior, mientras que un patrón que requiere más evidencia tiene una precisión de coincidencia (o nivel de confianza) mayor. Para obtener más información sobre los patrones y niveles de confianza reales que usa cada tipo de información confidencial, consulte [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Como se describió anteriormente, un tipo de información confidencial se define y detecta mediante una combinación de distintos tipos de evidencia. Frecuentemente, un tipo de información confidencial se define mediante esas combinaciones, denominadas patrones. Un patrón que requiere menos evidencia tiene una precisión de coincidencia (o nivel de confianza) inferior, mientras que un patrón que requiere más evidencia tiene una precisión de coincidencia (o nivel de confianza) mayor. Para obtener más información sobre los patrones y niveles de confianza reales que usa cada tipo de información confidencial, consulte [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md).
   
 Por ejemplo, el tipo de información confidencial denominado Número de tarjeta de crédito se define mediante dos patrones:
   
@@ -332,7 +332,7 @@ Por estas razones, las instrucciones para crear reglas con diferentes precisione
 Al usar una [etiqueta de retención](labels.md) que haya creado y publicado con anterioridad como condición en una directiva DLP, debe tener en cuenta lo siguiente:
 
 - Antes de intentar usarla como una condición en una directiva DLP, debe haber creado, publicado y aplicado previamente la etiqueta de retención.
-- Las etiquetas de retención pueden tardar hasta un día en sincronizarse y hasta siete días para aplicar automáticamente después de que se hayan creado y publicado. Obtenga más información consultando, [Cuánto tardan las etiquetas de retención en aplicarse](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- Las etiquetas de retención pueden tardar hasta un día en sincronizarse y hasta siete días para aplicar automáticamente después de que se hayan creado y publicado. Obtenga más información consultando, [Cuánto tardan las etiquetas de retención en aplicarse](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
 - El uso de una etiqueta de retención en una directiva *** solo es compatible con los elementos de SharePoint Online y OneDrive para la Empresa***.
 
 
@@ -504,9 +504,13 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
     
 2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
+
+3. Durante la creación del grupo de roles, utilice la sección **Elegir roles** para añadir el rol siguiente al grupo de roles: **Administración de cumplimiento DLP**.
     
-3. Agregar el grupo de Microsoft 365 al grupo de roles.
-    
+4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
+
+También puede crear un grupo de roles solo con privilegios de lectura para las directivas DLP y los informes DLP asignando el rol de **Administración de cumplimiento DLP de solo lectura**.
+
 Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La aplicación de directivas no requiere acceso al contenido.
@@ -539,7 +543,7 @@ Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365,
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
     

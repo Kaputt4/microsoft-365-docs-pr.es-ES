@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 para empresas, cargas de trabajo y escenarios
+title: Cargas de trabajo de Microsoft 365 para empresas
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Incorpore a los usuarios de su organización en las cargas de trabajo de productividad de Microsoft 365 para empresas
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066220"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268290"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 para empresas, cargas de trabajo y escenarios
+# <a name="microsoft-365-for-enterprise-workloads"></a>Cargas de trabajo de Microsoft 365 para empresas
 
 Implemente estas cargas de trabajo en su infraestructura de base para obtener los beneficios de la creatividad y el trabajo en equipo de Microsoft 365 para empresas:
 
@@ -29,27 +29,9 @@ Implemente estas cargas de trabajo en su infraestructura de base para obtener lo
 
 Vea el artículo sobre la [migración](migration-microsoft-365-enterprise-workload.md) para obtener un plan de desarrollo que le permita migrar toda la organización a Microsoft 365 para empresas, que incluye los productos del cliente de Microsoft Office, productos locales de Office Server y dispositivos basados en Microsoft Windows.
 
-Los escenarios usan características y servicios de una forma integrada para responder a las necesidades empresariales de Microsoft 365 para empresas. 
+Estas son las cargas de trabajo de la guía de implementación general de Microsoft 365 para empresas:
 
-Una de estas necesidades es asegurarse de que los empleados puedan trabajar de forma productiva y segura cuando no estén conectados directamente a la intranet. Vea el escenario [Capacitar a los trabajadores remotos](empower-people-to-work-remotely.md) para obtener una plan de desarrollo que le permita implementar los elementos de infraestructura e impulsar la adopción de usuarios remotos para cargas de trabajo de gran importancia, como por ejemplo, Teams y Exchange Online.
-
-Otra necesidad de este tipo de información es la protección de los datos altamente regulados almacenados en Microsoft 365. Entre los datos altamente regulados, se incluyen estos recursos digitales:
-
-- Datos sujetos a regulaciones regionales.
-- Los datos más importantes para su organización, como pueden ser secretos comerciales, información de recursos humanos o financiera y estrategias de la organización.
-
-Para proteger estos datos de las amenazas internas y externas, vea:
-
-- [Teams para datos altamente regulados](secure-teams-highly-regulated-data-scenario.md)
-- [Sitios de SharePoint para datos altamente regulados](teams-sharepoint-online-sites-highly-regulated-data.md) 
-
-Estos escenarios le guiarán en la configuración de un sitio de SharePoint o un equipo de Microsoft Teams para almacenar de forma segura sus datos más importantes.
-
-En la ilustración siguiente se muestran las cargas de trabajo y los escenarios de la guía de implementación general de Microsoft 365 para empresas:
-
-![Las cargas de trabajo y los escenarios en la guía de implementación general de Microsoft 365 para empresas.](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-Vea la[Biblioteca de productividad de Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary)para escenarios adicionales. 
+![Las cargas de trabajo de la guía de implementación general de Microsoft 365 para empresas](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Requisitos previos de infraestructura básica
 

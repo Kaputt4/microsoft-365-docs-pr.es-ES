@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952633"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280560"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -48,7 +48,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
 - **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint Online o en OneDrive para la Empresa) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático (actualmente en versión preliminar). 
     
     > [!NOTE]
-    > Vea el anuncio de la versión preliminar, [Anuncio de una versión preliminar pública de la clasificación automática con etiquetas de confidencialidad en los servicios Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    > Vea el anuncio de la vista previa, [Anuncio de la vista previa pública de la clasificación automática con etiquetas de confidencialidad en los servicios de Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) y el seminario web [Introducción al etiquetado automático de SharePoint y OneDrive con etiquetas de confidencialidad](https://aka.ms/SPOAutoLabelWebinar-Recording).
     
     Este método se conoce como clasificación automática con etiquetas de confidencialidad. También se conoce como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones). 
     
@@ -76,7 +76,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |:-----|:-----|:-----|:-----|
 |Dependencia de la aplicación|[Sí](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restringir por ubicación|No |Sí |
-|Condiciones: clasificadores que se pueden entrenar|Sí (versión preliminar limitada) |No |
+|Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
 |Recomendaciones, información sobre herramientas de directiva y sustituciones de usuarios|Sí |No |
 |Modo de simulación|No |Sí |
@@ -104,16 +104,12 @@ Para obtener más información sobre las etiquetas principales y las subetiqueta
 
 El etiquetado automático en las aplicaciones de Office para Windows es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las etiquetas integradas en las aplicaciones de Office, esta funcionalidad está [en versión preliminar para algunas aplicaciones](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-La configuración de autoetiquetado para las aplicaciones de Office está disponible cuando [crea o edita una etiqueta de confidencial](create-sensitivity-labels.md):
+Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Puede elegir aplicar etiquetas de confidencialidad al contenido automáticamente cuando se detecta información confidencial. Elija de una lista de tipos de información confidencial o clasificadores capacitados:
 
-![Opciones de etiquetado automático para etiquetas de confidencialidad](../media/sensitivity-labels-auto-labeling-options.png)
-
-Puede optar por aplicar las etiquetas de confidencial al contenido automáticamente cuando el contenido contenga determinados tipos de información confidencial. Elija una opción de la lista de tipos de información confidencial o clasificadores:
-
-![Condiciones de etiquetas para el etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-conditions.png)
+![Condiciones de etiquetado para el etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Actualmente, la opción de **Clasificadores** está en versión preliminar limitada y requiere que el usuario envíe un formulario a Microsoft para habilitar esta función para su espacio empresarial. Para obtener más información, consulte la entrada del blog que [anuncia el etiquetado automático en las aplicaciones de Office mediante el uso de clasificadores integrados: versión preliminar limitada](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
+> La opción de los **Clasificadores capacitados** se está desplegando actualmente a los inquilinos en vista pública. If you don't see this option, try again in a few days.
 
 Cuando esta etiqueta de confidencialidad se aplica automáticamente, el usuario ve una notificación en su aplicación de Office. Por ejemplo:
 
@@ -131,22 +127,25 @@ Además, puede elegir si una condición debe detectar todos los tipos de informa
 
 ![Opciones de precisión de coincidencia y recuento de instancias](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>Configuración de clasificadores para una etiqueta
+### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurar clasificadores capacitados para una etiqueta
 
-Si selecciona la opción **Clasificadores**, seleccione uno o más de los clasificadores predefinidos:
+Cuando seleccione la opción**Clasificadores**, seleccione uno o más de los clasificadores capacitados incorporados de Microsoft. Si ha creado sus propios clasificadores capacitados personalizados, estos también están disponibles para seleccionar:
 
-![Opciones de clasificadores y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
+![Opciones para clasificadores capacitados y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No use este clasificador incorporado y si lo está usando actualmente, debería mover sus procesos de negocios fuera de él. Recomendamos que usen los clasificadores integrados de**Acoso selectivo**, **Blasfemias**, **Amenazas**
 
 Para más información sobre estos clasificadores, consulte [Introducción al entrenamiento de clasificadores (versión preliminar)](classifier-getting-started-with.md).
 
-Durante el período de versión preliminar, las siguientes aplicaciones son compatibles con clasificadores para las etiquetas de confidencial:
+Durante el periodo de previsualización, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de sensibilidad:
 
-- Aplicaciones para Windows de Aplicaciones de Microsoft 365 para empresas, de [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps para empresas (antes Office 365 ProPlus) para Windows, de [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
 
-- Aplicaciones de Office para la web, si ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar pública)](sensitivity-labels-sharepoint-onedrive-files.md):
+- Office para las aplicaciones web, cuando se han [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +175,7 @@ Específico para las etiquetas integradas:
 
 - Para las etiquetas recomendadas en las versiones de escritorio de Word, el contenido confidencial que desencadenó la recomendación está marcado para que los usuarios puedan revisar y quitar el contenido confidencial en lugar de aplicar la etiqueta de confidencialidad recomendada.
 
-- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Para obtener más información sobre cómo se aplican estas etiquetas en las aplicaciones de Office, capturas de pantalla de ejemplo, y cómo se detecta la información confidencial, consulte [Aplicar o recomendar automáticamente etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.office.com/es-ES/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Específico del cliente de etiquetado unificado de Azure Information Protection:
 
@@ -298,5 +297,5 @@ También puede ver los resultados de la directiva de etiquetado automático con 
 - **El visor de contenido del explorador de contenido** le permite ver el contenido del archivo.
 
 > [!TIP]
-> También puede usar el explorador de contenido para identificar ubicaciones que tienen documentos sin etiquetar y contienen información confidencial. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
+> También puede utilizar el explorador de contenidos para identificar las ubicaciones que tienen documentos con información confidencial, pero que no están etiquetados. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206633"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347800"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -41,9 +41,12 @@ Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mo
 
 Los administradores pueden usar Exchange Online PowerShell para deshabilitar, habilitar y ver el estado de la regla de correo no deseado en los buzones. Los administradores también pueden usar Exchange Online PowerShell para configurar entradas en la colección de listas seguras de los buzones (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados).
 
+> [!NOTE]
+> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados para poder realizar estos procedimientos. En concreto, necesita la función **destinatarios de correo** (que está asignada a los grupos de roles administración de la **organización**, **Administración de destinatarios**y **destinatarios de correo personalizados** ) o el rol opciones de **usuario** (que se asigna a los grupos de roles administración de la **organización** y **servicio de asistencia** de forma predeterminada). Para agregar usuarios a los grupos de roles de Exchange Online, vea [Modify role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que un usuario con permisos predeterminados puede realizar estos mismos procedimientos en su propio buzón de correo, siempre que tengan [acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
@@ -165,7 +168,7 @@ Realice uno de los siguientes procedimientos para confirmar que los límites de 
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Acerca de la configuración de correo no deseado en Outlook
 
-Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, consulte [archivos de plantilla administrativa (ADMX/ADML) y herramienta de personalización de Office para las aplicaciones de Microsoft 365 para empresas, office 2019 y office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, consulte [archivos de plantilla administrativa (ADMX/ADML) y herramienta de personalización de Office para las aplicaciones de Microsoft 365 para empresas, office 2019 y office 2016](https://www.microsoft.com/download/details.aspx?id=49030) y [cómo implementar la configuración del correo electrónico no deseado, como la lista de remitentes seguros, mediante la Directiva de grupo](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
 
 Cuando el filtro de correo electrónico no deseado de Outlook está establecido en el valor predeterminado, **no hay ningún filtro automático** en opciones **principales** de correo no deseado \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook no intenta clasificar los masaje como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) para mover los mensajes a la carpeta Para obtener más información acerca de estas opciones, vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262583"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327654"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
@@ -37,13 +37,13 @@ La acción de auditoría del buzón MailItemsAccessed abarca todos los protocolo
 
 ### <a name="auditing-sync-access"></a>Auditoría del acceso de sincronización
 
-Las operaciones de sincronización solo se registran cuando se obtiene acceso a un buzón mediante una versión de escritorio del cliente de Outlook para Windows o Mac. Durante la operación de sincronización, estos clientes suelen descargar un amplio conjunto de elementos de correo desde la nube a un equipo local. El volumen de auditoría para las operaciones de sincronización es inmenso. Por lo tanto, en lugar de generar un registro de auditoría para cada elemento de correo que está sincronizando, solo generamos un evento de auditoría para la carpeta de correo que contiene los elementos que se han sincronizado. Esto presupone que *todos* los elementos de correo de la carpeta sincronizada se han visto comprometidos. El tipo de acceso se registra en el campo OperationsProperties del registro de auditoría. 
+Las operaciones de sincronización solo se registran cuando se obtiene acceso a un buzón mediante una versión de escritorio del cliente de Outlook para Windows o Mac. Durante la operación de sincronización, estos clientes suelen descargar un amplio conjunto de elementos de correo desde la nube a un equipo local. El volumen de auditoría para las operaciones de sincronización es inmenso. Por lo tanto, en lugar de generar un registro de auditoría para cada elemento de correo que está sincronizando, solo generamos un evento de auditoría para la carpeta de correo que contiene los elementos que se han sincronizado. Esto presupone que *todos* los elementos de correo de la carpeta sincronizada se han visto comprometidos. El tipo de acceso se registra en el campo OperationProperties del registro de auditoría. 
 
 Vea el paso 2 de la sección [usar registros de auditoría de MailItemsAccessed para investigaciones forenses](#use-mailitemsaccessed-audit-records-for-forensic-investigations) para ver un ejemplo de cómo mostrar el tipo de acceso de sincronización en un registro de auditoría.
 
 ### <a name="auditing-bind-access"></a>Auditoría del acceso de enlace
 
-Una operación de enlace es un acceso individual a un mensaje de correo electrónico. Para el acceso de enlace, el identificador de mensaje de Internet de mensajes individuales se grabará en el registro de auditoría. La acción de auditoría MailItemsAccessed registra las operaciones de enlace y las agrega en un único registro de auditoría. Todas las operaciones de enlace que tienen lugar dentro de un intervalo de 2 minutos se agregan en un único registro de auditoría en el campo Carpetas de la propiedad AuditData. Cada mensaje al que se haya obtenido acceso se identifica por su identificador de mensaje de Internet. El número de operaciones de enlace agregadas al registro se muestra en el campo OperationCount en la propiedad AuditData.
+Una operación de enlace es un acceso individual a un mensaje de correo electrónico. Para el acceso de enlace, el InternetMessageId de mensajes individuales se grabará en el registro de auditoría. La acción de auditoría MailItemsAccessed registra las operaciones de enlace y las agrega en un único registro de auditoría. Todas las operaciones de enlace que tienen lugar dentro de un intervalo de 2 minutos se agregan en un único registro de auditoría en el campo Carpetas de la propiedad AuditData. Cada mensaje al que se haya obtenido acceso se identifica por su InternetMessageId. El número de operaciones de enlace agregadas al registro se muestra en el campo OperationCount en la propiedad AuditData.
 
 Vea el paso 4 de la sección [usar registros de auditoría de MailItemsAccessed para investigaciones forenses](#use-mailitemsaccessed-audit-records-for-forensic-investigations) para ver un ejemplo de cómo mostrar el tipo de acceso de enlace en un registro de auditoría.
 
@@ -152,13 +152,13 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
  
    Puede usar los datos de auditoría para las operaciones de enlace de dos maneras diferentes:
 
-     - Acceda o recopile todos los mensajes de correo electrónico a los que el atacante accedió mediante el identificador de mensaje de Internet para buscarlos y comprobar si alguno de estos mensajes contiene información confidencial.
+     - Acceda o recopile todos los mensajes de correo electrónico a los que el atacante accedió mediante el InternetMessageId para buscarlos y comprobar si alguno de estos mensajes contiene información confidencial.
 
-     - Use el identificador de mensaje de Internet para buscar registros de auditoría relacionados con un conjunto de mensajes de correo electrónico potencialmente confidenciales. Esto es útil si solo le preocupa un pequeño número de mensajes.
+     - Use el InternetMessageId para buscar registros de auditoría relacionados con un conjunto de mensajes de correo potencialmente confidenciales. Esto es útil si solo le preocupa un pequeño número de mensajes.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtrar registros de auditoría duplicados
 
-Los registros de auditoría duplicados para las mismas operaciones de enlace que tienen lugar dentro de un margen de una hora se filtran para quitar ruido de auditoría. Las operaciones de sincronización también se filtran en intervalos de una hora. La excepción a este proceso de desduplicación se produce si, para el mismo Id. de mensaje de Internet, cualquiera de las propiedades que se describen en la tabla siguiente es diferente. Si una de estas propiedades es diferente en una operación duplicada, se generará un nuevo registro de auditoría. Este proceso se describe con más detalle en la sección siguiente.
+Los registros de auditoría duplicados para las mismas operaciones de enlace que tienen lugar dentro de un margen de una hora se filtran para quitar ruido de auditoría. Las operaciones de sincronización también se filtran en intervalos de una hora. La excepción a este proceso de desduplicación se produce si, para el mismo InternetMessageId, cualquiera de las propiedades que se describen en la tabla siguiente es diferente. Si una de estas propiedades es diferente en una operación duplicada, se generará un nuevo registro de auditoría. Este proceso se describe con más detalle en la sección siguiente.
 
 | Propiedad| Description|
 |:--------|:---------|

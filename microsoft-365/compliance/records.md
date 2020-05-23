@@ -1,5 +1,5 @@
 ---
-title: Información general de registros
+title: Obtenga más información sobre los registros
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 8dcb3b03dcd908da2a3133d52c1a70ae197eee99
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949287"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231913"
 ---
-# <a name="overview-of-records"></a>Información general de registros
+# <a name="learn-about-records"></a>Obtenga más información sobre los registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
@@ -38,7 +38,9 @@ En un nivel alto, la declaración de contenido como un registro significa que:
 
 - Los registros se eliminan cuando se supera el período de retención declarado.
 
-Use las [etiquetas de retención](labels.md) para clasificar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede [publicarlas](labels.md#how-retention-labels-work-with-retention-label-policies) (de modo que los usuarios puedan usarlas para clasificar el contenido como registros) o [aplicar automáticamente estas etiquetas](labels.md#applying-a-retention-label-automatically-based-on-conditions) al contenido que desea clasificar como registro. Al usar las etiquetas de retención para declarar registros, puede implementar una única estrategia coherente de administración de registros para todos los Office 365, mientras que otras características de administración de registros, como el Centro de registros, solo se aplican al contenido de SharePoint Online.
+Puede usar las [etiquetas de retención](labels.md) para clasificar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede publicarlas (de modo que los usuarios puedan aplicarlas al contenido) o aplicarlas automáticamente al contenido que desea clasificar como registro. Para más instrucciones, consulte [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).
+
+Al usar las etiquetas de retención para declarar registros, puede implementar una estrategia de administración de registros uniforme en todo el entorno de Microsoft 365.
 
 Tenga en cuenta lo siguiente respecto a los registros:
 
@@ -60,27 +62,28 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
     Para obtener más información sobre cómo aplicar etiquetas de retención a carpetas de SharePoint y OneDrive, consulte [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **No se pueden eliminar los registros**. Si un usuario intenta eliminar un registro en Exchange, el elemento se mueve a la carpeta elementos recuperables, tal y como se describe en [Cómo funciona una directiva de retención local](retention-policies.md#content-in-mailboxes-and-public-folders).
+  - **No se pueden eliminar los registros**. Si un usuario intenta eliminar un registro en Exchange, el elemento se mueve a la carpeta elementos recuperables, tal y como se describe en [Cómo funciona una directiva de retención con ubicaciones de Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
 
     Si un usuario intenta eliminar un registro en SharePoint, se muestra un error que indica que no se eliminó el elemento y permanece en la biblioteca.
 
     ![Mensaje que indica que el elemento no se elimina de SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Si un usuario trata de eliminar un registro en OneDrive, el elemento se mueve a la biblioteca de conservación de documentos, tal y como se describe en [cómo funciona una directiva de retención con el contenido en su sitio](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
+    Si un usuario trata de eliminar un registro en OneDrive, el elemento se mueve a la biblioteca de conservación de documentos, tal y como se describe en [Cómo funciona una directiva de retención con SharePoint y OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive).
 
   - **Las etiquetas de registros no se pueden quitar**. Cuando se ha aplicado una etiqueta de registro a un elemento, solo el administrador de esa ubicación (por ejemplo, un administrador de la colección de sitios de un sitio de SharePoint) puede quitar la etiqueta de registro.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usar etiquetas de retención para declarar registros
 
-Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro. Para declarar el contenido como un registro, siga estos pasos:
+Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro:
 
-1. Cree una etiqueta de retención. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
+1. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
 
 2. En la página **Configuración de la etiqueta** del asistente, elija la opción para establecer la etiqueta de retención para declarar el contenido como un registro.
     
    ![Haga clic en usar etiqueta para clasificar contenido como una casilla de registro](../media/recordversioning6.png)
 
 3. [Publicar](labels.md#how-retention-labels-work-with-retention-label-policies) o [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) la etiqueta de retención en los sitios de SharePoint y/o cuentas de OneDrive.
+
 
 ### <a name="applying-a-retention-label-to-content"></a>Aplicar una etiqueta de retención al contenido
 

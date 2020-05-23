@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a5e5879bf176c7be72ead3c80c91934d0a1c5a01
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065765"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254419"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>ISO/IEC 27018 Código de prácticas para proteger los datos personales en la nube
 
@@ -33,32 +33,34 @@ Microsoft y la ISO/IEC 27018
 
 Al menos una vez al año, un organismo de certificación de terceros acreditado audita Microsoft Azure y Azure Alemania para garantizar que cumplen las ISO/IEC 27001 e ISO/IEC 27018, lo que permite la validación independiente de que los controles de seguridad aplicables se aplican y funcionan de forma eficaz. Como parte de este proceso de verificación de cumplimiento, los auditores validan en la declaración de aplicabilidad que los servicios de soporte técnico comerciales y los servicios en la nube de Microsoft en ámbito han incorporado controles ISO/IEC 27018 para la protección de DCP en Azure. Para respetar las normativas, los servicios de nube de Microsoft deben estar sujetos a las revisiones anuales de terceros.
 
-Al seguir las normas de la ISO/IEC 27001 y el código de prácticas incluido en la ISO/IEC 27018, Microsoft, el primer proveedor de nube que incorpora este código de prácticas, demuestra que sus directivas y procedimientos de privacidad son sólidos y se corresponden con los estándares más altos.
+Al seguir las normas de la ISO/IEC 27001 y el código de prácticas incluido en la ISO/IEC 27018, Microsoft (el primer proveedor de nube que incorpora este código de prácticas) demuestra que sus directivas y procedimientos de privacidad son sólidos y se corresponden con los estándares más altos.
 
 - **Los clientes de servicios de nube de Microsoft saben dónde se almacenan sus datos.** Dado que la ISO/IEC 27018 requiere que los PSN certificados comuniquen a los clientes acerca de los países o regiones en los que se pueden almacenar los datos, los clientes del servicio de nube de Microsoft tienen la visibilidad que necesitan para cumplir las reglas de seguridad de la información que sean aplicables.
 - **Los datos de los clientes no se utilizarán para fines de marketing o publicitarios sin consentimiento explícito.** Algunos PSN usan los datos de los clientes para sus propios fines comerciales, incluida la publicidad dirigida. Dado que Microsoft ha adoptado la norma ISO/IEC 27018 para los servicios de nube empresariales en ámbito, los clientes pueden tener la seguridad de que sus datos no se usarán nunca para estos propósitos sin consentimiento explícito y dicho consentimiento no puede ser una condición para usar el servicio de nube.
 - **Los clientes de Microsoft saben lo que ocurre con su DCP.** La ISO/IEC 27018 requiere una política que permita la devolución, transferencia y eliminación segura de información personal en un período de tiempo razonable. Si Microsoft trabaja con otras empresas que necesitan acceder a los datos de los clientes, revelará de forma proactiva las identidades de dichos subprocesadores.
-- **Microsoft cumple únicamente las solicitudes vinculantes legalmente para divulgar los datos de los clientes.** Si Microsoft debe cumplir alguna de estas solicitudes, como en el caso de una investigación criminal, siempre se lo notificará al cliente, a menos que lo prohíba la legislación.
+- **Microsoft cumple únicamente las solicitudes vinculantes legalmente para divulgar los datos de los clientes.** Si Microsoft debe cumplir alguna de estas solicitudes (como en el caso de una investigación criminal) siempre se lo notificará al cliente, a menos que lo prohíba la legislación.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure, Azure Government y Azure Alemania](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 y Dynamics 365 Germany
 - Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Microsoft 365 para empresas
-- [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Bot de Microsoft Healthcare
 - Intune
 - Escritorio administrado de Microsoft
-- El servicio de nube de Microsoft Flow como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
+- Power Automate (anteriormente conocido como Microsoft Flow): el servicio en la nube como servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
-- El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
-- El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
-- Stream
-- Azure DevOps Services
+- El servicio en la nube de PowerApps: como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
+- El servicio de nube de Power BI: como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365
+- Power BI incrustado
+- Power Virtual Agents
+- Expertos en amenazas de Microsoft
+- Microsoft Stream
 - ATP de Windows Defender: Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad
 
 ## <a name="audits-reports-and-certificates"></a>Auditorías, informes y certificados
@@ -69,32 +71,20 @@ Los servicios de soporte técnico comerciales y de nube de Microsoft se auditan 
 
 ### <a name="audits-and-reports"></a>Auditorías a informes
 
-- [Azure, Intune, Escritorio administrado de Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centro de datos de Microsoft; todos con el certificado ISO 27001 y 27018](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure, Intune, Escritorio administrado de Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centro de datos de Microsoft; todos con el informe de evaluación de auditoría del certificado ISO 27001 y 27018](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure, Intune, Escritorio administrado de Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics y centro de datos de Microsoft: declaración de aplicabilidad (SOA) de 2017 de las normas ISO 27001 y 27018](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure (Alemania ISO 27018): certificado de código de prácticas para proteger los datos personales en la nube](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure, Dynamics 365 y servicios en línea: certificado ISO27018](https://aka.ms/azureiso27018cert)
+- [Azure, Dynamics 365 y servicios en línea: informe de evaluación ISO27018](https://aka.ms/azureiso27001report)
+- [Azure Germany: ISO 27018: certificado de código de prácticas para proteger los datos personales en la nube](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365: informe de evaluación de auditoría de las ISO 27001, ISO 27018 e ISO 27017](https://aka.ms/o365isoreport)
+- [Office 365: Informe de evaluación de auditoría de las ISO 27001, 27018 y 27017](https://aka.ms/o365isoreport)
 - [Informe de evaluación de auditoría de la ISO 27018 de Yammer](https://aka.ms/YammerISO27018Auditreport)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Informe de evaluación de auditoría de la ISO 27018 de Dynamics 365](https://aka.ms/dynamics365iso27018auditreport)
-- [Informe de evaluación de auditoría de la ISO 27018 de Dynamics 365 for Marketing](https://aka.ms/dynamics365Marketingiso27018auditreport)
-- [Informe de evaluación de auditoría de la ISO 27018 de Dynamics 365 Parature](https://aka.ms/dynamics365Paratureiso27018auditreport)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
 - [Certificado de ISO 27018 de Azure DevOps Services DCP 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
 
-### <a name="windows-defender-atp"></a>ATP de Windows Defender
-
-- [ATP de Windows Defender: certificado de ISO 27018 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [ATP de Windows Defender: informe de evaluación de auditoría de ISO 27001 y 27018 de Detección y respuesta de puntos de conexión, Investigación automática y corrección, Puntuación de seguridad](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
-
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿A quién se aplica la ISO/IEC 27018?**
 
@@ -105,7 +95,7 @@ Este código de práctica se aplica a los CSP que procesan DCP en un contrato pa
 En el contexto de la ISO/IEC 27018:
 
 - Los "controladores" controlan la recopilación, posesión, procesamiento o uso de información personal. Se incluyen aquellos que la controlan en nombre de otra empresa.
-- Los 'procesadores' procesan información en nombre de los controladores; no toman decisiones sobre cómo usar la información o el propósito del procesamiento. Para proporcionar los servicios de nube empresariales, Microsoft, como proveedor, es un procesador de información.
+- Los 'procesadores' procesan información en nombre de los controladores; no toman decisiones sobre cómo usar la información o el propósito del procesamiento. Para proporcionar los servicios de nube empresariales, Microsoft (como proveedor) es un procesador de información.
 
 **¿Dónde puedo ver la información de cumplimiento normativo de Microsoft para la norma ISO/IEC 27018?**
 

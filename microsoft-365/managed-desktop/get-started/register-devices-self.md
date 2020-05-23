@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557558"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347824"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
 Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft Managed Desktop en el portal de Azure.
 
 > [!NOTE]
-> ¿Está trabajando con un partner para obtener dispositivos? Si es así, no tiene que preocuparse por obtener los hash de hardware; se ocuparán de ello. Asegúrese de que su compañero establece una relación con usted en el [centro de Partners](https://partner.microsoft.com/dashboard) y que incluye privilegios de administración delegados para Azure Active Directory y Office 365. Su socio puede obtener más información en [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una vez que se ha establecido esta relación, el socio simplemente registrará los dispositivos en su nombre; no se requiere ninguna otra acción por parte del usuario. Si desea ver los detalles o su compañero tiene preguntas, consulte [pasos para que los partners registren dispositivos](register-devices-partner.md). Una vez que se hayan registrado los dispositivos, puede continuar con la [comprobación de la imagen](#check-the-image) y [la entrega de los dispositivos](#deliver-the-device) a los usuarios.
+> ¿Está trabajando con un partner para obtener dispositivos? Si es así, no tiene que preocuparse por obtener los hash de hardware; se ocuparán de ello. Asegúrese de que su compañero establece una relación con usted en el [centro de Partners](https://partner.microsoft.com/dashboard). Su socio puede obtener más información en [ayuda del centro de asociados](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una vez que se ha establecido esta relación, el socio simplemente registrará los dispositivos en su nombre; no se requiere ninguna otra acción por parte del usuario. Si desea ver los detalles o su compañero tiene preguntas, consulte [pasos para que los partners registren dispositivos](register-devices-partner.md). Una vez que se hayan registrado los dispositivos, puede continuar con la [comprobación de la imagen](#check-the-image) y [la entrega de los dispositivos](#deliver-the-device) a los usuarios.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Preparar el registro de nuevos dispositivos
 
@@ -53,7 +53,7 @@ Microsoft Managed Desktop identifica cada dispositivo de manera única haciendo 
 3. Realizar`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Activa el dispositivo que estás registrando, pero *no inicia la experiencia de instalación*. Si inicia de forma accidental la experiencia del programa de instalación, tendrá que restablecer o volver a crear una imagen del dispositivo.
 5. Inserte la unidad USB y, a continuación, presione Mayús + F10.
-6. Abra un símbolo del sistema de PowerShell con derechos administrativos y `cd <pathToUsb>`, a continuación, ejecute.
+6. Abra un símbolo del sistema de PowerShell con derechos administrativos y, a continuación, ejecute `cd <pathToUsb>` .
 7. Realizar`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Realizar`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Quite la unidad USB y, a continuación, apague el dispositivo ejecutando`shutdown -s -t 0`
@@ -107,7 +107,7 @@ Siga estos pasos:
 
 Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
 
-| Estado | Descripción |
+| Estado | Description |
 |---------------|-------------|
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](#troubleshooting-device-registration) para obtener más información. |

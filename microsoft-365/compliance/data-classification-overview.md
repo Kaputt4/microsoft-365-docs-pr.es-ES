@@ -1,5 +1,5 @@
 ---
-title: Introducción a la clasificación de los datos (vista previa)
+title: Introducción a la clasificación de los datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957280"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327876"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>Información general sobre la clasificación de datos (vista previa)
+# <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
 Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerla sea cual sea su ubicación y garantizar que se conserve y elimine en función de las necesidades de la organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](labels.md) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
@@ -33,11 +33,41 @@ Como administrador de Microsoft 365 o administrador de cumplimiento, puede evalu
 - un resumen de las actividades que los usuarios llevan a cabo con el contenido confidencial;
 - las ubicaciones de los datos confidenciales y retenidos.
 
+También puede administrar estas características en la página de clasificación de datos:
+- [clasificadores que se pueden entrenar](classifier-getting-started-with.md)
+- [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+
 Puede encontrar la clasificación de los datos en el **Centro de cumplimiento de Microsoft 365** o en el **Centro de seguridad de Microsoft 365** > **Clasificación** > **Clasificación de datos**.
+
+Participe en un recorrido en vídeo de nuestras características de clasificación de datos.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+La clasificación de datos analizará su contenido confidencial y el contenido etiquetado antes de crear ninguna directiva. Esto se denomina **administración de cambios de zero**. Esto le permite ver el impacto que las etiquetas de confidencialidad y retención están teniendo en su entorno para que pueda comenzar con la evaluación de sus necesidades de protección y directivas de gobernanza de datos.
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Complemento de cumplimiento avanzado (E5)
+- Complemento de inteligencia de amenazas avanzado (E5)
+
+### <a name="permissions"></a>Permissions
+
+ Para obtener acceso a la página de clasificación de datos, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.
+
+**Grupos de roles de Microsoft 365**
+
+- Administrador global
+- Administrador de cumplimiento
+- Administrador de seguridad
+- Administrador de datos de cumplimiento
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Tipos de información confidencial más usados en el contenido.
 
-Microsoft 365 dispone de un gran número de definiciones de tipos de información confidencial, como, por ejemplo, para elementos que contengan números de la seguridad social o números de tarjetas de crédito. Para obtener más información sobre los tipos de información confidencial, vea [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 dispone de un gran número de definiciones de tipos de información confidencial, como, por ejemplo, para elementos que contengan números de la seguridad social o números de tarjetas de crédito. Para obtener más información sobre los tipos de información confidencial, consulte [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md).
 
 En la tarjeta del tipo de información confidencial se muestran los tipos de información confidencial principales que se han encontrado y etiquetado en la organización.
 
@@ -51,7 +81,7 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 > Si la tarjeta muestra el mensaje "No se ha encontrado ningún dato que contenga información confidencial". Significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
 >- [Etiquetas de confidencialidad](sensitivity-labels.md)
 >- [Etiquetas de retención](labels.md)
->- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+>- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Etiquetas principales de confidencialidad que se aplican al contenido
 
@@ -106,5 +136,6 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 - [Ver contenido etiquetado (vista previa)](data-classification-content-explorer.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](labels.md)
-- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Información general sobre las directivas de retención](retention-policies.md)
+- [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)

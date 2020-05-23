@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cec7229da0d6bef9af94dfc017794ece21aa0ac8
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626446"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292446"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -42,14 +42,16 @@ Puede usar la característica de búsqueda de contenido para buscar y eliminar u
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](assign-ediscovery-permissions.md).
-    
+
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
-    
+
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
-    
+
 - El número máximo de buzones en una búsqueda de contenido en los que puede eliminar elementos mediante una acción de búsqueda y depuración es 50 000. Si la búsqueda de contenido (que ha creado en el [paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiene más de 50 000 buzones de origen, la acción de depuración (que ha creado en el paso 3) no se realizará correctamente. En la sección [Más información](#more-information) se muestra una sugerencia para realizar una operación de búsqueda y depuración en más de 50 000 buzones. 
-    
+
 - El procedimiento descrito en este artículo solo se puede usar para eliminar elementos de buzones y carpetas públicas de Exchange Online. No se puede usar para eliminar el contenido de los sitios de SharePoint o OneDrive para la Empresa.
+
+- Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery avanzado no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones se almacenan en una ubicación de almacenamiento de Azure y no en el servicio activo. Esto significa que no se devolverán por la búsqueda de contenido que creó en el paso 1. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Paso 1: Crear una búsqueda de contenido para buscar el mensaje que quiera eliminar
 
