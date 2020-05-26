@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Use esta guía del laboratorio de pruebas para habilitar la administración del acceso con privilegios en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632868"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352527"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise
 
@@ -62,9 +62,9 @@ En esta fase, se comprueba que la Directiva de acceso privilegiado funciona y qu
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Probar la capacidad de ejecutar una tarea no definida en una directiva de acceso privilegiada
 
-En primer lugar, conéctese a PowerShell de administración de Exchange con las credenciales de un usuario configurado como administrador global en el entorno de prueba e intente crear una nueva regla de diario. La tarea [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) no se define actualmente en una directiva de acceso privilegiada para su organización.
+En primer lugar, conéctese a PowerShell de administración de Exchange con las credenciales de un usuario configurado como administrador global en el entorno de prueba e intente crear una nueva regla de diario. La tarea [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) no se define actualmente en una directiva de acceso privilegiada para su organización.
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation** > **Microsoft Exchange Online** con la cuenta de administrador global para su entorno de prueba.
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation**  >  **Microsoft Exchange Online** con la cuenta de administrador global para su entorno de prueba.
 
 2. En Exchange Management PowerShell, cree una nueva regla de diario para su organización:
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. Inicie sesión en el [centro de administración de 365 de Microsoft](https://admin.microsoft.com) con las credenciales de la cuenta de administrador global para su entorno de prueba.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **seguridad &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -103,7 +103,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Requisito de aprobación de prueba para la tarea New-JournalRule definida en una directiva de acceso privilegiado
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation** > **Microsoft Exchange Online** usando un con la cuenta de administrador global para su entorno de prueba.
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation**  >  **Microsoft Exchange Online** usando un con la cuenta de administrador global para su entorno de prueba.
 
 2. En Exchange Management PowerShell, cree una nueva regla de diario para su organización:
 
@@ -125,7 +125,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con la cuenta de administrador global para su entorno de prueba.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **seguridad &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. Inicie sesión en el [centro de administración de 365 de Microsoft](https://admin.microsoft.com) con las credenciales del usuario 3 en su entorno de prueba (miembro del grupo de seguridad "aprobadores de acceso con privilegios" en su entorno de prueba).
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **seguridad &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Prueba de creación de una nueva regla de diario con acceso con privilegios aprobado para la tarea New-JournalRule
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation** > **Microsoft Exchange Online** con la cuenta de administrador global para su entorno de prueba.
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange online en el módulo de PowerShell remoto de Microsoft **Corporation**  >  **Microsoft Exchange Online** con la cuenta de administrador global para su entorno de prueba.
 
 2. En Exchange Management PowerShell, cree una nueva regla de diario para su organización:
 
@@ -165,7 +165,7 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 
 3. Vista que la nueva regla de diario se ha creado correctamente en Exchange Management PowerShell.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 

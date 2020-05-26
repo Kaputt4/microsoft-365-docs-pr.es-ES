@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: En este artículo, encontrará notas de la versión que contienen cambios y nuevas características para la herramienta de investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035732"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352287"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -50,4 +50,4 @@ Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en
 
 - **Trabajos** : seguimiento del estado de los procesos de ejecución prolongada.
 
-- Eliminar de forma permanente **los elementos del buzón de correo** -en situaciones urgentes, es posible que deba eliminar los elementos mal colocados de forma permanente. Para ello, puede ejecutar el comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** en Security & Compliance Center PowerShell para eliminar de forma permanente los elementos de los buzones. Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- Eliminar de forma permanente **los elementos del buzón de correo** -en situaciones urgentes, es posible que deba eliminar los elementos mal colocados de forma permanente. Para ello, puede ejecutar el comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** en Security & Compliance Center PowerShell para eliminar de forma permanente los elementos de los buzones. Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction).

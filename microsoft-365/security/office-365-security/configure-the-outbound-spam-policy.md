@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213037"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352004"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -77,7 +77,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de EOP independiente, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas de correo no deseado saliente, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas de correo no deseado saliente, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -308,7 +308,7 @@ En este ejemplo se crea una nueva Directiva de filtro de correo no deseado salie
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy).
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Paso 2: usar PowerShell para crear una regla de filtro de correo no deseado saliente
 
@@ -328,7 +328,7 @@ En este ejemplo se crea una nueva regla de filtro de correo no deseado saliente 
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Usar PowerShell para ver las directivas de filtro de correo no deseado saliente
 
@@ -350,7 +350,7 @@ En este ejemplo se devuelven todos los valores de propiedad de la Directiva de f
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>Usar PowerShell para ver las reglas de filtro de correo no deseado saliente
 
@@ -388,7 +388,7 @@ En este ejemplo se devuelven todos los valores de propiedad de la regla de filtr
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Usar PowerShell para modificar las directivas de filtro de correo no deseado saliente
 
@@ -402,7 +402,7 @@ Para modificar una directiva de filtro de correo no deseado saliente, use esta s
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>Usar PowerShell para modificar las reglas de filtro de correo no deseado saliente
 
@@ -416,7 +416,7 @@ Para modificar una regla de filtro de correo no deseado saliente, use esta sinta
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>Usar PowerShell para habilitar o deshabilitar reglas de filtro de correo no deseado saliente
 
@@ -440,7 +440,7 @@ Este ejemplo habilita la misma regla.
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) y [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [enable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) y [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>Usar PowerShell para establecer la prioridad de las reglas de filtro de correo no deseado saliente
 
@@ -480,7 +480,7 @@ En este ejemplo se quita la Directiva de filtro de correo no deseado saliente de
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy).
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>Usar PowerShell para quitar reglas de filtro de correo no deseado saliente
 
@@ -498,7 +498,7 @@ En este ejemplo se quita la regla de filtro de correo no deseado saliente denomi
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
 
 ## <a name="for-more-information"></a>Más información
 

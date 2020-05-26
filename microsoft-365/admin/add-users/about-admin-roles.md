@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618925"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294221"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
-Su suscripción incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración. Para más información, vea [Asignar roles de administrador](assign-admin-roles.md).
+Su suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de administrador que puede asignar a los usuarios de su organización usando el Centro de administración de Microsoft 365. Cada rol de administrador se asigna a una función empresarial común y da permisos a los usuarios de su organización para realizar tareas específicas en los centros de administración.
 
-> [!TIP] 
-> ¿Busca las descripciones detalladas de los roles? Consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+El Centro de administración de Microsoft 365 le permite administrar roles de Azure AD y de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure AD y en el centro de administración de Intune.
+
+¿Busca las descripciones detalladas de los roles para Azure AD? Consulte [Permisos de rol de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+¿Busca las descripciones detalladas de roles para Microsoft Intune? Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+
+Para más información acerca de la asignación de roles en el Centro de administración de Microsoft 365, consulte [Asignar roles de administrador](assign-admin-roles.md).
 
 ## <a name="things-to-consider"></a>Aspectos que se deben tener en cuenta...
 
@@ -44,32 +49,21 @@ Debido a que los administradores tienen acceso a archivos y datos confidenciales
 | Asignar el rol *menos permisivo*    | Asignar el rol *menos permisivo* significa conceder a los administradores solo el acceso que necesitan para realizar el trabajo. Por ejemplo, si desea que alguien restablezca las contraseñas de los empleados, no debe asignar el rol de administrador global ilimitado, sino asignar un rol de administrador limitado, como el de Administrador de contraseñas o Administrador del departamento de soporte técnico. Esto le ayudará a mantener sus datos seguros.                 |
 | Requerir la autenticación multifactor para administradores                  |    En realidad es una buena idea requerir MFA para todos los usuarios, pero definitivamente se debe exigir a los administradores usar la MFA para iniciar sesión. La MFA permite que los usuarios introduzcan un segundo método de identificación para comprobar que son quienes dicen ser. Los administradores pueden tener acceso a una gran cantidad de datos de clientes y empleados y, si se requiere la MFA, incluso si la contraseña del administrador se ve comprometida, esta será inútil sin la segunda forma de identificación.  <br><br>Al activar la MFA, la próxima vez que el usuario inicie sesión, deberá proporcionar una dirección de correo electrónico y un número de teléfono alternativos para recuperar la cuenta.  <br> [Configurar la autenticación multifactor](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>Faltan algunos roles en Usuarios activos > Administrar roles de administrador. ¿Dónde se encuentran?
-De forma predeterminada, primero mostramos los roles que usan la mayoría de las organizaciones. Si no encuentra un rol, vaya a la parte inferior de la lista y seleccione **Ver más roles**.
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>¿Cómo puedo saber qué permisos fueron asignados a mí?
 Si recibe un mensaje en el centro de administración que le indica que no tiene permisos para editar una configuración o una página, es porque se le ha asignado un rol que no tiene ese permiso.
 
-## <a name="what-about-the-azure-active-directory-roles"></a>¿Y qué hay sobre los roles de Azure Active Directory? 
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Roles de Azure AD disponibles en el Centro de administración de Microsoft 365
 
-El portal de Azure tiene más roles que los que están disponibles en el Centro de administración de Microsoft 365. Si tiene una empresa grande, es posible que haya roles en el portal de Azure que cubran las necesidades de su organización.
-
-Para obtener una lista y la descripción de todos los roles de Azure Active Directory, consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+El Centro de administración de Microsoft 365 le permite administrar más de 30 roles de Azure AD. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure. Si tiene una empresa grande, es posible que haya roles en el portal de Azure que cubran las necesidades de su organización.
 
 Un usuario que tenga asignado un rol de administrador tendrá el mismo nivel de acceso a los servicios en la nube a los que esté suscrita la organización, independientemente de si asigna el rol en el Centro de administración de Microsoft 365 o en el portal de Azure, o bien mediante el módulo de Azure AD para Windows PowerShell.
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Roles disponibles en el Centro de administración de Microsoft 365
-
-El Centro de administración de Microsoft 365 le permite administrar más de 30 roles de Azure AD. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure.
 
 ::: moniker range="o365-worldwide"
 
-En el centro de administración, puede ir a **Roles** y después, seleccionar cualquier rol para abrir su respectivo panel de detalles. Seleccione la pestaña **Permisos** para ver la lista detallada de lo que tienen permiso para hacer los administradores con ese rol asignado.
+En el Centro de administración de Microsoft 365, puede ir a **Roles** y seleccionar cualquier rol para abrir su respectivo panel de detalles. Seleccione la pestaña **Permisos** para ver la lista detallada de lo que tienen permiso para hacer los administradores con ese rol asignado. Seleccione la pestaña **Asignado** o **Administradores asignados** para agregar usuarios a los roles.
 
 ::: moniker-end
 
-Probablemente solo necesitará asignar los siguientes roles en su organización. (Para obtener información detallada, incluidos los cmdlets asociados a un rol, consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
+Probablemente solo necesitará asignar los siguientes roles en su organización. De forma predeterminada, primero mostramos los roles que usan la mayoría de las organizaciones. Si no encuentra un rol, vaya a la parte inferior de la lista y seleccione **Ver más roles**. (Para obtener información detallada, incluidos los cmdlets asociados a un rol, consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)).
 
 |Rol de administrador     |¿A quién se le debe asignar este rol?  |
 |---------|---------|
@@ -84,7 +78,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de servicios de Teams    |   Asigne el rol de administrador de servicios de Teams a los usuarios que necesiten acceder y administrar el centro de administración de Teams. <br><br>Los administradores de servicio de Teams también pueden: <br> - Administrar reuniones <br> - Administrar puentes de conferencia <br> - Administrar la configuración de toda la organización, incluida la federación, la actualización de equipos y la configuración de cliente de equipos   |
 |Administrador de usuarios     |    Asigne el rol de administrador de usuarios a los usuarios que necesiten hacer lo siguiente para todos los usuarios: <br> - Agregar usuarios y grupos <br> - Asignar licencias <br> - Administrar las propiedades de la mayoría de los usuarios <br> - Crear y administrar vistas de usuarios <br> - Actualizar las directivas de expiración de contraseña <br> - Administrar solicitudes de servicio <br> - Supervisar el estado del servicio <br><br>  El administrador de usuario también puede realizar las siguientes acciones para los usuarios que no sean administradores y para los usuarios que tengan asignados los siguientes roles: Lector de directorios, Invitador de usuarios invitados, Administrador del departamento de soporte técnico, Lector del centro de mensajes y Lector de informes: <br> - Administrar nombres de usuario<br> - Eliminar y restaurar usuarios<br> - Restablecer contraseñas <br> - Forzar a los usuarios a cerrar sesión <br> - Actualizar claves de dispositivo (FIDO)   |
 
-### <a name="all-roles"></a>Todos los roles
+### <a name="all-azure-ad-roles"></a>Todos los roles de Azure AD
 
  A continuación, presentamos una lista de todos los roles de administrador disponibles en el Centro de administración de Microsoft 365.
 
@@ -134,6 +128,17 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Ingeniero de soporte técnico de comunicaciones de Teams     |    Lee los detalles del registro de llamadas de todos los participantes de la llamada para solucionar problemas de comunicación.     |
 |Especialista en soporte técnico de comunicaciones de Teams     |    Lee los detalles de las llamadas de usuario solo para un usuario específico con el fin de solucionar problemas de comunicación.|
 |Administrador de usuarios     |   Restablece las contraseñas de usuario, crea y administra usuarios y grupos, incluyendo filtros, administra solicitudes de servicio y supervisa el estado del servicio.|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Roles de Microsoft Intune disponibles en el Centro de administración de Microsoft 365
+
+|Rol de administrador     |¿A quién se le debe asignar este rol?  |
+|---------|---------|
+|Administrador de aplicaciones     |   Asigne el rol de administrador de aplicaciones a los usuarios que administran el ciclo de vida de la aplicación para aplicaciones móviles, configura aplicaciones administradas por directivas y ve la información de dispositivo y los perfiles de configuración.  |
+|Operador de asistencia     |   Asigne el rol del operador de asistencia a los usuarios que asignen aplicaciones y directivas a usuarios y dispositivos. |
+|Administrador de roles de Intune    |   Asigne el rol de administrador de Intune a los usuarios que puedan asignar permisos de Intune a otros administradores y puedan administrar roles de Intune personalizados e integrados.   |
+|Administrador de directivas y perfiles     |   Asigne el rol de administrador de directivas y perfiles para que los usuarios administren directivas de cumplimiento, perfiles de configuración y la inscripción de Apple.   |
+|Operador de solo lectura     |   Asigne el rol de operador de solo lectura a los usuarios que solo puedan ver usuarios, dispositivos, detalles de inscripción y configuraciones.   |
+|Administrador escolar     |   Asigne al rol de administrador escolar a usuarios para que tengan acceso completo a la administración de dispositivos, aplicaciones y configuraciones de Windows 10 e iOS en Intune para la Educación.   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 

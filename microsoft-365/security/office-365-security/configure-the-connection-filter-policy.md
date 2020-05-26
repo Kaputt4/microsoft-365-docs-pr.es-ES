@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear los correos electrónicos de los servidores de correo electrónico.
-ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213441"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352016"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -44,7 +44,7 @@ En este tema se describe cómo configurar la Directiva de filtro de conexión pr
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a PowerShell de EOP independiente, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de filtro de conexión predeterminada, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de filtro de conexión predeterminada, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -126,7 +126,7 @@ En este ejemplo se agregan y se quitan las direcciones IP y los intervalos de di
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo quitar usuarios del portal de Usuarios restringidos en Office 365. Se agregan usuarios al portal de Usuarios restringidos para el envío correo no deseado saliente, normalmente porque la cuenta se ha visto comprometida.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 370d2ff5f98b507cd819a57e4b0de613de7ab395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035425"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351012"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Office 365
 
@@ -102,7 +102,7 @@ Para ver los detalles de un usuario específico, sustituya \<emailaddress\> por 
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
 
 Para quitar a un usuario de la lista de Usuarios restringidos, sustituya \<emailaddress\> por su dirección de correo electrónico y ejecute el siguiente comando:
 
@@ -110,4 +110,4 @@ Para quitar a un usuario de la lista de Usuarios restringidos, sustituya \<email
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress).

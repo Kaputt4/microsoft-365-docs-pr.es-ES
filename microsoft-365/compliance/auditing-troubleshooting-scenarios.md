@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudar a solucionar problemas de compatibilidad comunes para las cuentas de correo electrónico.
-ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034216"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351133"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Buscar en el registro de auditoría para investigar problemas de compatibilidad comunes
 
@@ -128,7 +128,7 @@ Si determina que no se debe establecer el reenvío de correo electrónico en el 
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Para obtener más información acerca de los parámetros relacionados con el reenvío de correo electrónico, consulte el artículo [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Para obtener más información acerca de los parámetros relacionados con el reenvío de correo electrónico, consulte el artículo [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Determinar si un usuario eliminó elementos de correo electrónico
 
@@ -192,9 +192,9 @@ Después de ejecutar la búsqueda, se muestran todos los registros de auditoría
 
 a. En el campo **objectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón de correo del usuario (por ejemplo, Sara) y el nombre de la regla de bandeja de entrada (por ejemplo, "mover mensajes desde el administrador").
 
-b. En el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. En el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
-c. El parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada. En este ejemplo, los mensajes recibidos desde admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
+c. El parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada. En este ejemplo, los mensajes recibidos desde admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
 
 d. El campo **userid** indica el usuario que creó la regla de bandeja de entrada especificada en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda.
 
@@ -202,7 +202,7 @@ d. El campo **userid** indica el usuario que creó la regla de bandeja de entrad
 
 Al revisar los registros de auditoría en el registro de auditoría, es posible que vea registros que indican que Azure Active Directory ha autenticado a un usuario externo y que ha iniciado sesión correctamente en su organización. Por ejemplo, un administrador de contoso.onmicrosoft.com puede ver un registro de auditoría que muestra que un usuario de una organización diferente (por ejemplo, fabrikam.onmicrosoft.com) inició sesión correctamente en contoso.onmicrosoft.com. De forma similar, es posible que vea registros de auditoría que indican a los usuarios con una cuenta de Microsoft (MSA), como un Outlook.com o Live.com, han iniciado sesión correctamente en su organización. En estos casos, la actividad auditada es el **usuario que ha iniciado sesión**. 
 
-Este comportamiento es intencionado. Azure Active Directory (Azure AD), el servicio de directorio, permite una *autenticación de paso a través* denominada cuando un usuario externo intenta acceder a un sitio de SharePoint o a una ubicación de OneDrive en la organización. Cuando el usuario externo intente hacerlo, se le pedirá que escriba sus credenciales. Azure AD usa las credenciales para autenticar al usuario, lo que significa que solo Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de que Azure AD autentique al usuario. El inicio de sesión correcto no significa que el usuario haya podido obtener acceso a ningún recurso o realizar otras acciones en su organización. Solo indica que Azure AD ha autenticado al usuario. Para que un usuario de paso a través obtenga acceso a los recursos de SharePoint o de OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación de uso compartido o un vínculo de uso compartido anónimo. 
+Este comportamiento es una característica del diseño de la aplicación. Azure Active Directory (Azure AD), el servicio de directorio, permite una *autenticación de paso a través* denominada cuando un usuario externo intenta acceder a un sitio de SharePoint o a una ubicación de OneDrive en la organización. Cuando el usuario externo intente hacerlo, se le pedirá que escriba sus credenciales. Azure AD usa las credenciales para autenticar al usuario, lo que significa que solo Azure AD comprueba que el usuario es quien dice ser. La indicación del inicio de sesión correcto en el registro de auditoría es el resultado de que Azure AD autentique al usuario. El inicio de sesión correcto no significa que el usuario haya podido obtener acceso a ningún recurso o realizar otras acciones en su organización. Solo indica que Azure AD ha autenticado al usuario. Para que un usuario de paso a través obtenga acceso a los recursos de SharePoint o de OneDrive, un usuario de la organización tendría que compartir explícitamente un recurso con el usuario externo enviándoles una invitación de uso compartido o un vínculo de uso compartido anónimo. 
 
 > [!NOTE]
 > Azure AD permite la autenticación de paso a través solo para *aplicaciones de origen*, como SharePoint Online y OneDrive para la empresa. No está permitido para otras aplicaciones de terceros.

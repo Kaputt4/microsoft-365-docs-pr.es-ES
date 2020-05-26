@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP) independiente. Este informe registra Cuándo un administrador agrega o quita miembros de grupos de roles de administrador, EOP registra cada ocurrencia.
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209180"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350944"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP independiente
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 Si las búsquedas devuelven muchas entradas de registro, le recomendamos que use el procedimiento proporcionado en **use Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este tema. El procedimiento de esta sección envía un archivo XML como dato adjunto de correo electrónico a los destinatarios que especifique, de modo que será más fácil extraer los datos que interesan.
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Ver los detalles de las entradas del registro de auditoría
 

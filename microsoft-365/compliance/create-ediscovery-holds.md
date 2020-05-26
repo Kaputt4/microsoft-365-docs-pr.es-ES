@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: 6405dac51c34163f8eadb359d9c29f1aa81a1b82
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551492"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352257"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -63,7 +63,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
    b. **Ubicaciones del sitio** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que las cuentas de SharePoint y OneDrive se colocan en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Haga clic en **elegir**y, a continuación, en **listo**.
   
-   c. **Carpetas públicas de Exchange.** Mueva el control](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de alternancia ![de alternancia a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   c. **Carpetas públicas de Exchange.** Mueva el control de alternancia de alternancia ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 
 8. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
 
@@ -173,7 +173,7 @@ Tenga en cuenta lo siguiente cuando coloque tanto Teams como grupos de Office 36
 Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización para que pueda agregarlas a una suspensión o una búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [crear una lista de todas las ubicaciones de OneDrive en la organización](https://docs.microsoft.com/onedrive/list-onedrive-urls). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive de la organización. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`(por ejemplo,). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión de exhibición de documentos electrónicos, la antigua y su UPN se cambian, debe actualizar la retención y tendrá que actualizar la retención y agregar la nueva dirección URL de OneDrive del usuario y quitar la antigua. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+> La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión de exhibición de documentos electrónicos, la antigua y su UPN se cambian, debe actualizar la retención y tendrá que actualizar la retención y agregar la nueva dirección URL de OneDrive del usuario y quitar la antigua. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
 ## <a name="ediscovery-hold-limits"></a>límites de retención de eDiscovery
 
@@ -189,4 +189,4 @@ En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensi
   |||
 
    > [!NOTE]
-   > <sup>1</sup> para ver una lista de más de 1.000 casos, suspensiones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de cumplimiento de & de seguridad de Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+   > <sup>1</sup> para ver una lista de más de 1.000 casos, suspensiones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de cumplimiento de & de seguridad de Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

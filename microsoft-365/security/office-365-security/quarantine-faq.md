@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden ver las preguntas más frecuentes y las respuestas sobre los mensajes en cuarentena en Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 0a231e363d5764465547ee1e80cc080c3d7c006c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213109"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351100"
 ---
 # <a name="quarantined-messages-faq"></a>Preguntas más frecuentes sobre los mensajes en cuarentena
 
@@ -40,7 +40,7 @@ Solo los administradores pueden administrar los mensajes que se pusieron en cuar
 
 ## <a name="how-do-i-quarantine-spam"></a>¿Cómo puedo poner en cuarentena el correo no deseado?
 
-De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta correo electrónico no deseado. Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena correo no deseado o mensajes de correo electrónico masivo en su lugar. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+De forma predeterminada, los mensajes clasificados como correo no deseado o correo masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta correo electrónico no deseado. Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena correo no deseado o mensajes de correo electrónico masivo en su lugar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>¿Cómo se concede a los usuarios acceso a la cuarentena?
 
@@ -62,7 +62,7 @@ Una vez transcurrido el período de tiempo, los mensajes se eliminan y no se pue
 
 En el centro de seguridad & cumplimiento, puede seleccionar y publicar hasta 100 mensajes a la vez.
 
-Los administradores pueden usar los cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) y [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) en Exchange Online PowerShell o el PowerShell independiente de EOP para buscar y liberar mensajes en cuarentena de forma masiva, así como para informar de falsos positivos en masa.
+Los administradores pueden usar los cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) y [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) en Exchange Online PowerShell o el PowerShell independiente de EOP para buscar y liberar mensajes en cuarentena de forma masiva, así como para informar de falsos positivos en masa.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>¿Se admiten caracteres comodín al buscar mensajes en cuarentena? ¿Puedo buscar mensajes en cuarentena para un dominio específico?
 

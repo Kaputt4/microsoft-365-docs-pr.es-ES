@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033660"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352163"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurar directivas de supervisión en Office 365
 
@@ -83,7 +83,7 @@ Al seleccionar un grupo de 365 de Microsoft para los usuarios supervisados, la D
 
 Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que necesite supervisar a todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de supervisión global para el grupo asignado. Esto le permite supervisar miles de usuarios con una sola directiva y mantener la Directiva de supervisión actualizada a medida que los empleados nuevos se unen a su organización.
 
-1. Cree un [grupo de distribución](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicado para la Directiva de supervisión global con las siguientes propiedades: Asegúrese de que este grupo de distribución no se use para otros fines u otros servicios de Office 365.
+1. Cree un [grupo de distribución](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) dedicado para la Directiva de supervisión global con las siguientes propiedades: Asegúrese de que este grupo de distribución no se use para otros fines u otros servicios de Office 365.
 
     - **MemberDepartRestriction = cerrado**. Garantiza que los usuarios no puedan quitar a sí mismos del grupo de distribución.
     - **MemberJoinRestriction = cerrado**. Garantiza que los usuarios no pueden agregarse a sí mismos al grupo de distribución.
@@ -136,9 +136,9 @@ Para ello, puede agregarse como miembro del grupo de funciones de revisión de s
 
 1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de seguridad & cumplimiento, vaya a **permisos** y, después,**+** haga clic en Agregar ().
+2. En el centro de seguridad & cumplimiento, vaya a **permisos** y, después, haga clic en Agregar ( **+** ).
 
-3. En la sección **roles** , haga clic en**+** agregar () y desplácese hacia abajo hasta **Administrador de revisión de supervisión**. Agregue este rol al grupo de roles.
+3. En la sección **roles** , haga clic en Agregar ( **+** ) y desplácese hacia abajo hasta **Administrador de revisión de supervisión**. Agregue este rol al grupo de roles.
 
 4. En la sección **miembros** , agregue a las personas que desea que administren la supervisión de la comunicación de su organización.
 
@@ -158,7 +158,7 @@ Use un editor de texto (como el Bloc de notas) para crear un archivo que incluya
 
 ### <a name="create-custom-sensitive-information-types"></a>Crear tipos personalizados de información confidencial
 
-1. Cree un nuevo tipo de información confidencial y agregue el diccionario personalizado en el centro de seguridad & cumplimiento. Navegue hasta **tipos de información confidencial** de **clasificaciones** \> y siga los pasos del **Asistente para nuevos tipos de información confidencial**. Aquí podrá:
+1. Cree un nuevo tipo de información confidencial y agregue el diccionario personalizado en el centro de seguridad & cumplimiento. Navegue hasta **Classifications** \> **tipos de información confidencial** de clasificaciones y siga los pasos del **Asistente para nuevos tipos de información confidencial**. Aquí podrá:
 
     - Definir un nombre y una descripción para el tipo de información confidencial
     - Definir los elementos de proximidad, nivel de confianza y patrón principal
@@ -167,7 +167,7 @@ Use un editor de texto (como el Bloc de notas) para crear un archivo que incluya
 
     Para obtener información más detallada, consulte [crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md) y [crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
 
-    Una vez creado el diccionario o léxico personalizado, puede ver las palabras clave configuradas con el cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) o agregar y quitar términos con el cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
+    Una vez creado el diccionario o léxico personalizado, puede ver las palabras clave configuradas con el cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) o agregar y quitar términos con el cmdlet [set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) .
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Paso 4: configurar una directiva de supervisión (obligatorio)
   
@@ -196,5 +196,5 @@ Después de crear una directiva de supervisión de la comunicación, es aconseja
     >[!NOTE]
     >Los correos electrónicos sujetos a directivas definidas se procesan casi en tiempo real y se pueden probar inmediatamente una vez configurada la Directiva. Los chats de Microsoft Teams pueden tardar hasta 24 horas en procesarse por completo en una directiva. 
 
-3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de supervisión de la comunicación. Navegue hasta la **supervisión** > de la*Directiva* > personalizada**abierta** para ver el informe de la Directiva.
+3. Inicie sesión en Microsoft 365 como revisor designado en la Directiva de supervisión de la comunicación. Navegue hasta la **supervisión**de la  >  *directiva personalizada*  >  **abierta** para ver el informe de la Directiva.
 

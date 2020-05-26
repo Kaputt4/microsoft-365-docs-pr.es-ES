@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: 25fbabd4c7524702a985616797b31730b14a2d8f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b68eac3dde2f6802d5a5419f8f28b5df26e0a92
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636378"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351045"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -111,7 +111,7 @@ Este es otro ejemplo para la creación de una directiva de retención de registr
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Para obtener más información, consulte [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-unifiedauditlogretentionpolicy).
+Para obtener más información, consulte [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ## <a name="view-audit-log-retention-policies"></a>Ver directivas de retención de registros de auditoría
 
@@ -124,13 +124,13 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 > [!NOTE]
 > En este momento, el cmdlet **Get-UnifiedAuditLogRetentionPolicy** no devuelve la directiva de registros de auditoría predeterminada para su organización.
 
-Para obtener más información, consulte [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/get-unifiedauditlogretentionpolicy).
+Para obtener más información, consulte [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy).
 
 ## <a name="more-information"></a>Más información
 
-- Use el cmdlet **Set-UnifiedAuditLogRetentionPolicy** en PowerShell del Centro de seguridad y cumplimiento para modificar una directiva de retención de registros de auditoría existente. Para obtener más información, consulte [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-unifiedauditlogretentionpolicy).
+- Use el cmdlet **Set-UnifiedAuditLogRetentionPolicy** en PowerShell del Centro de seguridad y cumplimiento para modificar una directiva de retención de registros de auditoría existente. Para obtener más información, consulte [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy).
 
-- Use el cmdlet **Remove-UnifiedAuditLogRetentionPolicy** en PowerShell del Centro de seguridad y cumplimiento para eliminar una directiva de retención de registros de auditoría. La directiva puede tardar hasta 30 minutos para quitarse por completo. Para obtener más información, consulte [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
+- Use el cmdlet **Remove-UnifiedAuditLogRetentionPolicy** en PowerShell del Centro de seguridad y cumplimiento para eliminar una directiva de retención de registros de auditoría. La directiva puede tardar hasta 30 minutos para quitarse por completo. Para obtener más información, consulte [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy).
 
 - Como se ha indicado anteriormente, los registros de auditoría para las operaciones en Azure Active Directory, Exchange y SharePoint se conservan durante un año. En la siguiente tabla se enumeran todos los tipos de registro (para cada uno de estos servicios) incluidos en la directiva de retención de registros de auditoría predeterminada. Esto significa que los registros de auditoría de cualquier operación con este tipo de registro se conservan durante un año, a menos que una directiva de retención de registros de auditoría personalizada tenga prioridad para un tipo de registro, una operación o un usuario específicos. El valor Enum (que se muestra como el valor de la propiedad RecordType en un registro de auditoría) para cada tipo de registro se muestra entre paréntesis.
 

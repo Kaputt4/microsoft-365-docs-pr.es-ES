@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00b42dfceaeac5b7e9e28263c56f9f7490644a3b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632689"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351911"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -108,7 +108,7 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
   
 1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
 
-2. Use el cmdlet Set-OMEConfiguration tal y como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
+2. Use el cmdlet Set-OMEConfiguration tal y como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""` . Para todos los valores de imagen, como el logotipo, establezca el valor en `"$null"` .
 
    **Opciones de personalización de cifrado**
 
@@ -220,3 +220,9 @@ No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay dispon
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   
 La [declaración de privacidad del portal de cifrado de Office 365 Messaging](https://privacy.microsoft.com/privacystatement) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>¿Qué hago si no recibo el código de un solo paso después de solicitarlo?
+
+En primer lugar, Compruebe la carpeta de correo no deseado o no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos mensajes de correo electrónico terminen filtrados como correo no deseado.
+
+A continuación, Compruebe la cuarentena en el centro de seguridad & cumplimiento. A menudo, los mensajes que contienen un código de acceso único, en especial los primeros que recibe la organización, terminan en cuarentena.

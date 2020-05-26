@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: cec7229da0d6bef9af94dfc017794ece21aa0ac8
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292446"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352103"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -61,9 +61,9 @@ El primer paso es crear y ejecutar una búsqueda de contenido para buscar el men
     
 - [Consultas de palabras clave para búsqueda de contenido](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > Las ubicaciones de contenido que se buscan en la búsqueda de contenido que ha creado en este paso no pueden incluir sitios de SharePoint o OneDrive para la Empresa. Puede incluir solo los buzones y las carpetas públicas en una búsqueda de contenido que se usará para enviar mensajes de correo electrónico. Si la búsqueda de contenido incluye sitios, recibirá un error en el paso 3, al ejecutar el cmdlet **New- ComplianceSearchAction**. 
@@ -129,7 +129,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 Cuando ejecuta el comando anterior en mensajes de eliminación parcial o Soft, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1. 
   
-Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
+Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Más información
 

@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Obtenga información sobre cómo poner un buzón en retención por juicio y conservar todo el contenido del buzón durante una investigación.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035822"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351055"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
@@ -78,7 +78,7 @@ El comando anterior conserva los elementos indefinidamente porque no se especifi
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Para obtener más información, vea [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Para obtener más información, vea [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>¿Cómo funciona la retención por juicio?
 

@@ -12,16 +12,16 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074957"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352027"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
-Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. En el centro &amp; de seguridad y cumplimiento, la huella digital de documento facilita la protección de esta información mediante la identificación de formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
+Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. En el centro de seguridad &amp; y cumplimiento, la huella digital de documento facilita la protección de esta información mediante la identificación de formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Escenario básico para la creación de huella digital de documento
 
@@ -65,7 +65,7 @@ La huella digital de documento no detectará información confidencial en los si
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usar PowerShell para crear un paquete de reglas de clasificación basado en la creación de huellas digitales de documentos
 
-Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en el centro de seguridad y &amp; cumplimiento. Para conectarse, vea [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP usa paquetes de reglas de clasificación para detectar contenido confidencial. Para crear un paquete de reglas de clasificación basado en una huella digital de documento, use los cmdlets **New-DlpFingerprint** y **New-DlpSensitiveInformationType** . Debido a que los resultados de **New-DlpFingerprint** no se almacenan fuera de la regla de clasificación de datos, siempre se ejecuta **New-DlpFingerprint** y **New-DlpSensitiveInformationType** o **set-DlpSensitiveInformationType** en la misma sesión de PowerShell. En el ejemplo siguiente se crea una huella digital de documento nueva a partir del archivo C:\My Documents\Contoso Employee Template.docx. La nueva huella digital se almacena como una variable para que se pueda usar con el cmdlet **New-DlpSensitiveInformationType** en la misma sesión de PowerShell.
   
@@ -84,13 +84,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Ahora puede usar el cmdlet **Get-DlpSensitiveInformationType** para buscar todos los paquetes de reglas de clasificación de datos DLP y, en este ejemplo, "Contoso Customer Confidential" forma parte de la lista de paquetes de reglas de clasificación de datos. 
   
-Por último, agregue el paquete de reglas de clasificación de datos "Contoso Customer Confidential" a una directiva &amp; DLP en el centro de seguridad y cumplimiento. En este ejemplo se agrega una regla a una directiva DLP existente denominada "ConfidentialPolicy".
+Por último, agregue el paquete de reglas de clasificación de datos "Contoso Customer Confidential" a una directiva DLP en el centro de seguridad y &amp; cumplimiento. En este ejemplo se agrega una regla a una directiva DLP existente denominada "ConfidentialPolicy".
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-También puede usar el paquete de reglas de clasificación de datos en reglas de flujo de correo en Exchange Online, tal como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Además, tenga en cuenta que el paquete de reglas tarda tiempo en sincronizarse &amp; desde el centro de seguridad y cumplimiento hasta el centro de administración de Exchange.
+También puede usar el paquete de reglas de clasificación de datos en reglas de flujo de correo en Exchange Online, tal como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Además, tenga en cuenta que el paquete de reglas tarda tiempo en sincronizarse desde el centro de seguridad &amp; y cumplimiento hasta el centro de administración de Exchange.
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
@@ -100,8 +100,8 @@ Ahora, DLP detecta los documentos que coinciden con el formulario de clientes de
   
 Para obtener información acerca de la sintaxis y los parámetros, consulte:
 
-- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
+- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)

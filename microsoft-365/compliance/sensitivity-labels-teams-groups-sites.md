@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022148"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327278"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint (versión preliminar pública)
 
@@ -40,7 +40,7 @@ Sin embargo, el contenido de esos contenedores no hereda las etiquetas para conf
 
 ## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Acerca de la versión preliminar pública para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
-Las etiquetas de confidencialidad de Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint se están introduciendo gradualmente para los espacios empresariales y es posible que haya cambios antes de la versión final. Esta versión preliminar pública no funciona con las redes de entrega de contenido (CDN) de Office 365.
+Las etiquetas de confidencialidad de Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint están versión preliminar y es posible que haya cambios antes de la versión final. Esta versión preliminar pública no funciona con las redes de entrega de contenido (CDN) de Office 365.
 
 Antes de habilitar esta versión preliminar y configurar las etiquetas de confidencialidad para la nueva configuración, los usuarios pueden ver y aplicar etiquetas de confidencialidad en sus aplicaciones. Por ejemplo, en Word:
 
@@ -79,17 +79,19 @@ Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las
 
 En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
-- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: la configuración predeterminada de **Ninguna, permitir que el usuario elija quién puede tener acceso al sitio** se está implementando actualmente para los espacios empresariales. Mantenga esta configuración predeterminada cuando desee proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permita que los usuarios configuren la configuración de privacidad ellos mismos.
+- **Privacidad de los sitios de equipos conectados a grupos de Office 365**: mantenga el valor predeterminado de **Público: cualquier persona de la organización puede acceder al sitio ** si quiere que todos en su organización accedan al sitio de grupo o grupo donde se aplica esta etiqueta.
     
-    Seleccione **Pública** o**Privada** para establecer y bloquear la configuración de privacidad cuando aplica esta etiqueta al contenedor. Elija **Pública** si desea que alguien de su organización acceda al sitio del grupo o equipo donde se aplica esta etiqueta, o **Privada** si desea que el acceso esté restringido solo a miembros aprobados en su organización. 
+    Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
     
-    La configuración **Pública** o **Privada** reemplaza cualquier configuración de privacidad anterior que pueda configurarse para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
+    Seleccione **Ninguno: permitir al usuario elegir quién puede acceder al sitio** cuando quiera proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permitir que los usuarios configuren la configuración de privacidad ellos mismos.
+    
+    Las opciones **Pública** o **Privada** para establecen y bloquean la configuración de privacidad cuando aplica esta etiqueta al contenedor. La configuración elegida reemplaza cualquier configuración de privacidad anterior que pueda configurarse para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
 
 - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
 - **Dispositivos no administrados**: para [dispositivos sin administrar](/sharepoint/control-access-from-unmanaged-devices), permite acceso total, acceso de solo Web, o bloquear el acceso completamente. 
 
-![La pestaña de configuración del sitio y del grupo](../media/edit-sensitivity-label-site-group.png)
+![La pestaña de configuración del sitio y del grupo](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > La configuración de sitio y grupo solo surte efecto al aplicar una etiqueta a un equipo, grupo o sitio. El resto de opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplican a todo el contenido del equipo, grupo o sitio.

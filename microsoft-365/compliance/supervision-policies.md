@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 0729530537e1d01f2e58633bf67a968a6ae2717b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327258"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352297"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
 
@@ -291,11 +291,11 @@ Las siguientes actividades de directiva de supervisión se auditan y están disp
 
 |**Actividad**|**Comandos asociados**|
 |:-----|:-----|
-| **Crear una directiva** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| **Editar una directiva** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| **Eliminar una directiva** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **Crear una directiva** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
+| **Editar una directiva** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
+| **Eliminar una directiva** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
-Vea actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
+Vea actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .
 
 Por ejemplo, en el siguiente ejemplo se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas) y se enumera la información detallada de cada uno de los elementos siguientes:
 
@@ -309,7 +309,7 @@ En este ejemplo se devuelven las actividades de actualización de las directivas
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-Además de la información proporcionada en los informes y registros de supervisión, también puede usar el cmdlet de PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) para obtener una lista detallada completa de todas las actividades de la Directiva de supervisión.
+Además de la información proporcionada en los informes y registros de supervisión, también puede usar el cmdlet de PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) para obtener una lista detallada completa de todas las actividades de la Directiva de supervisión.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

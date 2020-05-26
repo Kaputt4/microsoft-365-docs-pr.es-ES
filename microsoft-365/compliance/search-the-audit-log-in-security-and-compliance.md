@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
-ms.openlocfilehash: 34e9998ee0a17f44ba4f70d2cd1c5f1d12ce926f
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: d743a397d16e107b43c07ac1556b0a6b01c7181a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214298"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352133"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -532,7 +532,7 @@ En la tabla siguiente se enumeran los eventos que se producen de las tareas de a
 
 La siguiente tabla enumera las actividades que pueden registrarse mediante el registro de auditoría del buzón de correo. Las actividades de buzón realizadas por el propietario del buzón, usuario delegado o administrador se registran automáticamente en el registro de auditoría durante un máximo de 90 días. Es posible para un administrador desactivar el registro de auditoría de buzón para todos los usuarios de su organización. En este caso, no se registra ninguna acción de cualquier usuario en el buzón. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
 
- También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)en el PowerShell de Exchange en línea.
+ También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog)en el PowerShell de Exchange en línea.
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -914,13 +914,13 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 - Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
-- También puede usar el `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando de PowerShell Exchange en línea para devolver solo los registros de auditoría del registro de auditoría de administración de Exchange. Se puede tardar hasta 30 minutos después de ejecutar el cmdlet de Exchange para que se devuelva la entrada del registro de auditoría correspondiente en los resultados de la búsqueda. Para obtener más información, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog**a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+- También puede usar el `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando de PowerShell Exchange en línea para devolver solo los registros de auditoría del registro de auditoría de administración de Exchange. Se puede tardar hasta 30 minutos después de ejecutar el cmdlet de Exchange para que se devuelva la entrada del registro de auditoría correspondiente en los resultados de la búsqueda. Para obtener más información, consulte [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog). Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog**a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - También puede ver los cambios que se han realizado mediante el Centro de administración de Exchange o mediante la ejecución de un **Search-AdminAuditLog** en PowerShell en Exchange en línea. Esta es una buena forma de buscar específicamente la actividad que realizan los administradores de Exchange Online. Para obtener instrucciones, consulte:
 
   - [Ver el registro de auditoría del administrador](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)
 
-  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
+  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    Tenga en cuenta que las mismas actividades de administrador de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría.
 

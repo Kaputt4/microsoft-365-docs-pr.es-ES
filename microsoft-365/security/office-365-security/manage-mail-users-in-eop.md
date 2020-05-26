@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208650"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352437"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
@@ -35,7 +35,7 @@ Para organizaciones independientes de EOP con un pequeño número de usuarios, p
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Para conectarse a PowerShell de EOP independiente, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Al crear usuarios de correo en el PowerShell de EOP, es posible que se encuentre con limitaciones. Además, los cmdlets de PowerShell de EOP usan un método de procesamiento por lotes que da como resultado un retraso en la propagación de unos minutos antes de que los resultados de los comandos estén visibles.
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) y [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient) y [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user).
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>Usar PowerShell independiente de EOP para crear usuarios de correo
 
@@ -178,7 +178,7 @@ En este ejemplo se crea un usuario de correo con la siguiente configuración:
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>Usar PowerShell independiente de EOP para modificar usuarios de correo
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser).
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Usar PowerShell independiente de EOP para quitar usuarios de correo
 
@@ -221,7 +221,7 @@ En este ejemplo se quita el usuario de correo de Jeffrey Zeng.
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 
@@ -255,7 +255,7 @@ En EOP independiente, la sincronización de directorios está disponible para lo
 
 - Se recomienda usar la sincronización de directorios con las siguientes características:
 
-  - Listas de remitentes **seguros de Outlook y listas de remitentes bloqueados**: cuando se sincronizan con el servicio, estas listas tienen prioridad sobre el filtrado de correo no deseado en el servicio. Esto permite a los usuarios administrar su propia lista de remitentes seguros y la lista de remitentes bloqueados con entradas individuales de remitente y dominio. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+  - Listas de remitentes **seguros de Outlook y listas de remitentes bloqueados**: cuando se sincronizan con el servicio, estas listas tienen prioridad sobre el filtrado de correo no deseado en el servicio. Esto permite a los usuarios administrar su propia lista de remitentes seguros y la lista de remitentes bloqueados con entradas individuales de remitente y dominio. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
   - **Bloqueo perimetral basado en directorios (DBEB)**: para obtener más información sobre DBEB, vea [use Directory based Edge blocking to Reject messages sent to invalid Recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 

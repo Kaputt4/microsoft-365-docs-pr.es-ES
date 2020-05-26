@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se le guiará en el cómo evitar que los mensajes de suplantación de identidad lleguen a su buzón de correo, Outlook.com y Outlook en la Web.
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224884"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352459"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -50,7 +50,7 @@ No todos los mensajes que no se autentican son malintencionados. Sin embargo, de
 
 Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento de Office 365.
 
-- En el centro de seguridad & cumplimiento, los administradores globales o de seguridad pueden activar o desactivar la característica mediante protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede usar el cmdlet **set-AntiPhishPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- En el centro de seguridad & cumplimiento, los administradores globales o de seguridad pueden activar o desactivar la característica mediante protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede usar el cmdlet **set-AntiPhishPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy).
 
     ![Edición de remitentes no autenticados en la interfaz gráfica.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ Si es un cliente de Office 365, puede administrar esta característica a través
 
   - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, vea [Tutorial: suplantar la información sobre inteligencia empresarial](walkthrough-spoof-intelligence-insight.md).
 
-  - Agregue el par de dominios mediante el cmdlet **set-PhishFilterPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
+  - Agregue el par de dominios mediante el cmdlet **set-PhishFilterPolicy** en Exchange Online PowerShell. Para obtener más información, consulte [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy) y [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
 Además, no se aplica el tratamiento de remitente no verificado si el mensaje se entregó a la bandeja de entrada a través de reglas de flujo de correo (también conocidas como reglas de transporte) o la lista de dominios seguros (directivas contra correo no deseado).
 

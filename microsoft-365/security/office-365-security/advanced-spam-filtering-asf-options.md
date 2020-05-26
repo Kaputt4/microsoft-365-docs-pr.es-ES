@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 904513780ca472efb91cfcd914ad6c72d6c720f7
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213417"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352481"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -35,7 +35,7 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 > [!NOTE]
 > La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF: <ul><li>Notificaciones de cuarentena de correo no deseado para el usuario final periódico.</li><li>La presencia de mensajes filtrados en cuarentena.</li><li>Los `X-CustomSpam:` campos de encabezado X específicos que se agregan a los mensajes, tal y como se describe en este tema.</li></ul>
 
-En las siguientes secciones se describe la configuración y las opciones de ASF que están disponibles en las directivas contra correo no deseado en el centro de seguridad & cumplimiento y en Exchange Online PowerShell o en Windows EOP independiente ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) y [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+En las siguientes secciones se describe la configuración y las opciones de ASF que están disponibles en las directivas contra correo no deseado en el centro de seguridad & cumplimiento y en Exchange Online PowerShell o en Windows EOP independiente ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) y [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Habilitar, deshabilitar o probar la configuración de ASF
 

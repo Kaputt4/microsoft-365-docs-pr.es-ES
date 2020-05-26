@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208494"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351878"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -136,9 +136,9 @@ Además de los informes de ATP descritos en este artículo, hay disponibles vari
 |**Informe (s)**|**Detalles**|
 |**Explorer** o **detección en tiempo real**: (Office 365 ATP plan 2 los clientes tienen explorador; Office 365 ATP plan 1 los clientes tienen detecciones en tiempo real.)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
 |**Informes de seguridad de correo electrónico**, como un informe de remitentes y destinatarios principales, un informe de correo falsificado y un informe de detecciones de correo no deseado.|[Ver informes de seguridad de correo electrónico en el centro de seguridad y &amp; cumplimiento](view-email-security-reports.md)|
-|**Seguimiento de dirección URL de vínculos seguros de ATP**: (este es un informe que se genera con PowerShell). Este informe muestra los resultados de las acciones de vínculos seguros de ATP en los últimos siete (7) días.|[Referencia del cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|
-|**Resultados de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene información como, por ejemplo, el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Referencia del cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport)|
-|**Detecciones de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene detalles sobre archivos malintencionados o direcciones URL, intentos de suplantación de identidad, suplantación y otras amenazas potenciales en los correos electrónicos o archivos.|[Referencia del cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)|
+|**Seguimiento de dirección URL de vínculos seguros de ATP**: (este es un informe que se genera con PowerShell). Este informe muestra los resultados de las acciones de vínculos seguros de ATP en los últimos siete (7) días.|[Referencia del cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**Resultados de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene información como, por ejemplo, el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Referencia del cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|**Detecciones de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene detalles sobre archivos malintencionados o direcciones URL, intentos de suplantación de identidad, suplantación y otras amenazas potenciales en los correos electrónicos o archivos.|[Referencia del cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos se necesitan para ver los informes de ATP?

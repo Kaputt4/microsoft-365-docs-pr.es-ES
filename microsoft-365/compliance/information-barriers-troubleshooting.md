@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035036"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352329"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -45,7 +45,7 @@ Determinar si los usuarios están afectados por una directiva de barrera de info
 
     |Sintaxis  |Ejemplo  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Puede usar cualquier valor de identidad que identifique de forma exclusiva a cada destinatario, como el nombre, el alias, el nombre distintivo (DN), el DN canónico, la dirección de correo electrónico o el GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>En este ejemplo, se usa un alias (*meganb*) para el parámetro Identity. Este cmdlet devolverá información que indica si el usuario está afectado por una directiva de barrera de información. (Busque * ExoPolicyId: \<guid>).         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Puede usar cualquier valor de identidad que identifique de forma exclusiva a cada destinatario, como el nombre, el alias, el nombre distintivo (DN), el DN canónico, la dirección de correo electrónico o el GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>En este ejemplo, se usa un alias (*meganb*) para el parámetro Identity. Este cmdlet devolverá información que indica si el usuario está afectado por una directiva de barrera de información. (Busque * ExoPolicyId: \< GUID>).         |
 
     **Si los usuarios no se incluyen en las directivas de barrera de información, póngase en contacto con el soporte técnico**. En caso contrario, continúe con el paso siguiente.
 
@@ -57,7 +57,7 @@ Determinar si los usuarios están afectados por una directiva de barrera de info
 
     Después de ejecutar el cmdlet, en los resultados, busque los valores de **AssignedSegment**, **SegmentsAllowed**y **SegmentsBlocked** .
 
-    Por ejemplo, después de ejecutar `Get-InformationBarrierPolicy` el cmdlet, vimos lo siguiente en nuestra lista de resultados:
+    Por ejemplo, después de ejecutar el `Get-InformationBarrierPolicy` cmdlet, vimos lo siguiente en nuestra lista de resultados:
 
     ```powershell
         AssignedSegment      : Sales
@@ -74,7 +74,7 @@ Determinar si los usuarios están afectados por una directiva de barrera de info
     |---------|---------|
     |`Get-OrganizationSegment`<p>Use este cmdlet con un parámetro Identity.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>En este ejemplo, se obtiene información acerca del segmento que tiene el GUID *c96e0837-c232-4a8a-841E-ef45787d8fcd*.         |
 
-    Revise los detalles del segmento. Si es necesario, [edite un segmento](information-barriers-edit-segments-policies.md#edit-a-segment)y, a continuación, `Start-InformationBarrierPoliciesApplication` vuelva a usar el cmdlet.
+    Revise los detalles del segmento. Si es necesario, [edite un segmento](information-barriers-edit-segments-policies.md#edit-a-segment)y, a continuación, vuelva a usar el `Start-InformationBarrierPoliciesApplication` cmdlet.
 
     **Si sigue teniendo problemas con la Directiva de barrera de información, póngase en contacto con el soporte técnico**.
 
@@ -126,7 +126,7 @@ Las directivas de barrera de información se asignan a segmentos de usuarios. Lo
 
 3. Para quitar a un usuario de un segmento afectado por barreras de información, [actualice la información de perfil del usuario en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-4. Espere unos 30 minutos para que se produzca el FwdSync. O bien, ejecute `Start-InformationBarrierPoliciesApplication` el cmdlet para aplicar todas las directivas de barrera de información activa.
+4. Espere unos 30 minutos para que se produzca el FwdSync. O bien, ejecute el `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas las directivas de barrera de información activa.
 
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problema: el proceso de aplicación de la barrera de información está tardando mucho
 
@@ -163,7 +163,7 @@ Asegúrese de que su organización no tiene [directivas de libreta de direccione
 
 1. Conéctese a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
 
-2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
+2. Ejecute el cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) y revise los resultados.
 
     |Resultados  |Paso siguiente  |
     |---------|---------|
@@ -189,13 +189,13 @@ Cuando ejecute el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, busq
 
 ### <a name="what-to-do"></a>Qué hacer
 
-1. Busque en el registro de auditoría `<application guid>`de. Puede copiar este código de PowerShell y modificarlo para sus variables.
+1. Busque en el registro de auditoría de `<application guid>` . Puede copiar este código de PowerShell y modificarlo para sus variables.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Compruebe el resultado detallado del registro de auditoría para los valores de los `"UserId"` campos `"ErrorDetails"` y. Esto le dará el motivo del error. Puede copiar este código de PowerShell y modificarlo para sus variables.
+2. Compruebe el resultado detallado del registro de auditoría para los valores de los `"UserId"` `"ErrorDetails"` campos y. Esto le dará el motivo del error. Puede copiar este código de PowerShell y modificarlo para sus variables.
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,7 +206,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >"ErrorDetails": "status: IBPolicyConflict. Error: el segmento de IB "segmento ID1" y el segmento IB "ID2" tienen conflicto y no se pueden asignar al destinatario. 
 
-3. Normalmente, observará que un usuario se ha incluido en más de un segmento. Para solucionarlo, actualice el `-UserGroupFilter` valor de. `OrganizationSegments`
+3. Normalmente, observará que un usuario se ha incluido en más de un segmento. Para solucionarlo, actualice el `-UserGroupFilter` valor de `OrganizationSegments` .
 
 4. Volver a aplicar directivas de barrera de información mediante estos procedimientos [directivas de obstáculos](information-barriers-policies.md#part-3-apply-information-barrier-policies)para la información.
 

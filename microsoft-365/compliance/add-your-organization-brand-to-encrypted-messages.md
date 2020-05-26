@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aplique la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y al contenido del portal de cifrado.
-ms.openlocfilehash: fc2767c0b7ad67a53e081d60d18ac583b2b4c686
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8d8e0a75a88cfe5dbcd5b1e6ed2c276e2edef904
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034396"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351741"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
 
@@ -63,9 +63,9 @@ Una vez que haya creado las plantillas, puede aplicarlas a los correos electrón
 
 Puede modificar varias características dentro de una plantilla de personalización de marca. Puede modificar la plantilla predeterminada, pero no quitarla. Si tiene cifrado de mensajes avanzado, también puede crear, modificar y quitar plantillas personalizadas. Use Windows PowerShell para trabajar con una plantilla de personalización de marca cada vez. Necesitará una cuenta profesional o educativa que tenga permisos de administrador global en su organización para usar estos cmdlets.
 
-- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -modificar la plantilla de personalización de marca predeterminada o una plantilla de personalización de marca personalizada creada.
-- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -crea una nueva plantilla de personalización de marca, solo cifrado de mensajes avanzado.
-- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration) -quitar una plantilla de personalización de marca personalizada, sólo el cifrado de mensajes avanzado. La plantilla de personalización de marca predeterminada no se puede eliminar.
+- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-omeconfiguration) -modificar la plantilla de personalización de marca predeterminada o una plantilla de personalización de marca personalizada creada.
+- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) -crea una nueva plantilla de personalización de marca, solo cifrado de mensajes avanzado.
+- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration) -quitar una plantilla de personalización de marca personalizada, sólo el cifrado de mensajes avanzado. La plantilla de personalización de marca predeterminada no se puede eliminar.
   
 ## <a name="modify-an-ome-branding-template"></a>Modificación de una plantilla de personalización de marca OME
 
@@ -73,7 +73,7 @@ Use Windows PowerShell para modificar una plantilla de personalización de marca
 
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Modifique la plantilla con el cmdlet Set-OMEConfiguration como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) o use el siguiente gráfico y tabla para obtener instrucciones.
+2. Modifique la plantilla con el cmdlet Set-OMEConfiguration como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) o use el siguiente gráfico y tabla para obtener instrucciones.
 
 ![Elementos de correo electrónico personalizables](../media/ome-template-breakout.png)
 
@@ -92,13 +92,13 @@ Use Windows PowerShell para modificar una plantilla de personalización de marca
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Crear una plantilla de personalización de marca OME (cifrado de mensajes avanzado)
 
-Si tiene el cifrado de mensajes avanzado de Office 365, puede crear plantillas de personalización de marca personalizadas para su organización con el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) . Una vez que haya creado la plantilla, modifique la plantilla mediante el cmdlet Set-OMEConfiguration como se describe en [Modify an OME branding template](#modify-an-ome-branding-template). Puede crear varias plantillas.
+Si tiene el cifrado de mensajes avanzado de Office 365, puede crear plantillas de personalización de marca personalizadas para su organización con el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) . Una vez que haya creado la plantilla, modifique la plantilla mediante el cmdlet Set-OMEConfiguration como se describe en [Modify an OME branding template](#modify-an-ome-branding-template). Puede crear varias plantillas.
 
 Para crear una nueva plantilla de personalización de marca personalizada:
 
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) para crear una nueva plantilla.
+2. Use el cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) para crear una nueva plantilla.
 
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
@@ -116,7 +116,7 @@ Para quitar todas las modificaciones de la plantilla predeterminada, incluidas l
   
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
+2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""` . Para todos los valores de imagen, como el logotipo, establezca el valor en `"$null"` .
 
    En la tabla siguiente se describen los valores predeterminados de la opción de personalización de cifrado.
 
@@ -149,7 +149,7 @@ Para quitar una plantilla de personalización de marca personalizada:
    Remove-OMEConfiguration -Identity "Branding template 1"
    ```
 
-   Para obtener más información, vea [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration).
+   Para obtener más información, vea [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration).
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Crear una regla de flujo de correo de Exchange que aplique la personalización de marca personalizada a los correos electrónicos cifrados
 
@@ -165,9 +165,9 @@ Para obtener información sobre cómo crear una regla de flujo de correo de Exch
 
 2. Elija el icono **Administración** .
 
-3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
 
-4. En el EAC, vaya a **Mail flow** \> **reglas** de flujo de correo **New** ![y seleccione nuevo](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a reglas de **flujo de correo** \> **Rules** y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. En **nombre**, escriba un nombre para la regla, como la personalización de marca del Departamento de ventas.
 
@@ -177,7 +177,7 @@ Para obtener información sobre cómo crear una regla de flujo de correo de Exch
    - Mensajes de correo electrónico cifrados enviados con una palabra clave determinada, como "external" o "Partner"
    - Mensajes de correo electrónico cifrados enviados a un dominio en particular
 
-7. En **hacer lo siguiente**, seleccione **modificar la seguridad** > de mensajes aplicar personalización de**marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado o modificado.
+7. En **hacer lo siguiente**, seleccione **modificar la seguridad de mensajes**aplicar personalización de  >  **marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado o modificado.
 
 8. Opcional Si desea que la regla de flujo de correo aplique el cifrado además de la personalización de marca, **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes**y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
   

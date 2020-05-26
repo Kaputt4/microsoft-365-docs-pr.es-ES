@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327620"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352093"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -294,7 +294,7 @@ Para ver las actividades de la Directiva de cumplimiento de comunicaciones, sele
 | **Operations** | Las operaciones realizadas en la Directiva. |
 | **AuditData** | Este campo es el origen de datos principal para todas las actividades de la Directiva. Todas las actividades se registran y se separan mediante delimitadores de coma. |
 
-También puede ver actividades de auditoría en el registro de auditoría unificado o con el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
+También puede ver actividades de auditoría en el registro de auditoría unificado o con el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 Por ejemplo, en el siguiente ejemplo, se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas):
 

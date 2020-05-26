@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: 3aedebc97ccd32c1641510017a276ddbe4770633
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208481"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351866"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
 
@@ -32,7 +32,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Para conectarse a PowerShell de EOP independiente, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol registros de auditoría o registros de auditoría con permiso de vista, que se asignan a los grupos de roles ComplianceManagement, OrganizationManagement (administradores globales) y SecurityAdministrator de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -100,7 +100,7 @@ En este ejemplo se buscan todas las entradas del registro de auditoría con los 
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Ver los detalles de las entradas del registro de auditoría
 

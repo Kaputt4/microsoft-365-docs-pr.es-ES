@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049525"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352090"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -28,7 +28,7 @@ ms.locfileid: "44049525"
 ## <a name="what-is-office-365-message-encryption-ome"></a>¿Qué es el cifrado de mensajes de Office 365 (OME)?
 
 OME combina capacidades de cifrado de correo electrónico y administración de derechos. Las capacidades de administración de derechos están basadas en Azure Information Protection.
-  
+
 ## <a name="who-can-use-ome"></a>¿Quién puede usar OME?
 
 Puede usar las nuevas funciones para OME en las siguientes condiciones:
@@ -137,9 +137,9 @@ Sí. Usar reglas de flujo de correo en Exchange Online para cifrar automáticame
 
 Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado del correo saliente. No puede configurar una regla para quitar el cifrado del correo entrante.
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>¿Puedo cifrar mensajes automáticamente mediante la configuración de directivas en prevención de pérdida de datos (DLP &amp; ) a través del centro de seguridad y cumplimiento?
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>¿Puedo cifrar mensajes automáticamente mediante la configuración de directivas en prevención de pérdida de datos (DLP) a través del centro de seguridad y &amp; cumplimiento?
 
-Afirma! Puede configurar reglas de flujo de correo en Exchange online o mediante DLP en el centro de &amp; seguridad y cumplimiento.
+Afirma! Puede configurar reglas de flujo de correo en Exchange online o mediante DLP en el centro de seguridad y &amp; cumplimiento.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>¿Puedo personalizar mensajes cifrados con la personalización de marca de mi empresa?
 
@@ -185,3 +185,9 @@ Actualmente, hay dos limitaciones conocidas:
 - Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido. No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico.
 
 - No puede abrir datos adjuntos de mensajes de correo electrónico que recibe en dispositivos móviles mediante Outlook Mobile.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>¿Qué hago si no recibo el código de un solo paso después de solicitarlo?
+
+En primer lugar, Compruebe la carpeta de correo no deseado o no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos mensajes de correo electrónico terminen filtrados como correo no deseado.
+
+A continuación, Compruebe la cuarentena en el centro de seguridad & cumplimiento. A menudo, los mensajes que contienen un código de acceso único, en especial los primeros que recibe la organización, terminan en cuarentena.

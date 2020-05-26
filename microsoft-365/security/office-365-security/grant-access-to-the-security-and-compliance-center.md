@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Microsoft 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036673"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351956"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -50,11 +50,11 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 3. En el centro de seguridad & cumplimiento, vaya a **permisos**.
 
-4. En la lista, elija el grupo de roles al que desea agregar el usuario y haga clic en **Editar** ![icono](../../media/O365-MDM-CreatePolicy-EditIcon.gif)editar.
+4. En la lista, elija el grupo de roles al que desea agregar el usuario y haga clic en **Editar** ![ icono Editar ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-5. En la página de propiedades del grupo de roles, en **miembros**, haga](../../media/ITPro-EAC-AddIcon.gif) clic en **Agregar**![icono de agregar y seleccione el nombre del usuario (o usuarios) que desea agregar.
+5. En la página de propiedades del grupo de roles, en **miembros**, haga clic en **Agregar** ![ icono de agregar ](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
 
-6. Cuando haya seleccionado todos los usuarios que desee agregar al grupo de roles, haga clic en **agregar\> ** y, a continuación, en **Aceptar**.
+6. Cuando haya seleccionado todos los usuarios que desee agregar al grupo de roles, haga clic en **agregar \> ** y, a continuación, en **Aceptar**.
 
 7. Haga clic en **Guardar** para guardar los cambios realizados en el grupo de roles.
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
    - _Member_ es el buzón, el grupo de seguridad universal (USG) o el equipo que se va a agregar al grupo de roles. Solo se puede especificar un miembro cada vez.
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
@@ -92,4 +92,4 @@ Para comprobar que ha concedido a los usuarios acceso al centro de seguridad & c
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

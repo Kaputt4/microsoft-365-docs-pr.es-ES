@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ef6e1b2edecc8ee8318f1b1e6228e9931b8c66c5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635165"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351890"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -91,7 +91,7 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 - [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
 - [Propiedades detalladas del registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 

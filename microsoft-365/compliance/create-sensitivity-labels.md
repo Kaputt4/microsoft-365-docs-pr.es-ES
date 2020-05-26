@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los documentos y correos electrónicos de su organización.'
-ms.openlocfilehash: 358b87fca010aa5e910337b0942df0b33ee38951
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 50411e04ac04dc0bf00e7b743f3f30d25b9fa12e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232727"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352217"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -75,7 +75,7 @@ Hasta que publique las etiquetas, no estarán disponibles para seleccionarlas en
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Configuración adicional de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 
-La configuración adicional de las etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+La configuración adicional de las etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 Use el parámetro *LocaleSettings* para las implementaciones multinacionales para que los usuarios vean el nombre de la etiqueta y la información sobre herramientas en su idioma local. Consulte la siguiente sección para un ejemplo de configuración. 
 
@@ -151,7 +151,7 @@ Normalmente, los usuarios pueden ver las etiquetas en las aplicaciones de Office
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 
-La configuración adicional de las directivas de etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+La configuración adicional de las directivas de etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 Con este cmdlet, puede especificar [ opciones avanzadas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) para el cliente de etiquetado unificado de Azure Information Protection. Entre estas opciones avanzadas, se incluye la configuración de una etiqueta predeterminada diferente para Outlook y la implementación de mensajes emergentes en Outlook que avisen, justifiquen o bloqueen los correos electrónicos que se envíen. Para obtener la lista completa, consulte [ Configuración avanzada disponible para las etiquetas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 

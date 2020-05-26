@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44212991"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352503"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -27,7 +27,7 @@ Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensa
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el seguimiento de mensajes original que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con los mensajes, solucionar problemas del flujo de correo y validar los cambios de la Directiva.
 
 > [!NOTE]
-> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) en Exchange Online PowerShell o el PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
+> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) en Exchange Online PowerShell o el PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
@@ -330,7 +330,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El mensaje se marcó como correo no deseado por un filtrado contra correo electrónico no deseado (también conocido como filtrado de contenido).|
@@ -357,7 +357,7 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -380,7 +380,7 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Value**|**Descripción**|
+|**Valor**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

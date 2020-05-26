@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Una vez configurada la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves de AKV y la administración de permisos y las directivas de cifrado de datos.
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635606"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352207"
 ---
 # <a name="manage-customer-key"></a>Administrar la clave de cliente
 
@@ -88,7 +88,7 @@ Para ver una lista de todos los DEPs que ha creado para Exchange Online y Skype 
   Get-DataEncryptionPolicy
   ```
 
-  Para obtener más información sobre el cmdlet Get-DataEncryptionPolicy, consulte [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+  Para obtener más información sobre el cmdlet Get-DataEncryptionPolicy, consulte [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Asignar un DEP antes de migrar un buzón a la nube
 
@@ -104,7 +104,7 @@ Para asignar una DEP a un buzón antes de migrarla a Office 365, ejecute el cmdl
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón y *DATAENCRYPTIONPOLICYIDPARAMETER* es el identificador de la DEP. Para obtener más información sobre el cmdlet Set-MailUser, consulte [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
+  Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón y *DATAENCRYPTIONPOLICYIDPARAMETER* es el identificador de la DEP. Para obtener más información sobre el cmdlet Set-MailUser, consulte [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Determinación de la DEP asignada a un buzón
 
@@ -116,7 +116,7 @@ Para determinar la DEP asignada a un buzón, use el cmdlet Get-MailboxStatistics
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón de correo y DataEncryptionPolicyID devuelve el GUID de la DEP. Para obtener más información acerca del cmdlet Get-MailboxStatistics, consulte [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps).
+   Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón de correo y DataEncryptionPolicyID devuelve el GUID de la DEP. Para obtener más información acerca del cmdlet Get-MailboxStatistics, consulte [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps).
   
 2. Ejecute el cmdlet Get-DataEncryptionPolicy para averiguar el nombre descriptivo de la DEP a la que está asignado el buzón.
   
@@ -148,7 +148,7 @@ El tiempo para completar los movimientos de buzones depende del tamaño del buz�
 New-MoveRequest <alias>
 ```
 
-Para obtener más información sobre este cmdlet, vea [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
+Para obtener más información sobre este cmdlet, vea [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Comprobar que se ha completado el cifrado para los archivos de SharePoint Online, OneDrive para la empresa y Teams
 
@@ -201,7 +201,7 @@ Para iniciar la ruta de acceso de depuración de datos, siga estos pasos:
 
 2. Con una cuenta profesional o educativa con privilegios de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
-3. Para cada DEP que contiene buzones de correo que desea eliminar, ejecute el cmdlet [set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) de la siguiente manera.
+3. Para cada DEP que contiene buzones de correo que desea eliminar, ejecute el cmdlet [set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) de la siguiente manera.
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>

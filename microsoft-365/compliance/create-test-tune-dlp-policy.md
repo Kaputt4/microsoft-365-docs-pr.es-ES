@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de su organización.
-ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327802"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352227"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -200,7 +200,7 @@ Cuando esté satisfecho de que su Directiva de DLP detecte de forma precisa y ef
 
 ![Opción para activar la Directiva](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando para ver cuándo tendrá efecto la Directiva, [Conéctese a PowerShell del centro de cumplimiento de seguridad &](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) para ver el DistributionStatus.
+Si está esperando para ver cuándo tendrá efecto la Directiva, [Conéctese a PowerShell del centro de cumplimiento de seguridad &](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) para ver el DistributionStatus.
 
 ![Ejecutar el cmdlet en PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209682"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352340"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
 
@@ -135,7 +135,7 @@ En este ejemplo se devuelven todos los grupos de funciones en los que el usuario
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Usar PowerShell independiente de EOP para crear grupos de roles
 
@@ -184,7 +184,7 @@ Al crear un nuevo grupo de roles, puede configurar todas las opciones de forma m
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+Para obtener información detallada acerca de la sintaxis y los parámetros, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Usar EOP independiente PowerShell modificar la lista de miembros de los grupos de roles
 
@@ -214,7 +214,7 @@ En este ejemplo se agrega Daigoro Akai y se quita Valeria barrio de la lista de 
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Usar PowerShell independiente de EOP para quitar grupos de roles
 
@@ -232,7 +232,7 @@ En este ejemplo se quita el grupo de roles de administradores de capacitación.
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

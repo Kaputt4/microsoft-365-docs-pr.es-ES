@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634202"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352277"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -137,7 +137,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
 3. Póngase en contacto con Microsoft para finalizar el proceso. Para el equipo de SharePoint y OneDrive para la empresa, póngase en contacto con [Spock@microsoft.com](mailto:spock@microsoft.com). Para Exchange Online y Skype empresarial, póngase en contacto con [exock@microsoft.com](mailto:exock@microsoft.com). Incluya lo siguiente en su correo electrónico:
 
-   **Asunto**: clave del cliente \<para *el nombre de dominio completo del espacio empresarial*\>
+   **Asunto**: clave del cliente para \< *el nombre de dominio completo del espacio empresarial*\>
 
    **Cuerpo**: identificadores de suscripción para los que desea finalizar el período de retención obligatorio.
    El resultado de Get-AzProviderFeature para cada suscripción.
@@ -312,7 +312,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename.backup>
 ```
 
-Asegúrese de que el archivo de salida Use `.backup`el sufijo.
+Asegúrese de que el archivo de salida Use el sufijo `.backup` .
   
 El archivo de salida resultante de este cmdlet está cifrado y no se puede usar fuera de Azure Key Vault. La copia de seguridad solo se puede restaurar a la suscripción de Azure desde la que se realizó la copia de seguridad.
   
@@ -448,7 +448,7 @@ Asigne la DEP a un buzón mediante el cmdlet Set-Mailbox. Una vez asignada la Di
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Donde *MailboxIdParameter* especifica un buzón. Para obtener más información acerca del cmdlet Set-Mailbox, consulte [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+Donde *MailboxIdParameter* especifica un buzón. Para obtener más información acerca del cmdlet Set-Mailbox, consulte [set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
   
 ### <a name="validate-mailbox-encryption"></a>Validar el cifrado de buzones
 
