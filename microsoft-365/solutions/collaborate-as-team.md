@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con los invitados en Microsoft Teams.
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160032"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371504"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -44,10 +44,10 @@ Compruebe la configuración de relaciones de organización para asegurarse de qu
 
 Para establecer la configuración de relación organizativa
 
-1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com).
+1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
-3. En el panel de **información general** , haga clic en **relaciones organizativas**.
-4. En el panel relaciones de la **organización** , haga clic en **configuración**.
+3. En el panel de **información general** , haga clic en **identidades externas**.
+4. En el panel **identidades organizativas** , haga clic en **configuración de colaboración externa**.
 5. Asegúrese de que los **administradores y los usuarios de la función invitador invitado puedan** invitar y que **los miembros puedan invitar** están establecidos en **sí**.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
@@ -161,12 +161,12 @@ Para establecer la configuración de uso compartido de nivel de sitio
 La configuración de uso compartido de invitados ya está configurada, por lo que puede empezar a agregar invitados y usuarios internos a su equipo. 
 
 Para invitar a usuarios internos a un equipo
-1. En el equipo, haga clic en **más opciones** (**\*\***) y, a continuación, haga clic en **Agregar miembro**.
+1. En el equipo, haga clic en **más opciones** ( **\*\*\*** ) y, a continuación, haga clic en **Agregar miembro**.
 2. Escriba el nombre de la persona a la que desea invitar.
 3. Haga clic en **Agregar** y, después, en **Cerrar**.
 
 Para invitar a invitados a un equipo
-1. En el equipo, haga clic en **más opciones** (**\*\***) y, a continuación, haga clic en **Agregar miembro**.
+1. En el equipo, haga clic en **más opciones** ( **\*\*\*** ) y, a continuación, haga clic en **Agregar miembro**.
 2. Escriba la dirección de correo electrónico del invitado al que desea invitar.
 3. Haga clic en **editar información de invitado**.
 4. Escriba el nombre completo del invitado y haga clic en la marca de verificación.

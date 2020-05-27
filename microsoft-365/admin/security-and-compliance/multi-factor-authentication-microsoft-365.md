@@ -1,5 +1,5 @@
 ---
-title: Multi-factor Authentication para Microsoft 365
+title: Autenticación multifactor para Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información acerca de la autenticación multifactor en Microsoft 365.
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340851"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371457"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Multi-factor Authentication para Microsoft 365
+# <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
 Las contraseñas son el método más común para autenticar un inicio de sesión en un equipo o servicio en línea, pero también son los más vulnerables. Los usuarios pueden elegir contraseñas sencillas y usar las mismas contraseñas para varios inicios de sesión en diferentes equipos y servicios.
 
@@ -151,17 +151,10 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 |:-------|:-----|:-------|:-------|
 | **Valores predeterminados de seguridad** | No se pueden usar directivas de acceso condicional |   Se pueden usar directivas de acceso condicional | Aplicación Microsoft Authenticator |
 | **Directivas de acceso condicional** |Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad | Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad | Especificado por el usuario durante el registro de MFA |
-| **Configuración de cuenta por usuario (no recomendado)** | Reemplazado por los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA | Invalidados por los valores predeterminados de seguridad y directivas de acceso condicional | Especificado por el usuario durante el registro de MFA|
+| **Configuración de cuenta por usuario (no recomendado)** | Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión | Invalidados por los valores predeterminados de seguridad y directivas de acceso condicional | Especificado por el usuario durante el registro de MFA|
 ||||
 
 Si se habilitan los valores predeterminados de seguridad, todos los usuarios nuevos se solicitarán para el registro de MFA y el uso de la aplicación Microsoft Authenticator en el siguiente inicio de sesión.
-
-Sin embargo, si un usuario tiene un teléfono antiguo que puede recibir mensajes de texto pero no puede ejecutar la aplicación Microsoft Authenticator, puede habilitar MFA en esa cuenta de usuario específica y hacer que se registren con el método de verificación de código de texto adicional con estos pasos:
-
-1. Deshabilite los valores predeterminados de seguridad en Azure portal.
-2. Habilite MFA para la cuenta de usuario en el centro de administración de Microsoft 365.
-3. Hacer que el usuario inicie sesión y se registre para MFA y el método de autenticación de código de texto.
-4. Cuando termine, habilite los valores predeterminados de seguridad en Azure portal.
 
 ## <a name="ways-to-manage-mfa-settings"></a>Formas de administrar la configuración de MFA
 

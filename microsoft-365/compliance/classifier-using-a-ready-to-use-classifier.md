@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores integrados que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores.
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292426"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371412"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Probar clasificadores integrados con etiquetas de retención (versión preliminar)
 
@@ -33,18 +33,18 @@ Para obtener más información sobre los clasificadores [interactivos, vea Getti
 Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 > [!CAUTION]
-> Estamos descartando el clasificador integrado de **lenguaje ofensivo** porque ha generado un gran número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar los clasificadores de **amenaza**, **blasfemia**y **acoso** integrados.
+> Estamos desaprobando el clasificador incorporado de **Lenguaje ofensivo** porque ha estado produciendo un alto número de falsos positivos. No lo use y, si actualmente lo está usando, debería mover sus procesos de negocio fuera de él. En su lugar, se recomienda usar los clasificadores de **amenaza**, **blasfemia**y **acoso** integrados.
 
 - **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
 - **Código de origen**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados del equipo en github
 
-|nombre del idioma|||||
-|---------|---------|---------|---------|---------|
-|Código|C        |C#       |+     |Clojure  |
-|CoffeeScript|CSS     |Ir       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Consola    |Rápido    |Tex      |Script de VIM|
+  |nombre del idioma|||||
+  |---------|---------|---------|---------|---------|
+  |Código|C        |CA #       |+     |Clojure  |
+  |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Consola    |Rápido    |Tex      |Script de VIM|
 
 > [!NOTE]
 > El código fuente está entrenado para detectar cuando la mayor parte del texto es código fuente. No detecta texto de código fuente intercalado con texto sin formato.
@@ -60,8 +60,8 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 1. Recopile los elementos de contenido de pruebas desechables que considera que pertenecen a la categoría del clasificador integrado (coincidencias positivas) y los que no se deben incluir (coincidencias negativas) en la categoría que está probando.
 
-> [!IMPORTANT]
-> Los elementos de ejemplo no deben estar cifrados y deben estar en inglés.
+   > [!IMPORTANT]
+   > Los elementos de ejemplo no deben estar cifrados y deben estar en inglés.
 
 2. Cree una carpeta dedicada de SharePoint Online; espere al menos una hora para que la carpeta se agregue al índice de búsqueda. Anote la dirección URL de la carpeta.
 
@@ -79,7 +79,7 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 9. Elija `Apply label to content that matches a trainable classifier` .
 
-![selección de clasificador como condición](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![selección de clasificador como condición](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. Elija su clasificador de la lista, en este caso`Source Code`
 

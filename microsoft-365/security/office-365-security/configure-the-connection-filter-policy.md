@@ -18,18 +18,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear los correos electrónicos de los servidores de correo electrónico.
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352016"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371479"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
 Si es un cliente de 365 de Microsoft con buzones de correo en Exchange online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, use el filtrado de conexiones en EOP (específicamente, la Directiva de filtro de conexión predeterminada) para identificar los servidores de correo electrónico de origen válidos o incorrectos mediante sus direcciones IP. Los componentes clave de la Directiva de filtro de conexión predeterminada son:
 
-- **Lista de direcciones IP permitidas**: omitir el filtrado de correo no deseado para todos los mensajes entrantes de los servidores de correo electrónico de origen que especifique por dirección IP o intervalo de direcciones IP. Para escenarios en los que el filtrado de correo no deseado todavía puede producirse en los mensajes de estos orígenes, vea los escenarios en los [que los mensajes de orígenes en la lista de direcciones IP permitidas siguen filtrados](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) en la sección más adelante en este tema. Para obtener más información acerca de cómo la lista de direcciones IP permitidas debe ajustarse a su estrategia general de remitentes seguros, consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md).
+- **Lista de direcciones IP permitidas**: omita el filtrado de correo no deseado para todos los mensajes entrantes de los servidores de correo electrónico de origen que especifique por dirección IP o intervalo de direcciones IP. Para escenarios en los que el filtrado de correo no deseado todavía puede producirse en los mensajes de estos orígenes, vea los escenarios en los [que los mensajes de orígenes en la lista de direcciones IP permitidas siguen filtrados](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) en la sección más adelante en este tema. Para obtener más información acerca de cómo la lista de direcciones IP permitidas debe ajustarse a su estrategia general de remitentes seguros, consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
 - **Lista de direcciones IP bloqueadas**: bloquee todos los mensajes entrantes de los servidores de correo electrónico de origen que especifique por dirección IP o intervalo de direcciones IP. Los mensajes entrantes se rechazan, no se marcan como correo no deseado y no se produce ningún filtrado adicional. Para obtener más información acerca de cómo debe ajustarse la lista de direcciones IP bloqueadas en la estrategia general de remitentes bloqueados, vea [Create Block Sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
