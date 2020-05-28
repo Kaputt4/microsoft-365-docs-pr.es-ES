@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms Pro mediante el panel informes de Microsoft 365 en el centro de administración de Microsoft 365.
-ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804809"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387710"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Microsoft 365 Reports en el centro de administración: actividad de Forms Pro
 

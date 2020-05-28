@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173501"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387014"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
-1. En el centro de administración, vaya a **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">la página de configuración de</a> configuración.
+1. En el centro de administración, vaya a la página de configuración de **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> .
 2. En la parte superior de la página Configuración, seleccione **seguridad & privacidad**.
 3. Establecer la **directiva de expiración de contraseña** 
 4. Si las contraseñas están configuradas para que no expiren nunca, haga clic en la casilla junto a **Establecer contraseñas de usuario para que expiren después de un número de días**. Obtendrá la opción de especificar el número de días que deben transcurrir hasta la expiración de las contraseñas.
@@ -127,4 +128,4 @@ Ejecute uno de los siguientes comandos:
     ```
 
 > [!WARNING]
-> Las contraseñas se `-PasswordPolicies DisablePasswordExpiration` establecen para que sigan siendo `pwdLastSet` obsoletas en función del atributo. Si establece las contraseñas de usuario para que nunca expiren y, a continuación, 90 + días para, las contraseñas expirarán. Según el `pwdLastSet` atributo, si cambia la expiración a `-PasswordPolicies None`, todas las contraseñas que tienen un `pwdLastSet` antigüedad de más de 90 días requieren que el usuario los cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.
+> Las contraseñas se establecen para que `-PasswordPolicies DisablePasswordExpiration` sigan siendo obsoletas en función del `pwdLastSet` atributo. Si establece las contraseñas de usuario para que nunca expiren y, a continuación, 90 + días para, las contraseñas expirarán. Según el `pwdLastSet` atributo, si cambia la expiración a `-PasswordPolicies None` , todas las contraseñas que tienen un `pwdLastSet` antigüedad de más de 90 días requieren que el usuario los cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.

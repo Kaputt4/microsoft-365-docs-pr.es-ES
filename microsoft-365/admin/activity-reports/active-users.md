@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel informes de 365 de Microsoft en el centro de administración de Microsoft 365 y descubra el número de licencias de producto que se usan.
-ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 7f32059f01163a2a499f1befb9f4e3c519973549
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046848"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387902"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365 Reports en el centro de administración: usuarios activos
 
@@ -38,7 +39,7 @@ Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas li
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
-2. Seleccione **usuarios activos** de **Office 365** \> de la lista desplegable. 
+2. Seleccione **Office 365** \> **usuarios activos** de Office 365 de la lista desplegable. 
 
 ## <a name="interpret-the-active-users-report"></a>Interpretar el informe Usuarios activos
 
@@ -50,7 +51,7 @@ Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas li
 |3.  <br/> |En el gráfico **Usuarios activos** se muestran los usuarios activos diarios en el período de informe separados por producto.  <br/> El gráfico **Servicios** se muestra el número de usuarios por tipo de actividad y servicio.  <br/> |
 |4.  <br/> | En el gráfico **Usuarios activos**, en el eje x se muestra el período de informe seleccionado y en el eje y se muestran los usuarios activos diarios separados y codificados por colores según el tipo de licencia.  <br/>  En el gráfico de actividad **Servicios**, en el eje X se muestran los servicios individuales habilitados para los usuarios en el período especificado y en el eje Y se muestra el número de usuarios por estado de actividad, codificados por colores según el estado de la actividad.  <br/> |
 |5.  <br/> |Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Si cambia esta selección, no cambiará la información en la tabla de cuadrícula.  <br/> |
-|6.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** ![los datos a](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) un archivo de Excel. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
+|6.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** ![ los datos a un archivo de Excel ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |7.  <br/> |Puede cambiar la información que se muestra en la tabla de cuadrícula con controles de columna.  <br/> Si la suscripción se ha operado por 21Vianet, no verá Yammer. <br/> <br/> |
 |||
 

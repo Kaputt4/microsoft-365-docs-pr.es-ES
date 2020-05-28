@@ -12,6 +12,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Obtenga el informe de uso de OneDrive para la organización y conozca la actividad de cada usuario de OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 9de2260049d901b401bd62a9e4d05191222b97a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047090"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387542"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 Reports en el centro de administración: actividad de OneDrive para la empresa
 
@@ -64,7 +65,7 @@ Puede obtener una vista de la actividad de OneDrive para la Empresa consultando 
 |5.  <br/> | En el gráfico **Archivos**, el eje Y es el número de archivos únicos que cualquier usuario guardó, sincronizó, modificó o compartió.  <br/>  En el gráfico **Usuarios**, el eje Y es el número de usuarios únicos que ejecutaron interacciones de archivo (guardar, sincronizar, modificar o compartir) en cualquier cuenta de OneDrive.  <br/>  En todos los gráficos, el eje X es el intervalo de fechas seleccionado para este informe específico.  <br/> |
 |6.  <br/> |Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Por ejemplo, en el gráfico **archivos** , seleccione **vista o editada** o **sincronizada** para ver solo la información relacionada con cada uno de ellos. El hecho de cambiar esta selección no cambia la información de la tabla de cuadrícula.  <br/> |
 |7.  <br/> | En la tabla, se muestra un desglose de los datos en el nivel de usuario. Puede agregar o quitar columnas de la tabla.   <br/>  **Username** es el nombre de usuario del propietario de la cuenta de OneDrive.  <br/> **Fecha de la última actividad (UTC)** es la última fecha en que se ha realizado una actividad de archivo en la cuenta de OneDrive para el intervalo de fechas seleccionado. Para ver las actividades realizadas en una fecha específica, seleccione la fecha directamente en el gráfico.  <br/> ![Seleccionar una fecha específica en el gráfico](../../media/29e54c4b-8dc2-4ed8-9367-1f66f2988fac.png)  <br/>  Esto filtrará la tabla para mostrar los datos de actividad de archivo solo para los usuarios que realizaron la actividad en ese día específico.  <br/> **Archivos vistos o editados** es el número de archivos que el usuario cargó, descargó, modificó o visualizó.  <br/> **Archivos sincronizados** es el número de archivos que se han sincronizado desde el dispositivo local de un usuario a la cuenta de OneDrive.  <br/> **Archivos compartidos internamente** es el número de archivos que se han compartido con los usuarios de la organización o con usuarios dentro de grupos (que pueden incluir usuarios externos).  <br/> **Compartidos de forma externa** es el número de archivos que se han compartido con usuarios fuera de la organización.  <br/> **Eliminados** indica que se ha quitado la licencia del usuario.  <br/> Nota: la actividad de un usuario eliminado se seguirá mostrando en un informe siempre que tenga una licencia en algún momento durante el período de tiempo seleccionado. En la columna **Eliminado** puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.<br/>**fecha eliminado** es la fecha en la que se quitó la licencia del usuario.  <br/> **Producto asignado** son los productos de Microsoft 365 que tienen licencia para el usuario.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **cómo ocultar los detalles del nivel de usuario** en los [informes de actividades del centro de administración de Microsoft 365](activity-reports.md).  <br/> |
-|8.  <br/> |Seleccione el icono ![ **administrar columnas** administrar columnas](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) para agregar o quitar columnas del informe.  <br/> |
+|8.  <br/> |Seleccione el icono **administrar columnas** ![ administrar columnas ](../../media/13d2e536-de88-4db3-80c7-7a3a57298eb4.png) para agregar o quitar columnas del informe.  <br/> |
 |9.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |||
    

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Obtenga información sobre cómo agregar usuarios a Microsoft 365, uno por vez o varios usuarios al mismo tiempo desde un archivo CSV.
-ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049476"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387266"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Agregar usuarios individualmente o de forma masiva
 
@@ -42,7 +43,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 
 1. Vaya al centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Vaya a **Users** > usuarios **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
    
 3. En el panel **configurar los conceptos básicos** , rellene la información siguiente y, a continuación, seleccione **siguiente**. 
   
@@ -69,7 +70,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
-2. Vaya a **Users** > usuarios **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
    
   
    En el panel **nuevo usuario** , rellene la siguiente información. Seleccione **Agregar** cuando haya terminado. 
@@ -94,7 +95,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-2. Vaya a **Users** > usuarios **activos**y seleccione **Agregar un usuario**.
+2. Vaya a **usuarios** > **activos**y seleccione **Agregar un usuario**.
    
   
    En el panel **nuevo usuario** , rellene la siguiente información. Seleccione **Agregar** cuando haya terminado. 

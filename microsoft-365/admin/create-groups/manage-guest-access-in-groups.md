@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de 365 de Microsoft, ver los usuarios invitados y usar PowerShell para controlar el acceso de invitados.
-ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140548"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386786"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en grupos de 365 de Microsoft
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ El acceso de invitado en grupos suele usarse como parte de un escenario más amp
 
 Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en el centro de administración de 365 de Microsoft.
 
-1. En el centro de administración, vaya a **Settings** \> **Settings** configuración y seleccione **Microsoft 365 Groups**.
+1. En el centro de administración, vaya a **configuración** \> **Settings** y seleccione **Microsoft 365 Groups**.
   
 2. En la página **Microsoft 365 Groups** , elija si desea permitir que los usuarios ajenos a la organización obtengan acceso a los recursos del grupo o que los propietarios del grupo agreguen personas fuera de la organización a los grupos.
 
@@ -63,7 +64,7 @@ Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo
 
 Si el invitado ya existe en su directorio, puede agregarlo a los grupos desde el centro de administración de Microsoft 365.
   
-1. En el centro de administración, vaya a **la** > **Groups** página grupos de grupos.
+1. En el centro de administración, vaya a **la**página grupos de grupos  >  **Groups** .
   
 2. Haga clic en el grupo al que desea agregar el invitado y seleccione **Ver todos y administrar miembros** en la pestaña **miembros** . 
   
@@ -90,7 +91,7 @@ Debe usar la versión preliminar de [Azure Active Directory PowerShell para Grap
 > [!NOTE]
 > Debe tener derechos de administrador global para ejecutar estos comandos. 
 
-Ejecute el siguiente script y cambie * / * al nombre del grupo en el que desea bloquear el acceso de invitado.
+Ejecute el siguiente script y cambie */<GroupName/>* al nombre del grupo en el que desea bloquear el acceso de invitado.
 
 ```PowerShell
 $GroupName = "<GroupName>"

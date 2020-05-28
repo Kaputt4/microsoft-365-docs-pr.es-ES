@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618793"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387242"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -65,16 +66,16 @@ Puede asignar usuarios a un rol de dos maneras distintas:
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Asignar roles de administrador a los usuarios mediante roles
 
-1. En el centro de administración, > vaya **a roles roles para** Ver todos **los roles de** administrador disponibles para su organización.
+1. En el centro de administración, vaya **a roles roles** > **Roles** para ver todos los roles de administrador disponibles para su organización.
 2. Seleccione el rol de administrador al que desea asignar el usuario.
-3. > **Add**Seleccione **administradores asignados** .
+3. Seleccione **administradores asignados** > **Add**.
 4. Escriba el nombre para **Mostrar** o el nombre para mostrar del usuario y, a **continuación, seleccione**el usuario de la lista de sugerencias.
 5. Agregue varios usuarios hasta que haya terminado.
 6. Seleccione **Guardar**y, a continuación, el usuario se agregará a la lista de administradores asignados.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Asignar un usuario a un rol de administrador desde usuarios activos
 
-1. En el centro de administración, > vaya **a la página usuarios** [activos](https://go.microsoft.com/fwlink/p/?linkid=834822) .
+1. En el centro de administración, vaya **a la página usuarios** > [activos](https://go.microsoft.com/fwlink/p/?linkid=834822) .
 
 2. En la página **usuarios activos** , seleccione el usuario cuyo rol de administrador quiera cambiar. En el panel flotante, junto a **roles**, seleccione **administrar roles**.
 

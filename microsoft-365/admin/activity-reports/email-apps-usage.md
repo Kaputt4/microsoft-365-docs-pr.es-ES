@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Obtenga información sobre cómo obtener el informe de uso de aplicaciones de correo electrónico para conocer las aplicaciones de correo electrónico que se conectan a Exchange Online y la versión de Outlook que usan los usuarios.
-ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 80f05e4b356655c859536a46868e7ffde7cdebdb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046860"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387770"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico
 
@@ -37,7 +38,7 @@ El panel de **informes** de Microsoft 365 muestra la información general de la 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
     
-2. En la lista desplegable **seleccionar un informe** , seleccione uso de la **aplicación de correo electrónico**de **Exchange** \> .
+2. En la lista desplegable **seleccionar un informe** , seleccione **Exchange** uso de la \> **aplicación de correo electrónico**de Exchange.
   
 ## <a name="interpret-the-email-apps-report"></a>Interpretar el informe de aplicaciones de correo electrónico
 
@@ -53,7 +54,7 @@ Puede obtener una vista de la actividad de las aplicaciones de correo electróni
 |4.  <br/> |La vista **Aplicaciones** muestra el número de usuarios únicos por aplicación durante el período de tiempo seleccionado.  <br/> |
 |5.  <br/> |La vista **versiones** muestra el número de usuarios únicos para cada versión de Outlook en Windows.  <br/> |
 |6.  <br/> | En el gráfico **Usuarios**, el eje Y es el recuento total de usuarios únicos que se han conectado a una aplicación en cualquier día del período de informe.  <br/>  En el gráfico **Usuarios**, el eje X es el número de usuarios únicos que han usado la aplicación durante el período de informe.  <br/>  En el gráfico **Aplicaciones**, el eje Y es el recuento total de usuarios únicos que han usado una aplicación específica durante el período de informe.  <br/>  En el gráfico **Aplicaciones**, el eje X es la lista de aplicaciones de su organización.  <br/>  En el gráfico **Versiones**, el eje Y es el recuento total de los usuarios únicos que utilizan una versión específica de escritorio de Outlook. Si el informe no puede concluir el número de versión de Outlook, el dato se mostrará como sin determinar.  <br/>  En el gráfico **Versiones**, el eje X es la lista de aplicaciones de su organización.  <br/> |
-|7.  <br/> |Puede filtrar la serie que ve en el gráfico mediante selectingan elemento de la leyenda. Por ejemplo, en el gráfico **usuarios** , seleccione **correo de Mac** o lista de clientes de correo electrónico de **Outlook** ![. Seleccione el cliente de correo electrónico para obtener más datos de informes en ese cliente.](../../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) para ver solo la información relacionada con cada uno. Al cambiar esta selección, no se cambia la información de la tabla de cuadrícula. Mail de Mac, Outlook para Mac, Outlook móvil, Outlook de escritorio y Outlook en la web, son ejemplos de aplicaciones de correo electrónico que es posible que tenga en su organización.  <br/> |
+|7.  <br/> |Puede filtrar la serie que ve en el gráfico mediante selectingan elemento de la leyenda. Por ejemplo, en el gráfico **usuarios** , seleccione **correo de Mac** o **Outlook** ![ lista de clientes de correo electrónico de Outlook. Seleccione el cliente de correo electrónico para obtener más datos de informes en ese cliente.](../../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) para ver solo la información relacionada con cada uno. Al cambiar esta selección, no se cambia la información de la tabla de cuadrícula. Mail de Mac, Outlook para Mac, Outlook móvil, Outlook de escritorio y Outlook en la web, son ejemplos de aplicaciones de correo electrónico que es posible que tenga en su organización.  <br/> |
 |8.  <br/> | Es posible que no vea todos los elementos de las columnas en la lista siguiente hasta que los agregue.<br/> **Username** es el nombre del propietario de la aplicación de correo electrónico.  <br/> **Fecha de la última actividad** es la última fecha en la que el usuario leyó o envió un mensaje de correo electrónico.  <br/> **Mail de Mac**, **Outlook para Mac**, **Outlook**, **Outlook móvil** y **Outlook en la web**, son ejemplos de aplicaciones de correo electrónico que es posible que tenga en su organización.  <br/>  Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **cómo ocultar los detalles del nivel de usuario** en los [informes de actividades del centro de administración de Microsoft 365](activity-reports.md).  <br/> |
 |9.  <br/> |Seleccione **administrar columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de uso de aplicaciones de correo electrónico: elegir columnas](../../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
 |10.  <br/> |También puede exportar los datos del informe a un archivo. csv de Excel; para ello, seleccione el vínculo **exportar** . Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |

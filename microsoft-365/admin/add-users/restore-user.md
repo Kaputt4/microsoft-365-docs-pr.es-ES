@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Obtenga información sobre cómo restaurar cuentas de usuario eliminadas y todos los datos asociados.
-ms.openlocfilehash: 7ac0805024ebf78075a66f77c99496675f20e497
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140572"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387010"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
    
@@ -53,7 +54,7 @@ Debe ser administrador global de Microsoft 365 o administrador de administració
  
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> página usuarios <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
+1. En el centro de administración, vaya a **la página usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
 
 ::: moniker-end
 
@@ -88,7 +89,7 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> página usuarios <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
+1. En el centro de administración, vaya a **la página usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
 
 ::: moniker-end
 
@@ -129,7 +130,7 @@ Para ello, debe tener [permisos de administrador](about-admin-roles.md) en Micro
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> página usuarios <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
+1. En el centro de administración, vaya a **la página usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados</a> .
 
 ::: moniker-end
 

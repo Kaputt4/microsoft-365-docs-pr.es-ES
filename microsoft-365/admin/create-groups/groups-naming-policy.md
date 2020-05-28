@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630448"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388010"
 ---
 # <a name="groups-naming-policy"></a>Directiva de nomenclatura de Grupos
 
@@ -38,7 +39,7 @@ La Directiva de nomenclatura se aplica a los grupos que se crean en todas las ca
 
 La Directiva de nomenclatura de grupos consta de las siguientes características:
 
-- **Directiva de nomenclatura de prefijo-sufijo**: puede usar prefijos o sufijos para definir la Convención de nomenclatura de grupos (\_por ejemplo\_: "US My Group Engineering"). Los prefijos/sufijos pueden ser cadenas fijas o atributos de usuario, como [Departamento], que se sustituirán según el usuario que cree el grupo.
+- **Directiva de nomenclatura de prefijo-sufijo**: puede usar prefijos o sufijos para definir la Convención de nomenclatura de grupos (por ejemplo: "US \_ My Group \_ Engineering"). Los prefijos/sufijos pueden ser cadenas fijas o atributos de usuario, como [Departamento], que se sustituirán según el usuario que cree el grupo.
 
 - **Palabras bloqueadas personalizadas**: puede cargar un conjunto de palabras bloqueadas específicas de su organización que podrían bloquearse en grupos creados por los usuarios. (Por ejemplo: "CEO, nóminas, h").
 
@@ -54,7 +55,7 @@ Los prefijos y los sufijos pueden ser cadenas fijas o atributos de usuario.
 
 ### <a name="fixed-strings"></a>Cadenas fijas
 
-Puede usar cadenas cortas que pueden ayudarle a diferenciar los grupos de la GAL y la navegación izquierda de las cargas de trabajo de grupo. Algunos de los sufijos comunes son palabras clave como "nombre\_del GRP",\#"nombre",\_"nombre".
+Puede usar cadenas cortas que pueden ayudarle a diferenciar los grupos de la GAL y la navegación izquierda de las cargas de trabajo de grupo. Algunos de los sufijos comunes son palabras clave como "nombre del GRP \_ ", " \# nombre", " \_ nombre".
 
 ### <a name="attributes"></a>Atributos
 
@@ -80,7 +81,7 @@ Se recomienda usar atributos que tengan valores rellenados para todos los usuari
 
 - Los prefijos y los sufijos pueden contener caracteres especiales que se admiten en nombre de grupo y alias de grupo. Cuando los prefijos y los sufijos contienen caracteres especiales que no se permiten en el alias de grupo, solo se aplican al nombre del grupo. Por lo tanto, en este caso, los prefijos y los sufijos aplicados al nombre del grupo serían distintos de los que se aplican al alias del grupo.
 
-- Si usa los grupos conectados de Yammer Microsoft 365, evite usar los siguientes caracteres en su Directiva de nomenclatura: @ \#, \[, \], \<, y \>. Si estos caracteres están en la Directiva de nomenclatura, los usuarios normales de Yammer no podrán crear grupos.
+- Si usa los grupos conectados de Yammer Microsoft 365, evite usar los siguientes caracteres en su Directiva de nomenclatura: @, \# , \[ , \] , \<, and \> . Si estos caracteres están en la Directiva de nomenclatura, los usuarios normales de Yammer no podrán crear grupos.
 
 ## <a name="custom-blocked-words"></a>Palabras bloqueadas personalizadas
 

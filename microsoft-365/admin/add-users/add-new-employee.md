@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Agregue nuevos empleados a Microsoft 365 para empresas para correo electrónico, Skype y aplicaciones de Office.
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049502"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387314"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Agregar un nuevo empleado a Microsoft 365
 
@@ -63,7 +64,7 @@ Como todavía no tienen acceso a su correo electrónico, no envíe la informaci�
 
 Al igual que Facebook, Amazon o gmail, su empleado inicia sesión para usar Microsoft 365. Asígneles la siguiente información de inicio de sesión:
   
-- Inicie sesión en [https://www.office.com](https://www.office.com).
+- Inicie sesión en [https://www.office.com](https://www.office.com) .
     
 - Seleccione **iniciar sesión**y, a continuación, escriba el identificador de usuario y la contraseña.
     
@@ -76,7 +77,7 @@ Y esta es una referencia rápida para ayudarles a empezar:
   
 |**Tarea**|**Buscar los detalles**|
 |:-----|:-----|
-|Iniciar sesión en Office  <br/> |Vaya a [https://www.office.com](https://www.office.com), seleccione **iniciar sesión**y, a continuación, escriba el identificador de usuario y la contraseña.  <br/> |
+|Iniciar sesión en Office  <br/> |Vaya a [https://www.office.com](https://www.office.com) , seleccione **iniciar sesión**y, a continuación, escriba el identificador de usuario y la contraseña.  <br/> |
 |Instale las aplicaciones de Office en su equipo.  <br/><br/> |Al iniciar sesión, la Página principal tiene un vínculo para descargar e instalar aplicaciones como Word y Outlook.  Seleccione **instalar Office**.         Para obtener instrucciones, consulte [How to Install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Configurar el correo electrónico en Outlook 2016.  <br/> |Una vez instaladas las aplicaciones de Office en el equipo, configure el correo electrónico. Para obtener instrucciones, consulte [How to Setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Configure Skype empresarial para poder conectarse con compañeros de trabajo o socios empresariales de su empresa o de todo el mundo. Puede iniciar conversaciones con llamadas de mi, voz o vídeo.  <br/> |[Instalar Skype empresarial en el equipo](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Para obtener información sobre cómo usar Skype empresarial, [vea un vídeo.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>¿Ha configurado Skype empresarial para que sus empleados puedan ponerse en contacto con personas externas a su empresa que usen la aplicación gratuita de Skype? Si no es así, dígale a su nuevo empleado que sepan qué esperar al usar Skype empresarial.  <br/> |

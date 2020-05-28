@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Obtenga información sobre cómo obtener un informe de activación de Office para saber qué usuarios han activado su suscripción de Office e identificar a los usuarios que puedan necesitar ayuda adicional.
-ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621227"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387746"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Informes de Microsoft 365 en el centro de administración: activaciones de Microsoft Office
 
@@ -49,7 +50,7 @@ Puede obtener una vista de las activaciones de Office de su organización consul
   
 |||
 |:-----|:-----|
-|1  <br/> |El informe de activaciones de Office presenta el estado actual de los datos de activaciones de licencia de office [a partir de la fecha del informe reflejada en la parte superior derecha del gráfico].  <br/> |
+|1   <br/> |El informe de activaciones de Office presenta el estado actual de los datos de activaciones de licencia de office [a partir de la fecha del informe reflejada en la parte superior derecha del gráfico].  <br/> |
 |segundo  <br/> |Los datos de cada informe normalmente cubren hasta las últimas 24 a 48 horas.  <br/> |
 |3  <br/> |El gráfico **Activaciones** le muestra el recuento de las activaciones de Office en equipos de escritorio y dispositivos.  <br/> |
 |4   <br/> |El gráfico **Usuarios** le muestra el recuento de usuarios que están habilitados y de usuarios que han activado la suscripción de Office en equipos de escritorio o dispositivos.  <br/> |

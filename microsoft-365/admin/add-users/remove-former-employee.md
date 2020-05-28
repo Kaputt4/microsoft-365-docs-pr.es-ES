@@ -18,18 +18,19 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322092"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387050"
 ---
 # <a name="remove-a-former-employee"></a>Quitar un antiguo empleado
 

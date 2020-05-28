@@ -1,5 +1,5 @@
 ---
-title: Introducción al centro de administración
+title: Información general del Centro de administración
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,20 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Obtenga información sobre el centro de administración de 365 de Microsoft: Cómo iniciar sesión, quién es su administrador, y vea una introducción al vídeo sobre el mismo.'
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623969"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386942"
 ---
-# <a name="admin-center-overview"></a>Introducción al centro de administración 
+# <a name="admin-center-overview"></a>Información general del Centro de administración 
 
   
 Al comprar un [plan de microsoft 365 apps for Business](https://go.microsoft.com/fwlink/?linkid=856886) o un plan de [Microsoft 365 para la empresa](https://www.microsoft.com/microsoft-365/business), le ofrecemos una cuenta especial que tiene permisos de administrador. Esta cuenta se denomina cuenta de administrador.
@@ -35,19 +36,19 @@ Con esta cuenta, puede obtener acceso al centro de administración de Microsoft 
   
 ::: moniker range="o365-worldwide"
 
- **Inicie sesión con su cuenta de administrador <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>en.**
+ **Inicie sesión con su cuenta de administrador en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**Inicie sesión con su cuenta de administrador en Office 365 Germany <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>en.**
+**Inicie sesión con su cuenta de administrador en Office 365 Germany en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**Inicie sesión con su cuenta de administrador en Office 365 operado por <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>21Vianet en.**
+**Inicie sesión con su cuenta de administrador en Office 365 operado por 21Vianet en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> .**
 
 ::: moniker-end
 

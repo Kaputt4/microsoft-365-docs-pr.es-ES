@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configuración cuando se agregan varios usuarios.
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140657"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387230"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Crear y usar una plantilla para agregar usuarios
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ Puede crear y usar una plantilla para ahorrar tiempo y estandarizar la configura
 
 ## <a name="create-a-template"></a>Creación de una plantilla
 
-Las plantillas son fáciles de&mdash;crear puede seleccionar **a los** > usuarios usuarios**activos** > **plantillas de usuario**y, a continuación, seleccionar **Agregar una plantilla** de la lista desplegable o puede Agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como una plantilla.
+Las plantillas son fáciles de crear puede &mdash; seleccionar **a los**usuarios usuarios  >  **activos**  >  **plantillas de usuario**y, a continuación, seleccionar **Agregar una plantilla** de la lista desplegable o puede Agregar un nuevo usuario y, cuando haya terminado, tendrá la opción de guardar la entrada como una plantilla.
 
 Al crear una plantilla después de agregar un usuario, los valores que elija para la siguiente configuración se guardan en la plantilla:
 
@@ -68,12 +69,12 @@ Al crear una plantilla seleccionando la opción **Agregar una plantilla** , pued
 
 Para usar una plantilla existente para agregar un usuario:
 
-1. En el centro de administración, seleccione usuarios**activos**de **usuarios** > .
+1. En el centro de administración, seleccione usuarios activos de **usuarios**  >  **Active users**.
 
 2. Seleccione **plantillas de usuario**y, a continuación, seleccione una plantilla en la lista desplegable. (La lista solo contendrá las plantillas que ha creado, no las creadas por otros administradores).
 
  > [!NOTE]
- > También puede usar una plantilla para agregar un usuario seleccionando **plantillas** > de usuario**administrar plantillas**, seleccionando una plantilla y, a continuación, haciendo clic en **Usar plantilla**.
+ > También puede usar una plantilla para agregar un usuario seleccionando **plantillas de usuario**  >  **administrar plantillas**, seleccionando una plantilla y, a continuación, haciendo clic en **Usar plantilla**.
 
 3. Siga los pasos para crear un usuario a partir de la plantilla que ha seleccionado.
 
@@ -84,7 +85,7 @@ Para usar una plantilla existente para agregar un usuario:
 
 Puede eliminar fácilmente las plantillas que ya no necesite y agregar otras nuevas. Para eliminar una plantilla:
 
-1. En el centro de administración, seleccione usuarios**activos**de **usuarios** > .
+1. En el centro de administración, seleccione usuarios activos de **usuarios**  >  **Active users**.
 
 2. Seleccione **plantillas**y, a continuación, seleccione **administrar plantillas** en la lista desplegable.
 

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045217"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386750"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -40,7 +42,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Las suscripciones se muestran en la página **sus productos** , junto con el nombre de la suscripción, información sobre la suscripción y su estado. Para ver una vista condensada, seleccione **vista de tabla**.
 
@@ -48,7 +50,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
   
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \>.  
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de facturación.  
 
 2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, puede ver que tengo una suscripción a Microsoft 365 apps for Business.
 
@@ -67,7 +69,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de **facturación** \>.  
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">suscripciones</a> de facturación.  
 
 2. Si solo tiene una suscripción, se mostrará en la página **Suscripciones**, junto con el nombre de la suscripción, información sobre esta y su estado. En la siguiente captura de pantalla, puede ver que tengo una suscripción a Microsoft 365 apps for Business.
 
