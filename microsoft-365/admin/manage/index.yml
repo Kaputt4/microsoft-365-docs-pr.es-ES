@@ -10,18 +10,19 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: b1a5bd2f50542a9c76c32da7465e80e371238560
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955330"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44399757"
 landingContent:
 - title: Supervisar el estado de nuestro servicio
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Supervisión de la actividad de los usuarios mediante informes
+    - text: Supervisar la actividad de los usuarios mediante informes
       url: ../activity-reports/activity-reports.md
     - text: Supervisar el análisis de uso
       url: ../usage-analytics/usage-analytics.md
@@ -31,13 +32,13 @@ landingContent:
       url: change-address-contact-and-more.md
     - text: Actualizar la información de contacto de administrador
       url: update-phone-number-and-email-address.md
-    - text: Configurar opciones de versión
+    - text: Configurar opciones de lanzamiento
       url: release-options-in-office-365.md
 - title: Bloquear el acceso de los usuarios y la copia de seguridad de datos
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Obtener acceso y realizar una copia de seguridad de los datos de un usuario anterior
+    - text: Acceso y copia de seguridad de los datos de un antiguo usuario
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
     - text: Configuración de la retención de correo electrónico (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
@@ -47,13 +48,13 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Actualizar la organización a las aplicaciones más recientes
+    - text: Actualizar la organización a las últimas aplicaciones
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: Personalizar el iniciador de aplicaciones
       url: customize-the-app-launcher.md
     - text: Requisitos para la implementación centralizada de complementos
       url: centralized-deployment-of-add-ins.md
-    - text: Instalar y administrar complementos mediante la implementación centralizada
+    - text: Instalar y administrar complementos con Implementación centralizada
       url: manage-deployment-of-add-ins.md
 - title: Microsoft Teams
   linkLists:
