@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401815"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407973"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -43,7 +43,7 @@ Al comprar una suscripción, elige pagar con una tarjeta de crédito o una cuent
 > [!IMPORTANT]
 > Pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 
- **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md).
+ **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Manage Payment Methods](manage-payment-methods.md).
 
  **¿Solo quiere cambiar la frecuencia con la que se le factura?** Consulte [cambiar la frecuencia de pago](change-payment-frequency.md).
   
@@ -67,7 +67,7 @@ Cuando compre Office 365 para empresas, podrá elegir pagar con tarjeta de créd
   
  **¿Desea cambiar la frecuencia de pago?** Si desea cambiar la frecuencia de pago de la suscripción, ya sea de anual a mensual o mensual a anual, necesitará [llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md) para obtener ayuda.
   
- **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md).
+ **¿Solo quiere cambiar la información de su tarjeta de crédito o cuenta bancaria?** Consulte [Manage Payment Methods](manage-payment-methods.md).
   
  **¿Qué debo hacer si tengo un saldo pendiente?**
   

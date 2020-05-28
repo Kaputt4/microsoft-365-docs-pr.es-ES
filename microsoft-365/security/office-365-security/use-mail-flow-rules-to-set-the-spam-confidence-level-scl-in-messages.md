@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo crear reglas de flujo de correo (reglas de transporte) para identificar mensajes y establecer el nivel de confianza contra correo no deseado (SCL) de los mensajes en Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208566"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405124"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL) en los mensajes en EOP
 
-En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP usa directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) para analizar los mensajes entrantes en busca de correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
+En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP usa directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) para analizar los mensajes entrantes en busca de correo no deseado. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 Si desea marcar determinados mensajes como correo no deseado antes de que se analicen mediante el filtrado de correo no deseado o marcar mensajes para que omitan el filtrado de correo no deseado, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para identificar los mensajes y establecer el nivel de confianza contra correo no deseado (SCL). Para obtener más información sobre el SCL, vea [nivel de confianza de correo no deseado (SCL) en EOP](spam-confidence-levels.md).
 
@@ -54,7 +54,7 @@ Si desea marcar determinados mensajes como correo no deseado antes de que se ana
 
    - **Haga lo siguiente**: seleccione **modificar las propiedades del mensaje** \> **establecer el nivel de confianza contra correo no deseado (SCL)**. En el cuadro de diálogo **especificar SCL** que aparece, configure uno de los siguientes valores:
 
-   - **Omitir el filtrado de correo no deseado**: establece el SCL en-1, lo que significa que los mensajes omitirán el filtrado de correo no deseado.
+   - **Omitir el filtrado de correo no deseado**: los mensajes omitirán el filtrado de correo no deseado.
 
      > [!CAUTION]
      > Tenga cuidado con la autorización de mensajes para omitir el filtrado de correo no deseado. Los atacantes pueden usar esta vulnerabilidad para enviar mensajes de suplantación de identidad (phishing) y otros mensajes malintencionados a la organización. Las reglas de flujo de correo requieren más que solo la dirección de correo electrónico o el dominio del remitente. Para obtener más información, vea [crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md).

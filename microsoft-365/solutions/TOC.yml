@@ -11,20 +11,20 @@
   items:
     - name: Información general
       href: foundation-solutions-overview.md
-    - name: Habilita a los trabajadores remotos con Microsoft 365
+    - name: Proporcionar Microsoft 365 a los trabajadores remotos
       href: empower-people-to-work-remotely.md
       items:
-        - name: Paso 1. Aumentar la seguridad de inicio de sesión para los trabajadores remotos con MFA
+        - name: Paso 1. Aumentar la seguridad de inicio de sesión
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Paso 2. Proporcionar acceso remoto
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 'Paso 3. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión'
+        - name: Paso 3. Implementar la administración de extremos
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Paso 4. Implementación de servicios y aplicaciones de productividad de los trabajadores remotos
+        - name: Paso 4. Implementación de aplicaciones y servicios de productividad
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Paso 5. Crear lugares de comunicación de crisis de COVID-19
+        - name: Paso 5. Crear lugares de comunicación
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: Paso 6. Entrenar a los trabajadores remotos y comentarios sobre el uso de direcciones
+        - name: Paso 6. Entrenar a los trabajadores remotos
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Configurar una colaboración segura con Microsoft 365
       href: setup-secure-collaboration-with-teams.md
@@ -39,7 +39,7 @@
               href: configure-teams-sensitive-protection.md
             - name: Configurar la protección muy confidencial
               href: configure-teams-highly-sensitive-protection.md
-            - name: Configurar un equipo con aislamiento de seguridad
+            - name: Configuración de un equipo con aislamiento de seguridad
               href: secure-teams-security-isolation.md
         - name: Configurar el uso compartido externo
           items:

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Realice una copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar los planes de Microsoft 365.
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708100"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403623"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de empresa
 
@@ -61,8 +62,8 @@ De forma predeterminada, la dirección URL del sitio web del grupo tiene el sigu
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-donde _ \<orgDomain\> _ es la dirección URL de la organización.
+donde _\<orgDomain\>_ es la dirección URL de la organización.
   
-Por ejemplo, si el dominio de la organización es contoso.onmicrosoft.com, la dirección URL directa del sitio de grupo sería https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
+Por ejemplo, si el dominio de la organización es contoso.onmicrosoft.com, la dirección URL directa del sitio de grupo sería https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx .
   
 Por supuesto, los usuarios también pueden descargar documentos de SharePoint Online desde el sitio de grupo de SharePoint a su equipo local o a otra ubicación en cualquier momento.

@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -16,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Actualice la información de contacto de su organización y elija las comunicaciones relacionadas con productos de Microsoft 365 que desea recibir.
-ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628213"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407937"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Cambiar las preferencias de contacto para las comunicaciones de Microsoft
 
@@ -42,7 +43,7 @@ Si intenta averiguar cómo se cambia la información de perfil de su compañía,
 4. Escriba el teléfono del trabajo, el teléfono móvil del trabajo o el correo electrónico del trabajo donde quiere recibir estas comunicaciones.
     Puede usar cualquier dirección de correo electrónico, incluida su dirección de correo electrónico de Microsoft, para recibir estas comunicaciones. Si no agrega una dirección de correo electrónico para las preferencias de contacto, se usará su dirección de correo electrónico alternativa (la de la página **Información personal**).
 
-5. Elija **Guardar**.
+5. Seleccione **Guardar**.
   
 Para Office 365 Enterprise, Microsoft 365 Business Standard y Microsoft 365 Business Basic, cuando se haya registrado por primera vez como administrador de Microsoft 365, según el país o la región de los usuarios de la organización, es posible que los usuarios se hayan registrado automáticamente para recibir comunicaciones relacionadas con el producto.
   
@@ -50,4 +51,4 @@ Para obtener respuestas a preguntas sobre facturación, consulte:
   
 - [Cambiar las direcciones de facturación para Microsoft 365 para empresas](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria en Microsoft 365 para empresas](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Administrar métodos de pago](../../commerce/billing-and-payments/manage-payment-methods.md)

@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401767"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407961"
 ---
 # <a name="pay-for-your-subscription"></a>Pagar la suscripción
 
@@ -48,7 +48,7 @@ Al configurar su suscripción, puede elegir pagar con tarjeta de crédito, media
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Pagar con tarjeta de crédito o cuenta bancaria
 
-Al pagar con tarjeta de crédito o cuenta bancaria, se le hará automáticamente un cargo por su suscripción el día siguiente a la fecha de factura. Puede [actualizar la información de la tarjeta de crédito o la cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md) siempre que sea necesario. También tiene la posibilidad de [Recibir una copia del extracto de facturación por correo electrónico](#receive-a-copy-of-your-billing-statement-in-email).
+Al pagar con tarjeta de crédito o cuenta bancaria, se le hará automáticamente un cargo por su suscripción el día siguiente a la fecha de factura. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También tiene la posibilidad de [Recibir una copia del extracto de facturación por correo electrónico](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>¿Qué ocurre si se rechazó la tarjeta de crédito y el pago está vencido?
 
@@ -63,12 +63,12 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 
 2. Busque la suscripción con el saldo pendiente. En la sección **Facturación**, junto a la **suscripción tiene un pago vencido**, seleccione **Liquidar saldo**.
 
-3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](manage-payment-methods.md).
 
     > [!NOTE]
     > Al usar la característica **Liquidar saldo**, se realizará un cargo en su cuenta de todo el saldo pendiente, que puede ser superior al importe pendiente de pago que se muestre en otro lugar.
 
-4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](manage-payment-methods.md).
 
 5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito usada para pagar la suscripción, seleccione **Guardar**.
 
@@ -80,12 +80,12 @@ Si paga con tarjeta de crédito y rechazan el pago, recibirá un correo electró
 
 2. Seleccione la suscripción que quiere cambiar. En la sección **Mi factura**, elija **Pagar ahora**.
 
-3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si es el propietario de la tarjeta de crédito, puede cambiar la fecha de expiración de la tarjeta, elegir una tarjeta distinta o [agregar una tarjeta nueva](manage-payment-methods.md).
 
     > [!NOTE]
     > Al usar la característica **Pagar ahora**, se realizará un cargo en su cuenta de todo el saldo pendiente, que puede ser superior al importe pendiente de pago que se muestre en otro lugar.
 
-4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si no es el propietario de la tarjeta de crédito, puede seleccionar una tarjeta de crédito distinta o [agregar una tarjeta nueva](manage-payment-methods.md).
 
 5. Después de actualizar la información de la tarjeta de crédito o de cambiar la tarjeta de crédito usada para pagar la suscripción, elija **Enviar**. Verá el mensaje de confirmación "Se actualizó el método de pago y se saldaron todos los cargos pendientes. Gracias".
 
@@ -311,6 +311,6 @@ Si sus motivos originales para elegir facturación, tarjeta de crédito o cuenta
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md)
+[Administrar métodos de pago](manage-payment-methods.md)
 
 [Entender su factura o recibo](understand-your-invoice2.md)

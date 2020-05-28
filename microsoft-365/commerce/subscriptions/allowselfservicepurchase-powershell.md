@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: None
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el cmdlet de PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011680"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403695"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
@@ -33,7 +33,7 @@ Puede usar el módulo de PowerShell **MSCommerce** para:
 - Ver una lista de los productos aplicables y si la compra de servicios automáticos está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para usar el módulo de PowerShell **MSCommerce** , necesita:
 

@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Obtenga información sobre cómo administrar los métodos de pago en el centro de administración de Microsoft 365.
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322164"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403683"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -88,7 +89,7 @@ Puede cambiar el nombre de la tarjeta de crédito o débito, la dirección de fa
 
 2. Seleccione la fila del método de pago que se va a actualizar. En el panel derecho, seleccione **Editar**.
 
-3. Actualice la información del método de pago, incluido el nombre de la tarjeta de crédito o débito, la dirección de facturación o la fecha de expiración y, a continuación, seleccione **Guardar**.
+3. Actualice la información de su método de pago, incluido el nombre de la tarjeta de crédito o débito, la dirección de facturación o la fecha de expiración y, después, seleccione **Guardar**.
 
 ## <a name="replace-a-payment-method"></a>Reemplazar un método de pago
 
@@ -108,17 +109,17 @@ Para cambiar el método de pago para una sola suscripción, vea [cambiar un mét
 1. En el centro de administración, vaya a la página facturas de **facturación** > **&** > **métodos de pago** pagos.
 ::: moniker-end
 
-2. Seleccione la fila del método de pago que desea reemplazar. El panel derecho muestra todos los perfiles de facturación y suscripciones individuales que usan el método de pago seleccionado.
+2. Seleccione la fila del método de pago que desea reemplazar. En el panel derecho se muestran todos los perfiles de facturación y las suscripciones individuales que usan el método de pago seleccionado.
 
-3. En el panel derecho, seleccione **reemplazar el método de pago para todos los elementos**.
+3. En el panel derecho, seleccione **Reemplazar método de pago para todos los artículos**.
 
-4. Para usar un método de pago existente, elija uno en la lista desplegable y, a continuación, seleccione **reemplazar**.
+4. Para usar un método de pago existente, elija uno de la lista desplegable y seleccione **Reemplazar**.
     > [!NOTE]
-    > Si tiene suscripciones asociadas a un perfil de facturación, solo puede usar una tarjeta de crédito o débito para pagar por ellas. Si tiene cuentas bancarias que aparecen en la página de **métodos de pago** , no estarán disponibles para seleccionar en la lista desplegable.
+    > Si tiene una suscripción asociada a un perfil de facturación, solo puede usar una tarjeta de crédito o débito para pagar por ella. Si tiene cuentas bancarias que aparecen en la página **Método de pago**, no están disponibles para seleccionarlas en la lista desplegable.
 
 5. Para agregar un nuevo método de pago, seleccione **Agregar método de pago**.
 
-6. En el panel **Agregar un método de pago** , escriba la información de la cuenta y, después, seleccione **Guardar**. Debe usar un método de pago del mismo país que el inquilino.
+6. En el panel **Agregar método de pago**, escriba la información de la cuenta y seleccione **Guardar**. Debe usar un método de pago del mismo país que su espacio empresarial.
 
 7. El nuevo método de pago ya está seleccionado en la lista desplegable. Seleccione **Reemplazar**.
 

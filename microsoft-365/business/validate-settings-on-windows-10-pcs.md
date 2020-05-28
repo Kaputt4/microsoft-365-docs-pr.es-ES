@@ -20,17 +20,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Obtenga información sobre cómo comprobar que la configuración de la protección de aplicaciones de Microsoft 365 para empresas surta efecto en los dispositivos Windows 10 de los usuarios.
-ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635712"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403598"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
@@ -46,13 +47,13 @@ Una vez que haya [configurado las directivas de dispositivos](protection-setting
     
     ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Ir a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **Opciones** \> avanzadas **Elija cómo se entregan las actualizaciones**.
+3. Ir a **configuración** \> **actualización &amp; seguridad** \> **Windows Update** \> **Opciones avanzadas** \> **Elija cómo se entregan las actualizaciones**.
     
     Confirme que puede ver el mensaje (en rojo) que la organización está ocultando o administrando, y que todas las opciones están atenuadas.
     
     ![Elegir cómo se entregan las actualizaciones la página indica que la configuración está oculta o administrada por la organización.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Para abrir el centro de seguridad de Windows Defender, vaya a **configuración** \> ** &amp; actualización seguridad** \> **Windows Defender** \> haga clic en **abrir el centro** \> de seguridad de Windows Defender configuración de protección frente a **virus &amp; **de protección de ** &amp; subprocesos.** \> 
+4. Para abrir el centro de seguridad de Windows Defender, vaya a **configuración** \> **actualización &amp; seguridad** \> **Windows Defender** \> haga clic en **abrir el centro de seguridad de Windows Defender** configuración de protección frente a virus de protección de \> ** &amp; subprocesos** \> ** &amp; **. 
     
 5. Compruebe que todas las opciones están atenuadas. 
     

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Obtenga información sobre cómo agregar y quitar licencias de la suscripción a Microsoft 365 para empresas.
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141238"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404027"
 ---
 # <a name="manage-subscription-licenses"></a>Administrar las licencias de suscripción
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ No puede quitar una licencia de una suscripción si está asignada a un usuario.
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. En la página **sus productos** , busque la suscripción en la que desea agregar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**.
 
@@ -69,7 +70,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
     [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. En el **cuadro total de licencias** , escriba el número total de licencias que necesita para esta suscripción y, después, seleccione **Enviar** \> y **cerrar**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
+3. En el cuadro **total de licencias** , escriba el número total de licencias que necesita para esta suscripción y, después, seleccione **Enviar** y \> **cerrar**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
 
 Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
 
@@ -83,7 +84,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
     [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. En el **cuadro total de licencias** , escriba el número total de licencias que necesita para esta suscripción y, después, seleccione **Enviar** \> y **cerrar**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
+3. En el cuadro **total de licencias** , escriba el número total de licencias que necesita para esta suscripción y, después, seleccione **Enviar** y \> **cerrar**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
 
 Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
 
@@ -93,7 +94,7 @@ Después de comprar licencias nuevas, asegúrese de [asignar las licencias a los
 
 En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto. 
 
-|Reason  |Descripción  |Solución  |
+|Motivo  |Description  |Solución  |
 |---------|---------|---------|
 |Hay pendiente una comprobación de crédito. |Si hay pendiente una comprobación de crédito, verá un mensaje "Pendiente de comprobación de crédito" y no podrá comprar licencias hasta que la comprobación se haya completado.  | Vuelva a comprobar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br>Una vez completada la comprobación de crédito, debería ver el vínculo **Agregar o quitar licencias** en la sección **Usuarios**. Si es así, vaya a [Manage subscription licenses](#manage-subscription-licenses). |
 |Ha activado la suscripción con una clave de producto.| Si la suscripción se compró y se activó con una clave de producto de 25 caracteres, verá el texto "Pagado por adelantado".  |Consulte [Agregar licencias a una suscripción pagada para usar una clave de producto](add-licenses-using-product-key.md). |
