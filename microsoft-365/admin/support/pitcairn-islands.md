@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d910263bd7c6d5677baddf9c2de94d3cc907013d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bfce134dcf94f6472788617e52154dd9f0b95acd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356911"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44391578"
 ---
 # <a name="contact-support-for-pitcairn-islands"></a>Póngase en contacto con el soporte de Islas Pitcairn
 
