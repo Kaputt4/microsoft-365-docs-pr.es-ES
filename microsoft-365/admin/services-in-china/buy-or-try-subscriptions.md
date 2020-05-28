@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: Obtenga información sobre cómo probar una suscripción de Office 365 o comprarla directamente, agregar suscripciones u obtener complementos para una cuenta existente de Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360841"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399091"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Comprar o probar las suscripciones para Office 365 operado por 21Vianet
 
@@ -65,7 +66,7 @@ Puede comprar una suscripción inmediatamente o puede probar Office 365 durante 
 
 ## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Agregar suscripciones o complementos a una cuenta de Office 365 existente
 
-1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a la página **servicios de compra** de **facturación** \> .
+1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a **Billing** la \> Página servicios de **compra** de facturación.
 
 2. Seleccione los servicios que quiera comprar, seleccione **comprar**y, a continuación, seleccione **Desproteger ahora**.
 

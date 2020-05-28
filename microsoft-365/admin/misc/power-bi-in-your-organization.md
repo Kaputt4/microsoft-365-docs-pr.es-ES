@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de Business Analytics.
-ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627817"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399307"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -209,7 +210,7 @@ Si un usuario se registró en Power BI pero ya no desea que tenga acceso a Power
     
 4. Desactivar la opción de **Microsoft Power BI** .
     
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end 
 

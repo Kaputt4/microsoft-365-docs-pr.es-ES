@@ -13,18 +13,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Obtenga información sobre cómo configurar una cuenta de correo electrónico en Outlook para Windows y Mac, y sobre cómo instalar aplicaciones de Office y acceder a los correos electrónicos en línea.
-ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627793"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399283"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurar Outlook para leer el correo electrónico
 
@@ -34,7 +35,7 @@ Su suscripción a Microsoft 365 se suministra con Outlook basado en Web, pero si
 
 La primera vez que Abra Outlook, se abrirá un asistente para cuenta automática. Si no es así, elija **archivo** y, después, **Agregar cuenta**.
   
-1. En la página **cuentas de correo electrónico** , elija **Agregar una cuenta** **nueva** \> .
+1. En la página **cuentas de correo electrónico** , elija Agregar una **Next** \> **cuenta**nueva.
     
 2. En la página **configuración automática** de la cuenta, escriba su nombre, dirección de correo electrónico y contraseña y, después, haga clic en **siguiente** \> **Finalizar**.
     

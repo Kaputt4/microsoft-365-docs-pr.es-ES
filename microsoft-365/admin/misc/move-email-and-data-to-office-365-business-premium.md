@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo mover datos a la nueva identidad de negocio.
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155368"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399331"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Mover el correo electrónico y los datos a Microsoft 365 Business Standard
 
@@ -51,7 +52,7 @@ Si quiere mover algunos de sus datos personales a la nueva identidad de negocio,
     > [!TIP]
     > La primera vez que abre OneDrive para la Empresa, debe configurar su OneDrive. Si esto ocurre, en la página **Bienvenido a OneDrive para la empresa** , seleccione **siguiente**. Una vez que OneDrive esté configurado, seleccione **su onedrive está listo**. 
   
-3. Se le llevará a una carpeta de OneDrive vacía. Si desea crear **subcarpetas**, seleccione **nueva** \> carpeta.
+3. Se le llevará a una carpeta de OneDrive vacía. Si desea crear **New** \> **subcarpetas**, seleccione Nueva carpeta.
 
 4. Seleccione **cargar** para copiar los archivos de la unidad de disco duro en la que copió los archivos de OneDrive. 
   

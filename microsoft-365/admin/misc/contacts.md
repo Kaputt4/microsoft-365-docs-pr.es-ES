@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear contactos en el centro de administración y administrar la lista global de direcciones.
-ms.openlocfilehash: f8298713944bdb88c7fbcb31d4bd5a5738cb081b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064750"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399427"
 ---
 # <a name="quick-help-contacts"></a>Ayuda rápida: Contactos
 
@@ -33,7 +34,7 @@ Si necesita contactos compartidos a los que pueden acceder todos los usuarios de
   
 ## <a name="how-do-i-add-contacts-in-the-admin-center"></a>¿Cómo se agregan contactos en el Centro de administración?
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contactos</a> de **usuarios** \> .
+1. En el centro de administración, vaya a **Users** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contactos</a> de usuarios.
 
 2. En la página **contactos** , seleccione **Agregar un contacto**.
   

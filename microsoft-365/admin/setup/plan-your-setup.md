@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre lo que necesita hacer para configurar su Microsoft 365 para empresas.
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794044"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398851"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planeación de la configuración de Microsoft 365 para empresas
 
@@ -49,7 +50,7 @@ El Asistente para la instalación le guiará por la instalación de las aplicaci
 > [!NOTE]
 > Si necesita [asignar roles de administrador en Microsoft 365 para empresas](../add-users/assign-admin-roles.md) a los usuarios que ha agregado en el asistente, puede hacerlo más adelante en la página **usuarios** . 
   
-Si no completa el Asistente para la instalación, puede completar las tareas de configuración en cualquier momento desde la**instalación**del [Centro](https://go.microsoft.com/fwlink/p/?linkid=2024339) > de administración. Desde aquí, puede migrar el correo electrónico y los contactos desde otro servicio de correo electrónico, cambiar el dominio de la cuenta de administrador, administrar la información de facturación, agregar o quitar usuarios, restablecer contraseñas y realizar otras funciones empresariales. Para obtener más información acerca de las diferencias entre el Asistente de configuración y la página de **configuración** , vea [diferencias entre el Asistente para instalación de Microsoft 365 y la página de configuración](o365-setup-wizard-and-setup-page.md).
+Si no completa el Asistente para la instalación, puede completar las tareas de configuración en cualquier momento desde la instalación del [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **Setup**. Desde aquí, puede migrar el correo electrónico y los contactos desde otro servicio de correo electrónico, cambiar el dominio de la cuenta de administrador, administrar la información de facturación, agregar o quitar usuarios, restablecer contraseñas y realizar otras funciones empresariales. Para obtener más información acerca de las diferencias entre el Asistente de configuración y la página de **configuración** , vea [diferencias entre el Asistente para instalación de Microsoft 365 y la página de configuración](o365-setup-wizard-and-setup-page.md).
 
 Si tiene problemas con algún paso, comuníquese con nosotros. [Estamos aquí para ayudarle.](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ Si tiene previsto cambiar de un servicio de correo electrónico existente a Micr
   
 Si va a usar Microsoft 365 para su correo electrónico:
   
-- Para mover la dirección de correo electrónico de la empresa (como *rob\@contoso.com*) desde otro servicio de correo electrónico a Microsoft 365, debe dirigir el correo para que se entregue en el nuevo buzón de Microsoft 365. Para ello, seleccione **migrar los datos de los usuarios** en la página de **configuración** , donde le guiaremos a través de las actualizaciones que necesita realizar en su host de dominio, paso a paso.
+- Para mover la dirección de correo electrónico de la empresa (como *rob \@ contoso.com*) desde otro servicio de correo electrónico a Microsoft 365, debe dirigir el correo para que se entregue en el nuevo buzón de Microsoft 365. Para ello, seleccione **migrar los datos de los usuarios** en la página de **configuración** , donde le guiaremos a través de las actualizaciones que necesita realizar en su host de dominio, paso a paso.
 
 - Después de actualizar el host de su dominio, los cambios suelen surtir efecto en solo una o dos horas. Pero tenga en cuenta que a veces puede pasar hasta 72 horas para que los cambios se actualicen en Internet.
 

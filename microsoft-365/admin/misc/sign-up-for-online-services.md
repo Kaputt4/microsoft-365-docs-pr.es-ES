@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: 'Obtenga información sobre cómo usar el correo electrónico profesional o educativa para registrarse en Microsoft Online Services sin involucrar a su Departamento de ti. '
-ms.openlocfilehash: 261e1344455602cdf36f38ba647408078bd8dd09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c602ba52e3cca1b031e2e772355a84c06b779b5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209693"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399271"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>El dominio puede estar en uso si otra persona se registró con él
 

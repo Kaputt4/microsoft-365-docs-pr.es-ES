@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045278"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399295"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 
@@ -65,4 +67,4 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |**Minecraft Education Edition** <br/> |Mediante el uso de Minecraft como plataforma de aprendizaje, los educadores pueden motivar y inspirar a todos los alumnos para lograr más y inflaman pasión por aprender. Únase a una comunidad de educadores aprendiendo a usar Minecraft para desbloquear el potencial de los alumnos.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Cargue y Comparta vídeos en su organización para mejorar la comunicación, la participación y el aprendizaje.  <br/> |[Experiencia del &amp; día 0 de suscripción](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |La automatización de energía es un producto que le ayuda a configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.  <br/> |[Registrarse e iniciar sesión para la automatización de la alimentación](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
-|**Agentes de Power virtual** <br/> |Power virtual Agents permite a los equipos crear de forma sencilla bots potentes mediante una interfaz gráfica guiada sin código sin la necesidad de científicos o desarrolladores de datos. Power virtual Agents enfrenta muchos de los principales problemas con la creación de robots en la industria de hoy. Elimina el vacío entre los expertos en la materia y los equipos de desarrollo que crean los bots y la larga latencia entre los equipos para reconocer un problema y actualizar el bot para solucionarlo.  <br/> |[Detalles de licencias y acceso](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrarse para obtener agentes virtuales de potencia](https://aka.ms/TryPVA) <br/> |
+|**Power Virtual Agents** <br/> |Power virtual Agents permite a los equipos crear de forma sencilla bots potentes mediante una interfaz gráfica guiada sin código sin la necesidad de científicos o desarrolladores de datos. Power virtual Agents enfrenta muchos de los principales problemas con la creación de robots en la industria de hoy. Elimina el vacío entre los expertos en la materia y los equipos de desarrollo que crean los bots y la larga latencia entre los equipos para reconocer un problema y actualizar el bot para solucionarlo.  <br/> |[Detalles de licencias y acceso](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrarse para obtener agentes virtuales de potencia](https://aka.ms/TryPVA) <br/> |

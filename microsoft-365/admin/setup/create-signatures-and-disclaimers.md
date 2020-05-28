@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Obtenga información sobre cómo agregar una firma de correo electrónico, una declinación de responsabilidades o una declaración de divulgación a todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631982"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398959"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
 
@@ -62,7 +63,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 ::: moniker-end
 
-1. Seleccione el iniciador ![de aplicaciones el icono](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)del iniciador de aplicaciones y, a continuación, seleccione **Administración**.
+1. Seleccione el iniciador ![ de aplicaciones el icono del iniciador de aplicaciones ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) y, a continuación, seleccione **Administración**.
    
     ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, seleccione **todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles para usted. Ahí podrá buscar una aplicación específica. 
     

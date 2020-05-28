@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Obtenga información sobre las aplicaciones integradas y cómo activarlas para permitir que las aplicaciones de terceros obtengan acceso a la información de Microsoft 365 de los usuarios.
-ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022113"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399343"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Activar o desactivar las aplicaciones integradas
 
@@ -35,7 +36,7 @@ Cuando las aplicaciones integradas están activadas, los usuarios de la organiza
 
 A continuación se explica cómo activar o desactivar las aplicaciones integradas.
 
-1. En el centro de administración de Microsoft 365, vaya **Settings** \> a **la página de configuración de** configuración, \> la pestaña **servicios** y, a continuación, seleccione **aplicaciones integradas**.
+1. En el centro de administración de Microsoft 365, vaya a la página de configuración de **configuración** \> **Settings** , la \> pestaña **servicios** y, a continuación, seleccione **aplicaciones integradas**.
 
 2. En la página **aplicaciones integradas** , seleccione la opción para activar o desactivar las aplicaciones integradas.
 

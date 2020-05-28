@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso general del Reglamento de protección de datos (RGPD).
-ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627721"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399163"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: una guía para su pequeña empresa
 
@@ -53,7 +54,7 @@ Verá algunos términos a los que se hace referencia con frecuencia en el RGPD. 
   
 La RGPD dice: "el tratamiento de datos personales debe estar diseñado para servir a Mankind". La RGPD espera a conseguir este objetivo usando el consentimiento al procesar datos personales. Podría ser el acto sencillo de preguntar a los clientes si quieren recibir mensajes de correo electrónico de su empresa. También significa que no hay más casillas de exclusión en el sitio web cuando desea usar datos para marketing. Debe tomar el consentimiento explícito usando un "Acta afirmativa clara". Además, tendrá que mantener los registros de cuando se tome o se revoque un consentimiento.
   
- **Derechos del titular de los datos (DSR)**
+ **Derechos de los titulares de datos**
   
 El RGPD establece los derechos del titular de los datos, lo que significa que, en relación con sus datos personales, los clientes, los empleados, los socios comerciales, los clientes, los contratistas, los estudiantes, los proveedores, etc. tienen derecho a:
   
@@ -155,7 +156,7 @@ Para prepararse para el RGPD, aquí le presentamos algunas sugerencias para segu
 > [!IMPORTANT]
 > Obtenga asesoramiento legal adecuado para su empresa u organización.
   
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 
 [Información general del centro de confianza de Microsoft de RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )

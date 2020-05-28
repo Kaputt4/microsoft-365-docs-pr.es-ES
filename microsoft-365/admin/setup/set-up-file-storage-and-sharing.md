@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208191"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398839"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurar el almacenamiento y el uso compartido de archivos
 
@@ -144,7 +145,7 @@ Siga estos pasos para sincronizar archivos en el sitio de grupo con el equipo de
 
     ![Cambiar la carpeta local en esta pantalla](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. Los archivos de los sitios de grupo aparecerán en el panel izquierdo del explorador de archivos, en el nombre de la organización. Los archivos en OneDrive aparecerán en "OneDrive: \< nombre de la organización \> "
+6. Los archivos de los sitios de grupo aparecerán en el panel izquierdo del explorador de archivos, en el nombre de la organización. Los archivos en OneDrive aparecerán en "OneDrive- \<Name of Organization\> "
 
     ![Ver qué se ha sincronizado en la carpeta local](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -191,7 +192,7 @@ Puede habilitar el almacenamiento de terceros para los usuarios en Microsoft 365
 
 4. Active o desactive la casilla para activar o desactivar el almacenamiento de terceros y, a continuación, seleccione **Guardar cambios**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos](customize-team-site.md). En este tutorial paso a paso se explica cómo puede aprovechar una mayor capacidad de almacenamiento y las características de colaboración. 
 
