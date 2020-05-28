@@ -15,18 +15,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Obtenga información acerca de cómo conceder a un usuario el derecho de acceso al buzón de otro usuario. Esto le dará al usuario el derecho de leer el correo electrónico y enviar correo electrónico desde el buzón del otro usuario. '
-ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617175"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387182"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
