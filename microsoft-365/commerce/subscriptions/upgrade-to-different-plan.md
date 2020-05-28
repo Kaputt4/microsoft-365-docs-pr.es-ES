@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: Obtenga información sobre cómo actualizar a una nueva suscripción.
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141071"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403179"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,7 +96,7 @@ Para actualizar los planes de forma automática, todos los usuarios deben tener 
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>No puede actualizar las suscripciones ahora porque esta suscripción no está totalmente configurada o el servicio no está disponible.
 
-Por ejemplo, si uno de los servicios tiene un incidente, no podrá realizar la actualización hasta que todos los servicios estén en buen estado. Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado del servicio</a> de **mantenimiento** \> .
+Por ejemplo, si uno de los servicios tiene un incidente, no podrá realizar la actualización hasta que todos los servicios estén en buen estado. Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración, vaya a **Health** la \> Página estado del <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">servicio</a> de mantenimiento.
 
 Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, [llame al soporte técnico](../../admin/contact-support-for-business-products.md).
 
@@ -133,7 +134,7 @@ Es posible que no vea ningún plan en la pestaña de **actualización** porque e
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>El plan al que desea actualizar no es una opción admitida
 
-Al actualizar los planes, se muestran los planes a los que puede actualizar en función de los servicios de su plan actual. Solo se puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange online o SharePoint Online, o a una versión posterior de ellos. Esto garantiza que los usuarios\'no pierdan los datos relacionados con estos servicios durante la actualización.
+Al actualizar los planes, se muestran los planes a los que puede actualizar en función de los servicios de su plan actual. Solo se puede actualizar a un plan que tenga los mismos servicios relacionados con datos, como Exchange online o SharePoint Online, o a una versión posterior de ellos. Esto garantiza que los usuarios no \' pierdan los datos relacionados con estos servicios durante la actualización.
 
 Si el plan no es elegible para actualizar los planes automáticamente, es posible que pueda [cambiar los planes manualmente](change-plans-manually.md)en su lugar. También puede [llamar al soporte técnico](../../admin/contact-support-for-business-products.md) para obtener ayuda.
 

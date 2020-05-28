@@ -21,17 +21,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633363"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402986"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -81,7 +82,7 @@ Cuando se une a un dispositivo de Windows 10 a Azure AD, se aplican las directiv
 - Puede instalar Office automáticamente en los dispositivos Windows mediante el Asistente de [configuración](set-up.md#deploy-office-365-client-apps).
 - Permita que los usuarios [instalen aplicaciones de Office](https://docs.microsoft.com/office365/admin/setup/install-applications) para Windows y dispositivos.
      
-## <a name="advanced"></a>Avanzadas
+## <a name="advanced"></a>Opciones avanzadas
 - **Usar AutoPilot para configurar nuevos dispositivos**
             
      Puede usar [Windows AutoPilot](add-autopilot-devices-and-profile.md) para preconfigurar automáticamente los **nuevos** dispositivos Windows 10 para un usuario, pero podría ser más fácil obtener un [asociado](https://www.microsoft.com/solution-providers/search) que lo haga por usted. También puede ir a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)y solicitar a un experto en la tecnología de la nube que configure nuevos dispositivos que compre.

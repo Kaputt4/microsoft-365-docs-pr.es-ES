@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: Obtenga información sobre cómo asignar licencias a grupos para usarlas con dispositivos.
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011190"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402875"
 ---
 # <a name="manage-licenses-for-devices"></a>Administrar licencias para dispositivos
 
@@ -41,7 +43,7 @@ Para empezar, cree un grupo en el centro de administración de Azure Active Dire
 
 Cuando se asignan licencias a un grupo, se asignan licencias a todos los dispositivos del grupo. Solo se puede asignar una suscripción a un único grupo.
 
-1. En el centro de administración de Microsoft 365, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de **facturación** > .
+1. En el centro de administración de Microsoft 365, vaya **Billing**a la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 2. En la página **licencias** , elija **Microsoft 365 apps for Education (Device)** o **Microsoft 365 apps for Enterprise (Device)**.
 3. En la página siguiente, elija una suscripción y, a continuación, elija **asignar licencias**.
 4. En el panel **asignar licencias a un grupo** , empiece a escribir un nombre de grupo y, a continuación, selecciónelo en los resultados para agregarlo a la lista.
@@ -51,7 +53,7 @@ Cuando se asignan licencias a un grupo, se asignan licencias a todos los disposi
 
 Al anular la asignación de licencias de un grupo, se quitan las licencias de todos los dispositivos dentro del grupo. Todas las aplicaciones y sus datos asociados son de solo lectura.
 
-1. En el centro de administración, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de **facturación** > .
+1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 2. En la página **licencias** , elija **Microsoft 365 apps for Education (Device)** o **Microsoft 365 apps for Enterprise (Device)**.
 3. En la página siguiente, elija una suscripción, elija **más acciones**y, a continuación, elija **Cancelar asignación de licencias**.
 4. En el cuadro de diálogo **cancelar la asignación de licencias** , elija **Anular asignación**.

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenda los motivos por los que algunas veces el cambio de plan debe realizarse manualmente o al llamar a soporte técnico.
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943148"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403155"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>¿Por qué no puedo cambiar Microsoft 365 para planes de negocios?
 
@@ -41,18 +42,18 @@ Si no ve el botón **cambiar** de plan, el plan no se puede cambiar automáticam
   
 ::: moniker range="o365-worldwide"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../index.yml) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
+ **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md) | [cancele las](cancel-your-subscription.md) | [suscripciones](../index.yml) | de suscripción y el[soporte de llamadas](../../admin/contact-support-for-business-products.md) de facturación
+ **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **¿Necesita algo más?** [Comprar o probar las suscripciones de Office 365 operado por 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [cancelar el](cancel-your-subscription.md) | [soporte técnico](../../admin/contact-support-for-business-products.md) de las llamadas de suscripción
+ **¿Necesita algo más?** [Comprar o probar las suscripciones para Office 365 operado por 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -83,19 +84,19 @@ Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, t
 
 ::: moniker range="o365-worldwide"
 
-Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado del servicio</a> o seleccione **Estado del servicio**de **mantenimiento** \> .
+Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Estado del servicio</a> o seleccione estado del servicio de **mantenimiento** \> **Service health**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración de Microsoft 365, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Estado del servicio</a> o seleccione **Estado del servicio**de **mantenimiento** \> .
+Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración de Microsoft 365, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Estado del servicio</a> o seleccione estado del servicio de **mantenimiento** \> **Service health**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración de Microsoft 365, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Estado del servicio</a> o seleccione **Estado del servicio**de **mantenimiento** \> .
+Para ver si hay problemas de aprovisionamiento o de estado del servicio, en el centro de administración de Microsoft 365, vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Estado del servicio</a> o seleccione estado del servicio de **mantenimiento** \> **Service health**.
 
 ::: moniker-end
 

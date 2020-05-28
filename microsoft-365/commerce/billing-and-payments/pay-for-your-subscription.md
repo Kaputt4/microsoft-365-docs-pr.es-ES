@@ -24,12 +24,13 @@ description: Obtenga información sobre las opciones de pago disponibles para pa
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232880"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401767"
 ---
 # <a name="pay-for-your-subscription"></a>Pagar la suscripción
 
@@ -312,4 +313,4 @@ Si sus motivos originales para elegir facturación, tarjeta de crédito o cuenta
 
 [Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Conocimiento de la factura](understand-your-invoice2.md)
+[Entender su factura o recibo](understand-your-invoice2.md)

@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045909"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401815"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -113,7 +114,7 @@ Cuando cambia del pago con factura al pago con tarjeta de crédito o cuenta banc
   
 Cuando cambia del pago con factura al pago con tarjeta de crédito o cuenta bancaria, se crea automáticamente una suscripción, se mueven sus usuarios a la nueva suscripción y, después, se deshabilita su suscripción anterior. No se preocupe, los usuarios no experimentarán ninguna interrupción del servicio y toda su información estará disponible con la nueva suscripción.
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de facturación.
 
 2. Busque la suscripción que desea cambiar. En la sección **detalles de pago** , seleccione **cambiar detalles de pago**.
   
@@ -177,7 +178,7 @@ Si no se requiere ninguna comprobación de crédito, siga estos pasos para cambi
 > [!NOTE]
 > La opción de pago mediante factura solo está disponible si la suscripción cuesta una cantidad determinada (que varía según la ubicación de servicio). En el caso de los pagos de las facturas con un importe más elevado, puede ser necesario realizar una comprobación de crédito. Para obtener más información, consulte [Pay for your subscription](pay-for-your-subscription.md).
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de facturación.
 
 2. Busque la suscripción que desea cambiar. En la sección **método de pago** , seleccione **cambiar detalles de pago**.
   
@@ -204,7 +205,7 @@ Puede usar el siguiente procedimiento en cualquier momento para comprobar el mé
 
 ### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Usar el centro de administración antiguo para comprobar el método de pago que está configurado
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de facturación.
 
 2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en **método de pago**.
 
@@ -216,7 +217,7 @@ Puede usar el siguiente procedimiento en cualquier momento para comprobar el mé
 
 Puede usar el siguiente procedimiento en cualquier momento para comprobar el método de pago que está configurado para una suscripción.
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de facturación.
 
 2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en **método de pago**.
 

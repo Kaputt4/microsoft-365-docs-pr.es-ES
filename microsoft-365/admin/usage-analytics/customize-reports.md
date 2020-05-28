@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Obtenga información sobre cómo personalizar los informes en el explorador y en Power BI Desktop.
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140714"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402935"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizar los informes en análisis de uso de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ En este ejemplo se muestra cómo modificar la pestaña **activación** en el inf
   
 1. En el informe de **activación/licencia** , haga clic en la pestaña **activación** .
     
-2. Para entrar en el modo de edición **Edit** , haga clic en el botón Editar ![en la parte superior con el botón](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) más página del botón Power BI. 
+2. Para entrar en el modo de edición, haga clic en el botón **Editar** en la parte superior con el ![ botón más página del botón Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) . 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
   
 1. Vaya al informe de **uso del producto** usando el panel de navegación izquierdo y haga clic en la pestaña **Yammer** .
     
-2. Cambie al modo de edición haciendo clic ![en el botón más página en Power](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI y **editando**. 
+2. Cambie al modo de edición haciendo clic en ![ el botón más página en Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) y **editando**. 
     
 3. En la parte inferior de la página, haz clic en ![Botón Agregar página de Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) para crear una nueva página.
   
@@ -95,7 +96,7 @@ En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un
 
     ![Casilla de verificación seleccionar Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Justo debajo de la lista de visualizaciones, haga **Format** clic en ![el icono formato de formato de](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)icono de Power BI Visualizaions.
+12. Justo debajo de la lista de visualizaciones, haga clic en el icono **formato** ![ de formato de icono de Power BI Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Expanda el título y cambie el valor de **Texto del título** a **Nuevos usuarios de Yammer por mes**.
     
@@ -115,7 +116,7 @@ Puede empezar conectando directamente a las API de informes de ODATA desde Micro
   
 1. Vaya a **Obtener datos** \> **Otros** \> **Fuente de OData** \> **Conectar**.
     
-2. En la ventana URL, escriba "<i></i>https://\<Reports.Office.com/PBI/v1.0/\>tenantid"
+2. En la ventana URL, escriba "https:// <i></i> Reports.Office.com/PBI/v1.0/ \<tenantid\> "
     
     **Nota:** Las API de informes se encuentran en versión preliminar y están sujetas a cambios hasta que entran en producción. 
   

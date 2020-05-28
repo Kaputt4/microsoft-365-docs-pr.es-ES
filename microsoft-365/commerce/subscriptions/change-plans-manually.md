@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Para cambiar las suscripciones manualmente, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046197"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403287"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -53,12 +54,12 @@ O
 
 **Compre una suscripción y licencias nuevas:** Siga los pasos de [comprar otra suscripción de Microsoft 365 para empresas](../buy-another-subscription.md) para comprar una nueva suscripción.
 
-Asegúrese de comprar una suscripción para la misma organización en la que se encuentran ahora los usuarios. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo \@electrónico incluyen contoso.com, debe comprar una nueva suscripción para contoso.com.
+Asegúrese de comprar una suscripción para la misma organización en la que se encuentran ahora los usuarios. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo electrónico incluyen \@ contoso.com, debe comprar una nueva suscripción para contoso.com.
 Incluya una licencia para cada usuario que quiera mover.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: comprobar la nueva suscripción y las licencias
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. **Comprobar que ambas suscripciones se muestran y están activas** La suscripción desde la que va a mover a los usuarios y la suscripción a la que está moviendo los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando compruebe por primera vez, inténtelo de nuevo más tarde. Compruebe que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa](#the-new-subscription-isnt-listed-or-isnt-active).
 

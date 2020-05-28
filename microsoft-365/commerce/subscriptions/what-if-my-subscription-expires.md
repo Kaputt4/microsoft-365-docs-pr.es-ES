@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165131"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403167"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -40,9 +41,9 @@ Si su suscripción termina, ya sea porque expira o porque decide cancelarla, el 
 
 En la siguiente tabla se explica qué se puede esperar cuando expire una suscripción de pago de Microsoft 365 para empresas.
 
-| **Active**                                                             | **Expirado <br/>(30 días\*)**                                                | **Deshabilitado <br/>(\*90 días)**                                               | **Desaprovisionada**                                                                         |
+| **Active**                                                             | **Expirado <br/> (30 días \* )**                                                | **Deshabilitado <br/> (90 días \* )**                                               | **Desaprovisionada**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Datos accesibles para todos los*                                               | *Datos accesibles para todos los*                                                     | *Datos accesibles solo para administradores*                                             | **Se quitan los datos eliminados<br/>de Azure Active Directory, si otros servicios no los usan** |
+| *Datos accesibles para todos los*                                               | *Datos accesibles para todos los*                                                     | *Datos accesibles solo para administradores*                                             | **Se quitan los datos eliminados <br/> de Azure Active Directory, si otros servicios no los usan** |
 | Los usuarios tienen acceso normal a Microsoft 365, datos y aplicaciones de Office  | Los usuarios tienen acceso normal a Microsoft 365, archivos y aplicaciones.              | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                        | Los usuarios no pueden tener acceso a Microsoft 365, archivos o aplicaciones                                     |
 | Los administradores tienen acceso normal a las aplicaciones de Microsoft 365, datos y Office. | Los administradores pueden acceder al centro de administración                                           | Los administradores pueden tener acceso al centro de administración, pero no pueden asignar licencias a los usuarios.       | Los administradores pueden tener acceso al centro de administración para comprar y administrar otras suscripciones             |
 |                                                                        | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración | Los administradores globales o de facturación pueden reactivar la suscripción en el centro de administración |                                                                                           |

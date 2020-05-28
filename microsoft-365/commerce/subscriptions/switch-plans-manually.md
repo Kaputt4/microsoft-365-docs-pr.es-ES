@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Para cambiar de forma manual las suscripciones de Microsoft 365 para empresas, compre una nueva suscripción y asegúrese de que ambas suscripciones están en la lista y activa.
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707516"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403203"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiar de Microsoft 365 para planes de empresa manualmente
 
@@ -137,13 +138,13 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
   
 5. Cambie el botón de alternancia a la posición **desactivado** para las licencias que este usuario ya no necesita.
 
-6. En la parte inferior del panel **licencias de producto** , seleccione **asignar** \> **cierre** \> de **cierre.**
+6. En la parte inferior del panel **licencias de producto** , seleccione **asignar** \> **cierre** \> **de cierre**.
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Reasignación de licencias para varios usuarios a la vez
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> página usuarios <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a> .
+1. En el centro de administración, vaya a **la página usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a> .
 
 ::: moniker-end
 

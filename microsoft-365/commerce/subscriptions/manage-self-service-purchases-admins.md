@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141155"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403275"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ También puede controlar si los usuarios de la organización pueden realizar com
 
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
-1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Junto a **refinar resultados**, en la lista desplegable **tipo de cuenta** , elija **Self-Service**.
 
@@ -44,7 +45,7 @@ También puede controlar si los usuarios de la organización pueden realizar com
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
 
-1. En el centro de administración, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de **facturación** > .
+1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 
 2. Elija el icono filtrar y, a continuación, elija **autoservicio**.
 
@@ -63,7 +64,7 @@ Puede deshabilitar o habilitar las compras de autoservicio para los usuarios de 
 
 Puede usar el módulo de PowerShell **MSCommerce** para:
 
-- Ver el estado predeterminado del valor **AllowSelfServicePurchase** &mdash; del parámetro AllowSelfServicePurchase si está habilitado o deshabilitado por el producto.
+- Ver el estado predeterminado del valor **AllowSelfServicePurchase** del parámetro AllowSelfServicePurchase &mdash; si está habilitado o deshabilitado por el producto.
 - Ver una lista de los productos aplicables y si la compra de servicios automáticos está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
@@ -75,7 +76,7 @@ Puede asignar licencias existentes o comprar suscripciones adicionales a través
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a> con su cuenta de administrador global o de administrador de facturación.
 
-2. Vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** > .
+2. Vaya a la **Billing**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de facturación.
 
 3. Busque y seleccione el producto que desea comprar y, después, elija **comprar**.
 

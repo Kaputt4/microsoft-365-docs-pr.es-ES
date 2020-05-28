@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba de Microsoft 365 para empresas o pago.
-ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141174"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403299"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Busque la suscripción que desea cancelar y, en **configuración & acciones**, seleccione **Cancelar suscripción**.
 

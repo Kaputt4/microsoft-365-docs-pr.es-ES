@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 keywords: Perfil de facturación, facturas, cargos, cargos administrados
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140895"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401779"
 ---
 # <a name="manage-billing-profiles"></a>Administrar perfiles de facturación
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -38,11 +38,11 @@ Para los clientes comerciales que compran productos y servicios de Microsoft, lo
 
 Los perfiles de facturación incluyen la siguiente información:
 
-- Nombre de la **cuenta** &ndash; de facturación de la cuenta de facturación con la que está relacionado el perfil
-- **Métodos** &ndash; de pago tarjetas de crédito o débito, cuentas bancarias, cheque o transferencia bancaria
-- Dirección de facturación de la **información** &ndash; de contacto y un nombre de contacto
-- Divisa de la **configuración** &ndash; de la factura en función del país de la cuenta de facturación, un número de pedido de compra opcional y la opción de recibir facturas como datos adjuntos de correo electrónico
-- Permisos permisos que permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar compras **Permissions** &ndash;
+- **Cuenta** &ndash; de facturación Nombre de la cuenta de facturación con la que está relacionado el perfil
+- **Métodos** &ndash; de pago Tarjetas de crédito o débito, cuentas bancarias, cheque o transferencia bancaria
+- **Información** &ndash; de contacto Dirección de facturación y nombre de contacto
+- Configuración de la **factura** &ndash; Divisa basada en el país de la cuenta de facturación, un número de pedido de compra opcional y la opción de recibir facturas como datos adjuntos de correo electrónico
+- **Permisos** &ndash; Permisos que permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar compras
 
 Use perfiles de facturación para controlar las compras y personalizar la factura. Se genera una factura mensual para los productos comprados con el perfil de facturación. Puede personalizar la factura como actualizar el número de pedido de compra y la preferencia de factura de correo electrónico.
 

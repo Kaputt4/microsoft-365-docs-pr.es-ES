@@ -21,13 +21,15 @@ search.appverid:
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Obtenga información sobre las suscripciones y licencias de Microsoft 365 para la empresa, y sepa quién puede asignar licencias y qué sucede cuando se asigna una licencia a un usuario. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211443"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402407"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias de Microsoft 365 para empresas
 
@@ -61,7 +63,7 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
 |Exchange Online  <br/> |Se crea un buzón para el usuario.  <br/> Para obtener información sobre el SLA para completar esta tarea, consulte ["configurar..." mensajes en el centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
 |Skype Empresarial Online  <br/> |El usuario tendrá acceso a las características asociadas con la licencia.  <br/> |
-|Aplicaciones de Microsoft 365 para empresas  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
+|Aplicaciones de Microsoft 365 para empresas  <br/> |El usuario podrá descargar Microsoft Office en un máximo de 5 equipos PC o Mac, 5 tabletas y 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>¿En cuántos dispositivos se puede instalar Office?
 

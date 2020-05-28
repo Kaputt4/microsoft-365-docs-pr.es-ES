@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Obtenga información sobre cómo se asignan las características de protección de Microsoft 365 Business Premium a la configuración de Intune. La suscripción le proporciona una licencia para modificar la configuración de Intune.
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633251"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401586"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 empresa Premium a la configuración de Intune
 
@@ -44,7 +45,7 @@ Para buscar la configuración de Intune, inicie sesión con sus credenciales de 
  > 
  > Una suscripción a Microsoft 365 Business Premium le proporciona una licencia para modificar toda la configuración de Intune. Consulte [Introduction to Intune to Get Started.](https://docs.microsoft.com/intune/introduction-intune)
   
-Seleccione el nombre de la directiva &mdash; que desee, por ejemplo, directiva &mdash; de aplicación para Android y, a continuación, elija **configuración de directiva**.
+Seleccione el nombre de la Directiva que desee &mdash; , por ejemplo, Directiva de aplicación para Android &mdash; y, a continuación, elija **configuración de directiva**.
   
 En **Proteger los archivos de trabajo cuando los dispositivos se extravían por pérdida o robo**
   
@@ -73,7 +74,7 @@ En **Administrar la forma en la que los usuarios obtienen acceso a los archivos 
 
 La siguiente tabla detalla cómo se asigna a la configuración de Intune la configuración de directiva de aplicaciones de Windows 10.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium y vaya a [Azure portal](https://portal.azure.com). Seleccione **más servicios**y escriba Intune en el **filtro**. Seleccione \> **Directiva de aplicaciones**de **protección de aplicaciones de Intune** .
+Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium y vaya a [Azure portal](https://portal.azure.com). Seleccione **más servicios**y escriba Intune en el **filtro**. Seleccione Directiva de aplicaciones de **protección de aplicaciones de Intune** \> **App Policy**.
   
  > [!IMPORTANT]
  >
@@ -95,7 +96,7 @@ Para explorar la configuración disponible, selecciona el nombre de la Directiva
 
 En la siguiente tabla se describe cómo se asignan las opciones de configuración de dispositivo de Windows 10 a la configuración de Intune.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium, vaya a [Azure portal](https://portal.azure.com), seleccione **más servicios**y escriba Intune en el **filtro**, seleccione **Intune** \> de **configuración** \> **Profiles**de dispositivo. A continuación, seleccione **Directiva de dispositivo para** \> la **configuración**de **propiedades** \> de Windows 10.
+Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium, vaya a [Azure portal](https://portal.azure.com), seleccione **más servicios**y escriba Intune en el **filtro**, seleccione **Intune** de \> **configuración de dispositivo** \> **Profiles**. A continuación, seleccione **Directiva de dispositivo para la configuración de propiedades de Windows 10** \> **Properties** \> **Settings**.
   
 |**Configuración de directiva de dispositivo de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
@@ -103,9 +104,9 @@ Para buscar la configuración de Intune, inicie sesión con sus credenciales de 
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |La **configuración del explorador** de **SmartScreen** en el servidor perimetral se establece en **obligatorio**.  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante (minutos)  <br/> |Número máximo de minutos de inactividad hasta que se bloquee la pantalla (minutos)  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Directiva de URI personalizada  <br/> |
-|Permitir a los usuarios acceder a Cortana  <br/> |**General** \> **Cortana** está configurada para **bloquearse** en Intune cuando se establece en **OFF** en Microsoft 365 Business Premium.  <br/> |
+|Permitir a los usuarios acceder a Cortana  <br/> |**General** \> **Cortana** está configurada para **bloquearse** en Intune cuando está establecido en **desactivado** en Microsoft 365 empresa Premium.  <br/> |
 |Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  <br/> |**Contenido destacado de Windows**, todos los bloqueados si está establecido en **desactivado** en Microsoft 365 empresa Premium.  <br/> |
-|Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> | Esta configuración está en actualizaciones de servicio de **Microsoft Intune** \> **-anillos de actualización de Windows 10**, elija **actualizar directiva para dispositivos con Windows 10**y, a continuación, **configuración**de **propiedades** \> .  <br/>  Cuando la configuración de Microsoft 365 Business Premium se establece en **activado**, se establecen todas las opciones siguientes:  <br/> La **rama de servicio** se establece en **CB** (CBB cuando está desactivada en Microsoft 365 empresa Premium).  <br/> **Las actualizaciones de productos de Microsoft** están configuradas para **permitir**.  <br/> **Controladores de Windows** se establece en **permitir**.  <br/> El comportamiento de la **actualización automática** se establece en la **instalación automática durante el mantenimiento** con:  <br/> El **Inicio de horas después del horario** se establece en **6 a.m.**  <br/> El fin de las **horas activas** se establece en **10 PM**.  <br/> El período de aplazamiento de la **actualización de calidad (días)** se establece en **0**.  <br/> El período de aplazamiento de la **actualización de características (días)** se establece en **0**.  <br/> El **modo de descarga de optimización de entrega** se establece en **http combinado con el emparejamiento detrás del mismo NAT**.  <br/> |
+|Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> | Esta configuración está en actualizaciones de servicio de **Microsoft Intune** \> **-anillos de actualización de Windows 10**, elija **actualizar directiva para dispositivos con Windows 10**y, a continuación, configuración de **propiedades** \> **Settings**.  <br/>  Cuando la configuración de Microsoft 365 Business Premium se establece en **activado**, se establecen todas las opciones siguientes:  <br/> La **rama de servicio** se establece en **CB** (CBB cuando está desactivada en Microsoft 365 empresa Premium).  <br/> **Las actualizaciones de productos de Microsoft** están configuradas para **permitir**.  <br/> **Controladores de Windows** se establece en **permitir**.  <br/> El comportamiento de la **actualización automática** se establece en la **instalación automática durante el mantenimiento** con:  <br/> El **Inicio de horas después del horario** se establece en **6 a.m.**  <br/> El fin de las **horas activas** se establece en **10 PM**.  <br/> El período de aplazamiento de la **actualización de calidad (días)** se establece en **0**.  <br/> El período de aplazamiento de la **actualización de características (días)** se establece en **0**.  <br/> El **modo de descarga de optimización de entrega** se establece en **http combinado con el emparejamiento detrás del mismo NAT**.  <br/> |
 |||
    
 

@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus adquisiciones de autoservicio.
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141129"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403263"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ Su administrador tiene una vista de solo lectura en las suscripciones que compre
 
 ## <a name="view-your-subscriptions"></a>Ver las suscripciones
 
-Puede ver una lista de todas las suscripciones compradas por Self-Service que compró. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+Puede ver una lista de todas las suscripciones compradas por Self-Service que compró. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir las licencias
 
-1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción para la que desea comprar más o reducir las licencias.
 
@@ -54,7 +55,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ### <a name="to-assign-licenses"></a>Para asignar licencias
 
-1. En el centro de administración, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de **facturación** > .
+1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 
 2. Elija la suscripción para la que desea asignar licencias.
 
@@ -69,7 +70,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ### <a name="to-unassign-licenses"></a>Para cancelar la asignación de licencias
 
-1. En el centro de administración, vaya a la página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de **facturación** > .
+1. En el centro de administración, vaya a **Billing**la  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
 
 2. Elija el producto para el que desea cancelar la asignación de licencias.
 
@@ -81,7 +82,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ## <a name="cancel-a-subscription"></a>Cancelar una suscripción
 
-1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea cancelar.
 
@@ -91,7 +92,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 
-1. En el centro de administración, vaya a **la** > página**facturas & pagos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> de facturación.
+1. En el centro de administración, vaya a **la**  >  página**facturas & pagos**de facturación  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> .
 
 2. Seleccione un perfil de facturación de la lista.
 
@@ -104,7 +105,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ### <a name="update-an-existing-payment-method"></a>Actualizar un método de pago existente
 
-1. En el centro de administración, vaya a **la** > página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya a **la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
 
 2. Para editar un método de pago existente, selecciónelo de la lista.
 
@@ -114,7 +115,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ### <a name="add-a-new-payment-method"></a>Adición de un nuevo método de pago
 
-1. En el centro de administración, vaya a **la** > página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya a **la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
 
 2. Elija **Agregar un método de pago**.
 
@@ -122,7 +123,7 @@ Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105.
 
 ## <a name="view-your-invoices"></a>Ver las facturas
 
-1. En el centro de administración, vaya **a** > la página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
+1. En el centro de administración, vaya **a la**  >  página<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas & pagos</a> .
 
 2. En **facturas** , seleccione la factura que desea ver.
 

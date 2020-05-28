@@ -1,5 +1,5 @@
 ---
-title: Conocimiento de la factura
+title: Entender su factura o recibo
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,19 +13,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información acerca de cómo leer y comprender su factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232822"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402647"
 ---
-# <a name="understand-your-bill-or-invoice"></a>Conocimiento de la factura
+# <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
 ::: moniker range="o365-21vianet"
 
@@ -42,7 +42,7 @@ Si solo tiene una suscripción de Microsoft 365, consulte [comprender su factura
 
 La parte superior de la primera página identifica quién es responsable del pago, a dónde se envía la factura y un resumen de los gastos.
 
-| Term | Descripción |
+| Term | Description |
 | --- | --- |
 | Vendido a |La cuenta de facturación que identifica el nombre y la dirección de la entidad jurídica responsable del pago. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">cuentas de facturación</a> , donde puede encontrar el contrato de cuenta y administrar los roles y permisos. |
 | Factura a |Identifica quién recibe la factura. Esta información puede administrarse en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">perfiles de facturación</a> . El perfil de facturación también se muestra en la página de facturas en línea, en la sección **Resumen de facturas** . Para obtener más información acerca de los perfiles de facturación y de cómo puede usarlos para crear opciones de facturación más flexibles para su organización, consulte [Manage Billing profiles](manage-billing-profiles.md). |
@@ -55,7 +55,7 @@ La parte superior de la primera página identifica quién es responsable del pag
 
 El **Resumen de facturación** muestra el Resumen de los cargos desde el período de facturación anterior, los créditos que se aplicaron, los impuestos y el importe total debido.
 
-| Term | Descripción |
+| Term | Description |
 | --- | --- |
 | Cargos|Número total de productos adquiridos para este período de facturación y sus cargos y impuestos relacionados. Las compras se agregan para proporcionar una vista concisa de la factura. |
 | Créditos |Créditos que ha recibido de devoluciones |
@@ -67,7 +67,7 @@ El **Resumen de facturación** muestra el Resumen de los cargos desde el períod
 
 Las páginas de cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de facturas. Para obtener más información sobre cómo se usan las secciones de facturas con productos de Azure, vea [secciones de facturas](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) en Introducción [a su cuenta de facturación de contratos de clientes de Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). Dentro de cada pedido de producto, el costo se desglosa por familia de servicios.
 
-| Term |Descripción |
+| Term |Description |
 | --- | --- |
 | Precio unitario | Precio unitario efectivo del servicio (en la moneda de precios) que se usa para calcular el cargo. Este precio es único para un producto, una familia de servicios, un medidor y una oferta. |
 | Cdad | Cantidad adquirida o consumida durante el período de facturación |

@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Obtenga información sobre cómo agregar y reducir el almacenamiento de archivos en su suscripción de Microsoft 365. Con el almacenamiento de archivos adicionales, puede almacenar más contenido en SharePoint Online y OneDrive.
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140971"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402683"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,7 +96,7 @@ Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> Página servicios de <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">compra</a> de facturación.
 
 2. En la parte inferior de la página **servicios de compra** , seleccione **Complementos**.
 
@@ -113,7 +114,7 @@ Si aún no ha adquirido almacenamiento extra para su suscripción, puede hacerlo
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de **facturación** \>.  
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">suscripciones</a> de facturación.  
 
 2. En la página **suscripciones** , elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, seleccione **Complementos**.
 
@@ -167,7 +168,7 @@ Si ya ha comprado almacenamiento de archivos extra mediante el complemento de **
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. Elija la suscripción que contiene el complemento de **almacenamiento de archivos adicionales de Office 365** .
 

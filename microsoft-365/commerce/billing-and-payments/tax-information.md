@@ -20,13 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de Microsoft 365 para empresas en diferentes regiones. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232834"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401755"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -186,4 +188,4 @@ Prepare la siguiente documentación:
   
 [Ver la factura](view-your-bill-or-invoice.md)
   
-[Conocimiento de la factura](understand-your-invoice.md)
+[Entender su factura o recibo](understand-your-invoice.md)

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Obtenga información sobre cómo solucionar problemas relacionados con la aplicación de plantilla de análisis de uso de Microsoft 365.
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212154"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402039"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Solución de problemas de análisis de uso de Microsoft 365
 
@@ -39,7 +40,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Causa:** Antes de poder conectarse a la aplicación, tiene que suscribirse a los datos desde el centro de administración de 365 de Microsoft. Si este paso no se realiza primero, no podrás conectar con la aplicación de plantilla, incluso si proporcionas tu identificador de inquilino de 365 de Microsoft. 
   
- **Para solucionar este error:** Para suscribirse a los datos, vaya al \> centro de administración **informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la Página principal del panel. Seleccione el botón **Introducción** y, a continuación, en el panel de **informes** que se abre, active la opción hacer que los **datos estén disponibles en análisis de uso de Microsoft 365 para Power BI** en y **guarde**.
+ **Para solucionar este error:** Para suscribirse a los datos, vaya al centro de administración \> **informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la Página principal del panel. Seleccione el botón **Introducción** y, a continuación, en el panel de **informes** que se abre, active la opción hacer que los **datos estén disponibles en análisis de uso de Microsoft 365 para Power BI** en y **guarde**.
   
 ## <a name="we-are-processing-your-data"></a>Estamos procesando sus datos
 
@@ -67,7 +68,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Causa:** el id. de espacio empresarial es un GUID y necesita estar en el formato xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Si escribe cualquier otra cadena en el cuadro de entrada del espacio empresarial, obtendrá este error. 
   
- **Para solucionar este error:** \> Vaya al centro de administración de **informes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
+ **Para solucionar este error:** Vaya al centro de administración de \> **informes** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>El sistema no reconoce el id. de espacio empresarial que especificó
 
@@ -77,7 +78,7 @@ Explore la siguiente lista de mensajes de error para obtener ayuda con los probl
   
  **Causa:** el id. de espacio empresarial que especificó no es válido o no existe. 
   
- **Para solucionar este error:** \> Vaya al centro de administración de **informes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
+ **Para solucionar este error:** Vaya al centro de administración de \> **informes** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">uso</a> y busque el icono de análisis de uso de Microsoft 365 en la página del panel principal. El identificador de inquilino aparece en el icono. Puede copiarla desde aquí y pegarla en el cuadro de diálogo para conectarse a la aplicación de plantilla. 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>Vuelva a escribir las credenciales para volver a iniciar sesión en Power BI
 

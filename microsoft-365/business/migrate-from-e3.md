@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business Premium desde Office 365 E3.
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633192"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402243"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 empresa Premium 
 
@@ -41,7 +42,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico en Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Aplicaciones de Office<sup>1</sup>    | Microsoft 365 apps for Business    | Microsoft 365 apps for Enterprise | 
+| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
 | Teams    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
@@ -93,7 +94,7 @@ Si ha actualizado a todos los usuarios de su organización a Microsoft 365 empre
 
 También puede completar estos pasos en la página dispositivos:
   
-1. En el centro de administración, en el panel de navegación izquierdo, vaya a **directivas**de **dispositivos** \> .
+1. En el centro de administración, en el panel de navegación izquierdo, vaya a directivas de **dispositivos** \> **Policies**.
     
 2. En la página **directivas de dispositivos** , elija **Agregar**.
     

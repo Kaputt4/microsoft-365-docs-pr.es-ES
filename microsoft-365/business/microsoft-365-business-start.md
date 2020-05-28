@@ -22,17 +22,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga más información sobre Microsoft 365 para empresas, cómo configurarlo y cómo preparar los dispositivos de los usuarios y los equipos para asegurarse de que están protegidos por Microsoft 365 para la empresa.
-ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165797"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402014"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -106,7 +107,7 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
     
 - Como administrador de Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte técnico al cliente: ** [contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación y recursos de Microsoft 365 para la empresa](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

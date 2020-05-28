@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141059"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403143"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ::: moniker range="o365-worldwide"
 
 
-1. Inicie sesión en el centro de administración [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
+1. Inicie sesión en el centro de administración de en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) y, a continuación, vaya a servicios de compra de **facturación** \> **Purchase services**.
 
 2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. Elija el plan 365 de Microsoft que quiera probar o comprar.
 
@@ -79,7 +80,7 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. Inicie sesión en el centro de administración [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
+1. Inicie sesión en el centro de administración de en [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) y, a continuación, vaya a servicios de compra de **facturación** \> **Purchase services**.
 
 2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
 
@@ -107,7 +108,7 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. Inicie sesión en el centro de administración [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)de en y, a continuación, vaya a **servicios de compra**de **facturación** \> .
+1. Inicie sesión en el centro de administración de en [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) y, a continuación, vaya a servicios de compra de **facturación** \> **Purchase services**.
 
 2. En la página **servicios de compra** , se enumeran las suscripciones que están disponibles para su organización. 
 

@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: Obtenga información sobre la nueva característica de cobertura.
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942181"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402419"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos sobre la cobertura
 
@@ -51,4 +49,4 @@ Debe ser administrador global o de licencia para empezar con una cobertura.
 
 ## <a name="getting-started"></a>Introducción
 
-La característica coberturas está disponible en una versión preliminar privada sólo para un número reducido de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+La característica coberturas está disponible en una versión preliminar privada sólo para un número reducido de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

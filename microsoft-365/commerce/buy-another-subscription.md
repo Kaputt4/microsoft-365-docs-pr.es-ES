@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Obtenga información sobre cómo comprar otra suscripción a Microsoft 365 para empresas para su organización cuando ya tiene una suscripción. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: ebadf9a019829080c145eec2f3f5d612473e91b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141307"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402207"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Comprar otra suscripción de Microsoft 365 para empresas
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +51,7 @@ Después de comprar una nueva suscripción, deberá asignar a los usuarios que d
 ::: moniker range="o365-worldwide"
 
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> Página servicios de <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">compra</a> de facturación.
 
 2. En la página **servicios de compra** , seleccione la suscripción que desea comprar y, a continuación, seleccione **comprar**.
 

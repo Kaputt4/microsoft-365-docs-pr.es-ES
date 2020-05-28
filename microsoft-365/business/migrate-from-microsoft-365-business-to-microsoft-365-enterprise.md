@@ -16,19 +16,20 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Obtenga información sobre cómo mover su empresa de Microsoft 365 Business Premium a Microsoft 365 E3.
-ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633180"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401995"
 ---
-# <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 empresa Premium a Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Migrar de Microsoft 365 Empresa Premium a Microsoft 365 E3
 
 Microsoft 365 empresa Premium tiene todo lo que necesita para su pequeña empresa, ya que combina las mejores aplicaciones de productividad basadas en la nube con la administración de dispositivos sencilla y la seguridad que les permite a sus empleados realizar su mejor trabajo. Sin embargo, en algunos casos, es posible que tenga que migrar su suscripción a Microsoft 365 Business Premium a Microsoft 365 E3. 
 
@@ -50,7 +51,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 |:-------|:-----|:-----|
 | **Local**        | | | 
 | Windows 10    | Windows 10 Empresa  |     Windows 10 Enterprise E3| 
-| Aplicaciones de Office *    | [Microsoft 365 apps for Business](#office-365-business)    | Microsoft 365 apps for Enterprise | 
+| Aplicaciones de Office *    | [Aplicaciones de Microsoft 365 para negocios](#office-365-business)    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
 | Teams    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
@@ -140,7 +141,7 @@ No es necesario realizar ningún cambio en la configuración de Intune actual an
 Microsoft 365 Business Premium incluye Windows 10 Business, que puede instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puede instalar con Windows AutoPilot.
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 apps for Business
+###  <a name="microsoft-365-apps-for-business"></a>Aplicaciones de Microsoft 365 para negocios
 
 El cliente de Microsoft 365 apps para empresas instalado en los dispositivos comenzará a usar automáticamente las características de las aplicaciones de Microsoft 365 para la empresa. Después de la migración, ahora puede usar:
 

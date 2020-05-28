@@ -11,16 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826272"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402611"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -40,7 +40,7 @@ La parte superior de la página de detalles de **las cuentas de facturación** e
 
 En la siguiente tabla se enumeran los términos importantes que aparecen en la página de detalles de **cuentas de facturación** .
 
-| Nombre del campo | Descripción |
+| Nombre del campo | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dirección de ventas | La entidad jurídica responsable del pago e identificada en la factura. La dirección que se proporciona aquí se usa para determinar la tasa de impuestos a menos que opte por proporcionar una dirección de envío alternativa durante la compra. Para obtener más información, consulte [información fiscal](billing-and-payments/tax-information.md). |
 | Sector | Un campo de solo lectura que identifica el segmento empresarial de la organización (comercial, educativa, gubernamental o sin ánimo de lucro). |
@@ -66,15 +66,15 @@ En esta sección se enumeran las direcciones de envío asociadas a su cuenta de 
 
 Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el centro de administración de Microsoft 365 mediante roles y permisos. Solo un propietario de la cuenta de facturación puede conceder acceso a una cuenta de facturación. Puede asignar uno de los siguientes roles a los usuarios:
 
-- El **propietario** &mdash; de la cuenta de facturación puede asignar permisos, editar cuentas, firmar contratos y ver cuentas.
-- El **colaborador** &mdash; de la cuenta de facturación puede editar cuentas, firmar contratos y ver cuentas.
-- El **lector** &mdash; de la cuenta de facturación puede ver cuentas.
+- Propietario de la **cuenta de facturación** &mdash; Puede asignar permisos, editar cuentas, firmar contratos y ver cuentas.
+- Colaborador de cuenta de **facturación** &mdash; Puede editar cuentas, firmar contratos y ver cuentas.
+- Lector de cuentas de **facturación** &mdash; Permite ver cuentas.
 
 > [!Note]
 > Los roles de la cuenta de facturación solo se aplican a las cuentas de facturación y no se aplican a otros escenarios del centro de administración de Microsoft 365.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Información fiscal](billing-and-payments/tax-information.md)
+[Información de impuestos](billing-and-payments/tax-information.md)
 
 [Administrar perfiles de facturación](billing-and-payments/manage-billing-profiles.md)

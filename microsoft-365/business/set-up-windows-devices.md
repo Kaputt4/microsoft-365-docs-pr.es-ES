@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Obtenga información sobre cómo configurar los dispositivos Windows que ejecutan Windows 10 Pro para los usuarios de Microsoft 365 empresa Premium, lo que permite controles de seguridad y administración centralizados.
-ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635460"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402966"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para usuarios de Microsoft 365 empresa Premium
 
@@ -104,7 +105,7 @@ Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si h
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
-Para comprobar el estado de sincronización, en la página **Obtener acceso a trabajo o escuela** de **Configuración**, haga clic en el área **Conectado a** _ \<organization name\> _ para mostrar los botones **Información** y **Desconectar**. Haga clic en **Información** para obtener el estado de sincronización. 
+Para comprobar el estado de la sincronización, en la página **tener acceso a la escuela o el trabajo** en **configuración**, haga clic en el área **conectado a** _ \<organization name\> _ para mostrar la **información** de los botones y **desconectar**. Haga clic en **Información** para obtener el estado de sincronización. 
   
 En la página Estado de sincronización, haga clic en Sincronizar para recibir las directivas de administración de dispositivos móviles más recientes en el equipo.
   

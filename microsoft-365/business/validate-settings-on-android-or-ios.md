@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones de Microsoft 365 Business Premium en sus dispositivos Android o iOS.
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635732"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403378"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validar la configuración de protección de aplicaciones en dispositivos Android o iOS
 
@@ -41,7 +42,7 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrese de que la Directiva se aplica a la aplicación en la que va a validarla.
   
-1. En el [centro de administración](https://portal.office.com)de Microsoft 365 Business Premium, vaya a **Directiva de edición**de **directivas** \> .
+1. En el [centro de administración](https://portal.office.com)de Microsoft 365 Business Premium, vaya a Directiva de edición de **directivas** \> **Edit policy**.
     
 2. Elija **Directiva de aplicación para Android** para la configuración que creó durante la instalación o cualquier otra directiva que haya creado y compruebe que se aplica a Outlook, por ejemplo. 
     
@@ -130,7 +131,7 @@ Después de [establecer las configuraciones de la aplicación para dispositivos 
   
 En primer lugar, asegúrese de que la Directiva se aplica a la aplicación en la que va a validarla.
   
-1. En el [centro de administración](https://portal.office.com)de Microsoft 365 Business Premium, vaya a **Directiva de edición**de **directivas** \> .
+1. En el [centro de administración](https://portal.office.com)de Microsoft 365 Business Premium, vaya a Directiva de edición de **directivas** \> **Edit policy**.
     
 2. Elija **Directiva de aplicación para iOS** para la configuración que ha creado en la configuración o cualquier otra directiva que haya creado y compruebe que se aplica a Outlook, por ejemplo. 
     

@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar las suscripciones de suscripción de autoservicio gratuitas para su organización.
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045266"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403251"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de suscripción de autoservicio
 
@@ -43,7 +44,7 @@ Use el cmdlet [**set-MsolCompanySettings**](https://docs.microsoft.com/powershel
 > [!IMPORTANT]
 > Al eliminar una suscripción de inicio de sesión de autoservicio, impide que todos los usuarios accedan a sus datos y correo electrónico, y eliminen todos los datos y el correo electrónico.
 
-1. En el centro de administración, vaya a la página **facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 2. Busque la suscripción de inicio de sesión de autoservicio que desea eliminar. En la sección **configuración & acciones** , seleccione **eliminar suscripción**.
 3. En el panel **eliminar suscripción** , active la casilla de verificación y, a continuación, seleccione **eliminar suscripción**.
 

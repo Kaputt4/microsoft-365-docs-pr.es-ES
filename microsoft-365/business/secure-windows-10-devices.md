@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtenga información sobre cómo configurar las opciones de la Directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows 10 al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: dfa6aca1f12ab37b8b0926dea4a6a79c934b1250
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561288"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402742"
 ---
 # <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
 

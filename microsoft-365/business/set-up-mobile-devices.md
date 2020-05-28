@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Instale Office en un iPhone o un teléfono Android, y los archivos de trabajo de las aplicaciones de Office estarán protegidos por Microsoft 365 para empresas.
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632575"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403006"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurar dispositivos móviles para los usuarios de Microsoft 365 para empresas
 
@@ -37,7 +38,7 @@ Siga las instrucciones en las pestañas para instalar Office en un iPhone o un t
 
 Este ejemplo se aplica a Outlook, pero también a cualquier otra aplicación de Office que quiera instalar.
   
-## <a name="set-up-mobile-devices"></a>Configurar dispositivos móviles
+## <a name="set-up-mobile-devices"></a>Configuración de dispositivos móviles
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
@@ -59,7 +60,7 @@ Cuando haya terminado la instalación, pulse el botón **Abrir** para abrir Outl
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Escriba su dirección de correo electrónico de trabajo en la pantalla \> **Agregar cuenta de correo electrónico** **Agregar cuenta**y, a continuación, \> escriba el **Inicio de sesión**de credenciales de Microsoft 365 para la empresa.
+Escriba su dirección de correo electrónico de trabajo en la pantalla **Agregar cuenta de correo electrónico** \> **Agregar cuenta**y, a continuación, escriba el inicio de sesión de credenciales de Microsoft 365 para la empresa \> **Sign in**.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ Escriba Microsoft Outlook en el cuadro de búsqueda de Google Play y pulse **ins
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-En la aplicación de Outlook, pulse **Introducción**, después agregue la cuenta \> de correo electrónico de Microsoft 365 para que **continúe**e inicie sesión con las credenciales de su organización.
+En la aplicación de Outlook, pulse **Introducción**, después agregue la cuenta de correo electrónico de Microsoft 365 para que \> **continúe**e inicie sesión con las credenciales de su organización.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   

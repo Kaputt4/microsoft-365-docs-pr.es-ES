@@ -21,16 +21,17 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre lo que incluye Microsoft 365 Business Premium y obtenga instrucciones paso a paso para registrarse en Microsoft 365 empresa Premium.
-ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635112"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401566"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Inscríbase para Microsoft 365 empresa Premium
 
@@ -88,7 +89,7 @@ Para suscribirse y comprar Microsoft 365 para su empresa, siga los pasos que se 
     3. Agregue los detalles de la tarjeta de crédito. Si la dirección de la compañía no coincide con la dirección de la tarjeta de crédito, también necesitará la dirección de la empresa. La dirección de la empresa determina qué impuestos se pagan y qué servicios están disponibles. Para obtener más información sobre los impuestos, vea [¿Qué impuesto se me cobrará?](https://go.microsoft.com/fwlink/?linkid=2109701).
     4. Seleccione **realizar pedido**. Microsoft tardará un poco tiempo en finalizar la configuración de un nuevo plan.
 
-## <a name="whats-next"></a>?Cu?l es el siguiente paso?
+## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
 Seleccione **ir al programa de instalación** para completar otros pasos, como agregar más seguridad para proteger su empresa y descargar aplicaciones de Office como Word y Excel.
 

@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayude a mantener segura la información confidencial de sus clientes.
-ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165745"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402702"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
@@ -46,7 +47,7 @@ DLP incluye varias plantillas de directiva listas para usarse para muchas config
     
 Para poner un buzón de correo en retención por juicio, en el centro de administración:
     
-1. En el panel de navegación izquierdo, **vaya a** \> usuarios **activos**.
+1. En el panel de navegación izquierdo, **vaya a usuarios** \> **activos**.
     
 2. Seleccione un usuario cuyo buzón quiera poner en retención por juicio. En el panel de usuario, expanda **configuración de correo**y, junto a **más configuraciones**, elija **Editar propiedades de Exchange**.
     

@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Obtenga información sobre cómo comprar un complemento para agregar una funcionalidad adicional a su suscripción de Microsoft 365 para empresas. También puede actualizar y quitar un complemento.
-ms.custom: okr_SMB
-ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141295"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402195"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Comprar o editar un complemento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +46,7 @@ Varios de los planes de Microsoft 365 para empresas tienen complementos que pued
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servicios de compra</a> de **facturación** \> .
+1. En el centro de administración, vaya a **Billing** la \> Página servicios de <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">compra</a> de facturación.
 
 2. En la parte inferior de la página **servicios de compra** , seleccione **Complementos**.
 
@@ -66,7 +68,7 @@ Varios de los planes de Microsoft 365 para empresas tienen complementos que pued
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea comprar un complemento.
 
-3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** \> de **compra de complementos**.
+3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** de \> **compra de complementos**.
 
     ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -88,7 +90,7 @@ Varios de los planes de Microsoft 365 para empresas tienen complementos que pued
 
 2. En la página **suscripciones** , seleccione la suscripción para la que desea comprar un complemento.
 
-3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** \> de **compra de complementos**.
+3. En la esquina inferior izquierda de los detalles de la suscripción, seleccione **Complementos** de \> **compra de complementos**.
 
     ![Vínculo para comprar complementos en la página suscripciones del centro de administración de Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
@@ -116,7 +118,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. En la página **sus productos** , seleccione la suscripción para la que desea actualizar un complemento.
 
@@ -179,7 +181,7 @@ Los *complementos independientes* no están vinculados a una suscripción espec�
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. En la página **sus productos** , seleccione la suscripción de complemento que desea actualizar y, a continuación, seleccione **Agregar o quitar licencias**.
 

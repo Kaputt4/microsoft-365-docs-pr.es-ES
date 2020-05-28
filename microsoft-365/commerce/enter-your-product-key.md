@@ -22,13 +22,15 @@ search.appverid:
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo canjear una clave de producto de Microsoft 365 Business estándar que se ha comprado en una tienda minorista.
-ms.custom: okr_SMB
-ms.openlocfilehash: 9cabc3d3f132ef2e3e56c1209b632f1e10a8637e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634913"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402171"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba su clave de producto para Microsoft 365 Business Standard
 
@@ -59,7 +61,7 @@ Si compró el estándar comercial de Microsoft 365 desde una tienda minorista, e
 
 Para usar una clave de producto para ampliar la fecha de expiración o agregar una licencia a la suscripción de Microsoft 365 Business Standard, necesita una clave nueva y no usada para el mismo plan de Microsoft 365. La especificación de la clave de producto de Microsoft 365 original no funcionará porque una clave que ya se ha canjeado no se puede volver a usar. Consulte [Agregar licencias a o ampliar una suscripción pagada para usar una clave de producto](licenses/add-licenses-using-product-key.md).
 
-## <a name="whats-next"></a>?Cu?l es el siguiente paso?
+## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
 Si no está familiarizado con Microsoft 365 para empresas, obtenga información sobre cómo [configurar microsoft 365](../admin/setup/setup.md).
   

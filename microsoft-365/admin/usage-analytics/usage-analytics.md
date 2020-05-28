@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando los servicios de Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011764"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402027"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 ---
@@ -55,25 +56,25 @@ Este Resumen le permite comprender rápidamente los patrones de uso de Office y 
 
 El informe de información general de Microsoft 365 contiene los siguientes informes. Puede verlos eligiendo la pestaña que se muestra en la parte superior de la página del informe. Todos los valores del mes que se muestran en la sección superior del informe hacen referencia al último mes completo.
 
-- La **adopción** &ndash; ofrece un resumen de todas las tendencias de adopción. Use los informes de esta sección para obtener información sobre cómo los usuarios han adoptado Microsoft 365, así como la forma en que el uso general de los servicios individuales ha cambiado de mes a mes. Puede ver cómo se pueden habilitar los usuarios, cuántas personas de su organización usan activamente Microsoft 365, cuántos usuarios devuelven y cuántos usan el producto por primera vez.
+- **Adopción** &ndash; Ofrece un resumen de todas las tendencias de adopción. Use los informes de esta sección para obtener información sobre cómo los usuarios han adoptado Microsoft 365, así como la forma en que el uso general de los servicios individuales ha cambiado de mes a mes. Puede ver cómo se pueden habilitar los usuarios, cuántas personas de su organización usan activamente Microsoft 365, cuántos usuarios devuelven y cuántos usan el producto por primera vez.
 
-- El **uso** &ndash; ofrece una vista de desglose en el volumen de usuarios activos y las actividades clave para cada producto durante los últimos 12 meses. Use los informes de esta sección para obtener información sobre cómo los usuarios de la organización usan Microsoft 365.
+- **Uso** &ndash; Ofrece una vista de desglose en el volumen de usuarios activos y las actividades clave para cada producto durante los últimos 12 meses. Use los informes de esta sección para obtener información sobre cómo los usuarios de la organización usan Microsoft 365.
 
-- **Comunicación** &ndash; puede ver de un vistazo si las personas de su organización prefieren estar en contacto mediante Teams, Yammer, correo electrónico o llamadas de Skype. Puede observar si hay cambios en los patrones en el uso de herramientas de comunicación entre los empleados. 
+- **Comunicación** &ndash; Puede ver de un vistazo si las personas de su organización prefieren estar en contacto usando Teams, Yammer, correo electrónico o llamadas de Skype. Puede observar si hay cambios en los patrones en el uso de herramientas de comunicación entre los empleados. 
 
-- **Colaboración** &ndash; vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos documentos se comparten interna o externamente y cuántos sitios de SharePoint o cuentas de OneDrive se usan de forma activa, desglosados por propietarios y otros colaboradores.
+- **Colaboración** &ndash; Vea cómo los usuarios de su organización usan OneDrive y SharePoint para almacenar documentos y colaborar entre sí y cómo estas tendencias evolucionan mes a mes. También puede ver cuántos documentos se comparten interna o externamente y cuántos sitios de SharePoint o cuentas de OneDrive se usan de forma activa, desglosados por propietarios y otros colaboradores.
 
-- **Almacenamiento** &ndash; use este informe para realizar un seguimiento del almacenamiento en la nube de los sitios de buzones de correo, OneDrive y SharePoint.
+- **Almacenamiento** &ndash; de Use este informe para realizar un seguimiento del almacenamiento en la nube de los sitios de buzones de correo, OneDrive y SharePoint.
 
-- Realizar un seguimiento de la **movilidad** &ndash; de los clientes y dispositivos que los usuarios usan para conectarse al correo electrónico, a Microsoft Teams, a Skype o a Yammer.
+- **Movilidad** &ndash; Realizar un seguimiento de los clientes y dispositivos que los usuarios usan para conectarse al correo electrónico, a Microsoft Teams, Skype o Yammer.
 
 ## <a name="activation-and-licensing"></a>Activación y licencias
 
 La página de activación y licencia ofrece informes sobre la activación de Microsoft 365; es decir, cuántos usuarios han descargado y activado las aplicaciones de Office y cuántas licencias han sido asignadas por la organización. El valor del mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
 
-- Plan de servicio de seguimiento de **activación** &ndash; (por ejemplo, las activaciones de Microsoft 365 apps for Enterprise, Project y Visio) en su organización. Todos los usuarios con una licencia de Office pueden instalar los productos en un máximo de cinco dispositivos. También puede usar los informes de esta sección para ver los dispositivos en los que los usuarios tienen aplicaciones de Office instaladas. Tenga en cuenta que para activar un plan, un usuario debe instalar la aplicación e iniciar sesión con su cuenta.
+- **Activación** &ndash; Realice un seguimiento del plan de servicio (por ejemplo, aplicaciones de Microsoft 365 para las activaciones de Enterprise, Project y Visio) en su organización. Todos los usuarios con una licencia de Office pueden instalar los productos en un máximo de cinco dispositivos. También puede usar los informes de esta sección para ver los dispositivos en los que los usuarios tienen aplicaciones de Office instaladas. Tenga en cuenta que para activar un plan, un usuario debe instalar la aplicación e iniciar sesión con su cuenta.
 
-- **Licencia** &ndash; este informe contiene una introducción a los tipos de licencia, el número de usuarios a los que se asignó cada tipo de licencia y la distribución de asignación de licencias para cada mes. El valor del mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
+- **Licencias** &ndash; Este informe contiene una introducción a los tipos de licencia, el número de usuarios a los que se asignó cada tipo de licencia y la distribución de asignación de licencias para cada mes. El valor del mes hacia la parte superior hace referencia al mes actual y las métricas reflejan los valores agregados desde el principio del mes hasta la fecha actual.
 
 ## <a name="product-usage"></a>Uso del producto
 
