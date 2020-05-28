@@ -18,31 +18,32 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Obtenga información sobre cómo usar Microsoft 365 para empresas para restablecer en fábrica los dispositivos Windows 10 que administre y revertirlos a su configuración original en el momento de la compra.
-ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62585828274652e48b6c6d3654faa8c20fb4caba
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634800"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402774"
 ---
-# <a name="reset-windows-10-devices-to-their-factory-settings"></a><span data-ttu-id="29622-103">Restablecer dispositivos Windows 10 a la configuración de fábrica</span><span class="sxs-lookup"><span data-stu-id="29622-103">Reset Windows 10 devices to their factory settings</span></span>
+# <a name="reset-windows-10-devices-to-their-factory-settings"></a><span data-ttu-id="d0058-103">Restablecer dispositivos Windows 10 a la configuración de fábrica</span><span class="sxs-lookup"><span data-stu-id="d0058-103">Reset Windows 10 devices to their factory settings</span></span>
 
-<span data-ttu-id="29622-104">[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="29622-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
+<span data-ttu-id="d0058-104">[![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="d0058-104">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
 
-<span data-ttu-id="29622-105">Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró.</span><span class="sxs-lookup"><span data-stu-id="29622-105">A factory reset reverts a device to the original settings it had when the device was purchased.</span></span> <span data-ttu-id="29622-106">Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra.</span><span class="sxs-lookup"><span data-stu-id="29622-106">All apps and data on the device that were installed after purchase are removed.</span></span> <span data-ttu-id="29622-107">Puede usar Microsoft 365 para la empresa para restablecer en fábrica los dispositivos Windows 10 que administra.</span><span class="sxs-lookup"><span data-stu-id="29622-107">You can use Microsoft 365 for business to factory reset Windows 10 devices you manage.</span></span>
+<span data-ttu-id="d0058-105">Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró.</span><span class="sxs-lookup"><span data-stu-id="d0058-105">A factory reset reverts a device to the original settings it had when the device was purchased.</span></span> <span data-ttu-id="d0058-106">Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra.</span><span class="sxs-lookup"><span data-stu-id="d0058-106">All apps and data on the device that were installed after purchase are removed.</span></span> <span data-ttu-id="d0058-107">Puede usar Microsoft 365 para la empresa para restablecer en fábrica los dispositivos Windows 10 que administra.</span><span class="sxs-lookup"><span data-stu-id="d0058-107">You can use Microsoft 365 for business to factory reset Windows 10 devices you manage.</span></span>
   
-1. <span data-ttu-id="29622-108">Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="29622-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="d0058-108">Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span><span class="sxs-lookup"><span data-stu-id="d0058-108">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
     
-2. <span data-ttu-id="29622-109">En el panel de navegación izquierdo, elija **dispositivos** \> **administrar**.</span><span class="sxs-lookup"><span data-stu-id="29622-109">In the left nav, choose **Devices** \> **Manage**.</span></span>
+2. <span data-ttu-id="d0058-109">En el panel de navegación izquierdo, elija **dispositivos** \> **administrar**.</span><span class="sxs-lookup"><span data-stu-id="d0058-109">In the left nav, choose **Devices** \> **Manage**.</span></span>
 
-3. <span data-ttu-id="29622-110">En la página **administrar** , marque la casilla de verificación situada junto al dispositivo del que desea quitar los datos y, a continuación, en la lista desplegable **administrar** , seleccione **restablecimiento de fábrica**.</span><span class="sxs-lookup"><span data-stu-id="29622-110">On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.</span></span>
+3. <span data-ttu-id="d0058-110">En la página **administrar** , marque la casilla de verificación situada junto al dispositivo del que desea quitar los datos y, a continuación, en la lista desplegable **administrar** , seleccione **restablecimiento de fábrica**.</span><span class="sxs-lookup"><span data-stu-id="d0058-110">On the **Manage** page, check the checkbox next to the device you want to remove data from and then, in the **Manage** drop-down choose **Factory reset**.</span></span>
     
-4. <span data-ttu-id="29622-111">En el panel **¿Está seguro de que quiere realizar un restablecimiento de fábrica en los siguientes dispositivos?**, elija **Confirmar** \> **Cerrar**.</span><span class="sxs-lookup"><span data-stu-id="29622-111">On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.</span></span>
+4. <span data-ttu-id="d0058-111">En el panel **¿Está seguro de que quiere realizar un restablecimiento de fábrica en los siguientes dispositivos?**, elija **Confirmar** \> **Cerrar**.</span><span class="sxs-lookup"><span data-stu-id="d0058-111">On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.</span></span>
     
   
 
