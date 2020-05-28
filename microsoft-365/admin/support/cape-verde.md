@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 949e2e9e6507ba08afd267e7b38042fb09a90665
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 142f5d8b6edb91b921d900bdd661462eec8f1e17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359581"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398323"
 ---
 # <a name="contact-support-for-cape-verde-cabo-verde"></a>Póngase en contacto con el soporte de cabo verde (cabo verde)
 

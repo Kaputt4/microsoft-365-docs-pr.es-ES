@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7bcf9e4bcc04da4b2f60f7c0db69149c6653ab50
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 08ff49425bd3b1e42c974b16f985d55581ca9206
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357791"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397183"
 ---
 # <a name="contact-support-for-malta"></a>Póngase en contacto con el soporte técnico de Malta
 
