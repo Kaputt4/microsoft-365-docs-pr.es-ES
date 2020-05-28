@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,44 +21,44 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: Cree una tarjeta de asistencia personalizada en el centro de administración y agregue información de contacto de soporte técnico personalizada al panel de ayuda.
-ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: aa85ec844b4961fc21c1033409f510ba25e65472
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262276"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399403"
 ---
-# <a name="add-customized-help-desk-info-to-the-help-pane"></a><span data-ttu-id="db0e8-103">Agregar información de servicio de asistencia personalizada al panel de ayuda</span><span class="sxs-lookup"><span data-stu-id="db0e8-103">Add customized help desk info to the help pane</span></span>
+# <a name="add-customized-help-desk-info-to-the-help-pane"></a><span data-ttu-id="085be-103">Agregar información de servicio de asistencia personalizada al panel de ayuda</span><span class="sxs-lookup"><span data-stu-id="085be-103">Add customized help desk info to the help pane</span></span>
 
-<span data-ttu-id="db0e8-104">Como administrador, puede simplificar la compatibilidad con los usuarios si agrega información de contacto personalizada al panel de ayuda.</span><span class="sxs-lookup"><span data-stu-id="db0e8-104">As an admin, you can streamline user support by adding customized contact information to the help pane.</span></span> <span data-ttu-id="db0e8-105">Los usuarios que necesiten ayuda podrán tener acceso a la información de contacto de soporte personalizado de su organización con el icono de ayuda.</span><span class="sxs-lookup"><span data-stu-id="db0e8-105">Users in need of help will be able to access your organization's custom support contact info with the help icon.</span></span>
+<span data-ttu-id="085be-104">Como administrador, puede simplificar la compatibilidad con los usuarios si agrega información de contacto personalizada al panel de ayuda.</span><span class="sxs-lookup"><span data-stu-id="085be-104">As an admin, you can streamline user support by adding customized contact information to the help pane.</span></span> <span data-ttu-id="085be-105">Los usuarios que necesiten ayuda podrán tener acceso a la información de contacto de soporte personalizado de su organización con el icono de ayuda.</span><span class="sxs-lookup"><span data-stu-id="085be-105">Users in need of help will be able to access your organization's custom support contact info with the help icon.</span></span>
   
-<span data-ttu-id="db0e8-106">Para crear una tarjeta de asistencia personalizada, debe ser un administrador global de Microsoft 365 y tener una licencia para Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="db0e8-106">To create a custom help desk card, you must be a global admin for Microsoft 365 and have a license to Exchange Online.</span></span> <span data-ttu-id="db0e8-107">Obtenga información sobre cómo [asignar licencias en Microsoft 365 para empresas](../manage/assign-licenses-to-users.md).</span><span class="sxs-lookup"><span data-stu-id="db0e8-107">Learn how to [assign licenses in Microsoft 365 for business](../manage/assign-licenses-to-users.md).</span></span>
+<span data-ttu-id="085be-106">Para crear una tarjeta de asistencia personalizada, debe ser un administrador global de Microsoft 365 y tener una licencia para Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="085be-106">To create a custom help desk card, you must be a global admin for Microsoft 365 and have a license to Exchange Online.</span></span> <span data-ttu-id="085be-107">Obtenga información sobre cómo [asignar licencias en Microsoft 365 para empresas](../manage/assign-licenses-to-users.md).</span><span class="sxs-lookup"><span data-stu-id="085be-107">Learn how to [assign licenses in Microsoft 365 for business](../manage/assign-licenses-to-users.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="db0e8-108">Si es un administrador que busca soporte técnico o de facturación de Microsoft, consulte [ponerse en contacto con el soporte técnico de microsoft 365 para empresas](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="db0e8-108">If you are an admin looking for technical or billing support from Microsoft, see [Contact Microsoft 365 for business support](../contact-support-for-business-products.md).</span></span> 
+> <span data-ttu-id="085be-108">Si es un administrador que busca soporte técnico o de facturación de Microsoft, consulte [ponerse en contacto con el soporte técnico de microsoft 365 para empresas](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="085be-108">If you are an admin looking for technical or billing support from Microsoft, see [Contact Microsoft 365 for business support](../contact-support-for-business-products.md).</span></span> 
 
   
-### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a><span data-ttu-id="db0e8-109">Crear la tarjeta de asistencia personalizada en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="db0e8-109">Create the custom help desk card in the admin center</span></span>
-<span data-ttu-id="db0e8-110"><a name="BKMK_HelpDeskPreview"> </a></span><span class="sxs-lookup"><span data-stu-id="db0e8-110"><a name="BKMK_HelpDeskPreview"> </a></span></span>
+### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a><span data-ttu-id="085be-109">Crear la tarjeta de asistencia personalizada en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="085be-109">Create the custom help desk card in the admin center</span></span>
+<span data-ttu-id="085be-110"><a name="BKMK_HelpDeskPreview"> </a></span><span class="sxs-lookup"><span data-stu-id="085be-110"><a name="BKMK_HelpDeskPreview"> </a></span></span>
 
-1. <span data-ttu-id="db0e8-111">En el centro de administración, vaya a **configuración de**la  >  **organización** y elija la pestaña **información del servicio de asistencia** .</span><span class="sxs-lookup"><span data-stu-id="db0e8-111">In the admin center, go to the **Settings** > **Org Settings** and choose **Help desk information** tab.</span></span>
+1. <span data-ttu-id="085be-111">En el centro de administración, vaya a **configuración de**la  >  **organización** y elija la pestaña **información del servicio de asistencia** .</span><span class="sxs-lookup"><span data-stu-id="085be-111">In the admin center, go to the **Settings** > **Org Settings** and choose **Help desk information** tab.</span></span>
     
-2. <span data-ttu-id="db0e8-112">En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.</span><span class="sxs-lookup"><span data-stu-id="db0e8-112">On the **Organization profile** tab, choose **Custom app launcher tiles**.</span></span>
+2. <span data-ttu-id="085be-112">En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.</span><span class="sxs-lookup"><span data-stu-id="085be-112">On the **Organization profile** tab, choose **Custom app launcher tiles**.</span></span>
   
-3. <span data-ttu-id="db0e8-113">Active la opción **Agregar la información de contacto del servicio de ayuda**.</span><span class="sxs-lookup"><span data-stu-id="db0e8-113">Turn on the **Add your help desk contact information**.</span></span>
+3. <span data-ttu-id="085be-113">Active la opción **Agregar la información de contacto del servicio de ayuda**.</span><span class="sxs-lookup"><span data-stu-id="085be-113">Turn on the **Add your help desk contact information**.</span></span>
     
-4. <span data-ttu-id="db0e8-p103">Como administrador, puede decidir qué tipo de información de contacto desea dar a los usuarios. El título y al menos información de una vía de contacto son necesarios. Seleccione lo que desea mostrar y rellene la información correspondiente.</span><span class="sxs-lookup"><span data-stu-id="db0e8-p103">As an admin, you decide what kind of contact information you want to give users. The title and at least one form of contact information are required. Select what you want to display, and fill out the appropriate info.</span></span>
+4. <span data-ttu-id="085be-p103">Como administrador, puede decidir qué tipo de información de contacto desea dar a los usuarios. El título y al menos información de una vía de contacto son necesarios. Seleccione lo que desea mostrar y rellene la información correspondiente.</span><span class="sxs-lookup"><span data-stu-id="085be-p103">As an admin, you decide what kind of contact information you want to give users. The title and at least one form of contact information are required. Select what you want to display, and fill out the appropriate info.</span></span>
     
-  - <span data-ttu-id="db0e8-117">**Título**: escriba un título que indique claramente su intención, como "Contoso Help Desk" o "¿necesita ayuda?".</span><span class="sxs-lookup"><span data-stu-id="db0e8-117">**Title**: Enter a title that clearly indicates your intent, like "Contoso help desk" or "Need help?"</span></span>
+  - <span data-ttu-id="085be-117">**Título**: escriba un título que indique claramente su intención, como "Contoso Help Desk" o "¿necesita ayuda?".</span><span class="sxs-lookup"><span data-stu-id="085be-117">**Title**: Enter a title that clearly indicates your intent, like "Contoso help desk" or "Need help?"</span></span>
     
-  - <span data-ttu-id="db0e8-118">**Teléfono**: escriba el número de teléfono que deben llamar los usuarios para comunicarse con un agente de soporte técnico de su organización.</span><span class="sxs-lookup"><span data-stu-id="db0e8-118">**Phone**: Enter the phone number users should call to talk to a tech support agent at your organization.</span></span> <span data-ttu-id="db0e8-119">Asegúrese de incluir los prefijos que puedan ser necesarios para realizar la llamada.</span><span class="sxs-lookup"><span data-stu-id="db0e8-119">Be sure to include any prefixes that may be needed to complete the call.</span></span>
+  - <span data-ttu-id="085be-118">**Teléfono**: escriba el número de teléfono que deben llamar los usuarios para comunicarse con un agente de soporte técnico de su organización.</span><span class="sxs-lookup"><span data-stu-id="085be-118">**Phone**: Enter the phone number users should call to talk to a tech support agent at your organization.</span></span> <span data-ttu-id="085be-119">Asegúrese de incluir los prefijos que puedan ser necesarios para realizar la llamada.</span><span class="sxs-lookup"><span data-stu-id="085be-119">Be sure to include any prefixes that may be needed to complete the call.</span></span>
     
-  - <span data-ttu-id="db0e8-120">**Correo electrónico**: escriba la dirección de correo electrónico del Departamento de soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="db0e8-120">**Email**: Enter the email address for your support department.</span></span>
+  - <span data-ttu-id="085be-120">**Correo electrónico**: escriba la dirección de correo electrónico del Departamento de soporte técnico.</span><span class="sxs-lookup"><span data-stu-id="085be-120">**Email**: Enter the email address for your support department.</span></span>
     
-  - <span data-ttu-id="db0e8-121">**URL**: Si el Departamento de soporte técnico tiene un sitio Web interno o público con herramientas y recursos útiles, escriba su nombre y la dirección URL asociada.</span><span class="sxs-lookup"><span data-stu-id="db0e8-121">**URL**: If your support department has an internal or public website with helpful tools and resources, enter its name and the associated URL.</span></span>
+  - <span data-ttu-id="085be-121">**URL**: Si el Departamento de soporte técnico tiene un sitio Web interno o público con herramientas y recursos útiles, escriba su nombre y la dirección URL asociada.</span><span class="sxs-lookup"><span data-stu-id="085be-121">**URL**: If your support department has an internal or public website with helpful tools and resources, enter its name and the associated URL.</span></span>
     
-5. <span data-ttu-id="db0e8-122">Seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="db0e8-122">Select **Save changes**.</span></span>
+5. <span data-ttu-id="085be-122">Seleccione **Guardar cambios**.</span><span class="sxs-lookup"><span data-stu-id="085be-122">Select **Save changes**.</span></span>
     
-    <span data-ttu-id="db0e8-p105">Para ver la nueva tarjeta de asistencia personalizada cierre sesión y vuelva a iniciarla. Se recomienda comprobar los enlaces de la tarjeta en cuanto se vuelva a iniciar sesión. Los usuarios podrán ver la tarjeta la próxima vez que inicien sesión.</span><span class="sxs-lookup"><span data-stu-id="db0e8-p105">To see your new customized help desk card, sign out and back in again. We recommend you test the links on the card as soon as you sign back in. Your users will be able to see the card the next time they sign in.</span></span>
+    <span data-ttu-id="085be-p105">Para ver la nueva tarjeta de asistencia personalizada cierre sesión y vuelva a iniciarla. Se recomienda comprobar los enlaces de la tarjeta en cuanto se vuelva a iniciar sesión. Los usuarios podrán ver la tarjeta la próxima vez que inicien sesión.</span><span class="sxs-lookup"><span data-stu-id="085be-p105">To see your new customized help desk card, sign out and back in again. We recommend you test the links on the card as soon as you sign back in. Your users will be able to see the card the next time they sign in.</span></span>
     
 

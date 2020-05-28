@@ -13,49 +13,50 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Obtenga información sobre cómo configurar las claves del registro para habilitar la autenticación moderna para dispositivos que tienen instalado Microsoft Office 2013.
-ms.openlocfilehash: 8dec8174d5f39d8fecd6b2a7340d69dbcd421357
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8bf6f50068f1a1435897c49656823302df40235e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627733"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399175"
 ---
-# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a><span data-ttu-id="148ca-103">Habilitar autenticación moderna para Office 2013 en dispositivos Windows</span><span class="sxs-lookup"><span data-stu-id="148ca-103">Enable Modern Authentication for Office 2013 on Windows devices</span></span>
+# <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a><span data-ttu-id="b03a0-103">Habilitar autenticación moderna para Office 2013 en dispositivos Windows</span><span class="sxs-lookup"><span data-stu-id="b03a0-103">Enable Modern Authentication for Office 2013 on Windows devices</span></span>
 
-<span data-ttu-id="148ca-104">Para habilitar la autenticación moderna para los dispositivos con Windows que tienen Office 2013 instalado, debe configurar claves del registro específicas.</span><span class="sxs-lookup"><span data-stu-id="148ca-104">To enable modern authentication for any Windows devices that have Office 2013 installed, you need to set specific registry keys.</span></span>
+<span data-ttu-id="b03a0-104">Para habilitar la autenticación moderna para los dispositivos con Windows que tienen Office 2013 instalado, debe configurar claves del registro específicas.</span><span class="sxs-lookup"><span data-stu-id="b03a0-104">To enable modern authentication for any Windows devices that have Office 2013 installed, you need to set specific registry keys.</span></span>
   
-## <a name="enable-modern-authentication-for-office-2013-clients"></a><span data-ttu-id="148ca-105">Habilitar la autenticación moderna para los clientes de Office 2013</span><span class="sxs-lookup"><span data-stu-id="148ca-105">Enable modern authentication for Office 2013 clients</span></span>
+## <a name="enable-modern-authentication-for-office-2013-clients"></a><span data-ttu-id="b03a0-105">Habilitar la autenticación moderna para los clientes de Office 2013</span><span class="sxs-lookup"><span data-stu-id="b03a0-105">Enable modern authentication for Office 2013 clients</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="148ca-106">La autenticación moderna ya está habilitada para los clientes de Office 2016, no necesita configurar claves del registro para Office 2016.</span><span class="sxs-lookup"><span data-stu-id="148ca-106">Modern authentication is already enabled for Office 2016 clients, you do not need to set registry keys for Office 2016.</span></span> 
+> <span data-ttu-id="b03a0-106">La autenticación moderna ya está habilitada para los clientes de Office 2016, no necesita configurar claves del registro para Office 2016.</span><span class="sxs-lookup"><span data-stu-id="b03a0-106">Modern authentication is already enabled for Office 2016 clients, you do not need to set registry keys for Office 2016.</span></span> 
   
-<span data-ttu-id="148ca-p101">Para habilitar la autenticación moderna para cualquier dispositivo con Windows (por ejemplo, en portátiles y tabletas), que tienen Microsoft Office 2013 instalado, debe configurar las siguientes claves del registro. Las claves se tienen que establecer en cada dispositivo en el que quiera habilitar la autenticación moderna:</span><span class="sxs-lookup"><span data-stu-id="148ca-p101">To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:</span></span>
+<span data-ttu-id="b03a0-p101">Para habilitar la autenticación moderna para cualquier dispositivo con Windows (por ejemplo, en portátiles y tabletas), que tienen Microsoft Office 2013 instalado, debe configurar las siguientes claves del registro. Las claves se tienen que establecer en cada dispositivo en el que quiera habilitar la autenticación moderna:</span><span class="sxs-lookup"><span data-stu-id="b03a0-p101">To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:</span></span>
   
-|<span data-ttu-id="148ca-109">**Clave del registro**</span><span class="sxs-lookup"><span data-stu-id="148ca-109">**Registry key**</span></span>|<span data-ttu-id="148ca-110">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="148ca-110">**Type**</span></span>|<span data-ttu-id="148ca-111">**Valor**</span><span class="sxs-lookup"><span data-stu-id="148ca-111">**Value**</span></span> |
+|<span data-ttu-id="b03a0-109">**Clave del registro**</span><span class="sxs-lookup"><span data-stu-id="b03a0-109">**Registry key**</span></span>|<span data-ttu-id="b03a0-110">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="b03a0-110">**Type**</span></span>|<span data-ttu-id="b03a0-111">**Valor**</span><span class="sxs-lookup"><span data-stu-id="b03a0-111">**Value**</span></span> |
 |:-------|:------:|--------:|
-|<span data-ttu-id="148ca-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="148ca-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span>  |<span data-ttu-id="148ca-113">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="148ca-113">REG_DWORD</span></span>  |<span data-ttu-id="148ca-114">1</span><span class="sxs-lookup"><span data-stu-id="148ca-114">1</span></span>  |
-|<span data-ttu-id="148ca-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span><span class="sxs-lookup"><span data-stu-id="148ca-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span></span> |<span data-ttu-id="148ca-116">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="148ca-116">REG_DWORD</span></span> |<span data-ttu-id="148ca-117">1</span><span class="sxs-lookup"><span data-stu-id="148ca-117">1</span></span> |
+|<span data-ttu-id="b03a0-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="b03a0-112">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span>  |<span data-ttu-id="b03a0-113">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="b03a0-113">REG_DWORD</span></span>  |<span data-ttu-id="b03a0-114">1 </span><span class="sxs-lookup"><span data-stu-id="b03a0-114">1</span></span>  |
+|<span data-ttu-id="b03a0-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span><span class="sxs-lookup"><span data-stu-id="b03a0-115">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version</span></span> |<span data-ttu-id="b03a0-116">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="b03a0-116">REG_DWORD</span></span> |<span data-ttu-id="b03a0-117">1 </span><span class="sxs-lookup"><span data-stu-id="b03a0-117">1</span></span> |
    
-<span data-ttu-id="148ca-118">Una vez que haya establecido las claves del registro, puede configurar las aplicaciones de dispositivos de Office 2013 para que usen la [autenticación multifactor (MFA)](set-up-multi-factor-authentication.md) con Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="148ca-118">Once you have set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Microsoft 365.</span></span> 
+<span data-ttu-id="b03a0-118">Una vez que haya establecido las claves del registro, puede configurar las aplicaciones de dispositivos de Office 2013 para que usen la [autenticación multifactor (MFA)](set-up-multi-factor-authentication.md) con Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b03a0-118">Once you have set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Microsoft 365.</span></span> 
   
-<span data-ttu-id="148ca-p102">Si ha iniciado sesión actualmente con cualquiera de las aplicaciones de cliente, tendrá que cerrar sesión y volver a iniciarla para que el cambio surta efecto. En caso contrario, la configuración usada recientemente y de itinerancia no estará disponible hasta que se establezca la identidad ADAL.</span><span class="sxs-lookup"><span data-stu-id="148ca-p102">If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.</span></span>
+<span data-ttu-id="b03a0-p102">Si ha iniciado sesión actualmente con cualquiera de las aplicaciones de cliente, tendrá que cerrar sesión y volver a iniciarla para que el cambio surta efecto. En caso contrario, la configuración usada recientemente y de itinerancia no estará disponible hasta que se establezca la identidad ADAL.</span><span class="sxs-lookup"><span data-stu-id="b03a0-p102">If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.</span></span>
   
-## <a name="disable-modern-authentication-on-devices"></a><span data-ttu-id="148ca-121">Deshabilitar la autenticación moderna en los dispositivos</span><span class="sxs-lookup"><span data-stu-id="148ca-121">Disable modern authentication on devices</span></span>
+## <a name="disable-modern-authentication-on-devices"></a><span data-ttu-id="b03a0-121">Deshabilitar la autenticación moderna en los dispositivos</span><span class="sxs-lookup"><span data-stu-id="b03a0-121">Disable modern authentication on devices</span></span>
 
-<span data-ttu-id="148ca-122">Para deshabilitar la autenticación moderna en un dispositivo, establezca las siguientes claves del registro en el dispositivo:</span><span class="sxs-lookup"><span data-stu-id="148ca-122">To disable modern authentication on a device, set the following registry keys on the device:</span></span>
+<span data-ttu-id="b03a0-122">Para deshabilitar la autenticación moderna en un dispositivo, establezca las siguientes claves del registro en el dispositivo:</span><span class="sxs-lookup"><span data-stu-id="b03a0-122">To disable modern authentication on a device, set the following registry keys on the device:</span></span>
   
-|<span data-ttu-id="148ca-123">**Clave del registro**</span><span class="sxs-lookup"><span data-stu-id="148ca-123">**Registry key**</span></span>|<span data-ttu-id="148ca-124">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="148ca-124">**Type**</span></span>|<span data-ttu-id="148ca-125">**Valor**</span><span class="sxs-lookup"><span data-stu-id="148ca-125">**Value**</span></span>|
+|<span data-ttu-id="b03a0-123">**Clave del registro**</span><span class="sxs-lookup"><span data-stu-id="b03a0-123">**Registry key**</span></span>|<span data-ttu-id="b03a0-124">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="b03a0-124">**Type**</span></span>|<span data-ttu-id="b03a0-125">**Valor**</span><span class="sxs-lookup"><span data-stu-id="b03a0-125">**Value**</span></span>|
 |:-------|:------:|--------:|
-|<span data-ttu-id="148ca-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="148ca-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span> |<span data-ttu-id="148ca-127">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="148ca-127">REG_DWORD</span></span>|<span data-ttu-id="148ca-128">comprendi</span><span class="sxs-lookup"><span data-stu-id="148ca-128">0</span></span>|
+|<span data-ttu-id="b03a0-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span><span class="sxs-lookup"><span data-stu-id="b03a0-126">HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL</span></span> |<span data-ttu-id="b03a0-127">REG_DWORD</span><span class="sxs-lookup"><span data-stu-id="b03a0-127">REG_DWORD</span></span>|<span data-ttu-id="b03a0-128">comprendi</span><span class="sxs-lookup"><span data-stu-id="b03a0-128">0</span></span>|
    
-## <a name="related-articles"></a><span data-ttu-id="148ca-129">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="148ca-129">Related articles</span></span>
-[<span data-ttu-id="148ca-130">Inicie sesión en Office 2013 con un segundo método de verificación</span><span class="sxs-lookup"><span data-stu-id="148ca-130">Sign in to Office 2013 with a second verification method</span></span>](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+## <a name="related-articles"></a><span data-ttu-id="b03a0-129">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="b03a0-129">Related articles</span></span>
+[<span data-ttu-id="b03a0-130">Inicie sesión en Office 2013 con un segundo método de verificación</span><span class="sxs-lookup"><span data-stu-id="b03a0-130">Sign in to Office 2013 with a second verification method</span></span>](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
 
   
 
