@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Aprenda a administrar mensajes del centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628153"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399721"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el centro de mensajes
 
@@ -32,7 +33,7 @@ Las publicaciones del centro de mensajes son anuncios importantes sobre las cara
   
 ## <a name="read-a-message"></a>Leer un mensaje
 
-Para ir al centro de mensajes, vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)y seleccione**centro de mensajes**de **mantenimiento** > . 
+Para ir al centro de mensajes, vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)y seleccione Centro de mensajes de **mantenimiento**  >  **Message center**. 
 
 Seleccione un título de mensaje para abrirlo en el panel de lectura. Cada mensaje contiene un resumen del cambio, una declaración de cómo puede afectar el cambio a usted, información sobre cómo puede preparar a su organización para el cambio y, en la mayoría de los casos, un vínculo a información adicional donde puede obtener más información. La información adicional sigue estando disponible, incluso después de que expire un mensaje.
 

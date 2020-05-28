@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140410"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399901"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -52,7 +53,7 @@ ms.locfileid: "44140410"
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>.
 
-2. > Seleccione **usuarios** **activos**.
+2. Seleccione **usuarios** > **activos**.
 
 3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
 
@@ -68,7 +69,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>.  
 
-2. > Seleccione **usuarios** **activos**.
+2. Seleccione **usuarios** > **activos**.
 
 3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
 
@@ -84,7 +85,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.  
 
-2. > Seleccione **usuarios** **activos**.
+2. Seleccione **usuarios** > **activos**.
 
 3. Active las casillas situadas junto a los nombres de todos los usuarios que desee mover.
 
@@ -105,7 +106,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.
 
-2. Vaya a **Users** \> usuarios **activos**y seleccione su cuenta de la lista.
+2. Vaya a **usuarios** \> **activos**y seleccione su cuenta de la lista.
 
 3. En la pestaña **cuenta** , seleccione **administrar nombre de usuario**y, a continuación, elija un dominio diferente.
   
@@ -119,7 +120,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. Vaya a **Users** \> usuarios **activos**y seleccione su nombre en la lista.
+1. Vaya a **usuarios** \> **activos**y seleccione su nombre en la lista.
 
 2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
 
@@ -135,7 +136,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya a **Users** \> usuarios **activos**y seleccione su nombre en la lista.
+1. Vaya a **usuarios** \> **activos**y seleccione su nombre en la lista.
 
 2. En la sección **nombre de usuario/correo electrónico** , seleccione **Editar**y, a continuación, elija un dominio diferente.
 
@@ -153,7 +154,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. Seleccione el nombre del grupo y, a continuación, en la pestaña **General** , en **dirección de correo electrónico,** haga clic en **Editar**.
 
@@ -165,7 +166,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** > **Groups** página grupos de grupos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos > **Groups** .
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -177,7 +178,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** > **Groups** página grupos de grupos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos > **Groups** .
 
 2. Seleccione el nombre del grupo y, a continuación, seleccione **Editar** junto a **nombre**.
 
@@ -197,13 +198,13 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> .
+1. En el centro de administración, vaya a la página de **configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">dominios</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">dominios</a> .
+1. En el centro de administración, vaya a la página de **configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">dominios</a> .
 
 ::: moniker-end
   

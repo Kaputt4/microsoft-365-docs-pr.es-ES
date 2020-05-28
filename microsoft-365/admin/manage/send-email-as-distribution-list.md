@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Obtenga información sobre cómo enviar correo electrónico como una lista de distribución en Microsoft 365.
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628069"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399595"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar un correo electrónico como una lista de distribución
 
@@ -45,7 +46,7 @@ Antes de llevar a cabo estos pasos, asegúrese de que se ha agregado a una lista
     
 4. En la parte inferior del mensaje, seleccione **más** \> **Mostrar en**.<br/> ![Seleccione más y, a continuación, elija Mostrar en](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Haga clic con el botón derecho en la dirección de `Ina@weewalter.me` (por ejemplo,?) y elija **quitar**.<br/> ![Quitar el alias de](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Haga clic con el botón derecho en la dirección de (por ejemplo,?) `Ina@weewalter.me` y elija **quitar**.<br/> ![Quitar el alias de](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. A continuación, escriba la dirección de la lista de distribución, por ejemplo, support@contoso.com, y envíe el mensaje. La próxima vez que responda a la lista de distribución, su dirección aparecerá como una opción en la lista **de** .<br/>![Aparece el alias del buzón compartido](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

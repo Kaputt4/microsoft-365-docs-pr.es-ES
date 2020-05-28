@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Administrar el correo electrónico y los calendarios
+title: Administrar correo electrónico y calendarios
 summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
 metadata:
-  title: Administrar el correo electrónico y los calendarios
+  title: Administrar correo electrónico y calendarios
   description: Administrar la configuración del correo electrónico, los grupos de distribución, la configuración de seguridad y configurar los buzones compartidos
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952795"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400069"
 landingContent:
 - title: Administrar el correo electrónico
   linkLists:
@@ -23,13 +24,13 @@ landingContent:
     links:
     - text: Administrar la configuración del correo electrónico del usuario
       url: office-365-user-email-settings.md
-    - text: Colaboración de correo electrónico
+    - text: Sobre la colaboración de correo electrónico
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
     - text: Agregar otro alias de correo electrónico
       url: add-another-email-alias-for-a-user.md
-    - text: Usar el dominio personalizado
+    - text: Usar un dominio personalizado
       url: change-email-address.md
     - text: Configurar el reenvío de correo electrónico
       url: configure-email-forwarding.md
@@ -49,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Configurar un buzón compartido
+    - text: Configuración de un buzón compartido
       url: configure-a-shared-mailbox.md
     - text: Convertir un buzón de usuario en un buzón compartido
       url: convert-user-mailbox-to-shared-mailbox.md

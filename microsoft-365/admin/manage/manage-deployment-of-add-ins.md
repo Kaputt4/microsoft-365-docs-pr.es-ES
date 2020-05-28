@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139714"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399733"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el Centro de administración de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -147,7 +148,7 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
 
 Después de la implementación, los administradores también pueden modificar el acceso del usuario a los complementos.
 
-1. En el centro de administración, vaya a la página de los**Complementos &** de los servicios de **configuración** > .
+1. En el centro de administración, vaya a **Settings**la página de los  >  **Complementos &** de los servicios de configuración.
 
 2. Seleccione el complemento implementado.
 
@@ -277,14 +278,14 @@ Si el complemento implementado no es compatible con los comandos de complemento 
 
 También puede eliminar un complemento que se ha implementado.
 
-1. En el centro de administración, vaya a la página de los**Complementos &** de los servicios de **configuración** > .
+1. En el centro de administración, vaya a **Settings**la página de los  >  **Complementos &** de los servicios de configuración.
 
 2. Seleccione el complemento implementado.
 
 3. Haga clic en **eliminar complemento**. Quite el botón del complemento en la esquina inferior derecha.
 4. Valide las selecciones y elija **quitar complemento**.
   
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 Obtenga más información sobre la creación y generación de [complementos de Office](https://go.microsoft.com/fwlink/p/?linkid=846362).
   

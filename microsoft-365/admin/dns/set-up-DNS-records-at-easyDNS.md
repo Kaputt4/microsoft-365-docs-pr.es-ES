@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en easyDNS para Microsoft.
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631362"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400237"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Crear registros DNS en easyDNS para Microsoft
 
@@ -54,7 +55,7 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
 7. Espere unos minutos antes de continuar, para que el registro que acaba de crear pueda propagarse a través de Internet y sea detectado por Microsoft.
     
-8. Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y solicitará el registro.
+8. Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro.
     
 9. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -76,7 +77,7 @@ Nota: Actualmente, los registros SRV no están disponibles en todos los paquetes
     
     |**CORREO PARA LA ZONA**|**SERVIDOR DE CORREO**|**DISTINGUIR**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<Domain-Key\>. mail.Protection.Outlook.com (obtener el \<valor de clave\> de dominio de la página de dominios del centro de administración)  <br/> |comprendi  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com (obtener su \<domain-key\> valor de la página de dominios del centro de administración)  <br/> |comprendi  <br/> |
    
 2. Si desea guardar los demás registros MX para fines de copia de seguridad, cópielos en algún lugar. Antes de continuar, elimine todos los demás registros MX.
     
@@ -139,8 +140,8 @@ Nota: Actualmente, los registros SRV no están disponibles en easyDNS ' dominio 
     
     |**SERVICIO**|**Protocolo**|**HOST**|**PRIORIDAD**|**WGT**|**PUERTO**|**DESTINO (debe terminar con ".")**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Seleccione **siguiente**. 
     

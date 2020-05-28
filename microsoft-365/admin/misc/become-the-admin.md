@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar que el correo electrónico y la propiedad del dominio se tomen en un inquilino no administrado en Microsoft 365
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627949"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399451"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar un relevo interno del administrador
 
@@ -40,9 +41,9 @@ Si es administrador y desea tomar el control de un inquilino no administrado cre
 > [!NOTE]
 > Si el autoservicio está habilitado en el espacio empresarial, los usuarios pueden suscribirse a servicios gratuitos, como Power BI, por su cuenta. En estos pasos se da por hecho que una suscripción de usuario de autoservicio ha creado el inquilino no administrado que desea tomar como administrador. En el primer paso, se crea un contexto de usuario en el inquilino no administrado, que usa Power BI para ilustrar la ruta de acceso de adquisición de administración.
 
-1. Para registrarse en Power BI, vaya al sitio de [Power BI](https://powerbi.com) y seleccione **iniciar** > **versión de prueba** gratuita de inicio libre (en compartir con Power Bi Pro Box). 
+1. Para registrarse en Power BI, vaya al sitio de [Power BI](https://powerbi.com) y seleccione **iniciar**  >  **versión de prueba** gratuita de inicio libre (en compartir con Power Bi Pro Box). 
 
-2. Regístrese con una cuenta de usuario que use el nombre de dominio de su organización ( `powerbiadmin@contoso.com`como). Si su cuenta ya está en uso, inicie sesión con su contraseña actual.
+2. Regístrese con una cuenta de usuario que use el nombre de dominio de su organización (como `powerbiadmin@contoso.com` ). Si su cuenta ya está en uso, inicie sesión con su contraseña actual.
 
 3. Busque en su correo electrónico el **código de verificación** y escriba el código para validar su dirección de correo electrónico.
     

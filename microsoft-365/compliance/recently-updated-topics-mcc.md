@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Estamos creando artículos nuevos, actualizando los existentes y realizando cambios en función de sus comentarios. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231903"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401204"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -100,13 +100,6 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 ### <a name="pst-import"></a>Importación de PST
 
 [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md) (actualizado)<br>Se agregaron preguntas más frecuentes sobre cómo procesa el proceso de importación de PST elementos de correo electrónico duplicados.
-
-### <a name="retention"></a>Retención
-
-[Información general sobre las directivas de retención](retention-policies.md) (actualizada)<br>Los cambios incluyen:
-
-- Se agregaron rutas de contenido para directivas de retención de solo retención y de solo eliminación (anteriormente, las rutas de contenido explican solo mantener y, a continuación, eliminar).
-- [Sección actualizada](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) que explica que, para ubicaciones de SharePoint, ahora debe especificar una dirección URL en lugar de elegir un sitio. Esto significa que no necesita permisos para obtener acceso al sitio a fin de incluirlo en una directiva de retención.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

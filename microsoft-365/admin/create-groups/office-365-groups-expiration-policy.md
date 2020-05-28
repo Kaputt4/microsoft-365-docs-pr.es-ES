@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064826"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400730"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -57,7 +58,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
-Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya a la**expiración**de los**grupos** > de **Azure Active Directory (AAD)** > . Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
+Como se indicó anteriormente, la expiración está desactivada de forma predeterminada. Un administrador tendrá que habilitar la Directiva de expiración y establecer las propiedades para que surta efecto. Para habilitarla, vaya a la expiración de los grupos de **Azure Active Directory (AAD)**  >  **Groups**  >  **Expiration**. Aquí puede establecer la vigencia predeterminada del grupo y especificar la antelación con la que desea que las notificaciones de expiración primero y segundo vayan al propietario del grupo.
 
 La duración del grupo se especifica en días y se puede establecer en 180, 365 o en un valor personalizado especificado por el usuario. El valor personalizado tiene que ser de al menos 30 días.
 

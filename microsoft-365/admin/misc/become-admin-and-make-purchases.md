@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Obtenga información sobre cómo convertirse en Administrador y obtener una suscripción de Microsoft 365 para su organización. '
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627961"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399463"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Convertirse en Administrador y comprar 365 de Microsoft para su organización
 
@@ -75,10 +76,10 @@ La suscripción de Microsoft 365 a la que se actualiza su organización depende 
 |||
 |:-----|:-----|
 |**Cómo se inicia el asistente** <br/> |**Opciones de suscripción** <br/> |
-|Mediante el icono Administrador del iniciador de aplicaciones  <br/> |Microsoft 365 empresa Basic  <br/> |
+|Mediante el icono Administrador del iniciador de aplicaciones  <br/> |Microsoft 365 Empresa Básico  <br/> |
 |Eligiendo la **actualización a Microsoft 365 para empresas** en reuniones de Skype  <br/> |Microsoft 365 Business Basic o Microsoft 365 Business Standard  <br/> |
    
-## <a name="whats-next"></a>?Cu?l es el siguiente paso?
+## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
 Ahora que es el administrador, es posible que desee hacer lo siguiente:
   
@@ -87,7 +88,7 @@ Ahora que es el administrador, es posible que desee hacer lo siguiente:
 |Agregar o quitar licencias  <br/> |Puede [Agregar más licencias](../../commerce/licenses/buy-licenses.md) para los usuarios que no usan Microsoft 365 todavía, o [quitar las licencias de los usuarios](../manage/remove-licenses-from-users.md) que no quiere que usen la suscripción a Microsoft 365 para empresas de su organización.  <br/> |
 |Póngase en contacto con otros usuarios que ya se hayan registrado  <br/> |Póngase en contacto con los demás usuarios y hágales saber que está administrando su suscripción a Microsoft 365 y que se ha actualizado. [Siga estos pasos](../add-users/add-users.md) para ver una lista de **Usuarios activos** y sus direcciones de correo electrónico.  <br/> |
 |Empezar a usar Microsoft 365  <br/> |Visite el [Centro de aprendizaje de Office 365](https://support.office.com/learn/office365-for-business) y obtenga información sobre cómo iniciar sesión, consultar el correo electrónico, compartir documentos, etc. Usted y sus usuarios pueden usar este sitio para empezar a trabajar con Microsoft 365.  <br/> |
-|Administrar su suscripción a Microsoft 365  <br/> |Visite el [centro de ayuda para administradores de 365 de Microsoft](../admin-home.md) y obtenga información sobre tareas administrativas comunes, como agregar y quitar usuarios, restablecer contraseñas y configurar dispositivos móviles.  <br/> |
+|Administrar la suscripción a Microsoft 365  <br/> |Visite el [centro de ayuda para administradores de 365 de Microsoft](../admin-home.md) y obtenga información sobre tareas administrativas comunes, como agregar y quitar usuarios, restablecer contraseñas y configurar dispositivos móviles.  <br/> |
 
 ## <a name="still-need-help"></a>¿Sigue necesitando ayuda?
 

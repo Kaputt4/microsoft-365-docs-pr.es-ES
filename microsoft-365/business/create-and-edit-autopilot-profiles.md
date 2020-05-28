@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Aprenda a crear un perfil de AutoPilot y a aplicarlo a un dispositivo, así como editar o eliminar un perfil o quitar un perfil de un dispositivo.
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627382"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400982"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de Autopilot
 
@@ -41,7 +42,7 @@ Un perfil se aplica a un dispositivo o a un grupo de dispositivos.
   
 1. En el centro de administración de Microsoft 365, elija **dispositivos** \> **AutoPilot**.
   
-2. En la **Página AutoPilot** , elija la **Profiles** pestaña \> perfiles **crear perfil**.
+2. En la página **AutoPilot** , elija la pestaña **perfiles** \> **crear perfil**.
     
 3. En la página **crear perfil** , escriba un nombre para el perfil que le ayude a identificarlo, por ejemplo marketing. Active la configuración que desee y, a continuación, elija **Guardar**. Para obtener más información acerca de la configuración de perfiles de AutoPilot, consulte [acerca de la configuración de perfiles de AutoPilot](autopilot-profile-settings.md).
     
@@ -53,7 +54,7 @@ Después de crear un perfil, puede aplicarlo a un dispositivo o a un grupo de di
   
 1. En la página **Preparar Windows**, elija la pestaña **Dispositivos**. 
     
-2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija un perfil de la lista \> desplegable **perfil asignado** para **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija un perfil de la lista desplegable **perfil asignado** para \> **Guardar**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 1. En la página **Preparar Windows**, elija la pestaña **Perfiles**. 
     
-2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **perfil** , actualice cualquiera de las \> opciones de configuración disponibles **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **perfil** , actualice cualquiera de las opciones de configuración disponibles \> **Guardar**.
     
     Si hace esto antes de que un usuario conecte el dispositivo a Internet, el perfil se aplica en el proceso de instalación.
     
@@ -81,5 +82,5 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 1. En la página **Preparar Windows**, elija la pestaña **Dispositivos**. 
     
-2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija **ninguno** en la lista \> desplegable **perfil asignado** para **Guardar**.
+2. Active la casilla de verificación situada junto al nombre del dispositivo y, en el panel **dispositivo** , elija **ninguno** en la lista desplegable **perfil asignado** para \> **Guardar**.
     

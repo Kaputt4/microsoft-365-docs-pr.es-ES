@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el centro de mensajes de Microsoft 365 y su rol en la administración de cambios.
-ms.openlocfilehash: 776cbaf3eb684cce41b818454c91cb7039696b88
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 509c379beffaa4be8bb9cfcd7277ef6beb147bf3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628129"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399709"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -35,19 +36,19 @@ Para abrir el centro de mensajes, primero asegúrese de que ha seleccionado la a
 
 ::: moniker range="o365-worldwide"
 
-- En el centro de administración, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">centro de mensajes</a>de **mantenimiento** > .
+- En el centro de administración, vaya al centro de mensajes de **mantenimiento** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya al **centro de mensajes**de **mantenimiento** > .
+- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya al centro de mensajes de **mantenimiento** > **Message center**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
  
-- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya al **centro de mensajes**de **mantenimiento** > .
+- En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya al centro de mensajes de **mantenimiento** > **Message center**.
 
 ::: moniker-end
 
@@ -61,7 +62,7 @@ También puede usar la [aplicación de administración de Microsoft 365](https:/
 |¿Quién puede ver las publicaciones en el centro de mensajes?  <br/> |La mayoría de los usuarios a los que se les ha asignado un rol de administrador en Microsoft 365 pueden ver las publicaciones del centro de mensajes. [Esta es una lista](#admin-roles-that-dont-have-access-to-the-message-center) de roles de administrador que no tienen acceso al centro de mensajes. También puede asignar el rol de lector del centro de mensajes a los usuarios que deben poder leer y compartir mensajes del centro de mensajes sin tener ningún otro privilegio de administración.<br/><br/> Además, puede asignar el rol de lector de privacidad del centro de mensajes a las personas que deben ver notificaciones sobre la seguridad y la información de privacidad relevantes para su organización. Consulte [acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información sobre lo que puede hacer cada rol de administrador. <br/><br/>La mayoría de las publicaciones del centro de mensajes se pueden compartir a través del correo electrónico con usuarios que no sean administradores y que puedan necesitar realizar acciones. Esta opción no está disponible para las publicaciones de privacidad de datos que el centro de mensajes de lector ve. <br/> |
 |¿Esta es la única manera en que Microsoft comunicará los cambios sobre Microsoft 365?  <br/> |No, hay muchas formas de comunicar los cambios en Microsoft 365. Centro de mensajes es la forma principal de comunicar los tiempos de los cambios individuales. Consulte [seguir en la parte superior de Microsoft 365 cambios](stay-on-top-of-updates.md) para obtener información sobre recursos adicionales.  <br/> |
 |¿Cómo puedo ver las entradas en mi idioma?  <br/> |Las publicaciones del centro de mensajes se escriben en inglés solo debido a la oportunidad de la información que estamos publicando, pero puede controlar si, de manera predeterminada, las entradas se muestran en inglés o si se convierten automáticamente a su idioma preferido. Y, independientemente de la vista predeterminada que elija, puede seleccionar el equipo: traducir publicaciones a cualquier idioma admitido. Consulte [traducción de idiomas para las publicaciones del centro de mensajes](language-translation-for-message-center-posts.md) para obtener más información.  <br/> |
-|¿Puedo obtener una vista previa de los cambios o las características antes de que se impaguen a mi organización?  <br/> |En. Se puede obtener una vista previa de algunos cambios y nuevas características al optar al programa de lanzamiento de destino. Para participar, en el centro de administración, vaya a **configuración** > de**preferencias de versión**del**perfil** > de la organización. (En el nuevo centro de administración, es posible que deba seleccionar **Mostrar todo** en la parte inferior del panel de navegación izquierdo para ver la **configuración**). Puede elegir una versión dirigida para toda la organización o solo para los usuarios seleccionados. Consulte [opciones estándar o de versión dirigida en Microsoft 365](release-options-in-office-365.md) para obtener más información acerca del programa.  <br/> |
+|¿Puedo obtener una vista previa de los cambios o las características antes de que se impaguen a mi organización?  <br/> |En. Se puede obtener una vista previa de algunos cambios y nuevas características al optar al programa de lanzamiento de destino. Para participar, en el centro de administración, vaya a **configuración**de preferencias de versión del perfil de la  >  **organización**  >  **Release preferences**. (En el nuevo centro de administración, es posible que deba seleccionar **Mostrar todo** en la parte inferior del panel de navegación izquierdo para ver la **configuración**). Puede elegir una versión dirigida para toda la organización o solo para los usuarios seleccionados. Consulte [opciones estándar o de versión dirigida en Microsoft 365](release-options-in-office-365.md) para obtener más información acerca del programa.  <br/> |
 |¿Puedo averiguar la fecha exacta en la que estará disponible un cambio para mi organización?  <br/> |Por desgracia, no podemos decirle la fecha exacta en la que se realizará un cambio en su organización. En nuestro post del centro de mensajes, proporcionaremos la mayor cantidad de información posible en el momento de la publicación, según nuestro nivel de confianza. Somos conscientes de que queremos ser más específicos en el momento de las versiones y estamos trabajando en mejoras para obtener un mayor nivel de detalle.  <br/> |
 |¿Estos mensajes son específicos de mi organización?  <br/> |Haremos todo lo mejor para asegurarse de que solo vea las publicaciones del centro de mensajes que afectan a su organización. El plan de desarrollo de Microsoft 365 incluye todas las características en las que estamos trabajando y implementando actualmente, pero no todas estas características se aplican a todas las organizaciones. Por ejemplo, si una característica se está implementando solo en instituciones educativas, nos centraremos en el lanzamiento del centro de mensajes solo para las organizaciones.  <br/> |
 |¿Puedo obtener las publicaciones del centro de mensajes de correo electrónico en su lugar?  <br/> |Afirma! Puede seleccionar que se le envíe un resumen semanal por correo electrónico y hasta dos direcciones de correo electrónico. Si necesita que el Resumen vaya a más de dos personas más, puede enviar a un grupo de Microsoft 365 o a una lista de distribución. El Resumen semanal por correo electrónico está activado de forma predeterminada. Si no obtiene los resúmenes semanales, Compruebe la carpeta de correo no deseado. Consulte la sección [preferencias](#preferences) de este artículo para obtener más información sobre cómo configurar el Resumen semanal.  <br/> |

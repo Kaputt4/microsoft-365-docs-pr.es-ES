@@ -16,17 +16,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Obtenga información sobre cómo instalar automáticamente las aplicaciones de Office de 32 bits en equipos con Windows 10 y mantenerlas actualizadas.
-ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633107"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401330"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Preparar la implementación del cliente de Office con Microsoft 365 para empresas
 
@@ -60,10 +61,10 @@ En la tabla siguiente se muestra la acción que los usuarios finales o administr
   
 |**Estado inicial de instalación de Office**|**Acción que se llevará a cabo antes de la instalación de Microsoft 365 para empresas**|**Estado final**|
 |:-----|:-----|:-----|
-|Ningún conjunto de aplicaciones de Office instalado  <br/> |None  <br/> |Office 2016 32-bit se instala mediante hacer clic y ejecutar  <br/> |
-|Versión existente de Hacer clic y ejecutar de 32 bits de Office (2016 o versiones anteriores) y ninguna aplicación independiente  <br/> |None  <br/> |Actualizado a la versión más reciente de 32 bits de Hacer clic y ejecutar de Office 2016, según sea necesario **\*** <br/> |
-|La versión existente de hacer clic y ejecutar de 32 bits de Office y de aplicaciones independientes de Office de hacer clic y ejecutar de 32 bits o de 64 (por ejemplo, Visio, Project)  <br/> |None  <br/> |Las aplicaciones independientes no se ven afectadas. El conjunto de aplicaciones se actualiza a la versión de Hacer clic y ejecutar de 32 bits de Office 2016.  <br/> |
-|Versión existente de Hacer clic y ejecutar de 32 bits de Office y cualquier aplicación independiente MSI de Office de 32 o 64 bits (excepto 2016)  <br/> |None  <br/> |Las aplicaciones independientes no se ven afectadas. El conjunto de aplicaciones se actualiza a la versión de Hacer clic y ejecutar de 32 bits de Office 2016.  <br/> ||||
+|Ningún conjunto de aplicaciones de Office instalado  <br/> |Ninguno  <br/> |Office 2016 32-bit se instala mediante hacer clic y ejecutar  <br/> |
+|Versión existente de Hacer clic y ejecutar de 32 bits de Office (2016 o versiones anteriores) y ninguna aplicación independiente  <br/> |Ninguno  <br/> |Actualizado a la versión más reciente de 32 bits de Hacer clic y ejecutar de Office 2016, según sea necesario **\*** <br/> |
+|La versión existente de hacer clic y ejecutar de 32 bits de Office y de aplicaciones independientes de Office de hacer clic y ejecutar de 32 bits o de 64 (por ejemplo, Visio, Project)  <br/> |Ninguno  <br/> |Las aplicaciones independientes no se ven afectadas. El conjunto de aplicaciones se actualiza a la versión de Hacer clic y ejecutar de 32 bits de Office 2016.  <br/> |
+|Versión existente de Hacer clic y ejecutar de 32 bits de Office y cualquier aplicación independiente MSI de Office de 32 o 64 bits (excepto 2016)  <br/> |Ninguno  <br/> |Las aplicaciones independientes no se ven afectadas. El conjunto de aplicaciones se actualiza a la versión de Hacer clic y ejecutar de 32 bits de Office 2016.  <br/> ||||
 |Cualquier versión de Hacer clic y ejecutar de 64 bits de Office  <br/> |Desinstalar las aplicaciones de Office de 64 bits, si es correcto reemplazarlas por aplicaciones de Office de 32 bits  <br/> |Si se eliminan las aplicaciones de Office de 64 bits, se instalará la versión de Hacer clic y ejecutar de 32 bits de Office 2016.  <br/> |
 |Una instalación de MSI existente de Office 2016 con o sin aplicaciones independientes  <br/> |Desinstalar MSI Office 2016.  <br/> |La versión de Hacer clic y ejecutar de 32 bits de Office 2016 está instalada. Sin cambios en las aplicaciones independientes  <br/> |
 |Instalación de MSI existente de Office 2013 (o una versión anterior) o aplicaciones independientes de Office  <br/> |Ninguno  <br/> |La versión de Hacer clic y ejecutar de 32 bits de Office 2016 con la instalación de MSI Office ya existente (y aplicaciones independientes) existe en paralelo  <br/> |

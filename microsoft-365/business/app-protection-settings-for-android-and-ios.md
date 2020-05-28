@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627442"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401062"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
-![Pancarta que apunta a https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
+![Pancarta que apunta a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. En el panel de navegación izquierdo, elija **Agregar** **directivas** \> de **dispositivos** \> .
+2. En el panel de navegación izquierdo **Devices** , elija \> **Policies** \> **Agregar**directivas de dispositivos.
   
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627442"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Después, decida **a qué usuarios se aplica esta configuración**. Si no desea usar el grupo de seguridad predeterminado **todos los usuarios** , elija **cambiar**, seleccione los grupos de seguridad que \> se **seleccionan**.
+6. Después, decida **a qué usuarios se aplica esta configuración**. Si no desea usar el grupo de seguridad predeterminado **todos los usuarios** , elija **cambiar**, seleccione los grupos de seguridad que se \> **seleccionan**.
     
 7. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos. 
     

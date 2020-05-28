@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Obtenga información sobre el nuevo centro de administración de Microsoft 365.
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952644"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399487"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Acerca del nuevo centro de administración de Microsoft 365
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952644"
 
 El nuevo centro de administración de Microsoft 365 se ha creado para que Teams de TI sea una forma simplificada de administrar los servicios de Microsoft 365. El centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficiencia para las tareas cotidianas y proporciona información útil que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
 
-El centro de administración de 365 de Microsoft es el punto de entrada común para todos los administradores de Microsoft 365 y [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)al que se puede tener acceso en. Las áreas de trabajo especializadas, como la administración de seguridad o de dispositivos, permiten un control más granular. Para obtener más información acerca de cómo los centros de administración trabajarán juntos, vea [¿Qué ocurre con los tipos específicos de roles de ti y otras áreas de trabajo como la seguridad, la administración de dispositivos o Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) más adelante en este artículo.
+El centro de administración de 365 de Microsoft es el punto de entrada común para todos los administradores de Microsoft 365 y al que se puede tener acceso en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Las áreas de trabajo especializadas, como la administración de seguridad o de dispositivos, permiten un control más granular. Para obtener más información acerca de cómo los centros de administración trabajarán juntos, vea [¿Qué ocurre con los tipos específicos de roles de ti y otras áreas de trabajo como la seguridad, la administración de dispositivos o Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) más adelante en este artículo.
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ El centro de administración de 365 de Microsoft es el punto de entrada común p
 
 El nuevo centro de administración de Microsoft 365, que actualmente se encuentra en versión preliminar, está diseñado para que Teams de TI sea una forma simplificada de administrar los servicios de Microsoft 365. El centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficiencia para las tareas cotidianas y proporciona información útil que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
 
-El centro de administración de 365 de Microsoft es el punto de entrada común para todos los administradores de Microsoft 365 y se puede tener [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)acceso a él iniciando sesión en. Además, las áreas de trabajo especializadas, como Azure Active Directory y Exchange, permiten un control más granular. Puede tener acceso a las áreas de trabajo de especialistas desde el panel de navegación del centro de administración de Microsoft 365.
+El centro de administración de 365 de Microsoft es el punto de entrada común para todos los administradores de Microsoft 365 y se puede tener acceso a él iniciando sesión en [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Además, las áreas de trabajo especializadas, como Azure Active Directory y Exchange, permiten un control más granular. Puede tener acceso a las áreas de trabajo de especialistas desde el panel de navegación del centro de administración de Microsoft 365.
 
 ::: moniker-end
 
@@ -55,9 +56,9 @@ Nos encantaría participar en el nuevo centro de administración de 365 de Micro
 
 ### <a name="turn-on-targeted-release"></a>Activar la versión dirigida
 
-1. Inicie sesión en [admin.Microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **configuración** \> del perfil de la **organización**.
+1. Inicie sesión en [admin.Microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **configuración** del perfil de la \> **organización**.
 
-1. Inicie sesión en [portal.Partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), vaya al panel de navegación y seleccione **configuración** \> del perfil de la **organización**.
+1. Inicie sesión en [portal.Partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), vaya al panel de navegación y seleccione **configuración** del perfil de la \> **organización**.
 
 2. Vaya a la tarjeta **preferencias de versión** y, a continuación, seleccione **Editar**. 
     
@@ -118,13 +119,13 @@ También puede enviar comentarios desde fuera del centro de administración en n
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>¿Qué ocurre con los tipos específicos de roles de ti y otras áreas de trabajo como la seguridad, la administración de dispositivos o Exchange?
 
-El centro de administración de 365 de Microsoft es el punto de entrada común para todos los equipos y roles que administran Microsoft 365. La experiencia, la información y los controles están adaptados y personalizables para cada administrador y rol. Además, los espacios de trabajo especializados permiten un control detallado y granular. Estas áreas de trabajo especializadas incluyen SharePoint, &amp; Teams Skype, Exchange, Security, Compliance, administración de dispositivos y Azure Active Directory. Puede encontrar las áreas de trabajo de especialistas en el panel de navegación del centro de administración de [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)Microsoft 365 en.
+El centro de administración de 365 de Microsoft es el punto de entrada común para todos los equipos y roles que administran Microsoft 365. La experiencia, la información y los controles están adaptados y personalizables para cada administrador y rol. Además, los espacios de trabajo especializados permiten un control detallado y granular. Estas áreas de trabajo especializadas incluyen SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, administración de dispositivos y Azure Active Directory. Puede encontrar las áreas de trabajo de especialistas en el panel de navegación del centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
   
 La actualización de todos los centros de administración para que tengan una experiencia coherente tendrá tiempo, pero puede obtener más información sobre los centros de administración que ya han empezado a Makeover:
   
 - [Introducción al nuevo centro de administración de SharePoint](https://go.microsoft.com/fwlink/?linkid=2024186)
     
-- [Administrar Teams durante la transición al nuevo centro de &amp; administración de Skype empresarial para Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [Administrar Teams durante la transición al nuevo &amp; centro de administración de Skype empresarial para Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=2024308)
     
 - [Información general de la administración de dispositivos de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
     

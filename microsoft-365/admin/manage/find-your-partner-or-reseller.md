@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Obtenga información acerca de cómo encontrar un nuevo Partner de 365 de Microsoft o obtenga información de contacto de un socio con el que trabajó en el pasado. '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628189"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399769"
 ---
 # <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 
@@ -50,7 +51,7 @@ Si está listo para comprar o renovar Microsoft 365 a través de licencias por v
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtener información del asociado en el centro de administración
 
-1. En el centro de administración, vaya a la página **configuración** > de<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relaciones con socios</a> .
+1. En el centro de administración, vaya a la página **configuración**de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relaciones con socios</a> .
   
 2. Si tiene un partner, el nombre y la relación del asociado con su organización se mostrarán aquí. Para ver la información de contacto del asociado (número de teléfono y dirección de correo electrónico), seleccione el nombre del socio.
     

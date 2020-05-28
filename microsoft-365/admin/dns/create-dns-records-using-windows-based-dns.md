@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en DNS basado en Windows para Microsoft.
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048848"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400249"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
@@ -38,21 +39,21 @@ Para empezar, necesita [encontrar los registros DNS en DNS basado en Windows](#f
 Problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [solucionar problemas después de cambiar el nombre de dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Buscar los registros DNS en DNS basado en Windows
-<a name="BKMK_find_your_dns_1"> </a> Vaya a la página que contiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Inicio** > de la**ejecución**. Si está trabajando en Windows Server 2012, presione las teclas Windows y **r**. Escriba **dnsmgmnt. msc**y, a continuación, seleccione **Aceptar**. En el administrador de DNS, expanda ** \<nombres\> \> de servidor DNS zonas de búsqueda directa  **. Seleccione su dominio. Ya está listo para crear los registros DNS.
+<a name="BKMK_find_your_dns_1"> </a> Vaya a la página que contiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Inicio**de la  >  **ejecución**. Si está trabajando en Windows Server 2012, presione las teclas Windows y **r**. Escriba **dnsmgmnt. msc**y, a continuación, seleccione **Aceptar**. En el administrador de DNS, expanda ** \<DNS server name\> \> zonas de búsqueda directa  **. Seleccione su dominio. Ya está listo para crear los registros DNS.
    
 ## <a name="add-mx-record"></a>Agregar registro MX
 <a name="BKMK_add_MX"> </a>
 
 Agregar un registro MX para que el correo electrónico del dominio llegue a Microsoft.
-- El registro MX que agregará incluye un valor ( **Dirección de destino**) que tiene un aspecto como el siguiente: \<MX token\>.mail.protection.outlook.com, donde \<MX token\> es un valor como MSxxxxxxx. 
+- El registro MX que agregará incluye un valor (el valor de **dirección de destino** ) con un aspecto similar a este: \<MX token\> . mail.Protection.Outlook.com, donde \<MX token\> es un valor como MSxxxxxxx. 
 - En la fila MX de la sección Exchange online de la página agregar registros DNS de Microsoft, copie el valor que aparece en puntos a la dirección. Este valor se usará en el registro que se está creando en esta tarea. 
-- En la página del administrador de DNS del dominio, vaya a **Action** > **interchanger mail (mx)**. Para buscar esta página para el dominio, vea [Buscar los registros DNS en DNS basado en Windows](#find-your-dns-records-in-windows-based-dns).  
+- En la página del administrador de DNS del dominio, vaya a **Action**  >  **interchanger mail (mx)**. Para buscar esta página para el dominio, vea [Buscar los registros DNS en DNS basado en Windows](#find-your-dns-records-in-windows-based-dns).  
 - En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes: 
     - Nombre de host: 
     - @Address: pegue el valor de dirección de destino que acaba de copiar desde Microsoft aquí.  
     - Distinguir 
 - Seleccione **Guardar cambios**.
-- Elimine los registros MX obsoletos. Si tiene registros MX antiguos para este dominio que redirigen el correo electrónico a otro lugar, active la casilla situada junto a cada registro antiguo y, a continuación, seleccione **eliminar** > **Aceptar**. 
+- Elimine los registros MX obsoletos. Si tiene registros MX antiguos para este dominio que redirigen el correo electrónico a otro lugar, active la casilla situada junto a cada registro antiguo y, a continuación, seleccione **eliminar**  >  **Aceptar**. 
    
 ## <a name="add-cname-records"></a>Agregar registros CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Agregue los registros CNAME necesarios para Microsoft. Si los registros CNAME ad
 > [!IMPORTANT]
 > Si tiene administración de dispositivos móviles (MDM) para Microsoft, debe crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. (Si no tiene MDM, puede omitir este paso). 
 
-- En la página del administrador de DNS del dominio, vaya a **acción** > **CNAME (CNAME)**.
+- En la página del administrador de DNS del dominio, vaya a **acción**  >  **CNAME (CNAME)**.
 - En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes:  
     - Nombre de host: detección automática
     - Tipo: 
@@ -106,7 +107,7 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
     - Dirección: enterpriseenrollment-s.manage.microsoft.com
 - Seleccione **ACEPTAR**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a evitar el correo no deseado
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -183,14 +184,14 @@ Agregue un registro TXT.
 - Nombre de host: @
 - Tipo: TXT
 - Address: pegue el valor de destino o dirección de destino que acaba de copiar desde Microsoft aquí.  
-- Seleccione **Aceptar** > **listo**.
+- Seleccione **Aceptar**  >  **listo**.
 
 Compruebe su dominio en Microsoft.  
 > [!IMPORTANT]
 > Espere unos 15 minutos antes de hacerlo, de modo que el registro que acaba de crear pueda actualizarse a través de Internet.       
 
 - Vuelva a Microsoft y siga los pasos que se indican a continuación para solicitar una comprobación. La comprobación busca el registro TXT que agregó en el paso anterior. Cuando encuentra el registro correcto TXT, el dominio se comprueba.  
-1. En el centro de administración, vaya a la página de **configuración** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
+1. En el centro de administración, vaya a la página de **configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a> .
 2. En la página **dominios** , en la columna **acción** del dominio que está comprobando, seleccione **Iniciar configuración**. 
 3. En la página **confirmar que es el propietario de su dominio** , seleccione **listo, comprobar ahora**y, a continuación, en el cuadro de diálogo de confirmación, seleccione **Finalizar**. 
    

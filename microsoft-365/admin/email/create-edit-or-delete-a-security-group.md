@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Obtenga información sobre cómo crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140446"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400093"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el centro de administración de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [acerca del nuevo centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ### <a name="add-a-security-group"></a>Agregar un grupo de seguridad
 
-1. En el centro de administración de Microsoft 365, vaya **a la** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración de Microsoft 365, vaya **a la**página grupos de grupos  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. En la página **grupos** , seleccione **Agregar un grupo**.
     
@@ -97,7 +98,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -107,7 +108,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -119,7 +120,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a **la** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
   
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -132,7 +133,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
 
 ### <a name="delete-a-security-group"></a>Eliminar un grupo de seguridad
 
-1. En el centro de administración, vaya a **la** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> página grupos de grupos.
+1. En el centro de administración, vaya a **la**página grupos de grupos  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .
     
 2. En la página **grupos** , seleccione el nombre del grupo. 
     
@@ -142,7 +143,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupos de Exchange Online y SharePoint Online
 
-Si desea crear grupos de usuarios para que pueda enviarles un correo electrónico a todos al mismo tiempo, puede hacerlo en el centro de administración de Exchange visitando los **grupos**de **destinatarios** \> de **Administración** \> de **Exchange** \> . A continuación, **New**![seleccione Agregar](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)nuevo y seleccione el tipo de grupo que desea crear: 
+Si desea crear grupos de usuarios para que pueda enviarles un correo electrónico a todos al mismo tiempo, puede hacerlo en el centro de administración de Exchange visitando los grupos de **Admin** \> **Exchange** \> **destinatarios** de administración de Exchange \> **Groups**. A continuación, seleccione Agregar **nuevo** ![ ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) y seleccione el tipo de grupo que desea crear: 
   
 - **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina *grupo de distribución habilitado para correo*, o bien, *lista de distribución*. Para más información, vea [Administrar grupos de distribución](https://technet.microsoft.com/library/bb124513.aspx).
     

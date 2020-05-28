@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Obtenga información sobre cómo obtener acceso a eNom y crear DNS a través de la Página Google Domains.
-ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629136"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400261"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Crear registros DNS cuando Google (eNom) administra su dominio
 
@@ -89,11 +90,11 @@ Puede tener acceso a eNom y crear DNS a través de la Página Google **Domains**
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. Use aquí su **destino específico o** el valor de dirección de destino de la tabla. 
+    > This is an example. Utilice aquí su valor de **Dirección de destino**, desde la tabla. 
   
     [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)
   
-12. Seleccione **Guardar**.
+12. Haga clic en **Guardar**.
     
     ![Google-Apps-eNom-configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   

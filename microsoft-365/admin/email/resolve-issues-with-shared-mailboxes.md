@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Pruebe estas soluciones si experimenta problemas con los buzones compartidos.
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628752"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400021"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Resolver problemas con los buzones compartidos
 
@@ -34,7 +35,7 @@ Si ve mensajes de error al crear o usar un buzón compartido, Pruebe estas soluc
 ## <a name="error-when-creating-shared-mailboxes"></a>Error al crear buzones compartidos
 <a name="bkmk_Fix"> </a>
 
-Si ve el mensaje de error, la dirección del proxy **"SMTP: <nombre\>del buzón compartido" ya está en uso por las direcciones de proxy o\<legacyExchangeDN de "nombre>". Elija otra dirección de proxy**, significa que está intentando dar al buzón compartido un nombre que ya está en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Puede realizar esto de dos maneras:
+Si ve el mensaje de error, la dirección del proxy **"SMTP: <nombre del buzón compartido \> " ya está siendo usada por las direcciones de proxy o legacyExchangeDN de " \<name> ". Elija otra dirección de proxy**, significa que está intentando dar al buzón compartido un nombre que ya está en uso. Por ejemplo, supongamos que desea los buzones compartidos denominados info@domain1 y info@domain2. Puede realizar esto de dos maneras:
 
   - Use Windows PowerShell. Vea esta entrada de blog para obtener instrucciones: [crear buzones compartidos con el mismo alias en dominios diferentes](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

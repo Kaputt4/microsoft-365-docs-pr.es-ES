@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a realizar un seguimiento de los problemas que se produzcan al configurar un dominio personalizado asegurándose de que los registros DNS están configurados correctamente.
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053731"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399949"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053731"
 Conseguir que su dominio esté configurado para trabajar con Microsoft 365 puede ser un reto. El sistema DNS puede ser un poco enrevesado y la configuración DNS de su dominio afecta a importantes actividades empresariales, como el correo electrónico.
 
 > [!NOTE]
-> Puede comprobar si hay problemas en el dominio comprobando su estado. Vaya a **configuración** > de**dominios** y vea las notificaciones en la columna **Estado** . Si ve un problema, seleccione más acciones (tres puntos) y, a continuación, elija **comprobar estado**. El panel que se abre describirá los problemas que se produzcan en su dominio.
+> Puede comprobar si hay problemas en el dominio comprobando su estado. Vaya a **configuración**  >  de**dominios** y vea las notificaciones en la columna **Estado** . Si ve un problema, seleccione más acciones (tres puntos) y, a continuación, elija **comprobar estado**. El panel que se abre describirá los problemas que se produzcan en su dominio.
   
 ## <a name="whats-going-on"></a>¿Qué sucede?
 

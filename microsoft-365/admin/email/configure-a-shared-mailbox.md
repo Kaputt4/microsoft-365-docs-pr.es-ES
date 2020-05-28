@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Una vez que haya creado un buzón compartido, querrá configurar algunas opciones para sus usuarios, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre o los miembros del buzón.
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629052"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400153"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurar un buzón compartido
 
@@ -55,7 +56,7 @@ Una vez que haya [creado un buzón compartido](create-a-shared-mailbox.md), quer
 
 3. Escriba un nuevo nombre o agregue otro alias. Si desea cambiar la dirección de correo electrónico principal, el buzón debe tener más de un alias de correo electrónico.
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Reenviar mensajes de correo electrónico que se envían a un buzón compartido
 
@@ -79,11 +80,11 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione \> **edición**de **reenvío de correo electrónico** .
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione Edición de **reenvío de correo electrónico** \> **Edit**.
     
 3. Establezca el botón de alternancia en **activado**y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe [crear un grupo de distribución](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) para las direcciones y, a continuación, escribir el nombre del grupo en este cuadro.
     
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Enviar respuestas automáticas desde un buzón compartido
 
@@ -105,7 +106,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione la \> **edición**de **respuestas automáticas** .
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione la edición de **respuestas automáticas** \> **Edit**.
     
 3. Establezca el botón de alternancia en **Activado** y elija si desea enviar la respuesta a las personas de su organización o de fuera de su organización.
 
@@ -113,13 +114,13 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 5. Si *también* quiere enviar una respuesta a personas de fuera de su organización, active la casilla de verificación, a la que desea obtener la respuesta y escriba el texto. No hay forma de enviar solo a las personas de fuera de la organización pero no a las personas de dentro de la organización.
 
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Permitir que cualquier usuario vea el correo enviado (las respuestas)
 
 De forma predeterminada, los mensajes enviados al buzón compartido no se guardan en la carpeta Elementos enviados del buzón compartido. En su lugar, se guardan en la carpeta Elementos enviados de la persona que envió el mensaje.
 
-Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, modifique la configuración del buzón compartido y seleccione \> **Editar** **elementos enviados** .
+Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, modifique la configuración del buzón compartido y seleccione **Editar elementos enviados** \> **Edit**.
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Elegir las aplicaciones que un buzón compartido puede usar para obtener acceso al correo electrónico de Microsoft
@@ -142,11 +143,11 @@ Si desea permitir que todos vean el correo electrónico enviado, en el centro de
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione \> **Editar** **aplicaciones de correo electrónico** .
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione Editar **aplicaciones de correo electrónico** \> **Edit**.
 
 3. Establezca el botón de alternancia en **activado** para todas las aplicaciones que desea que los miembros puedan usar para acceder al buzón compartido. Establezca el botón de alternancia en **desactivado** para todas las aplicaciones que no quiera que usen. 
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Poner un buzón compartido en retención por juicio
@@ -171,13 +172,13 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **edición**de **retención** \> por juicio.
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione Edición de **retención por juicio** \> **Edit**.
 
 3. Establezca el botón de alternancia en **activado**. 
 
 4. De manera opcional, escriba una duración, una nota de s sobre la suspensión y una dirección URL con más información.  
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 
 ## <a name="add-or-remove-members"></a>Agregar o quitar miembros
@@ -200,7 +201,7 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar** **miembros** \> .
+2. Seleccione el buzón compartido que desea editar y, a continuación **Members** , seleccione \> **Editar**miembros.
 
 3. Realice una de las acciones siguientes:
    - Para agregar miembros, seleccione **Agregar miembros**, busque o seleccione un miembro para agregarlo y, a continuación, seleccione **Guardar**.
@@ -260,11 +261,11 @@ Si elige no mostrar el buzón compartido en la lista global de direcciones, el b
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione Mostrar en la \> **edición** **de la lista global de direcciones** .
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Mostrar en la edición de la lista global de direcciones** \> **Edit**.
 
 3. Establezca el botón de alternancia en **activado** o **desactivado**. 
 
-4. Seleccione **Guardar**.
+4. Haga clic en **Guardar**.
 
 > [!NOTE]
 > Si se oculta un buzón compartido de la lista de direcciones, es imposible que los nuevos miembros del buzón compartido agreguen el buzón oculto a su perfil de Outlook hasta que se vuelva a mostrar el buzón compartido en la lista de direcciones. 

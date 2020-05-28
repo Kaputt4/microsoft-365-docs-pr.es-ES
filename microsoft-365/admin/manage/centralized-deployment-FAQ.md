@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada en el centro de administración de Microsoft 365.
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011740"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399829"
 ---
 # <a name="centralized-deployment-faq"></a>Preguntas frecuentes sobre implementación centralizada
 
@@ -35,7 +36,7 @@ La implementación centralizada de complementos requiere que los usuarios usen l
  
 La implementación centralizada solo se admite para los buzones de correo en línea. No admite la implementación en buzones de Exchange locales.
  
-Puede usar el  [Comprobador de compatibilidad de implementación centralizada de Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)para determinar si la suscripción es apta. 
+Puede usar el [Comprobador de compatibilidad de implementación centralizada de Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   para determinar si la suscripción es apta. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>¿Cómo se dirigen las asignaciones de usuario de complementos con una implementación centralizada?  
 
@@ -59,7 +60,7 @@ Para obtener más información acerca de la administración del acceso de usuari
 
 Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los tres métodos de implementación para los complementos de Outlook durante la implementación de complementos:
 
-**Fija (predeterminada)**   el complemento se implementa automáticamente en los usuarios asignados y no puede quitarlos.  
+**Fijo (predeterminado)**   El complemento se implementa automáticamente en los usuarios asignados y no puede quitarlos.  
  
 **Disponible** Los usuarios pueden instalar el complemento en Outlook eligiendo Inicio > obtener más complementos > administración administrada por el administrador.   
  
