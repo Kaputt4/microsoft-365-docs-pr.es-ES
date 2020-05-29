@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352257"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412859"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -113,7 +113,7 @@ Estas son algunas otras cosas que debe tener en cuenta al buscar ubicaciones en 
 
 - Si se configura una búsqueda para buscar ubicaciones en suspensión y, a continuación, cambiar una retención de eDiscovery en el caso (agregando o quitando una ubicación o cambiando una consulta de retención), la configuración de búsqueda se actualizará con esos cambios. Sin embargo, tiene que volver a ejecutar la búsqueda una vez cambiada la retención para actualizar los resultados de la búsqueda.
 
-- Si se colocan varias suspensiones de exhibición de documentos electrónicos en una sola ubicación en un caso de exhibición de documentos electrónicos y selecciona buscar ubicaciones en retención, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda, se buscará todo el contenido del buzón, no solo el contenido que coincida con el caso basado en consultas. 
+- Si se colocan varias suspensiones de exhibición de documentos electrónicos en una sola ubicación en un caso de exhibición de documentos electrónicos y selecciona buscar ubicaciones en retención, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda, se buscará todo el contenido del buzón, no solo el contenido que coincida con el caso basado en consultas.
     
 - Si una retención de exhibición de documentos electrónicos tiene un estado de **activación**, puede seguir buscando en las ubicaciones en espera mientras se activa la suspensión.
 
@@ -174,6 +174,26 @@ Para recopilar una lista de las direcciones URL de los sitios de OneDrive para l
 
 > [!IMPORTANT]
 > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión de exhibición de documentos electrónicos, la antigua y su UPN se cambian, debe actualizar la retención y tendrá que actualizar la retención y agregar la nueva dirección URL de OneDrive del usuario y quitar la antigua. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Quitar ubicaciones de contenido de una suspensión de eDiscovery
+
+Después de quitar un buzón, un sitio de SharePoint o una cuenta de OneDrive de una suspensión de exhibición de documentos electrónicos, se aplica una *suspensión de retraso* . Esto significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen de forma permanente (purga) de una ubicación de contenido. Esto proporciona a los administradores una oportunidad para buscar o recuperar contenido que se purgará después de que se quite una retención de eDiscovery. Los detalles sobre cómo funciona la retención por retraso para los buzones de correo y los sitios son distintos.
+
+- **Buzones de correo:** Una retención de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se ha quitado una retención de eDiscovery. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true**: 
+
+   - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la web) que se almacena en el buzón de correo de un usuario.
+
+   - **DelayReleaseHoldApplied:** Esta propiedad se aplica a contenido basado en la nube (generado por aplicaciones que no son de Outlook, como Microsoft Teams, Microsoft Forms y Microsoft Yammer) que se almacena en el buzón de un usuario. Los datos de nube generados por una aplicación de Microsoft se almacenan normalmente en una carpeta oculta en el buzón de un usuario.
+
+   Cuando se coloca una retención en el buzón de correo (cuando cualquiera de las propiedades anteriores se establece en **true**), el buzón sigue considerándose en espera durante una duración de retención ilimitada, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera expira y Microsoft 365 automáticamente intentará quitar la retención retrasada (estableciendo la propiedad DelayHoldApplied o DelayReleaseHoldApplied en **false**) para que se elimine la retención. Una vez que cualquiera de estas propiedades se establece en **false**, los elementos correspondientes marcados para la eliminación se purgan la próxima vez que el Asistente para carpetas administradas procesa el buzón de correo.
+
+   Para obtener más información, consulte [Gestionar buzón con una retención de retraso](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+
+- **Sitios de SharePoint y OneDrive:** Cualquier contenido de SharePoint o de OneDrive que se retiene en la biblioteca de conservación de documentos no se elimina durante el período de retención de 30 días después de que se quite un sitio de una suspensión de eDiscovery. Esto es similar a lo que sucede cuando se suelta un sitio desde una directiva de retención. Además, no puede eliminar manualmente este contenido en la biblioteca de conservación de la preservación durante el período de retención de un retraso de 30 días. 
+
+   Para obtener más información, consulte [liberar una directiva de retención](retention-policies.md#releasing-a-retention-policy).
+
+Una suspensión de retraso también se aplica a las ubicaciones de contenido en espera cuando se cierra un caso de eDiscovery principal porque las suspensiones se desactivan cuando se cierra un caso. Para obtener más información acerca de cómo cerrar un caso, vea [Cerrar, volver a abrir y eliminar un caso de exhibición de](close-reopen-delete-core-ediscovery-cases.md)documentos electrónicos principal.
 
 ## <a name="ediscovery-hold-limits"></a>límites de retención de eDiscovery
 

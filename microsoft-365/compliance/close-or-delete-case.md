@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre qué ocurre cuando se cierra o se elimina una investigación o un caso legal admitido por un caso avanzado de eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292416"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412789"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Cerrar o eliminar un caso de exhibición avanzada de documentos electrónicos
 
@@ -32,7 +32,7 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
 
 Esto es lo que sucede cuando cierra un caso de exhibición avanzada de documentos electrónicos:
 
-- Si el caso contiene ubicaciones de contenido en suspensión, dichas suspensiones se desactivarán. Esto puede dar lugar a que el usuario o un proceso automatizado eliminen o purguen permanentemente el contenido, como una directiva de eliminación.
+- Si el caso contiene ubicaciones de contenido en suspensión, dichas suspensiones se desactivarán. Una vez desactivada la retención, se aplica un período de gracia de 30 días (denominado *retención de retardo*) a las ubicaciones de contenido que se encontraban en suspensión. Esto ayuda a evitar que el contenido se elimine inmediatamente y le da a los administradores la oportunidad de buscar o recuperar contenido que se eliminará permanentemente después de que expire el período de retención de tiempo. Para obtener más información, vea [quitar ubicaciones de contenido de una suspensión de exhibición de](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)documentos electrónicos.
 
 - Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una retención por juicio, una suspensión de exhibición de documentos electrónicos principal o una retención de un caso de eDiscovery avanzado diferente), estas se conservarán.
 

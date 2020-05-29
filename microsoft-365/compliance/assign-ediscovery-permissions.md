@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374409"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411037"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -43,7 +43,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   Consulte la sección [More Information](#more-information) para ver los motivos por los que puede desear que los administradores de eDiscovery de su organización.
 
 > [!NOTE]
-> Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5 o Microsoft E5. Como alternativa, a los usuarios con una licencia E1 o E3 se les puede asignar una licencia de complemento E5. Los administradores, los responsables de cumplimiento normativo o el personal jurídico asignado a los casos como miembros y usan la exhibición avanzada de documentos electrónicos para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información acerca de las licencias, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/complianceSD).
+> Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5 o Microsoft 365 E5. Como alternativa, a los usuarios con una licencia de Office 365 E1 o Office 365 o Microsoft 365 E3 se les puede asignar una licencia de Microsoft 365 E5 Compliance o Microsoft 365 eDiscovery y una licencia del complemento de auditoría. Los administradores, los responsables de cumplimiento normativo o el personal jurídico asignado a los casos como miembros y usan la exhibición avanzada de documentos electrónicos para recopilar, ver y analizar datos no necesitan una licencia E5. Para obtener más información sobre las licencias de eDiscovery avanzadas, vea Introducción [a la exhibición avanzada de](get-started-with-advanced-ediscovery.md)documentos electrónicos.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos básicos de eDiscovery. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208422"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412799"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -32,7 +32,7 @@ En este artículo se describe cómo cerrar, volver a abrir y eliminar los casos 
 
 Cuando se completa el caso legal o la investigación admitidos por un caso de exhibición de documentos electrónicos principal, puede cerrar el caso. Esto es lo que sucede cuando se cierra un caso:
   
-- Si el caso contiene alguna ubicación de contenido en la suspensión de exhibición de documentos electrónicos, dichas suspensiones se desactivarán. Esto puede dar lugar a que el usuario o un proceso automatizado eliminen o purguen permanentemente el contenido, como una directiva de eliminación.
+- Si el caso contiene alguna ubicación de contenido en la suspensión de exhibición de documentos electrónicos, dichas suspensiones se desactivarán. Una vez desactivada la retención, se aplica un período de gracia de 30 días (denominado *retención de retardo*) a las ubicaciones de contenido que se encontraban en suspensión. Esto ayuda a evitar que el contenido se elimine inmediatamente y proporciona a los administradores la oportunidad de buscar y restaurar el contenido antes de que se elimine de forma permanente después de que expire el período de retención de tiempo. Para obtener más información, vea [quitar ubicaciones de contenido de una suspensión de exhibición de](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)documentos electrónicos.
 
 - Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si se colocan otras suspensiones en una ubicación de contenido (como una retención por juicio, una directiva de retención o una retención de un caso de exhibición de documentos electrónicos principal diferente), estas se conservarán.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento para un mayor análisis con la herramienta eDiscovery avanzado.
-ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943299"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412849"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para eDiscovery avanzado (clásico)
 
@@ -61,7 +61,7 @@ Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibic
 
 Puede preparar los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos. Al preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los datos se cargan y se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft. En este punto, la funcionalidad OCR extrae el texto de las imágenes de los resultados de búsqueda. En el [paso 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), este texto y los demás datos de los resultados de la búsqueda se cargan en el caso de la exhibición avanzada de documentos electrónicos.
   
-1. En el centro de seguridad & cumplimiento, **haga clic en** \> eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
+1. En el centro de seguridad & cumplimiento, **haga clic en eDiscovery** \> **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos. 
     
@@ -94,11 +94,11 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
 > [!NOTE]
 > El tiempo que tardan los datos del centro de seguridad & cumplimiento disponible para agregar a un caso en eDiscovery avanzado varía en función del tamaño de los resultados de la búsqueda de exhibición de documentos electrónicos. 
   
-1. En el centro de seguridad & cumplimiento, **haga clic en** \> eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
+1. En el centro de seguridad & cumplimiento, **haga clic en eDiscovery** \> **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea cargar datos en la exhibición avanzada de documentos electrónicos. 
     
-3. En la **página principal** del caso, haga clic en **eDiscovery avanzado**. 
+3. En la página **principal** del caso, haga clic en **cambiar a exhibición avanzada**de documentos electrónicos. 
     
     ![Haga clic en cambiar a exhibición avanzada de documentos electrónicos para abrir el caso en eDiscovery avanzado.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -110,7 +110,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información acerca del uso de la exhibición avanzada de documentos electrónicos, vea [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   

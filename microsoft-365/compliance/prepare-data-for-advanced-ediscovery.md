@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para preparar datos para el análisis con EDiscovery avanzado. '
-ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214288"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412829"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Preparar datos para la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -51,7 +51,7 @@ Después de preparar los resultados de la búsqueda en el &amp; centro de seguri
     
 4. Haga clic en **abrir** junto al caso en el que desea cargar datos en la exhibición avanzada de documentos electrónicos. 
     
-5. En la **página principal** del caso, haga clic en **eDiscovery avanzado**. 
+5. En la página **principal** del caso, haga clic en **cambiar a exhibición avanzada**de documentos electrónicos. 
     
     ![Haga clic en cambiar a exhibición avanzada de documentos electrónicos para abrir el caso en eDiscovery avanzado.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
