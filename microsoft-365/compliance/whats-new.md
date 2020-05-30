@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327742"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418904"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -172,12 +172,12 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Solicitudes de los interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de los interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|exhibición de documentos electrónicos > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > núcleo <br/> https://compliance.microsoft.com/classicediscovery |[Administrar casos de eDiscovery](ediscovery-cases.md) |
 |Eventos|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Información general sobre la retención controlada por eventos](event-driven-retention.md)|
-|Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Información general sobre el administrador del plan de archivos](file-plan-manager.md)|
+|Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Usar el plan de archivos para administrar las etiquetas de retención](file-plan-manager.md)|
 |Importar archivos PST|Gobierno de información > archivos PST de importación <br/> https://protection.office.com/importV2 |Ficha importar > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Información general sobre la importación de archivos PST de su organización](importing-pst-files-to-office-365.md)|
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](labels.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Información general sobre las directivas de retención](retention-policies.md)|
-|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)|
+|Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)|
 |Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el centro de seguridad & cumplimiento](service-assurance.md)|
 |Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento de las comunicaciones <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de 365 de Microsoft.
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400718"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419141"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -84,12 +84,27 @@ El número máximo predeterminado de grupos de Microsoft 365 que una organizaci�
 
 La administración de los grupos de Microsoft 365 es más eficaz cuando tiene información que requiere la acción sobre el uso de los grupos. El centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver cosas como el uso del almacenamiento, cuántos grupos activos tiene e incluso cómo los usuarios usan los grupos. Consulte: [informes de Microsoft 365 en el centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
 
+## <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+Puede crear etiquetas de confidencialidad que los usuarios de su organización puedan establecer al crear un grupo de Microsoft 365. Con las etiquetas de confidencialidad, puede configurar: 
+
+- Privacidad (pública o privada)
+- Acceso de usuarios externos
+- Acceso de dispositivos no administrados
+
+Por ejemplo, puede crear una etiqueta denominada *extremadamente confidencial* y especificar que cualquier grupo que se cree con esta etiqueta será privado y no permitirá usuarios externos. Cuando los usuarios de la organización seleccionen esta etiqueta durante la creación del grupo, el grupo se establecerá en privado y no se permitirá que los miembros del grupo agreguen usuarios externos al grupo.
+
+> [!IMPORTANT]
+> Si actualmente usa etiquetas de clasificación, ya no estarán disponibles para los usuarios que crean grupos cuando las etiquetas de confidencialidad están habilitadas. 
+
+Para obtener información sobre cómo crear, administrar y usar las etiquetas de confidencialidad, vea [usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de 365 de Microsoft y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>¿Qué planes de Microsoft 365 incluyen grupos?
 
 Cualquier suscripción a Microsoft 365 que tenga Exchange Online y SharePoint Online será compatible con grupos. Esto incluye los planes de empresa Essentials y empresa Premium, y los planes Enterprise E1, E3 y E5. El grupo toma la licencia de la persona que crea el grupo (también conocido como "organizador" del grupo). Siempre que el organizador tenga la licencia adecuada para las características que desee que tenga el grupo, dicha licencia se transmitirá al grupo.
 
 > [!NOTE]
-> Para obtener más información acerca de los planes y las familias de servicios de Microsoft 365, consulte [Opciones de plan de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Para obtener más información acerca de los planes y las familias de servicios de Microsoft 365, consulte [Opciones de plan de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 Si tiene un plan de solo Exchange, todavía puede obtener las características de bandeja de entrada compartida y calendario compartido de los grupos en Outlook, pero no obtendrá la biblioteca de documentos, el programador ni ninguna de las demás funcionalidades.
 

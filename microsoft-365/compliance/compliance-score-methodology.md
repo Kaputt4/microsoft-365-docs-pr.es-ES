@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141594"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429195"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento de Microsoft (vista previa)
 
 > [!IMPORTANT]
-> La puntuación de cumplimiento no expresa una medida absoluta de cumplimiento organizacional con cualquier norma o reglamentación en particular. Expresa hasta qué punto ha adoptado los controles que pueden reducir los riesgos para los datos personales y la privacidad individual. Las recomendaciones de la puntuación de cumplimiento y el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Este servicio se encuentra actualmente en versión preliminar y está sujeto a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910).
+> Las recomendaciones de la puntuación de cumplimiento y del Administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de cliente según su entorno de reglamentación. Estos servicios están actualmente en versión preliminar y están sujetos a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también la [Guía de licencias de Microsoft 365 por seguridad y cumplimiento normativo](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Visión general
 
 El panel de calificaciones de cumplimiento muestra una puntuación que mide su progreso en completar acciones de mejora dentro de los controles. Los puntos se acumulan cuando se realizan acciones.
 
@@ -37,7 +37,7 @@ Los valores de puntuación de cumplimiento que se muestran para el control se ap
 - El **Estado de implementación** es igual a **implementación alternativa** o **implementada** y,
 - El resultado de la **prueba** es **correcto**.
 
-La suma de los puntos obtenidos al tomar acciones de mejora es la puntuación del control. La suma de las puntuaciones del control es la puntuación de la evaluación. La suma de los resultados de la evaluación es la puntuación general de cumplimiento
+La suma de los puntos obtenidos al tomar acciones de mejora es la puntuación del control. La suma de las puntuaciones del control es la puntuación de la evaluación. La suma de los resultados de la evaluación es la puntuación general de cumplimiento.
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Puntuación inicial basada en la línea base de protección de datos 365 de Microsoft
   
@@ -83,8 +83,8 @@ Cada control tiene un valor asignado en la puntuación de cumplimiento según el
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |
 | Detective obligatorio | 3 |
-| Discrecionales de detectives | 1 |
+| Discrecionales de detectives | 1  |
 | Obligatorio de corrección | 3 |
-| Discrecionales correctivas | 1 |
+| Discrecionales correctivas | 1  |
   
 ![Puntuación de cumplimiento controles valores de punto](../media/compliance-score-controls-scoring.png "Puntuación de cumplimiento controles valores de punto")

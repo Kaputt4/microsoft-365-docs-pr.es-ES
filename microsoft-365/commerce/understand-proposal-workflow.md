@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403131"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419117"
 ---
 # <a name="understand-the-proposal-workflow"></a>Descripción del flujo de trabajo de propuestas
 
@@ -31,7 +31,7 @@ Un representante de Microsoft redacta una propuesta que contiene los elementos q
 
 Después de recibir el correo electrónico de notificación, siga el vínculo al sitio de la propuesta. Después de iniciar sesión en el sitio, puede iniciar el proceso de revisión de la propuesta.
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>¿Cuáles son los requisitos previos de la organización para comprar elementos con una propuesta?
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Requisitos previos para comprar artículos con una propuesta
 
 Antes de poder comprar artículos para una propuesta, debe tener una cuenta de facturación y un contrato con Microsoft.
 
@@ -49,7 +49,7 @@ Para obtener más información acerca de las cuentas de facturación, consulte [
 
 Microsoft Customer Agreement (MCA) permite a una organización comprar productos y servicios de Microsoft. Para obtener más información, consulte [Microsoft Customer Agreement](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>¿Qué permisos necesito para firmar un acuerdo o pagar los elementos?
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Permisos necesarios para firmar un acuerdo o pagar elementos
 
 Si no tiene una función asignada en la cuenta de facturación, cuando vea la propuesta, se le asignará el rol lector básico. Esta función le permite ver la propuesta, pero no realizar ninguna acción en ella. Debe tener asignado el rol de colaborador de cuenta de facturación o el propietario de la cuenta de facturación para poder firmar un contrato o comprar productos y servicios. El propietario de la cuenta de facturación puede asignarle este rol.
 
@@ -59,7 +59,7 @@ Si se trata de una cuenta de facturación nueva y nadie ha aceptado un contrato,
 
 - ¿La persona indicada en la propuesta \
     O
-- Ya es un administrador global de Azure Active Directory para su organización
+- Ya es un [administrador global de Azure Active](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Directory para su organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Qué es el flujo de trabajo general?
 
@@ -86,7 +86,6 @@ La siguiente tabla contiene los términos y las definiciones que aparecen en su 
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cuenta de facturación | Una cuenta que se usa para administrar la configuración de la cuenta, las facturas, los métodos de pago y los productos. |
 | Perfil de facturación | Información acerca de la organización que le permite personalizar los elementos que se incluyen en la factura y cómo pagar sus facturas. El perfil de facturación incluye el nombre de la cuenta de facturación, las formas de pago que se usan para el perfil de facturación específico, la información de contacto, la configuración de la factura y los permisos que le permiten cambiar el perfil de facturación, pagar facturas y comprar productos y servicios. |
-| Condiciones de compra afiliada del cliente (CAPT) | Un conjunto adicional de términos que permite a una filial de su organización comprar productos y servicios sin tener que firmar un MCA independiente. |
 | Acuerdos existentes | Cualquier contrato que la organización ya haya implementado con Microsoft. Esto puede incluir, entre otros, un contrato Enterprise, un contrato de servicios & de productos de Microsoft o un contrato de cliente de Microsoft. |
 | Contrato de cliente de Microsoft (MCA) | Un acuerdo que describe los términos y las condiciones de la cuenta que ha mantenido la organización en Microsoft. |
 | Representante de Microsoft | Un representante autorizado de Microsoft que prepara una propuesta para usted y su organización. |
@@ -120,7 +119,7 @@ Si desea realizar cambios en la propuesta después de la revisión, póngase en 
 
 La propuesta contiene la siguiente información:
 
-| Section | Description |
+| Section | Descripción |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | El nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de la propuesta. Si pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para hacerle saber que todavía está interesado en la propuesta. |

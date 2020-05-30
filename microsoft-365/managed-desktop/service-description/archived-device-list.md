@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284371"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418883"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de escritorio administrado por Microsoft
 
@@ -42,6 +42,7 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR |**14 de mayo de 2023** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | **23 de octubre de 2023** |
 |Libreta de superficie 2| 256 GB/Intel i5/8 GB de RAM | Ninguno | **16 de noviembre de 2022** |
+|Surface Go| 128 GB/Intel 4415Y/8 GB de RAM | Ninguno | **2 de agosto de 2023** |
 |Portátil Surface| 256 GB/Intel i5/8 GB de RAM | Ninguno | **20 de mayo de 2022** |
 |Surface Pro| 256 GB/Intel i5/8 GB de RAM | Ninguno | **15 de junio de 2022** |
 

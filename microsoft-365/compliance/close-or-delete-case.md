@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre qué ocurre cuando se cierra o se elimina una investigación o un caso legal admitido por un caso avanzado de eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412789"
+ms.locfileid: "44419066"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Cerrar o eliminar un caso de exhibición avanzada de documentos electrónicos
 
@@ -56,7 +56,7 @@ Cuando vuelve a abrir un caso de exhibición avanzada de documentos electrónico
 
 Para volver a abrir un caso cerrado:
 
-1. En la página **exhibición avanzada** de documentos electrónicos, seleccione el caso que quiera eliminar.
+1. En la página **exhibición avanzada** de documentos electrónicos, seleccione el caso que quiera volver a abrir.
 
 2. En la pestaña **configuración** , en **información de casos**, haga clic en **seleccionar**.
 
