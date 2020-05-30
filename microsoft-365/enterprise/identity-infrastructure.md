@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pasos para implementar su infraestructura de identidad para Microsoft 365 Enterprise.
-ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6f237f779df16f2a2a03eab29af78a89c5f7a5ae
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952035"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371423"
 ---
 # <a name="phase-2-identity"></a>Fase 2: Identidad
 
@@ -70,7 +70,11 @@ Microsoft proporciona un conjunto de recomendaciones para el [acceso a dispositi
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Cómo Microsoft utiliza Microsoft 365 Enterprise
 
-Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Aprenda como los expertos de IT en Microsoft[administran identidades y acceso seguro](https://www.microsoft.com/es-ES/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
+
+>[!Note]
+>Este recurso de Exposición de caso de TI solo está disponible en inglés.
+>
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Cómo Contoso hizo Microsoft 365 Enterprise
 
