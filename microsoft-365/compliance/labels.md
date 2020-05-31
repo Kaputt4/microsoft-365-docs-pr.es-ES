@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre cómo las etiquetas de retención clasifican los datos en toda la organización para la gobernanza, y aplique las reglas de retención en base a esa clasificación. También puede utilizar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327908"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411047"
 ---
 # <a name="learn-about-retention-labels"></a>Obtenga información sobre las etiquetas de retención
 
@@ -107,10 +107,6 @@ Para comprender cómo y por qué se aplica una etiqueta de retención en lugar d
 
 Una etiqueta de retención asignada explícitamente tiene prioridad sobre una etiqueta de retención asignada implícitamente. Para más información, consulte la sección [Los principios de la retención, ¿o qué tiene prioridad?](#the-principles-of-retention-or-what-takes-precedence)en esta página.
 
-En los resultados, la propiedad `ELCLastSuccessTimeStamp` (UTC) muestra cuándo fue la última vez que el sistema procesó el buzón. Si esto no ha ocurrido desde el momento en que se creó la directiva, las etiquetas no van a aparecer. Para forzar el procesamiento, ejecute `Start-ManagedFolderAssistant -Identity <user>`.
-    
-Si las etiquetas no aparecen en Outlook en la Web y cree que tendrían que aparecer, asegúrese de vaciar la caché del explorador (CTRL+F5).
-    
 ## <a name="retention-label-policies-and-locations"></a>Ubicaciones y directivas de etiquetas de retención
 
 En función de la finalidad de las etiquetas de retención, pueden publicarse en distintas ubicaciones.
@@ -123,12 +119,12 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
    
 En Exchange, las etiquetas de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar los buzones específicos.
   
-Las carpetas públicas de Exchange y Skype no son compatibles con las etiquetas de retención.
+Las carpetas públicas de Exchange, Skype y los chats y mensajes de canal de Teams no admiten etiquetas de retención.
 
 ## <a name="how-retention-labels-enforce-retention"></a>Cómo las etiquetas de retención aplican la retención
 
-Las etiquetas de retención pueden hacer cumplir las mismas acciones de retención que una directiva de retención: retener y luego eliminar, o sólo retener o sólo eliminar. Puede utilizar etiquetas de retención para implementar un plan de contenido sofisticado (o plan de archivos). Para obtener más información acerca de cómo funciona la retención, consulte [Más información acerca de las políticas de retención](retention-policies.md).
-  
+Las etiquetas de retención pueden hacer cumplir las mismas acciones de retención que una directiva de retención: retener y luego eliminar, o sólo retener o sólo eliminar. Puede usar etiquetas de retención para implementar un sofisticado plan de archivos que identifique archivos específicos para diferentes configuraciones de retención. Para obtener más información acerca de cómo funciona la retención, consulte [Más información acerca de las políticas de retención](retention-policies.md).
+
 Además, una etiqueta de retención tiene dos opciones de retención que solo están disponibles en una etiqueta de retención, pero no están disponibles en una directiva de retención. Con una etiqueta de retención, puede:
   
 - Activar una revisión de la disposición al final del período de retención, de modo que los documentos de SharePoint y OneDrive deben ser revisados antes de que puedan ser eliminados. Para obtener más información, consulte [Revisiones de la disposición](disposition.md#disposition-reviews).
@@ -136,6 +132,8 @@ Además, una etiqueta de retención tiene dos opciones de retención que solo es
 - Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Esta opción solo se aplica al contenido de los sitios de SharePoint y las cuentas de OneDrive. Para el correo electrónico de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje, independientemente de la opción que elija aquí.
     
 ![Configuración de retención con opciones específicas para etiquetas](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Otra de las principales diferencias es que cuando aplica una etiqueta de retención en lugar de una directiva de retención a archivos de SharePoint y la etiqueta está configurada para conservar el contenido, los usuarios no pueden eliminar el archivo mientras se aplica el período de retención. Los usuarios pueden eliminar contenido cuando la misma etiqueta se aplica a los archivos en OneDrive y a los mensajes de correo electrónico, a menos que la etiqueta marque el contenido como un registro.
 
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Ubicaciones donde los usuarios pueden ver las etiquetas de retención publicadas
 
@@ -197,7 +195,7 @@ Después de aplicar una etiqueta de retención a un elemento, puede verla en el 
 ![Etiqueta aplicada mostrada en el panel de detalles](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 Para SharePoint, pero no para OneDrive, puede crear una vista de la biblioteca que contiene la columna de **Etiquetas** o el **elemento es una columna de Registro**. Esta vista permite ver rápidamente las etiquetas de retención asignadas a todos los artículos y qué artículos son registros. Sin embargo, tenga en cuenta que no puede filtrar la vista por el **Elemento es una columna de registro**. Para obtener instrucciones sobre cómo agregar columnas, consulte [Mostrar u ocultar columnas en una lista o biblioteca](https://support.microsoft.com/es-ES/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
-  
+
 
 ### <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
@@ -276,11 +274,12 @@ Cuando se crea una etiqueta de retención, se puede hacer sin activar ninguna re
   
 Por ejemplo, puede crear una etiqueta de retención llamada “Revisar más tarde” sin ninguna acción y, después, aplicar automáticamente esa etiqueta de retención al contenido con tipos de información confidencial o contenido consultado.
   
-![Página “Configuración de etiquetas” con la retención desactivada](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Página “Configuración de etiquetas” con la retención desactivada](../media/retention-label-retentionoff.png)
+
   
 ## <a name="using-retention-labels-for-records-management"></a>Uso de etiquetas de retención para la administración de registros
     
-Puede usar las etiquetas de retención para declarar el contenido como un registro. Esto le permite implementar una estrategia de administración de registros única y coherente en todo Microsoft 365. Para obtener más información, vea [Introducción a registros](records.md). 
+Puede usar las etiquetas de retención para declarar el contenido como un registro. Esto le permite implementar una estrategia de administración de registros única y coherente en todo Microsoft 365. Para más información, vea [Información sobre registros](records.md).
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
 
@@ -361,6 +360,6 @@ Hay varias otras características que se han utilizado anteriormente para retene
     
 - [Introducción al Centro de registros](https://support.office.com/article/bae6ca5a-7b19-40e0-b433-e3613a747c2c) (retención) 
     
-- [Directivas de administración de la información](intro-to-info-mgmt-policies.md) (solo eliminación) 
+- [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación) 
     
 

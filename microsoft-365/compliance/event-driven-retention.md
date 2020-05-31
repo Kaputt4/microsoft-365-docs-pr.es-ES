@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención puede hacer que un período de retención se base en el momento en que se produce un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053888"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385012"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
@@ -108,13 +108,16 @@ Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etique
   
 ![Opciones para crear o seleccionar un tipo de evento](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>Paso 3: publicar las etiquetas de retención basadas en eventos
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Paso 3: Publicar o aplicar automáticamente las etiquetas de retención basadas en eventos
 
-Publique las etiquetas de retención basadas en eventos, de modo que se puedan aplicar manualmente al contenido. No se puede seleccionar una etiqueta de retención basada en eventos para una directiva de aplicación automática. 
+Como en cualquier etiqueta de retención, es necesario [publicar o aplicar automáticamente](create-retention-labels.md) una etiqueta basada en eventos, de modo que se aplique manual o automáticamente al contenido.
 
-Para publicar las etiquetas de retención basadas en eventos, vaya a la página **Clasificación** > **Etiquetas de retención**.
-  
-![Opciones para publicar o aplicar automáticamente una etiqueta de retención](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> Si selecciona una etiqueta de retención basada en eventos de **Administración de registros** > **pestaña Plan de archivos** o **Gobierno de datos** > **pestaña Etiquetas**, el botón **Aplicar automáticamente una etiqueta** no está disponible.
+> 
+> En lugar de este botón, use la opción **Aplicar automáticamente una etiqueta** encima de la lista de etiquetas o directivas de una de las siguientes ubicaciones:
+> - **Administración de registros** > **pestaña Directivas de etiqueta**
+> - **Gobierno de datos** > **pestaña Etiquetas** o **pestaña Directivas de etiqueta**
 
 ### <a name="step-4-enter-an-asset-id"></a>Paso 4: Escribir un id. de activo
 
@@ -144,7 +147,7 @@ Al crear el evento, seleccione el mismo tipo de evento usado por la etiqueta de 
 
 Ahora, para restringir el ámbito del contenido, especifique id. de activo para contenido de SharePoint y OneDrive, o bien palabras clave para contenido de Exchange. En el caso de los id. de activo, la retención solo se exigirá en contenido con el par especificado de propiedad:valor. Si no se especifica un id. de activo, se aplicará la misma fecha de retención en **todo el contenido** con etiquetas de ese tipo de evento. 
   
-Tenga en cuenta que un id. de activo es simplemente otra propiedad de un documento en SharePoint y OneDrive para la Empresa. Si usa la propiedad “Id. de activo”, tendrá que especificar IdActivoCumplimiento:\<valor\> en el cuadro para los id. de activo que se muestran abajo.
+Tenga en cuenta que el id. de activo es simplemente otra propiedad de documento en SharePoint y OneDrive para la Empresa. Si usa la propiedad de id. de activo, escriba ComplianceAssetID:\<value\> en el cuadro de id. de activo que se muestra abajo.
   
 Puede que su organización aplicara otras propiedades e id. en los documentos relacionados con ese tipo de evento. Por ejemplo, si necesita detectar los registros de un producto específico, el id. podría ser una combinación de la propiedad personalizada IdProducto y el valor “XYZ”. En este caso, escribiría IdProducto:XYZ en el cuadro “Id. de activo” que se muestra abajo.
   
@@ -162,9 +165,9 @@ Al crear una búsqueda de contenido:
   
 - Para encontrar todo el contenido con una etiqueta de retención específica, seleccione la condición **Etiqueta de cumplimiento** y, después, escriba el nombre de etiqueta completo o una parte del nombre de la etiqueta y use un comodín. 
     
-- Para encontrar todo el contenido con un id. de activo específico, escriba la propiedad **IdActivoCumplimiento** y un valor (por ejemplo, IdActivoCumplimiento:\<valor\>). 
+- Para encontrar todo el contenido con un id. de activo específico, escriba la propiedad **ComplianceAssetID** y un valor, como ComplianceAssetID:\<value\>. 
     
-Para obtener más información, vea [Consultas de palabras clave y condiciones de búsqueda para Búsqueda de contenido](keyword-queries-and-search-conditions.md).
+Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de Contenido](keyword-queries-and-search-conditions.md).
   
 ## <a name="permissions"></a>Permisos
 

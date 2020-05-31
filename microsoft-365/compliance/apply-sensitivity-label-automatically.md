@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 318ecd19d7dcfb4b80e1bdcec743057462c44b1b
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280560"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408482"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -45,10 +45,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     
     Para obtener instrucciones de configuración, consulte [Cómo configurar el etiquetado automático en aplicaciones de Office](#how-to-configure-auto-labeling-for-office-apps) en esta página.
 
-- **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint Online o en OneDrive para la Empresa) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático (actualmente en versión preliminar). 
-    
-    > [!NOTE]
-    > Vea el anuncio de la vista previa, [Anuncio de la vista previa pública de la clasificación automática con etiquetas de confidencialidad en los servicios de Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) y el seminario web [Introducción al etiquetado automático de SharePoint y OneDrive con etiquetas de confidencialidad](https://aka.ms/SPOAutoLabelWebinar-Recording).
+- **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint o en OneDrive) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático. 
     
     Este método se conoce como clasificación automática con etiquetas de confidencialidad. También se conoce como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones). 
     
@@ -60,6 +57,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     - Máximo de 25 000 archivos etiquetados automáticamente (Word, PowerPoint o Excel) en su espacio empresarial por día
     - Máximo de 10 colecciones de sitios entre todas las directivas
     - Máximo de 10 directivas en su espacio empresarial
+    - La fecha de modificación no se cambia como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
 
     Específico para el etiquetado automático para Exchange:
     - A diferencia de las etiquetas manuales o el etiquetado automático con las aplicaciones de Office, los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
@@ -186,12 +184,14 @@ Específico del cliente de etiquetado unificado de Azure Information Protection:
 - La información confidencial se detecta en el texto del cuerpo de los documentos y correos electrónicos, y en los encabezados y pies de página, pero no en la línea de asunto o en los datos adjuntos de correo electrónico.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange
-> [!NOTE]
-> Las directivas de etiquetado automático se encuentran en versión preliminar pública y están sujetas a cambios.
+
+Asegúrese de tener en cuenta los requisitos previos antes de configurar las directivas de etiquetado automático. 
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Requisitos previos para las directivas de etiquetado automático
 
-- Se debe activar la auditoría de Microsoft 365 en el modo de simulación. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
+- Modo de simulación:
+    - Se debe activar la auditoría de Microsoft 365. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
+    - Para ver el contenido del archivo en la vista de origen (no es compatible con los mensajes de correo electrónico), debe tener el rol de **visor de contenido del explorador de contenido** si no es un administrador global. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento de la pestaña **Elementos coincidentes**.
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
     - [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive (versión preliminar)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -236,9 +236,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
 
-2. Seleccione la pestaña **Etiquetado automático (versión preliminar)**:
+2. Seleccione la pestaña **Etiquetado automático**:
     
-    ![Pestaña etiquetado automático (versión preliminar)](../media/auto-labeling-tab.png)
+    ![Pestaña Etiquetado automático](../media/auto-labeling-tab.png)
     
 
 3. Seleccione **+ Crear directiva**.
@@ -248,6 +248,12 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
 6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Después, seleccione **Siguiente**.
+    
+    Para OneDrive, debe especificar cuentas individuales. La dirección URL de OneDrive de un usuario tiene el siguiente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    Por ejemplo, para un usuario en el espacio empresarial de Contoso con un nombre de usuario "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    Para comprobar la sintaxis de su espacio empresarial e identificar las direcciones URL de los usuarios, consulte [Obtener una lista de todas las URL de OneDrive de usuario en su organización](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Después, seleccione **Siguiente**.
     
@@ -280,7 +286,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     A diferencia del etiquetado automático para las aplicaciones de Office, no hay ninguna opción de publicación independiente. Sin embargo, al igual que con las etiquetas de publicación, espere hasta 24 horas para que la directiva de etiquetado automático se replique en toda la organización.
 
-Ahora, en la página de **Protección de la información**, pestaña de **Etiquetado automático (vista previa)**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
+Ahora, en la página de **Protección de la información**, pestaña de **Etiquetado automático**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
 
 Puede modificar la directiva directamente desde esta interfaz:
 
