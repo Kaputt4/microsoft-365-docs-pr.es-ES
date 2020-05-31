@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a69b71ec364eae4258960c3b33876f0df9530611
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327138"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411027"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -62,10 +62,7 @@ De forma predeterminada, los administradores globales de su espacio empresarial 
 
 Como alternativa, puede crear un nuevo grupo de roles y agregar los roles de **administrador de etiquetas de confidencialidad** o **configuración de la organización** a este grupo. Para un rol de solo lectura, utilice el **Lector de etiquetas de confidencialidad**. Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Estos permisos son necesarios solo para crear y configurar etiquetas de confidencialidad y sus directivas de etiquetado. No son necesarios para aplicar las etiquetas en aplicaciones o servicios.
-
-> [!NOTE]
-> El **Lector de etiquetas de confidencialidad** es un nuevo rol compatible inicialmente solo con los cmdlets de etiquetado de PowerShell. El soporte para los centros de etiquetado de administrador se está implementando ahora para los espacios empresariales.
+Estos permisos son necesarios solo para crear y configurar etiquetas de confidencialidad y sus directivas de etiquetado. No son necesarios para aplicar las etiquetas en aplicaciones o servicios. Si se necesitan permisos adicionales para configuraciones específicas relacionadas con las etiquetas de confidencialidad, estos permisos se especificarán en las instrucciones de la documentación correspondientes.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Escenarios comunes de etiquetas de confidencialidad
 

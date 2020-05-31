@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
-ms.openlocfilehash: d743a397d16e107b43c07ac1556b0a6b01c7181a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dfc4c3c72748084ae5e9ebaadfd7616e8e081460
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352133"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401194"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
 ## <a name="introduction"></a>Introducción
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de actividades administrativas y de usuario en Office 365:
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [actividades administrativas y de usuario](#audited-activities) en Office 365:
 
 - Actividad de usuario en SharePoint Online y OneDrive para Empresas
 

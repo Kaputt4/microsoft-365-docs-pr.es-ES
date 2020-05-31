@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma proactiva si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan condiciones específicas.
-ms.openlocfilehash: 6f518ac1ba615ca81f8e45f803d26c54b43d775b
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231883"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412819"
 ---
 # <a name="learn-about-retention-policies"></a>Información sobre las directivas de retención
 
@@ -125,9 +125,9 @@ En resumen, una directiva de retención bloqueada se puede incrementar o ampliar
 
 El uso de la directiva de retención no tiene un bloqueo de conservación, puede desactivar o eliminar una directiva de retención en cualquier momento. 
 
-Al hacerlo, el contenido de SharePoint o de OneDrive que se retiene en la biblioteca de conservación de documentos se elimina de forma inmediata y permanente. A partir de ahora, y para evitar pérdidas accidentales de datos, existe un período de gracia de 30 días durante el cual la expiración del contenido para esa directiva no se produce en la biblioteca de conservación de documentos, de modo que puede restaurar desde allí el contenido si lo ve necesario. 
+Al hacerlo, el contenido de SharePoint o de OneDrive que se retiene en la biblioteca de conservación de documentos se elimina de forma inmediata y permanente. A partir de ahora, y para evitar pérdidas accidentales de datos, existe un período de gracia de 30 días durante el cual la expiración del contenido para esa directiva no se produce en la biblioteca de conservación de documentos, de modo que puede restaurar desde allí el contenido si lo ve necesario. Además, no puede eliminar manualmente este contenido durante el período de gracia.
 
-También puede activar la directiva de retención durante el período de gracia y no se eliminará ningún contenido para esa directiva.
+Puede activar la directiva de retención durante el período de gracia y no se eliminará ningún contenido para esa directiva.
 
 Este periodo de gracia de 30 días en SharePoint y OneDrive corresponde a la retención de retraso de 30 días de Exchange. Para obtener más información, consulte [Gestionar buzón con una retención de retraso](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
@@ -155,7 +155,7 @@ Las características anteriores que puede haber usado son:
     
 - [Agregar contenido a un caso y poner orígenes en suspensión en el Centro de eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (suspensión de eDiscovery) 
     
-- [Información general sobre las directivas de eliminación de documentos](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (solo eliminación) 
+- [Directivas de eliminación de documentos](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (solo eliminación)
     
 - [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención) 
     

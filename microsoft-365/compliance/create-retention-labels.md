@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear, publicar y aplicar automáticamente etiquetas de retención para retener lo que se necesita, eliminar lo que no se necesita y declarar un elemento como un registro en el entorno de Office 365.
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352247"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408472"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>Crear, publicar y aplicar automáticamente etiquetas de retención
 
@@ -80,7 +80,7 @@ Publicar etiquetas de retención para que puedan ser aplicadas manualmente por l
 
 2. Siga las instrucciones del asistente.
     
-    Para obtener información sobre la configuración de las ubicaciones, consulte la sección [Etiquetas de retención y ubicaciones](#retention-labels-and-locations) en esta página. 
+    Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](labels.md#retention-label-policies-and-locations). 
 
 ## <a name="auto-apply-a-retention-label"></a>Aplicar automáticamente una etiqueta de retención
 
@@ -100,21 +100,7 @@ Aplica automáticamente una etiqueta de retención, basada en las condiciones qu
     
     Para obtener información sobre la configuración de las condiciones que aplican automáticamente la etiqueta de retención, consulte la sección [Configuración de las condiciones para la aplicación automática de etiquetas de retención en](#configuring-conditions-for-auto-apply-retention-labels) esta página.
     
-    Para obtener información sobre la configuración de las ubicaciones, consulte la siguiente sección de esta página,[Etiquetas y ubicaciones de retención](#retention-labels-and-locations).
-
-## <a name="retention-labels-and-locations"></a>Etiquetas y lugares de retención
-
-En función de la finalidad de las etiquetas de retención, pueden publicarse en distintas ubicaciones.
-  
-|**Si la etiqueta de retención es...**|**La directiva de etiquetas se puede aplicar en…**|
-|:-----|:-----|
-|Se publica a los usuarios finales  <br/> |Exchange, SharePoint, OneDrive, grupos de Office 365  <br/> |
-|Se aplica automáticamente basándose en los tipos de información confidencial  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
-|Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Office 365  <br/> |
-   
-En Exchange, las etiquetas de aplicación automática (tanto para consultas como para tipos de información confidencial) solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar los buzones específicos.
-  
-Las carpetas públicas de Exchange y Skype no son compatibles con las etiquetas de retención.
+    Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](labels.md#retention-label-policies-and-locations).
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurar las condiciones para la aplicación automática de etiquetas de retención
@@ -206,9 +192,9 @@ Si aplica automáticamente etiquetas de retención a contenido que coincida con 
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Cómo comprobar el estado de las etiquetas de retención publicadas en Exchange
 
-En Exchange Online, las etiquetas de retención se publican para los usuarios finales mediante un proceso que se ejecuta cada siete días. Con PowerShell, puede ver cuándo se ha ejecutado este proceso por última vez y, por tanto, determinar cuándo volverá a ejecutarse.
+En Exchange Online, las etiquetas de retención están disponibles para los usuarios finales mediante un proceso que se ejecuta cada siete días. Mediante el uso de Powershell, se puede ver cuándo se ejecutó este proceso por última vez y así identificar cuándo se volverá a ejecutar.
   
-1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=799773).
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=799773).
     
 2. Ejecute estos comandos.
     
