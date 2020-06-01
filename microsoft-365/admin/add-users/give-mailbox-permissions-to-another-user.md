@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Obtenga información acerca de cómo conceder a un usuario el derecho de acceso al buzón de otro usuario. Esto le dará al usuario el derecho de leer el correo electrónico y enviar correo electrónico desde el buzón del otro usuario. '
-ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387182"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431670"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
 
 Como administrador, puede que la empresa le requiera que permita que algunos usuarios puedan acceder al buzón de otro usuario. Por ejemplo, puede que quiera habilitar que un asistente envíe o lea el correo electrónico del buzón de su jefe o bien que uno de los usuarios pueda enviar correo electrónico en nombre de otro. En este tema se muestra cómo hacerlo.
   

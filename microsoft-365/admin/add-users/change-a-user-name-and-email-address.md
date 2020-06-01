@@ -23,23 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario. '
-ms.openlocfilehash: 4325892a51c9d7a562b628a2bb89e6e1ff966e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387254"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432092"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
 Es posible que deba cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario si, por ejemplo, este decide cambiarse los apellidos.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
 
 Vea un vídeo corto sobre el cambio de la dirección de correo electrónico de un usuario. <br><br>
 
