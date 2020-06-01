@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Obtenga información sobre Power BI y cómo los usuarios de su organización pueden usar este servicio de Business Analytics.
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399307"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432176"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI en su organización
 
@@ -171,9 +171,6 @@ Para permitir que los usuarios existentes se registren para usar Power BI, ejecu
 Si un usuario se registró en Power BI pero ya no desea que tenga acceso a Power BI, puede quitar la licencia individual de Power BI para ese usuario.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
     
@@ -210,7 +207,7 @@ Si un usuario se registró en Power BI pero ya no desea que tenga acceso a Power
     
 4. Desactivar la opción de **Microsoft Power BI** .
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 ::: moniker-end 
 

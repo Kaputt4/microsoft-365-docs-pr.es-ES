@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387242"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432104"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -47,13 +47,6 @@ Vea un breve vídeo sobre cómo agregar un administrador.<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -99,7 +92,7 @@ Puede asignar usuarios a un rol de dos maneras distintas:
 
 1. En el centro de administración, vaya a la página **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
-2. En la página **usuarios activos** , seleccione el usuario cuyo rol de administrador quiera cambiar. En el panel flotante, junto a **roles**, seleccione **Editar**. 
+2. En la página **usuarios activos** , seleccione el usuario cuyo rol de administrador quiera cambiar. En el panel flotante, junto a **roles**, seleccione **Editar**.
 
     Si no ve la opción **Editar** , no tiene permiso para editar y no puede asignar roles de administrador a otras personas. Solicite a un administrador global de su empresa que le asigne funciones. En una pequeña empresa, el propietario de la empresa (la persona que compró la suscripción) es un administrador global. En una empresa grande, las personas clave del Departamento de TI son administradores globales.
 
@@ -125,9 +118,10 @@ Es posible que no tenga los permisos correctos y no tiene acceso para asignar ro
 
 ## <a name="related-articles"></a>Artículos relacionados
 
+[Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
+
 [Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorizar o quitar relaciones de asociados](../misc/add-partner.md)
 
 [Agregar una dirección de correo electrónico alternativa mediante el centro de administración de Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Obtenga información sobre cómo quitar licencias de cuentas de usuario.
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399685"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432236"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
@@ -45,9 +45,6 @@ Puede quitar o quitar la asignación de licencias de los usuarios en la página 
 
 Cuando usa la página **licencias** para cancelar la asignación de licencias, puede cancelar la asignación de licencias para un producto específico para un máximo de 20 usuarios. 
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración de, vaya a la página de **facturación**><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a>.
 2. Seleccione el producto para el que desea cancelar la asignación de licencias.
 3. Seleccione los usuarios para los que desea cancelar la asignación de licencias.
@@ -59,9 +56,6 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Cancelar la asignación de licencias de un usuario en la página usuarios activos
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
@@ -104,9 +98,6 @@ Cuando usa la página **licencias** para cancelar la asignación de licencias, p
 ## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>Cancelar la asignación de licencias de varios usuarios en la página usuarios activos
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 

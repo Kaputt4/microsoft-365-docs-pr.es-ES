@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Aprenda a administrar mensajes del centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399721"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432270"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el centro de mensajes
 
@@ -36,13 +36,6 @@ Las publicaciones del centro de mensajes son anuncios importantes sobre las cara
 Para ir al centro de mensajes, vaya al [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)y seleccione Centro de mensajes de **mantenimiento**  >  **Message center**. 
 
 Seleccione un título de mensaje para abrirlo en el panel de lectura. Cada mensaje contiene un resumen del cambio, una declaración de cómo puede afectar el cambio a usted, información sobre cómo puede preparar a su organización para el cambio y, en la mayoría de los casos, un vínculo a información adicional donde puede obtener más información. La información adicional sigue estando disponible, incluso después de que expire un mensaje.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>Filtrar y ordenar
 

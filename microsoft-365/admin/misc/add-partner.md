@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Obtenga información sobre cómo agregar un socio de asesor de suscripción como partner de registro en el momento de la compra de Microsoft 365, cambiar el partner o eliminar un partner de una suscripción.
-ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399475"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432200"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -70,9 +70,6 @@ Como administrador de Office 365, puede crear o editar usuarios, restablecer con
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Agregar un partner en el momento de la compra
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración, vaya a **Billing** la \> Página servicios de <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">compra</a> de facturación.
     
 2. Seleccione el producto que quiera comprar y, después, seleccione **comprar**.
@@ -112,16 +109,13 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
     
 2. Si tiene más de una suscripción, seleccione la suscripción que desea editar.
   
 3. En la página de suscripción, seleccione la pestaña **asociado** y, a continuación, escriba el identificador de la red asociada para el socio que está agregando puede obtener el identificador de asociado de Microsoft del asociado preguntando al asociado.
     
-4. Elija **Agregar**.
+4. Seleccione **Agregar**.
 
 ::: moniker-end
 
@@ -158,9 +152,6 @@ Para aceptar esta oferta
 ## <a name="change-the-partner-for-a-subscription"></a>Cambiar el partner de una suscripción
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
     
@@ -206,9 +197,6 @@ Para aceptar esta oferta
 ## <a name="delete-a-partner-from-a-subscription"></a>Quitar un partner de una suscripción
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1.  En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
     

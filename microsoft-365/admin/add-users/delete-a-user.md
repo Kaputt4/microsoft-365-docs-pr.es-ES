@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario. Decida qué hacer con el correo electrónico del usuario, el contenido de OneDrive y si quiere mantener la licencia del producto o dejar de pagar por él.
-ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 81243286b70985082f8b671d7e021735a76cffc4
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387194"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431682"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -67,13 +67,6 @@ Antes de empezar, piense en lo que desea hacer con el correo electrónico del us
 |Active Directory  <br/> |Si su empresa usa **Active Directory** que está sincronizando con Azure AD, debe eliminar la cuenta de usuario de Active Directory. No podrá hacerlo a través de Office 365. Para obtener instrucciones, consulte [eliminar una cuenta de usuario](https://go.microsoft.com/fwlink/p/?linkid=841808).  <br/> |
    
 ### <a name="get-started"></a>Introducción
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
 
 Dado que la experiencia guiada recorre los pasos para eliminar un usuario, esta es la manera de empezar.
 

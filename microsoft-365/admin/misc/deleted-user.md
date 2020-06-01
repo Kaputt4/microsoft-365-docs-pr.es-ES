@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo eliminar o restaurar la cuenta de Microsoft 365 de un usuario.
-ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399391"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432188"
 ---
 # <a name="quick-help-deleted-user"></a>Ayuda rápida: Usuario eliminado
 
@@ -35,9 +35,6 @@ Puede que tenga que eliminar un [usuario](../add-users/add-users.md) de su organ
 ## <a name="delete-a-user"></a>Eliminar un usuario
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 

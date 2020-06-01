@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo restablecer las contraseñas con la herramienta de restablecimiento de contraseña de autoservicio.
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387038"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431706"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -37,19 +37,19 @@ ms.locfileid: "44387038"
   
 Algunas cuestiones que debería conocer:
   
-- Obtiene el restablecimiento de contraseñas de autoservicio para los usuarios en la nube de forma gratuita con cualquier plan pagado de Microsoft 365 Business, Education o **sin** ánimo de lucro. No funciona con la versión de prueba de Microsoft 365. 
-    
-- Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure. 
-    
-- **Si está usando un Active Directory local**, no se aplican los dos puntos anteriores. En su lugar, puede configurar esto pero **requiere una suscripción de pago a Azure ad Premium**. 
+- Obtiene el restablecimiento de contraseñas de autoservicio para los usuarios en la nube de forma gratuita con cualquier plan pagado de Microsoft 365 Business, Education o **sin** ánimo de lucro. No funciona con la versión de prueba de Microsoft 365.
+
+- Usa Azure. Recibirá esta característica automáticamente en Azure **gratis** cuando realice estos pasos. No le costará nada activar el autoservicio de restablecimiento de contraseñas si no usa otras características de Azure.
+
+- **Si está usando un Active Directory local**, no se aplican los dos puntos anteriores. En su lugar, puede configurar esto pero **requiere una suscripción de pago a Azure ad Premium**.
 
 Vea un breve vídeo sobre cómo permitir que los usuarios restablezcan sus propias contraseñas. <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="let-people-reset-their-own-passwords"></a>Permitir que los usuarios restablezcan sus propias contraseñas 
+## <a name="let-people-reset-their-own-passwords"></a>Permitir que los usuarios restablezcan sus propias contraseñas
 
 Siga estos pasos para activar el restablecimiento de contraseña de autoservicio para todos los usuarios de su empresa.
   
@@ -70,7 +70,6 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 ::: moniker-end
 
-   
 2. En la parte superior de la página Configuración, seleccione **seguridad & privacidad**.
   
 3. Seleccione **autoservicio de restablecimiento de contraseña**.

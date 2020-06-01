@@ -23,21 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Obtenga información sobre cómo preservar los archivos y los correos electrónicos de un empleado cuando la persona abandone la organización.
-ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387206"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431718"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Obtener acceso y realizar una copia de seguridad de los datos de un antiguo usuario
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 
 Cuando un empleado deja la organización, es probable que desee tener acceso a sus datos (documentos y correos electrónicos) y revisarlos, realizar una copia de seguridad o asignarlos a un nuevo empleado.
@@ -50,9 +43,6 @@ Si quita la licencia de un usuario pero no la elimina, puede conceder acceso al 
 Para conservar los archivos de OneDrive de un usuario anterior, primero se debe conceder acceso a su OneDrive y, a continuación, mover los archivos que desee conservar. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.  
     
@@ -132,7 +122,7 @@ Como administrador global, puede dar acceso al contenido en el OneDrive de un us
 
 2. En el panel izquierdo, seleccione **centros de administración** \> **SharePoint**. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
 
-3. Si se muestra el Centro de administración de SharePoint clásico, seleccione **Abrirlo ahora** en la parte superior de la página para abrir el nuevo Centro de administración de SharePoint.
+3. Si aparece el centro de administración clásico de SharePoint, seleccione **abrir ahora** en la parte superior de la página para abrir el centro de administración de SharePoint.
 
 4. En el panel izquierdo, seleccione **más características**.
 

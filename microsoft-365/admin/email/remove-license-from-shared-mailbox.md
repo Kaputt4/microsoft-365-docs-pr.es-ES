@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
-ms.openlocfilehash: 1f69cd6f0e572da18abf7253832604ad3ac0ab8f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400033"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432224"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -50,9 +50,6 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 ## <a name="remove-the-license"></a>Quitar la licencia
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
@@ -82,7 +79,7 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 
@@ -101,7 +98,7 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 
 3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
 

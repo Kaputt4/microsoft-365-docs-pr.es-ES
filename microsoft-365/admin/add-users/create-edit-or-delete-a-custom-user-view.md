@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Obtenga información sobre cómo usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387218"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431646"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Crear, editar o eliminar una vista de usuario personalizada en Office 365
 
 Si es administrador global o de administración de usuarios de Office 365, puede crear vistas de usuario personalizadas para ver un subconjunto específico de usuarios. Estas vistas se agregan al conjunto estándar de vistas que se incluye con Office 365. Puede crear, editar o eliminar vistas de usuario personalizadas y las vistas personalizadas que cree estarán disponibles para todos los administradores.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Vistas de usuario personalizadas en el centro de administración
 

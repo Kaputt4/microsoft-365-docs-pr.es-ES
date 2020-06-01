@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411017"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432609"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Antes de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, no puede aplicar las [etiquetas de confidencialidad](sensitivity-labels.md) en Office en la Web. No ve el botón de **confidencialidad** en la cinta o el nombre de etiqueta aplicado en la barra de estado. Además, si usa aplicaciones de escritorio para etiquetar los archivos y guardarlos en SharePoint o en OneDrive, el servicio no puede procesar el contenido de estos archivos si la etiqueta aplicó el cifrado. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda y otras características de colaboración no funcionarán en estas circunstancias.
 
@@ -39,6 +39,8 @@ Al habilitar las etiquetas de confidencialidad para los archivos de Office en Sh
 - Para que SharePoint Quite el cifrado del archivo al cargarlo, el usuario que cargue el archivo cifrado y etiquetado debe tener permisos de uso para al menos ver el archivo. SharePoint no quita el cifrado de los archivos si el usuario no puede abrirlos fuera de SharePoint.
 
 - Use Office en la web (Word, Excel y PowerPoint) para abrir y editar archivos de Office con etiquetas de distinción que aplican el cifrado. Se aplican los permisos asignados al cifrado. Con Word en la web, también puede usar la etiqueta automática cuando edita estos documentos.
+
+- Los usuarios externos pueden tener acceso a los documentos etiquetados con el cifrado mediante cuentas de invitado. Para obtener más información, consulte [compatibilidad con usuarios externos y con la etiqueta contenido](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
 - Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos. Las directivas de prevención de pérdida de datos (DLP) cubren el contenido de estos archivos.
 

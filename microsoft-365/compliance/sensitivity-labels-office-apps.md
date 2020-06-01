@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para el escritorio, aplicaciones de Office para dispositivos móviles y aplicaciones de Office para la Web. Averiguar qué aplicaciones admiten las etiquetas de confidencialidad.
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222509"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432599"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -168,6 +168,34 @@ En caso contrario:
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Compatibilidad con archivos de OneDrive y SharePoint protegidos por etiquetas de confidencialidad
 
 Para usar el cliente de etiquetado integrado de Office con Office en la web para documentos en SharePoint o OneDrive, asegúrese de que ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+## <a name="support-for-external-users-and-labeled-content"></a>Compatibilidad con usuarios externos y con etiqueta de contenido
+
+Al etiquetar un documento o correo electrónico, la etiqueta se almacena como metadatos que incluyen el espacio empresarial y un GUID de etiqueta. Cuando un documento etiquetado o un correo electrónico se abre con una aplicación de Office que admite etiquetas de confidencialidad, estos metadatos se leen y solo si el usuario pertenece al mismo espacio empresarial, la etiqueta se muestra en la aplicación. Por ejemplo, para las etiquetas integradas de Word, PowerPoint y Excel, el nombre de la etiqueta se muestra en la barra de estado. 
+
+Esto significa que si comparte documentos con otra organización que usa distintos nombres de etiquetas, cada organización puede aplicar y ver su propia etiqueta aplicada al documento. Sin embargo, los usuarios externos a la organización pueden ver los siguientes elementos de una etiqueta aplicada:
+
+- Marcados de contenido. Cuando una etiqueta aplica un encabezado, un pie de página o una marca de agua, estos se agregan directamente al contenido y permanecen visibles hasta que alguien los modifica o Los elimina.
+
+- El nombre y la descripción de la plantilla de protección subyacente de una etiqueta que aplicó el cifrado. Esta información se muestra en una barra de mensajes en la parte superior del documento para proporcionar información sobre quién está autorizado para abrir el documento y sus derechos de uso para ese documento.
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>Uso compartido de documentos cifrados con usuarios externos
+
+Además de restringir el acceso a los usuarios de su propia organización, puede ampliar el acceso a cualquier otro usuario que tenga una cuenta en Azure Active Directory. Todas las aplicaciones de Office y otras [aplicaciones habilitadas para RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) pueden abrir documentos cifrados después de que el usuario se haya autenticado correctamente. 
+
+Si los usuarios externos no tienen una cuenta en Azure Active Directory, puede crear una cuenta de invitado para ellos en su espacio empresarial. Para su dirección de correo electrónico, puede especificar cualquier dirección de correo electrónico que ya use. Por ejemplo, su dirección de gmail. Esta cuenta de invitado también se puede usar para obtener acceso a un documento compartido en SharePoint o OneDrive cuando haya [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Los usuarios externos también pueden usar y crear una cuenta de Microsoft para documentos cifrados cuando usan aplicaciones de Microsoft 365 en Windows. Esta funcionalidad aún no es compatible con MacOS, Android o iOS. Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica la dirección de correo electrónico de gmail. Este usuario puede crear su propia cuenta de Microsoft que usa su dirección de correo de gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, de acuerdo con las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de un tutorial de este escenario, consulte [abrir y editar el documento protegido](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+
+> [!NOTE]
+> La dirección de correo electrónico de la cuenta Microsoft debe coincidir con la dirección de correo electrónico especificada para restringir el acceso a la configuración de cifrado.
+
+Cuando un usuario con una cuenta de Microsoft abre un documento cifrado de esta manera, crea automáticamente una cuenta de invitado para el inquilino si todavía no existe una cuenta de invitado con el mismo nombre. Cuando existe la cuenta de invitado, puede usarse para abrir documentos en SharePoint y OneDrive con un explorador (Office en la web), además de abrir documentos cifrados desde la aplicación de escritorio de Windows. 
+
+Sin embargo, la cuenta de invitado automática no se crea inmediatamente debido a la latencia de replicación. Si especifica direcciones de correo electrónico personales como parte de la configuración de cifrado de la etiqueta, le recomendamos que cree las cuentas de invitado correspondientes en Azure Active Directory. A continuación, informe a estos usuarios de que deben usar esta cuenta para abrir un documento cifrado de la organización.
+
+> [!TIP]
+> Como no puede estar seguro de que los usuarios externos usen una aplicación de cliente de Office admitida, compartir vínculos de SharePoint y OneDrive después de crear cuentas de invitado es un método más confiable para admitir la colaboración segura con usuarios externos.
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Cuando las aplicaciones de Office aplican marcado y cifrado de contenido
 

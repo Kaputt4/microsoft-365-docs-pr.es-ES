@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Obtenga información sobre cómo cambiar el método de pago para su suscripción de empresa.
-ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407973"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432420"
 ---
 # <a name="change-your-payment-method"></a>Cambiar el modo de pago
 
@@ -202,12 +202,6 @@ Puede usar el siguiente procedimiento en cualquier momento para comprobar el mé
 1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 
 2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en la sección **facturación** .
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Usar el centro de administración antiguo para comprobar el método de pago que está configurado
-
-1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">suscripciones</a> de facturación.
-
-2. Busque la suscripción que desea comprobar. El método de pago que está configurado para la suscripción aparece en **método de pago**.
 
 ::: moniker-end
 

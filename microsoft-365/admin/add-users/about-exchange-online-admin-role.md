@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387432"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432140"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
@@ -56,9 +56,10 @@ Si tiene una organización grande, es posible que el administrador de Exchange d
   
  Por ejemplo, el administrador de Exchange podría asignar a un usuario al grupo de roles de administración de detección para que pueda realizar búsquedas en los buzones de datos que cumplan determinados criterios. Para obtener más información, consulte [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) y [Manage role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>Obtener información sobre otros roles de administrador
-    
+## <a name="learn-about-other-admin-role"></a>Obtener información sobre otro rol de administrador
+
+- [Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
+
 - [Acerca del rol de administrador de SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [Acerca del rol de administrador de Skype empresarial](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

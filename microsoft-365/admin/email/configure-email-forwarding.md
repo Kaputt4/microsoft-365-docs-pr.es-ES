@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configure el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office365.
-ms.openlocfilehash: 72eca099f0c7e60efe8f616dfe23201cd46975cf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400129"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432306"
 ---
 # <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -53,9 +53,6 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
     
 2. Seleccione el nombre del usuario cuyo correo electrónico desea reenviar para abrir la página de propiedades. 
@@ -80,7 +77,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
 
 3. Expanda **configuración de correo**y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
 
-4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Haga clic en **Guardar**.
+4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     
     **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
     
@@ -98,7 +95,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
 
 3. Expanda **configuración de correo**y, a continuación, en la sección **reenvío de correo electrónico** , seleccione **Editar**.
 
-4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Haga clic en **Guardar**.
+4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     
     **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
     

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387050"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431658"
 ---
 # <a name="remove-a-former-employee"></a>Quitar un antiguo empleado
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387050"
 ## <a name="sign-out-now"></a>Cerrar la sesión ahora
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 Vea un breve vídeo sobre cómo quitar a un empleado. <br><br>
 
@@ -156,9 +153,6 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
-
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
 2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la pestaña **correo** .
@@ -167,7 +161,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
  
@@ -183,7 +177,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -199,7 +193,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo. 
   
-5. Haga clic en **Guardar**. 
+5. Seleccione **Guardar**. 
     
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -221,7 +215,7 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
     
 5. En la página **detalles del dispositivo móvil** , en **dispositivos móviles**, seleccione el dispositivo móvil, seleccione barrido de borrado de **datos** ![ y, ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) a continuación, seleccione **bloquear**. 
     
-6. Haga clic en **Guardar**. 
+6. Seleccione **Guardar**. 
     
     **Sugerencia**: asegúrese de quitar o deshabilitar el usuario de su servicio de BlackBerry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario. 
     
@@ -233,9 +227,6 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
@@ -287,9 +278,6 @@ Por lo tanto, no sigue pagando una licencia después de que alguien abandone la 
 Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Transcurridos los 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan de forma permanente de Microsoft 365 y no se pueden recuperar. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
@@ -364,9 +352,6 @@ Después de haber guardado y accedido a todos los datos de usuario del antiguo e
 No elimine la cuenta si ha configurado el reenvío de correo electrónico o la ha convertido en un buzón compartido. En ambos casos se necesita la cuenta para anclar el reenvío de correo o el buzón compartido.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 

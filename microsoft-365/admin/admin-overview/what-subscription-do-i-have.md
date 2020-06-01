@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
-ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386750"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431610"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -38,9 +38,6 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
  **¿No es un administrador?** Ver [Qué producto y licencia de Microsoft 365 para empresas tengo?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
