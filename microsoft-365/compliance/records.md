@@ -16,35 +16,35 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Para implementar una estrategia de administración de registros en un Office 365 o en la organización de Microsoft, use las etiquetas de retención que declaran el contenido como un registro. Después, publique o aplique automáticamente la etiqueta registro de retención.
-ms.openlocfilehash: 8dcb3b03dcd908da2a3133d52c1a70ae197eee99
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros de Microsoft 365.
+ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231913"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470585"
 ---
 # <a name="learn-about-records"></a>Obtenga más información sobre los registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-La administración de registros de Microsoft 365 ayuda a las organizaciones a cumplir con sus obligaciones corporativas, jurídicas y reglamentarias, al tiempo que reduce el riesgo y la responsabilidad legal.
+La administración de registros de Microsoft 365 ayuda a su organización a cumplir con las directivas corporativas y las obligaciones legales o reglamentarias, al mismo tiempo que reduce el riesgo y la responsabilidad legal.
 
-En un nivel alto, la declaración de contenido como un registro significa que:
+Cuando el contenido está marcado como un registro:
 
-- El elemento pasa a ser inmutable (un registro no se puede modificar ni eliminar)
+- El elemento pasa a ser inmutable, lo que significa que un registro no se puede modificar ni eliminar.
 
-- Se registran otras actividades sobre el elemento
+- Se registran otras actividades sobre el elemento.
 
-- Los registros se eliminan cuando se supera el período de retención declarado.
+- Usted tendrá la prueba de disposición cuando se eliminen al final de su período de retención.
 
-Puede usar las [etiquetas de retención](labels.md) para clasificar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede publicarlas (de modo que los usuarios puedan aplicarlas al contenido) o aplicarlas automáticamente al contenido que desea clasificar como registro. Para más instrucciones, consulte [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).
+Puede usar las [etiquetas de retención](labels.md) para marcar el contenido como un registro. Una vez que haya creado las etiquetas de retención que declaran registros, puede publicarlas (de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido) o aplicarlas automáticamente al contenido que desee marcar como registro. Para más instrucciones, consulte [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).
 
 Al usar las etiquetas de retención para declarar registros, puede implementar una estrategia de administración de registros uniforme en todo el entorno de Microsoft 365.
 
 Tenga en cuenta lo siguiente respecto a los registros:
 
-  - **Los registros son inmutables**. Se puede aplicar una etiqueta de retención que declara el contenido como un registro en el contenido de Exchange, además de SharePoint y OneDrive para la Empresa. Sin embargo, el [control de versiones de registros](#record-versioning) solo está disponible en SharePoint y en OneDrive, y no en Exchange.
+  - **Los registros son inmutables**. Se puede aplicar una etiqueta de retención que marque el contenido como un registro en el contenido de Exchange, además de SharePoint y OneDrive. Sin embargo, el [control de versiones de registros](#record-versioning) solo está disponible en SharePoint y en OneDrive, y no en Exchange.
 
     En Exchange, el contenido etiquetado como un registro no es mutable hasta su eliminación final. Cuando un elemento de Exchange se etiqueta como un registro, suceden cuatro situaciones:
 
@@ -58,7 +58,7 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
   - **Registros y carpetas**. Puede aplicar una etiqueta de retención a una carpeta de Exchange, SharePoint y OneDrive. Si una carpeta se etiqueta como un registro y se mueve un elemento a la carpeta, el elemento se etiquetará como un registro. Cuando se mueve el elemento fuera de la carpeta, el elemento seguirá etiquetado como un registro.
 
-    Además, si cambia la etiqueta de registro aplicada a una carpeta (en SharePoint y OneDrive) a una etiqueta de retención que no declara el contenido como un registro, los elementos de la carpeta mantienen su etiqueta de registro existente.
+    Además, si cambia la etiqueta de registro aplicada a una carpeta (en SharePoint y OneDrive) a una etiqueta de retención que no declare el contenido como un registro, los elementos de la carpeta mantendrán su etiqueta de registro existente.
 
     Para obtener más información sobre cómo aplicar etiquetas de retención a carpetas de SharePoint y OneDrive, consulte [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
@@ -70,11 +70,11 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
     Si un usuario trata de eliminar un registro en OneDrive, el elemento se mueve a la biblioteca de conservación de documentos, tal y como se describe en [Cómo funciona una directiva de retención con SharePoint y OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive).
 
-  - **Las etiquetas de registros no se pueden quitar**. Cuando se ha aplicado una etiqueta de registro a un elemento, solo el administrador de esa ubicación (por ejemplo, un administrador de la colección de sitios de un sitio de SharePoint) puede quitar la etiqueta de registro.
+  - **Las etiquetas de registros no se pueden quitar**. Después de que se ha aplicado una etiqueta de registro a un elemento, solo el administrador de esa ubicación (por ejemplo, un administrador de la colección de sitios de un sitio de SharePoint) puede quitar la etiqueta de registro.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usar etiquetas de retención para declarar registros
 
-Al crear una etiqueta de retención, puede usarla para clasificar el contenido como un registro:
+Al crear una etiqueta de retención, tiene la opción de usarla para marcar el contenido como un registro:
 
 1. En el Centro de cumplimiento de Microsoft 365, vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
 
@@ -96,9 +96,9 @@ Este es el aspecto que tiene esto cuando se aplica una etiqueta de registro a un
 
 ## <a name="record-versioning"></a>Control de versiones de registros
 
-Una parte esencial de la administración de registros es la capacidad para declarar un documento como un registro y tener ese registro. Al mismo tiempo, la inestabilidad del registro evita que la colaboración se realice en el documento si los usuarios necesitan crear versiones posteriores. Por ejemplo, puede declarar un contrato de ventas como un registro, pero después necesita actualizar el contrato con nuevos términos y declarar la versión más reciente como un nuevo registro, manteniendo aún la versión de registro anterior. Para estos tipos de escenarios, SharePoint Online y OneDrive para la Empresa ahora son compatibles con el *control de versiones de registros*. Las carpetas del Bloc de notas de OneNote no son compatibles.
+Una parte esencial de la administración de registros es la capacidad para declarar un documento como un registro y tener ese registro. Al mismo tiempo, la inestabilidad del registro evita que la colaboración se realice en el documento si los usuarios necesitan crear versiones posteriores. Por ejemplo, puede declarar un contrato de ventas como un registro, pero después necesita actualizar el contrato con nuevos términos y declarar la versión más reciente como un nuevo registro, manteniendo aún la versión de registro anterior. Para estos tipos de escenarios, SharePoint Online y OneDrive admite el *control de versiones de registros*. Las carpetas del Bloc de notas de OneNote no admiten el control de versiones de registros.
 
-Para usar el control de versiones de registros, el primer paso es usar el Centro de cumplimiento de Microsoft 365 para crear y publicar etiquetas de retención que declaren registros para todos los sitios de SharePoint y/o cuentas de OneDrive, o bien puede publicarlas en sitios de SharePoint específicos y/o cuentas de OneDrive. El siguiente paso es aplicar una etiqueta de registro de retención publicada a un documento. Cuando se haya completado este paso, se mostrará la propiedad de documento, llamada *Estado del registro* junto a la etiqueta de retención, y el estado de la grabación inicial estará **bloqueada**. En este punto, puede llevar a cabo una de las acciones siguientes:
+Para usar el control de versiones de registros, el primer paso es usar el Centro de cumplimiento de Microsoft 365 para crear y publicar etiquetas de retención que declaren registros para todos los sitios de SharePoint y las cuentas de OneDrive, o bien puede publicarlas en sitios de SharePoint específicos o cuentas de OneDrive. El siguiente paso es aplicar una etiqueta de registro de retención publicada a un documento. Cuando esto pase, se mostrará la propiedad de documento, llamada *Estado del registro* junto a la etiqueta de retención, y el estado de la grabación inicial estará **bloqueada**. En este punto, puede llevar a cabo una de las acciones siguientes:
 
   - **Edite y declare continuamente versiones individuales del documento como registros, desbloqueando y bloqueando la propiedad Estado del registro**. Solo se conservan las versiones declaradas como registros al establecer la propiedad **Estado del registro** en **bloqueada**. Esto reduce el riesgo de conservar las versiones y copias innecesarias del documento.
 
@@ -106,13 +106,12 @@ Para usar el control de versiones de registros, el primer paso es usar el Centro
 
   - **Mantenga un documento de hoja perenne que contenga todas las versiones**. De forma predeterminada, todos los documentos de SharePoint y OneDrive tienen un historial de versiones disponible en el menú elemento. En esta historia de versiones, puede ver fácilmente las versiones que son registros y ver esos documentos.
 
-El control de versiones de registros está disponible automáticamente para todos los documentos que contengan una etiqueta de retención que declara el elemento como un registro. Cuando un usuario ve las propiedades del documento en el panel de detalles, se activa el **Estado del registro** de **bloqueado** a **desbloqueado**. Este solo clic crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención. Cuando el documento esté desbloqueado, todos los usuarios con permisos podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque se considera un registro declarado. Después de realizar los cambios necesarios, el usuario puede alternar el estado de **Estado del registro** de **Desbloqueado** a **Bloqueado**, de modo que el documento se declare nuevamente un registro y no se pueda editar.
+El control de versiones de registros está disponible automáticamente para todos los documentos que contengan una etiqueta de retención que declara el elemento como un registro. Cuando un usuario ve las propiedades del documento en el panel de detalles, se activa el **Estado del registro** de **bloqueado** a **desbloqueado**. Este solo clic crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención. 
+
+Cuando el documento esté desbloqueado, todos los usuarios con permisos podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque se considera un registro. Después de realizar los cambios necesarios, el usuario puede alternar el estado de **Estado del registro** de **Desbloqueado** a **Bloqueado**, de modo que el documento se declare nuevamente un registro y no se pueda editar.
 <br/><br/>
 
 ![Propiedad de estado de registro en un documento etiquetado como registro](../media/recordversioning8.png)
-
-> [!NOTE]
-> El control de versiones de registros requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se ha declarado como un registro en un sitio de SharePoint o en una cuenta de OneDrive. Los usuarios que tienen acceso de solo lectura no necesitan esta licencia.
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
@@ -165,3 +164,7 @@ Las acciones para bloquear y desbloquear registros se registran en el registro d
 ![Buscar en el registro de auditoría los eventos de control de versiones de registros](../media/recordversioning13.png)
 
 Para obtener más información sobre la búsqueda de estos eventos, vea la sección "Actividades de archivo y de página" en [Buscar el registro de auditoría en el centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+
+## <a name="next-steps"></a>Siguientes pasos
+
+Para obtener instrucciones sobre cómo crear y publicar las etiquetas de retención que contengan la configuración para marcar contenido como un registro, vea [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).
