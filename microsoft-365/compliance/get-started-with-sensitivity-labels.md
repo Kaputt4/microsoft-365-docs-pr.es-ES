@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: a69b71ec364eae4258960c3b33876f0df9530611
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 88b9ad0ea97ff035491f6e2d2ec2ec57b2b8d796
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411027"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432619"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -78,7 +78,7 @@ Use la siguiente documentación para ayudarle con su implementación de etiqueta
 |Use etiquetas de confidencialidad para proteger el contenido de Teams y SharePoint |[Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md)|
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos locales |[Implementación del escáner de Azure Information Protection para clasificar y proteger los archivos automáticamente](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos que están en la nube|[Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los informes que se descargan|[Protección de datos en Power BI (versión preliminar)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los informes que se descargan|[Protección de datos en Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Supervisar y comprender cómo se usan las etiquetas de confidencialidad en la organización|[Información general sobre la clasificación de datos](data-classification-overview.md) <br /><br /> [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)|
 
 
