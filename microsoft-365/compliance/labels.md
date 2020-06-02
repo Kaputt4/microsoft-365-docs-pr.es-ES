@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre cómo las etiquetas de retención clasifican los datos en toda la organización para la gobernanza, y aplique las reglas de retención en base a esa clasificación. También puede utilizar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411047"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432247"
 ---
 # <a name="learn-about-retention-labels"></a>Obtenga información sobre las etiquetas de retención
 
@@ -362,4 +362,6 @@ Hay varias otras características que se han utilizado anteriormente para retene
     
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación) 
     
+## <a name="next-steps"></a>Siguientes pasos
 
+Si está listo para crear y publicar etiquetas de retención, vea [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).

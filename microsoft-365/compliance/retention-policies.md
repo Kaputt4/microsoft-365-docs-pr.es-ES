@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma proactiva si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan condiciones específicas.
-ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412819"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432341"
 ---
 # <a name="learn-about-retention-policies"></a>Información sobre las directivas de retención
 
@@ -178,8 +178,12 @@ Puede encontrar estas directivas en la página de **Directivas** en la página d
 
 ## <a name="related-information"></a>Información relacionada
 
-- [Crear y configurar directivas de retención](create-retention-policies.md)
 - [Obtenga información sobre las etiquetas de retención](labels.md)
 - [Límites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Límites y especificaciones para Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>Siguientes pasos
+
+Si está listo para crear directivas de retención, vea [crear y configurar directivas de retención](create-retention-policies.md).
+
