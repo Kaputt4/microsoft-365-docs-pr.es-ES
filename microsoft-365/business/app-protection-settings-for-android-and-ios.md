@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Obtenga información sobre cómo crear, editar o eliminar una directiva de administración de aplicaciones y proteger los archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67e7aaec5ff5a28f1e2d489913246c1c15c2f7b6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401062"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471207"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
-![Pancarta que apunta a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
+Este artículo se aplica a Microsoft 365 empresa Premium.
 
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 

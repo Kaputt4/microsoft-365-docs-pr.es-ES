@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtenga información sobre cómo configurar las opciones de la Directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows 10 al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 03ae86861ddb0cb83cd39b7834f19e01bf3e99e2
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402742"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470635"
 ---
 # <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
+
+Este artículo se aplica a Microsoft 365 empresa Premium.
 
 Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10. Todos los usuarios que se conecten a un dispositivo de Windows 10, incluidos los dispositivos móviles y los equipos, al iniciar sesión con su cuenta profesional recibirán esta configuración automáticamente. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
   

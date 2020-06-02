@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Para proteger los datos de la empresa en los dispositivos personales de los usuarios, use directivas dirigidas a dispositivos y grupos de seguridad específicos.
-ms.openlocfilehash: 2407db3309ed0967daa6eef9da14a702079d0487
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400898"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471167"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Cómo las directivas de Microsoft 365 para la empresa protegen los datos de la compañía
+
+Este artículo se aplica a Microsoft 365 empresa Premium.
 
 Las directivas que cree son específicas del tipo de dispositivo y se pueden aplicar en grupos de usuarios específicos. Esto quiere decir que podría crear una directiva para aplicarla a sus ejecutivos y otra directiva para aplicarla en el resto de los usuarios.
   

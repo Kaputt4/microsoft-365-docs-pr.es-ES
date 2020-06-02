@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402986"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470533"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -48,7 +48,7 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 
    - **[Agregar el dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (si ha comprado su dominio durante el [registro](sign-up.md), este paso ya se ha realizado).
 
-    - **Agregar usuarios**. Puede Agregar usuarios de las tres maneras siguientes:
+   - **Agregar usuarios**. Puede Agregar usuarios de las tres maneras siguientes:
         - En el [Asistente](set-up.md#add-users-in-the-wizard).
         - Use la sincronización de directorios para [Agregar usuarios con Azure ad Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) si tiene un Active Directory local.
         - También puede [Agregar usuarios más adelante](add-users-m365b.md) en el centro de administración.

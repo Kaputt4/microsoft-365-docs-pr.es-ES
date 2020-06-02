@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo realizar suspensiones en custodios y sus orígenes de datos para conservar el contenido relevante para el caso de eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034131"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477166"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
@@ -40,7 +40,7 @@ Para ver la Directiva de retención de custodios:
    
 2. Vaya a la pestaña **custodios** para agregar custodios en su caso. Para obtener información sobre cómo agregar y poner custodios en espera en un caso de exhibición avanzada de documentos electrónicos, vea [Agregar custodios a un caso de exhibición avanzada](add-custodians-to-case.md)de documentos electrónicos. Si ya ha agregado custodios y los ha colocado en espera, vaya al paso 3.
    
-3. Vaya a la pestaña **suspensiones** y haga clic en **\<CustodianHold HoldId>**.
+3. Vaya a la pestaña **suspensiones** y haga clic en **CustodianHold \<HoldId> **.
    
 4. En la página de control flotante, puede ver las estadísticas de retención para la Directiva. También puede realizar acciones como aplicar una consulta a la retención basada en custodios. Para obtener más información acerca de la creación de una consulta de retención y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
  
@@ -80,7 +80,7 @@ Para crear una retención que no sea de apoyo para un caso de exhibición avanza
      Consulte la sección **p + f** para obtener sugerencias sobre cómo poner Microsoft 365 grupos y Microsoft Teams en espera.
 
     > [!NOTE]
-    > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`(por ejemplo,). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 

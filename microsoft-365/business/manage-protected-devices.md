@@ -28,14 +28,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Aprende a quitar datos de la compañía de los dispositivos administrados mediante directivas de protección, así como restablecer los dispositivos Windows 10 a su configuración de fábrica.
-ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e6ba7352a6a82811e1c79fe29bff35e3da5639e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403106"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471147"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Administración de dispositivos protegidos con Microsoft 365 para empresas
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Administración de dispositivos protegidos con Microsoft 365 empresa Premium
 
 Una vez que un usuario conecta su dispositivo a su organización iniciando sesión con su cuenta profesional en el dispositivo o en las aplicaciones de Office en el dispositivo, puede proteger el dispositivo con las directivas que configure. Los dispositivos conectados se muestran en la página **dispositivos** . En caso de la pérdida o robo de un dispositivo, podrá administrarlo desde esta página para eliminar los datos de la compañía. También puede restablecer a su configuración de fábrica los dispositivos con Windows 10 para borrar la configuración personalizada. 
 

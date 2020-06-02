@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar directivas de acceso condicional para las campañas de Microsoft 365 para agregar una seguridad adicional importante.
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403026"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470655"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurar directivas de acceso condicional
+
+Este artículo se aplica a Microsoft 365 empresa Premium.
 
 Las directivas de [acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) agregan una seguridad adicional importante. Microsoft proporciona un conjunto de directivas de acceso condicional de línea base que se recomiendan para todos los clientes. Las directivas de línea base son un conjunto de directivas predefinidas que ayudan a proteger a las organizaciones frente a muchos ataques comunes. Estos ataques comunes pueden incluir aerosol, reproducción y suplantación de identidad.
 
