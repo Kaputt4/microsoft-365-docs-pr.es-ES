@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262419"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520163"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262419"
 ¿Las [capacidades de investigación y respuesta automatizadas (Air) de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) pierden o detectaron algo erróneamente? Hay pasos que puede llevar a cabo para solucionarlo. Puede:
 - [Informar de un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustar las alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario); y 
-- [Deshacer las acciones de corrección que se tomaron en los dispositivos](#undo-a-remediation-action). 
+- [Deshacer las acciones de corrección que se tomaron](#undo-a-remediation-action). 
 
 Use este artículo como guía. 
 

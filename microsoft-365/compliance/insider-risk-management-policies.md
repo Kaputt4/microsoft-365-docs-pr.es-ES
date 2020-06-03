@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292508"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515890"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -49,12 +49,27 @@ Cuando los empleados dejan la organización, hay indicadores de riesgos específ
 
 ### <a name="data-leaks"></a>Pérdidas de datos
 
-La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles, como unidades USB, archivos de impresión y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
+La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Junto con una directiva de prevención de pérdida de datos (DLP) asignada, esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles como unidades USB, imprimiendo archivos y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
 
->[!IMPORTANT]
->Al usar esta plantilla, debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de su organización. Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con esta plantilla está configurada para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
->
->Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+Cuando se usa la plantilla de **fugas de datos** , se debe asignar una directiva DLP para desencadenar indicadores en la Directiva de riesgos de Insider para alertas de gravedad alta en la organización. Cuando se agrega una alerta de gravedad alta a un registro de auditoría de Office 365, las directivas de riesgo de Insider creadas con esta plantilla examinan automáticamente la alerta DLP de gravedad alta. Si la alerta contiene un usuario dentro del ámbito definido en la Directiva de riesgos de Insider, la Directiva de riesgos de Insider la procesará como una alerta nueva y se le asignará una gravedad de riesgo de Insider y una puntuación de riesgo. Esta alerta se puede evaluar como parte del flujo de trabajo de administración de riesgos de Insider y agregarse a un caso de administración de riesgos de Insider, si es necesario.
+
+Al crear o modificar directivas de DLP para usarlas con directivas de administración de riesgos de Insider, tenga en cuenta las siguientes directrices:
+
+- Priorizar los eventos de exfiltración de datos y ser selectivo al asignar la configuración de **informes de incidentes** a *alta* al configurar reglas en las directivas de DLP. Por ejemplo, el correo electrónico de documentos confidenciales para un competidor conocido debe ser un evento de exfiltración de nivel de alerta *alto* . La sobreasignación del *alto* nivel de la configuración de **informes de incidentes** en otras reglas de directiva de DLP puede aumentar el ruido en el flujo de trabajo de la alerta de administración de riesgos de Insider y dificultar a los investigadores de datos y analistas que evalúen correctamente estas alertas. Por ejemplo, la asignación de niveles de alerta *altos* a las actividades de bloqueo en las directivas de DLP hace que sea más difícil evaluar las actividades y el comportamiento de usuario verdaderamente arriesgados.
+- Asegúrese de comprender y configurar correctamente los usuarios del ámbito en las directivas de DLP y de administración de riesgos de Insider. Solo los usuarios definidos como en el ámbito de las directivas de administración de riesgos de Insider que usen la plantilla de **fugas de datos** tendrán alertas de directivas de DLP de gravedad alta procesadas. Además, la Directiva de administración de riesgos de Insider examinará los usuarios definidos como en el ámbito de una regla para una alerta DLP de alta gravedad. Es importante que no se configuran innecesariamente los usuarios en el ámbito de las directivas de DLP y de riesgos de Insider en un modo conflictivo.
+
+     Por ejemplo, si las reglas de la Directiva DLP se limitan solo a los usuarios del equipo de ventas y la Directiva de riesgos de Insider creada a partir de la plantilla de **fugas de datos** ha definido todos los usuarios como en el ámbito, la Directiva de riesgos de Insider solo procesará alertas de DLP de gravedad alta para los usuarios del equipo de ventas. La Directiva de riesgos de Insider no recibirá alertas de DLP de prioridad alta que los usuarios puedan procesar y que no estén definidas en las reglas de DLP en este ejemplo. Por el contrario, si la Directiva de administración de riesgos de Insider creada a partir de la plantilla de **fugas de datos** está en el ámbito solo para los usuarios del equipo de ventas y la Directiva de DLP asignada está en el ámbito de todos los usuarios, la Directiva de riesgos de Insider solo procesará alertas de DLP de gravedad alta para los miembros del equipo de ventas. La Directiva de administración de riesgos de Insider pasa por alto las alertas de DLP de gravedad alta para todos los usuarios que no estén en el equipo de ventas.
+
+- Asegúrese de que la configuración de la regla de **informes de incidentes** de la Directiva DLP usada para esta plantilla de administración de riesgos de Insider esté configurada para alertas de nivel de gravedad *alto* . El nivel de gravedad *alto* es el indicador de desencadenamiento y no se generarán alertas de administración de riesgos de Insider a partir de reglas de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+
+    ![Configuración de alerta de la Directiva DLP](../media/insider-risk-DLP-policy-high-severity.png)
+
+     >[!NOTE]
+     >Al crear una nueva Directiva de DLP con las plantillas integradas, debe seleccionar la opción **crear o personalizar reglas de DLP avanzadas** para configurar los informes de **incidentes** para el nivel de gravedad *alta* .
+
+Cada directiva de administración de riesgos de Insider creada a partir de la plantilla de **fugas de datos** solo puede tener asignada una directiva DLP. Si tiene más de una directiva de DLP que le gustaría que se procese como alertas de alta gravedad por una directiva de administración de riesgos de Insider, deberá crear una directiva de administración de riesgos de Insiders independiente por directiva de DLP.
+
+Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
 
 ### <a name="offensive-language-in-email"></a>Lenguaje ofensivo en el correo electrónico
 
@@ -66,7 +81,7 @@ La configuración de los riesgos de Insider se aplica a todas las directivas de 
 
 ### <a name="privacy"></a>Privacidad
 
-La protección de la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en la investigación de datos y análisis de revisiones de alertas de riesgo de Insider. Para los usuarios con coincidencias de directivas de riesgos de Insider, puede elegir una de las siguientes opciones:
+La protección de la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en la investigación de datos y análisis de revisiones de alertas de riesgo de Insider. Para los usuarios con una directiva de riesgo de Insider coinciden, puede elegir una de las siguientes opciones:
 
 - **Mostrar anonimizan versiones de nombres de**usuario: los nombres de usuario son anonimizan para evitar que los administradores, investigadores de datos y revisores vean quiénes están asociados a las alertas de directiva. Por ejemplo, un usuario de "el período de gracia de Taylor" aparecería con un Pseudonym aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de Insider. La elección de esta opción anonymizes todos los usuarios con coincidencias de directivas actuales y pasadas y se aplica a todas las directivas. Cuando se selecciona esta opción, la información de Perfil de usuario en la alerta de riesgo de Insider y los detalles de casos no estarán disponibles. Sin embargo, los nombres de usuario se muestran cuando se agregan nuevos usuarios a directivas existentes o cuando se asignan usuarios a nuevas directivas. Si decide desactivar esta opción, los nombres de usuario se mostrarán para todos los usuarios que tengan coincidencias de directivas actuales o pasadas.
 - **No mostrar anonimizan versiones de nombres de usuario**: los nombres de usuario se muestran en todas las coincidencias de directivas actuales y pasadas para alertas y casos. La información del perfil de usuario (el nombre, el cargo, el alias y la organización o departamento) se muestra al usuario para todos los casos y alertas de administración de riesgos del Insider.
@@ -110,9 +125,9 @@ Para ajustar la confidencialidad del clasificador de idioma ofensivo para las di
 
 Las actividades de usuario detectadas por las directivas de riesgo de Insider tienen asignada una puntuación de riesgo específica, que a su vez determina la gravedad de la alerta (baja, media, alta). De forma predeterminada, se generará una determinada cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen según sus necesidades. Para ajustar el volumen de alertas de todas las directivas de administración de riesgos de Insider, elija una de las siguientes opciones:
 
-- **Menos alertas**: verá todas las alertas de gravedad alta, menos alertas de mediana gravedad y no hay gravedad baja. Esto significa que podría omitir algunos verdaderos positivos.
+- **Menos alertas**: verá todas las alertas de gravedad alta, menos alertas de mediana gravedad y no hay gravedad baja. Este nivel de configuración significa que podría omitir algunos verdaderos positivos.
 - **Volumen predeterminado**: verá todas las alertas de gravedad alta y una cantidad equilibrada de alertas de gravedad media y baja.
-- **Más alertas**: verá todas las alertas de gravedad media y alta y la mayoría de las alertas de gravedad baja. Esto puede dar como resultado más falsos positivos.
+- **Más alertas**: verá todas las alertas de gravedad media y alta y la mayoría de las alertas de gravedad baja. Este nivel de configuración puede tener como resultado más falsos positivos.
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 

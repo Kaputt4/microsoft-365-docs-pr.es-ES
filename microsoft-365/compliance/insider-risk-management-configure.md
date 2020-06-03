@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292478"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515767"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -95,14 +95,17 @@ Consulte el tema sobre [Cómo configurar un conector para importar datos de recu
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurar directivas de prevención de pérdida de datos (DLP)
 
-La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a partes no deseadas. Al configurar una directiva de administración de riesgos de Insiders con la plantilla de *fugas de datos* , tiene que asignar una directiva de DLP específica a la Directiva.
+La administración de riesgos de Insider admite el uso de directivas de DLP para ayudar a identificar la exposición intencionada o accidental de información confidencial a las partes no deseadas para las alertas de DLP con nivel de gravedad alta. Al configurar una directiva de administración de riesgos de Insider con la plantilla de **fugas de datos** , debe asignar una directiva de DLP específica a la Directiva.
 
-Esta directiva ayuda a impulsar los indicadores de administración de riesgos de Insider para alertas de DLP de gravedad alta para información confidencial y es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización. Si configura más de una directiva de DLP para su organización, deberá asignar una directiva de administración de riesgos de Insider por directiva de DLP.
-
-Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a estos pasos de configuración.
+Esta directiva ayuda a impulsar los indicadores de administración de riesgos de Insider para alertas de DLP de gravedad alta para información confidencial y es una parte importante de la configuración de la cobertura de administración de riesgos completa en la organización. Para obtener más información sobre la administración de riesgos de Insiders y las consideraciones de planeación e integración de directivas de DLP, consulte [Insider Management](insider-risk-management-policies.md#data-leaks)Policy.
 
 >[!IMPORTANT]
->Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con esta plantilla está configurada para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+>Asegúrese de que ha completado los pasos siguientes:
+>
+>- Comprenda y configure correctamente los usuarios del ámbito en las directivas de DLP y de administración de riesgos de Insider para producir la cobertura de la Directiva que espera.
+>- Asegúrese de que la configuración de **informes de incidentes** en la Directiva DLP para la administración de riesgos de Insiders usada con esta plantilla está configurada para alertas de nivel de gravedad *alto* . No se generarán alertas de administración de riesgos de Insider a partir de directivas de DLP con el campo **informes de incidentes** establecido en *bajo* o *medio*.
+
+Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización. Una vez que haya configurado una directiva de DLP, vuelva a estos pasos de configuración.
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Paso 4 (obligatorio): configurar las opciones de riesgo de Insider
 

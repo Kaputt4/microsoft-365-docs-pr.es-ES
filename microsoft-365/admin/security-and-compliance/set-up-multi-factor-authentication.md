@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información sobre cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432384"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515812"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
   
@@ -40,6 +40,10 @@ Antes de comenzar, determine si estas condiciones especiales se aplican a usted 
 
 - Si tiene servicios de directorio de terceros con los servicios de Federación de Active Directory (AD FS), configure el servidor de Azure MFA. Para obtener más información [, vea escenarios avanzados con la autenticación multifactor de Azure y soluciones de VPN de otros](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) fabricantes.
 
+
+Se pedirá a todos los demás usuarios una autenticación adicional cuando sea necesario. Para obtener más información, visite [la configuración y el método de verificación de dos factores](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
+
+=======
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Paso 1: decidir el método de exigir a los usuarios que usen la MFA
 
 > [!NOTE]

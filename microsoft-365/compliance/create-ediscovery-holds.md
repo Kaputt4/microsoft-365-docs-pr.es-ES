@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: 8993a3e88ab7513713086499a316c92fdb7509cb
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477200"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498333"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -32,12 +32,9 @@ Después de crear una suspensión de exhibición de documentos electrónicos, la
 
 Al crear una suspensión, tiene las siguientes opciones para limitar el contenido que se conserva en las ubicaciones de contenido especificadas:
   
-- Se crea una retención infinita en la que todo el contenido se coloca en retención. Como alternativa, puede crear una retención basada en consultas en la que solo se coloca en retención el contenido que coincide con una consulta de búsqueda.
+- Se crea una retención infinita en la que se coloca en suspensión todo el contenido de las ubicaciones especificadas. Como alternativa, puede crear una retención basada en consultas en la que solo se coloca en retención el contenido en las ubicaciones especificadas que coinciden con una consulta de búsqueda.
 
-- Puede especificar un intervalo de fechas para conservar solo el contenido enviado, recibido o creado dentro del intervalo de fechas. Como alternativa, puede retener todo el contenido independientemente de Cuándo se haya enviado, recibido o creado.
-
-> [!NOTE]
-> Puede tener un máximo de 10.000 suspensiones de eDiscovery en todos los casos de eDiscovery principales de la organización.
+- Puede especificar un intervalo de fechas para conservar solo el contenido enviado, recibido o creado dentro del intervalo de fechas. Como alternativa, puede retener todo el contenido en las ubicaciones especificadas, independientemente de Cuándo se haya enviado, recibido o creado.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Cómo crear una retención de exhibición de documentos electrónicos
 
@@ -64,6 +61,9 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
    b. **Ubicaciones del sitio** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que las cuentas de SharePoint y OneDrive se colocan en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft Teams, Office 365 o un grupo de Yammer. Haga clic en **elegir**y, a continuación, en **listo**.
   
    c. **Carpetas públicas de Exchange.** Mueva el control de alternancia de alternancia ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) a la posición **All** para poner todas las carpetas públicas en la organización de Exchange online en retención. No puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+
+   > [!NOTE]
+   > Debe agregar al menos una ubicación de contenido a la retención. De lo contrario, la característica de retención de exhibición de documentos estáticos mostrará que no hay elementos en espera.
 
 8. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
 

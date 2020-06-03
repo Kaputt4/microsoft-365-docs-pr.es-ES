@@ -14,26 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre los límites en vigor para la solución Advanced eDiscovery en Microsoft 365. Esto incluye los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda cuando se usa la herramienta de búsqueda para recopilar datos de casos.
-ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224667"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520152"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
 En este artículo se describen los límites de la solución Advanced eDiscovery en Microsoft 365.
 
-## <a name="case-limits"></a>Límites de casos
+## <a name="case-and-review-set-limits"></a>Establecer límites en caso y revisión
 
-En la siguiente tabla se enumeran los límites de los casos en eDiscovery avanzado.
+En la tabla siguiente se enumeran los límites de los casos y los conjuntos de revisión en eDiscovery avanzado.
 
 |**Descripción del límite**|**Límite**|
 |:-----|:-----|
 |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).  <br/> |1 millón  <br/> |
-|Tamaño total de archivo por conjunto de carga.  <br/> |100 GB  <br/> |
-|Cantidad total de datos que se cargan en un caso por día.<br/> |2 TB <br/> |
+|Tamaño total de archivo por conjunto de carga. Esto incluye la carga de no de Office 365 en un conjunto de revisión.  <br/> |100 GB  <br/> |
+|Cantidad total de datos cargados en todos los conjuntos de revisión de la organización por día.<br/> |2 TB <br/> |
 |Número máximo de conjuntos de carga por caso.  <br/> |15  <br/> |
 |Número máximo de conjuntos de revisión por caso.  <br/> |20 <br/> |
 |||

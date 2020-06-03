@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Obtenga información acerca de cómo encontrar un nuevo Partner de 365 de Microsoft o obtenga información de contacto de un socio con el que trabajó en el pasado. '
-ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399769"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515800"
 ---
 # <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 
@@ -47,7 +47,7 @@ Si está listo para comprar o renovar Microsoft 365 a través de licencias por v
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>Buscar la información de contacto de un partner con el que haya trabajado anteriormente
 
 > [!NOTE]
-> En algunos casos, puede findinformation en el centro de administración de Microsoft 365 para los socios con los que ha trabajado anteriormente. Tenga presente que esta información puede haber quedado obsoleta. Como procedimiento recomendado, es aconsejable ponerse en contacto con la persona o el departamento responsable de las compras en la organización, para saber con qué partner debe trabajar. 
+> En algunos casos, puede encontrar información en el centro de administración de 365 de Microsoft para socios con los que ha trabajado anteriormente. Tenga presente que esta información puede haber quedado obsoleta. Como procedimiento recomendado, es aconsejable ponerse en contacto con la persona o el departamento responsable de las compras en la organización, para saber con qué partner debe trabajar. 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtener información del asociado en el centro de administración
 

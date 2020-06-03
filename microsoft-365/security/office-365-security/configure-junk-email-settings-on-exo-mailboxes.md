@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352515"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498668"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -42,11 +42,11 @@ Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mo
 Los administradores pueden usar Exchange Online PowerShell para deshabilitar, habilitar y ver el estado de la regla de correo no deseado en los buzones. Los administradores también pueden usar Exchange Online PowerShell para configurar entradas en la colección de listas seguras de los buzones (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados).
 
 > [!NOTE]
-> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema.
+> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de conexiones como parte de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema. Las comprobaciones de filtrado de directivas, filtrado de contenido y protección contra amenazas avanzada (ATP) se aplicarán a los mensajes.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados para poder realizar estos procedimientos. En concreto, necesita la función **destinatarios de correo** (que está asignada a los grupos de roles administración de la **organización**, **Administración de destinatarios**y **destinatarios de correo personalizados** ) o el rol opciones de **usuario** (que se asigna a los grupos de roles administración de la **organización** y **servicio de asistencia** de forma predeterminada). Para agregar usuarios a los grupos de roles de Exchange Online, vea [Modify role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que un usuario con permisos predeterminados puede realizar estos mismos procedimientos en su propio buzón de correo, siempre que tengan [acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
@@ -89,7 +89,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Realice uno de los siguientes procedimientos para confirmar que la regla de correo no deseado se ha habilitado o deshabilitado correctamente en un buzón:
 
-- Reemplace _ \< MailboxIdentity \> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar el valor de la propiedad **Enabled** :
+- Reemplace _\<MailboxIdentity\>_ por el nombre, alias o dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar el valor de la propiedad **Enabled** :
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Realice uno de los siguientes procedimientos para confirmar que los límites de colección de listas seguras se han configurado correctamente en un buzón:
 
-- Reemplace _ \< MailboxIdentity \> _ por el nombre, el alias o la dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar los valores de la propiedad:
+- Reemplace _\<MailboxIdentity\>_ por el nombre, alias o dirección de correo electrónico del buzón y ejecute el siguiente comando para comprobar los valores de la propiedad:
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

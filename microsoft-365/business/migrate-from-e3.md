@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business Premium desde Office 365 E3.
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402243"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515904"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 empresa Premium 
 
@@ -42,7 +42,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Business Premium y
 | Característica    | Soporte en Microsoft 365 Business Premium    | Soporte técnico en Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
+| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | límite de almacenamiento de 50 GB por buzón y archivado ilimitado de Exchange Online    | límite de almacenamiento de 100 GB por buzón y archivado ilimitado de Exchange Online | 
 | Teams    | ![Incluido en Microsoft 365 empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
@@ -78,6 +78,7 @@ No es necesario realizar ningún cambio en la suscripción o los datos actuales 
 - Configuración de suscripción, como los registros DNS y los nombres de dominio.
 - Configuración de autenticación y cuentas de usuario y de grupo, como la autenticación multifactor o las directivas de acceso condicional.
 - Las configuraciones del servicio de productividad y sus datos, como Teams, buzones de correo de Exchange Online, sitios de SharePoint Online, carpetas de OneDrive para la empresa y blocs de notas de OneNote.
+- Las aplicaciones de Office se escalan automáticamente. Licencias modernas de Office 365 comprobará la asignación de licencia del usuario cada 72 horas y convertirá las aplicaciones de Office en la versión que coincida con la suscripción de usuario.
 
 ### <a name="windows-10"></a>Windows 10
 

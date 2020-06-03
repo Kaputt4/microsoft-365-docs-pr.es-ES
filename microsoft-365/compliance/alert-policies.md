@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429223"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520174"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
@@ -42,6 +42,9 @@ A continuación, se presenta una introducción rápida sobre cómo funcionan las
 ![Información general sobre cómo funcionan las directivas de alertas](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un administrador de su organización crea, configura y activa una directiva de alertas mediante la página **directivas de alerta** en el centro de seguridad y cumplimiento. También puede crear directivas de alerta con el cmdlet **New-ProtectionAlert** en el PowerShell del centro de cumplimiento de & de seguridad. Para crear directivas de alerta, debe tener asignado el rol administrar alertas o la configuración de la organización en el centro de seguridad y cumplimiento.
+
+   > [!NOTE]
+   > Tarda hasta 24 horas después de crear o actualizar una directiva de alerta antes de que la directiva pueda desencadenar alertas. Esto se debe a que la Directiva se debe sincronizar con el motor de detección de alertas.
 
 2. Un usuario realiza una actividad que coincide con las condiciones de una directiva de alerta. En el caso de ataques de malware, los mensajes de correo electrónico infectados que se envían a los usuarios de su organización activan una alerta.
 
@@ -81,7 +84,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
 
   - Gobierno de la información
 
-  - Flujo del correo
+  - Flujo de correo
 
   - Permissions
 
@@ -117,7 +120,7 @@ La tabla también indica el plan Office 365 Enterprise y Office 365 US Governmen
 |**Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega**|Genera una alerta cuando se entregan mensajes con phish a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange online mediante la [purga automática de cero horas](../security/office-365-security/zero-hour-auto-purge.md). Esta directiva tiene una configuración de gravedad **informativa** y desencadena automáticamente [investigación y respuesta automatizada en Office 365](https://www.microsoft.com/?ref=go).|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Correo electrónico notificado por el usuario como malware o phish**|Genera una alerta cuando los usuarios de la organización informen de mensajes como correo electrónico de suplantación de identidad mediante el complemento de mensajes de informe. Esta directiva tiene una configuración de gravedad **informativa** . Para obtener más información sobre este complemento, vea [use the Report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Para Office 365 ATP P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y la respuesta automatizadas en Office 365](https://www.microsoft.com/?ref=go).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
 |**Límite de envío de correo electrónico superado**|Genera una alerta cuando una persona de la organización ha enviado más correo del que permite la Directiva de correo no deseado saliente. Suele ser una indicación de que el usuario está enviando demasiado correo electrónico o que la cuenta puede estar en peligro. Esta directiva tiene una configuración de gravedad **media** . Si recibe una alerta generada por esta directiva de alerta, es aconsejable [comprobar si la cuenta de usuario está comprometida](../security/office-365-security/responding-to-a-compromised-email-account.md).|Administración de amenazas|E1/F1/G1, E3/G3 o E5/G5|
-|**Los mensajes se han retrasado**|Genera una alerta cuando Microsoft no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto ocurre, el mensaje se coloca en la cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una configuración de gravedad **alta** .|Flujo del correo|E1/F1/G1, E3/G3 o E5/G5|
+|**Los mensajes se han retrasado**|Genera una alerta cuando Microsoft no puede entregar mensajes de correo electrónico a su organización local o a un servidor asociado mediante un conector. Cuando esto ocurre, el mensaje se coloca en la cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que se han puesto en cola durante más de una hora. Esta directiva tiene una configuración de gravedad **alta** .|Flujo de correo|E1/F1/G1, E3/G3 o E5/G5|
 |**Campaña de malware detectada tras la entrega**|Genera una alerta cuando se entrega un número inusualmente grande de mensajes que contienen malware a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de correo de Exchange Online. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Campaña de malware detectada y bloqueada**|Genera una alerta cuando alguien intenta enviar un número inusualmente elevado de mensajes de correo electrónico que contienen un determinado tipo de malware a los usuarios de la organización. Si se produce este evento, Microsoft bloquea los mensajes infectados y no se entregan a los buzones de correo. Esta directiva tiene una configuración de gravedad **baja** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
 |**Campaña de malware detectada en SharePoint y OneDrive**|Genera una alerta cuando se detecta un volumen inusualmente alto de malware o virus en los archivos ubicados en los sitios de SharePoint o en las cuentas de OneDrive de la organización. Esta directiva tiene una configuración de gravedad **alta** .|Administración de amenazas|Suscripción complementaria E5/G5 o la P2 de Office 365 ATP|
@@ -180,6 +183,12 @@ En la siguiente captura de pantalla se muestra una alerta con cuatro eventos agr
 
 ![Ejemplo de agregación de alertas](../media/AggregatedAlertExample.png)
 
+Tenga en cuenta lo siguiente en cuanto a la agregación de alertas:
+
+- Alertas desencadenadas por la **dirección URL potencialmente malintencionada haga clic en se ha detectado** que la [Directiva de alerta predeterminada](#default-alert-policies) no se agrega. Esto se debe a que las alertas desencadenadas por esta Directiva son únicas para cada usuario y mensaje de correo electrónico.
+
+- En este momento, la propiedad de alerta de **recuento de visitas** no indica el número de eventos agregados para todas las directivas de alerta. Para las alertas desencadenadas por estas directivas de alertas, puede ver los eventos agregados haciendo clic en **Ver lista de mensajes** o **ver actividad** en la alerta. Estamos trabajando en hacer que el número de eventos agregados que aparecen en la propiedad de alerta de **recuento de visitas** esté disponible para todas las directivas de alerta.
+
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos de RBAC necesarios para ver las alertas
 
 Los permisos de control de acceso basado en roles (RBAC) que se asignan a los usuarios de la organización determinan las alertas que puede ver un usuario en la página **Ver alertas** . ¿Cómo se consigue? Las funciones de administración asignadas a los usuarios (según su pertenencia a grupos de roles en el centro de seguridad & cumplimiento) determinan las categorías de alertas que puede ver un usuario en la página **Ver alertas** . Aquí le mostramos otros ejemplos:
@@ -196,7 +205,7 @@ En la siguiente tabla se enumeran las funciones necesarias para ver las alertas 
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla de la sección [directivas de alertas predeterminadas](#default-alert-policies) .
 
-|&nbsp;|Gobierno de la información|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
+|&nbsp;|Gobierno de la información|Prevención de pérdida de datos|Flujo de correo|Permissions|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||

@@ -1,6 +1,6 @@
 ---
 title: La tabla EmailEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre los eventos asociados a los mensajes de correo electrónico de Microsoft en la tabla EmailEvents del esquema de búsqueda avanzada.
+description: Obtenga información sobre los eventos asociados a los correos electrónicos de Microsoft 365 en la tabla EmailEvents del esquema de búsqueda avanzada.
 keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, identificador de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de datos adjuntos, veredicto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633536"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515860"
 ---
 # <a name="emailevents"></a>EmailEvents
 

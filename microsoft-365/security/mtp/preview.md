@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503988"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515872"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -48,7 +48,7 @@ Active la configuración de la experiencia de vista previa para que sea una de l
 2. Seleccione **Microsoft Threat Protection**.
 
 
-3. Opciones de **vista previa** > Active las**características de vista previa**. 
+3. Opciones de **vista previa**Active las  >  **características de vista previa**. 
 
 3. Seleccione **Guardar**.
 
@@ -57,6 +57,8 @@ Sabrá que tiene características de vista previa activadas cuando vea que está
 ## <a name="preview-features"></a>Versión preliminar de las características
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
-- **[Detecciones personalizadas](custom-detections-overview.md)** : Use consultas de búsqueda avanzada para crear reglas que busquen automáticamente la actividad de violaciones y otros elementos de interés a intervalos regulares. Coincidencias con las alertas del desencadenador de consultas y las acciones de respuesta especificadas.
-
 - **[Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)** : obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con la aplicación con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.
+
+- **[Tabla EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** : Use esta tabla para crear consultas de [búsqueda avanzada](advanced-hunting-overview.md) que comprueben las acciones realizadas en los correos electrónicos después de que se hayan entregado a los buzones de correo de los destinatarios.
+
+- **[Función FileProfile ()](advanced-hunting-fileprofile-function.md)** : Úsela en las consultas de [búsqueda avanzada](advanced-hunting-overview.md) para incorporar información de archivo completa.
