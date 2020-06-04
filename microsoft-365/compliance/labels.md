@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre cómo las etiquetas de retención clasifican los datos en toda la organización para la gobernanza, y aplique las reglas de retención en base a esa clasificación. También puede utilizar las etiquetas de retención para implementar una solución de administración de registros para Microsoft 365.
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432247"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545972"
 ---
 # <a name="learn-about-retention-labels"></a>Obtenga información sobre las etiquetas de retención
 
@@ -129,7 +129,9 @@ Además, una etiqueta de retención tiene dos opciones de retención que solo es
   
 - Activar una revisión de la disposición al final del período de retención, de modo que los documentos de SharePoint y OneDrive deben ser revisados antes de que puedan ser eliminados. Para obtener más información, consulte [Revisiones de la disposición](disposition.md#disposition-reviews).
     
-- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Esta opción solo se aplica al contenido de los sitios de SharePoint y las cuentas de OneDrive. Para el correo electrónico de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje, independientemente de la opción que elija aquí.
+- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Cuando se usa esta opción:
+    - Solo se aplica al contenido en los sitios de SharePoint y las cuentas de OneDrive. Para el correo de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje.
+    - No puede cambiar el período de retención después de guardar la etiqueta.
     
 ![Configuración de retención con opciones específicas para etiquetas](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
