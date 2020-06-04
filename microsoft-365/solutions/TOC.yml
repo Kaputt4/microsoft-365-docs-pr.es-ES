@@ -12,8 +12,9 @@
     - name: Información general
       href: foundation-solutions-overview.md
     - name: Proporcionar Microsoft 365 a los trabajadores remotos
-      href: empower-people-to-work-remotely.md
       items:
+        - name: Información general
+          href: empower-people-to-work-remotely.md
         - name: Paso 1. Aumentar la seguridad de inicio de sesión
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Paso 2. Proporcionar acceso remoto
