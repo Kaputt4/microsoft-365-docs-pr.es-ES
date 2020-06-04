@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo ilimitado para buzones de correo de Exchange Online.
-ms.openlocfilehash: 584502092e04822a91bf6d04c77daa277ed70547
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633405"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534922"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Información general sobre el archivado ilimitado
 
@@ -57,7 +57,7 @@ A continuación se muestra una introducción rápida del proceso.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento adicional del archivo?
 
-Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Microsoft 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original.  La Convención de nomenclatura que Microsoft 365 usa para nombrar estas subcarpetas es ** \<el\>nombre de carpeta _yyyy (creado en MMM DD, YYYY h_mm)**, donde:
+Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Microsoft 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original.  La Convención de nomenclatura que Microsoft 365 usa para nombrar estas subcarpetas es ** \<folder name\> _Yyyy (creada en MMM DD, YYYY h_mm)**, donde:
 
 - **yyyy** es el año en que se recibieron los mensajes de la carpeta.
 
@@ -90,7 +90,7 @@ Estos son algunos aspectos que se deben tener en cuenta al usar Outlook o Outloo
 
 - Puede tener acceso a cualquier carpeta del buzón de archivo, incluidas las que se han movido al área de almacenamiento expandido automáticamente.
 
-- Puede buscar elementos que se movieron a un área de almacenamiento adicional solo si busca en la propia carpeta. Esto significa que debe seleccionar la carpeta de archivo en la lista de carpetas para seleccionar la opción **carpeta actual** como ámbito de búsqueda. De forma similar, si una carpeta de un área de almacenamiento con expansión automática contiene subcarpetas, deberá buscar cada subcarpeta por separado.
+- La búsqueda de archivado automático solo está disponible en escritorio de Outlook a partir de la compilación 16.0.12716.10000 de Insiders. La búsqueda está disponible en Outlook para la Web. Al igual que en el caso de los archivos en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional solo mediante la búsqueda en la propia carpeta. Esto significa que debe seleccionar la carpeta de archivo en la lista de carpetas para seleccionar la opción **carpeta actual** como ámbito de búsqueda. De forma similar, si una carpeta de un área de almacenamiento con expansión automática contiene subcarpetas, deberá buscar cada subcarpeta por separado.
 
 - Los recuentos de elementos en Outlook y los recuentos de leídos o no leídos (en Outlook y Outlook en la web) en un archivo de expansión automática podrían no ser precisos.
 

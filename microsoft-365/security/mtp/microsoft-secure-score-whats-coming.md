@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322176"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545939"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>¿Qué viene con la puntuación segura de Microsoft?
 
@@ -30,6 +30,26 @@ Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score-new.m
 
 Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-new.md#whats-new)
 
-## <a name="may-2020"></a>Mayo de 2020
+## <a name="june-2020"></a>Junio de 2020
 
-No hay cambios planeados actualmente
+### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Quitar la acción de mejora para la protección contra amenazas avanzada de Microsoft defender
+
+* Activar las reglas de reducción de la superficie de ataque
+
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Agregar acciones de mejora para la protección contra amenazas avanzada de Microsoft defender
+
+* Impedir que Adobe Reader cree procesos secundarios
+* Usar protección avanzada contra ransomware
+* Bloquear todas las aplicaciones de Office para crear procesos secundarios
+* Impedir que las aplicaciones de Office creen contenido ejecutable
+* Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
+* Bloquear la ejecución de scripts potencialmente ofuscados
+* Bloquear contenido ejecutable del cliente de correo electrónico y Webmail
+* Impedir que la aplicación de comunicación de Office cree procesos secundarios
+* Bloquear procesos no habilitados y no firmados que se ejecutan desde USB
+* Bloquear la persistencia a través de la suscripción de eventos WMI
+* Impedir que las aplicaciones de Office inserten código en otros procesos
+* Bloquear la ejecución de los archivos ejecutables a menos que cumplan un criterio de predominio, edad o lista de confianza
+* Bloquear creaciones de procesos procedentes de PSExec y comandos WMI
+* Bloquear credenciales de robo desde el subsistema de la autoridad de seguridad local de Windows (LSASS. exe)
+* Bloquear llamadas a la API Win32 desde macros de Office

@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209552"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545905"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 
@@ -38,6 +38,18 @@ El mejor método para bloquear a los remitentes varía en el ámbito del impacto
 > Aunque puede usar la configuración de bloqueo de toda la organización para dirigirse a falsos negativos (correo no deseado), también debe enviar esos mensajes a Microsoft para su análisis. Administrar los falsos negativos mediante listas de bloqueo aumenta considerablemente la sobrecarga administrativa. Si usa listas de bloqueo para desviar el correo no deseado perdido, tiene que mantener los [mensajes y los archivos del informe de temas a Microsoft](report-junk-email-messages-to-microsoft.md) en su lista.
 
 Por el contrario, también tiene varias opciones para permitir siempre el correo electrónico de orígenes específicos mediante _listas de remitentes seguros_. Para obtener más información, consulte [Crear listas de remitentes seguros](create-safe-sender-lists-in-office-365.md).
+
+## <a name="email-message-basics"></a>Conceptos básicos de los mensajes de correo electrónico
+
+Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre del mensaje* y el contenido del mensaje. El sobre del mensaje contiene información necesaria para transmitir y entregar el mensaje entre servidores SMTP. El contenido del mensaje contiene el cuerpo del mensaje y campos de encabezado de mensaje, que se denominan de forma colectiva *encabezado del mensaje*. El sobre del mensaje se describe en RFC 5321 y el encabezado del mensaje se describe en RFC 5322. Los destinatarios nunca ven el sobre del mensaje real porque lo genera el proceso de transmisión del mensaje y, en realidad, no forma parte del mensaje.
+
+- La `5321.MailFrom` dirección (también conocida como **correo de** la dirección de, P1 Sender o Envelope Sender) es la dirección de correo electrónico que se usa en la transmisión SMTP del mensaje. Esta dirección de correo electrónico suele registrarse en el campo de encabezado **Return-Path** del encabezado del mensaje (aunque es posible que el remitente designe otra dirección **de correo electrónico de ruta de regreso** ). Si el mensaje no se puede entregar, es el destinatario del informe de no entrega (también conocido como mensaje NDR o de devolución).
+
+- El `5322.From` (también conocido como dirección **de de** o remitente P2) es la dirección de correo electrónico que aparece en el campo **de encabezado de** y es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico.
+
+Con frecuencia, `5321.MailFrom` las `5322.From` direcciones y son las mismas (comunicación de persona a persona). Sin embargo, cuando se envía un correo electrónico en nombre de otra persona, las direcciones pueden ser diferentes.
+
+Listas de remitentes bloqueados y listas de dominios bloqueados en directivas contra correo no deseado en EOP, inspeccione las `5321.MailFrom` `5322.From` direcciones y. Los remitentes bloqueados de Outlook solo usan la `5322.From` dirección.
 
 ## <a name="use-outlook-blocked-senders"></a>Usar los remitentes bloqueados de Outlook
 

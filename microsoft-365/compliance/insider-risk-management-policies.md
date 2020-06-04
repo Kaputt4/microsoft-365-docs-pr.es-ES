@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515890"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534932"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -67,7 +67,7 @@ Al crear o modificar directivas de DLP para usarlas con directivas de administra
      >[!NOTE]
      >Al crear una nueva Directiva de DLP con las plantillas integradas, debe seleccionar la opción **crear o personalizar reglas de DLP avanzadas** para configurar los informes de **incidentes** para el nivel de gravedad *alta* .
 
-Cada directiva de administración de riesgos de Insider creada a partir de la plantilla de **fugas de datos** solo puede tener asignada una directiva DLP. Si tiene más de una directiva de DLP que le gustaría que se procese como alertas de alta gravedad por una directiva de administración de riesgos de Insider, deberá crear una directiva de administración de riesgos de Insiders independiente por directiva de DLP.
+Cada directiva de administración de riesgos de Insider creada a partir de la plantilla de **fugas de datos** solo puede tener asignada una directiva DLP. Considere la posibilidad de crear una directiva de DLP dedicada que combine las distintas actividades que quiera detectar y actúe como desencadenadores para las directivas de riesgo de Insider que usan la plantilla de **fugas de datos** .
 
 Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
 

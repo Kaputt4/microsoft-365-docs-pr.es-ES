@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209540"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545951"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -39,7 +39,7 @@ Las reglas de flujo de correo permiten la máxima flexibilidad para asegurarse d
 > [!IMPORTANT]
 > • Tenga cuidado de supervisar de cerca *las* excepciones que se produzcan en el filtrado de correo no deseado mediante listas de remitentes seguros. <br/><br/> • Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (correo electrónico bueno marcado como correo no deseado), debe considerar el uso de listas de remitentes seguros como una solución temporal que debería evitarse siempre que sea posible. No se recomienda administrar los falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a través de suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener los [mensajes y archivos del informe](report-junk-email-messages-to-microsoft.md) de temas de Microsoft en la lista. <br/><br/> • Para permitir a un dominio enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad), pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP y Outlook inspecciona diferentes propiedades de mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este tema.
 
-Por el contrario, también tiene varias opciones para bloquear el correo electrónico de fuentes específicas usando _listas de remitentes bloqueados_. Para obtener más información, vea [Create Block Sender lists in EOP](create-block-sender-lists-in-office-365.md).
+Por el contrario, también tiene varias opciones para bloquear el correo electrónico de fuentes específicas usando _listas de remitentes bloqueados_. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
 ## <a name="recommended-use-mail-flow-rules"></a>Recomenda Usar reglas de flujo de correo
 
@@ -66,13 +66,13 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
    - **El remitente** \> **es interno/externo** \> **Fuera de la organización**: esta condición es implícita, pero es correcto usarla para tener en cuenta los servidores de correo electrónico locales que podrían no estar configurados correctamente.
 
-   - **El asunto o el cuerpo** \> el **asunto o el cuerpo incluye cualquiera de estas palabras** \> \<palabras clave \> : si puede restringir aún más los mensajes por palabras clave o frases en la línea de asunto o en el cuerpo del mensaje, puede usar esas palabras como condición.
+   - **El asunto o el cuerpo** \> el **asunto o el cuerpo incluye cualquiera de estas palabras** \> \<keywords\>: Si puede restringir aún más los mensajes por palabras clave o frases en la línea de asunto o en el cuerpo del mensaje, puede usar esas palabras como condición.
 
 4. **Acción**: configure ambas acciones en la regla:
 
    a. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
 
-   b. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre**de encabezado \< : \> **valor de encabezado**CustomHeaderName: \< CustomHeaderValue \> .
+   b. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
 
       Por ejemplo, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si tiene más de un dominio en la regla, puede personalizar el texto del encabezado según corresponda.
 
@@ -103,7 +103,7 @@ Si no puede usar reglas de flujo de correo como se ha descrito anteriormente, la
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Usar listas de remitentes permitidos o listas de dominios permitidas
 
-La opción menos deseable es usar la lista de remitentes permitidos o la lista de dominios permitidos en las directivas contra correo no deseado. Debe evitar esta opción *si es posible porque los* remitentes omiten todo el correo no deseado, la suplantación de identidad y la protección contra phish, y la autenticación de remitente (SPF, DKIM y DMARC). Este método es el más adecuado para las pruebas temporales únicamente. Puede encontrar los pasos detallados en [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md) .
+La opción menos deseable es usar la lista de remitentes permitidos o la lista de dominios permitidos en las directivas contra correo no deseado. Debe evitar esta opción *si es posible porque los* remitentes omiten todo el correo no deseado, la suplantación de identidad y la protección contra phish, y la autenticación de remitente (SPF, DKIM y DMARC). Este método es más adecuado solo para las pruebas temporales. Puede encontrar los pasos detallados en [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md) .
 
 El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
@@ -118,7 +118,7 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 - El `5322.From` (también conocido como dirección **de de** o remitente P2) es la dirección de correo electrónico que aparece en el campo **de encabezado de** y es la dirección de correo electrónico del remitente que se muestra en los clientes de correo electrónico.
 
-Con frecuencia, `5321.MailFrom` las `5322.From` direcciones y son las mismas (comunicación de persona a persona). No obstante, cuando el correo electrónico se envía en nombre de otra persona, las direcciones son frecuentemente diferentes. Esto generalmente ocurre con mucha frecuencia en mensajes de correo masivos.
+Con frecuencia, `5321.MailFrom` las `5322.From` direcciones y son las mismas (comunicación de persona a persona). Sin embargo, cuando se envía un correo electrónico en nombre de otra persona, las direcciones pueden ser diferentes. Esto ocurre con más frecuencia para los mensajes de correo masivo.
 
 Por ejemplo, supongamos que Blue Yonder Airlines ha contratado el viaje de Ana para enviar su publicidad por correo electrónico. El mensaje que recibe en la bandeja de entrada tiene las siguientes propiedades:
 
