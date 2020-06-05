@@ -16,18 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta de búsqueda de contenido eDiscovery para buscar elementos importados a los buzones en Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar determinados tipos de datos de terceros. En este artículo se enumeran los valores que se pueden usar en una consulta de palabras clave para buscar en los tipos de datos de terceros que se pueden importar a Microsoft 365.
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942973"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564973"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>Usar la búsqueda de contenido para buscar datos importados de terceros
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Usar la búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 
-Puede usar la [herramienta de búsqueda de contenido eDiscovery](content-search.md) en el centro de seguridad & cumplimiento para buscar elementos importados a los buzones en Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una retención de exhibición de documentos electrónicos basada en consultas para conservar los datos de terceros. 
+Puede usar la [herramienta de búsqueda de contenido eDiscovery](content-search.md) en el centro de seguridad & cumplimiento para buscar elementos importados a los buzones en Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una retención de exhibición de documentos electrónicos basada en consultas para conservar los datos de terceros.
   
-Para obtener más información acerca de la importación de datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, vea [trabajar con un partner para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md). 
+Para obtener más información sobre cómo trabajar con un partner para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, vea [trabajar con un partner para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md).
+
+> [!IMPORTANT]
+> Las instrucciones de este artículo solo se aplican a los datos de terceros importados por un conector de socio personalizado. Este artículo no se aplica a los datos de terceros que se importan mediante [conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors) en el centro de cumplimiento de Microsoft.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Crear una consulta para buscar en todos los datos de terceros
 
@@ -55,9 +58,9 @@ Por ejemplo, para buscar datos de Facebook que contengan la palabra "Contoso" en
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden buscar y el valor que se `itemclass:` debe usar para la propiedad Message para buscar específicamente ese tipo de datos de terceros. La sintaxis de consulta no distingue mayúsculas de minúsculas. 
+En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden buscar y el valor que se debe usar para la `itemclass:` propiedad Message para buscar específicamente ese tipo de datos de terceros. La sintaxis de consulta no distingue mayúsculas de minúsculas. 
   
-|**Tipo de datos de terceros**|**Valor de `itemclass:` la propiedad**|
+|**Tipo de datos de terceros**|**Valor de la `itemclass:` propiedad**|
 |:-----|:-----|
 |APUNTA  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Cuadro  <br/> | `ipm.externaldata.Box*` <br/> |
-|Servidor de &amp; presencia de mensajería instantánea de Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Servidor de presencia de mensajería instantánea de Cisco &amp;  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud para Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Conexión directa  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

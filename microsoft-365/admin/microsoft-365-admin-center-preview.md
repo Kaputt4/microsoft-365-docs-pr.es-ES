@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Obtenga información sobre el centro de administración de Microsoft 365.
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432212"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560428"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -54,8 +54,6 @@ A medida que estén disponibles nuevas características en el centro de administ
 ### <a name="turn-on-targeted-release"></a>Activar la versión dirigida
 
 1. Inicie sesión en [admin.Microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **configuración** del perfil de la \> **organización**.
-
-1. Inicie sesión en [portal.Partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), vaya al panel de navegación y seleccione **configuración** del perfil de la \> **organización**.
 
 2. Vaya a la tarjeta **preferencias de versión** y, a continuación, seleccione **Editar**. 
     
