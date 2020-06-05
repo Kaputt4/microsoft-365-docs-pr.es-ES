@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351878"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566733"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -173,8 +173,4 @@ Si no ve datos en los informes de ATP, compruebe que las directivas estén corre
 
 [Informes y información en el centro de seguridad y &amp; cumplimiento](reports-and-insights-in-security-and-compliance.md)
   
-[Crear una programación para un informe en el centro de seguridad y &amp; cumplimiento](create-a-schedule-for-a-report.md)
-
-[Configurar y descargar un informe personalizado en el centro de seguridad y &amp; cumplimiento](set-up-and-download-a-custom-report.md)
-
 [Permisos de funciones (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

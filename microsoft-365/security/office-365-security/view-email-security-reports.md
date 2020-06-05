@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e62d64ec062653c5292f98c2456cd26275916dca
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208518"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566745"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -256,7 +256,3 @@ Si no ve datos en los informes, compruebe que las directivas estén correctament
 [Protección contra correo no deseado de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 [Informes y información en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
-
-[Crear una programación para un informe en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
-
-[Configurar y descargar un informe personalizado en el centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)

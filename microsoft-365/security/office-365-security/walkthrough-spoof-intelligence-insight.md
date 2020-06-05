@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo funciona el análisis de inteligencia de suplantación de identidad, incluido cómo determinar rápidamente qué remitentes envían de forma legítima un correo no autenticado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208469"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566709"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial: información de inteligencia sobre la simulación de ATP en Microsoft 365
 
@@ -102,9 +102,3 @@ Por ejemplo, si agrega el siguiente par de dominios a la lista de permitidos del
 ## <a name="related-topics"></a>Temas relacionados
 
 [Protección contra suplantación de identidad (phishing) en Microsoft 365](anti-spoofing-protection.md)
-
-[Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
-
-[Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
-
-[Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)

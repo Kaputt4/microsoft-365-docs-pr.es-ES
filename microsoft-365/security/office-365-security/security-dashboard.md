@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208041"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566721"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -47,11 +47,12 @@ El widget de Resumen de administración de amenazas le indica de un vistazo cóm
 ![Panel de seguridad: widget de Resumen de administración de amenazas](../../media/SecDash-ThreatMgmtSummary.png)
 
 La información que verá en el Resumen de administración de amenazas depende de lo que incluya la suscripción. En la tabla siguiente se describe la información que se incluye para Office 365 E3 y Office 365 E5.
-|||
+
+
+|Office 365 E3 |Office 365 E5 |
 |---|---|
-|**Office 365 E3**|**Office 365 E5**|
 |Mensajes de malware bloqueados<br/>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br><br><br><br>|Mensajes de malware bloqueados<br>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br>Malware de cero días bloqueado<br>Mensajes de suplantación de identidad avanzada detectados<br>URL malintencionadas bloqueadas|
-|
+
 
 Para ver o acceder al widget de Resumen de administración de amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
@@ -63,12 +64,10 @@ El widget de estado de protección contra amenazas muestra la efectividad de la 
 
 Los detalles dependen de si su suscripción a Microsoft 365 incluye [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) con o sin [Office 365 protección contra amenazas avanzada](office-365-atp.md) (ATP).
 
-|||
+|Si su suscripción incluye...|Verá estos detalles|
 |---|---|
-|**Si su suscripción incluye...**|**Verá estos detalles**|
 |EOP pero no Office 365 ATP|Correo electrónico malintencionado detectado y bloqueado por EOP.<br><br> Consulte [Informe de estado de protección contra amenazas (EOP)](view-email-security-reports.md#threat-protection-status-report).|
 |ATP de Office 365|Contenido malintencionado y correo electrónico malintencionado detectados y bloqueados por EOP y a ATP de Office 365<br><br>Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, la [depuración automática de cero horas](zero-hour-auto-purge.md)y las características de ATP (incluidos [vínculos seguros](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)y [protección contra phishing ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Consulte [Informe de estado de protección contra amenazas (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
-|
 
 Para ver o acceder al widget de estado de protección contra amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
@@ -80,14 +79,13 @@ El widget global Week Threat DETECTIONS muestra el número de amenazas que se de
 
 Las métricas se calculan como se describe en la siguiente tabla:
 
-|||
+|Métrica|Cómo se calcula |
 |---|---|
-|**Métrica**|**Cómo se calcula**|
 |Mensajes examinados|Número de mensajes de correo electrónico examinados multiplicado por el número de destinatarios|
 |Amenazas detenidas|Número de mensajes de correo electrónico identificados como que contienen malware multiplicado por el número de destinatarios|
 |Bloqueado por [ATP](office-365-atp.md)|Número de mensajes de correo electrónico bloqueados por ATP multiplicado por el número de destinatarios|
 |Eliminado tras la entrega|Número de mensajes eliminados por [purga automática de cero horas](zero-hour-auto-purge.md) multiplicado por el número de destinatarios|
-|
+
 
 ## <a name="malware"></a>Malware
 
@@ -105,9 +103,9 @@ Por ejemplo, es posible que vea que se están entregando mensajes de correo elec
 
 ## <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
-Si la suscripción de su organización incluye [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. El equipo de seguridad de su organización puede usar la información de esta sección para comprender las campañas emergentes, investigar las amenazas y administrar los incidentes.
+Si la suscripción de su organización incluye [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. Estas herramientas incluyen [capacidades automatizadas de investigación y respuesta](automated-investigation-response-office.md). La investigación y la respuesta automatizadas pueden ser útiles en escenarios como el [direccionamiento rápido de cuentas de usuario en peligro](address-compromised-users-quickly.md).
 
-![La inteligencia sobre amenazas ayuda a comprender los ataques dirigidos a la organización](../../media/threatintelwidget.png)
+Para obtener más información, vea Introducción al [uso de investigación y respuesta automatizadas (Air) en Office 365](office-365-air.md).
 
 ## <a name="trends"></a>Tendencias
 
