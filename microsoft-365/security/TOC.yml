@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: Introducción al Panel de seguridad
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: 'Tutorial: desde un informe detallado a un reporte'
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: 'Tutorial: desde un reporte a un informe detallado'
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: 'Tutorial: desde un panel o a un reporte'
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Crear una programación para un informe
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Administrar la programación para varios informes
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Configurar y descargar un informe personalizado
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Descargar informes existentes
-                      href: ./office-365-security/download-existing-reports.md
-                - name: Ver información sobre los archivos malintencionados
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Introducción al Panel de seguridad
+              href: ./office-365-security/security-dashboard.md
+            - name: Ver información sobre los archivos malintencionados
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Protección contra amenazas avanzada
           href: ./office-365-security/office-365-atp.md
           items:
