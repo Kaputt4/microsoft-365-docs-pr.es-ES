@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear, publicar y aplicar automáticamente etiquetas de retención para retener lo que se necesita, eliminar lo que no se necesita y declarar un elemento como un registro en el entorno de Office 365.
-ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
-ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408472"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545962"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>Crear, publicar y aplicar automáticamente etiquetas de retención
 
@@ -56,13 +56,13 @@ Estos permisos solo son necesarios para crear y aplicar etiquetas de retención 
 
 2. Siga las instrucciones del asistente. Si utiliza la administración de registros:
     
-    - Para obtener información sobre los descriptores del plan de archivos, consulte [Descripción general del administrador del plan de archivos](file-plan-manager.md) 
+    - Para obtener información sobre los descriptores del plan de archivos, consulte [Usar plan de archivos para administrar etiquetas de retención](file-plan-manager.md) 
     
     - Para utilizar la etiqueta de retención para declarar el contenido como un registro, active la casilla de verificación**Utilizar la etiqueta para clasificar el contenido como "Registro"**.
 
 3. Repita estos pasos para crear más etiquetas.
 
-Para editar una etiqueta existente, selecciónela, y luego seleccione **Editar etiqueta**. Esto inicia el mismo asistente, que le permite cambiar las descripciones de las etiquetas y los ajustes en el paso 2.
+Para editar una etiqueta existente, selecciónela y después seleccione **Editar etiqueta** para iniciar el mismo asistente que le permite cambiar las descripciones de las etiquetas y cualquier [configuración elegible](#updating-retention-labels-and-their-policies) del paso 2. Como alternativa, seleccione cualquiera de las opciones disponibles de **Editar** para ir directamente a la página correspondiente y actualizar.
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>Publicar etiquetas de retención creando una directiva de etiquetas de retención
 
@@ -81,6 +81,8 @@ Publicar etiquetas de retención para que puedan ser aplicadas manualmente por l
 2. Siga las instrucciones del asistente.
     
     Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](labels.md#retention-label-policies-and-locations). 
+
+Para editar una directiva de etiqueta de retención existente, selecciónela y después seleccione **Editar directiva** para iniciar el mismo asistente que le permite cambiar la descripción de la directiva y las [configuraciones elegibles](#updating-retention-labels-and-their-policies) del paso 2. Como alternativa, seleccione cualquiera de las opciones disponibles de **Editar** para ir directamente a la página correspondiente y actualizar.
 
 ## <a name="auto-apply-a-retention-label"></a>Aplicar automáticamente una etiqueta de retención
 
@@ -101,6 +103,8 @@ Aplica automáticamente una etiqueta de retención, basada en las condiciones qu
     Para obtener información sobre la configuración de las condiciones que aplican automáticamente la etiqueta de retención, consulte la sección [Configuración de las condiciones para la aplicación automática de etiquetas de retención en](#configuring-conditions-for-auto-apply-retention-labels) esta página.
     
     Para obtener información sobre las ubicaciones compatibles con las etiquetas de retención, vea la sección [Etiquetas de retención y ubicaciones](labels.md#retention-label-policies-and-locations).
+
+Para editar una directiva de etiqueta de aplicación automática existente, selecciónela y después seleccione **Editar directiva** para iniciar el mismo asistente que le permite cambiar la descripción de la directiva y las [configuraciones elegibles](#updating-retention-labels-and-their-policies) del paso 2. Como alternativa, seleccione cualquiera de las opciones disponibles de **Editar** para ir directamente a la página correspondiente y actualizar.
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configurar las condiciones para la aplicación automática de etiquetas de retención
@@ -217,7 +221,11 @@ Si las etiquetas no aparecen en Outlook en la Web y cree que tendrían que apare
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Actualización de las etiquetas de retención y sus directivas
 
-Si edita una etiqueta de retención, una directiva de etiquetas de retención o una directiva de aplicación automática y la etiqueta de retención ya se aplica al contenido, la configuración actualizada se aplicará automáticamente a este contenido además del contenido recién etiquetado.
+Cuando edita una etiqueta de retención, una directiva de etiquetas de retención o una directiva de aplicación automática y la etiqueta de retención o directiva ya se aplica al contenido, la configuración actualizada se aplicará automáticamente a este contenido además del contenido recién identificado.
+
+Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar algunas opciones de configuración, entre las que se incluyen:
+- La configuración de retención excepto el período de retención, a menos que haya configurado la etiqueta para conservar o eliminar el contenido en función de cuándo se creó.
+- La opción para clasificar como un registro.
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>Encuentra los cmdlets de PowerShell para las etiquetas de retención
 

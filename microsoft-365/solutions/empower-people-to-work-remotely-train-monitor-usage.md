@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 14a46b77c739dfb2caaf171f5798b9cabfef393c
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160731"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560440"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso
 
@@ -43,7 +43,7 @@ En las semanas posteriores a la formación:
 - Responder rápidamente a los comentarios de los trabajadores y ajustar las directivas y las configuraciones.
 - Analizar el uso de Teams, el correo electrónico, los sitios de SharePoint y las carpetas de OneDrive y compararlo con las expectativas de uso previas.
 
-Volver a dar formación a los usuarios que lo necesiten.
+Luego, volver a dar formación a los usuarios que lo necesiten.
 
 ## <a name="results-of-step-6"></a>Resultado del paso 6
 

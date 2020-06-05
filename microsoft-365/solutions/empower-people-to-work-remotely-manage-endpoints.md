@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160803"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560498"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 3. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
-Con los trabajadores remotos, hay que dar soporte a un número cada vez mayor de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece un espacio de trabajo moderno y funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
+Con los trabajadores remotos, hay que dar soporte a un número cada vez mayor de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
 
 Endpoint Manager proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
@@ -66,8 +66,10 @@ Para obtener más información, vea esta [introducción a Windows Autopilot](htt
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Recursos técnicos administrativos para la administración de puntos de conexión
 
-- [Inscribir dispositivos administrados por razones de seguridad, aprovechar la configuración de aplicaciones para los dispositivos no administrados y usar directivas de dispositivos y aplicaciones](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
-- [Cómo inscribir diferentes tipos de dispositivos para la administración de dispositivos móviles (MDM)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [Vídeo 3.ª parte sobre la administración de dispositivos con Windows 10 para trabajadores remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Vídeo 5.ª parte sobre la administración de los exploradores y los equipos de escritorio de los usuarios remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Implementar una infraestructura de movilidad para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Cómo inscribir diferentes tipos de dispositivos para la administración de dispositivos móviles](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Cómo instruir a los usuarios finales sobre Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>Resultados del paso 3
