@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP) independiente. Este informe registra Cuándo un administrador agrega o quita miembros de grupos de roles de administrador, EOP registra cada ocurrencia.
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350944"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587369"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP independiente
 
@@ -54,7 +54,7 @@ Ejecute el informe de grupo de roles de administrador para buscar los cambios en
 
 Si se encuentran cambios con los criterios especificados, aparecerán en el panel de resultados. Haga clic en un grupo de roles de los resultados de la búsqueda para ver los cambios en el panel de detalles.
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Si se ejecutó correctamente un informe de grupo de roles de administrador, los grupos de roles que cambiaron dentro del intervalo de fechas se muestran en el panel de resultados de la búsqueda. Si no hay resultados, entonces no se hicieron cambios a los grupos de funciones dentro del intervalo de fechas especificado. Si cree que debería haber resultados, cambie el intervalo de fechas y vuelva a ejecutar el informe.
 
@@ -74,7 +74,7 @@ En este ejemplo, la cuenta de usuario Administrador realizó los siguientes camb
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Usar Exchange Online PowerShell independiente para buscar entradas de registro de auditoría
 
-Puede usar Exchange Online PowerShell para buscar entradas de registro de auditoría que cumplan los criterios especificados. Para obtener una lista de los criterios de búsqueda, consulte [Registro de auditoría de administrador](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Este procedimiento usa el cmdlet **Search-AdminAuditLog** y muestra los resultados de la búsqueda en Exchange Online PowerShell. Utilice este cmdlet cuando tenga que devolver un conjunto de resultados que supera los límites definidos en el cmdlet **New-AdminAuditLogSearch** o en los Informes de auditoría de la EAC.
+Puede usar Exchange Online PowerShell para buscar entradas de registro de auditoría que cumplan los criterios especificados. Para obtener una lista de los criterios de búsqueda, consulte criterios de búsqueda de [Search-AdminAuditLog](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). Este procedimiento usa el cmdlet **Search-AdminAuditLog** y muestra los resultados de la búsqueda en Exchange Online PowerShell. Utilice este cmdlet cuando tenga que devolver un conjunto de resultados que supera los límites definidos en el cmdlet **New-AdminAuditLogSearch** o en los Informes de auditoría de la EAC.
 
 Para buscar en el registro de auditoría los criterios que especifique, utilice la siguiente sintaxis.
 
@@ -119,7 +119,7 @@ Para obtener información más detallada acerca de la sintaxis y los parámet
 
 ### <a name="view-details-of-audit-log-entries"></a>Ver los detalles de las entradas del registro de auditoría
 
-El cmdlet **Search-AdminAuditLog** devuelve los campos descritos en la sección "Contenido del registro de auditoría" de [Registro de auditoría de administrador](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Entre los campos que devuelve el cmdlet, **CmdletParameters** y **ModifiedProperties** contienen información adicional que no se puede ver de manera predeterminada.
+El cmdlet **Search-AdminAuditLog** devuelve los campos descritos en el [contenido del registro de auditoría](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Entre los campos que devuelve el cmdlet, **CmdletParameters** y **ModifiedProperties** contienen información adicional que no se puede ver de manera predeterminada.
 
 Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties** siga los pasos que se describen a continuación. O bien, puede usar el procedimiento que se indica en **usar Exchange Online PowerShell para buscar entradas de registro de auditoría y enviar los resultados a un destinatario** más adelante en este tema para crear un archivo XML.
 

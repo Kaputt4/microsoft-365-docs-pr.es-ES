@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: Este tema le guiará a través de la configuración recomendada para la configuración de todos los inquilinos que afecten a la seguridad de su entorno de Microsoft 365.
-ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043362"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588057"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para mejorar la seguridad
 
@@ -73,7 +73,7 @@ Muchos de los controles de seguridad y protección en el centro de administraci�
 ||||
 |---|---|---|
 |**Área**|**Incluye una directiva predeterminada**|**Recomendación**|
-|**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware mediante el bloqueo de los tipos de archivo ejecutables y los tipos de archivo de Office que contienen macros. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consulte estos temas adicionales: <br/>* [Proteger contra ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>* [Malware y protección contra ransomware en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Recuperarse de un ataque de ransomware en Office 365](recover-from-ransomware.md) <br/><br/> Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware mediante el bloqueo de los tipos de archivo ejecutables y los tipos de archivo de Office que contienen macros. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consulte estos temas adicionales: <br/>* [Proteger contra ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Malware y protección contra ransomware en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Recuperarse de un ataque de ransomware en Office 365](recover-from-ransomware.md) <br/><br/> Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Habilitar la autenticación moderna**|No|La autenticación moderna es un requisito previo para el uso de multi-factor Authentication (MFA). Se recomienda MFA para proteger el acceso a los recursos en la nube, incluido el correo electrónico. <br/><br/> Vea estos temas: <br/>* [Habilitar o deshabilitar la autenticación moderna en Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype empresarial online: habilitar el inquilino para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016, SharePoint Online y OneDrive para la empresa. <br/><br/> Más información: [Cómo funciona la autenticación moderna para las aplicaciones cliente de office 2013 y office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
@@ -133,7 +133,7 @@ Más información:
 
 ![Panel de Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 
 En estos artículos y guías se proporciona información preceptiva adicional para proteger el entorno de Microsoft 365:
 

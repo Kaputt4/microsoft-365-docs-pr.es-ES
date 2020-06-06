@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento, incluidos información, informes y widgets.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034151"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588021"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -57,19 +57,19 @@ El panel de flujo de correo está disponible para:
 
 - Miembros del **rol de administrador de flujo de correo** en el centro de seguridad & cumplimiento. Si este rol se asigna explícitamente a un usuario que no es miembro de las funciones de administrador global o administrador de Exchange:
 
-  - El usuario debe iniciar sesión en el centro de seguridad & cumplimiento directamente [https://protection.office.com](https://protection.office.com)en.
+  - El usuario debe iniciar sesión en el centro de seguridad & cumplimiento directamente en [https://protection.office.com](https://protection.office.com) .
 
   - El usuario solo tendrá permiso de solo lectura en el panel de flujo de correo.
 
   - El usuario no tendrá acceso al centro de administración de Microsoft 365.
 
-Para obtener más información acerca del rol de administrador global, vea [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Para obtener más información acerca del rol de administrador global, vea [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 Para obtener información sobre cómo asignar roles de seguridad & el centro de cumplimiento a los usuarios, vea [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 
-1. Vaya al centro de seguridad & cumplimiento en [https://protection.office.com](https://protection.office.com).
+1. Vaya al centro de seguridad & cumplimiento en [https://protection.office.com](https://protection.office.com) .
 
 2. Expanda **flujo de correo** y seleccione **Panel**.
 

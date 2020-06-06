@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Comprenda lo que necesita saber antes de pasar por el proceso de registro de Office 365. '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386762"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579174"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: ayuda de administración
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386762"
 
 Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
   
-Vea una introducción rápida de los tres planes de Microsoft 365 para empresas, o desplácese hacia abajo para obtener más información.
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Regístrese en Microsoft 365 para empresas para que su equipo pueda empezar a usar las últimas versiones de Word, Excel, PowerPoint y otros programas de Office en su empresa.
-  
-Vea una introducción rápida de los tres planes más idóneos para su empresa. o Desplázate hacia abajo para obtener más información.
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 

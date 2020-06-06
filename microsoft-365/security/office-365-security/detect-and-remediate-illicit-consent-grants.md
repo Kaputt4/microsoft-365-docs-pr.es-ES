@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito que concede un ataque en Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034833"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587501"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones de consentimiento ilícito
 
@@ -90,7 +90,7 @@ Esto le mostrará las aplicaciones que se asignan al usuario y qué permisos tie
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Pasos para hacer que los usuarios enumeren el acceso a la aplicación
 
-Pida a los usuarios que https://myapps.microsoft.com vayan a y revisen su propio acceso a la aplicación. Deben poder ver todas las aplicaciones con acceso, ver detalles sobre ellas (incluido el ámbito de acceso) y poder revocar los privilegios de aplicaciones sospechosas o ilícitas.
+Pida a los usuarios que vayan a https://myapps.microsoft.com y revisen su propio acceso a la aplicación. Deben poder ver todas las aplicaciones con acceso, ver detalles sobre ellas (incluido el ámbito de acceso) y poder revocar los privilegios de aplicaciones sospechosas o ilícitas.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Pasos para hacerlo con PowerShell
 
@@ -158,7 +158,7 @@ Una vez que haya identificado una aplicación con permisos de ilícitas, tiene v
 
 - También puede deshabilitar el inicio de sesión para la cuenta afectada por completo, que a su vez deshabilitará el acceso a la aplicación a los datos de esa cuenta. Esto no es ideal para la productividad del usuario final, por supuesto, pero si está trabajando para limitar rápidamente el impacto, puede ser una corrección viable a corto plazo.
 
-- Puede desactivar las aplicaciones integradas para su arrendamiento. Se trata de un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en un espacio empresarial. Esto evita que los usuarios concedan de forma inadvertida acceso a una aplicación malintencionada. Esto no es muy recomendable ya que perjudica seriamente la capacidad de los usuarios de ser productivo con aplicaciones de terceros. Para ello, siga los pasos que se indican en [activar o desactivar las aplicaciones integradas](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
+- Puede desactivar las aplicaciones integradas para su arrendamiento. Se trata de un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en un espacio empresarial. Esto evita que los usuarios concedan de forma inadvertida acceso a una aplicación malintencionada. Esto no es muy recomendable ya que perjudica seriamente la capacidad de los usuarios de ser productivo con aplicaciones de terceros. Para ello, siga los pasos que se indican en [activar o desactivar las aplicaciones integradas](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 

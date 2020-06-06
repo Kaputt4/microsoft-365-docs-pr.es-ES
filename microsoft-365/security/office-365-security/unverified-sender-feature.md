@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se le guiará en el cómo evitar que los mensajes de suplantación de identidad lleguen a su buzón de correo, Outlook.com y Outlook en la Web.
-ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b49cc27685f62f5fb5d123a8a7aa4e51e0065e64
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352459"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588341"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -86,8 +86,8 @@ No necesariamente. Office 365 puede tener otras propiedades dentro del mensaje p
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+[Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 [Trabajar con suplantación de identidad (phishing) en Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
-[Filtrar correo no deseado y correo no deseado en Outlook en la web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)
+[Filtrar correo no deseado y correo no deseado en Outlook en la web](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)

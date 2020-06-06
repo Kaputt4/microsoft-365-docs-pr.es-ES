@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351980"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588269"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Detectar y corregir ataques de las reglas de Outlook y de las inyecciones de formularios personalizados
 
@@ -165,7 +165,7 @@ Si encuentra algún indicio de alguno de estos ataques, la corrección es sencil
 
 4. Instale las versiones más actualizadas de Outlook. Recuerde que la versión actual de Outlook bloquea ambos tipos de este ataque de forma predeterminada.
 
-5. Una vez que se hayan quitado todas las copias sin conexión del buzón, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos descritos en [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
+5. Una vez que se hayan quitado todas las copias sin conexión del buzón, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos descritos en [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
 
 ### <a name="using-powershell"></a>Mediante PowerShell
 
@@ -193,7 +193,7 @@ Hay dos cmdlets de PowerShell remoto que puede usar para quitar o deshabilitar r
 
 Los atacantes solo usan las reglas y los formularios para aprovechar una vez que han robado o infringido una de sus cuentas de usuario. Por lo tanto, el primer paso para evitar el uso de estos ataques contra su organización es proteger sus cuentas de usuario de forma agresiva. Algunas de las formas más comunes en las que las cuentas se infringen son los ataques de suplantación de identidad (phishing) o de [niebla de contraseña](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). También debe hacer lo siguiente:
+La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). También debe hacer lo siguiente:
 
 - Supervisar cómo se [obtiene acceso](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar estas [directivas de seguridad de aplicaciones de nube de Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) para supervisar sus cuentas y enviar alertas sobre actividades inusuales:
 

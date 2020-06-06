@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los informes y la información inteligentes disponibles en el centro de seguridad y cumplimiento, y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566697"
+ms.locfileid: "44588161"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad y &amp; cumplimiento
 
@@ -50,7 +50,7 @@ Hay una amplia variedad de informes disponibles en el centro de seguridad y &amp
 |**Explorador de amenazas** (también conocido como explorador) o **detecciones en tiempo real** <br/> Se ha detectado malware sospechoso en correo electrónico y archivos en Microsoft 365  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a **Threat Management** \> **Explorer** o a **detección en tiempo real** .<br/> |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) <br/> |
 |**Informes de seguridad de correo electrónico y protección contra amenazas avanzada** <br/> Informes de seguridad de correo electrónico y protección contra amenazas (incluidos los informes de malware, correo no deseado, suplantación de identidad y suplantación)  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a **informes** de \> **Panel** <br/> |[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md) <br/><br/> [Ver informes de seguridad de correo electrónico en el centro de seguridad y &amp; cumplimiento](view-email-security-reports.md) <br/> |
 |**Flujo de correo** <br/> Información sobre mensajes de correo electrónico enviados y recibidos, alertas recientes, remitentes y destinatarios principales, informes de reenvío de correo electrónico y mucho más.  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a panel de **flujo de correo** \> **Dashboard** <br/> |[Reportes de flujo de Correo en el Centro de seguridad y cumplimiento](mail-flow-insights-v2.md)<br/> |
-|**Cumplimiento normativo RGPD** <br/> Información sobre el cumplimiento de RGPD, incluidos vínculos a temas de datos, tendencias de etiquetas y &amp; casos de cierre activos  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a RGPD de **privacidad de datos** ( \> **Panel** ) <br/> |[Information Protection de Office 365 para RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**Cumplimiento normativo RGPD** <br/> Información sobre el cumplimiento de RGPD, incluidos vínculos a temas de datos, tendencias de etiquetas y &amp; casos de cierre activos  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a RGPD de **privacidad de datos** ( \> **Panel** ) <br/> |[Information Protection de Office 365 para RGPD](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**Registro de auditoría** <br/> Información sobre las actividades, usuarios, archivos, carpetas y más de Microsoft 365.  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a búsqueda de registros de auditoría de ** &amp; investigación de búsqueda** \> **Audit log search** <br/> |[Buscar el registro de auditoría en el centro de seguridad y &amp; cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Informes de cumplimiento** <br/> Informes de FedRAMP, informes de gobernanza, riesgo y cumplimiento, informes de administración de seguridad de la información de la ISO e informes de auditoría y evaluación de los controles de organización de servicios  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a informes de cumplimiento de **garantía del servicio** \> **Compliance reports** . <br/> |[Planeación del &amp; cumplimiento de la seguridad en Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

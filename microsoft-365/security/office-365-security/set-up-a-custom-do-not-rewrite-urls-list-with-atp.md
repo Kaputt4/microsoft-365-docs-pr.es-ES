@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar direcciones URL bloqueadas personalizadas para los usuarios y no volver a escribir la lista de direcciones URL de un grupo de usuarios en las directivas de vínculos seguros de ATP de Office 365.
-ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: c75f468aa98c8fa9e45cd596c62a7509310fdca5
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046309"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588137"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada mediante vínculos seguros de ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener [direcciones URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-atp.md), de modo que cuando los usuarios hagan clic en direcciones web (URL) en mensajes de correo electrónico o en determinados documentos de Office, no se les impedirá ir a esas direcciones URL. La organización también puede tener listas personalizadas de "no reescribir" para grupos específicos de la organización. Una lista "no reescribir" permite que algunas personas visiten direcciones URL que, de lo contrario, se bloquearán mediante [vínculos seguros de ATP en Office 365](atp-safe-links.md).
 
@@ -43,9 +43,9 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 |Role  |Dónde y cómo se asigna  |
 |---------|---------|
-|administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-|Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-|Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
+|Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Administración de la organización en Exchange Online |Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
 > Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -54,9 +54,9 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa.
 
-2. En el panel de navegación izquierdo, en **vínculos seguros**de la **Directiva** \> de **Administración** \> de amenazas.
+2. En el panel de navegación izquierdo **Threat management** , en \> **Policy** \> **vínculos seguros**de la Directiva de administración de amenazas.
 
-3. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()) para crear una nueva Directiva. (También puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un signo más ( **+** )) para crear una nueva Directiva. (También puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. Especifique un nombre y una descripción para la Directiva.
 
@@ -73,15 +73,15 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 - Las direcciones URL que especifique en la lista "no reescribir" se excluyen del análisis de vínculos seguros de ATP para los destinatarios que especifique.
 
-- Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `https://contoso.com/a` y desea incluir subrutas como `https://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto `https://contoso.com/a/*`deseado.
+- Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `https://contoso.com/a` y desea incluir subrutas como `https://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto deseado `https://contoso.com/a/*` .
 
-- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín (\*). Los caracteres comodín\*() se usan para incluir explícitamente prefijos o subdominios. La entrada `contoso.com` no es la misma que `*.contoso.com/*`, ya `*.contoso.com/*` que permite a los pueblos visitar subdominios y rutas de acceso en el dominio especificado.
+- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín ( \* ). Los caracteres comodín ( \* ) se usan para incluir explícitamente prefijos o subdominios. La entrada `contoso.com` no es la misma que `*.contoso.com/*` , ya que `*.contoso.com/*` permite a los pueblos visitar subdominios y rutas de acceso en el dominio especificado.
 
 En la tabla siguiente se muestran ejemplos de lo que se puede especificar y el efecto que tienen estas entradas.
 
 |**Entrada de ejemplo**|**Qué hace**|
 |:-----|:-----|
-|`contoso.com`|Permite a los destinatarios visitar un sitio `https://contoso.com` como, por ejemplo, subdominios o rutas de una ruta.|
-|`*.contoso.com/*`|Permite a los destinatarios visitar un dominio, subdominios y rutas de, como `https://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, o `https://www.contoso.com/a`. <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*`, ya que no incluye sitios potencialmente fraudulentos, `https://www.falsecontoso.com` como o`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Permite a los destinatarios específicos visitar un sitio `https://contoso.com/a`como, pero no subtrazados como`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Permite a los destinatarios específicos visitar un sitio `https://contoso.com/a` como y subrutas como`https://contoso.com/a/b`|
+|`contoso.com`|Permite a los destinatarios visitar un sitio como, por ejemplo, `https://contoso.com` subdominios o rutas de una ruta.|
+|`*.contoso.com/*`|Permite a los destinatarios visitar un dominio, subdominios y rutas de, como `https://www.contoso.com` , `https://www.contoso.com` , `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*` , ya que no incluye sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` , pero no subtrazados como`https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` y subrutas como`https://contoso.com/a/b`|

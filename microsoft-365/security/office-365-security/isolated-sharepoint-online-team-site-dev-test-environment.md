@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno de pruebas y desarrollo de Microsoft 365.'
-ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634127"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588033"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -56,9 +56,9 @@ Hay tres fases para configurar un sitio de grupo de SharePoint Online aislado en
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>Fase 1: crear un entorno de desarrollo y pruebas de Microsoft 365 para empresas ligeras o simuladas
 
-Si solo quiere crear un sitio de grupo de SharePoint Online aislado de forma ligera con los requisitos mínimos, siga las instrucciones indicadas en las fases 2 y 3 del [entorno de desarrollo y pruebas de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Si solo quiere crear un sitio de grupo de SharePoint Online aislado de forma ligera con los requisitos mínimos, siga las instrucciones que se indican en las fases 2 y 3 de [la configuración básica ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-Si desea crear un sitio de grupo de SharePoint Online aislado en una configuración de empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de prueba y desarrollo de Microsoft 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Si desea crear un sitio de grupo de SharePoint Online aislado en una configuración de empresa simulada, siga las instrucciones de [sincronización de hash de contraseña para el entorno de prueba de Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
 
 > [!NOTE]
 > La creación de un sitio de SharePoint Online aislado no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como opción para que pueda probar un sitio de SharePoint Online aislado y experimentar con él en un entorno que representa una organización típica.
@@ -148,7 +148,7 @@ En la figura 1 se muestran los grupos de acceso y su pertenencia.
 
 Para crear un sitio de grupo de SharePoint Online para ProyectoX, siga estos pasos:
 
-1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con su cuenta de administrador global.
+1. Con un explorador en el equipo local (configuración ligera) o en cliente1 (configuración de empresa simulada), inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con su cuenta de administrador global.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -216,7 +216,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 2. Haga clic en el nombre de su administrador global y, a continuación, en **Cerrar sesión**.
 
-3. Inicie sesión en el centro de administración de Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () utilizando el nombre de cuenta del responsable de diseño y su contraseña.
+3. Inicie sesión en el centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) utilizando el nombre de cuenta del responsable de diseño y su contraseña.
 
 4. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -246,7 +246,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepresidente de desarrollo:
 
-1. Inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
+1. Inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con el nombre de cuenta del Vicepresidente de desarrollo y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -262,7 +262,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del Vicepres
 
 Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permisos:
 
-1. Inicie sesión en el centro de administración de 365[https://admin.microsoft.com](https://admin.microsoft.com)de Microsoft () con el nombre de cuenta usuario 3 y su contraseña.
+1. Inicie sesión en el centro de administración de 365 de Microsoft ( [https://admin.microsoft.com](https://admin.microsoft.com) ) con el nombre de cuenta usuario 3 y su contraseña.
 
 2. En la lista de iconos, haga clic en **SharePoint**.
 
@@ -278,7 +278,7 @@ Ahora vamos a mostrar cómo acceder con una cuenta de usuario que no tiene permi
 
 El sitio de SharePoint Online aislado ya está listo para sus experimentos adicionales.
 
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando esté preparado para implementar un sitio de grupo de SharePoint Online aislado en producción, vea las consideraciones de diseño paso a paso en [Diseñar un sitio de grupo aislado de SharePoint Online](design-an-isolated-sharepoint-online-team-site.md).
 
@@ -286,14 +286,10 @@ Cuando esté preparado para implementar un sitio de grupo de SharePoint Online a
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
 
-[Guías del laboratorio de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Entorno de desarrollo y pruebas de la configuración básica](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[Configuración básica empresarial simulada](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Entorno de prueba y desarrollo de Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[Configuración básica ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

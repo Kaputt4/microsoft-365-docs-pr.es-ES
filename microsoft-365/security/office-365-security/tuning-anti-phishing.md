@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208590"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588445"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -75,4 +75,4 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - La autenticación multifactor (MFA) es una buena forma de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Los intrusos suelen usar las reglas de reenvío a los destinatarios externos para extraer datos. Use la información de **reglas de reenvío de buzón de correo de revisión** de la [puntuación segura de Microsoft](../mtp/microsoft-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- Los intrusos suelen usar las reglas de reenvío a los destinatarios externos para extraer datos. Use la información de **reglas de reenvío de buzón de correo de revisión** de la [puntuación segura de Microsoft](../mtp/microsoft-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score).

@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a mover dominios y opciones de configuración de una organización de Microsoft Exchange Online Protection (EOP) a otra.
-ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213453"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588197"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Mover dominios y opciones de configuración de una organización de EOP a otra
 
@@ -59,7 +59,7 @@ Para volver a crear la organización de origen en la organización de destino, a
   > [!NOTE]
   > Actualmente, la compatibilidad con los cmdlets para la exportación e importación de la colección de reglas de flujo de correo solo es compatible con los planes de suscripción de EOP Premium.
 
-La forma más sencilla de recopilar toda la configuración es usar PowerShell. Para conectarse a PowerShell de EOP independiente, vea [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+La forma más sencilla de recopilar toda la configuración es usar PowerShell. Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 A continuación, puede recopilar todas las opciones de configuración y exportarlas a un archivo .xml que se importa en el inquilino de destino. En general, puede canalizar la salida del cmdlet **Get** para cada opción de configuración al cmdlet **Export-Clixml** para guardar las opciones de configuración en archivos .xml, tal como se muestra en el código de ejemplo siguiente.
 
@@ -191,7 +191,7 @@ Ahora puede revisar y recopilar la información del centro de administración de
 
 5. Registre el registro MX o TXT que usará para comprobar su dominio, y termine con el asistente para la instalación.
 
-6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Paso 3: forzar a los remitentes para que pongan en cola el correo
 
@@ -201,7 +201,7 @@ Una opción para forzar a los remitentes para que pongan en cola el correo es ac
 
 Otra opción es colocar un registro MX no válido en cada dominio donde se conservan los registros DNS para el dominio (también conocido como servicio de hospedaje DNS). Esto hará que el remitente ponga en cola el correo y vuelva a intentarlo (los reintentos típicos son de 48 horas, pero esto podría variar de un proveedor a otro). Puede usar invalid.outlook.com como destino de MX no válido. La reducción del valor de período de vida (TTL) a cinco minutos en el registro MX ayudará a que el cambio se propague con más rapidez a los proveedores de DNS.
 
-Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
 > Diferentes proveedores ponen en cola el correo durante diferentes períodos de tiempo. Deberá configurar su nuevo inquilino rápidamente y revertir la configuración de DNS para impedir que los informes de no entrega (NDR) se envíen al remitente si caduca el tiempo en cola.
@@ -931,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Paso 8: revertir la configuración de DNS para detener la cola de correo
 
-Si decidió establecer los registros MX en una dirección no válida para que los remitentes envíen correo durante la transición, tendrá que volver a configurarlos en el valor correcto, tal como se especifica en el [centro de administración](https://admin.microsoft.com). Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Si decidió establecer los registros MX en una dirección no válida para que los remitentes envíen correo durante la transición, tendrá que volver a configurarlos en el valor correcto, tal como se especifica en el [centro de administración](https://admin.microsoft.com). Para obtener más información acerca de la configuración de DNS, vea [crear registros DNS en cualquier proveedor de host DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

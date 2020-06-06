@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Preguntas más frecuentes para los administradores sobre el uso del servicio de importación de Office 365 para importar los archivos PST de su organización a los buzones de correo de 365 de Microsoft. '
-ms.openlocfilehash: e2ddd464f2cfd421766fb9c4d1043533f5561b25
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208134"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579205"
 ---
 # <a name="faq-about-importing-pst-files"></a>Preguntas frecuentes sobre la importación de archivos PST
 
@@ -50,7 +50,7 @@ Además, para crear trabajos de importación en el Centro de seguridad y cumplim
   
  **¿Dónde está disponible la carga en la red?**
   
-La carga de red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Europa, India, este asiático, sudeste asiático, Japón, República de Corea y Australia. Network upload will be available in more regions soon.
+La carga de red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Europa, India, Asia oriental, sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos (EAU). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > En este momento, la carga de red de los archivos PST no está disponible en Alemania y Suiza. Estas preguntas más frecuentes se actualizarán cuando se disponga de carga en la red en estos países.

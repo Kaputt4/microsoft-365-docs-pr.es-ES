@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la característica de datos adjuntos seguros de ATP para Office 365 y sobre cómo obtener la característica para su suscripción.
-ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034857"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588305"
 ---
 # <a name="atp-safe-attachments"></a>Datos adjuntos seguros ATP
 
@@ -47,9 +47,9 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
 
 |Role|Dónde y cómo se asigna|
 |---------|---------|
-|administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-|Administrador de seguridad|Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-|Administración de la organización en Exchange Online|Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Administración de la organización en Exchange Online|Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Cómo saber si está disponible la protección de datos adjuntos seguros de ATP
 

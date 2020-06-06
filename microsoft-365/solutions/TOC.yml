@@ -23,7 +23,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: Paso 4. Implementación de aplicaciones y servicios de productividad
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Paso 5. Crear lugares de comunicación
+        - name: Paso 5. Crear espacios de comunicación
           href: empower-people-to-work-remotely-communication-venues.md
         - name: Paso 6. Entrenar a los trabajadores remotos
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -81,7 +81,7 @@
         - name: Soluciones de telefonía
           items:
             - name: Elija su solución
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: Caso práctico para la corporación multinacional
               href: null
         - name: Colaboración de archivos en SharePoint con Microsoft 365
@@ -89,7 +89,7 @@
         - name: Planeación de una intranet inteligente de SharePoint
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: Guía de OneDrive para empresas
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Seguridad
       items:
         - name: Principales tareas para que los equipos de seguridad admitan el trabajo desde casa
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: Obstáculos de seguridad que puede gobernar
       href: security-design-principles.md
+    - name: Redes en red (en la nube)
+      href: networking-design-principles.md
 - name: Recursos de implementación de Microsoft 365
   items:
     - name: Implementación de Microsoft 365

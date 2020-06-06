@@ -1,5 +1,5 @@
 ---
-title: Proteger buzones locales en China con EOP independiente
+title: Proteger los buzones locales en China con EOP independiente
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de China con Office 365 operado por 21Vianet pueden aprender a usar independiente de Exchange Online Protection (EOP) para proteger sus buzones locales.
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208299"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587985"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteger buzones locales en China con EOP independiente
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteger los buzones locales en China con EOP independiente
 
 > [!NOTE]
 > Este artículo solo se aplica a Office 365 operado por 21Vianet en China.
 
-Incluso si planea hospedar algunos o todos los buzones de correo locales, aún puede proteger los buzones con Exchange Online Protection (EOP). Para configurar conectores, la cuenta debe ser un administrador global o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización). Para obtener información sobre cómo se relacionan los permisos de Office 365 con los permisos de Exchange, consulte [asignación de roles de administrador en Office 365 operado por 21Vianet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Si todos los buzones de Exchange son locales, siga estos pasos para configurar el servicio de EOP.
+Incluso si planea hospedar algunos o todos los buzones de correo locales, aún puede proteger los buzones con Exchange Online Protection (EOP). Para configurar conectores, la cuenta debe ser un administrador global o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización). Para obtener información sobre cómo se relacionan los permisos de Office 365 con los permisos de Exchange, consulte [asignación de roles de administrador en Office 365 operado por 21Vianet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Si todos los buzones de Exchange son locales, siga estos pasos para configurar el servicio de EOP.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Paso 1: usar el centro de administración de Microsoft 365 para agregar y comprobar el dominio
 
@@ -42,7 +42,7 @@ Incluso si planea hospedar algunos o todos los buzones de correo locales, aún p
 2. Siga los pasos del portal para agregar los registros DNS aplicables a su proveedor de host DNS para comprobar la propiedad del dominio.
 
 > [!TIP]
-> [Agregue el dominio y los usuarios a office 365 operado por 21Vianet](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) y [cree registros dns para Office 365 cuando administre los registros DNS](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) son recursos útiles para hacer referencia a medida que agrega el dominio al servicio y configura el DNS.
+> [Agregue el dominio y los usuarios a office 365 operado por 21Vianet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) y [cree registros dns para Office 365 cuando administre los registros DNS](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) son recursos útiles para hacer referencia a medida que agrega el dominio al servicio y configura el DNS.
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Paso 2: agregar destinatarios y configurar el tipo de dominio
 
@@ -69,7 +69,7 @@ Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: usar el centro de administración de Microsoft 365 para apuntar el registro MX a EOP
 
-Siga los pasos de configuración de dominio de Office 365 para actualizar el registro MX de su dominio de forma que el correo entrante pase por EOP. Para obtener más información, puede hacer referencia de nuevo a [crear registros DNS para Office 365 cuando administre los registros DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Siga los pasos de configuración de dominio de Office 365 para actualizar el registro MX de su dominio de forma que el correo entrante pase por EOP. Para obtener más información, puede hacer referencia de nuevo a [crear registros DNS para Office 365 cuando administre los registros DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ¿Cómo sabe si esta tarea funcionó?
 

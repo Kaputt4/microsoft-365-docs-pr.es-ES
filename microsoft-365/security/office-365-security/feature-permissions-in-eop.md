@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Obtenga información sobre el permiso necesario para las tareas de la protección independiente de Exchange Online
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208878"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588257"
 ---
 # <a name="permissions-in-standalone-eop"></a>Permisos en EOP independiente
 
@@ -134,17 +134,17 @@ En la siguiente tabla se enumeran los roles de Microsoft 365 y los grupos de rol
 |Lector de seguridad|SecurityReader|
 |
 
-Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente y no concederán permisos administrativos en EOP. Para obtener más información acerca de la asignación de un rol de Microsoft 365 a un usuario, vea [asignar roles de administrador](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente y no concederán permisos administrativos en EOP. Para obtener más información acerca de la asignación de un rol de Microsoft 365 a un usuario, vea [asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
 
 A los usuarios se les pueden conceder derechos administrativos en EOP sin agregarlos a los roles de 365 de Microsoft. Para hacerlo, agregue el usuario como miembro de un grupo de roles de EOP. El usuario obtendrá permisos en EOP, pero no obtendrá permisos en otras cargas de trabajo de Microsoft 365.
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que el grupo de roles se copió correctamente, siga uno de estos pasos:
 
 - En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos y compruebe que el grupo de roles aparece (o no aparece en la lista). Seleccione el grupo de roles y Compruebe la configuración en el panel de detalles o haga clic en el icono **Editar** ![ Edición ](../../media/ITPro-EAC-EditIcon.png) para comprobar la configuración.
 
-- En Exchange Online PowerShell, reemplace \< nombre del grupo de roles \> con el nombre del grupo de roles y ejecute el siguiente comando para comprobar que el grupo de roles existe (o no existe) y Compruebe la configuración:
+- En Exchange Online PowerShell, reemplace \<Role Group Name\> por el nombre del grupo de roles y ejecute el siguiente comando para comprobar que el grupo de roles existe (o no existe) y Compruebe la configuración:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

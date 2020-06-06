@@ -19,75 +19,72 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 9e0c6e75358c97a21ab0765edf5a15bafe53d75e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 9bf4417044dab5488e2945ccea5fa30a7fd4113d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046321"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588149"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener una lista personalizada de direcciones de sitios web (URL) que están bloqueadas. Cuando se bloquea una dirección URL, los usuarios que hacen clic en los vínculos a la dirección URL bloqueada se toman en una [Página de advertencia](atp-safe-links-warning-pages.md) similar a la siguiente: 
-  
+Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener una lista personalizada de direcciones de sitios web (URL) que están bloqueadas. Cuando se bloquea una dirección URL, los usuarios que hacen clic en los vínculos a la dirección URL bloqueada se toman en una [Página de advertencia](atp-safe-links-warning-pages.md) similar a la siguiente:
+
 ![Este sitio está bloqueado](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
-  
-La lista de URL bloqueadas se define en el equipo de seguridad de Microsoft 365 para empresas de la organización, y esa lista se aplica a todos los usuarios de la organización que están cubiertos por las directivas de vínculos seguros de ATP de Office 365. 
-  
+
+La lista de URL bloqueadas se define en el equipo de seguridad de Microsoft 365 para empresas de la organización, y esa lista se aplica a todos los usuarios de la organización que están cubiertos por las directivas de vínculos seguros de ATP de Office 365.
+
 Lea este artículo para obtener información sobre cómo configurar la lista de direcciones URL bloqueadas personalizadas de la organización para [vínculos seguros de ATP en Office 365](atp-safe-links.md).
-  
+
 ## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Ver o editar una lista personalizada de direcciones URL bloqueadas
 
 [Vínculos seguros de ATP en Office 365](atp-safe-links.md) usa varias listas, incluida la lista de direcciones URL bloqueadas personalizadas de la organización. Si tiene los permisos necesarios, puede configurar la lista personalizada de su organización. Para ello, edite la Directiva de vínculos a prueba de errores predeterminada de su organización.
 
-Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla: 
+Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla:
 
-|Role  |Dónde y cómo se asigna  |
+|Role|Dónde y cómo se asigna|
 |---------|---------|
-|administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-|Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-|Administración de la organización en Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Administración de la organización en Exchange Online|Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
 
 > [!TIP]
-> Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Para ver o editar una lista de direcciones URL bloqueadas personalizadas
-  
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
-    
-2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **vínculos seguros**de **Directiva** \> .
-    
+
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa.
+
+2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Policy** \> **vínculos seguros**de directiva.
+
 3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Esto le permite ver la lista de direcciones URL bloqueadas. En primer lugar, es posible que no tenga ninguna dirección URL mencionada aquí.<br/>![Lista de direcciones URL bloqueadas en la Directiva de vínculos seguros predeterminada](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
-  
-4. Seleccione el cuadro **Escriba una dirección URL válida** , escriba una dirección URL y, a continuación, elija**+** el signo más (). 
+
+4. Seleccione el cuadro **Escriba una dirección URL válida** , escriba una dirección URL y, a continuación, elija el signo más ( **+** ).
 
 5. Cuando termine de agregar direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
-    
+
 ## <a name="a-few-things-to-keep-in-mind"></a>Algunas cosas que debe tener en cuenta
 
-Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes puntos: 
+Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes puntos:
 
-- No incluya una barra diagonal ( **/**) al final de la dirección URL. Por ejemplo, en lugar de escribir `https://www.contoso.com/`, escriba `https://www.contoso.com`.
-    
-- Puede especificar una dirección URL de solo dominio (like `contoso.com` o `tailspintoys.com`). Esto impedirá que se haga clic en cualquier dirección URL que contenga el dominio.
+- No incluya una barra diagonal ( **/** ) al final de la dirección URL. Por ejemplo, en lugar de escribir `https://www.contoso.com/` , escriba `https://www.contoso.com` .
 
-- Puede especificar un subdominio (como `toys.contoso.com*`) sin bloquear un dominio completo (como `contoso.com`). Este bloque hará clic en cualquier dirección URL que contenga el subdominio, pero no bloqueará los clics en una dirección URL que contenga el dominio completo.  
-    
-- Puede incluir hasta tres asteriscos comodín (\*) por dirección URL. En la tabla siguiente se enumeran algunos ejemplos de lo que se puede especificar y el efecto que tienen dichas entradas.
-    
-|**Entrada de ejemplo**|**Qué hace**|
+- Puede especificar una dirección URL de solo dominio (like `contoso.com` o `tailspintoys.com` ). Esto impedirá que se haga clic en cualquier dirección URL que contenga el dominio.
+
+- Puede especificar un subdominio (como `toys.contoso.com*` ) sin bloquear un dominio completo (como `contoso.com` ). Este bloque hará clic en cualquier dirección URL que contenga el subdominio, pero no bloqueará los clics en una dirección URL que contenga el dominio completo.
+
+- Puede incluir hasta tres asteriscos comodín ( \* ) por dirección URL. En la tabla siguiente se enumeran algunos ejemplos de lo que se puede especificar y el efecto que tienen dichas entradas.
+
+|Entrada de ejemplo|Qué hace|
 |:-----|:-----|
-|`contoso.com` o `*contoso.com*`  <br/> |Bloquea el dominio, los subdominios y las rutas de los `https://www.contoso.com`, `https://sub.contoso.com`como, y`https://contoso.com/abc`  <br/> |
-|`https://contoso.com/a`  <br/> |Bloquea un sitio `https://contoso.com/a` , pero no otros subtrazados adicionales como`https://contoso.com/a/b`  <br/> |
-|`https://contoso.com/a*`  <br/> |Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`  <br/> |
-|`https://toys.contoso.com*`  <br/> |Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de `https://contoso.com` dominio `https://home.contoso.com`(como o).  <br/> |
-   
+|`contoso.com` o `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los, como `https://www.contoso.com` , `https://sub.contoso.com` y`https://contoso.com/abc`|
+|`https://contoso.com/a`|Bloquea un sitio, `https://contoso.com/a` pero no otros subtrazados adicionales como`https://contoso.com/a/b`|
+|`https://contoso.com/a*`|Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`|
+|`https://toys.contoso.com*`|Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com` ).|
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Cómo definir excepciones para determinados usuarios de una organización
 
 Si desea que determinados grupos puedan ver direcciones URL que puedan estar bloqueadas para otros usuarios, puede especificar una directiva de vínculos seguros ATP que se aplique a destinatarios específicos. Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
-  
-

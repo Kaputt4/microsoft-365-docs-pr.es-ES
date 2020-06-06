@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209648"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588045"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -59,7 +59,7 @@ Para obtener más información, vea los siguientes temas:
 
 [Configurar el filtrado de conexiones en EOP](configure-the-connection-filter-policy.md)
 
-[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)
+[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)
 
 [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
 
@@ -137,7 +137,7 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 
   [Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Preguntas más frecuentes de dominios](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Preguntas más frecuentes de dominios](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Firma de correo electrónico con DKIM, firma con la resolución de nombres canónicos relajada.**
 

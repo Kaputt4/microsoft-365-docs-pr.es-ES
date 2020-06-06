@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a usar simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseñas en su organización de Microsoft 365 E5 o ATP planeada 2.
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035863"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587573"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulador de ataque en ATP
 
@@ -31,7 +31,7 @@ ms.locfileid: "44035863"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques está disponible en **simulador de ataques**de **Administración** \> de amenazas.
+- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques **Threat management** está disponible en \> **simulador de ataques**de administración de amenazas.
 
   ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "44035863"
 
 - Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-- La cuenta debe estar configurada para la autenticación multifactor (MFA) con el fin de crear y administrar campañas en el simulador de ataques. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- La cuenta debe estar configurada para la autenticación multifactor (MFA) con el fin de crear y administrar campañas en el simulador de ataques. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa para ejecutar ataques simulados esté usando la autenticación multifactor. Además, debe ser administrador global o administrador de seguridad. (Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md)).
 
@@ -55,7 +55,7 @@ La *suplantación de identidad (phishing)* es un término genérico para los ata
 
 En el simulador de ataque, hay disponibles dos tipos diferentes de campañas de "Spear phishing":
 
-- El [acceso condicional/autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) está activado, al menos para la cuenta de administrador global y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
+- El [acceso condicional/autenticación multifactor](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) está activado, al menos para la cuenta de administrador global y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
 
   - Una página predeterminada en la que se explica que se trataba de una sola prueba y ofrece sugerencias para reconocer los mensajes de suplantación de identidad.
 
@@ -63,7 +63,7 @@ En el simulador de ataque, hay disponibles dos tipos diferentes de campañas de 
 
   - Una página personalizada (URL) que especifique.
 
-- **Spear phishing (datos adjuntos)**: el ataque intenta convencer a los destinatarios para que abran un archivo adjunto. docx o. pdf en el mensaje. Los datos adjuntos incluyen el mismo contenido del vínculo de suplantación de identidad (phishing\<) predeterminado\>, pero la primera frase comienza por "nombre para mostrar, se ve este mensaje como un mensaje de correo electrónico reciente abierto...".
+- **Spear phishing (datos adjuntos)**: el ataque intenta convencer a los destinatarios para que abran un archivo adjunto. docx o. pdf en el mensaje. Los datos adjuntos incluyen el mismo contenido del vínculo de suplantación de identidad (phishing) predeterminado, pero la primera frase comienza por " \<Display Name\> , está viendo este mensaje como un mensaje de correo electrónico reciente que ha abierto...".
 
 > [!NOTE]
 > Actualmente, las campañas de suplantación de identidad de Spear en el simulador de ataque no expiran.
@@ -82,7 +82,7 @@ Una parte importante de cualquier campaña de "Spear phishing" es la apariencia 
 
 Si va a utilizar una de las plantillas integradas o va a crear el mensaje de correo electrónico directamente en el asistente, puede omitir este paso.
 
-1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **simulador de ataques**de administración de amenazas.
 
 2. En la página **Simulate Attacks** , en las secciones de **Spear phishing (credenciales cosecha)** o **Spear phishing (datos adjuntos)** , haga clic en **detalles de ataque**.
 
@@ -138,13 +138,13 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
 
 #### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Paso 2: crear e iniciar la campaña de suplantación de identidad de Spear
 
-1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **simulador de ataques**de administración de amenazas.
 
 2. En la página **simular ataques** , realice una de las siguientes selecciones en función del tipo de campaña que desee crear:
 
-   - En la sección **Spear phishing (credenciales cosecha)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+   - En la sección **Spear phishing (credenciales cosecha)** , haga clic en **iniciar ataque** o en ataque de inicio de **detalles de ataque** \> **Launch Attack**.
 
-   - En la sección **Spear phishing (datos adjuntos)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+   - En la sección **Spear phishing (datos adjuntos)** , haga clic en **iniciar ataque** o en ataque de inicio de **detalles de ataque** \> **Launch Attack**.
 
 3. El Asistente para **configurar un ataque de suplantación de identidad** se inicia en un nuevo flotante. En el paso **iniciar** , siga uno de estos pasos:
 
@@ -235,13 +235,13 @@ En el simulador de ataque, hay disponibles dos tipos diferentes de campañas par
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Crear e iniciar una campaña de ataque con contraseña
 
-1. En el centro de seguridad & cumplimiento, vaya a **simulador de ataques**de **Administración** \> de amenazas.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **simulador de ataques**de administración de amenazas.
 
 2. En la página **simular ataques** , realice una de las siguientes selecciones en función del tipo de campaña que desee crear:
 
-   - En la sección **contraseña de fuerza bruta (ataque de diccionario)** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+   - En la sección **contraseña de fuerza bruta (ataque de diccionario)** , haga clic en **iniciar ataque** o en ataque de inicio de **detalles de ataque** \> **Launch Attack**.
 
-   - en la **sección ataque por pulverización de contraseña** , haga clic en **iniciar ataque** o en **ataque de inicio**de detalles \> de **ataque** .
+   - en la sección **ataque por pulverización de contraseña** , haga clic en **iniciar ataque** o en ataque de inicio de **detalles de ataque** \> **Launch Attack**.
 
 3. El Asistente para **configurar un ataque de contraseña** comienza en un nuevo control flotante. En el paso **iniciar** , escriba un nombre para mostrar único para la campaña y, a continuación, haga clic en **siguiente**.
 
@@ -291,7 +291,7 @@ La siguiente información está disponible en la página **detalles de ataque** 
 
 - **Intentos correctos**: el número de usuarios que hizo clic en el vínculo **y** escribió sus credenciales (*cualquier* valor de nombre de usuario y contraseña).
 
-- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts**  /  **número total de usuarios a los**que se ha dirigido correctamente.
 
 - **Clic más rápido**: Cuánto tiempo tardó el primer usuario en hacer clic en el vínculo después de iniciar la campaña.
 
@@ -331,7 +331,7 @@ La siguiente información está disponible en la página **detalles de ataque** 
 
 - **Intentos correctos**: el número de usuarios que abrieron o descargaron y abrieron los datos adjuntos (la vista previa no cuenta).
 
-- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts**  /  **número total de usuarios a los**que se ha dirigido correctamente.
 
 - **Tiempo de apertura de datos adjuntos más rápido**: Cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
 
@@ -349,7 +349,7 @@ La siguiente información está disponible en la página **detalles de ataque** 
 
 - **Intentos correctos**: el número de usuarios que se encontraron que utilizaban una de las contraseñas especificadas.
 
-- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts**  /  **número total de usuarios a los**que se ha dirigido correctamente.
 
 - La sección **usuarios comprometidos** muestra las direcciones de correo electrónico de los usuarios afectados. Puede hacer clic en **exportar** para exportar los resultados a un archivo CSV.
 
@@ -363,4 +363,4 @@ La siguiente información está disponible en la página **detalles de ataque** 
 
 - **Intentos correctos**: el número de usuarios que se encontraron que usaban la contraseña especificada.
 
-- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts** / **número total de usuarios a los**que se ha dirigido correctamente.
+- **Tasa general de éxito**: porcentaje calculado por el **Successful attempts**  /  **número total de usuarios a los**que se ha dirigido correctamente.

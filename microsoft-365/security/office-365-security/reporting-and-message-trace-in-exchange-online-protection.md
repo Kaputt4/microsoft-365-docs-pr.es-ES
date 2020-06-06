@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206447"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588173"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -37,13 +37,13 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 
 Consulte los siguientes recursos para obtener más información:
 
-- [Informes de Microsoft 365 en el centro de administración (grupos de Microsoft 365)](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Informes de Microsoft 365 en el centro de administración (grupos de Microsoft 365)](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Informes de Microsoft 365 en el centro de administración: uso de buzones](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso de buzones](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de cumplimiento de & de seguridad en el centro de administración de Microsoft 365
 

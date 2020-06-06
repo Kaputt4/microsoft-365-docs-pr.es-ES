@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general de las páginas de advertencia que puede ver cuando la protección contra amenazas avanzada de Office 365 está en funcionamiento.
-ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635991"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588293"
 ---
 # <a name="atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros de ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Microsoft 365 Family o Microsoft 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si usa Outlook.com, Microsoft 365 Family o Microsoft 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) ayuda a proteger a su organización de los intentos de suplantación de identidad y el malware mediante características como, por ejemplo, [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros de ATP](atp-safe-attachments.md)y [protección contra la suplantación de identidad](anti-phishing-protection.md). Cuando se realiza la protección, se comprueban los vínculos (direcciones URL) de los mensajes de correo electrónico y documentos de Office. Si una dirección URL se identifica como sospechosa o malintencionada, es posible que se bloquee la apertura de la dirección URL al hacer clic en ella. En lugar de ir directamente al sitio, es posible que vea una página de advertencia en su lugar.
 

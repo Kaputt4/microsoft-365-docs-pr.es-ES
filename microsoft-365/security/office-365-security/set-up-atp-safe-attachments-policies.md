@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035325"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588125"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Y lo último que desea es tener un dato malintencionado para llegar a través del cual se causan estragos en su organización. Afortunadamente, la [protección contra amenazas avanzada de Office 365](office-365-atp.md) (ATP) puede resultar útil. Puede configurar directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) para ayudar a garantizar que su organización está protegida contra ataques de datos adjuntos de correo electrónico no seguro.
 
@@ -48,12 +48,12 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
   |Role|Dónde y cómo se asigna|
   |---------|---------|
-  |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-  |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
-  |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o bien <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+  |Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+  |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad &amp; y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 - [Obtenga información sobre las opciones de directiva de datos adjuntos seguros de ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (en este artículo). Algunas opciones, como las opciones supervisar o reemplazar, pueden dar lugar a un retraso de correo electrónico menor mientras se analizan los datos adjuntos. Para evitar retrasos en los mensajes, considere la posibilidad de usar la [entrega dinámica y la vista previa](dynamic-delivery-and-previewing.md).
 
@@ -63,11 +63,11 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa.
 
-2. En el panel &amp; de navegación izquierdo del centro de seguridad y cumplimiento, **en administración de amenazas**, elija **datos adjuntos seguros**de **Directiva** \> .
+2. En el panel de navegación izquierdo del centro de seguridad y cumplimiento, en &amp; **Administración de amenazas**, elija **Policy** \> **datos adjuntos seguros**de directiva.
 
 3. Si ve la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**, le recomendamos que seleccione esta opción. Esto permitirá la [protección contra amenazas avanzada de Office 365 para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) para su entorno de Microsoft 365.
 
-4. Elija **nuevo** (el botón nuevo es similar a un signo más **+**()) para comenzar a crear la Directiva.
+4. Elija **nuevo** (el botón nuevo es similar a un signo más ( **+** )) para comenzar a crear la Directiva.
 
 5. Especifique el nombre, la descripción y la configuración de la Directiva.<br/><br/>**Ejemplo:** Para configurar una directiva denominada "sin demoras" que entregue inmediatamente los mensajes de todos los usuarios y vuelva a adjuntar los datos adjuntos después de su examen, puede especificar la siguiente configuración:
 
@@ -101,7 +101,7 @@ A medida que configure las directivas de datos adjuntos seguros de ATP, podrá e
 |**Aplicar la selección anterior si el análisis de malware para archivos adjuntos se agota el tiempo de espera o se produce un error**|Aplica la acción configurada para datos adjuntos no seguros a los datos adjuntos que no se pueden analizar (debido a un tiempo de espera o un error)|
 |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se hayan implementado las directivas de datos adjuntos seguros de ATP, puede ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
 

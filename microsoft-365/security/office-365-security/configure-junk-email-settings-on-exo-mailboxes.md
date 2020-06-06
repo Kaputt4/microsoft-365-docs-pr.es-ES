@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498668"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588457"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -32,7 +32,7 @@ Pero también hay opciones de Configuración antispam específicas que los admin
 - **Habilitar o deshabilitar la regla de correo no deseado**: la regla de correo no deseado es una regla de bandeja de entrada oculta denominada regla de correo electrónico no deseado que está habilitada de forma predeterminada en todos los buzones. La regla de correo no deseado controla las siguientes características:
 
   - **Mover mensajes a la carpeta de correo no deseado en función de las directivas contra correo no**deseado: cuando una directiva contra correo electrónico no deseado se configura con la acción **mover mensaje a la carpeta de correo no deseado** para un veredicto de filtrado de correo no deseado, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo electrónico no deseado después de que el mensaje se entregue al buzón. Para obtener más información sobre el filtrado de correo no deseado en directivas contra correo electrónico no deseado, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md). De forma similar, si la depuración automática de cero horas (ZAP) determina que un mensaje entregado es correo no deseado o phish, la regla de filtro de correo no deseado mueve el mensaje a la carpeta correo no deseado para **mover el mensaje a la carpeta correo no deseado** acciones de veredicto filtrado de correo no deseado. Para obtener más información acerca de ZAP, consulte [Zero-Hour auto Purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Configuración del correo no deseado que los usuarios se configuran para sí mismos en Outlook o Outlook en la web**: la _colección de listas seguras_ es la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados en cada buzón. Las entradas de estas listas determinan si la regla de correo electrónico no deseado mueve el mensaje a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Los usuarios pueden configurar la colección de listas seguras para su propio buzón de correo en Outlook o en Outlook en la web (anteriormente conocido como Outlook Web App). Los administradores pueden configurar la colección de listas seguras en el buzón de cualquier usuario.
 
 Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mover los mensajes a la carpeta de correo no deseado en función de la acción de veredicto **mover mensaje a la carpeta** de correo no deseado o la lista de remitentes bloqueados en el buzón y evitar que los mensajes se entreguen a la carpeta de correo no deseado (según la lista de remitentes seguros del buzón)
@@ -148,7 +148,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 > 
 > - Incluso si la regla de correo no deseado está deshabilitada en el buzón, todavía puede configurar la colección de listas seguras y el filtro de correo electrónico no deseado de Outlook puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 > 
-> - El filtro de correo electrónico no deseado de Outlook tiene una configuración de recopilación de listas seguras adicional (por ejemplo, **Agregar automáticamente mis contactos por correo electrónico a la lista de remitentes seguros**). Para más información, vea [Usar los filtros de correo electrónico no deseado para controlar los mensajes que ve](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> - El filtro de correo electrónico no deseado de Outlook tiene una configuración de recopilación de listas seguras adicional (por ejemplo, **Agregar automáticamente mis contactos por correo electrónico a la lista de remitentes seguros**). Para más información, vea [Usar los filtros de correo electrónico no deseado para controlar los mensajes que ve](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
@@ -197,7 +197,7 @@ La colección de listas seguras (la lista de remitentes seguros, la lista de des
   - 500 total de entradas en la lista de remitentes bloqueados y en la lista de dominios bloqueados.
 
   Cuando se alcanza el límite de entrada de 1024, ocurrirá lo siguiente:
-  
+
   - La lista deja de aceptar entradas en PowerShell y Outlook en la web, pero no se muestra ningún error.
 
     Los usuarios de Outlook pueden seguir agregando más de 1024 entradas hasta que alcancen el límite de 510 KB de Outlook. Outlook puede usar estas entradas adicionales, siempre que un filtro de EOP no bloquee el mensaje antes de enviarlo al buzón (reglas de flujo de correo, contra la suplantación de identidad, etc.).
@@ -208,7 +208,7 @@ La colección de listas seguras (la lista de remitentes seguros, la lista de des
   2. La lista de remitentes seguros y la lista de destinatarios seguros se combinan, desduplican y ordenan alfabéticamente siempre que se realiza un cambio en las primeras 1024 entradas.
 
   Se usan las primeras 1024 entradas y se marca la información correspondiente en los encabezados del mensaje.
-  
+
   Las entradas superiores a 1024 que no se sincronizaron con Azure AD son procesadas por Outlook (no por Outlook en la web) y no se ha estampado ninguna información en los encabezados del mensaje.
 
 Como puede ver, si habilita la configuración **confiar en correo electrónico de mis contactos** , se reduce el número de remitentes seguros y destinatarios seguros que se pueden sincronizar. Si esto es un problema, le recomendamos usar la Directiva de grupo para desactivar esta característica:
