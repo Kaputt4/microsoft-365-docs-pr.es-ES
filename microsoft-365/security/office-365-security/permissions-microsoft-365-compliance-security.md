@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74139dfef3e0adfccbf16451d3577a8a916a0f97
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 633473206ebe95c14e351607175405988a933540
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033907"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588009"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
 
@@ -58,8 +58,8 @@ Los usuarios con este rol tienen permisos para administrar las características 
 |**En este servicio...**|**El administrador de cumplimiento puede...**|
 |:-----|:-----|
 |[**Centro de cumplimiento de Microsoft 365**](https://compliance.microsoft.com/)|Proteger y administrar los datos de su organización en los servicios de Microsoft 365 <br/><br/> Administrar alertas de cumplimiento.|
-|[**Puntuación de conformidad**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
-|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados.|
+|[**Puntuación de conformidad**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
+|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver todos los datos de auditoría de Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Cuenta con permisos de solo lectura y puede administrar alertas. <br/><br/> Puede crear y modificar directivas de archivo y permitir acciones de gobierno de archivo. <br/><br/> Puede ver todos los informes integrados en Administración de datos.|
 
@@ -70,8 +70,8 @@ Los usuarios con este rol tienen permisos para proteger y realizar un seguimient
 |**En este servicio...**|**El administrador de datos de cumplimiento puede...**|
 |:-----|:-----|
 |[**Centro de cumplimiento de Microsoft 365**](https://compliance.microsoft.com/)|Proteger y administrar los datos de su organización en los servicios de Microsoft 365 <br/><br/> Administrar alertas de cumplimiento. <br/><br/> Administrar etiquetas de sensibilidad|
-|[**Puntuación de conformidad**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
-|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados. <br/><br/> Administrar etiquetas de sensibilidad|
+|[**Puntuación de conformidad**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
+|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Administrar el gobierno de datos. <br/><br/> Realizar investigaciones de datos y legales. <br/><br/> Administrar solicitudes de interesados. <br/><br/> Administrar etiquetas de sensibilidad|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (próximamente)|Ver todos los datos de auditoría de Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Usa permisos de solo lectura para ver la información. <br/>Administrar alertas. <br/><br/> Crear y modificar directivas de archivo y permitir acciones de gobierno de archivo. <br/><br/> Ver todos los informes integrados en Administración de datos.|
 
@@ -84,7 +84,7 @@ Los usuarios con este rol tienen permisos para administrar las características 
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Supervisar las directivas relacionadas con la seguridad en servicios de Microsoft 365. <br/><br/>  Administrar alertas y amenazas de seguridad. <br/><br/> Ver informes. <br/><br/> Administrar etiquetas de confidencialidad.|
 |**Identity Protection Center**|Hace todo lo que el rol lector de seguridad puede hacer, y realiza todas las operaciones del Identity Protection Center, excepto restablecer contraseñas.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> **No puede** administrar la configuración y la asignación de roles de Azure AD.|
-|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Administrar directivas de seguridad. <br/><br/> Ver, investigar y responder a las amenazas de seguridad. <br/><br/> Ver informes. <br/><br/> Administrar etiquetas de confidencialidad.|
+|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Administrar directivas de seguridad. <br/><br/> Ver, investigar y responder a las amenazas de seguridad. <br/><br/> Ver informes. <br/><br/> Administrar etiquetas de confidencialidad.|
 |**Azure Advanced Threat Protection**|Supervisa la actividad de seguridad que sea sospechosa y responde a ella.|
 |**ATP de Windows Defender y EDR**|Asignar roles. <br/><br/> Administrar grupos de máquinas. <br/><br/> Configurar la detección de amenazas de punto de conexión y la corrección automatizada. <br/><br/> Ver, investigar y responder alertas.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver información sobre usuarios, dispositivos, inscripciones, configuración y aplicaciones. <br/><br/> **No puede** realizar cambios en Intune.|
@@ -101,7 +101,7 @@ Los usuarios con este rol pueden administrar las alertas y tener acceso global d
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> Ver, investigar y responder a las alertas de seguridad.|
 |**Identity Protection Center** (próximamente)|Hace todo lo que el rol de lector de seguridad puede hacer.|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Hace todo lo que el rol de lector de seguridad puede hacer.|
-|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> Ver, investigar y responder a las amenazas de seguridad.|
+|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> Ver, investigar y responder a las amenazas de seguridad.|
 |**ATP de Windows Defender y EDR**|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> Ver, investigar y responder alertas.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver información sobre usuarios, dispositivos, inscripciones, configuración y aplicaciones. <br/><br/> **No puede** realizar cambios en Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Hace todo lo que el rol de lector de seguridad puede hacer, además puede ver y descartar alertas.|
@@ -116,7 +116,7 @@ Los usuarios con este rol tienen acceso global de solo lectura en la caracterís
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Ver directivas relacionadas con la seguridad en los servicios de Microsoft 365. <br/><br/> Ver alertas y amenazas de seguridad. <br/><br/> Ver informes.|
 |**Identity Protection Center**|Lea toda la información de los informes de seguridad y la configuración de las características de seguridad: antispam, cifrado, prevención de pérdida de datos (DLP), antimalware, protección contra amenazas avanzada (ATP), filtro antiphishing y reglas de flujo de correo (también conocidas como reglas de transporte).|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|Usa el acceso de solo lectura para ver toda la información que se muestra en Azure AD PIM: directivas e informes para las asignaciones de roles de Azure AD, revisiones de seguridad y (próximamente) datos e informes de escenarios que no sean asignación de roles de Azure AD. <br/><br/> **No puede** registrarse para PIM de Azure AD ni realizar ningún cambio en esta característica. En el portal de PIM o mediante PowerShell, alguien con este rol puede activar roles adicionales (por ejemplo, administrador global o administrador de rol con privilegios), si el usuario es apto para ellos.|
-|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Ver directivas de seguridad. <br/><br/> Ver e investigar las amenazas de seguridad. <br/><br/> Ver informes.|
+|[**Centro de seguridad y cumplimiento**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|Ver directivas de seguridad. <br/><br/> Ver e investigar las amenazas de seguridad. <br/><br/> Ver informes.|
 |**ATP de Windows Defender y EDR**|Ver e investigar alertas.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Ver información sobre usuarios, dispositivos, inscripciones, configuración y aplicaciones. <br/><br/> **No puede** realizar cambios en Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Usa permisos de solo lectura para ver la información. <br/><br/> Administrar alertas.|
@@ -149,7 +149,7 @@ Al asignar un usuario a uno de los roles de administrador de seguridad y cumplim
 
 |**Servicio de Microsoft 365**|**Información del rol**|
 |:-----|:-----|
-|Roles de administrador de los planes de negocios de Office 365 y Microsoft 365|[Roles de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Roles de administrador de los planes de negocios de Office 365 y Microsoft 365|[Roles de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) y Azure AD Identity Protection|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Grupos de roles de Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
@@ -158,7 +158,7 @@ Al asignar un usuario a uno de los roles de administrador de seguridad y cumplim
 |Intune|[Control de acceso basado en roles de Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Escritorio administrado|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[Control de acceso basado en roles](https://docs.microsoft.com/cloud-app-security/manage-admins)|
-|Centro de seguridad y cumplimiento|[Roles de administración de Microsoft 365](https://docs.microsoft.com/office365/SecurityCompliance/permissions-in-the-security-and-compliance-center)|
+|Centro de seguridad y cumplimiento|[Roles de administración de Microsoft 365](permissions-in-the-security-and-compliance-center.md)|
 |Privileged Identity Management|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Puntuación de seguridad|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Roles de administrador de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [Acerca del rol de administrador de SharePoint en Office 365](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|

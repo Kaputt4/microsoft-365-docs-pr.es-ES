@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160743"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560452"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Paso 4. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 
@@ -39,7 +39,9 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 
 Teams le permite charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas trabajan en Teams todos los días ya que reúne todo lo que necesita para hacerlo de forma remota en un centro para el trabajo en equipo. 
 
-Puede usar [este artículo](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) como guía para dar soporte técnico a los trabajadores remotos con Teams. 
+Use [este artículo](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) como guía para dar soporte técnico a los trabajadores remotos con Teams. 
+
+En el [vídeo 1.ª parte](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) encontrará instrucciones y demostraciones sobre el uso de Teams para trabajar de forma remota.
 
 ### <a name="chat-and-conversations"></a>Chats y conversaciones
 
@@ -63,25 +65,34 @@ Las aplicaciones y los flujos de trabajo permiten que los trabajadores remotos s
 
 Outlook permite a los usuarios remotos mantenerse conectados y organizarse con el correo electrónico, los calendarios, los contactos, las tareas y otros elementos en un mismo sitio. Outlook le ayuda a mantenerse al tanto y a asignar prioridad al día basándose en lo que es relevante para usted. Outlook permite compartir datos adjuntos directamente desde OneDrive, planear y unirse a reuniones de equipo, ver y compartir calendarios y ofrecer permisos de delegado para otras personas. Conocer lo que está próximo en el trabajo y los compromisos personales y lo que necesita atención puede ayudar a que los trabajadores remotos se centren en lo que importa. Outlook proporciona métodos útiles para que los trabajadores remotos administren su tiempo y encuentren lo que necesitan fácilmente, incluidos archivos, personas de la organización y mucho más. 
 
+Consulte [este artículo](../enterprise/secure-email-recommended-policies.md) para ver las directivas recomendadas de identidad y acceso a dispositivos con el fin de proteger los correos electrónicos de la empresa y de los clientes, compatibles con la autenticación moderna y el acceso condicional.
+
 ## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>Almacenamiento y colaboración en archivos con SharePoint Online y OneDrive
 
 Para la colaboración de contenido, los trabajadores remotos pueden usar las carpetas de SharePoint Online y OneDrive como un sitio central en la nube para almacenar y compartir archivos, coautoría, comunicarse y colaborar. Los usuarios remotos pueden trabajar de forma segura desde cualquier lugar desde un explorador web, desde Teams y desde aplicaciones de Office.
+
+Consulte [este artículo](../enterprise/sharepoint-file-access-policies.md) para conocer las directivas de identidad y acceso de dispositivo recomendadas para proteger SharePoint Online y OneDrive para la Empresa.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creación y colaboración en contenido con aplicaciones de Microsoft 365
 
 Las aplicaciones de Microsoft 365 son las más productivas y seguras para empresas, lo que permite que los usuarios trabajen conjuntamente sin problemas desde cualquier lugar y en cualquier momento. Los trabajadores remotos pueden colaborar en un documento con varias personas simultáneamente, ver modificaciones y cambios en tiempo real y coautoría con otros usuarios en cualquier equipo portátil, PC o en un dispositivo móvil.
 
+Consulte [este artículo](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) para planear, implementar y administrar Aplicaciones de Microsoft 365 en su entorno empresarial.
+
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Recursos técnicos para administradores de aplicaciones y servicios de productividad
 
 - [Dar soporte para trabajadores remotos con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Vídeo 1.ª parte sobre Teams para trabajadores remotos](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Descarga del kit de consecución del cliente de Teams](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Herramientas para impulsar la adopción de Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Crear una estrategia de administración de cambios para Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [Teams con tres niveles de protección](configure-teams-three-tiers-protection.md)
+
+## <a name="user-training-resources-for-productivity-apps-and-services"></a>Recursos de aprendizaje de usuarios para aplicaciones y servicios de productividad
 
 - [Aprendizaje para los usuarios en Office y Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [Usar Office para la web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Paso siguiente
 
-Continúe con el [Paso 5](empower-people-to-work-remotely-communication-venues.md) para crear centros de comunicación adicionales para cumplir los requisitos específicos de la crisis COVID-19.
+Siga con el [Paso 5](empower-people-to-work-remotely-communication-venues.md) para crear otros espacios de comunicación para los trabajadores remotos.

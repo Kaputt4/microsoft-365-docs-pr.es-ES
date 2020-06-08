@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f0d256a1d181b482516c7be55bca240a55dec567
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634537"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588185"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si utiliza Outlook.com, Microsoft 365 Familia o Microsoft 365 Personal, y está buscando información sobre los vínculos seguros o los datos adjuntos seguros en Outlook, consulte [Seguridad avanzada de Outlook.com para suscriptores de Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Información general
 
@@ -112,7 +112,7 @@ Para acceder a las características de ATP en el Centro de seguridad y cumplimie
 
 |Rol o grupo de roles|Recursos para obtener más información|
 |---------|---------|
-|Administrador Global (puede asignarse en el Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Administrador Global (puede asignarse en el Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Administrador de Seguridad (puede asignarse en Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
 |Gestión de organizaciones de Exchange Online (esto se asigna en Exchange Online)|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |Búsqueda y purga (se asigna solo en el Centro de seguridad y cumplimiento) |[Permisos del Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md|

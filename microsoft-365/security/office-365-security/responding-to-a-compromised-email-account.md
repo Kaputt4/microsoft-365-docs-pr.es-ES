@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033835"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588221"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -87,7 +87,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 > [!WARNING]
 > No envíe la nueva contraseña al usuario en cuestión por correo electrónico, ya que el atacante todavía tiene acceso al buzón en este momento.
 
-1. Siga los procedimientos para Restablecer una contraseña de aplicaciones de Microsoft 365 para otro usuario en [Restablecer contraseñas de aplicaciones de Microsoft 365 Empresa](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Siga los procedimientos para Restablecer una contraseña de aplicaciones de Microsoft 365 para otro usuario en [Restablecer contraseñas de aplicaciones de Microsoft 365 Empresa](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Notas**:
 
@@ -98,7 +98,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 - Si la identidad local se federa con Microsoft 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar el peligro a su administrador.
 
 > [!TIP]
-> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede encontrar más información sobre MFA [aquí](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede encontrar más información sobre MFA [aquí](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 Eliminar direcciones de reenvío de correo electrónico sospechosas
 
@@ -202,4 +202,4 @@ Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de se
 
 - [Bolsas de valores de EE. UU.: Fraude de suplantación de identidad](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- Para informar directamente a Microsoft y su administrador sobre el correo no deseado [Use el complemento Informar sobre el mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- Para informar directamente a Microsoft y su administrador sobre el correo no deseado [Use el complemento Informar sobre el mensaje](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
