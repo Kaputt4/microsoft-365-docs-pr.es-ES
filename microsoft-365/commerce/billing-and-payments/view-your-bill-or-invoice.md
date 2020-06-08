@@ -25,14 +25,15 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232786"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407949"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura
 
@@ -89,6 +90,6 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 [Pagar mediante factura, tarjeta de crédito o cuenta bancaria](pay-for-your-subscription.md)
   
-[Agregar, actualizar o quitar una tarjeta de crédito o cuenta bancaria](add-update-or-remove-credit-card-or-bank-account.md)
+[Administrar métodos de pago](manage-payment-methods.md)
 
 [Opciones de pago de Minecraft: Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761)
