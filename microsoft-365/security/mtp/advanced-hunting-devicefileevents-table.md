@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceFileEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre eventos relacionados con archivos en la tabla DeviceFileEvents del esquema de búsqueda avanzada.
-keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, filecreationevents, DeviceFileEvents, archivos, ruta de acceso Hash, SHA1, SHA256, MD5
+keywords: búsqueda avanzada, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, filecreationevents, DeviceFileEvents, archivos, ruta de acceso, hash, SHA1, SHA256, MD5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235039"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617167"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
-
-
 
 La `DeviceFileEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre la creación, modificación y otros eventos del sistema de archivos. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
@@ -44,8 +42,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FileName` | string | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | string | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
-| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
-| `MD5` | string | Hash MD5 del archivo al que se aplicó la acción grabada |
+| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginReferrerUrl` | string | Dirección URL de la página web que vincula al archivo descargado |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
@@ -54,16 +52,24 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessAccountSid` | string | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
+| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `InitiatingProcessFolderPath` | cadena | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | Entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
 | `InitiatingProcessIntegrityLevel` | string | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de ciertas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para recursos |
 | `InitiatingProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso que inició el evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | Entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
+| `RequestProtocol` | string | Protocolo de red, si procede, usado para iniciar la actividad: desconocido, local, SMB o NFS |
+| `ShareName` | string | Nombre de la carpeta compartida que contiene el archivo |
+| `RequestSourceIP` | string | Dirección IPv4 o IPv6 del dispositivo remoto que inició la actividad |
+| `RequestSourcePort` | string | Puerto de origen en el dispositivo remoto que inició la actividad |
+| `RequestAccountName` | string | Nombre de usuario de la cuenta que se usa para iniciar de forma remota la actividad |
+| `RequestAccountDomain` | string | Dominio de la cuenta que se usa para iniciar de forma remota la actividad |
+| `RequestAccountSid` | string | Identificador de seguridad (SID) de la cuenta que se usa para iniciar de forma remota la actividad |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y timestamp. |
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado que usa la protección de aplicaciones para aislar la actividad del explorador |
 | `SensitivityLabel` | string | Etiqueta aplicada a un correo electrónico, archivo u otro contenido para clasificarlo para la protección de la información |

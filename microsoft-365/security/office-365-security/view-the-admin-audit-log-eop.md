@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351866"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613329"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
 
@@ -32,7 +32,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita el rol registros de auditoría o registros de auditoría con permiso de vista, que se asignan a los grupos de roles ComplianceManagement, OrganizationManagement (administradores globales) y SecurityAdministrator de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -86,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - Especifique el valor de fecha y hora en UTC; por ejemplo, "2016-05-06 14:30:00z".
 
-  - Especifique el valor de fecha y hora como una fórmula que convierte la fecha y hora de la zona horaria local en UTC: por ejemplo, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Para obtener más información, vea [Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Especifique el valor de fecha y hora como una fórmula que convierte la fecha y hora de la zona horaria local en UTC: por ejemplo, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Para obtener más información, vea [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - De forma predeterminada, el cmdlet devuelve un máximo de 1.000 entradas de registro. Use el parámetro _resultsize_ para especificar hasta 250.000 entradas de registro. O bien, use el valor `Unlimited` para devolver todas las entradas.
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo enrutar correo no deseado a las carpetas de correo no deseado del usuario en un entorno híbrido de protección de Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351968"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617059"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar un EOP independiente para enviar correo no deseado a la carpeta de correo no deseado en entornos híbridos
 
@@ -60,7 +60,7 @@ En este tema se describe cómo crear estas reglas de flujo de correo en el centr
 
   - Si la regla de correo no deseado está habilitada en el buzón (el valor del parámetro _Enabled_ se $true en el cmdlet [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) en el shell de administración de Exchange). Es la regla de correo no deseado que realmente mueve el mensaje a la carpeta correo electrónico no deseado después de la entrega. De forma predeterminada, la regla de correo no deseado está habilitada en los buzones. Para obtener más información, consulte [configurar las opciones de correo no deseado de Exchange en buzones](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Para abrir el EAC en un servidor de Exchange, vea [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el shell de administración de Exchange, consulte [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
+- Para abrir el EAC en un servidor de Exchange, vea [centro de administración de Exchange en Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Para abrir el shell de administración de Exchange, consulte [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
 
 - Para obtener más información acerca de las reglas de flujo de correo en Exchange local, consulte los siguientes temas:
 
@@ -134,7 +134,7 @@ Para comprobar que configuró correctamente EOP independiente para entregar el c
 
 - En el EAC, vaya a reglas de **flujo de correo** \> **Rules**, seleccione la regla y, a continuación, haga clic en **Editar** ![ icono ](../../media/ITPro-EAC-EditIcon.png) de edición para comprobar la configuración.
 
-- En el shell de administración de Exchange, reemplace \< RuleName \> por el nombre de la regla de flujo de correo y regla el siguiente comando para comprobar la configuración:
+- En el shell de administración de Exchange, reemplace \<RuleName\> por el nombre de la regla de flujo de correo y regla el siguiente comando para comprobar la configuración:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

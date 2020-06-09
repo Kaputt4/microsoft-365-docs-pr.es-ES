@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los informes y la información inteligentes disponibles en el centro de seguridad y cumplimiento, y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588161"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617313"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad y &amp; cumplimiento
 
@@ -54,11 +54,6 @@ Hay una amplia variedad de informes disponibles en el centro de seguridad y &amp
 |**Registro de auditoría** <br/> Información sobre las actividades, usuarios, archivos, carpetas y más de Microsoft 365.  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a búsqueda de registros de auditoría de ** &amp; investigación de búsqueda** \> **Audit log search** <br/> |[Buscar el registro de auditoría en el centro de seguridad y &amp; cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Informes de cumplimiento** <br/> Informes de FedRAMP, informes de gobernanza, riesgo y cumplimiento, informes de administración de seguridad de la información de la ISO e informes de auditoría y evaluación de los controles de organización de servicios  <br/> |En el centro de seguridad &amp; y cumplimiento, vaya a informes de cumplimiento de **garantía del servicio** \> **Compliance reports** . <br/> |[Planeación del &amp; cumplimiento de la seguridad en Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Siguientes pasos
-
-Ahora que tiene una introducción a los informes y a la información, el siguiente paso es aprender a personalizar, administrar y descargar informes. Consulte los siguientes artículos:
-  
-
     
 ## <a name="related-topics"></a>Temas relacionados
 

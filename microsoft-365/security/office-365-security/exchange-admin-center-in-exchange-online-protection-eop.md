@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209744"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617003"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
@@ -70,7 +70,7 @@ Este es el primer nivel de navegación para la mayoría de las tareas que realiz
 
 - **Flujo de correo**: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), dominios aceptados y conectores, así como donde puede ir a ejecutar seguimiento de mensajes.
 
-- **Híbrido**: aquí puede ejecutar el [Asistente para la configuración híbrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)y donde puede instalar el [módulo de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- **Híbrido**: aquí puede ejecutar el [Asistente para la configuración híbrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)y donde puede instalar el [módulo de PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### <a name="tabs"></a>Pestañas
 

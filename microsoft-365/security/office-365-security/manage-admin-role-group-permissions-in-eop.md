@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352340"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616519"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
 
@@ -29,7 +29,7 @@ Para obtener más información acerca de los roles y los grupos de roles, consul
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Para abrir PowerShell independiente de EOP, consulte [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Para abrir PowerShell independiente de EOP, consulte [conectarse a PowerShell de Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. En concreto, necesita la función de administración de funciones, que se asigna al grupo de funciones OrganizationManagement (administrador global) de forma predeterminada. Para obtener más información, vea [permisos en EOP independiente](feature-permissions-in-eop.md) y [usar el EAC para modificar la lista de miembros de los grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -240,7 +240,7 @@ Para comprobar que el grupo de roles se copió correctamente, siga uno de estos 
 
 - En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos y compruebe que el grupo de roles aparece (o no aparece en la lista). Seleccione el grupo de roles y Compruebe la configuración en el panel de detalles o haga clic en el icono **Editar** ![ Edición ](../../media/ITPro-EAC-EditIcon.png) para comprobar la configuración.
 
-- En Exchange Online PowerShell, reemplace \< nombre del grupo de roles \> con el nombre del grupo de roles y ejecute el siguiente comando para comprobar que el grupo de roles existe (o no existe) y Compruebe la configuración:
+- En Exchange Online PowerShell, reemplace \<Role Group Name\> por el nombre del grupo de roles y ejecute el siguiente comando para comprobar que el grupo de roles existe (o no existe) y Compruebe la configuración:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

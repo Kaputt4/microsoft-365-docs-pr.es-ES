@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235049"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617179"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235049"
 
 
 
-La tabla o `DeviceEvents` los eventos de dispositivos variados del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como antivirus de Windows Defender y protección contra la vulnerabilidad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La tabla o los eventos de dispositivos variados del `DeviceEvents` esquema de [búsqueda avanzada](advanced-hunting-overview.md) contienen información sobre varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad, como antivirus de Windows Defender y protección contra la vulnerabilidad. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -45,14 +45,14 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `FileName` | string | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | string | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
-| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
-| `MD5` | string | Hash MD5 del archivo al que se aplicó la acción grabada |
+| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
-| `RemoteDeviceName` | cadena | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
-| `ProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso recién creado |
+| `RemoteDeviceName` | string | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
+| `ProcessId` | Entero | IDENTIFICADOR de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora de creación del proceso |
 | `ProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso recién creado. |
@@ -61,20 +61,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del registro al que se aplicó la acción grabada |
 | `RemoteIP` | string | Dirección IP a la que se ha conectado |
-| `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
+| `RemotePort` | Entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `LocalIP` | string | Dirección IP asignada al equipo local usada durante la comunicación |
-| `LocalPort` | int | Puerto TCP del equipo local usado durante la comunicación |
+| `LocalPort` | Entero | Puerto TCP del equipo local usado durante la comunicación |
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
 | `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
 | `InitiatingProcessSHA1` | string | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible |
-| `InitiatingProcessFileName` | string | Nombre del proceso que inició el evento |
+| `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | Entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | Entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |

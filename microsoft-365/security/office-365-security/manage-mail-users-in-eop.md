@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352437"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616839"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
@@ -35,7 +35,7 @@ Para organizaciones independientes de EOP con un pequeño número de usuarios, p
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+- Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Al crear usuarios de correo en el PowerShell de EOP, es posible que se encuentre con limitaciones. Además, los cmdlets de PowerShell de EOP usan un método de procesamiento por lotes que da como resultado un retraso en la propagación de unos minutos antes de que los resultados de los comandos estén visibles.
 
@@ -100,7 +100,7 @@ Use la ficha **General** para ver o cambiar la información básica sobre el usu
 
 Use la ficha **información de contacto** para ver o cambiar la información de contacto del usuario. La información de esta página se muestra en la libreta de direcciones.
 
-- **Drogas**
+- **Street**
 - **Ciudad**
 - **Estado o provincia**
 - **Código postal**
@@ -139,7 +139,7 @@ Para devolver una lista de Resumen de todos los usuarios de correo en EOP indepe
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-Para ver información detallada sobre un usuario de correo específico, reemplace \< MailUserIdentity \> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute los siguientes comandos:
+Para ver información detallada sobre un usuario de correo específico, reemplace \<MailUserIdentity\> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute los siguientes comandos:
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Usar PowerShell independiente de EOP para quitar usuarios de correo
 
-Para quitar usuarios de correo en un PowerShell de EOP independiente, reemplace \< MailUserIdentity \> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute el siguiente comando:
+Para quitar usuarios de correo en un PowerShell de EOP independiente, reemplace \<MailUserIdentity\> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute el siguiente comando:
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Para comprobar que los usuarios de correo se han creado, modificado o quitado co
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Reemplace \< MailUserIdentity \> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute los siguientes comandos para comprobar la configuración:
+- Reemplace \<MailUserIdentity\> por el nombre, el alias o el nombre de cuenta del usuario de correo y ejecute los siguientes comandos para comprobar la configuración:
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

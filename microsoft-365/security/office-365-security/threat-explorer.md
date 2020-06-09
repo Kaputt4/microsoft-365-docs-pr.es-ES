@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el &amp; centro de seguridad y cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
+description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036757"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613449"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -36,7 +36,7 @@ Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp
 
 Con el explorador (o detecciones en tiempo real), dispone de un informe eficaz que permite al equipo de operaciones de seguridad investigar y responder a las amenazas de manera eficaz y eficaz. El informe es similar a la siguiente imagen:
 
-![Ir al explorador de \> administración de amenazas](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Ir al explorador de administración de amenazas \>](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Con este informe, puede:
 
@@ -103,13 +103,13 @@ Para obtener más información acerca de la investigación de mensajes de correo
 
 Además, ahora podrá exportar informes para los clics de direcciones URL a Microsoft Excel para ver tanto el identificador de mensaje de red como el veredicto de clic, lo que hace que la tarea de comprender dónde se ha originado el tráfico en la dirección URL sea más fácil. Así es cómo funciona. A partir de la administración de amenazas en el inicio rápido de Office 365, haga clic en esta cadena:
 
-**Explorador** \> **Ver phish** \> **hace clic** \> en **direcciones URL principales o en** \> direcciones URL principales clics en **cualquier registro para abrir el control flotante de dirección URL**
+**Explorador** \> **Ver phish** \> **Hace clic en** \> **Direcciones URL principales o clics principales en URL** \> **Haga clic en cualquier registro para abrir el control flotante de dirección URL**
 
 Al hacer clic en una dirección URL de la lista, verá un nuevo botón exportar en el panel desplegable. Use este botón para mover datos a una hoja de cálculo de Excel para facilitar la creación de informes.
 
 Puede acceder a la misma ubicación en el informe de detecciones en tiempo real de la siguiente manera:
 
-**Explorer** \> Detecciones \> en **tiempo real de** Explorer **Ver** \> **direcciones URL** \> de phish **direcciones URL principales o clics** \> **principales haga clic en cualquier registro para abrir el control flotante** \> de dirección URL **navegue hasta la pestaña clics.**
+**Explorador** \> Detecciones en tiempo **real** \> **Ver phish** \> **Direcciones URL** \> **Direcciones URL principales o clics principales** \> **Haga clic en cualquier registro para abrir el control flotante** \> de dirección URL **Vaya a la pestaña clics.**
 
 > [!TIP]
 > IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en las herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. En la exportación, la identificación de la identificación del mensaje de red facilita un análisis más rápido y eficaz.
@@ -120,13 +120,13 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 
 Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Microsoft 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el **menú Ver** , elija**malware**de **correo electrónico** > .
+2. En el menú **Ver** , elija malware de **correo electrónico**  >  **Malware**.
 
    ![Menú Ver para el explorador](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Haga clic en **remitente**y, a continuación, elija**tecnología de detección** **básica** > .
+3. Haga clic en **remitente**y, a continuación, elija tecnología de **Basic**  >  **detección**básica.
 
    Las tecnologías de detección están ahora disponibles como filtros para el informe.
 
@@ -144,13 +144,13 @@ Supongamos que desea ver los intentos de suplantación de identidad mediante dir
 
 Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use la vista de [correo electrónico > phish](threat-explorer-views.md#email--phish) de detecciones en tiempo real.
 
-1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el **menú Ver** , elija**phishing**de **correo electrónico** > .
+2. En el menú **Ver** , elija phishing de **correo electrónico**  >  **Phish**.
 
    ![Menú Ver para el explorador](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Haga clic en **remitente**y, a continuación, elija **direcciones URL** > ,**haga clic en veredicto**.
+3. Haga clic en **remitente**y, a continuación, elija **direcciones URL**,  >  **haga clic en veredicto**.
 
 4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado**y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).
 
@@ -175,13 +175,13 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico > vista de envíos](threat-explorer-views.md#email--submissions) del explorador (o detecciones en tiempo real).
 
-1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
+1. En el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ), elija **Threat Management**  >  **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el **menú Ver** , elija**envíos**de **correo electrónico** > .
+2. En el menú **Ver** , elija **Email**  >  **envíos**de correo electrónico.
 
    ![Menú Ver para el explorador](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Haga clic en **remitente**y, a continuación, elija**tipo de informe** **básico** > .
+3. Haga clic en **remitente**y, a continuación, elija tipo de **Basic**  >  **Informe**básico.
 
 4. Seleccione una opción, como **phish**y, a continuación, haga clic en el botón **Actualizar** .
 
@@ -216,13 +216,13 @@ Debe tener [Office 365 ATP](office-365-atp.md) para obtener detecciones de Inter
 
 Para ver y usar el explorador o las detecciones en tiempo real, debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad.
 
-- Para el centro &amp; de seguridad y cumplimiento, debe tener asignada una de las siguientes funciones:
+- Para el centro de seguridad &amp; y cumplimiento, debe tener asignada una de las siguientes funciones:
 
   - Administración de la organización
-  - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ())
+  - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Lector de seguridad
 
-- Para Exchange Online, debe tener una de las siguientes funciones asignadas en el centro de administración de Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() o con cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- Para Exchange Online, debe tener una de las siguientes funciones asignadas en el centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) o con cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Administración de la organización
   - Administración de organización de solo lectura
@@ -231,7 +231,7 @@ Para ver y usar el explorador o las detecciones en tiempo real, debe tener los p
 
 Para obtener más información acerca de los roles y los permisos, vea los siguientes recursos:
 
-- [Permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md)
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Algunas diferencias entre el explorador de amenazas y las detecciones en tiempo real

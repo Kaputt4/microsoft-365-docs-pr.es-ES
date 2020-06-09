@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a58d1e5db2ea8689d4909e6e9c47b08a6e94d34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929238"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617091"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 **Se aplica a:**
 - Protección contra amenazas de Microsoft
 
-La `AlertEvidence` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre diversas entidades (archivos, direcciones IP, direcciones URL, usuarios o dispositivos) asociadas con alertas de ATP de microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `AlertEvidence` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre diversas entidades (archivos, direcciones IP, direcciones URL, usuarios o dispositivos) asociadas con alertas de ATP de Microsoft Defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -40,10 +40,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `EntityType` | string | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
 | `EvidenceRole` | string | Cómo interviene la entidad en una alerta, lo que indica si se ve afectada o si simplemente está relacionada. |
 | `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
-| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele rellenarse; use la columna SHA1 cuando esté disponible. |
-| `RemoteIP` | string | Dirección IP a la que se ha conectado |
+| `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
+| `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
