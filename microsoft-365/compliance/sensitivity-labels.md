@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use las etiquetas de confidencialidad del marco de Microsoft Information Protection para clasificar y proteger los datos de la organización, sin interferir en la productividad de los usuarios y su capacidad de colaboración.
-ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 26b916f2a6aa86131da6f0bf9250291bad85dd74
+ms.sourcegitcommit: 57afde60f81499f58a9dce13649361c62f2b5a01
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292548"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44590931"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -163,7 +163,7 @@ Con una directiva de etiqueta, puede:
 
 Después de crear una directiva de etiqueta que asigne etiquetas de confidencialidad a usuarios y grupos, espere hasta 24 horas para que estos usuarios puedan ver las etiquetas en las aplicaciones de Office.
 
-No hay límite en el número de etiquetas de sensibilidad que puede crear y publicar, con una excepción: si la etiqueta aplica un cifrado, hay un máximo de 500 etiquetas. Sin embargo, como mejor práctica para reducir los gastos generales de administración y reducir la complejidad para sus usuarios, trate de mantener el número de etiquetas al mínimo. Las implementaciones de palabras reales han demostrado que la eficacia se reduce notablemente cuando los usuarios tienen más de cinco etiquetas principales o más de cinco subetiquetas por etiqueta principal.
+No hay límite en el número de etiquetas de confidencialidad que puede crear y publicar, con una excepción: si la etiqueta aplica un cifrado, hay un máximo de 500 etiquetas que puede crear. Sin embargo, como mejor práctica para reducir los gastos generales de administración y reducir la complejidad para sus usuarios, trate de mantener el número de etiquetas al mínimo. Las implementaciones de palabras reales han demostrado que la eficacia se reduce notablemente cuando los usuarios tienen más de cinco etiquetas principales o más de cinco subetiquetas por etiqueta principal.
 
 ### <a name="label-policy-priority-order-matters"></a>Prioridad de etiquetas de directivas (el orden importa)
 

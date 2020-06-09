@@ -1,5 +1,5 @@
 ---
-title: Solicitudes del interesado bajo el RGPD y la CCPA
+title: Solicitudes del interesado de Office 365 bajo el RGPD y la CCPA
 description: Comprenda los derechos de usuario según el RGPD y la CCPA y cómo Office 365 ayuda a las empresas a buscar y actuar en datos como respuesta a solicitudes del interesado.
 keywords: Office 365, solicitud del interesado, Microsoft 365, Microsoft 365 Education, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221434"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579275"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado del RGPD y CCPA
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Office 365 para el RGPD y la CCPA
 
 ## <a name="introduction-to-dsrs"></a>Introducción a las solicitudes del interesado
 
@@ -1130,9 +1130,9 @@ Las siguientes secciones explican cómo usar la función integrada en la aplicac
 Puede usar la Búsqueda de contenido para buscar en el sitio de SharePoint Online que está asociado a un proyecto (cuando se crea un proyecto por primera vez, hay una opción para crear un sitio de SharePoint Online asociado). La Búsqueda de contenido no busca los datos en un proyecto real en Project online, solo en el sitio asociado. Aunque la Búsqueda de contenido busca simplemente metadatos de proyectos (como las personas mencionadas en el asunto), puede usar esto para buscar y acceder al proyecto que contiene los datos relacionados con el DSR.
 
 >[!TIP]
->La dirección URL de la colección de sitios de la organización donde se encuentran los sitios asociados a Projects es **https://\<su organización\>.sharepoint.com/sites/pwa**; por ejemplo, **https://contoso.sharepoint.com/pwa**. Puede usar esta colección de sitios específica como ubicación de la búsqueda de contenido y luego escribir el nombre en la consulta de búsqueda. Además, un administrador de TI puede usar la página de colecciones de sitios en el Centro de administración de SharePoint para obtener una lista de colecciones de sitios de PWA de la organización.
+>La dirección URL de la colección de sitios de la organización donde se encuentran los sitios asociados a Projects es **https://\<your org\>.sharepoint.com/sites/pwa**; por ejemplo, **https://contoso.sharepoint.com/pwa**. Puede usar esta colección de sitios específica como ubicación de la búsqueda de contenido y luego escribir el nombre en la consulta de búsqueda. Además, un administrador de TI puede usar la página de colecciones de sitios en el Centro de administración de SharePoint para obtener una lista de colecciones de sitios de PWA de la organización.
 
-#### <a name="delete"></a>Eliminar
+#### <a name="delete"></a>Delete
 
 Puede eliminar información de un usuario de su entorno de Project Online. Vea [Eliminar datos de usuario de Project Online](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7).
 
@@ -1382,7 +1382,7 @@ Después de realizar esos cambios, puede aprovechar la capacidad de [actualizaci
 
 Para los mensajes, un usuario puede modificar un mensaje para corregir cualquier inexactitud. Puede solicitar una lista de todos sus mensajes a un administrador superior de Yammer y, a continuación, hacer clic en un vínculo en el archivo para revisar cada mensaje.
 
-Para los archivos, un usuario puede modificar un archivo concreto para corregir cualquier imprecisión. Puede solicitar una lista de todos los archivos registrados a un administrador superior de Yammer y acceder a ellos. Los archivos que se exportan a la carpeta de archivos pueden verse, solo hay que buscar el archivo por número. Por ejemplo, para un archivo denominado 12345678.ppx en la exportación, use el cuadro de búsqueda en Yammer para buscar 1235678.ppx. O bien, vaya a <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; por ejemplo, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
+Para los archivos, un usuario puede modificar un archivo concreto para corregir cualquier imprecisión. Puede solicitar una lista de todos los archivos registrados a un administrador superior de Yammer y acceder a ellos. Los archivos que se exportan a la carpeta de archivos pueden verse, solo hay que buscar el archivo por número. Por ejemplo, para un archivo denominado 12345678.ppx en la exportación, use el cuadro de búsqueda en Yammer para buscar 1235678.ppx. O bien, vaya a <strong>https://www.yammer.com/\<network\_name\>/\#/archivos/\<file\_number\></strong>; por ejemplo, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
 
 Para los datos a los que el usuario puede acceder a través de su perfil y configuración, es posible realizar todos los cambios necesarios.
 
@@ -1581,24 +1581,62 @@ No se permite restringir o rectificar los datos de los registros generados por e
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Acceder a registros generados por el sistema y exportarlos
 
-El "derecho de portabilidad de datos" permite a un interesado solicitar una copia de sus datos personales en formato electrónico (es decir, un “formato estructurado, de uso común, compatible con dispositivos electrónicos e interoperable”) que pueda transmitirse a otro responsable de los datos. Azure soporta esto al permitir que su organización exporte los datos en formato nativo JSON a su contenedor de almacenamiento de Azure especificado.
+El administrador del espacio empresarial es la única persona de su organización que puede acceder a los registros generados por el sistema asociados con el uso de servicios y aplicaciones de Office 365 por parte de un usuario en particular. Los datos recuperados para una solicitud de exportación se proporcionarán en un formato legible por máquina y se facilitarán en archivos que permitirán al usuario conocer los servicios a los que se asocian los datos. Como se ha señalado anteriormente, los datos recuperados no incluirán datos que puedan comprometer la seguridad o la estabilidad del servicio.
+
+Para acceder a registros generados por el sistema y exportarlos:
+
+1. Inicie sesión en Azure Portal y seleccione **Todos los servicios**.
+2. Escriba "directiva" en el filtro y, a continuación, seleccione **Directiva**.
+3. En la hoja **Directiva**, seleccione **Privacidad del usuario**, a continuación **Administrar las solicitudes de usuario** y después **Agregar solicitud de exportación**.
+4. Completar la **solicitud de exportación de datos**:
+
+    - **Usuario**. Escriba la dirección de correo electrónico del usuario de Azure Active Directory que solicita la exportación.
+    - **Suscripción**. Seleccione la cuenta que usa para notificar el uso de los recursos y cobrar por servicios. Esta es también la ubicación de su Azure Storage.
+    - **Cuenta de almacenamiento**. Seleccione la ubicación de su Azure Storage (Blob). Para obtener más información, consulte el artículo Introducción a Microsoft Azure Storage, almacenamiento de blobs.
+    - **Contenedor**. Crear un nuevo contenedor (o seleccionar uno existente) como lugar de almacenamiento de los datos de privacidad exportados por el usuario.
+
+5. Seleccione **Crear**.
+
+La solicitud de exportación pasa al estado **Pendiente**. Puede ver el informe de estado en la hoja **Privacidad del usuario** > **Información general**.
 
 >[!IMPORTANT]
->Debe ser un administrador de espacios empresariales para exportar datos de usuario del espacio empresarial.
+>Debido a que los datos personales pueden provenir de múltiples sistemas, es posible que el proceso de exportación pueda tardar hasta un mes en completarse.
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>Notificar sobre los problemas de exportación o eliminación
 
-Con respecto a los datos de clientes, Microsoft ofrece un portal y las experiencias del producto para proporcionar al administrador de espacios empresariales del cliente empresarial la capacidad de exportar solicitudes de información de identificación sobre un usuario final.
+Si tiene problemas al exportar o eliminar datos desde Azure Portal, vaya a la hoja **Ayuda + soporte** de Azure Portal y envíe un nuevo vale en **Administración de suscripción** > **Otras solicitudes de seguridad y cumplimiento** > **Solicitudes de RGPD y la hoja de privacidad.**
 
-#### <a name="service-specific-interfaces"></a>Interfaces específicas del servicio
+>[!NOTE]
+ >Cuando exporta datos desde Azure Portal, los datos generados por el sistema para unas pocas aplicaciones no se exportarán. Para exportar datos para estas aplicaciones, consulte [Pasos adicionales para exportar datos de registro generados por el sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
-Microsoft proporciona la capacidad de detectar datos de clientes directamente a través de interfaces de programación de aplicaciones (API) o interfaces de usuario (UI) ya existentes para servicios específicos. Los detalles se describen en la documentación de referencia de los respectivos servicios, que describen las operaciones CRUD (creación, lectura, actualización y eliminación) aplicables.
+A continuación, se resumen las acciones de acceso y exportación de registros generados por el sistema:
+
+- **¿Cuánto tarda en completarse una solicitud de exportación realizada con Azure Portal?**: Esto depende de varios factores. En la mayoría de los casos debe completarse en uno o dos días, pero puede tardar hasta 30 días.
+- **¿Qué formato tendrá el resultado?** El resultado son archivos con formato de lectura mecánica estructurados, como XML, CSV o JSON.
+- **¿Quién tiene acceso a Azure Portal para enviar solicitudes de acceso para datos generados por el sistema?**: Los administradores globales de Office 365 tienen acceso a Azure Portal.
+- **¿Qué datos devuelven los resultados de la exportación?**: Los resultados contienen registros generados por el sistema que Microsoft almacena. Los datos exportados pertenecen a varios servicios Microsoft, como Office 365, Azure y Dynamics. Los resultados no incluirán datos que puedan comprometer la seguridad o la estabilidad del servicio.
+- **¿Cómo se devuelven los datos al usuario?** Los datos se exportan a la ubicación de Azure Storage de su organización. Los administradores de la organización deben determinar cómo mostrarán o enviarán estos datos a los usuarios.
+- **¿Cómo serán los datos del registro generado por el sistema?**: A continuación se muestra un ejemplo con datos en formato JSON:
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+Los datos sobre el producto y el servicio de algunos de los servicios más utilizados de Microsoft, como Exchange Online, SharePoint Online, Skype empresarial, Yammer y Office 365 también se pueden recuperar al buscar el registro de auditoría de Office 365 en el Centro de seguridad y cumplimiento. Para obtener más información, vea [Usar la herramienta de búsqueda de registros de auditoría de Office 365 en investigaciones DSR](#use-the-audit-log-search-tool-in-dsr-investigations) en el Apéndice A. Es posible que el uso del registro de auditoría le sea útil, ya que es posible asignar permisos a otras personas de su organización (como el trabajador encargado de la conformidad) para que busquen en el registro de auditoría el acceso a estos datos.
 
 ### <a name="deleting-system-generated-logs"></a>Eliminar registros generados por el sistema
 
 Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, tiene que quitar el usuario del servicio y eliminar permanentemente su cuenta de Azure Active Directory. Para obtener instrucciones sobre cómo eliminar un usuario de forma permanente, vea la sección [Eliminar un usuario](#deleting-a-user) en esta guía. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada.
 
-Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días se quitan los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365, a excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio. Una de estas excepciones es que la eliminación permanente de la cuenta de usuario lleve más de 30 días en Exchange Online. Dado el carácter crítico del contenido de Exchange Online y para evitar la pérdida accidental de datos, el sistema se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte [Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
+Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días se quitan los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Office 365, a excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio. 
+
+Una excepción que supera este plazo de 30 días, es la eliminación permanente de la cuenta de usuario de Exchange Online. Esto se debe al carácter crítico del contenido de Exchange Online y la necesidad de evitar la pérdida accidental de datos. Exchange Online se ha diseñado intencionalmente para dejar en espera datos durante un máximo de 60 días después de que se haya eliminado permanentemente la cuenta de usuario. Para eliminar de forma permanente los datos de Exchange Online de un usuario en un plazo de 30 días, elimine definitivamente la cuenta de usuario de Azure Active Directory y solicite al [Soporte técnico de Microsoft](https://support.microsoft.com/) que se eliminen manualmente los datos del usuario en Exchange Online, fuera del proceso de eliminación programado. Para obtener más información, consulte [Eliminación de datos de Exchange Online](#removing-exchange-online-data), anteriormente explicado en esta guía.
 
 La eliminación de una cuenta de usuario no quitará los registros generados por los sistemas de Yammer y Kaizala. Para quitar los datos de estas aplicaciones, vea uno de los siguientes:
 
@@ -1607,11 +1645,11 @@ La eliminación de una cuenta de usuario no quitará los registros generados por
 
 #### <a name="national-clouds"></a>Nubes nacionales
 
-En las siguientes nubes nacionales, un administrador de TI global tendrá que realizar este procedimiento para eliminar registros generados por el sistema:
+En las siguientes nubes nacionales, un administrador de TI global tiene que realizar este procedimiento para exportar registros de datos generados por el sistema:
 
-- Office 365 Alemania: cuando la cuenta de usuario se elimina definitivamente, también se eliminarán los registros generados por el sistema. 
-- Office 365 Administración pública de EE. UU.: envíe una solicitud al Soporte técnico de Microsoft a través del [Portal de administración de Office 365](https://portal.office365.us).
-- Office 365 ofrecido por 21Vianet (China): envíe una solicitud al Soporte técnico de Microsoft a través del Portal de administración de Office 365 en esta dirección [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Vaya a **Comercio** y seleccione **Suscripción** -> **Privacidad** -> **RGPD** y escriba la información necesaria.
+- **Office 365 Germany**: siga los pasos anteriores.
+- **Office 365 Administración Pública para los EE. UU.**: [vaya al Portal de administración de Office 365](https://portal.office365.us) y envíe una solicitud al Soporte técnico de Microsoft.
+- **Office 365 ofrecido por 21Vianet (China)**: [vaya al Portal de administración de Office 365 operado por 21Vianet](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) y después a **Comercio** > **Suscripción** > **Privacidad** > **RGPD** y escriba la información necesaria.
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Parte 4: Recursos adicionales para ayudarle con las solicitudes del interesado
 

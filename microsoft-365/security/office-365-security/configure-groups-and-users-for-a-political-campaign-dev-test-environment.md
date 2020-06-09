@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d1cd4812cdb8a58062d7c64e73049c080f8b906f
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035111"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588469"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -35,7 +35,7 @@ Siga las instrucciones de este artículo para crear un entorno de desarrollo y p
 
 En esta fase se obtienen suscripciones de evaluación para Office 365 E5 y Enterprise Mobility + Security (EMS) E5 para una organización ficticia que representa una campaña política.
 
-Siga primero las instrucciones de la **fase 2** del [entorno de desarrollo y prueba de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Primero, siga las instrucciones en la **Fase 2** de [la configuración de base ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
 Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará a la misma organización de la suscripción de evaluación.
 

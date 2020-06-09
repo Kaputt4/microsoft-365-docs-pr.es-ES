@@ -1,9 +1,8 @@
 ---
-title: 'RGPD: pasos adicionales para exportar datos de registros generados por el sistema'
-description: 'Manual técnico de Microsoft: pasos adicionales para exportar datos de registros generados por el sistema'
-keywords: Exportar datos de registro, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
+title: Pasos adicionales para exportar datos de registros generados por el sistema
+description: Pasos adicionales para exportar datos de registros generados por el sistema
+keywords: Exportar datos de registro, Office 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
-Robots: NOFOLLOW,NOINDEX
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c3285d7ac48ddebddf561d1d89b95c2381d19f66
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: f3a0229d77c4b679a1b5bf91c8e5243ad2037086
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214564"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579007"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>Pasos adicionales para exportar datos de registros generados por el sistema
 
@@ -31,10 +30,8 @@ ms.locfileid: "44214564"
  
 **Workplace Analytics**: la herramienta de exportación de datos de registro proporciona datos de uso relativos a aquellos usuarios de la organización que tienen permiso para ejecutar informes de Workplace Analytics. Workplace Analytics también calcula y almacena los datos seudonimizados derivados de datos de Office 365 para mejorar el rendimiento. Si quiere que estos datos seudonimizados estén disponibles para un usuario y necesita ayuda para ello, póngase en contacto con el equipo de [soporte técnico de Microsoft](https://support.microsoft.com/contactus/).
 
-**Yammer**: el centro de administración de Yammer permite exportar los datos de actividad de una cuenta de usuario. Cuando exporta este tipo de datos, recibe un mensaje de correo electrónico que contiene los datos de actividad de la cuenta del usuario. Puede facilitar esta información al usuario si lo desea. Para obtener instrucciones detalladas, vea [Privacidad de Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise).
+**Yammer**: el Centro de administración de Yammer permite exportar los datos de actividad de una cuenta de usuario. Cuando exporta este tipo de datos, recibe un mensaje de correo electrónico que contiene los datos de actividad de la cuenta del usuario. Puede facilitar esta información al usuario si lo desea. Para obtener instrucciones detalladas, vea [Privacidad de Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise).
 
 ## <a name="learn-more"></a>Más información
 
-[Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
-
-
+[Solicitudes del interesado de Office 365 para el RGPD y la CCPA](gdpr-dsr-office365.md#part-3-responding-to-dsrs-for-system-generated-logs)

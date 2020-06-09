@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ce3ad0bfa7b50dfd5dfa5b5e2a35e6d70600e46
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74e33fe394802050ced64c5c3d9e41dcbd2550f0
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351992"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616531"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -71,7 +71,7 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>.
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas contra correo no deseado, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad**. Para obtener acceso de solo lectura a las directivas contra correo no deseado, tiene que ser miembro del grupo de roles **Lector de seguridad**. Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -242,7 +242,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
 9. (Obligatorio) Expanda la sección **Se aplica a** para identificar los destinatarios internos a los que se aplica la directiva.
 
-    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de la misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ or _\<recipient2\>_). Diversas condiciones o excepciones usan la lógica AND (por ejemplo, _\<recipient1\>_ and _\<miembro del grupo 1\>_).
+    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
     Es más fácil hacer clic en **Agregar una condición** tres veces para ver todas las condiciones disponibles. Puede hacer clic en el ![botón Quitar](../../media/scc-remove-icon.png) para quitar condiciones que no quiera configurar.
 
@@ -336,7 +336,7 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
 
 3. En los detalles de la directiva expandida que aparecen, haga clic en **Configurar las notificaciones de correo no deseado para el usuario final**.
 
-4. En el cuadro de diálogo **\<Nombre de la directiva\>** que se abre, configure las siguientes opciones:
+4. En el cuadro de diálogo **\<Policy Name\>** que se abre, configure las siguientes opciones:
 
    - **Habilitar las notificaciones de correo no deseado para el usuario final**: seleccione la casilla para habilitar las notificaciones. Desactive la casilla para deshabilitar las notificaciones.
 
@@ -391,7 +391,7 @@ La creación de una directiva contra correo no deseado en PowerShell es un proce
 
   - Crear la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-HostedContentFilterRule**).
 
-  - Establecer la prioridad de la directiva durante la creación (_Prioridad_ _\<Número\>_) en el cmdlet **New-HostedContentFilterRule**).
+  - Establecer la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_) en el cmdlet **New-HostedContentFilterRule**).
 
 - No se puede ver ninguna directiva de filtro de correo no deseado nueva que cree en PowerShell en el Centro de seguridad y cumplimiento hasta que asigne la directiva a una regla de filtro de correo no deseado.
 
