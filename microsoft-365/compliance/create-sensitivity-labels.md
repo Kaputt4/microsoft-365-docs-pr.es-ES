@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los documentos y correos electrónicos de su organización.'
-ms.openlocfilehash: 50411e04ac04dc0bf00e7b743f3f30d25b9fa12e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352217"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679084"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -131,7 +131,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 4. Seleccione ** Elegir etiquetas de confidencialidad para publicar **. Seleccione las etiquetas que quiera que estén disponibles en aplicaciones y para servicios, a continuación, seleccione ** Agregar **.
     
-    Si selecciona una etiqueta, asegúrese de seleccionar también su etiqueta principal.
+    > [!NOTE]
+    > Si selecciona una etiqueta, asegúrese de seleccionar también su etiqueta principal.
     
 5. Revise las etiquetas seleccionadas y para realizar cualquier cambio, seleccione ** Editar **. De lo contrario, seleccione **Siguiente**.
 
