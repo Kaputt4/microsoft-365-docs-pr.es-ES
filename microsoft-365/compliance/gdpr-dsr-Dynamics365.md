@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043338"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579195"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes del interesado de Dynamics 365 para el RGPD y la CCPA
 
@@ -242,12 +242,9 @@ En la tabla siguiente, se resumen las acciones de acceso y exportación de regis
 |**¿Cómo se devuelven los datos al usuario?**| Los datos se exportarán a la ubicación de Azure Storage de su organización; los administradores de la organización tendrán que determinar cómo mostrarán o enviarán estos datos a los usuarios. |
 |**¿Cuál será la apariencia de los datos en los registros generados por el sistema?**| Ejemplo de una entrada de registro generada por el sistema en formato JSON: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> Algunas características no permiten exportar ni eliminar los registros generados por el sistema con información personal para mantener la integridad de dicha información con fines de seguridad y auditoría.
-
 ### <a name="deleting-system-generated-logs"></a>Eliminar registros generados por el sistema
 
-Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, necesita quitar el usuario del servicio y eliminar de forma permanente su cuenta de Active Directory de Azure. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada. Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días, se quitarán los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Dynamics 365.
+Para eliminar los registros generados por el sistema recuperados con una solicitud de acceso, necesita quitar el usuario del servicio y eliminar de forma permanente su cuenta de Active Directory de Azure. Para obtener instrucciones sobre cómo eliminar un usuario de forma permanente, vea la sección [Paso 5: Eliminar](gdpr-dsr-azure.md#step-5-delete) en el tema Solicitudes de los interesados de Azure. Es importante tener en cuenta que la eliminación permanente de una cuenta de usuario es irreversible una vez iniciada. Al eliminar de forma permanente una cuenta de usuario, en un plazo de 30 días se quitan los datos del usuario de los registros generados por el sistema de prácticamente todos los servicios de Dynamics 365, a excepción de los datos que pueden comprometer la seguridad o la estabilidad del servicio.
 
 ## <a name="learn-more"></a>Más información
 
