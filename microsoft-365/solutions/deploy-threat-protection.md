@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 92a2cc7603a1a49be5ee72fc7b6d132ce46e38d7
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: ee3acf0729920f1ab4fdaa3fb79b2b541a7a608b
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160875"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664603"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Implementar capacidades de protección contra amenazas en Microsoft 365
 
@@ -48,12 +48,12 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 
 ![Señales de protección contra amenazas de M365](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-|Solución/capacidades  |Descripción  |
+|Solución/capacidades  |Description  |
 |---------|---------|
 |Autenticación multifactor y acceso condicional     |Protéjase contra las identidades y los dispositivos comprometidos. Comience con esta protección porque es fundamental. La configuración recomendada en esta guía incluye Azure AD Identity Protection como requisito previo.     |
 |Azure Advanced Threat Protection     |  Una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar las amenazas avanzadas, las identidades en peligro y las acciones de Insider malintencionadas dirigidas a la organización. Céntrese en este siguiente porque protege su infraestructura local y de nube, no tiene dependencias o requisitos previos y puede proporcionar ventajas inmediatas.       | 
 |Protección contra amenazas avanzada de Office 365     | Salvaguarda a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Protecciones para malware, suplantación de identidad (phishing), suplantación de identidad y otros tipos de ataques. Esto es recomendable porque el control de cambios, la migración de la configuración del sistema no y otras consideraciones pueden tardar más en implementarse. <br><br>Nota: Asegúrese de configurar también las capacidades de protección contra amenazas incluidas en todas las suscripciones de Office 365 (Exchange Online Protection).       |
-|Protección contra amenazas avanzada de Microsoft Defender    | Una plataforma de protección de extremos que ayuda a prevenir, detectar, investigar y responder a amenazas avanzadas. Esto tarda más en implementarse, pero puede realizarse en paralelo con las otras funciones si otros administradores son responsables.   |
+|Protección contra amenazas avanzada de Microsoft Defender    | Una plataforma de protección de extremos que ayuda a prevenir, detectar, investigar y responder a amenazas avanzadas. Esto tarda más en implementarse, pero puede realizarse en paralelo con las otras funciones si otros administradores son responsables.   |
 |Microsoft Cloud App Security     |   Un agente de seguridad de acceso a la nube para descubrimiento, investigación y gobernanza. Puede habilitar esto anticipadamente para empezar a recopilar datos y obtener información. La implementación de información y otra protección dirigida en todas las aplicaciones SaaS implica la planeación y puede tardar más tiempo.       | 
 
 > [!TIP]
@@ -83,8 +83,8 @@ La [autenticación multifactor](https://docs.microsoft.com/azure/active-director
 Microsoft ha probado y recomienda un conjunto específico de acceso condicional y directivas relacionadas para proteger el acceso a todas las aplicaciones SaaS, especialmente Microsoft 365. Se recomiendan las directivas para la protección de línea base, confidencial y altamente regulada. Comience por implementar las directivas para la protección de línea base. 
 
 
-[![Directivas comunes para configurar el acceso a](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-los dispositivos e identidades[consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Para implementar la protección de línea base para Microsoft 365
 
@@ -206,7 +206,7 @@ La [protección contra amenazas avanzada de Microsoft defender](https://docs.mic
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>Paso 7: supervisar el estado y realizar acciones
 
-Una vez que haya configurado e implementado los servicios y las capacidades de la protección contra amenazas, el siguiente paso consiste en supervisar la detección de amenazas y realizar las acciones adecuadas. El mejor punto de partida es Microsoft 365 Security Center ([https://security.microsoft.com](https://security.microsoft.com)), donde puede supervisar y administrar la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura de Microsoft. 
+Una vez que haya configurado e implementado los servicios y las capacidades de la protección contra amenazas, el siguiente paso consiste en supervisar la detección de amenazas y realizar las acciones adecuadas. El mejor punto de partida es Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ), donde puede supervisar y administrar la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura de Microsoft. 
 
 :::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Centro de seguridad de Microsoft 365":::
 
@@ -245,5 +245,5 @@ Además de esta guía, Microsoft recomienda que los usuarios realicen las accion
 - Habilitación de las características de seguridad en equipos PC con Windows 10 y Mac (para dispositivos no administrados)
     
 Microsoft también recomienda que los usuarios protejan sus cuentas de correo electrónico personales llevando a cabo las acciones recomendadas en los siguientes artículos:
-- [Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Ayuda para proteger su cuenta de correo electrónico de Outlook.com](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Proteger la cuenta de gmail con verificación en dos pasos](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
