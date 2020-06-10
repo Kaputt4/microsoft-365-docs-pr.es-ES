@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631590"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679031"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 Enterprise
 
@@ -46,9 +46,9 @@ Si desea configurar directivas de MAM en una empresa simulada, siga las instrucc
 
 En esta fase, creará una directiva de cumplimiento de dispositivos para dispositivos con Windows 10.
   
-1. Vaya al portal de Office 365 en ([https://portal.office.com](https://portal.office.com)) e inicie sesión en su suscripción de laboratorio de pruebas de Office 365 con su cuenta de administrador global.
+1. Vaya al portal de Office 365 en ( [https://portal.office.com](https://portal.office.com) ) e inicie sesión en su suscripción de laboratorio de pruebas de office 365 con su cuenta de administrador global.
     
-2. En una pestaña nueva del explorador, abra Azure portal en [https://portal.azure.com](https://portal.azure.com).
+2. En una pestaña nueva del explorador, abra Azure portal en [https://portal.azure.com](https://portal.azure.com) .
 
 3. En la pestaña Azure portal del explorador, escriba **Intune** en el cuadro de búsqueda y, a continuación, haga clic en **Intune**.
     
@@ -87,13 +87,13 @@ Haga clic en Aceptar.
 
 20. En el panel **Agregar aplicación** , seleccione **configuración del conjunto de aplicaciones**.
 
-21. En **canal de actualización**, seleccione **semestral**y, a continuación, haga clic en **Aceptar**.
+21. En **canal de actualización**, seleccione **empresa semianual**y, a continuación, haga clic en **Aceptar**.
 
 22. En el panel **Agregar aplicación** , haga clic en **Agregar**.
 
 Ahora tiene una directiva de cumplimiento de dispositivos para probar las aplicaciones seleccionadas en la Directiva de cumplimiento de dispositivos de **Windows 10** y para los miembros del grupo de **usuarios de dispositivos de Windows 10 administrados** . Tenga en cuenta que, al seleccionar Office 365 como tipo de grupo, se crearán recursos adicionales. 
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explore otras características y funciones de [Administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en su entorno de prueba.
 

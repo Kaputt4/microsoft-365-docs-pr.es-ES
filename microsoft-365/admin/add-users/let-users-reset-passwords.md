@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo restablecer las contraseñas con la herramienta de restablecimiento de contraseña de autoservicio.
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431706"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678687"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -54,7 +54,8 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 Siga estos pasos para activar el restablecimiento de contraseña de autoservicio para todos los usuarios de su empresa.
   
 ::: moniker range="o365-worldwide"
-1. En el centro de administración, vaya a la página de configuración de **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> .
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>, vaya a la página **configuración** de la > **organización** .
 
 ::: moniker-end
 
@@ -70,13 +71,17 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 ::: moniker-end
 
-2. En la parte superior de la página Configuración, seleccione **seguridad & privacidad**.
+2. En la parte superior de la página Configuración de la **organización** , seleccione la pestaña **seguridad & privacidad** .
   
-3. Seleccione **autoservicio de restablecimiento de contraseña**.
+3. Seleccione **restablecimiento de contraseña de autoservicio**.
+
+4. En **autoservicio de restablecimiento de contraseñas**, seleccione **ir a Azure portal para activar el restablecimiento de contraseña de autoservicio**.
+
+5. En el panel de navegación izquierdo, seleccione **usuarios**y, a continuación, en la sección **usuarios | Página todos los usuarios** , seleccione **restablecimiento de contraseña**.
   
-4. En la página de propiedades, seleccione **todos** para habilitarlo para todos los usuarios de su empresa y, a continuación, seleccione **Guardar**.
+6. En la página de **propiedades** , seleccione **todos** para habilitarlo para todos los usuarios de su empresa y, a continuación, seleccione **Guardar**.
   
-5. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayude a restablecer la contraseña en el futuro.
+7. Cuando los usuarios inicien sesión, se les pedirá que escriban información de contacto adicional que les ayude a restablecer la contraseña en el futuro.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

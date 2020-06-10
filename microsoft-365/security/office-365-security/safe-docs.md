@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Office 365 ATP.
-ms.openlocfilehash: 40554365cf41ac37b9f9b8399b10dc8f6ab81f42
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617291"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678675"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documentos seguros en Protección contra amenazas avanzada de Office 365
 
@@ -30,7 +30,7 @@ Documentos seguros es una característica de Office 365 Advanced Threat Protecti
 
 - Esta característica solo está disponible para los usuarios con la licencia de seguridad Microsoft 365 E5 o Microsoft 365 E5.
 
-- Documentos seguros está actualmente disponible para la versión preliminar pública, disponible para los usuarios que forman parte del [programa de Office Insider](https://insider.office.com/en-us/join) en el canal mensual (dirigido), con office versión 2002 (12527,20092) o posterior. Esta característica está desactivada de forma predeterminada y el administrador de seguridad la tendrá que habilitar.
+- Documentos seguros está actualmente disponible para la versión preliminar pública, disponible para los usuarios que forman parte del [programa Office Insider](https://insider.office.com/en-us/join) en el canal actual (versión preliminar) con Office versión 2002 (12527,20092) o posterior. Esta característica está desactivada de forma predeterminada y el administrador de seguridad la tendrá que habilitar.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 

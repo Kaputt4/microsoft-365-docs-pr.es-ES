@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156895"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678996"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -35,7 +35,7 @@ Para administrar las revisiones de disposición y confirmar que los registros se
 
 ### <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, debe ser miembro de la función de **Administración de disposición** y del rol **registros de auditoría con permiso de vista** . Le recomendamos que cree un nuevo grupo de funciones denominado **revisores de disposición**y que agregue estos dos roles a ese grupo de roles. 
+Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, debe ser miembro de la función de **Administración de disposición** y del rol **registros de auditoría con permiso de vista** . Le recomendamos que cree un nuevo grupo de funciones denominado **revisores de disposición**y que agregue estos dos roles a ese grupo de roles. Incluso si es un usuario de **administrador global** , deberá formar parte de la función de **Administración de disposición** para que pueda acceder a la ficha disposición.
 
 Específica del rol **registros de auditoría con permiso de vista** :
 
@@ -43,11 +43,11 @@ Específica del rol **registros de auditoría con permiso de vista** :
 
 - Los grupos de 365 de Microsoft ([anteriormente los grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) no se admiten para este rol. En su lugar, asigne buzones de usuario, usuarios de correo o grupos de seguridad habilitados para correo.
 
-Para obtener instrucciones sobre cómo conceder a los usuarios la función de **Administración de disposición** y crear su nueva función de **revisores de disposición** , vea [conceder acceso a los usuarios al centro de seguridad &amp; y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre cómo conceder a los usuarios la función de **Administración de disposición** y crear su nueva función de **revisores de disposición** , vea [conceder acceso a los usuarios al &amp; centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Habilitar la auditoría
 
-Asegúrese de que la auditoría esté habilitada al menos un día antes de la primera acción de disposición. Para obtener más información, vea [Buscar en el registro de auditoría del centro &amp; de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Asegúrese de que la auditoría esté habilitada al menos un día antes de la primera acción de disposición. Para obtener más información, vea [Buscar en el registro de auditoría del &amp; centro de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 

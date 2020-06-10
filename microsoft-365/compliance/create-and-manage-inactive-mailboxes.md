@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Microsoft 365 aplicando una directiva de retención o retención al buzón y, a continuación, eliminando la cuenta de usuario correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166091"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679104"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -34,7 +34,7 @@ Microsoft 365 permite conservar el contenido de los buzones de correo eliminados
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para convertir un buzón en inactivo, se le debe asignar una licencia de plan 2 de Exchange online de modo que se pueda aplicar una directiva de retención por juicio o retención al buzón antes de eliminarlo. Las licencias del plan 2 de Exchange Online forman parte de una suscripción a Office 365 Enterprise E3 y E5. Si a un buzón se le asigna una licencia de quiosco de Exchange Online plan 1 o Exchange Online (que forman parte de una suscripción de Office 365 E1 y F1 respectivamente), deberá asignarle una licencia de archivado de Exchange Online independiente para que se pueda aplicar una retención al buzón antes de eliminarlo. Para obtener más información, vea [Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Para convertir un buzón en inactivo, se le debe asignar una licencia de plan 2 de Exchange Online para que se pueda aplicar una directiva de retención por juicio o retención al buzón antes de eliminarlo. Las licencias del plan 2 de Exchange Online forman parte de una suscripción a Office 365 Enterprise E3 y E5. Si a un buzón se le asigna una licencia de quiosco de Exchange Online plan 1 o Exchange Online (que forman parte de una suscripción de Office 365 E1 y F1 respectivamente), deberá asignarle una licencia de archivado de Exchange Online independiente para que se pueda aplicar una retención al buzón antes de eliminarlo. Para obtener más información, vea [Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - Las licencias asociadas al buzón de Exchange Online eliminado estarán disponibles después de que elimine la cuenta de usuario correspondiente. A continuación, puede [asignar esas licencias a otro usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
 
@@ -75,9 +75,9 @@ Para ver una lista de los buzones inactivos en su organización:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador de su organización. 
     
-2. Haga clic en**retención**del **gobierno** > de información.
+2. Haga clic en retención del **gobierno de información**  >  **Retention**.
     
-3. En la página **retención** , haga clic en **más**![elipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)de la barra de navegación y, a continuación, en **buzones inactivos**.
+3. En la página **retención** , haga clic en **más** ![ elipses de la barra de navegación ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) y, a continuación, en **buzones inactivos**.
     
     ![En la página retención, haga clic en más y, a continuación, haga clic en buzones inactivos para mostrar una lista de buzones inactivos](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerSh
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-Puede hacer clic ![en exportar resultados](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la búsqueda para **exportar** para ver o descargar un archivo CSV que contenga información adicional acerca de los buzones inactivos en su organización. 
+Puede hacer clic en exportar ![ resultados de ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) la búsqueda para **exportar** para ver o descargar un archivo CSV que contenga información adicional acerca de los buzones inactivos en su organización. 
   
 También puede ejecutar el siguiente comando para exportar la lista de buzones inactivos y otra información a un archivo CSV. En este ejemplo, el archivo CSV se crea en el directorio actual.
 
@@ -108,11 +108,11 @@ Puede tener acceso al contenido del buzón inactivo mediante la herramienta de b
   
 - [Búsqueda de contenido de Office 365](content-search.md)
     
-- [Exportar resultados de la búsqueda de contenido](export-search-results.md)
+- [Exportar resultados del Contenido de búsqueda](export-search-results.md)
     
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
   
-- Si una búsqueda de contenido incluye un buzón de usuario y, a continuación, dicho buzón se convierte en inactivo, la búsqueda de contenido continuará buscando en el buzón inactivo cuando vuelva a ejecutar la búsqueda después de que quede inactiva.
+- Si una búsqueda de contenido incluye un buzón de correo de usuario y ese buzón de correo se convierte en inactivo, la búsqueda de contenido continuará buscando en el buzón inactivo cuando vuelva a ejecutar la búsqueda después de que quede inactiva.
     
 - En algunos casos, es posible que un usuario tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. En este caso, solo se buscará en el buzón específico que seleccione como ubicación para una búsqueda de contenido. Es decir, si agrega el buzón de un usuario a una búsqueda, no puede suponer que se buscará en los buzones activos e inactivos; solo se buscará en el buzón que agregue explícitamente a la búsqueda.
     

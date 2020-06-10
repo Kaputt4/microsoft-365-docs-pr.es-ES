@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Obtenga información sobre cómo usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431646"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664579"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Crear, editar o eliminar una vista de usuario personalizada en Office 365
+# <a name="create-edit-or-delete-a-custom-user-view"></a>Crear, editar o eliminar una vista de usuario personalizada
 
-Si es administrador global o de administración de usuarios de Office 365, puede crear vistas de usuario personalizadas para ver un subconjunto específico de usuarios. Estas vistas se agregan al conjunto estándar de vistas que se incluye con Office 365. Puede crear, editar o eliminar vistas de usuario personalizadas y las vistas personalizadas que cree estarán disponibles para todos los administradores.
+Si es un administrador global o de administración de usuarios de una suscripción de Microsoft 365 para empresas, puede crear vistas de usuario personalizadas para ver un subconjunto específico de usuarios. Estas vistas se agregan al conjunto estándar de vistas. Puede crear, editar o eliminar vistas de usuario personalizadas y las vistas personalizadas que cree estarán disponibles para todos los administradores.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Vistas de usuario personalizadas en el centro de administración
 
@@ -98,7 +98,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a>.
     
 2. En la página **usuarios activos** , seleccione **filtros** y seleccione **nuevo filtro**.
   
@@ -108,7 +108,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">activos</a>.  
 
 2. En la página **usuarios activos** , seleccione **vistas** y seleccione **Agregar vista personalizada**.
   
@@ -119,7 +119,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">activos</a>. 
 
 2. En la página **usuarios activos** , seleccione **vistas** y seleccione **Agregar vista personalizada**.
   
@@ -132,7 +132,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">activos</a>.
     
 2. En la página **usuarios activos** , seleccione **filtrar**, seleccione el filtro que desee cambiar y, a continuación, seleccione **Editar filtro**. 
     
@@ -145,7 +145,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">activos</a>.  
 
 2. En la página **usuarios activos** , seleccione **vistas**, seleccione el filtro que desee cambiar y, a continuación, seleccione **editar esta vista**. 
     
@@ -158,7 +158,7 @@ También puede filtrar por los detalles de Perfil de usuario adicionales que se 
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
+1. En el centro de administración, vaya a **usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">activos</a>. 
 
 2. En la página **usuarios activos** , seleccione **vistas**, seleccione el filtro que desee cambiar y, a continuación, seleccione **editar esta vista**. 
     

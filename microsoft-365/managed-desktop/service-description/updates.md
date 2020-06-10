@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011940"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678699"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se administran las actualizaciones en el escritorio administrado por Microsoft
 
@@ -61,10 +61,10 @@ Cómo funciona la implementación de actualizaciones:
 <tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
 <tr><td>Controladores o firmware</td><td colspan="4">Sigue la programación de las actualizaciones de calidad</td></tr>
 <tr><td>Definición de antivirus</td><td colspan="4">Se actualizó con cada examen</td></tr>
-<tr><td>Aplicaciones de Microsoft 365 para empresas</td><td colspan="4">Después del canal mensual de Office
+<tr><td>Aplicaciones de Microsoft 365 para empresas</td><td colspan="4">Sigue el canal actual de Office
 </table>
 
-Para obtener más información sobre el canal mensual de Microsoft 365 apps for Enterprise, vea [Overview of Update Channels for microsoft 365 apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
+Para obtener más información sobre el canal actual de Microsoft 365 apps for Enterprise, vea [Overview of Update Channels for microsoft 365 apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Estos períodos de aplazamiento se diseñan intencionalmente para garantizar altos niveles de seguridad y rendimiento para todos los usuarios. Además, en función de los datos recopilados en todos los dispositivos de escritorio administrados por Microsoft y el ámbito y el impacto variados de las actualizaciones, Microsoft Managed Desktop reserva flexibilidad para modificar la duración de los períodos de aplazamiento anteriores para todos y cada uno de los grupos de implementación de forma ad hoc.

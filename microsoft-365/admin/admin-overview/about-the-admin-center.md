@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Puede usar el centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones. Introducción iniciando sesión en la cuenta con permisos de administrador.
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386966"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678653"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -75,9 +75,9 @@ A continuación se muestran las características y la configuración que encontr
   
 |**Menú**|**Para qué sirve**|
 |-----|-----|
-|**Inicio** <br/> |Esta es la página de inicio del nuevo centro de administración. Verá dónde administrar los usuarios, la facturación, el estado del servicio y los informes.  <br/> |
+|**Inicio** <br/> |Esta es la página de aterrizaje en el centro de administración. Verá dónde administrar los usuarios, la facturación, el estado del servicio y los informes.  <br/> |
 |**Usuarios** <br/> |Puede crear y administrar usuarios de su organización, como empleados o estudiantes. También puede establecer su nivel de permisos o restablecer sus contraseñas.  <br/> |
-|**Grupos** <br/> |Cree y administre grupos en su organización, como un grupo de 365 de Microsoft, un grupo de distribución, un grupo de seguridad o un buzón compartido. Más información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
+|**Grupos** <br/> |Cree y administre grupos en su organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón compartido. Más información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
 |**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |
 |**Facturación** <br/> |Vea, compre o cancele las suscripciones de su organización. Revise los extractos de las facturas pasadas o el número de licencias asignadas a usuarios individuales. Más información sobre cómo [administrar la facturación](../../commerce/index.yml).  <br/> |
 |**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../contact-support-for-business-products.md). |

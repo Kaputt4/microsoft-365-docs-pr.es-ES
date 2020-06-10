@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Decida qué características y qué contenido de novedades se muestran o se ocultan a los usuarios finales en la oficina What's New Management for Office Desktop apps.
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399547"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678607"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrar u ocultar nuevas características con la nueva administración
 
-Office What's New Management for Win 32 permite que su organización decida qué características se muestran o se ocultan a los usuarios finales en la aplicación de escritorio de Office. Cada versión de Office incluye características nuevas y mejoradas, y la vista previa del contenido le permite ver el nuevo contenido para cada versión de lanzamiento y canal y elegir si desea ocultar o mostrar el contenido nuevo para cada característica a los usuarios finales. 
+Office What's New Management for Windows permite que su organización decida qué características se muestran o se ocultan a los usuarios finales en la aplicación de escritorio de Office. Cada versión de Office incluye características nuevas y mejoradas, y la vista previa del contenido le permite ver el nuevo contenido para cada versión de lanzamiento y canal y elegir si desea ocultar o mostrar el contenido nuevo para cada característica a los usuarios finales. 
 
 La nueva característica contenido de las aplicaciones de escritorio de Office resalta una lista de creados de nuevas características que se publican para esa aplicación, con una descripción breve y, a menudo, una imagen o un vídeo creado por el equipo, que ofrece a los clientes la información sobre cómo usar la característica. 
 
@@ -41,7 +41,7 @@ Office What's New Management está disponible en el centro de administración de
 
 Los administradores pueden obtener una vista previa del contenido nuevo para un canal y administrar la publicación del contenido con Office, la nueva administración.
 
-1. En el centro de administración de Microsoft 365, en **configuración**, elija **configuración**.
+1. En el centro de administración de Microsoft 365, en **configuración**, elija Configuración de la **organización**.
 
 2. En la pestaña **servicios** , elija **Office what's New Management**.
 
@@ -59,11 +59,11 @@ Las nuevas características aparecen en Office, la nueva administración basada 
 ||||
 |:-----|:-----|:-----|
 |**Canal** <br/> |**En la versión preliminar de administración** <br/> |**Emprender acciones** <br/> |
-|**Mensualmente** <br/> |día 15 del mes  <br/> |1-3 semanas antes de la publicación mensual <br/> |
-|**Semestral (dirigido)** <br/> |1 de septiembre y 1 de marzo <br/> | 2 semanas antes de la versión principal que aporta nuevas características
-|**Semestral** <br/> |1 de enero y 1 de julio <br/> | 2 semanas antes de la versión principal que aporta nuevas características<br/> |
+|**Current** <br/> |día 15 del mes  <br/> |1-3 semanas antes de la publicación mensual <br/> |
+|**Empresa semianual (versión preliminar)** <br/> |1 de septiembre y 1 de marzo <br/> | 2 semanas antes de la versión principal que aporta nuevas características
+|**Empresa semestral** <br/> |1 de enero y 1 de julio <br/> | 2 semanas antes de la versión principal que aporta nuevas características<br/> |
 
-Para obtener más información acerca de las programaciones de actualizaciones de canal, consulte [historial de actualizaciones de las aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Para obtener más información acerca de las programaciones de actualizaciones de canal, consulte [historial de actualizaciones de las aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
