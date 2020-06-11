@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209816"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689283"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -114,7 +114,7 @@ Las siguientes opciones de configuración de directiva solo están disponibles e
 
 - Se **aplica a**: identifica a los destinatarios internos a los que se aplica la Directiva contra la suplantación de identidad ATP. Este valor es necesario en las directivas personalizadas y no está disponible en la directiva predeterminada (la directiva predeterminada se aplica a todos los destinatarios).
 
-    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de la misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ or _\<recipient2\>_). Diversas condiciones o excepciones usan la lógica AND (por ejemplo, _\<recipient1\>_ and _\<miembro del grupo 1\>_).
+    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
   - El **destinatario es**: uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
   - El **destinatario es un miembro de**: uno o más grupos de la organización.
@@ -128,7 +128,7 @@ Las siguientes opciones de configuración de directiva solo están disponibles e
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Configuración de suplantación en las directivas antiphishing de ATP
 
-La suplantación es cuando el dominio de correo electrónico del remitente o del remitente de un mensaje tiene un aspecto muy similar al de un remitente o dominio real:
+La suplantación es cuando el dominio de correo electrónico del remitente o del remitente de un mensaje tiene un aspecto similar a un remitente o dominio real:
 
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
 
@@ -140,11 +140,11 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
 - **Usuarios que se deben proteger**: impide que los usuarios internos o externos especificados se suplanten. Por ejemplo, Executives (Internal) y Board Members (external). Puede Agregar hasta 60 direcciones internas y externas. Esta lista de usuarios protegidos es diferente de la lista de destinatarios a los que se aplica la Directiva en la configuración de **aplicado a** .
 
-  Por ejemplo, especifique Felipe Apodaca (felipea@contoso.com) como usuario protegido en una directiva que se aplica al grupo denominado ejecutivos. Los mensajes entrantes que se envían a los miembros del grupo ejecutivos donde se suplanta la Apodaca de Felipe de la Directiva (la acción que se configura para los usuarios suplantados).
+  Por ejemplo, especifique Felipe Apodaca (felipea@contoso.com) como usuario protegido en una directiva que se aplica al grupo denominado ejecutivos. La Directiva actuará sobre los mensajes entrantes enviados a miembros del grupo ejecutivos donde se suplanta a Felipe Apodaca, (la acción que se configura para los usuarios suplantados).
 
 - **Dominios para proteger**: impedir la suplantación de los dominios especificados. Por ejemplo, todos los dominios que son de su propiedad ([dominios aceptados](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o dominios específicos (dominios que posee o dominios asociados). Esta lista de dominios protegidos es diferente de la lista de dominios a los que se aplica la Directiva en la configuración **aplicado a** .
 
-  Por ejemplo, puede especificar tailspintoys.com como un dominio protegido en una directiva que se aplica a los miembros del grupo denominado ejecutivos. Los mensajes entrantes que se envían a los miembros del grupo ejecutivos donde se suplanta la tailspintoys.com en la que se suplanta la Directiva (la acción que se configura para los dominios suplantados).
+  Por ejemplo, puede especificar tailspintoys.com como un dominio protegido en una directiva que se aplica a los miembros del grupo denominado ejecutivos. La Directiva actuará sobre los mensajes entrantes enviados a miembros del grupo ejecutivos donde se suplanta a tailspintoys.com (la acción que configuró para los dominios suplantados).
 
 - **Acciones para usuarios o dominios protegidos**: elija la acción que se realizará en los mensajes entrantes que contengan intentos de suplantación con los usuarios protegidos y los dominios protegidos de la Directiva. Puede especificar distintas acciones para la suplantación de los usuarios protegidos frente a la suplantación de los dominios protegidos:
 

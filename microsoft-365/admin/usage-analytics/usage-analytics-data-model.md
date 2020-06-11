@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual del uso de varios servicios de Microsoft 365.  '
-ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402051"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695096"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -43,16 +43,16 @@ Esta API proporciona información sobre la tendencia mensual del uso de los dist
 
 |**Nombre de tabla**|**Información en la tabla**|**Intervalo de fechas**|
 |:-----|:-----|:-----|
-|Uso de productos de espacio empresarial  <br/> |Contiene los totales mensuales de los usuarios activos y habilitados, los usuarios conservados mes a mes, los usuarios nuevos y los usuarios activos acumulados.  <br/> |Contiene datos agregados mensuales de un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
+|Uso de productos de espacio empresarial  <br/> |Contiene los totales mensuales de los usuarios habilitados y activos, los usuarios retenidos mes a mes, los usuarios por primera vez y los usuarios activos acumulados.  <br/> |Contiene datos agregados mensuales de un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
 |Actividad de producto de espacio empresarial  <br/> |Contiene los totales mensuales de actividades y el número de usuarios activos de diferentes actividades dentro de los productos.  <br/> Vea [Definición de usuario activo](active-user-in-usage-reports.md) para obtener información sobre las actividades dentro de un producto que se devuelven en esa tabla de datos.  <br/> |Contiene datos agregados mensuales de un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Licencias de Office de espacio empresarial  <br/> |Contiene datos sobre el número de suscripciones de Microsoft Office asignadas a los usuarios.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Uso de buzones de espacio empresarial  <br/> |Contiene datos sobre el buzón del usuario, en términos del número total de buzones y cómo se usa el almacenamiento.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
+|Licencias de Office de espacio empresarial  <br/> |Contiene datos sobre el número de suscripciones de Microsoft Office asignadas a los usuarios.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
+|Uso de buzones de espacio empresarial  <br/> |Contiene datos sobre el buzón del usuario, en términos del número total de buzones y cómo se usa el almacenamiento.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
 |Uso de clientes de espacio empresarial  <br/> |Contiene datos sobre el número de usuarios que usan de forma activa dispositivos o clientes específicos para conectarse a Exchange Online, Skype Empresarial y Yammer.  <br/> |Contiene datos agregados mensuales de un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Uso de SharePoint Online de espacio empresarial  <br/> |Contiene datos sobre los sitios de SharePoint, que abarcan sitios de grupo o equipo, como el número total de sitios, el número de documentos de un sitio, el número de archivos por tipo de actividad y almacenamiento usado.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Uso de OneDrive para la Empresa de espacio empresarial  <br/> |Contiene datos sobre las cuentas de OneDrive, como el número de cuentas, el número de documentos en cuentas de OneDrive, el almacenamiento usado y el número de archivos por tipo de actividad.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Uso del espacio empresarial de Microsoft 365 grupos  <br/> |Contiene datos sobre el uso de grupos de 365 de Microsoft, incluidos buzón de correo, SharePoint y Yammer.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Activación de Office de espacio empresarial  <br/> |Contiene datos sobre el número de activaciones de suscripción de Office, el número de activaciones por dispositivo (Android/iOS/Mac/PC), las activaciones por plan de servicio, por ejemplo, aplicaciones de Microsoft 365 para empresas, Visio y Project.  <br/> |Contiene datos de estado de fin de mes para un período acumulado de 12 meses, incluido el mes parcial actual.  <br/> |
-|Estado de usuario  <br/> |Contiene metadatos sobre usuarios, incluido el nombre para mostrar del usuario, los productos asignados, la ubicación, el departamento, el puesto y la compañía. Estos datos son sobre los usuarios a los que se asignaron licencias durante el último mes completo. Cada usuario es representado de forma única por un identificador de usuario.  <br/> |Estos datos son sobre usuarios que tenían asignada una licencia durante el último mes completo.  <br/> |
+|Uso de SharePoint Online de espacio empresarial  <br/> |Contiene datos sobre los sitios de SharePoint, que abarcan sitios de grupo o equipo, como el número total de sitios, el número de documentos de un sitio, el número de archivos por tipo de actividad y almacenamiento usado.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
+|Uso de OneDrive para la Empresa de espacio empresarial  <br/> |Contiene datos sobre las cuentas de OneDrive, como el número de cuentas, el número de documentos en cuentas de OneDrive, el almacenamiento usado y el número de archivos por tipo de actividad.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
+|Uso del espacio empresarial de Microsoft 365 grupos  <br/> |Contiene datos sobre el uso de grupos de 365 de Microsoft, incluidos buzón de correo, SharePoint y Yammer.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
+|Activación de Office de espacio empresarial  <br/> |Contiene datos sobre el número de activaciones de suscripción de Office, el número de activaciones por dispositivo (Android/iOS/Mac/PC), las activaciones por plan de servicio, por ejemplo, aplicaciones de Microsoft 365 para empresas, Visio y Project.  <br/> |Contiene los datos de estado de fin de mes de un período rodante de 12 meses, incluido el mes parcial actual.  <br/> |
+|Estado de usuario  <br/> |Contiene metadatos sobre usuarios, incluido el nombre para mostrar del usuario, los productos asignados, la ubicación, el departamento, el puesto y la compañía. Estos datos son sobre los usuarios a los que se asignaron licencias durante el último mes completo. Todos los usuarios están representados de forma única por un identificador de usuario.  <br/> |Estos datos son sobre usuarios que tenían asignada una licencia durante el último mes completo.  <br/> |
 |Actividad de usuario  <br/> |Contiene información de nivel por usuario sobre la actividad realizada por los usuarios con licencia.  <br/> Vea [Definición de usuario activo](active-user-in-usage-reports.md) para obtener información sobre las actividades dentro de un producto que se devuelven en esa tabla de datos.  <br/> |Estos datos tratan sobre los usuarios que realizaron alguna actividad en uno de los servicios durante el último mes completo.  <br/> |
    
 Expanda las secciones siguientes para ver información detallada de cada tabla de datos.
@@ -63,7 +63,7 @@ Esta tabla proporciona detalles de nivel de usuario para todos los usuarios que 
   
 |**Nombre de columna**|**Descripción de columna**|
 |:-----|:-----|
-|UserId  <br/> |Identificador de usuario único que representa a un usuario y permite la unión a otras tablas de datos dentro del conjunto de datos.  <br/> |
+|UserId  <br/> |IDENTIFICADOR de usuario único que representa a un usuario y permite la Unión con otras tablas de datos dentro del conjunto de datos.  <br/> |
 |Timeframe  <br/> |Valor del mes de los datos de esta tabla.  <br/> |
 |UPN  <br/> |Nombre principal de usuario que identifica de forma única al usuario para poder unirse a otros orígenes de datos externos.  <br/> |
 |DisplayName  <br/> |El nombre para mostrar del usuario.  <br/> |
@@ -143,7 +143,7 @@ Esta tabla contiene datos sobre los usuarios que realizaron alguna actividad en 
    
 ### <a name="data-table---tenant-product-usage"></a>Tabla de datos: Uso de producto de espacio empresarial
 
-En esta tabla se proporcionan los datos de adopción de mes a mes en términos de usuarios habilitados, activos, devueltos y de primera vez para cada producto de Microsoft 365. El valor de Microsoft 365 representa el uso activo en cualquiera de los productos.
+En esta tabla se proporcionan los datos de adopción de mes a mes en términos de habilitación, activos, devolución y primera hora para cada producto en Microsoft 365. El valor de Microsoft 365 representa el uso activo en cualquiera de los productos.
   
 |**Nombre de columna**|**Descripción de columna**|
 |:-----|:-----|
@@ -153,7 +153,7 @@ En esta tabla se proporcionan los datos de adopción de mes a mes en términos d
 |ActiveUsers  <br/> |Número de usuarios que realizaron una actividad intencional en el producto para el valor de período de tiempo.  <br/> Un usuario se contabiliza como activo para un producto en un mes específico si realizó una de las actividades más importantes en el producto. Las actividades más importantes están disponibles en la tabla **Actividad de producto de espacio empresarial**.  <br/> |
 |CumulativeActiveUsers  <br/> |Número de usuarios habilitados para usar un producto y que usaron el producto hasta el mes del período de tiempo como mínimo una vez desde que se inició la recopilación de datos en el nuevo sistema de uso.  <br/> |
 |MoMReturningUsers  <br/> |Número de usuarios que estuvieron activos en el mes del período de tiempo y que también estuvieron activos en el mes anterior.  <br/> |
-|FirstTimeUsers  <br/> |Número de usuarios que estuvieron activos por primera vez en el período de tiempo desde la recopilación de datos el nuevo sistema de uso.  <br/> Un usuario se contabiliza como nuevo en un mes específico si detectamos su actividad por primera vez desde el inicio de la recopilación de datos en este nuevo sistema de informes. Una vez que se ha contado como usuario inicial, incluso si este usuario tiene una gran brecha en su actividad, nunca se contará de nuevo como usuario por primera vez.  <br/> |
+|FirstTimeUsers  <br/> |Número de usuarios que estuvieron activos por primera vez en el período de tiempo desde la recopilación de datos el nuevo sistema de uso.  <br/> Un usuario se contabiliza como nuevo en un mes específico si detectamos su actividad por primera vez desde el inicio de la recopilación de datos en este nuevo sistema de informes. Una vez que se ha contado como usuario por primera vez, incluso si este usuario tiene una gran brecha en su actividad, nunca se contará de nuevo como usuario por primera vez.  <br/> |
 |ContentDate  <br/> |Si en el período de tiempo se muestra el mes actual, este valor representará la fecha más reciente del mes actual para los que están disponibles los datos.  <br/> Si en el período de tiempo se muestra el mes anterior, este valor representará la última fecha del mes del período de tiempo.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Tabla de datos: Actividad de producto de espacio empresarial
@@ -191,7 +191,7 @@ Esta tabla está formada por datos de resumen de todos los usuarios con licencia
    
 ### <a name="data-table---tenant-client-usage"></a>Tabla de datos: Uso de cliente de espacio empresarial
 
-Esta tabla proporciona datos de resumen de mes a mes sobre los clientes que usan los usuarios para conectarse a Exchange Online, Skype Empresarial y Yammer. Esta tabla aún no contiene datos de uso de clientes para SharePoint Online y OneDrive para la Empresa.
+En esta tabla se proporcionan datos de Resumen de mes a mes sobre los clientes que los usuarios usan para conectarse a Exchange Online, Skype empresarial y Yammer. Esta tabla aún no contiene datos de uso de clientes para SharePoint Online y OneDrive para la Empresa.
   
 |**Nombre de columna**|**Descripción de columna**|
 |:-----|:-----|
