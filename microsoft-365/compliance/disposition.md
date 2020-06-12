@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678996"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702564"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -35,7 +35,10 @@ Para administrar las revisiones de disposición y confirmar que los registros se
 
 ### <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, debe ser miembro de la función de **Administración de disposición** y del rol **registros de auditoría con permiso de vista** . Le recomendamos que cree un nuevo grupo de funciones denominado **revisores de disposición**y que agregue estos dos roles a ese grupo de roles. Incluso si es un usuario de **administrador global** , deberá formar parte de la función de **Administración de disposición** para que pueda acceder a la ficha disposición.
+Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Aunque el aviso estándar es agregar usuarios a los grupos de roles predeterminados, en este caso, se recomienda crear un nuevo grupo de funciones denominado **revisores de disposición** con estos dos roles y agregar usuarios a este grupo según sea necesario. Un solo grupo de roles para la disposición reduce los gastos generales de administración y facilita a los usuarios los permisos combinados que necesitan.
+
+> [!NOTE]
+> Incluso un administrador global debe recibir la función de **Administración de disposición** . Por lo tanto, los administradores globales deben tener acceso a la ficha disposición como miembros del grupo de roles **Reviewers de disposición** . 
 
 Específica del rol **registros de auditoría con permiso de vista** :
 
