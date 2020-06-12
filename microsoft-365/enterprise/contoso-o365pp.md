@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Entienda cómo Contoso usa Microsoft Endpoint Configuration Manager para implementar Aplicaciones de Microsoft 365 para empresas.
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011892"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679043"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Implementación de Aplicaciones de Microsoft 365 para empresas en Contoso
 
@@ -53,10 +53,10 @@ En lugar de administrar las actualizaciones de Office con Configuration Manager,
 
 Contoso siguió el mismo enfoque de dos fases de implementación de Office para las actualizaciones de características: los dispositivos del grupo piloto recibieron las actualizaciones de características cuatro meses antes que el resto de los dispositivos de la organización (el grupo general). Para habilitar esta opción en Office, Contoso usó dos [canales de actualización](https://docs.microsoft.com/DeployOffice/overview-update-channels)recomendados: 
 
-- Canal semianual (dirigido) para las actualizaciones del grupo piloto 
-- Canal semianual para las actualizaciones del grupo general 
+- Canal semestral empresarial (versión preliminar) para actualizaciones al grupo piloto 
+- Canal semestral empresarial para las actualizaciones del grupo general 
 
-Como el canal semianual (dirigido) publica una versión de Aplicaciones de Microsoft 365 para empresas cuatro meses antes que el canal semianual, Contoso tiene tiempo para validar las actualizaciones sin tener que administrarlas. 
+Como el canal semestral empresarial (versión preliminar) publica una versión de Aplicaciones de Microsoft 365 para empresas cuatro meses antes que el canal empresarial semestral, Contoso tiene tiempo para validar las actualizaciones sin tener que administrarlas. 
 
 ## <a name="deployment-process"></a>Proceso de implementación
 
@@ -65,7 +65,7 @@ Para completar la implementación de Office, Contoso implementó el siguiente pr
 1. Antes de la implementación, usaron Readiness Toolkit para probar sus aplicaciones y los complementos de Office con el fin de evaluar la compatibilidad con Aplicaciones de Microsoft 365 para empresas.
 2. En Configuration Manager, Contoso habilitó la caché del mismo nivel en los dispositivos cliente, lo que contribuyó a compensar la capacidad de red limitada al implementar en los dispositivos cliente en ubicaciones remotas. 
 3. Definieron dos grupos de implementación como colecciones de dispositivo en Configuration Manager: un grupo piloto y un grupo general. El grupo piloto, que incluía un pequeño conjunto de dispositivos representativos en toda la organización, se usó para realizar pruebas adicionales de aplicaciones, complementos y hardware con Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. 
-4. Crearon paquetes de implementación de Office con el panel de administración de clientes de Office y el Asistente de instalación de Office 365, que forman parte de la consola de Configuration Manager. Crearon dos paquetes de Aplicaciones de Microsoft 365 para empresas, uno para el grupo piloto en el canal semianual (dirigido) y otro para el grupo general en el canal semianual. 
+4. Crearon paquetes de implementación de Office con el panel de administración de clientes de Office y el Asistente de instalación de Office 365, que forman parte de la consola de Configuration Manager. Crearon dos paquetes de Aplicaciones de Microsoft 365 para empresas, uno para el grupo piloto en el canal semestral empresarial (versión preliminar) y otro para el grupo general en el canal semestral empresarial. 
 5. En cada paquete de Office, incluyeron los paquetes de los idiomas inglés, francés y alemán. Si un dispositivo requería un idioma que no estaba incluido en el paquete de Office, se descargaba de forma automática de la Red de entrega de contenido (CDN) de Office.
 6. Para eliminar de forma automática todas las versiones MSI existentes de Office antes de instalar Aplicaciones de Microsoft 365 para empresas, usaron las características integradas en el paquete de Office.
 7. En Configuration Manager, implementaron los paquetes de Windows y Office en puntos de distribución en la red y, después, ejecutaron las secuencias de tareas de implementación de Configuration Manager para implementar el paquete piloto de Aplicaciones de Microsoft 365 para empresas en el grupo piloto.
