@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470667"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44658352"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -135,7 +135,7 @@ Para más información sobre estos clasificadores, consulte [Introducción al en
 
 Durante el periodo de previsualización, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de sensibilidad:
 
-- Microsoft 365 Apps para empresas (antes Office 365 ProPlus) para Windows, de [Office Insider](https://office.com/insider):
+- Las Aplicaciones de Microsoft 365 para empresas ([anteriormente Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) para Windows desde el [canal Beta](https://office.com/insider) ([anteriormente Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
     - Word
     - Excel
     - PowerPoint

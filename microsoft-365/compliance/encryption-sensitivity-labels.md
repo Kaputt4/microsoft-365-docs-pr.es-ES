@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470677"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678986"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -349,7 +349,7 @@ Use esta configuración solo si no necesita restringir quién puede abrir el doc
 
 5. Seleccione **elegir permisos predefinidos o personalizados**.
 
-6. En el panel **elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione los permisos de **visor** que quiera y seleccione **guardar**.
+6. En el panel **Elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione los permisos que quiera y seleccione **Guardar**.
 
 7. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
 

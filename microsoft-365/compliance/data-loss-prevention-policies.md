@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
-ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351855"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679074"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ Las condiciones disponibles ahora pueden determinar si:
     
 - El contenido se comparte con personas de fuera o dentro de la organización.
 
-> [!NOTE]
-> Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización.
+  > [!NOTE]
+  > Los usuarios que tienen cuentas que no son de invitado en el espacio empresarial de Active Directory o de Azure Active Directory de una organización anfitriona se consideran como personas dentro de la organización.
     
 #### <a name="types-of-sensitive-information"></a>Tipos de información confidencial
 
@@ -127,11 +127,11 @@ Una directiva DLP puede ayudar a proteger información confidencial, lo que se d
   
 Cuando una directiva DLP busca un tipo de información confidencial, como un número de tarjeta de crédito, no solamente busca un número de 16 dígitos. Cada tipo de información confidencial se define y se detecta mediante una combinación de:
   
-- Palabras clave
+- Palabras clave.
     
-- Funciones internas para validar las sumas de comprobación o composición
+- Funciones internas para validar las sumas de comprobación o composición.
     
-- Evaluación de expresiones regulares para buscar coincidencias de patrón
+- Evaluación de expresiones regulares para buscar coincidencias de patrón.
     
 - Otros exámenes de contenido
     
@@ -145,13 +145,19 @@ Cuando el contenido coincide con una condición en una regla, puede aplicar acci
   
 Con las acciones ahora disponibles, podrá:
   
-- **Restringir el acceso al contenido**. Para el contenido del sitio, esto significa que los permisos del documento están restringidos para todos los usuarios excepto el administrador de la colección de sitios, el propietario del documento y la persona que lo modificó por última vez. Estas personas pueden eliminar la información confidencial del documento o realizar otras acciones correctivas. Cuando el documento cumple la normativa, los permisos originales se restauran automáticamente. Cuando se bloquea el acceso a un documento, este aparece con un icono de sugerencia de directiva especial en la biblioteca del sitio. 
+- **Restringir el acceso al contenido** en función de sus necesidades. Puede restringir el acceso al contenido de tres formas:
+
+  1. Restringir el acceso al contenido para todos los usuarios.
+  2. Restringir el acceso al contenido a personas ajenas a la organización.
+  3. Restringir el acceso a "Cualquier persona con el vínculo".
+
+  Para el contenido del sitio, esto significa que los permisos del documento están restringidos para todos los usuarios excepto el administrador de la colección de sitios, el propietario del documento y la persona que lo modificó por última vez. Estas personas pueden eliminar la información confidencial del documento o realizar otras acciones correctivas. Cuando el documento cumple la normativa, los permisos originales se restauran automáticamente. Cuando se bloquea el acceso a un documento, este aparece con un icono de sugerencia de directiva especial en la biblioteca del sitio. 
     
-    ![Sugerencia de directiva que muestra que el acceso al documento está bloqueado](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Sugerencia de directiva que muestra que el acceso al documento está bloqueado](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    Para el contenido del correo electrónico, esta acción evita que se envíe el mensaje. Según la configuración de la regla DLP, el remitente ve un NDR o, si la regla usa una notificación, una notificación por correo electrónico y la sugerencia de directiva.
+  Para el contenido del correo electrónico, esta acción evita que se envíe el mensaje. Según la configuración de la regla DLP, el remitente ve un NDR o, si la regla usa una notificación, una notificación por correo electrónico y la sugerencia de directiva.
     
-    ![Advertencia para quitar del mensaje a los destinatarios no autorizados](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Advertencia para quitar del mensaje a los destinatarios no autorizados](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Notificaciones de usuario e invalidaciones de usuario
 
@@ -335,15 +341,14 @@ Al usar una [etiqueta de retención](labels.md) que haya creado y publicado con 
 - Las etiquetas de retención pueden tardar hasta un día en sincronizarse y hasta siete días para aplicar automáticamente después de que se hayan creado y publicado. Obtenga más información consultando, [Cuánto tardan las etiquetas de retención en aplicarse](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
 - El uso de una etiqueta de retención en una directiva *** solo es compatible con los elementos de SharePoint Online y OneDrive para la Empresa***.
 
+  ![Etiquetas como una condición](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![Etiquetas como una condición](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  Es posible que quiera usar una etiqueta de retención en una directiva DLP si tiene elementos en retención y eliminación, y también desea aplicarles otros controles, por ejemplo:
 
-Es posible que quiera usar una etiqueta de retención en una directiva DLP si tiene elementos en retención y eliminación, y también desea aplicarles otros controles, por ejemplo:
+  - Publicó una etiqueta de retención denominada **año fiscal 2018**, que, cuando se aplica a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
 
-- Publicó una etiqueta de retención denominada **año fiscal 2018**, que, cuando se aplica a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
-
-> [!IMPORTANT]
-> Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: **"No se admite la protección del contenido etiquetado en mensajes de correo electrónico y de Teams. Quite la etiqueta siguiente o desactive Exchange y Teams como una ubicación".** Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
+  > [!IMPORTANT]
+  > Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: **"No se admite la protección del contenido etiquetado en mensajes de correo electrónico y de Teams. Quite la etiqueta siguiente o desactive Exchange y Teams como una ubicación".** Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad estará disponible próximamente
 
@@ -449,15 +454,15 @@ DLP detecta información confidencial mediante un análisis profundo del conteni
 
 Después de crear una directiva DLP en el Centro de seguridad y cumplimiento, esta se almacena en un almacén central de directivas y después se sincroniza con los distintos orígenes de contenido, entre ellos:
   
-- Exchange Online y de ahí a Outlook en la Web y Outlook
+- Exchange Online y de ahí a Outlook en la web y Outlook.
     
 - Sitios de OneDrive para la Empresa
     
-- Sitios de SharePoint Online
+- Sitios de SharePoint Online.
     
-- Programas de escritorio de Office (Excel, PowerPoint y Word)
+- Programas de escritorio de Office (Excel, PowerPoint y Word).
 
-- Mensajes de conversaciones y canales de Microsoft Teams
+- Mensajes de conversaciones y canales de Microsoft Teams.
     
 Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza a evaluar el contenido y a aplicar las acciones.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -519,13 +524,13 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Conectarse al &amp;Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
 2. Usar cualquiera de estos [cmdlets policy-and-compliance-dlp](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
     
 Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes de DLP están disponibles en el PowerShell de Exchange Online. no en el PowerShell del Centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     
