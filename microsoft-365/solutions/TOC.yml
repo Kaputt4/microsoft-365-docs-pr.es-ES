@@ -28,9 +28,10 @@
         - name: Paso 6. Enseñar a los trabajadores remotos
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Configurar la colaboración moderna con Microsoft 365
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Tres niveles de protección con Microsoft Teams
+        - name: Información general
+          href: setup-secure-collaboration-with-teams.md
+        - name: Paso 1. Configurar tres niveles de protección con Microsoft Teams
           items:
             - name: Vista general de los tres niveles de protección
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: Configurar un equipo con aislamiento de seguridad
               href: secure-teams-security-isolation.md
-        - name: Configurar el uso compartido externo
+        - name: Paso 2. Configurar el uso compartido externo
           items:
             - name: Información general sobre el uso compartido externo
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,11 @@
             - name: Referencia de uso compartido externo
               href: microsoft-365-guest-settings.md
     - name: Implementación de protección contra amenazas en Microsoft 365
-      href: deploy-threat-protection.md
+      items:
+        - name: Información general
+          href: deploy-threat-protection.md
+        - name: Pasos para implementar la protección contra amenazas
+          href: deploy-threat-protection-configure.md
     - name: Implementación de protección de la información para las normativas de privacidad de los datos
       items:
         - name: Información general
