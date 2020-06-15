@@ -67,7 +67,7 @@
               href: mtp/prepare-mtpeval.md
             - name: Instalación
               href: mtp/setup-mtpeval.md
-            - name: Configurar e incorporar puntos de conexión
+            - name: Configurar e incorporar
               href: mtp/config-mtpeval.md
             - name: Habilitar la Protección contra amenazas de Microsoft
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
@@ -82,7 +82,7 @@
                   href: mtp/prepare-mtpeval.md
                 - name: Instalación
                   href: mtp/setup-mtpeval.md
-                - name: Configurar e incorporar puntos de conexión
+                - name: Configurar e incorporar
                   href: mtp/config-mtpeval.md
                 - name: Habilitar la Protección contra amenazas de Microsoft
                   href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
@@ -511,13 +511,6 @@
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: "Protección de archivos en Microsoft\_Teams"
-              items:
-                - name: Protección de equipos para archivos en un entorno de desarrollo y pruebas
-                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
-            - name: Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
-              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
-              items: null
             - name: Integración de servidor SIEM
               href: ./office-365-security/siem-server-integration.md
             - name: Información general de Exchange Online Protection
