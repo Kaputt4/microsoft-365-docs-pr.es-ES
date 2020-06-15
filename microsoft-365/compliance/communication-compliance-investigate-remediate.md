@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208402"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717321"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -70,7 +70,7 @@ Para obtener una lista completa de los filtros y los detalles de los campos, con
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Uso del análisis de duplicados Near y Exact
 
-Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticamente los duplicados de mensajes cercanos y exactos sin ningún paso de configuración adicional. Esta vista permite corregir rápidamente mensajes similares uno a uno o un grupo, lo que reduce la carga de la investigación de mensajes para revisores. A medida que se detectan duplicados, los controles de duplicados **cercanos** o los controles de **duplicados exactos** se muestran en la barra de herramientas acción de corrección.
+Las directivas de cumplimiento de comunicaciones analizan y agrupan automáticamente los duplicados de mensajes cercanos y exactos sin ningún paso de configuración adicional. Esta vista permite corregir rápidamente mensajes similares uno a uno o un grupo, lo que reduce la carga de la investigación de mensajes para revisores. A medida que se detectan duplicados, los controles de duplicados **cercanos** o los controles de **duplicados exactos** se muestran en la barra de herramientas acción de corrección. Esta vista no está disponible si no se encuentran duplicados cercanos o exactos.
 
 #### <a name="to-remediate-duplicates"></a>Para corregir duplicados
 

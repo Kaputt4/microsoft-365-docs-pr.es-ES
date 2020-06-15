@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Una vez configurada la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves de AKV y la administración de permisos y las directivas de cifrado de datos.
-ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352207"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717311"
 ---
 # <a name="manage-customer-key"></a>Administrar la clave de cliente
 
@@ -142,13 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 La propiedad IsEncrypted devuelve un valor **true** si el buzón está cifrado y un valor de **false** si el buzón no está cifrado.
 
-El tiempo para completar los movimientos de buzones depende del tamaño del buzón. Si la clave de cliente no ha cifrado completamente el buzón de correo después de 72 horas desde el momento en que asigna un nuevo DEP, inicie un movimiento de buzón. Para ello, use el cmdlet New-MoveRequest y proporcione el alias del buzón de correo. Por ejemplo:
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-Para obtener más información sobre este cmdlet, vea [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
+El tiempo para completar los movimientos de buzones depende del tamaño del buzón. Si la clave de cliente no ha cifrado completamente el buzón de correo después de 72 horas desde el momento en que asigna un nuevo DEP, póngase en contacto con el soporte técnico de Microsoft para obtener ayuda. El cmdlet New-MoveRequest ya no está disponible para los movimientos de buzones locales. Consulte [este anuncio](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) para obtener información adicional.
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Comprobar que se ha completado el cifrado para los archivos de SharePoint Online, OneDrive para la empresa y Teams
 

@@ -14,20 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 1c31c0d5524370fd417460fbacf3695df4fa0102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632245"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717351"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
 Además de usar el cifrado de nivel de volumen, Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa también usan el cifrado de servicio para cifrar los datos de los clientes. El cifrado del servicio permite dos opciones de administración de claves:
 
-- Microsoft administra todas las claves de cifrado. (Esta opción está disponible actualmente en SharePoint Online, OneDrive para la empresa y Skype empresarial).
+## <a name="microsoft-managed-keys"></a>Claves administradas de Microsoft: 
+Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado del servicio. Esta opción está disponible actualmente en SharePoint Online y OneDrive para la empresa. Esta opción se está implementando actualmente para Exchange Online. Las claves administradas de Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarse con la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos se cifran con las claves administradas de Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
 
-- La organización proporciona las claves raíz. Estas claves se administran con Azure Key Vault. Esta opción se denomina clave de cliente. La clave de cliente está disponible actualmente para los archivos de Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial y Microsoft Teams. Si usa la clave de cliente, estas claves reemplazan las claves administradas por Microsoft para cifrar los datos.
+## <a name="customer-key"></a>Clave del cliente: 
+Debe proporcionar las claves raíz que se usan con el cifrado de servicio y administrarlas con Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina clave de cliente y actualmente está disponible para Exchange Online, SharePoint Online y OneDrive para la empresa. (Anteriormente denominado cifrado avanzado con BYOK. Consulte [mejorar la transparencia y el control para clientes de Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para el anuncio original).
 
 El cifrado de servicio ofrece varias ventajas. Por ejemplo, clave de cliente:
 
@@ -38,8 +40,6 @@ El cifrado de servicio ofrece varias ventajas. Por ejemplo, clave de cliente:
 - Proporciona la separación de los administradores del sistema operativo Windows del acceso a los datos de clientes almacenados o procesados por el sistema operativo.
 
 - Mejora la capacidad de Microsoft 365 para satisfacer las demandas de los clientes que tienen requisitos de cumplimiento relacionados con el cifrado.
-
-## <a name="customer-key"></a>Clave de cliente
 
 Mediante la clave de cliente, puede generar sus propias claves criptográficas mediante un módulo de servicio de hardware (HSM) local o Azure Key Vault (AKV). Independientemente de cómo genere la clave, use AKV para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en AKV, se pueden usar como la raíz de una de las llaves que cifran los archivos o datos de buzones de correo.
 
@@ -56,4 +56,4 @@ Para obtener información sobre cómo configurar la clave de cliente de Microsof
 - [Rollo o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md)
 
 - [Descripción de la clave de disponibilidad](customer-key-availability-key-understand.md)
- 
+

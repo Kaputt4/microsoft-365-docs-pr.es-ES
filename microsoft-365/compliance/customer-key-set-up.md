@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352277"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717267"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -108,15 +108,15 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
 
 2. Una vez que haya iniciado sesión, vaya al **Panel**.
 
-3. Elija **ofertas**y revise la lista de ofertas actuales.
+3. Elija **implementar** en la barra de navegación **o** seleccione **Ver todos los recursos de implementación** en la tarjeta de información de **implementación** y revise la lista de ofertas actuales.
 
-4. Elija más **información** para la oferta que se le aplique:
+4. Elija la tarjeta de información para la oferta que se le aplica:
 
-   - **Exchange Online y Skype empresarial:** Elija más **información** en la **clave de cliente de la oferta de Exchange** .
+   - **Exchange Online y Skype empresarial:** Elija la oferta **ayuda de la clave de cifrado de solicitud para Exchange Online** .
 
-   - **Archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams:** Elija más **información** sobre la oferta de **clave de cliente para SharePoint y OneDrive para la empresa** .
+   - **Archivos de SharePoint Online, OneDrive y Teams:** Elija la **ayuda de la clave de cifrado Request for SharePoint y OneDrive** .
 
-5. En la página Detalles de la **oferta** , elija **crear solicitud**.
+5. Una vez que hayas revisado los detalles de la oferta, elige **continuar en el paso 2**.
 
 6. Rellene todos los detalles aplicables y la información solicitada en el formulario de oferta. Preste especial atención a las selecciones de los funcionarios de su organización a los que desea conceder autorización para aprobar la destrucción permanente e irreversible de claves de cifrado y datos. Una vez que haya completado el formulario, elija **Enviar**.
 
@@ -137,7 +137,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
 3. Póngase en contacto con Microsoft para finalizar el proceso. Para el equipo de SharePoint y OneDrive para la empresa, póngase en contacto con [Spock@microsoft.com](mailto:spock@microsoft.com). Para Exchange Online y Skype empresarial, póngase en contacto con [exock@microsoft.com](mailto:exock@microsoft.com). Incluya lo siguiente en su correo electrónico:
 
-   **Asunto**: clave del cliente para \< *el nombre de dominio completo del espacio empresarial*\>
+   **Asunto**: clave de cliente de\<*Your tenant's fully-qualified domain name*\>
 
    **Cuerpo**: identificadores de suscripción para los que desea finalizar el período de retención obligatorio.
    El resultado de Get-AzProviderFeature para cada suscripción.

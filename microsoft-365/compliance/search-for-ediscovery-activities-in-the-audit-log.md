@@ -16,22 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría eventos que se registran cuando los administradores de cumplimiento realizan tareas de caso de exhibición de documentos electrónicos y búsqueda de contenido en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943659"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726519"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
-La búsqueda de contenido y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en el centro de seguridad & cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o los administradores de eDiscovery (o cualquier permiso de exhibición de documentos electrónicos asignado) realizan las siguientes tareas principales de búsqueda de contenido y de eDiscovery en el centro de seguridad & cumplimiento:
+La búsqueda de contenido y las actividades relacionadas con eDiscovery (para eDiscovery principal y eDiscovery avanzado) que se realizan en el centro de seguridad & cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o los administradores de eDiscovery (o cualquier permiso de exhibición de documentos electrónicos asignado) realizan las siguientes tareas principales de búsqueda de contenido y de eDiscovery en el centro de seguridad & cumplimiento:
   
-- Crear y administrar casos de exhibición de documentos electrónicos
+- Creación y administración de casos de eDiscovery principales y avanzados
 
 - Crear, iniciar y editar búsquedas de contenido
 
 - Realizar acciones de búsqueda de contenido, como la vista previa, la exportación y la eliminación de resultados de búsqueda
+
+- Administración de custodios y conjuntos de revisión en eDiscovery avanzado
 
 - Configurar el filtrado de permisos para la búsqueda de contenido
 
@@ -47,31 +49,33 @@ Para obtener más información acerca de las búsquedas en el registro de audito
 Actualmente, tiene que hacer algunas cosas específicas para ver las actividades de eDiscovery en el registro de auditoría. Aquí se muestra cómo hacerlo.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
-    
+
 2. Inicie sesión con su cuenta profesional o educativa.
-    
+
 3. En el panel izquierdo, haga clic en **Buscar**y, a continuación, haga clic en **búsqueda de registros de auditoría**.
-    
-4. En la lista desplegable **actividades** , en **actividades de exhibición**de documentos electrónicos, haga clic en una o más actividades para buscar. O puede hacer clic en **actividades de exhibición** de documentos electrónicos para buscar todas las actividades relacionadas con la exhibición de documentos electrónicos. 
-    
+
+4. En la lista desplegable **actividades** , en **actividades de eDiscovery** o en **actividades avanzadas de eDiscovery**, haga clic en una o más actividades para buscar.
+
     > [!NOTE]
-    > La lista desplegable actividades también incluye un grupo de actividades que se denominan **actividades del cmdlet eDiscovery** y que devolverán registros del registro de auditoría del cmdlet. 
+    > La lista desplegable **actividades** también incluye un grupo de actividades que se denominan **actividades del cmdlet eDiscovery** y que devolverán registros del registro de auditoría del cmdlet.
   
-5.  Seleccione un intervalo de fecha y hora para mostrar los eventos de eDiscovery que se produjeron dentro de ese período. 
-    
-6. En el cuadro **usuarios** , seleccione uno o más usuarios para los que desea mostrar los resultados de la búsqueda. Deje este cuadro en blanco para devolver las entradas de todos los usuarios. 
-    
-7. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda.  
-    
+5. Seleccione un intervalo de fecha y hora para mostrar los eventos de eDiscovery que se produjeron dentro de ese período. 
+
+6. En el cuadro **usuarios** , seleccione uno o más usuarios para los que desea mostrar los resultados de la búsqueda. Deje este cuadro en blanco para devolver las entradas de todos los usuarios.
+
+7. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
+
 8. Una vez que se muestran los resultados de la búsqueda, puede hacer clic en **filtrar resultados** para filtrar u ordenar los registros de actividad resultantes. Desafortunadamente, no se puede usar el filtrado para excluir explícitamente ciertas actividades. 
-    
+
 9. Para ver los detalles de una actividad, haga clic en el registro de actividad en la lista de resultados de la búsqueda. 
-    
-    Se muestra una página **detalles** de la marcha que contiene las propiedades detalladas del registro del evento. Para mostrar información adicional, haga clic en **más información**. Para obtener una descripción de estas propiedades, consulte la sección [propiedades detalladas para actividades de eDiscovery](#detailed-properties-for-ediscovery-activities) . 
+
+    Se muestra una página **detalles** de la marcha que contiene las propiedades detalladas del registro del evento. Para mostrar información adicional, haga clic en **más información**. Para obtener una descripción de estas propiedades, consulte la sección [propiedades detalladas para actividades de eDiscovery](#detailed-properties-for-ediscovery-activities) .
+
+10. Si lo desea, puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, usar la característica Excel Power Query para formatear y filtrar estos registros. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 
 ## <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
-En la tabla siguiente se describen las actividades principales de búsqueda de contenido y de eDiscovery que se registran cuando un administrador o administrador de exhibición de documentos electrónicos realiza una actividad relacionada con la exhibición de documentos electrónicos con el centro de seguridad & cumplimiento o ejecutando el cmdlet correspondiente del PowerShell del centro de cumplimiento de & de seguridad. 
+En la tabla siguiente se describen las actividades principales de búsqueda de contenido y de eDiscovery que se registran cuando un administrador o administrador de exhibición de documentos electrónicos realiza una actividad relacionada con la exhibición de documentos electrónicos con el centro de seguridad & cumplimiento o ejecutando el cmdlet correspondiente del PowerShell del centro de cumplimiento de & de seguridad. Tenga en cuenta también que algunas actividades realizadas en avanzadas se devolverán al buscar actividades en esta lista.
   
 > [!NOTE]
 > Las actividades de eDiscovery descritas en esta sección proporcionan información similar a las actividades del cmdlet de exhibición de documentos electrónicos que se describen en la siguiente sección. Le recomendamos que use las actividades de eDiscovery descritas en esta sección, ya que aparecerán en los resultados de la búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de la búsqueda de registros de auditoría. 
@@ -118,9 +122,40 @@ En la tabla siguiente se describen las actividades principales de búsqueda de c
 |(ninguno)|ViewedSearchPreviewed|Get-ComplianceSearchAction-Preview|Un usuario obtiene una vista previa de los resultados de una búsqueda de contenido en el centro de seguridad y cumplimiento o mediante la ejecución del cmdlet.|
 |||||
   
+## <a name="advanced-ediscovery-activities"></a>Actividades de eDiscovery avanzado
+
+En la tabla siguiente se describen las actividades avanzadas de eDiscovery registradas en el registro de auditoría. Estas actividades (además de las actividades de eDiscovery relevantes pueden usarse para ayudarle a realizar un seguimiento de la progresión de la actividad en un caso avanzado de eDiscovery.
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Agregar datos a otro conjunto de revisión|AddWorkingSetQueryToWorkingSet|El usuario ha agregado documentos de un conjunto de revisiones a un conjunto de revisiones diferente.|
+|Datos agregados a otro conjunto de revisión|AddQueryToWorkingSet|El usuario agregó los resultados de una búsqueda de contenido asociada con un caso de eDiscovery avanzado a un conjunto de revisiones.|
+|Se han agregado datos que no son de Microsoft 365 a un conjunto de revisión|AddNonOffice365DataToWorkingSet|Un usuario ha agregado datos que no son de Microsoft 365 a un conjunto de revisión.|
+|Documentos corregidos agregados para revisar el conjunto|AddRemediatedData|El usuario carga documentos que tuvieron errores de indexación corregidos para un conjunto de revisiones.|
+|Datos analizados en el conjunto de revisiones|RunAlgo|El usuario ejecuta el análisis en los documentos de un conjunto de revisiones.|
+|Documento anotados en el conjunto de revisiones|AnnotateDocument|El usuario anotó un documento en un conjunto de revisiones. La anotación incluye contenido redactado en un documento.|
+|Conjuntos de carga comparados|LoadComparisonJob|El usuario comparó dos conjuntos de carga distintos en un conjunto de revisiones. Un conjunto de carga es cuando los datos de una búsqueda de contenido asociados al caso se agregan a un conjunto de revisiones.|
+|Documentos redactados convertidos en PDF|BurnJob|El usuario convirtió todos los documentos redactados en un conjunto de revisión en archivos PDF.|
+|Creado el conjunto de revisiones|CreateWorkingSet|El usuario creó un conjunto de revisiones.|
+|Conjunto de búsqueda de revisiones creado|CreateWorkingSetSearch|El usuario creó una consulta de búsqueda para buscar en los documentos de un conjunto de revisiones.|
+|Etiqueta creada|CreateTag|El usuario creó un grupo de etiquetas en un conjunto de revisiones. Un grupo de etiquetas puede contener una o más etiquetas pequeñas. Las etiquetas se usan para etiquetar documentos en el conjunto de revisiones.|
+|Conjunto de búsqueda de revisiones creado|DeleteWorkingSetSearch|El usuario eliminó una consulta de búsqueda en un conjunto de revisiones.|
+|Etiquetas eliminadas|DeleteTag|El usuario eliminó un grupo de etiquetas en un conjunto de revisiones.|
+|Documento descargado|DownloadDocument|El usuario ha descargado un documento de un conjunto de revisiones.|
+|Etiqueta editada|UpdateTag|El usuario cambió una etiqueta en un conjunto de revisiones.|
+|Documentos exportados desde un conjunto de revisión|ExportJob|Documentos de usuario exportados desde un conjunto de revisión.|
+|Configuración de carcaza modificados|UpdateCaseSettings|Los usuarios modificaron la configuración de una carcaza. Las opciones de configuración de carcazas incluyen información de casos, permisos de acceso y configuraciones que controlan el comportamiento de búsqueda y análisis.|
+|Conjunto de búsqueda de revisiones modificado|UpdateWorkingSetSearch|El usuario editó una consulta de búsqueda en un conjunto de revisiones.|
+|Conjunto de búsqueda de revisiones previstas|PreviewWorkingSetSearch|Usuario obtiene una vista previa de los resultados de una consulta de búsqueda en un conjunto de revisiones.|
+|Documentos erróneos corregidos|ErrorRemediationJob|El usuario corrige los archivos que contienen errores de escritura..|
+|Documento etiquetado|TagFiles|El usuario etiquetó un documento en un conjunto de revisiones.|
+|Resultados etiquetados de una consulta|TagJob|EL usuario etiqueta todos los documentos que coinciden con los criterios de la consulta de búsqueda en un conjunto de revisiones.|
+|Documento anotados en el conjunto de revisiones|ViewDocument|El usuario visualizó un documento en un conjunto de revisiones.|
+|||
+
 ## <a name="ediscovery-cmdlet-activities"></a>actividades del cmdlet eDiscovery
 
-En la tabla siguiente se enumeran los registros de auditoría de cmdlet que se registran cuando un administrador o usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell remoto que está conectado al centro de seguridad & cumplimiento de la organización. La información detallada en el registro de auditoría es diferente para las actividades de cmdlet que se enumeran en esta tabla y las actividades de eDiscovery descritas en la sección anterior. 
+En la tabla siguiente se enumeran los registros de auditoría de cmdlet que se registran cuando un administrador o usuario realiza una actividad relacionada con eDiscovery mediante el centro de seguridad & cumplimiento o mediante la ejecución del cmdlet correspondiente en PowerShell remoto que está conectado al centro de seguridad & cumplimiento de la organización. La información detallada en el registro de auditoría es diferente para las actividades de cmdlet que se enumeran en esta tabla y las actividades de eDiscovery descritas en la sección anterior.
   
 Como se mencionó anteriormente, las actividades de cmdlet de eDiscovery tardan hasta 24 horas en aparecer en los resultados de búsqueda de registros de auditoría.
   

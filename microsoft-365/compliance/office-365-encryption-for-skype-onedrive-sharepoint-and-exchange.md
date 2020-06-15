@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: En este artículo, encontrará una descripción de cifrado de Office 365 para Skype, OneDrive, SharePoint y Exchange Online.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 'Resumen: Descripción del cifrado para Skype, OneDrive, SharePoint, Microsoft Teams y Exchange Online.'
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031400"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717341"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Cifrado para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Cifrado para Skype empresarial, OneDrive para la empresa, SharePoint Online, Microsoft Teams y Exchange Online
 
 Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos.
 
@@ -33,7 +32,7 @@ Microsoft 365 es un entorno muy seguro que ofrece una amplia protección en vari
 
 Los datos de clientes de Skype empresarial pueden almacenarse en reposo en forma de archivos o presentaciones cargados por los participantes en la reunión. El servidor de conferencia web cifra los datos del cliente mediante AES con una clave de 256 bits. Los datos de cliente cifrados se almacenan en un recurso compartido de archivos. Cada parte de los datos de clientes se cifra con una clave de 256 bits generada de forma aleatoria. Cuando una parte de los datos de clientes se comparte en una conferencia, el servidor de conferencia web indica a los clientes de conferencia que descarguen los datos de clientes cifrados a través de HTTPS. Envía la clave correspondiente a los clientes para que los datos del cliente se puedan descifrar. El servidor de conferencia web también autentica a los clientes de conferencia antes de que los clientes tengan acceso a los datos de clientes de conferencia. Al unirse a una conferencia Web, cada cliente de conferencia establece primero un cuadro de diálogo SIP con el componente de foco de conferencia que se ejecuta dentro del servidor front-end a través de TLS. El enfoque de conferencia pasa al cliente de conferencia una cookie de autenticación generada por el servidor de conferencia Web. A continuación, el cliente de conferencia se conecta al servidor de conferencia web que presenta la cookie de autenticación que el servidor debe autenticar.
 
-## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online y OneDrive para la Empresa
+## <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint en línea y OneDrive para Empresas
 
 Todos los archivos de clientes de SharePoint Online están protegidos por claves únicas por archivo que siempre son exclusivas para un único inquilino. Las claves las crea y administra el servicio de SharePoint Online, o cuando la clave de cliente la usan, crean y administran los clientes. Cuando se carga un archivo, SharePoint Online realiza el cifrado en el contexto de la solicitud de carga, antes de enviarlo a Azure Storage. Cuando se descarga un archivo, SharePoint Online recupera los datos cifrados del cliente desde Azure Storage en función del identificador de documento único y descifra los datos del cliente antes de enviarlos al usuario. Azure Storage no tiene la capacidad de descifrar, ni tampoco identificar o comprender los datos de los clientes. Todo el cifrado y el descifrado ocurren en los mismos sistemas que exigen el aislamiento de inquilinos, que son Azure Active Directory y SharePoint Online.
 
@@ -87,3 +86,32 @@ Exchange online usa BitLocker para todos los datos de buzones y la configuració
 Además del cifrado de servicio, Microsoft 365 admite la clave de cliente, que se basa en el cifrado de servicio. La clave de cliente es una opción de clave administrada por Microsoft para el cifrado del servicio de Exchange online que también se encuentra en la guía básica de Microsoft. Este método de cifrado proporciona una mayor protección que BitLocker no permite porque proporciona separación entre los administradores de servidores y las claves criptográficas necesarias para el descifrado de datos y porque el cifrado se aplica directamente a los datos (a diferencia de BitLocker, que aplica el cifrado en el volumen de disco lógico), todos los datos de cliente copiados de un servidor de Exchange siguen cifrados
 
 El ámbito del cifrado del servicio de Exchange online son los datos del cliente almacenados en REST dentro de Exchange Online. (Skype empresarial almacena casi todo el contenido generado por el usuario dentro del buzón de correo de Exchange online del usuario y, por lo tanto, hereda la característica de cifrado de servicio de Exchange Online).
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Teams usa TLS y MTLS para cifrar los mensajes instantáneos. Todo el tráfico de servidor a servidor requiere MTLS, independientemente de si el tráfico se limita a la red interna o atraviesa el perímetro de la red interna.
+
+En esta tabla se resumen los protocolos que se usan en Microsoft Teams.
+
+***Cifrado de tráfico***
+
+|||
+|:-----|:-----|
+|**Tipo de tráfico**|**Cifrado por**|
+|De servidor a servidor|MTLS|
+|Cliente a servidor (ex. mensajería instantánea y presencia)|TLS|
+|Flujos de medios (p. ej. uso compartido de audio y vídeo en medios|TLS|
+|Uso compartido de audio y vídeo de medios|SRTP/TLS|
+|Señalización|TLS|
+|||
+
+#### <a name="media-encryption"></a>Cifrado de medios
+
+El tráfico de medios se cifra mediante RTP seguro (SRTP), que es un protocolo de transporte en tiempo real (RTP) que proporciona al tráfico RTP confidencialidad, autenticación y protección contra los ataques de reproducción. SRTP usa una clave de sesión generada mediante un generador de números aleatorios seguros y se intercambia con el canal de señalización TLS. El tráfico de medios de cliente a cliente se negocia a través de una señalización de conexión de cliente a servidor, pero se cifra con SRTP cuando se dirige directamente del cliente al cliente.
+
+Teams usa un token basado en credenciales para el acceso seguro a las retransmisiones multimedia a través de TURN. Los relés multimedia intercambian el token a través de un canal seguro TLS.
+
+#### <a name="fips"></a>FIPS
+
+Teams usa algoritmos compatibles con FIPS (estándar federal de procesamiento de información) para intercambios de claves de cifrado. Para obtener más información acerca de la implementación de FIPS, consulte la [publicación del estándar federal de procesamiento de información (FIPS) 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide).

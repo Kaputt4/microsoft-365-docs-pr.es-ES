@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito con el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2b1f2927b5d6daeb5e83aae2521d96e329e77c43
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166011"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717233"
 ---
 # <a name="encryption"></a>Cifrado
 
@@ -54,6 +54,7 @@ Con Office 365, hay varias capas y tipos de cifrado que funcionan conjuntamente 
 |Archivos en un dispositivo. Estos archivos pueden incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, una tableta o un teléfono, o datos guardados en la nube de Microsoft.  <br/> |BitLocker en centros de recursos de Microsoft. BitLocker también se puede usar en equipos cliente, como equipos y tabletas Windows  <br/> Administrador de claves distribuidas (DKM) en centros de recursos de Microsoft  <br/> Clave de cliente de Microsoft 365  <br/> |[Centro de TI de Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: cifrado de datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Cifrado de servicio con clave de cliente](customer-key-overview.md) <br/> |
 |Archivos en tránsito entre usuarios. Estos archivos pueden incluir documentos de Office o elementos de lista de SharePoint compartidos entre usuarios.  <br/> |TLS para los archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype empresarial online: seguridad y archivado](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |Correo electrónico en tránsito entre los destinatarios. Este correo electrónico incluye correo electrónico hospedado por Exchange Online.  <br/> |Office 365 cifrado de mensajes con Azure Rights Management, S/MIME y TLS para el correo electrónico en tránsito  <br/> |[Cifrado de mensajes de Office 365 (OME)](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|Chats, mensajes y archivos en tránsito entre destinatarios con Microsoft Teams. <br/> |Teams usa TLS y MTLS para cifrar los mensajes instantáneos. El tráfico de medios se cifra mediante RTP seguro (SRTP). Teams usa algoritmos compatibles con FIPS (estándar federal de procesamiento de información) para intercambios de claves de cifrado. <br/> |[Cifrado para Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>¿Qué sucede si necesito más control sobre el cifrado para cumplir con los requisitos de seguridad y cumplimiento?
 
@@ -78,6 +79,7 @@ Para obtener más información, consulte los siguientes recursos:
 |Trabajar con mensajes cifrados en un dispositivo móvil  <br/> |[Ver mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Ver mensajes cifrados en su iPhone o iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |Cifrado de un documento con protección con contraseña  <br/><br/>  La protección con contraseña no es compatible con un explorador. Use versiones de escritorio de Word, Excel y PowerPoint para la protección con contraseña. |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **protección para agregar** y, a continuación, ver **cifrar con contraseña**.  |
 |Quitar el cifrado de un documento  <br/> |[Agregar o quitar la protección en el documento, libro o presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Elija una sección **quitar protección** y, a continuación, vea **quitar cifrado de contraseña**.  |
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

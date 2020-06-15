@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352090"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717159"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -120,6 +120,11 @@ Para habilitar el cifrado de datos adjuntos PDF, ejecute el siguiente comando en
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+El cifrado de PDF permite proteger documentos PDF confidenciales mediante comunicación segura o colaboración segura. Para todos los clientes de Outlook, los mensajes y los datos adjuntos de PDF no protegidos heredan la protección de OME de la Directiva de prevención de pérdida de datos (DLP) o de la regla de flujo de correo en Exchange Online. Además, si un usuario de Outlook en la web adjunta un documento PDF no protegido y aplica protección a un mensaje, el mensaje hereda la protección del mensaje. Los usuarios solo pueden abrir los datos adjuntos cifrados en aplicaciones que admiten archivos PDF protegidos (por ejemplo, el portal OME y el visor de Azure Information Protection Viewer).
+
+> [!IMPORTANT]
+> El cliente de escritorio de Outlook no admite el cifrado de PDF.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>¿Los datos adjuntos de OneDrive para la empresa son compatibles?
 

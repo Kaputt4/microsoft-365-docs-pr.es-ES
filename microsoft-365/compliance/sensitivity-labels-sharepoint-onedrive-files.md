@@ -17,37 +17,37 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
-ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
+ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604315"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724788"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Antes de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, no puede aplicar las [etiquetas de confidencialidad](sensitivity-labels.md) en Office en la Web. No ve el botón de **confidencialidad** en la cinta o el nombre de etiqueta aplicado en la barra de estado. Además, si usa aplicaciones de escritorio para etiquetar los archivos y guardarlos en SharePoint o en OneDrive, el servicio no puede procesar el contenido de estos archivos si la etiqueta aplicó el cifrado. La coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda y otras características de colaboración no funcionarán en estas circunstancias.
 
 Al habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, todas estas funcionalidades están habilitadas. Además de mostrar las etiquetas de confidencialidad a los usuarios, para los archivos nuevos y modificados que tengan una etiqueta de sensibilidad aplicada que incluya cifrado con una clave basada en la nube:
 
-- SharePoint reconoce las etiquetas de confidencialidad que se aplican a los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive: mientras el archivo está almacenado en SharePoint, se quita el cifrado de Azure Information Protection para que se pueda procesar el contenido del archivo. Para obtener información sobre cómo se protegen los documentos mientras se almacenan en SharePoint, vea [cifrado de datos en OneDrive para la empresa y SharePoint Online](data-encryption-in-odb-and-spo.md).
+- Para los archivos de Word, Excel y PowerPoint, SharePoint reconoce la etiqueta y ahora puede procesar el contenido del archivo cifrado.
 
-- Al descargar o tener acceso a este archivo desde SharePoint o OneDrive, la etiqueta de confidencialidad y la configuración de cifrado de la etiqueta se vuelve a aplicar con el archivo, y esta configuración se mantiene obligatoria siempre que el archivo se guarde. Debido a este comportamiento, asegúrese de proporcionar a los usuarios instrucciones para que solo usen etiquetas para proteger documentos. Para obtener más información, consulte [Opciones de Information Rights Management (IRM) y las etiquetas de confidencialidad](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+- Al descargar o tener acceso a estos archivos desde SharePoint o OneDrive, la etiqueta de confidencialidad y la configuración de cifrado de la etiqueta se aplican y permanecen en el archivo, dondequiera que se almacenen. Asegúrese de proporcionar a los usuarios las instrucciones para que solo usen etiquetas para proteger documentos. Para obtener más información, consulte [Opciones de Information Rights Management (IRM) y las etiquetas de confidencialidad](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
-- Para que SharePoint Quite el cifrado del archivo al cargarlo, el usuario que cargue el archivo cifrado y etiquetado debe tener permisos de uso para al menos ver el archivo. SharePoint no quita el cifrado de los archivos si el usuario no puede abrirlos fuera de SharePoint.
+- Cuando los usuarios cargan archivos cifrados y etiquetados en SharePoint, deben tener, como mínimo, derechos de visualización en esos archivos. Por ejemplo, pueden abrir los archivos fuera de SharePoint. Si no tienen este derecho de uso mínimo, la carga es correcta, pero SharePoint no reconoce la etiqueta y no puede procesar el contenido del archivo.
 
 - Use Office en la web (Word, Excel y PowerPoint) para abrir y editar archivos de Office con etiquetas de distinción que aplican el cifrado. Se aplican los permisos asignados al cifrado. Con Word en la web, también puede usar la etiqueta automática cuando edita estos documentos.
 
 - Los usuarios externos pueden tener acceso a los documentos etiquetados con el cifrado mediante cuentas de invitado. Para obtener más información, consulte [compatibilidad con usuarios externos y con la etiqueta contenido](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos. Las directivas de prevención de pérdida de datos (DLP) cubren el contenido de estos archivos.
+- Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos. Las directivas de prevención de pérdida de datos (DLP) admiten contenido en estos archivos.
 
 > [!NOTE]
 > Si no se ha aplicado el cifrado con una clave basada en la nube, pero con una clave local, una topología de administración de claves a menudo denominada "mantener su propia clave" (HYOK), el comportamiento de SharePoint para procesar el contenido del archivo no cambia.
 >
-> El comportamiento de SharePoint tampoco cambia para los archivos con etiquetas y cifrados existentes en SharePoint. Para que estos archivos se beneficien de las nuevas funciones, deben descargarse y cargarse o editarse después de ejecutar el comando para habilitar las etiquetas de confidencialidad para SharePoint y OneDrive. Por ejemplo, se devolverán en los resultados de búsqueda y exhibición de documentos electrónicos.
+> El comportamiento de SharePoint tampoco cambia para los archivos con etiquetas y cifrados existentes en SharePoint. Para que estos archivos se beneficien de las nuevas funciones, deben descargarse y cargarse o editarse después de ejecutar el comando para habilitar las etiquetas de confidencialidad para SharePoint y OneDrive. A continuación, SharePoint puede procesar estos archivos. Por ejemplo, se devolverán en los resultados de búsqueda y exhibición de documentos electrónicos.
 
 Después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, hay disponibles tres nuevos [eventos de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) para supervisar las etiquetas de confidencialidad que se aplican a los documentos en SharePoint y onedrive:
 - **Etiqueta de confidencialidad aplicada al archivo**
@@ -237,6 +237,6 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 multigeográfico, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que haya habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para obtener más información, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md).
