@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y eDiscovery avanzado v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351921"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761690"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -222,7 +222,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tr>
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
-<td>Ninguno</td>
+<td>None</td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
   <tr class=even>
@@ -289,14 +289,6 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </td>
 </tr>
 <tr class="even">
-<td>Purgar mensajes de un buzón</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p></p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction trabajan conjuntamente para ayudarle a buscar y depurar contenido. Puede crear y ejecutar una búsqueda con los cmdlets <strong>New-compliancesearch</strong> y <strong>New-compliancesearch</strong> y, a continuación, puede purgar el contenido con el comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Buscar y eliminar mensajes</span></a>.</p>
-</td>
-</tr>
-<tr class="odd">
 <td>Eliminar el correo electrónico masivo de un buzón</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurar una directiva de archivo y eliminación para buzones de correo</span></a></p>
 <p></p></td>
@@ -307,6 +299,24 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
 <td> </td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes en la sección <strong>cmdlets *-MailboxSearch</strong> para obtener soluciones alternativas. </td>
+</tr>
+<tr class=odd>
+  <td>Copiar mensajes de un buzón a otro buzón</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
+  <td>Para conceder a una persona acceso al correo electrónico de otro usuario (por ejemplo, cuando un empleado abandona la organización y necesita conceder acceso al correo del antiguo empleado a otra persona), se recomienda asignar los permisos de esa persona para obtener acceso al buzón del antiguo empleado. Por lo tanto, en lugar de copiar los elementos del buzón a otro buzón de usuario o a un buzón compartido, solo tiene que asignar a un usuario permisos para obtener acceso al buzón de origen.</td>
+</tr>
+<tr class=even>
+  <td>Purgar mensajes de un buzón</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p></p></td>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction trabajan conjuntamente para ayudarle a buscar y depurar contenido. Puede crear y ejecutar una búsqueda con los cmdlets <strong>New-compliancesearch</strong> y <strong>New-compliancesearch</strong> y, a continuación, puede purgar el contenido con el comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Buscar y eliminar mensajes</span></a>.</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>Purgar mensajes de un buzón</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Asignar permisos a un buzón</a></td>
+<td>Para purgar mensajes de un buzón de correo, asigne a un administrador permisos para obtener acceso al buzón de correo del empleado. Los mensajes se pueden eliminar y reciclar según sea necesario aprovechando las capacidades de búsqueda y visualización integradas en Outlook.</td>
 </tr>
 </tbody>
 </table>

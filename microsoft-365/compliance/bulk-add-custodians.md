@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Use la herramienta de adición en masa para agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en eDiscovery avanzado.
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432443"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741643"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>Adición de custodios en masa a un caso de eDiscovery avanzado (vista previa)
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Adición de custodios en masa a un caso de eDiscovery avanzado
 
 Para los casos de eDiscovery avanzados que implican un gran número de custodios, puede importar varios custodios a la vez mediante un archivo CSV que contenga toda la información necesaria para agregarlos a un caso.
 

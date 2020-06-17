@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Use el panel de exhibición de documentos electrónicos avanzado para los conjuntos de revisión para analizar rápidamente su corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080130"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741697"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Panel de eDiscovery avanzado para los conjuntos de revisión (versión preliminar)
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Panel de eDiscovery avanzado para los conjuntos de revisión
 
 En algunos casos de eDiscovery avanzado, puede tener un gran volumen de documentos y mensajes de correo electrónico que deben revisarse. Antes de iniciar el proceso de revisión, es posible que quiera analizar rápidamente su corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión. Para ello, puede usar el panel de exhibición de documentos electrónicos avanzado para revisar conjuntos para analizar rápidamente el corpus.
 

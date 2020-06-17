@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: aac4966efca3dabc0edac1ceada96d2238cb266f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400105"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432294"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -35,7 +35,7 @@ ms.locfileid: "44400105"
 > Si su organización usa un entorno híbrido de Exchange, debe usar el Centro de administración de Exchange (EAC) local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
 > Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
-Es fácil crear buzones compartidos de Office 365 para que un grupo de personas pueda supervisar y enviar correos electrónicos desde una dirección de correo electrónico común, como, por ejemplo, info@contoso.com. Cuando un miembro del grupo responde a un mensaje enviado al buzón compartido, parece que el correo electrónico procede del buzón compartido y no de un usuario individual.
+It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
 Los buzones compartidos incluyen un calendario compartido. A una gran cantidad de pequeñas empresas les gusta usar el calendario compartido como un lugar en el que todos los usuarios introduzcan sus citas. Por ejemplo, si tiene 3 personas que realizan visitas de clientes, todos pueden usar el calendario compartido para introducir las citas. Esta es una forma sencilla de mantener a todos informados.
 
@@ -88,9 +88,6 @@ Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado 
 Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de la cuenta de usuario del buzón compartido? ¿O si un atacante obtiene acceso a las credenciales de cuenta de buzón compartido? Esto permitiría a la cuenta de usuario iniciar sesión en el buzón compartido y enviar correo electrónico. Para evitar esto, tiene que bloquear el inicio de sesión de la cuenta que está asociada con el buzón compartido.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 

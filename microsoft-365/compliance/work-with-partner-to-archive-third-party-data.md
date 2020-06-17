@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Su organización puede trabajar con un socio de Microsoft para configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer. Esto le permite archivar datos de orígenes de datos de terceros para poder usar las características de cumplimiento de Microsoft 365 como directivas de retención legal, búsqueda de contenido y retención para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: 0892e0c02e72516b6abc4502eb9777bd824f9073
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943159"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739067"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -49,11 +49,11 @@ En la siguiente ilustración y descripción se explica cómo funciona el proceso
     
 3. El conector del asociado se conecta al servicio de Azure en Microsoft 365 mediante el servicio Web Exchange (EWS) a través de un punto final conocido.
     
-4. Los elementos se importan al buzón de un usuario específico o a un buzón global de datos de terceros. Que un elemento se importe al buzón de un usuario específico o al buzón de datos de terceros depende de los criterios siguientes:
+4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
     
-    a. **Elementos que tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector del asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico en Office 365, el elemento se copia en la carpeta **depuraciones** de la carpeta elementos recuperables del usuario. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de eDiscovery para buscar elementos en la carpeta depuraciones.
+   1. **Elementos que tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector del asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico en Office 365, el elemento se copia en la carpeta **depuraciones** de la carpeta elementos recuperables del usuario. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de eDiscovery para buscar elementos en la carpeta depuraciones.
     
-    b. **Elementos que no tienen un identificador de usuario correspondiente a una cuenta de usuario:** Si el conector del asociado no puede asignar el identificador de usuario de un elemento a un identificador de usuario específico, el elemento se copia en la carpeta **bandeja de entrada** del buzón de datos de terceros. La importación de elementos a la Bandeja de entrada permite que usted u otra persona de la organización inicie sesión en el buzón de correo de terceros para ver y administrar estos elementos, y ver si es necesario realizar ajustes en la configuración del conector asociado.
+   1. **Elementos que no tienen un identificador de usuario correspondiente a una cuenta de usuario:** Si el conector del asociado no puede asignar el identificador de usuario de un elemento a un identificador de usuario específico, el elemento se copia en la carpeta **bandeja de entrada** del buzón de datos de terceros. La importación de elementos a la Bandeja de entrada permite que usted u otra persona de la organización inicie sesión en el buzón de correo de terceros para ver y administrar estos elementos, y ver si es necesario realizar ajustes en la configuración del conector asociado.
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>Paso 1: Buscar un asociado de datos de terceros
 
@@ -159,7 +159,7 @@ En las secciones siguientes se enumeran los socios de Microsoft (y los orígenes
     
 - CipherCloud para Salesforce Chatter
     
-- Servidor de &amp; presencia de mensajería instantánea de Cisco (V10, v 10.5.1 SU1, v 11.0, v 11,5 SU2)
+- Servidor de presencia de mensajería instantánea de Cisco &amp; (V10, v 10.5.1 SU1, v 11.0, v 11,5 SU2)
 
 - Equipos Cisco WebEx
 
@@ -273,7 +273,7 @@ En las secciones siguientes se enumeran los socios de Microsoft (y los orígenes
     
 - Flanco
     
-- Servidor de &amp; presencia de mensajería instantánea de Cisco (v 9.0.1, v 9.1, v 9.1.1 SU1, V10, v 10.5.1 SU1)
+- Servidor de presencia de mensajería instantánea de Cisco &amp; (v 9.0.1, v 9.1, v 9.1.1 SU1, V10, v 10.5.1 SU1)
     
 - Servidor de presencia unificada de Cisco (v8.6.3, v8.6.4, v8.6.5)
     
@@ -521,7 +521,7 @@ El último paso es proporcionar a su compañero la siguiente información para q
   
 - El extremo que se usa para conectarse al servicio de Azure en Office 365:
 
-    ```text
+    ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
@@ -529,7 +529,7 @@ El último paso es proporcionar a su compañero la siguiente información para q
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Paso 5: registrar el conector de datos de terceros en Azure Active Directory
 
-A partir del 30 de septiembre de 2018, el servicio de Azure en Office 365 empezará a usar la autenticación moderna en Exchange Online para autenticar conectores de datos de terceros que intenten conectarse a su organización para importar datos. El motivo de este cambio es que la autenticación moderna proporciona más seguridad que el método actual, que se basaba en conectores de terceros de la lista blanca que usan el punto de conexión descrito anteriormente para conectarse al servicio de Azure.
+A partir del 30 de septiembre de 2018, el servicio de Azure en Office 365 empezará a usar la autenticación moderna en Exchange Online para autenticar conectores de datos de terceros que intenten conectarse a su organización para importar datos. El motivo de este cambio es que la autenticación moderna proporciona más seguridad que el método actual, que se basaba en una lista de permitidos para conectores de terceros que usan el punto de conexión descrito anteriormente para conectarse al servicio de Azure.
 
 Para permitir que un conector de datos de terceros se conecte a Office 365 mediante el nuevo método de autenticación moderna, un administrador de la organización debe dar su consentimiento para registrar el conector como una aplicación de servicio de confianza en Azure Active Directory. Esto se realiza al aceptar una solicitud de permiso para permitir que el conector tenga acceso a los datos de la organización en Azure Active Directory. Después de aceptar esta solicitud, el conector de datos de terceros se agrega como una aplicación de empresa a Azure Active Directory y se representa como una entidad de servicio. Para obtener más información sobre el proceso de consentimiento, consulte [consentimiento de administrador de inquilinos](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
@@ -543,7 +543,7 @@ Estos son los pasos para acceder y aceptar la solicitud para registrar el conect
 
 2. Haga clic en **Aceptar**.
 
-Después de aceptar la solicitud, se muestra el [portal de Azure](https://portal.azure.com) . Para ver la lista de aplicaciones de su organización, haga clic en**aplicaciones empresariales**de **Azure Active Directory** > . El conector de datos de terceros de Office 365 aparece en la hoja **aplicaciones empresariales** .
+Después de aceptar la solicitud, se muestra el [portal de Azure](https://portal.azure.com) . Para ver la lista de aplicaciones de su organización, haga clic en aplicaciones empresariales de **Azure Active Directory**  >  **Enterprise applications**. El conector de datos de terceros de Office 365 aparece en la hoja **aplicaciones empresariales** .
 
 > [!IMPORTANT]
 > Después del 30 de septiembre de 2018, los datos de terceros ya no se importarán en los buzones de la organización si no registra un conector de datos de terceros en Azure Active Directory. Nota los conectores de datos de terceros existentes (los creados antes del 30 de septiembre de 2018) también deben registrarse en Azure Active Directory siguiendo el procedimiento que se indica en el paso 5.
@@ -556,7 +556,7 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
   
 ## <a name="more-information"></a>Más información
 
-- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector del asociado importa el elemento mediante un esquema requerido por la API 365 de Office. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si a un elemento le falta una propiedad obligatoria, no se importará a Office 365. El proceso de importación devuelve un mensaje de error que explica por qué no se ha importado un elemento y qué propiedad falta.
+- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector del asociado importa el elemento mediante un esquema requerido por la API 365 de Office. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si a un elemento le falta una propiedad obligatoria, no se importará a Office 365. El proceso de importación devuelve un mensaje de error que explica por qué no se ha importado un elemento y qué propiedad falta.<br/><br/>
     
     |**Propiedad del mensaje**|**¿Es obligatoria?**|**Descripción**|**Valor de ejemplo**|
     |:-----|:-----|:-----|:-----|
@@ -566,11 +566,11 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     |**OBSOLET** <br/> |Sí  <br/> |La fecha en que el elemento se creó o publicó originalmente en el origen de datos del cliente. Por ejemplo, la fecha en la que se ha enviado un mensaje a Twitter.  <br/> | `01 NOV 2015` <br/> |
     |**CUERPO** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector del asociado intenta mantener la fidelidad total del origen de contenido como sea posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector del asociado y de la capacidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**DATOS adjuntos** <br/> |No  <br/> |Si un elemento del origen de datos (como un Tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **Body** . Si esto no es posible, se agrega a la propiedad * * ATTACHMENT * *. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena con el conector de asociado. El formato de esta propiedad es `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar con `IPM.NOTE`. Este formato es similar al de la `IPM.NOTE.X` clase de mensaje. Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: Indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: Indica el tipo de actividad que se realizó en el origen de datos de terceros que generó los elementos; por ejemplo, un Tweet en Twitter o un post en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena con el conector de asociado. El formato de esta propiedad es `IPM.NOTE.Source.Event` . (Esta propiedad debe comenzar con `IPM.NOTE` . Este formato es similar al de la clase de `IPM.NOTE.X` mensaje. Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: Indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: Indica el tipo de actividad que se realizó en el origen de datos de terceros que generó los elementos; por ejemplo, un Tweet en Twitter o un post en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- Cuando los elementos se importan correctamente a los buzones de Office 365, un identificador único se devuelve al autor de la llamada como parte de la respuesta HTTP. Este identificador, llamado `x-IngestionCorrelationID`, se puede usar para solucionar problemas posteriores de los asociados para el seguimiento de elementos de un extremo a otro. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
+- Cuando los elementos se importan correctamente a los buzones de Office 365, un identificador único se devuelve al autor de la llamada como parte de la respuesta HTTP. Este identificador, llamado `x-IngestionCorrelationID` , se puede usar para solucionar problemas posteriores de los asociados para el seguimiento de elementos de un extremo a otro. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 
-    ```text
+    ```http
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset=utf-8
     Server: Microsoft-IIS/8.5
@@ -582,11 +582,11 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
 
 - Puede usar la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento para buscar los elementos que se importaron a los buzones de un origen de datos de terceros. Para buscar específicamente estos elementos importados, puede usar los siguientes pares de valores y propiedades de mensaje en el cuadro palabra clave para una búsqueda de contenido.
     
-  - **`kind:externaldata`**: Use este par Property-Value para buscar todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron de un origen de datos de terceros y contenían la palabra "Contoso" en la propiedad Subject del elemento importado, usaría la palabra `kind:externaldata AND subject:contoso`clave Query.
+  - **`kind:externaldata`**: Use este par Property-Value para buscar todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron de un origen de datos de terceros y contenían la palabra "Contoso" en la propiedad Subject del elemento importado, usaría la palabra clave Query `kind:externaldata AND subject:contoso` .
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**: Use este par Property-Value solo para buscar un tipo de datos de terceros. Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad Subject, usaría la `itemclass:ipm.externaldata.Facebook* AND subject:contoso`consulta de palabra clave. 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**: Use este par Property-Value solo para buscar un tipo de datos de terceros. Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad Subject, usaría la consulta de palabra clave `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
 
-  Para obtener una lista completa de los valores que se van a usar para los tipos `itemclass` de datos de terceros para la propiedad, consulte [use Content Search to Search a data de terceros importado a Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
+  Para obtener una lista completa de los valores que se van a usar para los tipos de datos de terceros para la `itemclass` propiedad, consulte [use Content Search to Search a data de terceros importado a Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).
     
    Para obtener más información sobre cómo usar la búsqueda de contenido y crear consultas de búsqueda de palabras clave, vea:
     
