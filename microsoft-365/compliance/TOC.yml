@@ -2,6 +2,8 @@
   href: index.yml
 - name: Introducción
   items:
+    - name: Tareas rápidas para empezar a usar el cumplimiento normativo
+      href: compliance-quick-tasks.md
     - name: Novedades del centro de cumplimiento
       href: whats-new.md
     - name: Actualizaciones recientes de contenido de cumplimiento
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Cifrado de servicio de Office 365
       href: office-365-service-encryption.md
+    - name: Información de referencia técnica sobre el cifrado en Office 365
+      href: technical-reference-details-about-encryption.md
     - name: Clave de cliente
       items:
         - name: Cifrado de servicio con Clave de cliente de Office 365
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: Información de referencia técnica sobre el cifrado en Office 365
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker y Administrador de claves distribuidas (DKM) para el cifrado
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: OME heredado
@@ -533,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Revisar los datos de casos
           items:
-            - name: Usar el panel de conjunto de revisión (versión preliminar)
+            - name: Usar el panel de conjunto de revisión
               href: advanced-ediscovery-dashboard.md
             - name: Ver documentos de un conjunto de revisión
               href: view-documents-in-review-set.md
