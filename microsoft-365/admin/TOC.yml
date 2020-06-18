@@ -22,14 +22,14 @@
               href: setup/setup-apps-for-business.md
         - name: Explorar la página y el Asistente de configuración
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Migrar los datos
-          href: setup/migrate-email-and-contacts-admin.md
         - name: Instalar aplicaciones de Office
           href: setup/install-applications.md
         - name: Configurar dispositivos Windows
           href: ../business/set-up-windows-devices.md
         - name: Configurar dispositivos móviles
           href: ../business/set-up-mobile-devices.md
+        - name: Migrar los datos a Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: Implementar Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Aplicaciones de aprendizaje para todos
@@ -117,6 +117,8 @@
               href: add-users/resend-user-password.md
             - name: Crear plantilla para agregar usuarios
               href: add-users/create-and-use-a-template-to-add-users.md
+            - name: Actualizar usuarios a las últimas aplicaciones
+              href: setup/upgrade-users-to-latest-office-client.md
         - name: Grupos
           items:
             - name: Introducción a grupos
@@ -154,6 +156,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: Usar un dominio personalizado
           href: email/change-email-address.md
+        - name: Migrar correo y contactos a Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: Crear firmas y avisos de declinación de responsabilidades
           href: setup/create-signatures-and-disclaimers.md
         - name: 'Crear, editar o eliminar un grupo de seguridad'
@@ -204,8 +208,6 @@
     - name: Administrar los datos y servicios
       href: manage/index.yml
       items:
-        - name: Actualizar la organización a las últimas aplicaciones
-          href: setup/upgrade-users-to-latest-office-client.md
         - name: Supervisar la actividad de los usuarios mediante informes
           href: activity-reports/activity-reports.md
         - name: Cambiar la información de contacto de la organización
@@ -313,15 +315,15 @@
     - name: Trabajar con clientes
       href: work-with-customers/index.yml
       items:
-        - name: Compartir archivos y sitios de forma externa
+        - name: Compartir archivos y sitios con usuarios invitados
           href: manage/share-sites-with-external-users.md
         - name: Compartir calendarios con usuarios invitados
           href: manage/share-calendars-with-external-users.md
-        - name: Crear un equipo con invitados
+        - name: Crear un equipo con usuarios invitados
           href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: Programar una reunión de Teams con invitados
+        - name: Programar una reunión de Teams con usuarios invitados
           href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
-        - name: Unirse a una reunión de Teams con invitados
+        - name: Unirse a una reunión de Teams con usuarios invitados
           href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
     - name: Solucionar problemas
       href: 'https://docs.microsoft.com/office/troubleshoot/'
