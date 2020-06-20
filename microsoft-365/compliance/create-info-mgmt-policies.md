@@ -19,13 +19,15 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
-ms.openlocfilehash: eabbd2d6292de621b4c8e14d6d491f27b8fb24f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo configurar una directiva de administración de la información para controlar el tiempo que se conserva la información y el seguimiento de la utilización de la información.
+ms.openlocfilehash: 2519f039e7495d01a828aee564ce1a6caf41342d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077527"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817999"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
@@ -46,15 +48,15 @@ Para obtener más información, vea [Introducción a las directivas de administr
 
 Para asegurarse de que se aplica una directiva de información a todos los documentos de un tipo determinado dentro de una colección de sitios, considere la posibilidad de crear la Directiva en el nivel de colección de sitios y, posteriormente, aplicar la Directiva a los tipos de contenido. Se denominan directivas de colección de sitios. 
   
-1. En \> **la Página principal**de la colección de sitios, en el botón configuración de![SharePoint 2016 de la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la Página principal de la colección de sitios, en el \> **Settings** ![ botón configuración de SharePoint 2016 de la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
-2. En la página Configuración del sitio, en **plantillas de directiva de tipo de contenido**de administración \> de la colección de **sitios** . 
+2. En la página Configuración del sitio, en plantillas de directiva de tipo de contenido de administración de la colección de **sitios** \> **Content Type Policy Templates**. 
   
 ![Vínculo de plantilla de directiva de tipo de contenido en la página Configuración del sitio](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. En la página \> directivas, **cree**. 
+3. En la página directivas, \> **cree**. 
     
 4. Escriba un nombre y una descripción para la Directiva y, a continuación, escriba una breve declaración de directiva que explique a los usuarios para qué sirve la Directiva.
     
@@ -69,17 +71,17 @@ Agregar una directiva de administración de información a un tipo de contenido 
   
  También puede Agregar una directiva de administración de información a un tipo de contenido específico de las listas. Esto tiene el efecto de aplicar la Directiva solo a los elementos de la lista que usan el tipo de contenido. 
   
-1. En \> **la Página principal**de la colección de sitios, en el botón configuración de![SharePoint 2016 de la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la Página principal de la colección de sitios, en el \> **Settings** ![ botón configuración de SharePoint 2016 de la barra de título.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
-2. En la página Configuración del sitio, en **tipos de contenido de sitio**de galerías \> del **Diseñador Web** .
+2. En la página Configuración del sitio, en tipos de contenido de sitio de **galerías del diseñador web** \> **Site content types**.
   
 ![Vínculo tipos de contenido de sitio de la página Configuración del sitio](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. En la página Configuración del tipo de contenido de sitio, seleccione el tipo de contenido al que desea agregar una directiva.
     
-4. En la página tipo de contenido de sitio **, en** \> configuración de la **Directiva de administración de información**.
+4. En la página tipo de contenido de sitio **, en configuración** de la \> **Directiva de administración de información**.
     
 5. En la página Editar Directiva, escriba un nombre y una descripción para la Directiva y, a continuación, escriba una descripción breve que explique a los usuarios para qué sirve la Directiva.
     
@@ -114,7 +116,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
     Para habilitar los códigos de barras
     
-||||||1. * * * *|**En la página Editar Directiva, en **códigos de barras** \> , **habilite códigos de barras**.**|
+||||||1. * * * *|**En la página Editar Directiva, en **códigos de barras** , \> **habilite códigos de barras**.**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |Para solicitar a los usuarios que inserten estos códigos de barras en documentos, elija **solicitar a los usuarios que inserten un código de barras antes de guardar o imprimir**.  <br/> |
 ||||||**3.** <br/> |Elija **Aceptar** para aplicar la característica de código de barras a la Directiva.  <br/> |
@@ -128,7 +130,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
 ||||||**1.**|* * Para requerir que los usuarios agreguen una etiqueta a un documento, elija **solicitar a los usuarios que inserten una etiqueta antes de guardar o imprimir**.  <br/> > [!NOTE]> si desea que las etiquetas sean opcionales, no active esta casilla de verificación.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> |Para bloquear una etiqueta para que no se pueda cambiar una vez insertada, elija **impedir cambios en las etiquetas después**de que se hayan agregado.  <br/>  Esta opción impide que el texto de la etiqueta se actualice una vez que la etiqueta se haya insertado en un elemento dentro de una aplicación cliente como Word, Excel o PowerPoint. Si desea que la etiqueta se actualice cuando se actualicen las propiedades del documento o elemento, no active esta casilla de verificación.  <br/> |
-||||||3.  <br/> |En el cuadro formato de etiqueta, escriba el texto de la etiqueta tal como desea que se muestre. Las etiquetas pueden contener hasta 10 referencias de columna, cada una de las cuales puede tener una longitud de hasta 255 caracteres. Para crear el formato de la etiqueta, haga lo siguiente:  <br/> Escriba los nombres de las columnas que desea incluir en la etiqueta en el orden en que desea que aparezcan. Escriba los nombres de columna entre llaves ({}), como se muestra en el ejemplo de la página Editar Directiva.  <br/> Escriba palabras para identificar las columnas fuera de los corchetes, como se muestra en el ejemplo de la página Editar Directiva.  <br/> |
+||||||3.  <br/> |En el cuadro formato de etiqueta, escriba el texto de la etiqueta tal como desea que se muestre. Las etiquetas pueden contener hasta 10 referencias de columna, cada una de las cuales puede tener una longitud de hasta 255 caracteres. Para crear el formato de la etiqueta, haga lo siguiente:  <br/> Escriba los nombres de las columnas que desea incluir en la etiqueta en el orden en que desea que aparezcan. Escriba los nombres de columna entre llaves ( {} ), como se muestra en el ejemplo de la página Editar Directiva.  <br/> Escriba palabras para identificar las columnas fuera de los corchetes, como se muestra en el ejemplo de la página Editar Directiva.  <br/> |
 ||||||4.  <br/> |Para agregar un salto de línea, escriba **\n** donde desea que aparezca el salto de línea.  <br/> |
 ||||||5.  <br/> |Seleccione el tamaño de fuente y el estilo que desee y especifique si desea que la etiqueta esté situada a la izquierda, a la derecha o en el centro del documento.  <br/>  Seleccione una fuente y un estilo que estén disponibles en los equipos de los usuarios. El tamaño de la fuente afecta a la cantidad de texto que puede mostrarse en la etiqueta.  <br/> |
 ||||||6.  <br/> |Escriba el alto y el ancho de la etiqueta. El alto de la etiqueta puede variar de 0,25 a 20 pulgadas ((0,63 cm. y 50,8 cm. respectivamente) y el ancho de la etiqueta puede variar de 0,.25 a 20 pulgadas (0,63 cm. y 50,8 cm. respectivamente). El texto de la etiqueta siempre se centra verticalmente en la imagen de la etiqueta.  <br/> |
@@ -155,7 +157,7 @@ Necesita al menos el permiso administrar listas para cambiar la configuración d
   
 1. Desplácese a la lista o biblioteca para la que desea especificar una directiva de administración de información. 
     
-2. En la cinta de opciones, **Elija la biblioteca** o \> **la configuración de**la **biblioteca** de fichas de **lista** o de lista.
+2. En la cinta de opciones, **Elija la biblioteca** o la configuración de la biblioteca de fichas de **lista** o de lista \> **Library Settings** . **List Settings**
     
     En SharePoint Online, haga clic en **configuración** y, a continuación, haga clic en **configuración de lista** o **configuración de biblioteca**. 
     
@@ -202,7 +204,7 @@ Si ya se han creado directivas de administración de la información para su sit
   
 1. Navegue hasta la lista o biblioteca que contiene el tipo de contenido al que desea aplicar una directiva.
     
-2. En la cinta de opciones, **Elija la biblioteca** o \> **la configuración de**la **biblioteca** de fichas de **lista** o de lista.
+2. En la cinta de opciones, **Elija la biblioteca** o la configuración de la biblioteca de fichas de **lista** o de lista \> **Library Settings** . **List Settings**
     
     En SharePoint Online, haga clic en **configuración** y, a continuación, haga clic en **configuración de lista** o **configuración de biblioteca**. 
     
@@ -237,11 +239,11 @@ Puede definir una directiva de administración de la información y, a continuac
 ### <a name="export-a-policy"></a>Exportar una directiva
 <a name="__toc260646790"> </a>
 
-1. En la Página principal de la colección de sitios, elija **configuración**![pequeña de engranaje que ha tomado la configuración del sitio. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sitio.** \>
+1. En la Página principal de la colección de sitios, elija **configuración** ![ Small Adapter que haya tomado la configuración del sitio. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
-2. En la página Configuración del sitio, en **plantillas de directiva de tipo de contenido**de administración \> de la colección de **sitios** . 
+2. En la página Configuración del sitio, en plantillas de directiva de tipo de contenido de administración de la colección de **sitios** \> **Content Type Policy Templates**. 
   
 ![Vínculo de plantilla de directiva de tipo de contenido en la página Configuración del sitio](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
@@ -256,17 +258,17 @@ Puede definir una directiva de administración de la información y, a continuac
 
 La importación de una directiva de administración de la información permite aplicarla a varios tipos de contenido en el nivel de sitio o de lista dentro de una colección de sitios determinada. Las ventajas de hacerlo son dobles: no es necesario volver a definir y aplicar la Directiva en cada tipo de contenido, y se pueden administrar con mayor facilidad las modificaciones de la Directiva realizando cambios en la Directiva en un solo punto.
   
-1. En la Página principal de la colección de sitios a la que desea aplicar la Directiva, elija **configuración**![de pequeña configuración de engranaje que requería el lugar de configuración del sitio. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sitio.** \>
+1. En la Página principal de la colección de sitios a la que desea aplicar la Directiva, elija **configuración** ![ Small Settings Gear que requería el lugar de configuración del sitio. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
-2. En la página Configuración del sitio, en **plantillas de directiva de tipo de contenido**de administración \> de la colección de **sitios** .
+2. En la página Configuración del sitio, en plantillas de directiva de tipo de contenido de administración de la colección de **sitios** \> **Content Type Policy Templates**.
     
-3. En la página \> directivas, vaya a **importar** \> **examinar** para buscar el archivo XML de la Directiva. 
+3. En la página directivas, \> **Import** \> **vaya** a importar examinar para buscar el archivo XML de la Directiva. 
     
-4. Seleccione el archivo XML en el que se ha guardado \> la directiva **abierta**. 
+4. Seleccione el archivo XML en el que se ha guardado la directiva \> **abierta**. 
     
-5. En la página \> importar una directiva de colección de sitios, **importación** para agregar la Directiva a la colección de sitios. 
+5. En la página importar una directiva de colección de sitios, \> **importación** para agregar la Directiva a la colección de sitios. 
     
 La Directiva importada ahora puede aplicarse a uno o varios tipos de contenido en el nivel de sitio o de lista. 
   

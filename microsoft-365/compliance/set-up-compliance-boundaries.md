@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Use límites de cumplimiento para crear límites lógicos dentro de una organización que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que puede buscar un administrador de exhibición de documentos electrónicos en Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262573"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819210"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de eDiscovery
 
@@ -264,11 +265,11 @@ El administrador de eDiscovery puede agregar parámetros a la consulta de búsqu
   
  **¿Qué sucede si se cambia el valor del atributo que se usa como atributo de cumplimiento en un filtro de permisos de búsqueda?**
   
-Un filtro de permisos de búsqueda tarda hasta tres días en aplicar el límite de cumplimiento si se cambia el valor del atributo que se usa en el filtro. Por ejemplo, en el escenario de Contoso, supongamos que un usuario de la Agencia de la Fourth Coffee se transfiere a la Agencia de bodega Coho. Como resultado, el valor del atributo **Department** del objeto de usuario se cambia de *fourthcoffee* a *CohoWinery*. En esta situación, la exhibición de documentos electrónicos y los inversores de Fourth Coffee obtendrán resultados de búsqueda para ese usuario durante un máximo de tres días a partir de la modificación del atributo. De forma similar, tarda hasta tres días antes de que los profesionales de eDiscovery y los investigadores de Coho Winery obtengan resultados de búsqueda para el usuario. 
+Un filtro de permisos de búsqueda tarda hasta tres días en aplicar el límite de cumplimiento si se cambia el valor del atributo que se usa en el filtro. Por ejemplo, en el escenario de Contoso, supongamos que un usuario de la Agencia de la Fourth Coffee se transfiere a la Agencia de bodega Coho. Como resultado, el valor del atributo **Department** del objeto de usuario se cambia de *fourthcoffee* a *CohoWinery*. En esta situación, la exhibición de documentos electrónicos y los inversores de Fourth Coffee obtendrán resultados de búsqueda para ese usuario durante un máximo de tres días a partir de la modificación del atributo. De forma similar, tarda hasta tres días antes de que los profesionales de eDiscovery y los investigadores de Coho Winery obtengan resultados de búsqueda para el usuario.
   
  **¿Puede un administrador de exhibición de documentos electrónicos ver contenido de dos límites de cumplimiento independientes?**
   
-Sí. Esto puede hacerse agregando el usuario a los grupos de roles que tienen visibilidad en ambas agencias.
+Sí, esto se puede hacer al buscar buzones de correo de Exchange agregando el administrador de eDiscovery a los grupos de roles que tienen visibilidad para ambas agencias. Sin embargo, al buscar en los sitios de SharePoint y en las cuentas de OneDrive, el administrador de eDiscovery puede buscar contenido en diferentes límites de cumplimiento solo si las agencias están en la misma región o ubicación geográfica. **Nota:** Esta limitación para los sitios no se aplica en la exhibición avanzada de documentos electrónicos porque la búsqueda de contenido en SharePoint y OneDrive no depende de la ubicación geográfica.
   
  **¿Funcionan los filtros de permisos de búsqueda en las suspensiones de casos de eDiscovery, las directivas de retención de Microsoft 365 o DLP?**
   

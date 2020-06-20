@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Configure un conector para importar datos de Facebook a Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención.
-ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: Aprenda a configurar & usar un conector en el centro de cumplimiento de Microsoft 365 para importar & datos de archivo de las páginas de empresa de Facebook a Microsoft 365.
+ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210552"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818469"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurar un conector para archivar datos de Facebook (versión preliminar)
 

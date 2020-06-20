@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Para identificar información confidencial, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave ofrecen una administración más sencilla de palabras clave y con una escala mucho mayor, admitiendo hasta 100 000 términos por diccionario.
-ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el centro de seguridad & cumplimiento de Office 365.
+ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636468"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818059"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -29,9 +31,9 @@ La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteg
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
-Las palabras clave del diccionario pueden provenir de una amplia variedad de orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt), importadas en el servicio o por el cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
+The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. Use el **centro de seguridad & cumplimiento** ([https://protection.office.com](https://protection.office.com)) o conéctese a **PowerShell del centro de &amp; seguridad y cumplimiento**.
+1. Use el **centro de seguridad & cumplimiento** ( [https://protection.office.com](https://protection.office.com) ) o conéctese a **PowerShell del centro de seguridad y &amp; cumplimiento**.
     
 2. **Defina o cargue las palabras clave del origen deseado**. El asistente y el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de la procedencia de las palabras clave. Una vez cargadas, se codificarán y convertirán en una matriz de bytes antes de su importación.
     
@@ -41,7 +43,7 @@ Las palabras clave del diccionario pueden provenir de una amplia variedad de or�
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)().
+1. Conéctese al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ).
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 
@@ -67,11 +69,11 @@ Siga estos pasos para crear e importar palabras clave para un diccionario person
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Crear un diccionario de palabras clave desde un archivo con PowerShell
 
-A menudo, cuando es necesario crear un diccionario de gran tamaño, se usan palabras clave de un archivo o una lista exportada desde otro origen. En este caso, creará un diccionario de palabras clave que contiene una lista de idiomas inapropiados para filtrar el correo electrónico externo. Primero debe [conectarse a PowerShell del &amp; centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copie las palabras clave en un archivo de texto y asegúrese de que cada palabra clave se encuentre en una línea separada.
     
-2. Guarde el archivo de texto con codificación Unicode. En el Bloc de notas \> **Guardar como** \> **Codificación** \> **Unicode**.
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
     
 3. Para leer el archivo en una variable, ejecute este cmdlet:
     
@@ -97,19 +99,19 @@ En primer lugar, recupere el objeto de diccionario:
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-La `$dict` impresión mostrará las distintas variables. Las palabras clave en sí se almacenan en un objeto en el `$dict.KeywordDictionary` back-end, pero contienen una representación de cadena de ellas que usará para modificar el diccionario. 
+La impresión mostrará `$dict` las distintas variables. Las palabras clave en sí se almacenan en un objeto en el back-end, pero `$dict.KeywordDictionary` contienen una representación de cadena de ellas que usará para modificar el diccionario. 
 
-Antes de modificar el diccionario, debe volver a convertir la cadena de términos en una matriz con el `.split(',')` método. A continuación, limpiará los espacios no deseados entre las palabras clave con `.trim()` el método, dejando solo las palabras clave con las que trabajar. 
+Antes de modificar el diccionario, debe volver a convertir la cadena de términos en una matriz con el `.split(',')` método. A continuación, limpiará los espacios no deseados entre las palabras clave con el `.trim()` método, dejando solo las palabras clave con las que trabajar. 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-Ahora, quitará algunos términos del diccionario. Como el diccionario de ejemplo solo tiene unas pocas palabras clave, podría exportar fácilmente el diccionario y editarlo en el Bloc de notas, pero los diccionarios suelen contener una gran cantidad de texto, por lo que primero aprenderá esta forma de editarlos fácilmente en PowerShell.
+Now you'll remove some terms from the dictionary. Because the example dictionary has only a few keywords, you could just as easily skip to exporting the dictionary and editing it in Notepad, but dictionaries generally contain a large amount of text, so you'll first learn this way to edit them easily in PowerShell.
   
-En el último paso, guardó las palabras clave en una matriz. Hay varias formas de [quitar elementos de una matriz](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), pero un método sencillo es crear una matriz de los términos que quiera quitar del diccionario y, después, copiar en este solo los términos que no se encuentren en la lista de términos que quiera quitar.
+In the last step, you saved the keywords to an array. There are several ways to [remove items from an array](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), but as a straightforward approach, you'll create an array of the terms you want to remove from the dictionary, and then copy only the dictionary terms to it that aren't in the list of terms to remove.
   
-Ejecute el comando `$terms` para mostrar la lista de términos actual. El resultado del comando tiene este aspecto: 
+Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
   
 `aarskog's syndrome`
 `abandonment`
@@ -142,7 +144,7 @@ Ejecute este comando para quitar los términos de la lista:
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
-Ejecute el comando `$updatedTerms` para mostrar la lista actualizada de términos. El resultado del comando será parecido a este (se quitaron los términos especificados): 
+Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
   
 `aarskog's syndrome`
 `abasia`
@@ -170,13 +172,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-Ahora, simplemente abra el archivo, agregue los términos adicionales y guárdelo con codificación Unicode (UTF-16). Ahora, cargará los términos actualizados y actualizará el diccionario en contexto.
+Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-Ahora, el diccionario se actualizó en contexto. Tenga en cuenta que el campo `Identity` recibe el nombre del diccionario. Si también quiere cambiar el nombre del diccionario con el cmdlet `set-`, necesita agregar el parámetro `-Name` a los comandos anteriores con el nuevo nombre de diccionario. 
+Now the dictionary has been updated in place. Note that the  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 
@@ -208,7 +210,7 @@ El resultado del comando tiene este aspecto:
 `ObjectState       : Unchanged`
 
 
-Pegue la identidad en el archivo XML del tipo de información confidencial personalizado y cárguelo. Ahora, el diccionario aparecerá en la lista de tipos de información confidencial y puede usarlo en la directiva (para hacerlo, especifique el número de palabras clave que tienen que coincidir).
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
