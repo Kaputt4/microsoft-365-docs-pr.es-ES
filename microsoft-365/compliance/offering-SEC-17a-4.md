@@ -1,7 +1,7 @@
 ---
 title: Commission Securities and Exchange Commission (SEC) Rule 17a-4 (f) Estados Unidos
 description: Una empresa de evaluación independiente ha validado que Azure y Office 365 pueden ayudar a las empresas financieras a cumplir con las reglas de la SEC 17a-4 (f) retención de registros y los requisitos de almacenamiento inmutables.
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3169a1e9e7cb8b269e74463adaee017b8f48e4ad
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 89456de1ec4ef170d85d7bd9c6b210d8bdb39f28
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065945"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773731"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Commission Securities and Exchange Commission (SEC) Rule 17a-4 (f) Estados Unidos
 
@@ -40,7 +40,7 @@ El almacenamiento de blobs inmutable de Microsoft Azure con bloqueo de directiva
 Para evaluar el cumplimiento de Azure y Office 365 con la regla SEC 17a-4 (f), Microsoft reservó una empresa de evaluación independiente que se especializa en la administración de registros y el gobierno de la información, Cohasset Associates. En el informe resultante para:
 
 - **Azure**: [SEC 17a-4 (f) Compliance Assessment: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validó que [Azure inmutable Storage BLOB](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) con la opción de bloqueo de Directiva, cuando se usa para conservar blobs basados en tiempo en un formato de no reescritura y no regrabable (Worm), cumple los requisitos de almacenamiento inmutables de la regla de la SEC. Cada BLOB (registro) está protegido contra modificaciones, sobrescritos o eliminaciones hasta que haya expirado el período de retención requerido y se hayan lanzado todas las retenciones legales asociadas. Los proveedores de software y los asociados con cargas de trabajo confidenciales ahora pueden confiar en Azure inmutable BLOB Storage como una solución de nube de OneStop-Shop para la retención de registros y el almacenamiento inmutable. Las instituciones financieras ahora pueden crear sus propias aplicaciones aprovechando estas características a la vez que cumplen con los requisitos restantes.
-- **Office 365**: [usar Exchange Online para cumplir con la norma SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validó [que Office 365 con bloqueo de preservación](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de bolsa, almacenar datos de manera que les ayuden a cumplir con los requisitos de la SEC para la retención de registros. Las directivas de retención en Office 365 ayudan a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
+- **Office 365**: [usar Exchange Online para cumplir con la norma SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validó [que Office 365 con bloqueo de preservación](retention-policies.md) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de bolsa, almacenar datos de manera que les ayuden a cumplir con los requisitos de la SEC para la retención de registros. Las directivas de retención en Office 365 ayudan a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
@@ -80,4 +80,4 @@ Use introducciones de casos, tutoriales y otros recursos para crear soluciones d
 - [Herramienta de evaluación de riesgos en la nube para servicios financieros de Azure](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Directivas de retención de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog de servicios financieros de Microsoft](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Cumplimiento en el centro de confianza de Microsoft ](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

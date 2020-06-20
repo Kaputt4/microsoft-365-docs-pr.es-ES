@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429195"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818079"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento de Microsoft (vista previa)
 
 > [!IMPORTANT]
 > Las recomendaciones de la puntuación de cumplimiento y del Administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de cliente según su entorno de reglamentación. Estos servicios están actualmente en versión preliminar y están sujetos a los términos y condiciones de los [términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también la [Guía de licencias de Microsoft 365 por seguridad y cumplimiento normativo](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="overview"></a>Visión general
+## <a name="how-compliance-score-works"></a>Cómo funciona la puntuación de cumplimiento
 
 El panel de calificaciones de cumplimiento muestra una puntuación que mide su progreso en completar acciones de mejora dentro de los controles. Los puntos se acumulan cuando se realizan acciones.
 

@@ -15,13 +15,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Con los informes de DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas de DLP, invalidaciones o falsos positivos; ver si las tendencias están arriba o abajo con el tiempo; filtrar el informe de diferentes formas; y ver detalles adicionales seleccionando un punto en una línea del gráfico.
-ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: Use los informes DLP en Office 365 para ver el número de coincidencias de directivas de DLP, invalidaciones o falsos positivos y ver si las tendencias están arriba o abajo con el tiempo.
+ms.openlocfilehash: 1ddcd60dc9314779ade2f7ceae02d336f902e483
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626296"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819000"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -57,7 +58,7 @@ Después de crear las directivas de prevención de pérdida de datos (DLP), quer
     
 Todos los informes de DLP pueden mostrar datos del período de tiempo de cuatro meses más reciente. Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
   
-Puede encontrar estos informes en el **Panel**de &amp; \> **informes** \> del centro de cumplimiento de seguridad.
+Puede encontrar estos informes en el panel de &amp; informes del centro de cumplimiento de seguridad \> **Reports** \> **Dashboard**.
   
 ![Informe de coincidencias de directivas de DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -87,11 +88,11 @@ Para ver los informes de DLP en el centro de seguridad & cumplimiento, debe tene
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectarse al centro de &amp; seguridad y cumplimiento con PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al centro de seguridad y &amp; cumplimiento con PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Usar cualquiera de estos [cmdlets del centro de &amp; cumplimiento de seguridad](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Usar cualquiera de estos [ &amp; cmdlets del centro de cumplimiento de seguridad](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
-Sin embargo, los informes de DLP necesitan extraer datos de todo Office 365, incluido Exchange Online. Por este motivo, los cmdlets para los informes de DLP están disponibles en Exchange Online PowerShell, no en &amp; PowerShell del centro de seguridad y cumplimiento. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
+Sin embargo, los informes de DLP necesitan extraer datos de todo Office 365, incluido Exchange Online. Por este motivo, los cmdlets para los informes de DLP están disponibles en Exchange Online PowerShell, no en PowerShell del centro de seguridad y &amp; cumplimiento. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
 1. [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     

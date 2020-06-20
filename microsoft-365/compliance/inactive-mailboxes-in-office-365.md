@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: Obtenga información sobre cómo conservar el contenido de los buzones de correo para los antiguos empleados al convertir el buzón en un buzón inactivo. Para ello, puede colocar el buzón en retención por juicio o aplicar una directiva de retención de Microsoft 365 al buzón y, a continuación, quitar la cuenta de Microsoft 365 correspondiente.
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo conservar el contenido de los buzones de correo de los antiguos empleados convirtiendo el buzón en un buzón inactivo.
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679054"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817579"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Información general sobre buzones inactivos
 

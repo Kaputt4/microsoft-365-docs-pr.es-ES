@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contengan datos confidenciales en todo el espacio empresarial. Una vez detectados los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a formar una consulta para buscar datos confidenciales.
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: Use la prevención de pérdida de datos (DLP) en SharePoint Online para detectar documentos que contengan datos confidenciales en todo el espacio empresarial.
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327918"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817709"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 
@@ -33,7 +33,7 @@ Los usuarios suelen almacenar datos confidenciales, como números de tarjetas de
   
 ## <a name="forming-a-basic-dlp-query"></a>Formación de una consulta básica de DLP
 
-Una consulta básica de DLP está formada por tres partes: SensitiveType, intervalo de recuento e intervalo de confianza. Tal y como se muestra en el siguiente gráfico, se requiere **SensitiveType: " \< Type \> "** y tanto el** | \< intervalo \> de recuento** como el** | \< intervalo \> de confianza** son opcionales. 
+Una consulta básica de DLP está formada por tres partes: SensitiveType, intervalo de recuento e intervalo de confianza. Como se muestra en el siguiente gráfico, se requiere **SensitiveType: " \<type\> "** y ambos **|\<count range\>** y **|\<confidence range\>** son opcionales. 
   
 ![Consulta de ejemplo dividida entre obligatorio y opcional](../media/DLP-query-example-text.png)
   
@@ -88,7 +88,7 @@ No todas las consultas son iguales. En la siguiente tabla, se proporcionan ejemp
    
 ## <a name="for-more-information"></a>Más información
 
-- [Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Ejecutar una búsqueda de contenido](content-search.md)
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
   

@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta avanzada de administración de custodios de eDiscovery para acceder fácilmente a la actividad y buscar en los custodios en su caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034302"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819050"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver actividad de auditoría de custodios
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? EDiscovery avanzado ya está integrado con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de administración de custodios de eDiscovery avanzada para facilitar su investigación al acceder fácilmente y buscar en la actividad para los custodios en su caso.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="get-permissions"></a>Obtener permisos
 
 Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de eDiscovery avanzado con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulteAdministrar grupos de roles en Exchange en línea.
 

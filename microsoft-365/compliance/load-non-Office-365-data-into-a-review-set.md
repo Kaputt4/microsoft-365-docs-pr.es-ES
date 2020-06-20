@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo importar datos que no son de Microsoft 365 a un conjunto de revisión para su análisis en un caso de exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034428"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815467"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
 
 No todos los documentos que debe analizar en eDiscovery avanzado se encuentran en Microsoft 365. Con la característica de importación de datos que no es de Microsoft 365 en eDiscovery avanzado, puede cargar documentos que no se encuentran en Microsoft 365 a un conjunto de revisión. En este artículo se muestra cómo traer documentos que no son de Microsoft 365 en eDiscovery avanzado para su análisis.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="requirements-to-upload-non-office-365-content"></a>Requisitos para cargar contenido no de Office 365
 
 El uso de la característica de carga que no es de Microsoft 365 que se describe en este artículo requiere lo siguiente:
 

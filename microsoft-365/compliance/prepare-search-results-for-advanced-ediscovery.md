@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento para un mayor análisis con la herramienta eDiscovery avanzado.
-ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c0f1540e9745351269e019ea95399ce5c636d8b3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412849"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818769"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Preparar los resultados de búsqueda para eDiscovery avanzado (clásico)
 
@@ -51,7 +52,7 @@ Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibic
     
 - **Exportar datos para las aplicaciones de revisión** : puede exportar datos de la exhibición de documentos electrónicos avanzada y de Microsoft 365 después de completar el análisis y reducir el conjunto de datos. El paquete de exportación incluye un archivo CSV que contiene las propiedades de los metadatos de contenido y análisis exportados. Este paquete de exportación se puede importar a una aplicación de revisión de eDiscovery. 
     
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="get-licenses-and-permissions"></a>Obtener licencias y permisos
 
 - Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
     
@@ -98,7 +99,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 2. Haga clic en **abrir** junto al caso en el que desea cargar datos en la exhibición avanzada de documentos electrónicos. 
     
-3. En la página **principal** del caso, haga clic en **cambiar a exhibición avanzada**de documentos electrónicos. 
+3. En la **Página principal** del caso, haga clic en **Cambiar a eDiscovery avanzado**. 
     
     ![Haga clic en cambiar a exhibición avanzada de documentos electrónicos para abrir el caso en eDiscovery avanzado.](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -110,7 +111,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información acerca del uso de la exhibición avanzada de documentos electrónicos, vea [Advanced eDiscovery (Classic)](office-365-advanced-ediscovery.md).
   

@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: Obtenga información sobre cómo ejecutar un informe para el proceso seleccionado y, a continuación, descargar el archivo. csv en la exhibición avanzada de documentos electrónicos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034594"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818920"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>Ejecutar informes en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En este tema se describe cómo ejecutar informes en la exhibición avanzada de documentos electrónicos.
   
@@ -43,6 +43,6 @@ Puede descargar un archivo. csv con un informe para el proceso seleccionado.
     
 3. Haga clic en **Descargar CSV**. El informe solicitado se genera y se descarga.
     
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)

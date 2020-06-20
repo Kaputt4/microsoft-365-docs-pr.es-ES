@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Su organización puede trabajar con un socio de Microsoft para configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer. Esto le permite archivar datos de orígenes de datos de terceros para poder usar las características de cumplimiento de Microsoft 365 como directivas de retención legal, búsqueda de contenido y retención para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer.
+ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739067"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817045"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 

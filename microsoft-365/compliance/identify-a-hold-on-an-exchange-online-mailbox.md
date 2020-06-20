@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: Obtenga información sobre cómo identificar los diferentes tipos de retenciones que se pueden colocar en un buzón de correo de Microsoft 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Microsoft 365. También puede determinar si un usuario se ha excluido de una directiva de retención para toda la organización.
-ms.openlocfilehash: 331fd37f48e42666ceb33a2a751b7d7a7a945e4b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo identificar los diferentes tipos de retenciones que se pueden colocar en un buzón de correo de Exchange online en Microsoft 365.
+ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352319"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817609"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -201,7 +203,7 @@ Para quitar la retención por retraso antes de que expire, puede ejecutar uno (o
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien
+O bien:
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -215,7 +217,7 @@ Para quitar la retención retrasada en un buzón inactivo, ejecute uno de los si
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien
+O bien:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -232,13 +234,13 @@ Tenga en cuenta lo siguiente cuando administre un buzón de correo en espera de 
 
 - Como se indicó anteriormente, un buzón se considera en espera durante una duración de retención ilimitada si la propiedad DelayHoldApplied o DelayReleaseHoldApplied está establecida en **true**. Sin embargo, esto no significa que se conserve *todo* el contenido del buzón. Depende del valor que se establezca en cada propiedad. Por ejemplo, supongamos que ambas propiedades se establecen en **true** porque se quitan las suspensiones del buzón de correo. A continuación, quita solo la retención retrasada que se aplica a los datos que no son de la nube de Outlook (mediante el parámetro *RemoveDelayReleaseHoldApplied* ). La próxima vez que el Asistente para carpetas administradas procese el buzón, se purgarán los elementos que no sean de Outlook marcados para su eliminación. No se purgarán todos los elementos de Outlook marcados para su eliminación porque la propiedad DelayHoldApplied sigue establecida en **true**. Lo contrario también será true: si DelayHoldApplied se establece en **false** y DelayReleaseHoldApplied se establece en **true**, se purgarán sólo los elementos de Outlook marcados para su eliminación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de identificar las suspensiones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporalmente o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las suspensiones, consulte uno de los siguientes temas:
 
-- Ejecute el comando de [ \<>buzón de usuario Set-RetentionCompliancePolicy-AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) en el centro de seguridad & cumplimiento de PowerShell para excluir un buzón de una directiva de retención de Microsoft 365 de toda la organización. Este comando solo puede usarse para directivas de retención en las que el valor de la propiedad *ExchangeLocation* es igual a `All` .
+- Ejecute el comando [set-RetentionCompliancePolicy- \<user mailbox> AddExchangeLocationException](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) en Security & Compliance Center PowerShell para excluir un buzón de correo de una directiva de retención de Microsoft 365 de toda la organización. Este comando solo puede usarse para directivas de retención en las que el valor de la propiedad *ExchangeLocation* es igual a `All` .
 
-- Ejecute el comando [set-Mailbox-ExcludeFromOrgHolds \< retenido sin prefijo o sufijo>](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) en Exchange Online PowerShell para excluir un buzón inactivo de una directiva de retención de Microsoft 365 de toda la organización.
+- Ejecute el comando [set-Mailbox- \<hold GUID without prefix or suffix> ExcludeFromOrgHolds](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) en Exchange Online PowerShell para excluir un buzón inactivo de una directiva de retención de Microsoft 365 de toda la organización.
 
 - [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
 

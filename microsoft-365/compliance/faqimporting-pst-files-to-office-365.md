@@ -15,13 +15,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: 'Preguntas más frecuentes para los administradores sobre el uso del servicio de importación de Office 365 para importar los archivos PST de su organización a los buzones de correo de 365 de Microsoft. '
-ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.custom: seo-marvel-apr2020
+description: Este artículo contiene respuestas a algunas de las preguntas más frecuentes para los administradores sobre la importación de archivos PST a Microsoft 365 mediante el servicio de importación de Office 365.
+ms.openlocfilehash: 0f490b7bae3f462bb07725bf14453a6b9a4d7b9e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579205"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817739"
 ---
 # <a name="faq-about-importing-pst-files"></a>Preguntas frecuentes sobre la importación de archivos PST
 
@@ -93,7 +94,7 @@ Sí. Ninguno de los metadatos de los mensajes originales cambiará durante el pr
   
  **¿Existe algún límite en el número de niveles de una jerarquía de carpetas para un archivo PST que quiero importar a un buzón?**
   
-Sí. No puede importar archivos PST que tengan 300 o más niveles de carpetas anidadas.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **¿Puedo usar la carga en la red para importar archivos PST en un buzón inactivo en Office 365?**
   
@@ -154,7 +155,7 @@ Puede enviar un máximo de 10 unidades de disco duro para un único trabajo de i
   
  **Después de enviar mi unidad de disco duro, ¿cuánto tiempo tarda en llegar al centro de datos de Microsoft?**
   
-Eso depende de varias cosas, como su proximidad al centro de datos de Microsoft y qué tipo de opción de envío ha usado para enviar la unidad de disco duro (es decir, envío en un día, en dos días o entrega mediante red terrestre). Con la mayoría de los transportistas, puede usar el número de seguimiento para realizar un seguimiento del estado de su envío.
+That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   
  **Tras la recepción de mi disco duro en el centro de datos de Microsoft, ¿cuánto tiempo se tarda en cargar los archivos PST en Azure?**
   
@@ -192,7 +193,7 @@ Sí. Los metadatos de los mensajes originales no se modifican durante el proceso
   
  **¿Existe algún límite en el número de niveles de una jerarquía de carpetas para un archivo PST que quiero importar a un buzón?**
   
-Sí. No puede importar archivos PST que tengan 300 o más niveles de carpetas anidadas.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **¿Puedo usar el envío de unidades para importar archivos PST en un buzón inactivo en Microsoft 365?**
   
@@ -208,19 +209,19 @@ No, no puede importar archivos PST en carpetas públicas.
   
  **¿Puede Microsoft borrar los datos de mi unidad de disco duro antes de que me la envíen de nuevo?**
   
-No, Microsoft no puede borrar los datos de las unidades de disco duro antes de enviarlas de nuevo a los clientes. Las unidades de disco duro se le devuelven en el mismo estado en el que se encontraban cuando las recibió Microsoft.
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **¿Puede Microsoft destruir mi unidad de disco duro en lugar de enviármela de nuevo?**
   
-No, Microsoft no puede destruir la unidad de disco duro. Las unidades de disco duro se le devuelven en el mismo estado que estaban cuando las recibió Microsoft.
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **¿Qué servicios de mensajería admiten la devolución?**
   
-Si es un cliente de Estados Unidos o Europa, Microsoft usa FedEx para devolver la unidad de disco duro. Para las demás regiones, Microsoft usa DHL.
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
   
  **¿Cuáles son los costos de la devolución?**
   
-Los costos de la devolución varían dependiendo de la proximidad al centro de datos de Microsoft al que ha enviado la unidad. Microsoft facturará la cuenta de DHL o FedEx para devolver su unidad de disco duro. El costo de la devolución es su responsabilidad.
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
   
  **¿Puedo usar un servicio de envío personalizado, como el envío personalizado de FedEx, para enviar mi unidad de disco duro a Microsoft?**
   
@@ -228,4 +229,4 @@ Sí.
   
  **Si tengo que enviar mi unidad a otro país, ¿necesito hacer algo?**
   
-La unidad de disco duro que envíe a Microsoft puede tener que atravesar fronteras internacionales. Si este es el caso, es responsable de garantizar que la unidad y los datos que contiene se importen o exporten según las leyes aplicables. Antes de enviar una unidad de disco duro, compruebe con sus asesores que la unidad y los datos pueden enviarse legalmente al centro de datos de Microsoft especificado. Esto ayudará a garantizar que llegan a Microsoft de manera puntual.
+The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Agregar y administrar alertas de actividad en el centro de seguridad & cumplimiento para que Microsoft 365 le envíe notificaciones por correo electrónico cuando los usuarios realizan actividades específicas
-ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035812"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818029"
 ---
 # <a name="create-activity-alerts"></a>Crear alertas de actividad
 
@@ -34,11 +34,11 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
 > [!NOTE]
 > Las alertas de actividad están en desuso. Le recomendamos que empiece a usar directivas de alerta en el centro de seguridad y cumplimiento, en lugar de crear nuevas alertas de actividad. Las directivas de alerta proporcionan funciones adicionales, como la capacidad de crear una directiva de alerta que active una alerta cuando un usuario realice una actividad específica y muestre alertas en la página **Ver alertas** del centro de seguridad y cumplimiento. Para obtener más información, consulte [Alert Policies](alert-policies.md).
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmar roles y configurar el registro de auditoría
 
 - Debe tener asignado el rol configuración de la organización en el centro de seguridad & cumplimiento para administrar las alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles administrador de cumplimiento y administración de la organización. Para obtener más información sobre cómo agregar miembros a los grupos de roles, consulte [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
-- Usted (u otro administrador) debe activar primero el registro de auditoría de su organización para poder empezar a usar alertas de actividad. Para ello, haga clic en **empezar a registrar la actividad de usuario y de administrador** en la página de **alertas de actividades** . (Si no ve este vínculo, ya se ha activado la auditoría en su organización). También puede activar la auditoría en la página de **búsqueda del registro de auditoría** en el centro de seguridad & cumplimiento ( **ir a** \> búsqueda de **registro de auditoría**). Solo tiene que hacer esto una vez para su organización.
+- Usted (u otro administrador) debe activar primero el registro de auditoría de su organización para poder empezar a usar alertas de actividad. Para ello, haga clic en **empezar a registrar la actividad de usuario y de administrador** en la página de **alertas de actividades** . (Si no ve este vínculo, ya se ha activado la auditoría en su organización). También puede activar la auditoría en la página de **búsqueda del registro de auditoría** en el centro de seguridad & cumplimiento ( **ir a búsqueda de** \> **registro de auditoría**). Solo tiene que hacer esto una vez para su organización.
   
 - Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría. Consulte la sección [More Information](#more-information) para obtener una lista de los escenarios comunes (y la actividad específica para supervisar) para los que puede crear alertas. 
     
@@ -50,7 +50,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
     
 2. Inicie sesión con su cuenta profesional o educativa.
     
-3. En la **Página alertas de actividad** , ![haga clic](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) en agregar icono **nuevo**.
+3. En la página **alertas de actividad** , haga clic en ![ Agregar icono ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuevo**.
 
    Se muestra la página de control flotante para crear una alerta de actividad.
 
@@ -85,7 +85,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
 
 Puede desactivar una alerta de actividad para que no se envíe una notificación de correo electrónico. Después de desactivar la alerta de actividad, sigue apareciendo en la lista de alertas de actividad de la organización, y todavía puede ver sus propiedades.
   
-1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
     
 2. Inicie sesión con su cuenta profesional o educativa.
     

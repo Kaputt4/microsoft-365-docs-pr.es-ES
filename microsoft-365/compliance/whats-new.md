@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
+description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418904"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817065"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -192,13 +192,13 @@ Cuando configure el cifrado para una etiqueta de confidencialidad, ahora tiene d
 - Al aplicar la etiqueta a un **correo electrónico de Outlook**, los usuarios pueden exigir restricciones equivalentes a la opción no reenviar. Los destinatarios podrán leer el mensaje pero no reenviar, imprimir ni copiar el contenido.
 - Al aplicar la etiqueta a los **archivos de Word, PowerPoint y Excel**, a los usuarios se les pedirá que asignen permisos de acceso a determinados usuarios y grupos.
 
-[Más información](encryption-sensitivity-labels.md#let-users-assign-permissions)
+Vaya a [restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md#let-users-assign-permissions) para obtener más información.
 
 ## <a name="august-2019"></a>Agosto de 2019
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. Vaya a [administrar un incidente de derrame de datos en Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) para obtener más información. 
 
 ## <a name="july-2019"></a>Julio de 2019
 

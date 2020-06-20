@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Obtenga información detallada sobre cómo ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en eDiscovery avanzado.  '
-ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626356"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819060"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado (clásico)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la siguiente sección se describen opciones adicionales para la visualización y exportación de datos por lotes en eDiscovery avanzado. 
   
@@ -46,9 +47,9 @@ El cuadro de diálogo historial de exportación proporciona información detalla
   
 3. Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**. La reversión se puede realizar varias veces, lo que cancela la última sesión.
     
-4. Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga **Download** clic en ![el icono de descarga icono](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar. 
+4. Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga clic en el icono de **descarga** ![ icono de descarga de historial por lotes ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) junto al lote de exportación deseado que se va a exportar. 
     
-5. Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al portapapeles** para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**. Se muestra &amp; el cuadro de diálogo de la **herramienta de exportación eDiscovery** del centro de cumplimiento de seguridad. 
+5. Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al portapapeles** para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**. &amp;Se muestra el cuadro de diálogo de la **herramienta de exportación EDiscovery** del centro de cumplimiento de seguridad. 
     
     ![Cuadro de diálogo Exportar exhibición de documentos electrónicos](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -60,7 +61,7 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
 3. Haga clic en **Iniciar**. Los archivos de exportación se descargan en el equipo local. 
     
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

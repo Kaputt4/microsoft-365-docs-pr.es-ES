@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232013"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817539"
 ---
 # <a name="information-barriers"></a>Barreras de información
-
-## <a name="overview"></a>Información general
 
 Los servicios en la nube de Microsoft incluyen eficaces capacidades de comunicación y colaboración. Pero supongamos que desea restringir las comunicaciones entre dos grupos para evitar que se produzca un conflicto de intereses en la organización. O quizás desee restringir las comunicaciones entre determinadas personas dentro de la organización con el fin de proteger la información interna. Microsoft 365 permite la comunicación y la colaboración entre grupos y organizaciones, así que hay una forma de restringir las comunicaciones entre grupos de usuarios específicos cuando sea necesario. Con las barreras de la información, puede hacerlo. 
 
@@ -80,7 +79,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 

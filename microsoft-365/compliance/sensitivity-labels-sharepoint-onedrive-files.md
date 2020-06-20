@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724788"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780723"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -184,7 +184,7 @@ En comparación, las etiquetas de confidencialidad proporcionan la configuració
 
 Sin embargo, puede usar ambas soluciones de protección de forma conjunta y el comportamiento es el siguiente: 
 
-- Si carga un archivo con una etiqueta de confidencialidad que aplica cifrado, el cifrado no se quita de tal forma que no se admiten los archivos, la coautoría, la exhibición de documentos electrónicos, la DLP y la búsqueda.
+- Si carga un archivo con una etiqueta de confidencialidad que aplica cifrado, SharePoint no puede procesar este archivo para que la coautoría, la exhibición de documentos electrónicos y la búsqueda no funcionen con este archivo.
 
 - Si etiqueta un archivo mediante Office en la web, se aplicará la configuración de cifrado de la etiqueta. Para estos archivos, se admite la coautoría, la exhibición de documentos electrónicos, la DLP y la búsqueda.
 

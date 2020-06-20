@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254183"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773771"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
@@ -37,17 +37,15 @@ Cada año, Microsoft prepara la documentación y envía pruebas para atestiguar 
 
 La cita de los servicios Microsoft en el mercado digital implica que los socios y agencias del gobierno de Reino Unido pueden usar los servicios de ámbito para almacenar y procesar datos gubernamentales oficiales de Reino Unido, la mayoría de los datos gubernamentales. Además, actualmente hay más de 450 asociados de Microsoft incluidos en G-Cloud que son revendedores de servicios en la nube de Microsoft. Pueden afirmar directamente el cumplimiento de los servicios en el ámbito con los 14 principios en sus propias aplicaciones. Sin embargo, los clientes y socios tendrán que cumplir su propio cumplimiento para todos los componentes que no se incluyan en la atestación y la determinación del cumplimiento de los servicios en la nube de Microsoft.
 
-Obtenga más información sobre las ventajas de United Kingdom G-Cloud V6 en la nube de Microsoft: [descargar el documento de fondo de Reino Unido g-Cloud V6](https://aka.ms/uk-g-cloud_backgrounder)
-
 Obtenga información sobre cómo acelerar la implementación de United Kingdom G-Cloud V6 con nuestro proyecto de Azure Security and Compliance: [descargar la guía de implementación de Microsoft Blueprint uk G-Cloud Principle](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
-- [Azure](https://aka.ms/AzureCompliance).
+- [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Servicio de nube de Autopower (anteriormente Microsoft Flow), ya sea como un servicio independiente o como se incluye en un plan o un conjunto de marcas de Office 365 o Dynamics 365
+- El servicio de nube de Power Automate (anteriormente conocido como Microsoft Flow) como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Office 365: Exchange Online, SharePoint Online y Skype empresarial online
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
 - El servicio de nube de Power BI como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365

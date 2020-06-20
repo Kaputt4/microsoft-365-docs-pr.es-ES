@@ -16,17 +16,19 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
-description: Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización.
-ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo usar el informe para refinar la directiva predeterminada de prevención de pérdida de datos (DLP) de la organización.
+ms.openlocfilehash: 7c8f0460f9cd02ee3d26197965f5ea74737ac833
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637834"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817619"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 
-Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización. Verá esta recomendación en la página **principal** del centro de seguridad &amp; y cumplimiento. 
+Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización. Verá esta recomendación en la página **principal** del centro de seguridad y &amp; cumplimiento. 
   
 Puede usar este widget para ver rápidamente cuándo y cuánto se ha compartido la información confidencial y, a continuación, refinar la Directiva de DLP predeterminada en solo un clic o dos. También puede editar la Directiva DLP predeterminada en cualquier momento, ya que es totalmente personalizable. Tenga en cuenta que si no ve la recomendación en primer lugar, intente hacer clic en **+ más** en la parte inferior de la sección **recomendada para usted** . 
   
@@ -44,7 +46,7 @@ Para ayudar a proteger la información confidencial, la Directiva de DLP predete
     
 - Muestra una sugerencia de directiva y envía una notificación por correo electrónico a los usuarios cuando intentan compartir esta información confidencial con personas de fuera de la organización. Para obtener más información sobre estas opciones, vea [enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP](use-notifications-and-policy-tips.md).
     
-- Genera informes de actividad detallados para que pueda realizar un seguimiento de cosas como quién ha compartido el contenido con personas de fuera de la organización y cuándo lo ha hecho. Puede usar los [informes de DLP](view-the-dlp-reports.md) y los datos del [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde**DLP**de **actividad** = ) para ver esta información.
+- Genera informes de actividad detallados para que pueda realizar un seguimiento de cosas como quién ha compartido el contenido con personas de fuera de la organización y cuándo lo ha hecho. Puede usar los [informes de DLP](view-the-dlp-reports.md) y los datos del [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde **Activity**  =  **DLP**de actividad) para ver esta información.
     
 Para refinar rápidamente la Directiva DLP predeterminada, puede elegir que:
   
@@ -62,7 +64,7 @@ Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP pre
   
 ## <a name="edit-the-default-dlp-policy"></a>Edición de la Directiva de DLP predeterminada
 
-Esta Directiva se denomina **Directiva DLP predeterminada** y aparece en **prevención de pérdida de datos** en la página de la &amp; **Directiva** del centro de seguridad y cumplimiento. 
+Esta Directiva se denomina **Directiva DLP predeterminada** y aparece en **prevención de pérdida de datos** en la página de la **Directiva** del centro de seguridad y &amp; cumplimiento. 
   
 Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. También puede desactivar o eliminar la Directiva para que los usuarios dejen de recibir sugerencias de directiva o notificaciones de correo electrónico.
   
@@ -70,11 +72,11 @@ Esta directiva es totalmente personalizable, igual que cualquier directiva DLP q
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 
-El widget denominado **protección de contenido compartido adicional** aparece en la sección **recomendada para usted** de la página **principal** del centro &amp; de seguridad y cumplimiento. 
+El widget denominado **protección de contenido compartido adicional** aparece en la sección **recomendada para usted** de la página **principal** del centro de seguridad y &amp; cumplimiento. 
   
 Este widget solo aparece cuando:
   
-- No hay directivas de prevención de pérdida de datos en &amp; el centro de seguridad y cumplimiento o en el centro de administración de Exchange. Este widget está pensado para ayudarle a empezar a usar DLP, por lo que no aparece si ya tiene directivas de DLP.
+- No hay directivas de prevención de pérdida de datos en el centro de seguridad &amp; y cumplimiento o en el centro de administración de Exchange. Este widget está pensado para ayudarle a empezar a usar DLP, por lo que no aparece si ya tiene directivas de DLP.
     
 - En los últimos 30 días se ha compartido el contenido que contiene menos una tarjeta de crédito con alguien ajeno a su organización.
     

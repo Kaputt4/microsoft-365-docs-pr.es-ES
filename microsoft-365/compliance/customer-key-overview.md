@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Con la clave de cliente, se controlan las claves de cifrado de la organización y, a continuación, se configura Microsoft 365 para usarlas para cifrar los datos en reposo en los centros de datos de Microsoft.
-ms.openlocfilehash: 701dc306a81e12db7dd1062d2a840621b710abd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicios con la clave de cliente en Microsoft 365.
+ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635596"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817959"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 

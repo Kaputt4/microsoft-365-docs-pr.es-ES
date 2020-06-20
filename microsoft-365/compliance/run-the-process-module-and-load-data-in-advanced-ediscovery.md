@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Obtenga información sobre cómo usar el &amp; centro de seguridad y cumplimiento para acceder a la exhibición de documentos electrónicos avanzada y ejecutar el módulo de proceso para un caso.  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626476"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818909"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En esta sección se describe la funcionalidad del módulo de proceso avanzado de eDiscovery. 
   
@@ -41,13 +42,13 @@ EDiscovery avanzado proporciona valores de metadatos del sistema, como agrupacio
   
 Realice los siguientes pasos para ejecutar el proceso.
   
-1. [Abra el centro &amp; de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) . 
+1. [Abrir la seguridad &amp; Centro de cumplimiento](go-to-the-securitycompliance-center.md) . 
     
-2. Vaya a la **exhibición** de documentos electrónicos de ** &amp; investigación** \> y haga clic en **ir a exhibición avanzada**de documentos electrónicos.
+2. Vaya a la exhibición de documentos electrónicos de ** &amp; investigación** \> **eDiscovery** y haga clic en **ir a exhibición avanzada**de documentos electrónicos.
     
 3. En la exhibición avanzada de documentos electrónicos, seleccione el caso apropiado en la página **casos** mostrados y haga clic en **ir al caso**.
     
-4. En **preparar** \> el **proceso** \> de **instalación**, seleccione un contenedor de la lista de contenedores disponibles.
+4. En **preparar** \> el **proceso** de \> **instalación**, seleccione un contenedor de la lista de contenedores disponibles.
     
     ![Haga clic en proceso para agregar los resultados de la búsqueda al caso](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -77,11 +78,11 @@ Realice los siguientes pasos para ejecutar el proceso.
     
 6. Para empezar, haga clic en **procesar**. Una vez finalizado, se muestran los resultados del proceso.
     
-7. Opcional Si necesita asignar orígenes de datos a un custodio específico, puede Agregar y editar nombres de custodios en **los custodios** \> **administre** y asigne custodios en **asignación**de **custodios** \> . 
+7. Opcional Si necesita asignar orígenes de datos a un custodio específico, puede Agregar y editar nombres de custodios en los **custodios** \> **administre** y asigne custodios en asignación de **custodios** \> **Assign**. 
     
 Si agrega al caso, puede volver a procesar.
   
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

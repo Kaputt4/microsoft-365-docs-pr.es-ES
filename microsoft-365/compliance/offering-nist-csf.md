@@ -1,7 +1,7 @@
 ---
 title: Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 description: Los servicios en la nube de Microsoft cumplen con el National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3ebed6af6ba1e3e82178ad87cfe3592e0df4bc48
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066155"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799985"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Instituto Nacional de normas y tecnología (NIST) Cybersecurity Framework (CSF)
 
@@ -37,7 +37,7 @@ NIST Cybersecurity Framework (CSF) es un marco voluntario que consta de estánda
 
 Aprenda a acelerar la implementación del marco de Cybersecurity de NIST con puntuación de cumplimiento y nuestro proyecto de Azure Security y Compliance:
 
-- [Descargar la lista de comprobación de riesgos de Azure Security and Compliance Blueprint-NIST CSF](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Información general sobre el ejemplo de Blueprint del SP 800-53 R4 de NIST](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
 - [Obtenga más información acerca de la evaluación del CSF de NIST para Office 365 en puntuación de cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
@@ -109,4 +109,4 @@ Microsoft proporciona las ofertas más completas en comparación con otros prove
 - [Solicitud Ejecutiva Presidencia sobre el fortalecimiento del Cybersecurity de las redes federales y la infraestructura crítica](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Términos de servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Cumplimiento en el Centro de Confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

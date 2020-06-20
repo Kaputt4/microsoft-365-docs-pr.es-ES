@@ -1,7 +1,7 @@
 ---
 title: Consejo financiero federal de examen para instituciones financieras (FFIEC)
 description: Microsoft ayuda a los clientes de servicios financieros a cumplir con los requisitos de auditoría del Consejo de investigación de instituciones financieras federales (FFIEC).
-keywords: Microsoft 365, cumplimiento, ofertas
+keywords: Cumplimiento y ofertas de Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066363"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800101"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consejo financiero federal de examen para instituciones financieras (FFIEC)
 
@@ -33,7 +33,7 @@ El [manual de examen de auditoría de TI de FFIEC](https://ithandbook.ffiec.gov/
 
 Microsoft Azure, Microsoft Power BI y Microsoft Office 365 se han creado para cumplir los estrictos requisitos de ofrecer servicios en la nube para instituciones de servicios financieros. Como parte de nuestro soporte técnico, le ofrecemos orientación para cumplir con los requisitos de auditoría de FFIEC para la tecnología de la información y la capacidad de usar atestaciones de Azure SOC al realizar las obligaciones de cumplimiento de FFIEC.
 
-Acelere su implementación de servicios financieros: [Descargue Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+Acelere su implementación de servicios financieros: [Descargue Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 Para ayudar a los clientes de instituciones financieras a satisfacer sus requisitos de cumplimiento FFIEC con Azure, Microsoft ha desarrollado:
 

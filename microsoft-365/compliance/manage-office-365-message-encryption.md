@@ -16,13 +16,15 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, mostrar el botón proteger en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
-ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), obtenga información sobre cómo personalizar la implementación de varias maneras.
+ms.openlocfilehash: 83fa620852ea9b2e0cd50d50b6715742658b7239
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165981"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815437"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el Cifrado de mensajes de Office 365
 
@@ -191,9 +193,9 @@ Puede usar plantillas de personalización de marca personalizadas para obligar a
 
    - `mail flow rule name`es el nombre que desea usar para la nueva regla de flujo de correo.
 
-   - `option name`es `Encrypt` o `Do Not Forward`.
+   - `option name`es `Encrypt` o `Do Not Forward` .
 
-   - `template name`es el nombre que dio a la plantilla de personalización de marca `OME Configuration`personalizada, por ejemplo,.
+   - `template name`es el nombre que dio a la plantilla de personalización de marca personalizada, por ejemplo, `OME Configuration` .
 
    Para cifrar todo el correo electrónico externo con la plantilla "configuración de OME" y aplicar la opción de solo cifrado:
 

@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232061"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817549"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
-
-## <a name="overview"></a>Información general
 
 Con las barreras de la información, puede definir directivas diseñadas para evitar que determinados segmentos de usuarios se comuniquen entre sí o permitir que segmentos específicos solo se comuniquen con determinados segmentos. Las directivas de barrera de información pueden ayudar a su organización a mantener el cumplimiento de las normas y regulaciones de la industria pertinentes y evitar posibles conflictos de intereses. Para obtener más información, consulte barreras de la [información](information-barriers.md). 
 
@@ -303,7 +301,7 @@ No es necesario definir directivas para recursos humanos o marketing.
 
 Contoso usará el atributo Department en Azure Active Directory para definir segmentos, de la siguiente manera:
 
-|Departamento  |Definición de segmento  |
+|Department  |Definición de segmento  |
 |---------|---------|
 |HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |Lín     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |

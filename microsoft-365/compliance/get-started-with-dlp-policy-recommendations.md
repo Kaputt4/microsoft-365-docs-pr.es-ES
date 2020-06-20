@@ -12,15 +12,15 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-search.appverid:
-- MET150
-description: Esta recomendación basada en la información ayuda a su organización a mantener la seguridad del contenido confidencial cuando se almacena y se comparte en Microsoft 365, ya que le informa cuando hay una brecha posible en la cobertura de la Directiva DLP. Verá esta recomendación en la Página principal del centro de seguridad &amp; y cumplimiento, si los documentos contienen alguno de los cinco tipos más comunes de información confidencial, pero no están protegidos por una directiva DLP.
-ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo crear y editar la Directiva de prevención de pérdida de datos (DLP) recomendada para su organización.
+ms.openlocfilehash: 9588eabe5dbe2b1e60eaeb6a45eb95cc327383aa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943379"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817639"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introducción a las recomendaciones de la directiva DLP
 
@@ -38,7 +38,7 @@ Para ayudar a proteger la información confidencial, esta directiva de DLP:
   
 - Detecta cuando el contenido de Exchange, SharePoint y OneDrive que contiene uno de los tipos de información confidencial no protegidos se comparte con personas de fuera de la organización.
     
-- Genera informes de actividad detallados para que pueda realizar un seguimiento de cosas como quién ha compartido el contenido con personas de fuera de la organización y cuándo lo ha hecho. Puede usar los [informes de DLP](view-the-dlp-reports.md) y los datos del [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde**DLP**de **actividad** = ) para ver esta información.
+- Genera informes de actividad detallados para que pueda realizar un seguimiento de cosas como quién ha compartido el contenido con personas de fuera de la organización y cuándo lo ha hecho. Puede usar los [informes de DLP](view-the-dlp-reports.md) y los datos del [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde **Activity**  =  **DLP**de actividad) para ver esta información.
     
 También puede elegir que la Directiva DLP:
   
@@ -54,7 +54,7 @@ Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP una
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Edición de la Directiva de DLP recomendada
 
-Después de usar el widget para crear una directiva de DLP, la directiva aparece en **prevención de pérdida de datos** en la página de la **Directiva** del centro de seguridad &amp; y cumplimiento. 
+Después de usar el widget para crear una directiva de DLP, la directiva aparece en **prevención de pérdida de datos** en la página de la **Directiva** del centro de seguridad y &amp; cumplimiento. 
   
 De forma predeterminada, la Directiva se denomina **Directiva recomendada del sistema para compartir información confidencial**. Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. Por ejemplo, si decidió no activar los informes de incidentes y las sugerencias de directiva al usar el widget, siempre puede editar la Directiva y activar estas opciones en cualquier momento.
   
@@ -62,7 +62,7 @@ De forma predeterminada, la Directiva se denomina **Directiva recomendada del si
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 
-El widget denominado **información confidencial no protegida** aparece en la sección **recomendada para usted** de la página **principal** del centro de seguridad &amp; y cumplimiento. 
+El widget denominado **información confidencial no protegida** aparece en la sección **recomendada para usted** de la página **principal** del centro de seguridad y &amp; cumplimiento. 
   
 Este widget solo aparece cuando:
   

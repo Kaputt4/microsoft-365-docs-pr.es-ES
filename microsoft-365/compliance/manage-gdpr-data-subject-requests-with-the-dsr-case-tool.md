@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
+description: Obtenga información sobre cómo administrar las solicitudes de interesados de datos del Reglamento de protección general de datos (RGPD) de la UE con la herramienta de casos de DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035874"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815457"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -90,7 +90,7 @@ El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por inicia
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
     
-2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](../media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
+2. En el centro de seguridad & cumplimiento, haga clic en solicitudes de asunto de datos de **privacidad de datos** \> **Data subject requests**y, a continuación, haga clic en ![ Agregar icono ](../media/ITPro-EAC-AddIcon.gif) **nuevo caso DSR**.
     
 3. En la página flotante de **nuevo caso de DSR** , indique un nombre, escriba una descripción opcional y, a continuación, haga clic en **siguiente**. El nombre del caso debe ser exclusivo en la organización.
     
@@ -149,7 +149,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Para ejecutar la búsqueda integrada para un caso de DSR:**
   
-1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR que ha creado en el paso 2. 
+1. En el centro de seguridad & cumplimiento, haga clic en solicitudes de asunto de datos de **privacidad de datos** \> **Data subject requests**y, a continuación, haga clic en **abrir** junto al caso DSR que ha creado en el paso 2. 
     
     Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda integrada que se creó al crear el caso del DSR. La búsqueda tiene el mismo nombre que el caso del DSR. 
     
@@ -192,11 +192,11 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
   
  **Para exportar datos de la búsqueda integrada en un caso de DSR:**
   
-1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR del que desea exportar datos. 
+1. En el centro de seguridad & cumplimiento, haga clic en solicitudes de asunto de datos de **privacidad de datos** \> **Data subject requests**y, a continuación, haga clic en **abrir** junto al caso DSR del que desea exportar datos. 
     
 2. Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda integrada que se creó al crear el caso del DSR. O bien, haga clic en otra búsqueda para exportar datos de esa búsqueda. 
     
-3. En la página desplegable de búsqueda ![, haga clic en](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
+3. En la página desplegable de búsqueda, haga clic en ![ exportar resultados de búsqueda ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
     
 4. En la página resultados de la **exportación** , seleccione las siguientes opciones recomendadas para las solicitudes de exportación de DSR. 
     
@@ -206,7 +206,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
     b. En **exportar contenido de Exchange como**, seleccione la tercera opción, **un archivo pst que contiene todos los mensajes en una sola carpeta**. Dado que algunos de los resultados pueden ser para elementos que se originaron en el buzón de otro usuario, esta opción solo muestra el elemento en una sola carpeta sin indicar el buzón real y es la mejor opción para usar cuando se desduplican los resultados según se recomienda en el siguiente elemento. Esta opción también permite que el interesado Revise los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
     
-    c. Seleccione **Habilitar opción de desduplicación** para excluir los mensajes de correo electrónico duplicados. Se recomienda esta opción porque la búsqueda integrada busca en todos los buzones de la organización. Por lo tanto, si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda, esta opción significa que solo se exportará una copia de un mensaje. Esta opción, en conjunto, exportará los mensajes de un archivo PST en una sola carpeta, lo que da como resultado la mejor experiencia de usuario para las solicitudes de exportación de DSR. El informe de exportación Results. csv enumera todas las ubicaciones en las que se han encontrado mensajes duplicados.
+    c. Seleccione **Habilitar opción de desduplicación** para excluir los mensajes de correo electrónico duplicados. Se recomienda esta opción porque la búsqueda integrada busca en todos los buzones de la organización. Por lo tanto, si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda, esta opción significa que solo se exportará una copia de un mensaje. Esta opción, en conjunto, exportará los mensajes de un archivo PST en una sola carpeta, lo que da como resultado la mejor experiencia de usuario para las solicitudes de exportación de DSR. El Results.csv el informe de exportación enumera todas las ubicaciones en las que se han encontrado mensajes duplicados.
     
     Opcionalmente, puede seleccionar la opción **incluir versiones para documentos de SharePoint** para exportar todas las versiones de documentos de SharePoint y OneDrive. Esto requiere que el control de versiones esté activado para las bibliotecas de documentos. Esta opción ayuda a garantizar que se exportan todos los datos relevantes.
     
@@ -220,7 +220,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
 8. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 11 para descargar los resultados de la búsqueda.
     
-9. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
+9. Haga clic en ![ exportar el icono resultados de la búsqueda ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
 10. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la **herramienta de exportación de exhibición**de documentos electrónicos. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     
@@ -243,11 +243,11 @@ Después de ejecutar la búsqueda integrada, puede revisarla para reducir el ám
   
 A continuación se muestran algunos ejemplos de las condiciones que puede Agregar a la consulta de búsqueda integrada en un caso de DSR. El nombre de la propiedad real que se usa en una consulta de búsqueda se muestra entre paréntesis.
   
-- **Tipo de archivo `filetype`()** : especifica la extensión de un documento o archivo. Use esta condición para buscar documentos y archivos creados por aplicaciones específicas de Office, como Word, Excel y OneNote. 
+- **Tipo de archivo ( `filetype` )** : especifica la extensión de un documento o archivo. Use esta condición para buscar documentos y archivos creados por aplicaciones específicas de Office, como Word, Excel y OneNote. 
     
-- **Tipo de mensaje `kind`()** : especifica el tipo de elemento de correo electrónico que se buscará. Por ejemplo, puede usar la sintaxis `kind:email OR kind:im` para devolver solo mensajes de correo electrónico y conversaciones de Skype empresarial o chats uno a uno en Microsoft Teams. 
+- **Tipo de mensaje ( `kind` )** : especifica el tipo de elemento de correo electrónico que se buscará. Por ejemplo, puede usar la sintaxis `kind:email OR kind:im` para devolver solo mensajes de correo electrónico y conversaciones de Skype empresarial o chats uno a uno en Microsoft Teams. 
     
-- **Etiqueta de cumplimiento`compliancetag`()** : especifica una etiqueta asignada a un mensaje de correo electrónico o a un documento. Esta condición devuelve los elementos clasificados con una etiqueta específica. Las etiquetas se usan para clasificar el correo electrónico y los documentos para el gobierno de datos y aplicar las reglas de retención en función de la clasificación definida por la etiqueta. Esta es una condición útil para las investigaciones de los DSR porque su organización puede usar etiquetas para clasificar el contenido relacionado con la privacidad de los datos o que contiene datos personales o información confidencial. Para el valor de esta condición, use el nombre completo de la etiqueta o la primera parte del nombre de la etiqueta con un comodín. Para obtener más información, vea [información general sobre las etiquetas en Office 365](labels.md).
+- **Etiqueta de cumplimiento ( `compliancetag` )** : especifica una etiqueta asignada a un mensaje de correo electrónico o a un documento. Esta condición devuelve los elementos clasificados con una etiqueta específica. Las etiquetas se usan para clasificar el correo electrónico y los documentos para el gobierno de datos y aplicar las reglas de retención en función de la clasificación definida por la etiqueta. Esta es una condición útil para las investigaciones de los DSR porque su organización puede usar etiquetas para clasificar el contenido relacionado con la privacidad de los datos o que contiene datos personales o información confidencial. Para el valor de esta condición, use el nombre completo de la etiqueta o la primera parte del nombre de la etiqueta con un comodín. Para obtener más información, vea [información general sobre las etiquetas en Office 365](labels.md).
     
 Para obtener una lista y una descripción de todas las condiciones disponibles en la herramienta de casos de DSR, vea [condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions) en el artículo "consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido". 
   
@@ -303,9 +303,9 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
    
  **Para buscar y exportar datos del servicio de itinerancia de Office:**
   
-1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes del interesado**de datos de **privacidad** \> de datos y, a continuación, haga clic en **abrir** junto al caso del DS1800 para el interesado al que desea exportar los datos de uso. 
+1. En el centro de seguridad & cumplimiento, haga clic en solicitudes del interesado de datos de **privacidad de datos** \> **Data subject requests**y, a continuación, haga clic en **abrir** junto al caso del DS1800 para el interesado al que desea exportar los datos de uso. 
     
-2. Haga clic en la ficha **búsqueda** en la parte superior de la página y ![, a](../media/ITPro-EAC-AddIcon.gif) continuación, haga clic en agregar icono de **búsqueda guiada**.
+2. Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en ![ Agregar icono de ](../media/ITPro-EAC-AddIcon.gif) **búsqueda guiada**.
     
 3. Haga clic en **Cancelar** en la página **asigne un nombre a la búsqueda** . 
     
@@ -327,9 +327,9 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
     
  **Para exportar datos del servicio de itinerancia de Office:**
   
-1. Una vez completada la búsqueda que ha creado en el paso anterior, haga clic en la ficha **búsqueda** situada en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda. Puede que tenga que hacer ![clic](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) en actualizar **actualización** para mostrar la búsqueda. 
+1. Una vez completada la búsqueda que ha creado en el paso anterior, haga clic en la ficha **búsqueda** situada en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda. Puede que tenga que hacer clic en ![ actualizar ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **actualización** para mostrar la búsqueda. 
     
-2. En la página desplegable de búsqueda ![, haga clic en](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportar resultados de búsqueda **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
+2. En la página desplegable de búsqueda, haga clic en ![ exportar resultados de búsqueda ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **más**y, a continuación, seleccione **exportar resultados** en la lista desplegable. 
     
 3. En la página **exportar resultados** , seleccione las opciones recomendadas para exportar datos de uso. 
     
@@ -351,7 +351,7 @@ Cuando se exportan datos desde el servicio de itinerancia de Office, los datos s
     
 7. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Use esta clave en el paso 10 para descargar los resultados de la búsqueda.
     
-8. Haga ![clic en exportar el](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
+8. Haga clic en ![ exportar el icono resultados de la búsqueda ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
 9. En la ventana emergente situada en la parte inferior de la página, haga clic en **abrir** para abrir la **herramienta de exportación de exhibición**de documentos electrónicos. La **herramienta de exportación de exhibición** de documentos electrónicos se instalará la primera vez que descargue los resultados de búsqueda. 
     

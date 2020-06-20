@@ -17,18 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Obtenga información sobre el cifrado disponible en Azure, como Azure Disk Encryption.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 57581f7ca1f4cb605aa2617f73dd1e4b04bd129c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033638"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818859"
 ---
 # <a name="encryption-in-azure"></a>Cifrado en Azure
 
 Las protecciones tecnológicas de Azure, como las comunicaciones cifradas y los procesos operativos, ayudan a mantener los datos protegidos. También tiene la flexibilidad de implementar características de cifrado adicionales y administrar sus propias claves de cifrado. Independientemente de la configuración del cliente, Microsoft aplica el cifrado para proteger los datos de los clientes en Azure. Microsoft también le permite controlar los datos hospedados en Azure a través de una amplia variedad de tecnologías avanzadas para cifrar, controlar y administrar claves criptográficas, y controlar y auditar el acceso a los datos. Además, Azure Storage ofrece un conjunto completo de capacidades de seguridad que permiten a los desarrolladores crear aplicaciones seguras de forma conjunta.
-
-## <a name="introduction"></a>Introducción
 
 Azure ofrece varios mecanismos para proteger los datos a medida que se mueven de una ubicación a otra. Microsoft usa TLS para proteger los datos cuando se transmite entre los servicios en la nube y los clientes. Los centros de datos de Microsoft negocian una conexión TLS con los sistemas cliente que se conectan a los servicios de Azure. La confidencialidad directa perfecta (PFS) protege las conexiones entre los sistemas cliente de los clientes y los servicios en la nube de Microsoft con claves únicas. Las conexiones también usan longitudes de claves de cifrado de 2.048 bits basadas en RSA. Esta combinación dificulta que alguien intercepte y tenga acceso a los datos que están en tránsito.
 

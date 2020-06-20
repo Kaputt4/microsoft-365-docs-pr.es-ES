@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Una lista de tipos de archivo compatibles en la exhibición avanzada de documentos electrónicos de Microsoft 365. Esto incluye una lista de los tipos de archivo de imagen que son compatibles con la funcionalidad de OCR en eDiscovery avanzado.
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Una lista de tipos de archivo admitidos en la exhibición avanzada de documentos electrónicos de Microsoft 365, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en eDiscovery avanzado.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634638"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819160"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en eDiscovery avanzado
 
@@ -49,7 +50,7 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | vídeo/x-M4V | Sí | Sí | No | Sí | No | .m4v |
 ||||||||
 
-## <a name="database"></a>Base de datos
+## <a name="database"></a>Database
 
 | Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -113,7 +114,7 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 
 | Tipo MIME | Identificación de archivos | Extracción de metadatos | Extracción de texto | Visor nativo | Visor de anotaciones | Extensiones posibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| aplicación/OneNote | Sí | Sí | Sí | Sí | No | . One |
+| aplicación/OneNote | Sí | Sí | Sí | Sí | No | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -154,7 +155,7 @@ La exhibición avanzada de documentos electrónicos admite muchos tipos de archi
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/msword | Sí | Sí | Sí | Sí | Sí | . dat;. doc |
 | aplicación/RTF | Sí | Sí | Sí | Sí | Sí | . doc;. rtf |
-| Application/vnd. MS-Word. Document. macroenabled. 12 | Sí | Sí | Sí | Sí | Sí | .docm |
+| Application/vnd.ms-word.document. macroenabled. 12 | Sí | Sí | Sí | Sí | Sí | .docm |
 | Application/vnd. MS-Word. template. macroenabled. 12 | Sí | Sí | Sí | Sí | Sí | . dotm |
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document | Sí | Sí | Sí | Sí | Sí | .docx |
 | Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Sí | Sí | Sí | Sí | Sí | . dotx |

@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Obtenga información sobre cómo la pestaña decidir en eDiscovery avanzado proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
-ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Obtenga información sobre cómo la pestaña decidir en Microsoft 365 Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630577"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817909"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
  En la exhibición avanzada de documentos electrónicos, la pestaña decidir proporciona información adicional para ver y usar estadísticas de soporte de decisiones para determinar el tamaño del conjunto de revisión de los archivos de casos. 
   
@@ -53,7 +54,7 @@ Esta ficha incluye lo siguiente:
     
 El panel de detalles expandido muestra detalles adicionales. Los archivos de las figuras de la colección no incluyen archivos vacíos o Nebulous. Las figuras de los archivos de familia representan los archivos que no se cargan en relevancia, aunque todavía se cuentan como parte de la familia.
   
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

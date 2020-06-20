@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de cumplimiento en Office 365 o en Microsoft 365.
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las suspensiones asociadas a casos de exhibición de documentos electrónicos.
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208382"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818039"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
   
@@ -31,13 +33,13 @@ La secuencia de comandos de este artículo permite que los administradores de eD
 
 Consulte la sección [More Information](#more-information) para obtener una descripción detallada de la información incluida en el informe.
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="admin-requirements-and-script-information"></a>Requisitos de administración e información de script
 
 - Para generar un informe en todos los casos de eDiscovery de su organización, debe ser administrador de exhibición de documentos electrónicos en su organización. Si es un administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede tener acceso. Para obtener más información sobre los permisos de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
     
 - La secuencia de comandos de este artículo tiene un tratamiento de errores mínimo. El objetivo principal es crear rápidamente informes sobre las suspensiones asociadas a los casos de eDiscovery de su organización.
     
-- Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Paso 1: conectarse al centro de seguridad & cumplimiento de PowerShell
 
@@ -49,7 +51,7 @@ Si su cuenta de Microsoft 365 usa la autenticación multifactor (MFA) o autentic
 
 Una vez que se haya conectado al centro de seguridad & PowerShell del centro de cumplimiento, el siguiente paso es crear y ejecutar el script que recopila información sobre los casos de eDiscovery de la organización. 
   
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, CaseHoldsReport. ps1. 
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, CaseHoldsReport.ps1. 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     Además, el script también crea un informe con una lista de casos que no tienen ninguna suspensión. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv` .
     
-    Este es un ejemplo de cómo se ejecuta el script CaseHoldsReport. ps1. 
+    A continuación, se muestra un ejemplo de cómo ejecutar el script de CaseHoldsReport.ps1. 
     
-    ![El resultado después de ejecutar el script CaseHoldsReport. ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![El resultado después de ejecutar el script de CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Más información
 

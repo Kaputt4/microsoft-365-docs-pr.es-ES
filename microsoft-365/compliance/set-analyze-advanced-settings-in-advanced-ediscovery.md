@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Obtenga información acerca de cómo configurar las opciones avanzadas, incluidos los mensajes casi duplicados, los subprocesos de correo electrónico y los temas, para analizar el proceso en eDiscovery avanzado. '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631277"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819240"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Establecer la configuración avanzada de ANALYZE en eDiscovery avanzado
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 EDiscovery avanzado proporciona parámetros avanzados predeterminados para la configuración del módulo de análisis. En el procedimiento siguiente se describe la configuración que se puede especificar.
   
-1. En la **ficha \> preparar \> la configuración de ANALYZE** , haga clic en **Configuración avanzada** (en la parte inferior de la página). Se muestra el siguiente panel. 
+1. En la ficha **preparar la \> \> configuración de ANALYZE** , haga clic en **Configuración avanzada** (en la parte inferior de la página). Se muestra el siguiente panel. 
     
     ![Establecer la configuración avanzada del análisis](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -44,9 +45,9 @@ EDiscovery avanzado proporciona parámetros avanzados predeterminados para la co
     
 3. En **los parámetros de los temas**, active la casilla **incluir números en el análisis del tema** para incluir números en el procesamiento de temas durante el análisis. 
     
-4. Haga clic en **Guardar**. 
+4. Haga clic en **Guardar **. 
     
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar documentos de un conjunto de revisión y trabajar con ellos de forma individual en otro conjunto en un caso de exhibición avanzada de documentos electrónicos.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034684"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818607"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Agregar datos a un conjunto de revisión desde otro conjunto de revisión
 
@@ -30,9 +32,9 @@ En algunos casos, puede ser necesario seleccionar documentos de un conjunto de r
 
 Siga el flujo de trabajo de este artículo para agregar contenido de un conjunto de revisión a otro.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="create-a-review-set"></a>Crear un conjunto de revisión
 
-Antes de empezar, deberá crear un nuevo conjunto de revisión para agregar los datos a.  Se puede Agregar un nuevo conjunto de revisiones en la ficha **Review sets** del caso. Para obtener más información, vea [Create a Review Set](managing-review-sets.md#create-a-review-set).
+Antes de empezar, deberá crear un conjunto de revisiones para agregar los datos.  Se puede Agregar un nuevo conjunto de revisiones en la ficha **Review sets** del caso. Para obtener más información, vea [Create a Review Set](managing-review-sets.md#create-a-review-set).
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Paso 1: identificar el contenido que se va a agregar a otro conjunto de revisión
 

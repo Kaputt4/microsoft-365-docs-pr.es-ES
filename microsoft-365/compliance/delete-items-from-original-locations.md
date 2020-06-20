@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo usar la herramienta de nueva investigación de datos (vista previa) en el centro de seguridad & cumplimiento para eliminar elementos de sus ubicaciones originales.
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630527"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817889"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminar elementos de su ubicación original (versión preliminar)
 
@@ -31,7 +32,7 @@ La característica para eliminar elementos de su ubicación original está en ve
 
 Mediante el uso de investigaciones de datos, puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado elementos como evidencia, tiene copias de los elementos retenidos en el conjunto de evidencias para una mayor investigación o mantener como referencia.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-delete-items"></a>Antes de eliminar elementos
 
 - Para eliminar elementos, debe tener asignado el rol de **búsqueda y purga** en el centro de seguridad & cumplimiento. Este rol se asigna de forma predeterminada al grupo de roles de investigador de datos integrado.
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: Obtenga información sobre cómo recuperar el contenido de un buzón inactivo en Office 365 convirtiéndolo en un nuevo buzón de correo que contiene el contenido del buzón inactivo.
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678976"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818950"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
@@ -33,7 +34,7 @@ Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa par
 
 Consulte la sección [Más información](#more-information) para obtener más detalles sobre las diferencias entre la recuperación y restauración de un buzón inactivo, así como para obtener una descripción de lo que sucede cuando se recupera un buzón inactivo.
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>Requisitos para recuperar un buzón inactivo
 
 - Debe usar Exchange Online PowerShell para recuperar un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
@@ -56,7 +57,7 @@ Use el cmdlet **New-Mailbox** con el parámetro *InactiveMailbox* para recuperar
     ```
 
     > [!IMPORTANT]
-    > En el comando anterior, use el valor de la propiedad **DistinguishedName** o **ExchangeGUID** para identificar el buzón inactivo. Estas propiedades son únicas para cada buzón en su organización, mientras que es posible que un buzón activo e inactivo puedan tener la misma dirección SMTP principal. 
+    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. En este ejemplo se usan las propiedades que se obtuvieron en el comando anterior y se recupera el buzón inactivo en un buzón activo para el usuario Ann Beebe. Asegúrese de que los valores especificados para los parámetros *Name* y *MicrosoftOnlineServicesID* son únicos en la organización. 
 
@@ -84,7 +85,7 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
   
      - **Directiva de retención de Microsoft 365 sin bloqueo de preservación.** El buzón inactivo se quita de cualquier directiva de retención de Microsoft 365 desbloqueada que se le haya aplicado. Sin embargo, la retención por juicio está habilitada en el buzón de correo recuperado para evitar la eliminación de contenido de buzón de correo en función de las directivas de retención de toda la organización que eliminan contenido anterior a una antigüedad específica. Puede mantener la retención por juicio o quitarla. Para obtener más información, vea [Create a Litigation Hold](create-a-litigation-hold.md).
 
-  - El período de recuperación de un solo elemento (definido por la propiedad de buzón **RetainDeletedItemsFor** ) se establece en 30 días. Normalmente, cuando se crea un nuevo buzón en Exchange Online, este período de retención se establece en 14 días. Si establece esto en el valor máximo de 30 días, tendrá más tiempo para recuperar los datos que se han eliminado (o depurado) de forma permanente del buzón inactivo. También puede deshabilitar la recuperación de un solo elemento o volver a establecer el período de recuperación de un solo elemento en el valor predeterminado de 14 días. Para obtener más información, consulte [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
+  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
   
   - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la Directiva de retención de Exchange predeterminada y todas las directivas de retención de Microsoft 365 de toda la organización o de todo el ámbito de Exchange que se asignan al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la Directiva de retención de Exchange o Microsoft 365 puede eliminar los elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado según la configuración de las directivas de retención de Exchange o Microsoft 365. Transcurrido el plazo de 30 días, la suspensión de **la retención** se establece en **false**y el Asistente para carpeta administrada comienza a procesar las directivas asignadas al buzón de correo. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
 

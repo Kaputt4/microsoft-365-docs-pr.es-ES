@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para los administradores: Obtenga información sobre cómo habilitar el archivado de expansión automática, que proporciona a los usuarios un almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
-ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d550e562e8226d586a9538f9f366e3283ad0437
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631715"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817829"
 ---
 # <a name="enable-unlimited-archiving--admin-help"></a>Habilitar el archivado ilimitado: ayuda de administración
 
 Puede usar la característica de archivado de ampliación automática de Exchange Online para habilitar el espacio de almacenamiento ilimitado para los buzones de archivo. Cuando el archivado de expansión automática está activado, el espacio de almacenamiento adicional se agrega automáticamente al buzón de archivo de un usuario cuando se acerca al límite de almacenamiento. El resultado es una capacidad de almacenamiento de buzones ilimitada. Puede activar el archivado de expansión automática para todos los usuarios de su organización o solo para usuarios específicos. Para obtener más información acerca del archivado de expansión automática, vea [información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-enable-auto-expanding-archiving"></a>Antes de habilitar el archivado de expansión automática
 
 - Debe ser administrador global de la organización o miembro del grupo de roles de administración de la organización en su organización de Exchange Online para habilitar el archivado de expansión automática para toda la organización o para usuarios específicos. Como alternativa, debe ser miembro de un grupo de roles que tenga asignado el rol destinatarios de correo para habilitar el archivado de expansión automática para usuarios específicos.
     
@@ -98,9 +99,9 @@ Un valor de `True` indica que el archivado de expansión automática está habil
   
 Tenga en cuenta lo siguiente después de habilitar el archivado de expansión automática:
   
-- Si ejecuta el comando **set-OrganizationConfig-AutoExpandingArchive** para habilitar el archivado de expansión automática para su organización, no es necesario que ejecute **enable-Mailbox-AutoExpandingArchive** en buzones individuales. La ejecución del cmdlet **set-OrganizationConfig** para habilitar el archivado de expansión automática para su organización no cambia la propiedad *AutoExpandingArchiveEnabled* de los buzones de usuario a `True`.
+- Si ejecuta el comando **set-OrganizationConfig-AutoExpandingArchive** para habilitar el archivado de expansión automática para su organización, no es necesario que ejecute **enable-Mailbox-AutoExpandingArchive** en buzones individuales. La ejecución del cmdlet **set-OrganizationConfig** para habilitar el archivado de expansión automática para su organización no cambia la propiedad *AutoExpandingArchiveEnabled* de los buzones de usuario a `True` .
     
-- De forma similar, los valores de las propiedades del buzón *ArchiveQuota* y *ArchiveWarningQuota* no cambian cuando habilita el archivado de expansión automática. De hecho, cuando habilita el archivado de expansión automática para un buzón de usuario y la propiedad *AutoExpandingArchiveEnabled* se establece `True`en, se omiten las propiedades *ArchiveQuota* y *ArchiveWarningQuota* . Este es un ejemplo de estas propiedades de buzón de correo después de habilitar el archivado de expansión automática para el buzón de un usuario. 
+- De forma similar, los valores de las propiedades del buzón *ArchiveQuota* y *ArchiveWarningQuota* no cambian cuando habilita el archivado de expansión automática. De hecho, cuando habilita el archivado de expansión automática para un buzón de usuario y la propiedad *AutoExpandingArchiveEnabled* se establece en `True` , se omiten las propiedades *ArchiveQuota* y *ArchiveWarningQuota* . Este es un ejemplo de estas propiedades de buzón de correo después de habilitar el archivado de expansión automática para el buzón de un usuario. 
     
     ![Las propiedades ArchiveQuota y ArchiveWarningQuota se ignoran después de habilitar el archivado de expansión automática](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 

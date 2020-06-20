@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom: seo-marvel-apr2020
+description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que está en conflicto con una directiva DLP.
+ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327268"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819310"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -91,7 +92,7 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
 
 Para cada regla en una directiva DLP, puede:
   
-- Enviar la notificación a las personas que elija. Estas personas pueden ser el propietario del contenido, la persona que modificó por última vez el contenido, el propietario del sitio donde se almacena el contenido o un usuario específico.
+- Send the notification to the people you choose. These people can include the owner of the content, the person who last modified the content, the owner of the site where the content is stored, or a specific user.
     
 - Personalizar el texto que se incluye en la notificación mediante HTML o tokens. Vea la siguiente sección para obtener más información.
     
@@ -106,13 +107,13 @@ Las notificaciones tienen una línea de asunto que comienza con la acción empre
   
 ![Mensaje de notificación](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
-De forma predeterminada, las notificaciones muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
+By default, notifications display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
 |**Si la regla de directiva DLP hace esto...**|**A continuación, la notificación predeterminada para documentos de SharePoint o OneDrive para la empresa indica que...**|**A continuación, la notificación predeterminada para los mensajes de Outlook dice esto...**|
 |:-----|:-----|:-----|
 |Envía una notificación pero no permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización.  <br/> |
 |Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización. El mensaje no se entregó a todos los destinatarios.  <br/> |
-|Bloquea el acceso y envía una notificación  <br/> |Este elemento está en conflicto con una directiva de la organización. El acceso a este elemento está bloqueado para todos excepto para su propietario, para el último usuario que lo modificó y para el administrador de la colección de sitios primaria.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización. El mensaje no se entregó a todos los destinatarios.  <br/> |
+|Bloquea el acceso y envía una notificación  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización. El mensaje no se entregó a todos los destinatarios.  <br/> |
    
 ### <a name="custom-email-notification"></a>Notificación de correo electrónico personalizada
 
@@ -138,17 +139,17 @@ Para cada regla de una directiva DLP, puede configurar sugerencias de directiva 
     
   - Requerir que la persona escriba una justificación del negocio para invalidar la directiva. Esta información se registra y se puede ver en los informes DLP en la sección **informes** del centro de seguridad y &amp; cumplimiento. 
     
-  - Permitir que la persona informe de un falso positivo e invalide la directiva DLP. Esta información también se registra en los informes, de modo que puede usar falsos positivos para ajustar las reglas.
+  - Allow the person to report a false positive and override the DLP policy. This information is also logged for reporting, so that you can use false positives to fine tune your rules.
     
 ![Opciones de sugerencia de Directiva](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 Por ejemplo, puede tener una directiva DLP aplicada a sitios de OneDrive para la empresa que detecta información de identificación personal (PII), y esta directiva tiene tres reglas:
   
-1. Primera regla: Si se detectan menos de cinco instancias de información confidencial en un documento y el documento se comparte con personas que pertenecen a la organización, la acción **Enviar una notificación** muestra una sugerencia de directiva. Para obtener sugerencias de directiva, no se necesitan opciones de invalidación porque esta regla simplemente está avisando a las personas y no está bloqueando el acceso. 
+1. First rule: If fewer than five instances of this sensitive information are detected in a document, and the document is shared with people inside the organization, the **Send a notification** action displays a policy tip. For policy tips, no override options are necessary because this rule is simply notifying people and not blocking access. 
     
 2. Segunda regla: Si se detectan más de cinco instancias de información confidencial en un documento y el documento se comparte con personas que pertenecen a la organización, la acción **Bloquear el acceso al contenido** restringe los permisos para el archivo y la acción **Enviar una notificación** permite a los usuarios invalidar las acciones de esta regla proporcionando una justificación del negocio. A veces, la empresa de su organización requiere que los usuarios internos compartan los datos de PII y no quiere que la Directiva DLP la bloquee este trabajo. 
     
-3. Tercera regla: Si se detectan más de cinco instancias de información confidencial en un documento y el documento se comparte con personas externas a la organización, la acción **Bloquear el acceso al contenido** restringe los permisos para el archivo y la acción **Enviar una notificación** no permite a los usuarios invalidar las acciones de esta regla porque la información se comparte con el exterior. Bajo ninguna circunstancia las personas de su organización pueden compartir datos de PII fuera de la organización. 
+3. Third rule: If greater than five instances of this sensitive information are detected in a document, and the document is shared with people outside the organization, the **Block access to content** action restricts the permissions for the file, and the **Send a notification** action does not allow people to override the actions in this rule because the information is shared externally. Under no circumstances should people in your organization be allowed to share PII data outside the organization. 
     
 Estos son algunos puntos clave para comprender el uso de una sugerencia de directiva para invalidar una regla:
   
@@ -176,17 +177,17 @@ La sugerencia de directiva enumera los problemas con el contenido y, si las suge
   
 ![Sugerencia de directiva con la opción de invalidar](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
-Las directivas DLP se sincronizan con los sitios y el contenido se evalúa con estas periódicamente y de forma asincrónica, por lo que puede haber un breve retraso entre el momento en que se crea la directiva DLP y el momento en que se empiezan a ver sugerencias de directiva. Puede haber un retraso similar desde el momento en que se invalida o resuelve una sugerencia de directiva hasta cuando desaparece el icono en el documento en el sitio.
+DLP policies are synced to sites and contented is evaluated against them periodically and asynchronously, so there may be a short delay between the time you create the DLP policy and the time you begin to see policy tips. There may be a similar delay from when you resolve or override a policy tip to when the icon on the document on the site goes away.
   
 ### <a name="default-text-for-policy-tips-on-sites"></a>Texto predeterminado para las sugerencias de directiva en los sitios
 
-De forma predeterminada, las sugerencias de directiva muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
+By default, policy tips display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
 |Envía una notificación pero no permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización.  <br/> |
 |Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo.  <br/> |
-|Bloquea el acceso y envía una notificación  <br/> |Este elemento está en conflicto con una directiva de la organización. El acceso a este elemento está bloqueado para todos excepto para su propietario, para el último usuario que lo modificó y para el administrador de la colección de sitios primaria.  <br/> |
+|Bloquea el acceso y envía una notificación  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |
    
 ### <a name="custom-text-for-policy-tips-on-sites"></a>Texto personalizado para sugerencias de directivas en los sitios
 
@@ -265,7 +266,7 @@ En cada uno de estos programas de escritorio de Office, los usuarios pueden opta
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto predeterminado para las sugerencias de directiva en Excel 2016, PowerPoint 2016 y Word 2016
 
-De forma predeterminada, las sugerencias de directiva muestran texto similar para lo siguiente en la barra de mensajes y vista Backstage de un documento abierto. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
+By default, policy tips display text similar to the following on the Message Bar and Backstage view of an open document. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
 
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
@@ -287,4 +288,4 @@ Puede personalizar el texto de las sugerencias de directiva independientemente d
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Tipos de información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)

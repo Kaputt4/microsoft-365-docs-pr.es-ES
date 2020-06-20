@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo eliminar los resultados de búsqueda de eDiscovery duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166051"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817919"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -41,17 +43,17 @@ las herramientas de eDiscovery usan una combinación de las siguientes propiedad
 
 - **BodyTagInfo** : se trata de una propiedad interna del almacén de Exchange. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes. 
 
-Durante el proceso de exportación de eDiscovery, se comparan estas tres propiedades para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, esos mensajes se determinan como duplicados y el resultado es que solo se exportará una copia del mensaje si la desduplicación está habilitada. El mensaje que se exporta se conoce como el "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes **Results. csv** y **manifest. XML** incluidos en los resultados de la búsqueda exportados. En el archivo **Results. csv** , se identifica un mensaje duplicado con un valor en la columna **duplicar a elemento** . El valor de esta columna coincide con el valor de la columna **identidad del elemento** del mensaje que se exportó. 
+Durante el proceso de exportación de eDiscovery, se comparan estas tres propiedades para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, esos mensajes se determinan como duplicados y el resultado es que solo se exportará una copia del mensaje si la desduplicación está habilitada. El mensaje que se exporta se conoce como el "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes de **Results.csv** y **Manifest.xml** que se incluyen en los resultados de la búsqueda exportados. En el archivo **Results.csv** , se identifica un mensaje duplicado con un valor en la columna **duplicar a elemento** . El valor de esta columna coincide con el valor de la columna **identidad del elemento** del mensaje que se exportó. 
   
-Los gráficos siguientes muestran cómo se muestran los mensajes duplicados en los informes **Results. csv** y **manifest. XML** que se exportan con los resultados de la búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la propiedad de **identidad de elemento** asignada a los elementos por el almacén de Exchange. 
+Los gráficos siguientes muestran cómo se muestran los mensajes duplicados en el **Results.csv** y **Manifest.xml** informes que se exportan con los resultados de la búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la propiedad de **identidad de elemento** asignada a los elementos por el almacén de Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Informe Results. csv (visto en Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Informe de Results.csv (vista en Excel)
   
-![Ver información acerca de los elementos duplicados en el informe Results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Ver información acerca de los elementos duplicados en el informe de Results.csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Informe de manifest. XML (visto en Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Informe de Manifest.xml (vista en Excel)
   
-![Ver información acerca de los elementos duplicados en el informe manifest. XML](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Ver información acerca de los elementos duplicados en el informe de Manifest.xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Además, se incluyen otras propiedades de los mensajes duplicados en los informes de exportación. Esto incluye el buzón en el que se encuentra el mensaje duplicado, si el mensaje se envió a un grupo de distribución y si el mensaje fue CC o CCO a otro usuario.
   

@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
-description: 'Para los administradores: Obtenga información sobre cómo importar de forma masiva los archivos PST de su organización a buzones de correo de Microsoft 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envían a Microsoft. '
-ms.openlocfilehash: c57814792f8fd8ddb9766135878dfeff5e7d09a7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: El administrador puede obtener información sobre cómo importar archivos PST en masa a los buzones de correo de Microsoft 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envían a Microsoft.
+ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626436"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819090"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el envío de unidades para importar los archivos PST de la organización
 
@@ -50,22 +51,22 @@ Estos son los pasos necesarios para usar el envío de unidades para importar los
   
 Para conocer las preguntas más frecuentes sobre el uso del envío de unidades para importar archivos PST a Office 365, consulte [FAQ para usar el envío de unidades para importar archivos PST](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files). 
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-import-pst-files"></a>Antes de importar archivos PST
 
-- Debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para importar los archivos PST a los buzones de correo de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. También puede crear un grupo de roles, asignarle el rol Mailbox Import Export y agregarse a sí mismo como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+- Debe tener asignado el rol importación y exportación de buzón de Exchange Online para importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. También puede crear un grupo de roles, asignarle el rol Mailbox Import Export y agregarse a sí mismo como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
     Además, para crear trabajos de importación en el Centro de seguridad y cumplimiento, debe cumplirse uno de estos requisitos:
     
   - Debe tener asignado el rol de los destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de administración de la organización y administración de destinatarios.
     
-    O bien
+    O bien:
     
-  - Debe ser administrador global de la organización.
+  - Necesita ser administrador global en su organización.
     
     > [!TIP]
     > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST a Office 365. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación y exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros. 
   
-- Debe almacenar los archivos PST que desea copiar en una unidad de disco duro de un servidor de archivos o una carpeta compartida de la organización. En el paso 2, ejecute la herramienta de importación y exportación de Azure (herramienta waimportexport. exe) que copia los archivos PST que se almacenan en este servidor de archivos o carpeta compartida en la unidad de disco duro.
+- Debe almacenar los archivos PST que desea copiar en una unidad de disco duro de un servidor de archivos o una carpeta compartida de la organización. En el paso 2, ejecute la herramienta de importación y exportación de Azure (WAImportExport.exe) que copia los archivos PST almacenados en este servidor de archivos o carpeta compartida en la unidad de disco duro.
 
 - Es posible que los archivos PST de gran tamaño afecten al rendimiento del proceso de importación de PST. Por lo tanto, se recomienda que cada archivo PST que copie en el disco duro en el paso 2 no supere los 20 GB.
     
@@ -78,7 +79,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
     
 - El envío de unidades está disponible a través de un contrato de Microsoft Enterprise (EA). El envío de unidades no está disponible mediante un Contrato de productos y servicios de Microsoft (MPSA).
     
-- El costo de la importación de archivos PST a Microsoft 365 buzones con el envío de unidades es de $2 USD por GB de datos. Por ejemplo, si envía una unidad de disco duro que contiene 1000 GB (1 TB) de archivos PST, el costo es 2000 USD. Puede colaborar con un asociado para abonar la cuota de importación. Para obtener información sobre cómo buscar un partner, consulte [buscar su partner o revendedor de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=785197).
+- El costo de la importación de archivos PST a Microsoft 365 buzones con el envío de unidades es de $2 USD por GB de datos. Por ejemplo, si envía una unidad de disco duro que contiene 1000 GB (1 TB) de archivos PST, el costo es 2000 USD. Puede colaborar con un asociado para abonar la cuota de importación. Para obtener información sobre cómo buscar un asociado, consulte [Buscar un asociado o distribuidor de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=785197).
     
 - Usted o su organización debe tener una cuenta con FedEx o DHL. 
     
@@ -94,7 +95,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
     
 - Una vez que los archivos PST se importan a un buzón de correo de Microsoft 365, la configuración de la suspensión de retención del buzón de correo se activa durante un período de tiempo indefinido. Esto significa que la directiva de retención asignada al buzón no se procesará hasta que desactive la espera de retención o establezca una fecha para desactivar la retención. ¿Por qué lo hacemos? Si los mensajes importados a un buzón son antiguos, es posible que se eliminen de forma permanente, ya que su período de retención ha caducado en función de la configuración de retención establecida para el buzón. Al colocar el buzón en espera de retención, el propietario del buzón tiene tiempo para administrar estos mensajes recién importados o usted tendrá tiempo para cambiar la configuración de retención del buzón. Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo administrar la suspensión de la retención. 
     
-- De forma predeterminada, el tamaño máximo de mensaje que puede recibir un buzón de correo de Microsoft 365 es de 35 MB. Esto se debe a que el valor predeterminado de la propiedad *MaxReceiveSize* de un buzón está establecido en 35 MB. Sin embargo, el límite del tamaño máximo de recepción de mensajes en Microsoft 365 es de 150 MB. Por lo tanto, si importa un archivo PST que contiene un elemento superior a 35 MB, el servicio de importación de Office 365 cambiará automáticamente el valor de la propiedad *MaxReceiveSize* en el buzón de destino a 150 MB. Esto permite que se importen a buzones de usuario mensajes de hasta 150 MB. 
+- De forma predeterminada, el tamaño máximo de mensaje que puede recibir un buzón de Microsoft 365 es de 35 MB. Esto se debe a que el valor predeterminado de la propiedad *MaxReceiveSize* de un buzón está establecido en 35 MB. Pero el límite de tamaño máximo de recepción de mensajes en Microsoft 365 es de 150 MB. Por lo tanto, si importa un archivo PST que contiene un elemento superior a 35 MB, el servicio de importación de Office 365 cambiará automáticamente el valor de la propiedad *MaxReceiveSize* en el buzón de destino a 150 MB. Esto permite que se importen a buzones de usuario mensajes de hasta 150 MB. 
     
     > [!TIP]
     > Para identificar el tamaño de recepción de un buzón de correo, puede ejecutar este comando en PowerShell de Exchange Online: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
@@ -139,9 +140,9 @@ El primer paso consiste en descargar la clave de almacenamiento seguro y la herr
     
     b. En el paso 3, **Descargue la herramienta de importación y exportación de Azure** para descargar e instalar la herramienta de importación y exportación (versión 1) de Azure.
     
-    - En la ventana emergente, haga clic en **Guardar** \> y **Guardar como** para guardar el archivo WaImportExportV1. zip en una carpeta del equipo local. 
+    - En la ventana emergente, haga clic en **Guardar** y \> **Guardar como** para guardar el archivo de WaImportExportV1.zip en una carpeta del equipo local. 
     
-    - Extraiga el archivo WaImportExportV1. zip.
+    - Extraiga el archivo de WaImportExportV1.zip.
     
 7. Haga clic en **Cancelar** para cerrar el asistente. 
     
@@ -149,7 +150,7 @@ El primer paso consiste en descargar la clave de almacenamiento seguro y la herr
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>Paso 2: copiar los archivos PST en la unidad de disco duro
 
-El paso siguiente es usar la herramienta herramienta waimportexport. exe para copiar los archivos PST en la unidad de disco duro. Esta herramienta cifra la unidad de disco duro con BitLocker, copia los archivos PST en la unidad de disco duro y crea un archivo de diario que almacena información sobre el proceso de copia. Para llevar a cabo este paso, los archivos PST tienen que estar ubicados en un recurso compartido de archivos o en un servidor de archivos de su organización. Esto se conoce como el directorio de origen en el siguiente procedimiento. 
+El paso siguiente es usar la herramienta de WAImportExport.exe para copiar los archivos PST en la unidad de disco duro. Esta herramienta cifra la unidad de disco duro con BitLocker, copia los archivos PST en la unidad de disco duro y crea un archivo de diario que almacena información sobre el proceso de copia. Para llevar a cabo este paso, los archivos PST tienen que estar ubicados en un recurso compartido de archivos o en un servidor de archivos de su organización. Esto se conoce como el directorio de origen en el siguiente procedimiento. 
 
  Como se indicó anteriormente, cada archivo PST que copie en la unidad de disco duro no debe superar los 20 GB. Los archivos PST con un tamaño superior a 20 GB pueden afectar al rendimiento del proceso de importación de PST que comience en el paso 6.
   
@@ -159,7 +160,7 @@ El paso siguiente es usar la herramienta herramienta waimportexport. exe para co
 1. Abra el símbolo del sistema del equipo local.
     
     > [!TIP]
-    > Si ejecuta el símbolo del sistema como administrador (seleccionando "Ejecutar como administrador" al abrirlo), en la ventana del símbolo del sistema aparecerán mensajes de error que le pueden ayudar a solucionar los problemas que aparecen al ejecutar la herramienta WAImportExport.exe. 
+    > If you run the command prompt as an administrator (by selecting "Run as administrator" when you open it) error messages will be displayed in the command prompt window. This can help you troubleshoot problems running the WAImportExport.exe tool. 
   
 2. Vaya al directorio en el que instaló la herramienta WAImportExport.exe en el paso 1.
     
@@ -175,13 +176,13 @@ El paso siguiente es usar la herramienta herramienta waimportexport. exe para co
     |:-----|:-----|:-----|
     | `/j:` <br/> |Especifica el nombre del archivo de diario. Este archivo se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe. Todas las unidades de disco duro que envíe a Microsoft deben tener un archivo de diario. Cada vez que ejecute la herramienta WAImportTool.exe para copiar archivos PST en una unidad de disco duro, la información se anexará al archivo de diario de esa unidad.  <br/> El personal del centro de datos de Microsoft usa la información del archivo de diario para asociar la unidad de disco duro con el trabajo de importación que ha creado en el paso 4 y para cargar los archivos PST en el área de almacenamiento de Azure en la nube de Microsoft.  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |Especifica la letra de la unidad de disco duro cuando se conecta a su equipo local.  <br/> | `/t:h` <br/> |
-    | `/id:` <br/> |Especifica el nombre de la sesión de copia. Cada vez que ejecuta la herramienta WAImportExport.exe para copiar los archivos en la unidad de disco duro, se define una sesión. Los archivos PST se copian en una carpeta cuyo nombre es el nombre de la sesión especificado por este parámetro.   <br/> | `/id:driveship1` <br/> |
+    | `/id:` <br/> |Specifies the name of the copy session. A session is defined as each time you run the WAImportExport.exe tool to copy files to the hard drive. The PST files are copied to a folder named with the session name specified by this parameter.  <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se copiarán durante la sesión. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de almacenamiento de Azure en la nube de Microsoft donde se cargarán los archivos PST. Debe usar el valor `ingestiondata/`. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede Agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso al archivo del directorio de origen en la unidad de disco duro (convertida a un formato de dirección URL `/srcdir:` ), que se especifica en el parámetro. Por ejemplo, `\\FILESERVER01\PSTs` se cambia a `FILESERVER01/PSTs`. En este caso, aún debe incluir `ingestiondata` en la ruta de acceso al archivo. Por lo tanto, en este ejemplo, el `/dstdir:` valor del parámetro `"ingestiondata/FILESERVER01/PSTs"`sería.  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> si incluye el nombre de ruta opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de almacenamiento de Azure incluye el nombre de ruta de usuario y el nombre del archivo PST; por ejemplo, `FILESERVER01/PSTs/annb.pst`. Si no incluye una ruta de ruta, el espacio de nombres es solo el nombre del archivo PST; por ejemplo `annb.pst`.           | `/dstdir:"ingestiondata/"` <br/> O bien  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Especifica el directorio de destino en el área de almacenamiento de Azure en la nube de Microsoft donde se cargarán los archivos PST. Debe usar el valor `ingestiondata/` . No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> Opcionalmente, también puede Agregar una ruta de acceso de archivo adicional al valor de este parámetro. Por ejemplo, puede usar la ruta de acceso al archivo del directorio de origen en la unidad de disco duro (convertida a un formato de dirección URL), que se especifica en el `/srcdir:` parámetro. Por ejemplo, `\\FILESERVER01\PSTs` se cambia a `FILESERVER01/PSTs` . En este caso, aún debe incluir `ingestiondata` en la ruta de acceso al archivo. Por lo tanto, en este ejemplo, el valor del `/dstdir:` parámetro sería `"ingestiondata/FILESERVER01/PSTs"` .  <br/> Si tiene archivos PST con el mismo nombre de archivo, debería agregar la ruta de acceso de archivo adicional.  <br/> > [!NOTE]> si incluye el nombre de ruta opcional, el espacio de nombres de un archivo PST después de cargarlo en el área de almacenamiento de Azure incluye el nombre de ruta de usuario y el nombre del archivo PST; por ejemplo, `FILESERVER01/PSTs/annb.pst` . Si no incluye una ruta de ruta, el espacio de nombres es solo el nombre del archivo PST; por ejemplo `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> O bien:  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |Especifica la clave de la cuenta de almacenamiento que obtuvo en el paso 1. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |Especifica el tipo de blobs en el área de almacenamiento de Azure en el que se van a importar los archivos PST. Para importar archivos PST, use el valor **BlockBlob**. Este parámetro es obligatorio.   <br/> | `/blobtype:BlockBlob` <br/> |
-    | `/encrypt` <br/> |Este modificador activa BitLocker en la unidad de disco duro. Este parámetro es necesario la primera vez que ejecuta la herramienta WAImportExport.exe.  <br/> La clave de cifrado de BitLocker se copia en el archivo de diario y el archivo de registro que se `/logfile:` crea si se usa el parámetro. Como se ha explicado anteriormente, el archivo de diario se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe.  <br/> | `/encrypt` <br/> |
-    | `/logdir:` <br/> |Este parámetro opcional especifica una carpeta en la que se guardan los archivos de registro. Si no se especifica, los archivos de registro se guardan en la misma carpeta en la que se encuentra la herramienta herramienta waimportexport. exe. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
+    | `/encrypt` <br/> |Este modificador activa BitLocker en la unidad de disco duro. Este parámetro es necesario la primera vez que ejecuta la herramienta WAImportExport.exe.  <br/> La clave de cifrado de BitLocker se copia en el archivo de diario y el archivo de registro que se crea si se usa el `/logfile:` parámetro. Como se ha explicado anteriormente, el archivo de diario se guarda en la misma carpeta en la que se encuentra la herramienta WAImportExport.exe.  <br/> | `/encrypt` <br/> |
+    | `/logdir:` <br/> |Este parámetro opcional especifica una carpeta en la que se guardan los archivos de registro. Si no se especifica, los archivos de registro se guardan en la misma carpeta en la que se encuentra la herramienta de WAImportExport.exe. No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
    
     A continuación se muestra un ejemplo de la sintaxis de la herramienta WAImportExport.exe, en el que se usan valores reales para cada parámetro:
     
@@ -189,7 +190,7 @@ El paso siguiente es usar la herramienta herramienta waimportexport. exe para co
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
-    Después de ejecutar el comando, aparecen mensajes de estado en los que se muestra el progreso de la copia de los archivos PST en la unidad de disco duro. En un mensaje de estado final aparece el número total de archivos copiados correctamente. 
+    After you run the command, status messages are displayed that show the progress of copying the PST files to the hard drive. A final status message shows the total number of files that were successfully copied.
     
 4. Ejecute este comando cada vez que ejecute la herramienta WAImportExport.ext para copiar los archivos PST en la misma unidad de disco duro.
 
@@ -209,7 +210,7 @@ Después de que el personal del centro de datos de Microsoft cargue los archivos
   
 1. [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
     
-2. Abra o guarde el archivo CSV en el equipo local. En el ejemplo siguiente se muestra un archivo de asignación de importaciones de archivos PST completado (que se abre en el Bloc de notas). Es mucho más fácil usar Microsoft Excel para editar el archivo CSV.
+2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
@@ -234,12 +235,12 @@ Después de que el personal del centro de datos de Microsoft cargue los archivos
     
     |**Parámetro**|**Descripción**|**Ejemplo**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Especifica el servicio al que se importarán los datos. Use `Exchange` para importar archivos PST a los buzones de los usuarios.  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> | Especifica la ubicación de la carpeta en el área de almacenamiento de Azure en la que se copiarán los archivos PST cuando se envíe la unidad de disco duro a Microsoft.  <br/>  La información que agregue en esta columna en el archivo CSV depende de lo que haya especificado en `/dstdir:` para el parámetro en el paso anterior. Si tiene subcarpetas en la ubicación de origen, el valor del `FilePath` parámetro debe contener la ruta de acceso relativa para la subcarpeta; por ejemplo,/Folder1/user1/.  <br/>  Si ha usado `/dstdir:"ingestiondata/"`, deje este parámetro en blanco en el archivo CSV.  <br/>  Si incluyó una ruta de directorio opcional para el valor del `/dstdir:` parámetro (por ejemplo, `/dstdir:"ingestiondata/FILESERVER01/PSTs"`y, a continuación, use ese directorio (no se incluye "ingestiondata") para este parámetro en el archivo CSV. El valor de este parámetro distingue mayúsculas de minúsculas.  <br/>  En cualquier caso, *no* incluya "ingestiondata" en el valor del parámetro `FilePath`. Deje este parámetro en blanco o especifique solo el directorio opcional.  <br/> > [!IMPORTANT]> el caso del nombre de la ruta de acceso del archivo debe coincidir con el que `/dstdir:` especificó en el parámetro del paso anterior. Por ejemplo, si ha usado `"ingestiondata/FILESERVER01/PSTs"` para el nombre de la subcarpeta en el paso anterior y, a `fileserver01/psts` continuación, `FilePath` se usa en el parámetro en el archivo CSV, se producirá un error en la importación del archivo pst. Asegúrese de usar las mismas mayúsculas y minúsculas en ambas instancias.           |(se deja en blanco)  <br/> O bien  <br/>  `FILESERVER01/PSTs` <br/> |
+    | `Workload` <br/> |Especifica el servicio en el que se importarán los datos. Use `Exchange` para importar archivos PST a los buzones de los usuarios.  <br/> | `Exchange` <br/> |
+    | `FilePath` <br/> | Especifica la ubicación de la carpeta en el área de almacenamiento de Azure en la que se copiarán los archivos PST cuando se envíe la unidad de disco duro a Microsoft.  <br/>  La información que agregue en esta columna en el archivo CSV depende de lo que haya especificado en para el `/dstdir:` parámetro en el paso anterior. Si tiene subcarpetas en la ubicación de origen, el valor del `FilePath` parámetro debe contener la ruta de acceso relativa para la subcarpeta; por ejemplo,/Folder1/user1/.  <br/>  Si ha usado `/dstdir:"ingestiondata/"` , deje este parámetro en blanco en el archivo CSV.  <br/>  Si incluyó una ruta de directorio opcional para el valor del `/dstdir:` parámetro (por ejemplo, `/dstdir:"ingestiondata/FILESERVER01/PSTs"` y, a continuación, use ese directorio (no se incluye "ingestiondata") para este parámetro en el archivo CSV. El valor de este parámetro distingue mayúsculas de minúsculas.  <br/>  En cualquier caso, *no* incluya "ingestiondata" en el valor del parámetro `FilePath`. Deje este parámetro en blanco o especifique solo el directorio opcional.  <br/> > [!IMPORTANT]> el caso del nombre de la ruta de acceso del archivo debe coincidir con el que especificó en el `/dstdir:` parámetro del paso anterior. Por ejemplo, si ha usado `"ingestiondata/FILESERVER01/PSTs"` para el nombre de la subcarpeta en el paso anterior y, a continuación, `fileserver01/psts` se usa en el `FilePath` parámetro en el archivo CSV, se producirá un error en la importación del archivo pst. Asegúrese de usar las mismas mayúsculas y minúsculas en ambas instancias.           |(se deja en blanco)  <br/> O bien  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |Especifica el nombre del archivo PST que se importará al buzón del usuario. El valor de este parámetro distingue mayúsculas de minúsculas.  <br/> > [!IMPORTANT]> el caso del nombre de archivo PST en el archivo CSV debe ser el mismo que el archivo PST que se cargó en la ubicación de almacenamiento de Azure en el paso 2. Por ejemplo, si usa `annb.pst` en el parámetro `Name` del archivo CSV, pero el nombre del archivo PST real es `AnnB.pst`, se producirá un error en la importación de ese archivo PST. Asegúrese de que el nombre del PST en el archivo CSV use las mismas mayúsculas y minúsculas que el archivo PST real.           | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Especifica la dirección de correo electrónico del buzón en el que se importará el archivo PST. No puede especificar una carpeta pública porque el servicio de importación de PST no admite la importación de archivos PST a carpetas públicas.  <br/> Para importar un archivo PST a un buzón inactivo, tiene que especificar el GUID del buzón de correo de este parámetro. Para obtener este GUID, ejecute el siguiente comando de PowerShell en Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> a veces, puede tener varios buzones con la misma dirección de correo electrónico, donde un buzón es un buzón activo y el otro buzón está en un estado eliminado temporalmente (o inactivo). En estas situaciones, tiene que especificar el GUID del buzón de correo para identificar exclusivamente el buzón en el que se importa el archivo PST. Para obtener este GUID para los buzones activos, ejecute el siguiente comando de PowerShell: `Get-Mailbox <identity of active mailbox> | FL Guid`. Para obtener el GUID de los buzones eliminados temporalmente (o inactivos), ejecute este `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`comando:.           | `annb@contoso.onmicrosoft.com` <br/> O bien:  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Especifica si se va a importar el archivo PST en el buzón de archivo del usuario. Hay dos opciones:  <br/> **False** Importa el archivo PST en el buzón de correo principal del usuario.  <br/> **True** Importa el archivo PST en el buzón de archivo del usuario. Esto supone que el [buzón de archivo del usuario está habilitado](enable-archive-mailboxes.md). Si establece este parámetro en `TRUE` y el buzón de archivo del usuario no está habilitado, se producirá un error en la importación para ese usuario. Si falla una importación para un usuario (porque su archivo no está habilitado y esta propiedad se establece en `TRUE`), los demás usuarios en el trabajo de importación no se verán afectados.  <br/>  Si deja este parámetro en blanco, el archivo PST se importa al buzón de correo principal del usuario.  <br/> **Nota**: para importar un archivo PST a un buzón de archivo basado en la nube para un usuario cuyo buzón de correo principal es local, solo tiene que especificar `TRUE` para este parámetro y especificar la dirección de correo electrónico del buzón local del usuario para el parámetro `Mailbox`.  <br/> | `FALSE` <br/> O bien  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Especifica la carpeta en la que se importa el archivo PST.  <br/>  Si deja este parámetro en blanco, el archivo PST se importará a una nueva carpeta denominada **importada** que se encuentre en el nivel raíz del buzón de correo (el mismo nivel que la carpeta Bandeja de entrada y las otras carpetas de buzón de correo predeterminadas).  <br/>  Si especifica `/`, los elementos del archivo pst se importarán directamente en la carpeta Bandeja de entrada del usuario.  <br/>  Si especifica `/<foldername>`, los elementos del archivo pst se importarán a una carpeta llamada * \<NombreCarpeta\>*. Por ejemplo, si usa `/ImportedPst`, los elementos se importarán a una carpeta llamada **PST importados**. Esta carpeta estará ubicada en el buzón del usuario en el mismo nivel que la carpeta Bandeja de entrada.  <br/> |(se deja en blanco)  <br/> O bien  <br/>  `/` <br/> O bien  <br/>  `/ImportedPst` <br/> |
+    | `Mailbox` <br/> |Especifica la dirección de correo electrónico del buzón en el que se importará el archivo PST. No puede especificar una carpeta pública porque el servicio de importación de PST no admite la importación de archivos PST a carpetas públicas.  <br/> Para importar un archivo PST a un buzón inactivo, tiene que especificar el GUID del buzón de correo de este parámetro. Para obtener este GUID, ejecute el siguiente comando de PowerShell en Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> a veces, puede tener varios buzones con la misma dirección de correo electrónico, donde un buzón es un buzón activo y el otro buzón está en un estado eliminado temporalmente (o inactivo). En estas situaciones, tiene que especificar el GUID del buzón de correo para identificar exclusivamente el buzón en el que se importa el archivo PST. Para obtener este GUID para los buzones activos, ejecute el siguiente comando de PowerShell: `Get-Mailbox <identity of active mailbox> | FL Guid`. Para obtener el GUID de los buzones eliminados temporalmente (o inactivos), ejecute este comando: `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid` .           | `annb@contoso.onmicrosoft.com` <br/> O bien:  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | Especifica si se va a importar el archivo PST en el buzón de archivo del usuario. Hay dos opciones:  <br/> **False** Importa el archivo PST en el buzón de correo principal del usuario.  <br/> **True** Importa el archivo PST en el buzón de archivo del usuario. Esto supone que el [buzón de archivo del usuario está habilitado](enable-archive-mailboxes.md). Si establece este parámetro en `TRUE` y el buzón de archivo del usuario no está habilitado, se producirá un error en la importación para ese usuario. Si falla una importación para un usuario (porque su archivo no está habilitado y esta propiedad se establece en `TRUE`), los demás usuarios en el trabajo de importación no se verán afectados.  <br/>  Si deja este parámetro en blanco, el archivo PST se importa al buzón de correo principal del usuario.  <br/> **Nota**: para importar un archivo PST a un buzón de archivo basado en la nube para un usuario cuyo buzón de correo principal es local, solo tiene que especificar `TRUE` para este parámetro y especificar la dirección de correo electrónico del buzón local del usuario para el parámetro `Mailbox`.  <br/> | `FALSE` <br/> O bien:  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | Especifica la carpeta en la que se importa el archivo PST.  <br/>  Si deja este parámetro en blanco, el archivo PST se importará a una nueva carpeta denominada **importada** que se encuentre en el nivel raíz del buzón de correo (el mismo nivel que la carpeta Bandeja de entrada y las otras carpetas de buzón de correo predeterminadas).  <br/>  Si especifica `/` , los elementos del archivo pst se importarán directamente en la carpeta Bandeja de entrada del usuario.  <br/>  Si especifica `/<foldername>` , los elementos del archivo pst se importarán a una carpeta denominada *\<foldername\>* . Por ejemplo, si usa `/ImportedPst`, los elementos se importarán a una carpeta llamada **PST importados**. Esta carpeta estará ubicada en el buzón del usuario en el mismo nivel que la carpeta Bandeja de entrada.  <br/> |(se deja en blanco)  <br/> O bien:  <br/>  `/` <br/> O bien  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Este parámetro opcional especifica un valor numérico de la página de códigos que se usa para importar archivos PST en el formato de archivo ANSI. Este parámetro se usa para importar archivos PST de las organizaciones de chino, japonés y coreano, porque estos idiomas suelen usar un juego de caracteres doble byte (DBCS) para la codificación de caracteres. Si no se usa este parámetro para importar archivos PST de los idiomas que usan DBCS para los nombres de las carpetas de buzón, dichos nombres suelen ser incomprensibles después de la importación.  <br/> Para obtener una lista de los valores compatibles que se pueden usar para este parámetro, vea [Identificadores de página de códigos](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> > [!NOTE]> como se indicó anteriormente, este es un parámetro opcional y no es necesario incluirlo en el archivo CSV. También puede incluirlo y dejar el valor en blanco para una o varias filas.           |(se deja en blanco)  <br/> O bien  <br/>  `932` (que es el identificador de página de códigos para ANSI/OEM japonés)  <br/> |
     | `SPFileContainer` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.  <br/> |No aplicable  <br/> |
     | `SPManifestContainer` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.  <br/> |No aplicable  <br/> |
@@ -268,14 +269,14 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
     ![Haga clic en las dos casillas de verificación del paso 6](../media/fad43078-ea68-4acd-b2ed-75a800183262.png)
   
-7. En la página **seleccionar el archivo de unidad** , haga clic en **Seleccionar archivo de unidad**y, a continuación, vaya a la misma carpeta en la que se encuentra la herramienta herramienta waimportexport. exe. En esta carpeta se copió el archivo de diario creado en el paso 2.
+7. En la página **seleccionar el archivo de unidad** , haga clic en **Seleccionar archivo de unidad**y, a continuación, vaya a la misma carpeta en la que se encuentra la herramienta de WAImportExport.exe. En esta carpeta se copió el archivo de diario creado en el paso 2.
     
-    ![Haga clic en seleccionar archivo de unidad para enviar el archivo de diario que se creó al ejecutar la herramienta herramienta waimportexport. exe](../media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
+    ![Haga clic en seleccionar archivo de unidad para enviar el archivo de diario que se creó al ejecutar la herramienta de WAImportExport.exe](../media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
   
-8. Seleccione el archivo de diario; por ejemplo, `PSTHDD1.jrn`.
+8. Seleccione el archivo de diario; por ejemplo, `PSTHDD1.jrn` .
     
     > [!TIP]
-    > Cuando ejecutó la herramienta herramienta waimportexport. exe en el paso 2, el `/j:` parámetro especificó el nombre del archivo de diario. 
+    > Cuando ejecutó la herramienta de WAImportExport.exe en el paso 2, el parámetro especificó el nombre del archivo de diario `/j:` . 
   
 9. Una vez que el nombre del archivo de la unidad aparezca en **nombre de archivo**de la unidad, haga clic en **validar** para comprobar si hay errores en el archivo de la unidad. 
     
@@ -288,7 +289,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 10. Después de agregar y validar un archivo de diario para cada unidad de disco duro que envíe a Microsoft, haga clic en **siguiente**.
     
-11. Haga ![clic en](../media/ITPro-EAC-AddIcon.gif) agregar icono **Seleccione el archivo de asignación** para enviar el archivo de asignación de importaciones de PST que creó en el paso 3. 
+11. Haga clic en ![ Agregar icono ](../media/ITPro-EAC-AddIcon.gif) **Seleccione el archivo de asignación** para enviar el archivo de asignación de importaciones de PST que creó en el paso 3. 
     
     ![Hacer clic en Seleccionar el archivo de asignación para enviar el archivo CSV que ha creado para el trabajo de importación](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
@@ -308,7 +309,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
     
     Cuando el trabajo de importación se crea correctamente, se muestra una página de estado que explica los pasos siguientes del proceso de envío de la unidad.
     
-16. En la página **importar archivos PST** , haga ![clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para mostrar el nuevo trabajo de importación de envío de unidades en la lista de trabajos de importación. El estado se establece en **Waiting para el número de seguimiento**. También puede hacer clic en el trabajo de importación para mostrar la página flotante de estado, que contiene información más detallada sobre el trabajo de importación.
+16. En la página **importar archivos PST** , haga clic en ![ Actualizar icono ](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para mostrar el nuevo trabajo de importación de envío de unidades en la lista de trabajos de importación. El estado se establece en **Waiting para el número de seguimiento**. También puede hacer clic en el trabajo de importación para mostrar la página flotante de estado, que contiene información más detallada sobre el trabajo de importación.
  
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Paso 5: enviar la unidad de disco duro a Microsoft
 
@@ -329,7 +330,7 @@ Tenga en cuenta lo siguiente a la hora de enviar las unidades de disco duro a Mi
     
 - Envíe la unidad de disco duro a la dirección de la ubicación de Microsoft que aparecía al crear el trabajo de importación en el paso 4. No olvide incluir «Office 365 Import Service» en la dirección de envío.
     
-- Después de enviar la unidad de disco duro, asegúrese de anotar el nombre del transportista y el número de seguimiento, que deberá especificar en el siguiente paso.
+- After you ship the hard drive, be sure to write down the name of the delivery carrier and the tracking number. You'll provide these in the next step.
     
 ### <a name="enter-the-tracking-number-and-other-shipping-information"></a>Indicar el número de seguimiento y otros datos de envío
 
@@ -353,7 +354,7 @@ Cuando haya enviado la unidad de disco duro a Microsoft, lleve a cabo el procedi
     
 6. Haga clic en **Guardar** para guardar esta información del trabajo de importación. 
     
-    En la página **importar archivos PST** , haga ![clic en](../media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono **Actualizar** para actualizar la información de su trabajo de importación de envío de unidad. Observe que el estado ahora está establecido en **Unidades en tránsito**.
+    En la página **importar archivos PST** , haga clic en ![ Actualizar icono ](../media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar la información de su trabajo de importación de envío de unidad. Observe que el estado ahora está establecido en **Unidades en tránsito**.
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Paso 6: filtrar los datos e iniciar el trabajo de importación de PST
 
@@ -363,11 +364,11 @@ Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador de su organización. 
     
-2. En el panel izquierdo, haga clic en **información del gobierno** \> **Import** \> de información para importar **archivos PST de importación**.
+2. En el panel izquierdo, haga clic en **información del gobierno de información** para importar \> **Import** \> **archivos PST de importación**.
     
 3. En la página **importar archivos PST** , haga clic en **listo para importar a Office 365** para el trabajo de importación que ha creado en el paso 4. 
     
-    ![Haga clic en listo para importar a Microsoft 365 junto al trabajo de importación que ha creado.](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Haga clic en Preparado para importar a Microsoft 365, junto al trabajo de importación que ha creado.](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     Se muestra una página de control flotante con información sobre los archivos PST y otra información sobre el trabajo de importación.
     
@@ -447,7 +448,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 - **¿Qué sucede si se produce un error en el trabajo de importación debido a errores en el archivo de asignación CSV de importación de PST?** Si se produce un error en un trabajo de importación debido a errores en el archivo de asignación, no es necesario reenviar la unidad de disco duro a Microsoft para crear un trabajo de importación. Esto se debe a que los archivos PST de la unidad de disco duro que envió para el trabajo de importación de envío de unidades ya se han cargado en el área de almacenamiento de Azure para su organización. En este caso, solo tiene que corregir los errores en el archivo de asignación CSV de importación de PST y, a continuación, crear un nuevo trabajo de importación de carga de red y enviar el archivo de asignación. CSV revisado. Para crear e iniciar un nuevo trabajo de importación de carga de red, vea el [paso 5: crear un trabajo de importación de PST en Microsoft 365](use-network-upload-to-import-pst-files.md#step-5-create-a-pst-import-job) y [paso 6: filtrar datos e iniciar el trabajo de importación de PST](use-network-upload-to-import-pst-files.md#step-6-filter-data-and-start-the-pst-import-job) en el tema sobre cómo usar la carga de red para importar archivos PST a Office 365. 
     
     > [!NOTE]
-    > Para ayudarle a solucionar problemas del archivo de asignación CSV de importación de archivos PST, use la herramienta [Azure Storage Explorer](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) para ver la estructura de carpetas en el contenedor **ingestiondata** de los archivos PST de la unidad de disco duro que se cargaron en el área de almacenamiento de Azure. Los errores de asignación de archivos normalmente se producen por un valor incorrecto en el parámetro FilePath. Este parámetro especifica la ubicación de un archivo PST en el área de almacenamiento de Azure. Vea la descripción del parámetro FilePath en la tabla en el [paso 3](#step-3-create-the-pst-import-mapping-file). Como se explicó anteriormente, el `/dstdir:` parámetro especificó la ubicación de los archivos PST en el área de almacenamiento de Azure cuando ejecutó la herramienta herramienta waimportexport. exe en el [paso 2](#step-2-copy-the-pst-files-to-the-hard-drive). 
+    > Para ayudarle a solucionar problemas del archivo de asignación CSV de importación de archivos PST, use la herramienta [Azure Storage Explorer](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) para ver la estructura de carpetas en el contenedor **ingestiondata** de los archivos PST de la unidad de disco duro que se cargaron en el área de almacenamiento de Azure. Los errores de asignación de archivos normalmente se producen por un valor incorrecto en el parámetro FilePath. Este parámetro especifica la ubicación de un archivo PST en el área de almacenamiento de Azure. Vea la descripción del parámetro FilePath en la tabla en el [paso 3](#step-3-create-the-pst-import-mapping-file). Como se ha explicado anteriormente, el parámetro especifica la ubicación de los archivos PST en el área de almacenamiento de Azure `/dstdir:` cuando se ejecutó la herramienta de WAImportExport.exe en el [paso 2](#step-2-copy-the-pst-files-to-the-hard-drive). 
   
 ## <a name="more-information"></a>Más información
 
@@ -467,7 +468,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
     
   - Proteger la organización frente a la [pérdida de datos](data-loss-prevention-policies.md) de información confidencial. 
     
-- A continuación se muestra un ejemplo de la clave de la cuenta de almacenamiento seguro y una clave de cifrado de BitLocker. Este ejemplo también contiene la sintaxis del comando WAImportExport.exe que ejecutó para copiar los archivos PST en una unidad de disco duro. Asegúrese de tomar precauciones para protegerlos de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad.
+- Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
     
 
     ```text
@@ -500,13 +501,13 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
   WAImportExport.exe PrepImport /j:PSTHDD1.jrn /id:driveship2 /srcdir:"\\FILESERVER1\PSTs\SecondBatch" /dstdir:"ingestiondata/" /blobtype:BlockBlob
     ```
 
-- Como se ha explicado anteriormente, el servicio de importación de Office 365 activa la opción de suspensión de retención (durante un período de tiempo indefinido) después de que los archivos PST se importan a un buzón. Esto significa que la propiedad *RentionHoldEnabled* se establece `True` en para que no se procese la Directiva de retención asignada al buzón. Esto da al propietario del buzón tiempo para administrar los mensajes recién importados evitando que una directiva de eliminación o de archivado elimine o archive los mensajes más antiguos. Estos son algunos pasos que puede seguir para administrar esta suspensión de retención: 
+- Como se ha explicado anteriormente, el servicio de importación de Office 365 activa la opción de suspensión de retención (durante un período de tiempo indefinido) después de que los archivos PST se importan a un buzón. Esto significa que la propiedad *RentionHoldEnabled* se establece en para `True` que no se procese la Directiva de retención asignada al buzón. Esto da al propietario del buzón tiempo para administrar los mensajes recién importados evitando que una directiva de eliminación o de archivado elimine o archive los mensajes más antiguos. Estos son algunos pasos que puede seguir para administrar esta suspensión de retención: 
     
-  - Después de un período de tiempo determinado, puede desactivar la suspensión de la retención mediante la `Set-Mailbox -RetentionHoldEnabled $false` ejecución del comando. Para obtener instrucciones, vea [Aplicar la suspensión de retención a un buzón](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+  - Después de un período de tiempo determinado, puede desactivar la suspensión de la retención mediante la ejecución del `Set-Mailbox -RetentionHoldEnabled $false` comando. Para obtener instrucciones, vea [Aplicar la suspensión de retención a un buzón](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Puede configurar la suspensión de retención para que esté desactivada en una fecha futura. Para ello, ejecute el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es el 1 de junio de 2016 y desea que la suspensión de la retención esté desactivada en 30 días, `Set-Mailbox -EndDateForRetentionHold 7/1/2016`ejecutaría el siguiente comando:. En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en *true*. Para obtener más información, vea [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Puede configurar la suspensión de retención para que esté desactivada en una fecha futura. Para ello, ejecute el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es el 1 de junio de 2016 y desea que la suspensión de la retención esté desactivada en 30 días, ejecutaría el siguiente comando: `Set-Mailbox -EndDateForRetentionHold 7/1/2016` . En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en *true*. Para obtener más información, vea [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
-  - Puede cambiar la configuración de la directiva de retención que está asignada a un buzón para que los elementos antiguos importados no se eliminen inmediatamente ni se muevan al buzón de archivo del usuario. Por ejemplo, podría alargar la antigüedad de la retención de una directiva de archivado o eliminación que se asigna al buzón. En este escenario, debe desactivar la suspensión de retención en el buzón de correo después de cambiar la configuración de la directiva de retención. Para obtener más información, consulte [configurar una directiva de archivo y eliminación para los buzones de la organización](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+  - Puede cambiar la configuración de la directiva de retención que está asignada a un buzón para que los elementos antiguos importados no se eliminen inmediatamente ni se muevan al buzón de archivo del usuario. Por ejemplo, podría alargar la antigüedad de la retención de una directiva de archivado o eliminación que se asigna al buzón. En este escenario, debe desactivar la suspensión de retención en el buzón de correo después de cambiar la configuración de la directiva de retención. Para obtener más información, vea [Configurar una directiva de archivado y eliminación de buzones en la organización](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     
 
   

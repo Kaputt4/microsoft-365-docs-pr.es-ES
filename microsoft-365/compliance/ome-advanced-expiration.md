@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Con Office 365 avanzadas capacidades de cifrado de mensajes sobre el cifrado de mensajes de Office 365 (OME), puede ampliar su seguridad de correo electrónico estableciendo una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de personalización de marca.
+description: Use el cifrado avanzado de mensajes de Office 365 para ampliar la seguridad del correo electrónico mediante la configuración de una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f555e707cb377033c3bf643785e18b9203be0560
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036063"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818693"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado con el Cifrado de mensajes avanzado de Office 365
 

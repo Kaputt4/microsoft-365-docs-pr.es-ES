@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la característica de importación de contenido no de Office 365 para cargar documentos que no son de Office 365 en pruebas en una investigación de datos.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034418"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815487"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Cargar datos que no son de Microsoft 365 en pruebas
 
 No todos los documentos que puede que necesite analizar en una investigación de datos se ubicarán en Microsoft 365. Con la característica de importación de contenido que no es de Microsoft 365, puede cargar documentos que no vivan en Microsoft 365 en pruebas para que puedan analizarse en una investigación de datos.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="requirements-to-upload-non-office-365-content"></a>Requisitos para cargar contenido no de Office 365
 
 Para usar la característica de carga que no es de Microsoft 365, tal y como se describe en este procedimiento, es necesario que:
 
@@ -42,7 +44,7 @@ Para usar la característica de carga que no es de Microsoft 365, tal y como se 
 
 - Una cuenta que sea un administrador de eDiscovery o un administrador de exhibición de documentos electrónicos herramientas de almacenamiento de Microsoft Azure instaladas en un equipo que tenga acceso a la estructura de carpetas de contenido que no son de Microsoft 365.
 
-- Instale AzCopy, que puede hacer desde aquí:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- Instale AzCopy, que puede hacer desde [Introducción a azcopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy).
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>Cargar contenido que no es de Microsoft 365 en una investigación de datos
 

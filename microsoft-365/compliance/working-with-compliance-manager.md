@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo. Úsela para realizar un seguimiento, asignar y comprobar las actividades de cumplimiento normativo relacionadas con los productos de Microsoft.
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo usar el administrador de cumplimiento para realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con productos de Microsoft.
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790667"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817087"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -149,7 +151,7 @@ Seleccione **Administración de inquilinos** en la esquina superior derecha de l
 
 Las dimensiones son conjuntos de metadatos que proporcionan información sobre una plantilla, una evaluación o un elemento de acción. Las dimensiones usan el concepto de claves y valores, donde la clave de dimensión representa una propiedad y el valor de dimensión representa valores válidos para la propiedad. Por ejemplo, en el administrador de cumplimiento hay tres tipos de acciones. Están definidas por una clave de dimensión de **propósito de acción** y valores de dimensión de **preventivo**, **detective**y **corrector**.
 
-### <a name="owners"></a>Propietarios
+### <a name="owners"></a>Owners
 
 Los propietarios se usan para identificar a la persona responsable de cada control. Todos los controles integrados son propiedad de Microsoft, clientes o ambos. Puede crear valores personalizados para los propietarios que se pueden usar para especificar más responsabilidades granulares en la organización. Por ejemplo, puede crear propietarios que representen grupos específicos, equipos o unidades de negocio dentro de su organización.
 

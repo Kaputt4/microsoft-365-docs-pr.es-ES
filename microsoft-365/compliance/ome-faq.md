@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717159"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818683"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -103,7 +104,7 @@ Los usuarios de Microsoft 365 pueden leer y responder desde Outlook para Windows
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>¿Qué tipos de archivo se admiten como datos adjuntos en correos electrónicos protegidos? ¿Los datos adjuntos heredan las directivas de protección asociadas con los correos electrónicos protegidos?
 
-Puede adjuntar cualquier tipo de archivo a un correo protegido, pero las directivas de protección solo se aplican a los formatos de archivo que se mencionan [aquí](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
+Puede adjuntar cualquier tipo de archivo a un correo protegido, pero las directivas de protección se aplican solo en los formatos de archivo mencionados en los [tipos de archivo compatibles con el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint, el archivo siempre está protegido, incluso después de que el destinatario haya descargado los datos adjuntos. Por ejemplo, si un dato adjunto está protegido por no reenviar y el destinatario original descarga y reenvía los datos adjuntos a un nuevo destinatario, el nuevo destinatario no podrá abrir el archivo protegido.
   

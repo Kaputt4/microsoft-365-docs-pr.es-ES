@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615994"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817759"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -36,7 +37,7 @@ Los mensajes de correo electrónico cifrados con RMS incluidos en los resultados
   
 Exportar los resultados de una búsqueda de contenido implica preparar los resultados y, a continuación, descargarlos en un equipo local.
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-export-content-search-results"></a>Antes de exportar los resultados de la búsqueda de contenido
 
 - Para exportar los resultados de la búsqueda, debe tener asignado el rol de administración exportar en el centro de seguridad & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
     
@@ -60,15 +61,15 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
 - Cuando descargue los resultados de la búsqueda (descritos en el paso 2), puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Cuando se exportan los resultados de búsqueda, los datos se almacenan temporalmente en una ubicación de almacenamiento de Azure proporcionada por Microsoft en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de almacenamiento de Azure dos semanas después de su creación. 
+- Cuando se exportan los resultados de búsqueda, los datos se almacenan temporalmente en una ubicación de almacenamiento de Azure proporcionada por Microsoft en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \* . BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de almacenamiento de Azure dos semanas después de su creación. 
     
-- Si su organización usa un servidor proxy para comunicarse con Internet, debe definir la configuración del servidor proxy en el equipo que use para exportar los resultados de la búsqueda (para que la herramienta de exportación pueda ser autenticada por el servidor proxy). Para ello, abra el archivo *Machine. config* en la ubicación que coincida con su versión de Windows. 
+- Si su organización usa un servidor proxy para comunicarse con Internet, debe definir la configuración del servidor proxy en el equipo que use para exportar los resultados de la búsqueda (para que la herramienta de exportación pueda ser autenticada por el servidor proxy). Para ello, abra el archivo de *machine.config* en la ubicación que coincida con su versión de Windows. 
     
   - **32 bits:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64 bits:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    Agregue las líneas siguientes al archivo *Machine. config* en algún lugar entre `<configuration>` las `</configuration>` etiquetas y. Asegúrese de reemplazar `ProxyServer` y `Port` con los valores correctos para su organización; por ejemplo, `proxy01.contoso.com:80` . 
+    Agregue las líneas siguientes al archivo de *machine.config* en algún lugar entre las `<configuration>` `</configuration>` etiquetas y. Asegúrese de reemplazar `ProxyServer` y `Port` con los valores correctos para su organización; por ejemplo, `proxy01.contoso.com:80` . 
     
     ```text
     <system.net>
@@ -89,14 +90,14 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
     
 2. Inicie sesión con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de **contenido**de **búsqueda** \> .
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de contenido de **búsqueda** \> **Content search**.
     
 4. En la página **búsqueda de contenido** , seleccione una búsqueda. 
     
 5. En el panel de detalles, en **Exportar resultados a un equipo**, haga clic en **Iniciar la exportación**.
     
     > [!NOTE]
-    > Si los resultados de una búsqueda son de hace más de 7 días, se le solicitará que actualice los resultados de búsqueda. Si esto ocurre, cancele la exportación, haga clic en **Actualizar los resultados de búsqueda** en el panel de detalles para la búsqueda seleccionada y, a continuación, inicie la exportación de nuevo después de que se actualicen los resultados.  
+    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
   
 6. En la página **exportar los resultados de búsqueda** , en **Opciones de salida**, elija una de las siguientes opciones:
     
@@ -123,7 +124,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 8. Haga clic en la casilla **Habilitar desduplicación** para excluir los mensajes duplicados. Esta opción solo aparece si los orígenes de contenido de la búsqueda incluyen buzones de correo de Exchange o carpetas públicas. 
     
-    Si selecciona esta opción, solo se exportará una copia de un mensaje incluso si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda. El informe de resultados de la exportación (Results. csv) contendrá una fila por cada copia de un mensaje duplicado, de modo que pueda identificar los buzones (o carpetas públicas) que contienen una copia del mensaje duplicado. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea [desduplicación en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos.
+    Si selecciona esta opción, solo se exportará una copia de un mensaje incluso si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda. El informe de resultados de la exportación (Results.csv) contendrá una fila para cada copia de un mensaje duplicado, de modo que pueda identificar los buzones (o carpetas públicas) que contienen una copia del mensaje duplicado. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea [desduplicación en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos.
     
 9. Haga clic en la casilla **incluir versiones de los documentos de SharePoint** para exportar todas las versiones de los documentos de SharePoint. Esta opción solo aparece si los orígenes de contenido de la búsqueda incluyen sitios de SharePoint o de OneDrive para la empresa. 
     
@@ -248,7 +249,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
   - **Errores y advertencias** Contiene errores y advertencias para los archivos encontrados durante la exportación. Consulte la columna detalles de los errores para obtener información específica de cada error o advertencia individual. 
     
-  - **Elementos omitidos** Cuando se exportan resultados de búsqueda de sitios de SharePoint y OneDrive para la empresa, la exportación suele incluir un informe de elementos omitidos (SkippedItems. csv). Los elementos que se mencionan en este informe suelen ser elementos que no se pueden descargar, como una carpeta o un conjunto de documentos. La no exportación de estos tipos de elementos es por diseño. Para otros elementos omitidos, el campo "tipo de error" y "detalles de error" del informe de elementos omitidos muestran la razón por la que se omitió el elemento y no se descargó con los demás resultados de la búsqueda. 
+  - **Elementos omitidos** Cuando se exportan resultados de búsqueda de sitios de SharePoint y OneDrive para la empresa, la exportación suele incluir un informe de elementos omitidos (SkippedItems.csv). Los elementos que se mencionan en este informe suelen ser elementos que no se pueden descargar, como una carpeta o un conjunto de documentos. La no exportación de estos tipos de elementos es por diseño. Para otros elementos omitidos, el campo "tipo de error" y "detalles de error" del informe de elementos omitidos muestran la razón por la que se omitió el elemento y no se descargó con los demás resultados de la búsqueda. 
     
   - **Registro de seguimiento** Contiene información de registro detallada sobre el proceso de exportación y puede ayudarle a descubrir problemas durante la exportación. 
     
@@ -282,13 +283,13 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
     Si elige exportar elementos parcialmente indizados, los elementos del buzón indizados parcialmente se exportan a un archivo PST independiente independientemente de la opción que elija en **exportar contenido de Exchange como**.
 
-- Si se devuelven elementos parcialmente indizados en los resultados de la búsqueda (ya que otras propiedades de elementos parcialmente indizados coinciden con los criterios de búsqueda), se exportan los que están parcialmente indizados con los resultados de la búsqueda normales. Por lo tanto, si decide exportar tanto los elementos indexados como los elementos indizados parcialmente (seleccionando **todos los elementos, incluidos los que tienen un formato no reconocido, que están cifrados o no se indizaron por otros motivos** , la opción de exportación), los elementos parcialmente indizados exportados con los resultados normales se mostrarán en el informe Results. csv. No aparecerán en el informe items. csv sin indexar.
+- Si se devuelven elementos parcialmente indizados en los resultados de la búsqueda (ya que otras propiedades de elementos parcialmente indizados coinciden con los criterios de búsqueda), se exportan los que están parcialmente indizados con los resultados de la búsqueda normales. Por lo tanto, si decide exportar tanto los elementos indexados como los elementos indizados parcialmente (seleccionando **todos los elementos, incluidos los que tienen un formato no reconocido, que están cifrados o no se indizaron por otros motivos** , la opción de exportación), los elementos parcialmente indizados exportados con los resultados normales aparecerán en el informe de Results.csv. No aparecerán en el informe de items.csv sin indexar.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportar mensajes individuales o archivos PST
   
 - Si el nombre de la ruta de acceso del archivo de un mensaje supera el límite máximo de caracteres para Windows, el nombre de la ruta de acceso del archivo se trunca. Pero el nombre de la ruta de acceso del archivo original se enumerará en el manifiesto y ResultsLog.
     
-- Como se explicó anteriormente, los resultados de la búsqueda de correo electrónico se exportan a una carpeta en el sistema de archivos. La ruta de acceso de la carpeta para los mensajes individuales replicaría la ruta de la carpeta en el buzón del usuario. Por ejemplo, para una búsqueda con el nombre "ContosoCase101" en la bandeja de entrada de un usuario estaría en la `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`ruta de la carpeta. 
+- Como se explicó anteriormente, los resultados de la búsqueda de correo electrónico se exportan a una carpeta en el sistema de archivos. La ruta de acceso de la carpeta para los mensajes individuales replicaría la ruta de la carpeta en el buzón del usuario. Por ejemplo, para una búsqueda con el nombre "ContosoCase101" en la bandeja de entrada de un usuario estaría en la ruta de la carpeta `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` . 
     
 - Si elige exportar los mensajes de correo electrónico de un archivo PST que contenga todos los mensajes de una sola carpeta, se incluirán en el nivel superior de la carpeta PST una carpeta de **elementos eliminados** y una carpeta de **carpetas de búsqueda** . Estas carpetas están vacías. 
   
@@ -310,7 +311,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
   
  ### <a name="filenames-of-exported-items"></a>Nombres de archivo de los elementos exportados
   
-- Hay un límite de 260 caracteres (impuesto por el sistema operativo) para el nombre de la ruta de acceso completa de los mensajes de correo electrónico y los documentos del sitio exportados a su equipo local. El nombre de la ruta de acceso completa de los elementos exportados incluye la ubicación original del elemento y la ubicación de la carpeta en el equipo local en el que se descargan los resultados de la búsqueda. Por ejemplo, si especifica que los resultados de la búsqueda se `C:\Users\Admin\Desktop\SearchResults` descargan en la herramienta de exportación de exhibición de documentos electrónicos, el path completo `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg`de un elemento de correo electrónico descargado sería.
+- Hay un límite de 260 caracteres (impuesto por el sistema operativo) para el nombre de la ruta de acceso completa de los mensajes de correo electrónico y los documentos del sitio exportados a su equipo local. El nombre de la ruta de acceso completa de los elementos exportados incluye la ubicación original del elemento y la ubicación de la carpeta en el equipo local en el que se descargan los resultados de la búsqueda. Por ejemplo, si especifica que los resultados de la búsqueda se descargan `C:\Users\Admin\Desktop\SearchResults` en la herramienta de exportación de exhibición de documentos electrónicos, el path completo de un elemento de correo electrónico descargado sería `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
     
     Si se supera el límite de 260 caracteres, se truncará el nombre de ruta completo de un elemento.
     
@@ -318,11 +319,11 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
   - Si el nombre de la ruta de acceso completa sigue siendo demasiado largo después de acortar el nombre del archivo, el elemento se mueve de su ubicación actual a la carpeta principal. Si el nombre de la ruta de la ruta sigue siendo demasiado largo, el proceso se repite: Acorte el nombre de archivo y, si es necesario, desplácese de nuevo a la carpeta principal. Este proceso se repite hasta que el directorio completo tiene un límite de 260 caracteres.
     
-  - Si ya existe un nombre de ruta de acceso completo truncado, se agrega un número de versión al final del nombre de archivo; por ejemplo, `statusmessage(2).msg`.
+  - Si ya existe un nombre de ruta de acceso completo truncado, se agrega un número de versión al final del nombre de archivo; por ejemplo, `statusmessage(2).msg` .
     
-    Para ayudar a mitigar este problema, considere la posibilidad de descargar los resultados de la búsqueda en una ubicación con un nombre de ruta corto; por ejemplo, si se descargan los resultados `C:\Results` de la búsqueda en una carpeta denominada, se agregarán menos caracteres a los nombres de ruta `C:\Users\Admin\Desktop\Results`de los elementos exportados que al descargarlos en una carpeta denominada.
+    Para ayudar a mitigar este problema, considere la posibilidad de descargar los resultados de la búsqueda en una ubicación con un nombre de ruta corto; por ejemplo, si se descargan los resultados de la búsqueda en una carpeta denominada, se `C:\Results` agregarán menos caracteres a los nombres de ruta de los elementos exportados que al descargarlos en una carpeta denominada `C:\Users\Admin\Desktop\Results` .
     
-- Al exportar documentos de sitio, también es posible que se modifique el nombre de archivo original de un documento. Esto se produce específicamente para los documentos que se han eliminado de un sitio de SharePoint o de OneDrive para la empresa que se ha puesto en suspensión. Una vez que se elimina un documento que se encuentra en suspensión, el documento eliminado se mueve automáticamente a la biblioteca de conservación de documentos del sitio (que se creó cuando el sitio se puso en espera). Cuando el documento eliminado se mueve a la biblioteca de conservación de documentos, se anexa un identificador único e aleatorio al nombre de archivo original del documento. Por ejemplo, si el nombre de archivo de un `FY2017Budget.xlsx` documento es y el documento se elimina y se mueve a la biblioteca de conservación de documentos, el nombre de archivo del documento que se mueve a la biblioteca de conservación `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`de documentos se modifica de forma similar. Si un documento de la biblioteca de conservación de documentos coincide con la consulta de una búsqueda de contenido y se exportan los resultados de la búsqueda, el archivo exportado tendrá el nombre de archivo modificado; en este ejemplo, el nombre de archivo del documento exportado sería `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
+- Al exportar documentos de sitio, también es posible que se modifique el nombre de archivo original de un documento. Esto se produce específicamente para los documentos que se han eliminado de un sitio de SharePoint o de OneDrive para la empresa que se ha puesto en suspensión. Una vez que se elimina un documento que se encuentra en suspensión, el documento eliminado se mueve automáticamente a la biblioteca de conservación de documentos del sitio (que se creó cuando el sitio se puso en espera). Cuando el documento eliminado se mueve a la biblioteca de conservación de documentos, se anexa un identificador único e aleatorio al nombre de archivo original del documento. Por ejemplo, si el nombre de archivo de un documento es `FY2017Budget.xlsx` y el documento se elimina y se mueve a la biblioteca de conservación de documentos, el nombre de archivo del documento que se mueve a la biblioteca de conservación de documentos se modifica de forma similar `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` . Si un documento de la biblioteca de conservación de documentos coincide con la consulta de una búsqueda de contenido y se exportan los resultados de la búsqueda, el archivo exportado tendrá el nombre de archivo modificado; en este ejemplo, el nombre de archivo del documento exportado sería `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
     
     Cuando se modifica un documento de un sitio que está en suspensión (y se ha habilitado el control de versiones de la biblioteca de documentos en el sitio), se crea automáticamente una copia del archivo en la biblioteca de conservación de documentos. En este caso, también se anexa un identificador único y generado aleatoriamente al nombre del archivo que se copia en la biblioteca de conservación de documentos.
     

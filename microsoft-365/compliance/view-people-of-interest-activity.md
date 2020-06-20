@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: Use la herramienta de investigación de datos (vista previa) personas de administración de interés en su investigación accediendo a la actividad y buscándola para personas de interés.
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034282"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819020"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Ver la actividad de auditoría de personas de interés
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Las investigaciones de datos (versión preliminar) se integran ahora con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de investigación de datos (Preview) para la administración de intereses para facilitar la investigación mediante el fácil acceso y la búsqueda de la actividad de personas de interés dentro de la investigación.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="get-permissions"></a>Obtener permisos
 
 Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página depermisosdel centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de las investigaciones de datos (vista previa) con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulteAdministrar grupos de roles en Exchange en línea.
 

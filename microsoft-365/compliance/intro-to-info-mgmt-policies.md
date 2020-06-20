@@ -18,19 +18,21 @@ search.appverid:
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
-description: Una directiva de administración de información es un conjunto de reglas para un tipo de contenido. Las directivas de administración de información permiten a las organizaciones controlar y hacer un seguimiento de cosas como cuánto tiempo se mantiene el contenido o qué acciones pueden realizar los usuarios con ese contenido. Las directivas de administración de información pueden ayudar a las organizaciones a cumplir normas legales o gubernamentales, o simplemente pueden forzar la aplicación de procesos empresariales internos.
-ms.openlocfilehash: 7f977090b147eca427fcd2e4b536821890493950
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo usar las directivas de administración de la información para controlar y realizar un seguimiento de cosas como el tiempo que se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido.
+ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072717"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815517"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction to information management policies (Introducción a las directivas de administración de la información)
 
 Una directiva de administración de información es un conjunto de reglas para un tipo de contenido. Las directivas de administración de información permiten a las organizaciones controlar y hacer un seguimiento de cosas como cuánto tiempo se mantiene el contenido o qué acciones pueden realizar los usuarios con ese contenido. Las directivas de administración de información pueden ayudar a las organizaciones a cumplir normas legales o gubernamentales, o simplemente pueden forzar la aplicación de procesos empresariales internos. 
   
-Por ejemplo, una organización que debe seguir las regulaciones gubernamentales que requieren que demuestren "controles adecuados" de sus informes financieros puede crear una o varias directivas de administración de la información que auditen acciones específicas en la creación y proceso de aprobación para todos los documentos relacionados con los archivos financieros.
+Por ejemplo, una organización que debe seguir las regulaciones gubernamentales que requieren que demuestren "controles adecuados" de sus informes financieros puede crear una o varias directivas de administración de la información que audirán acciones específicas en el proceso de creación y aprobación para todos los documentos relacionados con los archivos financieros.
   
 Para obtener información sobre procedimientos, vea [crear y aplicar directivas de administración de información](create-info-mgmt-policies.md).
   
@@ -76,6 +78,6 @@ Puede crear una directiva de administración de información para una lista o bi
   
 Para controlar las directivas que se usan en una colección de sitios, los administradores de colecciones de sitios pueden deshabilitar la capacidad de establecer características de directiva directamente en una lista o biblioteca. Cuando esta restricción está en vigor, los usuarios que administran listas o bibliotecas se limitan a seleccionar directivas de la lista de directivas de la colección de sitios.
   
-[Una directiva de administración de la información es un conjunto de reglas para un tipo de contenido. Las directivas de administración de la información permiten a las organizaciones controlar y realizar un seguimiento de elementos como el tiempo que se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido. Las directivas de administración de la información pueden ayudar a las organizaciones a cumplir con las regulaciones legales o del gobierno, o pueden simplemente exigir procesos empresariales internos. Por ejemplo, una organización que debe seguir las regulaciones gubernamentales que requieren que demuestren "controles adecuados" de sus informes financieros puede crear una o varias directivas de administración de la información que auditen acciones específicas en la creación y proceso de aprobación para todos los documentos relacionados con los archivos financieros. Para obtener información sobre procedimientos, vea crear y aplicar directivas de administración de información.](intro-to-info-mgmt-policies.md#__top)
+[Una directiva de administración de la información es un conjunto de reglas para un tipo de contenido. Las directivas de administración de la información permiten a las organizaciones controlar y realizar un seguimiento de elementos como el tiempo que se conserva el contenido o qué acciones pueden realizar los usuarios con ese contenido. Las directivas de administración de la información pueden ayudar a las organizaciones a cumplir con las regulaciones legales o del gobierno, o pueden simplemente exigir procesos empresariales internos. Por ejemplo, una organización que debe seguir las regulaciones gubernamentales que requieren que demuestren "controles adecuados" de sus informes financieros puede crear una o varias directivas de administración de la información que audirán acciones específicas en el proceso de creación y aprobación para todos los documentos relacionados con los archivos financieros. Para obtener información sobre procedimientos, vea crear y aplicar directivas de administración de información.](intro-to-info-mgmt-policies.md#__top)
   
 

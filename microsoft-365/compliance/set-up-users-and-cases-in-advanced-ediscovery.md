@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en la exhibición avanzada de documentos electrónicos.  '
-ms.openlocfilehash: 386be1201b30e6b0e7a46c9de47dd6cf2fc4b53c
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412809"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819180"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurar usuarios y casos en eDiscovery avanzado (Classic)
 
@@ -29,13 +30,13 @@ En este tema se describe cómo configurar usuarios y casos para la exhibición a
 > [!IMPORTANT]
 > A medida que continuamos invirtiendo en nuevas versiones de eDiscovery avanzado, anunciamos la retirada de eDiscovery avanzado, también conocido como *eDiscovery avanzado (clásico)* o *eDiscovery avanzado v1.0* Si todavía está usando eDiscovery avanzado v1.0, cambie a [eDiscovery avanzado v2.0](overview-ediscovery-20.md) (también conocido como la *Solución de eDiscovery avanzado en Microsoft 365*) tan pronto como sea posible. eDiscovery avanzado 2.0 tiene funcionalidades similares a las que se encuentra en eDiscovery avanzado v1.0, pero también ofrece muchas características nuevas, como la administración de custodios, la administración de comunicaciones y los conjuntos de revisión. Para obtener más información sobre la retirada de eDiscovery avanzado v1.0, consulte [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10). 
   
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="requirements-to-set-up-users-and-cases"></a>Requisitos para configurar usuarios y casos
 
 Antes de configurar casos y usuarios en la exhibición avanzada de documentos electrónicos, se requiere lo siguiente:
   
 - Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
     
-- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para crear un caso de exhibición de documentos electrónicos y agregarle miembros. Para agregarse al grupo de roles eDiscovery Manager en el &amp; centro de seguridad y cumplimiento, debe ser administrador global de la organización. Si no es un administrador global, deberá solicitar a un administrador global que le agregue al grupo de roles eDiscovery Manager. Para más información, consulte lo siguiente:
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para crear un caso de exhibición de documentos electrónicos y agregarle miembros. Para agregarse al grupo de roles eDiscovery Manager en el &amp; centro de seguridad y cumplimiento, debe ser administrador global de la organización. Si no es un administrador global, deberá solicitar a un administrador global que le agregue al grupo de roles eDiscovery Manager. Para obtener más información, vea:
     
   - [Permisos en el centro de seguridad y cumplimiento de 365 de Microsoft &amp;](~/security/office-365-security/protect-against-threats.md)
     

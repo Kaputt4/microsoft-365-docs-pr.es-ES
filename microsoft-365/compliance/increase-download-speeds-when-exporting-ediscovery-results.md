@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados de búsqueda y datos de búsqueda del centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: a5e08f2fe7d8840cfe8f176080c90b8b40d16af6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados y datos de búsqueda.
+ms.openlocfilehash: a68a616d2dced4a3dd70580e1b258c95a0b5e39e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943359"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817679"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>Aumentar la velocidad de descarga al exportar los resultados de la búsqueda de eDiscovery
 
@@ -56,19 +58,19 @@ Lleve a cabo el siguiente procedimiento en el equipo que va a usar para descarga
 6. Puede repetir los pasos 2-5 para cambiar el valor de la `DownloadConcurrency` configuración del registro. 
     
     > [!IMPORTANT]
-    > Una vez que haya creado o `DownloadConcurrency` cambiado la configuración del registro, asegúrese de crear un nuevo trabajo de exportación o reiniciar un trabajo de exportación existente para los resultados de búsqueda o los datos que desea descargar. Consulte la sección [More Information](#more-information) para obtener más información. 
+    > Una vez que haya creado o cambiado la `DownloadConcurrency` configuración del registro, asegúrese de crear un nuevo trabajo de exportación o reiniciar un trabajo de exportación existente para los resultados de búsqueda o los datos que desea descargar. Consulte la sección [More Information](#more-information) para obtener más información. 
   
 ## <a name="more-information"></a>Más información
 
-- La primera vez que ejecute el archivo. reg que creó en este procedimiento, se creará una nueva clave del registro. A continuación `DownloadConcurrency` , la configuración del registro se edita cada vez que cambia y vuelve a ejecutar el archivo de edición. reg. 
+- La primera vez que ejecute el archivo. reg que creó en este procedimiento, se creará una nueva clave del registro. A continuación, la `DownloadConcurrency` configuración del registro se edita cada vez que cambia y vuelve a ejecutar el archivo de edición. reg. 
     
-- La herramienta de exportación de exhibición de documentos electrónicos usa la [utilidad de Azure AzCopy](https://go.microsoft.com/fwlink/?linkid=849949) para descargar datos de búsqueda del centro de seguridad & cumplimiento o de la exhibición avanzada de documentos electrónicos. La configuración `DownloadConcurrency` del registro es similar a usar el parámetro **/NC** al ejecutar la utilidad AzCopy. Por lo tanto, la `"DownloadConcurrency=24"` configuración del registro de tendría el mismo efecto que usar el `/NC:24` valor del parámetro de con la utilidad AzCopy. 
+- La herramienta de exportación de exhibición de documentos electrónicos usa la [utilidad de Azure AzCopy](https://go.microsoft.com/fwlink/?linkid=849949) para descargar datos de búsqueda del centro de seguridad & cumplimiento o de la exhibición avanzada de documentos electrónicos. La configuración del `DownloadConcurrency` registro es similar a usar el parámetro **/NC** al ejecutar la utilidad AzCopy. Por lo tanto, la configuración del registro de `"DownloadConcurrency=24"` tendría el mismo efecto que usar el valor del parámetro de `/NC:24` con la utilidad AzCopy. 
     
-- Si detiene una descarga de exportación que está actualmente en curso y, a continuación, la reinicia (intentando descargar los resultados de búsqueda de nuevo), la herramienta de exportación de exhibición de documentos electrónicos intentará reanudar la misma descarga. Por lo tanto, si inicia una descarga, la detiene y, a continuación `DownloadConcurrency` , cambia la configuración del registro, es probable que se produzca un error en la descarga si la reinicia (al hacer clic en **Descargar resultados exportados**). Esto se debe a que la herramienta de exportación intentará reanudar la descarga anterior con una configuración que no es válida porque ha cambiado la configuración del registro.
+- Si detiene una descarga de exportación que está actualmente en curso y, a continuación, la reinicia (intentando descargar los resultados de búsqueda de nuevo), la herramienta de exportación de exhibición de documentos electrónicos intentará reanudar la misma descarga. Por lo tanto, si inicia una descarga, la detiene y, a continuación, cambia la `DownloadConcurrency` configuración del registro, es probable que se produzca un error en la descarga si la reinicia (al hacer clic en **Descargar resultados exportados**). Esto se debe a que la herramienta de exportación intentará reanudar la descarga anterior con una configuración que no es válida porque ha cambiado la configuración del registro.
     
-    Por lo tanto, después de `DownloadConcurrency` cambiar la configuración del registro, asegúrese de reiniciar el trabajo de exportación (haciendo clic en **reiniciar exportación**) en el centro de seguridad & cumplimiento. A continuación, puede descargar los resultados exportados. Para obtener más información sobre la exportación de resultados de búsqueda y datos, vea:
+    Por lo tanto, después de cambiar la `DownloadConcurrency` configuración del registro, asegúrese de reiniciar el trabajo de exportación (haciendo clic en **reiniciar exportación**) en el centro de seguridad & cumplimiento. A continuación, puede descargar los resultados exportados. Para obtener más información sobre la exportación de resultados de búsqueda y datos, vea:
     
-  - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
+  - [Exportar resultados del Contenido de búsqueda](export-search-results.md)
     
   - [Exportar resultados en eDiscovery avanzado](export-results-in-advanced-ediscovery.md)
     

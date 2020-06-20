@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Ahora, los administradores pueden usar la auditoría de uso compartido en el registro de auditoría para identificar recursos que se han compartido con usuarios fuera de la organización. '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría de Microsoft 365 para identificar recursos que se han compartido con usuarios fuera de la organización.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626386"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819300"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
 
@@ -152,4 +153,4 @@ Una vez que haya seguido las instrucciones del paso anterior para preparar el ar
     Ahora Excel muestra las filas para compartir eventos y donde el usuario de destino está fuera de la organización, porque los usuarios externos se identifican por el valor **TargetUserOrGroupType: Guest**. 
   
 > [!TIP]
-> Para los registros de auditoría que se muestran, la columna **objectId** identifica el recurso que se ha compartido con el usuario de destino; por ejemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+> Para los registros de auditoría que se muestran, la columna **objectId** identifica el recurso que se ha compartido con el usuario de destino; por ejemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` .

@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: Obtenga información sobre cómo comprobar si hay errores y errores tipográficos en la consulta de palabras clave para la búsqueda de contenido, como caracteres no admitidos y operadores booleanos en minúsculas.
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Obtenga información sobre cómo detectar errores y errores ortográficos en la consulta de palabras clave para la búsqueda de contenido antes de ejecutar la búsqueda.
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035632"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818099"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda de contenido
 
@@ -38,7 +37,7 @@ Esta es una lista de los caracteres no admitidos que se buscarán. Los caractere
     
 - **Marcas de izquierda a derecha y de derecha a izquierda** : estas marcas son caracteres de control usados para indicar la dirección del texto en los idiomas de izquierda a derecha (como el inglés y el español) y en los idiomas de derecha a izquierda (como el árabe y el hebreo).
     
-- **Operadores booleanos en minúsculas** : Si usa un operador booleano, como **and**, **or**y **Not** en una consulta de búsqueda, debe estar en mayúsculas. Cuando comprobamos una consulta para comprobar si hay errores tipográficos, la sintaxis de la consulta suele indicar que se está usando un operador booleano, aunque se podrían usar operadores en minúsculas; por ejemplo, `(WordA or WordB) and (WordC or WordD)`.
+- **Operadores booleanos en minúsculas** : Si usa un operador booleano, como **and**, **or**y **Not** en una consulta de búsqueda, debe estar en mayúsculas. Cuando comprobamos una consulta para comprobar si hay errores tipográficos, la sintaxis de la consulta suele indicar que se está usando un operador booleano, aunque se podrían usar operadores en minúsculas; por ejemplo, `(WordA or WordB) and (WordC or WordD)` .
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>¿Qué sucede si una consulta tiene un carácter no admitido?
 

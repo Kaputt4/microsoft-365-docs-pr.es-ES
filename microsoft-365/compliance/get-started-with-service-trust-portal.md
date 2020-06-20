@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Para los informes de cumplimiento normativo de Microsoft 365, Azure y Dynamics 365 en línea, para ver auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y cómo puede cumplir con las normas ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando use estos servicios en línea.
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo acceder y usar el portal de confianza de servicios de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632451"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817629"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -29,7 +31,7 @@ El portal de confianza de servicios de Microsoft proporciona una variedad de con
 
 El portal de confianza del servicio contiene detalles sobre la implementación de Microsoft de controles y procesos que protegen nuestros servicios en la nube y los datos del cliente que hay en él. Para obtener acceso a algunos de los recursos del portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de Microsoft Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el contrato de Microsoft no divulgación para los materiales de cumplimiento.
   
-**Los clientes existentes pueden acceder al portal** de confianza [https://aka.ms/STP](https://aka.ms/STP) de servicios en con una de las siguientes suscripciones en línea (de prueba o de pago): 
+**Los clientes existentes pueden acceder al portal de confianza de servicios** en [https://aka.ms/STP](https://aka.ms/STP) con una de las siguientes suscripciones en línea (de prueba o de pago): 
   
 - Microsoft 365
 
@@ -82,11 +84,11 @@ Proporciona una gran cantidad de información sobre la implementación y el dise
 
     - Controles para la Organización de Servicios (SOC)
 
-    - Instituto Nacional de normas y tecnología (NIST)
+    - Instituto Nacional de Normas y Tecnología (NIST)
 
-    - Programa de administración de riesgos y autorización Federal (FedRAMP)
+    - Programa Federal de Administración de Autorizaciones y Riesgo (FedRAMP)
 
-    - Reglamento General de Protección de Datos (RGPD)
+    - Reglamento general de protección de datos (RGPD)
 
 - **Protección de datos:** Contiene una gran cantidad de recursos, como controles auditados, notas del producto, preguntas más frecuentes, pruebas de penetración, herramientas de evaluación de riesgos y guías de cumplimiento.
 
@@ -122,7 +124,7 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 
 - **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
 
-### <a name="search"></a>Buscar 
+### <a name="search"></a>Search
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
   

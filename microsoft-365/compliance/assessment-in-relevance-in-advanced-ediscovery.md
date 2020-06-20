@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en eDiscovery avanzado.
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636158"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818419"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Descripción de la evaluación en relevancia en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La exhibición avanzada de documentos electrónicos permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. EDiscovery avanzado permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión del documento.
   
@@ -51,9 +52,9 @@ Cada problema tiene su propia riqueza, el margen actual de error y, como resulta
 Puede aceptar las recomendaciones de relevancia o ajustar el margen de error actual de acuerdo con sus necesidades. El margen actual predeterminado del error se determina para la recuperación como igual o superior al 75%.
   
 > [!NOTE]
-> La fase de evaluación se puede omitir, en la pestaña **seguimiento de relevancia \> ** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
+> La fase de evaluación se puede omitir, en la pestaña ** \> seguimiento de relevancia** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
   
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254213"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773721"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -51,7 +51,7 @@ Los servicios en la nube de Microsoft Enterprise también están cubiertos por e
 
 Para obtener información sobre cómo la nube de Microsoft ayuda a los clientes a apoyar los requisitos de HIPAA y alta tecnología, visite [historias de clientes de Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de nube de Microsoft dentro de ámbito
+## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 
 - [Azure y Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
@@ -59,7 +59,7 @@ Para obtener información sobre cómo la nube de Microsoft ayuda a los clientes 
 - Microsoft Stream
 - Servicios profesionales de Microsoft: Premier y local para Azure, Dynamics 365, Intune y para empresas medianas y clientes empresariales de Microsoft 365 para empresas
 - [Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos](https://aka.ms/d365-compliance-list)
-- Servicio de nube de Autopower (anteriormente Microsoft Flow), ya sea como un servicio independiente o como se incluye en un plan o un conjunto de marcas de Office 365 o Dynamics 365
+- El servicio de nube de Power Automate (anteriormente conocido como Microsoft Flow) como un servicio independiente o incluido en un plan o un conjunto de aplicaciones de Office 365 o Dynamics 365
 - Intune
 - [Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - El servicio de nube de PowerApps como servicio independiente o incluido en un plan o conjunto de aplicaciones de Office 365 o Dynamics 365
@@ -113,5 +113,5 @@ La [Puntuación de cumplimiento de Microsoft](compliance-score.md) es una caract
 - [Términos de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Nube de Microsoft para la Administración Pública](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Descripción de la compatibilidad con HIPAA con Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 de mayo de 2016)
-- [Guía de implementación de Microsoft HIPAA](https://aka.ms/azure-hipaa-guide)
+- [Ejemplo de HITRUST de Blueprint de Azure HIPAA](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Cumplimiento normativo en el Centro de confianza de Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

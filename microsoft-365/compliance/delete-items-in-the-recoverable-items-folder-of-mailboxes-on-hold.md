@@ -1,5 +1,5 @@
 ---
-title: Eliminar elementos en la carpeta nube buzón de correo en la retención de elementos recuperables-ayuda para administradores
+title: Eliminar elementos en el buzón de la nube en la carpeta elementos recuperables de la retención
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Para los administradores: Elimine los elementos de la carpeta elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón se encuentra en retención legal. Esta es una forma eficaz de eliminar datos que se han derramado accidentalmente en Microsoft 365.'
+description: Obtenga información acerca de cómo eliminar elementos en una carpeta de elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón se coloca en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352185"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817879"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en suspensión-ayuda de administración
 
@@ -46,7 +46,7 @@ La carpeta elementos recuperables de un buzón de Exchange Online existe para pr
 > [!CAUTION]
 > Los procedimientos descritos en este artículo harán que los datos se eliminen de forma permanente (purga) de un buzón de correo de Exchange Online. Esto significa que los mensajes que elimine de la carpeta elementos recuperables no se pueden recuperar y no estarán disponibles para la detección legal o para otros fines de cumplimiento. Si desea eliminar mensajes de un buzón que está en suspensión como parte de una retención por juicio, retención local, retención de exhibición de documentos electrónicos o Directiva de retención creada en el centro de seguridad y cumplimiento, consulte la administración de registros o los departamentos jurídicos antes de quitar la retención. Es posible que su organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad. 
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-delete-items"></a>Antes de eliminar elementos
 
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
@@ -66,7 +66,7 @@ El primer paso consiste en recopilar propiedades seleccionadas del buzón de des
 
 Además, debe obtener la configuración de acceso de cliente de buzones de correo para que pueda deshabilitarla temporalmente de modo que el propietario (u otros usuarios) no pueda obtener acceso al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta elementos recuperables. Después de eliminar los elementos de la carpeta elementos recuperables en el paso 5, usará esta información para comprobar que los elementos se han quitado.
   
-1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online. 
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online. 
     
 2. Ejecute el siguiente comando para obtener información sobre la recuperación de elementos individuales y el período de retención de elementos eliminados.
 
@@ -262,7 +262,7 @@ Si el valor de la propiedad *DelayHoldApplied* o *DelayReleaseHoldApplied* está
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien
+O bien:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied

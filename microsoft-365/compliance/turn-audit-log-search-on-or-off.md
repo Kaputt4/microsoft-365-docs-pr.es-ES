@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: Puede activar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento. Si cambia de opinión, puede desactivar la opción en cualquier momento. Cuando la búsqueda de registros de auditoría está desactivada, los administradores no pueden buscar en el registro de auditoría de Microsoft 365 la actividad de usuario y de administrador de su organización.
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: Cómo activar o desactivar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento para habilitar o deshabilitar la capacidad de los administradores para buscar en el registro de auditoría.
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330794"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819140"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría
 
@@ -33,7 +34,7 @@ Usted (u otro administrador) deben activar el registro de auditoría antes de em
 > [!IMPORTANT]
 > Si desactiva la búsqueda de registros de auditoría en Microsoft 365, no podrá usar la API de actividad de administración de Office 365 o Azure Sentinel para acceder a los datos de auditoría de su organización. La desactivación de la búsqueda de registros de auditoría siguiendo los pasos descritos en este artículo significa que no se devolverán resultados cuando busque en el registro de auditoría mediante el centro de seguridad & cumplimiento o cuando ejecute el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de la API de actividad de administración de Office 365 o de Azure Sentinel.
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>Antes de activar o desactivar la búsqueda de registros de auditoría
 
 - Debe tener asignado el rol registros de auditoría en Exchange Online para activar o desactivar la búsqueda de registros de auditoría en su organización de Microsoft 365. De forma predeterminada, este rol se asigna a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Los administradores globales de Microsoft 365 son miembros del grupo de roles administración de la organización en Exchange Online. 
     

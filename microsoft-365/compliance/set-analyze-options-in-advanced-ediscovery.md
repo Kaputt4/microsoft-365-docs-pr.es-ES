@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Revise los pasos para configurar las opciones del proceso de análisis en eDiscovery avanzado, incluidos los elementos casi duplicados, los subprocesos de correo electrónico y los temas.  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631267"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819230"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Establecer las opciones de análisis en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la exhibición avanzada de documentos electrónicos, establezca las opciones de análisis antes de ejecutar Analyze.
   
@@ -55,7 +56,7 @@ Abra **preparar \> ** la \> **instalación**de Analyze. Se muestra la siguiente 
   
 1. Para ver, agregar o editar los temas sugeridos, haga clic en **modificar**.
     
-2. En el **Panel temas sugeridos** , haga clic en el](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono **Agregar** ![icono Agregar para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
+2. En el panel **temas sugeridos** , haga clic en el icono **Agregar** ![ icono Agregar ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
     
 3. En **número de temas**, seleccione un valor para determinar el número de temas que la exhibición avanzada de documentos electrónicos intentará generar para estas palabras (el valor predeterminado es 1 tema).
     
@@ -76,7 +77,7 @@ También puede [establecer omitir texto](set-ignore-text-in-advanced-ediscovery.
   
 Una vez establecidas estas opciones, haga clic en **analizar** para ejecutar. Se muestran [los resultados de la vista analizar](view-analyze-results-in-advanced-ediscovery.md) . 
   
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

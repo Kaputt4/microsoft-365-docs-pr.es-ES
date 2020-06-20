@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Configurar un conector para importar datos de Bloomberg instantáneo a Microsoft 365 para que pueda usar varias herramientas de cumplimiento.
-ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Obtenga información acerca de cómo los administradores pueden configurar & usar un conector nativo para importar datos de la herramienta instantánea de chat de Bloomberg a Microsoft 365.
+ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035152"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818459"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos de Instant Bloomberg
 
@@ -75,7 +74,7 @@ Muchos de los pasos de implementación necesarios para archivar datos instantán
 
 El primer paso es obtener una copia de las claves públicas para el shell seguro (SSH) y Pretty Good Privacy (PGP). Use estas claves en el paso 2 para configurar el sitio de SFTP de Bloomberg para permitir que el conector (creado en el paso 3) se conecte al sitio de SFTP y transfiera los datos instantáneos de Bloomberg chat a buzones de correo de Microsoft 365. También puede obtener una dirección IP en este paso, que se usa al configurar el sitio Bloomberg de SFTP.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **conectores** > de datos, de**inmediato, Bloomberg**.
+1. Vaya a <https://compliance.microsoft.com> y haga clic en **conectores de datos**, de inmediato,  >  **Bloomberg**.
 
 2. En la página Descripción del producto **Bloomberg instantáneo** , haga clic en **Agregar conector** .
 
@@ -102,7 +101,7 @@ El siguiente paso es usar las claves públicas SSH y PGP y la dirección IP que 
 
 El último paso es crear un conector de Bloomberg instantáneo en el centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio Bloomberg de SFTP y transferir los mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365. 
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **conectores** > de datos, de**inmediato, Bloomberg**.
+1. Vaya a <https://compliance.microsoft.com> y haga clic en **conectores de datos**, de inmediato,  >  **Bloomberg**.
 
 2. En la página Descripción del producto **Bloomberg instantáneo** , haga clic en **Agregar conector** .
 

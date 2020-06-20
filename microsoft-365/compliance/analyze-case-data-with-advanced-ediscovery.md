@@ -14,20 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: 'Obtenga información general sobre el proceso de análisis, que permite establecer parámetros, ejecutar opciones y ver los resultados en la exhibición avanzada de documentos electrónicos. '
-ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Obtenga información general sobre el proceso de análisis, que le permite establecer parámetros, opciones de ejecución y ver resultados, en la exhibición avanzada de documentos electrónicos de Microsoft 365. '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a5a3dc8d9bb6568545bbe0868a673fd0090f12e8
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637064"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818489"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>Analizar datos de casos con eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-El proceso de **preparación** \> del **análisis** en eDiscovery avanzado aplica la siguiente funcionalidad a los archivos incluidos: 
+El **Prepare** \> proceso de preparación del **análisis** en eDiscovery avanzado aplica la siguiente funcionalidad a los archivos incluidos: 
   
 - Identifica y organiza los archivos cargados en grupos de archivos únicos, duplicados y casi duplicados.
     
@@ -43,7 +44,7 @@ El proceso de **preparación** \> del **análisis** en eDiscovery avanzado aplic
     
 Antes de ejecutar Analyze, defina los criterios para seleccionar y procesar archivos, incluidos los archivos cargados que se analizarán y el tipo de análisis al que se enviará cada tipo de archivo. 
   
-## <a name="see-also"></a>Vea también
+## <a name="additional-resources-for-advanced-ediscovery-classic-analysis"></a>Recursos adicionales para el análisis de eDiscovery avanzado (clásico)
 
 [Advanced eDiscovery (clásico)](office-365-advanced-ediscovery.md)
   

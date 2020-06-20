@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en eDiscovery avanzado para coordinar sus flujos de trabajo e identificar los orígenes de datos relevantes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034694"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818617"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Agregar custodios a un caso de eDiscovery avanzado
 
@@ -32,7 +32,7 @@ Use el siguiente flujo de trabajo para agregar y administrar custodios en casos 
 
 ![Pestaña de administración de custodios](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="make-sure-you-have-the-necessary-permissions"></a>Asegúrese de que tiene los permisos necesarios
 
 Para agregar custodios a un caso, debe ser miembro del grupo de roles eDiscovery Manager. Esto le proporcionará los permisos necesarios para agregar custodios a un caso y realizar una retención en los orígenes de datos de Private.
 

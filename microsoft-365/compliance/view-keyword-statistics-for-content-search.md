@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
-ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634128"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819040"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
-Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al Resumen de los resultados de búsqueda estimados que se muestran en el panel de detalles), las estadísticas de la consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el nombre de las ubicaciones de contenido que tienen más elementos coincidentes. Puede mostrar las estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la eficacia de las consultas de búsqueda.
+Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de búsqueda (similar al Resumen de los resultados de búsqueda estimados que se muestran en el panel de detalles), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el nombre de las ubicaciones de contenido que tienen más elementos coincidentes. Puede mostrar las estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la eficacia de las consultas de búsqueda.
   
 Además, puede configurar búsquedas nuevas y existentes para devolver las estadísticas de cada palabra clave en una consulta de búsqueda. Esto le permite comparar el número de resultados de cada palabra clave de una consulta y comparar las estadísticas de palabras clave de varias búsquedas.
   
@@ -35,9 +36,9 @@ También puede descargar estadísticas de búsqueda y de palabras clave en un ar
 
 Para mostrar las estadísticas de las búsquedas de contenido:
   
-1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de contenido de **búsqueda** \> **Content search**.
     
-2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación **Search statistics**![, haga clic en el](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda.
+2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación, haga clic en el botón estadísticas de búsqueda de **estadísticas de búsqueda** ![ ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) .
     
     ![Seleccione varias búsquedas y, a continuación, haga clic en estadísticas de búsqueda](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
@@ -107,9 +108,9 @@ Como se explicó anteriormente, la página **consultas** muestra la consulta de 
 
 Para crear una lista de palabras clave y ver las estadísticas de palabras clave para una búsqueda de contenido:
   
-1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de contenido de **búsqueda** \> **Content search**.
     
-2. En la lista de búsquedas de contenido, haga clic en y en una búsqueda y, a](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)continuación, haga clic en **Editar** ![icono Editar.
+2. En la lista de búsquedas de contenido, haga clic en y en una búsqueda y, a continuación, haga clic en **Editar** ![ icono Editar ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. Haga clic en **consulta** y, a continuación, realice las siguientes acciones: 
     
@@ -121,7 +122,7 @@ Para crear una lista de palabras clave y ver las estadísticas de palabras clave
     
 4. Después de agregar las palabras clave para las que desea buscar y obtener estadísticas, haga clic en **Buscar** para ejecutar la búsqueda revisada. 
     
-5. Una vez finalizada la búsqueda, selecciónela en la lista de búsquedas y, a continuación **Search statistics** ![, haga clic en el](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda. También puede mostrar y comparar las estadísticas de palabras clave para varias búsquedas.
+5. Una vez finalizada la búsqueda, selecciónela en la lista de búsquedas y, a continuación, haga clic en el botón estadísticas de búsqueda de **estadísticas de búsqueda** ![ ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) . También puede mostrar y comparar las estadísticas de palabras clave para varias búsquedas.
     
 6. En la página **estadísticas de búsqueda** , haga clic en **consulta** para mostrar las estadísticas de palabras clave de las búsquedas seleccionadas. 
     
