@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el informe de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082699"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819514"
 ---
 # <a name="non-delivery-report"></a>Informe de no entrega
 
@@ -32,6 +34,6 @@ Cuando selecciona una fila en la tabla para ver los detalles del NDR específico
 
 ![Seleccionar una fila en la tabla de detalles en el informe de no entrega](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

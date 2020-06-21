@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401803"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817034"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -47,9 +47,9 @@ La factura contiene tres direcciones:
 
 - **Dirección de facturación** Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del **solicitante**.
 
-- **Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-En la mayoría de los casos, estas direcciones son las mismas. Si tiene que cambiar una o varias de estas direcciones, puede hacerlo. También puede proporcionar una dirección de correo electrónico alternativa para recibir las notificaciones de facturación y cambiar la dirección de correo electrónico alternativa de otros administradores.
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Aprende a iniciar sesión](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Aprende a iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleccione el **icono de usuario**y, a continuación, seleccione **mi cuenta**.
   

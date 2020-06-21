@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar direcciones URL bloqueadas personalizadas para los usuarios y no volver a escribir la lista de direcciones URL de un grupo de usuarios en las directivas de vínculos seguros de ATP de Office 365.
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617247"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702541"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada mediante vínculos seguros de ATP
 
@@ -73,13 +73,15 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 - Las direcciones URL que especifique en la lista "no reescribir" se excluyen del análisis de vínculos seguros de ATP para los destinatarios que especifique.
 
+- Considere la posibilidad de agregar direcciones URL internas de uso frecuente a la lista "no reescribir" para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype empresarial o SharePoint, puede agregar sus URL a la lista para excluirlos del análisis.
+
 - Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `https://contoso.com/a` y desea incluir subrutas como `https://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto deseado `https://contoso.com/a/*` .
 
-- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín ( \* ). Los caracteres comodín ( \* ) se usan para incluir explícitamente prefijos o subdominios. La entrada `contoso.com` no es la misma que `*.contoso.com/*` , ya que `*.contoso.com/*` permite a los pueblos visitar subdominios y rutas de acceso en el dominio especificado.
+- Cuando especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres caracteres comodín ( \* ). Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada `contoso.com` no es la misma que `*.contoso.com/*` , ya que `*.contoso.com/*` permite a los usuarios visitar subdominios y rutas de acceso en el dominio especificado.
 
 En la tabla siguiente se muestran ejemplos de lo que se puede especificar y el efecto que tienen estas entradas.
 
-|**Entrada de ejemplo**|**Qué hace**|
+|Entrada de ejemplo|Qué hace|
 |:-----|:-----|
 |`contoso.com`|Permite a los destinatarios visitar un sitio como, por ejemplo, `https://contoso.com` subdominios o rutas de una ruta.|
 |`*.contoso.com/*`|Permite a los destinatarios visitar un dominio, subdominios y rutas de, como `https://www.contoso.com` , `https://www.contoso.com` , `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*` , ya que no incluye sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|

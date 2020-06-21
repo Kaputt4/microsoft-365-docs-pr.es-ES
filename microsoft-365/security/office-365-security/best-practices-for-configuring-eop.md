@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estas recomendaciones de procedimientos recomendados para la protección independiente de Exchange Online (EOP) con el fin de establecer el éxito y evitar errores de configuración habituales.
-ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616727"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739085"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedimientos recomendados para configurar EOP independiente
 
@@ -54,7 +54,7 @@ Esta configuración cubre una variedad de características que se encuentran fue
 |Envío SMTP autenticado|Deshabilitado|Deshabilitado|El envío SMTP de cliente autenticado (también conocido como envío SMTP de cliente o autenticación SMTP) es necesario para que los clientes POP3 e IMAP4 puedan enviar correo electrónico.|
 |Conectividad de EWS al buzón de correo|Deshabilitado|Deshabilitado||
 |[Conectividad de PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Deshabilitado|Deshabilitado|Disponible para usuarios de buzones de correo o usuarios de correo (objetos de usuario devueltos por el cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
-|Usar [inteligencia simulada](learn-about-spoof-intelligence.md) para los remitentes de listas blancas siempre que sea posible|Sí|Sí||
+|Usar [inteligencia de identidades](learn-about-spoof-intelligence.md) para agregar remitentes a la lista de permitidos|Sí|Sí||
 |[Bloqueo perimetral basado en directorios (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Habilitado|Habilitado|Tipo de dominio = autoritario|
 |[Configurar la autenticación multifactor para todas las cuentas de administrador](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Habilitado|Habilitado||
 |
@@ -71,7 +71,7 @@ Para ayudar a mejorar el filtrado de correo no deseado en el servicio para todos
 
 Cree reglas de flujo de correo (también conocidas como reglas de transporte) o filtros personalizados para satisfacer las necesidades de su empresa.
 
-Al implementar una regla nueva en producción, seleccione primero uno de los modos de prueba para ver su efecto. Cuando tenga la seguridad de que la regla funciona como se espera, cambie el modo de la regla a **Exigir**.
+When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
 
 Al implementar reglas nuevas, considere la posibilidad de agregar la acción adicional de **Generar informe de incidentes** para supervisar la regla en acción.
 
