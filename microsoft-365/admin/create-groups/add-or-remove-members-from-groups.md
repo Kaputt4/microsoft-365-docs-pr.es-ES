@@ -21,276 +21,276 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar un miembro del grupo y administrar el estado del propietario del grupo en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431598"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780486"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a><span data-ttu-id="e1b4b-103">Agregar o quitar miembros de grupos de 365 de Microsoft mediante el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-103">Add or remove members from Microsoft 365 groups using the admin center</span></span>
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a><span data-ttu-id="c7a91-103">Agregar o quitar miembros de grupos de 365 de Microsoft mediante el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-103">Add or remove members from Microsoft 365 groups using the admin center</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="e1b4b-104">El Centro de administración está cambiando.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-104">The admin center is changing.</span></span> <span data-ttu-id="e1b4b-105">Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="e1b4b-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="c7a91-104">El Centro de administración está cambiando.</span><span class="sxs-lookup"><span data-stu-id="c7a91-104">The admin center is changing.</span></span> <span data-ttu-id="c7a91-105">Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="c7a91-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="e1b4b-106">En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, se agregan a sí mismos a los grupos a los que quieren unirse o son invitados por los propietarios del grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-106">In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners.</span></span> <span data-ttu-id="e1b4b-107">Si cambia la propiedad de un grupo o si determina que se debe agregar o quitar un miembro, como administrador también puede realizar ese cambio.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-107">If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change.</span></span> <span data-ttu-id="e1b4b-108">Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-108">Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes.</span></span> [<span data-ttu-id="e1b4b-109">¿Qué es un grupo de Microsoft 365?</span><span class="sxs-lookup"><span data-stu-id="e1b4b-109">What is a Microsoft 365 group?</span></span>](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+<span data-ttu-id="c7a91-106">En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, se agregan a sí mismos a los grupos a los que quieren unirse o son invitados por los propietarios del grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-106">In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners.</span></span> <span data-ttu-id="c7a91-107">Si cambia la propiedad de un grupo o si determina que se debe agregar o quitar un miembro, como administrador también puede realizar ese cambio.</span><span class="sxs-lookup"><span data-stu-id="c7a91-107">If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change.</span></span> <span data-ttu-id="c7a91-108">Solo un administrador global, un administrador de Exchange, un administrador de grupos o un administrador de usuarios pueden realizar estos cambios.</span><span class="sxs-lookup"><span data-stu-id="c7a91-108">Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes.</span></span> [<span data-ttu-id="c7a91-109">¿Qué es un grupo de Microsoft 365?</span><span class="sxs-lookup"><span data-stu-id="c7a91-109">What is a Microsoft 365 group?</span></span>](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> <span data-ttu-id="e1b4b-110">Si no es administrador, puede [Agregar o quitar miembros mediante Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).</span><span class="sxs-lookup"><span data-stu-id="e1b4b-110">If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).</span></span>
+> <span data-ttu-id="c7a91-110">Si no es administrador, puede [Agregar o quitar miembros mediante Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).</span><span class="sxs-lookup"><span data-stu-id="c7a91-110">If you're not an admin, you can [add or remove members using Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).</span></span>
   
-## <a name="add-a-member-to-a-group-in-the-admin-center"></a><span data-ttu-id="e1b4b-111">Agregar un miembro a un grupo en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-111">Add a member to a group in the admin center</span></span>
+## <a name="add-a-member-to-a-group-in-the-admin-center"></a><span data-ttu-id="c7a91-111">Agregar un miembro a un grupo en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-111">Add a member to a group in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e1b4b-112">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-112">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
+1. <span data-ttu-id="c7a91-112">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="c7a91-112">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-113">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-113">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-113">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-113">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-114">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar miembros**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-114">In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="c7a91-114">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar miembros**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-114">In the details pane, on the **Members** tab, select **View all and manage members**, and then select **Add members**.</span></span>
 
-4. <span data-ttu-id="e1b4b-115">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-115">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="c7a91-115">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-115">Search for or select the name of the member you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-116">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-116">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-116">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-116">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e1b4b-117">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-117">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
+1. <span data-ttu-id="c7a91-117">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-117">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-118">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-118">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-118">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-118">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-119">En el panel de detalles, junto a **miembros**, seleccione **Editar**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-119">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="c7a91-119">En el panel de detalles, junto a **miembros**, seleccione **Editar**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-119">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
 
-4. <span data-ttu-id="e1b4b-120">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-120">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="c7a91-120">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-120">Search for or select the name of the member you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-121">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-121">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-121">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-121">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e1b4b-122">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
+1. <span data-ttu-id="c7a91-122">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
 
-2. <span data-ttu-id="e1b4b-123">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-123">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-123">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-123">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-124">En el panel de detalles, junto a **miembros**, seleccione **Editar**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-124">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
+3. <span data-ttu-id="c7a91-124">En el panel de detalles, junto a **miembros**, seleccione **Editar**y, a continuación, seleccione **Agregar miembros**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-124">In the details pane, next to **Members**, select **Edit**, and then select **Add members**.</span></span>
 
-4. <span data-ttu-id="e1b4b-125">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-125">Search for or select the name of the member you want to add.</span></span>
+4. <span data-ttu-id="c7a91-125">Busque o seleccione el nombre del miembro que desee agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-125">Search for or select the name of the member you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-126">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-126">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-126">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-126">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="add-a-group-to-a-member-in-the-admin-center"></a><span data-ttu-id="e1b4b-127">Agregar un grupo a un miembro en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-127">Add a group to a member in the admin center</span></span>
+## <a name="add-a-group-to-a-member-in-the-admin-center"></a><span data-ttu-id="c7a91-127">Agregar un grupo a un miembro en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-127">Add a group to a member in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e1b4b-128">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-128">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="c7a91-128">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="c7a91-128">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-129">Seleccione un usuario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-129">Select a user.</span></span>
+2. <span data-ttu-id="c7a91-129">Seleccione un usuario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-129">Select a user.</span></span>
 
-3. <span data-ttu-id="e1b4b-130">En el panel de detalles, en la pestaña **cuenta** , seleccione **administrar grupos**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-130">In the details pane, on the **Account** tab, select **Manage groups**.</span></span>
+3. <span data-ttu-id="c7a91-130">En el panel de detalles, en la pestaña **cuenta** , seleccione **administrar grupos**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-130">In the details pane, on the **Account** tab, select **Manage groups**.</span></span>
 
-4. <span data-ttu-id="e1b4b-131">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-131">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="c7a91-131">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-131">Search for or select the name of the group you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-132">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-132">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-132">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-132">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e1b4b-133">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-133">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="c7a91-133">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="c7a91-133">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-134">Seleccione un nombre de usuario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-134">Select a user name.</span></span>
+2. <span data-ttu-id="c7a91-134">Seleccione un nombre de usuario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-134">Select a user name.</span></span>
 
-3. <span data-ttu-id="e1b4b-135">En el panel de detalles, junto a **pertenencias a grupos**, seleccione **Editar**y, a continuación, seleccione **Agregar pertenencias**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-135">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
+3. <span data-ttu-id="c7a91-135">En el panel de detalles, junto a **pertenencias a grupos**, seleccione **Editar**y, a continuación, seleccione **Agregar pertenencias**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-135">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
 
-4. <span data-ttu-id="e1b4b-136">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-136">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="c7a91-136">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-136">Search for or select the name of the group you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-137">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-137">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-137">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-137">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e1b4b-138">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-138">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="c7a91-138">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="c7a91-138">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
 
-2. <span data-ttu-id="e1b4b-139">Seleccione un nombre de usuario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-139">Select a user name.</span></span>
+2. <span data-ttu-id="c7a91-139">Seleccione un nombre de usuario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-139">Select a user name.</span></span>
 
-3. <span data-ttu-id="e1b4b-140">En el panel de detalles, junto a **pertenencias a grupos**, seleccione **Editar**y, a continuación, seleccione **Agregar pertenencias**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-140">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
+3. <span data-ttu-id="c7a91-140">En el panel de detalles, junto a **pertenencias a grupos**, seleccione **Editar**y, a continuación, seleccione **Agregar pertenencias**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-140">In the details pane, next to **Group memberships**, select **Edit**, and then select **Add memberships**.</span></span>
 
-4. <span data-ttu-id="e1b4b-141">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-141">Search for or select the name of the group you want to add.</span></span>
+4. <span data-ttu-id="c7a91-141">Busque o seleccione el nombre del grupo que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-141">Search for or select the name of the group you want to add.</span></span>
 
-5. <span data-ttu-id="e1b4b-142">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-142">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-142">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-142">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="remove-a-member-from-a-group-in-the-admin-center"></a><span data-ttu-id="e1b4b-143">Quitar un miembro de un grupo en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-143">Remove a member from a group in the admin center</span></span>
+## <a name="remove-a-member-from-a-group-in-the-admin-center"></a><span data-ttu-id="c7a91-143">Quitar un miembro de un grupo en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-143">Remove a member from a group in the admin center</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e1b4b-144">Al quitar un miembro de un grupo privado, esa persona tardará 5 minutos en quedar bloqueada del grupo (después de que los cambios de pertenencia se hayan replicado completamente en los controladores de dominio).</span><span class="sxs-lookup"><span data-stu-id="e1b4b-144">When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).</span></span>
+> <span data-ttu-id="c7a91-144">Al quitar un miembro de un grupo privado, esa persona tardará 5 minutos en quedar bloqueada del grupo (después de que los cambios de pertenencia se hayan replicado completamente en los controladores de dominio).</span><span class="sxs-lookup"><span data-stu-id="c7a91-144">When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group (after membership changes are fully replicated among domain controllers).</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e1b4b-145">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-145">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="c7a91-145">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="c7a91-145">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
 
-2. <span data-ttu-id="e1b4b-146">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-146">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-146">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-146">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-147">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar miembros**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-147">In the details pane, on the **Members** tab, select **View all and manage members**.</span></span>
+3. <span data-ttu-id="c7a91-147">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar miembros**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-147">In the details pane, on the **Members** tab, select **View all and manage members**.</span></span>
 
-4. <span data-ttu-id="e1b4b-148">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-148">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="c7a91-148">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="c7a91-148">Next to the member you want to remove, select the X.</span></span>
 
-5. <span data-ttu-id="e1b4b-149">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-149">Select **Save** to remove the member.</span></span>
+5. <span data-ttu-id="c7a91-149">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="c7a91-149">Select **Save** to remove the member.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e1b4b-150">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-150">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
+1. <span data-ttu-id="c7a91-150">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-150">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-151">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-151">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-151">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-151">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-152">En el panel de detalles, junto a **miembros**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-152">In the details pane, next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-152">En el panel de detalles, junto a **miembros**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-152">In the details pane, next to **Members**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-153">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-153">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="c7a91-153">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="c7a91-153">Next to the member you want to remove, select the X.</span></span>
 
-5. <span data-ttu-id="e1b4b-154">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-154">Select **Save** to remove the member.</span></span>
+5. <span data-ttu-id="c7a91-154">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="c7a91-154">Select **Save** to remove the member.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e1b4b-155">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-155">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
+1. <span data-ttu-id="c7a91-155">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-155">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
 
-2. <span data-ttu-id="e1b4b-156">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-156">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-156">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-156">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-157">En el panel de detalles, junto a **miembros**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-157">In the details pane, next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-157">En el panel de detalles, junto a **miembros**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-157">In the details pane, next to **Members**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-158">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-158">Next to the member you want to remove, select the X.</span></span>
+4. <span data-ttu-id="c7a91-158">Junto al miembro que quiera quitar, seleccione la X.</span><span class="sxs-lookup"><span data-stu-id="c7a91-158">Next to the member you want to remove, select the X.</span></span>
 
-5. <span data-ttu-id="e1b4b-159">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-159">Select **Save** to remove the member.</span></span>
+5. <span data-ttu-id="c7a91-159">Seleccione **Guardar** para quitar el miembro.</span><span class="sxs-lookup"><span data-stu-id="c7a91-159">Select **Save** to remove the member.</span></span>
 
 ::: moniker-end
 
-## <a name="manage-group-owner-status"></a><span data-ttu-id="e1b4b-160">Administrar el estado del propietario del grupo</span><span class="sxs-lookup"><span data-stu-id="e1b4b-160">Manage group owner status</span></span>
+## <a name="manage-group-owner-status"></a><span data-ttu-id="c7a91-160">Administrar el estado del propietario del grupo</span><span class="sxs-lookup"><span data-stu-id="c7a91-160">Manage group owner status</span></span>
 
-<span data-ttu-id="e1b4b-p103">De manera predeterminada, la persona que creó el grupo es el propietario del grupo. A menudo, un grupo tendrá varios propietarios con fines de compatibilidad con las copias de seguridad o por otras razones. Los miembros pueden promoverse al estado de propietario y los propietarios pueden degradarse al estado de miembro.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-p103">By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.</span></span>
+<span data-ttu-id="c7a91-161">By default, the person who created the group is the group owner.</span><span class="sxs-lookup"><span data-stu-id="c7a91-161">By default, the person who created the group is the group owner.</span></span> <span data-ttu-id="c7a91-162">Often a group will have multiple owners for backup support or other reasons.</span><span class="sxs-lookup"><span data-stu-id="c7a91-162">Often a group will have multiple owners for backup support or other reasons.</span></span> <span data-ttu-id="c7a91-163">Members can be promoted to owner status and owners can be demoted to member status.</span><span class="sxs-lookup"><span data-stu-id="c7a91-163">Members can be promoted to owner status and owners can be demoted to member status.</span></span>
   
-### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a><span data-ttu-id="e1b4b-164">Promover un miembro al estado de propietario en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-164">Promote a member to owner status in the admin center</span></span>
+### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a><span data-ttu-id="c7a91-164">Promover un miembro al estado de propietario en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-164">Promote a member to owner status in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e1b4b-165">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-165">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="c7a91-165">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="c7a91-165">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
 
-2. <span data-ttu-id="e1b4b-166">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-166">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-166">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-166">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-167">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-167">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
+3. <span data-ttu-id="c7a91-167">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-167">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
 
-4. <span data-ttu-id="e1b4b-168">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-168">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="c7a91-168">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-168">Search for a member, or select **Add owners**.</span></span>
 
-5. <span data-ttu-id="e1b4b-169">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-169">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="c7a91-169">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-169">Select the check box next to the name of the member you want to add.</span></span>
 
-6. <span data-ttu-id="e1b4b-170">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-170">Select **Save**, and then **Close**.</span></span>
+6. <span data-ttu-id="c7a91-170">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-170">Select **Save**, and then **Close**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e1b4b-171">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-171">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
+1. <span data-ttu-id="c7a91-171">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-171">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
 
-2. <span data-ttu-id="e1b4b-172">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-172">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-172">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-172">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-173">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-173">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-173">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-173">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-174">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-174">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="c7a91-174">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-174">Search for a member, or select **Add owners**.</span></span>
 
-5. <span data-ttu-id="e1b4b-175">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-175">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="c7a91-175">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-175">Select the check box next to the name of the member you want to add.</span></span>
 
-6. <span data-ttu-id="e1b4b-176">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-176">Select **Save**, and then **Close**.</span></span>
+6. <span data-ttu-id="c7a91-176">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-176">Select **Save**, and then **Close**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e1b4b-177">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-177">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
+1. <span data-ttu-id="c7a91-177">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-177">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-178">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-178">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-178">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-178">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-179">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-179">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-179">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-179">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-180">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-180">Search for a member, or select **Add owners**.</span></span>
+4. <span data-ttu-id="c7a91-180">Busque un miembro o seleccione **Agregar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-180">Search for a member, or select **Add owners**.</span></span>
 
-5. <span data-ttu-id="e1b4b-181">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-181">Select the check box next to the name of the member you want to add.</span></span>
+5. <span data-ttu-id="c7a91-181">Active la casilla de verificación situada junto al nombre del miembro que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="c7a91-181">Select the check box next to the name of the member you want to add.</span></span>
 
-6. <span data-ttu-id="e1b4b-182">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-182">Select **Save**, and then **Close**.</span></span>
+6. <span data-ttu-id="c7a91-182">Seleccione **Guardar**y, a continuación, **cerrar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-182">Select **Save**, and then **Close**.</span></span>
 
 ::: moniker-end
 
-### <a name="remove-owner-status-in-the-admin-center"></a><span data-ttu-id="e1b4b-183">Quitar el estado de propietario en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="e1b4b-183">Remove owner status in the admin center</span></span>
+### <a name="remove-owner-status-in-the-admin-center"></a><span data-ttu-id="c7a91-183">Quitar el estado de propietario en el centro de administración</span><span class="sxs-lookup"><span data-stu-id="c7a91-183">Remove owner status in the admin center</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e1b4b-184">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-184">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="c7a91-184">En el centro de administración, vaya a **la** página grupos de grupos \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> .</span><span class="sxs-lookup"><span data-stu-id="c7a91-184">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
 
-2. <span data-ttu-id="e1b4b-185">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-185">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-185">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-185">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-186">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-186">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
+3. <span data-ttu-id="c7a91-186">En el panel de detalles, en la pestaña **miembros** , seleccione **Ver todos y administrar propietarios**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-186">In the details pane, on the **Members** tab, select **View all and manage owners**.</span></span>
 
-4. <span data-ttu-id="e1b4b-187">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-187">Select the X next to the owner's name.</span></span>
+4. <span data-ttu-id="c7a91-187">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-187">Select the X next to the owner's name.</span></span>
 
-5. <span data-ttu-id="e1b4b-188">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-188">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-188">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-188">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e1b4b-189">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-189">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
+1. <span data-ttu-id="c7a91-189">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-189">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>  
 
-2. <span data-ttu-id="e1b4b-190">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-190">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-190">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-190">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-191">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-191">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-191">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-191">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-192">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-192">Select the X next to the owner's name.</span></span>
+4. <span data-ttu-id="c7a91-192">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-192">Select the X next to the owner's name.</span></span>
 
-5. <span data-ttu-id="e1b4b-193">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-193">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-193">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-193">Select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e1b4b-194">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="e1b4b-194">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
+1. <span data-ttu-id="c7a91-194">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a **la** página grupos de grupos \> **Groups** .</span><span class="sxs-lookup"><span data-stu-id="c7a91-194">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.</span></span>
 
-2. <span data-ttu-id="e1b4b-195">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-195">Select a group name.</span></span>
+2. <span data-ttu-id="c7a91-195">Seleccione un nombre de grupo.</span><span class="sxs-lookup"><span data-stu-id="c7a91-195">Select a group name.</span></span>
 
-3. <span data-ttu-id="e1b4b-196">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-196">In the details pane, next to **Owners**, select **Edit**.</span></span>
+3. <span data-ttu-id="c7a91-196">En el panel de detalles, junto a **propietarios**, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-196">In the details pane, next to **Owners**, select **Edit**.</span></span>
 
-4. <span data-ttu-id="e1b4b-197">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-197">Select the X next to the owner's name.</span></span>
+4. <span data-ttu-id="c7a91-197">Seleccione la X junto al nombre del propietario.</span><span class="sxs-lookup"><span data-stu-id="c7a91-197">Select the X next to the owner's name.</span></span>
 
-5. <span data-ttu-id="e1b4b-198">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-198">Select **Save**.</span></span>
+5. <span data-ttu-id="c7a91-198">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c7a91-198">Select **Save**.</span></span>
 
 ::: moniker-end
 
-## <a name="more-on-managing-membership"></a><span data-ttu-id="e1b4b-199">Más información sobre cómo administrar la pertenencia</span><span class="sxs-lookup"><span data-stu-id="e1b4b-199">More on managing membership</span></span>
+## <a name="more-on-managing-membership"></a><span data-ttu-id="c7a91-199">Más información sobre cómo administrar la pertenencia</span><span class="sxs-lookup"><span data-stu-id="c7a91-199">More on managing membership</span></span>
 
-- <span data-ttu-id="e1b4b-200">[Administrar grupos dinámicamente en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): vea la sección "¿Cómo puedo administrar la pertenencia a un grupo dinámicamente?"</span><span class="sxs-lookup"><span data-stu-id="e1b4b-200">[Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"</span></span>
+- <span data-ttu-id="c7a91-200">[Administrar grupos dinámicamente en Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): vea la sección "¿Cómo puedo administrar la pertenencia a un grupo dinámicamente?"</span><span class="sxs-lookup"><span data-stu-id="c7a91-200">[Manage groups dynamically in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): see the section "How can I manage the membership of a group dynamically?"</span></span>
 
-- <span data-ttu-id="e1b4b-201">Para agregar cientos o miles de usuarios a grupos, use el [complemento Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span><span class="sxs-lookup"><span data-stu-id="e1b4b-201">To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span></span>
+- <span data-ttu-id="c7a91-201">Para agregar cientos o miles de usuarios a grupos, use el [complemento Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span><span class="sxs-lookup"><span data-stu-id="c7a91-201">To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).</span></span>
 
-- [<span data-ttu-id="e1b4b-202">Asignar un nuevo propietario a un grupo huérfano</span><span class="sxs-lookup"><span data-stu-id="e1b4b-202">Assign a new owner to an orphaned group</span></span>](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [<span data-ttu-id="c7a91-202">Asignar un nuevo propietario a un grupo huérfano</span><span class="sxs-lookup"><span data-stu-id="c7a91-202">Assign a new owner to an orphaned group</span></span>](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## <a name="articles-about-managing-groups"></a><span data-ttu-id="e1b4b-203">Artículos sobre la administración de grupos</span><span class="sxs-lookup"><span data-stu-id="e1b4b-203">Articles about managing groups</span></span>
+## <a name="articles-about-managing-groups"></a><span data-ttu-id="c7a91-203">Artículos sobre la administración de grupos</span><span class="sxs-lookup"><span data-stu-id="c7a91-203">Articles about managing groups</span></span>
 
-- [<span data-ttu-id="e1b4b-204">Actualizar listas de distribución a grupos de 365 de Microsoft en Outlook</span><span class="sxs-lookup"><span data-stu-id="e1b4b-204">Upgrade distribution lists to Microsoft 365 groups in Outlook</span></span>](../manage/upgrade-distribution-lists.md)
+- [<span data-ttu-id="c7a91-204">Actualizar listas de distribución a grupos de 365 de Microsoft en Outlook</span><span class="sxs-lookup"><span data-stu-id="c7a91-204">Upgrade distribution lists to Microsoft 365 groups in Outlook</span></span>](../manage/upgrade-distribution-lists.md)
 
-- [<span data-ttu-id="e1b4b-205">Por qué debería actualizar sus listas de distribución a los grupos de Outlook</span><span class="sxs-lookup"><span data-stu-id="e1b4b-205">Why you should upgrade your distribution lists to groups in Outlook</span></span>](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [<span data-ttu-id="c7a91-205">Por qué debería actualizar sus listas de distribución a los grupos de Outlook</span><span class="sxs-lookup"><span data-stu-id="c7a91-205">Why you should upgrade your distribution lists to groups in Outlook</span></span>](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- [<span data-ttu-id="e1b4b-206">Administrar el acceso de invitado en grupos de 365 de Microsoft</span><span class="sxs-lookup"><span data-stu-id="e1b4b-206">Manage guest access in Microsoft 365 groups</span></span>](manage-guest-access-in-groups.md)
+- [<span data-ttu-id="c7a91-206">Administrar el acceso de invitado en grupos de 365 de Microsoft</span><span class="sxs-lookup"><span data-stu-id="c7a91-206">Manage guest access in Microsoft 365 groups</span></span>](manage-guest-access-in-groups.md)
 
-- <span data-ttu-id="e1b4b-207">[Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): en este artículo se presentan los cmdlets clave y se proporcionan ejemplos.</span><span class="sxs-lookup"><span data-stu-id="e1b4b-207">[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples</span></span>
+- <span data-ttu-id="c7a91-207">[Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): en este artículo se presentan los cmdlets clave y se proporcionan ejemplos.</span><span class="sxs-lookup"><span data-stu-id="c7a91-207">[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples</span></span>
 
-- [<span data-ttu-id="e1b4b-208">Directiva de nomenclatura de grupos de 365 de Microsoft</span><span class="sxs-lookup"><span data-stu-id="e1b4b-208">Microsoft 365 groups naming policy</span></span>](groups-naming-policy.md)
+- [<span data-ttu-id="c7a91-208">Directiva de nomenclatura de grupos de 365 de Microsoft</span><span class="sxs-lookup"><span data-stu-id="c7a91-208">Microsoft 365 groups naming policy</span></span>](groups-naming-policy.md)
