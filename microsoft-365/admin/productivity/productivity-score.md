@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399187"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754801"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -135,6 +135,22 @@ La información principal sobre movilidad es el número de personas que tienen a
 
 Medimos el porcentaje y el número absoluto de personas que usaban al menos una aplicación de productividad de Microsoft 365 en dos o más plataformas, entre las que se incluye escritorio, móvil y Web. Las aplicaciones de productividad que medimos son Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype. Los usuarios deben tener licencias de Microsoft 365 apps for Enterprise, Exchange, Yammer, Skype o teams que se medirán. 
 
-## <a name="we-want-to-hear-from-you"></a>queremos conocer su opinión
+## <a name="business-continuity-special-report"></a>Informe especial de continuidad del negocio
+
+El informe de continuidad empresarial es un informe de inteligencia de trabajo limitado disponible para todos los clientes de Microsoft 365 para ayudarles a guiar a sus organizaciones durante este difícil tiempo.  
+
+Este informe ayuda a los líderes de negocios a comprender: 
+
+- Cómo la colaboración y la comunicación se ven afectadas por el cambio a la tarea remota. 
+
+- El impacto en el saldo de la vida laboral mientras los usuarios se ajustan a trabajar desde casa. 
+
+- Si los usuarios usan reuniones con eficacia y cómo se 
+
+[Obtenga más información sobre el informe de continuidad empresarial](https://aka.ms/bcrps)
+
+[Más información sobre Microsoft Graph](https://docs.microsoft.com/graph/)
+
+## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
 Comparta sus ideas sobre la puntuación de productividad y sus ideas sobre cómo mejorarla. Use las secciones de **comentarios** del producto y/o póngase en contacto con el equipo de puntuación de productividad en ProductivityScorePreview@service.microsoft.com.

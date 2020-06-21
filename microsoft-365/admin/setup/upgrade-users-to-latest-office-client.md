@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Obtenga información sobre cómo actualizar a los usuarios al último cliente de Office.
-ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb2513b2112dd8427222d43d14184895df3b594b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398815"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778882"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Actualizar los usuarios de Microsoft 365 para empresas al último cliente de Office
 
@@ -45,7 +45,7 @@ Para obtener más información, consulte [Office 2010 End of Support Roadmap](ht
   
  Si es el administrador responsable de la suscripción a Microsoft 365 para empresas en su organización, está en el punto correcto. Los administradores suelen ser responsables de tareas como la administración de usuarios, el restablecimiento de contraseñas, la administración de instalaciones de Office y la adición o eliminación de licencias.
 
- Si no es un administrador y tiene un producto de la [familia de Microsoft 365](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) , vea [¿Cómo puedo actualizar Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) para obtener información sobre cómo actualizar la versión de Office más antigua y de uso doméstico).
+ Si no es un administrador y tiene un producto de la [familia de Microsoft 365](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) , vea [¿Cómo puedo actualizar Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) para obtener información sobre cómo actualizar la versión de Office más antigua y de uso doméstico).
 
 ## <a name="get-ready-to-upgrade"></a>Prepararse para la actualización
 
@@ -102,9 +102,9 @@ Se recomienda si tiene complementos de terceros, póngase en contacto con el fab
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Seleccione la versión de Office que desea desinstalar
 
-- [Desde un equipo PC](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)
+- [Desde un equipo PC](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-- [Desde un equipo Mac](https://support.office.com/article/eefa1199-5b58-43af-8a3d-b73dc1a8cae3.aspx)
+- [Desde un equipo Mac](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Problemas conocidos al intentar reinstalar versiones anteriores de Office después de una desinstalación
 
@@ -114,7 +114,7 @@ Se recomienda si tiene complementos de terceros, póngase en contacto con el fab
 
  **Suscripciones no admitidas** Si su copia de Office se obtuvo a través de suscripciones discontinuas, como Office 365 Small Business Premium u Office 365 mediana empresa, no podrá instalar una versión anterior de Office a menos que tenga la clave del producto que venía con la suscripción.
 
-Si prefiere instalar la versión anterior de Office en paralelo con la versión más reciente, puede ver una lista de las versiones en las que se admite esto, [instalar y usar diferentes versiones de Office en el mismo PC](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx). Una instalación en paralelo puede ser la opción adecuada para usted, por ejemplo, si ha instalado complementos de terceros que está usando con su versión anterior de Office y no está seguro de que son compatibles con la versión más reciente.
+Si prefiere instalar la versión anterior de Office en paralelo con la versión más reciente, puede ver una lista de las versiones en las que se admite esto, [instalar y usar diferentes versiones de Office en el mismo PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). Una instalación en paralelo puede ser la opción adecuada para usted, por ejemplo, si ha instalado complementos de terceros que está usando con su versión anterior de Office y no está seguro de que son compatibles con la versión más reciente.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Paso 4: asignar licencias de Office a los usuarios
 
@@ -122,7 +122,7 @@ Si aún no lo ha hecho, asigne licencias a cualquier usuario de su organización
   
 ## <a name="step-5---install-office"></a>Paso 5: instalar Office
 
-Una vez que haya comprobado que todos los usuarios que desea actualizar tienen licencias, el último paso consiste en hacer que instalen Office, vea [Descargar e instalar o volver a instalar Office en su PC o Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
+Una vez que haya comprobado que todos los usuarios que desea actualizar tienen licencias, el último paso consiste en hacer que instalen Office, vea [Descargar e instalar o volver a instalar Office en su PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
 > Si no desea que los usuarios instalen Office ellos mismos, consulte [administrar la configuración de descarga de software en office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Puede usar la [herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) para descargar el software de Office en la red local y, a continuación, implementar Office con el método de implementación de software que suela usar.

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388010"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702553"
 ---
 # <a name="groups-naming-policy"></a>Directiva de nomenclatura de Grupos
 
@@ -80,6 +80,9 @@ Se recomienda usar atributos que tengan valores rellenados para todos los usuari
 - Durante la creación de la Directiva, la longitud total de las cadenas de prefijos y sufijos se limita a 53 caracteres.
 
 - Los prefijos y los sufijos pueden contener caracteres especiales que se admiten en nombre de grupo y alias de grupo. Cuando los prefijos y los sufijos contienen caracteres especiales que no se permiten en el alias de grupo, solo se aplican al nombre del grupo. Por lo tanto, en este caso, los prefijos y los sufijos aplicados al nombre del grupo serían distintos de los que se aplican al alias del grupo.
+
+  > [!NOTE]
+  > Se permite un punto (.) o un guión (-) en cualquier lugar del nombre del grupo, excepto al principio o al final del nombre. Un carácter de subrayado (_) se permite en cualquier lugar del nombre del grupo, incluido al principio o al final del nombre.
 
 - Si usa los grupos conectados de Yammer Microsoft 365, evite usar los siguientes caracteres en su Directiva de nomenclatura: @, \# , \[ , \] , \<, and \> . Si estos caracteres están en la Directiva de nomenclatura, los usuarios normales de Yammer no podrán crear grupos.
 

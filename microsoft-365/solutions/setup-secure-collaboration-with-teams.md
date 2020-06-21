@@ -1,5 +1,5 @@
 ---
-title: Configurar una colaboración segura con Microsoft 365
+title: Configurar la colaboración moderna con Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar Microsoft Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159472"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724806"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar una colaboración segura con Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
 Poder compartir fácilmente información con las personas adecuadas a la vez que evita el uso compartido es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales de manera segura con solo aquellos que deben tener acceso a él. Según el proyecto, esto podría incluir compartir datos confidenciales con personas fuera de la organización.
 
@@ -57,7 +57,16 @@ La información esencial para el éxito de la organización o que tenga requisit
 
 Para todos los escenarios mencionados anteriormente, puede usar Teams en Microsoft Teams para almacenar, compartir y colaborar en la información. 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>Uso de Teams para todo tipo de datos
+Para configurar Collabration seguras, use estas funciones y características de Microsoft 365.
+
+| Producto o componente | Funcionalidad o característica | Licencias |
+|:-------|:-----|:-------|
+| Protección contra amenazas avanzada de Office 365 | Datos adjuntos seguros de ATP para SPO, OneDrive y Teams; Documentos seguros de ATP; Vínculos seguros de ATP para Teams    | Microsoft 365 E1, E3 y E5 |
+| SharePoint    | Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos para compartir, solicitudes de acceso, configuración de uso compartido del invitado del sitio | Microsoft 365 E1, E3 y E5 |
+| Microsoft Teams   | Acceso de invitado, equipos privados, canales privados | Microsoft 365 E1, E3 y E5 |
+| Cumplimiento de Microsoft 365  | Etiquetas de confidencialidad    | Microsoft 365 E3 y E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>Uso de Teams para todo tipo de datos
 
 Para administrar el acceso a la información con diferentes sensitivities, hemos desarrollado [tres niveles distintos de protección para Microsoft Teams](configure-teams-three-tiers-protection.md). Puede personalizar cualquiera de estos niveles para tratar mejor las necesidades o su negocio. 
 
@@ -73,7 +82,7 @@ Estos niveles: *línea base*, *sensible*y *extremadamente sensible* : aumentan g
 |Uso compartido de archivos|Permitido|Permitido|Solo pueden compartir los propietarios del equipo.|
 |Pertenencia al equipo|Cualquiera puede unirse a un equipo público.<br>Se requiere la aprobación del propietario del equipo para unirse a equipos privados.|Se necesita la aprobación del propietario del equipo para unirse.|Se necesita la aprobación del propietario del equipo para unirse.|
 |Cifrado de documentos|||Disponible con la etiqueta de confidencialidad|
-|Uso compartido de invitado|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
+|Uso compartido de invitados|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
 |Dispositivos no administrados|Sin restricción|Acceso a través de Web|Blocked|
 
 La configuración de estos niveles implica:
@@ -91,7 +100,7 @@ Empiece con el nivel de línea base y, a continuación, agregue equipos que usen
 
 Si tiene un proyecto muy sensible que requiere protección adicional para compartir incluso dentro de su organización, puede configurar un equipo que use su propia etiqueta de confidencialidad para cifrar archivos de modo que solo los miembros del equipo puedan leerlos. Consulte [Configure a Team with Security Isolation](secure-teams-security-isolation.md) para obtener más información.
 
-## <a name="sharing-with-people-outside-your-organization"></a>Compartir con personas de fuera de la organización
+### <a name="sharing-with-people-outside-your-organization"></a>Compartir con personas de fuera de la organización
 
 Es posible que necesite [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md). Esto puede abarcar desde compartir un solo documento con una sola persona para colaborar en un proyecto principal con una organización de asociados de gran tamaño o freelancers de todo el mundo. En Microsoft 365, esta gama de uso compartido externo puede realizarse fácilmente y con las protecciones adecuadas para ayudar a proteger la información confidencial.
 
@@ -109,7 +118,13 @@ En función de la confidencialidad de la información que se comparte, puede Agr
 
 Si tiene un proyecto principal con una organización asociada, puede usar la administración de derechos de Azure para administrar los invitados de esa organización en un equipo que haya configurado para el proyecto. Consulte [Create a B2B extranet with Managed Guests](b2b-extranet.md) para obtener más información.
 
-## <a name="see-also"></a>Ver también
+## <a name="deploy-the-secure-collaboration-solution"></a>Implementación de la solución de colaboración segura
+
+Cuando esté listo para implementar esta solución, continúe con estos pasos:
+1. Configure los [tres niveles de protección distintos para Microsoft Teams](configure-teams-three-tiers-protection.md).
+2. Configure las opciones para [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md).
+
+## <a name="see-also"></a>Vea también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

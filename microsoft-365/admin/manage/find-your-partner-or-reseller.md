@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Obtenga información acerca de cómo encontrar un nuevo Partner de 365 de Microsoft o obtenga información de contacto de un socio con el que trabajó en el pasado. '
-ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515800"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780114"
 ---
 # <a name="find-your-partner-or-reseller"></a>Buscar un asociado o distribuidor
 
@@ -61,6 +61,6 @@ Si está listo para comprar o renovar Microsoft 365 a través de licencias por v
   
  **Para partners de Microsoft**
   
-[Ayuda para socios](https://support.office.com/article/ae811622-b838-4f62-b7e9-659627374963.aspx)
+[Ayuda para socios](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 

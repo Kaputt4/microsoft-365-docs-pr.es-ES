@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Microsoft 365.
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208542"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739246"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
@@ -43,7 +43,7 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
 
 1. En un explorador web, vaya a [https://sender.office.com](https://sender.office.com).
 
-2. Siga las instrucciones que se indican en la página. Asegúrese de que usa la dirección de correo electrónico a la que se envió el mensaje de error, así como la dirección IP especificada en el mensaje de error. Solo se puede especificar una dirección de correo electrónico y una dirección IP por visita.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Haga clic en **Enviar**.
 
@@ -60,4 +60,4 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
     > [!NOTE]
     > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.
 
-Consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam Protection in EOP](outbound-spam-controls.md) para evitar que IP quede en la lista negra.
+Consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam Protection in EOP](outbound-spam-controls.md) para evitar que se bloquee una IP.

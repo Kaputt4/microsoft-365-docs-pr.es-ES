@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Obtenga información sobre cómo crear, editar o eliminar un grupo de seguridad.
-ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c7c8d57037d972cd89dad45358dc5a7aa3fb86e8
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432282"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780246"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Crear, editar o eliminar un grupo de seguridad en el centro de administración de Microsoft 365
 
@@ -41,7 +41,7 @@ En la página Microsoft 365 **grupos** , puede crear grupos de cuentas de usuari
 También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que puede usar para enviar correo electrónico o asignar permisos a un grupo de usuarios y [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que conceden a los usuarios permisos y acceso a sitios y colecciones de sitios. 
   
 > [!IMPORTANT]
->  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, vea [usar grupos de Microsoft 365 en lugar de buzones de sitio](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx). 
+>  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, vea [usar grupos de Microsoft 365 en lugar de buzones de sitio](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b). 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Administración de grupos de seguridad en el centro de administración
 

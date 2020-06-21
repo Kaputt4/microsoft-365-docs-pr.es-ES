@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: db5a9669464a9c4cb150dee119d8c0bcc2dc9833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399817"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717278"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
 La implementación centralizada es la forma recomendada y con más características para la mayoría de los clientes de implementar complementos de Office para los usuarios y grupos de su organización. Si es administrador, use esta guía para determinar si el inquilino y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
-La implementación centralizada es compatible con Windows, Mac, iOS, Android y aplicaciones de Office en línea.
-Un complemento puede tardar hasta 12 horas en mostrarse para el cliente para todos los usuarios.
+La implementación centralizada admite tres plataformas de escritorio Windows, Mac y aplicaciones de Office en línea. La implementación centralizada también admite iOS y Android (solo complementos de Outlook Mobile).
+Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
   
 ## <a name="requirements"></a>Requirements
 
@@ -87,7 +87,7 @@ Para obtener ayuda con Microsoft 365 apps for Enterprise, vea [Troubleshooting T
 
 Microsoft Exchange almacena los manifiestos de complementos dentro del espacio empresarial de la organización. El administrador que implementa los complementos y los usuarios que reciben esos complementos deben estar en una versión de Exchange online que admita la autenticación de OAuth.
   
-Póngase en contacto con el administrador de Exchange de su organización para averiguar qué configuración está en uso. La conectividad de OAuth por usuario puede comprobarse usando el cmdlet de PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Comprobador de compatibilidad de implementación centralizada
@@ -96,7 +96,7 @@ Con el comprobador de compatibilidad de implementación centralizada, puede comp
   
 #### <a name="run-the-compatibility-checker"></a>Ejecutar el comprobador de compatibilidad
   
-1. Inicie una ventana de PowerShell. exe con privilegios elevados.
+1. Inicie una ventana de PowerShell.exe elevado.
     
 2. Ejecute el siguiente comando:
 
@@ -139,7 +139,7 @@ La característica de implementación centralizada es compatible actualmente con
   
 La implementación centralizada admite asignaciones a usuarios individuales, grupos y a todos los miembros del espacio empresarial. La implementación centralizada es compatible con usuarios en grupos de nivel superior o grupos sin grupo primario, pero no con usuarios en grupos anidados o grupos que forman parte de otros primarios.
    
-Eche un vistazo al siguiente ejemplo, en el que Sandra, Sheila y el grupo del departamento de ventas están asignados a un complemento. Como el departamento de ventas de la Costa Occidental es un grupo anidado, Bert y Fred no están asignados a un complemento.
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
   
 ![Diagrama del Departamento de ventas](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -150,11 +150,11 @@ La forma más sencilla de detectar si un grupo contiene grupos anidados es ver l
   
 ![Pestaña miembros de la tarjeta de contacto de Outlook](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
-Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cualquier otro. En el ejemplo siguiente, puede ver en la pestaña **Miembros** de la tarjeta de contacto de Outlook que el Subgrupo 1 es miembro del grupo de pruebas. 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
 ![Ficha pertenencia de la tarjeta de contacto de Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-De forma alternativa, puede usar la API de Graph Azure Active Directory para ejecutar consultas para encontrar una lista de grupos dentro de un grupo. Para obtener más información, vea [Operaciones en grupos | Referencia de API de Graph](https://go.microsoft.com/fwlink/p/?linkid=846342).
+Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
   
 ### <a name="contacting-microsoft-for-support"></a>Ponerse en contacto con Microsoft para obtener soporte técnico
 

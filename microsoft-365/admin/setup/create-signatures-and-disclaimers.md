@@ -23,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Obtenga información sobre cómo agregar una firma de correo electrónico, una declinación de responsabilidades o una declaración de divulgación a todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398959"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779886"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
 
- Puede agregar una firma de correo electrónico, un aviso de declinación de responsabilidades legales o una declaración de divulgación a los mensajes de correo electrónico que reciba o envíe su organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
+ You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  Vea un breve vídeo sobre cómo crear una firma de correo electrónico de toda la empresa. <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Crear una firma que se aplique a todos los mensajes
 
@@ -89,7 +89,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 9. Seleccione **seleccionar una** y elija **ajustar** como opción de reserva. Después, seleccione **Aceptar**. Esto significa que, si no se puede agregar el aviso de declinación de responsabilidades debido al cifrado o a otra configuración del correo, este se ajustará en un sobre de mensajes.
     
-10. Deje la opción **Auditar esta regla con nivel de gravedad** seleccionada. Después, elija qué opción quiere usar en el registro de mensajes: **Bajo**, **Medio** o **Alto**. 
+10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
     
 11. Elija **Exigir** para activar el aviso de declinación de responsabilidades inmediatamente, a menos que quiera probarlo primero. 
     

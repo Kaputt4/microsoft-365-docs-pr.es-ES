@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632844"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735519"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el escritorio administrado por Microsoft
 
@@ -53,11 +53,11 @@ Hay direcciones URL de varios productos de Microsoft que deben estar en la lista
 
 Servicio de Microsoft | Origen de la documentación: direcciones URL necesarias en la lista de permitidos
 --- | ---
-Windows 10 Enterprise, incluida Windows Update para empresas | [Administrar los extremos de conexión para Windows 10, versión 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-Optimización de entrega | [Configurar la optimización de entrega para las actualizaciones de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 Enterprise, incluida Windows Update para empresas | [Administrar los extremos de conexión para Windows 10, versión 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Administrar los extremos de conexión para Windows 10, versión 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Optimización de distribución | [Configurar la optimización de entrega para las actualizaciones de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Intervalos de direcciones IP y URL de 365 de Microsoft](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | La [identidad híbrida requiere puertos y protocolos](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) y [los requisitos de puerto de servicios de dominio de Active Directory y](https://aka.ms/AA26ygm) Active Directory 
-Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Puntos de conexión de red para Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
+Microsoft Intune | [Requisitos de configuración de red de Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Puntos de conexión de red para Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Protección contra amenazas avanzada de Microsoft defender (ATP) | [Extremos de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

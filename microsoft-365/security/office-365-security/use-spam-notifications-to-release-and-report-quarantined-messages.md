@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado para el usuario final sobre los mensajes en cuarentena de Exchange Online Protection (EOP).
-ms.openlocfilehash: 7d4cf21ade504e999dc5b53ad9062977369561c6
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: 14dcdfa8373e3826b23bc5574d1b5ae8ff76927b
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294246"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754789"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar y notificar mensajes en cuarentena
 
@@ -44,7 +44,7 @@ Una notificación de correo no deseado para el usuario final contiene la siguien
 
 - **Fecha**: la fecha y hora (en UTC) en que el mensaje se ha puesto en cuarentena.
 
-- **Bloquear remitente**: haga clic en este vínculo para agregar el remitente a la lista de remitentes bloqueados. Para obtener más información, vea [bloquear un remitente de correo en Outlook](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Bloquear remitente**: haga clic en este vínculo para agregar el remitente a la lista de remitentes bloqueados. Para obtener más información, vea [bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Liberar**: para los mensajes de correo no deseado (no phish), puede liberar el mensaje aquí sin ir a cuarentena en el centro de seguridad & cumplimiento.
 

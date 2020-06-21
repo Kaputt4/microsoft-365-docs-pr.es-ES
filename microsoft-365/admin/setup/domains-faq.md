@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información sobre los dominios buscando respuestas a sus preguntas en preguntas más frecuentes.
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398911"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739156"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -435,11 +435,11 @@ Puede, pero hay limitaciones:
         
     4. En la ventana que se abre, seleccione **retransmisión interna**. 
         
-    5. Haga clic en **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
+    5. Seleccione **Guardar**. Esta configuración puede tardar unos minutos en surtir efecto. 
     
 4. Opcionalmente, desbloquear el servidor de correo electrónico existente
     
-    1. Office 365 usa Exchange Online Protection (EOP) para la protección contra correo no deseado. Si EOP detecta un gran volumen de correo no deseado que ha reenviado su servidor de correo actual, puede bloquearlo, lo que impediría el reenvío en funcionamiento. Si está seguro de que la protección contra correo no deseado de su proveedor de correo electrónico es la que usa, puede usar la lista blanca del servidor en Office 365. Sin embargo, esto también permitirá que el correo no deseado que llegue a través del servidor original pase a los buzones de Office 365 y no podrá evaluar cómo Office 365 impide el correo no deseado.
+    1. Office 365 usa Exchange Online Protection (EOP) para la protección contra correo no deseado. Si EOP detecta un gran volumen de correo no deseado que ha reenviado su servidor de correo actual, puede bloquearlo, lo que impediría el reenvío en funcionamiento. Si confía en la protección contra correo no deseado que su proveedor de correo no deseado usa, puede agregar su servidor a una lista de permitidos en Office 365. Sin embargo, esto también permitirá que el correo no deseado que llegue a través del servidor original pase a los buzones de Office 365 y no podrá evaluar cómo Office 365 impide el correo no deseado.
     
     2. Vaya al centro de administración de Exchange (EAC).
         

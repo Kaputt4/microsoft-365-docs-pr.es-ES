@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el centro de mensajes de Microsoft 365 y su rol en la administración de cambios.
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694964"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780090"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -164,7 +164,7 @@ Si la administración se distribuye en toda la organización, es posible que no 
 Usamos la traducción automática para mostrar automáticamente los mensajes en su idioma preferido. Lea [traducción de idiomas para las publicaciones del centro de mensajes](language-translation-for-message-center-posts.md) para obtener más información sobre cómo establecer el idioma.
   
 > [!NOTE]
-> El Resumen semanal y las publicaciones enviadas por correo electrónico se envían solo en inglés. Los destinatarios pueden usar [Translator para Outlook](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx) para leer el mensaje en su idioma preferido. 
+> El Resumen semanal y las publicaciones enviadas por correo electrónico se envían solo en inglés. Los destinatarios pueden usar [Translator para Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) para leer el mensaje en su idioma preferido. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Roles de administrador que no tienen acceso al centro de mensajes
 

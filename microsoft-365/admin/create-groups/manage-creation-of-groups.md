@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear grupos de Microsoft 365.
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387998"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761679"
 ---
 # <a name="manage-who-can-create-groups"></a>Administrar quién puede crear grupos
 
@@ -45,14 +45,12 @@ En este artículo se explica cómo deshabilitar la capacidad de crear grupos en 
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- Hoja de ruta
+- Proyecto para la web y la guía básica
     
 Puede restringir la creación de grupos de Microsoft 365 a los miembros de un grupo de seguridad en particular. Para configurar esto, use Windows PowerShell. Este artículo le guiará por los pasos necesarios.
   
@@ -125,7 +123,7 @@ Reemplace *\<SecurityGroupName\>* por el nombre del grupo de seguridad que ha cr
 
 `$GroupName = "Group Creators"`
 
-Guarde el archivo como GroupCreators. ps1. 
+Guarde el archivo como GroupCreators.ps1. 
 
 En la ventana de PowerShell, navegue hasta la ubicación donde guardó el archivo (escriba "CD <FileLocation> ").
 
@@ -173,7 +171,7 @@ Si en el futuro desea cambiar el grupo de seguridad que se va a usar, puede volv
 
 Si desea desactivar la restricción de creación de grupos y volver a permitir que todos los usuarios creen grupos, establezca $GroupName en "" y $AllowGroupCreation en "true" y vuelva a ejecutar el script.
     
-## <a name="step-4-verify-that-it-works"></a>Paso 4: comprobar que funciona
+## <a name="step-3-verify-that-it-works"></a>Paso 3: Comprobar que funciona correctamente
 
 Los cambios pueden tardar treinta minutos o más en surtir efecto. Puede comprobar la nueva configuración haciendo lo siguiente:
 

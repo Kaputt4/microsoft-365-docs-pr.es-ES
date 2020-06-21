@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configure el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office365.
-ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432306"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780258"
 ---
 # <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -61,7 +61,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
   
 4. En la página reenvío de correo, seleccione **reenviar todos los correos electrónicos enviados a este buzón**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar cambios**.
     
-    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
+    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      O bien, en el centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [Agréguele las direcciones](add-user-or-contact-to-distribution-list.md)y, a continuación, configure el reenvío para que apunte a la DL siguiendo las instrucciones de este artículo.
     
@@ -79,7 +79,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
 
 4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     
-    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
+    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      O bien, en el centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [Agréguele las direcciones](add-user-or-contact-to-distribution-list.md)y, a continuación, configure el reenvío para que apunte a la DL siguiendo las instrucciones de este artículo.
     
@@ -97,7 +97,7 @@ Para realizar estos pasos, debe ser administrador de Exchange o administrador gl
 
 4. En la página reenvío de correo, establezca el botón de alternancia en **activado**, escriba la dirección de reenvío y elija si desea conservar una copia de los mensajes de correo electrónico reenviados. Si no ve esta opción, asegúrese de que se haya asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
     
-    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
+    **Para reenviar a varias direcciones de correo electrónico**, puede pedir al usuario que configure una regla en Outlook para que reenvíe a las direcciones. Para obtener más información, consulte [usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746). 
     
      O bien, en el centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [Agréguele las direcciones](add-user-or-contact-to-distribution-list.md)y, a continuación, configure el reenvío para que apunte a la DL siguiendo las instrucciones de este artículo.
     

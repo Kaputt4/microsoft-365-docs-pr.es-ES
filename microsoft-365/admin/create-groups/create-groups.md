@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Aprenda a crear y eliminar grupos de Microsoft 365, a agregar y quitar miembros de grupo y a personalizar la forma en que funciona el grupo.
-ms.openlocfilehash: 5e89c89c6b50e58f235877a61eaceaefe2bf6ee8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f6023188df1ae796badbf05b85ebaa1afdd914e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388022"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780450"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Crear un grupo en el centro de administración de Microsoft 365
   
@@ -58,7 +58,7 @@ Una vez que se haya creado el grupo, puede Agregar miembros y configurar opcione
 
 ::: moniker range="o365-worldwide"
 
-Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
+Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
 
 1. En el centro de administración, actualice la página para que aparezca el nuevo grupo y, a continuación, seleccione el nombre del grupo al que desea agregar miembros.
     
@@ -76,7 +76,7 @@ El grupo aparecerá en Outlook con los miembros asignados.
 
 ::: moniker range="o365-germany"
 
-Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
+Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
 1. En el centro de administración, actualice la página para que aparezca el nuevo grupo, seleccione grupos de **grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>y, a continuación, seleccione el grupo al que desea agregar miembros.
     
 2. Junto a **miembros**, seleccione **Editar**.
@@ -92,7 +92,7 @@ El grupo aparecerá en Outlook con los miembros asignados.
 
 ::: moniker range="o365-21vianet"
 
-Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
+Los usuarios pueden [agregarse a sí mismos o solicitar la aprobación](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), o puede agregarlos ahora.
 1. En el centro de administración, actualice la página para que aparezca el nuevo grupo, seleccione grupos de **grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>y, a continuación, seleccione el grupo al que desea agregar miembros.
     
 2. Junto a **miembros**, seleccione **Editar**.
@@ -120,7 +120,7 @@ Después de crear un nuevo grupo y agregar miembros, puede configurar su grupo, 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Administrar el acceso de invitado a grupos de 365 de Microsoft](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Administrar el acceso de invitado a grupos de 365 de Microsoft](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Elegir el dominio que se va a usar al crear grupos de 365 de Microsoft](choose-domain-to-create-groups.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear contactos en el centro de administración y administrar la lista global de direcciones.
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399427"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780018"
 ---
 # <a name="quick-help-contacts"></a>Ayuda rápida: Contactos
 
@@ -42,7 +42,7 @@ Si necesita contactos compartidos a los que pueden acceder todos los usuarios de
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>¿En qué se diferencian estos contactos de Mis contactos?
 
-Mis contactos son contactos que usted crea para usted y que los usuarios crean para sí mismos, pero que otros no pueden ver. Los contactos que se crean en el Centro de administración son contactos para la organización, y todos los usuarios pueden verlos, además de los suyos propios. Para obtener más información, consulte [People Overview-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf).
+Mis contactos son contactos que usted crea para usted y que los usuarios crean para sí mismos, pero que otros no pueden ver. Los contactos que se crean en el Centro de administración son contactos para la organización, y todos los usuarios pueden verlos, además de los suyos propios. Para obtener más información, consulte [People Overview-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>¿Cómo acceden los usuarios a los contactos que he creado en el Centro de administración?
 

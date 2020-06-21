@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Obtenga información sobre cómo habilitar o deshabilitar la característica otros correos para todos o algunos usuarios específicos de la organización mediante Exchange PowerShell. '
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400141"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780282"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurar otros correos para su organización
 
 > [!TIP]
 > La [bandeja de entrada prioritarios](../setup/configure-focused-inbox.md) va a reemplazar otros correos. Más información: [actualización de la bandeja de entrada prioritarios y nuestros planes de desorden](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Como administrador, es posible que tenga que administrar la característica otros correos de Microsoft 365. Para activar o desactivar la característica otros correos para los usuarios de su organización, debe usar Exchange PowerShell. (Las personas pueden activarla o desactivarla siguiendo estas instrucciones: [desactivar o deshacer otros correos de Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)). 
+Como administrador, es posible que tenga que administrar la característica otros correos de Microsoft 365. Para activar o desactivar la característica otros correos para los usuarios de su organización, debe usar Exchange PowerShell. (Las personas pueden activarla o desactivarla siguiendo estas instrucciones: [desactivar o deshacer desorden en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
 Consulte [PowerShell with Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) y [Conéctese a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga como mínimo el rol de administrador de servicios de Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
   
@@ -99,10 +99,10 @@ Como administrador, puede volver a habilitar otros correos mediante Exchange Pow
 ## <a name="related-articles"></a>Artículos relacionados
 <a name="bkmk_onoff"> </a>
 
-[Usar otros correos para ordenar los mensajes de prioridad baja en Outlook](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[Usar otros correos para ordenar los mensajes de prioridad baja en Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[Usar otros correos para ordenar los mensajes de prioridad baja en OWA](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[Usar otros correos para ordenar los mensajes de prioridad baja en OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[Desactivar otros correos en Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[Desactivar otros correos en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

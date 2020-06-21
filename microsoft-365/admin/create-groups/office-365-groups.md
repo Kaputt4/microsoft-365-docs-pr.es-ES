@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de 365 de Microsoft.
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419141"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780414"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -80,7 +80,7 @@ Los siguientes límites se aplican a los grupos de Microsoft 365:
 |Almacenamiento de archivos.|1 terabyte + 10 GB por usuario suscrito + almacenamiento adicional adquirido. Puede adquirir una cantidad ilimitada de almacenamiento adicional.|
 |Tamaño del buzón de grupo|50 GB|
 
-El número máximo predeterminado de grupos de Microsoft 365 que una organización puede tener es de 500.000, pero puede aumentarse por solicitud. Para obtener más información sobre los límites de grupos de 365 de Microsoft, consulte [microsoft 365 Groups: ayuda de administración](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+El número máximo predeterminado de grupos de Microsoft 365 que una organización puede tener es de 500.000, pero puede aumentarse por solicitud. Para obtener más información sobre los límites de grupos de 365 de Microsoft, consulte [microsoft 365 Groups: ayuda de administración](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 La administración de los grupos de Microsoft 365 es más eficaz cuando tiene información que requiere la acción sobre el uso de los grupos. El centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver cosas como el uso del almacenamiento, cuántos grupos activos tiene e incluso cómo los usuarios usan los grupos. Consulte: [informes de Microsoft 365 en el centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
 
@@ -116,7 +116,7 @@ Los grupos de Microsoft 365 funcionan con Azure Active Directory (AAD). Las cara
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Obtenga información sobre los grupos de 365 de Microsoft](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Obtenga información sobre los grupos de 365 de Microsoft](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Actualizar listas de distribución a grupos de 365 de Microsoft](../manage/upgrade-distribution-lists.md)
 

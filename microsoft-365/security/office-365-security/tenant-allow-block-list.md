@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre cómo configurar las entradas de archivos y direcciones URL en la lista de permitidos y bloqueados del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613425"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726813"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Administrar direcciones URL y archivos en la lista de permitidos/bloqueados del espacio empresarial
 
@@ -58,7 +58,17 @@ En este tema se describe cómo configurar entradas en la lista de permitidos/blo
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar y quitar valores de la lista de permitidos/bloqueados de inquilino, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la lista de permitidos/bloqueados del inquilino, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+
+  - Para agregar y quitar valores de la lista de permitidos/bloqueados de inquilino, debe ser miembro de uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para obtener acceso de solo lectura a la lista de permitidos/bloqueados del inquilino, debe ser miembro de uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Usar el centro de seguridad & cumplimiento para crear entradas de dirección URL en la lista de permitidos/bloqueados de espacio empresarial
 
@@ -262,7 +272,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 - Se permiten las direcciones IP4v e IPv6, pero los puertos TCP/UDP no.
 
-- No se permiten las extensiones de nombre de archivo (por ejemplo, test. pdf).
+- No se permiten las extensiones de nombre de archivo (por ejemplo, test.pdf).
 
 - No se admite Unicode, pero Punycode es.
 

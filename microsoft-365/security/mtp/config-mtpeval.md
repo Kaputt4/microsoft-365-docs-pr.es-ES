@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498464"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702575"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de pruebas de prueba
 
@@ -241,11 +241,9 @@ Haga clic en **Siguiente**.
 >[!NOTE]
 >A partir del 1 de junio de 2020, Microsoft habilita automáticamente las características de protección contra amenazas de Microsoft para todos los inquilinos elegibles. Consulte este [artículo de la comunidad tecnológica de Microsoft sobre la elegibilidad de licencias](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) para obtener más información. 
 <br>
-1. Vaya al [centro de seguridad 365 de Microsoft](https://security.microsoft.com/homepage). Vaya a **configuración** y, a continuación, seleccione **protección contra amenazas de Microsoft**.
-<br>![Imagen of_Microsoft captura de pantalla de la opción de protección contra amenazas de la página Configuración del centro de seguridad 365 de Microsoft](../../media/mtp-eval-72b.png) <br>
 
-2. Seleccione la casilla **activar la protección contra amenazas de Microsoft** y, a continuación, haga clic en **Guardar**.
-<br>![Imagen of_Microsoft captura de pantalla de la opción de protección contra amenazas de la página Configuración del centro de seguridad 365 de Microsoft](../../media/mtp-eval-72c.png) <br>
+Vaya al [centro de seguridad 365 de Microsoft](https://security.microsoft.com/homepage). Vaya a **configuración** y, a continuación, seleccione **protección contra amenazas de Microsoft**.
+<br>![Imagen of_Microsoft captura de pantalla de la opción de protección contra amenazas de la página Configuración del centro de seguridad 365 de Microsoft](../../media/mtp-eval-72b.png) <br>
 
 ¡Enhorabuena! Acaba de crear su entorno de laboratorio de prueba de Microsoft Threat Protection. Ahora puede simular un ataque y ver cómo las capacidades para varios productos detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
 

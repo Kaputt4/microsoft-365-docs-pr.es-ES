@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029833"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773792"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -31,9 +31,9 @@ Los dispositivos llegarán con una imagen de firma y, a continuación, se unirá
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los dispositivos de escritorio administrados por Microsoft durante el aprovisionamiento de dispositivos. Se revertirán todos los cambios detectados no aprobados por el equipo de operaciones de escritorio administrado por Microsoft para objetos administrados por el escritorio administrado por Microsoft.
 
-Directiva | Description
+Policy | Descripción
 --- | ---
-Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) para MDM está configurado para todos los dispositivos de escritorio administrados por Microsoft. Esta línea base es la configuración estándar del sector. Se publica, se prueba de forma pública y los expertos en seguridad de Microsoft lo han revisado para mantener seguras los dispositivos de escritorio y las aplicaciones administrados por Microsoft en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas del panorama de la amenaza de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en los dispositivos de escritorio administrados por Microsoft con cada actualización de características de Windows 10.<br><br>Para obtener más información, consulte [Baseline Security para Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) para MDM está configurado para todos los dispositivos de escritorio administrados por Microsoft. Esta línea base es la configuración estándar del sector. Se publica, se prueba de forma pública y los expertos en seguridad de Microsoft lo han revisado para mantener seguras los dispositivos de escritorio y las aplicaciones administrados por Microsoft en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas del panorama de la amenaza de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en los dispositivos de escritorio administrados por Microsoft con cada actualización de características de Windows 10.<br><br>Para obtener más información, vea [líneas de base de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Plantilla de seguridad recomendada para escritorio administrado de Microsoft | Un conjunto de cambios recomendados en la línea de base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el apéndice de seguridad](#security-addendum). Las actualizaciones del anexo de Directiva se producen según sea necesario.  
 Implementación de la actualización | Use Windows Update para empresas para realizar la implementación gradual de las actualizaciones de software. Los administradores de ti no pueden modificar la configuración de las directivas de grupo de implementación. Para obtener más información sobre la implementación basada en grupos, vea [cómo se administran las actualizaciones en el escritorio administrado por Microsoft](updates.md).
 Conexiones de uso medido | De forma predeterminada, las actualizaciones en conexiones de uso medido (como las redes LTE) están desactivadas, aunque cada usuario puede activar de forma independiente esta característica en la **configuración > actualizaciones > opciones avanzadas**. Si desea permitir que todos los usuarios habiliten las actualizaciones a través de conexiones de uso medido, [envíe una solicitud de cambio](../working-with-managed-desktop/admin-support.md), que se activará en todos los dispositivos.

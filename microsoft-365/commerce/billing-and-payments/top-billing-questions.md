@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Encuentre respuestas a sus principales preguntas sobre facturación para la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400766"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741692"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Principales preguntas sobre facturación para Microsoft 365 para empresas
 
@@ -121,7 +121,7 @@ Sí, pero necesitará [llamar al soporte técnico](../../admin/contact-support-f
 
 Sí. Para obtener su declaración de facturación como datos adjuntos de correo electrónico, siga estos pasos:
   
-1. En el centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notificaciones</a> de facturación **o seleccione** \> **notificaciones de facturación**de facturación.
+1. En el centro de administración de Microsoft 365, vaya **a la** \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notificaciones de facturación</a> de facturación.
 
 2. En **¿Recibir extracto de facturación como datos adjuntos de correo electrónico?**, cambie el botón de alternancia a **Activado**.
 
@@ -200,9 +200,10 @@ Puede [solicitar el estado exento de impuestos](tax-information.md#apply-for-tax
 
 ::: moniker range="o365-worldwide"
 
-1. En la página <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">facturas</a> , seleccione un intervalo de fechas de factura.
-  
-2. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar factura y PDF**y, a continuación, imprima el pdf.
+1. En el centro de administración, vaya a **Billing** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturas & pagos</a> de facturación.
+2. En la pestaña **facturas** , elija un intervalo de fechas de factura.
+3. Seleccione la factura que desea ver.
+4. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar PDF**y, a continuación, imprima el pdf.
 
 Para obtener más información, consulte [ver la factura](view-your-bill-or-invoice.md).
 

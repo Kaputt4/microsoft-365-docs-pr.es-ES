@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan tener acceso al mismo buzón. Obtenga información sobre lo que necesita saber antes de crear un buzón de correo compartido.
-ms.openlocfilehash: 6d9b7f59840b8eb4ce38822945066e14d9a86a4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400213"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780318"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -42,7 +42,7 @@ Antes [de crear un buzón compartido](create-a-shared-mailbox.md), aquí le indi
 
 - **Usuarios externos:** No puede conceder acceso a su buzón compartido a personas ajenas a la empresa (como personas con una cuenta de Gmail). Si quiere hacerlo, le recomendamos que cree un grupo para Outlook. Para obtener más información, vea [Create a Microsoft 365 Group in the admin Center](../create-groups/create-groups.md).
 
--  **Usar con Outlook:** Además de usar Outlook en la web desde el explorador para acceder a los buzones de correo compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Agregar un buzón compartido a Outlook Mobile</a>. Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).  
+-  **Usar con Outlook:** Además de usar Outlook en la web desde el explorador para acceder a los buzones de correo compartidos, también puede usar la aplicación Outlook para iOS o la aplicación Outlook para Android. Para obtener más información, consulte <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Agregar un buzón compartido a Outlook Mobile</a>. Otra opción es crear un grupo para el buzón compartido. Para obtener más información, vea [Comparar grupos](../create-groups/compare-groups.md).  
 
 - **Cifrado:** No se puede cifrar el correo electrónico enviado desde un buzón compartido. Esto se debe a que un buzón compartido no tiene su propio contexto de seguridad (nombre de usuario/contraseña), por lo que no se le puede asignar una clave. Si más de una persona es miembro de y envían o reciben mensajes de correo electrónico cifrados con sus propias claves, es posible que otros miembros puedan leer el correo electrónico y otros no, en función de la clave pública con la que se cifró el correo electrónico.
 
@@ -56,7 +56,7 @@ Antes [de crear un buzón compartido](create-a-shared-mailbox.md), aquí le indi
 
 - **Demasiados usuarios:** Cuando hay demasiados usuarios designados que tienen acceso simultáneo a un buzón compartido, es posible que no se conecten de forma intermitente a este buzón. En este caso, puede considerar la posibilidad de reducir el número de usuarios o usar una carga de trabajo distinta, como un grupo de Microsoft 365 o una carpeta pública de Microsoft.
 
-- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única forma de evitar esto es crear un grupo de 365 de Microsoft en lugar de un buzón compartido. Un grupo de Outlook es como un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea más [información acerca de los grupos](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
+- **Eliminación de mensajes:** Por desgracia, no se puede impedir que los usuarios eliminen mensajes en un buzón compartido. La única forma de evitar esto es crear un grupo de 365 de Microsoft en lugar de un buzón compartido. Un grupo de Outlook es como un buzón compartido. Para ver una comparación de los dos, vea [Compare Groups](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea más [información acerca de los grupos](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

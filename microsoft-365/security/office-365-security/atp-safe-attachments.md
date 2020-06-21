@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la característica de datos adjuntos seguros de ATP para Office 365 y sobre cómo obtener la característica para su suscripción.
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616783"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754765"
 ---
 # <a name="atp-safe-attachments"></a>Datos adjuntos seguros ATP
 
@@ -41,7 +41,7 @@ A continuación, asegúrese de que las directivas de datos adjuntos seguros de A
 
 - Las directivas de datos adjuntos seguros de ATP están configuradas. (Consulte [configurar las directivas de datos adjuntos seguros ATP en Office 365](set-up-atp-safe-attachments-policies.md).)
 
-- Los usuarios han iniciado sesión con su cuenta profesional o educativa. (Consulte [iniciar sesión en Office u office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Los usuarios han iniciado sesión con su cuenta profesional o educativa. (Consulte [iniciar sesión en Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)).
 
 Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 

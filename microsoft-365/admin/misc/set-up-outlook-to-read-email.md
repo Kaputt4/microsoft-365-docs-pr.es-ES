@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Obtenga información sobre cómo configurar una cuenta de correo electrónico en Outlook para Windows y Mac, y sobre cómo instalar aplicaciones de Office y acceder a los correos electrónicos en línea.
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399283"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779994"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurar Outlook para leer el correo electrónico
 
@@ -39,7 +39,7 @@ La primera vez que Abra Outlook, se abrirá un asistente para cuenta automática
     
 2. En la página **configuración automática** de la cuenta, escriba su nombre, dirección de correo electrónico y contraseña y, después, haga clic en **siguiente** \> **Finalizar**.
     
-Leer el [artículo completo](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
+Leer el [artículo completo](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>¿Cómo se instalan las aplicaciones de Office, incluido Outlook?
 
@@ -59,7 +59,7 @@ La primera vez que abra la aplicación de Outlook, se abrirá el Asistente para 
     
 3. En la página escriba la información de la **cuenta de Exchange** , escriba su nombre, dirección de correo electrónico y contraseña y, a continuación, seleccione **Agregar cuenta**.
     
-Leer el [artículo completo](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
+Leer el [artículo completo](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## <a name="how-do-i-access-my-mail-online"></a>¿Cómo puedo tener acceso a mi correo electrónico en línea?
 

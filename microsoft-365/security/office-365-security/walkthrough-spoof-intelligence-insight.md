@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo funciona el análisis de inteligencia de suplantación de identidad, incluido cómo determinar rápidamente qué remitentes envían de forma legítima un correo no autenticado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566709"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726509"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Tutorial: información de inteligencia sobre la simulación de ATP en Microsoft 365
 
@@ -39,7 +39,12 @@ Este tutorial es uno de los varios para el centro de seguridad & cumplimiento. P
 
   Puede ver la información de inteligencia de inteligencia de suplantación de más de un panel en el centro de seguridad & cumplimiento. Independientemente del panel que esté mirando, la visión proporciona los mismos detalles y le permite realizar rápidamente las mismas tareas.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para usar el conocimiento de inteligencia de suplantación de identidad, debe ser miembro de los grupos de roles de administración de la **organización**, **Administrador de seguridad**o lector de **seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema. Para usar el conocimiento de inteligencia de suplantación de identidad, debe pertenecer a uno de los siguientes grupos de roles:
+
+  - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Puede habilitar y deshabilitar la inteligencia de identidad en las directivas antiphishing de ATP. Para obtener más información, consulte [Configure ATP anti-phishing policies en Microsoft 365](configure-atp-anti-phishing-policies.md).
 

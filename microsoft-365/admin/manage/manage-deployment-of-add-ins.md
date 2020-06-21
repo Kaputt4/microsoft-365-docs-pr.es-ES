@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678641"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780126"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Administrar la implementación de complementos en el Centro de administración de Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678641"
 
 ::: moniker-end
 
-Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). Como administrador, puede implementar complementos de Office para los usuarios de su organización. Para ello, use la característica de implementación centralizada en el centro de administración de Microsoft 365.
+Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea [Empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). Como administrador, puede implementar complementos de Office para los usuarios de su organización. Para ello, use la característica de implementación centralizada en el centro de administración de Microsoft 365.
   
 La implementación centralizada es la forma recomendada y con más características para la mayoría de los administradores de implementar complementos para usuarios y grupos dentro de una organización. Para obtener más información sobre cómo determinar si su organización puede admitir la implementación centralizada, vea [determinar si la implementación centralizada de complementos funciona para su organización](centralized-deployment-of-add-ins.md).
   
@@ -44,7 +44,7 @@ Implementación centralizada proporciona las siguientes ventajas:
   
 - Un administrador global puede asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios del inquilino.
     
-- Cuando se inicie la aplicación de Office pertinente, el complemento se descargará automáticamente para el usuario. Si el complemento admite comandos de complemento, este aparecerá automáticamente en la Cinta de la aplicación de Office.
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - Los complementos ya no aparecerán para los usuarios si el administrador desactiva o elimina el complemento, o si se quita el usuario de Azure Active Directory o de un grupo al que el complemento está asignado.
     
@@ -53,11 +53,11 @@ Implementación centralizada proporciona las siguientes ventajas:
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar complementos de Office
 
-Considere lanzar complementos por fases para facilitar una implementación sin problemas. Le recomendamos el plan siguiente:
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. Distribuya el complemento en un pequeño conjunto de participantes y miembros del departamento de TI. Evalúe si la implementación se realizó correctamente y si es así, vaya al paso 2.
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. Distribúyalo a un conjunto más grande de usuarios que usarán el complemento dentro de la empresa. Vuelva a evaluar los resultados y, si todo ha ido bien, vaya al paso siguiente de una implementación completa.
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. Distribúyalo por completo entre los usuarios objetivo.
     
@@ -83,7 +83,7 @@ Antes de comenzar, vea [determinar si la implementación centralizada de complem
 7. Una marca de graduación verde aparecerá cuando se haya implementado el complemento. Puede seguir las instrucciones que se indican en la página para comprobar que el complemento se ha implementado correctamente.
 
 > [!NOTE]
-> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 12 horas en aparecer en las cintas de los usuarios.
+> Es posible que los usuarios necesiten volver a iniciar Office para ver que el icono del complemento aparece en la cinta de la aplicación. Los complementos de Outlook pueden tardar hasta 24 horas en aparecer en las cintas de los usuarios.
     
 8. Cuando termine, seleccione **siguiente**. Si ha implementado solo en usted, puede seleccionar **cambiar quién tiene acceso al complemento** para implementarlo en más usuarios.
 
@@ -95,13 +95,13 @@ Es una buena idea informar a los usuarios y grupos a los que ha implementado el 
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Consideraciones al asignar un complemento a usuarios y grupos
 
-Los administradores pueden asignar un complemento para todos los usuarios o para usuarios y grupos específicos. Cada opción tiene implicaciones:
+Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **Todos los usuarios**: como su nombre indica, esta opción asigna el complemento a todos los usuarios en el espacio empresarial. Use esta opción con moderación y solo para los complementos que realmente sean de uso universal en su organización. 
+- **Everyone**: As the name implies, this option assigns the add-in to every user in the tenant. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
-- **Usuarios**: si asigna un complemento a un usuario individual, a continuación, para implementar el complemento a un nuevo usuario, deberá agregarlo primero. Lo mismo ocurre para quitar usuarios. 
+- **Users**: If you assign an add-in to an individual user, then to deploy the add-in to a new user, you will need to first add that user. The same goes for removing users. 
     
-- **Grupos**: si asigna un complemento a un grupo, los usuarios agregados al grupo se asignarán automáticamente el complemento. Y, cuando se quita un usuario de un grupo, el usuario pierde el acceso al complemento. En cualquier caso, no necesita realizar acciones adicionales como administrador. 
+- **Groups**: If you assign an add-in to a group, users who are added to the group will automatically be assigned the add-in. And, when a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from you as the admin. 
 
 - **Solo para mí**: Si asigna un complemento solo a usted mismo, se asignará el complemento solo a su cuenta. Esto es ideal si desea probar el complemento primero.
     
@@ -121,7 +121,7 @@ Considere la posibilidad de eliminar un complemento si nadie lo está usando. De
   
 ### <a name="security-of-office-add-ins"></a>Seguridad de los complementos de Office
 
-Los complementos de Office combinan un archivo de manifiesto XML que contiene algunos metadatos sobre el complemento, pero lo más importante es que apunta a una aplicación web que contiene todo el código y la lógica. Las funcionalidades de los complementos pueden variar. Estos son algunos ejemplos de las acciones que pueden realizar los complementos:
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - Mostrar datos.
     
@@ -131,18 +131,18 @@ Los complementos de Office combinan un archivo de manifiesto XML que contiene al
     
 Para obtener más información sobre los tipos y las funcionalidades de los complementos de Office, consulte [Información general sobre la plataforma de complementos de Office](https://go.microsoft.com/fwlink/p/?linkid=846362), especialmente la sección "Anatomía de un complemento de Office".
   
-Para poder interactuar con el documento del usuario, el complemento debe declarar qué permisos necesita en el manifiesto. Un modelo de permisos de acceso de la API de JavaScript de cinco niveles proporciona la base para la privacidad y la seguridad de los usuarios de los complementos de panel de tareas. La mayoría de los complementos de la Tienda Office son del nivel ReadWriteDocument y casi todos los complementos admiten, como mínimo, el nivel ReadDocument. Para obtener más información sobre los niveles de permisos, consulte [Solicitar permisos para el uso de la API en los complementos del panel de tareas y de contenido](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-Cuando se actualiza un manifiesto, los cambios típicos se aplican al icono de un complemento y al texto. En ocasiones, los comandos del complementos cambian. Sin embargo, los permisos del complemento no cambian. La aplicación web en la que se ejecutan todo el código y la lógica del complemento puede cambiar en cualquier momento, lo que forma parte de la naturaleza de las aplicaciones web.
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 Las actualizaciones de los complementos se producen de la siguiente manera:
   
-- **Complemento de línea de negocio:** en este caso, en el que un administrador cargó explícitamente un manifiesto, el complemento requiere que el administrador cargue un nuevo archivo de manifiesto para admitir los cambios de metadatos. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
     > [!NOTE]
     > El administrador no necesita quitar un complemento de LOB para realizar una actualización.   En la sección complementos, el administrador puede simplemente hacer clic en el complemento de LOB y elegir el **botón actualizar** en la esquina inferior derecha. La actualización solo funcionará si la versión del complemento nuevo es mayor que la del complemento existente.   
     
-- **Complemento de la Tienda Office:** si un administrador seleccionó un complemento de la Tienda Office y el complemento se actualiza en la Tienda Office, se actualizará más tarde en Implementación centralizada. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 ### <a name="edit-add-in-access"></a>Editar el acceso del complemento
 
@@ -252,9 +252,9 @@ Word, Excel y PowerPoint 2013 para Windows serán compatibles con las mismas com
     
 ## <a name="end-user-experience-with-add-ins"></a>Experiencia del usuario final con complementos
 
-Ahora que ya ha implementado el complemento, los usuarios finales pueden empezar a usarlo en sus aplicaciones de Office (consulte [Empezar a usar el complemento de Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). El complemento aparecerá en todas las plataformas que sean compatibles con complementos.
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
-Si el complemento es compatible con comandos de complemento, estos aparecerán en la cinta de opciones de Office. En el siguiente ejemplo, el comando **Buscar cita** aparece para el complemento **Citas**. 
+If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
 ![Cinta de Office con citas de búsqueda](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

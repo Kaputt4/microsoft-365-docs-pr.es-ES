@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209756"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726853"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -36,7 +36,17 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **envío** , use <https://protection.office.com/reportsubmission> .
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas contra correo no deseado, debe ser miembro de los grupos de funciones **Administración**de la organización, **Administrador de seguridad**o **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+
+  - Para enviar mensajes y archivos a Microsoft, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para obtener acceso de solo lectura al portal de envíos, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Para obtener más información sobre cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea [Informe de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -198,7 +208,7 @@ Cerca de la parte superior de la página, puede escribir una fecha de inicio, un
 Para cambiar los criterios de filtro, haga clic en el botón **remitente** y elija uno de los siguientes valores:
 
 - **Dominio del remitente**
-- **Subject**
+- **Asunto**
 - **Enviado por**
 - **Tipo de envío**
 - **IP del remitente**

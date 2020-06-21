@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 137c29784c27912b2f8c1a84ac704418722aaf59
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 458a4eac348598d1b752267ed7d79b97bc594580
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616651"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726769"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurar directivas contra phishing de ATP
 
@@ -71,9 +71,19 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **contra la suplantación de identidad ATP** , use <https://protection.office.com/antiphishing> .
 
-- Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+
+  - Para agregar, modificar y eliminar directivas antiphishing de ATP, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para obtener acceso de solo lectura a las directivas antiphishing de ATP, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Para obtener la configuración recomendada para las directivas antiphishing de ATP, consulte [configuración de la Directiva de antiphishing de Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -101,7 +111,7 @@ Al crear una directiva contra la suplantación de identidad ATP, solo puede espe
 
 4. En la página **aplicado a** que aparece, identifique los destinatarios internos a los que se aplica la Directiva.
 
-   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores del uso o la lógica de la misma condición o excepción (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Las distintas condiciones o excepciones usan y lógicas (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
    Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
 

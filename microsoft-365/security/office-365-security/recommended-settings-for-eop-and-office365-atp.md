@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y la protección contra amenazas avanzada (ATP)? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usar si desea ser más estricto? ¿Y qué extras obtiene si también usa la protección contra amenazas avanzada (ATP)?
-ms.openlocfilehash: 922457d231681bc4643ea1805fc6060de3abcb65
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 15bd63a35b4279efc634115bbdb5248cdd5038db
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342528"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761711"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Configuración recomendada para EOP y la seguridad de ATP de Office 365
 
@@ -95,6 +95,8 @@ Le recomendamos que **desactive esta configuración ASF** para niveles **estánd
 
 Para crear y configurar directivas de correo no deseado saliente, consulte [configurar el filtrado de correo no deseado saliente en Office 365](configure-the-outbound-spam-policy.md).
 
+Para obtener más información acerca de los límites de envío predeterminados en el servicio, consulte [límites de envío](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
 |||||
 |---|---|---|---|
 |**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
@@ -152,9 +154,9 @@ Para obtener más información acerca de estas opciones, consulte [configuració
 |||||
 |---|---|---|---|
 |**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
-|Usuarios protegidos: **Agregar usuarios para protegerlos** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Activado <br/><br/> `$true` <br/><br/> \<lista de usuarios\>|Depende de su organización, pero le recomendamos que agregue usuarios en los roles clave. Internamente, pueden ser su CEO, director financiero y otros líderes senior. Externamente, pueden incluir miembros del Consejo o su Consejo de administración.|
+|Usuarios protegidos: **Agregar usuarios para protegerlos** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activado <br/><br/> `$true` <br/><br/> \<list of users\>|Activado <br/><br/> `$true` <br/><br/> \<list of users\>|Depende de su organización, pero le recomendamos que agregue usuarios en los roles clave. Internamente, pueden ser su CEO, director financiero y otros líderes senior. Externamente, pueden incluir miembros del Consejo o su Consejo de administración.|
 |Dominios protegidos: **incluir automáticamente los dominios de su propiedad** <br/><br/> _EnableOrganizationDomainsProtection_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||
-|Dominios protegidos: **incluir dominios personalizados** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activado <br/><br/> `$true` <br/><br/> \<lista de dominios\>|Activado <br/><br/> `$true` <br/><br/> \<lista de dominios\>|Depende de su organización, pero se recomienda agregar los dominios con los que interactúa con frecuencia y que no son de su propiedad.|
+|Dominios protegidos: **incluir dominios personalizados** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activado <br/><br/> `$true` <br/><br/> \<list of domains\>|Activado <br/><br/> `$true` <br/><br/> \<list of domains\>|Depende de su organización, pero se recomienda agregar los dominios con los que interactúa con frecuencia y que no son de su propiedad.|
 |Usuarios protegidos: **si un usuario suplantado envía un correo electrónico** <br/><br/> _TargetedUserProtectionAction_|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`||
 |Dominios protegidos: **si un dominio suplantado envía un correo electrónico** <br/><br/> _TargetedUserProtectionAction_|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`|**Poner en cuarentena el mensaje** <br/><br/> `Quarantine`||
 |**Mostrar sugerencia para usuarios suplantados** <br/><br/> _EnableSimilarUsersSafetyTips_|Activado <br/><br/> `$true`|Activado <br/><br/> `$true`||

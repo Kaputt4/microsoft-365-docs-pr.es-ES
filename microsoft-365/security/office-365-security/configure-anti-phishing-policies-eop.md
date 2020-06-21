@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas antiphishing que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de correo de Exchange Online.
-ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b6b95515ad44a65dbdd8a7516d8e6c8b2a386450
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616703"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726778"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurar directivas contra la suplantación de identidad (phishing) en EOP
 
@@ -69,13 +69,23 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página de **contra la suplantación de identidad (phishing** ), use <https://protection.office.com/antiphishing> .
 
-- Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   No puede administrar las directivas antiphishing en PowerShell de EOP independiente.
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas antiphishing, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas antiphishing, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
 
-- Para poder crear y modificar directivas contra correo no deseado en EOP independiente, debe hacer algo que requiera la _hidratación_ de su espacio empresarial. Por ejemplo, en el EAC, puede ir a la pestaña **permisos** , seleccionar un grupo de roles existente, hacer clic en **Editar** ![ icono Editar ](../../media/ITPro-EAC-EditIcon.png) y quitar una función (que más adelante se agregará). Si nunca se ha hidratado el espacio empresarial, se obtiene un cuadro de diálogo denominado configuración de la **organización de actualización** con una barra de progreso que debería completarse correctamente. Para obtener más información sobre la hidratación, consulte el cmdlet [enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (que no está disponible en POWERSHELL de EOP independiente ni en el centro de seguridad & cumplimiento).
+  - Para agregar, modificar y eliminar directivas antiphishing, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para el acceso de solo lectura a las directivas antiphishing, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- Para poder crear y modificar directivas contra correo no deseado en EOP independiente, debe hacer algo que requiera la _hidratación_ de su espacio empresarial. Por ejemplo, en el centro de administración de Exchange (EAC), puede ir a la pestaña **permisos** , seleccionar un grupo de roles existente, hacer clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) y quitar una función (que, más adelante, se agregará). Si nunca se ha hidratado el espacio empresarial, se obtiene un cuadro de diálogo denominado configuración de la **organización de actualización** con una barra de progreso que debería completarse correctamente. Para obtener más información sobre la hidratación, consulte el cmdlet [enable-OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) (que no está disponible en POWERSHELL de EOP independiente ni en el centro de seguridad & cumplimiento).
 
 - Para conocer la configuración recomendada para las directivas antiphishing, consulte [EOP default anti-phishing Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
@@ -103,7 +113,7 @@ Cuando se crea una directiva antiphishing, solo se puede especificar el nombre d
 
 4. En la página **aplicado a** que aparece, identifique los destinatarios internos a los que se aplica la Directiva.
 
-   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores del uso o la lógica de la misma condición o excepción (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ). Las distintas condiciones o excepciones usan y lógicas (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
+   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
    Haga clic en **Agregar condición**. En la lista desplegable que aparece, seleccione una condición en **aplicado si**:
 

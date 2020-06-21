@@ -1,5 +1,5 @@
 ---
-title: Configurar un buzón compartido
+title: Configurar las opciones del buzón compartido
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Una vez que haya creado un buzón compartido, querrá configurar algunas opciones para sus usuarios, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre o los miembros del buzón.
-ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400153"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739204"
 ---
-# <a name="configure-a-shared-mailbox"></a>Configurar un buzón compartido
+# <a name="configure-shared-mailbox-settings"></a>Configurar las opciones del buzón compartido
 
 Una vez que haya [creado un buzón compartido](create-a-shared-mailbox.md), querrá configurar algunas opciones para los usuarios de buzones de correo, como reenvío de correo electrónico y respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones, como el nombre del buzón, los miembros o los permisos de los miembros. 
 
@@ -56,7 +56,7 @@ Una vez que haya [creado un buzón compartido](create-a-shared-mailbox.md), quer
 
 3. Escriba un nuevo nombre o agregue otro alias. Si desea cambiar la dirección de correo electrónico principal, el buzón debe tener más de un alias de correo electrónico.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Reenviar mensajes de correo electrónico que se envían a un buzón compartido
 
@@ -84,7 +84,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
     
 3. Establezca el botón de alternancia en **activado**y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe [crear un grupo de distribución](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) para las direcciones y, a continuación, escribir el nombre del grupo en este cuadro.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Enviar respuestas automáticas desde un buzón compartido
 
@@ -114,11 +114,11 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 5. Si *también* quiere enviar una respuesta a personas de fuera de su organización, active la casilla de verificación, a la que desea obtener la respuesta y escriba el texto. No hay forma de enviar solo a las personas de fuera de la organización pero no a las personas de dentro de la organización.
 
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Permitir que cualquier usuario vea el correo enviado (las respuestas)
 
-De forma predeterminada, los mensajes enviados al buzón compartido no se guardan en la carpeta Elementos enviados del buzón compartido. En su lugar, se guardan en la carpeta Elementos enviados de la persona que envió el mensaje.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, modifique la configuración del buzón compartido y seleccione **Editar elementos enviados** \> **Edit**.
 
@@ -147,7 +147,7 @@ Si desea permitir que todos vean el correo electrónico enviado, en el centro de
 
 3. Establezca el botón de alternancia en **activado** para todas las aplicaciones que desea que los miembros puedan usar para acceder al buzón compartido. Establezca el botón de alternancia en **desactivado** para todas las aplicaciones que no quiera que usen. 
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Poner un buzón compartido en retención por juicio
@@ -178,7 +178,7 @@ Para obtener más información sobre la retención por juicio, consulte [Create 
 
 4. De manera opcional, escriba una duración, una nota de s sobre la suspensión y una dirección URL con más información.  
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 
 ## <a name="add-or-remove-members"></a>Agregar o quitar miembros
@@ -265,7 +265,7 @@ Si elige no mostrar el buzón compartido en la lista global de direcciones, el b
 
 3. Establezca el botón de alternancia en **activado** o **desactivado**. 
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 > [!NOTE]
 > Si se oculta un buzón compartido de la lista de direcciones, es imposible que los nuevos miembros del buzón compartido agreguen el buzón oculto a su perfil de Outlook hasta que se vuelva a mostrar el buzón compartido en la lista de direcciones. 

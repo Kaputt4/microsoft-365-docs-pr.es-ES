@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616583"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761723"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -79,7 +79,17 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para agregar, modificar y eliminar directivas de correo no deseado saliente, debe ser miembro de los grupos de roles administración de la **organización** o **Administrador de seguridad** . Para el acceso de solo lectura a las directivas de correo no deseado saliente, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+
+  - Para agregar, modificar y eliminar directivas de correo no deseado saliente, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para el acceso de solo lectura a las directivas de correo no deseado saliente, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Para conocer la configuración recomendada para las directivas de correo no deseado saliente, consulte [EOP Outbound Spam Filter Policy Settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings).
 
@@ -154,7 +164,7 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
 
    - **Número máximo de destinatarios por usuario**
 
-     Un valor válido es de 0 a 10000. El valor predeterminado es 0, lo que significa que se usan los valores predeterminados del servicio. Para obtener más información, consulte [límites de envío en las opciones de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+     Un valor válido es de 0 a 10000. El valor predeterminado es 0, lo que significa que se usan los valores predeterminados del servicio. Para obtener más información, consulte [límites de envío](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
      - **Límite horario externo**: el número máximo de destinatarios externos por hora.
 
@@ -178,7 +188,7 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
 
 6. Necesarios Expanda la sección **aplicado a** para identificar los remitentes internos a los que se aplica la Directiva.
 
-    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores del uso o la lógica de la misma condición o excepción (por ejemplo, _\<sender1\>_ o _\<sender2\>_ ). Las distintas condiciones o excepciones usan y lógicas (por ejemplo, _\<sender1\>_ y _\<member of group 1\>_ ).
+    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<sender1\>_ o _\<sender2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<sender1\>_ y _\<member of group 1\>_).
 
     Es más fácil hacer clic en **Agregar una condición** tres veces para ver todas las condiciones disponibles. Puede hacer clic en el ![botón Quitar](../../media/scc-remove-icon.png) para quitar condiciones que no quiera configurar.
 

@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Obtenga información sobre cómo agregar invitados a un grupo de 365 de Microsoft, ver los usuarios invitados y usar PowerShell para controlar el acceso de invitados.
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386786"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761667"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Administrar el acceso de invitado en grupos de 365 de Microsoft
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 De forma predeterminada, el acceso de invitado para los grupos de Microsoft 365 está activado para su organización. Los administradores pueden controlar si se permite el acceso de invitado a grupos para toda la organización o para grupos individuales.
 
 Cuando está activada, los miembros del grupo pueden invitar a los usuarios invitados a un grupo de Microsoft 365 a través de Outlook en la Web. Las invitaciones se envían al propietario del grupo para su aprobación.
 
+Una vez aprobado, el usuario invitado se agrega al directorio y al grupo.
+
 > [!Note]
 > Las redes de Yammer Enterprise que están en modo nativo o el geográfico de la [UE](https://go.microsoft.com/fwlink/?linkid=2107357) no admiten invitados de red.
 > Los grupos de Yammer conectados a Microsoft 365 no son compatibles actualmente con el acceso de invitado, pero puede crear grupos externos no conectados en su red de Yammer. Consulte [crear y administrar grupos externos en Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) para obtener instrucciones.
-
-### <a name="edit-guest-information"></a>Editar información de invitado
-
-Una vez aprobado, el usuario invitado se agrega al directorio y al grupo.
 
 El acceso de invitado en grupos suele usarse como parte de un escenario más amplio que incluye SharePoint o Teams. Estos servicios tienen su propia configuración de uso compartido de invitado. Para obtener instrucciones completas sobre cómo configurar el uso compartido de invitado en grupos, SharePoint y Teams, vea:
 
@@ -56,7 +47,7 @@ El acceso de invitado en grupos suele usarse como parte de un escenario más amp
 
 Si desea habilitar o deshabilitar el acceso de invitado en grupos, puede hacerlo en el centro de administración de 365 de Microsoft.
 
-1. En el centro de administración, vaya a **configuración** \> **Settings** y seleccione **Microsoft 365 Groups**.
+1. En el centro de administración, vaya a configuración de la organización de **configuración** \> **Org settings** y, en la pestaña **servicios** , seleccione **Microsoft 365 Groups**.
   
 2. En la página **Microsoft 365 Groups** , elija si desea permitir que los usuarios ajenos a la organización obtengan acceso a los recursos del grupo o que los propietarios del grupo agreguen personas fuera de la organización a los grupos.
 
@@ -70,7 +61,7 @@ Si el invitado ya existe en su directorio, puede agregarlo a los grupos desde el
   
 4. Seleccione **Agregar miembros**y, a continuación, elija el nombre del invitado que quiera agregar.
     
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Si desea agregar un invitado directamente al directorio, puede [Agregar usuarios de colaboración B2B de Azure Active Directory en Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 

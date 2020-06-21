@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Obtenga información sobre cómo configurar Office 365 operado por 21Vianet para administrar los registros DNS, cuando 1&1 Internet es el proveedor de host DNS.
-ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400706"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780378"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Cambiar los servidores DNS para configurar Microsoft 365 con 1&1 IONOS
 
@@ -39,12 +39,12 @@ Siga estas instrucciones si desea que Microsoft 365 administre los registros DNS
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
 
-Antes de utilizar el dominio con Microsoft 365, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft 365 sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 1. Para empezar, vaya a su página de dominios en 1&1 IONOS a través de [este vínculo](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
     
@@ -94,7 +94,7 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
 > [!CAUTION]
 > Al cambiar los registros NS de su dominio para que apunten a los servidores de nombres de Microsoft 365, se ven afectados todos los servicios que están actualmente asociados a su dominio. Por ejemplo, todo el correo electrónico enviado a su dominio (como rob@ *your_domain* . com) empezará a llegar a Microsoft 365 después de realizar este cambio. 
   
-¿Está preparado para cambiar los registros NS para que Microsoft 365 pueda configurar su dominio? Siga los pasos siguientes o [vea el vídeo (empieza en 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+¿Está preparado para cambiar los registros NS para que Microsoft 365 pueda configurar su dominio? Siga los pasos siguientes o [vea el vídeo (empieza en 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 > [!IMPORTANT]
 >  El siguiente procedimiento le mostrará cómo eliminar cualquier otro de los servidores de nombres no deseados de la lista, y también cómo agregar los servidores de nombres correctos si aún no aparecen. > cuando haya completado los pasos de esta sección, los únicos servidores DNS que se deben enumerar son los cuatro: > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -141,7 +141,7 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
    
 ![Introducción de los valores del servidor de nombres](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -155,7 +155,7 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
 ### <a name="if-there-are-nameservers-already-listed"></a>Si ya existen servidores de nombres enumerados
 
 > [!CAUTION]
-> Siga estos pasos  *solo*  si tiene servidores de nombres distintos de los cuatro servidores de nombres  *correctos*  . (Es decir, elimine  *solo*  los servidores de nombres actuales que  *no*  sean **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com** ). 
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.) 
   
 1. Si ya se muestran servidores DNS en los cuadros de **Servidor DNS**, elimínelos (para hacerlo, selecciónelos de uno en uno y, después, presione la tecla **Suprimir** en el teclado). 
     
@@ -172,7 +172,7 @@ Para completar la configuración de su dominio con Microsoft 365, debe cambiar l
    
    ![Introducción de los valores del servidor de nombres](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
     
     ![Seleccione Guardar en la página Configuración del servidor de nombres](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

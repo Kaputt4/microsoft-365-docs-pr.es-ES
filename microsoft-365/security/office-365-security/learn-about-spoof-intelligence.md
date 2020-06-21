@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre inteligencia de suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes simulados específicos.
-ms.openlocfilehash: fe1e8f8a2e9f0cc792dc802ea5c7362af00687ae
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e1c282076d054c338a02a50412ec376406f5ce98
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613245"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726737"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurar inteligencia de identidades en EOP
 
@@ -58,7 +58,17 @@ Puede administrar inteligencia de identidad en el centro de seguridad & cumplimi
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de inteligencia de suplantación o habilitar o deshabilitar la inteligencia de identidad, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de inteligencia empresarial, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+
+  - Para modificar la Directiva de inteligencia de suplantación o habilitar o deshabilitar la inteligencia de identidad, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para obtener acceso de solo lectura a la Directiva de inteligencia empresarial de suplantación de identidad, debe ser miembro de uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Para conocer la configuración recomendada para inteligencia de identidad, consulte [configuración predeterminada de la Directiva de protección contra suplantación de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 

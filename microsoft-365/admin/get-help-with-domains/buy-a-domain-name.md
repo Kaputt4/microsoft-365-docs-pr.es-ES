@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fcf13314d7206837f10459ed8c0a44e5d41f219b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400009"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780198"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
@@ -88,9 +88,9 @@ Si desea comprar un dominio de un registrador de dominios que no sea [GoDaddy](h
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transferir su dominio a otro registrador de dominios
 
-Si su dominio lo administra un proveedor que no es compatible con todos los registros DNS necesarios, puede transferirlo a un registrador diferente. Cuando se transfiere el dominio, lo que se hace es cambiar los destinatarios del pago para poder renovar y mantener el nombre de su dominio.
+If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
-Solicite la transferencia en el registrador al cual desea mover su dominio. Busque en su sitio web una opción como **Transferir DNS**. Tenga en cuenta que tras realizarse los cambios, pueden tardar unos días en actualizarse en Internet.
+Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
  
 
 
@@ -100,12 +100,12 @@ Solicite la transferencia en el registrador al cual desea mover su dominio. Busq
 
 
 
-Si aún no tiene su propio dominio, puede comprar fácilmente uno online en un registrador de nombres de dominio, en un revendedor de dominios o incluso en su proveedor de Internet actual. Obtendrá un nombre de dominio cuando se suscriba a Office 365 ofrecido por 21Vianet, por ejemplo, contoso.partner.onmschina.cn. Pero es posible que desee usar un nombre de dominio personalizado, como fourthcoffee.com.
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 Para configurar un dominio en Microsoft 365, debe poseer un dominio y cambiar algunos de los registros DNS de su dominio.
   
 > [!CAUTION]
-> Algunos registradores de dominios o proveedores de hospedaje DNS no permiten crear todos los registros DNS necesarios para Microsoft 365. Los proveedores de host de la siguiente lista admiten todos los registros necesarios. Si está pensando en usar otro proveedor de host, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Algunos registradores de dominios o proveedores de hospedaje DNS no permiten crear todos los registros DNS necesarios para Microsoft 365. Los proveedores de host de la siguiente lista admiten todos los registros necesarios. Si está pensando en usar otro proveedor de host, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
 Después de registrar su dominio (en un registrador de dominios), inicie sesión en Microsoft 365 como administrador y configure su dominio para poder usarlo con su dirección de correo electrónico y otros servicios.
   

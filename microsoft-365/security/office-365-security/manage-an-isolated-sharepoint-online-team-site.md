@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Administrar un sitio de grupo de SharePoint Online aislado, agregar nuevos usuarios y grupos, quitar usuarios y grupos y crear una subcarpeta de documentos con permisos personalizados.
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036637"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755383"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -150,7 +150,7 @@ En algunos casos, un subconjunto de las personas que trabajan en el sitio aislad
   
 Para crear una subcarpeta de documentos con permisos personalizados, haga lo siguiente:
   
-1. Inicie sesión en una cuenta que sea miembro del grupo de acceso administradores del sitio. Para obtener ayuda, vea [Dónde iniciar sesión en Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en una cuenta que sea miembro del grupo de acceso administradores del sitio. Para obtener ayuda, vea [Dónde iniciar sesión en Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Vaya al sitio de grupo aislado y haga clic en **documentos**.
     
@@ -168,9 +168,9 @@ Para crear una subcarpeta de documentos con permisos personalizados, haga lo sig
     
 9. Haga clic en **conceder permisos > compartidos con > avanzadas**.
     
-10. En la página permisos, haga clic ** \<en nombre del sitio> miembros en la lista**.
+10. En la página permisos, haga clic en ** \<site name> miembros en la lista**.
     
-11. En la ** \<página nombre del sitio> miembros** , seleccione la marca de verificación junto al grupo acceso de miembros del sitio, haga clic en **acciones**, haga clic en **quitar usuarios del grupo**y, a continuación, haga clic en **Aceptar**.
+11. En la página ** \<site name> miembros** , seleccione la marca de verificación junto al grupo acceso de miembros del sitio, haga clic en **acciones**, haga clic en **quitar usuarios del grupo**y, a continuación, haga clic en **Aceptar**.
     
 12. Para agregar miembros específicos a esta subcarpeta, haga clic en **nuevo > agregar usuarios**.
     
@@ -178,13 +178,13 @@ Para crear una subcarpeta de documentos con permisos personalizados, haga lo sig
     
 14. Actualice la página web para ver los nuevos resultados.
     
-15. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<nombre del sitio> grupo visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
+15. En **grupos** en el panel de navegación izquierdo, haga clic en el grupo ** \<site name> visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
     
-16. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<nombre del sitio> grupo propietarios** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
+16. En **grupos** en el panel de navegación izquierdo, haga clic en el grupo ** \<site name> propietarios** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
     
 17. Cierre la pestaña **personas y grupos** del explorador.
     
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
   

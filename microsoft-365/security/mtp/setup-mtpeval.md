@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209228"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717300"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurar el entorno de laboratorio de prueba de Microsoft Threat Protection 
 
@@ -110,7 +110,7 @@ En esta fase, se le guiará a:
 <br>![Image of_Office 365 E5 donde puede establecer si desea migrar los mensajes de correo electrónico o no.](../../media/mtp-eval-20.png) <br>
  
 13. Elija servicios en línea. Seleccione **Exchange** y haga clic en **siguiente**. 
-<br>![Image of_Office 365 E5 donde puede elegir sus servicios en línea como Exchangem Skype for Business o Mibile Device Management for Office 365](../../media/mtp-eval-21.png) <br>
+<br>![Image of_Office 365 E5 donde puede elegir sus servicios en línea](../../media/mtp-eval-21.png) <br>
 
 14. Agregue los registros MX, CNAME y TXT a su dominio. Una vez completada, seleccione **comprobar**.
 <br>![Image of_Office 365 E5 aquí puede agregar sus registros DNS](../../media/mtp-eval-22.png) <br>
@@ -137,7 +137,7 @@ En esta fase, se le guiará a:
 5. Haga clic en **probar ahora** para confirmar la prueba de Microsoft 365 E5.
 <br>![Página de prueba de inicio gratuita de Image of_Microsoft 365 E5 donde debe entrar en el botón probar ahora para iniciar](../../media/mtp-eval-27.png) <br>
  
-6. Vaya a los usuarios activos del **centro de administración de Microsoft 365**  >  **Users**  >  **Active users**. Seleccione su cuenta de usuario, seleccione **administrar licencias de producto**y, a continuación, intercambie la licencia de Office 365 E5 a **Microsoft 365 E5**. Haga clic en **Guardar**.
+6. Vaya a los usuarios activos del **centro de administración de Microsoft 365**  >  **Users**  >  **Active users**. Seleccione su cuenta de usuario, seleccione **administrar licencias de producto**y, a continuación, intercambie la licencia de Office 365 E5 a **Microsoft 365 E5**. Haga clic en **Guardar **.
 ![Imagen of_Microsoft 365 página del centro de administración donde puede seleccionar la licencia de Microsoft 365 E5](../../media/mtp-eval-28.png) <br>
  
 7. Seleccione la cuenta de administrador global de nuevo y haga clic en **administrar nombre de usuario**.
@@ -149,4 +149,6 @@ En esta fase, se le guiará a:
 
 
 ## <a name="next-step"></a>Paso siguiente
-||| |:-------|:-----| config-onboard. png) <br>[Fase 3: configuración & incorporada](config-mtpeval.md) | Configure cada pilar de protección contra amenazas de Microsoft para el entorno de prueba de la protección contra amenazas de Microsoft y incorpore los puntos de conexión.
+|||
+|:-------|:-----|
+|![Fase 3: configurar & incorporado](../../media/config-onboard.png) <br>[Fase 3: configurar & incorporado](config-mtpeval.md) | Configure cada pilar de protección contra amenazas de Microsoft para su laboratorio de evaluación de Microsoft Threat Protection y incorpore los puntos de conexión.

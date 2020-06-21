@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Obtenga información sobre cómo transferir datos manualmente entre dos cuentas de Microsoft 365 al cambiar el nombre de la empresa o del plan, o combinar varias suscripciones en una.
-ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e64872ad7e145b63eb71d89ea2d69e5d8697eb6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399877"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780174"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferencia manual de datos entre dos cuentas
 
@@ -60,7 +60,7 @@ Si está transfiriendo datos de Microsoft 365 a Microsoft 365 mediana empresa o 
   
 Para Microsoft 365 Enterprise y Microsoft 365 mediana empresa:
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> de **Microsoft 365** \> **Configuración del servicio** <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
 |**Administrador** \> de **Exchange** <br/> | Configuración de Exchange Online  <br/> |
@@ -69,7 +69,7 @@ Para Microsoft 365 Enterprise y Microsoft 365 mediana empresa:
 
 Para Microsoft 365 Small Business
   
-|**Ubicación**|**Finalidad**|
+|**Location**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> de **Administrar la configuración de toda la organización** <br/> |Configuración administrativa  <br/> |
 
@@ -91,9 +91,9 @@ Hay varias formas de guardar o transferir datos del sitio de Grupo:
   
 - Puede guardar el sitio antiguo como una plantilla e importar la plantilla en el nuevo sitio.
 
-- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos sitios de grupo de SharePoint al mismo tiempo, abrir ambas bibliotecas de documentos con el explorador de Windows y copiar y pegar los documentos. Vea [vídeo: copiar o mover archivos de biblioteca mediante abrir con el explorador](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos sitios de grupo de SharePoint al mismo tiempo, abrir ambas bibliotecas de documentos con el explorador de Windows y copiar y pegar los documentos. Vea [vídeo: copiar o mover archivos de biblioteca mediante abrir con el explorador](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Para transferir datos de listas, guarde una [plantilla de lista](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)y use la plantilla guardada para volver a crear la lista en el nuevo sitio.
+- Para transferir datos de listas, guarde una [plantilla de lista](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)y use la plantilla guardada para volver a crear la lista en el nuevo sitio.
 
 - Para guardar un contenido de una biblioteca de documentos o lista de un entorno de SharePoint Online (OneDrive para la empresa o sitios de grupo) en recursos compartidos de archivos o en un equipo local, vea la [información sobre la migración manual del contenido de SharePoint Online](https://support.microsoft.com/kb/2783484).
 
@@ -101,8 +101,8 @@ Hay varias formas de guardar o transferir datos del sitio de Grupo:
 
 ### <a name="email"></a>Correo electrónico:
 
-Pida a los usuarios que [muevan el correo electrónico, los contactos, las tareas y la información del calendario](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx) después de configurar la nueva suscripción. Pueden obtener acceso al correo electrónico antiguo mediante el nombre de usuario inicial, como sue@contoso.onmicrosoft.com.
+Pida a los usuarios que [muevan el correo electrónico, los contactos, las tareas y la información del calendario](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) después de configurar la nueva suscripción. Pueden obtener acceso al correo electrónico antiguo mediante el nombre de usuario inicial, como sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>Datos de OneDrive para la empresa:
 
-Pida a los usuarios que copien o sincronicen [el contenido de OneDrive para la empresa en su equipo](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)y, a continuación, vuelva a agregarlo a su nueva suscripción.
+Pida a los usuarios que copien o sincronicen [el contenido de OneDrive para la empresa en su equipo](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)y, a continuación, vuelva a agregarlo a su nueva suscripción.

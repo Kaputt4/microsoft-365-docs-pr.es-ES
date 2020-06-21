@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616639"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755265"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -46,7 +46,7 @@ Los administradores pueden usar Exchange Online PowerShell para deshabilitar, ha
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados para poder realizar estos procedimientos. En concreto, necesita la función **destinatarios de correo** (que está asignada a los grupos de roles administración de la **organización**, **Administración de destinatarios**y **destinatarios de correo personalizados** ) o el rol opciones de **usuario** (que se asigna a los grupos de roles administración de la **organización** y **servicio de asistencia** de forma predeterminada). Para agregar usuarios a los grupos de roles de Exchange Online, vea [Modify role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Tenga en cuenta que un usuario con permisos predeterminados puede realizar estos mismos procedimientos en su propio buzón de correo, siempre que tengan [acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
@@ -110,7 +110,7 @@ La colección de listas seguras de un buzón engloba la lista de remitentes segu
 
 <sup>\*</sup>**Notas**:
 
-- En Exchange Online, las **entradas de dominio** de la lista de remitentes seguros o el parámetro _TrustedSendersAndDomains_ no se reconocen, por lo que solo use direcciones de correo electrónico. En EOP independiente con sincronización de directorios, las entradas de dominio no se sincronizan de forma predeterminada, pero puede habilitar la sincronización para los dominios. Para obtener más información, vea [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
+- En Exchange Online, las **entradas de dominio** de la lista de remitentes seguros o el parámetro _TrustedSendersAndDomains_ no se reconocen, por lo que solo use direcciones de correo electrónico. En EOP independiente con sincronización de directorios, las entradas de dominio no se sincronizan de forma predeterminada, pero puede habilitar la sincronización para los dominios. Para obtener más información, vea [KB3019657](https://support.microsoft.com/help/3019657).
 
 - No se puede modificar directamente la lista de destinatarios seguros mediante el cmdlet **set-MailboxJunkEmailConfiguration** (el parámetro _TrustedRecipientsAndDomains_ no funciona). En su lugar, hay que modificar la lista de remitentes seguros y esos cambios se sincronizan con la lista de destinatarios seguros.
 
@@ -168,11 +168,11 @@ Realice uno de los siguientes procedimientos para confirmar que los límites de 
 
 ## <a name="about-junk-email-settings-in-outlook"></a>Acerca de la configuración de correo no deseado en Outlook
 
-Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, consulte [archivos de plantilla administrativa (ADMX/ADML) y herramienta de personalización de Office para las aplicaciones de Microsoft 365 para empresas, office 2019 y office 2016](https://www.microsoft.com/download/details.aspx?id=49030) y [cómo implementar la configuración del correo electrónico no deseado, como la lista de remitentes seguros, mediante la Directiva de grupo](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
+Use la directiva de grupo para habilitar, deshabilitar y establecer las opciones de configuración de filtro de correo no deseado del cliente disponibles en Outlook. Para obtener más información, consulte [archivos de plantilla administrativa (ADMX/ADML) y herramienta de personalización de Office para las aplicaciones de Microsoft 365 para empresas, office 2019 y office 2016](https://www.microsoft.com/download/details.aspx?id=49030) y [cómo implementar la configuración del correo electrónico no deseado, como la lista de remitentes seguros, mediante la Directiva de grupo](https://support.microsoft.com/help/2252421).
 
-Cuando el filtro de correo electrónico no deseado de Outlook está establecido en el valor predeterminado, **no hay ningún filtro automático** en opciones **principales** de correo no deseado \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook no intenta clasificar los masaje como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) para mover los mensajes a la carpeta Para obtener más información acerca de estas opciones, vea [información general sobre el filtro de correo no deseado](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Cuando el filtro de correo electrónico no deseado de Outlook está establecido en el valor predeterminado, **no hay ningún filtro automático** en opciones **principales** de correo no deseado \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook no intenta clasificar los masaje como correo no deseado, pero sigue utilizando la colección de listas seguras (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados) para mover los mensajes a la carpeta Para obtener más información acerca de estas opciones, vea [información general sobre el filtro de correo no deseado](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
-Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o **Alto**, el filtro de correo no deseado de Outlook usará su propia tecnología de filtrado SmartScreen para identificar y mover el correo no deseado a la carpeta de correo no deseado. Esta clasificación de correo no deseado es independiente del nivel de confianza contra correo no deseado (SCL) que se determina mediante EOP. De hecho, Outlook pasa por alto el SCL de EOP (a menos que EOP Marque el mensaje para omitir el filtrado de correo no deseado) y utiliza sus propios criterios para determinar si el mensaje es correo no deseado. Por supuesto, es posible que el veredicto de correo no deseado de EOP y Outlook sea el mismo. Para obtener más información acerca de estas opciones, vea [cambiar el nivel de protección en el filtro de correo no deseado](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
+Cuando el filtro de correo no deseado de Outlook está establecido en **Bajo** o **Alto**, el filtro de correo no deseado de Outlook usará su propia tecnología de filtrado SmartScreen para identificar y mover el correo no deseado a la carpeta de correo no deseado. Esta clasificación de correo no deseado es independiente del nivel de confianza contra correo no deseado (SCL) que se determina mediante EOP. De hecho, Outlook pasa por alto el SCL de EOP (a menos que EOP Marque el mensaje para omitir el filtrado de correo no deseado) y utiliza sus propios criterios para determinar si el mensaje es correo no deseado. Por supuesto, es posible que el veredicto de correo no deseado de EOP y Outlook sea el mismo. Para obtener más información acerca de estas opciones, vea [cambiar el nivel de protección en el filtro de correo no deseado](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
 > [!NOTE]
 > En noviembre de 2016, Microsoft dejó de generar actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero su eficacia probablemente se degradará con el tiempo. Para obtener más información, consulte la [compatibilidad para SmartScreen en Outlook y Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
@@ -189,7 +189,7 @@ La colección de listas seguras (la lista de remitentes seguros, la lista de des
 
   > No se puede o no se puede Agregar a las listas de correo no deseado del servidor. Ha superado el tamaño permitido en el servidor. El filtro de correo electrónico no deseado en el servidor se deshabilitará hasta que las listas de correo no deseado se hayan reducido al tamaño permitido por el servidor.
 
-  Para obtener más información acerca de este límite y de cómo cambiarlo, vea [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+  Para obtener más información acerca de este límite y de cómo cambiarlo, vea [KB2669081](https://support.microsoft.com/help/2669081).
 
 - La colección de listas seguras sincronizada en EOP tiene los siguientes límites de sincronización:
 

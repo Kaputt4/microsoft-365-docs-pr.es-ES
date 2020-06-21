@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: 277c48a8ac9503681eb695fba3697ddd16e49b88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588245"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755193"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -33,7 +33,7 @@ Tras iniciar sesión, el centro de administración de Microsoft 365 proporciona 
 
 [Comunidad 365 de Microsoft](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Asistente para soporte y recuperación de Microsoft (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Asistente para soporte y recuperación de Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Solucionador de problemas del flujo de correo](https://aka.ms/FixEmail)
 
@@ -43,7 +43,7 @@ Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Soporte para suscriptores de soporte premier de Microsoft
 
-Si es un cliente de EOP y también tiene un contrato de soporte premier de Microsoft, puede obtener soporte a través de los canales normales de soporte premier de Microsoft. Esto le permite recibir acceso a todos los procesos y recursos disponibles para clientes de soporte premier, como al administrador de cuentas de soporte técnico premier (TAM) y al envío de casos. El soporte premier para Microsoft Online Services amplía el marco de trabajo de soporte premier de los productos locales a los productos en línea, lo que le proporciona una experiencia de soporte unificada en todos los productos y servicios. Este servicio ayuda a garantizar que los clientes puedan resolver los problemas rápidamente y simplifica la tarea de administrar el soporte para distintos componentes de una infraestructura de TI.
+If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
 
 Para obtener más información sobre cómo el soporte Premier puede ayudar a su organización a maximizar el valor de sus inversiones en ti, consulte [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support).
 

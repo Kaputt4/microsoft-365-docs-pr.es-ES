@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, aprenderá a usar vínculos seguros para proteger su organización de los ataques de suplantación de identidad (phishing) y otros tipos de ataques.
-ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616771"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754753"
 ---
 # <a name="atp-safe-links"></a>Vínculos seguros de ATP
 
@@ -47,7 +47,7 @@ A medida que [se agregan nuevas características a ATP](office-365-atp.md#new-fe
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección de vínculos seguros de ATP
 
-En **primer lugar, asegúrese de que la suscripción incluye [protección contra amenazas avanzada de Office 365](office-365-atp.md) ** Plan 1 o plan 2. Office 365 ATP se incluye en suscripciones, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5, etc. Si su organización tiene una suscripción a Microsoft 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, vea los recursos siguientes:
+En **primer lugar, asegúrese de que la suscripción incluye [protección contra amenazas avanzada de Office 365](office-365-atp.md) ** Plan 1 o plan 2. Office 365 ATP se incluye en suscripciones, como [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5, etc. Si su organización tiene una suscripción a Microsoft 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, vea los recursos siguientes: 
 
 - [Planes y precios de la protección contra amenazas avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection)
 
@@ -59,7 +59,7 @@ A **continuación, asegúrese de que las directivas de vínculos seguros de ATP 
 
 - Las aplicaciones cliente de Microsoft 365 están configuradas para usar la autenticación moderna (es para la protección de vínculos seguros de ATP en documentos de Office). (Vea [autenticación moderna para Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
 
-- Los usuarios han iniciado sesión con su cuenta profesional o educativa. (Consulte [iniciar sesión en Office u office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Los usuarios han iniciado sesión con su cuenta profesional o educativa. (Consulte [iniciar sesión en Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)).
 
 - El correo electrónico de su organización pasa a través de Exchange Online Protection.
 
@@ -81,7 +81,7 @@ Una vez colocadas las directivas de vínculos seguros de ATP, el equipo de segur
 
 En la tabla siguiente se describen algunos escenarios de ejemplo en los que la protección de vínculos seguros de ATP puede o no estar en su lugar. (En todos estos casos, suponemos que la organización tiene Office 365 Enterprise E5).
 
-|**Escenario de ejemplo**|**¿Se aplica la protección de vínculos seguros ATP en este caso?**|
+|Escenario de ejemplo|¿Se aplica la protección de vínculos seguros ATP en este caso?|
 |:-----|:-----|
 |Jean es miembro de un grupo que tiene directivas de vínculos seguros de ATP que abarcan direcciones URL en correo electrónico y documentos de Office. Jean abre una presentación de PowerPoint enviada por alguien y, a continuación, hace clic en una dirección URL de la presentación.|Sí. Las directivas de vínculos seguros de ATP que se definen se aplican al grupo de Jean, el correo electrónico de Jean y los documentos de Word, Excel, PowerPoint o Visio que Jean abre, siempre que Jean inicie sesión y use Microsoft 365 apps for Enterprise en dispositivos Windows, iOS o Android.|
 |En la organización de Carlos, ningún administrador global ni de seguridad ha definido todavía ninguna directiva de vínculos seguros de ATP. Chris recibe un correo electrónico que contiene una dirección URL a un sitio Web malintencionado. Carlos no sabe que la dirección URL es malintencionada y hace clic en el vínculo.|No. La directiva predeterminada que cubre las direcciones URL para todos los usuarios de la organización debe definirse en orden para que la protección esté en su ubicación.|

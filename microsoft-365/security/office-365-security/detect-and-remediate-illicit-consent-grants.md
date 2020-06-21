@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito que concede un ataque en Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587501"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726807"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones de consentimiento ilícito
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587501"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>¿Cuál es el ataque de concesión de consentimiento ilícito en Office 365?
 
-En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multifactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización. 
+En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multifactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización.
 
 Estos ataques aprovechan un modelo de interacción que presupone que la entidad que llama a la información es la automatización y no es una persona.
 
@@ -43,18 +43,21 @@ Debe buscar en el **registro de auditoría** los signos, también denominados in
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos para buscar signos de este ataque
 
-1. Abra el **centro de seguridad & cumplimiento** en su espacio empresarial.
+1. Abra el **centro de seguridad & cumplimiento** en <https://protection.office.com> .
 
 2. Desplácese hasta **Buscar** y seleccione **búsqueda de registros de auditoría**.
 
-3. Búsqueda (todas las actividades y todos los usuarios), especifique la fecha de inicio y la fecha de finalización si es necesario y, a continuación, haga clic en **Buscar**. 
+3. Búsqueda (todas las actividades y todos los usuarios), especifique la fecha de inicio y la fecha de finalización si es necesario y, a continuación, haga clic en **Buscar**.
 
 4. Haga clic en **filtrar resultados** y escriba consentimiento para la aplicación en el campo **actividad** .
 
 5. Haga clic en el resultado para ver los detalles de la actividad. Haga clic en **más información** para obtener detalles de la actividad. Compruebe si IsAdminContent está establecido en true.
 
 > [!NOTE]
-> La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento. <br/><br/> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción a Microsoft 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> La entrada de registro de auditoría correspondiente puede tardar de 30 minutos de hasta 24 horas en aparecer en los resultados de la búsqueda después de que se produzca un evento.
+> 
+> La cantidad de tiempo que se retiene un registro de auditoría y se pueden buscar en el registro de auditoría depende de la suscripción a Microsoft 365 y, específicamente, del tipo de licencia asignado a un usuario específico. Para obtener más información, vea [registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 > 
 > Si este valor es true, indica que un usuario con acceso de administrador global puede haber concedido acceso general a los datos. Si esto es inesperado, siga los pasos para [confirmar un ataque](#how-to-confirm-an-attack).
 
@@ -94,7 +97,7 @@ Pida a los usuarios que vayan a https://myapps.microsoft.com y revisen su propio
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Pasos para hacerlo con PowerShell
 
-La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejecutar [Get-AzureADPSPermissions. PS1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que volcarán todas las concesiones de consentimiento de OAuth y las aplicaciones de OAuth para todos los usuarios de su arrendamiento en un archivo. csv.
+La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejecutar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que realizará un volcado de todas las subvenciones de consentimiento de OAuth y las aplicaciones de OAuth para todos los usuarios de su arrendamiento en un archivo. csv.
 
 #### <a name="pre-requisites"></a>Requisitos previos
 
@@ -109,7 +112,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
 
 1. Inicie sesión en el equipo en el que va a ejecutar el script con derechos de administrador local.
 
-2. Descargue o copie el script [Get-AzureADPSPermissions. PS1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de github a una carpeta desde la que se ejecutará el script. Se trata de la misma carpeta en la que se escribirá el archivo "Permissions. csv" de salida.
+2. Descargue o copie el script de [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) desde GitHub a una carpeta desde la que se ejecutará el script. Se trata de la misma carpeta en la que se escribirá el archivo de salida "permissions.csv".
 
 3. Abra una instancia de PowerShell como administrador y abra la carpeta en la que guardó el script.
 
@@ -121,7 +124,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-La secuencia de comandos genera un archivo denominado Permissions. csv. Siga estos pasos para buscar concesiones de permisos de aplicaciones ilícitas:
+La secuencia de comandos genera un archivo denominado Permissions.csv. Siga estos pasos para buscar concesiones de permisos de aplicaciones ilícitas:
 
 1. En la columna ConsentType (Column G), busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todo el inquilino. Las aplicaciones nativas Microsoft 365 necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse con cuidado.
 

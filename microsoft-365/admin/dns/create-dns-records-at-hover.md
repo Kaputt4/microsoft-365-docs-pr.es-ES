@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios al pasar el mouse por Microsoft.
-ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e51cb77831f4e29ac3a51602a1bb19f8b0c9e0e3
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400430"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780354"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Crear registros DNS en hover para Microsoft
 
@@ -39,19 +39,19 @@ Después de agregar estos registros al pasar el mouse, el dominio estará config
 
   
 > [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 <a name="BKMK_verify"> </a>
 
-Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2).
   
-1. Para empezar, vaya a la página dominios en Hover mediante [este vínculo](https://www.hover.com/domains). Se le pedirá que inicie sesión.
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![Iniciar sesión](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -76,7 +76,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -101,14 +101,14 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
   
 > [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 <a name="BKMK_add_MX"> </a>
 
-Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2).
   
-1. Para empezar, vaya a la página dominios en Hover mediante [este vínculo](https://www.hover.com/domains). Se le pedirá que inicie sesión.
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![Iniciar sesión](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -132,7 +132,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -151,9 +151,9 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Agregar los registros CNAME necesarios para Microsoft
 <a name="BKMK_add_CNAME"> </a>
 
-Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2).
   
-1. Para empezar, vaya a la página dominios en Hover mediante [este vínculo](https://www.hover.com/domains). Se le pedirá que inicie sesión.
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![Iniciar sesión](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -183,7 +183,7 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -195,9 +195,9 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
 > [!IMPORTANT]
 > No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. 
   
-Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2).
   
-1. Para empezar, vaya a la página dominios en Hover mediante [este vínculo](https://www.hover.com/domains). Se le pedirá que inicie sesión.
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![Iniciar sesión](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -221,16 +221,16 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Agregar los dos registros SRV necesarios para Microsoft
 <a name="BKMK_add_SRV"> </a>
 
-Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Siga los pasos siguientes o [vea el vídeo](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2).
   
-1. Para empezar, vaya a la página dominios en Hover mediante [este vínculo](https://www.hover.com/domains). Se le pedirá que inicie sesión.
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![Iniciar sesión](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -257,12 +257,12 @@ Siga los pasos siguientes o [vea el vídeo](https://support.office.com/article/V
    
     ![Escriba (o copie y pegue) los valores DNS](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
     ![Seleccione Guardar](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   
 7. Con los tres pasos anteriores y los valores de la segunda fila de la tabla, agregue el otro registro SRV.
     
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   

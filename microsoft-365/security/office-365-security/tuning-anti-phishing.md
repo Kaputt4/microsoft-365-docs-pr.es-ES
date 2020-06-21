@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtuvo un mensaje de suplantación de identidad (phishing) en Microsoft 365 y qué hacer para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588445"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755057"
 ---
 # <a name="tune-anti-phishing-protection"></a>Ajustar protección contra phishing
 
@@ -51,17 +51,21 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - En una base mensual, ejecute [calificación segura](../mtp/microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización.
 
-- Revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md) y [Configure inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para **poner en cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
+- Para los mensajes que acaben en cuarentena por error o para los mensajes que se permitan, le recomendamos que los busque en [el explorador de amenazas y en las detecciones en tiempo real](threat-explorer.md). Puede buscar por remitente, destinatario o identificador de mensaje. Una vez que encuentre el mensaje, haga clic en el tema para ver los detalles. Para un mensaje en cuarentena, Compruebe cómo se encuentra la "tecnología de detección" para poder usar el método adecuado para invalidar. Para un mensaje permitido, mire para ver qué directiva permitió el mensaje. 
+
+- El correo falsificado se etiqueta como phish en ATP. A veces la suplantación de identidad es benigna y, a veces, los usuarios no quieren estar en cuarentena. Para minimizar el impacto en los usuarios, revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md). Una vez que haya revisado y realizado las invalidaciones necesarias, puede confiar en [configurar la inteligencia de identidad](set-up-anti-phishing-policies.md#spoof-settings) para poner en **cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
+
+- Puede repetir el paso anterior para la suplantación (dominio o usuario). El informe de suplantación se encuentra en información sobre el panel de **Administración de amenazas** \> **Dashboard** \> **Insights**.
 
 - Revise periódicamente el [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report).
 
-- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Si decide hacerlo, debe extremar las precauciones. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente bloquearía el correo no deseado y los filtros de phish.
+- Algunos clientes permiten accidentalmente los mensajes de suplantación de identidad mediante la colocación de sus propios dominios en la lista Permitir remitente o permitir dominio en las directivas contra correo no deseado. Aunque esta configuración permitirá el acceso a algunos mensajes legítimos, también permitirá mensajes malintencionados que normalmente bloquearía el correo no deseado y los filtros de phish. En lugar de permitir el dominio, debe corregir el problema subyacente.
 
   La mejor forma de tratar con los mensajes legítimos que están bloqueados por Microsoft 365 (falsos positivos) que implican a los remitentes de su dominio es configurar completamente y por completo los registros de DMARC, DKIM y DMARC en DNS para _todos_ los dominios de correo electrónico:
 
   - Compruebe que el registro SPF identifica _todos los_ orígenes de correo electrónico de los remitentes de su dominio (no olvide los servicios de terceros).
 
-  - Use error ( \- ) para asegurarse de que los sistemas de correo electrónico que están configurados para ello rechacen a los remitentes no autorizados. Puede usar [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para identificar a los remitentes que usan su dominio para que pueda incluir remitentes de terceros autorizados en su registro de SPF.
+  - Usar el error de hardware ( \- todos) para asegurarse de que los sistemas de correo electrónico que están configurados para ello rechacen a los remitentes no autorizados. Puede usar [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md) para identificar a los remitentes que usan su dominio para que pueda incluir remitentes de terceros autorizados en su registro de SPF.
 
   Para obtener instrucciones de configuración, consulte:
   
@@ -72,6 +76,8 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
   - [Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
 
 - Siempre que sea posible, se recomienda entregar el correo electrónico del dominio directamente a Microsoft 365. En otras palabras, señale el registro MX del dominio de Microsoft 365 a Microsoft 365. Exchange Online Protection (EOP) puede proporcionar la mejor protección para los usuarios de la nube cuando el correo se entrega directamente a Microsoft 365. Si debe usar un sistema de protección de correo electrónico de terceros delante de EOP, use el filtrado mejorado para los conectores. Para obtener instrucciones, vea [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+- Los usuarios deben [informar de los mensajes](enable-the-report-message-add-in.md) a Microsoft, que pueden entrenar a nuestro sistema. Los administradores también deben aprovechar las capacidades de [envío del administrador](admin-submission.md) .
 
 - La autenticación multifactor (MFA) es una buena forma de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

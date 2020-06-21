@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear los correos electrónicos de los servidores de correo electrónico.
-ms.openlocfilehash: 14758161f827cf231a8f3a0415748c7a2dd5981f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616595"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755253"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
@@ -46,9 +46,19 @@ En este tema se describe cómo configurar la Directiva de filtro de conexión pr
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Deberá tener asignados permisos antes de poder llevar a cabo estos procedimientos. Para modificar la Directiva de filtro de conexión predeterminada, debe ser miembro de los grupos de funciones administración de la **organización** o **Administrador de seguridad** . Para obtener acceso de solo lectura a la Directiva de filtro de conexión predeterminada, debe ser miembro del grupo de roles **lector de seguridad** . Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
 
-- Para buscar las direcciones IP de origen de los servidores de correo electrónico (remitentes) que desea permitir o bloquear, puede comprobar el campo de encabezado de IP de conexión (**CIP**) en el encabezado del mensaje. Para ver un encabezado de mensaje en varios clientes de correo electrónico, consulte [Ver encabezados de mensajes de Internet en Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
+  - Para modificar la Directiva de filtro de conexión predeterminada, debe pertenecer a uno de los siguientes grupos de roles:
+
+    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - Para obtener acceso de solo lectura a la Directiva de filtro de conexión predeterminada, debe ser miembro de uno de los siguientes grupos de roles:
+
+    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- Para buscar las direcciones IP de origen de los servidores de correo electrónico (remitentes) que desea permitir o bloquear, puede comprobar el campo de encabezado de IP de conexión (**CIP**) en el encabezado del mensaje. Para ver un encabezado de mensaje en varios clientes de correo electrónico, consulte [Ver encabezados de mensajes de Internet en Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - La lista de direcciones IP permitidas tiene prioridad sobre la lista de direcciones IP bloqueadas (no se bloquea una dirección en ambas listas).
 

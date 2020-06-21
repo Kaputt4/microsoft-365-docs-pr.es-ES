@@ -24,18 +24,18 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
-ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44431610"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780510"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
 Si es administrador, puede comprobar qué suscripciones tiene su organización yendo al centro de administración.
   
- **¿No es un administrador?** Ver [Qué producto y licencia de Microsoft 365 para empresas tengo?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **¿No es un administrador?** Ver [Qué producto y licencia de Microsoft 365 para empresas tengo?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 
@@ -53,7 +53,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. Si tiene varias suscripciones, verá una columna junto a la información detallada de la suscripción que enumera las suscripciones que ha adquirido, así como las suscripciones de prueba. De manera predeterminada, la suscripción situada en la parte superior de la lista está seleccionada automáticamente y se muestra la información detallada de esa suscripción.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Si tiene varias suscripciones, elija la que desee para ver información detallada. La tarjeta de suscripción se actualizará con información sobre esa suscripción.
 
@@ -72,7 +72,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. Si tiene varias suscripciones, verá una columna junto a la información detallada de la suscripción que enumera las suscripciones que ha adquirido, así como las suscripciones de prueba. De manera predeterminada, la suscripción situada en la parte superior de la lista está seleccionada automáticamente y se muestra la información detallada de esa suscripción.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Si tiene varias suscripciones, elija la que desee para ver información detallada. La tarjeta de suscripción se actualizará con información sobre esa suscripción.
 
