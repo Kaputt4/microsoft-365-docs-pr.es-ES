@@ -25,19 +25,19 @@ description: Obtenga información sobre cómo canjear una clave de producto de M
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402171"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818584"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba su clave de producto para Microsoft 365 Business Standard
 
 Si compró el estándar comercial de Microsoft 365 desde una tienda minorista, este artículo le ayudará a activar la suscripción. 
   
  **¿Necesita algo más?**
- **Para obtener ayuda con la familia de 365 o con microsoft 365 personal**, consulte [using Product Keys with Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Para obtener ayuda con la familia de 365 o con microsoft 365 personal**, consulte [using Product Keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
  **¿Cliente de licencias por volumen?** Si compró Microsoft 365 para empresas a través de un [programa de Microsoft Open License](https://go.microsoft.com/fwlink/p/?LinkID=613298), vea el artículo, [Escriba la clave de producto que ha comprado de Microsoft abierta](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activar una nueva suscripción

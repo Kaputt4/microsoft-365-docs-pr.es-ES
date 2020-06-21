@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Realice una copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar los planes de Microsoft 365.
-ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403623"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818536"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de empresa
 
@@ -35,13 +35,13 @@ Si un usuario cambia a otra suscripción que tiene menos servicios relacionados 
   
 ## <a name="save-a-copy-of-outlook-information"></a>Guardar una copia de la información de Outlook
 
-Si los usuarios tienen Outlook, pueden [exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario a un archivo. pst de Outlook antes de](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) cambiar su plan.
+Si los usuarios tienen Outlook, pueden [exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario a un archivo. pst de Outlook antes de](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) cambiar su plan.
   
-Una vez finalizado el cambio al nuevo plan, los usuarios pueden [importar el correo electrónico, los contactos y el calendario desde un archivo. pst de Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Una vez finalizado el cambio al nuevo plan, los usuarios pueden [importar el correo electrónico, los contactos y el calendario desde un archivo. pst de Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>Guardar archivos almacenados en OneDrive para la empresa
 
-Antes de cambiarse a una suscripción diferente, los usuarios pueden [descargar archivos y carpetas de OneDrive o SharePoint](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05) en una ubicación diferente, como una carpeta en la unidad de disco duro de su equipo o un recurso compartido de archivos en la red de la organización.
+Antes de cambiarse a una suscripción diferente, los usuarios pueden [descargar archivos y carpetas de OneDrive o SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) en una ubicación diferente, como una carpeta en la unidad de disco duro de su equipo o un recurso compartido de archivos en la red de la organización.
   
 ## <a name="save-yammer-information"></a>Guardar información de Yammer
 

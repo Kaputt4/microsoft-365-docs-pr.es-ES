@@ -1,5 +1,5 @@
 ---
-title: ¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
+title: ¿Cuál &apos; es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las diferencias entre el correo electrónico no deseado y el correo electrónico masivo (correo en gris) en Exchange Online Protection (EOP).
-ms.openlocfilehash: 6936028aa7bda538f0e49429d22f28c7a78cdb36
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208457"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819441"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo en EOP?
 

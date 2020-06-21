@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre lo que incluye Microsoft 365 Business Premium y obtenga instrucciones paso a paso para registrarse en Microsoft 365 empresa Premium.
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401566"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785680"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Inscríbase para Microsoft 365 empresa Premium
 
@@ -54,7 +54,7 @@ Vea este vídeo para obtener una introducción rápida al proceso de registro.<b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Para suscribirse y comprar Microsoft 365 para su empresa, siga los pasos que se indican a continuación:
 
@@ -97,4 +97,4 @@ Para obtener ayuda con la instalación, consulte [configurar](set-up.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

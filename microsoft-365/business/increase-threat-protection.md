@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales de suplantación de identidad (phishing), malware y otras amenazas.
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400878"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786214"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -78,7 +78,7 @@ Para crear una regla de transporte de correo:
     
 5. Aplique la configuración de la siguiente tabla para la regla. Use los valores predeterminados para el resto de la configuración, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**||
 |:-----|:-----|:-----|
@@ -88,17 +88,17 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .  <br/> |Notificar al destinatario con un mensaje  <br/> |
 |Proporcionar el texto del mensaje  <br/> |No abra estos tipos de archivos de personas que no sabe porque podrían contener macros con código malintencionado.  <br/> |
    
-Para más información, consulte lo siguiente:
+Para obtener más información, vea:
   
 - [Cómo tratar con ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [Restaurar su OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Restaurar su OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>Detener el reenvío automático de correo electrónico
 
 Los hackers que obtienen acceso al buzón de un usuario pueden robar correo configurando el buzón para reenviar automáticamente el correo electrónico. Esto puede ocurrir incluso sin la conciencia del usuario. Para evitar que esto suceda, configure una regla de flujo de correo. 
   
-Para crear una regla de transporte de correo, vea [este breve vídeo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o siga estos pasos:
+Para crear una regla de transporte de correo, vea [este breve vídeo](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) o siga estos pasos:
   
 1. En el centro de administración de Microsoft 365, seleccione **admin Centers** \> **Exchange**.
     
@@ -110,7 +110,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
     
 5. Aplique la configuración de la tabla siguiente. Use los valores predeterminados para el resto de la configuración, a menos que quiera cambiarlos.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
     
 |**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|
 |:-----|:-----|
@@ -127,7 +127,7 @@ Si ha configurado uno o más dominios personalizados para el entorno de Office 3
   
 Le recomendamos que empiece con esta protección creando una directiva para proteger a los usuarios más importantes y a su dominio personalizado. 
 
-Para crear una directiva contra la suplantación de identidad ATP, vea [este vídeo de aprendizaje corto](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o realice los pasos siguientes:
+Para crear una directiva contra la suplantación de identidad ATP, vea [este vídeo de aprendizaje corto](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)o realice los pasos siguientes:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com). 
     
@@ -145,7 +145,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 |**Configuración u opción**<br/>|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
-|Description  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
+|Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
 |Agregar usuarios que proteger  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
 |Agregar dominios que proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
 |Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: elija **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *alicia <span> <span> @contoso. com*. Si el correo electrónico lo envía un dominio suplantado: elija **Mensaje en cuarentena**.  <br/> |
@@ -157,7 +157,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
 
 Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Office 365 Advanced Threat Protection incluye protección contra datos adjuntos seguros de ATP, pero esta protección no está activada de forma predeterminada. Le recomendamos que cree una nueva regla para comenzar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
   
-Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve vídeo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o realice los pasos siguientes:
+Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve vídeo](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o realice los pasos siguientes:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta de administrador. 
     
@@ -177,7 +177,7 @@ Para crear una directiva de datos adjuntos seguros de ATP, vea [este breve víde
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
-|Description  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
+|Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
 |Guardar datos adjuntos respuesta de malware desconocida  <br/> |Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.  <br/> |
 |Redirigir datos adjuntos en detección  <br/> |Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> |
 |Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
@@ -194,7 +194,7 @@ Le recomendamos que haga lo siguiente:
     
 - Agregue una nueva Directiva dirigida a todos los destinatarios de su dominio.
     
-Para configurar los vínculos seguros ATP, vea [este breve vídeo de aprendizaje](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)o siga los pasos que se indican a continuación:
+Para configurar los vínculos seguros ATP, vea [este breve vídeo de aprendizaje](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o siga los pasos que se indican a continuación:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta de administrador. 
     
@@ -208,7 +208,7 @@ Para modificar la directiva predeterminada:
     
 2. En **configuración que se aplica al contenido excepto al correo electrónico**, seleccione **Microsoft 365 apps for Enterprise, Office para iOS y Android**.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
@@ -216,7 +216,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
-3. Haga clic en **Guardar**. 
+3. Seleccione **Guardar**. 
 
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|

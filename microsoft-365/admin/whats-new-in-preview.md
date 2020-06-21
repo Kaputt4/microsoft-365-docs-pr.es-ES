@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: Obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587585"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780712"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -79,7 +79,7 @@ Para obtener más información acerca de estos roles, consulte [About admin role
 
 Hemos oído de muchos administradores que necesitan compartir información sobre los grupos y su uso a personas que no tienen acceso a los centros de administración. Ahora puede exportar la lista de grupos a un archivo CSV con fines de auditoría, lo que significa que puede desechar el script de PowerShell antiguo. Para probarlo, **vaya a grupos**  >  **Groups**de grupos y, a continuación, seleccione **exportar grupos** en la barra de comandos.
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Centro de soluciones y arquitectura de 365 de Microsoft
+### <a name="microsoft-365-solution-and-architecture-center"></a>Centro de soluciones y arquitectura de Microsoft 365
 
 Este mes hemos lanzado un nuevo sitio [https://docs.microsoft.com](https://docs.microsoft.com) denominado [Microsoft 365 Solution and Architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), que reúne la orientación técnica que necesita para comprender, planear e implementar soluciones integradas de Microsoft 365 para colaboración segura y conforme. En este centro, encontrarás:
 
@@ -153,19 +153,19 @@ Tenemos dos actualizaciones para los grupos este mes:
 
 #### <a name="for-your-users"></a>Para los usuarios
 
-- [Programar una reunión](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Unirse a una reunión de Microsoft Teams](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Crear un equipo de toda la organización](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Crear un equipo con invitados](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Unirse a un equipo como invitado](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Crear una dirección de correo electrónico de grupo](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Programar una reunión](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Unirse a una reunión de Microsoft Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Crear un equipo de toda la organización](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Crear un equipo con invitados](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Unirse a un equipo como invitado](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Crear una dirección de correo electrónico de grupo](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### <a name="for-admins-and-business-owners"></a>Para administradores y propietarios de empresas
 
-- [Permita que su pequeña empresa tenga trabajo remoto](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Ejecución de una pequeña empresa remota](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Registrarse en Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Configurar el inicio de sesión en dos fases](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Permita que su pequeña empresa tenga trabajo remoto](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Ejecución de una pequeña empresa remota](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Registrarse en Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Configurar el inicio de sesión en dos fases](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>Marzo de 2020
 
@@ -227,7 +227,7 @@ Hemos recibido muchos comentarios de socios y administradores sobre los retos de
 
 Esto es literalmente!!!
 
-### <a name="groups"></a>Groups
+### <a name="groups"></a>Grupos
 
 Un par de cambios en el área grupos este mes:
 
@@ -276,12 +276,12 @@ La lista de buzones de recursos se ha actualizado con el nuevo estilo. En el cen
 
 Consulte el curso de administración de la pequeña empresa que publicamos en enero:
 
-- [Crear el sitio web de su empresa](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Buscar respuestas y ayuda](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Obtener ayuda o soporte técnico](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Eliminar un usuario](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Elegir una suscripción de Microsoft](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Información general de Microsoft 365 para la seguridad de la empresa](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Crear el sitio web de su empresa](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [Buscar respuestas y ayuda](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Obtener ayuda o soporte técnico](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [Eliminar un usuario](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Elegir una suscripción de Microsoft](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Información general de Microsoft 365 para la seguridad de la empresa](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>Noviembre y 2019 de diciembre
 
@@ -403,7 +403,7 @@ Ha habido una actualización a otro de nuestros asistentes de instalación inici
 Tenemos algunas actualizaciones de facturación y suscripciones este mes:
 
 - Suscripciones basadas en dispositivos: puede asignar o cancelar la asignación de licencias **de aplicaciones para el ámbito educativo (dispositivo) de 365 de Microsoft** a los dispositivos del centro de administración de Microsoft 365. **Microsoft 365 apps for Education (Device)** es una licencia de complemento que le permitirá asignar una licencia a un dispositivo. Vaya a **facturación**  >  **de productos** para buscar y adquirir la licencia.
-- Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los usuarios activos de **los usuarios**  >  **Active users** al nuevo estilo. Para más información, consulte lo siguiente:
+- Administración de licencias basada en el usuario: hemos actualizado la forma en que se asignan licencias a los usuarios activos de **los usuarios**  >  **Active users** al nuevo estilo. Para obtener más información, vea:
   - [Asignar licencias a usuarios](manage/assign-licenses-to-users.md)
   - [Cancelar asignación a licencias de usuarios](manage/remove-licenses-from-users.md)
 

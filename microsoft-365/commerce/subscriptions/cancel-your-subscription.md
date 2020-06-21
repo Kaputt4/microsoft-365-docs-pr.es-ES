@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba de Microsoft 365 para empresas o pago.
-ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403299"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818524"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -101,7 +101,7 @@ Si cancela una suscripción antes del final del período, la suscripción se mue
   
 - **Acceso de administrador** Los administradores todavía pueden iniciar sesión y acceder al centro de administración, y comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos.
 
-- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa ni acceder a datos de clientes como correo electrónico o documentos en los sitios de grupo. Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa ni acceder a datos de clientes como correo electrónico o documentos en los sitios de grupo. Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
 Para obtener más información, vea [¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ Para obtener más información, vea [¿Cómo administra Microsoft 365 mis regist
 
 Cuando la cancelación sea efectiva, los usuarios perderán el acceso a sus datos. Antes de cancelar la suscripción, pídale que guarde los archivos de OneDrive para la empresa o de SharePoint Online en otra ubicación. Es posible que los datos de los clientes que se dejen se eliminen transcurridos 30 días y que se eliminen a más tardar de 180 días después de la cancelación.
 
-- Para mover el correo electrónico, los contactos, las tareas y la información de calendario a otra cuenta, vea [Exportar o realizar copias de seguridad de correo electrónico, contactos y calendario en un archivo .pst de Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
+- Para mover el correo electrónico, los contactos, las tareas y la información de calendario a otra cuenta, vea [Exportar o realizar copias de seguridad de correo electrónico, contactos y calendario en un archivo .pst de Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
 - Para guardar una biblioteca de documentos o el contenido de una lista (como los contactos) de un entorno de SharePoint Online (sitios de grupo o OneDrive para la Empresa) en recursos compartidos de archivos o en un equipo local, consulte [Migración manual del contenido de SharePoint Online](https://support.microsoft.com/kb/2783484).
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 
-Si ha cancelado la suscripción y no ha trasladado a los usuarios a una suscripción diferente que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto ocurre, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
+Si ha cancelado la suscripción y no ha trasladado a los usuarios a una suscripción diferente que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto ocurre, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija Entrega dinámica para evitar retrasos en los mensajes y permitir que los usuarios puedan obtener una vista previa de los datos adjuntos mientras se examinan.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034797"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819357"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adjuntos seguros de ATP
 
-## <a name="overview"></a>Información general
+## <a name="basic-features-of-dynamic-delivery"></a>Características básicas de la entrega dinámica
 
 La entrega dinámica es una opción que se puede seleccionar para [Datos adjuntos seguros de ATP](atp-safe-attachments.md). Lea este artículo para obtener información sobre la entrega dinámica y las funciones de vista previa de datos adjuntos en [Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md).
 
@@ -80,7 +80,7 @@ Hay ciertos escenarios en los que la Entrega dinámica no es compatible. Entre e
 
 - La carpeta de búsqueda del buzón de un usuario que está en un estado de error
 
-- Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. Para resolver esto, consulte [Los mensajes con datos adjuntos no se entregan cuando se usa la Entrega dinámica de ATP y Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. Para resolver esto, consulte [Los mensajes con datos adjuntos no se entregan cuando se usa la Entrega dinámica de ATP y Exclaimer](https://support.microsoft.com/help/4014438)
 
 - Mensajes cifrados con [Extensiones seguras multipropósito de correo electrónico en Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md))
 

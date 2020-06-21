@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre los informes y la información inteligentes disponibles en el centro de seguridad y cumplimiento, y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
+description: Obtenga información sobre los informes inteligentes y la información disponibles en el centro de seguridad &amp; y cumplimiento, y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c5d159371ba7cd2f43cf0782ba66e71b51ca2ad1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617313"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819502"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad y &amp; cumplimiento
 

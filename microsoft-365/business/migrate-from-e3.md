@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Business Premium desde Office 365 E3.
-ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515904"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785933"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 empresa Premium 
 
@@ -117,8 +117,8 @@ También puede completar estos pasos en la página dispositivos:
 
 ### <a name="threat-protection"></a>Protección contra amenazas
 
-Después de realizar la migración a Microsoft 365 Business Premium, tiene Office 365 ATP. Consulte [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) para obtener información general. Para configurar, consulte [configurar los vínculos seguros de ATP](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [configurar los datos adjuntos seguros](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)de ATP y [configurar la protección contra phishing de ATP](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
+Después de realizar la migración a Microsoft 365 Business Premium, tiene Office 365 ATP. Consulte [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) para obtener información general. Para configurar, consulte [configurar los vínculos seguros de ATP](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), [configurar los datos adjuntos seguros](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)de ATP y [configurar la protección contra phishing de ATP](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-Para empezar a utilizar etiquetas de confidencialidad, consulte [información general sobre las etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) y [crear y administrar las etiquetas de confidencialidad](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) vídeo.
+Para empezar a utilizar etiquetas de confidencialidad, consulte [información general sobre las etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) y [crear y administrar las etiquetas de confidencialidad](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) vídeo.

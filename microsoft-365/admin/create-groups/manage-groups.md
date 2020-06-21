@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Obtenga información sobre cómo administrar grupos de 365 de Microsoft, como agregar miembros de quitar grupos, editar la dirección de correo electrónico, el nombre de grupo o la descripción, y personalizar cómo funciona el grupo.
-ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049208"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780654"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Administrar un grupo en el centro de administración de 365 de Microsoft
 
@@ -122,31 +122,31 @@ Los miembros del grupo pueden optar por no recibir estos mensajes de correo elec
 
 3. En la pestaña **configuración** , seleccione **enviar copias de conversaciones de grupo y eventos a miembros del grupo** si desea que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya **Groups** a **la** \> página grupos y, a continuación, seleccione el grupo que desea cambiar.
+1. En el centro de administración, vaya a **la** \> **Groups** página grupos y, a continuación, seleccione el grupo que desea cambiar.
 
 2. Junto a **nombre**, seleccione **Editar**.
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya **Groups** a **la** \> página grupos y, a continuación, seleccione el grupo que desea cambiar.
+1. En el centro de administración, vaya a **la** \> **Groups** página grupos y, a continuación, seleccione el grupo que desea cambiar.
 
 2. Junto a **nombre**, seleccione **Editar**.
 
 3. Active **enviar copias de conversaciones de grupo y eventos a** las bandejas de entrada de los miembros del grupo **si desea** que los miembros reciban copias de los mensajes de grupo y los elementos de calendario en su propia bandeja de entrada.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
 
 3. En la lista grupos del centro de administración, seleccione el nombre del grupo que desea cambiar y, a continuación, en la pestaña **configuración** , seleccione **permitir a los remitentes externos que envíen correo electrónico a este grupo**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
     
 3. Establezca que **Permitir que personas que no pertenezcan a la organización envíen correos electrónicos al grupo** cambie a **Activado**.
     
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -194,7 +194,7 @@ Esta opción es fantástica si desea tener una dirección de correo electrónico
 
 [Crear un grupo de 365 de Microsoft](create-groups.md)
 
-[Administrar el acceso de invitado a grupos de 365 de Microsoft](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Administrar el acceso de invitado a grupos de 365 de Microsoft](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Elegir el dominio que se va a usar al crear grupos de 365 de Microsoft](choose-domain-to-create-groups.md)
 

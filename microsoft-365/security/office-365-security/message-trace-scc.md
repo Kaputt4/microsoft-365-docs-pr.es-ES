@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352503"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819345"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
-## <a name="overview"></a>Información general
+## <a name="message-trace-features"></a>Características de seguimiento de mensajes
 
 Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
@@ -230,7 +232,7 @@ Disponible (completado) los informes de Resumen mejorados están disponibles en 
 
 - **sender_address**: la dirección de correo electrónico del remitente (dominio de*alias* @ *domain*).
 
-- **Recipient_status**: el estado de la entrega del mensaje al destinatario. Si el mensaje se envió a varios destinatarios, se mostrarán todos los destinatarios y el estado correspondiente para cada uno, con el formato: \< *email address* \> ## \< *status* \> . Por ejemplo:
+- **Recipient_status**: el estado de la entrega del mensaje al destinatario. Si el mensaje se envió a varios destinatarios, se mostrarán todos los destinatarios y el estado correspondiente para cada uno, en el formato: \<*email address*\> ## \<*status*\> . Por ejemplo:
 
   - **# #Receive, Send** significa que el servicio recibió el mensaje y que se envió al destino previsto.
 
@@ -337,7 +339,7 @@ Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de c
 |`SFV=BLK`|Se omitió el filtrado y se bloqueó el mensaje porque proviene de un remitente bloqueado.|
 |`SFV=SKS`|El mensaje se marcó como correo no deseado antes de ser procesado por el filtrado contra correo electrónico no deseado. Esto incluye los mensajes que coincidan con una regla de flujo de correo (también conocida como regla de transporte), la cual marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtros.|
 |`SCL=<number>`|Para más información sobre los distintos valores SCL y su significado, vea [Niveles de confianza de correo no deseado](spam-confidence-levels.md).|
-|`PCL=<number>`|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje. Se puede interpretar del mismo modo que los valores de SCL descritos en [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|Se bloqueó el remitente del mensaje.|
 |`DI=SQ`|El mensaje se puso en cuarentena.|
 |`DI=SD`|El mensaje se eliminó.|

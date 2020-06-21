@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679137"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819453"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
-## <a name="overview"></a>Información general
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Funciones básicas y cómo abrir el panel de seguridad
 
 El [centro de seguridad & cumplimiento](../../compliance/go-to-the-securitycompliance-center.md) permite que su organización administre el cumplimiento y la protección de datos. Suponiendo que tiene los permisos necesarios, el panel de seguridad le permite revisar el estado de la protección contra amenazas, así como ver y actuar en alertas de seguridad.
 

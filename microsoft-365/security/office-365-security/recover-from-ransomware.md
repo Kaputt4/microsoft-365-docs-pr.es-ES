@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores de Microsoft 365 pueden obtener información sobre cómo recuperarse de un ataque de ransomware.
-ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224714"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811031"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
@@ -42,7 +42,7 @@ El punto clave aquí es detener la propagación de cifrado de datos por ransomwa
 
 Si sospecha que el correo electrónico es un objetivo, debe deshabilitar temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync se usa en dispositivos móviles para sincronizar datos entre el dispositivo y el buzón de correo de Exchange Online.
 
-Para deshabilitar ActiveSync para un buzón de correo, consulte [How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+Para deshabilitar ActiveSync para un buzón de correo, consulte [How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
 Para deshabilitar otros tipos de acceso a un buzón, consulte:
 
@@ -50,7 +50,7 @@ Para deshabilitar otros tipos de acceso a un buzón, consulte:
 
 - [Habilitar o deshabilitar el acceso a POP3 o IMAP4 para un usuario](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube para que no se actualicen mediante dispositivos potencialmente infectados. Para obtener más información, consulte [Cómo pausar y reanudar la sincronización en OneDrive](https://support.office.com/article/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube para que no se actualicen mediante dispositivos potencialmente infectados. Para obtener más información, consulte [Cómo pausar y reanudar la sincronización en OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Paso 3: quitar el malware de los dispositivos afectados
 
@@ -60,11 +60,11 @@ Puede usar [Windows Defender](https://www.microsoft.com/windows/comprehensive-se
 
 Una alternativa que también le ayudará a quitar ransomware o malware es la [herramienta de eliminación de software malintencionado (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
-Si estas opciones no funcionan, puedes probar [Windows Defender sin conexión](https://support.microsoft.com/help/17466/windows-defender-offline-help-protect-my-pc) o [solucionar problemas de detección y eliminación de malware](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware).
+Si estas opciones no funcionan, puedes probar [Windows Defender sin conexión](https://support.microsoft.com/help/17466) o [solucionar problemas de detección y eliminación de malware](https://support.microsoft.com/help/4466982).
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Paso 4: recuperar archivos en un equipo o dispositivo limpio
 
-Una vez que haya completado el paso anterior para quitar la carga de ransomware del entorno (lo que impedirá que el ransomware Cifre o quite los archivos), puede usar el [historial de archivos](https://support.microsoft.com/help/17128/windows-8-file-history) en Windows 10 y Windows 8,1 o en la protección del sistema de Windows 7 para intentar recuperar los archivos y carpetas locales.
+Una vez que haya completado el paso anterior para quitar la carga de ransomware del entorno (lo que impedirá que el ransomware Cifre o quite los archivos), puede usar el [historial de archivos](https://support.microsoft.com/help/17128) en Windows 10 y Windows 8,1 o en la protección del sistema de Windows 7 para intentar recuperar los archivos y carpetas locales.
 
 **Notas**:
 
@@ -74,7 +74,7 @@ Una vez que haya completado el paso anterior para quitar la carga de ransomware 
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Paso 5: recuperar los archivos en su OneDrive para la empresa
 
-Los archivos restaurar en OneDrive para la empresa permiten restaurar todo el OneDrive a un punto anterior en el tiempo de los últimos 30 días. Para obtener más información, vea [restaurar el OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+Los archivos restaurar en OneDrive para la empresa permiten restaurar todo el OneDrive a un punto anterior en el tiempo de los últimos 30 días. Para obtener más información, vea [restaurar el OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Paso 6: recuperar el correo electrónico eliminado
 
@@ -82,7 +82,7 @@ En el caso poco probable de que ransomware elimine todo el correo electrónico, 
 
 - [Recuperar mensajes eliminados en el buzón de un usuario](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Recuperación de elementos eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [Recuperación de elementos eliminados en Outlook para Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Paso 7: volver a habilitar Exchange ActiveSync y la sincronización de OneDrive
 
@@ -132,11 +132,11 @@ Puede informar del mensaje de suplantación de identidad (phishing) que contiene
 
 - [Norsk de la anhidro responde al ataque de ransomware con transparencia](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Detección de ransomware y recuperación de los archivos en OneDrive](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Detección de ransomware y recuperación de los archivos en OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Informe de inteligencia en seguridad de Microsoft](https://www.microsoft.com/securityinsights/)
 
-- [Habilitar o deshabilitar macros en archivos de Office](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [Habilitar o deshabilitar macros en archivos de Office](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [Configuración recomendada para EOP y la seguridad de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 

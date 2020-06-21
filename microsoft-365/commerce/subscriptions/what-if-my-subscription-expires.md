@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que ocurre con sus datos cuando expira la suscripción a Microsoft 365 para empresas, está deshabilitado o si cancela.
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403167"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818628"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué pasa con mis datos y mi acceso cuando termina la suscripción a Microsoft 365 para empresas?
 
@@ -63,7 +63,7 @@ Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas o
   
 - **Habilite la facturación recurrente para la suscripción.**
 
-  - Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. Se le facturará automáticamente su suscripción y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
+  - Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. La suscripción se facturará automáticamente y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
 
   - Si ha comprado Microsoft 365 apps for Business con una tarjeta de prepago, puede [activar la facturación recurrente](renew-your-subscription.md) para su suscripción.
 
@@ -87,7 +87,7 @@ Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas o
   
 - **Administrar la facturación recurrente de la suscripción.**
 
-  - Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. Se le facturará automáticamente su suscripción y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
+  - Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. La suscripción se facturará automáticamente y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
 
   - Si ha comprado Microsoft 365 apps for Business con una tarjeta de prepago, puede [activar la facturación recurrente](renew-your-subscription.md) para su suscripción.
 
@@ -109,7 +109,7 @@ Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas o
 
 ::: moniker range="o365-21vianet"
   
-- **Renueva la suscripción.** Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. Se le facturará automáticamente su suscripción y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
+- **Renueva la suscripción.** Si la **facturación recurrente** ya está activada, no es necesario realizar ninguna acción. La suscripción se facturará automáticamente y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si por algún motivo ha activado la **facturación recurrente** , siempre puede [volver a activar la facturación recurrente](renew-your-subscription.md).
 
 - **Deja que la suscripción expire.** Si está pagando con tarjeta de crédito o factura y no desea continuar la suscripción, [desactive la facturación Recurrent](renew-your-subscription.md). La suscripción expirará en la fecha de expiración y podrá ignorar todas las notificaciones relacionadas que llegan por correo electrónico.
 
@@ -126,13 +126,13 @@ Esto es lo que puede pasar en cada fase por la que pasa la suscripción.
   
 ::: moniker range="o365-worldwide"
 
- **Qué es lo que va a pasar:** el estado "expirada" dura 30 días para casi todas las suscripciones, incluidas las suscripciones compradas a través de [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), en la mayoría de los países y regiones. Para productos de licencias por volumen, excepto para Microsoft Open, el estado "expirada" dura 90 días.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Qué es lo que va a pasar:** el estado "expirada" dura 30 días para casi todas las suscripciones, incluidas las suscripciones compradas a través de [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), en la mayoría de los países y regiones. Para productos de licencias por volumen, excepto para Microsoft Open, el estado "expirada" dura 90 días.
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
@@ -150,13 +150,13 @@ Como administrador, todavía tiene acceso al centro de administración. No se pr
   
 ::: moniker range="o365-worldwide"
 
- **Qué es lo que va a pasar:** si no reactiva la suscripción mientras esta está en estado de expirada, la suscripción pasará a la fase de estado de deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. En el caso de los productos de licencias por volumen, el estado de deshabilitado dura 30 días.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Qué es lo que va a pasar:** si no reactiva la suscripción mientras esta está en estado de expirada, la suscripción pasará a la fase de estado de deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. En el caso de los productos de licencias por volumen, el estado de deshabilitado dura 30 días.
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ Como administrador, todavía tiene acceso al centro de administración. No se pr
 
 ::: moniker range="o365-worldwide"
 
-En esta fase, el acceso se limita de forma significativa. Los usuarios no pueden iniciar sesión ni acceder a servicios como correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura y con funcionalidad limitada y mostrarán [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Todavía puede iniciar sesión y acceder al centro de administración, pero no puede asignar licencias a los usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
+En esta fase, el acceso se limita de forma significativa. Los usuarios no pueden iniciar sesión ni acceder a servicios como correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura y con funcionalidad limitada y mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Todavía puede iniciar sesión y acceder al centro de administración, pero no puede asignar licencias a los usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ Como administrador global o de facturación, puede [reactivar la suscripción](r
   
  **Qué es lo que va a pasar:** si no reactiva la suscripción mientras esta está en gracia o desactivada, la suscripción quedará con aprovisionamiento anulado.
   
-Los administradores y usuarios ya no tienen acceso a los servicios ni aplicaciones de Office incluidos en la suscripción. Todos los datos del cliente, desde los datos de usuarios hasta los documentos y correos electrónicos, se eliminarán de forma permanente y no se podrán recuperar de ninguna manera.
+Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
   
 A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como administrador global o de facturación, aún puede tener acceso al centro de administración para administrar otras suscripciones o para comprar nuevas suscripciones para satisfacer sus necesidades empresariales.
   
@@ -204,7 +204,7 @@ Cuando finalice la versión de prueba, no podrá continuar usando Microsoft 365 
 
 ::: moniker-end
 
-- **Extender la versión de prueba.** ¿Necesita más tiempo para evaluar Microsoft 365? En algunos casos, es posible que pueda [extender la versión de prueba](../extend-your-trial.md).
+- **Extender la versión de prueba.** ¿Necesita más tiempo para probar Microsoft 365? En algunos casos, es posible que pueda [extender la versión de prueba](../extend-your-trial.md).
 
 - **Cancelar la versión de prueba o dejarla expirar.** Si decide no comprar Microsoft 365, puede dejar que la versión de prueba expire o [cancelarla](cancel-your-subscription.md). Asegúrese de realizar una copia de seguridad de los datos que quiere conservar. Poco después del período de gracia de 30 días, la información y los datos de su cuenta de prueba se eliminan de forma permanente.
 
@@ -216,7 +216,7 @@ Esto es lo que pasará con usted y sus usuarios si cancela una suscripción.
   
 - **Acceso de administrador** Los administradores todavía pueden iniciar sesión y acceder al centro de administración, y comprar otras suscripciones según sea necesario. Como administrador global o de facturación, tiene 90 días para [reactivar la suscripción](reactivate-your-subscription.md) con todos los datos intactos.
 
-- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa u obtener acceso a datos de clientes (por ejemplo, correo electrónico o documentos de los sitios de grupo). Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Acceso de usuario** Los usuarios no podrán usar servicios como OneDrive para la empresa u obtener acceso a datos de clientes (por ejemplo, correo electrónico o documentos de los sitios de grupo). Finalmente, las aplicaciones de Office, como Word y Excel, pasarán a un modo de solo lectura y de funcionalidad reducida y mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
 Para obtener información sobre cómo cancelar, consulte [cancelar la suscripción](cancel-your-subscription.md).
   

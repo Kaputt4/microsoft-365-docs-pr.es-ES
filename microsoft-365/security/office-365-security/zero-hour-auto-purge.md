@@ -21,16 +21,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo la depuración automática de cero horas (ZAP) puede mover mensajes entregados de forma retroactiva en un buzón de Exchange Online a la carpeta de correo no deseado o cuarentena que se han encontrado como correo no deseado o suplantación de identidad.
-ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819429"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Depuración automática de cero horas (ZAP) en Exchange Online
 
-## <a name="overview"></a>Información general
+## <a name="basic-features-of-zap"></a>Características básicas de ZAP
 
 En Microsoft 365 organizaciones con buzones en Exchange Online, la depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad (phishing), correo no deseado o malware malintencionados que ya se han entregado a los buzones de Exchange Online.
 
@@ -80,7 +80,7 @@ Para obtener más información acerca de cómo configurar los veredictos de filt
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Consideraciones de ZAP para la protección contra amenazas avanzada de Office 365 (Office 365 ATP)
 
-ZAP no pondrá en cuarentena ningún mensaje que se encuentre en el proceso de análisis de [entregas dinámicos](dynamic-delivery-and-previewing.md) o donde el filtrado de malware ya haya reemplazado los datos adjuntos con el archivo **Text. txt de alerta de malware** . Si se recibe una señal de phish o correo no deseado para estos tipos de mensajes y se establece el veredicto de filtrado en la Directiva contra correo no deseado para realizar alguna acción en el mensaje (mover a correo no deseado, redirigir, eliminar, cuarentena), el valor de ZAP será la acción "migrar a correo no deseado".
+ZAP no pondrá en cuarentena ningún mensaje que se encuentre en el proceso de análisis de [entregas dinámicos](dynamic-delivery-and-previewing.md) o en el que el filtrado de malware ya haya reemplazado los datos adjuntos con el archivo de **alerta de malware Text.txt** . Si se recibe una señal de phish o correo no deseado para estos tipos de mensajes y se establece el veredicto de filtrado en la Directiva contra correo no deseado para realizar alguna acción en el mensaje (mover a correo no deseado, redirigir, eliminar, cuarentena), el valor de ZAP será la acción "migrar a correo no deseado".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Cómo ver si el ZAP movió el mensaje
 
@@ -103,10 +103,6 @@ Los remitentes seguros, reglas de flujo de correo o bloquear y permitir la confi
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>¿Qué ocurre si un mensaje se mueve a otra carpeta (por ejemplo, reglas de la bandeja de entrada)?
 
 ZAP sigue funcionando siempre que no se haya eliminado el mensaje, o siempre y cuando no se haya aplicado aún la misma acción o más segura. Por ejemplo, si la Directiva de phish se establece en cuarentena y el usuario o el administrador ya ha no deseado el correo electrónico, la cuarentena tendrá que hacer una acción para poner en cuarentena el archivo.
-
-### <a name="does-zap-change-the-message-header"></a>¿ZAP cambia el encabezado del mensaje?
-
-Una acción ZAP no realiza ningún cambio en el encabezado del mensaje.
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>¿Cómo afecta el ZAP a los buzones en retención?
 

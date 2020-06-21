@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173397"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818572"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Puntuación segura de Microsoft (iteración previa)
 
@@ -43,7 +46,7 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-your-secure-score-is-calculated"></a>Cómo se calcula la puntuación segura
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios.
 
@@ -102,8 +105,8 @@ Para ayudarle a la información que necesita con mayor rapidez, las acciones de 
 
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
-![Página Web de](../../media/secure-score/homepage-original.png)
-puntuación segura*figura 1: Página de introducción a la calificación segura de Microsoft*
+![Página Web de puntuación segura ](../../media/secure-score/homepage-original.png)
+ *figura 1: Página de introducción a la calificación segura de Microsoft*
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar su puntuación
 

@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Comprenda lo que necesita saber antes de pasar por el proceso de registro de Office 365. '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579174"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780522"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: ayuda de administración
 
@@ -70,7 +70,7 @@ Vea un breve vídeo sobre cómo elegir un plan de 365 para empresas de Microsoft
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ¿Necesita ayuda para elegir? Los consultores de ventas están disponibles para responder a sus preguntas. Solo tiene que ir a [comparar todos los productos](https://products.office.com/compare-all-microsoft-office-products?tab=2) y elegir una de las opciones de soporte técnico de contactos que aparecen en la parte izquierda de la página.
   
@@ -115,9 +115,9 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
 
 - **La dirección e información de contacto para su suscripción:**
 
-  - **País** en el que se usarán los servicios. **No** podrá cambiarlo más adelante, ni siquiera durante el proceso de registro; deberá reiniciar el asistente de registro.
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico de Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.
@@ -137,4 +137,4 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
 
 ## <a name="see-also"></a>Vea también
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

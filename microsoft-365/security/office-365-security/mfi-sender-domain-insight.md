@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la información sobre el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635177"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818836"
 ---
 # <a name="fix-sender-domain-insight"></a>Solucionar la información del dominio del remitente
 
@@ -28,7 +30,7 @@ Microsoft 365 requiere mensajes que envíen desde entornos de correo electrónic
 
 - En la configuración, se cumple una de las siguientes instrucciones:
 
-  - El dominio de correo electrónico del remitente está registrado en la organización. Para obtener más información, vea Agregar dominios en Office 365.
+  - El dominio de correo electrónico del remitente está registrado en la organización. Para obtener más información, consulte Agregar dominios a Office 365.
 
   - El servidor de correo electrónico local está configurado para usar un certificado para enviar correo electrónico a Microsoft 365, el certificado contiene o coincide exactamente con un nombre de dominio que se ha registrado en Microsoft 365, y ha creado un conector basado en certificado en Microsoft 365 con ese dominio. 
 
@@ -46,6 +48,6 @@ Verá el conector de entrada que se usó para entregar los mensajes a Office 365
 
 ![Ver identificadores de mensaje de ejemplo en el información de dominio del remitente de corrección](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="related-topics"></a>Temas relacionados
 
 Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

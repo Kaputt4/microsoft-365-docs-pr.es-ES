@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Obtenga información sobre cómo cambiar a una nueva suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403191"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818640"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Cambiar a otro plan de Microsoft 365 para empresas
 
@@ -41,7 +41,7 @@ La manera más sencilla de cambiar de plan es usar el botón **Cambiar de planes
 
 **¿Necesita algo más?**
 - [Cancelar la suscripción](cancel-your-subscription.md)
-- [Actualización de la familia Microsoft 365 a una suscripción de empresa](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Actualización de la familia Microsoft 365 a una suscripción de empresa](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Usar el botón cambiar de plan
@@ -90,7 +90,7 @@ A continuación, le indicamos los posibles motivos de esto:
 
 ## <a name="i-dont-see-the-plan-i-want"></a>No veo el plan que quiero
 
-Cuando usa el botón **Cambiar de plan**, se muestran los planes a los que puede cambiar en función de los servicios de su plan actual. Solo puede usar el botón **Cambiar de plan** para cambiar a un plan que tenga los servicios relacionados con los mismos datos o una versión superior. Esto garantiza que los usuarios no perderán los datos relacionados con esos servicios durante el cambio.
+When you use the **Switch plans** button, the plans that you can switch to are displayed based on the services in your current plan. You can only use the **Switch plans** button to switch to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the switch.
   
 Para comparar los planes antes de cambiar, consulte la página [de comparación de productos de 365 para empresas de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842056) . Para obtener especificaciones técnicas, consulte las [descripciones de servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
   

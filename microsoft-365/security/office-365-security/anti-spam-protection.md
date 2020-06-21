@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración y los filtros de correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211421"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800112"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
 > [!NOTE]
-> Este tema está destinado a los administradores. Para los temas de los usuarios finales, vea [información general sobre el filtro de correo no deseado](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) y [obtenga información sobre el correo no deseado y el phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Este tema está destinado a los administradores. Para los temas de los usuarios finales, vea [información general sobre el filtro de correo no deseado](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) y [obtenga información sobre el correo no deseado y el phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP protege automáticamente contra correo no deseado (correo no deseado).
 
@@ -83,7 +83,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedir la entrega de correo no deseado en la bandeja de entrada
 
-- **Compruebe la configuración de la organización**: vea la configuración que permite a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener la configuración recomendada, consulte [configuración recomendada para EOP y Microsoft 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) y [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
+- **Compruebe la configuración de la organización**: vea la configuración que permite a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener la configuración recomendada, consulte [configuración recomendada para EOP y Office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) y [Create Safe Sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Compruebe que la regla de correo no deseado está habilitada en el buzón del usuario**: está habilitada de forma predeterminada, pero si está deshabilitada, los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo electrónico no deseado. Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
