@@ -92,6 +92,8 @@
           items:
             - name: Microsoft Project y Microsoft Visio
               href: get-started/project-visio.md
+            - name: Aplicaciones del nuevo Microsoft Edge
+              href: get-started/edge-browser-app.md
     - name: Trabajar con el Escritorio administrado de Microsoft
       href: working-with-managed-desktop/index.md
       items:

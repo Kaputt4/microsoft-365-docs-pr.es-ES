@@ -33,7 +33,7 @@
         - name: Implementar Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: Aplicaciones de aprendizaje para todos
-          href: 'https://support.office.com/office-training-center'
+          href: 'https://support.microsoft.com/training'
         - name: ¿Qué suscripción tengo?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Personalizar la página de inicio de sesión
@@ -93,6 +93,8 @@
               href: manage/assign-licenses-to-users.md
             - name: Asignar roles de administrador
               href: add-users/assign-admin-roles.md
+            - name: Usuarios invitados
+              href: add-users/about-guest-users.md
             - name: Agregar usuarios invitados a un grupo de Microsoft 365
               href: create-groups/manage-guest-access-in-groups.md
             - name: Quitar licencias a los usuarios
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: Creación de un buzón compartido
               href: email/create-a-shared-mailbox.md
-            - name: Configuración de un buzón compartido
+            - name: Establecer la configuración de buzón compartido
               href: email/configure-a-shared-mailbox.md
             - name: Convertir un buzón de usuario en un buzón compartido
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
           href: manage/set-password-expiration-policy.md
         - name: Personalizar el iniciador de aplicaciones
           href: manage/customize-the-app-launcher.md
+        - name: Actualizar usuarios a las últimas aplicaciones
+          href: setup/upgrade-users-to-latest-office-client.md
         - name: Requisitos para la implementación centralizada de complementos
           href: manage/centralized-deployment-of-add-ins.md
         - name: Instalar y administrar complementos con Implementación centralizada
@@ -320,11 +324,11 @@
         - name: Compartir calendarios con usuarios invitados
           href: manage/share-calendars-with-external-users.md
         - name: Crear un equipo con usuarios invitados
-          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
+          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
         - name: Programar una reunión de Teams con usuarios invitados
-          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
         - name: Unirse a una reunión de Teams con usuarios invitados
-          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: Solucionar problemas
       href: 'https://docs.microsoft.com/office/troubleshoot/'
     - name: Contactar soporte
