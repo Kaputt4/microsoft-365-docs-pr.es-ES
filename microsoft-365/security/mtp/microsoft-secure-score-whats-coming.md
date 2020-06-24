@@ -17,18 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545939"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844887"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>¿Qué viene con la puntuación segura de Microsoft?
 
-Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score-new.md) sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
+Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score.md) sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Se cambiará la puntuación y la puntuación máxima posible. Sin embargo, esto no implica un cambio en su postura de seguridad.
 
-Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-new.md#whats-new)
+Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score.md#whats-new)
 
 ## <a name="june-2020"></a>Junio de 2020
 
@@ -51,5 +51,5 @@ Para obtener más información sobre los cambios recientes, vea [what's New in S
 * Impedir que las aplicaciones de Office inserten código en otros procesos
 * Bloquear la ejecución de los archivos ejecutables a menos que cumplan un criterio de predominio, edad o lista de confianza
 * Bloquear creaciones de procesos procedentes de PSExec y comandos WMI
-* Bloquear credenciales de robo desde el subsistema de la autoridad de seguridad local de Windows (LSASS. exe)
+* Bloquear credenciales de robo desde el subsistema de la autoridad de seguridad local de Windows (lsass.exe)
 * Bloquear llamadas a la API Win32 desde macros de Office

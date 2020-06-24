@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Decida qué características y qué contenido de novedades se muestran o se ocultan a los usuarios finales en la oficina What's New Management for Office Desktop apps.
-ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717180"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844733"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrar u ocultar nuevas características con la nueva administración
 
@@ -42,13 +42,9 @@ Office What's New Management está disponible en el centro de administración de
 Los administradores pueden obtener una vista previa del contenido nuevo para un canal y administrar la publicación del contenido con Office, la nueva administración.
 
 1. En el centro de administración de Microsoft 365, en **configuración**, elija Configuración de la **organización**.
-
 2. En la pestaña **servicios** , elija **Office what's New Management**.
-
 3. Seleccione una o más características para ver el nombre de la característica, una descripción breve, la aplicación y la versión de lanzamiento para cada característica en el panel de control flotante.
-
 4. Elija **ocultar a los usuarios** o **Mostrar a los usuarios**.  
-
     El estado **que se muestra de forma predeterminada** indica que la información de la característica se muestra de forma predeterminada a los usuarios hasta que el administrador establece el estado de una característica en **oculto** o **mostrado**.  
 
     > [!NOTE]
@@ -65,6 +61,13 @@ Las nuevas características aparecen en Office, la nueva administración basada 
 |**Empresa semestral** <br/> |1 de enero y 1 de julio <br/> | 2 semanas antes de la versión principal que aporta nuevas características<br/> |
 
 Para obtener más información acerca de las programaciones de actualizaciones de canal, consulte [historial de actualizaciones de las aplicaciones de Microsoft 365 (enumeradas por fecha)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Agregar la nueva tarjeta de administración de Office a la Página principal del centro de administración
+
+1. En la página de administración de Microsoft 365, elija Agregar tarjeta en la parte superior de la página.
+2. Localice las novedades **de las aplicaciones de Office** en la lista y elija esta opción.
+3. Una vez que la tarjeta esté en nuestra página de inicio, puede elegir **administrar** para [Mostrar u ocultar las características de la](#show-or-hide-new-features) organización de Yor. 
+
 
 ## <a name="related-articles"></a>Artículos relacionados
 

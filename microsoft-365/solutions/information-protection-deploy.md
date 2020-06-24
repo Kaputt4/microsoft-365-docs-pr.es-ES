@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,20 +16,37 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configure la infraestructura de seguridad y servicio para proteger su información y cumplir con las regulaciones de privacidad de datos.
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695115"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854340"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Implementar la protección de la información para las regulaciones de privacidad de datos con Microsoft 365
 
-Esta solución proporciona instrucciones sobre cómo planear y proteger los datos personales almacenados en los servicios de 365 de Microsoft y, potencialmente, sujetos a normas de privacidad de datos, como el Reglamento General de protección de datos (RGPD) de la Unión Europea. Esta solución se centra en las características de cumplimiento y protección de la información de Microsoft, la puntuación de cumplimiento de Microsoft y las herramientas de evaluación para ayudarle a conocer sus datos. 
- 
-También se proporciona información adicional sobre el uso de controles de identidad de Microsoft, dispositivos y protección contra amenazas para las necesidades de privacidad de datos, así como para las herramientas de detección y respuesta de incidentes de datos. 
+Su organización puede estar sujeta a regulaciones de privacidad de datos regionales que le obligan a proteger, administrar y proporcionar derechos y control sobre la información personal almacenada en su infraestructura de ti, incluidos tanto local como en la nube. El mejor ejemplo de una regla de privacidad de datos es el Reglamento General de protección de datos (RGPD) de la Unión Europea. El incumplimiento de las regulaciones de privacidad de datos puede dar lugar a multas importantes.
 
-## <a name="organization-of-this-guidance-material"></a>Organización de este material de orientación
+Algunos ejemplos de los tipos de datos de Microsoft 365 son las sesiones de chat en Microsoft Teams, los correos electrónicos en Exchange y los archivos en SharePoint y OneDrive. Esta solución proporciona instrucciones sobre cómo identificar, localizar, proteger, controlar y responder a incidentes de privacidad de datos para los datos personales almacenados en los servicios de Microsoft 365 que están sujetos a las regulaciones de privacidad de datos.
+
+![Implementación de protección de la información para las normativas de privacidad de los datos](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+También se proporciona información adicional sobre el uso de los controles de identidad, dispositivo y protección contra amenazas de Microsoft 365 para sus necesidades de privacidad de datos. 
+
+Para cumplir con los criterios de protección de la información para el cumplimiento de las normas de privacidad de datos, use estas funciones y características de Microsoft 365.
+
+| Funcionalidad o característica | Description | Licencias |
+|:-------|:-----|:-------|
+| Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. | Microsoft 365 E3 y E5 |
+| Puntuación de cumplimiento (versión preliminar) | Vea una puntuación general de su configuración de cumplimiento actual y recomendaciones para mejorarla en el centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 y E5 |
+| Protección contra amenazas avanzada de Office (ATP) | Proteja sus aplicaciones y datos de Microsoft 365 (por ejemplo, mensajes de correo electrónico, documentos de Office y herramientas de colaboración) de ataques. | Microsoft 365 E3 y E5 | 
+| Etiquetas de confidencialidad | Clasifique y proteja los datos de su organización sin obstaculizar la productividad de los usuarios y su capacidad de colaborar colocando etiquetas con varios niveles de protección en el correo electrónico, los archivos o los sitios. | Microsoft 365 E3 y E5 |
+| Protección contra la pérdida de datos (DLP) | Detecte, avise y bloquee un uso compartido peligroso, involuntario o inadecuado, como el uso compartido de datos que contienen información personal, tanto de forma interna como externa. | Microsoft 365 E3 y E5 | 
+| Etiquetas y directivas de retención de datos | Implementar controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos del almacenamiento de datos personales en los clientes, para cumplir con las directivas de la organización o las regulaciones de datos. | Microsoft 365 E3 y E5 |
+| Cifrado de correo electrónico | Envíe y reciba mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de su organización que contengan datos regulados, como datos personales en los clientes. | Microsoft 365 E3 y E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>Organización de las instrucciones de esta solución
 
 Para ayudarle a comprender las herramientas de Microsoft 365 disponibles para identificar, administrar, controlar y supervisar los datos personales sujetos a una o más regulaciones relacionadas con la privacidad, esta guía se organiza en secciones.
  

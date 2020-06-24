@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d99a2f9a840c3410ad63cb2fb49b64e208e01bb8
+ms.sourcegitcommit: a4a01a0d7600972a41ee6bfac0df282f2ccc9bd8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208392"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44859040"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 
@@ -127,11 +127,11 @@ Puede elegir entre las siguientes plantillas de directiva en el centro de cumpli
 - **Cumplimiento de normativas**: Use esta plantilla para crear una directiva para analizar las comunicaciones en busca de referencias a términos financieros estándar asociados con los estándares normativos.
 - **Directiva personalizada**: Use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se debe supervisar y revisar en la organización.
 
-### <a name="investigate"></a>Averiguar
+### <a name="investigate"></a>Investigar
 
 En este paso, se analizan más detalladamente los problemas detectados como coincidencia con las directivas de cumplimiento de comunicaciones. Este paso incluye las siguientes acciones disponibles en el centro de cumplimiento de Microsoft 365:
 
-- **Alertas**: cuando un mensaje coincide con una condición de Directiva, se genera automáticamente una alerta. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y, si se asigna un caso y su estado. Las nuevas alertas se muestran en la Página principal de cumplimiento de comunicaciones y en la página **alertas** y aparecen en orden de gravedad.
+- **Alertas**: cuando un mensaje coincide con una condición de Directiva, se genera automáticamente una alerta. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y, si se ha asignado un caso de eDiscovery avanzado y su estado. Las nuevas alertas se muestran en la Página principal de cumplimiento de comunicaciones y en la página **alertas** y aparecen en orden de gravedad.
 - **Administración de problemas**: para cada alerta, puede emprender acciones de investigación para ayudar a corregir el problema detectado en el mensaje.
 - **Revisión del documento**: durante la investigación de un problema, puede usar varias vistas del mensaje para evaluar correctamente el problema detectado. Las vistas incluyen una vista de Resumen de conversación, de sólo texto, anotada y detallada de la conversación de comunicación.
 - **Revisión del historial de actividad**de los usuarios: ver el historial de las actividades de los mensajes de usuario y las acciones de corrección, como las notificaciones y las escalaciones pasadas, para las coincidencias de directivas.
@@ -146,7 +146,7 @@ El siguiente paso consiste en corregir los problemas de cumplimiento de comunica
 - **Notificar al usuario**: a menudo, los usuarios infringen accidental o involuntariamente una directiva de cumplimiento de la comunicación. Puede usar la función Notify para proporcionar un aviso de advertencia al usuario y para resolver el problema.
 - **Remitir a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para ayudar a resolver el incidente. Puede remitir fácilmente los problemas de los mensajes a los revisores de otras áreas de la organización como parte del proceso de resolución.
 - **Marcar como falso positivo**: los mensajes que se detectan incorrectamente como coincidencias de las directivas de cumplimiento se aplicarán en ocasiones al proceso de revisión. Puede marcar estos tipos de alertas como falsos positivos y resolver el problema automáticamente.
-- **Crear un caso**: en las situaciones más graves, es posible que necesite compartir la información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de la comunicación se integra estrechamente con otras características de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
+- **Escalar para la investigación**: en las situaciones más graves, es posible que necesite compartir la información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de la comunicación se integra estrechamente con otras características de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro. Escalar un caso para la investigación le permite transferir datos y administrar el caso a la exhibición avanzada de documentos electrónicos en Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos avanzados de eDiscovery, vea [información general sobre EDiscovery avanzado en Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Supervisar
 

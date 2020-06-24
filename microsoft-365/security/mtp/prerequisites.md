@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773856"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844911"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Requisitos previos de la Protección contra amenazas de Microsoft
 
@@ -60,7 +60,7 @@ Vaya al centro de administración de 365 de Microsoft ([admin.Microsoft.com](htt
 > Debe tener asignado el rol de **Administrador de facturación** o de **lector global** [en Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
 
 ## <a name="required-permissions"></a>Permisos necesarios
-Para obtener la lista de funciones requeridas y cómo se regula el acceso a los datos, consulte Acerca de la [Administración del acceso a la protección contra amenazas de Microsoft](mtp-permissions.md).
+Debe ser **administrador global** o **Administrador de seguridad** en Azure Active Directory para activar la protección contra amenazas de Microsoft. Para obtener la lista de funciones necesarias para usar la protección contra amenazas de Microsoft y obtener información sobre cómo se regula el acceso a los datos, Lea acerca de la [Administración del acceso a la protección contra amenazas de Microsoft](mtp-permissions.md).
 
 ## <a name="browser-requirements"></a>Requisitos de los exploradores
 Acceda a Microsoft Threat Protection en el centro de seguridad de Microsoft 365 con Microsoft Edge, Internet Explorer 11 o cualquier explorador Web compatible con HTML 5.

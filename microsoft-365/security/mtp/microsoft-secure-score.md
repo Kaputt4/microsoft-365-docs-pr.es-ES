@@ -1,5 +1,5 @@
 ---
-title: Puntuación segura de Microsoft (iteración previa)
+title: Puntuación de seguridad de Microsoft
 description: Describe la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, cómo mejorar su postura de seguridad y qué administradores de seguridad pueden esperar.
 keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
 ms.prod: microsoft-365-enterprise
@@ -20,23 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818572"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844629"
 ---
-# <a name="microsoft-secure-score-previous-iteration"></a>Puntuación segura de Microsoft (iteración previa)
+# <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
->[!IMPORTANT]
->Esta iteración de la puntuación segura de Microsoft se reemplaza por nuevos elementos de diseño y características en los próximos meses. Si aún no ve la iteración más reciente, pronto lo hará.
->
->Si ve una **métrica &** la pestaña tendencias junto a historial, está en la nueva iteración. [Ir a la puntuación segura de Microsoft (nueva)](microsoft-secure-score-new.md)
+La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
-La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Seguir las recomendaciones de puntuación de seguridad puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
+Seguir las recomendaciones de puntuación segura puede proteger a su organización de las amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 
-La puntuación segura ayuda a las organizaciones a:
+La puntuación segura ayuda a las organizaciones a:  
 
 * Informe sobre el estado actual de la postura de seguridad de la organización.
 * Mejorar su postura de seguridad proporcionando detección, visibilidad, orientación y control.  
@@ -44,11 +41,9 @@ La puntuación segura ayuda a las organizaciones a:
 
 Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y tendencias, la integración con otros productos de Microsoft, la puntuación con organizaciones similares y mucho más. La puntuación también puede reflejar Cuándo las soluciones de terceros han tratado las acciones recomendadas.
 
-Además, puede obtener acceso a sus recomendaciones y puntuaciones a través de la [API de Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Obtenga información sobre el [tipo de recurso de puntuación segura](https://go.microsoft.com/fwlink/?linkid=2092996).
+## <a name="how-it-works"></a>Cómo funciona
 
-## <a name="how-your-secure-score-is-calculated"></a>Cómo se calcula la puntuación segura
-
-Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios.
+Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad o resolver la acción de mejora con una aplicación o software de terceros, o una mitigación alternativa. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios. Si no puede o no desea activar una de las acciones de mejora, puede optar por aceptar el riesgo o el riesgo restante.
 
 Le mostramos el conjunto completo de posibles mejoras, independientemente de la licencia, para que pueda comprender los procedimientos recomendados de seguridad y mejorar su puntuación. La postura absoluta de seguridad se representa mediante calificación segura, que permanece igual independientemente de las licencias de producto que posea la organización. Tenga en cuenta que la seguridad debe sopesarse con facilidad de uso y no todas las recomendaciones pueden funcionar en su entorno.
 
@@ -56,11 +51,11 @@ La puntuación se actualiza en tiempo real para reflejar la información que se 
 
 ### <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
-La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 30 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene 5 de 100 usuarios totales protegidos, se le asignará una puntuación parcial de unos 2 puntos (5 protegidos/100 en total * 30 máx PTS = puntuación parcial de 2 PTO).
+Cada acción de mejora merece 10 puntos o menos. La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 10 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene un 50 de 100 total de usuarios protegidos, se le asignará una puntuación parcial de 5 puntos (50 protegido/100 total * 10 máx PTS = 5 PTS de puntuación parcial).
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure AD, ATP de Microsoft, ATP de Azure y seguridad de aplicaciones en la nube. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero.
+Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure AD, ATP de Microsoft, ATP de Azure y seguridad de aplicaciones en la nube. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
@@ -74,6 +69,7 @@ Con acceso de lectura y escritura, puede realizar cambios e interactuar directam
 * Administrador de seguridad
 * Administrador de Exchange
 * Administrador de SharePoint
+* Administrador de la cuenta
 
 ### <a name="read-only-roles"></a>Solo lectura roles
 
@@ -86,169 +82,116 @@ Con acceso de solo lectura, no es posible editar el estado ni las notas para una
 * Operador de seguridad
 * Lector global
 
-### <a name="graph-api"></a>API de Graph
-
-Para obtener acceso a la API de Graph, debe tener uno de los siguientes ámbitos además de un rol:
-
-* Ámbito securityevents. Read. All (para rol de solo lectura)
-* Ámbito securityevents. ReadWrite. All (para funciones de lectura y escritura)
-
 ## <a name="gain-visibility-into-your-security-posture"></a>Obtener visibilidad de la postura de seguridad
 
 Para ayudarle a la información que necesita con mayor rapidez, las acciones de mejora de Microsoft se organizan en grupos:
 
 * Identity (cuentas de Azure AD & roles)
 * Datos (Microsoft Information Protection)
-* Dispositivo (no hay acciones de mejora por ahora)
+* Dispositivo (ATP de Microsoft defender, conocido como [puntuación de configuración](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
 * Aplicación (aplicaciones de correo electrónico y nube, incluidos Office 365 y Microsoft Cloud App Security)
 * Infraestructura (no hay acciones de mejora por ahora)
 
+>[!NOTE]
+>En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado que ha hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de la identidad y la API de Graph. [Ver detalles](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
-![Página Web de puntuación segura ](../../media/secure-score/homepage-original.png)
- *figura 1: Página de introducción a la calificación segura de Microsoft*
+![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar su puntuación
 
-La ficha acciones de mejora enumera las recomendaciones de seguridad que se redirigen a posibles superficies de ataque, junto con su estado (completado, no completado, resuelto a través de terceros y omitidos). Puede buscar, filtrar y agrupar todas las acciones de mejora.
+La ficha **acciones de mejora** enumera las recomendaciones de seguridad que se redirigen a posibles superficies de ataque, junto con su estado (para dirigir, planear, aceptar el riesgo, resolver a través de terceros, resuelto a través de mitigación alternativa y completada). Puede buscar, filtrar y agrupar todas las acciones de mejora.  
 
 ### <a name="ranking"></a>Porcentaje
 
 La clasificación se basa en el número de puntos restantes que quedan para lograr, la dificultad de implementación, el impacto del usuario y la complejidad. Las acciones de mejora con mayor jerarquía tienen un gran número de puntos que quedan con problemas, impacto en el usuario y complejidad.
 
-### <a name="actions"></a>Acciones
+### <a name="view-improvement-action-details"></a>Ver detalles de la acción de mejora
 
-Cuando se selecciona una acción de mejora específica, aparece una volar hacia fuera. Para completar la acción, tiene algunas opciones:
+Al seleccionar una acción de mejora específica, aparece un elemento flotante de página completa.  
 
-1. Seleccione **Ver configuración** para ir a la pantalla de configuración y realizar el cambio. A continuación, puede obtener los puntos que merece la acción, visible en la parte superior de la volando. Los puntos pueden tardar hasta 24 horas en actualizarse.
+![Ejemplo de control flotante de acción de mejora ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *figura 2: ejemplo de control flotante de acción de mejora*
 
-2. Seleccione **resolver a través de terceros** porque la acción de mejora ya ha sido tratada por una aplicación o software de terceros. Usted obtiene los puntos que merece la acción, de modo que la puntuación segura refleje mejor su postura de seguridad general. Si un tercero ya no cubre el control, puede marcar la acción de mejora como no completada. Tenga en cuenta que Microsoft no tiene ninguna visibilidad sobre si se han cumplido los requisitos de puntuación si la acción de mejora se ha marcado como resuelta a través de terceros.
+Para completar la acción, tiene algunas opciones:
 
-3. Seleccione **omitir** porque decidió aceptar el riesgo y no pasar la acción de mejora. Una vez que ignore una acción de mejora, se reducirá el número total de puntos de calificación seguros que puede lograr. Puede ver esta acción en el historial o deshacerla en cualquier momento.
+* Seleccione **administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrá los puntos que merece la acción, visible en el vuelo hacia fuera. Generalmente, los puntos tardan unas 24 horas en actualizarse.
 
-![Ejemplo de acción de mejora de puntuación segura](../../media/secure-score/secure-score1x450.png)
+* Seleccione **compartir** para copiar el vínculo directo a la acción de mejora o elija la plataforma para compartir el vínculo, por ejemplo, correo electrónico, Microsoft Teams, Microsoft Planner o ServiceNow. La selección de ServiceNow le permitirá crear un vale de cambio que será visible en ServiceNow y en la Página principal del centro de seguridad de Microsoft 365. Para obtener más información, consulte [Microsoft 365 Security Center and ServiceNow Integration](tickets.md).
 
-*Figuras 2: flotante de acción de mejora*
+### <a name="choose-an-improvement-action-status"></a>Elegir un estado de acción de mejora
 
-## <a name="monitor-improvements-over-time"></a>Supervisar las mejoras a lo largo del tiempo
+Elija los Estados y anote las notas específicas para la acción de mejora. Los statues que puede seleccionar son los siguientes:
+
+* **Para solucionarlo** , debe reconocer que la acción de mejora es necesaria y planificar para solucionarla en algún momento posterior. Este estado también se aplica a las acciones que se detectan como parcialmente, pero que no se completan completamente.
+* **Planificado** : hay planes concretos en su ubicación para completar la acción de mejora.
+* **Riesgo aceptado** : la seguridad siempre debe sopesarse con la facilidad de uso y no todas las recomendaciones funcionarán para su entorno. En ese caso, puede optar por aceptar el riesgo, o el riesgo restante, y no activar la acción de mejora. No se le proporcionarán puntos, pero la acción ya no será visible en la lista de acciones de mejora. Puede ver esta acción en el historial o deshacerla en cualquier momento.
+* **Resuelto a través de terceros** y **resuelto a través de mitigación alternativa** : la acción de mejora ya se ha tratado con una aplicación o un software de terceros o con una herramienta interna. Obtendrá los puntos que merece la acción, de modo que su puntuación refleje mejor su postura de seguridad general. Si un tercero o una herramienta interna ya no cubre el control, puede elegir otro Estado. Tenga en cuenta que Microsoft no tendrá visibilidad sobre la integridad de la implementación si la acción de mejora se marca como cualquiera de estos Estados.
+
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Acciones de mejora de la administración de amenazas & vulnerabilidad
+
+Para las acciones de mejora en la categoría "dispositivo", no podrá elegir los Estados. En su lugar, se le dirigirá a la [recomendación de seguridad asociada & Vulnerability Management (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) en el [centro de seguridad de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y justifique que escriba será específica de ese portal y no estará presente en el portal de calificación segura de Microsoft.
+
+#### <a name="completed-improvement-actions"></a>Acciones de mejora completadas
+
+Las acciones de mejora tienen el estado "completado" una vez que se han logrado todos los puntos posibles para la acción de mejora. Las acciones de mejora completadas se confirman a través de datos de Microsoft y no podrá cambiar el estado.
+
+### <a name="assess-information-and-review-user-impact"></a>Evaluar la información y revisar el impacto del usuario
+
+La sección **de un vistazo** le dirá la categoría, los ataques que puede proteger y el producto.
+
+El **impacto del usuario** muestra lo que los usuarios experimentarán si se le aplica la acción de mejora y **los usuarios afectados** muestran quién la experimentará.
+
+### <a name="implement-the-improvement-action"></a>Implementar la acción de mejora
+
+En la sección **implementación** se muestran los requisitos previos, paso a paso para completar la acción de mejora, el estado de implementación actual de la acción de mejora y cualquier otro vínculo más información.
+
+Requisitos previos será cualquier licencia que deba obtenerse o acciones que deban realizarse antes de que se solucione la acción de mejora. Asegúrese de que tiene suficientes plazas en la licencia para completar la acción de mejora y de que esas licencias se aplican a los usuarios necesarios.  
+
+## <a name="track-your-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación y cumplir los objetivos
 
 Puede ver un gráfico de la puntuación de su organización con el tiempo en la ficha **historial** . debajo del gráfico hay una lista de todas las acciones realizadas en el intervalo de tiempo seleccionado y sus atributos, como puntos y categoría resultantes. Puede personalizar un intervalo de fechas y filtrar por categoría.
 
+En la ficha **métricas & tendencias** , hay varios gráficos y gráficos para proporcionar más visibilidad sobre las tendencias y establecer los objetivos. Puede establecer el intervalo de fechas para toda la página de visualizaciones. Las visualizaciones incluyen:
+
+* **La zona de puntuación segura** , personalizada en función de los objetivos de la organización y las definiciones de los intervalos de puntuación buenos, correctos y no válidos.
+* **Tendencia de regresión** : escala de tiempo de puntos que se han regresivo debido a cambios en la configuración, el usuario o el dispositivo.  
+* **Tendencia de comparación** : cómo se compara la puntuación segura de la organización con las otras personas a lo largo del tiempo. Esta vista puede incluir líneas que representan la media de puntuación de organizaciones con recuento de asientos similar y una vista de comparación personalizada que puede establecer.
+* **Tendencia de aceptación de riesgos** : escala de tiempo de acciones mejoradas marcadas como "riesgo aceptado".
+* **Cambios de puntuación** : el número de puntos alcanzados, los puntos Recon regresión, junto con el cambio de puntuación subsiguiente, en el intervalo de fechas especificado.
+
 ## <a name="risk-awareness"></a>Conocimiento de riesgos
 
-La puntuación segura de Microsoft es un resumen numérico de la postura de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad; no es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft, lo que puede ayudar a compensar el riesgo de infracciones. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
+La puntuación segura de Microsoft es un resumen numérico de su postura de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad; no es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft, lo que puede ayudar a compensar el riesgo de infracciones. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
 
-## <a name="whats-new"></a>Novedades
+## <a name="whats-new"></a>Novedades 
 
-Para hacer que Microsoft califique de forma segura sea un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md)
+Para convertir la puntuación segura de Microsoft en un mejor representante de su postura de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿qué viene con la puntuación segura de Microsoft?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-21st-2020"></a>21 de abril de 2020
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilidad con la puntuación segura de la identidad y la API de Graph
 
-#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Eliminación de acciones de mejora que no cumplen con las expectativas para una medición fiable o que no proporcionan una representación útil de la postura de seguridad
+En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado. Estos cambios permiten una vista más flexible y precisa de la postura de seguridad. Sin embargo, estas actualizaciones han hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de identidad y la API de Graph.
 
-Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
+En el tiempo, la calificación de identidad segura y la API de Graph adoptarán el nuevo modelo de calificación. Hasta entonces, los clientes verán las diferencias en los resultados indicados por la puntuación segura de Microsoft, la puntuación segura de identidad y la API de Graph. Lamentamos las molestias y los motivos para garantizar que estas experiencias sean más compatibles en el futuro.
 
-- Aplicar protecciones de IRM a los documentos
-- Aplicar directivas de prevención de pérdida de datos
+### <a name="updated-improvement-actions"></a>Acciones de mejora actualizadas
 
-### <a name="january---march-2020"></a>Enero a 2020 de marzo
+- Se agregaron acciones de mejora de Azure Active Directory
+- Se agregaron acciones de mejora de protección contra amenazas avanzada de Azure
+- Compatibilidad con las recomendaciones de seguridad de la [vulnerabilidad ATP & vulnerabilidad](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) de Microsoft defender
+    - Todas las recomendaciones de seguridad emitidas suministradas por TVM ya están disponibles
 
-#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Compatibilidad con los valores predeterminados de seguridad para acciones de mejora de Azure AD
-
-La calificación segura de Microsoft actualizará las acciones de mejora para admitir los [valores predeterminados de seguridad en Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), que facilitan la protección de la organización con opciones de seguridad preconfiguradas para ataques comunes.
-
-Afectará a las siguientes acciones de mejora:
-
-- Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
-- Requerir MFA para roles administrativos
-- Habilitar la Directiva para bloquear la autenticación heredada
-
-#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Se quitaron las acciones de mejora que no cumplen las expectativas para una medición fiable o no proporcionan una representación útil de la postura de seguridad
-
-Para asegurarse de que la puntuación segura de Microsoft es significativa y que cada acción de mejora es medible y confiable, se quitan las siguientes acciones de mejora.
-
-- Almacenar documentos de usuario en OneDrive para la empresa
-- Configurar las directivas de datos adjuntos seguros de Office 365 ATP
-- Configurar vínculos seguros de Office 365 para comprobar direcciones URL
-- No permitir la delegación de buzones
-- Permitir vínculos de uso compartido de invitados anónimos para sitios y documentos
-- Activar la consola de Cloud App Security
-- Configurar el tiempo de expiración de los vínculos de uso compartido externo
-- Activar la grabación de datos de auditoría
-- Descubra aplicaciones de TI de instantáneas arriesgadas y no compatibles
-- Revisión de permisos & bloquear aplicaciones de OAuth arriesgadas conectadas a su entorno
-- Configurar el control de versiones en las bibliotecas de documentos de SharePoint Online
-- Eliminar o bloquear cuentas no usadas en los últimos 30 días
-- Designar menos de 5 administradores globales
-
-#### <a name="removed-not-scored-improvement-actions"></a>Acciones de mejora "sin puntuar" quitadas
-
-Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. La puntuación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Las acciones de mejora no puntuadas no se pueden medir.  
-
-Por estos motivos, se han eliminado todas las acciones de mejora que no se han puntuado. No es necesario realizar ninguna acción en su parte.
-
-#### <a name="removed-device-improvement-actions"></a>Acciones de mejora de dispositivo quitadas
-
-Después de una evaluación de las acciones de mejora de la categoría del dispositivo de puntuación segura de Microsoft, se determinó que esas acciones evalúan actualmente el estado de la Directiva y no el estado de configuración de los dispositivos. Dado que la configuración está directamente ligada a la postura de seguridad, las acciones de dispositivo existentes se determinaron para no representar completamente la postura organizativa.  Se quitarán las acciones actuales de la categoría de dispositivos mientras trabajamos para proporcionar un conjunto de recomendaciones que usen directamente datos de diagnóstico para representar de forma más completa la seguridad del dispositivo.
-
-Se han quitado las siguientes acciones de mejora:
-
-- Habilitar la administración de dispositivos móviles de Microsoft Intune
-- Crear una directiva de cumplimiento de Microsoft Intune para Android
-- Crear una directiva de cumplimiento de Microsoft Intune para Android para trabajar
-- Crear una directiva de protección de aplicaciones de Microsoft Intune para Android
-- Crear una directiva de protección de aplicaciones de Microsoft Intune para iOS
-- Marcar dispositivos sin directiva de cumplimiento de Microsoft Intune asignada como no compatible
-- Crear una directiva de cumplimiento de Microsoft Intune para iOS
-- Crear una directiva de cumplimiento de Microsoft Intune para macOS
-- Crear una directiva de cumplimiento de Microsoft Intune para Windows
-- Crear un perfil de configuración de Microsoft Intune para Android
-- Crear un perfil de configuración de Microsoft Intune para Android para trabajar
-- Crear un perfil de configuración de Microsoft Intune para macOS
-- Crear un perfil de configuración de Microsoft Intune para iOS
-- Crear un perfil de configuración de Microsoft Intune para Windows
-- Habilitar la detección de jailbreak mejorada en Microsoft Intune
-- Requerir que todos los dispositivos sean revisados, tengan antivirus y firewalls habilitados
-- Habilitar la integración de ATP de Windows Defender en Microsoft Intune
-- Crear una directiva de Windows Information Protection para Microsoft Intune
-- Requerir que todos los dispositivos tengan configuraciones de seguridad avanzada
-- Revisar semanalmente el informe de dispositivos bloqueados
-
-#### <a name="mfa-improvement-action-updates"></a>Actualizaciones de acciones de mejora de MFA
-
-Para reflejar la necesidad de las empresas de garantizar la máxima seguridad al aplicar las directivas que funcionan con su negocio, la calificación segura de Microsoft ha quitado tres acciones de mejora centradas en la autenticación multifactor y ha agregado dos.
-
-Se quitaron las acciones de mejora:
-
-- Registrar todos los usuarios para la autenticación multifactor
-- Requerir MFA para todos los usuarios
-- Requerir MFA para los roles privilegiados de Azure AD
-
-Se agregaron acciones de mejora:
-
-- Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro
-- Requerir MFA para roles administrativos
-
- Estas nuevas acciones de mejora requieren el registro de los usuarios o administradores para la autenticación multifactor (MFA) en el directorio y el establecimiento del conjunto adecuado de directivas que se adapten a las necesidades de la organización. El objetivo principal es tener flexibilidad a la vez que se asegura de que todos los usuarios y administradores puedan autenticarse con varios factores o solicitudes de verificación de identidad basadas en riesgos. Esto puede tener la forma de tener varias directivas que apliquen decisiones en el ámbito o establecer los valores predeterminados de seguridad (desde el 16 de marzo) que permitan a Microsoft decidir cuándo debe desafiar a los usuarios para MFA.
-
-#### <a name="removed-review-improvement-actions"></a>Se quitaron las acciones de mejora de revisión
-
-Uno de los principios de la puntuación segura es que la puntuación debe estar estandarizada y ser fácil de relacionar con. Las acciones de mejora que no se pueden medir o realizar acciones han causado confusión. Una calificación segura de Microsoft solo tiene sentido cuando cada recomendación puede tener un efecto claro en la puntuación. Revisión las acciones de mejora no se miden en el mismo estándar que otras acciones de mejora.  
-
-Por estos motivos, todas las acciones de mejora que requerían una cadencia de revisión se han eliminado temporalmente. No es necesario realizar ninguna acción en su parte.
-
-### <a name="preview-features"></a>Versión preliminar de las características
-
-Las siguientes características se incluirán en la [versión preliminar](microsoft-secure-score-preview.md):
+### <a name="updated-interface-and-functionality"></a>Interfaz y funciones actualizadas
 
 * Todas las nuevas métricas y vistas de tendencias para CISO y discusiones de nivel de liderazgo
 * Nuevas formas de realizar un seguimiento y evaluar su puntuación
-* Mejor seguimiento y supervisión de regresiones de puntuación
+* Mejor seguimiento y comprensión de las regresiones de puntuación
 * Filtrar, etiquetar, buscar y agrupar las acciones de mejora
 * Administrar hacia sus metas futuras mediante proyecciones de puntuación y acciones planeadas
-* Simplificación del sistema de puntos
 * Y mucho más.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
 Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.
+
