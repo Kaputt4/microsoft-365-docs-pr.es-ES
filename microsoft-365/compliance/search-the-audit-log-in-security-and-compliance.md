@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
-ms.openlocfilehash: 7602042c0bd8fb46b497bdf0fc16bb6b02809074
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726533"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818990"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
-
-## <a name="introduction"></a>Introducción
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de [actividades administrativas y de usuario](#audited-activities) en Office 365:
 
@@ -65,7 +64,7 @@ ms.locfileid: "44726533"
 
 - Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="requirements-to-search-the-audit-log"></a>Requisitos para realizar búsquedas en el registro de auditoría
 
 Lea los elementos siguientes antes de iniciar la búsqueda en el registro de auditoría.
 
@@ -916,7 +915,7 @@ Vea la sección[Actividades auditadas](#audited-activities) de este artículo pa
 
 **¿Cuánto tiempo tarda un registro de auditoría en disponible después de que se produzca un evento?**
 
-Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Vea la tabla de la sección [Antes de empezar](#before-you-begin) de este artículo, donde se muestra el tiempo que tardan en estar disponibles los eventos de los diferentes servicios.
+Los datos más auditados están disponibles un máximo de 30 minutos pero puede tomar 24 horas después de que se produzca el evento para el registro de auditoría correspondiente para ser mostrado los resultados de búsqueda. Consulte la tabla de la sección [Requisitos para realizar búsquedas en el registro de auditoría](#requirements-to-search-the-audit-log) de este artículo, donde se muestra el tiempo que tardan en estar disponibles los eventos de los diferentes servicios.
 
 **¿Durante cuánto tiempo se conservan los registros de auditoría?**
 
@@ -932,7 +931,7 @@ No. Estas son las dos únicas formas de obtener datos del servicio de auditoria.
 
 **¿Necesito habilitar individualmente la auditoría en cada servicio en el que deseo capturar registros de auditoría?**
 
-En la mayoría de los servicios, la auditoría se habilita de forma predeterminada tras activar inicialmente la auditoría de la organización (como se describe en la sección [Antes de empezar](#before-you-begin) de este artículo).
+En la mayoría de los servicios, la auditoría se habilita de forma predeterminada tras activarla inicialmente para la organización (como se describe en la sección [Requisitos para realizar búsquedas en el registro de auditoría](#requirements-to-search-the-audit-log) de este artículo).
 
 **¿El servicio de auditoría admite la con la desduplicación de registros?**
 
