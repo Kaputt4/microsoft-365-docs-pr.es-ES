@@ -18,13 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención de mensajes, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom: seo-marvel-apr2020
+description: Obtenga información sobre cómo usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención, eDiscovery y conservación de mensajes de su organización.
+ms.openlocfilehash: d3f8cc292419cce258b750b77c1f1802accd5f21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166021"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817849"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
   
@@ -33,7 +34,7 @@ El archivado en Office 365 (también denominado archivado local) proporciona a l
 > [!NOTE]
 > La característica de archivado de ampliación automática en Office 365 ofrece almacenamiento adicional en buzones de archivo. Cuando se activa el archivado de ampliación automática y, a continuación, se alcanzado la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Office 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, vea [Información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md). 
   
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
 Debe tener asignado el rol de Destinatarios de correo de Exchange Online para habilitar o deshabilitar los buzones de archivo. De manera predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en la página **Permisos** del centro de administración de Exchange. Si no ve la página **Archivo** en el Centro de seguridad y cumplimiento, pida al administrador que le asigne los permisos necesarios. 
   
@@ -45,7 +46,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     
 3. En el panel izquierdo del centro de cumplimiento de & de seguridad, haga clic en **control de la información** \> **archivo**.
     
-    Aparece la página **Archivo**. La columna **Buzón de correo de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. En la lista de buzones de correo, seleccione el usuario para el que desea habilitar el buzón de correo.
     
@@ -60,7 +61,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
     Puede tardar unos momentos para crear el buzón de archivo. Una vez creado, aparece **Buzón de archivo: habilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
     
 > [!TIP]
-> También puede habilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo deshabilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Habilitar** en el panel de detalles. 
+> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
   
 ## <a name="disable-an-archive-mailbox"></a>Deshabilitar un buzón de archivo
   
@@ -76,7 +77,7 @@ Para deshabilitar un buzón de archivo:
     
 3. En el panel izquierdo del centro de cumplimiento de & de seguridad, haga clic en **control de la información** \> **archivo**.
     
-    Aparece la página **Archivo**. La columna **Buzón de correo de archivo** indica si un buzón de archivo está habilitado o deshabilitado para cada usuario. 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. En la lista de buzones, seleccione el usuario para el que desea deshabilitar el buzón de archivo.
     
@@ -89,7 +90,7 @@ Para deshabilitar un buzón de archivo:
     El buzón de archivo puede tardar un poco en deshabilitarse. Una vez deshabilitado, aparece **Buzón de archivo: deshabilitado** en el panel de detalles del usuario seleccionado. Es posible que deba hacer clic en **Actualizar** ![Icono de actualizar](../media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
     
 > [!TIP]
-> También puede deshabilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo habilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Deshabilitar** en el panel de detalles. 
+> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Usar PowerShell de Exchange Online para habilitar o deshabilitar buzones de archivo.
 

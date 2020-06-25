@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
-ms.openlocfilehash: 330195cd9362722fccd5a8f7445abaee8a725857
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678754"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819070"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -46,7 +47,7 @@ Estas son las instrucciones paso a paso necesarias para usar la carga en la red 
 
 Tenga en cuenta que debe llevar a cabo el paso 1 solo una vez para importar los archivos PST a los buzones de Microsoft 365. Después de realizar estos pasos, siga los pasos comprendidos entre el 2 y el 6 cada vez que quiera cargar e importar un lote de archivos PST.
 
-## <a name="before-you-begin"></a>Antes de empezar
+## <a name="before-you-import-pst-files"></a>Antes de importar archivos PST
   
 - Debe tener asignado el rol importación y exportación de buzón de Exchange Online para importar archivos PST a los buzones de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. También puede crear un grupo de roles, asignarle el rol Mailbox Import Export y agregarse a sí mismo como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
@@ -149,7 +150,7 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se cargarán en Office 365.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |Especifica la URL de SAS que ha obtenido en el paso 1.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").<br/><br/>**Nota:** si usa la dirección URL de SAS en un archivo de proceso por lotes o un script, tiene que tener cuidado con determinados caracteres que necesitan escapar.  Por ejemplo, tiene que cambiar `%` a `%%` y cambiar `&` a `^&`.<br/><br/>**Sugerencia:** (opcional) puede especificar una subcarpeta en la ubicación de Azure Storage en la que cargar los archivos PST. Para ello, agregue una ubicación de subcarpeta (después de "ingestiondata") en la dirección URL de SAS. En el primer ejemplo no se especifica una subcarpeta. Esto significa que los PST se cargan en la raíz (denominada *ingestiondata*) de la ubicación de Azure Storage. El segundo ejemplo carga los archivos PST en una subcarpeta (denominada *PSTFiles*) en la raíz de la ubicación de Azure Storage.  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> O bien:  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/V:` <br/> |Resulta en mensajes de estado detallados en un archivo de registro. De forma predeterminada, el archivo de registro detallado se denomina AzCopyVerbose.log en %LocalAppData%\Microsoft\Azure\AzCopy. Si especifica una ubicación de archivo existente para esta opción, el registro detallado se anexará a ese archivo.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
+    | `/V:` <br/> |Outputs verbose status messages into a log file. By default, the verbose log file is named AzCopyVerbose.log in %LocalAppData%\Microsoft\Azure\AzCopy. If you specify an existing file location for this option, the verbose log will be appended to that file.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |Este modificador opcional especifica el modo recursivo para que la herramienta AzCopy copie los archivos PST que se encuentran en las subcarpetas del directorio de origen especificado por el parámetro `/Source:`.  <br/> **Nota:** si incluye este modificador, los archivos PST de las subcarpetas tendrán un nombre de ruta de archivo diferente en la ubicación de Azure Storage una vez cargados. Tendrá que especificar el nombre exacto de la ruta de acceso de archivo en el archivo CSV que cree en el paso 4.  <br/> | `/S` <br/> |
     | `/Y` <br/> |Este modificador necesario permite el uso de tokens de SAS de solo escritura al cargar los archivos PST en la ubicación de Azure Storage. La URL de SAS que ha obtenido en el paso 1 (y especificado en el parámetro `/Dest:`) es una dirección URL de solo escritura de SAS, por lo que debe incluir este modificador. Una dirección URL de SAS de solo escritura no le impedirá usar el Explorador de Azure Storage para ver una lista de los archivos PST cargados en la ubicación de Azure Storage.  <br/> | `/Y` <br/> |
 
@@ -159,7 +160,7 @@ A continuación se muestra un ejemplo de la sintaxis de la herramienta AzCopy.ex
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ```
 
-Después de ejecutar el comando, aparecen mensajes de estado en los que se muestra el progreso de la carga de los archivos PST. En un mensaje de estado final aparece el número total de archivos cargados correctamente.
+After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
 
 > [!TIP]
 > Después de ejecutar correctamente el comando AzCopy.exe y de comprobar que todos los parámetros son correctos, guarde una copia de la sintaxis de la línea de comandos en el mismo archivo (protegido) en el que ha copiado la información obtenida en el paso 1. Luego, puede copiar y pegar este comando en un símbolo del sistema cada vez que quiera ejecutar la herramienta AzCopy.exe para cargar los archivos PST a Office 365. Los únicos valores que puede que deba cambiar son los del parámetro `/Source:`. Esto depende del directorio de origen en el que están los archivos PST.
@@ -205,7 +206,7 @@ Después de cargar los archivos PST en la ubicación de Azure Storage de su orga
   
 1. [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
 
-2. Abra o guarde el archivo CSV en el equipo local. En el ejemplo siguiente se muestra un archivo de asignación de importaciones de archivos PST completado (que se abre en el Bloc de notas). Es mucho más fácil usar Microsoft Excel para editar el archivo CSV.
+2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl

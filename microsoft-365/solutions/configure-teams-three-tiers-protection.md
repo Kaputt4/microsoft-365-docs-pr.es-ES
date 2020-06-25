@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Recomendaciones de configuración para proteger archivos en Microsoft Teams.
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159436"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702517"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -50,7 +50,7 @@ Para más información sobre estos niveles y capacidades recomendadas para cada 
 
 En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas configuraciones como punto de partida y ajuste las configuraciones para satisfacer las necesidades de la organización. Es posible que no necesite todos los niveles.
 
-||**Línea base (pública)**|**Línea base (privada)**|**Confidencial**|**Altamente confidencial**|
+||Línea de base (pública)|Línea de base (privada)|Confidencial|Altamente confidencial|
 |:-----|:-----|:-----|:-----|:-----|
 |Equipo privado o público|Público|Private|Private|Private|
 |¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
@@ -58,7 +58,7 @@ En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas 
 |Acceso de invitado en el nivel de sitio|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|
 |Configuración de uso compartido del sitio |**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio.**<br>Solicitudes de acceso **desactivadas**.|
 |Acceso de un dispositivo no administrado a nivel de sitio|**Acceso total desde aplicaciones de escritorio, aplicaciones móviles y la web** (predeterminado).|**Acceso total desde aplicaciones de escritorio, aplicaciones móviles y la web** (predeterminado).|**Permitir el acceso limitado, solo a través de la web**.|**Bloquear acceso**.|
-|Tipo de vínculo de uso compartido predeterminado|**Solo personas de la organización**|**Solo personas de la organización**|**Usuarios específicos**|**Personas que tienen acceso ya existente**|
+|Tipo de vínculo para compartir predeterminado|**Solo personas de la organización**|**Solo personas de la organización**|**Usuarios específicos**|**Personas que tienen acceso ya existente**|
 |Etiquetas de confidencialidad|Ninguno|Ninguno|Etiqueta de confidencialidad usada para clasificar el equipo y controlar el uso compartido de invitado y el acceso de dispositivos no administrados.|Etiqueta de confidencialidad usada para clasificar el equipo y controlar el uso compartido de invitado y el acceso de dispositivos no administrados. La etiqueta también se puede usar en archivos para encriptar archivos.|
 
 Una variación de la opción altamente confidencial, [Equipos con aislamiento de seguridad](secure-teams-security-isolation.md) usa una etiqueta de confidencialidad exclusiva para un equipo, lo que proporciona seguridad adicional. Puede usar esta etiqueta para cifrar archivos y solo podrán leerlos los miembros de ese equipo.
