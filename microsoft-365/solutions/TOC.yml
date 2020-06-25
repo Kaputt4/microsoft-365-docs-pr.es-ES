@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: Paso 2. Ofrecer acceso remoto
           href: empower-people-to-work-remotely-remote-access.md
-        - name: Paso 3. Implementar la administración de extremos
+        - name: Paso 3. Implementar la seguridad y el cumplimiento
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: Paso 4. Implementar la administración de extremos
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: Paso 4. Implementar servicios y aplicaciones de productividad
+        - name: Paso 5. Implementar servicios y aplicaciones de productividad
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Paso 5. Crear espacios de comunicación
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: Paso 6. Enseñar a los trabajadores remotos
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Configurar la colaboración moderna con Microsoft 365
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: Equipo aislado para un proyecto ultrasecreto
           href: contoso-team-for-top-secret-project.md
+        - name: Migración de voz de Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Guías del entorno de pruebas
       items:
         - name: Guías del entorno de pruebas para soluciones y escenarios
