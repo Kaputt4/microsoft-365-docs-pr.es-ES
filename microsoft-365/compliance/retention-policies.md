@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utilice una directiva de retención para decidir de forma proactiva si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan condiciones específicas.
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Obtenga información acerca de cómo usar una directiva de retención para retener o eliminar contenido, y cómo aplicar una única directiva a toda la organización o a ubicaciones o usuarios específicos.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695143"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818930"
 ---
 # <a name="learn-about-retention-policies"></a>Información sobre las directivas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Para la mayoría de las organizaciones, el volumen y la complejidad de los datos se incrementa diariamente: correo electrónico, documentos, mensajes instantáneos y mucho más. Administrar o gobernar esta información es importante, ya que necesita:
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Cumplir de forma proactiva con las normas del sector y las directivas internas** que le exigen retener contenido durante un período mínimo de tiempo. Por ejemplo, la ley Sarbanes-Oxley puede exigirle que retenga determinados tipos de contenido durante siete años. 
     
@@ -36,7 +37,7 @@ Para la mayoría de las organizaciones, el volumen y la complejidad de los datos
     
 - **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos. 
     
-Una directiva de retención puede ayudarle a lograr todos estos objetivos. Administrar el contenido suele requerir dos acciones:
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **Conservar** contenido para que no pueda eliminarse de forma permanente antes del fin del período de retención. 
     
@@ -50,7 +51,7 @@ Con una directiva de retención, puede:
     
 - Aplicar una directiva a todo el contenido o solo cuando cumpla condiciones específicas, como contener palabras clave o [tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
     
-Cuando el contenido está sujeto a una directiva de retención, los usuarios pueden seguir editando el contenido y trabajando con él como si no hubiera cambiado nada. El contenido se conserva en su lugar, en su ubicación original. Sin embargo, si alguien edita o elimina el contenido sujeto a la directiva de retención, se guarda una copia del contenido original en una ubicación segura, donde se conserva mientras la directiva de retención para ese contenido está vigente. Para más información, vea la sección [Cómo funciona una directiva de retención con el contenido local](#how-a-retention-policy-works-with-content-in-place) en esta página.
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 Además, algunas organizaciones deben cumplir con regulaciones como la Regla 17a-4 de la Comisión de Bolsa y Valores​​ de Estados Unidos (SEC). Este reglamento requiere que, después de que se active una directiva de retención, no se pueda desactivar o hacer menos restrictiva. Para cumplir este requisito, puede usar el **Bloqueo de conservación**. Después de que se haya bloqueado una directiva de retención, ninguna persona puede desactivarla ni hacerla menos restrictiva, ni siquiera un administrador. Para más información, vea la sección [Usar el bloqueo de conservación para cumplir con los requisitos reglamentarios](#use-preservation-lock-to-comply-with-regulatory-requirements) en esta página.
 

@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
-ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 8a7bb98432529bfca70764314d251810d3cdb2a4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588221"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819490"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
@@ -98,7 +98,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 - Si la identidad local se federa con Microsoft 365, debe cambiar la contraseña en el entorno local y, a continuación, debe notificar el peligro a su administrador.
 
 > [!TIP]
-> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Puede encontrar más información sobre MFA [aquí](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador.  Para obtener más información sobre MFA, vaya a [Configurar la autenticación multifactor](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 Eliminar direcciones de reenvío de correo electrónico sospechosas
 

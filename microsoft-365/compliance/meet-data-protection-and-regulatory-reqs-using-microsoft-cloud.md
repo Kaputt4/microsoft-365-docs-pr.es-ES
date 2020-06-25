@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
+description: Obtenga información acerca de cómo usar el Administrador de cumplimiento en el Portal de confianza del servicio de Microsoft para satisfacer los requisitos normativos y de protección de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165971"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815601"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
@@ -48,16 +48,16 @@ Para ver una breve demostración del Administrador de cumplimiento, vea el víde
 
     
 > [!IMPORTANT]
-> El Administrador de cumplimiento es un panel que proporciona un resumen de su nivel de cumplimiento y protección de datos, así como recomendaciones para mejorar el cumplimiento y la protección de datos. Las acciones de cliente proporcionadas en el Administrador de cumplimiento son recomendaciones; cada organización necesita evaluar la efectividad de estas recomendaciones en su respectivo entorno reglamentario antes de la implementación. Las recomendaciones que aparecen en el Administrador de cumplimiento no han que interpretarse como una garantía de cumplimiento.
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-El Administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujo de trabajo diseñada para ayudarle a administrar el cumplimiento reglamentario dentro del modelo de responsabilidad compartida de la nube. El Administrador de cumplimiento proporciona un panel con una vista de normas y reglamentos, así como evaluaciones que contienen detalles de la implementación de controles de Microsoft, resultados de pruebas, una guía para la implementación de controles de cliente y seguimiento que su organización puede usar. El Administrador de cumplimiento ofrece definiciones de controles de evaluación de certificaciones, una guía para la implementación y prueba de controles, puntuaciones de ponderación de riesgos de controles, administración de acceso basado en roles y flujo de trabajo de asignación de acciones de control integrado para realizar un seguimiento de la implementación de controles, el estado de las pruebas y la administración de evidencias. El Administrador de cumplimiento optimiza la carga de trabajo de cumplimiento, ya que permite a los clientes agrupar evaluaciones de forma lógica y aplicar pruebas de controles de evaluación en controles idénticos o relacionados, lo que reduce la duplicación del esfuerzo que, de otra forma, podría ser necesario para satisfacer requisitos de control idénticos en distintas certificaciones.
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>Evaluaciones en el Administrador de cumplimiento
 
-El componente principal del Administrador de cumplimiento se denomina una *evaluación*. Se trata de una evaluación de un servicio Microsoft en relación con una norma de certificación o un reglamento de protección de datos (como ISO 27001:2013 y el RGPD). Las evaluaciones le permiten conocer la posición ante el cumplimiento y la protección de datos de su organización en relación con la norma del sector seleccionada para el servicio en la nube de Microsoft correspondiente. Las evaluaciones se completan mediante la implementación de los controles que se asignan con la norma de certificación evaluada. 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 La estructura de una evaluación se basa en la responsabilidad compartida entre Microsoft y su organización para evaluar riesgos de seguridad y cumplimiento en la nube, así como para implementar las medidas de protección de datos especificadas por una norma de cumplimiento, una norma de protección de datos, un reglamento o una ley.
   
@@ -65,13 +65,13 @@ Una evaluación está formada por varios componentes:
   
 - **Servicios dentro del ámbito**: cada evaluación se aplica a un conjunto específico de servicios Microsoft, que se indican en la sección Servicios en la nube dentro del ámbito. 
     
-- **Controles administrados de Microsoft**: por cada servicio en la nube, Microsoft implementa y administra un conjunto de *controles* como parte del cumplimiento de Microsoft de varias normas y reglamentos. Estos controles se organizan en *familias de controles* que se alinean con la estructura de la certificación o reglamento que se corresponda con la evaluación. Para cada control administrado por Microsoft, el Administrador de cumplimiento proporciona detalles sobre cómo Microsoft implementó el control, además de información sobre cómo y cuándo un auditor externo independiente aprobó y validó esa implementación. 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     Este es un ejemplo de tres controles administrados por Microsoft en la familia de controles **Seguridad** de una evaluación de Office 365 y RGPD. 
 
     ![Detalles de controles administrados por Microsoft en el Administrador de cumplimiento](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. Especifica la siguiente información de la certificación o reglamento asignado al control administrado por Microsoft.
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **Id. de control**: el número de artículo o sección de la certificación o reglamento al que se asigna el control.
     
@@ -81,15 +81,15 @@ Una evaluación está formada por varios componentes:
     
   - **Descripción**: texto de la norma o reglamento que se asigna al control administrado por Microsoft seleccionado.
 
-  b. La puntuación de cumplimiento para el control, que indica el nivel de riesgo (debido al incumplimiento o error de control) asociado a cada control administrado por Microsoft. Para obtener más información, vea [Información sobre la puntuación de cumplimiento](#understanding-the-compliance-score). Tenga en cuenta que las puntuaciones de cumplimiento se califican de 1 a 10 y se codifican mediante colores. El color amarillo indica controles de riesgo bajo, el naranja indica controles de riesgo medio y el rojo indica controles de riesgo alto. 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. Información sobre el estado de la implementación de un control, la fecha en que se probó el control, quién realizó la prueba y el resultado de la prueba.
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. Por cada control, puede hacer clic en **Más** para ver información adicional, como detalles sobre la implementación de Microsoft del control y detalles sobre cómo un auditor externo independiente probó y validó el control. 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **Controles administrados por el cliente**: esta es la colección de controles administrados por su organización. Su organización es responsable de implementar estos controles como parte de su proceso de cumplimiento para una norma o reglamento específicos. Los controles administrados por el cliente también se organizan en familias de controles para la certificación o reglamento correspondientes. Use los controles administrados por el cliente para implementar las acciones recomendadas sugeridas por Microsoft como parte de sus actividades de cumplimiento. Su organización puede usar la guía prescriptiva y las acciones de cliente recomendadas en cada control administrado por el cliente para administrar el proceso de evaluación e implementación de dicho control.
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    Los controles administrados por el cliente en las evaluaciones también tienen integrada una función de administración de flujos de trabajo que puede usar para administrar y realizar un seguimiento del progreso de su organización en relación con la finalización de la evaluación. Por ejemplo, un responsable de cumplimiento normativo de su organización puede asignar una acción a un administrador de TI que tenga la responsabilidad y los permisos necesarios para realizar las acciones recomendadas para el control. Cuando se complete ese control, el administrador de TI puede cargar evidencias de sus tareas de implementación (por ejemplo, capturas de pantalla de configuración u opciones de directiva) y, después, volver a asignar la acción al responsable de cumplimiento normativo para que evalúe las evidencias recopiladas, pruebe la implementación del control y registre la fecha de implementación y los resultados de pruebas en el Administrador de cumplimiento. Para obtener más información, vea la sección [Administrar el proceso de evaluación en el artículo](#managing-the-assessment-process). 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>Permisos y control de acceso basado en roles
 
@@ -97,7 +97,7 @@ El administrador de cumplimiento utiliza un modelo de permisos de control de acc
   
 Tenga en cuenta que ya no hay un rol predeterminado **acceso de invitado** Se debe asignar un rol a cada usuario para que tenga acceso y trabaje en administrador de cumplimiento
   
-En la tabla siguiente, se describen los permisos del Administrador de cumplimiento y las acciones que permite realizar al usuario. En la tabla, también se indica el rol al que se asigna cada permiso.
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**Lector del Administrador de cumplimiento**|**Colaborador del Administrador de cumplimiento**|**Evaluador del Administrador de cumplimiento**|**Administrador del Administrador de cumplimiento**|**Administrador del portal**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ En la tabla siguiente, se describen los permisos del Administrador de cumplimien
 |**Editar datos**: los usuarios pueden editar todos los campos, excepto “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Editar resultados de pruebas**: los usuarios pueden editar los campos “Resultado de la prueba” y “Fecha de la prueba”.  <br/> ||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**Administrar evaluaciones**: los usuarios pueden crear, archivar y eliminar evaluaciones.  <br/> |||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Administrar usuarios**: los usuarios pueden agregar a otros usuarios de su organización a los roles Lector, Colaborador, Evaluador y Administrador. Solo los usuarios con el rol Administrador global de su organización pueden agregar o quitar usuarios del rol Administrador del portal.  <br/> ||||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Información sobre la puntuación de cumplimiento
 
@@ -125,17 +125,17 @@ Por ejemplo, el control de evaluación “Administración de acceso de usuario�
   
 ![Administrador de cumplimiento: Gravedad baja de control de evaluación (puntuación de 3)](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-El Administrador de cumplimiento asigna una clasificación de gravedad predeterminada a cada control. Las clasificaciones de riesgos se calculan basándose en los criterios siguientes:
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - Si un control evita que ocurran incidentes (clasificación más alta), detecta los incidentes que han ocurrido o soluciona el impacto de un incidente (clasificación más baja). En términos de clasificación de gravedad, a un control obligatorio que previene una amenaza se le asigna el mayor número de puntos; a los controles que son detectables o correctivos (independientemente de si son obligatorios o discrecionales) se les asigna el menor número de puntos.
     
 - Si un control (después de su implementación) es obligatorio y, por lo tanto, los usuarios no pueden omitirlo (por ejemplo, usuarios que tengan que restablecer la contraseña y que esta cumpla con requisitos de caracteres y longitud); o bien si un control es discrecional y los usuarios pueden omitirlo (por ejemplo, reglas empresariales que obligan a los usuarios a bloquear la pantalla cuando dejan el equipo sin supervisión).
     
-- Controles relacionados con riesgos de disponibilidad, integridad y confidencialidad de los datos, si estos riesgos provienen de amenazas internas o externas, y si la amenaza es malintencionada o accidental. Por ejemplo, los controles que impedirían que un atacante externo se introduzca en la red y obtenga acceso a información de identificación personal tendrían asignados más puntos que un control relacionado con impedir que un empleado configure por error un parámetro del enrutador de red que produzca una interrupción de la red.
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - Los riesgos relacionados con factores externos y jurídicos de cada control, como contratos, reglamentos y compromisos públicos.
     
-Los valores de puntuación de cumplimiento para el control se aplican *en su totalidad* en la puntuación de cumplimiento total basándose en una operación correcta o error (si el control se implementa y se completa correctamente la prueba de evaluación posterior o si no lo hace; no existe un crédito parcial para una implementación parcial). Solo se agregarán los puntos asignados a la puntuación de cumplimiento total cuando el **Estado de la implementación** del control se establezca en **Implementado** o **Implementación alternativa**, y el **Resultado de la prueba** se establezca en **Correcto**. 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 Lo más importante es que la puntuación de cumplimiento puede ayudarle a identificar los controles que tiene que implementar, porque le indica cuáles tienen un riesgo potencial más alto si se produce un error relacionado con el control. Además de la priorización basada en el riesgo, cuando los controles de la evaluación están relacionados con otros controles (ya sea dentro de la misma evaluación o en otra evaluación dentro de la misma agrupación de evaluaciones), si se completa con éxito un solo control, se puede conseguir una reducción significativa del esfuerzo basado en la sincronización de los resultados de las pruebas de control.
   
@@ -145,7 +145,7 @@ Por ejemplo, en la imagen siguiente, la evaluación “Office 365: RGPD” se co
   
 Dentro de la evaluación, el control de RGPD 7.5.5 está relacionado con otros 5 controles (7.4.1, 7.4.3, 7.4.4, 7.4.8 y 7.4.9) cada uno con una calificación de riesgo de gravedad moderada a alta de 6 o 8). Usando el filtro de evaluación, se han seleccionado todos estos controles, haciéndolos visibles en la vista de evaluación, y se puede ver a continuación que ninguno de ellos ha sido evaluado. 
   
-![Administrador de cumplimiento: Vista de evaluación (controles de filtro, ninguno evaluado)](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Como los seis controles están relacionados, al finalizar alguno de ellos, se sincronizarán esos resultados de pruebas en todos los controles relacionados de esta evaluación (así como en todos los controles relacionados en una evaluación que se encuentre en la misma agrupación de evaluaciones). Al finalizar la implementación y las pruebas del control 7.5.5 del RGPD, el área de detalle del control se actualiza para indicar que se evaluaron los seis controles, con un incremento correspondiente en el número de controles evaluados hasta 57 y el 51 % evaluados, y un cambio en la puntuación de cumplimiento total de +40. 
+![Administrador de cumplimiento: Vista de evaluación (controles de filtro, ninguno evaluado)](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![Vista de evaluación del Administrador de cumplimiento: Resultados del control sincronizados](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ Este cuadro de diálogo de confirmación de la actualización se mostrará si va
 ![Evaluación del Administrador de cumplimiento: Cuadro de diálogo de confirmación de actualización de controles relacionados](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> Actualmente, solo se incluye una puntuación de cumplimiento en las evaluaciones para los servicios en la nube de Office 365. En las evaluaciones para Azure y Dynamics, se muestra un estado de evaluación. 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>Metodología de puntuación de cumplimiento
 
 La puntuación de cumplimiento, al igual que Microsoft Secure Score, es similar a otros sistemas de puntuación basada en el comportamiento; la actividad de su organización puede incrementar su puntuación de cumplimiento si realiza actividades relacionadas con la seguridad, privacidad y protección de datos.
   
 > [!NOTE]
-> La puntuación de cumplimiento no indica una medida absoluta de cumplimiento organizativo con cualquier norma o reglamento específico. Expresa el alcance hasta el que se adoptaron controles que pueden reducir los riesgos en la privacidad individual y los datos personales. Ningún servicio puede garantizar que cumpla con una norma o reglamento y, además, la puntuación de cumplimiento no puede interpretarse como una garantía en ningún caso. 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-Las evaluaciones del Administrador de cumplimiento se basan en el modelo de responsabilidad compartida para la informática en la nube. En el modelo de responsabilidad compartida, Microsoft y cada cliente comparten la responsabilidad para la protección de los datos de los clientes cuando los datos se almacenan en nuestra nube.
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 Como se muestra en la Evaluación de RGPD de Office 365 a continuación, Microsoft y los clientes son responsables de realizar diferentes acciones que están diseñadas para cumplir los requisitos del reglamento o estándar que se evaluará. Racionalizar y comprender lo que se requiere. Actuando a través de una variedad de estándares y regulaciones, el Administrador de Cumplimiento trata todos los estándares y reglamentos como si fueran marcos de control. Por tanto, las acciones realizadas por Microsoft y por clientes para cada evaluación implican la implementación y la validación de los distintos controles.
   
@@ -171,7 +171,7 @@ Como se muestra en la Evaluación de RGPD de Office 365 a continuación, Microso
   
 Este es el flujo de trabajo básico para una acción típica:
   
-1. El responsable de cumplimiento, riesgo, privacidad o protección de datos de una organización asigna la tarea a un miembro de la organización para implementar un control. Esa persona puede ser:
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - Un propietario de la directiva de la empresa
     
@@ -179,7 +179,7 @@ Este es el flujo de trabajo básico para una acción típica:
     
     - Otra persona de la organización que tenga responsabilidad para realizar la tarea
     
-2. Esa persona realiza las tareas necesarias para implementar el control, carga evidencias de implementación en el Administrador de cumplimiento y marca como implementados los controles vinculados a la acción. Una vez completadas las tareas, asigna la acción a un evaluador para su validación. Los evaluadores pueden ser:
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - Evaluadores internos que realicen la validación de controles dentro de una organización.
     
@@ -189,13 +189,13 @@ Este es el flujo de trabajo básico para una acción típica:
     
 Después de evaluar todos los controles asociados con una evaluación, esta se considerará completada.
   
-En cada evaluación del Administrador de cumplimiento, se carga previamente información que proporciona detalles sobre las acciones realizadas por Microsoft para cumplir con los requisitos de los controles de los que Microsoft es responsable. En esta información, se incluyen detalles sobre cómo Microsoft implementó cada control y cómo un auditor externo evaluó y verificó la implementación realizada por Microsoft. Por este motivo, los controles administrados por Microsoft para cada evaluación se marcan como evaluados y la puntuación de cumplimiento para la evaluación refleja esto.
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-En cada evaluación, se incluye una puntuación de cumplimiento total basada en el modelo de responsabilidad compartida. La implementación y prueba de controles para Office 365 realizada por Microsoft contribuye a una parte del total posible de puntos asociados a una evaluación del RGPD. Cuando el cliente implemente y pruebe cada una de las acciones de cliente, la puntuación de cumplimiento de la evaluación se incrementará por el valor asignado al control. 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>Metodología de puntuación basada en riesgos
   
-El Administrador de cumplimiento usa una metodología de puntuación basada en riesgos con una escala de 1 a 10 que asigna un valor superior a los controles que representan un mayor riesgo en caso de que el control produzca errores o no cumpla los requisitos. El sistema de calificación usado por la puntuación de cumplimiento se basa en varios factores clave, como los siguientes:
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - La esencia del control
     
@@ -211,17 +211,17 @@ La esencia del control depende de si el control es obligatorio o discrecional, y
   
  ### <a name="mandatory-or-discretionary"></a>Obligatorio o discrecional
   
- Los *controles obligatorios* son controles que no se pueden omitir, ya sea de forma intencionada o por error. Un ejemplo de un control obligatorio común es una directiva de contraseñas administrada centralmente que establece requisitos de longitud, complejidad y expiración de contraseñas. Los usuarios tienen que cumplir con estos requisitos para obtener acceso al sistema. 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- Los *controles discrecionales* dependen de que los usuarios comprendan la directiva y actúen en consecuencia. Por ejemplo, una directiva que exija a los usuarios bloquear su equipo cuando lo dejen desatendido es un control discrecional, ya que depende del comportamiento del usuario. 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>Preventivo, de investigación o correctivo
   
- Los *controles preventivos* son los que impiden riesgos específicos. Por ejemplo, proteger la información en reposo con cifrado es un control preventivo frente a ataques, infracciones, etc. La separación de las responsabilidades es un control preventivo para administrar conflictos de intereses y proteger contra el fraude. 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- Los *controles de investigación* son aquellos que supervisan de forma activa los sistemas para identificar comportamientos o condiciones irregulares que representen un riesgo, o bien pueden usarse para detectar intrusiones o determinar si se produjo una infracción. La auditoría de acceso del sistema y la auditoría de acciones administrativas con privilegios elevados son tipos de controles de supervisión de investigación; las auditorías de cumplimiento reglamentario son un tipo de control identificativo usado para encontrar problemas de procesos. 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- Los *controles correctivos* son los que intentan contener los efectos adversos de un incidente de seguridad a un mínimo, realizar acciones correctivas para reducir el efecto inmediato y, si es posible, revertir los daños. Una respuesta a un incidente de privacidad es un control correctivo para limitar los daños y restaurar los sistemas a un estado operativo después de una infracción. 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 Al evaluar cada control con estos factores, determinamos la esencia del control y le asignamos un valor relativo al riesgo que representa.
   
@@ -242,7 +242,7 @@ Una amenaza hace referencia a cualquier acción que implica un riesgo para el es
     
 - Disponibilidad quiere decir que puede obtener acceso a la información fácilmente con un nivel elevado de calidad de servicio.
     
-Un error en cualquiera de estas características se considera un peligro para el sistema en su totalidad. Las amenazas pueden provenir tanto de orígenes internos como externos, y la intención del actor puede ser accidental o malintencionada. Estos factores se calculan en una matriz de amenazas que asigna niveles de amenaza alto, moderado o bajo a cada combinación de escenarios.
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**Interna**<br/>||**Externa**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ Al dar prioridad a los controles de evaluación con los valores de puntuación d
   
 ### <a name="summary-of-scoring-methodology"></a>Resumen de la metodología de puntuación
   
-La puntuación de cumplimiento es un componente básico de la forma en que el Administrador de cumplimiento ayuda a las organizaciones a comprender y administrar su cumplimiento. La puntuación de cumplimiento de una evaluación es una expresión del cumplimiento de la compañía en relación con una norma o reglamento como un número que, cuanto mayor sea la puntuación (hasta el número máximo de puntos asignados para la evaluación), mejor será la posición ante el cumplimiento de la compañía. Comprender la metodología de puntuación de cumplimiento en la que se asignan valores de gravedad de riesgo entre 1 y 10 (de menor a mayor) a los controles de evaluación y cómo se suman las evaluaciones de control completadas a la puntuación de cumplimiento total es esencial para que las organizaciones puedan priorizar sus acciones.
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>Agrupación de evaluaciones
 
 Al crear una evaluación, se le pide que cree un grupo al que asignarla o que la asigne a un grupo existente. Los grupos le permiten organizar lógicamente las evaluaciones, así como compartir información común y tareas de flujo de trabajo entre las evaluaciones que tienen los mismos controles administrados por cliente (o relacionados).
   
-Por ejemplo, puede agrupar evaluaciones por año, equipos, departamentos o agencias dentro de su organización. Estos son algunos ejemplos de grupos y las evaluaciones que pueden contener.
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - Evaluaciones del RGPD: 2018
     
@@ -315,7 +315,7 @@ Estos son los requisitos para agrupar evaluaciones:
   
 - Los nombres de grupo (también denominados *id. de grupo) tienen que ser únicos en la organización. 
     
-- Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para par específico de certificación o servicio en la nube. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y el RGPD. De forma similar, un grupo puede contener varias evaluaciones para el mismo servicio en la nube, siempre que el reglamento o certificación correspondiente para cada uno sea distinto.
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 Después de agregar una evaluación a una agrupación de evaluaciones, la agrupación no se puede modificar. Puede cambiar el nombre del grupo de evaluaciones, lo que cambiará el nombre de la agrupación de evaluaciones de todas las evaluaciones asociadas con ese grupo. Puede crear una evaluación y un grupo de evaluaciones, y copiar la información de una evaluación existente, lo que creará un duplicado de esa evaluación y otro grupo de evaluaciones. El archivado de una evaluación rompe la relación entre dicha evaluación y el grupo de evaluación. Cualquier otra actualización de evaluaciones relacionadas no se verá reflejada en la evaluación archivada.
   
@@ -346,11 +346,11 @@ De nuevo en el panel, podemos ver que cada evaluación tiene una evaluación de 
 Hay funciones administrativas específicas que solo están disponibles en la cuenta de administrador del espacio empresarial y solo serán visibles al iniciar sesión como administrador global.
   
 > [!NOTE]
-> El permiso “Acceso a documentos restringidos” en la lista desplegable permitirá a los administradores conceder a los usuarios acceso a documentos restringidos que Microsoft comparte en el Portal de confianza de servicios. La característica “Documentos restringidos” no está disponible actualmente, pero lo estará próximamente. 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Asignar roles del Administrador de cumplimiento a usuarios
 
-Cada rol del Administrador de cumplimiento tiene permisos ligeramente distintos. Puede ver los permisos asignados a cada rol, ver qué usuarios se encuentran en cada rol y agregar o quitar usuarios de ese rol mediante el Portal de confianza de servicios; para hacerlo, seleccione el elemento de menú **Administrador** y, después, haga clic en **Configuración**. 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![Menú Administrador de STP: Configuración seleccionada](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
     
 5. Los usuarios agregados a cada rol se muestran en la página **Seleccionar rol**. 
     
-6. Para agregar usuarios al rol, haga clic en **Agregar**. En el cuadro de diálogo **Agregar usuarios**, haga clic en el campo del usuario. Puede desplazarse por la lista de usuarios disponibles, o bien puede empezar a escribir el nombre de usuario para filtrar la lista según el término de búsqueda. Haga clic en el usuario para agregar esa cuenta a la lista **Agregar usuarios** que se aprovisionarán con ese rol. Para agregar varios usuarios de forma simultánea, empiece a escribir un nombre de usuario para filtrar la lista y, después, haga clic en el usuario para agregarlo a la lista. Haga clic en **Guardar** para aprovisionar el rol seleccionado a esos usuarios. 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![Administrador de cumplimiento: Aprovisionar roles (agregar usuarios)](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ Para agregar o quitar usuarios de los roles del Administrador de cumplimiento.
  
 ## <a name="user-privacy-settings"></a>Configuración de privacidad del usuario
 
-Algunos reglamentos exigen que una organización pueda eliminar los datos de historial de usuario. Para facilitar esto, el Administrador de cumplimiento proporciona las funciones de **Configuración de privacidad del usuario**, que permiten a los administradores: 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [Buscar un usuario](#search-for-a-user)
 
@@ -396,7 +396,7 @@ Para buscar una cuenta de usuario:
     
 2. Después de especificar correctamente el nombre de usuario, haga clic en **Buscar**. 
     
-3. Si no se encuentra la cuenta de usuario, se mostrará el mensaje de error “Usuario no encontrado” en la página. Compruebe la información de la dirección de correo electrónico del usuario, realice las correcciones necesarias y haga clic en **Buscar** para volver a intentarlo. 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. Si se encuentra la cuenta de usuario, el texto del botón cambiará de **Buscar** a **Borrar**, lo que indica que la cuenta de usuario encontrada es el contexto operativo para las funciones adicionales que se muestran debajo y que, al ejecutar esas funciones, se aplicarán en la cuenta de usuario. 
     
@@ -415,11 +415,11 @@ Una vez que se haya identificado la cuenta de usuario, puede que desee generar u
 3. Abra el documento para revisar los datos del informe.
     
 > [!NOTE]
-> No es un informe histórico que conserva y muestra los cambios de estado en el historial de asignaciones de acciones. El informe generado es una instantánea de las acciones de control asignadas en el momento en que se ejecutó el informe (con la marca de fecha y hora escrita en el informe). Por ejemplo, si posteriormente se reasignan acciones y vuelve a generarse el informe para el mismo usuario, se obtendrá un informe de instantánea con datos distintos. 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>Reasignar acciones
 
-Esta función permite a una organización quitar las dependencias activas o pendientes de la cuenta del usuario al reasignar todas las propiedades de acciones (tanto de acciones completadas como activas) de la cuenta de usuario encontrada al nuevo usuario seleccionado abajo. Esta acción no cambia el historial de carga de documentos de la cuenta de usuario encontrada. 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  Para reasignar acciones a otro usuario:
   
@@ -432,9 +432,9 @@ Esta función permite a una organización quitar las dependencias activas o pend
 4. Para continuar, haga clic en **Aceptar**; de lo contrario, haga clic en **Cancelar**. 
     
 > [!NOTE]
-> Todas las acciones (tanto activas como completadas) se asignarán al nuevo usuario seleccionado. Pero esta acción no afecta al historial de carga de documentos; en los documentos cargados por el usuario asignado anteriormente, se seguirán mostrando la fecha y hora, y el nombre del usuario asignado anteriormente. 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-El proceso para cambiar el historial de carga de documentos con el fin de quitar el usuario asignado anteriormente tendrá que realizarse de forma manual. En ese caso, el administrador tendrá que:
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. Abrir el informe exportado que se descargó anteriormente.
   
@@ -446,17 +446,17 @@ El proceso para cambiar el historial de carga de documentos con el fin de quitar
   
 5. Eliminar el documento del repositorio de evidencias.
   
-6. Volver a cargar el documento. Ahora, el documento tendrá una nueva fecha y hora de carga, y contendrá la información “Cargado por <nombre de usuario>”. 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>Eliminar el historial de datos de usuarios
 
-Esto establece las acciones de control como “Sin asignar” para todas las acciones asignadas al usuario encontrado. También establece el valor de “Cargado por” en “Usuario quitado” en todos los documentos cargados por el usuario encontrado.
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  Para eliminar el historial de carga de documentos y acciones de la cuenta de usuario:
   
 1. Haga clic en **Eliminar**. 
 
-    Se mostrará un cuadro de diálogo de confirmación con el siguiente mensaje: “Se eliminarán todas las asignaciones de acciones de control y el historial de carga de documentos del usuario seleccionado. Esta acción no se puede deshacer. ¿Está seguro de que quiere continuar?”.
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. Para continuar, haga clic en **Aceptar**; de lo contrario, haga clic en **Cancelar**. 
   
@@ -468,7 +468,7 @@ El Administrador de cumplimiento proporciona herramientas para asignar, realizar
 
 ## <a name="accessing-compliance-manager"></a>Obtener acceso al Administrador de cumplimiento
 
-Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianza de servicios. Cualquier usuario con una cuenta Microsoft o una cuenta de organización de Azure Active Directory puede obtener acceso al Administrador de cumplimiento.
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![Administrador de cumplimiento: Obtener acceso al Administrador de cumplimiento desde el menú de STP](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -478,7 +478,7 @@ Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianz
     
 3. En el Portal de confianza de servicios, haga clic en **Administrador de cumplimiento**. 
     
-4. Cuando se muestre el acuerdo de confidencialidad, léalo y, después, haga clic en **Acepto** para continuar. Solo tendrá que hacerlo una vez; después, se mostrará el panel del Administrador de cumplimiento. 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     Para ayudarle a empezar, agregamos las siguientes evaluaciones de forma predeterminada:
     
@@ -498,7 +498,7 @@ Para ver las acciones:
     
 2. Haga clic en el vínculo **Acciones**; la página se actualizará y se mostrarán las acciones asignadas a su usuario. 
     
-    De forma predeterminada, se muestran todas las acciones. Si tiene acciones de varias certificaciones, los nombres de las certificaciones se mostrarán en pestañas en la parte superior del control de evaluación. Para ver las acciones de una certificación específica, haga clic en esa pestaña.
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>Agregar una evaluación
 
@@ -506,7 +506,7 @@ Para agregar una evaluación al Administrador de cumplimiento:
   
 1. En el panel del Administrador de cumplimiento, haga clic en ![icono de agregar](../media/ITPro-EAC-AddIcon.gif) **Agregar evaluación**. 
     
-2. En la ventana **Agregar una evaluación**, puede crear un grupo al que agregar la evaluación, o bien puede agregarlo a un grupo existente (el grupo integrado se denomina “Grupo inicial”). Según la opción que seleccione, escriba el nombre del nuevo grupo, o bien seleccione un grupo existente en la lista desplegable. Para obtener más información, vea [Agrupar evaluaciones](#grouping-assessments).
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     Si crea un grupo, también tendrá la opción de copiar la información de otro existente para la nueva evaluación. Esto significa que la información que se agregó en los campos Detalles de la implementación, Plan de pruebas y Respuesta de la administración de los controles administrados por el cliente de evaluaciones del grupo del que está copiando se pegan en los mismos controles administrados por el cliente (o los relacionados) en la nueva evaluación. Si agrega una evaluación nueva a un grupo existente, la información común de las evaluaciones de ese grupo se copiará a la nueva. Para obtener más información, vea [Copiar la información de evaluaciones existentes](#copying-information-from-existing-assessments).
     
@@ -532,7 +532,7 @@ Como se ha explicado anteriormente, al crear un grupo de evaluación, tiene la o
   
 Puede copiar la siguiente información del cliente en una nueva evaluación:
   
-- Usuarios de la evaluación. Un usuario de evaluación es un usuario al que se asignó el control.
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - Estado, fecha de la prueba y resultados de pruebas.
     
@@ -548,7 +548,7 @@ Asimismo, se sincroniza la información de controles administrados por el client
   
 1. En esta sección, se muestra información de resumen de la evaluación, como el nombre de la agrupación de evaluaciones, el producto, el nombre de la evaluación y el número de controles de evaluación.
     
-2. En esta sección, se muestran los controles del filtro de evaluación. Para obtener una explicación más detallada de cómo usar los controles del filtro de evaluación, vea la sección [Administrar el proceso de evaluación](#managing-the-assessment-process). 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. En esta sección, se muestran los servicios en la nube individuales que están dentro del ámbito de la evaluación.
     
@@ -584,19 +584,19 @@ Esta es una lista de las tareas que puede realizar con las características de f
     
     - **Resultado de la prueba**: muestra la lista de controles con el resultado de la prueba seleccionada. 
     
-    Al aplicar condiciones de filtro, la vista de los controles cambiará para corresponderse con las condiciones de filtro. Expanda las secciones de las familias de controles para mostrar los detalles de controles abajo. 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![Vista de evaluación del Administrador de cumplimiento: Filtrar resultados de artículos](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. Si, no se muestran resultados después de seleccionar los filtros deseados, quiere decir que no hay controles que se correspondan con las condiciones de filtro especificadas. Por ejemplo, si selecciona un **Usuario asignado** específico y, después, elige un nombre de **control** que no se corresponde con el control asignado a ese usuario, no se mostrará ninguna evaluación en la página inferior. 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **Asignar una acción a un usuario**: puede asignar una acción a un usuario para implementar los requisitos de una certificación o reglamento, o bien para probar, verificar y documentar los requisitos de implementación de la organización. Al asignar una acción, puede enviar un correo electrónico a la persona con detalles como las acciones de cliente recomendadas y la prioridad de la acción. También puede cancelar la asignación o reasignar una acción a otro usuario. 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **Administrar documentos** Los controles administrados por el cliente también cuentan con una ubicación para administrar documentos relacionados con la realización de tareas de implementación, así como para realizar tareas de validación y pruebas. Cualquier persona que tenga permisos para editar datos en el Administrador de cumplimiento puede cargar documentos haciendo clic en **Administrar documentos**. Cuando se hayan cargado documentos, podrá hacer clic en **Administrar documentos** para ver y descargar los archivos. 
     
 5. **Proporcionar detalles de pruebas de implementación**: todos los controles administrados por el cliente tienen un campo editable donde los usuarios pueden agregar detalles de la implementación para documentar los pasos realizados por la organización para cumplir con los requisitos de la certificación o reglamento, así como para validar y documentar la forma en que la organización cumple esos requisitos.
     
-6. **Establecer el estado**: establece el estado de cada elemento como parte del proceso de evaluación. Los valores de estado disponibles son **Implementado**, **Implementación alternativa**, **Planeado** y **No está en el ámbito**. 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **Escribir la fecha y el resultado de la prueba** La persona con el rol Evaluador de Administrador de cumplimiento puede comprobar que se realizan las pruebas adecuadas, así como revisar los detalles de la implementación, el plan de pruebas, los resultados de las pruebas y cualquier evidencia cargada y, después, establecer los valores de Fecha de la prueba y Resultado de la prueba. Los valores disponibles para Resultado de la prueba son **Correcto**, **Erróneo - Riesgo bajo**, **Erróneo - Riesgo medio** y **Erróneo - Riesgo alto**. 
 
@@ -604,7 +604,7 @@ Esta es una lista de las tareas que puede realizar con las características de f
 
 Las personas involucradas en el proceso de evaluación de la organización pueden usar el Administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones en las que son usuarios. Cuando un usuario inicia sesión en Administrador de cumplimiento y abre el panel **Elementos de acción**, ve una lista de los que tiene asignados. Según el rol de Administrador de cumplimiento asignado al usuario, este podrá proporcionar detalles sobre la prueba o la implementación, actualizar el estado o asignar elementos de acción. 
   
-Como los controles de certificación suelen implementarlos una persona y probarlos otra, la acción de control se puede asignar de forma inicial a una persona para la implementación y, una vez completada, esa persona puede reasignar la acción de control a la siguiente persona para realizar pruebas de control y cargar las evidencias. La asignación o reasignación de acciones de control puede realizarla cualquiera de los usuarios que tenga un rol del Administrador de cumplimiento con permisos suficientes, que permita la administración centralizada de asignaciones de control o el enrutamiento descentralizado de acciones de control, desde implementador a evaluador, según corresponda.
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 Para asignar una acción:
   
@@ -616,7 +616,7 @@ Para asignar una acción:
     
 4. En la columna **Usuario asignado**, haga clic en **Asignar**. 
     
-5. En el cuadro de diálogo “Asignar acción”, haga clic en el campo **Asignar a** para rellenar la lista de usuarios a los que puede asignar la acción. Puede desplazarse por la lista para encontrar el nombre de usuario que prefiera, o bien puede empezar a escribir en el campo para buscarlo. 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. Haga clic en un usuario para asignarle esta acción.
     
@@ -626,7 +626,7 @@ Para asignar una acción:
  
     El usuario recibirá una notificación de la asignación de acción, así como las notas que especifique.
     
-Las notas asociadas a la acción persisten en la sección de notas y estarán disponibles la próxima vez que se asigne la acción. Estas notas no son de solo lectura (la persona que asigne la acción puede editarlas, reemplazarlas o quitarlas).
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportar información de una evaluación
 
@@ -640,14 +640,14 @@ Para exportar un informe de evaluación:
     
 - Si está en la página de detalles de la evaluación, haga clic en el botón **Exportar a Excel**, que se encuentra en la esquina superior derecha de la página, encima de la puntuación de cumplimiento de la evaluación.
     
-El informe de evaluación se descargará en la sesión del explorador. Si no ve un mensaje emergente para informarle de esto, abra la carpeta de descargas del explorador.
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>Archivar una evaluación
 
-Si completó una evaluación y ya no la necesita por fines de cumplimiento, puede archivarla. Al archivar una evaluación, se quita del panel Evaluaciones.
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> Al archivar una evaluación, ya no se puede recuperar ni restaurar a un estado de lectura y escritura en curso. Tenga en cuenta que, en las evaluaciones archivadas, no se conservan los vínculos a los documentos de evidencia cargados, por lo que es muy recomendable que realice una exportación de la evaluación antes de archivarla, ya que el informe de evaluación exportado contendrá los vínculos a los documentos de evidencias, lo que le permitirá seguir obteniendo acceso a estos. 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 Para archivar una evaluación:
   
@@ -673,9 +673,9 @@ Al visualizar una evaluación archivada, ninguno de los controles que pueden edi
 
 ![Portal de confianza de servicios: Campo de búsqueda](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Haga clic en el icono de lupa de la esquina superior derecha de la página para expandir el campo de búsqueda, escriba los términos de búsqueda y presione Entrar. Se mostrará el control de búsqueda con el término de búsqueda en el campo de entrada del panel de búsqueda y, en la parte inferior, se mostrarán los resultados de la búsqueda.
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-De forma predeterminada, la búsqueda muestra resultados de documentos, y puede usar las listas desplegables “Filtrar por” para restringir la lista de documentos mostrados con el fin de agregar o quitar resultados de la búsqueda de la vista. Puede usar varios atributos de filtro al mismo tiempo para restringir los documentos mostrados a elementos específicos, como servicios en la nube, categorías de cumplimiento o procedimientos de seguridad, regiones del mundo o sectores. Haga clic en el vínculo del nombre del documento para descargar el documento.
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -688,7 +688,7 @@ Haga clic en el vínculo Administrador de cumplimiento para mostrar los resultad
  
 ## <a name="localization-support"></a>Soporte de localización
 
-El Portal de confianza de servicios de permite ver el contenido de la página en distintos idiomas. Para cambiar el idioma de la página, haga clic en el icono de globo de la esquina inferior izquierda de la página y seleccionar el idioma que prefiera. 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![Portal de confianza de servicios: Opciones de contenido localizado](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -697,9 +697,9 @@ El Portal de confianza de servicios de permite ver el contenido de la página en
 
 El Administrador de cumplimiento se diseñó para actualizarlo de forma periódica con el fin de mantenerse al día de los cambios en los requisitos reglamentarios, así como de los cambios en nuestros servicios en la nube. En estas actualizaciones, se incluyen cambios en los Controles administrados por el cliente. Se proporciona un registro de cambios que le ayudará a comprender el impacto de estos cambios, incluidos los detalles sobre el contenido que se haya agregado o modificado, así como una guía sobre cómo afectan los cambios a las evaluaciones existentes. En general, hay dos tipos de cambio:
   
-- Un cambio **mayor** es un cambio importante en una acción de cliente, como agregar o quitar un control o pasos numerados específicos, o bien un cambio en la guía sobre responsabilidades, recomendaciones o evidencias. En el caso de los cambios mayores, le recomendamos que vuelva a evaluar la implementación o evaluación del control afectado.
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- Un cambio **menor** es un cambio insignificante en las acciones de cliente, como corregir un error de escritura o problemas de formato, o bien actualizar o corregir hipervínculos. En el caso de los cambios menores, no suele ser necesario volver a evaluar el control, pero le recomendamos que actualice la acción de cliente.
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>Controles administrados por el cliente: Registro de cambios de julio de 2018
 

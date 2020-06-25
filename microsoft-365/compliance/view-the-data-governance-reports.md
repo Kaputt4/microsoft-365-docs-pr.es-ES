@@ -14,19 +14,20 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede verificar rápidamente si las etiquetas se aplican en el contenido del modo previsto.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626306"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819010"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 
-Después de crear las etiquetas, asegúrese de que se apliquen correctamente en el contenido. Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede ver rápidamente:
+After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
   
-- **Cinco etiquetas principales** Este informe muestra el recuento de las cinco etiquetas principales que se aplicaron en el contenido. Haga clic en este informe para ver una lista de todas las etiquetas que se aplicaron recientemente en el contenido. Puede ver el recuento de cada etiqueta, así como la ubicación, cómo se aplicó, sus acciones de retención, si es un registro y su tipo de disposición. 
+- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
     
 - **Aplicación automática o manual** Este informe muestra el recuento de todo el contenido que se etiquetó de forma manual o automática, así como el porcentaje de contenido que se etiquetó de forma manual en comparación con el que se etiquetó de forma automática. 
     
@@ -40,7 +41,7 @@ Encontrará estos informes en el Centro de seguridad&amp; y cumplimiento \> **Go
   
 ![Gráfico donde se muestran tendencias de etiquetas en los últimos 90 días](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-Puede filtrar los informes de gobierno de datos por fecha (hasta 90 días) y ubicación (Exchange, SharePoint y OneDrive para la Empresa). Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
+You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
   
 ![Filtros para informes de gobierno de datos](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Conozca los diferentes recursos que puede utilizar para implementar Microsoft 365 para empresas en su organización.
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268338"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819333"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Implementar Microsoft 365 Enterprise
 
@@ -59,7 +59,7 @@ Para implementar Microsoft 365 Enterprise por su cuenta, puede:
 
   **Si tiene una organización más pequeña o reciente**, siga las fases en orden para crear la infraestructura metódicamente.
 
-  Pero puede implementar fases o porciones de fases de esta infraestructura en el orden que precise, [una tras otra o de forma paralela](deployment-strategies-microsoft-365-enterprise.md), para que se integren con su infraestructura actual, se ajusten a sus recursos y planes de TI y se adapten a sus necesidades empresariales. Para una implementación simplificada para no empresas, haga clic [aquí](deploy-foundation-infrastructure-non-enterprises.md).
+  Pero puede implementar fases o porciones de fases de esta infraestructura en el orden que precise, [una tras otra o de forma paralela](deployment-strategies-microsoft-365-enterprise.md), para que se integren con su infraestructura actual, se ajusten a sus recursos y planes de TI y se adapten a sus necesidades empresariales. Para una implementación simplificada para organizaciones no empresariales, vaya a [infraestructura de base para organizaciones que no son empresas](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Si tiene una organización empresarial**,vea las fases como capas de infraestructura de TI en lugar de una ruta definida, y determine la mejor forma de cumplir los requisitos de cada capa en toda la organización.
 
@@ -71,7 +71,7 @@ Esta es la relación entre la infraestructura de base y las cargas de trabajo.
 
 Las cargas de trabajo operan sobre la parte superior de la infraestructura de base. Pero no necesitará que todas las fases de infraestructura de base estén implementadas para empezar a usar las cargas de trabajo para la colaboración y la productividad.
 
-Empiece su recorrido de implementación de un extremo a otro con por su cuenta [aquí](deploy-foundation-infrastructure.md).
+Obtenga información sobre como comenzar la ruta de implementación completa en [Infraestructura de base de Microsoft 365 para empresas](deploy-foundation-infrastructure.md).
 
 ## <a name="take-a-test-drive"></a>Utilice una versión limitada de prueba
 

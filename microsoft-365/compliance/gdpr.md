@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036213"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800025"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -126,7 +126,7 @@ El reglamento general de protección de datos (RGPD) ordena que una evaluación 
 En el RGPD, como responsable del tratamiento está obligado a realizar las EIPA antes del procesamiento de datos que pueda derivarse en un alto riesgo para los derechos y las libertades de las personas, en particular, el procesamiento con nuevas tecnologías. El RGPD proporciona la siguiente lista no exhaustiva de los casos en que deben realizarse evaluaciones EIPA:
 
 - Procesamiento automatizado con el fin de crear perfiles y realizar actividades similares que tengan efectos legales o afecten significativamente a los interesados;  
-- Procesamiento a gran escala de categorías especiales de datos personales (datos que revelan el origen étnico o racial, las opiniones políticas y similares) o de datos relativos a delitos y condenas penales;  
+- Procesamiento a gran escala de categorías especiales de datos personales (datos que revelan el origen étnico o racial, las opiniones políticas y otros similares) o de datos relativos a delitos y condenas penales;  
 - Supervisión sistemática a gran escala de un área de acceso público.  
 
 El RGPD exige además que se consulte a la autoridad de protección de datos (DPA) antes de comenzar cualquier procesamiento si no se pueden identificar suficientes procesos que minimicen los riesgos altos para los interesados.
@@ -296,8 +296,7 @@ Los datos personales son cualquier información relacionada con una persona iden
 - Número de identificación fiscal
 - Dirección de lugar de trabajo
 - Números de tarjetas de crédito y débito
-- Publicaciones de las redes sociales
-- Publicaciones de las redes sociales
+- Publicaciones de redes sociales
 - Dirección IP (región de la UE)
 - Datos de ubicación y GPS
 - Cookies
