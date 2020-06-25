@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Obtenga más información sobre los tipos de grupos que puede usar.
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388034"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780462"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
 En la sección **Grupos** del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
-- **Los grupos de Microsoft 365** se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía.
+- **Los grupos de Microsoft 365** (anteriormente grupos de Office 365) se usan para la colaboración entre usuarios, tanto dentro como fuera de la empresa.
 - **Los grupos de distribución** se usan para enviar notificaciones a un grupo de personas.
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
@@ -81,4 +81,4 @@ Actualmente, no es posible migrar un buzón compartido a un grupo de Microsoft 3
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Obtener más información sobre los grupos de Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Obtener más información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
