@@ -1,7 +1,7 @@
 ---
 title: Trabajar con los resultados de la consulta de búsqueda avanzada en protección contra amenazas de Microsoft
 description: Aprovechar al máximo la mayoría de los resultados de la consulta de búsqueda avanzada en la protección contra amenazas de Microsoft
-keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft, visualización, gráfico, filtros explorar en profundidad
+keywords: caza avanzado, caza de amenazas, búsqueda de amenazas en el ciberespacio, protección contra amenazas de Microsoft, Microsoft 365, MTP, M365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, Microsoft 365, protección contra amenazas de Microsoft, visualización, gráfico, filtros, explorar en profundidad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f9838908ca0dbfb498601c3509b920b064a2eb22
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929247"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899091"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con los resultados de la consulta de búsqueda avanzada
 
@@ -64,13 +64,13 @@ AlertInfo
 ```
 Al representar los resultados, un gráfico de columnas muestra cada valor de gravedad como una columna independiente:
 
-![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico](../../media/advanced-hunting-column-chart.jpg)
-*de columnas resultados de consulta de alertas por gravedad mostrados como un gráfico de columnas*
+![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico ](../../media/advanced-hunting-column-chart.jpg)
+ *de columnas resultados de consulta de alertas por gravedad mostrados como un gráfico de columnas*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravedad de la alerta por sistema operativo
 También puede usar el `summarize` operador para preparar los resultados para representar gráficamente valores de varios campos. Por ejemplo, es posible que quiera comprender cómo se distribuyen las gravedades de las alertas entre sistemas operativos (SO). 
 
-La siguiente consulta usa un `join` operador para extraer información del sistema operativo de `DeviceInfo` la tabla y, a `summarize` continuación, usa para contar los `OSPlatform` valores `Severity` en las columnas y:
+La siguiente consulta usa un `join` operador para extraer información del sistema operativo de la `DeviceInfo` tabla y, a continuación, usa `summarize` para contar los valores en las `OSPlatform` `Severity` columnas y:
 
 ```kusto
 AlertInfo
@@ -80,8 +80,8 @@ AlertInfo
 ```
 Estos resultados se pueden visualizar mejor usando un gráfico de columnas apiladas:
 
-![Imagen de los resultados de la consulta de búsqueda avanzada mostrados](../../media/advanced-hunting-stacked-chart.jpg)
-como*resultado de una consulta de gráfico apilado para alertas por sistema operativo y gravedad mostradas como un gráfico apilado*
+![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como ](../../media/advanced-hunting-stacked-chart.jpg)
+ *resultado de una consulta de gráfico apilado para alertas por sistema operativo y gravedad mostradas como un gráfico apilado*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Mensajes de suplantación de identidad en los diez principales dominios del remitente
 Si está tratando con una lista de valores que no son finitos, puede usar el `Top` operador para representar solo los valores con la mayoría de las instancias. Por ejemplo, para obtener los diez principales dominios de remitentes con la mayoría de los correos electrónicos de suplantación de identidad, use la siguiente consulta:
@@ -94,11 +94,11 @@ EmailEvents
 ```
 Use la vista gráfico circular para mostrar de forma eficaz la distribución en los dominios superiores:
 
-![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico circular gráfico](../../media/advanced-hunting-pie-chart.jpg)
-circular*que muestra la distribución de mensajes de suplantación de identidad en los dominios principales del remitente*
+![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico circular gráfico circular ](../../media/advanced-hunting-pie-chart.jpg)
+ *que muestra la distribución de mensajes de suplantación de identidad en los dominios principales del remitente*
 
 #### <a name="file-activities-over-time"></a>Actividades de archivo a lo largo del tiempo
-Mediante el `summarize` operador con la `bin()` función, puede comprobar si hay eventos que impliquen un indicador en particular a lo largo del tiempo. La consulta siguiente cuenta los eventos relacionados con el `invoice.doc` archivo en intervalos de 30 minutos para mostrar picos en la actividad relacionada con el archivo:
+Mediante el `summarize` operador con la `bin()` función, puede comprobar si hay eventos que impliquen un indicador en particular a lo largo del tiempo. La consulta siguiente cuenta los eventos `invoice.doc` relacionados con el archivo en intervalos de 30 minutos para mostrar picos en la actividad relacionada con el archivo:
 
 ```kusto
 AppFileEvents
@@ -106,10 +106,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-El gráfico de líneas siguiente destaca claramente los períodos de tiempo con más `invoice.doc`actividad, lo que implica: 
+El gráfico de líneas siguiente destaca claramente los períodos de tiempo con más actividad, lo que implica `invoice.doc` : 
 
-![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico de líneas del gráfico](../../media/advanced-hunting-line-chart.jpg)
-de líneas*que muestra el número de eventos que implican un archivo a lo largo del tiempo*
+![Imagen de los resultados de la consulta de búsqueda avanzada mostrados como un gráfico de líneas del gráfico de líneas ](../../media/advanced-hunting-line-chart.jpg)
+ *que muestra el número de eventos que implican un archivo a lo largo del tiempo*
 
 
 ## <a name="export-tables-and-charts"></a>Exportar tablas y gráficos
@@ -119,7 +119,15 @@ Después de ejecutar una consulta, seleccione **exportar** para guardar los resu
 - **Cualquier gráfico** : los resultados de la consulta se exportan como una imagen JPEG del gráfico representado.
 
 ## <a name="drill-down-from-query-results"></a>Profundizar desde los resultados de la consulta
-Para ver más información sobre las entidades, como máquinas, archivos, usuarios, direcciones IP y URL, en los resultados de la consulta, simplemente haga clic en el identificador de entidad. Se abrirá la página de perfil detallado de la entidad seleccionada en el Centro de seguridad de Microsoft Defender.
+Para inspeccionar rápidamente un registro en los resultados de la consulta, seleccione la fila correspondiente para abrir el panel **inspeccionar registro** . El panel proporciona la siguiente información en función del registro seleccionado:
+
+- **Activos** : Vista resumida de los activos principales (buzones de correo, dispositivos y usuarios) que se encuentran en el registro, enriquecido con información disponible, como los niveles de riesgo y exposición
+- **Árbol de procesos** : generado para registros con información del proceso y enriquecido con información contextual disponible; en general, las consultas que devuelven más columnas pueden dar como resultado árboles de procesos más completos.
+- **Todos los detalles** : todos los valores de las columnas del registro  
+
+![Imagen del registro seleccionado con panel para inspeccionar el registro](../../media/mtp-ah/inspect-record.png)
+
+Para ver más información acerca de una entidad específica en los resultados de la consulta, como un equipo, un archivo, un usuario, una dirección IP o una dirección URL, seleccione el identificador de entidad para abrir una página de perfil detallada para esa entidad.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Modificar las consultas de los resultados
 Haga clic con el botón derecho en un valor en el conjunto de resultados para mejorar la búsqueda rápidamente. Puede usar las opciones para:
@@ -133,7 +141,7 @@ Haga clic con el botón derecho en un valor en el conjunto de resultados para me
 ## <a name="filter-the-query-results"></a>Filtrar los resultados de la consulta
 Los filtros que aparecen a la derecha proporcionan un resumen del conjunto de resultados. Cada columna tiene una sección en la que se muestra una lista de los valores de la columna y el número de instancias.
 
-Refine la consulta seleccionando los `+` botones `-` o de los valores que desea incluir o excluir y, a continuación, seleccionando **Ejecutar consulta**.
+Refine la consulta seleccionando los `+` `-` botones o de los valores que desea incluir o excluir y, a continuación, seleccionando **Ejecutar consulta**.
 
 ![Imagen del filtro de búsqueda avanzada](../../media/advanced-hunting-filter.png)
 

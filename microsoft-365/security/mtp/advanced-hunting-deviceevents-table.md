@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 0f565e7584a961fcbc48e6a421419cd48a20a963
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617179"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899332"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -52,7 +52,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `RemoteDeviceName` | string | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
-| `ProcessId` | Entero | IDENTIFICADOR de proceso (PID) del proceso recién creado |
+| `ProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora de creación del proceso |
 | `ProcessTokenElevation` | string | Tipo de token que indica la presencia o ausencia de la elevación de privilegios de control de acceso de usuario (UAC) que se aplica al proceso recién creado. |
@@ -61,9 +61,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del registro al que se aplicó la acción grabada |
 | `RemoteIP` | string | Dirección IP a la que se ha conectado |
-| `RemotePort` | Entero | Puerto TCP del dispositivo remoto al que se estaba conectando |
+| `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `LocalIP` | string | Dirección IP asignada al equipo local usada durante la comunicación |
-| `LocalPort` | Entero | Puerto TCP del equipo local usado durante la comunicación |
+| `LocalPort` | int | Puerto TCP del equipo local usado durante la comunicación |
 | `FileOriginUrl` | string | Dirección URL desde la que se descargó el archivo |
 | `FileOriginIP` | string | Dirección IP desde la que se descargó el archivo |
 | `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
@@ -71,10 +71,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessSHA256` | string | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `InitiatingProcessFileName` | cadena | Nombre del proceso que inició el evento |
 | `InitiatingProcessFolderPath` | string | Carpeta que contiene el proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessId` | Entero | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
+| `InitiatingProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso que inició el evento |
 | `InitiatingProcessCommandLine` | string | Línea de comandos que se usa para ejecutar el proceso que inició el evento |
 | `InitiatingProcessCreationTime` | datetime | Fecha y hora en que se inició el proceso que inició el evento |
-| `InitiatingProcessParentId` | Entero | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
+| `InitiatingProcessParentId` | int | IDENTIFICADOR de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | string | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | datetime | Fecha y hora en que se inició el primario del proceso responsable del evento |
 | `InitiatingProcessMD5` | string | Hash MD5 del proceso (archivo de imagen) que inició el evento |
@@ -86,7 +86,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AppGuardContainerId` | string | Identificador del contenedor virtualizado que usa la protección de aplicaciones para aislar la actividad del explorador |
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Búsqueda proactiva de amenazas](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
