@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma pro activa si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan determinadas condiciones.
-ms.openlocfilehash: 35c93ed6ee942f9553e196d3f15634e53c0bf25d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352237"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844756"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -34,7 +34,7 @@ Para obtener información sobre el funcionamiento de las directivas de retenció
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los miembros de su equipo de cumplimiento que crearán y administrarán las directivas de retención necesitan permisos para el[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Por defecto, su administrador de inquilinos tiene acceso a esta ubicación y puede dar acceso a los oficiales de cumplimiento y a otras personas sin darles todos los permisos de un administrador de inquilinos. Para ello, le recomendamos que vaya a la **página de **permisos del[Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com/), edite la función del **Administrador de cumplimiento **, y agregue miembros a ese grupo de funciones.gue miembros a ese grupo de roles. 
+Los miembros de su equipo de cumplimiento que crearán y administrarán las directivas de retención necesitan permisos para el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios el acceso sin concederles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administrador de cumplimiento normativo**. Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Estos permisos sólo son necesarios para crear y aplicar una directiva de retención. La persona que configura la directiva de retención no requiere acceso al contenido.
 
@@ -66,7 +66,7 @@ Cuando tiene más de una directiva de retención, consulte [Los principios de la
 
 Para conservar o eliminar el contenido de un grupo de Microsoft 365 (antes grupo Office 365), seleccione la ubicación de los **grupos de Office 365** cuando elija las ubicaciones para su directiva de conservación. Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de**correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
-Una directiva de retención aplicada a un grupo Microsoft 365 incluye tanto el buzón del grupo como el sitio. Una directiva de retención aplicada a un grupo Microsoft 365 protege los recursos creados por un grupo Microsoft 365, que incluye a Microsoft Teams.
+Una directiva de retención aplicada a un grupo de Microsoft 365 incluye tanto el buzón como el sitio del grupo. Una directiva de retención aplicada a un grupo Microsoft 365 protege los recursos creados por un grupo Microsoft 365, que incluye a Microsoft Teams.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Información de configuración de Skype Empresarial
 
@@ -78,7 +78,7 @@ Cuando seleccione **Elegir usuarios**, puede incluir rápidamente todos los usua
   
 ![Página Elegir usuarios de Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Tenga en cuenta que **Historial de conversaciones**, una carpeta de Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El usuario final puede desactivar **Historial de conversaciones**, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery, pero inaccesible para el usuario.
+Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Configuración para retener y borrar el contenido
@@ -113,7 +113,7 @@ Si su directiva de retención elimina contenido, es importante entender que el p
   
 Por ejemplo, supongamos que se crea una directiva de retención que borra el contenido después de tres años, y luego se asigna esa directiva a todas las cuentas de OneDrive, que contienen mucho contenido que fue creado hace cuatro o cinco años. En este caso, una gran cantidad de contenido se eliminará poco después de asignar la directiva de retención por primera vez. Por esta razón, es importante entender que una directiva de retención que borre el contenido puede tener un impacto considerable en su contenido. 
   
-Por lo tanto, antes de asignar una directiva de retención a un sitio por primera vez, primero debería considerar la antigüedad del contenido existente y cuál será el impacto de esa directiva. También es recomendable comunicar la nueva directiva a sus usuarios antes de asignarla para darles tiempo a evaluar el posible impacto. Tenga en cuenta esta advertencia que aparece al revisar la configuración de la directiva de retención justo antes de crearla.
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![Advertencia sobre la eliminación de contenido](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -135,7 +135,7 @@ La retención basada en consultas usa el índice de búsqueda para identificar e
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>Identificar el contenido que contiene información sensible
 
-También puede aplicar una directiva de retención solo al contenido que contenga [determinados tipos de información confidencial](what-the-sensitive-information-types-look-for.md). Por ejemplo, puede aplicar requisitos de retención solo a contenido con información de identificación personal (DCP), como números de identificación fiscal, números de la seguridad social o números de pasaporte.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Página de tipos de información confidencial](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -143,7 +143,7 @@ Notas:
   
 - La retención avanzada de información confidencial no se aplica a las carpetas públicas de Exchange o Skype Empresarial porque estas ubicaciones no admiten tipos de información confidencial.
     
-- Exchange Online utiliza reglas de flujo de correo (también conocidas como reglas de transporte) para identificar la información sensible, por lo que esto funciona sólo en los mensajes en tránsito, no en todos los artículos ya almacenados en un buzón. En el caso de Exchange Online, esto significa que las directivas de retención solo pueden identificar la información confidencial y realizar acciones de retención en los mensajes que se reciben **después** de que se aplique la directiva al buzón de correo. La retención basada en la consulta descrita en la sección anterior no tiene esta limitación porque utiliza el índice de búsqueda para identificar el contenido. 
+- Exchange Online utiliza reglas de flujo de correo (también conocidas como reglas de transporte) para identificar la información confidencial, por lo que esto funciona sólo en los mensajes en tránsito, no en todos los artículos ya almacenados en un buzón. En el caso de Exchange Online, esto significa que las directivas de retención solo pueden identificar la información confidencial y realizar acciones de retención en los mensajes que se reciben **después** de que se aplique la directiva al buzón de correo. La retención basada en la consulta descrita en la sección anterior no tiene esta limitación porque utiliza el índice de búsqueda para identificar el contenido. 
     
 ## <a name="applying-a-retention-policy-to-an-entire-organization-or-specific-locations"></a>Aplicar una directiva de retención a toda la organización o a ubicaciones específicas
 
@@ -229,7 +229,7 @@ Para usar los cmdlets de directivas de retención:
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>Bloquear una directiva de retención con PowerShell
 
-Debe usar PowerShell si necesita usar el[Bloqueo de conservación](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)para cumplir con los requerimientos regulatorios.
+Debe usar PowerShell si necesita usar el [Bloqueo de conservación](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements) para cumplir con los requerimientos reglamentarios.
 
 1. [Conéctese al Centro de seguridad y cumplimiento de Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
