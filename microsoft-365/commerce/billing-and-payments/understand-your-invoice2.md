@@ -25,18 +25,18 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Obtenga información acerca de cómo interpretar los cargos, la facturación y el pago en su factura de Microsoft 365 for Business y cómo cambiar el número de pedido de compra.
-ms.openlocfilehash: 13eea485a6d748ce8798ddb5075309bec727c6bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402635"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909269"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprenda su factura de Microsoft 365 para empresas
 
-Cada mes recibirá un correo electrónico que le indicará que el nuevo extracto de facturación está disponible en el centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
+Mensual o anual (según la opción elegida al comprar la suscripción), recibirá un correo electrónico que le indicará que el nuevo extracto de facturación está disponible en el centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
   
-Su factura contiene dos páginas. La página 1 es el resumen de la factura, y contiene la información general acerca de esta, del pedido, del importe debido, de cómo realizar el pago y de cómo ponerse en contacto con el soporte técnico.
+Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
   
 ![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
@@ -62,7 +62,7 @@ Si tiene más de un pedido, recibirá una factura para cada uno de ellos.
   
 ## <a name="invoice-field-glossary"></a>Glosario de los campos de la factura
 
-La tabla siguiente describe los campos que es posible que vea en su factura. Algunos de los campos que se muestran aquí puede que no aparezcan en su factura, según si paga mediante factura, tarjeta de crédito o cuenta bancaria.
+The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
   
 > [!NOTE]
 > Pagar con la cuenta bancaria no está disponible en algunos países o regiones.
@@ -70,30 +70,30 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 |**Nombre**|**Descripción**|
 |:-----|:-----|
 |Precio anual|Las suscripciones se facturan mensual o anualmente. Si elige la facturación anual durante la compra de la suscripción, el precio de la licencia anual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
-|Período de facturación|Período de facturación es el período de tiempo desde la última fecha de la factura. Período de servicio es el período de tiempo durante el cual se le cobrará por usar el servicio.|
+|Período de facturación|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
 |Facturar a|Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del solicitante. Para actualizar la dirección de facturación, vea [cambiar las direcciones de facturación](change-your-billing-addresses.md).|
-|Cargos|La página 1 de la factura resume todos los cargos para el período de facturación de esta. La página 2 muestra los cargos detallados para cada suscripción.|
-|Cheque|Si paga mediante factura y el pago por cheque se ofrece en su país, en la parte inferior de la página 1 se incluye información acerca de dónde enviar su pago. Haga referencia al número de factura en su cheque.|
-|Créditos|La página 1 de la factura resume todos los créditos para el período de facturación de esta. La página 2 muestra los créditos detallados para cada suscripción.|
-|Número de pedido de compra del cliente|El número de pedido de compra (PO). Si actualiza el número de pedido de compra, se incluirá en las próximas facturas. [Cambiar el número de pedido de compra](#change-your-purchase-order-number).  <br/> **Nota:** No puede Agregar un número de pedido de compra a una factura existente.           |
-|Días|Cada transacción de facturación está asociada a un período de servicio. La columna Días indica el número de días en ese período de servicio.|
-|Descuentos|La página 1 de la factura resume todos los descuentos para el período de facturación de esta. La página 2 muestra los descuentos detallados para cada suscripción.|
-|Fecha de vencimiento|La fecha en la que vence el pago de la factura. Si la suscripción se paga con tarjeta de crédito o cuenta bancaria, el cobro se efectuará en la tarjeta de crédito o en la cuenta bancaria el día siguiente a la fecha de facturación.<br/> **Nota:** Pagar por cuenta bancaria no está disponible en algunos países o regiones.           |
+|Cargos|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
+|Cheque|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
+|Créditos|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
+|Número de pedido de compra del cliente|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **Nota:** No puede Agregar un número de pedido de compra a una factura existente.           |
+|Días|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
+|Descuentos|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
+|Fecha de vencimiento|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **Nota:** Pagar por cuenta bancaria no está disponible en algunos países o regiones.           |
 |Transferencia electrónica de fondos|Si elige "factura" como el método de pago de la suscripción, la Página 1 contiene la información de la cuenta bancaria de Microsoft para pagos electrónicos (hilo, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
 |Total general|Esta fila incluye los importes totales de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para todas las suscripciones que aparecen en la factura.|
-|Fecha de la factura|La fecha en la que se creó la factura. La fecha de facturación es el día posterior al final de su período de facturación. Por ejemplo, si el período de facturación comprende del 15 de enero al 14 de febrero, la fecha de facturación es el 15 de febrero.|
-|Número de factura|El único número asignado a la factura. Haga referencia al número de factura en su pago.|
+|Fecha de la factura|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
+|Número de factura|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
 |Precio mensual|Las suscripciones se facturan mensual o anualmente. Si elige la facturación mensual durante la compra de la suscripción, el precio de la licencia mensual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
-|Número de pedido|Cada vez que compra una nueva suscripción, se crea un pedido. Cada mes, recibirá una factura para cada pedido.|
-|Instrucciones de pago|Si paga con tarjeta de crédito, verá "No pague - se ha cargado a la tarjeta de crédito del archivo". Si paga mediante factura, verá instrucciones para pagar mediante Transferencia electrónica de fondos (EFT) y cheque (si procede).|
-|Términos de pago|El número de días desde la fecha de facturación cuando el pago vence. El estándar es de 30 días.|
-|Producto|En la página 1 de la factura, "Servicios en línea" es el término genérico que se usa para describir las suscripciones. En la página 2, verá los nombres individuales de la suscripción.|
+|Número de pedido|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
+|Instrucciones de pago|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
+|Términos de pago|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
+|Producto|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
 |CANT.|El número de licencias compradas durante el Período de servicio.|
-|Período de servicio|Período de servicio es el período de tiempo durante el cual se le cobrará por usar el servicio. Un período de facturación es el período de tiempo desde la última fecha de facturación.|
+|Período de servicio|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
 |Dirección de uso del servicio|La dirección donde se usa el servicio, normalmente es la misma que la dirección del solicitante. Para actualizar la dirección de uso del servicio, vea [cambiar las direcciones de facturación](change-your-billing-addresses.md).|
-|Vendido a|El nombre de la empresa y la dirección. Para actualizar esta información, consulte [Cambiar la dirección de la empresa, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md).  |
+|Vendido a|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
 |SubTotal|Cada suscripción que aparece en la factura tiene una fila subtotal independiente de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para esa suscripción.|
-|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).  |
+|Impuestos|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/contact-support-for-business-products.md).|
 |Total|La cantidad vencida para el período de facturación de la factura.|
 
 ## <a name="change-your-purchase-order-number"></a>Cambiar el número de pedido de compra
@@ -101,7 +101,7 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 Si paga mediante factura, puede agregar o cambiar el número de orden de compra (PO) de su suscripción.
   
 > [!NOTE]
-> No puede agregar un número de pedido de compra a una factura existente. El número de pedido de compra aparecerá en todas las facturas futuras.
+> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
 ::: moniker range="o365-worldwide"
 

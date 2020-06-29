@@ -21,35 +21,35 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: d69ec803c8321c6417f587feafb2730de1d1e7b3
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432140"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909257"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
-Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de la organización desde el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Para ello, debe asignarlos al rol de administrador de Exchange. 
+Para ayudarle a administrar Microsoft 365, puede [asignar](assign-admin-roles.md) permisos a los usuarios para administrar el correo electrónico y los buzones de la organización desde el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Para ello, debe asignarlos al rol de administrador de Exchange.
   
- **Sugerencia**: cuando asigne a un usuario al rol de administrador de Exchange, asígnelos también al rol de administrador del servicio. De este modo, pueden ver información importante en el centro de administración de Microsoft 365, como el estado del servicio de Exchange Online, y cambiar y publicar notificaciones. 
+ **Sugerencia**: cuando asigne a un usuario al rol de administrador de Exchange, asígnelos también al rol de administrador del servicio. De este modo, pueden ver información importante en el centro de administración de Microsoft 365, como el estado del servicio de Exchange Online, y cambiar y publicar notificaciones.
   
-Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se asignan al rol de administrador de Exchange: 
+Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se asignan al rol de administrador de Exchange:
   
 - [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
 - [Configurar una directiva de archivo y eliminación para los buzones de la organización](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
-- Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización. 
+- Configurar características de buzón de correo, como la Directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otras personas fuera de la organización.
     
 - Configure delegados "[Enviar como](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" y "enviar como" de[abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)para el buzón de una persona. Por ejemplo, es posible que un ejecutivo desee que su asistente tenga la capacidad de enviar correo en su nombre. 
-    
-- [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común. 
-    
-- Filtros de malware y [protección contra correo no deseado de correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) para la organización. 
-    
+
+- [Crear un buzón compartido](../email/create-a-shared-mailbox.md) para que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común.
+
+- Filtros de malware y [protección contra correo no deseado de correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) para la organización.
+
 - Administración de grupos de Microsoft 365
-    
+
 ## <a name="exchange-online-role-groups"></a>Grupos de roles de Exchange Online
 
 Si tiene una organización grande, es posible que el administrador de Exchange desee asignar usuarios a grupos de roles de Exchange. Cuando un administrador agrega un usuario a un grupo de funciones, el usuario obtiene permisos para realizar determinadas funciones empresariales solo pueden hacer los miembros de ese grupo.
@@ -63,3 +63,5 @@ Si tiene una organización grande, es posible que el administrador de Exchange d
 - [Acerca del rol de administrador de SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 - [Acerca del rol de administrador de Skype empresarial](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
+
+- [Usar el rol de administrador de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 

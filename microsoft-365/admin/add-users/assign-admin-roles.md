@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780642"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900781"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
@@ -46,7 +46,7 @@ Vea un breve vídeo sobre cómo agregar un administrador.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -110,9 +110,9 @@ Use las siguientes instrucciones para asignar roles a decenas de usuarios.
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>¿No ha funcionado?
+## <a name="check-your-permissions"></a>Comprobar sus permisos
 
-Es posible que no tenga los permisos correctos y no tiene acceso para asignar roles de administrador a otros usuarios. Solicite a otro administrador que lo haga por usted.
+Es posible que no disponga de los permisos correctos para asignar roles de administrador a otros usuarios. Asegúrese de que tiene los permisos correctos o pida a otro administrador que le asigne roles.
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ Es posible que no tenga los permisos correctos y no tiene acceso para asignar ro
 
 [Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
 
+[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autorizar o quitar relaciones de asociados](../misc/add-partner.md)
-
-[Agregar una dirección de correo electrónico alternativa mediante el centro de administración de Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)

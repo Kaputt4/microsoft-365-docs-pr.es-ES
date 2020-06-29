@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Obtenga información acerca de las etiquetas de retención que gobiernan sus datos y conserve lo que desee, elimine lo que no desee conservar y marque contenido como registro.
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817445"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879313"
 ---
 # <a name="learn-about-retention-labels"></a>Obtenga información sobre las etiquetas de retención
 
@@ -349,7 +349,7 @@ Después de asignar etiquetas de retención a contenido (ya sea por los usuarios
   
 Cuando cree una búsqueda de contenido, elija la condición de **Etiqueta de cumplimiento**, y luego introduzca el nombre completo de la etiqueta de retención o parte del nombre de la etiqueta y utilice un comodín. Para obtener más información, consulte [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de Contenido](keyword-queries-and-search-conditions.md).
   
-![Condición Etiqueta de cumplimiento](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Condición de etiqueta de cumplimiento](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>Usar etiquetas de retención en lugar de las características más antiguas
 

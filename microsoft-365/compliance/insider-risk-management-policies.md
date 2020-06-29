@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534932"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900824"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -88,12 +88,19 @@ La protección de la privacidad de los usuarios que tienen coincidencias de dire
 
 ### <a name="indicators"></a>Indicadores
 
-Plantillas de directivas de riesgos de Insider definen el tipo de actividades de riesgo que desea detectar e investigar. Cada plantilla de Directiva se basa en indicadores específicos que se corresponden con las tareas y las actividades de riesgo específicas que las directivas desencadenan cuando los usuarios realizan actividades relacionadas con estos indicadores. En algunos casos, es posible que quiera limitar los indicadores que se aplican a las directivas de riesgo de Insider de su organización. Puede desactivar los indicadores para áreas específicas si los deshabilita en todas las directivas de riesgo de Insider.
+Plantillas de directivas de riesgos de Insider definen el tipo de actividades de riesgo que desea detectar e investigar. Cada plantilla de Directiva se basa en indicadores específicos que corresponden a desencadenadores y actividades de riesgos específicos. Todos los indicadores están deshabilitados de forma predeterminada y debe seleccionar uno o más indicadores de Directiva antes de configurar una directiva de administración de riesgos de Insider. 
 
-Para definir los indicadores que están habilitados en todas las directivas, vaya a indicadores de **configuración de riesgos de Insider**  >  **Indicators** y seleccione uno o más indicadores. Los indicadores seleccionados en la página de configuración de **indicadores** no se pueden configurar individualmente al crear o editar una directiva de riesgos del Insider en el Asistente para directivas.
+Las directivas desencadenan alertas cuando los usuarios realizan actividades relacionadas con los indicadores de directiva que cumplen un umbral requerido. La administración de riesgos de Insiders usa dos tipos de indicadores:
 
->[!IMPORTANT]
->Para recibir alertas de actividad arriesgada definida en las directivas, debe seleccionar uno o más indicadores antes de configurar una directiva de riesgo de Insiders.
+- **Desencadenar indicadores**: indicadores que determinan si un usuario está activo para una directiva de administración de riesgos de Insider. Si se agrega un usuario a una directiva de administración de riesgos de Insider que usa indicadores desencadenadores pero no tiene una actividad de indicador de desencadenamiento, la Directiva no evalúa la actividad del usuario. Por ejemplo, el usuario A se agrega a una directiva creada a partir de la plantilla de directiva de *robo de datos de empleado* que no es de parte y la Directiva y el conector de recursos humanos están configurados correctamente. Hasta que el usuario A tiene una fecha de finalización notificada por el conector de recursos humanos, esta directiva de administración de riesgos de Insider no evalúa las actividades del usuario A. Otro ejemplo de un indicador de activación es si un usuario está en el ámbito de una alerta de directiva DLP de gravedad *alta* .
+- **Indicadores de directiva de riesgos de Insider**: indicadores incluidos en las directivas de administración de riesgos de Insider usadas para determinar una puntuación de riesgo para un usuario dentro del ámbito. Estos indicadores de directiva solo se activan después de que se produzca un indicador de desencadenamiento para un usuario. Algunos ejemplos de indicadores de directiva de riesgos del Insider son cuando un usuario copia datos en servicios de almacenamiento en la nube personal o dispositivos de almacenamiento portátil, o si un usuario comparte archivos y carpetas internos con partes externas no autorizadas.
+
+En algunos casos, es posible que quiera limitar los indicadores de directiva de riesgos de Insider que se aplican a las directivas de riesgo de Insider de su organización. Puede desactivar los indicadores de directiva para áreas específicas al deshabilitarlas de todas las directivas de riesgo de Insider. Los indicadores desencadenadores no se pueden modificar para las plantillas de directiva de riesgos de Insider.
+
+Para definir los indicadores de directiva de riesgos de Insider que están habilitados en todas las directivas de riesgo de Insider, vaya a indicadores de **configuración de riesgos**de Insider  >  **Indicators** y seleccione uno o más indicadores de directiva. Los indicadores seleccionados en la página de configuración de indicadores no se pueden configurar individualmente al crear o editar una directiva de riesgos del Insider en el Asistente para directivas.
+
+>[!NOTE]
+>Puede tardar varias horas en aparecer nuevos usuarios agregados manualmente en el **Panel de usuarios**. Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, seleccione el usuario en el **Panel de usuarios** y abra la ficha **actividad de usuario** en el panel de detalles.
 
 ### <a name="policy-timeframes"></a>Plazos de la Directiva
 
