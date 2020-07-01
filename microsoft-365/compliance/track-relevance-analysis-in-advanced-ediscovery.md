@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado.  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado.
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936223"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Seguimiento del análisis de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la exhibición avanzada de documentos electrónicos, la pestaña seguimiento de relevancia muestra la validez calculada del entrenamiento de relevancia realizado en la pestaña etiqueta e indica el siguiente paso que debe realizar en el proceso de entrenamiento iterativo en relevancia. 
   
@@ -53,7 +53,7 @@ En la exhibición avanzada de documentos electrónicos, la pestaña seguimiento 
   
     Cuando la evaluación no se completa con el primer conjunto de ejemplos de archivos, la evaluación podría ser el paso siguiente para etiquetar más archivos. 
     
-    En el **seguimiento**de **relevancia** \> , el indicador de progreso de formación y la información sobre herramientas indican el número estimado de muestras adicionales necesarias para alcanzar la estabilidad. Esta estimación proporciona una pauta para la formación adicional necesaria.
+    En **Relevance** \> el **seguimiento**de relevancia, el indicador de progreso de formación y la información sobre herramientas indican el número estimado de muestras adicionales necesarias para alcanzar la estabilidad. Esta estimación proporciona una pauta para la formación adicional necesaria.
     
     ![Formación del seguimiento de relevancia](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
@@ -84,7 +84,7 @@ Si desea importar nuevos archivos tras el cálculo por lotes, el administrador p
 Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. El proceso de coherencia de etiquetado de exhibición de documentos electrónicos avanzado puede usarse cuando los resultados no son óptimos o la coherencia está en duda. Se devuelve una lista de los archivos etiquetados que pueden ser incoherentes y se pueden revisar y volver a etiquetar, según sea necesario.
   
 > [!NOTE]
-> Después de siete o más formación redondeos tras la evaluación, la coherencia de etiquetado se puede ver en el **seguimiento** \> **Issue** \> de **relevancia** \> **progreso de aprendizaje**de **resultados** \> detallados. Esta revisión se realiza por un problema a la vez. 
+> Después de siete o más formación redondeos tras la evaluación, la coherencia de etiquetado se puede ver en el seguimiento de **relevancia** \> **Track** \> **Issue** \> progreso de aprendizaje de **resultados detallados** \> **Training progress**. Esta revisión se realiza por un problema a la vez. 
   
 1. En **el \> seguimiento de relevancia**, expanda la fila de un problema.
     
@@ -108,7 +108,7 @@ En la **pestaña \> seguimiento de relevancia** , expanda la fila de un problema
   
 ![Resumen de etiquetado del seguimiento de relevancia](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Palabras clave
+### <a name="keywords"></a>Keywords
 
 Una palabra clave es una cadena única, palabra, frase o secuencia de palabras en un archivo identificado por Advanced eDiscovery como un indicador significativo de si un archivo es relevante. La palabra clave "include" de la lista de columnas y los pesos en archivos etiquetados como relevantes, y las columnas "excluir" enumeran palabras clave y pesos en archivos etiquetados como no relevantes.
   
@@ -133,7 +133,7 @@ El panel **progreso del entrenamiento** incluye un gráfico de progreso de forma
  **Gráfico de progreso de formación**: muestra el grado de estabilidad del aprendizaje de relevancia después de varios ciclos de aprendizaje de relevancia en comparación con el valor de la medida de F. A medida que nos desplazamos de izquierda a derecha en el gráfico, el intervalo de confianza se reduce y se usa, junto con la medida F, por relevancia de eDiscovery avanzado para determinar la estabilidad cuando se optimizan los resultados de la formación de relevancia.
   
 > [!NOTE]
-> Relevancia usa F2, una métrica de F-Measure donde la recuperación recibe dos veces el peso de la precisión. Para los casos con alta riqueza (más de 25%), relevancia usa F1 (proporción de 1:1). La relación de medida F se puede configurar en la **Configuración avanzada**de la **configuración** \> de relevancia. 
+> Relevancia usa F2, una métrica de F-Measure donde la recuperación recibe dos veces el peso de la precisión. Para los casos con alta riqueza (más de 25%), relevancia usa F1 (proporción de 1:1). La relación de medida F se puede configurar en **Relevance setup** la \> **Configuración avanzada**de la configuración de relevancia. 
   
 ### <a name="batch-calculation-results"></a>Resultados del cálculo por lotes
 

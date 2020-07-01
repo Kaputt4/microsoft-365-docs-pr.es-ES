@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Obtenga información acerca de cómo los administradores pueden configurar & usar un conector nativo para importar datos de la herramienta instantánea de chat de Bloomberg a Microsoft 365.
-ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector de datos para importar y archivar los datos de la herramienta instantánea de chat de Bloomberg en Microsoft 365.
+ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818459"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936563"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos de Instant Bloomberg
 
@@ -37,10 +37,10 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 1. Su organización trabaja con Bloomberg para configurar un sitio de SFTP de Bloomberg. También trabajará con Bloomberg para configurar el sitio web Bloomberg para copiar los mensajes de chat en su sitio de SFTP de Bloomberg.
 
 2. Una vez cada 24 horas, los mensajes de chat de Bloomberg instantáneo se copian en el sitio de SFTP de Bloomberg.
-    
+
 3. El conector de Bloomberg instantáneo que se crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de SFTP de Bloomberg todos los días y transfiere los mensajes de chat de las 24 horas anteriores a un área de almacenamiento seguro de Azure en la nube de Microsoft. El conector también convierte el contenido de un chat en un formato de mensaje de correo electrónico.
-    
-4. El conector importa los elementos de mensaje de chat al buzón de un usuario específico. Se creará una nueva carpeta llamada InstantBloomberg en el buzón de correo del usuario específico y se importarán los elementos en ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Todos los mensajes de chat contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación debe contener un UUID de Bloomberg y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID del usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de chat, no se importará el elemento.
+
+4. El conector importa los elementos de mensaje de chat al buzón de un usuario específico. Se creará una nueva carpeta llamada InstantBloomberg en el buzón de correo del usuario específico y se importarán los elementos en ella. El conector lo hace mediante el valor de la propiedad *CorporateEmailAddress* . Todos los mensajes de chat contienen esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación debe contener un UUID de Bloomberg y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizada. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID del usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizada o en la propiedad *CorporateEmailAddress* del elemento de chat, no se importará el elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -52,21 +52,21 @@ Muchos de los pasos de implementación necesarios para archivar datos instantán
 
 - Configure un sitio Bloomberg SFTP (protocolo seguro de transferencia de archivos). Después de trabajar con Bloomberg para configurar el sitio de SFTP, los datos de Bloomberg instantáneo se cargan al sitio de SFTP todos los días. El conector que se crea en el paso 2 se conecta a este sitio de SFTP y transfiere los datos de chat a buzones de correo de Microsoft 365. SFTP también cifra los datos de los chats de Bloomberg instantáneos que se envían a los buzones durante el proceso de transferencia.
 
-    Para obtener información sobre Bloomberg SFTP (también denominado *BB-SFTP*):
+  Para obtener información sobre Bloomberg SFTP (también denominado *BB-SFTP*):
 
-    - Consulte el documento "estándares de conectividad de SFTP" en el [soporte de Bloomberg](https://www.bloomberg.com/professional/support/documentation/).
-    
-    - Póngase en contacto con el [soporte al cliente de Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
+  - Consulte el documento "estándares de conectividad de SFTP" en el [soporte de Bloomberg](https://www.bloomberg.com/professional/support/documentation/).
 
-    Después de trabajar con Bloomberg para configurar un sitio de SFTP, Bloomberg le proporcionará cierta información después de que responda al mensaje de correo electrónico de implementación de Bloomberg. Guarde una copia de la siguiente información. Se usa para configurar un conector en el paso 3.
+  - Póngase en contacto con el [soporte al cliente de Bloomberg](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
 
-    - Código de empresa, que es un identificador de su organización y se usa para iniciar sesión en el sitio de SFTP de Bloomberg.
+  Después de trabajar con Bloomberg para configurar un sitio de SFTP, Bloomberg le proporcionará cierta información después de que responda al mensaje de correo electrónico de implementación de Bloomberg. Guarde una copia de la siguiente información. Se usa para configurar un conector en el paso 3.
 
-    - Contraseña para el sitio de SFTP de Bloomberg
+  - Código de empresa, que es un identificador de su organización y se usa para iniciar sesión en el sitio de SFTP de Bloomberg.
 
-    - Dirección URL para el sitio de SFTP de Bloomberg (por ejemplo, sftp.bloomberg.com)
+  - Contraseña para el sitio de SFTP de Bloomberg
 
-    - Número de puerto para el sitio de SFTP de Bloomberg
+  - Dirección URL para el sitio de SFTP de Bloomberg (por ejemplo, sftp.bloomberg.com)
+
+  - Número de puerto para el sitio de SFTP de Bloomberg
 
 - El usuario que crea un conector para Bloomberg instantáneo en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online. Esto es necesario para agregar conectores en la página **conectores de datos** en el centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 
@@ -99,7 +99,7 @@ El siguiente paso es usar las claves públicas SSH y PGP y la dirección IP que 
 
 ## <a name="step-3-create-an-instant-bloomberg-connector"></a>Paso 3: crear un conector de Bloomberg instantáneo
 
-El último paso es crear un conector de Bloomberg instantáneo en el centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio Bloomberg de SFTP y transferir los mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365. 
+El último paso es crear un conector de Bloomberg instantáneo en el centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio Bloomberg de SFTP y transferir los mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **conectores de datos**, de inmediato,  >  **Bloomberg**.
 
@@ -117,7 +117,7 @@ El último paso es crear un conector de Bloomberg instantáneo en el centro de c
 
     - **Puerto SFTP:** El número de puerto para el sitio de SFTP de Bloomberg. El conector usa este puerto para conectarse al sitio de SFTP.
 
-5. En la página **asignación de usuarios** , habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
+5. En la página **asignación de usuarios** , habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
 
    > [!NOTE]
    > El conector importa los elementos de mensaje de chat al buzón de un usuario específico. Se creará una nueva carpeta llamada **InstantBloomberg** en el buzón de correo del usuario específico y se importarán los elementos en ella. El conector usa el valor de la propiedad *CorporateEmailAddress* . Todos los mensajes de chat contienen esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación de asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID del usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de chat, no se importará el elemento.

@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudar a identificar los archivos relevantes mientras se etiquetan en eDiscovery avanzado y para especificar los parámetros de costo.  '
-ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudar a identificar los archivos relevantes mientras se etiquetan en eDiscovery avanzado y para especificar los parámetros de costo.
+ms.openlocfilehash: 61ec74109f13d8056047e0aaf14aaa87c846e17f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630557"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936459"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definir palabras clave resaltadas y opciones avanzadas en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-En la exhibición avanzada de documentos electrónicos, es posible agregar palabras clave definidas por el usuario a su relevancia a fin de ayudarle a identificar los archivos relevantes durante el etiquetado. Las palabras clave se mostrarán en los colores especificados en la **etiqueta relevancia \> **. 
+En la exhibición avanzada de documentos electrónicos, es posible agregar palabras clave definidas por el usuario a su relevancia a fin de ayudarle a identificar los archivos relevantes durante el etiquetado. Las palabras clave se mostrarán en los colores especificados en la ** \> etiqueta relevancia**. 
   
 Tal y como se describe a continuación, se pueden agregar listas de palabras clave y los colores asignados a la lista de palabras clave y los problemas relacionados. Una información sobre herramientas muestra la descripción de la palabra clave, si existe, como se indica con un doble subrayado.
   
@@ -38,7 +38,7 @@ Tal y como se describe a continuación, se pueden agregar listas de palabras cla
 
 1. En la **pestaña \> configuración** de relevancia para la relevancia, seleccione **palabras clave resaltadas**.
     
-2. Haga clic **+** en el icono para agregar palabras clave. Se muestra el cuadro de diálogo **Agregar nuevas palabras clave** . 
+2. Haga clic en el **+** icono para agregar palabras clave. Se muestra el cuadro de diálogo **Agregar nuevas palabras clave** . 
     
 3. En **palabras clave**, escriba la lista de palabras clave, separando las palabras clave con comas. 
     
@@ -54,7 +54,7 @@ Tal y como se describe a continuación, se pueden agregar listas de palabras cla
     
     ![Lista de palabras clave de configuración de relevancia](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-Se mostrarán las palabras clave definidas por el usuario, en la etiqueta colores \> especificados en la relevancia. 
+Se mostrarán las palabras clave definidas por el usuario, en la etiqueta colores especificados en la relevancia \> . 
   
 ## <a name="specifying-relevance-setup-advanced-settings"></a>Especificación de la configuración avanzada de la configuración de relevancia
 
@@ -70,7 +70,7 @@ Esta configuración afecta a los gráficos Track y decida en importancia.
     
     ![Parámetros de costo de configuración de relevancia](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. Haga clic en **Guardar**. Se guarda la configuración seleccionada.
+3. Haga clic en **Guardar **. Se guarda la configuración seleccionada.
     
 ## <a name="see-also"></a>Vea también
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Use este artículo para obtener más información sobre cómo habilitar y configurar la administración del acceso con privilegios en Office 365.
-ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036425"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936325"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introducción a la administración del acceso con privilegios
 
@@ -81,7 +81,7 @@ Una vez que se haya concedido la aprobación, el usuario que realiza la solicitu
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **grupos** > **Agregar un grupo**.
+2. En el centro de administración, vaya a **grupos**  >  **Agregar un grupo**.
 
 3. Seleccione **grupo de seguridad habilitado para correo** y, a continuación, complete los campos **nombre**, **dirección de correo electrónico de grupo**y **Descripción** para el nuevo grupo.
 
@@ -99,7 +99,7 @@ Una vez que se haya concedido la aprobación, el usuario que realiza la solicitu
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **configuración > configuración >** > **acceso con privilegios**de privacidad & seguridad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Habilite el control **requerir aprobaciones para las tareas privilegiadas** .
 
@@ -134,7 +134,7 @@ Puede crear y configurar hasta 30 directivas de acceso privilegiadas para su org
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -180,7 +180,7 @@ Las solicitudes de acceso con privilegios son válidas durante un máximo de 24 
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -220,7 +220,7 @@ Después de crear una solicitud de aprobación, el estado de la solicitud de ele
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -248,7 +248,7 @@ Cuando se crea una solicitud de aprobación, los miembros del grupo aprobador re
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -290,7 +290,7 @@ Si ya no es necesario en su organización, puede eliminar una directiva de acces
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
@@ -316,7 +316,7 @@ Si es necesario, puede deshabilitar la administración del acceso con privilegio
 
 1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
-2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
+2. En el centro de administración, vaya a **configuración**  >  **org Settings**  >  **Security &**  >  **acceso privilegiado a**la privacidad.
 
 3. Habilite el control **de acceso requerir aprobaciones para privilegios** .
 

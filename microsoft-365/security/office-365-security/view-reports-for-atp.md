@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613365"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44937000"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -51,9 +51,9 @@ Los filtros y los desgloses de la información permiten clasificaciones más det
 
 |||
 |---|---|
-|Por tipo de detección|¿Qué directiva ayudó a detectar estas amenazas?|
+|Por tipo de Directiva|¿Qué directiva ayudó a detectar estas amenazas?|
 |Por tecnología de detección|¿Qué tecnología subyacente de Microsoft capturó la amenaza?|
-|Por estado de entrega|¿Qué ocurrió con los mensajes de correo electrónico detectados como amenazas?|
+|Por estado de entrega|¿Cuál era el estado de entrega final de los mensajes de correo electrónico detectados como amenazas?|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ Estas vistas le ofrecen la opción de exportar, mediante un clic de botón (en v
 
 ![Este gráfico muestra exportar como una opción en el menú para la vista de malware, directamente entre crear programación y solicitar informe.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Nota**: el número máximo de entradas que se pueden exportar para **phish** y **Malware** solo es inferior a 10000. Si exporta una vista, se exportan sólo las entradas 10000 más recientes.
+> [!NOTE]
+> El número máximo de entradas que se pueden exportar para **phish** y **malware** solo es inferior a 10000. Si exporta una vista, se exportan sólo las entradas 10000 más recientes. En los datos exportados, la columna _recuento de mensajes_ representa el número de mensajes detectados por la tecnología de detección y el tipo de directiva.    
 
 En las vistas información general y mensajes de correo electrónico se muestra información en horas de procesamiento, en lugar de en 24 horas (demanda re. la velocidad aumentada aquí ha sido una señal clara).
 
@@ -80,7 +81,7 @@ Para obtener el estado detallado de un día, desplace el puntero sobre el gráfi
 
 ![Datos de estado de protección contra amenazas ATP para un día](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-De forma predeterminada, el informe de estado de protección contra amenazas muestra datos de los últimos siete días. Sin embargo, puede elegir **filtros** y cambiar el intervalo de fechas para ver los datos de hasta 90 días. (Si usa una suscripción de prueba, es posible que se limite a 30 días de datos).
+De forma predeterminada, el informe de estado de protección contra amenazas muestra datos de los últimos siete días. Sin embargo, puede elegir **filtros** y cambiar el intervalo de fechas para ver los datos de hasta 90 días para la vista agregada y 30 días para la vista de detalles. (Si usa una suscripción de prueba, es posible que se limite a 30 días de datos).
 
 ![Filtros de estado de protección contra amenazas ATP](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ Para ver este informe, en el [centro de seguridad y &amp; cumplimiento](https://
 
 ![Informe de tipos de archivos de ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Al pasar el mouse sobre un día concreto, puede ver el desglose de los tipos de archivos malintencionados detectados por los [datos adjuntos seguros de ATP](atp-safe-attachments.md) y la [ &amp; protección antimalware contra correo no deseado](anti-spam-and-anti-malware-protection.md).
+Al pasar el mouse sobre un día concreto, puede ver el desglose de los tipos de archivos malintencionados detectados por los [datos adjuntos seguros de ATP](atp-safe-attachments.md) y la [ &amp; protección antimalware contra correo no deseado](anti-spam-and-anti-malware-protection.md). La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles sólo permite diez días de filtrado. 
   
 ![Datos del informe de tipos de archivos ATP para un día](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 

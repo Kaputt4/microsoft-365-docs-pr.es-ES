@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d99a2f9a840c3410ad63cb2fb49b64e208e01bb8
-ms.sourcegitcommit: a4a01a0d7600972a41ee6bfac0df282f2ccc9bd8
+ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44859040"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936543"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Cumplimiento de la comunicación en Microsoft 365
 

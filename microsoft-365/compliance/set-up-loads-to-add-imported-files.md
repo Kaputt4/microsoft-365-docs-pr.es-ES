@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar la formación de relevancia en la exhibición avanzada de documentos electrónicos.  '
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar la formación de relevancia en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636298"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936821"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En eDiscovery avanzado, una carga es un nuevo lote de archivos que se agregan a un caso. De forma predeterminada, se define una carga y se agregan todos los archivos importados. Antes de realizar la formación de relevancia, los archivos importados deben agregarse a la carga. 
   
@@ -97,7 +97,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
 
 1. En la **pestaña \> configuración de relevancia** para la relevancia, seleccione **carga**.
     
-2. En cargar **Administración**, haga clic **+** en el icono para agregar una carga. Se muestra un mensaje de confirmación. 
+2. En cargar **Administración**, haga clic en el **+** icono para agregar una carga. Se muestra un mensaje de confirmación. 
     
 3. Haga clic en **Sí** para continuar. Se muestra el cuadro de diálogo **Agregar nueva carga** . 
     
@@ -116,7 +116,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
     
     A continuación, puede etiquetar archivos y ejecutar una operación de cálculo. El etiquetado permite que la relevancia determine si las cargas son similares o distintas, y le permite seguir trabajando en el nuevo conjunto de archivos.
     
-7. Una vez revisado el conjunto de la puesta en marcha, vea el seguimiento de la **relevancia \> ** de los resultados de la puesta al día. 
+7. Una vez revisado el conjunto de la puesta en marcha, vea el ** \> seguimiento** de la relevancia de los resultados de la puesta al día. 
     
 1. Si se agregó la nueva carga de archivos durante el entrenamiento de relevancia (es decir, el problema todavía no ha pasado por el cálculo del lote), **continúe con el aprendizaje** en el paso siguiente, independientemente de los resultados de la puesta en marcha. 
     

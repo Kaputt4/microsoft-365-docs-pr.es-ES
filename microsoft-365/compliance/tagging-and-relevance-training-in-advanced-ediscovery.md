@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de eDiscovery avanzado.  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de aprendizaje de relevancia de eDiscovery avanzado.
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636268"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936676"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Aprendizaje de la etiqueta y la relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En este tema se describe el procedimiento para trabajar con el módulo de aprendizaje de relevancia para la exhibición avanzada de documentos electrónicos. 
   
@@ -50,11 +50,11 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 |-----|-----|-----|-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     
-  - Las palabras clave definidas por el administrador o el administrador de casos al resaltar palabras clave \> (palabras clave resaltadas de configuración de relevancia), se mostrarán (en los colores especificados) para ayudar a identificar los archivos relevantes al etiquetar. Si una palabra clave tiene un doble subrayado, se puede hacer clic para mostrar una sugerencia de herramienta con la descripción de la palabra clave. 
+  - Las palabras clave definidas por el administrador o el administrador de casos al resaltar palabras clave ( \> palabras clave resaltadas de configuración de relevancia), se mostrarán (en los colores especificados) para ayudar a identificar los archivos relevantes al etiquetar. Si una palabra clave tiene un doble subrayado, se puede hacer clic para mostrar una sugerencia de herramienta con la descripción de la palabra clave. 
     
     De forma opcional, en la pestaña **etiqueta** , haga clic en **configuración de etiqueta** para establecer las siguientes opciones: 
     
@@ -76,7 +76,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
     
 ## <a name="working-with-the-sample-files-list"></a>Trabajar con la lista de archivos de ejemplo
 
-La lista de archivos de muestra le permite ver una lista de los archivos en un ejemplo de aprendizaje y realizar diversas acciones en uno o más archivos. En la ficha **etiqueta** de **relevancia** \> , el panel **archivos de ejemplo** izquierdo muestra una lista de archivos de ejemplo para el procesamiento con procesos de evaluación, formación, puesta en marcha e incoherencias. 
+La lista de archivos de muestra le permite ver una lista de los archivos en un ejemplo de aprendizaje y realizar diversas acciones en uno o más archivos. En la **Relevance** \> ficha **etiqueta** de relevancia, el panel **archivos de ejemplo** izquierdo muestra una lista de archivos de ejemplo para el procesamiento con procesos de evaluación, formación, puesta en marcha e incoherencias. 
   
 1. En la **ficha \> etiqueta de relevancia** , seleccione los archivos de ejemplo en la lista desplegable del panel izquierdo. Los archivos de ejemplo se muestran en el panel izquierdo. 
     

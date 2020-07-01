@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689294"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936855"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -93,10 +93,15 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 
 | **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
 |:-----|:-----|:-----|
-|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
-| Reviewers | None | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+|Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
+| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
   
 Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los mensajes de correo de cada usuario en el grupo de distribución. Cuando asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los mensajes de correo electrónico enviados a ese grupo, no los mensajes de correo electrónico individuales recibidos por cada miembro del grupo.
+
+Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea supervisar los chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Más adelante en estos pasos, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
+
+>[!IMPORTANT]
+>Debe archivar una solicitud con soporte técnico de Microsoft para permitir que su organización use la interfaz gráfica de usuario del centro de seguridad & cumplimiento para buscar los datos de chat de Microsoft Teams para los usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información acerca de la configuración de grupos, vea:
 

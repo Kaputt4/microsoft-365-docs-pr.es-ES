@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844629"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936634"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -56,6 +56,19 @@ Cada acción de mejora merece 10 puntos o menos. La mayoría se puntuan de una m
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
 Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure AD, ATP de Microsoft, ATP de Azure y seguridad de aplicaciones en la nube. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
+
+### <a name="security-defaults"></a>Valores predeterminados de seguridad
+
+La calificación segura de Microsoft tiene acciones de mejora actualizadas para admitir los [valores predeterminados de seguridad en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), que facilitan la protección de la organización con una configuración de seguridad preconfigurada para ataques comunes.
+
+Si activa los valores predeterminados de seguridad, se le otorgarán puntos completos para las siguientes acciones de mejora:
+
+- Asegurarse de que todos los usuarios puedan completar la autenticación multifactor para el acceso seguro (9 puntos)
+- Requerir MFA para roles administrativos (10 puntos)
+- Habilitar la Directiva para bloquear la autenticación heredada (7 puntos)
+
+>[!IMPORTANT]
+>Los valores predeterminados de seguridad incluyen características de seguridad que proporcionan seguridad similar a las acciones de mejora "Directiva de riesgo de inicio de sesión" y "Directiva de riesgos de usuario". En lugar de configurar estas directivas sobre los valores predeterminados de seguridad, se recomienda actualizar sus Estados a "resuelto a través de una mitigación alternativa".
 
 ## <a name="required-permissions"></a>Permisos necesarios
 

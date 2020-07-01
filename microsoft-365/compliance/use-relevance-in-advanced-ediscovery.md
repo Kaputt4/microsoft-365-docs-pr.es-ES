@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Obtenga información sobre el módulo de relevancia en la exhibición avanzada de documentos electrónicos, incluido un flujo de trabajo y instrucciones y pasos para la revisión de archivos y aprendizaje.  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre el módulo de relevancia en la exhibición avanzada de documentos electrónicos, incluido un flujo de trabajo y instrucciones y pasos para la revisión de archivos y aprendizaje.
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626396"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936613"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Usar el módulo de relevancia en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la exhibición avanzada de documentos electrónicos, el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
   

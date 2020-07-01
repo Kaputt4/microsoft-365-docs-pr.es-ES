@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Obtenga información sobre cómo definir la regla para omitir texto específico al usar los módulos Analyze y Process en la exhibición avanzada de documentos electrónicos.  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo definir la regla para omitir texto específico al usar los módulos Analyze y Process en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631257"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936897"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Establecer la opción omitir texto para analizar en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La característica omitir texto se puede aplicar a todos los módulos avanzados de eDiscovery (o a cualquiera de ellos): analizar (casi duplicados, subprocesos de correo electrónico, temas) y relevancia. El texto omitido no aparecerá en los archivos que se muestren en relevancia y el análisis o cálculos descartará el texto omitido.
   
@@ -62,7 +62,7 @@ Las expresiones regulares se pueden usar al definir omitir texto. A continuació
     
     **Es la segunda oración y segunda línea "**
     
-    primero la expresión regular (.\*) $ dará como resultado:
+    primero la expresión regular (. \* ) $ dará como resultado:
     
     **"Esto es**
     
@@ -76,7 +76,7 @@ Las expresiones regulares se pueden usar al definir omitir texto. A continuació
     
     Por ejemplo, la siguiente expresión regular quitará los avisos de declinación de responsabilidad y las instrucciones legales que estaban en el hilo de correo electrónico entre las cadenas de inicio y finalización:
     
-    **Este mensaje contiene información confidencial (. | \s)\*si se requiere la comprobación, solicite una copia impresa de la versión**
+    **Este mensaje contiene información confidencial (. | \s) \* si se requiere la comprobación, solicite una copia impresa de la versión**
     
 - Para quitar un aviso de declinación de responsabilidades (incluidos los caracteres especiales): 
     
@@ -90,11 +90,11 @@ Las expresiones regulares se pueden usar al definir omitir texto. A continuació
     
     la expresión regular para quitar el aviso de declinación de responsabilidades anterior debería ser: 
     
-    **\/\\*\\Este mensaje contiene información\.confidencial (. | \s)\* si se requiere la comprobación, solicite una copia impresa de\. la versión\/\\*\\**
+    **\/\\*\\Este mensaje contiene información confidencial \. (. | \s) \* si se requiere la comprobación, solicite una copia impresa de la versión \.\/\\*\\**
     
 - Reglas de expresiones regulares:
     
-  - Los caracteres que no forman parte del alfabeto excepto los espacios, "_" y "-" deben ir precedidos de "\".
+  - Los caracteres que no forman parte del alfabeto excepto los espacios, "_" y "-" deben ir precedidos de " \" .
     
   - El campo eExpression normal puede tener una longitud ilimitada.
     
@@ -103,7 +103,7 @@ Las expresiones regulares se pueden usar al definir omitir texto. A continuació
   
 ## <a name="define-ignore-text-rule"></a>Definir la regla de omisión de texto
 
-1. En la sección **omitir texto** de la pestaña **administrar \> \> opciones** de análisis, haga clic **+** en el icono para agregar una regla. 
+1. En la sección **omitir texto** de la pestaña **administrar \> \> Opciones** de análisis, haga clic en el **+** icono para agregar una regla. 
     
 2. En el cuadro de diálogo **Agregar y omitir texto** , en el campo **nombre** , escriba un nombre para la regla de omitir texto. 
     

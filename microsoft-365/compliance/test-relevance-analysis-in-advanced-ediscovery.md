@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Obtenga información sobre cómo usar la pestaña prueba tras el cálculo del lote en la exhibición avanzada de documentos electrónicos para probar, comparar y validar la calidad general de procesamiento.  '
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre cómo usar la pestaña prueba tras el cálculo del lote en la exhibición avanzada de documentos electrónicos para probar, comparar y validar la calidad general de procesamiento.
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637204"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936213"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Análisis de relevancia de prueba en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La pestaña prueba de eDiscovery avanzado permite probar, comparar y validar la calidad general de procesamiento. Estas pruebas se realizan después del cálculo por lotes. Al etiquetar los archivos de la colección, un experto realiza la última decisión sobre si cada archivo etiquetado es realmente relevante para el caso. 
   
@@ -62,7 +62,7 @@ Esta prueba proporciona estadísticas y una comparación entre el conjunto de re
     
 9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
     
-10. Revise y etiquete cada uno de los archivos en la pestaña **etiqueta de relevancia \> ** y, cuando haya terminado, haga clic en **calcular**.
+10. Revise y etiquete cada uno de los archivos en la pestaña ** \> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**.
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. En la siguiente figura se muestra un ejemplo. 
     
@@ -106,7 +106,7 @@ La prueba "probar el sector" realiza una prueba similar a la prueba "probar el r
     
 9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
     
-10. Revise y etiquete cada uno de los archivos en la pestaña **etiqueta de relevancia \> ** y, cuando haya terminado, haga clic en **calcular**. 
+10. Revise y etiquete cada uno de los archivos en la pestaña ** \> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**. 
     
 11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. 
     

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en la exhibición avanzada de documentos electrónicos. '
-ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630697"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936697"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Etiquetado y evaluación en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En esta sección se describe el procedimiento para el módulo de evaluación de relevancia de eDiscovery avanzado. 
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773721"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936355"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Ley de transferencia y responsabilidad de seguros de salud (HIPAA) & alta tecnología
 
@@ -98,7 +98,7 @@ El [Portal del Centro de confianza](https://www.microsoft.com/trustcenter/STP/de
 
 Para ayudar a los clientes con esta tarea, Microsoft ha publicado estas guías:
 
-- *Guía de implementación de la ley HIPAA/tecnología de alta disponibilidad* para [Azure](https://aka.ms/azurehipaaguidance) y para [Dynamics 365 y Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Escrito para los responsables de privacidad, seguridad y cumplimiento, y para los responsables de la implementación de la ley HIPAA y alta tecnología, describen los pasos concretos que su organización puede llevar a cabo para mantener el cumplimiento.
+- *Guía de implementación de la ley HIPAA/tecnología de alta disponibilidad* para [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/) y para [Dynamics 365 y Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Escrito para los responsables de privacidad, seguridad y cumplimiento, y para los responsables de la implementación de la ley HIPAA y alta tecnología, describen los pasos concretos que su organización puede llevar a cabo para mantener el cumplimiento.
 - La [Guía práctica para diseñar soluciones de mantenimiento seguro con Microsoft Azure](https://aka.ms/azureindustrysecurity) le ayudará a comprender mejor lo que se necesita para adoptar correctamente un servicio en la nube de manera segura.
 - [La administración de los requisitos de privacidad y seguridad de HIPAA en la nube de Microsoft](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) ofrece una breve descripción general de los requisitos de la regla. También se proporciona un análisis detallado de cómo se crearon los servicios en la nube de Microsoft con metodologías que se ajustan a dichos requisitos, así como instrucciones sobre cómo crear soluciones listas para el cumplimiento normativo.
 

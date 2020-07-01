@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717278"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936448"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -40,16 +40,12 @@ Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprob
 
 La implementación centralizada no es compatible con lo siguiente:
   
-- Complementos que tengan como objetivo Word, Excel o PowerPoint en Office 2013
-    
+- Complementos que tengan como objetivo Word, Excel o PowerPoint en Office 2013 
 - Un servicio de directorio local
-    
+- Implementación de complementos en un buzón de correo local de Exchange
 - Implementación de complemento a SharePoint  
-
 - Aplicaciones de Teams
-   
 - Implementación complementos de modelo de objetos componentes (COM) o de Visual Studio Tools para Office (VSTO)
-    
 - Implementaciones de Microsoft 365 que no incluyen Exchange, como Microsoft 365 apps for Business
 
 ### <a name="office-requirements"></a>Requisitos de Office

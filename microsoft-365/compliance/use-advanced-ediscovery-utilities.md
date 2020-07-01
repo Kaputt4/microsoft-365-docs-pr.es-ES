@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Obtenga información sobre las utilidades en eDiscovery avanzado, incluidos registro de casos, datos claros, errores de proceso, modificación de relevancia y análisis de transparencia.  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre las utilidades en eDiscovery avanzado, incluidos registro de casos, datos claros, errores de proceso, modificación de relevancia y análisis de transparencia.
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633395"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936623"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Usar herramientas de eDiscovery avanzado
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Las utilidades que se muestran y están disponibles en eDiscovery avanzado dependen de roles de usuario y contexto.
   
@@ -38,7 +38,7 @@ El archivo de registro también se puede descargar en el equipo del cliente. La 
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la pestaña **utilidades de \> configuración y utilidades** , seleccione **configuración \> del registro de casos**.
+2. En la pestaña ** \> utilidades de configuración y utilidades** , seleccione ** \> configuración del registro de casos**.
     
 3. Seleccione el **nivel de registro** de la siguiente manera: 
     
@@ -77,7 +77,7 @@ En esta sección se describe cómo omitir o revertir un ejemplo de relevancia.
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la ficha **utilidades de \> configuración y utilidades** , seleccione **modificar relevancia**.
+2. En la ficha ** \> utilidades de configuración y utilidades** , seleccione **modificar relevancia**.
     
 3. Seleccione una de las opciones: 
     
@@ -99,7 +99,7 @@ En un escenario de casos de varios problemas, se puede generar un informe de an�
   
 1. En la barra de menús, haga clic en el icono de **cogwheel** . 
     
-2. En la ficha **utilidades de \> configuración y utilidades** , seleccione **configuración \> de análisis de transparencia**.
+2. En la ficha ** \> utilidades de configuración y utilidades** , seleccione ** \> configuración de análisis de transparencia**.
     
 3. En * * ID de archivo * *, escriba el identificador de archivo del archivo que se va a procesar.
     

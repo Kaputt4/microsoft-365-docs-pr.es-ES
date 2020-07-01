@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Obtenga información sobre las etiquetas, los módulos cruzados y la configuración de inquilino que puede definir en el nivel de escenario en la exhibición avanzada de documentos electrónicos.  '
-ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre las etiquetas, los módulos cruzados y la configuración de inquilino que puede definir en el nivel de escenario en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630567"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936427"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definir la configuración de casos y espacios empresariales en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 El caso de eDiscovery avanzado y la configuración de inquilino se describen en este tema.
   
@@ -44,7 +44,7 @@ Las siguientes opciones de configuración de varios módulos son opciones de may
     
 - Nombre para mostrar de archivo: identificador de archivo que se mostrará en la exhibición avanzada de documentos electrónicos para identificar el archivo, como alternativa al nombre para mostrar de exhibición de documentos electrónicos avanzado del título/ruta de acceso del archivo o asunto del correo electrónico.
     
-1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . \> Abrir **configuración y ficha \> configuración de casos de utilidades** - **módulo Cross**. 
+1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . Abrir **configuración y ficha \> configuración de casos de utilidades** - \> **módulo Cross**. 
     
 2. Seleccione una de las opciones de inicio de sesión de la **página predeterminada** : 
     
@@ -52,7 +52,7 @@ Las siguientes opciones de configuración de varios módulos son opciones de may
     
   - **Página casos**
     
-3. Haga clic en **Guardar**.
+3. Haga clic en **Guardar **.
     
 ## <a name="tenant-settings"></a>Configuración de espacios empresariales
 
@@ -68,7 +68,7 @@ El registro de eventos proporciona metadatos sobre el procesamiento avanzado de 
   
 1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . 
     
-2. En la pestaña Configuración de **inquilinos de configuración y \> utilidades** , seleccione Registro de **eventos**. Se muestran los datos del registro de eventos.
+2. En la pestaña Configuración de ** \> inquilinos de configuración y utilidades** , seleccione **registro de eventos**. Se muestran los datos del registro de eventos.
     
   - Para filtrar la salida del registro en un caso, seleccione el caso en la lista **casos** . 
     
@@ -76,7 +76,7 @@ El registro de eventos proporciona metadatos sobre el procesamiento avanzado de 
     
   - Para modificar el orden de las columnas, haga clic y arrastre el encabezado de columna.
     
-  - Para desplazarse entre las páginas **\>** de **\<** registro, haga clic en e iconos. 
+  - Para desplazarse entre las páginas de registro, haga clic en **\>** e **\<** iconos. 
     
 ### <a name="system-information"></a>Información del sistema
 
@@ -84,7 +84,7 @@ La información del sistema de versión de eDiscovery avanzada y las tareas acti
   
 1. Abra **configuración y utilidades** haciendo clic en el icono **cogwheel** . 
     
-2. En la pestaña Configuración de **inquilinos de configuración y utilidades \> ** , seleccione **información del sistema**. Se muestra la información de la versión.
+2. En la pestaña Configuración de ** \> inquilinos de configuración y utilidades** , seleccione **información del sistema**. Se muestra la información de la versión.
     
 La visualización se puede actualizar haciendo clic en el icono de **actualización** debajo de la información del espacio empresarial. 
   

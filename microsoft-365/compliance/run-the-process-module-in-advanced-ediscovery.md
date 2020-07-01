@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Obtenga información sobre las directrices para preparar archivos de casos de datos para el análisis con eDiscovery avanzado.  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenga información sobre las directrices para preparar archivos de casos de datos para el análisis con eDiscovery avanzado.
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626466"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936203"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso en la exhibición avanzada de documentos electrónicos (Classic)
 
-Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el **proceso**de **preparación** \> . 
+Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el proceso de **preparación** \> **Process**. 
   
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Instrucciones: preparación de datos para la exhibición avanzada de documentos electrónicos
 
@@ -42,7 +42,7 @@ Los archivos de casos se cargan en la exhibición avanzada de documentos electr�
     
 - **Tipo de archivo y nombre**:
     
-  - EDiscovery avanzado puede procesar archivos de distintos formatos y extraer archivos nativos cargados en un formato estándar, como \*. TXT, HTML o. XML. El procesamiento de archivos de texto es más rápido que los archivos nativos. Los archivos de texto extraídos se almacenan en la carpeta Case.
+  - EDiscovery avanzado puede procesar archivos de distintos formatos y extraer archivos nativos cargados en un formato estándar, como \* . TXT, HTML o. XML. El procesamiento de archivos de texto es más rápido que los archivos nativos. Los archivos de texto extraídos se almacenan en la carpeta Case.
     
   - No cargue archivos que no se puedan extraer, como archivos del sistema o imágenes gráficas. Estos archivos pueden retrasar el procesamiento.
     

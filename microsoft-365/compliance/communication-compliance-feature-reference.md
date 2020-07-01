@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689248"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936789"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -70,10 +70,16 @@ La adición de grupos y listas de distribución a las directivas de cumplimiento
 
 Con las directivas de cumplimiento de la comunicación, puede elegir analizar los mensajes en una o varias de las plataformas de comunicación siguientes como un grupo o como orígenes independientes. Las comunicaciones capturadas en estas plataformas se conservan durante siete años para cada directiva de forma predeterminada, incluso si los usuarios dejan la organización y sus buzones de correo se eliminan.
 
-- **Microsoft Teams**: se pueden analizar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats y datos adjuntos de Microsoft teams que cumplan las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
+- **Microsoft Teams**: se pueden analizar las comunicaciones de chat en los canales públicos y privados de Microsoft Teams y en los chats individuales. Cuando se asignan usuarios a una directiva de cumplimiento de la comunicación con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los equipos de Microsoft en los que los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para las plantillas de directiva predefinidas y está seleccionada de forma predeterminada en la plantilla de directiva personalizada. Equipos chats la coincidencia de las condiciones de la Directiva de cumplimiento de comunicaciones puede tardar hasta 24 horas en procesarse. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
     - **Para las comunicaciones de chat de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de cumplimiento de la comunicación. Esta configuración es para relaciones de usuario y chat uno a uno o uno a varios.
     - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Microsoft 365 que desee analizar que contenga un usuario específico a la Directiva de cumplimiento de la comunicación. Si agrega el mismo usuario a otros canales de Microsoft Teams o a grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de cumplimiento de la comunicación.
+    - **Para las comunicaciones de chat de Microsoft Teams con entornos de correo electrónico híbridos**: el cumplimiento de la comunicación puede supervisar los mensajes de chat para los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para los usuarios con buzones locales o externos para supervisar. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de **usuarios y grupos supervisados** en el Asistente para directivas.
+
+    >[!IMPORTANT]
+    >Debe archivar una solicitud con soporte técnico de Microsoft para permitir que su organización use la interfaz gráfica de usuario del centro de seguridad & cumplimiento para buscar los datos de chat de Microsoft Teams para los usuarios locales. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams en los buzones de correo basados en la nube para los usuarios locales.
 
 - **Correo electrónico de Exchange**: los buzones hospedados en Exchange online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el análisis de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que cumplen las condiciones de la Directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de la comunicación son los mismos que los [tipos de archivo compatibles con las visitas de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 

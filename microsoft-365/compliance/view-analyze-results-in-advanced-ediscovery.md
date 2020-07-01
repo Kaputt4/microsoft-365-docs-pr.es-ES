@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos, incluidas las definiciones de las opciones de tarea mostradas.  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos, incluidas las definiciones de las opciones de tarea mostradas.
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626366"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936953"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Ver los resultados de ANALYZE en eDiscovery avanzado (clásico)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la exhibición avanzada de documentos electrónicos, el progreso y los resultados del proceso de análisis se pueden ver en varias pantallas, como se describe a continuación.
   
 ## <a name="view-analyze-task-status"></a>Ver el estado de la tarea de análisis
 
-En **preparar \> el \> estado \> **de la tarea de resultados del análisis, el estado se muestra durante y después de analizar la ejecución del proceso. 
+En **preparar el estado de la tarea de \> \> resultados \> del análisis**, el estado se muestra durante y después de analizar la ejecución del proceso. 
   
 ![Analizar el estado de la tarea](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   

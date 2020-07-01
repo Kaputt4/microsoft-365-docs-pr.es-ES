@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818970"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936153"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -61,7 +61,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 
 [Introducción al cumplimiento de la comunicación](communication-compliance-configure.md) (actualizado)<br>Requisitos de licencia y permisos actualizados.
 
-### <a name="customer-key"></a>Clave de cliente
+### <a name="customer-key"></a>Clave del cliente
 
 [Desplazamiento o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md) (actualizada)<br>Actualizaciones de la organización que ayudan a aclarar qué teclas puede y qué no puede hacer.
 
@@ -112,7 +112,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 [Usar las etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de microsoft 365 y los sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md) (actualización)<br>Los cambios incluyen:
 
 - Se quitaron las instrucciones de Azure AD y en su lugar se vinculó a la [información autoritativa de Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
-- Se actualizó la sección [Cómo configurar las opciones de configuración de sitio y grupo cuando se crea o edita una etiqueta de confidencialidad](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) con información sobre la **privacidad de la configuración de sitios de Microsoft Teams conectados a grupos de Office 365** , que incluye la nueva opción **ninguno** .
+- Se actualizó la sección [Cómo configurar el sitio y el grupo](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) con información acerca de la **privacidad de la configuración de sitios de Microsoft Teams conectados a grupos de Office 365** , que incluye la nueva opción **ninguno** .
 - Se agregó una nota que describe cómo solo estarán disponibles las etiquetas con la configuración de sitio y grupo cuando los usuarios creen equipos, grupos y sitios. Esta funcionalidad se implementa gradualmente para las organizaciones.
 
 [Restringir el acceso al contenido mediante las etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md) (actualizado)<br>[Nueva sección](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) con opciones de cifrado de ejemplo para algunas de las configuraciones más utilizadas para proteger documentos y mensajes de correo electrónico.
@@ -160,7 +160,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 
 [Autoridad del Reglamento prudencial australiano (APRA)](offering-APRA-Australia.md) (actualizado)<br>Contenido alineado para nuevos estándares normativos.
 
-### <a name="customer-key"></a>Clave de cliente
+### <a name="customer-key"></a>Clave del cliente
 
 [Cifrado de servicio con clave de cliente](customer-key-overview.md) (nueva)<br>Artículo nuevo que presenta la clave de cliente y conceptos relacionados, como BitLocker y el cifrado de servicio, y cómo funcionan conjuntamente.
 
