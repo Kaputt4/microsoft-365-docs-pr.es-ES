@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: 'Obtenga información sobre cómo obtener acceso a eDiscovery avanzado desde el Centro de seguridad y cumplimiento, así como revisar el flujo de trabajo típico para usar eDiscovery avanzado.  '
-ms.openlocfilehash: b824183c88e4bbf300c2e07c9e8802dfb704aadf
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: Obtenga información sobre cómo obtener acceso a eDiscovery avanzado desde el Centro de seguridad y cumplimiento, así como revisar el flujo de trabajo típico para usar eDiscovery avanzado.
+ms.openlocfilehash: 5bd183f0f5f1c2f091fb374aab1e54f191665ce6
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412839"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936263"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Configuración rápida Advanced eDiscovery (clásico)
 
@@ -32,7 +32,7 @@ En esta sección de configuración, se muestra cómo un administrador de eDiscov
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Obtener acceso a un caso en eDiscovery avanzado
 
-Puede obtener acceso a eDiscovery avanzado desde el Centro de seguridad y cumplimiento. Necesita ser miembro de un caso de eDiscovery en el Centro de seguridad y cumplimiento para poder obtener acceso a un caso en eDiscovery avanzado. Para obtener instrucciones sobre cómo asignar permisos de casos de eDiscovery y agregar usuarios a un caso de eDiscovery, vea [Administrar casos de eDiscovery en Office 365](ediscovery-cases.md). 
+You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](ediscovery-cases.md). 
   
 Para ir a un caso en eDiscovery avanzado: 
   
@@ -44,7 +44,7 @@ Para ir a un caso en eDiscovery avanzado:
     
 4. En la **Página principal** del caso, haga clic en **Cambiar a eDiscovery avanzado**.
     
-    Se mostrará la barra de progreso **Conectando a eDiscovery avanzado**. Cuando se establezca la conexión, el caso se abrirá en eDiscovery avanzado. 
+    The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected, the case is opened in Advanced eDiscovery. 
     
 ## <a name="workflow"></a>Flujo de trabajo
 
@@ -52,15 +52,15 @@ En el diagrama siguiente, se muestra el flujo de trabajo común para administrar
   
 ![En el diagrama, se muestra el flujo de trabajo de eDiscovery avanzado de cuatro fases en la instalación, incluidos la configuración de usuarios y de casos, la identificación de los datos de casos, la exportación y el procesamiento y, después, las fases de análisis y exportación al equipo local.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
-En esta sección de configuración, se describen los primeros cuatro pasos del flujo de trabajo. Para ver una descripción del resto de los pasos del flujo de trabajo, vea lo siguiente.
+This setup section describes the first four steps in the workflow. For a description of the other steps in the workflow, see the following.
   
 ## <a name="analyze"></a>Analizar
 
-[Analizar datos de casos](analyze-case-data-with-advanced-ediscovery.md) Identifica y organiza los archivos por varios parámetros, permite usar temas y muestra los resultados. El usuario puede personalizar la función de análisis para obtener mejores resultados. 
+[Analyzing case data](analyze-case-data-with-advanced-ediscovery.md) Identifies and organizes the files by various parameters, enables the use of Themes, and displays the results. Analyze functionality can be customized by the user in order to achieve enhanced results. 
   
 ## <a name="relevance-setup-and-relevance"></a>Configuración de relevancia y Relevancia
 
-[Configuración de relevancia](manage-relevance-setup-in-advanced-ediscovery.md) y [Uso del módulo Relevancia](use-relevance-in-advanced-ediscovery.md) Permite la evaluación y el entrenamiento de Relevancia basándose en una muestra aleatoria de archivos y los usa para aplicar decisiones en el proceso de codificación predictiva. Calcula y muestra resultados provisionales al supervisar la validez estadística del proceso. Muestra los resultados para facilitar la toma de decisiones de revisión. 
+[Relevance Setup](manage-relevance-setup-in-advanced-ediscovery.md) and [Using the Relevance module](use-relevance-in-advanced-ediscovery.md) Enables assessment and relevance training based on a random sample of files and uses them to apply decisions to the predictive coding process. Calculates and displays interim results while monitoring statistical validity of the process. Displays the results to facilitate in making review decisions. 
   
 ## <a name="export"></a>Exportar
 
