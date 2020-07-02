@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a SharePoint y OneDrive.
-ms.openlocfilehash: cae0016f705757341934d1ad7e6eec331e81642c
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869872"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016251"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Más información sobre las directivas de retención para SharePoint y OneDrive
 
@@ -82,7 +82,7 @@ Una directiva de sólo retención conserva todas las versiones de un documento e
 > [!NOTE]
 > Las versiones preservadas de los documentos de SharePoint y OneDrive no se pueden buscar con las herramientas de eDiscovery.
 
-### <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
+## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
 **SharePoint**:
 

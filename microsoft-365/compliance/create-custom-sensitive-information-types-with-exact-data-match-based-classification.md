@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e6574d59fef98e026da31a21dab9189d2af4581e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b29ff790dbfafb281325879904fe5bfa71fdcf17
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818009"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023341"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -469,7 +469,7 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 5. En la pestaña **Elegir ubicaciones** , haga clic en **Permitir elegir ubicaciones concretas** y luego en **Siguiente**.
 
-6. En la columna **Estado** , seleccione **correo electrónico de Exchange, cuentas de OneDrive, conversación de equipos y mensaje de canal** , y después elija **Siguiente**. (Nota: en este momento, EDM no es compatible con los sitios de SharePoint y la Directiva DLP no detectará archivos en SharePoint para EDM)
+6. En la columna **Estado** , seleccione **correo electrónico de Exchange, cuentas de OneDrive, conversación de equipos y mensaje de canal** , y después elija **Siguiente**.
 
 7. En la pestaña **Configuración de directiva** , elija **Usar la configuración avanzada** y luego elija **Siguiente**.
 
@@ -506,7 +506,3 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-
-## <a name="feedback"></a>Comentarios
-
-Los comentarios de GitHub están habilitados, pero agregar problemas solo está disponible en el sitio público.
