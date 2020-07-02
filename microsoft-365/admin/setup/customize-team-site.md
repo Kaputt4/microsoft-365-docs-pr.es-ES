@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: En este artículo, aprenderá a personalizar, organizar y administrar el sitio de grupo para el almacenamiento y el uso compartido de archivos.
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779874"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022174"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personalizar el sitio de grupo para el almacenamiento y el uso compartido de archivos
 
@@ -104,7 +104,7 @@ Al administrar el sitio de grupo, es posible que tenga que agregar o quitar usua
   
 Vea un vídeo sobre los grupos con los [grupos comprender y administrar](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
-Para agregar usuarios a un grupo de Microsoft 365, vea [Agregar usuarios individualmente o de forma masiva a microsoft 365-ayuda de administración](../add-users/add-users.md).
+Para agregar usuarios a un grupo de Microsoft 365, consulte [Agregar usuarios y asignar licencias al mismo tiempo](../add-users/add-users.md).
   
 Obtenga información sobre cómo controlar solicitudes de acceso con [configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936634"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023408"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -203,6 +203,31 @@ En el tiempo, la calificación de identidad segura y la API de Graph adoptarán 
 * Filtrar, etiquetar, buscar y agrupar las acciones de mejora
 * Administrar hacia sus metas futuras mediante proyecciones de puntuación y acciones planeadas
 * Y mucho más.
+
+### <a name="june-2020"></a>Junio de 2020
+
+#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Se quitó la acción de mejora para la protección contra amenazas avanzada de Microsoft defender
+
+* Activar las reglas de reducción de la superficie de ataque
+
+#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Acciones de mejora agregadas para la protección contra amenazas avanzada de Microsoft defender
+
+* Impedir que Adobe Reader cree procesos secundarios
+* Usar protección avanzada contra ransomware
+* Bloquear todas las aplicaciones de Office para crear procesos secundarios
+* Impedir que las aplicaciones de Office creen contenido ejecutable
+* Impedir que JavaScript o VBScript inicien contenido ejecutable descargado
+* Bloquear la ejecución de scripts potencialmente ofuscados
+* Bloquear contenido ejecutable del cliente de correo electrónico y Webmail
+* Impedir que la aplicación de comunicación de Office cree procesos secundarios
+* Bloquear procesos no habilitados y no firmados que se ejecutan desde USB
+* Bloquear la persistencia a través de la suscripción de eventos WMI
+* Impedir que las aplicaciones de Office inserten código en otros procesos
+* Bloquear la ejecución de los archivos ejecutables a menos que cumplan un criterio de predominio, edad o lista de confianza
+* Bloquear creaciones de procesos procedentes de PSExec y comandos WMI
+* Bloquear credenciales de robo desde el subsistema de la autoridad de seguridad local de Windows (lsass.exe)
+* Bloquear llamadas a la API Win32 desde macros de Office
+
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 

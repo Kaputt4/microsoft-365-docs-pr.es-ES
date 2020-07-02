@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036504"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005851"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -66,7 +66,7 @@ Se ha agregado un breve comentario al principio de la consulta para describir su
 // Finds PowerShell execution events that could involve a download
 ```
 
-Generalmente, la consulta comienza con un nombre de tabla seguido de una serie de elementos precedidos por un operador de canalización (`|`). En este ejemplo, empezamos creando una Unión de dos tablas `DeviceProcessEvents` y `DeviceNetworkEvents`, y agregamos elementos canalizados según sea necesario.
+Generalmente, la consulta comienza con un nombre de tabla seguido de una serie de elementos precedidos por un operador de canalización (`|`). En este ejemplo, empezamos creando una Unión de dos tablas `DeviceProcessEvents` y `DeviceNetworkEvents` , y agregamos elementos canalizados según sea necesario.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -81,7 +81,7 @@ El primer elemento canalizado es un filtro de tiempo cuyo ámbito es el de los s
 ### <a name="check-specific-processes"></a>Comprobar procesos específicos
 El intervalo de tiempo va seguido inmediatamente de una búsqueda de nombres de archivo de proceso que representan la aplicación de PowerShell.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```

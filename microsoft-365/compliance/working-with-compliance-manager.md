@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar el administrador de cumplimiento para realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con productos de Microsoft.
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817087"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023397"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -41,7 +41,10 @@ Se puede tener acceso al administrador de cumplimiento desde el portal de confia
 
 ## <a name="administration"></a>Administración
 
-Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. El administrador global puede asignar permisos de usuario y activar actualizaciones automáticas de puntuaciones seguras.
+Hay funciones administrativas específicas que solo están disponibles para el administrador global y solo están visibles cuando inicia sesión con una cuenta de administrador global. El administrador global puede:
+- [Asignar roles de usuario](#assigning-compliance-manager-roles-to-users)
+- [Activar y desactivar las actualizaciones automáticas de puntuación segura](#controlling-automatic-secure-score-updates)
+- [Configurar las opciones de privacidad del usuario](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Asignar roles del Administrador de cumplimiento a usuarios
 
@@ -94,6 +97,92 @@ Si elige **establecer por acción,** siga estos pasos adicionales para activar l
 8. Seleccione **Guardar.** Puntuación segura la supervisión continua ahora está activada para esa acción.
 
 **Nota:** Solo el administrador global puede activar o desactivar las actualizaciones automáticas para todas las acciones. El administrador del administrador de cumplimiento puede activar actualizaciones automáticas para acciones individuales, pero no para todas las acciones de forma global.
+
+### <a name="configuring-user-privacy-settings"></a>Configuración de las opciones de privacidad de usuario
+
+Algunas reglas exigen que una organización pueda eliminar datos del historial de los usuarios. Para habilitar esto, las funciones de **configuración de privacidad de usuario** permiten a los administradores:
+  
+- [Buscar un usuario](#search-for-a-user)
+
+- [Exportar un informe de historial de datos de cuenta](#export-a-report-of-account-data-history)
+
+- [Reasignar acciones](#reassign-action-items)
+
+- [Eliminar el historial de datos de usuarios](#delete-user-data-history)
+    
+![Administración del Administrador de cumplimiento: Funciones de configuración de privacidad del usuario](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>Buscar un usuario
+
+Para buscar una cuenta de usuario:
+  
+1. Especifique la dirección de correo electrónico del usuario escribiendo el alias (la información a la izquierda del símbolo @) y elija el nombre de dominio haciendo clic en la lista de sufijos de dominios a la derecha. Si su organización tiene varios dominios registrados, puede comprobar el sufijo de nombre de dominio de la dirección de correo electrónico para asegurarse de que es correcto.
+    
+2. Cuando se haya escrito correctamente el nombre de usuario, seleccione **Buscar**.
+    
+3. Si no se encuentra la cuenta de usuario, el mensaje de error "usuario no encontrado" se mostrará en la página. Compruebe la información de la dirección de correo del usuario, realice las correcciones necesarias y seleccione **Buscar** para intentarlo de nuevo.
+    
+4. Si se encuentra la cuenta de usuario, el texto del botón cambiará de **Buscar** a **Borrar**, lo que indica que la cuenta de usuario encontrada es el contexto operativo para las funciones adicionales que se muestran debajo y que, al ejecutar esas funciones, se aplicarán en la cuenta de usuario.
+    
+5. Para borrar los resultados de la búsqueda y buscar a otro usuario, seleccione **Borrar**.
+    
+#### <a name="export-a-report-of-account-data-history"></a>Exportar un informe de historial de datos de cuenta
+
+Una vez que se haya identificado la cuenta de usuario, puede que desee generar un informe de las dependencias que se encuentran vinculadas a esta cuenta. Esta información le permitirá reasignar los elementos de acción abiertos o garantizar el acceso a evidencias cargadas anteriormente.
+  
+ Para generar y exportar un informe:
+  
+1. Seleccione **exportar** para generar y descargar un informe de los elementos de acción de control del administrador de cumplimiento asignados actualmente a la cuenta de usuario devuelta y a la lista de documentos cargados por dicho usuario. Si no hay ninguna acción asignada o documentos cargados, un mensaje de error muestra "no hay datos para este usuario".
+
+2. El informe se descarga en segundo plano en la ventana del explorador activo. Si no ves un elemento emergente de descarga, comprueba el historial de descargas del explorador.
+
+3. Abra el documento para revisar los datos del informe.
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>Reasignar acciones
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ Para reasignar acciones a otro usuario:
+  
+1. Haga clic en el cuadro de entrada para buscar y seleccionar otro usuario de la organización a quien quiera asignar las acciones del usuario encontrado.
+    
+2. Seleccione **Reemplazar** para reasignar todas las acciones de control del usuario encontrado al nuevo usuario seleccionado.
+    
+3. Aparece un cuadro de diálogo de confirmación en el que se indica que "se reasignarán todos los elementos de acción de control del usuario actual al usuario seleccionado. No se puede deshacer esta acción. ¿Realmente desea continuar?"
+    
+4. Para continuar, seleccione **Aceptar**; en caso contrario, seleccione **Cancelar**.
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. Abrir el informe exportado que se descargó anteriormente.
+  
+2. Identificar la acción de control deseada y buscar su ubicación.
+  
+3. Seleccione **administrar documentos** para navegar al repositorio de evidencias de ese control.
+  
+4. Descargar el documento.
+  
+5. Eliminar el documento del repositorio de evidencias.
+  
+6. Vuelva a cargar el documento. El documento tendrá ahora una nueva fecha de carga, una hora y "cargado por" nombre de usuario.
+  
+#### <a name="delete-user-data-history"></a>Eliminar el historial de datos de usuarios
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ Para eliminar el historial de carga de documentos y acciones de la cuenta de usuario:
+  
+1. Seleccione **Eliminar**.
+
+2. Un cuadro de diálogo de confirmación muestra lo siguiente: "se quitarán todas las asignaciones de elementos de acción de control y el historial de carga de documentos para el usuario seleccionado. No se puede deshacer esta acción. ¿Realmente desea continuar?"
+    
+3. Para continuar, seleccione **Aceptar**; en caso contrario, seleccione **Cancelar**.
 
 ## <a name="groups"></a>Grupos
 
@@ -196,6 +285,9 @@ Las acciones que no son compatibles con la integración de la puntuación segura
 ## <a name="assessments"></a>Evaluaciones
 
 En esta sección se explica cómo ver y trabajar con las evaluaciones, lo que incluye cómo agregar nuevas, exportarlas, copiar información de evaluaciones existentes y mantenerlas actualizadas mediante el control de versiones.
+
+> [!NOTE]
+> Ahora puede crear evaluaciones en la puntuación de cumplimiento. [Ver instrucciones e instrucciones](compliance-score-assessments.md).
 
 ### <a name="view-an-assessment-and-action-details"></a>Ver los detalles de la evaluación y de la acción
   
@@ -408,13 +500,16 @@ El panel muestra cada plantilla, junto con la certificación y el producto asoci
 
 Hay tres formas de trabajar con plantillas para crear evaluaciones:
 
-1. Usar una de las plantillas preconfiguradas proporcionadas por Microsoft.
-2. Personalizar una plantilla preconfigurada con sus propias acciones y controles a través del proceso de extensión.
+1. Use una de las plantillas lista para usar proporcionadas por Microsoft.
+2. Personalice una plantilla lista para usar con sus propias acciones y controles a través del proceso de extensión.
 3. Cree su propia plantilla e impórtela en el administrador de cumplimiento.
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>Usar una plantilla preconfigurada de Microsoft
+> [!NOTE]
+> Al cargar una plantilla en el administrador de cumplimiento, debe ser aprobada por dos usuarios que tengan un rol de administrador antes de que se publique y esté disponible para su uso.
 
-Las plantillas preconfiguradas están disponibles en el panel **plantillas** . Ver la [lista actual de plantillas](compliance-manager-overview.md#templates), que se actualiza cada vez que hay disponible una nueva plantilla.
+#### <a name="use-a-ready-to-use-template"></a>Usar una plantilla lista para usar
+
+Las plantillas listas para usar están disponibles en el panel **plantillas** . Ver la [lista actual de plantillas](compliance-score-templates.md), que se actualiza cada vez que hay disponible una nueva plantilla.
 
 #### <a name="customize-a-template-through-the-extension-process"></a>Personalización de una plantilla a través del proceso de extensión
 
@@ -423,21 +518,23 @@ Las plantillas preconfiguradas están disponibles en el panel **plantillas** . V
 3. Seleccione la plantilla que desea extender en el menú desplegable.
 4. Si todavía no ha dado formato a los datos de la plantilla en Excel, seleccione el vínculo en el panel desplegable para descargar un archivo de Excel. Rellene la hoja de cálculo de acuerdo con las siguientes instrucciones de [importación de datos de plantilla con Excel](#import-template-data-with-excel) y guárdela en su unidad local.
 5. Para importar los datos de la plantilla personalizada, seleccione **examinar** para cargar el archivo de Excel.
-6. Seleccione **Agregar al panel**. A continuación, verá la nueva plantilla agregada a su panel **plantillas** .
+6. Seleccione **Agregar al panel**.
+7. Los cambios en la plantilla requieren la aprobación de dos usuarios que tienen un rol de administrador. Esos usuarios recibirán una notificación de las actualizaciones de las plantillas. Uno de los cambios los aprueban dos administradores, verá la plantilla actualizada en el panel **plantillas** .
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Crear su propia plantilla e importarla en el administrador de cumplimiento
 
 1. Abra el panel **plantillas** y seleccione **+ Agregar plantilla**.
 2. En el panel flotante de plantilla, seleccione **crear una nueva plantilla**.
 3. Para importar los datos de la plantilla, seleccione **examinar** para cargar el archivo de Excel que contiene los datos (vea [importar datos de plantilla con Excel](#import-template-data-with-excel) , más adelante).
-4. Seleccione **Agregar al panel**. A continuación, verá la nueva plantilla agregada a su panel **plantillas** .
+4. Seleccione **Agregar al panel**.
+5. La nueva plantilla requiere la aprobación de dos usuarios que tienen un rol de administrador. Esos usuarios reciben una notificación de que una nueva plantilla está lista para su aprobación. Una plantilla está aprobada por dos administradores, verá la nueva plantilla en el panel **plantillas** .
 
 #### <a name="import-template-data-with-excel"></a>Importar datos de plantilla con Excel
 
 Para modificar una plantilla o crear su propia plantilla, deberá usar una [hoja de cálculo de Excel](https://go.microsoft.com/fwlink/?linkid=2124865) para capturar los datos necesarios y cargarlos en el administrador de cumplimiento. Esta plantilla de hoja de cálculo tiene un formato y un esquema específicos que se deben usar o que no se importarán en el administrador de cumplimiento.
 
 > [!IMPORTANT]
-> Si ha creado o personalizado plantillas en el administrador de cumplimiento, **este proceso se ha actualizado** como parte de la versión de abril de 2020 del administrador de cumplimiento (versión preliminar). **Consulte esta sección detenidamente.**
+> Si ha creado o personalizado plantillas en el administrador de cumplimiento, **este proceso se ha actualizado recientemente. Consulte esta sección detenidamente.**
 
 La hoja de cálculo contiene cuatro pestañas, tres de las cuales son necesarias:
 
@@ -496,7 +593,7 @@ La ficha **acciones** es obligatoria.  Designa las acciones de la organización 
 
 - **actionDescription**: proporcione una descripción de la acción. Puede aplicar formato como texto en negrita e hipervínculos. Este campo es obligatorio.
 
-- **dimensión-acción propósito**: este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "Dimension-". Las dimensiones que incluya aquí se utilizarán como [filtros en la puntuación de cumplimiento](compliance-score-setup.md#filtering-your-dashboard-view) y aparecerán en la [Página de detalles de acciones de mejora en la puntuación de cumplimiento](working-with-compliance-score.md#view-your-improvement-actions).
+- **dimensión-acción propósito**: este es un campo opcional. Si lo incluye, el encabezado debe incluir el prefijo "Dimension-". Las dimensiones que incluya aquí se utilizarán como [filtros en la puntuación de cumplimiento](compliance-score-setup.md#filtering-your-dashboard-view) y aparecerán en la página de detalles de acciones de mejora en la puntuación de cumplimiento.
 
 ##### <a name="dimensions-tab"></a>Pestaña dimensiones
 

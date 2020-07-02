@@ -18,26 +18,26 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
-ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588081"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936942"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
- **Resumen:** En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.
+ **Summary:** This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain.
 
-Para poder utilizar un dominio personalizado, Office 365 requiere que agregue un registro TXT de Sender Policy Framework (SPF) a su registro DNS para evitar la suplantación de identidad. SPF identifica qué servidores de correo pueden enviar correo en su nombre. Básicamente, SPF, junto con DKIM, DMARC y otras tecnologías soportadas por Office 365, ayudan a prevenir el spoofing y el phishing. SPF se agrega como un registro TXT que es usado por DNS para identificar qué servidores de correo pueden enviar correo en nombre de su dominio personalizado. Los sistemas de correo del destinatario se refieren al registro SPF TXT para determinar si un mensaje de su dominio personalizado proviene de un servidor de mensajería autorizado. 
+In order to use a custom domain, Office 365 requires that you add a Sender Policy Framework (SPF) TXT record to your DNS record to help prevent spoofing. SPF identifies which mail servers are allowed to send mail on your behalf. Basically, SPF, along with DKIM, DMARC, and other technologies supported by Office 365, help prevent spoofing and phishing. SPF is added as a TXT record that is used by DNS to identify which mail servers can send mail on behalf of your custom domain. Recipient mail systems refer to the SPF TXT record to determine whether a message from your custom domain comes from an authorized messaging server.
 
-Por ejemplo, supongamos que el dominio personalizado contoso.com usa Office 365. Le agrega un registro TXT de SPF que incluye los servidores de mensajería de Office 365 como servidores de correo legítimos para su dominio. Cuando el servidor de mensajería receptor obtiene un mensaje de joe@contoso.com, el servidor busca el registro TXT de SPF para contoso.com y averigua si el mensaje es válido. Si el servidor receptor descubre que el mensaje proviene de un servidor que no es ninguno de los servidores de mensajería de Office 365 indicados en el registro SPF, el servidor de correo receptor puede rechazar el mensaje como correo no deseado.
+For example, let's say that your custom domain contoso.com uses Office 365. You add an SPF TXT record that lists the Office 365 messaging servers as legitimate mail servers for your domain. When the receiving messaging server gets a message from joe@contoso.com, the server looks up the SPF TXT record for contoso.com and finds out whether the message is valid. If the receiving server finds out that the message comes from a server other than the Office 365 messaging servers listed in the SPF record, the receiving mail server can choose to reject the message as spam.
 
-Además, si el dominio personalizado no tiene un registro TXT de SPF, algunos servidores de recepción pueden rechazar directamente el mensaje. Esto se debe a que el servidor de recepción no puede validar que los mensajes procedan de un servidor de mensajería autorizado.
+Also, if your custom domain does not have an SPF TXT record, some receiving servers may reject the message outright. This is because the receiving server cannot validate that the message comes from an authorized messaging server.
 
-Si ya ha configurado el correo para Office 365, ya ha incluido servidores de mensajería de Microsoft en DNS como un registro TXT de SPF. Sin embargo, en algunos casos puede que sea necesario actualizar el registro TXT de SPF en DNS. Por ejemplo:
+If you've already set up mail for Office 365, then you have already included Microsoft's messaging servers in DNS as an SPF TXT record. However, there are some cases where you may need to update your SPF TXT record in DNS. For example:
 
-- Antes, debía agregar un registro TXT de SPF diferente a su dominio personalizado si utilizaba SharePoint Online. Esto ya no es necesario. Este cambio debería reducir el riesgo de que los mensajes de notificación de SharePoint Online acaben en la carpeta de Correo no deseado. Actualice su registro SPF TXT si ha alcanzado el límite de 10 búsquedas y recibe errores como "Límite de búsqueda superado" y "Demasiados saltos".
+- Previously, you had to add a different SPF TXT record to your custom domain if you were using SharePoint Online. This is no longer required. This change should reduce the risk of SharePoint Online notification messages ending up in the Junk Email folder. Update your SPF TXT record if you are hitting the 10 lookup limit and receiving errors that say things like, "exceeded the lookup limit" and "too many hops".
 
 - Tiene un entorno híbrido con Office 365 y Exchange local.
 
@@ -45,17 +45,17 @@ Si ya ha configurado el correo para Office 365, ya ha incluido servidores de men
 
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>Actualizar el registro TXT de SPF para Office 365
 
-Antes de actualizar el registro TXT en DNS, debe recopilar cierta información y determinar el formato del registro. Esto le ayudará a evitar que genere errores de DNS. Para ejemplos avanzados y una discusión más detallada sobre la sintaxis SPF soportada, consulte [Cómo funciona el SPF para prevenir la suplantación de IP y la suplantación de identidad en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+Before you update the TXT record in DNS, you need to gather some information and determine the format of the record. This will help prevent you from generating DNS errors. For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
 
 Recopile esta información:
 
-- Registro TXT de SPF actual para su dominio personalizado. Para obtener instrucciones, vea [Recopilar la información necesaria para crear los registros de DNS de Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+- The current SPF TXT record for your custom domain. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
-- Direcciones IP externas de todos los servidores de mensajería de las instalaciones. Por ejemplo,**131.107.2.200**.
+- External IP addresses of all on-premises messaging servers. For example, **131.107.2.200**.
 
-- Nombres de dominio que se usarán para todos los dominios de terceros que necesita incluir en el registro TXT de SPF. Algunos proveedores de correo masivo tienen configurados subdominios para sus clientes. Por ejemplo, la empresa MailChimp tiene configurado **servers.mcsv.net**.
+- Domain names to use for all third-party domains that you need to include in your SPF TXT record. Some bulk mail providers have set up subdomains to use for their customers. For example, the company MailChimp has set up **servers.mcsv.net**.
 
-- Determine qué regla de cumplimiento quiere usar para el registro TXT de SPF. Se recomienda **-all**. Para obtener más información sobre otras opciones de sintaxis, vea [Sintaxis del registro TXT de SPF para Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365).
+- Determine what enforcement rule you want to use for your SPF TXT record. We recommend **-all**. For detailed information about other syntax options, see [SPF TXT record syntax for Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365).
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>Para agregar o actualizar el registro TXT de SPF
 
@@ -63,13 +63,13 @@ Recopile esta información:
 
    ||**Si usa...**|**¿Es común para los clientes?**|**Agregue esto...**|
    |:-----|:-----|:-----|:-----|
-   |1|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF comienzan con este valor|v=spf1|
+   |1|Cualquier sistema de correo electrónico (obligatorio)|Common. All SPF TXT records start with this value|v=spf1|
    |2|Exchange Online|Común|include:spf.protection.outlook.com|
    |3|Solo Exchange Online dedicado|No es común|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|Solo para Office 365 Alemania y Microsoft Cloud Alemania|No es común|include:spf.protection.outlook.de|
    |5|Sistema de correo electrónico de terceros|No es común|incluye:\<domain name\>  <br/> Donde <domain name> es el nombre de dominio del sistema de correo electrónico de terceros.|
-   |6|Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico|No es común| Use uno de estos para cada sistema de correo adicional: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  Incluye:\<_domain name_\>  <br/>  Donde el valor de \<_IP address_\> es la dirección IP del otro sistema de correo y \<_domain name_\> es el nombre de dominio del otro sistema de correo que envía correo en nombre de su dominio.|
-   |7|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF acaban con este valor|\<_enforcement rule_\>  <br/> Puede ser uno de varios valores. Le recomendamos que use **-all**.|
+   |6|On-premises mail system. For example, Exchange Online Protection plus another mail system|No es común| Use uno de estos para cada sistema de correo adicional: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  Incluye:\<_domain name_\>  <br/>  Donde el valor de \<_IP address_\> es la dirección IP del otro sistema de correo y \<_domain name_\> es el nombre de dominio del otro sistema de correo que envía correo en nombre de su dominio.|
+   |7|Cualquier sistema de correo electrónico (obligatorio)|Common. All SPF TXT records end with this value|\<_enforcement rule_\>  <br/> This can be one of several values. We recommend that you use **-all**.|
 
 2. Si todavía no lo ha hecho, para formar el registro TXT de SPF use la sintaxis de la tabla:
 
@@ -95,6 +95,6 @@ Para obtener ejemplos avanzados y explicaciones más detalladas sobre la sintaxi
 
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>Pasos siguientes: Una vez configurado SPF para Office 365
 
-¿Tiene problemas con el registro TXT de SPF? Lea [Solución de problemas: Procedimientos recomendados para SPF en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Having trouble with your SPF TXT record? Read [Troubleshooting: Best practices for SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
- SPF está diseñado para ayudar a evitar la suplantación de identidad, pero existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para obtener protección contra estas, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Office 365. Vea [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md) para comenzar. A continuación, vea [Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md).
+ SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Office 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md). Next, see [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md).

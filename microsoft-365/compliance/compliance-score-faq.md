@@ -1,5 +1,5 @@
 ---
-title: Preguntas frecuentes sobre la puntuación de cumplimiento de Microsoft
+title: Preguntas más frecuentes sobre la calificación de cumplimiento de Microsoft (vista previa)
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,18 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre la puntuación de cumplimiento de Microsoft, que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: 942de8f8cc9eeb958cb7f8e96c9e7038447ce3f1
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 6ba71620d689e6d028b61ff24f7c837337ef60c6
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141565"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016205"
 ---
-# <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Preguntas más frecuentes sobre la puntuación de cumplimiento de Microsoft (versión preliminar)
+# <a name="compliance-score-preview-frequently-asked-questions"></a>Resultados de la puntuación de cumplimiento (versión preliminar) preguntas más frecuentes
 
 ## <a name="what-is-compliance-score"></a>¿Qué es la puntuación de cumplimiento?
 
-La puntuación de cumplimiento de Microsoft es una característica de vista previa del [centro de cumplimiento de microsoft 365](microsoft-365-compliance-center.md) que le ayuda a comprender la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. La puntuación de cumplimiento proporciona una asignación de control integrada que ayuda a conectar controles comunes entre estándares y regulaciones clave, de modo que pueda realizar una acción para cumplir varios requisitos al mismo tiempo y ajustar mejor el programa de cumplimiento.
+La puntuación de cumplimiento de Microsoft es una característica de vista previa del [centro de cumplimiento de microsoft 365](microsoft-365-compliance-center.md) que le ayuda a comprender la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. La puntuación de cumplimiento proporciona una asignación de control integrada que ayuda a conectar controles comunes entre los estándares y las regulaciones clave. Esta asignación le permite realizar una acción para cumplir varios requisitos al mismo tiempo, lo que le ayuda a escalar el programa de cumplimiento.
+
+## <a name="whats-new-in-the-preview-version-of-compliance-score"></a>¿Cuáles son las novedades de la versión preliminar de la puntuación de cumplimiento?
+
+Visite las [notas](compliance-score-release-notes.md) de la versión de calificación de cumplimiento para obtener información sobre las actualizaciones de características y los problemas conocidos.
 
 ## <a name="how-do-i-access-compliance-score"></a>¿Cómo se obtiene acceso a la puntuación de cumplimiento?
 
@@ -33,17 +37,21 @@ Vaya al [centro de cumplimiento de microsoft 365](https://compliance.microsoft.c
 
 ## <a name="what-roles-or-permissions-are-needed-to-use-compliance-score"></a>¿Qué roles o permisos se necesitan para usar la puntuación de cumplimiento?
 
-La puntuación de cumplimiento usa un modelo de permisos de control de acceso basado en roles (RBAC) y las acciones que puede realizar dependen del tipo de rol que se le haya asignado. El administrador global de Microsoft 365 de su organización es la persona que puede realizar las funciones de configuración y administrar roles en puntuación de cumplimiento. Como mínimo, los usuarios necesitan la función **lector global de Azure ad** para leer datos con la puntuación de cumplimiento. Obtenga más información sobre los permisos, los roles y los procedimientos de configuración en la configuración de la [puntuación de cumplimiento](compliance-score-setup.md).
+La puntuación de cumplimiento usa un modelo de permisos de control de acceso basado en roles (RBAC). Las acciones que puede realizar dependen del tipo de rol que se le haya asignado. El administrador global de Microsoft 365 de su organización es la persona que puede realizar las funciones de configuración y administrar roles en puntuación de cumplimiento. Como mínimo, los usuarios necesitan la función **lector global de Azure ad** para leer datos con la puntuación de cumplimiento. Obtenga más información sobre los permisos, los roles y los procedimientos de configuración en la configuración de la [puntuación de cumplimiento](compliance-score-setup.md).
 
 ## <a name="what-is-the-difference-between-compliance-score-and-compliance-manager"></a>¿Cuál es la diferencia entre el administrador de cumplimiento y la puntuación de cumplimiento?
 
-La puntuación de cumplimiento y el administrador de cumplimiento comparten el mismo servidor, pero se encuentran en dos ubicaciones diferentes (la puntuación de cumplimiento se encuentra en el centro de cumplimiento de Microsoft 365 y el administrador de cumplimiento se encuentra en el portal de confianza de servicios de Microsoft). Piense en la puntuación de cumplimiento como una versión simplificada del administrador de cumplimiento, que le ofrece una vista más completa de la postura de cumplimiento actual de su organización y los pasos que puede realizar para mejorarla. Aunque puede realizar muchas acciones directamente en cuanto a la puntuación de cumplimiento, algunas funciones residen en el administrador de cumplimiento por ahora. Obtenga más información acerca de la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score.md#relationship-to-compliance-manager).
+La puntuación de cumplimiento y el administrador de cumplimiento comparten el mismo back-end. Todo lo que haga en una herramienta se mostrará en la otra herramienta. Residen en dos ubicaciones distintas: la puntuación de cumplimiento se encuentra en el centro de cumplimiento de Microsoft 365 y el administrador de cumplimiento se encuentra en el portal de confianza de servicios de Microsoft. Piense en la puntuación de cumplimiento como una versión simplificada del administrador de cumplimiento, que le ofrece una vista más completa de la postura de cumplimiento actual de su organización y los pasos que puede realizar para mejorarla.
 
-## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>¿Quién debe usar la puntuación de cumplimiento y quién debe usar el administrador de cumplimiento?
+Aunque puede realizar varias acciones directamente en cuanto a la puntuación de cumplimiento, algunas funciones residen en el administrador de cumplimiento durante la versión preliminar pública. Obtenga más información acerca de la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score.md#relationship-to-compliance-manager).
 
-La puntuación de cumplimiento es útil para todos los usuarios de la organización que desempeñan un papel en la supervisión del cumplimiento y realizar acciones para cumplir con los estándares normativos. Con la puntuación de cumplimiento, no es necesario estar familiarizado con las regulaciones y los estándares para ayudar a mejorar la protección de datos de su organización. La puntuación de cumplimiento es el punto de partida óptimo para todos los usuarios. Desde aquí, puede ver la puntuación de cumplimiento, saber qué acciones recomendadas pueden ayudar a minimizar los riesgos y, en muchos casos, iniciar directamente en las soluciones para llevar a cabo esas acciones.
+Obtener acceso al [Administrador de cumplimiento en el portal de confianza de servicios de Microsoft](https://servicetrust.microsoft.com/ComplianceManager/V3). Asegúrese de **seleccionar el administrador de cumplimiento** en el menú desplegable de navegación superior, que tiene las características más actuales y no con el administrador de *cumplimiento (clásico)*, que contiene las características de la versión preliminar.
 
-Por ahora, el administrador de cumplimiento es el lugar en el que los usuarios pueden administrar las evaluaciones y crear plantillas personalizadas para compilar evaluaciones. Obtenga más información sobre [qué acciones solo admite el administrador de cumplimiento durante la](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) versión preliminar pública.
+## <a name="should-i-use-compliance-score-or-compliance-manager"></a>¿Debo usar la puntuación de cumplimiento o el administrador de cumplimiento?
+
+La puntuación de cumplimiento es útil para todos los usuarios de la organización que desempeñan un papel en cumplimiento. Con la puntuación de cumplimiento, no es necesario estar familiarizado con las regulaciones y los estándares para ayudar a mejorar la protección de datos de su organización. La puntuación de cumplimiento es el punto de partida óptimo para todos los usuarios. Desde aquí, puede ver la puntuación de cumplimiento, saber qué acciones recomendadas pueden ayudar a minimizar los riesgos y administrar las evaluaciones.
+
+Por ahora, el administrador de cumplimiento es el lugar donde puede crear plantillas personalizadas para compilar evaluaciones. Obtenga más información sobre [qué acciones solo admite el administrador de cumplimiento durante la](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) versión preliminar pública.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si tengo una puntuación alta, ¿significa que estoy completamente conforme?
 
@@ -53,15 +61,17 @@ No. La puntuación de cumplimiento mide su progreso en la finalización de las a
 
 La puntuación de cumplimiento proporciona una puntuación inicial basada en la línea base de protección de datos 365 de Microsoft, que es un conjunto de controles que incluye normas y estándares comunes de la industria. Esta base dibuja los elementos principalmente desde NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Normalization), así como de FedRAMP (programa federal de administración de riesgos y autorización) y RGPD (norma general de protección de datos de la Unión Europea).
 
-Las organizaciones pueden crear y agregar evaluaciones personalizadas que sean más relevantes para su organización. Use una de [las plantillas preconfiguradas](compliance-score.md#templates)de puntuación de cumplimiento, personalice una plantilla de Microsoft con sus propios controles y acciones, o cree su propia plantilla. Lea los detalles sobre cómo [trabajar con las plantillas](working-with-compliance-manager.md#templates).
+Las organizaciones pueden crear y agregar evaluaciones personalizadas que sean más relevantes para su organización. Use una de las puntuaciones de cumplimiento listas para usar [plantillas](compliance-score-templates.md), personalice una plantilla de Microsoft con sus propios controles y acciones, o cree su propia plantilla. Lea detalles sobre cómo [trabajar con evaluaciones y plantillas](compliance-score-assessments.md).
 
-Obtenga información sobre cómo [la puntuación de cumplimiento calcula la puntuación](compliance-score-methodology.md).
+## <a name="how-does-compliance-score-continuously-assess-my-environment"></a>¿Cómo evalúa continuamente mi entorno la puntuación de cumplimiento?
+
+La puntuación de cumplimiento examina automáticamente el entorno y usa la puntuación segura para detectar la configuración del sistema. Obtenga más información sobre la [evaluación continua](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls).
 
 ## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>¿Cuál es la diferencia entre la puntuación de cumplimiento y la puntuación segura?
 
 La puntuación de cumplimiento proporciona una vista amplia de la postura de cumplimiento y protección de datos de la organización. La puntuación de cumplimiento también proporciona herramientas de flujo de trabajo integradas; permite a las organizaciones asignar trabajo a los usuarios, realizar un seguimiento de la implementación del control y el estado de las pruebas, y cargar pruebas y crear informes de auditoría.
 
-La calificación segura de Microsoft es una herramienta de análisis de seguridad para ayudarle a comprender su postura de seguridad. [Obtenga más información sobre la puntuación segura y cómo funciona](../security/mtp/microsoft-secure-score.md).
+La calificación segura de Microsoft es una herramienta de análisis de seguridad para ayudarle a comprender su postura de seguridad. [Obtenga más información sobre la puntuación segura y cómo funciona](../security/mtp/microsoft-secure-score-new.md).
 
 ## <a name="which-cloud-services-are-covered-by-compliance-score"></a>¿Qué servicios en la nube están cubiertos por la puntuación de cumplimiento?
 
@@ -71,11 +81,11 @@ La puntuación de cumplimiento proporciona actualmente evaluaciones para Office 
 
 Mientras que la puntuación de cumplimiento proporciona supervisión continua y acciones recomendadas solo para los servicios en la nube de Microsoft, puede Agregar evaluaciones personalizadas en el administrador de cumplimiento para los servicios de terceros locales. De esta forma, puede usar la puntuación de cumplimiento de Microsoft como herramienta de administración de cumplimiento de SaaS para ayudarle a administrar todos los controles de los activos digitales.
 
-Puede usar una de [las plantillas preconfiguradas](compliance-score.md#templates) de puntuación de cumplimiento para crear evaluaciones para estándares concretos o [crear su propia plantilla](working-with-compliance-manager.md#create-a-template).
+Puede usar una puntuación de cumplimiento preparada para usar [plantillas](compliance-score-templates.md) para crear evaluaciones para estándares concretos o [crear su propia plantilla](working-with-compliance-manager.md#create-a-template), que deberá realizar en el administrador de cumplimiento.
 
 ## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>¿Cómo elimino una plantilla o una evaluación que ya no necesito?
 
-No puede eliminar una evaluación o plantilla, pero sí puede ocultarlas en la vista. Revise las [instrucciones para ocultar evaluaciones](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+Para eliminar una evaluación, abra la evaluación que desea eliminar y seleccione **eliminar evaluación**. Tenga en cuenta que la eliminación de una evaluación es permanente. Permite ver más detalles sobre cómo [eliminar evaluaciones](compliance-score-assessments.md#delete-an-assessment). La eliminación de una evaluación no elimina su plantilla. Las plantillas no se pueden eliminar, pero pueden ocultarse de la vista. Revise [las instrucciones para ocultar plantillas](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
 
 ## <a name="what-test-procedures-does-microsoft-follow-for-controls"></a>¿Qué procedimientos de prueba sigue Microsoft para los controles?
 

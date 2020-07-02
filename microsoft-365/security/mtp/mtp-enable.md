@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844613"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016348"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Habilitar la Protección contra amenazas de Microsoft
 
@@ -61,10 +61,12 @@ Para activar la protección contra amenazas de Microsoft, simplemente seleccione
 >Si no ve la **configuración** en el panel de navegación o no pudo obtener acceso a la página, compruebe los permisos y las licencias.
 
 ### <a name="data-center-location"></a>Ubicación del centro de datos
-Microsoft Threat Protection almacenará y procesará los datos en la [misma ubicación usada por ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene Microsoft defender ATP, se selecciona automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad de Microsoft 365 activos. La ubicación del centro de datos seleccionada se muestra en la pantalla.
+Microsoft Threat Protection almacenará y procesará los datos en la [misma ubicación usada por ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si no tiene Microsoft defender ATP, se selecciona automáticamente una nueva ubicación del centro de datos en función de la ubicación de los servicios de seguridad de Microsoft 365 activos. La ubicación del centro de datos seleccionada se muestra en la pantalla. 
+
+Seleccione **¿necesita ayuda?** en el centro de seguridad de Microsoft 365, póngase en contacto con el soporte técnico de Microsoft sobre el aprovisionamiento de la protección contra amenazas de Microsoft en otra ubicación del centro de datos. 
 
 >[!NOTE]
->Seleccione **¿necesita ayuda?** en el centro de seguridad de Microsoft 365, póngase en contacto con el soporte técnico de Microsoft sobre provisión de la protección contra amenazas de Microsoft en otra ubicación del centro de datos. 
+>Microsoft defender ATP se aprovisiona automáticamente en los centros de datos de la Unión Europea (UE) cuando se activa a través del centro de seguridad de Azure. Microsoft Threat Protection aprovisionará automáticamente en el mismo centro de datos de la UE a los clientes que hayan aprovisionado ATP de Microsoft defender de este modo. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Confirme que el servicio está activado
 Una vez que recibe el servicio, este agrega:

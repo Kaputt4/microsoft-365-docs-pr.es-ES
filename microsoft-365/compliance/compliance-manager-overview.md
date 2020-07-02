@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre el administrador de cumplimiento de Microsoft, una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft.
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330750"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016133"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330750"
 
 **En este artículo**: Lea este artículo para saber qué es el administrador de cumplimiento y comprender sus componentes principales.
 
-**Obtenga información sobre las actualizaciones**: hemos publicado varias actualizaciones en la versión preliminar pública de abril de 2020. Visite las [notas de la versión de Compliance Manager](compliance-manager-release-notes.md) para ver las novedades y los problemas conocidos.
+**Obtenga información sobre las actualizaciones**: visite las notas de la [versión de Compliance Manager](compliance-manager-release-notes.md) para ver las novedades y los problemas conocidos.
 
 ## <a name="what-is-compliance-manager"></a>Qué es el administrador de cumplimiento
 
@@ -53,7 +53,7 @@ Con el administrador de cumplimiento, su organización puede:
 
 La [puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md) es una característica del centro de cumplimiento de Microsoft 365 que proporciona una vista de nivel superior de la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. Conocer la puntuación de cumplimiento general ayuda a su organización a comprender y administrar el cumplimiento. Comprenda [cómo se calcula la puntuación de cumplimiento](compliance-score-methodology.md).
 
-El administrador de cumplimiento comparte el mismo back-end con puntuación de cumplimiento. Durante la fase de versión preliminar pública para ambas herramientas, el administrador de cumplimiento es donde administrará las evaluaciones y las implementaciones de controles personalizados. Obtenga más información sobre la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+El administrador de cumplimiento comparte el mismo back-end con puntuación de cumplimiento. Durante la fase de versión preliminar pública para ambas herramientas, el administrador de cumplimiento es donde administrará las implementaciones de controles personalizados. Obtenga más información sobre la [relación entre la puntuación de cumplimiento y el administrador de cumplimiento](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
 
 ## <a name="compliance-manager-components"></a>Componentes del administrador de cumplimiento
 
@@ -129,7 +129,7 @@ Los controles de certificación suelen ser implementados por una persona y compr
 
 Tenga en cuenta que **las acciones de mejora** en la puntuación de cumplimiento son el equivalente de **los elementos de acción** en el administrador de cumplimiento.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 El administrador de cumplimiento utiliza un modelo de permisos de control de acceso basado en roles. Solo los usuarios a los que se les asigne un rol pueden acceder al administrador de cumplimiento, y las acciones permitidas por cada usuario están restringidas según el tipo de rol. [Ver una tabla](working-with-compliance-manager.md#permissions) que muestra las acciones permitidas para cada permiso.
 

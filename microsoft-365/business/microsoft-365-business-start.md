@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga más información sobre Microsoft 365 para empresas, cómo configurarlo y cómo preparar los dispositivos de los usuarios y los equipos para asegurarse de que están protegidos por Microsoft 365 para la empresa.
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786162"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022125"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -84,7 +84,7 @@ Inicie sesión en el [centro de administración de microsoft 365](https://portal
     
     - Use el Asistente para sincronización de directorios para sincronizar los usuarios con la nube. Siga los pasos descritos en [configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) para completar este proceso. Después de sincronizar los usuarios con la nube, tendrá que [desactivar la sincronización de directorios para Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
-    También tendrá que dar a cada usuario que se agregó de este modo una licencia a Microsoft 365 para empresas. Puede hacerlo en el Asistente de [configuración](set-up.md) o puede [asignar licencias a usuarios en Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+    También tendrá que dar a cada usuario que se agregó de este modo una licencia a Microsoft 365 para empresas. Puede hacerlo en el Asistente de [configuración](set-up.md) o puede [asignar licencias a los usuarios](../admin/manage/assign-licenses-to-users.md).
     
 ### <a name="2-prepare-mobile-devices"></a>2: preparar dispositivos móviles
 
@@ -107,7 +107,7 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
     
 - Como administrador de Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte técnico al cliente: ** [contactar con el soporte técnico para productos empresariales: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Documentación y recursos de Microsoft 365 para la empresa](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

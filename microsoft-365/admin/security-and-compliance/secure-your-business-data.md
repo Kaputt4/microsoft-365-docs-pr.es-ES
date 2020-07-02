@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779958"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005635"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las diez formas principales de proteger los planes de Microsoft 365 para empresas
 
@@ -44,15 +44,15 @@ Microsoft recomienda que complete las tareas que se enumeran en la siguiente tab
 ||**Tarea**|**Microsoft 365 Empresa Estándar**|**Microsoft 365 Empresa Premium**|
 |:-----|:-----|:-----|:-----|
 |1   <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|segundo  <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3   <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Aumentar el nivel de protección contra malware en correo](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Protección contra ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Detener el reenvío automático de correo electrónico](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |7   <br/> |[Usar el cifrado de mensajes de Office](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[Protección contra archivos adjuntos malintencionados y archivos con datos adjuntos seguros de ATP](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10    <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[Proteger contra ataques de suplantación de identidad con vínculos seguros de ATP](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Antes de empezar, Compruebe la [puntuación segura de microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) en el centro de seguridad de Microsoft 365. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365. Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o dirigir recomendaciones con una aplicación o software de terceros. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede sentirse seguro de informar sobre el estado de seguridad de la organización.
   
@@ -325,15 +325,17 @@ Para acceder a vínculos seguros de ATP, vea un [vídeo de aprendizaje corto](ht
     
 Para modificar la directiva predeterminada:
   
-1. En la página vínculos seguros, en **directivas que se aplican a toda la organización**, seleccione la directiva **predeterminada** . 
+1. En la página vínculos seguros, en **directivas que se aplican a toda la organización**, haga doble clic en la directiva **predeterminada** . 
     
-2. En **configuración que se aplica al contenido excepto al correo electrónico**, seleccione **Microsoft 365 apps for Enterprise, Office para iOS y Android**.
+2. En **configuración que se aplican al contenido de Office 365**, escriba una dirección URL que se va a bloquear, por ejemplo, _example.com_, y seleccione **+** .
+
+3. En **configuración que se aplican a contenido excepto correo electrónico**, seleccione **aplicaciones de Office 365**, **no realizar seguimiento cuando los usuarios hacen clic en vínculos seguros**y no **permiten a los usuarios hacer clic en los vínculos seguros a la dirección URL original**.
     
-3. Seleccione **Guardar**. 
+4. Seleccione **Guardar**. 
     
 Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
   
-1. En la página vínculos seguros, en **directivas que se aplican a toda la organización**, seleccione **+** para crear una nueva Directiva. 
+1. En la página vínculos seguros, en **directivas que se aplican a destinatarios específicos**, seleccione **+** para crear una nueva Directiva. 
     
 2. Aplique la configuración que se muestra en la tabla siguiente.
     
@@ -343,7 +345,7 @@ Para crear una nueva Directiva dirigida a todos los destinatarios de su dominio:
 |:-----|:-----|
 |Nombre  <br/> |Directiva de vínculos seguros para todos los destinatarios del dominio  <br/> |
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes  <br/> |Seleccione **activado: las direcciones URL se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo**.  <br/> |
-|Usar datos adjuntos seguros para analizar contenido descargable  <br/> |Seleccione esta casilla.  <br/> |
+|Aplicar un análisis de URL en tiempo real de vínculos y vínculos sospechosos que señalan a archivos  <br/> |Seleccione esta casilla.  <br/> |
 |Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |
 |
    

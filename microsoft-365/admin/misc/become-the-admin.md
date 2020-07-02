@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar que el correo electrónico y la propiedad del dominio se tomen en un inquilino no administrado en Microsoft 365
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399451"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022162"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar un relevo interno del administrador
 
@@ -64,7 +64,7 @@ Si es administrador y desea tomar el control de un inquilino no administrado cre
 4. Una vez que haya agregado el registro TXT a su sitio de registrador, regrese al asistente y seleccione **Aceptar, he agregado el registro**.
     
 > [!NOTE]
-> La toma del inquilino de instantánea no afectará a la información o los servicios existentes. Sin embargo, si algún usuario del dominio se ha registrado para obtener servicios que requieren una licencia, se le pedirá que compre licencias para ellos como parte de la toma del rol de administrador. Puede Agregar o quitar licencias una vez que el proceso de configuración de administración haya finalizado. 
+> La toma del inquilino de instantánea no afectará a la información o los servicios existentes. Sin embargo, si algún usuario del dominio se ha registrado para obtener servicios que requieren una licencia, se le pedirá que compre licencias para ellos como parte de la toma del rol de administrador. Puede comprar o quitar licencias una vez que el proceso de configuración de administración haya finalizado.
   
 ## <a name="related-articles"></a>Artículos relacionados
 

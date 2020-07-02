@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Aprenda a administrar mensajes del centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432270"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005827"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el centro de mensajes
 
@@ -157,19 +157,19 @@ Los mensajes en el centro de mensajes que no sean leídos aparecerán en negrita
 
 ::: moniker-end
 
-## <a name="dismiss-and-restore"></a>Descartar y restaurar
+## <a name="archive-and-restore"></a>Archivar y restaurar
 
-Si ve un mensaje que le indica que no se refiere a usted o quizá ya ha actuado en él, puede descartar el mensaje para quitarlo de la vista del centro de mensajes. La vista que ve en el centro de mensajes es específica de su cuenta de usuario, por lo que no afecta a otros administradores en su vista.
+Si ve un mensaje que no le pertenece a usted o quizá ya ha actuado en él, puede archivar el mensaje para quitarlo de la vista del centro de mensajes. La vista que ve en el centro de mensajes es específica de su cuenta de usuario, por lo que el archivado de la vista no afecta a otros administradores.
 
 ::: moniker range="o365-worldwide"
 
-- En la Página principal del centro de mensajes, seleccione un mensaje y, a continuación, haga clic en **descartar** sobre la lista de mensajes.
+- En la Página principal del centro de mensajes, seleccione un mensaje y, a continuación, seleccione **archivar** encima de la lista de mensajes.
 
-- Abra el mensaje y, a continuación, seleccione **descartar** en la parte inferior del mensaje.
+- Abra el mensaje y, a continuación, seleccione **archivar** en la parte inferior del mensaje.
 
-¿Necesita volver a obtener un mensaje desechado? No hay problema.
+¿Necesita volver a archivar un mensaje archivado? No hay problema.
   
-1. Seleccione la pestaña **mensajes desechados** en la parte superior del centro de mensajes. Aparece una lista de mensajes desechados. 
+1. Seleccione la pestaña **mensajes archivados** en la parte superior del centro de mensajes. Aparece una lista de mensajes archivados. 
 
 2. Seleccione el mensaje, seleccione **restaurar**y el mensaje se restaurará a mensajes activos.
 
@@ -177,15 +177,15 @@ Si ve un mensaje que le indica que no se refiere a usted o quizá ya ha actuado 
 
 ::: moniker range="o365-germany"
 
-Hay dos formas de descartar un mensaje.
+Hay dos formas de archivar un mensaje.
   
 - Seleccione la X que aparece a la derecha del identificador del mensaje. El mensaje se quita de la lista. O
 
-- Abra el mensaje y, a continuación, seleccione **descartar** en la parte superior del mensaje.
+- Abra el mensaje y, a continuación, seleccione **archivar** en la parte superior del mensaje.
 
 ¿Necesita volver a obtener un mensaje desechado? No hay problema.
   
-1. Seleccione el filtro **mensajes descartados** en el menú desplegable **vistas** . Aparece una lista de mensajes desechados.
+1. Seleccione el filtro de **mensajes archivados** en el menú desplegable **vistas** . Aparece una lista de mensajes archivados.
 
 2. Seleccione **restaurar** a la derecha del identificador del mensaje y el mensaje se restaurará a mensajes activos.
 
@@ -193,15 +193,15 @@ Hay dos formas de descartar un mensaje.
 
 ::: moniker range="o365-21vianet"
 
-Hay dos formas de descartar un mensaje.
+Hay dos formas de archivar un mensaje.
   
 - Seleccione la X que aparece a la derecha del identificador del mensaje. El mensaje se quita de la lista. O
 
-- Abra el mensaje y, a continuación, seleccione **descartar** en la parte superior del mensaje.
+- Abra el mensaje y, a continuación, seleccione **archivar** en la parte superior del mensaje.
 
-¿Necesita volver a obtener un mensaje desechado? No hay problema.
+¿Necesita volver a archivar un mensaje archivado? No hay problema.
   
-1. Seleccione el filtro **mensajes descartados** en el menú desplegable **vistas** . Aparece una lista de mensajes desechados.
+1. Seleccione el filtro de **mensajes archivados** en el menú desplegable **vistas** . Aparece una lista de mensajes archivados.
 
 2. Seleccione **restaurar** a la derecha del identificador del mensaje y el mensaje se restaurará a mensajes activos.
 

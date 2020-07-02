@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba de Microsoft 365 para empresas o pago.
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818524"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023374"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -144,10 +144,12 @@ Cuando la cancelación sea efectiva, los usuarios perderán el acceso a sus dato
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 
-Si ha cancelado la suscripción y no ha trasladado a los usuarios a una suscripción diferente que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto ocurre, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
+Si ha cancelado la suscripción y no ha [trasladado a los usuarios a una suscripción diferente](move-users-different-subscription.md) que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto ocurre, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Renovar la suscripción](renew-your-subscription.md)
 
 [Reactivar la suscripción](reactivate-your-subscription.md)
+
+[Mover usuarios a una suscripción diferente](move-users-different-subscription.md)

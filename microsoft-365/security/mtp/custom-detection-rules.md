@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498368"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005715"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creación y administración de reglas de detecciones personalizadas
 
@@ -118,8 +118,8 @@ La regla de detección personalizada puede realizar acciones de forma automátic
 
 #### <a name="actions-on-devices"></a>Acciones en dispositivos
 Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los resultados de la consulta:
-- **Aislar dispositivo** : usa ATP de Microsoft defender para aplicar el aislamiento de red completo, lo que impide que el dispositivo se conecte a cualquier aplicación o servicio. [Más información acerca del aislamiento de máquina ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **Collect Investigation Package** : recopila información de dispositivos en un archivo zip. [Más información sobre el paquete de investigación ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **Aislar dispositivo** : usa ATP de Microsoft defender para aplicar el aislamiento de red completo, lo que impide que el dispositivo se conecte a cualquier aplicación o servicio. [Más información acerca del aislamiento de máquina ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Collect Investigation Package** : recopila información de dispositivos en un archivo zip. [Más información sobre el paquete de investigación ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Ejecutar detección de virus** : realiza un examen completo del antivirus de Windows Defender en el dispositivo.
 - **Iniciar investigación** : inicia una [investigación automatizada](mtp-autoir.md) en el dispositivo.
 - **Restringir la ejecución** de la aplicación: establece restricciones en el dispositivo para permitir que solo se ejecuten los archivos firmados con un certificado emitido por Microsoft. [Obtenga más información sobre las restricciones de aplicaciones con ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)

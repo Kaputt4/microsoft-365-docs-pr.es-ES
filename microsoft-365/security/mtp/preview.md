@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689271"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005895"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -60,7 +60,5 @@ Las siguientes características y mejoras están disponibles actualmente en la v
 - **[Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)** : obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con la aplicación con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.
 
 - **[Go Hunt](advanced-hunting-go-hunt.md)** — rápidamente dinamizando desde la investigación de un incidente hasta la inspección de un evento específico, un usuario, un dispositivo u otros tipos de entidad mediante funciones de [búsqueda avanzada](advanced-hunting-overview.md) basadas en consultas.
-
-- **[Tabla EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** : Use esta tabla para crear consultas de [búsqueda avanzada](advanced-hunting-overview.md) que comprueben las acciones realizadas en los correos electrónicos después de que se hayan entregado a los buzones de correo de los destinatarios.
 
 - **[Función FileProfile ()](advanced-hunting-fileprofile-function.md)** : Úsela en las consultas de [búsqueda avanzada](advanced-hunting-overview.md) para incorporar información de archivo completa.

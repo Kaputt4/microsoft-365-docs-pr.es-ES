@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545951"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005863"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -70,9 +70,9 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 4. **Acción**: configure ambas acciones en la regla:
 
-   a. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
+   A. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
 
-   b. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
+   B. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
 
       Por ejemplo, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si tiene más de un dominio en la regla, puede personalizar el texto del encabezado según corresponda.
 
@@ -126,7 +126,7 @@ Por ejemplo, supongamos que Blue Yonder Airlines ha contratado el viaje de Ana p
 
 - La `5322.From` dirección es blueyonder@news.blueyonderairlines.com, que es lo que verá en Outlook.
 
-Listas de remitentes seguros y listas de dominios seguros en directivas contra correo no deseado en EOP, inspeccione las `5321.MailFrom` `5322.From` direcciones y. Los remitentes seguros de Outlook solo usan la `5322.From` dirección.
+Las listas de remitentes seguros y las listas de dominios seguros en las directivas contra correo no deseado en EOP inspeccionan solo las `5322.From` direcciones, es similar a los remitentes seguros de Outlook que usan la `5322.From` dirección.
 
 Para evitar que se filtre este mensaje, puede realizar los siguientes pasos:
 

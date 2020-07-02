@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268286"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861167"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Más información sobre las directivas de retención para Microsoft Teams
 
@@ -77,7 +77,7 @@ Sin embargo, si se activa el historial de conversaciones en Skype Empresarial y 
 
 ## <a name="files-in-teams"></a>Archivos en Teams.
 
-En Teams, los archivos que se comparten en el chat se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. Los archivos que se suben a los canales se almacenan en el sitio de SharePoint para el equipo. Esto significa que para retener o eliminar archivos en Teams, debe configurar una o más directivas de retención que se aplican a las**cuentas de OneDrive** y **sitios de SharePoint** además de cualquier directiva de retención que configure para Teams. Para obtener más información sobre cómo funcionan las directivas de retención para estas ubicaciones, consulte [Más información sobre las directivas de retención para SharePoint y OneDrive](retention-policies-sharepoint.md).
+En Teams, los archivos que se comparten en el chat se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. Los archivos que se suben a los canales se almacenan en el sitio de SharePoint para el equipo. Esto significa que para retener o eliminar archivos en Teams, debe configurar una o más directivas de retención que se apliquen a OneDrive y SharePoint, además de las directivas de retención que configure para Teams. Para obtener más información sobre cómo funcionan las directivas de retención para estas ubicaciones, consulte [Más información sobre las directivas de retención para SharePoint y OneDrive](retention-policies-sharepoint.md).
 
 > [!NOTE]
 > Una directiva de retención que incluya los mensajes del canal de Teams o los chats de Teams sólo puede incluir las ubicaciones de Teams. Por lo tanto, para retener o eliminar estos archivos en Teams, debe crear una directiva de retención separada.
@@ -98,6 +98,12 @@ Cuando se incluyen usuarios externos en una reunión que su organización organi
 
 - Si un usuario externo se une mediante el uso de una cuenta de otra organización de Microsoft 365, sus directivas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro arrendatario. Sin embargo, para la misma reunión, sus directivas de retención pueden eliminar los mensajes de sus usuarios.
 
+
+## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
+
+Si un usuario deja la organización y su cuenta de Office 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) para SharePoint y OneDrive.
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -123,12 +129,9 @@ Estamos trabajando continuamente en la optimización de la funcionalidad de rete
     
     - Al seleccionar **Elegir usuarios** para la ubicación de los**chats de Teams** puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 
-
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Cómo configurar una directiva de retención para Microsoft Teams
 
-Consulte[Crear y configurar directivas de retención](create-retention-policies.md).
-
-En la página**Elegir ubicaciones **del asistente, seleccione las siguientes opciones:
+Siga las instrucciones para [Crear y configurar directivas de retención](create-retention-policies.md) y para la página **Elegir ubicaciones** del asistente, seleccione las siguientes opciones:
 
 - **Permitirme elegir ubicaciones específicas** > **Mensajes de canal de Teams** y **chats de Teams**
 

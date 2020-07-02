@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: Obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780712"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015998"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -349,7 +349,7 @@ Ha habido muchos cambios para roles en el centro de administración desde que em
 
 - **Favoritos** : puede Agregar una estrella a sus roles favoritos o más usados, de modo que pueda encontrarlos fácilmente ordenando la columna o creando un filtro.
 - **Usuarios activos**  >  **Administrar roles** : esto se ha actualizado para alinearse con los cambios en los roles. Al igual que con la lista roles, hemos definido el ámbito de la lista predeterminada de funciones para que sea más útil, pero puede ver todos los roles expandiendo **Mostrar todos por categoría**.
-- **Rol de lector global** : ¡ le ha pedido! ¡ Lo consiguió! El rol [lector global](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) .
+- **Rol de lector global** : ¡ le ha pedido! ¡ Lo consiguió! El rol [lector global](add-users/about-admin-roles.md) .
 
 ### <a name="report-an-issue"></a>Informar de un problema
 

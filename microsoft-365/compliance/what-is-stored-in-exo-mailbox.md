@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los datos producidos por las aplicaciones basadas en la nube en Microsoft 365 se almacenan o asocian con el buzón de correo de un usuario de Exchange Online.
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626286"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016303"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenido almacenado en buzones de correo de Exchange Online
 
@@ -32,8 +32,8 @@ En la siguiente tabla se enumeran las aplicaciones que almacenan o asocian datos
 
 |Aplicación de Microsoft 365|Descripción|
 |:---------|:---------|
-|Formularios|Los formularios (almacenados como un archivo PDF) y las respuestas a un formulario (almacenado en un archivo CSV) se adjuntan a los mensajes de correo electrónico y se almacenan en una carpeta oculta en el buzón del usuario que creó el formulario. Al exportar contenido de formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** en una subcarpeta denominada con el siguiente globalmente identificado (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Grupos de 365 de Microsoft|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón de correo asociado a un grupo de Microsoft 365.|
+|Formularios|Los formularios y las respuestas a un formulario se almacenan en archivos que se adjuntan a mensajes de correo electrónico y se almacenan en una carpeta oculta en el buzón del usuario que creó el formulario. Los formularios creados antes del 2020 de abril se almacenan como un archivo PDF. Los formularios creados después de 2020 se almacenan como un archivo JSON.  Las respuestas a un formulario se almacenan en un archivo CSV. Al exportar contenido de formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** en una subcarpeta denominada con el siguiente globalmente identificado (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Grupos de Microsoft 365|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón de correo asociado a un grupo de Microsoft 365.|
 |Outlook/Exchange Online|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón de un usuario.|
 |Personas|Los contactos de la aplicación contactos (que son los mismos contactos que los que son accesibles en Outlook) se almacenan en el buzón de un usuario.|
 |Programación de clases|Los planes creados en el programa de clases se almacenan en el buzón del grupo de Microsoft 365 correspondiente que se aprovisiona cuando se crea un plan nuevo. El alias para el buzón de grupo es el nombre del plan.|

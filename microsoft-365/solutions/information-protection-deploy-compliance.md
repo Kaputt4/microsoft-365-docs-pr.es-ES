@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Obtenga información sobre cómo usar la puntuación Complance y el administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695178"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016372"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Usar la puntuación de cumplimiento y el administrador de cumplimiento para administrar acciones de mejora
 
@@ -107,9 +107,9 @@ También puede Agregar una nueva plantilla personalizada para la organización b
 >Si se trata de un gran número de reglamentos o de acciones de mejora superpuestas, considere la posibilidad de descargar cada plantilla respectiva y combinar los conjuntos de datos, quitar las acciones de mejora o los tipos de control que no se aplican a la organización y volver a cargar. Esto puede ser más fácil que navegar por cada sección de información de control y marcar cada una como fuera del ámbito.
 >
 
-## <a name="compliance-score"></a>Puntuación de conformidad
+## <a name="compliance-score"></a>Puntuación de cumplimiento 
 
-Una vez que las especificaciones de evaluación y revisión se llevan a cabo en el administrador de cumplimiento, ahora puede ir a la herramienta de [puntuación de cumplimiento](../compliance/working-with-compliance-score.md) y revisar la puntuación y el segmento, y clasificar los datos con más detalle, incluido el área de control.
+Una vez que las especificaciones de evaluación y revisión se llevan a cabo en el administrador de cumplimiento, ahora puede ir a la herramienta de [puntuación de cumplimiento](../compliance/compliance-score.md) y revisar la puntuación y el segmento, y clasificar los datos con más detalle, incluido el área de control.
 
 La herramienta de puntuación de cumplimiento en el centro de administración de cumplimiento de Microsoft 365 ofrece varios métodos para revisar y filtrar datos de cumplimiento obtenidos del administrador de cumplimiento y varios servicios de Microsoft 365. Esta herramienta se actualiza automáticamente cuando se implementan varias opciones de configuración y comparte señales con la puntuación segura de Microsoft para que se muestren muchas acciones de mejora en ambos resultados. 
  
@@ -141,7 +141,7 @@ Estas son algunas sugerencias importantes para el uso de la puntuación de cumpl
 
 - Cada normativa de privacidad de los datos tiene una combinación de controles técnicos, especificaciones de documentación y requisitos de funcionamiento, proceso e informes. Todas estas se muestran en las acciones de mejora. 
 
-- Este artículo se centra en un subconjunto de los controles técnicos especificados para la privacidad de los datos en el administrador de cumplimiento y la puntuación de cumplimiento. Consulte la herramienta Administrador de cumplimiento y la [documentación](../compliance/working-with-compliance-score.md) para obtener más información sobre los controles administrativos no técnicos.
+- Este artículo se centra en un subconjunto de los controles técnicos especificados para la privacidad de los datos en el administrador de cumplimiento y la puntuación de cumplimiento. Consulte la herramienta Administrador de cumplimiento y la [documentación](../compliance/compliance-score.md) para obtener más información sobre los controles administrativos no técnicos.
 
 - Para centrarse en la vista de las acciones de mejora en su área de interés, puede filtrar por tipo de acción en la ficha **soluciones** del administrador de puntuación de cumplimiento.
 
