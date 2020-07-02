@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Obtenga información acerca de cómo usar el Administrador de cumplimiento en el Portal de confianza del servicio de Microsoft para satisfacer los requisitos normativos y de protección de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815601"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016261"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
 > [!NOTE]
-> En esta documentación se describe una versión anterior de este producto. No se aconseja a los usuarios usar esta versión del Administrador de cumplimiento sino que se les aconseja usar la nueva [Puntuación de cumplimiento de Microsoft](compliance-score.md).
+> En esta documentación se describe una versión anterior de este producto. *No es recomendable que los usuarios usen esta versión deL Administrador de cumplimiento*. **Si usa la versión preliminar del Administrador de cumplimiento actual, consulte la [documentación del Administrador de cumplimiento (versión preliminar)](working-with-compliance-manager.md).**
 
  *El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.*
   
@@ -227,7 +227,7 @@ Al evaluar cada control con estos factores, determinamos la esencia del control 
   
  **Amenaza**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Obligatorio** <br/> |**Discrecional** <br/> |
 |**Preventivo** <br/> |Riesgo alto  <br/> |Riesgo medio  <br/> |
@@ -244,7 +244,7 @@ Una amenaza hace referencia a cualquier acción que implica un riesgo para el es
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Interna**<br/>||**Externa**<br/>||||
+|<br>|**Interna**<br/>|<br>|**Externa**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Malintencionada*<br/>|*Accidental*<br/>|*Malintencionada*<br/>|*Accidental*<br/>|||
 |**Confidencialidad**<br/>|(A, M o B)  <br/> |(A, M o B)  <br/> |(A, M o B)  <br/> |(A, M o B)|

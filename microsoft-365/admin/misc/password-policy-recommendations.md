@@ -19,18 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399319"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015928"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
  
 Como administrador de una organización, usted es el responsable de configurar la directiva de contraseñas para los usuarios de su organización. El establecimiento de la Directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
   
 Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
+
+Para obtener más información acerca de las contraseñas de Microsoft 365, consulte estos [artículos relacionados](#related-articles).
   
 ## <a name="understanding-password-recommendations"></a>Comprender las recomendaciones de contraseña
 
@@ -131,3 +133,13 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 - [Las peores contraseñas de 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 - [Descargar archivos desde la web](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## <a name="related-articles"></a>Artículos relacionados
+
+[Restablecer contraseñas](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[Establecer la contraseña de un usuario individual que nunca caduque](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[Volver a enviar la contraseña de un usuario: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

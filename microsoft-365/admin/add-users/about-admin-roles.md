@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: d67f80ef00f6decb7172d4ea484a3c4161fcbf31
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e76024f1d13e9210b74e2f6c4fc63c9992615099
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387433"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015916"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -35,13 +35,13 @@ Su suscripción a Microsoft 365 u Office 365 incluye un conjunto de roles de adm
 
 El Centro de administración de Microsoft 365 le permite administrar roles de Azure AD y de Microsoft Intune. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure AD y en el centro de administración de Intune.
 
-¿Busca las descripciones detalladas de los roles para Azure AD? Consulte [Permisos de rol de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+¿Busca una lista completa de descripciones detalladas de los roles para Azure AD que puede administrar en el Centro de administración de Microsoft 365? Consulte Permisos de roles de administrador en Azure Active Directory. [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-¿Busca las descripciones detalladas de roles para Microsoft Intune? Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+¿Busca una lista completa de descripciones detalladas de los roles para Intune que puede administrar en el Centro de administración de Microsoft 365?  Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 Para más información acerca de la asignación de roles en el Centro de administración de Microsoft 365, consulte [Asignar roles de administrador](assign-admin-roles.md).
 
-## <a name="things-to-consider"></a>Aspectos que se deben tener en cuenta...
+## <a name="security-guidelines-for-assigning-roles"></a>Directrices de seguridad para asignar roles
 
 Debido a que los administradores tienen acceso a archivos y datos confidenciales, le recomendamos que siga estas instrucciones para mantener los datos de su organización más seguros.
 
@@ -53,11 +53,7 @@ Debido a que los administradores tienen acceso a archivos y datos confidenciales
 
 Si recibe un mensaje en el centro de administración que le indica que no tiene permisos para editar una configuración o una página, es porque se le ha asignado un rol que no tiene ese permiso.
 
-## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Roles de Azure AD disponibles en el Centro de administración de Microsoft 365
-
-El Centro de administración de Microsoft 365 le permite administrar más de 30 roles de Azure AD. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure. Si tiene una empresa grande, es posible que haya roles en el portal de Azure que cubran las necesidades de su organización.
-
-Un usuario que tenga asignado un rol de administrador tendrá el mismo nivel de acceso a los servicios en la nube a los que esté suscrita la organización, independientemente de si asigna el rol en el Centro de administración de Microsoft 365 o en el portal de Azure, o bien mediante el módulo de Azure AD para Windows PowerShell.
+## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Roles más frecuentes del Centro de administración de Microsoft 365
 
 ::: moniker range="o365-worldwide"
 
@@ -80,82 +76,24 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de servicios de Teams    |   Asigne el rol de administrador de servicios de Teams a los usuarios que necesiten acceder y administrar el centro de administración de Teams. <br><br>Los administradores de servicio de Teams también pueden: <br> - Administrar reuniones <br> - Administrar puentes de conferencia <br> - Administrar la configuración de toda la organización, incluida la federación, la actualización de equipos y la configuración de cliente de equipos   |
 |Administrador de usuarios     |    Asigne el rol de administrador de usuarios a los usuarios que necesiten hacer lo siguiente para todos los usuarios: <br> - Agregar usuarios y grupos <br> - Asignar licencias <br> - Administrar las propiedades de la mayoría de los usuarios <br> - Crear y administrar vistas de usuarios <br> - Actualizar las directivas de expiración de contraseña <br> - Administrar solicitudes de servicio <br> - Supervisar el estado del servicio <br><br>  El administrador de usuario también puede realizar las siguientes acciones para los usuarios que no sean administradores y para los usuarios que tengan asignados los siguientes roles: Lector de directorios, Invitador de usuarios invitados, Administrador del departamento de soporte técnico, Lector del centro de mensajes y Lector de informes: <br> - Administrar nombres de usuario<br> - Eliminar y restaurar usuarios<br> - Restablecer contraseñas <br> - Forzar a los usuarios a cerrar sesión <br> - Actualizar claves de dispositivo (FIDO)   |
 
-### <a name="all-azure-ad-roles"></a>Todos los roles de Azure AD
-
- A continuación, presentamos una lista de todos los roles de administrador disponibles en el Centro de administración de Microsoft 365.
-
-|Rol de administrador     |Descripción  |
-|---------|---------|
-|Administrador de aplicación     |    Tiene acceso completo a las aplicaciones empresariales, los registros de aplicaciones y la configuración del proxy de aplicación.     |
-|Desarrollador de la aplicación     |    Crea registros de aplicaciones y consiente el acceso a la aplicación en su propio nombre.     |
-|Administrador de autenticación     |    Puede requerir que los usuarios vuelvan a registrar la autenticación de las credenciales que no son de contraseña, como la MFA.     |
-|Administrador de Azure Information Protection     |   Administra las etiquetas para la directiva de Azure Information Protection, administra las plantillas de protección y activa la protección.       |
-|Administrador de facturación     |    Realiza las compras, administra las suscripciones, las solicitudes de servicio y supervisa el estado del servicio.     |
-|Administrador de aplicaciones en la nube     | Tiene acceso completo a las aplicaciones empresariales y los registros de aplicaciones. Sin proxy de aplicación.     |
-|Administrador de dispositivos en la nube     |    Habilita, deshabilita y elimina dispositivos y puede leer claves de BitLocker de Windows 10.     |
-|Administrador de cumplimiento     |    Administra los requisitos reglamentarios y los casos de eDiscovery, y mantiene el gobierno de datos de las ubicaciones, identidades y aplicaciones.     |
-|Administrador de datos de cumplimiento     |    Realiza un seguimiento de los datos, se asegura de que estén protegidos, obtiene información sobre los problemas y ayuda a mitigar el riesgo.     |
-|Administrador de acceso condicional     |   Administra la configuración de acceso condicional de Azure Active Directory, pero no la directiva de acceso condicional de Exchange ActiveSync.      |
-|Aprobador del acceso a la Caja de seguridad del cliente     |      Administra las solicitudes de Caja de seguridad del cliente y puede activarla o desactivarla.   |
-|Administrador de análisis de escritorio     |   Puede administrar y acceder a herramientas y servicios de administración de escritorio.      |
-|Administrador de Dynamics 365     |  Posee acceso completo a Microsoft Dynamics 365 Online, administra las solicitudes de servicio y supervisa el estado del servicio.       |
-|Administrador de Exchange     |  Posee acceso completo a Exchange Online, crea y administra grupos, administra solicitudes de servicio y supervisa el estado del servicio.    |
-|Administrador del proveedor de identidad externa    |     Configura los proveedores de identidades para su uso en federación directa.    |
-|Administrador global     |    Tiene acceso ilimitado a todas las características de administración y a la mayoría de los datos en todos los centros de administración.     |
-|Lector global     |    Tiene acceso de solo lectura a todas las características de administración y a la mayoría de los datos en los centros de administración. Para obtener una descripción detallada de los derechos de acceso y las limitaciones de este rol, consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
-|Administrador de grupos   |Permite crear grupos y administrar la configuración de todos los grupos en los centros de administración.|
-|Invitador de usuarios invitados     |    Administra las invitaciones de usuarios invitados B2B de Azure Active Directory.     |
-|Administrador del departamento de soporte técnico     | Restablece las contraseñas y vuelve a autenticarlas para todos los usuarios que no sean administradores y para algunos roles de administrador. Administra solicitudes de servicio y supervisa el estado del servicio.      |
-|Administrador de Intune     | Tiene acceso completo a Intune, administra usuarios y dispositivos para asociar directivas. También crea y administra grupos.      |
-|Administrador de Kaizala     |    Tiene acceso completo a todas las características de administración y datos de Kaizala, y administra las solicitudes de servicio.     |
-|Administrador de licencias     |     Asigna y elimina las licencias de los usuarios y edita su ubicación de uso.    |
-|Lector de privacidad del centro de mensajes     |    Accede a los mensajes de privacidad de datos en el Centro de mensajes y recibe notificaciones por correo electrónico.     |
-|Lector del centro de mensajes     | Lee y comparte mensajes habituales en el Centro de mensajes, obtiene resúmenes de correo electrónico semanales, y tiene acceso de solo lectura a usuarios, grupos, dominios y suscripciones.     |
-|Administrador de aplicaciones de Office    |   Administra las directivas basadas en la nube para Office y el contenido Novedades que los usuarios ven en sus aplicaciones de Office.   |
-|Administrador de Power BI    |   Posee acceso completo a las tareas de administración de Power BI, administra solicitudes de servicio y supervisa el estado del servicio.   |
-|Administrador de Power Platform     |    Posee acceso completo a Microsoft Dynamics 365, PowerApps, directivas de prevención de pérdida de datos y Microsoft Flow.     |
-|Administrador de roles con privilegios     |    Administra las asignaciones de roles y todas las características de control de acceso de Privileged Identity Management.     |
-|Administrador de autenticación con privilegios     |    Restablece contraseñas, actualiza credenciales que no son contraseñas, fuerza el uso del cierre de sesión, supervisa el estado del servicio y administra las solicitudes de servicio.     |
-|Lector de informes     |   Lee los datos de informes de uso del panel informes, el paquete de contenido para la adopción de PowerBI, los informes de inicio de sesión y la API de informes de Microsoft Graph.      |
-|Administrador de búsqueda     |    Tiene acceso completo a Microsoft Search, asigna los roles de administrador y editor de búsqueda, administra el contenido editorial, supervisa el estado del servicio y crea solicitudes de servicio.     |
-|Editor de búsqueda     |    Solo puede crear, editar y eliminar contenido para Microsoft Search, como marcadores, preguntas y respuestas, y ubicaciones.     |
-|Administrador de seguridad     |    Controla la seguridad de la organización, administra las directivas de seguridad, revisa los análisis e informes de seguridad y supervisa el panorama de las amenazas.     |
-|Operador de seguridad     |    Investiga y responde a las alertas de seguridad, administra las características en el centro de Protección de Identidades y supervisa el estado del servicio.     |
-|Lector de seguridad     |    Tiene acceso de solo lectura a las características de seguridad, informes de inicio de sesión y registros de auditoría.     |
-|Administrador de soporte técnico del servicio     |    Crea solicitudes de servicio para servicios de Office 365, Microsoft 365 y Azure, y supervisa el estado del servicio.     |
-|Administrador de SharePoint     |    Posee acceso completo a SharePoint Online, administra los grupos de Microsoft 365, administra las solicitudes de servicio y supervisa el estado del servicio.     |
-|Administrador de Skype Empresarial     | Tiene acceso completo a todas las características de Teams y Skype, y a los atributos de usuario de Skype. También administra solicitudes de servicio y supervisa el estado del servicio.      |
-|Administrador de Teams     |    Posee acceso completo al centro de administración de Teams y Skype, administra los grupos de Microsoft 365, las solicitudes de servicio y supervisa el estado del servicio.     |
-|Administrador de comunicaciones de Teams     |    Asigna números de teléfono, crea y administra las directivas de voz y reuniones, y lee los análisis de llamadas.     |
-|Ingeniero de soporte técnico de comunicaciones de Teams     |    Lee los detalles del registro de llamadas de todos los participantes de la llamada para solucionar problemas de comunicación.     |
-|Especialista en soporte técnico de comunicaciones de Teams     |    Lee los detalles de las llamadas de usuario solo para un usuario específico con el fin de solucionar problemas de comunicación.|
-|Administrador de usuarios     |   Restablece las contraseñas de usuario, crea y administra usuarios y grupos, incluyendo filtros, administra solicitudes de servicio y supervisa el estado del servicio.|
-
-## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Roles de Microsoft Intune disponibles en el Centro de administración de Microsoft 365
-
-|Rol de administrador     |¿A quién se le debe asignar este rol?  |
-|---------|---------|
-|Administrador de aplicaciones     |   Asigne el rol de administrador de aplicaciones a los usuarios que administran el ciclo de vida de la aplicación para aplicaciones móviles, configura aplicaciones administradas por directivas y ve la información de dispositivo y los perfiles de configuración.  |
-|Operador de asistencia     |   Asigne el rol del operador de asistencia a los usuarios que asignen aplicaciones y directivas a usuarios y dispositivos. |
-|Administrador de roles de Intune    |   Asigne el rol de administrador de Intune a los usuarios que puedan asignar permisos de Intune a otros administradores y puedan administrar roles de Intune personalizados e integrados.   |
-|Administrador de directivas y perfiles     |   Asigne el rol de administrador de directivas y perfiles para que los usuarios administren directivas de cumplimiento, perfiles de configuración y la inscripción de Apple.   |
-|Operador de solo lectura     |   Asigne el rol de operador de solo lectura a los usuarios que solo puedan ver usuarios, dispositivos, detalles de inscripción y configuraciones.   |
-|Administrador escolar     |   Asigne al rol de administrador escolar a usuarios para que tengan acceso completo a la administración de dispositivos, aplicaciones y configuraciones de Windows 10 e iOS en Intune para la Educación.   |
-
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administración delegada para Microsoft Partners
 
 Si está trabajando con un partner de Microsoft, puede asignarle roles de administrador. Por su parte, los partners pueden asignar roles de administrador a los usuarios en sus propias empresas o bien en la suya. Es posible que quiera que lo hagan si, por ejemplo, están configurando y administrando la organización online por usted.
   
 Un partner puede asignar estos roles: 
   
-- Administración completa, que tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
-    
-- Administración limitada, que tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
+- **Administración completa** Tiene privilegios equivalentes a los de un administrador global, con la excepción de administrar la autenticación multifactor mediante el Centro de Partners.
+
+- **Administración limitada** Tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 
 Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Asignar roles de administrador](assign-admin-roles.md)
+
+[Roles de Azure AD en el Centro de administración de Microsoft 365](azure-ad-roles-in-the-mac.md)
+
+[Rol de administrador de Exchange Online](about-exchange-online-admin-role.md)
   
 [Informes de actividad en el Centro de administración de Microsoft 365](../activity-reports/activity-reports.md)
