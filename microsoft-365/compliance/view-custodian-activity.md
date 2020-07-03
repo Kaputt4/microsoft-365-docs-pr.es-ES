@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta avanzada de administración de custodios de eDiscovery para acceder fácilmente a la actividad y buscar en los custodios en su caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9e96d0b5dd3bf42dbba56a6e1be91014485ce98
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819050"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024770"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver actividad de auditoría de custodios
 
@@ -39,9 +39,9 @@ Usted debe tener asignado el rol de Registros de auditoría o Registros de audit
 
 1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
   
-2. Haga clic en la ficha **custodios** .
+2. Haga clic en la pestaña **orígenes** .
   
-3. Seleccione un custodio de la lista y, a continuación, haga clic en **ver actividad de custodios** en la página de control flotante.
+3. En la página **custodios** , seleccione un custodio de la lista y, a continuación, haga clic en **ver actividad de custodios** en la página de control flotante.
 
     Se muestra la página de búsqueda de actividades de custodio. Nota el custodio que seleccionó en el paso anterior se muestra en el cuadro desplegable **custodio** . Puede seleccionar custodios diferentes en el cuadro desplegable, pero solo puede buscar actividades para un custodio a la vez.
 
@@ -49,15 +49,15 @@ Usted debe tener asignado el rol de Registros de auditoría o Registros de audit
    
 4. Configurar los siguientes criterios de búsqueda: 
       
-   a. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades realizadas por el custodio que coinciden con los demás criterios de búsqueda.
+   1. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades realizadas por el custodio que coinciden con los demás criterios de búsqueda.
 
       ![Lista de actividades](../media/CustodianActivityAudit.PNG)
       
-      b. Fecha de **Inicio y fecha de finalización** : Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es un año.
+   1. Fecha de **Inicio y fecha de finalización** : Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es un año.
       
-      c. **Custodios** : haga clic en este cuadro y seleccione un custodio específico para mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados.
+   1. **Custodios** : haga clic en este cuadro y seleccione un custodio específico para mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados.
       
-   5. Haga clic en   ![Botón buscar](../media/SearchButton.PNG)  para ejecutar la búsqueda con los criterios de búsqueda. Los resultados de la búsqueda se cargan y, después de unos segundos, se muestran en resultados en la página de búsqueda de actividades de custodio. 
+5. Haga clic en ![Botón buscar](../media/SearchButton.PNG)  para ejecutar la búsqueda con los criterios de búsqueda. Los resultados de la búsqueda se cargan y, después de unos segundos, se muestran en resultados en la página de búsqueda de actividades de custodio. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Paso 2: ver los resultados de la búsqueda de registros de auditoría
 

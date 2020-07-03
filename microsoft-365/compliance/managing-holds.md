@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo realizar suspensiones en custodios y sus orígenes de datos para conservar el contenido relevante para el caso de eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: f56d12b6d69e56e85f0e7ad37fbf65746a1cff23
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477166"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024740"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
@@ -37,13 +37,13 @@ En algunos casos, es posible que tenga un conjunto de custodios que haya identif
 Para ver la Directiva de retención de custodios:
 
 1. En el centro de cumplimiento de Microsoft 365, haga clic en exhibición de documentos electrónicos **> avanzadas** para mostrar la lista de casos de su organización.
-   
-2. Vaya a la pestaña **custodios** para agregar custodios en su caso. Para obtener información sobre cómo agregar y poner custodios en espera en un caso de exhibición avanzada de documentos electrónicos, vea [Agregar custodios a un caso de exhibición avanzada](add-custodians-to-case.md)de documentos electrónicos. Si ya ha agregado custodios y los ha colocado en espera, vaya al paso 3.
-   
+
+2. Vaya a la pestaña **orígenes** para agregar custodios en su caso. Para saber cómo puede Agregar y poner custodios en espera en un caso de eDiscovery avanzado, consulte [Agregar custodios a un caso](add-custodians-to-case.md). Si ya ha agregado custodios y los ha colocado en espera, vaya al paso 3.
+
 3. Vaya a la pestaña **suspensiones** y haga clic en **CustodianHold \<HoldId> **.
-   
-4. En la página de control flotante, puede ver las estadísticas de retención para la Directiva. También puede realizar acciones como aplicar una consulta a la retención basada en custodios. Para obtener más información acerca de la creación de una consulta de retención y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
- 
+
+4. En la página de flotante, puede ver las estadísticas de retención para la Directiva. También puede realizar acciones como aplicar una consulta a la retención basada en custodios. Para obtener más información acerca de la creación de una consulta de retención y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+
 ## <a name="manage-non-custodial-holds"></a>Administrar suspensiones que no son de privación
 
 Al crear una suspensión, tiene las siguientes opciones para limitar el contenido que se almacena en las ubicaciones de contenido especificadas:
@@ -70,19 +70,19 @@ Para crear una retención que no sea de apoyo para un caso de exhibición avanza
   
 8. Elija las ubicaciones de contenido que desea poner en retención. Puede poner buzones de correo, sitios y carpetas públicas en retención.
 
-   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   1. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
  
-    > [!NOTE]
-    > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
+      > [!NOTE]
+      > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
 
-    b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+   1. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
     
-     Consulte la sección **p + f** para obtener sugerencias sobre cómo poner Microsoft 365 grupos y Microsoft Teams en espera.
+      Consulte la sección **p + f** para obtener sugerencias sobre cómo poner Microsoft 365 grupos y Microsoft Teams en espera.
 
-    > [!NOTE]
-    > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+      > [!NOTE]
+      > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco probable de que se cambie el UPN de una persona, su dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una suspensión no confidencial y se modifica su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
-     c. **Carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   1. **Carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 
 9. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
   
@@ -126,7 +126,7 @@ Microsoft Teams se basa en grupos de Office 365. Por lo tanto, ponerlos en reten
   - Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un grupo de Microsoft 365 o de Microsoft Teams. Esta es una buena forma de obtener la dirección URL del sitio que está asociada con un grupo de Microsoft 365 o un equipo de Microsoft. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team:
 
 
-    ```text
+    ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam

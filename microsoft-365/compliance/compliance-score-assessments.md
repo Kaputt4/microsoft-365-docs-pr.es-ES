@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Personalización de la puntuación de cumplimiento de Microsoft mediante la creación de evaluaciones que le ayuden a administrar el cumplimiento de la organización.
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023313"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035635"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>Personalización de la puntuación de cumplimiento (versión preliminar) con evaluaciones
 
@@ -46,7 +46,7 @@ Debido a que cada organización tiene necesidades específicas, la puntuación d
 Hay tres formas de configurar evaluaciones:
 
 1. Elija una evaluación lista para usar.
-2. Modifique la plantilla de una evaluación para adaptarla a sus necesidades.
+2. Modifique la [plantilla de una evaluación](compliance-score-templates.md) para adaptarla a sus necesidades.
 3. Cree su propia evaluación personalizada.
 
 Los usuarios deben poseer una función de administrador global, administrador de cumplimiento, administrador de datos de cumplimiento o administrador de seguridad para poder crear o modificar evaluaciones. Obtenga más información sobre [los roles y los permisos](compliance-score-setup.md#set-user-permissions-and-assign-roles).

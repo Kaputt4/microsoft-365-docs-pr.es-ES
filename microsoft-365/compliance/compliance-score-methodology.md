@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprenda cómo la puntuación de cumplimiento de Microsoft calcula una puntuación personalizada en función de las acciones realizadas para enfrentarse a los riesgos y mejorar la postura de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023251"
+ms.locfileid: "45024680"
 ---
 # <a name="compliance-score-preview-calculation"></a>Cálculo de la puntuación de cumplimiento (vista previa)
 
@@ -74,7 +74,7 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
 
  - **Las acciones obligatorias** no se pueden omitir, ya sea de forma intencionada o accidental. Un ejemplo es una directiva de contraseñas administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben seguir estos requisitos para obtener acceso al sistema.
   
- - **Las acciones discrecionales** dependen de que los usuarios sepan la Directiva y actúen en consecuencia. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejan es un control discrecional porque depende del usuario.
+ - **Las acciones discrecionales** dependen de que los usuarios sepan la Directiva y actúen en consecuencia. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo abandonan es una acción discrecional porque depende del usuario.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Acciones preventivas, de detectives y correctivas
   

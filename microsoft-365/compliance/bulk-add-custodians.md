@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Use la herramienta de adición en masa para agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en eDiscovery avanzado.
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741643"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024670"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Adición de custodios en masa a un caso de eDiscovery avanzado
 
@@ -37,16 +37,17 @@ Para los casos de eDiscovery avanzados que implican un gran número de custodios
 
 4. Agregue la información de la Private al archivo CSV y guárdelo en el equipo local. Consulte la sección siguiente para obtener información sobre las propiedades del archivo CSV.
 
-5. En la pestaña **orígenes** , haga clic en **importar custodios** nuevamente. 
+5. En la pestaña **orígenes** , haga clic en **importar custodios** nuevamente.
+
 6. En la página de flotante, haga clic en **examinar** y en cargar el archivo CSV.
 
    Una vez cargado el archivo CSV, se crea un trabajo de BulkAddCustodian y se muestra en la pestaña **trabajos** . El trabajo valida los custodios y sus orígenes de datos correspondientes y, a continuación, los agrega a la ficha **custodios** de la página **orígenes** del caso.
 
 ## <a name="custodian-csv-file"></a>Archivo CSV de custodio
 
-Una vez que haya descargado la plantilla CSV, puede Agregar custodios y su origen de datos en cada fila. Asegúrese de no cambiar los nombres de columna en la fila de encabezado.
+Una vez que haya descargado la plantilla CSV, puede Agregar custodios y su origen de datos en cada fila. Asegúrese de no cambiar los nombres de columna de la fila de encabezado.
 
-| Nombre de columna|Descripción|
+| Nombre de columna|Description|
 |:------- |:------------------------------------------------------------|
 |**Asociada de custodios**     | Correo electrónico UPN de custodio. Ejemplo: sarad@onmicrosoft.contoso.com           |
 |**Exchange habilitado** | Valor TRUE/FALSE si se va a agregar el buzón de custodio.      |

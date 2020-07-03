@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Revise todas las plantillas que están preparadas para su uso en la configuración de evaluaciones en la puntuación de cumplimiento de Microsoft (versión preliminar).
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016594"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035625"
 ---
 # <a name="compliance-score-preview-templates"></a>Plantillas de puntuación de cumplimiento (vista previa)
 
 ## <a name="templates-overview"></a>Información general de plantillas
 
-La puntuación de cumplimiento proporciona un conjunto completo de **plantillas para crear evaluaciones**. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Las plantillas nuevas se agregan a medida que se aprueban y actualizan las regulaciones.
+La [puntuación de cumplimiento](compliance-score.md) proporciona un conjunto completo de **plantillas para crear evaluaciones**. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos. Las plantillas nuevas se agregan a medida que se aprueban y actualizan las regulaciones.
 
 Puede modificar cualquiera de las plantillas que aparecen a continuación para adaptarla a las necesidades de su organización. También puede crear una evaluación personalizada creando su propia plantilla. 
 

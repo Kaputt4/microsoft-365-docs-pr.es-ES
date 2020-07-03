@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se proporciona una introducción a la exhibición avanzada de documentos electrónicos en Microsoft 365, una herramienta para investigaciones internas y externas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322045"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024797"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -59,13 +59,13 @@ En un nivel alto, a continuación se muestra cómo la exhibición avanzada de do
 
 En las secciones siguientes se describe cada paso del flujo de trabajo integrado en eDiscovery avanzado. En la siguiente captura de pantalla se muestra la pestaña **Inicio** de un caso denominado *pasivo del producto 2019002*. Nota las pestañas de flujo de trabajo en la parte superior de la página se ordenan para alinearse con el proceso EDRM. 
 
-Para obtener más información acerca del flujo de trabajo de un extremo a otro en la exhibición avanzada de documentos electrónicos, vea este [vídeo de Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133). 
+Para obtener más información acerca del flujo de trabajo de un extremo a otro en la exhibición avanzada de documentos electrónicos, vea este [vídeo de Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
 
 ![Las pestañas en eDiscovery avanzado siguen el flujo de trabajo de EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Administración de custodios
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>Administración de custodios y orígenes de datos que no son de privación
 
-Use la ficha **custodios** para agregar y administrar las personas que ha identificado como personas de interés en el caso. Al agregar custodios, puede realizar rápidamente acciones relacionadas con el custodio, como colocar una retención legal en fuentes de datos de custodios, comunicarse con custodios y buscar fuentes de datos de custodios para recopilar contenido relevante para el caso. A medida que avanza el caso, es fácil agregar custodios nuevos o liberar los custodios del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery](managing-custodians.md).
+Use la pestaña **orígenes** para agregar y administrar las personas que identificó como personas de interés en el caso y otros orígenes de datos que pueden no estar asociados a un custodio. Cuando se agregan custodios o fuentes de datos que no son de privación, puede realizar acciones rápidamente, como poner en retención legal en custodios y orígenes de datos que no son de privación, comunicarse con custodios y buscar en los orígenes de datos que no sean de custodia y recopilar contenido que sea relevante para el caso. A medida que avanza el caso, es fácil agregar nuevos custodios o fuentes de fecha no coprivate o liberarlos del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Administración de notificaciones de retención legal
 
@@ -85,7 +85,7 @@ Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes d
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
 
-Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para más información, consulte lo siguiente:
+Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
 
 - [Ver documentos de un conjunto de revisión](view-documents-in-review-set.md)
 

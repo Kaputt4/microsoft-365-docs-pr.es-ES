@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347859"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024730"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -95,7 +95,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 5. Conserve la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
 
-6. Haga clic en **Guardar**.
+6. Haga clic en **Guardar **.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
 <!-- again, why user accounts? -->
@@ -113,8 +113,8 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > Si desea asegurarse de que los documentos que contienen información confidencial no se compartan de manera inadecuada, asegúrese de que los **sitios de SharePoint** y **las cuentas de OneDrive** estén activados, junto con **los mensajes de chat y de canal de Teams**.
-    > Los canales de Microsoft Teams dependen de acuerdo con la funcionalidad de Exchange Online. Asegúrese de que la ubicación de **correo electrónico de Exchange** también está habilitada para las directivas que deben aplicarse para el contenido de los canales.  
+    > Si desea asegurarse de que los documentos que contienen información confidencial no se compartan incorrectamente en Teams, asegúrese de que los **sitios de SharePoint** y **las cuentas de OneDrive** están activados, junto con **los mensajes de chat y de canal de Teams**.
+
 <br/>
 
 6. En la **pestaña Configuración de directiva** , en **personalizar el tipo de contenido que quiere proteger**, mantenga la configuración sencilla predeterminada o elija **Usar configuración avanzada**y, a continuación, elija **siguiente**. Si elige la configuración avanzada, puede crear o editar reglas para la Directiva. (Para obtener ayuda, consulte [Configuración sencilla frente a configuración avanzada](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)).

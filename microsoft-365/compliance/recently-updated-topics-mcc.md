@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936153"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035645"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -61,7 +61,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 
 [Introducción al cumplimiento de la comunicación](communication-compliance-configure.md) (actualizado)<br>Requisitos de licencia y permisos actualizados.
 
-### <a name="customer-key"></a>Clave del cliente
+### <a name="customer-key"></a>Clave de cliente
 
 [Desplazamiento o rotación de una clave de cliente o una clave de disponibilidad](customer-key-availability-key-roll.md) (actualizada)<br>Actualizaciones de la organización que ayudan a aclarar qué teclas puede y qué no puede hacer.
 
@@ -150,7 +150,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 
 [Administrar la auditoría de buzones de correo](enable-mailbox-auditing.md#logon-types-and-mailbox-actions) (actualizado)<br>Se agregó información sobre la nueva acción de buzón de MailItemsAccessed, que se introdujo con la auditoría avanzada.
 
-[Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (actualizado)<br>Se agregaron nuevas descripciones para actividades de etiqueta de confidencialidad e información adicional acerca de [las actividades de colaboración de formularios](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)de auditoría.
+[Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (actualizado)<br>Se agregaron nuevas descripciones para actividades de etiqueta de confidencialidad e información adicional acerca de [las actividades de colaboración de formularios](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders)de auditoría.
 
 ### <a name="compliance-offerings"></a>Ofertas de cumplimiento
 
@@ -160,7 +160,7 @@ Todos los temas de [puntuación de cumplimiento](compliance-score.md) y de [Admi
 
 [Autoridad del Reglamento prudencial australiano (APRA)](offering-APRA-Australia.md) (actualizado)<br>Contenido alineado para nuevos estándares normativos.
 
-### <a name="customer-key"></a>Clave del cliente
+### <a name="customer-key"></a>Clave de cliente
 
 [Cifrado de servicio con clave de cliente](customer-key-overview.md) (nueva)<br>Artículo nuevo que presenta la clave de cliente y conceptos relacionados, como BitLocker y el cifrado de servicio, y cómo funcionan conjuntamente.
 

@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717351"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024780"
 ---
 # <a name="service-encryption"></a>Cifrado de servicio
 
 Además de usar el cifrado de nivel de volumen, Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa también usan el cifrado de servicio para cifrar los datos de los clientes. El cifrado del servicio permite dos opciones de administración de claves:
 
-## <a name="microsoft-managed-keys"></a>Claves administradas de Microsoft: 
+## <a name="microsoft-managed-keys"></a>Claves administradas de Microsoft
 Microsoft administra todas las claves criptográficas, incluidas las claves raíz para el cifrado del servicio. Esta opción está disponible actualmente en SharePoint Online y OneDrive para la empresa. Esta opción se está implementando actualmente para Exchange Online. Las claves administradas de Microsoft proporcionan cifrado de servicio predeterminado a menos que decida incorporarse con la clave de cliente. Si, en una fecha posterior, decide dejar de usar la clave de cliente sin seguir la ruta de acceso de purga de datos, los datos se cifran con las claves administradas de Microsoft. Los datos siempre se cifran en este nivel predeterminado como mínimo. 
 
-## <a name="customer-key"></a>Clave del cliente: 
+## <a name="customer-key"></a>Clave de cliente
 Debe proporcionar las claves raíz que se usan con el cifrado de servicio y administrarlas con Azure Key Vault. Microsoft administra todas las demás claves. Esta opción se denomina clave de cliente y actualmente está disponible para Exchange Online, SharePoint Online y OneDrive para la empresa. (Anteriormente denominado cifrado avanzado con BYOK. Consulte [mejorar la transparencia y el control para clientes de Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) para el anuncio original).
 
 El cifrado de servicio ofrece varias ventajas. Por ejemplo, clave de cliente:

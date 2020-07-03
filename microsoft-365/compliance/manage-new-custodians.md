@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver detalles, editar y editar en bloque la lista de custodios en un caso de eDiscovery avanzado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034182"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024810"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Administrar los custodios en un caso de eDiscovery avanzado
 
-La ficha custodios de eDiscovery avanzado contiene una lista de todos los custodios que se han agregado al caso. Después de agregar custodios a un caso, los detalles de cada custodio se recopilan automáticamente desde Azure Active Directory y se pueden ver en eDiscovery avanzado.
+La página custodios de la ficha **orígenes** en un caso de exhibición avanzada de documentos electrónicos contiene una lista de todos los custodios que se han agregado al caso. Después de agregar custodios a un caso, los detalles de cada custodio se recopilan automáticamente desde Azure Active Directory y se pueden ver en eDiscovery avanzado.
 
 ![Administrar custodios](../media/CustodianDetails.PNG)
 
@@ -79,9 +79,9 @@ Para actualizar los orígenes de datos asociados a un custodio:
 
 1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
   
-2. Haga clic en la ficha **custodios** .
+2. Haga clic en la pestaña **orígenes** .
   
-3. Seleccione un custodio de la lista y haga clic en **Editar** en la página de control flotante.
+3. En la página **custodios** , seleccione un custodio de la lista y haga clic en **Editar** en la página de control flotante.
 
     ![Edición de orígenes de datos](../media/EditCustodianDataSource.PNG)
   
@@ -103,9 +103,11 @@ Para desencadenar el proceso de reindización para tratar los elementos parcialm
 
 1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
 
-2. Haga clic en la **ficha custodios**y, a continuación, seleccione una custodia cuyos datos se deban reindizar. 
+2. Haga clic en la pestaña **orígenes** .
 
-3. En la página flotante, haga clic en **Actualizar índice**.
+3. En la página **custodios** , seleccione un custodio cuyos datos se deben reindizar.
+
+4. En la página flotante, haga clic en **Actualizar índice**.
 
    Se muestra un cuadro de diálogo que indica que se ha creado el trabajo de índice.
 
@@ -127,9 +129,9 @@ Para liberar un custodio:
 
 1. Vaya a **ediscovery > eDiscovery avanzado** y abra el caso.
 
-2.    Vaya a la pestaña **custodios** .
+2. Haga clic en la pestaña **orígenes** .
 
-3.    Haga clic en la **ficha custodios**y, a continuación, seleccione el custodio que se está publicando desde el caso.
+3. En la página **custodios** y, después, seleccione el custodio que se publicará desde el caso.
 
 4. En la página flotante, haga clic en **liberar custodio**.
 

@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: Puede Agregar orígenes de datos que no sean de Private a un caso de exhibición avanzada de documentos electrónicos y poner una retención en el origen de datos. Los orígenes de datos que no son de Private se reindizan, de modo que todo el contenido que se considere indizado parcialmente se vuelve a procesar para que se pueda buscar de forma completa y rápida.
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Puede Agregar orígenes de datos que no sean de Private a un caso de exhibición avanzada de documentos electrónicos y poner una retención en el origen de datos. Los orígenes de datos que no son de Private se reindizan, por lo que cualquier contenido que se considere como indizado parcialmente se reprocesa para que se pueda buscar de forma completa y rápida.
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695509"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024750"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Agregar orígenes de datos que no sean de Private a un caso de exhibición avanzada de documentos electrónicos
 
@@ -47,7 +46,7 @@ Siga estos pasos para agregar y administrar orígenes de datos que no sean de Pr
 
    Cada origen de datos no de Private que agregó aparece en la lista de la página de **orígenes de datos** .
 
-   Además, se crea un trabajo llamado *reindización de datos que no son de Private* y se muestra en la ficha **trabajos** del caso. Una vez creado el trabajo, el proceso de indización avanzado en iniciado y los orígenes de datos se vuelven a indizar.
+   Además, se crea un trabajo llamado *reindizar datos que no son de Private* y se muestra en la ficha **trabajos** del caso. Una vez creado el trabajo, el proceso de indización avanzado en iniciado y los orígenes de datos se reindizan.
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>Administración de la retención en orígenes de datos que no son de Private
 
