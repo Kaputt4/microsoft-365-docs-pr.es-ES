@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818990"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035665"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -368,7 +368,7 @@ Aquí se muestran algunos otros escenarios en los que se puede identificar app@s
 
 - Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
 
-En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo muy breve, a menudo en unos pocos segundos. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
+En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo breve, a menudo en unos pocos segundos. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
 
 ### <a name="folder-activities"></a>Actividades de carpetas
 
@@ -479,7 +479,7 @@ La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con
 |Grupo eliminado|GroupRemoved|El usuario elimina un grupo de un sitio. |
 |Configuración de solicitud de acceso modificada|WebRequestAccessModified|La configuración de solicitud de acceso fueron modificadas en un sitio.|
 |Configuración modificada "los miembros pueden compartir" |WebMembersCanShareModified|Los **miembros pueden compartir** la configuración se ha modificado en un sitio.|
-|Nivel de permiso modificado en la colección de sitios|PermissionLevelModified|Un nivel de permisos se modificó en una colección de sitios.|
+|Nivel de permiso modificado en una colección de sitios|PermissionLevelModified|Un nivel de permisos se modificó en una colección de sitios.|
 |Permisos de sitio modificados|SitePermissionsModified|El administrador o el propietario del sitio (o la cuenta de sistema) cambia el nivel de permisos que se asignan a un grupo en un sitio. Esta actividad también se registra si todos los permisos son removidos de un grupo. <br/><br/> **Nota**:Esta operación se ha dejado de usar en SharePoint en línea. Para buscar eventos relacionados, puede buscar otras actividades relacionadas con el permiso como **Administradores de la colección de sitios agregados**, **Usuario o grupo agregado a un grupo de SharePoint**,**Usuario permitido para crear grupos**, **Grupo creado** y **Grupo eliminado**.|
 |Nivel de permiso eliminado de la colección de sitios|PermissionLevelRemoved|Un nivel de permisos se eliminó de una colección de sitios.|
 |Administradores de la colección de sitios removidos|SiteCollectionAdminRemoved|El administrador de la colección de sitios o el propietario remueve una persona como administrador de la colección de sitios a un sitio. Esta actividad también se registra cuando un administrador se remueve así mismo de la lista de colección de administradores a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el Centro de administración de SharePoint).  Para devolver esta actividad en los resultados de búsqueda del registro de auditoría, tiene que buscar todas las actividades.|
@@ -704,34 +704,7 @@ Workplace Analytics ofrece información sobre cómo colaboran los grupos en la o
 
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
 
-En la siguiente tabla, se enumeran las actividades de usuario y de administrador en Microsoft Teams que se registran en el registro de auditoría. Microsoft Teams es un espacio de trabajo centrado en la charla en Office 365. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para más información y vínculos con temas de ayuda, consulte:
-
-- [Preguntas más frecuentes sobre Microsoft Teams: Ayuda para administradores](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Ayuda de Microsoft Teams](https://support.office.com/teams)
-
-|**Nombre descriptivo**|**Operación**|**Descripción**|
-|:-----|:-----|:-----|
-|Bot agregado al equipo|BotAddedToTeam|Un usuario agrega un bot a un equipo.|
-|Canal agregado|ChannelAdded|Un usuario agrega un canal a un equipo.|
-|Conector agregado|ConnectorAdded|Un usuario agrega un conector a un canal.|
-|Miembros agregados|MemberAdded|El propietario de un equipo agrega miembros a un equipo, canal o chat de grupo.|
-|Pestaña agregada|TabAdded|Un usuario agrega una pestaña a un canal.|
-|Configuración de canal cambiada|ChannelSettingChanged|La operación ChannelSettingChanged se registra cuando se realizan las siguientes actividades por un miembro del equipo. Para cada una de estas actividades, se muestra una descripción de la opción de configuración que se modificó (mostrada entre paréntesis a continuación) mostrada en la columna **Elemento** de los resultados de la búsqueda en el registro de auditoría. <br/><br/>- Cambia el nombre de un canal de equipo (**Nombre del canal**). <br/><br/>- Cambia la descripción de un canal de equipo (**Descripción del canal**).|
-|Configuración de organización cambiada|TeamsTenantSettingChanged|La operación OrganizationSettingChanged se registra cuando un administrador global realiza las siguientes actividades (mediante el Centro de administración de Microsoft 365); Tenga en cuenta que estas actividades afectarán a la configuración de Microsoft Teams de toda la organización. Para obtener más información, consulte [Configuración de administrador de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Para cada una de estas actividades, se muestra una descripción de la opción de configuración que se modificó (mostrada entre paréntesis a continuación) mostrada en la columna **Elemento** de los resultados de la búsqueda en el registro de auditoría. <br/><br/>- Habilita o deshabilita Microsoft Teams para la organización (**Microsoft Teams**). <br/><br/>- Habilita o deshabilita la interoperabilidad entre Microsoft Teams y Skype Empresarial para la organización (**Interoperabilidad de Skype Empresarial**). <br/><br/>- Habilita o deshabilita la vista de organigrama en los clientes de Microsoft Teams (vista de organigrama **). <br/><br/>- Habilita o deshabilita la posibilidad que tienen los miembros del equipo para programar reuniones privadas (** Programación de reuniones privadas **). <br/><br/>- Habilita o deshabilita la posibilidad que tienen los miembros del equipo para programar reuniones de canal (Programación de reuniones de canal**). <br/><br/>- Habilita o deshabilita las llamadas de vídeo en las reuniones de Teams (Vídeo para reuniones de Skype **). <br/><br/>- Habilita o deshabilita la pantalla compartida en las reuniones Microsoft Teams de la organización (** Uso compartido de pantalla para reuniones de Skype **). <br/><br/>- Habilita o deshabilita la posibilidad de agregar imágenes animadas (denominadas imágenes Giphy) a las conversaciones de Teams (Imágenes animadas**). <br/><br/>- Cambia la configuración de la clasificación de contenido de la organización (**Clasificación de contenido**). La clasificación de contenido restringe el tipo de imagen animada que se puede mostrar en las conversaciones. <br/><br/>• Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes personalizables (denominadas memes personalizadas) de Internet a las conversaciones del equipo (imágenes personalizables de Internet **). <br/><br/>• Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes editables (denominadas adhesivos) a las conversaciones de grupo (** imágenes editables **).<br/><br/>• Habilita o deshabilita la posibilidad de que los miembros del equipo usen bots en Microsoft Teams: chats y canales (bots en toda la organización). <br/><br/>• Permite la habilitación de bots específicos para Microsoft Teams. Esto no incluye al T-bot, que es el bot de ayuda de Microsoft Teams disponible cuando se habilitan los bots para la organización (** bots individuales **). <br/><br/>• Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen extensiones o pestañas (** extensiones o pestañas **). <br/><br/>• Habilita o deshabilita la instalación de prueba de la parte de bots de propiedad para Microsoft Teams (** Instalación de prueba de bots **). <br/><br/>• Habilita o deshabilita la posibilidad de que los usuarios envíen mensajes de correo electrónico a un canal de Microsoft Teams (** correo electrónico del canal**).|
-|Rol cambiado de miembros del equipo|MemberRoleChanged|El propietario del equipo cambia el rol de los miembros del equipo. Los siguientes valores indican el tipo de rol asignado al usuario. <br/><br/> **1** - Indica el rol del propietario.<br/>**2** - Indica el rol del miembro. <br/>**3**- Indica el rol del invitado. <br/><br/> La propiedad Miembros también incluye el nombre de su organización y la dirección de correo electrónico del miembro.|
-|Configuración de equipo cambiada|TeamSettingChanged|La operación TeamSettingChanged se registra cuando se realizan las siguientes actividades por el dueño del equipo. Para cada una de estas actividades, se muestra una descripción de la opción de configuración que se modificó (mostrada entre paréntesis a continuación) mostrada en la columna **Elemento** de los resultados de la búsqueda en el registro de auditoría. <br/><br/>- Cambia el tipo de acceso para un equipo. Los equipos se pueden establecer como privados o públicos (**Tipo de acceso de equipo**). Si un equipo es privado (valor predeterminado), los usuarios pueden acceder al equipo solo por invitación. Cuando un equipo es público, puede verlo cualquier persona. <br/><br/>- Cambia la clasificación de la información de un equipo (**Clasificación del equipo**). <br/> Por ejemplo, los datos de equipo se pueden clasificar como impacto empresarial alto, impacto empresarial medio o impacto empresarial bajo.<br/><br/>- Cambia el nombre de un equipo (**Nombre del equipo**). <br/><br/>- Cambia la descripción de un equipo (descripción del equipo**). <br/><br/>- Cambios realizados en cualquiera de las opciones de configuración del equipo. El propietario de un equipo puede obtener acceso a estas opciones de configuración en un cliente de Teams haciendo clic derecho en el equipo, luego **Administrar equipo** y haciendo clic en la pestaña **Configuración**. Para estas actividades, se muestra el nombre de la opción de configuración que se modificó en la columna de **Elemento** de los resultados de la búsqueda en el registro de auditoría.|
-|Equipo creado|TeamCreated|El usuario crea un equipo.|
-|Canal eliminado|ChannelDeleted|Un usuario elimina un canal de un equipo.|
-|Equipo eliminado|TeamDeleted|Un propietario de equipo elimina un equipo.|
-|Bot quitado del equipo|BotRemovedFromTeam|Un usuario quita un bot de un equipo.|
-|Conector quitado|ConnectorRemoved|Un usuario quita un conector de un canal.|
-|Miembros quitados|MemberRemoved|El propietario de un equipo quita a los miembros de un equipo, canal o chat de grupo.|
-|Pestaña removida|TabRemoved|Un usuario quita una pestaña de un canal.|
-|Conector actualizado|ConnectorUpdated|Un usuario ha modificado un conector en un canal.|
-|Pestaña actualizada|TabUpdated|Un usuario ha modificado una pestaña en un canal.|
-|Usuario que ha iniciado sesión en Equipos|TeamsSessionStarted|Un usuario inicia sesión en un cliente de Microsoft Teams. Este evento no captura las actividades de actualización de tokens.|
-||||
+Puede buscar el registro de auditoría de actividades administrativas y de usuario en Microsoft Teams. Teams es un espacio de trabajo de Office 365 orientado a la conversación. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para obtener descripciones de las actividades que se auditan de Teams, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Actividades de Microsoft Teams para Sanidad
 
@@ -743,7 +716,7 @@ Para obtener una descripción de las actividades de la aplicación Pacientes, co
 
 ### <a name="microsoft-teams-shifts-activities"></a>Actividades de Turnos en Microsoft Teams
 
-Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar el registro de auditoría para las actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, un grupo adicional de actividad está disponible para estas actividades en la lista del selector **Actividades**.
+Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar el registro de auditoría de las actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, habrá disponible un grupo adicional de esas actividades en la lista del selector **Actividades**.
 
 Para obtener una descripción de las actividades de la aplicación Turnos, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
@@ -813,7 +786,7 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 A continuación, en las descripciones, algunas operaciones contienen parámetros de actividad adicionales.
 
 > [!NOTE]
-> Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+> Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -827,8 +800,8 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Formulario exportado|ExportForm|Los resultados han sido exportado a Excel por el propietario del formulario. <br><br>La propiedad ExportFormat:string indicará si el archivo de Excel se puede descargar o ver en línea.|
 |Formulario de participación permitida para su copia|AllowShareFormForCopy|Para compartir el formulario con otros usuarios el propietario ha creado un vínculo en una plantilla. Este evento es registrado cuando el propietario del formulario hace clic para generar una dirección URL en la plantilla.|
 |Formulario de participación no permitida para su copia|DisallowShareFormForCopy|El propietario del formulario ha eliminado el vínculo en la plantilla.|
-|Co-autor del formulario añadido|AddFormCoauthor|Para ayudar a diseñar y ver respuestas el usuario utiliza un vínculo de colaboración. Este evento es registrado cuando un usuario utiliza una dirección URL de colisión (no ocurre cuando se genera la URL de colisión por primera vez).|
-|Co-autor del formulario quitado|RemoveFormCoauthor|El propietario del formulario ha eliminado el vínculo de colaboración.|
+|Coautor de formulario agregado|AddFormCoauthor|Para ayudar a diseñar y ver respuestas el usuario utiliza un vínculo de colaboración. Este evento es registrado cuando un usuario utiliza una dirección URL de colisión (no ocurre cuando se genera la URL de colisión por primera vez).|
+|Coautor de formulario eliminado|RemoveFormCoauthor|El propietario del formulario ha eliminado el vínculo de colaboración.|
 |Página de respuesta visualizada|ViewRuntimeForm|El usuario ha abierto una página de respuesta para su visualización. Este evento es registrado independientemente de si el usuario envía una respuesta o no.|
 |Respuesta creada|CreateResponse|Es similar a recibir una nueva respuesta.  Un usuario ha enviado una respuesta a un formulario. <br><br>La propiedad ResponseId:string y la propiedad ResponderId:string indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad ResponderId será nula.|
 |Respuesta actualizada|UpdateResponse|El propietario del formulario ha actualizado un comentario o la puntuación en un cuestionario. <br><br>La propiedad ResponseId:string y la propiedad ResponderId:string indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
@@ -846,17 +819,17 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Respuesta enviada|SubmitResponse|Un usuario envía una respuesta sobre un formulario. <br><br>La propiedad IsInternalForm:boolean indicará si el respondedor está dentro de la misma organización que el propietario del formulario.|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Actividades de Forms que realizan los coautores y respondedores anónimos
 
-Forms es compatible con la colaboración al diseñar formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor*. Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario. 
+Forms admite la colaboración al diseñar formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor*. Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario. 
 
-En la siguiente tabla se describen las actividades de auditoría y la información del registro de auditoría para las actividades realizadas por los coautores y los participantes anónimos.
+En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría de las actividades realizadas por los coautores y respondedores anónimos.
 
 |**Tipo de actividad**|**Usuario interno o externo**|**Identificador de usuario que ha iniciado sesión**|**Organización que ha iniciado sesión**|**Tipo de usuario de Forms**|
 |:-----|:-----|:-----|:-----|:-----|
-|Actividades de coautoría|Interno|UPN|Organización del propietario del formulario|Coautoría|
-|Actividades de coautoría|Externo|UPN<br>|Organización de coautores<br>|Coautoría|
-|Actividades de coautoría|Externo|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario<br>|Coautoría|
+|Actividades de coautoría|Interno|UPN|Organización del propietario del formulario|Coautor|
+|Actividades de coautoría|Externo|UPN<br>|Organización del coautor<br>|Coautor|
+|Actividades de coautoría|Externo|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario<br>|Coautor|
 |Actividades de respuesta|Externo|UPN<br>|Organización del usuario que responde<br>|Responder|
 |Actividades de respuesta|Externo|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
 |Actividades de respuesta|Anónimo|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
