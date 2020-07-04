@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre cómo Microsoft 365 ayuda a los servicios financieros a migrar a una plataforma de colaboración moderna, al tiempo que protege los datos y sistemas y les permite cumplir con las normativas
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214701"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432432"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
 

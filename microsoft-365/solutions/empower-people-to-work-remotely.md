@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configure una infraestructura de servicios y seguridad que permita a los trabajadores trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560467"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844875"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
-Es posible que su empresa necesite habilitar el acceso seguro a los recursos, herramientas e información locales y basados en la nube de la organización para que los empleados puedan trabajar desde sus casas. Permitir que los trabajadores trabajen fuera de la oficina de manera fluida y segura es importante en muchas organizaciones para:
+Es posible que su empresa necesite habilitar el acceso seguro a los recursos, herramientas e información locales y basados en la nube de la organización para que los empleados puedan trabajar desde sus casas. Permitir que los empleados trabajen de manera remota es importante en muchas organizaciones para lo siguiente:
 
 - Ahorrar en espacio de oficina.
 - Contratar y conservar trabajadores que no estén dispuestos a reubicarse.
 - Reducir los desplazamientos de los trabajadores, dejándoles más tiempo para ser productivos y para actividades que reducen el estrés fuera del trabajo.
 
-El trabajo remoto, también conocido como teletrabajo, abarca un gran espectro. Estos son algunos ejemplos:
+Microsoft 365 tiene las capacidades para permitir que los empleados trabajen de manera remota.
 
-- trabajadores que en ocasiones salen de la oficina para ir a conferencias o reuniones con los clientes.
-- Algunos trabajadores que trabajan de forma remota a tiempo completo.
-- Una empresa completamente remota en la que no hay ninguna oficina y todos los trabajadores trabajan a distancia.
+![Proporcionar las capacidades necesarias a sus trabajadores remotos con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-Desde cualquier parte del mundo y en cualquier momento, los trabajadores remotos deben poder tener acceso a:
 
-- Los recursos de la organización, como los ofrecidos por centros de datos de aplicaciones locales.
-- Los servicios basados en la nube y los datos de suscripción de Microsoft 365, como Teams, Exchange Online, SharePoint y OneDrive.
+| | |
+|:-------|:-----|
+| Conectados | Desde cualquier parte del mundo y en cualquier momento, los trabajadores remotos pueden acceder a: <ul><li>Los servicios basados en la nube y los datos de su suscripción de Microsoft 365. </li><li>Los recursos de la organización, como los ofrecidos por centros de datos de aplicaciones locales.</li></ul> |
+| Protegidos | Los inicios de sesión están protegidos con la autenticación multifactor (MFA). Las características de seguridad integradas de Microsoft 365 y Windows 10 protegen contra el malware, los ataques malintencionados y la pérdida de datos. |
+| Administrados | Los dispositivos de su trabajador remoto se pueden administrar desde la nube mediante configuraciones de seguridad, aplicaciones permitidas y requerimientos de cumplimiento con el estado del sistema. |
+| Colaborativos y productivos | Sus trabajadores remotos pueden ser tan productivos como lo son en la oficina de un modo altamente colaborativo gracias a las siguientes características: <ul><li>Reuniones en línea y sesiones de chat con Teams. </li><li>Áreas de trabajo compartidas para almacenar archivos en la nube con accesibilidad global y colaboración en tiempo real con SharePoint y OneDrive. </li><li>Tareas y flujos de trabajo compartidos para dividir el trabajo y terminarlo de forma más efectiva. </li></ul> |
+|||
 
-Para obtener una experiencia de inicio de sesión perfecta, las cuentas de usuario de Active Directory Domain Services (AD DS) se deben sincronizar con Azure Active Directory (Azure AD). Para proteger sus dispositivos con Windows 10, deben estar inscritos en Intune. Aquí se muestra una vista general de la infraestructura.
+Para una experiencia de inicio de sesión perfecta, las cuentas de usuario de Active Directory Domain Services (AD DS) locales se deben sincronizar con Azure Active Directory (Azure AD). Para proteger sus dispositivos con Windows 10, deben estar inscritos en Intune. Aquí se muestra una vista general de la infraestructura.
 
 ![La infraestructura básica para trabajadores remotos con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-Para apoyar a los trabajadores remotos, por ejemplo, en respuesta a la crisis de la COVID-19, una combinación de características en Microsoft 365 habilita a sus trabajadores remotos en un modo altamente colaborativo, como:
-
-- Reuniones en línea y sesiones de chat.
-- Áreas de trabajo compartidas para almacenar archivos en la nube con accesibilidad global y colaboración en tiempo real.
-- Tareas y flujos de trabajo compartidos para dividir el trabajo y terminarlo de forma más efectiva.
-
-Para un alto nivel de seguridad, Microsoft 365 incluye:
-
-- Requisitos de autenticación obligatorios, detección y respuesta a los inicios de sesión de alto riesgo, y bloqueo de aplicaciones específicas y dispositivos no compatibles.
-- Conexiones cifradas y recursos digitales en la nube.
-- Permisos para definir qué acciones se permiten a qué usuarios con ciertos archivos.
-- Características de seguridad integrales para proteger dispositivos con Windows 10.
-
-Las siguientes características y opciones de Microsoft 365 le permiten aplicar estos criterios a sus trabajadores remotos:
+Las siguientes características y opciones de Microsoft 365 le permiten cumplir con estos criterios para sus trabajadores remotos:
 
 | Funcionalidad o característica | Description | Licencias |
 |:-------|:-----|:-------|
@@ -85,9 +73,9 @@ Siga los pasos que se indican a continuación para proteger y optimizar el acces
 
 1. [Aumentar la seguridad de inicio de sesión con la autenticación multifactor](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Proporcionar acceso remoto a los servicios y aplicaciones locales](empower-people-to-work-remotely-remote-access.md)
-3. [Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Implementar servicios y aplicaciones de productividad para los trabajadores remotos](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Crear espacios de comunicación](empower-people-to-work-remotely-communication-venues.md)
+3. [Implementar servicios de seguridad y cumplimiento](empower-people-to-work-remotely-security-compliance.md)
+4. [Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Implementar servicios y aplicaciones de productividad para los trabajadores remotos](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![Los pasos para proporcionar Microsoft 365 a los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
