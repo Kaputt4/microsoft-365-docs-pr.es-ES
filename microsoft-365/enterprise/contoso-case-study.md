@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización global ficticia, aunque representativa, ha adoptado Microsoft 365 Enterprise.
-ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268427"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854263"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise para Contoso Corporation
 
 Microsoft 365 Enterprise, es el servicio de nube premier de Microsoft que combina aplicaciones productivas y servicios con Windows 10 Enterprise y características avanzadas de seguridad para crear soluciones inteligentes que eleven la creatividad de todos y el trabajo en equipo de forma segura. 
 
-Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Contoso ha implementado Microsoft 365 Enterprise y ha adoptado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Aplicaciones de Microsoft 365 para empresas, administración de dispositivos móviles, protección de la información y seguridad. 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 El objetivo general de Contoso para Microsoft 365 Enterprise es acelerar su transformación digital mediante servicios en la nube con el fin de integrar empleados, partners, datos y procesos para aumentar el valor para el cliente y mantener su ventaja competitiva en un mundo digital.
 
@@ -71,6 +71,10 @@ Vea los siguientes artículos para obtener más información:
 - [Equipo para un proyecto secreto](../solutions/contoso-team-for-top-secret-project.md)
 
   Para crear un entorno de colaboración seguro para un proyecto secreto, Contoso usó un equipo con aislamiento de seguridad.
+
+- [Introducción a la migración de voz de Teams](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+
+  Descubra cómo Contoso migró sus usuarios locales a Teams para la comunicación, la colaboración y la voz unificadas.
 
 ## <a name="next-step"></a>Paso siguiente
 

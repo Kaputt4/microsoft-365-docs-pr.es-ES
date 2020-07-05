@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560416"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844965"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -95,6 +95,10 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 ## <a name="let-your-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
 El Restablecimiento de Contraseña de Autoservicio (SSPR) permite a los usuarios restablecer sus contraseñas sin que el personal de TI deba actuar. Los usuarios pueden restablecer las contraseñas rápidamente en cualquier momento y desde cualquier sitio. Vea [este vídeo](https://go.microsoft.com/fwlink/?linkid=2128524) para configurar el SSPR.
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Iniciar sesión en aplicaciones SaaS con Azure AD
+
+Además de proporcionar autenticación en la nube para los usuarios, Azure AD también puede ser el método centralizado para proteger todas las aplicaciones, tanto si son locales como si encuentran en la nube de Microsoft o en otra nube. Con la [integración de Azure Active Directory con las aplicaciones](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), puede facilitar a los trabajadores remotos la detección de las aplicaciones que necesitan y el inicio de sesión en ellas de forma segura.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Recursos técnicos de administración para MFA e identidad
 
