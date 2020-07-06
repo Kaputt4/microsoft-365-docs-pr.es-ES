@@ -17,20 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613449"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039543"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
 Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real**.
 
-|||
+| Con el plan ATP 2, verá: | Con el plan ATP 1, verá: |
 |---|---|
-|**Con el plan ATP 2, verá:**|**Con el plan ATP 1, verá:**|
 |![Explorador de amenazas](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -44,6 +43,43 @@ Con este informe, puede:
 - [Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto](#view-data-about-phishing-urls-and-click-verdict)
 - [Iniciar un proceso de investigación y respuesta automatizado desde una vista del explorador](#start-automated-investigation-and-response) (solo planeación ATP 2)
 - ... [Investigue el correo electrónico malintencionado y mucho más](#more-ways-to-use-explorer-or-real-time-detections).
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
+
+Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y en las detecciones en tiempo real. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación: 
+
+- [Mejoras en la zona horaria](#timezone-improvements)
+- [Actualizar en el proceso de actualización](#update-in-the-refresh-process)
+- [Desglose del gráfico para agregar a los filtros](#chart-drilldown-to-add-to-filters)
+- [En actualizaciones de información del producto](#in-product-information-updates)
+
+### <a name="timezone-improvements"></a>Mejoras en la zona horaria 
+
+Se mostrará la zona horaria para los registros de correo electrónico dentro del portal, así como para los datos exportados. La zona horaria será visible en todas las experiencias como cuadrícula de correo electrónico, flotante de detalles, escala de tiempo del correo electrónico y correos electrónicos similares, de modo que la zona horaria del conjunto de resultados quede clara para el usuario. 
+
+![Ver la zona horaria en el explorador](../media/TimezoneImprovements.png)
+
+### <a name="update-in-the-refresh-process"></a>Actualizar en el proceso de actualización 
+
+Hemos recibido comentarios sobre la confusión con la actualización automática (por ejemplo, para la fecha, en cuanto cambia la fecha, la página se actualizará) y la actualización manual (para otros filtros). De forma similar, la eliminación de filtros conduce a la actualización automática, lo que provoca situaciones en las que el cambio de distintos filtros mientras se modifica la consulta puede provocar experiencias de búsqueda incoherentes. Para solucionar esto, estamos cambiando a un mecanismo de filtrado manual.
+Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar los distintos intervalos de filtros (desde el conjunto de filtros y la fecha) y hacer clic en el botón actualizar para filtrar los resultados una vez que se han realizado con la definición de la consulta. El botón actualizar también se ha actualizado para llamarlo claramente en la pantalla. También hemos actualizado la información sobre herramientas y la documentación del producto sobre este cambio. 
+
+![Haga clic en actualizar para filtrar los resultados](../media/ManualRefresh.png)
+
+### <a name="chart-drilldown-to-add-to-filters"></a>Desglose del gráfico para agregar a los filtros
+
+Ahora, podrá hacer clic en los valores de leyenda de gráfico para agregar ese valor como filtro. Tenga en cuenta que aún tendrá que hacer clic en el botón actualizar para filtrar los resultados como parte del cambio descrito anteriormente.
+
+![Obtener detalles de los gráficos para filtrar](../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>En actualizaciones de información del producto 
+
+También debe ver detalles adicionales dentro del producto. Por ejemplo, el número total de resultados de búsqueda dentro de la cuadrícula (vea a continuación), así como mejoras en las etiquetas, los mensajes de error y la información sobre herramientas, para proporcionar más información sobre los filtros, la experiencia de búsqueda y el conjunto de resultados. 
+
+![Ver información del producto](../media/ProductInfo.png)
+
+
+## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuevas características del explorador de amenazas y detecciones en tiempo real
 
@@ -68,20 +104,22 @@ Pero el explorador (y las detecciones en tiempo real) también agrega nuevos cam
 
 La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
 
-|||||
+|Pronuncia  |Correo electrónico no deseado  |Blocked  |Sustitui  |
+|---------|---------|---------|---------|
+|El correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.    | El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.       | Los correos electrónicos que se han puesto en cuarentena, que no se han podido realizar o se han perdido. El usuario no tiene acceso completamente a esto.     | Cualquier correo electrónico en el que se reemplacen archivos adjuntos malintencionados por archivos. txt que indiquen que los datos adjuntos eran malintencionados.     |
+    
+
+| Pronuncia | Correo electrónico no deseado | Blocked | Sustitui |
 |---|---|---|---|
-|**Pronuncia**|**Correo electrónico no deseado**|**Blocked**|**Sustitui**|
 |El correo electrónico se entregó en la bandeja de entrada del usuario o en otra carpeta, y el usuario puede acceder a él directamente.| El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.| Los mensajes de correo electrónico que se han puesto en cuarentena, que no se han producido o se han quitado, y que el usuario no puede obtener acceso a ellos.| Los mensajes de correo electrónico en los que los datos adjuntos malintencionados fueron reemplazados por archivos. txt que indican que los datos adjuntos eran malintencionados.|
 |
 
 Y esto es lo que el usuario puede ver y lo que no puede:
 
-|||
+| Accesible para los usuarios finales | Inaccesibles para los usuarios finales |
 |---|---|
-|**Accesible para los usuarios finales**|**Inaccesibles para los usuarios finales**|
 |Pronuncia|Blocked|
 |Correo electrónico no deseado|Sustitui|
-|
 
 Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
 
@@ -114,7 +152,7 @@ Puede acceder a la misma ubicación en el informe de detecciones en tiempo real 
 > [!TIP]
 > IDENTIFICADOR de mensaje de red asigna el clic de nuevo a correos específicos cuando se realiza la búsqueda en el explorador o en las herramientas de terceros asociadas mediante el identificador de mensaje de red. La búsqueda en el identificador de mensaje de red dará a los administradores el correo electrónico específico asociado con un resultado de clic. En la exportación, la identificación de la identificación del mensaje de red facilita un análisis más rápido y eficaz.
 
-![tp_ExportClickResultAndNetworkID. png](../../media/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 
@@ -205,6 +243,7 @@ Además de los escenarios descritos en este artículo, tiene muchas más opcione
 - [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
 - [Ver archivos malintencionados detectados en SharePoint Online, OneDrive y Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Obtener información general sobre las vistas en el explorador de amenazas (y detecciones en tiempo real)](threat-explorer-views.md)
+- [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -242,3 +281,4 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
 - En el **Explorador de amenazas**se incluyen más funciones de filtrado y acciones disponibles.
 
 Para obtener más información, consulte [Office 365 ATP Service Description: disponibilidad de características en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+

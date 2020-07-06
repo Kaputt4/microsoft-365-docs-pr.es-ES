@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034261"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039417"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Investigar y corregir el correo electrónico malintencionado que se entregó en Office 365
 
@@ -39,7 +39,7 @@ Asegúrese de que se cumplen los siguientes requisitos:
     
 - Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
     
-- Es un administrador global o bien tiene el rol de administrador de seguridad o de la búsqueda y depuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro &amp; de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa. 
+- Es un administrador global o bien tiene el rol de administrador de seguridad o de la búsqueda y depuración asignado en el centro de seguridad y &amp; cumplimiento. Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa. 
 
 #### <a name="preview-role-permissions"></a>Vista previa de permisos de roles
 
@@ -52,7 +52,7 @@ Para llevar a cabo determinadas acciones, como ver los encabezados de mensajes o
 |Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones     |Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview   |   Sí      |
 
 > [!NOTE]
-> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 () y el administrador de seguridad y los roles de lector de seguridad se asignan[https://protection.office.com](https://protection.office.com)en el centro de seguridad & cumplimiento (). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) y el administrador de seguridad y los roles de lector de seguridad se asignan en el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar correo electrónico sospechoso que se entregó
 
@@ -61,7 +61,7 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 > [!NOTE]
 > Las búsquedas predeterminadas en el explorador no incluyen elementos zapped en este momento.  Esto se aplica a todas las vistas, por ejemplo, las vistas de malware o phish. Para incluir elementos de zapped, debe agregar una "acción de entrega" establecida en incluir "eliminado por ZAP". Si incluye todas las opciones, verá todos los resultados de las acciones de entrega, incluidos los elementos zapped.
 
-1. **Vaya a Threat Explorer**: vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de &amp; seguridad y cumplimiento.
+1. **Vaya a Threat Explorer**: vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de seguridad y &amp; cumplimiento.
 
 2. En el inicio rápido de navegación izquierdo, elija **Threat Management** \> **Explorer**.
 
@@ -88,7 +88,7 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 
 5. **Filtros avanzados**: con estos filtros, puede crear consultas complejas y filtrar el conjunto de datos. Al hacer clic en *filtros avanzados* , se abre un control flotante con opciones.
 
-   El filtrado avanzado es una gran adición a las capacidades de búsqueda. Se ha agregado un valor booleano **no** Filter en el *destinatario*, el *remitente* y el *dominio del remitente* para permitir que los administradores investiguen mediante la exclusión de valores. Esta opción aparece en el parámetro Selection no *contiene ninguno de*. **No** permitirá a los administradores excluir los buzones de correo de alertas, los buzones de respuesta predeterminados de sus investigaciones y es útil para los casos en los que los administradores buscan un asunto específico (Subject = "atención") donde el destinatario se puede establecer en *ninguno de defaultMail@contoso.com*. Se trata de una búsqueda de valor exacta.
+   El filtrado avanzado es una gran adición a las capacidades de búsqueda. Se ha agregado un valor booleano **no** Filter en el *destinatario*, el *remitente* y el *dominio del remitente* para permitir que los administradores investiguen mediante la exclusión de valores. Esta opción aparece en el parámetro Selection no *contiene ninguno de*. **No** permitirá que los administradores excluyan los buzones de correo de alertas, los buzones de respuesta predeterminados de sus investigaciones y resulte útil para los casos en los que los administradores buscan un asunto específico (Subject = "Attention") donde el destinatario se puede establecer en *ninguno de defaultMail \@ contoso.com*. Se trata de una búsqueda de valor exacta.
 
    ![Los destinatarios-' no contiene ningún filtro avanzado.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
