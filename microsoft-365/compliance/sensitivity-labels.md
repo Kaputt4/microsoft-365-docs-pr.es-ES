@@ -20,12 +20,12 @@ description: Use etiquetas de confidencialidad del marco de Microsoft Informatio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819250"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936799"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -79,9 +79,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>Qué pueden hacer las etiquetas de confidencialidad
 
-> [!NOTE]
-> Además de aplicar etiquetas de confidencialidad a los mensajes de correo electrónico y documentos, actualmente en versión preliminar, también puede [usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
-
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
 - **Cifre** solo el correo electrónico o el correo electrónico y los documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar las acciones y durante cuánto tiempo. Por ejemplo, puede permitir que los usuarios de un grupo específico de otra organización tengan permisos para revisar el contenido solo durante siete días después de que se haya marcado el contenido. Como alternativa, en lugar de permisos definidos por el administrador, puede permitir a los usuarios asignar permisos al contenido al aplicar la etiqueta. 
@@ -97,9 +94,9 @@ After a sensitivity label is applied to an email or document, any configured pro
     Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
 
-- **Proteja el contenido de los contenedores como sitios y grupos** cuando opta por la versión preliminar para [usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint (versión preliminar pública)](sensitivity-labels-teams-groups-sites.md).
+- **Proteja el contenido de los contenedores como sitios y grupos** cuando habilita la capacidad de [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
     
-    Las opciones de configuración para **configuración de sitio y de grupo** no se mostrarán hasta que opte por la versión preliminar. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Microsoft 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
+    Las opciones de configuración de **Configuración de sitio y de grupo** no se mostrarán hasta que habilite esta capacidad. Tenga en cuenta que esta configuración de etiqueta no da como resultado que los documentos se etiqueten automáticamente, sino que la configuración de la etiqueta protege el contenido al controlar el acceso al contenedor donde se almacenan los documentos. Esta configuración incluye el nivel de privacidad, si un propietario de un grupo de Microsoft 365 puede agregar invitados al grupo y el nivel de acceso concedido a un dispositivo no administrado.
 
 - **Aplicar la etiqueta automáticamente en aplicaciones de Office o recomendar una etiqueta.** Puede elegir qué tipos de información confidencial quiere etiquetar y la etiqueta se puede aplicar automáticamente, o bien puede solicitar a los usuarios que apliquen la etiqueta que recomiende usar. Si recomienda una etiqueta, el mensaje mostrará el texto que elija. Por ejemplo:
     

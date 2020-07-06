@@ -26,7 +26,7 @@ ms.locfileid: "45016261"
 # <a name="microsoft-compliance-manager-classic"></a>Administrador de cumplimiento de Microsoft (clásico)
 
 > [!NOTE]
-> En esta documentación se describe una versión anterior de este producto. *No es recomendable que los usuarios usen esta versión deL Administrador de cumplimiento*. **Si usa la versión preliminar del Administrador de cumplimiento actual, consulte la [documentación del Administrador de cumplimiento (versión preliminar)](working-with-compliance-manager.md).**
+> En esta documentación se describe una versión anterior de este producto. *No es recomendable que los usuarios usen esta versión del Administrador de cumplimiento*. **Si usa la versión preliminar del Administrador de cumplimiento actual, consulte la [documentación del Administrador de cumplimiento (versión preliminar)](working-with-compliance-manager.md).**
 
  *El Administrador de cumplimiento no está disponible en Office 365 ofrecido por 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) u Office 365 Department of Defense.*
   
