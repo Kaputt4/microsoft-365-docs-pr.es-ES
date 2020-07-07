@@ -21,7 +21,6 @@ description: 'Use el Centro de seguridad y cumplimiento para buscar en el regist
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
 ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/03/2020
 ms.locfileid: "45035665"
@@ -368,7 +367,7 @@ Aquí se muestran algunos otros escenarios en los que se puede identificar app@s
 
 - Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
 
-En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo breve, a menudo en unos pocos segundos. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
+En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo breve, a menudo con unos pocos segundos de separación. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
 
 ### <a name="folder-activities"></a>Actividades de carpetas
 
@@ -560,7 +559,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
 ### <a name="sway-activities"></a>Actividades de Sway
 
-En la siguiente tabla se enumeran las actividades de usuario y de administrador de Sway. Sway es una aplicación de Microsoft 365 que permite a los usuarios recopilar, aplicar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en la web. Para obtener más información, consulte [Preguntas más frecuentes sobre Sway: ayuda del administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+En la siguiente tabla se enumeran las actividades de usuario y de administrador de Sway. Sway es una aplicación de Microsoft 365 que permite a los usuarios recopilar, aplicar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en la Web. Para obtener más información, consulte [Preguntas más frecuentes sobre Sway: ayuda del administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
 |**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
@@ -586,7 +585,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 
 |**Actividad**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
-|Usuario agregado|Agregar usuario|Se ha creado una cuenta de usuario.|
+|Usuario agregado|Agregar usuario|Secreó una cuenta de usuario.|
 |Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
 |Contraseña de usuario cambiada|Cambiar contraseña de usuario|El usuario cambia su contraseña. El restablecimiento de contraseña de autoservicio tiene que estar habilitado (para todos los usuarios o los seleccionados) en la organización para que los usuarios puedan restablecer la contraseña. También puede realizar un seguimiento de la actividad de restablecimiento de contraseña de autoservicio de Azure Active Directory. Para obtener más información, consulte [Opciones de creación de informes para la administración de contraseñas de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Usuario eliminado|Eliminar usuario|Se ha eliminado una cuenta de usuario.|
@@ -704,7 +703,7 @@ Workplace Analytics ofrece información sobre cómo colaboran los grupos en la o
 
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
 
-Puede buscar el registro de auditoría de actividades administrativas y de usuario en Microsoft Teams. Teams es un espacio de trabajo de Office 365 orientado a la conversación. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para obtener descripciones de las actividades que se auditan de Teams, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
+Puede buscar en el registro de auditoría actividades administrativas y de usuario de Microsoft Teams. Teams es un espacio de trabajo de Office 365 orientado a la conversación. Trae las conversaciones en Teams, las reuniones, los archivos y las notas de un equipo en un solo lugar. Para obtener descripciones de las actividades de Teams que se auditan, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Actividades de Microsoft Teams para Sanidad
 
@@ -716,7 +715,7 @@ Para obtener una descripción de las actividades de la aplicación Pacientes, co
 
 ### <a name="microsoft-teams-shifts-activities"></a>Actividades de Turnos en Microsoft Teams
 
-Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar el registro de auditoría de las actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, habrá disponible un grupo adicional de esas actividades en la lista del selector **Actividades**.
+Si su organización usa la aplicación Turnos en Microsoft Teams, puede buscar en el registro de auditoría actividades relacionadas con el uso de la aplicación Turnos. Si su entorno está configurado para admitir la aplicación Turnos, habrá disponible un grupo adicional de esas actividades en la lista del selector **Actividades**.
 
 Para obtener una descripción de las actividades de la aplicación Turnos, consulte [Buscar eventos en el registro de auditoría de Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
@@ -801,7 +800,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 |Formulario de participación permitida para su copia|AllowShareFormForCopy|Para compartir el formulario con otros usuarios el propietario ha creado un vínculo en una plantilla. Este evento es registrado cuando el propietario del formulario hace clic para generar una dirección URL en la plantilla.|
 |Formulario de participación no permitida para su copia|DisallowShareFormForCopy|El propietario del formulario ha eliminado el vínculo en la plantilla.|
 |Coautor de formulario agregado|AddFormCoauthor|Para ayudar a diseñar y ver respuestas el usuario utiliza un vínculo de colaboración. Este evento es registrado cuando un usuario utiliza una dirección URL de colisión (no ocurre cuando se genera la URL de colisión por primera vez).|
-|Coautor de formulario eliminado|RemoveFormCoauthor|El propietario del formulario ha eliminado el vínculo de colaboración.|
+|Coautor de formulario quitado|RemoveFormCoauthor|El propietario del formulario ha eliminado el vínculo de colaboración.|
 |Página de respuesta visualizada|ViewRuntimeForm|El usuario ha abierto una página de respuesta para su visualización. Este evento es registrado independientemente de si el usuario envía una respuesta o no.|
 |Respuesta creada|CreateResponse|Es similar a recibir una nueva respuesta.  Un usuario ha enviado una respuesta a un formulario. <br><br>La propiedad ResponseId:string y la propiedad ResponderId:string indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad ResponderId será nula.|
 |Respuesta actualizada|UpdateResponse|El propietario del formulario ha actualizado un comentario o la puntuación en un cuestionario. <br><br>La propiedad ResponseId:string y la propiedad ResponderId:string indican el resultado que está siendo visualizado. <br><br>Para un respondedor anónimo, la propiedad de ResponderId será nula.|
@@ -823,7 +822,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 
 Forms admite la colaboración al diseñar formularios y al analizar las respuestas. Un colaborador de formulario se conoce como *coautor*. Los coautores pueden hacer todo lo que puede hacer el propietario de un formulario, excepto eliminar o mover un formulario. Forms también permite crear un formulario que se puede responder de forma anónima. Esto significa que no es necesario que la persona que responde haya iniciado sesión en la organización para responder a un formulario. 
 
-En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría de las actividades realizadas por los coautores y respondedores anónimos.
+En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría en relación con las actividades realizadas por los coautores y respondedores anónimos.
 
 |**Tipo de actividad**|**Usuario interno o externo**|**Identificador de usuario que ha iniciado sesión**|**Organización que ha iniciado sesión**|**Tipo de usuario de Forms**|
 |:-----|:-----|:-----|:-----|:-----|

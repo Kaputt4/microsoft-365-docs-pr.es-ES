@@ -93,14 +93,12 @@
               href: manage/assign-licenses-to-users.md
             - name: Asignar roles de administrador
               href: add-users/assign-admin-roles.md
+            - name: Cancelar la asignación de licencias a usuarios
+              href: manage/remove-licenses-from-users.md
             - name: Usuarios invitados
               href: add-users/about-guest-users.md
             - name: Agregar usuarios invitados a un grupo de Microsoft 365
               href: create-groups/manage-guest-access-in-groups.md
-            - name: Quitar licencias a los usuarios
-              href: manage/remove-licenses-from-users.md
-            - name: Resolver conflictos de licencia
-              href: manage/resolve-license-conflicts.md
             - name: Cambiar un nombre de usuario y una dirección de correo electrónico
               href: add-users/change-a-user-name-and-email-address.md
             - name: Quitar un antiguo empleado

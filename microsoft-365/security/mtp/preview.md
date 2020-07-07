@@ -19,12 +19,11 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005895"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048272"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -56,6 +55,8 @@ Sabrá que tiene características de vista previa activadas cuando vea que está
 
 ## <a name="preview-features"></a>Versión preliminar de las características
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
+
+- **[Referencia de esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : información sobre las tablas de esquema disponibles directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.  
 
 - **[Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)** : obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con la aplicación con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.
 

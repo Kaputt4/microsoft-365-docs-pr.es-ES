@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854369"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049945"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurar los pilares de la protección contra amenazas de Microsoft para el entorno de pruebas de prueba
 
@@ -237,7 +236,7 @@ Haga clic en **Siguiente**.
 16. Desplácese hacia abajo y haga clic en **Guardar preferencias** para confirmar las nuevas integraciones.
 <br>![Botón de preferencias de of_Save de imagen en el que debe hacer clic](../../media/mtp-eval-72.png) <br>
 
-## <a name="start-the-microsoft-threat-protection-service"></a>Iniciar el servicio de protección contra amenazas de Microsoft
+## <a name="start-the-microsoft-threat-protection-service"></a>Iniciar el servicio de Protección contra amenazas de Microsoft
 >[!NOTE]
 >A partir del 1 de junio de 2020, Microsoft habilita automáticamente las características de protección contra amenazas de Microsoft para todos los inquilinos elegibles. Consulte este [artículo de la comunidad tecnológica de Microsoft sobre la elegibilidad de licencias](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) para obtener más información. 
 <br>
@@ -247,8 +246,9 @@ Vaya al [centro de seguridad 365 de Microsoft](https://security.microsoft.com/ho
 
 Para obtener una guía más completa, consulte [activar la protección contra amenazas de Microsoft](mtp-enable.md). 
 
-¡Enhorabuena! Acaba de crear su entorno de laboratorio de prueba de Microsoft Threat Protection. Ahora puede simular un ataque y ver cómo las capacidades para varios productos detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
+¡Enhorabuena! Acaba de crear su entorno de laboratorio de prueba de Microsoft Threat Protection. Ahora puede familiarizarse con la interfaz de usuario de Microsoft Threat Protection. Vea lo que puede aprender y sepa cómo usar cada panel para las tareas de la operación de seguridad diaria: [Microsoft Threat Protection Interactive Guide](https://aka.ms/MTP-Interactive-Guide).
 
+A continuación, puede simular un ataque y ver cómo las capacidades cruzadas del producto detectan, crean alertas y responden automáticamente a un ataque de archivos no deseados en un extremo.
 
 ## <a name="next-steps"></a>Siguientes pasos
 [Genere una alerta de prueba](generate-test-alert.md).

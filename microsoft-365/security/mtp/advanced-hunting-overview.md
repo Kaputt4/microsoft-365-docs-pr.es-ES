@@ -18,12 +18,11 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
-ms.translationtype: MT
+ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347836"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049637"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -47,17 +46,13 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 | **Conozca el idioma** | La búsqueda avanzada está basada en el [lenguaje de consulta de Kusto](https://docs.microsoft.com/azure/kusto/query/) y admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
 | **Obtener información sobre cómo usar los resultados de la consulta** | Obtenga información sobre los gráficos y las distintas formas en que puede ver o exportar los resultados. Descubra cómo puede ajustar rápidamente las consultas y profundizar para obtener información más completa. | [Trabajar con resultados de consulta](advanced-hunting-query-results.md) |
 | **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Esto le ayudará a determinar dónde buscar datos y cómo crear las consultas. | [Referencia del esquema](advanced-hunting-schema-tables.md) |
-| **Aprovechar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | [Usar consultas compartidas](advanced-hunting-shared-queries.md) |
+| **Aprovechar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | - [Usar consultas compartidas](advanced-hunting-shared-queries.md)<br>- [Ir a la búsqueda](advanced-hunting-go-hunt.md) |
 | **Optimizar las consultas** | Obtenga información acerca de cómo crear consultas eficientes y consultas que combinan datos de mensajes de correo electrónico y dispositivos. | - [Procedimientos recomendados de consulta](advanced-hunting-shared-queries.md) <br>- [Búsqueda en dispositivos y correos electrónicos](advanced-hunting-best-practices.md) |
 | **Crear reglas de detección personalizadas** | Comprenda cómo puede usar consultas de búsqueda avanzada para desencadenar alertas y aplicar acciones de respuesta automáticamente. | - [Información general sobre las detecciones personalizadas](custom-detections-overview.md)<br>- [Reglas de detección personalizadas](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Obtener acceso
 Para usar características de búsqueda avanzada u otras capacidades de [Microsoft Threat Protection](microsoft-threat-protection.md) , debe tener asignado un rol apropiado en Azure ad. Tenga en cuenta que el acceso a los datos de los extremos se ve influenciado por la configuración de control de acceso basada en roles en ATP de Microsoft defender. [Obtener información acerca de la administración del acceso a protección contra amenazas de Microsoft](mtp-permissions.md)
 
-## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
-Aprovéchese de las funciones siguientes para escribir consultas más rápido:
-- **Autosugerir** : cuando se escriben consultas, la búsqueda avanzada ofrece sugerencias de IntelliSense. 
-- **Referencia del esquema**: se proporciona una referencia de esquema que incluye la lista de tablas y sus columnas junto al área de trabajo. Para obtener más información, mueva el puntero sobre un elemento. Haga doble clic en un elemento para insertarlo en el editor de consultas.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)

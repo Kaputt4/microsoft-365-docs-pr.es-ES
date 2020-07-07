@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899368"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046055"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899368"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-El esquema de [búsqueda avanzada](advanced-hunting-overview.md) se compone de varias tablas que proporcionan información de eventos o información sobre equipos y entidades. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
+El esquema de [búsqueda avanzada](advanced-hunting-overview.md) está formado por varias tablas que proporcionan información de eventos o información acerca de dispositivos, alertas, identidades y otros tipos de entidad. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
+
+## <a name="get-schema-information-in-the-security-center"></a>Obtener información de esquema en el centro de seguridad
+Al crear consultas, use la referencia de esquema integrada para obtener rápidamente la siguiente información acerca de cada tabla del esquema:
+
+- **Descripción de las tablas** : tipo de datos que contiene la tabla y el origen de dichos datos.
+- **Columnas** : todas las columnas de la tabla.
+- **Tipos de acción** : valores posibles en la `ActionType` columna que representa los tipos de eventos admitidos por la tabla. Esto solo se proporciona para las tablas que contienen información de eventos.
+- **Consulta** de ejemplo: consultas de ejemplo que incluyen cómo se puede usar la tabla.
+
+### <a name="access-the-schema-reference"></a>Acceso a la referencia de esquema
+Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver referencia** junto al nombre de la tabla en la representación del esquema. También puede seleccionar la **referencia de esquema** para buscar una tabla.   
+
+![Imagen que muestra cómo obtener acceso a la referencia del esquema del portal ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>Tablas del esquema
-
 A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna se muestran también en el centro de seguridad como parte de la representación del esquema en la pantalla de la búsqueda avanzada.
 
 | Nombre de tabla | Descripción |
@@ -47,7 +58,7 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Creación y modificación de archivos y otros eventos del sistema de archivos |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Eventos de carga de DLL |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Información del equipo, incluida la información del sistema operativo |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inicios de sesión y otros eventos de autenticación |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Inicios de sesión y otros eventos de autenticación en dispositivos |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Conexión de red y eventos relacionados |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propiedades de red de equipos, incluidos adaptadores, direcciones IP y MAC, así como redes y dominios conectados |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Creación de procesos y eventos relacionados |
@@ -61,7 +72,7 @@ A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla e
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Eventos de seguridad que se producen después de la entrega, después de que Microsoft 365 haya entregado los correos electrónicos al buzón del destinatario |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Información sobre las direcciones URL en correos electrónicos |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Información de cuenta de varios orígenes, incluido Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventos de autenticación registrados por Active Directory y otros servicios de Microsoft online |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Eventos de autenticación en Active Directory y Microsoft Online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Actividades de consulta realizadas en objetos de Active Directory, como usuarios, grupos, dispositivos y dominios |
 
 ## <a name="related-topics"></a>Temas relacionados
