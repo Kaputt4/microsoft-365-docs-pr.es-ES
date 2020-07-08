@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre el comportamiento de retención que se aplica específicamente a los correos electrónicos de Exchange y a las carpetas públicas de Exchange.
-ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874888"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049898"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Más información sobre las directivas de retención de Exchange
 
@@ -51,7 +51,7 @@ Cuando los ajustes de retención son para retener y borrar:
 ![Diagrama de flujo de retención en el correo electrónico y las carpetas públicas](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Si el elemento se ha modificado o eliminado permanentemente** por el usuario (usando MAYÚS+SUPR o eliminarlo de Elementos eliminados) durante el periodo de retención: el elemento se mueve (o es copiado, en el caso de la modificación) a la carpeta Elementos recuperables. Allí, un trabajo de temporizador se ejecuta periódicamente e identifica los artículos cuyo período de retención ha expirado, y estos artículos se eliminan de forma permanente dentro de los 14 días siguientes a la finalización del período de retención. Tenga en cuenta que 14 días es la opción predeterminada, pero puede configurar hasta 30 días.
-    
+
 2. **Si no se modifica ni elimina el elemento** durante el periodo de retención: se ejecuta periódicamente el mismo proceso en todas las carpetas en el buzón y se identifican los elementos cuyo periodo de retención ha caducado. Estos elementos se eliminan permanentemente en el plazo de 14 días al finalizar el periodo de retención. Tenga en cuenta que 14 días es la opción predeterminada, pero puede configurar hasta 30 días. 
 
 Cuando los ajustes de retención son sólo de retención o sólo de borrado, las rutas de contenido son variaciones de retención y borrado:
@@ -70,13 +70,13 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Excluir determinados tipos de elementos de Exchange de una directiva de retención
 
-Si usa PowerShell, puede excluir tipos específicos de elementos de Exchange de una directiva de retención. Por ejemplo, puede excluir mensajes de correo de voz, conversaciones de mensajería instantánea y otro contenido en línea de Skype Empresarial Online en los buzones. También puede excluir los elementos de calendario, notas y tareas. Esta capacidad sólo está disponible mediante el uso de PowerShell; no está disponible cuando se crea una directiva de retención mediante el asistente en el centro de cumplimiento de Microsoft 365.
+Mediante el uso de PowerShell, puede excluir tipos específicos de elementos de Exchange de una directiva de retención cuando la configuración de retención es solo para retención. Por ejemplo, puede excluir mensajes de correo de voz, conversaciones de mensajería instantánea y otro contenido en línea de Skype Empresarial Online en los buzones. También puede excluir los elementos de calendario, notas y tareas. Esta capacidad sólo está disponible mediante el uso de PowerShell; no está disponible cuando se crea una directiva de retención mediante el asistente en el centro de cumplimiento de Microsoft 365.
   
 Para excluir los tipos seleccionados para los elementos de Exchange en una directiva de retención, utilice el parámetro`ExcludedItemClasses` con los cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) y [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
 
 Para usar los cmdlets de directivas de retención, primero debe [conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
+## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
 Si un usuario deja la organización y su buzón está incluido en una directiva de retención, el buzón pasa a estado inactivo cuando se elimina la cuenta de Microsoft 365 del usuario. El contenido de un buzón inactivo sigue estando sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estar inactivo, y está disponible para una búsqueda de eDiscovery. Para obtener más información, vea [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
 

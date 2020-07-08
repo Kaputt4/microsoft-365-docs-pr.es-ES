@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869861"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049921"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
@@ -52,12 +52,13 @@ ADEMÁS, el laboratorio está diseñado para conectarse a versiones de prueba pa
 
 ## <a name="step-by-step-labs"></a>Prácticas paso a paso
 
-Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager (versión 1910). 
+Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager 
 
 ### <a name="device-and-app-readiness"></a>Preparación de dispositivos y aplicaciones
 
   - Desktop Analytics
   - ¡NUEVO! Implementar y actualizar el nuevo Microsoft Edge 
+  - ¡NUEVO! Instalar y configurar Cloud Management Gateway (CMG) 
   - Modo Internet Explorer. 
   - Protección de aplicaciones 
 
@@ -92,6 +93,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Protección contra vulnerabilidades de seguridad de Windows Defender
   - Control de aplicaciones de Windows Defender
   - Protección contra amenazas avanzada de Windows Defender
+  - ¡NUEVO! Seguridad de punto de conexión 
 
 ### <a name="os-deployment-and-feature-updates"></a>Implementación del sistema operativo y actualizaciones de características
 
@@ -105,6 +107,8 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Administrar actualizaciones de Windows mediante la directiva de grupo
   - Mantenimiento de Windows 10 con Configuration Manager e Intune
   - Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Configuration Manager
+  - ¡NUEVO! Actualizaciones de Office con Configuration Manager e Intune
+  - ¡NUEVO! Instalar Microsoft Teams 
 
 ### <a name="new-windows-virtual-desktop"></a>¡NUEVO! Windows Virtual Desktop
   - Windows Virtual Desktop: preparación, implementación, optimización 

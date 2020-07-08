@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: e3e58aab9bdcb5debcfe805b1ebdfd637c1d3851
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035655"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046068"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -207,7 +207,7 @@ Código de ejemplo para llamar a la API de REST
 
 |Parámetros|Description|Notas|
 |--- |--- |--- |
-|<d:Name></d:Name>|Escriba un nombre único para el evento.|No puede contener espacios finales ni los siguientes caracteres: % * \ & < > | # ? , : ;|
+|<d:Name></d:Name>|Escriba un nombre único para el evento.|No puede contener espacios finales ni los siguientes caracteres: % * \ & < \> \| # ? , : ;|
 |<d:EventType></d:EventType>|Escribe el nombre del tipo de evento (o Guid)|Example: “Employee termination”. Event type has to be associated with a retention label.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Escriba "ComplianceAssetId:" + el Id. del empleado|Ejemplo: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Fecha y hora del evento|Formato: aaaa-MM-ddTHH:mm:ssZ, ejemplo: 2018-12-01T00:00:00Z
@@ -224,16 +224,18 @@ Código de ejemplo para llamar a la API de REST
 
 ##### <a name="get-events-based-on-time-range"></a>Obtener eventos según el intervalo de tiempo
 
+- **Método**: GET
 
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
 
-|Método|GET||
-|--- |--- |--- |
-|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
-|Encabezados|Tipo de contenido|aplicación/atom+xml|
-||||
-|Autenticación|Básica||
-|Nombre de usuario|“Complianceuser”||
-|Contraseña|“Compliancepassword”||
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Autenticación**: Básica
+
+- **Nombre de usuario**: “Complianceuser”
+
+- **Contraseña**: “Compliancepassword”
+
 
 ##### <a name="response-codes"></a>Códigos de respuesta
 
@@ -247,13 +249,19 @@ Código de ejemplo para llamar a la API de REST
 
 ##### <a name="get-an-event-by-id"></a>Obtén un objeto por id.
 
-| Método         | GET   |                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
-| Encabezado         | Tipo de contenido                                                                                                                                                                                                                                                       | aplicación/atom+xml |
-| Autenticación | Básica                                                                                                                                                                                                                                                              |                      |
-| Nombre de usuario       | “Complianceuser”                                                                                                                                                                                                                                                   |                      |
-| Contraseña       | “Compliancepassword”                                                                                                                                                                                                                                               |                      |
+- **Método**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Autenticación**: Básica
+
+- **Nombre de usuario**: “Complianceuser”
+
+- **Contraseña**: “Compliancepassword”
+
+
 
 ##### <a name="response-codes"></a>Códigos de respuesta
 
@@ -267,13 +275,18 @@ Código de ejemplo para llamar a la API de REST
 
 ##### <a name="get-an-event-by-name"></a>Obtén un evento por nombre
 
-| Método         | GET       |                      |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| Encabezados        | Tipo de contenido                                                                                                                                 | aplicación/atom+xml |
-| Autenticación | Básica                                                                                                                                        |                      |
-| Nombre de usuario       | “Complianceuser”                                                                                                                             |                      |
-| Contraseña       | “Compliancepassword”                                                                                                                         |                      |
+- **Método**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Autenticación**: Básica
+
+- **Nombre de usuario**: “Complianceuser”
+
+- **Contraseña**: “Compliancepassword”
+
 
 ##### <a name="response-codes"></a>Códigos de respuesta
 

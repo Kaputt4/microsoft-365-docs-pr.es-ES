@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 334c6bfaf041b189a127d34e3eacd8997b349394
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 885055aa0684dc0ad0788a7e056c51b6cfd4c587
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817699"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049776"
 ---
 # <a name="microsofts-data-protection-officer"></a>Responsable de la protección de datos de Microsoft
 
@@ -50,7 +50,7 @@ Leopardstown<br>
 Dublín 18<br>
 D18 P521<br>
 Irlanda<br>
-Teléfono: + 353 (0) 1 295-3826<br>
+Teléfono: +353 (1) 706-3117<br>
 
 Los detalles de contacto del Oficial de protección de datos han sido comunicados a la Autoridad de supervisión de Microsoft.
 
