@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418883"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080086"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivos archivados de escritorio administrado por Microsoft
 
@@ -35,12 +35,14 @@ Para estar inscrito en el escritorio administrado de Microsoft, un dispositivo d
 
 | Model  | Especificaciones mínimas  | Requisitos adicionales   | Fecha de retirada |
 |---------|---------|---------|---------|
+| Dell Precision 3530| 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **22 de mayo de 2023** |
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB de RAM | Cámara IR requerida | **9 de enero de 2023** |
 | Dell Latitude 7390 7390 2-en-1/7490 | 256 GB/Intel i5/8 GB de RAM   | Cámara IR requerida | **9 de enero de 2023** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, cámara de INFRARROJOs o sensor de huellas digitales necesario  | **15 de febrero de 2023** |
 |HP Elite x2 1013 G3| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS03AV, se requiere cámara IR |**14 de mayo de 2023** |
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR |**14 de mayo de 2023** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR | **23 de octubre de 2023** |
+|HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB de RAM | SKU con 5VS04AV, cámara de INFRARROJOs o lector de huellas digitales obligatorios | **6 de junio de 2023** |
 |Libreta de superficie 2| 256 GB/Intel i5/8 GB de RAM | Ninguno | **16 de noviembre de 2022** |
 |Surface Go| 128 GB/Intel 4415Y/8 GB de RAM | Ninguno | **2 de agosto de 2023** |
 |Portátil Surface| 256 GB/Intel i5/8 GB de RAM | Ninguno | **20 de mayo de 2022** |

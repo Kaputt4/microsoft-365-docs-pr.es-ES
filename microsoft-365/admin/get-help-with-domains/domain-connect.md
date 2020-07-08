@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Obtenga información sobre cómo trabajar con los registradores habilitados de conexión de dominio y agregar su dominio a Microsoft 365.
-ms.openlocfilehash: 70a30201d4b795c7458959b6b2eee14c9b3c7186
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399961"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079984"
 ---
 # <a name="using-domain-connect"></a>Uso de conexión de dominio
 
@@ -54,6 +54,6 @@ En el asistente, simplemente confirmaremos que es el propietario del dominio y, 
 
 ## <a name="what-happens-to-my-email-and-website"></a>¿Qué ocurre con mi correo electrónico y el sitio web?
 
-Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365. Asegúrese de que agregó usuarios y configuró los buzones en Office 365 para todos los usuarios que reciban correo electrónico en el dominio.
+Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365. Asegúrese de que ha agregado usuarios y configurado los buzones en Microsoft 365 para todos los usuarios que obtienen correo electrónico en su dominio.
   
 Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora. Los pasos de configuración de conexión de dominio no afectan a su sitio Web.

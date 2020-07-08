@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Sincronice los usuarios controlados por dominio con Microsoft 365 para empresas.
-ms.openlocfilehash: a22e567fa99456b35742fcf40c07193c96c83cf0
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565692"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080064"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Sincronizar usuarios del dominio con Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. preparar la sincronización de directorios 
 
-Antes de sincronizar los usuarios y los equipos desde el dominio local de Active Directory, revise [preparar la sincronización de directorios en Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particular:
+Antes de sincronizar los usuarios y los equipos desde el dominio local de Active Directory, consulte [preparar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particular:
 
    - Asegúrese de que no existen duplicados en el directorio para los siguientes atributos: **mail**, **proxyAddresses**y **userPrincipalName**. Estos valores deben ser únicos y se deben quitar todos los duplicados.
    
@@ -59,7 +59,7 @@ Para sincronizar los usuarios, los grupos y los contactos de Active Directory lo
  5. Siga los pasos del Asistente para descargar Azure AD Connect y usarlo para sincronizar los usuarios controlados por dominio a Microsoft 365.
 
 
-Consulte [configurar la sincronización de directorios para Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) para obtener más información.
+Consulte [configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) para obtener más información.
 
 A medida que configure las opciones de Azure AD Connect, le recomendamos que habilite la **sincronización de contraseña**, el **Inicio de sesión único sin problemas**y la característica de **escritura diferida de contraseñas** , que también se admite en Microsoft 365 para empresas.
 

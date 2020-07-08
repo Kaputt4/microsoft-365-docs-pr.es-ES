@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga más información acerca de cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada a su cuenta de Microsoft 365 para empresas. '
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780294"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080020"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
 
@@ -73,12 +73,12 @@ Debe tener [permisos de administrador](../add-users/about-admin-roles.md) para h
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
   
     > [!TIP]
-    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, consulte [Agregar un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. Cuando haya terminado, elija **Guardar cambios**.
     
-6. Espere 24 horas hasta que los alias nuevos se propaguen por Office 365.
+6. Espere 24 horas hasta que los nuevos alias se rellenen en Microsoft 365.
     
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Naiara Hoffman, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irá a la bandeja de entrada de Naiara.
     
@@ -99,17 +99,17 @@ Debe tener [permisos de administrador](../add-users/about-admin-roles.md) para h
     > [!Important] 
     > Si recibe el mensaje de error "**no se encuentra un parámetro que coincida con el nombre de parámetro" EmailAddresses**", significa que está tardando un poco en finalizar la configuración del espacio empresarial o en su dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
-4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
+4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
     > [!IMPORTANT]
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
   
     > [!TIP]
-    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, consulte [Agregar un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Cuando haya terminado, seleccione **Guardar**.
+5. Cuando haya acabado, seleccione **Guardar**.
 
-6. Espere 24 horas hasta que los alias nuevos se propaguen por Office 365. 
+6. Espere 24 horas hasta que los nuevos alias se rellenen en Microsoft 365. 
     
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Naiara Hoffman, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irá a la bandeja de entrada de Naiara.
     
@@ -130,17 +130,17 @@ Debe tener [permisos de administrador](../add-users/about-admin-roles.md) para h
     > [!Important] 
     > Si recibe el mensaje de error "**no se encuentra un parámetro que coincida con el nombre de parámetro" EmailAddresses**", significa que está tardando un poco en finalizar la configuración del espacio empresarial o en su dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
-4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Office 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
+4. En el cuadro de texto situado debajo de **alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
     > [!IMPORTANT]
     > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
   
     > [!TIP]
-    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, consulte [Agregar un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Cuando haya terminado, seleccione **Guardar**.
+5. Cuando haya acabado, seleccione **Guardar**.
 
-6. Espere 24 horas hasta que los alias nuevos se propaguen por Office 365. 
+6. Espere 24 horas hasta que los nuevos alias se rellenen en Microsoft 365. 
     
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Naiara Hoffman, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irá a la bandeja de entrada de Naiara.
     

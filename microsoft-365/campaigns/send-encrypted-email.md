@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre cómo enviar correo electrónico cifrado mediante Outlook.
-ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322152"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080032"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifrar o etiquetar el correo electrónico confidencial
 
@@ -52,7 +52,7 @@ Si desea cifrar un mensaje que no cumple una regla predefinida o el administrado
 
 ## <a name="admin-settings"></a>Configuración de administración
 
-Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
+Puede obtener información sobre cómo configurar el cifrado de correo electrónico en [cifrado de correo electrónico en Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Cifrar mensajes de correo automáticamente
 
@@ -60,11 +60,11 @@ Los administradores pueden crear reglas de flujo de correo para proteger automá
 
 Puede crear reglas de flujo de correo para cifrar los mensajes de correo electrónico con las nuevas capacidades de cifrado de mensajes de Office 365 (OME). Definir reglas de flujo de correo para desencadenar el cifrado de mensajes con las nuevas capacidades de OME mediante el centro de administración de Exchange (EAC). 
 
-1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, inicie sesión en Office 365. 
+1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, inicie sesión. 
 2. Elija el icono administración. 
 3. En el centro de administración, elija **centros de administración > Exchange**. 
 
-Para obtener más información, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
+Para obtener más información, consulte [definir reglas de flujo de correo para cifrar mensajes de correo electrónico](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Marcar los mensajes de cifrado
 

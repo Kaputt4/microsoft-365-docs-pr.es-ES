@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Obtenga información sobre cómo administrar sus propios registros DNS o permitir que Microsoft administre sus registros DNS por usted.
-ms.openlocfilehash: 1b82fd40556b1bf828f9f367aa1175f21723cc8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ac026ce0dba4eefff2c837da71c18b08aca12ea6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399889"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079778"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurar su dominio (instrucciones específicas del host)
 
-Para empezar a usar un dominio personalizado (contoso.com) con Office 365, debe comprobar el dominio y configurar los registros DNS del dominio. 
+Para empezar a usar un dominio personalizado (contoso.com) con Microsoft 365, debe comprobar su dominio y configurar los registros DNS del dominio. 
   
 Puede Agregar y administrar registros DNS con las herramientas administrativas en su host de dominio o dar a Microsoft el control de sus registros de dominio y los configuraremos para usted.
   
 Seleccione su host de dominio a continuación para conocer los pasos exactos. Si no está seguro de quién es su host, consulte [Buscar el registrador de dominios](find-your-domain-registrar.md).
   
 
-## <a name="let-office-365-manage-your-dns-records"></a>Permitir que Office 365 administre los registros DNS
+## <a name="let-microsoft-365-manage-your-dns-records"></a>Permitir que Microsoft 365 administre sus registros DNS
 
 ||
 |---|---|
@@ -52,7 +52,7 @@ Seleccione su host de dominio a continuación para conocer los pasos exactos. Si
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-O bien, obtenga información sobre cómo [cambiar los servidores de nombres para configurar Office 365 con cualquier registrador de dominios](change-nameservers-at-any-domain-registrar.md).
+O bien, obtenga información sobre cómo [cambiar los servidores de nombres para configurar Microsoft 365 con cualquier registrador de dominios](change-nameservers-at-any-domain-registrar.md).
 
 ## <a name="manage-your-own-dns-records"></a>Administrar sus propios registros DNS
 
@@ -68,7 +68,7 @@ O bien, obtenga información sobre cómo [cambiar los servidores de nombres para
 |[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [Soluciones de red](../dns/create-dns-records-at-network-solutions.md) |
 |[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
-| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 para Office 365](../dns/create-dns-records-at-register365.md)  |
+| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 para Microsoft 365](../dns/create-dns-records-at-register365.md)  |
 | [Freenom](../dns/create-dns-records-at-freenom.md) | [web.com](../dns/create-dns-records-at-web-com.md)|
 |[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[DNS basado en Windows](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google Domains](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |

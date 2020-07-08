@@ -1,5 +1,5 @@
 ---
-title: Agregar un dominio a Office 365
+title: Agregar un dominio a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Agregue su dominio a Office 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Agregue su dominio a Microsoft 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398995"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079730"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398995"
     1. Elija **Agregar los registros DNS para mí** si desea que Office configure el DNS de forma automática. 
     
   
-    2. Elija **voy a agregar los registros DNS yo mismo** si solo quiere adjuntar servicios específicos de Office 365 a su dominio o si desea omitir este por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
+    2. Elija **voy a agregar los registros DNS yo mismo** si solo quiere adjuntar los servicios específicos de Microsoft 365 a su dominio o si desea omitir este por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
     
 7. Si eligió *Agregar los registros DNS* , seleccione **siguiente** y verá una página con todos los registros que necesita agregar al sitio web de sus registradores para configurar el dominio. 
     
@@ -124,7 +124,7 @@ Siga los pasos a continuación para agregar un registro personalizado para un si
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con conexión de dominio
 
@@ -149,7 +149,7 @@ En el asistente, simplemente confirmaremos que es el propietario del dominio y, 
 
 ### <a name="what-happens-to-my-email-and-website"></a>¿Qué ocurre con mi correo electrónico y el sitio web?
 
-Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365. Asegúrese de que agregó usuarios y configuró los buzones en Office 365 para todos los usuarios que reciban correo electrónico en el dominio.
+Una vez finalizada la instalación, el registro MX de su dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a ser de Microsoft 365. Asegúrese de que ha agregado usuarios y configurado los buzones en Microsoft 365 para todos los usuarios que obtienen correo electrónico en su dominio.
   
 Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora. Los pasos de configuración de conexión de dominio no afectan a su sitio Web.
 
@@ -159,7 +159,7 @@ Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ah
 
 [¿Qué es un dominio?](../get-help-with-domains/what-is-a-domain.md)
 
-[Comprar un nombre de dominio en Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Comprar un nombre de dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Configurar su dominio (instrucciones específicas del host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
