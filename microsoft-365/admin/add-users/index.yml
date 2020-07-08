@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Administrar usuarios y grupos
-summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+summary: Consulte estos recursos para ayudar a los administradores a realizar tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
 metadata:
   title: Administrar usuarios y grupos
-  description: Administración de contraseñas, adición y eliminación de usuarios, configuración de grupos y administración de licencias
+  description: Administrar contraseñas, agregar y quitar usuarios, configurar grupos y administrar licencias
   ms.service: O365-administration
   ms.subservice: subservice
   ms.topic: landing-page
@@ -14,12 +14,12 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785477"
 landingContent:
-- title: Administrr usuarios
+- title: Administrar usuarios
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -29,9 +29,9 @@ landingContent:
       url: add-users.md
     - text: Agregar invitados a un grupo de Microsoft 365
       url: ../create-groups/manage-guest-access-in-groups.md
-    - text: Agregar otra dirección de correo electrónico
+    - text: Agregar otro correo electrónico
       url: ../email/add-another-email-alias-for-a-user.md
-    - text: Creación de un buzón compartido
+    - text: Crear un buzón compartido
       url: ../email/create-a-shared-mailbox.md
     - text: Asignar licencias a los usuarios
       url: ../manage/assign-licenses-to-users.md
@@ -55,19 +55,19 @@ landingContent:
       url: ../create-groups/restore-deleted-group.md
     - text: Administrar el acceso de invitado en grupos
       url: ../create-groups/manage-guest-access-in-groups.md
-- title: Administración de contraseñas
+- title: Administrar contraseñas
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Restablecer una contraseña de usuario
+    - text: Restablecer la contraseña de un usuario
       url: reset-passwords.md
     - text: Establecer contraseñas para que no expiren nunca
       url: set-password-to-never-expire.md
     - text: Permitir que los usuarios puedan restablecer sus propias contraseñas
       url: let-users-reset-passwords.md
-    - text: Establecer la Directiva de expiración de contraseñas de su organización
+    - text: Establecer la directiva de expiración de las contraseñas de la organización
       url: ../manage/set-password-expiration-policy.md
-    - text: Restablecer contraseña de administrador
+    - text: Restablecer la contraseña de administrador
       url: reset-passwords.md#reset-my-admin-password
 - title: Quitar un empleado
   linkLists:
@@ -83,5 +83,5 @@ landingContent:
       url: ../manage/remove-licenses-from-users.md
     - text: Restaurar un usuario eliminado
       url: restore-user.md
-    - text: Quitar datos de la compañía de los dispositivos (Microsoft 365 empresa Premium)
+    - text: Eliminar datos de empresa de dispositivos (Microsoft 365 Empresa Premium)
       url: ../../business/remove-company-data.md

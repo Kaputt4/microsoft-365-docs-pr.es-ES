@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
   ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 05/01/2020
   ms.locfileid: "43997531"
@@ -26,13 +26,13 @@ landingContent:
     links:
     - text: ¿Qué es la Protección contra amenazas de Microsoft?
       url: mtp/microsoft-threat-protection.md
-    - text: Centro de seguridad de Microsoft 365
+    - text: Centro de seguridad de Microsoft 365
       url: mtp/overview-security-center.md
-- title: Comenzar con pruebas gratuitas
+- title: Empezar con pruebas gratuitas
   linkLists:
   - linkListType: overview
     links:
-    - text: Evaluación de la protección contra amenazas de Microsoft
+    - text: Evaluar la Protección contra amenazas de Microsoft
       url: mtp/mtp-evaluation.md
 - title: Proteger a los empleados remotos
   linkLists:
