@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurar la protección contra amenazas avanzada de Office 365 y proteger los datos confidenciales de suplantación de identidad (phishing), malware y otras amenazas.
-ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 0e6cb7ed13a0851ef249e1f599d17e03c052414a
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786214"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083610"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -137,7 +137,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea [este ví
     
 4. En la página **contra la suplantación de identidad** , seleccione **+ crear**. Se inicia un asistente que le guía por el proceso de definición de la Directiva antiphishing.
     
-5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en la tabla siguiente. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
+5. Especifique el nombre, la descripción y la configuración de la Directiva tal y como se recomienda en la tabla siguiente. Para obtener más información, consulte [información sobre las opciones de directiva de antiphishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Una vez que haya revisado la configuración, elija **crear esta directiva** o **Guardar**, según corresponda.
     

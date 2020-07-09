@@ -1,7 +1,7 @@
 ---
-title: Crear y realizar un seguimiento de las entradas a través de ServiceNow
-description: Obtenga información sobre cómo crear y realizar un seguimiento de vales en ServiceNow desde el centro de seguridad de Microsoft 365.
-keywords: seguridad, Microsoft 365, M365, calificación segura, centro de seguridad, ServiceNow, billetes, tareas
+title: Integrar los vales de ServiceNow en el centro de seguridad y cumplimiento de Microsoft 365
+description: Obtenga información sobre cómo crear y realizar un seguimiento de vales en ServiceNow desde el centro de seguridad y el centro de cumplimiento de Microsoft 365.
+keywords: seguridad, Microsoft 365, M365, cumplimiento, centro de cumplimiento, centro de seguridad, ServiceNow, billetes, tareas, nieve, conexión
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,22 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d258bf3ec4c04eafd22e850329ca925b4c974e94
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034193"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086672"
 ---
-# <a name="manage-tickets-through-servicenow"></a>Administrar tickets a través de ServiceNow
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrar los vales de ServiceNow en el centro de seguridad y cumplimiento de Microsoft 365
 
-ServiceNow es una plataforma de informática en la nube popular que ayuda a las empresas a administrar flujos de trabajo digitales para operaciones empresariales. Su plataforma ahora tiene flujos de trabajo de ti, flujos de trabajo de empleados y flujos de trabajo de clientes. Microsoft se ha asociado con ServiceNow para facilitar a los administradores de ti la administración de sus billetes y tareas en ambas plataformas. [Obtenga más información sobre ServiceNow](https://www.servicenow.com/)
+[!include[Prerelease information](../includes/prerelease.md)]
 
-Microsoft 365 Security Center ahora se ha mejorado con la capacidad de crear y realizar un seguimiento de vales en ServiceNow de forma nativa. Los administradores de seguridad pueden enviar una acción de mejora de la [puntuación segura de Microsoft](microsoft-secure-score.md) directamente a ServiceNow y crear un vale. Se pueden crear tíquets de administración de incidentes y de administración de cambios. A continuación, se puede realizar un seguimiento en la Página principal del centro de seguridad de Microsoft y en ServiceNow.
+ServiceNow es una plataforma de informática en la nube popular que ayuda a las empresas a administrar flujos de trabajo digitales para operaciones empresariales. Su plataforma ahora tiene flujos de trabajo de ti, flujos de trabajo de empleados y flujos de trabajo de clientes. [Obtenga más información sobre ServiceNow](https://www.servicenow.com/)
+
+Microsoft se ha asociado con ServiceNow para facilitar a los administradores de ti la administración de sus billetes y tareas en ambas plataformas. El [centro de seguridad 365](overview-security-center.md) de Microsoft y el [centro de cumplimiento de Microsoft 365](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) están mejorados con la capacidad de crear y realizar un seguimiento de vales en ServiceNow de forma nativa.
+
+- [**Administración de vales de ServiceNow en el centro de seguridad**](tickets-security-center.md)
+- **Administrar vales de ServiceNow en el centro de cumplimiento** (próximamente)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Tener acceso al centro de seguridad 365 de Microsoft y a una instancia de ServiceNow con:  
+Tener acceso al centro de seguridad de Microsoft 365 o al centro de cumplimiento y a una instancia de ServiceNow con:  
 
 * Kingston o una versión superior
 * Tener credenciales de admin HI
@@ -44,14 +49,14 @@ ServiceNow recomienda que los usuarios conserven la configuración predeterminad
 
 ## <a name="data-exchange"></a>Intercambio de datos
 
-Cuando conecta el centro de seguridad de Microsoft 365 a ServiceNow, Microsoft recibe los siguientes datos adicionales:
+Cuando conecta el centro de seguridad de Microsoft 365 o el centro de cumplimiento a ServiceNow, Microsoft recibe los siguientes datos adicionales:
 
 * Nombre de instancia de ServiceNow
 * IDENTIFICADOR de cliente de ServiceNow
 * Secreto de cliente de ServiceNow
 * Tokens de actualización & acceso a ServiceNow
 
-Cuando se crea un vale de ServiceNow a partir del centro de seguridad 365 de Microsoft, se envían los datos siguientes a ServiceNow:
+Al crear un vale de ServiceNow desde el centro de seguridad de Microsoft 365 o el centro de cumplimiento, se envían los siguientes datos a ServiceNow:
 
 * IDENTIFICADOR de usuario que inicia la creación de vales
 * Nombre de tarea
@@ -61,38 +66,9 @@ Cuando se crea un vale de ServiceNow a partir del centro de seguridad 365 de Mic
 * Origen de la recomendación (recomendación del usuario o recomendación de Microsoft)
 * Categoría de recomendación (dispositivos, datos, aplicaciones, identidad, infraestructura)
 
-## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Conectar el centro de seguridad de Microsoft 365 a ServiceNow
+## <a name="connect-to-servicenow"></a>Conectarse a ServiceNow
 
-Vaya a la página de inicio del centro de seguridad 365 de Microsoft para ver la tarjeta de conexión de ServiceNow.
-
-![¿Usa ServiceNow?](../../media/do-you-use-servicenow-250.png)
-
-Seleccione "conectarse a ServiceNow" para ir a la página de configuración de ServiceNow. Siga las instrucciones para autorizar la aplicación conector de 365 de Microsoft.
-
-> [!NOTE]
-> Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y ServiceNow, asegúrese de usar el inicio de sesión de usuario y la contraseña de integración que creó en los pasos de instalación. No use sus credenciales personales.
-
-Una vez que haya seguido las instrucciones y la autorización de la conexión, vea el estado de conexión en la página conexión del centro de seguridad 365 de Microsoft y en la experiencia de la aplicación conector de vales de Microsoft 365 de ServiceNow. Ahora ya está todo listo para empezar a crear tareas.
-
-## <a name="create-a-task-and-share-it-to-servicenow"></a>Crear una tarea y compartirla en ServiceNow
-
-Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la calificación segura de Microsoft. Vaya a cualquier acción de mejora en puntuación segura en el portal del centro de seguridad 365 de Microsoft y seleccione el icono "compartir". Una de las opciones de lista desplegable es ServiceNow.
-
-![Uso compartido de ServiceNow en calificación segura](../../media/servicenow-share.png)
-
-Se genera una tarea en la que puede establecer la prioridad y editar el nombre, la descripción o la fecha de vencimiento. Una vez que se hayan rellenado todos los campos obligatorios, envíe la tarea a ServiceNow.
-
-La tarea es visible en ServiceNow como una solicitud de cambio de configuración y seguridad de Microsoft 365.
-
-## <a name="track-tickets"></a>Seguimiento de vales
-
-Una vez que se han creado los vales de administración de cambios y la administración de cambios de ServiceNow, se muestran en las tarjetas de la página de inicio del centro de seguridad de Microsoft 365. Desde estas tarjetas, puede crear un vale, ver todos los vales o administrar la configuración de ServiceNow.
-
-![Vales de administración de cambios de ServiceNow](../../media/change-management-375.png)  ![Vales de administración de incidentes de ServiceNow](../../media/incident-management-375.png)
-
-Para volver a aprovisionar o administrar la integración de ServiceNow en el centro de seguridad de Microsoft 365, seleccione **administrar la configuración de servicenow** en una de las tarjetas. Desde allí, elimine la conexión de ServiceNow actual y personalice los nombres de los Estados de las incidencias.
-
-Con los vales de ServiceNow visibles en el centro de seguridad de Microsoft 365, las tareas residen en un lugar en el que se puede realizar un seguimiento y actuar junto a otros elementos del panel de seguridad.
+Vaya a [crear y realizar un seguimiento de los vales de ServiceNow en el centro de seguridad de Microsoft 365](tickets-security-center.md) para obtener información sobre cómo conectarse a ServiceNow. La conexión desde el centro de cumplimiento de Microsoft 365 estará disponible próximamente.
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
@@ -152,5 +128,8 @@ Si ha habilitado el filtrado IP, es posible que necesite permitir de forma expl�
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>La instalación se ha completado, pero no ve los vales y no se puede compartir
 
-Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página https://security.microsoft.com/ticketProvisioningde aprovisionamiento en. Seleccione **autorizar** y volver a la Página principal. Deben aparecer las tarjetas.
+Si se han completado los pasos de instalación y configuración, pero no ve las tarjetas de ServiceNow en la Página principal y no puede compartir con ServiceNow desde la puntuación segura de Microsoft, compruebe el estado de la página de aprovisionamiento en https://security.microsoft.com/ticketProvisioning . Seleccione **autorizar** y volver a la Página principal. Deben aparecer las tarjetas.
 
+## <a name="resources"></a>Recursos
+
+- [Administración de vales de ServiceNow en el centro de seguridad](tickets-security-center.md)

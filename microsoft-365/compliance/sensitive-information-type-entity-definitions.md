@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: a91459652d785f6536cb50e381ab139057a3eae8
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024648"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084139"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -534,6 +534,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - withholding tax
 - individual tax return
 - tax file number
+- TFN
 
 #### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 
@@ -4287,7 +4288,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguno
+Ninguna
 
 ## <a name="estonia-drivers-license-number"></a>Número de permiso de conducción de Estonia
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -6800,7 +6801,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguno
+Ninguna
 
    
 
@@ -11220,7 +11221,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguno
+Ninguna
 
 ## <a name="spain-tax-identification-number"></a>Número de identificación fiscal de España
 Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.

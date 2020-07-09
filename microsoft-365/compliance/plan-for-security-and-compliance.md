@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeación para la seguridad y el cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034900"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086661"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planeación del &amp; cumplimiento de seguridad
 
@@ -32,7 +32,7 @@ La administración de la seguridad y el cumplimiento es una asociación. Usted e
 
 Oriente a sí mismo a las capacidades de protección de la información en el póster Information Protection for Office 365. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Implementar la protección de la información para las regulaciones de privacidad de datos con Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Paso 2: comprobar la puntuación segura
 
@@ -56,15 +56,15 @@ Revise y planifique las capacidades de protección de archivos organizadas por t
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Paso 5: aprovechar el centro de seguridad &amp; y cumplimiento de Microsoft 365
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Paso 5: aprovechar el centro de seguridad y cumplimiento de Microsoft 365 &amp;
 
-El centro &amp; de seguridad y cumplimiento le ofrece una vista única de los controles que va a usar para administrar el espectro de seguridad de Microsoft 365, incluida la administración de amenazas, el gobierno de datos y la búsqueda y la investigación. 
+El &amp; centro de seguridad y cumplimiento le ofrece una vista única de los controles que va a usar para administrar el espectro de seguridad de Microsoft 365, incluida la administración de amenazas, el gobierno de datos y la búsqueda y la investigación. 
   
-- [Ir al centro de &amp; seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
+- [Ir al centro de seguridad y &amp; cumplimiento](go-to-the-securitycompliance-center.md)
     
-- [Permisos en el centro &amp; de seguridad y cumplimiento](~/security/office-365-security/protect-against-threats.md)
+- [Permisos en el centro de seguridad y &amp; cumplimiento](~/security/office-365-security/protect-against-threats.md)
     
-- [Proporcionar a los usuarios acceso al &amp; centro de seguridad y cumplimiento](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Proporcionar a los usuarios acceso al centro de seguridad y &amp; cumplimiento](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Paso 6: usar escenarios de seguridad de un extremo a otro como puntos de inicio
 

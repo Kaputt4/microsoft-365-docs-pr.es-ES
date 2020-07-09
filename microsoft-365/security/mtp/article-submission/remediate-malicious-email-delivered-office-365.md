@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Corrección de amenazas
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068218"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086696"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado que se entregó en Office 365
 
@@ -77,8 +77,6 @@ El centro de actividades muestra todas las acciones de corrección de los últim
 Cada elemento de corrección se puede abrir para ver detalles sobre él. Cuando se abre un elemento de corrección, se muestran los detalles de corrección básicos, el nombre de corrección, la fecha de creación, la descripción, la gravedad de la amenaza y el estado. También muestra dos pestañas. 
 
 1. **Ficha envío de correo**: es el número de correos electrónicos enviados a través del explorador de amenazas o investigaciones automatizadas que se van a corregir. Estos mensajes de correo electrónico pueden ser:
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="El centro de actividades con acciones que se tienen que actuar y no son posibles.":::
 
 **Accionable**: los correos electrónicos en las siguientes ubicaciones de buzones de la nube pueden actuar y moverse, es decir, cualquier correo electrónico de la categoría remedible se puede mover de una ubicación a otra:
   - Bandeja de entrada 
