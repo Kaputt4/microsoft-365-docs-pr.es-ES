@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros de Microsoft 365.
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470585"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080107"
 ---
 # <a name="learn-about-records"></a>Obtenga más información sobre los registros
 
@@ -62,7 +62,7 @@ Tenga en cuenta lo siguiente respecto a los registros:
 
     Para obtener más información sobre cómo aplicar etiquetas de retención a carpetas de SharePoint y OneDrive, consulte [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **No se pueden eliminar los registros**. Si un usuario intenta eliminar un registro en Exchange, el elemento se mueve a la carpeta elementos recuperables, tal y como se describe en [Cómo funciona una directiva de retención con ubicaciones de Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
+  - **No se pueden eliminar los registros**. Si un usuario intenta eliminar un registro en Exchange, el elemento se mueve a la carpeta Elementos recuperables, tal y como se describe en [Cómo funciona una directiva de retención con Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange).
 
     Si un usuario intenta eliminar un registro en SharePoint, se muestra un error que indica que no se eliminó el elemento y permanece en la biblioteca.
 

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Trabajar con clientes
-summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+summary: Consulte estos recursos para ayudar a los administradores a realizar tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
 metadata:
   title: Trabajar con clientes
-  description: Compartir documentos y usar Microsoft Teams para colaborar y reunirse
+  description: Comparta documentos y use Teams para colaborar y reunirse
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785465"
@@ -34,7 +34,7 @@ landingContent:
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
     - text: Chatear con empleados y clientes
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: Programar una reunión de Microsoft Teams con usuarios invitados
+    - text: Programar una reunión de Teams con usuarios invitados
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
     - text: Unirse a una reunión de Teams con usuarios invitados
       url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8

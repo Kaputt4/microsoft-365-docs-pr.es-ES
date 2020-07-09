@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Aprender el lenguaje de consulta
                   href: mtp/advanced-hunting-query-language.md
+                - name: Aplicar procedimientos recomendados de consulta
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Trabajar con resultados de consulta
                   href: mtp/advanced-hunting-query-results.md
                 - name: Usar consultas compartidas
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Aplicar procedimientos recomendados de consulta
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Detecciones personalizadas
                   items:
                     - name: Introducción a las detecciones personalizadas
@@ -217,7 +217,7 @@
               href: mtp/feedback.md
             - name: Administrar tickets a través de ServiceNow
               href: ./mtp/tickets.md
-    - name: Protección contra amenazas avanzada de Office 365
+    - name: Seguridad de Office 365
       items:
         - name: Introducción
           items:
@@ -366,7 +366,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: Ver información sobre los archivos malintencionados
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Protección contra amenazas avanzada
+        - name: Protección contra amenazas avanzada de Office 365
           href: ./office-365-security/office-365-atp.md
           items:
             - name: Ver las novedades
