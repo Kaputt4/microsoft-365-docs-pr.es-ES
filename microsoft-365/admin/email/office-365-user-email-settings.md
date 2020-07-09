@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Este artículo le proporciona información sobre cómo administrar la configuración de los usuarios.
-ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780210"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080008"
 ---
 # <a name="user-email-settings"></a>Configuración del correo electrónico del usuario
 
@@ -44,4 +44,4 @@ Esta tabla explica las distintas opciones de configuración del correo electrón
 
 > [!NOTE]
 >
-> <sup>1</sup> Solo puede administrar las aplicaciones de correo electrónico para los buzones que se hospedan por completo en Office 365. No puede usar esta característica para administrar las aplicaciones de correo electrónico para los buzones hospedados localmente.
+> <sup>1</sup> Solo puede administrar las aplicaciones de correo electrónico para los buzones que se hospedan por completo en Microsoft 365. No puede usar esta característica para administrar las aplicaciones de correo electrónico para los buzones hospedados localmente.
