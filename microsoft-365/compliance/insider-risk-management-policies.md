@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 79f6273f747d518dd9c44f4a57fa0a48daed81d2
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900824"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091936"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -42,14 +42,14 @@ Las plantillas de administración de riesgos de internación son condiciones de 
 
 ### <a name="departing-employee-data-theft"></a>Robo de datos del empleado
 
-Cuando los empleados dejan la organización, hay indicadores de riesgos específicos normalmente asociados con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos desde SharePoint Online, la copia de archivos en dispositivos portátiles como unidades USB, la impresión de archivos y la copia de datos a servicios de almacenamiento y de mensajería en la nube personal, cerca de las fechas de retirada y de finalización del empleo. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
+Cuando los empleados dejan la organización, hay indicadores de riesgos específicos normalmente asociados con el robo de datos al abandonar a los empleados. Esta plantilla de directiva da prioridad a estos indicadores y se centra en la detección y las alertas de este área de riesgos. El robo de datos por parte de los empleados puede incluir la descarga de archivos desde SharePoint Online, la impresión de archivos y la copia de datos a servicios de almacenamiento y mensajería en la nube personal cerca de las fechas de retirada y finalización del empleo. Esta plantilla prioriza los indicadores de riesgos relacionados con estas actividades y el modo en que se relacionan con el estado de empleo de los empleados.
 
 >[!IMPORTANT]
 >Cuando use esta plantilla, debe configurar un conector de Microsoft 365 de RRHH para importar periódicamente la información de fecha de retirada y de cancelación para los empleados de su organización. Consulte el tema de [importación de datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre la configuración del conector de 365 de RRHH de Microsoft para su organización.
 
 ### <a name="data-leaks"></a>Pérdidas de datos
 
-La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Junto con una directiva de prevención de pérdida de datos (DLP) asignada, esta plantilla da prioridad a la detección en tiempo real de descargas de datos sospechosas de SharePoint Online, uso compartido de archivos y carpetas, copiando archivos en dispositivos portátiles como unidades USB, imprimiendo archivos y copiando datos en servicios de almacenamiento y mensajería en la nube personal.
+La protección de datos y la prevención de pérdidas de datos es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por empleados, dispositivos y servicios. Los empleados están capacitados para crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de pérdidas de datos sea cada vez más compleja y difícil. Las pérdidas de datos pueden incluir el reuso compartido accidental de información fuera de la organización o el robo de datos con malas intenciones. Junto con una directiva de prevención de pérdida de datos (DLP) asignada, esta plantilla da prioridad a la detección en tiempo real de las descargas de datos sospechosas de SharePoint Online, el uso compartido de archivos y carpetas, la impresión y la copia de datos en la mensajería en la nube y los servicios de almacenamiento.
 
 Cuando se usa la plantilla de **fugas de datos** , se debe asignar una directiva DLP para desencadenar indicadores en la Directiva de riesgos de Insider para alertas de gravedad alta en la organización. Cuando se agrega una alerta de gravedad alta a un registro de auditoría de Office 365, las directivas de riesgo de Insider creadas con esta plantilla examinan automáticamente la alerta DLP de gravedad alta. Si la alerta contiene un usuario dentro del ámbito definido en la Directiva de riesgos de Insider, la Directiva de riesgos de Insider la procesará como una alerta nueva y se le asignará una gravedad de riesgo de Insider y una puntuación de riesgo. Esta alerta se puede evaluar como parte del flujo de trabajo de administración de riesgos de Insider y agregarse a un caso de administración de riesgos de Insider, si es necesario.
 

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049921"
+ms.locfileid: "45052730"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 
 Estos laboratorios están diseñados para ayudarle a planear, probar y validar la implementación y administración de dispositivos que ejecuten Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. Los laboratorios abarcan los pasos y las herramientas que se describen en la rueda de implementación de escritorio, incluyendo Microsoft Endpoint Configuration Manager, Desktop Analytics, la herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
 
-Este entrenamiento es altamente recomendado para organizaciones que se preparan para el fin de Windows 7, también se aplica si está utilizando Windows 10 y Office 365 Plus u Office 2019. Además, como entorno aislado, la práctica es ideal para explorar las actualizaciones de las herramientas de implementación y probar la automatización relacionada con la implementación.
+Esta formación es altamente recomendada para organizaciones que se preparan para el fin de Windows 7 o si está utilizando Windows 10 y Aplicaciones de Microsoft 365 para empresas (anteriormente Office 365 ProPlus) u Office 2019. Además, como entorno aislado, la práctica es ideal para explorar las actualizaciones de las herramientas de implementación y probar la automatización relacionada con la implementación.
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -74,6 +74,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Implementación de administración empresarial con Configuration Manager y Microsoft Intune
   - Implementación y administración de aplicaciones mediante Microsoft Intune
   - Implementación de aplicaciones e instalación de autoservicio con Microsoft Store para Empresas
+  - ¡NUEVO! Instalar Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>Migración de los archivos y la configuración del usuario
 
@@ -108,8 +109,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
   - Mantenimiento de Windows 10 con Configuration Manager e Intune
   - Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Configuration Manager
   - ¡NUEVO! Actualizaciones de Office con Configuration Manager e Intune
-  - ¡NUEVO! Instalar Microsoft Teams 
-
+  
 ### <a name="new-windows-virtual-desktop"></a>¡NUEVO! Windows Virtual Desktop
   - Windows Virtual Desktop: preparación, implementación, optimización 
 

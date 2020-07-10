@@ -17,22 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre el comportamiento de retención que se aplica específicamente a los correos electrónicos de Exchange y a las carpetas públicas de Exchange.
-ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049898"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080097"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Más información sobre las directivas de retención de Exchange
 
 La información de este artículo complementa[Más información sobre directivas de retención](retention-policies.md) porque tiene información que es específica de Exchange.
 
-## <a name="how-a-retention-policy-works-with-exchange-locations"></a>Cómo funciona una directiva de retención con las localizaciones de Exchange
+## <a name="how-a-retention-policy-works-with-exchange"></a>Cómo funciona una directiva de retención en Exchange
 
-Para el correo, el calendario y otros elementos de un usuario, se aplica una directiva de retención a nivel de buzón.
+Para el correo, el calendario y otros elementos del buzón de un usuario, se aplica una directiva de retención a nivel de buzón.
 
-Para una carpeta pública, se aplica una directiva de retención a nivel de carpeta, no a nivel de buzón. 
+Para las carpetas públicas, se aplica una directiva de retención a todas estas y no a nivel de carpeta o buzón.
+
+Cuando se configura una directiva de retención para estas ubicaciones, se incluyen los siguientes elementos de correo: mensajes de correo (incluidos los borradores) con los datos adjuntos, las tareas y los elementos del calendario cuando tienen una fecha de finalización y notas. No se incluyen contactos, tareas o elementos del calendario que no tienen una fecha de finalización. El resto de los elementos almacenados en un buzón de correo, como los mensajes guardados de Skype y Teams, se incluyen con una directiva de retención diferente.
 
 Tanto un buzón como una carpeta pública utilizan la [carpeta Elementos recuperables](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Sólo las personas a las que se les han asignado permisos de eDiscovery pueden ver los elementos de la carpeta Elementos recuperables de otro usuario.
   
