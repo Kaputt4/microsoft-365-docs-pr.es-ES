@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046068"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068119"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -159,10 +159,10 @@ Paso 1: crear un flujo para crear un evento mediante la API de REST de Microsoft
 
 ##### <a name="create-an-event"></a>Crear un evento
 
-Código de ejemplo para llamar a la API de REST
+Código de ejemplo para llamar a la API de REST:
 
 - **Método**: POST
-- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
     
@@ -298,7 +298,7 @@ Código de ejemplo para llamar a la API de REST
 | 401               | Error de autorización                                 |
 | 403               | Error de autenticación                                |
 
-#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a>Uso de PowerShell (ver.6 o posterior) o cualquier cliente HTTP
+#### <a name="using-powershell-version-6-or-later-or-any-http-client"></a>Usar PowerShell (versión 6 o posterior) o cualquier cliente HTTP
 
 Paso 1: Conéctate a PowerShell.
 
@@ -452,7 +452,9 @@ Un sistema de planeación de recursos empresariales (ERP) puede trabajar con Mic
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Cómo usar los resultados de respuesta Redirect 302 para llamar a la API de REST
 
-1. Invocar una llamada de evento de retención POST con la URL de la API de REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (se requieren permisos de administrador global).
+1. Invoque una llamada al evento de retención POST con la dirección URL de la API de REST: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+    
+    Se necesitan permisos de administrador global.
 
 2. Compruebe el código de respuesta. Si es 302, obtener la dirección URL redirigida de la propiedad de ubicación del encabezado de respuesta.
 
