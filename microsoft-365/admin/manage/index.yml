@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Administrar los datos y el servicio
-summary: Consulte estos recursos para ayudar a los administradores con tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+title: Administrar los datos y servicios
+summary: Consulte estos recursos para ayudar a los administradores a realizar tareas comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
 metadata:
-  title: Administrar los datos y el servicio
-  description: Supervisar el estado de su servicio, realizar una copia de seguridad de los datos, instalar complementos y actualizar a las últimas aplicaciones
+  title: Administrar los datos y servicios
+  description: Supervise el estado del servicio, realice una copia de seguridad de los datos, instale complementos y realice una actualización a las aplicaciones más recientes
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,12 +13,12 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780102"
 landingContent:
-- title: Supervisar el estado de nuestro servicio
+- title: Supervisar el estado del servicio
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -36,17 +36,17 @@ landingContent:
       url: release-options-in-office-365.md
     - text: Mostrar u ocultar nuevas características
       url: show-hide-new-features.md
-- title: Bloquear el acceso de los usuarios y la copia de seguridad de datos
+- title: Bloquear el acceso de usuarios y la copia de seguridad de datos
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Acceso y copia de seguridad de los datos de un antiguo usuario
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: Configuración de la retención de correo electrónico (Microsoft 365 Business Premium)
+    - text: Configurar la retención de correo electrónico (Microsoft 365 Empresa Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-    - text: Quitar datos de la compañía de los dispositivos (Microsoft 365 empresa Premium)
+    - text: Eliminar datos de empresa de dispositivos (Microsoft 365 Empresa Premium)
       url: ../../business/remove-company-data.md
-- title: Administración de complementos y aplicaciones
+- title: Administrar complementos y aplicaciones
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -62,9 +62,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Documentación del administrador de Microsoft Teams
+    - text: Documentación de administración de Microsoft Teams
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: Usar Outlook y Teams de forma conjunta
+    - text: Usar Outlook y Teams conjuntamente
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
@@ -74,13 +74,13 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Documentación de SharePoint para administradores y profesionales de ti
+    - text: Documentación de SharePoint para profesionales y administradores de TI
       url: https://docs.microsoft.com/sharepoint/
-    - text: Documentación de OneDrive para administradores y profesionales de ti
+    - text: Documentación de OneDrive para profesionales y administradores de TI
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:
     - text: Administración del uso compartido en OneDrive y SharePoint
       url: https://docs.microsoft.com/onedrive/manage-sharing
-    - text: Crear y administrar sitios.
+    - text: Crear y administrar sitios
       url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

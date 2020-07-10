@@ -1,13 +1,13 @@
 ---
-title: ¿El escritorio administrado de Microsoft es el adecuado para usted
+title: ¿Es el Escritorio administrado de Microsoft adecuado para usted?
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "44011916"
@@ -15,93 +15,93 @@ ms.locfileid: "44011916"
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
 
-El escritorio administrado de Microsoft es un servicio basado en la nube que reúne [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (incluidos [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise y [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) y agregando estas características:
+El Escritorio administrado de Microsoft es un servicio basado en la nube que reúne [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (incluido [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise y [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) y agrega estas características:
 
-- Implementación de dispositivos de usuario final
-- Operaciones y administración de servicios de ti
-- Supervisión y respuesta de seguridad
-- Compatibilidad con el usuario final
+- Implementación de dispositivo de usuario final
+- Operaciones y administración de servicios de TI
+- Control y respuesta de seguridad
+- Soporte para el usuario final
 
-El escritorio administrado de Microsoft ofrece una solución para varios de los desafíos que enfrentan actualmente las empresas y sus personas:
-- La transición al mundo ágil del software como servicio es desalentadora.
-- Los usuarios finales quieren una experiencia de trabajo conectada y habilitada.
-- Muchos de los procesos de seguridad y la administración de TI actuales están anticuados, requieren mucho tiempo y son caros.
-- Las empresas quieren centrarse en lo que les hace que sea un éxito único, en lugar de mantener la infraestructura digital.
+El Escritorio administrado de Microsoft ofrece una solución para muchos de los desafíos a los que las empresas y las personas relacionadas se enfrentan en la actualidad:
+- La transición al mundo ágil del software como servicio es abrumadora.
+- Los usuarios finales quieren una experiencia de trabajo conectado y que les permita usar su potencial.
+- Muchos de los procesos de seguridad y administración de TI actuales están desfasados, consumen mucho tiempo y son caros.
+- Las empresas quieren centrarse en lo que les da un éxito único, en lugar de mantener una infraestructura digital.
 
-Los usuarios finales disfrutarán de las últimas versiones de las aplicaciones de Windows 10 y Microsoft 365 apps for Enterprise (y más aparte), usando dispositivos y software que son creados y probados rigurosamente para obtener el mejor rendimiento y confiabilidad. Además, no tendrá que preocuparse por mantener ninguno de estos los elementos de software actualizados, ya que esto ocurre automáticamente, a partir de una secuencia de desarrollo cuidadosa que se supervisa en cada paso del proceso. Y los dispositivos registrados se supervisan 24x7 para problemas técnicos y de seguridad, por lo que, si algo va mal, la ayuda estará en camino.
+Los usuarios finales disfrutarán de las versiones más recientes de las Aplicaciones de Windows 10 y Microsoft 365 para las aplicaciones empresariales (y otras), mediante dispositivos y software que se seleccionados y probados rigurosamente para lograr la máxima confiabilidad y rendimiento. Además, nunca tendrá que preocuparse por mantener actualizado el software, ya que esto sucede automáticamente, siguiendo una secuencia de implementación cuidadosa que se supervisa en cada paso del proceso. Y los dispositivos registrados se supervisan 24x7 en busca de problemas técnicos y de seguridad, por lo que si algo va mal, la ayuda estará en el camino.
 
 
-## <a name="unique-to-microsoft-managed-desktop"></a>Único para el escritorio administrado por Microsoft
+## <a name="unique-to-microsoft-managed-desktop"></a>Único en el Escritorio administrado de Microsoft
 
-Por supuesto, no hay nada que le impida obtener y administrar sus propios dispositivos y las implementaciones de Microsoft 365 usted mismo. Por lo tanto, ¿qué ofrece Microsoft Managed Desktop más allá de eso?
+Por supuesto, no hay nada que le impida obtener y administrar sus propios dispositivos e implementaciones de Microsoft 365 por su cuenta. Por lo tanto, ¿qué es lo que ofrece el Escritorio administrado de Microsoft más allá de eso?
 
-Nuestras directivas y la línea base de seguridad ofrecen a los usuarios finales estas ventajas:
+Nuestras directivas y la línea base de seguridad proporcionan a los usuarios finales estas ventajas:
 
-- Tiempos de arranque para dispositivos de escritorio administrados por Microsoft en un cuarto como Long.
-- Al menos dos veces la duración de la batería
-- Aproximadamente un tercio del número de bloqueos de dispositivo por año
-- Movilidad de dispositivos a través de la [itinerancia del estado](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)de la empresa, lo que permite a los usuarios tener la misma experiencia independientemente del dispositivo en el que inicien sesión
+- Tiempos de arranque de los dispositivos de Escritorio administrado de Microsoft de una cuarta parte.
+- Como mínimo, el doble de duración de la batería.
+- Alrededor de un tercio del número de bloqueos de dispositivo por año.
+- Movilidad de dispositivos a través [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), que permite que los usuarios tengan la misma experiencia, independientemente del dispositivo en el que inicien sesión.
 
 Los administradores de TI se benefician de estas características:
 
-- Los paneles de información le mantienen constantemente al día sobre el uso, la confiabilidad, el estado del dispositivo y otros datos en dispositivos y usuarios.
-- Aproximadamente *un décimo* de la cantidad de tiempo necesario para actualizar el 95% de los dispositivos
-- Más tiempo para centrarse en otras actividades de administración de ti, gracias a la [Administración de dispositivos](#device-management) proporcionada por el servicio.
-- Mejor conocimiento del rendimiento del dispositivo y de la aplicación y advertencias tempranas de los problemas de seguridad desde la [supervisión de dispositivos](#device-monitoring).
+- Paneles de información para mantenerles constantemente actualizados sobre el uso, la confiabilidad, el estado del dispositivo y otros datos de los dispositivos y usuarios.
+- Alrededor de una *décima* parte del tiempo necesario para actualizar el 95 % de los dispositivos.
+- Más tiempo para centrarse en otras actividades de administración de TI, gracias a [la administración de dispositivos](#device-management) proporcionada por el servicio.
+- Mayor conocimiento del rendimiento de dispositivos y aplicaciones, y advertencia anticipada de los problemas de seguridad de ka [supervisión de dispositivos](#device-monitoring).
 
 ## <a name="device-management"></a>Administración de dispositivos
-El escritorio administrado de Microsoft asume la carga de administrar los dispositivos registrados y el software de Microsoft que usan.
+El Escritorio administrado de Microsoft asume la carga de administración de dispositivos registrados y el software de Microsoft que usan.
 
-- **Hardware:** En lugar de que el Departamento de ti tenga que investigar y probar dispositivos (y sus controladores), los dispositivos específicos se prueban minuciosamente en el escritorio administrado por Microsoft, lo que da como resultado una [lista creados de dispositivos](../service-description/device-list.md) que cumplen los requisitos de rendimiento de nivel de empresa y tienen garantizado que funcionan con el servicio. Puede obtener los dispositivos usted mismo (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista aprobada. El registro de los dispositivos es fácil y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) algunos aspectos de la experiencia del dispositivo para los usuarios finales.
-- **Actualizaciones:** Microsoft Managed Desktop configura y administra todos los aspectos de los [grupos de implementación](../service-description/updates.md) para las actualizaciones de calidad y características de Windows 10, los controladores, el firmware, las definiciones de antivirus y las aplicaciones de Microsoft 365 para actualizaciones empresariales. Esto incluye pruebas exhaustivas y comprobación de todas las actualizaciones, lo que asegura que los dispositivos registrados estén siempre actualizados y minimizando las interrupciones, liberando a su Departamento de TI de la tarea en curso.
-- **Aplicaciones:** Como parte de Microsoft 365 Enterprise, Microsoft proporciona (y administra) varias aplicaciones clave de Microsoft. Pero probablemente también tiene otras aplicaciones que necesita para su empresa. En lugar de que el Departamento de ti tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le ayuda a implementarlos y puede ayudarle con la [aplicación de escritorio](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) , si es necesario. Para obtener más información, vea [aplicaciones en escritorio administrado de Microsoft](../get-ready/apps.md).
+- **Hardware:** en lugar de que su departamento de TI tenga que investigar y probar dispositivos (y sus controladores), Escritorio administrado de Microsoft prueba cuidadosamente los dispositivos específicos, lo que da como resultado una [lista de dispositivos](../service-description/device-list.md) específicos que cumplen los requisitos de rendimiento de nivel empresarial y que se garantiza que funcionan con el servicio. Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista de aprobados. El registro de dispositivos es sencillo y, antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios finales.
+- **Actualizaciones:** el Escritorio administrado de Microsoft configura y administra todos los aspectos de [grupos de implementación](../service-description/updates.md) para las actualizaciones de características y calidad de Windows 10, controladores, firmware, definiciones de antivirus y actualizaciones de Aplicaciones de Microsoft 365 para empresas. Esto incluye una amplia comprobación y verificación de todas las actualizaciones, asegurando que los dispositivos registrados siempre estén actualizados y minimizando las interrupciones, lo que libera al departamento de TI de esa tarea constante.
+- **Apps:** como parte de Microsoft 365 Enterprise, Microsoft le proporciona (y administra) varias aplicaciones clave de Microsoft. Pero seguramente también tendrá otras aplicaciones que necesita para su empresa. En lugar de que su departamento de TI tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le ayuda a implementarlos y puede ayudar con [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) si es necesario. Más información en [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
 
 
 ## <a name="device-monitoring"></a>Supervisión de dispositivos
 
-Ayudamos a mantener la seguridad de los dispositivos con un centro de operaciones de seguridad dedicado que supervisa los dispositivos y usa datos de las amenazas únicas que Microsoft analiza cada mes. Estas características de seguridad están integradas en lugar de agregarse en una versión posterior.
+Ayudamos a mantener la seguridad de los dispositivos con un centro de operaciones de seguridad dedicado que supervisa los dispositivos y usa los datos de las amenazas únicas que Microsoft analiza cada mes. Estas características de seguridad están integradas en lugar de agregarse más tarde.
 
-También supervisamos el estado del dispositivo y le proporcionamos información sobre el rendimiento del dispositivo. Obtenga más información en [Microsoft Managed Desktop Operations and Monitoring](../service-description/operations-and-monitoring.md)
+También se supervisa el estado de los dispositivos y se proporciona información sobre su rendimiento. Más información en [Operaciones y supervisión del Escritorio administrado de Microsoft](../service-description/operations-and-monitoring.md)
 
 
-## <a name="need-more-details"></a>¿Necesita más información?
-Para obtener más información sobre el valor de escritorio administrado por Microsoft, incluidas las historias de clientes, vea [escritorio administrado de Microsoft](https://aka.ms/mmd). Los excelentes lugares para empezar con más información son el [plan](https://aka.ms/AA6jiam), un [caso práctico de estudio de impacto económico de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)y un resumen de [una página](https://aka.ms/AA6ob3h)que se pueden descargar. Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd)de Microsoft Managed Desktop.
+## <a name="need-more-details"></a>¿Quiere más detalles?
+Para más información sobre el valor de Escritorio administrado de Microsoft, incluidos casos de clientes, consulte [Escritorio administrado de Microsoft](https://aka.ms/mmd). Los puntos más útiles para empezar son el [Mapa de ruta](https://aka.ms/AA6jiam), un [caso práctico de impacto económico total de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf) y un [resumen de una sola página para descargar](https://aka.ms/AA6ob3h). Puede encontrar las últimas noticias en el [blog](https://aka.ms/AA6l2dd) del Escritorio administrado de Microsoft.
 
-Si el escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en documentación adicional que explica mejor el servicio, cómo preparar la organización para inscribirse, cómo empezar a trabajar con el servicio y las operaciones en curso a partir de entonces, incluido cómo usted y sus usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para incorporarse, empiece con ponerse en contacto con el [equipo de cuenta local](https://pages.email.office.com/contactmmd/).
+Si Escritorio administrado de Microsoft parece adecuado para su organización, puede profundizar en la documentación adicional que explica más detalladamente el servicio, cómo preparar su organización para inscribirse, cómo empezar a usar el servicio y otras operaciones continuas a partir de entonces, entre las que se incluye cómo usted y sus usuarios finales pueden obtener fácilmente ayuda si es necesario. Si ya está listo para empezar, empiece por ponerse en contacto con su [equipo de cuentas local](https://pages.email.office.com/contactmmd/).
 
-**Información general y antecedentes** Principalmente para los responsables de decisiones técnicas y empresariales, estos temas detallan la división de roles y responsabilidades entre su organización y Microsoft, más sobre las tecnologías usadas en el escritorio administrado por Microsoft y cómo el servicio encaja en una estrategia más amplia como parte del marco de ITIL.
+**Más información general y de contexto** Principalmente para responsables de la toma de decisiones técnicas y empresariales, en estos temas se detalla la división de los roles y las responsabilidades entre su organización y Microsoft, más información sobre las tecnologías que se usan en Escritorio administrado de Microsoft y cómo el servicio encaja en una estrategia más amplia como parte de la estructura de ITIL.
 
-- [Roles y responsabilidades del escritorio administrado por Microsoft](roles-and-responsibilities.md)
-- [Tecnologías de escritorio administradas de Microsoft](technologies.md)
-- [Escritorio administrado de Microsoft y ITIL](../MMD-and-ITSM.md)
+- [Roles y responsabilidades del Escritorio administrado de Microsoft](roles-and-responsibilities.md)
+- [Tecnologías del Escritorio administrado de Microsoft](technologies.md)
+- [Escritorio administrado de Microsoft e ITIL](../MMD-and-ITSM.md)
 - [Cumplimiento](compliance.md)
 - [Descripción del servicio Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
-Prepárese **para la inscripción** En estos temas se describen los pasos que debe seguir en su organización para prepararse para la inscripción, incluida la comprobación de que el entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones.
+**Prepárese para la inscripción** Estos temas le indicarán los pasos que necesitará llevar a cabo en su organización para preparar la inscripción, incluida la comprobación de que su entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones.
 
 - [Requisitos previos del Escritorio administrado de Microsoft](../get-ready/prerequisites.md)
-- [Configuración de red para el escritorio administrado por Microsoft](../get-ready/network.md)
+- [Configuración de red para el Escritorio administrado de Microsoft](../get-ready/network.md)
 - [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](../get-ready/authentication.md)
 - [Preparar unidades asignadas para el Escritorio administrado de Microsoft](../get-ready/mapped-drives.md)
 - [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](../get-ready/certs-wifi-lan.md)
-- [Aplicaciones en el escritorio administrado de Microsoft](../get-ready/apps.md)
+- [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
 
-**Introducción** Una vez que esté listo para inscribirse, en esta sección se incluyen los pasos que debe seguir para unirse al servicio, obtener y configurar dispositivos, preparar a los usuarios finales e implementar aplicaciones.
+**Introducción** Una vez esté listo para inscribirse, en esta sección se incluyen los pasos que debe seguir para unirse al servicio, obtener y configurar dispositivos, preparar a los usuarios finales e implementar aplicaciones.
 
 - [Agregar y verificar los contactos de administración en el portal de administración ](../get-started/add-admin-contacts.md)
 - [Ajustar el acceso condicional](../get-started/conditional-access.md)
 - [Asignar licencias](../get-started/assign-licenses.md)
-- [Instalar el portal de empresa de Intune en los dispositivos](../get-started/company-portal.md)
+- [Instalar el Portal de empresa de Intune en dispositivos](../get-started/company-portal.md)
 - [Habilitar Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
-- [Configurar dispositivos de escritorio administrados por Microsoft](../get-started/set-up-devices.md)
+- [Configurar dispositivos del Escritorio administrado por Microsoft](../get-started/set-up-devices.md)
 - [Prepare a los usuarios para que usen los dispositivos](../get-started/get-started-devices.md)
 - [Implementar aplicaciones en dispositivos](../get-started/deploy-apps.md)
 
-**Trabajar con Microsoft Managed Desktop** En esta sección se incluye información sobre su vida diaria con el servicio, como la forma en que los administradores de TI pueden obtener soporte técnico si es necesario, el modo en que los usuarios finales reciben soporte técnico, administran las aplicaciones una vez que se han implementado y cómo trabajar con la configuración personalizable en los dispositivos.
+**Trabajar con Escritorio administrado de Microsoft** En esta sección se incluye información sobre la vida diaria con el servicio, como la forma en que los administradores de TI pueden obtener soporte si lo necesitan, cómo los usuarios finales reciben soporte técnico, la administración de las aplicaciones una vez implementadas y cómo trabajar con las opciones personalizables en los dispositivos.
 
-- [Soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md)
+- [Soporte técnico de administrador para Escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md)
 - [Obtener ayuda para usuarios finales](../working-with-managed-desktop/end-user-support.md)
-- [Opciones configurables-escritorio administrado por Microsoft](../working-with-managed-desktop/config-setting-overview.md)
+- [Opciones configurables: Escritorio administrado de Microsoft](../working-with-managed-desktop/config-setting-overview.md)
 
 
 
