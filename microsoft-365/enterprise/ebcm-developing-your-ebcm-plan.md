@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspectos que debe tener en cuenta a la hora de desarrollar un plan de continuidad empresarial preparado para la nube.
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601097"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083522"
 ---
 # <a name="developing-your-continuity-plan"></a>Desarrollo de un plan de continuidad
 
@@ -80,6 +80,8 @@ Este es un análisis de dependencia de muestra (DA) desde el que puede empezar. 
 
 Una vez que se han inventariado los procesos de negocio y se han trazado relaciones con otros procesos y tecnologías, es necesario crear escenarios de validación para todos los procesos. Básicamente, determinar cómo va a validar sus planes de continuidad del proceso empresarial. Probablemente encontrará que algunos son más importantes que otros y querrá priorizarlos.
 No olvide que una vez establecido el plan, es importante capacitar regularmente a los empleados sobre las medidas de respuesta a incidentes y continuidad. Las revisiones posteriores a los incidentes deben utilizarse para mejorar sus estrategias de resiliencia incorporando los aprendizajes de cada validación o prueba.
+
+![Capacidad de validación de visio](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>Coordinación y comunicación de incidentes
 

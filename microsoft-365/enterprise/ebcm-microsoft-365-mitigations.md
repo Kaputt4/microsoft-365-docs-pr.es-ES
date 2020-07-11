@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Algunos ejemplos de mitigaciones para escenarios de incidentes del servicio de Microsoft 365.
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601067"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086638"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Estrategias de mitigación de incidentes del servicio
 
@@ -36,6 +36,7 @@ Estas son algunas estrategias y escenarios que muestran cómo mitigar el impacto
 |Los teléfonos VoIP se usan como métodos de comunicación secundarios.|Implemente teléfonos no compatibles con VoIP, capaces de realizar llamadas RTC, especialmente para centros de operaciones de red y servicios durante los incidentes. Agregar los números de teléfono móvil de empleados al directorio de la empresa para que el personal importante puede ser contactado a través de la red móvil.|
 |OneDrive para la Empresa es un servicio confiable para el almacenamiento de archivos y la productividad de los usuarios. [Archivos a petición](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) se configura para liberar espacio en las unidades de usuario locales.|La sincronización de OneDrive proporciona directivas de grupo que permiten a los administradores solicitar que un contenido específico se sincronice localmente o liberar espacio cuando se desee. Para mitigar el riesgo de inaccesibilidad del documento, configure esta directiva para sincronizar localmente los documentos importantes. Capacite a los usuarios para aplicar manualmente la configuración "mantener siempre en este dispositivo" para los documentos clave.|
 |La comunicación de las alteraciones del negocio a los clientes y proveedores depende de Exchange Online.|Las redes sociales de terceros pueden usarse como medio alternativo de comunicación masiva.
+|La arquitectura híbrida local, como ADFS o Pass Through Autenticación, falla y causa interrupciones en la capacidad del usuario para autenticarse en los servicios en la nube.|Configure [Password Hash Sync](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication), junto con sus servicios de autenticación híbrida, como un mecanismo secundario de autenticación basado en la nube para evitar la interrupción del inicio de sesión durante la interrupción. [Consulte Crear una estrategia de administración de control de acceso resistente con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls) para obtener más información sobre cómo crear una autenticación resistente y arquitecturas de control de acceso.|  
 
 ## <a name="leveraging-mobile-app-access"></a>Aproveche el acceso a las aplicaciones móviles
 

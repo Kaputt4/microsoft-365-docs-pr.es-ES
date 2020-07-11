@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma pro activa si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan determinadas condiciones.
-ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844756"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083622"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -52,7 +52,7 @@ Estos permisos sólo son necesarios para crear y aplicar una directiva de retenc
     
     Para Microsoft Teams: 
     - Debe seleccionar la opción de elegir lugares específicos si quiere borrar o retener los mensajes de los canales de los chats de Teams. Cuando seleccione cualquiera de estas opciones como ubicación, las otras ubicaciones se excluyen automáticamente porque una directiva de retención que incluye estos datos de Teams no puede incluir otras ubicaciones. 
-    - Tenga en cuenta que**que para los mensajes de los canales de Teams**, se incluyen los mensajes de los canales estándar pero no de los[canales privados.](https://docs.microsoft.com/microsoftteams/private-channels). Los mensajes de los canales privados se incluyen para los usuarios como charlas grupales cuando seleccionas la ubicación de los** chats de Teams**.
+    - Tenga en cuenta que**que para los mensajes de los canales de Teams**, se incluyen los mensajes de los canales estándar pero no de los[canales privados.](https://docs.microsoft.com/microsoftteams/private-channels). Actualmente, los canales privados no son compatibles con las directivas de retención.
     
     Para obtener más información sobre cómo elegir entre una directiva de retención para la organización o para lugares específicos, consulte[Aplicación de una directiva de retención a toda una organización o a lugares específicos en esta página.](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
     
@@ -238,9 +238,11 @@ Debe usar PowerShell si necesita usar el [Bloqueo de conservación](retention-po
     ![Lista de las directivas de retención en PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Para colocar un Bloqueo de conservación en una directiva de retención, ejecute`Set-RetentionCompliancePolicy` con el`RestrictiveRetention`parámetro fijado en true. Por ejemplo:
-    
-        Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-    
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
     ![Parámetro RestrictiveRetention de PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
     Después de ejecutar ese cmdlet, elija**Sí a todo**:
