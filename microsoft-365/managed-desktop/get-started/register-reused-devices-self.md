@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250450"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101490"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -21,7 +21,7 @@ ms.locfileid: "42250450"
 
 El proceso para socios se documenta en [pasos para que los partners registren dispositivos](register-devices-partner.md).
 
-Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos con Microsoft Managed Desktop en el portal de Azure.
+Microsoft Managed Desktop puede trabajar con dispositivos nuevos o puede volver a usar dispositivos que ya tiene (lo que requerirá que vuelva a crear imágenes). Puede registrar dispositivos mediante el portal de administración de escritorio administrado de Microsoft.
 
 ## <a name="prepare-to-register-existing-devices"></a>Preparar el registro de los dispositivos existentes
 
@@ -98,7 +98,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
     - Model 
     - Serial_Number 
     - HardwareHash
-7. Seleccione **Aceptar**.
+7. Elija **Aceptar**.
 
 A **continuación, defina la visualización del informe y cree el informe** siguiendo estos pasos:
 
@@ -124,7 +124,7 @@ A **continuación, defina la visualización del informe y cree el informe** sigu
 > [!IMPORTANT]
 > La consulta en Configuration Manager no permite espacios en los nombres de columna exportados; por este motivo, los pasos que ha escrito son "Serial_Number" y "HardwareHash". Ahora que ya tiene el archivo CSV exportado, debe editar los encabezados del informe para leer el *número de serie* y el *hash de hardware* , tal y como se muestra aquí antes de continuar con el registro de dispositivos.
 
-Ahora puede seguir [registrando dispositivos con Azure portal](#register-devices-by-using-the-azure-portal).
+Ahora puede seguir [registrando dispositivos con el portal de administración](#register-devices-by-using-the-admin-portal).
 
 
 #### <a name="active-directory-powershell-script-method"></a>Método de script de PowerShell de Active Directory
@@ -168,7 +168,7 @@ Ahora puede seguir [registrando dispositivos](#register-devices).
 3. Realizar`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Activa el dispositivo que estás registrando, pero *no inicia la experiencia de instalación*. Si inicia de forma accidental la experiencia del programa de instalación, tendrá que restablecer o volver a crear una imagen del dispositivo.
 5. Inserte la unidad USB y, a continuación, presione Mayús + F10.
-6. Abra un símbolo del sistema de PowerShell con derechos administrativos y `cd <pathToUsb>`, a continuación, ejecute.
+6. Abra un símbolo del sistema de PowerShell con derechos administrativos y, a continuación, ejecute `cd <pathToUsb>` .
 7. Realizar`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Realizar`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Quite la unidad USB y, a continuación, apague el dispositivo ejecutando`shutdown -s -t 0`
@@ -206,9 +206,9 @@ El archivo tiene que incluir **exactamente los mismos encabezados de columna** q
 >[!NOTE]
 >Si olvida cambiar alguno de los datos de muestra, se producirá un error en el registro.
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Registrar dispositivos con Azure portal
+#### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el portal de administración
 
-En el portal de Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
+En el [portal de administración](https://aka.ms/mmdportal)de escritorio administrado de Microsoft, seleccione **dispositivos** en el panel de navegación izquierdo. Seleccione **+ registrar dispositivos**; se abre el repaso:
 
 [![Paso a paso después de seleccionar los dispositivos de registro, enumerar los dispositivos con columnas para los usuarios asignados, el número de serie, el estado, la fecha de última visualización y la antigüedad.](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
@@ -227,7 +227,7 @@ Siga estos pasos:
 
 Puede supervisar el progreso del registro de dispositivos en la Página principal de **Microsoft administrada para equipos de escritorio** . Los posibles Estados que se notifican incluyen:
 
-| Estado | Descripción |
+| State | Descripción |
 |---------------|-------------|
 | Registro pendiente | Aún no se ha realizado el registro. Vuelva a comprobarla más tarde. |
 | Error en el registro | No se pudo completar el registro. Consulte [solución de problemas del registro de dispositivos](#troubleshooting-device-registration) para obtener más información. |

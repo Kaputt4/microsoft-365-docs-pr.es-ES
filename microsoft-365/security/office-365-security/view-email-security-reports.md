@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035791"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102925"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -38,6 +38,8 @@ Hay disponibles varios informes en el centro de [seguridad & cumplimiento](https
 
 El informe de **usuarios comprometedos** muestra el número de cuentas de usuario que se marcaron como **sospechosas** o **restringidas** en los últimos 7 días. Las cuentas en cualquiera de estos Estados son problemáticas o incluso comprometidas. Con el uso frecuente, puede usar el informe para identificar picos e incluso tendencias, en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios comprometidos, consulte [responder a una cuenta de correo electrónico en peligro](responding-to-a-compromised-email-account.md).
 
+![Widget usuarios comprometidos en el panel informes](../../media/compromised-users-report-widget.png)
+
 La vista agregada muestra los datos de los últimos 90 días y la vista de detalles muestra los datos de los últimos 30 días.
 
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **usuarios comprometidos**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=CompromisedUsers> .
@@ -50,7 +52,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **fil
 
 - **Restringido**: se ha restringido el envío de correo electrónico a la cuenta de usuario debido a patrones muy sospechosos.
 
-![Los usuarios comprometidos se notifican como aparecen en Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Vista de informe en el informe de usuarios comprometedos](../../media/compromised-users-report-activity-view.png)
 
 Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 

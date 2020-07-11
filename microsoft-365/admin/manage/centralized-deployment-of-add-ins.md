@@ -20,20 +20,30 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el espacio empresarial y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936448"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102877"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
-La implementación centralizada es la forma recomendada y con más características para la mayoría de los clientes de implementar complementos de Office para los usuarios y grupos de su organización. Si es administrador, use esta guía para determinar si el inquilino y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
+La implementación centralizada es la forma recomendada y con más características para la mayoría de los clientes de implementar complementos de Office para los usuarios y grupos de su organización. Si es administrador, use esta guía para determinar si la organización y los usuarios cumplen los requisitos para que pueda usar la implementación centralizada.
+
+Implementación centralizada proporciona las siguientes ventajas:
+  
+- Un administrador global puede asignar un complemento directamente a un usuario, a varios usuarios a través de un grupo o a todos los usuarios de la organización.
+    
+- Cuando se inicie la aplicación de Office pertinente, el complemento se descargará automáticamente. Si el complemento admite comandos de complemento, el complemento aparece automáticamente en la cinta de la aplicación de Office.
+    
+- Los complementos ya no aparecen para los usuarios si el administrador desactiva o elimina el complemento, o si se quita el usuario de Azure Active Directory o de un grupo al que está asignado el complemento.
+
 La implementación centralizada admite tres plataformas de escritorio Windows, Mac y aplicaciones de Office en línea. La implementación centralizada también admite iOS y Android (solo complementos de Outlook Mobile).
+
 Un complemento puede tardar hasta 24 horas en mostrarse para el cliente para todos los usuarios.
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con su identificador de organización) y tengan Exchange Online y los buzones activos de Exchange Online. El directorio de suscripción debe estar en el o ser federado en Azure Active Directory.
 Puede ver los requisitos específicos para Office y Exchange, o usar el [Comprobador de compatibilidad de implementación centralizada](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker).
@@ -96,19 +106,19 @@ Con el comprobador de compatibilidad de implementación centralizada, puede comp
     
 2. Ejecute el siguiente comando:
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Ejecute el comando **Invoke-CompatabilityCheck** :
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   le solicita *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated. en Microsoft. </span> com*) y *_TenantAdmin_* (use las credenciales de administrador global) y, a continuación, solicite el consentimiento.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   Este comando le pedirá que *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated. de Microsoft. </span> com*) y *_TenantAdmin_* (use las credenciales de administrador global) y, a continuación, solicite el consentimiento.
     
-> [!NOTE]
-> Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación. 
+   > [!NOTE]
+   > Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación. 
   
 Cuando la herramienta completa el proceso, genera un archivo de salida en formato delimitado por comas (.csv). El archivo se guarda en **C:\windows\system32** de forma predeterminada. El archivo de salida contiene la información siguiente:
   

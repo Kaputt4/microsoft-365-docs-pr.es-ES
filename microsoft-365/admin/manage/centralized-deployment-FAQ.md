@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Revise las respuestas a preguntas frecuentes sobre la implementación centralizada en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083567"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102889"
 ---
 # <a name="centralized-deployment-faq"></a>Preguntas frecuentes sobre implementación centralizada
 
@@ -35,7 +35,7 @@ La implementación centralizada es la forma recomendada para que un administrado
 La implementación centralizada de complementos requiere que los usuarios usen las aplicaciones de Microsoft 365 para empresas (y que hayan iniciado sesión en Office con sus credenciales de inicio de sesión en la organización) y tengan buzones de Exchange Online. El directorio de suscripción debe estar o estar federado a Azure Active Directory.  
  
 La implementación centralizada solo se admite para los buzones de correo en línea. No admite la implementación en buzones de Exchange locales.
- 
+
 Puede usar el [Comprobador de compatibilidad de implementación centralizada](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   para determinar si la suscripción es apta. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>¿Cómo se dirigen las asignaciones de usuario de complementos con una implementación centralizada?  
@@ -54,7 +54,9 @@ Un complemento puede tardar hasta 24 horas en mostrarse para todos los usuarios.
 
 Para facilitar la implementación de complementos a usuarios, grupos o a toda la organización, se recomienda que los administradores usen la implementación centralizada.
 
-Para obtener más información acerca de la administración del acceso de usuarios, consulte </br>[Evite las descargas de complementos desactivando la tienda Office en todos los clientes (excepto Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) y </br>[Especifique los administradores y los usuarios que pueden instalar y administrar complementos para Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+Para obtener más información acerca de la administración del acceso de usuarios, consulte:
+ - [Impedir las descargas del complemento desactivando la tienda Office en todos los clientes (excepto Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Especifique los administradores y los usuarios que pueden instalar y administrar complementos para Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>¿La implementación centralizada proporciona a los administradores la flexibilidad necesaria para elegir el método de implementación para complementos de Outlook?  
 
@@ -62,7 +64,7 @@ Sí. La implementación centralizada proporciona a los administradores la flexib
 
 **Fijo (predeterminado)**   El complemento se implementa automáticamente en los usuarios asignados y no puede quitarlos.  
  
-**Disponible** Los usuarios pueden instalar el complemento en Outlook eligiendo Inicio > obtener más complementos > administración administrada por el administrador.   
+**Disponible** Los usuarios pueden instalar el complemento en Outlook eligiendo **inicio > obtener más complementos > administración administrada por el administrador**.
  
 **Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero puede elegir quitarlos.  
     
@@ -70,19 +72,19 @@ Sí. La implementación centralizada proporciona a los administradores la flexib
 
 Sí. Los administradores pueden cargar un nuevo archivo de manifiesto para admitir los cambios de metadatos para los complementos LOB implementados por el administrador. El complemento se actualiza la próxima vez que se inicien las aplicaciones de Office. La aplicación web puede cambiar en cualquier momento.  
  
-Para obtener más información, consulte [complemento de línea de negocio](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+Para obtener más información, consulte [complemento de línea de negocio](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>¿Pueden los administradores desactivar los complementos?  
 
 Sí. Los administradores pueden activar o desactivar los complementos que implementan para todos los usuarios desde el centro de administración de Microsoft.
 
-Para obtener más información, consulte [Estados de complementos](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+Para obtener más información, consulte [Estados de complementos](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>¿Los administradores pueden eliminar o quitar complementos?
 
 Sí. Los administradores pueden eliminar complementos implementados para todos los usuarios desde el centro de administración de Microsoft.
 
-Para obtener más información, vea [eliminar el complemento](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+Para obtener más información, vea [eliminar un complemento](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>¿Pueden los administradores implementar complementos de pago desde la tienda Office con una implementación centralizada? 
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754801"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101652"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -145,7 +145,7 @@ Este informe ayuda a los líderes de negocios a comprender:
 
 - El impacto en el saldo de la vida laboral mientras los usuarios se ajustan a trabajar desde casa. 
 
-- Si los usuarios usan reuniones con eficacia y cómo se 
+- Si las reuniones remotas admiten la toma de decisiones efectiva.
 
 [Obtenga más información sobre el informe de continuidad empresarial](https://aka.ms/bcrps)
 

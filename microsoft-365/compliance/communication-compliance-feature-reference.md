@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 017946c08bb1c44f31bbcb87b3ce46571ab8b480
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936789"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101611"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -92,10 +92,8 @@ Debe presentar una solicitud al Soporte técnico de Microsoft para que su organi
 - **Orígenes de terceros**: puede examinar las comunicaciones de orígenes de terceros para los datos importados en buzones de la organización de Microsoft 365. Los conectores admiten los siguientes recursos de terceros:
 
     - [Bloomberg instantáneo](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Conector de datos personalizado](archiving-third-party-data.md)
+    - [Mensaje de Bloomberg](archive-bloomberg-message-data.md)
+    - [Chat de ICE](archive-icechat-data.md)
 
 Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
@@ -155,7 +153,7 @@ Para obtener información acerca de los clasificadores en Microsoft 365, consult
 ### <a name="conditional-settings"></a>Configuración condicional
 <a name="ConditionalSettings"> </a>
 
-Las condiciones que elija para la Directiva se aplican a las comunicaciones de los orígenes de correo electrónico y de terceros de la organización (como en Facebook o DropBox).
+Las condiciones que elija para la Directiva se aplican a las comunicaciones de los orígenes de correo electrónico y de terceros de la organización (por ejemplo, Bloomberg o DropBox instantánea).
 
 La siguiente tabla explica más sobre cada condición.
   
