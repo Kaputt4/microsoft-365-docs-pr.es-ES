@@ -191,6 +191,10 @@
               items:
                 - name: Información general sobre Puntuación de seguridad
                   href: mtp/microsoft-secure-score.md
+                - name: Mejorar la visibilidad de su posición de seguridad
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: Haz un seguimiento de tu historial de puntuaciones y cumple objetivos
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: Próximas novedades
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Informes
@@ -411,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detectar y dirigirse rápidamente a las cuentas de usuario en peligro
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigar y solucionar correo electrónico malintencionado
+            - name: Investigar correo electrónico malintencionado
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Corregir correo electrónico malintencionado
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: Ver y leer los informes de ATP
               href: ./office-365-security/view-reports-for-atp.md
             - name: Comprender los ataques más recientes con los análisis de amenazas
