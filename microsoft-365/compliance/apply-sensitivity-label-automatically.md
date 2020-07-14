@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874920"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094850"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -115,7 +115,7 @@ Cuando esta etiqueta de confidencialidad se aplica automáticamente, el usuario 
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configuración de tipos de información confidencial para una etiqueta
 
-Si selecciona la opción **tipos de información confidencial**, verá la misma lista de tipos de información confidencial que cuando crea una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta de altamente confidencial a cualquier contenido que incluya información de identificación personal (PII) de los clientes, como números de tarjeta de crédito o números de la seguridad social:
+Si selecciona la opción **tipos de información confidencial**, verá la misma lista de tipos de información confidencial que cuando crea una directiva de prevención de pérdida de datos (DLP). Por ejemplo, puede aplicar automáticamente una etiqueta extremadamente confidencial a cualquier contenido que incluya información personal de los clientes, como los números de tarjeta de crédito, de la seguridad social o de pasaporte:
 
 ![Tipos de información confidencial para etiquetado automático en las aplicaciones de Office](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -191,7 +191,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
 
 - Modo de simulación:
     - Se debe activar la auditoría de Microsoft 365. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
-    - Para ver el contenido del archivo en la vista de origen, debe tener el rol de **visor de contenido del explorador de contenido** en caso de no ser un administrador global. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento de la pestaña **Elementos coincidentes**.
+    - Para ver el contenido de los archivos en la vista de origen, debe tener el rol de **Visor de contenido en el explorador de contenido**. Los administradores globales no tienen este rol de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento en la pestaña **Elementos coincidentes**.
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
     - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -241,7 +241,9 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     ![Pestaña Etiquetado automático](../media/auto-labeling-tab.png)
     
 
-3. Seleccione **+ Crear directiva**.
+3. Seleccione **+ Crear directiva de etiquetado automático**. Se iniciará el asistente de Nueva Directiva:
+    
+    ![Asistente para Nueva directiva de etiquetado automático ](../media/auto-labeling-wizard.png)
 
 4. En la página **Elegir la información a la que quiere aplicar esta etiqueta**: seleccione una de las plantillas, como **Finanzas** o **Privacidad**. Puede refinar la búsqueda con la lista desplegable **Mostrar opciones para**. O bien, seleccione **directiva personalizada** si las plantillas no satisfacen sus necesidades. Seleccione **Siguiente**.
 
@@ -249,19 +251,21 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, sitios de SharePoint y OneDrive. Después, seleccione **Siguiente**.
     
+    ![Asistente de etiquetado automático de la página Elegir ubicaciones ](../media/locations-auto-labeling-wizard.png)
+    
     Para OneDrive, debe especificar cuentas individuales. La dirección URL de OneDrive de un usuario tiene el siguiente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Por ejemplo, para un usuario en el espacio empresarial de Contoso con un nombre de usuario "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     Para comprobar la sintaxis de su espacio empresarial e identificar las direcciones URL de los usuarios, consulte [Obtener una lista de todas las URL de OneDrive de usuario en su organización](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-7. Para la página **Definir la configuración de la directiva**: conserve el valor predeterminado de **Buscar contenido que contenga** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Configuración avanzada**. Después, seleccione **Siguiente**.
+7. En la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de **Reglas comunes** para definir las reglas que identifican el contenido que se debe etiquetar en todas las ubicaciones seleccionadas. Si necesita distintas reglas dependiendo de la ubicación, seleccione **Reglas avanzadas**. Después, seleccione **Siguiente**.
     
     Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
     - En las opciones de uso compartido, puede elegir **solo con las personas de mi organización** o **con personas ajenas a mi organización**.
     
-    Si la única ubicación es **Exchange** o si selecciona **Configuración avanzada**, hay otras condiciones que puede seleccionar:
+    Si la única ubicación es **Exchange** o si selecciona **Reglas avanzadas**, hay condiciones adicionales que puede seleccionar:
     - La dirección IP del remitente es
     - El dominio del destinatario es
     - El destinatario es
@@ -270,29 +274,29 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     - No se pudo digitalizar algún contenido de los datos adjuntos del correo
     - No se pudo completar el análisis de algún contenido de los datos adjuntos del correo
 
-8. Para la página **Configurar las reglas para definir qué contenido se etiqueta**: seleccione **+ Crear regla** y seleccione **Siguiente**.
-
-9. En la página **Crear regla**, asigne un nombre y una definición a la regla, con los tipos de información confidencial o la opción de uso compartido y seleccione **Guardar**.
+8. En función de las opciones anteriores, ahora tendrá la oportunidad de crear nuevas reglas mediante condiciones y excepciones.
     
     Las opciones de configuración para los tipos de información confidencial son las mismas que las seleccionadas para el etiquetado automático para las aplicaciones de Office. Si necesita más información, consulte [Configuración de tipos de información confidencial para una etiqueta](#configuring-sensitive-info-types-for-a-label).
-
-10. De nuevo en la página **Configurar reglas para definir qué contenido se etiqueta**: vuelva a seleccionar **+ Crear regla** si necesita otra regla para identificar el contenido que se va a etiquetar y repita el paso anterior. Cuando haya definido todas las reglas que necesita y confirmado que su estado es activado, seleccione **Siguiente**.
+    
+    Cuando haya definido todas las reglas que necesita y confirmado que su estado está activo, seleccione **Siguiente** para continuar y elegir una etiqueta de aplicación automática.
 
 11. En la página **Elegir una etiqueta para aplicarla automáticamente**: seleccione **+ Elegir una etiqueta**, seleccione una etiqueta del panel **Elegir una etiqueta de confidencialidad** y seleccione **Siguiente**.
 
-12. Para la página **Decida si quiere ejecutar la simulación de directivas ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en modo de simulación. En caso contrario, seleccione **Dejar la directiva desactivada**. Seleccione **Siguiente**. 
+12. En la página **Decidir si quiere probar la directiva ahora o más tarde**: seleccione **Ejecutar directiva en modo de simulación** si ya está listo para ejecutar la directiva de etiquetado automático ahora, en el modo de simulación. En caso contrario, seleccione **Dejar la directiva desactivada**. Seleccione **Siguiente**: 
+    
+    ![Pruebe el asistente de etiquetado automático de directivas.](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. En la página **Resumen**: revise la configuración de la directiva de etiquetado automático, realice los cambios que sean necesarios y finalice el asistente.
     
     A diferencia del etiquetado automático para las aplicaciones de Office, no hay ninguna opción de publicación independiente. Sin embargo, al igual que con las etiquetas de publicación, espere hasta 24 horas para que la directiva de etiquetado automático se replique en toda la organización.
 
-Ahora, en la página de **Protección de la información**, pestaña de **Etiquetado automático**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
+Ahora, en la página de **Protección de la información** > ** Etiquetado automático**, verá su directiva de etiquetado automático en la sección **Simulación** o **Desactivado**, en función de si ha elegido ejecutarla en el modo simulación o no. Seleccione su directiva para ver los detalles de la configuración y el estado (por ejemplo, **Simulación de directiva aún en ejecución**). Para las directivas en el modo de simulación, seleccione la pestaña **Elementos coincidentes** para ver los correos electrónicos o documentos que coinciden con las reglas especificadas.
 
 Puede modificar la directiva directamente desde esta interfaz:
 
 - Para una directiva en la sección **Desactivado**, seleccione el botón **Editar directiva**.
 
-- Para las directivas en la sección **Simulación**, seleccione la opción **Editar** en la parte superior de la página, en cualquiera de las pestañas:
+- Para las directivas en la sección **Simulación**, seleccione la opción **Editar directiva** en la parte superior de la página, en cualquiera de las pestañas:
     
     ![Opción editar directiva de etiquetado automático](../media/auto-labeling-edit.png)
     
@@ -301,8 +305,8 @@ Puede modificar la directiva directamente desde esta interfaz:
 Las directivas automáticas se ejecutan de forma continua hasta que se eliminan. Por ejemplo, los documentos nuevos y modificados se incluirán en la configuración de directivas actual.
 
 También puede ver los resultados de la directiva de etiquetado automático con el [explorador de contenido](data-classification-content-explorer.md) cuando tenga los [permisos](data-classification-content-explorer.md#permissions) correspondientes:
-- **El visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.
-- **El visor de contenido del explorador de contenido** le permite ver el contenido del archivo.
+- **El Visor de listas del explorador de contenido** le permite ver la etiqueta de un archivo, pero no el contenido del archivo.
+- **El Visor de contenido del explorador de contenido** le permite ver el contenido del archivo.
 
 > [!TIP]
 > También puede utilizar el explorador de contenidos para identificar las ubicaciones que tienen documentos con información confidencial, pero que no están etiquetados. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
