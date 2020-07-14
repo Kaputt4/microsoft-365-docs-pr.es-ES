@@ -10,25 +10,51 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9d7d33d3936d6fef21deb67c6b23f95c2f4bf24a
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
+ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43116007"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45107604"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados en la [documentación del escritorio administrado de Microsoft](index.yml). Los artículos "actualizados" son aquellos en los que se han agregado o corregidos materiales (correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato no aparecen). Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en github](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="june-2020"></a>Junio de 2020
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo nuevo
+[Configuración del dispositivo](service-description/device-policies.md) | Artículo actualizado
+
+
+
+## <a name="may-2020"></a>Mayo de 2020
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
+[Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
+[Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
+
+
+
+
+
+## <a name="april-2020"></a>Abril de 2020
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Cumplimiento](intro/compliance.md) | Artículo nuevo
+[Regiones e idiomas admitidos por Microsoft Managed Desktop](service-description/regions-languages.md) | Artículo actualizado
+
+
 
 ## <a name="march-2020"></a>Marzo de 2020
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md)| Artículo actualizado
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
-[Preparar recursos de impresión para el escritorio administrado por Microsoft](get-ready/printing.md) | Artículo nuevo
-
-
+[Preparar recursos de impresión para el Escritorio administrado de Microsoft](get-ready/printing.md) | Artículo nuevo
 
 
 ## <a name="february-2020"></a>Febrero de 2020
@@ -53,7 +79,7 @@ Artículo nuevo o modificado | Descripción
 ## <a name="december-2019"></a>Diciembre de 2019
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Dispositivos archivados de escritorio administrado por Microsoft](service-description/archived-device-list.md) | Artículo actualizado
 
@@ -77,7 +103,7 @@ Artículo nuevo o modificado | Descripción
 --- | ---
 [Excepciones para el plan de servicios](service-description/customizing.md) | Artículo nuevo
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
-[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [ Cambios en el servicio y comunicación ](service-description/servicechanges.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
 [Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo actualizado
@@ -89,13 +115,13 @@ Artículo nuevo o modificado | Descripción
 ## <a name="september-2019"></a>Septiembre de 2019
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Tecnologías de escritorio administradas de Microsoft](intro/technologies.md) | Artículo actualizado
+[Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Artículo actualizado
-[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
-[Configurar dispositivos de escritorio administrados por Microsoft](get-started/set-up-devices.md) | Artículo nuevo
+[Configurar dispositivos del Escritorio administrado por Microsoft](get-started/set-up-devices.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
 [Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo nuevo
 [Cómo se administran las actualizaciones en el escritorio administrado por Microsoft](service-description/updates.md) | Artículo actualizado
@@ -104,10 +130,10 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo actualizado
-[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
-[Tecnologías de escritorio administradas de Microsoft](intro/technologies.md) | Artículo actualizado
+[Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
 
 
 
@@ -115,16 +141,16 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo actualizado
-[Escritorio administrado de Microsoft y ITIL](MMD-and-ITSM.md) | Artículo nuevo
+[Escritorio administrado de Microsoft e ITIL](MMD-and-ITSM.md) | Artículo nuevo
 [Configuración del dispositivo](service-description/device-policies.md) | Artículo actualizado
 
 
 ## <a name="june-2019"></a>Junio de 2019
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Aplicaciones en el escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
+[Aplicaciones en Escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo nuevo
-[Roles y responsabilidades del escritorio administrado por Microsoft](intro/roles-and-responsibilities.md) | Artículo actualizado
+[Roles y responsabilidades del Escritorio administrado de Microsoft](intro/roles-and-responsibilities.md) | Artículo actualizado
 [Ciclo de vida de productos de escritorio administrado de Microsoft](service-description/device-lifecycle.md) | Artículo nuevo
 
 
@@ -138,7 +164,7 @@ Artículo nuevo o modificado | Descripción
 [Preparar unidades asignadas para el Escritorio administrado de Microsoft](get-ready/mapped-drives.md) | Artículo nuevo
 [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](get-ready/certs-wifi-lan.md) | Artículo nuevo
 [Pedir dispositivos de escritorio administrados por Microsoft](get-started/devices.md) | Artículo actualizado
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md)
+[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
 
 ## <a name="april-2019"></a>Abril de 2019
 Artículo nuevo o modificado | Descripción
@@ -169,13 +195,13 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Implementación de aplicaciones para dispositivos de escritorio administrados por Microsoft](get-started/deploy-apps.md) | Nuevo artículo.
-[Administrar aplicaciones para el escritorio administrado por Microsoft](working-with-managed-desktop/manage-apps.md) | Se actualizó con información sobre cómo actualizar o revertir a una versión de previoius de las aplicaciones de línea de negocio. 
+[Administrar aplicaciones para el escritorio administrado por Microsoft](working-with-managed-desktop/manage-apps.md) | Se actualizó con información sobre cómo actualizar o revertir a una versión anterior de las aplicaciones de línea de negocio. 
 
 ## <a name="december-2018"></a>Diciembre de 2018
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Operaciones y supervisión para el escritorio administrado de Microsoft](service-description/operations-and-monitoring.md) | Se agregó la tabla saldo de responsabilidad y otras tablas actualizadas.
-[Soporte de administración para escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tipos de soporte actualizados, explicaciones de gravedad y detalles adicionales.
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Tipos de soporte actualizados, explicaciones de gravedad y detalles adicionales.
 
 ## <a name="november-2018"></a>Noviembre de 2018
 
