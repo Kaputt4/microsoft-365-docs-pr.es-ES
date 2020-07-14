@@ -222,8 +222,10 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: Requisitos para la implementación centralizada de complementos
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Instalar y administrar complementos con Implementación centralizada
+        - name: Implementar complementos en el centro de administración
           href: manage/manage-deployment-of-add-ins.md
+        - name: Administrar complementos en el centro de administración
+          href: manage/manage-addins-in-the-admin-center.md
         - name: Preguntas frecuentes sobre implementación centralizada
           href: manage/centralized-deployment-faq.md
         - name: Buscar un partner o un vendedor
@@ -299,7 +301,7 @@
           items:
             - name: Validar la configuración en Android o iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Configuración de protección de dispositivos para equipos con Windows 10
+        - name: Establecer la configuración de protección de dispositivos para equipos con Windows 10
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Validar la configuración en equipos con Windows 10

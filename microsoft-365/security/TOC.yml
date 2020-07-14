@@ -215,8 +215,12 @@
               href: mtp/device-profile.md
             - name: Enviar comentarios
               href: mtp/feedback.md
-            - name: Administrar tickets a través de ServiceNow
-              href: ./mtp/tickets.md
+            - name: Crear tareas y tickets de ServiceNow
+              items:
+                - name: Información general de la integración de ServiceNow
+                  href: ./mtp/tickets.md
+                - name: Tickets de ServiceNow en el centro de seguridad
+                  href: ./mtp/tickets-security-center.md
     - name: Seguridad de Office 365
       items:
         - name: Introducción
