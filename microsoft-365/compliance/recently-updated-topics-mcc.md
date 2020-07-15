@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Al igual que con las características del centro de cumplimiento de Microsoft 365, el contenido de ayuda está evolucionando siempre. Descubra las novedades y las actualizaciones de este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035645"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127517"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Actualizaciones recientes del contenido de cumplimiento de Microsoft 365
 
@@ -202,7 +202,7 @@ Se actualizaron los siguientes artículos para apoyar la versión oficial de la 
 
 ### <a name="records-management"></a>Administración de registros
 
-[Información general sobre las etiquetas de retención](labels.md) (actualizada)<br>La sección para aplicar una etiqueta de retención basada en condiciones ahora incluye la opción de usar clasificadores que se pueden entrenar.
+[Información general sobre las etiquetas de retención](retention.md) (actualizada)<br>La sección para aplicar una etiqueta de retención basada en condiciones ahora incluye la opción de usar clasificadores que se pueden entrenar.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

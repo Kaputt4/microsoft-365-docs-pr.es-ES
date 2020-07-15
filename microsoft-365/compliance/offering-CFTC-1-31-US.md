@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 4c327ff759f6a0515f5bb454897f01f831c60653
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773751"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127067"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 de reglas de la Comisión comercial de ventas de futuros (CFTC) (c-d) Estados Unidos
 
@@ -41,7 +41,7 @@ Para evaluar el cumplimiento de Azure con CFTC regla 1.31 (c-d), Microsoft reser
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Para evaluar el cumplimiento de Office 365 con la regla de CFTC 1.31 (c-d), Microsoft contrató a un bufete de derecho independiente y líder que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el [archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4](https://go.microsoft.com/fwlink/?linkid=830440), Covington valida que [Office 365 con bloqueo de preservación](retention-policies.md) incluye características de archivado que permiten a los clientes regulados almacenar datos de una manera que les ayude a cumplir con los requisitos de CFTC para la retención de registros.
+Para evaluar el cumplimiento de Office 365 con la regla de CFTC 1.31 (c-d), Microsoft contrató a un bufete de derecho independiente y líder que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el [archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4](https://go.microsoft.com/fwlink/?linkid=830440), Covington valida que [Office 365 con bloqueo de preservación](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) incluye características de archivado que permiten a los clientes regulados almacenar datos de una manera que les ayude a cumplir con los requisitos de CFTC para la retención de registros.
 
 El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
@@ -56,7 +56,7 @@ El archivado en Office 365 ayuda a preservar una amplia gama de datos, incluidos
 
 [Office 365 & CFTC 1,31: archivado en Office 365, retención de datos y cumplimiento de la norma 17a-4 de la SEC
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - [Reglamento de servicios financieros](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): mapa de cumplimiento de los principios clave de los Estados Unidos para la informática en la nube y los servicios en línea de Microsoft.
 - [Guía de cumplimiento y evaluación de riesgos](https://aka.ms/RiskGovernanceGuide): Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias.

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador entrenado de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido dándole a los ejemplos positivos y negativos que debe ver. Una vez que se ha entrenado al clasificador, confirme que los resultados son correctos. A continuación, se usa para buscar en el contenido de la organización y clasificarlo para aplicar etiquetas de retención o confidencialidad o incluirlo en la prevención de pérdida de datos (DLP) o en las directivas de retención.
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371468"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126339"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introducción al entrenamiento de clasificadores (vista previa)
 
@@ -38,16 +38,16 @@ Esta categoría de mecanismos de clasificación incluye la búsqueda de contenid
 - Reconocimiento de un elemento porque es una variante de una plantilla [(impresión](document-fingerprinting.md)de los dedos de los documentos).
 - Uso de la presencia de cadenas exactas [(coincidencia exacta de datos)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en la [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) y en [las directivas de retención](retention-policies.md).
+Las etiquetas de confidencialidad y retención se pueden aplicar automáticamente para que el contenido esté disponible para su uso en las directivas de [prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) y de [aplicación automática para las etiquetas de retención](apply-retention-labels-automatically.md).
 
 ## <a name="trainable-classifiers"></a>Clasificadores capacitados
 
 Este método de clasificación es especialmente adecuado para el contenido que no se identifica fácilmente por los métodos de coincidencia de patrón manuales o automatizados. Este método de clasificación es más sobre cómo entrenar a un clasificador para identificar un elemento en función de lo que es el elemento, no por los elementos que están en el elemento (coincidencia de modelos). Un clasificador aprende a identificar un tipo de contenido mirando cientos de ejemplos del contenido que le interesa clasificar. Empiece por alimentar los ejemplos que están en la categoría de forma indefinida. Una vez que los procesa, lo prueba mediante una combinación de ambos ejemplos que coinciden y no coinciden. A continuación, el clasificador crea predicciones sobre si un elemento determinado pertenece a la categoría que se está creando. A continuación, se confirman los resultados, se ordenan los positivos, negativos, falsos positivos y falsos negativos para ayudar a aumentar la precisión de sus predicciones. Al publicar el clasificador entrenado, los elementos se ordenan en lugares como SharePoint Online, Exchange y OneDrive, y clasifican el contenido.
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>Dónde puede usar clasificadores interexperto
-Tanto los clasificadores integrados como los clasificadores que se pueden entrenar están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](labels.md#applying-a-retention-label-automatically-based-on-conditions) [comunicación](communication-compliance-configure.md). 
+Tanto los clasificadores integrados como los clasificadores que se pueden entrenar están disponibles como condición para [aplicar automáticamente una directiva de etiqueta de retención basada en una condición y el cumplimiento de la](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) [comunicación](communication-compliance-configure.md). 
 
-Las etiquetas de confidencialidad pueden usar clasificadores integrados y de creación propia como condiciones, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md)y [etiquetado automático para las aplicaciones de Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Las etiquetas de confidencialidad pueden usar clasificadores integrados y de creación propia como condiciones, vea [aplicar una etiqueta de confidencialidad a los contenidos automáticamente](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Los clasificadores que se pueden entrenar solo funcionan con elementos que no están cifrados y que están en inglés.
@@ -87,7 +87,7 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
   |nombre del idioma|||||
   |---------|---------|---------|---------|---------|
-  |Código|C        |CA #       |+     |Clojure  |
+  |Código|C        |C#       |+     |Clojure  |
   |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |Perl     |PHP      |Python   |R        |Ruby     |
@@ -126,11 +126,10 @@ La creación y publicación de un clasificador capacitable para su uso en las so
 
 ![clasificador de flujo de proceso capacitable](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 
-- [Etiquetas de retención](labels.md)
-- [Directivas de retención](retention-policies.md)
+- [Etiquetas de retención](retention.md)
 - [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)

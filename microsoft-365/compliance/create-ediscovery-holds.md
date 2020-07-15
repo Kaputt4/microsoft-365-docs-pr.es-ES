@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498333"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127527"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -67,7 +67,7 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 
 8. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
 
-9. Para crear una retención basada en consultas con condiciones, realice lo siguiente. De lo contrario, para conservar todo el contenido de las ubicaciones de contenido especificadas, haga clic en **siguiente** .
+9. Para crear una retención basada en consultas con condiciones, realice lo siguiente. De lo contrario, para conservar todo el contenido de las ubicaciones de contenido especificadas, haga clic en **siguiente**.
 
     ![Crear una suspensión basada en consulta con condiciones](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -80,6 +80,14 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 10. Después de configurar una retención basada en consultas, haga clic en **siguiente**.
 
 11. Revise la configuración (y edítela si es necesario) y, a continuación, haga clic en **crear esta suspensión**.
+
+## <a name="query-based-holds-placed-on-site-documents"></a>Suspensiones basadas en consultas colocadas en documentos del sitio
+
+Tenga en cuenta lo siguiente cuando coloque una retención de exhibición de documentos electrónicos basada en consultas en documentos ubicados en sitios de SharePoint:
+
+- Una retención basada en consultas inicialmente conserva todos los documentos de un sitio durante un breve período de tiempo después de que se eliminen. Esto significa que cuando se elimina un documento, se mueve a la biblioteca de conservación de documentos, aunque no concuerda con los criterios de la suspensión basada en consultas. Sin embargo, los documentos eliminados que no coinciden con una retención basada en consultas se quitarán mediante un trabajo del temporizador que procese la biblioteca de conservación de documentos. El trabajo del temporizador se ejecuta periódicamente y compara todos los documentos de la biblioteca de conservación de documentos en las suspensiones de eDiscovery basadas en consulta (y otros tipos de retenciones y directivas de retención). El trabajo del temporizador elimina los documentos que no coinciden con una retención basada en consultas y conserva los documentos que sí lo hacen.
+
+- Las suspensiones basadas en consultas no deben usarse para llevar a cabo la conservación de destino, como la preservación de documentos en una carpeta o un sitio específicos, o mediante otros criterios de retención basados en la ubicación. Si lo hace, es posible que tenga resultados no deseados. Se recomienda usar criterios de retención no basados en ubicaciones, como palabras clave, intervalos de fechas u otras propiedades de documento, para conservar los documentos del sitio.
 
 ## <a name="ediscovery-hold-statistics"></a>estadísticas de retención de eDiscovery
 
@@ -114,7 +122,7 @@ Estas son algunas otras cosas que debe tener en cuenta al buscar ubicaciones en 
 - Si se configura una búsqueda para buscar ubicaciones en suspensión y, a continuación, cambiar una retención de eDiscovery en el caso (agregando o quitando una ubicación o cambiando una consulta de retención), la configuración de búsqueda se actualizará con esos cambios. Sin embargo, tiene que volver a ejecutar la búsqueda una vez cambiada la retención para actualizar los resultados de la búsqueda.
 
 - Si se colocan varias suspensiones de exhibición de documentos electrónicos en una sola ubicación en un caso de exhibición de documentos electrónicos y selecciona buscar ubicaciones en retención, el número máximo de palabras clave para esa consulta de búsqueda es de 500. Esto se debe a que la búsqueda combina todas las retenciones basadas en consultas mediante el operador **or** . Si hay más de 500 palabras clave en las consultas de retención combinada y la consulta de búsqueda, se buscará todo el contenido del buzón, no solo el contenido que coincida con el caso basado en consultas.
-    
+
 - Si una retención de exhibición de documentos electrónicos tiene un estado de **activación**, puede seguir buscando en las ubicaciones en espera mientras se activa la suspensión.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Conservar contenido en Microsoft Teams
@@ -131,7 +139,7 @@ Para obtener más información acerca de la conservación de contenido de Teams,
 > En una organización basada en la nube, los usuarios que participen en conversaciones que formen parte de la lista de chats en Microsoft Teams deben tener un buzón de correo de Exchange Online para conservar las conversaciones de chat cuando el buzón de correo se coloca en una suspensión de eDiscovery. Esto se debe a que las conversaciones que forman parte de la lista de chats se almacenan en buzones de correo basados en la nube de los participantes del chat. Si un participante de chat no tiene un buzón de correo de Exchange Online, no podrá conservar esas conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, los usuarios con un buzón local podrían ser capaces de participar en conversaciones que formen parte de la lista de chats de Microsoft Teams. Pero, en este caso, el contenido de esta conversación no se puede conservar porque estos usuarios no tienen buzones de correo basados en la nube que puedan retenerse.
   
 Cada canal de equipo o equipo también contiene un wiki para la toma de notas y la colaboración. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede conservar el contenido de la wiki agregando el sitio de SharePoint del equipo a una suspensión de exhibición de documentos electrónicos.
-    
+
 > [!NOTE]
 > La capacidad de conservar el contenido del wiki para un canal de equipo o equipo (cuando se pone el sitio de SharePoint del equipo en espera) se presentó el 22 de junio de 2017. Si un sitio de grupo está en suspensión, el contenido de la wiki se conservará a partir de esa fecha. Sin embargo, si un sitio de grupo está en suspensión y el contenido de la wiki se eliminó antes del 22 de junio de 2017, no se conservó el contenido de la wiki.
 
@@ -159,8 +167,8 @@ Tenga en cuenta lo siguiente cuando coloque tanto Teams como grupos de Office 36
   
 - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará en ningún equipo o grupo de Office 365 del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 en un equipo en una suspensión de eDiscovery, solo el buzón de grupo y el sitio de grupo se colocan en retención. Los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se colocan en suspensión a menos que los agregue explícitamente a la retención de exhibición de documentos electrónicos. Por lo tanto, si tiene que poner un equipo o un grupo de Office 365 en espera por un motivo legal, considere la posibilidad de agregar los buzones y las cuentas de OneDrive de los miembros del equipo o del grupo en la misma retención.
 
-- Para obtener una lista de los miembros de un grupo de Office 365 o de equipo, puede ver las propiedades de la página **grupos** en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online: 
-    
+- Para obtener una lista de los miembros de un grupo de Office 365 o de equipo, puede ver las propiedades de la página **grupos** en el centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
@@ -179,7 +187,7 @@ Para recopilar una lista de las direcciones URL de los sitios de OneDrive para l
 
 Después de quitar un buzón, un sitio de SharePoint o una cuenta de OneDrive de una suspensión de exhibición de documentos electrónicos, se aplica una *suspensión de retraso* . Esto significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen de forma permanente (purga) de una ubicación de contenido. Esto proporciona a los administradores una oportunidad para buscar o recuperar contenido que se purgará después de que se quite una retención de eDiscovery. Los detalles sobre cómo funciona la retención por retraso para los buzones de correo y los sitios son distintos.
 
-- **Buzones de correo:** Una retención de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se ha quitado una retención de eDiscovery. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true**: 
+- **Buzones de correo:** Una retención de retraso se coloca en un buzón la próxima vez que el Asistente para carpetas administradas procese el buzón y detecte que se ha quitado una retención de eDiscovery. En concreto, se aplica una retención retrasada a un buzón de correo cuando el Asistente para carpeta administrada define una de las siguientes propiedades de buzón en **true**:
 
    - **DelayHoldApplied:** Esta propiedad se aplica al contenido relacionado con el correo electrónico (generado por personas que usan Outlook y Outlook en la web) que se almacena en el buzón de correo de un usuario.
 
@@ -191,14 +199,14 @@ Después de quitar un buzón, un sitio de SharePoint o una cuenta de OneDrive de
 
 - **Sitios de SharePoint y OneDrive:** Cualquier contenido de SharePoint o de OneDrive que se retiene en la biblioteca de conservación de documentos no se elimina durante el período de retención de 30 días después de que se quite un sitio de una suspensión de eDiscovery. Esto es similar a lo que sucede cuando se suelta un sitio desde una directiva de retención. Además, no puede eliminar manualmente este contenido en la biblioteca de conservación de la preservación durante el período de retención de un retraso de 30 días. 
 
-   Para obtener más información, consulte [liberar una directiva de retención](retention-policies.md#releasing-a-retention-policy).
+   Para obtener más información, consulte [liberar una directiva de retención](retention.md#releasing-a-retention-policy).
 
 Una suspensión de retraso también se aplica a las ubicaciones de contenido en espera cuando se cierra un caso de eDiscovery principal porque las suspensiones se desactivan cuando se cierra un caso. Para obtener más información acerca de cómo cerrar un caso, vea [Cerrar, volver a abrir y eliminar un caso de exhibición de](close-reopen-delete-core-ediscovery-cases.md)documentos electrónicos principal.
 
 ## <a name="ediscovery-hold-limits"></a>límites de retención de eDiscovery
 
 En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensiones de casos.
-    
+
   |**Descripción del límite**|**Límite**|
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |

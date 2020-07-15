@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8222abaea0e8920e48f2f7b506d9477e93bc84
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817097"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126873"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -33,8 +33,8 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 
 |**Descripción del límite**|**Límite**|
 |:-----|:-----|
-|Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).  <br/> |1 millón  <br/> |
-|Tamaño total de archivo por conjunto de carga. Esto incluye la carga de no de Office 365 en un conjunto de revisión.  <br/> |100 GB  <br/> |
+|Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en un caso).  <br/> |3 millones <br/> |
+|Tamaño total de archivo por conjunto de carga. Esto incluye la carga de no de Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
 |Cantidad total de datos cargados en todos los conjuntos de revisión de la organización por día.<br/> |2 TB <br/> |
 |Número máximo de conjuntos de carga por caso.  <br/> |15  <br/> |
 |Número máximo de conjuntos de revisión por caso.  <br/> |20 <br/> |
@@ -60,9 +60,9 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |:-----|:-----|
 |Número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda.  <br/> |Sin límite  <br/> |
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.  <br/> |Sin límite  <br/> | 
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10    <br/> | 
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10   <br/> | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones).  <br/> |**Buzones de correo**: 10.000<br/>**Sitios**: 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
-|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3  <br/> |  
+|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3   <br/> |  
 |Número máximo de variantes devueltas al usar el carácter comodín de prefijo para buscar una frase exacta o al usar un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.   <br/> |100  <br/> |
 |Número máximo de elementos de todos los buzones mostrados en la página de vista previa para las búsquedas.  <br/> |1.000  <br/> |

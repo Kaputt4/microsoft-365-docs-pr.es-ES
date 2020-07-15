@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos para los documentos en un conjunto de revisión en un caso en eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726452"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126957"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
@@ -46,7 +46,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Autor|Autor|Doc_authors|Autor de los metadatos del documento.|
 |BCC|Bcc|Email_bcc|Campo Cco para tipos de mensaje. Format es **displayName \<SMTPAddress> **.|
 |CC|Cc|Email_cc|Campo CC para los tipos de mensaje. Format es **displayName \<SMTPAddress> **.|
-|Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de retención](labels.md) aplicadas al contenido en Office 365.|
+|Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de retención](retention.md) aplicadas al contenido en Office 365.|
 |Ruta de acceso compuesta|CompoundPath|Compound_path|Ruta de acceso legible que describe el origen del elemento.|
 |Contenido|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|Cuerpo de la conversación||Cuerpo de la conversación del elemento.|
@@ -103,7 +103,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Clase Item|ItemClass|Item_class|Clase de elemento proporcionada por Exchange Server; por ejemplo, **IPM. Nota:**|
 |Última modificación|LastModifiedDate|Doc_date_modified|Fecha de última modificación de los metadatos del documento.|
 |IDENTIFICADOR de carga|LoadId|Load_ID|Identificador del conjunto de carga en el que se agregó el elemento a un conjunto de revisión.|
-|Location|Location|Location|Cadena que indica el tipo de ubicación desde la que se originaron los documentos.<br /><br />Datos **importados** -no de Office 365<br />**Teams** : Microsoft Teams<br />Buzones de **Exchange** -Exchange<br />**SharePoint** : sitios de SharePoint<br />**Onedrive** : cuentas de onedrive|
+|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación desde la que se originaron los documentos.<br /><br />Datos **importados** -no de Office 365<br />**Teams** : Microsoft Teams<br />Buzones de **Exchange** -Exchange<br />**SharePoint** : sitios de SharePoint<br />**Onedrive** : cuentas de onedrive|
 |Nombre de la ubicación|LocationName|Location_name|Cadena que identifica el origen del elemento. Para Exchange, será la dirección SMTP del buzón de correo; para SharePoint y OneDrive, la dirección URL de la colección de sitios.|
 |Marcado como representativo|MarkAsRepresentative||Un documento de cada conjunto de duplicados exactos está marcado como representantes.|
 |Marcado como un problema de caso con etiqueta previa 1 *||Marked_as_pre_tagged_Case_issue_1|Marcado como un problema de caso predefinido 1 de la relevancia.|

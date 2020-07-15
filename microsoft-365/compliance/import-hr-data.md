@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 7578b0e6c53d85c0216dbb4b82a2ab4e0f5aac87
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210576"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138310"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurar un conector para importar datos de recursos humanos (versión preliminar)
 
@@ -49,7 +49,7 @@ Para obtener instrucciones paso a paso para crear una aplicación en AAD, vea [r
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Paso 2: preparar un archivo CSV con los datos de recursos humanos
 
-El paso siguiente es crear un archivo CSV que contenga información sobre los empleados que han abandonado la organización. Como se explica en la sección antes de empezar, deberá determinar cómo generar este archivo CSV desde el sistema de RRHH de la organización. En el ejemplo siguiente se muestra un archivo CSV completado (abierto en el Bloc de notas) que contiene los tres parámetros obligatorios (columnas). Es mucho más fácil editar el archivo CSV en Microsoft Excel.
+El paso siguiente es crear un archivo CSV que contenga información sobre los empleados que han abandonado la organización. Como se explica en la sección antes de empezar, deberá determinar cómo generar este archivo CSV desde el sistema de RRHH de la organización. En el ejemplo siguiente se muestra un archivo CSV completado (abierto en el panel de notas) que contiene los tres parámetros obligatorios (columnas). Es mucho más fácil editar el archivo CSV en Microsoft Excel.
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -72,7 +72,7 @@ Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en 
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: crear el conector de recursos humanos
 
-El siguiente paso es crear un conector de recursos humanos en el centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de recursos humanos que cree devolverá los datos de recursos humanos del archivo CSV a la organización de Microsoft 365. En este paso, asegúrese de copiar el JobId que se genera al crear el conector. Debe usar el JobId al ejecutar el script.
+El siguiente paso es crear un conector de recursos humanos en el centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de recursos humanos que cree devolverá los datos de recursos humanos del archivo CSV a la organización de Microsoft 365. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Deberá usar el identificador de trabajo cuando ejecute el script.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos** en el panel de navegación izquierdo.
 
@@ -92,13 +92,19 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 6. En la página **revisión** , revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
-   Se muestra una página de estado que confirma que se ha creado el conector. Esta página también contiene el identificador de trabajo. Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página de control flotante para el conector.
+   Se muestra una página de estado que confirma que se ha creado el conector. Esta página contiene dos cosas importantes que necesita para completar el siguiente paso para ejecutar el script de ejemplo para cargar los datos de recursos humanos.
+
+   ![Página revisión con identificador de trabajo y vínculo a GitHub para obtener un script de ejemplo](../media/HRConnector_Confirmation.png)
+
+   a. **IDENTIFICADOR de trabajo.** Necesitará este identificador de trabajo para ejecutar el script en el paso siguiente. Puede copiarlo desde esta página o desde la página de control flotante de los conectores.
+   
+   b. **Vínculo al script de ejemplo.** Haga clic en **este vínculo para** ir al sitio de Github y acceder al script de ejemplo (el vínculo abre una nueva ventana). Mantenga esta ventana abierta para poder copiar el script en el paso 4. Como alternativa, puede marcar el destino o copiar la dirección URL para que pueda tener acceso de nuevo en el paso 4. Este vínculo también está disponible en la página de control flotante de conectores.
 
 7. Haga clic en **Listo**.
-   
+
    El nuevo conector se muestra en la lista de la ficha **conectores** . 
 
-8. Haga clic en el conector de recursos humanos que acaba de crear para mostrar la página de flotante, que contiene propiedades y otra información sobre el conector. 
+8. Haga clic en el conector de recursos humanos que acaba de crear para mostrar la página de flotante, que contiene propiedades y otra información sobre el conector.
 
    ![Página de control flotante para nuevo conector de recursos humanos](../media/HRConnectorWizard7.png)
 
@@ -110,9 +116,9 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de recursos humanos en el archivo CSV (que creó en el paso 2) a la nube de Microsoft. En concreto, la secuencia de comandos carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de recursos humanos que creó en el paso 3 importa los datos de recursos humanos a su organización de Microsoft 365, donde puede tener acceso a ellos otras herramientas de cumplimiento, como la solución de administración de riesgos de Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para que se ejecute de forma automática diariamente, de modo que los datos de finalización de los empleados más actuales se carguen en la nube de Microsoft. Consulte [programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Vaya a [este sitio de github](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) para acceder al script de ejemplo.
+1. Vaya a la ventana que dejó abierta en el paso anterior para obtener acceso al sitio de GitHub con el script de ejemplo. Como alternativa, abra el sitio marcado o use la dirección URL que ha copiado.
 
-2. Haga clic en el botón **sin procesar** para mostrar el script en la vista de texto
+2. Haga clic en el botón **sin procesar** para mostrar el script en la vista de texto.
 
 3. Copie todas las líneas del script de ejemplo y guárdelas en un archivo de texto.
 
@@ -132,7 +138,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
 
    |**Parámetro**|**Descripción**
    |:-----|:-----|:-----|
-   |`tenantId`|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el tenantId de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
+   |`tenantId`|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
    |`appId` |Este es el identificador de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. | 
    |`appSecret`|Este es el secreto de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
    |`jobId`|Se trata del identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
@@ -161,7 +167,7 @@ Después de crear el conector de recursos humanos y ejecutar el script para carg
 
    ![El archivo de registro del conector de recursos humanos muestra las filas de números del archivo CSV que se cargaron](../media/HRConnectorLogFile.png)
 
-   El campo **RecordsSaved** indica el número de filas del archivo CSV que se han cargado. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los campos **RecordsSaved** es 4, si el script cargó correctamente todas las filas en el archivo CSV.
+   El `RecordsSaved` campo indica el número de filas que se han cargado en el archivo CSV. Por ejemplo, si el archivo CSV contiene cuatro filas, el valor de los `RecordsSaved` campos es 4, si el script cargó correctamente todas las filas en el archivo CSV.
 
 Si no ha ejecutado el script en el paso 4, en la **última importación**se muestra un vínculo para descargar el script. Puede descargar el script y, a continuación, seguir los pasos del paso 4 para ejecutarlo.
 

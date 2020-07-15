@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores integrados que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores.
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371412"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126319"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Probar clasificadores integrados con etiquetas de retención (versión preliminar)
 
@@ -40,7 +40,7 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
   |nombre del idioma|||||
   |---------|---------|---------|---------|---------|
-  |Código|C        |CA #       |+     |Clojure  |
+  |Código|C        |C#       |+     |Clojure  |
   |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |Perl     |PHP      |Python   |R        |Ruby     |
@@ -71,9 +71,9 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 
 5. Elija `Choose a label to auto-apply` .
 
-6. Elija `Create new labels` y cree una etiqueta para usarla sólo con esta prueba. Cuando lo haga, deje `Retention` set en `off` . No desea activar ninguna retención ni otras acciones. En este caso, utilizará la etiqueta de retención simplemente como una etiqueta de texto, sin aplicar ninguna acción. Por ejemplo, puede crear una etiqueta de retención denominada "SourceCode Classifier test" sin ninguna acción y, a continuación, aplicar automáticamente esa etiqueta de retención a contenido que tiene clasificador de código fuente como condición. Para obtener más información acerca de la creación de etiquetas de retención, consulte [Overview of Retention Labels](labels.md).
+6. Elija `Create new labels` y cree una etiqueta para usarla sólo con esta prueba. Cuando lo haga, deje `Retention` set en `off` . No desea activar ninguna retención ni otras acciones. En este caso, utilizará la etiqueta de retención simplemente como una etiqueta de texto, sin aplicar ninguna acción. Por ejemplo, puede crear una etiqueta de retención denominada "SourceCode Classifier test" sin ninguna acción y, a continuación, aplicar automáticamente esa etiqueta de retención a contenido que tiene clasificador de código fuente como condición. Para obtener más información sobre las etiquetas de retención, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
   
-7. Elija `Auto-apply a label` y, a continuación, `Choose a label to auto-apply` . Para obtener más información sobre el uso de la aplicación basada en condiciones, aplique automáticamente una etiqueta vea, [aplique automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Elija `Auto-apply a label` y, a continuación, `Choose a label to auto-apply` . Para obtener más información sobre el uso de la aplicación basada en condiciones, aplique automáticamente una etiqueta consulte [configurar las condiciones para aplicar automáticamente etiquetas de retención](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels).
 
 8. Elija su etiqueta de prueba de la lista y elija `Next` .
 
@@ -106,5 +106,5 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 Vea también:
 
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
-- [Introducción a las etiquetas de retención](labels.md)
-- [Aplicar automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md)
+- [Aplicar automáticamente una etiqueta de retención para conservar o eliminar contenido](apply-retention-labels-automatically.md)

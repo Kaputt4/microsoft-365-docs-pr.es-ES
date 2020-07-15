@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo identificar los diferentes tipos de retenciones que se pueden colocar en un buzón de correo de Exchange online en Microsoft 365.
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817609"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126811"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -36,7 +36,7 @@ Microsoft 365 ofrece varias formas en que la organización puede evitar que el c
 
 - ** [Conservación local](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Suspensiones que se aplican a los buzones de usuario mediante el uso de la herramienta eDiscovery local & conservación en el centro de administración de Exchange en Exchange Online.
 
-- ** [Directivas de retención de Microsoft 365](retention-policies.md):** Se puede configurar para conservar (o conservar y luego eliminar) el contenido de los buzones de usuario en Exchange Online y en el buzón de correo correspondiente para los grupos de Microsoft 365 y Microsoft Teams. También puede crear una directiva de retención para conservar las conversaciones de Skype empresarial, que se almacenan en los buzones de los usuarios.
+- ** [Directivas de retención de Microsoft 365](retention.md):** Se puede configurar para conservar (o conservar y luego eliminar) el contenido de los buzones de usuario en Exchange Online y en el buzón de correo correspondiente para los grupos de Microsoft 365 y Microsoft Teams. También puede crear una directiva de retención para conservar las conversaciones de Skype empresarial, que se almacenan en los buzones de los usuarios.
 
   Hay dos tipos de directivas de retención de Microsoft 365 que se pueden asignar a los buzones de correo.
 
@@ -46,7 +46,7 @@ Microsoft 365 ofrece varias formas en que la organización puede evitar que el c
     
   Para obtener más información, vea [aplicar una directiva de retención a toda la organización o a ubicaciones específicas](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
 
-- **[Etiquetas de retención de 365 de Microsoft](labels.md):** si un usuario aplica una etiqueta de retención de Microsoft 365 (una que esté configurada para conservar contenido o conservar y, a continuación, eliminar contenido) en *cualquier* carpeta o elemento del buzón, se aplica una retención al buzón como si el buzón estuviera en retención por juicio o asignado a una directiva de retención de Microsoft 365. Para obtener más información, consulte la sección [identificar buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) de este artículo.
+- **[Etiquetas de retención de 365 de Microsoft](retention.md):** si un usuario aplica una etiqueta de retención de Microsoft 365 (una que esté configurada para conservar contenido o conservar y, a continuación, eliminar contenido) en *cualquier* carpeta o elemento del buzón, se aplica una retención al buzón como si el buzón estuviera en retención por juicio o asignado a una directiva de retención de Microsoft 365. Para obtener más información, consulte la sección [identificar buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) de este artículo.
 
 Para administrar buzones en retención, es posible que tenga que identificar el tipo de retención que se coloca en un buzón de correo para que pueda realizar tareas como cambiar la duración de la retención, quitar la retención temporal o permanentemente o excluir un buzón de una directiva de retención de Microsoft 365. En estos casos, el primer paso es identificar el tipo de retención colocada en el buzón. Y debido a que se pueden colocar varias suspensiones (y distintos tipos de retenciones) en un único buzón, tiene que identificar todas las suspensiones colocadas en un buzón de correo si desea quitar o cambiar una suspensión.
 
@@ -100,7 +100,7 @@ En la tabla siguiente se describen los distintos tipos de retenciones de toda la
 |Directivas de retención de 365 de Microsoft aplicadas a buzones de Exchange, carpetas públicas de Exchange y chats de Microsoft Teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Las directivas de retención de toda la organización que se aplican a los buzones de Exchange, las carpetas públicas de Exchange y los chats de 1xN en Microsoft Teams se identifican mediante GUID que comienzan con el `mbx` prefijo. Nota 1xN chats se almacenan en el buzón de los participantes individuales del chat.      |
 |Directiva de retención de Microsoft 365 aplicada a los mensajes de canal de Microsoft Teams y grupos de 365     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Las directivas de retención de toda la organización que se aplican a los grupos de Microsoft 365 y a los mensajes de canal en Microsoft Teams se identifican mediante GUID que comienzan con el `grp` prefijo. Nota los mensajes de canal se almacenan en el buzón de grupo asociado a un equipo de Microsoft.     |
 
-Para obtener más información sobre las directivas de retención que se aplican a Microsoft Teams, consulte la sección "ubicación de Teams" [información general de las directivas de retención](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Para obtener más información sobre las directivas de retención que se aplican a Microsoft Teams, consulte [información sobre las directivas de retención para Microsoft Teams](retention-policies-teams.md).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Información sobre el formato del valor InPlaceHolds de las directivas de retención
 
@@ -120,7 +120,7 @@ En la tabla siguiente se definen las tres posibles acciones de retención:
 |**segundo**    |    Indica que la Directiva de retención está configurada para contener elementos. La Directiva no elimina los elementos una vez que expira el período de retención.     |
 |**3**     |   Indica que la Directiva de retención está configurada para mantener elementos y, a continuación, eliminarlos una vez que expire el período de retención.      |
 
-Para obtener más información acerca de las acciones de retención, consulte la sección "conservar contenido durante un período de tiempo específico" en [información general sobre las directivas de retención](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Para obtener más información acerca de las acciones de retención, consulte la sección [conservar contenido durante un período de tiempo específico](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) .
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Paso 2: usar el GUID para identificar la retención
 
@@ -179,7 +179,7 @@ Para ver el valor de la propiedad *ComplianceTagHoldApplied* , ejecute el siguie
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Para obtener más información acerca de las etiquetas de retención, vea [Overview of Microsoft 365 Retention Labels](labels.md).
+Para obtener más información acerca de las etiquetas de retención, consulte [Retention Labels](retention.md#retention-labels).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Administración de buzones de correo en suspensión de retardo
 
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente cuando administre un buzón de correo en espera de 
 
 - Como se indicó anteriormente, un buzón se considera en espera durante una duración de retención ilimitada si la propiedad DelayHoldApplied o DelayReleaseHoldApplied está establecida en **true**. Sin embargo, esto no significa que se conserve *todo* el contenido del buzón. Depende del valor que se establezca en cada propiedad. Por ejemplo, supongamos que ambas propiedades se establecen en **true** porque se quitan las suspensiones del buzón de correo. A continuación, quita solo la retención retrasada que se aplica a los datos que no son de la nube de Outlook (mediante el parámetro *RemoveDelayReleaseHoldApplied* ). La próxima vez que el Asistente para carpetas administradas procese el buzón, se purgarán los elementos que no sean de Outlook marcados para su eliminación. No se purgarán todos los elementos de Outlook marcados para su eliminación porque la propiedad DelayHoldApplied sigue establecida en **true**. Lo contrario también será true: si DelayHoldApplied se establece en **false** y DelayReleaseHoldApplied se establece en **true**, se purgarán sólo los elementos de Outlook marcados para su eliminación.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de identificar las suspensiones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporalmente o permanentemente la retención o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información acerca de cómo realizar tareas relacionadas con las suspensiones, consulte uno de los siguientes temas:
 

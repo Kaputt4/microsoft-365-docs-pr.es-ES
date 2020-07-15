@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: La exhibición de documentos electrónicos local y la conservación local (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en la primera mitad de 2020. El cmdlet Search-Mailbox y eDiscovery avanzado v 1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761690"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126947"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -124,7 +124,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p>Aplicación de directivas a ubicaciones de contenido específicas como Exchange Online, SharePoint Online, OneDrive para la empresa, Skype empresarial, Microsoft Teams y Office 365 grupos</p></li>
 <li>
 <p>Aplicación de directivas a usuarios específicos</p></li></ul>
-<p>Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">información general sobre las directivas de retención</a>.</td>
+<p>Para obtener más información, vea <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">información sobre las directivas de retención y las etiquetas de retención</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda de correo electrónico en un buzón de detección para su revisión</td><td>Revisar conjuntos en eDiscovery avanzado v 2.0</td>
@@ -222,7 +222,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 </tr>
 <tr class="odd">
 <td>Copiar los resultados de la búsqueda en un buzón de detección</td>
-<td>None</td>
+<td>Ninguno</td>
 <td>No hay reemplazo directo para esta funcionalidad, ya que no proporciona acceso a todos los servicios de Microsoft 365. Consulte las preguntas más frecuentes siguientes para obtener soluciones alternativas.</td>
 </tr>
   <tr class=even>

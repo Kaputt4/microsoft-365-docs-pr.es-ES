@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo recuperar el contenido de un buzón inactivo en Office 365 convirtiéndolo en un nuevo buzón de correo que contiene el contenido del buzón inactivo.
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818950"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127467"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
@@ -81,7 +81,7 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
   
      - **Conservación local** Las suspensiones locales se quitan del buzón de correo recuperado. Esto significa que el buzón de correo recuperado se quita como un buzón de origen de cualquier conservación local o búsqueda de exhibición de documentos electrónicos local.
      
-     - **Directiva de retención de 365 de Microsoft con bloqueo de conservación.** Si el buzón inactivo se asignó a una directiva de retención con bloqueo de conservación (denominada *Directiva de retención bloqueada*), el buzón de correo recuperado se asignará a la misma directiva de retención bloqueada. Para obtener más información acerca de las directivas de retención bloqueadas, consulte [información sobre las directivas de retención](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+     - **Directiva de retención de 365 de Microsoft con bloqueo de conservación.** Si el buzón inactivo se asignó a una directiva de retención con bloqueo de conservación (denominada *Directiva de retención bloqueada*), el buzón de correo recuperado se asignará a la misma directiva de retención bloqueada. Para obtener más información acerca de las directivas de retención bloqueadas, consulte [usar bloqueo de conservación para cumplir con los requisitos normativos](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
   
      - **Directiva de retención de Microsoft 365 sin bloqueo de preservación.** El buzón inactivo se quita de cualquier directiva de retención de Microsoft 365 desbloqueada que se le haya aplicado. Sin embargo, la retención por juicio está habilitada en el buzón de correo recuperado para evitar la eliminación de contenido de buzón de correo en función de las directivas de retención de toda la organización que eliminan contenido anterior a una antigüedad específica. Puede mantener la retención por juicio o quitarla. Para obtener más información, vea [Create a Litigation Hold](create-a-litigation-hold.md).
 

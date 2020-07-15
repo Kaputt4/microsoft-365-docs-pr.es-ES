@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Obtenga información sobre cómo administrar las solicitudes de interesados de datos del Reglamento de protección general de datos (RGPD) de la UE con la herramienta de casos de DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815457"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126781"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de seguridad & cumplimiento
 
@@ -247,7 +247,7 @@ A continuación se muestran algunos ejemplos de las condiciones que puede Agrega
     
 - **Tipo de mensaje ( `kind` )** : especifica el tipo de elemento de correo electrónico que se buscará. Por ejemplo, puede usar la sintaxis `kind:email OR kind:im` para devolver solo mensajes de correo electrónico y conversaciones de Skype empresarial o chats uno a uno en Microsoft Teams. 
     
-- **Etiqueta de cumplimiento ( `compliancetag` )** : especifica una etiqueta asignada a un mensaje de correo electrónico o a un documento. Esta condición devuelve los elementos clasificados con una etiqueta específica. Las etiquetas se usan para clasificar el correo electrónico y los documentos para el gobierno de datos y aplicar las reglas de retención en función de la clasificación definida por la etiqueta. Esta es una condición útil para las investigaciones de los DSR porque su organización puede usar etiquetas para clasificar el contenido relacionado con la privacidad de los datos o que contiene datos personales o información confidencial. Para el valor de esta condición, use el nombre completo de la etiqueta o la primera parte del nombre de la etiqueta con un comodín. Para obtener más información, vea [información general sobre las etiquetas en Office 365](labels.md).
+- **Etiqueta de cumplimiento ( `compliancetag` )** : especifica una etiqueta asignada a un mensaje de correo electrónico o a un documento. Esta condición devuelve los elementos clasificados con una etiqueta específica. Las etiquetas se usan para clasificar el correo electrónico y los documentos para el gobierno de datos y aplicar las reglas de retención en función de la clasificación definida por la etiqueta. Esta es una condición útil para las investigaciones de los DSR porque su organización puede usar etiquetas para clasificar el contenido relacionado con la privacidad de los datos o que contiene datos personales o información confidencial. Para el valor de esta condición, use el nombre completo de la etiqueta o la primera parte del nombre de la etiqueta con un comodín. Para obtener más información, vea [información sobre las directivas de retención y las etiquetas de retención en Office 365](retention.md).
     
 Para obtener una lista y una descripción de todas las condiciones disponibles en la herramienta de casos de DSR, vea [condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions) en el artículo "consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido". 
   

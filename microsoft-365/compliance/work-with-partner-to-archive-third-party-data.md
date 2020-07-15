@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817045"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126659"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -499,7 +499,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
     
       - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Información general sobre las directivas de retención](retention-policies.md)
+      - [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md)
     
     - Habilitar el registro de auditoría de buzones de correo para el propietario, el delegado y el acceso de administrador al buzón de datos de terceros; consulte [Habilitar la auditoría de buzones de correo](enable-mailbox-auditing.md). Esto le permite auditar todas las actividades realizadas por cualquier usuario que tenga acceso al buzón de datos de terceros.
 
@@ -513,7 +513,7 @@ El paso siguiente es configurar los buzones de usuario para que admitan los dato
     
     - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Información general sobre las directivas de retención](retention-policies.md)
+    - [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md)
     
     Como ya se ha indicado, al poner los buzones en retención, puede determinar durante cuánto tiempo deben retenerse los elementos del origen de datos de terceros o puede optar por retener los elementos indefinidamente.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información acerca de cómo eliminar elementos en una carpeta de elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón se coloca en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817879"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127027"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en suspensión-ayuda de administración
 
@@ -52,7 +52,7 @@ La carpeta elementos recuperables de un buzón de Exchange Online existe para pr
 
 - El procedimiento descrito en este artículo no es compatible con los buzones inactivos. Esto se debe a que no puede volver a aplicar una retención (o una directiva de retención) a un buzón inactivo después de quitarlo. Cuando se quita una retención de un buzón inactivo, se cambia a un buzón de correo eliminado temporalmente y se elimina permanentemente de la organización una vez que lo procesa el Asistente para carpeta administrada.
 
-- No puede realizar este procedimiento para un buzón que se ha asignado a una directiva de retención que se ha bloqueado con un bloqueo de conservación. Esto se debe a que un bloqueo de conservación impide quitar o excluir el buzón de la Directiva de retención y deshabilitar el Asistente para carpeta administrada en el buzón. Para obtener más información acerca de las directivas de retención de bloqueo, consulte [usar bloqueo de conservación para cumplir con los requisitos normativos](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+- No puede realizar este procedimiento para un buzón que se ha asignado a una directiva de retención que se ha bloqueado con un bloqueo de conservación. Esto se debe a que un bloqueo de conservación impide quitar o excluir el buzón de la Directiva de retención y deshabilitar el Asistente para carpeta administrada en el buzón. Para obtener más información acerca de las directivas de retención de bloqueo, consulte [usar bloqueo de conservación para cumplir con los requisitos normativos](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 - Si un buzón no se encuentra en suspensión (o no tiene habilitada la recuperación de un único elemento), puede eliminar los elementos de la carpeta elementos recuperables. Para obtener más información acerca de cómo hacerlo, consulte [Buscar y eliminar mensajes de correo electrónico de la organización](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
@@ -224,7 +224,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 Una vez que haya identificado que un buzón está en suspensión debido a que se aplica una etiqueta de retención a una carpeta o a un elemento, puede usar la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento para buscar los elementos etiquetados mediante la condición de búsqueda ComplianceTag. Para obtener más información, vea la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
-Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas](labels.md).
+Para obtener más información acerca de las etiquetas, vea [información sobre las directivas de retención y las etiquetas de retención](retention.md).
 
  ### <a name="ediscovery-holds"></a>suspensiones de eDiscovery
   

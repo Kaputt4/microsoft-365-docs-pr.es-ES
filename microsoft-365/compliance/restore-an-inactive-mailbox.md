@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Obtenga información sobre cómo restaurar (o combinar) el contenido de un buzón inactivo en un buzón existente en Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ae3927aaaba64711cdcc3362399b109f228cb12
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 34965832c32bfd4139f4b9a54d3999313aace476
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818940"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127457"
 ---
 # <a name="restore-an-inactive-mailbox"></a>Restaurar un buzón inactivo
 
@@ -104,7 +104,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Use una retención por juicio o una directiva de retención de Microsoft 365 para conservar el contenido de los buzones inactivos.** Si desea conservar el estado de un buzón inactivo después de que se restaure, puede poner el buzón de destino en retención por [juicio](https://go.microsoft.com/fwlink/?linkid=856286) o aplicar una [Directiva de retención de Microsoft 365](retention-policies.md) antes de restaurar el buzón inactivo. Esto evitará la eliminación permanente de los elementos del buzón inactivo después de que se restauran en el buzón de destino.
+- **Use una retención por juicio o una directiva de retención de Microsoft 365 para conservar el contenido de los buzones inactivos.** Si desea conservar el estado de un buzón inactivo después de que se restaure, puede poner el buzón de destino en retención por [juicio](https://go.microsoft.com/fwlink/?linkid=856286) o aplicar una [Directiva de retención de Microsoft 365](retention.md) antes de restaurar el buzón inactivo. Esto evitará la eliminación permanente de los elementos del buzón inactivo después de que se restauran en el buzón de destino.
 
 - **Habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo.** Como los elementos del buzón de un buzón inactivo podrían ser antiguos, considere la posibilidad de habilitar la suspensión de retención en el buzón de destino antes de restaurar un buzón inactivo. Al colocar un buzón en suspensión de retención, no se procesará la directiva de retención que se le asigna hasta que se elimine la suspensión de retención o hasta que expire el período de suspensión de retención. De este modo, el propietario del buzón de destino tiene tiempo para administrar los mensajes antiguos del buzón inactivo. De lo contrario, la directiva de retención puede eliminar los elementos antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado en función de las opciones de retención configuradas para el buzón de destino. Para obtener más información, vea [poner un buzón de correo en suspensión de retención en Exchange Online](https://go.microsoft.com/fwlink/?linkid=856300).
 

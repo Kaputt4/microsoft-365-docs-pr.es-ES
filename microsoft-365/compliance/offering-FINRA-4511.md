@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 328aa52473fbb8b51ad580379c103e3759c2bff6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773761"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126701"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Regla de la autoridad reguladora del sector financiero (FINRA) 4511 (c) Estados Unidos
 
@@ -47,7 +47,7 @@ Los proveedores de software y los asociados con cargas de trabajo confidenciales
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Para evaluar el cumplimiento de Office 365 con la 4511 de la regla de FINRA (c), Microsoft ha mantenido una empresa líder de derecho independiente que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4, Covington valida que [Office 365 con bloqueo de preservación](retention-policies.md) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de mantenimiento, almacenar datos de una manera que les ayude a cumplir con los requisitos de FINRA para la retención de registros.
+Para evaluar el cumplimiento de Office 365 con la 4511 de la regla de FINRA (c), Microsoft ha mantenido una empresa líder de derecho independiente que se especializa en problemas normativos, Covington & Burling, LLP. En el informe resultante, el archivado en Microsoft Office 365, la retención de datos y el cumplimiento de reglas 17a-4, Covington valida que [Office 365 con bloqueo de preservación](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) incluye características de archivado que permiten a los clientes regulados, incluidos agentes de mantenimiento, almacenar datos de una manera que les ayude a cumplir con los requisitos de FINRA para la retención de registros.
 
 El archivado en Office 365 ayuda a conservar una amplia gama de datos, incluidos el correo electrónico, el correo de voz, los documentos compartidos, los mensajes instantáneos y los datos de terceros. En concreto, el archivado en Office 365 permite a los clientes establecer directivas de retención de mensajería globales o granulares para almacenar datos durante un período definido y más adelante en un formato no regrabable y no borrable.
 
@@ -66,7 +66,7 @@ El archivado en Office 365 ayuda a conservar una amplia gama de datos, incluidos
 
 [Archivado en Office 365, retención de datos y cumplimiento de la norma 17a-4 de la SEC](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 
-## <a name="how-to-implement"></a>Cómo implementar
+## <a name="how-to-implement"></a>Cómo se debe implementar
 
 - **Reglamento de servicios financieros**: mapa de cumplimiento de los principios clave de los Estados Unidos para la informática en la nube y los servicios en línea de Microsoft. [Más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - **Guía de cumplimiento y evaluación de riesgos**: Cree un modelo de gobierno para la evaluación de riesgos de los servicios en la nube de Microsoft y las notificaciones reglamentarias. [Más información](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)

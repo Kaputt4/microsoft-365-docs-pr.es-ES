@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo de los antiguos empleados convirtiendo el buzón en un buzón inactivo.
-ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: baa2daebe65142743df95762a3dcd780d5069c7f
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817579"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126751"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Información general sobre buzones inactivos
 
@@ -50,7 +50,7 @@ Además de la retención por juicio, el uso de la nueva característica Directiv
   
 - Puede estar basada en consultas para que conserve solo los elementos que coinciden con una consulta de búsqueda.
 
-Para obtener más información acerca de la configuración de directivas de retención, consulte [Overview of Retention Policies](retention-policies.md).
+Para obtener más información acerca de las directivas de retención, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
   
 Si usa una directiva de retención para crear un buzón inactivo, Microsoft 365 sigue procesando la Directiva de retención en el buzón inactivo. Esto significa que si la Directiva de retención está configurada para conservar y, a continuación, eliminar contenido, los elementos se moverán a la carpeta elementos recuperables cuando expire la duración de retención y, a continuación, se purguen del buzón inactivo. Si la Directiva de retención no está configurada para elementos eliminados, los elementos que el usuario no haya eliminado permanentemente (antes de que el buzón se haya inactivo) no se moverán a la carpeta elementos recuperables y se conservarán indefinidamente después de que el buzón de correo se vuelva inactivo. 
   
@@ -75,9 +75,9 @@ Para obtener más información sobre los casos y las suspensiones de eDiscovery,
 
 ## <a name="inactive-mailboxes-and-labels"></a>Buzones y etiquetas inactivos
 
-Las etiquetas le ayudan a clasificar los datos de correo electrónico de su organización para el gobierno y aplicar reglas de retención basadas en dicha clasificación. Una etiqueta puede aplicarse a un elemento de correo electrónico manualmente por los usuarios o automáticamente por los administradores, y un elemento de correo electrónico solo puede tener asignada una etiqueta única. Si un único elemento de correo electrónico del buzón de un usuario tiene una etiqueta asignada (y está configurada para conservar o conservar y, a continuación, elimina el elemento) y se elimina el buzón o la cuenta del usuario, el buzón se convierte en un buzón inactivo. Al igual que ocurre con las suspensiones de casos de eDiscovery, no se recomienda usar etiquetas para convertir un buzón en inactivo. En su lugar, se recomienda usar una directiva de retención por juicio o una directiva de retención. En el caso de las etiquetas, es posible que no se dé cuenta de que se ha aplicado una etiqueta a un elemento de correo electrónico y, a continuación, se ha realizado un buzón inactivo al eliminar la cuenta del usuario. 
+Las etiquetas de retención ayudan a clasificar los datos de correo electrónico de su organización para el control y aplicar reglas de retención basadas en dicha clasificación. Una etiqueta de retención puede aplicarse a un elemento de correo electrónico manualmente por los usuarios o automáticamente por los administradores, y un elemento de correo electrónico solo puede tener asignada una etiqueta única. Si un único elemento de correo electrónico del buzón de un usuario tiene una etiqueta asignada (y está configurada para conservar o conservar y, a continuación, elimina el elemento) y se elimina el buzón o la cuenta del usuario, el buzón se convierte en un buzón inactivo. De forma similar a las suspensiones de casos de exhibición de documentos electrónicos, no se recomienda usar etiquetas de retención para convertir un buzón en inactivo. En su lugar, se recomienda usar una directiva de retención por juicio o una directiva de retención. En el caso de las etiquetas de retención, es posible que no se dé cuenta de que se ha aplicado una etiqueta de retención a un elemento de correo electrónico y, a continuación, se ha realizado un buzón inactivo al eliminar la cuenta del usuario. 
   
-Para obtener más información acerca de las etiquetas, vea [información general sobre las etiquetas en Office 365](labels.md).
+Para obtener más información acerca de las directivas de retención y las etiquetas de retención, consulte [información sobre las directivas de retención y las etiquetas de retención en Office 365](retention.md).
   
 ## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Buzones de correo inactivos y archivos de expansión automática
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: El administrador puede obtener información sobre cómo importar archivos PST en masa a los buzones de correo de Microsoft 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envían a Microsoft.
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819090"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127347"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Usar el envío de unidades para importar los archivos PST de la organización
 
@@ -460,7 +460,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
     
   - Use las [herramientas de exhibición](search-for-content.md) de documentos electrónicos de Microsoft para buscar los datos. 
     
-  - Aplicar [directivas de retención de Microsoft 365](retention-policies.md) para controlar durante cuánto tiempo se conservan los datos y qué acciones se deben tomar una vez que expire el período de retención. 
+  - Aplicar [directivas de retención de Microsoft 365](retention.md) para controlar durante cuánto tiempo se conservan los datos y qué acciones se deben tomar una vez que expire el período de retención. 
     
   - Busque eventos relacionados con estos datos en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) . 
     

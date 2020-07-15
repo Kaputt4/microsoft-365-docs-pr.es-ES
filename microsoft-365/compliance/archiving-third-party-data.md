@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a buzones de correo de Microsoft 365.
-ms.openlocfilehash: a8dc69e7e4c7061e048fe49d1e51fd8867654454
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101641"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126639"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
@@ -73,7 +73,7 @@ Las tres herramientas de eDiscovery principales de Microsoft 365 son la búsqued
 
 ### <a name="retention-policies"></a>Directivas de retención
 
-Puede aplicar una [Directiva de retención](retention-policies.md) a los buzones de usuario para conservar y, a continuación, eliminar los datos de terceros (y el contenido de otros buzones) una vez que expire el período de retención. También puede usar directivas de retención para eliminar datos de terceros de una antigüedad determinada o desencadenar una revisión de disposición cuando expire el período de retención.
+Puede aplicar una [Directiva de retención](retention.md) a los buzones de usuario para conservar y, a continuación, eliminar los datos de terceros (y el contenido de otros buzones) una vez que expire el período de retención. También puede usar directivas de retención para eliminar datos de terceros de una antigüedad determinada o desencadenar una revisión de disposición cuando expire el período de retención.
 
 ### <a name="records-management"></a>Administración de registros
 

@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702564"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127017"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records.md) que se han eliminado automáticamente al final del período de retención. 
 
@@ -86,11 +86,11 @@ Al seleccionar **ver todas las disposiciones pendientes**, se le lleva a la pág
 
 ### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión de disposición
 
-Este es el flujo de trabajo básico para una revisión de disposición cuando una etiqueta de retención se publica y, a continuación, un usuario la aplica manualmente. Como alternativa, una etiqueta de retención configurada para una revisión de disposición se puede aplicar automáticamente al contenido.
+El siguiente diagrama muestra el flujo de trabajo básico para una revisión de disposición cuando una etiqueta de retención se publica y, a continuación, un usuario la aplica manualmente. Como alternativa, una etiqueta de retención configurada para una revisión de disposición se puede aplicar automáticamente al contenido.
   
 ![Gráfico que muestra el flujo de trabajo de disposición](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Desencadenar una revisión de disposición al final del período de retención es una opción de configuración que solo está disponible con una [etiqueta de retención](labels.md). Esta opción no está disponible en una directiva de retención.
+Desencadenar una revisión de disposición al final del período de retención es una opción de configuración que solo está disponible con una etiqueta de retención. Esta opción no está disponible para una directiva de retención. Para obtener más información acerca de estas dos soluciones de retención, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
   
 ![Configuración de retención de una etiqueta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -119,7 +119,7 @@ Todas las acciones de disposición se pueden auditar y el texto de justificació
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
 
-El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser elegible para el proceso de limpieza estándar descrito en [Cómo funciona una directiva de retención con el contenido en su lugar](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser apto para el proceso de limpieza estándar descrito en [Cómo funciona la configuración de retención con el contenido en su lugar](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Disposición de los registros
 

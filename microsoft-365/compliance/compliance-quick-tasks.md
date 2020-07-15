@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar a trabajar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732506"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126619"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar con el cumplimiento de Microsoft 365
 
@@ -83,7 +83,7 @@ Para obtener información paso a paso sobre cómo configurar y usar las etiqueta
 
 ## <a name="task-7-configure-a-retention-policy"></a>Tarea 7: configurar una directiva de retención
 
-Una [Directiva de retención](retention-policies.md) permite decidir de forma proactiva Si se conserva el contenido, se elimina el contenido o ambos, y, a continuación, se elimina el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las regulaciones de la industria y las directivas internas, así como para reducir el riesgo en caso de litigio o de una violación de la seguridad.
+Una [Directiva de retención](retention.md) permite decidir de forma proactiva Si se conserva el contenido, se elimina el contenido o ambos, y, a continuación, se elimina el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las regulaciones de la industria y las directivas internas, así como para reducir el riesgo en caso de litigio o de una violación de la seguridad.
 
 Cuando el contenido está sujeto a una directiva de retención, los usuarios pueden seguir editando y trabajando con el contenido como si no cambiara nada. El contenido se conserva en su ubicación original. Pero si alguien edita o elimina contenido que está sujeto a la Directiva de retención, se guarda una copia del contenido original en una ubicación segura en la que se conserva mientras la Directiva de retención para ese contenido está en vigor.
 
@@ -101,17 +101,21 @@ La plantilla de directiva de *información confidencial* predefinida le ayuda a 
 
 Para obtener instrucciones paso a paso para planear y configurar el cumplimiento de la comunicación, vea [Plan for Communication Compliance](communication-compliance-plan.md) y [Get Started with Communication Compliance](communication-compliance-configure.md). Para obtener información sobre las licencias de cumplimiento de comunicaciones, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, tenga en cuenta las siguientes soluciones de cumplimiento de Microsoft 365 para ayudarle a proteger la información confidencial y a detectar y actuar en riesgos de Insider adicionales.
 
 ### <a name="configure-retention-labels"></a>Configurar etiquetas de retención
 
-Mientras que las directivas de retención se aplican en el nivel de contenedor a ubicaciones como sitios de SharePoint y buzones de Exchange, las [etiquetas de retención](labels.md) permiten una identificación más específica de las directivas de retención y eliminación. Por ejemplo, en el nivel de mensaje de correo electrónico o documento que los usuarios finales pueden aplicar manualmente, además de la aplicación automática por los administradores. También puede aplicar una etiqueta de retención a una biblioteca de documentos, una carpeta o un conjunto de documentos en SharePoint, para que todos los documentos que se almacenan en esa ubicación hereden la etiqueta de retención predeterminada.
+Mientras que las directivas de retención se aplican en el nivel de contenedor a ubicaciones como sitios de SharePoint y buzones de Exchange, las [etiquetas de retención](retention.md#retention-labels) permiten una identificación más específica de las directivas de retención y eliminación. Por ejemplo, en el nivel de mensaje de correo electrónico o documento que los usuarios finales pueden aplicar manualmente, además de la aplicación automática por los administradores. También puede aplicar una etiqueta de retención a una biblioteca de documentos, una carpeta o un conjunto de documentos en SharePoint, para que todos los documentos que se almacenan en esa ubicación hereden la etiqueta de retención predeterminada.
 
 Además, las etiquetas de retención admiten la [Administración de registros](records-management.md) para marcar contenido como registro. En ese caso, la etiqueta no se puede cambiar o quitar, y el contenido no se puede modificar ni eliminar. Estas restricciones pueden ser necesarias para ayudar a su organización a cumplir con los requisitos normativos.
 
-Para obtener instrucciones paso a paso para crear y publicar etiquetas de retención, vea [crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md). Para obtener información sobre las licencias de administración de registros, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Para obtener instrucciones paso a paso para crear y publicar etiquetas de retención, consulte las siguientes instrucciones:
+- [Crear etiquetas de retención y aplicarlas a las aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)
+
+Para obtener información sobre las licencias de administración de registros, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identificación y definición de tipos de información confidencial
 

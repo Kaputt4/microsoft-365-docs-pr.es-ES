@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Una vez que un buzón de correo de Office 365 se convierte en inactivo, cambie la duración de la Directiva de retención de Office 365 o suspensión asignada al buzón inactivo.
-ms.openlocfilehash: 113a3af38d83eabef2e3022f47952c2db70f47a9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 675e6eb36f762a50c3caafce07d09fda9ba9d98e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818409"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126381"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 
@@ -60,9 +60,6 @@ Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,Litigat
 
 El valor de **True** para la propiedad **LitigationHoldEnabled** indica que el buzón inactivo está en retención por juicio. Si una conservación local, una retención de exhibición de documentos electrónicos o una directiva de retención de Microsoft 365 se coloca en un buzón inactivo, se muestra un GUID para la Directiva de retención o retención como el valor de la propiedad **InPlaceHolds** . Por ejemplo, a continuación se muestran los resultados de cinco buzones inactivos. 
   
-||
-|:-----|
-|
 ```text
 DisplayName           : Ann Beebe
 Name                  : annb
@@ -110,7 +107,7 @@ En la siguiente tabla se identifican los cinco tipos de retención que se usaron
 |Carol Olson  <br/> |Directiva de retención de 365 de Microsoft en el centro de cumplimiento de & de seguridad que se aplica a buzones específicos  <br/> |La propiedad *InPlaceHolds* contiene el GUID de la Directiva de retención de Microsoft 365 que se aplica al buzón inactivo. Puede decir que se trata de una directiva de retención que se aplica a buzones específicos, ya que el GUID comienza con el `mbx` prefijo. Si el GUID de la Directiva de retención aplicada al buzón inactivo comenzó con el `skp` prefijo, indicaría que la Directiva de retención se aplica a las conversaciones de Skype empresarial.  <br/><br/> Para identificar la Directiva de retención de Microsoft 365 que se aplica al buzón inactivo, ejecute el siguiente comando en el PowerShell del centro de cumplimiento de & de seguridad.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>Asegúrese de quitar el `mbx` `skp` prefijo o cuando ejecute este comando.  <br/> |
 |Abraham McMahon  <br/> |suspensión de casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento  <br/> |La propiedad *InPlaceHolds* contiene el GUID de la suspensión de casos de exhibición de documentos electrónicos que se coloca en el buzón inactivo. Puede decir que se trata de una suspensión de casos de exhibición de documentos electrónicos porque el GUID comienza por el `UniH` prefijo.  <br/> Puede usar el `Get-CaseHoldPolicy` cmdlet en el PowerShell del centro de cumplimiento de & de seguridad para obtener información sobre el caso de eDiscovery con el que está asociado la retención en el buzón inactivo. Por ejemplo, puede ejecutar el comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` para mostrar el nombre de la suspensión de mayúsculas y minúsculas que se encuentra en el buzón inactivo. Asegúrese de quitar el `UniH` prefijo al ejecutar este comando.  <br/><br/> Para identificar el caso de eDiscovery al que está asociado la retención en el buzón inactivo, ejecute los siguientes comandos.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Nota:** No se recomienda usar la retención de exhibición de documentos electrónicos para los buzones inactivos. Esto se debe a que los casos de eDiscovery están pensados para casos específicos y de tiempo limitado relacionados con problemas legales. En algún momento, es probable que finalice un caso legal y se quitarán las suspensiones asociadas al caso y se cerrará (o eliminará) el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y la retención se suelta o el caso de exhibición de documentos electrónicos se cierra o se elimina, el buzón inactivo se eliminará permanentemente. 
 
-Para obtener más información acerca de las directivas de retención de Microsoft 365, consulte [información general sobre las directivas de retención](retention-policies.md).
+Para obtener más información acerca de las directivas de retención de Microsoft 365, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Paso 2: cambiar la duración de retención para un buzón inactivo
 

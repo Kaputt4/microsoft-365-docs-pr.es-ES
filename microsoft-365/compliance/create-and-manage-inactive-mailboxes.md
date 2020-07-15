@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo eliminados mediante la característica buzones de correo inactivos en Office 365.
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023363"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127547"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Crear y administrar buzones inactivos
 
@@ -42,7 +42,7 @@ Microsoft 365 permite conservar el contenido de los buzones de correo eliminados
 
 - Si la retención por juicio o una directiva de retención (que está configurada para conservar o conservar y, a continuación, eliminar contenido) no se aplica a un buzón de correo antes de su eliminación, el contenido del buzón no se conservará ni se podrá detectar. Aun así, el buzón eliminado se puede recuperar en un plazo de 30 días a partir de su eliminación, pero el buzón junto con su contenido se eliminará permanentemente transcurrido dicho plazo, si no se recupera.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obtener más información acerca de las directivas de retención, vea [información general sobre las directivas de retención en Microsoft 365](retention-policies.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obtener más información acerca de las directivas de retención, consulte [información sobre las directivas de retención y las etiquetas de retención](retention.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Crear un buzón inactivo
 
@@ -56,9 +56,9 @@ Si ya se ha realizado una retención en un buzón o si ya se ha aplicado una dir
   
 Para conocer los procedimientos detallados para poner un buzón en retención por juicio o aplicar una directiva de retención, consulte:
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Introducción a las directivas de retención en Office 365](retention-policies.md)
+- [Obtenga información sobre las directivas de retención y las etiquetas de retención en Office 365](retention.md)
     
 > [!NOTE]
 > Para las retenciones por juicio y las directivas de retención, puede crear una retención indefinida o en una retención basada en tiempo. En una retención indefinida, el contenido del buzón inactivo se conservará siempre, hasta que se elimine la retención o hasta que se cambie la duración de la retención. Una vez quitada la retención o la directiva de retención (y siempre y cuando hayan pasado más de 30 días desde que el buzón se eliminara), el buzón inactivo se marcará para su eliminación permanente y su contenido se dejará de conservar o detectar. En una directiva de retención o retención basada en tiempo, se especifica la duración de la retención. Esta duración se establece para cada elemento, y se calcula a partir de la fecha en que un elemento de buzón se ha recibido o creado. Una vez que ha expirado la retención para un elemento de buzón, y ese elemento se ha movido a la carpeta Elementos recuperables del buzón inactivo o se encuentra en ella, el elemento se elimina permanentemente (purga) del buzón inactivo. 

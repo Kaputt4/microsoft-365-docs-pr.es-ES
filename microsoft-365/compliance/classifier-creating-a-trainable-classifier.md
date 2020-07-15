@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use clasificadores que se podrán entrenar cuando uno de los clasificadores integrados no satisfaga sus necesidades. Un clasificador de 365 de Microsoft es una herramienta que puede entrenar para que reconozca varios tipos de contenido proporcionándoles ejemplos para mirar. En este tema se muestra cómo crear un clasificador personalizado.
-ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 05ec9992fb4ec072403e193df3d7dbbbb8b1a96b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173512"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126361"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creación de un clasificador capacitado (versión preliminar)
 
@@ -63,19 +63,19 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 > [!TIP]
 > Si crea un sitio y una carpeta nuevos para los datos de inicialización, deje que se indexe al menos una hora para que esa ubicación se Indice antes de crear el clasificador que va a entrenar que usará esos datos de inicialización.
 
-3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y Abra **Microsoft 365 Compliance Center** o la clasificación de > **datos** del **centro de seguridad de Microsoft 365**
+3. Inicie sesión en el centro de cumplimiento de Microsoft 365 con el administrador de cumplimiento o con el rol de administrador de seguridad y Abra **Microsoft 365 Compliance Center** o la clasificación de datos del **centro de seguridad de Microsoft 365**  >  **Data classification**
 
 4. Elija la pestaña **clasificadores** que se puede entrenar.
 
 5. Elija **crear clasificador capacitado**.
 
-6. Rellene los valores apropiados para `Name`los campos `Description` y de la categoría de los elementos que desea que identifique este clasificador capacitado.
+6. Rellene los valores apropiados para los `Name` `Description` campos y de la categoría de los elementos que desea que identifique este clasificador capacitado.
 
-7. Escriba la dirección URL del sitio de SharePoint Online, la biblioteca y la carpeta exactas para el sitio de contenido semilla del paso 2. Elija `Add`.
+7. Escriba la dirección URL del sitio de SharePoint Online, la biblioteca y la carpeta exactas para el sitio de contenido semilla del paso 2. Elija `Add` .
 
-8. Revisa la configuración y elige `Create trainable classifier`.
+8. Revisa la configuración y elige `Create trainable classifier` .
 
-9. En un plazo de 24 horas, el clasificador con formación procesará los datos de inicialización y creará un modelo de predicción. El estado del clasificador es `In progress` mientras procesa los datos de inicialización. Cuando el clasificador termina de procesar los datos de inicialización, el `Need test items`estado cambia a.
+9. En un plazo de 24 horas, el clasificador con formación procesará los datos de inicialización y creará un modelo de predicción. El estado del clasificador es `In progress` mientras procesa los datos de inicialización. Cuando el clasificador termina de procesar los datos de inicialización, el estado cambia a `Need test items` .
 
 10. Ahora puede ver la página de detalles eligiendo el clasificador.
 
@@ -92,19 +92,19 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 > [!TIP]
 > Si crea un nuevo sitio y una carpeta para los datos de prueba, permita al menos una hora para indizar esa ubicación antes de crear el clasificador que va a formar parte de la información que usará esos datos de inicialización.
 
-13. Elija `Add items to test`.
+13. Elija `Add items to test` .
 
-14. Escriba la dirección URL exacta del sitio de SharePoint Online, la biblioteca y la carpeta para el sitio de contenido de prueba del paso 12. Elija `Add`.
+14. Escriba la dirección URL exacta del sitio de SharePoint Online, la biblioteca y la carpeta para el sitio de contenido de prueba del paso 12. Elija `Add` .
 
-15. Para finalizar el asistente, `Done`elija. El clasificador que se pueda entrenar tardará hasta una hora en procesar los archivos de prueba.
+15. Para finalizar el asistente, elija `Done` . El clasificador que se pueda entrenar tardará hasta una hora en procesar los archivos de prueba.
 
-16. Cuando el clasificador que se pueda entrenar termine de procesar los archivos de prueba, el estado de la página `Ready to review`detalles cambiará a. Si necesita aumentar el tamaño de la muestra de prueba, `Add items to test` elija y permita que el clasificador que se puede entrenar procese los elementos adicionales.
+16. Cuando el clasificador que se pueda entrenar termine de procesar los archivos de prueba, el estado de la página Detalles cambiará a `Ready to review` . Si necesita aumentar el tamaño de la muestra de prueba, elija `Add items to test` y permita que el clasificador que se puede entrenar procese los elementos adicionales.
 
 ![captura de pantalla de listo para revisar](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Elija `Tested items to review` Tab para revisar los elementos.
 
-18. Microsoft 365 presentará 30 elementos a la vez. Revise y, en el `We predict this item is "Relevant". Do you agree?` cuadro, `Yes` elija o `No` o `Not sure, skip to next item`. La precisión del modelo se actualiza automáticamente después de cada 30 elementos.
+18. Microsoft 365 presentará 30 elementos a la vez. Revise y, en el `We predict this item is "Relevant". Do you agree?` cuadro, elija `Yes` o `No` o `Not sure, skip to next item` . La precisión del modelo se actualiza automáticamente después de cada 30 elementos.
 
 ![cuadro revisar elementos](../media/classifier-trainable-review-detail.png)
 
@@ -112,18 +112,18 @@ Una vez que el clasificador que se puede entrenar haya procesado suficientes eje
 
 <!-- insert Analyze steps here-->
 
-20. Continuar con la revisión hasta que la precisión alcance al menos el 70 `Publish the classifier` % y `Ready to use`el estado sea.
+20. Continuar con la revisión hasta que la precisión alcance al menos el 70% y el `Publish the classifier` Estado sea `Ready to use` .
 
 ![precisión y lista para publicar](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publique el clasificador.
 
-22. Una vez publicado, el clasificador estará disponible como condición en etiquetado automático de [Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), [aplicar automáticamente una directiva de etiqueta de retención basada en una condición](labels.md#applying-a-retention-label-automatically-based-on-conditions) y en el cumplimiento de la [comunicación](communication-compliance.md).
+22. Una vez publicado, el clasificador estará disponible como condición en etiquetado automático de [Office con etiquetas de confidencialidad](apply-sensitivity-label-automatically.md), [aplicar automáticamente una directiva de etiqueta de retención basada en una condición](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) y en el cumplimiento de la [comunicación](communication-compliance.md).
 
 > [!CAUTION]
 > Una vez publicado un clasificador, no puede pasar por ningún entrenamiento adicional, así que asegúrese de que ha probado y revisado el mayor número de elementos posible para asegurarse de que la precisión sea lo más alta posible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
