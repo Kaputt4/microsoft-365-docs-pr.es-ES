@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819070"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127337"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -336,7 +336,7 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Microsoft 3
     
   - Usar las [herramientas eDiscovery](search-for-content.md) de Microsoft para buscar en los datos importados. 
     
-  - Usar [las directivas de retención de Microsoft 365](retention-policies.md) para controlar cuánto tiempo se conservan los datos importados y las acciones que deben realizarse cuando expire el período de retención. 
+  - Usar [las directivas de retención de Microsoft 365](retention.md) para controlar cuánto tiempo se conservan los datos importados y las acciones que deben realizarse cuando expire el período de retención. 
     
   - Buscar en el [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) eventos relacionados con el buzón que afectan a los datos importados. 
     

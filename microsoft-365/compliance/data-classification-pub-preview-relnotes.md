@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notas de la versión para clasificación de datos.
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327621"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127145"
 ---
 # <a name="data-classification-release-notes"></a>Notas de la versión de clasificación de datos
 
@@ -48,6 +48,6 @@ Hemos escuchado sus valiosos comentarios sobre la integración de OneDrive duran
 - [Introducción a la clasificación de datos (vista previa)](data-classification-overview.md)
 - [Ver actividad de la etiqueta (vista previa)](data-classification-activity-explorer.md)
 - [Ver contenido etiquetado (vista previa)](data-classification-content-explorer.md)
-- [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Etiquetas de retención](labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Obtenga más información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
