@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: Obtenga información sobre cómo usar la puntuación Complance y el administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: Obtenga información sobre cómo usar la puntuación de cumplimiento y el administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016372"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126556"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Usar la puntuación de cumplimiento y el administrador de cumplimiento para administrar acciones de mejora
 
 La puntuación de cumplimiento de Microsoft y el administrador de cumplimiento se pueden usar de forma conjunta para administrar mejoras relacionadas con las regulaciones de privacidad de datos, como el Reglamento de protección general de datos de la Unión Europea [(RGPD)](../compliance/gdpr.md), la [protección del consumidor de California Act CCPA)](../compliance/ccpa-faq.md), HIPAA-up (Act de Sanidad de Estados Unidos) y la ley de protección de datos de Brasil (LGPD). 
 
 En este artículo se proporcionan instrucciones sobre el uso de estas herramientas para fines de privacidad de datos.
+
+![Puntuación de cumplimiento y administrador de cumplimiento para administrar las acciones de mejora](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones. Debe evaluar la eficacia de estas recomendaciones en sus entornos de reglamentación antes de la implementación. Las recomendaciones del administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.

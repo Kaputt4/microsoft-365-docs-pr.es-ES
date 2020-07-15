@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854357"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126609"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar los elementos confidenciales con Microsoft 365
 
@@ -98,6 +98,8 @@ Los datos también se desplazan a lo largo del tiempo a medida que se procesan, 
 Para tratar las regulaciones de privacidad de datos, no puede confiar en nociones generales de dónde cree que pueden existir datos personales, ya sea ahora o en el futuro. Las regulaciones de privacidad de datos requieren que las organizaciones demuestren que saben donde los datos personales están de manera continua. Esto hace que sea importante tomar una instantánea inicial de todos los orígenes de datos para poder almacenar información personal, incluido el entorno 365 de Microsoft y establecer mecanismos para la supervisión y detección continuas.
 
 Si aún no ha evaluado su disponibilidad general y los riesgos asociados con las regulaciones de privacidad de datos, use el siguiente marco de 3 pasos para empezar. 
+
+![Pasos para evaluar su disponibilidad general y los riesgos asociados con las regulaciones de privacidad de datos](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >Este artículo y su contenido no están destinados a tener en lugar los servicios de asesoría legal. Solo proporciona una guía básica y vínculos a herramientas que pueden ser de ayuda en las primeras etapas de la evaluación.
@@ -178,7 +180,7 @@ Las organizaciones que están sujetas a otras regulaciones de privacidad de dato
 
 La evaluación de RGPD consta de las siguientes secciones:
 
-| | |
+| Section | Descripción |
 |:-------|:-----|
 | Gobierno | <ol><li>¿Su Directiva de privacidad indica explícitamente qué información de datos se está procesando? </li><li>¿Se ejecutan de forma regular evaluaciones de impacto de privacidad (PIA)? </li><li> ¿Utiliza una herramienta para administrar la información personal (PI)? </li><li> ¿Tiene autoridad legal para realizar negocios con datos de PI en un individuo determinado? ¿Realiza un seguimiento de los datos de consentimiento? </li><li> ¿Realiza un seguimiento, la implementación y la administración de controles de auditoría? ¿Supervisa si hay pérdidas de datos? </li></ol>|
 | Eliminación y notificación | <ol><li>¿Proporciona instrucciones explícitas sobre cómo se puede obtener acceso a los datos de los usuarios? </li><li> ¿Tiene procesos documentados en su ubicación para controlar el consentimiento de cancelación? </li><li> ¿Tiene un proceso de eliminación automatizado de datos? </li><li>   ¿Tiene un proceso para validar la identidad al participar con un cliente? </li></ol>|
@@ -212,7 +214,7 @@ Consulte estos artículos para obtener más información:
 - [Tipos de información confidencial personalizados](../compliance/custom-sensitive-info-types.md)
 - [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](../compliance/create-a-custom-sensitive-information-type.md)
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Crear tipos personalizados de información confidencial con clasificación exacta de coincidencia de datos](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorador de contenido
 

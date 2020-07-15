@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Implemente las características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844697"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126461"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la normativa de privacidad de datos
 
@@ -33,6 +33,8 @@ Estos controles se encuentran en las siguientes áreas de solución:
 - Prevención de pérdida de datos (DLP)
 - Cifrado de mensajes de Office (OME)
 - Controles de acceso de Microsoft Teams y sitios
+
+![Servicios clave para proteger la información personal sujeta a la normativa de privacidad de datos](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las regulaciones de privacidad de datos. Para obtener una lista completa de las características de seguridad de Microsoft 365, consulte la [documentación de seguridad 365 de Microsoft](https://docs.microsoft.com/microsoft-365/security/). Para obtener una lista completa de las características de cumplimiento de Microsoft 365, consulte la [documentación de cumplimiento de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/).
@@ -94,7 +96,7 @@ Complete estas actividades antes de implementar cualquiera de las capacidades ba
 
 1. Comprenda lo siguiente:
    - **Requisitos empresariales.** Establezca los motivos empresariales para aplicar las etiquetas de confidencialidad en su empresa. Por ejemplo, sus requisitos de privacidad de datos para la protección de la información.
-   - **Capacidades de la etiqueta de confidencialidad.** El etiquetado de sensibilidad puede ser complejo, así que asegúrese de leer la documentación de las [etiquetas de confidencialidad](../compliance/sensitivity-labels.md) antes de empezar.
+   - **Capacidades de la etiqueta de confidencialidad.** La etiqueta de confidencialidad puede llegar a ser compleja, por lo que debe asegurarse de leer la documentación de las [etiquetas de confidencialidad](../compliance/sensitivity-labels.md) antes de empezar.
    - **Puntos clave que se deben recordar** Las etiquetas de confidencialidad se administran en el centro de administración de cumplimiento de Microsoft, pero las opciones de aplicación y de destino varían significativamente.
       - Hay etiquetas de confidencialidad para sitios, grupos y equipos en el nivel de contenedor (la configuración no se aplica al contenido dentro del contenedor). Se publican para los usuarios y grupos que los aplican cuando se aprovisiona un sitio, grupo o equipo.
       - Hay etiquetas de sensibilidad para el contenido activo. También se publican en usuarios o grupos, que los aplican manualmente, o se aplican automáticamente cuando:
@@ -102,14 +104,14 @@ Complete estas actividades antes de implementar cualquiera de las capacidades ba
         - Se ha enviado un correo electrónico y está redactado.
       - Hay etiquetas de confidencialidad para la aplicación automática en archivos en reposo en SharePoint y OneDrive, además de los mensajes de correo electrónico en tránsito a través de Exchange. Estos se dirigen a todos los sitios o a unos específicos y se aplican automáticamente a los archivos en reposo en estos entornos.
 
-2. Racionalizar el etiquetado de sensibilidad actual con métodos pasados o alternativos
+2. Racionalizar la etiqueta de confidencialidad actual con métodos anteriores o alternativos
 
    - Azure Information Protection
 
       Es posible que el esquema de etiquetado de sensibilidad actual deba reconciliarse con cualquier implementación existente de etiquetas de [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) .
    - OME
 
-      Si está pensando en usar el etiquetado de sensibilidad moderno para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes como OME están en su ubicación, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de ellos. Consulte [Office 365 Message Encryption New Capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), que incluye una tabla que compara la protección moderna de tipo de etiqueta de confidencialidad con la protección basada en OME.
+      Si está pensando en usar la etiqueta de confidencialidad moderna para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes como OME están en su ubicación, pueden coexistir, pero debe comprender los escenarios en los que se deben aplicar ambos. Consulte [Office 365 Message Encryption New Capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), que incluye una tabla que compara la protección moderna de tipo de etiqueta de confidencialidad con la protección basada en OME.
 
 3. Planee la integración en un esquema más amplio de protección de la información. Sobre la coexistencia con OME, se pueden usar las etiquetas de confidencialidad actuales como funciones de Microsoft 365 Data Loss Prevention (DLP) y Microsoft Cloud App Security. Consulte las [etiquetas de confidencialidad y Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) para lograr los objetivos de protección de la información relacionada con la privacidad de los datos.
 
@@ -174,7 +176,7 @@ La capacidad de aplicar automáticamente etiquetas de confidencialidad al conten
 - No es necesario depender de los usuarios para clasificar todo el contenido correctamente.
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
 
-El etiquetado automático permite recomendar una etiqueta a los usuarios, así como aplicar automáticamente una etiqueta. Pero en ambos casos, el usuario decide si acepta o rechaza la etiqueta, para ayudar a garantizar el etiquetado correcto del contenido.
+La etiqueta automática admite la recomendación de una etiqueta a los usuarios, así como la aplicación automática de una etiqueta. Pero en ambos casos, el usuario decide si acepta o rechaza la etiqueta, para ayudar a garantizar el etiquetado correcto del contenido.
 
 Este etiquetado del lado del cliente tiene un retraso mínimo para los documentos porque la etiqueta se puede aplicar incluso antes de que se guarde el documento. Sin embargo, no todas las aplicaciones cliente son compatibles con el etiquetado automático. Esta funcionalidad es compatible con el cliente de etiquetación unificada de Azure Information Protection y [algunas versiones de aplicaciones de Office](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -235,7 +237,7 @@ Planee las directivas de DLP para:
 
 - Administración de directivas DLP en curso, que requiere que alguien de la organización opere y ajuste las directivas para los cambios en los tipos de información confidencial, las etiquetas de retención, las regulaciones y las directivas de cumplimiento.
 
-Aunque las etiquetas de confidencialidad no se pueden usar en las condiciones de la Directiva de DLP, es posible que se puedan obtener acceso a determinados escenarios de protección para evitar el acceso con las etiquetas de confidencialidad que se aplican automáticamente en función de los tipos de información confidencial. Si se dispone de un etiquetado de sensibilidad sólido, tenga en cuenta si DLP debe usarse para aumentar la protección debido a:
+Aunque las etiquetas de confidencialidad no se pueden usar en las condiciones de la Directiva de DLP, es posible que se puedan obtener acceso a determinados escenarios de protección para evitar el acceso con las etiquetas de confidencialidad que se aplican automáticamente en función de los tipos de información confidencial. Si la etiqueta de confidencialidad es sólida, tenga en cuenta si debe usarse DLP para aumentar la protección porque:
 
   - DLP puede impedir el uso compartido de archivos. Las etiquetas de confidencialidad solo pueden impedir el acceso.
 
@@ -279,7 +281,7 @@ Las etiquetas de confidencialidad pueden funcionar junto con DLP para proporcion
 3. Se establece una estrategia general para abordar los requisitos y proteger y controlar las zonas Wi-Fi de privacidad de datos.
 4. Se ha puesto en marcha un plan de acción escalonada para tratar la estrategia de control de privacidad de datos.
 
-Una vez que se determinan estos elementos, puede usar tipos de información confidencial, su taxonomía de etiquetado de confidencialidad y directivas de DLP. En esta figura se muestra un ejemplo.
+Una vez que se determinan estos elementos, puede usar los tipos de información confidencial, la taxonomía de etiquetado de confidencialidad y las directivas de DLP en conjunto. En esta figura se muestra un ejemplo.
 
 ![Ejemplo de etiquetas de sensibilidad que funcionan con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

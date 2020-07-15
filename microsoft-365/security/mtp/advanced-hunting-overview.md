@@ -18,11 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049637"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138283"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -43,7 +44,7 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 
 | Objetivo de aprendizaje | Descripción | Recurso |
 |--|--|--|
-| **Conozca el idioma** | La búsqueda avanzada está basada en el [lenguaje de consulta de Kusto](https://docs.microsoft.com/azure/kusto/query/) y admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
+| **Conozca el idioma** | La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/)y admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
 | **Obtener información sobre cómo usar los resultados de la consulta** | Obtenga información sobre los gráficos y las distintas formas en que puede ver o exportar los resultados. Descubra cómo puede ajustar rápidamente las consultas y profundizar para obtener información más completa. | [Trabajar con resultados de consulta](advanced-hunting-query-results.md) |
 | **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Esto le ayudará a determinar dónde buscar datos y cómo crear las consultas. | [Referencia del esquema](advanced-hunting-schema-tables.md) |
 | **Aprovechar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | - [Usar consultas compartidas](advanced-hunting-shared-queries.md)<br>- [Ir a la búsqueda](advanced-hunting-go-hunt.md) |
@@ -53,6 +54,11 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 ## <a name="get-access"></a>Obtener acceso
 Para usar características de búsqueda avanzada u otras capacidades de [Microsoft Threat Protection](microsoft-threat-protection.md) , debe tener asignado un rol apropiado en Azure ad. Tenga en cuenta que el acceso a los datos de los extremos se ve influenciado por la configuración de control de acceso basada en roles en ATP de Microsoft defender. [Obtener información acerca de la administración del acceso a protección contra amenazas de Microsoft](mtp-permissions.md)
 
+## <a name="data-freshness-and-update-frequency"></a>Actualización de datos y frecuencia de actualización
+Los datos de búsqueda avanzada pueden clasificarse en dos tipos distintos, cada uno de ellos consolidado de manera diferente.
+
+- **Datos de eventos o actividades** : se rellenan tablas sobre alertas, eventos de seguridad, eventos del sistema y evaluaciones rutinarias. La búsqueda avanzada recibe estos datos casi inmediatamente después de que los sensores que los recopilan los transmitan correctamente a los servicios en la nube correspondientes. Por ejemplo, puede empezar a consultar datos de eventos de sensores saludables en estaciones de trabajo o controladores de dominio casi inmediatamente después de que estén disponibles en Microsoft defender ATP y Azure ATP.
+- **Datos de entidad** : rellena tablas con información consolidada acerca de los usuarios y los dispositivos. Estos datos proceden de orígenes de datos relativamente estáticos, como entradas de Active Directory y fuentes dinámicas, como registros de eventos. Para proporcionar datos nuevos, las tablas se actualizan cada 15 minutos con cualquier información nueva, agregando filas que puede que no se llenen completamente. Cada 24 horas, los datos se consolidan para insertar un registro que contenga el conjunto de datos más reciente y completo sobre cada entidad.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)

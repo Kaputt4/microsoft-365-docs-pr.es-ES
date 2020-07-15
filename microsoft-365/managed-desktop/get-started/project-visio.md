@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: c8690db17c71fd5ce604fd9165fee7e54a41c639
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022101"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126832"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft
 
@@ -28,26 +28,16 @@ Los administradores deben comprobar que cumplen estos requisitos previos:
 - **Portal de empresa** : el portal de empresa debe estar disponible en el espacio empresarial para que los usuarios instalen estas aplicaciones. Si el portal de la empresa no está implementado en el espacio empresarial, consulte [Company Portal](company-portal.md).
 
 ## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Implementación de Project y Visio para dispositivos de escritorio administrados por Microsoft
-Después de enviar su solicitud de soporte técnico, el escritorio administrado de Microsoft creará tres grupos de Azure AD y tres implementaciones de aplicaciones a través de Microsoft Intune para implementar las aplicaciones en su espacio empresarial.  
+Microsoft Managed Desktop agregará Microsoft Project y Microsoft Visio como dos aplicaciones Win32 en Microsoft Intune. También se crean dos grupos en Azure Active Directory que se asignarán a la aplicación correspondiente con el propósito "disponible". 
 
-**Para implementar Project y Visio**
-1. **Archivar una solicitud de soporte técnico** Los administradores de TI deben presentar una solicitud de soporte técnico para que estas aplicaciones estén disponibles para los usuarios. Para obtener información sobre cómo ponerse en contacto con el escritorio administrado de Microsoft, consulte [soporte de administración para escritorio administrado de Microsoft](../working-with-managed-desktop/admin-support.md).
-2. **Asignar usuarios a los nuevos grupos de Azure ad** Microsoft Managed Desktop creará 3 grupos de Azure AD en el espacio empresarial y tres implementaciones de aplicaciones correspondientes. Los administradores de TI deben asignar los usuarios a los grupos adecuados.
-
->[!NOTE]
->Asigne usuarios a solo uno de estos grupos de Azure AD. 
+**Para implementar Project y Visio** Agregue el usuario al grupo adecuado y la aplicación estará disponible en el portal de la empresa. La sincronización puede tardar unos minutos, pero los usuarios pueden instalar las aplicaciones desde el portal de la empresa. 
 
 Nombre de grupo de Azure AD | ¿Qué usuarios va a asignar?   
  --- | ---
 Espacio de trabajo moderno: Project_Install de Office | Usuarios que necesitan Project
 Espacio de trabajo moderno: Visio_Install de Office | Usuarios que necesitan Visio
 
-Una vez asignada a estos grupos, las aplicaciones estarán disponibles en el portal de la empresa. La sincronización puede tardar unos minutos, pero los usuarios pueden instalar las aplicaciones desde el portal de la empresa. 
-
 ## <a name="communicate-changes"></a>Comunicar los cambios
-Es importante que los administradores de ti permitan a sus usuarios saber cómo instalar Project y Visio. Esto incluye: 
+Es importante que los administradores de ti permitan a sus usuarios saber cómo instalar Project y Visio. Incluye lo siguiente: 
 - Notificar a los usuarios cuando estas aplicaciones están disponibles para ellos. 
 - Instrucciones sobre cómo instalar estas aplicaciones desde el portal de la empresa.
-
->[!NOTE]
->Los usuarios deben cerrar todas las aplicaciones de Office antes de instalar Microsoft Project o Microsoft Visio desde el portal de empresa. 
