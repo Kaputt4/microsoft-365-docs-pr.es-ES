@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la retención controlada por eventos
+title: Iniciar la retención cuando se produzca un evento
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: 15330c5be34d0cd482b83b4aab5f229cecf2a447
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068129"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126863"
 ---
-# <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
+# <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
@@ -44,12 +44,13 @@ Ejemplos para usar la retención controlada por eventos:
 La retención controlada por eventos suele usarse como parte de un proceso de administración de registros. Esto quiere decir que:
   
 - Las etiquetas basadas en eventos también suelen clasificar contenido como registros. Para más información, vea [Información sobre registros](records.md).
-    
+
 - Un documento clasificado como registro, pero cuyo desencadenador de eventos aún no se produjo, se conserva de manera indefinida (los registros no se pueden eliminar de forma permanente), hasta que un evento desencadene el período de retención del documento.
     
 - Las etiquetas de retención basadas en eventos suelen desencadenar una revisión de disposición al finalizar el período de retención, para que un administrador de registros pueda revisar de forma manual el contenido y eliminarlo. Para obtener más información, vea [ Eliminación de contenido](disposition.md).
     
-Una etiqueta de retención basada en un evento tiene las mismas funciones que cualquier etiqueta de retención en Microsoft 365. Para obtener más información, consulte la [información sobre las etiquetas de retención](labels.md).
+
+Una etiqueta basada en un evento tiene las mismas funciones que cualquier etiqueta de retención en Microsoft 365. Para obtener más información, vea [Información sobre las etiquetas y directivas de retención](retention.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Información sobre la relación entre tipos de evento, etiquetas, eventos e id. de activo
 
@@ -114,7 +115,10 @@ Después de seleccionar un tipo de evento y guardar la etiqueta de retención, e
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Paso 3: Publicar o aplicar automáticamente las etiquetas de retención basadas en eventos
 
-Al igual que cualquier etiqueta de retención, tiene que [publicar o aplicar automáticamente](create-retention-labels.md) una etiqueta basada en eventos, para que se pueda aplicar a documentos o correos electrónicos.
+Al igual que las etiquetas de retención, debe publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique de forma manual o automática al contenido:
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
+
 
 > [!NOTE]
 > Si selecciona una etiqueta de retención basada en eventos en la pestaña **Administración de registros** > **Plan de archivos** o **Gobierno de datos** > **Etiquetas**, el botón **Aplicar automáticamente una etiqueta** no está disponible.
