@@ -283,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: Configurar una directiva de archivo y eliminación para buzones de correo
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Conservar datos
+    - name: Retener y eliminar datos
       items:
-        - name: Información sobre las directivas de retención
-          href: retention-policies.md
-        - name: Crear y configurar directivas de retención
+        - name: Obtener información sobre la retención
+          items:
+            - name: Etiquetas y directivas de retención
+              href: retention.md
+            - name: Retención para SharePoint y OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Retention para Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Retention para Exchange
+              href: retention-policies-exchange.md
+        - name: Empezar a usar la retención
+          href: get-started-with-retention.md
+        - name: Crear directivas de retención
           href: create-retention-policies.md
-        - name: Retención para SharePoint y OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Retention para Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Retention para Exchange
-          href: retention-policies-exchange.md
-        - name: Plan de archivos
+        - name: Usar plan de archivos
           href: file-plan-manager.md
-        - name: Obtenga información sobre las etiquetas de retención
-          href: labels.md
-        - name: 'Crear, publicar y aplicar automáticamente etiquetas de retención'
-          href: create-retention-labels.md
+        - name: Crear etiquetas de retención y aplicarlas en aplicaciones
+          href: create-apply-retention-labels.md
+        - name: Aplicar una etiqueta de retención automáticamente al contenido
+          href: apply-retention-labels-automatically.md
         - name: Cumplir con la norma 17a-4 de la SEC
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Usar PowerShell para crear y publicar etiquetas de retención
+        - name: Crear etiquetas de retención con PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Retención basada en eventos
-          href: event-driven-retention.md
-        - name: Retención automática basada en eventos
-          href: automate-event-driven-retention.md
-        - name: Administrar el ciclo de vida de los documentos de SharePoint
-          href: auto-apply-retention-labels-scenario.md
+        - name: Usar la retención basada en eventos
+          items:
+            - name: Iniciar la retención cuando se produzca un evento
+              href: event-driven-retention.md
+            - name: Retención automática basada en eventos
+              href: automate-event-driven-retention.md
+            - name: Administrar el ciclo de vida de los documentos de SharePoint
+              href: auto-apply-retention-labels-scenario.md
     - name: Eliminación de datos
       href: disposition.md
     - name: Administrar buzones inactivos
@@ -345,34 +351,6 @@
           href: records-management.md
         - name: Registros
           href: records.md
-        - name: Plan de archivos
-          items:
-            - name: Administrar etiquetas de retención
-              href: file-plan-manager.md
-            - name: Obtenga información sobre las etiquetas de retención
-              href: labels.md
-            - name: Crear y publicar etiquetas de retención
-              href: create-retention-labels.md
-            - name: Usar PowerShell para crear y publicar etiquetas de retención a escala
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: Ver el uso de etiquetas con el análisis de etiquetas
-              href: label-analytics.md
-            - name: Ver la actividad de etiquetas de documentos
-              href: view-label-activity-for-documents.md
-            - name: Ver los informes de gobierno de datos
-              href: view-the-data-governance-reports.md
-        - name: Eventos
-          items:
-            - name: Retención basada en eventos
-              href: event-driven-retention.md
-            - name: Retención automática basada en eventos
-              href: automate-event-driven-retention.md
-        - name: Eliminación
-          href: disposition.md
-        - name: Más información sobre la administración de registros
-          items:
-            - name: Ver vídeos sobre la administración de registros
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: Administrar eDiscovery
   items:
     - name: eDiscovery en Microsoft 365
