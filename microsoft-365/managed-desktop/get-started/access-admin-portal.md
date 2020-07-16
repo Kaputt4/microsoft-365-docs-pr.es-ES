@@ -1,0 +1,39 @@
+---
+title: Acceso al portal de administración
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
+ms.service: m365-md
+ms.author: jaimeo
+author: jaimeo
+ms.prod: microsoft-365-enterprise
+ms.topic: article
+audience: ITPro
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146276"
+---
+# <a name="access-the-admin-portal"></a><span data-ttu-id="dfe78-103">Acceso al portal de administración</span><span class="sxs-lookup"><span data-stu-id="dfe78-103">Access the admin portal</span></span>
+
+<span data-ttu-id="dfe78-104">La puerta de enlace al servicio de escritorio administrado de Microsoft es el portal de Microsoft [Azure](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="dfe78-104">Your gateway to the Microsoft Managed Desktop service is the Microsoft [Azure portal](https://portal.azure.com).</span></span> <span data-ttu-id="dfe78-105">Para obtener más información sobre el uso y la personalización de la experiencia del portal de Azure en general, consulte la [documentación de Azure portal](https://docs.microsoft.com/azure/azure-portal/).</span><span class="sxs-lookup"><span data-stu-id="dfe78-105">For more about using and customizing your Azure portal experience generally, see the [Azure portal documentation](https://docs.microsoft.com/azure/azure-portal/).</span></span> 
+
+<span data-ttu-id="dfe78-106">La cuenta administrativa necesita permisos específicos para poder obtener acceso al portal de administración de escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-106">Your administrative account needs specific permissions in order to access the Microsoft Managed Desktop Admin portal.</span></span> <span data-ttu-id="dfe78-107">Puede administrar el acceso de administrador a estas características dentro de su organización mediante el control de acceso basado en roles (RBAC).</span><span class="sxs-lookup"><span data-stu-id="dfe78-107">You can manage admin access to these features within your organization by using Role-based Access Control (RBAC).</span></span> <span data-ttu-id="dfe78-108">Para obtener más información sobre los roles de Azure Active Directory, consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="dfe78-108">For more information about Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span></span>
+
+<span data-ttu-id="dfe78-109">Asigne a sus cuentas de usuario de administrador cualquiera de las siguientes funciones para garantizar el acceso:</span><span class="sxs-lookup"><span data-stu-id="dfe78-109">Assign your admin user accounts any of the following roles to ensure access:</span></span>
+
+|<span data-ttu-id="dfe78-110">Rol de Azure AD</span><span class="sxs-lookup"><span data-stu-id="dfe78-110">Azure AD role</span></span>  |<span data-ttu-id="dfe78-111">Permisos de escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="dfe78-111">Microsoft Managed Desktop permissions</span></span>  |
+|---------|---------|
+|<span data-ttu-id="dfe78-112">Administrador global</span><span class="sxs-lookup"><span data-stu-id="dfe78-112">Global Administrator</span></span>     | <span data-ttu-id="dfe78-113">Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-113">Admins with this role will have **read and write permissions** to all features in the Microsoft Managed Desktop Admin portal.</span></span>         |
+|<span data-ttu-id="dfe78-114">Lector global</span><span class="sxs-lookup"><span data-stu-id="dfe78-114">Global Reader</span></span>     | <span data-ttu-id="dfe78-115">Los administradores con este rol tendrán **permisos de solo lectura** para todas las características del portal de administración de escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-115">Admins with this role will have **read-only permissions** to all features in the Microsoft Managed Desktop Admin portal.</span></span>         |
+|<span data-ttu-id="dfe78-116">Administrador de servicios de Intune</span><span class="sxs-lookup"><span data-stu-id="dfe78-116">Intune Service Administrator</span></span>     |  <span data-ttu-id="dfe78-117">Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-117">Admins with this role will have **read and write permissions** to all features in the Microsoft Managed Desktop Admin portal.</span></span>       |
+|<span data-ttu-id="dfe78-118">Administrador de soporte de servicio</span><span class="sxs-lookup"><span data-stu-id="dfe78-118">Service Support Administrator</span></span>     | <span data-ttu-id="dfe78-119">Los administradores con este rol tendrán **permisos de lectura y escritura** para todas las características del portal de administración de escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-119">Admins with this role will have **read and write permissions** to all features in the Microsoft Managed Desktop Admin portal.</span></span>         |
+
+> [!IMPORTANT]
+> <span data-ttu-id="dfe78-120">Sólo el rol de administrador global tiene los permisos necesarios para *inscribir* a su organización en el escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-120">Only the Global Administrator role has the necessary permissions to *enroll* your organization in Microsoft Managed Desktop.</span></span> <span data-ttu-id="dfe78-121">Tenga en cuenta que los roles de Azure Active Directory proporcionarán privilegios de cuentas de usuario en una amplia variedad de servicios de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dfe78-121">Be aware that Azure Active Directory roles will give user accounts privileges across a variety of Microsoft services.</span></span> <span data-ttu-id="dfe78-122">Una vez finalizada la inscripción con el escritorio administrado de Microsoft, siempre debe usar el rol con los privilegios *mínimos* necesarios para llevar a cabo las demás tareas.</span><span class="sxs-lookup"><span data-stu-id="dfe78-122">After completing enrollment with Microsoft Managed Desktop, you should always use the role with the *least* privileges necessary to accomplish your other tasks.</span></span>
+
+## <a name="assigning-roles-to-administrators"></a><span data-ttu-id="dfe78-123">Asignación de funciones a los administradores</span><span class="sxs-lookup"><span data-stu-id="dfe78-123">Assigning roles to administrators</span></span>
+
+<span data-ttu-id="dfe78-124">Si necesita ayuda para asignar roles de Azure Active Directory, consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="dfe78-124">If you need help assigning Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span></span>
