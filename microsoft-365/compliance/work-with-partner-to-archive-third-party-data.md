@@ -51,7 +51,7 @@ En la siguiente ilustración y descripción se explica cómo funciona el proceso
     
 3. El conector del asociado se conecta al servicio de Azure en Microsoft 365 mediante el servicio Web Exchange (EWS) a través de un punto final conocido.
     
-4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
+4. Los elementos se importan al buzón de un usuario específico o a un buzón global de datos de terceros. Que un elemento se importe al buzón de un usuario específico o al buzón de datos de terceros depende de los criterios siguientes:
     
    1. **Elementos que tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector del asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico en Office 365, el elemento se copia en la carpeta **depuraciones** de la carpeta elementos recuperables del usuario. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de eDiscovery para buscar elementos en la carpeta depuraciones.
     

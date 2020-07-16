@@ -75,7 +75,7 @@ Para obtener instrucciones paso a paso para configurar la administración del ac
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>Tarea 6: clasificar y proteger los datos confidenciales
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
 Las [etiquetas de confidencialidad](sensitivity-labels.md) le permiten clasificar y proteger los datos de su organización, al tiempo que garantizan que no se obstaculice la productividad del usuario y su capacidad de colaboración. Usar las etiquetas de confidencialidad para exigir el cifrado y las restricciones de uso aplique los marcadores visuales y proteja la información entre plataformas y dispositivos, local y en la nube.
 

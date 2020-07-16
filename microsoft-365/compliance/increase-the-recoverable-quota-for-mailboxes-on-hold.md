@@ -82,9 +82,9 @@ El primer paso consiste en crear una etiqueta de retención personalizada (denom
   
 ## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>Paso 2: crear una nueva Directiva de retención de Exchange para buzones en retención
 
-The next step is to create a new retention policy and add retention tags to it, including the Recoverable Items RPT that you created in Step 1. This new policy will be applied to mailboxes on hold in the next step. 
+El siguiente paso consiste en crear una directiva de retención y agregarle etiquetas de retención, incluida la RPT de Elementos recuperables que creó en el paso 1. Esta nueva directiva se aplicará a los buzones de correo en suspensión en el paso siguiente.  
   
-Before you create the new retention policy, determine the additional retention tags that you want to add. For a list of the retention tags that are added to the Default MRM Policy and for information about creating new retention tags, see the following:
+Antes de crear la directiva de retención, determine las etiquetas de retención adicionales que quiere agregar. Para obtener una lista de las etiquetas de retención que se agregan a la directiva de MRM predeterminada y para obtener información sobre cómo crear etiquetas de retención, vea lo siguiente:
   
 - [Directiva de retención predeterminada de Exchange Online ](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
@@ -106,7 +106,7 @@ Puede usar el EAC o Exchange Online PowerShell para crear una directiva de reten
     
     ![Seleccione la etiqueta de retención personalizada Elementos recuperables](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
-5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
+5. Seleccione las etiquetas de retención adicionales que quiera agregar a la directiva de retención. Por ejemplo, podría interesarle agregar las mismas etiquetas que se incluyen en la directiva de MRM predeterminada.
     
 6. Cuando termine de agregar reglas de retención, haga clic en **Aceptar**.
     

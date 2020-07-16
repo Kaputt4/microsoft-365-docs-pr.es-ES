@@ -32,7 +32,7 @@ ms.locfileid: "44779886"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidad en toda la organización
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ Puede agregar una firma de correo electrónico, un aviso de declinación de responsabilidades legales o una declaración de divulgación a los mensajes de correo electrónico que reciba o envíe su organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
 
  Vea un breve vídeo sobre cómo crear una firma de correo electrónico de toda la empresa. <br><br>
   
@@ -89,7 +89,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 
 9. Seleccione **seleccionar una** y elija **ajustar** como opción de reserva. Después, seleccione **Aceptar**. Esto significa que, si no se puede agregar el aviso de declinación de responsabilidades debido al cifrado o a otra configuración del correo, este se ajustará en un sobre de mensajes.
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. Deje la opción **Auditar esta regla con nivel de gravedad** seleccionada. Después, elija qué opción quiere usar en el registro de mensajes: **Bajo**, **Medio** o **Alto**. 
     
 11. Elija **Exigir** para activar el aviso de declinación de responsabilidades inmediatamente, a menos que quiera probarlo primero. 
     

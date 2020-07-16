@@ -21,6 +21,7 @@ description: 'Use el Centro de seguridad y cumplimiento para buscar en el regist
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
 ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/03/2020
 ms.locfileid: "45035665"

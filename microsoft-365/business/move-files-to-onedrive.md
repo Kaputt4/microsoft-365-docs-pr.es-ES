@@ -50,7 +50,7 @@ Si un usuario tiene un equipo que incluye muchos archivos personales, primero de
     
 3. Elija **Cargar**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) en la barra de menús y después vaya a los archivos que quiera guardar. 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+Para transferir el perfil de usuario y archivos importantes, también puede usar una herramienta de terceros, como ForensiT. Debe cargar los archivos resultantes también en OneDrive para la Empresa.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 para empresas
 

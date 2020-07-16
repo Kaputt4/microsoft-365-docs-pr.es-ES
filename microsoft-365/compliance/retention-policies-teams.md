@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083498"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861167"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Más información sobre las directivas de retención para Microsoft Teams
 
@@ -54,7 +54,7 @@ Cuando la directiva de retención es retener y eliminar:
 > [!NOTE]
 > Los mensajes de la carpeta SubstrateHolds se pueden buscar en las herramientas de eDiscovery. Cuando un mensaje se elimina de forma permanente, no se mostrará en una búsqueda de eDiscovery.
 
-Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar.
+Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar:
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
 
@@ -62,7 +62,7 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 2. ** Si el artículo no se modifica o elimina** durante el período de retención: no sucede nada antes y después del período de retención; el mensaje permanece en su ubicación original.
 
-### <a name="content-paths-for-delete-only-retention-policy"></a>Rutas de contenido para la directiva de retención de sólo eliminar
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Rutas de contenido para la directiva de retención de sólo eliminar
 
 1. **Si el mensaje no se elimina**durante el período de retención: al final del período de retención, el mensaje se mueve a la carpeta SubstrateHolds. 
 
@@ -71,27 +71,20 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat de Skype Empresarial e interoperabilidad de Teams
 
-El mismo flujo funciona para los chats interoperativos de Skype Empresarial y Teams. Cuando una conversación de Skype Empresarial llega a Teams, se convierte en un mensaje en un hilo de conversación de Teams y se ingiere en el buzón correspondiente. Las directivas de retención de Teams se aplicarán a estos mensajes del hilo de Teams. 
+El mismo flujo funciona para los chats interoperativos de Skype Empresarial y Teams. Cuando una conversación de Skype Empresarial llega a Teams, se convierte en un mensaje en un hilo de conversación de Teams y se ingiere en el buzón correspondiente. Las directivas de retención de Teams eliminarán estos mensajes del hilo de Teams. 
 
-Sin embargo, si se activa el historial de conversaciones en Skype Empresarial y desde el lado del cliente de Skype Empresarial ese historial se guarda en un buzón de correo, los datos de las conversaciones no se manejan mediante una directiva de retención de Teams. Para este contenido, use una directiva de retención configurada para Skype Empresarial.
+Sin embargo, si se activa el historial de conversaciones en Skype Empresarial y desde el lado del cliente de Skype Empresarial ese historial se guarda en un buzón de correo, los datos de las conversaciones no se manejan mediante una directiva de retención de Teams.
 
-## <a name="additional-retention-policies-needed-to-support-teams"></a>Directivas de retención adicionales que se necesitan para Teams
+## <a name="files-in-teams"></a>Archivos en Teams.
 
-Teams es mucho más que solo chats y mensajes de canal. Si tiene equipos creados a partir de un grupo de Microsoft 365 (anteriormente grupo de Office 365), debe configurar una directiva de retención que incluya el grupo de Microsoft 365 mediante la ubicación **grupos de Office 365**. La directiva de retención se aplica al contenido del buzón, del sitio y de los archivos del grupo.
-
-Si el sitio de grupo no está conectado a un grupo de Microsoft 365, necesitará una directiva de retención que incluya las ubicaciones **sitios de SharePoint** o **cuentas de OneDrive** para conservar y eliminar archivos en Teams:
-
-- Los archivos que se comparten en el chat se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. 
-
-- Los archivos que se suben a los canales se almacenan en el sitio de SharePoint del equipo.
-
-> [!TIP]
-> Puede aplicar una directiva de retención a los archivos de un solo equipo específico cuando no está conectado a un grupo de Microsoft 365. Para ello, seleccione el sitio de SharePoint del equipo y las cuentas de OneDrive de los usuarios del mismo.
-
-Es posible que una directiva de retención que se aplique a los grupos de Microsoft 365, los sitios de SharePoint o las cuentas de OneDrive pueda eliminar un archivo al que se hace referencia en un mensaje de canal o chat de Teams antes de que se eliminen esos mensajes. En este caso, el archivo seguirá apareciendo en el mensaje de Teams, pero cuando los usuarios lo seleccionen, obtendrán un error de "Archivo no encontrado". Este comportamiento no es específico de las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint o OneDrive.
+En Teams, los archivos que se comparten en el chat se almacenan en la cuenta de OneDrive del usuario que compartió el archivo. Los archivos que se suben a los canales se almacenan en el sitio de SharePoint para el equipo. Esto significa que para retener o eliminar archivos en Teams, debe configurar una o más directivas de retención que se apliquen a OneDrive y SharePoint, además de las directivas de retención que configure para Teams. Para obtener más información sobre cómo funcionan las directivas de retención para estas ubicaciones, consulte [Más información sobre las directivas de retención para SharePoint y OneDrive](retention-policies-sharepoint.md).
 
 > [!NOTE]
-> Una directiva de retención que incluya los mensajes del canal o los chats de Teams sólo puede incluir las ubicaciones de Teams. Por lo tanto, para retener o eliminar otro contenido compatible con Teams, debe crear una directiva de retención diferente.
+> Una directiva de retención que incluya los mensajes del canal de Teams o los chats de Teams sólo puede incluir las ubicaciones de Teams. Por lo tanto, para retener o eliminar estos archivos en Teams, debe crear una directiva de retención separada.
+> 
+> Si desea aplicar una directiva de retención a los archivos de un equipo en específico, puede elegir el sitio de SharePoint del equipo y las cuentas de OneDrive de los usuarios del equipo.
+
+Es posible que una directiva de retención que se aplique a SharePoint o OneDrive pueda eliminar un archivo al que se haga referencia en un chat o mensaje de canal de Teams antes de que esos mensajes sean eliminados. En este escenario, el archivo seguirá apareciendo en el mensaje de Teams, pero cuando los usuarios hagan clic en el archivo, obtendrán un error de "Archivo no encontrado". Este comportamiento no es específico de las directivas de retención y también podría ocurrir si un usuario elimina manualmente un archivo de SharePoint o OneDrive.
 
 ## <a name="meetings-and-external-users"></a>Reuniones y usuarios externos
 
@@ -105,9 +98,10 @@ Cuando se incluyen usuarios externos en una reunión que su organización organi
 
 - Si un usuario externo se une mediante el uso de una cuenta de otra organización de Microsoft 365, sus directivas de retención no pueden eliminar los mensajes de este usuario porque están almacenados en el buzón de ese usuario en otro arrendatario. Sin embargo, para la misma reunión, sus directivas de retención pueden eliminar los mensajes de sus usuarios.
 
+
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización 
 
-Si un usuario deja la organización y su cuenta de Microsoft 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un usuario deja la organización y su cuenta de Office 365 se elimina, los mensajes de chat que estén sujetos a la retención se almacenarán en un buzón inactivo. El contenido de los mensajes de chat seguirá sujeto a cualquier directiva de retención que se hubiera aplicado al buzón antes de que pasara a estado inactivo, y el contenido está disponible para una búsqueda de eDiscovery. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) para SharePoint y OneDrive.
 
@@ -115,23 +109,23 @@ Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](
 
 Estamos trabajando continuamente en la optimización de la funcionalidad de retención en Teams. Por el momento, tenga en cuenta algunas de las limitaciones actuales:
   
-- **Teams requiere una directiva de retención separada ** Cuando cree una directiva de retención y activa las ubicaciones de Teams, todas las demás ubicaciones se desactivan. Una directiva de retención que incluya Teams puede comprender solo su ubicación y ninguna más.
-
-- **Teams no está incluido en una directiva de toda la organización.**. Si crea una directiva para toda la organización, Teams no es incluida porque requiere una directiva de retención separada.
-
-- **Teams no es compatible con la retención avanzada**. Cuando creas una directiva de retención, si elige la [Configuración avanzada para identificar el contenido que cumple con condiciones específicas](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), las ubicaciones de Teams no están disponibles. Actualmente, la retención en Teams se aplica a todo el contenido de los mensajes de chat y de los canales cuando se seleccionan esas ubicaciones.
-
-- **Los mensajes de Teams en los canales privados no se incluyen cuando se configura una directiva de retención de los mensajes de los canales de Teams.**. Actualmente, los canales privados no son compatibles con las directivas de retención. 
-
-- **Teams puede tardar un máximo de siete días en limpiar los mensajes caducados**. Cuando expire el período de retención, las directivas de retención aplicadas a Teams eliminarán los mensajes de chat y de canal. Pero puede que tarde de tres a siete días en limpiar estos mensajes y eliminarlos permanentemente. Asimismo, los mensajes de chat y canales se podrán buscar con las herramientas de eDiscovery durante el tiempo que transcurra durante el período de retención y cuando los mensajes se eliminan de forma permanente.
+- **Teams requiere una directiva de retención separada ** Cuando cree una directiva de retención y activa las ubicaciones de Teams, todas las demás ubicaciones se desactivan. Una directiva de retención que incluya Teams puede comprender solo su ubicación y ninguna más. 
     
-    > [!NOTE]
-    > Se ha usado para ser verdadera que una directiva de retención no pudo eliminar el contenido de Teams que tiene menos de 30 días, pero hemos quitado esta limitación. Ahora, el período de retención de contenido de Teams puede ser el número de días que elija y tan breve como un día. Si tiene un período de retención de un día, se tardará hasta siete días después de que expire el período de retención en eliminar de forma permanente los mensajes.
+- **Teams no está incluido en una directiva de toda la organización.**. Si crea una directiva para toda la organización, Teams no es incluida porque requiere una directiva de retención separada. 
+    
+- **Teams no es compatible con la retención avanzada**. Cuando creas una directiva de retención, si elige la [Configuración avanzada para identificar el contenido que cumple con condiciones específicas](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), las ubicaciones de Teams no están disponibles. Actualmente, la retención en Teams se aplica a todo el contenido de los mensajes de chat y de los canales cuando se seleccionan esas ubicaciones. 
+
+- **Los mensajes de Teams en los canales privados no se incluyen cuando se configura una directiva de retención de los mensajes de los canales de Teams.**. En cambio, los mensajes de los canales privados se incluyen para los usuarios como chats de grupo con la opción de**chats de Teams **. 
+    
+- **Teams puede tardar un máximo de tres días en limpiar los mensajes caducados**. Cuando expire el período de retención, las directivas de retención aplicadas a Teams se eliminarán. Sin embargo, puede que tarde hasta tres días limpiar estos mensajes y eliminarlos permanentemente. Asimismo, los mensajes de chat y canales se podrán buscar con las herramientas de eDiscovery durante el tiempo que transcurra durante el período de retención y cuando los mensajes se eliminan de forma permanente.
+    
+   > [!NOTE]
+   > Se ha usado para ser verdadera que una directiva de retención no pudo eliminar el contenido de Teams que tiene menos de 30 días, pero hemos quitado esta limitación. Ahora, el período de retención de contenido de Teams puede ser el número de días que elija y tan breve como un día. Si tiene un período de retención de un día, se tardará hasta tres días después de que expire el período de retención antes de que se eliminen de forma permanente los mensajes.
 
 - **Problema de visualización incorrecta en Outlook**. Si crea directivas de retención para las ubicaciones de Skype o de Teams, una de esas directivas se muestra como la directiva de carpeta predeterminada cuando un usuario ve las propiedades de una carpeta del buzón en el cliente de escritorio de Outlook. Este es un problema de presentación incorrecto en Outlook y [un problema conocido](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Qué se debe mostrar como directiva predeterminada para carpetas es la Directiva de retención de buzón que se aplica a la carpeta. La Directiva de retención de Skype o de Teams no se aplica al buzón del usuario.
 
 - **Problemas de configuración**: 
-    - Al seleccionar **Elegir equipos** para la ubicación de los **mensajes del canal Teams** es posible que vea grupos de Office 365 que no son también equipos. No seleccione estos equipos
+    - Al seleccionar **Elegir equipos** para la ubicación de los**mensajes del canal Teams** es posible que vea grupos de Office 365 que no son también equipos. No seleccione estos equipos
     
     - Al seleccionar **Elegir usuarios** para la ubicación de los**chats de Teams** puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 

@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
 ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "45023616"
@@ -31,7 +32,7 @@ El Reglamento General de Protección de Datos (RGPD) otorga derechos a las perso
 
 De forma similar, la Ley de Privacidad de Consumidores de California (CCPA) establece los derechos y obligaciones de privacidad a los consumidores de California, incluidos los derechos de los interesados del RGDP, como el derecho a eliminar, obtener acceso y recibir (portabilidad) sus datos personales. La CCPA también prevé casos de divulgación de información, protecciones contra la discriminación en el ejercicio de derechos y requisitos de "cancelación/suscripción" para ciertas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq).
 
-The guide discusses how to use Microsoft products, services and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide: 
+Esta guía explica cómo usar productos, servicios y herramientas administrativas de Microsoft para ayudar a nuestros clientes responsables de los datos a encontrar y actuar sobre datos personales para responder solicitudes de interesado. En concreto, esto incluye cómo encontrar, acceder y actuar sobre datos personales alojados en la nube de Microsoft. Este es un breve resumen de los procedimientos descritos en esta guía: 
 
 1. **Acceder**: recupere datos personales alojados en la nube de Microsoft y, si se le pide, realice una copia que puede estar a disposición del interesado. 
 2. **Eliminar**: eliminar de forma permanente los datos personales que residen en la nube de Microsoft. 
