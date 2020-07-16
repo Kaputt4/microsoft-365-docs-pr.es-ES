@@ -1,5 +1,5 @@
 ---
-title: Más información sobre las directivas de retención para SharePoint y OneDrive
+title: Obtenga más información sobre la retención para SharePoint y OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,34 +16,35 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Más información sobre las directivas de retención que se aplican a SharePoint y OneDrive.
-ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
+ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049888"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127407"
 ---
-# <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Más información sobre las directivas de retención para SharePoint y OneDrive
+# <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-La información de este artículo complementa[Más información sobre las directivas de retención](retention-policies.md)porque tiene información específica de SharePoint y OneDrive.
+La información de este artículo complementa[Obtenga más información sobre las directivas de retención](retention.md)porque tiene información específica de SharePoint y OneDrive.
 
-## <a name="how-a-retention-policy-works-with-sharepoint-and-onedrive"></a>Cómo funciona una directiva de retención con SharePoint y OneDrive
+## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive.
 
-Las directivas de retención se aplican en el nivel de la colección de sitios. Si incluye una colección de sitios de SharePoint o una cuenta de OneDrive en una directiva de retención, se crea una biblioteca de suspensión para conservación, si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
+Para admitir la retención, SharePoint y OneDrive crean una biblioteca de conservación de documentos si no existe una. Puede ver esta biblioteca en la página **Contenidos del sitio** en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no puede ver la biblioteca de suspensión para conservación porque solo es visible para los administradores de la colección de sitios.
   
-Si una persona intenta cambiar o eliminar el contenido de un sitio que está sujeto a una directiva de retención, en primer lugar, la Directiva comprueba si el contenido se ha cambiado desde que se aplicó la Directiva. Si esta es la primera vez que se ha aplicado la Directiva, la Directiva de retención copia el contenido a la biblioteca de conservación de documentos y, a continuación, permite a la persona cambiar o eliminar el contenido original. El contenido de la colección de sitios puede copiarse en la biblioteca de suspensión para conservación, incluso si el contenido no coincide con la consulta usada por la Directiva de retención.
+Si alguien intenta cambiar o eliminar un documento que está sujeto a la configuración de retención, se comprueba si el contenido se ha cambiado desde que se aplicó la configuración de retención. Si este es el primer cambio desde que se aplicaron los ajustes de retención, el contenido se copia a la biblioteca de retención de preservación, lo que permite a la persona cambiar o eliminar el contenido original. El contenido de una colección de sitios puede copiarse a la biblioteca de conservación de documentos, independientemente de la configuración de retención.
   
-Un trabajo de temporizador limpia periódicamente la biblioteca de suspensión para conservación. Este trabajo compara todo el contenido de la biblioteca de suspensión para conservación con todas las consultas utilizadas por las directivas de retención del sitio. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, y la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que el contenido puede tardar hasta siete días en eliminarse.
+Un trabajo de temporizador limpia periódicamente la biblioteca de suspensión para conservación. Este trabajo compara todo el contenido de la biblioteca de conservación de documentos con todas las consultas empleadas en la configuración de retención para este contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, y la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que el contenido puede tardar hasta siete días en eliminarse.
   
-Este comportamiento se aplica al contenido que existe cuando se aplica la directiva de retención. Además, cualquier contenido nuevo que se cree o agregue a la colección de sitios después de que se incluya en la directiva se conservará después de la eliminación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el[control de versiones](#how-a-retention-policy-works-with-document-versions-in-a-site-collection).
+Este comportamiento se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o se agregue a la colección de sitios después de que se incluya en la directiva se conservará después de la eliminación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el[control de versiones](#how-retention-works-with-document-versions-in-a-site-collection).
   
-Un usuario recibe un error si intenta eliminar una biblioteca, lista, carpeta o sitio que está sujeto a una directiva de retención. Un usuario puede eliminar una carpeta, si primero se mueven o eliminan los archivos en la carpeta que están sujetos a la directiva. Además, la biblioteca de retención de preservación se crea en esta etapa, y no cuando se crea la directiva de retención. Esto significa que para probar su directiva, primero debe editar o eliminar un documento de un sitio que esté sujeto a la directiva de retención, y luego navegar hasta la biblioteca de retención de preservación para ver la copia retenida.
+Un usuario recibe un error si intenta eliminar una biblioteca, lista, carpeta o sitio que está sujeto a una directiva de retención. Un usuario puede eliminar una carpeta, si primero se mueven o eliminan los archivos en la carpeta que están sujetos a la directiva. Asimismo, en esta fase se crea una biblioteca de conservación de documentos y no cuando se crea una directiva de retención o se aplica una etiqueta de retención. Esto significa que para probar la retención, en primer lugar debe editar o eliminar un documento de un sitio sujeto a una directiva de retención o que tenga una etiqueta de retención aplicada y, a continuación, vaya a la biblioteca de conservación de documentos para ver la copia retenida.
   
-Cuando se asigna una directiva de retención a una cuenta de OneDrive o un sitio de SharePoint, las rutas de acceso que realiza el contenido dependen de si la directiva de retención es retener y eliminar, solo retener o solo eliminar.
+Cuando se asigna el contenido de una cuenta de OneDrive o un sitio de SharePoint a la configuración de retención, dependen de si la configuración de retención debe retener, eliminar, solo retener o eliminar.
 
-Cuando la directiva de retención es retener y eliminar:
+Cuando la configuración de retención se debe conservar y eliminar:
 
 ![Diagrama del ciclo de vida de contenido en SharePoint y OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -54,29 +55,29 @@ Cuando la directiva de retención es retener y eliminar:
     
 2. **Si no se modifica ni elimina el contenido** durante el período de retención, el trabajo del temporizador mueve este contenido a la primera etapa de la Papelera de reciclaje al final del período de retención. Si un usuario elimina el contenido desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las Papeleras de reciclaje de primer y de segundo nivel. Después de 93 días, el documento se elimina de forma permanente de la ubicación donde se encuentre, ya sea en la Papelera de reciclaje de primer nivel o en la de segundo nivel. La papelera de reciclaje no está indexada y, por lo tanto, no está disponible para la búsqueda. Como resultado, una búsqueda de eDiscovery no puede encontrar ningún contenido en la papelera de reciclaje para el que aplicar una retención.
 
-Cuando la directiva de retención es de solo retención, o solo eliminación, las rutas de acceso de contenido son variaciones de retener y eliminar:
+Cuando los ajustes de retención son sólo de retención o sólo de borrado, las rutas de contenido son variaciones de retención y borrado:
 
-### <a name="content-paths-for-retain-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo retención
+### <a name="content-paths-for-retain-only-retention-settings"></a>Rutas de contenido para la configuración de la retención de sólo lectura
 
 1. **Si el contenido se modifica o se elimina** durante el período de retención, una copia del documento original se crea en la biblioteca de suspensión para conservación y se conserva hasta el final del período de retención, cuando la copia de la biblioteca de suspensión para conservación se mueve a la Papelera de reciclaje de segundo nivel y se elimina de forma permanente después de 93 días.
 
 2. **Si el contenido no se modifica ni elimina** durante el período de retención, no sucede nada antes y después del período de retención; el documento permanece en su ubicación original.
 
-### <a name="content-paths-for-delete-only-retention-policy"></a>Rutas de contenido para la directiva de retención de solo eliminación
+### <a name="content-paths-for-delete-only-retention-settings"></a>Rutas de contenido para la configuración de retención de solo eliminación
 
 1. **Si el contenido se elimina** durante el período configurado: el documento es trasladado a la primera etapa de la Papelera de reciclaje. Si un usuario elimina el documento desde allí o vacía esta Papelera de reciclaje, el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las Papeleras de reciclaje de primer nivel y de segundo nivel. Después de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la Papelera de reciclaje de primer nivel o de segundo nivel. Si el contenido se modifica durante el período configurado, sigue la misma ruta de eliminación después del período configurado.
 
 2. **Si el contenido no se elimina** durante el período configurado: al final del período configurado en la directiva de retención, el documento se traslada a la primera etapa de la Papelera de reciclaje. Si un usuario elimina el documento desde allí o vacía esta papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las Papeleras de reciclaje de primer nivel y de segundo nivel. Después de 93 días, el documento se elimina de forma permanente de donde se encuentre, ya sea en la Papelera de reciclaje de primer nivel o de segundo nivel. La papelera de reciclaje no está indexada y, por lo tanto, no está disponible para la búsqueda. Como resultado, una búsqueda de eDiscovery no puede encontrar ningún contenido en la papelera de reciclaje para el que aplicar una retención.
 
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
+## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
 
 El versionado es una característica de todas las bibliotecas de documentos en SharePoint y OneDrive. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, vea [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Una directiva de sólo retención conserva todas las versiones de un documento en una colección del sitio de SharePoint o en una cuenta de OneDrive. Cuando se edita por primera vez un documento que está sujeto a una directiva de retención o sólo de retención, se copia una versión del documento original en la biblioteca de retención de preservación. Cuando se elimina un documento que está sujeto a una directiva de retención o sólo de retención, todas las versiones se copian a la biblioteca de retención de preservación si la función de versiones está activada. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
+La configuración de conserva solo retiene todas las versiones de un documento en una colección de sitios de SharePoint o en una cuenta de OneDrive. Cuando se edita por primera vez un documento que está sujeto a una retención o que solo contiene configuraciones, se copia una versión del documento original a la biblioteca de conservación de documentos. Cuando se elimina un documento que está sujeto a una configuración de retención o de solo retención, todas las versiones se copian en la biblioteca de conservación de documentos si se habilita el control de versiones. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
   
-- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- Si el período de retención se basa en el momento de la creación del contenido, cada versión tiene la misma fecha de caducidad que el documento original Todos los documentos originales y todas las versiones expiran al mismo tiempo.
 
-- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- Si el período de retención se basa en la fecha en que se modificó el contenido por última vez, cada versión tiene su propia fecha de caducidad según la fecha en que se modificó el documento original para crear esa versión. Los documentos originales y sus versiones expiran en forma independiente uno del otro.
 
 > [!NOTE]
 > Las versiones preservadas de los documentos de SharePoint y OneDrive no se pueden buscar con las herramientas de eDiscovery.
@@ -89,18 +90,8 @@ Cuando un usuario deja la organización, no se verá afectado el contenido cread
 
 **OneDrive**:
 
-Si un usuario abandona su organización, cualquier archivo que esté sujeto a una directiva de retención o que tenga una etiqueta de retención permanecerá durante la duración de la directiva o la etiqueta. Durante ese período de tiempo, todo el acceso para compartir sigue funcionando. Cuando expire el período de retención, el contenido se mueve a la Papelera de reciclaje de la Colección de sitios y no es accesible para nadie excepto el administrador. Si un documento está marcado con una directiva de retención como registro, no se eliminará hasta que finalice el período de retención, tras lo cual el contenido se eliminará de forma permanente.
+Si un usuario abandona su organización, cualquier archivo que esté sujeto a una directiva de retención o que tenga una etiqueta de retención permanecerá durante la duración de la directiva o la etiqueta. Durante ese período de tiempo, todo el acceso para compartir sigue funcionando. Cuando expire el período de retención, el contenido se mueve a la papelera de reciclaje de la colección de sitios y no es accesible para nadie excepto el administrador. Si un documento está marcado con una etiqueta de retención como registro, el documento no se eliminará hasta que finalice el período de retención, tras lo cual el contenido se eliminará de forma permanente.
 
-## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>Cómo configurar una directiva de retención para SharePoint y OneDrive
+## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Siga las instrucciones para [Crear y configurar directivas de retención](create-retention-policies.md) y para la página **Elegir ubicaciones** del asistente, seleccione una de las siguientes opciones:
-
-- ** Aplicar la directiva sólo al contenido del correo electrónico de Exchange, las carpetas públicas, los grupos de Office 365, los documentos de OneDrive y SharePoint**
-
-- **Permitirme elegir ubicaciones específicas** > **Sitios de SharePoint**, **Cuentas de OneDrive** y **Grupos de Office 365**.
-
-Cuando elige la ubicación **Sitios de SharePoint**, la directiva de retención puede conservar contenido en los sitios de comunicación de SharePoint, en los sitios de equipos no conectados por grupos de Office 365 y en los sitios clásicos. Los sitios de equipos conectados por grupos de Office 365 no son compatibles con esta opción. En su lugar, use la ubicación **Grupos de Office 365** que corresponda con el contenido del buzón, el sitio y los archivos del grupo.
-
-Cuando especifica sus ubicaciones para los sitios de SharePoint, no necesita permisos para tener acceso al sitio y no se lleva a cabo ninguna validación en el momento en que especifica la dirección URL en la página **Editar ubicaciones**. Sin embargo, estos sitios se deben indexar y al final del asistente se comprueba que existan los sitios que usted especifica.
-
-Si se produce un error en esta comprobación, verá un mensaje que indica que no se pudo realizar la validación de la dirección URL que ha indicado y el asistente no creará la directiva de retención hasta que se supere la comprobación de validación.  Si ve este mensaje, vuelva al Asistente para cambiar la dirección URL o quitar el sitio.
+Si está listo para configurar la retención en Microsoft 365, vea [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md).

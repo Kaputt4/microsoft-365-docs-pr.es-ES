@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ef10eede38128bbf9b23537d860113b71f603089
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: d827484a440b291bccd45b58e977fbcb280680f2
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235129"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148141"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Priorizar incidentes con la Protección contra amenazas de Microsoft
 
@@ -43,7 +43,16 @@ La **cola de incidentes** muestra un conjunto de incidentes que se han marcado d
 
 De manera predeterminada, la cola del Centro de seguridad de Microsoft 365 muestra los incidentes encontrados en los últimos 30 días, con el incidente más reciente en la parte superior de la lista, ayudándole así a ver primero los incidentes más recientes.
 
-La cola de incidentes expone columnas personalizables donde podrá ver las distintas características del incidente o de las entidades que contiene, lo que le permite tomar decisiones fundamentadas sobre la priorización de incidentes que debe controlar. 
+La cola de incidentes expone columnas personalizables donde podrá ver las distintas características del incidente o de las entidades que contiene, lo que le permite tomar decisiones fundamentadas sobre la priorización de incidentes que debe controlar.
+
+Para obtener una visibilidad más rápida, los nombres automáticos de incidentes, actualmente en la versión preliminar pública, generan nombres de incidente basados en atributos de alerta como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
+
+Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
+
+> [!NOTE]
+> Los incidentes que existían antes de la implementación de la asignación automática de nombres de incidentes no tendrán su nombre cambiado.
+
+Obtenga más información sobre cómo [activar las características de vista previa](preview.md#turn-on-preview-features).
 
 La cola de incidentes también muestra opciones de filtrado que, al aplicarlas, le permiten decidir si limpiar todos los incidentes existentes en su entorno o enfocarse en un escenario o amenaza específica. Aplicar filtros en la cola de incidentes puede ayudar a determinar qué incidente requiere atención inmediata. 
 

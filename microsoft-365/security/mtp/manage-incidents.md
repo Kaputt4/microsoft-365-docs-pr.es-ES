@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235089"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148119"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Administrar incidentes en Protección contra amenazas de Microsoft
 
@@ -44,7 +44,16 @@ En los casos en los que, durante la investigación, quiera pasar las alertas de 
 
 ## <a name="edit-incident-name"></a>Editar el nombre del incidente
 De forma predeterminada, un incidente tiene asignado un número. Puede modificar el nombre del incidente para adecuarlo al sistema de nomenclatura que prefiera.
- 
+
+> [!TIP]
+> Para obtener una visibilidad más rápida, los nombres automáticos de incidentes, actualmente en la versión preliminar pública, generan nombres de incidente basados en atributos de alerta como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
+>
+> Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
+>
+> Los incidentes que existían antes de la implementación de la asignación automática de nombres de incidentes no tendrán su nombre cambiado.
+>
+> Obtenga más información sobre cómo [activar las características de vista previa](preview.md#turn-on-preview-features).
+
 ## <a name="assign-incidents"></a>Asignar incidentes
 Si aún no se ha asignado un incidente, puede seleccionar **Asignarme a mí** para asignarse el incidente a usted mismo. Esta asignación no incluye solo el incidente, sino también todas las alertas asociadas a él.
 
@@ -68,4 +77,3 @@ Los comentarios agregados aparecen al instante en el panel.
 
 ## <a name="add-incident-tags"></a>Agregar etiquetas de incidente
 Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidencias con características comunes. Posteriormente, puede filtrar la cola de incidentes para ver los incidentes que tengan una etiqueta específica.
-

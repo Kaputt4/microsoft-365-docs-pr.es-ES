@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Microsoft 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943435"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148130"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery en Microsoft 365
 
@@ -88,3 +88,7 @@ La solución de eDiscovery avanzada de Microsoft 365 (también denominada *eDisc
 |[Analizar datos en un conjunto de revisión](analyzing-data-in-review-set.md)|Obtenga información sobre cómo ejecutar el análisis en los documentos de un conjunto de revisión. Los resultados de la ejecución del análisis incluyen la detección de sobreduplicación, el subprocesamiento de correo electrónico y la identificación de temas.|
 |[Exportar datos de casos](exporting-data-ediscover20.md)|Obtenga información sobre cómo exportar datos de un caso para una revisión externa.|
 |||
+
+## <a name="roadmap"></a>Hoja de ruta
+
+Para ver qué características de eDiscovery se han iniciado, están implementando o están en desarrollo, visite el plan de desarrollo de [Microsoft 365](https://aka.ms/eDiscoRoadMap).

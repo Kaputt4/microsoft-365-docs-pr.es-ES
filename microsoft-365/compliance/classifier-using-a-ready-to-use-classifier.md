@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 incluye varios clasificadores integrados que puede usar para identificar y etiquetar el contenido en toda la organización. En este tema se muestra cómo prepararse para usar estos clasificadores.
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126319"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146224"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Probar clasificadores integrados con etiquetas de retención (versión preliminar)
 
@@ -38,7 +38,7 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 - **Currículos**: detecta los elementos que son cuentas de texto de la cualificación personal, educativa, profesional, experiencia laboral y otra información de identificación personal del solicitante.
 - **Código de origen**: detecta elementos que contienen un conjunto de instrucciones e instrucciones escritas en los 25 principales lenguajes de programación usados del equipo en github
 
-  |nombre del idioma|||||
+  |**Nombre del idioma**|||||
   |---------|---------|---------|---------|---------|
   |Código|C        |C#       |+     |Clojure  |
   |CoffeeScript|CSS     |Ir       |Haskell |HTML     |
@@ -106,5 +106,5 @@ Microsoft 365 incluye cinco clasificadores integrados recomendados:
 Vea también:
 
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
-- [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md)
-- [Aplicar automáticamente una etiqueta de retención para conservar o eliminar contenido](apply-retention-labels-automatically.md)
+- [Obtenga más información sobre las directivas de retención y las etiquetas de retención](retention.md)
+- [Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido](apply-retention-labels-automatically.md)
