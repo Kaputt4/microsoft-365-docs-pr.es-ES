@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327856"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127047"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -92,7 +92,7 @@ Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePo
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
-Una [etiqueta de retención](labels.md) le permite definir durante cuánto tiempo se conserva un elemento con una etiqueta y los pasos que se deben seguir antes de eliminarlo. Se puede aplicar manualmente o automáticamente mediante directivas. Puede ayudar a su organización a mantener el cumplimiento normativo y los requerimientos legales.
+Una [etiqueta de retención](retention.md) le permite definir durante cuánto tiempo se conserva un elemento con una etiqueta y los pasos que se deben seguir antes de eliminarlo. Se puede aplicar manualmente o automáticamente mediante directivas. Puede ayudar a su organización a mantener el cumplimiento normativo y los requerimientos legales.
 
 ### <a name="how-to-use-content-explorer"></a>Cómo usar el explorador de contenido
 
@@ -137,10 +137,9 @@ Puede buscar en:
 |extensión de archivo|`txt`|
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Recursos adicionales
 
-- [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Etiquetas de retención](labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
-- [Información general sobre las directivas de retención](retention-policies.md)
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
