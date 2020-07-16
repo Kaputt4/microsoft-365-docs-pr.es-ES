@@ -1,5 +1,5 @@
 ---
-title: Crear y publicar etiquetas de retención de forma masiva con PowerShell
+title: Crear y publicar etiquetas de retención con PowerShell
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a usar las etiquetas de retención de Office 365 para implementar un programa de retención para su organización mediante el uso de PowerShell.
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Obtenga información sobre cómo usar PowerShell para crear y publicar etiquetas de retención desde la línea de comandos, de manera independiente del centro de cumplimiento de Microsoft 365.
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035538"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126371"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención con PowerShell
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-En Office 365, puede usar etiquetas de retención para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas de retención. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de retención de una en una es laborioso e ineficiente.
+Si decide usar [etiquetas de retención](retention.md) para ayudarle a guardar o eliminar documentos y mensajes de correo electrónico en Microsoft 365, puede que advierta que dispone de una gran cantidad de etiquetas de retención (quizá incluso cientos de ellas) para crear y publicar. Se recomienda crear etiquetas de retención a escala mediante el uso del [plan de archivos](file-plan-manager.md) del centro de cumplimiento de Microsoft 365. Sin embargo, también puede usar [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-Al utilizar el script y los archivos.csv proporcionados, podrá crear y publicar etiquetas de retención y directivas de etiquetas de retención de forma masiva. En primer lugar, cree una lista de las etiquetas de retención y una lista de las directivas de etiquetas de retención en Excel, y luego utilice PowerShell para crear las etiquetas de retención y las directivas de etiquetas de retención de forma masiva en esas listas. Así es más fácil crear y publicar a la vez todas las etiquetas de retención que necesita para su programación de retención.
-  
-Para obtener más información sobre las etiquetas de retención, vea [Información general sobre etiquetas de retención](labels.md).
+Use la información, los archivos de plantilla, los ejemplos y el script de este artículo como ayuda para crear de forma masiva etiquetas de retención y publicarlas en directivas de etiquetas de retención. A continuación, las etiquetas de retención se pueden [aplicar a los administradores y usuarios](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+
+Las instrucciones proporcionadas no son compatibles con las etiquetas de retención que se aplican automáticamente.
+
+Información general: 
+
+1. En Excel, cree una lista de sus etiquetas de retención y una lista de las directivas de las etiquetas de retención.
+
+2. Utilice PowerShell para crear las etiquetas de retención y las directivas de retención de etiquetas en dichas listas.
   
 ## <a name="disclaimer"></a>Aviso de declinación de responsabilidades
 
-Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
+Los scripts de ejemplo que aparecen en este artículo no son compatibles con ningún programa o servicio de soporte técnico estándar de Microsoft. Los scripts de ejemplo aparecen "TAL CUAL", sin garantía de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Cualquier riesgo resultante del uso o resultado de los scripts y la documentación de ejemplo será únicamente responsabilidad suya. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
   
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>Paso 1: Crear un archivo .csv para crear las etiquetas de retención
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Paso 1: Cree un archivo .csv para crear las etiquetas de retención
 
-Primero, cree un archivo .csv que contenga una lista de las etiquetas de retención con su configuración de retención. Puede usar el ejemplo siguiente como una plantilla; para hacerlo, cópielo en Excel, convierta el texto en columnas (en Excel \> pestaña **Datos** \> **Texto en columnas** \> **Delimitado** \> **Coma** \> **General**) y, después, guarde la hoja de cálculo como un archivo .csv en una ubicación de fácil acceso.
-  
-Para obtener más información sobre los valores de parámetro para este cmdlet, vea [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+1. Copie el siguiente archivo .csv de muestra para usarlo de plantilla y las entradas de ejemplo de cuatro etiquetas diferentes de retención y péguelas en Excel. 
+
+2. Convierta el texto en columnas: **Pestaña de datos**\>**Texto en columnas**\>**Delimitado**\>**Coma**\>**General**
+
+2. Reemplace los ejemplos con entradas para su configuración y etiquetas de retención. Para más información sobre los valores de parámetro, consulte [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+
+3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: C:\>Scripts\Etiquetas.csv
+
   
 Notas:
-  
-- Si no especifica un archivo de origen para crear etiquetas de retención, el script continuará y le pedirá el archivo de origen para publicar etiquetas de retención (vea la sección siguiente), pero solo publicará las etiquetas de retención existentes.
-    
+
 - Si el archivo .csv contiene una etiqueta de retención con el mismo nombre que una ya existente, el script omitirá la creación de esa etiqueta de retención. No se crean etiquetas de retención duplicadas.
     
-- Si cambia el nombre o modifica los encabezados de columna, el script producirá errores. El script necesita un archivo .csv con el formato especificado aquí.
+- No cambie los encabezados de columna del archivo .csv proporcionado de muestra ni el nombre de dichos encabezados. De lo contrario, se producirá un error en el script.
     
-### <a name="sample-csv-file"></a>Archivo .csv de ejemplo
+### <a name="sample-csv-file-for-retention-labels"></a>Archivo. csv de muestra para las etiquetas de retención
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>Paso 2: Crear un archivo .csv para publicar las etiquetas
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Paso 2: Cree un archivo .csv para las directivas de etiquetas de retención
 
-Después, cree un archivo .csv que contenga una lista de directivas de etiquetas de retención con sus ubicaciones y otras opciones de configuración. Puede usar el ejemplo siguiente como una plantilla; para hacerlo, cópielo en Excel, convierta el texto en columnas (en Excel \> pestaña **Datos** \> **Texto en columnas** \> **Delimitado** \> **Coma** \> **General**) y, después, guarde la hoja de cálculo como un archivo .csv en una ubicación de fácil acceso.
-  
-Para obtener más información sobre los valores de parámetro para este cmdlet, vea [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
-  
+1. Copie el siguiente archivo .csv de muestra para usarlo de plantilla y las entradas de ejemplo de tres directivas diferentes de etiquetas de retención y péguelas en Excel. 
+
+2. Convierta el texto en columnas: **Pestaña de datos**\>**Texto en columnas**\>**Delimitado**\>**Coma**\>**General**
+
+2. Reemplace los ejemplos con entradas para sus directivas de etiquetas de retención y la configuración de las mismas. Para más información sobre los valores de parámetro para este cmdlet, consulte [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+
+3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: `<path>Policies.csv`
+
+
 Notas:
   
-- Si no proporciona un archivo de origen para publicar etiquetas de retención, el script creará etiquetas de retención (vea la sección anterior), pero no las publicará.
-    
 - Si el archivo .csv contiene una directiva de etiquetas de retención con el mismo nombre de una que ya exista, el script omitirá la creación de esa directiva de etiquetas de retención. No se crean directivas de etiquetas de retención duplicadas.
     
-- El script solo publica las etiquetas de retención que se aplican manualmente al contenido. Este script no es compatible con las etiquetas de retención que se aplican automáticamente al contenido.
+- No cambie los encabezados de columna del archivo .csv proporcionado de muestra ni el nombre de dichos encabezados. De lo contrario, se producirá un error en el script.
     
-- Si cambia el nombre o modifica los encabezados de columna, el script producirá errores. El script necesita un archivo .csv con el formato especificado aquí.
-    
-### <a name="sample-csv-file"></a>Archivo .csv de ejemplo
+### <a name="sample-csv-file-for-retention-policies"></a>Archivo. csv de muestra para las directivas de retención
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -88,22 +98,32 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a>Paso 3: Crear el script de PowerShell
+## <a name="step-3-create-the-powershell-script"></a>Paso 3: Cree el script de PowerShell
 
-Copie y pegue el script de PowerShell siguiente en el Bloc de notas. Guarde el archivo con el sufijo de nombre de archivo .ps1 en una ubicación que le resulte fácil de encontrar (por ejemplo, \<ruta\>CrearProgramaciónDeRetención.ps1).
-  
+1. Copie y pegue el siguiente script de PowerShell en el Bloc de notas.
+
+2. Guarde el archivo con una extensión de nombre de archivo de **.ps1** en una ubicación que resulte fácil de encontrar. Por ejemplo: `<path>CreateRetentionSchedule.ps1`
+
+Notas:
+
+- El script le pedirá que proporcione los dos archivos origen que creó en los dos pasos anteriores:
+    - Si no especifica el archivo de origen para crear las etiquetas de retención, el script creará las directivas de etiquetas de retención. 
+    - Si no especifica el archivo de origen para crear las directivas de etiquetas de retención, el script creará únicamente las etiquetas de retención.
+
+- El script genera un archivo de registro en el que se graban todas las acciones realizadas, así como información sobre si se realizaron con éxito o resultaron erróneas. Consulte el último paso para obtener instrucciones sobre cómo ubicar este archivo de registro.
+
 ### <a name="powershell-script"></a>Script de PowerShell
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>Paso 4: Conectarse a PowerShell del Centro de seguridad y cumplimiento
+## <a name="step-4-run-the-powershell-script"></a>Paso 4: Ejecute el script de PowerShell
 
-Siga los pasos descritos aquí:
+En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+
+A continuación, ejecute el script que crea y publica las etiquetas de retención:
   
-- [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://go.microsoft.com/fwlink/?linkid=799771).
+1. En la sesión de PowerShell del Centro de seguridad y cumplimiento, escriba la ruta de acceso, seguida de los caracteres `.\` y del nombre de archivo del script y, a continuación, presione ENTER para ejecutar el script. Por ejemplo:
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Paso 5: Ejecutar el script de PowerShell para crear y publicar las etiquetas de retención
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-Después de conectarse a PowerShell del Centro de seguridad y cumplimiento, ejecute el script que crea y publica las etiquetas de retención.
-  
-1. En la sesión de PowerShell del Centro de seguridad y cumplimiento, escriba la ruta de acceso, seguida de los caracteres .\ y el nombre de archivo del script y, después, presione ENTRAR para ejecutar el script, por ejemplo:
+2. El script le pedirá las ubicaciones de los archivos .csv que creó en los pasos anteriores. Escriba la ruta de acceso, seguida de los caracteres `.\` y del nombre del archivo .csv y, a continuación, presione ENTER. Por ejemplo, en la primera solicitud del script:
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    El script le pedirá las ubicaciones de los archivos .csv que creó anteriormente.
-    
-2. Escriba la ruta de acceso, seguida de los caracteres .\ y el nombre del archivo .csv y, después, presione ENTRAR; por ejemplo:
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>Paso 5: Consulte el archivo de registro con los resultados
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>Paso 6: Ver el archivo de registro con los resultados
+Utilice el archivo de registro que el script creó para comprobar los resultados e identificar errores que se deban solucionar.
 
-Al ejecutar el script, este genera un archivo de registro de cada acción que realizó y si se ha completado correctamente o con errores. En el archivo de registro, se incluyen todos los metadatos sobre las etiquetas de retención que se han creado y publicado. Encontrará el archivo de registro en esta ubicación (tenga en cuenta que los dígitos del nombre de archivo pueden variar).
+Encontrará el archivo de registro en la siguiente ubicación, aunque los dígitos del nombre del archivo de muestra pueden ser diferentes.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt

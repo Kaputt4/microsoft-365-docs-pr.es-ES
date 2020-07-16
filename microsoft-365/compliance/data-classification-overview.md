@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327876"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127225"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
-Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerla sea cual sea su ubicación y garantizar que se conserve y elimine en función de las necesidades de la organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](labels.md) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
+Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerla sea cual sea su ubicación y garantizar que se conserve y elimine en función de las necesidades de la organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
 - el número de elementos que se han clasificado como tipo de información sensible y cuáles son esas clasificaciones;
 - las etiquetas principales de confidencialidad aplicadas en Microsoft 365 y Azure Information Protection;
@@ -79,8 +79,8 @@ Para averiguar cuántos elementos hay en una categoría de clasificación determ
 
 > [!NOTE]
 > Si la tarjeta muestra el mensaje "No se ha encontrado ningún dato que contenga información confidencial". Significa que no hay ningún elemento de la organización que se haya clasificado como un tipo de información confidencial o que no se ha rastreado ningún elemento. Para comenzar a usar las etiquetas, vea:
->- [Etiquetas de confidencialidad](sensitivity-labels.md)
->- [Etiquetas de retención](labels.md)
+>- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md)
+>- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
 >- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Etiquetas principales de confidencialidad que se aplican al contenido
@@ -104,7 +104,7 @@ La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (c
 
 ## <a name="top-retention-labels-applied-to-content"></a>Etiquetas principales de retención que se aplican al contenido
 
-Las etiquetas de retención se usan para administrar la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar cuánto tiempo se conservará un documento antes de eliminarlo una vez que expire el período de retención, independientemente de si debe revisarse antes de eliminarlo, o si debe marcarse como un registro que no puede eliminarse nunca. Para obtener más información, vea [Introducción a las etiquetas de retención](labels.md).
+Las etiquetas de retención se usan para administrar la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar cuánto tiempo se conservará un documento antes de eliminarlo una vez que expire el período de retención, independientemente de si debe revisarse antes de eliminarlo, o si debe marcarse como un registro que no puede eliminarse nunca. Para obtener más información, consulte la [información sobre las etiquetas y políticas de retención](retention.md).
 
 La tarjeta de etiquetas principales de retención aplicadas muestra el número de elementos que tienen una etiqueta de retención determinada.
 
@@ -112,7 +112,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se ha detectado ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no hay ningún contenido con una etiqueta de retención aplicada. Para comenzar a usar las etiquetas de retención, vea:
->- [Introducción a las etiquetas de retención](labels.md)
+>- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
 
@@ -134,8 +134,7 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 
 - [Ver actividad de la etiqueta (vista previa)](data-classification-activity-explorer.md)
 - [Ver contenido etiquetado (vista previa)](data-classification-content-explorer.md)
-- [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Etiquetas de retención](labels.md)
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Obtenga más información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-- [Información general sobre las directivas de retención](retention-policies.md)
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
