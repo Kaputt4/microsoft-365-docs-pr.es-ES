@@ -17,11 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874910"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126883"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -41,7 +42,7 @@ El plan de archivos puede usarse para todas las etiquetas de retención, incluso
 
 ![Página del plan de archivos](../media/compliance-file-plan.png)
 
-Para obtener información sobre qué son las etiquetas de retención y cómo usarlas, consulte [Obtener más información sobre las etiquetas de retención](labels.md).
+Para obtener información sobre qué son las etiquetas de retención y cómo usarlas, consulte [Obtener más información sobre las directivas y las etiquetas de retención](retention.md).
 
 ## <a name="accessing-file-plan"></a>Acceder al plan de archivos
 
@@ -181,4 +182,6 @@ Cuando finalice la importación, puede agregar las etiquetas de retención a una
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener más información sobre cómo crear y editar las etiquetas de retención y sus directivas, vea [Crear, publicar y aplicar automáticamente etiquetas de retención](create-retention-labels.md).
+Para obtener más información sobre cómo crear y editar las etiquetas de retención y sus directivas, consulte las siguientes instrucciones:
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
