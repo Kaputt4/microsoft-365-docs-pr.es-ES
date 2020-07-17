@@ -115,9 +115,9 @@ No es necesario que cancele la versión de prueba. Si no compra la suscripción 
 
 - **La dirección e información de contacto para su suscripción:**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - **País** en el que se usarán los servicios. **No** podrá cambiarlo más adelante, ni siquiera durante el proceso de registro; deberá reiniciar el asistente de registro.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **Correo electrónico** y **número de teléfono** para que podamos ponernos en contacto con usted, si es necesario, para asuntos relacionados con la suscripción. Por ejemplo, si olvida su contraseña, usaríamos esta información para enviarle una temporal. También podemos enviar su información de facturación a la dirección de correo electrónico que especifique.
 
     > [!NOTE]
     > La dirección de correo electrónico que escriba aquí es diferente de la dirección de correo electrónico de Microsoft 365 (su nombre de inicio de sesión, a continuación). Puesto que se trata de la dirección a la que enviaremos la información de facturación, le recomendamos que use una dirección de correo electrónico adecuada para recibir mensajes de trabajo.

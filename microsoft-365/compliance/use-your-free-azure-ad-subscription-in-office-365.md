@@ -26,11 +26,11 @@ ms.locfileid: "44819290"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usar su suscripción gratuita de Azure Active Directory
 
-If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
+Si su organización tiene una suscripción de pago a Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, ya tiene una suscripción gratuita a Microsoft Azure Active Directory. Los administradores pueden usar Azure AD para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, vaya a Azure Portal e inicie sesión con su cuenta.
 
 ## <a name="open-a-private-browsing-session"></a>Abrir una sesión de exploración privada
 
-Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
+Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 que se muestra a continuación), esto evitará que las credenciales con las que inició sesión se usen en Azure. Para abrir una sesión de navegación privada:
 
 - En Microsoft Edge (versión heredada), Internet Explorer o Mozilla FireFox, presione `CTRL+SHIFT+P`.
 

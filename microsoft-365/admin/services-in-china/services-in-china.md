@@ -108,12 +108,12 @@ Si desea obtener información sobre cómo empezar [a trabajar con](../admin-over
  Ahora se admiten las implementaciones híbridas completas con la actualización acumulativa 5 de Exchange 2013 (CU5), entre las organizaciones locales de Exchange 2013 y los servicios de Office 365. Aprovechando las nuevas mejoras en el Asistente para la configuración híbrida, Exchange 2013 CU5 admite las siguientes características híbridas entre las organizaciones locales y de Exchange Online:  
 
 - Enrutamiento de correo seguro entre las organizaciones locales y las de Exchange Online. 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- Enrutamiento de correo con un espacio de nombres de dominio compartido. Por ejemplo, las organizaciones locales y de Exchange Online usan el dominio SMTP @contoso.com. 
 - Una lista global de direcciones (GAL) unificada, también llamada "libreta de direcciones compartida".  
 - Disponibilidad y uso compartido de calendario entre las organizaciones locales y las de Exchange Online.  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- Control centralizado del flujo de correo entrante y saliente. Puede configurar los mensajes entrantes y salientes de Exchange Online para que se enruten a través de la organización local de Exchange. 
 - Una sola dirección URL de Office Outlook Web App tanto para la organización local como para la organización de Exchange Online.  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- Capacidad de desplazar buzones de correo locales existentes a la organización Exchange Online. Los buzones de Exchange Online también se pueden mover de vuelta a la organización local si es necesario.  
 - Administración centralizada de buzones de correo mediante el Centro de administración de Exchange (EAC) local.  
 - Sugerencias de correo electrónico, compatibilidad con fotos en HD para los contactos de Outlook y búsqueda en varios buzones entre las organizaciones locales y de Exchange Online. 
 - Archivado de mensajes basados en la nube para buzones de Exchange locales. 

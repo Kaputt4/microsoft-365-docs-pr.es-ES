@@ -88,9 +88,9 @@ Si desea comprar un dominio de un registrador de dominios que no sea [GoDaddy](h
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transferir su dominio a otro registrador de dominios
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+Si su dominio lo administra un proveedor que no es compatible con todos los registros DNS necesarios, puede transferirlo a un registrador diferente. Cuando se transfiere el dominio, lo que se hace es cambiar los destinatarios del pago para poder renovar y mantener el nombre de su dominio.
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+Solicite la transferencia en el registrador al cual desea mover su dominio. Busque en su sitio web una opción como **Transferir DNS**. Tenga en cuenta que tras realizarse los cambios, pueden tardar unos días en actualizarse en Internet.
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+Si aún no tiene su propio dominio, puede comprar fácilmente uno online en un registrador de nombres de dominio, en un revendedor de dominios o incluso en su proveedor de Internet actual. Obtendrá un nombre de dominio cuando se suscriba a Office 365 ofrecido por 21Vianet, por ejemplo, contoso.partner.onmschina.cn. Pero es posible que desee usar un nombre de dominio personalizado, como fourthcoffee.com.
   
 Para configurar un dominio en Microsoft 365, debe poseer un dominio y cambiar algunos de los registros DNS de su dominio.
   

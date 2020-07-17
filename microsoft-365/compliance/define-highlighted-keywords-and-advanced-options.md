@@ -25,7 +25,7 @@ ms.locfileid: "44936459"
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definir palabras clave resaltadas y opciones avanzadas en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En la exhibición avanzada de documentos electrónicos, es posible agregar palabras clave definidas por el usuario a su relevancia a fin de ayudarle a identificar los archivos relevantes durante el etiquetado. Las palabras clave se mostrarán en los colores especificados en la ** \> etiqueta relevancia**. 
   

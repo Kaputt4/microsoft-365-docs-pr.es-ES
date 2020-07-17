@@ -56,7 +56,7 @@ Un partner autorizado de Microsoft que actúa como asesor de suscripción le pro
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+El partner que elija dependerá de los servicios de Office 365 que use y del país o la región donde los vaya a usar. Si quiere agregar un partner o cambiar el que está asociado a la suscripción, primero debe pedirle al partner el id. de partner de Microsoft.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
     
 4. Si ya tiene un partner, en el segundo paso del Asistente para desprotección, en el panel derecho, en información del Partner, seleccione **Agregar**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Escriba el id. de partner de Microsoft del partner que va a agregar. El id. de partner de Microsoft se lo puede pedir al partner.
 
 6. Complete el resto de los pasos del asistente para terminar de comprar las suscripciones. 
     
@@ -98,7 +98,7 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
     
 4. Si ya tiene un partner, en el segundo paso del Asistente para desprotección, en el panel derecho, en información del Partner, seleccione **Agregar**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Escriba el id. de partner de Microsoft del partner que va a agregar. El id. de partner de Microsoft se lo puede pedir al partner.
 
 6. Complete el resto de los pasos del asistente para terminar de comprar las suscripciones. 
     
@@ -127,7 +127,7 @@ Siga los pasos de la página proveedores para buscar o para obtener una coincide
   
 3. En la parte derecha, en el costo de la suscripción, elija **más acciones** > **Agregar Partner de registro**.
 
-4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Escriba el identificador de partner de Microsoft del partner que va a agregar, seleccione **Comprobar id.** y haga clic en **Enviar**. El identificador de partner de Microsoft se lo puede pedir al partner.
 
 5. El identificador de partner aparece en la página **Suscripciones**.
     
@@ -159,7 +159,7 @@ Para aceptar esta oferta
     
 3. En **Id. de partner**, seleccione **Editar partner de registro**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Escriba el nuevo identificador de partner de Microsoft del partner que va a agregar, seleccione **Comprobar id.** y haga clic en **Enviar**. El identificador de partner de Microsoft se lo puede pedir al partner.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Para aceptar esta oferta
     
 3. En **Id. de partner**, seleccione **Editar partner de registro**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Escriba el nuevo identificador de partner de Microsoft del partner que va a agregar, seleccione **Comprobar id.** y haga clic en **Enviar**. El identificador de partner de Microsoft se lo puede pedir al partner.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Para aceptar esta oferta
     
 3. En **Id. de partner**, seleccione **Editar partner de registro**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Escriba el nuevo identificador de partner de Microsoft del partner que va a agregar, seleccione **Comprobar id.** y haga clic en **Enviar**. El identificador de partner de Microsoft se lo puede pedir al partner.   
 
 ::: moniker-end
 

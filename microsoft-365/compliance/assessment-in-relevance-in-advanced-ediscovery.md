@@ -27,7 +27,7 @@ ms.locfileid: "44818419"
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Descripción de la evaluación en relevancia en eDiscovery avanzado (Classic)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La exhibición avanzada de documentos electrónicos permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. EDiscovery avanzado permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión del documento.
   

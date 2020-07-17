@@ -66,7 +66,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 ## <a name="install-office"></a>Instalar Office
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+Cuando haya creado las cuentas para otros miembros de su empresa, todos los miembros de su equipo podrán instalar la versión de escritorio completa de Office (Word, Excel, Outlook, etc.) y cada usuario podrá instalar Office en un máximo de 5 equipos PC o Mac.
   
 ::: moniker range="o365-worldwide"
 
@@ -94,17 +94,17 @@ Si usa Office 365 ofrecido por 21Vianet, vaya a [https://portal.partner.microsof
   
 ## <a name="set-up-mobile"></a>Configurar dispositivos móviles
 
-Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
+Instale Office en su dispositivo móvil y configure Outlook para trabajar con el nuevo buzón de Microsoft. Todos los miembros de su equipo tendrán que realizar este paso. Cada usuario puede instalar las aplicaciones móviles de Office en un máximo de 5 teléfonos y 5 tabletas.  
   
 Obtenga los pasos para el dispositivo: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ## <a name="store-files-online"></a>Almacenar archivos en línea
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft facilita el almacenamiento de archivos en línea. Para saber qué ubicaciones de almacenamiento son las más adecuadas para su empresa, consulte [Dónde puede almacenar archivos en Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Todos los usuarios obtienen automáticamente una ubicación de almacenamiento en la nube de **OneDrive** cuando les crea una cuenta de Microsoft. Con OneDrive, puede acceder a los archivos desde sus equipos, teléfonos y tabletas.
   
-1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
+1. En el equipo, use el Explorador de archivos para abrir OneDrive. O, desde [Office 365](https://www.office.com), abra **OneDrive** en el iniciador de aplicaciones
 
 2. Vea y cargue archivos personales o comparta documentos o carpetas seleccionando **Compartir** y, después, invite a otros usuarios a ver los documentos o envíeles un vínculo. Para obtener más información, consulte [Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
   

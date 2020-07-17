@@ -25,9 +25,9 @@ ms.locfileid: "44819010"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 
-After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
+Después de crear las etiquetas, asegúrese de que se apliquen correctamente en el contenido. Con los informes de gobierno de datos del Centro de seguridad y cumplimiento, puede ver rápidamente:
   
-- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
+- **Cinco etiquetas principales** Este informe muestra el recuento de las cinco etiquetas principales que se aplicaron en el contenido. Haga clic en este informe para ver una lista de todas las etiquetas que se aplicaron recientemente en el contenido. Puede ver el recuento de cada etiqueta, así como la ubicación, cómo se aplicó, sus acciones de retención, si es un registro y su tipo de disposición. 
     
 - **Aplicación automática o manual** Este informe muestra el recuento de todo el contenido que se etiquetó de forma manual o automática, así como el porcentaje de contenido que se etiquetó de forma manual en comparación con el que se etiquetó de forma automática. 
     
@@ -41,7 +41,7 @@ Encontrará estos informes en el Centro de seguridad&amp; y cumplimiento \> **Go
   
 ![Gráfico donde se muestran tendencias de etiquetas en los últimos 90 días](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
+Puede filtrar los informes de gobierno de datos por fecha (hasta 90 días) y ubicación (Exchange, SharePoint y OneDrive para la Empresa). Los datos más recientes pueden tardar hasta 24 horas en aparecer en los informes.
   
 ![Filtros para informes de gobierno de datos](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   

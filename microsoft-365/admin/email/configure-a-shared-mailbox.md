@@ -118,7 +118,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Permitir que cualquier usuario vea el correo enviado (las respuestas)
 
-By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
+De forma predeterminada, los mensajes enviados al buzón compartido no se guardan en la carpeta Elementos enviados del buzón compartido. En su lugar, se guardan en la carpeta Elementos enviados de la persona que envió el mensaje.
 
 Si desea permitir que todos vean el correo electrónico enviado, en el centro de administración, modifique la configuración del buzón compartido y seleccione **Editar elementos enviados** \> **Edit**.
 

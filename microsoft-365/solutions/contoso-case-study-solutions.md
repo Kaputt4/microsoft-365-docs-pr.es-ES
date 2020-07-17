@@ -25,7 +25,7 @@ ms.locfileid: "44854287"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluciones de Microsoft 365 para Contoso Corporation
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+Contoso Corporation es un conglomerado industrial a nivel mundial ficticio pero representativo, con sede central en París, Francia. Contoso ha implementado Microsoft 365 Enterprise y ha adoptado importantes decisiones sobre el diseño y los detalles de implementación de redes, identidades, Windows 10 Enterprise, Aplicaciones de Microsoft 365 para empresas, administración de dispositivos móviles, protección de la información y seguridad. 
 
 El objetivo general de Contoso para Microsoft 365 Enterprise es acelerar su transformación digital mediante servicios en la nube con el fin de integrar empleados, partners, datos y procesos para aumentar el valor para el cliente y mantener su ventaja competitiva en un mundo digital.
 

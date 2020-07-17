@@ -90,7 +90,7 @@ A continuación, le indicamos los posibles motivos de esto:
 
 ## <a name="i-dont-see-the-plan-i-want"></a>No veo el plan que quiero
 
-When you use the **Switch plans** button, the plans that you can switch to are displayed based on the services in your current plan. You can only use the **Switch plans** button to switch to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the switch.
+Cuando usa el botón **Cambiar de plan**, se muestran los planes a los que puede cambiar en función de los servicios de su plan actual. Solo puede usar el botón **Cambiar de plan** para cambiar a un plan que tenga los servicios relacionados con los mismos datos o una versión superior. Esto garantiza que los usuarios no perderán los datos relacionados con esos servicios durante el cambio.
   
 Para comparar los planes antes de cambiar, consulte la página [de comparación de productos de 365 para empresas de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842056) . Para obtener especificaciones técnicas, consulte las [descripciones de servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
   

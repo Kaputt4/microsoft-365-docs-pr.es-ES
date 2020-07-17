@@ -80,7 +80,7 @@ El filtrado de permisos de búsqueda es compatible con la característica de bú
   
 Si surgen errores, compruebe los requisitos siguientes:
   
-- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
+- Un problema habitual es una contraseña incorrecta. Vuelva a realizar los dos pasos y preste especial atención al nombre de usuario y la contraseña que escriba en el paso 1.
     
 - Compruebe que la cuenta tiene permiso para obtener acceso al centro de seguridad & cumplimiento. Para obtener más información, vea [conceder acceso a los usuarios al centro de seguridad & cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -150,7 +150,7 @@ En este ejemplo se permite que los usuarios ' donh y suzanf busquen solo los buz
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
+En este ejemplo se permite que los miembros del grupo de roles "Administradores de detección de EE. UU." realicen todas las acciones de Búsqueda de contenido solo en los buzones de Estados Unidos. Este filtro contiene el código de país numérico de tres dígitos correspondiente a Estados Unidos según la ISO 3166-1.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

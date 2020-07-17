@@ -45,7 +45,7 @@ Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará
 
 3. En la pestaña del explorador **Centro de administración de Microsoft 365**, situada a la izquierda, haga clic en **Facturación > Servicios de compra**.
 
-4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
+4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
 
 5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
 
@@ -65,7 +65,7 @@ En esta fase se crean y configuran los grupos de Azure AD para la campaña.
 
 En primer lugar, cree un conjunto de grupos para una campaña política típica en Azure Portal.
 
-1. On a separate tab in your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.
+1. En una pestaña independiente en el explorador, vaya a Azure Portal en [https://portal.azure.com](https://portal.azure.com). Si es necesario, inicie sesión con las credenciales de la cuenta de administrador global de la suscripción de evaluación de Office 365 E5.
 
 2. En Azure Portal, haga clic en **Azure Active Directory > Usuarios y grupos > Todos los grupos**.
 
@@ -166,7 +166,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions. As you sign in with each of these new user accounts, you will be prompted to change the password.
+> Se usa una contraseña común para automatizar y facilitar la configuración de un entorno de desarrollo y prueba. Nos se recomienda hacerlo con suscripciones de producción. Cuando inicie sesión con cada una de estas nuevas cuentas de usuario, se le pedirá que cambie la contraseña.
 
 Siga estos pasos para comprobar que las licencias basadas en grupos y la pertenencia dinámica a grupos funcionan correctamente.
 

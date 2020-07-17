@@ -36,7 +36,7 @@ En muchas ocasiones, resulta necesario programar reuniones con personas de fuera
 El uso compartido del calendario es una configuración global, lo que significa que el administrador puede habilitarla para todos los usuarios del espacio empresarial. Una vez que el uso compartido está habilitado, los usuarios pueden usar Outlook Web App para compartir sus calendarios con cualquier persona dentro o fuera de la organización. Las personas de la organización podrán ver el calendario compartido en paralelo con el suyo propio. Las personas de fuera de la organización recibirán una dirección URL que pueden usar para ver el calendario. Los usuarios deciden cuándo compartir, cuánto compartir y cuándo mantener sus calendarios privados.
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Si quiere compartir calendarios con una organización que usa Exchange Server 2013 (una solución local), el administrador de Exchange tendrá que configurar una relación de autenticación con la nube. Esto se conoce como "federación" y debe cumplir unos requisitos mínimos de software. Vea [Uso compartido](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) para obtener más información. 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Habilitar el uso compartido de calendarios mediante el centro de administración de 365 de Microsoft
 
@@ -53,5 +53,5 @@ El uso compartido del calendario es una configuración global, lo que significa 
     
 ## <a name="invite-people-to-access-calendars"></a>Invitar a personas a acceder a los calendarios
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+Una vez que está habilitado el uso compartido para el inquilino, los propietarios del calendario pueden invitar a usuarios específicos. Consulte [Compartir su calendario en Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) para obtener instrucciones. 
   

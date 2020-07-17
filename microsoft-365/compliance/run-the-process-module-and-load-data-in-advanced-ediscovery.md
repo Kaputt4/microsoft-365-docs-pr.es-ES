@@ -27,7 +27,7 @@ ms.locfileid: "44936163"
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos (Classic)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En esta sección se describe la funcionalidad del módulo de proceso avanzado de eDiscovery. 
   

@@ -99,7 +99,7 @@ Complete la configuración de la cuenta Usuario 2 para usar un mensaje de texto 
     
 7. En la página **paso 3: conservar las aplicaciones existentes** , haga clic en **listo**.
     
-8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
+8. Si es la primera vez que inicia sesión con la cuenta Usuario 2, se le pedirá que cambie la contraseña. Escriba la contraseña original y la contraseña nueva dos veces y, después, haga clic en **Actualizar contraseña e iniciar sesión**. Anote la contraseña nueva en un lugar seguro.
     
     Debe ver el portal de Office para el usuario 2 en la pestaña **Página principal de Microsoft Office** del explorador.
 

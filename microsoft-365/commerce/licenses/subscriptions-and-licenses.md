@@ -62,7 +62,7 @@ En la tabla siguiente, se muestra una lista con lo que sucede automáticamente a
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+No es necesario asignar licencias a buzones de recursos, buzones de sala y buzones de correo compartido, excepto cuando se supere la cuota de almacenamiento de 50 gigabytes (GB). Para obtener más información sobre buzones que no son de usuario, vea los siguientes artículos:
   
 - [Crear un buzón compartido](../../admin/email/create-a-shared-mailbox.md)
 - [Quitar la licencia de un buzón compartido](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>¿Quién puede asignar licencias?
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+Los distintos tipos de administradores pueden trabajar con las licencias de diferentes maneras, dependiendo de sus roles. Consulte la tabla siguiente para ver un resumen de las opciones más habituales. Para obtener una lista completa de los roles y los privilegios del administrador, vea [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   
 |**Rol de administrador**|**Asignar una licencia**|**Cancelar la asignación de una licencia**|**Comprar más licencias**|**Eliminar una cuenta**|
 |:-----|:-----|:-----|:-----|:-----|

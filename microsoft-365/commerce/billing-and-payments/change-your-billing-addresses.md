@@ -47,9 +47,9 @@ La factura contiene tres direcciones:
 
 - **Dirección de facturación** Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del **solicitante**.
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+En la mayoría de los casos, estas direcciones son las mismas. Si tiene que cambiar una o varias de estas direcciones, puede hacerlo. También puede proporcionar una dirección de correo electrónico alternativa para recibir las notificaciones de facturación y cambiar la dirección de correo electrónico alternativa de otros administradores.
   
 ::: moniker range="o365-worldwide"
 

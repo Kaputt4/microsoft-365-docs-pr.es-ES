@@ -78,7 +78,7 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
     - **Información de contacto** Expándala para rellenar el número de teléfono móvil, la dirección y demás datos similares.
     - **Contraseña** Use la contraseña generada automáticamente o expanda para especificar una contraseña segura para el usuario. Deben cambiar su contraseña después de 90 días. También puede elegir la opción **Solicitar a este usuario que cambie su contraseña la primera vez que inicie sesión**.
     - **Roles** Expándala si necesita hacer que este usuario sea administrador.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licencias de producto** Expanda esta sección y seleccione la licencia adecuada. Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
     - **Información de contacto** Expándala para rellenar el número de teléfono móvil, la dirección y demás datos similares.
     - **Contraseña** Use la contraseña generada automáticamente o expanda para especificar una contraseña segura para el usuario. Deben cambiar su contraseña después de 90 días. También puede elegir la opción **Solicitar a este usuario que cambie su contraseña la primera vez que inicie sesión**.
     - **Roles** Expándala si necesita hacer que este usuario sea administrador.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licencias de producto** Expanda esta sección y seleccione la licencia adecuada. Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales.
 
 ::: moniker-end
 

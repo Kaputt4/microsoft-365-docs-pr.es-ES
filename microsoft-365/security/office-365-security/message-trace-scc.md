@@ -339,7 +339,7 @@ Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de c
 |`SFV=BLK`|Se omitió el filtrado y se bloqueó el mensaje porque proviene de un remitente bloqueado.|
 |`SFV=SKS`|El mensaje se marcó como correo no deseado antes de ser procesado por el filtrado contra correo electrónico no deseado. Esto incluye los mensajes que coincidan con una regla de flujo de correo (también conocida como regla de transporte), la cual marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtros.|
 |`SCL=<number>`|Para más información sobre los distintos valores SCL y su significado, vea [Niveles de confianza de correo no deseado](spam-confidence-levels.md).|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|Valor de nivel de confianza de protección antiphishing (PCL) del mensaje. Se puede interpretar del mismo modo que los valores de SCL descritos en [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
 |`DI=SB`|Se bloqueó el remitente del mensaje.|
 |`DI=SQ`|El mensaje se puso en cuarentena.|
 |`DI=SD`|El mensaje se eliminó.|

@@ -128,7 +128,7 @@ Para evitar que un usuario inicie sesión con una cuenta de Microsoft, puede res
 
 Después de implementar un complemento, los usuarios finales pueden empezar a usarlo en sus aplicaciones de Office (consulte [empezar a usar el complemento de Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). El complemento aparece en todas las plataformas admitidas por el complemento.
   
-If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
+Si el complemento es compatible con comandos de complemento, estos aparecerán en la cinta de opciones de Office. En el siguiente ejemplo, el comando **Buscar cita** aparece para el complemento **Citas**. 
 
 ![Cinta de Office con citas de búsqueda](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

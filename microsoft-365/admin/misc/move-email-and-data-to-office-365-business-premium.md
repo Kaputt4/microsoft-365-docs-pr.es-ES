@@ -57,19 +57,19 @@ Si quiere mover algunos de sus datos personales a la nueva identidad de negocio,
 4. Seleccione **cargar** para copiar los archivos de la unidad de disco duro en la que copió los archivos de OneDrive. 
   
     > [!NOTE]
-    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
+    >  Puede cargar archivos individuales y grupos de archivos (por ejemplo, todos los archivos en una carpeta en particular) a la vez, pero no puede copiar una carpeta a OneDrive para la Empresa. En su lugar, debe crear la estructura de carpetas que desea en OneDrive para la Empresa. >  Si desea copiar archivos a una carpeta creada en el paso 4, ábrala antes de cargar los archivos. En caso contrario, los archivos se cargarán en la carpeta raíz. También puede mover los archivos entre carpetas en OneDrive para la empresa, una vez que haya los haya cargado. 
   
 ## <a name="outlookemail"></a>[Outlook/correo electrónico](#tab/Outlook)
   
  **Exportar información de Outlook 2013 a un archivo de datos de Outlook**
-1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+1. Para poder crear el archivo de datos de Outlook (.pst), la cuenta de la que desea exportar información debe agregarse a la versión de escritorio de Outlook. Obtenga información sobre cómo agregar una cuenta a Outlook 2013 o versiones posteriores [Configurar el correo electrónico en Outlook (para Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
 2. Cada usuario debe completar los pasos de [Exportar o hacer una copia de seguridad del correo electrónico, los contactos y el calendario a un archivo .pst de Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
     
  **Configurar la nueva cuenta de correo electrónico en Outlook**
 1. Cada usuario debe configurar su nueva cuenta de correo electrónico que se incluye en la suscripción de Microsoft 365 para empresas. Para ello, necesitará la dirección de su nueva cuenta de correo electrónico. La cuenta de correo electrónico de cada usuario es la misma que el nombre de usuario que usan para iniciar sesión en Microsoft 365 para la empresa. Será algo así como marta@contoso.onmicrosoft.com o david@contoso.com.
     
-2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+2. Pida a cada usuario que agregue su cuenta de correo electrónico a Outlook. Para aprender cómo, consulte [Configurar el correo electrónico en Outlook (para Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) o [Configurar el correo electrónico en Outlook para Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Importar información desde el archivo de datos de Outlook**
 1. Esto combina el correo electrónico, el calendario, las tareas y los contactos almacenados en el archivo PST en su cuenta de correo electrónico de Microsoft 365 para empresas.

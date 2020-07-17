@@ -152,7 +152,7 @@ Si ha eliminado un grupo de 365 de Microsoft, de forma predeterminada se conserv
 |![DESC de imagen](../../media/next_steps.png)|Siguientes pasos|<ul><li>Comunicar y publicar las directivas de eliminación y restauración para informar a los usuarios del comportamiento que pueden esperar </li><li> Documente los requisitos de la organización para supervisar los grupos eliminados.</li><li>Planee la implementación de estos requisitos como parte de la implementación de grupos.</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>Durante el período de "eliminación temporal", si un usuario intenta acceder al sitio, recibirán un mensaje de acceso prohibido con el código 403. Después de este período, si el usuario intenta acceder al sitio, recibirá un mensaje de sitio no encontrado con el código 404.
 
 #### <a name="resources"></a>*Recursos*
 - [Restaurar un grupo de Microsoft 365 eliminado](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

@@ -6777,7 +6777,7 @@ El patrón debe incluir todo lo siguiente:
 - 1-7 grupos de cuatro letras o dígitos (pueden estar separados por espacios)
 - 1-3 letras o dígitos
 
-The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
+El formato de cada país es ligeramente diferente. El tipo de información confidencial del IBAN cubre estos 60 países:
 
 ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 

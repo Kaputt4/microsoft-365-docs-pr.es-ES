@@ -72,27 +72,27 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 <tbody>
 <tr class="odd">
 <td align="left">Etiquetas de retención. Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</td>
-<td align="left"><p>Auto apply this label . . .</p>
+<td align="left"><p>Aplicar automáticamente esta etiqueta...</p>
 <p>Datos de cliente</p>
-<p>. . . to documents that match these sensitive information types . . .</p>
+<p>...a documentos que coincidan con estos tipos de información confidencial...</p>
 <p>&lt;lista de ejemplos de información confidencial disponibles&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>Aplicar esta protección...</p>
 <p>&lt;definir la protección&gt;</p>
-<p>. . . to documents with this label . . .</p>
+<p>...a documentos con esta etiqueta...</p>
 <p>Datos de cliente</p></td>
-<td align="left"><p>Alert when files with these attributes . . .</p>
+<td align="left"><p>Enviar alerta cuando los archivos con estos atributos...</p>
 <p>Elija uno o varios atributos: atributo PII predefinido, tipo de información confidencial de Microsoft 365, etiqueta de confidencialidad (AIP), expresión personalizada.</p>
 <p>. . . en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</p><p>Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</td>
 </tr>
 <tr class="even">
-<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
-<td align="left"><p>Publish these labels for users to manually apply . . .</p>
+<td align="left">Tipos de información confidencial. Ejemplos: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</td>
+<td align="left"><p>Publicar estas etiquetas para los usuarios para aplicar manualmente...</p>
 <p>&lt;seleccionar etiquetas&gt;</p>
-<p>. . . to these locations . . .</p>
+<p>...a estas ubicaciones...</p>
 <p>&lt;todas las ubicaciones o elegir ubicaciones específicas&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>Aplicar esta protección...</p>
 <p>&lt;definir la protección&gt;</p>
-<p>. . . to documents that match these sensitive information types&gt;</p></td>
+<p>...a documentos que coincidan con estos tipos de información confidencial&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -100,9 +100,9 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 
 ## <a name="prioritize-auto-apply-label-policies"></a>Asignar prioridades a las directivas de etiqueta de aplicación automática
 
-For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
+Para los datos personales que están sujetos a RGPD, Microsoft recomienda aplicar etiquetas automáticamente mediante tipos de información confidencial que gestione en su entorno. Es importante que las directivas de aplicación automática de etiquetas estén bien diseñadas y probadas para asegurar que se produce el comportamiento esperado.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
+El orden en que las directivas de aplicación automática se crean y si los usuarios aplican o no estas etiquetas afectan al resultado. Por lo tanto, es importante planear cuidadosamente la distribución. Esto es lo que necesita saber.
 
 ### <a name="one-label-at-a-time"></a>Una etiqueta de cada vez
 
@@ -110,11 +110,11 @@ Solo puede aplicar una etiqueta a un documento.
 
 ### <a name="older-auto-apply-policies-win"></a>Las directivas de aplicación automática antiguas tienen prioridad
 
-If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
+Si hay varias reglas que asignan una etiqueta de aplicación automática y el contenido cumple las condiciones de varias reglas, se asigna la etiqueta de la regla más antigua. Por este motivo, es importante planear minuciosamente las directivas de etiqueta antes de configurarlas. Si una organización necesita un cambio en la prioridad de las directivas de etiqueta, tendrá que eliminarlas y volver a crearlas.
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Las etiquetas de usuario aplicadas manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente
 
-Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
+Las etiquetas que el usuario aplica manualmente tienen prioridad sobre las etiquetas aplicadas automáticamente. Las directivas de aplicación automática no pueden reemplazar una etiqueta que ya ha aplicado un usuario, pero los usuarios pueden reemplazar las etiquetas que se aplican automáticamente.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>Las etiquetas asignadas automáticamente pueden actualizarse
 
@@ -124,7 +124,7 @@ Asegúrese de que su plan para implementar etiquetas incluye:
 
 - Dar prioridad al orden en que se crean las directivas de aplicación automática.
 
-- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
+- Permita el tiempo suficiente para que las etiquetas se apliquen automáticamente antes de implementarlas para que los usuarios las apliquen manualmente. Pueden ser necesarios hasta siete días para que las etiquetas se apliquen a todo el contenido que coincida con las condiciones.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Prioridad de ejemplo para crear directivas de aplicación automática
 
@@ -181,7 +181,7 @@ Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimient
 <tbody>
 <tr class="odd">
 <td align="left"><p>Conceda permisos a los miembros de su equipo de cumplimiento.</p></td>
-<td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
+<td align="left"><p>Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el centro de seguridad y/o el centro de cumplimiento. Vaya a los permisos en el centro de seguridad o el centro de cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</p>
 <p>Vea <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</p></td>
 </tr>
 <tr class="even">
@@ -190,7 +190,7 @@ Cree etiquetas y directivas en el centro de seguridad o el centro de cumplimient
 </tr>
 <tr class="odd">
 <td align="left"><p>Cree directivas de aplicación automática para etiquetas.</p></td>
-<td align="left">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</td>
+<td align="left">Vaya a Clasificación en el Centro de seguridad y cumplimiento, elija Directivas de etiqueta y cree las directivas de aplicación automática de etiquetas. Asegúrese de crear estas directivas en el orden de la prioridad.</td>
 </tr>
 </tbody>
 </table>

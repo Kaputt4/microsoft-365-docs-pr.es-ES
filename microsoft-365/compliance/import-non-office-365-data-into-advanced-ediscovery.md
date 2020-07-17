@@ -28,7 +28,7 @@ ms.locfileid: "44817599"
 No todos los documentos que puede que necesite analizar con eDiscovery avanzado residirán en Microsoft 365. Con la característica de importación de contenido que no es de Microsoft 365 en eDiscovery avanzado, puede cargar documentos que no vivan en Microsoft 365 (excepto los archivos PST) en un caso vinculado al BLOB de Azure Storage y analizarlos con la exhibición avanzada de documentos electrónicos. En este procedimiento se muestra cómo traer documentos que no son de Microsoft 365 en eDiscovery avanzado para su análisis.
   
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
 > Puede adquirir una suscripción de complemento de almacenamiento de datos de eDiscovery avanzada para el contenido que no es de Microsoft 365. Esto está disponible exclusivamente para el contenido que se va a analizar con la exhibición avanzada de documentos electrónicos. Siga los pasos que se indican en [comprar o editar un complemento para Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on) y compre el complemento de almacenamiento avanzado de eDiscovery. 

@@ -71,7 +71,7 @@ Para ayudar a mejorar el filtrado de correo no deseado en el servicio para todos
 
 Cree reglas de flujo de correo (también conocidas como reglas de transporte) o filtros personalizados para satisfacer las necesidades de su empresa.
 
-When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
+Al implementar una regla nueva en producción, seleccione primero uno de los modos de prueba para ver su efecto. Cuando tenga la seguridad de que la regla funciona como se espera, cambie el modo de la regla a **Exigir**.
 
 Al implementar reglas nuevas, considere la posibilidad de agregar la acción adicional de **Generar informe de incidentes** para supervisar la regla en acción.
 

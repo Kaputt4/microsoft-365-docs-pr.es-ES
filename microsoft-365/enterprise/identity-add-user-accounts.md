@@ -49,12 +49,12 @@ Azure AD Connect es la herramienta compatible de Microsoft que le guiará durant
 1. Azure AD Connect ejecutado en un servidor busca cambios en las cuentas, grupos y contactos de AD DS.
 2. Azure AD Connect envía los cambios al espacio empresarial de Azure AD de su suscripción de Microsoft 365.
 
-The first decision in your hybrid identity solution is your authentication requirement. The following options are options:
+La primera decisión en su solución de identidad híbrida es el requisito de autenticación. Las siguientes opciones son:
 
-- With **managed authentication**, Azure AD handles the authentication process for user sign-in. There are two methods for managed authentication: 
+- Con la **autenticación administrada**, Azure AD controla el proceso de autenticación de inicio de sesión del usuario. Hay dos métodos de autenticación administrada: 
     - **Sincronización de hash de contraseña (PHS)** (recomendado y necesario para algunas características premium). Esta es la forma más sencilla de habilitar la autenticación para los objetos del directorio local en Azure AD. Azure AD Connect extrae la contraseña con hash de AD DS, realiza procesamientos de seguridad adicionales en el hash de contraseña y la sincroniza con Azure AD. Para obtener más información, vea [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) (Implementación de la sincronización de hash de contraseñas mediante la sincronización de Azure AD Connect).
     - La **autenticación de paso a través (PTA)** proporciona una sencilla solución de validación de contraseñas para servicios basados en Azure AD. PTA usa un agente que se ejecuta en uno o más servidores locales para validar las autenticaciones de usuario directamente con AD DS local. Para obtener más información, vea [User sign-in with Azure Active Directory Pass-through Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication) (Inicio de sesión de usuario con autenticación de paso a través de Azure Active Directory).
-- With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
+- Con la **autenticación federada**, el proceso de autenticación se redirige a otro proveedor de identidades a través de un servidor de federación de identidades, como Servicios de federación de Active Directory (AD FS), para el inicio de sesión de un usuario. El proveedor de identidades puede proporcionar métodos de autenticación adicionales, como la autenticación basada en tarjeta inteligente. Para obtener más información, vea [Elegir el método de autenticación adecuado para la solución de identidad híbrida de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 Vea este vídeo para obtener una introducción a los modelos de identidad y autenticación de Microsoft 365 Enterprise.
 
@@ -116,7 +116,7 @@ La escritura diferida de contraseñas es necesaria para utilizar por completo la
 Para obtener más información e instrucciones de configuración, vea [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback) (SSPR de Azure AD con escritura diferida de contraseñas).
 
 >[!Note]
->Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Actualice a la última versión de Azure AD Connect para garantizar que tiene la mejor experiencia posible y nuevas características cuando se publican. Para obtener más información, vea [Instalación personalizada de Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 |||
