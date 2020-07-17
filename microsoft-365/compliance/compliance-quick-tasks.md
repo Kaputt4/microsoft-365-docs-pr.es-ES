@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar a trabajar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126619"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153693"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar con el cumplimiento de Microsoft 365
 
@@ -101,6 +101,34 @@ La plantilla de directiva de *información confidencial* predefinida le ayuda a 
 
 Para obtener instrucciones paso a paso para planear y configurar el cumplimiento de la comunicación, vea [Plan for Communication Compliance](communication-compliance-plan.md) y [Get Started with Communication Compliance](communication-compliance-configure.md). Para obtener información sobre las licencias de cumplimiento de comunicaciones, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Tarea 9: ver lo que ocurre con sus elementos confidenciales
+
+Las etiquetas de confidencialidad, los tipos de información confidencial, las etiquetas de retención y los clasificadores que se pueden entrenar pueden usarse para clasificar y etiquetar elementos confidenciales en Exchange, SharePoint y OneDrive, tal y como se ha visto en las tareas anteriores. El último paso en el recorrido rápido de la tarea es ver los elementos que se han etiquetado y las acciones que los usuarios toman sobre esos elementos confidenciales. Explorador de [contenido](data-classification-content-explorer.md) y [Explorador de actividades](data-classification-activity-explorer.md) proporcionan esta visibilidad.
+
+### <a name="content-explorer"></a>Explorador de contenido
+ El explorador de contenido le permite ver, en su formato nativo, todos los elementos que se han clasificado como un tipo de información confidencial o que pertenecen a una clasificación determinada por un clasificador capacitado, así como todos los elementos que tienen la etiqueta de confidencialidad o retención aplicada.
+
+Para obtener instrucciones paso a paso sobre el uso del explorador de contenido, vea [conocer la información general de la clasificación](data-classification-overview.md)de datos y [Introducción al explorador de contenido](data-classification-content-explorer.md).
+
+### <a name="activity-explorer"></a>Explorador de actividades
+Activity Explorer le ayuda a supervisar lo que se está haciendo con los elementos confidenciales clasificados y etiquetados en:
+- SharePoint
+- Exchange
+- OneDrive
+
+Hay más de 30 filtros diferentes disponibles, estos son algunos:
+
+- Intervalo de fechas:
+- TIPO DE ACTIVIDAD
+- Ubicación
+- Usuario
+- Etiqueta de confidencialidad
+- Etiqueta de retención:
+- ruta de acceso del archivo
+- Directiva DLP
+
+Para obtener una guía paso a paso sobre el uso del explorador de actividades, consulte Introducción [a Activity Explorer](data-classification-activity-explorer.md).
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, tenga en cuenta las siguientes soluciones de cumplimiento de Microsoft 365 para ayudarle a proteger la información confidencial y a detectar y actuar en riesgos de Insider adicionales.
@@ -112,8 +140,8 @@ Mientras que las directivas de retención se aplican en el nivel de contenedor a
 Además, las etiquetas de retención admiten la [Administración de registros](records-management.md) para marcar contenido como registro. En ese caso, la etiqueta no se puede cambiar o quitar, y el contenido no se puede modificar ni eliminar. Estas restricciones pueden ser necesarias para ayudar a su organización a cumplir con los requisitos normativos.
 
 Para obtener instrucciones paso a paso para crear y publicar etiquetas de retención, consulte las siguientes instrucciones:
-- [Crear etiquetas de retención y aplicarlas a las aplicaciones](create-apply-retention-labels.md)
-- [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
 
 Para obtener información sobre las licencias de administración de registros, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
@@ -125,7 +153,7 @@ Para obtener instrucciones paso a paso para definir tipos personalizados de info
 
 ### <a name="prevent-data-loss"></a>Prevención de la pérdida de datos
 
-[Las directivas de prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) le permiten identificar, supervisar y proteger automáticamente la información confidencial de toda la organización de Microsoft 365. Use directivas de DLP para identificar información confidencial en los servicios de Microsoft, impedir el uso compartido accidental de información confidencial y ayudar a los usuarios a mantener la conformidad sin interrumpir su flujo de trabajo.
+[Las directivas de prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md) le permiten identificar, supervisar y proteger automáticamente la información confidencial de toda la organización de Microsoft 365. Use directivas de DLP para identificar elementos confidenciales en los servicios de Microsoft, impedir el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a mantener la conformidad sin interrumpir su flujo de trabajo.
 
 Para obtener información paso a paso sobre cómo configurar directivas de DLP, consulte Introducción a las [recomendaciones de directivas de DLP](get-started-with-dlp-policy-recommendations.md) y comenzar [a trabajar con la Directiva de DLP predeterminada](get-started-with-the-default-dlp-policy.md). Para obtener información sobre las licencias de administración de pérdida de datos, consulte [Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
