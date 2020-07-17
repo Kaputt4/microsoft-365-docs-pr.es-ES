@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 48705ac6d0c271ca2646de7c058a340ee3f736ae
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0179f208f10921293c164516b26440f5bd043517
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818960"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127487"
 ---
 # <a name="records-management-in-microsoft-365"></a>Administración de registros en Microsoft 365
 
@@ -33,11 +33,11 @@ Las organizaciones de todo tipo requieren una solución de administración de re
 
 La administración de registros de Microsoft 365 ofrece las siguientes funciones:
 
-- **Etiquetar contenido como un registro**. Cree y publique las etiquetas de retención que marcan el contenido como un [registro](records.md) que puede ser aplicado por los usuarios finales o [aplicado automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) mediante la identificación de información confidencial, palabras clave o tipos de contenido
+- **Etiquetar contenido como un registro**. Cree y publique las etiquetas de retención que marcan el contenido como un [registro](records.md) que puede ser aplicado por los usuarios finales o [aplicado automáticamente](apply-retention-labels-automatically.md) mediante la identificación de información confidencial, palabras clave o tipos de contenido
 
 - **Migrar y administrar los requisitos de retención con el plan de archivos**. Si usa un [plan de archivo](file-plan-manager.md), puede agregar un plan de retención existente a Microsoft 365 o crear uno nuevo para las funciones de administración mejoradas.
 
-- **Establecer directivas de retención y eliminación en la etiqueta de registro**. Definir períodos de [retención](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) y [eliminación](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) en función de una serie de factores que incluyen la fecha de la última modificación o creación.
+- **Configure las opciones de retención y eliminación con la etiqueta de retención**. Defina períodos de retención y acciones en función de una serie de factores que incluyen la fecha de la última modificación o creación.
 
 - **Activar retención basada en eventos** con [retención basada en eventos](event-driven-retention.md).
 
@@ -49,6 +49,10 @@ La administración de registros de Microsoft 365 ofrece las siguientes funciones
 
 Con la solución de administración de registros de Microsoft 365, puede incorporar las programaciones de retención de su organización en el plan de archivos para administrar la retención, la declaración de registros y la eliminación para dar soporte a todo el ciclo de vida del contenido.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="additional-resources"></a>Recursos adicionales
+
+Vea la [grabación del seminario web](https://aka.ms/MIPC/Video-RecordsManagementWebinar) y la [presentación de diapositivas con preguntas más frecuentes](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) sobre la administración de registros.
+
+## <a name="next-steps"></a>Pasos siguientes
 
 Si está listo para empezar con la administración de registros de Microsoft 365, vea [Información acerca de los registros](records.md).

@@ -65,6 +65,8 @@
     - name: Introducción al Escritorio administrado de Microsoft
       href: get-started/index.md
       items:
+        - name: Acceso al portal de administración
+          href: get-started/access-admin-portal.md
         - name: Agregar y verificar los contactos de administración en el portal de administración
           href: get-started/add-admin-contacts.md
         - name: Ajustar el acceso condicional

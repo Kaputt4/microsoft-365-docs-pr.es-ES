@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención y configurar la retención basada en eventos.
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419106"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126481"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
@@ -108,11 +108,11 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 - **Duración de la retención:** Cinco años (1825 días).
 
-- **Etiqueta de registro**: configure la etiqueta de retención para clasificar el contenido como un [registro](labels.md#using-retention-labels-for-records-management) (los usuarios no pueden modificar ni eliminar los documentos que se clasifican como registros).
+- **Etiqueta de registro**: configure la etiqueta de retención para clasificar el contenido como un [registro](records.md) (los usuarios no pueden modificar ni eliminar los documentos que se clasifican como registros).
 
 - **Descriptores del plan de archivos:** (para simplificar el escenario, no se proporcionan descriptores de archivo).
 
-La siguiente captura de pantalla muestra la configuración al crear la [etiqueta de retención](labels.md) Especificaciones del producto en el centro de seguridad y cumplimiento. Cuando cree la etiqueta de retención, puede crear el tipo de evento **Cese de producción**. Consulte los pasos que se muestran a continuación.
+La siguiente captura de pantalla muestra la configuración al crear la [etiqueta de retención](retention.md#retention-labels) Especificaciones del producto en el centro de seguridad y cumplimiento. Cuando cree la etiqueta de retención, puede crear el tipo de evento **Cese de producción**. Consulte los pasos que se muestran a continuación.
 
 ![Configuración de retención para la etiqueta Especificaciones de producto](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ Ahora que ha creado la etiqueta de retención, echemos un vistazo a la aplicaci�
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>Clasificación del contenido con la aplicación automática de etiquetas de retención
 
-Vamos a [aplicar automáticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) las etiquetas de retención que hemos creado para este escenario mediante el lenguaje de consulta de palabras clave (KQL). KQL es el lenguaje que se usa para crear consultas de búsqueda. En KQL, puede realizar búsquedas mediante palabras clave o propiedades administradas. Para más información sobre KQL, consulte <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>.
+Vamos a [aplicar automáticamente](apply-retention-labels-automatically.md) las etiquetas de retención que hemos creado para este escenario mediante el lenguaje de consulta de palabras clave (KQL). KQL es el lenguaje que se usa para crear consultas de búsqueda. En KQL, puede realizar búsquedas mediante palabras clave o propiedades administradas. Para más información sobre KQL, consulte <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>.
 
 A nivel general, queremos indicar a Microsoft 365 que "aplique la etiqueta de retención **Especificaciones del producto** a todos los documentos que contengan el **Estado** de **Final ** y un **Tipo de documento** de **Especificaciones del producto**". Recuerde que **Estado** y **Tipo de documento** son las columnas de sitio que hemos definido anteriormente para el tipo de contenido Documentación del producto en la sección [Arquitectura de información](#information-architecture). Para ello, debemos configurar el esquema de búsqueda.
 
@@ -268,7 +268,7 @@ Puesto que las etiquetas de retención se han aplicado automáticamente a los do
 
 Ahora que las etiquetas de retención se aplicaron correctamente y de forma automática, pasemos al evento que indicará el final de producción para un producto en particular. Cuando se produce este evento, desencadena el inicio del periodo de retención definido en la etiqueta de retención aplicada automáticamente a los documentos. Por ejemplo, para los documentos de especificaciones del producto, el período de retención de cinco años comienza cuando se activa el evento "fin de producción".
 
-Puede crear el evento manualmente en el Centro de seguridad y cumplimiento. Para ello, vaya a **Administración de registros** > **Eventos**, elija el tipo de evento, configure los Id. de activo adecuados y escriba la fecha del evento. Para obtener más información, consulte [Información general sobre la retención basada en eventos](event-driven-retention.md).
+Puede crear el evento manualmente en el Centro de seguridad y cumplimiento. Para ello, vaya a **Administración de registros** > **Eventos**, elija el tipo de evento, configure los Id. de activo adecuados y escriba la fecha del evento. Para obtener más información, consulte [Iniciar la retención cuando se produzca un evento](event-driven-retention.md).
 
 Para este escenario, se creará automáticamente el evento al generarlo desde un sistema de producción externo. En este caso, el sistema que genera el evento es una lista simple de SharePoint que indica si un producto está en producción y un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) que está asociado con la lista y que activará el evento. En un escenario real, cualquier sistema podría generar el evento, como un sistema de RRHH o CRM. Flow contiene muchas interacciones listas para usarse y un bloque de creación para cargas de trabajo de Microsoft 365 (como Exchange, SharePoint, Teams y Dynamics 365), así como para aplicaciones de terceros como Twitter, Box, Salesforce y Workdays. Esto hace que sea más fácil integrar Flow en estos sistemas. Para obtener más información, consulte [Retención automática controlada por eventos](automate-event-driven-retention.md).
 
@@ -333,7 +333,7 @@ Esto significa que se ha iniciado el período de retención de la etiqueta aplic
 
 ### <a name="more-about-asset-ids"></a>Más información sobre los Id. de activo
 
-Como se explica en la [Información general sobre la retención controlada por eventos](event-driven-retention.md), es importante entender la relación entre los tipos de eventos, las etiquetas, los eventos y los Id. de activos. El Id. de activo es simplemente otra propiedad de documento en SharePoint y OneDrive. Le ayuda a identificar con mayor detalle los documentos cuyo período de retención se desencadenará con el evento. De forma predeterminada, SharePoint tiene una propiedad Id. de activo que puede usar para la retención basada en eventos:
+Como se explica en el artículo [Iniciar la retención cuando se produzca un evento](event-driven-retention.md), es importante entender la relación entre los tipos de eventos, las etiquetas de retención, los eventos y los id. de activos. El Id. de activo es simplemente otra propiedad de documento en SharePoint y OneDrive. Le ayuda a identificar con mayor detalle los documentos cuyo período de retención se desencadenará con el evento. De forma predeterminada, SharePoint tiene una propiedad Id. de activo que puede usar para la retención basada en eventos:
 
 ![Puede encontrar la propiedad ID. de activo en la página de detalles de las propiedades del documento](../media/SPRetention26.png)
 

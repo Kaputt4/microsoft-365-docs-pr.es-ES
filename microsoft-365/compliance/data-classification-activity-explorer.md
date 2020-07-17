@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327846"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126649"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
@@ -43,7 +43,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben tener una licencia asignada de una de estas suscripciones:
+Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
@@ -74,8 +74,8 @@ El valor de comprensión de las acciones que se toman con el contenido identific
 > [!NOTE]
 > El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.
 
-## <a name="see-also"></a>Ver también
-- [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Etiquetas de retención](labels.md)
+## <a name="see-also"></a>Recursos adicionales
+- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Información sobre las directivas y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-- [Información general sobre las directivas de retención](retention-policies.md)
+
