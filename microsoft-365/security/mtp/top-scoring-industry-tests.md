@@ -1,7 +1,7 @@
 ---
-title: Puntuación más alta en las pruebas del sector (t-TEST, comparaciones de AV, comparaciones de SE, laboratorios de SE, MITRE ATT&CK)
+title: 'Principales resultados de las pruebas del sector: protección contra amenazas de Microsoft'
 ms.reviewer: ''
-description: Microsoft defender ATP alcanza constantemente las puntuaciones más altas en las pruebas independientes. Ver los últimos resultados y análisis.
+description: Ver los últimos resultados y análisis de la protección contra amenazas de Microsoft, que alcanza de manera constante las altas puntuaciones en las pruebas independientes (AV-TEST, comparaciones de AV, laboratorios de SE MITRE ATT&CK). Ver los últimos resultados y análisis.
 keywords: Antivirus de Microsoft defender, antivirus de Windows Defender, revisiones de AV, pruebas de antivirus, pruebas de AV, calificaciones audiovisuales más recientes, puntuaciones de detección, pruebas de productos de seguridad pruebas del sector de la seguridad, pruebas de antivirus del sector, mejor antivirus, prueba AV, comparaciones de AV-comparativas, MITRE ATT&CK, Endpoint Protection Platform, EPP, detección de extremos y respuesta, EDR, Windows 10, antivirus de Microsoft defender, WDAV, MDATP, protección contra amenazas de Microsoft, seguridad, malware, AV, antivirus, puntuaciones, resultados
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909281"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158874"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuación más alta en las pruebas del sector
 
@@ -39,7 +39,7 @@ El enfoque de prueba de Core a MITRE está emulando los ataques del mundo real p
 
     La protección contra amenazas de Microsoft ha proporcionado aproximadamente el 100 por ciento de cobertura en las fases de cadena de ataque. Ofreció una visibilidad previsible líder en las actividades de los intrusos, lo que reduce drásticamente el trabajo manual del centro de operaciones de seguridad frente a las soluciones de proveedores que se basan en cambios de configuración específicos. Además, el menor número de brechas en la visibilidad, disminuye la capacidad del atacante para operar sin detectar.
 
-## <a name="next-generation-protection"></a>Protección de próxima generación
+## <a name="next-generation-protection"></a>Protección de última generación
 
 El [antivirus de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) realiza de forma coherente pruebas independientes en gran medida, lo que muestra cómo es una de las principales opciones en el mercado de antivirus. Tenga en cuenta que estas pruebas solo proporcionan resultados para antivirus y no prueban otras protecciones de seguridad.
 
