@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad de los usuarios de Microsoft Teams y obtenga información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158850"
+ms.locfileid: "45167346"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Informes de Microsoft 365 en el centro de administración: actividad de usuario de Microsoft Teams: vista previa
 
@@ -51,9 +51,9 @@ Puede ver la actividad de usuario en el informe de vista previa de Teams eligien
 |Total de reuniones   <br/> |Número de reuniones en línea en las que el usuario participó durante el período de tiempo especificado.  <br/> |
 |1:1 llamadas   <br/> | Número de llamadas de 1:1 en las que el usuario participó durante el período de tiempo especificado.  <br/> |
 |Fecha de la última actividad (UTC)  <br/> |La última fecha en la que el usuario participó en una actividad de Microsoft Teams.<br/> |
-|Ad participó de reuniones   <br/> | Número de reuniones ad hoc en las que el usuario participó durante el período de tiempo especificado.  <br/> |
-|Reuniones organizadas por ad hoc <br/> |Número de reuniones ad hoc que el usuario organizó durante el período de tiempo especificado. <br/>|
+|Ad participó de reuniones   <br/> | Número de reuniones no programadas en el calendario en el que el usuario participó durante el período de tiempo especificado.  <br/> |
+|Reuniones organizadas por ad hoc <br/> |Número de reuniones no programadas en el calendario que el usuario organizó durante el período de tiempo especificado. <br/>|
 |Reuniones organizadas programadas  <br/> |Número de reuniones programadas que un usuario organizó durante el período de tiempo especificado.  <br/> |
 |Tiene licencia |Seleccionado si el usuario tiene licencia para usar Teams.|
-|Otra actividad|El número de otras actividades del equipo del usuario. |
+|Otra actividad|El usuario se considera activo pero tiene un valor de cero para los mensajes de chat, las llamadas de 1:1, los mensajes de canal, las reuniones totales y las reuniones organizadas. Ejemplos de acciones ¿Cuándo se activa el cliente de Microsoft Teams en primer plano, se tomaron acciones en el área de redacción del mensaje, las notificaciones del sistema aparecieron en el cliente de Microsoft Teams, los banners se mostraron en el cliente de Microsoft Teams, etc. |
 |||

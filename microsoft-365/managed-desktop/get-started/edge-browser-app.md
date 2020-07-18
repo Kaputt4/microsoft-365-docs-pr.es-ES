@@ -4,14 +4,18 @@ description: ''
 keywords: explorador, escritorio administrado por Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094791"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170676"
 ---
 # <a name="new-microsoft-edge-app"></a>Nueva aplicación Microsoft Edge
 
@@ -38,7 +42,7 @@ La línea base de seguridad para Microsoft Edge en dispositivos de escritorio ad
 #### <a name="extension-installation-blocklist"></a>Lista de bloqueo de instalación de extensión
 **Valor predeterminado:** Todos
 
-El escritorio administrado de Microsoft establece esta directiva para evitar que se instalen extensiones de Chrome en los extremos administrados. Se conocen risksassociated con el modelo de extensión de cromo, incluida la protección contra la pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. 
+El escritorio administrado de Microsoft establece esta directiva para evitar que se instalen extensiones de Chrome en los extremos administrados. Hay sassociated de riesgo conocido con el modelo de extensión de cromo, incluida la protección contra la pérdida de datos, la privacidad y otros riesgos que pueden poner en peligro los dispositivos. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Permitir hosts de mensajería nativa en el nivel de usuario (instalado sin permisos de administrador)
 
