@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configure una infraestructura de servicios y seguridad que permita a los trabajadores trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844875"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158904"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
@@ -68,6 +68,12 @@ Las siguientes características y opciones de Microsoft 365 le permiten cumplir
 | Windows Autopilot | Instala y preconfigura nuevos dispositivos con Windows 10 para un uso productivo.   | Microsoft 365 E3 y E5 |
 | Microsoft Teams, Exchange Online, SharePoint Online y OneDrive, Aplicaciones de Microsoft 365, Microsoft Power Platform, Yammer y Power Apps. | Crear, comunicar y colaborar. | Microsoft 365 E3 y E5 |
 ||||
+
+<a name="poster"></a>Para obtener un resumen de dos páginas sobre este escenario, consulte el [póster para aumentar la productividad de los trabajadores remotos](../downloads/empower-remote-workers.pdf).
+
+[![Póster para aumentar la productividad de los trabajadores remotos](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+
+También puede descargar este póster en los formatos [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) e imprimirlo en tamaño carta, legal o tabloide (11 x 17).
 
 Siga los pasos que se indican a continuación para proteger y optimizar el acceso a los servidores, datos y servicios en la nube de la organización y optimizar la productividad de sus empleados.
 
