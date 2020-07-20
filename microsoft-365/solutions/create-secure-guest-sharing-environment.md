@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, aprenderá sobre las opciones disponibles para crear un entorno seguro para compartir invitados en Microsoft 365.
-ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874899"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167370"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -53,10 +53,12 @@ Configurar autenticación multifactor para invitados
 2. En la hoja **Acceso condicional - Directivas**, seleccione **Nueva directiva**.
 3. En el campo **Nombre**, escriba *Invitado MFA*.
 4. En **Asignaciones**, haga clic en **Usuarios y grupos**.
-5. En la hoja **Usuarios y grupos**, seleccione **Seleccionar usuarios y grupos**, marque la casilla **Todos los invitados y usuarios externos** y, a continuación, haga clic en **Listo**.
-4. En **Controles de acceso**, haga clic en **Conceder**.
-5. En la hoja **Conceder**, marque la casilla **Requerir autenticación multifactor** y haga clic en **Seleccionar**.
-6. En la hoja **Nuevo**, en **Habilitar directiva**, haga clic en **Activar** y, luego, haga clic **Crear**.
+5. En la hoja **Usuarios y grupos**, seleccione **Seleccionar usuarios y grupos**, marque la casilla **Todos los invitados y usuarios externos**.
+6. En **Tareas**, haga clic en **Aplicaciones o acciones en la nube**.
+7. En la hoja **Aplicaciones o acciones en la nube**, seleccione **Todas las aplicaciones en la nube** en la pestaña **Incluir**.
+8. En **Controles de acceso**, haga clic en **Conceder**.
+9. En la hoja **Conceder**, marque la casilla **Requerir autenticación multifactor** y haga clic en **Seleccionar**.
+10. En la hoja **Nuevo**, en **Habilitar directiva**, haga clic en **Activar** y, luego, haga clic **Crear**.
 
 Ahora, el invitado deberá inscribirse en la autenticación multifactor para acceder al contenido compartido, a los sitios o a los equipos.
 

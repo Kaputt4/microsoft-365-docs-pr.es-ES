@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Obtenga información acerca de cómo configurar la autenticación multifactor para su organización.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 597d8383166e0ddae0984573d77ba75cf54dafdd
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146235"
+ms.locfileid: "45153682"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurar la autenticación multifactor
   
@@ -76,7 +76,9 @@ Si su organización tiene necesidades de seguridad de inicio de sesión más por
 
 El acceso condicional está disponible para los clientes que han adquirido Azure AD Premium P1 o licencias que lo incluyen, como Microsoft 365 Empresa Premium y Microsoft 365 E3. Para obtener más información, vea [creación de una directiva de acceso condicional](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-El acceso condicional basado en el riesgo está disponible con la licencia de Azure AD Premium P2 o las licencias que lo incluyen, como Microsoft 365 E5. Para obtener más información, vea [Acceso condicional basado en el riesgo](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+El acceso condicional basado en el riesgo está disponible con la licencia de Azure AD Premium P2 o las licencias que lo incluyen, como Microsoft 365 E5. Para más información, vea [Acceso condicional basado en el riesgo](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+
+Para obtener más información sobre Azure AD P1 y P2, vea [Precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Activar la autenticación moderna para su organización
 

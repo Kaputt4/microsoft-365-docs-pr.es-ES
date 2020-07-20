@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678986"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153703"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -166,7 +166,7 @@ Al asignar permisos, puede elegir:
     > [!NOTE]
     > Si especifica un dominio de una organización que usa Azure AD, no puede restringir el acceso a ese dominio específico. En su lugar, todos los dominios comprobados en Azure AD se incluyen automáticamente para el espacio empresarial propietario del nombre de dominio que especifique.
 
-Cuando elige a todos los miembros del espacio empresarial o busca en el directorio, los usuarios o grupos deben tener una dirección de correo electrónico.
+Al elegir todos los usuarios y grupos de su organización o al examina el directorio, los usuarios o grupos deben tener una dirección de correo electrónico.
 
 Se recomienda usar grupos en lugar de usuarios. Esta estrategia mantiene la configuración más sencilla.
 
@@ -216,9 +216,9 @@ Puede usar estas opciones para que los usuarios puedan asignar permisos cuando a
 
 - En Word, PowerPoint y Excel, se pide al usuario que seleccione sus propios permisos para organizaciones, usuarios o grupos específicos. 
     > [!NOTE]
-    > Esta opción para Word, PowerPoint y Excel es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las aplicaciones que usan etiquetas integradas, hay compatibilidad en las [versiones preliminares para Windows y Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) actualmente. 
+    > Esta opción para Word, PowerPoint y Excel es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las aplicaciones que usan etiquetas integradas, [compruebe qué aplicaciones son compatibles](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > Si esta opción está seleccionada, pero no es compatible con la aplicación de un usuario, la etiqueta no se mostrará al usuario, o bien (actualmente, se está implementando en la versión preliminar para iOS y Android) la etiqueta se mostrará por coherencia, pero no se podrá aplicar con un mensaje de explicación para los usuarios.
+    > Si esta opción está seleccionada, pero no es compatible con la aplicación de un usuario, la etiqueta no se mostrará al usuario, o bien la etiqueta se mostrará por coherencia, pero no se podrá aplicar con un mensaje de explicación para los usuarios.
 
 Cuando se admitan las opciones, use la tabla siguiente para identificar cuándo los usuarios ven la etiqueta de confidencialidad:
 
@@ -297,13 +297,13 @@ Esta etiqueta no es adecuada para correos electrónicos.
 
 4. Seleccione **asignar permisos**.
 
-3. En el panel **asignar permisos**, seleccione **agregar estas direcciones de correo electrónico o dominios**.
+3. En el panel **Asignar permisos**, seleccione **Agregar direcciones de correo electrónico o dominios específicos**.
 
 4. En el cuadro de texto, escriba el nombre de un dominio de la otra organización, por ejemplo, **fabrikam.com**. A continuación, seleccione **Aceptar**.
 
-5. Seleccione **elegir permisos predefinidos o personalizados**.
+5. Seleccione **Elegir permisos**.
 
-6. En el panel **elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione **visor** y seleccione **guardar**.
+6. En el panel **Elegir permisos**, seleccione el cuadro de lista desplegable, seleccione **Visor** y, después, **Guardar**.
 
 6. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
 
@@ -318,13 +318,13 @@ Los nuevos usuarios que agregue serán capaces de abrir documentos y mensajes de
 
 2. Seleccione **asignar permisos**.
 
-3. En el panel **asignar permisos**, seleccione **agregar estas direcciones de correo electrónico o dominios**.
+3. En el panel **Asignar permisos**, seleccione **Agregar direcciones de correo electrónico o dominios específicos**.
 
 4. En el cuadro de texto, escriba la dirección de correo electrónico del primer usuario (o grupo) que desea agregar y seleccione **agregar**.
 
-5. Seleccione **elegir permisos predefinidos o personalizados**.
+5. Seleccione **Elegir permisos**.
 
-6. En el panel **elegir permisos predefinidos o personalizados**, seleccione los permisos para este usuario (o grupo) y seleccione **guardar**.
+6. En el panel **Elegir permisos**, seleccione los permisos para este usuario (o grupo) y seleccione **Guardar**.
 
 7. De nuevo, en el panel **asignar permisos**, repita los pasos del 3 al 6 para cada usuario (o grupo) que quiera agregar a esta etiqueta. Después, haga clic en **Guardar**.
 
@@ -345,11 +345,11 @@ Use esta configuración solo si no necesita restringir quién puede abrir el doc
 
 4. En el panel **asignar permisos**, seleccione **agregar cualquiera de los usuarios autenticados**. 
     
-    Para **usuarios y grupos**, verá que **AuthenticatedUsers** se agrega automáticamente. No se puede cambiar este valor, solo eliminarlo, lo que cancela la selección de **agregar cualquiera de los usuarios autenticados**.
+    Para **Usuarios y grupos**, verá que **Usuarios autenticados** se agrega automáticamente. No se puede cambiar este valor, solo eliminarlo, lo que cancela la selección de **agregar cualquiera de los usuarios autenticados**.
 
-5. Seleccione **elegir permisos predefinidos o personalizados**.
+5. Seleccione **Elegir permisos**.
 
-6. En el panel **Elegir permisos predefinidos o personalizados**, seleccione el cuadro de lista desplegable, seleccione los permisos que quiera y seleccione **Guardar**.
+6. En el panel **Elegir permisos**, seleccione el cuadro de lista desplegable, elija los permisos que quiera y seleccione **Guardar**.
 
 7. De nuevo, en el panel **asignar permisos**, seleccione **guardar**.
 
