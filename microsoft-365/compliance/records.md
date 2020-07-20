@@ -82,7 +82,7 @@ Al crear una etiqueta de retención, tiene la opción de usarla para marcar el c
     
    ![Haga clic en usar etiqueta para clasificar contenido como una casilla de registro](../media/recordversioning6.png)
 
-3. Aplique la etiqueta de retención a los sitios de SharePoint y las cuentas de OneDrive:
+3. Aplique la etiqueta de retención a los sitios de SharePoint y a las cuentas de OneDrive:
     
     - [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
     

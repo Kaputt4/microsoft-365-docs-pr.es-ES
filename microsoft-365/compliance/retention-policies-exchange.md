@@ -40,7 +40,7 @@ El trabajo del temporizador puede tardar hasta siete días en ejecutarse y la ub
   
 When a user attempts to change properties of a mailbox item—such as the subject, body, attachments, senders and recipients, or date sent or received for a message—a copy of the original item is saved to the Recoverable Items folder before the change is committed. Esto ocurre con cada cambio posterior. Al final del período de retención, se eliminan de forma permanente las copias de la carpeta Elementos recuperables.
 
-Una vez que se aplica la configuración de retención al contenido Exchange, las rutas que sigue el contenido dependen de si la configuración de retención debe retener y eliminar, solo retener o solo eliminar.
+Una vez que se aplica la configuración de retención al contenido de Exchange, las rutas que sigue el contenido dependen de si la configuración de retención debe retener y eliminar, solo retener o solo eliminar.
 
 Cuando los ajustes de retención son para retener y borrar:
 

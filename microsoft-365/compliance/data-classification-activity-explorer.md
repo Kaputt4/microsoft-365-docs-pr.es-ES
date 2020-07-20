@@ -75,7 +75,7 @@ El valor de comprensión de las acciones que se toman con el contenido identific
 > El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.
 
 ## <a name="see-also"></a>Recursos adicionales
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
-- [Información sobre las directivas y las etiquetas de retención](retention.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
