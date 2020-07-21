@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936931"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199630"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -109,11 +109,13 @@ Use las siguientes instrucciones para crear, modificar o eliminar las etiquetas 
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Crear y publicar etiquetas configuradas para sitios y grupos
 
-Una vez se crea y se publica una etiqueta de confidencialidad, puede tardar hasta 24 horas en ser visible para los usuarios en los equipos, grupos y sitios. Use las siguientes instrucciones para publicar una etiqueta para los usuarios establecida para la configuración de sitio y grupo:
+Cuando se crea y se publica una nueva etiqueta de confidencialidad, los usuarios en los equipos, grupos y sitios pueden verla en un plazo de una hora. Sin embargo, si modifica una etiqueta existente, permita que pasen hasta 24 horas. Use las siguientes instrucciones para publicar una etiqueta para los usuarios establecida para la configuración de sitio y grupo:
 
 1. Después de crear y configurar la etiqueta de confidencialidad, agréguela a una directiva de etiqueta que solo se aplique a algunos usuarios de prueba.
 
-2. Espere 24 horas.
+2. Espere a que se replique el cambio:
+    - Nueva etiqueta: espere una hora.
+    - Etiqueta existente: espere 24 horas.
 
 3. Después de este período, utilice una de las cuentas de usuario de prueba para crear un equipo, un grupo de Microsoft 365 o un sitio de SharePoint con la etiqueta creada en el paso 1.
 
@@ -121,7 +123,7 @@ Una vez se crea y se publica una etiqueta de confidencialidad, puede tardar hast
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modificar las etiquetas publicadas que están configuradas para sitios y grupos
 
-Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta 3 días para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada. 
+Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta 24 horas para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada. 
 
 Además, si los cambios incluyen la configuración **Acceso de usuarios externos**:
 
@@ -136,7 +138,7 @@ Si elimina una etiqueta de confidencialidad con la configuración de sitio y gru
 
 1. Elimine la etiqueta de confidencialidad de todas las directivas de etiqueta que la incluyan.
 
-2. Espere 48 horas.
+2. Espere una hora.
 
 3. Después de este período, pruebe a crear un equipo, grupo o sitio y compruebe que la etiqueta ya no es visible.
 
