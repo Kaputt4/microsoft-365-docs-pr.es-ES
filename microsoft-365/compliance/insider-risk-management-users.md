@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2b1a229bad5bc82f61227bd5a273af1aefb3481
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 0997ecc83ad7f97d1fb7273bcac8b026f6432091
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900814"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199517"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Panel de usuarios de administración de riesgos de Insider
 
 El **Panel de usuarios** es una herramienta importante en el flujo de trabajo de administración de riesgos de Insider y ayuda a los investigadores y analistas a comprender mejor las actividades de riesgo. Este panel ofrece vistas y características de administración para satisfacer las necesidades administrativas entre la creación de directivas de administración de riesgos de Insider y la administración de casos de administración de riesgos de Insider.
 
-Una vez que se agregan usuarios a las directivas de administración de riesgos de Insider, los procesos en segundo plano evalúan automáticamente las actividades de usuario para [desencadenar indicadores](insider-risk-management-policies.md#indicators). Una vez que se han desencadenado los indicadores, se les asignan los resultados de las actividades de usuario. Algunas de estas actividades pueden dar como resultado una alerta de riesgo de Insider, pero algunas actividades podrían no cumplir un nivel de puntuación de riesgo mínimo y no se creará una alerta de riesgo de Insider. El **Panel de usuarios** le permite ver los usuarios con estos tipos de indicadores y puntuaciones de riesgos, así como los usuarios que tienen alertas activas de riesgo de Insider.
+Una vez que se agregan usuarios a las directivas de administración de riesgos de Insider, los procesos en segundo plano evalúan automáticamente las actividades de usuario para [desencadenar indicadores](insider-risk-management-settings.md#indicators). Una vez que se han desencadenado los indicadores, se les asignan los resultados de las actividades de usuario. Algunas de estas actividades pueden dar como resultado una alerta de riesgo de Insider, pero algunas actividades podrían no cumplir un nivel de puntuación de riesgo mínimo y no se creará una alerta de riesgo de Insider. El **Panel de usuarios** le permite ver los usuarios con estos tipos de indicadores y puntuaciones de riesgos, así como los usuarios que tienen alertas activas de riesgo de Insider.
 
 Además, puede haber escenarios en los que necesite agregar temporalmente usuarios a directivas de riesgo de Insider después de que se informe de un evento inusual fuera del flujo de trabajo de administración de riesgos de Insider. El **Panel de usuarios** le permite agregar manualmente un usuario a una directiva de riesgos de Insider durante un período de tiempo específico y omitir el requisito de que un usuario tenga un indicador de activación. Estos usuarios siempre se muestran en el panel usuarios cuando se asigna activamente a una directiva.
 
@@ -39,7 +39,7 @@ El **Panel usuarios** muestra automáticamente todos los usuarios con alertas de
 
 ## <a name="dashboard-users-with-triggering-indicators"></a>Usuarios del panel con indicadores de activación
 
-El **Panel usuarios** muestra automáticamente todos los usuarios con indicadores de desencadenamiento, pero que no tienen una puntuación de riesgo de actividad que crearía una actividad de riesgo de Insider. Por ejemplo, se muestra un usuario con una fecha de retirada notificada porque este evento es un indicador de desencadenamiento, pero no es una actividad que tiene una puntuación de riesgo. Para ver las actividades de estos usuarios, seleccione el usuario en el **Panel usuarios** y vaya a la pestaña **actividad de usuario** .
+El **Panel usuarios** muestra automáticamente todos los usuarios con indicadores de desencadenamiento, pero que no tienen una puntuación de riesgo de actividad que crearía una alerta de riesgo de Insider. Por ejemplo, se muestra un usuario con una fecha de retirada notificada porque este evento es un indicador de activación pero no es una actividad que tiene una puntuación de riesgo. Para ver las actividades de estos usuarios, seleccione el usuario en el **Panel usuarios** y vaya a la pestaña **actividad de usuario** .
 
 ## <a name="dashboard-users-added-temporarily-to-policies"></a>Usuarios de panel agregados temporalmente a directivas
 

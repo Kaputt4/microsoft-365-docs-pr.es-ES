@@ -1,5 +1,5 @@
 ---
-title: Obtener visibilidad de la postura de seguridad a través de la puntuación segura de Microsoft
+title: Evaluar la postura de seguridad a través de la puntuación segura de Microsoft
 description: Describe cómo realizar una acción para mejorar la puntuación segura de Microsoft en el centro de seguridad de Microsoft 365.
 keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095076"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200067"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>Obtener visibilidad de la postura de seguridad a través de la puntuación segura de Microsoft
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la postura de seguridad con calificación segura de Microsoft
 
 La calificación segura de Microsoft es una medida de la postura de seguridad de una organización, con un número más alto que indica que se han realizado más acciones de mejora. Puede encontrarse en https://security.microsoft.com/securescore el [centro de seguridad de Microsoft 365](overview-security-center.md).
 
@@ -40,7 +40,7 @@ Para ayudarle a la información que necesita con mayor rapidez, las acciones de 
 * Infraestructura (no hay acciones de mejora por ahora)
 
 >[!NOTE]
->En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado que ha hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de la identidad y la API de Graph. [Ver detalles](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>En la versión más reciente de la puntuación segura de Microsoft, se ha lanzado un modelo de resultados mejorado que ha hecho que la puntuación segura de Microsoft sea incompatible temporalmente con la puntuación segura de la identidad y la API de Graph. [Ver detalles](microsoft-secure-score-whats-new.md)
 
 En la página información general sobre la calificación segura de Microsoft, puede ver cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. La página de información general también es la ubicación para obtener una vista completa de la puntuación total, la tendencia histórica de la puntuación segura con comparaciones de los bancos de pruebas y las acciones de mejora ordenadas por prioridad que se pueden realizar para mejorar la puntuación.
 
@@ -121,3 +121,4 @@ Si tiene algún problema, háganoslo saber mediante la publicación de la comuni
 - [Introducción a la puntuación segura de Microsoft](microsoft-secure-score.md)
 - [Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir los objetivos](microsoft-secure-score-history-metrics-trends.md)
 - [Próximas novedades](microsoft-secure-score-whats-coming.md)
+- [Novedades](microsoft-secure-score-whats-new.md)

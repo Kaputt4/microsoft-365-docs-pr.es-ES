@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158874"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185997"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuación más alta en las pruebas del sector
 
@@ -44,19 +44,18 @@ El enfoque de prueba de Core a MITRE está emulando los ataques del mundo real p
 El [antivirus de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) realiza de forma coherente pruebas independientes en gran medida, lo que muestra cómo es una de las principales opciones en el mercado de antivirus. Tenga en cuenta que estas pruebas solo proporcionan resultados para antivirus y no prueban otras protecciones de seguridad.
 
 Antivirus de Microsoft defender es la capacidad de protección de la [próxima generación](https://www.youtube.com/watch?v=Xy3MOxkX_o4) de la [pila de seguridad de Windows 10 ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) que aborda las últimas y más sofisticadas amenazas hoy mismo. En algunos casos, es posible que los clientes ni siquiera sepan que están protegidos porque un ciberataque se detiene en [milisegundos después de que se inicie una campaña](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). Esto se debe a que las capacidades antivirus de Microsoft defender y otras capacidades de la [plataforma de protección de extremos (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) de Microsoft defender ATP detectan y detienen el malware a primera vista con el [aprendizaje automático](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), la [inteligencia artificial](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), el análisis del comportamiento y otras tecnologías avanzadas.
-<br><br>
-
-**Descargue el último informe de transparencia: [examen de los resultados de la prueba de AVT, de enero a febrero de 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 ### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-TEST: puntuación de protección de 5.5/6.0 en la última prueba
 
 Las pruebas del informe de revisión y certificación de prueba de productos en tres categorías: protección, rendimiento y facilidad de uso. Las siguientes puntuaciones son para la categoría de protección que tiene dos puntuaciones: pruebas reales y la referencia de prueba de antivirus (conocida como "malware predominante").
 
+**Descargue el último informe de transparencias: [examen de los resultados de las pruebas de AV, enero a febrero de 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+
 - Marzo: antivirus de abril de 2020 de prueba, prueba del usuario de la empresa: evaluación de la [protección 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**más reciente**</sup>
 
     El antivirus de Microsoft defender alcanzó una puntuación de protección general de 5.5/6.0, con ejemplos de malware de 20.540 usados.
 
-- Enero: antivirus de febrero de 2020, prueba del usuario de la empresa de prueba: Análisis de la [puntuación de protección 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)
+- Enero: antivirus de febrero de 2020, prueba del usuario de la empresa de prueba: Análisis de la [puntuación de protección 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - Noviembre 2019 AV de diciembre, prueba de usuario de negocio de prueba: [puntuación de protección 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
@@ -84,7 +83,9 @@ La prueba de seguridad empresarial consta de tres partes principales: la prueba 
 
 SE Labs prueba una serie de soluciones que usan los productos y servicios para detectar o proteger contra ataques, incluidos el software de extremo, los dispositivos de red y los servicios en la nube.
 
-- Enterprise Endpoint Protection enero-2020 de marzo: [AAA Award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**PDF**</sup>
+**Descargue el último informe de transparencias: [examen de los resultados de las pruebas de los laboratorios de se, enero-2020 de marzo](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- Enterprise Endpoint Protection enero-2020 de marzo: [AAA](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) - <sup>**pdf**</sup>  |  [análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq) de PDF de premio
 
     La protección de próxima generación de Microsoft se ha nombrado como uno de los productos principales, deteniendo todos los ataques a los que se dirige y todas las amenazas públicas menos una.
 

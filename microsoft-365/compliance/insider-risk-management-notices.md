@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 0211eefe3c4a946bbaa4ad4c8c66e5df7b37091e
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179091"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199497"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Plantillas de aviso de administración de riesgos de Insider
 
-Las plantillas de aviso de administración de riesgos de Insider permiten enviar mensajes de correo electrónico a los empleados cuando sus actividades generan una coincidencia de directiva y una alerta. En la mayoría de los casos, las acciones de los empleados que generan alertas son el resultado de errores o actividades involuntarias sin intención. Los avisos sirven como sencillos avisos a los empleados para que tengan más cuidado o proporcionen vínculos o información para un aprendizaje de refresco o recursos de directivas corporativas. Los avisos pueden ser una parte importante del programa de formación de cumplimiento interno y pueden ayudar a crear una pista de auditoría documentada para los empleados con actividades recurrentes de riesgo.
+Las plantillas de aviso de administración de riesgos de Insider permiten enviar mensajes de correo electrónico a los usuarios cuando sus actividades generan una coincidencia de directiva y una alerta. En la mayoría de los casos, las acciones del usuario que generan alertas son el resultado de errores o actividades involuntarias sin intención. Los avisos sirven como sencillos avisos a los usuarios para que tengan más cuidado, proporcionar vínculos a la información sobre el aprendizaje de los refrescos o a los recursos de directivas corporativas. Los avisos pueden ser una parte importante del programa de formación de cumplimiento interno y pueden ayudar a crear un seguimiento de auditoría documentado para los usuarios con actividades de riesgo recurrentes.
 
-Cree plantillas de aviso si desea enviar a los usuarios un aviso de recordatorio de correo electrónico sobre las coincidencias de directivas como parte del proceso de resolución de problemas. Los avisos solo pueden enviarse a la dirección de correo electrónico del empleado asociada a la alerta específica que se está revisando. Al seleccionar una plantilla de notificación para aplicar a una coincidencia de Directiva, puede optar por aceptar los valores de campo definidos en la plantilla o sobrescribir los campos según sea necesario.
+Cree plantillas de aviso si desea enviar a los usuarios un aviso de recordatorio de correo electrónico sobre las coincidencias de directivas como parte del proceso de resolución de problemas. Los avisos solo pueden enviarse a la dirección de correo electrónico del usuario asociada con la alerta específica que se está revisando. Al seleccionar una plantilla de notificación para aplicar a una coincidencia de Directiva, puede optar por aceptar los valores de campo definidos en la plantilla o sobrescribir los campos según sea necesario.
 
 ## <a name="notice-templates-dashboard"></a>Panel plantillas de aviso
 
@@ -39,9 +39,9 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+<h2>Action Required: Contoso User Code of Conduct Policy Training</h2>
+<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso User <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>You are required to attend the Contoso User Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
 <p>Thank you,</p>
 <p><em>Human Resources</em></p>
 </body>
@@ -61,7 +61,7 @@ Complete los siguientes pasos para crear una nueva plantilla de aviso de adminis
 2. Seleccione **Crear plantilla de notificación** para abrir el Asistente para anuncios.
 3. En la página **crear una nueva plantilla de notificación** , complete los campos siguientes:
     - **Nombre de plantilla**: escriba un nombre descriptivo para el aviso. Este nombre aparece en la lista de avisos en el panel de notificación y en la lista de selección de aviso al enviar avisos desde un caso.
-    - **Enviar desde**: escriba la dirección de correo electrónico del remitente para el aviso. Esta dirección aparecerá en el campo **desde:** de todos los avisos que se envían a los empleados a menos que se cambie al enviar un aviso desde un caso.
+    - **Enviar desde**: escriba la dirección de correo electrónico del remitente para el aviso. Esta dirección aparecerá en el campo **de:** de todos los avisos que se envían a los usuarios a menos que se cambie al enviar un aviso desde un caso.
     - Campos **CC y CCO** : usuarios o grupos opcionales a los que se les notificará la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción.
     - **Asunto**: la información que aparece en la línea de asunto del mensaje admite caracteres de texto.
     - **Cuerpo del mensaje**: información que aparece en el cuerpo del mensaje, compatible con texto o con valores HTML.
@@ -76,7 +76,7 @@ Para actualizar una plantilla de aviso de administración de riesgos de Insider 
 3. En la página Detalles de la notificación, seleccione **Editar**
 4. En la página **Editar** , puede editar los campos siguientes:
     - **Nombre de plantilla**: escriba un nuevo nombre descriptivo para el aviso. Este nombre aparece en la lista de avisos en el panel de notificación y en la lista de selección de aviso al enviar avisos desde un caso.
-    - **Send from**: actualizar la dirección de correo electrónico del remitente para el aviso. Esta dirección aparecerá en el campo **desde:** de todos los avisos que se envían a los empleados a menos que se cambie al enviar un aviso desde un caso.
+    - **Send from**: actualizar la dirección de correo electrónico del remitente para el aviso. Esta dirección aparecerá en el campo **de:** de todos los avisos que se envían a los usuarios a menos que se cambie al enviar un aviso desde un caso.
     - Campos **CC y CCO** : actualizar grupos o usuarios opcionales para recibir una notificación de la coincidencia de la Directiva, seleccionada en Active Directory de la suscripción.
     - **Asunto**: la información de actualización que aparece en la línea de asunto del mensaje admite caracteres de texto.
     - **Cuerpo del mensaje**: actualizar la información que aparece en el cuerpo del mensaje, admite texto o valores HTML.

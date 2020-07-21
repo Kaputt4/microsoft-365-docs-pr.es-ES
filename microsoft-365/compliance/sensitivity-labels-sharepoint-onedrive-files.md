@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780723"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199530"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -164,17 +164,18 @@ Para habilitar las nuevas funciones, use el cmdlet [set-SPOTenant](https://docs.
     ```
 3. Para Microsoft 365 multi-geo: Repita los pasos 1 y 2 para cada una de las ubicaciones geográficas restantes.
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Programar la distribución después de crear o cambiar una etiqueta de confidencialidad
+## <a name="publishing-and-changing-sensitivity-labels"></a>Publicar y cambiar las etiquetas de confidencialidad
 
-Después de crear o cambiar una etiqueta de confidencialidad en el centro de cumplimiento de Microsoft 365, publíquela en fases. Si publica etiquetas que no se han sincronizado completamente, cuando los usuarios aplican las etiquetas a los archivos y los cargan en SharePoint, los archivos no se pueden abrir en las versiones web de las aplicaciones de Office. La búsqueda y la exhibición de documentos electrónicos tampoco funcionan para los archivos.
+Cuando use etiquetas de confidencialidad con SharePoint y OneDrive, tenga en cuenta que debe permitir el tiempo de replicación cuando publique nuevas etiquetas de confidencialidad o actualice las etiquetas de confidencialidad existentes. Esto es especialmente importante para las etiquetas nuevas que aplican el cifrado.
 
-Le recomendamos que siga estos pasos:
+Por ejemplo: cree y publique una nueva etiqueta de confidencialidad que aplique el cifrado y aparezca muy rápido en la aplicación de escritorio de un usuario. El usuario aplica esta etiqueta a un documento y, a continuación, lo carga en SharePoint o en OneDrive. Si no se ha completado la replicación de la etiqueta para el servicio, las nuevas funciones no se aplicarán a ese documento al cargarlo. Como resultado, el documento no se devolverá en la búsqueda ni en la exhibición de documentos electrónicos y el documento no se puede abrir en Office para la Web.
 
-1. Publicar la etiqueta de confidencialidad nueva o modificada solo para una o dos personas.
+- Los cambios siguientes se replican en una hora: las etiquetas de sensibilidad nuevas y eliminadas y la configuración de la Directiva de la etiqueta de confidencialidad, que incluye las etiquetas que se encuentran en la Directiva.
 
-2. Espere al menos 24 horas después de la publicación inicial. Compruebe que la etiqueta se haya sincronizado completamente.
+- Los siguientes cambios se replican en 24 horas: cambia la configuración de la etiqueta de confidencialidad de las etiquetas existentes.
 
-3. Publique la etiqueta de forma general.
+Dado que el retraso de la replicación ahora es sólo una hora para las nuevas etiquetas de confidencialidad, es poco probable que ejecute el escenario en el ejemplo. Pero, como medida de seguridad, se recomienda publicar etiquetas nuevas en solo unos pocos usuarios de prueba, esperar una hora y, a continuación, comprobar el comportamiento de la etiqueta en SharePoint y OneDrive. Como último paso, ponga la etiqueta a disposición de más usuarios agregando más usuarios a la Directiva de etiqueta existente o agregue la etiqueta a una directiva de etiqueta existente para los usuarios estándar. En el momento en que los usuarios estándar ven la etiqueta, ya se ha sincronizado con SharePoint y OneDrive.
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) y las etiquetas de confidencialidad
 

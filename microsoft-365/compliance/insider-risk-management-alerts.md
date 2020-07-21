@@ -12,20 +12,20 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0618eb6b68f5753ea6af2469e3487eabfe566450
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 7b7b6e15528d91a59575e2cfda5808106df7d61b
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292488"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199704"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertas de administración de riesgos de Insider
 
-Los indicadores de riesgo definidos en las directivas de administración de riesgos de Insider generan automáticamente alertas de administración de riesgos de Insider. Estas alertas dan a los analistas y investigadores de cumplimiento una visión general del estado de riesgo actual y permiten que su organización clasifique y realice acciones para los riesgos detectados. De forma predeterminada, las directivas generan una determinada cantidad de alertas de gravedad baja, media y alta, pero puede [aumentar o disminuir el volumen de alertas](insider-risk-management-policies.md#alert-volume) según sus necesidades.
+Los indicadores de riesgo definidos en las directivas de administración de riesgos de Insider generan automáticamente alertas de administración de riesgos de Insider. Estas alertas dan a los analistas y investigadores de cumplimiento una visión general del estado de riesgo actual y permiten que su organización clasifique y realice acciones para los riesgos detectados. De forma predeterminada, las directivas generan una determinada cantidad de alertas de gravedad baja, media y alta, pero puede [aumentar o disminuir el volumen de alertas](insider-risk-management-settings.md#alert-volume) según sus necesidades. Además, puede configurar el [umbral de alerta para los indicadores de directiva](insider-risk-management-settings.md#indicator-level-settings-preview) al crear una nueva directiva con el Asistente para directivas.
 
 ## <a name="alert-dashboard"></a>Panel de alertas
 
-El panel de **alertas** de riesgo de Insider le permite ver y emprender acciones sobre las alertas generadas por las directivas de riesgos de Insider. Cada widget de informe muestra información de los últimos 30 días.
+El panel de **alertas** de riesgo de Insider le permite ver y actuar en alertas generadas por las directivas de riesgos de Insider. Cada widget de informe muestra información de los últimos 30 días.
 
 - **Alertas para revisión**: se enumera el número total de alertas que se deben revisar y clasificar, incluido un desglose por gravedad de alerta.
 - **Alertas abiertas durante los últimos 30 días**: el número total de alertas creadas por las coincidencias de directivas en los últimos 30 días, ordenadas por niveles de gravedad de alertas alta, media y baja.
@@ -48,17 +48,17 @@ Puede clasificar las alertas en uno de los Estados siguientes:
 - **Revisión de necesidades**: una nueva alerta en la que todavía no se han llevado A cabo las acciones de evaluación.
 - **Resuelto**: una alerta que forma parte de un caso cerrado y resuelto.
 
-Los resultados de riesgo de alertas se calculan automáticamente a partir de varios atributos de actividad de riesgo. Estos atributos incluyen el tipo de actividad de riesgo, el número y la frecuencia de la ocurrencia de la actividad, el historial de la actividad de riesgos de usuario y la adición de riesgos de actividad que puedan aumentar la gravedad de la actividad. La puntuación de riesgo de alertas controla la asignación mediante programación de un nivel de gravedad de riesgo para cada alerta y no se puede personalizar. Si las alertas siguen siendo no clasificadas y las actividades de riesgo continúan acumuladas en la alerta, el nivel de gravedad del riesgo puede aumentar. Los analistas de riesgos y investigadores pueden usar la gravedad de riesgo de alertas para ayudar a evaluar las alertas de acuerdo con las directivas y estándares de riesgo de su organización.
+Los resultados de riesgo de alertas se calculan automáticamente a partir de varios indicadores de actividad de riesgos. Estos indicadores incluyen el tipo de actividad de riesgo, el número y la frecuencia de la ocurrencia de la actividad, el historial de la actividad de riesgos de usuario y la adición de riesgos de actividad que puedan aumentar la gravedad de la actividad. La puntuación de riesgo de alertas controla la asignación mediante programación de un nivel de gravedad de riesgo para cada alerta y no se puede personalizar. Si las alertas siguen siendo no clasificadas y las actividades de riesgo continúan acumuladas en la alerta, el nivel de gravedad del riesgo puede aumentar. Los analistas de riesgos y investigadores pueden usar la gravedad de riesgo de alertas para ayudar a evaluar las alertas de acuerdo con las directivas y estándares de riesgo de su organización.
 
 Los niveles de gravedad de riesgo de alertas son:
 
-- **Gravedad alta**: la actividad y los indicadores de la alerta suponen un riesgo significativo. Las actividades de riesgo asociadas son serias, repetitivas y corelacionadas de manera segura con otros factores de riesgo significativos.
-- **Gravedad media**: la actividad y los indicadores de la alerta representan un riesgo moderado. Las actividades de riesgo asociadas son moderadas, frecuentes y tienen cierta correlación con otros factores de riesgo.
-- **Gravedad baja**: la actividad y los indicadores de la alerta suponen un riesgo menor. Las actividades de riesgo asociadas son secundarias, más poco frecuentes y no corelacionadas con otros factores de riesgo significativos.
+- **Gravedad alta**: las actividades y los indicadores de la alerta presentan un riesgo significativo. Las actividades de riesgo asociadas son serias, repetitivas y corelacionadas de manera segura con otros factores de riesgo significativos.
+- **Gravedad media**: las actividades y los indicadores de la alerta representan un riesgo moderado. Las actividades de riesgo asociadas son moderadas, frecuentes y tienen cierta correlación con otros factores de riesgo.
+- **Gravedad baja**: las actividades y los indicadores de la alerta suponen un riesgo menor. Las actividades de riesgo asociadas son secundarias, más poco frecuentes y no corelacionadas con otros factores de riesgo significativos.
 
 ## <a name="filter-alerts"></a>Alertas de filtros
 
-Según el número y el tipo de directivas activas de administración de riesgos de Insider en la organización, la revisión de una cola de alertas de gran tamaño puede resultar complicada. El uso de filtros de alerta puede ayudar a los analistas y investigadores a ordenar las alertas por varios atributos. Para filtrar las alertas del panel alertas, seleccione el control **filtro** . Puede filtrar las alertas por uno o más atributos:
+Según el número y el tipo de directivas activas de administración de riesgos de Insider en la organización, la revisión de una cola de alertas de gran tamaño puede resultar complicada. El uso de filtros de alerta puede ayudar a los analistas y investigadores a ordenar las alertas por varios atributos. Para filtrar las alertas del **Panel alertas**, seleccione el control **filtro** . Puede filtrar las alertas por uno o más atributos:
 
 - **Estado**: Seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones se *confirman*, *desechan*, *necesitan revisión*y se *resuelven*.
 - **Gravedad**: Seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *alta*, *media*y *baja*.
@@ -81,15 +81,15 @@ Para clasificar una alerta de riesgo de Insider, siga los pasos que se indican a
         - **Tiempo detectado**: el período de tiempo desde que se generó la alerta.
         - **Coincidencias de directivas**: se enumeran las directivas que generaron la alerta. Cada directiva aparece como un vínculo a los detalles de la Directiva.
         - **Gravedad**: nivel de gravedad del riesgo de alertas actual, enumerado como *alto*, *medio*o *bajo*. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no se clasifica.
-        - **Caso**: si se confirma, se muestra el caso generado a partir de la alerta. Para las nuevas alertas, el campo Case tiene un valor *None* .
-    - **Actividad de usuario**: esta pestaña muestra el historial de actividades del usuario asociado a la alerta. Este historial incluye otras alertas y actividades de eventos relacionadas con los indicadores de riesgo definidos en la plantilla asignada a la Directiva de esta alerta. Este historial permite a los analistas de riesgos y a los investigadores factorizar cualquier comportamiento de riesgo pasado para el empleado como parte del proceso de evaluación de prioridades.
-    - **Perfil de usuario**: esta pestaña muestra la información general sobre el empleado asignado a la alerta.
-    - **Confirmar y crear caso**: visible en todas las pestañas, use este botón para confirmar y crear un nuevo caso. Esto cambia automáticamente el estado de la alerta a *confirmado*.
-    - **Descartar**: visible en todas las pestañas, use este botón para descartar la alerta. Esto cambia el estado de la alerta a *resuelto*.
+        - **Caso**: si se confirma, se muestra el caso generado a partir de la alerta. Para las nuevas alertas, el campo **caso** muestra *ninguno*.
+    - **Actividad de usuario**: esta pestaña muestra el historial de actividades del usuario asociado a la alerta. Este historial incluye otras alertas y actividades relacionadas con los indicadores de riesgo definidos en la plantilla asignada a la Directiva para esta alerta. Este historial permite a los analistas de riesgos y a los investigadores factorizar cualquier comportamiento de riesgo pasado para el empleado como parte del proceso de evaluación de prioridades.
+    - **Perfil de usuario**: esta pestaña muestra la información general sobre el empleado asignado a la alerta. Si anonymization está habilitado, los campos nombre de usuario, dirección de correo electrónico, alias y organización son anonimizan.
+    - **Confirmar y crear caso**: visible en todas las pestañas, use este botón para confirmar y crear un nuevo caso. Esta acción cambia automáticamente el estado de la alerta a *confirmado*.
+    - **Descartar alerta**: visible en todas las pestañas, use este botón para descartar la alerta. Esta acción cambia el estado de la alerta a *resuelto*.
 
 ## <a name="create-a-case-for-an-alert"></a>Crear un caso para una alerta
 
-Una vez que se ha revisado y evaluado una alerta, puede crear un nuevo caso para seguir investigando la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
+Como la alerta se ha revisado y se ha clasificado, puede crear un nuevo caso para seguir investigando la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
 
 1. En el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **alertas** .
 2. En el **Panel alertas**, seleccione la alerta que desea confirmar y cree un nuevo caso para.

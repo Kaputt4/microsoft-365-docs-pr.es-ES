@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327128"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199776"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planificar la administración de riesgos internos
 
@@ -36,9 +36,9 @@ Identificar a las partes interesadas adecuadas de la organización para colabora
 
 ## <a name="determine-any-regional-compliance-requirements"></a>Determinación de los requisitos de cumplimiento regionales
 
-Las diferentes áreas geográficas y organizativas pueden tener requisitos de privacidad y cumplimiento que sean significativamente diferentes de otras áreas de la organización. Trabaje con las partes interesadas en estas áreas para asegurarse de que comprenden los controles de cumplimiento y privacidad de la administración de riesgos de Insider y cómo deben usarse en diferentes áreas de la organización. En algunos escenarios, los requisitos de cumplimiento y privacidad pueden requerir directivas que designen o restrinjan algunas partes interesadas de investigaciones y casos basados en el caso de un usuario o requisitos de normativa o normativas para el área.
+Las diferentes áreas geográficas y organizativas pueden tener requisitos de privacidad y cumplimiento que sean diferentes de otras áreas de la organización. Trabaje con las partes interesadas en estas áreas para asegurarse de que comprenden los controles de cumplimiento y privacidad de la administración de riesgos de Insider y cómo deben usarse en diferentes áreas de la organización. En algunos escenarios, los requisitos de cumplimiento y privacidad pueden requerir directivas que designen o restrinjan algunas partes interesadas de investigaciones y casos basados en el caso de un usuario o requisitos de normativa o normativas para el área.
 
-Si tiene requisitos para que las partes interesadas específicas participen en investigaciones de casos en las que participen empleados en determinadas regiones, roles o divisiones, es posible que desee implementar [directivas de administración de riesgos de Insider](insider-risk-management-policies.md) independientes (incluso idénticas) destinadas a distintas regiones y poblaciones. Esto hará que sea más fácil para las partes interesadas adecuadas clasificar y administrar los casos relevantes para sus roles y regiones. Además, es posible que desee considerar la creación de procesos y directivas para regiones en las que los investigadores y revisores hablan el mismo idioma que los usuarios para ayudar a simplificar el proceso de escalamiento para las alertas y casos de administración de riesgos de Insider.
+Si tiene requisitos para que las partes interesadas específicas participen en investigaciones de casos en las que participen usuarios en determinadas regiones, roles o divisiones, es posible que quiera implementar directivas de [Administración de riesgos de Insider](insider-risk-management-policies.md) independientes (incluso idénticas) destinadas a distintas regiones y poblaciones. Esta configuración facilitará a las partes interesadas adecuadas clasificar y administrar los casos relevantes para sus roles y regiones. Además, es posible que desee considerar la creación de procesos y directivas para regiones en las que los investigadores y revisores hablan el mismo idioma que los usuarios para ayudar a simplificar el proceso de escalamiento para las alertas y casos de administración de riesgos de Insider.
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planeación del flujo de trabajo de revisión e investigación
 
@@ -61,16 +61,18 @@ En función de cómo planee implementar las directivas de administración de rie
 
 Si no tiene un plan de Microsoft 365 Enterprise E5 existente y desea probar la administración de riesgos de Insider, puede [Agregar microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) a la suscripción existente o [registrarse para obtener una versión de prueba](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 Enterprise E5.
 
-**Requisitos de plantillas de directivas:** Según la plantilla de Directiva, es posible que tenga que comprender y planear antes de configurar la administración de riesgos del Insider en su organización:
+**Requisitos de plantillas de directivas:** Según la plantilla de directiva que elija, hay requisitos que debe conocer y planear antes de configurar la administración de riesgos del Insider en su organización:
 
-- Al usar la plantilla de **robo de datos de empleados** que se desponen, debe configurar un conector de Microsoft 365 de RRHH para que importe periódicamente la información de fecha de retirada y de finalización para los empleados de su organización. Consulte el tema de [importación de datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso sobre la configuración del conector de 365 de RRHH de Microsoft para su organización.
-- Cuando se usa la plantilla de **fugas de datos** , debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de la organización y recibir alertas de riesgo de Insider para alertas de directiva DLP de gravedad alta. Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para la organización.
+- Cuando se usa la plantilla de **robo de datos mediante el robo de datos** , se debe configurar un conector de Microsoft 365 de RRHH para que importe periódicamente información sobre la retirada y la fecha de finalización de los usuarios de la organización. Consulte el artículo [importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de 365 de RRHH de Microsoft para su organización.
+- Cuando se usan plantillas de **pérdida de datos** , debe configurar al menos una directiva de prevención de pérdida de datos (DLP) para definir la información confidencial de la organización y recibir alertas de riesgo de Insider para alertas de directiva DLP de gravedad alta. Consulte el artículo sobre cómo [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md) para obtener una guía paso a paso sobre la configuración de directivas de DLP para su organización.
+- Al usar plantillas de **infracción de directivas de seguridad** , debe habilitar la protección contra amenazas avanzada de Microsoft defender (ATP) para la integración de administración de riesgos de Insider en el centro de seguridad de defender para importar las alertas de infracción de seguridad. Consulte el artículo [Configure Advanced Features in Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) para obtener una guía paso a paso para habilitar la integración de Microsoft defender ATP con la administración de riesgos de Insider.
+- Al usar plantillas de **usuario descontentos** , debe configurar un conector de Microsoft 365 de RRHH para que importe periódicamente información de estado de disminución de rendimiento o degradación para los usuarios de la organización. Consulte el artículo [importar datos con el conector de recursos humanos](import-hr-data.md) para obtener una guía paso a paso para configurar el conector de 365 de RRHH de Microsoft para su organización.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Probar con un grupo pequeño de usuarios en un entorno de producción
 
-Antes de habilitar la soluci? a general en su entorno de producción, puede considerar la posibilidad de probar las directivas con un pequeño conjunto de usuarios de producción mientras realiza el cumplimiento necesario, privacidad y revisiones legales en la organización. La evaluación de la administración de riesgos de Insider en un entorno de prueba requeriría la generación de acciones de usuario simuladas y otras señales para crear alertas para las clasificaciones de clasificación y los casos para el procesamiento. A menudo esto no es práctico para la mayoría de las organizaciones, por lo que normalmente se prefiere la prueba de administración de riesgos de Insiders con un grupo pequeño de usuarios en un entorno de producción.
+Antes de habilitar la soluci? a general en su entorno de producción, puede considerar la posibilidad de probar las directivas con un pequeño conjunto de usuarios de producción mientras realiza el cumplimiento necesario, privacidad y revisiones legales en la organización. La evaluación de la administración de riesgos de Insider en un entorno de prueba requeriría la generación de acciones de usuario simuladas y otras señales para crear alertas para las clasificaciones de clasificación y los casos para el procesamiento. Este enfoque no es práctico para la mayoría de las organizaciones, por lo que se prefiere probar la administración de riesgos de Insider con un grupo pequeño de usuarios en un entorno de producción.
 
-Mantenga la característica anonymization en la configuración de directiva habilitada para pseudonymize los nombres para mostrar del usuario en la consola de administración de riesgos de Insider durante esta prueba para mantener la privacidad dentro de la herramienta. Esto ayuda a proteger la privacidad de los usuarios que tienen coincidencias de directivas y pueden ayudar a promover la objetividad en la investigación de datos y análisis de revisiones de alertas de riesgo de Insider.
+Mantenga la característica anonymization en la configuración de directiva habilitada para anonimia los nombres para mostrar del usuario en la consola de administración de riesgos de Insider durante esta prueba para mantener la privacidad dentro de la herramienta. Esta configuración ayuda a proteger la privacidad de los usuarios que tienen coincidencias de directivas y pueden ayudar a promover la objetividad en la investigación de datos y las revisiones de análisis para las alertas de riesgos de Insider.
 
 Si no ve ninguna alerta inmediatamente después de configurar una directiva de administración de riesgos de Insider, puede significar que aún no se ha alcanzado el umbral de riesgo mínimo. Una buena forma de comprobar si la Directiva se desencadena y funciona del modo previsto es ver si el usuario está en el ámbito de la Directiva en la página **usuarios** .
 
@@ -86,4 +88,7 @@ Compartir la documentación de administración de riesgos de Insiders con las pa
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-¿Está preparado para configurar la administración de riesgos de Insiders para su organización? Consulte Introducción a la [Administración de riesgos de Insider](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.
+¿Está preparado para configurar la administración de riesgos de Insiders para su organización? Revise los artículos siguientes:
+
+- Introducción a la configuración de la [Administración de riesgos de Insider](insider-risk-management-settings.md) para establecer la configuración de directivas globales.
+- Empiece a [trabajar con la administración de riesgos de insideres](insider-risk-management-configure.md) para configurar los requisitos previos, crear directivas y empezar a recibir alertas.

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración y los filtros de correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800112"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189566"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -36,6 +36,9 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. La tecnología de protección contra correo no deseado y antiphishing de EOP se aplica en nuestras plataformas de correo electrónico para proporcionar a los usuarios las herramientas e innovaciones más recientes contra el correo no deseado y antiphishing a través de la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
 
 A medida que su uso aumenta, también lo hace el abuso. El correo electrónico no deseado y no supervisado puede colapsar las bandejas de entrada y las redes, afectar al grado de satisfacción del usuario y limitar la eficacia de las comunicaciones legítimas. Por eso Microsoft sigue invirtiendo en tecnologías contra el correo no deseado. Sencillamente se trata de contener y filtrar el correo electrónico no deseado.
+
+> [!TIP]
+> Las siguientes tecnologías contra el correo electrónico no deseado son útiles cuando se desea permitir o bloquear mensajes en función del sobre del mensaje (por ejemplo, el dominio del remitente o la dirección IP de origen del mensaje). Para permitir o bloquear mensajes en función de la carga (por ejemplo, las direcciones URL del mensaje o los archivos adjuntos), debe usar el portal de la [lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md).
 
 ## <a name="anti-spam-technologies-in-eop"></a>Tecnologías contra correo electrónico no deseado en EOP
 
