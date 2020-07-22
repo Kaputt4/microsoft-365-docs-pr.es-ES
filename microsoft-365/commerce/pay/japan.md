@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,15 +13,25 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 57dc44af9a04bb9d55cc0dd5574ee74620211a73
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 44df2d2fcc3c424a6962ac8ca456c41147971eb5
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401695"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204772"
 ---
 # <a name="payment-information-for-japan"></a>Información de pago para Japón
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.
+Pague solo en JPY y haga referencia al número de factura en la remesa de pago.
+
+## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
+
+**Banco:** Citibank, N. A  
+**Identificador de banco:** 0401  
+**Rama:** Sucursal de Tokio  
+**Código de sucursal:** 730  
+**Código SWIFT:** CITIJPJT  
+**Número de cuenta:** 160609028  
+**Nombre de cuenta:** Microsoft Japan Co., Ltd.

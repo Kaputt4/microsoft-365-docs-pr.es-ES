@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899344"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204760"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -36,18 +36,28 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `ActionType` | string | Tipo de actividad que ha desencadenado el evento |
-| `Application` | string | Aplicación que realizó la acción grabada |
+| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
+| `Application` | cadena | Aplicación que realizó la acción grabada |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
-| `PreviousFileName` | string | Nombre original del archivo cuyo nombre ha cambiado como resultado de la acción |
-| `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente es una combinación de un nombre determinado o de un nombre, un inicio en el medio y un apellido o un apellido. |
-| `IPAddress` | string | Dirección IP asignada al extremo y utilizada durante las comunicaciones de red relacionadas |
-| `Location` | string | Ciudad, país u otra ubicación geográfica asociada con el evento |
+| `PreviousFileName` | cadena | Nombre original del archivo cuyo nombre ha cambiado como resultado de la acción |
+| `PreviousFolderPath` | cadena | Carpeta original que contiene el archivo antes de que se haya aplicado la acción grabada |
+| `Protocol` | cadena | Protocolo de red usado |
+| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure AD |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente es una combinación de un nombre determinado o de un nombre, un inicio en el medio y un apellido o un apellido. |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceType` | cadena | Tipo de dispositivo | 
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
+| `IPAddress` | cadena | Dirección IP asignada al extremo y utilizada durante las comunicaciones de red relacionadas |
+| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationIPAddress` | cadena | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `Location` | cadena | Ciudad, país u otra ubicación geográfica asociada con el evento |
+| `Isp` | cadena | Proveedor de servicios de Internet (ISP) asociado con la dirección IP del extremo |
+| `ReportId` | largo | Identificador único del evento |
+| `AdditionalFields` | cadena | Información adicional acerca de la entidad o el evento |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

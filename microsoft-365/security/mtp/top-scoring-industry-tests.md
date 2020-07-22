@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185997"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204964"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuación más alta en las pruebas del sector
 
@@ -100,6 +100,8 @@ SE Labs prueba una serie de soluciones que usan los productos y servicios para d
 ## <a name="endpoint-detection--response"></a>Respuesta & de detección de extremos
 
 Las capacidades [de detección y respuesta de extremos de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) Microsoft defender ATP proporcionan detecciones de ataques avanzadas que son casi en tiempo real y accionables. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
+
+Las capacidades de Microsoft defender ATP y Endpoint Protection han recibido resultados positivos de pruebas y publicaciones del sector. [SC Labs evaluó Endpoint Security Tools](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) en junio de 2020 y otorgó a Microsoft Defender ATP [5/5 estrellas](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). También se ha denominado la capacidad de ATP de Microsoft defender para proteger a las organizaciones contra el panorama moderno de las amenazas mediante un conjunto completo de capacidades de seguridad y se identificó la solución de seguridad de extremo como holística y unificada. También reconoció la convergencia de Endpoint Protection con la funcionalidad de detección de extremos y respuesta, ya que la cadena de ataques ahora está completamente cubierta por soluciones.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: capacidades ópticas y de detección líderes en el sector
 

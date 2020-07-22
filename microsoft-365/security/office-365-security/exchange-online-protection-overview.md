@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos y independientes.
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616991"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204808"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -61,7 +61,13 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 - En Asia-Pacífico (APAC), todos los buzones de correo de Exchange Online se encuentran en centros de recursos de APACciones y los mensajes se enrutan actualmente a través de centros de recursos de APAC para el filtrado de EOP.
 
-- En América, todos los buzones de correo de Exchange Online se encuentran en centros de seguridad de Estados Unidos, con la excepción de Sudamérica, donde se usan centros de recursos de Brasil y Chile y en Canadá, en los que se usan centros de conexión de Canadá. Todos los mensajes de correo electrónico, incluidos los mensajes para clientes de Sudamérica y Canadá, se enrutan a través de centros de recursos locales para el filtrado de EOP; el correo electrónico en cuarentena se almacena en el centro de almacenamiento en el que se encuentra el inquilino.
+- En América, los servicios se distribuyen en las siguientes ubicaciones:
+
+  - Sudamérica: los buzones de correo de Exchange Online se encuentran en centros de recursos de Brasil y Chile. Todos los mensajes se enrutan a través de centros de configuración locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de almacenamiento en el que se encuentra el inquilino.
+
+  - Canadá: los buzones de correo de Exchange Online se encuentran en centros de seguridad en Canadá. Todos los mensajes se enrutan a través de centros de configuración locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de almacenamiento en el que se encuentra el inquilino.
+
+  - Estados Unidos: los buzones de correo de Exchange Online se encuentran en los centros de seguridad de Estados Unidos. Todos los mensajes se enrutan a través de centros de configuración locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de almacenamiento en el que se encuentra el inquilino.
 
 - Para la nube de la comunidad de organismos oficiales (GCC), todos los buzones de Exchange Online están ubicados en centros de datos de Estados Unidos y los mensajes se enrutan a través de centros de datos de Estados Unidos para el filtrado de EOP.
 

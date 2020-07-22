@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024587"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204856"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -136,26 +136,10 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
 
    - **Notificar a personas específicas si un remitente está bloqueado debido al envío de correo no deseado saliente**:
 
-     > [!NOTE]
-     > La [Directiva de alerta](../../compliance/alert-policies.md) predeterminada denominada **usuario restringido del envío de correo electrónico** ya envía notificaciones por correo electrónico a los miembros del grupo **TenantAdmins** (**administradores globales**) cuando los usuarios se bloquean debido a que superan los límites de la sección **límites de destinatarios** . Le recomendamos que use la Directiva de alertas en lugar de esta opción en la Directiva de correo no deseado saliente para notificar a los administradores y a otros usuarios. Para obtener instrucciones, consulte [Verify The Alert Settings for Restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Esta configuración solo funciona en la directiva predeterminada de correo no deseado saliente. No funciona en las directivas de correo no deseado saliente personalizadas que cree.
-
-     Para habilitar esta opción:
-
-     a. Active la casilla para habilitar la configuración.
-
-     b. Haga clic en **Agregar personas**. En el control flotante **Agregar o quitar destinatarios** que aparece:
-
-     c. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;) o un destinatario por línea.
-
-     d. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los destinatarios.
-
-        Repita estos pasos tantas veces como sea necesario.
-
-        Los destinatarios que ha agregado aparecen en la sección **lista de destinatarios** en el control flotante. Para eliminar un destinatario, haga clic en el ![ botón quitar ](../../media/scc-remove-icon.png) .
-
-     e. Cuando haya terminado, haga clic en **Guardar**.
-
-     Para deshabilitar esta opción, desactive la casilla de verificación.
+     > [!IMPORTANT]
+     > Esta configuración está en desuso de las directivas de correo no deseado saliente.
+     > 
+     > La [Directiva de alerta](../../compliance/alert-policies.md) predeterminada denominada **usuario restringido del envío de correo electrónico** ya envía notificaciones por correo electrónico a los miembros del grupo **TenantAdmins** (**administradores globales**) cuando los usuarios se bloquean debido a que superan los límites de la sección **límites de destinatarios** . Se **recomienda encarecidamente usar la Directiva de alertas en lugar de esta opción en la Directiva de correo no deseado saliente para notificar a los administradores y a otros usuarios**. Para obtener instrucciones, consulte [Verify The Alert Settings for Restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. Opcional Expanda la sección **límites de destinatarios** para configurar los límites y las acciones de los mensajes de correo electrónico saliente sospechosos:
 
@@ -189,11 +173,11 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
 
    > [!NOTE]
    > Esta configuración solo se aplica a los buzones basados en la nube.
-   
+
    - **Reenvío automático**
   
       Seleccione una de las opciones para controlar cómo se controla el reenvío automático.
-    
+
       - **Automático**: configuración predeterminada que permite al sistema controlar el reenvío automático con el reenvío automático deshabilitado de forma predeterminada.
       - **On**: el reenvío externo está habilitado en la Directiva sin restricción.
       - **Desactivado**: el reenvío externo está deshabilitado y se bloqueará

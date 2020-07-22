@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084160"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204940"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novedades de Protección contra amenazas de Microsoft
 
@@ -30,6 +30,10 @@ Fuente RSS: obtener una notificación cuando se actualice esta página copiando 
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="july-2020"></a>Julio de 2020
+- [Función FileProfile ()](advanced-hunting-fileprofile-function.md) <br> Use esta función en sus consultas de [búsqueda avanzada](advanced-hunting-overview.md) para enriquecer los resultados con información completa del archivo.
+- [Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)<br> Obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con las aplicaciones con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.
+
 ## <a name="june-2020"></a>Junio de 2020
 - Fuente de Twitter <br> Obtenga la última investigación sobre seguridad, la inteligencia de amenazas, las noticias de productos y más información en el panel.
 - [Tabla de esquema EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporar información sobre las acciones posteriores a la entrega realizadas en los mensajes de correo electrónico en las consultas de búsqueda avanzada.
