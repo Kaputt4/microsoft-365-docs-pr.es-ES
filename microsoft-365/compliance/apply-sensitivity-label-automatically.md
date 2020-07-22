@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094850"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189515"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -47,7 +47,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
 
 - **Etiquetas del lado de servicio cuando el contenido ya está guardado (en SharePoint o en OneDrive) o enviado por correo electrónico (procesado por Exchange Online)**: use una directiva de etiquetado automático. 
     
-    Este método se conoce como clasificación automática con etiquetas de confidencialidad. También se conoce como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones). 
+    También se conoce a este método como etiquetado automático para datos en reposo (documentos en SharePoint y OneDrive) y datos en tránsito (correo electrónico enviado o recibido por Exchange). En el caso de Exchange, no incluye correos electrónicos en reposo (buzones). 
     
     Ya que este etiquetado lo aplican los servicios en lugar de las aplicaciones, no tiene que preocuparse por qué aplicaciones tienen los usuarios y qué versión. Por lo tanto, esta funcionalidad está disponible inmediatamente en toda la organización y es adecuada para aplicar las etiquetas a cualquier escala. Las directivas de etiquetado automático no admiten el etiquetado recomendado, ya que el usuario no interactúa con el proceso de etiquetado. En su lugar, el administrador ejecuta las directivas en el modo de simulación para ayudarle a garantizar el etiquetado correcto del contenido antes de aplicar la etiqueta.
     
@@ -127,6 +127,8 @@ Además, puede elegir si una condición debe detectar todos los tipos de informa
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurar clasificadores capacitados para una etiqueta
 
+Esta opción está disponible actualmente en versión preliminar.
+
 Cuando seleccione la opción**Clasificadores**, seleccione uno o más de los clasificadores capacitados incorporados de Microsoft. Si ha creado sus propios clasificadores capacitados personalizados, estos también están disponibles para seleccionar:
 
 ![Opciones para clasificadores capacitados y etiquetas de confidencialidad](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ Cuando seleccione la opción**Clasificadores**, seleccione uno o más de los cla
 
 Para más información sobre estos clasificadores, consulte [Introducción al entrenamiento de clasificadores (versión preliminar)](classifier-getting-started-with.md).
 
-Durante el periodo de previsualización, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de sensibilidad:
+Durante el periodo de previsualización para esta opción, las siguientes aplicaciones soportan clasificadores capacitados para etiquetas de confidencialidad:
 
-- Las Aplicaciones de Microsoft 365 para empresas ([anteriormente Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) para Windows desde el [canal Beta](https://office.com/insider) ([anteriormente Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
+- Aplicaciones de Microsoft 365 para empresas ([anteriormente Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) para Windows, que ahora se implementan en el [Canal actual](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) en la versión 2006 y posteriores:
     - Word
     - Excel
     - PowerPoint

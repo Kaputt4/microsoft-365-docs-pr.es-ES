@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención y configurar la retención basada en eventos.
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126481"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199875"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
@@ -112,7 +112,7 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 - **Descriptores del plan de archivos:** (para simplificar el escenario, no se proporcionan descriptores de archivo).
 
-La siguiente captura de pantalla muestra la configuración al crear la [etiqueta de retención](retention.md#retention-labels) Especificaciones del producto en el centro de seguridad y cumplimiento. Cuando cree la etiqueta de retención, puede crear el tipo de evento **Cese de producción**. Consulte los pasos que se muestran a continuación.
+La siguiente captura de pantalla muestra la configuración al crear la [etiqueta de retención](retention.md#retention-labels) Especificaciones del producto en el centro de cumplimiento de Microsoft 365. Cuando cree la etiqueta de retención, puede crear el tipo de evento **Cese de producción**. Consulte los pasos que se muestran a continuación.
 
 ![Configuración de retención para la etiqueta Especificaciones de producto](../media/SPRetention5.png)
 
@@ -181,7 +181,7 @@ Para obtener más información sobre las propiedades rastreadas y administradas,
 
 KQL no puede usar propiedades rastreadas en las consultas de búsqueda. Necesita usar una propiedad administrada. En un escenario de búsqueda normal, creamos una propiedad administrada y la asignamos a la propiedad rastreada que necesitamos. Sin embargo, para aplicar las etiquetas de retención automáticamente, solo se pueden especificar en KQL las propiedades administradas predefinidas y no las propiedades administradas personalizadas. Se puede usar un conjunto de propiedades administradas predefinidas ya creadas en el sistema para las cadenas de RefinableString00 a RefinableString199. Para obtener una lista completa, vea [Propiedades administradas sin usar predeterminadas](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). Estas propiedades administradas predeterminadas suelen usarse para definir refinadores de búsqueda.
 
-Para que la consulta KQL funcione y aplique automáticamente la etiqueta de retención correcta en el contenido de documentos del producto, asignamos las propiedades rastreadas **ows\_Doc\_x0020\_Type** y **ows\_\_Status** a dos propiedades administradas que se pueden refinar. En nuestro entorno de prueba para este escenario, no se usan **RefinableString00** ni **RefinableString01**. La hemos determinado al analizar las **Propiedades administradas** en **Administrar esquema de búsqueda** en el centro de administración de SharePont.
+Para que la consulta KQL funcione y aplique automáticamente la etiqueta de retención correcta en el contenido de documentos del producto, asignamos las propiedades rastreadas **ows\_Doc\_x0020\_Type** y **ows\_\_Status** a dos propiedades administradas que se pueden refinar. En nuestro entorno de prueba para este escenario, no se usan **RefinableString00** ni **RefinableString01**. La hemos determinado al analizar las **Propiedades administradas** en **Administrar esquema de búsqueda** en el Centro de administración de SharePoint.
 
 ![Propiedades administradas en el esquema de búsqueda](../media/SPRetention12.png)
 
@@ -217,7 +217,7 @@ Ahora, en el cuadro de búsqueda, escriba **RefinableString00:"Especificaciones 
 
 Ahora que hemos comprobado que la consulta de KQL funciona correctamente, crearemos la directiva de etiqueta que usa una consulta de KQL para aplicar automáticamente la etiqueta de retención Especificaciones del producto en los documentos correspondientes.
 
-1. En el [centro de seguridad y cumplimiento](https://protection.office.com), vaya a **Clasificación** > **Etiquetas de retención** y seleccione **Aplicar automáticamente una etiqueta**. 
+1. En el [Centro de cumplimiento](https://compliance.microsoft.com/homepage), vaya a **Administración de registros** > **Directivas de etiqueta** y, a continuación, seleccione **Aplicar automáticamente una etiqueta**. 
 
    ![Seleccione Aplicar automáticamente una etiqueta en la página Etiquetas](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona correctamente, creare
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Comprobación de que la etiqueta de retención se aplicó automáticamente
 
-Después de 7 días, utilice el [Explorador de actividad de etiquetas](view-label-activity-for-documents.md) en el centro de seguridad y cumplimiento para comprobar que la directiva de etiquetas que hemos creado ha aplicado automáticamente las etiquetas de retención a los documentos de producto en este escenario. En la siguiente captura de pantalla, las etiquetas de retención también se han aplicado a los contratos de producto y los manuales de usuario, aunque no se hayan tratado la creación de esas directivas de etiqueta y etiquetas de retención en este artículo.
-
-![Use el explorador de actividad de etiquetas para comprobar que la etiqueta se aplicó automáticamente.](../media/SPRetention20.png)
+Después de 7 días, utilice el [Explorador de actividad de etiquetas](view-label-activity-for-documents.md) en el Centro de cumplimiento para comprobar que la directiva de etiquetas que hemos creado ha aplicado automáticamente las etiquetas de retención a los documentos de producto en este escenario. 
 
 Otro paso de la comprobación es revisar las propiedades del documento en la biblioteca de documentos. En el panel de información, puede ver que la etiqueta de retención se ha aplicado a un documento seleccionado.
 
