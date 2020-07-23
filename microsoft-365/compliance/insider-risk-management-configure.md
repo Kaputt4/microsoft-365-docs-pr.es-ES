@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b968de12a2dee9d6b820558af05f99c7be29763c
+ms.sourcegitcommit: b3316b947059d3a2e31acbf0ab57d2e000b662ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199694"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45255345"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -53,8 +53,8 @@ En función de la estructura del equipo de administración del cumplimiento, tie
 | :---- | :---------------- |
 | **Administración de riesgos de Insider** | Use este grupo de roles para administrar la administración de riesgos de internación para su organización en un único grupo. Al agregar todas las cuentas de usuario para los administradores, analistas e investigadores designados, puede configurar los permisos de administración de riesgos de Insider en un único grupo. Este grupo de roles contiene todos los roles de permisos de administración de riesgos de Insider. Esta configuración es la forma más sencilla de empezar rápidamente con la administración de riesgos de Insider y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes.|
 | **Administrador de administración de riesgos de Insider** | Use este grupo de roles para configurar inicialmente la administración de riesgos de Insiders y más adelante para separar los administradores de riesgos de Insider en un grupo definido.  Los usuarios de este grupo de roles pueden crear, leer, actualizar y eliminar directivas de administración de riesgos de Insider, la configuración global y las asignaciones de grupos de roles. |
-| **Analistas de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de casos de riesgo de Insider. Los usuarios de este grupo de roles pueden obtener acceso a todas las plantillas de alertas de administración de riesgos de Insider, casos y notificaciones. No pueden acceder al explorador de contenido de riesgo de Insider. |
-| **Investigadores de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de datos de riesgo de Insider. Los usuarios de este grupo de roles pueden tener acceso a todas las alertas de administración de riesgos de Insider, casos, plantillas y el explorador de contenido para todos los casos. |
+| **Analistas de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como analistas de casos de riesgo de Insider. Los usuarios de este grupo de roles pueden tener acceso a todas las plantillas de alertas, casos y notificaciones de administración de riesgos de Insider. No pueden acceder al explorador de contenido de riesgo de Insider. |
+| **Investigadores de administración de riesgos de Insider** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de datos de riesgo de Insider. Los usuarios de este grupo de roles pueden tener acceso a todas las alertas de administración de riesgos de Insider, los casos, las plantillas de avisos y el explorador de contenido. |
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Adición de usuarios a un grupo de roles de administración de riesgos de Insider
 
