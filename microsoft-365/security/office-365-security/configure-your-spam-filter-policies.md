@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726823"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204868"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -352,12 +352,12 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
 
    - **Enviar notificaciones de correo no deseado para el usuario final cada (días)**: seleccione la frecuencia con la que se envían las notificaciones. El valor predeterminado es 3 días. Puede escribir entre 1 y 15 días.
 
-     Existen tres ciclos de notificaciones de correo no deseado del usuario final dentro de un período de 24 horas que comienzan en los siguientes horarios: 01:00 UTC, 08:00 UTC y 16:00 UTC. 
+     Existen tres ciclos de notificaciones de correo no deseado del usuario final dentro de un período de 24 horas que comienzan en los siguientes horarios: 01:00 UTC, 08:00 UTC y 16:00 UTC.
 
      > [!NOTE]
      > Si alguna notificación se ausenta durante un ciclo anterior, el ciclo subsiguiente enviará la notificación. Esto puede hacer que parezca que hay varias notificaciones en un mismo día.
 
-   - **Idioma de notificación**: haga clic en la lista desplegable y seleccione un idioma disponible de la lista. El valor predeterminado es **Predeterminado**, lo que significa que las notificaciones en cuarentena para el usuario final usan el idioma predeterminado de la organización de EOP.
+   - **Idioma de notificación**: haga clic en la lista desplegable y seleccione un idioma disponible de la lista. El valor predeterminado es **Predeterminada**, es decir, el idioma predeterminado de la organización basada en la nube.
 
    Cuando haya terminado, haga clic en **Guardar**.
 
@@ -643,7 +643,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="allowblock-lists"></a>Lista de bloqueados y lista de permitidos
 
-En algunas ocasiones, nuestros filtros pueden cometer un error o los sistemas pueden necesitar tiempo para ponerse al día. En estos casos, la directiva contra el correo no deseado le permite crear listas de permitidos y bloqueados que invaliden la clasificación realizada por el filtro. Esta opción se debe usar con moderación, ya que las listas pueden alcanzar tamaños excesivos, y de forma provisional, ya que nuestro sistema de filtrado debería funcionar correctamente.
+En algunas ocasiones, nuestros filtros pueden cometer un error o los sistemas pueden necesitar tiempo para ponerse al día. En estos casos, la directiva contra correo no deseado le permite crear listas de permitidos y bloqueados para invalidar la clasificación realizada por el filtro. Esta opción se debe usar con moderación, ya que las listas pueden alcanzar tamaños excesivos, y de forma provisional, ya que nuestro sistema de filtrado debería funcionar correctamente.
 
 > [!TIP]
 > Puede ocurrir que la organización no esté de acuerdo con la clasificación hecha por el servicio. En este caso, usted puede plantearse mantener la lista de permitidos o bloqueados de forma permanente. Sin embargo, si va a colocar un dominio en la lista de permitidos durante largos períodos de tiempo, debe solicitar al remitente que se asegure de que su dominio está autenticado y, si no lo está, establecer DMARC para rechazarlo.
