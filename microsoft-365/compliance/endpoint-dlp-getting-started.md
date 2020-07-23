@@ -1,0 +1,168 @@
+---
+title: Introducción a la prevención de pérdida de datos de Microsoft 365 Endpoint (versión preliminar)
+f1.keywords:
+- CSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: 07/21/2020
+audience: ITPro
+ms.topic: conceptual
+f1_keywords:
+- ms.o365.cc.DLPLandingPage
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- SPO_Content
+search.appverid:
+- MET150
+description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
+ms.openlocfilehash: ee276c81a0ebfbf44dd77f6016172f9bf7ed3022
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200010"
+---
+# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
+
+La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md). Para obtener más información sobre la DLP de Endpoint, consulte [Obtener más información sobre la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-learn-about.md)
+
+Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
+
+## <a name="before-you-begin"></a>Antes de empezar
+
+### <a name="skusubscriptions-licensing"></a>Licencias de SKU/suscripciones
+
+Antes de empezar con Endpoint DLP, debe confirmar la [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y cualquier complemento. Para acceder y usar la funcionalidad Endpoint DLP, debe tener una de estas suscripciones o complementos.
+
+- Microsoft 365 E5
+- Microsoft 365 A5 (EDU)
+- Cumplimiento de Microsoft 365 E5
+- Cumplimiento de Microsoft 365 A5
+- Gobierno y protección de información de Microsoft 365 E5
+- Gobierno y protección de información de Microsoft 365 A5
+
+### <a name="permissions"></a>Permisos
+
+Para habilitar la administración de dispositivos, la cuenta que use debe pertenecer a uno de los siguientes roles:
+
+- Administrador global
+- Administrador de seguridad
+- Administrador de cumplimiento
+
+Si desea usar una cuenta personalizada para ver la configuración de administración de dispositivos, debe tener uno de estos roles:
+
+- Administrador global
+- Administrador de cumplimiento
+- Administrador de datos de cumplimiento
+- Lector global
+
+Si desea usar una cuenta personalizada para acceder a la página de incorporación y baja, debe tener uno de estos roles:
+
+- Administrador global
+- Administrador de cumplimiento
+
+Si desea usar una cuenta personalizada para activar o desactivar la supervisión de dispositivos, debe tener uno de estos roles:
+
+- Administrador global
+- Administrador de cumplimiento
+
+Los datos de Endpoint DLP se pueden ver en el [Explorador de actividad](data-classification-activity-explorer.md). Hay cuatro roles que conceden permisos al explorador de actividad; la cuenta que use para acceder a los datos debe pertenecer a uno de ellos.
+
+- Administrador global
+- Administrador de cumplimiento
+- Administrador de seguridad
+- Administrador de datos de cumplimiento
+
+### <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
+
+Asegúrese de que los dispositivos con Windows 10 en los que planee implementar Endpoint DLP cumplan los siguientes requisitos.
+
+1. Debe estar ejecutando Windows 10 compilación 1809 o superior.
+2. Todos los dispositivos deben estar [Unidos a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+3. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para la actividad de cargar en la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+
+## <a name="onboarding-devices-into-device-management"></a>Incorporación de dispositivos a la administración de dispositivos
+
+ Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+
+Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, descargue el script apropiado y, luego, impleméntelo en esos dispositivos. Siga los pasos del [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
+
+Si ya tiene dispositivos incorporados en [Protección contra amenazas avanzada de Microsoft Defender (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), aparecerán ya en la lista de dispositivos administrados. Siga el [Procedimiento para dispositivos incorporados en MDATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
+
+### <a name="onboarding-devices"></a>Incorporación de dispositivos
+
+En este escenario de implementación, incorporará dispositivos que aún no hayan sido incorporados y, además, solo quiere supervisar y proteger elementos confidenciales frente al uso compartido no intencionado en dispositivos con Windows 10.
+
+1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**. 
+
+![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+
+> [!NOTE]
+> Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
+
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
+4. Elija **Incorporación** para iniciar el proceso de incorporación.
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+
+![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+1. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
+    - Incorporar equipos con Windows 10 usando Directiva de grupo
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
+    - Incorporar equipos con Windows 10 usando un script local
+    - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
+
+Una vez que se haya incorporado el punto de conexión, debería estar visible en la lista de dispositivos y también empezar a informar de los registros de actividad de auditoría al explorador de actividad.
+
+> [!NOTE]
+> Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
+
+### <a name="with-devices-onboarded-into-mdatp"></a>Para dispositivos incorporados en MDATP
+
+En este escenario, MDATP ya está implementada y existen puntos de conexión de los que se informa. Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados. Puede seguir incorporando nuevos dispositivos a Endpoint DLP para ampliar la cobertura siguiendo el [Procedimiento de incorporación de dispositivos](endpoint-dlp-getting-started.md#onboarding-devices).
+
+1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
+2. Abra la página de configuración del Centro de cumplimiento y elija **Habilitar supervisión de dispositivos**.
+3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. Debe ver la lista de dispositivos sobre los que ya se envían informes a MDATP. ![administración de dispositivos](../media/endpoint-dlp-getting-started-2-device-management.png)
+4. Elija **Incorporación** si necesita incorporar dispositivos adicionales.
+5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
+    - Incorporar equipos con Windows 10 usando Directiva de grupo
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
+    - Incorporar equipos con Windows 10 usando un script local
+    - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
+
+Una vez que se haya incorporado el punto de conexión, debería estar visible en la tabla **Dispositivos** y también empezar a informar de los registros de auditoría al **Explorador de actividad**.
+
+> [!NOTE]
+>Esta experiencia requiere la aplicación de una licencia. Sin la licencia necesaria, los datos no serán visibles ni accesibles.
+
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
+
+1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
+2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
+
+![filtro de explorador de actividad filtro para dispositivos de punto de conexióin](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+
+## <a name="next-steps"></a>Pasos siguientes
+Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad en el explorador de actividad, está listo para realizar el siguiente paso, donde puede crear directivas DLP que protegen los elementos confidenciales.
+
+1) [Uso de la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-using.md)
+
+## <a name="see-also"></a>Consulte también
+
+- [Obtenga más información sobre la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-learn-about.md)
+- [Uso de la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-using.md)
+- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
+- [Introducción al explorador de actividad](data-classification-activity-explorer.md)
+- [Protección contra amenazas avanzada de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Unido a Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
