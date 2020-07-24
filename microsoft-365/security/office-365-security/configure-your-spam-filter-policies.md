@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204868"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372566"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -357,7 +357,7 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
      > [!NOTE]
      > Si alguna notificación se ausenta durante un ciclo anterior, el ciclo subsiguiente enviará la notificación. Esto puede hacer que parezca que hay varias notificaciones en un mismo día.
 
-   - **Idioma de notificación**: haga clic en la lista desplegable y seleccione un idioma disponible de la lista. El valor predeterminado es **Predeterminada**, es decir, el idioma predeterminado de la organización basada en la nube.
+   - **Idioma de notificación**: haga clic en la lista desplegable y seleccione un idioma disponible de la lista. El valor por defecto es **Default** que corresponde al idioma inglés.
 
    Cuando haya terminado, haga clic en **Guardar**.
 

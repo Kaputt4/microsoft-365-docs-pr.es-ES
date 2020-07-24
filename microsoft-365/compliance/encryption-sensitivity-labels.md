@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201444"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229440"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -208,11 +208,12 @@ El emisor de administración de derechos siempre obtiene permisos de control tot
 
 Para obtener más información, vea [Emisor de administración de derechos y propietario de administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
-### <a name="double-key-encryption"></a>Cifrado de claves doble
+### <a name="double-key-encryption"></a>Cifrado de doble clave
 
-Esta característica está disponible actualmente en versión preliminar pública.
+> [!NOTE]
+> Esta característica está disponible actualmente en versión preliminar pública. Para obtener más información, vea [Presentación de la versión preliminar pública del cifrado de doble clave de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los documentos y mensajes de correo que tengan esta etiqueta aplicada.
+Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usarlo para los documentos y mensajes de correo que tengan esta etiqueta aplicada.
 
 Para obtener más información, ver los requisitos previos y las instrucciones de configuración, consulte el [Cifrado de doble clave (DKE)](double-key-encryption.md).
 
@@ -369,9 +370,9 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si su organización no ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
-    - Search, eDiscovery y Delve no funcionarán en archivos cifrados. 
+    - Search, eDiscovery y Delve no funcionarán en archivos cifrados.
     - Las directivas DLP funcionan para los metadatos de estos archivos cifrados (incluida la información de la etiqueta de retención), pero no el contenido de estos archivos (como números de tarjeta de crédito en los archivos).
-    - Los usuarios no pueden abrir archivos cifrados con Office en la Web. Cuando las etiquetas de confidencialidad de los archivos de Office en SharePoint y OneDrive están habilitadas, los usuarios pueden usar Office en la web para abrir archivos cifrados, con algunas [limitaciones](sensitivity-labels-sharepoint-onedrive-files.md#limitations) entre las que se incluyen el cifrado que se ha aplicado con una clave local (conocido como "mantener su propia clave" o HYOK) y el cifrado que se ha aplicado independientemente de una etiqueta de confidencialidad.
+    - Los usuarios no pueden abrir archivos cifrados con Office en la Web. Cuando las etiquetas de confidencialidad de los archivos de Office en SharePoint y OneDrive están habilitadas, los usuarios pueden usar Office en la Web para abrir archivos cifrados, con algunas [limitaciones](sensitivity-labels-sharepoint-onedrive-files.md#limitations) entre las que se incluyen el cifrado que se ha aplicado con una clave local (conocido como "mantenga su propia clave" o HYOK), el [cifrado de doble clave](#double-key-encryption) y el cifrado que se ha aplicado independientemente de una etiqueta de confidencialidad.
 
 - Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web. Si este no es el caso, y el archivo ya está abierto:
     
