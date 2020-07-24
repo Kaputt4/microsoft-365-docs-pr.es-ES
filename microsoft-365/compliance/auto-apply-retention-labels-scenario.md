@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Este escenario de solución muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto y almacenados en SharePoint Online mediante las etiquetas de retención. Esto se lleva a cabo con el uso de metadatos del documento para clasificar el contenido y, en concreto, al aplicar automáticamente las etiquetas de retención y configurar la retención basada en eventos.
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199875"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387457"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención
 
@@ -124,10 +124,10 @@ La siguiente captura de pantalla muestra la configuración al crear la [etiqueta
 1. En la lista desplegable **Conservar o eliminar el contenido en función de**, seleccione **un evento**.
 
 2. Seleccione **Elegir tipo de evento**.
+    
+    ![Crear un nuevo tipo de evento para la etiqueta de especificaciones del producto](../media/SPRetention6.png)
 
-   ![Crear un nuevo tipo de evento para la etiqueta de especificaciones del producto](../media/SPRetention6.png)
-
-3. En la página **Elegir tipo de evento**, seleccione **Puede crear nuevos tipos de eventos aquí**.
+3. Seleccione **Elegir tipo de evento** y, a continuación, en la página **Elegir tipo de evento**, seleccione **Crear nuevos tipos de eventos**.
 
 4. Cree un tipo de evento denominado **Cese de producción**, añada una descripción y seleccione **Finalizar** para crearlo. 
 
@@ -252,7 +252,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona correctamente, creare
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>Comprobación de que la etiqueta de retención se aplicó automáticamente
 
-Después de 7 días, utilice el [Explorador de actividad de etiquetas](view-label-activity-for-documents.md) en el Centro de cumplimiento para comprobar que la directiva de etiquetas que hemos creado ha aplicado automáticamente las etiquetas de retención a los documentos de producto en este escenario. 
+Después de 7 días, utilice el [Explorador de actividad](data-classification-activity-explorer.md) en el centro de cumplimiento para comprobar que la directiva de etiquetas que hemos creado ha aplicado automáticamente las etiquetas de retención a los documentos de producto en este escenario. 
 
 Otro paso de la comprobación es revisar las propiedades del documento en la biblioteca de documentos. En el panel de información, puede ver que la etiqueta de retención se ha aplicado a un documento seleccionado.
 
