@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126414"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391559"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -38,6 +38,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 
 - [Experimentar mejoras en la experiencia de búsqueda](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Aplicar fácilmente la configuración recomendada mediante directivas de seguridad predeterminadas](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/abril de 2020
 
@@ -63,11 +64,6 @@ En este artículo se enumeran las nuevas características de la versión más re
 - [Exportar dirección URL haga clic en datos para análisis sin conexión](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP plan 1 o plan 2)
 
 - [Usar vistas de campaña en Office 365 ATP (**versión preliminar**)](campaigns.md)
-
-## <a name="july-2020"></a>Julio de 2020 
- 
-- [Experimentar mejoras en la experiencia de búsqueda](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>Noviembre de 2019
 

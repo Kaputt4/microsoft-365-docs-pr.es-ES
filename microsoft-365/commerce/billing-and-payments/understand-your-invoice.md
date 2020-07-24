@@ -1,5 +1,5 @@
 ---
-title: Entender su factura o recibo
+title: Entender la factura o recibo
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo leer y comprender su factura de productos para empresas de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402647"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391523"
 ---
-# <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
+# <a name="understand-your-bill-or-invoice"></a>Entender la factura o recibo
 
 ::: moniker range="o365-21vianet"
 
@@ -79,11 +79,11 @@ Las páginas de cargos muestran el costo desglosado por producto. Para los clien
 
 Los detalles de los elementos de línea varían en función del tipo de producto por el que se va a cargar. Por ejemplo, para los productos de Azure, se muestra la cantidad de créditos de Azure aplicados. Los productos basados en un asiento muestran un precio unitario y una cantidad. Los detalles de la factura muestran los productos comprados, los descuentos o los créditos que se han aplicado, el tipo y el importe del impuesto y los totales del artículo de línea.
 
-    `Total = Charges - Azure Credit + Tax`
+> Total = gastos-crédito Azure + impuesto
 
 La cantidad total que debe pagarse para cada familia de servicios se calcula restando créditos de Azure de créditos y cargos, y agregando impuestos:
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> Total = cargos/créditos-crédito Azure + impuesto
 
 Si en su factura hay cargas de Azure en las que desea obtener más detalles, consulte [revisar la factura de su acuerdo de cliente de Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
