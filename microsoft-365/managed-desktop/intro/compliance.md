@@ -1,17 +1,17 @@
 ---
 title: Cumplimiento
 description: En este artículo se enumeran las normas de cumplimiento relevantes para el escritorio administrado por Microsoft.
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322022"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434294"
 ---
 # <a name="compliance"></a>Cumplimiento
 
@@ -38,7 +38,7 @@ Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 Puede encontrar información relevante, incluidos los requisitos de control y técnicos, en el [portal de confianza de servicios (STP)](https://servicetrust.microsoft.com/), el repositorio central para obtener información sobre las ofertas de servicios en la nube de Microsoft. Puede descargar los informes de auditor, los certificados de cumplimiento y mucho más en la sección [informes de auditoría](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) de STP.
 
 > [!NOTE]
-> Como el escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En estos documentos, normalmente puede encontrar escritorio administrado de Microsoft en la categoría "supervisión + administración".
+> Como el escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En estos documentos, normalmente puede encontrar Microsoft Managed Desktop en la categoría "Microsoft Online Services" o "supervisión + administración".
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 

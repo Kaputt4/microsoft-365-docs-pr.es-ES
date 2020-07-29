@@ -1,5 +1,5 @@
 ---
-title: Trabajar con el control de aplicaciones
+title: Usar el control de aplicaciones
 description: ''
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170715"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430452"
 ---
-# <a name="work-with-app-control"></a>Trabajar con el control de aplicaciones
+# <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
 Una vez que se haya implementado el control de aplicaciones en el entorno, tanto usted como las operaciones de escritorio administradas de Microsoft tienen responsabilidades en curso. Por ejemplo, es posible que quiera agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios finales. Los detalles del publicador de una aplicación incluyen información sobre el firmante.
 
@@ -40,7 +40,7 @@ Al abrir una solicitud de firmante, primero deberá proporcionar algunos detalle
 2. Abra un vale con las operaciones de escritorio administradas de Microsoft para solicitar la regla de firmante e incluya los siguientes detalles:  
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Description 
+    - Descripción 
     - Tipo de cambio ("agregar" o "quitar")  
     - Detalles de la editorial (por ejemplo: "O = <publisher name> , L = <location> , S = estado, C = país") 
 
@@ -54,8 +54,8 @@ Las operaciones implementarán progresivamente las directivas en los grupos de i
 |---------|---------|---------|
 |Prueba     |  Auditoría       |  Día 0       |
 |Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  Día 3       |
-|Amplias     | Enforced        |  Día 7       |
+|Rápida     | Enforced        |  Día 2       |
+|Amplias     | Enforced        |  Día 3       |
 
 
 Puede pausar o revertir la implementación en cualquier momento durante la ejecución. Para ello, abra otra solicitud de servicio con operaciones.
@@ -74,5 +74,5 @@ Para obtener acceso a los datos de Publisher para una aplicación, siga estos pa
 5. Busque cualquier evento **8003** o **8006** y, a continuación, copie la información del evento: 
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Description 
+    - Descripción 
     - Detalles de la editorial (por ejemplo: "O = <publisher name> , L = <location> , S = estado, C = país") 

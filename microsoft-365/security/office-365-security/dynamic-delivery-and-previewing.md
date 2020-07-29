@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija Entrega dinámica para evitar retrasos en los mensajes y permitir que los usuarios puedan obtener una vista previa de los datos adjuntos mientras se examinan.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819357"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430356"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adjuntos seguros de ATP
 
@@ -68,20 +68,20 @@ Supongamos que una organización usa la Entrega dinámica para su [directiva de 
 
 ## <a name="additional-considerations"></a>Consideraciones adicionales
 
-Hay ciertos escenarios en los que la Entrega dinámica no es compatible. Entre ellas se incluyen las siguientes:
+Hay algunos escenarios en los que los datos adjuntos seguros (incluida la entrega dinámica) no son compatibles. Entre ellas se incluyen:
 
-- Mensajes de correo que están en carpetas públicas
+- Mensajes de correo electrónico que están en carpetas públicas.
 
-- Mensajes de correo que se enrutan y vuelven al buzón del usuario con reglas personalizadas
+- Mensajes de correo electrónico que se redirigen del y después al buzón del usuario mediante reglas personalizadas.
 
-- Mensajes de correo que se mueven (de forma automática o manual) fuera del buzón alojado y a otras ubicaciones, incluidas carpetas archivadas
+- Mensajes de correo electrónico que se mueven (de forma automática o manual) del buzón de correo hospedado y a otras ubicaciones, incluidas las carpetas de archivo.
 
-- Mensajes de correo eliminados
+- Mensajes de correo electrónico que se eliminan.
 
-- La carpeta de búsqueda del buzón de un usuario que está en un estado de error
+- Carpeta de búsqueda del buzón de un usuario que se encuentra en estado de error.
 
-- Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. Para resolver esto, consulte [Los mensajes con datos adjuntos no se entregan cuando se usa la Entrega dinámica de ATP y Exclaimer](https://support.microsoft.com/help/4014438)
+- Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. Para resolver esto, consulte [los mensajes con datos adjuntos no se entregan cuando se usan la entrega y Exclaim dinámico de ATP](https://support.microsoft.com/help/4014438).
 
-- Mensajes cifrados con [Extensiones seguras multipropósito de correo electrónico en Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md))
+- Mensajes cifrados con [extensiones seguras multipropósito al correo de Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md)).
 
-- En casos en los que no se admite la Entrega dinámica, los Datos adjuntos seguros de ATP no analizarán mensajes de correo. Sin embargo, se comprobará la entrega de mensajes de correo con datos adjuntos que contengan direcciones URL, dependiendo de cómo estén configuradas las [directivas de Vínculos seguros de ATP](set-up-atp-safe-links-policies.md). En estos casos, se comprueban las direcciones URL de los mensajes de correo y los archivos de Office.
+- En los casos en los que no se admita la entrega dinámica, los datos adjuntos seguros no examinarán los mensajes de correo electrónico. Sin embargo, se comprobará la entrega de mensajes de correo con datos adjuntos que contengan direcciones URL, dependiendo de cómo estén configuradas las [directivas de Vínculos seguros de ATP](set-up-atp-safe-links-policies.md). En estos casos, se comprueban las direcciones URL de los mensajes de correo y los archivos de Office.

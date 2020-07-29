@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 12df7b074019ea47f2e293b71c6b0b25fe46f66f
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170714"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430464"
 ---
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 
@@ -26,6 +26,19 @@ Microsoft Managed Desktop simplifica el control de aplicaciones, ya que se ocupa
 ## <a name="initial-deployment-of-apps"></a>Implementación inicial de aplicaciones
 
 Cuando se implementan las aplicaciones por primera vez, las necesidades del escritorio administrado por Microsoft deben evaluar su comportamiento actual. Los pasos exactos para habilitar el control de aplicaciones dependen de si ya se han implementado los dispositivos en su entorno.
+
+### <a name="devices-not-yet-in-use"></a>Dispositivos que todavía no están en uso
+
+Si aún no tiene ningún dispositivo en uso, abra un vale de servicio con Microsoft Managed Desktop Operations solicitando que se active el control de aplicaciones. Las operaciones implementarán progresivamente las directivas en los grupos de implementación siguiendo esta programación:
+
+|Grupo de implementación  |Tipo de directiva  |Timing  |
+|---------|---------|---------|
+|Prueba     |  Auditoría       |  Día 0       |
+|Primero     | Enforced        | Día 1        |
+|Rápida     | Enforced        |  Día 2       |
+|Amplias     | Enforced        |  Día 3       |
+
+Siempre puede abrir otra solicitud de servicio para pausar o revertir una parte de esta implementación en cualquier momento durante la ejecución.
 
 ### <a name="devices-already-in-use"></a>Dispositivos que ya están en uso
 
@@ -39,21 +52,10 @@ Si ya tiene al menos un dispositivo de escritorio administrado de Microsoft en u
 |---------|---------|---------|
 |Prueba     |  Auditoría       |  Día 0       |
 |Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  Día 3       |
-|Amplias     | Enforced        |  Día 7       |
+|Rápida     | Enforced        |  Pausado, implementación a petición       |
+|Amplias     | Enforced        |  Pausado, implementación a petición       |
 
 Siempre puede abrir otra solicitud de servicio para pausar o revertir una parte de esta implementación en cualquier momento durante la ejecución.
 
-### <a name="devices-not-yet-in-use"></a>Dispositivos que todavía no están en uso
 
-Si aún no tiene ningún dispositivo en uso, abra un vale de servicio con Microsoft Managed Desktop Operations solicitando que se active el control de aplicaciones. Las operaciones implementarán progresivamente las directivas en los grupos de implementación siguiendo esta programación:
-
-|Grupo de implementación  |Tipo de directiva  |Timing  |
-|---------|---------|---------|
-|Prueba     |  Auditoría       |  Día 0       |
-|Primero     | Enforced        | Día 1        |
-|Rápida     | Enforced        |  Día 3       |
-|Amplias     | Enforced        |  Día 7       |
-
-Siempre puede abrir otra solicitud de servicio para pausar o revertir una parte de esta implementación en cualquier momento durante la ejecución.
 

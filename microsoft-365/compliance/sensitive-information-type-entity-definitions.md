@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) del centro de seguridad &amp; y cumplimiento incluye los tipos de información confidencial de 80 que están listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084139"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430523"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -370,30 +370,19 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 95% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_australian_medical_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_Australia_Medical_Account_Number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función Func_australian_medical_account_number encuentra contenido que coincide con el patrón.
-- Se supera la suma de comprobación.
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -2631,7 +2620,7 @@ Nueve dígitos con guiones opcionales o espacios
 ### <a name="pattern"></a>Pattern
 
 Con formato
-- Tres dígitos  
+- Tres dígitos 
 - Un guion o un espacio 
 - Tres dígitos 
 - Un guion o un espacio 
@@ -2716,9 +2705,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 7 u 8 dígitos más delimitadores:
 - 1 o 2 dígitos  
 - Un punto  
-- Tres dígitos 
+- Tres dígitos  
 - Un punto  
-- Tres dígitos 
+- Tres dígitos  
 - Un guión  
 - Un dígito o letra (no distingue entre mayúsculas y minúsculas) que es un dígito de control
 
@@ -2756,7 +2745,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de identificación nacional 
 - tarjeta de identidad 
-- ID 
+- Id. 
 - Determinación 
 - Rol Único Nacional 
 - REALIZAR 
@@ -4288,7 +4277,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguna
+Ninguno
 
 ## <a name="estonia-drivers-license-number"></a>Número de permiso de conducción de Estonia
 Esta entidad de tipo de información confidencial sólo está disponible en el tipo de información confidencial del número de permiso de la UE driver.
@@ -6801,7 +6790,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguna
+Ninguno
 
    
 
@@ -6814,7 +6803,7 @@ Dictionary
 
 ### <a name="pattern"></a>Pattern
 
-Keyword
+Palabra clave
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -6856,7 +6845,7 @@ Dictionary
 
 ### <a name="pattern"></a>Pattern
 
-Keyword
+Palabra clave
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10416,7 +10405,7 @@ Un carácter seguido de siete dígitos
 Un carácter seguido de siete dígitos
   
 - Una letra (no distingue entre mayúsculas y minúsculas) o un dígito
--  Siete dígitos  
+-  Siete dígitos 
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10940,7 +10929,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del sur
@@ -11221,7 +11210,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Keywords
 
-Ninguna
+Ninguno
 
 ## <a name="spain-tax-identification-number"></a>Número de identificación fiscal de España
 Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial de número de identificación de impuestos de la UE.
@@ -11797,6 +11786,10 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Se encuentra una palabra clave de Keyword_taiwanese_national_id.
 - Se supera la suma de comprobación.
 
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La función Func_taiwanese_national_id encuentra contenido que coincide con el patrón.
+- Se supera la suma de comprobación.
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11804,6 +11797,9 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 
@@ -12444,7 +12440,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- ID 
+- Id. 
 - Falta 
 - LISTAS # 
 - DISTRIBUCIÓN # 

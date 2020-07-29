@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: 'Averigüe cuánto impuesto se le cobrará por su suscripción de Microsoft 365 para empresas en diferentes regiones. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401755"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434066"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -122,7 +119,7 @@ Puede ser susceptible de no tener que pagar la tasa de IVA:
 
 3. En la sección **configuración & acciones** , seleccione **Editar dirección de uso del servicio**.
 
-4. En la página **editar la dirección de uso del servicio** , escriba su NIF en **el cuadro NIF y** , a continuación, seleccione **Guardar**.
+4. En la página **editar la dirección de uso del servicio** , en **el cuadro NIF** , escriba el NIF, incluido el prefijo y sin espacios. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ Puede ser susceptible de no tener que pagar la tasa de IVA:
 
 2. Seleccione el nombre de la suscripción y, a continuación, seleccione **más acciones** \> **Editar NIF**.
   
-3. En la página **editar la dirección de uso del servicio** , escriba el NIF en el cuadro **CIF** y, a continuación, seleccione **Enviar**.
+3. En la página **editar la dirección de uso del servicio** , en **el cuadro NIF** , escriba el NIF, incluido el prefijo y sin espacios. Seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ Prepare la siguiente documentación:
 | Organizaciones internacionales que mantienen la exención de impuestos | Confirmación de certificación/carta de las autoridades fiscales locales |
 | Puerto Rico | Certificado de compra exentas |
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
   
-[Ver la factura](view-your-bill-or-invoice.md)
-  
-[Entender su factura o recibo](understand-your-invoice.md)
+[Ver su](view-your-bill-or-invoice.md) factura (artículo) \
+[Descripción de la factura](understand-your-invoice.md) (artículo)

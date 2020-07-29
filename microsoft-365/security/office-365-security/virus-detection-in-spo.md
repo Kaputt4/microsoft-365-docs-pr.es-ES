@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo SharePoint Online detecta los virus en los archivos que los usuarios cargan y evita que los usuarios descarguen o sincronicen los archivos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
-ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
+ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45029613"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429925"
 ---
-# <a name="virus-detection-in-sharepoint-online"></a>Detección de virus en SharePoint Online
+# <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Detección de virus en SharePoint Online, OneDrive y Microsoft Teams
 
-Microsoft 365 puede ayudarle a proteger su entorno del malware detectando virus en los archivos que los usuarios cargan en SharePoint Online. Los archivos pueden analizarse en busca de virus una vez cargados. Si se detecta que un archivo está infectado, se establece una propiedad para que los usuarios no puedan descargar ni sincronizar el archivo.
+Microsoft 365 puede ayudarle a proteger su entorno del malware detectando virus en los archivos que los usuarios cargan en SharePoint Online, OneDrive y Microsoft Teams. Los archivos pueden analizarse en busca de virus una vez cargados. Si se detecta que un archivo está infectado, se establece una propiedad para que los usuarios no puedan descargar ni sincronizar el archivo.
 
 > [!IMPORTANT]
 > Estas capacidades antivirus de SharePoint Online son una forma de contener virus. No pretenden ser un punto único de defensa contra el malware en su entorno. Recomendamos a todos los clientes que evalúen e implementen la protección antimalware en varias capas y que apliquen los procedimientos recomendados para proteger la infraestructura de la empresa. Para obtener más información acerca de las estrategias y los procedimientos recomendados, consulte [plan de seguridad](security-roadmap.md).
@@ -58,11 +58,18 @@ Esto es lo que sucede:
 2. Al usuario se le advierte de que se ha detectado un virus. Al usuario se le ofrece la opción de descargar el archivo e intentar limpiarlo mediante su propio software antivirus.
 
 > [!NOTE]
+> 
 > Puede usar el parámetro *DisallowInfectedFileDownload* en el cmdlet [set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) de PowerShell de SharePoint Online para evitar que los usuarios descarguen un archivo infectado, incluso en la ventana de advertencia de antivirus.
+> 
+> Tenga en cuenta también que, en cuanto habilite el parámetro *DisallowInfectedFileDownload* , el acceso a los archivos detectados o bloqueados queda bloqueado completamente para los usuarios y los administradores.
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>¿Qué sucede cuando el cliente de sincronización de OneDrive intenta sincronizar un archivo infectado?
 
 Si los usuarios sincronizan archivos con el nuevo cliente de sincronización de OneDrive (OneDrive.exe) o el anterior cliente de sincronización de OneDrive para la empresa (Groove.exe), si un archivo contiene un virus, el cliente de sincronización no lo descargará. El cliente de sincronización mostrará una notificación de que el archivo no se puede sincronizar.
+
+## <a name="extended-capabilities-with-office-365-atp"></a>Capacidades ampliadas con Office 365 ATP
+
+Los clientes que habilitaron Office 365 ATP para SharePoint, OneDrive y Microsoft Teams [activan ATP para SharePoint, onedrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) pueden usar el centro de seguridad & cumplimiento para administrar los archivos en cuarentena para detecciones AV y ATP. [Solo ATP: Use el centro de seguridad & cumplimiento para administrar los archivos en cuarentena](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files).
 
 ## <a name="more-information"></a>Más información
 

@@ -1,17 +1,17 @@
 ---
 title: Obtener soporte técnico para el escritorio administrado de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327897"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430440"
 ---
 # <a name="getting-help-for-end-users"></a>Obtener ayuda para usuarios finales
 
@@ -37,7 +37,7 @@ Para que los usuarios finales puedan obtener ayuda a través de la aplicación, 
 - El dispositivo debe registrarse con Microsoft Managed Desktop mediante uno de los métodos de [configuración de dispositivos de escritorio administrados por Microsoft](../get-started/set-up-devices.md), como [registrar los nuevos dispositivos usted mismo](../get-started/register-devices-self.md).
 - El idioma para mostrar del dispositivo debe establecerse en cualquiera de estas configuraciones regionales en Inglés: en-US, en-GB, en-au, en-NZ o en-CA.
 - La aplicación obtener ayuda debe estar actualizada. Para confirmar esto, comprueba las actualizaciones de la aplicación en Microsoft Store.
-- Algunos [puntos de conexión](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) deben ser accesibles desde el dispositivo.
+- Algunos [puntos de conexión](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) deben ser accesibles desde el dispositivo.
 
 > [!NOTE]
 > La aplicación obtener ayuda puede tardar hasta una hora después de que se implemente un dispositivo para que funcione completamente.

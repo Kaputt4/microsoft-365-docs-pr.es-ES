@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización.
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818735"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429936"
 ---
 # <a name="message-encryption"></a>Cifrado de mensajes
 
@@ -60,7 +60,7 @@ Para obtener más información acerca de los límites de tamaño de los mensajes
 
 El cifrado de mensajes avanzado de Office 365 le permite crear varias plantillas de personalización de marca para ajustar el control sobre el correo del destinatario y crear experiencias de personalización de marca personalizadas para admitir una estructura organizativa diversa.
 
-El cifrado avanzado de mensajes en Microsoft 365 ayuda a cumplir las obligaciones de cumplimiento que requieren un control más flexible del acceso del destinatario externo a los correos electrónicos cifrados. Con el cifrado avanzado de mensajes en Office 365, como administrador, puede controlar los mensajes de correo electrónico confidenciales que se comparten fuera de la organización con directivas automáticas que detectan los tipos de información confidencial (por ejemplo, PII, identificadores financieros o de salud) o palabras clave para mejorar la protección al expirar el acceso a través de un portal web seguro a los correos electrónicos cifrados Además, como administrador, puede controlar más los correos electrónicos cifrados a los que se accede externamente a través de un portal web de Microsoft 365, revocando el acceso a un correo electrónico en cualquier momento.
+El cifrado avanzado de mensajes en Microsoft 365 ayuda a cumplir las obligaciones de cumplimiento que requieren un control más flexible del acceso del destinatario externo a los correos electrónicos cifrados. Con el cifrado avanzado de mensajes en Office 365, como administrador, puede controlar los mensajes de correo electrónico confidenciales que se comparten fuera de la organización con directivas automáticas que detectan tipos de información confidencial (por ejemplo, PII, identificadores financieros o de salud) o palabras clave para mejorar la protección al expirar el acceso a través de un portal web seguro a los correos electrónicos cifrados. Como administrador, puede controlar más los correos electrónicos cifrados a los que se accede a través de un portal web de Microsoft 365 revocando el acceso a un correo electrónico en cualquier momento.
 
 La revocación de mensajes y la expiración solo funcionan con los correos electrónicos que los usuarios envían a los destinatarios externos a la organización. Además, los destinatarios deben acceder al correo electrónico a través del portal web. Para asegurarse de que el destinatario use el portal para recibir correo electrónico, configure una plantilla de personalización de marca personalizada que aplique el contenedor. A continuación, se aplica la plantilla de personalización de marca en una regla de flujo de correo. Para obtener más información acerca del cifrado de mensajes avanzado, consulte [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 

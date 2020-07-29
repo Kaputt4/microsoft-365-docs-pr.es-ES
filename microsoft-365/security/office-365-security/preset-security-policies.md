@@ -1,5 +1,5 @@
 ---
-title: Directivas de seguridad preestablecidas
+title: Directivas de seguridad predefinidas
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a aplicar opciones de directiva estándar y estrictas en las características de protección de Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (ATP)
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389881"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430404"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Directivas de seguridad preestablecidas en EOP y Office 365 ATP
 
@@ -88,9 +88,10 @@ Cuando se aplican varias directivas a un usuario, se aplica el siguiente orden d
 
 1. Directiva de seguridad predeterminada de **protección estricta**
 2. Directiva de seguridad preestablecida de **protección estándar**
-3. Cualquier otra directiva relacionada.
+3. Directivas de seguridad personalizadas
+4. Directivas de seguridad predeterminadas
 
-Es decir, la configuración de la Directiva de **protección estricta** reemplaza la configuración de la Directiva de **protección estándar** , que reemplaza la configuración de otras directivas relacionadas.
+En otras palabras, la configuración de la Directiva de **protección estricta** reemplaza la configuración de la Directiva de **protección estándar** , que reemplaza la configuración de una directiva personalizada, que reemplaza la configuración de la directiva predeterminada.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Asignar directivas de seguridad preestablecidas a los usuarios
 

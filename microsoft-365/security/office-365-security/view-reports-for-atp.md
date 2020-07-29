@@ -18,135 +18,267 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937000"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434100"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
-Si la organización dispone de la [protección contra amenazas avanzada](office-365-atp.md) (ATP) de Office 365 y dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-atp-reports), puede usar varios informes de ATP en el centro de seguridad y &amp; cumplimiento. (Ir a **informes** \> **Panel**).
+Las organizaciones de protección contra amenazas avanzada (ATP) de Office 365 (por ejemplo, las suscripciones de Microsoft 365 E5 o el plan de ATP 1 o ATP del plan 2) contienen una variedad de informes relacionados con la seguridad. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-the-atp-reports), puede ver estos informes en el centro de seguridad & cumplimiento desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://protection.office.com/insightdashboard> .
 
-![El panel del centro de seguridad y &amp; cumplimiento puede ayudarle a ver dónde está funcionando la protección contra amenazas avanzada](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Panel informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-Los informes de ATP incluyen lo siguiente:
+## <a name="advanced-threat-protection-file-types-report"></a>Informe de tipos de archivo de protección contra amenazas avanzada
 
-- [Informe de estado de protección contra amenazas](#threat-protection-status-report)
-- [Informe de tipos de archivos de ATP](#atp-file-types-report)
-- [Informe de disposición de mensajes ATP](#atp-message-disposition-report)
-- [detección en tiempo real o explorador](threat-explorer.md) (en función de si tiene Office 365 ATP plan 1 o 2)
-- ... [etc](#additional-reports-to-view).
+El informe de **tipos de archivo de protección contra amenazas avanzada** muestra el tipo de archivos que los [datos adjuntos seguros de ATP](atp-safe-attachments.md)han detectado como malintencionados.
 
-Lea este artículo para obtener información general sobre los informes de ATP y cómo usarlos.
+ La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite 10 días de filtrado.
+
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **tipos de archivo ATP de Office**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPFileReport> .
+
+![Widget de tipos de archivo de ATP de Office en el panel informes](../../media/atp-file-types-report-widget.png)
+
+> [!NOTE]
+> La información de este informe también está disponible en el [Informe de disposición de mensajes de protección contra amenazas avanzada](#advanced-threat-protection-message-disposition-report).
+
+### <a name="report-view-for-the-advanced-threat-protection-file-types-report"></a>Vista informes para el informe de tipos de archivo de protección contra amenazas avanzada
+
+Están disponibles las siguientes vistas:
+
+- **Ver datos por: archivo**: el gráfico contiene la siguiente información:
+
+  - **Datos adjuntos de Excel malintencionados**
+  - **Datos adjuntos de Flash malintencionados**
+  - **Datos adjuntos de PDF malintencionados**
+  - **Datos adjuntos de PowerPoint malintencionados**
+  - **Direcciones URL malintencionadas**
+  - **Datos adjuntos de Word malintencionado**
+  - **Datos adjuntos ejecutables malintencionados**
+  - **Otros**
+
+  Cuando desplaza el puntero sobre un día concreto (punto de datos), puede ver el desglose de los tipos de archivos malintencionados detectados por los [datos adjuntos seguros de ATP](atp-safe-attachments.md) y la [protección antimalware en EOP](anti-malware-protection.md).
+
+  ![Vista de archivo en el informe de tipos de archivo ATP](../../media/atp-file-types-report-file-view.png)
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de tipo de archivo que están visibles en el gráfico.
+
+- **Ver datos por: mensaje**: el gráfico contiene la siguiente información:
+
+  - **Bloquear acceso**
+  - **Mensajes reemplazados**
+  - **Mensajes supervisados**
+  - **Reemplazado por la entrega de correo electrónico dinámica**: para obtener más información, vea [entrega dinámica y vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md).
+
+  ![Vista de mensaje en el informe de tipos de archivo ATP](../../media/atp-file-types-report-message-view.png)
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de disposición de mensajes que están disponibles en el gráfico y el valor de mensajes adicionales que se **pasan** .
+
+### <a name="details-table-view-for-the-advanced-threat-protection-file-types-report"></a>Vista de tabla de detalles para el informe de tipos de archivo de protección contra amenazas avanzada
+
+Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren dentro de la organización durante los últimos 10 días. La información que se muestra depende del gráfico que estaba viendo:
+
+- **Ver datos por: archivo**:
+
+  - **Fecha**
+  - **Dirección del destinatario**
+  - **Dirección del remitente**
+  - **Identificador del mensaje**: disponible en el campo de encabezado del **identificador del mensaje** en el encabezado del mensaje y debe ser único. Un valor de ejemplo es `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observe los corchetes angulares).
+  - **Archivo**
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de tipo de archivo que están visibles en el gráfico.
+
+- **Ver datos por: mensaje**:
+
+  - **Fecha**
+  - **Dirección del destinatario**
+  - **Dirección del remitente**
+  - **Id. de mensaje**
+  - **Archivo**
+  - **Asunto**
+
+  Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de disposición de mensajes que están disponibles en el gráfico y el valor de mensajes adicionales que se **pasan** .
+
+Para volver a la vista informes, haga clic en **Ver informe**.
+
+## <a name="advanced-threat-protection-message-disposition-report"></a>Informe de disposición de mensajes de protección contra amenazas avanzada
+
+El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
+
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione **disposición de mensajes ATP de Office**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=ATPMessageReport> .
+
+![Widget de disposición de mensajes de ATP de Office 365 en el panel de informes](../../media/atp-message-disposition-report-widget.png)
+
+> [!NOTE]
+> La información de este informe también está disponible en el [Informe de tipos de archivo de protección contra amenazas avanzada](#advanced-threat-protection-file-types-report).
+
+### <a name="report-view-for-the-advanced-threat-protection-message-disposition-report"></a>Vista informes para el informe de disposición de mensajes de protección contra amenazas avanzada
+
+Están disponibles las siguientes vistas:
+
+- **Ver datos por: mensaje**: el gráfico contiene la siguiente información:
+
+  - **Bloquear acceso**
+  - **Mensajes reemplazados**
+  - **Mensajes supervisados**
+  - **Reemplazado por la entrega de correo electrónico dinámica**: para obtener más información, vea [entrega dinámica y vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md).
+
+  ![Vista de mensaje en el informe de tipos de archivo ATP](../../media/atp-file-types-report-message-view.png)
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de disposición de mensajes que están disponibles en el gráfico y el valor de mensajes adicionales que se **pasan** .
+
+- **Ver datos por: archivo**: el gráfico contiene la siguiente información:
+
+  - **Datos adjuntos de Excel malintencionados**
+  - **Datos adjuntos de Flash malintencionados**
+  - **Datos adjuntos de PDF malintencionados**
+  - **Datos adjuntos de PowerPoint malintencionados**
+  - **Direcciones URL malintencionadas**
+  - **Datos adjuntos de Word malintencionado**
+  - **Datos adjuntos ejecutables malintencionados**
+  - **Otros**
+
+  Cuando desplaza el puntero sobre un día concreto (punto de datos), puede ver el desglose de los tipos de archivos malintencionados detectados por los [datos adjuntos seguros de ATP](atp-safe-attachments.md) y la [protección antimalware en EOP](anti-malware-protection.md).
+
+  ![Vista de archivo en el informe de tipos de archivo ATP](../../media/atp-file-types-report-file-view.png)
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de tipo de archivo que están visibles en el gráfico.
+
+### <a name="details-table-view-for-the-advanced-threat-protection-message-disposition-report"></a>Vista de tabla de detalles para el informe de disposición de mensajes de protección contra amenazas avanzada
+
+Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren dentro de la organización durante los últimos 10 días. La información que se muestra depende del gráfico que estaba viendo:
+
+- **Ver datos por: mensaje**:
+
+  - **Fecha**
+  - **Dirección del destinatario**
+  - **Dirección del remitente**
+  - **Id. de mensaje**
+  - **Archivo**
+  - **Asunto**
+
+  Si hace clic en **filtros**, puede modificar los resultados con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de disposición de mensajes que están disponibles en el gráfico y el valor de mensajes adicionales que se **pasan** .
+
+- **Ver datos por: archivo**:
+
+  - **Fecha**
+  - **Dirección del destinatario**
+  - **Dirección del remitente**
+  - **Id. de mensaje**
+  - **Archivo**
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Los mismos valores de tipo de archivo que están visibles en el gráfico.
+
+Para volver a la vista informes, haga clic en **Ver informe**.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El informe de **Estado de protección contra amenazas** es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y [Office 365 ATP](office-365-atp.md). Este informe es útil para ver las detecciones a lo largo del tiempo (hasta 90 días) y permite a los administradores de seguridad identificar las tendencias o determinar si las directivas necesitan ajustes.
+El informe de **Estado de protección contra amenazas** es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y Office 365 ATP. Para obtener más información, consulte [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
-El informe proporciona un recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado, como archivos o direcciones de sitios web (URL) bloqueados por el motor antimalware, [purgado automático de cero horas (ZAP)](zero-hour-auto-purge.md)y características de ATP, como [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros](atp-safe-attachments.md)de ATP y [antiphishing de ATP](set-up-anti-phishing-policies.md).
+## <a name="url-threat-protection-report"></a>Informe de protección contra amenazas de URL
 
-Los filtros y los desgloses de la información permiten clasificaciones más detalladas de la información de este informe. **En concreto** , se incluye un menú de "desglosar por" para las vistas de \> **phish** y malware del **correo** electrónico \> **Malware views**. Se desglosarán los datos en:
+El **Informe de protección contra amenazas de direcciones URL** proporciona vistas de Resumen y tendencias para las amenazas detectadas y las acciones tomadas en los clics de direcciones URL como parte de los [vínculos seguros ATP](atp-safe-links.md). Este informe no tendrá hacer clic en datos de usuarios en los que la Directiva de vínculos seguros aplicada tiene seleccionada la opción no hacer **un seguimiento de los clics del usuario** .
 
-|||
-|---|---|
-|Por tipo de Directiva|¿Qué directiva ayudó a detectar estas amenazas?|
-|Por tecnología de detección|¿Qué tecnología subyacente de Microsoft capturó la amenaza?|
-|Por estado de entrega|¿Cuál era el estado de entrega final de los mensajes de correo electrónico detectados como amenazas?|
-|
+Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya a **informes** de \> **Panel** y seleccione **Informe de protección de URL**. Para ir directamente al informe, Abra <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
-> [!TIP]
-> El correo electrónico > phish | Las vistas de malware tienen desgloses granulares para las tecnologías de detección que se muestran, con categorías como *la reputación de archivo generado por ATP*, la *detonación de archivos*, la *detonación de dirección URL*, *anti-falseamiento: error de DMARC*, por ejemplo, útil para indicar exactamente qué característica condujo a su organización para que detecte las amenazas.
-
-![Informe de estado de protección contra amenazas desplegable que muestra ' dividir por '.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
-
-Estas vistas le ofrecen la opción de exportar, mediante un clic de botón (en vistas de phishing de **correo electrónico** \> **Phish**, malware de **correo electrónico** \> **Malware**y malware de **contenido** \> **Malware** ). Los datos agregados exportados a su equipo se pueden abrir en Excel.
-
-![Este gráfico muestra exportar como una opción en el menú para la vista de malware, directamente entre crear programación y solicitar informe.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
-
-> [!NOTE]
-> El número máximo de entradas que se pueden exportar para **phish** y **malware** solo es inferior a 10000. Si exporta una vista, se exportan sólo las entradas 10000 más recientes. En los datos exportados, la columna _recuento de mensajes_ representa el número de mensajes detectados por la tecnología de detección y el tipo de directiva.    
-
-En las vistas información general y mensajes de correo electrónico se muestra información en horas de procesamiento, en lugar de en 24 horas (demanda re. la velocidad aumentada aquí ha sido una señal clara).
-
-> [!NOTE]
-> Un informe de estado de protección contra amenazas está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](exchange-online-protection-overview.md)(EOP); sin embargo, la información que se muestra en el informe de estado de la protección contra amenazas para los clientes de ATP probablemente contendrá distintos datos de los que pueden ver los clientes de EOP. Por ejemplo, el informe de estado de protección contra amenazas para los clientes de ATP contendrá información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md). Esta información es específica de ATP, por lo que los clientes que tengan EOP pero no ATP no verán los detalles en el informe de estado de protección contra amenazas.
-
-Para ver el informe de estado de protección contra amenazas, en el [ &amp; centro de seguridad y cumplimiento](https://protection.office.com), vaya al panel **informes** \> **Dashboard** \> **Estado de protección contra amenazas**.
-
-![Informe de estado de protección contra amenazas ATP](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
-
-Para obtener el estado detallado de un día, desplace el puntero sobre el gráfico.
-
-![Datos de estado de protección contra amenazas ATP para un día](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
-
-De forma predeterminada, el informe de estado de protección contra amenazas muestra datos de los últimos siete días. Sin embargo, puede elegir **filtros** y cambiar el intervalo de fechas para ver los datos de hasta 90 días para la vista agregada y 30 días para la vista de detalles. (Si usa una suscripción de prueba, es posible que se limite a 30 días de datos).
-
-![Filtros de estado de protección contra amenazas ATP](../../media/4f703369-642b-402b-9758-b9c828283410.png)
-
-También puede usar el menú **ver datos por** para cambiar la información que se muestra en el informe.
-
-![Visualización de opciones del informe de estado de protección contra amenazas ATP](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-
-## <a name="url-protection-status-report"></a>Informe de estado de protección de URL
-
-Este informe se basa en datos recopilados y se detectan amenazas, por clic (mientras que la mayoría de los informes relacionados con amenazas de correo electrónico son por datos de mensaje). Este informe está diseñado para mostrar las amenazas que provienen de hipervínculos en mensajes de correo electrónico y documentos, por clic. Hay dos vistas:
-
-|||
-|---|---|
-|Acción de clic de dirección URL en protección|Vea el número de direcciones URL bloqueadas, bloqueadas pero reemplazadas por un usuario con un clic que se ha reemplazado con un clic por un usuario y permitido.|
-|Dirección URL haga clic por aplicación|Vea la aplicación desde la que se hizo clic en la dirección URL.|
-|
-
-En la tabla de detalles, podrá ver más información acerca de la hora de clic y la información del usuario. Por último, tenga en cuenta que el informe de estado de protección de URL muestra la protección de la característica de vínculos seguros de ATP, de modo que solo los clientes que hayan habilitado vínculos seguros de ATP verán los datos reflejados en este informe.
+![Widget de informe de protección de URL en el panel informes](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
 > Se trata de un *Informe de tendencias de protección*, lo que significa que los datos representan tendencias en un conjunto de datos más grande. Como resultado, los datos de la vista de agregado no están disponibles en tiempo real aquí, pero los datos de la vista de tabla de detalles son, por lo que es posible que vea una ligera diferencia entre las dos vistas.
 
-## <a name="atp-file-types-report"></a>Informe de tipos de archivos de ATP
+### <a name="report-view-for-the-url-threat-protection-report"></a>Vista informes para el informe de protección contra amenazas de direcciones URL
 
-El informe de **tipos de archivo de ATP** muestra el tipo de archivos que los [datos adjuntos seguros de ATP](atp-safe-attachments.md)han detectado como malintencionados.
+El informe de **protección contra amenazas de direcciones URL** tiene dos vistas agregadas que se actualizan una vez cada cuatro horas que muestra datos para los últimos 90 días:
 
-Para ver este informe, en el [centro de seguridad y &amp; cumplimiento](https://protection.office.com), vaya a los tipos de **Reports** \> **Dashboard** \> **archivo ATP**del panel informes.
+- **Hacer clic en dirección URL acción de protección**: muestra el número de clics de direcciones URL por parte de los usuarios de la organización y los resultados del clic:
 
-![Informe de tipos de archivos de ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-  
-Al pasar el mouse sobre un día concreto, puede ver el desglose de los tipos de archivos malintencionados detectados por los [datos adjuntos seguros de ATP](atp-safe-attachments.md) y la [ &amp; protección antimalware contra correo no deseado](anti-spam-and-anti-malware-protection.md). La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles sólo permite diez días de filtrado. 
-  
-![Datos del informe de tipos de archivos ATP para un día](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+  - **Bloqueado**
+  - **Bloqueado y clic en**
+  - **Clic durante el examen**
 
-## <a name="atp-message-disposition-report"></a>Informe de disposición de mensajes ATP
+  Un clic indica que el usuario ha acpulsado a través de la página de bloque al sitio Web malintencionado (los administradores pueden deshabilitar el clic en las directivas de vínculos a prueba de errores).
 
-El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
 
-Para ver este informe, en el [centro de seguridad y &amp; cumplimiento](https://protection.office.com), vaya a la disposición de **Reports** \> **Dashboard** \> **mensajes ATP**del panel informes.
+  - **Fecha de inicio** y **fecha de finalización**
+  - Las acciones de clic en protección disponibles, además del valor **permitido** para ver información de todos los clics de direcciones URL (no solo los clics).
 
-![Informe de disposición de mensajes ATP](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+  ![Vista de dirección URL haga clic en acción de protección en el informe de protección contra amenazas URL](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-Cuando desplaza el puntero sobre una barra del gráfico, puede ver qué acciones se tomaron para el correo electrónico detectado durante ese día.
+- **Dirección URL haga clic en por aplicación**: muestra el número de clics de direcciones URL por aplicaciones compatibles con Office 365 ATP vínculos seguros:
 
-![Datos del informe de disposición de mensajes ATP para un día](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+  - **Cliente de correo electrónico**
+  - **PowerPoint**
+  - **Word**
+  - **Excel**
+  - **OneNote**
+  - **Visio**
+  - **Teams**
+  - **Otros**
+
+  Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
+
+  - **Fecha de inicio** y **fecha de finalización**
+  - Las aplicaciones disponibles.
+
+### <a name="details-table-view-for-the-url-threat-protection-report"></a>Vista de tabla de detalles para el informe de protección contra amenazas de direcciones URL
+
+Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren dentro de la organización en los últimos 7 días con los siguientes detalles:
+
+- **Haga clic en hora**
+- **User**
+- **URL**
+- **Action**
+- **App**
+
+Si hace clic en **filtros** en la vista de tabla de detalles, puede filtrar por los mismos criterios que en la vista de informe y también por **dominios** o **destinatarios** separados por comas.
+
+Para volver a la vista informes, haga clic en **Ver informe**.
 
 ## <a name="additional-reports-to-view"></a>Informes adicionales para ver
 
-Además de los informes de ATP descritos en este artículo, hay disponibles varios otros informes, como se describe en la tabla siguiente:
+Además de los informes de ATP descritos en este tema, hay disponibles varios informes más, como se describe en la tabla siguiente:
 
-|||
+|Informe|Tema|
 |---|---|
-|**Informe (s)**|**Detalles**|
-|**Explorer** o **detección en tiempo real**: (Office 365 ATP plan 2 los clientes tienen explorador; Office 365 ATP plan 1 los clientes tienen detecciones en tiempo real.)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
-|**Informes de seguridad de correo electrónico**, como un informe de remitentes y destinatarios principales, un informe de correo falsificado y un informe de detecciones de correo no deseado.|[Ver informes de seguridad de correo electrónico en el centro de seguridad y &amp; cumplimiento](view-email-security-reports.md)|
-|**Seguimiento de dirección URL de vínculos seguros de ATP**: (este es un informe que se genera con PowerShell). Este informe muestra los resultados de las acciones de vínculos seguros de ATP en los últimos siete (7) días.|[Referencia del cmdlet Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Resultados de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene información como, por ejemplo, el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Referencia del cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Detecciones de EOP y ATP**: (este es un informe personalizado que se genera con PowerShell). Este informe contiene detalles sobre archivos malintencionados o direcciones URL, intentos de suplantación de identidad, suplantación y otras amenazas potenciales en los correos electrónicos o archivos.|[Referencia del cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
-|
+|**Explorador** (ATP plan 2) o **detecciones en tiempo real** (plan de ATP 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
+|**Informes de seguridad de correo electrónico**, como el informe de remitentes y destinatarios principales, el informe de correo falsificado y el informe de detecciones de correo no deseado.|[Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)|
+|**Informes de flujo de correo**, como el informe de reenvío, el informe de estado de flujo de correo y el informe de remitentes y destinatarios principales.|[Ver informes de flujo de correo en el centro de seguridad & cumplimiento](view-mail-flow-reports.md)|
+|**Seguimiento de dirección URL para vínculos seguros ATP** (solo PowerShell). El resultado de este cmdlet muestra los resultados de las acciones de vínculos seguros de ATP en los últimos siete días.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**Resultados del tráfico de correo para EOP y ATP** (solo PowerShell). El resultado de este cmdlet contiene información sobre el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Informes de detalles de correo para detecciones de EOP y ATP** (solo PowerShell). El resultado de este cmdlet contiene detalles sobre archivos malintencionados o direcciones URL, intentos de suplantación de identidad (phishing), suplantación y otras amenazas potenciales en el correo electrónico o los archivos.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos se necesitan para ver los informes de ATP?
 
-Para poder ver y usar los informes descritos en este artículo, **debe tener asignada una función adecuada para el centro de seguridad &amp; y cumplimiento y el centro de administración de Exchange**.
+Para poder ver y usar los informes descritos en este tema, **debe tener asignada una función adecuada para el centro de seguridad &amp; y cumplimiento y el centro de administración de Exchange**.
 
-- Para el centro de seguridad &amp; y cumplimiento, debe tener asignada una de las siguientes funciones:
+- Para el centro de seguridad & cumplimiento, debe tener asignada una de las siguientes funciones:
 
   - Administración de la organización
   - Administrador de seguridad (puede asignarse en el centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
@@ -162,7 +294,7 @@ Para poder ver y usar los informes descritos en este artículo, **debe tener asi
 
 Para obtener más información, consulte los siguientes recursos:
 
-- [Permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md)
+- [Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)
 
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -172,6 +304,6 @@ Si no ve datos en los informes de ATP, compruebe que las directivas estén corre
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y información en el centro de seguridad y &amp; cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
   
 [Permisos de funciones (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

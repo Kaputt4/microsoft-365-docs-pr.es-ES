@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819453"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434272"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -54,7 +54,7 @@ La información que verá en el Resumen de administración de amenazas depende d
 |---|---|
 |Mensajes de malware bloqueados<br/>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br><br><br><br>|Mensajes de malware bloqueados<br>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br>Malware de cero días bloqueado<br>Mensajes de suplantación de identidad avanzada detectados<br>URL malintencionadas bloqueadas|
 
-Para ver o acceder al widget de Resumen de administración de amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+Para ver o acceder al widget de Resumen de administración de amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
 ## <a name="threat-protection-status"></a>Estado de la protección contra amenazas
 

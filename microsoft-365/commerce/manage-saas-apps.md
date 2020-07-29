@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo activar y administrar aplicaciones de terceros en el centro de administración de Microsoft 365.
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402587"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429995"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para la organización
+
+Puede administrar las licencias y la facturación de aplicaciones de terceros en el nuevo centro de administración de Microsoft 365. Las características actualizadas incluyen una administración de suscripciones mejorada, un mejor acceso a la información de facturación y una mayor flexibilidad para la administración de facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como un servicio que los clientes compren directamente o a un proveedor de terceros.
 
 ::: moniker range="o365-21vianet"
 
@@ -31,6 +33,7 @@ ms.locfileid: "44402587"
 ::: moniker-end
 
 Puede administrar las licencias y la facturación de aplicaciones de terceros en el centro de administración de Microsoft 365 con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripciones mejorada, un mejor acceso a la información de facturación y una mayor flexibilidad para la administración de facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como un servicio que los clientes compren directamente o de un proveedor de terceros.
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 

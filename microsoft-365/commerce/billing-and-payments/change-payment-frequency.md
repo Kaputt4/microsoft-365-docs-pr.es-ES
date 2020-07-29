@@ -1,5 +1,5 @@
 ---
-title: Cambiar la frecuencia de pago
+title: Cambiar la frecuencia de facturación
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cambiar la frecuencia con la que se factura a su suscripción de empresa.
-ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402659"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430007"
 ---
-# <a name="change-your-payment-frequency"></a>Cambiar la frecuencia de pago
+# <a name="change-your-billing-frequency"></a>Cambiar la frecuencia de facturación
 
 ::: moniker range="o365-21vianet"
 
@@ -37,7 +37,7 @@ ms.locfileid: "44402659"
 
 ::: moniker-end
 
-Al comprar una suscripción, puede elegir la facturación mensual o anual. Para cambiar la frecuencia de facturación de una suscripción, siga los pasos que se indican a continuación.
+Al comprar una suscripción, puede elegir la facturación mensual o anual. Para cambiar la frecuencia con la que se factura por una suscripción, siga estos pasos.
 
 1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> .
 

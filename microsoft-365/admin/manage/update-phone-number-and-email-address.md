@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Actualice su número de teléfono y su dirección de correo electrónico de administrador en el centro de administración. Necesitará esta información si desea restablecer su propia contraseña de administrador.
-ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407925"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429959"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Actualizar el número de teléfono y la dirección de correo electrónico de administración
 
@@ -41,13 +41,13 @@ Si está buscando información sobre cómo cambiar la información de perfil de 
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>Actualizar su nombre, número de teléfono y dirección de correo electrónico
 
-Use la página **Información personal** para cambiar su nombre, número de teléfono móvil y dirección de correo electrónico alternativa. La dirección de correo electrónico alternativa se usa para notificaciones importantes, como restablecer la contraseña de administrador (no la contraseña de administrador del equipo). 
+Use la página **configuración y privacidad** para cambiar su nombre, número de teléfono móvil y dirección de correo electrónico alternativa. La dirección de correo electrónico alternativa se usa para notificaciones importantes, como restablecer la contraseña de administrador (no la contraseña de administrador del equipo). 
   
 1. Vaya al centro de administración de Microsoft 365.
 
-2. En el encabezado, seleccione su icono de perfil \> **mi** \> **información personal**de la cuenta.
+2. En el encabezado, seleccione su icono de perfil, la configuración de la \> **cuenta** \> **y la privacidad**.
 
-3. En la sección **detalles de contacto** , seleccione Editar. Actualice su dirección de correo electrónico móvil, Telefónica y alternativa. Asegúrese de usar algo diferente de la dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
+3. En la sección **preferencias de contacto** , seleccione **administrar y expanda preferencias de contacto**. Actualice su dirección de correo electrónico móvil, Telefónica y alternativa. Asegúrese de usar algo diferente de la dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
 
     > [!IMPORTANT]
     > La dirección de correo electrónico alternativa y el número de teléfono móvil son necesarios para restablecer la contraseña de administrador (no la contraseña de administrador del equipo).

@@ -19,12 +19,12 @@ description: Solucione los errores de Azure AzCopy al cargar datos que no son de
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819150"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434283"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy en eDiscovery avanzado
 
@@ -42,7 +42,7 @@ En este momento, debe usar AzCopy v 8.1 para cargar datos que no son de Microsof
 
 Si AzCopy no está instalado o está instalado en una ubicación distinta de la ubicación de instalación predeterminada (que es `%ProgramFiles(x86)%` ), es posible que reciba el siguiente error al ejecutar el comando AzCopy:
 
-    The system cannot find the path specified.
+> El sistema no puede encontrar la ruta de acceso especificada.
 
 Si AzCopy no está instalado en el equipo local, puede encontrar información de instalación en [transferir datos con AzCopy v 8.1 en Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Asegúrese de instalarlo en la ubicación predeterminada.
 

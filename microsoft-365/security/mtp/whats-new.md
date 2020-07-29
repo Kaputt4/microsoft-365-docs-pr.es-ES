@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204940"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429971"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novedades de Protección contra amenazas de Microsoft
 
@@ -33,6 +33,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="july-2020"></a>Julio de 2020
 - [Función FileProfile ()](advanced-hunting-fileprofile-function.md) <br> Use esta función en sus consultas de [búsqueda avanzada](advanced-hunting-overview.md) para enriquecer los resultados con información completa del archivo.
 - [Tablas de identidad y aplicación](advanced-hunting-schema-tables.md)<br> Obtenga visibilidad de los eventos de autenticación, las consultas de Active Directory y la actividad relacionada con las aplicaciones con las tablas [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)y [AppFileEvents](advanced-hunting-appfileevents-table.md) en el esquema de búsqueda avanzada.
+- [Ir a la caza](advanced-hunting-go-hunt.md)<br> Dinamización rápida de la investigación de un incidente para inspeccionar un evento específico, un usuario, un dispositivo u otros tipos de entidad mediante funciones de [búsqueda avanzada](advanced-hunting-overview.md) basadas en consultas.
 
 ## <a name="june-2020"></a>Junio de 2020
 - Fuente de Twitter <br> Obtenga la última investigación sobre seguridad, la inteligencia de amenazas, las noticias de productos y más información en el panel.

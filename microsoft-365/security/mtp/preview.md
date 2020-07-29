@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204832"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430368"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -57,6 +57,5 @@ Sabrá que tiene características de vista previa activadas cuando vea que está
 ## <a name="preview-features"></a>Versión preliminar de las características
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
-- **[Referencia de esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : información sobre las tablas de esquema disponibles directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.  
+- **[Referencia de esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : información sobre las tablas de esquema disponibles directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
 
-- **[Go Hunt](advanced-hunting-go-hunt.md)** — rápidamente dinamizando desde la investigación de un incidente hasta la inspección de un evento específico, un usuario, un dispositivo u otros tipos de entidad mediante funciones de [búsqueda avanzada](advanced-hunting-overview.md) basadas en consultas.

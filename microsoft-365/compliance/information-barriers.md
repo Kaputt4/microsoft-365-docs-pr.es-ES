@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41b9eb1378a585a22bbd747edb395b79cfe761ca
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084149"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430228"
 ---
 # <a name="information-barriers"></a>Barreras de información
 
@@ -64,10 +64,11 @@ Para obtener más información sobre la experiencia del usuario con barreras de 
 
 Las barreras de información se están implementando ahora y se incluyen en las suscripciones, como:
 
-- Microsoft 365 E5
-- Office 365 E5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Cumplimiento avanzado de Office 365
-- Microsoft 365 Compliance E5
+- Microsoft 365 cumplimiento E5/A5
+- Administración de riesgos de Insider de Microsoft 365
 
 Para obtener más información, consulte [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 
@@ -82,7 +83,7 @@ Para [definir o editar directivas de barrera de información](information-barrie
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en el [artículo de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 - [Ver los atributos que se pueden usar para las directivas de barrera de información](information-barriers-attributes.md)

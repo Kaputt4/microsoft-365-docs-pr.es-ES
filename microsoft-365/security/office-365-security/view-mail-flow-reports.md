@@ -1,5 +1,5 @@
 ---
-title: Ver informes de flujo de correo en el centro de seguridad & cumplimiento
+title: Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de flujo de correo para su organización. Los informes de flujo de correo están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937258"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434184"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Ver informes de flujo de correo en el centro de seguridad & cumplimiento
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
 
 Además de la [información del flujo de correo](mail-flow-insights-v2.md) que está disponible en el centro de seguridad & cumplimiento, hay disponible una variedad de informes de flujo de correo que le ayudarán a supervisar su organización de 365 de Microsoft. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el centro de seguridad & cumplimiento en <https://office.protection.com> visitando el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://office.protection.office.com/insightdashboard> .
 
@@ -310,7 +310,7 @@ Los siguientes gráficos están disponibles en la vista de informe:
 
   ![Vista de dirección en el informe de correo electrónico enviados y recibidos](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Explorar en profundidad por** \> **Malware (anti-malware)**: esta selección le lleva a la [detección de malware en el informe de correo electrónico](view-email-security-reports.md#malware-detection-in-email-report).
+- **Explorar en profundidad por** \> **Malware (anti-malware)**: esta selección le lleva a las [detecciones de malware en el informe de correo electrónico](view-email-security-reports.md#malware-detections-in-email-report).
 
 - **Explorar en profundidad por** \> **Detecciones de correo no deseado)**: esta selección le lleva al [Informe de detecciones de correo no deseado](view-email-security-reports.md#spam-detections-report).
 
