@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para su inquilino con la aplicación de plantilla de análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: fa0973521f5a5e7e8b9b0fda161a5b4779d64c68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401511"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502954"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "44401511"
 
 ::: moniker-end
 
-El análisis de uso de Microsoft 365 también está disponible para Microsoft 365 US Government Community.
+El análisis de uso de Microsoft 365 todavía no está disponible para la comunidad de Microsoft 365 US Government.
   
 ## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Pasos para habilitar el análisis de uso de Microsoft 365
 

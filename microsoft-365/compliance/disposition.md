@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127017"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506325"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records.md) que se han eliminado automáticamente al final del período de retención. 
 
@@ -121,16 +121,16 @@ Todas las acciones de disposición se pueden auditar y el texto de justificació
 
 El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser apto para el proceso de limpieza estándar descrito en [Cómo funciona la configuración de retención con el contenido en su lugar](retention.md#how-retention-settings-work-with-content-in-place).
 
-## <a name="disposition-of-records"></a>Disposición de los registros
+## <a name="disposition-of-records"></a>Eliminación de registros
 
 > [!NOTE]
-> La capacidad para ver los registros que se eliminaron automáticamente sin una revisión de disposición se distribuye gradualmente a los inquilinos de abril y mayo de 2020, por lo que es posible que no vea esta experiencia de forma inmediata.
+> La capacidad para ver los registros que se eliminaron automáticamente sin una revisión de disposición aún se está implementando en los inquilinos, por lo que es posible que no vea todos los elementos desechados durante este período de lanzamiento.
 
 Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 
 ![Elementos eliminados sin una revisión de disposición](../media/records-disposed2.png)
 
-Los elementos que se muestran en la ficha **elementos desechados** para las etiquetas de registro se conservan durante un máximo de 7 años después de que se eliminó el elemento, con un límite de 1 millón elementos por registro para ese período. Si ve el número de **recuento** cerca de este límite de 1 millón y necesita probar la disposición de sus registros, póngase en contacto [con el soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Los elementos que se muestran en la ficha **elementos desechados** para las etiquetas de registro se conservan hasta siete años después de que se eliminó el elemento, con un límite de 1 millón elementos por registro para ese período. Si ve el número de **recuento** cerca de este límite de 1 millón y necesita probar la disposición de sus registros, póngase en contacto [con el soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría esté [habilitada y sea buscada](turn-audit-log-search-on-or-off.md) para que se capturen los eventos correspondientes.

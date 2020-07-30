@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 415313ac31fe4ad56f9a476576f14b90d7dd97f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127611"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430238"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -60,16 +60,17 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 
 |Quiero...|Documentación|
 |----------------|---------------|
-|Establecer de forma eficiente las acciones de conservación y de eliminación en la organización, o bien por ubicación: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupos de Microsoft 365 <br />- Skype Empresarial  <br />- Teams  |[Crear y configurar directivas de retención](create-retention-policies.md)|
+|Establecer de forma eficiente las acciones de conservación y de eliminación en la organización, o bien por el servicio de Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Grupos de Microsoft 365 <br />- Skype Empresarial  <br />- Microsoft Teams  |[Crear y configurar directivas de retención](create-retention-policies.md)|
 |Permitir a los administradores y usuarios aplicar manualmente un conjunto de acciones de conservación y de eliminación de documentos y mensajes de correo electrónico: <br />- SharePoint <br />- OneDrive <br />- Outlook y Outlook en la Web|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Permitir a los administradores del sitio aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Permitir a los usuarios aplicar una etiqueta de retención automáticamente a los mensajes de correo electrónico mediante reglas de Outlook|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Aplicar manualmente un conjunto de acciones de conservación y de eliminación a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)|
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
+|Administrar el ciclo de vida de los distintos tipos de documentos en SharePoint| [Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md)|
 |Utilice una única solución de administración de registros para documentos y mensajes de correo electrónico |[Administración de registros en Microsoft 365](records-management.md) |
 |Cumplir con la norma 17a-4 de la SEC|[Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
-|Compruebe la eliminación de contenido cuando se elimine el mismo al final de su período de retención|[Eliminación de registros](disposition.md#disposition-of-records) |
+|Obtener comprobación de la eliminación de contenido cuando este se elimine al final de su período de retención|[Eliminación de registros](disposition.md#disposition-of-records) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentación de usuario final para las etiquetas de retención
 

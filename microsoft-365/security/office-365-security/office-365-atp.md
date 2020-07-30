@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039383"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434054"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -87,9 +87,9 @@ Los informes se actualizan en tiempo real y proporcionan los detalles más recie
 
 - [Informe de estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report)
 
-- [Informe de tipos de archivos de ATP](view-reports-for-atp.md#atp-file-types-report)
+- [Informe de tipos de archivos de Protección contra amenazas avanzada](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
 
-- [Informe de disposición de mensajes ATP](view-reports-for-atp.md#atp-message-disposition-report)
+- [Informe de eliminación de mensajes de Protección contra amenazas avanzada](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
 
 - ... y muchas más.
 

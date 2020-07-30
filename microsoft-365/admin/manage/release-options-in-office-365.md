@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de lanzamiento de actualizaciones de productos y características nuevas en el centro de administración de Microsoft 365.
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399697"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502884"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones estándar o de lanzamiento de destino
 
@@ -42,6 +42,9 @@ Con Microsoft 365, recibirá nuevas actualizaciones de productos y característi
   
 > [!IMPORTANT]
 > Las actualizaciones de Microsoft 365 descritas en este artículo se aplican a Microsoft 365, SharePoint Online y Exchange Online. No se aplican a Skype Empresarial ni a los servicios relacionados. Estas opciones de versión están dirigidas a los mejores esfuerzos para publicar cambios en Microsoft 365, pero no se pueden garantizar en todo momento ni para todas las actualizaciones. 
+
+> [!NOTE]
+> Para obtener información sobre los canales de actualización para aplicaciones, vea [información general sobre los canales de actualización para las aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-channels). 
   
 ## <a name="how-it-works---release-validation"></a>Cómo funciona: validación de versiones
 

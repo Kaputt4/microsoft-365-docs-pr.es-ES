@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre cómo evaluar la preparación de los dispositivos y las aplicaciones en el entorno.
-ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2389dcfe70108e261208191bd3674eced702b4c6
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011668"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434162"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Paso 1: Preparación de dispositivos y aplicaciones
 
@@ -35,9 +35,8 @@ ms.locfileid: "44011668"
 </thead>
 </table>
 
->[!NOTE]
->La preparación de los dispositivos y las aplicaciones es el primer paso del ciclo de proceso de implementación recomendado, que abarca los aspectos integrales de la compatibilidad del hardware y las aplicaciones. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
->
+> [!NOTE]
+> La preparación de los dispositivos y las aplicaciones es el primer paso del ciclo de proceso de implementación recomendado, que abarca los aspectos integrales de la compatibilidad del hardware y las aplicaciones. Para ver el proceso de implementación de escritorio completo, visite el [Centro de implementación de escritorio](https://aka.ms/HowToShift).
 
 En el pasado, el gran obstáculo para actualizar los equipos de escritorio del usuario era la compatibilidad de las aplicaciones y el hardware. Al planear el cambio a Windows 10 y Aplicaciones de Microsoft 365 para la empresa, la buena noticia es que casi cualquier aplicación escrita en los últimos 10 años se ejecutará en Windows 10, y que los complementos COM y macros de VBA que su organización usaba en versiones de Office anteriores a Office 2010 seguirán funcionando en las versiones más recientes de Office, sin cambios.
 
@@ -47,11 +46,13 @@ Este artículo le guiará por esa primera fase (Preparación de dispositivos y a
 
 ## <a name="windows-10-compatibility-scan"></a>Análisis de compatibilidad de Windows 10
 
-Antes de implementar Windows 10 Microsoft recomienda comprobar la preparación de los dispositivos existentes que ejecutan Windows 7 o 8/8.1. Los medios de instalación de Windows 10 son compatibles con un modificador de línea de comandos para que setup.exe ejecute la actualización, pero solo compruebe compatibilidad, sin llegar a realizar la actualización. ScanOnly se puede ejecutar como un archivo por lotes secuenciados o integrado en una secuencia de tareas de Microsoft Endpoint Configuration Manager, incluyendo la capacidad de ejecutar el ScanOnly directamente desde la red para que el medio de instalación de Windows 10 no se transmita al dispositivo local. Cuando ScanOnly acabe se devuelven los resultados a través de códigos de retorno de los archivos de registro generados por Setup.EXE.   
+Antes de implementar Windows 10 Microsoft recomienda comprobar la preparación de los dispositivos existentes que ejecutan Windows 7 o 8/8.1. Los medios de instalación de Windows 10 son compatibles con un modificador de línea de comandos para que setup.exe ejecute la actualización, pero solo compruebe compatibilidad, sin llegar a realizar la actualización. ScanOnly se puede ejecutar como un archivo por lotes secuenciados o integrado en una secuencia de tareas de Microsoft Endpoint Configuration Manager, incluyendo la capacidad de ejecutar el ScanOnly directamente desde la red para que el medio de instalación de Windows 10 no se transmita al dispositivo local. Cuando ScanOnly acabe se devuelven los resultados a través de códigos de retorno de los archivos de registro generados por Setup.EXE.
 
 Una línea de comandos de ejemplo de ScanOnly que complete la detección de compatibilidad silenciosamente sería similar a la siguiente:
 
-    Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```dos
+Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```
 
 Para obtener más información acerca de ScanOnly y otros modificadores de comando de configuración de Windows revise las [Opciones de configuración de línea de comandos de Windows](https://aka.ms/setupswitches).
 
@@ -61,7 +62,7 @@ Análisis de escritorio ofrece numerosas ventajas para los sistemas de administr
 
 Para configurar Análisis de escritorio primero debe configurar una suscripción de Azure e incluir un área de trabajo de Análisis del registro de Azure para ello. Una vez que se esté ejecutando el servicio de Análisis de escritorio, podrá inscribir cualquier dispositivo con Windows 7 SP1 o una versión posterior conectado a Internet mediante la configuración de Directiva de grupo. Así de simple. No tiene que implementar ningún agente y el flujo de trabajo visual de Análisis de escritorio le guiará desde la implementación de prueba a la de producción. Si quiere, puede exportar datos de Análisis de escritorio a herramientas de implementación de software, como la rama actual de Microsoft Endpoint Configuration Manager, directamente a equipos de destino y crear colecciones a medida que estén listas para su implementación.
 
-Si en la actualidad no ha configurado Análisis de escritorio para su entorno o quiere suscribirse a una prueba, vaya a la página de Análisis de escritorio (https://www.aka.ms/desktopanalytics)) para empezar.
+Si en la actualidad no tiene configurado Desktop Analytics para su entorno o quiere suscribirse a una versión de prueba, vaya a la [página de Desktop Analytics](https://www.aka.ms/desktopanalytics) para empezar.
 
 ## <a name="device-and-app-readiness-process"></a>Proceso de preparación de dispositivos y aplicaciones
 
@@ -103,10 +104,9 @@ Mientras recorre la lista para corregir los problemas, verá que aumenta el núm
 
 ### <a name="configuration-manager-software-inventory-for-application-prioritization"></a>Inventario de software de Configuration Manager para la priorización de aplicaciones
 
-El inventario de software de Configuration Manager es una alternativa a usar soluciones de análisis basadas en la nube para la preparación de aplicaciones y dispositivos. Puede usar cuentas de instalación y explorar equipos específicos para ayudar a clasificar la validación y pruebas de compatibilidad y establecer los paquetes de aplicaciones como compatibles con Windows 10 a través de la configuración del paquete. Aunque esta opción no ofrece la capacidad para comparar la información de compatibilidad conocida con servicios de análisis de Microsoft, puede ser una solución eficaz para un conjunto más pequeño de aplicaciones prioritarias para pruebas manuales. 
+El inventario de software de Configuration Manager es una alternativa a usar soluciones de análisis basadas en la nube para la preparación de aplicaciones y dispositivos. Puede usar cuentas de instalación y explorar equipos específicos para ayudar a clasificar la validación y pruebas de compatibilidad y establecer los paquetes de aplicaciones como compatibles con Windows 10 a través de la configuración del paquete. Aunque esta opción no ofrece la capacidad para comparar la información de compatibilidad conocida con servicios de análisis de Microsoft, puede ser una solución eficaz para un conjunto más pequeño de aplicaciones prioritarias para pruebas manuales.
 
 Para obtener más información, vea [Introducción al inventario de software en Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) y cómo establecer requisitos de plataforma en paquetes de aplicación en [Paquetes y programas en Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs).
-
 
 ## <a name="app-assure"></a>App Assure
 
@@ -116,6 +116,6 @@ Otra herramienta para ayudar con la compatibilidad de aplicaciones de Windows 1
 
 Análisis de escritorio no es solo una herramienta que le ayuda a cambiar a Windows 10 y Aplicaciones de Microsoft 365 para empresas. Con equipos de escritorio que ejecutan Windows 10 y Office 365, puede usarlo para mantener la implementación y administrar las actualizaciones de características semestrales para que pueda mantenerse al día.
 
-## <a name="next-step"></a>Paso siguiente 
+## <a name="next-step"></a>Paso siguiente
 
 ## <a name="step-2-directory-and-network-readiness"></a>[Paso 2: Preparación de los directorios y la red](https://aka.ms/mdd2)

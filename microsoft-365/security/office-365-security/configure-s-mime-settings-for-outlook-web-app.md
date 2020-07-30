@@ -16,22 +16,22 @@ ms.collection:
 - M365-security-compliance
 description: Breve descripción de lo que los administradores de Exchange Online deben hacer para ver y configurar la configuración S/MIME en Outlook en la web en Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616627"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517490"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurar la configuración S/MIME en Exchange Online para Outlook en la web
 
-Como administrador de Exchange Online, puede configurar Outlook en la web (anteriormente conocido como Outlook Web App) para permitir el envío y la recepción de mensajes protegidos por S/MIME. Use los cmdlets **Get-SmimeConfig** y **set-SmimeConfig** para ver y administrar esta característica en Exchange Online PowerShell. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Como administrador de Exchange Online, puede configurar Outlook en la web (anteriormente conocido como Outlook Web App) para permitir el envío y la recepción de mensajes protegidos por S/MIME. Use los cmdlets **Get-SmimeConfig** y **set-SmimeConfig** para ver y administrar esta característica en Exchange Online PowerShell. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig) y [set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig).
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>Consideraciones para el nuevo Microsoft Edge (con cromo)
 
-Para usar S/MIME en Outlook en la web en el nuevo explorador Web de [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) , usted (u otro administrador) debe establecer y configurar la Directiva de explorador Microsoft Edge llamada **ExtensionInstallForcelist** para instalar la extensión S/MIME de Microsoft en Microsoft Edge. El valor de la Directiva es `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Además, tenga en cuenta que la aplicación de esta directiva requiere equipos Unidos a un dominio, por lo que el uso de S/MIME en el nuevo explorador Microsoft Edge requiere de forma eficaz equipos Unidos a un dominio.
+Para usar S/MIME en Outlook en la web en el nuevo explorador Web de [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) , usted (u otro administrador) debe establecer y configurar la Directiva de explorador Microsoft Edge llamada **ExtensionInstallForcelist** para instalar la extensión S/MIME de Microsoft en el nuevo Microsoft Edge. El valor de la Directiva es `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Además, tenga en cuenta que la aplicación de esta directiva requiere dispositivos Unidos a un dominio o de Azure AD, por lo que el uso de S/MIME en el nuevo explorador Microsoft Edge requiere de forma eficaz los dispositivos Unidos a un dominio o de Azure AD.
 
 Para obtener más información sobre la directiva **ExtensionInstallForcelist** , consulte [ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist).
 

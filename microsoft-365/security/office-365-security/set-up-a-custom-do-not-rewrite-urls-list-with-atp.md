@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar direcciones URL bloqueadas personalizadas para los usuarios y no volver a escribir la lista de direcciones URL de un grupo de usuarios en las directivas de vínculos seguros de ATP de Office 365.
-ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702541"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517478"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada mediante vínculos seguros de ATP
 
@@ -60,11 +60,13 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 4. Especifique un nombre y una descripción para la Directiva.
 
-5. En la sección no **reescribir las siguientes direcciones** URL, seleccione el cuadro **Escriba una dirección URL válida** y, a continuación, escriba una dirección URL y, a continuación, elija el signo más (+).
+5. Active **las direcciones URL** se rescribirán y comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario haga clic en el vínculo.
 
-6. En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
+6. En la sección no **reescribir las siguientes direcciones** URL, seleccione el cuadro **Escriba una dirección URL válida** , escriba una dirección URL y, a continuación, elija el signo más (+).
 
-7. Cuando termine de agregar direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
+7. En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
+
+8. Cuando termine de agregar direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
 
 > [!NOTE]
 > Asegúrese de revisar la lista personalizada de direcciones URL bloqueadas de su organización. Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-atp.md).

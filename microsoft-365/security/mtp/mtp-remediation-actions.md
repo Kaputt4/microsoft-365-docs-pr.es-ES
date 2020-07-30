@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955596"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502942"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Acciones de corrección tras investigaciones automatizadas en protección contra amenazas de Microsoft
 
@@ -39,7 +39,7 @@ En la tabla siguiente se resumen las acciones de corrección que son compatibles
 
 |Acciones de corrección de dispositivo (extremo)  |Acciones de corrección de correo electrónico  |
 |---------|---------|
-|Poner archivo en cuarentena<br/>Eliminar clave del registro<br/>Terminar proceso <br/>Detener el servicio <br/>Deshabilitar controlador <br/>Eliminar tarea programada.      |Eliminar temporalmente mensajes de correo electrónico o clústeres<br/>Bloquear URL (tiempo de clic)<br/>Desactivar el reenvío de correo externo          |
+|-Recopilar un paquete de investigación <br/>-Isolater dispositivo (esta acción se puede deshacer)<br/>-Máquina desincorpora <br/>-Liberar la ejecución de código <br/>-Liberar de cuarentena <br/>Ejemplo de solicitud <br/>-Restringir la ejecución de código (esta acción se puede deshacer) <br/>-Ejecutar detección de virus <br/>-Detener y poner en cuarentena      |-Bloquear dirección URL (tiempo de clic)<br/>-Eliminación temporal de mensajes de correo electrónico o clústeres<br/>-Correo electrónico en cuarentena<br/>-Poner en cuarentena un archivo adjunto de correo electrónico<br/>-Desactivar el reenvío externo de correo          |
 
 Las acciones de corrección, tanto si están pendientes de aprobación como si ya están completas, se pueden ver en el [centro de actividades](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 

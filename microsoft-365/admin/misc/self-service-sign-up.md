@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 para operaciones financieras.
-ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtenga información sobre los programas de inscripción y autoservicio disponibles de Microsoft 365, como Microsoft Power Apps, Microsoft Flow y Dynamics 365 for Finance.
+ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399295"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506302"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso del registro de autoservicio en su organización
 
@@ -68,3 +65,4 @@ A continuación se muestran los programas de autoservicio actualmente disponible
 |**Microsoft Stream** <br/> |Cargue y Comparta vídeos en su organización para mejorar la comunicación, la participación y el aprendizaje.  <br/> |[Experiencia del &amp; día 0 de suscripción](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |La automatización de energía es un producto que le ayuda a configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.  <br/> |[Registrarse e iniciar sesión para la automatización de la alimentación](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Power virtual Agents permite a los equipos crear de forma sencilla bots potentes mediante una interfaz gráfica guiada sin código sin la necesidad de científicos o desarrolladores de datos. Power virtual Agents enfrenta muchos de los principales problemas con la creación de robots en la industria de hoy. Elimina el vacío entre los expertos en la materia y los equipos de desarrollo que crean los bots y la larga latencia entre los equipos para reconocer un problema y actualizar el bot para solucionarlo.  <br/> |[Detalles de licencias y acceso](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Registrarse para obtener agentes virtuales de potencia](https://aka.ms/TryPVA) <br/> |
+|**B2B de Azure AD** <br/> |Azure Active Directory (Azure AD) colaboración negocio a negocio (B2B) le permite invitar a usuarios externos (o "usuarios invitados") para que usen los servicios de Azure AD de pago. Algunas características son gratuitas, pero para todas las características de Azure AD, puede invitar a un máximo de cinco usuarios invitados para cada licencia de Azure AD Edition que posea para un empleado o para un usuario que no sea invitado en su espacio empresarial. <br/> |[Autoservicio para el registro de colaboración B2B de Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Guía de licencias de colaboración B2B de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |
