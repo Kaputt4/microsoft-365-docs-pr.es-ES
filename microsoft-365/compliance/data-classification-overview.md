@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127225"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430333"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
@@ -132,9 +132,9 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 
 ## <a name="see-also"></a>Vea también
 
-- [Ver actividad de la etiqueta (vista previa)](data-classification-activity-explorer.md)
-- [Ver contenido etiquetado (vista previa)](data-classification-content-explorer.md)
-- [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
-- [Obtenga más información sobre las directivas de retención y las etiquetas de retención](retention.md)
+- [Ver actividad de la etiqueta](data-classification-activity-explorer.md)
+- [Ver contenido etiquetado](data-classification-content-explorer.md)
+- [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
+- [Más información sobre las directivas y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Introducción al entrenamiento de clasificadores (vista previa)](classifier-getting-started-with.md)
