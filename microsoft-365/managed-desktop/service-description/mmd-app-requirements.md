@@ -1,18 +1,18 @@
 ---
 title: Requisitos de la aplicación de escritorio administrada de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637857"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522030"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisitos de la aplicación de escritorio administrada de Microsoft
 
@@ -20,44 +20,25 @@ ms.locfileid: "43637857"
 
 <!--Application addendum -->
  
-Para garantizar el rendimiento, la fiabilidad y la capacidad de servicio de los dispositivos de escritorio administrados por Microsoft, las aplicaciones de línea de negocio del cliente no deben afectar seriamente a la experiencia del usuario final ni modificar la postura de seguridad. Por lo tanto, las aplicaciones de línea de negocio que desea implementar en los dispositivos de escritorio administrados por Microsoft deben cumplir los requisitos de este tema.
-
-## <a name="application-condition"></a>Condición de aplicación
-
-Es importante que las aplicaciones no afecten negativamente al entorno de escritorio administrado por Microsoft. A continuación, se indican los requisitos que debe cumplir una aplicación para que se implemente una aplicación. Para cualquier aplicación o controlador, Microsoft puede renunciar a cualquier requisito ofrecido en este documento. Microsoft puede decidir quitar cualquier aplicación o controlador que tenga un impacto negativo en el rendimiento y la confiabilidad de los dispositivos de escritorio administrados por Microsoft.
-
-## <a name="centrally-managed-apps"></a>Aplicaciones administradas centralmente
-
-Todas las aplicaciones y los controladores instalados en los dispositivos administrados por Microsoft deben implementarse a través de Microsoft Intune, Microsoft Store o Microsoft Store para empresas; Si está disponible, los controladores también se implementan a través del servicio Windows Update. 
-
-## <a name="prohibited-app-classes"></a>Clases de aplicaciones prohibidas
-
-Ciertos tipos de aplicaciones no se permiten en dispositivos de escritorio administrados por Microsoft:
-- software antivirus, de seguridad o de auditoría de terceros
-- Versiones de Microsoft Office anteriores a Microsoft 365 apps for Enterprise
-- Aplicaciones que instalan o agrupan otro software de terceros
-
-## <a name="restricted-app-behaviors"></a>Comportamientos de aplicación restringidos
-
-Algunos comportamientos de la aplicación pueden afectar negativamente a la experiencia del usuario o pueden presentar un riesgo de seguridad para los dispositivos de escritorio administrados por Microsoft. No se permite que las aplicaciones con los siguientes comportamientos se ejecuten en el entorno de escritorio administrado por Microsoft sin una específica de Microsoft.
-
-Experiencia del usuario:
-- Instalar los servicios en segundo plano
-- Agregarse a sí mismo a la ruta de acceso de inicio de Windows
-- Aplicaciones que dependen de controladores
-- exploradores Web de terceros
-
-Seguridad:
-- Elevar los privilegios del usuario final
-- Actuar como una tienda de aplicaciones o tener un administrador de extensiones integrado
-- Tener vulnerabilidades de seguridad conocidas
-- Cifrar o restringir el acceso a los datos del usuario final
-- No está firmado o está firmado con un certificado que no se acumula en una raíz de confianza
+Microsoft Managed Desktop requiere que administremos los dispositivos con un enfoque específico para garantizar el rendimiento, la confiabilidad y la capacidad de servicio de los dispositivos. Si está seguro de que el enfoque que adopta el escritorio administrado de Microsoft para las áreas siguientes no funcionará para usted, puede solicitar una [excepción al plan de servicio](customizing.md).
 
 
-## <a name="driver-deployment"></a>Implementación de controladores
+|Área de administración  |Enfoque del escritorio administrado de Microsoft  |
+|---------|---------|
+|Configuración de dispositivos o administración de directivas     |  Microsoft Intune       |
+|Administración de aplicaciones     | Microsoft Intune y portal de la compañía        |
+|Implementación de controladores     |  Controladores incluidos con el dispositivo, Windows Update o Intune       |
+|Seguridad del dispositivo     | Consulte [seguridad de dispositivos](security.md#device-security)      |
+|Administración de identidad y acceso     | Consulte [Administración de identidades y acceso](security.md#identity-and-access-management)        |
+|Seguridad de red     | Consulte [seguridad de red](security.md#network-security)        |
+|Seguridad de la información     |  Consulte [seguridad](security.md#information-security) de la información       |
+|Recuperación de datos     | OneDrive para la Empresa        |
+|Productividad principal     | Aplicaciones de Microsoft 365 para empresas    |
+|Explorador     | Microsoft Edge        |
 
-El escritorio administrado de Microsoft solo admite controladores de dispositivos que están disponibles a través de Windows Update o la bandeja de entrada instalada con el dispositivo administrado por Microsoft. 
 
-Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere una excepción antes de que se implemente en el escritorio administrado de Microsoft. 
+
+
+Microsoft Managed Desktop puede supervisar otro software que se ejecuta en dispositivos administrados. Si afecta negativamente a la seguridad, el rendimiento o la confiabilidad del sistema, es posible que necesite solicitar una excepción al plan de servicio.
+
 

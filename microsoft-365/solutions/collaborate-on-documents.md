@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: En este artículo, aprenderá a colaborar con invitados en un documento de SharePoint y OneDrive.
-ms.openlocfilehash: 82b9d6356144d6d465c7c94f58ec60fe96a1397a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cb3c527304f0d286b4a1a0147d07537b0fae4eda
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159996"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527923"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar con invitados en un documento
 
@@ -42,7 +43,7 @@ Compruebe la configuración de relaciones de organización para asegurarse de qu
 
 Para establecer la configuración de relación organizativa
 
-1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com).
+1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
 3. En el panel de **información general** , haga clic en **relaciones organizativas**.
 4. En el panel relaciones de la **organización** , haga clic en **configuración**.
@@ -109,7 +110,7 @@ Para establecer la configuración de uso compartido de nivel de sitio
 
 La configuración de uso compartido de invitados ahora está configurada para que los usuarios puedan compartir archivos y carpetas con personas de fuera de la organización. Consulte [compartir archivos y carpetas de OneDrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) y [compartir archivos o carpetas de SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) para obtener más información.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 

@@ -5,21 +5,40 @@ keywords: historial de cambios
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107604"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528041"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados en la [documentación del escritorio administrado de Microsoft](index.yml). Los artículos "actualizados" son aquellos en los que se han agregado o corregidos materiales (correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato no aparecen). Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en github](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="july-2020"></a>Julio de 2020
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Requisitos de la aplicación de escritorio administrada de Microsoft](service-description/mmd-app-requirements.md) | Artículo actualizado
+[Cumplimiento](intro/compliance.md) | Artículo actualizado
+[Introducción al control de aplicaciones](get-started/get-started-app-control.md) | Artículo actualizado
+[Usar el control de aplicaciones](working-with-managed-desktop/work-with-app-control.md) | Artículo actualizado
+[Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
+[Control de aplicaciones](service-description/app-control.md) | Artículo actualizado
+[Configuración de red para el Escritorio administrado de Microsoft](get-ready/network.md) | Artículo actualizado
+[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
+[Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo nuevo
+[Control de aplicaciones](service-description/app-control.md) | Artículo nuevo
+[Instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrados por Microsoft](get-started/project-visio.md) | Artículo actualizado
 
 ## <a name="june-2020"></a>Junio de 2020
 Artículo nuevo o modificado | Descripción

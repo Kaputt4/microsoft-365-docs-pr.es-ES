@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un sitio de SharePoint para la colaboración con los invitados.
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160008"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527911"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar con invitados en un sitio
 
@@ -44,7 +45,7 @@ Compruebe la configuración de relaciones de organización para asegurarse de qu
 
 Para establecer la configuración de relación organizativa
 
-1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com).
+1. Inicie sesión en Microsoft Azure en [https://portal.azure.com](https://portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic en **Azure Active Directory**.
 3. En el panel de **información general** , haga clic en **relaciones organizativas**.
 4. En el panel relaciones de la **organización** , haga clic en **configuración**.
@@ -134,7 +135,7 @@ Para invitar a invitados a un grupo
 3. Escriba las direcciones de correo electrónico de los invitados que desea invitar y, a continuación, haga clic en **Agregar**.
 4. Haga clic en **Cerrar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 
