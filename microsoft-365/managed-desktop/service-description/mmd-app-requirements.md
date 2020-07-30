@@ -1,63 +1,44 @@
 ---
 title: Requisitos de la aplicación de escritorio administrada de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637857"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522030"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="a1caa-103">Requisitos de la aplicación de escritorio administrada de Microsoft</span><span class="sxs-lookup"><span data-stu-id="a1caa-103">Microsoft Managed Desktop app requirements</span></span>
+# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="84463-103">Requisitos de la aplicación de escritorio administrada de Microsoft</span><span class="sxs-lookup"><span data-stu-id="84463-103">Microsoft Managed Desktop app requirements</span></span>
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-<span data-ttu-id="a1caa-104">Para garantizar el rendimiento, la fiabilidad y la capacidad de servicio de los dispositivos de escritorio administrados por Microsoft, las aplicaciones de línea de negocio del cliente no deben afectar seriamente a la experiencia del usuario final ni modificar la postura de seguridad.</span><span class="sxs-lookup"><span data-stu-id="a1caa-104">In order to guarantee the performance, reliability, and serviceability of Microsoft Managed Desktop devices a customer’s line of business apps must not seriously impact end user experience or modify the security stance.</span></span> <span data-ttu-id="a1caa-105">Por lo tanto, las aplicaciones de línea de negocio que desea implementar en los dispositivos de escritorio administrados por Microsoft deben cumplir los requisitos de este tema.</span><span class="sxs-lookup"><span data-stu-id="a1caa-105">Consequently, line of business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.</span></span>
-
-## <a name="application-condition"></a><span data-ttu-id="a1caa-106">Condición de aplicación</span><span class="sxs-lookup"><span data-stu-id="a1caa-106">Application condition</span></span>
-
-<span data-ttu-id="a1caa-107">Es importante que las aplicaciones no afecten negativamente al entorno de escritorio administrado por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-107">It’s important that applications don’t adversely impact the Microsoft Managed Desktop environment.</span></span> <span data-ttu-id="a1caa-108">A continuación, se indican los requisitos que debe cumplir una aplicación para que se implemente una aplicación.</span><span class="sxs-lookup"><span data-stu-id="a1caa-108">The following are the requirements that an application must meet for an application to be deployed.</span></span> <span data-ttu-id="a1caa-109">Para cualquier aplicación o controlador, Microsoft puede renunciar a cualquier requisito ofrecido en este documento.</span><span class="sxs-lookup"><span data-stu-id="a1caa-109">For any given application or driver, Microsoft may waive any requirement provided herein.</span></span> <span data-ttu-id="a1caa-110">Microsoft puede decidir quitar cualquier aplicación o controlador que tenga un impacto negativo en el rendimiento y la confiabilidad de los dispositivos de escritorio administrados por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-110">Microsoft may decide to remove any application or driver that negatively impacts performance and reliability of Microsoft Managed Desktop devices.</span></span>
-
-## <a name="centrally-managed-apps"></a><span data-ttu-id="a1caa-111">Aplicaciones administradas centralmente</span><span class="sxs-lookup"><span data-stu-id="a1caa-111">Centrally managed apps</span></span>
-
-<span data-ttu-id="a1caa-112">Todas las aplicaciones y los controladores instalados en los dispositivos administrados por Microsoft deben implementarse a través de Microsoft Intune, Microsoft Store o Microsoft Store para empresas; Si está disponible, los controladores también se implementan a través del servicio Windows Update.</span><span class="sxs-lookup"><span data-stu-id="a1caa-112">All applications and drivers installed on Microsoft Managed Devices must be deployed through Microsoft Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service.</span></span> 
-
-## <a name="prohibited-app-classes"></a><span data-ttu-id="a1caa-113">Clases de aplicaciones prohibidas</span><span class="sxs-lookup"><span data-stu-id="a1caa-113">Prohibited app classes</span></span>
-
-<span data-ttu-id="a1caa-114">Ciertos tipos de aplicaciones no se permiten en dispositivos de escritorio administrados por Microsoft:</span><span class="sxs-lookup"><span data-stu-id="a1caa-114">Certain application types are not permitted on Microsoft Managed Desktop devices:</span></span>
-- <span data-ttu-id="a1caa-115">software antivirus, de seguridad o de auditoría de terceros</span><span class="sxs-lookup"><span data-stu-id="a1caa-115">3rd party anti-virus, security, or audit software</span></span>
-- <span data-ttu-id="a1caa-116">Versiones de Microsoft Office anteriores a Microsoft 365 apps for Enterprise</span><span class="sxs-lookup"><span data-stu-id="a1caa-116">Versions of Microsoft Office prior to Microsoft 365 Apps for enterprise</span></span>
-- <span data-ttu-id="a1caa-117">Aplicaciones que instalan o agrupan otro software de terceros</span><span class="sxs-lookup"><span data-stu-id="a1caa-117">Applications that install or bundle other 3rd party software</span></span>
-
-## <a name="restricted-app-behaviors"></a><span data-ttu-id="a1caa-118">Comportamientos de aplicación restringidos</span><span class="sxs-lookup"><span data-stu-id="a1caa-118">Restricted app behaviors</span></span>
-
-<span data-ttu-id="a1caa-119">Algunos comportamientos de la aplicación pueden afectar negativamente a la experiencia del usuario o pueden presentar un riesgo de seguridad para los dispositivos de escritorio administrados por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-119">Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="a1caa-120">No se permite que las aplicaciones con los siguientes comportamientos se ejecuten en el entorno de escritorio administrado por Microsoft sin una específica de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-120">Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific  from Microsoft.</span></span>
-
-<span data-ttu-id="a1caa-121">Experiencia del usuario:</span><span class="sxs-lookup"><span data-stu-id="a1caa-121">User Experience:</span></span>
-- <span data-ttu-id="a1caa-122">Instalar los servicios en segundo plano</span><span class="sxs-lookup"><span data-stu-id="a1caa-122">Install background services</span></span>
-- <span data-ttu-id="a1caa-123">Agregarse a sí mismo a la ruta de acceso de inicio de Windows</span><span class="sxs-lookup"><span data-stu-id="a1caa-123">Add itself to the Windows startup path</span></span>
-- <span data-ttu-id="a1caa-124">Aplicaciones que dependen de controladores</span><span class="sxs-lookup"><span data-stu-id="a1caa-124">Applications dependent on drivers</span></span>
-- <span data-ttu-id="a1caa-125">exploradores Web de terceros</span><span class="sxs-lookup"><span data-stu-id="a1caa-125">3rd party web browsers</span></span>
-
-<span data-ttu-id="a1caa-126">Seguridad:</span><span class="sxs-lookup"><span data-stu-id="a1caa-126">Security:</span></span>
-- <span data-ttu-id="a1caa-127">Elevar los privilegios del usuario final</span><span class="sxs-lookup"><span data-stu-id="a1caa-127">Elevate the end user’s privileges</span></span>
-- <span data-ttu-id="a1caa-128">Actuar como una tienda de aplicaciones o tener un administrador de extensiones integrado</span><span class="sxs-lookup"><span data-stu-id="a1caa-128">Act as an app store or have a built-in extension manager</span></span>
-- <span data-ttu-id="a1caa-129">Tener vulnerabilidades de seguridad conocidas</span><span class="sxs-lookup"><span data-stu-id="a1caa-129">Have known security vulnerabilities</span></span>
-- <span data-ttu-id="a1caa-130">Cifrar o restringir el acceso a los datos del usuario final</span><span class="sxs-lookup"><span data-stu-id="a1caa-130">Encrypt or restrict access to end-user data</span></span>
-- <span data-ttu-id="a1caa-131">No está firmado o está firmado con un certificado que no se acumula en una raíz de confianza</span><span class="sxs-lookup"><span data-stu-id="a1caa-131">Is unsigned or is signed using a certificate which doesn’t roll up to a trusted root</span></span>
+<span data-ttu-id="84463-104">Microsoft Managed Desktop requiere que administremos los dispositivos con un enfoque específico para garantizar el rendimiento, la confiabilidad y la capacidad de servicio de los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="84463-104">Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices.</span></span> <span data-ttu-id="84463-105">Si está seguro de que el enfoque que adopta el escritorio administrado de Microsoft para las áreas siguientes no funcionará para usted, puede solicitar una [excepción al plan de servicio](customizing.md).</span><span class="sxs-lookup"><span data-stu-id="84463-105">If you’re sure that the approach taken by Microsoft Managed Desktop for the areas below will not work for you, you can request an [exception to the service plan](customizing.md).</span></span>
 
 
-## <a name="driver-deployment"></a><span data-ttu-id="a1caa-132">Implementación de controladores</span><span class="sxs-lookup"><span data-stu-id="a1caa-132">Driver deployment</span></span>
+|<span data-ttu-id="84463-106">Área de administración</span><span class="sxs-lookup"><span data-stu-id="84463-106">Management area</span></span>  |<span data-ttu-id="84463-107">Enfoque del escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="84463-107">Microsoft Managed Desktop approach</span></span>  |
+|---------|---------|
+|<span data-ttu-id="84463-108">Configuración de dispositivos o administración de directivas</span><span class="sxs-lookup"><span data-stu-id="84463-108">Device configuration or policy management</span></span>     |  <span data-ttu-id="84463-109">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="84463-109">Microsoft Intune</span></span>       |
+|<span data-ttu-id="84463-110">Administración de aplicaciones</span><span class="sxs-lookup"><span data-stu-id="84463-110">Application management</span></span>     | <span data-ttu-id="84463-111">Microsoft Intune y portal de la compañía</span><span class="sxs-lookup"><span data-stu-id="84463-111">Microsoft Intune and Company Portal</span></span>        |
+|<span data-ttu-id="84463-112">Implementación de controladores</span><span class="sxs-lookup"><span data-stu-id="84463-112">Driver deployment</span></span>     |  <span data-ttu-id="84463-113">Controladores incluidos con el dispositivo, Windows Update o Intune</span><span class="sxs-lookup"><span data-stu-id="84463-113">Drivers included with the device, Windows Update, or Intune</span></span>       |
+|<span data-ttu-id="84463-114">Seguridad del dispositivo</span><span class="sxs-lookup"><span data-stu-id="84463-114">Device security</span></span>     | <span data-ttu-id="84463-115">Consulte [seguridad de dispositivos](security.md#device-security)</span><span class="sxs-lookup"><span data-stu-id="84463-115">See [Device security](security.md#device-security)</span></span>      |
+|<span data-ttu-id="84463-116">Administración de identidad y acceso</span><span class="sxs-lookup"><span data-stu-id="84463-116">Identity and access management</span></span>     | <span data-ttu-id="84463-117">Consulte [Administración de identidades y acceso](security.md#identity-and-access-management)</span><span class="sxs-lookup"><span data-stu-id="84463-117">See [Identity and access management](security.md#identity-and-access-management)</span></span>        |
+|<span data-ttu-id="84463-118">Seguridad de red</span><span class="sxs-lookup"><span data-stu-id="84463-118">Network security</span></span>     | <span data-ttu-id="84463-119">Consulte [seguridad de red](security.md#network-security)</span><span class="sxs-lookup"><span data-stu-id="84463-119">See [Network security](security.md#network-security)</span></span>        |
+|<span data-ttu-id="84463-120">Seguridad de la información</span><span class="sxs-lookup"><span data-stu-id="84463-120">Information security</span></span>     |  <span data-ttu-id="84463-121">Consulte [seguridad](security.md#information-security) de la información</span><span class="sxs-lookup"><span data-stu-id="84463-121">See [Information security](security.md#information-security)</span></span>       |
+|<span data-ttu-id="84463-122">Recuperación de datos</span><span class="sxs-lookup"><span data-stu-id="84463-122">Data recovery</span></span>     | <span data-ttu-id="84463-123">OneDrive para la Empresa</span><span class="sxs-lookup"><span data-stu-id="84463-123">OneDrive for Business</span></span>        |
+|<span data-ttu-id="84463-124">Productividad principal</span><span class="sxs-lookup"><span data-stu-id="84463-124">Core productivity</span></span>     | <span data-ttu-id="84463-125">Aplicaciones de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="84463-125">Microsoft 365 Apps for enterprise</span></span>    |
+|<span data-ttu-id="84463-126">Explorador</span><span class="sxs-lookup"><span data-stu-id="84463-126">Browser</span></span>     | <span data-ttu-id="84463-127">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="84463-127">Microsoft Edge</span></span>        |
 
-<span data-ttu-id="a1caa-133">El escritorio administrado de Microsoft solo admite controladores de dispositivos que están disponibles a través de Windows Update o la bandeja de entrada instalada con el dispositivo administrado por Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-133">Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device.</span></span> 
 
-<span data-ttu-id="a1caa-134">Si una aplicación requiere un controlador o controladores específicos para ejecutarse, se considera una aplicación restringida y requiere una excepción antes de que se implemente en el escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a1caa-134">If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exception before being deployed to Microsoft Managed Desktop.</span></span> 
+
+
+<span data-ttu-id="84463-128">Microsoft Managed Desktop puede supervisar otro software que se ejecuta en dispositivos administrados.</span><span class="sxs-lookup"><span data-stu-id="84463-128">Microsoft Managed Desktop might monitor other software running on managed devices.</span></span> <span data-ttu-id="84463-129">Si afecta negativamente a la seguridad, el rendimiento o la confiabilidad del sistema, es posible que necesite solicitar una excepción al plan de servicio.</span><span class="sxs-lookup"><span data-stu-id="84463-129">If it negatively impacts system security, performance, or reliability, you might be required to request an exception to the service plan.</span></span>
+
 
