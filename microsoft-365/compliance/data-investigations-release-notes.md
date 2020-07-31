@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: En este artículo, encontrará notas de la versión que contienen cambios y nuevas características para la herramienta de investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352287"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528030"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 
-Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en Microsoft 365 para clasificar, investigar y corregir incidentes relacionados con los datos, como un incidente de derrame de datos o una investigación interna. La versión preliminar pública de las investigaciones de datos proporciona acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, cree una nueva investigación en investigaciones de datos (vista previa) en el centro de seguridad & cumplimiento. Para obtener información sobre cómo hacerlo, consulte [administrar un incidente de derrame de datos en Microsoft 365](manage-data-spillage-incidents.md).
+Puede usar la nueva herramienta de investigaciones de datos (vista previa) de Microsoft 365 para clasificar, investigar y corregir incidentes relacionados con datos, como un incidente de derrame de datos o una investigación interna. La versión preliminar pública de las investigaciones de datos proporciona acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, cree una nueva investigación en investigaciones de datos (vista previa) en el centro de seguridad & cumplimiento. Para obtener información sobre cómo hacerlo, consulte [administrar un incidente de derrame de datos en Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novedades 
 
@@ -44,7 +44,7 @@ Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en
 
 - **Censurar, etiquetar y anotar** : censurar texto, aplicar etiquetas y crear anotaciones mientras revisa documentos.
   
-- **Indización avanzada** : si hay elementos parcialmente indizados, se volverán a indexar a petición para que todos los datos estén disponibles para la búsqueda.
+- **Indización avanzada** : si hay elementos parcialmente indizados, se volverán a indizar a petición para que todos los datos estén disponibles para la búsqueda.
 
 - **Corrección** de errores: corregir o descargar errores de procesamiento. Esto incluye compatibilidad con la corrección para tipos de archivo grandes, archivos protegidos con contraseña y otros problemas relacionados con los errores de indización. 
 

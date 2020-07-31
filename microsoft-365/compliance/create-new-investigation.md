@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear, configurar y guardar una nueva investigación en investigaciones de datos (versión preliminar) en el centro de cumplimiento de Microsoft 365.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1dae733a2e6dacfc2cc871cc9b589927d306599a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035782"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526916"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Crear una nueva investigación en las investigaciones de datos (versión preliminar)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44035782"
  
 4. En la página **investigaciones de datos (vista previa)** , haga clic en **crear nueva investigación**.
     
-5. En la página flotante **nueva investigación de datos** , dé un nombre a la investigación (obligatorio) y, a continuación, escriba una descripción y un número de investigación opcional. Tenga en cuenta que el nombre de la investigación debe ser único en su organización.
+5. En la página flotante **nueva investigación de datos** , dé un nombre a la investigación (obligatorio) y, a continuación, escriba una descripción y un número de investigación opcional. El nombre de la investigación debe ser único en la organización.
 
 6. En **¿desea configurar opciones adicionales después de crear esta investigación?**, siga uno de estos procedimientos:
 

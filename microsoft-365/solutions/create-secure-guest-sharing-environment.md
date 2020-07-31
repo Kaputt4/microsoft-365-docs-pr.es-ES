@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, aprenderá sobre las opciones disponibles para crear un entorno seguro para compartir invitados en Microsoft 365.
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167370"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502920"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -101,6 +101,9 @@ Para crear una nueva directiva de acceso condicional, haga lo siguiente:
 12. En la hoja **Nuevo**, en **Habilitar directiva**, haga clic en **Activar** y, luego, haga clic **Crear**.
 
 A partir de ahora, cuando un usuario invitado acceda por primera vez al contenido, a un grupo o a un sitio de su organización, se le pedirá que acepte los términos de uso.
+
+> [!NOTE]
+> El uso del acceso condicional requiere una licencia de Azure AD Premium P1. Para más información, consulte [Qué es el acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Más información
 [Términos de uso de Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

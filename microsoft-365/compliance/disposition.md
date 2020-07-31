@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506325"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529605"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -124,7 +124,9 @@ El contenido que espera una revisión de disposición se elimina solo después d
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
 > [!NOTE]
-> La capacidad para ver los registros que se eliminaron automáticamente sin una revisión de disposición aún se está implementando en los inquilinos, por lo que es posible que no vea todos los elementos desechados durante este período de lanzamiento.
+>Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive. Verá la lista de etiquetas de retención que marcan contenido como registros para SharePoint y OneDrive en la sección disposición de la página Administración de registros en el centro de cumplimiento de Microsoft 365. En estas etiquetas, puede ver la lista de elementos de SharePoint y OneDrive que se eliminaron automáticamente o después de una revisión de disposición.
+
+La prueba de eliminación de registros de Exchange todavía no está activa. Cuando este lanzamiento se inicie y una vez que se haya completado, actualizaremos esta nota.
 
 Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 

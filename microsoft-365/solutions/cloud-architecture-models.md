@@ -1,5 +1,5 @@
 ---
-title: Modelos de arquitectura de nube de Microsoft
+title: Modelos de arquitectura de la nube de Microsoft
 description: Estos pósteres de arquitectura de nube le proporcionan información sobre los servicios en la nube de Microsoft, incluidos Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online y soluciones híbridas locales y en la nube.
 ms.author: samanro
 author: samanro
@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: be79402c7aaf540ba3174e0844b1fe5bdc87a7ec
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 3a8daf7982cf0b28adebee5d4d05a9893faf30ba
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160044"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521914"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Ilustraciones de Microsoft Cloud para arquitectos empresariales
 

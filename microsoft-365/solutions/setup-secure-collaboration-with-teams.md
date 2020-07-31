@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar Microsoft Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724806"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527713"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
@@ -82,7 +83,7 @@ Estos niveles: *línea base*, *sensible*y *extremadamente sensible* : aumentan g
 |Uso compartido de archivos|Permitido|Permitido|Solo pueden compartir los propietarios del equipo.|
 |Pertenencia al equipo|Cualquiera puede unirse a un equipo público.<br>Se requiere la aprobación del propietario del equipo para unirse a equipos privados.|Se necesita la aprobación del propietario del equipo para unirse.|Se necesita la aprobación del propietario del equipo para unirse.|
 |Cifrado de documentos|||Disponible con la etiqueta de confidencialidad|
-|Uso compartido de invitados|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
+|Uso compartido de invitado|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
 |Dispositivos no administrados|Sin restricción|Acceso a través de Web|Blocked|
 
 La configuración de estos niveles implica:

@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c8b8416b276ce0e5335b0c0193c6cd79a81d7959
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 778693787c3d26806b02a2ffbde57e3347326d87
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44581595"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522270"
 ---
 # <a name="networking-up-to-the-cloud--one-architects-viewpoint"></a>Redes hacia arriba (en la nube): el punto de vista de un arquitecto
 
@@ -131,7 +130,7 @@ Decenas de miles de organizaciones, incluida casi todas las Fortune 500, usan Of
 
 [Prueba de conectividad de Microsoft 365](https://connectivity.office.com/)
 
-[Cómo Microsoft crea su red global rápida y fiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Cómo construye Microsoft su red global rápida y confiable](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog de redes de Office 365](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 

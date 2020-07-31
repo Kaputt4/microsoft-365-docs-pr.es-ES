@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Al realizar un análisis avanzado de eDiscovery, el subprocesamiento de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d3c014973996b312e0b51c1d5fae9da808000cf1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035884"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527678"
 ---
 # <a name="email-threading"></a>Subprocesos de correo electrónico
 
@@ -30,10 +30,9 @@ Considere una conversación de correo electrónico que ha estado ocurriendo dura
 
 ## <a name="what-does-email-threading-do"></a>¿Qué hace la función de subprocesos de correo electrónico?
 
-La creación de subprocesos de correo electrónico analiza cada correo electrónico y lo construye en mensajes individuales; cada correo electrónico es una cadena de mensajes individuales. A continuación, analiza todos los correos electrónicos en el conjunto de revisión para determinar si un correo electrónico tiene contenido único o si la cadena está contenida por completo en un correo electrónico diferente. En los mensajes de correo electrónico finales se dividen en cuatro categorías:
+La creación de subprocesos de correo electrónico analiza cada correo electrónico y lo desconstruye en mensajes individuales; cada correo electrónico es una cadena de mensajes individuales. A continuación, analiza todos los correos electrónicos en el conjunto de revisión para determinar si un correo electrónico tiene contenido único o si la cadena está contenida por completo en un correo electrónico diferente. En los mensajes de correo electrónico finales se dividen en cuatro categorías:
 
 - **Ambos inclusive**: el último mensaje del correo electrónico tiene contenido único y el correo electrónico tiene todos los datos adjuntos que se incluyeron en otros mensajes de correo electrónico cuyo contenido está incluido por completo en este correo.
-
 
 - **Menos inclusivo**: el último mensaje del correo electrónico tiene contenido único, pero el correo electrónico no contiene algunos de los datos adjuntos que se incluyeron en otros mensajes de correo electrónico cuyo contenido está contenido por completo en este correo electrónico.
 
@@ -42,6 +41,7 @@ La creación de subprocesos de correo electrónico analiza cada correo electrón
 - **Ninguno**: el contenido de este correo electrónico está contenido por completo en al menos un mensaje de correo electrónico que está marcado como incluido/incluido en el signo menos.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>¿En qué se diferencia de las conversaciones en Outlook?
-De un solo vistazo, esto suena muy parecido a las agrupaciones de conversaciones en Outlook. Sin embargo, hay algunas distinciones importantes. Considere una conversación de correo electrónico que se ha bifurcado en dos conversaciones; por ejemplo, alguien respondió a un correo electrónico que no es el más reciente en la conversación, por lo que los dos últimos correos electrónicos de la conversación tienen contenido único.
 
-Outlook seguiría agrupando los correos electrónicos en una sola conversación; leer solo el último correo electrónico significa que falta el contexto del segundo al último correo electrónico, que también incluye contenido único. Como el subprocesamiento de correo electrónico analiza cada correo electrónico en componentes individuales y los compara, el subprocesamiento de correo electrónico marcaría los dos últimos correos electrónicos como incluidos, lo que garantiza que no perderá ningún contexto mientras haya leído todos los correos electrónicos marcados como incluidos.
+De un solo vistazo, esto suena de forma similar a las agrupaciones de conversaciones en Outlook. Sin embargo, hay algunas distinciones importantes. Considere una conversación de correo electrónico que se ha bifurcado en dos conversaciones; por ejemplo, alguien respondió a un correo electrónico que no es el más reciente en la conversación, por lo que los dos últimos correos electrónicos de la conversación tienen contenido único.
+
+Outlook seguiría agrupando los correos electrónicos en una sola conversación; leer solo el último correo electrónico significa que falta el contexto del segundo al último correo electrónico, que también incluye contenido único. Como la subprocesamiento de correo electrónico analiza cada correo electrónico en componentes individuales y los compara, el subprocesamiento de correo electrónico marcaría los dos últimos correos electrónicos como incluidos, lo que garantiza que no perderá ningún contexto mientras haya leído todos los correos electrónicos marcados como incluidos.

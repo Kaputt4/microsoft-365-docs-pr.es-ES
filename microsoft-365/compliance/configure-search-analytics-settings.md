@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo configurar las opciones de búsqueda y análisis, como duplicados Near, subprocesos de correo electrónico y temas al administrar investigaciones de datos.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06f39a3dd52ecb872c671035460bab9a34956e49
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033670"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527356"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
 
@@ -37,6 +37,7 @@ En esta sección, puede establecer parámetros para la detección de duplicados,
 - Ocultar duplicados de manera predeterminada: Si esta configuración está activada, se aplicará un filtro para ocultar los documentos duplicados en el conjunto de trabajo de forma predeterminada. Si es necesario, el filtro se puede quitar manualmente en el conjunto de trabajo.
 
 - Número mínimo o máximo de palabras: las próximas duplicaciones y el procesamiento de correo electrónico se ejecutarán solo en los documentos que tengan al menos el número mínimo de palabras y el número máximo de palabras como máximo.
+
 Para obtener más información, vea cerca de la [detección de duplicados](near-duplicates.md) y el [procesamiento de correo electrónico](email-threading.md).
 
 ## <a name="themes"></a>Temas
@@ -44,8 +45,11 @@ Para obtener más información, vea cerca de la [detección de duplicados](near-
 En esta sección, puede establecer parámetros para los temas.
 
 - Habilitar/deshabilitar: incluir temas agrupados en clústeres como parte del flujo de análisis si está habilitado.
-- Ajustar el número máximo de temas dinámicamente dinámicamente: en algunos casos, no hay documentos suficientes para generar el número deseado de temas. Si esta opción está activada, en lugar de intentar forzar el número máximo deseado de temas, el sistema ajusta dinámicamente el número máximo de temas.
-- Número máximo de temas: número deseado de temas
+
+- Ajustar el número máximo de temas dinámicamente: en algunos casos, no hay documentos suficientes para producir el número de temas deseado. Si esta opción está activada, en lugar de intentar forzar el número máximo deseado de temas, el sistema ajusta dinámicamente el número máximo de temas.
+
+- Número máximo de temas: número deseado de temas.
+
 - Incluir números en los temas: cuando está habilitado, incluirá los números en al generar los temas.  
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)

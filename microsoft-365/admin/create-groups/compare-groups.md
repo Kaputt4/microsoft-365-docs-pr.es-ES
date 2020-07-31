@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Obtenga más información sobre los tipos de grupos que puede usar.
-ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780462"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514772"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -55,6 +55,8 @@ Los miembros del grupo pueden enviar como o enviar en nombre de la dirección de
 
 Los grupos de distribución son mejores para las situaciones en las que necesita transmitir información a un grupo definido de personas, como "Usuarios del edificio A" o "Todos los usuarios de Contoso".
 
+Los grupos de distribución se pueden [actualizar a grupos de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
+
 ## <a name="security-groups"></a>Grupos de seguridad
 
 [Los grupos de seguridad](../email/create-edit-or-delete-a-security-group.md) se usan para conceder acceso a los recursos de Microsoft 365, como SharePoint. Pueden simplificar la administración, ya que solo necesita administrar el grupo, en lugar de agregar usuarios a cada recurso por separado.
@@ -82,3 +84,5 @@ Actualmente, no es posible migrar un buzón compartido a un grupo de Microsoft 3
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Obtener más información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

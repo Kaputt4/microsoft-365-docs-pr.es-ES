@@ -13,21 +13,21 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Use las directivas de auditoría y alerta y las solicitudes de sujetos de datos para supervisar y responder a los incidentes de datos personales.
-ms.openlocfilehash: 5760bb40eb26e2ff0636ea9604cc7c45b7d0ca63
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695072"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522078"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisar y responder a los incidentes de privacidad de los datos de la organización
 
 Las características de Microsoft 365 están disponibles para ayudarle a supervisar, investigar y responder a los incidentes de privacidad de los datos de su organización a medida que opera las capacidades relacionadas. Tener procesos, procedimientos y otra documentación para cada uno de ellos también puede ser importante para demostrar el cumplimiento de los organismos reguladores.
 
-Entre ellos se incluyen: 
+Entre ellas se incluyen: 
 
 - Directivas de auditoría y alerta
 - Solicitudes de los interesados (incluida la búsqueda de contenido y eDiscovery)

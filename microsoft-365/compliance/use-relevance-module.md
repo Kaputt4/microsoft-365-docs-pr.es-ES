@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo el módulo de relevancia analiza los datos en evidencia con una descripción del flujo de trabajo de relevancia y los pasos de aprendizaje en las investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034492"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528166"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Usar el módulo relevancia para analizar datos en evidencias
 
@@ -31,14 +31,14 @@ En las investigaciones de datos (versión preliminar), el módulo de relevancia 
 ![Flujo de trabajo de relevancia](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Ciclos de evaluación y seguimiento**:
-    
+
   - **Evaluación**: permite realizar evaluaciones tempranas basándose en un ejemplo aleatorio de archivos y usa esta evaluación para aplicar decisiones para determinar el rendimiento del proceso de codificación predictivo. 
-    
+
   - **Track**: calcule y muestre los resultados temporales de la evaluación mientras supervisa la validez estadística del proceso. 
-    
+
 - **Ciclos de formación y seguimiento**
-    
-  - **Tag**: Data investigaciones (versión preliminar) aprende los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
+
+  - **Etiqueta**: las investigaciones de datos (versión preliminar) aprenden los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
     
   - **Track**: calcule y muestre los resultados temporales de la formación de relevancia mientras supervisa la validez estadística del proceso. 
     
@@ -68,7 +68,7 @@ A continuación, se encuentra una descripción general de las directrices para l
     
   - Use la opción **omitir etiquetado** solo cuando sea necesario. Las investigaciones de datos (versión preliminar) no se basan en archivos omitidos. En la evaluación, si es difícil distinguir si un archivo es relevante, es mejor marcar como relevante (R) o no relevante (NR) siempre que sea posible, en lugar de seleccionar **SKIP**. Cuando las investigaciones de datos (versión preliminar) evalúan el aprendizaje, se puede ver cómo se procesaron estos tipos de archivos.
     
-  - Incluso los archivos con una cantidad muy pequeña de texto extraído deben etiquetarse en el aprendizaje como R/NR, en lugar de "omitir", cuando sea posible. 
+  - Incluso los archivos con una pequeña cantidad de texto extraído deben etiquetarse en el aprendizaje como R/NR, en lugar de como "omitir", cuando sea posible. 
     
   - El etiquetado puede afectar al clasificador siempre que el archivo sea legible y pueda etiquetarse como R/NR.
     
@@ -84,7 +84,7 @@ A continuación, se encuentra una descripción general de las directrices para l
     
 - **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inactivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
     
-- **Problemas y modo de muestreo**: los problemas suelen estar desactivados cuando se completa el trabajo en ellos (el entrenamiento de relevancia está estabilizado y se ha realizado el cálculo del lote), cuando se cancelan los problemas o cuando otro usuario está trabajando en los problemas.
+- **Problemas y modo de muestreo**: los problemas se desactivan cuando se completa el trabajo en ellos (el aprendizaje de relevancia está estabilizado y se ha realizado el cálculo por lote), cuando se cancelan los problemas o cuando otro usuario está trabajando con los problemas.
     
 ## <a name="steps-in-relevance-training"></a>Pasos de aprendizaje de relevancia
 
@@ -122,7 +122,7 @@ En la **pestaña \> seguimiento de relevancia** , investigaciones de datos propo
     
   - Implicación: en este momento no se requiere ningún entrenamiento sobre la relevancia.
     
-Aunque las investigaciones de datos le guían por el proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su proceso de revisión de documentos, problema o caso individual. 
+Aunque las investigaciones de datos le guían por el proceso, con los pasos siguientes recomendados en diferentes etapas, también le permite navegar entre pestañas y páginas, y elegir opciones para abordar las situaciones que puedan ser pertinentes para su proceso de revisión de documentos, problemas o casos individuales. 
   
 Es posible aceptar o invalidar las investigaciones de datos opciones de procesamiento del próximo paso. Si desea realizar un paso que no sea el siguiente paso recomendado, haga clic en el **siguiente paso** que aparece en la pantalla problema expandido en el cuadro de diálogo, haga clic en el botón **modificar** junto al paso siguiente y seleccione otra opción de paso siguiente. 
   

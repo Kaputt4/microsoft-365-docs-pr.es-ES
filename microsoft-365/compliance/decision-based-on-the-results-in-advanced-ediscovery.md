@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Obtenga información sobre cómo la pestaña decidir en Microsoft 365 Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
+description: Obtenga información sobre cómo la pestaña decidir en eDiscovery avanzado proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817909"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528010"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos (Classic)
 
@@ -34,11 +34,11 @@ ms.locfileid: "44817909"
 
 ![Decisión de relevancia](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
-Esta ficha incluye lo siguiente:
+Esta pestaña incluye los siguientes componentes:
   
 - **Problema**: desde aquí, puede seleccionar el asunto de interés de la lista. 
     
-- **Tasa de revisión-RECALL**: comparación de la revisión avanzada de eDiscovery de acuerdo con los resultados de relevancia. El punto de corte en el gráfico representa el porcentaje de archivos que se van a revisar, asignado a una puntuación de relevancia. Se usa en la fase de prueba de relevancia y como un umbral de exportación para culling. El punto de corte predeterminado, para el número de archivos que se van a revisar, es el punto en el que el equilibrio entre la recuperación y la precisión es óptimo. El punto de corte real debe estar determinado por el usuario en función de los objetivos y del equilibrio de costes (% Review) y el riesgo (% recall). Con el control deslizante, puede ajustar el punto de corte y ver el efecto en el gráfico y los parámetros, al ajustar el porcentaje de archivos relevantes que se van a recuperar y antes de validar una decisión.
+- **Tasa de revisión-RECALL**: comparaciones de la revisión avanzada de eDiscovery según los resultados de relevancia. El punto de corte en el gráfico representa el porcentaje de archivos que se van a revisar, asignado a una puntuación de relevancia. Se usa en la fase de prueba de relevancia y como un umbral de exportación para culling. El punto de corte predeterminado, para el número de archivos que se van a revisar, es el punto en el que el equilibrio entre la recuperación y la precisión es óptimo. El punto de corte real debe estar determinado por el usuario en función de los objetivos y del equilibrio de costes (% Review) y el riesgo (% recall). Con el control deslizante, puede ajustar el punto de corte y ver el efecto en el gráfico y los parámetros, al ajustar el porcentaje de archivos relevantes que se van a recuperar y antes de validar una decisión.
     
 - **Parámetros**: los parámetros revisión, recuperación, siguiente relevante y costo total son estadísticas calculadas acumuladas relativas a la revisión establecida en relación con la colección para todo el caso. Las definiciones de estos parámetros son las siguientes:
     

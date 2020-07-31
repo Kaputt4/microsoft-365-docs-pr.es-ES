@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Registro paso a paso para Microsoft 365 para las campañas. Proteja su campaña de Cybersecurity amenazas para el correo electrónico, los datos y la comunicación.
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632784"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527119"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Inscríbase en Microsoft 365 para las campañas 
 
@@ -80,14 +81,14 @@ Si ya tiene y la suscripción existente a Microsoft 365 para empresas, por ejemp
 2. En la **pantalla de bienvenida, vamos a conocer** la página, haga clic o pulse en ¿ **quiere agregarla a una suscripción existente? Inicie sesión**.
     
     ![Elija iniciar sesión en la esquina superior derecha.](../media/addtoexisting.png)
-3. En la página de inicio de sesión, escriba el alias de administración de la suscripción existente, por ejemplo *<span></span>Alice@VoteContoso. org*, elija **siguiente**, escriba la contraseña y, a continuación, elija **iniciar sesión**.
+3. En la página de inicio de sesión, escriba el alias de administración de la suscripción existente, por ejemplo *Alice@VoteContoso <span></span> . org*, elija **siguiente**, escriba la contraseña y, a continuación, elija **iniciar sesión**.
 4. En el **¿qué aspecto tiene?** escriba el número de usuarios que tiene y elija **siguiente**. No es necesario escribir un código de promoción porque ya está incluido en la dirección URL de la invitación.
 5. En la página **¿cómo quiere pagar?** , escriba el método de pago y seleccione **realizar pedido**.
 
 Una vez que haya completado estos pasos, estará listo para [asignar las licencias nuevas](../admin/manage/assign-licenses-to-users.md) al personal de la campaña.
 
 
-## <a name="whats-next"></a>?Cu?l es el siguiente paso?
+## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 - [Configure microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para completar la configuración de Microsoft 365 para las campañas. 
 - [Agregue usuarios](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) al plan. Incluya al candidato de la campaña, al personal de la campaña Senior y a todos los usuarios que tendrán acceso a información confidencial de la entidad o de la entidad.
 - [Protección frente a golpes en la campaña](m365-campaigns-security-overview.md)

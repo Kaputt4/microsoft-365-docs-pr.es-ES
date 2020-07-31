@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: Configure la infraestructura de seguridad y servicio para proteger su información y cumplir con las regulaciones de privacidad de datos.
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854340"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522294"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Implementar la protección de la información para las regulaciones de privacidad de datos con Microsoft 365
 
@@ -37,13 +38,13 @@ Para cumplir con los criterios de protección de la información para el cumplim
 
 | Funcionalidad o característica | Description | Licencias |
 |:-------|:-----|:-------|
-| Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. | Microsoft 365 E3 y E5 |
-| Puntuación de cumplimiento (versión preliminar) | Vea una puntuación general de su configuración de cumplimiento actual y recomendaciones para mejorarla en el centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 y E5 |
-| Protección contra amenazas avanzada de Office (ATP) | Proteja sus aplicaciones y datos de Microsoft 365 (por ejemplo, mensajes de correo electrónico, documentos de Office y herramientas de colaboración) de ataques. | Microsoft 365 E3 y E5 | 
-| Etiquetas de confidencialidad | Clasifique y proteja los datos de su organización sin obstaculizar la productividad de los usuarios y su capacidad de colaborar colocando etiquetas con varios niveles de protección en el correo electrónico, los archivos o los sitios. | Microsoft 365 E3 y E5 |
-| Protección contra la pérdida de datos (DLP) | Detecte, avise y bloquee un uso compartido peligroso, involuntario o inadecuado, como el uso compartido de datos que contienen información personal, tanto de forma interna como externa. | Microsoft 365 E3 y E5 | 
-| Etiquetas y directivas de retención de datos | Implementar controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos del almacenamiento de datos personales en los clientes, para cumplir con las directivas de la organización o las regulaciones de datos. | Microsoft 365 E3 y E5 |
-| Cifrado de correo electrónico | Envíe y reciba mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de su organización que contengan datos regulados, como datos personales en los clientes. | Microsoft 365 E3 y E5 |
+| Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft. | Microsoft 365 E3 y E5 |
+| Puntuación de cumplimiento (versión preliminar) | Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 y E5 |
+| Protección contra amenazas avanzada de Office (ATP) | Proteja sus datos y aplicaciones de Microsoft 365, como mensajes de correo electrónico, documentos de Office y herramientas de colaboración, ante posibles ataques. | Microsoft 365 E3 y E5 | 
+| Etiquetas de confidencialidad | Clasifique y proteja los datos de su organización sin arriesgar la productividad de los usuarios y su capacidad para colaborar, mediante el establecimiento de etiquetas con distintos niveles de protección en el correo electrónico, los archivos y los sitios. | Microsoft 365 E3 y E5 |
+| Protección de pérdida de datos (DLP) | Detecte, advierta y bloquee el uso compartido riesgoso, involuntario o inadecuado, como el de los datos que contengan información personal, tanto interna como externamente. | Microsoft 365 E3 y E5 | 
+| Directivas y etiquetas de retención de datos | Implemente controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos de almacenamiento de datos personales sobre los clientes, para cumplir con las directivas de la organización o las regulaciones de datos. | Microsoft 365 E3 y E5 |
+| Cifrado de correo electrónico | Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes. | Microsoft 365 E3 y E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organización de las instrucciones de esta solución

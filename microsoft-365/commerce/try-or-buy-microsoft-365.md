@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365.
-ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6400f8a05a0e1b8fd8d7200af90a0b232b288895
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403143"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526845"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Probar o comprar una suscripción a Microsoft 365
 
@@ -40,7 +40,9 @@ Microsoft 365 es una solución completa que combina Office 365 y Windows 10 con 
   
 - Microsoft 365 Empresa Premium
 
-- Office 365 Enterprise E3
+- Microsoft 365 E5
+
+- Microsoft 365 E3
 
 - Office 365 Enterprise E5
 
@@ -136,7 +138,7 @@ Cuando se agrega una suscripción a través del centro de administración, la nu
 ::: moniker-end
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de obtener la nueva suscripción, tiene que asignar una licencia a los usuarios que usarán esa suscripción. Para obtener información sobre cómo hacerlo, vea [asignar licencias a usuarios](../admin/manage/assign-licenses-to-users.md) .
 

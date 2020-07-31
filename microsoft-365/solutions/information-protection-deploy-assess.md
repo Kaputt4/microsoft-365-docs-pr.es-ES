@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios relevantes, la preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126609"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521378"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de datos e identificar los elementos confidenciales con Microsoft 365
 
@@ -59,7 +59,7 @@ Para obtener una referencia posterior en los artículos de esta solución genera
 
 | Regulación | Artículo/sección | Toma | Categorías de controles técnicos aplicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Artículo 5, apartado 1, f | Los datos personales se procesarán de manera que garanticen la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida, destrucción o daños accidentales, utilizando las medidas técnicas o organizacionales adecuadas (integridad y confidencialidad).  |  Todos <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Proteger la información <br> Controlar la información <br> Detectar y responder |
+| RGPD | Artículo 5, apartado 1, f | Los datos personales se procesarán de manera que garanticen la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida, destrucción o daños accidentales, utilizando las medidas técnicas o organizacionales adecuadas (integridad y confidencialidad).  |  Todos <br> Identidad <br> Device <br> Protección contra amenazas <br> Proteger la información <br> Controlar la información <br> Detectar y responder |
 |  | Artículo (32) (1) (a) | Teniendo en cuenta el estado de la arte, los costes de la aplicación y la naturaleza, ámbito, contexto y propósito del tratamiento, así como el riesgo de la variación de la probabilidad y la gravedad de los derechos y libertades de las personas físicas, el responsable del tratamiento y el procesador deberán implementar las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado al riesgo. , incluidas, entre otras cosas adecuadas: a, el seudonimización y cifrado de datos personales. | Proteger la información |
 |  | Artículo (13) (2) (a) | "... en el momento en que se obtengan los datos personales, el responsable del tratamiento deberá proporcionar al interesado los datos siguientes con la siguiente información necesaria para garantizar el tratamiento equitativo y transparente: (a) el período durante el cual se almacenarán los datos personales, o si no es posible, los criterios empleados para determinar dicho período. | Controlar la información |
 |  | Artículo (15) (1) (e) | El interesado tendrá derecho a obtener de la confirmación del responsable del tratamiento de si los datos personales que le conciernen o no están en proceso de tratamiento; y, en ese caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho de solicitar a la rectificación del responsable del tratamiento o de la eliminación de datos personales o de la restricción del tratamiento de datos personales sobre el interesado o de un objeto a dicho tratamiento | Detectar y responder |

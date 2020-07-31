@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Procesar datos para una investigación de datos.
+ms.openlocfilehash: 0516c6e41caf33fad457754b613e12b7f23701aa
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632235"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527430"
 ---
 # <a name="process-data-for-an-investigation"></a>Procesar datos para una investigación
 
@@ -34,4 +34,5 @@ La pestaña **procesamiento** en las investigaciones de datos (versión prelimin
 Vea los artículos siguientes para obtener más información.
 
 - [Indización avanzada de datos para una investigación](index-data-people-of-interest.md)
+
 - [Corrección de errores al procesar los datos](error-remediation.md)

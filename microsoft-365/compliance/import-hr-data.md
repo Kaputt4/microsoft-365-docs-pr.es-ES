@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 0cb06bb25e3ba6d4e745094a51fb49663bc7b7b7
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189505"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527592"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurar un conector para importar datos de recursos humanos (versión preliminar)
 
@@ -29,9 +29,9 @@ Configurar un conector para los datos de recursos humanos que las directivas de 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe determinar qué escenarios y datos de recursos humanos importar en Microsoft 365. Esto le ayudará a determinar cuántos archivos CSV y conectores de recursos humanos tendrá que crear y cómo generar y estructurar los archivos. CSV. Los datos de recursos humanos que importe se determinan según las directivas de administración de riesgos de Insider que desea implementar. Para obtener más información, consulte el paso 1.
+- Determine los escenarios y datos de recursos humanos para importar a Microsoft 365. Esto le ayudará a determinar cuántos archivos CSV y conectores de recursos humanos tendrá que crear y cómo generar y estructurar los archivos. CSV. Los datos de recursos humanos que importe se determinan según las directivas de administración de riesgos de Insider que desea implementar. Para obtener más información, consulte el paso 1.
 
-- Debe determinar cómo recuperar o exportar los datos del sistema de RRHH de su organización (y de forma regular) y agregarlos a los archivos. CSV que se crean en el paso 1. El script que ejecutó en el paso 4 cargará los datos de recursos humanos en los archivos CSV en la nube de Microsoft.
+- Determine cómo recuperar o exportar los datos del sistema de RRHH de su organización (y de forma regular) y agregarlos a los archivos. CSV que se crean en el paso 1. El script que ejecutó en el paso 4 cargará los datos de recursos humanos en los archivos CSV en la nube de Microsoft.
 
 - La organización debe permitir que el servicio de importación de Office 365 obtenga acceso a los datos de la organización. Para dar su consentimiento a esta solicitud, vaya a [esta página](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), inicie sesión con las credenciales de un administrador global de Microsoft 365 y, a continuación, acepte la solicitud. Debe completar este paso para poder crear correctamente el conector de recursos humanos en el paso 3.
 
@@ -69,7 +69,7 @@ Para más información sobre las plantillas de directiva para la administración
 
 Para cada escenario de recursos humanos, deberá proporcionar los datos de recursos humanos correspondientes en uno o más archivos CSV. El número de archivos CSV que se deben usar para la implementación de la administración de riesgos de Insider se describe más adelante en esta sección.
 
-Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el equipo local en el que ejecute el script en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual, de modo que cualquier cosa que ejecute el script, los datos de datos de recursos humanos más actuales se carguen en la nube de Microsoft y sean accesibles para la solución de administración de riesgos de Insider.
+Después de crear el archivo CSV con los datos de HR necesarios, almacénelo en el equipo local en el que ejecute el script en el paso 4. También debe implementar una estrategia de actualización para asegurarse de que el archivo CSV siempre contiene la información más actual para que cualquier cosa que ejecute el script, los datos de recursos humanos más actuales se carguen en la nube de Microsoft y sean accesibles para la solución de administración de riesgos de Insider.
 
 > [!IMPORTANT]
 > Los nombres de columna que se describen en las siguientes secciones no son parámetros obligatorios, sino solo ejemplos. Puede usar cualquier nombre de columna en los archivos. CSV. Sin embargo, los nombres de columna que usa en un archivo CSV *deben* estar asignados al tipo de datos al crear el conector de recursos humanos en el paso 3. Además, tenga en cuenta que los archivos CSV de ejemplo de las siguientes secciones se muestran en la vista del Bloc de notas. Es mucho más fácil ver y editar archivos CSV en Microsoft Excel.
@@ -133,7 +133,7 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV para 
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre el resultado de la revisión del rendimiento. Puede ser la fecha en la que finalizó el ciclo de revisión del rendimiento. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Comentarios**| Especifica cualquier comentario que el evaluador haya proporcionado al usuario para que la revise el rendimiento. Se trata de un parámetro de texto con un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
-| **Rating**| Especifica la clasificación proporcionada para la revisión del rendimiento. Este es un parámetro de texto y puede contener cualquier texto de forma libre que la organización use para reconocer la evaluación. Por ejemplo, "3 cumplieron las expectativas" o "2 por debajo de la media". Es un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
+| **Rating**| Especifica la clasificación proporcionada para la revisión del rendimiento. Es un parámetro de texto y puede contener cualquier texto de forma libre que la organización use para reconocer la evaluación. Por ejemplo, "3 cumplieron las expectativas" o "2 por debajo de la media". Es un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>Archivo CSV para datos del plan de mejora del rendimiento
@@ -153,7 +153,7 @@ En la tabla siguiente se describe cada una de las columnas del archivo CSV para 
 | **EmailAddress**  | Especifica la dirección de correo electrónico del usuario (UPN).|
 | **EffectiveDate** | Especifica la fecha en la que se informará oficialmente al usuario sobre su plan de mejora del rendimiento. Debe usar el siguiente formato de fecha: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , que es el [formato de fecha y hora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Comentarios**| Especifica cualquier comentario que el evaluador haya proporcionado sobre el plan de mejora del rendimiento. Se trata de un parámetro de texto con un límite de 200 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV. |
-| **Rating**| Especifica cualquier clasificación u otra información relacionada con la revisión del rendimiento. Plan de mejora del rendimiento. Este es un parámetro de texto y puede contener cualquier texto de forma libre que la organización use para reconocer la evaluación. Por ejemplo, "3 cumplieron las expectativas" o "2 por debajo de la media". Es un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
+| **Rating**| Especifica cualquier clasificación u otra información relacionada con la revisión del rendimiento. Plan de mejora del rendimiento. Es un parámetro de texto y puede contener cualquier texto de forma libre que la organización use para reconocer la evaluación. Por ejemplo, "3 cumplieron las expectativas" o "2 por debajo de la media". Es un parámetro de texto con un límite de 25 caracteres. Este parámetro es opcional. No tiene que incluirlo en el archivo CSV.|
 |||
 
 ### <a name="determining-how-many-csv-files-to-use-for-hr-data"></a>Determinación del número de archivos CSV que se deben usar para los datos de recursos humanos
@@ -164,7 +164,7 @@ En el paso 3, puede optar por crear conectores independientes para cada tipo de 
 
 - El método para generar o recopilar los datos de recursos humanos puede determinar el número de archivos CSV. Por ejemplo, si los diferentes tipos de datos de recursos humanos usados para configurar un conector de recursos humanos se encuentran en un solo sistema de RRHH en su organización, es posible que pueda exportar los datos a un único archivo CSV. Pero si los datos se distribuyen entre diferentes sistemas de recursos humanos, es posible que sea más fácil exportar datos a archivos. CSV diferentes. Por ejemplo, los datos de retirada de empleados pueden estar ubicados en un sistema de recursos humanos diferente al nivel de trabajo o datos de revisión de rendimiento. En este caso, es posible que sea más fácil tener archivos CSV independientes en lugar de tener que combinar manualmente los datos en un único archivo CSV. Por lo tanto, la forma de recuperar o exportar datos de sus sistemas de recursos humanos puede determinar el número de archivos CSV que necesitará.
 
-- Como regla general, el número de conectores de recursos humanos que necesita crear está determinado por los tipos de datos en un archivo CSV. Por ejemplo, si un archivo CSV contiene todos los tipos de datos necesarios para admitir la implementación de administración de riesgos de Insider, solo necesitará un conector de RRHH. Pero si tiene dos archivos. CSV independientes que contienen un solo tipo de datos, tendrá que crear dos conectores de recursos humanos. Una excepción a esto es que si agrega una columna HRScenario * * a un archivo CSV (consulte la siguiente sección), puede configurar un único conector de RRHH que puede procesar archivos. CSV diferentes.
+- Como regla general, el número de conectores de recursos humanos que necesita crear está determinado por los tipos de datos en un archivo CSV. Por ejemplo, si un archivo CSV contiene todos los tipos de datos necesarios para admitir la implementación de administración de riesgos de Insider, solo necesitará un conector de RRHH. Pero si tiene dos archivos. CSV independientes que contienen un solo tipo de datos, tendrá que crear dos conectores de recursos humanos. Una excepción a esto es que si agrega una columna **HRScenario** a un archivo CSV (consulte la siguiente sección), puede configurar un único conector de RRHH que puede procesar archivos. csv diferentes.
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>Configuración de un único archivo CSV para varios tipos de datos de recursos humanos
 
@@ -176,7 +176,7 @@ Estos son los requisitos para configurar un archivo CSV con varios tipos de dato
 
 - Para usar un archivo CSV con varios tipos de datos de recursos humanos, el conector de recursos humanos debe saber qué filas del archivo CSV contienen datos de RR. Esto se consigue agregando una columna **HRScenario** adicional al archivo CSV. Los valores de esta columna identifican el tipo de datos de recursos humanos en cada fila. Por ejemplo, los valores que corresponden a los cuatro escenarios de recursos humanos podrían ser la \` retirada, el cambio en el \` nivel del \` trabajo, la revisión del \` \` rendimiento y el plan de mejora del \` \` rendimiento \` .
 
-- Si tiene varios archivos CSV que contienen una columna **HRScenario** , asegúrese de que cada archivo usa el mismo nombre de columna y los mismos valores que identifican los escenarios de recursos humanos específicos.
+- Si tiene varios archivos CSV que contienen una columna HRScenario * *, asegúrese de que cada archivo usa el mismo nombre de columna y los mismos valores que identifican los escenarios de recursos humanos específicos.
 
 En el ejemplo siguiente se muestra un archivo CSV que contiene la columna **HRScenario** . Los valores de la columna HRScenario identifican el tipo de datos en la fila correspondiente.
 

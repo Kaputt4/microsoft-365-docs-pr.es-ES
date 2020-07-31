@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160056"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522282"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstáculos de seguridad que puede gobernar: el punto de vista de un arquitecto
 
@@ -80,7 +79,7 @@ Para ayudarle a borrar estos obstáculos, Microsoft ha creados varios recursos d
 
 |Resource   |Más información  |
 |---------|---------|
-|[Principales tareas para que los equipos de seguridad admitan el trabajo desde casa](../security/top-security-tasks-for-remote-work.md)      | Si se ve que, de repente, admite un personal de trabajo en casa principalmente, este artículo le ayudará a incrementar la seguridad rápidamente. Incluye las principales tareas recomendadas basadas en el plan de licencias.    |
+|[Las tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md)      | Si se ve que, de repente, admite un personal de trabajo en casa principalmente, este artículo le ayudará a incrementar la seguridad rápidamente. Incluye las principales tareas recomendadas basadas en el plan de licencias.    |
 |[Microsoft 365 Security para responsables de decisiones empresariales](../security/Microsoft-365-security-for-bdm.md)    | Cuando tiene tiempo para un plan más completo, este artículo incluye recomendaciones que abarcan Microsoft 365, con prioridades por superficie de ataques. Incluye incluso una hoja de cálculo que puede usar para ordenar la licencia y el área (por ejemplo, identidad, protección contra amenazas y supervisión).  |
 |[Recomendaciones de la arquitectura de seguridad de Microsoft](https://docs.microsoft.com/security/compass/compass)    | Si es un arquitecto de seguridad, asegúrese de ver las recomendaciones de seguridad organizadas por disciplina, incluidas las operaciones de identidad, red y seguridad.   |
 |[Recomendaciones de operaciones de seguridad de Microsoft](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Obtener recomendaciones de Microsoft para configurar y ejecutar un centro de operaciones de seguridad (SOC) |

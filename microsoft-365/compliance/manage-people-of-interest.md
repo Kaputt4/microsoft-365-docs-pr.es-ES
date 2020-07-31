@@ -17,21 +17,21 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo administrar a personas de interés para establecer el ámbito de la búsqueda o ver información como el contacto, la ubicación y los registros de actividad.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 85f6bdbe7a0602f8ce0038a4aca912896d5c2079
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036073"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528176"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Administrar personas de interés en investigaciones de datos (versión preliminar)
 
-Las investigaciones de datos suelen incluir a personas de interés. Normalmente son personas que poseen los datos mal colocados, confidenciales o malintencionados que está investigando o que pretenden corregir. En **investigaciones de datos (versión preliminar)**, puede agregarlas para detectar sus orígenes de datos y usarlos en el ámbito de la búsqueda o ver información adicional, como el contacto, la ubicación y los registros de actividad. 
+Las investigaciones de datos suelen incluir a personas de interés. Por lo general, son personas que poseen los datos mal colocados, confidenciales o malintencionados que está investigando o que buscan corrección. En **investigaciones de datos (versión preliminar)**, puede agregarlas para detectar sus orígenes de datos y usarlos en el ámbito de la búsqueda o ver información adicional, como el contacto, la ubicación y los registros de actividad. 
 
 
 ## <a name="add-people-of-interest"></a>Agregar personas de interés
 
-En la pestaña **personas de interés** , puede Agregar personas de interés y descubrir sus orígenes de datos, como los buzones de Exchange o el sitio de OneDrive para la empresa, que puede usar para limitar la búsqueda. Cuando el objetivo es que los usuarios de interés, las búsquedas sean más exactas y precisas, ya que la herramienta vuelve a procesar los datos no indizados, como imágenes o tipos de archivo no admitidos. También puede ver su información de contacto, la información de ubicación y los registros de actividad que puede usar para iniciar las comunicaciones o investigar sus actividades. 
+En la pestaña **personas de interés** , puede Agregar personas de interés y descubrir sus orígenes de datos, como los buzones de Exchange o el sitio de OneDrive para la empresa, que puede usar para limitar la búsqueda. Cuando el objetivo es que los usuarios de interés, las búsquedas sean más exactas y precisas, ya que la herramienta reprocesa los datos no indizados, como imágenes o tipos de archivos no admitidos. También puede ver su información de contacto, la información de ubicación y los registros de actividad que puede usar para iniciar las comunicaciones o investigar sus actividades. 
 
 Para agregar personas de interés a una investigación:
 
@@ -56,7 +56,7 @@ Para agregar personas de interés a una investigación:
         > [!NOTE]
         > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
      
-     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar sitios adicionales de SharePoint y OneDrive para la empresa que wwant agregar a una persona. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
+     - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar los sitios adicionales de SharePoint y OneDrive para la empresa que desea agregar a una persona. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
      - **Microsoft Teams** : haga clic en **elegir Teams** y, a continuación, haga clic en **elegir Teams** de nuevo para ver una lista de los grupos de Microsoft Teams de los que la persona es miembro de hoy. Seleccione los equipos que desea agregar a la persona. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
         
       > [!NOTE]
@@ -66,11 +66,11 @@ Una vez que haya terminado de asignar orígenes de datos a personas de interés,
 
 ## <a name="view-additional-people-of-interest-information"></a>Ver más personas de información de interés
 
-En la pestaña **personas de interés** , haga clic en la persona que adeed. En un control flotante, verás:
+En la pestaña **personas de interés** , haga clic en una persona que haya agregado. En un control flotante, verás:
 
 - Información de contacto
 
-  - **Nombre para mostrar**: el nombre de Peron que aparece en la libreta de direcciones. Suele ser la combinación del nombre, la inicial del segundo nombre y el apellido.
+  - **Nombre para mostrar**: el nombre de la persona que se muestra en la libreta de direcciones. Suele ser la combinación del nombre, la inicial del segundo nombre y el apellido.
   - **Correo/SMTP**: la dirección SMTP de la persona, por ejemplo, Jeff@contoso.onmicrosoft.com.  
   - **Título**: puesto.
   - **Departamento**: el nombre del Departamento en el que trabaja la persona.
@@ -90,7 +90,7 @@ En la pestaña **personas de interés** , haga clic en la persona que adeed. En 
   - **Orígenes de datos**: muestra el número de buzones de correo, sitios y equipos asignados a la persona.
 
 - Actualizar índice
-    - Puede volver a indizar los orígenes de datos de esta persona. 
+    - Puede reindizar los orígenes de datos de esta persona. 
 
 - Ver actividad 
 

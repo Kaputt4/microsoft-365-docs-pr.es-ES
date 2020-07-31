@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: Durante una investigación, puede usar el botón Reintentar para resolver las búsquedas de contenido que tienen errores de ubicación de contenido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034634"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527638"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Volver a intentar una búsqueda de contenido para resolver un error de ubicación de contenido
 
-Cuando usa la búsqueda de contenido en el centro de seguridad y cumplimiento para buscar en un gran número de buzones, es posible que obtenga errores de búsqueda similares a los siguientes:
+Cuando usa la búsqueda de contenido en el centro de seguridad y cumplimiento para buscar en un gran número de buzones, es posible que obtenga errores de búsqueda similares al error:
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -53,7 +54,7 @@ Esto hará que se vuelva a intentar la búsqueda de los buzones de correo que no
 
 ## <a name="tips-to-avoid-content-location-errors"></a>Sugerencias para evitar errores de ubicación de contenido
 
-Estas son algunas de las causas de los errores de ubicación de contenido y algunas sugerencias para ayudarle a evitarlos cuando busque grandes cantidades de buzones.
+Estas son algunas causas adicionales de los errores de ubicación de contenido y algunas sugerencias para ayudarle a evitarlos cuando busque grandes cantidades de buzones.
 
 - El buzón en el que se realiza la búsqueda puede estar ocupado debido a la actividad del usuario. En este caso, el servicio de búsqueda se puede limitar para evitar que el buzón deje de estar disponible. Para evitarlo, intente ejecutar búsquedas durante el horario no comercial.
 
@@ -66,6 +67,6 @@ Estas son algunas de las causas de los errores de ubicación de contenido y algu
 
 - Se están realizando demasiadas búsquedas en el mismo buzón al mismo tiempo. Si es posible, intente ejecutar una búsqueda cada vez en un buzón.
 
-- Buscar en un gran número de buzones en una sola búsqueda. La probabilidad de errores de ubicación de contenido aumenta al buscar un gran número de buzones. Si es posible, intente ejecutar varias búsquedas para que cada búsqueda incluya un subconjunto de buzones de correo en la organización.
+- Buscar en un gran número de buzones en una sola búsqueda. La probabilidad de errores de ubicación de contenido aumenta al buscar en un gran número de buzones de correo. Si es posible, intente ejecutar varias búsquedas para que cada búsqueda incluya un subconjunto de buzones de correo en la organización.
 
 - Se está realizando el mantenimiento necesario en el buzón de correo. Aunque esta causa probablemente se produzca con frecuencia, espere un poco después de recibir el error de ubicación de contenido y, a continuación, vuelva a intentar la búsqueda.

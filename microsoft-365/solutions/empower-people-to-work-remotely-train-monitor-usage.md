@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: 14a46b77c739dfb2caaf171f5798b9cabfef393c
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560440"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521438"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Paso 6: Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso
 
