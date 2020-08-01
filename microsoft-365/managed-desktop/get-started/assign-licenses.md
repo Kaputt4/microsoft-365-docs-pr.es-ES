@@ -1,17 +1,20 @@
 ---
 title: Asignar licencias
 description: Como parte de la inscripción, debe asignar licencias que ya ha obtenido a sus usuarios
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8b12ec5f3b7d33f171790224a22ab55b33382187
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 4bd4dcd522848c91c4c8494504dd4c917a7eb776
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085869"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529748"
 ---
 # <a name="assign-licenses"></a>Asignar licencias
 

@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430500"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529486"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuración de red para el Escritorio administrado de Microsoft
 
@@ -25,7 +27,7 @@ ms.locfileid: "45430500"
 
 El escritorio administrado de Microsoft es un servicio administrado en la nube. Hay un conjunto de puntos de conexión que los servicios de escritorio administrados de Microsoft deben poder alcanzar. En esta sección se enumeran los puntos de conexión que deben permitirse para los diversos aspectos del servicio de escritorio administrado por Microsoft. 
 
-Los clientes pueden optimizar su red mediante el envío de todas las solicitudes de red de Microsoft 365 de confianza directamente a través de su firewall o proxy, evitando la autenticación y todos los procesos o la inspección adicionales a nivel de paquete. Esto reduce la latencia y los requisitos de capacidad del perímetro. 
+Los clientes pueden optimizar su red mediante el envío de todas las solicitudes de red de Microsoft 365 de confianza directamente a través de su firewall o proxy, evitando la autenticación y todos los procesos o la inspección adicionales a nivel de paquete. Esto reduce la latencia y los requisitos de capacidad perimetrales. 
 
 Además, para optimizar el rendimiento de los servicios basados en la nube de escritorio administrada de Microsoft, estos puntos de conexión necesitan un control especial por parte de los exploradores cliente del cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, interrupción de SSL e inspección, dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
 

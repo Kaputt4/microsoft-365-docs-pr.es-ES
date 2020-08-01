@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430440"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529760"
 ---
 # <a name="getting-help-for-end-users"></a>Obtener ayuda para usuarios finales
 
@@ -44,7 +47,7 @@ Para que los usuarios finales puedan obtener ayuda a través de la aplicación, 
 
 Si ha comprobado estos requisitos previos y la aplicación obtener ayuda sigue sin funcionar, usted, como administrador de ti, debe archivar una [solicitud de soporte técnico](admin-support.md).
 
-## <a name="phone-support"></a>Soporte técnico por teléfono 
+## <a name="phone-support"></a>Soporte por teléfono
 
 Los usuarios finales con dispositivos de escritorio administrados por Microsoft también tienen acceso a los números de teléfono gratuitos a los que pueden llamar. Esto está pensado para usarse cuando la ayuda de Get no está disponible. Por ejemplo, si no pueden iniciar sesión en el dispositivo o el dispositivo está roto. Estos son los números de teléfono de soporte telefónico:
 

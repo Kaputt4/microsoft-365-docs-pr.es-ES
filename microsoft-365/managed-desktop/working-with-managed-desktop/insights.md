@@ -1,17 +1,20 @@
 ---
 title: Trabajar con ideas
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250430"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529772"
 ---
 # <a name="work-with-insights"></a>Trabajar con ideas
 
@@ -51,7 +54,7 @@ Esta vista muestra información sobre el consumo de energía de las aplicaciones
 
 Obtenga más información sobre la información sobre las [baterías](battery-insights.md).
 
-## <a name="windows-security-update-insights"></a>Información sobre la actualización de seguridad de Windows
+## <a name="windows-security-update-insights"></a>Información de actualización de seguridad de Windows
 
 Esta vista muestra información sobre el estado de las actualizaciones de seguridad para los dispositivos de escritorio administrados por Microsoft. Para ver esta información, seleccione la ficha **udates de seguridad de Windows** .
 

@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo habilitar Microsoft 365 para proteger dispositivos Windows 10 locales Unidos a directorio activo en tan solo unos pocos pasos.
-ms.openlocfilehash: 857651081fb10856d28dd419333ebef655388407
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564961"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533793"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 empresa Premium
 
@@ -77,44 +77,32 @@ En la página Microsoft Intune, seleccione **inscripción de dispositivo** y, en
         -  Agregue los usuarios de dominio que desee sincronizar en Azure AD a un [grupo de seguridad](../admin/create-groups/create-groups.md).
         -  Elija **seleccionar grupos** para habilitar el ámbito de usuario de MDM para ese grupo de seguridad.
 
-## <a name="4-set-up-service-connection-point-scp"></a>4. configurar el punto de conexión de servicio (SCP)
+## <a name="4-create-the-required-resources"></a>4. crear los recursos necesarios 
 
-Estos pasos se han simplificado desde [configurar la Unión híbrida de Azure ad](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). Para completar los pasos necesarios para usar Azure AD Connect y las contraseñas de administrador global y de administración de Active Directory de Microsoft 365 Business Premium.
+La realización de las tareas necesarias para [configurar la Unión híbrida de Azure ad](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) se ha simplificado mediante el uso del cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) que se encuentra en el módulo de PowerShell [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) . Al invocar este cmdlet, creará y configurará el punto de conexión de servicio y la Directiva de grupo necesarios.
 
-1.  Inicie Azure AD Connect y, a continuación, seleccione **configurar**.
-2.  En la página **tareas adicionales** , seleccione **configurar opciones de dispositivo**y, a continuación, seleccione **siguiente**.
-3.  En la página **información general** , seleccione **siguiente**.
-4.  En la página **conectar con Azure ad** , escriba las credenciales de un administrador global para Microsoft 365 empresa Premium.
-5.  En la página **Opciones de dispositivo** , seleccione configurar la **Unión híbrida de Azure ad**y, a continuación, seleccione **siguiente**.
-6.  En la página **SCP** , para cada bosque en el que desee que Azure ad Connect configure el SCP, complete los pasos siguientes y, a continuación, seleccione **siguiente**:
-    - Active la casilla situada junto al nombre del bosque. El bosque debe ser el nombre de dominio de AD.
-    - En la columna **servicio de autenticación** , abra la lista desplegable y seleccione nombre de dominio coincidentes (solo debe haber una única opción).
-    - Seleccione **Agregar** para especificar las credenciales de administrador de dominio.  
-7.  En la página **sistemas operativos de dispositivos** , seleccione solo dispositivos Unidos a un dominio de Windows 10 o posterior.
-8.  En la página **listo para configurar** , seleccione **configurar**.
-9.  En la página **configuración completada** , seleccione **salir**.
+Puede instalar este módulo invocando lo siguiente desde una instancia de PowerShell:
 
-
-## <a name="5-create-a-gpo-for-intune-enrollment--admx-method"></a>5. crear un GPO para la inscripción de Intune: método ADMX
-
-Utilizados. Archivo de plantilla ADMX.
-
-1.  Inicie sesión en el servidor de ad, busque y abra Administración de directivas de grupo de herramientas del **Administrador del servidor**  >  **Tools**  >  **Group Policy Management**.
-2.  Seleccione el nombre de dominio en **dominios** y haga clic con el botón secundario en **objetos de directiva de grupo** para seleccionar **nuevo**.
-3.  Asigne un nombre al nuevo GPO, por ejemplo, "*Cloud_Enrollment*" y, después, seleccione **Aceptar**.
-4.  Haga clic con el botón derecho en el nuevo GPO en **objetos de directiva de grupo** y seleccione **Editar**.
-5.  En el **Editor de administración de directivas de grupo**, vaya a directivas de **configuración del equipo**de  >  **Policies**  >  **plantillas administrativas**de  >  **Windows Components**  >  **MDM**.
-6. Haga clic con el botón secundario en **Habilitar la inscripción automática de MDM con credenciales de Azure ad predeterminadas** y seleccione Aceptar **habilitado**  >  **OK**. Cierre la ventana del editor.
+```powershell
+Install-Module SecMgmt
+```
 
 > [!IMPORTANT]
-> Si no ve la Directiva habilitar la **inscripción automática de MDM con credenciales de Azure ad predeterminadas**, vea [obtener las últimas plantillas administrativas](#get-the-latest-administrative-templates).
+> Se recomienda instalar este módulo en el servidor Windows que ejecuta Azure AD Connect.
 
-## <a name="6-deploy-the-group-policy"></a>6. implementar la Directiva de grupo
+Para crear el punto de conexión de servicio y la Directiva de grupo necesarios, deberá invocar el cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) . Para llevar a cabo esta tarea, necesitará sus credenciales de administrador global de Microsoft 365 empresa Premium. Cuando esté listo para crear los recursos, invoque lo siguiente:
 
-1.  En el administrador de servidores, en **dominios** > objetos de directiva de grupo, seleccione el GPO del paso 3 anterior, por ejemplo, "Cloud_Enrollment".
-2.  Seleccione la pestaña **ámbito** para el GPO.
-3.  En la pestaña ámbito del GPO, haga clic con el botón secundario en el vínculo al dominio en **vínculos**.
-4.  Seleccione **enforced** para implementar el GPO y, a continuación, haga clic en **Aceptar** en la pantalla de confirmación.
+```powershell
+PS C:\> Connect-SecMgmtAccount
+PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
+```
+
+El primer comando establecerá una conexión con la nube de Microsoft y, cuando se le solicite, especifique sus credenciales de administrador global de Microsoft 365 empresa Premium.
+
+## <a name="5-link-the-group-policy"></a>5. vincular la Directiva de grupo
+
+1. En la consola de administración de directivas de grupo (GPMC), haga clic con el botón secundario en la ubicación en la que desea vincular la Directiva y seleccione *vincular un GPO existente...* en el menú contextual.
+2. Seleccione la directiva creada en el paso anterior y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="get-the-latest-administrative-templates"></a>Obtener las plantillas administrativas más recientes
 
@@ -129,4 +117,3 @@ Si no ve la Directiva habilitar la **inscripción automática de MDM con credenc
 6.  Reinicie el controlador de dominio principal para que la Directiva esté disponible. Este procedimiento también funcionará para versiones futuras.
 
 En este momento, podrá ver la directiva **Habilitar la inscripción automática de MDM con credenciales de Azure ad predeterminadas** disponibles.
-

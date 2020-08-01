@@ -1,20 +1,22 @@
 ---
-title: Roles y responsabilidades del escritorio administrado por Microsoft
+title: Roles y responsabilidades del Escritorio administrado de Microsoft
 description: En este tema se describen los roles y las responsabilidades que proporciona Microsoft para el escritorio administrado por Microsoft.
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02a0b11a1a210367d76e73c75ac5c1fc7a66f94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 85e352ec657da435e435311b2ad48beb6a0487ee
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636213"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530000"
 ---
-# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roles y responsabilidades del escritorio administrado por Microsoft
+# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roles y responsabilidades del Escritorio administrado de Microsoft
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/admin-access); do not delete.-->
@@ -37,7 +39,7 @@ Agrupación de usuarios y dispositivos | El equipo de operaciones de escritorio 
 
 ## <a name="your-roles-and-responsibilities"></a>Sus roles y responsabilidades
 
-A continuación se muestra un conjunto adicional de roles y responsabilidades comunes que no proporciona Microsoft, pero que son necesarios para una implementación correcta. No es exhaustivo pero es aplicable a la mayoría de las organizaciones. Hay algunos elementos por debajo de los cuales tanto Microsoft como el recurso compartido de cliente RESPONSIBILTIES. 
+A continuación se muestra un conjunto adicional de roles y responsabilidades comunes que no proporciona Microsoft, pero que son necesarios para una implementación correcta. No es exhaustivo pero es aplicable a la mayoría de las organizaciones. Hay algunos elementos por debajo de los cuales tanto Microsoft como las responsabilidades de recursos compartidos de clientes. 
 
 Rol o responsabilidad | Description
 --- | ---
@@ -46,7 +48,7 @@ Administración de identidades | El cliente es responsable de la creación de cu
 Microsoft 365 apps for Enterprise Configuration and Management | Microsoft es responsable de garantizar que las aplicaciones de Office se implementan en los usuarios finales y de que dichas aplicaciones se mantienen al día. <br><br> El cliente es responsable de administrar las directivas y los servicios de Microsoft 365, incluidas las responsabilidades de administración en línea de Exchange:<br>-Administración de correo electrónico<br>-Configuración de buzones y reglas<br>-Administración local de Exchange<br><br>El cliente también es responsable de las herramientas de colaboración, la administración de SharePoint Server, la administración de dominios, las directivas de seguridad y de información establecidas en el centro de administración de Microsoft 365. 
 Soporte técnico para usuarios finales | El cliente es responsable de proporcionar soporte técnico al usuario final para: <br>-En la infraestructura del sitio: toda la conectividad de red y de Internet, infraestructura de VPN y configuración de clientes, equipos locales de salas de conferencias, impresoras, servidor proxy y configuración, firewalls.<br><br>-Recursos de la nube de toda la empresa: correo electrónico, SharePoint, servicios de colaboración y otra infraestructura en la nube que se relaciona con el espacio tecnológico de toda la empresa.<br><br>-Línea de negocio y cualquier otra aplicación específica de la compañía.
 Aplicaciones | Los roles y las responsabilidades varían en cierta medida para las aplicaciones proporcionadas como parte del escritorio administrado por Microsoft frente a las que se proporcionan. <br><br>Para las aplicaciones proporcionadas por Microsoft (aplicaciones de Microsoft 365 para empresas que incluyen Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype empresarial, Teams y OneNote), **Microsoft** proporcionará el servicio completo para la implementación, actualización y soporte. **Debe obtener** y asignar licencias para estas aplicaciones, agregar usuarios a grupos de seguridad y administrar el fin de vida e implementar los complementos que necesite.<br><br>Para las aplicaciones que proporcione (como las aplicaciones de línea de negocio), independientemente de si las empaqueta o contrata a un proveedor que no es de Microsoft para hacerlo, **usted** es responsable de estas acciones: <br><br>-Identificación de aplicaciones necesarias para grupos de usuarios de destino<br>-Creación y administración de grupos de Azure AD para la implementación de aplicaciones<br>-Empaquetado de aplicaciones para cumplir con los estándares de implementación de Microsoft Intune<br>-Carga de aplicaciones en Microsoft Intune<br>-Pruebas de aplicaciones en el entorno de escritorio administrado de Microsoft<br>-Probar aplicaciones con los usuarios finales<br>-Administración y asignación de usuarios a aplicaciones<br>-Identificación e implementación de actualizaciones de aplicaciones mediante Microsoft Intune<br>-Desinstalación y eliminación de aplicaciones cuando se han retirado<br>-Obtención y asignación de licencias<br>-Proporcionar compatibilidad con el usuario final para las aplicaciones de línea de negocio<br>-Administración remota de la configuración de la aplicación<br><br>**Microsoft** proporcionará herramientas de implementación de Microsoft Intune para entregar las aplicaciones a clientes remotos.<br><br>Para obtener más información, vea [aplicaciones](../get-ready/apps.md)
-Supervisión y respuesta de seguridad | El cliente es responsable de investigar y resolver los incidentes para los dispositivos de escritorio administrados que no son de Microsoft y de garantizar que el equipo de operaciones de escritorio administrado de Microsoft esté informado de cualquier problema que pueda afectar al servicio.
+Control y respuesta de seguridad | El cliente es responsable de investigar y resolver los incidentes para los dispositivos de escritorio administrados que no son de Microsoft y de garantizar que el equipo de operaciones de escritorio administrado de Microsoft esté informado de cualquier problema que pueda afectar al servicio.
 Compatibilidad con operaciones | El cliente es responsable de ofrecer una lista de contactos de clientes preferidos y expertos en el tema. Microsoft las necesita en caso de que haya un incidente operativo de escritorio no administrado por Microsoft. <br><br>El cliente también es responsable de investigar y resolver los incidentes de servicios y dispositivos de escritorio que no sean de Microsoft y de garantizar que el equipo de operaciones de escritorio administrado de Microsoft esté siempre informado.
 Infraestructura de red, incluida la VPN | El cliente es responsable de la configuración, la configuración y la administración (como la solución de problemas y la depuración) de todos los servicios y la infraestructura relacionados con la red, incluidas la conectividad de Internet, los controles de red, la configuración de proxy y la infraestructura de conectividad remota.<br><br>Si un proxy está configurado (en hardware o software), hay una colección de direcciones URL que debe permitir el proxy. El cliente es responsable de solucionar cualquier conflicto o incompatibilidad debido a varios servidores proxy. Puede agregar servidores proxy de red específicos a su organización mediante la configuración configurable. Para obtener más información, consulte [configuración configurable](../working-with-managed-desktop/config-setting-ref.md#proxy).<br><br>Para obtener más información, consulte [configuración de proxy](../get-ready/network.md).
 Impresión | El cliente es responsable de instalar, mantener y administrar las colas de impresión y las impresoras. La impresión en la nube es una solución recomendada, pero no es necesaria. 

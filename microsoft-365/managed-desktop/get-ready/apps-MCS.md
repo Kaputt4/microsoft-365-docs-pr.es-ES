@@ -1,19 +1,22 @@
 ---
-title: Trabajar con los Servicios de Consultoría de Microsoft
+title: Trabajar con los servicios de consultoría de Microsoft
 description: preparación y pasos a seguir para trabajar con MCS para empaquetar las aplicaciones
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentation, apps, MCS, Packaging
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085949"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530168"
 ---
-# <a name="working-with-microsoft-consulting-services"></a>Trabajar con los Servicios de Consultoría de Microsoft
+# <a name="working-with-microsoft-consulting-services"></a>Trabajar con los servicios de consultoría de Microsoft
 
 Puede participar con los servicios de consultoría de Microsoft (MCS) para empaquetar las aplicaciones para usarlas con el escritorio administrado de Microsoft. Para obtener detalles exactos, trabaje con su representante de cuenta para ponerse en contacto con MCS y alcance su proyecto de empaquetado de aplicaciones específico.
 
@@ -21,7 +24,7 @@ Puede participar con los servicios de consultoría de Microsoft (MCS) para empaq
 
 Para trabajar con el empaquetado de la aplicación de MCS, **debe proporcionar estos elementos**:
 
-- Los archivos del instalador de origen (por ejemplo, setup. exe o. msi).
+- Los archivos del instalador de origen (por ejemplo, setup.exe o. msi).
 - Las instrucciones de instalación, que especifican los detalles sobre el aspecto de la instalación final. Por ejemplo, ¿debería haber un acceso directo de escritorio a la aplicación? ¿Qué debería tener la visibilidad de la aplicación? ¿La aplicación debe conectarse a un servidor y, si es así, ¿cuál? Para obtener más información, consulte la [plantilla solicitud de empaquetado de aplicaciones](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - Debe realizar sus propias pruebas de aceptación para comprobar que la aplicación funciona según la necesite en su entorno.
 

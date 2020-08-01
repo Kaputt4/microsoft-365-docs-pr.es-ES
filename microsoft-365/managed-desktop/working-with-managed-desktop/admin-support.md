@@ -1,19 +1,22 @@
 ---
-title: Soporte de administración para escritorio administrado de Microsoft
+title: Soporte técnico de administrador para Escritorio administrado de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266096"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529904"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte de administración para escritorio administrado de Microsoft
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
 Puede enviar Vales de soporte o solicitudes de comentarios a Microsoft mediante el portal de administración de escritorio administrado de Microsoft. Las solicitudes de soporte técnico siempre tienen prioridad sobre los envíos de comentarios. Las solicitudes de soporte se clasifican y administran de acuerdo con la gravedad, como se describe en la [tabla de definición](#sev)de la gravedad. Los comentarios se revisan y se proporciona una respuesta cuando se solicita. 
 

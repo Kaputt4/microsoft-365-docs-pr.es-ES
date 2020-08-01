@@ -1,20 +1,22 @@
 ---
-title: Preparar recursos de impresión para el escritorio administrado por Microsoft
+title: Preparar recursos de impresión para el Escritorio administrado de Microsoft
 description: Pasos importantes para asegurarse de que la impresión funciona correctamente
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826454"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530252"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el escritorio administrado por Microsoft
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el Escritorio administrado de Microsoft
 
 A medida que esté listo para inscribirse en el escritorio administrado de Microsoft, debe evaluar los requisitos de impresión y determinar el enfoque adecuado para su entorno. Tiene tres opciones:
  

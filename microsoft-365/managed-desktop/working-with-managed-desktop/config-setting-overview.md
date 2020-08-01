@@ -5,16 +5,18 @@ keywords: Escritorio administrado por Microsoft, Microsoft 365, servicio, docume
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390727"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530240"
 ---
-# <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones configurables-escritorio administrado por Microsoft
+# <a name="configurable-settings---microsoft-managed-desktop"></a>Opciones configurables: Escritorio administrado de Microsoft
 
 Microsoft Managed Desktop implementa la configuración y las directivas que se aplican a todos los dispositivos administrados por el escritorio administrado por Microsoft. Para obtener más información, consulte [configuración de dispositivos](../service-description/device-policies.md).
 
@@ -53,7 +55,7 @@ Microsoft Managed Desktop recomienda seguir un proceso similar al siguiente cuan
 
 **Paso 2: configurar y ensayar la implementación** : realice cambios en la configuración configurable en el portal de administración de escritorio administrado de Microsoft. Ensaye los cambios para que estén listos para la implementación. Recuerde informar a los usuarios sobre los cambios y cómo los cambios cambiarán la experiencia del dispositivo.   
 
-Configure y almacene los cambios en el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [personalizar opciones](config-setting-ref.md)configurables. 
+Configure y almacene los cambios en el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [personalizar opciones configurables](config-setting-ref.md). 
 
 **Paso 3: comunicar los cambios** Comunique la información sobre los próximos cambios a sus usuarios. Para cada implementación, complete la comunicación que forma parte de los procesos de administración de cambios. Debe comunicarse con claridad cualquier cambio que afecte al funcionamiento de un usuario o lo que verán en sus dispositivos.
 
@@ -62,15 +64,15 @@ Configure y almacene los cambios en el portal de administración de escritorio a
 Todas las opciones de configuración que se pueden configurar se administran mediante el portal de administración de escritorio administrado de Microsoft. Para obtener más información, vea [implementar cambios](config-setting-deploy.md). 
 
 **Paso 5: control de cambios** : realice un seguimiento del progreso de los cambios en el estado de la implementación. Para cada configuración, puede:
-- **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso**y, a continuación ****, se completará o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
+- **Seguimiento del progreso** : realice un seguimiento del estado después de implementar el cambio. El estado cambiará a **en curso**y, a continuación, se **completará**o **no**. Si se produce un error en la implementación, se abre automáticamente una solicitud de soporte técnico para las operaciones de escritorio administradas de Microsoft para investigar el problema.  
 - **Ver versión implementada** : cada cambio implementado tiene un número de versión.
 - **Revertir cambios** : la reversión de un cambio detiene la implementación actual y revierte todos los grupos a los últimos cambios que se implementaron en todos los grupos. Va a revertir al valor de configuración de última configuración buena conocida.
 - **Validar cambios** : una vez completada la implementación, valide que los cambios se han aplicado como se esperaba.  
 
 Si se produce un error en una implementación o no puede revertir un cambio, [abra una solicitud de soporte técnico](admin-support.md) con Microsoft Managed Desktop Operations. 
 
-Para obtener más información, vea [implementar y realizar un seguimiento](config-setting-deploy.md)de las opciones configurables.
+Para obtener más información, vea [implementar y realizar un seguimiento de las opciones configurables](config-setting-deploy.md).
 
-## <a name="additional-resources"></a>Otros recursos
-- [Referencia de opciones configurables](config-setting-ref.md) 
-- [Implementar opciones configurables](config-setting-deploy.md) 
+## <a name="additional-resources"></a>Recursos adicionales
+- [Referencia de parámetros configurables](config-setting-ref.md) 
+- [Implementar parámetros configurables](config-setting-deploy.md) 

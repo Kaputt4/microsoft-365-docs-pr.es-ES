@@ -1,7 +1,7 @@
 ---
 title: Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft
 description: certs/WiFi/LAN
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,18 +9,20 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0c3edda92e28b45b7f7b48c1d5002014f71116f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c7c57861986d275165484ae726140720a75da88e
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596577"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530036"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft  
  
 La autenticación basada en certificados es un requisito común para los clientes que usan Microsoft Managed Desktop. Es posible que necesite certificados para acceder a Wi-Fi o LAN, conectarse a soluciones VPN o para obtener acceso a los recursos internos de su organización.   
  
-Debido a que los dispositivos de escritorio administrados de Microsoft se unen a Azure Active Directory (Azure AD) y se administran mediante Microsoft Intune, debe implementar estos certificados con un protocolo de inscripción de certificados simple (SCEP) o un estándar de criptografía de clave pública (PKCS) infraestructura de certificados que se integra con Intune.    
+Debido a que los dispositivos de escritorio administrados de Microsoft se unen a Azure Active Directory (Azure AD) y se administran mediante Microsoft Intune, debe implementar dichos certificados con una infraestructura de certificados de protocolo de inscripción de certificados (SCEP) o estándar de criptografía de clave pública (PKCS) integrada con Intune.    
  
 ## <a name="certificate-requirements"></a>Requisitos de certificado 
  
@@ -37,7 +39,7 @@ Antes de implementar los certificados de SCEP o PKCS en el escritorio administra
   
 ## <a name="wi-fi-connectivity-requirements"></a>Requisitos de conectividad Wi-Fi
 
-Para permitir que un dispositivo se suministre automáticamente con la configuración de Wi-Fi necesaria para la red de la empresa, es posible que necesite un perfil de configuración de Wi-Fi. Puede configurar Microsoft Managed Desktop para implementar estos perfiles en sus dispositivos. Si su seguridad de red requiere que los dispositivos formen parte del dominio local, es posible que también necesite evaluar su infraestructura de red Wi-Fi para asegurarse de que es compatible con los dispositivos de escritorio administrados por Microsoft (los dispositivos de escritorio administrados por Microsoft están Unidos a Azure AD). Only). 
+Para permitir que un dispositivo se suministre automáticamente con la configuración de Wi-Fi necesaria para la red de la empresa, es posible que necesite un perfil de configuración de Wi-Fi. Puede configurar Microsoft Managed Desktop para implementar estos perfiles en sus dispositivos. Si su seguridad de red requiere que los dispositivos formen parte del dominio local, es posible que también necesite evaluar su infraestructura de red Wi-Fi para asegurarse de que es compatible con los dispositivos de escritorio administrados por Microsoft (los dispositivos de escritorio administrados por Microsoft son solo Unidos a Azure AD). 
  
 Antes de implementar una configuración de Wi-Fi en dispositivos de escritorio administrados por Microsoft, se le pedirá que reúna los requisitos de la organización para cada red Wi-Fi. Para facilitar esta tarea, puede usar esta [plantilla de perfil Wi-Fi](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx).
  
@@ -53,7 +55,7 @@ Antes de implementar un perfil de configuración de red cableada en dispositivos
 2. Abra un símbolo del sistema con credenciales administrativas. 
 3. Para buscar el nombre de la interfaz LAN, ejecute **netsh interface show interface**. 
 4. Exporte el XML de Perfil de LAN ejecutando **netsh LAN Export Profile Folder =.  Interface = "interface_name"**. 
-5. Si necesita probar el perfil exportado en un dispositivo de escritorio administrado por Microsoft, ejecute **netsh LAN Add Profile filename = "PATH_AND_FILENAME. xml" interface = "INTERFACE_NAME"**. 
+5. Si necesita probar el perfil exportado en un dispositivo de escritorio administrado por Microsoft, ejecute **netsh LAN Add Profile filename = "PATH_AND_FILENAME.xml" interface = "INTERFACE_NAME"**. 
  
  
 ## <a name="deploy-certificate-infrastructure"></a>Implementación de la infraestructura de certificados  
@@ -85,6 +87,6 @@ Para implementar certificados y perfiles, siga estos pasos:
 2. Cree un perfil para cada certificado SCEP o PKCS (consulte [Create a SCEP Certificate](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) Profile or [Create a PKCS Certificate Profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) cada uno de estos perfiles debe tener una descripción que incluya una fecha de expiración en formato dd/mm/aaaa. **No se implementarán los perfiles de certificado sin una fecha de expiración.**
 3. Cree un perfil para cada red WiFi corporativa (consulte [configuración de Wi-Fi para dispositivos con Windows 10 y versiones posteriores](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Cree un perfil para cada VPN corporativa (consulte la configuración de dispositivo de Windows [10 y Windows Holographic para agregar conexiones VPN con Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Envíe una solicitud de soporte titulada "implementación de certificados" o "implementación de Perfil de Wi-Fi" a operaciones de TI de escritorio administradas por Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos del área de trabajo modernos: test ". Las operaciones de TI de escritorio administradas por Microsoft le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 
+5. Envíe una solicitud de soporte titulada "implementación de certificados" o "implementación de Perfil de Wi-Fi" a operaciones de TI de escritorio administradas por Microsoft mediante el portal de administración de escritorio administrado de Microsoft para revisar e implementar el perfil de configuración en "dispositivos del área de trabajo modernos: prueba". Las operaciones de TI de escritorio administradas por Microsoft le permitirán saber cuándo se ha completado la solicitud a través de la solicitud de soporte técnico en el portal de administración. 
  
  

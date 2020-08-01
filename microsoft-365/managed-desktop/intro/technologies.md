@@ -1,19 +1,22 @@
 ---
-title: Tecnologías de escritorio administradas de Microsoft
+title: Tecnologías del Escritorio administrado de Microsoft
 description: En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636201"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530024"
 ---
-# <a name="microsoft-managed-desktop-technologies"></a>Tecnologías de escritorio administradas de Microsoft
+# <a name="microsoft-managed-desktop-technologies"></a>Tecnologías del Escritorio administrado de Microsoft
 
 En este tema se enumeran las tecnologías y aplicaciones usadas en el escritorio administrado por Microsoft.
 
@@ -39,7 +42,7 @@ Aplicaciones web |  Yammer, Office en un explorador, Delve, Flow, StaffHub, Powe
  |
  --- | ---
 Virtualización de aplicaciones (App-V) |    Los clientes pueden implementar paquetes de App-V con el cliente de administración de aplicaciones Win32 de Intune.
-Protección contra amenazas avanzada de Microsoft Defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
+Protección contra amenazas avanzada de Microsoft Defender |  Microsoft Managed Desktop lo usa para supervisar la seguridad de los dispositivos. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

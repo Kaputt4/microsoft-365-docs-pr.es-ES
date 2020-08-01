@@ -1,17 +1,20 @@
 ---
 title: Excepciones para el plan de servicios
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636189"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529940"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 

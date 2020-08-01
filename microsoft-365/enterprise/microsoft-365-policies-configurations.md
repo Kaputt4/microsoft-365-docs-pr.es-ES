@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222332"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530276"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -33,7 +34,7 @@ Microsoft entiende que algunas organizaciones tienen requisitos de entorno únic
 
 ## <a name="intended-audience"></a>Público objetivo
 
-Estas recomendaciones están destinadas a arquitectos empresariales y profesionales de ti familiarizados con [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) y [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), que incluye, entre otros, Azure Active Directory (identidad), Microsoft Intune (administración de dispositivos) y Azure Information Protection (protección de datos).
+Estas recomendaciones están destinadas a arquitectos empresariales y profesionales de ti familiarizados con [Office 365](https://docs.microsoft.com/microsoft-365/admin) y [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), que incluye, entre otros, Azure Active Directory (identidad), Microsoft Intune (administración de dispositivos) y Azure Information Protection (protección de datos).
 
 ### <a name="customer-environment"></a>Entorno del cliente
 
@@ -45,7 +46,7 @@ Para las organizaciones que no tienen licencias de Enterprise Mobility + Securit
 
 ### <a name="caveats"></a>ADVERTENCIAS
 
-Es posible que su organización esté sujeta a requisitos normativos o de cumplimiento normativo, incluidas recomendaciones específicas que puedan requerir la aplicación de directivas que difieran de estas configuraciones recomendadas. Estas configuraciones recomiendan controles de uso que históricamente no han estado disponibles. Estos controles se recomiendan porque se cree que representan un equilibrio entre la seguridad y la productividad.  
+Es posible que su organización esté sujeta a requisitos normativos o de cumplimiento normativo, incluidas recomendaciones específicas que puedan requerir la aplicación de directivas que difieran de estas configuraciones recomendadas. Estas configuraciones recomiendan controles de uso que históricamente no han estado disponibles. Le recomendamos estos controles porque creemos que representan un equilibrio entre la seguridad y la productividad.  
 
 Hemos hecho lo mejor para contar con una amplia variedad de requisitos de protección organizacional, pero no podemos tener en cuenta todos los requisitos posibles o todos los aspectos exclusivos de su organización.
 
@@ -57,7 +58,7 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 
 - **Protección de línea base**: le recomendamos que establezca un estándar mínimo para la protección de datos, así como las identidades y los dispositivos que tienen acceso a sus datos. Puede seguir estas recomendaciones de línea base para proporcionar una protección segura predeterminada que satisfaga las necesidades de muchas organizaciones.
 - **Protección confidencial**: algunos clientes tienen un subconjunto de datos que deben protegerse en niveles superiores o pueden requerir que todos los datos estén protegidos en un nivel superior. Puede aplicar una mayor protección a todos o conjuntos de datos específicos en su entorno de Microsoft 365. Se recomienda proteger las identidades y los dispositivos que acceden a información confidencial con niveles de seguridad comparables.  
-- **Altamente regulado**: algunas organizaciones pueden tener una pequeña cantidad de datos clasificados con mucha clasificación, secretos comerciales consititutes o datos regulados. Microsoft proporciona capacidades para ayudar a las organizaciones a cumplir estos requisitos, incluida protección adicional para identidades y dispositivos.
+- **Altamente regulado**: algunas organizaciones pueden tener una pequeña cantidad de datos clasificados en gran medida, que constituyen secretos comerciales o que son datos regulados. Microsoft proporciona capacidades para ayudar a las organizaciones a cumplir estos requisitos, incluida protección adicional para identidades y dispositivos.
 
 ![Cono de seguridad: todos los clientes > algunos clientes > clientes específicos. Amplia aplicación a aplicación específica](../media/M365-idquality-threetiers.png)
 
@@ -94,7 +95,7 @@ En esta sección se proporciona información general sobre los servicios y capac
 
 Azure AD ofrece un conjunto completo de capacidades de administración de identidades. Para proteger el acceso, le recomendamos que use las siguientes capacidades:
 
-- **[Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: permita que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del Departamento de soporte técnico; para ello, proporcione la comprobación de varios métodos de autenticación que el administrador puede controlar.
+- **[Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: permita que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del servicio de asistencia técnica mediante la comprobación de varios métodos de autenticación que el administrador puede controlar.
 
 - **[Autenticación multifactor (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA requiere que los usuarios proporcionen dos formas de verificación, como una contraseña de usuario y una notificación de la aplicación Microsoft Authenticator o una llamada telefónica. La MFA reduce en gran medida el riesgo de que se pueda usar una identidad robada para tener acceso al entorno.
 

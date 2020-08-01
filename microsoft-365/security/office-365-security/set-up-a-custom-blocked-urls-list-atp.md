@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617269"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533816"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 
@@ -84,6 +84,10 @@ Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes punto
 |`https://contoso.com/a`|Bloquea un sitio, `https://contoso.com/a` pero no otros subtrazados adicionales como`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com` ).|
+
+
+> [!NOTE]
+> De forma predeterminada, solo puede agregar direcciones URL de 500 a la lista de URL bloqueadas en la directiva predeterminada de vínculos seguros de ATP de Office 365.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Cómo definir excepciones para determinados usuarios de una organización
 

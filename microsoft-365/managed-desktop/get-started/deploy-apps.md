@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046333"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529402"
 ---
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 Parte del escritorio administrado de incorporación a Microsoft incluye la adición e implementación de aplicaciones en los dispositivos del usuario. Una vez que esté usando Microsoft Managed Desktop portal, puede Agregar e implementar sus aplicaciones. 
@@ -82,10 +85,10 @@ Cree tres grupos de Azure AD para cada aplicación. En esta tabla se describen l
 Tipo de asignación de aplicación |    Uso de grupo    | Nombre de ejemplo de Azure AD
 --- | --- | ---
 Disponible |  La aplicación estará disponible desde el sitio web o la aplicación del portal de empresa. | MMD: *nombre* de la aplicación: disponible
-Obligatorio |  La aplicación se instala en los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: obligatorio
+Necesario |  La aplicación se instala en los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: obligatorio
 Uninstall |  La aplicación se desinstala de los dispositivos de los grupos seleccionados. | MMD: *nombre* de la aplicación: desinstalar
 
-Agregue los usuarios a estos grupos para hacer que la aplicación esté presente, instalar la aplicación o quitar la aplicación del dispositivo de escritorio administrado por Microsoft. 
+Agregue los usuarios a estos grupos para hacer que la aplicación esté disponible, instalar la aplicación o quitar la aplicación de su dispositivo de escritorio administrado por Microsoft. 
 
 <span id="3" />
 

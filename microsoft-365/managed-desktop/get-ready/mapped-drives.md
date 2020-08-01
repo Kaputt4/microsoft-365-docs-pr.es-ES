@@ -1,22 +1,24 @@
 ---
 title: Preparar unidades asignadas para el Escritorio administrado de Microsoft
 description: Pasos importantes para asegurarse
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280178"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530180"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
-Muchos entornos empresariales tienen requisitos heredados para las unidades asignadas para permitir que sus usuarios o equipos compartan y almacenen archivos, o para las aplicaciones locales. Microsoft no recomienda el uso de unidades asignadas con el escritorio administrado de Microsoft. En su lugar, se recomienda modernizar las soluciones de acceso a archivos de Yor de la siguiente manera:
+Muchos entornos empresariales tienen requisitos heredados para las unidades asignadas para permitir que sus usuarios o equipos compartan y almacenen archivos, o para las aplicaciones locales. Microsoft no recomienda el uso de unidades asignadas con el escritorio administrado de Microsoft. En su lugar, se recomienda modernizar las soluciones de acceso a archivos de la siguiente manera:
   
 - Migre las unidades asignadas que usan los usuarios individuales a OneDrive para la empresa. 
 - Migre las unidades asignadas que usa Teams para compartir archivos en SharePoint Online. 

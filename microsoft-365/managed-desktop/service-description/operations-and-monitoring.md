@@ -1,7 +1,7 @@
 ---
 title: Supervisión y operaciones de escritorio administradas de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e543219bd6a7667febadcdc8f3cff6ab705b8d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632018"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529450"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Supervisión y operaciones de escritorio administradas de Microsoft
 
@@ -85,7 +87,7 @@ Red (proxy, inspección de paquetes, VPN)  | Aconseje y planifique con los clien
 Cuentas de servicio  |-Implemente, almacene y administre las credenciales de forma segura.<br> -Comunique el acceso no autorizado o el uso de estas credenciales al equipo de operaciones de seguridad. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No asignar la Directiva, la autenticación multifactor, el acceso condicional o la implementación de aplicaciones a las cuentas de servicio de escritorio administradas de Microsoft.<br>-No restablecer la contraseña ni usar las credenciales.<br>-Abra una solicitud de soporte de gravedad C a operaciones de escritorio administradas de Microsoft si se observa actividad sospechosa en los registros de auditoría de Intune o Azure, relacionados con estas cuentas de servicio.
 Grupos de dispositivos | : Implemente y administre la pertenencia de dispositivos en grupos de escritorio administrado por Microsoft.<br>-Use los grupos de Microsoft Managed Desktop para administrar la asignación y la publicación de la configuración y las actualizaciones de los dispositivos. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No modifique la pertenencia de ningún grupo de escritorio administrado por Microsoft.<br>-Use solo los grupos para asignar certificados corporativos para servicios como VPN, Windows Hello para empresas o cifrado de correo electrónico, o configuración de Perfil de Wi-Fi corporativo.<br>-Donde hay coadministración, excluya explícitamente todos los grupos de escritorio administrados por Microsoft al implementar el cliente de Configuration Manager.
 Directivas |  : Implemente y administre las directivas de escritorio administradas por Microsoft que rigen el estado de configuración de los dispositivos dentro del servicio.<br>-Implementar actualizaciones, en la Directiva o en las ventanas, con grupos de dispositivos de forma incremental.<br> -Excluya explícitamente los grupos de escritorio administrados que no son de Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No edite ni asigne directivas de escritorio administradas por Microsoft a dispositivos o usuarios que no estén administrados por el servicio de escritorio administrado de Microsoft.
-Protección contra amenazas avanzada de Microsoft Defender   | Supervisar e investigar los dispositivos que se encuentran dentro del ámbito del servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft hayan evaluado y aconsejado
+Protección contra amenazas avanzada de Microsoft Defender   | Supervisar e investigar los dispositivos que se encuentran dentro del ámbito del servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft hayan evaluado y aconsejado
 Microsoft Store para Empresas |  Configurar y mantener el perfil de Windows AutoPilot para el servicio de escritorio administrado por Microsoft. | -Cree una solicitud de soporte técnico que solicite información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles pertinentes para que Microsoft los revise.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-No modifique la configuración del perfil Microsoft Managed Desktop Windows AutoPilot o agregue o quite dispositivos asignados.
 Certificados | | -Cree una solicitud de soporte 60 días antes de que expire el certificado, solicitando información para un cambio de configuración planificado, incluidos los detalles de configuración, el ámbito, la escala de tiempo y otros detalles relevantes que Microsoft debe revisar.<br>-Solo aplique un cambio una vez que las operaciones de escritorio administradas por Microsoft se han evaluado y aconsejado.<br>-Actualizar todos los certificados necesarios para configurar los perfiles de certificados, los perfiles de VPN y los perfiles de Wi-Fi.
 
