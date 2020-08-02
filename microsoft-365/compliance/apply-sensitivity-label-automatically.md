@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503031"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527830"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -56,8 +56,8 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Específico para el etiquetado automático para SharePoint y OneDrive:
     - Son compatibles los archivos de Office para Word, PowerPoint y Excel.
     - Máximo de 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
-    - Máximo de 10 colecciones de sitios entre todas las directivas.
-    - Máximo de 10 directivas en su espacio empresarial.
+    - Máximo de 10 colecciones de sitios para cada directiva de etiquetado automático.
+    - Máximo de 10 directivas de etiquetado automático en todo su espacio empresarial.
     - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
     - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que creó la etiqueta de confidencialidad.
 

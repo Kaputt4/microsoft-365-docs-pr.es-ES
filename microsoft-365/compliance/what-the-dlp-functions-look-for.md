@@ -1,5 +1,5 @@
 ---
-title: Qué buscan las funciones de DLP
+title: Qué buscan las funciones de prevención de pérdida de datos (DLP)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre qué buscan las funciones de prevención de pérdida de datos (DLP) para ayudarle a comprender cómo funcionan los tipos de información confidencial predefinidos.
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Obtenga información sobre qué buscan las funciones de prevención de pérdida de datos (DLP).
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819280"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536315"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
-La Prevención de pérdida de datos (DLP) incluye tipos de información confidencial, como el número de tarjeta de crédito y el número de tarjeta de débito de la UE, que están listos para su uso en las directivas de DLP. Estos tipos de información confidencial buscan un patrón específico y lo comprueban asegurándose de que el formato es el adecuado, forzando las sumas de comprobación y buscando palabras clave pertinentes u otra información. Parte de esta funcionalidad la realizan funciones internas. Por ejemplo, el tipo de información confidencial de la tarjeta de crédito usa una función para buscar fechas con formato como la fecha de vencimiento, que ayuda a comprobar que un número es un número de tarjeta de crédito.
+La prevención de pérdida de datos (DLP) incluye tipos de información confidencial, como el número de tarjeta de crédito y el número de tarjeta de débito de la UE, que están listos para usarlos en las directivas de DLP. Estos tipos de información confidencial buscan un patrón específico y lo comprueban asegurándose de que el formato es el adecuado, forzando las sumas de comprobación y buscando palabras clave pertinentes u otra información. Parte de esta funcionalidad la realizan funciones internas. Por ejemplo, el tipo de información confidencial de la tarjeta de crédito usa una función para buscar fechas con formato como la fecha de vencimiento, que ayuda a comprobar que un número es un número de tarjeta de crédito.
   
-En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos. Para obtener más información, vea [tipos de información confidencial definiciones de entidades](sensitive-information-type-entity-definitions.md)
+En este artículo se explica lo que buscan estas funciones para ayudarle a comprender cómo funcionan los tipos de información confidencial predefinidos. Para obtener más información, vea [tipos de información confidencial definiciones de entidades](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ Nombres de mes aceptados:
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-Esta función busca una fecha en el formato que suele usarse en la UE (y en la mayoría de lugares fuera de los Estados Unidos). Esto incluye los formatos de "día/mes/año", "día-mes-año" y "día mes año". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas.
+Esta función busca una fecha con el formato usado habitualmente en la UE (y la mayoría de los lugares fuera de Estados Unidos), como "día/mes/año", "día-mes-año" y "día mes año". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas.
   
 Ejemplos:
   
@@ -183,7 +183,7 @@ Nombres de mes aceptados:
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
-  - Jan Feb maart Apr Mei Jun-Jul-Sep-Sept Oct OKT Nov Dec
+  - Jan Feb maart Apr Mei Jun-Jul-Sep-Sept OKT Nov Dec
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ Ejemplos:
     
 Los formatos siguientes admiten AA o AAAA:
   
-- Mes-AAAA: por ejemplo, ene-2010, enero-2010, ene-10 o enero-10
+- Mes-YYYY--por ejemplo, Ene-2010 o enero-2010 o ene-10 o enero-10
     
 - Mes AAAA: por ejemplo, "enero 2010", "ene. 2010", "enero 10" o "ene. 10"
     
@@ -219,7 +219,7 @@ Nombres de mes aceptados:
     
 ## <a name="func_us_address"></a>Func_us_address
 
-Esta función busca un nombre de estado de los Estados Unidos o una abreviatura postal seguidos de un código postal válido, tal como se usan en las direcciones postales. El código postal debe ser uno de los códigos postales correctos asociados al nombre del estado de los Estados Unidos o su abreviatura. El nombre de estado de los Estados Unidos y el código postal no pueden estar separados por signos de puntuación o letras.
+Esta función busca un nombre de estado de Estados Unidos o una abreviatura postal seguida de un código postal válido, tal y como se usan en las direcciones postales. El código postal debe ser uno de los códigos postales correctos asociados al nombre del estado de los Estados Unidos o su abreviatura. El nombre de estado de los Estados Unidos y el código postal no pueden estar separados por signos de puntuación o letras.
   
 Ejemplos:
   

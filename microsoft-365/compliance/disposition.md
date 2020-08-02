@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529605"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533827"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
@@ -124,9 +124,9 @@ El contenido que espera una revisión de disposición se elimina solo después d
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
 > [!NOTE]
->Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive. Verá la lista de etiquetas de retención que marcan contenido como registros para SharePoint y OneDrive en la sección disposición de la página Administración de registros en el centro de cumplimiento de Microsoft 365. En estas etiquetas, puede ver la lista de elementos de SharePoint y OneDrive que se eliminaron automáticamente o después de una revisión de disposición.
-
-La prueba de eliminación de registros de Exchange todavía no está activa. Cuando este lanzamiento se inicie y una vez que se haya completado, actualizaremos esta nota.
+> Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive. Verá la lista de etiquetas de retención que marcan contenido como registros para SharePoint y OneDrive en la sección disposición de la página Administración de registros en el centro de cumplimiento de Microsoft 365. En estas etiquetas, puede ver la lista de elementos de SharePoint y OneDrive que se eliminaron automáticamente o después de una revisión de disposición.
+>
+> La prueba de eliminación de registros de Exchange todavía no está activa. Cuando este lanzamiento se inicie y una vez que se haya completado, actualizaremos esta nota.
 
 Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery avanzado con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: fa7a8a4bd87f91d3417183a5713f5c3c06f01ebe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632975"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528146"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestionar la configuración de la relevancia en Advanced eDiscovery (clásico)
 
@@ -36,39 +36,39 @@ ms.locfileid: "43632975"
  En eDiscovery avanzado, en la ventana **Casos**, seleccione un caso y haga clic en **Ir al caso**. Haga clic en **Relevancia** \> **Configuración de relevancia**. Siga las recomendaciones para configurar Relevancia. 
   
 - **Etiquetado**: la efectividad del proceso de entrenamiento iterativo de Relevancia depende de la capacidad del experto de etiquetar archivos de muestra con precisión y coherencia.
-    
-- **Asuntos de casos**: 
-    
+
+- **Asuntos de casos**:
+  
   - Para cada asunto, use el mismo experto en todo el proceso de entrenamiento de Relevancia. No se permite el etiquetado simultánea del mismo asunto por varios expertos.
-    
-  - Determine si cada grupo de archivos es relevante solo para un asunto específico. 
-    
-  - Si un asunto se define de forma demasiado amplia, es posible que eDiscovery avanzado muestre demasiados archivos que no sean relevantes en realidad. Si un asunto se define de forma demasiado restringida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
-    
+  
+  - Determine si cada grupo de archivos es relevante solo para un asunto específico.
+
+  - Si se describe un problema de forma demasiado amplia, es posible que eDiscovery avanzado muestre demasiados archivos que no sean relevantes. Si se describe un problema de forma demasiado reducida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
+
   - Durante cada ciclo de entrenamiento de Relevancia, eDiscovery avanzado se centra en un único asunto activo y, en consecuencia, muestra los resultados de ejemplo provisionales.
-    
+
   - En un escenario de varios asuntos, el modo Muestreo permite seleccionar los archivos que se incluirán en el procesamiento. Los asuntos definidos como “Desactivados” no se procesarán hasta que se cambie el modo de Muestreo. Un asunto puede estar “inactivo” o “activo” para solo un experto.
-    
-  -  eDiscovery avanzado puede usarse para generar archivos de privilegios de candidatos. Configure un asunto separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
-    
+
+  - eDiscovery avanzado puede usarse para generar archivos de privilegios de candidatos. Configure un asunto separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
+
   - El cálculo por lotes solo puede realizarse cuando no haya muestras abiertas (al hacer clic en Cálculo por lotes, se mostrará una lista de usuarios con muestras abiertas). Para “cerrar” las muestras de otros usuarios (esto solo puede realizarse si los usuarios no están etiquetando esas muestras), un administrador puede usar la utilidad “Modificar relevancia” con la opción “Muestra de todos los usuarios”.
-    
-- **Metadatos**: eDiscovery avanzado se centra en el contenido. No tiene en cuenta los metadatos como parte de los criterios de relevancia. 
-    
+
+- **Metadatos**: eDiscovery avanzado se centra en el contenido. No tiene en cuenta los metadatos como parte de los criterios de relevancia.
+
 - **Riqueza**: si la riqueza de un asunto es inferior al 3 % después de la evaluación, puede inicializar el entrenamiento de Relevancia con archivos conocidos que sean relevantes y no relevantes.
-    
-- **Tamaño de archivo**: los archivos de gran tamaño (con más de 5 242 880 caracteres de texto extraído) se omiten en Relevancia. Los archivos no se incluyen en el proceso de entrenamiento de Relevancia y no reciben una puntuación de Relevancia después del cálculo por lotes. Los archivos con un tamaño superior a 5 MB se pueden incluir en el conjunto de evaluación.
-    
+
+- **Tamaño de archivo**: Archivos de gran tamaño (con más de 5 242 880 caracteres de texto extraído) se omiten en Relevancia. Los archivos no se incluyen en el proceso de entrenamiento de Relevancia y no reciben una puntuación de Relevancia después del cálculo de lote. Los archivos con un tamaño superior a 5 MB se pueden incluir en el conjunto de evaluaciones.
+
 ## <a name="setting-up-case-issues"></a>Configurar asuntos de casos
 
-Los parámetros descritos en esta sección están disponibles en eDiscovery avanzado **Relevancia** \> **Configuración de Relevancia**. 
+Los parámetros descritos en esta sección están disponibles en eDiscovery avanzado **Relevancia** \> **Configuración de Relevancia**.
   
 - Los asuntos tienen que asignarse a un usuario que entrenará los archivos.
-    
+
 - Después, los archivos importados tienen que agregarse a la carga que vaya a procesarse.
-    
+
 - Defina y organice asuntos cuidadosamente, ya que esto puede afectar a los resultados de entrenamiento de Relevancia.
-    
+
 Después de establecer los parámetros, el revisor o experto puede empezar a entrenar los archivos en la pestaña **Relevancia**. 
   
 ## <a name="see-also"></a>Vea también

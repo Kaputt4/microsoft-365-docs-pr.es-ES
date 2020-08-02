@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los usuarios pueden obtener información sobre cómo ver y administrar los mensajes en cuarentena en Exchange Online Protection (EOP) que deberían haberles entregado.
-ms.openlocfilehash: 01125b7aa0a89c27cdc8abc5ebb46da4b11ac504
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 37392034f6aef3b40dd70ceb10ec41c20abfacbf
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936988"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527463"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Búsqueda y liberación de mensajes en cuarentena como usuario en EOP
 
@@ -38,9 +38,9 @@ Como usuario, puede ver, liberar y eliminar mensajes puestos en cuarentena de lo
 
 - Los administradores pueden configurar cuánto tiempo se conservan los mensajes en cuarentena antes de que se eliminen de forma permanente (directivas contra correo electrónico no deseado). Los mensajes que han expirado de la cuarentena no se pueden recuperar. Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
-- Los administradores también pueden [configurar notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) en directivas contra correo no deseado. Los usuarios pueden liberar mensajes de correo no deseado en cuarentena, pero no mensajes phishing en cuarentena, directamente desde estas notificaciones. Para más información, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Los administradores también pueden [configurar notificaciones de correo no deseado para el usuario final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) en directivas contra correo no deseado. Los usuarios pueden eliminar, de forma directa, mensajes de correo no deseado en cuarentena, pero no mensajes de suplantación de identidad en cuarentena desde estas notificaciones. Para más información, consulte [Notificaciones de correo no deseado para el usuario final en EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Los usuarios pueden revisar y publicar los mensajes de phishing. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
+- Los mensajes puestos en cuarentena por suplantación de identidad de alta confianza, malware o por reglas de flujo de correo (también conocidas como reglas de transporte) solo están disponibles para los administradores. Los usuarios pueden revisar los mensajes de suplantación de identidad, pero solo los administradores pueden eliminarlos. Para más información, consulte [Administrar mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md).
 
 - Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez.
 

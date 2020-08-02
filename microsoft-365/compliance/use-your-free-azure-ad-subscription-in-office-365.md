@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819290"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528156"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usar su suscripción gratuita de Azure Active Directory
 
@@ -30,7 +30,7 @@ Si su organización tiene una suscripción de pago a Microsoft 365, Microsoft D
 
 ## <a name="open-a-private-browsing-session"></a>Abrir una sesión de exploración privada
 
-Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 que se muestra a continuación), esto evitará que las credenciales con las que inició sesión se usen en Azure. Para abrir una sesión de navegación privada:
+Use una sesión de navegación privada (no una sesión normal) para obtener acceso al Microsoft Azure Portal (en el paso 1 que se muestra a continuación). Esto evitará que las credenciales con las que inició sesión se usen en Azure. Para abrir una sesión de navegación privada:
 
 - En Microsoft Edge (versión heredada), Internet Explorer o Mozilla FireFox, presione `CTRL+SHIFT+P`.
 
@@ -48,7 +48,7 @@ Use una sesión de exploración privada (no una sesión normal) para obtener acc
 
 ## <a name="more-information"></a>Más información
 
-- Una suscripción gratuita de Azure Active Directory no incluye el informe de actividad de inicio de sesión. Para grabar la actividad de inicio de sesión (que puede resultar útil en caso de una violación de datos), necesita una suscripción de Azure Active Directory Premium. Para obtener más información, consulte [¿Durante cuánto tiempo Azure AD almacena los datos?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Una suscripción gratuita de Azure Active Directory no incluye el informe de actividad de inicio de sesión. Para grabar la actividad de inicio de sesión (que puede resultar útil en caso de una vulneración de datos), necesita una suscripción de Azure Active Directory Premium. Para obtener más información, consulte [¿Durante cuánto tiempo Azure AD almacena los datos?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 - También puede tener acceso al centro de administración de **Azure Active Directory** desde el centro de administración de Microsoft 365. En el panel de navegación de la izquierda del centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Azure Active Directory**.
 
