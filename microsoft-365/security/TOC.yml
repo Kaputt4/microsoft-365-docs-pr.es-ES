@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Directivas de seguridad predefinidas
                   href: ./office-365-security/preset-security-policies.md
+                - name: Analizador de configuración de directivas de seguridad predefinidas
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Encabezados de mensajes de correo no deseado
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: Cómo se combinan las directivas y las protecciones
