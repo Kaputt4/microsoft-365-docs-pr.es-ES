@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229420"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536325"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
-Los [tipos de información confidencial](custom-sensitive-info-types.md) se usan para ayudar a evitar el uso compartido accidental o inadecuado de información confidencial. Como administrador, puede usar el  [Centro de seguridad y cumplimiento](create-a-custom-sensitive-information-type.md) o [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) para definir un tipo de información confidencial basado en patrones, evidencia (palabras clave como *empleado*, *insignia*, *id.*, etc.), proximidad de caracteres (la similitud de la evidencia y los caracteres en un patrón determinado) y niveles de confianza. Estos tipos de información confidencial satisfacen las necesidades de negocio para muchas organizaciones.
+Los [tipos de información confidencial](custom-sensitive-info-types.md) se usan para ayudar a evitar el uso compartido accidental o inadecuado de información confidencial. Como administrador, puede usar el Centro de seguridad y cumplimiento o PowerShell para definir un tipo de información confidencial basado en patrones, evidencia (palabras clave como  *empleado*,  *insignia*,  *ID*, etc.), proximidad de caracteres (la similitud de la evidencia y los caracteres en un patrón determinado) y niveles de confianza. Estos tipos de información confidencial satisfacen las necesidades de negocio para muchas organizaciones.
 
 Pero, ¿qué pasa si quiere un tipo de información confidencial que use valores de datos exactos, en lugar de coincidir solo con patrones genéricos? Con la clasificación basada en coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizado que está diseñado para:
 
@@ -51,6 +51,16 @@ La clasificación basada en EDM se incluye en estas suscripciones
 - Microsoft 365 E5
 - Cumplimiento de Microsoft 365 E5
 - Gobierno y protección de información de Microsoft E5/A5
+
+## <a name="portal-links-for-your-subscription"></a>Vínculos del portal para la suscripción
+
+
+|Portal  |World Wide/GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
+|Centro de seguridad de Microsoft 365     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
+|Centro de cumplimiento de Microsoft 365     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
+
 
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
 
@@ -100,7 +110,7 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
       </EdmSchema>
       ```
 
-4. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. Para cargar el esquema de la base de datos, ejecute, uno a la vez, los siguientes cmdlets:
 
@@ -133,7 +143,7 @@ Si quiere realizar cambios en el archivo **edm.xml**, como cambiar los campos qu
 
 1. Edite el archivo **edm.xml** (este es el archivo tratado en la sección  [Definir el esquema](#define-the-schema-for-your-database-of-sensitive-information)  de este artículo).
 
-2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. Para actualizar el esquema de la base de datos, ejecute, uno a la vez, los siguientes cmdlets:
 
@@ -162,7 +172,7 @@ Si quiere realizar cambios en el archivo **edm.xml**, como cambiar los campos qu
 
 (Según sea necesario) Si quiere quitar el esquema que está usando de la clasificación basada en EDM, siga estos pasos:
 
-1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 2. Ejecute los siguientes cmdlets de PowerShell y sustituya el nombre del almacén de datos "registrospacientes" por el que quiere quitar:
 
@@ -223,7 +233,7 @@ Si quiere realizar cambios en el archivo **edm.xml**, como cambiar los campos qu
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -290,7 +300,7 @@ Durante esta fase, configurará una cuenta de usuario y un grupo de seguridad pe
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configuración de la cuenta de usuario y del grupo de seguridad personalizado
 
-1. Como administrador global, vaya al centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com/)) y [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) denominado  **EDM\_DataUploaders**.
+1. Como administrador global, vaya al centro de administración mediante el [vínculo apropiado para su suscripción](#portal-links-for-your-subscription) y  [cree un grupo de seguridad](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) llamado **EDM\_DataUploaders**.
 
 2. Agregue uno o más usuarios al grupo de seguridad **EDM\_DataUploaders** . (Estos usuarios administrarán la base de datos de información confidencial).
 
@@ -301,16 +311,25 @@ Durante esta fase, configurará una cuenta de usuario y un grupo de seguridad pe
 >[!NOTE]
 > Antes de comenzar este procedimiento, asegúrese de que es miembro del grupo de seguridad **EDM\_DataUploaders** y un administrador local en el equipo.
 
-1. Descargue e instale el [Agente de carga de EDM](https://go.microsoft.com/fwlink/?linkid=2088639). De forma predeterminada, la ubicación de la instalación debe ser  **C:\\Archivos de programa\\Microsoft\\EdmUploadAgent**.
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Vínculos al agente de carga de EDM por tipo de suscripción
 
-      > [!TIP]
-      > Para obtener una lista de los parámetros de comando compatibles, ejecute el agente sin argumentos. Por ejemplo, 'EdmUploadAgent.exe'.
+- [Comercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
 
-2. Para autorizar al agente de carga de EDM, abra el símbolo de Windows (como administrador) y ejecute el siguiente comando:
+1. Descargue e instale el [agente de carga del EDM adecuado](#links-to-edm-upload-agent-by-subscription-type) para la suscripción. De forma predeterminada, la ubicación de la instalación debe ser  **C:\\Archivos de programa\\Microsoft\\EdmUploadAgent**.
+
+> [!TIP]
+> Para obtener una lista de los parámetros de comando compatibles, ejecute el agente sin argumentos. Por ejemplo, 'EdmUploadAgent.exe'.
+
+> [!NOTE]
+> Puede cargar los datos con EDMUploadAgent en cualquier almacén de datos determinado dos veces al día.
+
+2. Para autorizar al agente de carga de EDM, abra el símbolo de sistema de Windows (como administrador) y ejecute el siguiente comando:
 
     `EdmUploadAgent.exe /Authorize`
 
-3. Inicie con su cuenta profesional o educativa de Office 365.
+3. Inicie sesión con su cuenta profesional o educativa de Office 365 que se ha agregado al grupo de seguridad EDM_DataUploaders.
 
 El siguiente paso es usar el agente de carga de EDM para indexar los datos confidenciales y luego cargar los datos indizados.
 
@@ -342,11 +361,15 @@ Por ejemplo:
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-Para comprobar que se han cargado los datos confidenciales, ejecute el siguiente comando en el Símbolo del sistema de Windows:
+Para comprobar que se han cargado los datos confidenciales, ejecute el siguiente comando en el símbolo de sistema de Windows:
 
 `EdmUploadAgent.exe /GetDataStore`
 
 Verá una lista de almacenes de datos y la última vez que se actualizaron.
+
+Si desea ver todos los datos cargados en una determinada tienda, ejecute el comando siguiente en un símbolo del sistema de Windows:
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
 Continúe con el proceso de configuración y programación para  [Actualizar la base de datos de información confidencial](#refreshing-your-sensitive-information-database).
 
@@ -459,7 +482,7 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Para crear una directiva DLP con EDM
 
-1. Vaya al Centro de seguridad y cumplimiento ([https://protection.office.com](https://protection.office.com/)).
+1. Vaya al Centro de seguridad y cumplimiento con el [vínculo adecuado para su suscripción](#portal-links-for-your-subscription).
 
 2. Haga clic en **Prevención de pérdida de datos** \> **Directiva**.
 
@@ -497,12 +520,9 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-
-[Tipos de información confidencial personalizados](custom-sensitive-info-types.md)
-
-[Información general de directivas DLP](data-loss-prevention-policies.md)
-
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
+- [Tipos de información confidencial personalizados](custom-sensitive-info-types.md)
+- [Información general de directivas DLP](data-loss-prevention-policies.md)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).

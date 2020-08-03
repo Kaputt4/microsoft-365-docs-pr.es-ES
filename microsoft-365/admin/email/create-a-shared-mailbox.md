@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780270"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529640"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -159,6 +159,9 @@ Puede obtener acceso a un buzón compartido en un dispositivo móvil de dos mane
 - Abra su navegador, inicie sesión y vaya a Outlook en la Web. Desde Outlook en la Web, podrá acceder al buzón compartido.
 
     Para obtener instrucciones, vea <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Agregar un buzón compartido en Outlook en la Web</a>.
+    
+> [!NOTE]
+> El buzón compartido solo se puede agregar a la aplicación de Outlook para iOS o la aplicación móvil de Outlook para Android
 
 ## <a name="use-the-shared-calendar"></a>Usar el calendario compartido.
 

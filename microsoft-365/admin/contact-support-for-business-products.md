@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Obtenga soporte técnico y de facturación llamando a los números de teléfono de la lista para su país o región, enviando una solicitud de servicio en línea o contactando una tienda de Microsoft que le brinde soporte virtual.
+description: Obtenga asistencia técnica y de facturación utilizando los números de teléfono que figuran para su país o región, o enviando su solicitud de servicio en línea.
 feedback_system: None
-ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
+ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506314"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46536865"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Formas de contactar al soporte técnico para productos empresariales: ayuda para administradores
 
@@ -70,11 +70,6 @@ Si no encuentra su número de teléfono de soporte en la lista anterior, use el 
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-## <a name="virtual-support-from-the-microsoft-store"></a>Soporte virtual desde Microsoft Store
-
-Puede ponerse en contacto con el soporte al cliente y ventas de Microsoft Store para hablar con un experto de Answer Desk que le ayudará a resolver los problemas de Microsoft 365.
-
-Vaya a la página [Ponerse en contacto con el soporte de Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) para obtener vínculos de ayuda rápida y números de teléfono.
 
 ::: moniker-end
 
