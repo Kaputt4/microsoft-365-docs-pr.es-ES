@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector de datos para importar y archivar los datos de la herramienta instantánea de chat de Bloomberg en Microsoft 365.
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936563"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552510"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurar un conector para archivar datos de Instant Bloomberg
 
@@ -120,7 +120,7 @@ El último paso es crear un conector de Bloomberg instantáneo en el centro de c
 5. En la página **asignación de usuarios** , habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
 
    > [!NOTE]
-   > El conector importa los elementos de mensaje de chat al buzón de un usuario específico. Se creará una nueva carpeta llamada **InstantBloomberg** en el buzón de correo del usuario específico y se importarán los elementos en ella. El conector usa el valor de la propiedad *CorporateEmailAddress* . Todos los mensajes de chat contienen esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación de asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID del usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de chat, no se importará el elemento.
+   > El conector importa los elementos de mensaje de chat al buzón de un usuario específico. Se creará una nueva carpeta llamada **InstantBloomberg** en el buzón de correo del usuario específico y se importarán los elementos en ella. El conector usa el valor de la propiedad *CorporateEmailAddress* . Todos los mensajes de chat contienen esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress* , también puede definir una asignación personalizada mediante la carga de un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección de buzón de correo de Microsoft 365 correspondiente a cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID del usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de chat, no se importará el elemento.
 
 6. Haga clic en **siguiente**, revise la configuración y, a continuación, haga clic en **preparar** para crear el conector.
 
