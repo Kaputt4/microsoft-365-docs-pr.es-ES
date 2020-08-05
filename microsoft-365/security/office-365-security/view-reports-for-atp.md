@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434100"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560302"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -31,7 +31,7 @@ Las organizaciones de protección contra amenazas avanzada (ATP) de Office 365 (
 
 ![Panel informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>Informe de tipos de archivo de protección contra amenazas avanzada
+## <a name="advanced-threat-protection-file-types-report"></a>Informe de tipos de archivos de Protección contra amenazas avanzada
 
 El informe de **tipos de archivo de protección contra amenazas avanzada** muestra el tipo de archivos que los [datos adjuntos seguros de ATP](atp-safe-attachments.md)han detectado como malintencionados.
 
@@ -115,7 +115,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="advanced-threat-protection-message-disposition-report"></a>Informe de disposición de mensajes de protección contra amenazas avanzada
+## <a name="advanced-threat-protection-message-disposition-report"></a>Informe de eliminación de mensajes de Protección contra amenazas avanzada
 
 El informe de **disposición de mensajes de ATP** muestra las acciones que se tomaron para los mensajes de correo electrónico que se detectaron con contenido malintencionado.
 
@@ -218,7 +218,7 @@ El informe de **protección contra amenazas de direcciones URL** tiene dos vista
 
 - **Hacer clic en dirección URL acción de protección**: muestra el número de clics de direcciones URL por parte de los usuarios de la organización y los resultados del clic:
 
-  - **Bloqueado**
+  - **Bloqueado** (se ha bloqueado al usuario para que navegue a la dirección URL)
   - **Bloqueado y clic en**
   - **Clic durante el examen**
 
@@ -227,7 +227,7 @@ El informe de **protección contra amenazas de direcciones URL** tiene dos vista
   Si hace clic en **filtros**, puede modificar el informe con los siguientes filtros:
 
   - **Fecha de inicio** y **fecha de finalización**
-  - Las acciones de clic en protección disponibles, además del valor **permitido** para ver información de todos los clics de direcciones URL (no solo los clics).
+  - Las acciones de clic en protección disponibles, más el valor **permitido** (el usuario tuvo permiso para navegar a la dirección URL).
 
   ![Vista de dirección URL haga clic en acción de protección en el informe de protección contra amenazas URL](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -254,7 +254,7 @@ Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi
 - **Haga clic en hora**
 - **User**
 - **URL**
-- **Action**
+- **Acción**
 - **App**
 
 Si hace clic en **filtros** en la vista de tabla de detalles, puede filtrar por los mismos criterios que en la vista de informe y también por **dominios** o **destinatarios** separados por comas.

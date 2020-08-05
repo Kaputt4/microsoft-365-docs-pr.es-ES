@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f7357c204105772ef1780ef94f211e9d711ec735
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516916"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560888"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general del centro de seguridad de Microsoft 365
 
@@ -29,7 +29,9 @@ Escriba Microsoft 365 Security Center (el nuevo hogar para la supervisión y la 
 
 El nuevo centro de seguridad 365 de Microsoft y el [centro de cumplimiento de microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) son áreas de trabajo especializadas diseñadas para satisfacer las necesidades de los equipos de seguridad y los equipos de cumplimiento. Estas soluciones se integran en los servicios de Microsoft 365 y proporcionan información útil para ayudar a reducir los riesgos y proteger su información digital.
 
-Visite el centro de seguridad 365 de [https://security.microsoft.com](https://security.microsoft.com)Microsoft en. 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BmvV]
+
+Visite el centro de seguridad 365 de Microsoft en [https://security.microsoft.com](https://security.microsoft.com) . 
 
 > [!NOTE]
 > Debe tener asignado un rol adecuado, como administrador global, administrador de seguridad, operador de seguridad o lector de seguridad en Azure Active Directory para tener acceso al centro de seguridad 365 de Microsoft.

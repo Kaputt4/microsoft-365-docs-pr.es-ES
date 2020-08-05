@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049933"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560900"
 ---
 # <a name="microsoft-threat-protection"></a>Protección contra amenazas de Microsoft
 
@@ -50,11 +50,13 @@ Con la solución integrada de protección contra amenazas de Microsoft, los prof
 >Consulte esta [Guía interactiva de Microsoft Threat Protection](https://aka.ms/MTP-Interactive-Guide).
 
 
-Microsoft Threat Protection Suite protege: 
+La suite MTP protege: 
 - **Extremos con Microsoft defender ATP** -Microsoft defender ATP es una plataforma de punto de conexión unificada para la protección preventiva, la detección tras infracción, la investigación automatizada y la respuesta. 
 - **Correo electrónico y colaboración con office 365 ATP** -Office 365 ATP protege a su organización frente a amenazas malintencionadas que plantean mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. 
 - **Identidades con Azure ATP y Azure ad Identity Protection** -Azure ATP usa señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones de Insider malintencionadas dirigidas a la organización. 
 - **Aplicaciones con Microsoft Cloud App Security** : Microsoft Cloud App Security es una solución completa de SaaS cruzadas que ofrece visibilidad profunda, controles de datos seguros y una mejor protección contra amenazas para las aplicaciones en la nube. 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 La única capa de productos cruzados de Microsoft Threat Protection aumenta los componentes de conjunto de programas individuales a:
 - Ayudar a proteger contra ataques y coordinar respuestas defensivas en la serie a través del uso compartido de señales y acciones automatizadas

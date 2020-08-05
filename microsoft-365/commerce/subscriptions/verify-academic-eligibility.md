@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela para el precio de Microsoft 365 Education Academic.
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205011"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560708"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la idoneidad académica para las suscripciones de Microsoft 365 Education
 
@@ -44,7 +45,7 @@ Si no está seguro de si tiene una suscripción de prueba de Microsoft 365 Educa
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Comprobar la idoneidad académica de la escuela
 
-En la mayoría de los casos, al registrarse para obtener una prueba gratuita y completar el Asistente para comprobación de idoneidad para proporcionar el dominio del centro educativo, recibirá una aprobación inmediata o una denegación de la elegibilidad de la escuela. En algunos casos, es necesario más información para completar una revisión de elegibilidad manual. Esta revisión puede tardar hasta 10 días laborables. Después de revisar la información de elegibilidad de su centro educativo, le enviaremos un correo electrónico que le notifique el estado de su escuela.
+En la mayoría de los casos, al registrarse para obtener una prueba gratuita y completar el Asistente para comprobación de idoneidad para proporcionar el dominio del centro educativo, recibirá una aprobación inmediata o una denegación de la elegibilidad de la escuela. En algunos casos, se necesita más información para completar una revisión de elegibilidad manual y se llegará al usuario con un cuestionario para completarse. Esta revisión puede tardar hasta 10 días laborables. Después de revisar la información de elegibilidad de su centro educativo, le enviaremos un correo electrónico que le notifique el estado de su escuela.
 
 Puede cerrar el Asistente para la verificación académica antes de escribir un dominio y empezar a usar la suscripción de prueba inmediatamente. Sin embargo, no puede optar a precios académicos hasta que complete el proceso de verificación. Debe completar el proceso antes de que finalice la versión de prueba gratuita para convertirlo en una suscripción de pago y continuar con su uso. Esto también se aplica al convertir a la suscripción gratuita a1.
 
@@ -92,7 +93,7 @@ Si su centro educativo no se califica como institución académica cualificada d
 
 Si tiene preguntas sobre la decisión de elegibilidad de la escuela, [póngase en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener información sobre cómo implementar Microsoft 365 para su centro educativo, visite [los recursos y la documentación de microsoft 365 Education](https://docs.microsoft.com/microsoft-365/education/deploy/). A continuación, puede [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md). Si es necesario, también puede [comprar más licencias para la suscripción](../licenses/buy-licenses.md).
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios como el correo electrónico y Skype empresarial online usen su propio nombre de dominio.
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399997"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560346"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios
 
@@ -162,15 +162,14 @@ Por ejemplo, aquí se indican algunos pasos adicionales que podrían ser necesar
 
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
-3. En la página Dominios, seleccione un dominio.
+2. En la página **dominios** , seleccione el dominio y, después, haga clic en **registros DNS**.
 
-4. En **configuración DNS**, seleccione **registros personalizados**y, a continuación, seleccione **nuevo registro personalizado**.
+3. En **configuración DNS**, seleccione **registros personalizados**y, a continuación, seleccione **nuevo registro personalizado**.
 
-5. Seleccione el tipo de registro DNS que desea agregar y escriba la información para el nuevo registro.
+4. Seleccione el tipo de registro DNS que desea agregar y escriba la información para el nuevo registro.
 
-6. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. El correo electrónico y otros servicios de Microsoft estarán todos establecidos para funcionar con su dominio. 
   
-

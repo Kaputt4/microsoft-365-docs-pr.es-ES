@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo instalar y usar el complemento de notificación de correo no deseado de Microsoft para informar a Microsoft de mensajes de correo no deseado, de correo no deseado o de suplantación de identidad.
-ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208832"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560526"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook
 
@@ -63,7 +63,12 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
    ![Cuadro de diálogo Notificar como phishing](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Los mensajes seleccionados se envían a Microsoft para su análisis y se mueven a la carpeta de correo no deseado. Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
+3. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
+
+   - Se ha movido a la carpeta de correo no deseado si se ha notificado como correo no deseado.
+   - Se elimina si se notificó como suplantación de identidad (phishing).
+   
+   Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Use el complemento de notificación de correo no deseado para informar de mensajes de suplantación de identidad y de correo no deseado de la carpeta correo no deseado
 
@@ -87,7 +92,12 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
    ![Cuadro de diálogo Notificar como phishing](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Los mensajes seleccionados se envían a Microsoft para su análisis y se mueven a la carpeta de correo no deseado. Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
+3. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
+
+   - Se ha movido a la carpeta de correo no deseado si se ha notificado como correo no deseado.
+   - Se elimina si se notificó como suplantación de identidad (phishing).
+
+   Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>Instalar el complemento de notificación de correo no deseado
 
@@ -96,7 +106,6 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 - Vaya a <https://www.microsoft.com/download/details.aspx?id=18275> y descargue el archivo. msi adecuado para su versión de Office en una ubicación que sea fácil de encontrar:
 
   - **32 bits**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64 bits**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Para Outlook 2013 o versiones posteriores, el único requisito previo es Microsoft .NET Framework 2,0. En Windows 10, no se instala .NET Framework 2,0 desde una descarga.
@@ -209,7 +218,7 @@ Después de cerrar Outlook, use cualquiera de los siguientes procedimientos para
 
   En el cuadro de diálogo que aparece, seleccione **quitar el complemento de notificación de correo no deseado de Microsoft para Outlook** y, a continuación, haga clic en **siguiente**.
 
-- **Modo silencioso**: busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema, reemplace \< PathToFile \> por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
+- **Modo silencioso**: busque o descargue el archivo. msi correspondiente. En una ventana del símbolo del sistema, reemplace \<PathToFile\> por la ubicación del archivo. msi y ejecute uno de los siguientes comandos:
 
   - **32 bits**:
 
@@ -288,7 +297,7 @@ Para otros métodos que puede usar para enviar mensajes a Microsoft, consulte [i
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problema: los usuarios seleccionaron no recibir un mensaje de confirmación cuando notifican mensajes y ahora quieren que vuelvan a aparecer la pregunta
 
-1. Cree la `ConfirmReportJunk` clave del registro wih el valor "true":
+1. Cree la `ConfirmReportJunk` clave del registro con el valor "true":
 
    ```text
    Windows Registry Editor Version 5.00

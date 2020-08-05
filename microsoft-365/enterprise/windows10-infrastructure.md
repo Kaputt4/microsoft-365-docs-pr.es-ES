@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011928"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552691"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -56,7 +56,7 @@ Puede obtener más información sobre Windows 10 con estos artículos:
 ## <a name="additional-services-and-features"></a>Servicios y características adicionales
 Como parte de la implementación de Windows 10 Enterprise, puede agregar estos servicios y características adicionales.
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>Análisis de escritorio
 
 Windows usa datos de diagnóstico para proporcionar información enriquecida y que requiere acción para ayudarle a obtener información detallada sobre la eficacia operativa y el estado de los dispositivos con Windows 10 en su entorno.
 
@@ -64,7 +64,7 @@ Windows usa datos de diagnóstico para proporcionar información enriquecida y q
 * Cumplimiento de la actualización: el cumplimiento de la actualización se dirige al administrador de ti que desea obtener una vista holística de todos sus dispositivos con Windows 10, sin requisitos de infraestructura adicionales.
 * Estado del dispositivo: puede usar el estado del dispositivo para detectar y corregir de forma proactiva los problemas de impacto del usuario final.
 
-Consulte [información general de Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) para obtener más información.
+Consulte [información general de análisis de escritorio](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) para obtener más información.
 
 ### <a name="windows-security"></a>Seguridad de Windows
 

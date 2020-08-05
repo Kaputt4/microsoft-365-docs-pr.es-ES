@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430368"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552667"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -57,5 +57,7 @@ Sabrá que tiene características de vista previa activadas cuando vea que está
 ## <a name="preview-features"></a>Versión preliminar de las características
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
-- **[Referencia de esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : información sobre las tablas de esquema disponibles directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
+- **[Emprender acciones en la búsqueda avanzada](advanced-hunting-take-action.md)** : contención de las amenazas o informarte de los activos comprometidos en [la búsqueda avanzada.](advanced-hunting-overview.md)
+
+- **[Referencia del esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta práctica referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
 

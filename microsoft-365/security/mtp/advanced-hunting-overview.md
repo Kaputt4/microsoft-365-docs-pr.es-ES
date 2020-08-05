@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138283"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552439"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -33,8 +33,11 @@ ms.locfileid: "45138283"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar. Puede inspeccionar eventos de forma proactiva en su red para localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
+<p></p>
 
-Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para comprobar varios eventos y Estados del sistema, así como para responder a ellos, lo que incluye la actividad de infracciones y los equipos mal configurados.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+
+Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar diversos eventos y estados del sistema, como actividades de vulneración sospechosas y equipos mal configurados, y responder a ellos.
 
 En el centro de seguridad de Microsoft 365, la búsqueda avanzada admite consultas que buscan datos de varias áreas de trabajo, incluidos datos sobre dispositivos, correos electrónicos, aplicaciones e identidades de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
 
@@ -45,7 +48,7 @@ Le recomendamos que siga los pasos siguientes para empezar a trabajar rápidamen
 | Objetivo de aprendizaje | Descripción | Recurso |
 |--|--|--|
 | **Conozca el idioma** | La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](https://docs.microsoft.com/azure/kusto/query/)y admite la misma sintaxis y operadores. Empiece a aprender el lenguaje de consulta mediante la ejecución de la primera consulta. | [Introducción al lenguaje de consulta](advanced-hunting-query-language.md) |
-| **Obtener información sobre cómo usar los resultados de la consulta** | Obtenga información sobre los gráficos y las distintas formas en que puede ver o exportar los resultados. Descubra cómo puede ajustar rápidamente las consultas y profundizar para obtener información más completa. | [Trabajar con resultados de consulta](advanced-hunting-query-results.md) |
+| **Obtener información sobre cómo usar los resultados de la consulta** | Obtenga información sobre los gráficos y las distintas formas en que puede ver o exportar los resultados. Explore cómo puede ajustar rápidamente las consultas, profundizar para obtener información más enriquecida y tomar medidas de respuesta. | - [Trabajar con los resultados de la consulta](advanced-hunting-query-results.md)<br>- [Realizar acciones en los resultados de la consulta](advanced-hunting-take-action.md) |
 | **Entender el esquema** | Obtenga una visión adecuada y de alto nivel de las tablas en el esquema y sus columnas. Esto le ayudará a determinar dónde buscar datos y cómo crear las consultas. | [Referencia del esquema](advanced-hunting-schema-tables.md) |
 | **Aprovechar consultas predefinidas** | Explore colecciones de consultas predefinidas que cubren diferentes escenarios de búsqueda de amenazas. | - [Usar consultas compartidas](advanced-hunting-shared-queries.md)<br>- [Ir a la búsqueda](advanced-hunting-go-hunt.md) |
 | **Optimizar las consultas** | Obtenga información acerca de cómo crear consultas eficientes y consultas que combinan datos de mensajes de correo electrónico y dispositivos. | - [Procedimientos recomendados de consulta](advanced-hunting-shared-queries.md) <br>- [Búsqueda en dispositivos y correos electrónicos](advanced-hunting-best-practices.md) |
@@ -63,6 +66,7 @@ Los datos de búsqueda avanzada pueden clasificarse en dos tipos distintos, cada
 ## <a name="related-topics"></a>Temas relacionados
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
+- [Realizar acciones en los resultados de la consulta](advanced-hunting-take-action.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

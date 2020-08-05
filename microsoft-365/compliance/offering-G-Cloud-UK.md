@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773771"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560777"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Reino Unido Government-Cloud (G-Cloud)
 
@@ -37,7 +37,7 @@ Cada año, Microsoft prepara la documentación y envía pruebas para atestiguar 
 
 La cita de los servicios Microsoft en el mercado digital implica que los socios y agencias del gobierno de Reino Unido pueden usar los servicios de ámbito para almacenar y procesar datos gubernamentales oficiales de Reino Unido, la mayoría de los datos gubernamentales. Además, actualmente hay más de 450 asociados de Microsoft incluidos en G-Cloud que son revendedores de servicios en la nube de Microsoft. Pueden afirmar directamente el cumplimiento de los servicios en el ámbito con los 14 principios en sus propias aplicaciones. Sin embargo, los clientes y socios tendrán que cumplir su propio cumplimiento para todos los componentes que no se incluyan en la atestación y la determinación del cumplimiento de los servicios en la nube de Microsoft.
 
-Obtenga información sobre cómo acelerar la implementación de United Kingdom G-Cloud V6 con nuestro proyecto de Azure Security and Compliance: [descargar la guía de implementación de Microsoft Blueprint uk G-Cloud Principle](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 Cloud Security Controls for uk Cloud Using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) proporciona estrategias de clientes para transferir sus servicios a Azure y ayudar a cumplir sus obligaciones del Reino Unido impuestas por el CESG/NSCs. Las notas del producto proporcionan información sobre cómo Azure se puede usar para ayudar a abordar los 14 controles descritos en las entidades de seguridad de la nube y describe cómo los clientes pueden avanzar más rápido y lograr más a la vez que ahorran dinero mientras adoptan los servicios de Microsoft Azure.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
 

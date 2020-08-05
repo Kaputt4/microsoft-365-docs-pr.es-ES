@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar a un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844863"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560392"
 ---
-# <a name="remove-a-former-employee"></a>Quitar un antiguo empleado
+# <a name="remove-or-delete-a-former-employee"></a>Quitar o eliminar un antiguo empleado
 
 ::: moniker range="o365-21vianet"
 
@@ -59,7 +59,7 @@ Para evitar que un empleado inicie sesión:
 
 3. Escriba una contraseña nueva y, a continuación, seleccione **restablecer**. (No lo envíe a ellos).
     
-4. Seleccione el nombre del usuario para ir a su panel de propiedades y, en la pestaña **OneDrive** , seleccione **iniciar cierre de sesión**.
+4. Seleccione el nombre del usuario para ir a su panel de propiedades y, en la pestaña **cuenta** , seleccione **iniciar cierre de sesión**.
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Para evitar que un empleado inicie sesión:
 
 3. Escriba una contraseña nueva y, a continuación, seleccione **restablecer**. (No lo envíe a ellos).
 
-4. Vuelva a seleccionar el usuario, expanda **configuración de OneDrive**y, a continuación, seleccione **iniciar** junto a **Cerrar sesión**.
+4. Seleccione el nombre del usuario para ir a su panel de propiedades y, en la pestaña **cuenta** , seleccione **iniciar cierre de sesión**.
 
 ::: moniker-end
 
@@ -83,9 +83,12 @@ Para evitar que un empleado inicie sesión:
 
 3. Escriba una contraseña nueva y, a continuación, seleccione **restablecer**. (No lo envíe a ellos).
 
-4. Vuelva a seleccionar el usuario, expanda **configuración de OneDrive**y, a continuación, seleccione **iniciar** junto a **Cerrar sesión**.
+4. Seleccione el nombre del usuario para ir a su panel de propiedades y, en la pestaña **cuenta** , seleccione **iniciar cierre de sesión**.
 
 ::: moniker-end
+
+> [!NOTE]
+> Debe ser un administrador global para iniciar el cierre de sesión.
 
     
 En una hora, o después de dejar la página actual de Microsoft 365 en la que se encuentra, se le pedirá que vuelva a iniciar sesión. (Un token de acceso es válido durante una hora, por lo que la escala de tiempo depende de la cantidad de tiempo que quede en ese token y de si se desplaza desde su página web actual).
@@ -217,7 +220,8 @@ Si su antiguo empleado tenía un teléfono de la organización, puede utilizar e
     
 6. Seleccione **Guardar**. 
     
-    **Sugerencia**: asegúrese de quitar o deshabilitar el usuario de su servicio de BlackBerry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario. 
+   > [!TIP]
+   > Asegúrese de quitar o deshabilitar al usuario del servicio BlackBerry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Impedir el acceso de un antiguo empleado a los datos de Microsoft 365
 <a name="bkmk_block"> </a>
@@ -343,6 +347,10 @@ Para obtener más información acerca de la administración de licencias de usua
 Al quitar una licencia de usuario de Office 365, el número de RTC asociado con este se liberará. Puede asignarlo a otro usuario.
   
 Si el usuario pertenece a un grupo de cola, ya no será un destino apto de los agentes de cola de llamadas. Por lo tanto, le recomendamos quitar también al usuario de los grupos asociados con la cola de llamadas. 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurar el desvío de llamadas para los usuarios de la organización
+
+Si necesita configurar el desvío de llamadas para el número de teléfono del empleado que ha finalizado, la configuración de desvío de llamadas en directivas de llamada puede configurar el desvío donde las llamadas entrantes se pueden desviar a otros usuarios o pueden llamar a otra persona al mismo tiempo. Para obtener más información, consulte [llamadas a directivas en Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
   
 ## <a name="delete-a-former-employees-user-account"></a>Eliminar la cuenta de usuario de un antiguo empleado
 <a name="bkmk_delete"> </a>

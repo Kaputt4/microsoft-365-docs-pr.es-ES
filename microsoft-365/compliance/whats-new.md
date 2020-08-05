@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199470"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560267"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -32,6 +32,98 @@ Estamos agregando de forma continuada nuevas características al [centro de cump
 > [!TIP]
 > ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
+
+## <a name="june-2020"></a>Junio de 2020
+
+### <a name="spotlight-new-data-connectors-hit-preview"></a>Spotlight: nueva vista previa de conectores de datos
+
+A partir de nuestra promesa de ayudarle a importar datos de más orígenes de terceros a Microsoft 365, nos complace anunciar la versión preliminar de dos conectores de datos más:
+
+- [Mensaje Bloomberg](archive-bloomberg-message-data.md). Importe y Archive los datos de correo electrónico de servicios financieros de la herramienta de colaboración de mensajes de Bloomberg. Una vez almacenados los datos en los buzones, puede tener acceso a los datos y usarlos en características de cumplimiento, como la retención por juicio, la búsqueda de contenido, el archivado local, la auditoría, el cumplimiento de comunicación y las directivas de retención.
+- [Chat de hielo](archive-icechat-data.md). Importe y Archive los datos de chat de servicios financieros de la herramienta de colaboración de chats de ICE. Una vez que los datos se almacenan en buzones, puede tener acceso a los datos y usarlos en características de cumplimiento, como retenciones por juicio, exhibición de documentos electrónicos, archivado, auditoría, cumplimiento de comunicación y directivas de retención.
+
+### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>Puntuación de cumplimiento & el administrador de cumplimiento: las visitas siguen llegando
+
+Las actualizaciones de junio incluyen una nueva vista de desglose de evaluación en la [puntuación de cumplimiento](compliance-score.md). Supervise el progreso del control, agregue, elimine evaluaciones directamente desde la puntuación de cumplimiento y mucho más.
+
+¿Desea estar al tanto de las actualizaciones de la puntuación de cumplimiento y del administrador de cumplimiento? Marque las [notas de versión de puntuación de cumplimiento](compliance-score-release-notes.md) y vuelva a consultar con frecuencia.
+
+## <a name="may-2020"></a>Mayo de 2020
+
+### <a name="spotlight-data-classification-is-officially-released"></a>Spotlight: la clasificación de datos se ha lanzado oficialmente
+
+La clasificación de datos, aka "[conoce sus datos](data-classification-overview.md)", características (análisis, explorador de contenido y explorador de actividades) se han graduado desde la fase de vista previa y están disponibles para todas las organizaciones. Los poderosos consejos y herramientas pueden ayudarle a descubrir y evaluar la forma en que se usan la información confidencial y las etiquetas (retención y confidencialidad) en el contenido de la organización. Revise el contenido que contiene información confidencial o tiene etiquetas aplicadas, explore la actividad de la etiqueta en las ubicaciones de Microsoft 365, cree tipos personalizados de información confidencial, etc.
+
+Realice un recorrido en vídeo...
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+### <a name="trainable-classifiers-a-fix-and-a-feature"></a>Clasificadores capacitados: una corrección y una característica
+
+Puede aportar más mejoras a los clasificadores que se pueden entrenar:
+
+- Una corrección basada en sus comentarios: al inicializar y entrenar un clasificador personalizado, ya no necesita escribir manualmente las direcciones URL del sitio de SharePoint y las rutas de la carpeta. Ahora puede elegir entre una lista de sitios y carpetas rellenados previamente.
+- Nueva característica: al crear una etiqueta de confidencialidad y configurar las opciones de etiquetación automática para las aplicaciones de Office, ahora puede aplicar automáticamente (o recomendar que los usuarios apliquen) la etiqueta al contenido que coincide con los clasificadores que se pueden entrenar. [Más información](apply-sensitivity-label-automatically.md#configuring-trainable-classifiers-for-a-label)
+
+### <a name="communication-compliance-yammer-support-is-here"></a>Cumplimiento de la comunicación: aquí está el soporte técnico de Yammer
+
+Las directivas de cumplimiento de comunicaciones admiten mensajes privados y conversaciones públicas de la comunidad en Yammer. Yammer es un canal opcional y debe estar en [modo nativo](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) para admitir el examen de mensajes y datos adjuntos.
+
+### <a name="data-loss-prevention-new-sharing-restriction"></a>Prevención de pérdida de datos: nueva restricción de uso compartido
+
+Al configurar una directiva DLP para proteger el contenido en SharePoint o en OneDrive, ahora puede configurar la acción "restringir el acceso al contenido" para bloquear a los usuarios a los que se les concedido acceso al contenido mediante la opción "[todos los usuarios con el vínculo](https://support.microsoft.com/office/share-files-outside-your-organization-with-anyone-links-53e91027-fb8e-4a6e-a3e4-5df4be32e38a)".
+
+### <a name="insider-risk-management-tailor-your-alert-volume"></a>Administración de riesgos de Insider: personalización del volumen de alertas
+
+Las actividades de usuario detectadas por las directivas de riesgo de Insider tienen asignada una puntuación de riesgo específica, que a su vez determina la gravedad de la alerta (baja, media, alta). De forma predeterminada, Microsoft 365 genera una determinada cantidad de alertas de gravedad baja, media y alta, pero con la nueva [configuración de volumen de alerta](insider-risk-management-settings.md#alert-volume), puede aumentar o disminuir el volumen según sus necesidades.
+
+### <a name="pst-import-new-region-supported"></a>Importación de PST: nueva región admitida
+
+La carga de red ya está disponible en los Emiratos Árabes Unidos.
+
+### <a name="sensitivity-labels-new-privacy-option"></a>Etiquetas de confidencialidad: nueva opción de privacidad
+
+Al configurar las [Opciones de sitio y grupo](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) de una etiqueta, ahora puede establecer la opción de privacidad en ninguno, permitir que el **usuario elija quién puede tener acceso al sitio**. Esto es útil cuando desea proteger el contenido en el contenedor usando una etiqueta de confidencialidad, pero sigue permitiendo que los usuarios configuren la configuración de privacidad.
+
+## <a name="april-2020"></a>Abril de 2020
+
+### <a name="records-management-overhauland-a-new-addition"></a>Administración de registros: revisión... y una nueva adición
+
+Abril incluye un par de actualizaciones clave para nuestra solución de administración de registros:
+
+- La sección "administración de registros" ya está completamente disponible en el centro de cumplimiento. Aproveche las ventajas de las interfaces de usuario y la funcionalidad actualizadas para el plan de archivos, las etiquetas de retención y las directivas de etiquetas, eventos y disposición.
+- Hablando de disposición, también se ha implementado una [prueba de la disposición](disposition.md#disposition-of-records) para los registros de SharePoint y OneDrive. Ahora puede ver una lista de elementos en aquellas ubicaciones que se han eliminado automáticamente o después de una revisión de disposición.
+
+:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Sección Administración de registros en el centro de cumplimiento de Microsoft 365":::
+
+### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Etiquetas de confidencialidad: vista previa de directivas de etiquetado automático
+
+Con las directivas de etiquetado automático, ahora puede aplicar automáticamente las etiquetas de confidencialidad a los documentos de SharePoint y OneDrive que ya están guardados (también conocidos como datos en reposo) y correos electrónicos que ya se han enviado o recibido (también conocido como "correo electrónico en tránsito"). Debido a que la etiquetación se aplica a los servicios en lugar de a las aplicaciones, no tiene que preocuparse de qué aplicaciones tienen los usuarios y de la versión.
+
+Esta capacidad amplía la etiqueta del lado cliente existente que ya está incluida en la configuración de "etiquetado automático para aplicaciones de Office" cuando se crea una etiqueta de confidencialidad. Para familiarizarse con las diferencias y las ventajas de las opciones de etiquetado automático, consulte el [artículo actualizado](apply-sensitivity-label-automatically.md).
+
+## <a name="march-2020"></a>Marzo de 2020
+
+### <a name="introducing-advanced-audit"></a>Introducción a la auditoría avanzada
+
+La [auditoría avanzada de Microsoft 365](advanced-audit.md) presenta nuevas funciones de auditoría que pueden ayudar a su organización con investigaciones forenses y de cumplimiento. Los elementos destacados incluyen la retención a largo plazo de los registros de auditoría, las directivas de retención del registro de auditoría personalizado, la nueva acción de auditoría de buzón de *MailItemsAccessed* y la introducción de un nuevo límite de limitación a nivel de inquilino, que proporciona a su organización su propia cuota de ancho de banda completamente asignada para tener acceso a los datos de auditoría.
+
+### <a name="compliance-score--compliance-manager-preview-the-latest-enhancements"></a>Puntuación de cumplimiento & el administrador de cumplimiento: Obtenga una vista previa de las mejoras más recientes
+
+Las actualizaciones clave para esta versión preliminar incluyen:
+
+- Proceso simplificado para crear y modificar plantillas
+- Aviso y control de versiones para plantillas y acciones
+- Sincronización de acciones comunes entre grupos
+- Compatibilidad con idiomas ahora extendida a chino (simplificado), Chino (tradicional), Francés, alemán, Italiano, Japonés, Coreano, Portugués (Brasil), Ruso y español
+
+Obtenga más información sobre la [puntuación de cumplimiento](compliance-score.md) y el [Administrador de cumplimiento](compliance-manager-overview.md)
+
+### <a name="sensitivity-labels-support-for-labeling-office-files-in-sharepoint-and-onedrive-preview"></a>Etiquetas de confidencialidad: compatibilidad con la etiqueta de archivos de Office en SharePoint y OneDrive (versión preliminar)
+
+La habilitación de la vista previa permite a los usuarios aplicar etiquetas de confidencialidad en Office en la Web. Podrán ver el botón de **confidencialidad** en la cinta y el nombre de etiqueta aplicado en la barra de estado. Además, si usan aplicaciones de escritorio para etiquetar y, a continuación, guardan sus archivos en SharePoint o OneDrive, Microsoft 365 ahora podrá procesar el contenido de estos archivos si se ha aplicado la configuración de cifrado a la etiqueta. En estas circunstancias también se admitirá la coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda y otras características de colaboración.
+
+[Obtener información sobre cómo habilitar la vista previa](sensitivity-labels-sharepoint-onedrive-files.md)
 
 ## <a name="february-2020"></a>Febrero de 2020
 
@@ -143,7 +235,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Descripción**|**Más información**|
+|**Nueva solución**|**Description**|**Más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -169,9 +261,9 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
 |Prevención de pérdida de datos|Prevención de pérdida de datos <br/> https://protection.office.com/datalossprevention |Prevención de pérdida de datos <br/> https://compliance.microsoft.com/datalossprevention |[Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)|
-|Solicitudes de los interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de los interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Solicitudes de interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|exhibición de documentos electrónicos > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > núcleo <br/> https://compliance.microsoft.com/classicediscovery |[Administrar casos de eDiscovery](ediscovery-cases.md) |
-|Eventos|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
+|Events|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
 |Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Use el plan de archivos para administrar las etiquetas de retención](file-plan-manager.md)|
 |Importar archivos PST|Gobierno de información > archivos PST de importación <br/> https://protection.office.com/importV2 |Ficha importar > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Información general sobre la importación de archivos PST de su organización](importing-pst-files-to-office-365.md)|
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|

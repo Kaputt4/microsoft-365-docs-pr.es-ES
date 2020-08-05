@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando mosaicos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780138"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552499"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -45,7 +45,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 
-1. En el centro de administración, vaya a **configuración de**la  >  **Org Settings** organización y elija la pestaña Perfil de la **organización** .
+1. Inicie sesión en el centro de administración como administrador global, vaya a **configuración**  >  **de**la organización y elija la pestaña Perfil de la **organización** .
     
 2. En la pestaña Perfil de la **organización** , elija **ventanas del iniciador de aplicaciones personalizadas**.
   
@@ -91,4 +91,3 @@ Para eliminar un icono personalizado, en la ventana **mosaicos personalizados** 
 
 Además de agregar mosaicos al iniciador de aplicaciones, puede Agregar mosaicos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar la apariencia de Microsoft 365 de manera que se ajuste a la marca de su organización, vea [customize the Microsoft 365 Theme](../setup/customize-your-organization-theme.md).
   
-
