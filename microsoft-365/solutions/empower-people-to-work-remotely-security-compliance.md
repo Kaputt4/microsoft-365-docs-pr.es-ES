@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: Use los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores remotos.
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521510"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560468"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Paso 3: implementar seguridad y cumplimiento para trabajadores remotos
 
@@ -70,7 +70,7 @@ Cumpla los requisitos reglamentarios o las directivas internas con estas caracte
 | Administrador de cumplimiento | Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft. | Microsoft 365 E3 o E5 |
 | Puntuación de cumplimiento (versión preliminar) | Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365. | Microsoft 365 E3 o E5 |
 | Cumplimiento de la comunicación  | Detectar, capturar y llevar a cabo acciones correctivas para los mensajes no adecuados de su organización. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
-| Administración de riesgos de Insider |  Detecte, investigue y actúe en actividades malintencionadas e involuntarias de su organización. Microsoft 365 puede detectar estos tipos de actividades incluso cuando un trabajador usa un dispositivo no supervisado. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
+| Administración de riesgos de Insider |  Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider |
 ||||
 
 Para obtener más información, consulte [Las 12 tareas principales de los equipos de seguridad para dar soporte al trabajo desde casa](../security/top-security-tasks-for-remote-work.md).

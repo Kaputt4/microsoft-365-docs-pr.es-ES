@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los documentos y correos electrónicos de su organización.'
-ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200032"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560515"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -89,13 +89,19 @@ Hasta que publique las etiquetas, no estarán disponibles para seleccionarlas en
 
 La configuración adicional de las etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
-Use el parámetro *LocaleSettings* para las implementaciones multinacionales para que los usuarios vean el nombre de la etiqueta y la información sobre herramientas en su idioma local. Consulte la siguiente sección para un ejemplo de configuración. 
+Por ejemplo:
 
-Con este cmdlet, también puede especificar [ opciones avanzadas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) para el cliente de etiquetado unificado de Azure Information Protection. Estas opciones avanzadas incluyen establecer un color de etiqueta y aplicar una propiedad personalizada cuando se aplica una etiqueta. Para obtener la lista completa, consulte [ Configuración avanzada disponible para las directivas de etiqueta ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+- Use el parámetro *LocaleSettings* para las implementaciones multinacionales para que los usuarios vean el nombre de la etiqueta y la información sobre herramientas en su idioma local. En la [siguiente sección](#example-configuration-to-configure-a-sensitivity-label-for-different-languages), se muestra una configuración de ejemplo que especifica el nombre de la etiqueta y el texto de información sobre herramientas para francés, italiano y alemán.
+
+- Use el parámetro *ApplyContentMarkingFooterFontName* para especificar la fuente que desee para el pie de página especificado. Calibri es la fuente predeterminada para los encabezados, los pies de página y el texto de la marca de agua. Si el nombre de fuente alternativo no está disponible para el servicio o dispositivo que muestra las etiquetas, la fuente vuelve a ser Calibri.
+
+- Use el parámetro *ApplyContentMarkingHeaderFontColor* para especificar el color que quiera usar para el encabezado especificado, con un código de color triplo hexadecimal para los componentes rojos, verdes y azules (RGB). Por ejemplo, #40e0d0 es el valor hexadecimal RGB para el turquesa. Encontrará estos códigos en muchas aplicaciones que le permiten modificar imágenes. Por ejemplo, Microsoft Paint le permite elegir un color personalizado de una paleta y los valores de RGB se muestran de forma automática, los que puede copiar luego.
+
+Solo en el caso del cliente de etiquetado unificado de Azure Information Protection, también puede especificar [configuración avanzada](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluya la configuración de un color de etiqueta, y aplicar una propiedad personalizada cuando se aplique una etiqueta. Para obtener la lista completa, consulte [Configuración avanzada disponible para las etiquetas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) de la guía de administrador de este cliente.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Ejemplo de configuración para configurar una etiqueta de confidencialidad para diferentes idiomas
 
-En el ejemplo siguiente se muestra la configuración de PowerShell para una etiqueta denominada "Public" con texto de marcador de posición para la información sobre herramientas. En este ejemplo, el nombre de etiqueta y el texto de información sobre herramientas se configura para francés, italiano y alemán.
+En el ejemplo siguiente se muestra la configuración de PowerShell para una etiqueta denominada "Public" con texto de marcador de posición para la información sobre herramientas. En este ejemplo, el nombre de etiqueta y el texto de información sobre herramientas se configuran para francés, italiano y alemán.
 
 Como resultado de esta configuración, los usuarios que tienen aplicaciones de Office que usan estos idiomas de pantalla ven los nombres de etiqueta y la información sobre herramientas en el mismo idioma. De forma similar, si tiene el cliente de etiquetado Azure Information Protection instalado para etiquetar archivos del explorador de archivos, los usuarios que tengan esas versiones de idioma en Windows podrán ver los nombres de las etiquetas y la información sobre herramientas en su idioma local cuando usen el botón derecho en acciones para etiquetar.
 
@@ -172,11 +178,22 @@ Los usuarios ven las etiquetas nuevas en sus aplicaciones de Office en una hora.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 
-La configuración adicional de las directivas de etiquetas está disponible con el cmdlet de [ Set-Label ](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) desde [ PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+La configuración adicional de las directivas de etiquetas está disponible con el cmdlet [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) desde [Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
-Con este cmdlet, puede especificar [ opciones avanzadas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) para el cliente de etiquetado unificado de Azure Information Protection. Entre estas opciones avanzadas, se incluye la configuración de una etiqueta predeterminada diferente para Outlook y la implementación de mensajes emergentes en Outlook que avisen, justifiquen o bloqueen los correos electrónicos que se envíen. Para obtener la lista completa, consulte [ Configuración avanzada disponible para las etiquetas ](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
+Solo para el cliente de etiquetado unificado de Azure Information Protection, puede especificar [configuración avanzada](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluya la configuración de una etiqueta predeterminada diferente para Outlook y la implementación de mensajes emergentes en Outlook para advertir, justificar o bloquear el envío de correos electrónicos. Para obtener la lista completa, consulte [Configuración avanzada disponible para las directivas de etiquetas](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) de la guía de administrador de este cliente.
 
-También puede usar este cmdlet para agregar o quitar etiquetas a una directiva de etiquetas, o hacerlo desde la misma.
+## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Usar PowerShell para etiquetas de confidencialidad y sus directivas
+
+Ahora, puede usar el [Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) para crear y configurar todas las opciones de configuración que vea en el centro de administración de etiquetas. Esto significa que, además de usar PowerShell para las opciones de configuración que no están disponibles en los centros de administración de etiquetas, ahora puede crear una secuencia de comandos completa para crear y mantener las etiquetas de sensibilidad y las directivas de etiquetas de confidencialidad. 
+
+Consulte la siguiente documentación para ver los parámetros y valores compatibles:
+
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+
+Asimismo, puede usar [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) y [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) si necesita crear una secuencia de comandos de eliminación de etiquetas de confidencialidad o directivas de etiquetas de confidencialidad. Sin embargo, antes de eliminar las etiquetas de sensibilidad, asegúrese de leer la sección siguiente.
 
 ## <a name="removing-and-deleting-labels"></a>Quitar y eliminar etiquetas
 
