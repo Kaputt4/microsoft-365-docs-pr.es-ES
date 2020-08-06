@@ -2,7 +2,7 @@
 title: Prácticas recomendadas para el uso compartido no autenticado
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 72da93a457b91ec7a25e88a0ac2aa8e64b6fe385
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: cea60152f06e8fbd242c9641b962bc9a96fdd019
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526939"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560480"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -46,6 +46,8 @@ Establezca una fecha de expiración de los vínculos para cualquiera
 4. Escriba un número de días en el cuadro y después haga clic en **Guardar**.
 
 Tenga en cuenta que una vez que el vínculo para *Cualquiera*expire, el archivo o la carpeta se podrá volver a compartir con un nuevo vínculo para *Cualquiera*.
+
+Puede establecer la caducidad de los vínculos de un sitio específico o OneDrive para *Cualquiera* con [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
 
 ## <a name="set-link-permissions"></a>Establezca permisos de vínculos
 

@@ -20,12 +20,12 @@ description: Use etiquetas de confidencialidad del marco de Microsoft Informatio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552702"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564051"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -39,9 +39,12 @@ Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en l
 
 ![Etiqueta de sensibilidad en la barra de herramientas de Excel y en la barra de estado](../media/Sensitivity-label-in-Excel.png)
 
-Las etiquetas de confidencialidad sólo se admiten para los espacios empresariales en la nube global (pública). Actualmente, las etiquetas de compatibilidad no son compatibles con los espacios empresariales de otras nubes, como las[nubes nacionales](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
-Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Office con su cuenta profesional o educativa.
+> [!NOTE]
+> Para los inquilinos de la comunidad gubernamental de EE. UU. (GCC y GCC-HC), por el momento, las etiquetas de confidencialidad solo son compatibles con el cliente de etiquetado unificado y el escáner de Azure Information Protection. 
+> 
+> Para obtener más información, consulte la entrada del blog [Anuncio de la disponibilidad general del etiquetado unificado en los entornos GCC y GCC-H](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
 
 Puede usar etiquetas de confidencialidad para:
   

@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039543"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577551"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
 Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto **exploradores** como **detecciones en tiempo real** (anteriormente *informes en tiempo real* , [vea lo nuevo](#new-features-in-threat-explorer-and-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** _o_ **detecciones en tiempo real**.
 
-| Con el plan ATP 2, verá: | Con el plan ATP 1, verá: |
+|Con el plan ATP 2, verá:|Con el plan ATP 1, verá:|
 |---|---|
 |![Explorador de amenazas](../../media/threatmgmt-explorer.png)|![Detecciones en tiempo real](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -46,37 +46,37 @@ Con este informe, puede:
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Experimentar mejoras en el explorador de amenazas y detecciones en tiempo real
 
-Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y en las detecciones en tiempo real. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación: 
+Como parte de la mejora del proceso de búsqueda, hemos realizado algunas actualizaciones en el explorador de amenazas y en las detecciones en tiempo real. Estas son mejoras de "experiencia" y se centran en hacer que la experiencia de búsqueda sea más coherente. Estos cambios se describen a continuación:
 
 - [Mejoras en la zona horaria](#timezone-improvements)
 - [Actualizar en el proceso de actualización](#update-in-the-refresh-process)
 - [Desglose del gráfico para agregar a los filtros](#chart-drilldown-to-add-to-filters)
 - [En actualizaciones de información del producto](#in-product-information-updates)
 
-### <a name="timezone-improvements"></a>Mejoras en la zona horaria 
+### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
-Se mostrará la zona horaria para los registros de correo electrónico dentro del portal, así como para los datos exportados. La zona horaria será visible en todas las experiencias como cuadrícula de correo electrónico, flotante de detalles, escala de tiempo del correo electrónico y correos electrónicos similares, de modo que la zona horaria del conjunto de resultados quede clara para el usuario. 
+Se mostrará la zona horaria para los registros de correo electrónico dentro del portal, así como para los datos exportados. La zona horaria será visible en todas las experiencias como cuadrícula de correo electrónico, flotante de detalles, escala de tiempo del correo electrónico y correos electrónicos similares, de modo que la zona horaria del conjunto de resultados quede clara para el usuario.
 
-![Ver la zona horaria en el explorador](../media/TimezoneImprovements.png)
+![Ver la zona horaria en el explorador](../../media/TimezoneImprovements.png)
 
-### <a name="update-in-the-refresh-process"></a>Actualizar en el proceso de actualización 
+### <a name="update-in-the-refresh-process"></a>Actualizar en el proceso de actualización
 
 Hemos recibido comentarios sobre la confusión con la actualización automática (por ejemplo, para la fecha, en cuanto cambia la fecha, la página se actualizará) y la actualización manual (para otros filtros). De forma similar, la eliminación de filtros conduce a la actualización automática, lo que provoca situaciones en las que el cambio de distintos filtros mientras se modifica la consulta puede provocar experiencias de búsqueda incoherentes. Para solucionar esto, estamos cambiando a un mecanismo de filtrado manual.
-Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar los distintos intervalos de filtros (desde el conjunto de filtros y la fecha) y hacer clic en el botón actualizar para filtrar los resultados una vez que se han realizado con la definición de la consulta. El botón actualizar también se ha actualizado para llamarlo claramente en la pantalla. También hemos actualizado la información sobre herramientas y la documentación del producto sobre este cambio. 
+Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar los distintos intervalos de filtros (desde el conjunto de filtros y la fecha) y hacer clic en el botón actualizar para filtrar los resultados una vez que se han realizado con la definición de la consulta. El botón actualizar también se ha actualizado para llamarlo claramente en la pantalla. También hemos actualizado la información sobre herramientas y la documentación del producto sobre este cambio.
 
-![Haga clic en actualizar para filtrar los resultados](../media/ManualRefresh.png)
+![Haga clic en actualizar para filtrar los resultados](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Desglose del gráfico para agregar a los filtros
 
 Ahora, podrá hacer clic en los valores de leyenda de gráfico para agregar ese valor como filtro. Tenga en cuenta que aún tendrá que hacer clic en el botón actualizar para filtrar los resultados como parte del cambio descrito anteriormente.
 
-![Obtener detalles de los gráficos para filtrar](../media/ChartDrilldown.png)
+![Obtener detalles de los gráficos para filtrar](../../media/ChartDrilldown.png)
 
-### <a name="in-product-information-updates"></a>En actualizaciones de información del producto 
+### <a name="in-product-information-updates"></a>En actualizaciones de información del producto
 
-También debe ver detalles adicionales dentro del producto. Por ejemplo, el número total de resultados de búsqueda dentro de la cuadrícula (vea a continuación), así como mejoras en las etiquetas, los mensajes de error y la información sobre herramientas, para proporcionar más información sobre los filtros, la experiencia de búsqueda y el conjunto de resultados. 
+También debe ver detalles adicionales dentro del producto. Por ejemplo, el número total de resultados de búsqueda dentro de la cuadrícula (vea a continuación), así como mejoras en las etiquetas, los mensajes de error y la información sobre herramientas, para proporcionar más información sobre los filtros, la experiencia de búsqueda y el conjunto de resultados.
 
-![Ver información del producto](../media/ProductInfo.png)
+![Ver información del producto](../../media/ProductInfo.png)
 
 
 ## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
@@ -104,19 +104,18 @@ Pero el explorador (y las detecciones en tiempo real) también agrega nuevos cam
 
 La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
 
-|Pronuncia  |Correo electrónico no deseado  |Blocked  |Sustitui  |
-|---------|---------|---------|---------|
-|El correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.    | El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.       | Los correos electrónicos que se han puesto en cuarentena, que no se han podido realizar o se han perdido. El usuario no tiene acceso completamente a esto.     | Cualquier correo electrónico en el que se reemplacen archivos adjuntos malintencionados por archivos. txt que indiquen que los datos adjuntos eran malintencionados.     |
-    
-
-| Pronuncia | Correo electrónico no deseado | Blocked | Sustitui |
+|Pronuncia|Correo electrónico no deseado|Blocked|Sustitui|
 |---|---|---|---|
-|El correo electrónico se entregó en la bandeja de entrada del usuario o en otra carpeta, y el usuario puede acceder a él directamente.| El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.| Los mensajes de correo electrónico que se han puesto en cuarentena, que no se han producido o se han quitado, y que el usuario no puede obtener acceso a ellos.| Los mensajes de correo electrónico en los que los datos adjuntos malintencionados fueron reemplazados por archivos. txt que indican que los datos adjuntos eran malintencionados.|
+|El correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.|El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.|Los correos electrónicos que se han puesto en cuarentena, que no se han podido realizar o se han perdido. El usuario no tiene acceso completamente a esto.|Cualquier correo electrónico en el que se reemplacen archivos adjuntos malintencionados por archivos. txt que indiquen que los datos adjuntos eran malintencionados.|
+
+|Pronuncia|Correo electrónico no deseado|Blocked|Sustitui|
+|---|---|---|---|
+|El correo electrónico se entregó en la bandeja de entrada del usuario o en otra carpeta, y el usuario puede acceder a él directamente.|El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.|Los mensajes de correo electrónico que se han puesto en cuarentena, que no se han producido o se han quitado, y que el usuario no puede obtener acceso a ellos.|Los mensajes de correo electrónico en los que los datos adjuntos malintencionados fueron reemplazados por archivos. txt que indican que los datos adjuntos eran malintencionados.|
 |
 
 Y esto es lo que el usuario puede ver y lo que no puede:
 
-| Accesible para los usuarios finales | Inaccesibles para los usuarios finales |
+|Accesible para los usuarios finales|Inaccesibles para los usuarios finales|
 |---|---|
 |Pronuncia|Blocked|
 |Correo electrónico no deseado|Sustitui|
@@ -205,7 +204,7 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
    ![URL del explorador que se bloquearon](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Seleccione una dirección URL para ver información más detallada.
-   
+
    > [!NOTE]
    > En el cuadro de diálogo de URL flotante, se quita el filtrado de los mensajes de correo electrónico para mostrar la vista completa de la exposición de la URL en el entorno. Esto le permite filtrar los mensajes de correo electrónico en el explorador a aquellos que le interesan, encontrar direcciones URL específicas que son posibles amenazas y, a continuación, ampliar su comprensión de la exposición de URL en su entorno (a través del cuadro de diálogo de detalles de URL) sin tener que agregar filtros de URL a la vista del explorador.
 

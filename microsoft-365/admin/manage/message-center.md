@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el centro de mensajes de Microsoft 365 y su rol en la administración de cambios.
-ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780090"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564030"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -178,3 +178,9 @@ Usamos la traducción automática para mostrar automáticamente los mensajes en 
 - Administrador de servicios de Intune
 - Administrador de roles con privilegios
 - Lector de informes
+
+## <a name="unsubscribe-from-message-center-emails"></a>Cancelar la suscripción a los correos electrónicos del centro de mensajes
+
+1. Los mensajes de correo electrónico de Resumen están activados de forma predeterminada y se envían a la dirección de correo electrónico principal. Para dejar de recibir el Resumen semanal, cambie el valor **Enviar un resumen semanal de mis mensajes** a **desactivado**. <br/><br/>La notificación por correo electrónico para las actualizaciones principales es un control independiente. Si no quiere recibir notificaciones de correo electrónico sobre las actualizaciones principales, compruebe que **enviarme mensajes para que las actualizaciones principales** esté **desactivada**.  <br/><br/>Para dejar de recibir notificaciones por correo electrónico sobre los mensajes de privacidad de datos, compruebe que el **mensaje enviarme mensajes de privacidad para datos** está **desactivado**.  (Los mensajes de privacidad de datos no se incluyen en el Resumen semanal).<br/><br/>
+
+2. Seleccione **Guardar** para conservar los cambios.<br/>

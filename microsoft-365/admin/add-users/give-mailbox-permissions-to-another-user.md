@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'Obtenga información acerca de cómo conceder a un usuario el derecho de acceso al buzón de otro usuario. Esto le dará al usuario el derecho de leer el correo electrónico y enviar correo electrónico desde el buzón del otro usuario. '
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780606"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560380"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Conceder permisos de buzón a otro usuario: Ayuda para administradores
 
@@ -55,7 +55,10 @@ Después de configurar los permisos, los cambios pueden tardar hasta 60 minutos 
   
  **Cómo usarlo una vez que los permisos están configurados:**
   
-Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acceso. Para obtener ayuda sobre esta cuestión, consulte este artículo: [Obtener acceso al buzón de otra persona](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+Hay diferentes maneras de acceder a un buzón una vez que se le ha concedido acceso. Para obtener ayuda sobre esto, consulte este artículo: [Obtener acceso al buzón de otra persona](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
+
+> [!NOTE]
+> Los permisos se pueden configurar solo en el espacio empresarial de la organización actual. No es posible configurar permisos de buzón con usuarios que no sean parte de la cuenta empresarial.
   
 ## <a name="send-email-from-another-users-mailbox"></a>Enviar correo electrónico desde el buzón de otro usuario
 

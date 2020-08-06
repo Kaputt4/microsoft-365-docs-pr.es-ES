@@ -1,5 +1,5 @@
 ---
-title: Reporte de bucle de correo
+title: Corrección de la información posible del bucle de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre la información sobre el bucle de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Los administradores pueden aprender a usar la información sobre cómo solucionar posibles bucles de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para identificar y corregir bucles de correo en su organización.
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819321"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577643"
 ---
-# <a name="mail-loop-insight"></a>Reporte de bucle de correo
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corrección de la información posible sobre el bucle de correo en el centro de seguridad & cumplimiento
 
-Un bucle de correo es incorrecto porque desperdicia recursos del sistema, consume la cuota del volumen de correo de su organización y envía informes de no entrega confusos (también conocidos como NDR o mensajes de devolución) a los remitentes originales. Esta visión informa cuando se encuentra un bucle de correo en la organización, los dominios de correo electrónico que participan en el bucle y el número de mensajes del día anterior que estaban en el bucle.
+Un bucle de correo es incorrecto porque desperdicia recursos del sistema, consume la cuota del volumen de correo de su organización y envía informes de no entrega confusos (también conocidos como NDR o mensajes de devolución) a los remitentes originales.
 
-![Un bucle de correo información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+La información de **corrección posible del bucle de correo** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento le avisa cuando se detecta un bucle de correo en la organización. Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).
 
-Puede hacer clic en **Ver detalles** para ver los detalles en un panel de control flotante. También se identifican los escenarios de bucle más comunes y se proporcionan las acciones recomendadas (si están disponibles) para corregir el bucle.
+![Corrección de la información lenta reglas de flujo de correo en el área recomendada para el panel del flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
 
-![Panel flotante después de hacer clic en ver detalles en un bucle incorrecto información sobre el panel de flujo de correo](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con más información:
+
+- **Dominio**
+- **Número de mensajes**: puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por el bucle.
+- **Tipo de dominio**"por ejemplo, autoritario o no autoritativo.
+- **Registro MX**: host (**servidor de correo**) y valores de **prioridad** del registro MX para el dominio.
+- **Razón** **para el bucle y cómo corregir**: intentaremos identificar los escenarios de bucle de correo más comunes y proporcionar las acciones recomendadas (si están disponibles) para corregir el bucle.
+
+![Control flotante de detalles después de hacer clic en ver detalles en la información de corrección posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

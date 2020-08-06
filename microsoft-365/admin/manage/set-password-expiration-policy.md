@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Aprenda a establecer la directiva de expiración de contraseñas para su organización en el Centro de administración de Microsoft 365. '
-ms.openlocfilehash: a4d5f5240a6d4cca686b4809d05970b5e18b897f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399583"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560876"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -75,13 +75,17 @@ Estos son algunos aspectos que debe conocer acerca del funcionamiento de esta fu
     
 ## <a name="prevent-last-password-from-being-used-again"></a>Impedir la reutilización de la última contraseña
 
-Con Azure AD, puede impedir que los usuarios reutilicen contraseñas anteriores. Vea [Exigir historial de contraseñas](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
-
-Además, si un empleado usó un dispositivo móvil para acceder a Microsoft 365, puede borrarlo para asegurarse de que la contraseña ya no se almacena allí y que se recicló. Para obtener más información, vea[limpiar y bloquear un dispositivo móvil de un antiguo empleado](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
-
+Si desea impedir que los usuarios reutilicen contraseñas anteriores, puede implementar el historial de contraseñas en Azure AD. Consulte [Crear una directiva de contraseñas personalizada](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Sincronice las contraseñas de usuario de los hash de un Active Directory local con Azure AD (Microsoft 365)
 
-Este artículo aborda la manera de configurar la directiva de expiración para los usuarios solo de la nube (Azure AD). No se aplica a los usuarios de la identidad híbrida que usan sincronización hash de contraseña, autenticación de acceso directo o Federación local como ADFS.
+Este artículo aborda la manera de configurar la directiva de expiración para los usuarios solo de la nube (Azure AD). No se aplica a los usuarios de identidad híbrida que usan la sincronización hash de contraseña, autenticación de acceso directo o federación local como ADFS.
   
 Para obtener información sobre cómo sincronizar los hash de contraseña de usuario desde el AD local a Azure AD, vea [implementar la sincronización hash de contraseña con la](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)de sincronización de Azure AD Connect.
+
+
+## <a name="update-password-policy"></a>Actualizar la directiva de contraseñas
+
+El cmdlet Set-MsolPasswordPolicy actualiza la directiva de contraseñas de un inquilino o un dominio específico. Se requieren dos opciones de configuración. La primera es indicar el período de tiempo en el que una contraseña sigue siendo válida antes de que se cambie, y la segunda es indicar el número de días antes de la fecha de expiración de la contraseña que se activará cuando los usuarios reciban la primera notificación de que la contraseña va a expirar pronto.
+
+Para obtener información sobre cómo actualizar la directiva de contraseñas para un dominio o un inquilino específico, consulte [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).

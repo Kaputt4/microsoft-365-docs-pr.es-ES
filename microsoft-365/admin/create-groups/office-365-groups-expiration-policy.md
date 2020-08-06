@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de expiración de grupos de 365 de Microsoft.
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560368"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572144"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo 365 de Microsoft
 
@@ -54,7 +54,7 @@ Es importante saber que la expiración está desactivada de forma predeterminada
 |Role|Qué pueden hacer|
 |---------|---------|
 |Administrador global (en Azure, el administrador de la compañía), administrador del usuario|Cree, lea, actualice o elimine la configuración de la Directiva de expiración de grupos de 365 de Microsoft.|
-|User|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
+|Usuario|Renovar o [restaurar](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un grupo de Microsoft 365 que son de su propiedad|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Cómo establecer la Directiva de expiración
 
@@ -68,17 +68,25 @@ Puede establecer la Directiva para todos los grupos, sólo para los grupos selec
 
 ![Captura de pantalla de la configuración de expiración de grupos en Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>Funcionamiento de la expiración con la Directiva de retención
+## <a name="how-expiration-and-renewal-work"></a>Cómo funcionan la expiración y la renovación
 
-Si tiene una directiva de retención de configuración en el centro de seguridad y cumplimiento para los grupos, la Directiva de expiración funciona perfectamente con la Directiva de retención. Cuando un grupo expira, las conversaciones del grupo en el buzón de correo y los archivos del sitio de grupo se conservan en el contenedor de retención para el número específico de días definido en la Directiva de retención. Sin embargo, los usuarios no verán el grupo o su contenido después de la expiración.
+La Directiva de expiración funciona de la siguiente manera: 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Cómo y cuándo un propietario del grupo aprende si sus grupos van a expirar
+- Aproximadamente un mes antes de la expiración, el sistema comprobará si ha habido actividad de grupo desde que se creó el grupo o desde el principio del ciclo de renovación actual.
 
-Solo se notificará a los propietarios del grupo por correo electrónico. Si el grupo se creó a través de Planner, SharePoint o cualquier otra aplicación, las notificaciones de expiración siempre se producirán por correo electrónico. Si el grupo se creó mediante Microsoft Teams, el propietario del grupo recibirá una notificación para renovar a través de la sección actividad. No se recomienda habilitar la expiración en un grupo si el propietario del grupo no tiene una dirección de correo electrónico válida.
+- Si se detecta una actividad previa, la fecha de expiración es avanzada en ese momento el número de días especificado en la Directiva de expiración.
 
-30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico que ha especificado para los grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no la renuevan, recibirán otra renovación de correo electrónico 15 días antes de la fecha de expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración.
+- Si no se detecta la actividad previa, el sistema seguirá viendo la actividad hasta la fecha de expiración. Si se detecta actividad, el sistema adelantará la fecha de expiración en la cantidad especificada en ese momento.
+
+30 días antes de que expire el grupo, los propietarios del grupo (o las direcciones de correo electrónico que ha especificado para los grupos que no tienen un propietario) recibirán un correo electrónico que les permitirá renovar fácilmente el grupo. Si no la renuevan, recibirán otra renovación de correo electrónico 15 días antes de la fecha de expiración. Si aún no lo han renovado, recibirán una notificación de correo electrónico más el día antes de la expiración. (Una vez renovado el grupo, no se enviarán más avisos por correo electrónico hasta 30 días antes de la nueva fecha de expiración).
+
+Los propietarios del grupo recibirán una notificación por correo electrónico. Si el grupo se creó a través de Planner, SharePoint o cualquier otra aplicación, las notificaciones de expiración siempre se producirán por correo electrónico. Si el grupo se creó mediante Microsoft Teams, el propietario del grupo recibirá una notificación para renovar a través de la sección actividad. No se recomienda habilitar la expiración en un grupo si el propietario del grupo no tiene una dirección de correo electrónico válida.
 
 Si, por algún motivo, ninguno de los propietarios o administradores renuevan el grupo antes de que expire, y no se realiza la renovación automática debido a que el grupo no cumple los requisitos para que se renueven automáticamente, el administrador puede restaurar el grupo durante un máximo de 30 días tras la expiración. Para obtener información detallada, vea: [restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+
+## <a name="how-expiry-works-with-retention-policies"></a>Cómo funciona la expiración con directivas de retención
+
+Si tiene una directiva de retención de configuración en el centro de seguridad y cumplimiento para los grupos, la Directiva de expiración funciona perfectamente con la Directiva de retención. Cuando un grupo expira, las conversaciones del grupo en el buzón de correo y los archivos del sitio de grupo se conservan en el contenedor de retención para el número específico de días definido en la Directiva de retención. Sin embargo, los usuarios no verán el grupo o su contenido después de la expiración.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

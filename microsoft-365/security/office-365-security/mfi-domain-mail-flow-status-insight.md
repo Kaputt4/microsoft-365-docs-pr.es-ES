@@ -1,5 +1,5 @@
 ---
-title: Información de estado de flujo de correo de dominio superior
+title: Información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,34 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Los administradores pueden aprender a usar la información más detallada sobre el estado del flujo de correo del dominio en el panel de flujo del correo en el centro de seguridad & cumplimiento para solucionar problemas del flujo de correo relacionados con los registros MX en sus dominios de correo electrónico.
+ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818596"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577766"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Información de estado de flujo de correo de dominio superior
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información más detallada sobre el estado del flujo de correo del dominio en el centro de seguridad & cumplimiento
 
-La información del **Estado del flujo de correo de dominio superior** le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de impacto en el ***flujo de correo*** (por ejemplo, no se puede recibir correo electrónico externo), en especial expiraciones de dominio o dominios con registros MX incorrectos.
+La información más detallada sobre el **Estado del flujo de correo del dominio** en el panel del flujo de [correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de impacto en el ***flujo de correo*** (por ejemplo, no se puede recibir correo electrónico externo), en especial expiraciones de dominio o dominios con registros MX incorrectos.
 
-![La información más detallada sobre el estado del flujo del dominio en el panel de flujo del correo en el centro de seguridad & cumplimiento](../../media/domain-mail-flow-status-selected.png)
+![Widget de estado de flujo superior del dominio en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-Al hacer clic en **Ver detalles** en la visión, aparecerá un control flotante que muestra más detalles sobre el estado de cada dominio.
+Al hacer clic en **Ver detalles** en el widget, aparece un control flotante de **Estado de dominio** que muestra más detalles para el estado de cada dominio:
 
-Una marca de verificación verde para un dominio indica que el registro MX actual (cuando se ha explorado el panel de información de flujo de correo) coincide con el valor que tenemos en el registro y que el dominio ha recibido el correo electrónico durante las dos últimas horas.
+- **Dominio**
+- **Registro MX anterior**
+- **Registro MX actual**
+- **Estado de recepción de correo electrónico**
+- **Estado del dominio**: una marca de verificación verde indica que el registro MX actual (en el momento en que hizo clic en el widget) coincide con el valor que tenemos en el registro y que el dominio ha recibido el correo electrónico durante las dos últimas horas.
 
-Una x de color rojo para un dominio indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las 6 últimas horas. Esto probablemente indica que su dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
+  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las 6 últimas horas. Esto probablemente indica que su dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
 
-![El control flotante de detalles en la información del estado del flujo superior del dominio](../../media/domain-mail-flow-status-flyout.png)
+Puede hacer clic en **Ver más** para ver la misma información de más dominios.
+
+![Flotante de detalles en la información del estado del flujo de correo del dominio superior](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

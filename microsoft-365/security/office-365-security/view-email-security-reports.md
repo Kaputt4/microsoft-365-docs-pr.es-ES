@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434260"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578035"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -58,7 +58,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 
 - **Hora de creación**
 - **Nombre de usuario**
-- **Action**
+- **Acción**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.
 
@@ -221,7 +221,7 @@ Si hace clic en **ver tabla de detalles** en cualquier vista de informe, se most
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Tipo de evento**
-- **Action**
+- **Acción**
 - **Asunto**
 
 Si hace clic en **filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -260,7 +260,7 @@ Si hace clic en **ver tabla de detalles**, puede ver los siguientes detalles:
 - **Remitente falsificado**
 - **Auténtico remitente**
 - **IP del remitente**
-- **Action**
+- **Acción**
 - **Número de mensajes**
 
 Para volver a la vista de informe, haga clic en **Ver informe**.

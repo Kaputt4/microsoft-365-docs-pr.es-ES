@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527830"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560631"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -63,6 +63,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
 
     Específico para el etiquetado automático para Exchange:
     - A diferencia de las etiquetas manuales o el etiquetado automático con las aplicaciones de Office, los datos adjuntos de Office (archivos de Word, Excel y PowerPoint) y los datos adjuntos de PDF también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
+        - Para los archivos de Office, el formato Open XML es compatible (como .docx y.xlsx), pero no el formato de Microsoft Office 97-2003 (como .doc y .xls).
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
     - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Sin embargo, si la etiqueta está configurada para el cifrado, no se aplica el cifrado.

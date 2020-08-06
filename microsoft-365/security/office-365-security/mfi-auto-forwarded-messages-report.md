@@ -1,5 +1,5 @@
 ---
-title: Informe de mensajes reenviados automáticamente
+title: Información de mensajes reenviados automáticamente
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635309"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577835"
 ---
-# <a name="auto-forwarded-messages-report"></a>Informe de mensajes reenviados automáticamente
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Mensajes reenviados automáticamente información sobre el centro de seguridad & cumplimiento
 
-El informe de **mensajes reenviados automáticamente** del panel de flujo de correo muestra información sobre los mensajes que se reenvían automáticamente desde la organización a los destinatarios de los dominios externos.
+La introducción a los **mensajes reenviados automáticamente** del [Panel flujo de correo](mail-flow-insights-v2.md) del centro de seguridad & cumplimiento muestra información acerca de los mensajes que se reenvían automáticamente desde la organización a los destinatarios de dominios externos.
 
-![Información sobre los mensajes reenviados automáticamente del centro de seguridad & cumplimiento](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![El informe de mensajes reenviados automáticamente del panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget de mensajes reenviados automáticamente en el centro de seguridad & cumplimiento](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Detalles de los mensajes reenviados automáticamente
 
-Al hacer clic en el número de mensajes del widget, aparece un panel flotante que muestra el estado del mensaje reenviado automáticamente. Puede ver los detalles haciendo clic en el vínculo **Informe de reenvío** .
+Al hacer clic en el número de mensajes del widget, aparece un panel de control flotante que muestra más información sobre los mensajes reenviados automáticamente:
 
-![El control flotante detalles del informe de mensajes reenviados automáticamente en el centro de seguridad & cumplimiento](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- Mensajes reenviados **automáticamente mediante métodos de reenvío**:
+
+  - **Por reglas de flujo de correo**
+  - **Por reglas de la bandeja de entrada**
+  - **Por el reenvío SMTP**
+  - Un vínculo al [Informe de reenvío](view-mail-flow-reports.md#forwarding-report) para obtener más información.
+
+- **Mensajes reenviados automáticamente por dominios y usuarios**:
+
+  - **Los 5 primeros dominios se reenvían a**
+  - **Nuevos dominios (última semana)**
+  - **5 principales usuarios de reenvío**
+  - **Nuevos usuarios (última semana)**
+  - Un vínculo al [Informe de modificaciones de reenvío](mfi-new-users-forwarding-email.md#forwarding-modifications-report) para obtener más información.
+
+![Control flotante de detalles del informe de mensajes reenviados automáticamente en el centro de seguridad & cumplimiento](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Información
 
-Se generan dos perspectivas en función de los datos del informe: **nuevos usuarios de reenvío** y **nuevos dominios de reenvío**. Cada conocimiento proporciona un resumen del número de reenviadores o dominios nuevos con un vínculo al **nuevo informe de reenvío** que proporciona más detalles sobre los dos tipos de datos. El **nuevo informe de reenvío** también muestra una vista de escala de tiempo de la actividad nueva y la tabla de detalles identifica quién empezó a reenviar y a qué dominios.
+Se generan dos perspectivas en función de los datos del informe:
+
+- [Reenviar correo electrónico a los nuevos usuarios](mfi-new-users-forwarding-email.md)
+- [Nuevos dominios que se reenvían correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

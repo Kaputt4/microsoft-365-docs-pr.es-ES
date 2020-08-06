@@ -1,5 +1,5 @@
 ---
-title: Colas y alertas de cola
+title: Pone en cola información en el panel de flujo de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,68 +10,83 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Los administradores pueden obtener información sobre las alertas de cola y las colas del panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Los administradores pueden aprender a usar el widget colas del panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar el flujo de correo incorrecto hacia sus organizaciones locales o de asociados a través de los conectores de salida.
+ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635189"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577340"
 ---
-# <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
+# <a name="queues-insight-in-the-security--compliance-center"></a>Pone en cola información en el centro de seguridad & cumplimiento
 
-## <a name="queue-alerts"></a>Alertas de cola
-
-Cuando los mensajes no se pueden enviar desde la organización a los servidores de correo electrónico locales o de asociados mediante conectores, los mensajes se colocan en la cola de Office 365. Algunos ejemplos comunes que causan esta condición son:
+Cuando los mensajes no se pueden enviar desde la organización a los servidores de correo electrónico locales o asociados mediante conectores, los mensajes se colocan en la cola de Microsoft 365. Algunos ejemplos comunes que causan esta condición son:
 
 - El conector está configurado incorrectamente.
-
 - Ha habido cambios en la red o en el firewall en su entorno local.
 
 Microsoft 365 seguirá reintentando la entrega durante 24 horas. Transcurridas las 24 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
 
-Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 2000 mensajes), las alertas estarán disponibles en el panel de flujo de correo en las **alertas recientes**y los administradores recibirán una notificación por correo electrónico (a su dirección de correo electrónico alternativa). Para configurar el umbral de alerta, el límite de notificaciones diarias y los destinatarios de la alerta, consulte la sección **personalizar colas de alertas** a continuación.
+Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 200 mensajes), la información está disponible en las siguientes ubicaciones:
 
-![Poner alertas en cola en el área de alertas recientes del panel flujo de correo en el centro de seguridad & cumplimiento](../../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+- Las **colas** profundizan en el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento. Para obtener más información, vea la información [sobre las colas en la sección panel de flujo de correo](#queues-insight-in-the-mail-flow-dashboard) de este tema.
+  
+- Se muestra una alerta en el panel de alertas del centro de [seguridad & cumplimiento](https://protection.office.com) (panel de**alertas** o) en **Alerts recents** \> **Dashboard** <https://protection.office.com/alertsdashboard> .
+
+  ![Alertas recientes en el panel de alertas del centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert.png)
+
+- Los administradores recibirán una notificación de correo electrónico basada en la configuración de la Directiva de alertas predeterminada denominada **mensajes que se han retrasado**. Para establecer la configuración de las notificaciones para esta alerta, consulte la siguiente sección.
+
+  Para obtener más información acerca de las directivas de alertas, consulte [directivas de alerta en el centro de seguridad & cumplimiento](../../compliance/alert-policies.md).
 
 ## <a name="customize-queue-alerts"></a>Personalizar alertas de cola
 
-Información de flujo de correo cree una directiva de alerta llamada **los mensajes se han retrasado** (la casilla **enviar notificaciones de correo electrónico** en la captura de pantalla de ejemplo siguiente) que se encuentra en **directivas**de alertas de **alertas** \> . Puede modificar el umbral y los destinatarios de alertas haciendo clic en la Directiva.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), vaya a directivas de alerta de **alertas** \> **Alert policies** o abrir <https://protection.office.com/alertpolicies> .
 
-![Navegación de alertas](../../media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+2. En la página **directivas de alerta** , busque y seleccione la Directiva denominada **mensajes que se han retrasado**.
 
-Verá una nueva hoja de información de directivas, ahora puede hacer clic en **Editar Directiva**.
+3. En el **mensaje se ha retrasado** el control flotante que se abre, puede activar o desactivar la alerta y configurar las opciones de notificación.
 
-![Editar Directiva](../../media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
+   ![Los mensajes se han retrasado de la Directiva de alerta detalles del centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-policy.png)
 
-La hoja de información cambiará a la **Directiva de edición**. Ahora puede cambiar los destinatarios del correo electrónico de alerta, el límite del número de notificaciones enviadas por día y el umbral mínimo para desencadenar la alerta (200 o más).
+   - **Estado**: puede activar o desactivar la alerta.
 
-![Editar hoja de directivas](../../media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+   - **Destinatarios de correo electrónico** y **límite de notificaciones diarias**: haga clic en **Editar** para configurar las opciones siguientes:
 
-## <a name="queue-alert-details"></a>Detalles de alerta de cola
+4. Para establecer la configuración de las notificaciones, haga clic en **Editar**. En el control flotante **Editar Directiva** que aparece, configure las siguientes opciones:
 
-Al hacer clic en la alerta, los detalles de la alerta aparecen en un panel flotante.
+   - **Enviar notificaciones por correo electrónico**: el valor predeterminado es activado.
+   - **Destinatarios de correo electrónico**: el valor predeterminado es **TenantAdmins**.
+   - **Límite de notificación diario**: el valor predeterminado es **sin límite**.
+   - **Umbral**: el valor predeterminado es 200.
 
-![Seleccione una alerta de cola en el área de alertas recientes del panel flujo de correo en el centro de seguridad & cumplimiento](../../media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+   ![La configuración de notificaciones en los mensajes se ha retrasado detalles de la Directiva de alerta el centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-![El control flotante de alerta de cola en el centro de seguridad & cumplimiento](../../media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+5. Cuando haya terminado, haga clic en **Guardar** y **cerrar**.
 
-Puede hacer clic en **Ver cola** en los detalles de alerta para ver los detalles de la cola, los problemas y los vínculos a las correcciones disponibles en un nuevo panel flotante.
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Pone en cola información en el panel de flujo de correo
 
-![El control flotante de alerta de cola en el centro de seguridad & cumplimiento](../../media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+Incluso si el volumen de mensajes en cola no ha superado el umbral y ha generado una alerta, puede usar la información de las **colas** del [panel del flujo de correo](mail-flow-insights-v2.md) para ver los mensajes que se han puesto en cola durante más de una hora y emprender acciones antes de que el número de mensajes en cola sea demasiado grande.
 
-![Ver la cola en los detalles de alerta](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![Widget colas del panel flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-queues-widget.png)
 
-## <a name="queues"></a>Colas
+Si hace clic en el número de mensajes del widget, aparece un control flotante **en cola de mensajes** con la siguiente información:
 
-Incluso si el volumen de mensajes en cola no ha superado el umbral, puede seguir usando el área **colas** del panel flujo de correo para ver los mensajes que se han puesto en cola durante más de una hora. Puede usar el área **colas** para supervisar el número de mensajes en cola (el valor 0 indica que el flujo de correo es aceptable) y realizar una acción antes de que el número de mensajes en cola sea demasiado grande.
+- **Número de mensajes en cola**
+- **Nombre del conector**: haga clic en el nombre del conector para administrar el conector en el centro de administración de Exchange (EAC).
+- **Tiempo de inicio de la cola**
+- **Los mensajes más antiguos expiraron**
+- **Servidor de destino**
+- **Última dirección IP**
+- **Último error**
+- **Procedimiento para la corrección**: hay disponibles problemas y soluciones comunes. Si es un vínculo **arreglar ahora** está disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
 
-![Colas del panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Detalles después de hacer clic en la información sobre las colas del panel flujo de correo](../../media/mfi-queues-details.png)
 
-Al hacer clic en el número de mensajes en cola en las **colas**, los detalles de la cola y la orientación sobre cómo corregir el problema aparecerán en un panel flotante (el mismo control flotante que aparece después de hacer clic en **Ver cola** en detalles de una alerta de cola).
+Se muestra el mismo control flotante después de hacer clic en **Ver cola** en los detalles de los **mensajes se han retrasado** la alerta.
 
-![Detalles de la cola](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![Se han retrasado los detalles de la alerta en el centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

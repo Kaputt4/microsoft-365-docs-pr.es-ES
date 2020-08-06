@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127623"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560621"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -189,6 +189,4 @@ Después de crear y guardar la etiqueta o la directiva, no se pueden cambiar alg
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Plantéese usar las etiquetas de retención con otra forma de automatización: la [retención controlada por eventos](event-driven-retention.md). Al usar esta configuración, el comienzo de la retención se activa mediante un evento que usted identifica. Puede usar la retención controlada por eventos con una directiva automática o una directiva de etiqueta.
-
-Vea [Administrar el ciclo de vida de los documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md) para obtener más información sobre cómo usar las propiedades administradas en SharePoint para aplicar automáticamente las etiquetas de retención e implementar la retención basada en eventos.
+Consulte [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md) para obtener un escenario de ejemplo que usa una directiva de aplicación automática con propiedades administradas en SharePoint y una retención basada en eventos para iniciar el período de retención.

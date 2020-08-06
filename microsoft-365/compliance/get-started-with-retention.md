@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430238"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560767"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -66,7 +66,7 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 |Permitir a los usuarios aplicar una etiqueta de retención automáticamente a los mensajes de correo electrónico mediante reglas de Outlook|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Aplicar manualmente un conjunto de acciones de conservación y de eliminación a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)|
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
-|Administrar el ciclo de vida de los distintos tipos de documentos en SharePoint| [Administración del ciclo de vida de documentos de SharePoint con etiquetas de retención](auto-apply-retention-labels-scenario.md)|
+|Administrar el ciclo de vida de los distintos tipos de documentos en SharePoint| [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md)|
 |Utilice una única solución de administración de registros para documentos y mensajes de correo electrónico |[Administración de registros en Microsoft 365](records-management.md) |
 |Cumplir con la norma 17a-4 de la SEC|[Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |

@@ -1,5 +1,5 @@
 ---
-title: Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
+title: Ver informes de flujo de correo en el panel de informes
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo buscar y usar informes de seguridad de flujo de correo para su organización. Los informes de flujo de correo están disponibles en el centro de seguridad & cumplimiento.
+description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434184"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578023"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Ver informes de flujo de correos en el Centro de seguridad y cumplimiento.
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
-Además de la [información del flujo de correo](mail-flow-insights-v2.md) que está disponible en el centro de seguridad & cumplimiento, hay disponible una variedad de informes de flujo de correo que le ayudarán a supervisar su organización de 365 de Microsoft. Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el centro de seguridad & cumplimiento en <https://office.protection.com> visitando el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://office.protection.office.com/insightdashboard> .
+Además de los informes de flujo de correo que están disponibles en el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento, hay disponible una variedad de informes de flujo de correo adicionales en el panel de informes para ayudarle a supervisar su organización de 365 de Microsoft.
+
+Si dispone de los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en el [centro de seguridad & cumplimiento](https://office.protection.com) desde el panel de **informes** \> **Dashboard**. Para ir directamente al panel informes, Abra <https://office.protection.office.com/insightdashboard> .
 
 ![Panel de informes en el centro de seguridad & cumplimiento](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -404,21 +406,13 @@ Para ver y usar los informes, debe ser miembro del grupo de roles especificado e
 
 - En el centro de seguridad & cumplimiento, debe ser miembro de uno de los siguientes grupos de roles:
 
-  -Administración de la organización
-
-  -Administrador de seguridad (también puede hacerlo en el [centro de administración de Azure Active Directory](https://aad.portal.azure.com) : lector de seguridad
+  -Organization Management-administrador de seguridad (también puede hacerlo en el [centro de administración de Azure Active Directory](https://aad.portal.azure.com) -lector de seguridad
 
   Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 - En Exchange Online, debe ser miembro de uno de los siguientes grupos de roles:
 
-  -Administración de la organización
-
-  -View-Only administración de la organización
-
-  : Ver solo los destinatarios
-
-  -Administración de cumplimiento
+  -Administración de la organización: administración de la organización de solo vista-destinatarios de solo vista-administración de cumplimiento
 
 Para obtener más información, consulte [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) y [Manage role Groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
@@ -426,4 +420,8 @@ Para obtener más información, consulte [Permissions in Exchange Online](https:
 
 [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
 
+[Reportes de flujo de Correo en el Centro de seguridad y cumplimiento](mail-flow-insights-v2.md)
+
 [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
+
+[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)

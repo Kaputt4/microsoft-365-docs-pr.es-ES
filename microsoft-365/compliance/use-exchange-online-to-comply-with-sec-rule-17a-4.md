@@ -18,12 +18,12 @@ description: Configure el Centro de cumplimiento y Exchange Online para cumplir 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127307"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577120"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
@@ -70,12 +70,3 @@ Bloqueo de conservación puede ayudarle a cumplir con los requisitos reglamentar
 
 Puede bloquear una directiva de retención con PowerShell. Para más información, consulte [Usar el bloqueo de conservación para cumplir los requisitos normativos](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
-## <a name="known-limitations"></a>Limitaciones conocidas
-
-Actualmente existen algunas limitaciones para Exchange Online:
-
-- Las comunicaciones en conversaciones no están disponibles para los mensajes de canal y de chat de Teams.
-- Los “me gusta” no se conservan para los mensajes de canal y de chat de Teams.
-
-> [!NOTE]
-> La auditoría de nivel de elemento ya está disponible en los buzones de grupo de Microsoft 365. Para más información, consulte [Administrar auditoría del buzón](enable-mailbox-auditing.md)..
