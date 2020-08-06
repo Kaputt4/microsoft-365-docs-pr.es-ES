@@ -1,5 +1,5 @@
 ---
-title: Informe de no entrega
+title: Informe de no entrega en el panel de flujo de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,52 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre el informe de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los códigos de error más comunes en los informes de no entrega (también conocidos como NDR o mensajes de devolución) de los remitentes de su organización.
+ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819514"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577437"
 ---
-# <a name="non-delivery-report"></a><span data-ttu-id="3afdc-103">Informe de no entrega</span><span class="sxs-lookup"><span data-stu-id="3afdc-103">Non-delivery report</span></span>
+# <a name="non-delivery-report-in-the-security--compliance-center"></a><span data-ttu-id="081f3-103">Informe de no entrega en el centro de seguridad & cumplimiento</span><span class="sxs-lookup"><span data-stu-id="081f3-103">Non-delivery report in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="3afdc-104">El **Informe de no entrega** muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de su organización.</span><span class="sxs-lookup"><span data-stu-id="3afdc-104">The **Non-delivery report** shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="3afdc-105">Este informe tiene como objetivo mostrar los detalles de NDR, de modo que pueda solucionar problemas.</span><span class="sxs-lookup"><span data-stu-id="3afdc-105">This report is intended to show the details of NDRs, so you can troubleshoot problems.</span></span>
+<span data-ttu-id="081f3-104">El **Informe de no entrega** del [Panel de flujo de correo](mail-flow-insights-v2.md) del centro de seguridad & cumplimiento muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de la organización.</span><span class="sxs-lookup"><span data-stu-id="081f3-104">The **Non-delivery report** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="081f3-105">Este informe muestra los detalles de NDR para que pueda solucionar problemas de entrega de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="081f3-105">This report shows the details of NDRs so you can troubleshoot email delivery problems.</span></span>
 
-![El informe de no entrega del panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/non-delivery-report-selected.png)
+![Widget de informe de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-non-delivery-report-widget.png)
 
-<span data-ttu-id="3afdc-107">Puede mostrar información de todos los códigos NDR o de un código específico haciendo clic en **Mostrar datos de**.</span><span class="sxs-lookup"><span data-stu-id="3afdc-107">You can show information for all NDR codes or a specific code by clicking **Show data for**.</span></span> <span data-ttu-id="3afdc-108">También puede hacer clic en **ver tabla de detalles** para ver una vista más detallada como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="3afdc-108">You can also click **View details table** to see a more detailed view as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-non-delivery-report"></a><span data-ttu-id="081f3-107">Vista informes para el informe de no entrega</span><span class="sxs-lookup"><span data-stu-id="081f3-107">Report view for the Non-delivery report</span></span>
 
-![Ver la tabla de detalles en el informe de no entrega](../../media/non-delivery-report-view-details-table.png)
+<span data-ttu-id="081f3-108">Al hacer clic en el widget **Informe de no entrega** , irá al **Informe de no entrega**.</span><span class="sxs-lookup"><span data-stu-id="081f3-108">Clicking on the **Non-delivery report** widget will take you to the **Non-delivery report**.</span></span>
 
-<span data-ttu-id="3afdc-110">Cuando selecciona una fila en la tabla para ver los detalles del NDR específico, puede usar la información detallada para solucionar los problemas y realizar las acciones necesarias.</span><span class="sxs-lookup"><span data-stu-id="3afdc-110">When you select a row in the table to view the details of the specific NDR, you can use the detailed information to troubleshoot and take the necessary actions.</span></span>
+<span data-ttu-id="081f3-109">De forma predeterminada, se muestra la actividad de todos los códigos de error.</span><span class="sxs-lookup"><span data-stu-id="081f3-109">By default, the activity for all error codes is shown.</span></span> <span data-ttu-id="081f3-110">Si hace clic en **Mostrar datos de**, puede seleccionar un código de error específico en la lista desplegable.</span><span class="sxs-lookup"><span data-stu-id="081f3-110">If you click **Show data for**, you can select a specific error code from the dropdown.</span></span>
 
-![Seleccionar una fila en la tabla de detalles en el informe de no entrega](../../media/non-delivery-report-details-table-select-row.png)
+<span data-ttu-id="081f3-111">Si desplaza el puntero sobre un color específico (código de error) en un día específico del gráfico, verá el número total de mensajes para el error.</span><span class="sxs-lookup"><span data-stu-id="081f3-111">If you hover over a specific color (error code) on a specific day in the chart, you'll see the total number of messages for the error.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="3afdc-112">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="3afdc-112">Related topics</span></span>
+![Vista informes en el informe de dominio no aceptado](../../media/mfi-non-delivery-report-overview-view.png)
 
-<span data-ttu-id="3afdc-113">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="3afdc-113">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="details-table-view-for-the-non-delivery-report"></a><span data-ttu-id="081f3-113">Vista de tabla de detalles para el informe de no entrega</span><span class="sxs-lookup"><span data-stu-id="081f3-113">Details table view for the Non-delivery report</span></span>
+
+<span data-ttu-id="081f3-114">Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="081f3-114">If you click **View details table** in a report view, the following information is shown:</span></span>
+
+- <span data-ttu-id="081f3-115">**Fecha**</span><span class="sxs-lookup"><span data-stu-id="081f3-115">**Date**</span></span>
+- <span data-ttu-id="081f3-116">**Código de informe de no entrega**</span><span class="sxs-lookup"><span data-stu-id="081f3-116">**Non-delivery report code**</span></span>
+- <span data-ttu-id="081f3-117">**Count**</span><span class="sxs-lookup"><span data-stu-id="081f3-117">**Count**</span></span>
+- <span data-ttu-id="081f3-118">**Mensajes de ejemplo**: los identificadores de mensaje de una muestra de mensajes afectados.</span><span class="sxs-lookup"><span data-stu-id="081f3-118">**Sample messages**: The message IDs of a sample of affected messages.</span></span>
+
+<span data-ttu-id="081f3-119">Si hace clic en **filtros** en una vista de tabla de detalles, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.</span><span class="sxs-lookup"><span data-stu-id="081f3-119">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="081f3-120">Para enviar por correo electrónico el informe de un intervalo de fechas específico a uno o más destinatarios, haga clic en **solicitar descarga**.</span><span class="sxs-lookup"><span data-stu-id="081f3-120">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="081f3-121">Cuando se selecciona una fila de la tabla, aparece un control flotante con la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="081f3-121">When you select a row in the table, a flyout appears with the following information:</span></span>
+
+- <span data-ttu-id="081f3-122">**Fecha**</span><span class="sxs-lookup"><span data-stu-id="081f3-122">**Date**</span></span>
+- <span data-ttu-id="081f3-123">Código de error de **Informe de no entrega**: puede hacer clic en el vínculo para buscar más información sobre las causas y soluciones para el código de error específico.</span><span class="sxs-lookup"><span data-stu-id="081f3-123">**Non-delivery report code**: You can click on the link to find for more information about the causes and solutions for the specific error code.</span></span>
+- <span data-ttu-id="081f3-124">**Count**</span><span class="sxs-lookup"><span data-stu-id="081f3-124">**Count**</span></span>
+- <span data-ttu-id="081f3-125">**Mensajes de ejemplo**: puede hacer clic en **Ver mensajes de muestra** para ver los resultados de [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados.</span><span class="sxs-lookup"><span data-stu-id="081f3-125">**Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.</span></span>
+
+![Flotante de detalles después de seleccionar una fila en la vista de tabla de detalles en el informe de no entrega](../../media/mfi-non-delivery-report-details-flyout.png)
+
+## <a name="related-topics"></a><span data-ttu-id="081f3-127">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="081f3-127">Related topics</span></span>
+
+<span data-ttu-id="081f3-128">Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="081f3-128">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

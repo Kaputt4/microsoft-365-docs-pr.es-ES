@@ -1,5 +1,5 @@
 ---
-title: Reporte de bucle de correo
+title: Corrección de la información posible del bucle de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre la información sobre el bucle de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Los administradores pueden aprender a usar la información sobre cómo solucionar posibles bucles de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para identificar y corregir bucles de correo en su organización.
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819321"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577643"
 ---
-# <a name="mail-loop-insight"></a><span data-ttu-id="5d1a9-103">Reporte de bucle de correo</span><span class="sxs-lookup"><span data-stu-id="5d1a9-103">Mail loop insight</span></span>
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a><span data-ttu-id="fd8c3-103">Corrección de la información posible sobre el bucle de correo en el centro de seguridad & cumplimiento</span><span class="sxs-lookup"><span data-stu-id="fd8c3-103">Fix possible mail loop insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="5d1a9-104">Un bucle de correo es incorrecto porque desperdicia recursos del sistema, consume la cuota del volumen de correo de su organización y envía informes de no entrega confusos (también conocidos como NDR o mensajes de devolución) a los remitentes originales.</span><span class="sxs-lookup"><span data-stu-id="5d1a9-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span> <span data-ttu-id="5d1a9-105">Esta visión informa cuando se encuentra un bucle de correo en la organización, los dominios de correo electrónico que participan en el bucle y el número de mensajes del día anterior que estaban en el bucle.</span><span class="sxs-lookup"><span data-stu-id="5d1a9-105">This insight reports when a mail loop is found in your organization, the email domains that are involved in the loop, and the number of messages from the previous day that were in the loop.</span></span>
+<span data-ttu-id="fd8c3-104">Un bucle de correo es incorrecto porque desperdicia recursos del sistema, consume la cuota del volumen de correo de su organización y envía informes de no entrega confusos (también conocidos como NDR o mensajes de devolución) a los remitentes originales.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span>
 
-![Un bucle de correo información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+<span data-ttu-id="fd8c3-105">La información de **corrección posible del bucle de correo** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento le avisa cuando se detecta un bucle de correo en la organización.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-105">The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail loop is detected in your organization.</span></span> <span data-ttu-id="fd8c3-106">Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).</span><span class="sxs-lookup"><span data-stu-id="fd8c3-106">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
 
-<span data-ttu-id="5d1a9-107">Puede hacer clic en **Ver detalles** para ver los detalles en un panel de control flotante.</span><span class="sxs-lookup"><span data-stu-id="5d1a9-107">You can click **View details** to see the details in a flyout pane.</span></span> <span data-ttu-id="5d1a9-108">También se identifican los escenarios de bucle más comunes y se proporcionan las acciones recomendadas (si están disponibles) para corregir el bucle.</span><span class="sxs-lookup"><span data-stu-id="5d1a9-108">We also identify the most common loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
+![Corrección de la información lenta reglas de flujo de correo en el área recomendada para el panel del flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
 
-![Panel flotante después de hacer clic en ver detalles en un bucle incorrecto información sobre el panel de flujo de correo](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+<span data-ttu-id="fd8c3-108">Al hacer clic en **Ver detalles** en el widget, aparece un control flotante con más información:</span><span class="sxs-lookup"><span data-stu-id="fd8c3-108">When you click **View details** on the widget, a flyout appears with more information:</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="5d1a9-110">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="5d1a9-110">Related topics</span></span>
+- <span data-ttu-id="fd8c3-109">**Dominio**</span><span class="sxs-lookup"><span data-stu-id="fd8c3-109">**Domain**</span></span>
+- <span data-ttu-id="fd8c3-110">**Número de mensajes**: puede hacer clic en **Ver mensajes de ejemplo** para ver los resultados del [seguimiento de mensajes](message-trace-scc.md) para obtener una muestra de los mensajes afectados por el bucle.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-110">**Number of messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the loop.</span></span>
+- <span data-ttu-id="fd8c3-111">**Tipo de dominio**"por ejemplo, autoritario o no autoritativo.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-111">**Domain type**" For example, Authoritative or Non-authoritative.</span></span>
+- <span data-ttu-id="fd8c3-112">**Registro MX**: host (**servidor de correo**) y valores de **prioridad** del registro MX para el dominio.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-112">**MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.</span></span>
+- <span data-ttu-id="fd8c3-113">**Razón** **para el bucle y cómo corregir**: intentaremos identificar los escenarios de bucle de correo más comunes y proporcionar las acciones recomendadas (si están disponibles) para corregir el bucle.</span><span class="sxs-lookup"><span data-stu-id="fd8c3-113">**Loop reason** and **How to fix**: We'll try to identify the most common mail loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
 
-<span data-ttu-id="5d1a9-111">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="5d1a9-111">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+![Control flotante de detalles después de hacer clic en ver detalles en la información de corrección posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
+
+## <a name="related-topics"></a><span data-ttu-id="fd8c3-115">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="fd8c3-115">Related topics</span></span>
+
+<span data-ttu-id="fd8c3-116">Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="fd8c3-116">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

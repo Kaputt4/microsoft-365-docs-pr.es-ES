@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Iniciar la retención cuando se produzca un evento
           href: event-driven-retention.md
-        - name: Administrar el ciclo de vida de los documentos de SharePoint
+        - name: Usar las etiquetas de retención para administrar ciclos de vida de documentos
           href: auto-apply-retention-labels-scenario.md
         - name: Administrar la eliminación de datos
           href: disposition.md

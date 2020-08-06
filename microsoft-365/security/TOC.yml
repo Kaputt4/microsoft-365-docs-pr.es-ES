@@ -131,6 +131,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Trabajar con resultados de consulta
                   href: mtp/advanced-hunting-query-results.md
+                - name: Realizar una acción en los resultados de consulta
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Usar consultas compartidas
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Buscar dispositivos y mensajes de correo electrónico
@@ -327,7 +329,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Administrar direcciones URL y archivos en la lista de permitidos y bloqueados del espacio empresarial
+                - name: Administrar direcciones URL en la lista de permitidos y bloqueados del espacio empresarial
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: Protección contra phishing
               href: ./office-365-security/anti-phishing-protection.md

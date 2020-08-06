@@ -1,5 +1,5 @@
 ---
-title: Informe de mapa de flujo de correo
+title: Mapa de flujo de correo
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden obtener información sobre el informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Los administradores pueden aprender a usar el mapa del flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para visualizar y realizar un seguimiento de la forma en que el correo fluye hacia y desde la organización a través de conectores y sin usar conectores.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818848"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577721"
 ---
-# <a name="mail-flow-map-report"></a><span data-ttu-id="87fdc-103">Informe de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="87fdc-103">Mail flow map report</span></span>
+# <a name="mail-flow-map-in-the-security--compliance-center"></a><span data-ttu-id="c6bf0-103">Mapa de flujo de correo en el centro de seguridad & cumplimiento</span><span class="sxs-lookup"><span data-stu-id="c6bf0-103">Mail flow map in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="87fdc-104">Este informe proporciona información sobre cómo fluye el correo a través de la organización.</span><span class="sxs-lookup"><span data-stu-id="87fdc-104">This report gives insights as to how mail flows through your organization.</span></span> <span data-ttu-id="87fdc-105">Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.</span><span class="sxs-lookup"><span data-stu-id="87fdc-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
+<span data-ttu-id="c6bf0-104">El **mapa de flujo de correo** en el [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento ofrece información sobre cómo fluye el correo a través de la organización.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-104">The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization.</span></span> <span data-ttu-id="c6bf0-105">Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-105">You can use this information to learn patterns, identify anomalies, and fix issues as they occur.</span></span>
 
-![El informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mail-flow-map-selected.png)
+![Widget mail Flow Map en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a><span data-ttu-id="87fdc-107">Widget de mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="87fdc-107">Mail flow map widget</span></span>
+<span data-ttu-id="c6bf0-107">De forma predeterminada, el widget muestra el patrón de flujo de correo del día anterior en un gráfico conocido como diagrama de *Sankey* .</span><span class="sxs-lookup"><span data-stu-id="c6bf0-107">By default, the widget shows the mail flow pattern from the previous day in a chart known as a *Sankey* diagram.</span></span> <span data-ttu-id="c6bf0-108">Puede usar la flecha izquierda ![ y la flecha ](../../media/scc-left-arrow.png) derecha a la izquierda ![ ](../../media/scc-right-arrow.png) para mostrar información de distintos días.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-108">You can use the left arrow ![Left arrow](../../media/scc-left-arrow.png) and right arrow ![Right arrow](../../media/scc-right-arrow.png) to show information from different days.</span></span> <span data-ttu-id="c6bf0-109">Cada color diferente representa el flujo de correo a través de un conector de entrada o de salida diferente (o sin usar conectores).</span><span class="sxs-lookup"><span data-stu-id="c6bf0-109">Each different color represents mail flow over a different inbound or outbound connector (or without using connectors).</span></span> <span data-ttu-id="c6bf0-110">Si pasa el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-110">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-<span data-ttu-id="87fdc-108">De forma predeterminada, el mapa de flujo de correo muestra el patrón de flujo de correo de alto nivel del día anterior.</span><span class="sxs-lookup"><span data-stu-id="87fdc-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="87fdc-109">Puede usar las flechas izquierda y derecha para los distintos días.</span><span class="sxs-lookup"><span data-stu-id="87fdc-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="87fdc-110">Al colocar el cursor del mouse sobre cada área del informe, se mostrará el volumen de correo desde y hacia la organización, tal y como se muestra en el siguiente diagrama:</span><span class="sxs-lookup"><span data-stu-id="87fdc-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-mail-flow-map"></a><span data-ttu-id="c6bf0-111">Vista informes para el mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="c6bf0-111">Report view for the Mail flow map</span></span>
 
-![Flechas izquierda y derecha en el widget mapa de flujo de correo](../../media/mail-flow-map-widget.png)
+<span data-ttu-id="c6bf0-112">Al hacer clic en el widget **mapa de flujo de correo** , irá al informe de mapa de flujo de **correo** .</span><span class="sxs-lookup"><span data-stu-id="c6bf0-112">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span>
 
-## <a name="mail-flow-map-basics"></a><span data-ttu-id="87fdc-112">Conceptos básicos del mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="87fdc-112">Mail flow map basics</span></span>
+<span data-ttu-id="c6bf0-113">Los siguientes gráficos están disponibles en la vista de informe:</span><span class="sxs-lookup"><span data-stu-id="c6bf0-113">The following charts are available in the report view:</span></span>
 
-<span data-ttu-id="87fdc-113">Al hacer clic en el widget **mapa de flujo de correo** , irá al informe de mapa de flujo de **correo** .</span><span class="sxs-lookup"><span data-stu-id="87fdc-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="87fdc-114">Aquí puede ver el nivel de informe más granular, puede hacer clic en ver tabla de detalles para ver los datos detallados.</span><span class="sxs-lookup"><span data-stu-id="87fdc-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="87fdc-115">También puede descargar el informe detallado haciendo clic en Request Report.</span><span class="sxs-lookup"><span data-stu-id="87fdc-115">You can also download the detailed report by clicking Request report.</span></span>
+- <span data-ttu-id="c6bf0-114">**Mostrar datos para: información general**: esta es básicamente una vista más amplia del widget.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-114">**Show data for: Overview**: This is basically a larger view of the widget.</span></span> <span data-ttu-id="c6bf0-115">Si pasa el mouse sobre un color específico, se muestra el número de mensajes para ese tipo de conector.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-115">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-![Vista general en el informe de mapa de flujo de correo](../../media/mail-flow-map-overview.png)
+  ![Vista general en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a><span data-ttu-id="87fdc-117">Detalles</span><span class="sxs-lookup"><span data-stu-id="87fdc-117">Details</span></span>
+- <span data-ttu-id="c6bf0-117">**Mostrar datos para: detalles**: esta vista muestra detalles sobre los conectores y los dominios de destino.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-117">**Show data for: Detail**: This view shows details about the connectors and destination domains.</span></span> <span data-ttu-id="c6bf0-118">Se enumeran los principales dominios del remitente y el destinatario, y el resto se colocan en **otros**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-118">The top sender and recipient domains are listed, and the rest are put in **Others**.</span></span> <span data-ttu-id="c6bf0-119">Si pasa el mouse sobre un color y una sección específicos, se muestra el número de mensajes.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-119">If you hover over a specific color and section, the number of messages is displayed.</span></span>
 
-<span data-ttu-id="87fdc-118">De forma predeterminada, **Mostrar datos para** se establece en el valor **información general**.</span><span class="sxs-lookup"><span data-stu-id="87fdc-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="87fdc-119">Al hacer clic en la lista desplegable y seleccionar **detalles**, la vista cambia a los detalles del nivel de dominio.</span><span class="sxs-lookup"><span data-stu-id="87fdc-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
+  ![Vista de detalles en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Seleccione detalle en Mostrar datos para en la vista de información general en el informe de mapa de flujo de correo](../../media/mail-flow-map-select-detail.png)
+<span data-ttu-id="c6bf0-121">Si hace clic en **filtros** en una vista de informe, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-121">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="87fdc-121">Se enumeran los dominios principales de remitente y destinatario, y el resto se colocará en **otros** como se muestra en los siguientes diagramas:</span><span class="sxs-lookup"><span data-stu-id="87fdc-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
+<span data-ttu-id="c6bf0-122">Para enviar por correo electrónico el informe de un intervalo de fechas específico a uno o más destinatarios, haga clic en **solicitar descarga**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
 
-![Vista de detalles en el informe de mapa de flujo de correo](../../media/mail-flow-map-detail.png)
+<span data-ttu-id="c6bf0-123">La información relacionada se muestra debajo del mapa de flujo de correo si está disponible (por ejemplo, la [revisión posible del bucle de correo](mfi-mail-loop-insight.md)).</span><span class="sxs-lookup"><span data-stu-id="c6bf0-123">Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).</span></span>
 
-## <a name="related-insights"></a><span data-ttu-id="87fdc-123">Información relacionada</span><span class="sxs-lookup"><span data-stu-id="87fdc-123">Related insights</span></span>
+## <a name="details-table-view-for-the-mail-flow-map"></a><span data-ttu-id="c6bf0-124">Vista de tabla de detalles del mapa de flujo de correo</span><span class="sxs-lookup"><span data-stu-id="c6bf0-124">Details table view for the Mail flow map</span></span>
 
-<span data-ttu-id="87fdc-124">La información relacionada se muestra debajo del mapa de flujo de correo si está disponible (por ejemplo, el conocimiento del dominio del remitente o el conocimiento del bucle de correo).</span><span class="sxs-lookup"><span data-stu-id="87fdc-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
+<span data-ttu-id="c6bf0-125">Si hace clic en **ver tabla de detalles** en una vista de informe, se mostrará la siguiente información:</span><span class="sxs-lookup"><span data-stu-id="c6bf0-125">If you click **View details table** in a report view, the following information is shown:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="87fdc-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="87fdc-125">See also</span></span>
+- <span data-ttu-id="c6bf0-126">**Fecha**</span><span class="sxs-lookup"><span data-stu-id="c6bf0-126">**Date**</span></span>
+- <span data-ttu-id="c6bf0-127">**Categoría**</span><span class="sxs-lookup"><span data-stu-id="c6bf0-127">**Category**</span></span>
+- <span data-ttu-id="c6bf0-128">**Conector/proveedor de servicios de terceros**</span><span class="sxs-lookup"><span data-stu-id="c6bf0-128">**Connector / Third-party service provider**</span></span>
+- <span data-ttu-id="c6bf0-129">**Dominio de remitente/destinatario**</span><span class="sxs-lookup"><span data-stu-id="c6bf0-129">**Sender/Recipient domain**</span></span>
+- <span data-ttu-id="c6bf0-130">**Número de mensajes**</span><span class="sxs-lookup"><span data-stu-id="c6bf0-130">**Message count**</span></span>
 
-<span data-ttu-id="87fdc-126">Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="87fdc-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="c6bf0-131">Si hace clic en **filtros** en una vista de tabla de detalles, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-131">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="c6bf0-132">Si selecciona una fila, se muestran detalles similares en un control flotante:</span><span class="sxs-lookup"><span data-stu-id="c6bf0-132">If you select a row, similar details are shown in a flyout:</span></span>
+
+![Flotante de detalles de la tabla de detalles en el mapa de flujo de correo](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+<span data-ttu-id="c6bf0-134">Para enviar por correo electrónico el informe de un intervalo de fechas específico a uno o más destinatarios, haga clic en **solicitar descarga**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-134">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="c6bf0-135">Para volver a la vista informes, haga clic en **Ver informe**.</span><span class="sxs-lookup"><span data-stu-id="c6bf0-135">To go back to the reports view, click **View report**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="c6bf0-136">Vea también</span><span class="sxs-lookup"><span data-stu-id="c6bf0-136">See also</span></span>
+
+<span data-ttu-id="c6bf0-137">Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="c6bf0-137">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
