@@ -1,5 +1,5 @@
 ---
-title: Administración del ciclo de vida de los documentos de producto almacenados en SharePoint con etiquetas de retención
+title: Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Este artículo muestra cómo administrar el ciclo de vida de los documentos relacionados con el producto en SharePoint mediante etiquetas de retención. Este proceso usa los metadatos del documento para clasificar el contenido, aplica automáticamente las etiquetas de retención y configura la retención basada en eventos.
-ms.openlocfilehash: b3b71757d887781a12c71f2c105409827230f33c
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
+ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552532"
+ms.locfileid: "46560673"
 ---
-# <a name="manage-the-lifecycle-of-product-documents-stored-in-sharepoint-with-retention-labels"></a>Administración del ciclo de vida de los documentos de producto almacenados en SharePoint con etiquetas de retención
+# <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-En este artículo se describe cómo administrar el ciclo de vida de los documentos relacionados con el producto que se almacenan en SharePoint mediante el uso de etiquetas de retención aplicadas automáticamente y la configuración de la retención basada en eventos.
+En este artículo se describe cómo puede administrar el ciclo de vida de los documentos que se almacenan en SharePoint mediante el uso de etiquetas de retención aplicadas automáticamente y la retención basada en eventos.
 
 La función de aplicación automática usa metadatos de SharePoint para la clasificación de documentos. El ejemplo en este artículo sirve para documentos relacionados con el producto, pero pueden usarse los mismos conceptos en otros escenarios. Por ejemplo, en la industria del petróleo y gas, podría usarla para administrar el ciclo de vida de los documentos sobre activos físicos, como plataformas petrolíferas, registros de pozos o licencias de producción. En la industria de servicios financieros, podría administrar documentos de cuentas bancarias, hipotecas y contratos de seguros. En el sector público, podría administrar los permisos de construcción o los formularios fiscales.
 
@@ -80,10 +80,8 @@ Las directivas de cumplimiento y gobierno de datos de la empresa de fabricación
 | Especificaciones del producto      | 5 años luego de detener la producción  | Eliminar                                       |
 | Acuerdos del producto          | 10 años luego de detener la producción | Revisar                                       |
 | Manuales de usuario                | 5 años luego de detener la producción  | Eliminar                                       |
-| Cualquier otro tipo de documento | No conservar activamente  | Eliminar cuando el documento tenga una antigüedad de más de 3 años<sup>\*</sup>  |
+| Cualquier otro tipo de documento | No conservar activamente  | Eliminar cuando el documento tenga una antigüedad de más de 3 años <br /><br /> Se considera que un documento tiene una antigüedad de más de 3 años si no se ha modificado en los últimos 3 años. |
 |||
-
-   <sup>\*</sup>Se considera que un documento tiene una antigüedad de más de 3 años si no se ha modificado en los últimos 3 años.
 
 Se usa el Centro de cumplimiento de Microsoft 365 para crear las siguientes [etiquetas de retención](retention.md#retention-labels):
 
