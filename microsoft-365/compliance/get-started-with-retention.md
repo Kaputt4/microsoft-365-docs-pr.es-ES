@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560767"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588178"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -71,6 +71,7 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 |Cumplir con la norma 17a-4 de la SEC|[Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
 |Obtener comprobación de la eliminación de contenido cuando este se elimine al final de su período de retención|[Eliminación de registros](disposition.md#disposition-of-records) |
+| Supervisar cómo y dónde se aplican las etiquetas de retención | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentación de usuario final para las etiquetas de retención
 
