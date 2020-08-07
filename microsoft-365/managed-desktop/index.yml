@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Documentación y recursos del Escritorio administrado de Microsoft
+### YamlMime:Landing
+title: Documentación del Escritorio administrado de Microsoft
+summary: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
 metadata:
   title: Documentación del Escritorio administrado de Microsoft
-  description: null
-  keywords: 'dispositivos, aplicaciones, administración'
+  description: Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: 'Escritorio administrado de Microsoft combina Microsoft 365 Enterprise, la administración de dispositivos basada en la nube de Microsoft y la supervisión de seguridad, lo que le permite liberar a los equipos de TI para que se concentren en las necesidades básicas de la empresa.'
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: '<p>Introducción al Escritorio administrado de Microsoft para responsables de la toma de decisiones: qué es, cómo funciona y que puede hacer por usted</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: ¿Qué es el Escritorio administrado de Microsoft?
-          - href: service-description/index.md
-            html: <p>Descripción detallada de todas las partes del Escritorio administrado de Microsoft</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: Descripción del servicio
-          - href: get-ready/index.md
-            html: <p>Todos los pasos necesarios para preparar el entorno y la organización para trabajar con el servicio</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: Preparación
-          - href: get-started/index.md
-            html: '<p>Incorpore el Escritorio administrado de Microsoft a su organización, incluida la configuración de dispositivos y la implementación de aplicaciones</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: Introducción
-          - href: working-with-managed-desktop/index.md
-            html: <p>Todas sobre las operaciones diarias con el servicio</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: Trabajar con el Escritorio administrado de Microsoft
-  - title: Nuevos artículos y publicaciones del blog
-    items:
-      - type: paragraph
-        text: Lea la información más reciente e importante que necesita conocer.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[Hoja de ruta] La hoja de ruta completa para el Escritorio administrado de Microsoft'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[Notas del producto] Estudio: creciente demanda de servicios de Escritorio administrado'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[Libro electrónico] Deleite a su empresa con un espacio de trabajo moderno'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: Vídeos
-    items:
-      - type: paragraph
-        text: Información sobre las ventajas del Escritorio administrado de Microsoft ofrecidas por el Vicepresidente de tecnología de los Indiana Pacers.
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: El administrador general del Escritorio administrado de Microsoft comparte todos los aspectos del servicio en la conferencia anual de Ignite.
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564148"
+landingContent:
+- title: Sobre el Escritorio administrado de Microsoft
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ¿Qué es el Escritorio administrado de Microsoft?
+      url: /microsoft-365/managed-desktop/intro/
+    - text: Descripción del servicio
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: Preparación
+      url: get-ready/index.md
+    - text: Introducción
+      url: get-started/index.md
+    - text: Trabajar con el Escritorio administrado de Microsoft
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: Nuevos artículos y publicaciones del blog
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[Guía básica] La guía básica completa del Escritorio administrado de Microsoft'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[Notas del producto] Estudio: creciente demanda de servicios de Escritorio administrado'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[Libro electrónico] Deleite a su empresa con un espacio de trabajo moderno'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: Vídeos
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Obtenga más información sobre las ventajas del Escritorio administrado de Microsoft del Director de ingeniería en Lloyds Banking Group.
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: Puntos destacados del Escritorio administrado de Microsoft en la Conferencia anual de Ignite
+      url: /microsoft-365/managed-desktop/service-description

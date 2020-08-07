@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035665"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578000"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -112,7 +112,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - El registro de auditoría correspondiente puede tardar hasta 30 minutos o 24 horas después de que se produzca el evento en mostrarse en los resultados de una búsqueda de registro de auditoría. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
 
-  |**Característica o servicio de Microsoft 365**|**30 minutos**|**24 horas**|
+  |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |:-----|:-----:|:-----:|
   |Esquema de Protección e Inteligencia contra amenazas|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -172,26 +172,26 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
 4. Configurar los siguientes criterios de búsqueda: 
 
-    a. **Actividades**: haga clic en la lista desplegable para mostrar las actividades que puede buscar. Las actividades administrativas y de usuario se organizan en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar**Mostrar los resultados de todas las actividades**, se mostrarán los resultados de todas las actividades que el usuario o el grupo de usuarios seleccionado ha realizado.
+   1. **Actividades**: haga clic en la lista desplegable para mostrar las actividades que puede buscar. Las actividades administrativas y de usuario se organizan en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividades para seleccionar todas las actividades del grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de que ejecute la búsqueda, solo se muestran las entradas seleccionadas del registro de auditoría de las actividades. Al seleccionar**Mostrar los resultados de todas las actividades**, se mostrarán los resultados de todas las actividades que el usuario o el grupo de usuarios seleccionado ha realizado.
 
-    Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de**Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
+      Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de**Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
 
-    b. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
+   1. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
 
-    > [!TIP]
-    > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
+      > [!TIP]
+      > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
 
-    c. **Usuarios**: haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
+   1. **Usuarios**: haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
 
-    d. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la dirección URL completa, o si escribe solo una parte de esta, de no incluir espacios ni caracteres especiales.
+   1. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la dirección URL completa, o si escribe solo una parte de esta, de no incluir espacios ni caracteres especiales.
 
-    Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
+      Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
 
-   **SUGERENCIAS**
-
-   - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para que se devuelvan todas las entradas del sitio; por ejemplo, **"https://contoso-my.sharepoint.com/personal/*"**.
-
-   - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,** "* Customer_Profitability_Sample.csv"**.
+      > [!TIP]
+      >
+      > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para que se devuelvan todas las entradas del sitio; por ejemplo, **"https://contoso-my.sharepoint.com/personal/*"**.
+      >
+      > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,** "* Customer_Profitability_Sample.csv"**.
 
 5. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
@@ -313,17 +313,17 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
 |[Actividades de Yammer](#yammer-activities)|[ Actividades en Microsoft Power Automate ](#microsoft-power-automate-activities)|[ Actividades en Microsoft Power Apps ](#microsoft-power-apps-activities)|
 |[Actividades de Microsoft Stream](#microsoft-stream-activities)|[Actividades del explorador de contenido](#content-explorer-activities)|[Actividades de cuarentena](#quarantine-activities)|
 |[Actividades de Microsoft Forms](#microsoft-forms-activities)|[Actividades de la etiqueta de confidencialidad](#sensitivity-label-activities)|[Actividades de administración de Exchange](#exchange-admin-audit-log)|
-||||
+|[Actividades de las directivas y etiquetas de retención](#retention-policy-and-retention-label-activities).|||
 
 ### <a name="file-and-page-activities"></a>Actividades de páginas y archivos
 
 En la siguiente tabla se describen las actividades de archivos y páginas en SharePoint en línea y OneDrive para la empresa.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Archivo al que se tiene acceso|FileAccessed|Cuenta de sistema o usuario que tiene acceso al archivo.|
 |(ninguno)|FileAccessedExtended|Esto está relacionado con la actividad "Archivo al que se tiene acceso" (FileAccessed). Se registra un evento FileAccessedExtended cuando la misma persona tiene acceso continuamente a un archivo durante un largo período (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se tiene acceso continuamente a un archivo. Esto ayuda a reducir el ruido de varios registros FileAccessed para lo que básicamente es la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (el más importante).|
-|Etiqueta cambiada de política de cumplimiento |ComplianceSettingChanged|Se aplicó o se quitó una etiqueta de retención de un documento. Este evento se activa cuando una etiqueta de retención es aplicada manual o automáticamente a un mensaje.|
+|Se ha cambiado la etiqueta de retención de un archivo|ComplianceSettingChanged|Se aplicó o se quitó una etiqueta de retención de un documento. Este evento se activa cuando una etiqueta de retención es aplicada manual o automáticamente a un mensaje.|
 |Estado de registro cambiado a bloqueado|LockRecord|El estado de registro de una etiqueta de retención que clasifica un documento como un registro ha siso bloqueado. Esto significa que el documento no se puede modificar ni eliminar. Solo los usuarios que tengan al menos asignado el permiso de colaborador para un sitio podrán cambiar el estado de registro de un documento.|
 |Cambiado el estado del registro a bloqueado|UnlockRecord|El estado de registro de una etiqueta de retención que clasifica un documento como un registro ha sido bloqueado. Esto significa que el documento puede ser modificado o eliminado. Solo los usuarios que tengan al menos asignado el permiso de colaborador para un sitio podrán cambiar el estado de registro de un documento.|
 |Archivo verificado|FileCheckedIn|El usuario inserta en el repositorio un documento que se extrajo de una biblioteca de documentos.|
@@ -332,7 +332,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo eliminado|FileDeleted|El usuario elimina un documento de un sitio.|
 |Archivo eliminado de la papelera de reciclaje|FileDeletedFirstStageRecycleBin|El usuario elimina un archivo de la papelera de reciclaje de un sitio.|
 |Archivo eliminado de la papelera de reciclaje de segundo nivel|FileDeletedSecondStageRecycleBin|El usuario elimina un archivo de la papelera del segundo nivel de la papelera de reciclaje de un sitio.|
-|Política de cumplimiento de etiqueta borrada|ComplianceRecordDelete|Un documento que se clasificó como un registro fue eliminado. Un documento se considera un registro cuando se le aplica una etiqueta de retención que clasifica el contenido como un registro.|
+|Política de cumplimiento de etiqueta borrada|ComplianceRecordDelete|Se eliminó un documento que se marcó como un registro. Un documento se considera un registro cuando se le aplica una etiqueta de retención que marca el contenido como un registro.|
 |Desfase detectado de la sensibilidad del documento |DocumentSensitivityMismatchDetected|El usuario carga un documento a un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de mayor prioridad que la que se aplica al sitio. Por ejemplo, un documento con la etiqueta Confidential se carga en un sitio con la etiqueta General. <br/><br/> Este evento no se activa si el documento tiene una etiqueta de confidencialidad de menor prioridad que la que se ha aplicado al sitio. Por ejemplo, un documento con la etiqueta General se carga en un sitio con la etiqueta Confidential. Para obtener más información sobre la prioridad de las etiquetas de confidencialidad, vea [prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
@@ -374,7 +374,7 @@ En estas y otras situaciones, verá que se crearon varios registros de auditorí
 
 La siguiente tabla describe las actividades de archivos y páginas en SharePoint en línea y OneDrive para empresas. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Carpeta copiada|FolderCopied|El usuario copia una carpeta de un sitio a otra ubicación en SharePoint o en OneDrive para Empresas.|
 |Carpeta creada|FolderCreated|El usuario crea una carpeta en un sitio.|
@@ -391,7 +391,7 @@ La siguiente tabla describe las actividades de archivos y páginas en SharePoint
 
 En la siguiente tabla se describen las actividades relacionadas cuando los usuarios interactúan con listas y elementos de lista en SharePoint en línea. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Lista creada|ListCreated|Un usuario ha creado una lista de SharePoint.|
 |Columna de lista creada|ListColumnCreated|Un usuario ha creado una columna de lista de SharePoint. Una columna de lista es una columna que está adjunta a una o más listas de SharePoint.|
@@ -423,7 +423,7 @@ La siguiente tabla describe las actividades de solicitud de acceso y uso compart
 > [!NOTE]
 > Los usuarios pueden ser *miembros* o *invitados*basados en la propiedad UserType del objeto de usuario. Un miembro es normalmente un empleado, y un invitado es normalmente un colaborador externo de la organización. Cuando un usuario acepta una invitación de uso compartido (y todavía no forma parte de la organización), se crea una cuenta de invitado para él en el directorio de la organización. Una vez que el usuario invitado tenga una cuenta en su directorio, los recursos pueden compartirse directamente con él (sin requerir una invitación).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Nivel de permiso agregado a la colección de sitios|PermissionLevelAdded|Un nivel de permisos se agregó a una colección de sitios.|
 |Solicitud de acceso aceptada|AccessRequestAccepted|Una solicitud de acceso a un sitio, carpeta o documento que se ha aceptado y al usuario solicitante se le ha concedido el acceso.|
@@ -455,7 +455,7 @@ La siguiente tabla describe las actividades de solicitud de acceso y uso compart
 
 La siguiente tabla enumera la sincronización de archivos de actividades en SharePoint en línea y OneDrive para empresas.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Equipo permitido para sincronizar archivos|ManagedSyncClientAllowed|El usuario establece correctamente una relación de sincronización con un sitio. La relación de sincronización es correcta porque el equipo del usuario es un miembro de un dominio que se ha agregado a la lista de dominios (denominada * lista de destinatarios seguros*) que puede obtener acceso a las bibliotecas de documentos de su organización. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
 |Computadora bloqueada de los archivos de sincronización|UnmanagedSyncClientBlocked|El usuario intenta establecer una relación de sincronización con un sitio desde una computadora que no es un miembro del dominio de la organización o es un miembro de un dominio que no se ha agregado a la lista de dominios (denominada la *lista de destinatarios seguros) *que puede tener acceso a las librerías de documentos de su organización. La relación de sincronización no se permite y el equipo del usuario queda bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos. <br/><br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).|
@@ -469,7 +469,7 @@ La siguiente tabla enumera la sincronización de archivos de actividades en Shar
 
 La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con usar grupos para dar (y revocar) acceso a sitios. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Administradores de la colección de sitios agregados|SiteCollectionAdminAdded|El administrador de la colección de sitios o el propietario agrega una persona como administrador de la colección de sitios a un sitio. Los administradores de colección de sitios tienen permisos de control total para la colección de sitios y todos los subsitios. Esta actividad también se registra cuando un administrador se concede acceso a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el Centro de administración de SharePoint o [mediante el Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Usuario o grupo agregado al grupo de SharePoint|AddedToGroup|El usuario ha agregado a un miembro o un invitado a un grupo de SharePoint. Esto puede haber sido una acción intencionada o el resultado de otra actividad, como un evento de uso compartido.|
@@ -493,7 +493,7 @@ La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con
 
 En la tabla siguiente se enumeran los eventos que se producen de las tareas de administración del sitio en SharePoint en línea. Como se ha explicado anteriormente, los registros de auditoría de algunas actividades de SharePoint indicarán que el usuario app@sharepoint ha realizado la actividad en nombre de usuario o administrador que inició la acción. Para obtener más información, lea [El usuario app\@sharepoint en los registros de auditoría](#the-appsharepoint-user-in-audit-records).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Ubicación de datos añadidos permitidos|AllowedDataLocationAdded|Un administrador global o de SharePoint ha agregado una ubicación de datos permitida en un entorno multi geo.|
 |Agente de usuario exento agregado|ExemptUserAgentSet|El administrador global o de SharePoint agrega un agente de usuario a la lista de agentes de usuario exentos en el Centro de administración de SharePoint.|
@@ -533,7 +533,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
  También puede buscar actividades de buzón usando el cmdlet[ Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog)en el PowerShell de Exchange en línea.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations). |
 |Permisos de buzón de delegado agregados|AddMailboxPermissions|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón.|
@@ -556,13 +556,14 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Reglas de la bandeja de entrada actualizadas desde el cliente de Outlook|UpdateInboxRules|El propietario de un buzón u otro usuario con acceso al buzón, modificó una regla de la bandeja de entrada en el Outlook del cliente.|
 |Mensaje actualizado|Actualizar|Un mensaje o sus propiedades han cambiado.|
 |Usuario que ha iniciado sesión en un buzón|MailboxLogin|El usuario inició sesión en su buzón.|
+|Etiquetar mensaje como un registro||Un usuario ha aplicado una etiqueta de retención a un mensaje de correo electrónico y esa etiqueta está configurada para marcar el elemento como un registro. |
 ||||
 
 ### <a name="sway-activities"></a>Actividades de Sway
 
 En la siguiente tabla se enumeran las actividades de usuario y de administrador de Sway. Sway es una aplicación de Microsoft 365 que permite a los usuarios recopilar, aplicar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en la Web. Para obtener más información, consulte [Preguntas más frecuentes sobre Sway: ayuda del administrador](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |El nivel de uso compartido de Sway ha cambiado|SwayChangeShareLevel|El usuario cambió el nivel de uso compartido de un Sway. Este evento captura al usuario cambiando el ámbito del uso compartido asociado con un Sway; por ejemplo, público frente a dentro de la organización.|
 |Sway creado|SwayCreate|El usuario crea un Sway.|
@@ -584,7 +585,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
 
 En la tabla siguiente se enumeran las actividades de administración de usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario al usar el Centro de administración de Microsoft 365 o el Portal de administración de Azure.
 
-|**Actividad**|**Operación**|**Descripción**|
+|Actividad|Operación|Descripción|
 |:-----|:-----|:-----|
 |Usuario agregado|Agregar usuario|Secreó una cuenta de usuario.|
 |Licencia de usuario cambiada|Cambiar licencia de usuario|La licencia que se ha asignado a un usuario ha cambiado. Para ver qué licencias han cambiado, vea la actividad correspondiente **Usuario actualizado**.|
@@ -600,7 +601,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
 
 En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario agrega o cambia un grupo de Microsoft 365 o cuando un administrador crea un grupo de seguridad mediante el Centro de administración de Microsoft 365 o el Portal de administración de Azure. Para obtener más información sobre los grupos de Office 365, consulte[Ver, crear y eliminar grupos en el Centro de administración de Microsoft Office 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Grupo agregado|Agregar grupo|Se ha creado un grupo.|
 |Miembro agregado a un grupo|Agregar miembro a un grupo|Un miembro se ha agregado a un grupo.|
@@ -613,7 +614,7 @@ En la siguiente tabla se enumeran las actividades de administración de grupos q
 
 En la siguiente tabla se enumeran las actividades de administración de aplicaciones que se registran cuando un administrador agrega o cambia una aplicación que se ha registrado en Azure AD. Cualquier aplicación que se base en Azure AD para la autenticación debe registrarse en el directorio.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Entrada de delegación agregada|Agregar entrada de delegación|Un permiso de autenticación se ha creado o concedido a una aplicación en Azure AD.|
 |Servicio principal agregado|Agregar servicio principal|Una aplicación se ha registrado en Azure AD. Una aplicación es representada mediante un servicio principal en el directorio.|
@@ -628,9 +629,9 @@ En la siguiente tabla se enumeran las actividades de administración de aplicaci
 
 En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador controla los roles de administración en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Agregar un miembro a un rol|Agregar miembro de rol a un rol|Se ha agregado un usuario a un rol de administrador en Microsoft 365.|
+|Agregar miembro a un rol|Agregar miembro de rol a un rol|Se ha agregado un usuario a un rol de administrador en Microsoft 365.|
 |Se ha removido un usuario de un rol de directorio |Quitar miembro de rol de un rol|Se ha eliminado un usuario desde un rol de administrador en Microsoft 365.|
 |Establecer la información de contacto de la empresa|Establecer la información de contacto de la empresa|Se han actualizado las preferencias de contacto a nivel empresarial de la organización. Esto incluye las direcciones de correo electrónico del correo electrónico relacionado con las suscripciones enviado mediante Microsoft 365, así como las notificaciones técnicas sobre los servicios.|
 ||||
@@ -639,7 +640,7 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
 
 En la siguiente tabla se enumeran las actividades relacionadas con los dominios y los directorios de Azure AD que se registran cuando un administrador gestiona la organización en el Centro de administración de Microsoft 365 o en el Portal de administración de Azure.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Dominio agregado a la empresa|Agregar dominio a la empresa|Se ha agregado un dominio a la organización.|
 |Se ha agregado un socio al directorio|Agregar un socio a la empresa|Se ha agregado un socio (administrador delegado) a la organización.|
@@ -688,7 +689,7 @@ El registro de auditoría de Power BI no está habilitado de forma predeterminad
 
 Workplace Analytics ofrece información sobre cómo colaboran los grupos en la organización. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tengan asignado el rol de administrador o de analista en Workplace Analytics. Los usuarios a los que se les ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tengan asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema y podrán preparar, cargar y comprobar datos en la organización en Workplace Analytics Para obtener más información, consulte[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Vínculo de acceso de OData |AccessedOdataLink|El analista ha accedido al vínculo OData para una consulta.|
 |Consulta cancelada|CanceledQuery|El analista canceló una consulta en ejecución.|
@@ -724,7 +725,7 @@ Para obtener una descripción de las actividades de la aplicación Turnos, consu
 
 En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista**Usuarios** para restringir los resultados de la búsqueda.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Directiva de retención de datos cambiada|SoftDeleteSettingsUpdated|Un administrador superior actualizó la configuración de la directiva de retención de datos de la red a eliminación permanente o eliminación temporal. Solo los administradores superiores pueden realizar esta operación.|
 |Configuración de red cambiada|NetworkConfigurationUpdated|Un administrador superior o de red cambió la configuración de la red de Yammer. Esto incluye establecer el intervalo de exportación de datos y habilitar el chat.|
@@ -761,7 +762,7 @@ Puede buscar el registro de auditoría para actividades en Microsoft Stream. Ent
 
 En la tabla siguiente, se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Archivo al que se ha accedido|LabelContentExplorerAccessedItem|Un administrador (o un usuario que sea miembro del grupo de roles de Visor de contenido del explorador de contenido) usa el explorador de contenido para ver un mensaje de correo electrónico o un documento de OneDrive o SharePoint.|
 ||||
@@ -770,7 +771,7 @@ En la tabla siguiente, se enumeran las actividades del explorador de contenido q
 
 En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Mensaje de cuarentena eliminado|QuarantineDelete|Un usuario eliminó un mensaje de correo que se consideró peligroso.|
 |Mensaje de cuarentena exportado|QuarantineExport|Un usuario exportó un mensaje de correo que se consideró peligroso.|
@@ -788,7 +789,7 @@ A continuación, en las descripciones, algunas operaciones contienen parámetros
 > [!NOTE]
 > Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de formularios que realizan los coautores y respondedores anónimos](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Comentario creado|CreateComment|El propietario del formulario ha añadido comentarios o puntuaciones a un cuestionario.|
 |Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario.|
@@ -825,21 +826,21 @@ Forms admite la colaboración al diseñar formularios y al analizar las respuest
 
 En la siguiente tabla se describen las actividades y la información de auditoría del registro de auditoría en relación con las actividades realizadas por los coautores y respondedores anónimos.
 
-|**Tipo de actividad**|**Usuario interno o externo**|**Identificador de usuario que ha iniciado sesión**|**Organización que ha iniciado sesión**|**Tipo de usuario de Forms**|
+|Tipo de actividad|Usuario interno o externo|Identificador de usuario que ha iniciado sesión|Organización que ha iniciado sesión|Tipo de usuario de Forms|
 |:-----|:-----|:-----|:-----|:-----|
 |Actividades de coautoría|Interno|UPN|Organización del propietario del formulario|Coautor|
 |Actividades de coautoría|Externo|UPN<br>|Organización del coautor<br>|Coautor|
-|Actividades de coautoría|Externo|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario<br>|Coautor|
+|Actividades de coautoría|Externo|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La segunda parte del Id. es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario<br>|Coautor|
 |Actividades de respuesta|Externo|UPN<br>|Organización del usuario que responde<br>|Responder|
-|Actividades de respuesta|Externo|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
-|Actividades de respuesta|Anónimo|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La segunda parte del ID. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
+|Actividades de respuesta|Externo|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La segunda parte del Id. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
+|Actividades de respuesta|Anónimo|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La segunda parte del Id. de usuario es un hash, que será diferente para distintos usuarios)|Organización del propietario del formulario|Responder|
 ||||
 
 ### <a name="sensitivity-label-activities"></a>Actividades de la etiqueta de confidencialidad
 
 En la tabla siguiente se enumeran los eventos que se producen a partir de las tareas de etiquetado para los sitios de SharePoint Online y Teams.
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Etiqueta de confidencialidad aplicada al sitio|SensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un sitio de SharePoint o Teams.|
 |Etiqueta de confidencialidad eliminada del sitio|SensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un sitio de SharePoint o Teams.|
@@ -847,6 +848,21 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 |Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un documento mediante Office en la web o una directiva de etiquetado automático.|
 |Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha eliminado una etiqueta de confidencialidad de un documento mediante Office en la web o una directiva de etiquetado automático.|
 ||||
+
+### <a name="retention-policy-and-retention-label-activities"></a>Actividades de las directivas y etiquetas de retención
+
+|Nombre descriptivo|Operación|Descripción|
+|:-----|:-----|:-----|
+| Opciones configuradas para una directiva de retención |NewRetentionComplianceRule |El administrador estableció la configuración de retención para una nueva directiva de retención. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule).|
+| Etiqueta de retención creada |NewComplianceTag |El administrador creó una etiqueta de retención nueva.|
+| Directiva de retención creada |NewRetentionCompliancePolicy|El administrador creó una nueva directiva de retención.|
+| Configuración eliminada de una directiva de retención| RemoveRetentionComplianceRule<br/>| El administrador eliminó las opciones de configuración de una directiva de retención. Lo más probable es que esta actividad se registre cuando un administrador elimina una directiva de retención o ejecuta el cmdlet [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule).|
+| Etiqueta de retención eliminada |RemoveComplianceTag | El administrador eliminó una etiqueta de retención.|
+| Directiva de retención eliminada |RemoveRetentionCompliancePolicy<br/> |El administrador eliminó una directiva de retención. |
+| Opción de registro normativo habilitada para etiquetas de retención<br/> |SetRestrictiveRetentionUI |El administrador ejecutó el cmdlet [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) para que un administrador pueda seleccionar la opción de configuración de la interfaz de usuario para que una etiqueta de retención marque el contenido como un registro reglamentario.|
+| Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule). |
+| Etiqueta de retención actualizada |SetComplianceTag  | El administrador actualizó una etiqueta de retención existente.|
+| Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen agregar o excluir ubicaciones de contenido a las que se aplica la directiva de retención.|
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
@@ -874,7 +890,6 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    Tenga en cuenta que las mismas actividades de administrador de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría.
-
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

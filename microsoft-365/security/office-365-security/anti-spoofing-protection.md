@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
-ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209036"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577853"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -119,7 +119,7 @@ Para obtener más información acerca de la configuración de DMARC, consulte [U
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Informes acerca de cuántos mensajes se marcan como falsificados
 
-Las organizaciones de EOP pueden usar el informe de **Detecciones de suplantación** en el panel informes del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Informe de detecciones de suplantación](view-email-security-reports.md#spoof-detections-report).
+Las organizaciones de EOP pueden usar el informe de **Detecciones de suplantación** en el panel de Informes del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Informe de detecciones de suplantación](view-email-security-reports.md#spoof-detections-report).
 
 La organización de ATP de Office 365 puede usar el explorador de amenazas en el Centro de seguridad y cumplimiento para ver información acerca de los intentos de suplantación de identidad. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
 
@@ -129,12 +129,12 @@ Se sabe que las listas de correo (también conocidas como listas de discusión) 
 
 Por ejemplo, Gabriela Laureano (glaureano@contoso.com) está interesada en la observación de aves, se une a la lista de correo observadoresdeaves@fabrikam.com y envía el siguiente mensaje a la lista:.
 
-> **De:** “Gabriela Laureano” \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<observadoresdeaves@ejemplo.com\> <br/> 
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br/> 
 **Asunto:** Excelente vista de arrendajos azules en la cima del Monte. Rainier esta semana <br/><br/>¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier?
 
 El servidor de la lista de distribución de correo recibe el mensaje, modifica su contenido y lo reproduce para los miembros de la lista. El mensaje reproducido tiene la misma dirección De: (glaureano@contoso.com), pero se han agregado una etiqueta en la línea de asunto y un pie de página en la parte inferior del mensaje. Este tipo de modificación es común en las listas de distribución de correo y puede producir falsos positivos de suplantación de identidad.
 
-> **De:** “Gabriela Laureano” \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<observadoresdeaves@ejemplo.com\> <br/> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <br/><br/> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? <br/><br/> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
+> **De:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **Para:** Lista de discusión de observadores de aves \<birdwatchers@fabrikam.com\> <br/> **Asunto:** [OBSERVADORESDEAVES] Excelente vista de arrendajos azules en la cima del Monte Rainier esta semana <br/><br/> ¿Alguien quiere echar un vistazo a la vista de esta semana desde el Monte Rainier? <br/><br/> Este mensaje se envió a la lista de discusión de observadores de aves. Puede cancelar la suscripción en cualquier momento.
 
 Para ayudar a que los mensajes de la lista de distribución de correo pasen las comprobaciones contra la suplantación, siga los pasos siguientes en función de si controla la lista de distribución de correo:
 

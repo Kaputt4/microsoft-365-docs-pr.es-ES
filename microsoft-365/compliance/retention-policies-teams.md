@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127387"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577978"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -104,6 +104,8 @@ Estamos trabajando continuamente en la optimización de la funcionalidad de rete
 - **Teams no es compatible con la retención avanzada**. Cuando creas una directiva de retención, si elige la [Configuración avanzada para identificar el contenido que cumple con condiciones específicas](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), las ubicaciones de Teams no están disponibles. Actualmente, la retención en Teams se aplica a todo el contenido de los mensajes de chat y de los canales cuando se seleccionan esas ubicaciones.
 
 - **Los mensajes de Teams en los canales privados no se incluyen cuando se configura una directiva de retención de los mensajes de los canales de Teams.**. Actualmente, los canales privados no son compatibles con las directivas de retención. 
+
+- **Los “me gusta” y otras reacciones no se conservan para los mensajes de canal y de chat de Teams**. Las reacciones de otros en forma de emoticonos no son compatibles con las directivas de retención.
 
 - **Teams puede tardar un máximo de siete días en limpiar los mensajes caducados**. Cuando expire el período de retención, las directivas de retención aplicadas a Teams eliminarán los mensajes de chat y de canal. Pero puede que tarde de tres a siete días en limpiar estos mensajes y eliminarlos permanentemente. Asimismo, los mensajes de chat y canales se podrán buscar con las herramientas de eDiscovery durante el tiempo que transcurra durante el período de retención y cuando los mensajes se eliminan de forma permanente.
     

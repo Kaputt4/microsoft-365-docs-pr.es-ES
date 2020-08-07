@@ -489,28 +489,30 @@
             - name: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: Informe de mapa de flujo de correo
+                - name: Información de mensajes reenviados automáticamente
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Corrección de posible información de bucle de correo
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Corrección de información de reglas de flujo de correo lento
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Mapa de flujo de correo
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: Información de estado de flujo de correo de dominio superior
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: Informe de clientes de autenticación SMTP
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Solucionar la información del dominio del remitente
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: Informe de no entrega
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Información de nuevos dominios a los que se reenvía correo electrónico
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: Información de nuevos usuarios que reenvían correo electrónico
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: Informe de dominios no aceptados
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: Flujo de correo entrante y saliente
+                - name: Informe de no entrega
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Información de flujo de correo entrante y saliente
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Colas y alertas de cola
+                - name: Información de colas
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: Informe de mensajes reenviados automáticamente
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: Reporte de bucle de correo
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: Reporte de reglas de flujo de correo lento
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: Información e informes de clientes de autenticación SMTP
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Información de estado de flujo de correo de dominio superior
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Soluciones de seguridad
           items:
             - name: 'Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles'
