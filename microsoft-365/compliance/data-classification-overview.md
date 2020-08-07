@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430333"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588222"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
-Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerla sea cual sea su ubicación y garantizar que se conserve y elimine en función de las necesidades de la organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
+Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerlo sin importar su ubicación y garantizar que se conserve y elimine en función de las necesidades de su organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
 - el número de elementos que se han clasificado como tipo de información sensible y cuáles son esas clasificaciones;
 - las etiquetas principales de confidencialidad aplicadas en Microsoft 365 y Azure Information Protection;
@@ -99,20 +99,20 @@ La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (c
 ![captura de pantalla de marcador de posición del desglose del contenido según la clasificación de las etiquetas de confidencialidad](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para comenzar a usar las etiquetas, vea:
->- [etiquetas de confidencialidad](sensitivity-labels.md) o, para AIP, [Configuración de la directiva de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy)
+> Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para empezar a usar las etiquetas de confidencialidad, consulte:
+>- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) o, para AIP, [Configuración de la directiva de Information Protection de Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Etiquetas principales de retención que se aplican al contenido
 
-Las etiquetas de retención se usan para administrar la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar cuánto tiempo se conservará un documento antes de eliminarlo una vez que expire el período de retención, independientemente de si debe revisarse antes de eliminarlo, o si debe marcarse como un registro que no puede eliminarse nunca. Para obtener más información, consulte la [información sobre las etiquetas y políticas de retención](retention.md).
+Las etiquetas de retención se usan para administrar la retención y la eliminación de contenido en la organización. Cuando se aplican, pueden usarse para controlar la forma en que se conservará un documento antes de eliminarlo, si debe revisarse antes de eliminarlo, cuándo expira su periodo de retención o si debe marcarse como un registro que no puede eliminarse nunca. Para obtener más información, consulte [Información sobre las etiquetas y directivas de retención](retention.md).
 
 La tarjeta de etiquetas principales de retención aplicadas muestra el número de elementos que tienen una etiqueta de retención determinada.
 
 ![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no hay ningún contenido con una etiqueta de retención aplicada. Para comenzar a usar las etiquetas de retención, vea:
->- [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md)
+> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no hay ningún contenido con etiquetas de retención aplicadas. Para comenzar a usar las etiquetas de retención, vea:
+>- [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
 
