@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Eliminar un buzón inactivo
           href: delete-an-inactive-mailbox.md
-    - name: Monitorizar el gobierno de datos
-      items:
-        - name: Ver la actividad de etiquetas de documentos
-          href: view-label-activity-for-documents.md
-        - name: Ver el uso de etiquetas con el análisis de etiquetas
-          href: label-analytics.md
-        - name: Ver los informes de gobierno de datos
-          href: view-the-data-governance-reports.md
     - name: Más información sobre el gobierno de datos
       items:
         - name: Ver vídeos del equipo de gobierno de datos de Microsoft

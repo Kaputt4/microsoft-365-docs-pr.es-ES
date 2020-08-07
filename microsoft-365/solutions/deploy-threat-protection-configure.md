@@ -1,8 +1,8 @@
 ---
 title: Pasos para configurar las capacidades de protección contra amenazas en Microsoft 365
 description: Aprenda a implementar capacidades y servicios de protección contra amenazas en Microsoft 365 E5.
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522090"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588233"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -95,9 +95,8 @@ Microsoft Threat Protection unifica las alertas, los incidentes, la investigaci�
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) protege a su organización frente a amenazas dañinas en mensajes de correo electrónico (archivos adjuntos y URL), documentos de Office y herramientas de colaboración. En la siguiente tabla se enumeran las características y capacidades de ATP de Office 365 incluidas en Microsoft 365 E5:
 
-|||
-|---|---|
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
+|---|---|
 |[Datos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documentos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Protección contra suplantación de identidad ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Rastreadores de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Investigación y respuesta de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulador de ataque](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
