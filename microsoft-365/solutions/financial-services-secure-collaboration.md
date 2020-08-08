@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Obtenga más información sobre cómo Microsoft 365 ayuda a los servicios financieros a migrar a una plataforma de colaboración moderna, al tiempo que protege los datos y sistemas y les permite cumplir con las normativas
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521212"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597526"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Consideraciones clave sobre el cumplimiento y la seguridad para los mercados de capital y los bancos de Estados Unidos
 
@@ -66,7 +66,7 @@ Teams puede ofrecer un espacio de colaboración para almacenar de forma segura d
 
 Otro escenario común es usar Teams como "sala de datos virtual" para colaborar de forma segura, como al almacenar y administrar documentos. Los miembros del equipo y los sindicatos en la banca de inversiones, la administración de activos o las empresas de capitales privadas pueden colaborar de forma segura en un negocio o una inversión. Los equipos multifuncionales suelen participar en la planeación y finalización de estos acuerdos, y la capacidad de compartir datos y entablar conversaciones de forma segura es una exigencia principal. Compartir de forma segura documentos relacionados con inversores externos también es un requisito clave. Teams proporciona una ubicación segura y totalmente auditable desde la que se pueden almacenar, proteger y compartir datos de la inversión de forma centralizada.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un grupo de trabajadores de oficina en una reunión comentan imágenes de una pantalla grande.":::
+![Un grupo de trabajadores de oficina en una reunión comentan imágenes de una pantalla grande](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: mejorar la colaboración y reducir el riesgo de cumplimiento
 
@@ -156,7 +156,7 @@ Identity Protection usa el conocimiento que Microsoft ha adquirido de su posici�
 
 Identity Protection ayuda a las organizaciones a protegerse de forma automática frente al compromiso de identidades aprovechando la inteligencia en la nube con tecnología de detección avanzada basada en heurística, análisis de comportamiento de usuarios y entidades (UEBA) y aprendizaje automático (ML) en el ecosistema de Microsoft.
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="Cinco profesionales de la información ven la presentación de otro.":::
+![Cinco profesionales de la información ven la presentación de otro.](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>Identificar datos confidenciales y evitar la pérdida de datos
 Microsoft 365 permite que todas las organizaciones identifiquen datos confidenciales en la organización a través de una combinación de potentes funciones, entre las que se incluyen:
@@ -178,7 +178,7 @@ Las señales generadas por Identity Protection o añadidas también pueden inclu
 
 Identity Protection ayuda a las organizaciones a protegerse de forma automática frente al compromiso de identidades aprovechando la inteligencia en la nube con tecnología de detección avanzada basada en heurística, análisis de comportamiento de usuarios y entidades y aprendizaje automático en el ecosistema de Microsoft.
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="Se muestra un profesional de la información delante de un gran número de monitores.":::
+![Se muestra un profesional de la información delante de un gran número de monitores](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>Defender la fortaleza
 
@@ -199,7 +199,7 @@ Los servicios de seguridad de Microsoft 365 usan la tecnología de Intelligent S
 * Identificar e investigar actividades de usuarios sospechosas y ataques avanzados en la cadena de eliminación.
 * Proporcionar información clara sobre el incidente en una escala de tiempo simple para una evaluación rápida.
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="Los trabajadores de la oficina se encuentran en una sala de conferencias pequeña. Uno ofrece una presentación.":::
+![Los trabajadores de la oficina se encuentran en una sala de conferencias pequeña. Uno ofrece una presentación.](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>Gobierno de datos y administración de registros
 
@@ -285,7 +285,7 @@ Las instituciones financieras suelen estar obligadas a establecer y mantener una
  
 * [La Regla 3120 de FINRA (Sistema de control de supervisión)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) requiere que las empresas tengan un sistema de políticas y procedimientos de control de vigilancia (SCP) que valide sus procedimientos de supervisión escritos, según se define en la Regla 3110. Las empresas no solo deben tener WSP, sino que también directivas que prueben estos procedimientos de anualmente para validar su capacidad para asegurar el cumplimiento de las leyes y normativas de los valores aplicables. Se pueden usar metodologías basadas en riesgo y muestreo para definir el ámbito de las pruebas. Entre otros requisitos, esta regla requiere que las empresas proporcionen un informe anual a la dirección de la empresa que incluya un resumen de los resultados de las pruebas y cualquier excepción importante o procedimientos modificados en respuesta a los resultados de las pruebas.
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="Un trabajador de Office ve un gráfico y tablas en una pantalla mientras otras personas se encuentran en segundo plano.":::
+![Un trabajador de oficina ve un gráfico y tablas en una pantalla mientras otros trabajadores se encuentran en segundo plano.](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
@@ -296,7 +296,7 @@ El cumplimiento de comunicaciones ofrece informes que permiten auditar actividad
 
 Además de cumplir con las reglas de FINRA, el cumplimiento de las comunicaciones permite a las organizaciones supervisar las comunicaciones de acuerdo con otros requisitos legales, directivas corporativas y estándares éticos. El cumplimiento de las comunicaciones ofrece clasificadores integrados de amenazas, acoso y blasfemias que ayudan a reducir los falsos positivos al revisar las comunicaciones, lo que permite ahorrar tiempo a los revisores durante el proceso de investigación y corrección. También permite a las organizaciones reducir los riesgos al supervisar las comunicaciones cuando se producen cambios de confidencialidad, como fusiones y adquisiciones o cambios de liderazgo.
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="Un trabajador de la información se centra en una pantalla.":::
+![Un trabajador de la información se centra en una pantalla.](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>Protegerse contra la exfiltración de datos y los riesgos internos
 
@@ -312,14 +312,14 @@ Por ejemplo, la administración de riesgos internos de Microsoft 365 puede corre
 
 La administración de riesgos internos de Microsoft 365 incrementa significativamente las funciones de las organizaciones para supervisar e investigar los riesgos internos, a la vez que permite a las organizaciones seguir satisfaciendo las normativas de privacidad de datos y seguir las rutas de escalación establecidas cuando los casos requieren una acción de nivel superior.
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="Un trabajador de un centro de llamadas en un cubículo escribe mientras ve una pantalla.":::
+![Un trabajador de un centro de llamadas en un cubículo escribe mientras ve una pantalla.](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>Restricciones de espacio empresarial
 Las organizaciones que trabajan con datos confidenciales y ponen énfasis estricto en la seguridad suelen querer controlar los recursos en línea a los que pueden acceder los usuarios. Al mismo tiempo, quieren permitir una colaboración segura a través de servicios en línea como Office 365. Como consecuencia, el control de los entornos de Office 365 a los que los usuarios pueden tener acceso se convierte en un reto, ya que los entornos de Office 365 no corporativos se pueden usar para la exfiltración de datos de dispositivos corporativos, ya sea malintencionadamente o por error. Tradicionalmente, las organizaciones restringen los dominios o las direcciones IP a los que los usuarios pueden acceder desde dispositivos corporativos. Pero esto no funciona en un mundo que prioriza la nube, donde los usuarios tienen que tener acceso a los servicios de Office 365 de forma legítima.
 
 Microsoft 365 proporciona a las [restricciones](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) del espacio empresarial la capacidad de afrontar este desafío. Las restricciones de espacio empresarial pueden configurarse para restringir el acceso a los espacios empresariales externos de Office 365 que usan identidades malintencionadas (identidades que no forman parte de su directorio corporativo). En la actualidad, las restricciones de espacios empresariales se aplican en todo el espacio empresarial, lo que permite el acceso solo a esos espacios empresariales que aparecen en la lista que configure. Microsoft continúa desarrollando esta solución para incrementar la granularidad del control y mejorar las protecciones que proporciona.
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="GRÁFICO":::
+![GRÁFICO](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>Conclusión
 

@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Conozca cómo Microsoft 365 ayuda a las organizaciones de energía a pasar a una plataforma de colaboración moderna, a la vez que ayuda a mantener los datos y los sistemas seguros y conformes a las normativas
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521022"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597460"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube":::
+![Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>Introducción
 La industria energética proporciona a la sociedad combustible e infraestructura crítica de la que la gente depende cada día. A fin de garantizar la fiabilidad de la infraestructura relacionada con los sistemas de energía masiva, las autoridades reguladoras imponen normas estrictas a las organizaciones de la industria energética. Estas normas reglamentarias se refieren no sólo a la generación y transmisión de energía, sino también a los datos y las comunicaciones que son fundamentales para las operaciones cotidianas de las empresas de energía. 
 
