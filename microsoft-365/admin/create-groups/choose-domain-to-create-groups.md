@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Obtenga información acerca de cómo elegir el dominio que se usará al crear grupos de Microsoft 365 mediante la configuración de directivas de direcciones de correo electrónico con PowerShell. '
-ms.openlocfilehash: 5569f42f15835be02a20166e64ce09a08b146dd7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 19caa4f4dfdef4895fa58f8bf5c198269844044f
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388214"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597382"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elegir el dominio que se va a usar al crear grupos de 365 de Microsoft
 
@@ -103,7 +103,7 @@ El cambio de un EAP no afecta a los grupos que ya se han aprovisionado.
   
 ## <a name="hybrid-requirements"></a>Requisitos de entornos híbridos
 
-Si su organización está configurada en un escenario híbrido, consulte [Configure Microsoft 365 Groups with on-premises Exchange híbrida](https://go.microsoft.com/fwlink/p/?LinkId=785430) para asegurarse de que su organización cumple los requisitos para la creación de grupos de Microsoft 365. 
+Si su organización está configurada en un escenario híbrido, consulte [Configure Microsoft 365 Groups with on-premises Exchange híbrida](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) para asegurarse de que su organización cumple los requisitos para la creación de grupos de Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Información adicional acerca del uso de grupos de directivas de direcciones de correo electrónico:
 
