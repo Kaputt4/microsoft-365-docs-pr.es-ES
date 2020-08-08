@@ -1,5 +1,5 @@
 ---
-title: Planeación del cumplimiento de la comunicación
+title: Planear el cumplimiento de las comunicaciones
 description: Obtenga información sobre la planeación para usar el cumplimiento de la comunicación en su organización.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 214c5376d4c074525253707e181eee69cefff85e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045859"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597427"
 ---
-# <a name="plan-for-communication-compliance"></a>Planeación del cumplimiento de la comunicación
+# <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
 Antes de empezar a trabajar con el cumplimiento de la [comunicación](communication-compliance.md) en su organización, existen importantes actividades y consideraciones de planificación que deben ser revisadas por los equipos de la tecnología de la información y el cumplimiento normativo. La comprensión y planeación exhaustiva de la implementación en las siguientes áreas le ayudarán a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones se ajustan correctamente a los procedimientos recomendados para la solución.
 
@@ -42,7 +42,19 @@ Identificar las partes interesadas adecuadas de la organización para colaborar 
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Planeación del flujo de trabajo de investigación y corrección
 
-Seleccione revisores dedicados para supervisar y revisar las alertas con una cadencia regular en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Recuerde que tendrá que [crear un nuevo grupo de roles](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) para habilitar los permisos para revisores con el **Administrador de revisión de supervisión**, la administración de **casos**, el **Administrador de cumplimiento**y la **revisión** de roles para investigar y corregir mensajes con coincidencias de directivas.
+Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará diferentes roles de cumplimiento de comunicaciones a las partes interesadas de su organización.
+
+En función de cómo desee administrar las directivas y alertas de comunicación, tendrá que crear uno o más grupos de roles nuevos para los administradores, revisores e investigadores. Tiene la opción de asignar usuarios a grupos de roles específicos para administrar distintos conjuntos de características de cumplimiento de comunicaciones. O bien, puede decidir crear un grupo de roles y asignar todos los roles de cumplimiento de comunicaciones al grupo. Cree un solo grupo de roles o varios grupos para adecuarlos mejor a sus requisitos de administración de cumplimiento.
+
+Planee elegir entre estas opciones de rol al configurar los grupos de funciones de cumplimiento de la comunicación:
+
+|**Rol**|**Permisos de funciones**|
+|:-----|:-----|
+| **Administrador de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones del grupo de roles. Los usuarios asignados a esta función no pueden ver los mensajes de alerta. |
+| **Análisis de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Investigación de cumplimiento en la comunicación** | Los usuarios que tienen asignado este rol pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de exhibición de documentos electrónicos avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visor de cumplimiento de comunicaciones** | Los usuarios a los que se les asigna esta función pueden tener acceso a todos los widgets de informes en la Página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
+| **Administración de casos de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden administrar casos y actuar en alertas. Este rol es necesario para cuando se crean grupos de roles personalizados para administradores, analistas e investigadores. Los grupos personalizados para visores no necesitan esta función asignada. |
 
 ## <a name="plan-for-policies"></a>Planeación de directivas
 

@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d35179d38277ada22db9bc7ad879f1f7405a9aec
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936865"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597639"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams, Exchange y Yammer Communications
 
-El cumplimiento de la comunicación en Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y realizar acciones de corrección para los mensajes inapropiados de su organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams, Yammer o las comunicaciones de terceros de la organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
+El cumplimiento de la comunicación en Microsoft 365 ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar en mensajes inapropiados de la organización. Las directivas predefinidas y personalizadas le permiten analizar las comunicaciones internas y externas de las coincidencias de directivas para que puedan examinarlas los revisores designados. Los revisores pueden investigar el correo electrónico explorado, Microsoft Teams, Yammer o las comunicaciones de terceros de la organización y tomar las medidas de corrección adecuadas para asegurarse de que cumplen con los estándares de mensajes de la organización.
 
-Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para supervisar el idioma ofensivo. Han estado usando Microsoft 365 principalmente para el correo electrónico, Microsoft Teams y la compatibilidad con Yammer para sus empleados, pero tienen nuevos requisitos para aplicar la Directiva de la empresa alrededor del acoso del lugar de trabajo. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen un conocimiento básico de los conceptos básicos del trabajo con Microsoft 365 y buscan una guía de un extremo a otro para empezar rápidamente con el cumplimiento de la comunicación.
+Contoso Corporation es una organización ficticia que necesita configurar rápidamente una directiva para supervisar el idioma ofensivo. Han estado usando Microsoft 365 principalmente para el correo electrónico, Microsoft Teams y la compatibilidad con Yammer para sus usuarios, pero tienen nuevos requisitos para aplicar la Directiva de la empresa alrededor del acoso del lugar de trabajo. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen un conocimiento básico de los conceptos básicos del trabajo con Microsoft 365 y buscan una guía de un extremo a otro para empezar rápidamente con el cumplimiento de la comunicación.
 
 Este caso práctico cubrirá los conceptos básicos para configurar rápidamente una directiva de cumplimiento de comunicaciones para supervisar las comunicaciones para un lenguaje ofensivo. Esta guía incluye:
 
@@ -79,18 +79,30 @@ Los administradores de TI de Contoso deben seguir estos pasos para comprobar la 
 
 ### <a name="permissions-for-communication-compliance"></a>Permisos para el cumplimiento de la comunicación
 
-De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. [Los permisos deben configurarse](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) para que los administradores de TI de Contoso y los especialistas en cumplimiento tengan acceso al cumplimiento de la comunicación.
+Hay cinco funciones que se usan para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la comunicación esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, los administradores de Contoso tienen asignado el rol de *Administrador de cumplimiento de comunicaciones* .
+
+Contoso decide crear un grupo de roles personalizado y asignar todos los roles de cumplimiento de comunicaciones al grupo. De este modo, es más fácil para contoso empezar rápidamente y se ajusta mejor a sus requisitos de administración de cumplimiento.
+
+Contoso creará un grupo de roles que contendrá todos los roles de cumplimiento de comunicaciones siguientes:
+
+|**Rol**|**Permisos de funciones**|
+|:-----|:-----|
+| **Administrador de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones del grupo de roles. Los usuarios asignados a esta función no pueden ver los mensajes de alerta. |
+| **Análisis de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Investigación de cumplimiento en la comunicación** | Los usuarios que tienen asignado este rol pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de exhibición de documentos electrónicos avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visor de cumplimiento de comunicaciones** | Los usuarios a los que se les asigna esta función pueden tener acceso a todos los widgets de informes en la Página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
+| **Administración de casos de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden administrar casos y actuar en alertas. Este rol es necesario para cuando se crean grupos de roles personalizados para administradores, analistas e investigadores. Los grupos personalizados para visores no necesitan esta función asignada. |
 
 1. Los administradores de TI de Contoso inician sesión en la página de permisos del **centro de seguridad y cumplimiento de Office 365** [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) mediante credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
 2. Después de seleccionar **crear**, proporcionan al nuevo grupo de roles un nombre descriptivo de "cumplimiento de la*comunicación*" y seleccione **siguiente**.
-3. Seleccionan **elegir roles** y, a continuación, seleccione **Agregar**. Para agregar los roles necesarios, active la casilla de verificación *Administrador de revisión de supervisión*, administración de *casos*, *Administrador de cumplimiento*y *revisión*y, a continuación, seleccione **Agregar**, **listo** y **siguiente**.
+3. Seleccionan **elegir roles** y, a continuación, seleccione **Agregar**. Para agregar los roles necesarios, active la casilla de verificación administración del *cumplimiento de comunicaciones*, análisis de *cumplimiento de comunicaciones*, investigación de *cumplimiento*en la comunicación, visor de *cumplimiento de comunicaciones*y administración de casos de *cumplimiento de comunicaciones*y, a continuación, seleccione **Agregar**, **listo** y **siguiente**.
 
-![Roles de cumplimiento de comunicaciones](../media/communication-compliance-case-roles.png)
+    ![Roles de cumplimiento de comunicaciones](../media/communication-compliance-case-roles.png)
 
 4. A continuación, los administradores de ti seleccionan seleccionar **miembros** y, a continuación, seleccione **Agregar**. Active la casilla de verificación para todos los usuarios y grupos que deseen crear directivas y administrar mensajes con coincidencias de directivas. Agregan los administradores de ti, especialistas de cumplimiento y otros compañeros de recursos humanos y departamentos jurídicos que identificaron en la planeación inicial y, a continuación, seleccionan **Agregar**, **listo**y **siguiente**.
 5. Para finalizar los permisos, los administradores de ti seleccionan **Crear grupo de roles** para finalizar. Los roles tardarán alrededor de 30 minutos en ser efectivos en el servicio Microsoft 365 de contoso.
 
-![Revisión del cumplimiento de comunicaciones](../media/communication-compliance-case-review.png)
+    ![Revisión del cumplimiento de comunicaciones](../media/communication-compliance-case-review.png)
 
 ## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>Paso 2: obtener acceso al cumplimiento de la comunicación en Microsoft 365
 
@@ -125,7 +137,7 @@ Para obtener acceso al cumplimiento de la comunicación al empezar desde el cent
 
 ![Vínculo de cumplimiento de comunicaciones](../media/communication-compliance-case-compliance-link.png)
 
-Se abrirá el **centro de seguridad y cumplimiento de Office 365**, que deben seleccionar el vínculo al **centro de cumplimiento de Microsoft 365** incluido en el encabezado de la parte superior de la página.
+Esta acción abre el **centro de seguridad y cumplimiento de Office 365**y debe seleccionar el vínculo al **centro de cumplimiento de Microsoft 365** incluido en el encabezado de la parte superior de la página.
 
 ![Centro de seguridad y cumplimiento de Office 365](../media/communication-compliance-case-scc.png)
 
@@ -151,22 +163,22 @@ Contoso los administradores de ti revisan y rellenan las [instrucciones paso a p
 
 El cumplimiento de la comunicación requiere que el inquilino de Yammer para una organización esté en modo nativo para supervisar el lenguaje ofensivo en mensajes privados y conversaciones públicas de la comunidad.
 
-Contoso los administradores de ti Asegúrese de que revisan la información de la información [General del modo nativo de Yammer en el tema 365 de Microsoft](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siga los pasos para ejecutar la herramienta de migración en el tema [configuración de la red de Yammer para el modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
+Contoso los administradores de ti Asegúrese de que revisan la información de la información [General del modo nativo de Yammer en el artículo 365 de Microsoft](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siga los pasos para ejecutar la herramienta de migración en el tema [configuración de la red de Yammer para el modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuración de un grupo para usuarios en el ámbito
 
-Los especialistas de cumplimiento de Contoso quieren agregar todos los empleados a la Directiva de comunicación que supervisará el idioma ofensivo. Podrían decidir agregar cada cuenta de usuario de empleado a la Directiva por separado, pero han decidido que es mucho más fácil y ahorran mucho tiempo en usar un grupo de distribución de **todos los empleados** para los usuarios de esta Directiva.
+Los especialistas de cumplimiento de Contoso quieren agregar todos los usuarios a la Directiva de comunicación que va a supervisar en busca de lenguaje ofensivo. Podrían decidir agregar cada cuenta de usuario a la Directiva por separado, pero han decidido que es mucho más fácil y ahorra tiempo a usar un grupo de distribución de **todos los usuarios** para los usuarios de esta Directiva.
 
-Deben crear un nuevo grupo para incluir a todos los empleados de Contoso, por lo que deben seguir estos pasos:
+Deben crear un nuevo grupo para incluir a todos los usuarios de Contoso, por lo que deben seguir estos pasos:
 
 1. Contoso administradores de ti inicie sesión en el **centro de administración de 365** de Microsoft [( https://admin.microsoft.com) ](https://admin.microsoft.com) y vaya a la 365 grupos del centro de administración de **Microsoft**)  >  **Groups**  >  **Groups**.
 2. Seleccionan **Agregar un grupo** y completan el Asistente para crear un nuevo grupo de *Microsoft 365* o grupo de *distribución*.
 
-![Grupos](../media/communication-compliance-case-all-employees.png)
+    ![Grupos](../media/communication-compliance-case-all-employees.png)
 
-3. Una vez creado el nuevo grupo, tiene que agregar todos los usuarios de Contoso al nuevo grupo. Abren el **centro de administración de Exchange** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp) y navegan a los grupos de **Exchange admin center**  >  **destinatarios**del centro de administración de Exchange  >  **groups**. Los administradores de TI de Contoso seleccionan el área pertenencia y el nuevo grupo *todos los empleados* que han creado y seleccionan el control **Editar** para agregar todos los empleados de Contoso al nuevo grupo en el asistente.
+3. Una vez creado el nuevo grupo, tiene que agregar todos los usuarios de Contoso al nuevo grupo. Abren el **centro de administración de Exchange** [ https://outlook.office365.com/ecp) (](https://outlook.office365.com/ecp) y navegan a los grupos de **Exchange admin center**  >  **destinatarios**del centro de administración de Exchange  >  **groups**. Los administradores de TI de Contoso seleccionan el área pertenencia y el nuevo grupo *todos los empleados* que han creado y seleccionan el control **Editar** para agregar todos los usuarios de Contoso al nuevo grupo en el asistente.
 
-![Centro de administración de Exchange](../media/communication-compliance-case-eac.png)
+    ![Centro de administración de Exchange](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>Crear la Directiva para supervisar el lenguaje ofensivo
 
@@ -174,12 +186,12 @@ Una vez completados todos los requisitos previos, los administradores de ti y lo
 
 1. Los administradores de TI de Contoso y los especialistas de cumplimiento inician sesión en el **centro de cumplimiento de Microsoft 365** y seleccionan cumplimiento de la **comunicación** en el panel de navegación izquierdo. Esta acción abre el panel de **información general** que contiene vínculos rápidos para plantillas de directiva de cumplimiento de comunicaciones. Para elegir la plantilla **supervisar para lenguaje ofensivo** **, seleccione Introducción a la** plantilla.
 
-![Plantilla de lenguaje ofensivo de conformidad con la comunicación](../media/communication-compliance-case-template.png)
+    ![Plantilla de lenguaje ofensivo de conformidad con la comunicación](../media/communication-compliance-case-template.png)
 
 2. En el Asistente para plantillas de directivas, los administradores de ti y los especialistas de cumplimiento de Contoso trabajan juntos para completar los tres campos obligatorios: **nombre de directiva**, **usuarios o grupos para supervisar**y **revisores**.
-3. Dado que el Asistente para directivas ya ha sugerido un nombre para la Directiva, los administradores de ti y los especialistas en cumplimiento deciden mantener el nombre sugerido y centrarse en los campos restantes. Seleccionan el grupo *todos los empleados* para el campo **usuarios o grupos que supervisan** y seleccionan los especialistas de cumplimiento que deben investigar y corregir las alertas de directiva para el campo **Reviewers** . El último paso para configurar la Directiva e iniciar la recopilación de información de alertas consiste en seleccionar **crear Directiva**.
+3. Dado que el Asistente para directivas ya ha sugerido un nombre para la Directiva, los administradores de ti y los especialistas en cumplimiento deciden mantener el nombre sugerido y centrarse en los campos restantes. Seleccionan el grupo *todos los usuarios* para el campo **usuarios o grupos para supervisar** y seleccionan los especialistas de cumplimiento que deben investigar y corregir las alertas de directiva para el campo **Reviewers** . El último paso para configurar la Directiva e iniciar la recopilación de información de alertas consiste en seleccionar **crear Directiva**.
 
-![Asistente para lenguaje ofensivo para cumplimiento de comunicaciones](../media/communication-compliance-case-wizard.png)
+    ![Asistente para lenguaje ofensivo para cumplimiento de comunicaciones](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>Paso 4: investigar y corregir las alertas
 
