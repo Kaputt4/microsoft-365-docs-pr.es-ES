@@ -103,6 +103,13 @@
     - name: Trabajar con el Escritorio administrado de Microsoft
       href: working-with-managed-desktop/index.md
       items:
+        - name: Trabajar con informes
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: Informe de cumplimiento de dispositivos
+              href: working-with-managed-desktop/device-compliance-report.md
+            - name: Informe de inventario de dispositivos
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: Trabajar con ideas
           href: working-with-managed-desktop/insights.md
           items:
