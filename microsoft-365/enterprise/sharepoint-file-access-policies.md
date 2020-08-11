@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222690"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617191"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
@@ -29,13 +29,13 @@ En este artículo se describe cómo implementar la identidad recomendada y las d
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para los archivos de SharePoint que se pueden aplicar en función de la granularidad de sus necesidades: **línea base**, **confidencial**y **altamente regulable**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que se hace referencia en estas recomendaciones en [la introducción](microsoft-365-policies-configurations.md).
 
-Además de implementar esta guía, asegúrese de configurar los sitios de SharePoint con la cantidad adecuada de protección, incluida la configuración de los permisos adecuados para contenido confidencial y altamente regulado. Para obtener más información acerca de la creación de sitios para la protección de línea base, confidencial y altamente regulada, vea [proteger sitios y archivos de SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files).
+Además de implementar esta guía, asegúrese de configurar los sitios de SharePoint con la cantidad adecuada de protección, incluida la configuración de los permisos adecuados para contenido confidencial y altamente regulado.
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Actualización de directivas comunes para incluir SharePoint y OneDrive para la empresa
 
 El siguiente diagrama ilustra el conjunto de directivas recomendadas para proteger archivos en SharePoint Online y OneDrive para la empresa. Indica qué directivas deben actualizarse o recién creadas para agregar protección a SharePoint Online y OneDrive para la empresa.
 
-![Resumen de directivas para SharePoint Online y OneDrive](../media/identity-access-ruleset-sharepoint.png)
+[![Resumen de directivas para SharePoint Online y OneDrive ](../media/identity-access-ruleset-sharepoint.png)](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
 Si incluyó SharePoint Online al crear las directivas comunes, solo tiene que crear las nuevas directivas. Al configurar reglas de acceso condicional, SharePoint Online incluye OneDrive para la empresa.
 
@@ -77,7 +77,7 @@ Es importante comprender que los permisos de sitio de SharePoint suelen basarse 
 
 En la siguiente ilustración se muestra un ejemplo de cómo las directivas de acceso a dispositivos de SharePoint protegen el acceso a los sitios.
 
-![Cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios](../media/SharePoint-rules-scenario.png)
+[![Cómo protegen las directivas de acceso a dispositivos de SharePoint los sitios ](../media/SharePoint-rules-scenario.png)](../media/SharePoint-rules-scenario.png#lightbox)
 
 En la ilustración:
 
@@ -86,6 +86,4 @@ En la ilustración:
 - Si James obtiene acceso a un sitio confidencial, es miembro del uso de su teléfono no administrado, lo que se permite a los usuarios de línea base, recibirá acceso solo del explorador al sitio confidencial debido a la Directiva de acceso de dispositivos configurada para este sitio.
 - Si James obtiene acceso a un sitio altamente regulado, es miembro del uso de su teléfono no administrado, se bloqueará debido a la Directiva de acceso configurada para este sitio. Solo puede acceder a este sitio mediante su equipo administrado y compatible.
 
-## <a name="next-steps"></a>Siguientes pasos
 
-[Protección de archivos y sitios de SharePoint Online](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenga información general sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c977aa3f57c981cdc29037ca6f9f7803b7accd03
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208916"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601902"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Información general sobre la investigación y la respuesta automatizadas (AIR) en Microsoft 365
 
@@ -127,15 +127,15 @@ Además de las investigaciones automáticas desencadenadas por una alerta, el eq
 
 Por ejemplo, supongamos que usa la vista de **malware** en el explorador de amenazas. Mediante las pestañas debajo del gráfico, seleccione la pestaña **correo electrónico** . Si selecciona uno o más elementos de la lista, se activa el botón **+ acciones** . 
 
-:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorador con los mensajes seleccionados":::
+![Explorador con los mensajes seleccionados](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Mediante el menú **acciones** , puede seleccionar la **investigación de desencadenadores**.
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menú acciones para los mensajes seleccionados":::
+![Menú acciones para los mensajes seleccionados](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 De forma similar a las guías activadas por una alerta, las investigaciones automáticas que se desencadenan desde una vista del explorador incluyen una investigación raíz, pasos para identificar y correlacionar amenazas y las acciones recomendadas para mitigar esas amenazas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Empezar a usar AIR](office-365-air.md)
 

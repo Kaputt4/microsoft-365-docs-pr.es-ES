@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432116"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602098"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
 En la página roles, puede conceder a los usuarios permisos para realizar tareas en los centros de administración. Esto ayuda a la organización a difundir tareas a las personas adecuadas y a mantener los datos protegidos.
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="Una figura que muestra los roles de administrador":::
+![Una figura que muestra los roles de administrador](../../media/roles-main-page.png)
 
 > [!TIP]
 > ¿Busca las descripciones detalladas de los roles? Consulte [permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) y [acerca de los roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
@@ -39,7 +39,7 @@ En la página roles, puede conceder a los usuarios permisos para realizar tareas
 
 Puede exportar la lista de administradores, así como buscar y filtrar por rol.
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtrar o importar roles de administrador":::
+![Filtrar o importar roles de administrador](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -96,7 +96,7 @@ En el centro de administración:
 
 - Seleccione hasta 3 roles y elija **comparar roles** para ver los permisos que tiene cada rol.
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="Una figura que muestra una comparación de los roles de administrador":::
+![Una figura que muestra una comparación de los roles de administrador](../../media/compare-roles-list.png)
 
 ::: moniker-end
 

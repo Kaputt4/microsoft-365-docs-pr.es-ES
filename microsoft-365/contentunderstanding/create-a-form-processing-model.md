@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Cree un modelo de procesamiento de formularios en Project Cortex.
-ms.openlocfilehash: d3ca64ff5923e95704b72fd748884549a18624a3
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540147"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612779"
 ---
 # <a name="create-a-form-processing-model-preview"></a>Crear un modelo de procesamiento de formularios (versión preliminar)
 
@@ -135,7 +135,7 @@ Después de publicar el modelo y crear su flujo de PowerAutomate, puede usar el 
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
   
 [Documentación automatizada de la energía](https://docs.microsoft.com/power-automate/)</br>
 [Aprendizaje: mejorar el rendimiento empresarial con el generador de AI](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>

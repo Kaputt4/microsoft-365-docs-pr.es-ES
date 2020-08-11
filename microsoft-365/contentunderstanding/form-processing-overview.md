@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre el procesamiento de formularios en Project Cortex.
-ms.openlocfilehash: 9709c8170f5dc6ce0edbeb2d90cb4e1f6d759c64
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: dbea06cdf2dbb232a7ea48c78d7ea968dd18b9c0
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540063"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612731"
 ---
 # <a name="form-processing-overview-preview"></a>Información general sobre el procesamiento de formularios (versión preliminar)
 > [!Note]
@@ -37,7 +37,7 @@ Un administrador de Office 365 debe [Habilitar el procesamiento de formularios](
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
   
 [Documentación automatizada de la energía](https://docs.microsoft.com/power-automate/)</br>
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)</br>

@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: c2eabd160cf221f7e2bb7b81f07c205135476cc9
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222702"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617179"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
@@ -36,6 +36,8 @@ Estas recomendaciones requieren que los usuarios usen clientes de correo electr�
 En el siguiente diagrama se ilustran las directivas comunes de identidad y acceso a dispositivos, y se indica qué directivas deben actualizarse para proteger el correo electrónico. Tenga en cuenta la adición de una nueva regla para que Exchange Online bloquee los clientes de ActiveSync. Esto fuerza el uso de Outlook Mobile.
 
 ![Resumen de las actualizaciones de directivas para proteger el correo electrónico](../media/identity-access-ruleset-mail.png)
+
+[Ver una versión más grande de esta imagen](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
 Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tiene que crear la nueva Directiva para bloquear a los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y haga las adiciones recomendadas, o bien confirme que ya se han incluido. Cada regla tiene vínculos a las instrucciones de configuración asociadas en el artículo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
@@ -63,6 +65,6 @@ Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprov
 
 Para obtener más información, vea [set up New Office 365 Message Encryption Capabilities](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Más información sobre las recomendaciones de directiva para la protección de sitios y archivos de SharePoint](sharepoint-file-access-policies.md)

@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo aplicar un modelo publicado a una biblioteca de documentos de SharePoint.
-ms.openlocfilehash: 7e5f3f02c2679769515b27026918a15c901c896e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537613"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612685"
 ---
 # <a name="apply-a-document-understanding-model-preview"></a>Aplicación de un modelo de comprensión de documentos (versión preliminar)
 
@@ -86,7 +86,7 @@ Mientras que un modelo aplicado procesará todos los archivos cargados en la bib
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 [Crear un clasificador](create-a-classifier.md)</br>
 [Crear un extractor](create-an-extractor.md)</br>
 [Información general sobre el documento](document-understanding-overview.md)</br>

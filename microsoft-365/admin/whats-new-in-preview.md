@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: Obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015998"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602014"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -102,7 +102,7 @@ Este mes hemos lanzado un nuevo sitio [https://docs.microsoft.com](https://docs.
 
 Bueno, lo hicimos. Hemos asumido el segundo paso hacia una experiencia de roles unificada y ahora puede administrar los roles de Intune en el centro de administración de Microsoft 365. También puede aprovechar características como la capacidad de buscar roles y ver permisos de roles. Esto significa que no necesita dos herramientas independientes para administrar funciones para Microsoft 365 e Intune. Al iniciar sesión en el centro de administración de 365 de Microsoft, verá que hay dos elementos dinámicos en la página roles, uno para Azure AD y otro para Intune.
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Página roles con la función dinámica de Intune seleccionada":::
+![Página roles con la función dinámica de Intune seleccionada](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>Sincronizar las publicaciones del centro de mensajes con Planner
 
@@ -173,19 +173,19 @@ Tenemos dos actualizaciones para los grupos este mes:
 
 Hemos recibido muchos comentarios de los administradores sobre el grado de dificultad para asignar licencias al agregar usuarios. Hemos realizado la primera actualización de esta corrección y hemos migrado a un servicio de segundo plano más confiable para procesar esas solicitudes. Y si algo va mal, ahora recibirá un mensaje de error que le permitirá volver a intentarlo.
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Página de confirmación de adición de usuario con el error.":::
+![Página de confirmación de adición de usuario con el error.](../media/MAC-WN-ImprovedLicensing.png)
 
 ### <a name="microsoft-teams-home-page-card"></a>Tarjeta de página principal de Microsoft Teams
 
 Con el valor de arriba en el uso de Teams, algunos organizaciones recibirán una tarjeta de panel anclada que permite que los equipos de escritorio sean más detectables. La tarjeta también tiene vínculos a formación y documentos para ayudar a su organización a realizar la transición al trabajo remoto. Solo tiene que ir a la página **principal** para ver la tarjeta nueva.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Tarjeta de página principal de Microsoft Teams":::
+![Tarjeta de página principal de Microsoft Teams](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personalizar el tema de la aplicación móvil de SharePoint de la organización
 
 Con el centro de administración de 365 de Microsoft, ahora puede personalizar el tema de su organización en aplicación móvil de SharePoint para iOS y aplicación móvil de SharePoint para Android. Esta característica proporciona convenientemente una experiencia de la aplicación de intranet móvil que puede coincidir con SharePoint Online para los empleados en marcha. La personalización del tema incluye la imagen del logotipo, el color de la barra de navegación, los colores del texto y el icono y los colores de énfasis, lo que facilita el reconocimiento.
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagrama asignar la configuración del centro de administración a la aplicación móvil.":::
+![Diagrama asignar la configuración del centro de administración a la aplicación móvil.](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Mejoras en el asistente "agregar un grupo"
 

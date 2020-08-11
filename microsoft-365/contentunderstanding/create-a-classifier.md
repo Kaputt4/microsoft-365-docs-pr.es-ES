@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtener información sobre cómo crear un clasificador
-ms.openlocfilehash: 029ac16310f8e95a69a713896b1109a778eb3b8d
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 088770ace8914b583b184c78c3ce110d9d68b4c7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537563"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612613"
 ---
 # <a name="create-a-classifier-preview"></a>Crear un clasificador (versión preliminar)
 
@@ -144,7 +144,7 @@ Si ha recibido una coincidencia en los archivos de ejemplo con la etiqueta, ahor
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 [Crear un extractor](create-an-extractor.md)</br>
 [Información general sobre el documento](document-understanding-overview.md)</br>
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)</br>

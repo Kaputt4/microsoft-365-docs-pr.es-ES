@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo conceder a los usuarios permisos para realizar tareas en el centro de temas
-ms.openlocfilehash: 0e4e05d0addfdb754459e67acfdff3f61c7c812e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 2b7c745146b0386ff7f8bc2dcaf126a530b77598
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537853"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612577"
 ---
 # <a name="give-user-permissions-to-the-topic-center-preview"></a>Conceder permisos de usuario al centro de temas (versión preliminar)
 
@@ -55,7 +55,7 @@ Para conceder a un usuario permisos para crear y editar temas:
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
   
 [Trabajar con temas en el centro de temas](work-with-topics.md)
 

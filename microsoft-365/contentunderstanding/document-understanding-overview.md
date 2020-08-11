@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información general sobre la descripción de los documentos en Project Cortex.
-ms.openlocfilehash: 13b0aa3742c6cf1c0c1123996c683d13c6577876
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537405"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612719"
 ---
 # <a name="document-understanding-overview-preview"></a>Introducción a la descripción de los documentos (versión preliminar)
 > [!Note] 
@@ -43,7 +43,7 @@ Los archivos de ejemplo se usan para entrenar y probar los clasificadores y los 
 Después de publicar el modelo, use el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 [Crear un clasificador](create-a-classifier.md)</br>
 [Crear un extractor](create-an-extractor.md)</br>
 [Crear un centro](create-a-content-center.md) 

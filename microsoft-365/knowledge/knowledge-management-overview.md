@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la administración del conocimiento en Project Cortex.
-ms.openlocfilehash: 99b0d0ece9ef8271666b1978db7947f3e3f2a4e8
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540078"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612601"
 ---
 # <a name="knowledge-management-0verview-preview"></a>Knowledge Management 0verview (versión preliminar)
 
@@ -81,6 +81,6 @@ Además, los usuarios con los permisos adecuados pueden etiquetar elementos como
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 [Configuración de la administración del conocimiento](set-up-knowledge-network.md)</br>
 [Información general sobre el centro de temas](topic-center-overview.md)

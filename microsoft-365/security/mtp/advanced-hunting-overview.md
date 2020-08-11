@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552439"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608338"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -39,7 +39,7 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar diversos eventos y estados del sistema, como actividades de vulneración sospechosas y equipos mal configurados, y responder a ellos.
 
-En el centro de seguridad de Microsoft 365, la búsqueda avanzada admite consultas que buscan datos de varias áreas de trabajo, incluidos datos sobre dispositivos, correos electrónicos, aplicaciones e identidades de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
+La característica es similar a la [búsqueda avanzada en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), excepto que en el centro de seguridad de Microsoft 365, la búsqueda avanzada admite consultas que buscan datos de varias áreas de trabajo, incluidos datos sobre dispositivos, mensajes de correo electrónico, aplicaciones e identidades de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 
@@ -66,7 +66,7 @@ Los datos de búsqueda avanzada pueden clasificarse en dos tipos distintos, cada
 ## <a name="related-topics"></a>Temas relacionados
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
-- [Realizar acciones en los resultados de la consulta](advanced-hunting-take-action.md)
+- [Realizar una acción en los resultados de consulta](advanced-hunting-take-action.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

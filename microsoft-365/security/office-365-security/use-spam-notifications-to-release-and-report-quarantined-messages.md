@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las notificaciones de correo no deseado para el usuario final sobre los mensajes en cuarentena de Exchange Online Protection (EOP).
-ms.openlocfilehash: 4c3275b6af1eb452ed420b8eb2f923dfbb1267d6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b196a9e11d54d9d86acc991ba877279f1fa3d115
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200021"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608304"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Usar notificaciones de correo no deseado de usuario para liberar y notificar mensajes en cuarentena
 
@@ -46,8 +46,8 @@ Una notificación de correo no deseado para el usuario final contiene la siguien
 
 - **Bloquear remitente**: haga clic en este vínculo para agregar el remitente a la lista de remitentes bloqueados. Para obtener más información, vea [bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Liberar**: para los mensajes de correo no deseado (no phish), puede liberar el mensaje aquí sin ir a cuarentena en el centro de seguridad & cumplimiento.
+- **Versión**: para los mensajes de correo no deseado (no "phishing"), puede liberar el mensaje aquí sin ir a cuarentena en el centro de seguridad & cumplimiento.
 
-- **Revisión**: haga clic en este vínculo para ir a cuarentena en el centro de seguridad & cumplimiento, donde puede liberar, eliminar o informar de los mensajes en cuarentena. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **Revisión**: haga clic en este vínculo para ir a cuarentena en el centro de seguridad & cumplimiento, donde puede (en función de por qué se puso en cuarentena el mensaje) ver, liberar, eliminar o informar de los mensajes en cuarentena. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como un usuario en EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Ejemplo de notificación de correo no deseado para el usuario final](../../media/end-user-spam-notification.png)
