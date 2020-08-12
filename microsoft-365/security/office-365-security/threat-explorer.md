@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577551"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641646"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -207,6 +207,20 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
    > [!NOTE]
    > En el cuadro de diálogo de URL flotante, se quita el filtrado de los mensajes de correo electrónico para mostrar la vista completa de la exposición de la URL en el entorno. Esto le permite filtrar los mensajes de correo electrónico en el explorador a aquellos que le interesan, encontrar direcciones URL específicas que son posibles amenazas y, a continuación, ampliar su comprensión de la exposición de URL en su entorno (a través del cuadro de diálogo de detalles de URL) sin tener que agregar filtros de URL a la vista del explorador.
+
+
+**Interpretación de los veredictos de distintos clics**
+
+En los controles flotantes de dirección URL o de correo electrónico, los clics principales, así como en nuestras experiencias de filtrado, verá valores de clic diferentes como parte de su experiencia de búsqueda. A continuación se muestran los valores posibles de los veredictos de clic y su interpretación:
+
+- **None**: no se ha podido capturar el veredicto para la dirección URL. Es posible que el usuario haya acpulsado a través de la dirección URL.
+- Se **permite**: el usuario tiene permiso para navegar a la dirección URL.
+- **Bloqueado**: se ha bloqueado el usuario para navegar a la dirección URL.
+- **Veredicto pendiente**: se presentó el usuario con la página detonación pendiente.
+- **Bloqueado invalidado**: se ha bloqueado al usuario para que navegue a la dirección URL; sin embargo, el usuario overrode el bloque para desplazarse a la dirección URL.
+- Se **omite el veredicto pendiente**: se ha presentado la página de detonación al usuario. sin embargo, el usuario overrode? a la p? gina para navegar a la direcci? n URL.
+- **Error**: se ha presentado al usuario la página de error. Esto también puede significar que se ha producido un error al capturar el veredicto.
+- **Error**: se ha producido una excepción desconocida al capturar el veredicto. Es posible que el usuario haya acpulsado a través de la dirección URL. 
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578023"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635039"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -206,8 +206,7 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de notificación
 
-El **Informe de estado de flujo** de correo es similar al [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report), con información adicional sobre el correo electrónico permitido o bloqueado en el servidor perimetral. Este es el único informe que contiene información sobre la protección perimetral y muestra la cantidad de correo electrónico que se bloquea antes de que se permita el servicio para su evaluación por parte de Exchange Online Protection (EOP).
-
+El **Informe de estado de flujo** de correo es similar al [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report), con información adicional sobre el correo electrónico permitido o bloqueado en el servidor perimetral. Este es el único informe que contiene información sobre la protección perimetral y muestra la cantidad de correo electrónico que se bloquea antes de que se permita el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.  
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione informe de **Estado de flujo**de información. Para ir directamente al **Informe de estado del flujo de correo**, Abra <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de informe de estado de flujo de registros en el panel informes](../../media/mail-flow-status-report-widget.png)
@@ -221,7 +220,7 @@ Al abrir el informe, la ficha **tipo** se selecciona de forma predeterminada. De
 
   - **Entrada**
   - **Saliente**
-  - **Dentro de la organización** (cuenta por separado de **entrada** y de **salida**)
+  - **Dentro de la organización**: este recuento es para los mensajes dentro de un espacio empresarial es decir el remitente abc@domain.com envía al destinatario xyz@domain.com (cuenta por separado de **entrada** y de **salida**)
 
 - **Tipo**:
 

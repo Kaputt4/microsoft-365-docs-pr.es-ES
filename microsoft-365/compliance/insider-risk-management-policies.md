@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199547"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632179"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -75,7 +75,7 @@ Consulte el tema [crear, probar y ajustar una directiva DLP](create-test-tune-dl
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Pérdidas de datos por usuarios con prioridad (versión preliminar)
 
-La protección de datos y la prevención de pérdidas de datos para los usuarios de la organización pueden depender de su posición, el nivel de acceso a la información confidencial o el historial de riesgos. Las pérdidas de datos pueden incluir el reuso compartido accidental de información confidencial fuera de la organización o el robo de datos con malas intenciones. Junto con una directiva de prevención de pérdida de datos (DLP) asignada, esta plantilla comienza la detección de detecciones en tiempo real de la actividad sospechosa y da como resultado una mayor probabilidad de alertas y alertas de riesgo de Insider con niveles de gravedad más elevados. Los usuarios con prioridad se definen en grupos de usuarios prioritarios configurados en el área de configuración de administración de riesgos de Insider. AGREGAR VÍNCULO
+La protección de datos y la prevención de pérdidas de datos para los usuarios de la organización pueden depender de su posición, el nivel de acceso a la información confidencial o el historial de riesgos. Las pérdidas de datos pueden incluir el reuso compartido accidental de información confidencial fuera de la organización o el robo de datos con malas intenciones. Junto con una directiva de prevención de pérdida de datos (DLP) asignada, esta plantilla comienza la detección de detecciones en tiempo real de la actividad sospechosa y da como resultado una mayor probabilidad de alertas y alertas de riesgo de Insider con niveles de gravedad más elevados. Los usuarios con prioridad se definen en [grupos de usuarios prioritarios](insider-risk-management-settings.md#priority-user-groups-preview) configurados en el área de configuración de administración de riesgos de Insider.
 
 Al igual que con la **plantilla de fugas de datos generales**, debe asignar una directiva DLP para desencadenar indicadores en la Directiva de riesgos de Insider para alertas de gravedad alta en la organización. Siga las instrucciones de directiva de pérdidas de datos anteriores al crear una directiva con esta plantilla. Además, tendrá que asignar a la Directiva los grupos de usuarios de prioridad creados en la configuración de **Administración de riesgos de Insider**  >  **Settings**  >  **Priority user groups** .
 

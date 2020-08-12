@@ -14,20 +14,33 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre el gobierno de la información en Microsoft 365.
-ms.openlocfilehash: d2c2977a4eeaebb28f37c69683a929cb9f64b085
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521247"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641613"
 ---
 # <a name="manage-information-governance"></a>Administrar el gobierno de información
 
- Administre el ciclo de vida del contenido mediante las características de Microsoft 365 para importar, almacenar y clasificar datos críticos para la empresa de modo que pueda conservar lo que necesita y eliminar lo que no.
+Use las funciones de Microsoft Information Governance para regir los datos para cumplir los requisitos normativos o de cumplimiento.
 
-|**Función**|**Más información**|
-|:-----|:-----|
-| **Administrar datos** | Use [directivas de retención y etiquetas de retención](retention.md) para conservar los datos que necesita conservar y eliminar lo que no necesita mantener o debe eliminar por motivos de cumplimiento normativo.<br /><br /> Use el [servicio de importación](importing-pst-files-to-office-365.md) para importar rápidamente archivos PST en masa a buzones de Exchange online en su organización y configurar el [archivado ilimitado](unlimited-archiving.md) para proporcionar a los usuarios un espacio de almacenamiento de buzones adicional.|
-| **Supervisar datos** | [Compruebe](view-label-activity-for-documents.md) que las etiquetas de retención se aplican correctamente al contenido de la organización y use el [análisis de etiquetas](label-analytics.md) para ver rápidamente dónde se usan estas etiquetas y dónde se aplican.|
-| **Administrar buzones inactivos** | Es posible que su organización tenga que conservar el correo electrónico de los antiguos empleados después de que abandonen la organización. En función de los requisitos de retención de su organización, es posible que tenga que conservar el contenido de los buzones de correo durante unos meses o años después de que finalice el empleo, o puede que necesite retener el contenido de los buzones de correo indefinidamente. Independientemente del tiempo que necesite para conservar el correo electrónico, puede crear [buzones inactivos](inactive-mailboxes-in-office-365.md) para conservar el buzón de los antiguos empleados.|
-| **Administración de registros** | Garantizar que [los registros empresariales principales](records-management.md) se declaren y almacenen correctamente con visibilidad completa de la auditoría para cumplir los requisitos normativos.|
+## <a name="information-governance"></a>Gobierno de la información
+
+Para conservar lo que quiera y eliminar lo que no:
+ 
+|Funcionalidad|¿Qué problemas soluciona?|Introducción|
+|:------|:------------|:--------------------|:-----------------------------|
+|[Flujo de trabajo de eliminación y administración de directivas](retention.md)| Conservar o eliminar el contenido que incluye el correo electrónico, los documentos, los mensajes instantáneos y mucho más <br /><br />Escenario de ejemplo: [aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md) | [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md)|
+|[Servicio de importación](importing-pst-files-to-office-365.md)| Importación masiva de archivos PST a buzones de Exchange Online para retener y buscar mensajes de correo electrónico para cumplir los requisitos normativos o de cumplimiento | [Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|[Archivar datos de terceros](archiving-third-party-data.md)| Importar, archivar y aplicar soluciones de cumplimiento a datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos| [Conectores de terceros](archiving-third-party-data.md#third-party-data-connectors)|
+|[Buzones de correo inactivos](inactive-mailboxes-in-office-365.md)| Conservar el contenido del buzón después de que los empleados abandonen la organización | [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)|
+
+## <a name="records-management"></a>Administración de registros
+
+Para administrar contenido de gran valor para obligaciones legales, empresariales o regulatorias, use administración de registros:
+
+|Funcionalidad|¿Qué problemas soluciona?|Introducción|
+|:------|:------------|---------------------|:----------------------------|
+|[Administración de registros](records-management.md)| Una única solución para el correo electrónico y los documentos que incorporan programaciones y requisitos de retención en un plan de archivos que administra la retención, la declaración de los registros y la disposición para soportar el ciclo de vida completo del contenido <br /><br />Escenario de ejemplo: [disposición de registros](disposition.md#disposition-of-records)|[Obtener información sobre los registros](records.md) |
+

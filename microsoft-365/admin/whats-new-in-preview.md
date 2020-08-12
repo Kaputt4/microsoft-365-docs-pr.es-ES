@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: Obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46602014"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635027"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades en el centro de administración de 365 de Microsoft
 
@@ -52,6 +52,17 @@ Y si quiere conocer las novedades de otros servicios en la nube de Microsoft:
 - [Novedades de Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Actualizaciones de Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="june-2020"></a>Junio de 2020
+
+### <a name="keeping-up-with-office-whats-new-management"></a>Mantenerse al día con la nueva administración de Office
+
+Hace unos meses, hemos agregado una configuración que permite administrar los [nuevos mensajes que se muestran en las aplicaciones de Office de un usuario](#office-whats-new-management). Este mes, publicamos una nueva tarjeta de página principal que le ayuda a actuar rápidamente y realizar un seguimiento de los mensajes de **novedades** que desea mostrar a los usuarios de su organización.
+
+### <a name="docs-training-and-videos-june"></a>Documentos, cursos y vídeos (junio)
+
+- [Introducción a Microsoft Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
 
 ## <a name="may-2020"></a>Mayo de 2020
 

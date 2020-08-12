@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597559"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632133"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -72,7 +72,7 @@ Antes de empezar a usar el cumplimiento de la comunicación, debe determinar qui
 
 ## <a name="reviewers"></a>Reviewers
 
-Al crear una directiva de cumplimiento de la comunicación, debe determinar quién revisa los mensajes de los usuarios supervisados. En la Directiva, las direcciones de correo electrónico de usuario identifican personas o grupos de personas para revisar las comunicaciones supervisadas. Los revisores de AAll deben tener buzones hospedados en Exchange Online y deben asignarse a los roles *análisis de cumplimiento de comunicaciones* o de investigación de cumplimiento en la *comunicación* . Los revisores (analistas o investigadores) también deben tener asignado el rol de *Administración de casos de cumplimiento* de la comunicación. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la Directiva y proporciona vínculos a la información sobre el proceso de revisión.
+Al crear una directiva de cumplimiento de la comunicación, debe determinar quién revisa los mensajes de los usuarios supervisados. En la Directiva, las direcciones de correo electrónico de usuario identifican personas o grupos de personas para revisar las comunicaciones supervisadas. Todos los revisores deben tener buzones de correo hospedados en Exchange Online y deben asignarse a los roles *análisis de cumplimiento de comunicaciones* o de investigación de cumplimiento en la *comunicación* . Los revisores (analistas o investigadores) también deben tener asignado el rol de *Administración de casos de cumplimiento* de la comunicación. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la Directiva y proporciona vínculos a la información sobre el proceso de revisión.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Grupos de usuarios supervisados y revisores
 
@@ -107,9 +107,9 @@ Debe presentar una solicitud al Soporte técnico de Microsoft para que su organi
 
 - **Orígenes de terceros**: puede examinar las comunicaciones de orígenes de terceros para los datos importados en buzones de la organización de Microsoft 365. Los conectores admiten los siguientes recursos de terceros:
 
-    - [Bloomberg instantáneo](archive-instant-bloomberg-data.md)
+    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Mensaje de Bloomberg](archive-bloomberg-message-data.md)
-    - [Chat de ICE](archive-icechat-data.md)
+    - [Chat ICE](archive-icechat-data.md)
 
 Debe configurar un conector de terceros para la organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de la comunicación. La sección **orígenes de terceros** del Asistente para la Directiva de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
@@ -208,7 +208,7 @@ Para analizar los mensajes de correo electrónico y los datos adjuntos de las mi
 
 Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva de cumplimiento de comunicaciones a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. En este ejemplo, las tres condiciones se definirían de la siguiente manera:
   
-- El **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Trade"
+- El **mensaje contiene cualquiera de estas palabras**, con la palabra clave "Trade"
 - El **tamaño del mensaje es mayor que**, con el valor de 2 MB
 - El **mensaje no contiene ninguna de estas palabras**, con las palabras clave "aprobado por el equipo financiero de Contoso"
 
@@ -246,13 +246,13 @@ Si desea crear más de un mensaje de correo electrónico basado en texto sencill
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,9 +268,9 @@ Los filtros de cumplimiento de comunicaciones le permiten filtrar y ordenar los 
 | **Fecha** | La fecha en la que un usuario de la organización envió o recibió el mensaje. |
 | **Clase File** | La clase del mensaje en función del tipo de mensaje, ya sea *mensaje* o *datos adjuntos*. |
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
-| **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloonmberg, etc. Para obtener más información acerca de los tipos de elementos y las clases de mensajes comunes, vea [tipos de elementos y clases de mensajes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Clase Item** | El origen del mensaje en función del tipo de mensaje, el correo electrónico, Microsoft Team chat, Bloomberg, etc. Para obtener más información acerca de los tipos de elementos y las clases de mensajes comunes, vea [tipos de elementos y clases de mensajes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Dominios de destinatarios** | El dominio al que se envió el mensaje. Este dominio suele ser su dominio de suscripción de Microsoft 365 de forma predeterminada. |
-| **Recipient** | El usuario al que se envió el mensaje. |
+| **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | El dominio que envió el mensaje. |
 | **Tamaño** | El tamaño del mensaje en KB. |
@@ -289,7 +289,7 @@ Para las directivas de cumplimiento de la comunicación, los siguientes valores 
 |:-----|:-----|
 | Cronológica | Agregación sencilla |
 | Umbral | 4 actividades |
-| Window | de 60 minutos |
+| Window | 60 minutos |
 
 >[!Note]
 >La configuración de desencadenadores de umbral de la Directiva de alerta para actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de la comunicación.
@@ -321,7 +321,7 @@ El nuevo panel **informes** es la ubicación central para ver todos los informes
 El panel **informes** contiene los widgets de informe siguientes:
 
 - **Coincidencias de directivas recientes**: muestra el número de coincidencias por Directiva activa a lo largo del tiempo.
-- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por la Directiva a lo largo del tiempo.
+- **Elementos resueltos por directiva**: muestra el número de alertas de coincidencia de directivas resueltas por directiva a lo largo del tiempo.
 - **Usuarios con la mayoría de las coincidencias de directiva**: muestra los usuarios (o los nombres de usuario de anonimizan) y el número de coincidencias de directivas para un período determinado.
 - **Directiva con la mayoría de las coincidencias**: muestra las directivas y el número de coincidencias de un período determinado, clasificados de mayor a menor para las coincidencias.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502931"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632111"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
 
@@ -193,7 +193,7 @@ Para analizar los mensajes de correo electrónico y los datos adjuntos de las mi
 
 Si escribe varias condiciones, Microsoft 365 usa todas las condiciones de forma conjunta para determinar cuándo debe aplicarse la Directiva a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. Por lo tanto, en este caso, las tres condiciones serían las siguientes:
   
-- El **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Trade"
+- El **mensaje contiene cualquiera de estas palabras**, con la palabra clave "Trade"
 
 - El **tamaño del mensaje es mayor que**, con el valor de 2 MB
 

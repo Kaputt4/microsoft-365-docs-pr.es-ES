@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005715"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632156"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creación y administración de reglas de detecciones personalizadas
 
@@ -51,6 +51,10 @@ Para administrar los permisos necesarios, un **administrador global** puede hace
 ### <a name="1-prepare-the-query"></a>1. Prepare la consulta.
 
 En el centro de seguridad de Microsoft 365, vaya a **búsqueda avanzada** y seleccione una consulta existente o cree una nueva consulta. Cuando use una consulta nueva, ejecute la consulta para identificar los errores y comprender los posibles resultados.
+
+>[!IMPORTANT]
+>Para evitar que el servicio devuelva demasiadas alertas, cada regla se limita a generar sólo 100 alertas cada vez que se ejecuta. Antes de crear una regla, ajuste su consulta para evitar alertas por actividades normales y cotidianas.
+
 
 #### <a name="required-columns-in-the-query-results"></a>Columnas necesarias en los resultados de la consulta
 Para crear una regla de detección personalizada, la consulta debe devolver las siguientes columnas:
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. cree una nueva regla y proporcione los detalles de la alerta.
 
 Con la consulta en el editor de consultas, seleccione **crear regla de detección** y especifique los siguientes detalles de alerta:
