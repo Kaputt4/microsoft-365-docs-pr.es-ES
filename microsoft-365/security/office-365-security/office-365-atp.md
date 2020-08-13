@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: La Protección contra amenazas avanzada de Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de creación de informes y funciones de inteligencia de amenazas.
-ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434054"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653610"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -45,9 +45,11 @@ La Protección contra amenazas avanzada de Office 365 (ATP) protege su organizac
 
 La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
-| Plan 1 de ATP de Office 365 | Plan 2 de ATP de Office 365 |
+****
+
+|Plan 1 de ATP de Office 365|Plan 2 de ATP de Office 365|
 |---|---|
-|Funcionalidades de configuración, protección y detección:<br/>• [Datos adjuntos seguros](atp-safe-attachments.md)<br/>• [Vínculos seguros](atp-safe-links.md)<br/>• [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP de protección contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Detecciones en tiempo real](threat-explorer.md)|Funcionalidades del plan 1 de ATP de Office 365<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:<br/>• [Rastreadores de amenazas](threat-trackers.md)<br/>• [Explorador de amenazas](threat-explorer.md)<br/>• [Investigación y respuesta automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Simulador de ataque](attack-simulator.md)|
+|<br/>Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](atp-safe-attachments.md)</li><li>[Vínculos seguros](atp-safe-links.md)</li><li>[ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing de ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Funcionalidades del plan 1 de ATP de Office 365<br/>--- además ---<br/>Funcionalidades de automatización, investigación, corrección y educación:</li><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
 |
 
 - El plan 2 de ATP de Office 365 está incluido en Office 365 E5, Office 365 A5 y en Microsoft 365 E5.
@@ -112,11 +114,11 @@ Office 365 ATP Plan 2 incluye las mejores [herramientas de investigación y resp
 Para acceder a las características de ATP en el Centro de seguridad y cumplimiento, debe tener asignado un rol adecuado. En la tabla siguiente se ofrecen algunos ejemplos:
 
 |Rol o grupo de roles|Recursos para obtener más información|
-|---------|---------|
-|Administrador Global (puede asignarse en el Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|Administrador de Seguridad (puede asignarse en Azure Active Directory o en el Centro de seguridad y cumplimiento) |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
+|---|---|
+|Administrador Global (puede asignarse en el Azure Active Directory o en el Centro de seguridad y cumplimiento)|[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Administrador de Seguridad (puede asignarse en Azure Active Directory o en el Centro de seguridad y cumplimiento)|[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
 |Gestión de organizaciones de Exchange Online (esto se asigna en Exchange Online)|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
-|Búsqueda y purga (se asigna solo en el Centro de seguridad y cumplimiento) |[Permisos del Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md|
+|Búsqueda y purga (se asigna solo en el Centro de seguridad y cumplimiento)|[Permisos en el Centro de seguridad y cumplimiento ](permissions-in-the-security-and-compliance-center.md)|
 
 Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los campos de encabezado que Exchange Online Protection (EOP) agrega a los mensajes. Estos campos de encabezado proporcionan información sobre el mensaje y cómo se ha procesado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755361"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653430"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
@@ -43,9 +43,10 @@ Los campos y valores individuales se describen en la siguiente tabla.
 > [!NOTE]
 > El encabezado **X-Forefront-Antispam-Report** contiene muchos campos y valores de encabezado distintos. Otros campos de este encabezado que no se describen en la tabla los usa exclusivamente el equipo de protección contra el correo no deseado de Microsoft con fines de diagnóstico.
 
-|||
+****
+
+|Campo del encabezado|Descripción|
 |---|---|
-|**Campo de encabezado**|**Descripción**|
 |ARC|El protocolo ARC tiene los encabezados siguientes: <ul><li>AAR: registra el contenido del encabezado de resultados de Autenticación de DMARC.</li><li>AMS: este encabezado incluye las firmas criptográficas del mensaje.</li><li>AS: incluye las firmas criptográficas de los encabezados del mensaje. Este encabezado contiene una etiqueta de una validación de cadena denominada "cv=", que incluye el resultado de la validación de la cadena como **none**, **pass**o **fail**.</li></ul>|
 |CAT:|La categoría de la directiva de protección que se aplica al mensaje: <ul><li>BULK: masivo</li><li>DIMP: suplantación de dominio</li><li>GIMP: suplantación basada en la inteligencia de buzones</li><li>HPHSH o HPHISH: suplantación de identidad de alta confianza</li><li>HSPM: correo no deseado de confianza elevada</li><li>MALW: malware</li><li>PHSH: phishing</li><li>SPM: correo no deseado</li><li>SPOOF: suplantación de identidad</li><li>UIMP: suplantación de usuario</li><li>AMP: software antimalware</li><li>SAP: datos adjuntos seguros</li><li>OSPM: correo no deseado saliente</li></ul><br/>Un mensaje entrante puede aparecer marcado por múltiples formas de protección y múltiples análisis de detección. Las directivas tienen diferentes prioridades y se aplica primero la que tenga la prioridad más alta. Para obtener más información, consulte [Qué directiva se aplica cuando se ejecutan varios métodos de protección y exámenes de detección en el correo electrónico](how-policies-and-protections-are-combined.md).|
 |CIP: \[dirección IP\]|La dirección IP de conexión. Puede usar esta dirección IP en la Lista de direcciones IP permitidas o en la Lista de direcciones IP bloqueadas. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).|
@@ -75,9 +76,10 @@ Los campos y valores individuales se describen en la siguiente tabla.
 
 En la tabla siguiente se describen los campos más útiles del encabezado de mensaje **X-Microsoft-Antispam**. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
 
-|||
+****
+
+|Campo del encabezado|Descripción|
 |---|---|
-|**Campo de encabezado**|**Descripción**|
 |BCL|Nivel de queja de correo masivo (BCL) del mensaje. Un BCL superior indica que es más probable que un mensaje de correo masivo (también denominado _correo gris_) generen quejas (y, por lo tanto, es más probable que sea correo no deseado). Para obtener más información, consulte [Nivel de queja de correo masivo (BCL)](bulk-complaint-level-values.md).|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 En esta tabla se describen los campos y los valores posibles para todas las comprobaciones de autenticación de correo electrónico.
 
-|||
+****
+
+|Campo de encabezado|Descripción|
 |---|---|
-|**Campo de encabezado**|**Descripción**|
 |acción|Indica la acción efectuada por el filtro de correo no deseado en función de los resultados de la comprobación de DMARC. Por ejemplo: <ul><li>**oreject** u **o.reject**: significa invalidar el rechazo. En este caso, Microsoft 365 usa esta acción cuando recibe un mensaje que no supera la comprobación de DMARC desde un dominio cuyo registro TXT de DMARC tiene una directiva de p=reject. En lugar de eliminar o rechazar el mensaje, Microsoft 365 marca el mensaje como correo no deseado. Para obtener más información sobre por qué Microsoft 365 está configurado de esta forma, vea [Cómo controla Microsoft 365 el correo electrónico entrante que no supera las comprobaciones de DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: indica que se entregará un porcentaje inferior al 100 % de los mensajes que no superen la validación por DMARC. Esto significa que el mensaje no superó la comprobación de DMARC y la directiva se estableció en cuarentena, pero el campo pct no se estableció en el 100 % y el sistema decidió, de forma aleatoria, no aplicar la acción de DMARC, de acuerdo con la directiva del dominio especificado.</li><li>**pct.reject**: indica que se entregará un porcentaje inferior al 100 % de los mensajes que no superen la validación por DMARC. Esto significa que el mensaje no superó la comprobación de DMARC y se estableció el rechazo de la directiva, pero el campo pct no se estableció en el 100 % y el sistema decidió, de forma aleatoria, no aplicar la acción de DMARC, de acuerdo con la directiva del dominio especificado.</li><li>**permerror**: se produjo un error permanente durante la evaluación por DMARC (por ejemplo, la detección de un registro TXT de DMARC con un formato incorrecto en DNS). Es probable que volver a enviar este mensaje no produzca un resultado diferente. Puede que deba ponerse en contacto con el propietario del dominio para intentar resolver el problema.</li><li>**temperror**: se produjo un error temporal durante la evaluación por DMARC. Puede solicitar al remitente que reenvíe el mensaje más tarde para procesar correctamente el correo electrónico.</li></ul>|
 |compauth|Resultado de la autenticación compuesta. Microsoft 365 la utiliza para combinar varios tipos de autenticación como SPF, DKIM, DMARC o cualquier otra parte del mensaje para determinar si el mensaje se autentica o no. Usa el dominio De: como base de la evaluación.|
 |dkim|Describe los resultados de la comprobación de DKIM del mensaje. Los valores posibles son: <ul><li>**pass**: indica que se superó la validación por DKIM del mensaje.</li><li>**fail (motivo)**: indica que no se superó la validación por DKIM del mensaje e incluye el motivo. Por ejemplo, si el mensaje no estaba firmado o no se verificó la firma.</li><li>**none**: indica que el mensaje no estaba firmado. Esto podría indicar que el dominio tiene un registro DKIM o que el registro DKIM no proporciona ningún resultado, solo indica que el mensaje no estaba firmado.</li></ul>|
