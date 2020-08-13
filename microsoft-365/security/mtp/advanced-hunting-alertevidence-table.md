@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 8fc713db33b0e40adcd0975d26c10daece636ab1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899356"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649516"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -39,16 +39,16 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AlertId` | string | Identificador único de alerta. |
 | `EntityType` | string | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
 | `EvidenceRole` | string | Cómo interviene la entidad en una alerta, lo que indica si se ve afectada o si simplemente está relacionada. |
-| `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
+| `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
-| `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
-| `AccountName` | string | Nombre de usuario de la cuenta |
+| `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
+| `AccountName` | cadena | Nombre de usuario de la cuenta |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
 | `DeviceId` | string | Identificador único para el equipo en servicio |
-| `ThreatFamily` | string | Familia de malware en la que el archivo o proceso malintencionado se clasificó en |
+| `ThreatFamily` | cadena | Familia de malware en la que el archivo o proceso malintencionado se clasificó en |
 | `EvidenceDirection` | string | Indica si la entidad es el origen o el destino de una conexión de red. |
 | `AdditionalFields` | string | Información adicional sobre el evento en el formato de matriz JSON |
 
@@ -56,6 +56,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

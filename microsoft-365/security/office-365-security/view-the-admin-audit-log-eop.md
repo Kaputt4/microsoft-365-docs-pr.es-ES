@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613329"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653502"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
 
@@ -26,7 +26,12 @@ En las organizaciones independientes de Exchange Online Protection (EOP) que no 
 El registro de auditoría de administrador registra acciones específicas, basadas en los cmdlets de PowerShell independientes de EOP, realizadas por administradores y usuarios a los que se les han asignado privilegios administrativos. Las entradas del registro de auditoría de administración proporcionan información sobre el cmdlet que se ejecutó, los parámetros que se usaron, quién ejecutó el cmdlet y qué objetos se vieron afectados.
 
 > [!NOTE]
-> <ul><li>El registro de auditoría de administración está habilitado de forma predeterminada y no se puede deshabilitar.</li><li>El registro de auditoría de administrador no registra las acciones basadas en los cmdlets que comienzan con los verbos **Get**, **Search**o **Test**.</li><li>Las entradas de los registros de auditoría se conservan durante 90 días. Cuando una entrada tiene más de 90 días, se elimina</li></ul>
+>
+> - El registro de auditoría de administración está habilitado de forma predeterminada y no se puede deshabilitar.
+>
+> - El registro de auditoría de administrador no registra las acciones basadas en los cmdlets que comienzan con los verbos **Get**, **Search**o **Test**.
+>
+> - Las entradas de los registros de auditoría se conservan durante 90 días. Cuando una entrada tiene más de 90 días, se elimina
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -63,7 +68,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 
 ## <a name="use-standalone-eop-powershell-to-view-the-admin-audit-log"></a>Usar PowerShell independiente de EOP para ver el registro de auditoría de administrador
 
-Puede usar la PowerShell independiente de EOP para buscar entradas de registro de auditoría que cumplan los criterios especificados. Use la sintaxis que se muestre a continuación:
+Puede usar la PowerShell independiente de EOP para buscar entradas de registro de auditoría que cumplan los criterios especificados. Utilice la sintaxis siguiente:
 
 ```PowerShell
 Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Parameter1,Parameter2,...ParameterN>] [-StartDate <UTCDateTime>] [-EndDate <UTCDateTime>] [-UserIds <"User1","User2",..."UserN">] [-ObjectIds <"Object1","Object2",..."ObjectN">] [-IsSuccess <$true | $false>]
@@ -133,9 +138,10 @@ Para ver el contenido de los campos **CmdletParameters** y **ModifiedProperties*
 
 Todas las entradas del registro de auditoría contienen la información que se describe en la tabla siguiente. El registro de auditoría contiene una o varias entradas de registro de auditoría.
 
-|||
+****
+
+|Field|Description|
 |---|---|
-|**Field**|**Descripción**|
 |`RunspaceId`|Este campo se usa de forma interna en EOP.|
 |`ObjectModified`|Este campo contiene el objeto modificado por el cmdlet especificado en el `CmdletName` campo.|
 |`CmdletName`|Este campo contiene el nombre del cmdlet ejecutado por el usuario en el `Caller` campo.|

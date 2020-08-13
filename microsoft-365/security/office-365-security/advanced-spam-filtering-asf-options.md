@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352481"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653346"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -33,7 +33,12 @@ ms.locfileid: "44352481"
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, la configuración de filtro de correo no deseado (ASF) en las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o de filtrado ASF se destina específicamente a estas propiedades porque suelen encontrarse en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como **correo no deseado** o **correo no deseado de alta confianza**.
 
 > [!NOTE]
-> La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF: <ul><li>Notificaciones de cuarentena de correo no deseado para el usuario final periódico.</li><li>La presencia de mensajes filtrados en cuarentena.</li><li>Los `X-CustomSpam:` campos de encabezado X específicos que se agregan a los mensajes, tal y como se describe en este tema.</li></ul>
+> La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF:
+> - Notificaciones de cuarentena de correo no deseado para el usuario final periódico.
+>
+> - La presencia de mensajes filtrados en cuarentena.
+>
+> - Los `X-CustomSpam:` campos de encabezado X específicos que se agregan a los mensajes, tal y como se describe en este tema.
 
 En las siguientes secciones se describe la configuración y las opciones de ASF que están disponibles en las directivas contra correo no deseado en el centro de seguridad & cumplimiento y en Exchange Online PowerShell o en Windows EOP independiente ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) y [set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
@@ -58,9 +63,7 @@ Para cada configuración ASF, las siguientes opciones están disponibles en las 
   - El modo de prueba no está disponible para los siguientes valores de ASF:
 
     - **Filtrado de identificador de remitente condicional: error grave** (*MarkAsSpamFromAddressAuthFail*)
-
     - **Retrodispersión de NDR**(*MarkAsSpamNdrBackscatter*)
-
     - **Registro de SPF: error grave** (*MarkAsSpamSpfRecordHardFail*)
 
   - Se aplica la misma acción de modo de prueba a *todos los* valores de ASF establecidos para la **prueba**. No se pueden configurar distintas acciones del modo de prueba para la configuración de ASF diferente.
@@ -69,9 +72,10 @@ Para cada configuración ASF, las siguientes opciones están disponibles en las 
 
 La siguiente configuración ASF establece el nivel de confianza contra correo no deseado (SCL) de los mensajes detectados en 5 o 6, que corresponde al veredicto del filtro de **correo no deseado** y a la acción correspondiente en las directivas contra correo no deseado.
 
-||||
+****
+
+|Configuración de la Directiva contra correo no deseado|Description|Encabezado X agregado|
 |---|---|---|
-|**Configuración de la Directiva contra correo no deseado**|**Descripción**|**Encabezado X agregado**|
 |**Vínculos de imagen a sitios remotos** <br/><br/> *IncreaseScoreWithImageLinks*|Los mensajes que contienen `<Img>` vínculos de etiquetas HTML a sitios remotos (por ejemplo, mediante http) se marcan como correo no deseado.|`X-CustomSpam: Image links to remote sites`|
 |**Redireccionamiento de direcciones URL a otro puerto** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Los mensajes que contienen hipervínculos que se redirigen a puertos TCP distintos de 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) se marcan como correo no deseado.|`X-CustomSpam: URL redirect to other port`|
 |**Dirección IP numérica en URL** <br/><br/> *IncreaseScoreWithNumericIps*|Los mensajes que contienen direcciones URL basadas en números (normalmente, direcciones IP) se marcan como correo no deseado.|`X-CustomSpam: Numeric IP in URL`|
@@ -82,9 +86,10 @@ La siguiente configuración ASF establece el nivel de confianza contra correo no
 
 La siguiente configuración ASF establece el SCL de los mensajes detectados en 9, que corresponde al filtro de **correo no deseado de confianza alta** y a la acción correspondiente en las directivas contra correo no deseado.
 
-||||
+****
+
+|Configuración de la Directiva contra correo no deseado|Description|Encabezado X agregado|
 |---|---|---|
-|**Configuración de la Directiva contra correo no deseado**|**Descripción**|**Encabezado X agregado**|
 |**Mensajes vacíos** <br/><br/> *MarkAsSpamEmptyMessages*|Los mensajes sin asunto, sin contenido en el cuerpo del mensaje y sin datos adjuntos, no se marcan como correo no deseado de confianza alta.|`X-CustomSpam: Empty Message`|
 |**JavaScript o VBScript en HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Los mensajes que utilizan JavaScript o Visual Basic Script Edition en HTML están marcados como correo no deseado de alta confianza. <br/><br/> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Etiquetas Frame o IFrame en HTML** <br><br/> *MarkAsSpamFramesInHtml*|Los mensajes que contienen `<frame>` o `<iframe>` etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Estas etiquetas se usan en los mensajes de correo electrónico para dar formato a la página para mostrar texto o gráficos.|`X-CustomSpam: IFRAME or FRAME in HTML`|

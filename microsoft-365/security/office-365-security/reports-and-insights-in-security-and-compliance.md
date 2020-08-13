@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los informes y la información inteligentes disponibles en el centro de seguridad & cumplimiento y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577191"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652782"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
@@ -40,12 +40,14 @@ Además de resaltar las áreas problemáticas, los informes y la información in
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>Tipos de informes en el centro de seguridad & cumplimiento
 
 Hay una gran variedad de informes disponibles en el centro de seguridad & cumplimiento. (Ir a **informes** \> **Panel** para obtener una vista de todo.) En la tabla siguiente se enumeran los informes disponibles con vínculos para obtener más información:
-  
+
+****
+
 |Tipo de información|Cómo llegar ahí|Dónde ir para obtener más información|
 |---|---|---|
 |**Informes del centro de cumplimiento de & de seguridad** (todo esto)  <br/> Información y recomendaciones principales, así como vínculos a informes de cumplimiento de & de seguridad, como informes de prevención de pérdida de datos, etiquetas, informes de seguridad de correo electrónico, informes de protección contra amenazas avanzada, etc.|En el centro de seguridad & cumplimiento, vaya a **Reports** \> **Dashboard**|[Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft](../mtp/monitoring-and-reporting.md)|
 |**Prevención de pérdida de datos (DLP)** <br/> Las coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas|En el centro de seguridad & cumplimiento, vaya a Directiva de prevención de **pérdida de datos** \> **Policy** .|[Vea los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md)|
-|**Gobierno de datos** <br/> Información sobre cómo se aplican las etiquetas, las etiquetas clasificadas como registros, las tendencias de las etiquetas y mucho más|En el centro de seguridad & cumplimiento, vaya **Information governance** al \> **Panel** de gobierno de información.|[Vea los informes de gobierno de datos](../../compliance/view-the-data-governance-reports.md)|
+|**Gobierno de datos** <br/> Información sobre cómo se aplican las etiquetas, las etiquetas clasificadas como registros, las tendencias de las etiquetas y mucho más|En el centro de seguridad & cumplimiento, vaya **Information governance** al \> **Panel** de gobierno de información.|[Ver los informes de gobierno de datos](../../compliance/view-the-data-governance-reports.md)|
 |**Panel de administración de amenazas** (esto también se conoce como el panel de seguridad)  <br/> Detecciones de amenazas, tendencias de malware, usuarios de destino principales, detalles sobre los mensajes de correo electrónico enviados y recibidos, etc.|En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **Panel** de administración de amenazas.|[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)|
 |**Explorador de amenazas** (también conocido como explorador) o **detecciones en tiempo real** <br/> Se ha detectado malware sospechoso en correo electrónico y archivos en Microsoft 365|En el centro de seguridad & cumplimiento, vaya a **Threat Management** \> **Explorer** o a **detección en tiempo real** .<br/> |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|
 |**Informes de seguridad de correo electrónico y protección contra amenazas avanzada** <br/> Informes de seguridad de correo electrónico y protección contra amenazas (incluidos los informes de malware, correo no deseado, suplantación de identidad y suplantación)|En el centro de seguridad & cumplimiento, vaya a **Reports** \> **Dashboard**|[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md) <br/><br/> [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)|
@@ -53,6 +55,7 @@ Hay una gran variedad de informes disponibles en el centro de seguridad & cumpli
 |**Cumplimiento normativo RGPD** <br/> Información sobre el cumplimiento de RGPD, incluidos vínculos a asuntos de datos, tendencias de etiquetas y casos cerrados & activos|En el centro de seguridad & cumplimiento, visite **Data privacy** \> **Panel de RGPD** de privacidad de datos|[Information Protection de Office 365 para RGPD](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**Registro de auditoría** <br/> Información sobre las actividades, usuarios, archivos, carpetas y más de Microsoft 365.|En el centro de seguridad & cumplimiento, vaya a **búsqueda &** \> **búsqueda de registros de auditoría** de investigación|[Buscar el registro de auditoría en el centro de seguridad & cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Informes de cumplimiento** <br/> Informes de FedRAMP, informes de gobernanza, riesgo y cumplimiento, informes de administración de seguridad de la información de la ISO e informes de auditoría y evaluación de los controles de organización de servicios|En el centro de seguridad & cumplimiento, vaya **Service assurance** a \> **informes de cumplimiento** de garantía del servicio.|[Planeación del cumplimiento de & de seguridad en Office 365](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## <a name="related-topics"></a>Temas relacionados
 

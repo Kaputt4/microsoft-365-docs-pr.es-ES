@@ -17,141 +17,154 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 54b896616cf09c84525b812fed6fb3f35b07bf10
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617223"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652650"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen la [Protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Vínculos seguros ATP](atp-safe-links.md), una característica de la [protección contra amenazas avanzada](office-365-atp.md) (atp) de Office 365, puede ayudar a proteger su organización de vínculos malintencionados usados en suplantación de identidad (phishing) y otros ataques. Si tiene los permisos necesarios [para el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que cuando los usuarios hagan clic en direcciones web (URL), su organización esté protegida. Las directivas de vínculos seguros de ATP se pueden configurar para analizar direcciones URL en correo electrónico y direcciones URL en documentos de Office.
+[Vínculos seguros ATP](atp-safe-links.md), una característica de la [protección contra amenazas avanzada](office-365-atp.md) (atp) de Office 365, puede ayudar a proteger su organización de vínculos malintencionados usados en suplantación de identidad (phishing) y otros ataques. Si tiene los permisos necesarios [para el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que cuando los usuarios hagan clic en direcciones web (URL), su organización esté protegida. Las directivas de vínculos seguros de ATP se pueden configurar para analizar direcciones URL en correo electrónico y direcciones URL en documentos de Office.
 
 Con los vínculos seguros ATP habilitados, si un usuario hace clic en un vínculo en un correo electrónico y la lista de direcciones URL bloqueadas personalizadas de la organización ha bloqueado la URL, o si la dirección URL se determina como malintencionada, se abrirá una página de advertencia.
-  
+
 [Las nuevas características se agregan continuamente a ATP](office-365-atp.md#new-features-in-office-365-atp). A medida que se agreguen nuevas características, es posible que deba realizar ajustes en las directivas de vínculos seguros de ATP existentes.
 
-## <a name="what-to-do"></a>Qué hacer 
-  
+## <a name="what-to-do"></a>Qué hacer
+
 1. Revise los requisitos previos.
-    
+
 2. Revise y edite la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios. Por ejemplo, puede [configurar la lista de direcciones URL bloqueadas personalizadas para vínculos seguros ATP](set-up-a-custom-blocked-urls-list-atp.md).
-    
+
 3. Agregar o editar directivas para destinatarios de correo electrónico específicos, incluida [la configuración de la lista de direcciones URL "no reescribir" personalizadas para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
-    
+
 4. Obtenga información sobre las opciones de directiva de vínculos seguros de ATP (en este artículo), incluida la configuración de cambios recientes.
-    
+
 ## <a name="step-1-review-the-prerequisites"></a>Paso 1: revisar los requisitos previos
 
 - Asegúrese de que su organización tiene la [protección contra amenazas avanzada de Office 365](office-365-atp.md).
-    
-- Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos: <br>
 
-    |Role  |Dónde y cómo se asigna  |
-    |---------|---------|
-    |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
-    |Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-    |Administración de la organización en Exchange Online |Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+- Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
-    Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    |Role|Dónde y cómo se asigna|
+    |---|---|
+    |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+    |Administrador de seguridad|Centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )|
+    |Administración de la organización en Exchange Online|Centro de administración de Exchange ( <https://outlook.office365.com/ecp> ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+
+    Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Asegúrese de que los clientes de Office estén configurados para usar la [autenticación moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (esto es para la protección de vínculos seguros de ATP en documentos de Office).
-    
-- [Obtenga información sobre las opciones de directiva de vínculos seguros de ATP](#step-4-learn-about-atp-safe-links-policy-options) (en este artículo). 
+
+- [Obtenga información sobre las opciones de directiva de vínculos seguros de ATP](#step-4-learn-about-atp-safe-links-policy-options) (en este artículo).
 
 - Espere hasta 30 minutos para que la directiva nueva o actualizada se extienda a todos los centros de recursos de Microsoft 365.
-    
+
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: definir (o revisar) la Directiva de vínculos seguros de ATP que se aplica a todos los usuarios
 
 Cuando tenga la [protección contra amenazas avanzada de Office 365](office-365-atp.md), tendrá una directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios de la organización. Asegúrese de revisar y, si es necesario, modifique la directiva predeterminada.
-  
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
-    
+
+1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
+
 2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **vínculos seguros**de **directiva \> ** .
-    
-3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).<br/>![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-  
+
+3. En la sección **directivas que se aplican a toda la organización** , seleccione predeterminado y, a continuación, elija **Editar** (el botón Editar **es**similar a un lápiz).
+
+   ![Haga clic en Editar para editar la directiva predeterminada para protección de vínculos seguros](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+
 4. En la sección **bloquear las siguientes direcciones URL** , especifique una o más direcciones URL en las que desee impedir que los usuarios de la organización puedan visitar. (Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-atp.md)).
-    
-5. En la sección **configuración que se aplica a los contenidos excepto el correo electrónico** , active (o desactive) las opciones que desee usar. (Le recomendamos que seleccione todas las opciones). 
-    
+
+5. En la sección **configuración que se aplica a los contenidos excepto el correo electrónico** , active (o desactive) las opciones que desee usar. (Le recomendamos que seleccione todas las opciones).
+
 6. Seleccione **Guardar**.
-    
+
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: agregar (o editar) directivas de vínculos seguros de ATP que se aplican a destinatarios de correo electrónico específicos
 
-Una vez que haya revisado (o editado) la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios, el siguiente paso consiste en definir directivas adicionales que se aplicarán a destinatarios específicos. Por ejemplo, puede especificar excepciones a su directiva predeterminada definiendo una directiva adicional. 
-  
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
-    
+Una vez que haya revisado (o editado) la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios, el siguiente paso consiste en definir directivas adicionales que se aplicarán a destinatarios específicos. Por ejemplo, puede especificar excepciones a su directiva predeterminada definiendo una directiva adicional.
+
+1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
+
 2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva**.
-    
+
 3. Elija **vínculos seguros**.
-    
-4. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un signo más ( **+** )).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
-  
-5. Especifique el nombre, la descripción y la configuración de la directiva.<br/>**Ejemplo:** Para configurar una directiva denominada "no hay clic directo a través de" que no permite a los usuarios de un grupo determinado de su organización hacer clic a través de un sitio web específico sin protección de vínculos seguros de ATP, puede especificar la siguiente configuración recomendada: 
-    
-    - En el cuadro **nombre** , escriba sin clic directo.
 
-    - En el cuadro **Descripción** , escriba una descripción como, para evitar que los usuarios de determinados grupos puedan hacer clic en un sitio web sin verificación de vínculos seguros de ATP.
+4. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un signo más ( **+** )).
 
-    - En la sección **seleccionar la acción** , elija **activado**.
+   ![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
-    - Seleccione **aplicar análisis de URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos** si desea habilitar la detonación de dirección URL para direcciones URL que señalen archivos y sospechosos (recomendado). Y seleccione **esperar a que se complete el análisis de URL antes de entregar el mensaje** si solo quiere que los usuarios reciban mensajes después de que se hayan examinado completamente las direcciones URL.
+5. Especifique el nombre, la descripción y la configuración de la directiva.
 
-    - Seleccione **aplicar vínculos seguros a los mensajes enviados dentro de la organización** si desea habilitar vínculos seguros para los mensajes enviados entre usuarios de la organización (recomendado).
+   **Ejemplo:** Para configurar una directiva denominada "no hay clic directo a través de" que no permite a los usuarios de un grupo determinado de su organización hacer clic a través de un sitio web específico sin protección de vínculos seguros de ATP, puede especificar la siguiente configuración recomendada:
 
-    - Seleccione no permitir que el **usuario haga clic a través de la dirección URL original** si no desea que los usuarios individuales invaliden las páginas *de notificación de análisis en curso* o *URL bloqueadas* .
+   - En el cuadro **nombre** , escriba sin clic directo.
 
-    - (Opcional) En la sección no **reescribir las siguientes direcciones URL** , especifique una o más direcciones URL que se consideren seguras para su organización. (Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
+   - En el cuadro **Descripción** , escriba una descripción como, para evitar que los usuarios de determinados grupos puedan hacer clic en un sitio web sin verificación de vínculos seguros de ATP.
 
-    - En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
-    
+   - En la sección **seleccionar la acción** , elija **activado**.
+
+   - Seleccione **aplicar análisis de URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos** si desea habilitar la detonación de dirección URL para direcciones URL que señalen archivos y sospechosos (recomendado). Y seleccione **esperar a que se complete el análisis de URL antes de entregar el mensaje** si solo quiere que los usuarios reciban mensajes después de que se hayan examinado completamente las direcciones URL.
+
+   - Seleccione **aplicar vínculos seguros a los mensajes enviados dentro de la organización** si desea habilitar vínculos seguros para los mensajes enviados entre usuarios de la organización (recomendado).
+
+   - Seleccione no permitir que el **usuario haga clic a través de la dirección URL original** si no desea que los usuarios individuales invaliden las páginas *de notificación de análisis en curso* o *URL bloqueadas* .
+
+   - (Opcional) En la sección no **reescribir las siguientes direcciones URL** , especifique una o más direcciones URL que se consideren seguras para su organización. (Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
+
+   - En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
+
 6. Seleccione **Guardar**.
 
 > [!NOTE]
 > Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo tendrá efecto la Directiva de mayor prioridad.
-    
+
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Paso 4: información sobre las opciones de directiva de vínculos seguros de ATP
 
 Al configurar o editar las directivas de vínculos seguros de ATP, verá que hay varias opciones disponibles. En caso de que se pregunte Cuáles son estas opciones, en la tabla siguiente se describe cada una de ellas y su efecto. Recuerde que hay dos tipos principales de directivas de vínculos seguros de ATP que debe definir o editar:
-- una [directiva predeterminada](#default-policy-options) que se aplica a todos los usuarios; y  
-- [directivas adicionales para destinatarios específicos](#policies-that-apply-to-specific-email-recipients) 
+
+- una [directiva predeterminada](#default-policy-options) que se aplica a todos los usuarios; y
+- [directivas adicionales para destinatarios específicos](#policies-that-apply-to-specific-email-recipients)
 
 ### <a name="default-policy-options"></a>Opciones de directivas predeterminadas
 
 Las opciones de directiva predeterminadas se aplican a todos los usuarios de la organización.
 
-|Esta opción  |Se obtiene este resultado  |
-|---------|---------|
-| **Bloquear las siguientes direcciones URL** <br/>    | Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-atp.md). |
-| **Microsoft 365 apps for Enterprise, Office para iOS y Android** <br/>    | Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a direcciones URL en archivos de Word, Excel y PowerPoint en Windows o Mac OS, mensajes de correo electrónico en Outlook, documentos de Office en dispositivos iOS o Android, archivos de Visio 2016 en Windows y archivos abiertos en las versiones web de las aplicaciones de Office (Word, PowerPoint, Excel, Outlook y OneNote), siempre y 365 |
-| **No hacer un seguimiento cuando los usuarios hacen clic en ATP vínculos seguros** <br/>  | Cuando se selecciona esta opción, se hace clic en datos de direcciones URL en Word, Excel, PowerPoint, documentos de Visio y los mensajes de correo electrónico de Outlook no se almacenan.  <br/> |
-|**No permitir que los usuarios haga clic en los vínculos seguros ATP a la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |
+****
+
+|Esta opción|Se obtiene este resultado|
+|---|---|
+|**Bloquear las siguientes direcciones URL**|Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-atp.md).|
+|**Microsoft 365 apps for Enterprise, Office para iOS y Android**| Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a direcciones URL en archivos de Word, Excel y PowerPoint en Windows o Mac OS, mensajes de correo electrónico en Outlook, documentos de Office en dispositivos iOS o Android, archivos de Visio 2016 en Windows y archivos abiertos en las versiones web de las aplicaciones de Office (Word, PowerPoint, Excel, Outlook y OneNote), siempre y 365|
+|**No hacer un seguimiento cuando los usuarios hacen clic en ATP vínculos seguros**|Cuando se selecciona esta opción, se hace clic en datos de direcciones URL en Word, Excel, PowerPoint, documentos de Visio y los mensajes de correo electrónico de Outlook no se almacenan.|
+|**No permitir que los usuarios haga clic en los vínculos seguros ATP a la dirección URL original**|Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.|
+|
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>Directivas que se aplican a destinatarios de correo electrónico específicos
 
-|Esta opción  |Se obtiene este resultado  |
-|---------|---------|
-|**Desactivado** <br/> |No examina direcciones URL en mensajes de correo electrónico.  <br/> Permite definir una regla de excepción, como una regla que no examina direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.  <br/> |
-|**On** <br/> |Reescribe las direcciones URL para enrutar a los usuarios a través de la protección de vínculos seguros de ATP cuando los usuarios hacen clic en direcciones URL en mensajes de correo electrónico y habilita vínculos seguros de ATP en Outlook (C2R) en Windows.  <br/> Comprueba una dirección URL al hacer clic en una lista de direcciones URL malintencionadas o bloqueadas y desencadena una detonación de la dirección URL en segundo plano si la dirección URL no tiene una reputación válida.  <br/> |
-|**Aplicar un análisis de URL en tiempo real de vínculos y vínculos sospechosos que señalan a archivos** <br/> |Cuando se selecciona esta opción, se examinan direcciones URL sospechosas y vínculos que apuntan al contenido descargable.  <br/> |
-|**Esperar a que se complete el análisis de URL antes de entregar el mensaje** <br/> |Cuando se selecciona esta opción, los mensajes que contienen direcciones URL que se examinarán se retendrán hasta que las direcciones URL terminen de analizar y se confirmen como seguras antes de que se entreguen los mensajes.  <br/> |
-|**Aplicar vínculos seguros a los mensajes enviados dentro de la organización** <br/> | Cuando esta opción está disponible y seleccionada, la protección de vínculos seguros de ATP se aplica a los mensajes de correo electrónico enviados entre las personas de su organización, siempre que las cuentas de correo electrónico se hospeden en Office 365.  <br/> |
-|**No hacer un seguimiento de los clics del usuario** <br/> |Cuando se selecciona esta opción, no se almacenan los datos de las direcciones URL del correo electrónico de remitentes externos. Dirección URL haga clic en seguimiento para los vínculos de los mensajes de correo electrónico enviados dentro de la organización actualmente no se admite.  <br/> |
-|**No permitir que los usuarios hagan clic a través de la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |
-|**No volver a escribir las siguientes direcciones URL** <br/> |Deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis para un grupo específico de destinatarios de correo electrónico de la organización.  Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obtener más información, incluidos los cambios recientes para la compatibilidad con asteriscos comodín ( \* ).  <br/> |
-   
+****
+
+|Esta opción|Se obtiene este resultado|
+|---|---|
+|**Desactivado**|No examina direcciones URL en mensajes de correo electrónico.  <br/> Permite definir una regla de excepción, como una regla que no examina direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.|
+|**On**|Reescribe las direcciones URL para enrutar a los usuarios a través de la protección de vínculos seguros de ATP cuando los usuarios hacen clic en direcciones URL en mensajes de correo electrónico y habilita vínculos seguros de ATP en Outlook (C2R) en Windows.  <br/> Comprueba una dirección URL al hacer clic en una lista de direcciones URL malintencionadas o bloqueadas y desencadena una detonación de la dirección URL en segundo plano si la dirección URL no tiene una reputación válida.|
+|**Aplicar un análisis de URL en tiempo real de vínculos y vínculos sospechosos que señalan a archivos**|Cuando se selecciona esta opción, se examinan direcciones URL sospechosas y vínculos que apuntan al contenido descargable.|
+|**Esperar a que se complete el análisis de URL antes de entregar el mensaje**|Cuando se selecciona esta opción, los mensajes que contienen direcciones URL que se examinarán se retendrán hasta que las direcciones URL terminen de analizar y se confirmen como seguras antes de que se entreguen los mensajes.|
+|**Aplicar vínculos seguros a los mensajes enviados dentro de la organización** <br/> | Cuando esta opción está disponible y seleccionada, la protección de vínculos seguros de ATP se aplica a los mensajes de correo electrónico enviados entre las personas de su organización, siempre que las cuentas de correo electrónico se hospeden en Office 365.|
+|**No hacer un seguimiento de los clics del usuario**|Cuando se selecciona esta opción, no se almacenan los datos de las direcciones URL del correo electrónico de remitentes externos. Dirección URL haga clic en seguimiento para los vínculos de los mensajes de correo electrónico enviados dentro de la organización actualmente no se admite.|
+|**No permitir que los usuarios hagan clic a través de la dirección URL original**|Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.|
+|**No volver a escribir las siguientes direcciones URL**|Deja las direcciones URL tal y como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis para un grupo específico de destinatarios de correo electrónico de la organización. Consulte [configurar una lista de direcciones URL personalizadas "no reescribir" mediante vínculos seguros ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) para obtener más información, incluidos los cambios recientes para la compatibilidad con asteriscos comodín ( \* ).|
+|
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que se hayan implementado las directivas de vínculos seguros de ATP, podrá ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
 
 - [Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
 
-- [Usar el explorador en el centro de seguridad y &amp; cumplimiento](threat-explorer.md)
+- [Usar el explorador en el Centro de seguridad y cumplimiento](threat-explorer.md)
 
 Manténgase al tanto de las nuevas características que llegarán a ATP. visite el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).

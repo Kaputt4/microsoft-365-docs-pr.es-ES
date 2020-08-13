@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para permitir los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005863"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652986"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -37,7 +37,14 @@ Las listas de remitentes seguros disponibles se describen en la siguiente lista,
 Las reglas de flujo de correo permiten la máxima flexibilidad para asegurarse de que solo se permiten los mensajes correctos. Los remitentes permitidos y las listas de dominios permitidos en las directivas contra correo no deseado no son tan seguros como la lista de direcciones IP permitidas, ya que el dominio de correo electrónico del remitente se falsifica fácilmente. Pero la lista de direcciones IP permitidas también presenta un riesgo, ya que el correo de _cualquier_ dominio que se envíe desde esa dirección IP omitirá el filtrado de correo no deseado.
 
 > [!IMPORTANT]
-> • Tenga cuidado de supervisar de cerca *las* excepciones que se produzcan en el filtrado de correo no deseado mediante listas de remitentes seguros. <br/><br/> • Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (correo electrónico bueno marcado como correo no deseado), debe considerar el uso de listas de remitentes seguros como una solución temporal que debería evitarse siempre que sea posible. No se recomienda administrar los falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a través de suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener los [mensajes y archivos del informe](report-junk-email-messages-to-microsoft.md) de temas de Microsoft en la lista. <br/><br/> • Para permitir a un dominio enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad), pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP y Outlook inspecciona diferentes propiedades de mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este tema.
+>
+> - Tenga cuidado al supervisar de cerca *las* excepciones que se produzcan en el filtrado de correo no deseado mediante listas de remitentes seguros.
+>
+> - Aunque puede usar listas de remitentes seguros para ayudar con falsos positivos (correo electrónico bueno marcado como correo no deseado), debe considerar el uso de listas de remitentes seguros como una solución temporal que debería evitarse si es posible. No se recomienda administrar los falsos positivos mediante listas de remitentes seguros, ya que las excepciones al filtrado de correo no deseado pueden abrir la organización a través de suplantación de identidad y otros ataques. Si insiste en usar listas de remitentes seguros para administrar falsos positivos, debe estar atento y mantener los [mensajes y archivos del informe](report-junk-email-messages-to-microsoft.md) de temas de Microsoft en la lista.
+>
+> - Para permitir a un dominio enviar correo electrónico no autenticado (evitar la protección contra la suplantación de identidad) pero no omitir las comprobaciones contra correo no deseado y antimalware, puede agregarlo a la [lista de remitentes seguros de AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
+>
+> - EOP y Outlook inspeccionar distintas propiedades del mensaje para determinar el remitente del mensaje. Para obtener más información, vea la sección [consideraciones para el correo electrónico masivo](#considerations-for-bulk-email) más adelante en este tema.
 
 Por el contrario, también tiene varias opciones para bloquear el correo electrónico de fuentes específicas usando _listas de remitentes bloqueados_. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
@@ -60,7 +67,12 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
      Use esta configuración si el dominio de envío no tiene autenticación. Sea lo más restrictivo posible cuando se trata de las direcciones IP de origen en la lista de direcciones IP permitidas. Se recomienda un intervalo de direcciones IP de/24 o menos (menos es mejor). No use intervalos de direcciones IP que pertenezcan a servicios de consumidor (por ejemplo, outlook.com) o infraestructuras compartidas.
 
    > [!IMPORTANT]
-   > <ul><li>No configure nunca configurar reglas de flujo de correo *solo* con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Al hacerlo, aumentará *significativamente* la probabilidad de que los intrusos puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir el filtrado de correo no deseado y omitir las comprobaciones de autenticación de remitente para que el mensaje llegue a la bandeja de entrada del destinatario.</li><li>No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) como condiciones en las reglas de flujo de correo. Al hacerlo, se considera un riesgo alto porque crea oportunidades para que los atacantes envíen correo electrónico que, de lo contrario, se filtraría.</li><li>Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que participan en el grupo de NAT para conocer el ámbito de la lista de direcciones IP permitidas. Las direcciones IP y los participantes de NAT pueden cambiar. Debe comprobar periódicamente sus entradas de la lista de direcciones IP permitidas como parte de los procedimientos de mantenimiento estándar.</li></ul>
+   >
+   > - No configure nunca configurar reglas de flujo de correo *solo* con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Al hacerlo, aumentará *significativamente* la probabilidad de que los intrusos puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir el filtrado de correo no deseado y omitir las comprobaciones de autenticación de remitente para que el mensaje llegue a la bandeja de entrada del destinatario.
+   >
+   > - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) como condiciones en las reglas de flujo de correo. Al hacerlo, se considera un riesgo alto porque crea oportunidades para que los atacantes envíen correo electrónico que, de lo contrario, se filtraría.
+   >
+   > - Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que participan en el grupo de NAT para conocer el ámbito de la lista de direcciones IP permitidas. Las direcciones IP y los participantes de NAT pueden cambiar. Debe comprobar periódicamente sus entradas de la lista de direcciones IP permitidas como parte de los procedimientos de mantenimiento estándar.
 
 3. **Condiciones opcionales**:
 
@@ -70,9 +82,9 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
 4. **Acción**: configure ambas acciones en la regla:
 
-   A. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
+   a. **Modificación de las propiedades** \> del mensaje **establecer el nivel de confianza contra correo no deseado (SCL)** \> **Omitir el filtrado de correo no deseado**.
 
-   B. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
+   b. **Un encabezado** \> de mensaje **incluye cualquiera de estas palabras** \> **Nombre de encabezado**: \<CustomHeaderName\> **valor de encabezado**: \<CustomHeaderValue\> .
 
       Por ejemplo, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si tiene más de un dominio en la regla, puede personalizar el texto del encabezado según corresponda.
 
@@ -108,7 +120,10 @@ La opción menos deseable es usar la lista de remitentes permitidos o la lista d
 El límite máximo de estas listas es de aproximadamente 1000 entradas; Aunque solo podrá especificar 30 entradas en el portal. Debe usar PowerShell para agregar más de 30 entradas.
 
 > [!CAUTION]
-> <ul><li>Este método crea un riesgo alto de que los atacantes entreguen correo electrónico a la bandeja de entrada que, de lo contrario, se filtraría.</li><li>No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) en listas de dominios permitidos.</li></ul>
+>
+> - Este método crea un riesgo alto de que los atacantes entreguen correo electrónico a la bandeja de entrada que, de lo contrario, se filtraría.
+>
+> - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) en listas de dominios permitidos.
 
 ## <a name="considerations-for-bulk-email"></a>Consideraciones para el correo electrónico masivo
 

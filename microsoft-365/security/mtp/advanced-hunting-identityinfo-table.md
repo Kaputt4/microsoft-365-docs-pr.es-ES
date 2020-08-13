@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204928"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649312"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -39,26 +39,26 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
-| `OnPremSid` | cadena | Identificador de seguridad local (SID) de la cuenta |
-| `CloudSid` | cadena | Identificador de seguridad en la nube de la cuenta |
-| `GivenName` | cadena | Nombre especificado o nombre del usuario de la cuenta |
-| `Surname` | cadena | Apellidos, apellidos o familia del usuario de la cuenta |
-| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente es una combinación de un nombre determinado o de un nombre, un inicio en el medio y un apellido o un apellido. |
-| `Department` | cadena | Nombre del Departamento al que pertenece el usuario de la cuenta |
-| `JobTitle` | cadena | Puesto del usuario de la cuenta |
-| `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | cadena | Dominio de la cuenta |
-| `EmailAddress` | cadena | Dirección SMTP de la cuenta |
-| `SipProxyAddress` | cadena | Dirección de protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
-| `City` | cadena | Ciudad en la que se encuentra el usuario de la cuenta |
-| `Country` | cadena | País o región donde se encuentra el usuario de la cuenta |
+| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
+| `OnPremSid` | string | Identificador de seguridad local (SID) de la cuenta |
+| `CloudSid` | string | Identificador de seguridad en la nube de la cuenta |
+| `GivenName` | string | Nombre especificado o nombre del usuario de la cuenta |
+| `Surname` | string | Apellidos, apellidos o familia del usuario de la cuenta |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente es una combinación de un nombre determinado o de un nombre, un inicio en el medio y un apellido o un apellido. |
+| `Department` | string | Nombre del Departamento al que pertenece el usuario de la cuenta |
+| `JobTitle` | string | Puesto del usuario de la cuenta |
+| `AccountName` | string | Nombre de usuario de la cuenta |
+| `AccountDomain` | string | Dominio de la cuenta |
+| `EmailAddress` | string | Dirección SMTP de la cuenta |
+| `SipProxyAddress` | string | Dirección de protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
+| `City` | string | Ciudad en la que se encuentra el usuario de la cuenta |
+| `Country` | string | País o región donde se encuentra el usuario de la cuenta |
 | `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no. |
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

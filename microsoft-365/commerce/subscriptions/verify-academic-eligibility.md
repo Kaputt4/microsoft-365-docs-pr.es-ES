@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela para el precio de Microsoft 365 Education Academic.
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560708"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653730"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la idoneidad académica para las suscripciones de Microsoft 365 Education
 
@@ -59,7 +59,7 @@ Si se deniega su elegibilidad para Academic, vea [mi escuela no es elegible. ¿Q
 Una vez que tenga una versión de prueba de Microsoft 365 Education, puede comprobar el estado de la idoneidad académica de su centro educativo en cualquier momento.
 
 1. Vaya al [centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-2. En la Página principal, desplácese hasta la parte inferior y busque la tarjeta de **facturación** . \
+2. En la Página principal, busque la tarjeta de **facturación** . \
     La tarjeta de **facturación** indica el estado del proceso de verificación. La tarjeta muestra uno de los siguientes Estados: aprobado, pendiente, rechazado o agregar su dominio.
 
     > [!NOTE]

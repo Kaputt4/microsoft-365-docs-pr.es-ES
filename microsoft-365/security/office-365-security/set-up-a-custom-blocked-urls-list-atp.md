@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533816"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656652"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP
 
@@ -45,11 +45,14 @@ Lea este artículo para obtener información sobre cómo configurar la lista de 
 
 Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla:
 
+****
+
 |Role|Dónde y cómo se asigna|
-|---------|---------|
+|---|---|
 |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Administración de la organización en Exchange Online|Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -78,13 +81,15 @@ Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes punto
 
 - Puede incluir hasta tres asteriscos comodín ( \* ) por dirección URL. En la tabla siguiente se enumeran algunos ejemplos de lo que se puede especificar y el efecto que tienen dichas entradas.
 
+****
+
 |Entrada de ejemplo|Qué hace|
-|:-----|:-----|
+|---|---|
 |`contoso.com` o `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de los, como `https://www.contoso.com` , `https://sub.contoso.com` y`https://contoso.com/abc`|
 |`https://contoso.com/a`|Bloquea un sitio, `https://contoso.com/a` pero no otros subtrazados adicionales como`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Bloquea un sitio `https://contoso.com/a` y subrutas adicionales como`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com` ).|
-
+|
 
 > [!NOTE]
 > De forma predeterminada, solo puede agregar direcciones URL de 500 a la lista de URL bloqueadas en la directiva predeterminada de vínculos seguros de ATP de Office 365.

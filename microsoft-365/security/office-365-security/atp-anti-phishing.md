@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las funciones contra la suplantación de identidad que forman parte de la protección contra amenazas avanzada de Office 365 para proporcionar protección para los ataques de suplantación de identidad & Spear.
-ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44875426"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653369"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funciones de ATP contra suplantación de identidad en Office 365
 
@@ -54,12 +54,15 @@ Además, los informes están disponibles para mostrar cómo funciona el servicio
 Para que los modelos de aprendizaje de equipos anti-phishing de ATP estén activos para un usuario concreto, dicho usuario debe formar parte de una directiva de [datos adjuntos seguros](atp-safe-attachments.md)de ATP definida, [vínculos seguros de ATP](atp-safe-links.md)o una directiva antiphishing de ATP. 
 
 En la tabla siguiente se describen algunos escenarios de ejemplo. En cada uno de estos ejemplos, la organización usa Office 365 Enterprise E5, que incluye protección contra amenazas avanzada.
-  
-|**Escenario de ejemplo**|**¿Se aplica la protección contra la suplantación ATP en este caso?**|
-|:-----|:-----|
+
+****
+
+|Escenario de ejemplo|¿Se aplica la protección contra la suplantación ATP en este caso?|
+|---|---|
 |La organización de Pat tiene Office 365 Enterprise E5, pero nadie ha definido ninguna directiva para los datos adjuntos seguros de ATP, los vínculos seguros de ATP o el phishing avanzado de ATP todavía.|No. Aunque la característica está disponible, se debe definir al menos una directiva ATP para que funcionen los modelos de aprendizaje automático de ATP. Para la suplantación, también debe estar implementada una directiva antiphishing de ATP.|
 |Lee es un empleado del Departamento de ventas de contoso. La organización de Lee tiene una directiva contra la suplantación de identidad ATP que solo se aplica a los empleados de finanzas.|No. En este caso, la antiphishing de ATP (modelos de equipo e protección de suplantación) se aplicaría a los empleados de finanzas, pero otros empleados, incluido el Departamento de ventas, no lo harían.|
 |Ayer, un administrador de Office 365 en la organización de Jean configuró una directiva antiphishing de ATP que se aplica a todos los empleados. Anteriormente, Jean recibió un mensaje de correo electrónico que incluye una suplantación cubierta por la Directiva.|Sí. En este ejemplo, Jean tiene una licencia para la protección contra amenazas avanzada y se ha definido una directiva contra la suplantación de identidad (ATP) que incluye Jean. Por lo general, la nueva Directiva tarda unos 30 minutos en surtir efecto en los centros de recursos; como se ha pasado un día en este caso, la Directiva debe estar en vigor.|
+|
 
 ## <a name="related-topics"></a>Temas relacionados
 

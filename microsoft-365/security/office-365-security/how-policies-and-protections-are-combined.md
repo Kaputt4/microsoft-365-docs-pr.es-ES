@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209444"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653683"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
 
@@ -33,20 +33,21 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
 
 - **La prioridad del tipo de protección de correo electrónico**: este pedido no se puede configurar y se describe en la siguiente tabla:
 
-  |||||
+  ****
+
+  |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
   |---|---|---|---|
-  |**Prioridad**|**Protección de correo electrónico**|**Categoría**|**Dónde administrar**|
   |1|Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
-  |segundo|Phishing|CAT: PHSH|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |2|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |3|Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de identidades en EOP](learn-about-spoof-intelligence.md)|
-  |5 |Correo no deseado|CAT: SPM|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |6 |Masivo|CAT: BULK|[Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |5 |Correo no deseado|CAT: SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |6 |Masivo|CAT: BULK|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |0,7<sup>\*</sup>|Suplantación de dominio (usuarios protegidos)|DIMP|[Configurar directivas contra phishing de ATP](configure-atp-anti-phishing-policies.md)|
   |8,5<sup>\*</sup>|Suplantación del usuario (dominios protegidos)|UIMP|[Configurar directivas contra phishing de ATP](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>Estas características solo están disponibles en las directivas contra la suplantación de identidad ATP.
+  <sup>\*</sup> Estas características solo están disponibles en las directivas contra la suplantación de identidad ATP.
 
 - **La prioridad de la Directiva**: para cada tipo de protección (contra correo electrónico no deseado, anti-malware, antiphishing, etc.), hay una directiva predeterminada que se aplica a todos los usuarios, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en el que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
 
@@ -54,11 +55,12 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
 
 Por ejemplo, considere las siguientes directivas antiphishing de ATP **que se aplican a los mismos usuarios**, y un mensaje que se identifica como suplantación de usuario e imitación:
 
-  |||||
+  ****
+
+  |Directiva contra la suplantación de identidad ATP|Priority|Suplantación de usuario|Directiva contra la suplantación|
   |---|---|---|---|
-  |**Directiva contra la suplantación de identidad ATP**|**Prioridad**|**Suplantación de usuario**|**Directiva contra la suplantación**|
-  |Directiva A|1|Activada|Desactivado|
-  |Directiva B|segundo|Desactivada|Activada|
+  |Directiva A|1|Activada|Desactivada|
+  |Directiva B|2|Desactivada|Activada|
   |
 
 1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (8).

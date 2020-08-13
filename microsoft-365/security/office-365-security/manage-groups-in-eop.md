@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de organizaciones independientes de Exchange Online Protection (EOP) pueden obtener información sobre cómo crear, modificar y quitar grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange (EAC) y en PowerShell de Exchange Online Protection (EOP) independientes.
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616507"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653658"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 
@@ -30,7 +30,10 @@ En las organizaciones independientes de Exchange Online Protection (EOP) sin buz
 - **Grupos de seguridad habilitados para correo**: una colección de usuarios de correo y otros grupos de seguridad que necesitan permisos de acceso para los roles de administrador. Por ejemplo, es posible que desee conceder a un grupo específico de permisos de administrador de usuarios para que puedan configurar las opciones de protección contra correo electrónico no deseado y antimalware.
 
     > [!NOTE]
-    > <ul><li>De forma predeterminada, los grupos de seguridad habilitados para correo nuevos rechazan los mensajes de remitentes externos (sin autenticar).</li><li>No agregue grupos de distribución a grupos de seguridad habilitados para correo.</li></ul>.
+    >
+    > - De forma predeterminada, los grupos de seguridad habilitados para correo nuevos rechazan los mensajes de remitentes externos (sin autenticar).
+    >
+    > - No agregue grupos de distribución a grupos de seguridad habilitados para correo.
 
 Puede administrar los grupos en el centro de administración de Exchange (EAC) y en PowerShell independiente de EOP.
 

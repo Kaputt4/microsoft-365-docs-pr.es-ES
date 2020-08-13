@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754669"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652722"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -38,9 +38,10 @@ Todas las demás organizaciones tienen directivas antiphishing.
 
 En la tabla siguiente se describen las diferencias de alto nivel entre las directivas contra la suplantación de identidad y las directivas de ATP contra el phishing:
 
-||||
+****
+
+|Característica|Directivas contra phishing|Directivas contra la suplantación de identidad ATP|
 |---|:---:|:---:|
-|**Característica**|**Directivas contra phishing**|**Directivas contra la suplantación de identidad ATP**|
 |Directiva predeterminada creada automáticamente|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Crear directivas personalizadas|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuración de Directiva<sup>\*</sup>|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Busque y use informes de la protección contra amenazas avanzada de Office 365 en el centro de seguridad y &amp; cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577989"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653538"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Ver informes para la protección contra amenazas avanzada de Office 365
 
@@ -252,7 +252,7 @@ El informe de **protección contra amenazas de direcciones URL** tiene dos vista
 Si hace clic en **ver tabla de detalles**, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren dentro de la organización en los últimos 7 días con los siguientes detalles:
 
 - **Haga clic en hora**
-- **User**
+- **Usuario**
 - **URL**
 - **Acción**
 - **App**
@@ -265,14 +265,17 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 
 Además de los informes de ATP descritos en este tema, hay disponibles varios informes más, como se describe en la tabla siguiente:
 
+****
+
 |Informe|Tema|
 |---|---|
 |**Explorador** (ATP plan 2) o **detecciones en tiempo real** (plan de ATP 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
 |**Informes de seguridad de correo electrónico**, como el informe de remitentes y destinatarios principales, el informe de correo falsificado y el informe de detecciones de correo no deseado.|[Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)|
 |**Informes de flujo de correo**, como el informe de reenvío, el informe de estado de flujo de correo y el informe de remitentes y destinatarios principales.|[Ver informes de flujo de correo en el centro de seguridad & cumplimiento](view-mail-flow-reports.md)|
 |**Seguimiento de dirección URL para vínculos seguros ATP** (solo PowerShell). El resultado de este cmdlet muestra los resultados de las acciones de vínculos seguros de ATP en los últimos siete días.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Resultados del tráfico de correo para EOP y ATP** (solo PowerShell). El resultado de este cmdlet contiene información sobre el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Resultados del tráfico de correo para EOP y ATP** (solo PowerShell). El resultado de este cmdlet contiene información sobre el dominio, la fecha, el tipo de evento, la dirección, la acción y el recuento de mensajes.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Informes de detalles de correo para detecciones de EOP y ATP** (solo PowerShell). El resultado de este cmdlet contiene detalles sobre archivos malintencionados o direcciones URL, intentos de suplantación de identidad (phishing), suplantación y otras amenazas potenciales en el correo electrónico o los archivos.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos se necesitan para ver los informes de ATP?
 

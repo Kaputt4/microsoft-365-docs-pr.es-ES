@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el cmdlet de PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391547"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653718"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell MSCommerce
 
@@ -92,6 +92,10 @@ En la siguiente tabla se enumeran los productos disponibles y su **ProductID**.
 | Power apps por usuario | CFQ7TTC0KP0P |
 | Potencia automatizada por usuario | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| Plan de proyecto 1 | CFQ7TTC0KXND |
+| Plan de proyecto 3 | CFQ7TTC0KXNC |
+| Visio plan 1 | CFQ7TTC0KXN9 |
+| Visio plan 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 
@@ -128,7 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-**Problema**
+### <a name="problem"></a>Problema
 
 Verá el siguiente mensaje de error:
 
@@ -136,7 +140,7 @@ Verá el siguiente mensaje de error:
 
 Esto puede deberse a una versión anterior de la seguridad de la capa de transporte (TLS). Para conectar este servicio, debe usar TLS 1,2 o superior.
 
-**Solución**
+### <a name="solution"></a>Solución
 
 Actualización a TLS 1,2:[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

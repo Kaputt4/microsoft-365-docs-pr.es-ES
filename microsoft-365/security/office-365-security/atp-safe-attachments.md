@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: En este artículo, obtendrá información sobre la característica de datos adjuntos seguros de ATP para Office 365 y sobre cómo obtener la característica para su suscripción.
-ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754765"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656998"
 ---
 # <a name="atp-safe-attachments"></a>Datos adjuntos seguros ATP
 
@@ -46,10 +46,11 @@ A continuación, asegúrese de que las directivas de datos adjuntos seguros de A
 Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
 |Role|Dónde y cómo se asigna|
-|---------|---------|
+|---|---|
 |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Administración de la organización en Exchange Online|Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Cómo saber si está disponible la protección de datos adjuntos seguros de ATP
 
@@ -57,13 +58,16 @@ Una vez que haya [definido (o revisado) las directivas de datos adjuntos seguros
 
 En la tabla siguiente se describen algunos escenarios de ejemplo. En todos estos casos, suponemos que la organización tiene una suscripción a Microsoft 365 que incluye protección contra amenazas avanzada.
 
-|**Escenario de ejemplo**|**¿Se aplica la protección de datos adjuntos seguros ATP en este caso?**|
-|:-----|:-----|
+****
+
+|Escenario de ejemplo|¿Se aplica la protección de datos adjuntos seguros ATP en este caso?|
+|---|---|
 |La organización de Pat tiene Office 365 E5, pero nadie ha definido ninguna directiva para los datos adjuntos seguros de ATP todavía.|No. Aunque la característica está disponible, se debe definir al menos una directiva de datos adjuntos seguros ATP para que la protección de datos adjuntos seguros de ATP esté en su lugar.|
 |Lee es un empleado del Departamento de ventas de contoso. La organización de Lee tiene una directiva de datos adjuntos seguros ATP que solo se aplica a los empleados de finanzas.|No. En este caso, los empleados de finanzas tendrían la protección de datos adjuntos seguros ATP, pero otros empleados, incluido el Departamento de ventas, no deberían hasta que se definan las directivas que incluyen dichos grupos.|
 |Ayer, un administrador de la organización de Jean configuró una directiva de datos adjuntos seguros de ATP que se aplica a todos los empleados. Anteriormente, Jean recibió un mensaje de correo electrónico que incluye datos adjuntos.|Sí. En este ejemplo, Jean tiene una licencia para la protección contra amenazas avanzada y se ha definido una directiva de datos adjuntos seguros de ATP que incluye Jean. Por lo general, la nueva Directiva tarda unos 30 minutos en surtir efecto en los centros de recursos; como se ha pasado un día en este caso, la Directiva debe estar en vigor.|
 |La organización de Carlos tiene Office 365 E5 con las directivas de datos adjuntos seguros ATP en su lugar para todos los usuarios de la organización. Chris recibe un correo electrónico con datos adjuntos y reenvía el mensaje a otros usuarios que están fuera de la organización.|ATP la protección de datos adjuntos seguros está en su lugar para los mensajes que Chris recibe. Si las organizaciones de los destinatarios también tienen directivas de datos adjuntos seguros de ATP, el mensaje que se envía a Carlos estaría sujeto a esas directivas cuando llegue el mensaje reenviado.|
 |La organización de Pablo tiene directivas de datos adjuntos seguros de ATP y se ha activado [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) . Jamie presupone que todos los archivos en SharePoint Online se han examinado y que se pueden abrir o descargar de forma segura.|ATP la protección de datos adjuntos seguros está en su lugar de acuerdo con las directivas definidas; sin embargo, esto no significa que se analicen todos los archivos de SharePoint Online, OneDrive para la empresa o Microsoft Teams. (Para obtener más información, consulte [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)).|
+|
 
 ## <a name="submitting-files-for-malware-analysis"></a>Enviar archivos para el análisis de malware
 

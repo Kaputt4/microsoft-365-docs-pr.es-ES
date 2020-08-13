@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los valores del nivel de cumplimiento masivo (BCL) que se usan en Exchange Online Protection (EOP).
-ms.openlocfilehash: 87ef0787aad12022d9034800c4ddc72e54445f5d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 19fa7172bd242852d03822c588e163b7a13f9201
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209612"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653214"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivel de queja masiva (BCL) en EOP
 
@@ -33,9 +33,10 @@ Los remitentes de correo masivo varían en sus patrones de envío, creación de 
 
 Los umbrales de BCL se describen en la tabla siguiente.
 
-|||
+****
+
+|BCL|Descripción|
 |:---:|---|
-|**BCL**|**Descripción**|
 |comprendi|El mensaje no es de un remitente de correo masivo.|
 |1, 2, 3|El mensaje proviene de un remitente de correo masivo que genera pocas quejas.|
 |4, 5, 6, 7|El mensaje proviene de un remitente de correo masivo que genera un número mixto de quejas.|

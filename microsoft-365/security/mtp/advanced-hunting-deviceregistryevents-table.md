@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 35544866b9ebad94b14300b3734ddb2335fd657e
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: d0024282276e0c67c68a802cf439e90824ec1962
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899010"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649018"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -38,9 +38,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | string | Tipo de actividad que ha desencadenado el evento |
+| `DeviceId` | cadena | Identificador único para el equipo en servicio |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
+| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
 | `RegistryKey` | string | Clave del registro a la que se aplicó la acción grabada |
 | `RegistryValueType` | string | Tipo de datos, como binary o String, del valor del registro al que se aplicó la acción grabada |
 | `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
@@ -70,6 +70,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

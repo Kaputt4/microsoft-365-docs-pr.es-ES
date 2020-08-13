@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: Este tema le guiará a través de la configuración recomendada para la configuración de todos los inquilinos que afecten a la seguridad de su entorno de Microsoft 365.
-ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588057"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653562"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para mejorar la seguridad
 
@@ -38,9 +38,10 @@ La puntuación segura de Office 365 analiza la seguridad de su organización en 
 
 El centro de seguridad 365 de Microsoft incluye capacidades que protegen el entorno. También incluye informes y paneles que puede usar para supervisar y realizar acciones. Algunas áreas vienen con configuraciones de directiva predeterminadas. Algunas áreas no incluyen directivas o reglas predeterminadas. Visite estas directivas en Threat Management para ajustar la configuración de administración de amenazas para un entorno más seguro.
 
-||||
+****
+
+|Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
-|**Área**|**Incluye una directiva predeterminada**|**Recomendación**|
 |**Contra la suplantación de identidad**|Sí|Si tiene un dominio personalizado, configure la Directiva antiphishing predeterminada para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su CEO, y para proteger su dominio. Revise [las directivas antiphishing en office 365](set-up-anti-phishing-policies.md) y vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) o [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Motor antimalware**|Sí| Edite la directiva predeterminada: <br/> &ensp;&ensp;* Filtro de tipos de datos adjuntos comunes: seleccione activado <br/><br/> También puede crear directivas de filtro de malware personalizadas y aplicarlas a usuarios, grupos o dominios específicos de la organización. <br/><br/> Más información: <br/> &ensp;&ensp;* [Protección contra malware](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurar directivas antimalware](configure-anti-malware-policies.md)|
 |**Datos adjuntos seguros ATP**|No| En la Página principal de datos adjuntos seguros, proteja los archivos en SharePoint, OneDrive y Microsoft Teams; para ello, Active esta casilla: <br/> &ensp;&ensp;* Activar ATP para SharePoint, OneDrive y Microsoft Teams <br/><br/> Agregue una nueva Directiva de datos adjuntos seguros con esta configuración: <br/> &ensp;&ensp;* Bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado (elija esta opción). <br/> &ensp;&ensp;* Habilitar el redireccionamiento: (Active esta casilla y escriba una dirección de correo electrónico, como una cuenta de administrador o de cuarentena) <br/> &ensp;&ensp;* Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla) <br/> &ensp;&ensp;* Se aplica a — el dominio del destinatario es (Seleccione su dominio) <br/><br/>Más información: [Configure las directivas de datos adjuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md)|
@@ -56,9 +57,10 @@ El centro de seguridad 365 de Microsoft incluye capacidades que protegen el ento
 
 Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se harán más completos a medida que la organización use los servicios de Office 365. Por ahora, esté familiarizado con lo que puede supervisar y realizar acciones. Para obtener más información, consulte: [informes en los centros de seguridad y cumplimiento de Microsoft 365](../../compliance/reports-in-security-and-compliance.md).
 
-|||
+****
+
+|Panel|Description|
 |---|---|
-|**Panel**|**Descripción**|
 |[Panel de administración de amenazas](security-dashboard.md)|En la sección **Administración de amenazas** del centro de seguridad, use este panel para ver las amenazas que ya se han tratado y como una herramienta útil para informar a los responsables de las decisiones empresariales sobre las capacidades de investigación y respuesta de amenazas que ya se han realizado para proteger su empresa.|
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|También se encuentra en la sección **Administración de amenazas** del centro de seguridad. Si está investigando o experimentando un ataque contra su espacio empresarial, use el explorador (o detecciones en tiempo real) para analizar las amenazas. Explorer (y el informe de detecciones en tiempo real) le muestra el volumen de ataques a lo largo del tiempo, y puede analizar estos datos por familias de amenazas, la infraestructura de los intrusos y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista de incidentes.|
 |Informes: panel|En la sección **informes** del centro de seguridad, vea informes de auditoría para sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a los informes de inicio de sesión de usuario de Azure Active Directory (Azure AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página **ver informes** .|
@@ -70,9 +72,10 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 Muchos de los controles de seguridad y protección en el centro de administración de Exchange también se incluyen en el centro de seguridad. No es necesario configurarlos en ambos lugares. Estas son algunas de las opciones de configuración adicionales que se recomiendan.
 
-||||
+****
+
+|Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
-|**Área**|**Incluye una directiva predeterminada**|**Recomendación**|
 |**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware mediante el bloqueo de los tipos de archivo ejecutables y los tipos de archivo de Office que contienen macros. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consulte estos temas adicionales: <br/>* [Proteger contra ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Malware y protección contra ransomware en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Recuperarse de un ataque de ransomware en Office 365](recover-from-ransomware.md) <br/><br/> Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Habilitar la autenticación moderna**|No|La autenticación moderna es un requisito previo para el uso de multi-factor Authentication (MFA). Se recomienda MFA para proteger el acceso a los recursos en la nube, incluido el correo electrónico. <br/><br/> Vea estos temas: <br/>* [Habilitar o deshabilitar la autenticación moderna en Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype empresarial online: habilitar el inquilino para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016, SharePoint Online y OneDrive para la empresa. <br/><br/> Más información: [Cómo funciona la autenticación moderna para las aplicaciones cliente de office 2013 y office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
@@ -85,9 +88,10 @@ Los sitios de grupo de SharePoint configurados en el nivel de línea base permit
 
 Para admitir los objetivos de la protección de línea de base, configure las directivas de uso compartido para todos los inquilinos como se recomienda aquí. La configuración de uso compartido de sitios individuales puede ser más restrictiva que la Directiva de todo el espacio empresarial, pero no más permisiva.
 
-||||
+****
+
+|Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
-|**Área**|**Incluye una directiva predeterminada**|**Recomendación**|
 |**Uso compartido** (SharePoint Online y OneDrive para la empresa)|Sí|El uso compartido externo está habilitado de forma predeterminada. Se recomiendan estas opciones de configuración: <br/>* Permitir compartir con usuarios externos autenticados y con vínculos de acceso anónimos (configuración predeterminada). <br/> * Los vínculos de acceso anónimo expiran en este número de días. Escriba un número, si lo desea, como 30 días. <br/>* Tipo de vínculo predeterminado: seleccione interno (solo personas de la organización). Los usuarios que quieran compartir mediante vínculos anónimos deben elegir esta opción en el menú de uso compartido. <br/><br/> Más información: [información general sobre el uso compartido externo](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
@@ -133,7 +137,7 @@ Más información:
 
 ![Panel de Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 
 En estos artículos y guías se proporciona información preceptiva adicional para proteger el entorno de Microsoft 365:
 

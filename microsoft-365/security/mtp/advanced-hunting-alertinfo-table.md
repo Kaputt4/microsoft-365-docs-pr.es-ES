@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 36e76ae097dc31c6d7eb7eeff18dd2128ff0cc5c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899022"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649492"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
-**Se aplica a:**
+**Aplica para:**
 - Protección contra amenazas de Microsoft
 
 
@@ -41,8 +41,8 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AlertId` | string | Identificador único de alerta. |
 | `Title` | cadena | Título de la alerta. |
 | `Category` | cadena | Tipo de indicador de amenazas o actividad de vulneración identificada por la alerta |
-| `Severity` | string | El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta. |
-| `ServiceSource` | string | Producto o servicio que ha proporcionado la información de alerta |
+| `Severity` | cadena | El indicador de amenazas indica el posible impacto (alto, medio o bajo) de las actividades de vulneración identificadas por la alerta. |
+| `ServiceSource` | cadena | Producto o servicio que ha proporcionado la información de alerta |
 | `DetectionSource` | string | Tecnología o sensor de detección que identificó el componente o la actividad más importante |
 | `AttackTechniques` | string | MITRE ATT&CK las técnicas asociadas con la actividad que desencadenó la alerta |
 
@@ -50,6 +50,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

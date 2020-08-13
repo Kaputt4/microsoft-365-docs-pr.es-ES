@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: 193b637236957bd0543be847be97169600367ddf
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091966"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656926"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Investigue el correo electrónico malintencionado que se entregó en Office 365
 
@@ -32,28 +32,31 @@ La [protección contra amenazas avanzada de Office 365](office-365-atp.md) le pe
 
 > [!NOTE]
 > Ir al artículo de corrección [aquí](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258).
-  
+
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Asegúrese de que se cumplen los siguientes requisitos:
-  
-- Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
-    
-- el [registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización. 
-    
-- Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
-    
-- Es un administrador global o bien tiene el rol de administrador de seguridad o de la búsqueda y depuración asignado en el centro de seguridad y &amp; cumplimiento. Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa. 
 
-#### <a name="preview-role-permissions"></a>Vista previa de permisos de roles
+- Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
+
+- el [registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md) está activado para su organización.
+
+- Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
+
+- Es un administrador global o bien tiene el rol de administrador de seguridad o de la búsqueda y depuración asignado en el centro de seguridad y &amp; cumplimiento. Consulte [permisos en el centro de seguridad y &amp; cumplimiento](permissions-in-the-security-and-compliance-center.md). Para algunas acciones, también debe tener asignado un nuevo rol de vista previa.
+
+### <a name="preview-role-permissions"></a>Vista previa de permisos de roles
 
 Para llevar a cabo determinadas acciones, como ver los encabezados de mensajes o descargar el contenido de los mensajes de correo electrónico, debe tener un nuevo rol denominado *vista previa* agregado a otro grupo de funciones apropiado. La siguiente tabla clarifica los permisos y las funciones necesarias.
 
-|Actividad  |Grupo de funciones |¿Se requiere un rol de vista previa?  |
-|---------|---------|---------|
-|Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas     |Administrador global <br> Administrador de seguridad <br> Lector de seguridad     | No   |
-|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena    |Administrador global <br> Administrador de seguridad <br>Lector de seguridad   |       No  |
-|Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones     |Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview   |   Sí      |
+****
+
+|Actividad|Grupo de funciones|¿Se requiere un rol de vista previa?|
+|---|---|---|
+|Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas |Administrador global <br> Administrador de seguridad <br> Lector de seguridad|No|
+|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena|Administrador global <br> Administrador de seguridad <br>Lector de seguridad|No|
+|Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones|Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview|Sí|
+|
 
 > [!NOTE]
 > La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) y el administrador de seguridad y los roles de lector de seguridad se asignan en el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -84,6 +87,7 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
     La vista *envíos* muestra todos los correos enviados por el administrador o el usuario que se notificaron a Microsoft.
 
 4. **Buscar y filtrar en el explorador de amenazas**: los filtros aparecen en la parte superior de la página en la barra de búsqueda para ayudar a los administradores en sus investigaciones. Tenga en cuenta que se pueden aplicar varios filtros a la vez y que se agregan varios valores separados por comas a un filtro para acotar la búsqueda. Recuerde:
+
     - Los filtros realizan una coincidencia exacta en la mayoría de las condiciones de filtrado.
     - El filtro de asunto usa una consulta Contains.
     - Los filtros de dirección URL funcionan con o sin protocolos (p. ej. https).
@@ -98,17 +102,19 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 
    *Filtrar por horas* ayudará a que el equipo de seguridad de su organización se despliega rápidamente. La duración de tiempo más corta permitida es de 30 minutos. Si puede restringir la acción sospechosa por período de tiempo (por ejemplo, ha pasado hace 3 horas), esto limitará el contexto y determinará con precisión el problema.
 
-  ![La opción de filtrado por horas para restringir la cantidad de datos que los equipos de seguridad deben procesar y cuya duración más corta es de 30 minutos.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   ![La opción de filtrado por horas para restringir la cantidad de datos que los equipos de seguridad deben procesar y cuya duración más corta es de 30 minutos.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **Campos en el explorador de amenazas**: el explorador de amenazas expone mucha más información de correo relacionada con la seguridad, como la *acción de entrega*, la *Ubicación de entrega*, la *acción especial*, la *direccionalidad*, las *invalidaciones*y la *amenaza de URL*. También permite que el equipo de seguridad de su organización investigue con una mayor certeza. 
+6. **Campos en el explorador de amenazas**: el explorador de amenazas expone mucha más información de correo relacionada con la seguridad, como la *acción de entrega*, la *Ubicación de entrega*, la *acción especial*, la *direccionalidad*, las *invalidaciones*y la *amenaza de URL*. También permite que el equipo de seguridad de su organización investigue con una mayor certeza.
 
     La *acción de entrega* es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
+
     - **Delivered** : el correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.
     - Correo electrónico **no deseado** (entregado a correo no deseado): el correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta de correo no deseado o eliminado.
     - **Bloqueado** : todos los mensajes de correo electrónico que se hayan puesto en cuarentena, que hayan fallado o que se hayan quitado. (El usuario no tiene acceso completamente a esto).
     - **Reemplazado** : todos los correos electrónicos en los que los datos adjuntos malintencionados se reemplazan por archivos. txt que indican que el archivo adjunto era malintencionado
 
     **Ubicación de entrega**: el filtro de ubicación de entrega está disponible para ayudar a los administradores a comprender dónde se ha finalizado el correo malintencionado sospechoso y qué acciones se han realizado en él. Los datos resultantes se pueden exportar a la hoja de cálculo. Las ubicaciones de entrega posibles son:
+
     - **Bandeja de entrada o carpeta** : el correo electrónico está en la bandeja de entrada o en una carpeta específica, de acuerdo con las reglas de correo electrónico.
     - Local **o externa** : el buzón de correo no existe en la nube, pero es local.
     - **Carpeta de correo no deseado** : el correo electrónico se encuentra en la carpeta de correo no deseado de un usuario.
@@ -121,15 +127,18 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     **Invalidaciones**: este filtro recibe información que aparece en la ficha de detalles del correo y la usa para exponer dónde se han *invalidado*las directivas de usuario o de la organización, así como para permitir y bloquear el bloqueo de correo. Lo más importante de este filtro es que ayuda al equipo de seguridad de su organización a ver cuántos correos electrónicos sospechosos se han entregado debido a la configuración. Esto les da la oportunidad de modificar los bloques de permitidos y los bloques según sea necesario. Este conjunto de resultados de este filtro se puede exportar a hoja de cálculo.
 
-|Invalidaciones del explorador de amenazas  | Significado  |
-|---------|---------|
-|Permitido por la Directiva de la organización     |   Se permitió el correo al buzón tal y como lo indicó la Directiva de la organización.       |
-|Bloqueado por la Directiva de la organización      |  Se ha bloqueado el correo para que no se entregue en el buzón como se indicó en la Directiva de la organización.    |
-|Extensión de archivo bloqueada por la Directiva de la organización     | El archivo se bloqueó para que no se entregue en el buzón de correo según lo indicó la Directiva de la organización.        |
-|Permitido por la Directiva de usuario     | El correo se permitía en el buzón tal como lo indicó la Directiva de usuario.        |
-|Bloqueado por la Directiva de usuario     | Se ha bloqueado el correo para que no se entregue en el buzón tal como lo indicó la Directiva de usuario.        |
+    ****
 
-**Amenaza de dirección URL**: el campo de la amenaza URL se incluye en la pestaña de *detalles* de un correo electrónico para indicar la amenaza que presenta una dirección URL. Las amenazas que presenta una dirección URL pueden incluir *malware*, *phish*o *correo no deseado*, y una dirección URL *sin amenazas no* dirá *ninguna* en la sección amenazas.
+    |Invalidaciones del explorador de amenazas|Significado|
+    |---|---|
+    |Permitido por la Directiva de la organización|Se permitió el correo al buzón tal y como lo indicó la Directiva de la organización.|
+    |Bloqueado por la Directiva de la organización|Se ha bloqueado el correo para que no se entregue en el buzón como se indicó en la Directiva de la organización.|
+    |Extensión de archivo bloqueada por la Directiva de la organización|El archivo se bloqueó para que no se entregue en el buzón de correo según lo indicó la Directiva de la organización.|
+    |Permitido por la Directiva de usuario|El correo se permitía en el buzón tal como lo indicó la Directiva de usuario.|
+    |Bloqueado por la Directiva de usuario|Se ha bloqueado el correo para que no se entregue en el buzón tal como lo indicó la Directiva de usuario.|
+    |
+
+    **Amenaza de dirección URL**: el campo de la amenaza URL se incluye en la pestaña de *detalles* de un correo electrónico para indicar la amenaza que presenta una dirección URL. Las amenazas que presenta una dirección URL pueden incluir *malware*, *phish*o *correo no deseado*, y una dirección URL *sin amenazas no* dirá *ninguna* en la sección amenazas.
 
 7. **Vista escala de tiempo del correo electrónico**: es posible que el equipo de operaciones de seguridad necesite profundizar en los detalles del correo electrónico para investigar más. La escala de tiempo de correo electrónico permite a los administradores ver las acciones realizadas en un correo electrónico desde la entrega hasta la entrega posterior. Para ver una escala de tiempo de correo electrónico, haga clic en el asunto de un mensaje de correo electrónico y, a continuación, en correo electrónico escala de tiempo. (Aparece entre otros títulos en el panel, como resumen o detalles). Estos resultados se pueden exportar a la hoja de cálculo.
 
@@ -141,52 +150,52 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     - [Vea la escala de tiempo del correo electrónico](#view-the-timeline-of-your-email).
 
-    ##### <a name="check-the-delivery-action-and-location"></a>Comprobar la acción y la ubicación de la entrega
+### <a name="check-the-delivery-action-and-location"></a>Comprobar la acción y la ubicación de la entrega
 
-    En el [Explorador de amenazas (y en detección en tiempo real)](threat-explorer.md), ahora tiene columnas de **acción de entrega** y ubicación de **entrega** en lugar de la columna de **Estado de entrega** anterior. Esto da como resultado una imagen más completa de la ubicación de los mensajes de correo electrónico. Una parte del objetivo de este cambio es facilitar las investigaciones para los equipos de operaciones de seguridad, pero el resultado neto es conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
+En el [Explorador de amenazas (y en detección en tiempo real)](threat-explorer.md), ahora tiene columnas de **acción de entrega** y ubicación de **entrega** en lugar de la columna de **Estado de entrega** anterior. Esto da como resultado una imagen más completa de la ubicación de los mensajes de correo electrónico. Una parte del objetivo de este cambio es facilitar las investigaciones para los equipos de operaciones de seguridad, pero el resultado neto es conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
-    El estado de entrega ahora se divide en dos columnas:
+El estado de entrega ahora se divide en dos columnas:
 
-    - **Acción de entrega** : ¿Cuál es el estado de este correo electrónico?
+- **Acción de entrega** : ¿Cuál es el estado de este correo electrónico?
 
-    - **Ubicación de entrega** : ¿Dónde se distribuyó este correo electrónico como resultado?
+- **Ubicación de entrega** : ¿Dónde se distribuyó este correo electrónico como resultado?
 
-    La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
+La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
 
-    - **Delivered** : el correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.
+- **Delivered** : el correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.
 
-    - Correo electrónico **no deseado** : el correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta de correo no deseado o eliminado.
+- Correo electrónico **no deseado** : el correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta de correo no deseado o eliminado.
 
-    - **Bloqueado** : todos los mensajes de correo electrónico que se hayan puesto en cuarentena, que hayan fallado o que se hayan quitado. (El usuario no tiene acceso completamente a esto).
+- **Bloqueado** : todos los mensajes de correo electrónico que se hayan puesto en cuarentena, que hayan fallado o que se hayan quitado. (El usuario no tiene acceso completamente a esto).
 
-    - **Reemplazado** : cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por archivos. txt que indican que los datos adjuntos eran malintencionados.
- 
-    Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
+- **Reemplazado** : cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por archivos. txt que indican que los datos adjuntos eran malintencionados.
 
-    - **Bandeja de entrada o carpeta** : el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
+Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
 
-    - Local **o externa** : el buzón de correo no existe en la nube pero es local.
+- **Bandeja de entrada o carpeta** : el correo electrónico está en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
 
-    - **Carpeta de correo no deseado** : el correo electrónico se encuentra en la carpeta de correo no deseado del usuario.
+- Local **o externa** : el buzón de correo no existe en la nube pero es local.
 
-    - **Carpeta elementos eliminados** : el correo electrónico se encuentra en la carpeta elementos eliminados del usuario.
+- **Carpeta de correo no deseado** : el correo electrónico se encuentra en la carpeta de correo no deseado del usuario.
 
-    - **Cuarentena** : el correo electrónico que se encuentra en cuarentena y no en el buzón de un usuario.
+- **Carpeta elementos eliminados** : el correo electrónico se encuentra en la carpeta elementos eliminados del usuario.
 
-    - **Failed** – el correo electrónico no pudo llegar al buzón.
+- **Cuarentena** : el correo electrónico que se encuentra en cuarentena y no en el buzón de un usuario.
 
-    - **Descartado** : el correo electrónico se pierde en algún lugar del flujo de correo.
+- **Failed** – el correo electrónico no pudo llegar al buzón.
 
-     ##### <a name="view-the-timeline-of-your-email"></a>Ver la escala de tiempo del correo electrónico
-  
-     La **escala de tiempo de correo electrónico** es un campo en el explorador de amenazas que facilita la búsqueda del equipo de operaciones de seguridad. Cuando se producen varios eventos en o cerca de la misma hora en un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos de los eventos que se producen después de la entrega en el correo electrónico se capturan en la columna **acciones especiales** . La combinación de información de la escala de tiempo de un mensaje de correo electrónico con cualquier acción especial realizada tras la entrega proporciona a los administradores información sobre las directivas y el tratamiento de las amenazas (por ejemplo, dónde se enrutó el correo y, en algunos casos, qué es la evaluación final).
+- **Descartado** : el correo electrónico se pierde en algún lugar del flujo de correo.
+
+### <a name="view-the-timeline-of-your-email"></a>Ver la escala de tiempo del correo electrónico
+
+La **escala de tiempo de correo electrónico** es un campo en el explorador de amenazas que facilita la búsqueda del equipo de operaciones de seguridad. Cuando se producen varios eventos en o cerca de la misma hora en un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos de los eventos que se producen después de la entrega en el correo electrónico se capturan en la columna **acciones especiales** . La combinación de información de la escala de tiempo de un mensaje de correo electrónico con cualquier acción especial realizada tras la entrega proporciona a los administradores información sobre las directivas y el tratamiento de las amenazas (por ejemplo, dónde se enrutó el correo y, en algunos casos, qué es la evaluación final).
 
 > [!IMPORTANT]
 > Saltar a un tema de corrección [aquí](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide).
 
 <!-- Reference material
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
 
 2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
@@ -194,34 +203,34 @@ El explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     Once you've opened the email timeline, you should see a table that tells you the post-delivery events for that mail. In the case of no further events for the email, you should see a single event for the original delivery that states a result like **Blocked** with a verdict like **Phish**. The tab also has the option to export the entire email timeline, and this exports all the details on the tab and details on the email (things like Subject, Sender, Recipient, Network, and Message ID).
 
-    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view. 
-    
-    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was. 
+    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
+
+    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was.
 
 4. In the **View** menu, choose **All email**.
 
     ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
-  
+
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
     ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
-    
+
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
-    
+
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
     ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
-  
+
 6. Below the chart, review the **Email** list below the chart.
 
     ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
-  
+
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
     ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
-  
+
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
-    
+
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
     ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
@@ -234,7 +243,7 @@ Malicious attackers might be sending mail to people in your organization in an a
 
 Threat Explorer provides your security operations team with the details they need to investigate suspicious email. Your security operations team can:
 
-- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body) 
+- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body)
 
 - [Check the delivery action and location](#check-the-delivery-action-and-location)
 
@@ -244,13 +253,13 @@ Threat Explorer provides your security operations team with the details they nee
 
 The ability to preview email headers and download the body of an email body are powerful capabilities in Threat Explorer. Appropriate [permissions](permissions-in-the-security-and-compliance-center.md) must be assigned. See [Preview role permissions](#preview-role-permissions).
 
-To access your message header and email download options, follow these steps: 
+To access your message header and email download options, follow these steps:
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
-    
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
+
 2. In the left navigation, choose **Threat management** \> **Explorer**.
 
-3. Click on a subject in the Threat Explorer table. 
+3. Click on a subject in the Threat Explorer table.
 
     This opens the flyout, where both header preview and email download links are positioned.
 
@@ -265,7 +274,7 @@ To access your message header and email download options, follow these steps:
 [Corregir el correo electrónico malintencionado entregado en Office 365](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Protección contra amenazas avanzada de Office 365](office-365-ti.md)
-  
+
 [Protección contra amenazas en Office 365](protect-against-threats.md)
-  
+
 [Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)

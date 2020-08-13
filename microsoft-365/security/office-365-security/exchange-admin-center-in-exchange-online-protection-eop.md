@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la interfaz de administración web en la protección independiente de Exchange Online (EOP).
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617003"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652914"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
@@ -80,9 +80,10 @@ Las pestañas son el segundo nivel de navegación. Las áreas de característica
 
 Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. La barra de herramientas tiene iconos que realizan una acción específica. La siguiente tabla describe los iconos y sus acciones.
 
-||||
+****
+
+|Icon|Nombre|Acción|
 |---|---|---|
-|**Icono**|**Nombre**|**Action**|
 |![Agregar icono](../../media/ITPro-EAC-AddIcon.gif)|Agregar, nuevo|Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.|
 |![Icono Editar](../../media/ITPro-EAC-EditIcon.gif)|Editar|Utilice este icono para editar un objeto.|
 |![Eliminar icono](../../media/ITPro-EAC-DeleteIcon.gif)|Eliminar|Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.|
@@ -124,125 +125,63 @@ Para conseguir la mejor experiencia con EAC, le recomendamos que use siempre la 
 Los siguientes idiomas son compatibles y están disponibles para el EAC en un EOP independiente.
 
 - Amhárico
-
 - Árabe
-
 - Vasco (Euskera)
-
 - Bengalí (India)
-
 - Búlgaro
-
 - Catalán
-
 - Chino (simplificado)
-
 - Chino (tradicional)
-
 - Croata
-
 - Checo
-
 - Danés
-
 - Neerlandés
-
-- Neerlandés
-
 - Inglés
-
 - Estonio
-
 - Filipino (Filipinas)
-
 - Finés
-
 - Francés
-
 - Gallego
-
 - Alemán
-
 - Griego
-
 - Gujarati
-
 - Hebreo
-
 - Hindi
-
 - Húngaro
-
 - Islandés
-
 - Indonesio
-
 - Italiano
-
 - Japonés
-
 - Kannada
-
 - Kazajo
-
 - Kiswahili
-
 - Coreano
-
 - Letón
-
 - Lituano
-
 - Malayo (Brunei Darussalam)
-
 - Malayo (Malasia)
-
 - Malayalam
-
 - Maratí
-
 - Noruego (Bokmal)
-
 - Noruego (Nynorsk)
-
 - Odia
-
 - Persa
-
 - Polaco
-
 - Portugués (Brasil)
-
 - Portugués (Portugal)
-
 - Rumano
-
 - Ruso
-
 - Serbio (cirílico, Serbia)
-
 - Serbio (latino)
-
 - Eslovaco
-
 - Esloveno
-
 - Español
-
 - Sueco
-
 - Tamil
-
 - Telugu
-
 - Tailandés
-
 - Turco
-
 - Ucraniano
-
 - Urdu
-
 - Vietnamita
-
 - Galés

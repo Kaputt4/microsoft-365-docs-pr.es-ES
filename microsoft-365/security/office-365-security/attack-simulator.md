@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a usar simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseñas en su organización de Microsoft 365 E5 o ATP planeada 2.
-ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587573"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653226"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulador de ataque en ATP
 
@@ -114,7 +114,10 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li></ul>
+     >
+     > - Todas las direcciones URL son intencionadamente http, no HTTPS.
+     >
+     > - Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).
 
    - **Dirección URL de la página de aterrizaje personalizada**: escriba una página de aterrizaje opcional en la que se tomen los usuarios si hacen clic en el vínculo phishing y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene un entrenamiento de conciencia interno, puede especificar esta dirección URL aquí.
 
@@ -128,9 +131,9 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
 
    El formato HTML puede ser tan sencillo o complejo como sea necesario. Puede insertar imágenes y texto para mejorar la increíbleidad del mensaje en el cliente de correo electrónico del destinatario.
 
-   - `${username}`inserta el nombre del destinatario.
+   - `${username}` inserta el nombre del destinatario.
 
-   - `${loginserverurl}`inserta el valor de la **dirección URL del servidor de inicio de sesión de suplantación de identidad** del paso anterior.
+   - `${loginserverurl}` inserta el valor de la **dirección URL del servidor de inicio de sesión de suplantación de identidad** del paso anterior.
 
    Cuando termine, haga clic en **Siguiente**.
 
@@ -188,7 +191,12 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Todas las direcciones URL son intencionadamente http, no HTTPS.</li><li>Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).</li><li>Es necesario que seleccione una dirección URL. En el caso de las campañas de <b>"Spear phishing" (datos adjuntos)</b> , puede quitar el vínculo del cuerpo del mensaje en el paso siguiente (de lo contrario, el mensaje contendrá tanto un vínculo <b>como</b> datos adjuntos).</li></ul>
+     >
+     > - Todas las direcciones URL son intencionadamente http, no HTTPS.
+     >
+     > - Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores Web admitidos antes de usar la dirección URL en una campaña de suplantación de identidad (phishing).
+     >
+     > - Es necesario que seleccione una dirección URL. En el caso de las campañas de **"Spear phishing" (datos adjuntos)** , puede quitar el vínculo del cuerpo del mensaje en el paso siguiente (de lo contrario, el mensaje contendrá tanto un vínculo **como** datos adjuntos).
 
    - **Tipo de datos adjuntos**: esta configuración solo está disponible en las campañas de **"Spear phishing" (datos adjuntos)** . Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
 
@@ -204,9 +212,9 @@ Si va a utilizar una de las plantillas integradas o va a crear el mensaje de cor
 
    El formato HTML puede ser tan sencillo o complejo como sea necesario. Puede insertar imágenes y texto para mejorar la increíbleidad del mensaje en el cliente de correo electrónico del destinatario.
 
-   - `${username}`inserta el nombre del destinatario.
+   - `${username}` inserta el nombre del destinatario.
 
-   - `${loginserverurl}`inserta el valor **URL del servidor de inicio de sesión de suplantación de identidad** .
+   - `${loginserverurl}` inserta el valor **URL del servidor de inicio de sesión de suplantación de identidad** .
 
    Para las campañas de **"Spear phishing" (datos adjuntos)** , debe quitar el vínculo del cuerpo del mensaje (de lo contrario, el mensaje contendrá tanto un vínculo **como** datos adjuntos y los clics de vínculo no se realizará el seguimiento en una campaña de datos adjuntos).
 

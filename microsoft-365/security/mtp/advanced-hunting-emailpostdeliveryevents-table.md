@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005703"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648868"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -36,14 +36,14 @@ Para obtener más información sobre los mensajes de correo electrónico individ
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `EventId` | string | Identificador único del evento |
+| `EventId` | cadena | Identificador único del evento |
 | `NetworkMessageId` | string | Identificador único del correo electrónico generado por Microsoft 365 |
-| `InternetMessageId` | string | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
-| `Action` | string | Acción realizada en la entidad |
+| `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
+| `Action` | cadena | Acción realizada en la entidad |
 | `ActionType` | string | Tipo de actividad que ha desencadenado el evento: corrección manual, ZAP de Phish, ZAP de malware |
 | `ActionTrigger` | string | Indica si una acción ha desencadenado un administrador (manualmente o mediante la aprobación de una acción automatizada pendiente) o mediante algún mecanismo especial, como una ZAP o una entrega dinámica |
 | `ActionResult` | string | Resultado de la acción |
-| `RecipientEmailAddress` | string | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
+| `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
 
 ## <a name="supported-event-types"></a>Tipos de eventos admitidos
@@ -57,6 +57,6 @@ Esta tabla captura eventos con los siguientes `ActionType` valores:
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

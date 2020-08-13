@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819345"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653646"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -29,7 +29,10 @@ Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensa
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora el seguimiento de mensajes original que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con los mensajes, solucionar problemas del flujo de correo y validar los cambios de la Directiva.
 
 > [!NOTE]
-> • Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md). <br/><br/>• El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) en Exchange Online PowerShell o el PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
+>
+> - Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles administración de la organización, administración del cumplimiento o asistencia técnica. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+>
+> - El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (consulte la sección [elegir tipo de informe](#choose-report-type) para obtener más información). El cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) en Exchange Online PowerShell o el PowerShell independiente de EOP devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
@@ -332,8 +335,10 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
-|:-----|:-----|
+****
+
+|Valor|Description|
+|---|---|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El mensaje se marcó como correo no deseado por un filtrado contra correo electrónico no deseado (también conocido como filtrado de contenido).|
 |`SFV=BLK`|Se omitió el filtrado y se bloqueó el mensaje porque proviene de un remitente bloqueado.|
@@ -345,11 +350,12 @@ Un valor de **custom_data** que empieza por `S:SFA` es del agente de filtro de c
 |`DI=SD`|El mensaje se eliminó.|
 |`DI=SJ`|El mensaje se envió a la carpeta de correo no deseado del destinatario.|
 |`DI=SN`|El mensaje se enrutó a través del grupo de entrega saliente normal.|
-|`DI=SO`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
+|`DI=SO`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para más información, consulte [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica que se coincidió con reglas de correo no deseado.|
 |`IPV=CAL`|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
 |`H=<EHLOstring>`|Cadenas HELO o EHLO del servidor de correo de conexión.|
 |`PTR=<ReverseDNS>`|Registro PTR de la dirección IP de envío, también denominado dirección DNS inversa.|
+|
 
 Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no deseado de la siguiente manera:
 
@@ -359,8 +365,10 @@ Un ejemplo **custom_data** valor de un mensaje que se filtra para correo no dese
 
 Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
-|:-----|:-----|
+****
+
+|Valor|Description|
+|---|---|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
 |`Action=p`|El mensaje se omitió.|
@@ -373,6 +381,7 @@ Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de m
 |`Action=b`|El mensaje se bloqueó.|
 |`Name=<malware>`|Se detectó el nombre del malware.|
 |`File=<filename>`|El nombre del archivo que contiene el malware.|
+|
 
 Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tiene el siguiente aspecto:
 
@@ -382,12 +391,15 @@ Un ejemplo de un valor **custom_data** para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
-|:-----|:-----|
+****
+
+|Valor|Description|
+|---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
 |`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>* **Exigir**: se exigirán todas las acciones de la regla. <br/>* **Probar con sugerencias de directivas:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>* **Probar sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
+|
 
 Un ejemplo de un valor **custom_data** para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:
 

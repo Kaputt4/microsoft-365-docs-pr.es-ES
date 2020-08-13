@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430428"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656638"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 
@@ -46,8 +46,10 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
 
 - Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol de administración de organización de Exchange Online (el administrador global tiene asignado este rol de forma predeterminada) o los roles de administrador de seguridad y administración de la protección en línea de Exchange Online. Para obtener más información, vea la tabla siguiente:
 
+  ****
+
   |Role|Dónde y cómo se asigna|
-  |---------|---------|
+  |---|---|
   |administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
   |Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
   |Administración de la organización de Exchange Online, administración de la protección de Exchange Online |Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
@@ -89,9 +91,10 @@ Considere la posibilidad de configurar varias directivas de datos adjuntos segur
 
 A medida que configure las directivas de datos adjuntos seguros de ATP, podrá elegir entre varias opciones, como monitor, bloqueo, reemplazo, entrega dinámica, etc. En caso de que se haya preguntado sobre lo que hacen estas opciones, en la tabla siguiente se resumen cada uno de ellos y su efecto.
 
-||||
+****
+
+|Opción|Efecto|Se usa cuando se desea:|
 |---|---|---|
-|**Opción**|**Effect**|**Se usa cuando se desea:**|
 |**Desactivado**|No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes|Desactivar el análisis para los destinatarios seleccionados.  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento.  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros de ATP para los destinatarios que solo reciben mensajes de correo electrónico de remitentes de confianza.**|
 |**Monitor**|Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado|Ver dónde se encuentra el malware detectado en su organización|
 |**Desbloquear**|Impide que se prosigan los mensajes con datos adjuntos de malware detectados  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> Bloquea los mensajes y datos adjuntos futuros de forma automática|Proteger a su organización de ataques repetidos con los mismos datos adjuntos de malware|

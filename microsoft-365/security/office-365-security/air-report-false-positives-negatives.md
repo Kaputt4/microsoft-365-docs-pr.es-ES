@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 826d8561ba0c9618f21458493416b7dbd75af9e1
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520163"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656866"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo informar de falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -61,11 +61,13 @@ En la mayoría de los casos, si se realizó una acción de corrección en un men
 
 Con el explorador de amenazas, el equipo de operaciones de seguridad puede encontrar un correo electrónico afectado por una acción y, potencialmente, deshacer la acción.
 
-|Escenario  |Opciones de deshacer  |Más información |
-|---------|---------|---------|
-|Un mensaje de correo electrónico se enrutó a la carpeta de correo electrónico no deseado de un usuario     |-Mover el mensaje a la carpeta elementos eliminados del usuario<br/>-Mover el mensaje a la bandeja de entrada del usuario <br/>-Eliminar el mensaje          |[Buscar e investigar correo electrónico malintencionado que se entregó en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|Un mensaje de correo electrónico o un archivo se ha puesto en cuarentena     |-Libere el correo electrónico o el archivo <br/>-Eliminar el correo electrónico o el archivo         |[Administrar archivos y mensajes en cuarentena como un administrador en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|Escenario|Opciones de deshacer|Más información|
+|---|---|---|
+|Un mensaje de correo electrónico se enrutó a la carpeta de correo electrónico no deseado de un usuario|-Mover el mensaje a la carpeta elementos eliminados del usuario<br/>-Mover el mensaje a la bandeja de entrada del usuario <br/>-Eliminar el mensaje|[Buscar e investigar correo electrónico malintencionado que se entregó en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|Un mensaje de correo electrónico o un archivo se ha puesto en cuarentena|-Libere el correo electrónico o el archivo <br/>-Eliminar el correo electrónico o el archivo|[Administrar archivos y mensajes en cuarentena como un administrador en Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>Deshacer una acción con la ficha acciones para una investigación
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estas recomendaciones de procedimientos recomendados para la protección independiente de Exchange Online (EOP) con el fin de establecer el éxito y evitar errores de configuración habituales.
-ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 880e61538f4de588b01a9ec107fcf629a0e7eeed
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739085"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653202"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedimientos recomendados para configurar EOP independiente
 
@@ -39,9 +39,10 @@ Habilitamos a los administradores de seguridad para que personalicen la configur
 
 Esta configuración cubre una variedad de características que se encuentran fuera de las directivas de seguridad.
 
-|||||
+****
+
+|Nombre de la característica de seguridad|Standard|Estricta|Comentario|
 |---|---|---|---|
-|**Nombre de la característica de seguridad**|**Estándar**|**Estricta**|**Comment**|
 |[Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sí|Sí||
 |[Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)|Sí|Sí||
 |[Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)|Sí|Sí|Se usa `action=quarantine` para Standard y `action=reject` para STRICT.|

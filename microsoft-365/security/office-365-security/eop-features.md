@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617047"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652878"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -26,9 +26,10 @@ La tabla siguiente proporciona una lista de las características que están disp
 > [!TIP]
 > El [plan de desarrollo de Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) es un buen recurso para buscar información sobre las nuevas características nuevas. Para obtener una visión más amplia acerca de las características que están disponibles con los distintos planes de suscripción a EOP, vea [Descripción del servicio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Característica|Descripción|
 |---|---|
-|**Característica**|**Descripción**|
 |**Protección contra correo no deseado**||
 |Detección de correo no deseado de entrada|Para obtener más información, vea [protección contra correo no deseado en Microsoft 365](anti-spam-protection.md). <br/><br/> En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener más información, consulte [configurar un EOP independiente para entregar el correo no deseado a la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md) .|
 |Detección de correo no deseado de salida|La protección contra correo no deseado saliente siempre está habilitada si usa el servicio para enviar correo saliente. Para obtener más información, consulte [protección contra correo no deseado de salida](outbound-spam-controls.md).|
@@ -93,3 +94,4 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Una red mundial georredundante de servidores|EOP se ejecuta en una red mundial de centros de datos que están diseñados para ayudar a proporcionar la mejor disponibilidad. Para obtener más información, vea la sección "Centros de datos de EOP" en [Información general de Exchange Online Protection](exchange-online-protection-overview.md).  |
 |Puesta en cola de los mensajes cuando el servidor local no puede aceptar correo|Los mensajes en aplazamientos permanecen en nuestras colas durante un día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los mensajes se reintentan cada 5 minutos, como valor promedio. Para obtener más información, vea [Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Cifrado de mensajes de Office 365 disponible como servicio complementario|Para obtener más información, vea [Cifrado en Office 365](../../compliance/encryption.md).|
+|

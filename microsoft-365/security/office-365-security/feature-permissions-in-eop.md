@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Obtenga información sobre el permiso necesario para las tareas de la protección independiente de Exchange Online
-ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588257"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652902"
 ---
 # <a name="permissions-in-standalone-eop"></a>Permisos en EOP independiente
 
@@ -43,9 +43,10 @@ En la figura siguiente se ve la relación entre usuarios, grupos de roles y role
 
 En la tabla siguiente se describen los grupos de funciones disponibles en EOP independiente.
 
-||||
+****
+
+|Grupo de funciones|Description|Roles predeterminados asignados|
 |---|---|---|
-|**Grupo de funciones**|**Descripción**|**Roles predeterminados asignados**|
 |ComplianceManagement|Configure y administre la configuración de cumplimiento dentro de la organización, incluida la prevención de pérdida de datos (DLP) si la suscripción tiene capacidades de DLP. <br/><br/> Los miembros del rol de [Administrador de cumplimiento](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) en Azure ad obtienen automáticamente los permisos de este grupo de roles.|Registros de auditoría <br/><br/> Administración de cumplimiento <br/><br/> Information Rights Management <br/><br/> Administración de retención <br/><br/> Registros de auditoría de solo vista <br/><br/> Configuración con permiso de vista <br/><br/> Destinatarios con permiso de vista|
 |ContentExplorerContentViewer|No se usa.|Visor de contenido de clasificación de datos|
 |ContentExplorerListViewer|No se usa.|Visor de lista de clasificación de datos|
@@ -70,9 +71,10 @@ Si los grupos de roles integrados de Exchange Online no coinciden con la funció
 
 En la tabla siguiente se describen los roles integrados que están disponibles en EOP independiente.
 
-||||
+****
+
+|Función * *|Description|Asignaciones de grupo de roles predeterminadas|
 |---|---|---|
-|**Rol**|**Descripción**|**Asignaciones de grupo de roles predeterminadas**|
 |AntiMalware|Permite ver y modificar la configuración y los informes de las características antimalware.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |Anti|Permite ver y modificar la configuración y los informes de las características contra correo no deseado.|OrganizationManagement <br/><br/> SecurityAdministrator|
 |Registros de auditoría|Busque en el registro de auditoría de administrador y vea los resultados.|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
@@ -83,7 +85,7 @@ En la tabla siguiente se describen los roles integrados que están disponibles e
 |Information Rights Management<sup>\*</sup>||ComplianceManagement <br/><br/> OrganizationManagement|
 |Creación de destinatario de correo|Crear y quitar usuarios de correo.|OrganizationManagement <br/><br/> RecipientManagement|
 |Destinatarios de correo|Modificar usuarios de correo existentes.|OrganizationManagement <br/><br/> RecipientManagement|
-|Seguimiento de mensajes<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement <br/><br/> Administración de registros|
+|Seguimiento de mensajes<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement <br/><br/> Records Management|
 |Migraciones<sup>\*</sup>||OrganizationManagement <br/><br/> RecipientManagement|
 |MyBaseOptions|Permite a los usuarios ver sus propios mensajes en cuarentena. <br/><br/> Este rol se asigna automáticamente a los usuarios y no se puede asignar manualmente.|ninguno|
 |Acceso de clientes de la organización<sup>\*</sup>||OrganizationManagement|
@@ -112,7 +114,7 @@ En la tabla siguiente se describen los roles integrados que están disponibles e
 |Inteligencia sobre amenazas de solo vista<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |
 
-<sup>\*</sup>Aunque esta función está disponible, básicamente no hace nada útil en EOP independiente.
+<sup>\*</sup> Aunque esta función está disponible, básicamente no hace nada útil en EOP independiente.
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>Permisos de Microsoft 365 en EOP independiente
 
@@ -123,9 +125,10 @@ Al crear un usuario en el centro de administración de 365 de Microsoft, puede e
 
 En la siguiente tabla se enumeran los roles de Microsoft 365 y los grupos de roles de EOP independientes a los que corresponden. Para obtener más información acerca de estos roles, consulte [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-|||
+****
+
+|Rol de Microsoft 365|Grupo de roles de EOP|
 |---|---|
-|**Rol de Microsoft 365**|**Grupo de roles de EOP**|
 |Administrador de Exchange|OrganizationManagement|
 |Administrador global|OrganizationManagement <br/><br/> **Nota**: el rol de administrador global y el grupo de roles OrganizationManagement están ligados a la vez que usan un grupo de roles de administrador de empresa especial. El grupo de roles de administrador de la compañía se administra internamente y no se puede modificar directamente.|
 |Administrador de contraseñas|Escritorio|
@@ -138,7 +141,7 @@ Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente 
 
 A los usuarios se les pueden conceder derechos administrativos en EOP sin agregarlos a los roles de 365 de Microsoft. Para hacerlo, agregue el usuario como miembro de un grupo de roles de EOP. El usuario obtendrá permisos en EOP, pero no obtendrá permisos en otras cargas de trabajo de Microsoft 365.
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que el grupo de roles se copió correctamente, siga uno de estos pasos:
 

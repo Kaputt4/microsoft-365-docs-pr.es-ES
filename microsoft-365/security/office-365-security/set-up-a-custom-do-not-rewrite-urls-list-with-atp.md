@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar direcciones URL bloqueadas personalizadas para los usuarios y no volver a escribir la lista de direcciones URL de un grupo de usuarios en las directivas de vínculos seguros de ATP de Office 365.
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517478"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656974"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada mediante vínculos seguros de ATP
 
@@ -41,11 +41,12 @@ La protección de vínculos seguros de ATP usa varias listas, incluidas la lista
 
 Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se incluyen algunos ejemplos. Para obtener más información, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-|Role  |Dónde y cómo se asigna  |
-|---------|---------|
-|administrador global |La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
-|Administrador de seguridad |Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Administración de la organización en Exchange Online |Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Role|Dónde y cómo se asigna|
+|---|---|
+|administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Administrador de seguridad|Centro de administración de Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Administración de la organización en Exchange Online|Centro de administración de Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -83,9 +84,12 @@ Para editar (o definir) las directivas de ATP, debe tener asignado un rol apropi
 
 En la tabla siguiente se muestran ejemplos de lo que se puede especificar y el efecto que tienen estas entradas.
 
+****
+
 |Entrada de ejemplo|Qué hace|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|Permite a los destinatarios visitar un sitio como, por ejemplo, `https://contoso.com` subdominios o rutas de una ruta.|
-|`*.contoso.com/*`|Permite a los destinatarios visitar un dominio, subdominios y rutas de, como `https://www.contoso.com` , `https://www.contoso.com` , `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*` , ya que no incluye sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` , pero no subtrazados como`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` y subrutas como`https://contoso.com/a/b`|
+|`*.contoso.com/*`|Permite a los destinatarios visitar un dominio, subdominios y rutas de, como `https://www.contoso.com` , `https://www.contoso.com` , `https://maps.contoso.com` o `https://www.contoso.com/a` . <br/><br/> Esta entrada es intrínsecamente mejor que `*contoso.com*` , ya que no incluye sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` , pero no subtrazados como `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Permite a los destinatarios específicos visitar un sitio como `https://contoso.com/a` y subrutas como `https://contoso.com/a/b`|
+|

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores y los usuarios finales pueden obtener información sobre cómo realizar análisis a los mensajes de correo electrónico (se permite el correo marcado como correo incorrecto o malo) a Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811043"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653598"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
@@ -52,7 +52,12 @@ Si recibe un mensaje que pasa a través del filtrado de correo no deseado que de
 2. Arrastre y coloque el mensaje no deseado o de suplantación de identidad en el nuevo mensaje. Se guardará el mensaje no deseado o de suplantación de identidad (phishing) como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
    > [!NOTE]
-   > <ul><li>Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo electrónico no deseado.</li><li>Deje el cuerpo del nuevo mensaje en blanco.</li><li>Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.</li></ul>
+   >
+   > - Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad o mensajes de correo electrónico no deseado.
+   >
+   > - Deje el cuerpo del nuevo mensaje en blanco.
+   >
+   > - Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.
 
 3. Cuando haya terminado, haga clic en **Enviar**.
 
@@ -71,7 +76,12 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 2. Arrastre y coloque el mensaje con identificación indebido en el nuevo mensaje. De este modo, se guardará el mensaje identificado indebido como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
    > [!NOTE]
-   > <ul><li>Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad o mensajes de correo electrónico no deseado.</li><li>Deje el cuerpo del nuevo mensaje en blanco.</li><li>Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.</li></ul>
+   >
+   > - Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes sean del mismo tipo: mensajes de suplantación de identidad o mensajes de correo electrónico no deseado.
+   >
+   > - Deje el cuerpo del nuevo mensaje en blanco.
+   >
+   > - Use cualquiera de los formatos. msg (formato predeterminado de Outlook) o. eml (formato predeterminado de Outlook en la web) para los mensajes adjuntos.
 
 3. Cuando haya terminado, haga clic en **Enviar**.
 

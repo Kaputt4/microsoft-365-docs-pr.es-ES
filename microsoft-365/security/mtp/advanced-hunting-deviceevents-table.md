@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0f565e7584a961fcbc48e6a421419cd48a20a963
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: ad3cfe34c697cbef09a99efdcbe1c1bd6ced1ca2
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899332"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649468"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -39,19 +39,19 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `DeviceId` | string | Identificador único para el equipo en servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | string | Tipo de actividad que ha desencadenado el evento |
-| `FileName` | string | Nombre del archivo donde se aplicó la acción registrada |
-| `FolderPath` | string | Carpeta que contiene el archivo al que se aplicó la acción grabada |
-| `SHA1` | string | SHA-1 del archivo donde fue aplicada la acción registrada |
+| `DeviceId` | cadena | Identificador único para el equipo en servicio |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
+| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
+| `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
+| `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
+| `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
 | `MD5` | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
 | `AccountDomain` | string | Dominio de la cuenta |
 | `AccountName` | string | Nombre de usuario de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
-| `RemoteUrl` | string | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
-| `RemoteDeviceName` | string | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
+| `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
+| `RemoteDeviceName` | cadena | Nombre del equipo que llevó a cabo una operación remota en el equipo afectado. Según el evento del que se informa, este nombre puede ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información del dominio |
 | `ProcessId` | int | IDENTIFICADOR de proceso (PID) del proceso recién creado |
 | `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
 | `ProcessCreationTime` | datetime | Fecha y hora de creación del proceso |
@@ -60,7 +60,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `RegistryKey` | string | Clave del registro a la que se aplicó la acción grabada |
 | `RegistryValueName` | string | Nombre del valor del registro al que se aplicó la acción grabada |
 | `RegistryValueData` | string | Datos del valor del registro al que se aplicó la acción grabada |
-| `RemoteIP` | string | Dirección IP a la que se ha conectado |
+| `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemotePort` | int | Puerto TCP del dispositivo remoto al que se estaba conectando |
 | `LocalIP` | string | Dirección IP asignada al equipo local usada durante la comunicación |
 | `LocalPort` | int | Puerto TCP del equipo local usado durante la comunicación |
@@ -89,6 +89,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda de amenazas en dispositivos y mensajes de correo electrónico](advanced-hunting-query-emails-devices.md)
+- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755265"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653046"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -80,9 +80,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Si el usuario nunca ha abierto su buzón de correo, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Incluso si deshabilita la regla de correo electrónico no deseado, el filtro de correo electrónico no deseado de Outlook (según cómo esté configurado) también puede determinar si un mensaje es correo no deseado y puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado en función de su propio veredicto de correo no deseado y de la colección de listas seguras del buzón. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
@@ -99,9 +99,10 @@ Realice uno de los siguientes procedimientos para confirmar que la regla de corr
 
 La colección de listas seguras de un buzón engloba la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados. De forma predeterminada, los usuarios pueden configurar la colección de listas seguras en su propio buzón de correo en Outlook o en Outlook en la Web. Los administradores pueden usar los parámetros correspondientes del cmdlet **Set-MailboxJunkEmailConfiguration** para configurar la colección de listas seguras del buzón de un usuario. Estos parámetros se describen en la siguiente tabla.
 
-|||
+****
+
+|Parámetro en Set-MailboxJunkEmailConfiguration|Configuración de Outlook en la web|
 |---|---|
-|**Parámetro en Set-MailboxJunkEmailConfiguration**|**Configuración de Outlook en la web**|
 |_BlockedSendersAndDomains_|**Mover el correo electrónico de estos remitentes o dominios a la carpeta de correo electrónico no deseado**|
 |_ContactsTrusted_|**Confiar en correo electrónico de mis contactos**|
 |_TrustedListsOnly_|**Confiar solo en correo electrónico de direcciones en la lista de remitentes seguros y dominios y listas de correo seguro**|
@@ -143,11 +144,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Si el usuario no ha abierto nunca su buzón de correo, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Incluso si la regla de correo no deseado está deshabilitada en el buzón, todavía puede configurar la colección de listas seguras y el filtro de correo electrónico no deseado de Outlook puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
-> 
+>
 > - El filtro de correo electrónico no deseado de Outlook tiene una configuración de recopilación de listas seguras adicional (por ejemplo, **Agregar automáticamente mis contactos por correo electrónico a la lista de remitentes seguros**). Para más información, vea [Usar los filtros de correo electrónico no deseado para controlar los mensajes que ve](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?

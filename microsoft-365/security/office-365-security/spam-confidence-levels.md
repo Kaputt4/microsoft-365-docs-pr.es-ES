@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el nivel de confianza contra correo no deseado (SCL) que se aplica a los mensajes en Exchange Online Protection (EOP).
-ms.openlocfilehash: bc3a1e7e4b3e5f737b8861c14e0fd2c3d0841940
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7e8d706f89c5b16bd34ad074498e011dc5d74093
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208017"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656544"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Nivel de confianza contra correo no deseado (SCL) en EOP
 
@@ -31,9 +31,10 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 
 En la tabla siguiente se describen los medios de SCL y las acciones predeterminadas que se realizan en los mensajes. Para obtener más información sobre las acciones que puede realizar en los mensajes en función del veredicto de filtrado de correo no deseado, consulte [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 
-||||
+****
+
+|SCL|Definición|Acción predeterminada|
 |:---:|---|---|
-|**SCL**|**Definición**|**Acción predeterminada**|
 |-1|El mensaje omitió el filtrado de correo no deseado. Por ejemplo, el mensaje proviene de un remitente seguro, se envió a un destinatario seguro o pertenece a un servidor de origen de correo electrónico en la lista de direcciones IP permitidas. Para obtener más información, vea [crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md).|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |0, 1|El filtrado de correo no deseado determinó que el mensaje no era correo no deseado.|Se entrega el mensaje a la bandeja de entrada de los destinatarios.|
 |5, 6|Filtrado de correo no deseado marcado el mensaje como **correo no deseado**|El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.|
@@ -46,6 +47,6 @@ Puede usar reglas de flujo de correo (también conocidas como reglas de transpor
 
 Al igual que el SCL, el nivel de queja masiva (BCL) identifica un correo electrónico en masa malo (también conocido como _correo gris_). Una BCL superior indica que un mensaje de correo masivo es más probable que genere quejas (y, por lo tanto, sea más probable que sea correo no deseado). El umbral de BCL se configura en las directivas contra correo no deseado. Para obtener más información, vea [configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md), [nivel de queja masiva (BCL) en EOP](bulk-complaint-level-values.md), y [¿cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-||
-|:-----|
+|<!-- -->|
+|---|
 |![El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New a Microsoft 365?** Descubra los cursos gratuitos de vídeo para **administradores y profesionales de TI de Microsoft 365**, que le ha ofrecido LinkedIn Learning.|
