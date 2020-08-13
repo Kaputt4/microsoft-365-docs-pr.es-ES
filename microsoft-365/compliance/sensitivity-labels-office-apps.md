@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9ed6e163915bd8cdf63e7f37bf92065943d71fb
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 7c47b97c573822cb44f895296613b70af7f85c93
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189471"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656785"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -112,6 +112,14 @@ Como alternativa, deshabilite o quite el complemento de Office, **Azure Informat
 Al deshabilitar o quitar este complemento de Office, el cliente de Azure Information Protection permanece instalado para que pueda seguir etiquetando los archivos fuera de las aplicaciones de Office. Por ejemplo, con el explorador de archivos o PowerShell.
 
 Para obtener información sobre las características admitidas por los clientes de Azure Information Protection y el cliente de etiquetado integrado de Office, vea [Choose The Labeling client to use for Windows Computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) from the Azure Information Protection Documentation.
+
+## <a name="office-file-types-supported"></a>Tipos de archivo de Office admitidos
+
+Las aplicaciones de Office con etiquetas integradas para archivos de Word, Excel y PowerPoint admiten el formato Open XML (como. docx y. xlsx), pero no el formato de Microsoft Office 97-2003 (como. doc y. xls). Cuando un tipo de archivo no es compatible con las etiquetas integradas, el botón **confidencial** no está disponible en la aplicación de Office.
+
+El cliente de etiquetación Unificado de Azure Information Protection admite tanto el formato Open XML como el formato 97-2003 de Microsoft Office. Para obtener más información, consulte [tipos de archivo compatibles con el cliente de etiquetación unificada de Azure Information Protection desde la](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) guía de administración de ese cliente.
+
+Para otras soluciones de etiquetado, consulte en su documentación los tipos de archivo admitidos.
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>Plantillas de protección y etiquetas de confidencialidad
 

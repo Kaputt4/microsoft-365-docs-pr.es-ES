@@ -18,17 +18,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a2b56d013b452f02a26ea956da19e5644bf9d44a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818059"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648733"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
-La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger la información confidencial. La identificación de información confidencial a veces requiere la búsqueda de palabras clave, especialmente al identificar contenido genérico (como la comunicación relacionada con el cuidado de la salud) o un lenguaje inadecuado o explícito. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave tienen un tamaño limitado y requieren modificar el XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y en una escala mucho mayor, que admiten hasta 100.000 términos por Diccionario.
-  
+La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger la información confidencial. La identificación de información confidencial a veces requiere la búsqueda de palabras clave, especialmente al identificar contenido genérico (como la comunicación relacionada con el cuidado de la salud) o un lenguaje inadecuado o explícito. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave tienen un tamaño limitado y requieren modificar el XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y en una escala mucho mayor, admiten hasta 100.000 términos por Diccionario y admiten cualquier idioma.
+
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
 Las palabras clave del diccionario pueden provenir de una amplia variedad de orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt), importadas en el servicio o por el cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:

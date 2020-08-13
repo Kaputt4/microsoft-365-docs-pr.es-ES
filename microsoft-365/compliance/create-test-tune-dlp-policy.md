@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de su organización.
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092010"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648787"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -37,6 +37,24 @@ DLP utiliza un motor de análisis de contenido para examinar el contenido de los
 - Bloquear activamente el correo electrónico o el uso compartido de archivos sin tener lugar
 
 A veces, los clientes descartan DLP porque no consideran que ellos mismos tienen el tipo de datos que necesitan protección. La suposición es que los datos confidenciales, como los registros médicos o la información financiera, solo existen para las industrias como la atención médica o para las empresas que ejecutan tiendas en línea. Sin embargo, cualquier empresa puede manejar información confidencial de forma periódica, incluso si no la tiene en cuenta. Una hoja de cálculo con los nombres y las fechas de los empleados es tan importante como una hoja de cálculo con los nombres de los clientes y los detalles de las tarjetas de crédito. Además, este tipo de información tiende a flotar más de lo que esperaba, ya que los empleados se centran en silencio en las tareas cotidianas, pensando en nada de exportar un archivo CSV de un sistema y enviarlo por correo electrónico a alguien. También podría sorprenderse con la frecuencia con la que los empleados envían correos electrónicos que contienen datos de tarjetas de crédito o banca sin tener en cuenta las consecuencias.
+
+## <a name="permissions"></a>Permisos
+
+Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otros usuarios acceso al Centro de seguridad y cumplimiento, sin darles todos los permisos de un administrador de espacios empresariales. Para hacerlo, le recomendamos:
+  
+1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
+    
+2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
+
+3. Al crear el grupo de roles, use la sección **elegir roles** para agregar el rol siguiente al grupo de roles: **Administración de cumplimiento de DLP**.
+    
+4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
+
+También puede crear un grupo de roles solo con privilegios de lectura para las directivas DLP y los informes DLP asignando el rol de **Administración de cumplimiento DLP de solo lectura**.
+
+Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La aplicación de directivas no requiere acceso al contenido.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo se detecta la información confidencial mediante DLP
 
