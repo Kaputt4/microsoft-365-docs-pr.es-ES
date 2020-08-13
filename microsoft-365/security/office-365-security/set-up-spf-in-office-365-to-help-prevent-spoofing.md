@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632144"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656616"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
@@ -61,7 +61,9 @@ Recopile esta información:
 
 1. Asegúrese de que está familiarizado con la sintaxis SFP de la siguiente tabla.
 
-   ||Si usa...|¿Es común para los clientes?|Agregue esto...|
+   ****
+
+   |<!-- -->|Si usa...|¿Es común para los clientes?|Agregue esto...|
    |---|---|---|---|
    |1|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF comienzan con este valor|v=spf1|
    |2|Exchange Online|Común|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ Recopile esta información:
    |5|Sistema de correo electrónico de terceros|No es común|incluye:\<domain name\>  <br/> Donde <domain name> es el nombre de dominio del sistema de correo electrónico de terceros.|
    |6|Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico|No es común| Use uno de estos para cada sistema de correo adicional: <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  Incluye:\<_domain name_\>  <br/>  Donde el valor de \<_IP address_\> es la dirección IP del otro sistema de correo y \<_domain name_\> es el nombre de dominio del otro sistema de correo que envía correo en nombre de su dominio.|
    |7|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF acaban con este valor|\<_enforcement rule_\>  <br/> Puede ser uno de varios valores. Le recomendamos que use **-all**.|
+   |
 
 2. Si todavía no lo ha hecho, para formar el registro TXT de SPF use la sintaxis de la tabla:
 
