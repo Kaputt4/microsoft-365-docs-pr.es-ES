@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936942"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632144"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
@@ -61,8 +61,8 @@ Recopile esta información:
 
 1. Asegúrese de que está familiarizado con la sintaxis SFP de la siguiente tabla.
 
-   ||**Si usa...**|**¿Es común para los clientes?**|**Agregue esto...**|
-   |:-----|:-----|:-----|:-----|
+   ||Si usa...|¿Es común para los clientes?|Agregue esto...|
+   |---|---|---|---|
    |1|Cualquier sistema de correo electrónico (obligatorio)|Común. Todos los registros TXT de SPF comienzan con este valor|v=spf1|
    |2|Exchange Online|Común|include:spf.protection.outlook.com|
    |3|Solo Exchange Online dedicado|No es común|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ Recopile esta información:
 3. Una vez que ha formado el registro TXT de SPF, debe actualizar el registro en DNS. Solo puede tener un registro TXT de SPF para un dominio. Si existe un registro TXT de SPF, en vez de agregar un registro nuevo, debe actualizar el registro existente. Vaya a [Crear registros DNS para Office 365 al administrar los registros DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) y haga clic en el vínculo para su host DNS.
 
 4. Pruebe el registro TXT de SPF
+
+## <a name="how-to-handle-subdomains"></a>¿Cómo se tratan los subdominios?
+
+Es importante tener en cuenta que necesita crear un registro independiente para cada subdominio, ya que los subdominios no heredan el registro SPF de su dominio de nivel superior.
+
+Se necesita un registro de SPF (`*.`) comodín adicional para todos los dominios y subdominios para evitar que los atacantes envíen mensajes de correo electrónico desde subdominios inexistentes. Por ejemplo:
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>Más información sobre SPF
 

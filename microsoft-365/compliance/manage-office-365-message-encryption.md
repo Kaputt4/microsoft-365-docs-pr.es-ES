@@ -191,11 +191,11 @@ Puede usar plantillas de personalización de marca personalizadas para obligar a
 
     donde:
 
-   - `mail flow rule name`es el nombre que desea usar para la nueva regla de flujo de correo.
+   - `mail flow rule name` es el nombre que desea usar para la nueva regla de flujo de correo.
 
-   - `option name`es `Encrypt` o `Do Not Forward` .
+   - `option name` es `Encrypt` o `Do Not Forward` .
 
-   - `template name`es el nombre que dio a la plantilla de personalización de marca personalizada, por ejemplo, `OME Configuration` .
+   - `template name` es el nombre que dio a la plantilla de personalización de marca personalizada, por ejemplo, `OME Configuration` .
 
    Para cifrar todo el correo electrónico externo con la plantilla "configuración de OME" y aplicar la opción de solo cifrado:
 

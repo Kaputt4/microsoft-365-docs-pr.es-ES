@@ -70,7 +70,7 @@ El vínculo **portal de confianza de servicios** muestra la Página principal. P
 
 El administrador de cumplimiento es una herramienta de evaluación de riesgos basada en flujos de trabajo que le ayuda a controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización relacionadas con los servicios en la nube de Microsoft, como Microsoft 365, Dynamics 365 y Azure. Use el administrador de cumplimiento para administrar el cumplimiento normativo en el modelo de responsabilidad compartida de la nube. En función de la versión del administrador de cumplimiento que desee usar, vea los artículos siguientes para obtener más información:
 
-- [Administrador de cumplimiento de Microsoft (clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+- [Administrador de cumplimiento de Microsoft (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 - [Administrador de cumplimiento de Microsoft (versión preliminar)](compliance-manager-overview.md)
 
@@ -110,7 +110,7 @@ Vínculos al [centro de confianza de Microsoft](https://www.microsoft.com/trust-
 
 Esta nueva característica le permite guardar (o *anclar*) documentos para que pueda obtener acceso rápidamente a ellos en la página mi biblioteca. También puede configurar notificaciones para que Microsoft le envíe un mensaje de correo electrónico cuando se actualicen los documentos de la mis bibliotecas. Para obtener más información, vea la sección [mi biblioteca](#my-library-1) de este artículo.
 
-### <a name="more"></a>Más 
+### <a name="more"></a>Más
 
 Vaya a **más > administrador** para acceder a funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo está visible si ha iniciado sesión como administrador global. Hay dos opciones en el menú desplegable **Administración** :
   
@@ -124,7 +124,7 @@ Vaya a **más > administrador** para acceder a funciones administrativas que sol
 
 - **Configuración de privacidad del usuario:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el administrador de cumplimiento para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado. Para obtener más información, vea [configuración de privacidad de usuario](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
 
-### <a name="search"></a>Search
+### <a name="search"></a>Búsqueda
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**. Se muestra la página de **búsqueda** , con el término de búsqueda en el cuadro de búsqueda y los resultados de la búsqueda que se enumeran a continuación.
   

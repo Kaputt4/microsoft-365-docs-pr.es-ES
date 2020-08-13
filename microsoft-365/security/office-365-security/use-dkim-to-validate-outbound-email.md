@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
-ms.openlocfilehash: 4ec5f7c8779e9d6b6709c8fc3311ec9c0e99b680
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754849"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632168"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -331,6 +331,16 @@ En este ejemplo, para conseguir este resultado:
    > sender@**contoso.com**
 
    > d=**contoso.com**
+   
+## <a name="identify-domains-that-do-not-send-email"></a>Identificar dominios que no envían correos electrónicos
+
+Las organizaciones deben indicar explícitamente si un dominio no envía correos electrónicos especificando `v=DKIM1; p=` en el registro DKIM de estos dominios. Esto aconseja rechazar la recepción de servidores de correo electrónico que no tengan claves públicas válidas para el dominio y cualquier correo electrónico que declare ser de ese dominio. Debe hacerlo para cada dominio y subdominio mediante un carácter comodín DKIM.
+
+Por ejemplo, el registro DKIM tendría el siguiente aspecto:
+
+```console
+*._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
+```
 
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>Pasos siguientes: una vez configurado DKIM para Microsoft 365
 <a name="DKIMNextSteps"> </a>
