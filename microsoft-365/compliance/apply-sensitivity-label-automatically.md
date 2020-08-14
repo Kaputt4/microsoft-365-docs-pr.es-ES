@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560631"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656831"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -54,16 +54,15 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
     
     Específico para el etiquetado automático para SharePoint y OneDrive:
-    - Son compatibles los archivos de Office para Word, PowerPoint y Excel.
-    - Máximo de 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
-    - Máximo de 10 colecciones de sitios para cada directiva de etiquetado automático.
-    - Máximo de 10 directivas de etiquetado automático en todo su espacio empresarial.
+    - Son compatibles los archivos de Office para Word, PowerPoint y Excel. El formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
+    - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
+    - Máximo de 10 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 10 sitios (SharePoint o OneDrive).
     - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
     - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que creó la etiqueta de confidencialidad.
 
     Específico para el etiquetado automático para Exchange:
     - A diferencia de las etiquetas manuales o el etiquetado automático con las aplicaciones de Office, los datos adjuntos de Office (archivos de Word, Excel y PowerPoint) y los datos adjuntos de PDF también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
-        - Para los archivos de Office, el formato Open XML es compatible (como .docx y.xlsx), pero no el formato de Microsoft Office 97-2003 (como .doc y .xls).
+        - Para estos archivos de Office, el formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
     - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Sin embargo, si la etiqueta está configurada para el cifrado, no se aplica el cifrado.
@@ -215,13 +214,13 @@ El modo de simulación es único en las directivas de etiquetado automático y s
 
 Flujo de trabajo para una directiva de etiquetado automático:
 
-1. Crear y configurar una directiva de etiquetado automático
+1. Crear y configurar una directiva de etiquetado automático.
 
-2. Ejecutar la directiva en modo de simulación y esperar al menos 24 horas
+2. Ejecute la directiva en el modo de simulación y espere 24 horas, o bien, hasta que finalice la simulación.
 
-3. Revisar los resultados y, si es necesario, afinar la directiva, volver a ejecutar el modo de simulación y esperar al menos 24 horas
+3. Revise los resultados y, si es necesario, perfeccione su directiva. Vuelva a ejecutar el modo de simulación y espere otras 24 horas o hasta que finalice la simulación.
 
-4. Si es necesario, repetir el paso 3.
+4. Si es necesario, repita el paso 3.
 
 5. Implementar en producción
 
