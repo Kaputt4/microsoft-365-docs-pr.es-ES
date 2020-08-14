@@ -1,7 +1,7 @@
 ---
 title: Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Obtenga información sobre cómo agregar y configurar el dominio en Microsoft 365 para que sus servicios como el correo electrónico y Skype empresarial online usen su propio nombre de dominio.
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560346"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662237"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios
 
@@ -38,7 +38,7 @@ ms.locfileid: "46560346"
   
 Compruebe primero [la configuración del dominio (instrucciones específicas del host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) para ver si tenemos instrucciones para su registrador. 
   
-Siga estas instrucciones para agregar y configurar el dominio en Microsoft 365 para que sus servicios como el correo electrónico y Skype empresarial online usen su propio nombre de dominio. Para ello, deberá comprobar el dominio y, a continuación, cambiar los servidores de nombres de dominio a Microsoft 365 para que se puedan configurar los registros DNS correctos. Siga estos pasos si la siguiente instrucción describe su situación:
+Siga estas instrucciones para agregar y configurar su dominio en Microsoft 365 para que sus servicios como correo electrónico y equipos usen su propio nombre de dominio. Para ello, deberá comprobar el dominio y, a continuación, cambiar los servidores de nombres de dominio a Microsoft 365 para que se puedan configurar los registros DNS correctos. Siga estos pasos si la siguiente instrucción describe su situación:
   
 - Tiene su propio dominio y desea configurarlo para que funcione con Microsoft 365.
     
@@ -114,17 +114,19 @@ Cuando llegue al último paso del asistente de configuración de dominios de Mic
   
 Para cambiar los servidores DNS en el sitio web del registrador de dominios usted mismo, haga lo siguiente:
   
-1. En el sitio web del registrador de dominios, busque el área donde poder modificar los servidores DNS del dominio.
+1. Busque el área en el sitio web del registrador de dominios donde puede cambiar los servidores de nombres de su dominio o un área donde puede usar los servidores de nombres personalizados.
     
-2. Cree dos registros de servidor DNS o modifique los existentes para que coincidan con los valores siguientes:
+2. Crear registros de servidor de nombres o editar los registros de servidor de nombres existentes para que cumplan los siguientes valores:
     
 |||
 |:-----|:-----|
 |Primer servidor de nombres  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Segundo servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Tercer servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Cuarto servidor de nombres  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > Debe usar al menos dos registros de servidor de nombres. Si en la lista se muestran otros servidores DNS, puede eliminarlos o cambiarlos a **NS3.BDM.microsoftonline.com** y **NS4.BDM.microsoftonline.com**. 
+   > Es mejor agregar los cuatro registros, pero si su registrador solo admite dos, agregue **ns1.BDM.microsoftonline.com** y **NS2.BDM.microsoftonline.com**. 
   
 3. Guarde los cambios.
     

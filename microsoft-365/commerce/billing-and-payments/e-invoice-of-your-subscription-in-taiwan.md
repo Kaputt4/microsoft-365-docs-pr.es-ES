@@ -30,7 +30,7 @@ ms.locfileid: "44401791"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprenda su factura electrónica para Microsoft 365 for Business (Taiwán)
 
-e-Invoice es una factura electrónica emitida por el vendedor después de la compra de acuerdo con los requisitos de e-factura de Taiwán de la autoridad fiscal. La información se transmite a la nube de facturas electrónicas de la autoridad fiscal de Taiwán para la retención de registros. Para obtener información relacionada con la factura electrónica de Taiwán, consulte aquí:<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
+e-Invoice es una factura electrónica emitida por el vendedor después de la compra de acuerdo con los requisitos de e-factura de Taiwán de la autoridad fiscal. La información se transmite a la nube de facturas electrónicas de la autoridad fiscal de Taiwán para la retención de registros. Para obtener información relacionada con la factura electrónica de Taiwán, consulte aquí: <a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
 Aquí se incluye una copia de ejemplo de factura electrónica:
   

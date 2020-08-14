@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652650"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662259"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -51,7 +51,7 @@ Con los vínculos seguros ATP habilitados, si un usuario hace clic en un víncul
 
 - Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
-    |Role|Dónde y cómo se asigna|
+    |Función|Dónde y cómo se asigna|
     |---|---|
     |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
     |Administrador de seguridad|Centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )|
@@ -82,13 +82,13 @@ Cuando tenga la [protección contra amenazas avanzada de Office 365](office-365-
 5. En la sección **configuración que se aplica a los contenidos excepto el correo electrónico** , active (o desactive) las opciones que desee usar. (Le recomendamos que seleccione todas las opciones).
 
 6. Seleccione **Guardar**.
+    
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Paso 3: agregar (o editar) directivas de vínculos seguros de ATP que se aplican a todos los destinatarios de correo electrónico o a determinados
 
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: agregar (o editar) directivas de vínculos seguros de ATP que se aplican a destinatarios de correo electrónico específicos
-
-Una vez que haya revisado (o editado) la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios, el siguiente paso consiste en definir directivas adicionales que se aplicarán a destinatarios específicos. Por ejemplo, puede especificar excepciones a su directiva predeterminada definiendo una directiva adicional.
-
-1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa.
-
+Una vez que haya revisado (o editado) la directiva predeterminada de vínculos seguros de ATP que se aplica a todos los usuarios, el siguiente paso consiste en definir directivas adicionales que se aplicarán a todos los destinatarios de correo electrónico o a los destinatarios específicos. Por ejemplo, puede especificar excepciones a su directiva predeterminada definiendo una directiva adicional o crear restricciones más detalladas para todos los empleados.
+  
+1. Vaya a <https://protection.office.com> e inicie sesión con su cuenta profesional o educativa. 
+    
 2. En el panel de navegación izquierdo, en **Administración de amenazas**, elija **Directiva**.
 
 3. Elija **vínculos seguros**.
@@ -120,7 +120,7 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
 6. Seleccione **Guardar**.
 
 > [!NOTE]
-> Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo tendrá efecto la Directiva de mayor prioridad.
+> Las directivas de vínculos seguros de ATP con prioridad más alta tendrán prioridad. Si un usuario está sujeto a dos o más directivas, sólo se aplicará la Directiva de mayor prioridad. Si desea que la Directiva del cliente tenga prioridad, debe aumentar la prioridad de la Directiva.
 
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Paso 4: información sobre las opciones de directiva de vínculos seguros de ATP
 
