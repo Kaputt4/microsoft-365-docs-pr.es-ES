@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560621"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648809"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -136,6 +136,8 @@ Para obtener más información acerca de estas opciones, vea [Ajustar reglas par
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
 Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta a contenido que coincida con palabras, frases o propiedades que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
+
+Cuando aplica automáticamente las etiquetas para las propiedades que se pueden buscar, no se puede usar en la consulta ningún alias para la propiedad administrada. Debe usarse el nombre real de la propiedad administrada, por ejemplo, RefinableString01.
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 

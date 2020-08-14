@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con la etiqueta de confidencialidad para los archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201514"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662248"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
@@ -42,12 +42,12 @@ Al habilitar las etiquetas de confidencialidad para los archivos de Office en Sh
 
 - Los usuarios externos pueden tener acceso a los documentos etiquetados con el cifrado mediante cuentas de invitado. Para obtener más información, consulte [compatibilidad con usuarios externos y con la etiqueta contenido](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos. Las directivas de prevención de pérdida de datos (DLP) admiten contenido en estos archivos.
+- Office 365 eDiscovery admite la búsqueda de texto completo para estos archivos y las directivas de prevención de pérdida de datos (DLP) admiten contenido en estos archivos.
 
 > [!NOTE]
-> Si se ha aplicado el cifrado con la clave local, una topología de administración de claves que a menudo se conoce como "retener su propia clave" (HYOK) o mediante el [cifrado de doble clave](double-key-encryption.md), el comportamiento de SharePoint para procesar el contenido del archivo no cambia.
+> Si el cifrado se ha aplicado con una clave local (una topología de administración de claves a menudo denominada "mantener su propia clave" o HYOK) o mediante el [cifrado de doble clave](double-key-encryption.md), el comportamiento de SharePoint para procesar el contenido del archivo no cambia.
 >
-> El comportamiento de SharePoint tampoco cambia para los archivos con etiquetas y cifrados existentes en SharePoint. Para que estos archivos se beneficien de las nuevas funciones, deben descargarse y cargarse o editarse después de ejecutar el comando para habilitar las etiquetas de confidencialidad para SharePoint y OneDrive. A continuación, SharePoint puede procesar estos archivos. Por ejemplo, se devolverán en los resultados de búsqueda y exhibición de documentos electrónicos.
+> El comportamiento de SharePoint tampoco cambia en el caso de los archivos existentes en SharePoint que se etiquetan con cifrado usando una sola clave basada en Azure. Para que estos archivos se beneficien de las nuevas funciones después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, los archivos deben descargarse y cargarse de nuevo, o bien editarse. Por ejemplo, se devolverán en los resultados de búsqueda y exhibición de documentos electrónicos.
 
 Después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, hay disponibles tres nuevos [eventos de auditoría](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) para supervisar las etiquetas de confidencialidad que se aplican a los documentos en SharePoint y onedrive:
 - **Etiqueta de confidencialidad aplicada al archivo**
@@ -201,7 +201,7 @@ Con este comportamiento, puede tener la certeza de que todos los archivos de Off
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Buscar documentos por etiqueta de confidencialidad
 
-Use la propiedad administrada **InformationProtectionLabelId** para buscar todos los documentos en SharePoint o OneDrive que tienen una etiqueta de confidencialidad específica. Use la sintaxis siguiente:`InformationProtectionLabelId:<GUID>`
+Use la propiedad administrada **InformationProtectionLabelId** para buscar todos los documentos en SharePoint o OneDrive que tienen una etiqueta de confidencialidad específica. Use la sintaxis siguiente: `InformationProtectionLabelId:<GUID>`
 
 Por ejemplo, para buscar todos los documentos que se han etiquetado como "confidenciales", y esa etiqueta tiene un GUID de "8faca7b8-8d20-48a3-8ea2-0f96310a848e", en el cuadro de búsqueda, escriba:
 
@@ -240,6 +240,6 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 multigeográfico, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que haya habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para obtener más información, vea [aplicar una etiqueta de confidencialidad a contenido automáticamente](apply-sensitivity-label-automatically.md).

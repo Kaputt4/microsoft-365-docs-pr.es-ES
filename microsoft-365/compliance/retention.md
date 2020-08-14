@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588212"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649157"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -124,6 +124,8 @@ En resumen, una directiva de retención bloqueada se puede incrementar o ampliar
   
 > [!IMPORTANT]
 > Antes de bloquear una directiva de retención, es importante que comprenda el impacto y confirme si es necesario para que la organización cumpla con los requisitos normativos. Los administradores no podrán deshabilitar ni eliminar una directiva de retención cuando se haya aplicado el bloqueo de conservación.
+
+Usted aplica un Bloqueo de conservación después de crear la directiva de retención usando PowerShell. Las instrucciones se incluyen en [Crear y configurar las directivas de retención](create-retention-policies.md).
 
 #### <a name="releasing-a-retention-policy"></a>Publicar una directiva de retención
 
