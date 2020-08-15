@@ -1,5 +1,5 @@
 ---
-title: Directivas recomendadas para proteger documentos - Microsoft 365 Enterprise | Microsoft Docs
+title: 'Directivas de documentos seguras recomendadas: Microsoft 365 para Enterprise | Microsoft docs'
 description: Se explican las directivas recomendadas por Microsoft para proteger el acceso a archivos de SharePoint.
 author: BrendaCarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617191"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695043"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directivas para proteger los archivos y los sitios de SharePoint
 
@@ -85,5 +85,4 @@ En la ilustración:
 - Si James obtiene acceso a un sitio sensible o altamente regulado, es miembro del uso de su equipo, se concede su acceso siempre que su equipo sea compatible.
 - Si James obtiene acceso a un sitio confidencial, es miembro del uso de su teléfono no administrado, lo que se permite a los usuarios de línea base, recibirá acceso solo del explorador al sitio confidencial debido a la Directiva de acceso de dispositivos configurada para este sitio.
 - Si James obtiene acceso a un sitio altamente regulado, es miembro del uso de su teléfono no administrado, se bloqueará debido a la Directiva de acceso configurada para este sitio. Solo puede acceder a este sitio mediante su equipo administrado y compatible.
-
 
