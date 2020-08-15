@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649157"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662314"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -115,7 +115,7 @@ El bloqueo de conservación garantiza que su organización cumpla con los requis
   
 Cuando una directiva de retención está bloqueada:
 
-- Nadie puede desactivarla
+- Nadie puede apagarlo
 - Las ubicaciones se pueden agregar pero no quitar
 - El contenido sujeto a la directiva no se puede modificar ni eliminar durante el período de retención.
 - Puede ampliar un período de retención, pero no disminuirlo
