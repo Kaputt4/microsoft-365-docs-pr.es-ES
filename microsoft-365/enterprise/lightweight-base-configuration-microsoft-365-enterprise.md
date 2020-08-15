@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,34 +17,34 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilice esta guía de laboratorio de pruebas para crear un entorno de prueba ligero a con objeto de probar Microsoft 365 Enterprise.
-ms.openlocfilehash: 7a4800d374416a1e197536bc1a867d3fbc4b1243
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: Use esta guía del laboratorio de pruebas para crear un entorno de prueba ligero para probar Microsoft 365 para empresas.
+ms.openlocfilehash: 5de9e44f83d4c6bbae2b4148ce39ca371ead2d34
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818758"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686783"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuración básica ligera
 
-*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
+*Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 para empresas como para Office 365.*
 
 En este artículo se le ofrecen instrucciones paso a paso para crear un entorno simplificado con una suscripción Microsoft 365 E5 y un equipo que ejecute Windows 10 Enterprise. 
 
 ![El entorno de pruebas ligero de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Use el entorno resultante para probar las características y funciones de [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Use el entorno resultante para probar las características y funciones de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Haga clic en [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila de la guía del laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic en la [pila guía de laboratorio de pruebas de microsoft 365 para empresas](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para obtener un mapa visual de todos los artículos de la pila de la guía de entorno de pruebas 365 para empresas de Microsoft.
 
-## <a name="phase-1-create-your-office-365-e5-subscription"></a>Fase 1: Crear la suscripción de Office 365 E5
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>Fase 1: crear la suscripción a Microsoft 365 E5
 
-Inicie con una suscripción de prueba de Office 365 E5, después, agregue la suscripción a Microsoft 365 E5.
+Empezamos con una suscripción de prueba de Microsoft 365 E5 y, a continuación, agregamos la suscripción a Microsoft 365 E5 a ella.
 
-Para iniciar la suscripción de prueba a Office 365 E5, primero necesita el nombre de una compañía ficticia y una nueva cuenta Microsoft.
+Para iniciar la suscripción de prueba de Microsoft 365 E5, en primer lugar necesita un nombre de compañía ficticio y una nueva cuenta de Microsoft.
   
 1. Le recomendamos que use una variante del nombre de la compañía Contoso para el nombre de su compañía, que es una compañía ficticia usada en contenido de ejemplo de Microsoft, pero no es imprescindible. Anote aquí el nombre de la compañía ficticia: ![Línea](../media/Common-Images/TableLine.png)
     
@@ -76,7 +76,7 @@ Tenemos que crear una suscripción de prueba de Office 365 para que su entorno d
 
 En esta fase, se configura la suscripción con usuarios adicionales y se les asignan licencias de Office 365 E5.
   
-Siga las instrucciones que se indican en [Conectarse a PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) para conectarse a la suscripción con el módulo Azure Active Directory PowerShell para Graph desde su equipo.
+Siga las instrucciones que [se indican en conectarse a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) para conectarse a su suscripción con el módulo Azure Active Directory PowerShell para Graph desde su equipo.
     
 En el cuadro de diálogo **Solicitud de credenciales para Windows PowerShell**, escriba el nombre de administrador global (por ejemplo, svalladares@contosotoycompany.onmicrosoft.com) y la contraseña.
   
@@ -151,7 +151,7 @@ Registre estos valores:
 
 Si todo lo que necesita es un entorno de prueba de Office 365, puede detenerse aquí. 
 
-Consulte las [Guías del laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md) para ver otras guías del laboratorio de pruebas que se aplican a Office 365 y Microsoft 365.
+Consulte las [guías del laboratorio de pruebas de 365 de Microsoft para empresas](m365-enterprise-test-lab-guides.md) para ver otras guías del laboratorio de pruebas que se aplican tanto a Office 365 como a Microsoft 365.
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>Fase 3: agregar una suscripción de prueba a Microsoft 365 E5
 
@@ -191,7 +191,7 @@ Su entorno de desarrollo y prueba ahora tiene:
 - Una suscripción de prueba de Microsoft 365 E5.
 - Todas las cuentas de usuario adecuadas (ya sea solo la cuenta de administrador global o las cinco cuentas de usuario) están habilitadas para usar Microsoft 365 E5.
     
-Esta es la configuración resultante, que agrega Microsoft 365 E5, que incluye Office 365 y Enterprise Security + administración (EMS).
+Esta es la configuración resultante, que agrega Microsoft 365 E5.
   
 ![Fase 3 del entorno de prueba de Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -294,7 +294,7 @@ Después, una el equipo WIN10 al espacio empresarial de Azure AD de la suscripci
     
 Después, instale las Aplicaciones de Microsoft 365 para empresas en el equipo WIN10.
   
-1. Abra el explorador Microsoft Edge e inicie sesión en el portal de Office con las credenciales de la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Abra el explorador Microsoft Edge e inicie sesión en el [centro de administración de microsoft 365](https://admin.microsoft.com) con sus credenciales de cuenta de administrador global.
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en **Instalar Office**.
     
@@ -312,7 +312,7 @@ Esto incluye el equipo WIN10 que tiene:
 - Se inscribió como un dispositivo de Azure AD en Microsoft Intune (EMS).
 - Tiene Aplicaciones de Microsoft 365 para empresas instalado.
   
-Ahora está preparado para experimentar con otras características de [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
+Ya está listo para experimentar con características adicionales de [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -325,8 +325,8 @@ Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
 
 ## <a name="see-also"></a>Vea también
 
-[Guías de laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Implementar Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)

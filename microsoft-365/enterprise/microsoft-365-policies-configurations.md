@@ -1,5 +1,5 @@
 ---
-title: 'Configuraciones de acceso a dispositivos e identidades: Microsoft 365 Enterprise'
+title: 'Configuraciones de acceso a dispositivos e identidades: Microsoft 365 para Enterprise'
 description: Describe las recomendaciones de Microsoft y los conceptos básicos para implementar directivas y configuraciones de correo electrónico seguro, documentos y aplicaciones.
 author: brendacarter
 manager: laurawi
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530276"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686631"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -87,7 +87,7 @@ Las recomendaciones proporcionadas se basan en los siguientes principios:
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Servicios y conceptos de protección de acceso a dispositivos e identidades
 
-Microsoft 365 Enterprise está diseñado para grandes organizaciones e integra Office 365 Enterprise, Windows 10 Enterprise y Enterprise Mobility + Security (EMS), para que todo el mundo pueda ser creativo y trabajar juntos de manera segura.
+Microsoft 365 para empresas está diseñado para grandes organizaciones e integra Office 365 Enterprise, Windows 10 Enterprise y Enterprise Mobility + Security (EMS), para que todo el mundo pueda ser creativo y trabajar juntos de forma segura.
 
 En esta sección se proporciona información general sobre los servicios y capacidades de Microsoft 365 que son importantes para el acceso a los dispositivos e identidades.
 
@@ -146,6 +146,6 @@ La tabla anterior refleja la tendencia de muchas organizaciones para admitir una
 
 Recomendamos que los dispositivos de propiedad corporativa se administren con Intune o con un dominio Unido para aplicar protecciones y control adicionales. En función de la sensibilidad de los datos, su organización puede optar por no permitir BYODs para determinados grupos de usuarios o aplicaciones específicas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades](identity-access-prerequisites.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Directivas recomendadas de Teams: Microsoft 365 Enterprise | Microsoft docs'
+title: 'Directivas recomendadas de Teams: Microsoft 365 para Enterprise | Microsoft docs'
 description: Describe las directivas de recomendaciones de Microsoft sobre cómo proteger la comunicación y el acceso a archivos de Microsoft Teams.
 author: MicrosoftHeidi
 manager: serdars
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636728"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685659"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directivas para proteger los chats, grupos y archivos de Microsoft Teams
 
@@ -35,7 +35,7 @@ En este artículo se incluyen recomendaciones adicionales específicas de la imp
 
 No es necesario que habilite los servicios dependientes para empezar a trabajar con Microsoft Teams. Todo "simplemente funcionará". Sin embargo, debe estar preparado para administrar lo siguiente:
 
-- Grupos de 365 de Microsoft
+- Grupos de Microsoft 365
 - Sitios de grupo de SharePoint
 - OneDrive para la Empresa
 - Buzones
@@ -62,7 +62,7 @@ En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cad
 |:---------------|:-------|:----------------|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Teams tiene también acceso de invitado y reglas de acceso externo que se deben tener en cuenta, obtendrá más información sobre estos en este artículo.|
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluir equipos y servicios dependientes en la asignación de aplicaciones en la nube.|
-|        |[Los usuarios de riesgo alto deben cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
+|        |[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Obliga a los usuarios de Microsoft Teams a cambiar su contraseña al iniciar sesión si se detecta una actividad de alto riesgo para su cuenta. Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones.|
 |        |[Aplicar directivas de protección de datos de aplicaciones](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Microsoft Teams y los servicios dependientes se incluyen en la lista de aplicaciones. Actualice la Directiva para cada plataforma (iOS, Android, Windows).|
 |        |[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir equipos y servicios dependientes en esta Directiva.|
 |        |[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluir equipos y servicios dependientes en esta Directiva.|
@@ -74,7 +74,7 @@ En esta tabla se enumeran las directivas que deben revisitarse y vínculos a cad
 
 ## <a name="teams-dependent-services-architecture"></a>Arquitectura de servicios dependientes de Teams
 
-Como referencia, el siguiente diagrama ilustra los equipos de servicios en los que se basa. Para obtener más información e ilustraciones adicionales, consulte [Microsoft Teams y los servicios de productividad relacionados en microsoft 365 para arquitectos de ti](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
+Como referencia, el siguiente diagrama ilustra los equipos de servicios en los que se basa. Para obtener más información e ilustraciones adicionales, consulte [Microsoft Teams y los servicios de productividad relacionados en microsoft 365 para arquitectos de ti](../solutions/productivity-illustrations.md).
 
 ![Diagrama que muestra las dependencias de Teams en SharePoint Online, OneDrive para la empresa y Exchange.](../media/identity-access-logical-architecture-teams.png)
 

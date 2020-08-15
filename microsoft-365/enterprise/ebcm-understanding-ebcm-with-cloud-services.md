@@ -9,19 +9,19 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: Entender cómo la planificación y la implementación de la continuidad empresarial son diferentes cuando los servicios en la nube forman parte de la oferta de TI.
-ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: f57079da4de7cafe071f5bf2a146290f3034fb60
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633038"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686063"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Administración de continuidad empresarial de Enterprise (EBCM) con servicios en la nube
 

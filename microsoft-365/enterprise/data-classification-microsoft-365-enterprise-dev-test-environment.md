@@ -1,5 +1,5 @@
 ---
-title: Clasificación de datos para su entorno de prueba de Microsoft 365 Enterprise
+title: Clasificación de datos para el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,26 +13,26 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta guía del laboratorio de pruebas para crear y usar etiquetas de retención en documentos en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Use esta guía del entorno de pruebas para crear y usar etiquetas de retención en documentos en el entorno de prueba de Microsoft 365 para empresas.
+ms.openlocfilehash: 171fcb74b09a1f2e5c80f23e010640dce55660bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636097"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686411"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Clasificación de datos para su entorno de prueba de Microsoft 365 Enterprise
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Clasificación de datos para el entorno de prueba de Microsoft 365 para empresas
 
-*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
+*Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 para empresas como para Office 365.*
 
-Con las instrucciones de este artículo, se configura la clasificación de datos con etiquetas de retención en el entorno de prueba de Microsoft 365 Enterprise.
+Con las instrucciones de este artículo, se configura la clasificación de datos con etiquetas de retención en el entorno de prueba de Microsoft 365 para empresas.
 
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+> Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 para empresas
 
 Si solo quiere configurar las etiquetas de retención de una manera ligera con los requisitos mínimos, siga las instrucciones de [configuración de base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -73,7 +73,7 @@ En esta fase, creará las etiquetas de retención para los distintos niveles de 
     
 11. En el panel **elegir etiquetas** , haga clic en **Agregar** y seleccione las cuatro etiquetas.
     
-12. Haga clic en **Agregar**y, a continuación, en **listo**.
+12. Haga clic en **Agregar** y, a continuación en **Listo**.
     
 13. En el panel **Elegir etiquetas para publicar**, haga clic en **Siguiente**.
     
@@ -91,7 +91,7 @@ En esta fase, se detecta el comportamiento predeterminado de la etiqueta de rete
 
 En primer lugar, cree un sitio de grupo de SharePoint Online de nivel confidencial:
   
-1. Con una instancia privada del explorador, inicie sesión en el [portal de Office 365](https://portal.office.com) con su cuenta de administrador global.
+1. Con una instancia privada del explorador, inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) mediante su cuenta de administrador global.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -125,26 +125,24 @@ A continuación, cree un nuevo documento en el sitio de SensitiveFiles y cambie 
     
 3. En la barra de menús, haga clic en **documentos compartidos**.
     
-4. Haga clic en los puntos suspensivos verticales junto al nombre del archivo **. docx del documento** y, a continuación, haga clic en **detalles**.
+4. Haga clic en los puntos suspensivos verticales junto al nombre del archivo de **Document.docx** y, a continuación, haga clic en **detalles**.
     
 5. En el panel derecho, en la sección **propiedades** , en **Aplicar etiqueta de retención**, tenga en cuenta que se ha aplicado automáticamente la etiqueta retención **sensible** al documento.
     
 6. Haga clic en **Editar todo**.
     
-7. En el panel **Document. docx** , en **Aplicar etiqueta de retención**, seleccione la etiqueta **extremadamente confidencial** y, a continuación, haga clic en **Guardar**.
+7. En el panel de **Document.docx** , en **Aplicar etiqueta de retención**, seleccione la etiqueta **extremadamente confidencial** y, a continuación, haga clic en **Guardar**.
 
-Consulte el paso [configurar la clasificación del entorno](infoprotect-configure-classification.md) en la fase de protección de la **información** para obtener información y vínculos sobre cómo implementar las etiquetas de retención en producción.
-
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
-[Guías de laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Implementar Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  

@@ -1,5 +1,5 @@
 ---
-title: Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
+title: Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Cómo usa Contoso las características de seguridad de Microsoft 365 Enterprise.
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Cómo contoso usa las características de seguridad en Microsoft 365 para empresas.
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268403"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686445"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Resumen de seguridad de Microsoft 365 Enterprise para Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para la seguridad empresarial de Contoso Corporation
 
-Para obtener la aprobación de la implementación de Microsoft 365 Enterprise por parte del departamento de seguridad de TI, se realizó una revisión de seguridad completa. Estos son los requisitos de seguridad de Contoso para la nube:
+Para obtener la firma de la implementación de Microsoft 365 for Enterprise por parte del Departamento de seguridad de ti, se realizó una revisión de seguridad exhaustiva. Estos son los requisitos de seguridad de Contoso para la nube:
 
 - Usar los métodos de autenticación más seguros para el acceso de los empleados a los recursos en la nube.
 - Asegurarse de que los equipos y dispositivos móviles se conectan y acceden a las aplicaciones de forma segura.
@@ -36,7 +36,7 @@ Para obtener la aprobación de la implementación de Microsoft 365 Enterprise po
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Ruta de acceso de Contoso para la preparación de la seguridad de Microsoft 365
 
-Contoso siguió los pasos siguientes para preparar la seguridad de su implementación de Microsoft 365 Enterprise:
+Contoso usó los pasos siguientes para preparar su seguridad para su implementación de Microsoft 365 para empresas:
 
 1. Limitación de las cuentas de administrador para la nube
 
@@ -44,13 +44,13 @@ Contoso siguió los pasos siguientes para preparar la seguridad de su implementa
 
 2. Análisis de clasificación de datos en tres niveles
 
-   Contoso realizó una revisión esmerada y definió los tres niveles, lo que se usó para determinar las características de Microsoft 365 Enterprise para proteger los datos más valiosos de Contoso.
+   Contoso realizó una revisión minuciosa y consideró los tres niveles, que se usaban para determinar las características de Microsoft 365 for Enterprise para proteger los datos más valiosos de contoso.
 
 3. Determinó las directivas de acceso, retención y protección de la información para los niveles de datos
 
    Según los niveles de datos, Contoso determinó los requisitos detallados, que se usarán para calificar las cargas de trabajo de TI que en el futuro se muevan a la nube.
 
-De acuerdo con los procedimientos recomendados de seguridad y los requisitos de implementación de Microsoft 365 Enterprise, los administradores de seguridad de Contoso y el departamento de TI han implementado muchas funciones y características de seguridad, como se describe en las secciones siguientes.
+De acuerdo con los procedimientos recomendados de seguridad y Microsoft 365 para los requisitos de implementación de la empresa, los administradores de seguridad y el Departamento de TI de Contoso han implementado muchas características y capacidades de seguridad, como se describe en las secciones siguientes.
 
 ## <a name="identity--access-management"></a>Administración de identidad y acceso 
 

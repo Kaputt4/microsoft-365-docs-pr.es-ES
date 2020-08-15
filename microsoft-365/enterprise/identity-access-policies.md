@@ -1,5 +1,5 @@
 ---
-title: Directivas comunes de identidad y acceso a dispositivos-Microsoft 365 Enterprise | Microsoft docs
+title: 'Directivas comunes de identidad y acceso a dispositivos: Microsoft 365 para Enterprise | Microsoft docs'
 description: Explica las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de identidad y acceso a dispositivos.
 author: BrendaCarter
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625271"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685979"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -32,8 +32,8 @@ En esta guía se explica cómo implementar las directivas recomendadas en un ent
 
 El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el nivel de protección al que se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas o a ambas categorías de dispositivos. También indica dónde están configuradas estas directivas.
 
-[![Directivas comunes para configurar el acceso a](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-los dispositivos e identidades[consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 En el resto de este artículo se describe cómo configurar estas directivas. 
 
@@ -46,7 +46,7 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 |:---------------|:-------|:----------------|
 |**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión sea *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-modern-authentication)|Los clientes que no usan la autenticación moderna pueden omitir las reglas de acceso condicional, por lo que es importante bloquear estos|
-|        |[Los usuarios de riesgo alto deben cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta|
+|        |[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Obliga a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta|
 |        |[Aplicar directivas de protección de datos de aplicaciones](#apply-app-data-protection-policies)|Una directiva por plataforma (iOS, Android, Windows). Las directivas de protección de aplicaciones (aplicación) de Intune son conjuntos predefinidos de protección, del nivel 1 al nivel 3.|
 |        |[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Fuerza la protección de aplicaciones móviles para teléfonos y tabletas|
 |        |[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma|
@@ -113,7 +113,7 @@ Aplique la configuración en función del nivel de protección de destino.
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Conceder|Conceder acceso|Verdadero|Seleccionado|
+|Conceder|Conceder acceso|True|Seleccionado|
 ||Exigir MFA|True|Check|
 ||Requerir que el dispositivo esté marcado como compatible|Falso||
 ||Requerir un dispositivo híbrido de Azure AD conectado|Falso||
@@ -150,7 +150,7 @@ En las tablas siguientes se describen las opciones de configuración de directiv
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Conceder|Bloquear acceso|Verdadero|Seleccionado|
+|Conceder|Bloquear acceso|True|Seleccionado|
 ||Exigir MFA|Falso||
 ||Requerir que el dispositivo esté marcado como compatible|Falso||
 ||Requerir un dispositivo híbrido de Azure AD conectado|Falso||
@@ -162,7 +162,7 @@ En las tablas siguientes se describen las opciones de configuración de directiv
 
 
 
-## <a name="high-risk-users-must-change-password"></a>Los usuarios de riesgo alto deben cambiar la contraseña
+## <a name="high-risk-users-must-change-password"></a>Los usuarios de riesgo alto tienen que cambiar la contraseña
 Para asegurarse de que todas las cuentas de usuarios de alto riesgo se vean obligadas a realizar un cambio de contraseña al iniciar sesión, debe aplicar la siguiente directiva.
 
 Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://portal.azure.com/) con las credenciales de administrador y luego vaya a **Azure AD Identity Protection > Directiva de riesgo de usuario**.
@@ -179,7 +179,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 | Tipo | Propiedades | Valores                  | Notas |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | Permitir acceso            | Verdadero  |
+|      | Acceso     | Permitir acceso            | True  |
 |      | Acceso     | Exigir cambio de contraseña | True  |
 
 **Revisión:** no aplicable
@@ -254,7 +254,7 @@ Cree una directiva para cada plataforma:
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
-Para crear directivas de cumplimiento de dispositivos, inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con sus credenciales de administración y, a continuación, navegue a**directivas**de**directivas** > de cumplimiento de **dispositivos** > . Seleccione **crear Directiva**.
+Para crear directivas de cumplimiento de dispositivos, inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con sus credenciales de administración y, a continuación, navegue a directivas de directivas de cumplimiento de **dispositivos**  >  **Compliance policies**  >  **Policies**. Seleccione **crear Directiva**.
 
 Para que se implementen las directivas de cumplimiento de dispositivos, se deben asignar a grupos de usuarios. Una directiva se asigna después de crearla y guardarla. En el centro de administración, seleccione la Directiva y, a continuación, seleccione **asignaciones**. Después de seleccionar los grupos que desea que reciban la Directiva, seleccione **Guardar** para guardar esa asignación de grupo e implementar la Directiva.
 
@@ -281,7 +281,7 @@ Se recomiendan las siguientes opciones de configuración para Windows 10.
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Contraseña|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
+|Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
 ||Contraseñas sencillas|Desbloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
 ||Longitud mínima de la contraseña|6 ||
@@ -302,7 +302,7 @@ Se recomiendan las siguientes opciones de configuración para Windows 10.
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Medio||
+|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)

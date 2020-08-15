@@ -1,5 +1,5 @@
 ---
-title: Trabajo necesario para implementar directivas de acceso a dispositivos e identidades-Microsoft 365 Enterprise | Microsoft docs
+title: 'Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades: Microsoft 365 para Enterprise | Microsoft docs'
 description: Explica las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de identidad y acceso a dispositivos.
 author: BrendaCarter
 manager: Laurawi
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222594"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685883"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -91,13 +91,12 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 |macOS|Versión preliminar pública|Versión preliminar pública|N/D|N/D|No compatible|
 |Linux|No admitido|No admitido|No admitido|No admitido|No admitido|
 
-<sup>*</sup>Obtenga más información sobre el uso de acceso condicional con el [cliente de sincronización de OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access).
+<sup>*</sup> Obtenga más información sobre el uso de acceso condicional con el [cliente de sincronización de OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
-### <a name="microsoft-365-client-support"></a>Soporte técnico de Microsoft 365 Client
+### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 Para obtener más información acerca de la compatibilidad de clientes, vea los siguientes artículos:
-- [Compatibilidad con aplicaciones cliente de Microsoft 365-acceso condicional](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Compatibilidad con aplicaciones cliente de 365 de Microsoft: administración de aplicaciones móviles](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Soporte técnico de Microsoft 365 Client App-autenticación moderna](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+- [Compatibilidad con aplicaciones cliente de Microsoft 365-acceso condicional](microsoft-365-client-support-conditional-access.md)
+- [Soporte técnico de Microsoft 365 Client App-autenticación moderna](microsoft-365-client-support-modern-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protección de las cuentas de administrador
 Azure AD ofrece una forma sencilla de empezar a proteger el acceso de administrador con una directiva de acceso condicional preconfigurada. En Azure AD, vaya a **acceso condicional** y busque esta directiva: **Directiva de línea de base: requerir MFA para administradores (versión preliminar)**. Seleccione esta directiva y, a continuación, seleccione **usar la Directiva inmediatamente**. 
@@ -113,11 +112,11 @@ Para obtener más información, consulte [Directiva de seguridad de línea base 
 
 Entre las recomendaciones adicionales se incluyen las siguientes:
 - Use Azure AD Privileged Identity Management para reducir el número de cuentas administrativas persistentes. Consulte [empezar a usar PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
-- [Use la administración de acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) para proteger a su organización de las infracciones que puedan usar las cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o al acceso a la configuración crítica. 
+- [Use la administración de acceso con privilegios](../compliance/privileged-access-management-overview.md) para proteger su organización de las infracciones que puedan usar las cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o a las opciones de configuración fundamentales. 
 - Use las cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para uso no administrativo normal y solo deben usar su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. [Los roles de administrador de microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) tienen muchos más privilegios que los servicios de Microsoft 365.
 - Siga los procedimientos recomendados para proteger las cuentas con privilegios en Azure AD como se describe en este [artículo](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Configurar las directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md)
 

@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo sus necesidades empresariales fueron satisfechas mediante Microsoft 365 Enterprise.
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Comprenda la estructura básica de la infraestructura de ti local de Contoso y cómo se cumplieron sus necesidades empresariales con Microsoft 365 para empresas.
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011202"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685835"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Necesidades empresariales y de infraestructura de TI de Contoso
 
@@ -112,20 +112,20 @@ Administración:
 
   Automatice la instalación de actualizaciones para el sistema operativo Windows y Aplicaciones de Microsoft 365 para empresas en toda la organización.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Asignación de las necesidades empresariales de Contoso a Microsoft 365 Enterprise
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Asignación de las necesidades de negocio de Contoso a Microsoft 365 para empresas
 
 Antes de la implementación, el departamento de TI de Contoso determinó la siguiente asignación de las necesidades empresariales a las características de Microsoft 365 E5:
 
-||||
+
+| Categoría | Necesidad empresarial | Microsoft 365 para productos o características de empresa |
 |:-------|:-----|:-----|
-| **Categoría** | **Necesidad empresarial** | **Productos o características de Microsoft 365 Enterprise** |
 | Productividad |  |  |
 |  | Facilitar la colaboración | Microsoft Teams, SharePoint, OneDrive |
 |  | Mejorar la productividad de los trabajadores remotos y móviles | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Aumentar la creatividad y la innovación | Windows Ink, Cortana en el trabajo, PowerPoint |
 | Seguridad |  |  |
 |  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con la autenticación multifactor (MFA) Azure y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
-|  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Protección contra amenazas avanzada <BR> Protección contra amenazas avanzada de Office 365 <BR> Investigación y respuesta de amenazas de Office 365 <BR> |
+|  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Protección contra amenazas avanzada <BR> Protección contra amenazas avanzada de Office 365 <BR> Respuesta y investigación de amenazas de Microsoft 365 <BR> |
 |  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Administración de seguridad | Azure Security Center  <BR> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
@@ -133,7 +133,7 @@ Antes de la implementación, el departamento de TI de Contoso determinó la sigu
 |  | Reducir la infraestructura de acceso remoto para los empleados | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Proporcionar mejor conectividad y menos sobrecarga para las transacciones B2B | Autenticación federada y recursos basados en la nube |
 | Cumplimiento |  |  |
-|  | Cumplir los requisitos normativos regionales | Características del RGPD en Office 365 |
+|  | Cumplir los requisitos normativos regionales | Características de RGPD en Microsoft 365 |
 | Administración |  |  |
 |  | Reducir la sobrecarga de TI para la instalación de actualizaciones de cliente | Anillos de implementación <BR> Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
 ||||
@@ -144,6 +144,6 @@ Antes de la implementación, el departamento de TI de Contoso determinó la sigu
 
 ## <a name="see-also"></a>Vea también
 
-[Guía de implementación](deploy-microsoft-365-enterprise.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

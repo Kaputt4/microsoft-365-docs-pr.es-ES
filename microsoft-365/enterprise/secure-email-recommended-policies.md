@@ -1,5 +1,5 @@
 ---
-title: Directivas recomendadas para proteger el correo electrónico - Microsoft 365 Enterprise | Microsoft Docs
+title: Directivas recomendadas para el correo electrónico seguro-Microsoft 365 para Enterprise | Microsoft docs
 description: Describe las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de correo electrónico.
 author: brendacarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: c2eabd160cf221f7e2bb7b81f07c205135476cc9
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617179"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685611"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
