@@ -1,5 +1,5 @@
 ---
-title: Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise
+title: Administración del acceso con privilegios para el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,26 +14,26 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Use esta guía del laboratorio de pruebas para habilitar la administración del acceso con privilegios en su entorno de prueba de Microsoft 365 Enterprise.
-ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Use esta guía del laboratorio de pruebas para habilitar la administración del acceso con privilegios en su entorno de prueba de Microsoft 365 para empresas.
+ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352527"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695151"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Administración del acceso con privilegios para el entorno de pruebas de Microsoft 365 Enterprise
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Administración del acceso con privilegios para el entorno de prueba de Microsoft 365 para empresas
 
-*Esta guía del laboratorio de pruebas puede usarse tanto para entornos de prueba de Microsoft 365 Enterprise como de Office 365 Enterprise.*
+*Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 para empresas como para Office 365.*
 
-Con las instrucciones de este artículo, se configura la administración del acceso con privilegios para aumentar la seguridad en el entorno de prueba de Microsoft 365 Enterprise.
+Con las instrucciones de este artículo, se configura la administración del acceso con privilegios para aumentar la seguridad en el entorno de prueba de Microsoft 365 para empresas.
 
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual de todos los artículos de la pila Guía de laboratorio de pruebas de Microsoft 365 Enterprise.
+>Haga clic [aquí](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) para ver un mapa visual con todos los artículos en la pila de la guías de laboratorio para pruebas de Microsoft 365 para empresas.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: crear el entorno de prueba de Microsoft 365 para empresas
 
 Si solo quiere configurar la administración del acceso con privilegios de manera ligera con los requisitos mínimos, siga las instrucciones de [configuración básica](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -44,17 +44,17 @@ Si desea configurar la administración del acceso con privilegios en una empresa
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: configurar la administración del acceso con privilegios
 
-En esta fase, configurará un grupo aprobadores y habilitará la administración de acceso privilegiada para el entorno de prueba de Microsoft 365 Enterprise. Para obtener información adicional y una introducción a la administración del acceso con privilegios, consulte [Administración del acceso con privilegios en Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+En esta fase, configurará un grupo aprobadores y habilitará la administración del acceso con privilegios para el entorno de prueba de Microsoft 365 para empresas. Para obtener información adicional y una introducción a la administración del acceso con privilegios, consulte [privileged Access Management](../compliance/privileged-access-management-overview.md).
 
 Siga estos pasos para configurar y usar el acceso con privilegios en su organización:
 
-- [Paso 1: crear un grupo de aprobadores](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
+- [Paso 1: crear un grupo de aprobadores](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    Antes de empezar a usar el acceso de privilegios, determine quién tendrá autoridad de aprobación para el acceso a las tareas elevadas y privilegiadas. Cualquier usuario que forme parte del grupo de aprobadores podrá aprobar solicitudes de acceso. Para habilitarlo, cree un grupo de seguridad habilitado para correo en Office 365. Cree un nuevo grupo de seguridad denominado "aprobadores de acceso privilegiados" en su entorno de prueba y agregue el "usuario 3" creado anteriormente en los pasos anteriores de la guía del entorno de pruebas.
+    Antes de empezar a usar el acceso de privilegios, determine quién tendrá autoridad de aprobación para el acceso a las tareas elevadas y privilegiadas. Cualquier usuario que forme parte del grupo de aprobadores podrá aprobar solicitudes de acceso. Para habilitarlo, cree un grupo de seguridad habilitado para correo en Microsoft 365. Cree un nuevo grupo de seguridad denominado "aprobadores de acceso privilegiados" en su entorno de prueba y agregue el "usuario 3" creado anteriormente en los pasos anteriores de la guía del entorno de pruebas.
 
-- [Paso 2: habilitar el acceso con privilegios](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
+- [Paso 2: habilitar el acceso con privilegios](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    El acceso privilegiado debe estar activado explícitamente en Office 365 con el grupo de aprobador predeterminado e incluir un conjunto de cuentas del sistema que se desea excluir del control de acceso privilegiado de la administración de acceso. Asegúrese de habilitar el acceso con privilegios en su organización antes de iniciar la fase 3 de esta guía.
+    El acceso privilegiado debe estar activado explícitamente en Microsoft 365 con el grupo de aprobador predeterminado e incluir un conjunto de cuentas del sistema que se desea excluir del control de acceso privilegiado de la administración de acceso. Asegúrese de habilitar el acceso con privilegios en su organización antes de iniciar la fase 3 de esta guía.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: comprobar que la aprobación es necesaria para las tareas elevadas y privilegiadas
 
@@ -169,10 +169,10 @@ New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain>
 
 Explore otras características y funcionalidades de protección de la [información](m365-enterprise-test-lab-guides.md#information-protection) en su entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
-[Guías de laboratorio de pruebas de Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
+[Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Implementar Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación y recursos de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)
