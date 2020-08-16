@@ -343,8 +343,12 @@
       items:
         - name: Administración de registros
           href: records-management.md
-        - name: Registros
+        - name: Obtener más información sobre los registros
           href: records.md
+        - name: Declarar registros
+          href: declare-records.md
+        - name: Control de versiones de registros
+          href: record-versioning.md
 - name: Administrar eDiscovery
   items:
     - name: eDiscovery en Microsoft 365

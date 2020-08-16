@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo asignar las licencias a los usuarios.
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015952"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757562"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -161,7 +161,26 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="assign-a-license-to-a-guest-user"></a>Asignar una licencia a un usuario invitado
+
+Puede invitar a usuarios invitados a colaborar con su organización en el centro de administración de Azure Active Directory. Para obtener más información sobre los usuarios invitados, vea [¿Qué es el acceso de usuarios invitados en Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Si no tiene usuarios invitados, vea [Inicio rápido: agregar usuarios invitados al directorio de Azure Portal](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> Para poder realizar estos pasos, debe ser un administrador global.
+
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Centro de administración de Azure Active Directory</a>.
+2. En el panel de navegación, seleccione **Usuarios**.
+3. En la página **Usuarios | Todos los usuarios (vista previa)**, seleccione **Agregar filtros**.
+4. En el menú **Elegir un campo**, seleccione **Tipo de usuario** y, después, seleccione **Aplicar**.
+5. En el menú siguiente, seleccione **Invitado**.
+6. En la lista de resultados, seleccione el usuario que necesita una licencia.
+7. En **Administrar**, seleccione **Licencias**.
+8. Seleccione **Asignaciones**.
+9. En la página **Actualizar asignaciones de licencia**, seleccione el producto al que quiere asignar una licencia.
+10. En la parte derecha, desactive las casillas de los servicios a los que no quiere que el usuario invitado tenga acceso.
+11. Seleccione **Guardar**.
+
+## <a name="next-steps"></a>Pasos siguientes
 
 Si los usuarios aún no tienen aplicaciones de Office instaladas, puede compartir la [Guía de inicio rápido para empleados](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) con los usuarios para que configuren todo, como [cómo descargar e instalar Microsoft 365 u Office 2019 en un equipo Windows o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) y [cómo configurar las aplicaciones de Office y el correo electrónico en un dispositivo móvil](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
