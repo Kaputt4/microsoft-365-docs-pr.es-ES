@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,33 +17,50 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: a2b56d013b452f02a26ea956da19e5644bf9d44a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
-ms.translationtype: MT
+description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
+ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648733"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686642"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
-La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger la información confidencial. La identificación de información confidencial a veces requiere la búsqueda de palabras clave, especialmente al identificar contenido genérico (como la comunicación relacionada con el cuidado de la salud) o un lenguaje inadecuado o explícito. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave tienen un tamaño limitado y requieren modificar el XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y en una escala mucho mayor, admiten hasta 100.000 términos por Diccionario y admiten cualquier idioma.
+La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger los elementos confidenciales. Para identificar elementos confidenciales, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave ofrecen una administración más sencilla de palabras clave y con una escala mucho mayor, admitiendo hasta 100 000 términos por diccionario.
+  
+> [!NOTE]
+> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
+> - Chino (simplificado)
+> - Chino (tradicional)
+> - Coreano
+> - Japonés
+> 
+>Esta versión preliminar solo se encuentra en la nube comercial y la implementación está limitada a:
+> - Japón
+> - Corea
+> - China
+> - RAE de Hong Kong
+> - RAE de Macao
+> - Taiwán
+>
+>Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
 Las palabras clave del diccionario pueden provenir de una amplia variedad de orígenes, normalmente de un archivo (como una lista en un archivo .csv o .txt), importadas en el servicio o por el cmdlet de PowerShell, de una lista que escriba directamente en el cmdlet de PowerShell o de un diccionario existente. Al crear un diccionario de palabras clave, siga los mismos pasos principales:
   
-1. Use el **centro de seguridad & cumplimiento** ( [https://protection.office.com](https://protection.office.com) ) o conéctese a **PowerShell del centro de seguridad y &amp; cumplimiento**.
+1. Use el **Centro de seguridad y cumplimiento** ([https://protection.office.com](https://protection.office.com)) o conéctese al **PowerShell del Centro de seguridad &amp; cumplimiento**.
     
-2. **Defina o cargue las palabras clave del origen deseado**. El asistente y el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario de palabras clave personalizado, por lo que este paso variará ligeramente en función de la procedencia de las palabras clave. Una vez cargadas, se codificarán y convertirán en una matriz de bytes antes de su importación.
+2. **Defina o cargue las palabras clave del origen que quiera usar**. Tanto el asistente como el cmdlet aceptan una lista separada por comas de palabras clave para crear un diccionario personalizado de palabras clave, por lo que este paso variará ligeramente según el origen de las palabras clave. Una vez cargadas, se codificarán y convertirán en una matriz de bytes antes de su importación.
     
-3. **Cree su Diccionario**. Elija un nombre y una descripción y cree su Diccionario.
+3. **Cree su diccionario**. Seleccione un nombre y una descripción y, después, cree el diccionario.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Crear un diccionario de palabras clave mediante el centro de seguridad & cumplimiento
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Cree un diccionario de palabras clave con el Centro de seguridad y cumplimiento
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ).
+1. Conéctese al Centro de seguridad y cumplimiento ([https://protection.office.com](https://protection.office.com)).
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 
@@ -69,7 +86,7 @@ Siga estos pasos para crear e importar palabras clave para un diccionario person
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Crear un diccionario de palabras clave desde un archivo con PowerShell
 
-A menudo, cuando es necesario crear un diccionario de gran tamaño, se usan palabras clave de un archivo o una lista exportada desde otro origen. En este caso, creará un diccionario de palabras clave que contiene una lista de idiomas inapropiados para filtrar el correo electrónico externo. Primero debe [conectarse a PowerShell del &amp; centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Con frecuencia, si necesita crear un diccionario de gran tamaño, puede usar palabras clave de un archivo o una lista exportada de otro origen. En este caso, creará un diccionario de palabras clave que contenga una lista de lenguaje inadecuado para supervisarlo en el correo electrónico externo. Primero, necesita [conectarse al PowerShell del Centro de seguridad &amp; cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copie las palabras clave en un archivo de texto y asegúrese de que cada palabra clave se encuentre en una línea separada.
     
@@ -91,7 +108,7 @@ A menudo, cuando es necesario crear un diccionario de gran tamaño, se usan pala
 
 Es posible que tenga que modificar palabras clave en uno de los diccionarios de palabras clave o modificar uno de los diccionarios integrados. Actualmente, solo puede actualizar un diccionario personalizado de palabras clave con PowerShell. 
 
-Por ejemplo, modificaremos algunos términos en PowerShell, guardaremos los términos localmente donde podrá modificarlos en un editor y, a continuación, actualizar los términos anteriores en su lugar. 
+Por ejemplo, vamos a modificar algunos términos en PowerShell, guardar los términos localmente donde se puedan modificar en un editor y, después, actualizar los términos anteriores. 
 
 En primer lugar, recupere el objeto de diccionario:
   
@@ -99,9 +116,9 @@ En primer lugar, recupere el objeto de diccionario:
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-La impresión mostrará `$dict` las distintas variables. Las palabras clave en sí se almacenan en un objeto en el back-end, pero `$dict.KeywordDictionary` contienen una representación de cadena de ellas que usará para modificar el diccionario. 
+La impresión de `$dict` mostrará las distintas variables. Las palabras clave en sí se almacenan en un objeto en el back-end, pero `$dict.KeywordDictionary` contiene una representación de cadena de estas, que usará para modificar el diccionario. 
 
-Antes de modificar el diccionario, debe volver a convertir la cadena de términos en una matriz con el `.split(',')` método. A continuación, limpiará los espacios no deseados entre las palabras clave con el `.trim()` método, dejando solo las palabras clave con las que trabajar. 
+Antes de modificar el diccionario, necesita volver a convertir la cadena de términos en una matriz con el método `.split(',')`. Después, eliminará los espacios no deseados entre las palabras clave con el método `.trim()` y dejará únicamente las palabras clave con las que quiera trabajar. 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -182,7 +199,7 @@ Ahora, el diccionario se actualizó en contexto. Tenga en cuenta que el campo `I
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 
-Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia de un tipo personalizado de información confidencial, o bien como un tipo de información confidencial. Ambos requieren que se cree un [tipo personalizado de información confidencial](create-a-custom-sensitive-information-type-in-scc-powershell.md). Siga las instrucciones del artículo vinculado para crear un tipo de información confidencial. Una vez que tenga el XML, necesitará el identificador de GUID para que el Diccionario lo use.
+Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia para un tipo de información confidencial personalizado, o bien como un tipo de información confidencial en sí. En ambos casos, es necesario crear un [tipo de información confidencial personalizado](create-a-custom-sensitive-information-type-in-scc-powershell.md). Siga las instrucciones en el artículo vinculado para crear un tipo de información confidencial. Cuando tenga el archivo XML, necesitará el identificador GUID para que el diccionario lo use.
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

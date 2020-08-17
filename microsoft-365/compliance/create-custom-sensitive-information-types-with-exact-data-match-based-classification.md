@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648755"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686564"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -40,6 +40,23 @@ Pero, ¿qué pasa si quiere un tipo de información confidencial que use valores
 ![Clasificación basada en EDM](../media/EDMClassification.png)
 
 La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos puede ser actualizada diaria o semanalmente, y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) o [directivas de archivo de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+
+> [!NOTE]
+> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
+> - Chino (simplificado)
+> - Chino (tradicional)
+> - Coreano
+> - Japonés
+> 
+>Esta vista previa solo se encuentra en la nube comercial y la implementación está limitada a:
+> - Japón
+> - Corea
+> - China
+> - RAE de Hong Kong
+> - RAE de Macao
+> - Taiwán
+>
+>Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 

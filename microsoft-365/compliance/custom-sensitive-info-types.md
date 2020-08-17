@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga una visión general de los tipos de información confidencial personalizada para la Prevención de pérdida de datos (DLP), como el patrón primario, la proximidad de caracteres y el nivel de confianza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6934edba6eef03bc9d4bfc5c1c69f127a7d3a0e5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817969"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685480"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipos de información confidencial personalizada
 
@@ -50,11 +50,26 @@ Estas son las partes básicas de un tipo personalizado de información confidenc
 
 Para crear tipos de información confidencial personalizados en el Centro de seguridad y cumplimiento, puede elegir una de estas opciones:
 
-- **Usar EDM** (nuevo). Puede establecer los tipos de información confidencial mediante la clasificación basada en la exacta coincidencia de los datos (EDM). Este método le permite crear un tipo de información confidencial dinámico con una base de datos segura que puede actualizar periódicamente. Vea [Crear un tipo de información confidencial personalizado con coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- **Usar EDM** Puede establecer los tipos de información confidencial mediante la clasificación basada en la coincidencia exacta de los datos (EDM). Este método le permite crear un tipo de información confidencial dinámico con una base de datos segura que puede actualizar periódicamente. Vea [Crear un tipo de información confidencial personalizado con coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 - **Usar PowerShell** Puede configurar los tipos de información confidencial con PowerShell. Aunque este método es más complejo que utilizar la interfaz de usuario, tendrá más opciones de configuración. Vea [Crear un tipo de información confidencial en el centro de cumplimiento y seguridad PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 - **Usar la interfaz de usuario** Puede configurar un tipo de información confidencial personalizado mediante la interfaz de usuario del centro de cumplimiento y seguridad. Con este método, puede usar expresiones regulares, palabras clave y diccionarios de palabras clave. Para obtener más información, consulte [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md).
 
-
+> [!NOTE]
+> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
+> - Chino (simplificado)
+> - Chino (tradicional)
+> - Coreano
+> - Japonés
+> 
+>Esta vista previa solo se encuentra en la nube comercial y la implementación está limitada a:
+> - Japón
+> - Corea
+> - China
+> - RAE de Hong Kong
+> - RAE de Macao
+> - Taiwán
+>
+>Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 

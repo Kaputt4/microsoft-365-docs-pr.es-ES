@@ -17,21 +17,38 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818069"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686664"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento
 
-Lea este artículo para crear un[tipo personalizado de información confidencial ](custom-sensitive-info-types.md)en el centro de cumplimiento y de seguridad ([https://protection.office.com](https://protection.office.com)). Los tipos de información confidencial personalizados se agregan al paquete de reglas denominado Microsoft.SCCManaged.CustomRulePack `Microsoft.SCCManaged.CustomRulePack`.
+Lea este artículo para crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento ([https://protection.office.com](https://protection.office.com)). Los tipos de información confidencial personalizados se agregan al paquete de reglas denominado Microsoft.SCCManaged.CustomRulePack `Microsoft.SCCManaged.CustomRulePack`.
 
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Cree un tipo de información confidencial personalizada para DLP con Exact Data Match (EDM) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+> [!NOTE]
+> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
+> - Chino (simplificado)
+> - Chino (tradicional)
+> - Coreano
+> - Japonés
+> 
+>Esta versión preliminar solo se encuentra en la nube comercial y la implementación está limitada a:
+> - Japón
+> - Corea
+> - China
+> - RAE de Hong Kong
+> - RAE de Macao
+> - Taiwán
+>
+>Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

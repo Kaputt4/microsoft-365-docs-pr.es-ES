@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577978"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685812"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -66,7 +66,7 @@ Cuando la directiva de retención es de solo retención, o solo eliminación, la
 
 1. **Si el mensaje no se elimina**durante el período de retención: al final del período de retención, el mensaje se mueve a la carpeta SubstrateHolds. 
 
-2. **Si el elemento es eliminado por el usuario** durante el período, el elemento se mueve inmediatamente a la carpeta SubstrateHolds. Si un usuario elimina el mensaje de allí o vacía la carpeta SubstrateHolds, el elemento se elimina de forma permanente. De lo contrario, el mensaje se borra permanentemente un día después de estar en la carpeta SubstrateHolds.
+2. **Si el elemento es eliminado por el usuario** durante el período, el elemento se mueve inmediatamente a la carpeta SubstrateHolds. El mensaje se borra permanentemente un día después de estar en la carpeta SubstrateHolds.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat de Skype Empresarial e interoperabilidad de Teams

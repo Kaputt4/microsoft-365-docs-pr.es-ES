@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662314"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757573"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -58,7 +58,7 @@ Cuando se establece la configuración de retención, el contenido permanece en s
 
 - Para buzones de Exchange: la copia se conserva en la carpeta **Elementos recuperables**. 
 
-- Para mensajes de chat y canales de Teams: la copia se conserva en una carpeta oculta dentro de la carpeta **Elementos recuperables** de Exchange.
+- Para mensajes de chat y canales de Teams: la copia se conserva en una carpeta oculta llamada **SubstrateHolds** dentro de la carpeta **Elementos recuperables** de Exchange.
 
 > [!NOTE]
 > La biblioteca de Suspensión para conservación consume almacenamiento que no está exento de la cuota de almacenamiento de un sitio. Es posible que tenga que aumentar el almacenamiento al usar la configuración de retención para los grupos de Microsoft 365 y SharePoint.

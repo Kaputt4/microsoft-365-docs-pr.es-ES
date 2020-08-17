@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilice una directiva de retención para decidir de forma pro activa si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido, aplicar una única directiva a toda la organización o a lugares o usuarios específicos, y aplicar una directiva a todo el contenido o a los contenidos que cumplan determinadas condiciones.
-ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
-ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
+ms.openlocfilehash: 4eb08eed668efb598068a7229b9312ccb6654274
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672915"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757583"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -150,7 +150,7 @@ Para comprobar la sintaxis de su espacio empresarial e identificar las direccion
 
 Para conservar o eliminar el contenido de un grupo de Microsoft 365 (anteriormente llamado "grupo de Office 365"), utilice la ubicación de los **grupos de Office 365**. Aunque un grupo Microsoft 365 tiene un buzón de Exchange, una directiva de retención que incluya toda la ubicación de**correo electrónico de Exchange** no incluirá el contenido de los buzones del grupo Microsoft 365. Además, aunque la ubicación **de correo electrónico de Exchangl** le permite inicialmente especificar un buzón de grupo para incluirlo o excluirlo, cuando intente guardar la directiva de retención, recibe un error que indique que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
 
-Una directiva de retención aplicada a un grupo de Microsoft 365 incluye tanto el buzón como el sitio del grupo. Una directiva de retención aplicada a un grupo Microsoft 365 protege los recursos creados por un grupo Microsoft 365, que incluye a Microsoft Teams.
+Las directivas de retención que se aplican a un grupo de Microsoft 365 incluyen el buzón de grupo y el sitio de Teams, en caso de que se haya seleccionado un sitio de Teams en el momento en que se creó el grupo o se agregase posteriormente al grupo. Los archivos almacenados en el sitio de Teams se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Información de configuración de Skype Empresarial
 
