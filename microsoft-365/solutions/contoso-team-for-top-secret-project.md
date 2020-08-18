@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Resumen: Cómo contoso usó un equipo con aislamiento de seguridad para un proyecto de secreto principal para desarrollar un nuevo conjunto de productos y servicios.'
-ms.openlocfilehash: f7b38a7ef43cdb50b46f3e37f855f490dc32cfdf
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521630"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778601"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Equipo aislado para un proyecto principal de la compañía contoso
 
@@ -33,8 +33,8 @@ Las entregas resultantes del proyecto 2 fueron los planes de negocio, las especi
 
 Debido a su naturaleza confidencial, el acceso a estos archivos ha sido:
 
-- Restringido al proyecto el doble de miembros del equipo.
-- Cifrado y protegido con permisos para permitir el acceso solo al doble de miembros del equipo, incluso si los archivos se distribuyeron fuera de sus carpetas protegidas.
+- Restringido al proyecto el doble de miembros del equipo y al liderazgo Senior.
+- Cifrado y protegido con permisos para permitir el acceso únicamente al proyecto el doble de miembros del equipo y al liderazgo Senior, incluso si los archivos se distribuyeron fuera de sus carpetas protegidas.
 
 El personal de TI de Contoso usó un [equipo con aislamiento de seguridad](secure-teams-security-isolation.md) para el proyecto 2x y estos pasos.
 
@@ -42,7 +42,7 @@ El personal de TI de Contoso usó un [equipo con aislamiento de seguridad](secur
 
 En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../enterprise/sharepoint-file-access-policies.md).
 
-A continuación, un administrador de Contoso ha creado un nuevo equipo privado denominado proyecto 2X y ha agregado las cuentas de usuario del proyecto el doble de personal como miembros.
+A continuación, un administrador de Contoso ha creado un nuevo equipo privado denominado proyecto 2X y ha agregado las cuentas de usuario del proyecto el doble de personal como miembros. También configuraron el equipo para que solo los propietarios del equipo del proyecto más 2X puedan crear canales privados.
 
 Para obtener información detallada sobre la configuración, vea [crear un equipo privado](secure-teams-security-isolation.md#create-a-private-team).
 
@@ -50,12 +50,14 @@ Para obtener información detallada sobre la configuración, vea [crear un equip
 
 Los administradores de Contoso crearon una nueva etiqueta de confidencialidad denominada **proyecto 2x** que:
 
-- Requiere cifrado.
-- Permite permisos de coautoría para el grupo 2 del proyecto en el segundo grupo de Microsoft 365.
+- Cifrado habilitado.
+- Permisos de co-autoría permitidos para el grupo de 2 proyectos de Microsoft 365.
+- Permisos de visor permitidos para el grupo de liderazgo Senior.
+- Acceso bloqueado a dispositivos no administrados.
 
 Los archivos de la sección **documentos** del proyecto subyacente 2x del sitio de SharePoint estaban protegidos por:
 
-- Los permisos del sitio, que solo permiten el acceso a los miembros del grupo de 2 a 2 grupos de Microsoft 365.
+- Los permisos del sitio, que solo permiten permisos totales a miembros del proyecto con un 365 doble de permisos de grupo y lectura para el grupo de liderazgo Senior.
 - La etiqueta de sensibilidad proyecto 2X, con cifrado y permisos que viajan con el archivo si se mueven o se copian del sitio.
 
 Para obtener información detallada sobre la configuración, vea [crear una etiqueta de confidencialidad](secure-teams-security-isolation.md#create-a-sensitivity-label).
@@ -64,9 +66,16 @@ Para obtener información detallada sobre la configuración, vea [crear una etiq
 
 En primer lugar, para proteger el acceso al sitio de SharePoint subyacente para el equipo, los administradores de TI de Contoso configuraron las [directivas de acceso de SharePoint recomendadas](../enterprise/sharepoint-file-access-policies.md).
 
-A continuación, se configuraron opciones de permisos adicionales para el sitio con el fin de evitar que Project 2X comparta el acceso al sitio. Para obtener información detallada sobre la configuración, vea [SharePoint Settings for a Team with Security Isolation](secure-teams-security-isolation.md#sharepoint-settings).
+A continuación, se configuraron parámetros de permisos adicionales para el sitio:
 
-Esta es la configuración resultante del equipo del proyecto de 2X.
+- Para evitar que los miembros del grupo 2X del proyecto compartan el acceso al sitio. Para obtener información detallada sobre la configuración, vea [SharePoint Settings for a Team with Security Isolation](secure-teams-security-isolation.md#sharepoint-settings).
+- Para permisos de lectura para el grupo de liderazgo Senior.
+
+A continuación, configuraron opciones de permisos adicionales para el sitio con el fin de evitar que los miembros del grupo 2X del proyecto compartan el acceso al sitio. 
+
+Como se crearon los canales privados para el proyecto 2X, el propietario del grupo deshabilitó el uso compartido de invitado y estableció el vínculo compartir predeterminado con el valor **específico de personas** .
+
+A continuación se muestra la configuración resultante del equipo del proyecto de 2X con aislamiento de seguridad.
 
 ![La configuración resultante del equipo del proyecto de 2X](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
 
@@ -76,7 +85,6 @@ El personal de seguridad de Contoso ha entrenado en el proyecto el doble de miem
 
 - Cómo obtener acceso al nuevo proyecto el equipo al doble, usar reuniones y chats y cómo colaborar en archivos de equipo.
 - Cómo crear nuevos archivos en el equipo y cargar nuevos archivos creados de forma local.
-- Una demostración de cómo la Directiva DLP bloquea los archivos para que no se compartan de forma externa.
 - Cómo etiquetar archivos con la etiqueta de confidencialidad del proyecto de dos.
 - Una demostración de cómo la etiqueta del proyecto 2X protege un archivo incluso cuando éste sale del equipo.
 
@@ -86,7 +94,9 @@ A continuación, se muestra un ejemplo de un archivo almacenado en el sitio del 
 
 ![Un ejemplo de un archivo almacenado en el sitio del proyecto 2X subyacente](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
 
-En un par de instancias, Project 2X los miembros del equipo descargaron archivos protegidos por la etiqueta del proyecto 2X en una unidad local para trabajar sin conexión. Sin embargo, después de que se soliciten las credenciales al abrirlas, se han dado cuenta de su error y se han eliminado.
+En un par de instancias, Project 2X los miembros del equipo descargaron archivos protegidos por la etiqueta del proyecto 2X en una unidad local para trabajar sin conexión. 
+
+Sin embargo, después de que se soliciten las credenciales al abrirlas, se han dado cuenta de su error y se han eliminado.
 
 Debido al entorno de colaboración de Microsoft Teams y las características de seguridad de Microsoft 365, los detalles del proyecto 2X se mantuvieron en secreto mientras dure el proyecto. Contoso anunció sus planes y se encuentra en el proceso de implementar los nuevos productos y servicios a la alegría de sus clientes e inversionistas y la Chagrin de sus competidores.
 

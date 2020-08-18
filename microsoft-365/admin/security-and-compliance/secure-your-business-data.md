@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de la empresa de las amenazas para el ciberespacio, incluidos los datos adjuntos malintencionados y de ransomware. '
-ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c5ae75bea68f56cb1ba028500a1f206603332717
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138295"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778307"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las diez formas principales de proteger los planes de Microsoft 365 para empresas
 
@@ -43,9 +43,9 @@ Microsoft recomienda que complete las tareas que se enumeran en la siguiente tab
   
 ||**Tarea**|**Microsoft 365 Empresa Estándar**|**Microsoft 365 Empresa Premium**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2   <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3   <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1  <br/> |[Configurar la autenticación multifactor](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|segundo  <br/> |[Proporcionar formación a los usuarios](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3  <br/> |[Usar cuentas de administrador dedicadas](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Aumentar el nivel de protección contra malware en correo](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[Protección contra ransomware](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[Detener el reenvío automático de correo electrónico](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -66,17 +66,19 @@ El uso de multi-factor Authentication es una de las formas más sencillas y efic
 Para empresas que usen Microsoft 365, agregue una configuración que requiera que los usuarios inicien sesión con la autenticación multifactor. Al realizar este cambio, se les pedirá a los usuarios que configuren su teléfono para la autenticación en dos fases, la próxima vez que inicien sesión.
 Para ver un vídeo de aprendizaje sobre cómo configurar la MFA y cómo los usuarios pueden completar la configuración, consulte [configurar MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) y [configurar el usuario](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
-Para configurar la autenticación multifactor:
+Para configurar la autenticación multifactor, debe activar los valores predeterminados de seguridad:
 
-1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=834822), seleccione usuarios activos de **usuarios**  >  **Active Users**.
+En la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad adicional de inicio de sesión. Para obtener más información, vea [¿Qué son los valores predeterminados de seguridad?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-2. En la sección **usuarios activos** , seleccione **multi-factor Authentication**.
+Si la suscripción es nueva, es posible que los valores predeterminados de seguridad ya estén activados automáticamente.
 
-3. En la página **autenticación multifactor** , seleccione **usuario** si está habilitando esta opción para un usuario o puede realizar una **actualización masiva**.
+Puede habilitar o deshabilitar los valores predeterminados de seguridad en el panel **Propiedades** de Azure Active Directory (Azure AD) en Azure Portal.
 
-4. Seleccione **Habilitar** en **pasos rápidos**.
-
-5. En la ventana emergente, elija **Habilitar multi-factor Authentication**.
+1.  Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con credenciales de administrador global.
+2.  En el panel de navegación izquierdo, elija**Mostrar todo** y, en **Centros de administración**, elija **Azure Active Directory**.
+3. En el **Centro de administración de Azure Active Directory** elija **Azure Active Directory** > **Propiedades**.
+3.  En la parte inferior de la página, elija **Administrar los valores predeterminados de seguridad**.
+4.  Elija **Sí** para habilitar los valores predeterminados de seguridad y **No** para deshabilitar los valores predeterminados de seguridad; a continuación, elija **Guardar**.
 
 
 Después de configurar la autenticación multifactor para su organización, sus usuarios deberán configurar una verificación de dos pasos en sus dispositivos. Para obtener más información, consulte [configurar la verificación en dos pasos para Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
@@ -157,7 +159,7 @@ Para crear una regla de transporte de correo, vea un [vídeo de aprendizaje cort
     
 6. Seleccione **Guardar**.
     
-|**Valor**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|**Bloquear tipos de archivo que puedan contener ransomware o cualquier otro código malintencionado**|
+|**Setting**|**Advertir a los usuarios antes de abrir datos adjuntos de archivos de Office**|**Bloquear tipos de archivo que puedan contener ransomware o cualquier otro código malintencionado**|
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla antiransomware: advertir a los usuarios  <br/> |Regla antiransomware: bloquear tipos de archivo  <br/> |
 |Aplicar esta regla si. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |Los datos adjuntos. . . coincidencias de extensión de archivo. . .  <br/> |
@@ -193,7 +195,7 @@ Para crear una regla de transporte de correo:
     
 6. Seleccione **Guardar**.
     
-|**Valor**|**Rechazar correos electrónicos de reenvío automático a dominios externos**|
+|**Setting**|**Rechazar correos electrónicos de reenvío automático a dominios externos**|
 |:-----|:-----|
 |Nombre  <br/> |Impedir el reenvío automático de correo electrónico a dominios externos  <br/> |
 |Aplicar esta regla si...  <br/> |El remitente. . . es externo/interno. . . Dentro de la organización  <br/> |
@@ -260,7 +262,7 @@ Para crear una directiva contra la suplantación de identidad ATP, vea un [víde
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Dominio y personal de la campaña más valioso  <br/> |
-|Descripción  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
+|Description  <br/> |Asegúrese de que el personal más importante y nuestro dominio no se están suplantando.  <br/> |
 |Agregar usuarios que proteger  <br/> |Seleccionar **+ Agregar condición, el destinatario es**. Escriba los nombres de usuario o escriba la dirección de correo electrónico del candidato, el administrador de campañas y otros miembros importantes del personal. Puede Agregar hasta 20 direcciones internas y externas que desee proteger de la suplantación.  <br/> |
 |Agregar dominios que proteger  <br/> |Seleccionar **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado con la suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.  <br/> |
 |Elegir acciones  <br/> |Si un usuario suplantado envía un correo electrónico: seleccione **redirigir un mensaje a otra dirección de correo electrónico**y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com.          Si un dominio suplantado envía un correo electrónico: seleccione **mensaje en cuarentena**.  <br/> |
@@ -296,7 +298,7 @@ Para crear una directiva de datos adjuntos seguros para ATP, vea un [vídeo de a
 |**Configuración u opción**|**Valor recomendado** <br/>|
 |:-----|:-----|
 |Nombre  <br/> |Bloquear los correos electrónicos actuales y futuros con malware detectado.  <br/> |
-|Descripción  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
+|Description  <br/> |Bloquear los mensajes de correo electrónico y datos adjuntos futuros y futuros con malware detectado.  <br/> |
 |Guardar datos adjuntos respuesta de malware desconocida  <br/> |Seleccione **bloquear: bloquear los correos electrónicos y datos adjuntos actuales y futuros con malware detectado**.  <br/> |
 |Redirigir datos adjuntos en detección  <br/> |Habilitar redirección (Seleccione esta casilla) escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplique la selección anterior si se produce un error de análisis de malware para datos adjuntos de tiempo de espera o error (Active esta casilla).  <br/> |
 |Aplicado a  <br/> |El dominio del destinatario es. . . Seleccione su dominio.  <br/> |

@@ -1,31 +1,34 @@
 ---
-title: Seguridad en el escritorio administrado por Microsoft
+title: Tecnologías de seguridad en el escritorio administrado por Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470494"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778261"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Seguridad en el escritorio administrado por Microsoft
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Tecnologías de seguridad en el escritorio administrado por Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop usa varias tecnologías de Microsoft para ayudar a proteger los datos y los dispositivos administrados. En particular: 
+Microsoft Managed Desktop usa varias tecnologías de Microsoft para ayudar a proteger los datos y los dispositivos administrados. Además, el centro de operaciones de seguridad de escritorio administrada de Microsoft usa una variedad de [procesos](security-operations.md) junto con estas tecnologías.
 
+En particular: 
 
 - [Seguridad](#device-security) de los dispositivos: seguridad y protección en dispositivos de escritorio administrados por Microsoft
 - [Administración de acceso e identidades](#identity-and-access-management) : administración del uso seguro de dispositivos a través de Azure Active Directory Identity Services
 - [Seguridad de red](#network-security) : información de VPN y configuración y solución recomendadas para escritorio administrado de Microsoft
 - [Seguridad](#information-security) de la información: servicios opcionales disponibles para proteger aún más la información confidencial 
 
-Para obtener información sobre el almacenamiento de datos, el uso y las prácticas de seguridad que usa el escritorio administrado por Microsoft, Descargue nuestras notas del producto en [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Para obtener información sobre el almacenamiento de datos, el uso y las prácticas de seguridad que usa el escritorio administrado por Microsoft, consulte nuestras notas del producto en [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
 ## <a name="device-security"></a>Seguridad del dispositivo
