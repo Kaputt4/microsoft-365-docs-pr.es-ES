@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522258"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778349"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -33,15 +33,15 @@ Use este entorno de desarrollo y pruebas para experimentar y adaptar la configur
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Crear el entorno de pruebas de Microsoft 365 Enterprise
 
-Si solamente quiere probar los equipos confidenciales y extremadamente confidenciales de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración básica ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Si solamente quiere probar los equipos confidenciales y extremadamente confidenciales de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración básica ligera](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
-Si quiere probar los equipos confidenciales y con un nivel de confidencialidad alto en una empresa simulada, siga las instrucciones de [Sincronización de hash de contraseñas](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
+Si quiere probar los equipos confidenciales y con un nivel de confidencialidad alto en una empresa simulada, siga las instrucciones de [Sincronización de hash de contraseñas](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
 >[!Note]
 >Probar equipos con aislamiento de seguridad no requiere el entorno de pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios de un bosque de Active Directory Domain Services (AD DS). Aquí se ofrece como una opción para que pueda probar un equipo con aislamiento de seguridad y experimentar con ella en un entorno que representa una organización típica.
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>Fase 2: Crear y configurar los usuarios y grupos de Azure Active Directory (AD)
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Fase 2: Crear y configurar los usuarios y grupos de Azure Active Directory (Azure AD)
 
 En esta fase se crea y configuran un grupo y usuarios de Azure AD para la organización ficticia.
   
@@ -63,7 +63,7 @@ En primer lugar, cree un grupo de seguridad con Azure Portal.
       
 5. Haga clic en **Crear** y, después, cierre la hoja **Grupo**.
     
-Después, configure la licencia automática para que los miembros del grupo **C-Suite** nuevo se asignen automáticamente una licencia de Microsoft 365 E5.
+Después, configure la licencia automática para que se asigne automáticamente una licencia de Microsoft 365 E5 a los miembros del grupo **C-Suite** nuevo.
   
 1. En Azure Portal, haga clic en **Azure Active Directory > Licencias > Todos los productos**.
     
@@ -77,7 +77,7 @@ Después, configure la licencia automática para que los miembros del grupo **C-
     
 6. Cierre la pestaña Azure Portal del explorador.
     
-Después, [conéctese al módulo de PowerShell de Azure Active Directory para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Después, [conéctese al módulo de PowerShell de Azure Active Directory para Graph](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Rellene el nombre de la organización, la ubicación y una contraseña común; después, ejecute los siguientes comandos desde el símbolo del sistema de PowerShell o el entorno de scripts integrado (ISE) para crear nuevas cuentas de usuario y agregarlas al grupo de C-Suite:
   
@@ -115,7 +115,7 @@ Después, siga estos pasos para comprobar que la asignación de licencias basada
 
 En esta fase, debe crear y configurar un equipo con aislamiento de seguridad para que los miembros del equipo de directiva puedan colaborar en la estrategia de la empresa.
 
-Antes de proceder con los pasos de este artículo, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Antes de proceder con los pasos de este artículo, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Después, cree el equipo:
 
@@ -126,9 +126,15 @@ Después, cree el equipo:
 5. En **Privacidad**, haga clic en **Privado**.
 6. Escriba **Estrategia de la empresa** y, después, haga clic en **Crear** > **Cerrar**.
 
+A continuación, limite la creación de canales privados a los propietarios del grupo de Estrategia empresarial.
+
+1. En el equipo, haga clic en **Más opciones** y después en **Administrar equipo**.
+2. En la pestaña **Configuración**, expanda **Permisos de los miembros**.
+3. Desactive la casilla de verificación **Permitir a los miembros crear canales privados**.
+
 Después, debe configurar una etiqueta de confidencialidad aparte con la siguiente configuración:
 
-- El nombre de la etiqueta es Estrategia de empresa.
+- El nombre es Estrategia de la empresa
 - El cifrado está habilitado.
 - El grupo Estrategia de empresa tiene permisos de coautoría.
 
@@ -199,10 +205,6 @@ Esta es la configuración resultante del equipo Estrategia empresarial.
 
 ![Configuración del equipo Estrategia empresarial aislada](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-Los miembros del grupo Estrategia empresarial puede asignar la etiqueta Estrategia empresarial a los archivos del equipo. Aquí le mostramos un ejemplo.
-
-![Ejemplo de un archivo con la etiqueta de confidencialidad Estrategia empresarial aplicada](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## <a name="next-step"></a>Paso siguiente
 
-Cuando esté listo para la implementación de producción, consulte [Configurar un equipo con aislamiento de seguridad](secure-teams-security-isolation.md) para obtener información de configuración detallada.
+Cuando esté listo para la implementación de producción, vea estas [instrucciones de configuración](secure-teams-security-isolation.md).

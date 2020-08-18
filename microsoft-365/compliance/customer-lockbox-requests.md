@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637792"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794259"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -72,19 +72,17 @@ Los pasos siguientes describen el flujo de trabajo típico cuando un ingeniero d
 
 Puede activar los controles de caja de caja del cliente en el centro de administración de Microsoft 365. Al activar caja de caja de clientes, Microsoft debe obtener la aprobación de su organización antes de obtener acceso al contenido de su espacio empresarial.
 
-1. Con una cuenta profesional o educativa que tenga asignado el rol de **aprobador de acceso de Lockbox del cliente** o el administrador global [https://admin.microsoft.com](https://admin.microsoft.com) , vaya a e inicie sesión.
+1. Con una cuenta profesional o educativa que tenga asignado el rol de **aprobador de acceso de Lockbox del cliente** o el administrador global, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión.
 
-2. Elija **configuración > seguridad & privacidad**.
+2. Elija **configuración > la configuración**de la organización.
 
-    ![Edición de la configuración de la caja de opciones del cliente en el centro de administración](../media/CustomerLockbox2.png)
-
-3. En el icono de **Lockbox del cliente** , elija **Editar**y, a continuación, mueva el botón de alternancia a **activado** o **desactivado** para activar o desactivar la característica.
+3. Seleccione **servicios**  >  de**Lockbox de cliente**de servicios  >  **Edit**y, a continuación, mueva el botón de alternancia a **activado** o **desactivado** para activar o desactivar la característica.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Aprobar o denegar una solicitud de caja de caja del cliente
 
-1. Con una cuenta profesional o educativa que tenga asignado el rol de **aprobador de acceso de Lockbox del cliente** o el administrador global [https://admin.microsoft.com](https://admin.microsoft.com) , vaya a e inicie sesión.
+1. Con una cuenta profesional o educativa que tenga asignado el rol de **aprobador de acceso de Lockbox del cliente** o el administrador global, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión.
 
 2. Elija **admitir > solicitudes de caja de caja del cliente**.
 
@@ -102,6 +100,10 @@ Puede activar los controles de caja de caja del cliente en el centro de administ
 
     ![Aprobar o denegar solicitudes de caja de caja de cliente](../media/CustomerLockbox8.png)
 
+> [!NOTE]
+> Use el cmdlet Set-AccessToCustomerDataRequest para aprobar, denegar o cancelar solicitudes de caja de control del cliente de Microsoft 365 que controlan el acceso a los datos por parte de los ingenieros de soporte técnico de Microsoft. Para obtener más información, vea [set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
+
+
 ## <a name="auditing-customer-lockbox-requests"></a>Auditoría de solicitudes de caja de comprobación del cliente
 
 Los registros de auditoría que corresponden a las solicitudes de caja de caja del cliente se registran en el registro de auditoría. Puede tener acceso a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) del centro de seguridad & cumplimiento. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
@@ -114,7 +116,7 @@ Antes de poder usar el registro de auditoría para realizar un seguimiento de la
   
 2. Inicie sesión con su cuenta profesional o educativa.
 
-3. En el panel izquierdo del centro de seguridad & cumplimiento, seleccione **Buscar** > en el**registro de auditoría**de & de la investigación.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, seleccione **Buscar**en el registro de auditoría de & de la investigación  >  **Audit log search**.
 
     Se muestra la página de **búsqueda de registros de auditoría** .
 
@@ -152,7 +154,7 @@ Cuando una persona de su organización aprueba o deniega una solicitud de caja d
 |:---------- |:----------|
 | Fecha       | La fecha y la hora en que se aprobó o denegó la solicitud de caja de caja del cliente.
 | Dirección IP | La dirección IP del equipo que el aprobador ha usado para aprobar o denegar una solicitud. |
-| Usuario       | La cuenta de servicio\[BOXServiceAccount@\]customerforest. Prod.Outlook.com.            |
+| Usuario       | La cuenta de servicio BOXServiceAccount@ \[ customerforest \] . Prod.Outlook.com.            |
 | Actividad   | Set-AccessToCustomerDataRequest; se trata de la actividad de auditoría que se registra al aprobar o denegar una solicitud de caja de control del cliente.                                |
 | Item       | El GUID de la solicitud de caja de caja del cliente                             |
 
@@ -173,7 +175,7 @@ Las acciones realizadas por un ingeniero de Microsoft después de que se aprueba
 | Dirección IP | La dirección IP del equipo que utilizó el ingeniero de Microsoft. |
 | Usuario       | Operador de Microsoft; Este valor indica que este registro está relacionado con una solicitud de caja de caja del cliente.                                  |
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
-| Item       | \<está\>                                             |
+| Item       | \<empty\>                                             |
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -183,7 +185,7 @@ La caja de seguridad del cliente es compatible actualmente con Exchange Online, 
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>¿La caja de bloqueo del cliente está disponible para todos los clientes?
 
-La caja de comprobación del cliente se incluye en las suscripciones de Microsoft 365 u Office 365 E5 y se puede Agregar a otros planes con una suscripción de protección y cumplimiento de la información o una suscripción complementaria de cumplimiento avanzado. Para obtener más información, consulte [planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software) .
+La caja de comprobación del cliente se incluye en las suscripciones de Microsoft 365 u Office 365 E5 y se puede Agregar a otros planes con una suscripción de protección y cumplimiento de la información o una suscripción complementaria de cumplimiento avanzado. Para obtener más información, consulte [planes y precios](https://products.office.com/business/office-365-enterprise-e5-business-software)   .
 
 #### <a name="what-is-customer-content"></a>¿Qué es el contenido del cliente?
 

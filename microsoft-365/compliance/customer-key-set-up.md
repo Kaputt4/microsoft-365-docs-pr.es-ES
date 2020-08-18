@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 346b723a4741e18d161122edecf985a3fb8c7845
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44810996"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794225"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -132,12 +132,12 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
 3. Póngase en contacto con Microsoft para finalizar el proceso. Para el equipo de SharePoint y OneDrive para la empresa, póngase en contacto con [Spock@microsoft.com](mailto:spock@microsoft.com). Para Exchange Online y Skype empresarial, póngase en contacto con [exock@microsoft.com](mailto:exock@microsoft.com). Incluya lo siguiente en su correo electrónico:
 
-   **Asunto**: clave de cliente de\<*Your tenant's fully-qualified domain name*\>
+   **Asunto**: clave de cliente de \<*Your tenant's fully-qualified domain name*\>
 
    **Cuerpo**: identificadores de suscripción para los que desea finalizar el período de retención obligatorio.
    El resultado de Get-AzProviderFeature para cada suscripción.
@@ -213,9 +213,9 @@ Para cada almacén de claves, tendrá que definir tres conjuntos de permisos dis
 
     - el *nombre del almacén* es el nombre del almacén de claves que ha creado.
 
-    - Para Exchange Online y Skype empresarial, reemplace *Office 365 appID* por`00000002-0000-0ff1-ce00-000000000000`
+    - Para Exchange Online y Skype empresarial, reemplace  *Office 365 appID* por `00000002-0000-0ff1-ce00-000000000000`
 
-    - Para los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams, reemplace *Office 365 appID* por`00000003-0000-0ff1-ce00-000000000000`
+    - Para los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams, reemplace  *Office 365 appID* por `00000003-0000-0ff1-ce00-000000000000`
 
   Ejemplo: establecer permisos para Exchange Online y Skype empresarial:
 
@@ -273,19 +273,19 @@ Donde:
   
 - Si piensa proteger la clave con un HSM, asegúrese de especificar **HSM** como el valor del parámetro _Destination_ ; de lo contrario, especifique el **software**.
 
-For example,
+Por ejemplo,
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
-Para importar una clave directamente en el almacén de claves, debe tener un módulo de seguridad de hardware de Thales nShield.
+Para importar una clave directamente en el almacén de claves, debe tener un módulo de seguridad de hardware de nCipher nShield.
   
-Algunas organizaciones prefieren este enfoque para establecer la procedencia de sus claves y este método también ofrece lo siguiente:
+Algunas organizaciones prefieren este enfoque para establecer la procedencia de sus claves y, a continuación, este método también ofrece lo siguiente:
   
-- El conjunto de herramientas usado para la importación incluye atestación de Thales de que la clave de intercambio de claves (KEK) que se usa para cifrar la clave que se genera no es exportable y se genera dentro de un HSM genuino fabricado por Thales.
+- El conjunto de herramientas usado para la importación incluye atestación de nCipher de que la clave de intercambio de claves (KEK) que se usa para cifrar la clave que genera no es exportable y se genera dentro de un HSM genuino fabricado por nCipher.
 
-- El conjunto de herramientas incluye la atestación de Thales que el mundo de seguridad de la clave de Azure Key Vault también se generó en un HSM auténtico fabricado por Thales. Esta atestación le demuestra que Microsoft también usa hardware de Thales genuino.
+- El conjunto de herramientas incluye atestación de nCipher que el mundo de seguridad de la clave de Azure también se generó en un HSM auténtico fabricado por nCipher. Esta atestación le demuestra que Microsoft también usa hardware de nCipher genuino.
 
 Consulte a su grupo de seguridad para determinar si se requieren las atestaciones anteriores. Para obtener instrucciones detalladas para crear una clave local e importarla en el almacén de claves, consulte [How to generate HSM-Protected Keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Use las instrucciones de Azure para crear una clave en cada almacén de clave.
   
@@ -356,7 +356,7 @@ Por ejemplo, para SharePoint Online y OneDrive para la empresa:
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365SP-NA-VaultA1
--PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName TBD
+-PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
 ```
 
 Para comprobar que no se ha establecido una fecha de expiración para las claves, ejecute el cmdlet [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) de la siguiente manera:
