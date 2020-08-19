@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204952"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797787"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
-**Aplica para:**
+**Se aplica a:**
 - Protección contra amenazas de Microsoft
 
 La `FileProfile()` función es una función de enriquecimiento de la [búsqueda avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
@@ -34,20 +34,20 @@ La `FileProfile()` función es una función de enriquecimiento de la [búsqueda 
 | Columna | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
-| SHA256 | cadena | SHA-256 del archivo al que se aplicó la acción grabada |
-| MD5 | cadena | Hash MD5 del archivo al que se aplicó la acción grabada |
+| SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |
+| MD5 | string | Hash MD5 del archivo al que se aplicó la acción grabada |
 | FileSize | int | Tamaño del archivo en bytes |
 | GlobalPrevalence | int | Número de instancias de la entidad observadas por Microsoft globalmente |
 | GlobalFirstSeen | datetime | Fecha y hora en que Microsoft observó por primera vez la entidad |
 | GlobalLastSeen | datetime | Fecha y hora en que Microsoft recibió la última observación global de la entidad |
-| Firmante | cadena | Información sobre el firmante del archivo |
-| Emisor | cadena | Información sobre la entidad de certificación (CA) emisora |
-| SignerHash | cadena | Valor hash único que identifica al firmante |
+| Firmante | string | Información sobre el firmante del archivo |
+| Emisor | string | Información sobre la entidad de certificación (CA) emisora |
+| SignerHash | string | Valor hash único que identifica al firmante |
 | IsCertificateValid | boolean | Si el certificado usado para firmar el archivo es válido |
 | IsRootSignerMicrosoft | boolean | Indica si el firmante del certificado raíz es Microsoft |
 | IsExecutable | boolean | Si el archivo es un archivo ejecutable portable (PE) |
-| ThreatName | cadena | Nombre de detección de cualquier malware u otras amenazas encontradas |
-| Publisher | cadena | Nombre de la organización que publicó el archivo |
+| ThreatName | string | Nombre de detección de cualquier malware u otras amenazas encontradas |
+| Publisher | string | Nombre de la organización que publicó el archivo |
 | SoftwareName | cadena | Nombre del producto de software |
 
 ## <a name="syntax"></a>Sintaxis
@@ -87,3 +87,4 @@ DeviceFileEvents
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
+- [Obtener más ejemplos de consulta](advanced-hunting-shared-queries.md)

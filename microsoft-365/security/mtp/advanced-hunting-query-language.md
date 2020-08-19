@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649396"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797857"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -66,7 +66,7 @@ Se ha agregado un breve comentario al principio de la consulta para describir su
 // Finds PowerShell execution events that could involve a download
 ```
 
-Generalmente, la consulta comienza con un nombre de tabla seguido de una serie de elementos precedidos por un operador de canalización (`|`). En este ejemplo, empezamos creando una Unión de dos tablas `DeviceProcessEvents` y `DeviceNetworkEvents` , y agregamos elementos canalizados según sea necesario.
+Generalmente, la consulta comienza con un nombre de tabla seguido de una serie de elementos precedidos por un operador de canalización (`|`). En este ejemplo, empezamos creando una Unión de dos tablas  `DeviceProcessEvents` y `DeviceNetworkEvents` , y agregamos elementos canalizados según sea necesario.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ Después, la consulta busca cadenas en las líneas de comandos que se suelen usa
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personalizar la longitud y las columnas de resultados 
-Ahora que la consulta identifica claramente los datos que desea localizar, agregue elementos que definen cómo son los resultados. `project`Devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados tienen un formato adecuado y un tamaño razonable y sencillo de procesar.
+Ahora que la consulta identifica claramente los datos que desea localizar, agregue elementos que definen cómo son los resultados. `project` Devuelve columnas específicas y `top` limita el número de resultados. Estos operadores ayudan a garantizar que los resultados tienen un formato adecuado y un tamaño razonable y sencillo de procesar.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -117,7 +117,7 @@ Haga clic en **Ejecutar consulta** para ver los resultados. Seleccione el icono 
 >[!TIP]
 >Puede ver los resultados de la consulta en forma de gráficos y ajustar rápidamente los filtros. Para obtener instrucciones, [Vea información sobre cómo trabajar con los resultados de la consulta](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>Conozca más operadores comunes de consulta para la búsqueda avanzada
+## <a name="learn-common-query-operators"></a>Obtener información sobre operadores de consulta comunes
 
 Ahora que ha ejecutado la primera consulta y tiene una idea general de los componentes, es hora de retroceder un poco y aprender más sobre los aspectos básicos. El lenguaje de consulta Kusto que utiliza la búsqueda avanzada es compatible con una gama de operadores, entre ellos los siguientes operadores comunes.
 
@@ -136,7 +136,7 @@ Ahora que ha ejecutado la primera consulta y tiene una idea general de los compo
 
 Para ver un ejemplo dinámico de estos operadores, ejecútelos desde la sección **Comenzar** en la búsqueda avanzada.
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>Los tipos de datos y sus implicaciones de sintaxis de consulta
+## <a name="understand-data-types"></a>Descripción de los tipos de datos
 
 Los datos de las tablas de búsqueda avanzada se clasifican generalmente en los siguientes tipos de datos.
 
@@ -147,6 +147,8 @@ Los datos de las tablas de búsqueda avanzada se clasifican generalmente en los 
 | `bool` | Verdadero o falso |
 | `int` | Valor numérico de 32 bits  |
 | `long` | Valor numérico de 64 bits |
+
+Para obtener más información sobre estos tipos de datos y sus implicaciones, [Lea acerca de los tipos de datos Scalar Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtener ayuda mientras escribe consultas
 Aprovéchese de las funciones siguientes para escribir consultas más rápido:
@@ -179,6 +181,6 @@ Para más información sobre el lenguaje de consulta Kusto y los operadores comp
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

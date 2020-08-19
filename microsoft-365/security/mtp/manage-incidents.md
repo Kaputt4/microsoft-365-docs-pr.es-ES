@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148119"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798215"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Administrar incidentes en Protección contra amenazas de Microsoft
 
@@ -43,16 +43,16 @@ Puede editar el nombre del incidente, resolverlo, y establecer su clasificación
 En los casos en los que, durante la investigación, quiera pasar las alertas de un incidente a otro, también puede hacerlo desde la pestaña Alertas. Así, puede crear un incidente mayor o menor que incluya todas las alertas relevantes.
 
 ## <a name="edit-incident-name"></a>Editar el nombre del incidente
-De forma predeterminada, un incidente tiene asignado un número. Puede modificar el nombre del incidente para adecuarlo al sistema de nomenclatura que prefiera.
+A los incidentes se les asigna automáticamente un nombre basado en atributos de alertas como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
 
-> [!TIP]
-> Para obtener una visibilidad más rápida, los nombres automáticos de incidentes, actualmente en la versión preliminar pública, generan nombres de incidente basados en atributos de alerta como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
->
-> Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
->
-> Los incidentes que existían antes de la implementación de la asignación automática de nombres de incidentes no tendrán su nombre cambiado.
->
-> Obtenga más información sobre cómo [activar las características de vista previa](preview.md#turn-on-preview-features).
+Por ejemplo: *incidente de varias fases en varios puntos de conexión que han sido notificados por varios orígenes.*
+
+Puede modificar el nombre del incidente para adecuarlo al sistema de nomenclatura que prefiera.
+
+> [!NOTE]
+> Los incidentes que existían antes de la implementación de la característica de nomenclatura automática de incidentes conservarán su nombre.
+
+
 
 ## <a name="assign-incidents"></a>Asignar incidentes
 Si aún no se ha asignado un incidente, puede seleccionar **Asignarme a mí** para asignarse el incidente a usted mismo. Esta asignación no incluye solo el incidente, sino también todas las alertas asociadas a él.

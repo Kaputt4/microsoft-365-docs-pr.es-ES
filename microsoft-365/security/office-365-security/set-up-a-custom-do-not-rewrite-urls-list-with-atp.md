@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar direcciones URL bloqueadas personalizadas para los usuarios y no volver a escribir la lista de direcciones URL de un grupo de usuarios en las directivas de vínculos seguros de ATP de Office 365.
-ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656974"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798335"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada mediante vínculos seguros de ATP
 
@@ -34,6 +34,9 @@ ms.locfileid: "46656974"
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener [direcciones URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-atp.md), de modo que cuando los usuarios hagan clic en direcciones web (URL) en mensajes de correo electrónico o en determinados documentos de Office, no se les impedirá ir a esas direcciones URL. La organización también puede tener listas personalizadas de "no reescribir" para grupos específicos de la organización. Una lista "no reescribir" permite que algunas personas visiten direcciones URL que, de lo contrario, se bloquearán mediante [vínculos seguros de ATP en Office 365](atp-safe-links.md).
 
 En este artículo se describe cómo especificar una lista de direcciones URL que se excluyen del análisis de vínculos seguros de ATP y algunos puntos importantes que se deben tener en cuenta.
+
+> [!NOTE]
+> Si su organización usa directivas de vínculos a prueba de errores, la lista "no reescribir" es el único método admitido para las pruebas de suplantación de identidad de terceros.
 
 ## <a name="set-up-a-do-not-rewrite-list"></a>Configurar una lista de "no reescribir"
 

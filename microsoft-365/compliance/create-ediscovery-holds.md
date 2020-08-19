@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar el contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127527"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798066"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -136,7 +136,7 @@ A partir de febrero 2020, hemos activado la capacidad para preservar contenido e
 Para obtener más información acerca de la conservación de contenido de Teams, vea [poner a un usuario o un equipo de Microsoft Teams en retención legal](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
     
 > [!IMPORTANT]
-> En una organización basada en la nube, los usuarios que participen en conversaciones que formen parte de la lista de chats en Microsoft Teams deben tener un buzón de correo de Exchange Online para conservar las conversaciones de chat cuando el buzón de correo se coloca en una suspensión de eDiscovery. Esto se debe a que las conversaciones que forman parte de la lista de chats se almacenan en buzones de correo basados en la nube de los participantes del chat. Si un participante de chat no tiene un buzón de correo de Exchange Online, no podrá conservar esas conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, los usuarios con un buzón local podrían ser capaces de participar en conversaciones que formen parte de la lista de chats de Microsoft Teams. Pero, en este caso, el contenido de esta conversación no se puede conservar porque estos usuarios no tienen buzones de correo basados en la nube que puedan retenerse.
+> En una organización basada en la nube, los usuarios que participen en conversaciones que formen parte de la lista de chats en Microsoft Teams deben tener un buzón de correo de Exchange Online para conservar las conversaciones de chat cuando el buzón de correo se coloca en una suspensión de eDiscovery. Esto se debe a que las conversaciones que forman parte de la lista de chats se almacenan en buzones de correo basados en la nube de los participantes del chat. Si un participante de chat no tiene un buzón de correo de Exchange Online, no podrá conservar esas conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, es posible que los usuarios con un buzón local puedan participar en conversaciones que formen parte de la lista de chats de Microsoft Teams. Pero, en este caso, el contenido de esta conversación no se puede conservar porque estos usuarios no tienen buzones de correo basados en la nube que puedan retenerse.
   
 Cada canal de equipo o equipo también contiene un wiki para la toma de notas y la colaboración. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede conservar el contenido de la wiki agregando el sitio de SharePoint del equipo a una suspensión de exhibición de documentos electrónicos.
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 458a4eac348598d1b752267ed7d79b97bc594580
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726769"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804237"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurar directivas contra phishing de ATP
 
@@ -36,34 +36,21 @@ Para obtener información acerca de la configuración de las directivas antiphis
 Los elementos básicos de una directiva contra la suplantación de identidad ATP son los siguientes:
 
 - **La Directiva ANTIPHISH**: especifica las protecciones de suplantación de identidad (phishing) que se deben habilitar o deshabilitar y las acciones para aplicar opciones.
-
 - **La regla anti-phish**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva) para una directiva antiphishing.
 
 La diferencia entre estos dos elementos no es obvia cuando se administran las directivas antiphishing de ATP en el centro de seguridad & cumplimiento:
 
-- Al crear una directiva contra la suplantación de identidad ATP en el centro de seguridad & cumplimiento, en realidad está creando una regla ANTIPHISH y la Directiva ANTIPHISH asociada al mismo tiempo con el mismo nombre para ambas.
+- Al crear una directiva, en realidad está creando una regla ANTIPHISH y la Directiva ANTIPHISH asociada al mismo tiempo con el mismo nombre para ambas.
+- Cuando modifica una directiva, la configuración relacionada con el nombre, la prioridad, habilitada o deshabilitada y los filtros de destinatarios modifican la regla antiphishing. Todas las demás opciones modifican la Directiva ANTIPHISH asociada.
+- Al quitar una directiva, se quita la regla antiphishing y la Directiva antiphishing asociada.
 
-- Cuando modifica una directiva de ATP antiphishing en el centro de seguridad & cumplimiento, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado, y de destinatarios modifica la regla contra el phish. Todas las demás opciones modifican la Directiva ANTIPHISH asociada.
+En Exchange Online PowerShell, puede administrar la Directiva y la regla por separado. Para obtener más información, consulte la sección [usar Exchange Online PowerShell para configurar ATP anti-phishing Policies](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) más adelante en este tema.
 
-- Al quitar una directiva de ATP contra la suplantación de identidad del centro de seguridad & cumplimiento, se quita la regla antiphishing y la Directiva de ANTIPHISH asociada.
+Todas las organizaciones de Office 365 ATP tienen una directiva antiphishing de ATP integrada llamada Office365 ANTIPHISH predeterminada con estas propiedades:
 
-En Exchange Online PowerShell, la diferencia entre las directivas antiphishing y las reglas antiphishing es evidente. Las directivas antiphishing se administran mediante los cmdlets ** \* -AntiPhishPolicy** y se administran las reglas antiphishing mediante los cmdlets ** \* -AntiPhishRule** .
-
-- En PowerShell, se crea la Directiva ANTIPHISH en primer lugar y, a continuación, se crea la regla ANTIPHISH que identifica la Directiva a la que se aplica la regla.
-
-- En PowerShell, la configuración de la Directiva antiphishing y la regla antiphishing se modifican por separado.
-
-- Cuando se quita una directiva ANTIPHISH de PowerShell, la regla antiphishing correspondiente no se elimina automáticamente y viceversa.
-
-### <a name="default-atp-anti-phishing-policy"></a>Directiva antiphishing de ATP predeterminada
-
-Cada organización ATP tiene una directiva antiphishing de ATP integrada llamada Office365 ANTIPHISH predeterminada con estas propiedades:
-
-- La Directiva ANTIPHISH denominada Office365 ANTIPHISH predeterminada se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla antiphishing (filtros de destinatario) asociada a la Directiva.
-
-- La Directiva denominada predeterminada de la ANTIPHISH de Office365 tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva se aplica siempre en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad mayor que la Directiva denominada Office365 ANTIPHISH predeterminada.
-
-- La Directiva denominada Office365 ANTIPHISH predeterminada es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True` ) y no se puede eliminar la directiva predeterminada.
+- La Directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla antiphishing (filtros de destinatario) asociada a la Directiva.
+- La Directiva tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva siempre se aplica en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad más alta.
+- La Directiva es la predeterminada (la propiedad **IsDefault** tiene el valor `True` ) y no se puede eliminar la directiva predeterminada.
 
 Para aumentar la eficacia de la protección contra suplantación de identidad (phishing), puede crear directivas antiphishing personalizadas de ATP con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
@@ -73,17 +60,17 @@ Para aumentar la eficacia de la protección contra suplantación de identidad (p
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Debe tener permisos asignados para poder realizar los procedimientos de este tema:
+- Para poder realizar los procedimientos de este tema, deberá tener asignados los permisos necesarios:
 
   - Para agregar, modificar y eliminar directivas antiphishing de ATP, debe pertenecer a uno de los siguientes grupos de roles:
 
-    - **Administración** de la organización o **Administrador de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - Administración de la administración de la **organización** o administración de la **higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Para obtener acceso de solo lectura a las directivas antiphishing de ATP, debe pertenecer a uno de los siguientes grupos de roles:
 
-    - **Lector de seguridad** en el [centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
-    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Para obtener la configuración recomendada para las directivas antiphishing de ATP, consulte [configuración de la Directiva de antiphishing de Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 
@@ -331,7 +318,9 @@ No se puede deshabilitar la Directiva antiphishing predeterminada.
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>Establecer la prioridad de las directivas anti-phishing personalizadas de ATP
 
-De forma predeterminada, las directivas antiphishing de ATP reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Dos directivas no pueden tener la misma prioridad.
+De forma predeterminada, las directivas antiphishing de ATP reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad y el procesamiento de directivas se detiene después de aplicar la primera Directiva.
+
+Para obtener más información sobre el orden de prioridad y la forma en que se evalúan y aplican varias directivas, consulte [Order and Precedence of email Protection](how-policies-and-protections-are-combined.md).
 
 Las directivas de antiphishing de ATP personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva antiphishing predeterminada denominada Office365 ANTIPHISH predeterminada tiene el valor de prioridad personalizado **más bajo**y no se puede cambiar.
 
@@ -379,12 +368,19 @@ No puede quitar la directiva predeterminada.
 
 ## <a name="use-exchange-online-powershell-to-configure-atp-anti-phishing-policies"></a>Usar Exchange Online PowerShell para configurar las directivas antiphishing de ATP
 
+Como se ha descrito anteriormente, una directiva contra correo no deseado ATP consta de una directiva ANTIPHISH y una regla antiphishing.
+
+En Exchange Online PowerShell, la diferencia entre las directivas antiphishing y las reglas antiphishing es evidente. Las directivas antiphishing se administran mediante los cmdlets ** \* -AntiPhishPolicy** y se administran las reglas antiphishing mediante los cmdlets ** \* -AntiPhishRule** .
+
+- En PowerShell, se crea la Directiva ANTIPHISH en primer lugar y, a continuación, se crea la regla ANTIPHISH que identifica la Directiva a la que se aplica la regla.
+- En PowerShell, la configuración de la Directiva antiphishing y la regla antiphishing se modifican por separado.
+- Cuando se quita una directiva ANTIPHISH de PowerShell, la regla antiphishing correspondiente no se elimina automáticamente y viceversa.
+
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>Usar PowerShell para crear directivas antiphishing
 
 La creación de una directiva contra la suplantación de identidad (phishing) en PowerShell es un proceso de dos pasos:
 
 1. Cree la Directiva contra phish.
-
 2. Cree la regla ANTIPHISH que especifica la Directiva antiphishing a la que se aplica la regla.
 
  **Notas**:
@@ -394,7 +390,6 @@ La creación de una directiva contra la suplantación de identidad (phishing) en
 - Puede configurar las siguientes opciones en nuevas directivas antiphishing en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
 
   - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-AntiPhishRule** ).
-
   - Establezca la prioridad de la Directiva durante la creación (_prioridad_ _\<Number\>_ ) en el cmdlet **New-AntiPhishRule** ).
 
 - Una nueva Directiva antiphishing que cree en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que asigna la Directiva a una regla antiphishing.

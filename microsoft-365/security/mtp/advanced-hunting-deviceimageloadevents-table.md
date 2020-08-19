@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c5756bd90daa84d91847970e3c358ff43aa89836
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 3c63808e503da5474176de11ff5df8d909ab58e3
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649432"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797949"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -33,6 +33,9 @@ ms.locfileid: "46649432"
 
 La `DeviceImageLoadEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los eventos de carga de dll. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
+>[!TIP]
+> Para obtener información detallada acerca de los tipos de eventos ( `ActionType` valores) admitidos por una tabla, use la [referencia de esquema integrada](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible en el centro de seguridad.
+
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 | Nombre de columna | Tipo de datos | Descripción |
@@ -40,7 +43,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `DeviceId` | cadena | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
-| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
+| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento. Consulte la [Referencia del esquema del portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más detalles |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
@@ -69,6 +72,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

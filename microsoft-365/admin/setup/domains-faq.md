@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Obtenga más información acerca de los dominios buscando respuestas a las preguntas más frecuentes.
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068108"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804201"
 ---
 # <a name="domains-faq"></a>Preguntas más frecuentes de dominios
 
@@ -52,19 +52,20 @@ En este artículo
 - [¿Qué sucede si mi proveedor de DNS no es compatible con determinados tipos de registros?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [¿Cómo se configura o se cambia el dominio predeterminado en Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [¿Puedo agregar subdominios personalizados o varios dominios a Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [¿Cómo se transfiere un dominio de Microsoft 365 a otro host?]
 - [¿Por qué tengo un dominio "onmicrosoft.com"?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [¿Por qué tengo un dominio "onmicrosoft.de"?](#why-do-i-have-an-onmicrosoftde-domain)
 - [¿Cómo puedo comprobar mi estado para ONG o educación?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>¿Qué es una prioridad de MX?
 
-El correo se entrega al servidor de intercambio de correo con el número de preferencia más bajo (prioridad más alta), por lo que el registro MX que use para el enrutamiento de correo debe tener el número de preferencia más bajo, normalmente 0 o *alta* prioridad. 
+El correo se entrega al servidor de intercambio de correo con el número de preferencia más bajo (prioridad más alta), por lo que el registro MX que use para el enrutamiento de correo debe tener el número de preferencia más bajo, normalmente 0 o  *alta*  prioridad. 
   
 - Al crear un registro MX, la mayoría de los proveedores de hospedaje DNS requieren que establezca el número de preferencia.
     
-- Algunas etiquetas son la *preferencia* de cuadro y alguna de ellas tiene *prioridad* . 
+- Algunas etiquetas son la  *preferencia*  de cuadro y alguna de ellas tiene  *prioridad*  . 
     
-- Algunos requieren un número y algunos le piden que seleccione *bajo* , *medio* o *alto* . 
+- Algunos requieren un número y algunos le piden que seleccione  *bajo*  ,  *medio*  o  *alto*  . 
     
 - Si solo tiene un registro MX, cualquier valor es correcto para prioridad o preferencia.
     
@@ -72,7 +73,7 @@ El correo se entrega al servidor de intercambio de correo con el número de pref
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>¿Cómo puedo validar los registros de SPF para mi dominio?
 
-Es importante que tenga o cree **un solo registro TXT para SPF**. Si ya tiene un registro de SPF, debe anexar a él los nuevos valores de Microsoft 365, en lugar de crear uno nuevo. Una vez que haya agregado o actualizado el registro de SPF para el correo electrónico de Microsoft, debe asegurarse de que la sintaxis es correcta con una de estas herramientas: 
+Es importante que tenga o cree  **un solo registro TXT para SPF**. Si ya tiene un registro de SPF, debe anexar a él los nuevos valores de Microsoft 365, en lugar de crear uno nuevo. Una vez que haya agregado o actualizado el registro de SPF para el correo electrónico de Microsoft, debe asegurarse de que la sintaxis es correcta con una de estas herramientas: 
   
 - [Herramientas de prueba de registros de SPF](http://www.kitterman.com/spf/validate.html)
     
@@ -82,7 +83,7 @@ Es importante que tenga o cree **un solo registro TXT para SPF**. Si ya tiene un
 
 ## <a name="what-is-a-domain-name"></a>¿Qué es un nombre de dominio?
 
-Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente, toma la forma del nombre de la organización y un sufijo de Internet estándar, como *yourbusiness.com* o *StateUniversity.edu.* 
+Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente, toma la forma del nombre de la organización y un sufijo de Internet estándar, como  *yourbusiness.com*  o  *StateUniversity.edu.* 
   
 Usar un dominio personalizado como "**rob \@ contoso.com**" con Microsoft 365 puede ayudarle a crear credibilidad y un reconocimiento para su marca. 
   
@@ -146,19 +147,19 @@ Debe tener al menos un dominio personalizado que haya agregado a Microsoft 365 p
     
 ::: moniker range="o365-worldwide"
 
-No puede cambiar el nombre del dominio inicial *. onmicrosoft.com* . 
+No puede cambiar el nombre del dominio inicial  *. onmicrosoft.com*  . 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-No puede cambiar el nombre del dominio inicial *. onmicrosoft.de* . 
+No puede cambiar el nombre del dominio inicial  *. onmicrosoft.de*  . 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-No puede cambiar el nombre del dominio inicial *. Partner.onmschina.cn* . 
+No puede cambiar el nombre del dominio inicial  *. Partner.onmschina.cn*  . 
 
 ::: moniker-end
 
@@ -194,6 +195,14 @@ Cuando se agregan varios dominios a Microsoft 365, puede hospedar cualquiera de 
 
 > [!NOTE]
 > Si agregó un dominio contoso.com a una suscripción de Microsoft 365, también puede Agregar el subdominio xyz.contoso.com a otra organización 365 de Microsoft. Al agregar el subdominio, se le pedirá que agregue un registro TXT en el proveedor de host DNS.
+
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>¿Cómo puedo transferir un dominio de Microsoft 365 a otro host?
+
+Para obtener el procedimiento para transferir un dominio, consulte [transferir un dominio de Microsoft a otro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
+
+Para obtener el procedimiento piloto de funcionalidad de correo electrónico Microsoft 365 desde un dominio personalizado a un buzón de Microsoft 365, consulte [piloto microsoft 365 From My Custom Domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>¿Por qué tengo un dominio "onmicrosoft.com"?
 
@@ -232,7 +241,7 @@ Puede seguir usando el dominio de onmicrosoft.de inicial incluso después de agr
 
 1. Seleccione **configurar** en el [centro de administración](https://docs.microsoft.com/microsoft-365/admin/admin-home) para iniciar el asistente. (Asegúrese de iniciar sesión primero en Microsoft 365). 
     
-2. Para convertirse en el administrador de su centro educativo, seleccione la opción **convertirse en Administrador** en Microsoft 365. 
+2. Para convertirse en el administrador de su centro educativo, seleccione la opción  **convertirse en Administrador** en Microsoft 365. 
     
 3. Se le pedirá que agregue un registro DNS TXT en el sitio web del host DNS de su dominio. ¿Por qué? Debido a que inicia sesión en el host DNS y agrega un registro para su dominio, usted prueba a Microsoft 365 que es el propietario del nombre de dominio.
     

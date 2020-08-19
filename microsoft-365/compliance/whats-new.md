@@ -1,5 +1,5 @@
 ---
-title: Novedades del centro de cumplimiento
+title: Novedades en el cumplimiento de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -16,21 +16,25 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365. Descubra lo que hemos realizado este mes.
+description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560267"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798182"
 ---
-# <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
+# <a name="whats-new-in-microsoft-365-compliance"></a>Novedades en el cumplimiento de Microsoft 365
 
-Estamos agregando de forma continuada nuevas características al [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md), solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Eche un vistazo a la parte inferior para ver lo que está disponible hoy mismo. Algunas características se implementan a los clientes a velocidades diferentes. Si aún no ve una característica, pruebe a agregarse a la [versión dirigida](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
+Ya sea que se agreguen nuevas soluciones nuevas al [centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md), se actualicen las características existentes en función de sus comentarios o se implantan documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento de cambios. Eche un vistazo a continuación para ver las novedades del cumplimiento de Microsoft 365 en la actualidad. 
+
+> [!NOTE]
+> Algunas características de cumplimiento se implementan a los clientes a velocidades diferentes. Si aún no ve una característica, pruebe a agregarse a la [versión dirigida](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
+
 
 > [!TIP]
-> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
+> ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Y visite el [mapa de ruta de microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para saber más sobre las características de 365 Microsoft que se lanzaron, están en desarrollo, se han cancelado o han sido publicadas anteriormente.
 
 ## <a name="june-2020"></a>Junio de 2020
@@ -235,7 +239,7 @@ Este es un resumen de las nuevas soluciones que encontrará. No deje de mirarlas
 > Estas soluciones se encuentran solo en el centro de cumplimiento de Microsoft 365. No se pueden administrar en el centro de seguridad & cumplimiento de Office 365.
 <br/>
 
-|**Nueva solución**|**Description**|**Más información**|
+|**Nueva solución**|**Descripción**|**Más información**|
 |:-----|:-----|:-----|
 |Puntuación de cumplimiento de Microsoft (versión preliminar) <br/>|Basado en el [Administrador de cumplimiento](compliance-manager-overview.md), la puntuación de cumplimiento es una característica independiente con un diseño más sencillo y más fácil de entender que le ayuda a comprender y mejorar la postura de cumplimiento de la organización. Calcula una puntuación basada en riesgos que mide su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. <br/>|[Información general sobre la puntuación de cumplimiento de Microsoft (versión preliminar)](compliance-score.md)|
 |Catálogo de soluciones (versión preliminar) <br/>|El catálogo de soluciones es su único punto de partida para descubrir, aprender y comenzar rápidamente con nuestras soluciones de administración de riesgos y cumplimiento. El catálogo está organizado en tres categorías de cumplimiento, cada una de las cuales contiene detalles sobre las soluciones que conforman esa categoría. Las categorías incluyen protección de la información & gobernanza, administración de riesgos de Insider y respuesta de & de detección <br/>|[Información general sobre el catálogo de soluciones (versión preliminar)](microsoft-365-solution-catalog.md)|
@@ -270,7 +274,7 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Etiquetas de retención y directivas de etiquetas |Clasificación > etiquetas de retención > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/retentionlabels |Pestañas de gobierno de información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Introducción a las etiquetas de retención](retention.md)|
 |Directivas de retención|Control de > la retención de información <br/> https://protection.office.com/retention |Ficha > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Más información sobre las directivas y las etiquetas de retención](retention.md)|
 |Tipos de información confidencial|Tipos de información confidencial de clasificación > <br/> https://protection.office.com/sensitivetypes |Clasificación de datos > ficha tipos de información confidencial <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)|
-|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
+|Etiquetas de confidencialidad y directivas de etiquetas|Etiquetas de distinción de > de clasificación > pestañas etiquetas y directivas de etiquetas <br/> https://protection.office.com/sensitivity |Pestañas de protección de la información > etiquetas y directivas de etiquetas <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Información sobre las etiquetas de confidencialidad](sensitivity-labels.md) |
 |Garantía de servicio|Garantía de servicio <br/> https://protection.office.com/serviceassurance/dashboard |En este momento, solo se puede tener acceso a los recursos de garantía del servicio en el centro de seguridad & cumplimiento de Office 365. |[Garantía del servicio en el Centro de Cumplimiento de Seguridad &](service-assurance.md)|
 |Supervisión|Supervisión <br/> https://protection.office.com/supervisoryreviewv2 |Cumplimiento de las comunicaciones <br/> https://compliance.microsoft.com/supervisoryreview |[Cumplimiento de la comunicación en Microsoft 365 (versión preliminar)](communication-compliance.md) |
 
@@ -290,7 +294,7 @@ Vaya a [restringir el acceso al contenido mediante las etiquetas de confidencial
 
 ### <a name="update-to-data-investigations"></a>Actualización a investigaciones de datos
 
-Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. Vaya a [administrar un incidente de derrame de datos en Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) para obtener más información. 
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. Obtener [más información](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. Vaya a [administrar un incidente de derrame de datos en Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) para obtener más información. 
 
 ## <a name="july-2019"></a>Julio de 2019
 

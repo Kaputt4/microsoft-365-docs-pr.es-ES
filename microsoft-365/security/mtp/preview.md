@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552667"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798239"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Características preliminares de Microsoft Threat Protection
 
@@ -57,7 +57,8 @@ Sabrá que tiene características de vista previa activadas cuando vea que está
 ## <a name="preview-features"></a>Versión preliminar de las características
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
+- **[Tabla IdentityDirectoryEvents de búsqueda avanzada](advanced-hunting-identitydirectoryevents-table.md)** : buscar eventos que impliquen un controlador de dominio local que ejecute Active Directory (ad). Esta tabla cubre un rango de eventos relacionados con la identidad, así como eventos del sistema en el controlador de dominio.
+- **[Función AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** : Use esta función en la búsqueda avanzada para obtener rápidamente las direcciones IP más recientes que se han asignado a un dispositivo o las direcciones IP más recientes desde un momento determinado.
 - **[Emprender acciones en la búsqueda avanzada](advanced-hunting-take-action.md)** : contención de las amenazas o informarte de los activos comprometidos en [la búsqueda avanzada.](advanced-hunting-overview.md)
-
 - **[Referencia del esquema en el portal](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenga información sobre las tablas de esquema de búsqueda avanzada directamente en el centro de seguridad. Además de las descripciones de tabla y columna, esta práctica referencia proporciona información sobre los tipos de eventos admitidos ( `ActionType` valores) y las consultas de ejemplo.
 

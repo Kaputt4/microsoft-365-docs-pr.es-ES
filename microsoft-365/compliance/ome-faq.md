@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes? Compruebe si hay una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818683"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798192"
 ---
 # <a name="message-encryption-faq"></a>Preguntas frecuentes sobre el cifrado de mensajes
 
@@ -102,11 +102,15 @@ Puede crear mensajes protegidos desde Outlook 2016 y 2013 Outlook en la web para
 
 Los usuarios de Microsoft 365 pueden leer y responder desde Outlook para Windows y Mac (2013 y 2016), Outlook en la web y Outlook Mobile (Android e iOS). También puede usar el cliente de correo nativo de iOS si su organización lo permite. Si no es un usuario de Microsoft 365, puede leer y responder a mensajes cifrados en la web a través del explorador Web.
   
+## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>¿Hay un límite de tamaño para los mensajes que puede enviar con OME?
+
+Sí. El tamaño máximo de mensaje que puede enviar con OME, incluidos los datos adjuntos, es de 30 MB.
+
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>¿Qué tipos de archivo se admiten como datos adjuntos en correos electrónicos protegidos? ¿Los datos adjuntos heredan las directivas de protección asociadas con los correos electrónicos protegidos?
 
-Puede adjuntar cualquier tipo de archivo a un correo protegido, pero las directivas de protección se aplican solo en los formatos de archivo mencionados en los [tipos de archivo compatibles con el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
-  
-Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint, el archivo siempre está protegido, incluso después de que el destinatario haya descargado los datos adjuntos. Por ejemplo, si un dato adjunto está protegido por no reenviar y el destinatario original descarga y reenvía los datos adjuntos a un nuevo destinatario, el nuevo destinatario no podrá abrir el archivo protegido.
+Puede adjuntar cualquier tipo de archivo a un correo electrónico protegido. Con una excepción, las directivas de protección se aplican solo en los formatos de archivo que se mencionan en [los tipos de archivo compatibles con el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME no es compatible con las versiones 97-2003 de los siguientes programas de Office: Word (. doc), Excel (. xls) y PowerPoint (. ppt).
+
+Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint, el archivo siempre está protegido, incluso después de que el destinatario haya descargado los datos adjuntos. Por ejemplo, supongamos que un dato adjunto está protegido por do no reenviar. El destinatario original descarga el archivo, crea un mensaje a un nuevo destinatario y adjunta el archivo. Cuando el nuevo destinatario recibe el archivo, el destinatario no podrá abrir el archivo protegido.
   
 ## <a name="are-pdf-file-attachments-supported"></a>¿Se admiten los datos adjuntos de archivos PDF?
 
@@ -188,9 +192,19 @@ En la siguiente tabla se enumeran los clientes compatibles con los buzones compa
 
 Actualmente, hay dos limitaciones conocidas:
 
-- Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido. No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico.
-
 - No puede abrir datos adjuntos de mensajes de correo electrónico que recibe en dispositivos móviles mediante Outlook Mobile.
+
+- No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso que proporciona la asignación directa de usuarios al buzón compartido y que la asignación automática está habilitada para Exchange Online. La asignación automática está habilitada de forma predeterminada para Exchange Online.
+
+**Para asignar un usuario al buzón compartido**
+
+1. [Conéctese a Exchange online mediante PowerShell remoto](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+
+2. Ejecute el cmdlet Add-MailboxPermission con el parámetro automapping. En este ejemplo se concede el permiso de acceso completo de Ayla a un buzón de soporte.
+
+   ```powershell
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+   ```
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>¿Qué hago si no recibo el código de un solo paso después de solicitarlo?
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648832"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797845"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648832"
 - Protección contra amenazas de Microsoft
 
 La `IdentityLogonEvents` tabla del esquema de [búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre las actividades de autenticación realizadas a través de Active Directory local capturado por ATP de Azure y actividades de autenticación relacionadas con Microsoft Online Services capturado por Microsoft Cloud App Security. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+
+>[!TIP]
+> Para obtener información detallada acerca de los tipos de eventos ( `ActionType` valores) admitidos por una tabla, use la [referencia de esquema integrada](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible en el centro de seguridad.
 
 >[!NOTE]
 >En esta tabla se tratan las actividades de inicio de sesión de Azure Active Directory (AD) con seguimiento por Cloud App Security, los inicios de sesión interactivos y las actividades de autenticación mediante ActiveSync y otros protocolos heredados. Los inicios de sesión no interactivos que no están disponibles en esta tabla se pueden ver en el registro de auditoría de Azure AD. [Obtenga más información sobre cómo conectar Cloud App Security a Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
@@ -39,7 +42,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento |
+| `ActionType` | cadena | Tipo de actividad que ha desencadenado el evento. Consulte la [Referencia del esquema del portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más detalles |
 | `LogonType` | string | Tipo de sesión de inicio de sesión, en concreto:<br><br> - **Interactivo** : el usuario interactúa físicamente con el equipo mediante el teclado y la pantalla locales<br><br> - **Inicios de sesión remotos (RDP)** : el usuario interactúa con el equipo de forma remota con escritorio remoto, Terminal Services, asistencia remota u otros clientes RDP.<br><br> - Sesión de **red** iniciada cuando se tiene acceso al equipo con PsExec o cuando se tiene acceso a recursos compartidos en el equipo, como impresoras y carpetas compartidas<br><br> - Sesión **por lotes** iniciada por tareas programadas<br><br> - Sesión de **servicio** iniciada por los servicios a medida que se inician |
 | `Application` | string | Aplicación que realizó la acción grabada |
 | `Protocol` | string | Protocolo de red usado |
@@ -67,6 +70,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)

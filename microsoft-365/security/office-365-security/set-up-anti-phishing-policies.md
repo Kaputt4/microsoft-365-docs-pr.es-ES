@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652722"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804283"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -50,15 +50,37 @@ En la tabla siguiente se describen las diferencias de alto nivel entre las direc
 |Umbrales de suplantación de identidad avanzada||![Marca de verificación](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>En la directiva predeterminada, el nombre y la descripción de la Directiva son de solo lectura (la descripción está en blanco) y no se puede especificar a quién se aplica la Directiva (la directiva predeterminada se aplica a todos los destinatarios).
+<sup>\*</sup> En la directiva predeterminada, el nombre y la descripción de la Directiva son de solo lectura (la descripción está en blanco) y no se puede especificar a quién se aplica la Directiva (la directiva predeterminada se aplica a todos los destinatarios).
 
-Para configurar las directivas contra la suplantación de identidad (phishing), consulte los siguientes temas:
+Para configurar las directivas contra la suplantación de identidad (phishing), vea los siguientes artículos:
 
 - [Configurar directivas contra la suplantación de identidad (phishing) en EOP](configure-anti-phishing-policies-eop.md)
 
 - [Configurar las directivas de protección contra suplantación de ATP en Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-En el resto de este tema se describe la configuración que está disponible en las directivas antiphishing y en las directivas antiphishing de ATP.
+En el resto de este artículo se describe la configuración disponible en las directivas antiphishing y en las directivas antiphishing de ATP.
+
+## <a name="policy-settings"></a>Configuración de directivas
+
+La siguiente configuración de directiva está disponible en las directivas antiphishing y en las directivas antiphishing de ATP:
+
+- **Name**: no se puede cambiar el nombre de la Directiva de suplantación de identidad (phishing) predeterminada, pero puede nombrar y cambiar el nombre de las directivas personalizadas que cree.
+
+- **Descripción** No puede Agregar una descripción a la Directiva de suplantación de identidad (phishing) predeterminada, pero puede Agregar y cambiar la descripción de las directivas personalizadas que cree.
+
+- Se **aplica a**: identifica a los destinatarios internos a los que se aplica la Directiva contra la suplantación de identidad. Este valor es necesario en las directivas personalizadas y no está disponible en la directiva predeterminada (la directiva predeterminada se aplica a todos los destinatarios).
+
+  Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
+
+  - El **destinatario es**: uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
+  - El **destinatario es un miembro de**: uno o más grupos de la organización.
+  - **El dominio del destinatario es**: uno o más de los dominios aceptados configurados en Microsoft 365.
+
+  - **Excepto cuando**: excepciones para la regla. La configuración y el comportamiento son exactamente iguales a las condiciones:
+
+    - **El destinatario es**
+    - **El destinatario es un miembro de**
+    - **El dominio del destinatario es**
 
 ## <a name="spoof-settings"></a>Configuración de suplantación
 
@@ -75,28 +97,34 @@ La siguiente configuración de suplantación está disponible en las directivas 
 
   - **Mover el mensaje a la carpeta de correo no deseado**: este es el valor predeterminado. El mensaje se entrega al buzón y se mueve a la carpeta de correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta correo electrónico no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios deseados. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
+  - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios deseados. Para obtener información acerca de la cuarentena, vea los siguientes artículos:
 
     - [Poner en cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Remitente sin autenticar**: habilita o deshabilita la identificación del remitente sin identificar en Outlook. En particular:
+- **Remitente sin autenticar**: vea la descripción en la siguiente sección.
 
-  - Se agrega un signo de interrogación (?) a la foto del remitente si el mensaje no pasa las comprobaciones de SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication)o de DMARC.
+### <a name="unauthenticated-sender"></a>Remitente sin autenticar
 
-  - La etiqueta Via (chris@contoso.com <u>mediante</u> Michelle@fabrikam.com) se agrega si el dominio de la dirección de remitente (el remitente del mensaje que se muestra en los clientes de correo electrónico) es distinto del dominio de la firma DKIM o de la dirección **remitente** . Para obtener más información acerca de estas direcciones, vea [información general sobre los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+La identificación de remitente sin autenticar forma parte de la [configuración de suplantación](#spoof-settings) de identidad disponible en las directivas antiphishing y en las directivas antiphishing de ATP, tal como se describe en la sección anterior.
 
-  Para evitar que estos identificadores se agreguen a los mensajes de remitentes específicos, tiene las siguientes opciones:
+El valor de configuración de **remitente sin autenticar** habilita o deshabilita la identificación de remitente sin identificar en Outlook. En particular:
 
-  - Permitir que el remitente suplante la Directiva de inteligencia empresarial de suplantación de identidad. Para obtener instrucciones, consulte [configurar inteligencia simulada en Microsoft 365](learn-about-spoof-intelligence.md).
+- Se agrega un signo de interrogación (?) a la foto del remitente si el mensaje no pasa las comprobaciones de SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication)o de DMARC.
 
-  - [Configurar la autenticación de correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio del remitente.
+- La etiqueta Via (chris@contoso.com <u>mediante</u> Michelle@fabrikam.com) se agrega si el dominio de la dirección de remitente (el remitente del mensaje que se muestra en los clientes de correo electrónico) es distinto del dominio de la firma DKIM o de la dirección **remitente** . Para obtener más información acerca de estas direcciones, vea [información general sobre los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+Para evitar que estos identificadores se agreguen a los mensajes de remitentes específicos, tiene las siguientes opciones:
+
+- Permitir que el remitente suplante la Directiva de inteligencia empresarial de suplantación de identidad. Para obtener instrucciones, consulte [configurar inteligencia simulada en Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Configurar la autenticación de correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio del remitente.
   
-    - Para el signo de interrogación de la foto del remitente, SPF o DKIM son los más importantes.
-    - Para la etiqueta Via, confirme el dominio en la firma DKIM o la coincidencia de la dirección **de correo de** (o es un subdominio de) el dominio en la dirección de from.
+  - Para el signo de interrogación de la foto del remitente, SPF o DKIM son los más importantes.
+  - Para la etiqueta Via, confirme el dominio en la firma DKIM o la coincidencia de la dirección **de correo de** (o es un subdominio de) el dominio en la dirección de from.
 
-  Para obtener más información, consulte [identificar mensajes sospechosos en Outlook.com y Outlook en la web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+Para obtener más información, consulte [identificar mensajes sospechosos en Outlook.com y Outlook en la web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Configuración exclusiva en las directivas antiphishing de ATP
 
@@ -105,34 +133,11 @@ En esta sección se describen las opciones de configuración de directivas que s
 > [!NOTE]
 > De forma predeterminada, la configuración exclusiva de ATP no está configurada ni activada, incluso en la directiva predeterminada. Para aprovechar estas características, debe habilitarlas y configurarlas en la Directiva de antiphishing de ATP predeterminada o crear y configurar directivas antiphishing de ATP personalizadas.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Configuración de directivas en las directivas antiphishing de ATP
-
-Las siguientes opciones de configuración de directiva solo están disponibles en las directivas antiphishing de ATP:
-
-- **Name**: no se puede cambiar el nombre de la Directiva de suplantación de identidad (phishing) predeterminada, pero puede nombrar y cambiar el nombre de las directivas personalizadas que cree.
-
-- **Descripción** No puede Agregar una descripción a la Directiva de suplantación de identidad (phishing) predeterminada, pero puede Agregar y cambiar la descripción de las directivas personalizadas que cree.
-
-- Se **aplica a**: identifica a los destinatarios internos a los que se aplica la Directiva contra la suplantación de identidad ATP. Este valor es necesario en las directivas personalizadas y no está disponible en la directiva predeterminada (la directiva predeterminada se aplica a todos los destinatarios).
-
-    Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
-
-  - El **destinatario es**: uno o más buzones de correo, usuarios de correo o contactos de correo de su organización.
-  - El **destinatario es un miembro de**: uno o más grupos de la organización.
-  - **El dominio del destinatario es**: uno o más de los dominios aceptados configurados en Microsoft 365.
-
-  - **Excepto cuando**: excepciones para la regla. La configuración y el comportamiento son exactamente iguales a las condiciones:
-
-    - **El destinatario es**
-    - **El destinatario es un miembro de**
-    - **El dominio del destinatario es**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Configuración de suplantación en las directivas antiphishing de ATP
 
 La suplantación es cuando el dominio de correo electrónico del remitente o del remitente de un mensaje tiene un aspecto similar a un remitente o dominio real:
 
 - Un ejemplo de suplantación del dominio contoso.com es ćóntoso.com.
-
 - Un ejemplo de suplantación del usuario michelle@contoso.com es michele@contoso.com.
 
 De lo contrario, un dominio suplantado podría considerarse legítimo (dominio registrado, registros de autenticación de correo electrónico configurados, etc.), pero su intención es engañar a los destinatarios.
@@ -155,7 +160,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
   - **Mover el mensaje a la carpeta de correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta de correo no deseado. En Exchange Online, el mensaje se mueve a la carpeta correo electrónico no deseado si la regla de correo no deseado está habilitada en el buzón (está habilitada de forma predeterminada). Para obtener más información, consulte [configurar la configuración del correo electrónico no deseado en buzones de Exchange online en Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios deseados. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
+    - **Poner en cuarentena el mensaje**: envía el mensaje a la cuarentena en lugar de a los destinatarios deseados. Para obtener información acerca de la cuarentena, vea los siguientes artículos:
 
     - [Poner en cuarentena en Microsoft 365](quarantine-email-messages.md)
     - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)

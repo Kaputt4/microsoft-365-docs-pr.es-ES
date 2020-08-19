@@ -17,25 +17,27 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: c8024cf08be2259ffa8b6747bebf4943e11e4d60
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695282"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778520"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Puede usar las [etiquetas de retención](retention.md#retention-labels) para marcar el contenido como un registro. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro.
+Para declarar elementos como un registro, use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como un registro. Puede publicar esas etiquetas de modo que los usuarios y administradores puedan aplicarlas manualmente al contenido o aplicarlas automáticamente al contenido que desee marcar como registro.
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 
-Cuando cree una [etiqueta de retención](retention.md#retention-labels), seleccione la opción para marcar el contenido como un registro.
+Cuando cree o configure una etiqueta de retención, seleccione la opción para marcar el contenido como un registro.
 
 >[!NOTE] 
 > La opción para marcar el contenido como un registro no está disponible al crear o configurar las etiquetas de retención de **Gobierno de la información** en el Centro de cumplimiento de Microsoft 365. En su lugar, debe usar **Administración de registros**.
+
+Siga estos pasos para crear una nueva etiqueta de retención que marque el contenido como un registro:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de registros** \> **Plan de archivos**. En la página **Plan de archivos**, seleccione **Crear una etiqueta**.
 
@@ -62,6 +64,4 @@ Ejemplo de un documento marcado como registro con una etiqueta de retención:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si necesita actualizar documentos que son registros, vea [Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive](record-versioning.md).
-
-Para más información sobre la eliminación de registros, consulte [Eliminación del contenido](disposition.md).
+Para obtener una lista de los escenarios admitidos por la administración de registros, vea [Escenarios comunes de la administración de registros](get-started-with-records-management.md#common-scenarios-for-records-management).

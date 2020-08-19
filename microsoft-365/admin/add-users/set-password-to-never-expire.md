@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
-ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f85eb2d3aaf5b19779ea8f293e2cbdc28c1535aa
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387014"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804213"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Establecer la contraseña de un usuario individual que nunca caduque
 
@@ -79,7 +79,7 @@ Ejecute uno de los siguientes comandos:
      }
     ```
 
-- Para obtener un informe de todos los usuarios con PasswordNeverExpires en HTML en el escritorio del usuario actual con el nombre **ReportPasswordNeverExpires. html**
+- Para obtener un informe de todos los usuarios con PasswordNeverExpires en HTML en el escritorio del usuario actual con el nombre  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -87,7 +87,7 @@ Ejecute uno de los siguientes comandos:
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Para obtener un informe de todos los usuarios con PasswordNeverExpires en CSV en el escritorio del usuario actual con el nombre **ReportPasswordNeverExpires. csv**
+- Para obtener un informe de todos los usuarios con PasswordNeverExpires en CSV en el escritorio del usuario actual con el nombre **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -128,4 +128,4 @@ Ejecute uno de los siguientes comandos:
     ```
 
 > [!WARNING]
-> Las contraseñas se establecen para que `-PasswordPolicies DisablePasswordExpiration` sigan siendo obsoletas en función del `pwdLastSet` atributo. Si establece las contraseñas de usuario para que nunca expiren y, a continuación, 90 + días para, las contraseñas expirarán. Según el `pwdLastSet` atributo, si cambia la expiración a `-PasswordPolicies None` , todas las contraseñas que tienen un `pwdLastSet` antigüedad de más de 90 días requieren que el usuario los cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.
+> Cuentas de usuario configuradas con el `-PasswordPolicies DisablePasswordExpiration` parámetro vigencia aún en función del atributo de la `pwdLastSet` cuenta de usuario. Por ejemplo, si establece contraseñas de usuario para que nunca expiren y, a continuación, 90 o más días, las contraseñas seguirán expirando. Según el `pwdLastSet` atributo de la cuenta de usuario, para las cuentas de usuario configuradas con el `-PasswordPolicies None` parámetro, todas las contraseñas con una `pwdLastSet` antigüedad superior a 90 días requieren que el usuario las cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.

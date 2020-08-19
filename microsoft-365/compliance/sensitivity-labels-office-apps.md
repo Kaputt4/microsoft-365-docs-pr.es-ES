@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para equipos de escritorio, móviles y Web, así como las aplicaciones compatibles con las etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c47b97c573822cb44f895296613b70af7f85c93
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656785"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797634"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -95,7 +95,7 @@ Para usar el cliente de etiquetado integrado de Office, debe tener una o más di
 
 Si se cumplen estas dos condiciones, pero necesita desactivar el cliente de etiquetado integrado de Office, use la siguiente configuración de directiva de Grupo:
 
-1. Vaya a **configuración del usuario/Plantillas administrativas/Microsoft Office 2016/configuración de seguridad**
+1. Vaya a **configuración de usuario/Plantillas administrativas/Microsoft Office 2016/configuración de seguridad**.
 
 2. Set **use la característica de confidencialidad de Office para aplicar y ver las etiquetas de confidencialidad** a **0**. 
  
@@ -197,7 +197,7 @@ Además de restringir el acceso a los usuarios de su propia organización, puede
 
 Si los usuarios externos no tienen una cuenta en Azure Active Directory, puede crear una cuenta de invitado para ellos en su espacio empresarial. Para su dirección de correo electrónico, puede especificar cualquier dirección de correo electrónico que ya use. Por ejemplo, su dirección de gmail. Esta cuenta de invitado también se puede usar para obtener acceso a un documento compartido en SharePoint o OneDrive cuando haya [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Los usuarios externos también pueden usar y crear una cuenta de Microsoft para documentos cifrados cuando usan aplicaciones de Microsoft 365 ([anteriormente aplicaciones de Office 365](https://docs.microsoft.com/deployoffice/name-change)) en Windows. Esta funcionalidad aún no es compatible con macOS, Android o iOS. Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica la dirección de correo electrónico de gmail. Este usuario puede crear su propia cuenta de Microsoft que usa su dirección de correo de gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, de acuerdo con las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de un tutorial de este escenario, consulte [abrir y editar el documento protegido](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Los usuarios externos también pueden usar una cuenta de Microsoft para documentos cifrados cuando usan aplicaciones de Microsoft 365 ([anteriormente aplicaciones de Office 365](https://docs.microsoft.com/deployoffice/name-change)) en Windows y ahora en Android (versión 13029 +). Esta funcionalidad aún no es compatible con macOS o iOS. Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica la dirección de correo electrónico de gmail. Este usuario puede crear su propia cuenta de Microsoft que usa su dirección de correo de gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, de acuerdo con las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de un tutorial de este escenario, consulte [abrir y editar el documento protegido](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > La dirección de correo electrónico de la cuenta Microsoft debe coincidir con la dirección de correo electrónico especificada para restringir el acceso a la configuración de cifrado.

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4f7f578aef3612696a8d5ab2a76111ff16d27b7
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 63f95b281dd2284168817a8edd9777c470f01d34
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648892"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797927"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -33,7 +33,10 @@ ms.locfileid: "46648892"
 
 La tabla `EmailEvents` en el [esquema de](advanced-hunting-overview.md) búsqueda avanzada contiene información sobre eventos que implican el procesamiento de mensajes en la ATP de Office 365. Use esta referencia para crear consultas que devuelvan información de esta tabla.
 
-Para obtener información sobre otras tablas en el esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
+>[!TIP]
+> Para obtener información detallada acerca de los tipos de eventos ( `ActionType` valores) admitidos por una tabla, use la [referencia de esquema integrada](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) disponible en el centro de seguridad.
+
+Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
@@ -42,12 +45,12 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 | `NetworkMessageId` | cadena | Identificador único del correo electrónico generado por Microsoft 365 |
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
 | `SenderMailFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
-| `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado FROM, que es visible para los destinatarios del correo electrónico en los clientes de correo. |
+| `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
 | `SenderMailFromDomain` | cadena | Dominio de remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromDomain` | cadena | Dominio del remitente en el encabezado FROM, que es visible para los destinatarios del correo electrónico en los clientes de correo. |
 | `SenderIPv4` | cadena | Dirección IPv4 del último servidor de correo detectado que retransmitió el mensaje. |
 | `SenderIPv6` | cadena | Dirección IPv6 del último servidor de correo detectado que retransmitió el mensaje. |
-| `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario o dirección de correo del destinatario después de la expansión de la lista de distribución. |
+| `RecipientEmailAddress` | cadena | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
 | `Subject` | cadena | Asunto del correo electrónico. |
 | `EmailClusterId` | cadena | Identificador para el grupo de correos electrónicos similares agrupados según el análisis heurístico de su contenido. |
 | `EmailDirection` | cadena | Dirección del correo electrónico relativo a su red: entrante, saliente, dentro de la organización. |
@@ -55,7 +58,7 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
 | `PhishFilterVerdict` | cadena | Veredicto sobre la pila de correos electrónicos filtrados para determinar si el correo es para suplantar la identidad: suplantar identidad o no suplantar identidad. |
 | `PhishDetectionMethod` | cadena | Método que se usa para detectar que el correo electrónico es para suplantar la identidad: reputación de URL malintencionada, desactivación de URL de vínculos seguros ATP, filtro avanzado contra suplantar identidad, filtro general contra suplantar identidad, contra la suplantación de identidad: dentro de la organización o contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca. |
-| `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de correos electrónicos filtrados para determinar si el correo contiene software malintencionado: software malintencionado, sin software malintencionado. |
+| `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
 | `MalwareDetectionMethod` | cadena | Método utilizado para detectar el software malintencionado en el correo electrónico: motor contra el software malintencionado, reputación del archivo, datos adjuntos seguros de ATP. |
 | `FinalEmailAction` | cadena | Acción final tomada sobre el correo electrónico basada en el veredicto del filtro, las directivas y las acciones del usuario: mover el mensaje a la carpeta correo no deseado, agregar encabezado X, modificar el asunto, redirigir mensaje, eliminar mensaje, enviar a cuarentena, no realizar ninguna acción, enviar mensaje con CCO. |
 | `FinalEmailActionPolicy` | cadena | Directiva de acciones que entró en vigor: correo electrónico no deseado con alto nivel de confianza, correo electrónico no deseado, correo electrónico no deseado masivo, correo electrónico no deseado de suplantación de identidad, suplantación de un dominio protegido contra la suplantación de identidad, suplantación de un usuario protegido contra la suplantación de identidad, suplantación de identidad en contra de las medidas contra la suplantación de identidad, suplantación del gráfico contra la suplantación de identidad, contra el software malintencionado, datos adjuntos seguros, reglas de transporte empresarial (RTE). |
@@ -68,6 +71,6 @@ Para obtener información sobre otras tablas en el esquema de búsqueda avanzada
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
-- [Búsqueda en dispositivos, mensajes de correo electrónico, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
+- [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
