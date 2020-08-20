@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: fcf13314d7206837f10459ed8c0a44e5d41f219b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: c9b4ac4cff7ad8166caa28b89e1195d98b3f6d27
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780198"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814461"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
@@ -129,7 +129,5 @@ Después de registrar su dominio (en un registrador de dominios), inicie sesión
 [Agregar un dominio a Microsoft 365](../setup/add-domain.md)
 
 [Preguntas más frecuentes de dominios](../setup/domains-faq.md)
-
-[Obtener ayuda con los dominios](get-help-with-domains.md)
 
 [Actualice los registros DNS para mantener su sitio web con su proveedor de hospedaje actual](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

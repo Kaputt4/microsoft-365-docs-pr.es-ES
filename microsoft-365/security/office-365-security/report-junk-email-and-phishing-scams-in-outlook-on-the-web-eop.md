@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las opciones integradas de correo no deseado, correo no deseado y suplantación de identidad en Outlook en la web (Outlook Web App) en Exchange Online y cómo deshabilitar estas opciones de informes para los usuarios.
-ms.openlocfilehash: adbb4f16201e221bce2405a7b715dd6a630e9e1d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a364afed9bb7e61d5f34ffc0206ede1c5155db65
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617325"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818338"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Informar del correo electrónico no deseado y de suplantación de identidad en Outlook en la web en Exchange Online
 
@@ -49,9 +49,9 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange Online, puede 
 
 2. En el cuadro de diálogo que aparece, haga clic en **Informe**. Si cambia de opinión, haga clic en **no informar**.
 
-   ![Informar como cuadro de diálogo de correo no deseado](../../media/owa-report-as-junk-dialog.png)
-
-   ![Cuadro de diálogo Notificar como phishing](../../media/owa-report-as-phishing-dialog.png)
+   |Desea|Suplantación de identidad (phishing)|
+   |:---:|:---:|
+   |![Informar como cuadro de diálogo de correo no deseado](../../media/owa-report-as-junk-dialog.png)|![Cuadro de diálogo Notificar como phishing](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Los mensajes seleccionados se enviarán a Microsoft para su análisis. Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
 
@@ -67,9 +67,9 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange Online, puede 
 
 2. En el cuadro de diálogo que aparece, lea la información y haga clic en **Informe**. Si cambia de opinión, haga clic en **no informar**.
 
-   ![Cuadro de diálogo informar como correo deseado](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Cuadro de diálogo Notificar como phishing](../../media/owa-report-as-phishing-dialog.png)
+   |Correo deseado|Suplantación de identidad (phishing)|
+   |:---:|:---:|
+   |![Cuadro de diálogo informar como correo deseado](../../media/owa-report-as-not-junk-dialog.png)|![Cuadro de diálogo Notificar como phishing](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Los mensajes seleccionados se enviarán a Microsoft para su análisis. Para confirmar que los mensajes se han enviado, abra la carpeta **Mensajes enviados** para ver los mensajes enviados.
 
@@ -115,7 +115,7 @@ De forma predeterminada, los usuarios pueden notificar falsos positivos de corre
 
 Para obtener información más detallada acerca de la sintaxis y los parámetros, consulte [Get-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) y [set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Para comprobar que ha habilitado o deshabilitado correctamente la notificación de correo no deseado en Outlook en la web, siga uno de estos pasos:
 
@@ -129,7 +129,7 @@ Para comprobar que ha habilitado o deshabilitado correctamente la notificación 
 
 - Abrir el buzón de un usuario afectado en Outlook en la web, seleccione un mensaje en la carpeta de correo no deseado **, haga clic en correo no deseado** \> **Junk** y compruebe que la pregunta para informar del mensaje a Microsoft es o no se muestra.<sup>\*</sup>
 
-<sup>\*</sup>Los usuarios pueden ocultar el mensaje para informar del mensaje mientras están notificando el mensaje. Para comprobar esta configuración en Outlook en la web:
+<sup>\*</sup> Los usuarios pueden ocultar el mensaje para informar del mensaje mientras están notificando el mensaje. Para comprobar esta configuración en Outlook en la web:
 
 1. Haga clic en **configuración** ![ Outlook en el icono de configuración del Web ](../../media/owa-settings-icon.png) \> **ver todo** el \> **correo electrónico no deseado**de configuración de Outlook.
 2. En la sección **informes** , compruebe el valor: **preguntarme antes de enviar un informe**.

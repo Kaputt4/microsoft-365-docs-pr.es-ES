@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635039"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814519"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -279,6 +279,123 @@ Para la vista de detalles, solo puede exportar datos de un día. Por lo tanto, s
 Cada archivo. csv exportado está limitado a 150.000 filas. Si los datos de ese día contienen más de 150.000 filas, se crearán varios archivos. csv.
 
 ![Vista de dirección en el informe de estado de flujo de notificación ](../../media/mail-flow-status-report-direction-view.png)
+
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Vista de embudo para el informe de estado de flujo de información
+
+La vista de **embudo** muestra cómo las características de protección contra amenazas de correo electrónico de Microsoft filtran el correo entrante y saliente de su organización. Proporciona detalles sobre el recuento de correo electrónico total y cómo las características de protección contra amenazas configuradas, incluida la protección perimetral, anti-malware, antiphishing, contra correo no deseado y contra la suplantación de identidad afectan a este recuento.
+
+Si hace clic en la ficha **embudo** , de forma predeterminada, esta vista contendrá un gráfico y una tabla de datos configurada con los siguientes filtros:
+
+- **Fecha**: los últimos 7 días.
+
+- **Dirección**:
+
+  - **Entrada**
+  - **Saliente**
+  - **Dentro de la organización**: este recuento es para los mensajes enviados en un espacio empresarial; es decir, el abc@domain.com del remitente envía al destinatario xyz@domain.com (contado por separado de entrante y saliente).
+
+La vista agregada y la vista de tabla de datos permiten 90 días de filtrado.
+
+Si hace clic en **filtrar**, puede filtrar tanto el gráfico como la tabla de datos.
+
+Este gráfico muestra el número de correos electrónicos organizados por:
+
+  - **Correo electrónico total**
+  - **Correo electrónico tras la protección perimetral**
+  - **Correo electrónico después de anti-malware, reputación de archivo, bloque de tipo de archivo**
+  - **Correo electrónico después de antiphishing, reputación de dirección URL, suplantación de marca, anti-falseamiento**
+  - **Correo electrónico después de la protección contra correo no deseado, filtrado de correo masivo**
+  - **Correo electrónico después de suplantación de usuario y dominio**<sup>1</sup>
+  - **Correo electrónico después de detonación de archivo y URL**<sup>1</sup>
+  - **Correo electrónico detectado como benigno después de la protección tras la entrega (dirección URL, clic en protección del tiempo)**
+
+<sup>1</sup> solo para ATP de Office 365
+
+Para ver el correo electrónico filtrado por EOP o ATP por separado, haga clic en el valor de la leyenda del gráfico.
+
+La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
+
+ - **Fecha**
+ - **Correo electrónico total**
+ - **Protección perimetral**
+ - **Anti-malware, reputación de archivos, bloque de tipo de archivo**
+ - **Anti-phish, reputación de dirección URL, suplantación de marca, antifalsificación**
+ - **Contra correo electrónico no deseado, filtrado de correo masivo**
+ - **Suplantación de usuario y dominio (ATP)**
+ - **Detonación de archivo y dirección URL (ATP)**
+ - **Protección tras entrega y ZAP (ATP) o ZAP (EOP)**
+
+Si selecciona una fila en la tabla de datos, se muestra un desglose de los recuentos de correo electrónico en el control flotante.
+
+**Exportar**:
+
+Después de hacer clic en **exportar** en **Opciones**, puede seleccionar uno de los siguientes valores:
+
+- **Resumen (con datos para los últimos 90 días como máximo)**
+- **Detalles (con datos de 30 últimos días como máximo)**
+
+En **fecha**, elija un rango y, a continuación, haga clic en **aplicar**. Los datos de los filtros actuales se exportarán a un archivo. csv.
+
+Cada archivo. csv exportado está limitado a 150.000 filas. Si los datos contienen más de 150.000 filas, se crearán varios archivos. csv.
+
+ ![Vista de embudo en el informe de estado de flujo de notificación ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### <a name="tech-view-for-the-mailflow-status-report"></a>Vista técnica del informe de estado de flujo de información
+
+La **vista técnica** es similar a la vista de **embudo** y proporciona detalles más granulares para las características de protección contra amenazas configuradas. Desde el gráfico, puede ver cómo se clasifican los mensajes en las diferentes etapas de la protección contra amenazas.
+
+Si hace clic en la pestaña **vista técnica** , de forma predeterminada, esta vista contendrá un gráfico y una tabla de datos configurada con los siguientes filtros:
+
+- **Fecha**: los últimos 7 días.
+
+- **Dirección**:
+
+  - **Entrada**
+  - **Saliente**
+  - **Dentro de la organización**: este recuento es para los mensajes dentro de un espacio empresarial es decir el remitente abc@domain.com envía al destinatario xyz@domain.com (cuenta por separado de entrada y de salida)
+
+La vista agregada y la vista de tabla de datos permiten 90 días de filtrado.
+
+Si hace clic en **filtrar**, puede filtrar tanto el gráfico como la tabla de datos.
+
+Este gráfico muestra los mensajes organizados en las siguientes categorías:
+
+  - **Correo electrónico total**
+  - **Límite permitido, perimetral filtrado**
+  - **No es malware, detección de datos adjuntos seguros (ATP), detección del motor antimalware, bloqueo de reglas**
+  - **No phish, error de DMARC, detección de suplantación, detección de suplantación de identidad, detección de phish**
+  - **Sin detección con detonación de dirección URL, detección de detonación de dirección URL (ATP)**
+  - **No es correo no deseado, correo no deseado**
+  - **Correo electrónico no malintencionado, detección de vínculos seguros (ATP), ZAP**
+
+Cuando desplaza el puntero sobre una categoría del gráfico, puede ver el número de mensajes que hay en esa categoría.
+
+La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
+
+  - **Fecha**  
+  - **Correo electrónico total**
+  - **Borde filtrado**
+  - **Motor antimalware, datos adjuntos seguros, regla filtrado**
+  - **DMARC, suplantación, falsificación, phish filtrado**
+  - **Detección de detonación de dirección URL**
+  - **Filtrado contra correo electrónico no deseado**
+  - **ZAP quitado**
+  - **Detección por vínculos seguros**
+
+Si selecciona una fila en la tabla de datos, se muestra un desglose de los recuentos de correo electrónico en el control flotante.
+
+**Exportar**:
+
+Al hacer clic en **exportar**, en **Opciones** , puede seleccionar uno de los siguientes valores:
+
+- **Resumen (con datos para los últimos 90 días como máximo)**
+- **Detalles (con datos de 30 últimos días como máximo)**
+
+En **fecha**, elija un rango y, a continuación, haga clic en **aplicar**. Los datos de los filtros actuales se exportarán a un archivo. csv.
+
+Cada archivo. csv exportado está limitado a 150.000 filas. Si los datos contienen más de 150.000 filas, se crearán varios archivos. csv.
+
+ ![Vista de Tech en el informe de estado de flujo de información ](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Informe de correo electrónico enviado y recibido
 

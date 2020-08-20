@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 57e52cc4f44e41d31200b8b5469aed6c36b63d24
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079766"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814425"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 
@@ -48,7 +48,7 @@ ms.locfileid: "45079766"
 
 ::: moniker range="o365-worldwide"
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centro de administración</a>.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a>.
 
 2. Seleccione **usuarios** > **activos**.
 
@@ -64,7 +64,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 ::: moniker range="o365-germany"
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>.  
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración</a>.  
 
 2. Seleccione **usuarios** > **activos**.
 
@@ -80,7 +80,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.  
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>.  
 
 2. Seleccione **usuarios** > **activos**.
 
@@ -98,7 +98,7 @@ Tendrá que realizar esta acción también para su propio usuario si se encuentr
 
 ::: moniker range="o365-worldwide"
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>.
 
 2. Vaya a **usuarios** \> **activos**y seleccione su cuenta de la lista.
 
@@ -228,8 +228,6 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Preguntas más frecuentes de dominios](../setup/domains-faq.md)
-
-[Obtener ayuda con los dominios de 365 de Microsoft](get-help-with-domains.md)
 
 [Cambiar a otro plan de Microsoft 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
