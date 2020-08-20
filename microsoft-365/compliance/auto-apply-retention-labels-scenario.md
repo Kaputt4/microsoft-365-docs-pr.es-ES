@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560673"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778550"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -107,7 +107,7 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 - **Duración de la retención:** 5 años (1 825 días).
 
-- **Etiqueta de registro**: configure la etiqueta de retención para clasificar el contenido como un [*registro*](records.md). (Los usuarios no pueden modificar ni eliminar los documentos clasificados como un *registro*).
+- **Etiqueta de registro**: configurar la etiqueta de retención para clasificar el contenido como un [registro](records-management.md#records). (Los usuarios no pueden modificar ni eliminar los documentos clasificados como un *registro*).
 
 - **Descriptores del plan de archivos:** (para simplificar el escenario, no se proporcionan descriptores de archivo)
 
