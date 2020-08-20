@@ -14,18 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente las capacidades de Microsoft Information Governance en Microsoft 365 para regir los datos según los requisitos normativos o de cumplimiento normativo.
-ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804248"
+ms.locfileid: "46815193"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de información de Microsoft en Microsoft 365
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use las capacidades de Microsoft Information Governance (a veces abreviado para MIG) para regir los datos según los requisitos normativos o de cumplimiento.
+
+¿Desea proteger sus datos? Consulte [protección de la información de Microsoft en microsoft 365](protect-information.md).
 
 ## <a name="information-governance"></a>Gobierno de la información
 

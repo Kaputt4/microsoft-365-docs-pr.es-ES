@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos para los documentos en un conjunto de revisión en un caso en eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 69b22155f209f155aa0b311f67f3e69841093003
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126957"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814392"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
@@ -93,12 +93,17 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Fecha de creación del sistema de archivos||File_system_date_created|Fecha de creación desde el sistema de archivos (solo se aplica a los datos que no son de Office 365).|
 |Fecha del sistema de archivos modificada||File_system_date_modified|Fecha de modificación del sistema de archivos (solo se aplica a los datos que no son de Office 365).|
 |Tipo de archivo|FileType||Tipo de archivo del elemento en función de la extensión de archivo.|
+|Identificador de grupo| GroupID|  |IDENTIFICADOR de grupo para contenido agrupado.|
 |Tiene datos adjuntos|HasAttachment|Email_has_attachment|Indica si el mensaje tiene o no datos adjuntos.|
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **false**.|
 |HasText||Has_text|Indica si el elemento tiene texto; los valores posibles son **true** y **false**.|
 |Identificador inmutable||Immutable_ID|Este identificador se usa para identificar de forma única un documento dentro de un conjunto de revisión. Este campo no se puede usar en una búsqueda de conjunto de revisión y el identificador no puede usarse para obtener acceso a un documento en su ubicación nativa.|
 |Tipo inclusivo|InclusiveType|Inclusive_type|Tipo inclusivo calculado para análisis: **0** -no inclusivo; **1** -ambos inclusive; **2** -inclusive menos; **3** -copia inclusiva.|
 |En responder a ID.||In_reply_to_ID|En responder al identificador del mensaje.|
+|Se trata de datos adjuntos modernos| IsModernAttachment|  |Este archivo es un archivo adjunto moderno o vinculado.|
+|Es de la versión del documento | IsFromDocumentVersion |  |El documento actual es de una versión diferente de otro documento.|
+|Es datos adjuntos de correo electrónico | IsEmailAttachment|  |Este elemento procede de un archivo adjunto de correo electrónico que se muestra como un elemento adjunto al mensaje.|
+|Se trata de datos adjuntos en línea| IsInlineAttachment|  |Esto se adjuntó en línea y se muestra en el cuerpo del mensaje.|
 |Es representativo|IsRepresentative|Is_representative|Un documento de cada conjunto de duplicados exactos se marca como representativo.|
 |Clase Item|ItemClass|Item_class|Clase de elemento proporcionada por Exchange Server; por ejemplo, **IPM. Nota:**|
 |Última modificación|LastModifiedDate|Doc_date_modified|Fecha de última modificación de los metadatos del documento.|
@@ -143,7 +148,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 |Puntuación de relevancia|RelevanceScore||Puntuación de relevancia de un documento en función de su relevancia.|
 |Etiqueta de relevancia|RelevanceTag||Puntuación de relevancia de un documento en función de su relevancia.|
 |IDENTIFICADOR representativo|RepresentativeId||Identificador numérico de cada conjunto de duplicados exactos.|
-|Sender|Sender|Email_sender|Campo de remitente (de) para los tipos de mensaje. Format es **displayName \<SmtpAddress> **.|
+|Remitente|Remitente|Email_sender|Campo de remitente (de) para los tipos de mensaje. Format es **displayName \<SmtpAddress> **.|
 |Remitente/autor|SenderAuthor||Campo calculado formado por el remitente o el autor del elemento.|
 |Dominio del remitente|SenderDomain|Email_sender_domain|Dominio del remitente.|
 |Sent|Sent|Email_date_sent|Fecha de envío del mensaje.|

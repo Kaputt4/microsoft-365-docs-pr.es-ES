@@ -14,19 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Implemente las capacidades de Microsoft Information Protection (MIP) en Microsoft 365 para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
-ms.openlocfilehash: 058a1b46f879b2cc4b8ada8f2a5de88717958e94
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+description: Implemente las capacidades de Microsoft Information Protection (MIP) mediante el cumplimiento de Microsoft 365 para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
+ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804190"
+ms.locfileid: "46815212"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Protección de la información de Microsoft en Microsoft 365
 
 >*[Licencias para el cumplimiento de & de seguridad de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Use las capacidades de Microsoft Information Protection (a menudo, abreviado de MIP) para ayudarle a descubrir, clasificar y proteger información confidencial dondequiera que se encuentre o se desplace.
+Usar Microsoft Information Protection (MIP) para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
+
+Las funcionalidades de MIP se incluyen con el cumplimiento de Microsoft 365 y le proporcionan las herramientas necesarias para [conocer sus datos](#know-your-data), [proteger sus datos](#protect-your-data)y [evitar la pérdida de datos](#prevent-data-loss).
+
+![Conocer los datos, proteger los datos, evitar la pérdida de datos, regir los datos](../media/powered-by-intelligent-platform.png)
+
+Para obtener información sobre el control de los datos, vea [Microsoft Information Governance en microsoft 365](manage-Information-governance.md).
 
 ## <a name="know-your-data"></a>Conocer los datos
 
