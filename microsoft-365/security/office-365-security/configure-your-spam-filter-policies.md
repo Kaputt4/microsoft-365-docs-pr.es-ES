@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656820"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804225"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -31,39 +31,24 @@ Los administradores pueden ver, editar y configurar (pero no eliminar) la direct
 
 Puede configurar directivas contra correo no deseado en el Centro de seguridad y cumplimiento o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Directivas contra el correo no deseado en el Centro de seguridad y cumplimiento vs PowerShell
-
-Los elementos básicos de una directiva contra correo no deseado en EOP son:
+Los elementos básicos de una directiva contra correo no deseado son:
 
 - **La directiva de filtro de correo no deseado**: especifica las acciones para los veredictos de filtro de correo no deseado y las opciones de notificación.
-
 - **La regla de filtro de correo no deseado**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la directiva) de una directiva de filtro de correo no deseado.
 
 La diferencia entre estos dos elementos no es obvia cuando administra directivas contra correo no deseado en el Centro de seguridad y cumplimiento:
 
-- Cuando crea una directiva contra correo no deseado en el Centro de seguridad y cumplimiento, en realidad está creando una regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada al mismo tiempo con el mismo nombre para ambas.
+- Cuando crea una directiva contra correo no deseado, en realidad, está creando una regla de filtro de correo no deseado y, al mismo tiempo, la directiva de filtro de correo no deseado asociada a esta, con el mismo nombre para ambas.
+- Al modificar una directiva contra correo no deseado, las opciones de configuración relacionadas con el nombre, la prioridad, el activado o desactivado y los filtros de destinatarios modifican la regla de filtro de correo no deseado. Todas las demás opciones modifican la directiva de filtro de correo no deseado asociada.
+- Cuando se quita una directiva contra correo no deseado, se elimina la regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada.
 
-- Al modificar una directiva contra correo no deseado en el Centro de seguridad y cumplimiento, las opciones de configuración relacionadas con el nombre, la prioridad, el activado o desactivado y los filtros de destinatarios modifican la regla de filtro de correo no deseado. Todas las demás opciones modifican la directiva de filtro de correo no deseado asociada.
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para más información, consulte la sección [Uso de Exchange Online PowerShell o EOP PowerShell independiente para configurar directivas contra correo no deseado](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies), que se muestra más adelante en este mismo tema.
 
-- Cuando se quita una directiva contra correo no deseado del Centro de seguridad y cumplimiento, se elimina la regla de filtro de correo no deseado y la directiva de filtro de correo no deseado asociada.
+Cada organización tiene una directiva contra correo no deseado integrada que se denomina Predeterminada, que tiene estas propiedades:
 
-La diferencia entre las directivas de filtro de correo no deseado y las reglas de filtro de correo no deseado en Exchange Online PowerShell o en EOP PowerShell es importante. Para administrar las directivas de filtro de correo no deseado usará los cmdlets de **\*-HostedContentFilterPolicy** y para administrar las reglas de filtro de correo no deseado, los cmdlets de **\*-HostedContentFilterRule**.
-
-- En PowerShell, la directiva de filtro de correo no deseado se crea en primer lugar y, después, se crea la regla de filtro de correo no deseado que identifica la directiva a la que se aplica la regla.
-
-- En PowerShell, las opciones de configuración de la directiva de filtro de correo no deseado y la regla de filtro de correo no deseado se modifican por separado.
-
-- Al quitar una directiva de filtro de correo no deseado de PowerShell, la regla de filtro de correo no deseado correspondiente no se quita automáticamente, y viceversa.
-
-### <a name="default-anti-spam-policy"></a>Directiva contra correo no deseado predeterminada
-
-Cada organización tiene una directiva contra correo no deseado integrada denominada Predeterminada que tiene estas propiedades:
-
-- La directiva de filtro de correo no deseado denominada Predeterminada se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla de filtro de correo no deseado (filtros de destinatarios) asociada a la directiva.
-
-- La directiva denominada Predeterminada tiene un valor de prioridad personalizado **Inferior** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor que la directiva denominada Predeterminada.
-
-- La directiva denominada Predeterminada es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar la directiva predeterminada.
+- La directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla de filtro de correo no deseado (filtros de destinatarios) asociada a la directiva.
+- La directiva tiene un valor de prioridad personalizado **Mínimo** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor.
+- La directiva es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar esta directiva predeterminada.
 
 Para aumentar la eficacia del filtrado de correo no deseado, puede crear directivas de bloqueo de correo no deseado personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
@@ -320,7 +305,9 @@ No se puede deshabilitar la directiva contra correo no deseado predeterminada.
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Establecer la prioridad de las directivas contra correo no deseado personalizadas
 
-De manera predeterminada, a las directivas contra correo no deseado se les asigna una prioridad en función del orden en que se crearon (las directivas más recientes tienen una prioridad menor que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Dos directivas no pueden tener la misma prioridad.
+De manera predeterminada, a las directivas contra correo no deseado se les asigna una prioridad en función del orden en que se crearon (las directivas más recientes tienen una prioridad menor que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
+
+Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
 Las directivas contra correo no deseado personalizadas se muestran en el orden en que se procesan (la primera directiva tiene el valor de **Prioridad** 0). La directiva contra correo no deseado predeterminada denominada **Directiva de filtro de correo no deseado predeterminada** tiene el valor de prioridad **Mínimo**, y no puede cambiarlo.
 
@@ -383,6 +370,14 @@ No puede quitar la directiva predeterminada.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Uso de Exchange Online PowerShell o EOP PowerShell para configurar directivas contra correo no deseado
 
+Como se describió anteriormente, una directiva contra correo no deseado consiste en una directiva de filtro de correo no deseado y una regla de filtro de correo no deseado.
+
+La diferencia entre las directivas de filtro de correo no deseado y las reglas de filtro de correo no deseado en Exchange Online PowerShell o en EOP PowerShell es importante. Para administrar las directivas de filtro de correo no deseado usará los cmdlets de **\*-HostedContentFilterPolicy** y para administrar las reglas de filtro de correo no deseado, los cmdlets de **\*-HostedContentFilterRule**.
+
+- En PowerShell, la directiva de filtro de correo no deseado se crea en primer lugar y, después, se crea la regla de filtro de correo no deseado que identifica la directiva a la que se aplica la regla.
+- En PowerShell, las opciones de configuración de la directiva de filtro de correo no deseado y la regla de filtro de correo no deseado se modifican por separado.
+- Al quitar una directiva de filtro de correo no deseado de PowerShell, la regla de filtro de correo no deseado correspondiente no se quita automáticamente, y viceversa.
+
 Las siguientes opciones de configuración de directivas contra correo no deseado solo están disponibles en PowerShell:
 
 - El parámetro _MarkAsSpamBulkMail_ que es `On` de forma predeterminada. Los efectos de esta opción se explicaron anteriormente en este tema, en la sección [Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado](#use-the-security--compliance-center-to-create-anti-spam-policies).
@@ -398,7 +393,6 @@ Las siguientes opciones de configuración de directivas contra correo no deseado
 La creación de una directiva contra correo no deseado en PowerShell es un proceso de dos pasos:
 
 1. Cree la directiva de filtro de correo no deseado.
-
 2. Cree la regla de filtro de correo no deseado que especifica la directiva de filtro de correo no deseado a la que se aplica la regla.
 
  **Notas**:
@@ -408,7 +402,6 @@ La creación de una directiva contra correo no deseado en PowerShell es un proce
 - Puede configurar las siguientes opciones de nuevas directivas de filtro de correo no deseado en PowerShell, que no estarán disponibles en el Centro de seguridad y cumplimiento hasta que cree la directiva:
 
   - Crear la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-HostedContentFilterRule**).
-
   - Establecer la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_) en el cmdlet **New-HostedContentFilterRule**).
 
 - No se puede ver ninguna directiva de filtro de correo no deseado nueva que cree en PowerShell en el Centro de seguridad y cumplimiento hasta que asigne la directiva a una regla de filtro de correo no deseado.
