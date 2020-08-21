@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los códigos de error más comunes en los informes de no entrega (también conocidos como NDR o mensajes de devolución) de los remitentes de su organización.
-ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577437"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826922"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el centro de seguridad & cumplimiento
 

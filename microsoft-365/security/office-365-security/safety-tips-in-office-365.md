@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo EOP y Office 365 protegen contra el correo no deseado, el phishing y la prevención de malware al agregar una sugerencia de seguridad a la parte superior de los correos electrónicos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fb461619aaacafad86bb3c53731526fd00047a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209156"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827486"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sugerencias de seguridad en mensajes de correo electrónico
 
@@ -58,7 +58,6 @@ La sugerencia de seguridad (un mensaje codificado por colores) le avisará de lo
     También le informaremos cuando omitimos la comprobación de correo, ya que procede de un remitente en el que confía en la lista de remitentes seguros o si existe una regla de flujo de correo para omitir el filtrado.
 
     La sugerencia de seguridad gris también aparece cuando se bloquean las imágenes externas, es decir, el mensaje está en la bandeja de entrada y no parece que sea correo no deseado, pero contiene imágenes externas que no ha decidido descargar.
-    
 
 ## <a name="working-with-safety-tips"></a>Trabajar con sugerencias de seguridad
 

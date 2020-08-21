@@ -8,7 +8,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina la Directiva que se aplica.
-ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653683"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827414"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección del correo electrónico
 
@@ -38,7 +38,7 @@ Hay dos factores principales que determinan la Directiva que se aplica a un mens
   |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
   |---|---|---|---|
   |1|Malware|CAT: MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
-  |2|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+  |segundo|Phishing|CAT: PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |3|Correo no deseado de alta confianza|CAT: HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |4 |Suplantación|CAT: SUPLANTACIÓN DE IDENTIDAD|[Configurar inteligencia de identidades en EOP](learn-about-spoof-intelligence.md)|
   |5 |Correo no deseado|CAT: SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
@@ -60,7 +60,7 @@ Por ejemplo, considere las siguientes directivas antiphishing de ATP **que se ap
   |Directiva contra la suplantación de identidad ATP|Priority|Suplantación de usuario|Directiva contra la suplantación|
   |---|---|---|---|
   |Directiva A|1|Activada|Desactivada|
-  |Directiva B|2|Desactivada|Activada|
+  |Directiva B|segundo|Desactivada|Activada|
   |
 
 1. El mensaje se marca y se trata como falso, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación del usuario (8).

@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653646"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827056"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -369,7 +369,7 @@ Un valor de **custom_data** que empieza por `S:AMA` es del agente de filtro de m
 
 |Valor|Description|
 |---|---|
-|`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
+|`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM` indica que el malware podría haber sido detectado por cualquier número de motores. `EV` indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
 |`Action=p`|El mensaje se omitió.|
 |`Action=d`|El mensaje se difirió.|
@@ -398,7 +398,7 @@ Un valor de **custom_data** que empieza por `S:TRA` es del agente de reglas de t
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
 |`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>* **Exigir**: se exigirán todas las acciones de la regla. <br/>* **Probar con sugerencias de directivas:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>* **Probar sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
+|`Mode=<Mode>`|El modo de la regla. Los valores válidos son:<ul><li>**Exigir**: se exigirán todas las acciones de la regla.</li><li>**Probar con sugerencias de directivas:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación.</li><li>**Probar sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.</li></ul>|
 |
 
 Un ejemplo de un valor **custom_data** para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:

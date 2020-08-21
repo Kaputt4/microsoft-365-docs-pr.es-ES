@@ -6,18 +6,18 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre las opiniones y los informes que están disponibles en el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577798"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826570"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -47,7 +47,7 @@ Los conocimientos disponibles son los siguientes:
 
 - [Información de colas](mfi-queue-alerts-and-queues.md)
 
-- [Informes y conocimiento del cliente de autenticación SMTP](mfi-smtp-auth-clients-report.md)
+- [Información e informes de clientes de autenticación SMTP](mfi-smtp-auth-clients-report.md)
 
 - [Información de estado de flujo de correo de dominio superior](mfi-domain-mail-flow-status-insight.md)
 

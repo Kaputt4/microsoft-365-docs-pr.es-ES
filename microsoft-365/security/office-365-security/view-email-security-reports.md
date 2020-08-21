@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están disponibles en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 2b714d9dc4e3ca143d2cb2d7164f8c3c737d1928
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578035"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826510"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -274,7 +274,7 @@ El informe proporciona un recuento agregado de mensajes de correo electrónico �
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione estado de **protección contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
 - Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Widget de estado de protección contra amenazas en el panel de informes](../../media/threat-protection-status-report-widget.png)
 

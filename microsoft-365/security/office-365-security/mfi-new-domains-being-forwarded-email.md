@@ -1,22 +1,22 @@
 ---
-title: Nuevos dominios que se reenvían el conocimiento de correo electrónico
+title: Información de nuevos dominios a los que se reenvía correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos dominios que reenvían el conocimiento del correo electrónico en el centro de administración de Exchange moderno para investigar Cuándo los usuarios de la organización reenvían mensajes a dominios externos a los que nunca se ha reenviado.
-ms.openlocfilehash: 81a596d48696f28d62d68594f27081435487d17f
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 0b4cd0490feebc8e05deb889b3cf54e1ea9f5928
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578445"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826934"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
 
@@ -26,7 +26,7 @@ El **nuevo dominio que se va a reenviar** le informa de que los usuarios de su o
 
 Esta información sólo aparece cuando se detecta el problema y aparece en la página de [reenvío del informe](view-mail-flow-reports.md#forwarding-report) .
 
-![Nuevos dominios que se reenvían el conocimiento de correo electrónico](../../media/mfi-new-domains-being-forwarded.png)
+![Información de nuevos dominios a los que se reenvía correo electrónico](../../media/mfi-new-domains-being-forwarded.png)
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al [Informe de reenvío](view-mail-flow-reports.md#forwarding-report).
 

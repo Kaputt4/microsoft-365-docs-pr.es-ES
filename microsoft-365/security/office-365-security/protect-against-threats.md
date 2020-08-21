@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre la protección contra amenazas en Microsoft 365 y configurar cómo usarla para su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656639"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826830"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -32,7 +32,7 @@ Microsoft 365 incluye una variedad de características de protección contra ame
 > [!IMPORTANT]
 > **Se incluye la configuración recomendada inicial para cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades específicas de su organización**. Espere unos 30 minutos para que las directivas o los cambios funcionen a través del centro de proceso de trabajo.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -110,7 +110,7 @@ Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), de
 
 5. Haga clic en **Guardar**.
 
-6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro **DisallowInfectedFileDownload** establecido en *true* para su entorno de Microsoft 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)
+6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con el parámetro **DisallowInfectedFileDownload** establecido en  *true* para su entorno de Microsoft 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)
 
 Para obtener más información, consulte [configurar las directivas de datos adjuntos seguros de office 365 ATP](set-up-atp-safe-attachments-policies.md) y [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 

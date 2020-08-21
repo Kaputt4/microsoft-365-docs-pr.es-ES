@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las diferencias entre el correo electrónico no deseado y el correo electrónico masivo (correo en gris) en Exchange Online Protection (EOP).
-ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 17e6223175013678f389c0d7624cc4e4f4476f98
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819441"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826734"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo en EOP?
 
@@ -43,7 +43,7 @@ En los clientes de Microsoft 365 organizaciones con buzones de correo en Exchang
 
 Debido a la reacción mixta del correo electrónico masivo, no hay ninguna orientación universal que se aplique a todas las organizaciones.
 
-Las directivas contra el correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar correo masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, vea los siguientes temas:
+Las directivas contra el correo no deseado tienen un umbral de BCL predeterminado que se usa para identificar correo masivo como correo no deseado. Los administradores pueden aumentar o disminuir el umbral. Para obtener más información, consulte los siguientes temas:
 
 - [Configurar directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md).
 

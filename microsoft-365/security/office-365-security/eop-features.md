@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 0df2f9afa8be6feba6734d2b07e7b7de5c13c994
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652878"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827778"
 ---
 # <a name="eop-features"></a>Características de EOP
 
@@ -85,8 +85,8 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Informes basados en web|Los informes de protección de correo en el centro de seguridad & cumplimiento proporcionan datos de mensajería. Por ejemplo, puede supervisar la cantidad de correo no deseado y malware que se detecta, o la frecuencia con la que las reglas de flujo de correo coinciden. Con estos informes interactivos, puede obtener rápidamente un informe visual de los datos resumidos y obtener más detalles acerca de los mensajes individuales, hasta un máximo de 90 días. Para obtener más información, vea [usar informes de protección de correo para ver datos sobre malware, correo no deseado y detecciones de reglas](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
 |Registro de auditoría|El informe del grupo de roles de administrador y el registro de auditoría de administrador están disponibles para los administradores de EOP. Para obtener más información, vea [Informes de auditoría en EOP](auditing-reports-in-eop.md).  |
 |**Acuerdos de nivel de servicio (SLA) y soporte técnico**||
-|SLA de efectividad en cuanto a correo no deseado|\>99%|
-|SLA sobre proporción de falsos positivos|\<1:250000|
+|SLA de efectividad en cuanto a correo no deseado|\> 99%|
+|SLA sobre proporción de falsos positivos|\< 1:250000|
 |SLA sobre detección y bloqueo de virus|100% de virus conocidos|
 |SLA sobre el tiempo de actividad mensual|99,999%|
 |Soporte técnico por web y teléfono 24 horas al día, siete días a la semana|Para obtener más información acerca de las opciones de soporte técnico y ayuda de EOP, vea [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md).|

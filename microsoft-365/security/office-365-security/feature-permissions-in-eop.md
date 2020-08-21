@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Obtenga información sobre el permiso necesario para las tareas de la protección independiente de Exchange Online
-ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652902"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826630"
 ---
 # <a name="permissions-in-standalone-eop"></a>Permisos en EOP independiente
 
@@ -141,7 +141,7 @@ Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente 
 
 A los usuarios se les pueden conceder derechos administrativos en EOP sin agregarlos a los roles de 365 de Microsoft. Para hacerlo, agregue el usuario como miembro de un grupo de roles de EOP. El usuario obtendrá permisos en EOP, pero no obtendrá permisos en otras cargas de trabajo de Microsoft 365.
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que el grupo de roles se copió correctamente, siga uno de estos pasos:
 

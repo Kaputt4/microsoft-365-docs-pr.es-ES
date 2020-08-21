@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores y los usuarios finales pueden obtener información sobre cómo realizar análisis a los mensajes de correo electrónico (se permite el correo marcado como correo incorrecto o malo) a Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 94f00f8399164a84d2cb9dae0c4c416b73dfb0dc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653598"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827814"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes a Microsoft de forma manual para su análisis
 
@@ -45,9 +45,9 @@ Si recibe un mensaje que pasa a través del filtrado de correo no deseado que de
 
 1. Cree un mensaje de correo electrónico nuevo en blanco con uno de los siguientes destinatarios:
 
-   - **Correo no deseado**:`junk@office365.microsoft.com`
+   - **Correo no deseado**: `junk@office365.microsoft.com`
 
-   - **Suplantación de identidad**:`phish@office365.microsoft.com`
+   - **Suplantación de identidad**: `phish@office365.microsoft.com`
 
 2. Arrastre y coloque el mensaje no deseado o de suplantación de identidad en el nuevo mensaje. Se guardará el mensaje no deseado o de suplantación de identidad (phishing) como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o lo reenvíe (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 

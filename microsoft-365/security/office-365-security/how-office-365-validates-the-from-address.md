@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los tipos de direcciones de correo electrónico que aceptan o rechazan Exchange Online Protection (EOP) y Outlook.com para ayudar a evitar la suplantación de identidad (phishing).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209456"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827426"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección from para evitar la suplantación de identidad
 
@@ -72,13 +72,13 @@ Las siguientes direcciones de correo electrónico son válidas:
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >`(No se recomienda porque hay espacios entre los corchetes angulares y la dirección de correo electrónico).
+- `From: < sender@contoso.com >` (No se recomienda porque hay espacios entre los corchetes angulares y la dirección de correo electrónico).
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>`(No se recomienda porque el nombre para mostrar no está incluido entre comillas dobles).
+- `From: Microsoft 365 <sender@contoso.com>` (No se recomienda porque el nombre para mostrar no está incluido entre comillas dobles).
 
 Las siguientes direcciones de correo electrónico no son válidas:
 
@@ -88,19 +88,19 @@ Las siguientes direcciones de correo electrónico no son válidas:
 
   Ahora, ya no se aceptan los mensajes con una dirección desde en blanco.
 
-- `From: Microsoft 365 sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
+- `From: Microsoft 365 sender@contoso.com` (El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Texto después de la dirección de correo electrónico).
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texto después de la dirección de correo electrónico).
 
-- `From: Sender, Example <sender.example@contoso.com>`(El nombre para mostrar contiene una coma, pero no se incluye entre comillas dobles).
+- `From: Sender, Example <sender.example@contoso.com>` (El nombre para mostrar contiene una coma, pero no se incluye entre comillas dobles).
 
-- `From: "Microsoft 365 <sender@contoso.com>"`(El valor completo se incluye incorrectamente entre comillas dobles).
+- `From: "Microsoft 365 <sender@contoso.com>"` (El valor completo se incluye incorrectamente entre comillas dobles).
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (El nombre para mostrar está presente, pero la dirección de correo electrónico no se incluye entre corchetes angulares).
 
-- `From: Microsoft 365<sender@contoso.com>`(Sin espacio entre el nombre para mostrar y el corchete angular de apertura).
+- `From: Microsoft 365<sender@contoso.com>` (Sin espacio entre el nombre para mostrar y el corchete angular de apertura).
 
-- `From: "Microsoft 365"<sender@contoso.com>`(Sin espacio entre el signo de comillas tipográficas y el corchete angular de cierre).
+- `From: "Microsoft 365"<sender@contoso.com>` (Sin espacio entre el signo de comillas tipográficas y el corchete angular de cierre).
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Suprimir las respuestas automáticas a su dominio personalizado
 

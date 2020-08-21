@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar las opciones de correo no deseado en los buzones de Exchange Online. Muchos de estos valores de configuración están disponibles para los usuarios en Outlook o en Outlook en la Web.
-ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 171eca8535958f01a7f749ad678e6ea9dd83d80c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653046"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825718"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurar la configuración del correo no deseado en buzones de Exchange Online
 
@@ -42,9 +42,9 @@ Cuando la regla de correo no deseado está habilitada en el buzón, EOP puede mo
 Los administradores pueden usar Exchange Online PowerShell para deshabilitar, habilitar y ver el estado de la regla de correo no deseado en los buzones. Los administradores también pueden usar Exchange Online PowerShell para configurar entradas en la colección de listas seguras de los buzones (la lista de remitentes seguros, la lista de destinatarios seguros y la lista de remitentes bloqueados).
 
 > [!NOTE]
-> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de conexiones como parte de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema. Las comprobaciones de filtrado de directivas, filtrado de contenido y protección contra amenazas avanzada (ATP) se aplicarán a los mensajes.
+> Los mensajes de remitentes que los usuarios han agregado a sus propias listas de remitentes seguros omitirán el filtrado de conexiones como parte de EOP (el SCL es-1). Para evitar que los usuarios agreguen entradas a la lista de remitentes seguros en Outlook, use la Directiva de grupo tal y como se indica en la sección acerca de la  [configuración del correo electrónico no deseado en Outlook](#about-junk-email-settings-in-outlook) más adelante en este tema. Las comprobaciones de filtrado de directivas, filtrado de contenido y protección contra amenazas avanzada (ATP) se aplicarán a los mensajes.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Solo puede usar Exchange Online PowerShell para realizar estos procedimientos. Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -57,7 +57,7 @@ Los administradores pueden usar Exchange Online PowerShell para deshabilitar, ha
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Usar Exchange Online PowerShell para habilitar o deshabilitar la regla de correo no deseado en un buzón
 
 > [!NOTE]
-> El cmdlet **Set-MailboxJunkEmailConfiguration** solo se puede usar para deshabilitar la regla de correo no deseado en un buzón que se ha abierto en Outlook (en modo caché de Exchange) o en Outlook en la web. Si el buzón no se ha abierto, recibirá el error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` si desea suprimir este error en operaciones masivas, puede agregar `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
+> El cmdlet **Set-MailboxJunkEmailConfiguration** solo se puede usar para deshabilitar la regla de correo no deseado en un buzón que se ha abierto en Outlook (en modo caché de Exchange) o en Outlook en la web. Si el buzón no se ha abierto, recibirá el error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` si desea suprimir este error en operaciones masivas, puede agregar `-ErrorAction SilentlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
 
 Use esta sintaxis para habilitar o deshabilitar la regla de correo no deseado en un buzón:
 
@@ -81,7 +81,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 > [!NOTE]
 >
-> - Si el usuario nunca ha abierto su buzón de correo, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
+> - Si el usuario nunca ha abierto su buzón de correo, es posible que reciba un error al ejecutar el comando anterior. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SilentlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
 >
 > - Incluso si deshabilita la regla de correo electrónico no deseado, el filtro de correo electrónico no deseado de Outlook (según cómo esté configurado) también puede determinar si un mensaje es correo no deseado y puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado en función de su propio veredicto de correo no deseado y de la colección de listas seguras del buzón. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 
@@ -121,7 +121,7 @@ Use la siguiente sintaxis para configurar la colección de listas seguras de un 
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Para escribir varios valores y sobrescribir las entradas existentes para los parámetros _BlockedSendersAndDomains_ y _TrustedSendersAndDomains_ , use la siguiente sintaxis: `"<Value1>","<Value2>"...` . Para agregar o quitar uno o más valores sin que ello afecte a las entradas existentes, use la siguiente sintaxis:`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Para escribir varios valores y sobrescribir las entradas existentes para los parámetros _BlockedSendersAndDomains_ y _TrustedSendersAndDomains_ , use la siguiente sintaxis: `"<Value1>","<Value2>"...` . Para agregar o quitar uno o más valores sin que ello afecte a las entradas existentes, use la siguiente sintaxis: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 En este ejemplo se establecen las siguientes configuraciones de la colección de listas seguras en el buzón de Ori Epstein:
 
@@ -145,7 +145,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 > [!NOTE]
 >
-> - Si el usuario no ha abierto nunca su buzón de correo, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SlientlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
+> - Si el usuario no ha abierto nunca su buzón de correo, es posible que reciba un error al ejecutar los comandos anteriores. Para suprimir este error en operaciones masivas, agregue `-ErrorAction SilentlyContinue` al comando **set-MailboxJunkEmailConfiguration** .
 >
 > - Incluso si la regla de correo no deseado está deshabilitada en el buzón, todavía puede configurar la colección de listas seguras y el filtro de correo electrónico no deseado de Outlook puede mover mensajes a la bandeja de entrada o a la carpeta de correo electrónico no deseado. Para más información, vea la sección [Acerca de la configuración de correo no deseado en Outlook](#about-junk-email-settings-in-outlook) de este tema.
 >

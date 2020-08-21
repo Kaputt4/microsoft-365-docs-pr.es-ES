@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653238"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825802"
 ---
 # <a name="campaign-views-in-atp"></a>Vistas de campañas en ATP
 
@@ -237,9 +237,9 @@ El diagrama contiene la información siguiente:
   |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva contra correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
   |
 
-  <sup>\*</sup>Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
+  <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 
-  <sup>\*\*</sup>Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
+  <sup>\*\*</sup> Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
 
 - **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea en la bandeja de entrada o en la carpeta de correo no deseado), incluso aunque los usuarios no hayan hecho clic en la URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
 
@@ -305,7 +305,7 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
   - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica que el remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
   - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica que el remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
 
-- **Datos adjuntos**
+- **Attachments**
 
   - **Filename**
   - **SHA256**

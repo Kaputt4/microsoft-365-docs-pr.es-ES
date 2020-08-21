@@ -6,7 +6,7 @@ manager: dansimp
 ms.reviewer: kshi
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
-ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
-ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
+ms.openlocfilehash: cd689099fc6a6caa1e0e649c3f152f1de123bf12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44835356"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827474"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
 Documentos seguros es una característica de la seguridad de Microsoft 365 E5 o Microsoft 365 E5 que usa la [protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar documentos y archivos que se abren en la [vista protegida](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Documentos seguros ahora está disponible para los usuarios con la versión de Office 2004 (12730. x) o superior. Esta característica está desactivada de forma predeterminada y el administrador de seguridad la tendrá que habilitar.
 
@@ -61,7 +61,7 @@ Para mantenerlo protegido, los documentos seguros envían archivos a la nube de 
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-documents"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para configurar documentos seguros
 
-Use la sintaxis que se muestre a continuación:
+Utilice la sintaxis siguiente:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>

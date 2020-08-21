@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar PowerShell para aplicar opciones de configuración a los inquilinos en Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209144"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827462"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Script de ejemplo para aplicar la configuración de EOP a varios inquilinos
 
@@ -33,7 +33,7 @@ El script de ejemplo siguiente permite a los administradores de Microsoft Exchan
 
 3. En cada fila del archivo .csv, agregue el nombre de administrador del inquilino en la columna UserName y el cmdlet que debe ejecutarse para dicho inquilino en la columna Cmdlet. Por ejemplo, admin@contoso.com y Get-AcceptedDomain.
 
-4. Copie el script [RunCmdletOnMultipleTenants. PS1](#runcmdletonmultipletenantsps1) en el Bloc de notas y, a continuación, guarde el archivo en una ubicación que sea fácil de encontrar (por ejemplo, c:\Scripts).
+4. Copie el script [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) en el Bloc de notas y, a continuación, guarde el archivo en una ubicación que sea fácil de encontrar (por ejemplo, c:\Scripts).
 
 5. Ejecute el script con la sintaxis siguiente:
 
@@ -44,12 +44,12 @@ El script de ejemplo siguiente permite a los administradores de Microsoft Exchan
    Aquí le mostramos un ejemplo:
 
    ```powershell
-   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
 6. Se iniciará sesión en cada inquilino y se ejecutará el script.
 
-## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants. ps1
+## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo quitar usuarios del portal de Usuarios restringidos en Office 365. Se agregan usuarios al portal de Usuarios restringidos para el envío correo no deseado saliente, normalmente porque la cuenta se ha visto comprometida.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43312ee6eff9b56ac4faf8173666a1ba79b9e067
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 0d411cec48ff6704d737850974e832dbe07a3ad3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726731"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826534"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Office 365
 

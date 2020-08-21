@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Microsoft 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bfded9d3f75f57eca1097fec6f18dc55410b65fb
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d21fef9458c02bd09d6d5ce2129b95571e0f8371
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616979"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826606"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
@@ -32,7 +32,7 @@ Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimi
 
 Para obtener más información acerca de los distintos permisos que puede conceder a los usuarios en el centro de seguridad & cumplimiento, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Debe ser un administrador global o miembro del grupo de funciones OrganizationManagement en el centro de seguridad & cumplimiento para completar los pasos de este artículo.
 
@@ -68,7 +68,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell para proporcionar a otro usuario acceso al centro de seguridad & cumplimiento
 
-1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Use el comando **Add-RoleGroupMember** para agregar un usuario al rol Administración de la organización, tal y como se muestra en el ejemplo siguiente.
 

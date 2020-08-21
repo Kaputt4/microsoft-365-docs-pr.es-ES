@@ -6,7 +6,7 @@ author: chrisda
 ms.author: chrisda
 manager: chrisda
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: El administrador puede aprender a configurar la compatibilidad con el correo electrónico entrante anónimo desde orígenes IPv6 en Exchange Online y Exchange Online Protection.
-ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7384c1044cc02ec20079dc03068c2ca99e68d2c2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818714"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826782"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Agregar compatibilidad para el correo electrónico entrante anónimo sobre IPv6 en Microsoft 365
 

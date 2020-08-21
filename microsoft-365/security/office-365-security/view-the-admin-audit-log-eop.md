@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Los administradores pueden obtener información sobre cómo ver y buscar el registro de auditoría de administración en Exchange Online Protection (EOP) independiente.
-ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653502"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825082"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Ver el registro de auditoría de administrador en EOP independiente
 
@@ -33,7 +33,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 >
 > - Las entradas de los registros de auditoría se conservan durante 90 días. Cuando una entrada tiene más de 90 días, se elimina
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -44,7 +44,7 @@ El registro de auditoría de administrador registra acciones específicas, basad
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> ¿Problemas? Solicite ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Usar el EAC para ver el registro de auditoría de administración
 

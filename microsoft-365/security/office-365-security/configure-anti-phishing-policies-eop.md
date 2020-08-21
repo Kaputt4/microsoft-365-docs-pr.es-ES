@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas antiphishing que están disponibles en las organizaciones de Exchange Online Protection (EOP) con o sin buzones de correo de Exchange Online.
-ms.openlocfilehash: a00cb2d17ff4824200b97514047aeb52176a28f7
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: af6577d32d43300867d29a365baaa4e1e7e1b5e3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804259"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825754"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurar directivas contra la suplantación de identidad (phishing) en EOP
 
@@ -47,8 +47,8 @@ En Exchange Online PowerShell, puede administrar la Directiva y la regla por sep
 Cada organización tiene una directiva antiphishing integrada denominada Office365 ANTIPHISH predeterminada con estas propiedades:
 
 - La Directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla antiphishing (filtros de destinatario) asociada a la Directiva.
-- La Directiva tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva siempre se aplica en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad más alta.
-- La Directiva es la predeterminada (la propiedad **IsDefault** tiene el valor `True` ) y no se puede eliminar la directiva predeterminada.
+- La directiva tiene un valor de prioridad personalizado **Mínimo** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor.
+- La directiva es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar esta directiva predeterminada.
 
 Para aumentar la eficacia de la protección contra suplantación de identidad (phishing), puede crear directivas antiphishing personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
@@ -219,9 +219,9 @@ No se puede deshabilitar la Directiva antiphishing predeterminada.
 
 ### <a name="set-the-priority-of-custom-anti-phishing-policies"></a>Establecer la prioridad de las directivas antiphishing personalizadas
 
-De forma predeterminada, las directivas antiphishing reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad y el procesamiento de directivas se detiene después de aplicar la primera Directiva.
+De forma predeterminada, las directivas antiphishing reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para obtener más información sobre el orden de prioridad y la forma en que se evalúan y aplican varias directivas, consulte [Order and Precedence of email Protection](how-policies-and-protections-are-combined.md).
+Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
 Las directivas de suplantación de identidad personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva antiphishing predeterminada denominada Office365 ANTIPHISH predeterminada tiene el valor de prioridad personalizado **más bajo**y no se puede cambiar.
 

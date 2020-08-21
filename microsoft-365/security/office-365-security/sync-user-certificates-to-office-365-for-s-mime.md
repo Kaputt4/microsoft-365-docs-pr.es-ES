@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: 12/09/2016
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a publicar los certificados apropiados en Office 365 antes de enviar mensajes de S/MIME protegidos en Exchange Online.
-ms.openlocfilehash: f9e0bef2f7d2125e2daeb86b3cf44ae433aae117
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 634b65e45b01186a27f9ae61c91d4b27f1a11635
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035217"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826486"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>Sincronizar certificados de usuario con Office 365 para S/MIME
 
@@ -33,7 +33,7 @@ Para comenzar a configurar S/MIME, emita los certificados y publíquelos en sus 
 
 Una vez publicados los certificados, use la herramienta de Azure AD Connect para sincronizar los datos de usuario de su entorno de Exchange local con Office 365. Para obtener más información sobre este proceso, consulte [sincronización de Azure ad Connect: comprender y personalizar la sincronización](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-Además de sincronizar otros datos de directorio, para fines de S/MIME, la herramienta sincronizará los atributos **userCertificate** y **userSMIMECertificate** para cada objeto de usuario, de modo que los datos puedan usarse para firmar y cifrar mensajes.
+Además de sincronizar otros datos de directorio, para fines de S/MIME, la herramienta sincronizará los atributos  **userCertificate** y **userSMIMECertificate** para cada objeto de usuario, de modo que los datos puedan usarse para firmar y cifrar mensajes.
 
 ## <a name="more-information"></a>Más información
 

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo (reglas de transporte) para identificar y filtrar correo masivo (correo gris) en Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 860c9a1af2cb560c4fd966b303501686a1cbfea7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: dfe841d3e80efc50d6ffbc702faefa1c9a971b13
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613317"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826758"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usar reglas de flujo de correo para filtrar correo electrónico masivo en EOP
 
@@ -31,7 +31,7 @@ Si desea más opciones para filtrar el correo masivo, puede crear reglas de fluj
 
 En este tema se explica cómo crear estas reglas de flujo de correo en el centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para Microsoft 365 organizaciones con buzones en Exchange Online; independiente de EOP PowerShell para las organizaciones sin buzones de correo de Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Debe tener permisos asignados para poder realizar estos procedimientos:
 
@@ -125,7 +125,7 @@ En este tema se explica cómo crear estas reglas de flujo de correo en el centro
 Use la siguiente sintaxis para crear una o ambas reglas de flujo de correo (expresiones regulares frente a palabras):
 
 ```powershell
-New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPrhase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
+New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
 En este ejemplo se crea una nueva regla denominada "Bulk Email Filtering-RegEx" que usa la misma lista de expresiones regulares de la sección anterior en el tema para establecer mensajes como **correo no deseado**.

@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de organizaciones independientes de Exchange Online Protection (EOP) pueden obtener información sobre cómo crear, modificar y quitar grupos de distribución y grupos de seguridad habilitados para correo en el centro de administración de Exchange (EAC) y en PowerShell de Exchange Online Protection (EOP) independientes.
-ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e7b93b9d05fda7e4f5f8abea02fbe3f1c70a6c74
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653658"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826558"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 
@@ -37,7 +37,7 @@ En las organizaciones independientes de Exchange Online Protection (EOP) sin buz
 
 Puede administrar los grupos en el centro de administración de Exchange (EAC) y en PowerShell independiente de EOP.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el centro de administración de Exchange, vea [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -50,7 +50,7 @@ Puede administrar los grupos en el centro de administración de Exchange (EAC) y
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> ¿Problemas? Solicite ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Usar el centro de administración de Exchange para administrar grupos de distribución
 
@@ -192,7 +192,7 @@ Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","
 En este ejemplo se usan los cambios en la dirección SMTP principal (también denominada dirección de respuesta) del grupo empleados de Seattle en sea.employees@contoso.com.
 
 ```PowerShell
-Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
+Set-EOPDistributionGroup "Seattle Employees" -PrimarySmtpAddress "sea.employees@contoso.com"
 ```
 
 En este ejemplo se reemplazan los miembros actuales del grupo de equipo de seguridad por Kitty Petersen y Tyson Fawcett.

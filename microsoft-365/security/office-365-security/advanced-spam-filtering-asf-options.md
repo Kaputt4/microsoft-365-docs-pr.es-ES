@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653346"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827342"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
@@ -34,6 +34,7 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 
 > [!NOTE]
 > La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF:
+>
 > - Notificaciones de cuarentena de correo no deseado para el usuario final periódico.
 >
 > - La presencia de mensajes filtrados en cuarentena.

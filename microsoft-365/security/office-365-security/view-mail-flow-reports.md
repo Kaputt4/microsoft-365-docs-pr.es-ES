@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre los informes de flujo de correo que están disponibles en el panel informes del centro de seguridad & cumplimiento.
 ms.custom: ''
-ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814519"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826462"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel informes del centro de seguridad & cumplimiento
 
@@ -51,7 +51,7 @@ Los siguientes gráficos están disponibles en la vista de informe:
   - **De Internet sin conector**
   - **A Internet sin conector**
   - Un conector específico que haya configurado.
-  
+
   Para aislar los datos del gráfico, use el control **Mostrar datos para** para seleccionar una de estas opciones o **todo el flujo de correo**.
 
   ![Ver los datos por flujo de correo en el informe de conectores](../../media/connector-report-view-data-by-mail-flow.png)
@@ -206,7 +206,7 @@ Para volver a la vista informes, haga clic en **Ver informe**.
 
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de notificación
 
-El **Informe de estado de flujo** de correo es similar al [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report), con información adicional sobre el correo electrónico permitido o bloqueado en el servidor perimetral. Este es el único informe que contiene información sobre la protección perimetral y muestra la cantidad de correo electrónico que se bloquea antes de que se permita el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.  
+El **Informe de estado de flujo** de correo es similar al [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report), con información adicional sobre el correo electrónico permitido o bloqueado en el servidor perimetral. Este es el único informe que contiene información sobre la protección perimetral y muestra la cantidad de correo electrónico que se bloquea antes de que se permita el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, se cuenta como cinco mensajes diferentes y no un mensaje.
 Para ver el informe, abra el [centro de seguridad & cumplimiento](https://protection.office.com), vaya **Reports** al \> **Panel** informes y seleccione informe de **Estado de flujo**de información. Para ir directamente al **Informe de estado del flujo de correo**, Abra <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de informe de estado de flujo de registros en el panel informes](../../media/mail-flow-status-report-widget.png)
@@ -300,14 +300,14 @@ Si hace clic en **filtrar**, puede filtrar tanto el gráfico como la tabla de da
 
 Este gráfico muestra el número de correos electrónicos organizados por:
 
-  - **Correo electrónico total**
-  - **Correo electrónico tras la protección perimetral**
-  - **Correo electrónico después de anti-malware, reputación de archivo, bloque de tipo de archivo**
-  - **Correo electrónico después de antiphishing, reputación de dirección URL, suplantación de marca, anti-falseamiento**
-  - **Correo electrónico después de la protección contra correo no deseado, filtrado de correo masivo**
-  - **Correo electrónico después de suplantación de usuario y dominio**<sup>1</sup>
-  - **Correo electrónico después de detonación de archivo y URL**<sup>1</sup>
-  - **Correo electrónico detectado como benigno después de la protección tras la entrega (dirección URL, clic en protección del tiempo)**
+- **Correo electrónico total**
+- **Correo electrónico tras la protección perimetral**
+- **Correo electrónico después de anti-malware, reputación de archivo, bloque de tipo de archivo**
+- **Correo electrónico después de antiphishing, reputación de dirección URL, suplantación de marca, anti-falseamiento**
+- **Correo electrónico después de la protección contra correo no deseado, filtrado de correo masivo**
+- **Correo electrónico después de suplantación de usuario y dominio**<sup>1</sup>
+- **Correo electrónico después de detonación de archivo y URL**<sup>1</sup>
+- **Correo electrónico detectado como benigno después de la protección tras la entrega (dirección URL, clic en protección del tiempo)**
 
 <sup>1</sup> solo para ATP de Office 365
 
@@ -315,15 +315,15 @@ Para ver el correo electrónico filtrado por EOP o ATP por separado, haga clic e
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
- - **Fecha**
- - **Correo electrónico total**
- - **Protección perimetral**
- - **Anti-malware, reputación de archivos, bloque de tipo de archivo**
- - **Anti-phish, reputación de dirección URL, suplantación de marca, antifalsificación**
- - **Contra correo electrónico no deseado, filtrado de correo masivo**
- - **Suplantación de usuario y dominio (ATP)**
- - **Detonación de archivo y dirección URL (ATP)**
- - **Protección tras entrega y ZAP (ATP) o ZAP (EOP)**
+- **Fecha**
+- **Correo electrónico total**
+- **Protección perimetral**
+- **Anti-malware, reputación de archivos, bloque de tipo de archivo**
+- **Anti-phish, reputación de dirección URL, suplantación de marca, antifalsificación**
+- **Contra correo electrónico no deseado, filtrado de correo masivo**
+- **Suplantación de usuario y dominio (ATP)**
+- **Detonación de archivo y dirección URL (ATP)**
+- **Protección tras entrega y ZAP (ATP) o ZAP (EOP)**
 
 Si selecciona una fila en la tabla de datos, se muestra un desglose de los recuentos de correo electrónico en el control flotante.
 
@@ -340,7 +340,7 @@ Cada archivo. csv exportado está limitado a 150.000 filas. Si los datos contien
 
  ![Vista de embudo en el informe de estado de flujo de notificación ](../../media/mail-flow-status-report-funnel-view.png)
 
- ### <a name="tech-view-for-the-mailflow-status-report"></a>Vista técnica del informe de estado de flujo de información
+### <a name="tech-view-for-the-mailflow-status-report"></a>Vista técnica del informe de estado de flujo de información
 
 La **vista técnica** es similar a la vista de **embudo** y proporciona detalles más granulares para las características de protección contra amenazas configuradas. Desde el gráfico, puede ver cómo se clasifican los mensajes en las diferentes etapas de la protección contra amenazas.
 
@@ -360,27 +360,27 @@ Si hace clic en **filtrar**, puede filtrar tanto el gráfico como la tabla de da
 
 Este gráfico muestra los mensajes organizados en las siguientes categorías:
 
-  - **Correo electrónico total**
-  - **Límite permitido, perimetral filtrado**
-  - **No es malware, detección de datos adjuntos seguros (ATP), detección del motor antimalware, bloqueo de reglas**
-  - **No phish, error de DMARC, detección de suplantación, detección de suplantación de identidad, detección de phish**
-  - **Sin detección con detonación de dirección URL, detección de detonación de dirección URL (ATP)**
-  - **No es correo no deseado, correo no deseado**
-  - **Correo electrónico no malintencionado, detección de vínculos seguros (ATP), ZAP**
+- **Correo electrónico total**
+- **Límite permitido, perimetral filtrado**
+- **No es malware, detección de datos adjuntos seguros (ATP), detección del motor antimalware, bloqueo de reglas**
+- **No phish, error de DMARC, detección de suplantación, detección de suplantación de identidad, detección de phish**
+- **Sin detección con detonación de dirección URL, detección de detonación de dirección URL (ATP)**
+- **No es correo no deseado, correo no deseado**
+- **Correo electrónico no malintencionado, detección de vínculos seguros (ATP), ZAP**
 
 Cuando desplaza el puntero sobre una categoría del gráfico, puede ver el número de mensajes que hay en esa categoría.
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
-  - **Fecha**  
-  - **Correo electrónico total**
-  - **Borde filtrado**
-  - **Motor antimalware, datos adjuntos seguros, regla filtrado**
-  - **DMARC, suplantación, falsificación, phish filtrado**
-  - **Detección de detonación de dirección URL**
-  - **Filtrado contra correo electrónico no deseado**
-  - **ZAP quitado**
-  - **Detección por vínculos seguros**
+- **Fecha**
+- **Correo electrónico total**
+- **Borde filtrado**
+- **Motor antimalware, datos adjuntos seguros, regla filtrado**
+- **DMARC, suplantación, falsificación, phish filtrado**
+- **Detección de detonación de dirección URL**
+- **Filtrado contra correo electrónico no deseado**
+- **ZAP quitado**
+- **Detección por vínculos seguros**
 
 Si selecciona una fila en la tabla de datos, se muestra un desglose de los recuentos de correo electrónico en el control flotante.
 

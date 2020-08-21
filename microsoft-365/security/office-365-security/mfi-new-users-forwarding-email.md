@@ -1,22 +1,22 @@
 ---
-title: Nuevos usuarios Reenviar información sobre el correo electrónico
+title: Información de nuevos usuarios que reenvían correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento para investigar Cuándo los usuarios de la organización reenvían mensajes a nuevos dominios.
-ms.openlocfilehash: 73ab6d1c9601ad40d469984b0ba18191a0917941
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578410"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826990"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
 
@@ -26,7 +26,7 @@ El **nuevo dominio que se reenvía** le informa de que los usuarios recién crea
 
 Esta información sólo aparece cuando se detecta el problema y aparece en la página de [reenvío del informe](view-mail-flow-reports.md#forwarding-report) .
 
-![Nuevos usuarios Reenviar información sobre el correo electrónico](../../media/mfi-new-users-forwarding-email.png)
+![Información de nuevos usuarios que reenvían correo electrónico](../../media/mfi-new-users-forwarding-email.png)
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al [Informe de modificaciones de reenvío](#forwarding-modifications-report) tal y como se describe más adelante en este tema.
 
@@ -58,11 +58,11 @@ Los siguientes gráficos están disponibles en la vista de informe:
 
 - **Mostrar datos para: nuevos usuarios de reenvío**:
 
-  ![Vista de nuevos usuarios de reenvío en el informe de modificaciones de reenvío](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![Vista de nuevos usuarios de reenvío en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Mostrar datos para: nuevos dominios de reenvío**:
 
-  ![Vista de nuevos dominios reenviados en el informe de modificaciones de reenvío](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![Vista de nuevos dominios reenviados en el informe de modificaciones de reenvío](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 Si hace clic en **filtros** en una vista de informe, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.
 

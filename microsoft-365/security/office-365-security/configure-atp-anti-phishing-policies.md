@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo crear, modificar y eliminar las Directivas avanzadas de suplantación de identidad (phishing) que están disponibles en las organizaciones con Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804237"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825742"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurar directivas contra phishing de ATP
 
@@ -49,8 +49,8 @@ En Exchange Online PowerShell, puede administrar la Directiva y la regla por sep
 Todas las organizaciones de Office 365 ATP tienen una directiva antiphishing de ATP integrada llamada Office365 ANTIPHISH predeterminada con estas propiedades:
 
 - La Directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla antiphishing (filtros de destinatario) asociada a la Directiva.
-- La Directiva tiene el valor de prioridad personalizado **más bajo** que no se puede modificar (la Directiva siempre se aplica en último lugar). Cualquier directiva personalizada que cree siempre tendrá una prioridad más alta.
-- La Directiva es la predeterminada (la propiedad **IsDefault** tiene el valor `True` ) y no se puede eliminar la directiva predeterminada.
+- La directiva tiene un valor de prioridad personalizado **Mínimo** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor.
+- La directiva es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar esta directiva predeterminada.
 
 Para aumentar la eficacia de la protección contra suplantación de identidad (phishing), puede crear directivas antiphishing personalizadas de ATP con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
@@ -318,9 +318,9 @@ No se puede deshabilitar la Directiva antiphishing predeterminada.
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>Establecer la prioridad de las directivas anti-phishing personalizadas de ATP
 
-De forma predeterminada, las directivas antiphishing de ATP reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad y el procesamiento de directivas se detiene después de aplicar la primera Directiva.
+De forma predeterminada, las directivas antiphishing de ATP reciben una prioridad que se basa en el orden en que se crearon (las directivas más recientes tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
-Para obtener más información sobre el orden de prioridad y la forma en que se evalúan y aplican varias directivas, consulte [Order and Precedence of email Protection](how-policies-and-protections-are-combined.md).
+Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
 
 Las directivas de antiphishing de ATP personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva antiphishing predeterminada denominada Office365 ANTIPHISH predeterminada tiene el valor de prioridad personalizado **más bajo**y no se puede cambiar.
 

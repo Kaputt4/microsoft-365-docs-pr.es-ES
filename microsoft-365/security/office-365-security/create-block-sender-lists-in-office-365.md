@@ -7,18 +7,18 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones preferidas y disponibles para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9b676f96ccdff8be1fa49841a9e0ce44bb59964c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545905"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827318"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 

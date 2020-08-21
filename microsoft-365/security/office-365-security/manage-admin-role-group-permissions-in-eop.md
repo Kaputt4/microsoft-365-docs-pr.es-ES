@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden obtener información sobre cómo asignar o quitar permisos en el centro de administración de Exchange (EAC) en Exchange Online Protection.
-ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616519"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825694"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
 
@@ -25,7 +25,7 @@ En las organizaciones independientes de Exchange Online Protection (EOP) sin buz
 
 Para obtener más información acerca de los roles y los grupos de roles, consulte [Permissions in Standalone EOP](feature-permissions-in-eop.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -36,7 +36,7 @@ Para obtener más información acerca de los roles y los grupos de roles, consul
 - Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> ¿Problemas? Solicite ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Usar el EAC para administrar grupos de roles
 
@@ -62,9 +62,9 @@ Cuando se crea un nuevo grupo de roles, puede configurar usted mismo todas las o
 
     - **Descripción**: escriba una descripción opcional para el grupo de roles.
 
-    - **Roles**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) de agregar o **quitar** ![ itpro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) para seleccionar o modificar los roles asignados al grupo de roles.
+    - **Roles**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) o **quitar** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) para seleccionar o modificar los roles asignados al grupo de roles.
 
-    - **Miembros**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) de agregar o en **quitar** ![ itpro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) para modificar la pertenencia al grupo de roles.
+    - **Miembros**: haga clic en **Agregar** ![ icono ](../../media/ITPro-EAC-AddIcon.png) o **quitar** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) para modificar la pertenencia al grupo de roles.
 
 3. Cuando haya terminado, haga clic en **Guardar** para crear el grupo de roles.
 
@@ -86,7 +86,7 @@ Las mismas opciones están disponibles cuando se modifican grupos de roles como 
 
 1. En el EAC, vaya a **Permissions** \> **roles de administrador**de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en **Editar** ![ icono de edición ](../../media/ITPro-EAC-EditIcon.png) .
 
-2. En la página de propiedades del grupo de roles que se abre, en la sección **memebers** , siga uno de estos pasos:
+2. En la página de propiedades del grupo de roles que se abre, en la sección **miembros** , siga uno de estos pasos:
 
    - Haga clic en **Agregar** ![ icono Agregar ](../../media/ITPro-EAC-AddIcon.png) . En la página que aparece, busque el usuario que Wou desea agregar y, a continuación, haga clic en **agregar >**. Seleccione usuarios y haga clic en **agregar >** tantas veces como sea necesario. Cuando haya terminado, haga clic en **Aceptar**.
 

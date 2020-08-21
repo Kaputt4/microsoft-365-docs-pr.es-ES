@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206621"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827718"
 ---
-# <a name="mail-flow-intelligence-in-eop"></a>Inteligencia del flujo de correo en EOP
+# <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
 En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar los mensajes de correo electrónico de EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentando la entrega de cada mensaje durante 24 horas. Transcurridas las 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
 
@@ -74,7 +74,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
        - Eliminar el conector haciendo clic en **eliminar** ![ icono quitar](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Deshabilite el conector haciendo clic en **Editar** icono de edición y desactivando la ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **activación**.
+       - Para deshabilitar el conector, haga clic en **Editar** ![ icono de edición y desactive la ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **opción para**desactivarlo.
 
   - Cambie el dominio aceptado en Microsoft 365 que está asociado con su entorno de correo electrónico local de **retransmisión interna** a **autorizado**. Para obtener instrucciones, vea [administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

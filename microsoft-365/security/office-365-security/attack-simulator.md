@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,23 +17,21 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a usar simulador de ataque para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseñas en su organización de Microsoft 365 E5 o ATP planeada 2.
-ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+description: Los administradores pueden aprender a usar simulador de ataques para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseña en sus organizaciones de Microsoft 365 E5 o ATP planeada 2.
+ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653226"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825838"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulador de ataque en ATP
 
-**Resumen** Si es administrador global o administrador de seguridad y su organización tiene Office 365 Advanced Threat Protection Plan 2, que incluye la [investigación de amenazas y las capacidades de respuesta](office-365-ti.md), puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y buscar usuarios vulnerables antes de que un ataque real afecte a los resultados finales. Lea este artículo para obtener más información.
+Si su organización tiene el plan 2 de la protección contra amenazas avanzada (ATP) de Office 365, que incluye [capacidades de investigación y respuesta de amenazas](office-365-ti.md), puede usar simulador de ataques en el centro de seguridad & cumplimiento para ejecutar escenarios de ataque realistas en la organización. Estos ataques simulados pueden ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques **Threat management** está disponible en \> **simulador de ataques**de administración de amenazas.
-
-  ![Administración de amenazas: simulador de ataque](../../media/ThreatMgmt-AttackSimulator.png)
+- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques **Threat management** está disponible en \> **simulador de ataques**de administración de amenazas. Vaya directamente a simulador de ataque, abrir <https://protection.office.com/attacksimulator> .
 
 - Para obtener más información acerca de la disponibilidad de un simulador de ataque en distintas suscripciones de Microsoft 365, consulte [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -41,23 +39,19 @@ ms.locfileid: "46653226"
 
 - La cuenta debe estar configurada para la autenticación multifactor (MFA) con el fin de crear y administrar campañas en el simulador de ataques. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa para ejecutar ataques simulados esté usando la autenticación multifactor. Además, debe ser administrador global o administrador de seguridad. (Para obtener más información acerca de los roles y los permisos, consulte [permisos en el centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md)).
-
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
 - No hay cmdlets de PowerShell correspondientes para el simulador de ataques.
 
 ## <a name="spear-phishing-campaigns"></a>Campañas de "Spear phishing"
 
-La *suplantación de identidad (phishing)* es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en los mensajes que parecen ser de remitentes legítimos o de confianza. La *suplantación de identidad (Spear phishing* ) es un ataque de suplantación de identidad (phishing) orientado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
-
-- Es administrador global o administrador de seguridad
+La *suplantación de identidad (phishing)* es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en los mensajes que parecen ser de remitentes legítimos o de confianza. La *suplantación de identidad (Spear phishing* ) es un ataque de suplantación de identidad (phishing) dirigido que usa contenido centrado y personalizado que está específicamente adaptado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
 
 En el simulador de ataque, hay disponibles dos tipos diferentes de campañas de "Spear phishing":
 
-- El [acceso condicional/autenticación multifactor](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) está activado, al menos para la cuenta de administrador global y los administradores de seguridad que van a usar el simulador de ataques. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
+- **Spear phishing (cosecha de credenciales)**: el ataque intenta convencer a los destinatarios para que haga clic en una dirección URL del mensaje. Si hacen clic en el vínculo, se les pedirá que escriban sus credenciales. Si es así, se toman en una de las siguientes ubicaciones:
 
-  - Una página predeterminada en la que se explica que se trataba de una sola prueba y ofrece sugerencias para reconocer los mensajes de suplantación de identidad.
+  - Una página predeterminada que explica que se trataba de una sola prueba y ofrece sugerencias para reconocer los mensajes de suplantación de identidad.
 
     ![Qué ven los usuarios si hacen clic en el vínculo phishing y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
 

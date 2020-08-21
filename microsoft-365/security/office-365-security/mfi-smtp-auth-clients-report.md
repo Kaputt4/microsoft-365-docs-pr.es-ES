@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de conocimiento de autenticación de SMTP en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los remitentes de correo electrónico de su organización que usan SMTP autenticado (autenticación SMTP) para enviar mensajes de correo electrónico.
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577258"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826874"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informes y información sobre los clientes de autenticación SMTP en el centro de seguridad & cumplimiento
 
@@ -73,7 +73,7 @@ Si hace clic en **ver tabla de detalles**, la información que se muestra depend
   - **TLS 1.2%**<sup>\*</sup>
   - **Número de mensajes**
 
-  <sup>\*</sup>Esta columna muestra el porcentaje y el número de mensajes del remitente.
+  <sup>\*</sup> Esta columna muestra el porcentaje y el número de mensajes del remitente.
 
 Si hace clic en **filtros** en una vista de tabla de detalles, puede especificar un intervalo de fechas con **fecha de inicio** y fecha de **finalización**.
 

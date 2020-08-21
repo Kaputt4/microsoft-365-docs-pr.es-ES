@@ -7,18 +7,18 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Obtenga información sobre cómo administrar usuarios de correo en Exchange Online Protection (EOP), incluido el uso de la sincronización de directorios, el EAC y PowerShell para administrar usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616839"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827080"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
@@ -31,7 +31,7 @@ El método recomendado para crear y administrar usuarios de correo en EOP indepe
 
 Para organizaciones independientes de EOP con un pequeño número de usuarios, puede Agregar y administrar usuarios de correo en el centro de administración de Exchange (EAC) o en PowerShell independiente de EOP, tal y como se describe en este tema.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el centro de administración de Exchange (EAC), consulte [centro de administración de Exchange en EOP independiente](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -162,7 +162,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 **Notas**:
 
 - El parámetro _Name_ es obligatorio, tiene una longitud máxima de 64 caracteres y debe ser único. Si no usa el parámetro _DisplayName_, se emplea el valor del parámetro _Name_ para el nombre para mostrar.
-- Si no usa el parámetro _alias_ , el lado izquierdo del parámetro _MicrosoftOnlneServicesID_ se usa para el alias.
+- Si no usa el parámetro _alias_ , el lado izquierdo del parámetro _MicrosoftOnlineServicesID_ se usa para el alias.
 - Si no usa el parámetro _ExternalEmailAddress_ , el valor _MicrosoftOnlineServicesID_ se usa para la dirección de correo electrónico externa.
 
 En este ejemplo se crea un usuario de correo con la siguiente configuración:
@@ -185,7 +185,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 Para modificar los usuarios de correo existentes en PowerShell de EOP independiente, use la siguiente sintaxis:
 
 ```powershell
-Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Text>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
 ```powershell

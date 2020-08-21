@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: ae6088a0eab214b4e160b85a278e1160c2845ed9
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 76264801820b6a41ee744a8adcc3b3b48a8e9479
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577131"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826746"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Especificar un buzón para envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online
 
@@ -101,7 +101,7 @@ La entrega de mensajes de usuario que se han informado a un buzón de correo per
 
 Los mensajes que se envían a los buzones personalizados deben seguir un formato de correo de envío específico. El asunto (título de sobre) del envío debe tener este formato:
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 se SafetyAPIAction es uno de los siguientes valores enteros:
 
