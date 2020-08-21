@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el centro de seguridad & cumplimiento para enviar correos sospechosos, mensajes de suplantación de identidad (phishing), correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y archivos a Microsoft para su análisis.
-ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 1b3715e3ed6f0472d9202573ff0cab92f7240ffa
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577875"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845971"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -52,11 +52,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar sobre contenido sospechoso a Microsoft
 
-1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
+1. En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions**, compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
-2. En la página envíos que aparece, haga clic **en el botón** **nuevo envío** .
-
-3. Use el nuevo control flotante de **envío** que aparece para enviar el mensaje, la dirección URL o los datos adjuntos, tal como se describe en las siguientes secciones.
+2. Use el nuevo control flotante de **envío** que aparece para enviar el mensaje, la dirección URL o los datos adjuntos, tal como se describe en las siguientes secciones.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Enviar un correo electrónico cuestionable a Microsoft
 
@@ -114,9 +112,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 ## <a name="view-admin-submissions"></a>Ver envíos de administración
 
-1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
-
-2. En la página **envíos** que aparece, compruebe que la pestaña **envíos administrativos** está seleccionada.
+En el centro de seguridad & cumplimiento, vaya a envíos de **Administración de amenazas** \> **Submissions**, compruebe que se encuentran en la pestaña envíos **administrativos** y, a continuación, haga clic en **nuevo envío**.
 
 Cerca de la parte superior de la página, puede especificar una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **identificador de envío** (un valor de GUID asignado a cada envío) introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -152,7 +148,7 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **Tipo de control**
 - **Origen del control**
 
-  <sup>\*</sup>Si hace clic en este valor, se muestra información detallada en un control flotante.
+  <sup>\*</sup> Si hace clic en este valor, se muestra información detallada en un control flotante.
 
 ### <a name="view-admin-url-submissions"></a>Ver envíos de direcciones URL de administración
 
@@ -167,7 +163,7 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **Tipo de envío**
 - **Estatus**<sup>\*</sup>
 
-  <sup>\*</sup>Si hace clic en este valor, se muestra información detallada en un control flotante.
+  <sup>\*</sup> Si hace clic en este valor, se muestra información detallada en un control flotante.
 
 ### <a name="view-admin-attachment-submissions"></a>Ver envíos de datos adjuntos de administración
 
@@ -182,15 +178,15 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **Tipo de envío**
 - **Estatus**<sup>\*</sup>
 
-  <sup>\*</sup>Si hace clic en este valor, se muestra información detallada en un control flotante.
+  <sup>\*</sup> Si hace clic en este valor, se muestra información detallada en un control flotante.
 
 ## <a name="view-user-submissions-to-microsoft"></a>Ver envíos de usuarios a Microsoft
 
 Si ha implementado el [complemento de mensajes de informe](enable-the-report-message-add-in.md), o los usuarios usan la [creación de informes integrada en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), puede ver qué usuarios están notificando en la pestaña **envíos de usuarios** .
 
-1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **envíos**de administración de amenazas.
 
-2. En la página **envíos** que aparece, haga clic en la pestaña **envíos de usuarios** .
+2. Seleccione la pestaña envíos de **usuarios** y, a continuación, haga clic en **nuevo envío**.
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 
@@ -201,7 +197,7 @@ Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior
 - **IP del remitente**<sup>\*</sup>
 - **Tipo de envío**
 
-<sup>\*</sup>Si hace clic en este valor, se muestra información detallada en un control flotante.
+<sup>\*</sup> Si hace clic en este valor, se muestra información detallada en un control flotante.
 
 Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y, de forma predeterminada, puede filtrar por **remitente** introduciendo un valor en el cuadro y haciendo clic en el ![ botón actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -221,9 +217,9 @@ Para exportar los resultados, haga clic en **exportar** cerca de la parte superi
 
 Si ha [configurado un buzón personalizado](user-submission.md) para recibir mensajes que el usuario ha notificado, puede ver y enviar también los mensajes que se entregaron al buzón de informes.
 
-1. En el centro de seguridad & cumplimiento, vaya a mensajes de envío de administración de la revisión de **amenazas** \> **Review** \> **Admin submission messages**.
+1. En el centro de seguridad & cumplimiento, vaya **Threat management** a \> **envíos**de administración de amenazas.
 
-2. En la página **envíos** que aparece, haga clic en la ficha **buzón personalizado** .
+2. Seleccione la ficha **buzón personalizado** .
 
 Puede hacer clic en el botón **Opciones de columna** cerca de la parte inferior de la página para agregar o quitar columnas de la vista:
 

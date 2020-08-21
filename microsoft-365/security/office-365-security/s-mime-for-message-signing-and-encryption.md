@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Los administradores pueden aprender a usar S/MIME (extensiones seguras multipropósito al correo de Internet) en Exchange Online para cifrar los correos electrónicos y firmarlos digitalmente.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811019"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845925"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para la firma y el cifrado de mensajes en Exchange Online
 
@@ -33,14 +33,18 @@ Como administrador de Exchange Online, puede habilitar la seguridad basada en S/
 Puede configurar S/MIME para trabajar con cualquiera de los siguientes extremos:
 
 - Outlook 2010 o posterior
-
 - Outlook en la web (anteriormente conocida como Outlook Web App)
-
 - Exchange ActiveSync (EAS)
 
 Los pasos que debe seguir para configurar S/MIME con cada uno de estos extremos son ligeramente diferentes. Por lo general, deberá realizar los pasos siguientes:
 
-1. Instale una entidad emisora de certificados basada en Windows y configure una infraestructura de clave pública para emitir certificados S/MIME. También se admiten los certificados emitidos por proveedores de certificados de terceros. Para obtener más información, consulte [Información general de Servicios de certificados de Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Instale una entidad de certificación (CA) basada en Windows y configure una infraestructura de clave pública para emitir certificados S/MIME. También se admiten los certificados emitidos por proveedores de certificados de terceros. Para obtener más información, consulte [Información general de Servicios de certificados de Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+
+   **Notas**:
+
+   - Los certificados emitidos por una entidad de certificación de terceros tienen la ventaja de confiar automáticamente en todos los clientes y dispositivos. Los clientes y los dispositivos no confían automáticamente en los certificados emitidos por una entidad de certificación privada interna, y no todos los dispositivos (por ejemplo, los teléfonos) se pueden configurar para que confíe en certificados privados.
+
+   - Considere la posibilidad de usar un certificado intermedio en lugar del certificado raíz para emitir certificados a los usuarios. De este modo, si alguna vez necesita revocar y volver a emitir certificados, el certificado raíz sigue intacto.
 
 2. Publique el certificado de usuario en una cuenta local de AD DS en los atributos **UserSMIMECertificate** y **UserCertificate** .
 
@@ -58,9 +62,7 @@ Los pasos que debe seguir para configurar S/MIME con cada uno de estos extremos 
 La configuración de S/MIME para Exchange Online con Outlook en la web implica los siguientes pasos clave:
 
 1. [Configurar S/MIME para Outlook en la Web](configure-s-mime-settings-for-outlook-web-app.md)
-
 2. [Configurar una colección de certificados virtuales para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-
 3. [Sincronizar certificados de usuario con Office 365 para S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 
 ## <a name="related-message-encryption-technologies"></a>Tecnologías de cifrado de mensajes relacionadas

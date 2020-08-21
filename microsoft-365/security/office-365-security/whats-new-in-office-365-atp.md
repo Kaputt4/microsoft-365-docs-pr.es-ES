@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/20/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391559"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845861"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -34,6 +34,11 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 > [!TIP]
 > ¿Todavía no tiene Office 365 ATP? [Póngase en contacto con sales para iniciar una versión de prueba](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="septemberoctober-2020"></a>Septiembre/2020 de octubre 
+
+- [Comprobar las directivas mediante el analizador de configuración](configuration-analyzer-for-security-policies.md)
+- [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
 
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 
@@ -93,7 +98,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

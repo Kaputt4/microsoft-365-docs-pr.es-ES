@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar entradas de direcciones URL en la lista de permitidos y bloqueados del centro de seguridad & cumplimiento.
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552555"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845947"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Administrar direcciones URL en la lista de permitidos/bloqueados del inquilino
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Administrar direcciones URL en la lista de permitidos y bloqueados del espacio empresarial
 
 > [!NOTE]
 > Las características descritas en este tema están en versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
@@ -257,7 +257,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
     Por ejemplo, `contoso.com/*` no incluye `contoso.com/a` .
 
-  - `*.com*`no es válido (no es un dominio que se pueda resolver y el comodín derecho no sigue una barra diagonal).
+  - `*.com*` no es válido (no es un dominio que se pueda resolver y el comodín derecho no sigue una barra diagonal).
 
   - No se permiten caracteres comodín en direcciones IP.
 
@@ -281,7 +281,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-no-wildcards"></a>Escenario: sin caracteres comodín
 
-**Entrada**:`contoso.com`
+**Entrada**: `contoso.com`
 
 - **Permitir coincidencia**: contoso.com
 
@@ -309,7 +309,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Escenario: comodín izquierdo (subdominio)
 
-**Entrada**:`*.contoso.com`
+**Entrada**: `*.contoso.com`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -325,7 +325,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
   
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Escenario: comodín derecho en la parte superior de la ruta de acceso
 
-**Entrada**:`contoso.com/a/*`
+**Entrada**: `contoso.com/a/*`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -342,7 +342,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
   
 #### <a name="scenario-left-tilde"></a>Escenario: tilde izquierda
 
-**Entrada**:`~contoso.com`
+**Entrada**: `~contoso.com`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -358,7 +358,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-right-wildcard-suffix"></a>Escenario: sufijo comodín derecho
 
-**Entrada**:`contoso.com/*`
+**Entrada**: `contoso.com/*`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -374,7 +374,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Escenario: subdominio comodín izquierdo y sufijo comodín derecho
 
-**Entrada**:`*.contoso.com/*`
+**Entrada**: `*.contoso.com/*`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -388,7 +388,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-left-and-right-tilde"></a>Escenario: tilde izquierda y derecha
 
-**Entrada**:`~contoso.com~`
+**Entrada**: `~contoso.com~`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 
@@ -405,7 +405,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="scenario-ip-address"></a>Escenario: dirección IP
 
-**Entrada**:`1.2.3.4`
+**Entrada**: `1.2.3.4`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**: 1.2.3.4
 
@@ -416,7 +416,7 @@ En las siguientes secciones se describen las entradas de dirección URL válidas
 
 #### <a name="ip-address-with-right-wildcard"></a>Dirección IP con comodín derecho
 
-**Entrada**:`1.2.3.4/*`
+**Entrada**: `1.2.3.4/*`
 
 - **Permitir** coincidencia de coincidencia y **bloqueo**:
 

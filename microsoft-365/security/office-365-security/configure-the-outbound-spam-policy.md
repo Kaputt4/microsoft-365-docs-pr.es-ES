@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
-ms.openlocfilehash: 22a809370787df1798f2f777c852d1004565d2a6
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798287"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845983"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -37,39 +37,24 @@ Los administradores pueden ver, editar y configurar (pero no eliminar) la Direct
 
 Puede configurar directivas de correo no deseado salientes en el centro de seguridad & cumplimiento o en PowerShell (Exchange Online PowerShell para Microsoft 365 organizaciones con buzones en Exchange Online; independiente de EOP para organizaciones sin buzones de correo de Exchange Online).
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Directivas de correo no deseado salientes en el centro de seguridad & cumplimiento vs PowerShell
-
 Los elementos básicos de una directiva de correo no deseado saliente en EOP son los siguientes:
 
 - **La Directiva de filtro de correo no deseado saliente**: especifica las acciones para los veredictos de filtrado de correo no deseado saliente y las opciones de notificación.
-
 - **La regla de filtro de correo no deseado saliente**: especifica la prioridad y los filtros de destinatarios (a los que se aplica la Directiva) para una directiva de filtro de correo no deseado saliente.
 
 La diferencia entre estos dos elementos no es obvia cuando se administran las directivas de correo no deseado saliente en el centro de seguridad & cumplimiento:
 
-- Cuando se crea una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, en realidad se crea una regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada al mismo tiempo con el mismo nombre para ambas.
+- Al crear una directiva, en realidad está creando una regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado de salida asociada al mismo tiempo con el mismo nombre para ambas.
+- Cuando se modifica una directiva, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado y destinatario modifica la regla de filtro de correo no deseado saliente. Todas las demás opciones modifican la Directiva de filtro de correo no deseado saliente asociada.
+- Al quitar una directiva, se quita la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada.
 
-- Cuando se modifica una directiva de correo no deseado saliente en el centro de seguridad & cumplimiento, la configuración relacionada con los filtros nombre, prioridad, habilitado o deshabilitado y destinatarios modifica la regla de filtro de correo no deseado saliente. Todas las demás opciones modifican la Directiva de filtro de correo no deseado saliente asociada.
-
-- Cuando quita una directiva de correo no deseado saliente del centro de seguridad & cumplimiento, se quita la regla de filtro de correo no deseado saliente y la Directiva de filtro de correo no deseado saliente asociada.
-
-En Exchange Online PowerShell o en PowerShell independiente de EOP, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Puede administrar las directivas de filtro de correo no deseado saliente con los cmdlets ** \* -HostedOutboundSpamFilterPolicy** y administrar las reglas de filtro de correo no deseado saliente con los cmdlets ** \* -HostedOutboundSpamFilterRule** .
-
-- En PowerShell, se crea la Directiva de filtro de correo no deseado saliente en primer lugar y, a continuación, se crea la regla de filtro de correo no deseado saliente que identifica la Directiva a la que se aplica la regla.
-
-- En PowerShell, se modifica la configuración de la Directiva de filtro de correo no deseado saliente y de la regla de filtro de correo no deseado saliente por separado.
-
-- Cuando quita una directiva de filtro de correo no deseado saliente de PowerShell, la regla de filtro de correo no deseado saliente correspondiente no se quita automáticamente y viceversa.
-
-### <a name="default-outbound-spam-policy"></a>Directiva de correo no deseado saliente predeterminada
+En Exchange Online PowerShell o en un EOP PowerShell independiente, usted administra la directiva y la regla por separado. Para obtener más información, consulte la sección [usar Exchange Online PowerShell o Standalone EOP PowerShell para configurar directivas de correo no deseado saliente](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) más adelante en este tema.
 
 Cada organización tiene integrada una directiva de correo no deseado saliente denominada predeterminada que tiene estas propiedades:
 
-- La Directiva de filtro de correo no deseado saliente denominada predeterminada se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla de filtro de correo no deseado saliente (filtros de destinatario) asociada a la Directiva.
-
-- La directiva denominada Predeterminada tiene un valor de prioridad personalizado **Inferior** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor que la directiva denominada Predeterminada.
-
-- La directiva denominada Predeterminada es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar la directiva predeterminada.
+- La Directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla de filtro de correo no deseado saliente (filtros de destinatario) asociada a la Directiva.
+- La directiva tiene un valor de prioridad personalizado **Mínimo** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor que la directiva denominada Predeterminada.
+- La directiva es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar esta directiva predeterminada.
 
 Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crear directivas de correo no deseado saliente personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
@@ -170,18 +155,24 @@ La creación de una directiva personalizada de correo no deseado saliente en el 
      - **Restringir al usuario el envío de correo**: se envían notificaciones por correo electrónico, el usuario se agrega al portal **[Restricted users] <https://sip.protection.office.com/restrictedusers> ** en el centro de seguridad & cumplimiento y el usuario no puede enviar correo electrónico hasta que un administrador lo elimine del portal de **usuarios restringidos** . Una vez que un administrador quita al usuario de la lista, el usuario no volverá a estar restringido para ese día. Para obtener instrucciones, consulte [quitar un usuario del portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **No se realiza ninguna acción, solo alerta**: se envían notificaciones por correo electrónico.
-6. Opcional Expanda la sección **desvío automático** para configurar los controles sobre cómo se controla el reenvío automático por parte de los usuarios.
+
+6. Opcional Expanda la sección **desvío automático** para controlar el reenvío automático de correo electrónico de los usuarios a remitentes externos. Para obtener más información acerca del reenvío automático, consulte [configurar el reenvío de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding).
 
    > [!NOTE]
-   > Esta configuración solo se aplica a los buzones basados en la nube.
+   >
+   > - Antes de septiembre de 2020, estas opciones están disponibles pero no se aplican.
+   >
+   > - Esta configuración solo se aplica a los buzones basados en la nube.
+   >
+   > - El reenvío automático a destinatarios internos no se ve afectado por esta configuración.
 
-   - **Reenvío automático**
-  
-      Seleccione una de las opciones para controlar cómo se controla el reenvío automático.
+   Los valores disponibles son los siguientes:
 
-      - **Automático**: configuración predeterminada que permite al sistema controlar el reenvío automático con el reenvío automático deshabilitado de forma predeterminada.
-      - **On**: el reenvío externo está habilitado en la Directiva sin restricción.
-      - **Desactivado**: el reenvío externo está deshabilitado y se bloqueará
+   - **Sistema automático controlado**: permite el filtrado de correo no deseado saliente para controlar el reenvío automático de correo electrónico externo. Este es el valor predeterminado.
+
+   - **On**: la Directiva no deshabilita el reenvío de correo electrónico externo automático.
+
+   - **Desactivado**: la Directiva deshabilita todo el reenvío de correo electrónico externo automático.
 
 7. Necesarios Expanda la sección **aplicado a** para identificar los remitentes internos a los que se aplica la Directiva.
 
@@ -245,7 +236,7 @@ No se puede deshabilitar la Directiva de correo no deseado saliente predetermina
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>Establecer la prioridad de las directivas de correo no deseado saliente personalizadas
 
-De forma predeterminada, las directivas de correo no deseado saliente tienen una prioridad que se basa en el orden en que se crearon (las nuevas directivas tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad y el procesamiento de directivas se detiene después de aplicar la primera Directiva.
+De forma predeterminada, las directivas de correo no deseado saliente tienen una prioridad que se basa en el orden en que se crearon (las nuevas directivas tienen una prioridad más baja que las directivas anteriores). Un número de prioridad más bajo indica una prioridad mayor de la directiva (0 es el más alto) y las directivas se procesan por orden de prioridad (las directivas de prioridad mayor se procesan antes que las directivas de prioridad menor). Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
 Las directivas de correo no deseado de salida personalizadas se muestran en el orden en que se procesan (la primera Directiva tiene el valor de **prioridad** 0). La Directiva de correo no deseado saliente predeterminada denominada **Directiva de filtro de correo no deseado saliente** tiene el valor de prioridad **más bajo**y no se puede cambiar.
 
@@ -277,12 +268,19 @@ No puede quitar la directiva predeterminada.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP para configurar las directivas de correo no deseado saliente
 
+Como se ha descrito anteriormente, una directiva de correo no deseado saliente consta de una directiva de filtro de correo no deseado saliente y una regla de filtro de correo no deseado saliente.
+
+En Exchange Online PowerShell o en PowerShell independiente de EOP, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Puede administrar las directivas de filtro de correo no deseado saliente con los cmdlets ** \* -HostedOutboundSpamFilterPolicy** y administrar las reglas de filtro de correo no deseado saliente con los cmdlets ** \* -HostedOutboundSpamFilterRule** .
+
+- En PowerShell, se crea la Directiva de filtro de correo no deseado saliente en primer lugar y, a continuación, se crea la regla de filtro de correo no deseado saliente que identifica la Directiva a la que se aplica la regla.
+- En PowerShell, se modifica la configuración de la Directiva de filtro de correo no deseado saliente y de la regla de filtro de correo no deseado saliente por separado.
+- Cuando quita una directiva de filtro de correo no deseado saliente de PowerShell, la regla de filtro de correo no deseado saliente correspondiente no se quita automáticamente y viceversa.
+
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>Usar PowerShell para crear directivas de correo no deseado saliente
 
 La creación de una directiva de correo no deseado saliente en PowerShell es un proceso de dos pasos:
 
 1. Crear la Directiva de filtro de correo no deseado saliente.
-
 2. Cree la regla de filtro de correo no deseado saliente que especifica la Directiva de filtro de correo no deseado saliente a la que se aplica la regla.
 
  **Notas**:
@@ -292,7 +290,6 @@ La creación de una directiva de correo no deseado saliente en PowerShell es un 
 - Puede configurar las siguientes opciones en nuevas directivas de filtro de correo no deseado saliente en PowerShell que no están disponibles en el centro de seguridad & cumplimiento hasta que se crea la Directiva:
 
   - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-HostedOutboundSpamFilterRule** ).
-
   - Establezca la prioridad de la Directiva durante la creación (_prioridad_ _\<Number\>_ ) en el cmdlet **New-HostedOutboundSpamFilterRule** ).
 
 - Una nueva Directiva de filtro de correo no deseado saliente que se crea en PowerShell no es visible en el centro de seguridad & cumplimiento hasta que se asigna la Directiva a una regla de filtro de correo no deseado.
