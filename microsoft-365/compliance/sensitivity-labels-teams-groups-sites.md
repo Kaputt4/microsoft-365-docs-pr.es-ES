@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 849eae1c2c3153d8f17e561aa82312c95672ec04
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199630"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845748"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -32,7 +32,7 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clas
 
 - Privacidad (pública o privada) de los sitios de equipos conectados a grupos de Microsoft 365
 - Acceso de usuarios externos
-- Acceso desde dispositivos no administrados 
+- Acceso desde dispositivos no administrados
 
 Cuando aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente la configuración de protección y clasificación al grupo o sitio conectado.
 
@@ -55,19 +55,12 @@ Después de habilitar y configurar etiquetas de confidencialidad para contenedor
 
 1. Dado que esta característica usa la funcionalidad de Azure AD, siga las instrucciones de la documentación de Azure AD para habilitar la compatibilidad con etiquetas de confidencialidad: [Asignar etiquetas de confidencialidad a grupos de Microsoft 365 en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Ahora tiene que sincronizar sus etiquetas de confidencialidad en Azure AD. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
-    
-    Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+2. Ahora tiene que sincronizar sus etiquetas de confidencialidad en Azure AD. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+   Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
 
 3. Después, ejecute el siguiente comando para asegurarse de que sus etiquetas de confidencialidad se pueden usar con los grupos de Microsoft 365:
-    
+
     ```powershell
     Execute-AzureAdLabelSync
     ```
@@ -81,12 +74,12 @@ Si necesita ayuda para crear o editar una etiquetas de confidencialidad, vea las
 En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
 - **Privacidad de los sitios de equipos conectados a grupos de Office 365**: mantenga el valor predeterminado de **Público: cualquier persona de la organización puede acceder al sitio ** si quiere que todos en su organización accedan al sitio de grupo o grupo donde se aplica esta etiqueta.
-    
-    Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
-    
-    Seleccione **Ninguno: permitir al usuario elegir quién puede acceder al sitio** cuando quiera proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permitir que los usuarios configuren la configuración de privacidad ellos mismos.
-    
-    Las opciones **Pública** o **Privada** para establecen y bloquean la configuración de privacidad cuando aplica esta etiqueta al contenedor. La configuración elegida reemplaza cualquier configuración de privacidad anterior establecida para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
+
+  Seleccione **Privado** si quiere que el acceso esté restringido solo a miembros aprobados de su organización.
+
+  Seleccione **Ninguno: permitir al usuario elegir quién puede acceder al sitio** cuando quiera proteger el contenido del contenedor mediante el uso de la etiqueta de confidencialidad, pero permitir que los usuarios configuren la configuración de privacidad ellos mismos.
+
+  Las opciones **Pública** o **Privada** para establecen y bloquean la configuración de privacidad cuando aplica esta etiqueta al contenedor. La configuración elegida reemplaza cualquier configuración de privacidad anterior establecida para el equipo o grupo, y bloquea el valor de privacidad para que solo se pueda cambiar quitando primero la etiqueta de confidencialidad del contenedor. Después de quitar la etiqueta de confidencialidad, la configuración de privacidad de la etiqueta permanece y los usuarios ya pueden cambiarla de nuevo.
 
 - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -96,7 +89,7 @@ En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
 > [!IMPORTANT]
 > La configuración de sitio y grupo solo surte efecto al aplicar la etiqueta a un equipo, grupo o sitio. El resto de opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplican a todo el contenido del equipo, grupo o sitio.
-> 
+>
 > Implementación gradual en espacios empresariales: solo las etiquetas con la configuración de sitio y de grupo estarán disponibles para seleccionarlas cuando los usuarios creen equipos, grupos y sitios. Si actualmente puede aplicar una etiqueta a un contenedor cuando la etiqueta no tiene habilitadas las configuraciones de sitio y grupo, solo se aplica el nombre de la etiqueta al contenedor.
 
 Si la etiqueta de confidencialidad aún no se ha publicado, publíquela [agregándola a una directiva de etiqueta de confidencialidad](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Los usuarios que tienen asignada una directiva de etiqueta de confidencialidad que incluye esta etiqueta podrán seleccionarla para sitios y grupos.
@@ -114,8 +107,9 @@ Cuando se crea y se publica una nueva etiqueta de confidencialidad, los usuarios
 1. Después de crear y configurar la etiqueta de confidencialidad, agréguela a una directiva de etiqueta que solo se aplique a algunos usuarios de prueba.
 
 2. Espere a que se replique el cambio:
-    - Nueva etiqueta: espere una hora.
-    - Etiqueta existente: espere 24 horas.
+
+   - Nueva etiqueta: espere una hora.
+   - Etiqueta existente: espere 24 horas.
 
 3. Después de este período, utilice una de las cuentas de usuario de prueba para crear un equipo, un grupo de Microsoft 365 o un sitio de SharePoint con la etiqueta creada en el paso 1.
 
@@ -123,14 +117,13 @@ Cuando se crea y se publica una nueva etiqueta de confidencialidad, los usuarios
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modificar las etiquetas publicadas que están configuradas para sitios y grupos
 
-Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta 24 horas para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada. 
+Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta 24 horas para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada.
 
 Además, si los cambios incluyen la configuración **Acceso de usuarios externos**:
 
 - La nueva configuración se aplica a los usuarios nuevos, pero no a los usuarios existentes. Por ejemplo, si esta configuración se seleccionó previamente y, como resultado, los usuarios invitados entraron el sitio, estos aún podrán tener acceso al sitio después de que la opción esté desactivada en la configuración de la etiqueta.
 
 - La configuración de privacidad de las propiedades de grupo hiddenMembership y roleEnabled no se actualiza.
-
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>Eliminar etiquetas publicadas que están configuradas para sitios y grupos
 
@@ -161,9 +154,9 @@ Ya está listo para aplicar la etiqueta o las etiquetas de confidencialidad a lo
 
 - [Asignar una etiqueta a un grupo nuevo en Azure Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
--  [Asignar una etiqueta a un grupo existente en Azure Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [Asignar una etiqueta a un grupo existente en Azure Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
--  [Quitar una etiqueta a un grupo existente en Azure Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)
+- [Quitar una etiqueta a un grupo existente en Azure Portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>Aplicar una etiqueta de confidencialidad a un nuevo equipo
 
@@ -199,35 +192,35 @@ Cuando los usuarios exploren el sitio, podrán ver el nombre de la etiqueta y la
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Usar PowerShell para aplicar una etiqueta de confidencialidad a varios sitios
 
-Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con el parámetro *SensitivityLabel* desde el actual Shell de administración de SharePoint Online para aplicar una etiqueta de sensibilidad a muchos sitios. Los sitios pueden ser cualquiera de los pertenecientes a la colección de sitios de SharePoint o un sitio de OneDrive.
+Puede usar los cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) y [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) con el parámetro *SensitivityLabel* desde el [Shell de SharePoint Online Management](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actual para aplicar una etiqueta de confidencialidad a muchos sitios. Los sitios pueden ser cualquiera de los pertenecientes a la colección de sitios de SharePoint o un sitio de OneDrive.
 
 Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de administración de SharePoint Online.
 
 1. Abra una sesión de PowerShell con la opción **Ejecutar como administrador**.
 
-2. Si no conoce su etiqueta GUID, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+2. Si no conoce el GUID de la etiqueta, vaya a: [Conectarse al PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) y obtenga la lista de etiquetas de confidencialidad y sus GUID.
 
-3. Ahora, vaya a [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) y almacene su GUID de etiqueta como una variable. Por ejemplo: 
-    
-    ```powershell
-    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
-    ```
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
+
+3. Ahora, [conéctese a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) y almacene el GUID de etiqueta como una variable. Por ejemplo:
+
+   ```powershell
+   $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
+   ```
 
 4. Cree una nueva variable que identifique varios sitios con una cadena de identificación en común en su URL. Por ejemplo:
-    
-    ```powershell
-    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
-    ```
+
+   ```powershell
+   $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
+   ```
 
 5. Ejecute el siguiente comando para aplicar la etiqueta a estos sitios. Utilice nuestros ejemplos:
-    
-    ```powershell
-    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
-    ```
+
+   ```powershell
+   $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
+   ```
 
 Para aplicar distintas etiquetas a otros sitios, repita el siguiente comando para cada sitio: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
@@ -252,30 +245,34 @@ También puede cambiar y aplicar una etiqueta desde esta página:
 Las siguientes aplicaciones y servicios son compatibles con etiquetas de confidencialidad establecidas para la configuración de sitio y grupo:
 
 - Centros de administración:
-    - Centro de administración de SharePoint
-    - Portal de Azure Active Directory
-    - Centro de cumplimiento de Microsoft 365, centro de seguridad de 365 Microsoft, y Centro de seguridad y cumplimiento de Office 365
+
+  - Centro de administración de SharePoint
+  - Portal de Azure Active Directory
+  - Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 y Centro de seguridad y cumplimiento
 
 - Servicios y aplicaciones de usuario:
-    - SharePoint
-    - Teams
-    - Outlook en la Web y para Windows, Mac OS, iOS y Android
-    - Forms
-    - Stream
+
+  - SharePoint
+  - Teams
+  - Outlook en la Web y para Windows, Mac OS, iOS y Android
+  - Forms
+  - Stream
 
 Las siguientes aplicaciones y servicios actualmente no son compatibles con las etiquetas de confidencialidad establecidas para la configuración de sitios y grupos:
 
 - Centros de administración:
-    - Centro de administración de Microsoft 365
-    - Centro de administración de Teams
-    - Centro de administración de Exchange
+
+  - Centro de administración de Microsoft 365
+  - Centro de administración de Teams
+  - Centro de administración de Exchange
 
 - Servicios y aplicaciones de usuario:
-    - Dynamics 365
-    - Yammer
-    - Planner
-    - Proyecto
-    - PowerBI
+
+  - Dynamics 365
+  - Yammer
+  - Planner
+  - Proyecto
+  - PowerBI
 
 ## <a name="classic-azure-ad-group-classification"></a>Clasificación de grupos de Azure AD clásica
 
@@ -286,7 +283,7 @@ Como ejemplo de cómo podría haber utilizado la antigua clasificación de grupo
 Estas clasificaciones se configuraron con Azure AD PowerShell o la biblioteca principal de PnP y definiendo valores para la configuración de `ClassificationList`. Si su espacio empresarial tiene valores de clasificación definidos, se muestran al ejecutar el siguiente comando desde el módulo de [PowerShell de AzureADPreview](https://www.powershellgallery.com/packages/AzureADPreview):
 
 ```powershell
-   ($setting["ClassificationList"])
+($setting["ClassificationList"])
 ```
 
 Para convertir las clasificaciones antiguas en etiquetas de confidencialidad, siga uno de estos procedimientos:
@@ -295,46 +292,31 @@ Para convertir las clasificaciones antiguas en etiquetas de confidencialidad, si
 
 - Crear etiquetas nuevas: especifique la configuración de la etiqueta que desee para los sitios y grupos creando y publicando nuevas etiquetas de confidencialidad que tengan los mismos nombres que las de las clasificaciones existentes.
 
-Luego: 
+Luego:
 
 1. Use PowerShell para aplicar las etiquetas de confidencialidad a los grupos de Microsoft 365 y a los sitios de SharePoint mediante la asignación de nombres. Vea la siguiente sección para obtener instrucciones.
 
 2. Quitar las clasificaciones antiguas de los grupos y sitios existentes.
 
-Aunque no se puede impedir que los usuarios creen grupos nuevos en aplicaciones y servicios que aún no admiten las etiquetas de confidencialidad, puede ejecutar un script de PowerShell periódico para buscar grupos nuevos que los usuarios han creado con las clasificaciones anteriores y convertirlos para usar etiquetas de confidencialidad. 
+Aunque no se puede impedir que los usuarios creen grupos nuevos en aplicaciones y servicios que aún no admiten las etiquetas de confidencialidad, puede ejecutar un script de PowerShell periódico para buscar grupos nuevos que los usuarios han creado con las clasificaciones anteriores y convertirlos para usar etiquetas de confidencialidad.
 
 Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y clasificaciones de Azure AD para sitios y grupos, consulte [Clasificación y etiquetas de confidencialidad de Azure Active Directory para grupos de Microsoft 365](migrate-aad-classification-sensitivity-labels.md).
 
-#### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Usar PowerShell para convertir clasificaciones de grupos de Microsoft 365 a etiquetas de confidencialidad
+### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>Usar PowerShell para convertir clasificaciones de grupos de Microsoft 365 a etiquetas de confidencialidad
 
-1. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
-    
-    Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+1. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+   Por ejemplo, en una sesión de PowerShell que se ejecuta como administrador, inicie sesión con una cuenta de administrador global:
 
 2. Consiga la lista de etiquetas de sensibilidad y sus GUIDs usando el cmdlet[Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps):
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
 
 3. Tome nota de los GUID para las etiquetas de confidencialidad que quiere aplicar a los grupos de Microsoft 365.
 
-4. Ahora[Conexión al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
-    Por ejemplo:
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
-    ```
+4. Ahora [conéctese a PowerShell en línea de Exchange](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) en una ventana independiente de Windows PowerShell.
 
 5. Use el comando siguiente como ejemplo para obtener la lista de grupos que actualmente tienen la clasificación de "general":
 
@@ -355,15 +337,15 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
 
 Si alguien carga un documento en un sitio protegido con una etiqueta de confidencialidad y el documento tiene una etiqueta de confidencialidad de [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) que la etiqueta de confidencialidad que se aplica al sitio, esta acción no está bloqueada. Por ejemplo, aplicó la etiqueta **general** a un sitio de SharePoint y alguien carga en este sitio un documento etiquetado como **confidencial**. Debido a que una etiqueta de confidencialidad con mayor prioridad identifica el contenido que es más confidencial que el contenido que tiene un orden de menor prioridad, esta situación podría ser un problema de seguridad.
 
-Aunque la acción no está bloqueada, se audita y genera automáticamente un correo electrónico a la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio. 
+Aunque la acción no está bloqueada, se audita y genera automáticamente un correo electrónico a la persona que cargó el documento y el administrador del sitio. Como resultado, tanto el usuario como los administradores pueden identificar los documentos que no están alineados con la prioridad de las etiquetas y tomar las medidas necesarias. Por ejemplo, eliminar o mover el documento cargado del sitio.
 
 No sería un problema de seguridad si el documento tiene una etiqueta de confidencialidad de menor prioridad que la etiqueta de confidencialidad aplicada al sitio. Por ejemplo, un documento con la etiqueta **general** se carga en un sitio con la etiqueta **confidencial**. En este escenario, no se generarán ni un evento de auditoría, ni un correo electrónico.
 
-Para buscar el registro de auditoría para este evento, busque **Desfase detectado de la confidencialidad del documento** en la categoría de las **actividades de archivos y páginas**. 
+Para buscar el registro de auditoría para este evento, busque **Desfase detectado de la confidencialidad del documento** en la categoría de las **actividades de archivos y páginas**.
 
 El correo electrónico generado automáticamente tiene el asunto **Etiqueta de confidencialidad no compatible detectado** y el mensaje de correo electrónico explica que la etiqueta no coincide con un vínculo al documento cargado y al sitio. También contiene un vínculo a la documentación en el que se explica cómo los usuarios pueden cambiar la etiqueta de confidencialidad. Actualmente, estos correos electrónicos automatizados no se pueden deshabilitar o personalizar.
 
-Cuando alguien agrega o quita una etiqueta de confidencialidad a un sitio o grupo, estas actividades también se auditan, pero sin generar un correo electrónico automáticamente. 
+Cuando alguien agrega o quita una etiqueta de confidencialidad a un sitio o grupo, estas actividades también se auditan, pero sin generar un correo electrónico automáticamente.
 
 Todos estos eventos de auditoría se pueden encontrar en la categoría [Actividades de etiqueta de confidencialidad](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities). Para obtener instrucciones sobre cómo buscar el registro de auditoría, vea [buscar el registro de auditoría en el Centro de seguridad y cumplimiento](search-the-audit-log-in-security-and-compliance.md).
 

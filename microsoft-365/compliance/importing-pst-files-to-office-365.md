@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de seguridad y cumplimiento para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127165"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860737"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -146,7 +146,7 @@ Además, para crear trabajos de importación en el Centro de seguridad y cumplim
   
  **¿Dónde está disponible la carga en la red?**
   
-La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga en la red estará disponible en más regiones próximamente.
+La carga en la red está disponible actualmente en estas regiones: Estados Unidos, Canadá, Brasil, Reino Unido, Francia, Alemania, Suiza, Noruega, Europa, India, Asia Oriental, Sudeste asiático, Japón, República de Corea, Australia y Emiratos Árabes Unidos. La carga en la red estará disponible en más regiones próximamente.
   
  **¿Cuál es el precio de importar archivos PST con la carga en la red?**
   
