@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Aprenda a establecer la directiva de expiración de contraseñas para su organización en el Centro de administración de Microsoft 365. '
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597370"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868872"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -50,7 +50,7 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
 > [!IMPORTANT]
 > Solo los [administradores globales](../add-users/about-admin-roles.md) pueden realizar estos pasos.
   
-1. En el centro de administración, vaya a **configuración** \> **ajustes**.
+1. En el centro de administración, vaya a **Configuración** \> **Ajustes de organización**.
 
 2. Vaya a la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">seguridad y privacidad</a>.
  Si no es administrador global, no verá la opción de seguridad y privacidad.

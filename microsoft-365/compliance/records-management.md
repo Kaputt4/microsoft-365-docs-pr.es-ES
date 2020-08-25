@@ -1,5 +1,5 @@
 ---
-title: Administración de registros
+title: Administración de registros en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: c2ff344d22286fcd865aa08344389dad6334d48d
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778328"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868915"
 ---
-# <a name="learn-about-records-management"></a>Más información sobre la administración de registros
+# <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
