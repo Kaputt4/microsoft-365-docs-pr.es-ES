@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778540"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867215"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records-management.md#records) que se han eliminado automáticamente al final del período de retención. 
 
@@ -35,18 +35,14 @@ Para administrar las revisiones de disposición y confirmar que los registros se
 
 ### <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Aunque el aviso estándar es agregar usuarios a los grupos de roles predeterminados, en este caso, se recomienda crear un nuevo grupo de funciones denominado **revisores de disposición** con estos dos roles y agregar usuarios a este grupo según sea necesario. Un solo grupo de roles para la disposición reduce los gastos generales de administración y facilita a los usuarios los permisos combinados que necesitan.
+Para obtener acceso correctamente a la pestaña **disposición** del centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de administrador de **disposición de disposición** . Este rol se incluye en los grupos de roles de administración predeterminados, el **Administrador de cumplimiento** y el administrador de **datos de cumplimiento**.
+
+Para conceder a los usuarios esta función de administración de disposición, agréguela a uno de estos grupos de roles predeterminados o cree un grupo de roles personalizado (por ejemplo, denominado "revisores de disposición") y conceda a este grupo la función de administración de disposición.  
 
 > [!NOTE]
-> Incluso un administrador global debe recibir la función de **Administración de disposición** . Por lo tanto, los administradores globales deben tener acceso a la ficha disposición como miembros del grupo de roles **Reviewers de disposición** . 
+> Incluso un administrador global debe recibir la función de **Administración de disposición** . 
 
-Específica del rol **registros de auditoría con permiso de vista** :
-
-- Dado que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet de Exchange Online, debe asignar a los usuarios este rol mediante el [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), en lugar de usar la página **permisos** del centro de seguridad & cumplimiento. Para obtener instrucciones, vea [administrar grupos de roles en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-- Los grupos de 365 de Microsoft ([anteriormente los grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) no se admiten para este rol. En su lugar, asigne buzones de usuario, usuarios de correo o grupos de seguridad habilitados para correo.
-
-Para obtener instrucciones sobre cómo conceder a los usuarios la función de **Administración de disposición** y crear su nueva función de **revisores de disposición** , vea [conceder acceso a los usuarios al &amp; centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Habilitar la auditoría
 

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: bd5bf8533d38337c063acdf0dda073e4961e416a
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094839"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867250"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Crear y realizar un seguimiento de los vales de ServiceNow en el centro de seguridad de Microsoft 365
 
 El [centro de seguridad de Microsoft 365](overview-security-center.md) se ha mejorado con la capacidad de crear y realizar un seguimiento de vales en ServiceNow de forma nativa. [Obtenga más información sobre ServiceNow](https://www.servicenow.com/)
 
-En el centro de seguridad, los administradores de seguridad pueden enviar una acción de mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) directamente a ServiceNow y crear un vale. Se pueden crear tíquets de administración de incidentes y de administración de cambios. A continuación, se puede realizar un seguimiento de ellos en la página de inicio del centro de seguridad y en ServiceNow.
+En el centro de seguridad, los administradores de seguridad pueden enviar una acción de mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) directamente a ServiceNow y crear un vale. Se pueden crear tíquets de administración de incidentes y de administración de cambios. Realice un seguimiento de las entradas en la Página principal del centro de seguridad y en ServiceNow.
 
 - [**Información sobre los requisitos previos, el intercambio de datos y la solución de problemas**](tickets.md)
 - **Administrar vales de ServiceNow en el centro de cumplimiento** (próximamente)
@@ -46,15 +46,15 @@ Seleccione "conectarse a ServiceNow" para ir a la página de configuración de S
 > [!NOTE]
 > Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y ServiceNow, asegúrese de usar el inicio de sesión de usuario y la contraseña de integración que creó en los pasos de instalación. No use sus credenciales personales.
 
-Una vez que haya seguido las instrucciones y la autorización de la conexión, vea el estado de conexión en la página conexión del centro de seguridad 365 de Microsoft y en la experiencia de la aplicación conector de vales de Microsoft 365 de ServiceNow. Ahora ya está todo listo para empezar a crear tareas.
+Una vez que haya seguido las indicaciones y autorice la conexión, vea el estado de conexión en la página conexión del centro de seguridad de 365 de Microsoft y en la experiencia de la aplicación conector de vales de Microsoft 365 de ServiceNow. Ya está todo listo para empezar a crear tareas.
 
 ### <a name="troubleshooting"></a>Solución de problemas
 
-Obtenga información sobre los errores comunes que puede encontrar en el proceso de conexión y cómo mitigarlos en la [sección de solución de problemas](tickets.md#troubleshooting).
+Obtenga información sobre errores comunes que pueden aparecer en el proceso de conexión y cómo mitigarlos en la sección de [solución de problemas](tickets.md#troubleshooting).
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Crear una tarea y compartirla en ServiceNow
 
-Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) . Vaya a cualquier acción de mejora en puntuación segura en el portal del centro de seguridad 365 de Microsoft y seleccione **compartir**. Una de las opciones de lista desplegable es ServiceNow.
+Una vez que la integración esté configurada, cree tareas de ServiceNow basadas en acciones específicas para la mejora de la [calificación segura de Microsoft](microsoft-secure-score.md) . Vaya a cualquier acción de mejora de la puntuación segura en el centro de seguridad 365 de Microsoft y seleccione **compartir**. Una de las opciones de lista desplegable es ServiceNow.
 
 Se genera una tarea en la que puede establecer la prioridad y editar el nombre, la descripción o la fecha de vencimiento. Una vez que se hayan rellenado todos los campos obligatorios, envíe la tarea a ServiceNow.
 
@@ -62,11 +62,11 @@ La tarea es visible en ServiceNow como una solicitud de cambio de configuración
 
 ## <a name="track-tickets"></a>Seguimiento de vales
 
-Una vez que se han creado los vales de administración de cambios y la administración de cambios de ServiceNow, se muestran en las tarjetas de la página de inicio del centro de seguridad de Microsoft 365. Desde estas tarjetas, puede crear un vale, ver todos los vales o administrar la configuración de ServiceNow.
+Una vez que se hayan creado los vales de administración de cambios y la administración de cambios de ServiceNow, se mostrarán en las tarjetas de la Página principal del centro de seguridad de Microsoft 365. Desde estas tarjetas, puede crear un vale, ver todos los vales o administrar la configuración de ServiceNow.
 
 ![Vales de administración de cambios de ServiceNow](../../media/change-management-375.png)  ![Vales de administración de incidentes de ServiceNow](../../media/incident-management-375.png)
 
-Para volver a aprovisionar o administrar la integración de ServiceNow en el centro de seguridad de Microsoft 365, seleccione **administrar la configuración de servicenow** en una de las tarjetas. Desde allí, elimine la conexión de ServiceNow actual y personalice los nombres de los Estados de las incidencias.
+Para reprovisionar o administrar la integración de ServiceNow en el centro de seguridad de Microsoft 365, seleccione **administrar la configuración de servicenow** en una de las tarjetas. Desde allí, elimine la conexión de ServiceNow actual y personalice los nombres de los Estados de las incidencias.
 
 Con los vales de ServiceNow visibles en el centro de seguridad de Microsoft 365, las tareas residen en un lugar en el que se puede realizar un seguimiento y actuar junto a otros elementos del panel de seguridad.
 

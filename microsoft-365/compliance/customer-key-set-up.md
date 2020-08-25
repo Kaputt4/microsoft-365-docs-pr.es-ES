@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845838"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868895"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -93,7 +93,7 @@ Complete estas tareas en Azure Key Vault. Deberá completar estos pasos independ
   
 ### <a name="create-two-new-azure-subscriptions"></a>Crear dos nuevas suscripciones de Azure
 
-La clave de cliente requiere dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo pueden estar autorizadas para aplicaciones en el mismo inquilino de Azure Active Directory (AAD), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización y al que se asignará la DEPs. Por ejemplo, con su cuenta profesional o educativa con privilegios de administrador global en su organización. Para obtener los pasos detallados, consulte [registrarse para Azure como organización](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+La clave de cliente requiere dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo pueden estar autorizadas para aplicaciones en el mismo inquilino de Azure Active Directory (Microsoft Azure Active Directory), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización donde se asignará el DEPs. Por ejemplo, con su cuenta profesional o educativa con privilegios de administrador global en su organización. Para obtener los pasos detallados, consulte [registrarse para Azure como organización](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que los miembros de la organización se configuren como una clave en cada suscripción. Además, estas suscripciones de Azure solo deben usarse para administrar claves de cifrado para Office 365. Esto protege a su organización en caso de que uno de sus operadores elimine accidentalmente, de forma intencionada, o de una mala administración de las claves de las que es responsable. <br/> Le recomendamos que configure nuevas suscripciones de Azure que solo se usan para administrar recursos de Azure Key Vault para usarlas con la clave de cliente. No hay ningún límite práctico en el número de suscripciones de Azure que puede crear para su organización. Siga estos procedimientos recomendados para minimizar el impacto de los errores humanos mientras ayuda a administrar los recursos usados por la clave de cliente.

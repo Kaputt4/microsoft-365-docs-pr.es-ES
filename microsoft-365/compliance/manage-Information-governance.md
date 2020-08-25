@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente las capacidades de Microsoft Information Governance en Microsoft 365 para regir los datos según los requisitos normativos o de cumplimiento normativo.
-ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: b02c724ee812e622a45939d11b78f87245e2f194
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815193"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866956"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de información de Microsoft en Microsoft 365
 
@@ -27,11 +27,13 @@ ms.locfileid: "46815193"
 
 Use las capacidades de Microsoft Information Governance (a veces abreviado para MIG) para regir los datos según los requisitos normativos o de cumplimiento.
 
+![Regir la administración de registros y el gobierno de información de datos](../media/information-governance-records-management.png)
+
 ¿Desea proteger sus datos? Consulte [protección de la información de Microsoft en microsoft 365](protect-information.md).
 
 ## <a name="information-governance"></a>Gobierno de la información
 
-Para conservar lo que quiera y eliminar lo que no:
+Para mantener lo que necesita y eliminar lo que no:
  
 |Funcionalidad|¿Qué problemas soluciona?|Introducción|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -42,7 +44,7 @@ Para conservar lo que quiera y eliminar lo que no:
 
 ## <a name="records-management"></a>Administración de registros
 
-Para administrar contenido de gran valor para obligaciones legales, empresariales o regulatorias, use administración de registros:
+Para administrar contenido de gran valor para obligaciones legales, empresariales o regulatorias:
 
 |Funcionalidad|¿Qué problemas soluciona?|Introducción|
 |:------|:------------|---------------------|:----------------------------|

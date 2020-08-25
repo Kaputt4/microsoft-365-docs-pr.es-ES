@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que contengan opciones de configuración inferiores a las directivas de seguridad de protección estándar y protección estricta.
-ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Los administradores pueden aprender a usar el analizador de configuración para encontrar y corregir directivas de seguridad que están por debajo de las directivas de seguridad estándar protección estándar y protección estricta.
+ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825778"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867168"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Analizador de configuración para directivas de protección en EOP y Office 365 ATP
 
 > [!NOTE]
 > Las características descritas en este tema están en versión preliminar, no están disponibles en todas las organizaciones y están sujetas a cambios.
 
-El analizador de configuración del centro de seguridad & cumplimiento ofrece una ubicación central para buscar y corregir cualquiera de las directivas de seguridad que contengan valores inferiores a la configuración de Perfil de protección estándar y protección estricta en [directivas de seguridad predeterminadas](preset-security-policies.md).
+El analizador de configuración del centro de seguridad & cumplimiento ofrece una ubicación central para buscar y corregir directivas de seguridad en las que la configuración está por debajo de la configuración de Perfil de protección estándar y protección estricta en [directivas de seguridad predeterminadas](preset-security-policies.md).
 
 El analizador de configuración analiza los siguientes tipos de directivas:
 
@@ -59,7 +59,7 @@ Los valores de configuración **estándar** y **estricta** de la Directiva que s
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para poder realizar los procedimientos de este tema, deberá tener asignados los permisos necesarios:
+- Debe tener permisos asignados para poder realizar los procedimientos descritos en este artículo:
 
   - Para usar el analizador de configuración **y** realizar actualizaciones en las directivas de seguridad, debe pertenecer a uno de los siguientes grupos de roles:
 
@@ -81,7 +81,7 @@ El analizador de configuración tiene dos pestañas principales:
 
 - **Configuración y recomendaciones**: elige estándar o estricto y compara esa configuración con las directivas de seguridad existentes. En los resultados, puede ajustar los valores de la configuración para que aparezcan en el mismo nivel que el estándar o estricto.
 
-- **Análisis e historial de desplazamiento de configuración**: esta vista permite realizar un seguimiento de los cambios realizados en las directivas en función de los resultados del analizador de configuración a lo largo del tiempo.
+- **Análisis e historial de la fase de configuración**: esta vista permite realizar un seguimiento de los cambios de directiva con el tiempo.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Configuración y ficha recomendaciones en el analizador de configuración
 
@@ -89,7 +89,7 @@ De forma predeterminada, la pestaña se abre en la comparación con el perfil de
 
 ![Vista de configuración y recomendaciones en el analizador de configuración](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-De forma predeterminada, la columna de **nombre de configuración/grupo de directivas** contiene una vista contraída de los diferentes tipos de directivas de seguridad y el número de configuraciones de las directivas que necesitan mejorar (si las hay). Los tipos de directivas son los siguientes:
+De forma predeterminada, la columna **grupo de directivas/nombre de configuración** contiene una vista contraída de los distintos tipos de directivas de seguridad y el número de opciones de configuración que necesitan mejorar (si las hay). Los tipos de directivas son los siguientes:
 
 - **Contra correo electrónico no deseado**
 - **Contra la suplantación de identidad**
@@ -97,11 +97,11 @@ De forma predeterminada, la columna de **nombre de configuración/grupo de direc
 - **Datos adjuntos seguros de ATP** (si la suscripción incluye ATP)
 - **Vínculos seguros ATP** (si la suscripción incluye ATP)
 
-En la vista predeterminada, todo se contrae. Junto a cada Directiva, se muestra un resumen de los resultados de la comparación de las directivas (que puede modificar) y la configuración de las directivas correspondientes para los perfiles de protección estándar o estricto (que no se pueden modificar). Verá la siguiente información:
+En la vista predeterminada, todo se contrae. Junto a cada Directiva, hay un resumen de los resultados de la comparación de las directivas (que puede modificar) y la configuración de las directivas correspondientes para los perfiles de protección estándar o estricto (que no se pueden modificar). Verá la siguiente información del perfil de protección que está comparando con:
 
-- **Verde**: todas las opciones de configuración de todas las directivas existentes son al menos tan seguras como el perfil de protección al que se realiza la comparación.
-- **Ámbar**: un número reducido de configuraciones en las directivas existentes no es tan seguro como el perfil de protección al que se realiza la comparación.
-- **Rojo**: un número significativo de configuraciones en las directivas existentes no es tan seguro como el perfil de protección al que se realiza la comparación. Esto puede deberse a algunas configuraciones en muchas directivas o muchas opciones de configuración en una directiva.
+- **Verde**: todas las opciones de configuración de todas las directivas existentes son al menos tan seguras como el perfil de protección.
+- **Ámbar**: un número reducido de configuraciones en las directivas existentes no es tan seguro como el perfil de protección.
+- **Red**: un número significativo de configuraciones en las directivas existentes no es tan seguro como el perfil de protección. Esto puede deberse a algunas configuraciones en muchas directivas o muchas opciones de configuración en una directiva.
 
 Para comparaciones favorables, verá el texto: **todas las opciones siguen** \<**Standard** or **Strict**\> **recomendaciones**. De lo contrario, verá el número de opciones de configuración recomendadas que se deben cambiar.
 
@@ -123,7 +123,7 @@ Si la comparación no tiene recomendaciones para la mejora (verde), la expansió
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Ficha historial y análisis de derivación de configuración del analizador de configuración
 
-Esta ficha permite realizar un seguimiento de los cambios realizados en las directivas de seguridad personalizadas en función de la información del analizador de seguridad. De forma predeterminada, se muestra la siguiente información:
+Esta pestaña le permite realizar un seguimiento de los cambios realizados en las directivas de seguridad personalizadas. De forma predeterminada, se muestra la siguiente información:
 
 - **Última modificación**
 - **Modificado por**

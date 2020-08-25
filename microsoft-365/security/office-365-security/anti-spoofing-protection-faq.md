@@ -16,16 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra la suplantación de identidad en Exchange Online Protection (EOP).
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826678"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867144"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Preguntas frecuentes sobre la protección contra la suplantación de identidad
 
-En este tema se proporcionan preguntas frecuentes y respuestas sobre la protección contra la suplantación de identidad para las organizaciones de Microsoft 365 con buzones en Exchange online o con organizaciones independientes de Exchange Online (EOP) sin buzones de correo de Exchange Online.
+En este artículo se proporcionan preguntas frecuentes y respuestas sobre la protección contra la suplantación de identidad para las organizaciones de Microsoft 365 con buzones en Exchange online o las organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 
 Para preguntas y respuestas sobre la protección contra correo no deseado, consulte [preguntas más frecuentes sobre protección contra correo no deseado](anti-spam-protection-faq.md).
 
@@ -33,11 +33,11 @@ Para preguntas y respuestas sobre la protección antimalware, consulte [pregunta
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>¿Por qué eligió Microsoft el correo electrónico no deseado sin autenticar?
 
-Debido al impacto de los ataques de suplantación de identidad (phishing) y debido a que la autenticación de correo electrónico ha estado por encima de los 15 años, Microsoft cree que el riesgo de continuar permitiendo el correo entrante no autenticado es mayor que el riesgo de perder correo entrante.
+Microsoft cree que el riesgo de continuar permitiendo el correo electrónico entrante no autenticado es mayor que el riesgo de perder el correo entrante legítimo.
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>¿El correo electrónico entrante no autenticado no está autenticado hacer que el correo electrónico legítimo se marque como correo no deseado?
 
-Cuando Microsoft habilitaba esta característica en 2018, se han producido algunos falsos positivos (los mensajes correctos se marcaron como no válidos). Sin embargo, con el tiempo, los remitentes ajustados a los nuevos requisitos de autenticación del remitente y el número de mensajes que se identificaron de forma insignificante como falsificado se convirtió en despreciable en la mayoría de las rutas de correo electrónico.
+Cuando Microsoft habilitaba esta característica en 2018, se han producido algunos falsos positivos (los mensajes correctos se marcaron como no válidos). Sin embargo, con el tiempo, los remitentes se ajustan a los requisitos. El número de mensajes que se han identificado como falsificados se convirtió en despreciable en la mayoría de las rutas de correo electrónico.
 
 Microsoft ha adoptado primero los nuevos requisitos de autenticación de correo electrónico varias semanas antes de implementarlos para los clientes. Aunque hubo complicaciones al principio, se fueron reduciendo gradualmente.
 
@@ -45,7 +45,7 @@ Microsoft ha adoptado primero los nuevos requisitos de autenticación de correo 
 
 Sí. A partir del 2018 de octubre, la inteligencia de identidad está disponible para todas las organizaciones con buzones en Exchange Online y organizaciones independientes de EOP sin buzones de correo de Exchange Online.
 
-La tecnología contra la suplantación de identidad solo se implementó inicialmente en organizaciones que tenían suscripciones de Office 365 Enterprise E5 o el complemento de protección contra amenazas avanzada de Office 365 (ATP de Office 365) para su suscripción.
+La tecnología contra la suplantación de identidad solo estaba inicialmente disponible en la protección contra amenazas avanzada de Office 365. Por ejemplo, las suscripciones de Microsoft E5 o los complementos de ATP.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>¿Cómo señalar mensajes de correo no deseado o correo deseado a Microsoft?
 
@@ -57,9 +57,9 @@ Ve [que no conoces todos los orígenes de tu correo electrónico](email-validati
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>¿Qué sucede si se deshabilita la protección contra la suplantación de identidad para mi organización?
 
-Esto no se recomienda porque estará expuesto a más intentos de mensajes de phishing y spam. No todos los casos de phishing son spoofing y no todos los spoofing pasarán sin detectarse. Pero, el riesgo será mayor que para un cliente que habilita la protección contra la suplantación.
+No se recomienda deshabilitar la protección contra la suplantación de identidad. La deshabilitación de la protección permitirá que se entreguen más mensajes de suplantación de identidad y de correo no deseado en la organización. No todos los suplantadores de identidad suplantan suplantación y no todos los mensajes suplantados se pierden. Sin embargo, el riesgo será mayor.
 
-Ahora que hay disponible un [filtrado mejorado para los conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) , ya no se recomienda desactivar la protección contra la suplantación de identidad si el registro MX apunta a otro servidor o servicio antes de entregar el correo electrónico a EOP.
+Ahora que hay disponible [filtrado mejorado para los conectores](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) , ya no se recomienda desactivar la protección contra la suplantación de identidad cuando el correo electrónico se enruta a través de otro servicio antes de EOP.
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>¿La protección contra la suplantación de identidad supone que estoy protegido contra la suplantación de identidad (phishing)?
 
@@ -71,7 +71,7 @@ Casi todos los servicios de correo electrónico grandes implementan las comproba
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>¿Necesito habilitar la configuración avanzada de filtro de correo no deseado "registro SPF: error grave" (_MarkAsSpamSpfRecordHardFail_) si habilito la suplantación de identidad (phishing)?
 
-No. Esta configuración de ASF ya no es necesaria porque la suplantación de identidad no solo considera un error de disco duro SPF, sino un conjunto mucho más amplio de criterios. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
+No. Esta configuración de ASF ya no es necesaria. La protección contra la suplantación de identidad considera el disco duro SPF produce un error y un conjunto de criterios mucho más amplio. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
 
 Le recomendamos que deshabilite esta característica ya que proporciona casi ninguna ventaja para detectar correo no deseado o de suplantación de identidad (phishing) y, en cambio, generará principalmente falsos positivos. Para obtener más información, vea [configuración del filtro de correo no deseado avanzado (ASF) en EOP](advanced-spam-filtering-asf-options.md).
 

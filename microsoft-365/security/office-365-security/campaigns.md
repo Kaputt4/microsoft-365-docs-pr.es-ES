@@ -1,5 +1,5 @@
 ---
-title: Vistas de campañas en ATP
+title: Vistas de campaña en Office 365 plan ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,21 +17,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las Vistas de la campaña en la Protección contra amenazas avanzada de Office 365.
-ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825802"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867204"
 ---
-# <a name="campaign-views-in-atp"></a>Vistas de campañas en ATP
+# <a name="campaign-views-in-office-365-atp"></a>Vistas de la campaña en ATP de Office 365
 
-Las vistas de campañas son una característica de la protección contra amenazas avanzada (ATP) en el centro de seguridad & cumplimiento que identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
+Las vistas de campañas son una característica del plan 2 de la protección contra amenazas avanzada (ATP) (por ejemplo, Microsoft 365 E5 u organizaciones con un complemento ATP plan 2). Campaing views in the Security & Compliance Center identifica y categoriza los ataques de suplantación de identidad (phishing) en el servicio. Vistas de la campaña puede ayudarle a:
 
 - Investigar y responder eficazmente a los ataques de suplantación de identidad.
-
 - Entender mejor el alcance del ataque.
-
 - Proporcionar información a los responsables de la toma de decisiones.
 
 La característica Vistas de la campaña le permite obtener una perspectiva general del ataque más completa y más rápidamente.
@@ -43,11 +41,8 @@ Una campaña es un ataque de correo electrónico coordinado contra una o varias 
 Microsoft aprovecha la gran cantidad de datos contra phishing, contra correo electrónico no deseado y antimalware en todo el servicio para ayudarle a identificar las campañas. Analizamos y clasificamos la información de ataques de acuerdo con varios factores. Por ejemplo:
 
 - **Origen del ataque**: las direcciones IP de origen y los dominios de correo electrónico del remitente.
-
-- **Propiedades**de los mensajes de ataque: el contenido, el estilo y el tono de los mensajes.
-
-- **Los destinatarios del ataque**: dominios de destinatarios, funciones de trabajo de los destinatarios (administradores, ejecutivos, etc.), tipos de empresa (grandes, pequeñas, públicas, privadas, etc.) y sectores.
-
+- **Propiedades del mensaje**: el contenido, el estilo y el tono de los mensajes.
+- **Destinatarios del mensaje**: cómo se relacionan los destinatarios. Por ejemplo, dominios de destinatarios, funciones de trabajo de destinatarios (administradores, ejecutivos, etc.), tipos de empresas (grandes, pequeñas, públicas, privadas, etc.) y sectores.
 - **Carga de ataques**: vínculos malintencionados, datos adjuntos u otras cargas en los mensajes.
 
 Una campaña puede ser de corta duración o puede abarcar varios días, semanas o meses con períodos activos e inactivos. Es posible que se inicie una campaña en su organización específica o que la organización forme parte de una campaña más grande en varias compañías.
@@ -85,7 +80,7 @@ El resto de la página de información general muestra la siguiente información
 
 - **Asunto de ejemplo**: línea de asunto de uno de los mensajes de la campaña. Tenga en cuenta que todos los mensajes de la campaña no tendrán necesariamente el mismo asunto.
 
-- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Este valor indica el grado al que la campaña está dirigida específicamente a su organización (un valor superior) frente a la dirigida a otras organizaciones del servicio (un valor inferior).
+- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Este valor indica el grado al que se dirige la campaña sólo a la organización (un valor superior) en comparación con otras organizaciones del servicio (un valor inferior).
 
 - **Tipo**: este valor puede ser **phish** o **malware**.
 
@@ -103,9 +98,9 @@ Donde esté disponible, la marca que está en phish a la campaña. Cuando la tec
 
 - **Haga clic en**: el número de usuarios que hizo clic en la dirección URL o abrieron los datos adjuntos en el mensaje de suplantación de identidad.
 
-- **Tasa de clic**: porcentaje calculado con "se ha**pulsado en**la  /  **bandeja de entrada**". Este valor es un indicador de la efectividad de la campaña y de si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y evitar hacer clic en la dirección URL de carga.
+- **Tasa de clic**: porcentaje calculado con "se ha**pulsado en**la  /  **bandeja de entrada**". Este valor es un indicador de la efectividad de la campaña. Es decir, si los destinatarios pudieron identificar el mensaje como suplantación de identidad (phishing) y no han hecho clic en la dirección URL de carga.
 
-  Tenga en cuenta que este valor no se usa en las campañas de malware.
+  Tenga en cuenta que la **tasa de clics** no se usa en las campañas de malware.
 
 - **Visitado**: el número de usuarios que se han realizado realmente a través del sitio web de carga. Si hay valores en los que se ha **pulsado** , pero los vínculos seguros han bloqueado el acceso al sitio web, este valor será cero.
 
@@ -123,7 +118,7 @@ Para filtrar más la vista, puede hacer una sola propiedad con varios valores al
 
 Las propiedades de la campaña disponibles se describen en la siguiente lista:
 
-- Básica
+- Basic
 
   - **Tipo de campaña**: seleccione **malware** o **phish**. Si se quitan las selecciones, se obtiene el mismo resultado que al seleccionar ambas.
   - **Nombre de la campaña**
@@ -194,11 +189,11 @@ En la parte superior de la vista detalles de la campaña, está disponible la si
   - El número de usuarios que hizo clic en la carga de la URL en el mensaje de suplantación de identidad.
   - Howe muchos usuarios visitaron la dirección URL.
 
-- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Tenga en cuenta que este valor se calcula en toda la duración de la campaña y no cambia las fechas de filtro.
+- **Destino**: porcentaje calculado por: (el número de destinatarios de la campaña de la organización)/(el número total de destinatarios en la campaña en todas las organizaciones del servicio). Tenga en cuenta que este valor se calcula en toda la duración de la campaña y no cambia en función de los filtros de fecha.
 
 - Escala de tiempo interactiva de la actividad de la campaña: la escala de tiempo muestra la actividad durante toda la duración de la campaña. De forma predeterminada, el área sombreada incluye el filtro de intervalo de fechas que ha seleccionado en la información general. Puede hacer clic y arrastrar para seleccionar un punto inicial y un punto final específicos, <u>que cambiarán los datos que se muestran en el área de **impacto** y el resto de la página, tal y como se describe en las siguientes secciones</u>.
 
-En la barra de título, puede hacer clic en el icono de descarga de la campaña de descarga del botón de instalación de la **campaña** ![ para descargar ](../../media/download-campaign-write-up-button.png) los detalles de la campaña en un documento de Word (de forma predeterminada, con el nombre CampaignReport.docx). Tenga en cuenta que este documento contiene detalles sobre toda la duración de la campaña (no solo las fechas de filtro seleccionadas).
+En la barra de título, puede hacer clic en el icono de descarga de la campaña de descarga del botón de instalación de la **campaña** ![ para descargar ](../../media/download-campaign-write-up-button.png) los detalles de la campaña en un documento de Word (de forma predeterminada, con el nombre CampaignReport.docx). Tenga en cuenta que la descarga contiene detalles sobre toda la duración de la campaña (no solo las fechas de filtro seleccionadas).
 
 ![Información de la campaña](../../media/campaign-details-campaign-info.png)
 
@@ -219,29 +214,29 @@ El diagrama contiene la información siguiente:
 
 - **Dominios de remitente**
 
-- **Filtrar veredictos**: estos valores están relacionados con los veredictos de filtrado de suplantación de identidad (phishing) y correo no deseado disponibles, tal como se describe en [anti-spam Message headers](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
+- **Filtrar veredictos**: los valores de veredicto están relacionados con los veredictos de filtrado de suplantación de identidad y correo no deseado disponibles, como se describe en [encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). En la tabla siguiente se describen los valores disponibles:
 
   ****
 
   |Valor|Veredicto de filtro de correo no deseado|Description|
   |---|---|---|
-  |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo, también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos (por ejemplo, el remitente y el destinatario parecen estar en la misma organización).|
-  |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado (por ejemplo, mediante una regla de flujo de correo).|
+  |**Permitido**|`SFV:SKN` <br/><br/> `SFV:SKI`|El mensaje se marcó como no es correo no deseado o omitido antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, un mensaje se marcó como no correo no deseado mediante una regla de flujo de correo (también denominada regla de transporte).<br/><br/>El mensaje omitió el filtrado de correo no deseado por otros motivos. Por ejemplo, el remitente y el destinatario parecen estar en la misma organización.|
+  |**Bloqueado**|`SFV:SKS`|El mensaje se marcó como correo no deseado antes de ser evaluado por el filtrado de correo no deseado. Por ejemplo, por una regla de flujo de correo.|
   |**Detectados**|`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
   |**No detectado**|`SFV:NSPM`|El mensaje se marcó como no correo no deseado por el filtrado de correo no deseado.|
   |**Exento**|`SFV:SKQ`|El mensaje omitió el filtrado de correo no deseado porque se liberó de la cuarentena.|
-  |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
-  |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de la Directiva contra correo no deseado (por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos).|
-  |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros de un usuario en Outlook.|
-  |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados de un usuario en Outlook.|
-  |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) llevó a cabo una acción en el mensaje entregado de acuerdo con la configuración de la Directiva contra correo no deseado (se movió a la carpeta de correo no deseado o en cuarentena).|
+  |**Permitir inquilino**<sup>\*</sup>|`SFV:SKA`|El mensaje omitió el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
+  |**Bloque tenant**<sup>\*\*</sup>|`SFV:SKA`|El mensaje fue bloqueado por el filtrado de correo no deseado debido a la configuración de una directiva contra correo no deseado. Por ejemplo, el remitente estaba en la lista de remitentes permitidos o en la lista de dominios permitidos.|
+  |**Permitir al usuario**<sup>\*</sup>|`SFV:SFE`|El mensaje omitió el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes seguros del usuario.|
+  |**Bloque de usuario**<sup>\*\*</sup>|`SFV:BLK`|El mensaje fue bloqueado por el filtrado de correo no deseado porque el remitente estaba en la lista de remitentes bloqueados del usuario.|
+  |**ZAP**|No aplicable|La [depuración automática de cero horas (ZAP)](zero-hour-auto-purge.md) movió el mensaje entregado a la carpeta de correo electrónico no deseado o a la cuarentena. La acción se configura en la Directiva contra correo no deseado.|
   |
 
   <sup>\*</sup> Revise las directivas contra correo no deseado, ya que es probable que el servicio haya bloqueado el mensaje permitido.
 
   <sup>\*\*</sup> Revise las directivas contra correo no deseado, ya que estos mensajes deben estar en cuarentena, no entregados.
 
-- **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea en la bandeja de entrada o en la carpeta de correo no deseado), incluso aunque los usuarios no hayan hecho clic en la URL de carga del mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
+- **Ubicaciones de entrega**: probablemente querrá investigar los mensajes que se entregaron a los destinatarios (ya sea a la bandeja de entrada o a la carpeta de correo electrónico no deseado), incluso si los usuarios no han hecho clic en la dirección URL de carga en el mensaje. También puede quitar los mensajes en cuarentena de la cuarentena. Para obtener más información, vea [mensajes de correo electrónico en cuarentena en EOP](quarantine-email-messages.md).
 
   - **Carpeta eliminada**
   - **Sombra**
@@ -253,14 +248,14 @@ El diagrama contiene la información siguiente:
   - **Cuarentena**
   - **Desconocido**
 
-- **Clics en dirección URL**: se describen en la siguiente sección.
+- **Clics de dirección URL**: estos valores se describen en la siguiente sección.
 
 > [!NOTE]
 > En todas las capas que contienen más de 10 elementos, se muestran los 10 elementos principales, mientras que el resto se agrupan en **otros**.
 
 #### <a name="url-clicks"></a>Clics de URL
 
-Cuando se entrega un mensaje de suplantación de identidad a un destinatario (en la bandeja de entrada o en la carpeta de correo electrónico no deseado), siempre hay una posibilidad de que el usuario haga clic en la dirección URL de la carga. No hacer clic en la dirección URL de un mensaje entregado es una pequeña medida de éxito, pero debe determinar por qué el mensaje de suplantación de identidad (phishing) se entregó a su buzón en primer lugar.
+Cuando un mensaje de suplantación de identidad se entrega a la bandeja de entrada o a la carpeta de correo no deseado del destinatario, siempre existe la posibilidad de que el usuario haga clic en la dirección URL de la carga. No hacer clic en la dirección URL es una pequeña medida del éxito, pero debe determinar por qué el mensaje de suplantación de identidad se entregó hasta el buzón.
 
 Si un usuario hace clic en la dirección URL de carga en el mensaje de suplantación de identidad (phishing), las acciones se muestran en el área de **clics de la dirección URL** del diagrama en la vista detalles de la campaña.
 
@@ -268,9 +263,9 @@ Si un usuario hace clic en la dirección URL de carga en el mensaje de suplantac
 
 - **BlockPage**: el destinatario hizo clic en la dirección URL de carga, pero el acceso al sitio Web malintencionado fue bloqueado por las directivas de [vínculos seguros de ATP](atp-safe-links.md) en su organización.
 
-- **BlockPageOverride**: el destinatario hizo clic en la dirección URL de carga en el mensaje, los vínculos seguros de ATP intentaron detenerlos, pero se permitió invalidar el bloque. Debe investigar sus directivas de [vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio Web malintencionado.
+- **BlockPageOverride**: el destinatario hizo clic en la dirección URL de carga en el mensaje, los vínculos seguros de ATP intentaron detenerlos, pero se permitió invalidar el bloque. Revise sus [directivas de vínculos seguros](set-up-atp-safe-links-policies.md) para ver por qué los usuarios pueden invalidar el veredicto de vínculos seguros y continuar con el sitio Web malintencionado.
 
-- **PendingDetonationPage**: los datos adjuntos seguros de ATP están en proceso de abrir la URL de carga en un entorno de equipo virtual y ver qué sucede.
+- **PendingDetonationPage**: datos adjuntos seguros en Office 365 ATP está en proceso de abrir y investigar la dirección URL de carga en un entorno de equipo virtual.
 
 - **PendingDetonationPageOverride**: el destinatario tuvo permiso para invalidar el proceso de detonación de carga y abrir la dirección URL sin esperar los resultados.
 
@@ -281,7 +276,7 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
 > [!TIP]
 > La información que se muestra en las pestañas se controla mediante el intervalo de fechas sombreado en la escala de tiempo como se describe en la sección información de la [campaña](#campaign-information) .
 
-- **Clics en dirección URL**: si los usuarios no han hecho clic en la dirección URL de carga en el mensaje de suplantación de identidad, esta sección estará en blanco. Si un usuario pudo hacer clic en la dirección URL, se rellenarán los siguientes valores:
+- **Clics en dirección URL**: si los usuarios no han hecho clic en la dirección URL de la carga en el mensaje, esta sección estará en blanco. Si un usuario pudo hacer clic en la dirección URL, se rellenarán los siguientes valores:
 
   - **Usuario**<sup>\*</sup>
   - **URL**<sup>\*</sup>
@@ -294,7 +289,7 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
   - **Recuento total**
   - **En la bandeja de entrada**
   - **Sin bandeja de entrada**
-  - **SPF superado**: el [marco de directivas de remitente (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)autenticó el remitente. Un remitente que no pasa la validación SPF indica que el remitente no está autenticado o que está suplantando a un remitente legítimo.
+  - **SPF superado**: el [marco de directivas de remitente (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)autenticó el remitente. Un remitente que no pasa la validación SPF indica que un remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
 
 - **Remitentes**
 
@@ -302,8 +297,8 @@ Las pestañas de la vista detalles de la campaña le permiten investigar más de
   - **Recuento total**
   - **En la bandeja de entrada**
   - **Sin bandeja de entrada**
-  - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica que el remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
-  - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica que el remitente no está autenticado o que el mensaje está suplantando a un remitente legítimo.
+  - **DKIM pasado**: el remitente ha sido autenticado por el [correo identificado por claves de dominio (DKIM)](support-for-validation-of-dkim-signed-messages.md). Un remitente que no pasa la validación de DKIM indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
+  - **DMARC pasada**: el remitente ha sido autenticado por la [autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC)](use-dmarc-to-validate-email.md). Un remitente que no pasa la validación de DMARC indica un remitente no autenticado o el mensaje está suplantando a un remitente legítimo.
 
 - **Attachments**
 

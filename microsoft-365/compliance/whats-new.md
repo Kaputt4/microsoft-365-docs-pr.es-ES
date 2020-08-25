@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Independientemente de si va a agregar nuevas soluciones al centro de cumplimiento, a actualizar características existentes en función de sus comentarios o a la actualización de documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos realizado este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798182"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868977"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades en el cumplimiento de Microsoft 365
 
@@ -97,8 +97,6 @@ Abril incluye un par de actualizaciones clave para nuestra solución de administ
 
 - La sección "administración de registros" ya está completamente disponible en el centro de cumplimiento. Aproveche las ventajas de las interfaces de usuario y la funcionalidad actualizadas para el plan de archivos, las etiquetas de retención y las directivas de etiquetas, eventos y disposición.
 - Hablando de disposición, también se ha implementado una [prueba de la disposición](disposition.md#disposition-of-records) para los registros de SharePoint y OneDrive. Ahora puede ver una lista de elementos en aquellas ubicaciones que se han eliminado automáticamente o después de una revisión de disposición.
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Sección Administración de registros en el centro de cumplimiento de Microsoft 365":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Etiquetas de confidencialidad: vista previa de directivas de etiquetado automático
 
@@ -265,9 +263,9 @@ Si ha estado usando el centro de cumplimiento de & de seguridad de Office 365 pa
 |Búsqueda de contenido|Búsqueda de > de búsqueda de contenido <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Búsqueda de contenido <br/> https://compliance.microsoft.com/contentsearch |[Buscar contenido en Office 365](search-for-content.md) |
 |Conectores de datos|Gobierno de la información > archivar datos de terceros <br/> https://protection.office.com/nativeconnector | Conectores de datos <br/> https://compliance.microsoft.com/connectorlanding |[Archivar datos de terceros](archiving-third-party-data.md)|
 |Prevención de pérdida de datos|Prevención de pérdida de datos <br/> https://protection.office.com/datalossprevention |Prevención de pérdida de datos <br/> https://compliance.microsoft.com/datalossprevention |[Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)|
-|Solicitudes de interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
+|Solicitudes de los interesados |Privacidad de datos > solicitudes de sujetos de datos <br/> https://protection.office.com/dsrcases |Solicitudes de los interesados <br/> https://compliance.microsoft.com/datasubjectrequest |[Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|exhibición de documentos electrónicos > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > núcleo <br/> https://compliance.microsoft.com/classicediscovery |[Administrar casos de eDiscovery](ediscovery-cases.md) |
-|Events|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
+|Eventos|Eventos de > de administración de registros <br/> https://protection.office.com/events |Ficha eventos de administración de registros > <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
 |Plan de archivos|Planeación de administración de registros > de archivos <br/> https://protection.office.com/fileplan |Ficha plan de archivos > administración de registros <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Use el plan de archivos para administrar las etiquetas de retención](file-plan-manager.md)|
 |Importar archivos PST|Gobierno de información > archivos PST de importación <br/> https://protection.office.com/importV2 |Ficha importar > de gobierno de información <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Información general sobre la importación de archivos PST de su organización](importing-pst-files-to-office-365.md)|
 |Explorador de actividades de etiqueta|Control del gobierno de información > de actividad de etiquetas <br/> https://protection.office.com/labelexplorer |Clasificación de datos > ficha explorador de actividades <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Ver la actividad en el contenido de la etiqueta (vista previa)](data-classification-activity-explorer.md)|

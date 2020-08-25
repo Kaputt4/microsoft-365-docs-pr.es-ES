@@ -18,19 +18,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre la configuración de filtro de correo no deseado avanzada (ASF) que está disponible en las directivas contra correo no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827342"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867226"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración de filtro de correo no deseado avanzado (ASF) en EOP
 
 > [!NOTE]
 > La configuración de ASF que está disponible actualmente en las directivas contra correo no deseado está en desuso. Le recomendamos que no use estas opciones en las directivas contra correo no deseado. La funcionalidad de esta configuración ASF se incorpora a otras partes de la pila de filtrado. Para obtener más información, vea [configuración de la Directiva contra correo no deseado de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-En Microsoft 365 organizaciones con buzones de correo en Exchange online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, la configuración de filtro de correo no deseado (ASF) en las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o de filtrado ASF se destina específicamente a estas propiedades porque suelen encontrarse en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como **correo no deseado** o **correo no deseado de alta confianza**.
+En todas las organizaciones de Microsoft 365, la configuración de filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado en EOP permite a los administradores marcar los mensajes como correo no deseado en función de las propiedades específicas del mensaje. ASF se destina específicamente a estas propiedades porque suelen encontrarse en el correo no deseado. En función de la propiedad, las detecciones ASF marcarán el mensaje como **correo no deseado** o **correo no deseado de alta confianza**.
 
 > [!NOTE]
 > La habilitación de una o varias opciones de ASF es un enfoque agresivo del filtrado de correo no deseado. No puede informar de mensajes filtrados por ASF como falsos positivos. Puede identificar mensajes filtrados por ASF:
@@ -53,11 +53,11 @@ Para cada configuración ASF, las siguientes opciones están disponibles en las 
 
 - **Test**: ASF agrega el campo de encabezado X correspondiente al mensaje. El valor de **las opciones del modo de prueba** (*TestModeAction*) determina lo que ocurre con el mensaje:
 
-  - **Ninguno**: el enrutamiento y la entrega de mensajes no se ven afectados por la detección de ASF. El mensaje sigue sujeto a otros tipos de filtrado y reglas en EOP.
+  - **None**: la entrega de mensajes no se ve afectada por la detección de ASF. El mensaje sigue sujeto a otros tipos de filtrado y reglas en EOP.
 
-  - **Agregar texto de encabezado x predeterminado (*AddXHeader*)**: el valor del encabezado x `X-CustomSpam: This message was filtered by the custom spam filter option` se agrega al mensaje. Puede usar este valor en reglas de la bandeja de entrada o en reglas de flujo de correo (también conocidas como reglas de transporte) para afectar a la distribución y la entrega del mensaje.
+  - **Agregar texto de encabezado x predeterminado (*AddXHeader*)**: el valor del encabezado x `X-CustomSpam: This message was filtered by the custom spam filter option` se agrega al mensaje. Puede usar este valor en reglas de la bandeja de entrada o en reglas de flujo de correo (también conocidas como reglas de transporte) para afectar a la entrega del mensaje.
 
-  - **Enviar mensaje CCO (*BccMessage*)**: las direcciones de correo electrónico especificadas (el valor del parámetro *TestModeBccToRecipients* en PowerShell) se agregan al campo BCC del mensaje y el mensaje se entrega a los destinatarios CCO. En el centro de seguridad & cumplimiento, separe varias direcciones de correo electrónico con punto y coma (;). En PowerShell, se separan varias direcciones de correo electrónico por comas.
+  - **Enviar mensaje CCO (*BccMessage*)**: las direcciones de correo electrónico especificadas (el valor del parámetro *TestModeBccToRecipients* en PowerShell) se agregan al campo BCC del mensaje y el mensaje se entrega a los destinatarios CCO adicionales. En el centro de seguridad & cumplimiento, separe varias direcciones de correo electrónico con punto y coma (;). En PowerShell, se separan varias direcciones de correo electrónico por comas.
 
   **Notas**:
 
@@ -80,7 +80,7 @@ La siguiente configuración ASF establece el nivel de confianza contra correo no
 |**Vínculos de imagen a sitios remotos** <br/><br/> *IncreaseScoreWithImageLinks*|Los mensajes que contienen `<Img>` vínculos de etiquetas HTML a sitios remotos (por ejemplo, mediante http) se marcan como correo no deseado.|`X-CustomSpam: Image links to remote sites`|
 |**Redireccionamiento de direcciones URL a otro puerto** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Los mensajes que contienen hipervínculos que se redirigen a puertos TCP distintos de 80 (HTTP), 8080 (HTTP alternativo) o 443 (HTTPS) se marcan como correo no deseado.|`X-CustomSpam: URL redirect to other port`|
 |**Dirección IP numérica en URL** <br/><br/> *IncreaseScoreWithNumericIps*|Los mensajes que contienen direcciones URL basadas en números (normalmente, direcciones IP) se marcan como correo no deseado.|`X-CustomSpam: Numeric IP in URL`|
-|**Dirección URL de sitios web .biz o .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Los mensajes que contienen vínculos. BIZ o. info en el cuerpo del mensaje se marcan como correo no deseado.|`X-CustomSpam: URL to .biz or .info websites`|
+|**Dirección URL de sitios web .biz o .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Los mensajes que contienen `.biz` o `.info` vínculos en el cuerpo del mensaje se marcan como correo no deseado.|`X-CustomSpam: URL to .biz or .info websites`|
 |
 
 ## <a name="mark-as-spam-settings"></a>Marcar como configuración de correo no deseado
@@ -95,9 +95,9 @@ La siguiente configuración ASF establece el SCL de los mensajes detectados en 9
 |**JavaScript o VBScript en HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Los mensajes que utilizan JavaScript o Visual Basic Script Edition en HTML están marcados como correo no deseado de alta confianza. <br/><br/> Estos lenguajes de scripting se usan en los mensajes de correo electrónico para que se produzcan acciones específicas automáticamente.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Etiquetas Frame o IFrame en HTML** <br><br/> *MarkAsSpamFramesInHtml*|Los mensajes que contienen `<frame>` o `<iframe>` etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Estas etiquetas se usan en los mensajes de correo electrónico para dar formato a la página para mostrar texto o gráficos.|`X-CustomSpam: IFRAME or FRAME in HTML`|
 |**Etiquetas Object en HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Los mensajes que contienen `<object>` etiquetas HTML se marcan como correo no deseado de confianza alta. <br/><br/> Esta etiqueta permite ejecutar complementos o aplicaciones en una ventana HTML.|`X-CustomSpam: Object tag in html`|
-|**Etiquetas Embed en HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que contienen `<embed>` etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Esta etiqueta permite la incrustación de distintos tipos de documentos de distintos tipos de datos en un documento HTML (por ejemplo, sonidos, películas o imágenes).|`X-CustomSpam: Embed tag in html`|
+|**Etiquetas Embed en HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Los mensajes que contienen `<embed>` etiquetas HTML están marcados como correo no deseado de confianza alta. <br/><br/> Esta etiqueta permite la incrustación de distintos tipos de documentos en un documento HTML (por ejemplo, sonidos, vídeos o imágenes).|`X-CustomSpam: Embed tag in html`|
 |**Etiquetas Form en HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Los mensajes que contienen `<form>` etiquetas HTML se marcan como correo no deseado de confianza alta. <br/><br/> Esta etiqueta se usa para crear formularios de sitios Web. Los anuncios en correo electrónico a menudo incluyen esa etiqueta con el fin de solicitar información del destinatario.|`X-CustomSpam: Form tag in html`|
-|**Errores web en HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *Web Bug* (también conocido como *baliza web*) es un elemento gráfico (a menudo con un tamaño de un píxel en un píxel) que se usa en los mensajes de correo electrónico para determinar si se leyó el mensaje. <br/><br/> Los mensajes que contienen Web bugs están marcados como correo no deseado de confianza alta. <br/><br/> Los boletines legítimos podrían usar bugs Web, aunque muchos consideran la invasión de la privacidad. |`X-CustomSpam: Web bug`|
+|**Errores web en HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *Web Bug* (también conocido como *baliza web*) es un elemento gráfico (a menudo con un tamaño de un píxel en un píxel) que se usa en los mensajes de correo electrónico para determinar si el destinatario leyó el mensaje. <br/><br/> Los mensajes que contienen Web bugs están marcados como correo no deseado de confianza alta. <br/><br/> Los boletines legítimos podrían usar bugs Web, aunque muchos consideran la invasión de la privacidad. |`X-CustomSpam: Web bug`|
 |**Aplicar lista de palabras confidenciales** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft mantiene una lista de palabras dinámicas pero no editables que están asociadas a mensajes potencialmente ofensivos. <br/><br/> Los mensajes que contienen palabras de la lista de palabras confidenciales en el asunto o el cuerpo del mensaje están marcados como correo no deseado de alta confianza.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Registro de SPF: error** <br><br/> *MarkAsSpamSpfRecordHardFail*|Los mensajes enviados desde una dirección IP que no se especifica en el registro de marco de directivas de remitente (SPF) de SPF en DNS para el dominio de correo electrónico de origen se marcan como correo no deseado de confianza alta. <br/><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrado de identificador del remitente condicional: error** <br><br/> *MarkAsSpamFromAddressAuthFail*|Mensajes que un error grave se marca una comprobación de identificador de remitente condicional como correo no deseado. <br/><br/> Esta opción combina una comprobación SPF con una comprobación del identificador de remitente para ayudar a protegerse contra los encabezados de mensaje que contienen remitentes falsificados. <br/><br/> El modo de prueba no está disponible para esta opción.|`X-CustomSpam: SPF From Record Fail`|

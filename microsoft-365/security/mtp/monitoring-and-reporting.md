@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033991"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866724"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft
 
-El centro de seguridad 365 de Microsoft proporciona un resumen del estado de protección y seguridad en todo el entorno de Microsoft 365.
+El centro de seguridad 365 de Microsoft proporciona un resumen de los Estados de protección y seguridad en todo el entorno de Microsoft 365.
 
-El centro de seguridad incluye una sección de **informes** que presenta un host de tarjetas que abarcan una amplia variedad de áreas que los analistas de seguridad y los administradores realizan un seguimiento como parte de sus operaciones cotidianas. En la obtención de detalles, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
+El centro de seguridad incluye una sección de **informes** que presenta un host de tarjetas que abarcan una amplia variedad de áreas. Los analistas de seguridad y los administradores pueden realizar un seguimiento de las tarjetas como parte de sus operaciones cotidianas. En la obtención de detalles, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
 
 ## <a name="customize-views"></a>Personalización de vistas
 
@@ -37,7 +37,7 @@ De forma predeterminada, las tarjetas se agrupan en las siguientes categorías:
 * [Dispositivos](monitor-devices.md) : equipos, teléfonos móviles y otros dispositivos
 * [Aplicaciones](monitor-apps.md) : programas y servicios en línea adjuntos
 
-Cambie a **grupo por tema**para reorganizar las tarjetas y agruparlas en lo siguiente:
+Cambie a **Agrupar por tema**para reorganizar las tarjetas y agruparlas en los siguientes temas:
 
 * Las tarjetas de **riesgo** que resaltan las entidades, como las cuentas y los dispositivos, que pueden estar en peligro. Estas tarjetas también resaltan posibles orígenes de riesgo, como nuevas campañas de amenazas y aplicaciones en la nube privilegiadas  
 * **Tendencias de detección** : tarjetas que resaltan nuevas detecciones de amenazas, anomalías e infracciones de directivas

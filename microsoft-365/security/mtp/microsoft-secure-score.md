@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200043"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866876"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -45,9 +45,15 @@ Las organizaciones obtienen acceso a las sólidas visualizaciones de métricas y
 
 ## <a name="how-it-works"></a>Cómo funciona
 
-Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad o resolver la acción de mejora con una aplicación o software de terceros, o una mitigación alternativa. Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente y otras proporcionan puntos parciales si se completan para algunos dispositivos o usuarios. Si no puede o no desea activar una de las acciones de mejora, puede optar por aceptar el riesgo o el riesgo restante.
+Se le proporcionan puntos para las siguientes acciones:
 
-Si tiene una licencia para uno de los productos de Microsoft admitidos, verá recomendaciones para esos productos. Le mostramos el conjunto completo de mejoras posibles para un producto, independientemente de la edición de licencia, la suscripción o el plan, para que pueda comprender los procedimientos recomendados de seguridad y mejorar su puntuación. La postura absoluta de seguridad está representada por la calificación segura, que sigue siendo la misma independientemente de las licencias que posea su organización para un producto específico. Tenga en cuenta que la seguridad debe sopesarse con facilidad de uso y no todas las recomendaciones pueden funcionar en su entorno.
+- Configuración de las características de seguridad recomendadas
+- Realización de tareas relacionadas con la seguridad
+- Solucionar la acción de mejora con una aplicación o software de terceros, o una mitigación alternativa
+
+Algunas acciones de mejora solo proporcionan puntos cuando se completan completamente. Algunos proporcionan puntos parciales si están completos para algunos dispositivos o usuarios. Si no puede o no desea activar una de las acciones de mejora, puede optar por aceptar el riesgo o el riesgo restante.
+
+Si tiene una licencia para uno de los productos de Microsoft admitidos, verá recomendaciones para esos productos. Le mostramos el conjunto completo de mejoras posibles para un producto, independientemente de la edición de licencia, la suscripción o el plan. De este modo, puede comprender los procedimientos recomendados de seguridad y mejorar su calificación. La postura absoluta de seguridad, representada por la puntuación segura, sigue siendo la misma independientemente de las licencias que posea su organización para un producto específico. Tenga en cuenta que la seguridad debe sopesarse con facilidad de uso y no todas las recomendaciones pueden funcionar en su entorno.
 
 La puntuación se actualiza en tiempo real para reflejar la información que se presenta en las páginas de acciones de visualización y de mejora. La puntuación segura también se sincroniza diariamente para recibir datos del sistema sobre los puntos alcanzados para cada acción.
 
@@ -61,11 +67,13 @@ La puntuación se actualiza en tiempo real para reflejar la información que se 
 
 ### <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
-Cada acción de mejora merece 10 puntos o menos. La mayoría se puntuan de una manera binaria: Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 10 puntos al proteger a todos los usuarios con la autenticación multifactor y solo tiene un 50 de 100 total de usuarios protegidos, se le asignará una puntuación parcial de 5 puntos (50 protegido/100 total * 10 máx PTS = 5 PTS de puntuación parcial).
+Cada acción de mejora vale 10 puntos o menos, y la mayoría se puntúa de una manera binaria. Si implementa la acción de mejora, como crear una nueva Directiva o activar una configuración específica, obtendrá un 100% de los puntos. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total.
+
+Por ejemplo, los Estados de acción de mejora obtienen 10 puntos al proteger a todos los usuarios con la autenticación multifactor. Solo tiene un 50 de 100 total de usuarios protegidos, por lo que obtendrá una puntuación parcial de 5 puntos (50 protegido/100 total * 10 máx PTS = 5 PTS).
 
 ### <a name="products-included-in-secure-score"></a>Productos incluidos en la puntuación segura
 
-Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure AD, ATP de Microsoft, ATP de Azure y seguridad de aplicaciones en la nube. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
+Actualmente hay recomendaciones para Microsoft 365 (incluido Exchange Online), Azure Active Directory, Microsoft defender ATP, Azure ATP y Cloud App Security. Pronto estarán disponibles recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea de base. También puede marcar las acciones de mejora como cubiertas por un tercero o una mitigación alternativa.
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
@@ -96,9 +104,9 @@ Con acceso de lectura y escritura, puede realizar cambios e interactuar directam
 
 ### <a name="read-only-roles"></a>Solo lectura roles
 
-Con acceso de solo lectura, no es posible editar el estado ni las notas para una acción de mejora, editar zonas de puntuación ni editar comparaciones personalizadas.
+Con acceso de solo lectura, no puede editar el estado o las notas para una acción de mejora, editar zonas de puntuación o editar comparaciones personalizadas.
 
-* Administrador del servicio de asistencia
+* Administrador del departamento de soporto técnico
 * Administrador de usuarios
 * Administrador de servicios
 * Lector de seguridad
@@ -107,7 +115,7 @@ Con acceso de solo lectura, no es posible editar el estado ni las notas para una
 
 ## <a name="risk-awareness"></a>Conocimiento de riesgos
 
-La puntuación segura de Microsoft es un resumen numérico de su postura de seguridad en función de las configuraciones del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad; no es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft, lo que puede ayudar a compensar el riesgo de infracciones. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
+La puntuación segura de Microsoft es un resumen numérico de la postura de seguridad en función de la configuración del sistema, el comportamiento del usuario y otras medidas relacionadas con la seguridad. No es una medida absoluta de la probabilidad de que se infrinja el sistema o sus datos. En su lugar, representa en qué medida ha adoptado controles de seguridad en su entorno de Microsoft que pueden ayudar a compensar el riesgo de infracción. Ningún servicio en línea está completamente inmune a las infracciones de seguridad y la puntuación segura no se debe interpretar como una garantía contra la infracción de seguridad de ninguna manera.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
@@ -115,7 +123,7 @@ Si tiene algún problema, háganoslo saber mediante la publicación de la comuni
 
 ## <a name="related-resources"></a>Recursos relacionados
 
-- [Evaluación de la postura de seguridad](microsoft-secure-score-improvement-actions.md)
+- [Evaluar su postura de seguridad](microsoft-secure-score-improvement-actions.md)
 - [Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir los objetivos](microsoft-secure-score-history-metrics-trends.md)
 - [Próximas novedades](microsoft-secure-score-whats-coming.md)
 - [Novedades](microsoft-secure-score-whats-new.md)

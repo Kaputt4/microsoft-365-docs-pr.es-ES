@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101652"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868860"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -42,9 +42,9 @@ Proporcionamos datos, información y recomendaciones en dos áreas:
 
     Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo. Cuando tienen libertad para trabajar en cualquier dispositivo, son más productivos y están satisfechos. Cuando se pueden comunicar de forma flexible, son más eficientes, forman mejores relaciones y la organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos análisis de extremos, que le ofrece información y recomendaciones sobre la configuración de dispositivos y los tiempos de inicio, y proporcionamos información de conectividad de red de Microsoft 365 para su organización.
+- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo, a la vez que proporcionan acciones recomendadas para solucionarlos; Además, proporcionamos información de conectividad de red de Microsoft 365 para su organización.
 
-Para obtener más información sobre el análisis de punto final, lea [la introducción a la conectividad de red](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación

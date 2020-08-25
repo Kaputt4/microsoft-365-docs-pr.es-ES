@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre las distintas formas de informar de los mensajes y los archivos buenos y no válidos a Microsoft para su análisis.
-ms.openlocfilehash: fabe28d084361041ae9e6a8d118dd8c43c2225f7
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: eb4826a02e5b55b2d2d5987e8c41f2aa19151090
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827646"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867064"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -35,6 +35,7 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange online o en or
 |[Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md)|Funciona con Outlook, Outlook para Mac y Outlook en la web (anteriormente conocido como Outlook Web App) y es el complemento recomendado. <br/><br/> En función de la suscripción, los mensajes que los usuarios han notificado con el complemento están disponibles en [el portal de envíos de administración](admin-submission.md), en los [resultados de investigación y respuesta automáticas (Air)](air-view-investigation-results.md), en el [Informe de mensajes de notificación de usuario y en](view-email-security-reports.md#user-reported-messages-report)el [Explorador de amenazas](threat-explorer-views.md#email--submissions). <br/><br/> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de mensajes de correo no deseado y suplantación de identidad en EOP](user-submission.md).|
 |[Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Solo funciona en Outlook.|
 |[Informar del correo electrónico no deseado y de suplantación de identidad en Outlook en la web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Use las funciones integradas en Outlook en la web para las organizaciones con buzones de Exchange Online (no disponible en EOP independiente). <br/><br/> Mensajes que los informes de usuarios están disponibles en [el portal de envíos de administración](admin-submission.md). <br/><br/> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online](user-submission.md).|
+|[Informar del correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|PARA actualizar: Use las funciones integradas en Outlook en la web para las organizaciones con buzones de Exchange Online (no disponible en EOP independiente). <br/><br/> Mensajes que los informes de usuarios están disponibles en [el portal de envíos de administración](admin-submission.md). <br/><br/> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón de correo que especifique. Para obtener más información, vea [especificar un buzón para los envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online](user-submission.md).|
 |[Enviar mensajes a Microsoft de forma manual para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Enviar manualmente mensajes adjuntos a direcciones de correo electrónico de Microsoft específicas para correo no deseado, no correo no deseado y suplantación de identidad.|
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Obtenga información sobre cómo crear una regla de flujo de correo (también denominada regla de transporte) que le notifica cuando los usuarios notifican mensajes a Microsoft para su análisis.
 |||

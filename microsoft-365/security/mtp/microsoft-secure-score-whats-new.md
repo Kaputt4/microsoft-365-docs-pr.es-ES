@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815236"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866900"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación segura de Microsoft
 

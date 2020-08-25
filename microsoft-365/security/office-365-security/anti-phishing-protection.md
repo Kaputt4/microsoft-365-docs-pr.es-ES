@@ -19,22 +19,22 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las características de protección contra suplantación de identidad en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f6d864a7f9995de64f3714dffcd1838b2480a627
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827450"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867180"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad (phishing) en Microsoft 365
 
 La *suplantación de identidad (phishing)* es un ataque de correo electrónico que intenta robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. Hay categorías específicas de suplantación de identidad. Por ejemplo:
 
-- La **suplantación de identidad (Spear phishing** ) usa contenido muy centrado y personalizado que está específicamente adaptado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
+- La **suplantación de identidad** usa contenido personalizado y centrado que está específicamente adaptado a los destinatarios de destino (normalmente, después del reconocimiento de los destinatarios por parte del atacante).
 
 - **Whaling** se dirige a ejecutivos u otros objetivos de alto valor dentro de una organización para un efecto máximo.
 
-- El **compromiso de correo electrónico empresarial (BEC)** utiliza remitentes de confianza falsificados (agentes financieros, clientes, asociados de confianza, etc.) en un esfuerzo por engañar al destinatario en la aprobación de pagos, la transferencia de fondos o la revelación de datos de clientes.
+- El **compromiso de correo electrónico empresarial (BEC)** utiliza remitentes de confianza falsificados (agentes financieros, clientes, asociados de confianza, etc.) para engañar a los destinatarios para que puedan aprobar pagos, transferir fondos o revelar datos de clientes.
 
 - **Ransomware** que cifra los datos y solicita el pago para descifrarlos casi siempre comienza en los mensajes de suplantación de identidad. La protección contra la suplantación de identidad (phishing) no puede ayudarle a descifrar archivos cifrados, pero puede ayudarle a detectar los mensajes de suplantación de identidad asociados con la campaña de ransomware. Para obtener más información acerca de cómo recuperarse de un ataque de ransomware, consulte [Recover from a ransomware Attack in Microsoft 365](recover-from-ransomware.md).
 

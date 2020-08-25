@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: d258bf3ec4c04eafd22e850329ca925b4c974e94
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086672"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866784"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrar los vales de ServiceNow en el centro de seguridad y cumplimiento de Microsoft 365
 
@@ -76,7 +76,7 @@ Vaya a [crear y realizar un seguimiento de los vales de ServiceNow en el centro 
 
 **Mensaje de error**: se rechazó la operación de lectura contra ' oauth_entity ' del ámbito ' x_mioms_m365ticket ' debido a la Directiva de acceso entre ámbitos de la tabla
 
-La aplicación supone que cualquier administrador de la instancia de ServiceNow puede crear y leer entidades de OAuth. Este error puede deberse a una personalización en la instancia de ServiceNow, que restringe quién puede crear o leer entidades de OAuth.
+La aplicación supone que cualquier administrador de la instancia de ServiceNow puede crear y leer entidades de OAuth. Este error puede deberse a una personalización en su instancia de ServiceNow que restringe quién puede crear o leer entidades de OAuth.
 
 **ServiceNow recomienda a los usuarios mantener la funcionalidad predeterminada.**
 
@@ -89,14 +89,14 @@ Establezca la configuración de la tabla "registros de aplicación" en default:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Cómo validar la entidad de OAuth creada para el conector de cumplimiento de & de seguridad de Microsoft 365
 
-Vaya a la tabla registros de aplicaciones (**menú > el registro de aplicaciones de oauth > sistema**) en ServiceNow y busque la entidad OAuth que ha creado, con el nombre que le ha asignado.
+Vaya a la tabla registros de aplicaciones (**menú > el registro de aplicaciones de OAuth > sistema**) en ServiceNow. Busque la entidad OAuth que ha creado, con el nombre que le ha asignado.
 
-### <a name="logging-in-as-the-integration-user"></a>Inicio de sesión como usuario de integración
+### <a name="signing-in-as-the-integration-user"></a>Iniciar sesión como usuario de integración
 
-Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y ServiceNow, asegúrese de usar el inicio de sesión de usuario y la contraseña de integración que creó en los pasos de instalación. No use sus credenciales personales.
+Antes de autorizar la conexión entre el centro de seguridad de Microsoft 365 y ServiceNow, asegúrese de usar el inicio de sesión de usuario de integración y la contraseña que creó en los pasos de instalación. No use sus credenciales personales.
 
 1. Vaya a la página de autorización en ServiceNow.
-2. Si ha iniciado sesión con sus credenciales personales, seleccione el vínculo **que desee** en la esquina superior derecha.
+2. Si ha iniciado sesión con sus credenciales personales, seleccione el vínculo **que no se encuentra** en la esquina superior derecha.
 3. Inicie sesión en ServiceNow como el usuario de integración que creó anteriormente a partir de la lista de comprobación de instalación.  
 4. Seleccione **permitir** en la página de servicenow que pregunta si el conector Security + Compliance Connector puede conectarse a su cuenta de servicenow.
 5. Continúe con los pasos de configuración.
@@ -107,9 +107,9 @@ Vaya a la tabla de usuarios **(menú > User Administration >** users) en Service
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>Su empresa tiene habilitado el inicio de sesión único, lo que le impide conectarse a ServiceNow a través del centro de seguridad de Microsoft 365
 
-Si su compañía ha habilitado el inicio de sesión único y recibe un error o el inicio de sesión es incorrecto, siga una de las dos soluciones.
+Si su compañía ha habilitado el inicio de sesión único y recibe un error o inicia sesión, siga una de las dos soluciones.
 
-#### <a name="log-into-servicenow-as-the-integration-user"></a>Inicie sesión en ServiceNow como usuario de integración
+#### <a name="sign-in-to-servicenow-as-the-integration-user"></a>Inicie sesión en ServiceNow como usuario de integración
 
 1. Vuelva a navegar a la página Authorization en ServiceNow.
 2. Seleccione el vínculo **que desee** en la esquina superior derecha.
@@ -120,7 +120,7 @@ Si su compañía ha habilitado el inicio de sesión único y recibe un error o e
 #### <a name="create-a-security-admin-user"></a>Crear un usuario administrador de seguridad
 
 1. Cree un usuario con privilegios de administrador de seguridad en Azure Active Directory. El usuario debe tener el mismo nombre y dirección de correo electrónico que el usuario de integración que ha creado a partir de la lista de comprobación de instalación. Puede quitar el rol de administrador de seguridad una vez que se haya completado el inicio de sesión y la conexión.
-2. Inicie sesión en el centro de seguridad 365 de Microsoft como este usuario y siga los pasos de configuración.
+2. Inicie sesión en el centro de seguridad de Microsoft 365 como este usuario y siga los pasos de configuración.
 
 ### <a name="ip-filtering"></a>Filtrado IP
 

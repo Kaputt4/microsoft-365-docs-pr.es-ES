@@ -13,38 +13,40 @@ localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
-description: En este tema se proporcionan preguntas más frecuentes y respuestas para los partners y revendedores de Microsoft que quieren realizar tareas delegadas de administración de Microsoft 365.
-ms.openlocfilehash: 01781437bbc7e8fe5c035ea23e4392e734e0231f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre las tareas de administración delegada en Microsoft 365 para partners y revendedores de Microsoft.
+ms.openlocfilehash: 3efadc8793778bfabe10922e8e29044747d60ad0
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827092"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866700"
 ---
 # <a name="delegated-administration-faq"></a>Preguntas más frecuentes sobre administración delegada
 
-En este tema se proporcionan preguntas frecuentes y respuestas a los partners y revendedores de Microsoft que quieren realizar tareas de administración delegada, incluida la capacidad de administrar Exchange Online Protection (EOP) para otros inquilinos (empresas).
+En este artículo se proporcionan preguntas frecuentes y respuestas a las tareas de administración delegada en Microsoft 365 para partners y revendedores de Microsoft. La administración delegada incluye la capacidad de administrar la configuración de Exchange Online Protection (EOP) para otros inquilinos (empresas).
 
-## <a name="im-a-reseller-and-i-need-to-manage-my-customers-tenants-how-does-this-work"></a>Soy un revendedor y necesito administrar los inquilinos de mis clientes; ¿Cómo funciona?
+## <a name="im-a-reseller-and-i-need-to-manage-my-customer-tenants-how-does-this-work"></a>Soy un revendedor y necesito administrar mis inquilinos de cliente. ¿Cómo funciona?
 
-Si es un distribuidor o un partner de Microsoft y se ha registrado para ser un asesor de Microsoft, puede solicitar permiso para administrar su inquilino dentro del centro de administración. Esto se conoce como administración delegada y le permite administrar su inquilino de Microsoft 365 (incluida la configuración de EOP) como si fuera un administrador de su organización. Los pasos para llevar a cabo la administración delegada son los siguientes:
+Si es un distribuidor o un partner de Microsoft y se ha suscrito a un asesor de Microsoft, puede solicitar funcionalidades de _administración delegada_ en la organización de Microsoft 365 del cliente.
+
+La administración delegada le permite administrar Microsoft 365 (incluida la configuración de EOP) como si fuera un administrador de esa organización. En la lista siguiente se describen los pasos para configurar la administración delegada:
 
 1. Regístrese para ser un [asesor de Microsoft Office 365](https://aka.ms/cloudbenefits).
 
-2. Regístrese para obtener una administración delegada. Antes de que pueda comenzar a administrar la cuenta de un cliente, este debe autorizarlo como administrador delegado. Para obtener su aprobación, primero debe [enviarle una oferta de administración delegada](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). (También puede ofrecerle administración delegada a su cliente más adelante).
+2. Regístrese para obtener una administración delegada. Antes de que pueda empezar a administrar el espacio empresarial de un cliente, debe autorizarlo como administrador delegado. Para obtener su aprobación, primero debe [enviarle una oferta de administración delegada](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). También puede ofrecer administración delegada a su cliente en un momento posterior.
 
 3. Cree la cuenta de administrador delegado mediante los pasos descritos en [Agregar, cambiar o eliminar un partner Asesor de suscripción](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
 
 Visite [Partners: cree su empresa y administre la suscripción de Partner](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) para obtener más información acerca de cómo configurar la administración delegada.
 
-## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-sub-tenants"></a>Soy un cliente, no un revendedor, ¿cómo puede configurar un administrador delegado para mis subinquilinos?
+## <a name="im-a-customer-not-a-reseller-how-can-set-up-delegated-administrator-for-my-subtenants"></a>Soy un cliente, no un revendedor. ¿Cómo puede configurar el administrador delegado para mis inquilinos?
 
-En este momento, la administración delegada solo está disponible para los distribuidores y socios. Sin embargo, hemos incluido un script de ejemplo de Windows PowerShell que le ayudará a aplicar directivas a sus subinquilinos (empresas). Para obtener más información, consulte [Script de ejemplo para aplicar la configuración de EOP a varios inquilinos](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+La administración delegada solo está disponible para revendedores y socios. Sin embargo, hay un script de PowerShell de ejemplo que le ayudará a aplicar directivas a sus subinquilinos (empresas). Para obtener más información, consulte [Script de ejemplo para aplicar la configuración de EOP a varios inquilinos](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
 
-## <a name="can-i-prevent-my-sub-tenant-admin-from-modifying-my-policy"></a>¿Puedo evitar que mi administrador de subinquilinos modifique la directiva?
+## <a name="can-i-prevent-my-subtenant-admin-from-modifying-my-policy"></a>¿Puedo evitar que mi administrador de subinquilino modifique mi directiva?
 
-Microsoft 365 no tiene actualmente esta capacidad.
+No. Microsoft 365 no tiene actualmente esta capacidad.
 
-## <a name="can-i-get-consolidated-reporting-across-all-of-my-sub-tenants"></a>¿Puedo obtener informes consolidados en todos mis subinquilinos?
+## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>¿Puedo obtener informes consolidados en todos mis mis inquilinos?
 
-La generación de informes consolidados en las empresas que administra no está disponible para los informes del centro de administración de Microsoft 365 en este momento. Sin embargo, puede hacerlo con [Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Los informes consolidados en las empresas que administra no están disponibles en los informes del centro de administración de Microsoft 365. Sin embargo, puede obtener informes con [Microsoft Graph](https://docs.microsoft.com/graph/overview).

@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1b6bd81bc194a3b8d972661eaca393571b1ad199
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815224"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866924"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
-Para hacer que la [puntuación segura de Microsoft](microsoft-secure-score.md) sea un mejor representante de su postura de seguridad y mejorar el uso, estamos realizando algunos cambios en un futuro próximo. Su puntuación y la puntuación máxima posible pueden cambiar.
+Estamos realizando algunos cambios en un futuro próximo para hacer que [Microsoft califique](microsoft-secure-score.md) con seguridad una mejor representativo de su postura de seguridad y mejorar el uso. Su puntuación y la puntuación máxima posible pueden cambiar.
 
 ## <a name="proposed-changes"></a>Cambios propuestos
 
-Estos cambios pueden ir a la puntuación segura de Microsoft muy pronto, en función de su licencia. Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-whats-new.md)
+Es posible que estos cambios lleguen a su puntuación segura de Microsoft pronto, en función de su licencia. Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-whats-new.md)
 
 - Cambiar la puntuación máxima de 7 a 8 para la acción de mejora de Azure Active Directory denominada "habilitar la Directiva para bloquear la autenticación heredada"
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200091"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866712"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Realizar un seguimiento del historial de puntuación segura de Microsoft y cumplir los objetivos
 
@@ -49,17 +49,17 @@ Para ver todo el historial de esa acción de mejora específica, seleccione el v
 
 En la ficha **métricas & tendencias** , hay varios gráficos y gráficos para proporcionar más visibilidad sobre las tendencias y establecer los objetivos. Puede establecer el intervalo de fechas para toda la página de visualizaciones. Las visualizaciones incluyen:
 
-* **La zona de puntuación segura** , personalizada en función de los objetivos de la organización y las definiciones de los intervalos de puntuación buenos, correctos y no válidos.
-* **Tendencia de regresión** : escala de tiempo de puntos que se han regresivo debido a cambios en la configuración, el usuario o el dispositivo.  
-* **Tendencia de comparación** : cómo se compara la puntuación segura de la organización con las otras personas a lo largo del tiempo. Esta vista puede incluir líneas que representan la media de puntuación de organizaciones con recuento de asientos similar y una vista de comparación personalizada que puede establecer.
-* **Tendencia de aceptación de riesgos** : escala de tiempo de acciones mejoradas marcadas como "riesgo aceptado".
+* **La zona de puntuación segura** -personalizada en función de los objetivos de la organización y las definiciones de los intervalos de puntuación buenos, correctos y no válidos.
+* **Tendencia de regresión** : una escala de tiempo de puntos que se han regresivo debido a cambios en la configuración, el usuario o el dispositivo.  
+* **Tendencia de comparación** : cómo la puntuación segura de su organización se compara con otras personas a lo largo del tiempo. Esta vista puede incluir líneas que representan la media de puntuación de organizaciones con recuento de asientos similar y una vista de comparación personalizada que puede establecer.
+* **Tendencia de aceptación de riesgos** : escala de tiempo de acciones de mejora marcadas como "riesgo aceptado".
 * **Cambios de puntuación** : el número de puntos alcanzados, los puntos Recon regresión, junto con el cambio de puntuación subsiguiente, en el intervalo de fechas especificado.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparar su calificación con organizaciones como la suya
 
-Hay dos ubicaciones para ver cómo se compara su puntuación con las organizaciones que son similares.
+Hay dos lugares para ver cómo se compara su puntuación con las organizaciones que son similares.
 
-El primer lugar está en la ficha **información general** , donde podrá ver un gráfico de barra de comparación. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación.
+El primer lugar se encuentra en la ficha **información general** , donde puede ver un gráfico de barra de comparación. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación.
 
 ![Gráfico de barras de calificaciones de una organización similar](../../media/secure-score/secure-score-comparison-bar.png)
 
@@ -67,7 +67,7 @@ El segundo lugar se encuentra en la ficha **métricas & tendencias** , donde pue
 
 ![Gráfico de líneas de calificaciones similares a lo largo del tiempo](../../media/secure-score/secure-score-comparison-trend.png)
 
-En ambos gráficos, puede seleccionar **administrar comparaciones** para ver y editar la información de la organización. También puede crear una comparación personalizada basada en la industria, el tamaño de la organización, las licencias y las regiones. 
+En ambos gráficos, puede seleccionar **administrar comparaciones** para ver y editar la información de la organización. También puede crear una comparación personalizada basada en la industria, el tamaño de la organización, las licencias y las regiones.
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
@@ -76,6 +76,6 @@ Si tiene algún problema, háganoslo saber mediante la publicación de la comuni
 ## <a name="related-resources"></a>Recursos relacionados
 
 - [Introducción a la puntuación segura de Microsoft](microsoft-secure-score.md)
-- [Evaluación de la postura de seguridad](microsoft-secure-score-improvement-actions.md)
+- [Evaluar su postura de seguridad](microsoft-secure-score-improvement-actions.md)
 - [Próximas novedades](microsoft-secure-score-whats-coming.md)
 - [Novedades](microsoft-secure-score-whats-new.md)
