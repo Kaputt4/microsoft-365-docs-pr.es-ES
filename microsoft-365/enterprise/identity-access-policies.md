@@ -1,13 +1,13 @@
 ---
 title: 'Directivas comunes de identidad y acceso a dispositivos: Microsoft 365 para Enterprise | Microsoft docs'
 description: Explica las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de identidad y acceso a dispositivos.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685979"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898121"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -250,7 +250,7 @@ Cree una directiva para cada plataforma:
 - Android Enterprise
 - iOS/iPados
 - macOS
-- Esta opción está disponible en los siguientes tipos de dispositivos:
+- Windows Phone 8.1
 - Windows 8,1 y versiones posteriores
 - Windows 10 y versiones posteriores
 
@@ -282,7 +282,7 @@ Se recomiendan las siguientes opciones de configuración para Windows 10.
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria||
-||Contraseñas sencillas|Desbloquear||
+||Contraseñas sencillas|Bloquear||
 ||Tipo de contraseña|Valor predeterminado del dispositivo||
 ||Longitud mínima de la contraseña|6 ||
 ||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Esta configuración es compatible con las versiones 4,0 y anteriores de Android o KNOX 4,0 y superior. Para dispositivos iOS, es compatible con iOS 8,0 y versiones posteriores|
@@ -302,7 +302,7 @@ Se recomiendan las siguientes opciones de configuración para Windows 10.
 
 |Tipo|Propiedades|Valores|Notas|
 |:---|:---------|:-----|:----|
-|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Mediano||
+|Reglas de protección contra amenazas avanzada de Microsoft defender|Requerir que el dispositivo esté por encima o por debajo de la puntuación de riesgo de la máquina|Medio||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)

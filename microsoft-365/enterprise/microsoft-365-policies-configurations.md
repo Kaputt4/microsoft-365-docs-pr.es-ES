@@ -1,14 +1,14 @@
 ---
 title: 'Configuraciones de acceso a dispositivos e identidades: Microsoft 365 para Enterprise'
 description: Describe las recomendaciones de Microsoft y los conceptos básicos para implementar directivas y configuraciones de correo electrónico seguro, documentos y aplicaciones.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686631"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898169"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -64,15 +64,14 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 
 En esta guía se muestra cómo implementar la protección de las identidades y los dispositivos de cada uno de estos niveles de protección. Use esta guía como punto de partida para su organización y ajuste las directivas para cumplir los requisitos específicos de su organización.
 
-Es importante usar niveles de protección coherentes en los datos, las identidades y los dispositivos. Por ejemplo, si implementa esta guía, asegúrese de proteger los datos en niveles comparables. Estos modelos de arquitectura muestran las capacidades comparables.
+Es importante usar niveles de protección coherentes en los datos, las identidades y los dispositivos. Por ejemplo, si implementa esta guía, asegúrese de proteger los datos en niveles comparables. 
 
-**Protección de identidades y dispositivos para Office 365**<br/>
+El modelo **de arquitectura de la identidad y la protección de dispositivos para Office 365** muestra qué capacidades son comparables.
+
 ![Miniatura del póster "protección de identidades y dispositivos para Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Soluciones de protección de archivos en Office 365**<br/>
-![Miniatura de las soluciones de protección de archivos de póster "en Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+Además, consulte la solución [de implementación de protección de información para las regulaciones de privacidad de datos](../solutions/information-protection-deploy.md) para proteger la información almacenada en Microsoft 365.
 
 ## <a name="security-and-productivity-trade-offs"></a>Equilibrio entre seguridad y productividad
 

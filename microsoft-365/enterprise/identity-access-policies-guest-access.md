@@ -1,13 +1,13 @@
 ---
 title: 'Directivas de acceso a dispositivos e identidades para permitir el acceso de B2B a invitado y externo: Microsoft 365 para Enterprise | Microsoft docs'
 description: Describe el acceso condicional recomendado y las directivas relacionadas para proteger el acceso de invitados y usuarios externos.
-author: BrendaCarter
-manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ad1203543db1c2bd0ea9e9bdd3433aad58db320b
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686831"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898109"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Directivas para permitir el acceso de B2B y de invitado externo
 En este artículo se describe cómo ajustar las directivas de identidad y acceso a dispositivos comunes recomendadas para permitir el acceso a las cuentas B2B (usuarios invitados y externos). Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md).

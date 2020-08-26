@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtenga información sobre cómo configurar las opciones de la Directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows 10 al iniciar sesión en su cuenta profesional o educativa.
-ms.openlocfilehash: 03ae86861ddb0cb83cd39b7834f19e01bf3e99e2
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: b586e687d6b61873b77fac8586396ab51fd90b9b
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470635"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898076"
 ---
 # <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
 
@@ -51,8 +51,4 @@ De forma predeterminada, todas las opciones de configuración están **activadas
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Permite a los usuarios descargar e instalar aplicaciones desde la Microsoft Store. Las aplicaciones pueden ser de cualquier tipo, desde juegos hasta herramientas de productividad, por lo que dejamos esta configuración **activada**, pero puede desactivarla para obtener una capa de seguridad adicional.  <br/> |
-|Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Cortana puede activar o desactivar la configuración para ti, dar indicaciones y garantizar que estás a tiempo para las citas, por lo que mantenemos esta configuración **activada** de forma predeterminada.  <br/> |
-|Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  <br/> |Las sugerencias de Windows pueden ser útiles y orientar a los usuarios cuando se publiquen nuevas características.  <br/> |
-|Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> |Garantiza que los dispositivos con Windows 10 reciban automáticamente las actualizaciones más recientes.  <br/> |
-   
-
+|

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Cómo llegar a los recursos equivalentes al centro de implementación de escritorio en desuso.
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686135"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898021"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centro de implementación de escritorio (en desuso)
 
@@ -33,7 +33,7 @@ Use estos recursos para implementar equipos de escritorio modernos:
 
 También puede ver los [vídeos de la serie de implementación de escritorio de las mecánicas de Microsoft](https://www.aka.ms/watchhowtoshift).
 
-También puede [buscar ayuda](https://aka.ms/mddhelp) para la implementación de escritorio de partners de Microsoft y servicios de FastTrack.
+También puede encontrar ayuda para la implementación de escritorio de los socios de Microsoft y [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación para Windows y Office
 

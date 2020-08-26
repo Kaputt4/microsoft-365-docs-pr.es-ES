@@ -14,132 +14,128 @@ search.appverid: MET150
 description: Corrección de amenazas
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 9ffa3f71dafec4728294b17530ae1f9490d480da
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656688"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903888"
 ---
-# <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado que se entregó en Office 365
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
-La corrección supone realizar una acción conformada contra una amenaza. Los mensajes malintencionados enviados a la organización pueden ser limpiados por el sistema, a través de ZAP (purga automática de cero horas) o por los equipos de seguridad a través de acciones de corrección como mover a la bandeja de entrada, mover a correo no deseado, mover a la carpeta elementos eliminados, eliminar temporalmente o eliminar temporalmente. La protección contra amenazas avanzada de Office (ATP de Office) P2/E5 ofrece a los equipos de operaciones de seguridad Microsoft la capacidad de mediar amenazas en los correos electrónicos y la colaboración a través de la búsqueda y las investigaciones automáticas manuales.
+La corrección supone realizar una acción conformada contra una amenaza. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la depuración automática de cero horas (ZAP) o por parte de los equipos de seguridad mediante acciones de corrección como *mover a la bandeja de entrada*, *desplazarse a correo no deseado*, *mover a elementos eliminados*, *eliminar temporalmente*o *eliminar permanentemente*. La protección contra amenazas avanzada de Office (ATP de Office) P2/E5 permite a los equipos de seguridad corregir amenazas en el correo electrónico y la funcionalidad de colaboración mediante la investigación manual y automatizada.
 
 > [!NOTE]
-> Para que los equipos de seguridad corrijan los correos electrónicos, deben tener asignado el rol de búsqueda y depuración. La asignación de roles se realiza a través de permisos en el centro de seguridad y cumplimiento.
+> Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan la función de *búsqueda y depuración* que tienen asignada. La asignación de roles se realiza a través de permisos en el centro de seguridad y cumplimiento.
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Lo que debe saber antes de empezar
 
-Para llevar a cabo determinadas acciones, como ver los encabezados de mensajes o descargar el contenido de los mensajes de correo electrónico, debe tener un nuevo rol denominado *vista previa* agregado a otro grupo de funciones apropiado. La siguiente tabla clarifica los permisos y las funciones necesarias.
+Para realizar acciones como ver encabezados de mensajes o descargar contenido de correo electrónico, debe tener un nuevo rol denominado *vista previa* agregada a otro grupo de roles adecuado. En la siguiente tabla se muestran los roles y permisos necesarios.
 
 ****
 
-|Actividad|Grupo de funciones|¿Se requiere un rol de vista previa?|
+|Actividad|Grupo de funciones|¿Se requiere un rol de *vista previa* ?|
 |---|---|---|
 |Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas |Administrador global <br> Administrador de seguridad <br> Lector de seguridad|No|
-|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, así como para obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena|Administrador global <br> Administrador de seguridad <br>Lector de seguridad|No|
+|Usar el explorador de amenazas (y la detección en tiempo real) para ver los encabezados de los mensajes de correo electrónico y obtener una vista previa y descargar los mensajes de correo electrónico en cuarentena|Administrador global <br> Administrador de seguridad <br>Lector de seguridad|No|
 |Usar el explorador de amenazas para ver los encabezados y descargar los mensajes de correo electrónico que se entregan a los buzones|Administrador global <br>Administrador de seguridad <br> Lector de seguridad <br> Preview|Sí|
-|
+
 
 > [!NOTE]
-> La *vista previa* es un rol y no un grupo de roles; el rol de vista previa debe agregarse a un grupo de roles existente para Office 365. La función de administrador global se asigna al centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) y el administrador de seguridad y los roles de lector de seguridad se asignan en el centro de seguridad & cumplimiento ( [https://protection.office.com](https://protection.office.com) ). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> La vista previa es un *rol*, no un *grupo de roles*. El rol de vista previa debe agregarse a un grupo de roles existente para Office 365. El *rol de administrador global* se asigna en el [centro de administración de Microsoft 365](https://admin.microsoft.com). Los roles de administrador de seguridad y lector de seguridad se asignan en los [centros de seguridad y cumplimiento](https://protection.office.com). Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security and Compliance Centers](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
-> Los administradores pueden llevar a cabo las acciones necesarias en los correos electrónicos, pero para que se apruebe la acción, deben tener asignado el rol "buscar y purgar" a través de los permisos del centro de seguridad y cumplimiento >.
+> Los administradores pueden realizar las acciones necesarias en los mensajes de correo electrónico, pero para que estas acciones sean aprobadas, deben tener asignada la función de *búsqueda y depuración* a través de los permisos del **centro de seguridad y cumplimiento**  >  **Permissions**.
 
 ## <a name="manual-and-automated-remediation"></a>Corrección manual y automatizada
 
-La búsqueda **manual** se produce cuando los equipos de seguridad identifican las amenazas manualmente, usando las capacidades de búsqueda y filtrado del explorador de amenazas. La corrección manual en los correos electrónicos se puede desencadenar a través de cualquier vista de correo electrónico (malware, phish o todo el correo electrónico) después de encontrar un conjunto de mensajes de correo electrónico que deben corregirse.
+La búsqueda *manual* se produce cuando los equipos de seguridad identifican las amenazas manualmente mediante las funciones de búsqueda y filtrado del explorador de amenazas. La corrección manual de correo electrónico se puede desencadenar a través de cualquier vista de correo electrónico (*malware*, *phish*o *todo el correo electrónico*) después de identificar un conjunto de correos electrónicos que deben corregirse.
 
-[La búsqueda manual en el explorador de amenazas de Office 365 por fecha.](../../media/tp-RemediationArticle1.png)
+![La búsqueda manual en el explorador de amenazas de Office 365 por fecha.](../../media/tp-RemediationArticle1.png)
 
-La selección de los correos electrónicos puede realizarse de varias formas mediante el explorador de amenazas:
+Los equipos de seguridad pueden usar el explorador de amenazas para seleccionar mensajes de correo electrónico de varias formas:
 
-1. Elegir manualmente los mensajes de correo electrónico: Esto significa que los equipos de operaciones de seguridad pueden usar filtros en las vistas correspondientes y seleccionar unos pocos correos electrónicos del explorador de amenazas que necesitan ser corregidos. El límite superior para seleccionar correos electrónicos es 100 (100). Los equipos de operaciones de seguridad no pueden elegir más de cientos de mensajes de correo electrónico de forma manual.
+- Elija correos electrónicos a mano: usar filtros en varias vistas. Seleccione hasta 100 correos electrónicos para corregir la suscripción.
 
-2. Selección de consulta: operaciones de seguridad Teams puede seleccionar una consulta completa mediante el botón "seleccionar todo" de la parte superior. La misma consulta se muestra también en la información de envío de correo del centro de actividades.
+- Selección de consulta: Seleccione una consulta completa mediante el botón Top **Select All** . La misma consulta también se muestra en los detalles del envío de correo del centro de actividades.
 
-3. Selección de consulta con exclusión: en ocasiones, es posible que los equipos de operaciones de seguridad decidan corregir los mensajes de correo electrónico seleccionando una consulta completa y excluyendo algunos mensajes de correo electrónico de la consulta de forma manual. Para ello, un administrador puede usar la casilla "seleccionar todo" y desplazarse hacia abajo para excluir algunos mensajes de correo electrónico de forma manual. El número máximo de mensajes que puede contener la consulta es 1000 (1.000) y el número máximo de exclusiones es 100 (100), en este caso.
+- Selección de consulta con exclusión: a veces, es posible que los equipos de operaciones de seguridad deseen corregir los mensajes de correo electrónico seleccionando una consulta completa y excluyendo determinados mensajes de la consulta de forma manual. Para ello, un administrador puede usar la casilla **seleccionar todo** y desplazarse hacia abajo para excluir mensajes de correo electrónico de forma manual. La consulta puede contener un máximo de 1.000 mensajes de correo electrónico. El número máximo de exclusiones es de 100.
 
-Una vez que se seleccionan los correos electrónicos en el explorador de amenazas, la creación de la corrección puede comenzar realizando una acción directa o poniendo en cola los correos electrónicos para una acción:
+Una vez que se seleccionan los correos electrónicos a través del explorador de amenazas, puede iniciar la corrección llevando a cabo la acción directa o poniendo en cola los correos electrónicos para una acción:
 
-1. Aprobación directa: cuando acciones como "mover a la bandeja de entrada", "mover a correo no deseado", "mover a elementos eliminados", "eliminación temporal", "eliminación temporal" los selecciona el personal de seguridad con los permisos adecuados y se siguen los pasos siguientes, el proceso de corrección comienza a ejecutar una acción seleccionada. Un control flotante temporal muestra la corrección en curso.
+- Aprobación directa: cuando acciones como *mover a la bandeja de entrada*, *desplazarse a correo no deseado*, *mover a elementos eliminados*, *eliminación temporal*o *eliminación de hardware* están seleccionados por el personal de seguridad que tiene los permisos adecuados y se siguen los pasos siguientes en la corrección, el proceso de corrección comienza a ejecutar la acción seleccionada. Un control flotante temporal muestra la corrección en curso.
 
-2. Aprobación en dos pasos: la acción "Agregar a corrección" puede llevarla a cabo un administrador que no tenga los permisos adecuados o que tenga que esperar más para ejecutar la acción. En este caso, la acción de corrección no se ejecuta directamente. En su lugar, los correos electrónicos se agregan a un contenedor de corrección que debe aprobarse para ejecutarse. Hasta que se apruebe la corrección, el correo electrónico no será corregido. Una vez que se aprueba la corrección, se realizarán acciones en el correo electrónico.
+- Aprobación en dos pasos: la acción "Agregar a corrección" puede ser realizada por los administradores que no tienen los permisos adecuados o que necesitan esperar para ejecutar la acción. En este caso, los correos electrónicos de destino se agregan a un contenedor de corrección. La aprobación es necesaria antes de que se ejecute la corrección.
 
-Las acciones de **investigación y respuesta automatizadas (Air)** las desencadenan las alertas o los equipos de operaciones de seguridad desde dentro del explorador de amenazas. Pueden incluir algunas reparaciones recomendadas que deben ser aprobadas por los equipos de operaciones de seguridad. Estas acciones de corrección se incluyen en la ficha acción dentro de la investigación automatizada.
+La **investigación automatizada y** las acciones de respuesta las desencadenan las alertas o los equipos de operaciones de seguridad desde el explorador de amenazas. Estos pueden incluir acciones de corrección recomendadas que deben ser aprobadas por un equipo de operaciones de seguridad. Estas acciones se incluyen en la pestaña **acción** de la investigación automatizada.
 
-[El correo con malware es zapped página que muestra la hora de la ejecución de la Zap.](../../media/tp-RemediationArticle3.png)
+![Correo con malware en la página "zapped" que muestra la hora de la ejecución de la Zap.](../../media/tp-RemediationArticle3.png)
 
-Todas las correcciones (ya sean de aprobación directa o de dos pasos) creadas mediante el explorador de amenazas y las acciones aprobadas que provienen de investigaciones automatizadas se muestran en el centro de actividades, al que se puede obtener acceso a través del panel de navegación izquierdo, en * Review * > **centro de actividades**.
+En el centro de actividades se muestran todas las correcciones (tanto la aprobación directa como la aprobación en dos pasos) que se crearon en el explorador de amenazas y las acciones aprobadas que provienen de las investigaciones automatizadas. Obtenga acceso a estos mediante el panel de navegación izquierdo en **revisión**del  >  **centro de actividades**.
 
-[El centro de actividades con una lista de amenazas por fecha y gravedad.](../../media/tp-RemediationArticle4.png)
+![El centro de actividades con una lista de amenazas por fecha y gravedad.](../../media/tp-RemediationArticle4.png)
 
-El centro de actividades muestra todas las acciones de corrección de los últimos 30 días. Las acciones realizadas en el explorador se muestran con el mismo nombre proporcionado por los equipos de operaciones de seguridad cuando se creó la corrección. Las acciones realizadas a través de investigaciones automatizadas se exponen con los títulos que comienzan con la alerta relacionada que desencadenó la investigación, por ejemplo, "el clúster de correo electrónico Zap...".
+El centro de actividades muestra todas las acciones de corrección de los últimos 30 días. Las acciones realizadas a través del explorador de amenazas se muestran por el nombre que el equipo de operaciones de seguridad proporcionó cuando se creó la corrección. Las acciones realizadas a través de investigaciones automatizadas tienen títulos que comienzan con la alerta relacionada que desencadenó la investigación, como "el clúster de correo electrónico Zap... ."
 
-Cada elemento de corrección se puede abrir para ver detalles sobre él. Cuando se abre un elemento de corrección, se muestran los detalles de corrección básicos, el nombre de corrección, la fecha de creación, la descripción, la gravedad de la amenaza y el estado. También muestra dos pestañas.
+Abra cualquier elemento de corrección para ver los detalles del mismo, como su nombre, la fecha de creación, la descripción, la gravedad de la amenaza y el estado. También se muestran las dos pestañas siguientes.
 
-1. **Ficha envío de correo**: es el número de correos electrónicos enviados a través del explorador de amenazas o investigaciones automatizadas que se van a corregir. Estos mensajes de correo electrónico pueden ser:
+- Ficha **envío de correo** : muestra el número de correos electrónicos enviados a través del explorador de amenazas o investigaciones automatizadas que se van a corregir. Estos mensajes de correo electrónico pueden ser accionables o no accionables.<br/><br/>![El centro de actividades con acciones que se tienen que actuar y no son posibles.](../../media/tp-RemediationArticle5.png)
 
-   [El centro de actividades con acciones que se tienen que actuar y no son posibles.](../../media/tp-RemediationArticle5.png)
-
-   - **Accionable**: los correos electrónicos en las siguientes ubicaciones de buzones de la nube pueden actuar y moverse, es decir, cualquier correo electrónico de la categoría remedible se puede mover de una ubicación a otra:
+   - **Accionable**: los correos electrónicos en las siguientes ubicaciones de buzones en la nube se pueden actuar y mover:
 
      - Bandeja de entrada
      - Desea
      - Carpeta eliminada
      - Carpeta eliminada temporalmente
 
-     [!NOTE]
-     > Actualmente, solo un usuario final con acceso al buzón puede recuperar elementos de una carpeta de eliminación temporal.
+     > [!NOTE]
+     > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
-   - **No se puede accionar**: los correos electrónicos en las siguientes ubicaciones no se pueden realizar o mover como parte de las acciones de correo electrónico, es decir, los correos electrónicos en categorías no remedibles no se pueden mover ni en la categoría no remedible ni en remedibles. Las ubicaciones no remedibles son:
+   - **No se puede accionar**: los correos electrónicos en las siguientes ubicaciones no se pueden actuar o mover en acciones de corrección:
 
      - Quarantine
      - Carpeta eliminada permanentemente
-     - Local o externo
+     - Local/externo
      - Error/interrumpido
 
-   Los mensajes sospechosos enviados se clasifican como remedibles o no remedibles. En la mayoría de los casos, los mensajes remedibles y no remedibles deben agregar hasta el total de mensajes enviados. Sin embargo, puede haber casos raros en los que los mensajes enviados pueden no sumarse a la suma de elementos remedibles y no remedibles, y pueden ser superiores o inferiores al número total de mensajes enviados. Esto puede ocurrir debido a retrasos del sistema, tiempos de espera o mensajes caducados. Los mensajes expiran en función del período de retención del explorador para su organización.
+   Los mensajes sospechosos se clasifican como remedibles o no corregibles. En la mayoría de los casos, los mensajes remedibles y no corregibles combinados se combinan todos los mensajes enviados. Pero, en algunos casos excepcionales, es posible que esto no sea verdad. Esto puede ocurrir por los retrasos del sistema, los tiempos de espera o los mensajes expirados. Los mensajes expiran en función del período de retención del explorador de amenazas de la organización.
 
-   A menos que remedie mensajes antiguos después del período de retención del explorador de la organización, si ve incoherencias en los números, es aconsejable volver a intentar corregir los elementos. Para los retrasos del sistema, las actualizaciones de la corrección suelen actualizarse en unas pocas horas.
+   A menos que esté corrigiendo mensajes antiguos después del período de retención del explorador de amenazas de la organización, es aconsejable reintentar la corrección de elementos si ve incoherencias de número. Para los retrasos del sistema, las actualizaciones de la corrección suelen actualizarse en unas pocas horas.
 
-   Si el período de retención de la organización para el correo electrónico en el explorador es de 30 días y va a corregir los correos electrónicos que van de 29-30 días atrás, es posible que los recuentos de envíos de correo no siempre se agreguen porque los correos electrónicos podrían haber empezado a salir del período de retención.
+   Si el período de retención de la organización para el correo electrónico en el explorador de amenazas es de 30 días y está corrigiendo los correos electrónicos que van hacia atrás 29-30 días, los recuentos de envíos de correo no siempre se agregan. Es posible que los correos electrónicos ya hayan empezado a salir del período de retención.
 
-   Si las correcciones se bloquean en un estado "en curso" durante un tiempo, es probable que se deba a retrasos en el sistema. La corrección puede tardar hasta unas pocas horas en corregirse. Puede haber una variación observada en el envío de correo se recuento porque algunos de los correos electrónicos no formaban parte de la consulta al iniciar la corrección, debido a retrasos en el sistema. Es una buena idea volver a intentar la corrección en estos casos.
+   Si las correcciones se detienen en el estado "en curso" durante un tiempo, es probable que se deba a retrasos en el sistema. La corrección puede tardar hasta unas pocas horas en corregirse. Es posible que vea variaciones en los recuentos de envío de correo, ya que es posible que algunos de los correos electrónicos no se hayan incluido en la consulta en el inicio de la corrección debido a retrasos en el sistema. Es una buena idea volver a intentar la corrección en estos casos.
 
-   Para obtener los mejores resultados, la corrección debe realizarse en lotes más pequeños de alrededor de 50 KB o menos de correo electrónico.
+  >[!Note]
+  >Para obtener los mejores resultados, la corrección debe realizarse en lotes de 50.000 o menos.
 
-   De todos los correos electrónicos en el envío de correo, los correos electrónicos remedibles son los únicos que se actuarán durante la corrección. El sistema de correo electrónico Office 365 no puede corregir los correos electrónicos no remedibles, ya que no se almacenan en los buzones de la nube.
+   Solo se actúa sobre los correos electrónicos remedibles durante la corrección. El sistema de correo electrónico de Office 365 no puede corregir los correos electrónicos no corregidos, ya que no se almacenan en los buzones de la nube.
 
-   Para los mensajes de correo electrónico que se encuentran en cuarentena, los administradores pueden ponerse en cuarentena para realizar acciones en esos correos electrónicos si es necesario, pero los mensajes de correo electrónico expirarán a partir de cuarentena si no se purgan manualmente. Los mensajes de correo electrónico en cuarentena debido a contenido malintencionado no son accesibles para los usuarios finales, por lo que el personal de seguridad no tiene que realizar ninguna acción específica para deshacerse de la amenaza en cuarentena. Si los correos electrónicos son locales o externos, se puede contactar con el usuario final para dirigir el correo electrónico sospechoso o usar herramientas de seguridad/servidor de correo electrónico independientes para la eliminación. Estos mensajes de correo electrónico se pueden identificar mediante la aplicación de ubicación de entrega = local o filtro externo en el explorador de amenazas. Para el correo electrónico fallido o perdido, o el correo electrónico no accesible para el usuario final, no debe haber un mensaje de correo electrónico que se pueda mitigar, ya que no llegan al buzón.
+   Si es necesario, los administradores pueden realizar acciones en los correos electrónicos en cuarentena, pero esos mensajes de correo electrónico expirarán en cuarentena si no se purgan manualmente. Los correos electrónicos en cuarentena debido a contenido malintencionado no son accesibles para los usuarios, por lo que el personal de seguridad no tiene que realizar ninguna acción para deshacerse de las amenazas en cuarentena. Si los mensajes de correo electrónico son locales o externos, se puede contactar con el usuario para dirigir el correo electrónico sospechoso. O los administradores pueden usar distintas herramientas de servidor de correo electrónico o de seguridad para la eliminación. Estos mensajes de correo electrónico se pueden identificar aplicando el filtro externo *de ubicación de entrega = local* en el explorador de amenazas. Para el correo electrónico que ha fallado o perdido, o el correo electrónico no es accesible para los usuarios, no habrá ningún correo electrónico que se pueda mitigar, ya que estos correos no llegan al buzón.
 
-   Este es el modo en que se muestra un envío en el centro de actividades. Una corrección puede contener varios envíos. Si se aprueban varias acciones mediante una investigación automatizada, cada acción de correo electrónico o de clúster de correo electrónico se muestra en la misma corrección que un envío diferente.
+   En la siguiente imagen se muestra el aspecto de un envío en el centro de actividades. Una corrección puede contener varios envíos. Si se aprueban varias acciones mediante una investigación automatizada, cada acción de correo electrónico o de clúster de correo electrónico aparece en la misma corrección que un envío diferente.
 
-   [Panel flotante de clúster de correo electrónico ZAP.](../../media/tp-RemediationArticle6.png)
+   ![Panel flotante de clúster de correo electrónico ZAP.](../../media/tp-RemediationArticle6.png)
 
-   Al hacer clic en un elemento de envío de correo, se mostrarán los detalles de dicha corrección, como la consulta (cuando se desencadena la corrección mediante investigaciones automatizadas o el explorador de amenazas mediante la selección de una consulta), la hora de inicio y la hora de finalización de la corrección. También muestra una lista de los mensajes que se enviaron para su corrección. A medida que los mensajes salgan del período de retención del explorador, los mensajes desaparecerán de esta lista. Esta lista también muestra mensajes individuales de la lista que son remedibles.
+   Seleccione un elemento de envío de correo para mostrar los detalles de la corrección, como la consulta (cuando se desencadena la corrección mediante investigaciones automatizadas o el explorador de amenazas mediante la selección de una consulta) y las horas de inicio y finalización de la corrección. También muestra una lista de los mensajes que se enviaron para su corrección. A medida que los mensajes salen del período de retención del explorador de amenazas, los mensajes desaparecen de esta lista. La lista también muestra mensajes individuales que son remedibles.
 
-2. **Ficha registros de acciones**: esta pestaña muestra el resultado de los mensajes corregidos, incluidos los detalles como fecha aprobada, aprobador (administrador que aprobó la acción), acción, estado y recuentos.
+- **Registros de acciones**: esta pestaña muestra los mensajes corregidos, incluida la fecha de aprobación, el administrador que aprobó la acción, la acción, el estado y los recuentos.
 
-   Status es el estado global de la corrección. El estado puede ser:
+   El estado puede ser:
 
-     - Se **inició**: cuando se desencadena una corrección.
-     - **En cola**: cuando la corrección se pone en cola para mitigar los mensajes de correo electrónico.
-     - **En curso**: cuando la mitigación está en curso.
-     - **Completado**: cuando la mitigación de todos los correos electrónicos remedibles se realiza correctamente o con algunos errores.
-     - **Error**: cuando ninguna corrección se ha realizado correctamente.
+     - **Iniciado**: se desencadena la corrección.
+     - **En cola**: la corrección se pone en cola para mitigar los mensajes de correo electrónico.
+     - **En curso**: la mitigación está en curso.
+     - **Completado**: mitigación de todos los correos electrónicos remedibles completados correctamente o con errores.
+     - **Error**: no se realizó correctamente ninguna corrección.
 
-   Como solo se puede actuar sobre los correos electrónicos remedibles, la limpieza de cada mensaje se considera como correcta o con errores. Desde el total de mensajes de correo electrónico remedibles, exponemos las mitigaciones correctas y con error.
+   Como solo se puede actuar en los correos electrónicos remedibles, la limpieza de cada mensaje se muestra como correcta o con error. Se informa del total de los correos electrónicos remedibles, las mitigaciones correctas y con errores.
 
-   - **Correcto**: cuando se realiza la acción deseada en los correos electrónicos remedibles y coincide con la intención del administrador. Por ejemplo: un administrador desea quitar los correos electrónicos de los buzones de correo, de modo que lleve a cabo la acción de eliminar temporalmente los correos electrónicos. Si no se encuentra un correo electrónico remedible en la carpeta original después de que se haya realizado la acción, el estado mostrará como correcto.
+   - **Correcto**: se ha realizado la acción deseada en los correos electrónicos remedibles. Por ejemplo: un administrador desea quitar los correos electrónicos de los buzones de correo, por lo que el administrador realiza la acción de eliminar los correos electrónicos de forma temporal. Si no se encuentra un correo electrónico remedible en la carpeta original después de que se haya realizado la acción, el estado mostrará como correcto.
 
-   - **Error**: cuando se produce un error en la acción deseada en los correos electrónicos remedibles. Por ejemplo: un administrador desea quitar los correos electrónicos de los buzones de correo, por lo que realiza la acción de eliminar los correos electrónicos de forma temporal. Si todavía se encuentra un mensaje de correo electrónico remedible en el buzón, el estado se mostrará como erróneo.
+   - **Error**: no se pudo realizar la acción deseada en los correos electrónicos remedibles. Por ejemplo: un administrador desea quitar los correos electrónicos de los buzones de correo, por lo que el administrador realiza la acción de eliminar los correos electrónicos de forma temporal. Si todavía se encuentra un correo electrónico remedible en el buzón de correo después de que se haya realizado la acción, el estado se mostrará como erróneo.
 
-   Al hacer clic en un elemento en el registro de acciones, se muestran detalles de corrección. Para los elementos correctos, si los detalles indican, se han realizado correctamente o no se encuentran en el buzón, significa que el elemento ya se ha quitado del buzón. A veces se producen errores debidos a un error sistémico durante la corrección y, en esos casos, es una buena idea volver a intentar la corrección.
+   Seleccione cualquier elemento en el registro de acciones para mostrar los detalles de corrección. Si los detalles indican "correcto" o "no se encuentra en el buzón", ese elemento ya se ha quitado del buzón de correo. A veces hay un error sistémico durante la corrección. En esos casos, es una buena idea volver a intentar la corrección.
 
-   La corrección es una herramienta eficaz para mitigar las amenazas y hacer frente a los correos electrónicos sospechosos. Ayuda a mantener la seguridad y seguridad de una organización.
+ La corrección es una herramienta eficaz para mitigar las amenazas y dirigir los correos electrónicos sospechosos. Ayuda a mantener segura una organización.
 
-## <a name="more-info"></a>Más información
-
-Consulte [investigar correo electrónico malintencionado](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
