@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Administre estos roles de administrador de Azure en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432484"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898033"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Roles de Azure Active Directory en el Centro de administración de Microsoft 365
 
@@ -68,6 +68,7 @@ A continuación, presentamos una lista de todos los roles de administrador dispo
 |Lector de privacidad del centro de mensajes     |    Accede a los mensajes de privacidad de datos en el Centro de mensajes y recibe notificaciones por correo electrónico.     |
 |Lector del centro de mensajes     | Lee y comparte mensajes habituales en el Centro de mensajes, obtiene resúmenes de correo electrónico semanales, y tiene acceso de solo lectura a usuarios, grupos, dominios y suscripciones.     |
 |Administrador de aplicaciones de Office    |   Administra las directivas basadas en la nube para Office y el contenido Novedades que los usuarios ven en sus aplicaciones de Office.   |
+|Administrador de contraseñas    |   Restablecer las contraseñas de los usuarios que no sean administradores o miembros de los roles siguientes: lectores de directorio, invitado invitar, administrador de contraseñas. Este rol no puede conceder la capacidad para administrar solicitudes de servicio o supervisar el estado del servicio.   |
 |Administrador de Power BI    |   Posee acceso completo a las tareas de administración de Power BI, administra solicitudes de servicio y supervisa el estado del servicio.   |
 |Administrador de Power Platform     |    Posee acceso completo a Microsoft Dynamics 365, PowerApps, directivas de prevención de pérdida de datos y Microsoft Flow.     |
 |Administrador de roles con privilegios     |    Administra las asignaciones de roles y todas las características de control de acceso de Privileged Identity Management.     |

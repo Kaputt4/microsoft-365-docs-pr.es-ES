@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configure una infraestructura de servicios y seguridad que permita a los trabajadores trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560924"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898133"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
@@ -69,7 +69,7 @@ Las siguientes características y opciones de Microsoft 365 le permiten cumplir
 | Microsoft Teams, Exchange Online, SharePoint Online y OneDrive, Aplicaciones de Microsoft 365, Microsoft Power Platform, Yammer y Power Apps. | Crear, comunicar y colaborar. | Microsoft 365 E3 o E5 |
 ||||
 
-Para ver los criterios de seguridad y cumplimiento para trabajadores remotos, consulte [Implementar la seguridad y el cumplimiento para trabajadores remotos](empower-people-to-work-remotely-security-compliance.md)
+Para ver los criterios de seguridad y cumplimiento consulte [Implementar la seguridad y el cumplimiento para trabajadores remotos](empower-people-to-work-remotely-security-compliance.md).
 
 <a name="poster"></a> Para obtener un resumen de dos páginas sobre esta solución, consulte el [Póster para aumentar la productividad de los trabajadores remotos](../downloads/empower-remote-workers.pdf).
 

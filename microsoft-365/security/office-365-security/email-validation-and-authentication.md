@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Los administradores pueden obtener información sobre cómo Exchange Online Protection (EOP) usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
-ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
+ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826654"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866640"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
-La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En Microsoft 365 las organizaciones con buzones en Exchange Online y las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, EOP usa estos estándares para verificar el correo electrónico entrante:
+La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En todas las organizaciones de Microsoft 365, EOP usa estos estándares para comprobar el correo electrónico entrante:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -37,31 +37,34 @@ La autenticación de correo electrónico (conocida también como validación de 
 
 La autenticación de correo electrónico comprueba que los mensajes de correo electrónico de un remitente (por ejemplo, laura@contoso.com) son legítimos y provienen de fuentes previstas para ese dominio de correo electrónico (por ejemplo, contoso.com).
 
-En el resto de este tema, se explica cómo funcionan estas tecnologías y cómo EOP las usa para comprobar el correo electrónico entrante.
+En el resto de este artículo, se explica cómo funcionan estas tecnologías y cómo EOP las usa para comprobar el correo electrónico entrante.
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Uso de la autenticación de correo electrónico para ayudar a evitar la suplantación de identidad
 
-DMARC impide la suplantación mediante el examen de la dirección **De** en mensajes (la dirección de correo electrónico del remitente que verán los usuarios en su cliente de correo electrónico). Las organizaciones de correo electrónico de destino también pueden comprobar que el dominio de correo electrónico ha pasado SPF o DKIM, lo que significa que el dominio se ha autenticado y, por lo tanto, no está falsificado.
+DMARC impide la suplantación electrónica mediante el examen de la dirección **De** en mensajes. La dirección **De** es la dirección de correo electrónico del remitente que verán los usuarios en su cliente de correo electrónico. Las organizaciones de correo electrónico de destino también pueden comprobar que el dominio de correo electrónico ha pasado SPF o DKIM. Es decir, el dominio se ha autenticado y, por tanto, la dirección de correo del remitente no está suplantada.
 
-Sin embargo, el problema es que los registros SPF, DKIM y DMARC en DNS para la autenticación de correo electrónico (denominados directivas de autenticación de correo electrónico) son totalmente opcionales. Por lo tanto, aunque los dominios con directivas de autenticación de correo electrónico seguras como microsoft.com y skype.com están protegidos frente a la suplantación de identidad, los que utilizan directivas de autenticación de correo electrónico más débiles o no usan ninguna directiva son los principales objetivos para la suplantación. 
+Sin embargo, los registros DNS para SPF, DKIM y DMARC (denominados directivas de autenticación de correo electrónico) son opcionales. Los dominios con directivas de autenticación de correo electrónico seguras como microsoft.com y skype.com están protegidos frente a la suplantación electrónica.  Sin embargo, los dominios con directivas de autenticación de correo electrónico más débiles, o sin directivas, son los principales objetivos para la suplantación.
 
-En marzo de 2018, sólo un 9 % de los dominios de las empresas en la Fortune 500 publicaron directivas de autenticación de correo electrónico seguras. Es posible que un atacante falsifique el 91 % restante de empresas. A no ser que haya otro mecanismo de filtrado de correo electrónico en contexto, el correo electrónico de los remitentes falsos de estos dominios podría entregarse a los usuarios.
+En marzo de 2018, sólo un 9 % de los dominios de las empresas en la Fortune 500 publicaron directivas de autenticación de correo electrónico seguras. Un atacante podría suplantar electrónicamente al 91 % restante de empresas. A no ser que haya otro mecanismo de filtrado de correo electrónico en contexto, el correo electrónico de los remitentes falsos de estos dominios podría entregarse a los usuarios.
 
 ![Directivas DMARC de las empresas en Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-La proporción de pequeñas y medianas empresas que no están en la lista Fortune 500 y que publican directivas de autenticación de correo electrónico seguras es menor y es incluso más pequeña para los dominios de correo electrónico que están fuera de Norteamérica y Europa occidental.
+La proporción de pequeñas y medianas empresas que publican directivas de autenticación de correo electrónico seguras es menor. Y el número es aún más pequeño para los dominios de correo electrónico fuera de Norteamérica y Europa occidental.
 
-Esto es un gran problema ya que, aunque las empresas pueden no ser conscientes de cómo funciona la autenticación de correo electrónico, los atacantes sí que la comprenden y se aprovechan de ello. Puesto que el phishing es un problema tan importante y debido a una adopción de directivas de autenticación de correo electrónico seguras tan limitada, Microsoft usa *autenticación de correo electrónico implícita* para comprobar el correo electrónico entrante.
+La falta de directivas de autenticación de correo electrónico seguras es un gran problema. Aunque es posible que las organizaciones no sepan cómo funciona la autenticación de correo electrónico, los atacantes si lo saben y se aprovechan de ello. Debido a preocupaciones con respecto al phishing y a una adopción de directivas de autenticación de correo electrónico seguras tan limitada, Microsoft usa *autenticación de correo electrónico implícita* para comprobar el correo electrónico entrante.
 
-La autenticación de correo electrónico implícita está basada en numerosas extensiones para las directivas de autenticación de correo electrónico habituales. Entre estas extensiones se incluyen la reputación del remitente, el historial del remitente, el historial del destinatario, el análisis de comportamiento y otras técnicas avanzadas. Un mensaje enviado desde un dominio que no usa las directivas de autenticación de correo electrónico se marcará como suplantación de identidad a menos que contenga otras señales que indiquen que es legítimo.
+La autenticación de correo electrónico implícita es una extensión de las directivas de autenticación de correo electrónico habituales. Entre estas extensiones se incluyen: la reputación del remitente, el historial del remitente, el historial del destinatario, el análisis de comportamiento y otras técnicas avanzadas. En ausencia de otras señales de estas extensiones, los mensajes enviados desde dominios que no usan directivas de autenticación de correo electrónico se marcarán como suplantación electrónica.
 
 Para ver el anuncio general de Microsoft, vea [Un mar de phishing, parte 2: Protección contra la suplantación de identidad mejorada en Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
 ## <a name="composite-authentication"></a>Autenticación compuesta
 
-Aunque SPF, DKIM y DMARC son útiles por sí mismos, no comunican de forma suficiente el estado de autenticación en caso de que un mensaje no contenga ningún registro de autenticación explícito. Por lo tanto, Microsoft ha desarrollado un algoritmo para la autenticación de correo electrónico implícita que combina varias señales en un único valor denominado _autenticación compuesta_ ("compauth" para abreviar). El valor de autenticación compuesta se marca en el encabezado **Authentication-Results** en los encabezados de mensaje.
+Si un dominio no tiene registros de SPF, DKIM y DMARC tradicionales, esas comprobaciones de registro no comunican suficiente información de estado de autenticación. Por lo tanto, Microsoft ha desarrollado un algoritmo para la autenticación de correo electrónico implícita. Este algoritmo combina varias señales en un único valor denominado _autenticación compuesta_ (`compauth` para abreviar). El valor de `compauth` se marca en el encabezado **Authentication-Results** en los encabezados de mensaje.
 
-> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
+```text
+Authentication-Results:
+   compauth=<fail | pass | softpass | none> reason=<yyy>
+```
 
 Estos valores se explican en [Encabezado de mensaje Authentication-results](anti-spam-message-headers.md#authentication-results-message-header).
 
@@ -73,12 +76,11 @@ Depender solo de los registros de autenticación de correo electrónico para det
 
 - Es posible que el dominio remitente carezca de los registros DNS necesarios o que los registros no estén configurados correctamente.
 
-- El dominio de origen ha configurado correctamente los registros DNS, pero ese dominio no coincide con el dominio de la dirección De. SPF y DKIM no requieren que el dominio se use en la dirección De. Los intrusos y los servicios legítimos pueden registrar un dominio, configurar SPF y DKIM para el dominio, usar un dominio completamente distinto en la dirección De, y este mensaje pasará SPF y DKIM.
+- El dominio de origen ha configurado correctamente los registros DNS, pero ese dominio no coincide con el dominio de la dirección De. SPF y DKIM no requieren que el dominio se use en la dirección De. Los intrusos y los servicios legítimos pueden registrar un dominio, configurar SPF y DKIM para el dominio, y usar un dominio completamente distinto en la dirección De. Los mensajes de los remitentes de este dominio pasarán SPF y DKIM.
 
 Las autenticaciones compuestas pueden superar estas limitaciones pasando mensajes que, de otra forma, no superarían las comprobaciones de autenticación de correo electrónico.
 
-> [!NOTE]
-> Como se describió anteriormente, la autenticación de correo electrónico implícita usa varias señales para determinar si un mensaje es legítimo. Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la pasan como legítimos.
+Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la pasan como legítimos.
 
 Por ejemplo, el dominio fabrikam.com no tiene registros SPF, DKIM o DMARC. Los mensajes de los remitentes del dominio fabrikam.com pueden producir un error en la autenticación compuesta (tenga en cuenta que el valor  y razón de `compauth`):
 
@@ -91,7 +93,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configura un SPFF sin un registro DKIM, este mensaje no produciría un error de autenticación compuesta, porque el dominio de la dirección en De se alinea con el dominio que no ha producido un error de SPF:
+Si fabrikam.com configura un SPF sin un registro DKIM, este mensaje no produciría un error de autenticación compuesta. El dominio que ha pasado comprobaciones de SPF está alineado con el dominio de la dirección De:
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -102,7 +104,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configura un registro DKIM sin un registro DKIM, este mensaje no produciría un error de autenticación compuesta, porque el dominio de la dirección en De se alinea con el dominio que no ha producido un error de la firma de DKIM:
+Si fabrikam.com configura un registro DKIM sin un registro SPF, este mensaje no produciría un error de autenticación compuesta. El dominio de la firma DKIM está alineado con el dominio de la dirección De:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -128,7 +130,7 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>Soluciones para remitentes legítimos que envían correo electrónico sin autenticar
 
-Microsoft 365 realiza un seguimiento de quién está enviando correo sin autenticar en su organización. Si el servicio considera que el remitente no es legítimo, lo marcará como un error de autenticación compuesta. Para evitar esto, puede usar las recomendaciones de esta sección.
+Microsoft 365 realiza un seguimiento de quién está enviando correo sin autenticar en su organización. Si el servicio considera que el remitente no es legítimo, marcará los mensajes de este remitente como error de autenticación compuesta. Para evitar este veredicto, puede usar las recomendaciones de esta sección.
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>Configuración de la autenticación de correo electrónico para los dominios de su propiedad
 
@@ -140,7 +142,7 @@ Puede usar este método para resolver la suplantación de identidad dentro de la
 
 - [Puede configurar los registros DMARC](use-dmarc-to-validate-email.md) para su dominio para determinar la lista de remitentes legítimos.
 
-Microsoft no proporciona instrucciones detalladas de implementación para los registros SPF, DKIM y DMARC. Pero, hay una gran cantidad de información disponible en línea. También hay compañías de terceros dedicadas a ayudar a su organización a configurar los registros de autenticación de correo electrónico.
+Microsoft no proporciona instrucciones detalladas de implementación para los registros SPF, DKIM y DMARC. Sin embargo, hay una gran cantidad de información disponible en línea. También hay compañías de terceros dedicadas a ayudar a su organización a configurar los registros de autenticación de correo electrónico.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>No conoce todas las fuentes del correo electrónico
 
@@ -152,7 +154,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 Este ejemplo significa que el correo electrónico de su infraestructura corporativa pasará la autenticación de correo electrónico, pero el correo electrónico procedente de fuentes desconocidas se revertirá a neutra.
 
-Microsoft 365 considerará el correo electrónico entrante de su infraestructura corporativa como autenticado, pero el correo electrónico procedente de orígenes que no estén identificados podría seguir marcado como suplantación de identidad (en función de si Microsoft 365 puede autenticarlo implícitamente). Pero, sigue siendo una mejora a que Microsoft 365 marque todo el correo electrónico como suplantación de identidad.
+Microsoft 365 considerará el correo electrónico entrante de su infraestructura corporativa como autenticado. El correo electrónico procedente de orígenes no identificados podría seguir marcándose como suplantación electrónica si falla la autenticación implícita. Pero, sigue siendo una mejora a que Microsoft 365 marque todo el correo electrónico como suplantación de identidad.
 
 Una vez que haya empezado con una directiva de reserva SPF de `?all`, puede descubrir e incluir más orígenes de correo electrónico para los mensajes de forma gradual y, después, actualizar el registro SPF con una directiva más estricta.
 
@@ -202,4 +204,4 @@ Si hospeda un correo electrónico de un dominio o si proporciona una infraestruc
 
 No se garantiza la capacidad de entrega a Microsoft aunque se autentique el correo electrónico que proviene de su plataforma, pero al menos se garantiza que Microsoft no marque el correo electrónico como no deseado por no estar autenticado.
 
-Para obtener más información sobre procedimientos recomendados de proveedores de servicio, vea [Procedimientos recomendados de mensajería móvil de M3AAWG para proveedores de servicios](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Para más información sobre procedimientos recomendados de proveedores de servicio, vea [Procedimientos recomendados de mensajería móvil de M3AAWG para proveedores de servicios](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826666"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868884"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -162,3 +162,7 @@ También puede contactar con el administrador que puede crear una incidencia de 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Consideraciones para la protección contra la suplantación de identidad
 
 Si es un administrador que actualmente envía mensajes a Microsoft 365, debe asegurarse de que el correo electrónico se haya autenticado correctamente. En caso contrario, es posible que se marque como correo no deseado o suplantación de identidad. Para obtener más información, consulte [Soluciones para remitentes legítimos que envían correo electrónico sin autenticar](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+
+Los remitentes en la lista de remitentes seguros de un usuario individual (o administrador) omitirán partes de la pila de filtrado, incluida la protección contra la suplantación electrónica. Para más información, consulte [Remitentes seguros de Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+
+Los administradores deben evitar (siempre que sea posible) el uso de listas de remitentes permitidos o de dominios permitidos. Estos remitentes omiten toda la protección contra correo no deseado, suplantación electrónica, protección contra phishing y autenticación de remitente (SPF, DKIM, DMARC). Para más información, consulte [Usar listas de remitentes permitidos o listas de dominios permitidos](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).

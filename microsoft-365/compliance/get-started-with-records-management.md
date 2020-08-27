@@ -1,5 +1,5 @@
 ---
-title: Introducción a la administración de registros
+title: Introducción a la administración de registros en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de gran valor para obligaciones legales, comerciales o de reglamentación, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: bec70df94ce81ee7497b3ec236dca5649ce90cb7
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778649"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868905"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-¿Está preparado para empezar a administrar el contenido de alto nivel de su organización para las obligaciones legales, empresariales o reglamentarias con una solución de administración de registros? Utilice la siguiente guía de alto nivel para comenzar:
+¿Está preparado para empezar a administrar el contenido de alto nivel de su organización para las obligaciones legales, empresariales o reglamentarias con una solución de administración de registros en Microsoft 365? Utilice la siguiente guía de alto nivel para comenzar:
 
 1. **Entienda la solución de administración de registros** y qué acciones se permiten o bloquean cuando se declaran documentos y mensajes de correo electrónico: [Obtenga más información sobre la administración de registros](records-management.md). 
 
@@ -39,9 +39,9 @@ ms.locfileid: "46778649"
 4. **Publique y aplique las etiquetas de retención**. Las etiquetas de retención son bloques de creación reutilizables que se pueden emplear en diferentes directivas y se pueden incorporar a los flujos de trabajo del usuario: 
     
     - [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
-    - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
+    - [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>Requisitos de suscripción y de licencias para las directivas de retención y las etiquetas de retención
+## <a name="subscription-and-licensing-requirements-for-records-management"></a>Requisitos de suscripción y licencias para la administración de registros
 
 Distintas suscripciones admiten diferentes administraciones de registros y los requisitos de licencias para los usuarios dependen de las características que use.
 
@@ -49,9 +49,15 @@ Para ver las opciones para que los usuarios puedan beneficiarse de las caracter�
 
 ## <a name="permissions-required-for-records-management"></a>Permisos necesarios para la administración de registros
 
-Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder el acceso a los responsables de cumplimiento y a otros usuarios sin darles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administración de registros**. Para instrucciones, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede conceder el acceso a los responsables de cumplimiento y a otros usuarios sin darles todos los permisos de un administrador de espacio empresarial. Para conceder permisos para esta administración limitada, le recomendamos que agregue usuarios al grupo de roles **Administración de registros**, que concede el rol **RecordManagement**.
 
-Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas de retención para declarar registros. La persona que configura estas etiquetas no requiere acceso al contenido.
+Entre los permisos que se incluyen en este grupo de roles no se incluyen los permisos necesarios para [revisión para eliminación y comprobación](disposition.md), e incluso un administrador global no tiene estos permisos de forma predeterminada. Para administrar la eliminación, utilice el rol de **Administración de eliminación**, mediante la creación de un grupo de roles personalizado o mediante el uso de un grupo de roles predeterminado que incluya este rol (por ejemplo, **Administrador de cumplimiento**).
+
+Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+Para obtener instrucciones sobre cómo agregar usuarios a grupos de roles y asignar roles, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas de retención para declarar registros y administrar la eliminación. La persona que configura estas etiquetas no requiere acceso al contenido.
 
 ## <a name="common-scenarios-for-records-management"></a>Escenarios comunes para la administración de registros
 
