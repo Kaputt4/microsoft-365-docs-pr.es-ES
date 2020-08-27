@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a buzones de correo de Microsoft 365.
-ms.openlocfilehash: 6b75d2857fd95d24a90f9245cb299b7558aa3cec
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: ebb5c78dc043afb0e1e35aa8b5c70cd2219a6349
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860715"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282618"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
@@ -38,7 +38,7 @@ En la siguiente tabla se enumeran los conectores de datos de terceros disponible
 > [!TIP]
 > Haga clic en el vínculo de la columna de **datos de terceros** para seguir las instrucciones paso a paso para crear un conector para ese tipo de datos.
 
-|Datos de terceros  |Retención por juicio|eDiscovery  |Directivas de retención  |Administración de registros  |Cumplimiento de las comunicaciones  |Administración de riesgos internos  |
+|Datos de terceros  |Retención por juicio|eDiscovery  |Configuración de retención  |Administración de registros  |Cumplimiento de las comunicaciones  |Administración de riesgos internos  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Mensaje de Bloomberg](archive-bloomberg-message-data.md)     |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
@@ -71,9 +71,9 @@ Las tres herramientas de eDiscovery principales de Microsoft 365 son la búsqued
 
    La exhibición de documentos electrónicos principal y la exhibición de documentos electrónicos avanzada le permiten administrar los datos de terceros que pueden ser relevantes para las investigaciones legales o internas de su organización.
 
-### <a name="retention-policies"></a>Directivas de retención
+### <a name="retention-settings"></a>Configuración de retención
 
-Puede aplicar una [Directiva de retención](retention.md) a los buzones de usuario para conservar y, a continuación, eliminar los datos de terceros (y el contenido de otros buzones) una vez que expire el período de retención. También puede usar directivas de retención para eliminar datos de terceros de una antigüedad determinada o desencadenar una revisión de disposición cuando expire el período de retención.
+Puede aplicar una [Directiva de retención](retention.md) a los buzones de usuario para conservar y, a continuación, eliminar los datos de terceros (y el contenido de otros buzones) una vez que expire el período de retención. También puede usar directivas de retención para eliminar datos de terceros de una antigüedad determinada o [usar etiquetas de retención para desencadenar una revisión de disposición](disposition.md) cuando expire el período de retención de datos de terceros.
 
 ### <a name="records-management"></a>Administración de registros
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632111"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282608"
 ---
 # <a name="supervision-policies"></a>Directivas de supervisión
 
@@ -143,7 +143,7 @@ Para obtener más información acerca de los detalles de información confidenci
 
 #### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
-Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100.000 términos por Diccionario. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
+Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100 KB de términos (compresión posterior) en el Diccionario y admiten cualquier idioma. El límite de inquilino también es de 100 KB tras la compresión. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
 
 #### <a name="offensive-language"></a>Lenguaje ofensivo
 
