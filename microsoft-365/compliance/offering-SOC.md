@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254303"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898088"
 ---
 # <a name="service-organization-controls-soc"></a>Controles para la Organización de Servicios (SOC)
 
@@ -107,7 +107,7 @@ Con los informes, sus auditores pueden comparar los resultados de los servicios 
 
 **¿Con qué frecuencia se publican los informes de los SOC para Azure?**
 
-Los informes de SOC para Azure, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream y Centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas de puente se emiten en enero para cubrir el período de 10/1 – 12/31 y de julio para cubrir el período de 4/1 – 6/30. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
+Los informes de SOC para Azure, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream y Centros de datos de Microsoft se basan en una ventana de ejecución en 12 meses (período de auditoría) con nuevos informes emitidos por semestre (los finales de periodo son 31 de marzo y 30 de septiembre). Las cartas puente se emiten todos los trimestres y comprenden el período de tres meses anterior. Por ejemplo, la carta de enero comprende del 1 de octubre al 31 de diciembre; la de abril, del 1 de enero al 31 de marzo; la de julio, del 1 de abril al 30 de junio, y la de octubre, del 1 de julio al 30 de septiembre. Los clientes pueden [descargar](https://aka.ms/stp) los informes más recientes del Portal de Confianza del Servicio.
 
 **¿Necesito llevar a cabo mi propia auditoria de centros de datos de Microsoft?**
 
