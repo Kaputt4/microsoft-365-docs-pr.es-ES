@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 89dbf0e67c112743a557842bb32555d3a079743b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529952"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289798"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo de vida de productos de escritorio administrado de Microsoft
 
-Ventajas del escritorio administrado por Microsoft los usuarios finales aseguran que siempre usen dispositivos que ofrecen el mejor rendimiento, confiabilidad, diseño y capacidades de seguridad (por ejemplo, compatibilidad con características como Windows Hello). Para ello, el escritorio administrado de Microsoft mantiene un breve catálogo de los [dispositivos aprobados](device-list.md)que se actualizan de forma continua. 
+Ventajas del escritorio administrado por Microsoft los usuarios aseguran que siempre usen dispositivos que ofrecen el mejor rendimiento, confiabilidad, diseño y capacidades de seguridad (como la compatibilidad con características como Windows Hello). Para ello, el escritorio administrado de Microsoft mantiene un breve catálogo de los [dispositivos aprobados](device-list.md)que se actualizan de forma continua. 
  
 Este tema detalla el ciclo de vida de los dispositivos a medida que se agregan y se quitan del catálogo aprobado. 
 

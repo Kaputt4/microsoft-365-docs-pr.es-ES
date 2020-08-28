@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528041"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289608"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
@@ -51,7 +51,7 @@ Artículo nuevo o modificado | Descripción
 ## <a name="may-2020"></a>Mayo de 2020
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
@@ -121,7 +121,7 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Excepciones para el plan de servicios](service-description/customizing.md) | Artículo nuevo
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [ Cambios en el servicio y comunicación ](service-description/servicechanges.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
@@ -135,7 +135,7 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
@@ -150,7 +150,7 @@ Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
 [Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
 
@@ -183,7 +183,7 @@ Artículo nuevo o modificado | Descripción
 [Preparar unidades asignadas para el Escritorio administrado de Microsoft](get-ready/mapped-drives.md) | Artículo nuevo
 [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](get-ready/certs-wifi-lan.md) | Artículo nuevo
 [Pedir dispositivos de escritorio administrados por Microsoft](get-started/devices.md) | Artículo actualizado
-[Obtener ayuda para usuarios finales](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
+[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
 
 ## <a name="april-2019"></a>Abril de 2019
 Artículo nuevo o modificado | Descripción
@@ -226,7 +226,7 @@ Artículo nuevo o modificado | Descripción
 
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Soporte para escritorio administrado de Microsoft](service-description/support.md)<br />[soporte técnico del usuario final para Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Se actualizó para incluir Australia.
+[Soporte para escritorio administrado de Microsoft](service-description/support.md)<br />y [compatibilidad con el usuario para el escritorio administrado de Microsoft](working-with-managed-desktop/end-user-support.md) | Se actualizó para incluir Australia.
 
 ## <a name="october-30-2018"></a>30 de octubre de 2018
 Reorganización del contenido: sección agregada para la [Descripción del servicio de escritorio administrado de Microsoft](service-description/index.md). 

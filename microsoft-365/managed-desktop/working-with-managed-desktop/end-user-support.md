@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529760"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289692"
 ---
-# <a name="getting-help-for-end-users"></a>Obtener ayuda para usuarios finales
+# <a name="getting-help-for-users"></a>Obtener ayuda para usuarios
 
 Hay dos formas en que los usuarios de su organización pueden obtener ayuda con sus dispositivos de escritorio administrados por Microsoft: obtener aplicación de **ayuda** o soporte telefónico. Ambas opciones de soporte técnico están disponibles para los usuarios las 24 horas del día, los 7 días de la semana.
  
@@ -25,17 +25,17 @@ Hay dos formas en que los usuarios de su organización pueden obtener ayuda con 
 
 ## <a name="get-help-app"></a>Obtener aplicación de ayuda
 
-El método preferido para proporcionar soporte a los usuarios es **obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo de usuario final.  
+El método preferido para proporcionar soporte a los usuarios es **obtener ayuda**, una interfaz fácil de usar integrada en el dispositivo del usuario.  
 
 ![Icono de obtención de la aplicación de ayuda](../../media/get-help.png)
 
 Se trata de una aplicación que está instalada en todos los dispositivos de escritorio administrados por Microsoft y que está anclada a la barra de tareas. 
 
-- Los usuarios finales pueden solicitar una devolución de llamada a un número de teléfono proporcionado o chatear en línea con un representante de servicio.
+- los usuarios pueden solicitar una devolución de llamada a un número de teléfono proporcionado o chatear en línea con un representante de servicio.
 - Las solicitudes que se encuentran fuera del ámbito de soporte técnico de escritorio administrado de Microsoft se redirigen al Departamento de soporte técnico local de TI mediante llamadas telefónicas.
 
 ### <a name="prerequisites"></a>Requisitos previos
-Para que los usuarios finales puedan obtener ayuda a través de la aplicación, asegúrese de que se cumplen estos requisitos previos:
+Para que los usuarios puedan obtener ayuda a través de la aplicación, asegúrese de que se cumplen estos requisitos previos:
 
 - El dispositivo debe registrarse con Microsoft Managed Desktop mediante uno de los métodos de [configuración de dispositivos de escritorio administrados por Microsoft](../get-started/set-up-devices.md), como [registrar los nuevos dispositivos usted mismo](../get-started/register-devices-self.md).
 - El idioma para mostrar del dispositivo debe establecerse en cualquiera de estas configuraciones regionales en Inglés: en-US, en-GB, en-au, en-NZ o en-CA.
@@ -49,7 +49,7 @@ Si ha comprobado estos requisitos previos y la aplicación obtener ayuda sigue s
 
 ## <a name="phone-support"></a>Soporte por teléfono
 
-Los usuarios finales con dispositivos de escritorio administrados por Microsoft también tienen acceso a los números de teléfono gratuitos a los que pueden llamar. Esto está pensado para usarse cuando la ayuda de Get no está disponible. Por ejemplo, si no pueden iniciar sesión en el dispositivo o el dispositivo está roto. Estos son los números de teléfono de soporte telefónico:
+los usuarios con dispositivos de escritorio administrados por Microsoft también tienen acceso a los números de teléfono gratuitos a los que pueden llamar. Esto está pensado para usarse cuando la ayuda de Get no está disponible. Por ejemplo, si no pueden iniciar sesión en el dispositivo o el dispositivo está roto. Estos son los números de teléfono de soporte telefónico:
 
 - Estados Unidos: + 1 855 425 0216
 - Canadá (excepto Quebec): + 1 855 425 0216

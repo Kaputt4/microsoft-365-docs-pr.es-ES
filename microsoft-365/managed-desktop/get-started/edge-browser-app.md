@@ -1,6 +1,6 @@
 ---
 title: Nuevo Microsoft Edge
-description: ''
+description: Explica cómo se implementa y se actualiza el explorador perimetral nuevo.
 keywords: explorador, escritorio administrado por Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903876"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294679"
 ---
 # <a name="new-microsoft-edge-app"></a>Nueva aplicación Microsoft Edge
 
@@ -35,7 +35,6 @@ El [canal de la versión beta](https://docs.microsoft.com/deployedge/microsoft-e
 
 Para asegurarse de que Microsoft Edge se actualiza correctamente, no modifique las [directivas de actualización](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)de Microsoft Edge.
 
-### <a name="microsoft-edge-beta-channel"></a>Canal de la versión beta de Microsoft Edge
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrada por el escritorio administrado por Microsoft
@@ -44,7 +43,7 @@ Microsoft Managed Desktop ha creado un conjunto de directivas predeterminado par
 
 ### <a name="microsoft-edge-extensions"></a>Extensiones de Microsoft Edge
 
-La línea base de seguridad para Microsoft Edge en dispositivos de escritorio administrados de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y los usuarios finales seguros. Para habilitar e implementar extensiones en su entorno, vea la configuración que administre. 
+La línea base de seguridad para Microsoft Edge en dispositivos de escritorio administrados de Microsoft establece dos directivas para deshabilitar todas las extensiones de Chrome y los usuarios seguros. Para habilitar e implementar extensiones en su entorno, vea la configuración que administre. 
 
 #### <a name="extension-installation-blocklist"></a>Lista de bloqueo de instalación de extensión
 **Valor predeterminado:** Todos
@@ -77,7 +76,7 @@ No se recomienda habilitar esta configuración, ya que permite a los usuarios vi
 
 **Valor predeterminado:** Preparado
 
-Está habilitado de forma predeterminada para ayudar a proteger a los usuarios finales.
+Habilitado de forma predeterminada para ayudar a proteger a los usuarios.
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Mensajes SmartScreen de Windows Defender para sitios
 
@@ -105,7 +104,7 @@ No se recomienda usar flash debido a los riesgos de seguridad asociados. Si sigu
 
 **Valor predeterminado:** Capacidad
 
-No se recomienda permitir que los usuarios finales guarden contraseñas en el dispositivo.
+No se recomienda permitir que los usuarios guarden contraseñas en el dispositivo.
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Modo de Internet Explorer en Microsoft Edge
 El modo IE en Microsoft Edge facilita el uso de todos los sitios que su organización necesita en un único explorador. Usa el motor de cromo integrado para los sitios que son compatibles con el motor de representación de cromo y usa el motor de MSHTML de Trident de Internet Explorer 11 (IE11) para los sitios que no tienen dependencias o dependen de la funcionalidad de IE. [Más información] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

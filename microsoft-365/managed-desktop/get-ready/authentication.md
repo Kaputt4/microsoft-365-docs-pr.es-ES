@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7caeee6f476fea7881884cea20bd2a59db2c13d9
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7181e81a2db94ce26fb8601f8b9156c65084c439
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530048"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289584"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
 
@@ -41,8 +41,8 @@ En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenti
 
 - Confirme que Azure AD Connect está configurado y usa un servidor local de Active Directory que ejecuta Windows Server 2008 R2 o versiones posteriores.
 - Confirme que Azure AD Connect se ejecuta en una versión compatible y está configurado para sincronizar estos tres atributos con Azure AD: 
-    - Nombre de dominio DNS de Active Directory local (donde se encuentran los usuarios finales)
-    - NetBIOS de su Active Directory local (donde se encuentran los usuarios finales)
+    - Nombre de dominio DNS de Active Directory local (donde se encuentran los usuarios)
+    - NetBIOS de su Active Directory local (donde se encuentran los usuarios)
     - Nombre de cuenta SAM del usuario
 
 

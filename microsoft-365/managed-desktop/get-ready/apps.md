@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530108"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289596"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 
@@ -26,7 +26,7 @@ ms.locfileid: "46530108"
 
 Microsoft incluye ciertas aplicaciones clave junto con la licencia de Microsoft 365 E3 o E5 necesaria para participar en el escritorio administrado de Microsoft. Sin embargo, aunque proporcionamos estas aplicaciones, aún tiene ciertas responsabilidades y acciones para completarse.
 
-También puede implementar aplicaciones adicionales que no son de Microsoft para los usuarios finales para el autoservicio a través del portal de la empresa o una instalación en segundo plano obligatoria, todo con la canalización de implementación de Microsoft Intune. Si tiene la experiencia, puede migrar las aplicaciones que necesita; como alternativa, los servicios de consultoría de Microsoft (MCS) o proveedores que no son de Microsoft se alegrarán de ayudarle con un proyecto de empaquetado y migración. Para obtener más información sobre cómo trabajar con MCS, vea [Working with Microsoft Consulting Services](apps-MCS.md).
+También puede implementar aplicaciones adicionales que no son de Microsoft para los usuarios para el autoservicio a través del portal de la empresa o una instalación en segundo plano necesaria, todo lo que usa la canalización de implementación de Microsoft Intune. Si tiene la experiencia, puede migrar las aplicaciones que necesita; como alternativa, los servicios de consultoría de Microsoft (MCS) o proveedores que no son de Microsoft se alegrarán de ayudarle con un proyecto de empaquetado y migración. Para obtener más información sobre cómo trabajar con MCS, vea [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>Aplicaciones proporcionadas por Microsoft
@@ -35,13 +35,13 @@ Con su licencia de escritorio administrado de Microsoft se incluyen las versione
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Qué hace Microsoft para admitir las aplicaciones que proporcionamos
 
-Microsoft proporcionará servicio completo para la implementación, actualización y soporte para las aplicaciones de Microsoft 365 aplicaciones para empresas incluidas. Las versiones de hacer clic y ejecutar de Microsoft Project y Visio *no* se incluyen de forma predeterminada, pero el escritorio administrado de Microsoft proporcionará grupos de implementación que permitan al administrador de ti administrar las licencias e implementarlas de forma adecuada para la organización. Microsoft proporcionará soporte a los usuarios finales de estas aplicaciones a través de los canales de soporte técnico de Microsoft administrados para equipos de escritorio.
+Microsoft proporcionará servicio completo para la implementación, actualización y soporte para las aplicaciones de Microsoft 365 aplicaciones para empresas incluidas. Las versiones de hacer clic y ejecutar de Microsoft Project y Visio *no* se incluyen de forma predeterminada, pero el escritorio administrado de Microsoft proporcionará grupos de implementación que permitan al administrador de ti administrar las licencias e implementarlas de forma adecuada para la organización. Microsoft proporcionará soporte técnico a los usuarios de estas aplicaciones a través de los canales de soporte técnico de escritorio administrados por Microsoft.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Qué necesita hacer para admitir las aplicaciones que proporcionamos
 
 Todavía hay algunas cosas que debe hacer con estas aplicaciones:
 
-- **Asignar licencias** : es responsable de obtener y asignar las licencias adecuadas a los usuarios finales para las aplicaciones de Microsoft 365 para empresas.
+- **Asignar licencias** : es responsable de obtener y asignar las licencias adecuadas a los usuarios para las aplicaciones de Microsoft 365 para empresas.
 - **Agregar usuarios a los grupos de seguridad** : Si está usando Microsoft Project o Visio, el administrador de TI debe agregar dichos usuarios a los grupos de implementación adecuados. Los administradores de ti también son responsables de reclamar las licencias de esos usuarios si dejan la compañía.
 - **Implementación de complementos de microsoft 365** : Si necesita complementos para alguna de las aplicaciones para empresas de Microsoft 365, impleméntelo de forma centralizada como cualquier otra aplicación de Windows 32. 
 

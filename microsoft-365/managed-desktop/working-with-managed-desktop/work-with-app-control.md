@@ -10,16 +10,16 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430452"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289464"
 ---
 # <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
-Una vez que se haya implementado el control de aplicaciones en el entorno, tanto usted como las operaciones de escritorio administradas de Microsoft tienen responsabilidades en curso. Por ejemplo, es posible que quiera agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios finales. Los detalles del publicador de una aplicación incluyen información sobre el firmante.
+Una vez que se haya implementado el control de aplicaciones en el entorno, tanto usted como las operaciones de escritorio administradas de Microsoft tienen responsabilidades en curso. Por ejemplo, es posible que quiera agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios. Los detalles del publicador de una aplicación incluyen información sobre el firmante.
 
 
 ## <a name="add-a-new-app"></a>Agregar una nueva aplicación

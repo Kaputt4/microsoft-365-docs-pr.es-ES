@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845861"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294780"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -39,6 +39,9 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Comprobar las directivas mediante el analizador de configuración](configuration-analyzer-for-security-policies.md)
 - [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
+- [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- La exposición invalida la información en el [Explorador de amenazas](threat-explorer.md) (el correo electrónico fue permitido o bloqueado por el inquilino o la Directiva de usuario)
+- Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md) (malware, phish, correo no deseado o ninguno)
 
 ## <a name="julyaugust-2020"></a>Julio/agosto de 2020 
 
@@ -55,8 +58,6 @@ En este artículo se enumeran las nuevas características de la versión más re
 - Mejoras en el [Explorador de amenazas](threat-explorer.md) para permitir que los equipos de operaciones de seguridad busquen y filtren varios campos mientras [investigan el correo electrónico](investigate-malicious-email-that-was-delivered.md):
     - Ubicación de entrega y acciones especiales
     - Direccionalidad (entrante, saliente o dentro de la organización)
-    - Invalidaciones (bloqueo o aceptación de usuarios)
-    - Amenaza de URL (malware, phish, correo no deseado o ninguno)
     - Avanzados no filtros (son opciones de filtrado avanzadas que incluyen no contiene, no incluye, etc.)
     - Filtros de tiempo granulares (día, hora, media hora) 
 
@@ -98,10 +99,9 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descripción del servicio ATP de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 

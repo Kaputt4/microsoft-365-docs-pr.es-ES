@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529390"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289714"
 ---
 # <a name="device-configuration"></a>Configuración de dispositivos
 
@@ -34,7 +34,7 @@ Los dispositivos llegarán con una imagen de firma y, a continuación, se unirá
 
 En esta tabla se resaltan las directivas predeterminadas que se aplican a todos los dispositivos de escritorio administrados por Microsoft durante el aprovisionamiento de dispositivos. Se revertirán todos los cambios detectados no aprobados por el equipo de operaciones de escritorio administrado por Microsoft para objetos administrados por el escritorio administrado por Microsoft.
 
-Policy | Description
+Policy | Descripción
 --- | ---
 Línea de base de seguridad | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) para MDM está configurado para todos los dispositivos de escritorio administrados por Microsoft. Esta línea base es la configuración estándar del sector. Se publica, se prueba de forma pública y los expertos en seguridad de Microsoft lo han revisado para mantener seguras los dispositivos de escritorio y las aplicaciones administrados por Microsoft en el lugar de trabajo moderno. <br><br>Para mitigar las amenazas del panorama de la amenaza de seguridad en constante evolución, la línea base de seguridad de Microsoft se actualizará e implementará en los dispositivos de escritorio administrados por Microsoft con cada actualización de características de Windows 10.<br><br>Para obtener más información, vea [líneas de base de seguridad de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Plantilla de seguridad recomendada para escritorio administrado de Microsoft | Un conjunto de cambios recomendados en la línea de base de seguridad que optimizan la experiencia del usuario.  Estos cambios se documentan en [el apéndice de seguridad](#security-addendum). Las actualizaciones del anexo de Directiva se producen según sea necesario.  
@@ -44,7 +44,7 @@ Conexiones de uso medido | De forma predeterminada, las actualizaciones en conex
 
 ## <a name="diagnostic-data"></a>Datos de diagnóstico
 
- Los dispositivos se configurarán para proporcionar datos de diagnóstico mejorados a Microsoft en un identificador comercial conocido. Como parte del escritorio administrado de Microsoft, los administradores de ti no pueden cambiar esta configuración. Para los clientes de las regiones generales del Reglamento de protección de datos (RGPD), los usuarios finales pueden reducir el nivel de datos de diagnóstico que se proporciona, pero habrá una reducción del servicio. Por ejemplo, el escritorio administrado de Microsoft no podrá recopilar los datos necesarios para iterar en las configuraciones y directivas que mejor se adapten a las necesidades de rendimiento y seguridad. Para obtener más información, vea [Configure Windows Diagnostic Data in your Organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+ Los dispositivos se configurarán para proporcionar datos de diagnóstico mejorados a Microsoft en un identificador comercial conocido. Como parte del escritorio administrado de Microsoft, los administradores de ti no pueden cambiar esta configuración. Para los clientes de las regiones de la normativa general de protección de datos (RGPD), los usuarios pueden reducir el nivel de datos de diagnóstico que se proporciona, pero habrá una reducción del servicio. Por ejemplo, el escritorio administrado de Microsoft no podrá recopilar los datos necesarios para iterar en las configuraciones y directivas que mejor se adapten a las necesidades de rendimiento y seguridad. Para obtener más información, vea [Configure Windows Diagnostic Data in your Organization.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
 ## <a name="security-addendum"></a>Apéndice de seguridad
 

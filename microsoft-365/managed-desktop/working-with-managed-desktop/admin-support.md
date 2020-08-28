@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529904"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289726"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
@@ -65,6 +65,6 @@ Una vez que un vale está en estado **mitigado** o **resuelto** , puede comparti
 
 
 ## <a name="additional-resources"></a>Recursos adicionales
-- [Compatibilidad con el usuario final para escritorio administrado de Microsoft](end-user-support.md). 
+- [Compatibilidad con el usuario para el escritorio administrado de Microsoft](end-user-support.md). 
 - [Soporte para escritorio administrado de Microsoft](../service-description/support.md). 
 - Si ya se ha suscrito a escritorio administrado de Microsoft, puede encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas más frecuentes en la guía de administración de escritorio administrado de Microsoft en la sección **recursos en línea** del [portal de administración de escritorio administrado de Microsoft](https://aka.ms/mwaasportal).

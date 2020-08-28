@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 9c20b322d4da0339d7c8711abcee38f19f556423
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632091"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289393"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Caso práctico-contoso configura rápidamente una directiva de lenguaje ofensivo para Microsoft Teams, Exchange y Yammer Communications
 
@@ -79,34 +79,29 @@ Los administradores de TI de Contoso deben seguir estos pasos para comprobar la 
 
 ### <a name="permissions-for-communication-compliance"></a>Permisos para el cumplimiento de la comunicación
 
-Hay cinco funciones que se usan para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la comunicación esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, los administradores de Contoso tienen asignado el rol de *Administrador de cumplimiento de comunicaciones* .
+Hay cinco grupos de roles usados para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, los administradores de Contoso tienen asignado el rol de administrador de *cumplimiento de comunicaciones* .
 
-Contoso decide crear un grupo de roles personalizado y asignar todos los roles de cumplimiento de comunicaciones al grupo. De este modo, es más fácil para contoso empezar rápidamente y se ajusta mejor a sus requisitos de administración de cumplimiento.
-
-Contoso creará un grupo de roles que contendrá todos los roles de cumplimiento de comunicaciones siguientes:
+Contoso decide usar el grupo de funciones *cumplimiento de comunicaciones* para asignar todos los administradores de cumplimiento de comunicaciones, analistas, investigadores y visores al grupo. De este modo, es más fácil para contoso empezar rápidamente y se ajusta mejor a sus requisitos de administración de cumplimiento.
 
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
-| **Administrador de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones del grupo de roles. Los usuarios asignados a esta función no pueden ver los mensajes de alerta. |
-| **Análisis de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
-| **Investigación de cumplimiento en la comunicación** | Los usuarios que tienen asignado este rol pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de exhibición de documentos electrónicos avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
-| **Visor de cumplimiento de comunicaciones** | Los usuarios a los que se les asigna esta función pueden tener acceso a todos los widgets de informes en la Página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
-| **Administración de casos de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden administrar casos y actuar en alertas. Este rol es necesario para cuando se crean grupos de roles personalizados para administradores, analistas e investigadores. Los grupos personalizados para visores no necesitan esta función asignada. |
+| **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
+| **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
+| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a actuar como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Investigador de cumplimiento de la comunicación** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de la comunicación. Los usuarios asignados a este grupo de roles pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de eDiscovery avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a administrar los informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes en la página de inicio de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
-1. Los administradores de TI de Contoso inician sesión en la página de permisos del **centro de seguridad y cumplimiento de Office 365** [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) mediante credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
-2. Después de seleccionar **crear**, proporcionan al nuevo grupo de roles un nombre descriptivo de "cumplimiento de la*comunicación*" y seleccione **siguiente**.
-3. Seleccionan **elegir roles** y, a continuación, seleccione **Agregar**. Para agregar los roles necesarios, active la casilla de verificación administración del *cumplimiento de comunicaciones*, análisis de *cumplimiento de comunicaciones*, investigación de *cumplimiento*en la comunicación, visor de *cumplimiento de comunicaciones*y administración de casos de *cumplimiento de comunicaciones*y, a continuación, seleccione **Agregar**, **listo** y **siguiente**.
-
-    ![Roles de cumplimiento de comunicaciones](../media/communication-compliance-case-roles.png)
-
-4. A continuación, los administradores de ti seleccionan seleccionar **miembros** y, a continuación, seleccione **Agregar**. Active la casilla de verificación para todos los usuarios y grupos que deseen crear directivas y administrar mensajes con coincidencias de directivas. Agregan los administradores de ti, especialistas de cumplimiento y otros compañeros de recursos humanos y departamentos jurídicos que identificaron en la planeación inicial y, a continuación, seleccionan **Agregar**, **listo**y **siguiente**.
-5. Para finalizar los permisos, los administradores de ti seleccionan **Crear grupo de roles** para finalizar. Los roles tardarán alrededor de 30 minutos en ser efectivos en el servicio Microsoft 365 de contoso.
-
-    ![Revisión del cumplimiento de comunicaciones](../media/communication-compliance-case-review.png)
+1. Los administradores de TI de Contoso inician sesión en la página de permisos del **centro de seguridad & cumplimiento de Office 365** [( https://protection.office.com/permissions) ](https://protection.office.com/permissions) usando credenciales para una cuenta de administrador global y seleccionan el vínculo para ver y administrar roles en Microsoft 365.
+2. En el **centro de seguridad & cumplimiento**, van a **permisos** y seleccionan el vínculo para ver y administrar roles en Office 365.
+3. Los administradores seleccionan el grupo de funciones *cumplimiento de comunicaciones* y, a continuación, seleccionan **Editar Grupo de roles**.
+4. Los administradores seleccionan **elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
+5. Seleccionan **Agregar** y, a continuación, seleccionan la casilla para todos los usuarios de Contoso que administrarán las alertas de cumplimiento de comunicación, investigación y revisión.
+6. Los administradores seleccionan **Agregar**y, a continuación, selecciona **listo**.
+7. Seleccione **Guardar** para agregar usuarios de Contoso al grupo de roles. Seleccione **cerrar** para completar los pasos.
 
 ## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>Paso 2: obtener acceso al cumplimiento de la comunicación en Microsoft 365
 
-Después de configurar los permisos para el cumplimiento de la comunicación, los administradores de TI de Contoso y los especialistas en cumplimiento definidos en el nuevo grupo de roles pueden tener acceso a la solución de cumplimiento de comunicaciones de Microsoft 365. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen varias formas de obtener acceso al cumplimiento de la comunicación y empezar a crear una nueva Directiva:
+Después de configurar los permisos para el cumplimiento de la comunicación, los administradores de TI de Contoso y los especialistas en cumplimiento asignados al grupo de funciones de cumplimiento de comunicaciones pueden acceder a la solución de cumplimiento de comunicaciones en Microsoft 365. Los administradores de TI de Contoso y los especialistas de cumplimiento tienen varias formas de obtener acceso al cumplimiento de la comunicación y empezar a crear una nueva Directiva:
 
 - Comenzar directamente desde la solución de cumplimiento de comunicaciones
 - Inicio desde el centro de cumplimiento de Microsoft 365
@@ -163,7 +158,7 @@ Contoso los administradores de ti revisan y rellenan las [instrucciones paso a p
 
 El cumplimiento de la comunicación requiere que el inquilino de Yammer para una organización esté en modo nativo para supervisar el lenguaje ofensivo en mensajes privados y conversaciones públicas de la comunidad.
 
-Contoso los administradores de ti Asegúrese de que revisan la información de la información [General del modo nativo de Yammer en el artículo 365 de Microsoft](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siga los pasos para ejecutar la herramienta de migración en el tema [configuración de la red de Yammer para el modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
+Contoso los administradores de ti Asegúrese de que revisan la información de la información [General del modo nativo de Yammer en el artículo 365 de Microsoft](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) y siga los pasos para ejecutar la herramienta de migración en el artículo [configurar su red de Yammer para el modo nativo para Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuración de un grupo para usuarios en el ámbito
 

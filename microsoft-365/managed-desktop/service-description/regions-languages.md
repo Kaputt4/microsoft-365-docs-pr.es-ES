@@ -1,17 +1,17 @@
 ---
 title: Idiomas y regiones compatibles
 description: Regiones y idiomas admitidos por el escritorio administrado por Microsoft
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: bf3d1745030561102b5b7b25611001a4d7698ef0
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790698"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289656"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regiones e idiomas admitidos por Microsoft Managed Desktop
 
@@ -19,7 +19,7 @@ En este artículo se proporciona información detallada sobre las regiones y los
 
 ## <a name="supported-languages"></a>Idiomas admitidos
 
-El inglés es el único idioma disponible para los usuarios del escritorio administrado por Microsoft. Esto incluye todas las interfaces de usuario tanto para los usuarios finales como para los administradores y para todas las interacciones con el [soporte de administradores](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) y [el soporte de usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
+El inglés es el único idioma disponible para los usuarios del escritorio administrado por Microsoft. Esto incluye todas las interfaces de usuario para usuarios y administradores, y todas las interacciones con soporte para [administradores](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) y [compatibilidad con el usuario final](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
 
 
 Todavía puede usar dispositivos administrados fuera de las regiones en inglés sin una interrupción en el servicio de escritorio administrado por Microsoft. Por ejemplo, un empleado con sede en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja en Asia, Europa o Sudamérica. 
@@ -45,4 +45,4 @@ Las organizaciones de los siguientes países pueden suscribirse al escritorio ad
 - Australia
 - Nueva Zelanda
 
-Los usuarios finales y los administradores de estas regiones deben usar el inglés para sus dispositivos y herramientas de administración. 
+Tanto los usuarios como los administradores de estas regiones deben usar el inglés para sus dispositivos y herramientas de administración. 

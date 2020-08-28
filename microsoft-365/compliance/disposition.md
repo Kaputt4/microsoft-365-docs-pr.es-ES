@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867215"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294769"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records-management.md#records) que se han eliminado automáticamente al final del período de retención. 
 
@@ -97,7 +97,7 @@ Desencadenar una revisión de disposición al final del período de retención e
 
 Cuando se notifica a un revisor por correo electrónico que el contenido está preparado para revisarlo, se dirige a la pestaña **disposición** de **Administración de registros** en el centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos tiene la etiqueta de retención en espera de disposición y, a continuación, seleccionar una etiqueta de retención para ver todo el contenido con esa etiqueta.
 
-Después de seleccionar una etiqueta de retención, verá todas las coposiciones pendientes para esa etiqueta de la pestaña de **disposición pendiente** . Seleccione uno o más elementos en los que podrá elegir una acción y escriba un Comentario de justificación:
+Después de seleccionar una etiqueta de retención, verá todas las disposiciones pendientes para esa etiqueta en la pestaña de **disposición pendiente** . Seleccione uno o más elementos en los que puede elegir una acción y escriba un Comentario sobre la justificación:
 
 ![Opciones de disposición](../media/retention-disposition-options.png)
 
@@ -120,11 +120,11 @@ El contenido que espera una revisión de disposición se elimina solo después d
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
 > [!NOTE]
-> Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive. Verá la lista de etiquetas de retención que marcan contenido como registros para SharePoint y OneDrive en la sección disposición de la página Administración de registros en el centro de cumplimiento de Microsoft 365. En estas etiquetas, puede ver la lista de elementos de SharePoint y OneDrive que se eliminaron automáticamente o después de una revisión de disposición.
+> Se ha completado la implementación de la prueba de eliminación de registros en SharePoint y OneDrive.
 >
-> La prueba de eliminación de registros de Exchange todavía no está activa. Cuando este lanzamiento se inicie y una vez que se haya completado, actualizaremos esta nota.
+> Se acaba de empezar a implementar la prueba de la eliminación de los registros de Exchange. Cuando se complete este lanzamiento, actualizaremos esta nota.
 
-Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que se eliminan automáticamente. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
+Use la pestaña **disposición** de la página **Administración de registros** para identificar los registros que ya se han eliminado, ya sea automáticamente o después de una revisión de disposición. Estos elementos muestran **los registros eliminados** en la columna **tipo** . Por ejemplo:
 
 ![Elementos eliminados sin una revisión de disposición](../media/records-disposed2.png)
 

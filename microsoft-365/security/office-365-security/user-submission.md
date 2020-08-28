@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo electrónico no deseado y suplantación de identidad que son notificados por los usuarios.
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866936"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294758"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Especificar un buzón para envíos de usuarios de correo no deseado y mensajes de suplantación de identidad en Exchange Online
 
@@ -47,10 +47,10 @@ La entrega de mensajes de usuario que se han informado a un buzón de correo per
 
   - Para modificar la configuración de los envíos de usuario, debe ser miembro de uno de los siguientes grupos de roles:
 
-    - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+    - **[Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure ad y administración de la **organización** o **Administrador de seguridad** y en el centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
     - **Administración de la organización** o **Administración de higiene** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-  - Para obtener acceso de solo lectura a los envíos de usuario, debe ser miembro de uno de los siguientes grupos de roles:
+  - Para obtener acceso de solo lectura a los envíos de usuario, debe ser miembro de los dos grupos de roles siguientes:
 
     - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
     - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).

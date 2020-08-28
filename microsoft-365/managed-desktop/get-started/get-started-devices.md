@@ -1,5 +1,5 @@
 ---
-title: Prepare a los usuarios para que usen los dispositivos
+title: Prepare a los usuarios para que usen dispositivos
 description: ''
 keywords: Escritorio administrado por Microsoft, dispositivo, introducción, Microsoft 365
 ms.service: m365-md
@@ -9,36 +9,36 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ab04fb0523d44dd04a002ab9fbf095b88b28fb31
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f0726215c3bad5616882588360703e218bfaab4
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602867"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289452"
 ---
-# <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen los dispositivos
+# <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen dispositivos
 
-Una vez que un dispositivo de escritorio administrado de Microsoft se encuentra en manos del usuario final, comenzar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube mientras el usuario completa la configuración. 
+Una vez que un dispositivo de escritorio administrado de Microsoft se encuentra en manos del usuario, empezar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube mientras el usuario completa la configuración. 
  
 Para que esto sea aún más fácil, ofrecemos una guía que dirige a los usuarios a través de la configuración inicial y proporciona recursos de ayuda para la configuración y para usarlos más adelante, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, se distribuye la guía directamente a los usuarios junto con el dispositivo. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan compatibilidad alternativa para sus usuarios.
 
 ## <a name="to-prepare-the-guide"></a>Para preparar la guía
 
 1. Descargue la versión adecuada para su organización:
-- [Microsoft Managed Desktop: Introducción al dispositivo (obtener versión de ayuda)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) : Use esta versión si los usuarios finales usarán el sistema de soporte de Microsoft.
-- [Escritorio administrado por Microsoft:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) Introducción al dispositivo: Use esta versión si los usuarios finales *no* van a usar el sistema de soporte de Microsoft.
+- [Microsoft Managed Desktop: Introducción al dispositivo (obtener versión de ayuda)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) : Use esta versión si los usuarios van a usar el sistema de soporte de Microsoft.
+- [Escritorio administrado por Microsoft:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) Introducción al dispositivo: Use esta versión si los usuarios *no* van a usar el sistema de soporte de Microsoft.
 2. Use cualquier aplicación capaz de abrir archivos PDF para rellenar los detalles relevantes para su organización:
     - El nombre de la red a la que deben conectarse los usuarios para continuar con el programa de instalación (paso 3 de la guía)
     - El nombre de la cuenta de inquilino de Azure de su organización (paso 4 de la guía)
     - Información de contacto del soporte técnico de TI interno de su organización (parte superior de la segunda página)
-3. Guarde el PDF editado y, a continuación, distribúyalo a sus usuarios finales. 
+3. Guarde el PDF editado y, a continuación, distribúyalo a sus usuarios. 
 
 ## <a name="ready-to-use-guide"></a>"Guía lista para usar"
 
 También proporcionamos una versión más genérica de la guía para aquellas organizaciones que no necesitan personalizarla. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan compatibilidad alternativa para sus usuarios. 
 
-- [Microsoft Managed Desktop: Introducción al dispositivo (obtener versión de la ayuda-listo para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) : Use esta versión si los usuarios finales usarán el sistema de soporte de Microsoft.
-- [Microsoft Managed Desktop: Introducción a su dispositivo (listo para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) : Use esta versión si los usuarios finales *no* van a usar el sistema de soporte de Microsoft.
+- [Microsoft Managed Desktop: Introducción al dispositivo (obtenga una versión de ayuda lista para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) : Use esta versión si los usuarios usarán el sistema de soporte de Microsoft.
+- [Microsoft Managed Desktop: Introducción a su dispositivo (listo para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) : Use esta versión si los usuarios *no* van a usar el sistema de soporte de Microsoft.
 
 En este punto, está listo para continuar con la implementación de aplicaciones:
 

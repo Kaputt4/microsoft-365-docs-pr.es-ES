@@ -22,16 +22,18 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Realice una copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar los planes de Microsoft 365.
-ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1158a98fc35c586ae900ef64579b52b9d64a85e6
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818536"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294722"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar Microsoft 365 para planes de empresa
 
 Si un usuario cambia a otra suscripción que tiene menos servicios relacionados con datos o un usuario abandona la organización, se puede descargar una copia de los datos que se almacenan en Microsoft 365 antes de cambiar a la nueva suscripción.
+
+Si va a mover un usuario a una suscripción que tiene los mismos servicios o más, no es necesario que realice una copia de seguridad de los datos del usuario. Consulte [mover usuarios a una suscripción diferente](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription).
   
 ## <a name="save-a-copy-of-outlook-information"></a>Guardar una copia de la información de Outlook
 
@@ -62,7 +64,7 @@ De forma predeterminada, la dirección URL del sitio web del grupo tiene el sigu
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-donde _\<orgDomain\>_ es la dirección URL de la organización.
+donde  _\<orgDomain\>_ es la dirección URL de la organización.
   
 Por ejemplo, si el dominio de la organización es contoso.onmicrosoft.com, la dirección URL directa del sitio de grupo sería https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx .
   

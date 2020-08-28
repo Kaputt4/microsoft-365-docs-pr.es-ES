@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar los datos de los empleados desde el sistema de recursos humanos de la organización (HR) a Microsoft 365. Esto le permite usar datos de recursos humanos en las directivas de administración de riesgos de Insider para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527648"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289821"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurar un conector para importar datos de recursos humanos en el gobierno de Estados Unidos (versión preliminar)
 
@@ -38,15 +38,15 @@ Puede configurar un conector de datos en el centro de cumplimiento de Microsoft 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: crear una aplicación en Azure Active Directory
 
-El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (AAD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3. La creación de esta aplicación permitirá que AAD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de AAD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso consiste en crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de RRHH que cree en el paso 3. La creación de esta aplicación permitirá que Azure AD autentique el conector de RRHH cuando se ejecute e intente acceder a su organización. Esta aplicación también se usará para autenticar el script que ejecutó en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta aplicación de Azure AD, asegúrese de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- IDENTIFICADOR de la aplicación AAD (también denominado identificador de *aplicación* o identificador de *cliente*)
+- IDENTIFICADOR de la aplicación de Azure AD (también denominado identificador de *aplicación* o *identificador de cliente*)
 
-- Secreto de la aplicación AAD (también denominado *secreto de cliente*)
+- Secreto de la aplicación de Azure AD (también denominado *secreto de cliente*)
 
 - Identificador de inquilino (también denominado *identificador de directorio*)
 
-Para obtener instrucciones paso a paso para crear una aplicación en AAD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Para obtener instrucciones paso a paso para crear una aplicación en Azure AD, vea [registrar una aplicación con la plataforma de identidad de Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Paso 2: preparar un archivo CSV con los datos de recursos humanos
 
@@ -83,7 +83,7 @@ El siguiente paso es crear un conector de recursos humanos en el centro de cumpl
 
 4. En la página **credenciales de autenticación** , realice lo siguiente y, a continuación, haga clic en **siguiente**:
 
-   a. Escriba o pegue el identificador de la aplicación de AAD para la aplicación de Azure que creó en el paso 1.
+   a. Escriba o pegue el identificador de aplicación de Azure AD para la aplicación de Azure que ha creado en el paso 1.
 
    b. Escriba un nombre para el conector de recursos humanos.
 
@@ -140,8 +140,8 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
    |**Parámetro**|**Descripción**
    |:-----|:-----|:-----|
    |`tenantId`|Este es el identificador de la organización de Microsoft 365 que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la hoja de **información general** del centro de administración de Azure ad. Se usa para identificar la organización.|
-   |`appId` |Este es el identificador de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. | 
-   |`appSecret`|Este es el secreto de la aplicación de AAD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
+   |`appId` |Este es el identificador de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a la organización de 365 de Microsoft. |
+   |`appSecret`|Este es el secreto de la aplicación de Azure AD para la aplicación que ha creado en Azure AD en el paso 1. También se usa para la autenticación.|
    |`jobId`|Se trata del identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Se usa para asociar los datos de recursos humanos cargados en la nube de Microsoft con el conector de recursos humanos.|
    |`csvFilePath`|Esta es la ruta de acceso del archivo CSV (que se almacena en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso al archivo; de lo contrario, use comillas simples.|
    |||
@@ -153,6 +153,9 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
     ```
 
    Si la carga se realiza correctamente, el script muestra el mensaje de **carga correcta** .
+
+   > [!NOTE]
+   > Si tiene problemas al ejecutar el comando anterior debido a las directivas de ejecución, consulte [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) y [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) para obtener instrucciones sobre cómo configurar las directivas de ejecución.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Paso 5: supervisar el conector de recursos humanos
 

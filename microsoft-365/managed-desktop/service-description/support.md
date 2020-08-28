@@ -1,17 +1,17 @@
 ---
 title: Soporte para escritorio administrado de Microsoft
 description: ''
-keywords: Escritorio administrado de Microsoft, Microsoft 365, Service, Documentation
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632006"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289786"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Soporte para escritorio administrado de Microsoft
 
@@ -27,7 +27,7 @@ Los clientes pueden ponerse en contacto con Microsoft Managed Desktop Operations
 La compatibilidad de escritorio administrada de Microsoft incluye:
 
 - Un equipo de ingenieros dedicados a los dispositivos de escritorio administrados por Microsoft
-- Opciones de soporte para usuarios finales con dispositivos de escritorio administrados por Microsoft
+- Opciones de soporte para usuarios con dispositivos de escritorio administrados por Microsoft
 - Concede acceso administrativo limitado a los dispositivos de escritorio administrados por Microsoft para los ingenieros que administran dispositivos de escritorio administrados por Microsoft 
 
 Productos compatibles:
@@ -48,4 +48,4 @@ Detalles de compatibilidad:
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Obtenga información sobre cómo pueden obtener soporte los administradores de ti](../working-with-managed-desktop/admin-support.md)
-- [Obtenga información sobre cómo los usuarios finales pueden obtener soporte técnico](../working-with-managed-desktop/end-user-support.md)
+- [Obtener información sobre cómo pueden obtener soporte los usuarios](../working-with-managed-desktop/end-user-support.md)

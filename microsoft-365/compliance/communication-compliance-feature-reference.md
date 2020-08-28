@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fe8e01e24f38ddd62649349575bd38ec37ccae4
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 1aaa73fdc56662335904cbaa152429ea90d6bb08
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282678"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289359"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de la característica de cumplimiento de comunicación
 
@@ -49,19 +49,39 @@ Las plantillas de Directiva son opciones de directiva predefinidas que puede usa
 
 ## <a name="permissions-preview"></a>Permisos (versión preliminar)
 
-Hay cinco funciones que se usan para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365, debe tener asignado el rol de administrador de *cumplimiento de comunicaciones* .
+>[!Important]
+>De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Los roles asignados en este paso son necesarios antes de que se pueda tener acceso a las características de cumplimiento de la comunicación.
 
-En función de cómo desee administrar las directivas y alertas de comunicación, tendrá que crear uno o más grupos de roles nuevos para los administradores, revisores e investigadores. Tiene la opción de asignar usuarios a grupos de roles específicos para administrar distintos conjuntos de características de cumplimiento de comunicaciones. O bien, puede decidir crear un grupo de roles y asignar todos los roles de cumplimiento de comunicaciones al grupo. Cree un solo grupo de roles o varios grupos para adecuarlos mejor a sus requisitos de administración de cumplimiento.
+Hay cinco grupos de roles usados para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a los grupos de roles de *cumplimiento normativo de comunicaciones* o *Administración cumplimiento de comunicaciones* . Para obtener acceso y administrar las características de cumplimiento de comunicaciones tras la configuración inicial, los usuarios deben pertenecer al menos a un grupo de roles de cumplimiento de la comunicación.
 
-Elija entre estas opciones de rol al configurar los grupos de funciones de cumplimiento de la comunicación:
+En función de cómo desee administrar las directivas y alertas de comunicación, deberá asignar usuarios a grupos de roles específicos. Tiene la opción de asignar usuarios con responsabilidades de cumplimiento diferentes a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O bien, puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de funciones de *cumplimiento de comunicaciones* . Use un grupo de roles único o varios grupos de roles para ajustarse mejor a los requisitos de administración de cumplimiento.
+
+Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
-| **Administrador de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones del grupo de roles. Los usuarios asignados a esta función no pueden ver los mensajes de alerta. |
-| **Análisis de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
-| **Investigación de cumplimiento en la comunicación** | Los usuarios que tienen asignado este rol pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de exhibición de documentos electrónicos avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
-| **Visor de cumplimiento de comunicaciones** | Los usuarios a los que se les asigna esta función pueden tener acceso a todos los widgets de informes en la Página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
-| **Administración de casos de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden administrar casos y actuar en alertas. Este rol es necesario para cuando se crean grupos de roles personalizados para administradores, analistas e investigadores. Los grupos personalizados para visores no necesitan esta función asignada. |
+| **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
+| **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
+| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a actuar como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Investigador de cumplimiento de la comunicación** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de la comunicación. Los usuarios asignados a este grupo de roles pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de eDiscovery avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a administrar los informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes en la página de inicio de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
+
+### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>Para organizaciones que usan los grupos de roles y permisos originales
+
+La nueva estructura de grupo de roles reemplaza la estructura de grupo de roles inicial para el cumplimiento de la comunicación. Para las organizaciones que ya usan el cumplimiento de las comunicaciones, debe tener asignado el rol de administrador de revisión de supervisión para empezar con el cumplimiento de la comunicación en el centro de cumplimiento de Microsoft 365. Además, tenía que crear un nuevo grupo de roles para revisores con el administrador de revisión de supervisión, la administración de casos, el administrador de cumplimiento y la revisión de roles para investigar y corregir mensajes con coincidencias de directivas. Básicamente, todos los administradores y revisores estaban en un solo grupo de roles y todos tenían los mismos permisos de acceso y administración. Con las últimas actualizaciones del cumplimiento de comunicaciones, debe planear la migración de la estructura de grupo de roles anterior a la nueva estructura de grupos de roles. Se eliminará la compatibilidad con la estructura de grupo de roles anterior.
+
+Para ayudarle en la planeación de la migración, tenga en cuenta el siguiente ejemplo. Actualmente tiene tres tipos de usuarios en la organización, administradores de ti, clasificaciones y revisores. Estos tres tipos de usuarios se encuentran en la estructura de grupo de roles anterior y son todos los miembros de un único grupo de roles que tienen asignadas las siguientes funciones:
+
+- Administrador de revisión de supervisión
+- Administración de casos
+- Administrador de cumplimiento
+- Revisar
+
+Para actualizar los roles de estos usuarios para la nueva estructura de grupo de roles y separar los permisos de acceso y de administración de los usuarios, puede considerar tres grupos nuevos y las nuevas asignaciones de grupos de roles asociadas:
+
+- **Administradores de ti**: asignados al nuevo grupo de roles de *Administración de cumplimiento de comunicaciones* .
+- **Clasificación**: asignada al grupo de funciones *Analista de cumplimiento de comunicaciones* .
+- **Revisores**: asignados al nuevo grupo de roles de *investigador de cumplimiento de comunicaciones* .
 
 ## <a name="supervised-users"></a>Usuarios supervisados
 
@@ -150,7 +170,7 @@ Para obtener más información acerca de los detalles de información confidenci
 
 ### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
-Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100 KB de términos (compresión posterior) en el Diccionario y admiten cualquier idioma. El límite de inquilino también es de 100 KB tras la compresión. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de cumplimiento de la comunicación y pueden originarse a partir de un archivo (como una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md). Use diccionarios personalizados cuando necesite admitir términos o idiomas específicos de la organización y las directivas.
+Configure diccionarios de palabras clave personalizados (o léxicos) para proporcionar una administración sencilla de palabras clave específicas de la organización o del sector. Los diccionarios de palabras clave admiten hasta 100 KB de términos (posteriores a la compresión) en el Diccionario y admiten cualquier idioma. El límite del espacio empresarial es también de 100 KB tras la compresión. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de cumplimiento de la comunicación y pueden originarse a partir de un archivo (como una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md). Use diccionarios personalizados cuando necesite admitir términos o idiomas específicos de la organización y las directivas.
 
 ### <a name="classifiers"></a>Clasificadores
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866924"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289668"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qué llega a la puntuación segura de Microsoft
 
@@ -30,9 +30,8 @@ Estamos realizando algunos cambios en un futuro próximo para hacer que [Microso
 
 ## <a name="proposed-changes"></a>Cambios propuestos
 
-Es posible que estos cambios lleguen a su puntuación segura de Microsoft pronto, en función de su licencia. Para obtener más información sobre los cambios recientes, vea [what's New in Secure score de Microsoft](microsoft-secure-score-whats-new.md)
-
-- Cambiar la puntuación máxima de 7 a 8 para la acción de mejora de Azure Active Directory denominada "habilitar la Directiva para bloquear la autenticación heredada"
+### <a name="september-2020"></a>Septiembre de 2020
+- No se ha planeado ningún cambio
 
 ## <a name="related-resources"></a>Recursos relacionados
 
