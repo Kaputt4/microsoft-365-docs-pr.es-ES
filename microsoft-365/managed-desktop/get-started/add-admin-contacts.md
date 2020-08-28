@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529808"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289266"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -42,7 +42,7 @@ Los contactos de administrador deben ser la mejor persona o grupo que pueda resp
 Empaquetado de aplicaciones | Solución de problemas de empaquetado de aplicaciones
 Dispositivos | Estado del dispositivo, solución de problemas con dispositivos de escritorio administrados por Microsoft
 Seguridad | Solución de problemas de seguridad de los dispositivos de escritorio administrados por Microsoft
-Departamento de soporte técnico de ti | en los casos en los que el personal de soporte técnico pasa a través de los vales de usuario final fuera de las áreas de soporte técnico de Microsoft administradas 
+Departamento de soporte técnico de ti | en los casos en que el personal de soporte técnico pasa por encima de los vales de usuario fuera de las áreas de soporte técnico de Microsoft administrado 
 Otros | Para problemas no cubiertos por otras áreas
 
 **La persona que elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones en su entorno de escritorio administrado por Microsoft.** Cuando incorpore su entorno de escritorio administrado de Microsoft, se le pedirá que agregue contactos para el Departamento de soporte técnico y la seguridad locales. 

@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f11c7a4aa69c96232a33c565e7bf20d04b96d1f7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529976"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289132"
 ---
 # <a name="app-control"></a>Control de aplicaciones
 
@@ -24,7 +24,7 @@ El control de aplicaciones es un procedimiento de seguridad opcional en el escri
 Microsoft Managed Desktop simplifica la administración de las directivas de control de aplicaciones mediante la creación de una directiva de base que permite escenarios de productividad principales. Puede ampliar la confianza a los firmantes adicionales específicos de las aplicaciones y los scripts de su entorno. 
 
 
-Cualquier tecnología de seguridad requiere un equilibrio entre la experiencia del usuario, la seguridad y el costo. El control de aplicaciones reduce la amenaza de software malintencionado en su entorno, pero hay consecuencias para el usuario final y acciones adicionales para el administrador de ti.
+Cualquier tecnología de seguridad requiere un equilibrio entre la experiencia del usuario, la seguridad y el costo. El control de aplicaciones reduce la amenaza de software malintencionado en su entorno, pero hay consecuencias para el usuario y acciones adicionales para su administrador de ti.
 
 **Seguridad adicional:**
 
@@ -73,7 +73,7 @@ Esta directiva crea registros para registrar si una aplicación o script estarí
 ### <a name="enforced-policy"></a>Directiva forzada
 Esta directiva impide que se ejecuten aplicaciones y scripts que no sean de confianza y crea registros siempre que se bloquee una aplicación o un script. Las directivas aplicadas impiden que los usuarios estándar ejecuten aplicaciones o scripts almacenados en directorios de escritura del usuario.
 
-Se aplica una directiva de auditoría a los dispositivos del grupo de prueba para que pueda usarlos para validar si hay alguna aplicación que causará problemas. Todos los demás grupos (primero, rápido y amplio) usan una directiva obligatoria, por lo que los usuarios finales de esos grupos no podrán ejecutar aplicaciones o scripts que no sean de confianza.
+Se aplica una directiva de auditoría a los dispositivos del grupo de prueba para que pueda usarlos para validar si hay alguna aplicación que causará problemas. Todos los demás grupos (primero, rápido y amplio) usan una directiva obligatoria, por lo que los usuarios de esos grupos no podrán ejecutar aplicaciones o scripts que no sean de confianza.
 
 
 

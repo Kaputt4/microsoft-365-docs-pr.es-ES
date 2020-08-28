@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597586"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289121"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -57,69 +57,57 @@ Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la admi
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de comunicaciones. Los roles asignados en este paso son necesarios antes de que se pueda tener acceso a las características de cumplimiento de la comunicación.
 
-Hay cinco funciones que se usan para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe tener asignado el rol de administrador de *cumplimiento de comunicaciones* .
+Hay cinco grupos de roles usados para configurar los permisos para administrar las características de cumplimiento de comunicaciones. Para que el cumplimiento de la **comunicación** esté disponible como una opción de menú en el centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a los grupos de roles de *cumplimiento normativo de comunicaciones* o *Administración cumplimiento de comunicaciones* . Para obtener acceso y administrar las características de cumplimiento de comunicaciones tras la configuración inicial, los usuarios deben pertenecer al menos a un grupo de roles de cumplimiento de la comunicación.
 
-En función de cómo desee administrar las directivas y alertas de comunicación, tendrá que crear uno o más grupos de roles nuevos para los administradores, revisores e investigadores. Tiene la opción de asignar usuarios a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O bien, puede decidir crear un grupo de roles y asignar todos los roles de cumplimiento de comunicaciones al grupo. Cree un grupo de roles único o varios grupos de roles que se ajusten mejor a los requisitos de administración de cumplimiento.
+En función de cómo desee administrar las directivas y alertas de comunicación, deberá asignar usuarios a grupos de roles específicos. Tiene la opción de asignar usuarios con responsabilidades de cumplimiento diferentes a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicaciones. O bien, puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de funciones de *cumplimiento de comunicaciones* . Use un grupo de roles único o varios grupos de roles para ajustarse mejor a los requisitos de administración de cumplimiento.
 
-Elija entre estas opciones de rol al configurar los grupos de funciones de cumplimiento de la comunicación:
+Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
 |**Rol**|**Permisos de funciones**|
 |:-----|:-----|
-| **Administrador de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones del grupo de roles. Los usuarios asignados a esta función no pueden ver los mensajes de alerta. |
-| **Análisis de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
-| **Investigación de cumplimiento en la comunicación** | Los usuarios que tienen asignado este rol pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de exhibición de documentos electrónicos avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
-| **Visor de cumplimiento de comunicaciones** | Los usuarios a los que se les asigna esta función pueden tener acceso a todos los widgets de informes en la Página principal de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
-| **Administración de casos de cumplimiento de comunicaciones** | Los usuarios que tienen asignado este rol pueden administrar casos y actuar en alertas. Este rol es necesario para cuando se crean grupos de roles personalizados para administradores, analistas e investigadores. Los grupos personalizados para visores no necesitan esta función asignada. |
+| **Cumplimiento de la comunicación** | Use este grupo de roles para administrar el cumplimiento de la comunicación de su organización en un único grupo. Al agregar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados, puede configurar los permisos de cumplimiento de comunicaciones en un único grupo. Este grupo de roles contiene todos los roles de permisos de cumplimiento de comunicaciones. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de la comunicación y es una buena opción para las organizaciones que no necesitan permisos separados definidos para grupos de usuarios independientes. |
+| **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de comunicaciones y posteriormente para separar los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar las directivas de cumplimiento de la comunicación, la configuración global y las asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver los mensajes de alerta. |
+| **Analista de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a actuar como analistas de cumplimiento de comunicaciones. Los usuarios asignados a este grupo de roles pueden ver las directivas en las que se asignan como revisores, ver los metadatos de los mensajes (no el contenido del mensaje), remitir a otros revisores o enviar notificaciones a los usuarios. Los analistas no pueden resolver alertas pendientes. |
+| **Investigador de cumplimiento de la comunicación** | Use este grupo para asignar permisos a los usuarios que actuarán como investigadores de cumplimiento de la comunicación. Los usuarios asignados a este grupo de roles pueden ver el contenido y los metadatos de los mensajes, escalar a revisores adicionales, escalar a un caso de eDiscovery avanzado, enviar notificaciones a los usuarios y resolver la alerta. |
+| **Visor de cumplimiento de comunicaciones** | Use este grupo para asignar permisos a los usuarios que van a administrar los informes de comunicación. Los usuarios asignados a este grupo de roles pueden tener acceso a todos los widgets de informes en la página de inicio de cumplimiento de comunicaciones y pueden ver todos los informes de cumplimiento de comunicaciones. |
 
-### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Opción 1: crear un nuevo grupo de roles con todos los roles de cumplimiento de la comunicación
-
-1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
-
-2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
-
-3. Seleccione **Crear**.
-
-4. En el campo **nombre** , asigne un nombre descriptivo al nuevo grupo de roles. Seleccione **Siguiente**.
-
-5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque las casillas de verificación de los roles siguientes:
-
-    - Administrador de cumplimiento de comunicaciones
-    - Análisis de cumplimiento de comunicaciones
-    - Investigación de cumplimiento en la comunicación
-    - Visor de cumplimiento de comunicaciones
-    - Administración de casos de cumplimiento de comunicaciones
-
-    ![Roles de cumplimiento de comunicaciones](../media/communication-compliance-case-roles.png)
-
-6. Seleccione **Agregar** y **listo**y, después, haga clic en **siguiente** para continuar.
-
-7. Seleccione **elegir miembros** y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos que desee que creen directivas y administre los mensajes con coincidencias de directivas y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
-
-8. Seleccione **Crear grupo de funciones** para finalizar.
-
-### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Opción 2: crear nuevos grupos de roles con diferentes roles de cumplimiento de comunicación
-
-Cree varios grupos de roles para segmentar el acceso y las responsabilidades del cumplimiento de comunicaciones entre los distintos usuarios de la organización. Para cada nuevo grupo de roles, asignará diferentes roles de cumplimiento de comunicaciones.
+### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Opción 1: asignar todos los usuarios de cumplimiento al grupo de funciones de cumplimiento de comunicaciones
 
 1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
 
 2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
-3. Seleccione **Crear**.
+3. Seleccione el grupo de funciones *cumplimiento de comunicaciones* y, después, seleccione **Editar Grupo de roles**.
 
-4. En el campo **nombre** , asigne un nombre descriptivo al nuevo grupo de roles. Seleccione **Siguiente**.
+4. Seleccione **elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
 
-5. Seleccione **elegir roles** y, después, haga clic en **Agregar**. Marque la casilla de verificación de los roles de cumplimiento de comunicaciones que desee asignar a este grupo. Por ejemplo, si este grupo de roles es para los analistas de cumplimiento de su organización, debe seleccionar los roles de *Administración de casos* de *análisis* y cumplimiento normativo de comunicaciones. Si este grupo de roles es para investigadores de cumplimiento, debe seleccionar los roles de administración de *casos* de investigación de cumplimiento de *comunicaciones* y de cumplimiento de comunicaciones.
+5. Seleccione **Agregar** y, a continuación, marque la casilla para todos los usuarios que quiera agregar al grupo de funciones *cumplimiento de comunicaciones* .
 
-    ![Roles de cumplimiento de comunicaciones](../media/communication-compliance-analysts-role-group.png)
+6. Seleccione **Agregar**y haga clic en **listo**.
 
-6. Seleccione **Agregar** y **listo**y, después, haga clic en **siguiente** para continuar.
+7. Seleccione **Guardar** para agregar los usuarios al grupo de roles. Seleccione **cerrar** para completar los pasos
 
-7. Seleccione **elegir miembros** y, a continuación, seleccione **Agregar**. Marque la casilla de verificación para todos los usuarios y grupos que desee que creen directivas y administre los mensajes con coincidencias de directivas y, a continuación, seleccione **Agregar** y **listo**. Seleccione **Siguiente**.
+### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>Opción 2: asignar usuarios a grupos de roles de cumplimiento de comunicaciones específicos
 
-8. Seleccione **Crear grupo de funciones** para finalizar.
+Use esta opción para asignar usuarios a grupos de roles específicos para segmentar el acceso y las responsabilidades del cumplimiento de comunicaciones entre los distintos usuarios de la organización.
 
-9. Cree grupos de roles de cumplimiento de comunicación adicionales según sea necesario.
+1. Inicie sesión [https://protection.office.com/permissions](https://protection.office.com/permissions) con las credenciales de una cuenta de administrador en la organización de Microsoft 365.
+
+2. En el centro de seguridad &amp; y cumplimiento, vaya a **permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
+
+3. Seleccione uno de los grupos de roles de cumplimiento de comunicaciones y, después, seleccione **Editar Grupo de roles**.
+
+4. Seleccione **elegir miembros** en el panel de navegación izquierdo y, a continuación, seleccione **Editar**.
+
+5. Seleccione **Agregar** y, a continuación, marque la casilla de verificación para todos los usuarios que desee agregar al grupo de roles.
+
+6. Seleccione **Agregar**y haga clic en **listo**.
+
+7. Seleccione **Guardar** para agregar los usuarios al grupo de roles.
+
+8. Seleccione el siguiente grupo de funciones cumplimiento de comunicaciones y, a continuación, repita los pasos 4-7 para cada grupo de roles necesario.
+
+9. Seleccione **cerrar** para completar los pasos.
 
 Para obtener más información acerca de los grupos de roles y los permisos, consulte [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -138,7 +126,7 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 | **Miembro de la Directiva** | **Grupos admitidos** | **Grupos no admitidos** |
 |:-----|:-----|:-----|
 |Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Microsoft 365 | Grupos de distribución dinámicos |
-| Reviewers | None | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
+| Reviewers | Ninguno | Grupos de distribución <br> Grupos de distribución dinámicos <br> Grupos de seguridad habilitados para correo |
   
 Cuando se asigna un grupo de distribución en la Directiva, la Directiva supervisa todos los mensajes de correo de cada usuario en el grupo de distribución. Cuando asigna un grupo de Microsoft 365 en la Directiva, la Directiva supervisa todos los mensajes de correo electrónico enviados a ese grupo, no los mensajes de correo electrónico individuales recibidos por cada miembro del grupo.
 
@@ -216,7 +204,7 @@ También puede optar por habilitar anonymization para los nombres de usuario mos
 
 4. Para habilitar anonymization, seleccione **Mostrar anonimizan versiones de los nombres de usuario**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Vaya a la ficha **plantillas de notificación** y, a continuación, seleccione **Crear plantilla de notificación**.
 

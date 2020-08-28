@@ -9,24 +9,24 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 0785d7ac12c7b027322338d9949a10ea30168b3b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529940"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289066"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Excepciones para el plan de servicios
 
-Microsoft Managed Desktop proporciona una lista de dispositivos de creados, una [configuración de dispositivo estándar](device-policies.md), requisitos de aplicaciones y algunas [Opciones configurables](../working-with-managed-desktop/config-setting-overview.md), todas diseñadas para proporcionar una experiencia segura, productiva y agradable a los usuarios finales. Es mejor permanecer siempre con el servicio tal y como se proporciona. Sin embargo, reconocemos que algunos detalles del servicio podrían no ajustarse exactamente a las necesidades de su organización. Si cree que debe modificar el servicio de alguna manera, es importante seguir los siguientes procesos para solicitar dichos cambios.
+Microsoft Managed Desktop proporciona una lista de dispositivos de creados, una [configuración de dispositivo estándar](device-policies.md), requisitos de aplicaciones y algunas [Opciones configurables](../working-with-managed-desktop/config-setting-overview.md), todas diseñadas para proporcionar una experiencia segura, productiva y agradable a los usuarios. Es mejor permanecer siempre con el servicio tal y como se proporciona. Sin embargo, reconocemos que algunos detalles del servicio podrían no ajustarse exactamente a las necesidades de su organización. Si cree que debe modificar el servicio de alguna manera, es importante seguir los siguientes procesos para solicitar dichos cambios.
  
 ## <a name="types-of-exceptions"></a>Tipos de excepciones
 
 Una excepción es cualquier adición o cambio de la configuración de base de escritorio administrada de Microsoft; los ejemplos abarcan desde la configuración de puertos USB hasta la implementación de un nuevo controlador de dispositivo. Agrupamos varias excepciones de la siguiente manera:
 
-|Tipo  |Description  |
+|Tipo  |Descripción  |
 |---------|---------|
-|Software de productividad     |  Software de primer plano necesario para los usuarios finales, restringido por los requisitos de la [aplicación](mmd-app-requirements.md)       |
+|Software de productividad     |  Software de primer plano necesario para los usuarios, restringido por los requisitos de la [aplicación](mmd-app-requirements.md)       |
 |Agentes de seguridad & VPN     |  Software usado para proteger, supervisar o cambiar el comportamiento del dispositivo o la red       |
 |Supervisión de la experiencia digital     |  Software que se usa para realizar un seguimiento de los datos en el dispositivo de un usuario para generar informes       |
 |Controladores de hardware o software     |   Controladores de dispositivo, restringidos por los requisitos de la [aplicación](mmd-app-requirements.md)      |
@@ -48,7 +48,7 @@ Envíe solicitudes a través del portal de administración de escritorio adminis
 Cuando se revisan las solicitudes de excepción, se evalúan estos factores en este orden:
  
 1.  Algunas aplicaciones y directivas que Microsoft administraba escritorio implementa en todos los dispositivos no son negociables, por lo que la solicitud no debe afectar a las mismas. Vea [configuración de dispositivos](device-policies.md) para obtener más información.
-2.  Es probable que se apruebe el software de productividad restringido requerido por un usuario final para realizar su trabajo. 
+2.  El software de productividad restringido requerido por un usuario para realizar su trabajo probablemente será aprobado. 
 3.  Si podemos cumplir sus requisitos con la tecnología de Microsoft, probablemente aprobamos su solicitud para un período de migración de excepciones de tres a doce meses (según el ámbito del proyecto).
 4.  Si no podemos cumplir sus requisitos con la tecnología de Microsoft, probablemente aprobará su solicitud a menos que infrinja una de las condiciones siguientes.  
 

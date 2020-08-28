@@ -1,5 +1,5 @@
 ---
-title: Establecer la configuración de protección de dispositivos para equipos con Windows 10
+title: Editar o crear la configuración de protección de dispositivos para equipos con Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,32 +22,30 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Obtenga información sobre la configuración predeterminada y otras opciones disponibles en Microsoft 365 for Business para proteger dispositivos Windows 10.
-ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger dispositivos Windows 10.
+ms.openlocfilehash: bd992113403c7134fb32bc6cced5bf216843241b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470855"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289163"
 ---
-# <a name="set-device-protection-settings-for-windows-10-pcs"></a>Establecer la configuración de protección de dispositivos para equipos con Windows 10
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos para equipos con Windows 10
 
 Este artículo se aplica a Microsoft 365 empresa Premium.
 
-## <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
+Una vez que haya establecido la configuración de protección de Windows predeterminada en la página de configuración, puede Agregar las nuevas que se aplican a todos los usuarios o a un conjunto de usuarios. También puede editar cualquiera de los que ha creado.
 
-Vea un vídeo sobre cómo proteger dispositivos Windows 10 con Microsoft 365 para empresas:
+## <a name="create-protection-settings-for-windows-10-devices"></a>Crear configuración de protección para dispositivos con Windows 10
+
+Vea un vídeo sobre cómo proteger dispositivos Windows 10 con Microsoft 365 empresa Premium:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-    
 2. En el panel de navegación izquierdo **Devices** , elija \> **Policies** \> **Agregar**directivas de dispositivos.
-  
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
-    
 4. En **Tipo de directiva**, elija **Configuración de dispositivos Windows 10**.
-    
 5. Expanda **Proteger dispositivos Windows 10** \> configure las opciones como quiera. Para obtener más información, consulte [configuración disponible](#available-settings). 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
@@ -55,9 +53,15 @@ Vea un vídeo sobre cómo proteger dispositivos Windows 10 con Microsoft 365 par
     ![Add policy pane with Windows 10 Device configuration selected](../media/fa9e2dc2-7eae-4c96-af34-765a1f641ecf.png)
   
 6. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, busque los grupos de seguridad que recibirán esta configuración \> **Seleccionar**.
-    
 7. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos. 
-    
+
+## <a name="edit-windows-10-protection-settings"></a>Editar la configuración de protección de Windows 10
+ 
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
+2. En el panel de navegación izquierdo, elija directivas de **dispositivos** \> **Policies** .
+1. Elija una directiva de dispositivo de Windows existente y, a continuación, **Editar**.
+1. Elija **Editar** junto a la configuración que desee cambiar y, a continuación, **Guardar**.
+
 ## <a name="available-settings"></a>Configuración disponible
 
 De forma predeterminada, todas las opciones de configuración están **activadas**. Estas son las opciones de configuración disponibles.

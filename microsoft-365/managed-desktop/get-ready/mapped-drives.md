@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530180"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289278"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
@@ -24,7 +24,7 @@ Muchos entornos empresariales tienen requisitos heredados para las unidades asig
 - Migre las unidades asignadas que usa Teams para compartir archivos en SharePoint Online. 
 - Modernice o reemplace todas las aplicaciones que usan recursos compartidos de archivos locales para quitar ese requisito.
   
-La modernización de estos servicios permitirá la mejor experiencia del usuario final con el escritorio administrado de Microsoft. Los servicios de Microsoft FastTrack le pueden ayudar a modernizar su entorno con los servicios en la nube de Microsoft. Puede comprobar si es elegible para los servicios de FastTrack en los [servicios y planes elegibles](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) y, a continuación, póngase en contacto con ellos directamente para prepararse para el escritorio administrado por Microsoft. Para obtener información sobre la migración de OneDrive para la empresa o de SharePoint Online de FastTrack, consulte [migración de datos](https://docs.microsoft.com/fasttrack/o365-data-migration).
+La modernización de estos servicios permitirá la mejor experiencia de usuario con el escritorio administrado por Microsoft. Los servicios de Microsoft FastTrack le pueden ayudar a modernizar su entorno con los servicios en la nube de Microsoft. Puede comprobar si es elegible para los servicios de FastTrack en los [servicios y planes elegibles](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) y, a continuación, póngase en contacto con ellos directamente para prepararse para el escritorio administrado por Microsoft. Para obtener información sobre la migración de OneDrive para la empresa o de SharePoint Online de FastTrack, consulte [migración de datos](https://docs.microsoft.com/fasttrack/o365-data-migration).
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unidades asignadas en el escritorio administrado por Microsoft
  
