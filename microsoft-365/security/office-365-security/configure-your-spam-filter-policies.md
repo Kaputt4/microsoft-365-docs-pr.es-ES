@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
-ms.openlocfilehash: d2abc863468fe66de516e954a53253332f0ad0ee
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e27e32778f908e85fd4bf0b205e7b80fef798859
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827330"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255784"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -70,7 +70,7 @@ Para aumentar la eficacia del filtrado de correo no deseado, puede crear directi
     - **Lector de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
     - **Administración de la organización de solo visualización** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Para obtener la configuración recomendada para las directivas antimalware, consulte [Configuración de la directiva de correo no deseado de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Para saber la configuración recomendada para las directivas contra correo electrónico no deseado, consulte [Configuración de la directiva de correo no deseado de EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Uso del Centro de seguridad y cumplimiento para crear directivas contra correo no deseado
 
@@ -511,7 +511,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Uso de PowerShell para modificar directivas de filtro de correo no deseado
 
-Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de malware en PowerShell como cuando se crea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este tema.
+Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando rea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este tema.
 
 - El conmutador _MakeDefault_ que convierte la directiva especificada en la predeterminada (se aplica a todos los usuarios, siempre tiene la prioridad **Mínima** y no se puede eliminar) solo está disponible cuando se modifica una directiva de filtro de correo no deseado en PowerShell.
 
