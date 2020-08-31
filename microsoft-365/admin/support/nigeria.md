@@ -13,19 +13,19 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1db3deb6be37fc9b22f4de73e55e8f59e2c5d35b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: adce3f2525c92b8cee565f759a94081bc2f75231
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44393922"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306520"
 ---
 # <a name="contact-support-for-nigeria"></a>Póngase en contacto con el soporte para Nigeria
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-01 271 0156
+01 912 5070
 
 Seleccione la opción 9
 

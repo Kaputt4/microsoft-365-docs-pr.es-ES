@@ -20,12 +20,12 @@ search.appverid:
 description: Obtenga información sobre cómo actualizar desde una suscripción a Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694037"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308010"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización de una suscripción a Office 365 E4
 
@@ -130,7 +130,7 @@ Antes de continuar con el paso siguiente, es importante asegurarse de que todos 
 Puede usar el centro de administración de Microsoft 365 para reasignar licencias para un máximo de 20 usuarios a la vez. Para obtener información sobre cómo hacerlo, consulte [mover usuarios a una suscripción diferente](move-users-different-subscription.md).
 
 > [!TIP]
-> Si tiene muchos usuarios, puede [usar Office 365 PowerShell para asignar licencias de usuario de forma masiva](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+> Si tiene muchos usuarios, puede [usar Office 365 PowerShell para asignar licencias de usuario de forma masiva](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Paso 4: cancelar la suscripción a Office 365 E4
 

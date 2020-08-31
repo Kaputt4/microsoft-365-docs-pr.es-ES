@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Bluehost para Microsoft.
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400562"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307048"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Crear registros DNS en Bluehost para Microsoft
 
@@ -57,7 +57,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     |||||
     |:-----|:-----|:-----|:-----|
@@ -97,11 +97,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     |**Host Record**|**TTL**|**Tipo**|**Apunta a**|**Prioridad**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>**Nota:** Obtén tu \<*domain-key*\> cuenta de Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**Nota: ** Obtenga la \<*domain-key*\> desde su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Elija tipo en la lista desplegable](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -135,9 +135,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 4. En la sección registros de **A (host)** , busque la fila del registro de **detección automática** y, a continuación, seleccione **eliminar** para esa fila. 
     
     > [!IMPORTANT]
-    > Debe eliminar el registro de **detección automática** existente *antes* de agregar el registro de **detección automática** que necesita Microsoft. Bluehost no le permite mantener de forma simultánea dos registros **autodiscover**. 
+    > Debe eliminar el registro de **detección automática** existente  *antes*  de agregar el registro de **detección automática** que necesita Microsoft. Bluehost no le permite mantener de forma simultánea dos registros **autodiscover**. 
   
-    ![Seleccione eliminar.](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![Seleccione Eliminar](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. Seleccione **ACEPTAR**.
     
@@ -147,7 +147,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     En la página **Editor de zona DNS**, en el área **Agregar registro DNS**, en los cuadros del nuevo registro, escriba (o copie y pegue) los valores de la primera fila de la tabla siguiente. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     |**Host Record**|**TTL**|**Tipo**|**Apunta a**|
     |:-----|:-----|:-----|:-----|
@@ -155,7 +155,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |sip  <br/> |14400  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |14400  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |14400  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |
+    |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
     ![Crear el primer registro CNAME](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
@@ -173,7 +173,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
   
 1. Para empezar, vaya a su página de dominios en Bluehost a través de [este vínculo](https://my.bluehost.com/cgi/dm). Se le pedirá que inicie sesión primero .
     
@@ -185,7 +185,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
         
     |**Host Record**|**TTL**|**Tipo**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     En la página **Editor de zona DNS**, en el área **Agregar registro DNS**, en los cuadros del nuevo registro, escriba (o copie y pegue) los valores de la primera fila de la tabla siguiente. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     |**Servicio**|**Protocolo**|**Host**|**TTL**|**Tipo**|**Prioridad**|**Grosor**|**Puerto**|**Apunta a**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

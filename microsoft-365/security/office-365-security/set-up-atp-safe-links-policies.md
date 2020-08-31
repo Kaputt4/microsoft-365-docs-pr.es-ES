@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662259"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307766"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -51,7 +51,7 @@ Con los vínculos seguros ATP habilitados, si un usuario hace clic en un víncul
 
 - Asegúrese de que tiene los permisos necesarios. Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
-    |Función|Dónde y cómo se asigna|
+    |Role|Dónde y cómo se asigna|
     |---|---|
     |administrador global|La persona que se registra para comprar Microsoft 365 es un administrador global de forma predeterminada. (Para obtener más información, consulte [acerca de los roles de administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
     |Administrador de seguridad|Centro de administración de Azure Active Directory ( <https://aad.portal.azure.com> )|
@@ -59,7 +59,7 @@ Con los vínculos seguros ATP habilitados, si un usuario hace clic en un víncul
 
     Para obtener más información acerca de los roles y los permisos, consulte [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Asegúrese de que los clientes de Office estén configurados para usar la [autenticación moderna](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (esto es para la protección de vínculos seguros de ATP en documentos de Office).
+- Asegúrese de que los clientes de Office estén configurados para usar la [autenticación moderna](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (esto es para la protección de vínculos seguros de ATP en documentos de Office).
 
 - [Obtenga información sobre las opciones de directiva de vínculos seguros de ATP](#step-4-learn-about-atp-safe-links-policy-options) (en este artículo).
 

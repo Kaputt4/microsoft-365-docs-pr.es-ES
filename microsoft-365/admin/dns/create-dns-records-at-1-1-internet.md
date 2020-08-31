@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en 1&1 IONOS para Microsoft.
-ms.openlocfilehash: 983fba73a6f82308d6d1bcf706ff93d72b98976c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 10c135d8fdc1512f0b2c1b341f3524097d5f6494
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400598"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307156"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Crear registros DNS en 1&1 IONOS para Microsoft
 
@@ -62,7 +62,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:42)](https://docs.micro
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (Elija el valor **Tipo** de la lista desplegable). 
     
     ||||
     |:-----|:-----|:-----|
@@ -109,7 +109,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:22)](https://docs.micro
     
 4. En el área **configuración del dominio** , seleccione **Editar configuración DNS**.
     
-5. En la sección **registros MX** , en el área **intercambiador de correo (registro MX)** , seleccione **otro servidor de correo**.<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. En la sección **registros MX** , en el área **intercambiador de correo (registro MX)** , seleccione **otro servidor de correo**.<br/>(Es posible que tenga que desplazarse hacia abajo).<br/>![1 &amp; 1-BP-configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. Si ya aparecen registros MX en la lista, elimínelos seleccionando el registro y, después, presionando la tecla **Eliminar** del teclado.<br/>(Si no hay ningún registro MX en la lista, continúe con el paso siguiente).<br/>![1 &amp; 1-BP-configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -117,11 +117,11 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:22)](https://docs.micro
     
     |**MX 1**|**Prioridad**|
     |:-----|:-----|
-    | *\<domain-key\>*. mail.protection.outlook.com  <br/>  Nota: Obtén tu \<domain-key\> cuenta de Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  Nota: Obtén tu \<domain-key\> cuenta de Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 
     
     ![1 y 1-configurar 2 y 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Haga clic en **Guardar**.<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Haga clic en **Guardar**.<br/>(Es posible que tenga que desplazarse hacia abajo).<br/>![1 &amp; 1-BP-configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. En el cuadro de diálogo **Editar configuración DNS** , seleccione **sí**.<br/>![Selección de sí en el cuadro de diálogo Editar configuración DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -154,7 +154,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:57)](https://docs.micro
 
     |**Crear subdominio**|**Alias**|
     |:-----|:-----|
-    |autodescubrir  <br/> |autodiscover.outlook.com   | 
+    |autodiscover  <br/> |autodiscover.outlook.com   | 
 
     ![1 &amp; 1-BP-configure-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
@@ -170,7 +170,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:57)](https://docs.micro
     
     |**Crear subdominio**|**Alias**|
     |:-----|:-----|
-    |autodescubrir  <br/> |autodiscover.outlook.com   |
+    |autodiscover  <br/> |autodiscover.outlook.com   |
 
     ![1 &amp; 1-BP-configure-3-7](../../media/afac3118-3337-4f99-98dd-a7ca930230ce.png)
   
@@ -243,12 +243,12 @@ Los registros CNAME adicionales creados con el procedimiento siguiente habilitan
 |**Crear subdominio**|**Alias**|
 |:-----|:-----|
 |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |EnterpriseEnrollment-s.manage.microsoft.com  <br/> |
+|enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
   
 Siga los pasos siguientes o [vea el vídeo (empieza en 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
@@ -263,9 +263,9 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:09)](https://docs.micro
     
 4. En el área **configuración del dominio** , seleccione **Editar configuración DNS**.
     
-5. En la sección **registros txt y SRV** , seleccione **Agregar registro**. <br/>(You may have to scroll down.)
+5. En la sección **registros txt y SRV** , seleccione **Agregar registro**. <br/>(Es posible que tenga que desplazarse hacia abajo).
     
-6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
+6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Elija el valor **Tipo** de la lista desplegable). <br/>
     
     |**Tipo**|**Prefijo**|**Valor de nombre**|
     |:-----|:-----|:-----|
@@ -300,7 +300,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:51)](https://docs.micro
     
     |**Tipo**|**Servicio**|**Protocolo**|**Nombre**|**Host**|**Prioridad**|**Grosor**|**Puerto**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |_tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
+    |SRV  <br/> |sip  <br/> |_tls  <br/> |(Deje este campo en blanco).  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
     |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Deje este campo en blanco).  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
     ![1 &amp; 1-BP-configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)

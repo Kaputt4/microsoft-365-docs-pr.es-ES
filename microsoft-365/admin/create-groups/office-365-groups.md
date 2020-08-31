@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los grupos de 365 de Microsoft.
-ms.openlocfilehash: 6922e6bf8561d0600c25de9768669d90e959ff26
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387404"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307270"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Información general de los grupos de Microsoft 365 para administradores
 
@@ -62,7 +62,7 @@ Como administrador, puede:
 
 Si prefiere una forma más automatizada de administrar el ciclo de vida de los grupos de Microsoft 365, puede usar directivas de caducidad para que los grupos expiren en un intervalo de tiempo específico. Los propietarios del grupo recibirán un correo electrónico 30, 15 y 1 día antes de la expiración del grupo que les permite renovar fácilmente el grupo si sigue necesitando. Consulte: [Directiva de expiración de grupo 365 de Microsoft](office-365-groups-expiration-policy.md).
 
-Puede administrar los grupos desde el centro de administración de Microsoft 365 o mediante [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
+Puede administrar los grupos desde el centro de administración de Microsoft 365 o mediante [PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel).
 
 Si tiene muchos usuarios, como en una corporación o empresa grande, es posible que tenga muchos usuarios que crean grupos con varios fines. Se recomienda encarecidamente que revise [Plan for Governance en Microsoft 365 Groups](plan-for-groups-governance.md) para conocer los procedimientos recomendados.
 
@@ -76,7 +76,7 @@ Los siguientes límites se aplican a los grupos de Microsoft 365:
 |Groups a user can create|250|
 |Grupos que puede crear un administrador|Hasta el límite de inquilino predeterminado de 500 k|
 |Número de miembros|Más de 1.000, aunque solo 1.000 puede tener acceso a las conversaciones de grupo a la vez. <br>Es posible que los usuarios perciban retrasos al obtener acceso al calendario y a las conversaciones en grupos muy grandes en Outlook.|
-|Número de grupos a los que puede pertenecer un usuario|1.000|
+|Número de grupos a los que puede pertenecer un usuario|1,000|
 |Almacenamiento de archivos.|1 terabyte + 10 GB por usuario suscrito + almacenamiento adicional adquirido. Puede adquirir una cantidad ilimitada de almacenamiento adicional.|
 |Tamaño del buzón de grupo|50 GB|
 
@@ -120,6 +120,6 @@ Los grupos de Microsoft 365 funcionan con Azure Active Directory (AAD). Las cara
 
 [Actualizar listas de distribución a grupos de 365 de Microsoft](../manage/upgrade-distribution-lists.md)
 
-[Administración de grupos de Microsoft 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Administración de grupos de Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [Límites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

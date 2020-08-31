@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be86816c559d0ac1873618cd51baa2ac24fb2db8
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632101"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308079"
 ---
 # <a name="define-information-barrier-policies"></a>Definir directivas de barreras de información
 
@@ -62,7 +62,7 @@ Además de las [licencias y permisos necesarios](information-barriers.md#require
 - Datos del directorio Asegúrese de que la estructura de la organización se refleja en los datos del directorio. Para ello, asegúrese de que los atributos de la cuenta de usuario, como la pertenencia a grupos, el nombre del Departamento, etc., se rellenan correctamente en Azure Active Directory (o Exchange Online). Para obtener más información, consulte los siguientes recursos:
   - [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
   - [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
+  - [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 - Búsqueda de directorio con ámbito: antes de definir la Directiva de barrera de información de la primera información de su organización, debe [Habilitar la búsqueda de directorios de ámbito en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Espere al menos 24 horas después de habilitar la búsqueda de directorios de ámbito antes de configurar o definir directivas de barrera de información.
 
@@ -117,7 +117,7 @@ Además de la lista inicial de directivas, haga una lista de los segmentos de su
 Determine qué atributos de los datos del directorio de la organización va a usar para definir los segmentos. Puede usar *Department*, *memberOf*o cualquiera de los atributos admitidos. Asegúrese de que tiene valores en el atributo que ha seleccionado para los usuarios. [Vea la lista de atributos admitidos para las barreras de información](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Antes de continuar con la siguiente sección, asegúrese de que los datos del directorio tengan valores para atributos que puede usar para definir segmentos**. Si los datos del directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esta información antes de continuar con las barreras de la información. Para obtener ayuda, vea los siguientes recursos:<br/>- [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Antes de continuar con la siguiente sección, asegúrese de que los datos del directorio tengan valores para atributos que puede usar para definir segmentos**. Si los datos del directorio no tienen valores para los atributos que desea usar, las cuentas de usuario deben actualizarse para incluir esta información antes de continuar con las barreras de la información. Para obtener ayuda, vea los siguientes recursos:<br/>- [Configurar las propiedades de la cuenta de usuario con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definir segmentos con PowerShell
 
@@ -232,7 +232,7 @@ Las directivas de barrera de información no surten efecto hasta que las estable
 
 1. Use el cmdlet **Get-InformationBarrierPolicy** para ver una lista de las directivas que se han definido. Anote el estado y la identidad (GUID) de cada Directiva.
 
-    Consta`Get-InformationBarrierPolicy`
+    Consta `Get-InformationBarrierPolicy`
 
 2. Para establecer una directiva en estado activo, use el cmdlet **set-InformationBarrierPolicy** con un parámetro **Identity** y el parámetro **State** establecido en **activo**. 
 
@@ -244,7 +244,7 @@ Las directivas de barrera de información no surten efecto hasta que las estable
 
 3. Cuando termine de configurar las directivas de barrera de información para el estado activo, use el cmdlet **Start-InformationBarrierPoliciesApplication** en el centro de seguridad & cumplimiento.
 
-    Consta`Start-InformationBarrierPoliciesApplication`
+    Consta `Start-InformationBarrierPoliciesApplication`
 
     Después de ejecutar `Start-InformationBarrierPoliciesApplication` permitir 30 minutos para que el sistema inicie la aplicación de las directivas. El sistema aplica las directivas de usuario por usuario. En general, el sistema procesa aproximadamente 5.000 cuentas de usuario por hora.
 
@@ -254,11 +254,11 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 
 |Para ver este  |Haga esto  |
 |---------|---------|
-|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
-|Mismos     |Use el cmdlet **Get-OrganizationSegment** .<p>Consta`Get-OrganizationSegment` <p>Se mostrará una lista de todos los segmentos definidos para la organización.         |
-|Directivas de barrera de información     |Use el cmdlet **Get-InformationBarrierPolicy** . <p> Consta`Get-InformationBarrierPolicy` <p>Se mostrará una lista de las directivas de barrera de información definidas y su estado.       |
-|La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta`Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
-|Todas las aplicaciones de directiva de barrera de información|Utilizados`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
+|Cuentas de usuario     |Use el cmdlet **Get-InformationBarrierRecipientStatus** con parámetros Identity. <p>Consta `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>Ejemplo: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*. <p>(También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican.|
+|Mismos     |Use el cmdlet **Get-OrganizationSegment** .<p>Consta `Get-OrganizationSegment` <p>Se mostrará una lista de todos los segmentos definidos para la organización.         |
+|Directivas de barrera de información     |Use el cmdlet **Get-InformationBarrierPolicy** . <p> Consta `Get-InformationBarrierPolicy` <p>Se mostrará una lista de las directivas de barrera de información definidas y su estado.       |
+|La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta `Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
+|Todas las aplicaciones de directiva de barrera de información|Utilizados `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 

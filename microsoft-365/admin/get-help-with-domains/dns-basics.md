@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Obtenga información sobre los dominios y sus registros DNS asociados para ayudarle a administrar los dominios.
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079996"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306568"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 
@@ -188,7 +188,7 @@ Se necesitan varios registros DNS para que Microsoft 365 funcione con su dominio
   
 También puede [encontrar una lista de valores](information-for-dns-records.md) para configurar su dominio. Se incluyen directamente en el centro de administración de Microsoft 365. 
   
-Si está planificando una implementación, tal vez quiera revisar una lista de todos los registros DNS necesarios para Microsoft 365, sus funciones y valores de ejemplo. Consulte [Registros externos del sistema de nombres de dominio para Microsoft 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
+Si está planificando una implementación, tal vez quiera revisar una lista de todos los registros DNS necesarios para Microsoft 365, sus funciones y valores de ejemplo. Consulte [Registros externos del sistema de nombres de dominio para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records).
   
 ## <a name="how-can-i-learn-more"></a>¿Cómo puedo obtener más información?
 

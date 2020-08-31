@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo editar o quitar directivas para las barreras de información.
-ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637892"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307943"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Editar (o quitar) directivas de barrera de información
 
@@ -52,7 +52,7 @@ Los atributos de cuenta de usuario se usan para definir segmentos para que se pu
 
     |Sintaxis  |Ejemplo  |
     |---------|---------|
-    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>   (También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*.         |
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>   (También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>` )      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*.         |
 
 2. Determine qué atributo desea editar para los perfiles de cuenta de usuario. Consulte [atributos para las directivas de barrera de información](information-barriers-attributes.md) para obtener más información. 
 
@@ -60,7 +60,7 @@ Los atributos de cuenta de usuario se usan para definir segmentos para que se pu
 
     - Para editar una sola cuenta, vea [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea [Configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea [Configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
 ## <a name="edit-a-segment"></a>Edición de un segmento
 
@@ -68,7 +68,7 @@ Use este procedimiento para editar la definición de un segmento de usuario. Por
 
 1. Para ver todos los segmentos existentes, use el cmdlet **Get-OrganizationSegment** .
     
-    Consta`Get-OrganizationSegment`
+    Consta `Get-OrganizationSegment`
 
     Verá una lista de segmentos y detalles para cada uno, como tipo de segmento, su valor UserGroupFilter, que lo creó o modificó por última vez, GUID, etc.
 
@@ -87,15 +87,15 @@ Una vez finalizada la edición de segmentos de la organización, puede [definir]
 
 1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
 
-    Consta`Get-InformationBarrierPolicy`
+    Consta `Get-InformationBarrierPolicy`
 
     En la lista de resultados, identifique la Directiva que desea cambiar. Anote el GUID y el nombre de la Directiva.
 
 2. Use el cmdlet **set-InformationBarrierPolicy** con un parámetro **Identity** y especifique los cambios que desea realizar.
 
-    Ejemplo: Supongamos que se ha definido una directiva para bloquear el segmento de *investigación* para que no pueda comunicarse con los segmentos de *ventas* y *marketing* . La Directiva se definió mediante este cmdlet:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Ejemplo: Supongamos que se ha definido una directiva para bloquear el segmento de *investigación* para que no pueda comunicarse con los segmentos de *ventas* y *marketing* . La Directiva se definió mediante este cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
     
-    Supongamos que queremos cambiarla para que las personas del segmento de *investigación* solo puedan comunicarse con los usuarios del segmento de *recursos humanos* . Para realizar este cambio, usamos este cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Supongamos que queremos cambiarla para que las personas del segmento de *investigación* solo puedan comunicarse con los usuarios del segmento de *recursos humanos* . Para realizar este cambio, usamos este cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     En este ejemplo, hemos cambiado "SegmentsBlocked" por "SegmentsAllowed" y hemos especificado el segmento de *recursos humanos* .
 
@@ -105,7 +105,7 @@ Una vez finalizada la edición de segmentos de la organización, puede [definir]
 
 1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
 
-    Consta`Get-InformationBarrierPolicy`
+    Consta `Get-InformationBarrierPolicy`
 
     En la lista de resultados, identifique la Directiva que desea cambiar (o quitar). Anote el GUID y el nombre de la Directiva.
 
@@ -117,7 +117,7 @@ Una vez finalizada la edición de segmentos de la organización, puede [definir]
 
 3. Para aplicar los cambios, use el cmdlet **Start-InformationBarrierPoliciesApplication** .
 
-    Consta`Start-InformationBarrierPoliciesApplication`
+    Consta `Start-InformationBarrierPoliciesApplication`
 
     Se aplican los cambios, usuario por usuario, para la organización. Si su organización es grande, puede tardar 24 horas (o más) en completarse este proceso. (Como regla general, tarda aproximadamente una hora en procesar las cuentas de usuario de 5.000).
 
@@ -130,7 +130,7 @@ En este punto, se establecen una o varias directivas de barrera de información 
 
 1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
 
-    Consta`Get-InformationBarrierPolicy`
+    Consta `Get-InformationBarrierPolicy`
 
     En la lista de resultados, identifique la Directiva que desea quitar. Anote el GUID y el nombre de la Directiva. Asegúrese de que la Directiva está establecida en estado inactivo.
 
@@ -146,7 +146,7 @@ En este punto, se establecen una o varias directivas de barrera de información 
 
 4. Cuando haya terminado de quitar directivas, aplique los cambios. Para ello, use el cmdlet **Start-InformationBarrierPoliciesApplication** .
 
-    Consta`Start-InformationBarrierPoliciesApplication`
+    Consta `Start-InformationBarrierPoliciesApplication`
 
     Se aplican los cambios, usuario por usuario, para la organización. Si su organización es grande, puede tardar 24 horas (o más) en completarse este proceso.
 
@@ -156,7 +156,7 @@ Si, después de empezar a aplicar directivas de barrera de información, desea d
 
 1. Para ver el estado de la aplicación de directiva de barrera de información más reciente, use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
 
-    Consta`Get-InformationBarrierPoliciesApplicationStatus`
+    Consta `Get-InformationBarrierPoliciesApplicationStatus`
 
     Anote el GUID de la aplicación.
 

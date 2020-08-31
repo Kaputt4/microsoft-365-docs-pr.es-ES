@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas. '
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780570"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307294"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -120,7 +120,7 @@ Estos pasos son aplicables a una empresa con decenas de usuarios. Si tiene cient
 
 Use PowerShell. Lea esta publicación de Eyal Doron: [Administrar contraseñas con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Artículo relacionado: [Establecer las contraseñas de varias cuentas de usuario](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
+Artículo relacionado: [Establecer las contraseñas de varias cuentas de usuario](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
   
 Para obtener información general, consulte [PowerShell para administradores de Microsoft 365](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
@@ -137,7 +137,7 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
 ## <a name="related-articles"></a>Artículos relacionados
 <a name="bkmk_forgot"> </a>
   
-[Permitir que los usuarios restablezcan sus propias contraseñas](let-users-reset-passwords.md)
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](let-users-reset-passwords.md)
 
 [Establecer la contraseña de un usuario individual que nunca caduque](set-password-to-never-expire.md)
 

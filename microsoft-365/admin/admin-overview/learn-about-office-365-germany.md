@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Obtenga información sobre Office 365 Germany.
-ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386798"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307282"
 ---
 # <a name="learn-about-office-365-germany"></a>Obtenga información sobre Office 365 Alemania
 
@@ -45,7 +45,7 @@ Las ofertas de planes de Office 365 Germany están alineadas con las ofertas glo
   
 Los siguientes servicios y características están disponibles en algunos [planes de suscripción de Office 365 Germany](https://go.microsoft.com/fwlink/p/?linkid=839016). Vea también los [términos de servicios en línea](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46).
   
-- Microsoft 365 apps for Enterprise, Office 2016 y Office 2013<sup>1</sup>. Tenga en cuenta que Office 2013 requiere el [uso de la autenticación moderna de office 365 con clientes de Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
+- Microsoft 365 apps for Enterprise, Office 2016 y Office 2013<sup>1</sup>. Tenga en cuenta que Office 2013 requiere el [uso de la autenticación moderna de office 365 con clientes de Office](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
     
 - Exchange Online
     
@@ -93,7 +93,7 @@ Los siguientes servicios y características están disponibles en algunos [plane
 |-----|-----|
 |Portal de inicio de sesión  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Suscripciones, facturación y soporte técnico  <br/> |Asistencia basada en Alemania disponible en alemán e inglés para obtener información detallada, consulte [Contact Support for Business Products: ayuda para administradores](../contact-support-for-business-products.md).  <br/> |
-|Direcciones IP y URL  <br/> |Consulte [Puntos de conexión de Office 365 Germany](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints).  <br/> |
+|Direcciones IP y URL  <br/> |Consulte [Puntos de conexión de Office 365 Germany](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints).  <br/> |
 |Yammer  <br/> |No disponible.  <br/> |
 |Versiones de Office anteriores a Office 2013 o Microsoft 365 apps for Enterprise<sup>1</sup> <br/> |No compatible.  <br/> |
 |Office Lens  <br/> |No disponible.  <br/> |

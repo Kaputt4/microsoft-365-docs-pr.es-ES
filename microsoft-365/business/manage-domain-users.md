@@ -23,24 +23,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Sincronice los usuarios controlados por dominio con Microsoft 365 para empresas.
-ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9495d893eb6870ef7c417a78f921296bfc0e6705
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080064"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306457"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Sincronizar usuarios del dominio con Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. preparar la sincronización de directorios 
 
-Antes de sincronizar los usuarios y los equipos desde el dominio local de Active Directory, consulte [preparar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particular:
+Antes de sincronizar los usuarios y los equipos desde el dominio local de Active Directory, consulte [preparar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/prepare-for-directory-synchronization). En particular:
 
    - Asegúrese de que no existen duplicados en el directorio para los siguientes atributos: **mail**, **proxyAddresses**y **userPrincipalName**. Estos valores deben ser únicos y se deben quitar todos los duplicados.
    
    - Le recomendamos que configure el atributo **userPrincipalName** (UPN) para cada cuenta de usuario local de manera que coincida con la dirección de correo electrónico principal que corresponda al usuario con licencia de Microsoft 365. Por ejemplo: *Mary.Shelley@contoso.com* en lugar de *Mary@contoso. local*
    
-   - Si el dominio de Active Directory termina en un sufijo no enrutable como *. local* o *. LAN*, en lugar de un sufijo enrutable de Internet como *. com* o *. org*, ajuste primero el sufijo UPN de las cuentas de usuario locales como se describe en [preparar un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Si el dominio de Active Directory termina en un sufijo no enrutable como *. local* o *. LAN*, en lugar de un sufijo enrutable de Internet como *. com* o *. org*, ajuste primero el sufijo UPN de las cuentas de usuario locales como se describe en [preparar un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
 La **ejecución de IdFix** en el paso cuatro (4) que se muestra a continuación, también asegurará que su Active Directory local esté preparado para la sincronización de directorios.
 
@@ -50,7 +50,7 @@ Para sincronizar los usuarios, los grupos y los contactos de Active Directory lo
 
  1. En el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Seleccione **configuración** en el panel de navegación izquierdo.
 
- 2. En **Inicio de sesión y seguridad**, elija **Ver** en **sincronizar usuarios en el directorio de su organización**.
+ 2. En **Inicio de sesión y seguridad**, elija **Ver**  en **sincronizar usuarios en el directorio de su organización**.
 
  3. En la página **sincronizar usuarios desde el directorio de su organización** **, elija introducción**.
 
@@ -59,7 +59,7 @@ Para sincronizar los usuarios, los grupos y los contactos de Active Directory lo
  5. Siga los pasos del Asistente para descargar Azure AD Connect y usarlo para sincronizar los usuarios controlados por dominio a Microsoft 365.
 
 
-Consulte [configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) para obtener más información.
+Consulte [configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) para obtener más información.
 
 A medida que configure las opciones de Azure AD Connect, le recomendamos que habilite la **sincronización de contraseña**, el **Inicio de sesión único sin problemas**y la característica de **escritura diferida de contraseñas** , que también se admite en Microsoft 365 para empresas.
 

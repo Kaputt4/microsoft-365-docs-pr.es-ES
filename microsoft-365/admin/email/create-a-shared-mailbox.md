@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529640"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306940"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -128,7 +128,7 @@ Pero, ¿qué sucede si un administrador simplemente restablece la contraseña de
 4. En el control flotante **editar el estado de inicio de sesión**, compruebe que está activada la opción Bloquear el usuario para iniciar sesión, seleccione **guardar** y, a continuación, **cerrar**.
 ::: moniker-end
 
-Para obtener instrucciones sobre cómo bloquear el inicio de sesión para cuentas con el PowerShell de Azure AD (incluyendo varias cuentas al mismo tiempo), consulte [Bloquear cuentas de usuario con PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/block-user-accounts-with-office-365-powershell).
+Para obtener instrucciones sobre cómo bloquear el inicio de sesión para cuentas con el PowerShell de Azure AD (incluyendo varias cuentas al mismo tiempo), consulte [Bloquear cuentas de usuario con PowerShell de Office 365](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Agregar el buzón compartido en Outlook
 

@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, aprenderá a usar vínculos seguros para proteger su organización de los ataques de suplantación de identidad (phishing) y otros tipos de ataques.
-ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656986"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307642"
 ---
 # <a name="atp-safe-links"></a>Vínculos seguros de ATP
 
@@ -57,7 +57,7 @@ A **continuación, asegúrese de que las directivas de vínculos seguros de ATP 
 
 - Las directivas de vínculos seguros de ATP se configuran para correo electrónico y documentos de Office. (Consulte [configurar las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md).)
 
-- Las aplicaciones cliente de Microsoft 365 están configuradas para usar la autenticación moderna (es para la protección de vínculos seguros de ATP en documentos de Office). (Vea [autenticación moderna para Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
+- Las aplicaciones cliente de Microsoft 365 están configuradas para usar la autenticación moderna (es para la protección de vínculos seguros de ATP en documentos de Office). (Vea [autenticación moderna para Office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).)
 
 - Los usuarios han iniciado sesión con su cuenta profesional o educativa. (Consulte [iniciar sesión en Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)).
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Aprenda a comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Amazon Web Services (AWS) para Microsoft.
-ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dbbf82c9c776108c4d5e34e2eb639f9c36e9f28b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400574"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307072"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Crear registros DNS en Amazon Web Services (AWS) para Microsoft
 
@@ -66,7 +66,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Name** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (segundos)** <br/> |**Valor** <br/> |**Directiva de enrutamiento** <br/> |
+    |**Nombre** <br/> |**Tipo** <br/> |**Alias** <br/> |**TTL (segundos)** <br/> |**Valor** <br/> |**Directiva de enrutamiento** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Nota:** esto es un ejemplo. Use su valor **Dirección de destino** específico aquí, de la tabla de Microsoft 365. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
    
 6. Seleccione **Crear**.
@@ -104,9 +104,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**Name**|**Type**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
+    |**Nombre**|**Tipo**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Deje este campo en blanco).  <br/> |MX - Registro de intercambio de correo  <br/> |No  <br/> |300  <br/> |0 *\<domain-key\>* . mail.Protection.Outlook.com.  <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Este valor DEBE terminar en punto (.).** <br/> **Nota:** Obtenga su \<*domain-key*\> cuenta de Microsoft 365. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
+    |(Deje este campo en blanco).  <br/> |MX - Registro de intercambio de correo  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Este valor DEBE terminar en punto (.).** <br/> **Nota:** Obtenga su \<*domain-key*\> cuenta de Microsoft 365. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
     ![AWS-BP-configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -148,12 +148,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Seleccione los valores **Tipo** y **Directiva de enrutamiento** que aparecen en las listas desplegables). 
     
-    |**Name**|**Type**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
+    |**Nombre**|**Tipo**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |Simple  <br/> |
-    |sip  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |Simple  <br/> |
-    |lyncdiscover  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |Simple  <br/> |
-    |enterpriseregistration  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |Simple  <br/> |
+    |autodiscover  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |Simple  <br/> |
+    |sip  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |Simple  <br/> |
+    |lyncdiscover  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |Simple  <br/> |
+    |enterpriseregistration  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |Simple  <br/> |
     |EnterpriseEnrollment  <br/> |CNAME - nombre canónico  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |Simple  <br/> |
    
     ![AWS-BP-configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
@@ -172,7 +172,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas[herramientas de validación de SPF](../setup/domains-faq.md). 
   
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
@@ -213,10 +213,10 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Seleccione los valores **Tipo** y **Directiva de enrutamiento** que aparecen en las listas desplegables). 
     
-    |**Name**|**Type**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
+    |**Nombre**|**Tipo**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls|SRV - Localizador de servicio|No|300|100 1 443 sipdir.online.lync.com. **Este valor debe terminar con un punto (.).**><br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |Simple|
-    |_sipfederationtls. _tcp|SRV - Localizador de servicio|No|300|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |Simple|
+    |_sip._tls|SRV - Localizador de servicio|No|300|100 1 443 sipdir.online.lync.com. **Este valor debe terminar con un punto (.).**><br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |Simple|
+    |_sipfederationtls._tcp|SRV - Localizador de servicio|No|300|100 1 5061 sipfed.online.lync.com. **Este valor DEBE terminar en punto (.)**<br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |Simple|
    
     ![AWS-BP-configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   

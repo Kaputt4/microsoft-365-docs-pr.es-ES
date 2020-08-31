@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores de China con Office 365 operado por 21Vianet pueden aprender a usar independiente de Exchange Online Protection (EOP) para proteger sus buzones locales.
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826818"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307754"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Proteger los buzones locales en China con EOP independiente
 
@@ -58,7 +58,7 @@ Cree conectores en el Centro de administración de Exchange (EAC) que permitan e
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Paso 4: Permitir el acceso SMTP entrante al puerto 25
 
-Después de configurar los conectores, espere 72 horas para que las actualizaciones de los registros DNS se propaguen. A continuación, restrinja el tráfico SMTP de entrada-25 entrante en el firewall o los servidores de correo para aceptar correo solo de los centros de recursos de EOP, específicamente de las direcciones IP que aparecen en [direcciones URL e intervalos de direcciones IP para Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints). Esto protege su entorno local al limitar el ámbito de los mensajes entrantes que puede recibir. Además, si tiene una configuración en su servidor de correo que controla las direcciones IP que se pueden conectar para retransmitir correo, actualice también esta configuración.
+Después de configurar los conectores, espere 72 horas para que las actualizaciones de los registros DNS se propaguen. A continuación, restrinja el tráfico SMTP de entrada-25 entrante en el firewall o los servidores de correo para aceptar correo solo de los centros de recursos de EOP, específicamente de las direcciones IP que aparecen en [direcciones URL e intervalos de direcciones IP para Office 365](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints). Esto protege su entorno local al limitar el ámbito de los mensajes entrantes que puede recibir. Además, si tiene una configuración en su servidor de correo que controla las direcciones IP que se pueden conectar para retransmitir correo, actualice también esta configuración.
 
 > [!TIP]
 > Establezca la configuración en el servidor SMTP con un tiempo de espera de conexión de 60 segundos. La mayoría de las situaciones aceptan esta configuración, lo que permite algo de retraso en el caso de un mensaje enviado con datos adjuntos muy grandes, por ejemplo.

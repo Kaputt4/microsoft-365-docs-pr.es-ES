@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar la asignación de licencias desde cuentas de usuario.
 ms.date: 07/01/2020
-ms.openlocfilehash: 29dbdb89550d5bd9bd13071b184ffe1ca340f2a6
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015940"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306544"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
@@ -45,7 +45,7 @@ Puede anular la asignación de licencias de los usuarios en la página **usuario
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Debe ser global, licencia, administrador de usuarios para cancelar la asignación de licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
-- Puede [quitar licencias de cuentas de usuario con PowerShell de Office 365](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
+- Puede [quitar licencias de cuentas de usuario con PowerShell de Office 365](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
 - También puede [eliminar cuentas de usuario a las](../add-users/delete-a-user.md) que se asignó una licencia para que su licencia esté disponible para otros usuarios. Al eliminar una cuenta de usuario, su licencia está disponible de forma inmediata para asignarla a otra persona.
 
 ::: moniker range="o365-worldwide"
@@ -54,7 +54,7 @@ Puede anular la asignación de licencias de los usuarios en la página **usuario
 
 Cuando usa la página **licencias** para cancelar la asignación de licencias, puede cancelar la asignación de licencias para un producto específico para un máximo de 20 usuarios.
 
-1. En el centro de administración, vaya a **Billing** la > página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licencias</a> de facturación.
+1. En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
 2. Seleccione el producto para el que desea cancelar la asignación de licencias.
 3. Seleccione los usuarios para los que desea cancelar la asignación de licencias.
 4. Seleccione **Cancelar asignación de licencias**.

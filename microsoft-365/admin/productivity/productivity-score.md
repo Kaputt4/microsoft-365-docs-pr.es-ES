@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868860"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307482"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -44,7 +44,7 @@ Proporcionamos datos, información y recomendaciones en dos áreas:
 
 - **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo, a la vez que proporcionan acciones recomendadas para solucionarlos; Además, proporcionamos información de conectividad de red de Microsoft 365 para su organización.
 
-Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación

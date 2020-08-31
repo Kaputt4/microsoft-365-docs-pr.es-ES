@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Los administradores pueden aprender a configurar la protección independiente de Exchange Online (EOP) para proteger los entornos de correo electrónico locales.
-ms.openlocfilehash: cf49cf4b0784731c23c0c36de44d3b0b2cb78dc8
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e6ca3965dd82bf0e6ed7e361984758ab34e3eea0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827826"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307596"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurar el servicio independiente de EOP
 
@@ -64,7 +64,7 @@ Compruebe el flujo de correo entre el servicio y su entorno. Para obtener más i
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Paso 4: Permitir el acceso SMTP entrante al puerto 25
 
-Después de configurar los conectores, espere 72 horas para permitir la propagación de las actualizaciones de los registros DNS. A continuación, restrinja el tráfico SMTP entrante del puerto 25 en sus servidores de correo o de firewall para aceptar correo solo de los centros de datos EOP, especialmente de las direcciones IP de la lista en [Direcciones de IP para Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Esto protege su entorno local al limitar el ámbito de los mensajes entrantes que puede recibir. Además, si tiene una configuración en su servidor de correo que controla las direcciones IP que se pueden conectar para retransmitir correo, actualice también esta configuración.
+Después de configurar los conectores, espere 72 horas para permitir la propagación de las actualizaciones de los registros DNS. A continuación, restrinja el tráfico SMTP entrante del puerto 25 en sus servidores de correo o de firewall para aceptar correo solo de los centros de datos EOP, especialmente de las direcciones IP de la lista en [Direcciones de IP para Exchange Online Protection](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges). Esto protege su entorno local al limitar el ámbito de los mensajes entrantes que puede recibir. Además, si tiene una configuración en su servidor de correo que controla las direcciones IP que se pueden conectar para retransmitir correo, actualice también esta configuración.
 
 > [!TIP]
 > Establezca la configuración en el servidor SMTP con un tiempo de espera de conexión de 60 segundos. Esta configuración es aceptable en la mayoría de las situaciones, lo que permite un retraso en el caso de un mensaje enviado con datos adjuntos grandes, por ejemplo.

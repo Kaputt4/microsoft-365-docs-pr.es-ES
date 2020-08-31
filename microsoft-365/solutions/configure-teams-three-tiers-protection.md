@@ -21,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Recomendaciones de configuración para proteger archivos en Microsoft Teams.
-ms.openlocfilehash: d0c3d065da912c37ca21e6ea4300a30c5e7195b8
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: aea542d92e981e286062fc07b7e559b5f36427d4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527807"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307732"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -42,11 +42,8 @@ Las configuraciones que se explican en este artículo concuerdan con las recomen
 
 - Protección altamente confidencial
 
-Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea los siguientes recursos.
+Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea[ Ilustraciones de la nube de Microsoft para arquitectos empresariales](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
 
-- [Protección de identidades y dispositivos para Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#identity-and-device-protection-for-office-365)
-
-- [Soluciones de protección de archivos en Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#file-protection-solutions-in-office-365)
 
 ## <a name="three-tiers-at-a-glance"></a>Tres niveles de un vistazo
 

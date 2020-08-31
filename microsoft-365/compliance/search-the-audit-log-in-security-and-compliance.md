@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: 75f807f2d09792838cab2ee5154578b5cbbbfde8
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674630"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294747"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
@@ -186,9 +186,9 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
       > [!TIP]
       >
-      > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para que se devuelvan todas las entradas del sitio; por ejemplo, **"https://contoso-my.sharepoint.com/personal/*"**.
+      > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para devolver todas las entradas para ese sitio; por ejemplo, `"https://contoso-my.sharepoint.com/personal*"`.
       >
-      > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,** "* Customer_Profitability_Sample.csv"**.
+      > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,`"*Customer_Profitability_Sample.csv"`.
 
 5. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 

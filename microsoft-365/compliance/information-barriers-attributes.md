@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Este es un artículo de referencia sobre los atributos de la cuenta de usuario de Azure Active Directory que se usan para definir segmentos de barrera de información.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035056"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307999"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Atributos para las directivas de barreras de información
 
@@ -38,7 +38,7 @@ Los atributos que se enumeran en este artículo pueden usarse para definir o edi
 
 2. Asegúrese de que las cuentas de usuario tengan valores rellenados para los atributos que seleccionó en el paso 1. Ver los detalles de la cuenta de usuario y, si es necesario, editar cuentas de usuario para incluir valores de atributo. 
 
-    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea [Configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Para editar varias cuentas (o usar PowerShell para editar una sola cuenta), vea [Configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
 
     - Para editar una sola cuenta, vea [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
@@ -61,7 +61,7 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de l
 |---------|---------|
 |Patrocina       | Patrocina        |
 |Company     |Company         |
-|Departamento     |Departamento         |
+|Department     |Department         |
 |ExtensionAttribute1 |CustomAttribute1  |
 |ExtensionAttribute2 |CustomAttribute2  |
 |ExtensionAttribute3 |CustomAttribute3  |
@@ -84,7 +84,7 @@ En la tabla siguiente se enumeran los atributos que puede usar con barreras de l
 |MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
 |MailNickname |Alias |
 |PhysicalDeliveryOfficeName |Office |
-|Talco |Talco |
+|PostalCode |PostalCode |
 |ProxyAddresses |EmailAddresses |
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |

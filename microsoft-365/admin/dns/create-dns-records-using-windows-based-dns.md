@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en DNS basado en Windows para Microsoft.
-ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400249"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306952"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
@@ -49,7 +49,7 @@ Agregar un registro MX para que el correo electrónico del dominio llegue a Micr
 - En la fila MX de la sección Exchange online de la página agregar registros DNS de Microsoft, copie el valor que aparece en puntos a la dirección. Este valor se usará en el registro que se está creando en esta tarea. 
 - En la página del administrador de DNS del dominio, vaya a **Action**  >  **interchanger mail (mx)**. Para buscar esta página para el dominio, vea [Buscar los registros DNS en DNS basado en Windows](#find-your-dns-records-in-windows-based-dns).  
 - En el cuadro de diálogo **nuevo registro de recursos** , asegúrese de que los campos se configuran exactamente con los valores siguientes: 
-    - Nombre de host: 
+    - Nombre de host:  
     - @Address: pegue el valor de dirección de destino que acaba de copiar desde Microsoft aquí.  
     - Distinguir 
 - Seleccione **Guardar cambios**.
@@ -111,7 +111,7 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un *único* registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
   
 Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
   
@@ -201,7 +201,7 @@ Compruebe su dominio en Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Dirección de correo electrónico no enrutable usada como un UPN en su Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si tiene previsto sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory es un sufijo de dominio válido y no un sufijo de dominio no admitido, como @contoso. local. Si necesita cambiar el sufijo UPN, vea [Cómo preparar un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
+Si tiene previsto sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory es un sufijo de dominio válido y no un sufijo de dominio no admitido, como @contoso. local. Si necesita cambiar el sufijo UPN, vea [Cómo preparar un dominio no enrutable para la sincronización de directorios](https://docs.microsoft.com/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization).
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 

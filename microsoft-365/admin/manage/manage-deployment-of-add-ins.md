@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Aprenda a implementar complementos para los usuarios y grupos de su organización mediante la implementación centralizada en el centro de administración.
-ms.openlocfilehash: a99847cd24853a8d3d411eed97983b66001287ff
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: aec2adab7735a2be5670210abf05f88f081fe4ed
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560732"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306531"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Implementar complementos en el centro de administración
 
@@ -139,6 +139,6 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
 
 [Menores y adquisición de complementos desde la tienda](minors-and-acquiring-addins-from-the-store.md)
   
-[Usar los cmdlets de PowerShell de implementación centralizada para administrar complementos](https://docs.microsoft.com/office365/enterprise/powershell/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Usar los cmdlets de PowerShell de implementación centralizada para administrar complementos](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
 [Solución de problemas: el usuario no ve complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

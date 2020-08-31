@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Obtenga información sobre los pasos de configuración para Microsoft 365 empresa Premium, suscribirse, agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: a808ae5761c1bc5706966a3f7de95f96f8f7c8c8
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785820"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306477"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
@@ -50,7 +50,7 @@ La mayoría de los pasos de configuración pueden realizarse en el Asistente de 
 
    - **Agregar usuarios**. Puede Agregar usuarios de las tres maneras siguientes:
         - En el [Asistente](set-up.md#add-users-in-the-wizard).
-        - Use la sincronización de directorios para [Agregar usuarios con Azure ad Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) si tiene un Active Directory local.
+        - Use la sincronización de directorios para [Agregar usuarios con Azure ad Connect](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) si tiene un Active Directory local.
         - También puede [Agregar usuarios más adelante](add-users-m365b.md) en el centro de administración.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Paso 2: configurar directivas de seguridad y configurar dispositivos 
 

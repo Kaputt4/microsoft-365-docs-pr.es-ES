@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827718"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307922"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
@@ -62,7 +62,7 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>¿Cómo soluciono el código de error 450 4.4.316?
 
-- Si tiene buzones de correo en su entorno local, debe modificar la configuración del firewall para permitir conexiones de las direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP de Microsoft 365, consulte direcciones [URL e intervalos de direcciones IP de microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Si tiene buzones de correo en su entorno local, debe modificar la configuración del firewall para permitir conexiones de las direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP de Microsoft 365, consulte direcciones [URL e intervalos de direcciones IP de microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - Si no se van a entregar más mensajes en su entorno local, haga clic en **corregir ahora** en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de superar la cuota de su organización para los destinatarios no válidos, lo que podría afectar a la entrega de mensajes normal. O bien, puede usar las siguientes instrucciones para corregir manualmente el problema:
 

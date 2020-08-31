@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: Este tema le guiará a través de la configuración recomendada para la configuración de todos los inquilinos que afecten a la seguridad de su entorno de Microsoft 365.
-ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653562"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308224"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar su inquilino de Microsoft 365 para mejorar la seguridad
 
@@ -59,7 +59,7 @@ Visite estos informes y paneles para obtener más información sobre el estado d
 
 ****
 
-|Panel|Description|
+|Panel|Descripción|
 |---|---|
 |[Panel de administración de amenazas](security-dashboard.md)|En la sección **Administración de amenazas** del centro de seguridad, use este panel para ver las amenazas que ya se han tratado y como una herramienta útil para informar a los responsables de las decisiones empresariales sobre las capacidades de investigación y respuesta de amenazas que ya se han realizado para proteger su empresa.|
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|También se encuentra en la sección **Administración de amenazas** del centro de seguridad. Si está investigando o experimentando un ataque contra su espacio empresarial, use el explorador (o detecciones en tiempo real) para analizar las amenazas. Explorer (y el informe de detecciones en tiempo real) le muestra el volumen de ataques a lo largo del tiempo, y puede analizar estos datos por familias de amenazas, la infraestructura de los intrusos y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista de incidentes.|
@@ -77,7 +77,7 @@ Muchos de los controles de seguridad y protección en el centro de administraci�
 |Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
 |**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware mediante el bloqueo de los tipos de archivo ejecutables y los tipos de archivo de Office que contienen macros. Para obtener más información, vea [usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consulte estos temas adicionales: <br/>* [Proteger contra ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Malware y protección contra ransomware en Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Recuperarse de un ataque de ransomware en Office 365](recover-from-ransomware.md) <br/><br/> Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**Habilitar la autenticación moderna**|No|La autenticación moderna es un requisito previo para el uso de multi-factor Authentication (MFA). Se recomienda MFA para proteger el acceso a los recursos en la nube, incluido el correo electrónico. <br/><br/> Vea estos temas: <br/>* [Habilitar o deshabilitar la autenticación moderna en Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype empresarial online: habilitar el inquilino para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016, SharePoint Online y OneDrive para la empresa. <br/><br/> Más información: [Cómo funciona la autenticación moderna para las aplicaciones cliente de office 2013 y office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**Habilitar la autenticación moderna**|No|La autenticación moderna es un requisito previo para el uso de multi-factor Authentication (MFA). Se recomienda MFA para proteger el acceso a los recursos en la nube, incluido el correo electrónico. <br/><br/> Vea estos temas: <br/>* [Habilitar o deshabilitar la autenticación moderna en Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype empresarial online: habilitar el inquilino para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016, SharePoint Online y OneDrive para la empresa. <br/><br/> Más información: [Cómo funciona la autenticación moderna para las aplicaciones cliente de office 2013 y office 2016](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurar directivas de uso compartido en todo el espacio empresarial en el centro de administración de SharePoint

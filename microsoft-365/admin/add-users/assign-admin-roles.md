@@ -27,18 +27,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de la empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900781"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307324"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
 Si es la persona que compró su suscripción de empresa de Microsoft, será el administrador global. Esto significa que tiene un control ilimitado sobre los productos de sus suscripciones y puede obtener acceso a la mayoría de los datos.
 
-Para obtener más información, vea [acerca de los roles de administrador](about-admin-roles.md).
+Para obtener más información, vea [Asignar roles de administrador](about-admin-roles.md).
 
 Cuando se agregan nuevos usuarios, si no se les asigna un rol de administrador, se encuentran en el *rol de usuario* y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero, si necesita ayuda para hacer cosas, puede asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer contraseñas, no debería asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y a la empresa en línea, es un riesgo para la seguridad.
 
@@ -46,7 +46,7 @@ Vea un breve vídeo sobre cómo agregar un administrador.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -122,6 +122,6 @@ Es posible que no disponga de los permisos correctos para asignar roles de admin
 
 [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
+[Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
 
 [Autorizar o quitar relaciones de asociados](../misc/add-partner.md)

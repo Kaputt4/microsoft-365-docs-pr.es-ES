@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352329"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307933"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de barreras de información
 
@@ -45,7 +45,7 @@ Determinar si los usuarios están afectados por una directiva de barrera de info
 
     |Sintaxis  |Ejemplo  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Puede usar cualquier valor de identidad que identifique de forma exclusiva a cada destinatario, como el nombre, el alias, el nombre distintivo (DN), el DN canónico, la dirección de correo electrónico o el GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>En este ejemplo, se usa un alias (*meganb*) para el parámetro Identity. Este cmdlet devolverá información que indica si el usuario está afectado por una directiva de barrera de información. (Busque * ExoPolicyId: \< GUID>).         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Puede usar cualquier valor de identidad que identifique de forma exclusiva a cada destinatario, como el nombre, el alias, el nombre distintivo (DN), el DN canónico, la dirección de correo electrónico o el GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>En este ejemplo, se usa un alias (*meganb*) para el parámetro Identity. Este cmdlet devolverá información que indica si el usuario está afectado por una directiva de barrera de información. (Busque * ExoPolicyId: \<GUID> .)         |
 
     **Si los usuarios no se incluyen en las directivas de barrera de información, póngase en contacto con el soporte técnico**. En caso contrario, continúe con el paso siguiente.
 
@@ -94,7 +94,7 @@ Compruebe que los usuarios en cuestión se incluyen en una directiva de barrera 
 
     
     > [!TIP]
-    > También puede usar este cmdlet para un solo usuario:`Get-InformationBarrierRecipientStatus -Identity <value>`
+    > También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`
     
 2. Revise las conclusiones. El cmdlet **Get-InformationBarrierRecipientStatus** devuelve información acerca de los usuarios, como los valores de atributo y las directivas de barrera de información que se aplican. 
 
@@ -102,8 +102,8 @@ Compruebe que los usuarios en cuestión se incluyen en una directiva de barrera 
     
     |Resultados  |Qué hacer a continuación  |
     |---------|---------|
-    |No se enumeran segmentos para el usuario o usuarios seleccionados     |Realice una de las acciones siguientes:<br/>-Asignar usuarios a un segmento existente editando sus perfiles de usuario en Azure Active Directory. (Consulte [configurar las propiedades de las cuentas de usuario con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)).<br/>-Definir un segmento mediante un [atributo compatible con barreras de información](information-barriers-attributes.md). A continuación, puede [definir una nueva Directiva](information-barriers-policies.md#part-2-define-information-barrier-policies) o [editar una directiva existente](information-barriers-edit-segments-policies.md#edit-a-policy) para incluir ese segmento.  |
-    |Se enumeran los segmentos pero no se asigna ninguna directiva de barrera de información a dichos segmentos.     |Realice una de las acciones siguientes:<br/>- [Definir una nueva Directiva de barrera de información](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento en cuestión<br/>- [Editar una directiva de barrera de información existente](information-barriers-edit-segments-policies.md#edit-a-policy) para asignarla al segmento correcto         |
+    |No se enumeran segmentos para el usuario o usuarios seleccionados     |Realiza una de las siguientes acciones:<br/>-Asignar usuarios a un segmento existente editando sus perfiles de usuario en Azure Active Directory. (Consulte [configurar las propiedades de las cuentas de usuario con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)).<br/>-Definir un segmento mediante un [atributo compatible con barreras de información](information-barriers-attributes.md). A continuación, puede [definir una nueva Directiva](information-barriers-policies.md#part-2-define-information-barrier-policies) o [editar una directiva existente](information-barriers-edit-segments-policies.md#edit-a-policy) para incluir ese segmento.  |
+    |Se enumeran los segmentos pero no se asigna ninguna directiva de barrera de información a dichos segmentos.     |Realiza una de las siguientes acciones:<br/>- [Definir una nueva Directiva de barrera de información](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento en cuestión<br/>- [Editar una directiva de barrera de información existente](information-barriers-edit-segments-policies.md#edit-a-policy) para asignarla al segmento correcto         |
     |Se enumeran los segmentos y cada uno de ellos se incluye en una directiva de barrera de información     |-Ejecute el `Get-InformationBarrierPolicy` cmdlet para comprobar que las directivas de barrera de información están activas<br/>-Ejecute el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que se aplican las directivas.<br/>-Ejecute el `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas las directivas activas de barrera de información          |
     
 
@@ -177,7 +177,7 @@ Asegúrese de que su organización no tiene [directivas de libreta de direccione
 Una vez que haya definido los segmentos, las directivas de barrera de información definidas y haya intentado aplicar dichas directivas, es posible que la Directiva se aplique a algunos destinatarios, pero no a otros.
 Cuando ejecute el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, busque texto como este en la salida.
 
-> Identifica`<application guid>`
+> Identifica `<application guid>`
 >
 > Total de destinatarios: 81527
 >

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo agregar usuarios y asignar licencias a Microsoft 365 al mismo tiempo.
 ms.date: 07/01/2020
-ms.openlocfilehash: 016c98fc93bfa1a92274a5b991cf8adbd1131bc9
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015892"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307378"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -41,7 +41,7 @@ Los usuarios de su equipo necesitan una cuenta de usuario para poder iniciar ses
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, una licencia o un administrador de usuarios para agregar usuarios y asignar licencias. Para obtener más información, vea [acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, una licencia o un administrador de usuarios para agregar usuarios y asignar licencias. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="watch-add-users-in-the-admin-center"></a>Ver: agregar usuarios en el centro de administración
 
@@ -100,9 +100,9 @@ Debe ser un administrador global, una licencia o un administrador de usuarios pa
 
 Puede usar cualquiera de los métodos siguientes para agregar varios usuarios al mismo tiempo:
   
-- **Use una hoja de cálculo para agregar usuarios en masa.** Consulte [agregar varios usuarios al mismo tiempo](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time).
-- **Automatice la agregación de cuentas y la asignación de licencias.** Consulte [Create User accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell). Seleccione este método si ya está familiarizado con el uso de cmdlets de Windows PowerShell.
-- **¿Usa ActiveDirectory?** [Configurar la sincronización de directorios para Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization). Use la herramienta de Azure AD Connect para replicar cuentas de usuario de Active Directory (y otros objetos de Active Directory) en Microsoft 365. La sincronización solo agrega las cuentas de usuario. Debe asignar licencias a los usuarios sincronizados para poder usar el correo electrónico y otras aplicaciones de Office.
+- **Use una hoja de cálculo para agregar usuarios en masa.** Consulte [agregar varios usuarios al mismo tiempo](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time).
+- **Automatice la agregación de cuentas y la asignación de licencias.** Consulte [Create User accounts with Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell). Seleccione este método si ya está familiarizado con el uso de cmdlets de Windows PowerShell.
+- **¿Usa ActiveDirectory?** [Configurar la sincronización de directorios para Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization). Use la herramienta de Azure AD Connect para replicar cuentas de usuario de Active Directory (y otros objetos de Active Directory) en Microsoft 365. La sincronización solo agrega las cuentas de usuario. Debe asignar licencias a los usuarios sincronizados para poder usar el correo electrónico y otras aplicaciones de Office.
 - **¿Va a migrar desde Exchange?** Consulte [formas de migrar varias cuentas de correo electrónico a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration). Al migrar varios buzones a Microsoft 365 mediante transferencia, por fases o mediante un método híbrido de Exchange, los usuarios se agregan automáticamente como parte de la migración. La migración solo agrega las cuentas de usuario. Debe asignar licencias a los usuarios para que puedan usar el correo electrónico y otras aplicaciones de Office. Si no asigna una licencia a un usuario, su buzón se deshabilita tras un período de gracia de 30 días. Obtenga información sobre cómo [asignar licencias a usuarios](../manage/assign-licenses-to-users.md) en el centro de administración de Microsoft 365.
 
 ## <a name="next-steps"></a>Pasos siguientes
@@ -112,7 +112,7 @@ Una vez que haya agregado un usuario, recibirá una notificación por correo ele
 ## <a name="related-content"></a>Contenido relacionado
 
 [Agregar un nuevo empleado a Microsoft 365](add-new-employee.md) (artículo) \
-[Agregar varios usuarios al mismo tiempo a Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (artículo) \
+[Agregar varios usuarios al mismo tiempo a Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time) (artículo) \
 [Restaurar un usuario en Microsoft 365](restore-user.md) (artículo) \
 [Asignar licencias a usuarios](../manage/assign-licenses-to-users.md) (artículo) \
 [Eliminación de un usuario de la organización](delete-a-user.md) (artículo)

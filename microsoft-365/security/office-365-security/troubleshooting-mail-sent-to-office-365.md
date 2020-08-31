@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208602"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307584"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -79,7 +79,7 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
 
- Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+ Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el correo electrónico masivo a los usuarios de Microsoft 365
 

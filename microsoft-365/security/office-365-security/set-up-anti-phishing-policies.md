@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: f671588ff4232c6ca1c1342475f48802bf1a0076
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825106"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308200"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -81,6 +81,9 @@ La siguiente configuración de directiva está disponible en las directivas anti
     - **El destinatario es**
     - **El destinatario es un miembro de**
     - **El dominio del destinatario es**
+
+  > [!NOTE]
+  > La opción **aplicado a** es necesaria en las directivas antiphishing personalizadas para identificar a los **destinatarios** de mensajes a <u>los que se aplica la Directiva</u>. Las directivas antiphishing de ATP también tienen [configuraciones de suplantación](#impersonation-settings-in-atp-anti-phishing-policies) en las que puede especificar direcciones de correo electrónico de remitentes individuales o dominios de remitentes <u>que recibirán la protección de suplantación</u> , como se describe más adelante en este tema.
 
 ## <a name="spoof-settings"></a>Configuración de suplantación
 
@@ -144,13 +147,21 @@ De lo contrario, un dominio suplantado podría considerarse legítimo (dominio r
 
 La siguiente configuración de suplantación solo está disponible en las directivas contra la suplantación de identidad ATP:
 
-- **Usuarios que se deben proteger**: impide que los usuarios internos o externos especificados se suplanten. Por ejemplo, Executives (Internal) y Board Members (external). Puede Agregar hasta 60 direcciones internas y externas. Esta lista de usuarios protegidos es diferente de la lista de destinatarios a los que se aplica la Directiva en la configuración de **aplicado a** .
+- **Usuarios que se deben proteger**: impide que las direcciones de correo electrónico internas o externas especificadas se suplanten **como remitentes de mensajes**. Por ejemplo, ejecutivos (remitentes internos) y miembros de la placa (remitentes externos). Puede Agregar hasta 60 direcciones de correo electrónico de remitente interno e externo para protegerse de la suplantación. Esta lista de **remitentes** protegidos de la suplantación es diferente de la lista de **destinatarios** a los que se aplica la Directiva.
 
-  Por ejemplo, especifique Felipe Apodaca (felipea@contoso.com) como usuario protegido en una directiva que se aplica al grupo denominado ejecutivos. La Directiva actuará sobre los mensajes entrantes enviados a miembros del grupo ejecutivos donde se suplanta a Felipe Apodaca, (la acción que se configura para los usuarios suplantados).
+  La directiva predeterminada se aplica a los mensajes enviados a todos los destinatarios, mientras que las directivas personalizadas se aplican únicamente a los mensajes enviados a los destinatarios que se definen en la opción **aplicado a** , tal como se describe en la sección [configuración de directiva](#policy-settings) .
 
-- **Dominios para proteger**: impedir la suplantación de los dominios especificados. Por ejemplo, todos los dominios que son de su propiedad ([dominios aceptados](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o dominios específicos (dominios que posee o dominios asociados). Esta lista de dominios protegidos es diferente de la lista de dominios a los que se aplica la Directiva en la configuración **aplicado a** .
+  De forma predeterminada, no hay ninguna dirección de correo electrónico de remitente configurada para la protección de suplantación en **los usuarios para**su protección. Por lo tanto, de manera predeterminada, ninguna dirección de correo electrónico del remitente está cubierta por la protección de suplantación, ya sea en la directiva predeterminada o en las directivas personalizadas.
 
-  Por ejemplo, puede especificar tailspintoys.com como un dominio protegido en una directiva que se aplica a los miembros del grupo denominado ejecutivos. La Directiva actuará sobre los mensajes entrantes enviados a miembros del grupo ejecutivos donde se suplanta a tailspintoys.com (la acción que configuró para los dominios suplantados).
+  Cuando agrega direcciones de correo electrónico internas o externas a los **usuarios para proteger** la lista, los mensajes de esos **remitentes** están sujetos a comprobaciones de protección de suplantación. Se comprueba la suplantación del mensaje **si** el mensaje se envía a un **destinatario** al que se aplica la Directiva (todos los destinatarios de la directiva predeterminada; **Se aplica a** los destinatarios de las directivas personalizadas). Si se detecta la suplantación en la dirección de correo electrónico del remitente, las acciones de las protecciones de suplantación para los usuarios se aplican al mensaje (la acción del mensaje, la información de seguridad de los usuarios suplantados, etc.).
+
+- **Dominios para proteger**: impide que los dominios especificados se suplanten **en el dominio del remitente del mensaje**. Por ejemplo, todos los dominios que son de su propiedad ([dominios aceptados](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) o dominios específicos (dominios que posee o dominios asociados). Esta lista de **dominios de remitente** protegidos de la suplantación es diferente de la lista de **destinatarios** a los que se aplica la Directiva.
+
+  La directiva predeterminada se aplica a los mensajes enviados a todos los destinatarios, mientras que las directivas personalizadas se aplican únicamente a los mensajes enviados a los destinatarios que se definen en la opción **aplicado a** , tal como se describe en la sección [configuración de directiva](#policy-settings) .
+
+  De forma predeterminada, no hay ningún dominio de remitente configurado para la protección de suplantación en los **dominios que se protegen**. Por lo tanto, de manera predeterminada, ningún dominio del remitente está cubierto por la protección de suplantación, ya sea en la directiva predeterminada o en las directivas personalizadas.
+
+  Cuando se agregan dominios a los **dominios para proteger** la lista, los mensajes de los **remitentes de esos dominios** están sujetos a comprobaciones de protección de suplantación. Se comprueba la suplantación del mensaje **si** el mensaje se envía a un **destinatario** al que se aplica la Directiva (todos los destinatarios de la directiva predeterminada; **Se aplica a** los destinatarios de las directivas personalizadas). Si se detecta la suplantación en el dominio del remitente, las acciones de protección de suplantación de los dominios se aplican al mensaje (la acción del mensaje, la sugerencia de seguridad de los dominios suplantados, etc.).
 
 - **Acciones para usuarios o dominios protegidos**: elija la acción que se realizará en los mensajes entrantes que contengan intentos de suplantación con los usuarios protegidos y los dominios protegidos de la Directiva. Puede especificar distintas acciones para la suplantación de los usuarios protegidos frente a la suplantación de los dominios protegidos:
 

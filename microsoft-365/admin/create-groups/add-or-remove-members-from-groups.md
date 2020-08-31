@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar un miembro del grupo y administrar el estado del propietario del grupo en el centro de administración de Microsoft 365.
-ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1d11e527f4f8759511a64036a71e837689bcbcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780486"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307330"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de grupos de 365 de Microsoft mediante el centro de administración
 
@@ -54,7 +54,7 @@ En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, s
 
 4. Busque o seleccione el nombre del miembro que desee agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, s
 
 4. Busque o seleccione el nombre del miembro que desee agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, s
 
 4. Busque o seleccione el nombre del miembro que desee agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ En Microsoft 365, los miembros del grupo normalmente crean sus propios grupos, s
 
 4. Busque o seleccione el nombre del grupo que desea agregar.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -243,7 +243,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 4. Seleccione la X junto al nombre del propietario.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 4. Seleccione la X junto al nombre del propietario.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 4. Seleccione la X junto al nombre del propietario.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 ::: moniker-end
 
@@ -287,10 +287,10 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 - [Actualizar listas de distribución a grupos de 365 de Microsoft en Outlook](../manage/upgrade-distribution-lists.md)
 
-- [Por qué debería actualizar sus listas de distribución a los grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Administrar el acceso de invitado en grupos de 365 de Microsoft](manage-guest-access-in-groups.md)
 
-- [Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): en este artículo se presentan los cmdlets clave y se proporcionan ejemplos.
+- [Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell): en este artículo se presentan los cmdlets clave y se proporcionan ejemplos.
 
 - [Directiva de nomenclatura de grupos de 365 de Microsoft](groups-naming-policy.md)
