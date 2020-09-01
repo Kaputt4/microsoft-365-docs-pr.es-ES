@@ -1,5 +1,5 @@
 ---
-title: Administrar la configuración de scripts de Office
+title: Administrar la configuración de los scripts de Office
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar la configuración de scripts de Office para los usuarios de su organización.
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300843"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317498"
 ---
-# <a name="manage-office-scripts-settings"></a>Administrar la configuración de scripts de Office
+# <a name="manage-office-scripts-settings"></a>Administrar la configuración de los scripts de Office
 
 Scripts de Office permite a los usuarios automatizar tareas mediante la grabación, la edición y la ejecución de scripts en Excel en la Web. Los scripts de Office funcionan con Power Automates y los usuarios ejecutan scripts en libros mediante el conector de Excel online (Business). Los administradores de Microsoft 365 pueden administrar la configuración de las secuencias de comandos de Office desde el centro de administración de Microsoft 365.
 
@@ -35,7 +35,7 @@ Scripts de Office permite a los usuarios automatizar tareas mediante la grabaci�
 
     - Microsoft 365 Empresa Estándar
     - Aplicaciones de Microsoft 365 para negocios
-    - Aplicaciones de Microsoft 365 para empresas
+    - Microsoft 365 Apps para empresas
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3
@@ -78,11 +78,11 @@ Scripts de Office permite a los usuarios automatizar tareas mediante la grabaci�
     
         Para obtener más información acerca de los distintos tipos de grupos, vea [comparar grupos](../create-groups/compare-groups.md).
 
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
-    Los cambios en la configuración de script de Office pueden tardar hasta 48 horas en aplicarse.
+    Los cambios en la configuración de scripts de Office pueden tardar hasta 48 horas en aplicarse.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Como los scripts de Office funcionan con la automatización de la alimentación, le recomendamos que revise las directivas existentes de prevención de pérdida de datos (DLP) para asegurarse de que los datos de la organización sigan protegidos mientras los usuarios usan scripts de Office. Para obtener más información, consulte [directivas de prevención de pérdida de datos (DLP)](/power-automate/prevent-data-loss).
 

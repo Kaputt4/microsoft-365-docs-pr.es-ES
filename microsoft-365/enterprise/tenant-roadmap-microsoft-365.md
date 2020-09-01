@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los inquilinos para Microsoft 365.
-ms.openlocfilehash: db7054d1f6afc7e4835507dc6415e0b240918c1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694179"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315758"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Mapa de ruta del espacio empresarial para Microsoft 365
 
@@ -30,7 +30,7 @@ Una configuración de inquilino bien planeada y ejecutada es fundamental para ob
 
 ## <a name="plan"></a>Plan
 
-En la fase de planeación de la implementación del espacio empresarial:
+Para planear la implementación del espacio empresarial:
 
 - [Comprender las suscripciones, las licencias y los inquilinos de Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Aprenda a usar certificados SSL de terceros](plan-for-third-party-ssl-certificates.md)
@@ -44,7 +44,7 @@ En la fase de planeación de la implementación del espacio empresarial:
 
 ## <a name="deploy"></a>Implementar
 
-En la fase de implementación de la implementación del espacio empresarial, [agregue los dominios DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de la organización.
+Para implementar el inquilino, [agregue los dominios DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) de la organización.
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>Inquilinos con varias ubicaciones geográficas
 
@@ -52,7 +52,7 @@ Con Microsoft 365 Multi-Geo, su organización puede expandir su presencia en Mic
 
 [Introducción a](microsoft-365-multi-geo.md) la comprensión, planeación, configuración y administración con Microsoft 365 multi-geo.
 
-## <a name="moving-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
+## <a name="move-a-tenants-geographic-locations"></a>Mover las ubicaciones geográficas de un inquilino
 
 Microsoft sigue abrir nuevas ubicaciones geográficas del centro de recursos (GEOS) para los servicios de Microsoft 365. Estos nuevos GEOS de centro de recursos agregan capacidad y computan recursos para apoyar el crecimiento de la demanda y el uso de los clientes. Además, el nuevo centro de datos GEOS ofrece una residencia de datos geográfica para los principales datos de clientes.
 

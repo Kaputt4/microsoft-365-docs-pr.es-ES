@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Guía básica de identidad para Microsoft 365.
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694237"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315804"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Mapa de ruta de identidad para Microsoft 365
 
@@ -42,14 +42,14 @@ Puede [descargar este póster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## <a name="plan"></a>Plan
 
-En la fase de planeación de la implementación de la identidad:
+Para planear la implementación de la identidad:
 
 - [Comprender los diferentes modelos de identidad](about-microsoft-365-identity.md)
 - [Planeación de la identidad híbrida y la sincronización de directorios](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Implementar
 
-En la fase de implementación de la implementación de la identidad:
+Para implementar la implementación de la identidad:
 
 - [Proteger las cuentas de administrador global](protect-your-global-administrator-accounts.md)
 - [Configuración y uso de identidades solo en la nube](cloud-only-identities.md)
@@ -59,14 +59,14 @@ En la fase de implementación de la implementación de la identidad:
 
 ### <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de recomendaciones para el [acceso a dispositivos e identidades](microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los usuarios. Para la identidad, use la configuración y las recomendaciones de los artículos siguientes junto con los pasos en esta fase:
+Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para identidad, use las recomendaciones y la configuración de estos artículos:
 
 - [Requisitos previos](identity-access-prerequisites.md)
 - [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md)
 
 ## <a name="manage"></a>Manage
 
-En la fase de administración de su implementación de identidad:
+Para administrar la implementación de identidad:
 
 - [Asignar licencias y administrar cuentas de usuario](assign-licenses-to-user-accounts.md)
 - [Supervisión de la sincronización de directorios](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Aprenda como los expertos de IT en Microsoft[administran identidades y acceso se
 
 Vea cómo Contoso Corporation, una empresa multinacional ficticia pero representativa, [implementó una infraestructura de identidad híbrida](contoso-identity.md) para los servicios en la nube de Microsoft 365.
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Inicie la planeación de identidad con [modelos de identidades](about-microsoft-365-identity.md).
-

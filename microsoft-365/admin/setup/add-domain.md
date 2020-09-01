@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Agregue su dominio a Microsoft 365 en el centro de administración de Microsoft 365 agregando un registro DNS en su host DNS. El Asistente para la instalación le guiará por el proceso.
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814437"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315722"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -83,11 +83,13 @@ ms.locfileid: "46814437"
     
 5. Elija cómo desea comprobar que es el propietario del dominio.
     
-    1. Si su dominio está registrado en Godaddy o 1 &amp; 1, seleccione **iniciar sesión**a  >  **continuación** y Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md).
+    1. Si el registrador de dominios usa la [conexión de dominio](#domain-connect-registrars-integrating-with-microsoft-365), seleccione **iniciar sesión**  >  **junto** y Microsoft [configurará los registros automáticamente](../get-help-with-domains/domain-connect.md).
     
     2. Puede hacer que le envíen un correo electrónico al contacto registrado para el dominio con un código de comprobación. Si no reconoce o tiene acceso al correo electrónico en el registro, puede usar la tercera opción.
     
     3. Puede usar un registro TXT para comprobar su dominio. Seleccione esta y seleccione **siguiente** para ver instrucciones sobre cómo agregar este registro DNS al sitio web de su registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
+
+    4. Puede Agregar un archivo de texto al sitio web del dominio. Seleccione y descargue el archivo. txt desde el Asistente de configuración y, después, cargue el archivo en la carpeta de nivel superior del sitio Web. La ruta de acceso al archivo debe tener un aspecto similar a: `http://mydomain.com/ms39978200.txt` . Le confirmaremos que es el propietario del dominio buscando el archivo en el sitio Web.
     
 6. Elija cómo desea realizar los cambios de DNS necesarios para que Office use su dominio.
     
@@ -124,7 +126,7 @@ Siga los pasos a continuación para agregar un registro personalizado para un si
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con conexión de dominio
 

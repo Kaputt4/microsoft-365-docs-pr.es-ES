@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: La guía básica para configurar los servicios en la nube para Microsoft 365.
-ms.openlocfilehash: 2b6b69f25888305232ba93d9d738319fe5137019
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694043"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315770"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Plan de desarrollo de servicios en la nube para Microsoft 365
 
@@ -28,11 +28,11 @@ Si tiene implementaciones basadas en servidor existentes para Exchange, SharePoi
 
 ## <a name="deploy"></a>Implementar
 
-En la fase de implementación de los servicios en la nube:
+Para implementar los servicios en la nube:
 
 - [Preparar sus servicios](configure-services-and-applications.md)
 - [Migrar los datos locales a Microsoft 365](migrate-data-to-office-365.md)
-- Implementar los servicios en la nube
+- Preparar los servicios en la nube para los usuarios
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [Skype Empresarial](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -42,7 +42,7 @@ En la fase de implementación de los servicios en la nube:
 
 ## <a name="manage"></a>Manage
 
-En la fase de administración de los servicios en la nube: 
+Para administrar los servicios en la nube: 
 
 - [Comprobar el estado del servicio](view-service-health.md)
 - [Comprender las opciones de soporte técnico](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
