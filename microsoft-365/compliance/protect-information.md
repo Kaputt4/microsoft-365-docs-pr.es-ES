@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Implemente las capacidades de Microsoft Information Protection (MIP) mediante el cumplimiento de Microsoft 365 para ayudarle a descubrir, clasificar y proteger información confidencial donde vive o se desplaza.
-ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815212"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308351"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Protección de la información de Microsoft en Microsoft 365
 
@@ -41,7 +41,7 @@ Para comprender su panorama de datos e identificar datos importantes en todo el 
 |Funcionalidad|¿Qué problemas soluciona?|Introducción|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Tipos de información confidencial](sensitive-information-type-entity-definitions.md)| Identifica los datos confidenciales mediante expresiones regulares integradas o personalizadas o una función, junto con evidencias corroboradoras que incluyen palabras clave, niveles de confianza y proximidad.| [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)|
-|[Clasificadores capacitados (versión preliminar)](classifier-getting-started-with.md)| Clasifica datos para usted, usando uno de los clasificadores integrados o entrena un classier con su propio contenido | [Crear un clasificador que se pudiera entrenar (versión preliminar)](classifier-creating-a-trainable-classifier.md) |
+|[Clasificadores capacitados (versión preliminar)](classifier-getting-started-with.md)| Clasifica datos para usted, usando uno de los clasificadores integrados o entrena un clasificador con su propio contenido | [Crear un clasificador que se pudiera entrenar (versión preliminar)](classifier-creating-a-trainable-classifier.md) |
 |[Clasificación de datos](data-classification-overview.md) | Identifica los elementos que tienen una etiqueta de confidencialidad, una etiqueta de retención o que se han clasificado como un tipo de información confidencial en la organización y las acciones que los usuarios están tomando en ellos.  | [Introducción al explorador de contenido](data-classification-content-explorer.md)<br /><br /> [Introducción al explorador de actividad](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Proteger los datos

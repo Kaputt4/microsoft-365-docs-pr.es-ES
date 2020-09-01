@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d8c315364e9a00a49ad825ef2652ff4e8a7476b
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755277"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308444"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -133,7 +133,7 @@ Después, configure los grupos para que a los miembros se les asignen automátic
 
 En esta fase se agregan las cuentas de usuario de ejemplo para la campaña política.
 
-Primero, [Conéctese al módulo de PowerShell de Azure Active Directory para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Primero, [Conéctese al módulo de PowerShell de Azure Active Directory para Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
 
 Después, rellene el nombre de la organización, su ubicación y una contraseña común y, luego, ejecute estos comandos en el entorno de script integrado (ISE) o el símbolo del sistema de PowerShell:
 
@@ -206,6 +206,6 @@ Cree los cuatro tipos distintos de sitios de grupo de SharePoint Online en este 
 
 [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

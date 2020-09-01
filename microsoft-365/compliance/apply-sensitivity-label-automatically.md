@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5b466084701d2424aeaf9e7ee644d33861fdd5f3
+ms.sourcegitcommit: 87449335d9a1124ee82fa2e95e4745155a95a62f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656831"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47310891"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -255,7 +255,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
     
     ![Asistente de etiquetado automático de la página Elegir ubicaciones ](../media/locations-auto-labeling-wizard.png)
     
-    Para OneDrive, debe especificar cuentas individuales. La dirección URL de OneDrive de un usuario tiene el siguiente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    Debe especificar los sitios individuales de SharePoint y las cuentas de OneDrive. Para OneDrive, la dirección URL de la cuenta de OneDrive de un usuario tiene el siguiente formato: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Por ejemplo, para un usuario en el espacio empresarial de Contoso con un nombre de usuario "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
@@ -312,4 +312,44 @@ También puede ver los resultados de la directiva de etiquetado automático con 
 
 > [!TIP]
 > También puede utilizar el explorador de contenidos para identificar las ubicaciones que tienen documentos con información confidencial, pero que no están etiquetados. Con esta información, considere la posibilidad de agregar estas ubicaciones a la directiva de etiquetado automático e incluir los tipos de información confidencial identificados como reglas.
+
+### <a name="use-powershell-for-auto-labeling-policies"></a>Usar PowerShell para las directivas de etiquetado automático
+
+Ahora puede usar el [Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) para crear y configurar directivas de etiquetado automático. Esto significa que ahora puede redactar por completo la creación y mantenimiento de las políticas de etiquetado automático, lo que también ofrece un método más eficaz para especificar múltiples direcciones URL para las ubicaciones de OneDrive y SharePoint.
+
+Antes de ejecutar los comandos de PowerShell, primero debe [conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+Crear una nueva directiva de etiquetado automático: 
+
+```powershell
+New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+Este comando crea una directiva de etiquetado automático para un sitio de SharePoint que especifique. Para una ubicación de OneDrive use en su lugar el parámetro *OneDriveLocation*. 
+
+Para agregar sitios adicionales a una directiva de etiquetado automático existente:
+
+```powershell
+$spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
+Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+
+Este comando especifica la URL de SharePoint adicional en una variable que luego se agrega a una directiva de etiquetado automático existente. Para agregar ubicaciones de OneDrive en su lugar, use el parámetro *AddOneDriveLocation* con una variable diferente, como *$OneDriveLocations*.
+
+Crear una nueva regla de directiva de etiquetado automático:
+
+```powershell
+New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
+```
+
+Para una directiva de etiquetado automático existente, este comando crea una nueva regla de directiva para detectar el tipo de información confidencial del **número de la seguridad social de los Estados Unidos (SSN)**, que tiene un identificador de entidad a44669fe-0d48-453d-a9b1-2cc83f2cba77. Para encontrar los ID de la entidad para otros tipos de información confidencial, consulte [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md).
+
+Para obtener más información sobre los cmdlets de PowerShell que son compatibles con las directivas de etiquetado automático, los parámetros disponibles y algunos ejemplos, vea la ayuda del cmdlet siguiente:
+
+- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy?view=exchange-ps)
+- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule?view=exchange-ps)
+- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy?view=exchange-ps)
+- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule?view=exchange-ps)
+- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy?view=exchange-ps)
+- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule?view=exchange-ps)
 

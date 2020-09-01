@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294780"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308384"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novedades de Office 365 ATP
 
@@ -39,7 +40,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Comprobar las directivas mediante el analizador de configuración](configuration-analyzer-for-security-policies.md)
 - [Invalidar manualmente los veredictos de filtros usando la lista de permitidos/bloqueados del inquilino](tenant-allow-block-list.md)
-- [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [Capacidades ampliadas en el explorador de amenazas, incluidos los usuarios de destino principales, las reglas de transporte y los conectores](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - La exposición invalida la información en el [Explorador de amenazas](threat-explorer.md) (el correo electrónico fue permitido o bloqueado por el inquilino o la Directiva de usuario)
 - Amenazas de dirección URL de exposición en el [Explorador de amenazas](threat-explorer.md) (malware, phish, correo no deseado o ninguno)
 
@@ -99,7 +100,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Office 365 ATP está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

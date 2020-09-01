@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno de pruebas y desarrollo de Microsoft 365.'
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588033"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308408"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -65,7 +65,7 @@ Si desea crear un sitio de grupo de SharePoint Online aislado en una configuraci
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: crear cuentas de usuario y grupos de acceso
 
-Siga las instrucciones descritas en [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) para conectarse a su suscripción de prueba con su cuenta de administrador global desde:
+Siga las instrucciones descritas en [Connect to Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) para conectarse a su suscripción de prueba con su cuenta de administrador global desde:
 
 - Su equipo (para el entorno de desarrollo y pruebas ligero de Microsoft 365).
 
@@ -238,7 +238,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
 
 13. Haga clic en el botón de puntos suspensivos del archivo **Documento.docx** y, a continuación, en **Obtener un vínculo**.
 
-14. Copie la dirección URL en el cuadro de diálogo **compartir "Document. docx"** y péguela en una nueva línea en el Bloc de notas o en el editor de texto y, a continuación, cierre el cuadro de diálogo **compartir "Document. docx"** .
+14. Copie la dirección URL en el cuadro de diálogo **compartir "Document.docx"** y péguela en una nueva línea en el Bloc de notas o en el editor de texto y, a continuación, cierre el cuadro de diálogo **compartir "Document.docx"** .
 
 15. Cierre las pestañas **Documentos del ProyectoX** y **SharePoint** del explorador y, a continuación, haga clic en la pestaña **Página principal de Microsoft Office**.
 
@@ -286,7 +286,7 @@ Cuando esté preparado para implementar un sitio de grupo de SharePoint Online a
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guías del laboratorio de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [Configuración básica empresarial simulada](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
