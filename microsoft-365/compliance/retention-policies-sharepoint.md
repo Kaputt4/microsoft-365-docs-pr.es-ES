@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127407"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315793"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -71,7 +71,7 @@ Cuando los ajustes de retención son sólo de retención o sólo de borrado, las
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
 
-El versionado es una característica de todas las bibliotecas de documentos en SharePoint y OneDrive. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, vea [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+El versionado es una característica de todas las bibliotecas de documentos en SharePoint y OneDrive. De forma predeterminada, el control de versiones retiene un mínimo de 500 versiones principales, aunque puede aumentar este límite. Para obtener más información, consulte [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) y [Cómo funciona el control de versiones en las listas y bibliotecas](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 La configuración de conserva solo retiene todas las versiones de un documento en una colección de sitios de SharePoint o en una cuenta de OneDrive. Cuando se edita por primera vez un documento que está sujeto a una retención o que solo contiene configuraciones, se copia una versión del documento original a la biblioteca de conservación de documentos. Cuando se elimina un documento que está sujeto a una configuración de retención o de solo retención, todas las versiones se copian en la biblioteca de conservación de documentos si se habilita el control de versiones. Cada versión de un documento de la Biblioteca de conservación de documentos es un elemento independiente con un periodo de retención distinto:
   
@@ -81,6 +81,10 @@ La configuración de conserva solo retiene todas las versiones de un documento e
 
 > [!NOTE]
 > Las versiones preservadas de los documentos de SharePoint y OneDrive no se pueden buscar con las herramientas de eDiscovery.
+
+En el caso de los elementos que están sujetos a las directivas de retención (o a una suspensión legal), los límites del control de versiones de la biblioteca de documentos se omiten hasta que se alcanza el período de retención del documento. En este escenario, las versiones antiguas no se purgan automáticamente y los usuarios no pueden eliminar versiones.
+
+Este no es el caso de las etiquetas de retención cuando una directiva de retención no se aplica al sitio. En su lugar, se tienen en cuenta los límites del control de versiones, por lo que las versiones anteriores se eliminan automáticamente para dar lugar a nuevas versiones, pero los usuarios todavía no pueden eliminar versiones.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Cuando un usuario deja la organización
 
@@ -94,4 +98,4 @@ Si un usuario abandona su organización, cualquier archivo que esté sujeto a un
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si está listo para configurar la retención en Microsoft 365, vea [Introducción a las directivas de retención y las etiquetas de retención](get-started-with-retention.md).
+Si está listo para configurar la retención en Microsoft 365, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).

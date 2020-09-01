@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree y publique automáticamente etiquetas de retención para aplicar etiquetas de manera automática y así conservar lo que necesita y eliminar lo que no
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648809"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315825"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -38,8 +38,8 @@ Las etiquetas de retención auto aplicadas son poderosas porque:
     
 - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
     
-Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o una coincidencia para [clasificadores que se puedan entrenar](classifier-getting-started-with.md).
-    
+Las etiquetas de retención se pueden aplicar a contenido automáticamente cuando dicho contenido contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para [clasificadores que se puedan entrenar](classifier-getting-started-with.md).
+
 Los procesos para aplicar automáticamente una etiqueta de retención se basan en estas condiciones:
 
 ![Diagrama de roles y tareas para etiquetas de aplicación automática](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ Puede aplicar etiquetas de retención al contenido automáticamente cuando éste
 
 - [Tipos específicos de información confidencial](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [Palabras clave específicas que coinciden con una consulta que haya creado](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [Palabras clave específicas o propiedades que permiten búsquedas que coinciden con una consulta que usted creó](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [Una coincidencia para clasificadores que se pueden entrenar](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ Para obtener más información acerca de estas opciones, vea [Ajustar reglas par
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
-Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta a contenido que coincida con palabras, frases o propiedades que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
+Puede aplicar etiquetas automáticamente al contenido mediante una consulta que contenga palabras, frases o valores de propiedades que permiten búsquedas específicos. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
 
-Cuando aplica automáticamente las etiquetas para las propiedades que se pueden buscar, no se puede usar en la consulta ningún alias para la propiedad administrada. Debe usarse el nombre real de la propiedad administrada, por ejemplo, RefinableString01.
+![Editor de consultas](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-Para obtener más información sobre la sintaxis de consultas, vea:
+Para obtener más información sobre la sintaxis de consulta que usa el Lenguaje de consultas de palabras clave (KQL), vea [Referencia de la sintaxis del Lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
+Las etiquetas basadas en consultas usan el índice de búsqueda para identificar contenido. Para obtener más información sobre las propiedades que permiten búsquedas que puede usar, vea:
 
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
 - [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> Aunque las propiedades administradas de SharePoint admiten alias, no los utilice cuando configure las etiquetas de retención. Siempre debe especificar el nombre real de la propiedad administrada, por ejemplo, "RefinableString01".
+
 Consultas de ejemplos:
 
-- Exchange
-    - asunto:"Finanzas trimestrales"
-    - destinatarios: jorgem<!--nolink-->@contoso.com
-- SharePoint y OneDrive
-    - contenttype:contract
-    - sitio:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![Editor de consultas](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| Carga de trabajo | Ejemplo |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
 
