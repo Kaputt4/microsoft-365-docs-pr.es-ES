@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Administre estos roles de administrador de Azure en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898033"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289098"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Roles de Azure Active Directory en el Centro de administración de Microsoft 365
 
@@ -62,6 +62,8 @@ A continuación, presentamos una lista de todos los roles de administrador dispo
 |Administrador de grupos   |Permite crear grupos y administrar la configuración de todos los grupos en los centros de administración.|
 |Invitador de usuarios invitados     |    Administra las invitaciones de usuarios invitados B2B de Azure Active Directory.     |
 |Administrador del departamento de soporte técnico     | Restablece las contraseñas y vuelve a autenticarlas para todos los usuarios que no sean administradores y para algunos roles de administrador. Administra solicitudes de servicio y supervisa el estado del servicio.      |
+|Administrador de Insights     | Administra todos los aspectos de la aplicación Microsoft 365 Insights, lee información de Azure Active Directory, puede supervisar el estado del servicio y crear y administrar solicitudes de servicio.      |
+|Administrador empresarial de Insights     | Lee informes y detalles en la aplicación de Microsoft 365 Insights.      |
 |Administrador de Intune     | Tiene acceso completo a Intune, administra usuarios y dispositivos para asociar directivas. También crea y administra grupos.      |
 |Administrador de Kaizala     |    Tiene acceso completo a todas las características de administración y datos de Kaizala, y administra las solicitudes de servicio.     |
 |Administrador de licencias     |     Asigna y elimina las licencias de los usuarios y edita su ubicación de uso.    |
