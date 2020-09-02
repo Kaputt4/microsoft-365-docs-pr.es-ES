@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervisar y administrar la eliminación de contenido, independientemente de si usa una revisión de disposición o el contenido se elimina automáticamente de acuerdo con la configuración que haya configurado.
-ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294769"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321999"
 ---
 # <a name="disposition-of-content"></a>Disposición del contenido
 
->*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 Use la pestaña **disposición** de la **Administración de registros** en el centro de cumplimiento de Microsoft 365 para administrar las revisiones de disposición y ver [los registros](records-management.md#records) que se han eliminado automáticamente al final del período de retención. 
 
@@ -62,7 +62,7 @@ Cuando el contenido alcanza el final de su período de retención, existen vario
 
 Cuando se activa una revisión de disposición al final del período de retención:
   
-- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales, grupos de distribución o de seguridad o grupos de 365 de Microsoft ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Tenga en cuenta que las notificaciones se envían cada semana.
+- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo. Tenga en cuenta que las notificaciones se envían cada semana.
     
 - Los revisores van a la pestaña **disposición** del centro de cumplimiento de Microsoft 365 para revisar el contenido y decidir si desea eliminarlo permanentemente, ampliar el período de retención o aplicar una etiqueta de retención diferente.
 

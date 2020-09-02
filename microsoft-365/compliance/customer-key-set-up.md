@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Microsoft 365 para Exchange Online, Skype empresarial, SharePoint Online, OneDrive para la empresa y los archivos de Teams.
-ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868895"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324216"
 ---
 # <a name="set-up-customer-key"></a>Configurar la clave de cliente
 
@@ -31,7 +31,9 @@ Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En 
   
 ## <a name="before-you-set-up-customer-key"></a>Antes de configurar la clave de cliente
 
-Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. La clave de cliente de Microsoft 365 se ofrece en Office 365 E5 o en la SKU de cumplimiento avanzada. Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [tenant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
+Antes de empezar, asegúrese de que dispone de la licencia adecuada para su organización. A partir del 1 de abril de 2020, la clave de cliente de Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & las SKU de gobierno. Office 365 Advanced Compliance SKU ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento de Office 365 avanzadas existentes seguirán siendo compatibles.
+
+Para comprender los conceptos y procedimientos de este tema, revise la documentación de [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) . Además, familiarícese con los términos que se usan en Azure, por ejemplo, [inquilino de Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
 
 FastTrack solo se usa para recopilar la información de configuración de servicio y el inquilino necesario que se usa para registrar la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para usted y para nuestros partners enviar la información necesaria con el mismo método. FastTrack también facilita el archivado de los datos facilitados en la oferta.
   

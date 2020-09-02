@@ -1,5 +1,5 @@
 ---
-title: Eliminar elementos en el buzón de la nube en la carpeta elementos recuperables de la retención
+title: Eliminar elementos de la carpeta elementos recuperables del buzón de correo en la nube en suspensión
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Obtenga información acerca de cómo eliminar elementos en una carpeta de elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón se coloca en retención legal.
+description: Obtenga información sobre cómo los administradores pueden eliminar elementos de una carpeta de elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón de correo se encuentra en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127027"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321971"
 ---
-# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en suspensión-ayuda de administración
+# <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
-La carpeta elementos recuperables de un buzón de Exchange Online existe para protegerse de eliminaciones accidentales o malintencionadas. También se usa para almacenar elementos que se retienen y a los que acceden las características de cumplimiento, como las búsquedas de exhibición de documentos electrónicos y las suspensiones. Sin embargo, en algunos casos, las organizaciones pueden tener datos que se conservan de forma involuntaria en la carpeta elementos recuperables que deben eliminar. Por ejemplo, un usuario podría enviar o reenviar sin saberlo un mensaje de correo electrónico que contenga información confidencial o información que pueda tener consecuencias serias para la empresa. Incluso si el mensaje se elimina de forma permanente, es posible que se retenga indefinidamente, ya que se ha realizado una suspensión legal en el buzón. Este escenario se conoce como derrame de datos porque los datos se han derramado involuntariamente en Office 365. En estas situaciones, puede eliminar los elementos de la carpeta elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si ese buzón se coloca en suspensión con una de las diferentes características de retención en Office 365. Estos tipos de retenciones incluyen retenciones por juicio, suspensiones locales, suspensiones de eDiscovery y directivas de retención creadas en el centro de seguridad y cumplimiento en Office 365 o en Microsoft 365.
+La carpeta elementos recuperables de un buzón de Exchange Online existe para protegerse de eliminaciones accidentales o malintencionadas. También se usa para almacenar elementos que se retienen y a los que acceden las características de cumplimiento, como las búsquedas de exhibición de documentos electrónicos y las suspensiones. Sin embargo, en algunos casos, las organizaciones pueden tener datos que se conservan de forma involuntaria en la carpeta elementos recuperables que deben eliminar. Por ejemplo, un usuario podría enviar o reenviar sin saberlo un mensaje de correo electrónico que contenga información confidencial o información que pueda tener consecuencias serias para la empresa. Incluso si el mensaje se elimina de forma permanente, es posible que se retenga indefinidamente, ya que se ha realizado una suspensión legal en el buzón. Este escenario se conoce como *derrame de datos* porque los datos se han *derramado* involuntariamente en Office 365. En estas situaciones, puede eliminar los elementos de la carpeta elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si ese buzón se coloca en suspensión con una de las diferentes características de retención en Office 365. Estos tipos de retenciones incluyen retenciones por juicio, suspensiones locales, suspensiones de eDiscovery y directivas de retención creadas en el centro de seguridad y cumplimiento en Office 365 o en Microsoft 365.
   
- En este artículo se explica cómo eliminar elementos de la carpeta elementos recuperables para los buzones de correo basados en la nube que están en suspensión. Este procedimiento implica deshabilitar el acceso al buzón y deshabilitar la recuperación de un único elemento, deshabilitar el Asistente para carpeta administrada para procesar el buzón, quitar temporalmente la retención, eliminar elementos de la carpeta elementos recuperables y, a continuación, revertir el buzón a su configuración anterior. Este es el proceso: 
+ En este artículo se explica cómo los administradores pueden eliminar elementos de la carpeta elementos recuperables para los buzones de correo basados en la nube que están en suspensión. Este procedimiento implica deshabilitar el acceso al buzón y deshabilitar la recuperación de un único elemento, deshabilitar el Asistente para carpeta administrada para procesar el buzón, quitar temporalmente la retención, eliminar elementos de la carpeta elementos recuperables y, a continuación, revertir el buzón a su configuración anterior. Este es el proceso:
   
 [Paso 1: recopilar información sobre el buzón](#step-1-collect-information-about-the-mailbox)
 
@@ -44,7 +44,7 @@ La carpeta elementos recuperables de un buzón de Exchange Online existe para pr
 [Paso 6: revertir el buzón a su estado anterior](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> Los procedimientos descritos en este artículo harán que los datos se eliminen de forma permanente (purga) de un buzón de correo de Exchange Online. Esto significa que los mensajes que elimine de la carpeta elementos recuperables no se pueden recuperar y no estarán disponibles para la detección legal o para otros fines de cumplimiento. Si desea eliminar mensajes de un buzón que está en suspensión como parte de una retención por juicio, retención local, retención de exhibición de documentos electrónicos o Directiva de retención creada en el centro de seguridad y cumplimiento, consulte la administración de registros o los departamentos jurídicos antes de quitar la retención. Es posible que su organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad. 
+> Los procedimientos descritos en este artículo harán que los datos se eliminen de forma permanente (purga) de un buzón de correo de Exchange Online. Esto significa que los mensajes que elimine de la carpeta elementos recuperables no se pueden recuperar y no estarán disponibles para la detección legal o para otros fines de cumplimiento. Si desea eliminar mensajes de un buzón que está en suspensión como parte de una retención por juicio, retención local, retención de exhibición de documentos electrónicos o Directiva de retención creada en el centro de seguridad y cumplimiento, consulte la administración de registros o los departamentos jurídicos antes de quitar la retención. Es posible que su organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad.
   
 ## <a name="before-you-delete-items"></a>Antes de eliminar elementos
 
@@ -60,52 +60,51 @@ La carpeta elementos recuperables de un buzón de Exchange Online existe para pr
 
 El primer paso consiste en recopilar propiedades seleccionadas del buzón de destino que afectarán a este procedimiento. Asegúrese de anotar esta configuración o guardarla en un archivo de texto, ya que cambiará algunas de estas propiedades y, a continuación, revertirá a los valores originales en el paso 6 después de eliminar elementos de la carpeta elementos recuperables. Esta es una lista de las propiedades de buzón que debe recopilar.
   
-- *SingleItemRecoveryEnabled* y *RetainDeletedItemsFor*. Si es necesario, deshabilitará la recuperación única y aumentará el período de retención de elementos eliminados en el paso 3. 
+- *SingleItemRecoveryEnabled*  y  *RetainDeletedItemsFor*. Si es necesario, deshabilitará la recuperación única y aumentará el período de retención de elementos eliminados en el paso 3.
 
-- *LitigationHoldEnabled* y *InPlaceHolds*. Debe identificar todas las suspensiones colocadas en el buzón de modo que pueda quitarlas temporalmente en el paso 3. Consulte la sección [More Information](#more-information) para obtener sugerencias sobre cómo identificar la suspensión de tipo que se puede colocar en un buzón. 
+- *LitigationHoldEnabled*  y  *InPlaceHolds*. Debe identificar todas las suspensiones colocadas en el buzón de modo que pueda quitarlas temporalmente en el paso 3. Consulte la sección [More Information](#more-information) para obtener sugerencias sobre cómo identificar la suspensión de tipo que se puede colocar en un buzón.
 
 Además, debe obtener la configuración de acceso de cliente de buzones de correo para que pueda deshabilitarla temporalmente de modo que el propietario (u otros usuarios) no pueda obtener acceso al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta elementos recuperables. Después de eliminar los elementos de la carpeta elementos recuperables en el paso 5, usará esta información para comprobar que los elementos se han quitado.
   
-1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online. 
-    
+1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online.
+
 2. Ejecute el siguiente comando para obtener información sobre la recuperación de elementos individuales y el período de retención de elementos eliminados.
 
     ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
-   Si la recuperación de un único elemento está habilitada, deberá deshabilitarla en el paso 2. Si el período de retención de elementos eliminados no está establecido en 30 días (el valor máximo en Exchange Online), puede aumentarlo en el paso 2. 
-    
-3. Ejecute el siguiente comando para obtener la configuración de acceso al buzón del buzón. 
-    
+   Si la recuperación de un único elemento está habilitada, deberá deshabilitarla en el paso 2. Si el período de retención de elementos eliminados no está establecido en 30 días (el valor máximo en Exchange Online), puede aumentarlo en el paso 2.
+
+3. Ejecute el siguiente comando para obtener la configuración de acceso al buzón del buzón.
+
     ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
    Deshabilitará todos estos métodos de acceso en el paso 2.
-    
+
 4. Ejecute el siguiente comando para obtener información sobre las retenciones y directivas de retención que se aplican al buzón.
-    
+
     ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
-
    > [!TIP]
-    > Si hay demasiados valores en la propiedad *InPlaceHolds* y no todos ellos se muestran, puede ejecutar el `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` comando para mostrar cada valor en una línea independiente. 
+    > Si hay demasiados valores en la propiedad  *InPlaceHolds*  y no todos ellos se muestran, puede ejecutar el  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` comando para mostrar cada valor en una línea independiente.
   
 5. Ejecute el siguiente comando para obtener información acerca de las directivas de retención de toda la organización. 
 
     ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
-   
+
    Si su organización tiene alguna directiva de retención para toda la organización, tendrá que excluir el buzón de estas directivas en el paso 3.
 
    > [!TIP]
-    > Si hay demasiados valores en la propiedad *InPlaceHolds* y no todos ellos se muestran, puede ejecutar el `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` comando para mostrar cada valor en una línea independiente. 
+    > Si hay demasiados valores en la propiedad  *InPlaceHolds*  y no todos ellos se muestran, puede ejecutar el  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` comando para mostrar cada valor en una línea independiente. 
   
-6. Ejecute el siguiente comando para obtener el tamaño actual y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de correo principal del usuario. 
+6. Ejecute el siguiente comando para obtener el tamaño actual y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de correo principal del usuario.
 
     ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
@@ -113,7 +112,7 @@ Además, debe obtener la configuración de acceso de cliente de buzones de corre
 
    Si el buzón de archivo del usuario está habilitado, ejecute el siguiente comando para obtener el tamaño y el número total de elementos de las carpetas y subcarpetas de la carpeta elementos recuperables de su buzón de archivo. 
 
-    ```s
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -121,35 +120,35 @@ Además, debe obtener la configuración de acceso de cliente de buzones de corre
   
 ## <a name="step-2-prepare-the-mailbox"></a>Paso 2: preparar el buzón de correo
 
-Después de recopilar y guardar información sobre el buzón de correo, el siguiente paso consiste en preparar el buzón realizando las siguientes tareas: 
+Después de recopilar y guardar información sobre el buzón de correo, el siguiente paso consiste en preparar el buzón realizando las siguientes tareas:
   
-- **Deshabilite el acceso del cliente al buzón** de correo para que el propietario del buzón no pueda obtener acceso a su buzón y realice cambios en los datos del buzón durante este procedimiento. 
-    
-- **Aumente el período de retención de elementos eliminados** a 30 días (el valor máximo en Exchange Online) para que los elementos no se purguen de la carpeta elementos recuperables antes de que pueda eliminarlos en el paso 5. 
-    
-- **Deshabilite la recuperación** de elementos individuales para que los elementos no se conserven (durante el período de retención del elemento eliminado) después de eliminarlos de la carpeta elementos recuperables en el paso 5. 
-    
-- **Deshabilite el Asistente para carpeta administrada** para que no procese el buzón y conserve los elementos que eliminó en el paso 5. 
-    
+- **Deshabilite el acceso del cliente al buzón** de correo para que el propietario del buzón no pueda obtener acceso a su buzón y realice cambios en los datos del buzón durante este procedimiento.
+
+- **Aumente el período de retención de elementos eliminados** a 30 días (el valor máximo en Exchange Online) para que los elementos no se purguen de la carpeta elementos recuperables antes de que pueda eliminarlos en el paso 5.
+
+- **Deshabilite la recuperación** de elementos individuales para que los elementos no se conserven (durante el período de retención del elemento eliminado) después de eliminarlos de la carpeta elementos recuperables en el paso 5.
+
+- **Deshabilite el Asistente para carpeta administrada** para que no procese el buzón y conserve los elementos que eliminó en el paso 5.
+
 Realice los siguientes pasos en Exchange Online PowerShell.
   
 1. Ejecute el siguiente comando para deshabilitar el acceso de cliente al buzón. La sintaxis del comando presupone que todos los métodos de acceso de cliente están habilitados en el buzón.
 
-    ```   
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
    > [!NOTE]
-    > La deshabilitación de todos los métodos de acceso de cliente al buzón puede tardar hasta 60 minutos. Tenga en cuenta que, al deshabilitar estos métodos de acceso, no se desconectará el propietario del buzón en el que está actualmente conectado. Si el propietario no ha iniciado sesión, no podrá tener acceso a su buzón una vez que estos métodos de acceso estén deshabilitados. 
+    > La deshabilitación de todos los métodos de acceso de cliente al buzón puede tardar hasta 60 minutos. Tenga en cuenta que, al deshabilitar estos métodos de acceso, no se desconectará el propietario del buzón en el que está actualmente conectado. Si el propietario no ha iniciado sesión, no podrá tener acceso a su buzón una vez que estos métodos de acceso estén deshabilitados.
   
-2. Ejecute el siguiente comando para aumentar el período de retención de elementos eliminados durante 30 días como máximo. Se supone que la configuración actual es inferior a 30 días. 
+2. Ejecute el siguiente comando para aumentar el período de retención de elementos eliminados durante 30 días como máximo. Se supone que la configuración actual es inferior a 30 días.
 
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. Ejecute el siguiente comando para deshabilitar la recuperación de elementos individuales.
-    
+
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
@@ -170,7 +169,7 @@ El último paso para poder eliminar elementos de la carpeta elementos recuperabl
 > [!CAUTION]
 > Como se indicó anteriormente, consulte con la administración de registros o los departamentos jurídicos antes de quitar una retención de un buzón de correo. 
   
- ### <a name="litigation-hold"></a>Retención por juicio
+### <a name="litigation-hold"></a>Retención por juicio
   
 Ejecute el siguiente comando en Exchange Online PowerShell para quitar una retención por juicio del buzón.
 
@@ -178,13 +177,12 @@ Ejecute el siguiente comando en Exchange Online PowerShell para quitar una reten
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
-   
 > [!NOTE]
 > De forma similar a la deshabilitación de los métodos de acceso de cliente y la recuperación de elementos individuales, puede tardar hasta 60 minutos en quitar la retención por juicio. No elimine elementos de la carpeta elementos recuperables hasta que haya transcurrido este período. 
   
- ### <a name="in-place-hold"></a>Retención en contexto
+### <a name="in-place-hold"></a>Retención en contexto
   
-Ejecute el siguiente comando en Exchange Online PowerShell para identificar la conservación local que está colocada en el buzón. Use el GUID de la retención local que identificó en el paso 1. 
+Ejecute el siguiente comando en Exchange Online PowerShell para identificar la conservación local que está colocada en el buzón. Use el GUID de la retención local que identificó en el paso 1.
 
 ```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
@@ -192,25 +190,25 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 
 Después de identificar la conservación local, puede usar el centro de administración de Exchange (EAC) o Exchange Online PowerShell para quitar el buzón de la retención. Para obtener más información, vea [crear o quitar una conservación local](https://go.microsoft.com/fwlink/?linkid=852668).
   
- ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Directivas de retención aplicadas a buzones específicos
+### <a name="retention-policies-applied-to-specific-mailboxes"></a>Directivas de retención aplicadas a buzones específicos
   
-Ejecute el siguiente comando en el [PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/?linkid=627084) para identificar la Directiva de retención que se aplica al buzón. Use el GUID (sin incluir el `mbx` `skp` prefijo o) para la Directiva de retención que identificó en el paso 1. 
+Ejecute el siguiente comando en el [PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/?linkid=627084) para identificar la Directiva de retención que se aplica al buzón. Este comando también devolverá todas las directivas de retención de conversaciones de Microsoft Teams aplicadas a un buzón. Use el GUID (sin incluir el `mbx` `skp` prefijo o) para la Directiva de retención que identificó en el paso 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar la Directiva de retención, vaya a la página retención del **gobierno de información** del centro de \> **Retention** seguridad & cumplimiento, edite la Directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la Directiva de retención. 
+Después de identificar la Directiva de retención, vaya a la página retención del **gobierno de información**del centro de  >  **Retention** seguridad & cumplimiento, edite la Directiva de retención que identificó en el paso anterior y quite el buzón de la lista de destinatarios que se incluyen en la Directiva de retención.
   
- ### <a name="organization-wide-retention-policies"></a>Directivas de retención de toda la organización
+### <a name="organization-wide-retention-policies"></a>Directivas de retención de toda la organización
   
-Las directivas de retención de toda la organización y de Exchange se aplican a todos los buzones de la organización. Se aplican en el nivel de la organización (no en el de buzón de correo) y se devuelven al ejecutar el cmdlet **Get-OrganizationConfig** en el paso 1. Ejecute el siguiente comando en el [PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/?linkid=627084) para identificar las directivas de retención de toda la organización. Use el GUID (sin incluir el `mbx` prefijo) para las directivas de retención de toda la organización que identificó en el paso 1. 
+Las directivas de retención para toda la organización, para todo el ámbito de Exchange y para todo el equipo se aplican a todos los buzones de la organización. Se aplican en el nivel de la organización (no en el de buzón de correo) y se devuelven al ejecutar el cmdlet **Get-OrganizationConfig** en el paso 1. Ejecute el siguiente comando en el [PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/?linkid=627084) para identificar las directivas de retención de toda la organización. Use el GUID (sin incluir el  `mbx` prefijo) para las directivas de retención de toda la organización que identificó en el paso 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Después de identificar las directivas de retención de toda la organización, vaya a la página retención del **gobierno** \> **Retention** de la información en el centro de seguridad & cumplimiento, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios excluidos. Al hacerlo, se quitará el buzón de correo del usuario de la Directiva de retención. 
+Después de identificar las directivas de retención de toda la organización, vaya a la página retención del **gobierno**  >  **Retention** de la información en el centro de seguridad & cumplimiento, edite cada directiva de retención de toda la organización que identificó en el paso anterior y agregue el buzón a la lista de destinatarios excluidos. Al hacerlo, se quitará el buzón de correo del usuario de la Directiva de retención.
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
@@ -226,9 +224,9 @@ Una vez que haya identificado que un buzón está en suspensión debido a que se
 
 Para obtener más información acerca de las etiquetas, vea [información sobre las directivas de retención y las etiquetas de retención](retention.md).
 
- ### <a name="ediscovery-holds"></a>suspensiones de eDiscovery
+### <a name="ediscovery-holds"></a>suspensiones de eDiscovery
   
-Ejecute los siguientes comandos en [Security & el centro de cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) para identificar la retención asociada con un caso de exhibición de documentos electrónicos (denominado *suspensiones de eDiscovery*) que se aplica al buzón. Use el GUID (sin incluir el `UniH` prefijo) para la suspensión de exhibición de documentos electrónicos que identificó en el paso 1. El segundo comando muestra el nombre del caso de exhibición de documentos electrónicos con el que está asociada la retención; el tercer comando muestra el nombre de la suspensión. 
+Ejecute los siguientes comandos en [Security & el centro de cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) para identificar la retención asociada con un caso de exhibición de documentos electrónicos (denominado *suspensiones de eDiscovery*) que se aplica al buzón. Use el GUID (sin incluir el  `UniH` prefijo) para la suspensión de exhibición de documentos electrónicos que identificó en el paso 1. El segundo comando muestra el nombre del caso de exhibición de documentos electrónicos con el que está asociada la retención; el tercer comando muestra el nombre de la suspensión.
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -272,21 +270,57 @@ Debe tener asignado el rol retención legal en Exchange Online para usar el par�
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Paso 5: eliminar elementos de la carpeta elementos recuperables
 
-Ahora está listo para eliminar realmente los elementos de la carpeta elementos recuperables con los cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) y [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) en el centro de seguridad & cumplimiento. 
+Ahora está listo para eliminar realmente los elementos de la carpeta elementos recuperables con los cmdlets [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch) y [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) en el PowerShell del centro de cumplimiento de & de seguridad.
 
-Para ello, consulte [Buscar y eliminar mensajes de correo electrónico](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+Para buscar elementos que se encuentran en la carpeta elementos recuperables, le recomendamos que realice una colección de *destino*. Esto significa que se limita el ámbito de la búsqueda sólo a los elementos ubicados en la carpeta elementos recuperables. Para ello, ejecute el script en el artículo [usar búsqueda de contenido para colecciones de destino](use-content-search-for-targeted-collections.md) . Este script devuelve el valor de la propiedad ID de la carpeta para todas las subcarpetas de la carpeta elementos recuperables de destino. A continuación, use el identificador de carpeta de una consulta de búsqueda para devolver los elementos que se encuentran en esa carpeta.
+
+A continuación se muestra un resumen del proceso para buscar y eliminar elementos en la carpeta elementos recuperables de un usuario:
+
+1. Ejecute el script de la colección de destino que devuelve los identificadores de todas las carpetas en el buzón del usuario de destino. El script se conecta al PowerShell de Exchange Online PowerShell y el cumplimiento de & de seguridad de la misma sesión de PowerShell. Para obtener más información, vea [ejecutar el script para obtener una lista de las carpetas de un buzón](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site).
+
+2. Copie los identificadores de carpeta de todas las subcarpetas de la carpeta elementos recuperables. Como alternativa, puede redirigir el resultado del script a un archivo de texto.
+
+   Aquí tiene una lista y una descripción de las subcarpetas de la carpeta elementos recuperables en los que puede buscar y eliminar elementos:
+
+   - **Eliminaciones**: contiene elementos eliminados temporalmente cuyo período de retención de elementos eliminados no ha expirado. Los usuarios pueden recuperar elementos eliminados temporalmente de esta subcarpeta mediante la herramienta recuperar elementos eliminados de Outlook.
+
+   - **Purges**: contiene elementos eliminados de forma permanente cuyo período de retención de elementos eliminados ha expirado. Los usuarios también pueden eliminar elementos de forma permanente si purgan los elementos de la carpeta elementos recuperables. Si el buzón está en retención, se conservan los elementos eliminados de forma permanente. Esta subcarpeta no es visible para los usuarios finales.
+
+   - **Retenciones**: contiene elementos eliminados de forma rígida que han sido conservados por una retención de exhibición de documentos electrónicos o una directiva de retención. Esta subcarpeta no es visible para los usuarios finales.
+
+   - **SubstrateHolds**: contiene elementos eliminados de forma rígida de Teams y otras aplicaciones basadas en la nube que se han conservado con una directiva de retención u otro tipo de suspensión. Esta subcarpeta no es visible para los usuarios finales.
+
+3. Use el cmdlet **New-ComplianceSearch** (en el PowerShell del centro de seguridad & cumplimiento) o use la herramienta de búsqueda de contenido en el centro de cumplimiento para crear una búsqueda de contenido que devuelva elementos de la carpeta elementos recuperables del usuario de destino. Para ello, incluya el FolderId en la consulta de búsqueda de todas las subcarpetas en las que desea realizar la búsqueda. Por ejemplo, la siguiente consulta devuelve todos los mensajes de las subcarpetas Purges y eDiscoveryHolds:
+
+   ```powershell
+   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   ```
+
+   Para obtener más información y ejemplos sobre cómo ejecutar búsquedas de contenido que usan la propiedad de identificador de carpeta, vea [usar un identificador de carpeta o para realizar una colección de destino](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
+
+   > [!NOTE]
+   > Si usa el cmdlet **New-compliancesearch** para buscar en la carpeta elementos recuperables, asegúrese de usar el cmdlet **Start-compliancesearch** para ejecutar la búsqueda.
+
+4. Una vez que haya creado una búsqueda de contenido y validado que devuelva los elementos que va a eliminar, use el `New-ComplianceSearchAction -Purge -PurgeType HardDelete` comando (en seguridad & PowerShell del centro de cumplimiento) para eliminar de forma permanente los elementos devueltos por la búsqueda de contenido que creó en el paso anterior. Por ejemplo, puede ejecutar un comando similar al siguiente comando:
+
+   ```powershell
+   New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
+   ```
+
+   > [!NOTE]
+   > Se elimina un máximo de 10 elementos (por buzón de correo) cuando se ejecuta el comando anterior. Esto significa que es posible que tenga que ejecutar el `New-ComplianceSearchAction -Purge` comando varias veces para eliminar los elementos que desea eliminar en la carpeta elementos recuperables.
 
 ### <a name="verify-that-items-were-deleted"></a>Comprobar que los elementos se han eliminado
 
-Para comprobar si eliminó correctamente los elementos de la carpeta elementos recuperables de un buzón, use el cmdlet **Get-MailboxFolderStatistics** de PowerShell de Exchange Online para comprobar el tamaño y el número de elementos en la carpeta elementos recuperables. Puede comparar estas estadísticas con las que recopiló en el paso 1. 
+Para comprobar si eliminó correctamente los elementos de la carpeta elementos recuperables de un buzón, use el cmdlet **Get-MailboxFolderStatistics** de PowerShell de Exchange Online para comprobar el tamaño y el número de elementos en la carpeta elementos recuperables. Puede comparar estas estadísticas con las que recopiló en el paso 1.
   
-Ejecute el siguiente comando en para obtener el tamaño actual y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de correo principal del usuario. 
+Ejecute el siguiente comando en para obtener el tamaño actual y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de correo principal del usuario.
   
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
 
-Ejecute el siguiente comando para obtener el tamaño y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de archivo del usuario. 
+Ejecute el siguiente comando para obtener el tamaño y el número total de elementos de carpetas y subcarpetas en la carpeta elementos recuperables del buzón de archivo del usuario.
 
 ```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
@@ -297,65 +331,65 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 El último paso consiste en revertir el buzón a la configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las suspensiones que quitó en el paso 3. Incluye lo siguiente:
   
 - Cambiar el período de retención de elementos eliminados de nuevo a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
-    
+
 - Volver a habilitar la recuperación de elementos individuales.
-    
+
 - Volver a habilitar los métodos de acceso de cliente para que el propietario pueda obtener acceso a sus buzones.
-    
+
 - Volver a aplicar las directivas retenciones y de retención que quitó.
-    
+
 - Volver a habilitar el Asistente para carpeta administrada para procesar el buzón de correo.
-    
+
 > [!IMPORTANT]
-> Le recomendamos que espere 24 horas después de volver a aplicar una directiva de retención o retención (y comprobar que está en su ubicación) antes de volver a habilitar el Asistente para carpeta administrada para procesar el buzón. 
+> Le recomendamos que espere 24 horas después de volver a aplicar una directiva de retención o retención (y comprobar que está en su ubicación) antes de volver a habilitar el Asistente para carpeta administrada para procesar el buzón.
   
 Realice los siguientes pasos (en la secuencia especificada) en Exchange Online PowerShell.
   
-1. Ejecute el siguiente comando para volver a cambiar el período de retención de elementos eliminados a su valor original. Se supone que el valor anterior es inferior a 30 días; por ejemplo, 14 días. 
-    
+1. Ejecute el siguiente comando para volver a cambiar el período de retención de elementos eliminados a su valor original. Se supone que el valor anterior es inferior a 30 días; por ejemplo, 14 días.
+
     ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
 
 2. Ejecute el siguiente comando para volver a habilitar la recuperación de un único elemento.
-   
+
     ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. Ejecute el siguiente comando para volver a habilitar todos los métodos de acceso de cliente al buzón.
-    
+
     ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
 
 4. Vuelva a aplicar las suspensiones que quitó en el paso 3. Según el tipo de retención, use uno de los procedimientos siguientes.
-    
+
     **Retención por juicio**
-    
+
     Ejecute el siguiente comando para volver a habilitar una retención por juicio para el buzón.
-    
+
     ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
     **In-Place Hold**
-    
-    Use el EAC (o Exchange Online PowerShell) para volver a agregar el buzón a la conservación local. 
-    
+
+    Use el EAC (o Exchange Online PowerShell) para volver a agregar el buzón a la conservación local.
+
     **Directivas de retención aplicadas a buzones específicos**
-    
-    Use el centro de seguridad & cumplimiento para volver a agregar el buzón a la Directiva de retención. Vaya a la **Information governance** \> página **retención** del gobierno de información en el centro de seguridad & cumplimiento, edite la Directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la Directiva de retención. 
-    
+
+    Use el centro de seguridad & cumplimiento para volver a agregar el buzón a la Directiva de retención. Vaya a la **Information governance**  >  página**retención** del gobierno de información en el centro de seguridad & cumplimiento, edite la Directiva de retención y vuelva a agregar el buzón a la lista de destinatarios a los que se aplica la Directiva de retención.
+
     **Directivas de retención de toda la organización**
-    
-    Si quitó una directiva de retención de toda la organización o de todo el mundo al excluirla de la Directiva, use el centro de seguridad & cumplimiento para quitar el buzón de la lista de usuarios excluidos. Vaya a la **Information governance** \> página **retención** de gobierno de información en el centro de seguridad & cumplimiento, edite la Directiva de retención de toda la organización y quite el buzón de la lista de destinatarios excluidos. Al hacerlo, se volverá a aplicar la Directiva de retención al buzón de correo del usuario. 
-    
+
+    Si quitó una directiva de retención de toda la organización o de todo el mundo al excluirla de la Directiva, use el centro de seguridad & cumplimiento para quitar el buzón de la lista de usuarios excluidos. Vaya a la **Information governance**  >  página**retención** de gobierno de información en el centro de seguridad & cumplimiento, edite la Directiva de retención de toda la organización y quite el buzón de la lista de destinatarios excluidos. Al hacerlo, se volverá a aplicar la Directiva de retención al buzón de correo del usuario.
+
     **suspensiones de casos de eDiscovery**
-    
-    Use el centro de seguridad & cumplimiento para agregar el buzón de correo de la retención asociada a un caso de exhibición de documentos electrónicos. Vaya a la página exhibición de documentos electrónicos de **exhibición** de documentos electrónicos \> **eDiscovery** , abra el caso y vuelva a agregar el buzón a la retención. 
-    
-5. Ejecute el siguiente comando para permitir que el Asistente para carpeta administrada procese el buzón de nuevo. Como se mencionó anteriormente, se recomienda esperar 24 horas después de volver a aplicar una directiva de retención o retención (y comprobar que está en su ubicación) antes de volver a habilitar el Asistente para carpeta administrada. 
+
+    Use el centro de seguridad & cumplimiento para agregar el buzón de correo de la retención asociada a un caso de exhibición de documentos electrónicos. Vaya a la página exhibición de documentos electrónicos de **exhibición**de documentos electrónicos  >  **eDiscovery** , abra el caso y vuelva a agregar el buzón a la retención. 
+
+5. Ejecute el siguiente comando para permitir que el Asistente para carpeta administrada procese el buzón de nuevo. Como se mencionó anteriormente, se recomienda esperar 24 horas después de volver a aplicar una directiva de retención o retención (y comprobar que está en su ubicación) antes de volver a habilitar el Asistente para carpeta administrada.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
@@ -373,16 +407,14 @@ Realice los siguientes pasos (en la secuencia especificada) en Exchange Online P
 
 ## <a name="more-information"></a>Más información
 
-Esta es una tabla que describe cómo identificar distintos tipos de retenciones en función de los valores de la propiedad *InPlaceHolds* cuando se ejecutan los cmdlets **Get-Mailbox** o **Get-OrganizationConfig** . Para obtener información más detallada, consulte [How to identify The Type of Hold in an Exchange Online Mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
+Esta es una tabla que describe cómo identificar distintos tipos de retenciones en función de los valores de la propiedad  *InPlaceHolds*  cuando se ejecutan los cmdlets **Get-Mailbox** o **Get-OrganizationConfig** . Para obtener información más detallada, consulte [How to identify The Type of Hold in an Exchange Online Mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-Como se ha explicado anteriormente, tiene que quitar todas las directivas de retención y retención de un buzón de correo antes de poder eliminar correctamente los elementos de la carpeta elementos recuperables. 
+Como se ha explicado anteriormente, tiene que quitar todas las directivas de retención y retención de un buzón de correo antes de poder eliminar correctamente los elementos de la carpeta elementos recuperables.
   
 |**Tipo de retención**|**Valor de ejemplo**|**Cómo identificar la retención**|
 |:-----|:-----|:-----|
-|Retención por juicio  <br/> | `True` <br/> |La propiedad *LitigationHoldEnabled* se establece en `True` .  <br/> |
-|Retención en contexto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La propiedad *InPlaceHolds* contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no comienza con un prefijo.  <br/> Puede usar el `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando en Exchange Online PowerShell para obtener información sobre la conservación local en el buzón.  <br/> |
-| Directivas de retención en el centro de cumplimiento de & de seguridad que se aplican a buzones específicos  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> o  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Cuando se ejecuta el cmdlet **Get-Mailbox** , la propiedad *InPlaceHolds* también contiene los GUID de las directivas de retención que se aplican al buzón. Puede identificar las directivas de retención porque el GUID comienza por el `mbx` prefijo. Si el GUID de la Directiva de retención comienza con el `skp` prefijo, indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial.  <br/> Para identificar la Directiva de retención que se aplica al buzón de correo, ejecute el siguiente comando en el PowerShell del centro de cumplimiento de & de seguridad: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Asegúrese de quitar el `mbx` `skp` prefijo o cuando ejecute este comando.  <br/> |
-|Directivas de retención de toda la organización en el centro de seguridad & cumplimiento  <br/> |Ningún valor  <br/> o  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(indica que el buzón está excluido de una directiva de toda la organización)  <br/> |Incluso si la propiedad *InPlaceHolds* está vacía cuando ejecuta el cmdlet **Get-Mailbox** , es posible que haya una o varias directivas de retención aplicadas al buzón de correo de toda la organización.  <br/> Para comprobarlo, puede ejecutar el `Get-OrganizationConfig | FL InPlaceHolds` comando en Exchange Online PowerShell para obtener una lista de los GUID de las directivas de retención de toda la organización. El GUID de las directivas de retención de toda la organización que se aplican a los buzones de Exchange comienza con el `mbx` prefijo; por ejemplo, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Para identificar la Directiva de retención de toda la organización que se aplica al buzón de correo, ejecute el siguiente comando en el PowerShell del centro de cumplimiento de & de seguridad: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si un buzón se excluye de una directiva de retención para toda la organización, el GUID de la Directiva de retención se muestra en la propiedad *InPlaceHolds* del buzón del usuario cuando se ejecuta el cmdlet **Get-Mailbox** ; se identifica por el prefijo `-mbx` ; por ejemplo,`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|suspensión de casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La propiedad *InPlaceHolds* también contiene el GUID de cualquier suspensión asociado con un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento que se puede colocar en el buzón. Puede decir que se trata de una suspensión de casos de exhibición de documentos electrónicos porque el GUID comienza por el `UniH` prefijo.  <br/> Puede usar el `Get-CaseHoldPolicy` cmdlet en seguridad & PowerShell del centro de cumplimiento para obtener información sobre el caso de eDiscovery con el que está asociado la retención en el buzón de correo. Por ejemplo, puede ejecutar el comando `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` para mostrar el nombre de la suspensión de mayúsculas y minúsculas que se encuentra en el buzón. Asegúrese de quitar el `UniH` prefijo al ejecutar este comando.  <br/><br/> Para identificar el caso de exhibición de documentos electrónicos con el que está asociada la retención en el buzón de correo, ejecute los siguientes comandos:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
-
-
+|Retención por juicio  <br/> | `True` <br/> |La propiedad  *LitigationHoldEnabled*  se establece en  `True` .  <br/> |
+|Retención en contexto  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La propiedad  *InPlaceHolds*  contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no comienza con un prefijo.  <br/> Puede usar el  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` comando en Exchange Online PowerShell para obtener información sobre la conservación local en el buzón.  <br/> |
+| Directivas de retención en el centro de cumplimiento de & de seguridad que se aplican a buzones específicos  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> Otra posibilidad:  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Cuando se ejecuta el cmdlet **Get-Mailbox** , la propiedad  *InPlaceHolds*  también contiene los GUID de las directivas de retención que se aplican al buzón. Puede identificar las directivas de retención porque el GUID comienza por el  `mbx` prefijo. Si el GUID de la Directiva de retención comienza con el  `skp` prefijo, indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial.  <br/> Para identificar la Directiva de retención que se aplica al buzón de correo, ejecute el siguiente comando en el PowerShell del centro de cumplimiento de & de seguridad: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Asegúrese de quitar el  `mbx`  `skp` prefijo o cuando ejecute este comando.  <br/> |
+|Directivas de retención de toda la organización en el centro de seguridad & cumplimiento  <br/> |Ningún valor  <br/> Otra posibilidad:  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indica que el buzón está excluido de una directiva de toda la organización)  <br/> |Incluso si la propiedad  *InPlaceHolds*  está vacía cuando ejecuta el cmdlet **Get-Mailbox** , es posible que haya una o varias directivas de retención aplicadas al buzón de correo de toda la organización.  <br/> Para comprobarlo, puede ejecutar el  `Get-OrganizationConfig | FL InPlaceHolds` comando en Exchange Online PowerShell para obtener una lista de los GUID de las directivas de retención de toda la organización. El GUID de las directivas de retención de toda la organización que se aplican a los buzones de Exchange comienza con el  `mbx` prefijo; por ejemplo,  `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Para identificar la Directiva de retención de toda la organización que se aplica al buzón de correo, ejecute el siguiente comando en el PowerShell del centro de cumplimiento de & de seguridad: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si un buzón se excluye de una directiva de retención para toda la organización, el GUID de la Directiva de retención se muestra en la propiedad  *InPlaceHolds*  del buzón del usuario cuando se ejecuta el cmdlet **Get-Mailbox** ; se identifica por el prefijo  `-mbx` ; por ejemplo,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|suspensión de casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La propiedad  *InPlaceHolds*  también contiene el GUID de cualquier suspensión asociado con un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento que se puede colocar en el buzón. Puede decir que se trata de una suspensión de casos de exhibición de documentos electrónicos porque el GUID comienza por el  `UniH` prefijo.  <br/> Puede usar el  `Get-CaseHoldPolicy` cmdlet en seguridad & PowerShell del centro de cumplimiento para obtener información sobre el caso de eDiscovery con el que está asociado la retención en el buzón de correo. Por ejemplo, puede ejecutar el comando  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` para mostrar el nombre de la suspensión de mayúsculas y minúsculas que se encuentra en el buzón. Asegúrese de quitar el  `UniH` prefijo al ejecutar este comando.  <br/><br/> Para identificar el caso de exhibición de documentos electrónicos con el que está asociada la retención en el buzón de correo, ejecute los siguientes comandos:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`

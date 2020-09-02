@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Una vez configurada la clave de cliente, obtenga información sobre cómo administrarla mediante la restauración de claves de AKV y la administración de permisos y las directivas de cifrado de datos.
-ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717311"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324273"
 ---
 # <a name="manage-customer-key"></a>Administrar la clave de cliente
 
@@ -84,11 +84,11 @@ Para ver una lista de todos los DEPs que ha creado para Exchange Online y Skype 
 
 2. Para devolver todos los DEPs de la organización, ejecute el cmdlet Get-DataEncryptionPolicy sin ningún parámetro.
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  Para obtener más información sobre el cmdlet Get-DataEncryptionPolicy, consulte [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
+   Para obtener más información sobre el cmdlet Get-DataEncryptionPolicy, consulte [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Asignar un DEP antes de migrar un buzón a la nube
 
@@ -100,11 +100,11 @@ Para asignar una DEP a un buzón antes de migrarla a Office 365, ejecute el cmdl
 
 2. Ejecute el cmdlet Set-MailUser.
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón y *DATAENCRYPTIONPOLICYIDPARAMETER* es el identificador de la DEP. Para obtener más información sobre el cmdlet Set-MailUser, consulte [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
+   Donde *GeneralMailboxOrMailUserIdParameter* especifica un buzón y *DATAENCRYPTIONPOLICYIDPARAMETER* es el identificador de la DEP. Para obtener más información sobre el cmdlet Set-MailUser, consulte [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Determinación de la DEP asignada a un buzón
 
@@ -167,6 +167,20 @@ El resultado de este cmdlet incluye:
   - **Registrado:** Se ha aplicado el cifrado de clave de cliente y todos los archivos de todos los sitios se han cifrado.
 
   - **Desplazamiento:** Hay un lanzamiento de clave en curso. Si la clave de la geo está girando, también se mostrará información sobre el porcentaje de sitios que han completado la operación de desplazamiento de claves para que pueda supervisar el progreso.
+
+## <a name="unassign-a-dep-from-a-mailbox"></a>Cancelar la asignación de un DEP de un buzón
+
+Puede quitar la asignación de un DEP de un buzón mediante el cmdlet Set-Mailbox PowerShell y establecer el `DataEncryptionPolicy` en `$NULL` . Al ejecutar este cmdlet, se anula la asignación del DEP asignado actualmente y se vuelve a cifrar el buzón con el DEP asociado a las claves administradas predeterminadas de Microsoft. No puede cancelar la asignación de la DEP usada por las claves administradas de Microsoft. Si no desea usar las claves administradas de Microsoft, puede asignar otro DEP al buzón.
+
+Para cancelar la asignación de DEP de un buzón mediante el cmdlet Set-Mailbox PowerShell, siga estos pasos.
+
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización, [Conéctese a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+
+2. Ejecute el cmdlet Set-Mailbox.
+
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocar las claves e iniciar el proceso de la ruta de depuración de datos
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los datos producidos por las aplicaciones basadas en la nube en Microsoft 365 se almacenan o asocian con el buzón de correo de un usuario de Exchange Online.
-ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 121380cdaaf5d0397d082159ddf6461c0c12cbe1
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016303"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321989"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenido almacenado en buzones de correo de Exchange Online
 
@@ -30,7 +30,7 @@ Un buzón de Exchange Online se usa principalmente para almacenar elementos rela
 
 En la siguiente tabla se enumeran las aplicaciones que almacenan o asocian datos con un buzón basado en la nube. La tabla también describe el tipo de contenido que produce cada aplicación.
 
-|Aplicación de Microsoft 365|Descripción|
+|Aplicación de Microsoft 365|Description|
 |:---------|:---------|
 |Formularios|Los formularios y las respuestas a un formulario se almacenan en archivos que se adjuntan a mensajes de correo electrónico y se almacenan en una carpeta oculta en el buzón del usuario que creó el formulario. Los formularios creados antes del 2020 de abril se almacenan como un archivo PDF. Los formularios creados después de 2020 se almacenan como un archivo JSON.  Las respuestas a un formulario se almacenan en un archivo CSV. Al exportar contenido de formularios en un archivo PST, estos datos se encuentran en la carpeta **ApplicationDataRoot** en una subcarpeta denominada con el siguiente globalmente identificado (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Grupos de Microsoft 365|Los mensajes de correo electrónico, los elementos de calendario, los contactos (personas), las notas y las tareas se almacenan en el buzón de correo asociado a un grupo de Microsoft 365.|
@@ -42,6 +42,7 @@ En la siguiente tabla se enumeran las aplicaciones que almacenan o asocian datos
 |Tareas|Las tareas de la aplicación tareas (que son las mismas tareas que las que son accesibles en Outlook) se almacenan en el buzón de un usuario.|
 |Teams|Las conversaciones que forman parte de un canal de Teams están asociadas con el buzón de correo de Microsoft Teams. Las conversaciones que forman parte de la lista de chats en Microsoft Teams (también llamadas *1 x N chats*) se asocian con el buzón de los usuarios que participan en el chat. Además, la información de Resumen de las reuniones y las llamadas en un canal de Microsoft Teams se asocia con los buzones de correo de los usuarios que marcaron la reunión o la llamada. Por lo tanto, al buscar contenido en Teams, buscará contenido en conversaciones de canal y buzones de usuario de búsqueda en el buzón de correo de Microsoft Teams en 1 x N chats.| 
 |To-Do|Las tareas ( *llamadas tareas que se*guardan en listas de tareas pendientes) en la aplicación de tareas se almacenan en el buzón de un usuario.|
+|Yammer|Las conversaciones y comentarios dentro de una comunidad de Yammer están asociados con el buzón de correo del grupo de 365 de Microsoft, así como con el buzón de usuario del autor y todos los destinatarios con nombre (@mentioned o usuarios de cuadro CC). Los mensajes privados que se envían fuera de una comunidad de Yammer se almacenan en el buzón de los usuarios que participan en el mensaje privado.|  
 ||||
 
 > [!NOTE]
