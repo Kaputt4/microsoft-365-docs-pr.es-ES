@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar Explorer y detección en tiempo real en el centro de seguridad y &amp; cumplimiento para investigar y responder a las amenazas de manera eficaz y eficaz.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641646"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47322042"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -78,8 +78,39 @@ También debe ver detalles adicionales dentro del producto. Por ejemplo, el núm
 
 ![Ver información del producto](../../media/ProductInfo.png)
 
+## <a name="extended-capabilities-in-threat-explorer"></a>Capacidades extendidas en el explorador de amenazas
 
-## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
+### <a name="top-targeted-users"></a>Usuarios de destino principales
+
+Hoy exponemos la lista de los usuarios de destino más importantes en la vista de malware para los mensajes de correo electrónico (dentro de la sección familias de malware principales). Esta vista también se ampliará dentro de phish y todas las vistas de correo electrónico, donde podrá ver los principales cinco usuarios de destino junto con el número de intentos de cada usuario para la vista correspondiente (por ejemplo, para la vista phish podrá ver el número de intentos de Phish).
+También podrá exportar la lista de usuarios de destino hasta un límite de 3000 junto con el número de intentos de análisis sin conexión para cada vista de correo electrónico. Además, seleccione no. de intentos (por ejemplo, 13 intentos a continuación) abriría una vista filtrada en el explorador de amenazas, de modo que pueda ver más detalles en los mensajes de correo electrónico y las amenazas de ese usuario. 
+
+![Usuarios de destino principales](../../media/Top_Targeted_Users.png)
+
+
+### <a name="exchange-transport-rules"></a>Reglas de transporte de Exchange
+Como parte del enriquecimiento de datos, también debe poder ver todas las distintas reglas de transporte que se aplicaron a un mensaje. Esta información estará presente en la vista de cuadrícula de correo electrónico (para ver esto, seleccione Opciones de columna en la cuadrícula y agregar regla de transporte de Exchange desde las opciones de columna en la cuadrícula), así como el control flotante en el correo electrónico.
+Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplicaron al mensaje. Además, podrá buscar los mensajes con el nombre de la regla de transporte. Esto sería una búsqueda "contiene", lo que significa que también podrá realizar búsquedas mediante búsquedas parciales. 
+
+#### <a name="important-note"></a>Nota importante: 
+La búsqueda de ETR y la disponibilidad de nombres dependerán de la función específica que se le haya asignado. Deberá disponer de uno de los siguientes roles/permisos para poder ver los nombres y la búsqueda de ETR.  Si no tiene ninguna de las siguientes funciones asignadas, no podrá ver los nombres de las reglas de transporte y buscar los mensajes con los nombres de ETR. Sin embargo, podrá ver la etiqueta ETR y la información GUID dentro de los detalles de correo electrónico. Las otras experiencias en la visualización de registros en las cuadrículas de correo electrónico, los controles flotantes de correo electrónico, los filtros y la exportación no se ven afectados. 
+ 
+- Solo EXO-prevención de pérdida de datos: ALL
+- Solo EXO-O365SupportViewConfig: ALL
+- AAD o EXO-Security admin: ALL
+- AAD o EXO-Security Reader: ALL
+- Solo EXO-reglas de transporte: todas
+- Solo EXO-configuración de vista: ALL
+
+Dentro de la cuadrícula de correo electrónico, los detalles flotantes y el archivo CSV exportado, el ETR se presenta con un nombre/GUID, tal como se muestra a continuación. 
+
+![Reglas de transporte de Exchange](../../media/ETR_Details.png)
+
+### <a name="inbound-connectors"></a>Conectores de entrada 
+
+Los conectores son una colección de instrucciones que personalizan el modo en que el correo electrónico fluye hacia y desde la organización de Microsoft 365 u Office 365, con la capacidad de aplicar cualquier restricción o control de seguridad. En el explorador de amenazas, ahora tendrá la posibilidad de ver los conectores relacionados con un correo electrónico, así como los mensajes de correo electrónico que usan los nombres de los conectores. La búsqueda de conectores es "contiene" por naturaleza, lo que significa que las búsquedas de palabras clave parciales también deben funcionar. En la vista de cuadrícula principal, el control flotante de detalles y el archivo CSV exportado, los conectores se muestran en el formato nombre/GUID como se muestra a continuación: 
+
+![Detalles del conector](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuevas características del explorador de amenazas y detecciones en tiempo real
 
@@ -294,4 +325,3 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
 - En el **Explorador de amenazas**se incluyen más funciones de filtrado y acciones disponibles.
 
 Para obtener más información, consulte [Office 365 ATP Service Description: disponibilidad de características en los planes de protección contra amenazas avanzada (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-

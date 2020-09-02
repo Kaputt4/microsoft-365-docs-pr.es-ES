@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Información general sobre la puntuación de productividad de Microsoft.
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307482"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324439"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Puntuación de productividad de Microsoft (versión preliminar)
 
@@ -40,9 +40,9 @@ Proporcionamos datos, información y recomendaciones en dos áreas:
 
 - **Experiencia de los empleados:** Medimos cómo los usuarios colaboran en el contenido, cómo usan los productos de 365 de Microsoft para comunicarse y si usan Microsoft 365 en todas las plataformas. 
 
-    Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo. Cuando tienen libertad para trabajar en cualquier dispositivo, son más productivos y están satisfechos. Cuando se pueden comunicar de forma flexible, son más eficientes, forman mejores relaciones y la organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+    Proporcionamos esta información porque cuando los usuarios colaboran en línea, ahorran tiempo. Con la libertad de trabajar en cualquier dispositivo, son más productivos y están satisfechos. La comunicación de una manera flexible hace que los usuarios sean más eficientes, conforman mejores relaciones y su organización es más unificada. Para obtener evidencia, consulte [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo, a la vez que proporcionan acciones recomendadas para solucionarlos; Además, proporcionamos información de conectividad de red de Microsoft 365 para su organización.
+- **Experiencia tecnológica:** La productividad depende de una tecnología fiable y de rendimiento, así como del uso eficaz de Microsoft 365. Proporcionamos [análisis de extremos](https://aka.ms/endpointanalytics), que le ayuda a comprender cómo la productividad de los usuarios puede verse afectada por problemas de rendimiento y estado con el hardware y software de extremo. También proporcionamos acciones recomendadas para corregirlos, así como la información de conectividad de red de Microsoft 365 para su organización.
 
 Consulte [What is Endpoint Analytics](https://docs.microsoft.com/mem/analytics/overview) para obtener información general y requisitos previos. Para obtener más información acerca de la información de conectividad de red 365 de Microsoft, lea [la introducción a la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
   
@@ -66,7 +66,7 @@ La puntuación de productividad se basa en los resultados combinados de las cate
 
 La puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer y Skype.
 
-La puntuación se actualiza diariamente y refleja las acciones del usuario realizadas en los últimos 28 a 180 días (incluido el día actual).
+La puntuación se actualiza diariamente y refleja las acciones del usuario completadas en el último 28 (incluido el día actual).
 
 
 ## <a name="pre-requisites"></a>Requisitos previos 
@@ -111,15 +111,15 @@ En cada página de detalles de categoría se muestran las métricas principales 
 
 ### <a name="content-collaboration-details"></a>Detalles de colaboración de contenido
 
-La información principal sobre la colaboración de contenido es el número de personas que crean, leen y colaboran (editar y compartir) en línea. Estas medidas son importantes porque la investigación muestra que cuando los usuarios colaboran con archivos en línea, cada persona ahorra un promedio de 100 minutos, o casi 2 horas, por semana.
+La información principal sobre la colaboración de contenido es el número de personas que crean, leen y colaboran (editar y compartir) en línea. Estas medidas son importantes porque la investigación muestra que cuando los usuarios colaboran con archivos en línea, cada persona ahorra un promedio de casi 2 horas por semana.
 
-La colaboración de contenido se define como una persona que crea y comparte un archivo de Office y, a continuación, al menos otra persona editando. 
+La colaboración de contenido se define como una persona que crea y comparte un archivo de Office y, a continuación, al menos otra persona lo lee. 
 
-Lectores: personas que acceden o descargan archivos en línea en OneDrive o SharePoint.
+**Lectores**: personas que acceden o descargan archivos en línea en OneDrive o SharePoint.
 
 **Creadores:** Personas que crean, modifican, cargan, sincronizan, protegen, copian o mueven archivos de OneDrive o de SharePoint en línea.
 
-Colaboradores: personas que colaboran con archivos en línea con OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita un documento en línea de Word, Excel, PowerPoint, OneNote o PDF en la nube después de que la otra persona lo cree o modifique, en un período de 28 días.
+**Colaboradores**: personas que colaboran con archivos en línea con OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita un documento de Office App o PDF de la nube en línea después de que el otro usuario lo haya creado o modificado, en un período de 28 días.
 
 Los tipos de archivo considerados para la colaboración son archivos de Word, Excel, PowerPoint, OneNote y PDF.
 
@@ -127,7 +127,7 @@ Proporcionamos información sobre las horas de inicio y configuramos para dispos
 
 ### <a name="communication-details"></a>Detalles de comunicación
 
-La información principal sobre comunicación es la frecuencia con la que los usuarios de la organización usan el correo electrónico, el chat y las publicaciones de la comunidad para comunicarse. Esta información es importante porque cuando los usuarios usan una variedad de herramientas de comunicación en tiempo real, pueden elegir el modo de comunicación que les ayude a ser más eficientes y tienen herramientas como chat y comunidades que les ayudan a desarrollar relaciones entre las oficinas.
+La información principal sobre comunicación es la frecuencia con la que los usuarios de la organización usan el correo electrónico, el chat y las publicaciones de la comunidad para comunicarse. Cuando los usuarios usan una variedad de herramientas de comunicación en tiempo real, pueden elegir el modo de comunicación que les ayude a ser más eficientes, como chat y las comunidades que les ayudan a desarrollar relaciones en todas las oficinas.
 
 ### <a name="mobility-details"></a>Detalles de movilidad
 
@@ -141,7 +141,7 @@ El informe de continuidad empresarial es un informe de inteligencia de trabajo l
 
 Este informe ayuda a los líderes de negocios a comprender: 
 
-- Cómo la colaboración y la comunicación se ven afectadas por el cambio a la tarea remota. 
+- Modo en que la colaboración y la comunicación se ven afectadas por el cambio al trabajo remoto. 
 
 - El impacto en el saldo de la vida laboral mientras los usuarios se ajustan a trabajar desde casa. 
 

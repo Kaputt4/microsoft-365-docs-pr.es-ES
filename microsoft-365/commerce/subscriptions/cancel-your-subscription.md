@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Obtenga información sobre cómo cancelar la suscripción de prueba de Microsoft 365 para empresas o pago.
-ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.date: ''
+ms.openlocfilehash: 9669551101243f1abe760bf336d3472b50182555
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049753"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324284"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -45,19 +42,22 @@ ms.locfileid: "45049753"
 > [!NOTE]
 > Si tiene varias suscripciones al mismo producto, como Microsoft 365 Business Premium, cancelar una de ellas no afectará a las licencias o los servicios adquiridos dentro de las demás suscripciones.
 
+## <a name="before-you-begin"></a>Antes de empezar
+
+Debe ser administrador global o de facturación para realizar las tareas de este artículo. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+
 ## <a name="steps-to-cancel-your-subscription"></a>Pasos para cancelar la suscripción
 
 Si agregó su propio nombre de dominio para usarlo con la suscripción, debe quitar el dominio antes de cancelar la suscripción. Para obtener más información, vea [quitar un dominio](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de productos</a> y, a continuación, seleccione la pestaña **productos** .
+2. Busque la suscripción que desea cancelar. Seleccione **más acciones** (tres puntos) y, a continuación, seleccione **Cancelar suscripción**.
+3. En el panel **Cancelar suscripción** , elija un motivo por el que va a cancelar. Si lo desea, puede proporcionar comentarios.
+4. Seleccione **Guardar**.
 
-2. Busque la suscripción que desea cancelar y, en **configuración & acciones**, seleccione **Cancelar suscripción**.
-
-3. Revise las fechas importantes, envíe comentarios sobre el motivo de la cancelación y, después, seleccione **Cancelar suscripción**.
-
-    La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando finaliza la suscripción a microsoft 365 para empresas?](what-if-my-subscription-expires.md)
+La suscripción ahora aparece en estado **deshabilitado** y se ha reducido la funcionalidad hasta que se elimina. Para obtener más información sobre lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, vea [¿Qué pasa con mis datos y mi acceso cuando finaliza la suscripción a microsoft 365 para empresas?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -95,7 +95,9 @@ Si agregó su propio nombre de dominio para usarlo con la suscripción, debe qui
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Qué sucede cuando cancela una suscripción
 
-Si cancela una suscripción antes del final del período, la suscripción se mueve directamente a un Estado deshabilitado. Para casi todas las suscripciones, en la mayoría de los países y las regiones, el estado de deshabilitada dura 90 días. Los administradores todavía podrán tener acceso y realizar copias de seguridad de los datos de su organización mientras la suscripción está en el estado de deshabilitada, pero se recomienda que los administradores [hagan una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de cancelar una suscripción, especialmente si es su única suscripción. Los datos que no se guarden se podrán eliminar en los siguientes 90 días y se eliminarán en los siguientes 180 días transcurridos tras la cancelación.
+Si cancela una suscripción antes del final del período, el estado de la suscripción pasa directamente a un Estado deshabilitado. Para casi todas las suscripciones, en la mayoría de los países y las regiones, el estado de deshabilitada dura 90 días. Los administradores todavía podrán tener acceso y realizar copias de seguridad de los datos de su organización mientras la suscripción está en el estado de deshabilitada, pero se recomienda que los administradores [hagan una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de cancelar una suscripción, especialmente si es su única suscripción. Los administradores también pueden reactivar la suscripción mientras está en estado deshabilitado.
+
+Una vez que 90 dice, la suscripción pasa al estado eliminado. Los datos que deje en el fondo pueden eliminarse después de que se eliminen los 90 días no más tarde de 180 días después de la cancelación. No se puede quitar un método de pago de una suscripción cancelada hasta que llegue al estado eliminado.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Qué pasará con usted y sus usuarios si cancela una suscripción
   
@@ -146,10 +148,12 @@ Cuando la cancelación sea efectiva, los usuarios perderán el acceso a sus dato
 
 Si ha cancelado la suscripción y no ha [trasladado a los usuarios a una suscripción diferente](move-users-different-subscription.md) que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto ocurre, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="next-steps"></a>Pasos siguientes
 
-[Renovar la suscripción](renew-your-subscription.md)
+Si desea cerrar completamente su cuenta con Microsoft, consulte [cerrar la cuenta](../close-your-account.md).
 
-[Reactivar la suscripción](reactivate-your-subscription.md)
+## <a name="related-content"></a>Contenido relacionado
 
-[Mover usuarios a una suscripción diferente](move-users-different-subscription.md)
+[Renovar la suscripción](renew-your-subscription.md) (artículo) \
+[Reactivar la suscripción](reactivate-your-subscription.md) (artículo) \
+[Mover usuarios a una suscripción diferente](move-users-different-subscription.md) (artículo)

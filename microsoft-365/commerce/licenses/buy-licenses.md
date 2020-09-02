@@ -1,10 +1,10 @@
 ---
-title: Comprar o quitar licencias de suscripción
+title: Comprar o eliminar licencias de suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo comprar más licencias o reduzca el número de licencias de su suscripción de Microsoft 365 para empresas.
 ms.date: 07/01/2020
-ms.openlocfilehash: 85861379bbce30c3c071a47529d516d7d5170e39
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: df9570649e1ba5d674f1f152afa9d4dcaee8fc5e
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015904"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324251"
 ---
-# <a name="buy-or-remove-subscription-licenses"></a>Comprar o quitar licencias de suscripción
+# <a name="buy-or-remove-subscription-licenses"></a>Comprar o eliminar licencias de suscripción
 
 ::: moniker range="o365-21vianet"
 
@@ -42,7 +42,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser administrador global o administrador de facturación para comprar licencias. Para obtener más información, vea [acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser administrador global o administrador de facturación para realizar las tareas de este artículo. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md).
 
 ## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Comprar o quitar licencias de la suscripción empresarial
@@ -50,15 +50,17 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. Busque la suscripción para la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**. [¿Qué ocurre si no ve el vínculo Agregar o quitar licencias?](#what-if-you-dont-see-the-addremove-licenses-link)
-3. En el cuadro **total de licencias** , escriba el número total de licencias que desea para esta suscripción y, a continuación, seleccione **Enviar cambio**. Por ejemplo, si tiene 100 licencias y desea agregar cinco más, escriba 105. Si desea quitar cinco de ellas, escriba 95.
+2. En la pestaña **productos** , busque la suscripción para la que desea comprar o quitar licencias. Seleccione **más acciones** (tres puntos) y, a continuación, seleccione **comprar licencias**. [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
+3. Si desea reducir el número de licencias, en la parte superior del panel **comprar licencias** , seleccione **quitar licencias**.
+4. Para comprar o quitar licencias, en **nueva cantidad** en el cuadro **total de licencias** , escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y desea agregar cinco más, escriba 105. Si desea quitar cinco de ellas, escriba 95.
+5. Seleccione **Guardar**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-2. En la página **suscripciones** , seleccione la suscripción en la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**. [¿Qué ocurre si no ve el vínculo Agregar o quitar licencias?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. En la página **suscripciones** , seleccione la suscripción en la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**. [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
 3. En el cuadro **total de licencias** , escriba el número total de licencias que desea para esta suscripción y, a continuación, seleccione **Enviar** \> **cierre**. Por ejemplo, si tiene 100 licencias y desea agregar cinco más, escriba 105. Si desea quitar cinco licencias, escriba 95.
 
 ::: moniker-end
@@ -66,7 +68,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
-2. En la página **suscripciones** , seleccione la suscripción en la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**. [¿Qué ocurre si no ve el vínculo Agregar o quitar licencias?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. En la página **suscripciones** , seleccione la suscripción en la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias**. [¿No ve el vínculo Agregar o quitar licencias?](#what-if-i-dont-see-the-addremove-licenses-link)
 3. En el cuadro **total de licencias** , escriba el número total de licencias que desea para esta suscripción y, a continuación, seleccione **Enviar** \> **cierre**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
 
 ::: moniker-end
@@ -74,11 +76,11 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 > [!NOTE]
 > No puede reducir el número de licencias de la suscripción si todas las licencias están asignadas actualmente a los usuarios. Para reducir el número de licencias, primero debe [anular la asignación de una o más licencias de los usuarios](../../admin/manage/remove-licenses-from-users.md)y, a continuación, quitar las licencias de la suscripción.
 
-## <a name="what-if-you-dont-see-the-addremove-licenses-link"></a>¿Qué ocurre si no ve el vínculo Agregar o quitar licencias?
+## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>¿No ve el vínculo Agregar o quitar licencias?
 
 En esta tabla se describen los motivos por los que el vínculo **Agregar o quitar licencias** podría no estar disponible y qué se puede hacer al respecto.
 
-|Motivo  |Descripción  |Solución  |
+|Reason  |Description  |Solución  |
 |---------|---------|---------|
 |Hay pendiente una comprobación de crédito. |Si hay pendiente una comprobación de crédito, verá un mensaje "pendiente de comprobación de crédito". No puede comprar licencias hasta que se complete la comprobación de crédito.  | Vuelva a comprobar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br/>Una vez completada la comprobación de crédito, debe ver el vínculo **Agregar o quitar licencias** . |
 |Ha activado la suscripción con una clave de producto.| Si la suscripción se compró y activó con una clave de producto de 25 caracteres, verá el texto "prepago".  |Consulte [Agregar licencias a una suscripción pagada para usar una clave de producto](add-licenses-using-product-key.md). |
@@ -115,5 +117,5 @@ Si ha reducido el número de licencias de la suscripción porque alguien ha aban
 ## <a name="related-content"></a>Contenido relacionado
 
 [Asignar licencias a usuarios](../../admin/manage/assign-licenses-to-users.md) (artículo) \
-[Comprender las suscripciones y las licencias](subscriptions-and-licenses.md) (artículo) \
+[Entender las suscripciones y las licencias](subscriptions-and-licenses.md) (artículo)\
 [Pruebe o compre una suscripción a Microsoft 365](../try-or-buy-microsoft-365.md) (artículo)

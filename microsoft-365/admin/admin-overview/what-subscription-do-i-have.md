@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página suscripciones.
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Obtenga información para comprobar qué suscripciones tiene su organización yendo a la página su producto.
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780510"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324553"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -40,8 +37,9 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Las suscripciones se muestran en la página **sus productos** , junto con el nombre de la suscripción, información sobre la suscripción y su estado. Para ver una vista condensada, seleccione **vista de tabla**.
+2. En la pestaña **productos** , verá todas las suscripciones. Cada línea de suscripción incluye información sobre las licencias, el estado de la suscripción y la facturación.
+3. Si desea cambiar las columnas que aparecen en la lista, seleccione **elegir columnas**. Cambie la selección de columnas y, a continuación, seleccione **Guardar**.
+4. Para ver más detalles de una sola suscripción, selecciona esa suscripción.
 
 ::: moniker-end
   

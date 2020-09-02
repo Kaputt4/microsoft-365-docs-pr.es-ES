@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Obtenga información sobre cómo actualizar sus direcciones de facturación para Microsoft 365 para empresas. También puede actualizar la dirección de correo electrónico que se usa para recibir notificaciones de facturación.
-ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817034"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324357"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -49,7 +49,7 @@ La factura contiene tres direcciones:
 
 - **Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.
 
-En la mayoría de los casos, estas direcciones son las mismas. Si tiene que cambiar una o varias de estas direcciones, puede hacerlo. También puede proporcionar una dirección de correo electrónico alternativa para recibir las notificaciones de facturación y cambiar la dirección de correo electrónico alternativa de otros administradores.
+En la mayoría de los casos, estas direcciones son las mismas. Si tiene que cambiar una o varias de estas direcciones, puede hacerlo. También puede proporcionar una dirección de correo electrónico alternativa para recibir notificaciones de facturación y cambiar la dirección de correo electrónico alternativa para otros administradores.
   
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +68,6 @@ Para obtener más información acerca de su factura, consulte [ver su](view-your
 Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su factura u obtener Fapiaos para Office 365 operado por 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
-
 
 ## <a name="change-your-sold-to-address"></a>Cambiar la dirección del solicitante
 
@@ -131,10 +130,9 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Busque la suscripción que desea cambiar. En la sección **configuración & acciones** , seleccione **Editar dirección de uso del servicio**.
-
-3. En el panel **editar la dirección de uso del servicio** , actualice su dirección y, a continuación, seleccione **Guardar**.
+2. En la pestaña **productos** , seleccione la suscripción que desea cambiar.
+3. En la página Detalles de la suscripción, en la sección **dirección de uso del servicio** , seleccione **Editar dirección de uso del servicio**.
+4. En el panel **Editar dirección de uso del servicio** , actualice su dirección y, después, seleccione **Guardar**.
 
 ::: moniker-end
 
@@ -166,7 +164,7 @@ Si está usando Office 365 ofrecido por 21Vianet en China, consulte [ver su fact
 
 De forma predeterminada, las notificaciones de facturación de la organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de la organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [Aprende a iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa como administrador global. [obtenga información sobre cómo iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleccione el **icono de usuario**y, a continuación, seleccione **mi cuenta**.
   

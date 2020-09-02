@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Obtenga información sobre cómo ampliar su suscripción de prueba durante otro período de 30 días.
-ms.openlocfilehash: 50f0548ddcd2eeef36a853cfb08b279cee8095a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c1c4134f944b07b177a92e03fc3e5ba2d9b362ef
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402159"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324321"
 ---
 # <a name="extend-your-trial"></a>Ampliar el periodo de prueba
 
@@ -43,19 +40,16 @@ ms.locfileid: "44402159"
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. En la página **sus productos** , busque la suscripción de prueba que desea extender. En la sección **configuración & acciones** , seleccione **extender la prueba**.
-
-3. Revise la información de extensión y, si es necesario, cambie el método de pago. Cuando haya terminado, seleccione **extender prueba**.
+2. En la pestaña **productos** , seleccione la suscripción de prueba que desea extender. 
+3. En la sección **suscripciones y configuración de pagos** de la página Detalles de la suscripción, seleccione **extender fecha de finalización**.
+4. En el panel **ampliar fecha de finalización** , revise la información de la extensión y, si es necesario, seleccione un método de pago. Cuando haya terminado, seleccione **extender prueba**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
 2. En la página **suscripciones** , seleccione la suscripción de prueba que desea extender y, a continuación, en la fecha de expiración, seleccione **extender la prueba**.
-
 3. Complete los pasos del asistente.
 
 ::: moniker-end
@@ -63,9 +57,7 @@ ms.locfileid: "44402159"
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
-
 2. En la página **suscripciones** , seleccione la suscripción de prueba que desea extender y, a continuación, en la fecha de expiración, seleccione **extender la prueba**.
-
 3. Complete los pasos del asistente.
 
 ::: moniker-end

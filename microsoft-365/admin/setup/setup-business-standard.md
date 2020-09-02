@@ -25,14 +25,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Estándar.
-ms.openlocfilehash: b42dd0779c708410614ea2ab0d134aa3dcf0c7e9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778930"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324451"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurar Microsoft Empresa Estándar
+
+Vea un vídeo breve sobre cómo configurar Microsoft 365 Empresa Estándar.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
+
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
  *Estos pasos están dirigidos a empresas y [organizaciones sin ánimo de lucro](https://go.microsoft.com/fwlink/p/?LinkId=627221) que tengan el **[Plan de Microsoft 365 Empresa Estándar.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 
