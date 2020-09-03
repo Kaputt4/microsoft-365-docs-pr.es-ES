@@ -1,7 +1,7 @@
 ---
 title: Resistencia de datos en Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: En este artículo, se proporciona información sobre el diseño y los principios de resistencia de datos y recuperación en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a0e6ca643fe9842a71102fbabd3c05324ba52b70
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2474417100c68139c53d71e6031bbbe13b994677
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693815"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331889"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Resistencia de datos en Microsoft 365
 

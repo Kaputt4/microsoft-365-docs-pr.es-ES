@@ -1,7 +1,7 @@
 ---
 title: Introducción a las características de exhibición de documentos electrónicos y búsqueda 365 de Microsoft
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Información general sobre la característica de exhibición de documentos electrónicos y otras características de búsqueda de Microsoft 365 para auditar el uso y la transparencia.
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694069"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331864"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Introducción a las características de exhibición de documentos electrónicos y búsqueda 365 de Microsoft 
 
@@ -48,7 +48,7 @@ En la tabla siguiente se detalla parte de la información que se muestra en los 
 | ClientIP | Dirección IPv4 o IPv6 del dispositivo que se usó cuando se registró la actividad. |
 | CreationTime | Fecha y hora en la hora universal coordinada (UTC) cuando el usuario llevó a cabo la actividad. |
 | EventSource | Identifica que se ha producido un evento. Los valores posibles son SharePoint y ObjectModel. |
-| Id. | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
+| ID | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
 | Operación | Nombre del usuario o actividad, que corresponde al valor seleccionado en la actividad mostrar resultados para este usuario. |
 | OrganizationId | GUID para el servicio Microsoft 365 de la organización en el que se ha producido el evento. |
 | UserAgent | Información sobre el explorador del usuario, proporcionada por el explorador. |

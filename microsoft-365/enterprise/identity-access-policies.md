@@ -1,6 +1,6 @@
 ---
 title: 'Directivas comunes de identidad y acceso a dispositivos: Microsoft 365 para Enterprise | Microsoft docs'
-description: Explica las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de identidad y acceso a dispositivos.
+description: Describe las directivas y configuraciones de acceso a dispositivos y de identidad comunes recomendadas.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898121"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332123"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 En este artículo se describen las directivas comunes recomendadas para proteger el acceso a los servicios en la nube, incluidas las aplicaciones locales publicadas con el proxy de aplicación de Azure AD. 
@@ -32,8 +32,8 @@ En esta guía se explica cómo implementar las directivas recomendadas en un ent
 
 El siguiente diagrama ilustra el conjunto de directivas recomendado. Muestra el nivel de protección al que se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas o a ambas categorías de dispositivos. También indica dónde están configuradas estas directivas.
 
-[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 En el resto de este artículo se describe cómo configurar estas directivas. 
 
@@ -63,13 +63,13 @@ Una práctica recomendada es crear un grupo de Azure AD para la exclusión de ac
 
 El siguiente diagrama muestra un ejemplo de asignación de usuarios y exclusiones.
 
-![Ejemplo de asignaciones y exclusiones de usuario para las reglas de MFA](../media/identity-access-policies-assignment.png)
+![Ejemplo de asignaciones y exclusiones de usuario para las reglas de MFA](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 En la ilustración, se asigna una directiva de acceso condicional que requiere MFA *siempre*a "Top Secret Project X Team". Tenga cuidado al aplicar niveles más altos de protección a los usuarios. Los miembros de este equipo de proyecto tendrán que proporcionar dos formas de autenticación cada vez que inicien sesión, incluso si no están viendo contenido altamente regulado.  
 
-Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es especialmente importante para la implementación de Azure Information Protection (AIP) al proteger documentos en SharePoint Online.
+Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es especialmente importante para la implementación de las etiquetas de confidencialidad al proteger documentos en SharePoint Online.
 
-![Captura de pantalla para crear grupos de 365 de Microsoft](../media/identity-device-AAD-groups.png)
+![Captura de pantalla para crear grupos de 365 de Microsoft](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA según el riesgo de inicio de sesión
@@ -361,6 +361,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 Al crear esta Directiva, no seleccione plataformas. Esto aplica los dispositivos compatibles.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Más información sobre recomendaciones de directivas para proteger el correo electrónico](secure-email-recommended-policies.md)

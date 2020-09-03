@@ -16,18 +16,22 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327835"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336684"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Introducción al uso de investigación y respuesta automatizadas (AIR) en Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) el plan 2 incluye capacidades potentes de investigación y respuesta automáticas (Air) que pueden salvar el tiempo y el esfuerzo del equipo de operaciones de seguridad. A medida que se activen las alertas, el equipo de operaciones de seguridad debe revisar, priorizar y responder a esas alertas. Mantener el volumen de las alertas entrantes puede ser abrumador. Automatizar parte de esto puede resultar útil. Con AIR, el equipo de operaciones de seguridad puede centrarse en las tareas de mayor prioridad sin perder la vista de las alertas que se activan.
 
-En este artículo se describe el flujo de aire [General](#the-overall-flow-of-air) , [Cómo obtener aire](#how-to-get-air)y los [permisos necesarios](#required-permissions-to-use-air-capabilities) para configurar o usar las funcionalidades de Air. 
+Este artículo contiene información acerca de:
+
+- [Flujo general](#the-overall-flow-of-air) de aire
+- [Cómo obtener aire](#how-to-get-air)
+- Los [permisos necesarios](#required-permissions-to-use-air-capabilities) para configurar o usar las funcionalidades de Air
 
 ## <a name="the-overall-flow-of-air"></a>Flujo general de aire
 
@@ -89,7 +93,7 @@ Microsoft 365 proporciona muchas directivas de alertas integradas que ayudan a i
 
 Los permisos se conceden a través de determinadas funciones, como las que se describen en la tabla siguiente: 
 
-|Tarea |Roles necesarios |
+|Task |Roles necesarios |
 |--|--|
 |Para configurar las características de AIR |Una de las siguientes funciones: <br/>-Administrador global<br/>-Administrador de seguridad <br/>Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
 |Para aprobar o rechazar las acciones recomendadas|Una de las siguientes funciones, asignada en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>-Administrador global <br/>-Administrador de seguridad<br/>-Lector de seguridad <br/>--- y ---<br/>-Búsqueda y depuración (este rol solo se asigna en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Es posible que tenga que crear un nuevo grupo de funciones y agregar el rol de búsqueda y depuración al nuevo grupo de roles.
@@ -101,7 +105,7 @@ Los permisos se conceden a través de determinadas funciones, como las que se de
 
 Además, [las directivas de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) deben definirse y aplicarse para que la protección esté en su ubicación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Ver los detalles y los resultados de una investigación automatizada](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

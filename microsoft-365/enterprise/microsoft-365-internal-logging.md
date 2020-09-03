@@ -1,7 +1,7 @@
 ---
 title: Registro interno de Microsoft 365 para ingeniería de Microsoft 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: En este artículo, encontrará una explicación de cómo funciona el registro interno para Microsoft 365 Engineering Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696601"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332513"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Registro interno para Microsoft 365 Engineering
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Registro interno para la ingeniería de Microsoft 365
 
 Además de los datos de registro y eventos disponibles para los clientes, también hay un sistema de recopilación de datos de registro interna que está disponible para los ingenieros de Microsoft 365 en Microsoft. Se cargan muchos tipos diferentes de datos de registro de los servidores de Microsoft 365 en un servicio informático interno de gran tamaño denominado cosmos. Cada equipo de servicio carga los registros de auditoría desde sus servidores respectivos a la base de datos cosmos para agregación y análisis. Esta transferencia de datos se produce en una conexión TLS validada por FIPS 140-2 en puertos y protocolos aprobados específicamente mediante una herramienta de automatización patentada llamada Office Data Loader (ODL). Las herramientas usadas en Microsoft 365 para recopilar y procesar registros de auditoría no permiten cambios permanentes o irreversibles en el contenido del registro de auditoría original o el pedido de tiempo.
 

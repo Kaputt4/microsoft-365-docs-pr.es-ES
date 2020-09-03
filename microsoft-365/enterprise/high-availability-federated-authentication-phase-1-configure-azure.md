@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: configure la infraestructura de Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694138"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332345"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
@@ -57,7 +57,7 @@ Para las primeras tres subredes, especifique un nombre y un espacio de direccion
     
 2. Convierta los bits resultantes a decimales y expréselo como un espacio de direcciones con la longitud de prefijo establecida en el tamaño de la subred de puerta de enlace.
     
-Vea [calculadora de espacio de direcciones para subredes de puerta de enlace de Azure](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) para obtener un bloque de comandos de PowerShell y una aplicación de consola de C# o Python que realice este cálculo.
+Vea [calculadora de espacio de direcciones para subredes de puerta de enlace de Azure](address-space-calculator-for-azure-gateway-subnets.md) para obtener un bloque de comandos de PowerShell y una aplicación de consola de C# o Python que realice este cálculo.
   
 Trabaje con su departamento de TI para determinar estos espacios de direcciones a partir del espacio de direcciones de la red virtual.
   
