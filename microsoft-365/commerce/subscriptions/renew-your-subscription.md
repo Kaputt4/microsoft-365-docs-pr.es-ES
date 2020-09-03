@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Obtenga información sobre cómo renovar la suscripción de Microsoft 365 para empresas con una clave de producto y activar o desactivar la facturación periódica. '
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtenga información acerca de cómo renovar la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403227"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324309"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -57,18 +53,15 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
-
-3. En **Facturación**, al lado de **Se renueva en** o **Caduca en**, seleccione **Editar**.
-
-4. En el panel de **configuración de Facturación periódica**, seleccione **Desactivar** para desactivarla. Si la opción de facturación periódica está desactivada, seleccione **Mensual** o **Una vez** para activarla.
-
-5. Seleccione **Enviar cambios**.
+3. En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.
+4. En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez**o **Desactivar**.
+5. Seleccione **Guardar**.
 
     > [!NOTE]
     > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
-    > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Permanece activa hasta que expira. Puede ver la fecha de expiración en la sección **Facturación** de los detalles de la suscripción en la página **Sus productos**.
+    > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Si desea mantener la suscripción activada, debe pagar la factura manualmente.
+    > - Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira. Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.
     > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
 
 ::: moniker-end
