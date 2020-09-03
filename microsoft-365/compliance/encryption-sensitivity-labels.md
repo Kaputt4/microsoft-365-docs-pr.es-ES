@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229440"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334863"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -208,12 +208,12 @@ El emisor de administración de derechos siempre obtiene permisos de control tot
 
 Para obtener más información, vea [Emisor de administración de derechos y propietario de administración de derechos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
-### <a name="double-key-encryption"></a>Cifrado de doble clave
+### <a name="double-key-encryption"></a>Cifrado de claves doble
 
 > [!NOTE]
 > Esta característica está disponible actualmente en versión preliminar pública. Para obtener más información, vea [Presentación de la versión preliminar pública del cifrado de doble clave de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usarlo para los documentos y mensajes de correo que tengan esta etiqueta aplicada.
+Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos y correos electrónico que tengan esta etiqueta aplicada.
 
 Para obtener más información, ver los requisitos previos y las instrucciones de configuración, consulte el [Cifrado de doble clave (DKE)](double-key-encryption.md).
 
