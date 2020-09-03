@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: a5f3f93ad70210143cbe774c2a4e96542b1cfd34
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597514"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332681"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -32,12 +32,12 @@ La [autenticación multifactor](https://docs.microsoft.com/azure/active-director
 Microsoft ha probado y recomienda un conjunto específico de acceso condicional y directivas relacionadas para proteger el acceso a todas las aplicaciones SaaS, especialmente Microsoft 365. Se recomiendan las directivas para la protección de línea base, confidencial y altamente regulada. Comience por implementar las directivas para la protección de línea base. 
 
 
-[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Directivas comunes para configurar el acceso a los dispositivos e identidades](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [consulte una versión más amplia de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>Para implementar la protección de línea base para Microsoft 365
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
+![Proceso para implementar la protección de línea base](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configure los requisitos previos, incluida Azure Identity Protection](../enterprise/identity-access-prerequisites.md).
 2. [Configure directivas comunes de identidad y acceso a dispositivos](../enterprise/identity-access-policies.md) para la protección de línea base.
@@ -60,7 +60,7 @@ Azure ATP permite a los analistas de operaciones de seguridad (SecOps) y a los p
 
 ### <a name="to-set-up-azure-atp"></a>Para configurar ATP de Azure
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![Proceso para implementar ATP de Azure](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
 1. [Configure Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) para proteger sus entornos principales.
 2. Proteger todos los [controladores de dominio](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) y los [bosques](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest).
@@ -80,7 +80,7 @@ Microsoft Threat Protection unifica las alertas, los incidentes, la investigaci�
 
 ### <a name="to-set-up-microsoft-threat-protection"></a>Para configurar Microsoft Threat Protection
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![Proceso para implementar la protección contra amenazas de Microsoft](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [Revise los requisitos previos](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites).
 2. [Activar la protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable).
@@ -97,14 +97,14 @@ Microsoft Threat Protection unifica las alertas, los incidentes, la investigaci�
 
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
 |---|---|
-|[Datos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documentos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Protección contra suplantación de identidad ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Rastreadores de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Investigación y respuesta de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulador de ataque](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[Archivos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Documentos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[Protección contra phishing de ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Rastreadores de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Explorador de amenazas](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Investigación y respuesta automatizadas](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Simulador de ataque](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
 Con Office 365 ATP, las personas de toda la organización pueden comunicarse y colaborar de forma más segura, con protección contra amenazas para el contenido de correo electrónico y los documentos de Office.
 
 ### <a name="to-set-up-office-365-atp"></a>Para configurar Office 365 ATP
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![Proceso para implementar Office 365 ATP](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
 1. [Configure y configure las directivas de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 2. [Ver y usar los informes de ATP de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
@@ -122,7 +122,7 @@ La [protección contra amenazas avanzada de Microsoft defender](https://docs.mic
 
 ### <a name="set-up-microsoft-defender-atp"></a>Configurar ATP de Microsoft defender
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![Proceso para implementar ATP de Microsoft defender](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
 1. [Prepare su implementación ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases).
 2. [Configurar la implementación de ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
@@ -140,7 +140,7 @@ La [protección contra amenazas avanzada de Microsoft defender](https://docs.mic
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>Configurar Microsoft Cloud App Security
 
-![Proceso para implementar capacidades de protección contra amenazas](../media/solutions-architecture-center/deploy-mcas-steps.png) 
+![Proceso para implementar Microsoft Cloud App Security](../media/solutions-architecture-center/deploy-mcas-steps.png) 
 
 1. [Configurar el portal y otros requisitos básicos](https://docs.microsoft.com/cloud-app-security/general-setup).
 2. Configurar las aplicaciones de [detección en la nube](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery) y de [conexión](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).

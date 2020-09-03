@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321946"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332754"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -161,7 +161,7 @@ Se recomienda que los dispositivos de propiedad de la organización se administr
 ![Pasos para configurar la identidad y el acceso al dispositivo.](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configure las características de identidad de requisitos previos y su configuración.
-2. Configure las directivas de acceso condicional de identidad y acceso más comunes.
+2. Configure las directivas de acceso condicional de acceso y de identidad comunes.
 3. Configurar directivas de acceso condicional para usuarios externos y invitados.
 4. Configure las directivas de acceso condicional para las aplicaciones en la nube de Microsoft 365, como Microsoft Teams, Exchange Online y SharePoint.
 

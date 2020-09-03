@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de los resultados de la búsqueda a un conjunto de revisión de caso avanzado de eDiscovery.
-ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 6eed13c2096ad3cd33fbc7af93399824866b17c2
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814532"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336662"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
-Cuando esté satisfecho con los resultados de una búsqueda y esté listo para revisar y analizar los resultados de la búsqueda, puede agregarlos a un conjunto de revisión en el caso. La copia de los datos originales en el conjunto de revisión también facilita el proceso de revisión y análisis al proporcionarle herramientas avanzadas de análisis como detección de temas, detección de casi duplicados y identificación de subprocesos de correo electrónico. También puede agregar datos de orígenes de datos que no sean de Microsoft 365 a un conjunto de revisión, de modo que pueda revisar los datos además de los datos que recopila de Microsoft 365. 
+Cuando esté satisfecho con los resultados de una búsqueda y esté listo para revisar y analizar los resultados de la búsqueda, puede agregarlos a un conjunto de revisión en el caso. La copia de los datos originales en el conjunto de revisión también facilita el proceso de revisión y análisis al proporcionarle herramientas avanzadas de análisis como detección de temas, detección de casi duplicados y identificación de subprocesos de correo electrónico. También puede agregar datos de orígenes de datos que no sean de Microsoft 365 a un conjunto de revisión, de modo que pueda revisar los datos además de los datos que recopila de Microsoft 365.
 
 Cuando se agregan los resultados de una búsqueda a un conjunto de revisión (los conjuntos de revisión en un caso se enumeran en la ficha **Review sets** ), se producen las siguientes situaciones:
 
@@ -35,27 +35,25 @@ Cuando se agregan los resultados de una búsqueda a un conjunto de revisión (lo
 
 - Todos los elementos de los resultados de la búsqueda se copian del origen de datos original en los servicios activos y se copian en una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
 
-- Todos los elementos (incluido el contenido y los metadatos) se vuelven a indizar para que todos los datos del conjunto de revisión se puedan buscar por completo durante la revisión de los datos del caso. Al volver a indizar los datos, se producen búsquedas exhaustivas y rápidas al buscar en los datos del conjunto de revisión durante la investigación de caso.
+- Todos los elementos (incluido el contenido y los metadatos) se reindizan para que todos los datos del conjunto de revisión se puedan buscar en toda la información durante la revisión de los datos del caso. La reindización de los datos da como resultado búsquedas exhaustivas y rápidas cuando busca los datos en el conjunto de revisión durante la investigación de caso.
 
 Para agregar datos a un conjunto de revisión, haga clic en una búsqueda en la ficha **búsquedas** y, a continuación, haga clic en **Agregar resultados a revisión establecida** en la página de flotante.
 
-![Adición de datos a un conjunto de revisión](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+Puede Agregar a un conjunto de revisiones existente o crear un nuevo conjunto de revisión.  Si agrega a un nuevo conjunto de revisiones, especifique el nombre y, a continuación, haga clic en **Agregar** para mostrar la página de control flotante.
 
-Puede Agregar a un conjunto de revisiones existente o crear un nuevo conjunto de revisión.  Si agrega a un nuevo conjunto de revisiones, especifique el nombre y, a continuación, haga clic en **Agregar**.
+![Selección de un conjunto de revisión y configuración de opciones de recopilación](../media/AeD_AddToReviewSet.png)
 
-![Seleccionar un conjunto de revisión](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+Agregar datos a un conjunto de revisión es un proceso de ejecución prolongada. Este proceso incluye la recopilación de elementos de los orígenes de datos originales en Microsoft 365 (por ejemplo, desde buzones y sitios), copiándolos en la ubicación de almacenamiento de Azure (este proceso de copia también se denomina *ingesta*) y, a continuación, vuelva a indizar los elementos. Puede realizar un seguimiento del progreso en la ficha **trabajos** o en la ficha **búsquedas** mediante la supervisión del estado en la columna **datos agregados a la configuración de revisión** . Una vez completado el procesamiento del conjunto de revisiones, haga clic en la pestaña **Review sets** en el caso y, a continuación, haga clic en la revisión establecida para iniciar el proceso de filtrado, revisión, etiquetado y exportación de datos en el conjunto de revisiones.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Definir opciones para definir el ámbito de la colección para revisión
 
-A medida que agrega el contenido de una búsqueda a un conjunto de revisiones existente o crea uno nuevo, tiene opciones para recopilar el contenido para revisión:
+Al agregar el contenido de una búsqueda a un conjunto de revisiones existente o nuevo, tiene las siguientes opciones para obtener información sobre cómo recopilar el contenido para su revisión:
 
-- **Conjunto de revisiones de conversación** : los elementos agregados al conjunto de revisión estarán habilitados para las conversaciones encadenadas para ayudar a revisar el contenido en el contexto de la conversación en sentido inverso, vea más en este artículo [Conversation sets Set]
+- **Incluir versiones de SharePoint (beta)**: Use esta opción para habilitar la colección de todas las versiones de un documento de SharePoint según los límites de versión y los parámetros de búsqueda de la colección. Al seleccionar esta opción, aumentará significativamente el tamaño de los elementos que se agregan al conjunto de revisión.
 
-- **Habilitar la recuperación de datos adjuntos modernos** : Use este control para incluir datos adjuntos modernos o archivos vinculados en la colección para revisarlos más adelante; Obtenga más información sobre los nuevos nombres de campo que permiten búsquedas disponibles para agrupar este contenido, consulte [Document Metadata Fields in Advanced eDiscovery]
+- **Opciones de recuperación de conversaciones**: los elementos agregados al conjunto de revisiones están habilitados para las conversaciones encadenadas para ayudar a revisar el contenido en el contexto de la conversación en sentido inverso. Para obtener más información, vea [revisar conversaciones en EDiscovery avanzado](conversation-review-sets.md).
 
-- **Incluir versiones de SharePoint (beta)** : este control permite la recopilación de toda la versión de un archivo de SharePoint por los límites de versión y los parámetros de búsqueda de la colección; Nota: este control aumentará significativamente el tamaño de la colección
-
-Agregar datos a un conjunto de revisión es un proceso de ejecución prolongada. Este proceso incluye la recopilación de elementos de los orígenes de datos originales en Microsoft 365 (por ejemplo, desde buzones y sitios), copiándolos en la ubicación de almacenamiento de Azure (este proceso de copia también se denomina *ingesta*) y, a continuación, vuelva a indizar los elementos. Puede realizar un seguimiento del progreso en la ficha **trabajos** o en la ficha **búsquedas** mediante la supervisión del estado en la columna **datos agregados a la configuración de revisión** . Una vez completado el procesamiento del conjunto de revisiones, haga clic en la pestaña **Review sets** en el caso y haga clic en el conjunto de revisión para iniciar el proceso de filtrado, revisión, etiquetado y exportación de datos en el conjunto de revisiones.
+- **Habilitar la recuperación de datos adjuntos modernos**: Use esta opción para incluir datos adjuntos modernos o archivos vinculados en la colección para revisarlos más adelante. Para obtener más información acerca de las propiedades que permiten búsquedas relacionadas con los datos adjuntos modernos, consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="add-a-sample-to-a-review-set"></a>Agregar un ejemplo a un conjunto de revisión
 
