@@ -19,42 +19,52 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico de notificación a un nuevo usuario de Microsoft 365. '
-ms.openlocfilehash: 2f9d4fd829e4378b245fd3b8277e9b913d17ab69
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico de notificación a un nuevo usuario de Microsoft 365.
+ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386990"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361824"
 ---
-# <a name="resend-a-users-password---admin-help"></a><span data-ttu-id="5f8dc-103">Volver a enviar la contraseña de un usuario: ayuda para administradores</span><span class="sxs-lookup"><span data-stu-id="5f8dc-103">Resend a user's password - Admin Help</span></span>
+# <a name="resend-a-users-password---admin-help"></a><span data-ttu-id="85c35-103">Volver a enviar la contraseña de un usuario: ayuda para administradores</span><span class="sxs-lookup"><span data-stu-id="85c35-103">Resend a user's password - Admin Help</span></span>
 
-<span data-ttu-id="5f8dc-104">En este artículo se explica cómo volver a enviar el correo electrónico de notificación a un nuevo usuario en Office 365.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-104">This article explains how to resend the notification email to a new user in Office 365.</span></span> <span data-ttu-id="5f8dc-105">Para ello, debe restablecer la contraseña del usuario.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-105">You do this by resetting the user's password.</span></span>
-  
-<span data-ttu-id="5f8dc-106">Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para poder realizar estos pasos.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-106">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span> 
+<span data-ttu-id="85c35-104">En este artículo se explica cómo volver a enviar el correo electrónico de notificación a un nuevo usuario en Office 365.</span><span class="sxs-lookup"><span data-stu-id="85c35-104">This article explains how to resend the notification email to a new user in Office 365.</span></span> <span data-ttu-id="85c35-105">Esto puede ocurrir cuando crea un nuevo usuario y no recibe un correo electrónico con la nueva contraseña.</span><span class="sxs-lookup"><span data-stu-id="85c35-105">This can happen when you create a new user and they don't get an email with their new password.</span></span> <span data-ttu-id="85c35-106">Para ello, debe restablecer la contraseña del usuario.</span><span class="sxs-lookup"><span data-stu-id="85c35-106">You do this by resetting the user's password.</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="85c35-107">Antes de empezar</span><span class="sxs-lookup"><span data-stu-id="85c35-107">Before you begin</span></span>
+
+<span data-ttu-id="85c35-108">Este artículo va dirigido a los usuarios que deben establecer una directiva de expiración de contraseñas para una empresa, un centro educativo o una ONG.</span><span class="sxs-lookup"><span data-stu-id="85c35-108">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="85c35-109">Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="85c35-109">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> <span data-ttu-id="85c35-110">[¿Qué es una cuenta de administrador?](../admin-overview/admin-overview.md).</span><span class="sxs-lookup"><span data-stu-id="85c35-110">[What's an admin account?](../admin-overview/admin-overview.md).</span></span>
+
+<span data-ttu-id="85c35-111">Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para poder realizar estos pasos.</span><span class="sxs-lookup"><span data-stu-id="85c35-111">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
+
+## <a name="resend-user-password"></a><span data-ttu-id="85c35-112">Reenviar la contraseña de usuario</span><span class="sxs-lookup"><span data-stu-id="85c35-112">Resend user password</span></span>
   
 ::: moniker range="o365-worldwide"  
   
-1. <span data-ttu-id="5f8dc-107">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-107">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
-     
+1. <span data-ttu-id="85c35-113">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="85c35-113">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="5f8dc-108">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-108">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
+1. <span data-ttu-id="85c35-114">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="85c35-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>  
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="5f8dc-109">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-109">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
+1. <span data-ttu-id="85c35-115">En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.</span><span class="sxs-lookup"><span data-stu-id="85c35-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="5f8dc-110">En la página **usuarios activos** , seleccione el usuario y, a continuación, seleccione **Restablecer contraseña**.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-110">On the **Active users** page, select the user and then select **Reset password**.</span></span>
-    
-3. <span data-ttu-id="5f8dc-111">Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellas y, a continuación, seleccione **restablecer**.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-111">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
-    
-4. <span data-ttu-id="5f8dc-112">Escriba una dirección de correo electrónico a la que el usuario pueda acceder para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.</span><span class="sxs-lookup"><span data-stu-id="5f8dc-112">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
-    
-  
+2. <span data-ttu-id="85c35-116">En la página **usuarios activos** , seleccione el usuario y, a continuación, seleccione **Restablecer contraseña**.</span><span class="sxs-lookup"><span data-stu-id="85c35-116">On the **Active users** page, select the user and then select **Reset password**.</span></span>
+
+3. <span data-ttu-id="85c35-117">Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellas y, a continuación, seleccione **restablecer**.</span><span class="sxs-lookup"><span data-stu-id="85c35-117">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
+
+4. <span data-ttu-id="85c35-118">Escriba una dirección de correo electrónico a la que el usuario pueda acceder para que reciba la nueva contraseña y realice un seguimiento con ella para asegurarse de que la obtuvo.</span><span class="sxs-lookup"><span data-stu-id="85c35-118">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
+
+## <a name="related-content"></a><span data-ttu-id="85c35-119">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="85c35-119">Related content</span></span>
+
+[<span data-ttu-id="85c35-120">Permitir que los usuarios puedan restablecer sus propias contraseñas</span><span class="sxs-lookup"><span data-stu-id="85c35-120">Let users reset their own passwords</span></span>](../add-users/let-users-reset-passwords.md)
+
+[<span data-ttu-id="85c35-121">Restablecer contraseñas</span><span class="sxs-lookup"><span data-stu-id="85c35-121">Reset passwords</span></span>](../add-users/reset-passwords.md)
