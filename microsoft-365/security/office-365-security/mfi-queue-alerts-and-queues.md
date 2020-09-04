@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget colas del panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar el flujo de correo incorrecto hacia sus organizaciones locales o de asociados a través de los conectores de salida.
-ms.openlocfilehash: 79523533306e847988fa0d4e2dd70eca22f7c76c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: bcd78a50f017aae65e82185bf167ea7a227656fa
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826910"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357393"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Pone en cola información en el centro de seguridad & cumplimiento
 
@@ -29,7 +29,7 @@ Microsoft 365 seguirá reintentando la entrega durante 24 horas. Transcurridas l
 
 Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 200 mensajes), la información está disponible en las siguientes ubicaciones:
 
-- Las **colas** profundizan en el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento. Para obtener más información, vea la información [sobre las colas en la sección panel de flujo de correo](#queues-insight-in-the-mail-flow-dashboard) de este tema.
+- Las **colas** profundizan en el [panel del flujo de correo](mail-flow-insights-v2.md) en el [centro de seguridad & cumplimiento](https://protection.office.com). Para obtener más información, vea la información [sobre las colas en la sección panel de flujo de correo](#queues-insight-in-the-mail-flow-dashboard) de este tema.
   
 - Se muestra una alerta en el panel de alertas del centro de [seguridad & cumplimiento](https://protection.office.com) (panel de**alertas** o) en **Alerts recents** \> **Dashboard** <https://protection.office.com/alertsdashboard> .
 
@@ -87,6 +87,6 @@ Se muestra el mismo control flotante después de hacer clic en **Ver cola** en l
 
 ![Se han retrasado los detalles de la alerta en el centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

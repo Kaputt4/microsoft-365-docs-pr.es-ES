@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el mapa del flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento para visualizar y realizar un seguimiento de la forma en que el correo fluye hacia y desde la organización a través de conectores y sin usar conectores.
-ms.openlocfilehash: d27513b905a2b6c1a7ae366040e9e29b2d67b258
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827006"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358595"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el centro de seguridad & cumplimiento
 
-El **mapa de flujo de correo** en el [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento ofrece información sobre cómo fluye el correo a través de la organización. Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.
+El **mapa de flujo de correo** en el [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) ofrece información sobre cómo fluye el correo a través de la organización. Puede usar esta información para aprender patrones, identificar anomalías y corregir problemas a medida que se produzcan.
 
 ![Widget mail Flow Map en el panel de flujo de correo en el centro de seguridad & cumplimiento](../../media/mfi-mail-flow-map-widget.png)
 
@@ -68,6 +68,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic en **Ver informe**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
-ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826946"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358583"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el centro de seguridad & cumplimiento
 
-El informe de **dominio no aceptado** del [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento muestra información sobre los mensajes de la organización de correo electrónico local donde el dominio del remitente no está configurado como un dominio aceptado en la organización de Microsoft 365.
+El informe de **dominio no aceptado** del [Panel de flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) muestra información sobre los mensajes de la organización de correo electrónico local donde el dominio del remitente no está configurado como un dominio aceptado en la organización de Microsoft 365.
 
 Microsoft 365 puede limitar estos mensajes si tenemos datos para probar que la intención de estos mensajes es malintencionada. Por lo tanto, es importante que comprenda lo que está sucediendo y que solucione el problema.
 

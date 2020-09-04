@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre cómo usar la solución Fix Slow mail Flow rules Insight en el centro de seguridad & cumplimiento para identificar y corregir reglas de flujo de correo ineficientes o ineficientes (también conocidas como reglas de transporte) en su organización.
-ms.openlocfilehash: 6319633c47e34d7b62c4f68bfbda7fe298c0deb3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c933a6816c82161d0f4a6199ff1a339dd8a10eae
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826886"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357349"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corrección de las reglas de flujo de correo lenta información del centro de seguridad & cumplimiento
 
@@ -29,7 +29,7 @@ Las reglas de flujo de correo ineficiente (también conocidas como reglas de tra
 - Condiciones que usan la coincidencia de patrón de expresiones regulares complejas (regex).
 - Condiciones que usan la comprobación de contenido en datos adjuntos.
 
-La opción para **corregir reglas de flujo de correo con lentitud** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de seguridad & cumplimiento le avisa cuando una regla de flujo de correo tarda mucho tiempo en completarse. Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).
+La opción para **corregir reglas de flujo de correo con lentitud** en el área **recomendada para** el [panel del flujo de correo](mail-flow-insights-v2.md) en el centro de [seguridad & cumplimiento](https://protection.office.com) le avisa cuando una regla de flujo de correo tarda mucho tiempo en completarse. Esta información sólo aparece cuando se detecta la condición (si no tiene bucles de correo, no verá la información).
 
 Puede usar esta notificación para ayudarle a identificar y ajustar las reglas de flujo de correo para ayudar a reducir los retrasos del flujo de correo.
 

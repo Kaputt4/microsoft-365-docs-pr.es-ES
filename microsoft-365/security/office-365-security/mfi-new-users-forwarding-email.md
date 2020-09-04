@@ -11,18 +11,18 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden aprender a usar los nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento para investigar Cuándo los usuarios de la organización reenvían mensajes a nuevos dominios.
-ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826990"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357371"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenvían el conocimiento del correo electrónico en el centro de seguridad & cumplimiento
 
 Es sospechoso cuando las nuevas cuentas de usuario de la organización inician repentinamente el reenvío de mensajes de correo electrónico a dominios externos.
 
-El **nuevo dominio que se reenvía** le informa de que los usuarios recién creados en su organización reenvían mensajes a dominios externos. Esta condición podría indicar que se usaron cuentas de administrador en peligro para crear los nuevos usuarios. Si sospecha que las cuentas se han puesto en peligro, consulte [responder a una cuenta de correo electrónico en peligro](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
+Los **nuevos dominios que se reenvían** el conocimiento de correo electrónico del [centro de seguridad & cumplimiento](https://protection.office.com) le notifican cuando los usuarios recién creados en la organización reenvían mensajes a dominios externos. Esta condición podría indicar que se usaron cuentas de administrador en peligro para crear los nuevos usuarios. Si sospecha que las cuentas se han puesto en peligro, consulte [responder a una cuenta de correo electrónico en peligro](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 Esta información sólo aparece cuando se detecta el problema y aparece en la página de [reenvío del informe](view-mail-flow-reports.md#forwarding-report) .
 
@@ -94,7 +94,7 @@ Si selecciona una fila de la tabla, aparece un flotante de **detalles** con la s
 
 - **Name**: esta es la dirección de correo electrónico del remitente (de **Mostrar datos para: nuevos usuarios de reenvío** ) o el dominio de correo electrónico del remitente (de la vista **Mostrar datos para: nuevos dominios de reenvío** ).
 - **Tipo de reenvío**
-- **Recipient**
+- **Destinatario**
 - **Detalles**
 - **Count**
 - **Fecha de comienzo**

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca898fa76ff45fe15a6dc48e7ad8bcae3e94951c
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332560"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357979"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
@@ -116,6 +116,6 @@ Estas son algunas recomendaciones adicionales:
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Paso 2: configurar las directivas de acceso condicional de acceso y de identidad comunes..](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+![Paso 2: configurar las directivas de acceso condicional de acceso y de identidad comunes](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
 
 [Configurar las directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md)

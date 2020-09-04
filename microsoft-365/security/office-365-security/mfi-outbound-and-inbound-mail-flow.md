@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el conocimiento del flujo de correo entrante y saliente en el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 920c1212f4d6dee508704c93272e48140e199710
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826898"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357427"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Visión del flujo de correo entrante y saliente en el centro de seguridad & cumplimiento
 
-La introducción al **flujo de correo entrante y** saliente del [Panel de flujo de correo](mail-flow-insights-v2.md) del centro de seguridad & cumplimiento combina la información del [Informe de conector](view-mail-flow-reports.md#connector-report) y del antiguo Informe de **información general de TLS** en un único punto.
+La introducción al **flujo de correo entrante y** saliente del [Panel de flujo de correo](mail-flow-insights-v2.md) del [centro de seguridad & cumplimiento](https://protection.office.com) combina la información del [Informe de conector](view-mail-flow-reports.md#connector-report) y del antiguo Informe de **información general de TLS** en un único punto.
 
 El widget muestra el cifrado TLS que se usa para la conexión cuando los mensajes se entregan a la organización y desde ella. Las conexiones que se establecen con otros servicios de correo electrónico se cifran mediante TLS cuando se ofrece TLS por ambas partes. El widget ofrece una instantánea de la última semana del flujo de correo.
 
@@ -52,6 +52,6 @@ Puede hacer clic en el vínculo de **Informe de conector** para ir al [Informe d
 
 Para las conexiones TLS 1,0, es necesario que el servidor de correo electrónico o el servidor de su compañero se actualice o se corrija para evitar problemas cuando la compatibilidad con TLS 1,0 está en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener información sobre otras informaciones del panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

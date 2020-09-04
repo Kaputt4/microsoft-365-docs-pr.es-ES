@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de conocimiento de autenticación de SMTP en el panel de flujo de correo en el centro de seguridad & cumplimiento para supervisar los remitentes de correo electrónico de su organización que usan SMTP autenticado (autenticación SMTP) para enviar mensajes de correo electrónico.
-ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826874"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357439"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informes y información sobre los clientes de autenticación SMTP en el centro de seguridad & cumplimiento
 
-La introducción a los **clientes de autenticación SMTP** en el [Panel de flujo de correo](mail-flow-insights-v2.md) y en el informe de clientes de [autenticación SMTP](#smtp-auth-clients-report) asociados resalta el uso del Protocolo de envío de cliente de autenticación SMTP por parte de los usuarios o las cuentas del sistema de la organización. Este protocolo heredado (que usa el punto de conexión smtp.office365.com) solo ofrece autenticación básica y es vulnerable a su uso por parte de cuentas comprometidas para enviar correo electrónico. La información y el informe permiten buscar actividades inusuales para los envíos de correo electrónico de autenticación SMTP. También muestra los datos de uso de TLS para clientes o dispositivos que usan SMTP AUTH.
+El centro de **clientes de autenticación SMTP** información sobre el [Panel de flujo de correo](mail-flow-insights-v2.md) y el informe de clientes de [autenticación SMTP](#smtp-auth-clients-report) asociados en el [centro de seguridad & cumplimiento](https://protection.office.com) resaltan el uso del Protocolo de envío de cliente de autenticación SMTP por parte de los usuarios o las cuentas del sistema de la organización. Este protocolo heredado (que usa el punto de conexión smtp.office365.com) solo ofrece autenticación básica y es vulnerable a su uso por parte de cuentas comprometidas para enviar correo electrónico. La información y el informe permiten buscar actividades inusuales para los envíos de correo electrónico de autenticación SMTP. También muestra los datos de uso de TLS para clientes o dispositivos que usan SMTP AUTH.
 
 El widget indica el número de usuarios o cuentas de servicio que han usado el protocolo de autenticación SMTP en los últimos 7 días.
 
