@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/30/2017
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6f9f6b77a7a557ca363b2a7d56b96ea3d6ccc287
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819040"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358468"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
@@ -74,7 +74,7 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     d. Esta columna contiene la consulta de búsqueda real que ejecuta la herramienta de búsqueda de contenido. Tenga en cuenta que la herramienta agrega automáticamente algunos componentes adicionales a la consulta que cree. 
 
-    - Cuando busca todo el contenido de los buzones (sin especificar ninguna palabra clave), la consulta de palabra clave real es `size>=0` para que se devuelvan todos los elementos. 
+    - Cuando busca todo el contenido de los buzones (sin especificar ninguna palabra clave), la consulta de palabra clave real es  `size>=0` para que se devuelvan todos los elementos. 
     
      - Al buscar sitios de SharePoint Online y OneDrive para la empresa, se agregan los dos componentes siguientes:
     

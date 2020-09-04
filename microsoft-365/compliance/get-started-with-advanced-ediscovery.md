@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: 669ca954401242f7ac8da9a752a99b1b32c1041c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632481"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357510"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
@@ -149,7 +149,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - Puede usar el [flujo de trabajo de comunicaciones](managing-custodian-communications.md) en la exhibición avanzada de documentos electrónicos para enviar una notificación de retención legal a los custodios.
 
-2. **[Buscar orígenes de datos de apoyo para datos relevantes para el caso](collecting-data-for-ediscovery.md)**. Después de agregar custodios a un caso, use la herramienta de búsqueda integrada para buscar en las ubicaciones de datos del custodio los datos que puedan ser relevantes para el caso. Se usan palabras clave, propiedades y condiciones para [crear consultas de búsqueda](building-search-queries.md) que devuelven los resultados de la búsqueda con los datos que es más probable que sean relevantes para el caso. También puede hacer lo siguiente:
+2. **[Buscar orígenes de datos de apoyo para datos relevantes para el caso](collecting-data-for-ediscovery.md)**. Después de agregar custodios a un caso, use la herramienta de búsqueda integrada para buscar en las ubicaciones de datos del custodio los datos que puedan ser relevantes para el caso. Se usan palabras clave, propiedades y condiciones para [crear consultas de búsqueda](building-search-queries.md) que devuelven los resultados de la búsqueda con los datos que es más probable que sean relevantes para el caso. También puede:
 
    - Ver las [estadísticas de búsqueda](search-statistics.md) que pueden ayudarle a refinar una consulta de búsqueda para restringir los resultados.
 

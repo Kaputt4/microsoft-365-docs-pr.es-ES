@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Ver una tabla que enumera los campos de metadatos de los documentos en un conjunto de evidencias en investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035702"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357630"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campos de metadatos de documento en investigaciones de datos (versión preliminar)
 
@@ -129,4 +129,4 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos de u
 |Etiqueta de relevancia (problema)      | Sí (relevanceTag_issueNum)                     |                         |             |
 |||||
 
-  \*En estos campos, si hay valores incrustados en un documento, la búsqueda dará prioridad a esos valores; de lo contrario, intentará mostrar el valor de Office 365.
+  \* En estos campos, si hay valores incrustados en un documento, la búsqueda dará prioridad a esos valores; de lo contrario, intentará mostrar el valor de Office 365.

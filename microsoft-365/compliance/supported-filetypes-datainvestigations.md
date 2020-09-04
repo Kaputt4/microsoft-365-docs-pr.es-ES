@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Una tabla que enumera los tipos de archivo admitidos y los visores que se pueden ver en para las investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b4aef30c3f2bc15c306a7561bab261bdb0bdcace
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95af625ece261061d6f797b50a382b1905254326
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034544"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357751"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipos de archivo admitidos en investigaciones de datos (versión preliminar)
 
@@ -30,45 +30,45 @@ Las investigaciones de datos (versión preliminar) admiten muchos tipos de archi
 
 | Tipo MIME | Clase File | Visor nativo | Visor de texto | Visor de anotaciones | Extracción de contenedores | Extensiones |
 | :- | :- | :- | :- | :- | :- | :- |
-| application/msword | Document | Sí | Sí | Sí | No | . doc;. dat |
-| application/pdf | Document | Sí | Sí | Sí | No | .pdf |
-| aplicación/RTF | Document | Sí | Sí | Sí | No | . rtf;. doc |
-| aplicación/vnd. MS-Excel | Document | Sí | Sí | Sí | No | . xls;. dat |
+| application/msword | Documento | Sí | Sí | Sí | No | . doc;. dat |
+| application/pdf | Documento | Sí | Sí | Sí | No | .pdf |
+| aplicación/RTF | Documento | Sí | Sí | Sí | No | . rtf;. doc |
+| aplicación/vnd. MS-Excel | Documento | Sí | Sí | Sí | No | . xls;. dat |
 | Application/vnd. MS-Excel. sheet. Binary. macroenabled. 12 | Formato de la productividad y el documento abierto | Sí | Sí | No | No | .xlsb |
-| Application/vnd. MS-Excel. sheet. macroenabled. 12 | Document | Sí | Sí | Sí | No | . xlsm |
+| Application/vnd. MS-Excel. sheet. macroenabled. 12 | Documento | Sí | Sí | Sí | No | . xlsm |
 | Application/vnd. MS-Excel. template. macroenabled. 12 | Formato de la productividad y el documento abierto | No | Sí | No | No | . xltm |
 | aplicación/vnd. MS-Outlook | Productividad | No | No | No | No | . msg |
 | aplicación/vnd. MS-Outlook-PST | Productividad y colaboración | No | No | No | Sí | .pst |
-| aplicación/vnd. MS-PowerPoint | Document | Sí | Sí | Sí | No | . ppt;. PPS;. pase |
-| Application/vnd. MS-Word. Document. macroenabled. 12 | Document | Sí | Sí | Sí | No | .docm |
-| Application/vnd. MS-Word. template. macroenabled. 12 | Document | Sí | Sí | Sí | No | . dotm |
-| Application/vnd. oasis. opendocument. Text | Document | Sí | Sí | Sí | No | ODT  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | Sí | Sí | Sí | No | .pptx |
+| aplicación/vnd. MS-PowerPoint | Documento | Sí | Sí | Sí | No | . ppt;. PPS;. pase |
+| Application/vnd.ms-word.document. macroenabled. 12 | Documento | Sí | Sí | Sí | No | .docm |
+| Application/vnd. MS-Word. template. macroenabled. 12 | Documento | Sí | Sí | Sí | No | . dotm |
+| Application/vnd. oasis. opendocument. Text | Documento | Sí | Sí | Sí | No | ODT  |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Documento | Sí | Sí | Sí | No | .pptx |
 | Application/vnd. openxmlformats-officedocument. presentationml. Slideshow | Formato de la productividad y el documento abierto | Sí | Sí | Sí | No | . ppsx |
-| Application/vnd. openxmlformats-officedocument. presentationml. template | Document | Sí | Sí | Sí | No | . potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Document | Sí | Sí | Sí | No | .xlsx |
-| Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Document | Sí | Sí | Sí | No | . xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | Sí | Sí | Sí | No | .docx |
-| Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Document | Sí | Sí | Sí | No | . dotx |
-| aplicación/vnd. Visio | Document | Sí | Sí | Sí | No | . VSD |
+| Application/vnd. openxmlformats-officedocument. presentationml. template | Documento | Sí | Sí | Sí | No | . potx |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Documento | Sí | Sí | Sí | No | .xlsx |
+| Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Documento | Sí | Sí | Sí | No | . xltx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Documento | Sí | Sí | Sí | No | .docx |
+| Application/vnd. openxmlformats-officedocument. WordprocessingML. template | Documento | Sí | Sí | Sí | No | . dotx |
+| aplicación/vnd. Visio | Documento | Sí | Sí | Sí | No | . VSD |
 | application/x-7z-Compressed | Archivo/contenedor | No | No | No | Sí | .7z |
-| aplicación/XHTML + XML | Document | Sí | Sí | Sí | No | . XHTML |
-| Application/XML | Document | Sí | Sí | Sí | No | . XML |
-| application/x-Msaccess | Document | Sí | Sí | Sí | No | .mdb |
-| application/x-mspublisher | Document | Sí | Sí | Sí | No | . pub |
+| aplicación/XHTML + XML | Documento | Sí | Sí | Sí | No | . XHTML |
+| Application/XML | Documento | Sí | Sí | Sí | No | . XML |
+| application/x-Msaccess | Documento | Sí | Sí | Sí | No | .mdb |
+| application/x-mspublisher | Documento | Sí | Sí | Sí | No | . pub |
 | aplicación/x-rar-comprimido | Archivo/contenedor | No | No | No | Sí | . rar |
 | aplicación/código postal | Archivo/contenedor | No | No | No | Sí | .zip |
-| Image/BMP | Image (Imagen) | Sí | Sí | Sí | No | .bmp |
-| Image/EMF | Image (Imagen) | Sí | Sí | Sí | No | .emf |
-| image/gif | Document | Sí | Sí | Sí | No | .gif |
-| image/jpeg | Image (Imagen) | Sí | Sí | Sí | No | . jpg;. JPEG;. dat;. jpgt |
-| image/png | Image (Imagen) | Sí | Sí | Sí | No | .png |
-| Image/TIFF | Image (Imagen) | Sí | Sí | Sí | No | . tif |
-| Image/vnd. DWG | Document | Sí | Sí | Sí | No | . dwg;. ficheros |
-| imagen/WMF | Document | Sí | Sí | Sí | No | .wmf |
+| Image/BMP | Imagen | Sí | Sí | Sí | No | .bmp |
+| Image/EMF | Imagen | Sí | Sí | Sí | No | .emf |
+| image/gif | Documento | Sí | Sí | Sí | No | .gif |
+| image/jpeg | Imagen | Sí | Sí | Sí | No | . jpg;. JPEG;. dat;. jpgt |
+| image/png | Imagen | Sí | Sí | Sí | No | .png |
+| Image/TIFF | Imagen | Sí | Sí | Sí | No | . tif |
+| Image/vnd. DWG | Documento | Sí | Sí | Sí | No | . dwg;. ficheros |
+| imagen/WMF | Documento | Sí | Sí | Sí | No | .wmf |
 | mensaje/rfc822 | Productividad y colaboración | No | No | No | No | .eml |
-| texto/CSV | Document | Sí | Sí | Sí | No | . csv |
-| texto/HTML | Document | Sí | Sí | Sí | No | . html;. shtml;. htm |
-| texto/sin formato | Document | Sí | Sí | Sí | No | . txt;. CSS;. con;. pl;. csv;. dat |
-| texto/vCard-contacto | Document | Sí | Sí | Sí | No | . vcf |
+| texto/CSV | Documento | Sí | Sí | Sí | No | . csv |
+| texto/HTML | Documento | Sí | Sí | Sí | No | . html;. shtml;. htm |
+| texto/sin formato | Documento | Sí | Sí | Sí | No | . txt;. CSS;. con;. pl;. csv;. dat |
+| texto/vCard-contacto | Documento | Sí | Sí | Sí | No | . vcf |
 ||||||||

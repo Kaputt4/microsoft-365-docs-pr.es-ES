@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de mayúsculas y minúsculas, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778466"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358478"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -60,13 +60,13 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |:-----|:-----|
 |Número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda.  <br/> |Sin límite  <br/> |
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo.  <br/> |Sin límite  <br/> | 
-|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10   <br/> | 
+|Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo.  <br/> |10    <br/> | 
 |Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones).  <br/> |**Buzones de correo**: 10.000<br/>**Sitios**: 4.000 al buscar en todos los sitios o en 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
-|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3  <br/> |  
+|Número mínimo de caracteres alfabéticos para comodines de prefijo; por ejemplo **, \* uno o un** **conjunto \* **. <br/> |3   <br/> |  
 |Número máximo de variantes devueltas al usar el carácter comodín de prefijo para buscar una frase exacta o al usar un carácter comodín de prefijo y el operador booleano **Near** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.   <br/> |100  <br/> |
-|Número máximo de elementos de todos los buzones mostrados en la página de vista previa para las búsquedas.  <br/> |1.000  <br/> |
-|Número máximo de buzones en los que se puede obtener una vista previa de los resultados de búsqueda.  Si hay más de 1000 buzones de correo que contienen elementos que coinciden con la consulta de búsqueda, solo los principales buzones de correo de 1.000 con más resultados están disponibles para la vista previa.<br/> |1.000  <br/> |
+|Número máximo de elementos de todos los buzones mostrados en la página de vista previa para las búsquedas.  <br/> |1,000  <br/> |
+|Número máximo de buzones en los que se puede obtener una vista previa de los resultados de búsqueda.  Si hay más de 1000 buzones de correo que contienen elementos que coinciden con la consulta de búsqueda, solo los principales buzones de correo de 1.000 con más resultados están disponibles para la vista previa.<br/> |1,000  <br/> |
 |Número máximo de elementos de los sitios de SharePoint y OneDrive para la empresa que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes.  <br/> |200  <br/> |
 |Número máximo de sitios de SharePoint y OneDrive para la empresa en los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los principales sitios de 200 con más resultados están disponibles para la vista previa.  <br/> |200  <br/> |
 |Número máximo de elementos por buzón de carpeta pública que se muestra en la página de vista previa para las búsquedas.  <br/> |100  <br/> |

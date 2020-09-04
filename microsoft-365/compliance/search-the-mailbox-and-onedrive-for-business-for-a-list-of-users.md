@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use la búsqueda de contenido y el script de este artículo para buscar en los sitios buzones y OneDrive para la empresa un grupo de usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527366"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357802"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 
@@ -56,7 +56,7 @@ Este es un comando de [Exchange Online PowerShell](https://go.microsoft.com/fwli
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-Después de ejecutar este comando, asegúrese de abrir el archivo y quitar el encabezado que contiene el nombre de la propiedad `PrimarySmtpAddress` . El archivo de texto solo debe contener una lista de direcciones de correo electrónico y nada más. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
+Después de ejecutar este comando, asegúrese de abrir el archivo y quitar el encabezado que contiene el nombre de la propiedad  `PrimarySmtpAddress` . El archivo de texto solo debe contener una lista de direcciones de correo electrónico y nada más. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>Paso 3: ejecutar el script para crear e iniciar la búsqueda
 
@@ -64,7 +64,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
   
 - **Sus credenciales de usuario** : el script usará sus credenciales para acceder a SharePoint Online y obtener las direcciones URL de OneDrive para la empresa y para conectarse al centro de seguridad & cumplimiento con PowerShell remoto. 
     
-- **Nombre del dominio de mi sitio** : el dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de su organización. Por ejemplo, si la dirección URL del dominio de mi sitio es **https://contoso-my.sharepoint.com** , debe especificar `contoso` cuando el script le pide el nombre de su dominio de mi sitio. 
+- **Nombre del dominio de mi sitio** : el dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de su organización. Por ejemplo, si la dirección URL del dominio de mi sitio es **https://contoso-my.sharepoint.com** , debe especificar  `contoso` cuando el script le pide el nombre de su dominio de mi sitio. 
     
 - **Nombreruta del archivo de texto del paso 2** : el directorio del archivo de texto que creó en el paso 2. Si el archivo de texto y el script están ubicados en la misma carpeta, escriba el nombre del archivo de texto. De lo contrario, escriba el directorio completo del archivo de texto. 
     

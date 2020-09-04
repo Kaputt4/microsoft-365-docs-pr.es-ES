@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,18 +19,18 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar posibles amenazas, pérdidas de datos y problemas de permisos.
-ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 460c29c542ccf9be659628b3a2c992760acdb309
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520174"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357948"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el Centro de seguridad y cumplimiento
 
-Puede usar la Directiva de alertas y las herramientas del panel de alertas en los centros de seguridad y cumplimiento de Microsoft 365 para crear directivas de alerta y, a continuación, ver las alertas generadas cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
+Puede usar la Directiva de alertas y las herramientas del panel de alertas en los centros de seguridad y cumplimiento de Microsoft 365 para crear directivas de alerta y, a continuación, ver las alertas generadas cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas. Hay varias directivas de alerta predeterminadas que le ayudarán a supervisar actividades como la asignación de privilegios de administrador en Exchange Online, los ataques de malware, las campañas de suplantación de identidad (phishing) y los niveles inusuales de eliminaciones de archivos y uso compartido externo.
 
-Las directivas de alerta se basan y amplían la funcionalidad de las alertas de actividad permitiéndole clasificar la Directiva de alertas, aplicar la Directiva a todos los usuarios de la organización, establecer un nivel de umbral para cuando se desencadene una alerta y decidir si desea recibir notificaciones por correo electrónico. También hay una página **Ver alertas** en el centro de seguridad y cumplimiento donde puede ver y filtrar las alertas, establecer un estado de alerta que le ayude a administrar las alertas y, a continuación, descartar las alertas después de resolver o resolver el incidente subyacente. También hemos ampliado el tipo de eventos para los que puede crear alertas. Por ejemplo, puede crear directivas de alerta para realizar un seguimiento de las actividades de malware y los incidentes de pérdida de datos. También hemos incluido varias directivas de alertas predeterminadas que le ayudarán a supervisar actividades como la asignación de privilegios de administrador en Exchange Online, los ataques de malware, las campañas de suplantación de identidad (phishing) y los niveles inusuales de eliminaciones de archivos y uso compartido externo.
+Las directivas de alerta permiten clasificar las alertas desencadenadas por una directiva, aplicar la Directiva a todos los usuarios de la organización, establecer un nivel de umbral para cuando se desencadene una alerta y decidir si se recibirán notificaciones por correo electrónico cuando se desencadenen alertas. También hay una página **Ver alertas** en el centro de seguridad y cumplimiento donde puede ver y filtrar las alertas, establecer un estado de alerta que le ayude a administrar las alertas y, a continuación, descartar las alertas después de resolver o resolver el incidente subyacente.
 
 > [!NOTE]
 > Las directivas de alerta están disponibles para las organizaciones con una suscripción de Microsoft 365 Enterprise, Office 365 Enterprise o Office 365 US Government E1/F1/G1, E3/G3 o E5/G5. La funcionalidad avanzada solo está disponible para las organizaciones con una suscripción a E5/G5 o para las organizaciones que tienen una suscripción a E1/F1/G1 o E3/G3 y una suscripción de Office 365 Advanced Threat Protection (ATP) o Microsoft 365 E5, o una suscripción de Microsoft 365 E5 eDiscovery y una suscripción de complemento de auditoría. En este tema se resalta la funcionalidad que requiere una suscripción a E5/G5 o un complemento. Además, tenga en cuenta que las directivas de alerta están disponibles en los entornos de Office 365 GCC, GCC High y DoD estadounidense Government.
@@ -136,7 +136,7 @@ La tabla también indica el plan Office 365 Enterprise y Office 365 US Governmen
 |||||
 
 > [!NOTE]
-> <sup>1</sup> hemos eliminado temporalmente esta directiva de alertas predeterminada en función de los comentarios de los clientes. Estamos trabajando para mejorarlo y lo reemplazaremos por una nueva versión en un futuro próximo. Hasta entonces, puede crear una directiva de alerta personalizada para reemplazar esta funcionalidad con la siguiente configuración:<br/>&nbsp;* Activity es el correo electrónico de phish detectado en el momento de la entrega<br/>&nbsp;* El correo no es ZAP<br/>&nbsp;* La dirección de correo es entrante<br/>&nbsp;* El estado de entrega de correo se entrega<br/>&nbsp;* La tecnología de detección es la retención de URL malintencionada, la detonación de dirección URL, el filtro de phish avanzado, el filtro de phish general, la suplantación de dominio, la suplantación de usuarios y la suplantación de marca<br/><br/>&nbsp;&nbsp;&nbsp;Para obtener más información acerca de anti-phishing en Office 365, consulte [set up anti-phishing and anti-phishing Policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> para volver a crear esta directiva de alerta, siga las instrucciones de la nota al pie anterior, pero elija suplantación del usuario como la única tecnología de detección.
+> <sup>1</sup> hemos eliminado temporalmente esta directiva de alertas predeterminada en función de los comentarios de los clientes. Estamos trabajando para mejorarlo y lo reemplazaremos por una nueva versión en un futuro próximo. Hasta entonces, puede crear una directiva de alerta personalizada para reemplazar esta funcionalidad con la siguiente configuración:<br/>&nbsp; * Activity es el correo electrónico de phish detectado en el momento de la entrega<br/>&nbsp; * El correo no es ZAP<br/>&nbsp; * La dirección de correo es entrante<br/>&nbsp; * El estado de entrega de correo se entrega<br/>&nbsp; * La tecnología de detección es la retención de URL malintencionada, la detonación de dirección URL, el filtro de phish avanzado, el filtro de phish general, la suplantación de dominio, la suplantación de usuarios y la suplantación de marca<br/><br/>&nbsp;&nbsp;&nbsp;Para obtener más información acerca de anti-phishing en Office 365, consulte [set up anti-phishing and anti-phishing Policies](../security/office-365-security/set-up-anti-phishing-policies.md).<br/><br/><sup>2</sup> para volver a crear esta directiva de alerta, siga las instrucciones de la nota al pie anterior, pero elija suplantación del usuario como la única tecnología de detección.
 
 La actividad inusual supervisada por algunas de las directivas integradas se basa en el mismo proceso que la configuración del umbral de alerta que se describió anteriormente. Microsoft establece un valor de línea base que define la frecuencia normal para la actividad "normal". A continuación, se desencadenan alertas cuando la frecuencia de las actividades a las que hace referencia la Directiva de alerta integrada supera en gran medida el valor de línea base.
 

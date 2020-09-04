@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo empezar a usar la exhibición de documentos electrónicos principal en Microsoft 365. Después de asignar permisos de exhibición de documentos electrónicos y crear un caso, puede Agregar miembros, crear suspensiones de exhibición de documentos electrónicos y, a continuación, buscar y exportar los datos que sean relevantes para la investigación.
-ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280550"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357918"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Introducción a Core eDiscovery
 
@@ -134,7 +134,7 @@ Para empezar a usar la exhibición de documentos electrónicos principal, este e
 
 1. **[Crear una suspensión de exhibición](create-ediscovery-holds.md)** de documentos electrónicos. El primer paso después de crear un caso es colocar una retención (también denominada *conservación*de la exhibición de documentos electrónicos) en las ubicaciones de contenido de las personas de interés en la investigación. Las ubicaciones de contenido incluyen buzones de correo de Exchange, sitios de SharePoint, cuentas de OneDrive, así como los buzones y sitios asociados con Microsoft Teams y grupos de Office 365. Aunque este paso es opcional, la creación de una retención de eDiscovery conserva el contenido que puede ser relevante para el caso durante la investigación. Al crear una retención de exhibición de documentos electrónicos, puede conservar todo el contenido de ubicaciones de contenido específicas o puede crear una retención basada en consultas para conservar solo el contenido que coincide con una consulta de retención. Además de preservar el contenido, otra buena razón para crear retenciones de eDiscovery consiste en buscar rápidamente las ubicaciones de contenido en espera (en lugar de tener que seleccionar cada ubicación para la búsqueda) al crear y ejecutar búsquedas en el paso siguiente. Una vez completada la investigación, puede liberar cualquier suspensión que haya creado.
 
-2. **[Buscar contenido](search-for-content-in-core-ediscovery.md)**. Después de crear suspensiones de exhibición de documentos electrónicos, use la herramienta de búsqueda integrada para buscar en las ubicaciones de contenido en espera. También puede buscar datos en otras ubicaciones de contenido que puedan ser relevantes para el caso. Puede crear y ejecutar diferentes búsquedas asociadas con el caso. Se usan palabras clave, propiedades y condiciones para [crear consultas de búsqueda](keyword-queries-and-search-conditions.md) que devuelven los resultados de la búsqueda con los datos que es más probable que sean relevantes para el caso. También puede hacer lo siguiente:
+2. **[Buscar contenido](search-for-content-in-core-ediscovery.md)**. Después de crear suspensiones de exhibición de documentos electrónicos, use la herramienta de búsqueda integrada para buscar en las ubicaciones de contenido en espera. También puede buscar datos en otras ubicaciones de contenido que puedan ser relevantes para el caso. Puede crear y ejecutar diferentes búsquedas asociadas con el caso. Se usan palabras clave, propiedades y condiciones para [crear consultas de búsqueda](keyword-queries-and-search-conditions.md) que devuelven los resultados de la búsqueda con los datos que es más probable que sean relevantes para el caso. También puede:
 
    - Ver las estadísticas de búsqueda que pueden ayudarle a refinar una consulta de búsqueda para restringir los resultados.
 

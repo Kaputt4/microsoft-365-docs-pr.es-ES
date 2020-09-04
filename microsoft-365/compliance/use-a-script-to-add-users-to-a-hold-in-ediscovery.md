@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo ejecutar un script para agregar buzones de correo & sitios de OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391490"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357680"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos principal
 
@@ -81,7 +81,7 @@ Este es un comando de PowerShell (que ejecuta con PowerShell remoto conectado a 
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Después de ejecutar este comando, abra el archivo de texto y quite el encabezado que contiene el nombre de la propiedad `PrimarySmtpAddress` . A continuación, quite todas las direcciones de correo electrónico excepto las de los usuarios que desea agregar a la suspensión que creará en el paso 3. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
+Después de ejecutar este comando, abra el archivo de texto y quite el encabezado que contiene el nombre de la propiedad  `PrimarySmtpAddress` . A continuación, quite todas las direcciones de correo electrónico excepto las de los usuarios que desea agregar a la suspensión que creará en el paso 3. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Paso 3: ejecutar el script para crear una retención y agregar usuarios
 
@@ -89,7 +89,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
   
 - Las **credenciales de usuario:** El script usará sus credenciales para conectarse al centro de seguridad & cumplimiento con PowerShell remoto. También usará estas credenciales para acceder a SharePoint Online y obtener las direcciones URL de OneDrive para la empresa para la lista de usuarios.
 
-- **Nombre de su dominio mi sitio:** El dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de la organización. Por ejemplo, si la dirección URL de su dominio de mi sitio es **https://contoso-my.sharepoint.com** , deberá especificar `contoso` Cuándo el script le pedirá el nombre de su dominio de mi sitio.
+- **Nombre de su dominio mi sitio:** El dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de la organización. Por ejemplo, si la dirección URL de su dominio de mi sitio es **https://contoso-my.sharepoint.com** , deberá especificar  `contoso` Cuándo el script le pedirá el nombre de su dominio de mi sitio.
 
 - **Nombre del caso:** El nombre de un caso existente. El script creará una nueva suspensión asociada a este caso.
 

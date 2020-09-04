@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 47d47e008fdd0d252f4da9077f66ee352380d311
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818439"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357990"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -64,7 +64,7 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
   
     **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, seleccione **Editar**. En la sección **elegir administrador de exhibición** de documentos electrónicos, seleccione el hipervínculo **elegir eDiscovery Manager** y, a continuación, seleccione ![ Agregar icono ](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, seleccione **Agregar**. Cuando haya terminado de agregar usuarios, seleccione **listo**. A continuación, en la página de **edición elegir administrador de exhibición** de documentos electrónicos, seleccione **Guardar** para guardar los cambios en la pertenencia al administrador de exhibición de documentos electrónicos.
   
-    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, seleccione **Editar**. En la **sección elegir administrador de eDiscovery** , en **administradores de exhibición**de documentos electrónicos, seleccione **elegir administrador de exhibición**de documentos electrónicos, seleccione **Editar**y, a continuación, seleccione ![ Agregar icono ](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición**de documentos electrónicos y, a continuación, **Agregar**. Cuando haya terminado de agregar usuarios, seleccione **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, seleccione **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos.
+    **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos: Junto a **Administrador de exhibición**de documentos electrónicos, seleccione **Editar**. En la **sección elegir administrador de eDiscovery** , en **administradores de exhibición**de documentos electrónicos, seleccione **elegir administrador de exhibición**de documentos electrónicos, seleccione **Editar**y, a continuación, seleccione ![ Agregar icono ](../media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de **exhibición**de documentos electrónicos y, a continuación,  **Agregar**. Cuando haya terminado de agregar usuarios, seleccione **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, seleccione **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos.
       
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea administrador de exhibición de documentos electrónicos. Sin embargo, al usuario se le debe asignar el rol de administración de casos antes de que pueda usar este cmdlet para convertirlo en Administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 

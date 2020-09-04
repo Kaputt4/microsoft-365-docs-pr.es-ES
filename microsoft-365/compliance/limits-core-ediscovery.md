@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites del caso principal de eDiscovery en Microsoft 365.
-ms.openlocfilehash: 00df8cff683701ce5ee38dca12b6f7af5b31c8b0
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351901"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358518"
 ---
 # <a name="limits-in-core-ediscovery"></a>Límites de la exhibición de documentos electrónicos principal
 
@@ -32,9 +32,9 @@ En la tabla siguiente se enumeran los límites de casos de eDiscovery principale
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
   |Número máximo de retenciones de casos para una organización  <br/> |10 000  <br/> |
-  |Número máximo de buzones en una sola suspensión de casos  <br/> |1.000  <br/> |
+  |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
-  |Número máximo de escenarios mostrados en la Página principal de eDiscovery principal y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1.000|
+  |Número máximo de escenarios mostrados en la Página principal de eDiscovery principal y el número máximo de elementos que se muestran en las pestañas suspensiones, búsquedas y exportación en un caso. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

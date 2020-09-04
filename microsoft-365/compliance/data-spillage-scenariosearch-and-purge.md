@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Usar las herramientas de búsqueda y exhibición de documentos electrónicos para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: bb342eef057fefafe98de274851ad14e9c588dbe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292456"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357570"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -110,7 +110,7 @@ Una vez que haya comprobado los resultados de la búsqueda, es posible que desee
  
     ![En la página exportar, haga clic en exportar y, a continuación, en "descargar informe"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-El informe de **Resumen de exportación** contiene el número de ubicaciones que se han encontrado con los resultados y el tamaño de los resultados de la búsqueda. Puede usarlo para comparar con el informe generado tras la eliminación y proporcionar como prueba de eliminación. El informe de **resultados** contiene un resumen más detallado de los resultados de la búsqueda, incluidos el asunto, el remitente, los destinatarios, si el correo electrónico se leyó, fechas y tamaño de cada mensaje. Si alguno de los detalles de este informe contiene los datos reales derramados, asegúrese de eliminar permanentemente el archivo Results. csv cuando se complete la investigación.
+El informe de **Resumen de exportación** contiene el número de ubicaciones que se han encontrado con los resultados y el tamaño de los resultados de la búsqueda. Puede usarlo para comparar con el informe generado tras la eliminación y proporcionar como prueba de eliminación. El informe de **resultados** contiene un resumen más detallado de los resultados de la búsqueda, incluidos el asunto, el remitente, los destinatarios, si el correo electrónico se leyó, fechas y tamaño de cada mensaje. Si alguno de los detalles de este informe contiene los datos reales derramados, asegúrese de eliminar permanentemente el archivo de Results.csv cuando se complete la investigación.
 
 Para obtener más información acerca de la exportación de informes, vea [exportar un informe de búsqueda de contenido](export-a-content-search-report.md).
     
@@ -176,7 +176,7 @@ Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consult
 Para eliminar los mensajes derramados, vea los pasos 2 & 3 en [Buscar y eliminar mensajes de correo electrónico](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization) .
 
 > [!IMPORTANT]
-> Los elementos de correo electrónico de un conjunto de revisión en un caso de eDiscovery avanzado no se pueden eliminar con los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones son copias de elementos en el servicio activo que se copian y almacenan en una ubicación de almacenamiento de Azure. Esto significa que no se devolverán mediante una búsqueda de contenido creada en el paso 3. Para eliminar elementos de un conjunto de revisiones, debe eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para obtener más información, vea [cerrar o eliminar un caso de exhibición avanzada](close-or-delete-case.md)de documentos electrónicos.
+> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery avanzado no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones son copias de elementos en el servicio activo que se copian y almacenan en una ubicación de almacenamiento de Azure. Esto significa que no se devolverán mediante una búsqueda de contenido creada en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: comprobar, proporcionar una prueba de eliminación y auditoría
 
@@ -198,7 +198,7 @@ Si las palabras clave de la consulta de búsqueda que ha creado y usado en el pa
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría para el comando **New-ComplianceSearchAction-Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, consulte lo siguiente:
+Puede buscar en el registro de auditoría las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría para el comando **New-ComplianceSearchAction-Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

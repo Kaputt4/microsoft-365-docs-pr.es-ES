@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (o desindizados) de Exchange, SharePoint y OneDrive dentro de su organización.
-ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4c2da954316450e22f481f1a5093077be79cc67e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817529"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357382"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigación de elementos parcialmente indizados en eDiscovery
 
@@ -43,13 +43,13 @@ Aunque varía, la mayoría de los clientes de organizaciones tienen menos del 1%
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>¿Por qué cambia el número de elementos parcialmente indizados para una búsqueda?
 
-Después de ejecutar una búsqueda de contenido en el centro de seguridad & cumplimiento, el número total y el tamaño de los elementos parcialmente indizados en las ubicaciones en las que se realizó la búsqueda se muestran en las estadísticas de los resultados de la búsqueda que se muestran en las estadísticas detalladas de la búsqueda. Nota Estos se denominan *elementos sin indexar* en las estadísticas de búsqueda. Estas son algunas de las cosas que afectarán al número de elementos parcialmente indizados que se devuelven en los resultados de la búsqueda: 
+Después de ejecutar una búsqueda de contenido en el centro de seguridad & cumplimiento, el número total y el tamaño de los elementos parcialmente indizados en las ubicaciones en las que se realizó la búsqueda se muestran en las estadísticas de los resultados de la búsqueda que se muestran en las estadísticas detalladas de la búsqueda. Nota Estos se denominan  *elementos sin indexar*  en las estadísticas de búsqueda. Estas son algunas de las cosas que afectarán al número de elementos parcialmente indizados que se devuelven en los resultados de la búsqueda: 
   
 - Si un elemento se indiza parcialmente y coincide con la consulta de búsqueda, se incluye tanto en el recuento como en el tamaño de los elementos de resultados de búsqueda y en los elementos parcialmente indizados. Sin embargo, cuando se exportan los resultados de esa misma búsqueda, el elemento solo se incluye con un conjunto de resultados de búsqueda; no se incluye como elemento parcialmente indizado.
     
 - Si especifica un intervalo de fechas para una consulta de búsqueda (al incluirla en la consulta de palabras clave o mediante una condición), los elementos parcialmente indizados que no coinciden con el intervalo de fechas no se incluyen en el recuento de elementos parcialmente indizados. Sólo los elementos parcialmente indizados que se encuentran en el intervalo de fechas se incluyen en el recuento de elementos parcialmente indizados.
     
- **Nota:** Los elementos parcialmente indizados ubicados en los sitios de SharePoint y OneDrive *no se* incluyen en la estimación de los elementos parcialmente indizados que se muestran en las estadísticas detalladas de la búsqueda. Sin embargo, los elementos parcialmente indizados se pueden exportar al exportar los resultados de una búsqueda de contenido. Por ejemplo, si solo busca sitios en una búsqueda de contenido, el número estimado de elementos parcialmente indizados será cero. 
+ **Nota:** Los elementos parcialmente indizados ubicados en los sitios de SharePoint y OneDrive  *no se*  incluyen en la estimación de los elementos parcialmente indizados que se muestran en las estadísticas detalladas de la búsqueda. Sin embargo, los elementos parcialmente indizados se pueden exportar al exportar los resultados de una búsqueda de contenido. Por ejemplo, si solo busca sitios en una búsqueda de contenido, el número estimado de elementos parcialmente indizados será cero. 
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Cálculo de la proporción de elementos parcialmente indizados en la organización
 
@@ -95,7 +95,7 @@ Las etiquetas de error constan de dos fragmentos de información, el error y el 
 ```
 
    
- `parseroutputsize`es el error y `xls` es el tipo de archivo del archivo en el que se produjo el error. En casos en los que el tipo de archivo no se reconoció o el tipo de archivo no se aplica al error, verá el valor `noformat` en vez del tipo de archivo. 
+ `parseroutputsize` es el error y  `xls` es el tipo de archivo del archivo en el que se produjo el error. En casos en los que el tipo de archivo no se reconoció o el tipo de archivo no se aplica al error, verá el valor  `noformat` en vez del tipo de archivo. 
   
 A continuación se muestra una lista de errores de indización y una descripción de la posible causa del error.
   
@@ -118,7 +118,7 @@ A continuación se muestra una lista de errores de indización y una descripció
 | `retrieverrms` <br/> |El recuperador de contenido no pudo descodificar un mensaje protegido con RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Se identificaron demasiadas palabras en el documento durante la indización. El procesamiento de la propiedad se detuvo al alcanzar el límite y la propiedad se trunca.  <br/> |
    
-Los campos de error describen qué campos se ven afectados por el error de procesamiento que aparece en el campo etiquetas de error. Si está buscando una propiedad como `subject` o, los `participants` errores en el cuerpo del mensaje no afectarán a los resultados de la búsqueda. Esto puede ser útil para determinar exactamente qué elementos parcialmente indizados podría necesitar investigar.
+Los campos de error describen qué campos se ven afectados por el error de procesamiento que aparece en el campo etiquetas de error. Si está buscando una propiedad como  `subject` o, los  `participants` errores en el cuerpo del mensaje no afectarán a los resultados de la búsqueda. Esto puede ser útil para determinar exactamente qué elementos parcialmente indizados podría necesitar investigar.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Uso de un script de PowerShell para determinar la exposición de la organización a elementos de correo electrónico parcialmente indizados
 
@@ -170,7 +170,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
   
 ```
 
-2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Conectarse al Centro de seguridad y cumplimiento PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. En el PowerShell del centro de cumplimiento de & de seguridad, vaya a la carpeta en la que guardó el script en el paso 1 y, a continuación, ejecute el script. por ejemplo:
 
@@ -188,6 +188,6 @@ Tenga en cuenta lo siguiente:
     
 2. Una lista de etiquetas de error y los tipos de archivo correspondientes en los que se produjo el error.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md)

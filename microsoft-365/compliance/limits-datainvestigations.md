@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información acerca de la descripción, la indización, la búsqueda, la exportación y los límites de descarga en las investigaciones de datos (versión preliminar).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95e779d56861e22f6fdab41442bb3e839329d193
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036337"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358508"
 ---
 # <a name="data-investigations-preview-limits"></a>Límites de investigaciones de datos (vista previa)
 
@@ -42,7 +42,7 @@ En la siguiente tabla se enumeran los límites para las investigaciones en las i
   |Profundidad de los elementos insertados en un solo archivo.  <br/> |25 <sup>1</sup> <br/> |
 |||
 > [!NOTE]
-><sup>1</sup> todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento.
+><sup>1</sup>  todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento.
 
 ## <a name="indexing-limits"></a>Límites de indexación
 
