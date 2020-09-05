@@ -32,6 +32,8 @@
           href: service-description/security.md
         - name: Operaciones de seguridad
           href: service-description/security-operations.md
+        - name: Privacidad
+          href: service-description/privacy-personal-data.md
         - name: Actualizaciones
           href: service-description/updates.md
         - name: Soporte técnico
