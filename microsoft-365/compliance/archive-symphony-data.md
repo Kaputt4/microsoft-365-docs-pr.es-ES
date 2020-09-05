@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet Symphony en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 29af0cda6d1f6b194c13047382ab7e01b6b200dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ccd6676060d48027713203f9fe27e506635af92c
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361801"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399321"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>Configurar un conector para archivar datos de Symphony (versión preliminar)
 
@@ -68,7 +68,7 @@ Después de hacer clic en **guardar & finalizar**, se le devolverá al centro de
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar el conector configurado en el centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga estos pasos:
 
 1. En la página **asignar usuarios externos a Microsoft 365 usuarios** , habilite la asignación automática de usuarios. Los elementos de Symphony incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de su organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
 

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configure una infraestructura de servicios y seguridad que permita a los trabajadores trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898133"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357307"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
 
@@ -37,13 +37,33 @@ Microsoft 365 tiene las capacidades para permitir que los empleados trabajen de
 
 ![Proporcionar las capacidades necesarias a sus trabajadores remotos con Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| Funcionalidad clave | Descripción |
-|:-------|:-----|
-| Conectados | Desde cualquier parte del mundo y en cualquier momento, los trabajadores remotos pueden acceder a: <ul><li>Los servicios basados en la nube y los datos de su suscripción de Microsoft 365. </li><li>Los recursos de la organización, como los ofrecidos por centros de datos de aplicaciones locales.</li></ul> |
-| Protegidos | Los inicios de sesión están protegidos con la autenticación multifactor (MFA). Las características de seguridad integradas de Microsoft 365 y Windows 10 protegen contra el malware, los ataques malintencionados y la pérdida de datos. |
-| Administrados | Los dispositivos de su trabajador remoto se pueden administrar desde la nube mediante configuraciones de seguridad, aplicaciones permitidas y requerimientos de cumplimiento con el estado del sistema. |
-| Colaborativos y productivos | Sus trabajadores remotos pueden ser tan productivos como lo son en la oficina de un modo altamente colaborativo gracias a las siguientes características: <ul><li>Reuniones en línea y sesiones de chat con Teams. </li><li>Áreas de trabajo compartidas para almacenar archivos en la nube con accesibilidad global y colaboración en tiempo real con SharePoint y OneDrive. </li><li>Tareas y flujos de trabajo compartidos para dividir el trabajo y terminarlo de forma más efectiva. </li></ul> |
-|||
+Vea este vídeo para obtener información general del proceso.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+Esta solución proporciona estas funciones clave.
+
+- Conectados
+
+  Desde cualquier parte del mundo y en cualquier momento, los trabajadores remotos pueden acceder a: 
+
+  - Los servicios basados en la nube y los datos de su suscripción de Microsoft 365. 
+  - Los recursos de la organización, como los ofrecidos por centros de datos de aplicaciones locales.
+
+- Protegidos
+
+  Los inicios de sesión están protegidos con la autenticación multifactor (MFA). Las características de seguridad integradas de Microsoft 365 y Windows 10 protegen contra el malware, los ataques malintencionados y la pérdida de datos.
+
+- Administrados
+
+  Los dispositivos de su trabajador remoto se pueden administrar desde la nube mediante configuraciones de seguridad, aplicaciones permitidas y requerimientos de cumplimiento con el estado del sistema.
+
+- Colaborativos y productivos
+
+  Sus trabajadores remotos pueden ser tan productivos como lo son en la oficina de un modo altamente colaborativo gracias a las siguientes características:
+  - Reuniones en línea y sesiones de chat con Teams. 
+  - Áreas de trabajo compartidas para almacenar archivos en la nube con accesibilidad global y colaboración en tiempo real con SharePoint y OneDrive.
+  - Tareas y flujos de trabajo compartidos para dividir el trabajo y terminarlo de forma más efectiva. 
 
 Para una experiencia de inicio de sesión perfecta, las cuentas de usuario de Active Directory Domain Services (AD DS) locales se deben sincronizar con Azure Active Directory (Azure AD). Para proteger sus dispositivos con Windows 10, deben estar inscritos en Intune. Aquí se muestra una vista general de la infraestructura.
 

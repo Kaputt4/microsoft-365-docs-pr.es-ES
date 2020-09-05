@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el lugar de trabajo desde Facebook, que se archiva en el sitio Merge1 de Globanet, en Microsoft 365. Para configurar un conector es necesario trabajar con Globanet este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de la organización.
-ms.openlocfilehash: b57ad60133fdb7cee7db24781755bda032b10a89
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362009"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399137"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurar un conector para archivar el área de trabajo de datos de Facebook (versión preliminar)
 
@@ -72,7 +72,7 @@ Después de hacer clic en **guardar & finalizar**, se le redirigirá al centro d
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar el conector configurado en el centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga estos pasos:
 
 1. En la página **asignar usuarios externos a Microsoft 365 usuarios** , habilite la asignación automática de usuarios. Los elementos del área de trabajo incluyen una propiedad denominada *correo electrónico* que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
 

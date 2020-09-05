@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet reuniones de zoom en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361987"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399147"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configurar un conector para archivar datos de reuniones de zoom (versión preliminar)
 

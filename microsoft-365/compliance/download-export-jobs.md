@@ -1,5 +1,5 @@
 ---
-title: Descargar trabajos de exportación para un caso
+title: Descargar trabajos de exportación para un caso de exhibición avanzada de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: Instale y use el explorador de Azure Storage para descargar documentos que se exportaron desde un conjunto de revisión en eDiscovery avanzado.
-ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035682"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399167"
 ---
-# <a name="download-export-jobs"></a>Descargar trabajos de exportación
+# <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Descargar trabajos de exportación en un caso de exhibición avanzada de documentos electrónicos
 
-Al exportar documentos de un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos, los documentos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. El tipo de ubicación de almacenamiento de Azure que se usa depende de la opción seleccionada al exportar los documentos. 
+Al exportar documentos de un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos, los documentos se cargan en una ubicación de almacenamiento de Azure proporcionada por Microsoft o en una ubicación de almacenamiento de Azure administrada por la organización. El tipo de ubicación de almacenamiento de Azure que se usa depende de la opción seleccionada al exportar los documentos.
 
 En este artículo se proporcionan instrucciones sobre cómo usar el explorador de almacenamiento de Microsoft Azure para conectarse a una ubicación de almacenamiento de Azure para examinar y descargar los documentos exportados. Para obtener más información sobre el explorador de almacenamiento de Azure, consulte [QuickStart: Use Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
@@ -50,31 +50,31 @@ El siguiente paso es obtener la dirección URL de la firma de acceso compartido 
 
 El último paso consiste en usar el explorador de almacenamiento de Azure y la dirección URL de SAS para conectarse a la ubicación de almacenamiento de Azure y descargar los documentos que exportó a un equipo local.
 
-1.  Abra el explorador de Azure Storage que instaló en el paso 1.
+1. Abra el explorador de Azure Storage que instaló en el paso 1.
 
 2. Haga clic en el icono **Agregar cuenta** . Como alternativa, puede hacer clic con el botón secundario en **cuentas de almacenamiento**.
 
    ![Haga clic en el icono Agregar cuenta](../media/AzureStorageConnect.png)
 
-3.  En la página **conectar con el almacenamiento de Azure** , haga clic en **usar un URI de firma de acceso compartido (SAS)** y, a continuación, haga clic en **siguiente**.
+3. En la página **conectar con el almacenamiento de Azure** , haga clic en **usar un URI de firma de acceso compartido (SAS)** y, a continuación, haga clic en **siguiente**.
 
     ![Haga clic en usar un URI de firma de acceso compartido (SAS) y, a continuación, haga clic en siguiente](../media/AzureStorageConnect2.png)
 
-4.  En la página **adjuntar con URI de SAS** , haga clic en el cuadro URI y, a continuación, pegue la dirección URL de SAS que obtuvo en el paso 2. 
+4. En la página **adjuntar con URI de SAS** , haga clic en el cuadro URI y, a continuación, pegue la dirección URL de SAS que obtuvo en el paso 2. 
 
     ![Pegue la dirección URL de SAS en el cuadro URI](../media/AzureStorageConnect3.png)
 
     Observe que una parte de la dirección URL de SAS se muestra en el cuadro **nombre para mostrar** . Se usará como el nombre para mostrar del contenedor que se crea en las cuentas de **almacenamiento** después de conectarse a la ubicación de almacenamiento. Este nombre consta del identificador del caso de eDiscovery avanzado y un identificador único. Puede conservar el nombre para mostrar predeterminado o cambiarlo. Si lo cambia, el nombre para mostrar debe ser único.
 
-5.  Haga clic en **Siguiente**.
+5. Haga clic en **Siguiente**.
 
     Se muestra la página de **Resumen de conexión** .
-   
+
     ![Haga clic en conectar en la página de Resumen de conexión para conectarse a la ubicación de almacenamiento de Azure.](../media/AzureStorageConnect4.png)
 
-6. En la página **Resumen de conexión** , revise la información de conexión y, a continuación, haga clic en **conectar**. 
+6. En la página **Resumen de conexión** , revise la información de conexión y, a continuación, haga clic en **conectar**.
 
-    Se abre el nodo **contenedores de blobs** (en **cuentas** > de almacenamiento **(contenedores adjuntos)** \> . 
+    Se abre el nodo **contenedores de blobs** (en **cuentas de almacenamiento**  >  **(contenedores adjuntos)** \> .
 
     ![Exportar trabajos en el nodo contenedores de blobs](../media/AzureStorageConnect5.png)
 
@@ -88,9 +88,9 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
 
    La carpeta exportar trabajo contiene los siguientes elementos. Los elementos reales de la carpeta de exportación se determinan mediante las opciones de exportación configuradas cuando se creó el trabajo de exportación. Para obtener más información, vea [exportar documentos de un conjunto de revisión](export-documents-from-review-set.md).
 
-    - Export_load_file. csv: este archivo CSV es un informe de exportación detallado que contiene información sobre cada documento exportado. El archivo consta de una columna para cada propiedad de metadatos de un documento. Para obtener una lista y una descripción de los metadatos que se incluyen en este informe, consulte la columna **nombre de campo exportados** en la tabla en [campos de metadatos del documento en eDiscovery avanzado](document-metadata-fields.md).
+    - Export_load_file.csv: este archivo CSV es un informe de exportación detallado que contiene información sobre cada documento exportado. El archivo consta de una columna para cada propiedad de metadatos de un documento. Para obtener una lista y una descripción de los metadatos que se incluyen en este informe, consulte la columna **nombre de campo exportados** en la tabla en [campos de metadatos del documento en eDiscovery avanzado](document-metadata-fields.md).
     
-    - Summary. txt: un archivo de texto que contiene un resumen de la exportación, incluidas las estadísticas de exportación.
+    - Summary.txt: un archivo de texto que contiene un resumen de la exportación, incluidas las estadísticas de exportación.
     
     - Extracted_text_files: esta carpeta contiene una versión de archivo de texto de cada documento exportado.
      
@@ -98,7 +98,7 @@ El último paso consiste en usar el explorador de almacenamiento de Azure y la d
     
     - Error_files: esta carpeta incluye los siguientes elementos cuando el trabajo de exportación contiene archivos de error: 
         
-      - ExtractionError. csv: este archivo CSV contiene los metadatos disponibles para los archivos que no se han extraído correctamente del elemento primario.
+      - ExtractionError.csv: este archivo CSV contiene los metadatos disponibles para los archivos que no se extrajeron correctamente del elemento primario.
         
       - ProcessingError: esta carpeta contiene los documentos con errores de procesamiento. Este contenido se encuentra en un nivel de elemento, lo que significa que si un archivo adjunto presenta un error de procesamiento, el documento que contiene los datos adjuntos también se incluirá en esta carpeta.
  

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307799"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357792"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -33,6 +33,9 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clas
 - Privacidad (pública o privada) de los sitios de equipos conectados a grupos de Microsoft 365
 - Acceso de usuarios externos
 - Acceso desde dispositivos no administrados
+
+> [!IMPORTANT]
+> La configuración de **Acceder desde dispositivos sin administrar** funciona conjuntamente con la característica de SharePoint para [controlar el acceso desde dispositivos sin administrar](/sharepoint/control-access-from-unmanaged-devices). Debe configurar esta característica dependiente de SharePoint para que su cuenta empresarial use una etiqueta de confidencialidad que tenga este ajuste configurado. Se incluye información adicional en las instrucciones siguientes.
 
 Cuando aplica esta etiqueta de confidencialidad a un contenedor compatible, la etiqueta aplica automáticamente la configuración de protección y clasificación al grupo o sitio conectado.
 
@@ -83,7 +86,13 @@ En la nueva página **Configuración de sitio y grupo**, configure las opciones:
 
 - **Acceso de usuarios externos**: controla si el propietario del grupo puede [agregar invitados al grupo](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Dispositivos no administrados**: para [dispositivos sin administrar](/sharepoint/control-access-from-unmanaged-devices), permite acceso total, acceso de solo Web, o bloquear el acceso completamente. Si ha configurado este parámetro a nivel de espacio empresarial o para sitio específico, la configuración que especifique aquí solo se aplicará si es más restrictiva.
+- **Dispositivos no administrados**: para esta opción, también debe configurar la característica de SharePoint que usa el acceso condicional de Azure AD para bloquear o limitar el acceso a contenido de SharePoint y OneDrive desde dispositivos no administrados. Para obtener instrucciones, consulte [Control de acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices). La opción especificada para esta configuración de la etiqueta es la equivalente a [bloquear o limitar el acceso a un sitio específico de SharePoint o a OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive).
+    
+    Si no configura la característica dependiente de SharePoint, la opción que especifique aquí no tendrá ningún efecto. Además, no tendrá ningún efecto si es menos restrictiva que el valor configurado a nivel de la cuenta empresarial. Elija una configuración de etiqueta que sea tan restrictiva como la configuración de la cuenta empresarial o mayor.
+    
+    Por ejemplo, si la cuenta empresarial está configurada para **Permitir tan solo el acceso web limitado**, el valor de la etiqueta que permite el acceso total no tendrá ningún efecto, ya que es menos restrictivo. Para esta configuración a nivel de la cuenta empresarial, elija el valor de la etiqueta que permita bloquear el acceso (más restrictivo) o el valor de la etiqueta para acceso limitado (igual que la configuración de la cuenta empresarial).
+    
+    Dado que puede configurar la característica de SharePoint independientemente del valor de la etiqueta, no hay ninguna comprobación en el asistente de etiquetas de confidencialidad que incluya las dependencias.
 
 ![La pestaña de configuración del sitio y del grupo](../media/edit-sensitivity-label-site-group2.png)
 
@@ -271,8 +280,8 @@ Las siguientes aplicaciones y servicios actualmente no son compatibles con las e
   - Dynamics 365
   - Yammer
   - Planner
-  - Proyecto
-  - PowerBI
+  - Project
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Clasificación de grupos de Azure AD clásica
 

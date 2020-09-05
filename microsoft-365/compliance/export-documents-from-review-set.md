@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo seleccionar y exportar o descargar contenido de un conjunto de revisiones para presentaciones o revisiones externas.
+description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de revisiones para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034098"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399186"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 
-Puede exportar el contenido para la presentación o la revisión externa a partir de un conjunto de revisión por uno de los siguientes métodos:
+La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga. La herramienta de exportación proporciona una página de configuración con la siguiente configuración:
 
-- [Descargar documentos](#download-documents-from-a-review-set)
- 
-- [Exportar documentos](#export-documents-from-a-review-set)
+![Opciones para exportar elementos de un conjunto de revisión](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a>Descargar documentos de un conjunto de revisión
+## <a name="export-options"></a>Opciones de exportación
 
-La descarga ofrece una forma sencilla de descargar contenido de un conjunto de revisión en formato nativo. Aprovecha las características de transferencia de datos del explorador para que aparezca un mensaje del explorador una vez que la descarga esté lista. Los archivos descargados con este método se comprimen en un archivo contenedor y serán archivos de nivel de elemento. Esto significa que, si selecciona un archivo adjunto, recibirá automáticamente el correo electrónico con los datos adjuntos incluidos. De forma similar, si selecciona una hoja de cálculo de Excel que estaba incrustada en un documento de Word, recibirá el documento de Word con la hoja de cálculo de Excel incrustada. Los elementos descargados conservarán la fecha de la última modificación, que se puede ver como una propiedad de archivo.
+- Nombre de exportación: nombre del trabajo de exportación.
 
-Para descargar contenido de un conjunto de revisión, seleccione los archivos que desea descargar y, a continuación, seleccione "Descargar" en el menú acciones.
+- Descripción: campo de texto libre para agregar una descripción.
 
-![Una captura de pantalla de una descripción de equipo generada automáticamente](../media/eDiscoDownload.png)
+- Exportar estos documentos:
 
-## <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
+  - Solo documentos seleccionados: exporta solo los documentos que están seleccionados actualmente.
+  
+  - Todos los documentos del conjunto de revisiones: exporta todos los documentos en el conjunto de revisión
 
-La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga. Proporciona una página de configuración con la siguiente configuración:
+- Metadatos
+  
+  - Cargar archivo: este archivo contiene metadatos para cada archivo. consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) para obtener más información sobre los campos que se incluyen. Normalmente, las herramientas de eDiscovery de terceros pueden recopilar este archivo.
+  
+  - Etiquetas: cuando se selecciona, la información de etiquetado se incluirá en el archivo de carga.
 
-### <a name="metadata-file"></a>Archivo de metadatos
-
-Esto puede considerarse el "Cargar archivo" que contiene metadatos asociados con los archivos que se exportan. Para obtener una lista de los campos exportados disponibles en el archivo de metadatos, consulte [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Por lo general, este archivo puede ser recopilado por herramientas de terceros.
-
-### <a name="tag-data"></a>Datos de etiqueta
-
-Este contenido se agregaría como campos en el archivo de metadatos. Contiene toda la información de etiqueta aplicada en los conjuntos de revisión.
-
-### <a name="text-files"></a>Archivos de texto
-
-Los archivos de texto se pueden generar para cada archivo exportado de un conjunto de revisión. A menudo, los asociados de servicios necesitan estos archivos como parte de la recopilación de datos en herramientas de terceros.
-
-### <a name="redacted-files"></a>Archivos censurados
-
-Si se generan archivos PDF censurados durante la revisión, estos archivos están disponibles durante la exportación. Puede decidir si desea exportar solo los archivos nativos o reemplazar los archivos nativos que requerían censura con los archivos PDF que contienen las redacciones reales.
-
-### <a name="export-location"></a>Ubicación de exportación
-
-El contenido exportado se entrega en un BLOB de Azure o el BLOB de un cliente de Microsoft se puede usar si los detalles se proporcionan en la exportación.
-
-### <a name="export-structure"></a>Exportar estructura
-
-Cuando se exporta contenido desde un conjunto de revisión, el contenido se organiza en la estructura siguiente.
-
-  - Carpeta raíz: identificador de descarga
+- Contenido
+  
+  - Archivos nativos: Marque esta casilla para incluir los archivos nativos.
+  
+  - Opciones de conversación
     
-      - Exportar\_archivo\_de carga. csv = archivo de metadatos
+    - Archivos de conversación: exportar mensajes de chat reconstruidos. Este formato presenta las conversaciones en un formulario similar al que ven los usuarios en la aplicación nativa.
     
-      - Summary. txt = un archivo de resumen con las estadísticas de exportación
+    - Mensajes de chat individuales: exporte los archivos de conversación originales tal y como están almacenados en Microsoft 365.
+
+- Opciones
+
+  - Archivos de texto: incluye versiones de texto extraídos de archivos nativos.
+  
+  - Reemplazar originales censurados con PDF convertidos: si se generan archivos PDF creados durante la revisión, estos archivos están disponibles para la exportación. Puede elegir exportar solo los archivos nativos que se han censurado (no seleccionando esta opción) o puede seleccionar esta opción para exportar los archivos PDF que contienen las redacciones reales.
+
+- Opciones de salida (el contenido exportado está disponible para su descarga directa a través de un explorador Web o se puede enviar a una cuenta de almacenamiento de Azure. Las dos primeras opciones permiten la descarga directa).
+  
+  - Archivos separados y PST (el correo electrónico se agrega a los PST cuando sea posible): los archivos se exportan en un formato similar a la estructura de directorios original que ven los usuarios en sus aplicaciones nativas.  Para obtener más información, consulte la sección [archivos sueltos y la estructura de exportación de PST](#loose-files-and-pst-export-structure) .
+  
+  - Estructura de directorios condensados: los archivos se exportan e incluyen en la descarga.
+  
+  - Estructura de directorios condensada exportada a su cuenta de almacenamiento de Azure: los archivos se exportan al accouunt de almacenamiento de Azure de su organización.
+
+## <a name="loose-files-and-pst-export-structure"></a>Archivos sueltos y estructura de exportación de PST
+
+Si selecciona esta opción de exportación, el contenido exportado se organiza en la estructura siguiente:
+
+- Carpeta raíz: esta carpeta en la ExportName.zip con nombre
+  
+  - Archivo de metadatos de Export_load_file.csv.
+  
+  - Summary.csv: un archivo de resumen que también contiene estadísticas de exportación.
+  
+  - Exchange: esta carpeta contiene todo el contenido de Exchange en formato de archivo nativo. Los archivos nativos se reemplazan con documentos PDF censurados si ha seleccionado la opción **reemplazar archivos nativos censurados con archivos PDF convertidos** .
+  
+  - SharePoint = esta carpeta contiene todo el contenido nativo de SharePoint en un formato de archivo nativo. Los archivos nativos se reemplazan con documentos PDF censurados si ha seleccionado la opción **reemplazar archivos nativos censurados con archivos PDF convertidos** .
+
+## <a name="condensed-directory-structure"></a>Estructura de directorios condensada
+
+- Carpeta raíz: esta carpeta se denomina ExportName.zip
+  
+  - Archivo de metadatos de Export_load_file.csv.
+  
+  - Summary.txt: un archivo de resumen que también contiene estadísticas de exportación.
+  
+  - Input_or_native_files: esta carpeta contiene todos los archivos nativos que se exportaron. Si exporta archivos PDF censurados, no se colocan en archivos PST. En su lugar, se agregan a una carpeta separada.
+  
+  - Error_files: esta carpeta contiene los siguientes archivos de error, si se incluyen en la exportación:
     
-      - Archivos\_nativos\_o de entrada = contiene todos los archivos nativos
+    - ExtractionError. Un archivo CSV que contiene los metadatos disponibles de los archivos que no se han extraído correctamente de los archivos principales.
     
-      - Archivos\_de errores = contiene los archivos de error incluidos en la exportación
-        
-          - ExtractionError: un CSV que contiene los metadatos disponibles de los archivos que no se han extraído correctamente de los archivos principales
-        
-          - ProcessingError: contenido con errores de procesamiento. Este contenido es el significado del nivel de elemento si los datos adjuntos experimentan un error de procesamiento, el correo electrónico que contiene los datos adjuntos se incluirá en esta carpeta.
-    
-      - Archivos\_de\_texto extraídos = contiene todos los archivos de texto extraídos generados en el procesamiento.
+    - ProcessingError: este archivo contiene una lista de documentos con errores de procesamiento. Este contenido es de nivel de elemento, lo que significa que si un archivo adjunto produjo un error de procesamiento, el mensaje de correo electrónico que contiene los datos adjuntos se incluye en esta carpeta.
+  
+  - Extracted_text_files: esta carpeta contiene todos los archivos de texto extraídos que se generaron en el procesamiento.
+
+> [!NOTE]
+> Los trabajos de exportación se conservan durante la vigencia del caso y se pueden descargar siempre y cuando no se elimine el caso.

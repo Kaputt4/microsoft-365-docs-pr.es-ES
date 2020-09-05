@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506290"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361778"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -40,6 +40,10 @@ El Centro de administración de Microsoft 365 le permite administrar roles de Az
 ¿Busca una lista completa de descripciones detalladas de los roles para Intune que puede administrar en el Centro de administración de Microsoft 365?  Consulte [Control de acceso basado en roles (RBAC) con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 Para más información acerca de la asignación de roles en el Centro de administración de Microsoft 365, consulte [Asignar roles de administrador](assign-admin-roles.md).
+
+### <a name="watch-what-is-an-admin"></a>Ver: ¿Qué es un administrador?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>Directrices de seguridad para asignar roles
 
