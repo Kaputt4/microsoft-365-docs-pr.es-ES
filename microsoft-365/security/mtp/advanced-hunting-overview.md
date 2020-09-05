@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255750"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394686"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Búsqueda proactiva de amenazas con la búsqueda avanzada en la Protección contra amenazas de Microsoft
 
@@ -39,7 +39,7 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 Puede usar las mismas consultas de búsqueda de amenazas para crear reglas de detección personalizadas. Estas reglas se ejecutan automáticamente para buscar diversos eventos y estados del sistema, como actividades de vulneración sospechosas y equipos mal configurados, y responder a ellos.
 
-La característica es similar a la [búsqueda avanzada en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), excepto que en el centro de seguridad de Microsoft 365, la búsqueda avanzada admite consultas que buscan datos de varias áreas de trabajo, incluidos datos sobre dispositivos, mensajes de correo electrónico, aplicaciones e identidades de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
+Esta capacidad es similar a la [búsqueda avanzada en ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview), excepto que la caza avanzada de la protección contra amenazas de Microsoft (disponible en el centro de seguridad de Microsoft 365) admite consultas que buscan datos de varias áreas de trabajo, incluidos datos sobre dispositivos, correos electrónicos, aplicaciones e identidades de ATP de Microsoft defender, Office 365 ATP, Microsoft Cloud App Security y Azure ATP. Para usar la búsqueda avanzada, [active la Protección contra amenazas de Microsoft](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introducción a la búsqueda avanzada
 
