@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315793"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394707"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -98,4 +98,9 @@ Si un usuario abandona su organización, cualquier archivo que esté sujeto a un
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si está listo para configurar la retención en Microsoft 365, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+
+Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
+- [Crear y configurar directivas de retención](create-retention-policies.md)
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)

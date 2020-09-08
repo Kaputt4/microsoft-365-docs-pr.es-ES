@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334863"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399269"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado 
 
@@ -170,7 +170,7 @@ Al elegir todos los usuarios y grupos de su organización o al examina el direct
 
 Se recomienda usar grupos en lugar de usuarios. Esta estrategia mantiene la configuración más sencilla.
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisitos y limitaciones para **Todos los usuarios autenticados**
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisitos y limitaciones para "Añadir todos los usuarios autenticados"
 
 Esta configuración no impide que los usuarios tengan acceso al contenido cifrado por la etiqueta, a la vez que cifra el contenido y ofrece opciones para restringir la manera en que puede usarse el contenido (permisos) y tener acceso a él (acceso de expiración y sin conexión). Sin embargo, la aplicación que abra el contenido cifrado debe poder admitir la autenticación que se usa. Por este motivo, los proveedores de redes sociales federadas, como Google, y la autenticación de contraseña de una sola vez, solo funcionan para correo electrónico, y solo cuando se usa Exchange Online. Las cuentas de Microsoft se pueden usar con las aplicaciones de Office 365 y el [visor de Azure Information Protection](https://portal.azurerms.com/#/download).
 
@@ -213,7 +213,7 @@ Para obtener más información, vea [Emisor de administración de derechos y pro
 > [!NOTE]
 > Esta característica está disponible actualmente en versión preliminar pública. Para obtener más información, vea [Presentación de la versión preliminar pública del cifrado de doble clave de Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
-Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos y correos electrónico que tengan esta etiqueta aplicada.
+Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta.
 
 Para obtener más información, ver los requisitos previos y las instrucciones de configuración, consulte el [Cifrado de doble clave (DKE)](double-key-encryption.md).
 

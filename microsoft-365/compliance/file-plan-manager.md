@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126883"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399217"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
@@ -108,11 +108,11 @@ Para empezar, hay algunos valores predeterminados para los siguientes descriptor
 
 Ejemplo de descriptores del plan de archivos al crear o editar una etiqueta de retención:
 
-![Descriptores del plan de archivos](../media/file-plan-descriptors.png)
+![Descriptores del plan de archivos al crear o editar una etiqueta de retención](../media/file-plan-descriptors.png)
 
 Vista de ejemplo de las columnas de descriptores del plan de archivos:
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![Columnas de descriptores del plan de archivos](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportar todas las etiquetas de retención para analizar o habilitar las revisiones sin conexión
 

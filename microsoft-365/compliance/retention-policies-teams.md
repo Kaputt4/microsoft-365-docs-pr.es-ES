@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 3dcc0e3ea94d002f603b44b777d7666a65b4a725
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818327"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394697"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -118,4 +118,6 @@ Estamos trabajando continuamente en la optimización de la funcionalidad de rete
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si está listo para configurar la retención en Microsoft 365, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
+
+Si está listo para configurar una directiva de retención para Teams, consulte [Crear y configurar directivas de retención](create-retention-policies.md).

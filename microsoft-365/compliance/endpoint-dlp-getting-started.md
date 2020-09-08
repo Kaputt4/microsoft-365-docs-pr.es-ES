@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514783"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399227"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Introducción a la prevención de pérdida de datos de Endpoint (versión preliminar)
 
@@ -99,17 +99,17 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com).
 2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**. 
 
-![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![habilitar la administración de dispositivos](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
+   > [!NOTE]
+   > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
 3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. La lista estará vacía hasta que haya incorporado dispositivos.
 4. Elija **Incorporación** para iniciar el proceso de incorporación.
 5. Elija el modo en que desea implementar estos dispositivos adicionales de la lista **Método de implementación** y, después, **Descargar paquete**.
 
-![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
+   ![método de implementación](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de destino en la que puede acceder a los procedimientos de MDATP que coinciden con el paquete de implementación que seleccionó en el paso 5:
     - Incorporar equipos con Windows 10 usando Directiva de grupo
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
@@ -152,7 +152,7 @@ Una vez que se haya incorporado el punto de conexión, debería estar visible en
 ## <a name="next-steps"></a>Pasos siguientes
 Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad en el explorador de actividad, está listo para realizar el siguiente paso, donde puede crear directivas DLP que protegen los elementos confidenciales.
 
-1) [Uso de la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-using.md)
+- [Uso de la prevención de pérdida de datos de Endpoint (versión preliminar)](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Consulte también
 

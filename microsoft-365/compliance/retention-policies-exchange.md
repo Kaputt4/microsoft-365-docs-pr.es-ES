@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127447"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394717"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
@@ -70,4 +70,9 @@ Si un usuario deja la organización y su buzón está incluido en una directiva 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si está listo para configurar la retención en Microsoft 365, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+
+Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
+- [Crear y configurar directivas de retención](create-retention-policies.md)
+- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
