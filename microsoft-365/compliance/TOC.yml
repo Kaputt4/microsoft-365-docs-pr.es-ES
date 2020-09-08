@@ -548,10 +548,10 @@
         - name: Exportar datos de casos
           href: exporting-data-ediscover20.md
           items:
+            - name: Descargar documentos desde un conjunto de revisión
+              href: download-documents-from-review-set.md
             - name: Exportar documentos desde un conjunto de revisión
               href: export-documents-from-review-set.md
-            - name: Descargar trabajos de exportación
-              href: download-export-jobs.md
         - name: Administrar trabajos
           href: managing-jobs-ediscovery20.md
         - name: Configurar los ajustes de casos
