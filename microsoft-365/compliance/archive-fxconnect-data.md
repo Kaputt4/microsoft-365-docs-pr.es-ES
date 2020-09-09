@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet FX Connect en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 9c769088148f747e4918f2f91a244ad321d61888
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399464"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405591"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>Configurar un conector para archivar datos de Connect FX (versión preliminar)
 
@@ -42,7 +42,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Merge1 de Globanet aceptando los términos y condiciones para un conector de Connect FX. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/contact-us). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para Microsoft Connectors.  Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
 - El usuario que crea el conector de FX Connect en el paso 1 (y lo completa en el paso 3) debe asignarse a la función importación y exportación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página **conectores de datos** del centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
 

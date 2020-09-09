@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet reuniones de zoom en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6b2f5f0b61eb2d569ad49d8f58c7e03d11cdbca0
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399147"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405501"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>Configurar un conector para archivar datos de reuniones de zoom (versión preliminar)
 
@@ -42,7 +42,7 @@ La siguiente introducción explica el proceso de uso de un conector para archiva
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Merge1 de Globanet aceptando los términos y condiciones para un conector de eDiscovery de demora. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/contact-us). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
 - Obtenga el nombre de usuario y la contraseña de la cuenta de zoom para la empresa o el zoom de la organización. Deberá iniciar sesión en esta cuenta en el paso 2 cuando configure el conector de reuniones de zoom.
 

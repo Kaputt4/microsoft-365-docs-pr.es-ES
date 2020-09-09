@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el lugar de trabajo desde Facebook, que se archiva en el sitio Merge1 de Globanet, en Microsoft 365. Para configurar un conector es necesario trabajar con Globanet este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de la organización.
-ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399137"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405491"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Configurar un conector para archivar el área de trabajo de datos de Facebook (versión preliminar)
 
@@ -42,7 +42,7 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Merge1 aceptando sus términos y condiciones para el lugar de trabajo desde el conector de Facebook. Aquí tendrá que ponerse en contacto con el [soporte técnico de Globanet](https://globanet.com/contact-us/). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
 - Cree una integración personalizada en https://my.workplace.com/work/admin/apps/ para recuperar datos del lugar de trabajo a través de las API con fines de cumplimiento y de exhibición de documentos electrónicos.
 

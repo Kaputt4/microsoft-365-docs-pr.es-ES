@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el conector de Microsoft Teams de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 65a0f6eb6e3b7d3e7147cc3eaf96212d75d687c0
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399460"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405449"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Configurar un conector para archivar datos de Teams de WebEx (versión preliminar)
 
@@ -26,7 +26,7 @@ Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para i
 
 Una vez que los datos de Teams de WebEx se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, eDiscovery, directivas de retención y etiquetas de retención y cumplimiento de la comunicación. Usar un conector de Microsoft Teams para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
 
-## <a name="overview-of-archiving-webex-teams"></a>Información general sobre el archivado de equipos WebEx
+## <a name="overview-of-archiving-webex-teams-data"></a>Información general sobre el archivado de datos de Teams de WebEx
 
 La información general siguiente explica el proceso de uso de un conector para archivar datos de Teams de WebEx en Microsoft 365.
 
@@ -42,7 +42,7 @@ La información general siguiente explica el proceso de uso de un conector para 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Merge1 Globanet aceptando los términos y condiciones para un conector de Microsoft Teams. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/contact-us). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para ello, póngase en contacto con el [soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
 - Cree una aplicación en [https://developer.webex.com/](https://developer.webex.com) para obtener datos de la cuenta de Teams de WebEx. Para obtener instrucciones paso a paso acerca de la creación de la aplicación, consulte [Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Obtenga información sobre cómo los administradores pueden eliminar elementos de una carpeta de elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón de correo se encuentra en retención legal.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321971"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405471"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
 
@@ -292,7 +292,7 @@ A continuación se muestra un resumen del proceso para buscar y eliminar element
 
 3. Use el cmdlet **New-ComplianceSearch** (en el PowerShell del centro de seguridad & cumplimiento) o use la herramienta de búsqueda de contenido en el centro de cumplimiento para crear una búsqueda de contenido que devuelva elementos de la carpeta elementos recuperables del usuario de destino. Para ello, incluya el FolderId en la consulta de búsqueda de todas las subcarpetas en las que desea realizar la búsqueda. Por ejemplo, la siguiente consulta devuelve todos los mensajes de las subcarpetas Purges y eDiscoveryHolds:
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ A continuación se muestra un resumen del proceso para buscar y eliminar element
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > Se elimina un máximo de 10 elementos (por buzón de correo) cuando se ejecuta el comando anterior. Esto significa que es posible que tenga que ejecutar el `New-ComplianceSearchAction -Purge` comando varias veces para eliminar los elementos que desea eliminar en la carpeta elementos recuperables.
+5. Se elimina un máximo de 10 elementos por buzón al ejecutar el comando anterior. Esto significa que es posible que tenga que ejecutar el `New-ComplianceSearchAction -Purge` comando varias veces para eliminar todos los elementos que desea eliminar en la carpeta elementos recuperables. Para eliminar elementos adicionales, primero tiene que quitar la acción anterior de purgar la búsqueda de cumplimiento. Para ello, ejecute el `Remove-ComplianceSearchAction` cmdlet. Por ejemplo, para eliminar la acción de purga que se ejecutó en el paso anterior, ejecute el siguiente comando:
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   Después de hacerlo, puede crear una nueva acción de purgar la búsqueda de cumplimiento para eliminar más elementos. Tendrá que eliminar cada acción de purga antes de crear una nueva.
+
+   Para obtener una lista de las acciones de búsqueda de cumplimiento, puede ejecutar el `Get-ComplianceSearchAction` cmdlet. Las acciones de purga se identifican por `_Purge` anexas al nombre de búsqueda.
 
 ### <a name="verify-that-items-were-deleted"></a>Comprobar que los elementos se han eliminado
 

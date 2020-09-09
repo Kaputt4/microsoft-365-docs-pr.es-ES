@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo empezar a usar la exhibición avanzada de documentos electrónicos en Microsoft 365. Una vez que haya completado algunos pasos rápidos, la herramienta eDiscovery avanzado estará lista para usarse. El primer paso consiste en crear un caso y, a continuación, empezar a usar las funciones y características de eDiscovery avanzadas.
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357510"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405429"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
@@ -141,7 +141,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - Los datos del buzón de correo de Exchange, la cuenta de OneDrive y los grupos de Microsoft Teams o Yammer a los que pertenece el custodio pueden "marcarse" como datos de apoyo en el caso.
   
-   - Los datos de custodios se vuelven a indexar (por un proceso denominado *indexación avanzada*). Esto ayuda a optimizar la búsqueda en el paso siguiente.
+   - Los datos de custodios se reindizan (por un proceso denominado *indización avanzada*). Esto ayuda a optimizar la búsqueda en el paso siguiente.
   
    - Puede poner una retención en los datos de custodios. Así se conservan los datos que puedan ser relevantes para el caso durante la investigación.
   
@@ -157,7 +157,7 @@ Para empezar a usar la exhibición avanzada de documentos electrónicos, este es
 
    - Revise una consulta y vuelva a ejecutar la búsqueda.
 
-3. **[Agregar datos a un conjunto de revisión](add-data-to-review-set.md)**. Una vez que haya configurado y comprobado que una búsqueda devuelve los datos deseados, el siguiente paso consiste en agregar los resultados de la búsqueda a un conjunto de revisión. Cuando se agregan datos a un conjunto de revisión, los elementos se copian de su ubicación original en una ubicación de almacenamiento segura de Azure. Los datos se vuelven a indizar para optimizarlos para realizar búsquedas exhaustivas y rápidas al revisar y analizar elementos en el conjunto de revisiones. Además, también puede [Agregar datos que no son de Office 365 a un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).
+3. **[Agregar datos a un conjunto de revisión](add-data-to-review-set.md)**. Una vez que haya configurado y comprobado que una búsqueda devuelve los datos deseados, el siguiente paso consiste en agregar los resultados de la búsqueda a un conjunto de revisión. Cuando se agregan datos a un conjunto de revisión, los elementos se copian de su ubicación original en una ubicación de almacenamiento segura de Azure. Los datos se vuelven a indizar de nuevo para optimizarlos para realizar búsquedas exhaustivas y rápidas al revisar y analizar elementos en el conjunto de revisiones. Además, también puede [Agregar datos que no son de Office 365 a un conjunto de revisión](load-non-office-365-data-into-a-review-set.md).
 
    También hay un tipo especial de conjunto de revisión al que puede agregar datos, denominados un *conjunto de revisión de conversación*. Estos tipos de revisión proporcionan capacidades de reconstrucción de conversaciones para reconstruir, revisar y exportar conversaciones encadenadas como las de Microsoft Teams. Para obtener más información, vea [revisar conversaciones en EDiscovery avanzado](conversation-review-sets.md).
 
