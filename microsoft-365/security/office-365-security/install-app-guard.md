@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evitar que los ataques actuales y emergentes, como los ataques malintencionados o los vínculos maliciosos, interrumpan la productividad de los empleados y la seguridad empresarial.
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867523"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405546"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Protección de aplicaciones para Office (vista previa pública) para administradores
 
@@ -45,7 +45,7 @@ La protección de aplicaciones de Microsoft defender para Office (protección de
 
 * **Windows 10**: Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041
 * **Office**: versión de compilación de canal de office beta 2008 16.0.13212 o posterior
-* **Paquete de actualización**: actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **Paquete de actualización**: actualizaciones de seguridad mensual acumuladas de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 Para obtener información detallada sobre los requisitos del sistema, consulte [requisitos del sistema para la protección de aplicaciones de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Para obtener más información sobre las versiones de Office Insider Preview, consulte Introducción a la [implementación de las compilaciones de Office Insider](https://insider.office.com/business/deploy).
 
@@ -56,28 +56,9 @@ Para obtener información detallada sobre los requisitos del sistema, consulte [
 
 ### <a name="enable-application-guard-for-office"></a>Habilitar la protección de aplicaciones para Office
 
-1.  Descargue e instale **las actualizaciones de seguridad mensuales acumulativas para Windows 10 KB4566782**. 
+1.  Descargue e instale **las actualizaciones de seguridad mensuales acumulativas para Windows 10 KB4571756**. 
 
-2. Descargue e instale la [**protección de aplicaciones para el paquete de características habilitadas de Office**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi). Este paquete instala una directiva de grupo denominada "KB4559004 Issue 001 Preview" en configuración del **equipo\Plantillas del equipo**. Establezca esta directiva de grupo en **habilitado**.
-     ![Editor de directivas de grupo local](../../media/ag01-deploy.png)
-
-     ![Vista previa del problema KB4559004 001](../../media/ag02-deploy.png)
-
-    También puede establecer directamente las siguientes claves del registro: 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    A continuación, ejecute este comando de PowerShell: 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  Seleccione **protección de aplicaciones de Microsoft defender** en características de Windows y haga clic en **Aceptar**. Al habilitar la característica protección de aplicaciones, se solicitará el reinicio del sistema. Puede elegir reiniciar ahora o después del paso 4.
+2.  Seleccione **protección de aplicaciones de Microsoft defender** en características de Windows y haga clic en **Aceptar**. Al habilitar la característica protección de aplicaciones, se solicitará el reinicio del sistema. Puede elegir reiniciar ahora o después del paso 3.
 
     ![Cuadro de diálogo características de Windows que muestra AG](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Para obtener información detallada sobre los requisitos del sistema, consulte [
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  Busque la protección de aplicaciones de Microsoft defender en modo administrado Directiva de grupo que se encuentra en **configuración del equipo \\ Administrative templates Administrative templates \\ Windows Components \\ Microsoft defender Application Guard**. Active esta directiva estableciendo el valor en opciones como **2** o **3** y, a continuación, seleccionando **Aceptar** o **aplicar**.
+3.  Busque la protección de aplicaciones de Microsoft defender en modo administrado Directiva de grupo que se encuentra en **configuración del equipo \\ Administrative templates Administrative templates \\ Windows Components \\ Microsoft defender Application Guard**. Active esta directiva estableciendo el valor en opciones como **2** o **3** y, a continuación, seleccionando **Aceptar** o **aplicar**.
 
     ![Activar AG en modo administrado](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Para obtener información detallada sobre los requisitos del sistema, consulte [
     <br>Valor: **2**
 
 
-5.  Reinicie el sistema.
+4.  Reinicie el sistema.
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Establecer diagnóstico & comentarios para enviar datos completos
 
@@ -147,7 +128,7 @@ Office admite las siguientes directivas que le permitirán configurar las capaci
 > Estas directivas estarán disponibles próximamente.
 >Además, la configuración de estas directivas puede deshabilitar algunas funcionalidades para los archivos abiertos en protección de aplicaciones para Office.
 
-| Policy                                                                          | Description                                                                                                                                                                                                                                                                                             |
+| Policy                                                                          | Descripción                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deshabilitar la protección de aplicaciones para Office                                            | Al habilitar esta Directiva, Word, Excel y PowerPoint usarán el contenedor de aislamiento de vista protegida en lugar de la protección de aplicaciones de Office. Esta Directiva se puede usar para deshabilitar temporalmente la protección de aplicaciones de Office cuando hay problemas para dejarla habilitada para el servidor perimetral.                                  |
 | Deshabilitar la copia y pegado de los documentos abiertos en la protección de aplicaciones                    | Al habilitar esta Directiva, impedirá que un usuario copie y pegue contenido de un documento abierto en la protección de aplicaciones de Office a un documento abierto fuera de él.                                                                                                                                   |

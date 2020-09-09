@@ -4,7 +4,7 @@
       href: document-understanding-overview.md
     - name: Introducción al procesamiento de formularios
       href: form-processing-overview.md
-    - name: Diferencia entre los modelos de conocimiento y procesamiento de formularios de un documento
+    - name: Diferencia entre los modelos de conocimiento de documentos y procesamiento de formularios
       href: difference-between-document-understanding-and-form-processing-model.md
     - name: Crear un centro de contenido
       href: create-a-content-center.md

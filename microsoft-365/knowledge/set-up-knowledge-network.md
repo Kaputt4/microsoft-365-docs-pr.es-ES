@@ -11,12 +11,12 @@ ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612553"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405666"
 ---
 # <a name="set-up-knowledge-management-preview"></a>Configuración de la administración de conocimiento (versión preliminar)
 
@@ -62,7 +62,7 @@ Para configurar la red de conocimientos:
 
     ![Introducción](../media/content-understanding/k-get-started.png) </br>
 
-4. En la página **elegir el modo en que la red de conocimiento puede buscar temas** , se configurará la detección de temas. En la sección **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Esto incluye:</br>
+4. En la página **elegir el modo en que la red de conocimiento puede buscar temas** , se configurará la detección de temas. En la sección **seleccionar orígenes de temas de SharePoint** , seleccione los sitios de SharePoint que se rastrearán como orígenes para los temas durante la detección. Incluye lo siguiente:</br>
     a. **Todos los sitios**: todos los sitios de SharePoint de su espacio empresarial. Esto captura los sitios actuales y futuros.</br>
     b. **Todos, excepto los sitios seleccionados**: escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios que desea excluir de la detección. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. </br>
     c. **Solo sitios seleccionados**: escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios que se creen en el futuro no se incluirán como orígenes para la detección de temas. </br>
@@ -71,11 +71,27 @@ Para configurar la red de conocimientos:
    
 5. En la sección **excluir temas por nombre** , puede elegir incluir los nombres de los temas que no desea que se incluyan en los resultados detectados. Use esta opción para evitar que se incluyan temas confidenciales como parte de la red de conocimiento. Las opciones son:</br>
     a. **No excluir temas** </br>
-    b. **Excluya el tema que contenga estos términos**: Si tiene temas que no desea que se muestren a los usuarios como parte de la red de conocimiento.
-   -Descargar la plantilla proporcionada.
-   -Escriba los nombres de los temas que desea excluir. Debe indicar el tipo de coincidencia como exacto o parcial. Coincidencia exacta significa que los temas que se ajustan al término exacto se excluirán. La coincidencia parcial es más estricta y significa que se excluirán los temas que contengan el término. Por ejemplo, si escribe *doc* como nombre de tema, se excluirá el *ensamblado de doc* mientras que el *acoplador* no. Los nombres de los temas no distinguen mayúsculas de minúsculas.  
-        -Seleccione  **+**   para importar el archivo CSV completado. A continuación, seleccione **cargar**. Verá una marca de verificación verde si el archivo se ha procesado correctamente. Seleccione **Siguiente**.</br>
+    b. **Excluir temas por nombre**: Si tiene temas que no desea que se muestren a los usuarios como parte de la red de conocimiento.</br>
 
+    ![Excluir temas](../media/content-understanding/topics-excluded-by-name.png) </br>
+
+    #### <a name="how-to-exclude-topics-by-name"></a>Cómo excluir temas por nombre    
+
+    Si necesita excluir temas, después de seleccionar **excluir temas por nombre**, seleccione **descargar la plantilla. csv**. Use el Excel. Plantilla CSV para incluir una lista de temas que desea excluir de los resultados de la detección.
+
+    ![Excluir temas en la plantilla CSV](../media/content-understanding/csv1.png) </br>
+
+    En la plantilla CSV, escriba la siguiente información sobre los temas que desea excluir:
+
+    - **Name**: escriba el nombre del tema que desea excluir. Puede realizar esto de dos maneras:</br>
+        - Coincidencia exacta: puede incluir el acrónimo o el nombre exacto (por ejemplo, *contoso* o *ATL*).</br>
+        - Coincidencia parcial: puede excluir todos los temas que contengan una palabra específica.  Por ejemplo, *arco* excluirá todos los temas que contengan la palabra *Arc* , como *círculo arco*, *soldadura de arco de plasma*o arco de *formación*. Tenga en cuenta que no se excluirán los temas en los que se incluya el texto como parte de una palabra, como la *arquitectura*.</br>
+    - **Expansión (opcional)**: Si desea excluir un acrónimo, escriba las palabras que representa el acrónimo.</br>
+    - **MatchType-Exact/Partial**: escriba si el nombre que ha escrito es un tipo de coincidencia *exacta* o *parcial* .</br>
+
+    Una vez que haya completado y guardado el archivo de plantilla CSV, seleccione **examinar** para localizarlo y selecciónelo.
+    
+    Seleccione **Siguiente**.</br>
 
 6. En la página **quién puede ver los temas y dónde pueden verlos** , configurará la visibilidad de los temas. En los **temas quién puede ver en la red de conocimiento** , elija quién tendrá acceso a los detalles del tema, como temas resaltados, tarjetas de temas, respuestas de temas en la búsqueda y páginas de temas. Puede seleccionar:</br>
     a. **Todos en su organización**</br>

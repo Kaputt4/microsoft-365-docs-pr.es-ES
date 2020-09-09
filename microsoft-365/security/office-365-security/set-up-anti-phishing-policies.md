@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas antiphishing que están disponibles en Exchange Online Protection (EOP) y Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308200"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407933"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas antiphishing en Microsoft 365
 
@@ -106,21 +106,23 @@ La siguiente configuración de suplantación está disponible en las directivas 
     - [Administrar archivos y mensajes en cuarentena como administrador en Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Buscar y liberar mensajes en cuarentena como un usuario en Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Remitente sin autenticar**: vea la descripción en la siguiente sección.
+- **Remitente sin autenticar**: Consulte la información de la siguiente sección.
 
 ### <a name="unauthenticated-sender"></a>Remitente sin autenticar
 
 La identificación de remitente sin autenticar forma parte de la [configuración de suplantación](#spoof-settings) de identidad disponible en las directivas antiphishing y en las directivas antiphishing de ATP, tal como se describe en la sección anterior.
 
-El valor de configuración de **remitente sin autenticar** habilita o deshabilita la identificación de remitente sin identificar en Outlook. En particular:
+El valor de configuración de **remitente sin autenticar** habilita o deshabilita la identificación de remitente sin autenticar en Outlook. En particular:
 
-- Se agrega un signo de interrogación (?) a la foto del remitente si el mensaje no pasa las comprobaciones de SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication)o de DMARC.
+- Se agrega un signo de interrogación (?) a la foto del remitente si el mensaje no pasa las comprobaciones de SPF o DKIM **y** el mensaje no pasa la [autenticación compuesta](email-validation-and-authentication.md#composite-authentication)o de DMARC. La deshabilitación de la identificación de remitentes no autenticados evita que se agregue el signo de interrogación a la foto del remitente.
 
-- La etiqueta Via (chris@contoso.com <u>mediante</u> Michelle@fabrikam.com) se agrega si el dominio de la dirección de remitente (el remitente del mensaje que se muestra en los clientes de correo electrónico) es distinto del dominio de la firma DKIM o de la dirección **remitente** . Para obtener más información acerca de estas direcciones, vea [información general sobre los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- La etiqueta Via (chris@contoso.com <u>mediante</u> Michelle@fabrikam.com) se agrega si el dominio de la dirección de remitente (el remitente del mensaje que se muestra en los clientes de correo electrónico) es distinto del dominio de la firma DKIM o de la dirección **remitente** . Para obtener más información acerca de estas direcciones, vea [información general sobre los estándares de mensajes de correo electrónico](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Para evitar que estos identificadores se agreguen a los mensajes de remitentes específicos, tiene las siguientes opciones:
+  La deshabilitación de la identificación de remitentes no autenticados no impide que se agregue la etiqueta Via si el dominio de la dirección de es distinto del dominio de la firma DKIM o de la dirección remitente.
 
-- Permitir que el remitente suplante la Directiva de inteligencia empresarial de suplantación de identidad. Para obtener instrucciones, consulte [configurar inteligencia simulada en Microsoft 365](learn-about-spoof-intelligence.md).
+Para evitar que el signo de interrogación o la etiqueta Via se agreguen a los mensajes de remitentes específicos, tiene las siguientes opciones:
+
+- Permitir que el remitente suplante la Directiva de inteligencia empresarial de suplantación de identidad. Esta acción evitará que la etiqueta Via aparezca en los mensajes del remitente cuando la identificación de remitente sin autenticar esté deshabilitada. Para obtener instrucciones, consulte [configurar inteligencia simulada en Microsoft 365](learn-about-spoof-intelligence.md).
 
 - [Configurar la autenticación de correo electrónico](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) para el dominio del remitente.
   

@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre el procesamiento de formularios en Project Cortex.
-ms.openlocfilehash: dbea06cdf2dbb232a7ea48c78d7ea968dd18b9c0
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 44ae5d9cbfbabc5615a751dba5f6c13290fc7b35
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612731"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405633"
 ---
 # <a name="form-processing-overview-preview"></a>Información general sobre el procesamiento de formularios (versión preliminar)
 > [!Note]
@@ -29,9 +29,9 @@ Las empresas a menudo reciben facturas en grandes cantidades y en una gran varie
 
 Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se cargan en la biblioteca de documentos. Y de cada pedido de compra puede extraer y Mostrar datos específicos que sean importantes para usted, como *número de pedido*, *fecha*o *coste total*.
 
-Los archivos de ejemplo se usan para entrenar el modelo y definir la información que se va a extraer del formulario. El diseño del documento se conoce mediante el entrenamiento del modelo. Solo necesita cinco documentos de formulario para empezar. El edificio de AI analizará los archivos de ejemplo para los pares clave-valor, y también puede identificar manualmente aquellos que no se hayan detectado.  El generador de AI permite probar la precisión del modelo en los archivos de ejemplo.
+Los archivos de ejemplo se usan para entrenar el modelo y definir la información que se va a extraer del formulario. El diseño del documento se conoce mediante el entrenamiento del modelo. Solo necesita cinco documentos de formulario para empezar. El generador de AI analizará los archivos de ejemplo para los pares clave-valor, y también puede identificar manualmente aquellos que no se hayan detectado.  El generador de AI permite probar la precisión del modelo en los archivos de ejemplo.
 
-Después de entrenar y publicar el modelo, puede usarlo para crear un [flujo de automatización de energía](https://docs.microsoft.com/power-automate/getting-started) que se ejecutará cuando se cargue un archivo en la biblioteca de documentos de SharePoint y extraerá los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
+Después de entrenar y publicar el modelo, puede usarlo para crear un [flujo de automatización de energía](https://docs.microsoft.com/power-automate/getting-started). El flujo se ejecuta cuando un archivo se carga en la biblioteca de documentos de SharePoint y extrae los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 
 Un administrador de Office 365 debe [Habilitar el procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding?view=o365-worldwide#to-set-up-content-understanding) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en él.
 

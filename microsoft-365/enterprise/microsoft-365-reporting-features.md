@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre diversas características de informes en Microsoft 365, incluidos Azure Active Directory y Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332741"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407921"
 ---
 # <a name="microsoft-365-reporting-features"></a>Características de informes de Microsoft 365
 
@@ -71,9 +71,9 @@ Los informes de auditoría de Exchange online incluyen detalles sobre el acceso 
 
 ## <a name="device-compliance-reports"></a>Informes de cumplimiento de dispositivos
 
-Puede administrar y proteger los dispositivos móviles conectados a su suscripción mediante la administración de dispositivos móviles (MDM) 365 de Microsoft. Los dispositivos móviles que se usan para tener acceso al correo electrónico, el calendario, los contactos y los documentos del trabajo juegan un papel importante a la hora de garantizar que los empleados puedan trabajar en cualquier momento y desde cualquier lugar. Es fundamental proteger la información de la organización. Se usa Microsoft 365 MDM para establecer las directivas de seguridad de dispositivos y las reglas de acceso. Si se pierde o lo roban, también se usa Microsoft 365 MDM para borrar los dispositivos móviles.
+Puede administrar y proteger los dispositivos móviles conectados a su suscripción mediante Basic Mobility and Security para Microsoft 365. Los dispositivos móviles que se usan para tener acceso al correo electrónico, el calendario, los contactos y los documentos del trabajo juegan un papel importante a la hora de garantizar que los empleados puedan trabajar en cualquier momento y desde cualquier lugar. Es fundamental proteger la información de la organización. Use la movilidad básica y la seguridad de Microsoft 365 para establecer directivas de seguridad de dispositivos y reglas de acceso. Si se pierde o lo roban, también puede usar la movilidad y la seguridad básicas de Microsoft 365 para borrar los dispositivos móviles.
 
-Los informes de cumplimiento de MDM proporcionan una descripción general de las directivas configuradas por una organización para proteger los dispositivos móviles que tienen acceso a los datos de Microsoft 365. El informe permite filtrar los dispositivos por estado de cumplimiento, violaciones notificados, dispositivos bloqueados y Cuántos dispositivos se han borrado como resultado de las directivas de seguridad. Para obtener más información, vea [información general sobre la administración de dispositivos móviles para Microsoft 365](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
+Basic Mobility and Security Compliance Reports proporciona una descripción general de las directivas configuradas por una organización para proteger los dispositivos móviles que tienen acceso a los datos de Microsoft 365. El informe permite filtrar los dispositivos por estado de cumplimiento, violaciones notificados, dispositivos bloqueados y Cuántos dispositivos se han borrado como resultado de las directivas de seguridad. Para obtener más información, vea [información general sobre la movilidad y la seguridad básicas de Microsoft 365](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 

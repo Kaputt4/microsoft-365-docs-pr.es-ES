@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Describe la diferencia clave entre los modelos de procesamiento de formularios y la comprensión de documentos.
-ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612743"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405624"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>Diferencia entre los modelos de comprensión de documentos y procesamiento de formularios (versión preliminar)
 
@@ -31,7 +31,7 @@ El conocimiento del contenido le permite crear *modelos* para identificar y extr
 - [Documento sobre modelos](document-understanding-overview.md)
 - [Modelos de procesamiento de formularios](form-processing-overview.md)
 
-Aunque ambos modelos se usan por lo general, hay diferencias clave que afectarán a los que se pueden elegir usar.
+Aunque ambos modelos se usan por lo general, hay diferencias clave que afectarán a la opción que se puede elegir usar.
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenido estructurado en lugar de contenido semiestructurado.

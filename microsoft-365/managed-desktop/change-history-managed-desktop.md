@@ -13,17 +13,29 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: f1606e62813aa63225113b38414338c4e2ff7d57
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289608"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405682"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados en la [documentación del escritorio administrado de Microsoft](index.yml). Los artículos "actualizados" son aquellos en los que se han agregado o corregidos materiales (correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato no aparecen). Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en github](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## <a name="august-2020"></a>Agosto de 2020
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Informe de inventario de dispositivos](working-with-managed-desktop/device-inventory-report.md) | Artículo nuevo
+[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
+[Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
+[Registre dispositivos existentes usted mismo](get-started/register-reused-devices-self.md) | Artículo actualizado
+[Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
+[Operaciones de seguridad en el escritorio administrado por Microsoft](service-description/security-operations.md) | Artículo nuevo
+[Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo actualizado
+[Aplicaciones de Microsoft 365 para empresas](get-started/m365-apps.md) | Artículo nuevo
+[Privacidad y datos personales](service-description/privacy-personal-data.md) | Artículo nuevo
 
 ## <a name="july-2020"></a>Julio de 2020
 Artículo nuevo o modificado | Descripción
@@ -51,7 +63,7 @@ Artículo nuevo o modificado | Descripción
 ## <a name="may-2020"></a>Mayo de 2020
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
@@ -121,7 +133,7 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Excepciones para el plan de servicios](service-description/customizing.md) | Artículo nuevo
-[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
 [ Cambios en el servicio y comunicación ](service-description/servicechanges.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
@@ -135,7 +147,7 @@ Artículo nuevo o modificado | Descripción
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
-[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Dispositivos de escritorio administrados por Microsoft](service-description/device-list.md) | Artículo actualizado
 [Implementar y realizar un seguimiento de las opciones configurables-escritorio administrado por Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
@@ -150,7 +162,7 @@ Artículo nuevo o modificado | Descripción
 --- | ---
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo actualizado
 [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
-[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo actualizado
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
 [Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
 
@@ -183,7 +195,7 @@ Artículo nuevo o modificado | Descripción
 [Preparar unidades asignadas para el Escritorio administrado de Microsoft](get-ready/mapped-drives.md) | Artículo nuevo
 [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](get-ready/certs-wifi-lan.md) | Artículo nuevo
 [Pedir dispositivos de escritorio administrados por Microsoft](get-started/devices.md) | Artículo actualizado
-[Obtener ayuda para usuarios](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
+[Obtener ayuda para los usuarios](working-with-managed-desktop/end-user-support.md) | Artículo nuevo
 
 ## <a name="april-2019"></a>Abril de 2019
 Artículo nuevo o modificado | Descripción
