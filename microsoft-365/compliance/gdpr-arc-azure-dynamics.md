@@ -3,7 +3,7 @@ title: Lista de comprobación de preparación de responsabilidad de Azure y Dyna
 description: Aquí se proporciona una forma cómoda de obtener acceso a la información que puede que sea necesaria para cumplir con el RGPD al usar Microsoft Azure.
 keywords: ARC Azure, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd94ab9bfcc4ca1c9e8f6b99364fa99dde5ff644
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815270"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422468"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad de Azure y Dynamics 365 para el RGPD
 
@@ -144,7 +144,7 @@ Para obtener más documentación relacionada con el RGPD, visite [https://aka.ms
 | 11 <a name="11"> </a> | [Información clave de Azure sobre las evaluaciones del impacto de la protección de datos de clientes](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [Informe de auditoría SOC 2 Type 2 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up), declaración de aplicabilidad de sistemas de administración de la seguridad de la información ISO/CEI 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Ofertas de Cumplimiento del Centro de confianza de Microsoft](offering-home.md)  |
+| 14 <a name="14"> </a> | [Ofertas de Cumplimiento del Centro de confianza de Microsoft](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Información sobre el responsable de protección de datos de Microsoft](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [Información clave de Dynamics 365 sobre el impacto de la protección de datos de clientes](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Auditoría y creación de informes de Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |

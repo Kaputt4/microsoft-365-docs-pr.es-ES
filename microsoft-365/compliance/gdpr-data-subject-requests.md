@@ -2,7 +2,7 @@
 title: Solicitudes de los temas de datos del RGPD y CCPA
 keywords: Microsoft 365, Educación de Microsoft 365, documentación de Microsoft 365, RGPD, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 titleSuffix: Microsoft GDPR
 description: Aprenda a completar los DSR bajo la Regulación general de protección de datos (GPDR) y la Ley de privacidad del consumidor de California (CCPA) utilizando los productos y servicios de Microsoft.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a9dc9c390aa912bbbfa433a6c98acc188eb0f024
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035478"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417964"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Solicitudes de los temas de datos del RGPD y Ley de Privacidad del Consumidor de California (CCPA, por sus siglas en inglés)
 
@@ -100,10 +100,10 @@ En algunas circunstancias, los usuarios de su organización pueden tener acceso 
 
 Para los productos y servicios de terceros a los que se accede a través de la autenticación de cuentas de Microsoft, cualquier solicitud del interesado debe dirigirse al tercero correspondiente.
 
-## <a name="data-subject-request-admin-tools"></a>Herramientas de administración de solicitudes del titular de los datos
+## <a name="data-subject-request-admin-tools"></a>Herramientas de administración de solicitudes del interesado
 
-- **Centro de cumplimiento y seguridad**: los datos generados por el usuario se exportan a través del [Centro de cumplimiento y seguridad](https://aka.ms/stpsecurityandcompliance) o de funciones integradas en la aplicación.
-- **Centro de administración de Azure AD**: eliminar un sujeto de datos de Azure Active Directory y los servicios relacionados empleando el [Centro de administración de Azure AD](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
+- **Centro de cumplimiento y seguridad**: los datos generados por el usuario se exportan a través del [Centro de seguridad y cumplimiento](https://aka.ms/stpsecurityandcompliance) o de funciones integradas en la aplicación.
+- **Centro de administración de Azure AD**: eliminar un interesado de Azure Active Directory y los servicios relacionados con el [Centro de administración de Azure AD](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
 - **Exportación de registros de datos de Microsoft**: los administradores de cuentas empresariales pueden exportar los registros generados por el sistema mediante la [Exportación de registros de datos de Microsoft](https://aka.ms/MicrosoftGDPR).
 
 ## <a name="learn-more"></a>Obtén más información

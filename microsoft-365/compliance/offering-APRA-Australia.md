@@ -3,7 +3,7 @@ title: Autoridad de la reglamentación prudencial australiano (APRA)
 description: Microsoft Guidance para ayudar a los clientes de servicios financieros a cumplir con las normas de subcontratación de la autoridad de la normativa australiana prudencial.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065895"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417764"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autoridad de la reglamentación prudencial australiano (APRA)
 
@@ -70,13 +70,13 @@ Al confiar en nuestro enfoque integral para garantizar la seguridad de los riesg
 
 Obtenga soporte práctico para mover datos y cargas de trabajo a Azure de acuerdo con las regulaciones de APRA: [Descargar servicios en la nube de Microsoft: una lista de comprobación de cumplimiento para instituciones financieras en Australia](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servicios de la nube dentro del alcance de Microsoft
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Las instituciones financieras necesitan APRA aprobación previa para actividades de negocio de subcontratación de materiales?**
 

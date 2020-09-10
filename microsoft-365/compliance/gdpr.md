@@ -3,7 +3,7 @@ title: 'Reglamento general de protección de datos '
 description: Conozca la orientación técnica de Microsoft y encuentre información útil para el Reglamento general de protección de datos (GDPR).
 keywords: Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800025"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422458"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Resumen del reglamento general de protección de datos 
 
@@ -212,7 +212,7 @@ Microsoft aplica desde hace largo tiempo las cláusulas contractuales estándar 
 
 **¿Qué más ofrece Microsoft en materia de cumplimiento?**
 
-Como empresa global con clientes en casi todos los países del mundo, Microsoft tiene un sólido conjunto de recursos de cumplimiento para asistir a nuestros clientes. Para ver una lista completa de nuestra oferta en materia de cumplimiento, que incluye FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud y muchas otras, visite nuestros [temas de la oferta de cumplimiento](offering-home.md).
+Como empresa global con clientes en casi todos los países del mundo, Microsoft tiene un sólido conjunto de recursos de cumplimiento para asistir a nuestros clientes. Para ver una lista completa de nuestra oferta en materia de cumplimiento, que incluye FedRamp, HIPAA/HITECH, ISO 27001, ISO 27002, ISO 27018, NIST 800-171, UK G-Cloud y muchas otras, visite nuestros [temas de la oferta de cumplimiento](offering-home.yml).
 
 **¿Cómo afectará el RGPD a mi empresa?**
 

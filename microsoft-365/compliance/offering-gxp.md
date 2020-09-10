@@ -3,7 +3,7 @@ title: Buenas prácticas clínicas, de laboratorio y de fabricación (GxP)
 description: Tanto Azure como Office 365 pueden ayudar a que las organizaciones de ciencias biológicas cumplan los requisitos reglamentarios de GxP.
 keywords: Microsoft 365, cumplimiento, ofertas
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a130275588b765514162cd08e37d9d5e512a409
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b96cb357a2e4debff19770a32af98a767afafa4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066165"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416006"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Buenas prácticas clínicas, de laboratorio y de fabricación (GxP)
 
 ## <a name="about-gxp"></a>Acerca de GxP
 
-El término *GxP* es una abreviatura general para las directrices y normativas de las "buenas prácticas". La "x" representa un campo en particular: clínico (GCP), de fabricación (GMP), de distribución (GDP), de laboratorio (GLP), de agricultura (GAP), etc. No existe una única entidad normativa o una única administración. Cada país tiene sus propias directrices y reguladores, aunque los requisitos son similares en todos los países. Las normativas de GxP incluyen aquellas indicadas en el [FDA CFR título 21, parte 11 de los Estados Unidos](https://aka.ms/FDA-CFR) y en el [EudraLex volumen 4: directrices GMP, anexo 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) en la UE.
+El término *GxP* es una abreviatura general para las directrices y normativas de las "buenas prácticas". La "x" representa un campo en particular: clínico (GCP), de fabricación (GMP), de distribución (GDP), de laboratorio (GLP), de agricultura (GAP), etc. No existe una única entidad normativa o una única administración. Cada país tiene sus propias directrices y reguladores, aunque los requisitos son similares en todos los países. Las normativas de GxP incluyen aquellos requisitos indicados en [CFR título 21, parte 11, de la Administración de Alimentos y Medicamentos (FDA) de los Estados Unidos](https://aka.ms/FDA-CFR) y en el [Volumen 4 de EudraLex: directrices GMP, anexo 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) en la Unión Europea (UE).
 
 Los objetivos normativos tienen como meta asegurar que las empresas de las industrias reguladas fabriquen productos que sean seguros y que cumplan con los rigurosos estándares de calidad durante el proceso de producción. Los sistemas informatizados que utilizan procesos de GxP requieren la validación para la adhesión a los requisitos de GxP y recién se consideran como calificados cuando el sistema puede demostrar su capacidad de cumplirlas.
 
@@ -35,7 +35,7 @@ Microsoft puede ayudar a las organizaciones que se relacionan con los aspectos r
 
 No existe una certificación GxP para los proveedores de servicios en la nube. Sin embargo:
 
-- Microsoft Azure y Microsoft Office 365 experimentaron muchas auditorías independientes para la administración de la calidad y la seguridad de la información, entre las que se incluyen ISO 9001 (QMS) e ISO/IEC 27001 (ISMS). Esto incluye las auditorías habituales de los controles técnicos y procedimentales de Microsoft, verificados para comprobar la eficacia.
+- Microsoft Azure y Microsoft Office 365 experimentaron muchas auditorías independientes para la administración de la calidad y la seguridad de la información, entre las que se incluyen ISO 9001 (QMS) e ISO/IEC 27001 (ISMS). Esta revisión incluye las auditorías habituales de los controles técnicos y procedimentales de Microsoft, verificados para comprobar la eficacia.
 - El enfoque de calificación de Microsoft también se basa en las prácticas recomendadas del sector, incluyendo la serie de *Buenas prácticas de la fabricación automatizada* (GAMP) de las Guías de buenas prácticas (de la International Society for Pharmaceutical Engineering (ISPE)) y las *Buenas prácticas para los sistemas informatizados en entornos de GxP regulados* (del Pharmaceutical Inspection Cooperation Scheme (PIC/S) PI 011-3).
 
 A pesar que estos estándares y prácticas recomendadas no se centran específicamente en el cumplimiento normativo del GxP, su propósito y sus objetivos son similares y ayudan a garantizar la confidencialidad, la integridad y la disponibilidad de los datos almacenados en los servicios en la nube de Microsoft.
@@ -47,11 +47,14 @@ Las organizaciones de ciencias biológicas que crean soluciones GxP en Azure y O
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft en el ámbito de los servicios en la nube
 
 - [Azure](https://aka.ms/AzureCompliance)
-- [Office 365](https://aka.ms/o365-compliance-framework)
+- Microsoft 365
+- Microsoft Dynamics 365
 
 ## <a name="how-to-implement"></a>Cómo se debe implementar
 
-- [Directrices GxP de Azure](https://aka.ms/gxpcompliance): Un completo conjunto de herramientas para usar Azure al mismo tiempo que se cumplen con las prácticas recomendadas y las normativas de GxP.
+- [Directrices GxP de Microsoft 365](../downloads/microsoft-365-gxp-guidelines-july-2020.pdf): Notas del producto para usar Microsoft 365 al mismo tiempo que se cumplen las prácticas recomendadas y las normativas de GxP.
+- [Directrices GxP de Microsoft Dynamics 365](../downloads/microsoft-dynamics-365-gxp-guidelines-july-2020.pdf): Notas del producto para usar Microsoft Dynamics 365 al mismo tiempo que se cumplen las prácticas recomendadas y las normativas de GxP.
+- [Directrices GxP de Azure](https://aka.ms/gxpcompliance): Un conjunto integral de herramientas para usar Azure al mismo tiempo que se cumplen con las prácticas recomendadas y las normativas de GxP.
 - [El uso de Azure con sistemas GxP](https://aka.ms/GXP-Azure-Strategies): Ayuda para las organizaciones de las ciencias biológicas al establecer una estrategia para crear aplicaciones de GxP.
 - Guías del FDA CFR título 21, parte 11: Obtenga ayuda para establecer una estrategia de calificación de [Azure](https://aka.ms/Azure-FDA-Guidelines) y [Office 365](https://aka.ms/o365-qualification-guideline) que cumpla con las directrices de la FDA para los registros electrónicos.
 

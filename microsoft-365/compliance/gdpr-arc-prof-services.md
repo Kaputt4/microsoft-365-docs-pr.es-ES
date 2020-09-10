@@ -3,7 +3,7 @@ title: Lista de comprobación de preparación de responsabilidad del soporte té
 description: Aquí se proporciona una forma cómoda de obtener acceso a la información que puede que sea necesaria para cumplir con el RGPD al usar servicios de soporte técnico y servicios profesionales de Microsoft.
 keywords: LCPR, listas de comprobación de preparación de responsabilidad, Microsoft 365, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 05bf6a14e27e716e4e30b6ad3715f3cdd4f49eec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f6242ebddf6597d3ce4256f4ddfc0ab9ac59c8f5
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558141"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422424"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Lista de comprobación de preparación de responsabilidad del soporte técnico y los servicios profesionales de Microsoft para RGPD
 
@@ -140,7 +140,7 @@ Consideración para el cliente (6.3)*** | El cliente debe definir (dentro de su 
 |  9 <a name="9"> </a> | [Información clave de los Servicios profesionales de Microsoft sobre las evaluaciones del impacto de la protección de datos de clientes](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 informe de auditoría](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | ISO/IEC 27001: 2013 ISMS declaración de aplicación de Servicios profesionales de Microsoft | SOA mediante la realización de una solicitud al equipo de administración de cuentas de clientes|
-| 12 <a name="12"> </a> | [Ofertas de cumplimiento del Centro de confianza de Microsoft](offering-home.md) | |
+| 12 <a name="12"> </a> | [Ofertas de cumplimiento del Centro de confianza de Microsoft](offering-home.yml) | |
 | 13 <a name="13"> </a> | [Información sobre el responsable de protección de datos de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## <a name="learn-more"></a>Más información

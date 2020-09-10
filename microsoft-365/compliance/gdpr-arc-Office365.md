@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 07f63fd590c5ce9f5fabee942056a1f9c261bf55
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 84554b0f77ea469635dab6f77f8416c509e6bf84
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307841"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422390"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>Lista de comprobación de preparación de responsabilidad para Microsoft 365
 
@@ -146,7 +146,7 @@ Consideración para el cliente (6.3)***|El cliente debe definir (dentro de su or
 | 10  <a name="10"> </a> | [Información clave de Office 365 sobre las evaluaciones del impacto en la protección de datos de clientes](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
 | 11 <a name="11"> </a> | [Informe de auditoría SOC 2 Type 2](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
 | 12 <a name="12"> </a> | [Microsoft Office 365, declaración de aplicabilidad de sistemas de administración de la seguridad de la información ISO/IEC 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 13 <a name="13"> </a> | [Ofertas de cumplimiento del Centro de confianza de Microsoft](offering-home.md) |
+| 13 <a name="13"> </a> | [Ofertas de cumplimiento del Centro de confianza de Microsoft](offering-home.yml) |
 | 14 <a name="14"> </a> | [Office 365, manual de sistemas de administración de la seguridad de la información](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [Usar restricciones de espacio empresarial para administrar el acceso a aplicaciones en la nube de SaaS](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
 | 16 <a name="16"> </a> | [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) |

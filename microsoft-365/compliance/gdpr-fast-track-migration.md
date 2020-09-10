@@ -4,7 +4,7 @@ description: 'Guía técnica de Microsoft: CONJUNTO DE HERRAMIENTAS DE MIGRACION
 keywords: Migración de FastTrack, Microsoft 365 Educación, documentación de Microsoft 365, RGPD
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632491"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416916"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Conjunto de herramientas de migración de FastTrack para cursar solicitudes de eliminación
 
@@ -73,7 +73,7 @@ Para ejecutar correctamente este módulo, puede que sea necesario instalar módu
 
 Para enviar una solicitud de interesado, antes tiene que iniciar sesión con sus credenciales de Office 365; cuando especifique las credenciales apropiadas, se validará el estado de su cuenta de administrador global y se recopilará información del inquilino. 
 
-**Login-FastTrackAccount -ApiKey: \<Clave de API proporcionada por FastTrack MVM\>**
+**Login-FastTrackAccount -ApiKey: \<API Key provided by FastTrack MVM\>**
 
 Tras haber iniciado sesión correctamente, la clave y las credenciales se almacenarán para su uso con módulos FastTrack durante lo que quede de la sesión actual de PowerShell.
 
