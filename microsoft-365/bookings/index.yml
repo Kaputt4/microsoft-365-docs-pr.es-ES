@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: Obtenga información sobre cómo configurar Microsoft bookings para proporcionar servicios a los clientes a partir de una cita.
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: Obtenga información sobre cómo configurar Microsoft bookings para proporcionar servicios a los clientes a partir de una cita.
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47420128"
+additionalContent:
+  sections:
+  - items:
+    - title: ¿Qué es Microsoft bookings?
+      summary: Programe y administre citas con una aplicación y calendario de reserva basados en Web, incluida la integración con Outlook para su personal y los correos electrónicos de notificación automatizados.
+      url: bookings-overview.md
+    - title: Escribir la información empresarial
+      summary: Escriba su página para crear información sobre nosotros, que incluye el nombre de la empresa, la dirección, el número de teléfono, la dirección URL del sitio web, el logotipo y el horario comercial en Microsoft bookings.
+      url: enter-business-information.md
+    - title: Obtener la aplicación de reservas
+      summary: Cambiar el tema de color y configurar la apariencia de la página de reserva a la que se enfrenta el cliente externo.
+      url: customize-booking-page.md
+    - title: Agregar personal a las reservas
+      summary: Cree la lista de personal y administre los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
+      url: add-staff.md
+    - title: Programar cierres de la empresa, horas libres y tiempo de vacaciones
+      summary: Programe los cierres de Office y el tiempo de los empleados en el calendario de reservas para que los empleados se marquen como no disponibles para las reservas durante los períodos especificados.
+      url: schedule-closures-time-off-vacation.md
+    - title: Horas laborables de los empleados en Microsoft bookings
+      summary: Establecer las horas laborables y la disponibilidad de los empleados en Microsoft bookings.
+      url: employee-hours.md
